@@ -1,29 +1,24 @@
 ---
-title: 'Porady: otwieranie standardowych edytorów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Otwieranie standardowych edytorów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f75a64929074be45645de529ccb05f52f9d04ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781875"
 ---
-# <a name="how-to-open-standard-editors"></a>Porady: otwieranie standardowych edytorów
+# <a name="how-to-open-standard-editors"></a>Instrukcje: Otwieranie standardowych edytorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po otwarciu edytora standardowego, możesz zezwolić IDE określić Edytor standardowy do wyznaczonego typu pliku, zamiast określania edytora specyficznych dla projektu w pliku.  
@@ -59,7 +54,6 @@ Po otwarciu edytora standardowego, możesz zezwolić IDE określić Edytor stand
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Porady: otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)   
- [Porady: otwieranie edytorów dla otwartych dokumentów](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)   
+ [Instrukcje: Otwieranie edytorów dla otwartych dokumentów](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Wyświetlanie plików za pomocą polecenia Otwórz plik](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-

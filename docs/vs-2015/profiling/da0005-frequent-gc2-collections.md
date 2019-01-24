@@ -1,14 +1,9 @@
 ---
 title: 'DA0005: Częste kolekcje GC2 | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -18,19 +13,19 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794106"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Częste kolekcje GC2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0005 |  
-| Kategoria |. NET Framework użycia |  
+RuleId|DA0005|  
+|Category|.NET Framework Usage|  
 | Metoda profilowania |. Pamięci platformy .NET |  
 | Komunikat | Wiele obiektów są zbierane w wyrzucania elementów bezużytecznych generacji 2. |  
 | Typ komunikatu | Ostrzeżenie |  
@@ -49,6 +44,3 @@ Identyfikator reguły | DA0005 |
  Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raportów, aby poznać wzorce przydzielania pamięci w aplikacji. Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które uszkodziło danych obiekty są pozostałych do generacji 2, a następnie odzyskać z tego miejsca. Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
   
  Aby dowiedzieć się, jak poprawić wydajność odzyskiwania pamięci zbierania danych, zobacz [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje na temat obciążenie automatyczne wyrzucanie elementów bezużytecznych, zobacz [duży obiekt sterty Niepokryty](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

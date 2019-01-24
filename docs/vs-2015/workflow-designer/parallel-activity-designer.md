@@ -1,11 +1,8 @@
 ---
 title: Parallel, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
@@ -13,13 +10,13 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f557eb013cb313321b336fb22fd1299e51faaa82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 627a99fec632871b815904abd798c0e4bbfd6505
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791850"
 ---
 # <a name="parallel-activity-designer"></a>Parallel, projektant działań
 <xref:System.Activities.Statements.Parallel> Działanie jest wykonywane równocześnie zbiór działań podrzędnych.  
@@ -42,10 +39,10 @@ ms.locfileid: "49221585"
 |Nazwa właściwości|Wymagane|Użycie|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **równoległe**. Wartość może być opcjonalnie edytować w **właściwości** siatki lub bezpośrednio w nagłówku projektanta działań.|  
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Zawiera kolekcję działania podrzędne do wykonania.|  
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Prawda|Zawiera kolekcję działania podrzędne do wykonania.|  
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Oceniane, po zakończeniu gałęzi. Jeśli daje w wyniku **True**, następnie zaplanowane oczekujące gałęzie zostały anulowane. Jeśli ta właściwość nie jest ustawiona lub daje w wyniku **False**, działanie zakończy się po zakończeniu wszystkich swoich działań podrzędnych. Wartość domyślna to **null**.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Sekwencja](../workflow-designer/sequence-activity-designer.md)   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [Przepływ sterowania](../workflow-designer/control-flow-activity-designers.md)

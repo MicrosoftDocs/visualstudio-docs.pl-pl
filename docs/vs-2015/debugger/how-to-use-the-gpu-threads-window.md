@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z okna wątków GPU | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z okna wątków GPU | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -23,15 +18,15 @@ ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee086109faa43976c9c8172cbc3af677ac140b5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796098"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Porady: korzystanie z okna wątków GPU
+# <a name="how-to-use-the-gpu-threads-window"></a>Instrukcje: Korzystanie z okna wątków GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
@@ -76,7 +71,7 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
   
 ### <a name="to-change-to-a-different-active-thread"></a>Aby zmienić na inny wątek aktywny  
   
--   Kliknij dwukrotnie kolumnę. (Klawiatura: zaznacz wiersz, a następnie wybierz klawisz Enter.)  
+-   Kliknij dwukrotnie kolumnę. (Klawiatura: Zaznacz wiersz i wybierz klawisz Enter).  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Do wyświetlania określonego fragmentu i wątku  
   
@@ -112,8 +107,5 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-
+ [Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

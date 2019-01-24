@@ -1,14 +1,9 @@
 ---
 title: Shell (Isolated lub Integrated) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792572"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated lub Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Można utworzyć własną aplikację na podstawie programu Visual Studio w trybi
  Do dystrybucji własnej aplikacji zintegrowanych lub izolowane powłoki, należy dołączyć aplikację, specjalne lub odizolowane w zintegrowanym powłokę pakiet redystrybucyjny i program instalacyjny. Aby uzyskać więcej informacji na temat dystrybucją i instalacją, zobacz [dystrybucja aplikacje izolowane powłoki](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  [Umowy licencyjnej użytkownika końcowego (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) dla programu Visual Studio integrated i isolated powłoki zawiera sekcję zbierania danych (**sekcja 3. Dane**).  Opisano w nim dane użycia klienta, które mogą być zbierane przez firmę Microsoft od użytkowników albo zintegrowane lub izolowane powłoki oprogramowania, które umieszczenie w aplikacji. Aby uzyskać więcej informacji, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/en-us/dn948229).  
+>  [Umowy licencyjnej użytkownika końcowego (EULA)](https://www.visualstudio.com/support/legal/mt171552) dla programu Visual Studio integrated i isolated powłoki zawiera sekcję zbierania danych (**sekcja 3. Dane**).  Opisano w nim dane użycia klienta, które mogą być zbierane przez firmę Microsoft od użytkowników albo zintegrowane lub izolowane powłoki oprogramowania, które umieszczenie w aplikacji. Aby uzyskać więcej informacji, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).  
 > 
 >  W przypadku zbierania danych użycia osobnych od klientów za pośrednictwem aplikacji, musisz podać odpowiednie powiadomienie użytkowników aplikacji można zebrać.  Podczas dystrybucji oprogramowania powłoki izolowanej i zintegrowanej jako część aplikacji, zgodnie z licencji programu Visual Studio Software Development Kit, musi zawierać jedną z następujących czynności:  
 > 
@@ -64,4 +59,3 @@ Można utworzyć własną aplikację na podstawie programu Visual Studio w trybi
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

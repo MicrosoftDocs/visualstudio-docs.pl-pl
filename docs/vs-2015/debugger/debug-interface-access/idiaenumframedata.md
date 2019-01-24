@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumFrameData | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1fbb6c294b6de0a19a8915487e830cb092a7ada7
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 3b3e2436d4b4eed6ac86591821090c89a538e06b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51732386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784158"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,6 +114,3 @@ void ShowFrameData(IDiaSession *pSession)
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
-
-
-

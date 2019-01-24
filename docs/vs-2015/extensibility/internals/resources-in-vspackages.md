@@ -1,14 +1,9 @@
 ---
 title: Zasoby w pakietach VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9f6330055eb3e7b410cc71dc7bab9bc55769c4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39a05e7d0538cd332bbeaf2cddc48d6b141f0452
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800902"
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w pakietach VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,8 +88,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
  Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żądań zasobów z pakietu VSPackage po zakończeniu instalacji, ten pakiet jest prawdopodobnie już załadowany i zainicjowany, więc jest minimalne utrata wydajności.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zarządzane pakietów VSPackage](../../misc/managed-vspackages.md)   
+ [Managed VSPackages](../../misc/managed-vspackages.md)   
  [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)   
- [Zasoby zlokalizowane w aplikacjach MFC: biblioteki DLL Satellite](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
- [Zarządzane pakietów VSPackage](../../misc/managed-vspackages.md)
-
+ [Zasoby zlokalizowane w aplikacjach MFC: Satelitarne biblioteki dll](http://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Managed VSPackages](../../misc/managed-vspackages.md)

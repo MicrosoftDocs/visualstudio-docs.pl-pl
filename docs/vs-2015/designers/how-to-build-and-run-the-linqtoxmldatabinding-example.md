@@ -1,32 +1,27 @@
 ---
-title: 'Porady: kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e299000cd8477ccc36829e806072cb25e115f8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0128ab98f1fb359ea41accfec115325ea8888eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786371"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Porady: kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: Kompilowanie i uruchamianie elementu linqtoxmldatabinding — przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie pokazano, jak utworzyć i skompilować projekt programu Visual Studio elementu linqtoxmldatabinding — oraz jak uruchomić wynikowy program przykład elementu linqtoxmldatabinding — Windows Presentation Foundation (WPF).  
   
- Aby uzyskać więcej informacji o używaniu programu Visual Studio do tworzenia projektów, zobacz [opracowywanie aplikacji w programie Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
+ Aby uzyskać więcej informacji o używaniu programu Visual Studio do tworzenia projektów, zobacz [opracowywanie aplikacji w programie Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
   
 ## <a name="creating-and-populating-the-project"></a>Tworzenie i wypełnianie projektu  
   
@@ -83,8 +78,5 @@ W tym temacie pokazano, jak utworzyć i skompilować projekt programu Visual Stu
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązanie danych WPF za pomocą LINQ to XML — przykład](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Wskazówki: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Tworzenie aplikacji w programie Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)
-
-
-
+ [Przewodnik: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Tworzenie aplikacji w programie Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

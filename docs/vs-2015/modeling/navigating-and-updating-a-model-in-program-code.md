@@ -1,25 +1,22 @@
 ---
 title: Nawigowanie i aktualizowanie modelu w programie kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756528"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Nawigowanie i aktualizowanie modelu w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu ustawiać ich właś
   
  [DocView i DocData](#docdata)  
   
- Kształty, łączników i diagramów oraz ich relacje z elementami modelu są opisane w osobnych tematach. Aby uzyskać więcej informacji, zobacz [porady: nawigowanie i aktualizowanie diagramu](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Kształty, łączników i diagramów oraz ich relacje z elementami modelu są opisane w osobnych tematach. Aby uzyskać więcej informacji, zobacz [jak: Nawigowanie i aktualizowanie diagramu](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ##  <a name="example"></a> Definicja DSL przykładowej  
  Jest to główna część DslDefinition.dsl w przykładach w tym temacie:  
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - Ustaw właściwości nowego elementu, szczególnie właściwość, dla którego `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która identyfikuje jednoznacznie elemencie jego właściciel. W tym przypadku właściwość Name ma tę flagę.  
   
-- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   Po utworzeniu elementu w ten sposób kształt zostanie utworzony automatycznie (język DSL ma diagramu). Pojawi się on przypisany automatycznie lokalizacji usługi przy użyciu domyślnego kształt, kolor i inne funkcje. Jeśli chcesz kontrolować, gdzie i jak skojarzone kształt pojawia się, zobacz [Tworzenie elementu i jego kształt](#merge).  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  Można również ustawić kolor i inne właściwości narażonych łączniki przy użyciu tej metody.  
   
 ### <a name="use-transactions"></a>Użycie transakcji  
- Kształty, łączników i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w Store. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Kształty, łączników i diagramy są podtypów <xref:Microsoft.VisualStudio.Modeling.ModelElement> i na żywo w Store. W związku z tym należy zmiany do nich tylko wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [jak: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ##  <a name="docdata"></a> Wyświetlanie dokumentów i danych dokumentu  
  ![Diagram klas diagram standardowych typów](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Sprawdzanie poprawności języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md)   
  [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Instrukcje: Użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Odpowiadanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md)
-
-
-

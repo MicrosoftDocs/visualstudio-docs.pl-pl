@@ -1,21 +1,17 @@
 ---
-title: Kompilator kolorów VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: VSIX Color Compiler | Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794551"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,7 +110,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Typ|[Wymagane] Typ koloru. Może to być jedna z następujących czynności:<br /><br /> *CT_INVALID:* kolor jest nieprawidłowy lub nie została ustawiona.<br /><br /> *CT_RAW:* nieprzetworzonej wartości ARGB.<br /><br /> *CT_COLORINDEX:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_SYSCOLOR:* kolor systemu Windows na podstawie SysColor.<br /><br /> *CT_VSCOLOR:* koloru programu Visual Studio z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* kolorowi automatycznemu.<br /><br /> *CT_TRACK_FOREGROUND:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE NALEŻY UŻYWAĆ.|  
+|Typ|[Wymagane] Typ koloru. Może to być jedna z następujących czynności:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie została ustawiona.<br /><br /> *CT_RAW:* Nieprzetworzona wartość ARGB.<br /><br /> *CT_COLORINDEX:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Kolor programu Visual Studio na podstawie __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolorowi automatycznemu.<br /><br /> *CT_TRACK_FOREGROUND:* NIE NALEŻY UŻYWAĆ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE NALEŻY UŻYWAĆ.|  
 |Źródło|[Wymagane] Wartość koloru reprezentowane w formacie szesnastkowym|  
   
  Obsługiwane przez wyliczenie __VSCOLORTYPE wszystkie wartości są obsługiwane przez schemat w atrybucie typu. Jednak zaleca się, że można używać tylko CT_RAW i CT_SYSCOLOR.  
@@ -138,7 +134,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  **Składnia**  
   
- VsixColorCompiler \<pliku XML > \<pliku PkgDef > \<argumentów opcjonalnych >  
+ VsixColorCompiler \<XML file> \<PkgDef file> \<Optional Args>  
   
  **Argumenty**  
   
@@ -146,16 +142,16 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 |-|-|-|  
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
 |Nienazwane (plik XML)|To jest pierwszy parametr nienazwany i ścieżkę do pliku XML do konwersji.|Wymagane|  
-|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<XML, nazwa_pliku > .pkgdef|Optional|  
-|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<XML Filename>.pkgdef|Optional|  
+|/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
--   D:\pkgdef\colors.pkgdef VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   / Nologo VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Uwagi  
   
@@ -173,4 +169,3 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

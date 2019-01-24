@@ -1,14 +1,9 @@
 ---
 title: Zarządzanie zasobami aplikacji (.NET) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784780"
 ---
 # <a name="managing-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ Pliki zasobów są pliki, które są częścią aplikacji, ale nie są kompilowa
 ## <a name="working-with-resources"></a>Praca z zasobami  
  W projekcie kodu zarządzanego, Otwórz okno właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typu **właściwościprojektu**w **Szybkie uruchamianie** oknie lub ALT + ENTER w **Eksploratora rozwiązań** okno). Wybierz **zasobów** kartę. Jeśli projekt nie zawiera jeden już, dodawać i usuwać różnych rodzajów zasobów oraz zmodyfikowania istniejących zasobów, można dodać pliku resx.  
   
- Aby dowiedzieć się, jak pracować z zasobami w projektach C++, zobacz [porady: tworzenie zasobu](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).
-
+ Aby dowiedzieć się, jak pracować z zasobami w projektach C++, zobacz [jak: Utwórz zasób](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).

@@ -1,24 +1,19 @@
 ---
 title: Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791995"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
   ![Architektura testu interfejsu użytkownika](../test/media/ui-testarch.png "UI_TestArch")  
   Omówienie architektury  
   
-## <a name="download-the-sample"></a>Pobieranie przykładu  
+## <a name="download-the-sample"></a>Pobierz przykład  
  Przykład składa się z czterema projektami w `CodedUIExtensibilitySample.sln` rozwiązania:  
   
 - CodedUIextensibilitySample  
@@ -53,15 +48,15 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
 ## <a name="details-about-the-sample"></a>Szczegółowe informacje o przykładzie  
  Poniższe sekcje zawierają informacje o przykładu i jego strukturę.  
   
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Dodatek programu Microsoft Excel: ExcelCodedUIAddinHelper  
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft dodatek programu Excel: ExcelCodedUIAddinHelper  
  Ten projekt zawiera dodatek, który działa w procesie programu Excel. Zobacz [przykładowy dodatek Excel dla kodowanych testów interfejsu użytkownika](../test/sample-excel-add-in-for-coded-ui-testing.md) krótki przegląd projektu dodatku.  
   
- Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie Twojej pierwszej dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Aby uzyskać więcej informacji, zobacz [instruktażu: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Komunikacja interfejsu użytkownika programu Excel: ExcelUIcommunicationHelper  
  Ten projekt zawiera `IExcelUICommunication` interfejsu i klasy informacje, które są używane do przekazywania danych między struktury testowania kodowanego interfejsu użytkownika i program Excel. Aby uzyskać więcej informacji, zobacz [interfejs komunikatora programu Excel przykładowe](../test/sample-excel-communicator-interface.md).  
   
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozszerzenie kodowanych testów UI: CodedUIExentsibilitySample  
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Rozszerzenie testu kodowanego interfejsu użytkownika: CodedUIExentsibilitySample  
  Ten projekt zawiera niestandardowych klas, które są używane w testach arkusza programu Excel. Kod dla każdego z tych klas jest dość oczywiste. Jednak firma Microsoft zapewnia krótki opis każdej klasy niestandardowej. Aby uzyskać więcej informacji, zobacz [rozszerzenie kodowanych testów interfejsu użytkownika przykładowe dla programu Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
 ### <a name="deploying-your-add-in-and-extension"></a>Wdrażanie usługi dodatku i rozszerzenia  
@@ -84,6 +79,3 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

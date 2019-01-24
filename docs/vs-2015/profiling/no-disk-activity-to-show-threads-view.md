@@ -1,14 +1,9 @@
 ---
 title: Żadnej aktywności dysku do pokazania (Widok wątków) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nodiskreport
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d72471e5-4c8e-4a0a-a52e-3cd91df87b2d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8cc4fc27d49e74922e021823bc2a4b7b99003eae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f8273e17f5a132d4be2394bd0dc75b15b7204316
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785612"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Nie ma do pokazania żadnej aktywności dysku (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,6 +27,3 @@ Nie można wyświetlić aktywność dysku dla bieżącego zakresu czasu w kanał
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)
-
-
-

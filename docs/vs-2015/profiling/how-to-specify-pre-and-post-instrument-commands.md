@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie poleceń przed i po Instrumentacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określ polecenia przed i po Instrumentacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b88d49be8ee4651d82135b3e8d27bef8218ffd43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792847"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Porady: określanie poleceń pre- i post-instrumentalnych
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: Określ polecenia przed i po Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz określić polecenia, które są uruchamiane przed lub po są instrumentowane pliki binarne w sesji wydajności. Wszystkie polecenia, które mogą być wystawiane z wiersza polecenia można określić jako przed Instrumentacją lub zdarzenia po instrumentacji. Na przykład można określić poleceń, które automatyzują ponownego podpisywania zestawu za pomocą klucza silnej nazwy w pliku wsadowym, który jest wykonywany po są instrumentowane pliki binarne.  
@@ -96,6 +91,3 @@ Możesz określić polecenia, które są uruchamiane przed lub po są instrument
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-
-
-

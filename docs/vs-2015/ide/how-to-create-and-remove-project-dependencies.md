@@ -1,14 +1,9 @@
 ---
-title: 'Porady: tworzenie i usuwanie zależności projektu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie i usuwanie zależności projektu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -22,15 +17,15 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823843"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799775"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Porady: tworzenie lub usuwanie zależności projektu
+# <a name="how-to-create-and-remove-project-dependencies"></a>Instrukcje: Tworzenie i usuwanie zależności projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być konieczne do tworzenia niektórych projektów najpierw, aby wygenerować kod używany przez inne projekty. Gdy projekt korzysta z kodu wykonywalnego, generowane przez inny projekt, projekt, który generuje kod nazywa się zależności projektu, projektu, który wykorzystuje kod. Takie relacji zależności można zdefiniować w **zależności projektu** okno dialogowe.  
@@ -71,7 +66,4 @@ Podczas kompilowania rozwiązania, które zawiera wiele projektów, może być k
  [Kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)   
  [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)   
- [NIB porady: modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

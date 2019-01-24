@@ -1,14 +1,9 @@
 ---
 title: Opcje, Edytor tekstu, ogólne | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -52,13 +47,13 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794460"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ ms.locfileid: "49257832"
 To okno dialogowe umożliwia zmianę ustawień globalnych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorze kodu i tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **edytora tekstów** folder, a następnie kliknij **ogólne**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ustawienia  
  Przeciąganie i upuszczanie edycji tekstu  
@@ -109,6 +104,3 @@ To okno dialogowe umożliwia zmianę ustawień globalnych [!INCLUDE[vsprvs](../.
  [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Dopasowywanie edytora](../../ide/customizing-the-editor.md)   
  [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)
-
-
-

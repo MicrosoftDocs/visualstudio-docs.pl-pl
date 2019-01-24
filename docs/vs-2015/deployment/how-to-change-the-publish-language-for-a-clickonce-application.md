@@ -1,14 +1,9 @@
 ---
-title: 'Porady: zmiana języka publikacji dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zmiana języka publikacji dla aplikacji ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2330f234b5b00fdde99376fbe5664bd5dbd99551
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 34f86760fdede4efa84bc069c0ed9c92bf6740bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239660"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790590"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Porady: zmienianie języka publikacji dla aplikacji ClickOnce
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Instrukcje: Zmienianie języka publikacji dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji interfejsu użytkownika wyświetlany podczas domyślne ustawienia instalacji języka i kultury komputer deweloperski. W przypadku publikowania zlokalizowanych aplikacji, należy określić języka i kultury, aby dopasować zlokalizowanej wersji. Jest to określane przez `Publish language` właściwość dla projektu.  
@@ -37,7 +32,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
  `Publish language` Właściwość można ustawić **opcji publikowania** okno dialogowe, dostępna z **Publikuj** strony **projektanta projektu**.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-publish-language"></a>Aby zmienić język publikacji  
   
@@ -53,7 +48,4 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
   
 ## <a name="see-also"></a>Zobacz też  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

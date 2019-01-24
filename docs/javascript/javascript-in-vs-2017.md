@@ -17,14 +17,14 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9ab08479485769121de276b5889603b984e39ef8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54399987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786974"
 ---
-# <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
+# <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
 JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). W przypadku wielu typów aplikacji i usług, można napisać kod JavaScript.
 
@@ -206,7 +206,8 @@ Można użyć następującego `tsconfig.json` aby upewnić się, że język usł
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Rozwiązywanie problemów z usługa języka JavaScript została wyłączona dla następujących projektów
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>Rozwiązywanie problemów z usługa języka JavaScript została wyłączona dla następujących projektów
 Po otwarciu projektu w języku JavaScript, który ma bardzo dużą ilość zawartości, możesz otrzymać komunikat "Usługa języka JavaScript została wyłączona dla następujących projektów". Najbardziej typową przyczyną występowania bardzo dużą ilość źródłowy JavaScript wynika z tym bibliotek z kodem źródłowym, która przekracza limit projektu o rozmiarze 20 MB.
 
 Prosty sposób na optymalizację projektu jest dodanie `tsconfig.json` pliku w katalogu głównym projektu aby umożliwić usługa językowa wiedzieć, które pliki są bezpiecznie zignorować. Użyj poniższego przykładu aby wykluczać katalogi najczęściej, gdzie są przechowywane biblioteki:
@@ -231,7 +232,7 @@ Prosty sposób na optymalizację projektu jest dodanie `tsconfig.json` pliku w k
 }
 ```
 
-Dodaj więcej katalogi, zgodnie z potrzebami. Niektóre inne przykłady katalogi "dostawca" lub "wwwroot/lib". 
+Dodaj więcej katalogi, zgodnie z potrzebami. Niektóre inne przykłady katalogi "dostawca" lub "wwwroot/lib".
 
 > [!NOTE]
 > Właściwość kompilatora `disableSizeLimit` można również wyłączyć limit wyboru o rozmiarze 20 MB. Należy zachować środki ostrożności, specjalne, gdy za pomocą tej właściwości, ponieważ wyłączenie limit może ulec awarii usługi języka.

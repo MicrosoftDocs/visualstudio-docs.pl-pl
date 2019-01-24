@@ -1,13 +1,9 @@
 ---
 title: 'CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
@@ -15,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f07fc7639bd08c2cae6f7e066c2f8ea0192b22c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5c8e6298ab8ec7da947ae3c71fd2dcf4e1e9e25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792291"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metody muszą zachowywać spójną przezroczystość podczas nadpisywania metod bazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

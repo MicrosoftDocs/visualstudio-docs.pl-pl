@@ -1,25 +1,20 @@
 ---
 title: Węzły projektanta cieniowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793267"
 ---
 # <a name="shader-designer-nodes"></a>Węzły Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ Artykuły w tej sekcji dokumentacji zawierają informacje dotyczące różnych w
 |[Węzły matematyczne](../designers/math-nodes.md)|W tym artykule opisano węzły, które można użyć do wykonania algebraicznych, logiki trygonometryczne i inne operacje matematyczne, mapowane bezpośrednio do instrukcji HLSL.|  
 |[Węzły narzędzi](../designers/utility-nodes.md)|W tym artykule opisano węzły, których można wykonywać typowe obliczenia udziału oświetlenia i innymi typowymi operacjami, które nie są mapowane bezpośrednio do instrukcji HLSL.|  
 |[Węzły filtrów](../designers/filter-nodes.md)|W tym artykule opisano węzły, które można użyć do wykonania filtrowania tekstur i filtrowanie kolor.|
-
-
-

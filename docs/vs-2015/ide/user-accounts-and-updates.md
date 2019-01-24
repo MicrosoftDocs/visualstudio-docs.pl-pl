@@ -1,25 +1,20 @@
 ---
 title: Konta użytkowników i aktualizacje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0adb84eb-b22e-46a6-ad90-216652f3733c
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222429"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802606"
 ---
 # <a name="user-accounts-and-updates"></a>Konta użytkowników i aktualizacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +33,3 @@ Visual Studio jest połączone środowisko. Logowanie umożliwia dostęp do wszy
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-
-
-
-
-
-
-

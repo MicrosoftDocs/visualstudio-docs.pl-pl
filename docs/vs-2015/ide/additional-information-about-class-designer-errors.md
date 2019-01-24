@@ -1,14 +1,9 @@
 ---
 title: Dodatkowe informacje na temat błędów projektanta klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -33,13 +28,13 @@ ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783683"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Dodatkowe informacje na temat błędów w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ Projektant klas nie śledzi lokalizację plików źródłowych sposób modyfikow
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)  
  Zawiera informacje o wyświetlaniu C++ na diagramie klasy dotyczące rozwiązywania problemów.  
   
- [Forum projektanta klas programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754)  
+ [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?LinkId=160754)  
  Udostępnia forum w razie pytań dotyczących projektanta klas.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md)
-
-
-

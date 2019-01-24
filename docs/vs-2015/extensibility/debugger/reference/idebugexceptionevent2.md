@@ -1,14 +1,9 @@
 ---
 title: IDebugExceptionEvent2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ac2e9a85d66ad93b8b0ae1c80ee82e915fa9d86
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8b11a6a9f3474b2cc7b6331b56fa8fd7dd2d7301
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755505"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,11 +47,11 @@ IDebugExceptionEvent2 : IUnknown
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Określa, czy wyjątek powinien zostać przekazany do aktualnie debugowanego po wznowieniu działania wykonywania, czy wyjątek powinien zostać odrzucony.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Uwagi  
  Przed wysłaniem zdarzenia, DE sprawdza, jeśli to zdarzenie wyjątku wyznaczono wyjątek pierwszego rzędu lub szansy na sekundę przez poprzednie wywołanie [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Jeśli został wyznaczony jako wyjątku pierwszej szansy `IDebugExceptionEvent2` SDM jest wysyłane zdarzenie. W przeciwnym razie DE daje aplikacji możliwość obsługi wyjątku. Jeśli zostanie podana żadna procedura obsługi wyjątków, a wyjątek został wyznaczony jako wyjątek szansy na sekundę, `IDebugExceptionEvent2` SDM jest wysyłane zdarzenie. W przeciwnym razie DE wznawia działanie programu, a system operacyjny lub środowisko uruchomieniowe obsługuje wyjątek.  
@@ -66,4 +61,3 @@ IDebugExceptionEvent2 : IUnknown
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

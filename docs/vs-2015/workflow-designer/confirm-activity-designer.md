@@ -1,11 +1,8 @@
 ---
 title: Confirm, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
@@ -13,13 +10,13 @@ ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: df1943314163ab71925620a2f8a2f8431a8033d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 29635044eb4cca558d631ab959b1b4f5480dbdbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782588"
 ---
 # <a name="confirm-activity-designer"></a>Confirm, projektant działań
 **Potwierdź** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Confirm> działania.  
@@ -40,7 +37,7 @@ ms.locfileid: "49237734"
 |Nazwa właściwości|Wymagane|Użycie|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.CancellationScope> działania. Wartość domyślna to potwierdzić.|  
-|<xref:System.Activities.Statements.Confirm.Target%2A>|True|Określa <xref:System.Activities.InArgument%601> zawierający <xref:System.Activities.Statements.CompensationToken> tego <xref:System.Activities.Statements.Confirm> działania.|  
+|<xref:System.Activities.Statements.Confirm.Target%2A>|Prawda|Określa <xref:System.Activities.InArgument%601> zawierający <xref:System.Activities.Statements.CompensationToken> tego <xref:System.Activities.Statements.Confirm> działania.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Transakcji](../workflow-designer/transaction-activity-designers.md)   

@@ -1,14 +1,9 @@
 ---
-title: Idiasourcefile::get_checksum — | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: IDiaSourceFile::get_checksum | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: efbbd3b7e77de6d1124e04132dbf55dbfffa8871
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0f87f5cdd937c0e172e7b96cf0858423b14686d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795739"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,8 +56,5 @@ HRESULT get_checksum ( 
  Typowe sumy kontrolne nigdy nie są więcej niż 32 bajty, rozmiar, ale nie należy zakładać, że jest maksymalny rozmiar sumy kontrolnej. Ustaw `data` parametr `NULL` do liczby bajtów wymaganej do pobierania sumy kontrolnej. Następnie przydziel bufor odpowiedni rozmiar i wywoływanie tej metody raz z bufor nowego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
-
-
-

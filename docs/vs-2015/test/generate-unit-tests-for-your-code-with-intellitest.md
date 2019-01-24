@@ -1,26 +1,21 @@
 ---
 title: Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226515"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790512"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
 ## <a name="get-started-with-intellitest"></a>Rozpoczynanie pracy z funkcją IntelliTest  
  Visual Studio Enterprise jest potrzebne.  
   
-### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Poznaj: Użycie funkcji IntelliTest eksplorować kod i generowania testów jednostkowych  
+### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Poznaj usługę: Użyj testów funkcji IntelliTest, aby eksplorować kod i generowania testów jednostkowych  
  Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym razie [Utwórz testy jednostkowe](#NoRun) pierwszy przed wygenerowaniem je.  
   
 1.  Otwórz swoje rozwiązanie w programie Visual Studio. Następnie otwórz plik klasy, który zawiera metody, które mają zostać przetestowane.  
@@ -67,7 +62,7 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
      Jeśli zmieni się kod metody, należy ponownie uruchomić program IntelliTest, aby zachować synchronizację ze zmianami, testy jednostkowe.  
   
-### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Pomoc telefoniczną: Użyj IntelliTest eksplorację kodu zespołu  
+### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assist: Użyj funkcji IntelliTest, aby fokus kod — Eksploracja  
   
 1.  W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.  
   
@@ -87,16 +82,16 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
      ![Ponownie uruchom program IntelliTest w celu wygenerowania danych testowych](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
-### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Określ: Użycie funkcji IntelliTest do sprawdzania poprawności właściwości określone w kodzie  
+### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Określ: Weryfikacja poprawności właściwości określone w kodzie za pomocą funkcji IntelliTest  
  Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygenerowane testy jednostkowe do sprawdzania poprawności. Ta specyfikacja jest hermetyzowany w metodzie, która wygląda jak metody testowej, ale ogólnie jest obliczana. Jest to metoda testowa sparametryzowanej jednostki i potwierdzenia, wszystkie wprowadzone muszą spełniać wszystkie możliwe wartości wejściowych, które mogą generować IntelliTest.  
   
 ##  <a name="QandALink"></a> PYTANIA I ODPOWIEDZI  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>P: czy można używać funkcji IntelliTest dla niezarządzanego kodu?  
- **Odp.:** nie, program IntelliTest działa tylko z kodu zarządzanego.  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>PYT.: Można użyć funkcji IntelliTest dla niezarządzanego kodu?  
+ **ODP.:** Nie, program IntelliTest działa tylko z kodu zarządzanego.  
   
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>P: kiedy wygenerowany test powodzeniem lub niepowodzeniem?  
- **Odp.:** przekazuje, tak jak inne jednostki testu, jeśli wystąpią żadne wyjątki. Go nie powiedzie się, jeśli wszystkie potwierdzenie nie powiedzie się lub jeśli testowany kod zawiera nieobsługiwany wyjątek.  
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>PYT.: Gdy wygenerowany test powodzeniem lub niepowodzeniem?  
+ **ODP.:** Przekazuje, tak jak inne jednostki testu, jeśli wystąpią żadne wyjątki. Go nie powiedzie się, jeśli wszystkie potwierdzenie nie powiedzie się lub jeśli testowany kod zawiera nieobsługiwany wyjątek.  
   
  Jeśli masz test, który można przekazać, jeśli istnieją pewne wyjątki zgłaszane, możesz ustawić jedną z następujących atrybutów, w zależności od wymagań na metody testowej, w klasie testu lub zestawu poziomu:  
   
@@ -108,22 +103,22 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
 -   **PexAllowedExceptionFromAssemblyAttribute**  
   
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>P: czy mogę dodać założenia co do sparametryzowanego testu jednostkowego?  
- **Odp.:** tak, użyj założenia, aby określić, które dane badania nie jest wymagane dla testów jednostkowych dla określonej metody. Użyj <xref:Microsoft.Pex.Framework.PexAssume> klasy do dodania założeń. Na przykład można dodać założenie zmiennej długości nie jest null następująco.  
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>PYT.: Czy mogę dodać założenia sparametryzowanego testu jednostkowego?  
+ **ODP.:** Tak, użyj założenia, aby określić, które dane badania nie jest wymagana do testu jednostki dla określonej metody. Użyj <xref:Microsoft.Pex.Framework.PexAssume> klasy do dodania założeń. Na przykład można dodać założenie zmiennej długości nie jest null następująco.  
   
  `PexAssume.IsNotNull(lengths);`  
   
  Jeśli dodasz założeń, a następnie ponownie uruchom program IntelliTest, zostaną usunięte dane z badań, które nie są już odpowiednie.  
   
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>P: czy można dodać potwierdzenia do sparametryzowanego testu jednostkowego?  
- **Odp.:** tak, IntelliTest sprawdzi, czy są potwierdzające przez w instrukcji jest w rzeczywistości poprawna po uruchomieniu testów jednostkowych. Użyj <xref:Microsoft.Pex.Framework.PexAssert> klasy lub potwierdzenia interfejsu API, który jest dostarczany z struktury testowej, można dodać potwierdzenia. Na przykład można dodać potwierdzenia, że dwie zmienne są równe.  
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>PYT.: Czy mogę dodać potwierdzenia sparametryzowanego testu jednostkowego?  
+ **ODP.:** Tak, program IntelliTest sprawdzi, czy są potwierdzające przez w instrukcji jest w rzeczywistości poprawna po uruchomieniu testów jednostkowych. Użyj <xref:Microsoft.Pex.Framework.PexAssert> klasy lub potwierdzenia interfejsu API, który jest dostarczany z struktury testowej, można dodać potwierdzenia. Na przykład można dodać potwierdzenia, że dwie zmienne są równe.  
   
  `PexAssert.AreEqual(a, b);`  
   
  Jeśli dodasz potwierdzenie, a następnie ponownie uruchom program IntelliTest, będzie sprawdzał, czy Twoje potwierdzenie jest prawidłowa, i test zakończy się niepowodzeniem, jeśli nie jest.  
   
-###  <a name="NoRun"></a> P: czy mogę wygenerować sparametryzowanych testów jednostkowych bez konieczności uruchamiania programu IntelliTest najpierw?  
- **Odp.:** tak, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**.  
+###  <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?  
+ **ODP.:** Tak, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**.  
   
  ![Po prawej stronie&#45;kliknij przycisk edytora, wybierz tworzenie testów funkcji IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -131,15 +126,12 @@ Funkcja IntelliTest analizuje kod .NET w celu wygenerowania danych testu i pakie
   
  ![Tworzenie testów funkcji IntelliTest przy użyciu domyślnego MSTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>P: czy mogę używać innych struktur testów jednostek pochodzących z funkcją IntelliTest?  
- **Odp.:** tak, wykonaj następujące kroki, aby [znajdować i instalować innych struktur](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio i otwórz ponownie rozwiązanie, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**. Wybierz swoją zainstalowanych strukturę:  
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>PYT.: Za pomocą funkcji IntelliTest mogą używać innych struktur testów jednostek?  
+ **ODP.:** Tak, wykonaj następujące kroki, aby [znajdować i instalować innych struktur](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio i otwórz ponownie rozwiązanie, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**. Wybierz swoją zainstalowanych strukturę:  
   
  ![Wybierz inne środowiska testów jednostkowych dla funkcji IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
  Następnie uruchom test IntelliTest do generowania testów jednostkowych poszczególnych w odpowiadające im. g.cs plików.  
   
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: czy można dowiedzieć się więcej na temat sposobu generowania testów?  
- **Odp.:** tak, aby uzyskać ogólne omówienie, przeczytaj ten artykuł [wpis w blogu](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-
-
-
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>PYT.: Można dowiedzieć się więcej na temat sposobu generowania testów?  
+ **ODP.:** Tak, aby uzyskać ogólne omówienie, przeczytaj ten [wpis w blogu](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).

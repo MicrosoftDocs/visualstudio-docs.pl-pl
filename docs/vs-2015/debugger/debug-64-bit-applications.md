@@ -1,14 +1,9 @@
 ---
 title: Debugowanie aplikacji 64-bitowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789815"
 ---
 # <a name="debug-64-bit-applications"></a>Debugowanie aplikacji 64-bitowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,14 @@ Można debugować aplikację 64-bitowych, która jest uruchomiona na komputerze 
   
 1.  Utwórz rozwiązanie programu Visual Studio, na przykład aplikacja konsolowa C#.  
   
-2.  Ustaw konfigurację do 64-bitowego za pomocą programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [porady: Konfigurowanie projektów do platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
+2.  Ustaw konfigurację do 64-bitowego za pomocą programu Configuration Manager. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3.  W tym momencie zostanie uruchomiony 64-bitowej wersji zdalnego debugera (msvsmon.exe). Działa tak długo, jak rozwiązanie przy użyciu konfiguracji 64-bitowych jest otwarte.  
   
 4.  Rozpocznij debugowanie. Powinny mieć taki sam sposób, podobnie jak w przypadku konfiguracji 32-bitowych. Jeśli występują błędy, zobacz poniżej sekcję Rozwiązywanie problemów.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Rozwiązywanie problemów z debugowaniem 64-bitowych  
- Może zostać wyświetlony błąd: "Operacja debugowania 64-bitowego trwa dłużej niż oczekiwano." W takim przypadku programu Visual Studio, który wysłał żądanie do 64-bitowej wersji msvsmon.exe i trzeba było poświęcić dużo czasu, w wyniku tego żądania, aby wrócić do tego.  
+ Może zostać wyświetlony błąd: "To operacja debugowania 64-bitowego trwa dłużej niż oczekiwano." W takim przypadku programu Visual Studio, który wysłał żądanie do 64-bitowej wersji msvsmon.exe i trzeba było poświęcić dużo czasu, w wyniku tego żądania, aby wrócić do tego.  
   
  Istnieją dwie główne przyczyny tego błędu:  
   
@@ -68,9 +63,3 @@ Można debugować aplikację 64-bitowych, która jest uruchomiona na komputerze 
  [Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)
-
-
-
-
-
-

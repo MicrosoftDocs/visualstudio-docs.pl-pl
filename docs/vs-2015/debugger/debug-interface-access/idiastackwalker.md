@@ -1,14 +1,9 @@
 ---
-title: Idiastackwalker — | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1727a37acfde25dbd6f6ebb836196a6d9f709298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6f5f5c3fa70c022175208cee492f3c0e752826e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752382"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,11 +67,8 @@ if (FAILED(hr))
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
-
-
-

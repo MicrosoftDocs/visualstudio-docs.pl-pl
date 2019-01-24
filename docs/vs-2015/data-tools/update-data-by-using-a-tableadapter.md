@@ -1,12 +1,9 @@
 ---
 title: Aktualizowanie danych za pomocą adaptera TableAdapter | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 987e9166a9237fd1d195243f0156285338b8572a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785291"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

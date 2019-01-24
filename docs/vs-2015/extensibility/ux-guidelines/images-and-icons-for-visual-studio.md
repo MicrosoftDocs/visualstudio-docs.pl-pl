@@ -1,23 +1,19 @@
 ---
 title: Obrazy i ikony
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6a090ae766d15e8afff90a04a5a5a31d0f166a3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 933726f1b1b67e1e919e3bc96f166ea516764557
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755207"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

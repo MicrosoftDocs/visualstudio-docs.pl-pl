@@ -1,25 +1,20 @@
 ---
 title: Fragmentów kodu XML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786293"
 ---
 # <a name="xml-snippets"></a>Fragmenty kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,20 +41,17 @@ Edytor XML oferuje funkcję o nazwie *fragmentów kodu XML*, który pozwala szyb
   
  Fragmenty kodu można wstawić na dwa sposoby. **Wstaw fragment kodu** polecenia wstawia fragment kodu XML w położeniu kursora. **Otocz** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Oba polecenia są dostępne albo z **IntelliSense** podmenu w obszarze **Edytuj** menu lub z menu skrótów edytora.  
   
- Aby uzyskać więcej informacji, zobacz [porady: użycie fragmentów kodu z XML](../xml-tools/how-to-use-xml-snippets.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md).  
   
 ## <a name="schema-generated-xml-snippets"></a>Wygenerowany schemat XML fragmentów kodu  
  Edytor XML ma również możliwość Generowanie fragmentu kodu XML na podstawie schematu XML. Ta funkcja umożliwia wypełnić element z elementów XML wygenerowany na podstawie informacji o schemacie dla tego elementu.  
   
- Aby uzyskać więcej informacji, zobacz [porady: generowanie fragmentu kodu z XML schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
   
 ## <a name="create-new-xml-snippets"></a>Tworzenie nowych fragmentów kodu XML  
  Oprócz fragmenty kodu, które są dołączone [!INCLUDE[msCoName](../includes/msconame-md.md)] programu Visual Studio domyślnie można również tworzyć i używać własnych fragmentów kodu XML.  
   
- Aby uzyskać więcej informacji, zobacz [porady: tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)
-
-
-

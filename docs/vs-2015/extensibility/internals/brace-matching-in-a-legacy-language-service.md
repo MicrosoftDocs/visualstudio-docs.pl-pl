@@ -1,27 +1,22 @@
 ---
 title: Parowanie nawiasów klamrowych w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793399"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Parowanie nawiasów klamrowych w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Parowanie nawiasów klamrowych pomaga dla deweloperów, śledzenie elementów j�
   
  Można dopasować do dwóch lub trzech elementów występujących w tej samej, o nazwie pary i trójek. Trójek to zestawy trzech elementów występujących w tej samej. Na przykład w języku C# `foreach` instrukcji formularzy triple: "`foreach()`","`{`", a "`}`". Wszystkie trzy elementy wyróżniono po wpisaniu zamykającego nawiasu klamrowego.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania parowanie nawiasów klamrowych, zobacz [wskazówki: wyświetlanie Parowanych nawiasów klamrowych](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej na temat nowych sposobem realizowania parowanie nawiasów klamrowych, zobacz [instruktażu: Wyświetlanie, dopasowywanie nawiasów klamrowych](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
 >  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
@@ -145,4 +140,3 @@ namespace TestLanguagePackage
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
  [Analizator i skaner starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

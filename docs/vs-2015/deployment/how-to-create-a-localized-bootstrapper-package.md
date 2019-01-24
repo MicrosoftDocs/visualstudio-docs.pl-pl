@@ -1,14 +1,9 @@
 ---
-title: 'Porady: tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,20 +12,20 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790974"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Porady: tworzenie zlokalizowanego pakietu programu inicjującego
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla poszczególnych ustawień regionalnych, można utworzyć zlokalizowane wersje pakietu programu inicjującego: postanowienia licencyjne dotyczące oprogramowania pliku (na przykład eula.rtf) oraz manifest pakietu (package.xml).  
   
- Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile, 2.0 środowisko uruchomieniowe F # i F # 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.  
+ Domyślnie program Visual Studio 2010 zawiera zlokalizowane pakiety programu inicjującego tylko dla .NET Framework 4, .NET Framework 4 Client Profile F# środowiska uruchomieniowego w wersji 2.0 i F# 4.0 środowiska uruchomieniowego. Zlokalizowane pakiety dla innych programów inicjujących można utworzyć, wykonując trzy kroki.  
   
 1.  Utwórz folder o nazwie po nazwie ustawień regionalnych \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*.  
   
@@ -55,24 +50,24 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
   
     |Regionalne|Nazwa folderu|  
     |------------|-----------------|  
-    |Chiński uproszczony|nazwy zh-Hans|  
-    |Chiński (tradycyjny)|nazwy zh-Hant|  
-    |czeski|CS|  
+    |Chiński uproszczony|zh-Hans|  
+    |Chiński (tradycyjny)|zh-Hant|  
+    |czeski|cs|  
     |niemiecki|Niemcy|  
     |Angielski|pl|  
-    |Hiszpański|ES|  
-    |Francuski|FR|  
+    |Hiszpański|es|  
+    |Francuski|fr|  
     |Włoski|go|  
     |koreański|ko|  
     |japoński|ja|  
     |polski|pl|  
     |portugalski (Brazylia)|pt-BR|  
     |Rosyjski|ru|  
-    |turecki|TR|  
+    |turecki|tr|  
   
 2.  Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.  
   
-3.  Tworzenie manifestu pakietu o nazwie package.xml i umieścić go w nowym folderze. Aby uzyskać więcej informacji, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
+3.  Tworzenie manifestu pakietu o nazwie package.xml i umieścić go w nowym folderze. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Aktualizacja `<Strings>` części pakietu manifestu, tak aby ciągi znajdują się w prawidłowym języku dla ustawień regionalnych.  
   
@@ -101,7 +96,4 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
  [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   
- [Instrukcje: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)
-
-
-
+ [Instrukcje: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)

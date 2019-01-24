@@ -1,26 +1,21 @@
 ---
-title: 'Szybki Start: Testowanie programowanie sterowane za pomocą narzędzia Eksplorator testów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Szybki start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831695"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797968"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: programowanie sterowane testami za pomocą narzędzia Eksplorator testów
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.  
@@ -58,11 +53,11 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
     Eksplorator testów otwiera i wyświetla podsumowanie wyników.  
   
-   **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.  
+   **Aby wyświetlić pełną listę testów:** Wybierz **Pokaż wszystko** w dowolnej kategorii.  
   
-   **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.  
+   **Aby wyświetlić szczegóły wyniku testu:** Wybierz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.  
   
-   **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.  
+   **Aby przejść do kodu testu:** Kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.  
   
    **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.  
   
@@ -72,7 +67,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 > [!NOTE]
 >  Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [używanie różnych środowisk testowych w Eksploratorze testów](#frameworks).  
   
-##  <a name="walkthrough"></a> Przewodnik: Używanie testów jednostkowych do opracowania metody  
+##  <a name="walkthrough"></a> Wskazówki: Za pomocą testów jednostkowych do opracowania metody  
  W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [używanie różnych środowisk testowych](#frameworks).  
   
 #### <a name="creating-the-test-and-method"></a>Tworzenie testu i metody  
@@ -109,7 +104,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
    1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.  
   
-   2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.  
+   2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest to `MyMath`.  
   
    3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj**, **szkieletu metody**.  
   
@@ -293,6 +288,3 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
      Kod nadal przechodzi wszystkie testy.  
   
      ![Eksplorator testów jednostkowych pokazujący 3 testy zakończone pomyślnie. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

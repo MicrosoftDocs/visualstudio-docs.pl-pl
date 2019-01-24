@@ -1,14 +1,9 @@
 ---
 title: Resolvekeysource — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveKeySource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1297b50390d98239fae491e0567abc7485202cff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 49ba6bb58c8c3386da71da71b84b0cf07fc5ad23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794074"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ Określa źródło klucza silnej nazwy.
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

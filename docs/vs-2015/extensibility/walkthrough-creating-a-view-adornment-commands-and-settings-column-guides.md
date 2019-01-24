@@ -1,33 +1,28 @@
 ---
 title: 'Przewodnik: Tworzenie widoku zakończeń, poleceń i ustawień (prowadnice kolumn) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 501d5c9991aaef090c061e396eaa147dba1f53f1
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+manager: jillfra
+ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788582"
 ---
-# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie widoku zakończeń, poleceń i ustawień (prowadnice kolumn)
+# <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym temacie dowiesz się, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. Specjalnie sformatowanego kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.
 
 W tym instruktażu wykonasz następujące czynności:
 
-- Utwórz projekt VSIX
+- Create a VSIX project
 - Dodaj zakończeń widoku edytora
 - Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)
 - Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)
@@ -756,7 +751,7 @@ Pliku vsct deklaruje poleceń i ich gdzie, wraz z ikon i tak dalej. Zastąp zawa
 
 ```
 
-**IDENTYFIKATORY GUID**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je należy upewnić się, że pakiet, który jest identyfikatorem GUID zadeklarowanych w pliku vsct (skopiowany z powyższych pasuje do pakietu, którego identyfikator GUID jest zadeklarowana w pliku ColumnGuideCommandsPackage.cs (generowany na podstawie szablonu elementu projektu) ). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
+**GUIDS**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je należy upewnić się, że pakiet, który jest identyfikatorem GUID zadeklarowanych w pliku vsct (skopiowany z powyższych pasuje do pakietu, którego identyfikator GUID jest zadeklarowana w pliku ColumnGuideCommandsPackage.cs (generowany na podstawie szablonu elementu projektu) ). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
 
 Znajdź ten wiersz w ColumnGuideCommandsPackage.cs i skopiuj identyfikator GUID znajdujące znaki cudzysłowu:
 
@@ -1354,4 +1349,3 @@ Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Stud
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 [dodawanie podmenu do Menu](../extensibility/adding-a-submenu-to-a-menu.md)
 [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Odwołuje się Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5e3e0df8583e48dd6a3f7604f4fa72b2803779b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 19fd3e260e6c7079ccfb98f520858a31191cc112
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795661"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783498"
 ---
 # <a name="references-element-visual-studio-templates"></a>Odwołania — element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51795661"
 Grupuje odwołania do zestawów, które szablon dodaje się do projektów.  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<Odwołania >  
   
 ## <a name="syntax"></a>Składnia  
@@ -89,6 +84,5 @@ Grupuje odwołania do zestawów, które szablon dodaje się do projektów.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-

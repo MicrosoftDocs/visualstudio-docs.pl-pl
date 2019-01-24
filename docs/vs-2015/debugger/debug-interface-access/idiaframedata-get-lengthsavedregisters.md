@@ -1,14 +1,9 @@
 ---
 title: Idiaframedata::get_lengthsavedregisters — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: dfda4e91-9bfa-4b9d-9133-b73015bfa4d5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c42e676f6712a14b1f6091b0beac0028a6c487e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e18c1c3ed5e611f1fedc971f8cb0e0c1c27c324f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783307"
 ---
 # <a name="idiaframedatagetlengthsavedregisters"></a>IDiaFrameData::get_lengthSavedRegisters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,8 +44,5 @@ HRESULT get_lengthSavedRegisters ( 
  Wartość zwrócona przez tę metodę jest zwykle używanych w interpretacji ciągu program (zobacz [idiaframedata::get_program —](../../debugger/debug-interface-access/idiaframedata-get-program.md) metody dla definicji ciąg program).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
-
-
-

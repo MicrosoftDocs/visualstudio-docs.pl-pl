@@ -1,27 +1,22 @@
 ---
-title: 'Porady: eksport cieniowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Eksport cieniowania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e8c3a6ea90b43caeb1140cbb9ab7c699bdb09c3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802796"
 ---
-# <a name="how-to-export-a-shader"></a>Porady: eksport cieniowania
+# <a name="how-to-export-a-shader"></a>Instrukcje: Eksport cieniowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wykres modułu cieniującego języka (DGSL) służy w swojej aplikacji za pomocą projektanta modułu cieniującego.  
@@ -37,7 +32,7 @@ W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wy
   
 1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otwórz **wizualny wykres modułu cieniującego (.dgsl)** pliku.  
   
-     Jeśli nie masz **wizualny wykres modułu cieniującego (.dgsl)** plik, aby otworzyć, utwórz je, zgodnie z opisem w [porady: tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md).  
+     Jeśli nie masz **wizualny wykres modułu cieniującego (.dgsl)** plik, aby otworzyć, utwórz je, zgodnie z opisem w [jak: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md).  
   
 2.  Na **Shader Designer** narzędzi, wybierz **zaawansowane**, **wyeksportować**, **Eksportuj jako**. **Eksportowania modułu cieniującego** zostanie wyświetlone okno dialogowe.  
   
@@ -57,8 +52,5 @@ W tym dokumencie pokazano, jak wyeksportować modułu cieniującego kierowane wy
 4.  W **nazwy pliku** pola kombi, określ nazwę dla eksportowanego programu do cieniowania, a następnie wybierz **Zapisz** przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)   
+ [Instrukcje: Tworzenie cieniowania koloru podstawowego](../designers/how-to-create-a-basic-color-shader.md)   
  [Projektant cieniowania](../designers/shader-designer.md)
-
-
-

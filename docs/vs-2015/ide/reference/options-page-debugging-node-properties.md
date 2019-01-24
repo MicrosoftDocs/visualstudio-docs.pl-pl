@@ -1,25 +1,20 @@
 ---
 title: Strona opcji, debugowanie — właściwości węzła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782200"
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,6 +89,3 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), są skojarz
  [Ogólne, debugowanie, okno dialogowe Opcje](../../debugger/general-debugging-options-dialog-box.md)   
  [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Just-In-Time, Debugowanie, Opcje, okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

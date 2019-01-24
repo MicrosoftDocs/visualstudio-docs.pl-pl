@@ -1,14 +1,9 @@
 ---
 title: Tworzenie starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798570"
 ---
 # <a name="developing-a-legacy-language-service"></a>Tworzenie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ Sekcja Łącze do tematów, które ułatwiają tworzenie starszej wersji usługi
  [Obsługa usługi językowej do debugowania](../../extensibility/internals/language-service-support-for-debugging.md)  
  W tym artykule opisano, jak usługa języka może zapewnić funkcji obsługi debugera.  
   
- [Lista kontrolna: tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Lista kontrolna: Tworzenie starszej wersji usługi językowej](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Instrukcje krok po kroku dotyczące tworzenia i integrowania usługi języka dla podstawowy edytor.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -67,9 +62,8 @@ Sekcja Łącze do tematów, które ułatwiają tworzenie starszej wersji usługi
  [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  W tym artykule opisano, jak zapewnić porady metodę dla przeciążonej funkcji i metod.  
   
- [Instrukcje: zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Instrukcje: Zapewnianie obsługi tekstu ukrytego w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Zawiera wyjaśnienie przeznaczenia obszaru tekstu ukrytego i zawiera instrukcje dotyczące sposobu implementacji region tekstu ukrytego.  
   
- [Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Instrukcje: Zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Opisano dwie opcje, które rozszerzają obsługi zwijania dla danego języka, poza obsługi *Zwiń do definicji* polecenia.
-

@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Wyróżnianie tekstu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d4fad243b109cb8522f15e30d628d5eb27c09c07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5600f30df21e73fb4474839aee3bc6ab1eced761
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752791"
 ---
-# <a name="walkthrough-highlighting-text"></a>Przewodnik: wyróżnianie tekstu
+# <a name="walkthrough-highlighting-text"></a>Przewodnik: Wyróżnianie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz dodać różne efekty do edytora, tworząc części składowe Managed Extensibility Framework (MEF). W tym instruktażu przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli słowa występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie jest wyróżniona.  
@@ -413,5 +408,4 @@ Możesz dodać różne efekty do edytora, tworząc części składowe Managed Ex
 4.  Umieść kursor w jednym z wystąpień "hello". Każde wystąpienie powinien być wyróżniony kolorem niebieskim.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

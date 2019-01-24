@@ -1,29 +1,24 @@
 ---
 title: 'Lista kontrolna: Tworzenie starszej wersji usługi językowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782989"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757116"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Lista kontrolna: tworzenie starszej wersji usługi językowej
+# <a name="checklist-creating-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, aby można było utworzyć language service Pro [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorze podstawowych funkcji. Aby zintegrować usługi w języka [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], należy utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [rozszerzeń debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -116,7 +111,7 @@ Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, 
   
 - Tworzenie konspektu  
   
-   Dostępnych jest kilka opcji do obsługi konspektu. Na przykład, może obsługiwać **Zwiń do definicji** polecenia, podaj kontrolowane przez Edytor konspektu regionów lub obsługuje regionów kontrolowane przez klienta. Aby uzyskać więcej informacji, zobacz [jak: Podaj rozwinięte konspekt pomocy technicznej w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Dostępnych jest kilka opcji do obsługi konspektu. Na przykład, może obsługiwać **Zwiń do definicji** polecenia, podaj kontrolowane przez Edytor konspektu regionów lub obsługuje regionów kontrolowane przez klienta. Aby uzyskać więcej informacji, zobacz [jak: Zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Rejestracja usługi w języka  
   
@@ -133,4 +128,3 @@ Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, 
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

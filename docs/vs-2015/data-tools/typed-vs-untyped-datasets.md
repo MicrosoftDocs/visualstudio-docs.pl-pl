@@ -1,22 +1,20 @@
 ---
 title: Typizowane i nietypizowane zestawy danych | Dokumentacja firmy Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790816"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +40,3 @@ Typizowany zestaw danych jest zestaw danych, który najpierw pochodzą od podsta
  Mimo że typizowanych zestawów danych ma wiele zalet, nietypizowany zestaw danych jest przydatne w różnych sytuacjach. Scenariusz najbardziej oczywiste jest, gdy schemat nie jest dostępny dla zestawu danych. Taka sytuacja może wystąpić, na przykład, jeśli aplikacja prowadzi interakcję z składnik, który zwraca zestaw danych, ale nie znasz wcześniej jego struktury jest. Analogicznie istnieją razy podczas pracy z danymi, które nie ma statycznego stała, przewidywalna Struktura. W takim przypadku jest to niepraktyczne, aby użyć typizowany zestaw danych, ponieważ trzeba ponownie wygenerować klasę typizowany zestaw danych z każdej zmiany w strukturze danych.  
   
  Ogólnie rzecz biorąc są wielokrotnie podczas można dynamicznie utworzyć zestaw danych bez schematu, które są dostępne. W takim przypadku zestaw danych jest po prostu wygodne struktury zachować informacje, tak długo, jak długo dane mogą być reprezentowane w taki sposób, relacyjne. W tym samym czasie można wykorzystać możliwości zestawu danych, takich jak możliwość serializacji informacji do przekazania do innego procesu lub zapisać plik XML.
-

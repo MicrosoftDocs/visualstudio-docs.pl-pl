@@ -1,12 +1,9 @@
 ---
 title: 'Diagramy składników UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787388"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Zalecenia
+# <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio, można narysować *diagram składników* Aby wyświetlić strukturę systemu oprogramowania. Aby obejrzeć wideo demonstracyjne, zobacz [Projektowanie struktury fizycznej za pomocą diagramów składników](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -49,13 +46,13 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 |Inny diagram|Pomaga w omawianiu i komunikowaniu tych aspektów projektu|  
 |-------------------|--------------------------------------------------------------------|  
-|Diagram sekwencji UML|-Interakcje między składnikami systemu<br />-Interakcje między częściami wewnątrz składnika.<br /><br /> Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagram klas UML|-Interfejsy składnika. Diagram klas pozwala wymienić metody interfejsu.<br />-Dane przesyłane w parametrach przez interfejsy składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [UML Class Diagrams: wskazówki dotyczące](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagramy aktywności|-Przetwarzanie wewnętrzne wykonywane przez składnik w odpowiedzi na wiadomości przychodzące.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).|  
-|Diagramy warstw|-Logiczne warstw architektury dla składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md).|  
+|Diagram sekwencji UML|-Interakcje między składnikami systemu<br />-Interakcje między częściami wewnątrz składnika.<br /><br /> Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagram klas UML|-Interfejsy składnika. Diagram klas pozwala wymienić metody interfejsu.<br />-Dane przesyłane w parametrach przez interfejsy składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagramy aktywności|-Przetwarzanie wewnętrzne wykonywane przez składnik w odpowiedzi na wiadomości przychodzące.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagramy warstw|-Logiczne warstw architektury dla składników.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md).|  
   
 ##  <a name="Basics"></a> Podstawowe kroki rysowania diagramów składników  
- Aby uzyskać informacje na temat elementów na diagramach składników, zobacz [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md).  
+ Aby uzyskać informacje na temat elementów na diagramach składników, zobacz [diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md).  
   
  Aby uzyskać więcej informacji o sposobie używania diagramów składników w procesie projektowania, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
@@ -279,7 +276,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 1.  Utwórz nowy diagram sekwencji.  
   
-     Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 2.  Utwórz linię życia dla zewnętrznego składnika, użytkownika, urządzenia lub innego aktora (1), który wysyła wiadomości do tego składnika.  
   
@@ -301,7 +298,7 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
  Możesz to zasygnalizować w modelu, ustawiając **czy wystąpienie utworzono pośrednio** właściwości składnika. W takim przypadku wszystkie interfejsy składnika powinny znaleźć się na portach z delegacją do wewnętrznych części.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Opisywanie procesu wewnątrz każdej części  
- Możesz użyć diagramów aktywności, aby pokazać, jak składnik przetwarza każdą przychodzącą wiadomość. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+ Możesz użyć diagramów aktywności, aby pokazać, jak składnik przetwarza każdą przychodzącą wiadomość. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagram aktywności z buforu danych](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
  [Wideo: Projektowanie struktury fizycznej za pomocą diagramów składników](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

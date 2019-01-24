@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Pisanie wizualizatora w języku Visual Basic | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Pisanie wizualizatora w języku Visual Basic | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,21 +16,21 @@ ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 549e1ce240808a3947b2780f5c96485439e44ecc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786339"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.  
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu i wybrać **importowanie i eksportowanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, przejdź do **narzędzia** menu i wybrać **importowanie i eksportowanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywany przez debuger. Pierwszym krokiem jest, aby utworzyć projekt biblioteki klas dla biblioteki DLL.  
   
@@ -230,12 +225,9 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
   
    Gratulacje. Mieć po prostu tworzone i testowane na Twoje pierwsze wizualizatora.  
   
-   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md).  
+   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [jak: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Architektura wizualizatora](../debugger/visualizer-architecture.md)   
- [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
+ [Instrukcje: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md)   
  [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Wybieranie zdarzeń próbkowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wybieranie zdarzeń próbkowania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -23,15 +18,15 @@ ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 96bf47c6bfc28e0939f6feb9fd7999e898c042a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784515"
 ---
-# <a name="how-to-choose-sampling-events"></a>Porady: wybieranie zdarzeń pobierania próbek
+# <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń pobierania próbek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools zbiera dane dotyczące wydajności w odstępach czasu, który jest określony jako liczba cykli procesora, które są używane przez profilowany proces. Domyślna liczba cykli interwału jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczbę cykli w interwale, i możesz zmienić zdarzenie próbkowania. Dostępne są następujące przykładowe zdarzenia:  
@@ -68,10 +63,7 @@ Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools zbiera d
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)   
+ [Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)   
  [CPU i liczniki Windows](../profiling/cpu-and-windows-counters.md)   
  [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

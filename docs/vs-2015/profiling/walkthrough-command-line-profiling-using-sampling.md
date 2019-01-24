@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Profilowanie wiersza polecenia przy użyciu metody próbkowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu metody próbkowania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b46af3a5485f896e1a5014c094646f364876d0d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783537"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu metody pobierania próbek
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu narzędzia wiersza polecenia i pobierania próbek, aby zidentyfikować problemy z wydajnością.  
@@ -113,9 +108,6 @@ W tym instruktażu przedstawiono sposób profilować aplikację przy użyciu nar
 ## <a name="see-also"></a>Zobacz też  
  [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)
-
-
-

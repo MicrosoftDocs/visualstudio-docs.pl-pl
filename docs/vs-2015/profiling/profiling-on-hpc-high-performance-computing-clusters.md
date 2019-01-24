@@ -1,14 +1,9 @@
 ---
 title: Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802317"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
 |||  
 |-|-|  
 |*%HeadNode%*|Nazwa węzła głównego klastra.|  
-|*%FxPath%*|Ścieżka do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] Instalatora. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego, ścieżka: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego ścieżka to: autonomiczny Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Ścieżka do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] Instalatora. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego ścieżka jest: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilowanie w węźle obliczeń HPC  
  Sesję profilowania można skonfigurować za pomocą Kreatora osiągów HPC pozwala określić informacje o klastra i docelowy HPC. Można ustawić dodatkowe opcje na stronach właściwości sesji wydajności. Profiling Tools automatycznie wdrożyć pliki binarne niezbędne docelowy i uruchom program profilujący i aplikacji HPC.  
@@ -155,6 +150,3 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
 |**Argumenty skryptu przed profilu**|Określa argumenty do przekazania do skryptu przed profilu.|  
 |**Po utworzeniu profilu skryptu**|Określa ścieżkę i nazwę skryptu do uruchomienia na lokalnym komputerze deweloperskim, po zakończeniu sesji profilowania.|  
 |**Po utworzeniu profilu argumenty skryptu**|Określa argumenty do przekazania do skryptu po profilu.|
-
-
-

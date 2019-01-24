@@ -1,14 +1,9 @@
 ---
-title: 'Błąd: Serwer sieci Web nie może znaleźć żądanego zasobu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Błąd: Serwer sieci Web nie można znaleźć żądanego zasobu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84a264aee56a179934f0ad7ad2b8a26fd69b697b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800003"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: serwer sieci Web nie mógł znaleźć żądanego zasobu
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: Serwer sieci Web nie można znaleźć żądanego zasobu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ze względu na zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd ogólny.  
@@ -42,6 +37,3 @@ Ze względu na zagadnienia dotyczące zabezpieczeń usługi IIS zwrócił błąd
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia zabezpieczeń dotyczące narzędzia UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
-
-
-

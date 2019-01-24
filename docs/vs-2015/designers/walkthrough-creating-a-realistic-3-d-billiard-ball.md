@@ -1,27 +1,22 @@
 ---
-title: 'Wskazówki: Tworzenie realistycznej kuli Bilardowej w 3D | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie realistycznej kuli Bilardowej w 3D | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793308"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Wskazówki: tworzenie realistycznej kuli bilardowej w 3D
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli Bilardowej w 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej w 3D przy użyciu programu Shader Designer i edytora obrazów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. 3-wygląd bili odbywa się przez połączenie kilku technik cieniowania z odpowiednimi zasobami tekstury.  
@@ -92,7 +87,7 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 3. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość **tekstury** właściwość **próbki tekstury** węzeł **Texture1**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture1** grupy właściwości w tym samym oknie właściwości.  
   
-   Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania tekstury](../designers/how-to-create-a-basic-texture-shader.md).  
+   Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [jak: Tworzenie cieniowania tekstury podstawowej](../designers/how-to-create-a-basic-texture-shader.md).  
   
    Twoja Bila powinna wyglądać mniej więcej tak:  
   
@@ -113,7 +108,7 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 - Opcjonalnie można dostosować, jak oświetlenie, konfigurując **MaterialDiffuse** właściwości wykresu cieniowanego. Aby uzyskiwać dostęp do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie zlokalizuj właściwość, do której chcesz uzyskać dostęp w **właściwości** okna.  
   
-  Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [jak: Tworzenie podstawowego modułu cieniującego Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   Zastosowania oświetlenia Lamberta Bila powinna wyglądać mniej więcej tak:  
   
@@ -134,7 +129,7 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 2. Opcjonalnie można dostosować sposób, który odblasków zachowuje się przez skonfigurowanie właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) modułu cieniującego. Do dostępu do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie w **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.  
   
-   Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [porady: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).  
+   Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [jak: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).  
   
    Wyróżnieniem odblasków zastosowane, oświetlenia zwierciadlanego Bila powinna wyglądać mniej więcej tak:  
   
@@ -220,11 +215,8 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
    W tym obrazie końcowym Zwróć uwagę, jak efektów dodanych łączą się do tworzenia bardzo przekonującą kulę bilardową. Kształt, Tekstura i oświetlenie tworzą podstawowy wygląd obiektu 3-D i światłem odbitym i odbić wprowadzić bili bardziej interesujące i wygląda jak część jego środowiska.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Edytor obrazów](../designers/image-editor.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

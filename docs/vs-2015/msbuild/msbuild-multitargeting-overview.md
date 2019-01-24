@@ -1,25 +1,20 @@
 ---
 title: Przegląd wielowersyjności kodu w programie MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800383"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Przegląd wielowersyjności kodu w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Korzystając z programu MSBuild, można kompilować aplikację do uruchamiania n
   
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów  
  Mogą wystąpić błędy, jeśli zostanie podjęta próba odwołanie do zestawu, który nie jest częścią kontekstu docelowego. Aby uzyskać więcej informacji dotyczących tych błędów i co należy zrobić o nich, zobacz [Rozwiązywanie problemów z celem błędy programu .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

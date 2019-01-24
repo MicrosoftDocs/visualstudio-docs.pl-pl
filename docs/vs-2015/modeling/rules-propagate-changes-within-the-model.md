@@ -1,12 +1,9 @@
 ---
 title: Reguły propagujące zmiany w modelu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800417"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             Klasa bazowa                              |                                                                                                                                                                                                                                                                                                                                                                              Wyzwalacz                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Element, link lub kształt zostanie dodany.<br /><br /> Umożliwia wykrywanie nowych relacji, oprócz nowych elementów.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:** ta reguła nie jest wyzwalana po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:**  Ta zasada nie zostanie wywołany, po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Wyzwalane, gdy element lub link ma być usunięty. Właściwość ModelElement.IsDeleting ma wartość true, aż do zakończenia transakcji.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Wykonywane, gdy element lub link został usunięty. Reguła będzie wykonywana po zostały wykonane wszystkie inne zasady, w tym DeletingRules. ModelElement.IsDeleting ma wartość false, a ModelElement.IsDeleted ma wartość true. Aby zezwolić na kolejne cofania, element nie jest usuwany z pamięci, ale zostanie on usunięty z Store.ElementDirectory.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Element jest przenoszony z jednego magazynu partycji do innej.<br /><br /> (Zwróć uwagę, że to nie jest powiązana graficzny położenie kształtu).                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Zobacz też  
  [Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

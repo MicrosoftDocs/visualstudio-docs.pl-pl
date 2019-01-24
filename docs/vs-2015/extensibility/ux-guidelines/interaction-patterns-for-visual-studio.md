@@ -1,23 +1,19 @@
 ---
 title: Wzorce interakcji
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b5c31293c6f3d2c71785be73cde253b176bf440
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dd9a80bca89262e2c0f0b427380491d958b91d75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799947"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Wzorce interakcji dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

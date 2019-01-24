@@ -1,14 +1,9 @@
 ---
 title: Nie można dołączyć do procesu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.unable2attach
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0075050b6d24b63ed8380644ad9ec50dd4aa8ec
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51737667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788091"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Nie można dołączyć do procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ Nie można dołączyć do procesu. Składnik debugera na serwerze Odebrano odmow
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
-
-
-

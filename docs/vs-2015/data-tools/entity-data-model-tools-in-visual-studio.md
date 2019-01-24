@@ -1,12 +1,9 @@
 ---
 title: Narzędzia modelu danych jednostki
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 942678000cf633caeb0a55d8ca41dc092f1e484f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5d404eba9a115c7163b16d48cc9276cadca3ccc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786631"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Narzędzia modelu danych jednostki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

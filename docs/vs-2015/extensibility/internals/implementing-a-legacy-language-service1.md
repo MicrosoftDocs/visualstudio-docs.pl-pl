@@ -1,26 +1,21 @@
 ---
 title: Implementowanie starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5c2a258eb573f0f7d685cdb5a1159df29761944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28db87dafc5ce6f247e49c8a0b765a29faa938c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782685"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,12 +40,11 @@ Klas środowiska pakietu zarządzanego (MPF) można użyć do wdrożenia usługi
  [Analizator i skaner starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
  W tym artykule opisano dwa analizatory składni, które są wymagane do wdrożenia wszystkich funkcji wersji usługi językowej przy użyciu MPF.  
   
- [Przewodnik: tworzenie starszej wersji usługi językowej](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
+ [Przewodnik: Tworzenie starszej wersji usługi językowej](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
  Zawiera podstawowe kroki, które są wymagane do wdrożenia usługi w języka MPF w VSPackage.  
   
- [Przewodnik: pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ [Przewodnik: Pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
  Pokazuje technik pobieranie listy zainstalowanych fragmentów kodu.  
   
  [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)  
  Zawiera łącza do tematów w tym szczegółów, co należy zrobić, aby zaimplementować wszystkie funkcje usługi w języka przy użyciu MPF.
-

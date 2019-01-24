@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Wybieranie metod kolekcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wybieranie metod kolekcji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
 - profiling tools, choosing collection method
@@ -17,15 +12,15 @@ ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ca8018b572671f349c058e314b26f7897e421b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727627"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792879"
 ---
-# <a name="how-to-choose-collection-methods"></a>Porady: wybieranie metod kolekcji
+# <a name="how-to-choose-collection-methods"></a>Instrukcje: Wybieranie metod kolekcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools obsługują trzy metody zbieranie danych o wydajności: próbkowanie, Instrumentacja i współbieżności. Metoda próbkowania i instrumentacji umożliwia również zbieranie danych alokacji i okresie istnienia pamięci platformy .NET.  
@@ -105,6 +100,3 @@ ms.locfileid: "51727627"
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)
-
-
-

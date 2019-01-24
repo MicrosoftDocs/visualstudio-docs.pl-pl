@@ -1,13 +1,9 @@
 ---
 title: 'CA1300: Określ argument MessageBoxOptions | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
 - CA1300
@@ -19,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b3b947f6d3c1948cfb612687ac437e6e5b3da988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f325695cab1a5fd9db4206f16414ea462dfe49c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792677"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Określ argument MessageBoxOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

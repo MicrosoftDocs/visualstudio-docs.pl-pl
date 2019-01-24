@@ -1,12 +1,8 @@
 ---
 title: Automatyczne wstrzymanie funkcji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -16,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789780"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200MB lub mniej,
  Aby uzyskać porady i wskazówki na temat sposobu poprawy wydajności programu Visual Studio podczas zajmowania się warunki małej ilości pamięci lub dużych rozwiązań, zobacz [zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Pełnej analizy rozwiązania zawieszone
- Domyślnie pełnej analizy rozwiązania jest włączona dla języka Visual Basic i wyłączone dla języka Visual C#. Jednak w stan braku pamięci pełnej analizy rozwiązania jest automatycznie wyłączana dla języka Visual Basic i Visual C#, niezależnie od ich ustawień w oknie dialogowym Opcje. Jednakże, można ponownie włączyć pełnej analizy rozwiązania, wybierając **ponownie włączyć** informacje paska, gdy pojawia się, wybierając przycisk **Włączanie pełnej analizy rozwiązania** pole wyboru w oknie dialogowym Opcje, lub ponowne uruchomienie programu Visual Studio. Okno dialogowe Opcje zawsze wyświetla bieżące rozwiązanie pełną ustawień analizy. Aby uzyskać więcej informacji, zobacz [porady: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ Domyślnie pełnej analizy rozwiązania jest włączona dla języka Visual Basic i wyłączone dla języka Visual C#. Jednak w stan braku pamięci pełnej analizy rozwiązania jest automatycznie wyłączana dla języka Visual Basic i Visual C#, niezależnie od ich ustawień w oknie dialogowym Opcje. Jednakże, można ponownie włączyć pełnej analizy rozwiązania, wybierając **ponownie włączyć** informacje paska, gdy pojawia się, wybierając przycisk **Włączanie pełnej analizy rozwiązania** pole wyboru w oknie dialogowym Opcje, lub ponowne uruchomienie programu Visual Studio. Okno dialogowe Opcje zawsze wyświetla bieżące rozwiązanie pełną ustawień analizy. Aby uzyskać więcej informacji, zobacz [jak: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC o małych opóźnieniach wyłączone
  Aby ponownie włączyć tryb o małych opóźnieniach GC, uruchom ponownie program Visual Studio.  Domyślnie program Visual Studio Włącza tryb o małych opóźnieniach GC, zawsze wtedy, gdy są wpisywanie, aby upewnić się, że wpisany tekst nie blokuje żadnych operacji GC. Jednak jeśli stan braku pamięci powoduje, że Visual Studio, aby wyświetlić ostrzeżenie automatyczne zawieszenie, GC o małych opóźnieniach tryb zostanie wyłączony dla tej sesji. Ponowne uruchomienie programu Visual Studio ponownie włączyć domyślne zachowanie GC. Aby uzyskać więcej informacji, zobacz <xref:System.Runtime.GCLatencyMode>.

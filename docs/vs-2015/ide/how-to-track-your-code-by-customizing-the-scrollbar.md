@@ -1,27 +1,22 @@
 ---
-title: 'Porady: śledzenie kodu przez dostosowania paska przewijania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Śledzenie kodu przez dostosowania paska przewijania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270793"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788209"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Porady: śledzenie kodu przez dostosowania paska przewijania
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Instrukcje: Śledzenie kodu przez dostosowania paska przewijania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas pracy z plikami kodu długo może być trudny do wszystko, co należy wziąć pod uwagę. Można dostosować paska przewijania, okna kodu, które umożliwiają ptaka co się dzieje w kodzie.  
@@ -59,4 +54,3 @@ Podczas pracy z plikami kodu długo może być trudny do wszystko, co należy wz
      ![Pasek przewijania z etykietka narzędzia](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Jeśli chcesz zachować tryb mapy przewijanie zachowanie i etykietki narzędzi w wersji zapoznawczej, ale nie chcesz zobaczyć Przegląd kodu źródłowego, możesz ustawić **Przegląd źródła** do **poza**.
-

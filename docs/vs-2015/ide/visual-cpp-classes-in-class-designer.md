@@ -1,14 +1,9 @@
 ---
 title: Klasy Visual C++ w Projektancie klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787079"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  **Pokaż klasy pochodne** polecenie nie jest obsługiwane dla kodu C++. Klasy pochodne można wyświetlić, przechodząc do widoku klas, rozwijając węzeł typu, rozszerzając **typów pochodnych** podfolder, a następnie przeciągając tych typów na diagramie klasy.  
   
- Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne (NOTINBUILD)](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) i [wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Aby uzyskać więcej informacji na temat dziedziczenia klas wielu zobacz [dziedziczenie wielokrotne (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) i [wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Klasy abstrakcyjne  
  Projektant klasy obsługuje klasy abstrakcyjne (zwaną również "abstrakcyjnych klas bazowych"). Są to klasy, która nigdy nie wystąpienia, ale z którego można uzyskać innych klas. Przy użyciu przykładu z "Wielokrotne dziedziczenie" wcześniej w tym dokumencie, może być wystąpienia `Bird` klasy jako pojedyncze obiekty w następujący sposób:  
@@ -171,16 +166,13 @@ typedef struct
   
 |Element Code|Widok projektanta klas|  
 |------------------|-------------------------|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> -> C\<float >|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T >|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Klasy i struktury](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [Anonimowe typy klas](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Dziedziczenie wielokrotne](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) Dziedziczenie wielokrotne](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [Wiele klas podstawowych](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [Szablony](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-

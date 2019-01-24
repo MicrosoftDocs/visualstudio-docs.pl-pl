@@ -1,13 +1,9 @@
 ---
 title: Przy użyciu autonomicznego modułu zbierającego IntelliTrace | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
 helpviewer_keywords:
@@ -16,13 +12,13 @@ ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b3c674abbd31435c3a39417a50e965c42519e403
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 73a94ee7a6d3ed874d61b589186706b50ad0a376
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53886762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795812"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

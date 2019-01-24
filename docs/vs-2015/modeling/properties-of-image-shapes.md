@@ -1,12 +1,9 @@
 ---
 title: Właściwości kształtów obrazu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
@@ -16,13 +13,13 @@ ms.assetid: 9ce00ccd-07f2-4640-ac96-2a60481d0d72
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: e342ec8438aeac6acd149ed93e8ce8a281a63323
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219968"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790498"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetl
 |Typ etykietki narzędzia|Miejsce, gdzie został zdefiniowany etykietki narzędzia (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|  
 |Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|  
 |Początkowa wysokość|Początkowa wysokość tego kształtu, w calach.|1|  
-|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|  
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1,5|  
 |Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|  
 |Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|  
 |Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|  
@@ -78,7 +75,4 @@ Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetl
 |Obraz|Ścieżka do pliku obrazu, który służy do tego kształtu.|\<Brak >|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

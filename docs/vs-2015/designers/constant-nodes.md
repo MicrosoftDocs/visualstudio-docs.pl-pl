@@ -1,25 +1,20 @@
 ---
 title: Stałe węzły | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788460"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ W projektancie programu do cieniowania stałe węzły przedstawiają wartości l
 |**Stałe**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Output**<br /> Wartość skalarna.|  
 |**Stała 2W**|Stała dwiema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|  
 |**Stała 3W**|Stała trzema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|  
-|**Stała 4W**|Stała czterema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektorowa.|  
+|**4D Constant**|Stała czterema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektorowa.|  
 |**Pozycja znormalizowana**|Pozycja bieżącego piksela wyrażona w urządzenia znormalizowanych współrzędnych.<br /><br /> Współrzędne x i współrzędne y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnik zawiera wartość głębię punktów w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|  
 |**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołka atrybutów koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|  
 |**Głębokość punktu**|Głębokość bieżącego piksela w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|  
@@ -51,6 +46,3 @@ W projektancie programu do cieniowania stałe węzły przedstawiają wartości l
 |**Kierunek światła przestrzeni stycznej**|Wektor definiujący kierunek, w którym światła jest rzutowanie ze źródła światła w przestrzeni stycznej bieżącego piksela.<br /><br /> Służy to do obliczenia udziału oświetlenia i odblasków w przestrzeni stycznej.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Wektor od bieżącego piksela do źródła światła.|Brak|  
 |**Normalna świata**|Normalna powierzchni bieżącego piksela w przestrzeni świata.<br /><br /> Służy to do obliczenia udziału oświetlenia i odbić w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Normalna powierzchni bieżącego piksela.|Brak|  
 |**Pozycja świata**|Pozycja bieżącego piksela w przestrzeni świata.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
-
-
-

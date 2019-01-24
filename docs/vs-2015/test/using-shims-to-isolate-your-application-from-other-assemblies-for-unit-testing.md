@@ -1,24 +1,19 @@
 ---
 title: Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904419"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784144"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +28,12 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
 - Visual Studio Enterprise  
   
-  Zobacz [wideo (1 godz. 16): testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+  Zobacz [wideo (1 godz. 16): Testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>W tym temacie:  
  Oto, co dowiesz się, w tym temacie:  
   
- [Przykład: Y2K usterki](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
+ [Przykład: Błąd Y2K](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
   
  [Jak używać podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
   
@@ -78,7 +73,7 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
   [Ograniczenia](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
-##  <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Y2K usterki  
+##  <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Błąd Y2K  
  Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:  
   
 ```csharp  
@@ -552,12 +547,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
 ### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Peter Provost blog: Visual Studio 2012 podkładek](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Wideo (1 godz. 16): testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
-
-
-
+ [Peter Provost blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Wideo (1 godz. 16): Testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

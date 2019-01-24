@@ -1,25 +1,20 @@
 ---
 title: Uruchamianie narzędzi profilowania z debugerem lub bez debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783393"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,19 +127,16 @@ Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, 
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogi i artykuły w witrynie MSDN z zespołu programistycznego diagnostyki  
  [Magazyn MSDN: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [Magazyn MSDN: Używać IntelliTrace, aby szybciej diagnozować problemy](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [Magazyn MSDN: Użyj funkcji IntelliTrace, aby szybciej diagnozować problemy](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Wpis w blogu: diagnozowanie przecieków procedury obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Wpis w blogu: Diagnozowanie przecieków procedury obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
  [Wideo: Debugowanie historyczne za pomocą IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
  [Wideo: Debugowanie problemów z wydajnością za pomocą programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [Perftip: Informacje o wydajności w skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [Perftip: Wydajność informacji o skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Okno debugera narzędzia diagnostyczne w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Funkcja IntelliTrace w Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

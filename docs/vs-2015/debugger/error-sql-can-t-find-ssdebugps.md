@@ -1,14 +1,9 @@
 ---
 title: 'Błąd: Można SQL&#39;możemy znaleźć SSDEBUGPS | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: 596425c8-14c7-4c05-8823-e1c52f420f5e
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 92e09a3dd2d1d70bd2e585e2de6b0fd1cca812b0
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 33e6efb699d12cc58555cacede6a20c5b0091d0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154387"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785171"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Błąd: Można SQL&#39;możemy znaleźć SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ Biblioteka SSDEBUGPS.dll to składnik Host debugowania programu SQL Server.
     ```  
     regsvr32 ssdebugps.dll  
     ```
-
-
-

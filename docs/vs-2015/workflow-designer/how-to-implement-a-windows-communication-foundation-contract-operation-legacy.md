@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Implementowanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Implementowanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787728"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Porady: Implementowanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja)
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Instrukcje: implementowanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)
 W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontrakt operacji za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Po przeciągnięciu **działania ReceiveActivity** działania z przybornika do powierzchni projektu przepływu pracy, albo utworzysz nową [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu lub zaimportować istniejący kontrakt i wykonania operacji. Wybierz i/lub utworzyć kontrakt usługi i jego operacji za pośrednictwem [wybierz operację okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -54,5 +51,5 @@ W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indig
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybierz operację, okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Porady: wywoływanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Instrukcje: Wywoływanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)

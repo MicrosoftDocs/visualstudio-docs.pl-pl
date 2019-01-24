@@ -1,23 +1,20 @@
 ---
 title: Tworzenie struktury rozwiązania modelowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 995192b372b9c1909ad3a7f164474cfaf63f07bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04a06b1b78c89538ec62957d1b7503f5fb96b4a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787530"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ Aby skutecznie używać modeli w projekcie programistycznym, członkowie zespoł
   
 2. Utwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, które firma Microsoft będzie wywoływać rozwiązania architektury. To rozwiązanie będzie służyć do tworzenia ogólnego projektu systemu. Modele, ale żaden kod nie będzie zawierać.  
   
-    Dodaj diagram warstwowy do tego rozwiązania. Na diagramie warstwowym narysuj architektury który wybrano dla aplikacji. Na przykład diagram może wyświetlać te warstwy i zależności między nimi: prezentacji; Logika biznesowa; i dane.  
+    Dodaj diagram warstwowy do tego rozwiązania. Na diagramie warstwowym narysuj architektury który wybrano dla aplikacji. Na przykład diagram może wyświetlać te warstwy i zależności między nimi: Prezentacja; Logika biznesowa; i dane.  
   
     W tym samym czasie można utworzyć diagram warstwy i nowego rozwiązania programu Visual Studio przy użyciu **nowe UML lub diagramu warstwowego** polecenie **architektury** menu.  
   
@@ -83,7 +80,7 @@ Aby skutecznie używać modeli w projekcie programistycznym, członkowie zespoł
   
    1. W rozwiązaniu dla każdej warstwy Dodaj projekt modelowania architektury. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Projekt modelowania pojedynczego jest teraz dostępna z każdego rozwiązania: projekt architektury i projektu rozwoju dla każdej warstwy.  
   
-   2. W udostępnionym modelu UML, należy utworzyć pakiet dla każdej warstwy: W Eksploratorze rozwiązań wybierz projekt modelowania. W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **pakietu**.  
+   2. W udostępnionym modelu UML należy utworzyć pakiet dla każdej warstwy: W Eksploratorze rozwiązań wybierz projekt modelowania. W Eksploratorze modelu UML, kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **pakietu**.  
   
        Każdy pakiet tak, będzie zawierać diagramy UML, zawierających opis wymagań i projektowania odpowiedniej warstwy.  
   
@@ -119,6 +116,3 @@ Aby skutecznie używać modeli w projekcie programistycznym, członkowie zespoł
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md)   
  [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
-
-
-

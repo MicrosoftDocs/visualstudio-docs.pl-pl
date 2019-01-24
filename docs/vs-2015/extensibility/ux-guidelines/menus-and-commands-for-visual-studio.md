@@ -1,23 +1,19 @@
 ---
 title: Menu i polecenia
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270ea37a7e16934452b2a6598fc213fd628bcbbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3bb9a1d6fca5d68b9841d252b62af0db9dedd143
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802101"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i poleceń dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -235,7 +231,7 @@ ms.locfileid: "53943374"
 
 #### <a name="when-naming-commands"></a>Podczas nazywania polecenia:
 
--   Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [gotowości World dla programu Visual Studio](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d).
+-   Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [gotowości World dla programu Visual Studio](http://msdn.microsoft.com/1cc35051-8126-441f-bea9-059245a47b1d).
 
 -   Być zwięzłe. Polecenia należy używać co najwyżej trzech słów.
 

@@ -1,27 +1,22 @@
 ---
 title: Widok wywołującego/wywoływanego — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: edeccd8318de36a09a9191a30274ff342cb7a41d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782494"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Widok wywołujący/wywoływany wyświetla dane dla wybranej funkcji i jej funkcj
   
  Kliknij dwukrotnie wywołujący lub wywoływany funkcja wiersz się wiersz bieżącą funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
@@ -47,7 +42,7 @@ Widok wywołujący/wywoływany wyświetla dane dla wybranej funkcji i jej funkcj
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Adres funkcji**|Adres funkcji.|  
 |**Typ**|Kontekst funkcji:<br /><br /> **0** -bieżącej funkcji<br /><br /> **1** — funkcji wywołującej bieżącą funkcję<br /><br /> **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
-|**poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**Poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
 |**Przydziały włączne**|-Aby uzyskać bieżącą funkcję liczby obiektów przydzielonych za pomocą funkcji podczas uruchomienia profilowania. Liczba ta obejmuje obiekty, które zostały utworzone w funkcjach / / wywoływany.<br />— W przypadku funkcji wywołującego liczba przydziałów włącznych bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— W przypadku funkcji / / wywoływany liczbę obiektów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba uwzględnia alokacji dokonanych przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|  
 |**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały utworzone w profilowania, były przydziałów włącznych tej funkcji.|  
 |**Przydziały wyłączne**|— W przypadku funkcji bieżącej liczby obiektów, które zostały utworzone podczas wykonywania funkcji kodu w treści funkcji (oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez funkcję.<br />— W przypadku funkcji wywołującego liczba przydziałów wyłącznych bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— W przypadku funkcji / / wywoływany liczbę obiektów, które zostały utworzone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba nie obejmuje obiekty, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|  
@@ -58,10 +53,7 @@ Widok wywołujący/wywoływany wyświetla dane dla wybranej funkcji i jej funkcj
 |**% Bajtów wyłącznych**|Procent wszystkich bajtów pamięci przydzielonych w uruchomienia profilowania były przydziałów wyłącznych tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Element wywołujący / widok / / wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   
  [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-

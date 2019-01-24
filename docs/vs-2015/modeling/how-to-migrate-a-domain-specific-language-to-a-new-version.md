@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Migracja języka specyficznego dla domeny do nowej wersji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784198"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które można migrować [!INCLUDE[vs2010](../includes/vs2010-md.md)] z wersji [!INCLUDE[dsl](../includes/dsl-md.md)] który zostało rozpowszechniać za pomocą [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
@@ -81,7 +78,7 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
    2.  Kliknij przycisk **Przekształć wszystkie szablony** przycisku w nagłówku Eksploratora rozwiązań.  
   
        > [!NOTE]
-       >  Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       >  Ten krok można wprowadzić niepotrzebne. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Zaktualizuj niestandardowy kod w projektach przekonwertowana.  
   
@@ -91,6 +88,3 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
   
 ## <a name="see-also"></a>Zobacz też  
  [What's New in Visualisation i Modeling SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

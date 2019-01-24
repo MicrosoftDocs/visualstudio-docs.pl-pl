@@ -1,25 +1,20 @@
 ---
 title: Zadania edytora XML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d069ba3a-266c-45ac-8f9f-7833a72c5a27
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+manager: jillfra
+ms.openlocfilehash: 276667993fa1c3448af3168403d18c2e55a118af
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781469"
 ---
 # <a name="xml-editor-tasks"></a>Zadania edytora XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ W tej sekcji opisano sposób wykonywania typowych zadań za pomocą edytora XML.
  [Instrukcje: Edytowanie plików XML](../xml-tools/how-to-edit-xml-files.md)  
  W tym artykule opisano sposób uruchamiania, edytowania plików XML.  
   
- [Porady: używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md).  
+ [Instrukcje: Używanie fragmentów kodu XML](../xml-tools/how-to-use-xml-snippets.md).  
  Pokazuje sposób użycia fragmentów kodu XML, które znajdują się za pomocą edytora XML.  
   
  [Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
  Pokazuje, jak Generowanie fragmentu kodu XML na podstawie schematu XML.  
   
- [Porady: tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md).  
+ [Instrukcje: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md).  
  Przedstawia sposób tworzenia nowych fragmentów kodu XML.  
   
  [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
@@ -58,8 +53,5 @@ W tej sekcji opisano sposób wykonywania typowych zadań za pomocą edytora XML.
  [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Pokazuje, jak można debugować arkusza stylów odwołania.  
   
- [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)  
+ [Przewodnik: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)  
  Pokazuje, jak tworzyć raporty dotyczące wydajności kodu XSLT.
-
-
-

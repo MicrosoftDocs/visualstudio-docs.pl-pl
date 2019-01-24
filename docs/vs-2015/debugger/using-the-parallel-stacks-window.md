@@ -1,14 +1,9 @@
 ---
 title: Za pomocą równoległych stosów okna | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795668"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Korzystanie z okna stosów równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ ms.locfileid: "51792037"
 |---------------|-----------------|  
 |Flaga|Flagi wybranego elementu.|  
 |Usuń flagę|Unflags wybranego elementu.|  
-|blokowanie|Zawiesza się wybrany element.|  
+|Freeze|Zawiesza się wybrany element.|  
 |Odblokowywanie|Thaws wybranego elementu.|  
 |Przejdź do zadania (wątek)|Pełni taką samą funkcję jak pole kombi na pasku narzędzi, ale utrzymuje ten sam ramki stosu wyróżnione.|  
 |Przejdź do kodu źródłowego|Powoduje przejście do lokalizacji w kodzie źródłowym, odpowiadający ramki stosu, który kliknięto prawym przyciskiem myszy użytkownika.|  
@@ -123,13 +118,10 @@ ms.locfileid: "51792037"
  Przełączając się do nowej ramki stosu, można spowodować tej metody bieżącej metody i okna pokazać wszystkie obiekty wywołujące i wywoływane dla nowej metody. Może to spowodować, że niektóre wątki wyświetlone lub znikają z widoku, w zależności od tego, czy ta metoda jest wyświetlana na ich stosy wywołań. Aby powrócić do widoku stosu, kliknij ponownie przycisk paska narzędzi widoku metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
  [Programowanie równoległe](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)   
- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Przewodnik: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task, klasa](../extensibility/debugger/task-class-internal-members.md)
-
-
-

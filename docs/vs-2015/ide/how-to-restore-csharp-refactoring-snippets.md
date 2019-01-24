@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Przywracanie Refaktoryzowanych wstawek kodu C# | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Przywróć C# Refaktoryzowanych wstawek kodu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unsafe expansion
 - expansions, unsafe
@@ -16,20 +11,20 @@ ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782599"
 ---
-# <a name="how-to-restore-c-refactoring-snippets"></a>Porady: przywracanie refaktoryzowanych wstawek kodu C#
+# <a name="how-to-restore-c-refactoring-snippets"></a>Instrukcje: Przywróć C# Refaktoryzowanych wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Operacje refaktoryzacji C# polegają na fragmenty kodu w następującym katalogu:  
   
- *Katalog instalacyjny*\Microsoft Visual Studio 14.0\VC#\Snippets\\*identyfikator języka*\Refactoring  
+ *Installation directory*\Microsoft Visual Studio 14.0\VC#\Snippets\\*language ID*\Refactoring  
   
  Jeśli ten katalog Refactoring, wszystkie pliki w tym katalogu są usunięty lub uszkodzony, następnie operacji refaktoryzacji, C# mogą nie działać w środowisku IDE. Poniższe procedury ułatwia przywracanie refaktoryzowanych wstawek kodu kodu C#.  
   
@@ -53,11 +48,11 @@ Operacje refaktoryzacji C# polegają na fragmenty kodu w następującym katalogu
   
 5.  Znajdź **Refactoring** folderu o ścieżce katalogu:  
   
-     *Katalog instalacyjny*\Microsoft Visual Studio 14.0\VC#\Snippets\\*identyfikator języka*\Refactoring  
+     *Installation directory*\Microsoft Visual Studio 14.0\VC#\Snippets\\*language ID*\Refactoring  
   
      Rzeczywistej ścieżce są podobne do następujących czynności w przypadku instalacji domyślnej:  
   
-     C:\Program Files\Microsoft 14.0\VC#\Snippets\1033\Refactoring programu Visual Studio.  
+     C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
 6.  Kliknij przycisk **Otwórz** w **katalog fragmentów kodu** okno dialogowe, a następnie kliknij przycisk **OK** w Menedżerze fragmentów kodu.  
   
@@ -65,6 +60,3 @@ Operacje refaktoryzacji C# polegają na fragmenty kodu w następującym katalogu
  [Fragmenty kodu Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)   
  [Fragmenty kodu](../ide/code-snippets.md)
-
-
-

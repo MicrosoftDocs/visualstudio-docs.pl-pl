@@ -1,26 +1,21 @@
 ---
 title: Korzystanie z pokrycia kodu, aby określić, jaka część kodu jest poddawana testom | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782662"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
 ### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)   
  [Pokrycie kodu](../test/troubleshooting-code-coverage.md)   
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)
-
-
-

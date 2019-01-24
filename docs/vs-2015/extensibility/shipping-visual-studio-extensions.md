@@ -1,13 +1,9 @@
 ---
 title: Wysyłanie rozszerzenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX deployment
 - deployment, VSIX
@@ -15,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8c2ed6c687766a9ef3ff6e4a62e69e5b8b334a55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ed8080b8e470276a38fbf300edbf801dc8e141fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785267"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

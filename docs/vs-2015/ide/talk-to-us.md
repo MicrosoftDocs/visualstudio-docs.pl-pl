@@ -1,12 +1,8 @@
 ---
 title: Porozmawiaj z nami | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,13 +10,13 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785942"
 ---
 # <a name="talk-to-us"></a>Porozmawiaj z nami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

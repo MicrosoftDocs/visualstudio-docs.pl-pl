@@ -1,21 +1,17 @@
 ---
 title: Adresowanie Problemy2 DPI | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752521"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759789"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Aby włączyć interfejs użytkownika na potrzeby wyświetlania każdego elementu obrazu to skalowanie podwójnej precyzji, znaczników XAML będzie potrzeba jego zmodyfikowania. W poniższych przykładach pokazano, jak używać skalowania o podwójnej precyzji w WPF w programie Visual Studio przy użyciu biblioteki DpiHelper i Shell.12/14.  
   
- Krok 1: Prescale obrazu do 200% 300% i tak dalej, za pomocą NearestNeighbor.  
+ Krok 1. Prescale obraz, który ma 200%, 300% i tak dalej, za pomocą NearestNeighbor.  
   
  Prescale obraz za pomocą konwertera stosowane powiązania, czy rozszerzenie znaczników XAML. Na przykład:  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Krok 2: Upewnij się, że rozmiar końcowy jest prawidłowy dla bieżącego DPI.  
+ Krok 2. Upewnij się, że rozmiar końcowy jest prawidłowy dla bieżącego DPI.  
   
  Ponieważ WPF będzie się skalować interfejsu użytkownika dla bieżącego DPI, przy użyciu właściwości BitmapScalingMode nastavit UIElement kontrolkę typu obraz przy użyciu obrazu prescaled, zgodnie z jej źródła będzie wyglądać dwa lub trzy razy większy niż powinien. Poniżej przedstawiono kilka sposobów na licznika w tym celu:  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

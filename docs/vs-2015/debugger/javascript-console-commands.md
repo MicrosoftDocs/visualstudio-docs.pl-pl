@@ -1,14 +1,9 @@
 ---
 title: Polecenia konsoli JavaScript | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,20 +17,20 @@ ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d62754dc881e42b2beada17379def19eb96abcda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725340"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781762"
 ---
 # <a name="javascript-console-commands"></a>Polecenia konsoli JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Windows Store, Windows Phone Store, aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Windows Store, Windows Phone Store, aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.  
   
@@ -143,8 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

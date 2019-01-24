@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a7f3cd8d039f8ba313b32d74555fb61945042503
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786955"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -46,7 +46,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 (Zastąp `vs_enterprise.exe` jako właściwe dla wersji produktu instalujesz.)
 
 >[!TIP]
-> Aby uzyskać więcej przykładów dotyczących sposobów użyć wiersza polecenia do zainstalowania programu Visual Studio 2017, zobacz [przykładowe parametry wiersza polecenia](command-line-parameter-examples.md) strony.)
+> Aby uzyskać więcej przykładów dotyczących sposobów użyć wiersza polecenia do zainstalowania programu Visual Studio 2017, zobacz [przykładowe parametry wiersza polecenia](command-line-parameter-examples.md) strony.
 
 | **Polecenie** | **Opis** |
 | ----------------------- | --------------- |
@@ -56,6 +56,8 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `repair` | Naprawia zainstalowany produkt. |
 | `uninstall` | Odinstalowuje zainstalowany produkt. |
 | `export` | **Nowość w 15.9**: Eksportuje wybór instalacji do pliku konfiguracji instalacji. **Uwaga**: Należy używać tylko z vs_installer.exe. |
+
+### <a name="install-options"></a>Opcje instalacji
 
 | **Opcję instalacji** | **Opis** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 
 > [!IMPORTANT]
 > Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
+
+### <a name="layout-options"></a>Opcje układu
 
 | **Opcje układu** | **Opis** |
 | ----------------------- | --------------- |

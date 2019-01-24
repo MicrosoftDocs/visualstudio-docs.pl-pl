@@ -1,14 +1,9 @@
 ---
 title: Korzystanie z listy zadań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -20,13 +15,13 @@ ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801173"
 ---
 # <a name="using-the-task-list"></a>Korzystanie z listy zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
   
 #### <a name="to-open-the-task-list"></a>Aby otworzyć Listę zadań  
   
--   Na **widoku** menu, wybierz **listy zadań** (klawiatura: Ctrl +\\, T).  
+-   Na **widoku** menu, wybierz **listy zadań** (klawiatury: CTRL+\\, T).  
   
      ![Okno listy zadań](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -91,7 +86,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
  Ponieważ `TODO` jest wstępnie zdefiniowany token, ten komentarz jest wyświetlany jako `TODO` zadanie na liście.  
   
 ###  <a name="customTokens"></a> Tokeny niestandardowe  
- Domyślnie program Visual Studio zawiera następujące tokeny: HACK, TODO, UNDONE, notatki. Nie są z uwzględnieniem wielkości liter.  
+ Domyślnie środowisko Visual Studio zawiera następujące tokeny: HACK, TODO, COFNIĘTA, NALEŻY PAMIĘTAĆ. Nie są z uwzględnieniem wielkości liter.  
   
  Można również utworzyć własne niestandardowe tokeny.  
   
@@ -103,7 +98,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
   
      [Okno dialogowe Opcje listy zadań, środowisko,](../ide/reference/task-list-environment-options-dialog-box.md) jest wyświetlana.  
   
-     ![Lista zadań w programie Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
+     ![Visual Studio Task List](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
   
 3.  W **tokenów** kategorii w **nazwa** polu tekstowym wprowadź nazwę tokenu, na przykład "błąd".  
   
@@ -127,12 +122,9 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
   
 #### <a name="to-create-a-shortcut"></a>Aby utworzyć skrót  
   
--   Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz **Edytuj &#124; zakładki &#124; Dodaj skrót do listy zadań** lub naciśnij (klawiatura: Ctrl + K, Ctrl + H).  
+-   Wstaw wskaźnik do kodu, w którym chcesz umieścić skrót. Wybierz **Edytuj &#124; zakładki &#124; Dodaj skrót do listy zadań** lub naciśnij (klawiatury: CTRL + K, Ctrl + H).  
   
      Do nawigowania w skrótach w kodzie, wybierz skrót na liście, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista zadań, Środowisko, Opcje — okno dialogowe](../ide/reference/task-list-environment-options-dialog-box.md)
-
-
-

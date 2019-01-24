@@ -1,25 +1,21 @@
 ---
 title: Zwalnianie produktu do integracji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, shipping
 - VSPackages, distributing
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
-manager: douge
-ms.openlocfilehash: 6b93d2d9c288318ba84deb6948a3e7e0dfb6f66f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 82e383f9853bd43d1da4ac47df7e45c3808722a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791719"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>Zwalnianie produktu integracji programu Visual Studio
 Tematy w tej sekcji pokazano, jak wersji produktu do integracji programu Visual Studio przez tworzenie i instalowanie pakietów VSPackage przy użyciu programu Visual Studio Integration testu (VSIT).
@@ -29,7 +25,7 @@ Tematy w tej sekcji pokazano, jak wersji produktu do integracji programu Visual 
 
  [Narzędzie RegPkg](../extensibility/internals/regpkg-utility.md) Opisuje narzędzie RegPkg, który jest używany do rejestrowania pakietu VSPackage i przygotować go do wdrożenia.
 
- [Premier Partner wersji Instalatora i Podręcznik użytkownika](http://msdn.microsoft.com/en-us/8ee4dad7-95d3-4f2d-a8d4-3ba9a80ecae2) zapewnia VSIP w ramach której partnerzy z wersją pakiet redystrybucyjny programu Visual Studio zintegrowane środowisko programistyczne (IDE), w którym można dodawać własne narzędzia programistyczne i językami komputera.
+ [Premier Partner wersji Instalatora i Podręcznik użytkownika](http://msdn.microsoft.com/8ee4dad7-95d3-4f2d-a8d4-3ba9a80ecae2) zapewnia VSIP w ramach której partnerzy z wersją pakiet redystrybucyjny programu Visual Studio zintegrowane środowisko programistyczne (IDE), w którym można dodawać własne narzędzia programistyczne i językami komputera.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Dostosowywanie testów za pomocą programu Visual Studio SDK](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69) w tym artykule opisano sposób używania [!INCLUDE[esprtest](../includes/esprtest-md.md)] pakiet do tworzenia, zarządzania, edytować i uruchamiać testy i również uzyskać i przechowywać wyniki testu.
+ [Dostosowywanie testów za pomocą programu Visual Studio SDK](http://msdn.microsoft.com/9cf7a840-dd66-4b00-90f7-e00e40370a69) w tym artykule opisano sposób używania [!INCLUDE[esprtest](../includes/esprtest-md.md)] pakiet do tworzenia, zarządzania, edytować i uruchamiać testy i również uzyskać i przechowywać wyniki testu.

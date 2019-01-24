@@ -1,27 +1,22 @@
 ---
 title: Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.settings
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5ad91917034dd868aad6c5d78945e4c078fcecee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782520"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,6 +89,3 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w Wizualizatorze współbi
 ## <a name="see-also"></a>Zobacz też  
  [Tylko mój kod](../profiling/just-my-code-threads-view.md)   
  [Znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md)
-
-
-

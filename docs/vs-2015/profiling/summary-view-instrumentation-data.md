@@ -1,27 +1,22 @@
 ---
 title: Widok podsumowania - dane Instrumentacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73883b29dfd98e9ad5955505fa8840db815ec218
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784589"
 ---
 # <a name="summary-view---instrumentation-data"></a>Widok podsumowania — dane instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +24,14 @@ ms.locfileid: "51724996"
 Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funkcji w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [Widok Podsumowanie](../profiling/summary-view.md).  
   
 ## <a name="timeline-graph"></a>Wykres osi czasu  
- Wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) według profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtr widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) według profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="hot-path"></a>Ścieżka aktywna  
  **Ścieżka aktywna** Wyświetla ścieżka wykonania, która używane najwięcej czasu. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.  
   
  **Ścieżka aktywna** zawiera następujące dane dotyczące każdej funkcji:  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji.|  
 |**% Całkowitego czasu, który upłynął**|Procent cały czas w danych profilowania, która funkcja poświęcony na wykonywanie kodu, w jego treści funkcji i funkcji, które je wywołuje.|  
@@ -47,7 +42,7 @@ Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funk
   
  **Funkcje z najbardziej samodzielnej pracy** zawiera następujące dane dotyczące każdej funkcji:  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji.|  
 |**% Własnego czasu**|Procent cały czas w danych profilowania, że funkcja poświęcony na wykonywanie kodu w jego treści funkcji. Czas w funkcje, które wywołały funkcję nie jest włączony.|  
@@ -55,6 +50,3 @@ Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funk
 ## <a name="see-also"></a>Zobacz też  
  [Widok podsumowania](../profiling/summary-view-sampling-data.md)   
  [Widok podsumowania](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

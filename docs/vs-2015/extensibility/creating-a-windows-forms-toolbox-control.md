@@ -1,14 +1,9 @@
 ---
 title: Tworzenie Windows Forms kontrolki przybornika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0d4e2fa9c05aab6bd3a70edd2eb3d4b1d447056e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792122"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,4 +215,3 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
  [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Podstawowe informacje o opracowywaniu kontrolek formularzy Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

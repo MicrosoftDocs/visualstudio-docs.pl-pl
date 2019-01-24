@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie szablonów projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie szablonów projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,15 +16,15 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225514"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785916"
 ---
-# <a name="how-to-create-project-templates"></a>Porady: tworzenie szablonów projektów
+# <a name="how-to-create-project-templates"></a>Instrukcje: Tworzenie szablonów projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** kreatora, w którym są pakuje szablonu w formie pliku .zip. Można również utworzyć szablony w formacie pliku VSIX do wdrożenia ulepszone, za pomocą rozszerzenia Kreatora eksportowania szablonu lub za pomocą szablonów objęte [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], lub można ręcznie utworzyć szablony.  
@@ -43,7 +38,7 @@ Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** k
   
 2.  Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon.  
   
-3.  Zgodnie z potrzebami edytować pliki kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji na temat zastępowania parametrów, zobacz [jak: Zastąp parametry w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Zgodnie z potrzebami edytować pliki kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji na temat zastępowania parametrów, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
   
 4.  Na **pliku** menu, kliknij przycisk **Eksportuj szablon**. **Eksportuj szablon** zostanie otwarty Kreator.  
   
@@ -64,6 +59,3 @@ Ta procedura umożliwia utworzenie szablonu przy użyciu **Eksportuj szablon** k
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
-
-
-

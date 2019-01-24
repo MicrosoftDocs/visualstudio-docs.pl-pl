@@ -1,27 +1,22 @@
 ---
-title: 'Porady: tworzenie. Plik Vsct z istniejącej. Plik CTC | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie. Plik Vsct z istniejącej. Plik CTC | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797100"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Porady: tworzenie. Plik Vsct z istniejącej. Plik CTC
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Instrukcje: Tworzenie. Plik Vsct z istniejącej. Plik CTC
 Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku źródłowego .ctc tabeli poleceń. Dzięki temu możesz korzystać z zalet nowego opartego na języku XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] format kompilatora tabeli (VSCT) polecenia.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Do utworzenia pliku vsct z pliku .ctc  
@@ -50,5 +45,5 @@ Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku źród�
     >  Można zwiększyć czytelność pliku vsct przez ponowne formatowanie komentarze XML.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: tworzenie. Pliku Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [Instrukcje: Tworzenie. Pliku Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

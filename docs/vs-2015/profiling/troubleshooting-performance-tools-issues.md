@@ -1,25 +1,20 @@
 ---
 title: Rozwiązywanie problemów z wydajnością problemy dotyczące narzędzi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93e9f75ad953ff9c6cd08e8eb78bcfbf01542223
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6a069e98b751ac9314a22562063ea763955d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784554"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Rozwiązywanie problemów z wydajnością problemy dotyczące narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Może wystąpić jeden z następujących problemów, korzystając z narzędzi pr
   
 -   Proces, która była profilowana przy użyciu pobierania próbek lub .NET — metoda pamięci rozpoczyna się proces podrzędny, która staje się proces, który wykonuje pracę aplikacji. Na przykład niektóre aplikacje odczytać wiersza polecenia, aby ustalić, czy zostały uruchomione jako aplikacji Windows lub aplikacji wiersza polecenia. Jeśli zażądano aplikacji Windows, proces oryginalnego uruchamia nowy proces, skonfigurowany jako aplikacji Windows, a następnie kończy działanie pierwotny proces. Ponieważ Profiling Tools nie automatycznego zbierania danych dla procesów podrzędnych, są zbierane żadne dane.  
   
-     Do zbierania danych profilowania w takiej sytuacji, należy dołączyć profiler do procesu podrzędnego, zamiast uruchamiania aplikacji przy użyciu profilera. Aby uzyskać więcej informacji, zobacz [porady: dołączanie i odłączanie narzędzi do oceny wydajności uruchomione procesy](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) i [Attach (VSPerfCmd)](../profiling/attach.md)  
+     Do zbierania danych profilowania w takiej sytuacji, należy dołączyć profiler do procesu podrzędnego, zamiast uruchamiania aplikacji przy użyciu profilera. Aby uzyskać więcej informacji, zobacz [jak: Dołączanie i odłączanie narzędzi wydajności do uruchomionych procesów](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) i [dołączyć (VSPerfCmd)](../profiling/attach.md)  
   
 ##  <a name="NoSymbols"></a> Wydajność widoków i raportów wyświetlania liczb dla nazwy funkcji  
  Po użytkownik profil aplikacji, można wyświetlić numery zamiast nazwy funkcji w raportach i widokach.  
@@ -54,6 +49,3 @@ Może wystąpić jeden z następujących problemów, korzystając z narzędzi pr
   
 > [!NOTE]
 >  Aparat analizy wymaga pliku .pdb zgodnej z wersją pliku skompilowanej aplikacji. Plik .pdb z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będzie działać.
-
-
-

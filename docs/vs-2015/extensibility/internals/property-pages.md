@@ -1,14 +1,9 @@
 ---
 title: Strony właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74da0df2939b08615f3a659dfca70b1cea0e495d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a45e4a98326fe829b8f87a4ecfce669118cd9d0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759860"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789009"
 ---
 # <a name="property-pages"></a>Strony właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Okno dialogowe strony właściwości projektu o strukturze format i drzewa pola
   
   Drugi typ strony właściwości wyświetlane w hostach przykłady postaci siatki właściwości, jak pokazano na poniższym zrzucie ekranu.  
   
-  ![Strony właściwości VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  ![VC Propery Pages](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
   Okno dialogowe strony właściwości z siatki właściwości  
   
   Interfejsy `IVSMDPropertyBrowser` i `IVSMDPropertyGrid` (deklaracja w vsmanaged.h) są używane do tworzenia i wypełniania siatki właściwości, w ramach lub oknie dialogowym.  
@@ -91,4 +86,3 @@ Okno dialogowe strony właściwości projektu o strukturze format i drzewa pola
  [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)   
  [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)   
  [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md)
-

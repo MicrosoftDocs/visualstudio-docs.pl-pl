@@ -1,14 +1,9 @@
 ---
 title: Zarządzanie pakietami VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8cb96dfbdecd5182d328d425a209f52833ede23c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798748"
 ---
 # <a name="managing-vspackages"></a>Zarządzanie pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,13 @@ W większości przypadków nie trzeba martwić się o zarządzaniu pakietami VSP
  Pakietów VSPackage, który można ustawić automatyczne ładowanie podczas określonego identyfikatora GUID CMDUICONTEXT jest włączone. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
   
 ## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Za pomocą AsyncPackage do ładowania pakietów VSPackages w tle  
- Klasy AsyncPackage włącza pakiet ładowanie w wątku w tle dla szybsza reakcja interfejsu użytkownika w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: użycie AsyncPackage do ładowania VSPackages w tle](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
+ Klasy AsyncPackage włącza pakiet ładowanie w wątku w tle dla szybsza reakcja interfejsu użytkownika w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: Używanie klasy AsyncPackage do ładowania pakietów VSPackages w tle](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
   
 ## <a name="rule-based-ui-context-for-extensions"></a>Oparty na regułach kontekstu interfejsu użytkownika dla rozszerzenia  
- Konteksty interfejsu użytkownika opartego na regułach umożliwia autorom rozszerzenia do definiowania dokładne warunki, na jakich kontekstu interfejsu użytkownika jest aktywowany, a następnie załadować skojarzonych pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [jak: oparty na regułach Użyj kontekstu interfejsu użytkownika dla rozszerzenia programu Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
+ Konteksty interfejsu użytkownika opartego na regułach umożliwia autorom rozszerzenia do definiowania dokładne warunki, na jakich kontekstu interfejsu użytkownika jest aktywowany, a następnie załadować skojarzonych pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [jak: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
 ## <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage  
- Dowiedz się, techniki rozwiązywania problemów z pakietami VSPackage, które nie są ładowane lub występują błędy: [Rozwiązywanie problemów z pakietami VSPackage](../extensibility/troubleshooting-vspackages.md)  
+ Dowiedz się techniki rozwiązywania problemów z pakietami VSPackage, które nie są ładowane lub występują błędy: [Rozwiązywanie problemów z pakietami VSPackage](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)
-

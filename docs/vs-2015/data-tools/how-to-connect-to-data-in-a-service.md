@@ -1,12 +1,9 @@
 ---
-title: 'Porady: łączenie z danymi w usłudze | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Łączenie z danymi w usłudze | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787401"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
+# <a name="how-to-connect-to-data-in-a-service"></a>Instrukcje: Łączenie z danymi w usłudze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -73,4 +70,3 @@ ms.locfileid: "49301798"
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek WPF z usługą danych programu WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-

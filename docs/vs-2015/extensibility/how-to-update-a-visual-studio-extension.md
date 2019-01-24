@@ -1,13 +1,9 @@
 ---
 title: Aktualizuj rozszerzenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - update package
 - update extension
@@ -15,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3944b2481866206383734a80fe38673a9554439b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 47fbe9f6e28b7bafdfd46013c0f68fc7f068f005
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789436"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: Aktualizowanie rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

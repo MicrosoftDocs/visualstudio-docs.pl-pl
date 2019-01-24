@@ -1,11 +1,8 @@
 ---
 title: Karta System.Activities, wybierz elementy przybornika — okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
@@ -14,13 +11,13 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785002"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities, karta, Wybieranie elementów przybornika, okno dialogowe
 Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę [!INCLUDE[wf](../includes/wf-md.md)] działań, szablonów i elementów dostępnych dla Ciebie. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu lub klikając prawym przyciskiem myszy **przybornika** i wybierając polecenie **wybierz elementy**do wyświetlenia **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **System.Activities** kartę. Gotowych lista zawiera działania przepływu pracy z zestawów System.Activities, System.ServiceModel.Activities i System.Activities.Core.Presentation; jednak tylko dostarczane przez system działania wyświetlane i działań, dodawać za pośrednictwem innych zestawów, wyświetlana w **przybornika** są zaznaczone domyślnie. Ostatnio dodane działań są automatycznie sprawdzane i są wyświetlane w **przybornika** po kliknięciu **OK** w oknie dialogowym. Ponadto te elementy są wyświetlane w **przybornika** pod nową kategorię, która odnosi się do przestrzeni nazw, gdzie znajduje się działanie / / szablon elementu.  

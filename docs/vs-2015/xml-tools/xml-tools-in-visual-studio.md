@@ -1,13 +1,9 @@
 ---
 title: Narzędzia XML
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -36,13 +32,13 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d67412130bfe28b2d344634493f70f4136d060d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2812e45460778a3527f55522c6d3fc98285a548d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786305"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +60,7 @@ Język XML (Extensible Markup) * jest językiem znaczników, zapewniający forma
 ## <a name="reference"></a>Tematy pomocy
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) udostępnia [edytora XML](http://go.microsoft.com/fwlink/?LinkId=228249) drzewo za pośrednictwem analizy [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) żadnych dokumentów XML.
 
- [Odwołanie do standardów XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
+ [Odwołanie do standardów XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) informacje na temat technologii XML, w tym XML, definicja typu dokumentu (DTD), język definicji schematu XML (XSD) i XSLT.
 
  <xref:System.Xml?displayProperty=fullName> W tym artykule opisano klasy i inne elementy, które tworzą <xref:System.Xml> przestrzeni nazw i zawiera łącza do bardziej szczegółowych informacji dla każdego elementu.
 
@@ -73,9 +69,9 @@ Język XML (Extensible Markup) * jest językiem znaczników, zapewniający forma
 ## <a name="related-sections"></a>Sekcje pokrewne
  [XML Document Object Model (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) w tym artykule opisano sposób, w jaki <xref:System.Xml.XmlDocument> i jej klas skojarzonych przestrzegania W3C Document Object Model (Core), poziom 1 i specyfikacje obsługi przestrzeni nazw na poziomie 2.
 
- [Odczyt XML z element XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182) w tym artykule opisano sposób, w jaki <xref:System.Xml.XmlReader> udostępnia niebuforowany do przodu tylko, tylko do odczytu dostęp do danych XML w porównaniu z strumień XML.
+ [Odczyt XML z element XmlReader](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) w tym artykule opisano sposób, w jaki <xref:System.Xml.XmlReader> udostępnia niebuforowany do przodu tylko, tylko do odczytu dostęp do danych XML w porównaniu z strumień XML.
 
- [Pisanie XML przy użyciu Element XmlWriter](http://msdn.microsoft.com/en-us/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) w tym artykule opisano sposób, w jaki <xref:System.Xml.XmlWriter> zapewnia niebuforowany, przekazywać tylko sposób generowania strumieni XML i ułatwia tworzenie dokumentów XML, które są zgodne ze standardem W3C.
+ [Pisanie XML przy użyciu Element XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) w tym artykule opisano sposób, w jaki <xref:System.Xml.XmlWriter> zapewnia niebuforowany, przekazywać tylko sposób generowania strumieni XML i ułatwia tworzenie dokumentów XML, które są zgodne ze standardem W3C.
 
  [Przekształcenia XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) w tym artykule opisano sposób, w jaki <xref:System.Xml.Xsl.XslCompiledTransform> klasa implementuje specyfikacji XSLT 1.0 zalecenia.
 

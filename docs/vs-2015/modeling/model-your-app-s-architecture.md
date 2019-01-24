@@ -1,25 +1,22 @@
 ---
 title: Model aplikacji&#39;architektura s | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800424"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   Te punkty są opracowane w dalszej części tej sekcji.  
   
 ### <a name="components"></a>Składniki  
- Centralna widoków architektura modelu są diagramów składników, które pokazują głównych składników systemu i jak są one zależne od siebie nawzajem. Aby uzyskać więcej informacji na temat diagramów składników zobacz [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md).  
+ Centralna widoków architektura modelu są diagramów składników, które pokazują głównych składników systemu i jak są one zależne od siebie nawzajem. Aby uzyskać więcej informacji na temat diagramów składników zobacz [diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md).  
   
  ![Diagram składników UML przedstawiający części](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
   Można wyświetlić zależności między składnikami lub można wyświetlić zależności między wymagane i podano interfejsów, które są dołączone do składników. Korzystając z interfejsów, można określić, jakie operacje są używane w poszczególnych zależności. Zazwyczaj przedstawiono zależności między składnikami, gdy diagramy są rysowane najpierw, a następnie zastępuje zależności między interfejsami, po dodaniu więcej informacji. Obie wersje są poprawne opisy oprogramowania, ale wersja z interfejsami zapewnia więcej szczegółów niż starszej wersji.  
   
-  Zarządzanie zależnościami jest najważniejsze dla środowiska produkcyjnego, łatwego w utrzymaniu oprogramowania. Diagramy składników powinny odzwierciedlać wszystkich zależności w kodzie. Jeśli kod już istnieje, upewnij się, że wszystkie zależności są wyświetlane na diagramach. Jeśli kod jest opracowywany, upewnij się, że nie zawiera zależności, które nie są planowane na diagramie składników. Państwu pomóc odkryć zależności w kodzie, można wygenerować diagramów warstwowych. Ułatwiające upewnij się, czy spełniono swoje ograniczenia planowane zależności, możesz walidować kod diagramów warstwy. Aby uzyskać więcej informacji, zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md).  
+  Zarządzanie zależnościami jest najważniejsze dla środowiska produkcyjnego, łatwego w utrzymaniu oprogramowania. Diagramy składników powinny odzwierciedlać wszystkich zależności w kodzie. Jeśli kod już istnieje, upewnij się, że wszystkie zależności są wyświetlane na diagramach. Jeśli kod jest opracowywany, upewnij się, że nie zawiera zależności, które nie są planowane na diagramie składników. Państwu pomóc odkryć zależności w kodzie, można wygenerować diagramów warstwowych. Ułatwiające upewnij się, czy spełniono swoje ograniczenia planowane zależności, możesz walidować kod diagramów warstwy. Aby uzyskać więcej informacji, zobacz [diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfejsy  
  Umieszczając interfejsy na składniki, można oddzielić i nazwy główne grupy operacji, które są dostarczane przez poszczególne składniki. Na przykład składników opartych na sieci web systemu sprzedaży może mieć interfejs, za pomocą którego klienci kupić towarów, interfejs, za pomocą którego zaktualizować ich katalogów dostawców, a trzeciego interfejsu, przez który system jest zarządzany.  
@@ -161,7 +158,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 ### <a name="decomposing-a-component-into-parts"></a>Podzielenie składnika na części  
  Można użyć procedury opisanej w poprzedniej sekcji, aby każdy składnik.  
   
- W ramach każdego składnika można wyświetlić jego składniki podrzędne jako części. Część jest skutecznie atrybut jej składnika nadrzędnego, który jest rodzajem klasy. Każda część ma swój własny typ, który może być składnika. Możesz umieścić ten składnik na diagramie i wyświetl jego części. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+ W ramach każdego składnika można wyświetlić jego składniki podrzędne jako części. Część jest skutecznie atrybut jej składnika nadrzędnego, który jest rodzajem klasy. Każda część ma swój własny typ, który może być składnika. Możesz umieścić ten składnik na diagramie i wyświetl jego części. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
  Jest to przydatne do zastosowania tej techniki do całego systemu. Narysuj jako samodzielny składnik i wyświetl jego głównych składnikach, jako części. Dzięki temu można jednoznacznie interfejsów systemu ze światem zewnętrznych.  
   
@@ -199,7 +196,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 ### <a name="identifying-the-initiating-events"></a>Identyfikowanie inicjujący zdarzenia  
  Pracy wykonanej przez większość systemów oprogramowania może wygodnie podzielone przez odpowiedzi, które zapewnia inne dane wejściowe lub zdarzeń. Zainicjować zdarzenie może być jednym z następujących zdarzeń:  
   
--   Pierwszą akcją w przypadku użycia. Modelu wymagań może pojawiać się jako krok w przypadku użycia lub akcji w diagramie aktywności. Aby uzyskać więcej informacji [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md) i [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+-   Pierwszą akcją w przypadku użycia. Modelu wymagań może pojawiać się jako krok w przypadku użycia lub akcji w diagramie aktywności. Aby uzyskać więcej informacji [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md) i [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
 -   Komunikat o interfejs programistyczny. Jeśli system, który tworzysz składnik w systemie większe, powinny być opisane jako operacji w jeden z interfejsów składnika. Zobacz [składników oraz ich interfejsów](#Components).  
   
@@ -210,9 +207,9 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Rysuj linię życia dla każdego wystąpienia składnika, który bierze udział w typowej sekwencji. W niektórych przypadkach może być więcej niż jedno wystąpienie każdego typu. Jeśli zostały opisane całego systemu jako samodzielny składnik, powinna to być jedna linia życia dla każdej części, które zawiera.  
   
- Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Aby uzyskać więcej informacji, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
- Diagramy aktywności są przydatne także w niektórych przypadkach. Na przykład jeśli składniki ciągłego strumienia danych, można go opisać jako przepływ obiektu. Jeśli składnik ma złożonych algorytmów, można go opisać jako przepływ sterowania. Upewnij się, wprowadź jasne, który składnik wykonuje każde działanie, na przykład za pomocą komentarzy. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+ Diagramy aktywności są przydatne także w niektórych przypadkach. Na przykład jeśli składniki ciągłego strumienia danych, można go opisać jako przepływ obiektu. Jeśli składnik ma złożonych algorytmów, można go opisać jako przepływ sterowania. Upewnij się, wprowadź jasne, który składnik wykonuje każde działanie, na przykład za pomocą komentarzy. Aby uzyskać więcej informacji, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ### <a name="specify-the-operations"></a>Określ czynności  
  Choć te diagramy przedstawiają operacje wykonywane przez każdy składnik to reprezentowana jako komunikaty na diagramie sekwencji lub działania w diagramie aktywności.  
@@ -247,7 +244,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
 -   Model głównych składników oraz ich wzajemne relacje. Może to być klasy lub składniki i interfejsy, za pomocą skojarzeń i zależności między nimi. Elementy zazwyczaj można podzielić na dwie kategorie:  
   
-    -   Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
+    -   Elementy, które muszą być replikowane przez dewelopera w każdej części kodu, w których wzorzec jest używany. Typy szablonów służy do opisywania tych. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
   
     -   Elementy opisujące klasy framework, które należy używać projektanta.  
   
@@ -265,6 +262,3 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)   
  [Używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md)
-
-
-

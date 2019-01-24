@@ -1,34 +1,29 @@
 ---
 title: Wykrywanie wymagań systemowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798685"
 ---
 # <a name="detecting-system-requirements"></a>Wykrywanie wymagań systemowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami Twojego pakietu VSPackage, można skonfigurować Instalatora aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować ją do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określoną ilość pamięci RAM.  
   
-## <a name="detecting-visual-studio-editions"></a>Wykrywanie wersje programu Visual Studio  
+## <a name="detecting-visual-studio-editions"></a>Detecting Visual Studio Editions  
  Aby ustalić, czy wersja programu Visual Studio jest zainstalowany, sprawdź wartość klucza rejestru instalacji (REG_DWORD) 1 w odpowiednim folderze, zgodnie z opisem w poniższej tabeli. Zwróć uwagę, że hierarchia wersje programu Visual Studio:  
   
 1. Enterprise  
@@ -50,8 +45,7 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
 |Visual Studio 2015 Shell (integrated i isolated)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detecting-when-visual-studio-is-running"></a>Wykrywanie, gdy program Visual Studio jest uruchomiony.  
- Nie można zarejestrować poprawnie Twojego pakietu VSPackage, jeśli program Visual Studio jest uruchomiony podczas instalowania pakietu VSPackage. Instalator musi wykryć, kiedy program Visual Studio jest uruchomiony i następnie odmówić zainstalować ten program. Instalator Windows nie pozwalają używać wpisów tabeli, aby umożliwić wykrywanie takich modyfikacji. Zamiast tego Utwórz akcję niestandardową, w następujący sposób: Użyj `EnumProcesses` funkcję, aby wykryć procesu devenv.exe, a następnie ustaw właściwość Instalatora, który jest używany w stanie uruchamiania lub warunkowo wyświetlania monitu, aby zamknąć okno dialogowe Program Visual Studio.  
+ Nie można zarejestrować poprawnie Twojego pakietu VSPackage, jeśli program Visual Studio jest uruchomiony podczas instalowania pakietu VSPackage. Instalator musi wykryć, kiedy program Visual Studio jest uruchomiony i następnie odmówić zainstalować ten program. Instalator Windows nie pozwalają używać wpisów tabeli, aby umożliwić wykrywanie takich modyfikacji. Zamiast tego należy utworzyć akcję niestandardową, w następujący sposób: Użyj `EnumProcesses` funkcję, aby wykryć procesu devenv.exe, a następnie ustaw właściwość Instalatora, który jest używany w stanie uruchamiania lub warunkowo wyświetlane jest okno dialogowe, który monituje użytkownika o Zamknij program Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

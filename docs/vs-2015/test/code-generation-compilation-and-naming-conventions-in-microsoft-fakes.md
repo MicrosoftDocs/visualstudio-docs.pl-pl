@@ -1,24 +1,19 @@
 ---
 title: Generowanie kodu, kompilacji i konwencje nazewnictwa w Microsoft Fakes | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895330"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783374"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,17 +278,14 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Recursive_rules"></a> Zasady cykliczne  
  Następujące reguły są stosowane cyklicznie:  
   
--   Ponieważ substytuty używają języka C#, aby wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym tokenem C# jest zmieniany na "_" (podkreślenie).  
+-   Ponieważ substytuty używają C# wygenerować zestawy pozorne, dowolny znak, który skutkowałby nieprawidłowym C# token jest zmieniany na "_" (podkreślenie).  
   
 -   Jeśli nazwa wynikowa jest niezgodna z dowolnym elementem członkowskim typu deklarującego, schemat numerowania jest używany przez dołączenie dwóch cyfr licznika, począwszy od 01.  
   
 ##  <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
   
 ###  <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-
-
-

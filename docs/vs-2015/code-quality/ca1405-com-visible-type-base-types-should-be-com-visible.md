@@ -1,13 +1,9 @@
 ---
 title: 'CA1405: Typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1405
 - ComVisibleTypeBaseTypesShouldBeComVisible
@@ -19,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 78a8d9512dfeb2c5d85ea0d1dbaed87b9243ed3e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b107e1aa24b51de3efca8a97972c473f40a3da4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787502"
 ---
-# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typu widocznego modelu COM powinny być widoczne dla modelu COM
+# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Typy podstawowe typów widocznych dla modelu COM powinny być widoczne dla modelu COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,4 +51,4 @@ ms.locfileid: "53942222"
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.ComBaseTypes/vb/FxCop.Interoperability.ComBaseTypes.vb#1)]
 
 ## <a name="see-also"></a>Zobacz też
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Wprowadzenie interfejsu klasy](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024) [współdziałanie z niezarządzanego kodu](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Wprowadzenie interfejsu klasy](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [współdziałanie z niezarządzanego kodu](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

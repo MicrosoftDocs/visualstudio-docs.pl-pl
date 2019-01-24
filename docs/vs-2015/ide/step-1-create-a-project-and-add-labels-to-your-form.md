@@ -1,33 +1,28 @@
 ---
-title: 'Krok 1: Tworzenie projektu i dodawanie etykiet do formularza | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b29944ac31498710b1d97f75d96d3bc3cbbca696
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786060"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Utworzenie projektu i dodawanie etykiet do formularza
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiety, przycisk i inne formanty do formularza. Można również ustawić właściwości dla każdego dodawanego formantu. Projekt będzie zawierać formularz, formanty oraz (później w samouczku) kod. Przycisk uruchamia quiz, etykiety pokazują problemy quizu, a pozostałe formanty pokazują odpowiedzi do quizu oraz czas pozostały do jego zakończenia.  
   
 > [!NOTE]
->  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Aby utworzyć projekt i ustawić właściwości dla formularza  
   
@@ -180,9 +175,6 @@ Wstępny formularz quizu matematycznego
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 2: tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 2: Tworzenie losowego problemu dodawania](../ide/step-2-create-a-random-addition-problem.md).  
   
--   Aby powrócić do tematu przeglądu, zobacz [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).
-
-
-
+-   Aby powrócić do tematu przeglądu, zobacz [samouczek 2: Utwórz Quiz matematyczny](../ide/tutorial-2-create-a-timed-math-quiz.md).

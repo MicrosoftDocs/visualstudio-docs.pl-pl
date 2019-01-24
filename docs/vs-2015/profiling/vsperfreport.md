@@ -1,14 +1,9 @@
 ---
-title: VSPerfReport | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: VSPerfReport | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
 - performance tools, VSPerfReport tool
@@ -20,13 +15,13 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 12b76923a0687125643f95228397d3051cb08c5b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788884"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` musi być prawidłowe pliki .vsp lub .vsps.  
   
 ## <a name="symbol-files"></a>Pliki symboli  
- Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, VSPerfReport wymaga dostępu do symbolu (. Pliki PDB) profilowanych składników i pliki symboli Windows. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, VSPerfReport wymaga dostępu do symbolu (. Pliki PDB) profilowanych składników i pliki symboli Windows. Aby uzyskać więcej informacji, zobacz [jak: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Opcje ogólne raportu  
  W poniższej tabeli opisano ogólne raportu, formatowanie i opcje, które wybrać dane do przekazania.  
@@ -77,7 +72,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
+|**JustMyCode**[**:**[`caller`][,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
 |**Godzina rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
 |**EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
 |**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z okna Raport dotyczący wydajności programu Visual Studio.|  
@@ -99,6 +94,3 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 ## <a name="see-also"></a>Zobacz też  
  [Widoki raportu wydajności](../profiling/performance-report-views.md)
-
-
-

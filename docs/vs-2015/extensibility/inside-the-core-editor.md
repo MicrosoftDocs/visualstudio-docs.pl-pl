@@ -1,26 +1,21 @@
 ---
 title: W edytorze podstawowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794848"
 ---
 # <a name="inside-the-core-editor"></a>W edytorze podstawowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51798550"
  [Zdarzenia buforu tekstowego w starszym interfejsie API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Zawiera listę interfejsów, które są używane dla powiadomień o zdarzeniach buforu tekstu.  
   
- [Instrukcje: rejestrowanie w zdarzeniach buforu tekstowego przy użyciu starszego interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Instrukcje: Rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Opisuje sposób poinformowania zdarzenia buforu tekstu.  
   
  [Używanie menedżera tekstu do monitorowania ustawień globalnych](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ ms.locfileid: "51798550"
  W tym artykule opisano tworzenie wystąpienia usługi języka w celu kontroli kodu dekoracje.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Przewodnik: tworzenie edytora podstawowego i rejestrowanie typu pliku edytora](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Przewodnik: Tworzenie edytorze podstawowych i rejestrowanie typu pliku w edytorze](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Instrukcje krok po kroku dotyczące uruchamiania podstawowy edytor z kodu zarządzanego.  
   
  [Pasek list rozwijanych](../extensibility/drop-down-bar.md)  
@@ -79,9 +74,8 @@ ms.locfileid: "51798550"
  [Korzystanie ze znaczników tekstu ze starszym interfejsem API](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Wyjaśnia pojęcie znaczników tekstu i jak są one używane w edytorze podstawowych i wyświetla listę interfejsów, które są używane do dostępu i zarządzania znaczników tekstu.  
   
- [Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)  
+ [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)  
  Instrukcje krok po kroku dotyczące tworzenia znacznika tekstu i Dodaj polecenie niestandardowe do menu skrótów.  
   
- [Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)  
+ [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)  
  Instrukcje krok po kroku dotyczące tworzenia znacznika niestandardowego tekstu i podać typ znacznika jako usługa.
-

@@ -1,25 +1,20 @@
 ---
 title: Szablony domyślne XSLT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a26349a60c40552d350f156bf1109544a03d411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 10937ed9c3ade13bf553ba4d3a2a9c551597949e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795550"
 ---
 # <a name="xslt-default-templates"></a>Szablony domyślne XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,4 +25,3 @@ Domyślny szablon jest używany podczas przetwarzania, gdy nie ma pasującego ja
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu XSLT](../xml-tools/debugging-xslt.md)
-

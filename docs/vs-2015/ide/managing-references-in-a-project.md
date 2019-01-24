@@ -1,14 +1,9 @@
 ---
 title: Zarządzanie odwołaniami w projekcie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -27,13 +22,13 @@ ms.assetid: 05d1c51b-44f3-4973-8a11-6c919b08ad62
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763653"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +120,3 @@ Pisanie kodu w stosunku do składnika zewnętrznego lub połączone usługi, pro
  [Rozwiązywanie problemów z przerwanymi odwołaniami](../ide/troubleshooting-broken-references.md)   
  [Programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
-

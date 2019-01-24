@@ -1,25 +1,20 @@
 ---
 title: Skonfiguruj zaporę Windows zdalne debugowanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753044"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Skonfiguruj zaporę Windows do zdalnego debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,8 +80,8 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
 |-|-|-|-|  
 |**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|  
 |3702|Wychodzące|UDP|Wymagana w przypadku odnajdywania zdalnego debugera.|  
-|4020||TCP|Dla programu VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
-|4021||TCP|Dla programu VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
+|4020||TCP|For VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
+|4021||TCP|For VS 2015. Numer portu jest zwiększany o 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji zobacz Visual przypisania portów debugera zdalnego Studio.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Porty na komputerze zdalnym, które umożliwiają zdalne debugowanie w trybie zgodności zarządzane lub natywne  
   
@@ -118,6 +113,3 @@ W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowa
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zdalne](../debugger/remote-debugging.md)
-
-
-

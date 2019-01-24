@@ -1,13 +1,9 @@
 ---
 title: 'CA2222: Nie obniżaj dziedziczonej widoczności składowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotDecreaseInheritedMemberVisibility
 - CA2222
@@ -19,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf9d1261138b716459a8e2f6aad16ac64b006f62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee6228359e84687023a713ee866ebfbb760b206b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786532"
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Nie obniżaj dziedziczonej widoczności składowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

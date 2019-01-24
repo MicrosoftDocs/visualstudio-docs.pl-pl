@@ -1,27 +1,22 @@
 ---
 title: Widok modułów - dane Instrumentacji pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 85024296eff4fb4d26b3a588217a1e6fe5221d3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10d63e85a7e0b97b588b368318eb7d040694c72b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784528"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Widok modułów — dane instrumentacji pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
   
 ## <a name="general"></a>Ogólne  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji lub modułu.|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
@@ -50,7 +45,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
   
  Wartości włączne i wyłączne pamięci modułu są sumę włączne i wyłączne pamięci wartości funkcje w module.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Przydziały włączne**|— Dla funkcji, całkowita liczba obiektów, które zostały utworzone przez funkcję. Liczba ta obejmuje obiekty, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję.<br />— Dla modułu liczbę obiektów w które przebiegu profilowania została przydzielona podczas wykonywania co najmniej jedna funkcja w module. Liczba ta obejmuje przydzielonych obiektów w funkcjach, które zostały wygenerowane przez wywołania z funkcji modułu.|  
 |**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały przydzielone w uruchomienia profilowania były przydziałów włącznych modułu lub funkcji.|  
@@ -64,7 +59,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Upłynęło wartości włącznie wskazują godzinę, będący funkcji na stosie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas, który upłynął**|— W przypadku funkcji czas spędzony w funkcji. Obejmuje to czas spędzony w funkcji podrzędnych i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Dla modułu, okres, w których co najmniej jedna funkcja w module był na stosie wywołań.|  
 |**% Całkowitego czasu, który upłynął**|Łączny czas całkowity czas tego modułu lub funkcji przeznaczony procent całkowity czas całkowity czas uruchomienia profilowania.|  
@@ -75,7 +70,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
 ## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
  Czas wyłączny wartości wskazują godzinę, wykonywanej funkcji bezpośrednio w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcji podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Czas wyłączny, który upłynął**|— W przypadku funkcji czas spędzony w modułu lub funkcji. Obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale nie obejmuje czas spędzony w funkcjach podrzędnych.<br />— Dla modułu sumę, który upłynął czas wyłączny funkcje w module.|  
 |**% Wyłącznego czasu, który upłynął**|Łączny czas wyłączny czas tego modułu lub funkcji przeznaczony procent całkowity czas własny czas uruchomienia profilowania.|  
@@ -86,7 +81,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
 ## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
  Aplikacji wartości włącznie wskazują czasu, która funkcja była w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, ale ma czas spędzony w funkcjach podrzędnych.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas aplikacji**|— W przypadku funkcji czas spędzony w wywołaniach funkcji. Obejmuje to czas, jaki był poświęcony funkcji podrzędnych, ale nie obejmuje wywołania do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.<br />— Dla modułu, okres, w których co najmniej jedna funkcja w module był w stosie wywołań, z wyłączeniem czas spędzony w wywołaniach do systemu operacyjnego.|  
 |**% Całkowitego czasu aplikacji**|Procent sumy, który upłynął całkowity czas uruchomienia profilowania, która spędzono w całkowity czas aplikacji tego modułu lub funkcji.|  
@@ -97,7 +92,7 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
  Aplikacja wyłączne wartości wskazują czas spędzony w module lub funkcji, z wyłączeniem czas spędzony w funkcjach podrzędnych. Wskazany czas także wyklucza wywołań do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Własny czas aplikacji**|— W przypadku funkcji własny czas aplikacji łączna liczba wywołań tej funkcji.<br />— Dla modułu, własny czas aplikacji łączna liczba wszystkich wywołań funkcji w module.|  
 |**% Własnego czasu aplikacji**|Procent sumy, który upłynął własny czas uruchomienia profilowania, która spędzono w własny czas aplikacji tego modułu lub funkcji.|  
@@ -109,6 +104,3 @@ Widok modułów dane alokacji pamięci .NET zbierane za pomocą metody Instrumen
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)
-
-
-

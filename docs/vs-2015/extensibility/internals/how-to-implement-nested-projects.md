@@ -1,29 +1,24 @@
 ---
-title: 'Porady: Implementowanie zagnieżdżonych projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Implementowanie zagnieżdżonych projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792193"
 ---
-# <a name="how-to-implement-nested-projects"></a>Porady: Implementowanie zagnieżdżonych projektów
+# <a name="how-to-implement-nested-projects"></a>Instrukcje: Implementowanie zagnieżdżonych projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Podczas tworzenia projektu zagnieżdżonego typu są kilka dodatkowych kroków, które muszą zostać zaimplementowane. Projekt nadrzędny przejmuje niektóre z tych samych obowiązków, które rozwiązanie ma jego projektów zagnieżdżonych (elementów podrzędnych). Projekt nadrzędny jest kontenerem projektów, które są podobne do rozwiązania. W szczególności istnieje kilka zdarzeń, które muszą zostać wywołane przez rozwiązania i projekty nadrzędnego do tworzenia hierarchii zagnieżdżonych projektów. Zdarzenia te są opisane w ramach następującego procesu tworzenia zagnieżdżonych projektów.  
@@ -99,4 +94,3 @@ Podczas tworzenia projektu zagnieżdżonego typu są kilka dodatkowych kroków, 
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametry kontekstu](../../extensibility/internals/context-parameters.md)   
  [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

@@ -2,7 +2,7 @@
 title: Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej
 description: Debugowanie usługi w chmurze lub maszyny wirtualnej w programie Visual Studio
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: conceptual
 ms.custom: vs-azure
@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 481097a3b094f4ced4c6d7103e7513b9a3bc6e80
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 85b3ab45da52bc246e42927c463f3a1037418480
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783736"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 

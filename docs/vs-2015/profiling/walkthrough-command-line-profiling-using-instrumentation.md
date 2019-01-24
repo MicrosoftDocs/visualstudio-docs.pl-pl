@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Profilowanie wiersza polecenia przy użyciu metody Instrumentacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu metody Instrumentacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -17,15 +12,15 @@ ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755436"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Wskazówki: Profilowanie wiersza polecenia przy użyciu metody instrumentacji
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Przewodnik: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacji autonomicznej zbierać szczegółowe informacje o czasach i wywoływać dane dotyczące liczby przy użyciu metody instrumentacji dla narzędzi profilowania. W tym przewodniku będzie wykonywać następujące zadania:  
@@ -48,7 +43,7 @@ Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../in
   
 -   Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach. Aby uzyskać więcej informacji, zobacz [jak: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+-   Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach. Aby uzyskać więcej informacji, zobacz [jak: Informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Polecenie wiersza profilowania przy użyciu metody Instrumentacji  
  Instrumentacja jest metody profilowania za pomocą którego specjalnie utworzone wersje profilowanych danych binarnych zawiera funkcje sondy, które zbierają informacje o czasie na wejścia i wyjścia funkcji w moduł instrumentowany. Ponieważ ta metoda profilowania jest bardziej inwazyjne niż próbkowanie, spowoduje naliczenie większej ilości obciążenia. Instrumentowane pliki binarne są również większych niż Debuguj lub zwolnij pliki binarne i nie są przeznaczone do wdrożenia.  
@@ -131,9 +126,6 @@ Ten przewodnik przeprowadzi Cię przez profilowanie [!INCLUDE[dnprdnshort](../in
 ## <a name="see-also"></a>Zobacz też  
  [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)
-
-
-

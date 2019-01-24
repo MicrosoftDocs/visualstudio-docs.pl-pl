@@ -1,29 +1,24 @@
 ---
-title: 'Porady: używanie wbudowanych elementów z możliwością kolorowania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b168eee5f5f8a8a9775d9326cb9a7dda6287792
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782682"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Porady: używanie wbudowanych elementów z możliwością kolorowania
+# <a name="how-to-use-built-in-colorable-items"></a>Instrukcje: Instrukcje: korzystanie z wbudowanych elementów z możliwością kolorowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Przed użyciem wbudowanych elementów z możliwością kolorowania użytkownik musi najpierw zasygnalizowania do zintegrowanego środowiska programistycznego (IDE) są one udostępniane własne niestandardowe elementy z możliwością kolorowania, w tym przypadku byłaby <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektów. Możesz to zrobić, ustawiając wpis rejestru dla usługi w języka.  
@@ -45,4 +40,3 @@ Przed użyciem wbudowanych elementów z możliwością kolorowania użytkownik m
  [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)   
  [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)   
  [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service2.md)
-

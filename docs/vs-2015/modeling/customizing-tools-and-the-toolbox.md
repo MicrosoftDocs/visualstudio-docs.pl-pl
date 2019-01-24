@@ -1,12 +1,9 @@
 ---
 title: Dostosowywanie narzędzi i przybornika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847815"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790596"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +84,11 @@ Editor
   
 3.  Ustaw **ikonę przybornika** właściwości do odwoływania się do mapy bitowej 16 x 16.  
   
-     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksploratorze rozwiązań w **Dsl\Resources** folderu. Ten plik powinien zawierać następujące wartości właściwości: **Build Action** = **zawartości**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.  
+     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksploratorze rozwiązań w **Dsl\Resources** folderu. Ten plik powinien zawierać następujące wartości właściwości: **Akcja kompilacji** = **zawartości**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.  
   
-4.  **Dla narzędzia elementu:** ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.  
+4.  **Dla narzędzia elementu:** Ustaw **klasy** właściwości narzędzia do odwoływania się do klasy konkretnej domeny, która jest mapowana na kształt.  
   
-     **Narzędzia connector:** ustaw **konstruktora połączeń** właściwości narzędzia do jednego z elementów, które są oferowane na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznik do relacji domeny. Jeśli niedawno po utworzeniu łącznika, będą zazwyczaj wybiera się konstruktora skojarzone z nimi połączenie.  
+     **Aby uzyskać narzędzie łącznika:** Ustaw **konstruktora połączeń** właściwości narzędzia do jednego z elementów, które są oferowane na liście rozwijanej. Konstruktory połączeń są tworzone automatycznie podczas mapowania łącznik do relacji domeny. Jeśli niedawno po utworzeniu łącznika, będą zazwyczaj wybiera się konstruktora skojarzone z nimi połączenie.  
   
 5.  Aby przetestować język DSL, naciśnij klawisz F5 lub CTRL + F5 i jest w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otworzyć przykładowy plik modelu. Nowe narzędzie powinna zostać wyświetlona w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.  
   
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md)   
  [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)   
- [Porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Przykładowe diagramy obwodu DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

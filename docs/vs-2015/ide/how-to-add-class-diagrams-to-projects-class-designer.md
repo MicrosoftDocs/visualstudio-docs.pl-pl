@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Dodawanie diagramów klas do projektu (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
@@ -16,15 +11,15 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271391"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760269"
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Porady: dodawanie diagramów klasy do projektu (Projektant klas)
+# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Instrukcje: Dodawanie diagramów klas do projektu (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Do projektowania, edytować i refaktoryzować klasy i innych typów, Dodaj diagram klas do projektu Visual C# .NET, Visual Basic .NET lub C++. Aby wyświetlić różne części kodu w projekcie, należy dodać wiele diagramów klas do projektu.  
@@ -56,11 +51,8 @@ Do projektowania, edytować i refaktoryzować klasy i innych typów, Dodaj diagr
      Tworzony jest automatycznie wypełniony Diagram klas.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie typów za pomocą projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)   
- [Porady: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Instrukcje: Tworzenie typów za pomocą projektanta klas](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Instrukcje: Wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)   
  [Projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md)   
  [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)
-
-
-

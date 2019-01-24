@@ -1,21 +1,17 @@
 ---
 title: Manifest kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758224"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788173"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +30,21 @@ Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjm
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
 |/ manifest|Ścieżka do manifestu obrazu do użycia w celu utworzenia lub zaktualizowania otokę kodu.|Wymagane|  
 |/Language|Język, w którym należy wygenerować otokę kodu.<br /><br /> Prawidłowe wartości: CPP, C++, CS, CSharp, C#, VB lub VSCT wartości jest rozróżniana wielkość liter.<br /><br /> Dla języka VSCT opcja /monikerClass, /classAccess i/Namespace opcje są ignorowane.|Wymagane|  
-|/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyImageIds.\< Lang Ext >|Optional|  
-|/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyMonikers.\< Lang Ext >|Optional|  
-|/classAccess|Modyfikator dostępu dla imageIdClass i monikerClass. Sprawdź, czy modyfikator dostępu jest prawidłowy dla danego języka. To jest ignorowany dla opcji języka VSCT.<br /><br /> Domyślne: publiczny|Optional|  
-|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo "." lub "::" są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Domyślne: Mojeobrazy|Optional|  
-|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|Modyfikator dostępu dla imageIdClass i monikerClass. Sprawdź, czy modyfikator dostępu jest prawidłowy dla danego języka. To jest ignorowany dla opcji języka VSCT.<br /><br /> Wartość domyślna: Public|Optional|  
+|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo "." lub "::" są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: MyImages|Optional|  
+|/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
--   /Manifest:D:\MyManifest.imagemanifest ManifestToCode w/Language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Uwagi  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

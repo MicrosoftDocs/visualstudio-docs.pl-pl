@@ -1,14 +1,9 @@
 ---
 title: Widok modułów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785596"
 ---
 # <a name="modules-view"></a>Widok modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Widok modułów zawiera listę modułów danych profilowania. Każdy moduł jest
   
  Rozwiń lub Zwiń Nazwa modułu do wyświetlania lub zamknąć widok danych dotyczących wydajności modułu.  
   
- Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
+ Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
   
  Kolumny, które są dostępne w widoku modułów zależą od metody profilowania (próbkowania i instrumentacji), który został użyty do zbierania danych i czy zebrano dane pamięci platformy .NET w profilowania działać.  
   
@@ -44,6 +39,3 @@ Widok modułów zawiera listę modułów danych profilowania. Każdy moduł jest
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-contention-data.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Metody dotyczące punktu przerwania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1767afec32b2b90250a841317e0929fcdd7732c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799185"
 ---
 # <a name="breakpoint-related-methods"></a>Metody dotyczące punktu przerwania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Aparat debugowania (DE) musi obsługiwać ustawienie punktów przerwania. Debugo
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrola wykonywania i ocena stanu](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

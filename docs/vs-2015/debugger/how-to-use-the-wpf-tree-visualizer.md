@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z wizualizatora drzewa WPF | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z wizualizatora drzewa WPF | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 2a1bf1cd-90f9-4d06-9fb4-1bfc925afef3
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 69ce98efe7429b011915f14b267cf5346528a93d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752105"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794755"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Porady: korzystanie z wizualizatora drzewa WPF
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Instrukcje: Korzystanie z wizualizatora drzewa platformy WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów, które są zawarte w drzewie. Aby uzyskać więcej informacji na temat drzewa wizualnego, zobacz [drzewa w WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Aby uzyskać więcej informacji na temat właściwości zależności zobacz [Przegląd właściwości zależności](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
@@ -69,10 +64,7 @@ Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego o
 -   Kliknij przycisk **Zamknij** ikonę w prawym górnym rogu okna dialogowego.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Korzystanie z wizualizatora](../misc/how-to-use-a-visualizer.md)   
+ [Instrukcje: Korzystanie z wizualizatora](../misc/how-to-use-a-visualizer.md)   
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
  [Drzewa w WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
  [Przegląd właściwości zależności](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
-
-
-

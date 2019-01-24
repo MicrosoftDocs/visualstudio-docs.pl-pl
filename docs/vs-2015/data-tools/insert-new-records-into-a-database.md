@@ -1,12 +1,9 @@
 ---
 title: Wstawianie nowych rekordów do bazy danych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2e4dbae766efbcf56fb421d62239ae3325cc1423
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783213"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,23 +1,20 @@
 ---
 title: Osadzanie diagramu w formularzu Windows | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa6cd040-7c88-4329-b9c3-2a80b312610f
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 04ecf5bd7bfc91e03f48e624d208a5b4f29b10b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785582"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Osadzanie diagramu w formularzu systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,4 +156,3 @@ DSL diagram można osadzić w kontrolce Windows, która jest wyświetlana w [!IN
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-

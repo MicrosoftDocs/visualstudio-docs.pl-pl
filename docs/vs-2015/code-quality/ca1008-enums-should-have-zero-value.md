@@ -1,13 +1,9 @@
 ---
 title: 'CA1008: Typy wyliczeniowe powinny mieć wartość zero | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
@@ -19,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cc3787378ce2ef601c5bcae4c5e7384be998a015
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789688"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Typy wyliczeniowe powinny mieć wartości zerowej
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Typy wyliczeniowe powinny mieć wartość zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

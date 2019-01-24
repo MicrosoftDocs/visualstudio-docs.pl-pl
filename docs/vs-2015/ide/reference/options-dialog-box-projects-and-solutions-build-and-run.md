@@ -1,14 +1,9 @@
 ---
 title: Okno dialogowe Opcje, projekty i rozwiązania, skompilować i uruchomić | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
 - VS.ToolsOptionsPag.Projects.Build_and_Run
@@ -20,13 +15,13 @@ ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0aa325aa016b95a0dac0047f4b6fe9ae67f52ecc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800865"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visu
   
 ## <a name="see-also"></a>Zobacz też  
  [Kompilowanie i tworzenie](../../ide/compiling-and-building-in-visual-studio.md)
-
-
-

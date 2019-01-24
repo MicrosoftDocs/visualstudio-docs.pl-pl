@@ -1,14 +1,9 @@
 ---
 title: Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -34,13 +29,13 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726561"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800927"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ Object dump complete.
   
 - Numer alokacji pamięci, która jest `18` w tym przykładzie  
   
-- [Typ bloku](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
+- [Typ bloku](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
   
 - Lokalizacja pamięci szesnastkowej, czyli `0x00780E80` w tym przykładzie.  
   
@@ -271,6 +266,3 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  [Szczegóły dotyczące sterty debugowania CRT](../debugger/crt-debug-heap-details.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie szablonów elementu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie szablonów elementu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,18 +13,18 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788252"
 ---
-# <a name="how-to-create-item-templates"></a>Porady: tworzenie szablonów elementu
+# <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#export_template) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [porady: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
+Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#export_template) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
   
  Kreator sporego nakładu pracy w celu utworzenia podstawowego szablonu, ale w wielu przypadkach należy ręcznie zmodyfikować plik .vstemplate po wyeksportowaniu szablonu. Na przykład, jeśli chcesz, aby element był wyświetlany w **Dodaj nowy element** okno dialogowe [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekt aplikacji należy wykonać kilka dodatkowych kroków. [Druga procedura](../ide/how-to-create-item-templates.md#modify_template) w tym temacie pomaga wykonać to zadanie.  
  
@@ -43,7 +38,7 @@ Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#exp
   
 2.  Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.  
   
-3.  Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastąp parametry w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
   
 4.  Na **pliku** menu, kliknij przycisk **Eksportuj szablon**.  
   
@@ -150,7 +145,7 @@ Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#exp
   
 2.  Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.  
   
-3.  Zgodnie z potrzebami zmodyfikuj plik kodu, aby wskazać, gdzie powinno nastąpić wymiany parametru. Aby uzyskać więcej informacji na temat wymiany parametru Zobacz jak: Zastąp parametry w szablonie.  
+3.  Zgodnie z potrzebami zmodyfikuj plik kodu, aby wskazać, gdzie powinno nastąpić wymiany parametru. Aby uzyskać więcej informacji na temat wymiany parametru Zobacz jak: Zastępowanie parametrów w szablonie.  
   
 4.  Utwórz plik XML i zapisz go przy użyciu rozszerzenia nazwy pliku .vstemplate, w tym samym katalogu, co Twój nowy szablon elementu.  
   
@@ -160,9 +155,9 @@ Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#exp
   
 7.  W Eksploratorze Windows wybierz pliki, które chcesz uwzględnić w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowany (zip). Wybrane pliki są kompresowane w pliku zip.  
   
-8.  Skopiuj plik zip i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2015 domyślnym katalogiem jest... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz jak: Znajdź i organizowania szablonów projektów i elementów.  
+8.  Skopiuj plik zip i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2015 domyślnym katalogiem jest... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz jak: Znajdź i organizowania projektów i szablonów elementów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Porady: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)   
+ [Instrukcje: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md)   
  [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie szablonów wielu projektów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie szablonów wielu projektów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,15 +12,15 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755342"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Porady: tworzenie szablonów wielu projektów
+# <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów wielu projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Gdy projekt oparty na szablonie wieloprojektowym jest tworzona na podstawie **nowy projekt** okno dialogowe, każdy projekt w szablonie zostanie dodany do rozwiązania.  
@@ -86,7 +81,7 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
 1.  Twórz projekty do uwzględnienia w szablonie wieloprojektowym.  
   
-2.  Tworzenie plików .vstemplate dla każdego projektu. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md).  
+2.  Tworzenie plików .vstemplate dla każdego projektu. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md).  
   
 3.  Utwórz główny plik .vstemplate szablonu, który zawiera metadane szablonu wieloprojektowego. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
   
@@ -156,11 +151,8 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
+ [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Solutionfolder — Element (szablony Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink, element (szablony Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

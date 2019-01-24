@@ -1,25 +1,20 @@
 ---
 title: Praca z wieloma kontami użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802645"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Dodawanie drugiego konta użytkownika w programie Visual Studio  
  Kliknij strzałkę w dół obok swojej nazwy użytkownika w prawym górnym rogu programu Visual Studio. Następnie kliknij pozycję **ustawienia konta** elementu menu. **Menedżerem** okno dialogowe pojawia się i wyświetla konta podczas logowania. Kliknij przycisk **Dodaj konto** linku w lewej dolnej części okna dialogowego, aby dodać nowe konto Microsoft lub nowej pracy lub konta służbowego.  
   
- ![Selektor konta usługi Visual Studio](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")  
+ ![Visual Studio account picker](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")  
   
  Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta. Poniższa ilustracja przedstawia Menedżera konta, po użytkownik doda jego konto służbowe Contoso.com.  
   
@@ -77,6 +72,3 @@ Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można 
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Ponownie Dodaj usług połączonych kreatora i Eksplorator serwera  
  Teraz przejdź do **Eksploratora serwera** ponownie, kliknij prawym przyciskiem myszy na węzeł platformy Azure i wybierz polecenie **zarządzanie i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w Eksploratorze serwera. Powinny być widoczne wszystkie usługi, które są skojarzone z określonej subskrypcji. Mimo że nie aktualnie zalogowano Cię do środowiska IDE Visual Studio przy użyciu drugiego konta, zalogowano Cię do tego konta usług i zasobów. Dotyczy to także **Projekt > Dodaj podłączoną usługę** i **zespołu > Połącz z Team Foundation Server**.
-
-
-

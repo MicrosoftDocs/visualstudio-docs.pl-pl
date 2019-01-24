@@ -1,26 +1,21 @@
 ---
-title: 'Porady: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892795"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795863"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Instrukcje: Konfigurowanie testów jednostkowych pod kątem starszej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wersję programu .NET Framework jest domyślnie jako cel. Ponadto jeśli zaktualizujesz projekty testowe z poprzednich wersji programu Visual Studio, ich uaktualnienia pod kątem najbardziej aktualną wersję programu .NET Framework. Edytując właściwości projektu, można jawnie ponownie docelowych projektu we wcześniejszych wersjach programu .NET Framework.  
@@ -69,7 +64,7 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wers
   
 5.  Na **skompilować** wybierz kartę **zaawansowane opcje kompilacji** jak pokazano na poniższej ilustracji.  
   
-     ![Zaawansowane opcje kompilacji](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
+     ![Advanced Compile Options](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
 6.  Użyj **platformy docelowej (wszystkie konfiguracje)** listy rozwijanej, aby zmienić platformę docelową, aby **.NET Framework 3.5** lub nowszy, zgodnie z objaśnieniem B na poniższej ilustracji. Nie należy określać wersję klienta.  
   
@@ -131,10 +126,7 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wers
 8.  W Eksploratorze rozwiązań wybierz Zaznacz **Załaduj ponownie projekt** z menu skrótów projektu testów Visual C++.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Tworzenie rozwiązań SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Zaawansowane ustawienia kompilatora (Visual Basic), okno dialogowe](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-

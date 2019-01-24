@@ -1,14 +1,9 @@
 ---
-title: Zestaw SDK programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Visual Studio SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753737"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
   
  Więcej informacji można znaleźć [blog VSX Arcana](http://blogs.msdn.com/b/vsx/) i liczbę blogi napisane przez MVPs firmy Microsoft:  
   
--   [Rozszerzenia Ulubione programu Visual Studio](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
+-   [Favorite Visual Studio Extensions](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   
 -   [Rozszerzanie programu Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)  
   
@@ -83,7 +78,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Zarządzanie wieloma wątkami w kodzie zarządzanym](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [Dodawanie poleceń do pasków narzędzi](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
  [Obsługa programu Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archiwum](../extensibility/archive.md)   
  [Dokumentacja zestawu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
-

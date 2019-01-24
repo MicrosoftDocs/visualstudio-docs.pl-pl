@@ -1,11 +1,8 @@
 ---
 title: Za pomocą projektanta przepływu pracy automatu stanu starszych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752685"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Używanie starszej wersji Projektanta przepływu pracy automatu stanów
-Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2010](../includes/vs2010-md.md)] który jest przeznaczony dla jednej [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny w stanie** lub  **Stan biblioteki przepływu pracy automatu** szablonu projektu w starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant machine stanu jest przedstawiany jako interfejsu użytkownika projektanta przepływu pracy w starszej wersji. Uzyskać informacji o szablonach projektu maszyny stanu starszej wersji, zobacz [porady: Tworzenie stanu maszyny aplikacji konsoli przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [jak: Tworzenie biblioteki przepływu pracy (starsza wersja)stanumaszyny](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2010](../includes/vs2010-md.md)] który jest przeznaczony dla jednej [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny w stanie** lub  **Stan biblioteki przepływu pracy automatu** szablonu projektu w starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant machine stanu jest przedstawiany jako interfejsu użytkownika projektanta przepływu pracy w starszej wersji. Aby dowiedzieć się, szablony projektów maszyny stanu starszej wersji, zobacz [jak: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [jak: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Przepływ pracy automatu stanów składa się z szeregu stanów. Jeden stan jest oznaczona jako początkowego stanu. Każdy stan mogą otrzymać zestaw zdarzeń. Na podstawie zdarzenia, przejście może przyjąć inny stan. Przepływ pracy automatu stanów może mieć stan końcowy. Po nawiązaniu przejście do stanu końcowego kończy działanie przepływu pracy.  
   
@@ -61,8 +58,8 @@ Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2
 >  Aby otworzyć **konspekt dokumentu** okna na **widoku** menu, wskaż **Windows inne**, a następnie wybierz pozycję **konspekt dokumentu**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Porady: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Instrukcje: Tworzenie aplikacji konsoli przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Przepływy pracy automatu stanów](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Przy użyciu działania działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Przy użyciu działania StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
