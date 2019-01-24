@@ -1,14 +1,9 @@
 ---
 title: Przykładowy kod nawigacji (JavaScript) debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93bc571344ca17494aecc201e3d08ba49850b96d
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153891"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763889"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Przykładowy kod nawigacji (JavaScript) debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,6 +172,3 @@ Kod w tym temacie jest przykładowy plik dla [kontrolować wykonywanie w trakcie
  })();  
   
 ```
-
-
-

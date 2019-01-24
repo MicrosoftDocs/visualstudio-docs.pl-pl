@@ -1,12 +1,9 @@
 ---
 title: Powiązywanie kontrolek z danymi
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc158eefd23cc06b36749676188201d988099a6e
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: ca10874d27664902f98baff47a2fe1e7a0adb0e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767947"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,13 +1,9 @@
 ---
-title: 'CA1306: OKREŚL Ustaw ustawienia regionalne dla typów danych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'CA1306: Ustaw ustawienia regionalne dla typów danych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1306
 - SetLocaleForDataTypes
@@ -19,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 007bce553d99f8c79a835cb4caa731962b739a2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75e67cdd058939837441bd969ac8629a6fc65dcc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752974"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: OKREŚL Ustaw ustawienia regionalne dla typów danych
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Ustaw ustawienia regionalne dla typów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

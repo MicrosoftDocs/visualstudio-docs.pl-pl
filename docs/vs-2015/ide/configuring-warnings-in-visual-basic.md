@@ -1,14 +1,9 @@
 ---
 title: Konfigurowanie ostrzeżeń w języku Visual Basic | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
@@ -17,13 +12,13 @@ ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c3b28bea858c867bd7fae8e1b4045d79d5e4b513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763236"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic:
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,12 +77,12 @@ ms.locfileid: "49297612"
 ### <a name="operands-of-type-object-warnings"></a>Operandy typu obiektu ostrzeżenia  
  Wygenerowany, gdy argumentów operacji typu `Object` występują, utworzyć błąd `Option Strict On`. Domyślne dla nowych projektów znajduje się na.  
   
- Identyfikator: 42018 i 42019  
+ ID: 42018 i 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>Deklaracje wymagają ostrzeżenia klauzuli "As"  
  Generowane, gdy zmiennej, funkcji lub brakujących deklaracji właściwości `As` klauzuli czy utworzono błąd `Option Strict On`. Zmienne, które nie mają typu, przypisane są zakłada się, że typ `Object`. Domyślne dla nowych projektów znajduje się na.  
   
- Identyfikator: 42020 (deklaracja zmiennej), 42021 (deklaracji funkcji), a 42022 (deklaracja właściwości).  
+ ID: 42020 (deklaracja zmiennej), 42021 (deklaracji funkcji) i 42022 (deklaracja właściwości).  
   
 ### <a name="possible-null-reference-exception-warnings"></a>Ostrzeżenia dotyczące wyjątków możliwe odwołanie o wartości Null  
  Generowane, gdy zmienna jest używana, zanim została do niej przypisana wartość. Domyślne dla nowych projektów znajduje się na.  
@@ -107,12 +102,12 @@ ms.locfileid: "49297612"
 ### <a name="recursive-operator-or-property-access-warnings"></a>Operator rekursywny lub ostrzeżenia dostęp do właściwości  
  Generowane, gdy treść procedury używa tego samego operatora lub właściwości, który jest zdefiniowany w. Domyślne dla nowych projektów znajduje się na.  
   
- Identyfikator: 42004 (operator), 42026 (właściwość)  
+ ID: 42004 (operator), 42026 (właściwość)  
   
 ### <a name="function-or-operator-without-return-value-warning"></a>Funkcja lub Operator bez ostrzeżenia wartości zwracanej  
  Generowane, gdy funkcja lub operator nie jest zwracana wartość określona. W tym pominięcie `Set` do niejawnego zmiennej lokalnej o nazwie identycznej z nazwą funkcji. Domyślne dla nowych projektów znajduje się na.  
   
- Identyfikator: 42105 (funkcja), 42016 (operator)  
+ ID: 42105 (funkcja), 42016 (operator)  
   
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Modyfikator przeciążenia używane w ostrzeżenie modułu  
  Wygenerowany, gdy `Overloads` jest używany w `Module`. Domyślne dla nowych projektów znajduje się na.  
@@ -132,8 +127,3 @@ ms.locfileid: "49297612"
  [/ warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Domyślnie wyłączone ostrzeżenia kompilatora](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Rejestrowanie szablonów projektów i elementów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771387"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
 ### <a name="registering-file-filters"></a>Rejestrowanie filtry plików  
  Opcjonalnie można zarejestrować filtry, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] używa po wyświetleniu monitu dla nazw plików. Na przykład [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrować **Otwórz plik** jest okno dialogowe:  
   
- **Pliki Visual C# (\**.CS,\*resx,\*.settings,\*XSD,\*.wsdl);\*. CS,\*resx,\*.settings,\*XSD,\*.wsdl)**  
+ **Pliki Visual C# (\*.CS,\*resx,\*.settings,\*XSD,\*.wsdl);\*. CS,\*resx,\*.settings,\*XSD,\*.wsdl)**  
   
  Do obsługi rejestracji wielu filtrów, każdy filtr jest zarejestrowany w jego własnej podklucza w HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*wersji*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*podklucz*>. Dowolne; jest nazwą podklucza [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignoruje nazwa podklucza który i używa tylko jego wartości.  
   
@@ -128,4 +123,3 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
  [Kreatorzy](../../extensibility/internals/wizards.md)   
  [Lokalizowanie aplikacji](../../ide/localizing-applications.md)   
  [Identyfikatory CATID obiektów, które są zwykle używane do rozszerzania projektów](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

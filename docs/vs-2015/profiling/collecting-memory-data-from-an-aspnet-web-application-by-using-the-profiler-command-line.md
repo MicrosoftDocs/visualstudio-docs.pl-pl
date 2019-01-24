@@ -1,14 +1,9 @@
 ---
 title: Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - profiling tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bbe52509eb298c33077c81a69e02a813c29b7ce0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 373e20ba3130cc5b5c633ef58f104d8cb8112ae3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758538"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji internetowej ASP.NET przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alo
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Dołącz profiler do działającej aplikacji platformy ASP.NET**|-   [Jak: Dołącz Profiler do aplikacji internetowej ASP.NET w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrument statycznie skompilowane pliki binarne**|-   [Jak: Instrumentacji aplikacji statycznie skompilowanej ASP.NET i pamięci zbierania danych](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Instrument dynamicznie skompilowanych plików binarnych**|-   [Jak: Instrumentacji aplikacji dynamicznie skompilowanej ASP.NET i pamięci zbierania danych](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Dołącz profiler do działającej aplikacji platformy ASP.NET**|-   [Jak: Dołączanie profilera do aplikacji internetowej ASP.NET w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrument statycznie skompilowane pliki binarne**|-   [Jak: Instrumentacja statycznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Instrument dynamicznie skompilowanych plików binarnych**|-   [Jak: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   
@@ -62,6 +57,3 @@ W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alo
   
 ## <a name="reference"></a>Tematy pomocy  
  [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Użycie procesora GPU | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771648"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Aby uruchomić narzędzie użycie procesora GPU:  
   
-1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).  
+1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).  
   
 2. W Centrum wydajności i diagnostyki, zaznacz pole wyboru obok pozycji **użycie procesora GPU**. Opcjonalnie zaznacz pola wyboru obok inne narzędzia, których interesuje Cię. Możesz uruchomić kilka wydajności i narzędzia diagnostyczne jednocześnie, aby uzyskać pełniejszy obraz wydajności Twojej aplikacji.  
   
@@ -99,13 +94,13 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
 |--------------------|-----------------|  
 |**Proces**|Nazwa procesu, który Cię interesuje. Wszystkie procesy, które używały procesora GPU podczas sesji diagnostycznej znajdują się na tej liście rozwijanej. Kolor skojarzony z procesu w tej listy rozwijanej jest kolor działanie wątku na osiach czasu poniżej.|  
 |**Wątek**|Identyfikator wątku, który Cię interesuje. W przypadku aplikacji wielowątkowych to może pomóc wyizolować określoną wątków, które należą do procesu, który chcesz wziąć. Zdarzenia związane z wybranym wątku są wyróżnione w każdym osi czasu.|  
-|**Wyświetlanie**|Liczba wyświetlania, w których częstotliwość odświeżania jest wyświetlana **Uwaga:** niektóre sterowniki można skonfigurować, aby prezentować wiele ekranów fizycznych jako pojedyncze, duże ekran wirtualnego. Widoczne mogą być tylko jeden ekran, na liście, nawet wtedy, gdy komputer ma wiele ekranów dołączone.|  
+|**Wyświetlanie**|Liczba wyświetlania, w których częstotliwość odświeżania jest wyświetlana **Uwaga:**  Niektóre sterowniki można skonfigurować do przedstawienia wielu ekranów fizycznych jako pojedyncze, duże ekran wirtualnego. Widoczne mogą być tylko jeden ekran, na liście, nawet wtedy, gdy komputer ma wiele ekranów dołączone.|  
 |**Filtr**|Słowa kluczowe, które Cię interesuje. Zdarzenia w dolnej części raportu będzie zawierał tylko te, które odpowiadają — słowo kluczowe w całości lub części. Można określić wiele słów kluczowych, oddzielając je średnikami (;).|  
 |**Sortuj hierarchii**|Pole wyboru, która wskazuje, czy hierarchie zdarzeń — definiowane przy użyciu znaczniki użytkownika — są zachowywane lub zignorować.|  
   
  Lista zdarzeń w dolnej części raportu użycia procesora GPU przedstawiono szczegóły każdego zdarzenia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa zdarzenia**|Nazwa zdarzenia grafiki. Zdarzenie odnosi się zazwyczaj jedno zdarzenie na osi czasu wątku procesora CPU i jedno zdarzenie na osi czasu procesora GPU.<br /><br /> Nazwy zdarzeń może być "unattributed", jeśli użycie procesora GPU nie może określić nazwę zdarzenia. Aby uzyskać więcej informacji zobacz uwagi pod tą tabelą.|  
 |**Uruchomienie procesora CPU (ns)**|Czas zdarzenia zostało zainicjowane na procesorze CPU, wywołując interfejs API Direct3D. Czas jest mierzony w nanosekundach względem podczas uruchamiania aplikacji.|  
@@ -122,7 +117,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Aby odłożyć profilowania od samego początku aplikacji:  
   
-1.  W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).  
+1.  W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).  
   
 2.  W Centrum wydajności i diagnostyki, postępuj zgodnie z **ustawienia** łącze obok **użycie procesora GPU**.  
   
@@ -140,7 +135,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
 |Dostawcy|Opis procesora GPU|Wymagana wersja sterownika|  
 |------------|---------------------|-----------------------------|  
-|Intel®|4. generacji Intel® procesory (Haswell)<br /><br /> — Procesor Intel® HD grafiki (GT1)<br />— Procesor Intel® HD grafiki 4200 (GT2)<br />— Procesor Intel® HD grafiki 4400 (GT2)<br />— Procesor Intel® HD grafiki 4600 (GT2)<br />— P4600 procesor Intel® HD grafiki (GT2)<br />— P4700 procesor Intel® HD grafiki (GT2)<br />— Procesor Intel® HD grafiki 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />— Grafika Pro procesor Intel® Iris™ 5200 (GT3e)|--(Użyj najnowsze sterowniki)|  
+|Intel®|4th Generation Intel® Core Processors (‘Haswell’)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(Użyj najnowsze sterowniki)|  
 |AMD®|Większość od serii 7000 HD™ AMD Radeon (AMD Radeon™ HD 7350 7670 z wyłączeniem)<br /><br /> Akceleratory AMD Radeon™ GPU, AMD FirePro™ GPU i procesora GPU FirePro AMD oferujący funkcje architektury grafiki Core dalej (GCN).<br /><br /> Seria E AMD® i serii AMD A Accelerated przetwarzania jednostki (APU) oferujący funkcje grafiki Core dalej (GCN) architektury ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14.7 RC3 lub nowszej|  
 |NVIDIA®|Najbardziej od 400 serii NVIDIA GeForce®.<br /><br /> Procesory GPU NVIDIA® GeForce®, procesory GPU NVIDIA Quadro® i procesor GPU Tesla™ NVIDIA® akceleratorów, oferujący funkcje Fermi™, Kepler™ lub Maxwell™ architektury.|343.37 lub nowszej|  
   
@@ -155,6 +150,3 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
 -   [Narzędzie użycie procesora GPU w programie Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [Użycie procesora GPU dla technologii DirectX w programie Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

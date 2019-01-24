@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie wielu komputerów tworzenia środowiska | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie wielu komputerów tworzenia środowiska | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,15 +11,15 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820697"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769078"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Wskazówki: tworzenie środowiska kompilacji na wielu komputerach
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowanie programu Visual Studio na komputerze-hoście, a następnie kopiowanie różnych plików i ustawień na inny komputer, aby uczestniczyć w kompilacji. Nie trzeba zainstalować program Visual Studio na innym komputerze.  
@@ -140,9 +135,9 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Skopiuj następujące pliki z komputera hosta do komputera kompilacji:  
   
@@ -294,8 +289,8 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
     |Vcvarsall.bat argument|Kompilator|Architektura komputera kompilacji.|Architektura obiektów wyjściowych kompilacji|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (ustawienie domyślne)|Natywne 32-bitowe|x86, x64|x86|  
-    |x86_amd64|x64 cross|x86, x64|X64|  
-    |amd64|x64 natywne|X64|X64|  
+    |x86_amd64|x64 Cross|x86, x64|X64|  
+    |amd64|x64 Native|X64|X64|  
   
      Jeśli vcvarsall.bat zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) części tego dokumentu .  
   
@@ -379,17 +374,17 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
          na  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
          Nazewnictwo opiera się na opierało.  
   
-    -   W % Depot % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets należy zmienić każde wystąpienie  
+    -   In %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets, change every instance of  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
          na  
   
-         AssemblyFile = "$(VCTargetsPath11) Microsoft.Build.CppTasks.Common.v110.dll".  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
   
 4.  Utwórz plik .props — na przykład, partner.autoimports.props — i umieść go w katalogu głównym folderu, który zawiera projekty. Ten plik jest używany do ustawiania zmiennych, które są używane przez program MSBuild do znajdowania poszczególnych zasobów. Jeśli zmienne nie są ustawiane przez ten plik, są one ustalane przez inne pliki .props i plików .targets, które opierają się na wartości rejestru. Ponieważ nie ustawiamy żadnych wartości rejestru, te zmienne będą puste, a kompilacja zakończy się niepowodzeniem. Zamiast tego Dodaj do Partner.AutoImports.props:  
   
@@ -431,6 +426,3 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
 ## <a name="see-also"></a>Zobacz też  
  [Przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
-
-
-

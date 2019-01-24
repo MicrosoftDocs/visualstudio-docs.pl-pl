@@ -1,26 +1,21 @@
 ---
 title: Znaczniki tekstu przy użyciu starszej wersji interfejsu API | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761493"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Znaczniki tekstu przy użyciu starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +31,12 @@ Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ 
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)|W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji do widoku tekstu.|  
-|[Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)|W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia.|  
-|[Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)|W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu.|  
-|[Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodawać znaczniki tekstu.|  
+|[Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)|W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji do widoku tekstu.|  
+|[Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)|W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia.|  
+|[Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)|W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu.|  
+|[Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodawać znaczniki tekstu.|  
 |[Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)|Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor.|  
-|[Funkcje edytora](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.|  
+|[Funkcje edytora](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.|  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ 
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Zapewnia dostęp do, a następnie dopasowuje pozycję znacznika tekstu w buforze tekstu za pomocą współrzędnych jednowymiarowa. Jeśli jest to możliwe, należy używać tego interfejsu.
-

@@ -2,7 +2,7 @@
 title: Konstruowanie ciągi filtrów dla projektanta tabel | Dokumentacja firmy Microsoft
 description: Konstruowanie ciągi filtrów dla projektanta tabel
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ff8c3dd927e81b9e131242a9a6631a8297046a6e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779721"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
@@ -35,7 +35,7 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 | lt |Mniejsze niż |Cena lt 20 |
 | le |Mniejsze niż lub równe |Cena le 100 |
 | ne |Nie równa się |Ne City "Londyn" |
-| and |i |Cena le 200 i cena gt 3.5 |
+| and |Oraz |Cena le 200 i cena gt 3.5 |
 | lub |Lub |Cena le 3.5 lub gt Cena 200 |
 | not |nie |nie isAvailable |
 

@@ -1,14 +1,9 @@
 ---
 title: W programie Visual Studio SDK | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49ec5ab372b5b7117dcab374c3420b1e76112825
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757100"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Ogólny widok architektury programu Visual Studio
  Visual Studio shell zapewnia podstawowe funkcje i obsługują cross komunikacji między jego rozszerzenia pakietów VSPackage i MEF składnika. Aby uzyskać więcej informacji, zobacz [programu Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).  
   
 ## <a name="user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika  
- Jeśli planujesz projektowania nowych funkcji programu Visual Studio, należy zapoznaj się z niniejszych wytycznych, aby uzyskać wskazówki dotyczące projektowania i użyteczność: [dotyczące środowiska użytkownika w usłudze Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Jeśli planowane jest projektowania nowych funkcji programu Visual Studio, powinno zająć się wskazówek, aby uzyskać wskazówki dotyczące projektowania i użyteczność: [Wskazówki dotyczące interfejsu użytkownika programu Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Polecenia  
  Polecenia są funkcje, które wykonywania zadań, takich jak drukowanie dokumentu, odświeżyć widok lub tworzenia nowego pliku.  
@@ -108,9 +103,9 @@ Ogólny widok architektury programu Visual Studio
  Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Właściwości i opcje  
- **Właściwości** oknie zostaną wyświetlone właściwości jednego lub wielu wybranych elementów: [rozszerzanie właściwości](../../extensibility/internals/extending-properties.md) strony opcje zawierają zestawy opcji, które odnoszą się do określonego składnika, takich jak Programowanie w języku lub przy użyciu pakietu VSPackage: [opcje i strony opcji](../../extensibility/internals/options-and-options-pages.md). Ustawienia są zwykle interfejsu użytkownika funkcjach, które mogą być importowane i wyeksportowane: [Obsługa ustawień użytkowników](../../extensibility/internals/support-for-user-settings.md).  
+ **Właściwości** oknie zostaną wyświetlone właściwości jednego lub wielu wybranych elementów: [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md) strony opcje zawierają zestawy opcji, które odnoszą się do określonego składnika, takiego jak język programowania lub pakietu VSPackage: [Opcje i strony opcji](../../extensibility/internals/options-and-options-pages.md). Ustawienia są zwykle interfejsu użytkownika funkcjach, które mogą być importowane i wyeksportowane: [Obsługa ustawień użytkowników](../../extensibility/internals/support-for-user-settings.md).  
   
-## <a name="visual-studio-services"></a>Usługi Visual Studio  
+## <a name="visual-studio-services"></a>Visual Studio Services  
  Usługa zawiera zbiór interfejsów składników z. Program Visual Studio udostępnia zestaw usług, które mogą być używane przez wszystkie składniki, włącznie z rozszerzeniami. Na przykład usługi Visual Studio umożliwiają okien narzędziowych, aby wyświetlony lub ukryty dynamicznie, Włącz dostęp do pomocy i pasek stanu, w tym także zdarzenia interfejsu użytkownika. Edytor programu Visual Studio udostępnia również usługi, które mogą być importowane przez rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [Using i dostarczanie usług](../../extensibility/using-and-providing-services.md).  
   
 ## <a name="debugger"></a>Debuger  
@@ -133,4 +128,3 @@ Ogólny widok architektury programu Visual Studio
   
 ## <a name="help-viewer"></a>Podgląd pomocy  
  Możesz zintegrować swoje własne Pomoc i F1 strony podglądu pomocy. Aby uzyskać więcej informacji, zobacz [zestaw SDK podglądu pomocy firmy Microsoft](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

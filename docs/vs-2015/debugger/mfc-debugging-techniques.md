@@ -1,14 +1,9 @@
 ---
 title: Techniki debugowania MFC | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950252347de78839e7d0db979179de3a0818857f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781355"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ Jeśli debugujesz program MFC te techniki debugowania mogą być przydatne.
   
   - [Tworzenie aplikacji MFC za pomocą informacji o debugowaniu dla wybranych modułów](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak —  
+##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  Biblioteka MFC zawiera specjalny [afxdebugbreak —](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) funkcja, przypadku kodować punktów przerwania w kodzie źródłowym:  
   
 ```  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tworzenie migawek pamięci  
   
-1. Tworzenie [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiektu, a następnie wywołać [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) funkcja elementu członkowskiego. Spowoduje to utworzenie pierwszego migawkę pamięci.  
+1. Tworzenie [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiektu, a następnie wywołać [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) funkcja elementu członkowskiego. Spowoduje to utworzenie pierwszego migawkę pamięci.  
   
 2. Po program wykonuje jego operacji alokacji i dezalokacji pamięci, należy utworzyć inny `CMemoryState` obiektu, a następnie wywołać `Checkpoint` dla tego obiektu. Pobiera to drugi migawki użycia pamięci.  
   
@@ -443,9 +438,9 @@ pMyPerson->Dump( afxDump );
   
    1.  W  **\<Projekt > strony właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager** przycisku.  
   
-   2.  W [programu Configuration Manager, okno dialogowe](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.  
+   2.  W [programu Configuration Manager, okno dialogowe](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.  
   
-   3.  W [nowa konfiguracja projektu, okno dialogowe](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.  
+   3.  W [nowa konfiguracja projektu, okno dialogowe](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.  
   
    4.  W **Skopiuj ustawienia z** wybierz **wersji**.  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie języka Visual C++](../debugger/debugging-native-code.md)
-
-
-

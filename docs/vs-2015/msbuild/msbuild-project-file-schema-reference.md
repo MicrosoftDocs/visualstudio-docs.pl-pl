@@ -1,14 +1,9 @@
 ---
 title: Odwołanie do schematu pliku projektu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772589"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +38,17 @@ Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
 |-------------|--------------------|----------------|  
 |[Choose, element (MSBuild)](../msbuild/choose-element-msbuild.md)|W przeciwnym razie<br /><br /> Kiedy|--|  
 |[Import, element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Projekt|  
-|[ImportGroup, element](../msbuild/importgroup-element.md)|{1&gt;Importuj&lt;1}|Warunek|  
+|[ImportGroup, element](../msbuild/importgroup-element.md)|Import|Warunek|  
 |[Item, element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Warunek<br /><br /> Wyklucz<br /><br /> Uwzględnij<br /><br /> Usuń|  
 |[ItemDefinitionGroup, element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Element*|Warunek|  
 |[ItemGroup, element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Element*|Warunek|  
 |[ItemMetadata, element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Element*|Warunek|  
 |[OnError, element (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|Warunek<br /><br /> ExecuteTargets|  
 |[Otherwise, element (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
-|[Output, element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> Nazwa elementu<br /><br /> PropertyName<br /><br /> TaskParameter|  
+|[Output, element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
 |[Parameter, element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> Zgodność<br /><br /> Wymagane|  
 |[ParameterGroup, element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
-|[Project, element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz<br /><br /> {1&gt;Importuj&lt;1}<br /><br /> ItemGroup<br /><br /> Projectextensions —<br /><br /> PropertyGroup<br /><br /> Docelowy<br /><br /> UsingTask|Defaulttargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
+|[Project, element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz<br /><br /> Import<br /><br /> ItemGroup<br /><br /> Projectextensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|Defaulttargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
 |[ProjectExtensions, element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property, element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Warunek|  
 |[PropertyGroup, element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Warunek|  
@@ -68,5 +63,3 @@ Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
  [Warunki](../msbuild/msbuild-conditions.md)   
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

@@ -1,12 +1,9 @@
 ---
 title: Generowanie kodu z diagramów klas UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802168"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
  Aby uzyskać więcej informacji dotyczących diagramów klas UML w programie Visual Studio zobacz następujące tematy:  
 
-- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)  
 
-- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)  
 
   Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramów klas UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -209,7 +206,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
 - `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>. Aby uzyskać więcej informacji, zobacz [modeli UML, integracja z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
 
-- `ProfileName` = "C #Profile"  
+- `ProfileName` = "C#Profile"  
 
 - `ServiceProvider`: <xref:System.IServiceProvider>  
 
@@ -240,9 +237,6 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 - `<#= Expressions #>` obliczone i przekonwertowane na ciągi.  
 
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)   
  [Generowanie plików na podstawie modelu UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

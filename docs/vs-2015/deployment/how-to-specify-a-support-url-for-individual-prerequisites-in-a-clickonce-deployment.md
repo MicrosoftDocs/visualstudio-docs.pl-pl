@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772741"
 ---
-# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Porady: określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
+# <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] do uruchomienia aplikacji. Obejmują one wymaganą minimalną wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], wersję systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.  
@@ -67,7 +62,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
   
     ```  
       <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
           <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
         </dependentAssembly>  
       </dependency>  
@@ -84,17 +79,14 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępn
     </compatibleFrameworks>  
     ```  
   
-7.  Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Należy użyć Mage.exe lub MageUI.exe SDK narzędzi do wykonywania tego zadania, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7.  Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Należy użyć Mage.exe lub MageUI.exe SDK narzędzi do wykonywania tego zadania, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
  Adres URL pomocy technicznej nie jest wyświetlana w oknie dialogowym, jeśli aplikacja jest oznaczony do uruchamiania w trybie częściowego zaufania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Mage.exe (manifestu narzędzie generowania i edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [Wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [\<compatibleFrameworks > Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)
-
-
-

@@ -1,21 +1,17 @@
 ---
 title: Sprawdź swoje środowisko Xamarin | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fa7495673b1c063c210a86734811a34af8855740
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767000"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdzanie środowiska Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +101,7 @@ Po ukończeniu ma instalatorów (zobacz [Instalator i instalacja](../cross-platf
   
         -   Sprawdź, czy konta Apple Id jest dodany w środowisku Xcode na komputerze Mac, zgodnie z opisem na [dodanie konta do środowiska Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Po dodaniu konta, upewnij się ponownie uruchomić Visual Studio i narzędziu Xcode.  
   
-             ![CrossPlat Xamarin Sprawdź 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Sprawdź 8")  
+             ![CrossPlat Xamarin Verify 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")  
   
         -   Sprawdź w aplikacjach dla systemów iOS właściwości projektu w narzędziu iOS pakietu kartę podpisywania, że pole niestandardowe uprawnienie jest pusta dla konfiguracji debugowania aktywnego.  Uwaga: należy tylko spróbować usuwania tego ustawienia, jeśli wystąpiły powyżej komunikat o błędzie.  
   
@@ -117,4 +113,3 @@ Po ukończeniu ma instalatorów (zobacz [Instalator i instalacja](../cross-platf
 2.  W Kreatorze instalacji Xamarin, która pojawia się kliknij **dalej** i następnie **zmiany**.  
   
 3.  Na liście opcjonalnych funkcji do zainstalowania rozwiń **Xamarin dla programu Visual Studio 2015**, wybierz **zostanie zainstalowana na lokalnym dysku**i kliknij przycisk **dalej** dodawania Funkcja.
-

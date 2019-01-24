@@ -1,27 +1,22 @@
 ---
 title: Widok modułów — dane rywalizacji o zasoby | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c98689007a9497a4186dc19086ec46588b0a842
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771043"
 ---
 # <a name="modules-view---contention-data"></a>Widok modułów — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Widok modułów danych rywalizacji o zasoby współbieżności dane są pogrupow
   
  W poniższej tabeli opisano wartości kolumn w widoku modułów danych rywalizacji o zasoby.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączny czas blokowania**|— Dla funkcji, czas, jaki ta funkcja została zablokowana z wykonywania kodu w treści funkcji. Czas blokowania w funkcjach, które zostały wywołane przez funkcję nie jest włączony.<br />— Dla modułu, sumę wyłączny czas blokowania funkcje w module.<br />— W przypadku wiersza lub instrukcję, czas, że wiersz lub został zablokowany wykonywania instrukcji.|  
 |**% Własnego czasu blokowania**|-Funkcji lub modułu procent wszystkich czas blokowania w profilowania, była wyłączny czas blokowania w tej funkcji lub modułu.<br />— W przypadku wiersza lub instrukcję, procent wszystkich czas blokowania podczas uruchomienia profilowania, w którym ten wiersz lub instrukcji zablokowano wykonywania.|  
@@ -51,12 +46,9 @@ Widok modułów danych rywalizacji o zasoby współbieżności dane są pogrupow
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok modułów](../profiling/modules-view.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)
-
-
-

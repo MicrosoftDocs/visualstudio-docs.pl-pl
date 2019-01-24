@@ -2,7 +2,7 @@
 title: Publikowanie dla deweloperów i środowisk testowych za pomocą skryptów programu Windows PowerShell | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak publikować do tworzenia i środowisk testowych za pomocą skryptów środowiska Windows PowerShell w programie Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 9d0142c52fbe40256fc0ab6ec0d5d9fdade243b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 63334168625e0f864206d5e2662ed9b58b7c3f1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761897"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -150,13 +150,13 @@ Jeśli masz witrynę internetową, która zawiera wiele środowisk wdrażania (n
 
 Jeśli nigdy nie uruchomiono skrypt programu Windows PowerShell przed, należy najpierw ustawić zasady wykonywania, aby umożliwić uruchamianie skryptów. Zasady jest to funkcja zabezpieczeń, aby uniemożliwić użytkownikom uruchamianie skryptów programu Windows PowerShell, jeśli są one podatne na przed złośliwym oprogramowaniem i wirusami, które obejmują wykonywania skryptów.
 
-### <a name="run-the-script"></a>Uruchom skrypt
+### <a name="run-the-script"></a>Uruchamianie skryptu
 
 1. Utwórz pakiet Web Deploy dla Twojego projektu. Pakiet Web Deploy jest skompresowane archiwum (plik zip), który zawiera pliki, które ma zostać skopiowany do witryny sieci Web lub maszyny wirtualnej. Pakiety programu Web Deploy w programie Visual Studio można utworzyć dla dowolnej aplikacji sieci web.
 
    ![Tworzenie sieci Web wdrażanie pakietu](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Aby uzyskać więcej informacji, zobacz [jak: utworzyć pakiet wdrożeniowy sieci Web w programie Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Możesz też zautomatyzować tworzenie pakietu Narzędzia Web Deploy, zgodnie z opisem w [dostosowywanie i rozszerzanie skryptów publikowania](#customizing-and-extending-publish-scripts).
+   Aby uzyskać więcej informacji, zobacz [jak: Utwórz pakiet wdrażania sieci Web w programie Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Możesz też zautomatyzować tworzenie pakietu Narzędzia Web Deploy, zgodnie z opisem w [dostosowywanie i rozszerzanie skryptów publikowania](#customizing-and-extending-publish-scripts).
 
 1. W **Eksploratora rozwiązań**, otwórz menu kontekstowe dla skryptu, a następnie wybierz **Otwórz za pomocą programu PowerShell ISE**.
 1. Jeśli uruchamianie skryptów programu Windows PowerShell na tym komputerze po raz pierwszy, Otwórz okno wiersza polecenia z uprawnieniami administratora i wpisz następujące polecenie:
@@ -320,7 +320,7 @@ Aby uzyskać pomoc dotyczącą funkcji, można użyć w wierszu polecenia progra
 | Add-AzureVMEndpoints |Dodaje nowy wejściowe punkty końcowe do maszyny wirtualnej i przywraca maszynę wirtualną przy użyciu nowego punktu końcowego. |
 | Add-AzureVMStorage |Tworzy nowe konto usługi Azure storage w bieżącej subskrypcji. Nazwa konta rozpoczyna się od "devtest", po której następuje unikatowy ciąg alfanumeryczny. Funkcja zwraca nazwę nowego konta magazynu. Określ lokalizację lub grupę koligacji dla nowego konta magazynu. |
 | Add-AzureWebsite |Tworzy witrynę sieci Web o określonej nazwie i lokalizacji. Ta funkcja wywołuje **New-AzureWebsite** funkcja w module platformy Azure. Jeśli subskrypcja nie zawiera jeszcze witryny sieci Web przy użyciu określonej nazwy, ta funkcja tworzy witryny sieci Web i zwraca obiekt witryny sieci Web. W przeciwnym razie zwraca `$null`. |
-| Kopia zapasowa subskrypcji |Zapisuje bieżąca subskrypcja platformy Azure w `$Script:originalSubscription` zmiennej w zakresie skryptu. Ta funkcja zapisuje bieżąca subskrypcja platformy Azure (uzyskanych przez `Get-AzureSubscription -Current`) i jego konta magazynu i subskrypcję, która zostanie zmieniony przez ten skrypt (przechowywany w zmiennej `$UserSpecifiedSubscription`) i jego konto magazynu, w zakresie skryptu. Po zapisaniu wartości, można użyć funkcji, takich jak `Restore-Subscription`, aby przywrócić oryginalny bieżącego konta subskrypcji i magazynu na bieżący stan, jeśli bieżący stan został zmieniony. |
+| Backup-Subscription |Zapisuje bieżąca subskrypcja platformy Azure w `$Script:originalSubscription` zmiennej w zakresie skryptu. Ta funkcja zapisuje bieżąca subskrypcja platformy Azure (uzyskanych przez `Get-AzureSubscription -Current`) i jego konta magazynu i subskrypcję, która zostanie zmieniony przez ten skrypt (przechowywany w zmiennej `$UserSpecifiedSubscription`) i jego konto magazynu, w zakresie skryptu. Po zapisaniu wartości, można użyć funkcji, takich jak `Restore-Subscription`, aby przywrócić oryginalny bieżącego konta subskrypcji i magazynu na bieżący stan, jeśli bieżący stan został zmieniony. |
 | Find-AzureVM |Pobiera określonej maszyny wirtualnej platformy Azure. |
 | Format-DevTestMessageWithTime |Dołącza datę i godzinę na komunikat. Ta funkcja jest przeznaczona dla komunikatów zapisanych strumieni błędów i pełne. |
 | Get-AzureSQLDatabaseConnectionString |Zbierane parametry połączenia, aby nawiązać połączenie z bazą danych Azure SQL database. |
@@ -335,8 +335,8 @@ Aby uzyskać pomoc dotyczącą funkcji, można użyć w wierszu polecenia progra
 | Test-AzureModuleVersion |Zwraca `$true` Jeśli wersja modułu platformy Azure jest 0.7.4 lub nowszej. Zwraca `$false` Jeśli moduł nie jest zainstalowany lub jest starsza wersja. Ta funkcja nie ma parametrów. |
 | Test-HttpsUrl |Konwertuje wejściowego adresu URL obiektu System.Uri. Zwraca `$True` Jeśli adres URL jest bezwzględny, a jego schemat jest typu https. Zwraca `$false` adres URL jest względny, jego schematu nie protokołu HTTPS, czy ciąg wejściowy nie można przekonwertować na adres URL. |
 | Test-Member |Zwraca `$true` Jeśli właściwość lub metoda jest elementem członkowskim obiektu. W przeciwnym razie zwraca `$false`. |
-| ErrorWithTime zapisu |Zapisuje komunikat o błędzie prefiksem bieżący czas. Wywołuje tę funkcję, **Format DevTestMessageWithTime** funkcji dołączana czas przed zapisaniem komunikat strumienia błędów. |
-| HostWithTime zapisu |Zapisuje komunikat do hosta program (**Write-Host**) poprzedzony znakiem bieżący czas. Różni się efekt zapisywania program hosta. Większość programów hostujących środowiska Windows PowerShell zapisać te komunikaty do wyjścia standardowego. |
+| Write-ErrorWithTime |Zapisuje komunikat o błędzie prefiksem bieżący czas. Wywołuje tę funkcję, **Format DevTestMessageWithTime** funkcji dołączana czas przed zapisaniem komunikat strumienia błędów. |
+| Write-HostWithTime |Zapisuje komunikat do hosta program (**Write-Host**) poprzedzony znakiem bieżący czas. Różni się efekt zapisywania program hosta. Większość programów hostujących środowiska Windows PowerShell zapisać te komunikaty do wyjścia standardowego. |
 | Write-VerboseWithTime |Zapisuje komunikat trybu informacji pełnej, prefiks z bieżącym czasem. Ponieważ wywołuje **Write-Verbose**, komunikat jest wyświetlany tylko wtedy, gdy skrypt jest uruchamiany z **pełne** parametr lub jeśli **VerbosePreference** preferencji jest ustawiona na  **Kontynuuj**. |
 
 **Publish-WebApplication**

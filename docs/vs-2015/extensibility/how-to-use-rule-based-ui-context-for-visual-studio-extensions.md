@@ -1,22 +1,18 @@
 ---
-title: 'Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Używać kontekstu Interfejsu opartego na regułach dla rozszerzeń | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: 431f9b53fd9b678e16e7fddeeb997ddfcfea6f11
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759798"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: Używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dobrze znanych <xref:Microsoft.VisualStudio.Shell.UIContext>s zostaną aktywowane. Jednak tych kontekstach interfejsu użytkownika nie są bardzo wysokiej jakości szczegółowej, pozostawiając twórcy rozszerzeń Brak wyboru, ale do wyboru dostępne kontekstu interfejsu użytkownika, który aktywuje przed punktem chcieli naprawdę pakietu VSPackage do załadowania. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
@@ -47,7 +43,7 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    W przypadku atrybutów, Dodaj następujący kod: (szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)
+    W przypadku atrybutów Dodaj następujący fragment kodu: (Szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]

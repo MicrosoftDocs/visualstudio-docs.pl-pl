@@ -1,33 +1,28 @@
 ---
 title: Widoki jedną i wieloma kartami | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748995"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758072"
 ---
 # <a name="single-and-multi-tab-views"></a>Widoki z jedną i wieloma kartami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Edytor można tworzyć różne typy widoków. Przykładem jest oknem edytora kodu, jest inny Projektant formularzy.  
   
- Widok z wieloma kartami jest widok, który ma wiele kart. Na przykład, edytor HTML obsługuje dwie karty u dołu: **projektowania** i **źródła**, każdy widok logiczny. Widok projektu wyświetla renderowanej strony sieci web, podczas gdy druga Wyświetla zawartość HTML, która obejmuje strony sieci web.  
+ Widok z wieloma kartami jest widok, który ma wiele kart. Na przykład edytora HTML zawiera dwie karty u dołu: **Projekt** i **źródła**, każdy widok logiczny. Widok projektu wyświetla renderowanej strony sieci web, podczas gdy druga Wyświetla zawartość HTML, która obejmuje strony sieci web.  
   
 ## <a name="accessing-physical-views"></a>Uzyskiwanie dostępu do widoków fizycznych  
  Widoki fizyczne dokumentu widoku obiekty hostów, każdy reprezentuje widok danych w buforze, takie jak kod lub formularz. W związku z tym każdy obiekt widoku dokumentu ma widoku fizycznego (identyfikowanych na podstawie czegoś znanego jako ciąg widoku fizycznego), a pojedynczy widok logiczny.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md)   
- [Porady: dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Instrukcje: Dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)   
  [Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)
-

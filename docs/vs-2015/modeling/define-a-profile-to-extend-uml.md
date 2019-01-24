@@ -1,12 +1,9 @@
 ---
 title: Definiowanie profilu w celu rozszerzenia UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770762"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
   
 5. Na **zasoby** strony, Dodaj wiersz opisu profilu:  
   
-   -   Kliknij przycisk **nowe**. Ustaw pola w **Dodaj nowy zasób** okno dialogowe w następujący sposób.  
+   -   Kliknij przycisk **Nowy**. Ustaw pola w **Dodaj nowy zasób** okno dialogowe w następujący sposób.  
   
    -   Ustaw **typu** do `Microsoft.VisualStudio.UmlProfile`  
   
@@ -223,7 +220,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
 7.  Tworzenie rozszerzenia programu Visual Studio, przez kompilację projektu rozszerzeń lub kompresowanie wszystkich plików zgodnie z opisem w poprzedniej sekcji.  
   
 ##  <a name="Schema"></a> Struktura profilu  
- Plik XSD dla profilów UML można znaleźć w następującym przykładzie: [ustawienie stereotypów i profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Aby edytować pliki profilu, zainstaluj `.xsd` w pliku:  
+ Plik XSD dla profilów UML można znaleźć w następującym przykładzie: [Ustawienie stereotypów i profili XSD](http://go.microsoft.com/fwlink/?LinkID=213811). Aby edytować pliki profilu, zainstaluj `.xsd` w pliku:  
   
  **%ProgramFiles%\Microsoft visual Studio [wersja] \Xml\Schemas**  
   
@@ -345,7 +342,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
  Moje Stereotypy nie pojawiają się moich modelach UML.  
  Musisz wybrać profil w paczce lub modelu. Stereotypy pojawią się na elementach wewnątrz pakietu lub modelu. Aby uzyskać więcej informacji, zobacz [elementów modelu UML Stereotypy Dodaj](../modeling/add-stereotypes-to-uml-model-elements.md).  
   
- Podczas otwierania modelu UML pojawia się następujący błąd: **VS1707: nie można załadować następujące profile, ponieważ wystąpił błąd serializacji: MyProfile.profile**  
+ Jest wyświetlany następujący błąd podczas otwierania modelu UML: **VS1707: Nie można załadować następujące profile, ponieważ wystąpił błąd serializacji: MyProfile.profile**  
  1.  Sprawdź poprawność podstawowego podstawową składnia XML.  
   
 2. Upewnij się, że każda nazwa Moniker jest w postaci/ProfileName/nodename. Nazwa_profilu jest wartością atrybutu nazwy w węźle głównym profilu. Nazwa węzła jest wartością atrybutu nazwy Metaklasa, externalType lub enumerationType.  
@@ -358,7 +355,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
   
 5. Rekonstruowanie pliku VSIX, a następnie otwórz go w Eksploratorze Windows, aby zainstalować go ponownie. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-   Rozszerzenie nie pojawia się w Menedżerze rozszerzeń, ale podczas próby zainstalowania go ponownie, zostanie wyświetlony następujący komunikat: **rozszerzenie jest już zainstalowany na wszystkich dających się zastosować produktów.**  
+   Rozszerzenie nie pojawia się w Menedżerze rozszerzeń, ale podczas próby zainstalowania go ponownie, zostanie wyświetlony następujący komunikat: **Rozszerzenie jest już zainstalowana na wszystkich dających się zastosować produktów.**  
    1.  Usuń rozszerzenie pliku z podfolderu *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [wersja]  
   
    -   Aby wyświetlić *LocalAppData*, należy ustawić ukryte pliki i foldery, które znajdują się w zakładce widok Opcje folderów w Eksploratorze Windows.  
@@ -371,8 +368,5 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
  [Dodawanie stereotypów do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Standardowe stereotypy dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md)   
- [Próbka: Kolor elementów do UML przez stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Próbki: Stereotypy ustawienia, profile XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [Przykład: Kolor elementów UML przez stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Przykład: Stereotypy ustawienia, profile XSD](http://go.microsoft.com/fwlink/?LinkID=213811)

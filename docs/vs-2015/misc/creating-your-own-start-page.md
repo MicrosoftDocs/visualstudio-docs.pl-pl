@@ -1,27 +1,22 @@
 ---
 title: Tworzenie własnych strony początkowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761550"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
 Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
@@ -36,7 +31,7 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
 1.  Pobierz i zainstaluj [szablonu projektu strona startowa](http://go.microsoft.com/fwlink/?LinkId=186204) z galerii Visual Studio.  
   
     > [!WARNING]
-    >  W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [porady: uaktualnienie programu Visual Studio niestandardowe strony początkowej](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    >  W tej chwili nie został uaktualniony szablon projektu Visual Studio 2010 strony początkowej. Aby uzyskać informacje o sposobie uaktualniania tego szablonu, zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2.  Po zainstalowaniu szablonu, należy utworzyć nowy projekt strony start z nim.  
   
@@ -106,4 +101,4 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Przewodnik: Dodawanie niestandardowych XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

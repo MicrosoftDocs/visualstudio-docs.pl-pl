@@ -1,28 +1,24 @@
 ---
-title: Edytor kolorów VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: VSIX Color Editor | Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ac81f039bf5357f9488aeba439c27814cdf7e3d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1a4f38224c31862f44e7d1d09578325ccc710bd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805545"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio. Narzędzie można również wygenerować klucze zasobu motywu, czemu kolory, można użyć w kodzie. To narzędzie jest przydatne do tworzenia rozszerzenia programu Visual Studio, który obsługuje motywów kolorów. To narzędzie może otwierać pliki .pkgdef i XML. Visual Studio motywy (.vstheme plików) może służyć za pomocą rozszerzenia kolor Edytor programu Visual Studio, zmieniając rozszerzenie pliku .xml. Ponadto pliki .vstheme można importować do bieżącego pliku .xml.  
   
- ![Główny Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "Hero Edytor kolorów VSIX")  
+ ![VSIX Color Editor Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX Color Editor Hero")  
   
  **Pliki definicji pakietów**  
   
@@ -32,13 +28,13 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
  Token kolor składa się z czterech elementów:  
   
--   **Nazwa kategorii:** logiczne grupowanie zestaw kolorów. Użyj istniejącej nazwy kategorii, jeśli istnieją już kolorów, które są specyficzne dla żądanego elementu interfejsu użytkownika lub grupy elementów interfejsu użytkownika.  
+-   **Nazwa kategorii:** Logiczne grupowanie zestaw kolorów. Użyj istniejącej nazwy kategorii, jeśli istnieją już kolorów, które są specyficzne dla żądanego elementu interfejsu użytkownika lub grupy elementów interfejsu użytkownika.  
   
--   **Nazwa tokenu:** opisową nazwę koloru token i token zestawów. Zestawy obejmują tła i pierwszego planu (tekst) token nazwy, a także ich stanów, a te powinny mieć nazwę, tak, aby łatwo identyfikować ich pary i stanów, które odnoszą się do.  
+-   **Nazwa tokenu:** Określa nazwę opisową dla koloru, tokenów i tokenów. Zestawy obejmują tła i pierwszego planu (tekst) token nazwy, a także ich stanów, a te powinny mieć nazwę, tak, aby łatwo identyfikować ich pary i stanów, które odnoszą się do.  
   
--   **Kolor wartości (lub odcieni):** wymagane dla każdego kolor motywu. Zawsze twórz tekstu i tła kolorów w parach. Kolory są skojarzone dla tła/pierwszego planu, dzięki czemu kolor tekstu jest zawsze czytelny względem koloru tła, na którym jest rysowana. Te kolory są powiązane i będą używane razem w interfejsie użytkownika. Jeśli w tle nie jest przeznaczony do użytku z tekstem, nie definiują kolor pierwszego planu.  
+-   **Wartości kolorów (lub odcieni):** Wymagane dla każdego kolor motywu. Zawsze twórz tekstu i tła kolorów w parach. Kolory są skojarzone dla tła/pierwszego planu, dzięki czemu kolor tekstu jest zawsze czytelny względem koloru tła, na którym jest rysowana. Te kolory są powiązane i będą używane razem w interfejsie użytkownika. Jeśli w tle nie jest przeznaczony do użytku z tekstem, nie definiują kolor pierwszego planu.  
   
--   **Nazwa koloru systemu:** do użytku w wyświetlaniu o wysokim kontraście.  
+-   **Nazwa koloru systemu:** Do użytku w wyświetlaniu o wysokim kontraście.  
   
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  Jak to możliwe, i ile to możliwe, istniejących kolorów programu Visual Studio należy ponownie użyć zamiast deklarowania nowych. Jednak w przypadkach, gdzie są zdefiniowane nie odpowiednie kolory, kolory niestandardowe powinny być tworzone zapewnienie rozszerzenia motywów zgodne.  
@@ -57,7 +53,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
 5. Przetestuj zmiany w programie Visual Studio.  
   
-   **Krok 1: Określanie kategorii i token nazwy nowych tokenów kolorów.**  
+   **Krok 1: Określ nazwy kategorii i tokenu dla nowych tokenów kolorów.**  
   
    Preferowany nazewnictwa schemat jest VSColor **[Category] [typ interfejsu użytkownika] [Stan]**. Nie należy używać słowa "color" w nazwach VSColor, ponieważ jest nadmiarowy.  
   
@@ -119,7 +115,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
   Wartości kolorów są wyświetlane w pary tła/pierwszego planu, za pomocą "None" wskazujący, że nie został zdefiniowany kolor. Uwaga: Jeśli kolor, który nie ma pary kolor tła/kolor tekstu, tylko tła musi być zdefiniowany.  
   
-  ![Wartości kolorów Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "wartości kolorów Edytor kolorów VSIX")  
+  ![VSIX Color Editor Color Values](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX Color Editor Color Values")  
   
   Aby edytować token kolorów, wybierz pozycję kolor motywu (kolumna) tego tokenu. Dodaj wartość koloru, wpisując wartość szesnastkowy koloru w formacie ARGB 8-cyfrowy, wprowadzając nazwę kolorów systemowych w komórce, lub przy użyciu menu rozwijanego, aby wybrać żądany kolor przy użyciu zestawu suwaków lub Podaj listę kolorów systemowych.  
   
@@ -129,7 +125,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
   Dla składników, które nie są do wyświetlania tekstu, wprowadź wartość tylko jeden kolor: kolor tła. W przeciwnym razie wprowadź wartości koloru tekstu i tła, oddzielone ukośnikiem.  
   
-  Podczas wprowadzania wartości wysokiego kontrastu, wprowadź prawidłowe nazwy kolorów systemu Windows. Nie należy wprowadzać wartości ARGB zapisane na stałe. Możesz wyświetlić listę nazw kolorów systemu prawidłowe, wybierając pozycję "Tło: System" lub "pierwszy plan:" z menu rozwijanego wartości kolorów. Podczas tworzenia elementów, które mają składników dopisków fonetycznych, parę kolorów systemu poprawne tła/tekstu lub tekst może być niemożliwe.  
+  Podczas wprowadzania wartości wysokiego kontrastu, wprowadź prawidłowe nazwy kolorów systemu Windows. Nie należy wprowadzać wartości ARGB zapisane na stałe. Można wyświetlić listę nazw kolorów systemu prawidłowe, wybierając pozycję "tła: System"lub" pierwszego planu: System"z menu rozwijanego wartości kolorów. Podczas tworzenia elementów, które mają składników dopisków fonetycznych, parę kolorów systemu poprawne tła/tekstu lub tekst może być niemożliwe.  
   
   Po zakończeniu tworzenia, ustawienia i edytowanie tokenów kolorów, należy je zapisać w żądanej .xml lub w formacie .pkgdef. Kolor tokenów ani na tle ani zestawu pierwszego planu będzie zapisana jako pusty kolorów w formacie XML, ale odrzucone w formacie .pkgdef. Okno dialogowe wyświetli ostrzeżenie o możliwej utracie kolor przy próbie Zapisz kolory pusty plik .pkgdef.  
   
@@ -183,7 +179,7 @@ namespace MyCustomColors
 </UserControl>  
 ```  
   
- **Krok 5: Testowanie zmian w programie Visual Studio.**  
+ **Krok 5: Przetestuj zmiany w programie Visual Studio.**  
   
  Edytor kolorów tymczasowo zastosować kolor tokenów do wystąpienia programu Visual Studio, aby wyświetlić zmiany na żywo do kolorów bez odbudowywania pakietu rozszerzenia. Aby to zrobić, kliknij przycisk "Zastosuj ten motyw do uruchomionego z okna programu Visual Studio", znajduje się w nagłówku każdej kolumny motywu. Ten tymczasowy motyw znikną po zamknięciu Edytor kolorów VSIX.  
   
@@ -297,4 +293,3 @@ namespace MyNamespace
   <Color x:Key="{x:Static colors:MyColors.ColorName4TextColorKey}" A="255" R="255" G="255" B="255" />  
 </ResourceDictionary>  
 ```
-

@@ -1,25 +1,20 @@
 ---
 title: Zestaw reguł Native Minimum Rules | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ca97fa7d4e3b78077e50a2039647afd5c380ebd3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 823a09275f71c69aef10ed7866ec863883dbe66f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768255"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Zestaw reguł Native Minimum Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                       [C6504](../code-quality/c6504.md)                        |                                              Wartość null na nie będącego wskaźnikiem                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck dla typu Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Rozmiar buforu dla elementu nie będącego wskaźnikiem lub tablicy                                      |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Wartość null niezgodności w Wyłuskania Zero                                       |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Wartość null niezgodności w Wyłuskania Zero                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Dostęp do zapisu dla stałej                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Użyto Return w warunku wstępnym                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Zakończenie wartością null dla nie będącego wskaźnikiem                                         |
@@ -76,13 +71,13 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                       [C6516](../code-quality/c6516.md)                        |                                          Brak właściwości dla atrybutu                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Nieprawidłowy rozmiar dla bufora bez możliwości odczytu                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Rozmiar obszaru do zapisu dla bufora bez możliwości zapisu                                      |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Nieprawidłowa adnotacja: wartość właściwości "NeedsRelease" musi być tak lub nie                   |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Nieprawidłowy rozmiar ciągu Wyłuskania                                        |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Nieprawidłowa adnotacja: wartość właściwości "NeedsRelease" musi być tak lub nie                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Nieprawidłowy rozmiar ciągu Wyłuskania                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Nieprawidłowy typ ciągu rozmiaru                                            |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Nieprawidłowy rozmiar parametru ciągu                                         |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Nieprawidłowy rozmiar parametru ciągu                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Nieosiągalna lokalizacja ciągu nieprawidłowy rozmiar                                    |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Nieprawidłowy typ ciągu rozmiaru buforu                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Nieprawidłowa adnotacja: właściwość "NeedsRelease" nie może być używana dla wartości typu void               |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Nieprawidłowy typ ciągu rozmiaru buforu                                        |
+|                       [C6527](../code-quality/c6527.md)                        |              Nieprawidłowa adnotacja: Właściwość "NeedsRelease" nie może być używana dla wartości typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nierozpoznany styl ciągu formatu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Nieprawidłowa specyfikacja rozmiaru: nie można przeanalizować wyrażenia                              |
@@ -142,7 +137,7 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                      [C28254](../code-quality/c28254.md)                       |                               (dynamic_cast <>) nie jest obsługiwane w adnotacjach                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Znaleziono błąd składni w adnotacji w funkcji dla adnotacji                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Znaleziono błąd składni w warunkowej adnotacji dla wewnętrznych adnotacji                 |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Wynikowe wartości listy muszą być stałymi.                                     |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Wynikowe wartości listy muszą być stałymi.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Znaleziono błąd składni w adnotacjach adnotacji w funkcji.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Adnotacja dla funkcji, parametr podczas badania jest niespójny z deklaracją funkcji      |
 |                      [C28273](../code-quality/c28273.md)                       |                    W przypadku funkcji są niespójne z deklaracją funkcji                     |
@@ -154,7 +149,7 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                      [C28286](../code-quality/c28286.md)                       |                                    Dla funkcji, błąd składni w pobliżu końca                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Dla funkcji, błąd składni w \_na\_adnotacji () (Nierozpoznana nazwa parametru)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Dla funkcji, błąd składni w \_na\_adnotacji () (Nieprawidłowa nazwa parametru)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Dla funkcji: elementy ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru                |
+|                      [C28289](../code-quality/c28289.md)                       |                Dla funkcji: Elementy ReadableTo lub WritableTo nie miał elementu limit-spec jako parametru                |
 |                      [C28290](../code-quality/c28290.md)                       |           Adnotacja dla funkcji zawierających więcej obiektów zewnętrznych niż rzeczywista liczba parametrów            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull na poziomie deref 0 jest bez znaczenia dla funkcji.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Argumenty operacji wyrażenia o niezgodnych typach dla operatora                             |
@@ -165,4 +160,3 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                      [C28305](../code-quality/c28305.md)                       |                                Wykryto błąd podczas analizowania tokenu.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  Adnotacja opisuje sytuację, która nie jest warunkowo stosowana.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         Adnotacja zawiera opis, gdy wartość dynamiczna (zmienna) nie można użyć w warunku.          |
-

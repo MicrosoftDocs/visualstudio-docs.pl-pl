@@ -1,14 +1,9 @@
 ---
 title: Okno dialogowe Opcje komunikatów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Spy++
 - Spy++, message options
@@ -16,13 +11,13 @@ ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 240886ba79f1439a31c5c42828b5d9e616ea78e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b5aaf79478ba84d87d3dc6d7868bdb13ee0168f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773365"
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ Umożliwia to okno dialogowe Wybierz wiadomości, które są wymienione w [widok
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.
-
-
-

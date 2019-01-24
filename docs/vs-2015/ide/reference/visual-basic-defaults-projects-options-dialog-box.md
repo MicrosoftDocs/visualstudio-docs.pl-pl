@@ -1,14 +1,9 @@
 ---
 title: Ustawienia domyślne języka Visual Basic, projekty, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VBDefaults
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4c8a1b593333c8b560a828bb0edc5fa7f0628b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a74a045e5e0eac35c183dcb81ea611c9e6363e18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755189"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Domyślne ustawienia programu Visual Basic, Projekty, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Określa wartości domyślne dla opcji projektu języka Visual Basic. Po utworze
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązania i projekty](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

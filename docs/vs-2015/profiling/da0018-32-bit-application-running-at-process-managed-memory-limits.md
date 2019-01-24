@@ -1,14 +1,9 @@
 ---
-title: 'DA0018: aplikacja 32-bitowa działa w procesie granicach pamięci zarządzanej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'DA0018: Aplikacja 32-bitowa działa w procesie granicach pamięci zarządzanej | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,18 +12,18 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773290"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplikacja 32-bitowa działająca w limitach pamięci zarządzanych przez proces
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplikacja 32-bitowa działa w procesie granicach pamięci zarządzanej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0018 |  
+Rule Id|DA0018|  
 | Kategoria | Profilowanie użycia narzędzia |  
 | Metoda profilowania | Próbkowanie |  
 | Komunikat | Zarządzane alokacji pamięci, zbliża się limit domyślny dla procesu 32-bitowych. Aplikacja może być powiązane z pamięci. |  
@@ -74,6 +69,3 @@ Identyfikator reguły | DA0018 |
   Aby uzyskać architektury zwolnienia z ograniczenia pamięci wirtualnej na podstawie rozmiaru części prywatnej przestrzeni adresowej procesu, spróbuj uruchomienie tego procesu 32-bitowego na komputerze 64-bitowym.  32-bitowy proces na komputerze 64-bitowym, mogą uzyskiwać maksymalnie 4 GB pamięci wirtualnej prywatny.  
   
   64-bitowych proces uruchomiony na komputerze 64-bitowym, mogą uzyskiwać do 8 TB pamięci wirtualnej. Należy rozważyć ponowne kompilowanie aplikacji ma działać jako natywnych aplikacji 64-bitowych. Ta reguła jest wyłącznie w celach informacyjnych i może nie wymagać działań korygujących.
-
-
-

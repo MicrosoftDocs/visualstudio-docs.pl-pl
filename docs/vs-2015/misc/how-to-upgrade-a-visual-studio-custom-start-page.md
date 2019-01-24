@@ -1,22 +1,18 @@
 ---
 title: 'Instrukcje: Uaktualnij niestandardową stronę początkową | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: 59756adb803c054dbee3a425a9230346aa3a8325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8afcf73c827976f01bbc71abf5eaddb4713c47a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764878"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Instrukcje: Uaktualnienie programu Visual Studio niestandardową stronę początkową
 Można uaktualnić program Visual Studio 2010 lub Visual Studio 2012 niestandardowe początek strony Visual Studio 2015 wykonując kroki wymienione poniżej.

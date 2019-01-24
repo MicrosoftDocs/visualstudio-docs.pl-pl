@@ -1,11 +1,8 @@
 ---
-title: 'Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, console applications
@@ -15,15 +12,15 @@ ms.assetid: 9f7be7fa-551f-42c6-a9bb-f5ae8ab83625
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e467e4a574263eaa35640bc99f99c1f599a74df9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d42c6159cdfadf84edd2c02205dea0b102b134a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799675"
 ---
-# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
+# <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Instrukcje: Tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-console-application"></a>Do tworzenia aplikacji konsolowej sekwencyjnego przepływu pracy  
@@ -57,4 +54,4 @@ Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Tworzenie przepływów pracy](http://msdn.microsoft.com/en-us/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Tworzenie przepływów pracy](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

@@ -1,22 +1,20 @@
 ---
 title: Instalowanie programu SQL Server przykładowych baz danych | Dokumentacja firmy Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 38840167-c3f8-4cb3-8d15-8af04a0a20a1
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765641"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalowanie programu SQL Server przykładowych baz danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +64,3 @@ Przykładowe bazy danych są przydatne do eksperymentowania z zapytań SQL i LIN
 2.  W programie SSMS **Eksplorator obiektów** okna, kliknij prawym przyciskiem myszy **baz danych** węzeł**Restore Database**i podać lokalizację pliku bak.  
   
      ![Przywracanie bazy danych programu SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata Przywracanie bazy danych programu SSMS")
-

@@ -1,27 +1,22 @@
 ---
-title: 'Porady: Wybieranie schematów XML do użycia | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wybieranie schematów XML do użycia | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771221"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Porady: Wybieranie schematów XML do użycia
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -80,9 +75,6 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
     >  Jeśli nadal masz odwołanie do schematu za pomocą `schemaLocation` atrybutu lub pasujący obiekt typu `targetNamespace` następnie **Usuń** nie będzie działać w tej sytuacji ze względu na skojarzenie automatyczne. W takim przypadku zalecane jest, oznaczeniu schematu jako **nie używaj wybranych schematów** w **użyj** kolumny.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)   
+ [Schema Cache](../xml-tools/schema-cache.md)   
  [Okno dialogowe schematy XML](../xml-tools/xml-schemas-dialog-box.md)   
  [Edytor XML](../xml-tools/xml-editor.md)
-
-
-

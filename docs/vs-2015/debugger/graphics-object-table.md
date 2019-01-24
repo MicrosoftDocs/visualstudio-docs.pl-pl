@@ -1,14 +1,9 @@
 ---
 title: Tabela obiektów graficznych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
@@ -17,13 +12,13 @@ ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51809093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801267"
 ---
 # <a name="graphics-object-table"></a>Tabela obiektów graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,6 +113,3 @@ Tabela obiektów graficznych w analizy grafiki w usłudze Visual Studio pomaga z
 ## <a name="see-also"></a>Zobacz też  
  [Diagnostyka grafiki (debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
  [Przewodnik: Brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-

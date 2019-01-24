@@ -1,14 +1,9 @@
 ---
-title: Funkcja SccDirQueryInfo | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: SccDirQueryInfo Function | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDirQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f2df4dd52ff9984059eb28f21edf49b9db741358
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b86ac7c701f96d467f0c059fc7e4b732699b1da5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758999"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ LPLONG  lpStatus
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [Kod stanu katalogu](../extensibility/directory-status-code-enumerator.md)
-

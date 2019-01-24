@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Wyświetlanie, dopasowywanie nawiasów klamrowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745885"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795535"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Przewodnik: wyświetlanie parowanych nawiasów klamrowych
+# <a name="walkthrough-displaying-matching-braces"></a>Przewodnik: Wyświetlanie parowanych nawiasów klamrowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz zaimplementować opartych na języku funkcje, takie jak parowanie nawiasów klamrowych przez definiowanie nawiasy klamrowe, które chcesz dopasować, a następnie dodanie tagu znacznika tekstu do pasujące nawiasy klamrowe, gdy karetka znajduje się na jednym z nawiasami klamrowymi. Można zdefiniować nawiasy klamrowe w kontekście języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i zastosować znaczniki do właśnie tego typu lub można zastosować znaczniki do istniejącego typu zawartości (na przykład "text"). Następujące instruktaż przedstawia sposób zastosowania parowanie nawiasów klamrowych tagów, aby typ zawartości "text".  
@@ -130,5 +125,4 @@ Możesz zaimplementować opartych na języku funkcje, takie jak parowanie nawias
 4.  Po umieszczeniu karetki przed otwierający nawias klamrowy, powinien być wyróżniony tego nawiasów i zamknij nawiasów. Gdy umieścisz kursor zaraz po Zamknij nawias klamrowy, powinien być wyróżniony tego nawiasów i otwierający nawias klamrowy dopasowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

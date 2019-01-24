@@ -1,14 +1,9 @@
 ---
 title: Projekty i rozwiązania, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,13 +11,13 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758204"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,17 +26,17 @@ ms.locfileid: "49246197"
 Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa domyślne zachowanie **dane wyjściowe** oknie **listy zadań**, i **Eksploratora rozwiązań** jako projekty są opracowane i wbudowane. Aby otworzyć to okno dialogowe, kliknij przycisk **narzędzia / Opcje** rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
   
 > [!NOTE]
->  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólne ustawienia projektowe** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Dostępne opcje w oknach dialogowych i nazwy i lokalizacje poleceń menu, który zostanie wyświetlony, mogą różnić się od opisanych w pomocy, w zależności od ustawień aktywnych lub wersji. Ta strona pomocy został napisany z **ogólne ustawienia projektowe** na uwadze. Aby wyświetlić lub zmienić ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ustawienia  
  **Lokalizacja projektów**  
  Ustawia domyślną lokalizację, w którym są tworzone nowe projekty i rozwiązania folderów i katalogi. Kilka okien dialogowych również użyć lokalizacji zestawu w przypadku tej opcji dla folderu punktów początkowych. Na przykład okno dialogowe Otwórz projekt korzysta z tej lokalizacji dla skrótu Moje projekty.  
   
  **Lokalizacja szablonów projektów użytkownika**  
- Ustawia domyślną lokalizację, która jest używana przez **nowy projekt** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Znajdź i organizowania szablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Ustawia domyślną lokalizację, która jest używana przez **nowy projekt** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Lokalizacja szablonów elementów użytkownika**  
- Ustawia domyślną lokalizację, która jest używana przez **Dodaj nowy element** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Znajdź i organizowania szablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Ustawia domyślną lokalizację, która jest używana przez **Dodaj nowy element** okno dialogowe, aby utworzyć listę **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Zawsze pokazuj lista błędów Jeżeli kompilacja zakończy się z błędami**  
  Otwiera **lista błędów** okna po zakończeniu kompilacji, tylko wtedy, gdy nie można skompilować projektu. Błędy występujące podczas procesu kompilacji są wyświetlane. Gdy ta opcja jest wyczyszczone, nadal występują błędy, ale nie można otworzyć okna po zakończeniu kompilacji. Ta opcja jest domyślnie włączona.  
@@ -64,13 +59,10 @@ Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fo
  Jeśli spróbujesz utworzyć nowy projekt lub Otwórz istniejący projekt w lokalizacji, która nie jest w pełni zaufany (na przykład na ścieżkę UNC lub ścieżki HTTP), zostanie wyświetlony komunikat. Użyj tej opcji, aby określić, czy komunikat jest wyświetlany za każdym razem, spróbuj utworzyć lub otworzyć projekt w lokalizacji, która nie jest w pełni zaufany.  
   
  **Pokaż okno dane wyjściowe, gdy rozpoczyna się kompilacja**  
- Automatycznie wyświetla okno danych wyjściowych w środowisku IDE na początku rozwiązania kompilacji. Aby uzyskać więcej informacji, zobacz [porady: kontrolowanie okna danych wyjściowych](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.  
+ Automatycznie wyświetla okno danych wyjściowych w środowisku IDE na początku rozwiązania kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Kontrolowanie okna danych wyjściowych](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Ta opcja jest domyślnie włączona.  
   
  **Monituj o symboliczną zmianę nazwy podczas zmieniania nazw plików**  
  Po wybraniu wyświetla komunikat dialogowe z pytaniem, czy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] również należy zmienić wszystkie odwołania w projekcie do elementu kodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

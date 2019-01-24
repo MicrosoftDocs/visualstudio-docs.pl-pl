@@ -1,12 +1,9 @@
 ---
 title: Właściwości operacji w UML, diagramy klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790517"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Właściwości operacji w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
 ## <a name="signature-of-an-operation"></a>Podpis operacji  
  Podpis operacji jest wiersza tekstu, który reprezentuje go w klasę lub interfejs na diagramie klas UML. Ma następującą postać:  
 
- \+ OperationName (parameter1: Type1 [*],...): ReturnType [\*]  
+ \+ OperationName (parameter1: Type1 [*]...) : ReturnType [\*]  
 
  \+ Wskazuje, że publiczne widoczności. Dozwolone wartości to - (prywatny), # (chroniony) ~ (pakiet).  
 
@@ -53,7 +50,7 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
  Aby wyświetlić właściwości operacji, kliknij prawym przyciskiem myszy działanie w klasie lub interfejsie na diagramie, a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
 
 
-|      Właściwość       |   Domyślny    |                                                                                                                                                                                 Opis                                                                                                                                                                                 |
+|      Właściwość       |   Domyślne    |                                                                                                                                                                                 Opis                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Nazwa**       | (Nowa nazwa) |                                                                                                                                                                Powinny być unikatowe w obrębie typu zawierającego.                                                                                                                                                                 |
 |   **Parametry**    |    (Brak)    |      Listę, która ma postać <em>nazwa</em>**:**<em>typu</em>**,** <em>nazwa</em>**:**  <em>Typ</em>**,...** Kliknij przycisk **[...]**  edytowanie listy.<br /><br /> Typy mogą być typy pierwotne oraz typy, które są zdefiniowane w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.      |
@@ -74,11 +71,8 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
 |    **Jest unikatowa**    |    False     |                                                                                                                                         W przypadku opcji true istnieją zduplikowane wartości w kolekcji. Aby uzyskać **liczebność** więcej niż 1.                                                                                                                                         |
 
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Właściwości typów w diagramach przypadków UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Właściwości skojarzeń w diagramach przypadków UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)

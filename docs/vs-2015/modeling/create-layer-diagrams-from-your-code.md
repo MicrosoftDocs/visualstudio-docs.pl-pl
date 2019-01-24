@@ -1,12 +1,9 @@
 ---
 title: Tworzenie diagramów warstw z kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762342"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +66,9 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
 |**To**|**Wykonaj następujące kroki**|  
 |------------|----------------------------|  
-|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element do diagramu warstwowego z tych źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) i [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klas** lub **przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:** przeciąganie plików binarnych do diagramu warstwowego nie powoduje automatycznego dodania odniesień do nich do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W **Dodaj istniejący element** okno dialogowe, przejdź do plików binarnych, zaznacz je, a następnie wybierz **OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksploratora rozwiązań**, wybierz plik binarny, który zostanie dodany, a następnie naciśnij **F4** otworzyć **właściwości** okna.</li><li>Dla każdego pliku binarnego ustaw **Build Action** właściwości **weryfikacji**.</li></ol>|  
+|Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element do diagramu warstwowego z tych źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) i [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klas** lub **przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:**  Przeciąganie plików binarnych do diagramu warstwowego nie powoduje automatycznego dodania odniesień do nich do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W **Dodaj istniejący element** okno dialogowe, przejdź do plików binarnych, zaznacz je, a następnie wybierz **OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksploratora rozwiązań**, wybierz plik binarny, który zostanie dodany, a następnie naciśnij **F4** otworzyć **właściwości** okna.</li><li>Dla każdego pliku binarnego ustaw **Build Action** właściwości **weryfikacji**.</li></ol>|  
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu warstwowego w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|  
-|Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** klucza podczas przeciągania wszystkich artefaktów do diagramu warstwowego w tym samym czasie. **Uwaga:** Jeśli używasz **SHIFT** klawisz, aby wybrać zakres elementów, zwolnij klawisz po zaznaczeniu artefaktów. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|  
+|Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** klucza podczas przeciągania wszystkich artefaktów do diagramu warstwowego w tym samym czasie. **Uwaga:**  Jeśli używasz **SHIFT** klawisz, aby wybrać zakres elementów, zwolnij klawisz po zaznaczeniu artefaktów. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|  
 |Dodawanie artefaktu do warstwy|Przeciągnij artefakt do warstwy.|  
 |Tworzenie nowej niepołączonej warstwy|W **przybornika**, rozwiń węzeł **diagramu warstwowego** sekcji, a następnie przeciągnij **warstwy** do diagramu warstwowego.<br /><br /> Aby dodać wiele warstw, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz pozycję **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.<br /><br /> - lub -<br /><br /> Otwórz menu skrótów dla diagramu warstwowego, wybierz polecenie **Dodaj**, a następnie wybierz **warstwy**.|  
 |Tworzenie zagnieżdżonych warstw|Przeciągnij istniejącą warstwę na inną warstwę.<br /><br /> - lub -<br /><br /> Otwórz menu skrótów dla warstwy, wybierz polecenie **Dodaj**, a następnie wybierz **warstwy**.|  
@@ -140,7 +137,7 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
   
 ## <a name="see-also"></a>Zobacz też  
  [Wideo Channel 9: Projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)   
- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)   
+ [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)   
  [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)   
  [Tworzenie wizualizacji kodu](../modeling/visualize-code.md)

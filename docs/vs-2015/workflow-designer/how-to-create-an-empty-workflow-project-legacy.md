@@ -1,11 +1,8 @@
 ---
-title: 'Porady: Tworzenie pustego projektu przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie pustego projektu przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, empty workflow
@@ -15,15 +12,15 @@ ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5a64506fd5d634b140c6e27916ea873afbef1c08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72614233a0b01f263201670d0f9f70c96559e40c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767753"
 ---
-# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Porady: Tworzenie pustego projektu przepływu pracy (starsza wersja)
+# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Instrukcje: Tworzenie pustego projektu przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć pusty projekt przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-an-empty-workflow-project"></a>Aby utworzyć pusty projekt przepływu pracy  

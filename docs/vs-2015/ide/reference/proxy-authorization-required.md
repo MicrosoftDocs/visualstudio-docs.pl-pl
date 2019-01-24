@@ -1,25 +1,20 @@
 ---
 title: Wymaga autoryzacji serwera proxy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767290"
 ---
 # <a name="proxy-authorization-required"></a>Wymaga autoryzacji serwera proxy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni do programu Vi
 -   LUB  
   
 -   Można również postępuj zgodnie z instrukcjami [ten wpis](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) można dodać kod, który umożliwi używanie serwera proxy.
-
-
-

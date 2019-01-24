@@ -1,25 +1,20 @@
 ---
 title: Fragmenty kodu Visual C++ | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 74e26fd4-e5ca-4611-a816-0a521b4947a0
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cd24ef7e852d84d3213e024e53e325c0ba1d59fb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861367"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762082"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kodu Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ W programie Visual Studio umożliwia fragmenty kodu Dodaj kod często używane w
   
 2. W **Edytuj / IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**  
   
-3. Użyj klawiszy dostępu: **CTRL + K, S**  
+3. Użyj klawiszy dostępu: **CTRL + K + S**  
   
    Wybierz **#if**. Powinien zostać wyświetlony podobny do poniższego:  
   
@@ -179,6 +174,3 @@ class SomeClass {
 {  
   
 ```
-
-
-

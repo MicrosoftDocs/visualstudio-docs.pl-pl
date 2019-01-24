@@ -1,14 +1,9 @@
 ---
 title: Ogłoszenie właściwość okno wyboru śledzenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], property pages support
 - property pages, tracking selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], Properties window support
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767543"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Ogłoszenie wybór okna właściwości śledzenia
 Jeśli chcesz pracować z **właściwości** okna lub **właściwość** strony, na przykład formularz, tekst lub zaznaczenia, dla którego chcesz wyświetlić właściwości, należy zastosować pełną wiedzy na temat możesz koordynowanie zaznaczenia. Na przykład musisz wiedzieć, czy masz zaznaczenia jednego lub wiele zaznaczeń. Następnie należy poinformować o danego typu wyboru (jednego lub wielu) do środowiska IDE, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. Ten interfejs zapewnia informacje wymagane przez **właściwości** okna.  

@@ -1,13 +1,8 @@
 ---
 title: Nawigowanie po kodzie za pomocą debugera za | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771515"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Nawigowanie po kodzie za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   
 -   **Ręcznie Wejdź do kodu**  
   
-     Aby przerwać następnego dostępnego wiersza kodu w wykonywanej aplikacji, wybierz opcję **debugowania**, **Przerwij wszystkie** (klawiatura: **Ctrl + Alt + Break**).  
+     Aby przerwać następnego dostępnego wiersza kodu w wykonywanej aplikacji, wybierz opcję **debugowania**, **Przerwij wszystkie** (klawiatury: **Ctrl+Alt+Break**).  
   
      Jeśli użytkownik przerwiesz podczas wykonywania kodu bez odpowiadającego jej źródła lub symboli (.pdb) plików), debuger wyświetla **nie znaleziono źródła plików** lub **nie można odnaleźć symboli** strona, która pomoże Ci znaleźć odpowiednią pliki. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Jeśli nie masz dostępu do plików pomocniczych, nadal możesz debugować instrukcje montażu w oknie demontażu.  
   
@@ -181,7 +176,7 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   
  Aby załadować symbole dla określonego składnika systemu podczas debugowania:  
   
-1.  Otwórz okno modułów (klawiatura: **Ctrl + Alt + U**).  
+1.  Otwórz okno modułów (klawiatura: **Ctrl+Alt+U**).  
   
 2.  Wybierz moduł, który chcesz załadować symbole.  
   
@@ -191,8 +186,3 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Wejdź do właściwości i operatory w kodzie zarządzanym  
  Debuger nie wchodzi we właściwości i operatory w kodzie zarządzanym domyślnie. W większości przypadków zapewnia to lepszy proces debugowania. Aby włączyć przechodzenie krok po kroku do właściwości lub operatorów, wybierz opcję **debugowania** / **opcje**. Na **debugowanie** / **ogólne** strony, wyczyść **Przekrocz nad właściwościami i operatorami (tylko kod zarządzany)** pola wyboru
-
-
-
-
-

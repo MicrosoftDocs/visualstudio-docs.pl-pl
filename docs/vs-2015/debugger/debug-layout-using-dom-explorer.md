@@ -1,14 +1,9 @@
 ---
 title: Debugowanie układu przy użyciu narzędzia DOM Explorer | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763913"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 > [!TIP]
 >  Zmiany wprowadzone w oknie **układ** karty nie są trwałe. Można wprowadzić trwałe zmiany do kodu źródłowego, a następnie Odśwież aplikację za pomocą **aplikacji Windows Odśwież** przycisku (tylko aplikacje Windows Store i Windows Phone Store) na pasku narzędzi debugowania. Dzięki temu można uniknąć ponownego uruchamiania debugera.  
   
- Aby użyć narzędzia DOM Explorer, aby zmodyfikować aspektów układu, które nie są wyświetlane w modelu pudełkowego, zobacz [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [stylów CSS debugowania przy użyciu narzędzia DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Aby użyć narzędzia DOM Explorer, aby zmodyfikować aspektów układu, które nie są wyświetlane w modelu pudełkowego, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md) i [stylów CSS debugowania przy użyciu narzędzia DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Przykład poprawiania problem układu  
  W tym przykładzie pokazano, jak wybierz element listy w szablonie Centrum/obrotu, interpretowania wartości modelu pola, znajdujące się na **układ** kartę, a następnie zmień jedną z wartości właściwości, aby rozwiązać problem układu.  
@@ -88,7 +83,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 8.  Przejdź do programu Visual Studio i wybierz **zaznacz Element** w Eksploratorze DOM (albo naciśnij klawisze Ctrl + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu.  
   
     > [!TIP]
-    >  Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
+    >  Aby wybrać elementy HTML bezpośrednio w Eksploratorze DOM, można użyć klawiszy strzałek lub innych metod. Aby uzyskać więcej informacji dotyczących zaznaczania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. W emulatorze telefonu lub symulator wybierz szary prawej połowie ekranu jeden z obrazów, które są skrócił się o połowę. Wyróżnianie pojawia się wokół wybranego elementu, jak pokazano w Emulator Windows Phone:  
   
@@ -132,9 +127,6 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 15. Przełącz się do emulatora telefonu lub symulatora. Zaktualizowane wartości lewy margines zostały zastosowane do obrazów sekcja 4. Te wartości są aktualizowane w **obliczane** kartę w obszarze reguła lewy margines.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie stylów CSS przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Wyświetlanie odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)
-
-
-

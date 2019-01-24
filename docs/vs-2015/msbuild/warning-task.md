@@ -1,14 +1,9 @@
 ---
 title: Warning — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Warning
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0447c3803de6845dcfb02a30270cfe9b96b96f0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 010ab0d98fa384a7b3a5d18e54a8409d5aa165b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771924"
 ---
 # <a name="warning-task"></a>Warning — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +69,3 @@ Dzienniki ostrzeżenie podczas kompilacji w oparciu ocenianą instrukcji warunko
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

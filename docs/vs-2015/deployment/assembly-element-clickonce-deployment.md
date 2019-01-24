@@ -1,14 +1,9 @@
 ---
 title: '&lt;zestaw&gt; — Element (wdrażanie ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766605"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;zestaw&gt; — Element (wdrażanie ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -50,7 +45,7 @@ Element najwyższego poziomu do manifestu wdrażania.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`manifestVersion`|Wymagane. Ten atrybut musi być równa `1.0`.|  
+|`manifestVersion`|Wymagana. Ten atrybut musi być równa `1.0`.|  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie kodu pokazano `assembly` elementu w manifeście wdrożenia dla aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
@@ -73,6 +68,3 @@ Element najwyższego poziomu do manifestu wdrażania.
 ## <a name="see-also"></a>Zobacz też  
  [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [\<zestaw > Element](../deployment/assembly-element-clickonce-application.md)
-
-
-

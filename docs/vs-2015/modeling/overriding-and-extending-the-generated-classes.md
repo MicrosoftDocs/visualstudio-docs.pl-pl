@@ -1,25 +1,22 @@
 ---
 title: Zastępowanie i rozszerzanie wygenerowanych klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762702"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Zastępowanie i rozszerzanie wygenerowanych klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +88,6 @@ Definicji DSL jest platformy, na której można budować z zaawansowanego zestaw
 ### <a name="net-events"></a>Zdarzenia platformy .NET  
  Można subskrybować niektóre zdarzenia w kształtach. Na przykład możesz nasłuchiwać kliknięć myszą na kształcie. Trzeba napisać kod, która ją subskrybuje zdarzenia dla każdego obiektu. Ten kod można pisać w zastąpieniu obiektu InitializeInstanceResources().  
   
- Niektóre zdarzenia są generowane na ShapeFields, które są używane do rysowania dekoratory na kształcie. Aby uzyskać przykład, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+ Niektóre zdarzenia są generowane na ShapeFields, które są używane do rysowania dekoratory na kształcie. Aby uzyskać przykład, zobacz [jak: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Te zdarzenia nie występują zwykle wewnątrz transakcji. Należy utworzyć transakcji, jeśli chcesz wprowadzić zmiany w magazynie.
-
-
-

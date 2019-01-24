@@ -1,14 +1,9 @@
 ---
-title: 'Porady: podpisywanie plików za pomocą SignTool.exe (ClickOnce) konfiguracji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znak plików konfiguracji przy użyciu SignTool.exe (ClickOnce) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179312"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773322"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Porady: podpisywanie plików konfiguracji przy użyciu narzędzia SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Instrukcje: Podpisywanie plików konfiguracji przy użyciu narzędzia SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SignTool.exe służy do podpisywania Instalatora (setup.exe). Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  
@@ -85,7 +80,4 @@ SignTool.exe służy do podpisywania Instalatora (setup.exe). Ten proces pozwala
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Instrukcje: Ponowne podpisywanie manifestów wdrożenia i aplikacji](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

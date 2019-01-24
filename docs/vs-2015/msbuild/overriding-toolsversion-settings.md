@@ -1,14 +1,9 @@
 ---
 title: Zastępowanie ustawień ToolsVersion | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
@@ -16,13 +11,13 @@ ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2a4e3485b09780490a9d589766eeed85e6b84e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770713"
 ---
 # <a name="overriding-toolsversion-settings"></a>Zastępowanie ustawień ToolsVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,6 +132,3 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
  [Zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Konfiguracje standardowego i niestandardowego zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)
-
-
-

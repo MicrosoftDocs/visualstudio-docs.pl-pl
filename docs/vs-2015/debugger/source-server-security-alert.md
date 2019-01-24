@@ -1,14 +1,9 @@
 ---
 title: Alarm zabezpieczeń serwera źródłowego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.enablewarning
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 8451c281-6914-469c-b80c-6271cc3f3d17
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 50e0c18c90d5b27e59ab290ad9ce846f4867a903
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 76d61520bf17ad3230a437c295de387a910f808f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51762319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756903"
 ---
 # <a name="source-server-security-alert"></a>Alarm zabezpieczeń serwera źródłowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ Podczas korzystania z serwera źródłowego, należy używać tylko plików symb
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Source Server](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: pisanie wizualizatora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Pisanie wizualizatora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766459"
 ---
-# <a name="how-to-write-a-visualizer"></a>Porady: pisanie wizualizatora
+# <a name="how-to-write-a-visualizer"></a>Instrukcje: Pisanie wizualizatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz napisać niestandardowego wizualizatora obiektu klasy zarządzanej z wyjątkiem <xref:System.Object> lub <xref:System.Array>.  
@@ -63,7 +58,7 @@ Możesz napisać niestandardowego wizualizatora obiektu klasy zarządzanej z wyj
   
   Wizualizatory niestandardowe mogą mieć zagadnienia związane z zabezpieczeniami. Zobacz [zagadnienia dotyczące zabezpieczeń internetowych](../debugger/visualizer-security-considerations.md).  
   
-  Procedury opisane poniżej, zapewniają ogólny widok co należy zrobić, aby utworzyć wizualizatora. Aby uzyskać bardziej szczegółowy opis, zobacz [wskazówki: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Procedury opisane poniżej, zapewniają ogólny widok co należy zrobić, aby utworzyć wizualizatora. Aby uzyskać bardziej szczegółowy opis, zobacz [instruktażu: Pisanie wizualizatora w C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Aby utworzyć po stronie debugera  
   
@@ -83,9 +78,6 @@ Możesz napisać niestandardowego wizualizatora obiektu klasy zarządzanej z wyj
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
- [Porady: testowanie i debugowanie Wizualizera](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Instrukcje: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md)   
+ [Instrukcje: Testowanie i debugowanie Wizualizera](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Zagadnienia dotyczące zabezpieczeń wizualizatora](../debugger/visualizer-security-considerations.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: Wskazówki dotyczące narzędzi architektury w programie Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: feca9ea9ae09bc41082392d5e47a474408d1c901
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d23afb98b1818f4f7320041f202857e61873975a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772991"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Architektura Visual Studio — wskazówki dotyczące oprzyrządowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,6 +24,3 @@ Tej wskazówki dotyczące narzędzi architektury to możliwy do pobrania pakiet 
  Zawartość została utworzona przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, zawierającej członków z grupy specjalnej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zespół pracujący nad produktem, Microsoft Services, Microsoft najbardziej cenionym specjaliści (MVP) i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] społeczności potencjalnych klientów.  
   
  [Kliknij tutaj, aby pobrać wskazówki dotyczące narzędzi architektury. ](http://go.microsoft.com/fwlink/?LinkID=191984).
-
-
-

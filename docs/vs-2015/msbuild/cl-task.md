@@ -1,14 +1,9 @@
 ---
 title: Cl — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
 - vc.task.cl
@@ -26,13 +21,13 @@ ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756666"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -215,7 +210,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **OldStyle** - **/Z7**  
   
-  - **ProgramDatabase** -   **/zi**  
+  - **ProgramDatabase** - **/Zi**  
   
   - **EditAndContinue** - **/ZI**  
   
@@ -275,13 +270,13 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Brak** -   **/errorreport: Brak**  
+  - **None** - **/errorReport:none**  
   
   - **Wiersz** - **/errorReport:prompt**  
   
-  - **Kolejka** - **/errorReport:queue**  
+  - **Queue** - **/errorReport:queue**  
   
-  - **Wyślij** -   **/errorreport: Send**  
+  - **Send** - **/errorReport:send**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy kompilatora)](http://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
@@ -319,7 +314,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Ani** - *\<Brak >*  
+  - **Neither** - *\<none>*  
   
   - **Rozmiar** -   **/OS**  
   
@@ -417,7 +412,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     Aby uzyskać więcej informacji, zobacz [/Ob (rozszerzenie funkcji wbudowanej)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
-- **Intrinsicfunctions —**  
+- **IntrinsicFunctions**  
   
    Opcjonalnie `Boolean` parametru.  
   
@@ -509,7 +504,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **Tworzenie** - **/Yc**  
   
-  - **Użyj** - **/Yu**  
+  - **Use** - **/Yu**  
   
     Aby uzyskać więcej informacji, zobacz [/Yc (Utwórz prekompilowany plik nagłówkowy)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) i [/Yu (Korzystaj Prekompilowanego pliku nagłówka)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Zobacz też **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** parametrów w tej tabeli.  
   
@@ -675,7 +670,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
    Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (C/C++)](http://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
   
-- **Katalog TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
    Opcjonalnie `String` parametru.  
   
@@ -811,6 +806,3 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

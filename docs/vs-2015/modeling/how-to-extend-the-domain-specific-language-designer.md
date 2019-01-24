@@ -1,25 +1,22 @@
 ---
-title: 'Porady: rozszerzanie projektanta języka specyficznego dla domeny | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766160"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można wykonać rozszerzenia do projektanta, którego używasz do edytowania definicji DSL. Typy rozszerzenia, które można wprowadzać należą: dodanie polecenia menu, dodanie obsługi przeciągnij i kliknij dwukrotnie gestów i reguł, które są wyzwalane, gdy zmienią się określone typy wartości lub relacje. Rozszerzenia można jako Visual Studio Integration rozszerzenie (VSIX) w pakiecie i dystrybuowane do innych użytkowników.  
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

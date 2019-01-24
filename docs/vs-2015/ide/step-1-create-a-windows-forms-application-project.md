@@ -1,32 +1,27 @@
 ---
-title: 'Krok 1: Tworzenie projektu aplikacji Windows Forms | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 1. Utwórz projekt aplikacji Windows Forms | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780472"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utworzenie projektu aplikacji Windows Forms
+# <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projektu aplikacji formularzy Windows.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 1](http://go.microsoft.com/fwlink/?LinkId=205209) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 1](http://go.microsoft.com/fwlink/?LinkId=205199). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-create-a-windows-forms-application-project"></a>Aby utworzyć projekt aplikacja interfejsu Windows Forms  
   
@@ -75,9 +70,6 @@ Zapisz wszystkie przyciski paska narzędzi
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 2: Uruchom swój Program](../ide/step-2-run-your-program.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 2: Uruchom Program](../ide/step-2-run-your-program.md).  
   
--   Aby powrócić do tematu przeglądu, zobacz [samouczek 1: tworzenie przeglądarki obrazów](../ide/tutorial-1-create-a-picture-viewer.md).
-
-
-
+-   Aby powrócić do tematu przeglądu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów](../ide/tutorial-1-create-a-picture-viewer.md).

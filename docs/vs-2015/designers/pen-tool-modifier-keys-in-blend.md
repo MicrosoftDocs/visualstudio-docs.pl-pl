@@ -1,25 +1,20 @@
 ---
 title: Za pomocą pióra klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764187"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ście
  [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)   
  [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)   
  [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)
-
-
-

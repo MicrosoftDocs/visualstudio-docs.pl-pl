@@ -1,14 +1,9 @@
 ---
 title: Widok szczegółów funkcji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784473"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,9 +73,9 @@ ms.locfileid: "51799594"
 ## <a name="function-performance-details"></a>Szczegóły wydajności — funkcja  
  Tabela Szczegóły wydajności funkcji zawiera podsumowania danych dla metryki wydajności wybranej funkcji. Są wyświetlane zarówno wartość, jak i wartość procentowa. Określ Określ tabelę danych profilowania, których są wyświetlane na wykresie i szczegóły **Metryka wydajności** listy.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**Wyłączne**|-Ilość metryki wydajności, który wystąpił podczas wykonywania treści funkcji.|  
+|**Exclusive**|-Ilość metryki wydajności, który wystąpił podczas wykonywania treści funkcji.|  
 |**W wywołaniach**|-Ilość metryki wydajności, który wystąpił w funkcje, które wywołały wybranej funkcji.|  
 |**Całkowita (włącznie)**|— W sumie **wyłączne** i **wywołań w** wartości.|  
   
@@ -119,6 +114,3 @@ ms.locfileid: "51799594"
 |-|-|  
 |**Rywalizacje włączne (rywalizacji)**|-Aby **podczas wywoływania funkcji**, liczbę zdarzeń rywalizacji zasobów, które wystąpiły w wystąpieniach wybranej funkcji, która wywołuje funkcję. Liczba uwzględnia zdarzenia rywalizacji w funkcje, które wywołały wybranej funkcji.<br />-Aby **treści funkcji**, łączna liczba zdarzeń rywalizacji o zasoby, które wystąpiły podczas wykonywania funkcji swój własny kod. Nie uwzględniono rywalizacji mających miejsce w funkcjach, które były wywoływane przez wybraną funkcję.<br />– W przypadku funkcji, liczbę zdarzeń rywalizacji o zasoby, które wystąpiły w wystąpieniach funkcji, które były wywoływane przez wybraną funkcję. Liczba uwzględnia zdarzenia rywalizacji o zasoby, które wystąpiły w funkcje, które wywołały funkcję.|  
 |**Całkowity czas (czas blokowania) blokowania**|– W przypadku funkcji wywołującej czas spędzony w zasobie rywalizacji zdarzenia dla wystąpienia elementu wybranego wywołania funkcji, funkcja wywoływana. Czas obejmuje czas blokowania w funkcjach, które wybrano funkcję o nazwie.<br />-Aby **treści funkcji**, całkowity czas spędzony w zdarzeniach rywalizacji o zasoby, które wystąpiły podczas wykonywania funkcji swój własny kod. Nie uwzględniono rywalizacji mających miejsce w funkcje, które wywołały wybranej funkcji.<br />– W przypadku funkcji, czas spędzony w zdarzeniach rywalizacji o zasób dla wystąpień funkcji, która wywołała wybranej funkcji. Czas obejmuje czas blokowania, który wystąpił w funkcje, które wywołały funkcję.|
-
-
-

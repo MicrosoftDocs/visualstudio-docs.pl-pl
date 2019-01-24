@@ -1,14 +1,9 @@
 ---
 title: Debugowanie XAML w programie Blend | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8b01fdc6962ea5a564537a083be4e9993533f1e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773675"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,6 +127,3 @@ Możesz użyć narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
   
 ## <a name="getting-help"></a>Uzyskiwanie pomocy  
  Jeśli potrzebujesz więcej debugowania pomocy usługi [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] aplikacji, możesz wyszukać [forum użytkowników aplikacji Windows Store](http://go.microsoft.com/fwlink/?LinkId=280308) dla wpisów z problemu związanego z lub zadać pytanie.
-
-
-

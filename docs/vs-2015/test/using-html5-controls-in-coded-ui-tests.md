@@ -1,24 +1,19 @@
 ---
 title: Korzystanie z kontrolek HTML5 w kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805079"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
 -   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio Control  
- **Kontrolki dźwięku:** poprawnie zarejestrowane i odtwarzać akcji sterowanie dźwięk HTML5.  
+ **Kontrolki dźwięku:** Akcje w kontrolce dźwięk HTML5 poprawnie są rejestrowane i odtwarzać.  
   
  ![Dźwięk HTML5 kontroli](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
   
@@ -82,15 +77,15 @@ string Volume
   
 ```  
   
- **Właściwości wyszukiwania:** właściwości wyszukiwania `HtmlAudio` są `Id`, `Name` i `Title`.  
+ **Właściwości wyszukiwania:** Właściwości wyszukiwania `HtmlAudio` są `Id`, `Name` i `Title`.  
   
- **Właściwości filtru:** właściwości filtru dla `HtmlAudio` są `Src`, `Class`, `ControlDefinition` i `TagInstance`.  
+ **Właściwości filtru:** Właściwości filtru dla `HtmlAudio` są `Src`, `Class`, `ControlDefinition` i `TagInstance`.  
   
 > [!NOTE]
 >  Ilość czasu, która umożliwia wyszukiwanie i wstrzymywanie działania mogą być znaczące. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać aż do określonej w `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez kilka specjalnych okoliczności określonego czasu minęło przed osiągnięcia polecenie wstrzymania, zostanie zgłoszony wyjątek.  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Kontrolki wideo  
- **Kontrolki wideo:** poprawnie zarejestrowana i odtwarzać akcji dla kontrolki wideo HTML5.  
+ **Kontrolki wideo:** Poprawnie zarejestrowane i odtwarzać akcji dla kontrolki wideo HTML5.  
   
  ![Kontrolki wideo HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
   
@@ -112,15 +107,15 @@ string VideoWidth
   
 ```  
   
- **Właściwości wyszukiwania:** właściwości wyszukiwania `HtmlVideo` są `Id`, `Name` i `Title`.  
+ **Właściwości wyszukiwania:** Właściwości wyszukiwania `HtmlVideo` są `Id`, `Name` i `Title`.  
   
- **Właściwości filtru:** właściwości filtru dla `HtmlVideo` są `Src`, `Poster`, `Class`, `ControlDefinition` i `TagInstance`.  
+ **Właściwości filtru:** Właściwości filtru dla `HtmlVideo` są `Src`, `Poster`, `Class`, `ControlDefinition` i `TagInstance`.  
   
 > [!NOTE]
 >  Jeśli przewinąć do tyłu lub szybkie przewijanie do przodu wideo przy użyciu etykiet-30s lub +30s, to zostaną zagregowane się w odpowiednim czasie.  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Suwak  
- **Kontrolka Slider:** poprawnie rejestrowane i odtwarzać akcji w kontrolce suwaka HTML5.  
+ **Kontrolka suwaka:** Akcje w kontrolce suwaka HTML5 poprawnie są rejestrowane i odtwarzać.  
   
  ![Kontrolka suwaka HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
   
@@ -139,8 +134,8 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Pasek postępu  
- **Kontrolka ProgreesBar:** ProgressBar jest formantem interactable. Można dodać asercje `Value` i `Max` właściwości tej kontrolki.  
+###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
+ **Kontrola ProgreesBar:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwości tej kontrolki.  
   
  ![HTML5 ProgressBar, kontrolka](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
@@ -150,6 +145,3 @@ string ValueAsNumber
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Dostosowywanie kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

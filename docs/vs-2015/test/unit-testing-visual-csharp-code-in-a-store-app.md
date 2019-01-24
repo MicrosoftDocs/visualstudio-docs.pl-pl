@@ -1,25 +1,20 @@
 ---
 title: Testowanie jednostek kodu języka Visual C# w Store app | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6128ca2638f98600c9bfb17e8388cf0a663040a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766266"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testowanie jednostek kodu języka Visual C# w Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
  W tym temacie tworzy również jedno rozwiązanie Visual Studio i oddzielnych projektów dla testów jednostkowych i biblioteki DLL, która ma zostać przetestowana. Możesz również uwzględnić testy jednostkowe bezpośrednio w projekcie biblioteki DLL lub można utworzyć oddzielne rozwiązania dla testów jednostkowych i biblioteki DLL.  
   
 > [!NOTE]
->  Użytkowników społeczności programu Visual Studio Enterprise. i Professional zapewniają dodatkowe funkcje testów jednostkowych.  
+>  Visual Studio Community, Enterprise. i Professional zapewniają dodatkowe funkcje testów jednostkowych.  
 > 
 > - Użyj dowolnego środowiska testów jednostkowych innych firm i open source, który utworzył karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlić informacje o pokryciu kodu dla testów.  
 >   -   Uruchom testy po każdej kompilacji.  
@@ -122,7 +117,7 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
   
      Projekt testowy skompilowane i uruchomione. Zostanie wyświetlone okno Eksploratora testów i test znajduje się w obszarze **testy zakończone powodzeniem**. Okienko podsumowania w dolnej części okna udostępnia dodatkowe szczegóły dotyczące wybranego testu.  
   
-     ![Eksplorator testów](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Test Explorer](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Dodaj klasę Rooter do projektu matematycznych  
   
@@ -371,6 +366,3 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla kla
   
 > [!NOTE]
 >  Aby dodać metodę pomocnika do klasy testowej, nie należy dodawać `[TestMethod]` atrybutu do metody. Eksplorator testów nie rejestruje metody do uruchomienia.
-
-
-

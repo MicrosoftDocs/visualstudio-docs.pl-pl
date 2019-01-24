@@ -1,25 +1,22 @@
 ---
 title: Objaśnienie modeli, klas i relacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271794"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805453"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
   
  ![Relacji osadzania i odwołania](../modeling/media/music-classes.png "Music_Classes")  
   
- Na ilustracji przedstawiono cztery klasy domeny: utworów muzycznych, fotograficzne, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwy, tytułu i tak dalej. W modelu wystąpień wartości niektóre z tych właściwości są wyświetlane na diagramie.  
+ Na ilustracji przedstawiono cztery klasy domeny: Muzyka, fotograficzne, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwy, tytułu i tak dalej. W modelu wystąpień wartości niektóre z tych właściwości są wyświetlane na diagramie.  
   
  Między klasami są relacje domeny: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs i ArtistAppearedOnAlbums. Relacje zostały Liczebność punktów, takich jak 1..1, 0.. *. Na przykład każdy utwór musi być powiązany do dokładnie jednego albumu relacji AlbumHasSongs. Każdego albumu może mieć dowolną liczbę utworów.  
   
@@ -157,7 +154,4 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
   
 ## <a name="see-also"></a>Zobacz też  
  [Relacje domeny w generowanego interfejsu API](../misc/domain-relationships-in-the-generated-api.md)   
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

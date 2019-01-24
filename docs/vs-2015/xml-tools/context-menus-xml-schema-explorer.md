@@ -1,25 +1,20 @@
 ---
 title: Menu kontekstowe (Eksplorator schematu XML) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756793"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Pokaż elementy globalne**|Umożliwia znalezienie i wyróżnia wszystkie elementy globalne w zestawie schematów.|  
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|  
   
-## <a name="node-type-namespace"></a>Typ węzła: Namespace  
+## <a name="node-type-namespace"></a>Typ węzła: Przestrzeń nazw  
  W poniższej tabeli opisano opcje, które są dostępne dla węzła obszaru nazw.  
   
 |Opcja|Opis|  
@@ -48,7 +43,7 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Pokaż elementy globalne**|Umożliwia znalezienie i wyróżnia wszystkie elementy globalne w wybranej przestrzeni nazw.|  
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|  
   
-## <a name="node-type-file"></a>Typ węzła: plik  
+## <a name="node-type-file"></a>Typ węzła: Plik  
  W poniższej tabeli opisano opcje, które są dostępne dla węzła pliku.  
   
 |Opcja|Opis|  
@@ -82,7 +77,7 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Grupa podstawienia show głowic**|Dla elementów globalne, które są elementami członkowskimi grupy podstawienia, znajdzie i wyróżnia wszystkie nagłówki bezpośrednie i pośrednie dla wybranego elementu, takich jak następujące:<br /><br /> -Określonego dla wybranego elementu head grupy podstawienia.<br />-Określony w jej głównego elementu head grupy podstawienia.|  
 |**Generowanie przykładowy kod XML**|Dostępne tylko dla elementów globalnej. Generuje przykładowy plik XML dla elementu globalnego.|  
   
-## <a name="node-type-global-types"></a>Typ węzła: Globalne typy  
+## <a name="node-type-global-types"></a>Typ węzła: Typy globalne  
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla węzłów typu globalnego ma następujące opcje:  
   
 |Opcja|Opis|  
@@ -92,7 +87,7 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Pokaż wszystkie typy pochodne**|Umożliwia znalezienie i wyróżnia wszystkie typy, które bezpośredniego lub pośredniego pochodzą od wybranego typu.|  
 |**Wyświetlanie wszystkich elementów nadrzędnych**|Pokaż wszystkie typy nadrzędnego (podstawowa).|  
   
-## <a name="node-type-attribute"></a>Typ węzła: atrybut  
+## <a name="node-type-attribute"></a>Typ węzła: Atrybut  
  Oprócz opcji do globalnego węzłów opisanych powyżej menu kontekstowe dla węzłów atrybutu ma następujące opcje:  
   
 |Opcja|Opis|  
@@ -120,8 +115,5 @@ Następujące elementy menu kontekstowego są używane do wykonywania wyszukiwan
 |**Pokaż wszystkie odwołania**|Wyszukuje i wyróżnia wszystkie odwołania (grupy, które mają `ref="selectedGroup"`) do wybranej grupy.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)   
+ [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)   
  [Wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md)
-
-
-

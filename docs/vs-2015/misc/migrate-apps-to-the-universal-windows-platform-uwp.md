@@ -1,25 +1,20 @@
 ---
 title: Migrowanie aplikacji na platformie Universal Windows (UWP) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766370"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migracja aplikacji na platformę uniwersalną systemu Windows
 Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikacji Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal apps utworzonych za pomocą programu Visual Studio 2015 RC, dzięki czemu mogą być używane za pomocą programu Visual Studio 2015 RTM. (W przypadku aplikacji uniwersalnej Windows 8.1, za pomocą projektu aplikacji Windows i Windows Phone projektu, należy wykonać kroki do każdego projektu migracji.)  
@@ -93,11 +88,11 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
     1.  Ustaw wartość \<platformy > element: **x86**.  
   
-    2.  Dodaj \<TargetPlatformIdentifier > element i ustaw dla niego wartość: **UAP**.  
+    2.  Dodaj \<TargetPlatformIdentifier > element i ustaw jej wartość na: **UAP**.  
   
     3.  Zmiana wartości istniejącego \<TargetPlatformVersion > element staje się ona wartością wersji Universal Windows Platform, który został zainstalowany. Również dodać \<TargetPlatformMinVersion > element i nadaj mu taką samą wartość.  
   
-    4.  Zmień wartość właściwości \<MinimumVisualStudioVersion > element: **14**.  
+    4.  Zmień wartość właściwości \<MinimumVisualStudioVersion > elementu: **14**.  
   
     5.  Zastąp \<ProjectTypeGuids > elementu, jak pokazano poniżej:  
   
@@ -273,7 +268,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
     2.  Zaktualizuj wartość elementu ApplicationTypeRevision 8.1 10.0.  
   
-    3.  Zmień wartość właściwości \<MinimumVisualStudioVersion > element: 14.  
+    3.  Zmień wartość właściwości \<MinimumVisualStudioVersion > elementu: 14.  
   
     4.  Dodaj \<EnableDotNetNativeCompatibleProfile > element i ustaw dla niego wartość: PRAWDA.  
   
@@ -337,7 +332,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 2. Należy zaktualizować \<pakietu > elementu za pomocą nowego schematów na podstawie Twojego istniejącego projektu typu. Najpierw usuń poniżej schematów na podstawie tego, czy mają projektów Windows Store lub Windows Phone.  
   
-    **STARA dla projektów Windows Store:** swoje \<pakietu > element będzie wyglądać podobnie do następującego.  
+    **STARY dla Windows Store projektu:** Twoje \<pakietu > element będzie wyglądać podobnie do następującego.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
    ```  
   
-    **STARY dla projektu Windows Phone:** swoje \<pakietu > element będzie wyglądać podobnie do następującego.  
+    **STARY dla projektu Windows Phone:** Twoje \<pakietu > element będzie wyglądać podobnie do następującego.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **NOWE platformy Windows Universal:** schematów poniżej, aby dodać swoje \<pakietu > element. Usuń wszelkie prefiksy identyfikator skojarzonego przestrzeni nazw z elementów dla schematów, które zostały usunięte. Aktualizowanie właściwości IgnorableNamespaces: uap mp. Nowy \<pakietu > element powinien wyglądać podobnie do następującego.  
+    **NOWOŚĆ dla platformy Universal Windows:** Dodawanie schematów poniżej, aby Twoje \<pakietu > element. Usuń wszelkie prefiksy identyfikator skojarzonego przestrzeni nazw z elementów dla schematów, które zostały usunięte. Aktualizowanie właściwości IgnorableNamespaces: uap mp. Nowy \<pakietu > element powinien wyglądać podobnie do następującego.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
    ```  
   
-3. Dodaj \<zależności > element podrzędny do \<pakietu > element. Następnie dodaj \<TargetDeviceFamily > element podrzędny tej \<zależności > elementu z atrybutami nazwę, MinVersion i MaxVersionTested. Zwraca wartość atrybutu Name: zależności targetdevicefamily elementu. Zapewniają MinVersion i MaxVersionTested wartość wersji Universal Windows Platform, którą instalujesz. Ten element powinien wyglądać mniej więcej tak:  
+3. Dodaj \<zależności > element podrzędny do \<pakietu > element. Następnie dodaj \<TargetDeviceFamily > element podrzędny tej \<zależności > elementu z atrybutami nazwę, MinVersion i MaxVersionTested. Podania nazwy atrybutu wartości: Windows.Universal. Zapewniają MinVersion i MaxVersionTested wartość wersji Universal Windows Platform, którą instalujesz. Ten element powinien wyglądać mniej więcej tak:  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
    </Dependencies>  
    ```  
   
-4. **Dla Windows Store tylko:** należy dodać \<mp:PhoneIdentity > element podrzędny do \<pakietu > element. Dodaj atrybut PhoneProductId i atrybut PhonePublisherId. Ustaw PhoneProductId można mieć taką samą wartość jak w atrybucie nazwy w \<tożsamości > element. Ustaw wartość PhonePublishedId: 00000000-0000-0000-0000-000000000000. Jak to:  
+4. **Aby uzyskać tylko Windows Store:** Należy dodać \<mp:PhoneIdentity > element podrzędny do \<pakietu > element. Dodaj atrybut PhoneProductId i atrybut PhonePublisherId. Ustaw PhoneProductId można mieć taką samą wartość jak w atrybucie nazwy w \<tożsamości > element. Ustaw wartość PhonePublishedId: 00000000-0000-0000-0000-000000000000. Jak to:  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 5. Znajdź \<wymagania wstępne > element i usunąć ten element i wszystkie elementy podrzędne, które przedstawiono w nim.  
   
-6. Dodaj **uap** przestrzeni nazw dla następujących \<zasobu > elementy: DXFeatureLevel, skali. Na przykład:  
+6. Dodaj **uap** przestrzeni nazw dla następujących \<zasobu > elementy: Skala, DXFeatureLevel. Na przykład:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
    ```  
   
-    **Dotyczy tylko Windows Store:** zostały zmienione nazwy Rozmiar kafelka. Zmienianie atrybutów w \<VisualElements > element, aby odzwierciedlić nowe zbieżności rozmiarów kafelka. 70 x 70 staje się 71 x 71 i 30 x 30 staje się 44 x 44.  
+    **Dotyczy tylko Windows Store:** Zmieniono nazwy Rozmiar kafelka. Zmienianie atrybutów w \<VisualElements > element, aby odzwierciedlić nowe zbieżności rozmiarów kafelka. 70 x 70 staje się 71 x 71 i 30 x 30 staje się 44 x 44.  
   
     **Stary:** nazwy rozmiarów kafelka  
   
@@ -487,7 +482,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 12. Zmień zależności struktury. Dodaj nazwę wydawcy do wszystkich \<PackageDependency > elementy, a następnie określ MinVersion, jeśli jeszcze nie określono.  
   
-     **Stary:** \<PackageDependency > element  
+     **OLD:** \<PackageDependency> element  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
     ```  
   
-     **Nowość:** \<PackageDependency > element  
+     **NOWY:** \<PackageDependency> element  
   
     ```xml  
     <Dependencies>  
@@ -512,7 +507,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 13. Zastąp gattCharacteristicNotification i rfcommConnection typu zadania w tle zadanie typu połączenia Bluetooth. Na przykład:  
   
-     **STARY:**  
+     **OLD:**  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -523,7 +518,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
     </Extension>  
     ```  
   
-     **Nowość:** przy użyciu połączenia Bluetooth typu zadań.  
+     **NOWY:** Przy użyciu połączenia Bluetooth typu zadań.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -535,7 +530,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 14. Zamień bluetooth.rfcomm możliwości urządzenia Bluetooth i bluetooth.genericAttributeProfile ogólnych funkcji Bluetooth. Na przykład:  
   
-     **STARY:**  
+     **OLD:**  
   
     ```xml  
     <Capabilities>  
@@ -552,7 +547,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
     </Capabilities>  
     ```  
   
-     **Nowość:** zastąpione ogólnych funkcji Bluetooth.  
+     **NOWY:** Zastąpione ogólnych funkcji Bluetooth.  
   
     ```xml  
     <Capabilities>  
@@ -826,7 +821,7 @@ Wprowadź potrzebne zmiany ręcznej w istniejących plików projektu dla aplikac
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> Aktualizowanie projektów testów jednostkowych języka C# /VB  
   
-1. Za pomocą programu Visual Studio Otwórz swoje rozwiązanie, który zawiera projektu testu jednostkowego języka C# /VB. Zmień wartość właściwości \<OuttputType > element: AppContainerExe.  
+1. Za pomocą programu Visual Studio Otwórz swoje rozwiązanie, który zawiera projektu testu jednostkowego języka C# /VB. Zmień wartość właściwości \<OuttputType > elementu: AppContainerExe.  
   
    ```xml  
   

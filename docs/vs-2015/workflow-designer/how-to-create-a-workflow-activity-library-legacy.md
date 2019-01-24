@@ -1,11 +1,8 @@
 ---
-title: 'Porady: Tworzenie biblioteki działań przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie biblioteki działań przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activity library projects
@@ -15,15 +12,15 @@ ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 622b4376ef90863697e13ae32005a9ad890ce2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767540"
 ---
-# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Porady: Tworzenie biblioteki działań przepływu pracy (starsza wersja)
+# <a name="how-to-create-a-workflow-activity-library-legacy"></a>Instrukcje: Tworzenie biblioteki działań przepływów pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt biblioteki działania przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>Aby utworzyć projekt biblioteki działania przepływu pracy  
@@ -55,5 +52,5 @@ Wykonaj następujące kroki, aby utworzyć projekt biblioteki działania przepł
  [Tworzenie starszej wersji projektów przepływu pracy](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Przy użyciu starszej wersji projektanta działań](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)   
- [Tworzenie działań przepływu pracy](http://msdn.microsoft.com/en-us/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Działania związane z Windows Workflow Foundation](http://msdn.microsoft.com/en-us/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Tworzenie działań przepływu pracy](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Działania związane z Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

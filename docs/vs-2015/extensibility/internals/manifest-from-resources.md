@@ -1,21 +1,17 @@
 ---
 title: Odtwarzanie z zasobów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798233"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,16 +28,16 @@ Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuj
 ||||  
 |-|-|-|  
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
-|/Resources|Rozdzielana średnikami lista obrazów lub katalogi. Ta lista zawsze powinna zawierać pełną listę obrazów, które będą znajdować się w manifeście. Jeśli tylko część listy wpisów nie uwzględnione zostaną utracone.<br /><br /> Jeśli plik danego zasobu jest paska obrazów, narzędzie będzie podzielić ją na oddzielne obrazy przed dodaniem każdego subimage do manifestu.<br /><br /> Jeśli obraz jest plikiem PNG, zalecane jest formatowanie nazwą jak pokazano to tak, aby narzędzie można wypełnić odpowiednie atrybuty obrazu: \<Name >.\< Szerokość >. \<Wysokość > PNG.|Wymagane|  
+|/Resources|Rozdzielana średnikami lista obrazów lub katalogi. Ta lista zawsze powinna zawierać pełną listę obrazów, które będą znajdować się w manifeście. Jeśli tylko część listy wpisów nie uwzględnione zostaną utracone.<br /><br /> Jeśli plik danego zasobu jest paska obrazów, narzędzie będzie podzielić ją na oddzielne obrazy przed dodaniem każdego subimage do manifestu.<br /><br /> Jeśli obraz jest plikiem PNG, zaleca się, aby narzędzie może wypełnić odpowiednie atrybuty obrazu możesz sformatować nazwą jak pokazano to: \<Nazwa >. \<Szerokość >. \<Wysokość > PNG.|Wymagane|  
 |/ Assembly|Nazwa zestawu zarządzanego (bez rozszerzenia) lub ścieżkę środowiska uruchomieniowego natywnego zestawu, który obsługuje zasoby (względem lokalizacji środowiska uruchomieniowego manifest).|Wymagane|  
-|/ manifest|Nazwa do nadania .imagemanifest wygenerowany plik. Może to również obejmować ścieżką bezwzględną ani względną, aby utworzyć plik w innej lokalizacji. Domyślna nazwa jest zgodna z nazwą zestawu.<br /><br /> Wartość domyślna: \<bieżący katalog >\\< zestawu\>.imagemanifest|Optional|  
-|/guidName|Nazwa do nadania symbol identyfikator GUID dla wszystkich obrazów w wygenerowanym manifeście.<br /><br /> Domyślne: AssetsGuid|Optional|  
-|/rootPath|Ścieżka katalogu głównego, który ma zostać usunięta, a przed utworzeniem zarządzanych identyfikatorów URI zasobów. (Ta flaga jest pomagające w przypadkach, w którym narzędzie pobiera ścieżkę względną identyfikatora URI problem, powodując zasobów, aby nie można załadować).<br /><br /> Wartość domyślna: \<bieżącego katalogu >|Optional|  
+|/ manifest|Nazwa do nadania .imagemanifest wygenerowany plik. Może to również obejmować ścieżką bezwzględną ani względną, aby utworzyć plik w innej lokalizacji. Domyślna nazwa jest zgodna z nazwą zestawu.<br /><br /> Wartość domyślna: \<Bieżący katalog >\\< zestawu\>.imagemanifest|Optional|  
+|/guidName|Nazwa do nadania symbol identyfikator GUID dla wszystkich obrazów w wygenerowanym manifeście.<br /><br /> Wartość domyślna: AssetsGuid|Optional|  
+|/rootPath|Ścieżka katalogu głównego, który ma zostać usunięta, a przed utworzeniem zarządzanych identyfikatorów URI zasobów. (Ta flaga jest pomagające w przypadkach, w którym narzędzie pobiera ścieżkę względną identyfikatora URI problem, powodując zasobów, aby nie można załadować).<br /><br /> Wartość domyślna: \<Current Directory>|Optional|  
 |/ Recursive|Ustawienie tej flagi nakazuje narzędziu rekursywnie Wyszukaj wszystkie katalogi w argumencie /resources. Pominięcie tej flagi powoduje top-poziomu tylko wyszukiwania katalogów.|Optional|  
 |/isNative|Gdy argument zestawu jest ścieżką dla natywnego zestawu, należy ustawić tę flagę. Tej flagi należy pominąć, gdy argument zestawu jest nazwa zestawu zarządzanego. (Zobacz sekcję Uwagi Aby uzyskać dodatkowe informacje dotyczące tej flagi).|Optional|  
 |/newGuids|Ustawienie tej flagi informuje narzędzie w celu utworzenia nowej wartości dla symbolu identyfikatora GUID obrazów zamiast scalania z istniejącego manifestu.|Optional|  
 |/newIds|Ustawienie tej flagi informuje narzędzie, aby utworzyć nowy identyfikator wartości symboli dla każdego obrazu zamiast scalanie wartości z istniejącego manifestu.|Optional|  
-|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
@@ -49,7 +45,7 @@ Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuj
   
 -   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
@@ -163,4 +159,3 @@ Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuj
   <ImageLists />  
 </ImageManifest>  
 ```
-

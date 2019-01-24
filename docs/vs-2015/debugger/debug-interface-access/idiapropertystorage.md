@@ -1,14 +1,9 @@
 ---
 title: Idiapropertystorage — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f59e0a2ee5c0ae82cfcf4ea56cc7095b21b8719e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de0ab486d74e0e8ad3774a65a0b430523c0ac491
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771759"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -132,19 +127,16 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md)   
+ [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [Idiasegment —](../../debugger/debug-interface-access/idiasegment.md)   
  [Idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md)   
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

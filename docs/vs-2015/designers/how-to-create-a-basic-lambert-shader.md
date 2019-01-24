@@ -1,27 +1,22 @@
 ---
-title: 'Porady: Tworzenie podstawowego modułu cieniującego Lamberta | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie podstawowego modułu cieniującego Lamberta | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792011"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Porady: tworzenie podstawowego modułu cieniującego Lamberta
+# <a name="how-to-create-a-basic-lambert-shader"></a>Instrukcje: Tworzenie podstawowego modułu cieniującego Lamberta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób użycia Shader Designer i język programu do cieniowania wykres kierowany (DGSL) do utworzenia oświetlenia modułu cieniującego, który implementuje klasycznego modelu oświetlenia Lamberta.  
@@ -64,14 +59,11 @@ W tym dokumencie przedstawiono sposób użycia Shader Designer i język programu
   
  ![Zastosowano do modelu oświetlenia Lamberta. ](../designers/media/digit-lambert-effect-result.png "Cyfry Lamberta — efekt — wynik")  
   
- Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [jak: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   
- [Porady: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
+ [Instrukcje: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

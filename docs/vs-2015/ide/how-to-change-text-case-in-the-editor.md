@@ -1,14 +1,9 @@
 ---
-title: 'Porady: zmiana wielkości liter w edytorze | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zmiana wielkości liter w edytorze | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
 - text, case
@@ -16,21 +11,21 @@ ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ee4765914c1b7e5756a7f4acb907d6d9e29d3653
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799746"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Porady: zmiana wielkości liter w Edytorze
+# <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: Zmiana wielkości liter w edytorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Polecenia menu lub skróty klawiaturowe umożliwia konwertowanie wielkości zaznaczony tekst na wielkie litery, lub na małe litery.  
   
 > [!NOTE]
->  Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Polecenia menu, zostanie wyświetlony i okien dialogowych mogą różnić się od tych opisanych w **pomocy** w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedura  
   
@@ -53,6 +48,3 @@ Polecenia menu lub skróty klawiaturowe umożliwia konwertowanie wielkości zazn
  [Dopasowywanie edytora](../ide/customizing-the-editor.md)   
  [Okno dialogowe Opcje edytora tekstów](../ide/reference/text-editor-options-dialog-box.md)   
  [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)
-
-
-

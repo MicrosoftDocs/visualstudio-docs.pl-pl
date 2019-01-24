@@ -2,7 +2,7 @@
 title: Aplikacje Store analizy kodu statycznego C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
@@ -10,13 +10,13 @@ ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805569"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu C++ w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Nieprawidłowy rozmiar parametru ciągu                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Nieosiągalna lokalizacja ciągu nieprawidłowy rozmiar                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Nieprawidłowy typ ciągu rozmiaru buforu                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Nieprawidłowa adnotacja: właściwość "NeedsRelease" nie może być używana dla wartości typu void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Nieprawidłowa adnotacja: Właściwość "NeedsRelease" nie może być używana dla wartości typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nierozpoznany styl ciągu formatu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Użycie adnotacji atrybutów dla tej funkcji spowoduje unieważnienie wszystkich istniejących adnotacji __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Nieprawidłowa specyfikacja rozmiaru: nie można przeanalizować wyrażenia                              |
@@ -206,7 +206,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 |                      [C28286](../code-quality/c28286.md)                       |                                    Dla funkcji, błąd składni w pobliżu końca                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Dla funkcji, błąd składni w \_na\_adnotacji () (Nierozpoznana nazwa parametru)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Dla funkcji, błąd składni w \_na\_adnotacji () (Nieprawidłowa nazwa parametru)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Dla funkcji: elementy ReadableTo lub WritableTo nie ma specyfikacji limitu jako parametru                |
+|                      [C28289](../code-quality/c28289.md)                       |                Dla funkcji: Elementy ReadableTo lub WritableTo nie miał elementu limit-spec jako parametru                |
 |                      [C28290](../code-quality/c28290.md)                       |           Adnotacja dla funkcji zawierających więcej obiektów zewnętrznych niż rzeczywista liczba parametrów            |
 |                      [C28291](../code-quality/c28291.md)                       |                        Post null/notnull na poziomie deref 0 jest bez znaczenia dla funkcji.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Argumenty operacji wyrażenia o niezgodnych typach dla operatora                             |

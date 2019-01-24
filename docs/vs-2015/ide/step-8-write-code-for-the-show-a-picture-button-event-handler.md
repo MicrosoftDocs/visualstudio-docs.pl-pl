@@ -1,27 +1,22 @@
 ---
-title: 'Krok 8: Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Obraz | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 301147bffb67aed337a416fd0be19c5b407ca085
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771153"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Wpisywanie kodu dla obsługi zdarzeń pokazywania przycisków obrazowych
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu obsługi zdarzeń przycisku Pokaż obraz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku wprowadzisz **Pokaż obraz** przycisk pracował jak to:  
@@ -32,7 +27,7 @@ W tym kroku wprowadzisz **Pokaż obraz** przycisk pracował jak to:
   
   IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Gdy wprowadzasz kod, IDE otwiera pole z sugerowanymi uzupełnieniami częściowych wyrazów, które należy wprowadzić. Próbuje określić, co chcesz zrobić dalej i automatycznie przechodzi do ostatniego elementu wybranego z listy. Można użyć w górę lub strzałkę w dół, aby przenieść na liście, lub możesz wpisywać litery, aby ograniczyć zakres wyboru. Po wyświetleniu wyboru, który chcesz wybrać klawisz TAB, aby go zaznaczyć. Lub możesz zignorować sugestie, jeśli nie są potrzebne.  
   
-  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 4](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 4](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Aby napisać kod dla programu obsługi zdarzeń przycisku obrazu  
   
@@ -64,7 +59,7 @@ Kod Visual C#
          ![Ikona metody](../ide/media/express-iconmethod.png "Express_IconMethod")  
 Ikona metody  
   
-         ![Ikona Właściwość](../ide/media/express-iconproperty.png "Express_IconProperty")  
+         ![Property icon](../ide/media/express-iconproperty.png "Express_IconProperty")  
 Ikona Właściwość  
   
          ![Ikona zdarzenie](../ide/media/express-iconevent.png "Express_IconEvent")  
@@ -74,7 +69,7 @@ Ikona zdarzenie
   
          Aby dowiedzieć się więcej na temat `ShowDialog()` metody, zobacz [metoda ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
-    5.  Kiedy używasz metody na kontrolce lub składnik (nazywane *wywołanie metody*), musisz dodać nawiasy. Wprowadź nawiasy otwierające i zamykające natychmiast po "g" w `ShowDialog`: `()` teraz powinno wyglądać "openFileDialog1.ShowDialog()".  
+    5.  Kiedy używasz metody na kontrolce lub składnik (nazywane *wywołanie metody*), musisz dodać nawiasy. Wprowadź nawiasy otwierające i zamykające natychmiast po "g" w `ShowDialog`: `()` Teraz powinien on wyglądać "openFileDialog1.ShowDialog()".  
   
         > [!NOTE]
         >  Metody są ważną częścią dowolnego programu, a ten samouczek pokazał kilka sposobów wykorzystania metod. Można wywołać metodę składnika, aby nakazać mu coś, tak jak Wywołałeś **OpenFileDialog** składnika `ShowDialog()` metody. Można tworzyć swoje własne metody, które umożliwiają programowi wykonywanie czynności, jak ta, którą tworzymy teraz, o nazwie `showButton_Click()` metody, która otwiera okno dialogowe i obraz, gdy użytkownik wybierze przycisk.  
@@ -106,9 +101,6 @@ Ikona zdarzenie
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 9: Przegląd, komentarz i kodu testu](../ide/step-9-review-comment-and-test-your-code.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 9: Przejrzyj, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7: Dodawanie składników okna dialogowego do formularza Your](../ide/step-7-add-dialog-components-to-your-form.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [kroku 7: Dodawanie składników okna dialogowego do formularza](../ide/step-7-add-dialog-components-to-your-form.md).

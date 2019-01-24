@@ -1,14 +1,9 @@
 ---
 title: Uruchamianie aplikacji Windows Phone w emulatorze | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739984"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761769"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Uruchamianie aplikacji Windows Phone w emulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowania i testowania aplikacji Windows Phone na komputerze bez urządzenia fizycznego. Można symulacji typowe touch i obrót zdarzeń i wybrać rozmiar ekranu fizycznego i rozwiązania, który chcesz emulować. Możesz także testować wiele często używane funkcje, takie jak lokalizacja, sieci, powiadomienia, czujników, przyspieszeniomierza i opcjonalnie karta SD.  
   
- Aby uzyskać więcej informacji o funkcjach, które można przetestować w emulatorze, zobacz [testowania aplikacji funkcji w Windows Phone Emulator](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Aby uzyskać więcej informacji o funkcjach, które można przetestować w emulatorze, zobacz [testowania aplikacji funkcji w Windows Phone Emulator](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Razem z Visual Studio emulator zapewnia kompletne środowisko, w którym można projektowania, tworzenia, debugowania i testowania aplikacji Windows Phone.  
   
@@ -189,7 +184,7 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
   Oryginalny obraz emulatora zawsze jest wyświetlany jako pierwszy element **punktów kontrolnych** listy i nie można zmienić ani usunąć. Jednak można wybrać innej migawki, jako domyślny obraz emulatora.  
   
-  ![Na karcie punkty kontrolne Emulator Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Punkty kontrolne na karcie Windows Phone Emulator](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Przechwytywanie zrzutów ekranu w emulatorze  
  Zrzuty ekranu swoich aplikacji Windows Phone można utworzyć za pomocą narzędzia zrzut ekranu z okna dodatkowe narzędzia. Narzędzie tworzy pliki PNG, pasujące rozwiązanie uruchomiony emulator.  
@@ -225,6 +220,3 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
 -   W programie Visual Studio, należy określić kompilację wydania. Po określeniu kompilację wydania, należy uruchomić aplikację, wybierając **Wdróż _[Nazwa aplikacji]_**  link **kompilacji** menu.  
   
 -   Alternatywnie możesz przekształcić w komentarz komentarz wiersz kodu w pliku app.xaml.cs lub app.xaml.vb, który ustawia wartość `EnableFrameRateCounter` do `true`.
-
-
-

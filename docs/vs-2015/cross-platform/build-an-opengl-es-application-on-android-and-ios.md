@@ -1,27 +1,22 @@
 ---
 title: Tworzenie aplikacji OpenGL ES w systemach Android i iOS | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
 caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 4978c8196553dba5566ec63fbfcd133d06b6dd6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 648286cca70641d005e27682fe911a783421e6fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758099"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Tworzenie aplikacji OpenGL ES w systemach Android i iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,4 +152,3 @@ Po zainstalowaniu Visual C++ for Cross-Platform Mobile Development opcji, można
  ![Projekt z listy rozwijanej przełącznik kontekst, w edytorze](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
   
  Czerwona linia falista są oznaczone problemów IntelliSense w bieżącym projekcie. Purpurowa linia falista są oznaczone problemów w innych projektach. Domyślnie program Visual Studio nie obsługuje kod kolorowania i technologii IntelliSense dla plików języka Java lub języka Objective-C. Można nadal zmodyfikować pliki źródłowe i zmienić zasoby, aby ustawić nazwę swojej aplikacji, ikony i inne szczegóły implementacji.
-

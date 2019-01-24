@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Zarządzanie Windows edytora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zarządzaj Windows edytora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
@@ -18,15 +13,15 @@ ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db6df2e7a3e7b0df1859c6a36871758ccf1d30db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761643"
 ---
-# <a name="how-to-manage-editor-windows"></a>Porady: zarządzanie oknami edytora
+# <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzaj Windows edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podział okna edytora lub przez otwarcie kilka wystąpień okna edytora.  
@@ -65,6 +60,3 @@ Możesz jest od razu pracować nad kodem w kilku lokalizacjach. W tym przez podz
  [Dopasowywanie edytora](../ide/customizing-the-editor.md)   
  [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Dostosowywanie układów okien](../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

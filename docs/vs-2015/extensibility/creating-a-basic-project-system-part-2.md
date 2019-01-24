@@ -1,14 +1,9 @@
 ---
 title: Tworzenie systemu podstawowego projektu, część 2 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753964"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755521"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +188,7 @@ ZipProjects:
   
     Na [!INCLUDE[win7](../includes/win7-md.md)]: W Start menu Znajdź **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, a następnie wybierz **Zresetuj wystąpienie eksperymentalne programu Visual Studio Microsoft**.  
   
-    W nowszych wersjach systemu Windows: na Start ekranu, wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
+    W nowszych wersjach systemu Windows: Na ekranie startowym wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
   
 2. Zostanie wyświetlone okno wiersza polecenia. Po wyświetleniu wyrazy `Press any key to continue`, naciśnij klawisz ENTER. Po zamknięciu okna, Otwórz program Visual Studio.  
   
@@ -230,7 +225,7 @@ ZipProjects:
   
 5.  W pliku .csproj Dodaj \<OutputSubPath > do każdego z elementów ZipProject. Cofnij ładowanie projektu, jak poprzednio i wyedytuj plik projektu.  
   
-6.  Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. ZipProject  
+6.  Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ to nazwa podana przez użytkownika w **nowy projekt** dialogowym zmodyfikowane w celu usunięcia wszystkich niebezpiecznych znaków i spacji.  
   
-  Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  Jeśli chcesz utworzyć własny parametr szablonu niestandardowego, zobacz [NIB: instrukcje: przekazywanie niestandardowych parametrów w szablonach](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  Jeśli chcesz utworzyć własny parametr szablonu niestandardowego, zobacz [NIB: Instrukcje: Niestandardowe parametry są przekazywane do szablonów](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Aby zastąpić parametry szablonu projektu  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Zamknij wystąpienie doświadczalne programu Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

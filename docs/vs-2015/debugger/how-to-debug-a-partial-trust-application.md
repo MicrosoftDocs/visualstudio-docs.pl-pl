@@ -1,14 +1,9 @@
 ---
-title: 'Porady: debugowanie aplikacji częściowej relacji zaufania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie aplikacji częściowej relacji zaufania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761284"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Porady: debugowanie częściowo zaufanych aplikacji
+# <a name="how-to-debug-a-partial-trust-application"></a>Instrukcje: Debugowanie aplikacji częściowej relacji zaufania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma zastosowanie do Windows i aplikacji konsoli.  
@@ -66,7 +61,7 @@ Ma zastosowanie do Windows i aplikacji konsoli.
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Aby dodać dodatkowe uprawnienia, gdy wystąpi wyjątek zabezpieczeń  
   
-1.  **Asystenta wyjątków** pojawi się okno dialogowe z komunikatem: **securityexception — został nieobsługiwany.**  
+1.  **Asystenta wyjątków** pojawi się okno dialogowe z komunikatem: **Securityexception — jest nieobsługiwany.**  
   
 2.  W **Asystenta wyjątków** dialogowego **akcje**, kliknij przycisk **Dodaj uprawnienia do projektu**.  
   
@@ -89,6 +84,3 @@ Ma zastosowanie do Windows i aplikacji konsoli.
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)
-
-
-

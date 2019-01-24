@@ -1,13 +1,8 @@
 ---
 title: Używanie modeli w procesie tworzenia aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 618978d56a6d8a06d2ed2258f1d0bae93a125bab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757702"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768077"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmienić systemu, aplikacji lub składnika. Model może pomóc w wizualizacji na świecie, w którym działa system, wyjaśnienia potrzeb użytkowników, zdefiniuj architekturze systemu, analizowanie kodu i upewnij się, że Twój kod spełnia wymagania. Zobacz [wideo Channel 9: poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
+W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmienić systemu, aplikacji lub składnika. Model może pomóc w wizualizacji na świecie, w którym działa system, wyjaśnienia potrzeb użytkowników, zdefiniuj architekturze systemu, analizowanie kodu i upewnij się, że Twój kod spełnia wymagania. Zobacz [wideo Channel 9: Poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje każdy typ modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -104,7 +99,7 @@ W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmien
   
 -   Zastosowań. Możesz połączyć przypadek użycia do zadań tworzenie implementujące go.  
   
--   Użyj rozszerzenia wielkości liter. Jeśli tylko jeden z aspektów przypadek użycia będą realizowane w iteracji, można oddzielić je w przypadku użycia podstawowego wraz z jednego lub więcej rozszerzeń. Rozszerzenia są przypadki użycia w przypadku podstawowej relacji "rozszerzenia". Aby uzyskać więcej informacji na temat rozszerzenia przypadków użycia, zobacz [diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
+-   Użyj rozszerzenia wielkości liter. Jeśli tylko jeden z aspektów przypadek użycia będą realizowane w iteracji, można oddzielić je w przypadku użycia podstawowego wraz z jednego lub więcej rozszerzeń. Rozszerzenia są przypadki użycia w przypadku podstawowej relacji "rozszerzenia". Aby uzyskać więcej informacji na temat rozszerzenia przypadków użycia, zobacz [diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md).  
   
 -   Komentarz opisujący reguł biznesowych lub jakość wymagań usługi. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
@@ -137,18 +132,15 @@ W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmien
   
 |**Kategoria**|**Łącza**|  
 |------------------|---------------|  
-|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak mogę wideo: sposób tworzenia i użyj modeli i diagramów UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: UML w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [serii MSDN jak mogę: narzędzi UML i rozszerzalność (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak mogę wideo: Sposób tworzenia i używania modeli UML i diagramów (Visual Studio 2010 w wersji Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [witryny Channel 9: UML w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN jak mogę serii: Narzędzia UML i rozszerzalność (Visual Studio 2010 w wersji Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogi**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Używaj modeli w Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Używaj modeli w Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
  [Opracowywanie testów na podstawie modelu](../modeling/develop-tests-from-a-model.md)   
  [Tworzenie struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
-
-
-

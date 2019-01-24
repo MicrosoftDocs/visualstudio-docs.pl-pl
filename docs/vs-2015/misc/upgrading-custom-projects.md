@@ -1,27 +1,22 @@
 ---
 title: Uaktualnianie projektów niestandardowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading project systems
 - projects [Visual Studio SDK], upgrading
 - project system upgrades [Visual Studio]
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
-manager: douge
-ms.openlocfilehash: 12b99770a7ab884e077ad6ba051a35d6e5316a49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b222da27d07cc08774a525819edf2d462bd28844
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844682"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795496"
 ---
 # <a name="upgrading-custom-projects"></a>Uaktualnianie projektów niestandardowych
 W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami programu Visual Studio produktu, a następnie potrzeba do obsługi, uaktualnianie pliku projektu ze starej do nowej wersji. Do obsługi, uaktualniania z można uczestniczyć w **Kreator konwersji Visual Studio**, implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu. Ten interfejs zawiera tylko mechanizm dostępne dla uaktualnienie kopii. W przypadku uaktualniania projektu odbywa się jako część rozwiązania zostanie otwarty. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Interfejs jest implementowany przez fabrykę projektu lub powinien wynosić co najmniej możliwe do uzyskania z fabryki projektu.  
@@ -60,7 +55,7 @@ W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami p
   
 6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> Interfejs jest używany do implementowania dowolny rodzaj uaktualnienia pliku, który musi zostać przeprowadzona w ramach uaktualnienia projektu. Ten interfejs nie jest wywoływana z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale jest dostarczany jako mechanizm do zaktualizowania plików, które są częścią system projektu, ale system projektu może nie być świadome bezpośrednio. Na przykład ta sytuacja może wystąpić, jeśli kompilator związane z plików i właściwości nie są obsługiwane przez ten sam zespół projektowy, obsługujący reszty systemu projektu.  
   
-## <a name="ivsprojectupgrade-implementation"></a>Implementacja IVsProjectUpgrade  
+## <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade Implementation  
  Jeśli zaimplementowano systemu projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> tylko nie mogą uczestniczyć w **Kreator konwersji Visual Studio**. Jednak nawet w przypadku zaimplementowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfejsu, można nadal delegować uaktualnienia pliku do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementacji.  
   
 #### <a name="to-implement-ivsprojectupgrade"></a>Aby zaimplementować IVsProjectUpgrade  
@@ -114,7 +109,7 @@ W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami p
   4.  Wywołania środowiska `IVsProjectUpgrade::UpgradeProject` raz drugi w celu określenia, czy obiekt projektu powinny zostać uaktualnione. Jednak to wywołanie nowy, drugie wystąpienie projektu o nazwie Project2. Jest to projekt, który jest otwierany w rozwiązaniu.  
   
       > [!NOTE]
-      >  W przypadku pierwszego projektu projektu Project1, jest umieszczany w stan nieaktywny, a następnie musi zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszego wywołania usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji. Zobacz [podstawowego projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) dla implementacji `IVsProjectUpgrade::UpgradeProject`.  
+      >  W przypadku pierwszego projektu projektu Project1, jest umieszczany w stan nieaktywny, a następnie musi zwracać <xref:Microsoft.VisualStudio.VSConstants.S_OK> z pierwszego wywołania usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementacji. Zobacz [podstawowego projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) dla implementacji `IVsProjectUpgrade::UpgradeProject`.  
   
   5.  Należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> i przekaż wartość <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> dla `rgfQueryEdit` parametru.  
   
@@ -123,6 +118,6 @@ W przypadku zmiany dane utrwalone w pliku projektu, między różnymi wersjami p
   W przypadku awarii do uaktualnienia, zwracają <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> z `IVsProjectUpgrade::UpgradeProject`. Jeśli uaktualnienie nie jest konieczne, lub nie zdecydujesz się na uaktualnienie, należy traktować `IVsProjectUpgrade::UpgradeProject` wywołać jako pusta. Po powrocie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, węzeł zastępczy jest dodawany do rozwiązania dla Twojego projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Kreator konwersji Visual Studio](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Kreator konwersji Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Uaktualnianie elementów projektu](../misc/upgrading-project-items.md)   
  [Projekty](../extensibility/internals/projects.md)

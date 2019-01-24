@@ -1,14 +1,9 @@
 ---
-title: 'DA0506: Maksymalne Bajty prywatne przydzielone dla procesu poddawanego profilowaniu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'DA0506: Maksymalna liczba bajtów prywatnych alokowanych dla PROFILOWANEGO procesu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0506
 - vs.performance.DA0506
@@ -17,19 +12,19 @@ ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdd7d63ad7dd0261394d3333cdd35ec5f5a330f1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97d1cacccc2fdd6abbd13aace1de71b28975779e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767492"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maksymalne bajty prywatne przydzielone dla procesu poddawanego profilowaniu
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maksymalna liczba bajtów prywatnych alokowanych dla PROFILOWANEGO procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0506 |  
-| Kategoria | Monitorowanie zasobów |  
+Rule Id|DA0506|  
+|Category|Resource Monitoring|  
 | Metoda profilowania | Wszystkie |  
 | Komunikat | Te dane zostały zebrane wyłącznie w celach informacyjnych. Licznik bajtów prywatnych procesu mierzy pamięć wirtualną alokowaną przez profilowany proces. Zgłaszana wartość to maksimum zaobserwowane we wszystkich interwałach pomiarowych. |  
 | Typ reguły | Informacji |  
@@ -51,6 +46,3 @@ Identyfikator reguły | DA0506 |
  Aby porównać wydajność różnych wersji lub kompilacjach programu lub aby zrozumieć wydajność aplikacji w różnych scenariuszach profilowania, należy użyć podanej wartości.  
   
  Maksymalna wartość Prywatne bajty procesu, który zbliża się do limitu architektury dla rozmiar, jaki można powiększać przestrzeni adresowej procesu może prowadzić do poza wyjątki pamięci. Aby uzyskać więcej informacji, zobacz [badanie problemów z pamięcią](http://go.microsoft.com/fwlink/?LinkID=177833) w MSDN Magazine.
-
-
-

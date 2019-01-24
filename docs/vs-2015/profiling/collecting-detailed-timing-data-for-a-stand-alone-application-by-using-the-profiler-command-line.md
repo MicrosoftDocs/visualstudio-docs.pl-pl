@@ -1,14 +1,9 @@
 ---
 title: Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
@@ -16,13 +11,13 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925800"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803952"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +28,8 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
   
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
-|**Profilowanie aplikacji .NET Framework przy użyciu Instrumentacji**|-   [Jak: Instrument składnik .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profil aplikacji C/C++ przy użyciu Instrumentacji**|-   [Jak: Instrumentacja natywnych składnika i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profilowanie aplikacji .NET Framework przy użyciu Instrumentacji**|-   [Jak: Instrumentacja składnika .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profil aplikacji C/C++ przy użyciu Instrumentacji**|-   [Jak: Instrumentacja składnika natywnego i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
@@ -59,6 +54,3 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
   
 ## <a name="reference"></a>Tematy pomocy  
  [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
-
-
-

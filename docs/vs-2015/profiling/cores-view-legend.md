@@ -1,14 +1,9 @@
 ---
 title: Widok rdzeni — Legenda | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c00b6ccf56eb9e171fbaf9afdaea1828b5a1325
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780585"
 ---
 # <a name="cores-view-legend"></a>Widok rdzeni — Legenda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Widok rdzeni — Legenda identyfikuje każdy wątek, kolor i nazwę. Zawiera on 
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)
-
-
-

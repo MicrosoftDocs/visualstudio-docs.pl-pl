@@ -1,26 +1,21 @@
 ---
 title: Flagi bitowe używane przez określone polecenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781306"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flagi bitowe używane przez określone polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +45,13 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |Flaga|Wartość|Opis|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignoruj różnice wielkości liter.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice odstępu. **Uwaga:** `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignoruj różnice odstępu. **Uwaga:**  `SCC_DIFF_IGNORECASE` i `SCC_DIFF_IGNORESPACE` flagi są opcjonalne flag bitowych.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Głębokość kolejki przez porównywanie zawartości całego pliku.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|Głębokość kolejki według sumy kontrolnej.|  
 |`SCC_DIFF_QD_TIME`|0x0040|Głębokość kolejki przez sygnaturę daty i godziny pliku.|  
 |`SCC_DIFF_QUICK_DIFF`|0x0070|Jest to maskę użytych do sprawdzenia wszystkie flagi bitowe głębokość kolejki. Nie powinny być przekazywane do funkcji; trzy flagi bitowe głębokość kolejki wzajemnie się wykluczają. Głębokość kolejki zawsze oznacza nie wyświetlania interfejsu użytkownika.|  
   
-## <a name="populatelist-flag"></a>Flaga PopulateList  
+## <a name="populatelist-flag"></a>PopulateList Flag  
  Ta flaga jest używana przez [SccPopulateList](../extensibility/sccpopulatelist-function.md) w `fOptions` parametru.  
   
 |Flaga|Wartość|Opis|  
@@ -72,7 +67,7 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
 |SCC_PDL_RECURSIVE|0x0001|Rekursywnie sprawdzić wszystkie katalogi w ramach każdego danego katalogu.|  
 |SCC_PDL_INCLUDEFILES|0x0002|Nazwy załączonych plików w procesie badania.|  
   
-## <a name="openproject-flags"></a>Flagi OpenProject  
+## <a name="openproject-flags"></a>OpenProject Flags  
  Te flagi są używane przez [SccOpenProject](../extensibility/sccopenproject-function.md) w `dwFlags` parametru.  
   
 |Wartość opcji|Wartość|Opis|  
@@ -85,8 +80,8 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
   
 |Flaga|Wartość|Opis|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE nie pliki, to przekazanie katalogi: rozpoczynanie wszystkich plików w katalogach.|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE jest przekazanie katalogami: pobieranie tych katalogów oraz ich podkatalogów.|  
+|`SCC_GET_ALL`|0x00000001L|Środowisko IDE jest przekazanie katalogi, nie pliki: Pobierz wszystkie pliki w katalogach.|  
+|`SCC_GET_RECURSIVE`|0x00000002L|Środowisko IDE jest przekazanie katalogi: Skorzystaj z tych katalogów i wszystkich jego podkatalogów.|  
   
 ## <a name="noption-values"></a>Wartości nOption  
  Te flagi są używane przez [SccSetOption](../extensibility/sccsetoption-function.md) w `nOption` parametru.  
@@ -114,4 +109,3 @@ Zachowanie wiele funkcji w interfejsie API wtyczki kontroli źródła można zmo
   
 ## <a name="see-also"></a>Zobacz też  
  [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
-

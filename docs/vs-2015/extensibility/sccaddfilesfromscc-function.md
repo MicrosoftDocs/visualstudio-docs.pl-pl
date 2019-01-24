@@ -1,14 +1,9 @@
 ---
-title: Funkcja SccAddFilesFromSCC | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: SccAddFilesFromSCC Function | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 537ec62d6bd504a588a70931a7c66e20989fd9f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805608"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765131"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +76,8 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_PROJNOTOPEN|Projekt nie jest otwarty.|  
 |SCC_E_OPNOTPERFORMED|Połączenie nie jest w tym samym projekcie, określony przez `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do aktualizacji bazy danych.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieznany błąd.|  
+|SCC_E_NONSPECIFICERROR|Nieznany błąd.|  
 |SCC_I_RELOADFILE|Pliku lub projektu wymaga ponownego załadowania.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
-

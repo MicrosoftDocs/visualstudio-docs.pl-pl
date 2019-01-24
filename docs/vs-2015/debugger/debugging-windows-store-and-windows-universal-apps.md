@@ -1,14 +1,9 @@
 ---
 title: Debugowanie aplikacji Windows Store i Windows Universal | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d126afed3d8f164eebdec5e81d6cf60232305734
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765339"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Debugowanie aplikacji ze Sklepu Windows i aplikacji uniwersalnych systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Debuger programu Visual Studio zapewnia pełną obsługę do debugowania aplikac
   
 ## <a name="see-also"></a>Zobacz też  
  [Analizowanie jakości kodu przy użyciu statycznej analizy kodu](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
-
-
-

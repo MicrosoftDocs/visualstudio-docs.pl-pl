@@ -1,26 +1,21 @@
 ---
 title: Dane dokumentu i dokument widok w edytorach niestandardowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759621"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i widok dokumentu w edytorach niestandardowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +41,10 @@ Niestandardowy edytor, który składa się z dwóch części: obiekt danych doku
 ## <a name="see-also"></a>Zobacz też  
  [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md)   
  [Uproszczone osadzanie](../extensibility/simplified-embedding.md)   
- [Porady: dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Instrukcje: Dołączanie widoków do danych dokumentów](../extensibility/how-to-attach-views-to-document-data.md)   
  [Zarządzanie właścicielem blokady dokumentu](../extensibility/document-lock-holder-management.md)   
  [Widoki jedną i wieloma kartami](../extensibility/single-and-multi-tab-views.md)   
  [Zapisywanie standardowego dokumentu](../extensibility/internals/saving-a-standard-document.md)   
  [Trwałość i uruchamianie tabeli dokumentów](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [Określanie który Edytor służy do otwierania pliku w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [Fabryki edytorów](../extensibility/editor-factories.md)
-

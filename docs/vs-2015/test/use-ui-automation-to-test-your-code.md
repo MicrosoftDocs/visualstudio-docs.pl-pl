@@ -1,13 +1,9 @@
 ---
 title: Używanie automatyzacji interfejsu użytkownika do testowania kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
 - vs.codedUITest.recorder
@@ -20,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 31d11e16eba87efd19ae07afde64e27e9905636c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53899603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767958"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -451,9 +447,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Instrukcje: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Uruchamianie automatycznych testów w programie Microsoft Test Manager](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)
+- [Uruchamianie automatycznych testów w programie Microsoft Test Manager](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Instrukcje: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Instrukcje: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -469,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 

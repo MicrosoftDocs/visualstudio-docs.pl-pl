@@ -1,25 +1,20 @@
 ---
 title: Zadania projektanta schematu XML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 87ac827dff2920924bee3a2730fee0ae44f411fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767769"
 ---
 # <a name="xml-schema-designer-tasks"></a>Zadania projektanta schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +35,13 @@ W tej sekcji opisano sposób wykonania typowych zadań przy użyciu narzędzia P
  [Instrukcje: Przełączanie się między widokami i edytorem XML](../xml-tools/how-to-switch-between-views-and-the-xml-editor.md)  
  Pokazuje, jak przełączać się między widokami projektanta schematu XML i edytorem XML.  
   
- [Instrukcje: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
+ [Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
  Wyjaśnia, jak można dodać węzły do obszaru roboczego projektanta schematu XML z Eksploratora schematu XML.  
   
  [Instrukcje: Dodawanie węzłów do obszaru roboczego z widoku startowego](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
  Pokazuje, jak dodawanie globalnego węzłów do obszaru roboczego z widoku startowego.  
   
- [Instrukcje: Omówienie zestawu schematu przy użyciu widoku wykresu](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md)  
+ [Instrukcje: Zapoznaj się z omówieniem zestawu schematu przy użyciu widoku wykresu](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md)  
  Opisuje sposób zapoznaj się z omówieniem schematu można ustawić przy użyciu widoku wykresu.  
   
  [Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości](../xml-tools/how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md)  
@@ -63,6 +58,3 @@ W tej sekcji opisano sposób wykonania typowych zadań przy użyciu narzędzia P
   
 ## <a name="see-also"></a>Zobacz też  
  [Projektant schematu XML](../xml-tools/xml-schema-designer.md)
-
-
-

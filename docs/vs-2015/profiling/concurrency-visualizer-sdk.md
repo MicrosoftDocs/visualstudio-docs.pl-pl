@@ -1,27 +1,22 @@
 ---
 title: Narzędzie CONCURRENCY Visualizer zestawu SDK | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769326"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,6 +130,3 @@ Możliwe jest instrumentowanie kodu źródłowego za pomocą SDK narzędzia Conc
 |[Odwołanie do biblioteki języka C](../profiling/c-library-reference.md)|W tym artykule opisano interfejs API wizualizatora współbieżności dla języka C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Opisuje interfejs API wizualizatora współbieżności dla kodu zarządzanego.|  
 |[Concurrency Visualizer](../profiling/concurrency-visualizer.md)|Informacje referencyjne dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności i że profilowania obejmują danych wykonanie wątku.|
-
-
-

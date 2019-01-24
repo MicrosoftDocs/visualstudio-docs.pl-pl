@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Korzystanie z interfejsów API Profiler | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Za pomocą interfejsów API Profiler | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -16,15 +11,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749081"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769638"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Wskazówki: korzystanie z interfejsów API profilera
+# <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Za pomocą interfejsów API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API narzędzi profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zebranych podczas profilowania instrumentacji.  
@@ -44,9 +39,9 @@ Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUD
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W tym przewodniku przyjęto założenie, że preferowanego środowiska deweloperskiego jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:  
   
- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
+ [Instrukcje: Wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
   
- [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Instrukcje: Odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Domyślnie po uruchomieniu profilera, profiler zbiera dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.  
   
@@ -171,6 +166,3 @@ DataCollection.CurrentId);
  [Dokumentacja interfejsu API Profiler programu Visual Studio (Native)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   
  [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

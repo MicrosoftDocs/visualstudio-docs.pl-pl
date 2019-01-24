@@ -1,25 +1,20 @@
 ---
 title: Wprowadzenie do narzędzi Visual Studio Tools for Unity | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764612"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
   
      [Pobierz program Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   W przypadku programu Visual Studio 2012 Professional lub Visual Studio 2012 Premium:  
+-   For Visual Studio 2012 Professional or Visual Studio 2012 Premium:  
   
      [Pobierz program Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
@@ -119,4 +114,3 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
   
 ## <a name="see-also"></a>Zobacz też  
  [Strona główna aparatu Unity](http://unity3d.com)
-

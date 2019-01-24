@@ -1,14 +1,9 @@
 ---
 title: Idiadatasource::loaddatafrompdb — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 02159073-8144-47f8-a0b0-aa0edcb92b5b
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0dd4700ba658aec5dd2cd59858cc243a7d79a523
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60b842e90c12d9a0bf07672380d24c8bacf71407
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773046"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ HRESULT loadDataFromPdb (
 |E_PDB_NOT_FOUND|Nie można otworzyć pliku lub określić, że plik ma nieprawidłowy format.|  
 |E_PDB_FORMAT|Podjęto próbę uzyskania dostępu do pliku w formacie przestarzały.|  
 |E_INVALIDARG|Nieprawidłowy parametr.|  
-|WARTOŚĆ E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
+|E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda ładuje dane debugowania bezpośrednio z pliku .pdb.  
@@ -72,10 +67,7 @@ if (FAILED(hr))
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [Idiadatasource::loadandvalidatedatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
-
-
-

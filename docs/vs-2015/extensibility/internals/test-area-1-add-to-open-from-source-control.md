@@ -1,27 +1,22 @@
 ---
 title: 'Obszar testowy 1: Dodawanie do otwierania z kontroli źródła | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789691"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Obszar testowy 1: Dodaj / Otwórz z kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadki testowe:  
   
--   Dla [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Otwórz z kontroli źródła: **pliku**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
+-   Aby uzyskać [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Otwórz z kontroli źródła: **Plik**, **Otwórz**, **projektu**/**rozwiązania**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
   
--   Dla innych źródła wtyczek kontroli, Otwórz z kontroli źródła: **pliku**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
+-   Dla innych źródła wtyczek kontroli Otwórz z kontroli źródła: **Plik**, **kontroli źródła**, **Otwórz z kontroli źródła**.  
   
--   Dodaj do kontroli źródła: **pliku**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj Wybrane projekty do kontroli źródła**.  
+-   Dodaj do kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj rozwiązanie do pliku kontroli źródła**, **kontroli źródła**, **Dodaj wybrane projekty do kontroli źródła**.  
   
 -   Menu skrótów (projekt/rozwiązanie) **Dodaj rozwiązanie do kontroli źródła**.  
   
--   Dodaj z kontroli źródła: **pliku**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
+-   Dodaj z kontroli źródła: **Plik**, **kontroli źródła**, **Dodaj projekt z kontroli źródła**.  
   
 -   Dla [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Dodaj ze źródła kontrolki jest również dostępna z **pliku**, **Dodaj**, **istniejący projekt**; Szukaj w [!INCLUDE[vsvss](../../includes/vsvss-md.md)] lokalizacji.  
   
@@ -61,7 +56,7 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
 ## <a name="test-cases"></a>Przypadki testowe  
  Poniżej przedstawiono określonych przypadków testowych do dodawania / Otwórz z kontroli źródła obszar testowy.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Zamierzone, Zapisz 1a: Dodaj rozwiązanie do kontroli źródła  
+### <a name="case-1a-add-solution-to-source-control"></a>Wielkość 1a: Dodaj rozwiązanie do kontroli źródła  
  Ten przypadek testowy koncentruje się na dodawanie rozwiązania do kontroli źródła.  
   
 |Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
@@ -92,4 +87,3 @@ Ta-wtyczka do kontroli źródła testów obszar obejmuje umieszczenie rozwiąza�
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

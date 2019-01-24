@@ -1,13 +1,9 @@
 ---
 title: 'CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotNestGenericTypesInMemberSignatures
 - CA1006
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a55ae3437ea604998be77cd43e0e100f89c365b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94fe06d62e6d90be0b3cdf64239c17c4f1975f94
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797765"
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Nie zagnieżdżaj typów ogólnych w podpisach składowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

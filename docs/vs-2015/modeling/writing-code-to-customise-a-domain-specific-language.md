@@ -1,25 +1,22 @@
 ---
 title: Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866327"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770650"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ W tej sekcji dowiesz się, jak za pomocą niestandardowego kodu dostępu, modyfi
   
  Istnieje kilka kontekstów, w których można napisać kod, który współdziała z języka DSL:  
   
-- **Polecenia niestandardowe.** Można utworzyć polecenia, że użytkownicy mogą być wywoływane przez kliknięcie prawym przyciskiem myszy na diagramie i które można modyfikować modelu. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+- **Polecenia niestandardowe.** Można utworzyć polecenia, że użytkownicy mogą być wywoływane przez kliknięcie prawym przyciskiem myszy na diagramie i które można modyfikować modelu. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 - **Sprawdzanie poprawności.** Można napisać kod, który sprawdza, czy model jest w poprawnym stanie. Aby uzyskać więcej informacji, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).  
   
@@ -36,7 +33,7 @@ W tej sekcji dowiesz się, jak za pomocą niestandardowego kodu dostępu, modyfi
   
 - **Transformacja tekstu.** Możesz tworzyć szablony tekstowe, które zawierają kod, który uzyskuje dostęp do modelu i generuje plik tekstowy, na przykład w celu generowania kodu programu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Inne rozszerzenia programu Visual Studio.** Można napisać oddzielne rozszerzenia VSIX, które odczytują i modyfikowania modeli. Aby uzyskać więcej informacji, zobacz [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Inne rozszerzenia programu Visual Studio.** Można napisać oddzielne rozszerzenia VSIX, które odczytują i modyfikowania modeli. Aby uzyskać więcej informacji, zobacz [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Wystąpienia klas, które można zdefiniować w DslDefinition.dsl są przechowywane w strukturze danych o nazwie *Store In-Memory* (ISP) lub *Store*. Klas zdefiniowanych w DSL zawsze zająć Store jako argumentu do konstruktora. Jeśli na przykład modem DSL definiuje klasę o nazwie przykładowy:  
   
@@ -80,6 +77,3 @@ W tej sekcji dowiesz się, jak za pomocą niestandardowego kodu dostępu, modyfi
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

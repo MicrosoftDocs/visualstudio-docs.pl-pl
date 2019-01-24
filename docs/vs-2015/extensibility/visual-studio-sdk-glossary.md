@@ -1,26 +1,21 @@
 ---
 title: Słownik zestawu SDK programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785737"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Słownik zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,8 +182,7 @@ W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](
   Obiekt COM, który implementuje `IVsUIHierarchy` interfejs umożliwia wyświetlanie hierarchii. Implementuje okno hierarchii interfejsu użytkownika `ISelectionContainer` współpracować w celu aktualizacji w oknie właściwości; innych typów projektów systemu windows można użyć tej implementacji, w razie potrzeby.  
   
   VSCT  
-  Tabela poleceń programu Visual Studio. Pliku vsct zawiera informacje na temat umieszczania i zachowań, menu, paski narzędzi i poleceń w formacie XML.  
+  Visual Studio Command Table. Pliku vsct zawiera informacje na temat umieszczania i zachowań, menu, paski narzędzi i poleceń w formacie XML.  
   
-  Pakietu VSPackage  
+  VSPackage  
   Do zainstalowania część oprogramowania, które rozszerza środowiska IDE programu Visual Studio, przyczyniając się co najmniej jeden z następujących czynności: interfejs użytkownika, usługi, typy projektów lub Projektant/Edytor. Pakietu VSPackage składa się z obiektu COM, który implementuje `IVsPackage` interfejsu i jeden lub więcej innych obiektów COM, które implementują inne interfejsy do obsługi zaznaczenia i inne funkcje. Ponadto pakietu VSPackage ma wymagania dotyczące określonej rejestracji.
-

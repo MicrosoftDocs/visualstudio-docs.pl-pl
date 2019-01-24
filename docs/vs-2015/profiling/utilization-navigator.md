@@ -1,27 +1,22 @@
 ---
 title: Nawigator wykorzystania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.utilizationnavigator
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fd3b1df58ccfbc33c256db658e4ff7f3a98d7563
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f4aec8cc1a707535e9cf6ae204be0a7ff67ea51d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788325"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,8 @@ Nawigator wykorzystania i wybrany przedział czasu
   
  Poniżej przedstawiono, jak Nawigator wykorzystania można użyć do manipulowania zakres wyświetlanych czasu:  
   
-- Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka i naciśnij klawisz Strzałka w lewo lub w prawo).  
   
-- Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu a następnie naciśnij klawisz Strzałka w lewo lub w prawo).  
   
   Jeśli zmienisz interwał przy użyciu innej kontrolki powiększenia Concurrency Visualizer Nawigator wykorzystania aktualizacji w celu odzwierciedlenia zmiany.
-
-
-

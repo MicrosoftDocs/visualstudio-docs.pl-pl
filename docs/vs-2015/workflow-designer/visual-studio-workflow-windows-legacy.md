@@ -1,11 +1,8 @@
 ---
 title: Windows przepływu pracy programu Visual Studio (starsza wersja) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, designer windows
@@ -13,13 +10,13 @@ ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801242"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Okna przepływów pracy programu Visual Studio (starsza wersja)
 Starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)] może służyć do obiektu docelowego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Starsza wersja projektanta jest projektanta wizualnego, który służy do tworzenia przepływu pracy. Można przeciągnąć działania z **przybornika** projektu powierzchni i ma je skonfigurować. Jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora zajmuje obszaru okno główne, używane przez inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna edytora. Nazwa przepływu pracy jest wyświetlana w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pasek tytułu okna.  

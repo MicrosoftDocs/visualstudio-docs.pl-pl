@@ -1,14 +1,9 @@
 ---
 title: Obsługa ustawień użytkowników | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Custom Settings Points
 - user settings [Visual Studio SDK], registering persistence support
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 445f95b1c52b5ada41918cf0f7d8120d912c209f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8057aa7f2e69d88f6e9cbdf20f9d13105aa031c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762141"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +40,11 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
   
  Poniżej przedstawiono strukturę wpis rejestru:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<wersji >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
   
  `<CSPName`> = "#12345" s  
   
- Pakiet = "{XXXXXX XXXX XXXX XXXX XXXXXXXXX}"  
+ Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
   
  Kategoria = "{YYYY RRRRRR rrrr rrrr YYYYYYYYY}"  
   
@@ -64,4 +59,3 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
 |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID kategorii ustawień.<br /><br /> Implementacje, w oparciu o zestawy międzyoperacyjne, ta wartość może być dowolnie wybrany identyfikator GUID, który [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE przekazuje do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> metody. Wszystkich implementacjach te dwie metody, należy sprawdzić ich argumentów identyfikatora GUID.<br /><br /> W oparciu o MPF implementacji tego identyfikatora GUID jest uzyskiwana przez <xref:System.Type> implementacji klasy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mechanizm ustawienia.|  
 |ResourcePackage|REG_SZ|Identyfikator GUID|Opcjonalna.<br /><br /> Ścieżka do satelitarne biblioteki DLL zawierających zlokalizowanych ciągów Jeśli implementującej pakietu VSPackage nie dostarcza je.<br /><br /> MPF używa odbicia w celu uzyskania odpowiedniego zasobu pakietu VSPackage, więc <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> klasy nie ustawia tego argumentu.|  
 |AlternateParent|REG_SZ|Nazwa folderu, w obszarze strony Opcje narzędzi zawierające ten punkt ustawienia niestandardowe.|Opcjonalna.<br /><br /> Należy ustawić tę wartość, tylko wtedy, gdy implementacja ustawienia obsługuje **opcje narzędzi** stron korzystających z mechanizmu stanu trwałego w [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] zamiast mechanizmu w modelu automatyzacji, który ma być zapisany stan.<br /><br /> W takich przypadkach jest wartością w kluczu AlternateParent `topic` części `topic.sub-topic` ciąg używany do identyfikowania danej **ToolsOptions** strony. Na przykład w przypadku **ToolsOptions** strony `"TextEditor.Basic"` wartość AlternateParent będzie `"TextEditor"`.<br /><br /> Gdy <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> generuje punkt ustawienia niestandardowe, jest taka sama jak nazwa kategorii.|
-

@@ -1,27 +1,22 @@
 ---
-title: 'Krok 7: Zachować widoczność par | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 7. Zachować widoczność par | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766316"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowanie widoczności par
+# <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowywanie widoczności par
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast ukrywania okien przez włączanie czasomierza (za pomocą `Start()` metoda), gra powinna się zresetować, aby go jest już rejestrowanie informacji o wszystkich etykiet używających `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez resetowania kolory dla dwóch etykiet, które zostały wybrane.  
@@ -68,7 +63,4 @@ Gra w dopasowywanie z widocznymi parami ikon
   
 -   Aby przejść do następnego kroku samouczka, zobacz [krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).

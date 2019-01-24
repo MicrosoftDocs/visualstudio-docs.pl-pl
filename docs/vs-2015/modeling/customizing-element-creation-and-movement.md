@@ -1,12 +1,9 @@
 ---
 title: Dostosowywanie tworzenia i przesuwania elementu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768102"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
    1.  W **Eksplorator DSL**, rozwiń węzeł **klasami domeny**. Kliknij prawym przyciskiem myszy `ExampleElement` a następnie kliknij przycisk **Dodaj nowe dyrektywa scalania elementów**.  
   
-   2.  Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **widoku**, **innych Windows**, **szczegóły języka DSL**.)  
+   2.  Upewnij się, że **szczegóły języka DSL** okno jest otwarte, tak aby widoczne szczegółowe informacje o nowych EMD. (Menu: **Wyświetl**, **innych Windows**, **szczegóły języka DSL**.)  
   
 3. Ustaw **klasa indeksowania** w oknie Szczegóły języka DSL w celu zdefiniowania, jakie klasy elementy mogą zostać scalone na `ExampleElement` obiektów.  
   
@@ -148,7 +145,7 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
      Jeśli piszesz kod niestandardowy, który tworzy nowe elementy, możesz jawnie wywołać EMD przy użyciu `ElementOperations.Merge` metody. Dzięki temu kod łączy nowych elementów do modelu w taki sam sposób jak inne operacje. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Przykład: Dodanie kodu akceptowanie niestandardowe do EMD  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Przykład: Dodawanie kodu EMD akceptowanie niestandardowe  
  Dodając kod niestandardowy do EMD, można zdefiniować bardziej złożone zachowanie scalania. Ten prosty przykład uniemożliwia użytkownikowi dodanie więcej niż określoną liczbę elementów do diagramu. Przykład modyfikuje domyślne EMD, który towarzyszy relacji osadzania.  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Aby napisać kod akceptowanie niestandardowe ograniczenia, co użytkownik może dodać  
@@ -211,7 +208,7 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
   
     3.  Sprawdź, że nie można użyć dowolnej z następujących sposobów, aby dodać więcej niż cztery elementy w modelu. Jest to spowodowane wszystkich używają dyrektywa scalania.  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Przykład: Dodanie scalania niestandardowego kodu do EMD  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>Przykład: Dodawanie kodu niestandardowego scalania do EMD  
  W kodzie scalania niestandardowego można zdefiniować, co się dzieje, gdy użytkownik przeciągnie narzędzia lub wkleja na element. Istnieją dwa sposoby, aby zdefiniować niestandardowy scalania:  
   
 1. Ustaw **używa scalania niestandardowego** i podać kod wymagany. Kod zastępuje scalać wygenerowany kod. Użyj tej opcji, jeśli chcesz całkowicie zmienić definicję działanie scalania.  
@@ -324,6 +321,3 @@ Możesz zezwolić elementu można przeciągać innym, z przybornika lub wklejeni
  [Nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md)   
  [Przykładowe diagramy obwodu DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

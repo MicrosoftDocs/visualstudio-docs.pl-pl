@@ -1,14 +1,9 @@
 ---
 title: Konspekt | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - Visual Studio, expand/collapse code
@@ -21,13 +16,13 @@ ms.assetid: d1476758-9d35-4d74-b63c-310661932ecd
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767582"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,4 @@ Można ukryć jakiś kod w widoku, zwijając obszar kodu, aby była ona wyświet
 |Zwiń blok:\<logiczne granic >|(Visual C++) Zwija regionu w funkcji znajduje się punkt wstawiania. Na przykład jeśli punkt wstawiania znajduje się wewnątrz pętli, pętla jest ukryta.|  
 |Zwiń wszystkie w: \<logicznej struktury >|(Visual C++) Zwija wszystkie struktury wewnątrz funkcji.|  
   
- Aby zdefiniować regionów tekst, który chcesz rozwinąć lub zwinąć umożliwia także zestawu SDK programu Visual Studio. Zobacz [wskazówki: Tworzenie konspektu](../extensibility/walkthrough-outlining.md).
-
-
-
+ Aby zdefiniować regionów tekst, który chcesz rozwinąć lub zwinąć umożliwia także zestawu SDK programu Visual Studio. Zobacz [instruktażu: Konspekt](../extensibility/walkthrough-outlining.md).

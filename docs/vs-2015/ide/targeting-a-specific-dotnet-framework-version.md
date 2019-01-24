@@ -1,14 +1,9 @@
 ---
 title: Przeznaczone dla określonej wersji platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -18,13 +13,13 @@ ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755154"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Tworzenie zawartości dla określonej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ W programie Visual Studio można określić wersji lub profilu .NET Framework, d
  [Wielowersyjność kodu w programie Visual Studio ― przegląd](../ide/visual-studio-multi-targeting-overview.md)  
  Zawiera omówienie funkcji wielowersyjności kodu w programie Visual Studio.  
   
- [Instrukcje: Określanie wersji docelowej programu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
- Szczegółowo opisuje sposób określi się konkretny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w projekcie języka Visual Basic, Visual C# lub Visual F #.  
+ [Instrukcje: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ Szczegółowo opisuje sposób określi się konkretny [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dla języka Visual Basic, Visual C# i wizualizacjach F# projektu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [.NET framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
@@ -52,6 +47,3 @@ W programie Visual Studio można określić wersji lub profilu .NET Framework, d
   
  [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  W tym artykule opisano, jak zmienić ustawienia dla projektów Visual C++ pod kątem różnych wersji programu .NET Framework i używać różnych zestawów narzędzi platformy.
-
-
-

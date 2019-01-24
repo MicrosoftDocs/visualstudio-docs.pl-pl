@@ -1,14 +1,9 @@
 ---
 title: Implementowanie zasad ewidencjonowania analizy kodu niestandardowego dla zarządzanego kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752788"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
  Aby utworzyć niestandardowy zestaw reguł dla projektu zespołowego, należy najpierw utworzyć specjalny folder zestaw reguł zasad ewidencjonowania **Eksploratora kontroli źródła**. Następnie utworzysz pliku zestawu reguł i dodaj go do kontroli wersji. Na koniec należy określić regułę, Ustaw jako zasady analizy kodu ewidencjonowania projektu zespołowego.  
   
 > [!NOTE]
->  Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Aby utworzyć folder w projekcie zespołowym, najpierw należy zamapować katalog główny projektu zespołowego do lokalizacji na komputerze lokalnym. Aby uzyskać więcej informacji, zobacz [tworzenie i Praca z obszarami roboczymi (stare)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania  
   
@@ -124,6 +119,3 @@ Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członk
 7.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.  
   
 8.  Określ lokalną wersję pliku zestawu reguł zasad ewidencjonowania.
-
-
-

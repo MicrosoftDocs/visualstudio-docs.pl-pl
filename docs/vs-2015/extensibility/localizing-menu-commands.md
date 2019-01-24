@@ -1,14 +1,9 @@
 ---
 title: Lokalizowanie poleceń Menu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27be664fb035af2c97f0536026b590c468b68b9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771423"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizowanie poleceń menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
    </Button>  
    ```  
   
-    [FamilyTree.es ES.vsct]  
+    [FamilyTree.es-ES.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -97,7 +92,7 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
   
 5.  Otwórz każdy plik Resx, aby zmodyfikować wartości ciągu, zgodnie z potrzebami dla określonego języka i kultury. Poniższy przykład przedstawia definicję zlokalizowanych zasobów, na pasku tytułu okna narzędzi.  
   
-     [Resources.en US.resx]  
+     [Resources.en-US.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -105,7 +100,7 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
     </data>  
     ```  
   
-     [Resources.es ES.resx]  
+     [Resources.es-ES.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -164,4 +159,3 @@ Możesz podać zlokalizowany tekst menu i paska narzędzi poleceń, tworząc zlo
  [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands programu Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [Globalizacja i lokalizacja](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-

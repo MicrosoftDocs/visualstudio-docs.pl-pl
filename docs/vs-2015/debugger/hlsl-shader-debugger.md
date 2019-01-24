@@ -1,27 +1,22 @@
 ---
 title: Debuger programu do cieniowania HLSL | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2c79491703ba2e20ae7bbb8c1303cfd5496a686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763949"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +77,5 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Wskazówki: Debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
- [Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
-
-
-
+ [Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
+ [Przewodnik: Używanie diagnostyki grafiki do debugowania cieniowania obliczenia](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

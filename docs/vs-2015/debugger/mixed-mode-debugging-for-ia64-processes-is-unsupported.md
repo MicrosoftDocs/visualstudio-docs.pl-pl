@@ -1,14 +1,9 @@
 ---
 title: Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_ia64
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 12623f2692735b8a6ec31a4ecaa7bfc0b07e9364
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02a1d7e93b9d090b61d8839562befcd3453dbe0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786688"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Debugowanie w trybie mieszanym dla procesów IA64 nie jest obsługiwane.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ Program Visual Studio nie obsługuje debugowanie kodu zarządzanego i natywnego 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
-
-
-

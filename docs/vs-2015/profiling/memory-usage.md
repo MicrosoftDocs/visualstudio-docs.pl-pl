@@ -1,25 +1,20 @@
 ---
 title: Użycie pamięci | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746191"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766120"
 ---
 # <a name="memory-usage"></a>Użycie pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
 >   
 >  ![Włącz migawki](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Zatrzymaj (klawisz skrótu: **Shift + F5**) i uruchom ponownie debugowanie.  
+>  Zatrzymaj (klawisz skrótu: **SHIFT + F5**) i uruchom ponownie debugowanie.  
   
  Zawsze, gdy chcesz przechwytywać stan pamięci, wybierać **wykonaj migawkę** na **użycie pamięci** paska narzędzi.  
   
@@ -140,8 +135,4 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
   
  [Blogu Visual C++: Diagnostyka pamięci natywnej w programie VS2015 (wersja zapoznawcza)](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Blogu Visual C++: Pamięć macierzysta narzędzia diagnostyczne Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
-
-
-
-
+ [Blogu Visual C++: Pamięć natywna narzędzia diagnostyczne Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)

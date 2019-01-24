@@ -1,14 +1,9 @@
 ---
 title: Refaktoryzacja klas i typów (Projektant klas) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207965"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782129"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +33,15 @@ ms.locfileid: "49207965"
 Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jego wewnętrzną strukturę i sposób jej obiektów są zaprojektowane nie jego zachowanie zewnętrznych. Umożliwia ograniczenie prac, które należy wykonać i ryzyko wprowadzenia błędów podczas refaktoryzacji kodu języka Visual C# .NET, Visual Basic .NET lub C++ w projekcie programu Visual Studio w Projektancie klas i oknie Szczegóły klasy.  
   
 > [!NOTE]
->  Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany; jest to projekt odwołania; lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów, zostaną wyświetlone różne sposoby, aby zapisać swoją pracę w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod, który możesz zmienić w inny sposób, na przykład bezpośrednio edytując ją. Aby uzyskać więcej informacji, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany; jest to projekt odwołania; lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów, zostaną wyświetlone różne sposoby, aby zapisać swoją pracę w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod, który możesz zmienić w inny sposób, na przykład bezpośrednio edytując ją. Aby uzyskać więcej informacji, zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Typowe zadania  
   
 |Zadanie|Zawartość pomocnicza|  
 |----------|------------------------|  
-|**Refaktoryzacja klas:** można użyć operacji refaktoryzacji, podzielić klasę na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Porady: podział klasy na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
-|**Praca z interfejsów:** w Projektancie klas można zaimplementować interfejsu na diagramie klas łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Porady: Implementowanie interfejsu (Projektant klas)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Porady: Tworzenie typu Zerowalnego (Projektant klas)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refaktoryzacja klas:** Można użyć operacji refaktoryzacji, podział klasy na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Jak: Podział klasy na klasy częściowe (Projektant klas)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
+|**Praca z interfejsów:** W Projektancie klas można zaimplementować interfejsu na diagramie klas, łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Jak: Implementowanie interfejsu (Projektant klas)](../ide/how-to-implement-an-interface-class-designer.md)|  
+|**Refaktoryzacja, typy, elementy członkowskie typu i parametry:** Za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Jak: Tworzenie typu Zerowalnego (Projektant klas)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
 ###  <a name="RenamingTypesAndMembers"></a> Zmiana nazwy, typy i elementy członkowskie typu  
  W Projektancie klas możesz zmienić nazwę typu lub składowej typu na diagramie klasy lub w oknie dialogowym właściwości. W oknie Szczegóły klasy można zmienić nazwę elementu członkowskiego, ale nie jest typem. Zmiana nazwy typu lub składowej typu propaguje do wszystkich okien i lokalizacji kodu, w których pojawiły się starej nazwy.  
@@ -99,6 +94,3 @@ Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, 
 |-----------|-----------------|  
 |[Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)||  
 |[Projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md)||
-
-
-

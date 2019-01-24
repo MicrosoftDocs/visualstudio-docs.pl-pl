@@ -1,14 +1,9 @@
 ---
 title: Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761778"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Uzyskiwanie dostępu do danych lokalnych i zdalnych w aplikacjach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 ## <a name="local-data"></a>Dane lokalne  
  Za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], możesz załadować i przechowywać dane lokalnie, używając jednej z następujących metod:  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Katalog danych  
+-   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Data Directory  
   
 -   Izolowany magazyn  
   
@@ -51,7 +46,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 >  Gdy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] odinstalowania aplikacji, katalog danych zostaną również usunięte. Nie wolno używać katalogu danych do przechowywania danych, którymi zarządza — end użytkownika, takich jak dokumenty.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Oznaczanie plików danych w dystrybucji ClickOnce  
- Aby przełączyć istniejącego pliku w katalogu danych, należy oznaczyć istniejący plik jako plik danych w Twojej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliku manifestu aplikacji aplikacji. Aby uzyskać więcej informacji, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Aby przełączyć istniejącego pliku w katalogu danych, należy oznaczyć istniejący plik jako plik danych w Twojej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pliku manifestu aplikacji aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Odczytywanie z oraz zapisywanie do katalogu danych  
  Odczytywanie ich z katalogu danych wymaga, aby Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] żądanie aplikacji uprawnienia do odczytu; podobnie zapisu do katalogu wymaga uprawnień do zapisu. Aplikacja będzie automatycznie mają to uprawnienie, jeśli jest skonfigurowany do uruchamiania przy użyciu pełnego zaufania. Aby uzyskać więcej informacji na temat wzrasta uprawnień dla aplikacji przy użyciu zaufanego wdrożenia aplikacji lub podnoszenia poziomu uprawnień, zobacz [zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md).  
@@ -64,7 +59,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- Aby uzyskać więcej informacji na temat oznaczanie plików w danym wdrożeniu jako pliki danych, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Aby uzyskać więcej informacji na temat oznaczanie plików w danym wdrożeniu jako pliki danych, zobacz [jak: Uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Możesz również uzyskać ścieżkę katalogu danych przy użyciu odpowiednich zmiennych na <xref:System.Windows.Forms.Application> klasy, takie jak <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -116,7 +111,4 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
  W większości przypadków, możesz nie mają dostępu do bazy danych bezpośrednio, ale zostanie do niego dostęp zamiast za pośrednictwem aplikacji serwera sieci Web napisane w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] lub usługi sieci Web XML. Uzyskiwanie dostępu do bazy danych w ten sposób jest często najlepszą metodę Jeśli Twoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest wdrażana z serwera sieci Web. Można korzystać z serwera, w częściowej relacji zaufania, bez podnoszenia uprawnień uprawnień aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
-
-
-
+ [Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

@@ -1,12 +1,9 @@
 ---
-title: 'Diagramów klas UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy klas UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773304"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
+# <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Wytyczne dotyczące
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio, można użyć *diagram klas UML* do opisu typów danych i ich relacji, niezależnie od ich implementacji. Diagram pozwala skupić się na logicznych aspektach klas, a nie na ich implementacji.  
@@ -59,7 +56,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  Typów styków wejściowych i wyjściowych oraz węzłów parametrów aktywności.  
   
- Zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+ Zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
  Diagramów sekwencji  
   
@@ -67,22 +64,22 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  Typów linii życia. Klasa linii życia powinna zawierać operacje dla wszystkich wiadomości, które może otrzymać.  
   
- Zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Zobacz [diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  Diagramów składników  
   
  Składników komponentów, poprzez wypisanie ich operacji.  
   
- Zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+ Zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagramów przypadków użycia  
   
  Typów, wspomnianych w opisach celów oraz kroków w przypadku użycia.  
   
- Zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Podstawowe kroki rysowania diagramów klas  
- Aby uzyskać informacje na temat elementów na diagramach klas UML, zobacz [diagramów klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md).  
+ Aby uzyskać informacje na temat elementów na diagramach klas UML, zobacz [diagramów klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
 >  Szczegółowe kroki tworzenia dowolnego diagramu modelowania zawiera są opisane w [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
@@ -149,13 +146,13 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  Jeżeli zdefiniowano interfejsy na składnikach w diagramie składników, można przeciągnąć interfejs z **Eksploratora modelu UML** na diagram klas. Na diagramie klasy można zdefiniować metody, które zawiera interfejs.  
   
- Zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+ Zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
  Diagram sekwencji UML  
   
  Można utworzyć klasy i interfejsy z linii życia w diagramie sekwencji, a następnie przeciągnij klasy z **Eksploratora modelu UML** do diagramu klas UML. Każda linia życia w diagramie sekwencji reprezentuje wystąpienie obiektu, składnika lub aktora.  
   
- Aby utworzyć klasę z linii życia, otwórz menu skrótów dla linii życia, a następnie wybierz **Utwórz klasę** lub **Utwórz interfejs**. Zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+ Aby utworzyć klasę z linii życia, otwórz menu skrótów dla linii życia, a następnie wybierz **Utwórz klasę** lub **Utwórz interfejs**. Zobacz [diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ##  <a name="AttributesAndOperations"></a> Atrybuty i operacje  
  Atrybut (4) jest nazwaną wartością, którą może mieć każde wystąpienie typu. Dostęp do atrybutu nie zmienia stanu wystąpienia.  
@@ -179,7 +176,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
 - **(Brak)**  — Można zostawić typ nieokreślony w podpisie, pomijając poprzedzający dwukropek (`:`).  
   
-- Jednym ze standardowych typów pierwotnych: **logiczna**, **całkowitą**, **ciąg**.  
+- Jeden ze standardowych typów pierwotnych: **Wartość logiczna**, **całkowitą**, **ciąg**.  
   
 - Typem zdefiniowanym w modelu.  
   
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramy składników UML: Odwołanie](../modeling/uml-component-diagrams-reference.md)

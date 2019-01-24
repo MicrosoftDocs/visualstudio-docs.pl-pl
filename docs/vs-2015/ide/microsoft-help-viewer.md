@@ -1,14 +1,9 @@
 ---
 title: Podgląd Pomocy firmy Microsoft | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755041"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Można zainstalować i wyświetlić zawartość dla różnych produktów i techn
 |-|-|  
 |Nawigacja|Za pomocą **zawartość** karcie, można wyświetlić zainstalowaną zawartość jako hierarchię i określić kryteria filtrowania tytułów, które są wyświetlane.<br /><br /> Za pomocą **wyszukiwania** karcie, można wyszukiwać terminy w dowolnym miejscu w treści, w tym tytuły kodu i tematu.<br /><br /> Za pomocą **indeksu** karcie w indeksie, określ kryteria filtrowania wpisów i wymagają indeksu zawierały lub rozpoczynały tekstem, który określisz wpisów.<br /><br /> Za pomocą **ulubione** kartę, może zapisywać łącza do tematów, które są często używane oraz wyświetlać listę tematów, które zostały wyświetlone w ostatnio.|  
 |Wyświetlanie tematu|Każdy temat jest wyświetlany na karcie, a w tym samym czasie można otworzyć wiele tematów.|  
-|Zarządzanie zawartością|Można zainstalować, zaktualizować, przenieść i usunąć zawartość przez użycie **Zarządzaj zawartością** kartę. W górnej części karty, można użyć **źródło instalacji** formantu, aby określić, czy zainstalować książki z lokalizacji sieciowej lub z dysku lub identyfikatora URI. **Ścieżka magazynu lokalnego** polu pokazuje, w którym są zainstalowane książki na komputerze lokalnym i przenieść do innej lokalizacji, wybierając **przenieść** przycisku.<br /><br /> Lista zawartości pokazuje, które książki można zainstalować lub są już zainstalowane, czy jest dostępna aktualizacja, i jak duże jest poszczególne książki. Można zainstalować lub usunąć jedną lub wiele ksiąg, wybierając odpowiednie **Dodaj** lub **Usuń** łącza, a następnie wybierając **aktualizacji** przycisku w obszarze **oczekujące zmiany** okienka. Jeśli aktualizacje są dostępne dla dowolnego książek, które zostały już zainstalowane, można odświeżyć tę zawartość, wybierając **kliknij tutaj, aby pobrać teraz** widocznego u dołu okna. Ponadto wszystkie zainstalowane książki zostaną odświeżone, jeśli aktualizacje są dostępne podczas instalowania dodatkowych książek. **Uwaga:** funkcjonalność **zarządzanie zawartością** kartę mogą się różnić, jeśli administrator podglądu pomocy dezaktywuje tych funkcji lub Brak dostępu do Internetu jest dostępna.|  
+|Zarządzanie zawartością|Można zainstalować, zaktualizować, przenieść i usunąć zawartość przez użycie **Zarządzaj zawartością** kartę. W górnej części karty, można użyć **źródło instalacji** formantu, aby określić, czy zainstalować książki z lokalizacji sieciowej lub z dysku lub identyfikatora URI. **Ścieżka magazynu lokalnego** polu pokazuje, w którym są zainstalowane książki na komputerze lokalnym i przenieść do innej lokalizacji, wybierając **przenieść** przycisku.<br /><br /> Lista zawartości pokazuje, które książki można zainstalować lub są już zainstalowane, czy jest dostępna aktualizacja, i jak duże jest poszczególne książki. Można zainstalować lub usunąć jedną lub wiele ksiąg, wybierając odpowiednie **Dodaj** lub **Usuń** łącza, a następnie wybierając **aktualizacji** przycisku w obszarze **oczekujące zmiany** okienka. Jeśli aktualizacje są dostępne dla dowolnego książek, które zostały już zainstalowane, można odświeżyć tę zawartość, wybierając **kliknij tutaj, aby pobrać teraz** widocznego u dołu okna. Ponadto wszystkie zainstalowane książki zostaną odświeżone, jeśli aktualizacje są dostępne podczas instalowania dodatkowych książek. **Uwaga:**  Funkcje **zarządzanie zawartością** kartę mogą się różnić, jeśli administrator podglądu pomocy dezaktywuje tych funkcji lub Brak dostępu do Internetu jest dostępna.|  
   
  Pasek narzędzi w oknie podglądu pomocy zawiera następujące przyciski:  
   
@@ -84,6 +79,3 @@ Można zainstalować i wyświetlić zawartość dla różnych produktów i techn
  [Instalowanie i zarządzać zawartością lokalną](../ide/install-and-manage-local-content.md)   
  [Lokalizowanie informacji](../ide/locate-information.md)   
  [Rozwiązywanie problemów z Podglądem Pomocy](../ide/troubleshooting-the-help-viewer.md)
-
-
-

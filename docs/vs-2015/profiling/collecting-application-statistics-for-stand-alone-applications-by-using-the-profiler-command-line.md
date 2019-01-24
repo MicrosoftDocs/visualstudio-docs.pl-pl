@@ -1,14 +1,9 @@
 ---
 title: Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
 - profilng tools,sampling method
@@ -16,13 +11,13 @@ ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da0fb80c6787d13b1c30fc13081264736030add0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 181b57b2f625dbdf60f00fa85761912d5c935635
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867699"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780711"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,8 @@ W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajnoś
 |Zadanie|Zawartość pokrewna|  
 |----------|---------------------|  
 |**Uruchom aplikację za pomocą profilowania**|-   [Jak: Uruchamianie aplikacji autonomicznej i zbieranie statystyk aplikacji](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Dołączanie profilera do uruchomionej aplikacji .NET Framework**|-   [Jak: Dołącz Profiler do aplikacji autonomicznej .NET Framework i zbieranie statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Dołączanie profilera do uruchomionej aplikacji C/C++**|-   [Jak: Dołącz Profiler do aplikacji natywnej i zbieranie statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Dołączanie profilera do uruchomionej aplikacji .NET Framework**|-   [Jak: Dołączanie profilera do aplikacji .NET Framework i zbieranie statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Dołączanie profilera do uruchomionej aplikacji C/C++**|-   [Jak: Dołączanie profilera do aplikacji natywnej i zbieranie statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
@@ -60,6 +55,3 @@ W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajnoś
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analizowanie danych próbkowania widoków i raportów  
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
-
-
-

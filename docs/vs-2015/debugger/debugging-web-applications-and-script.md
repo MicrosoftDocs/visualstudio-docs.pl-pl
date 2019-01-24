@@ -1,14 +1,9 @@
 ---
 title: Debugowanie aplikacji sieci Web i skryptu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: 6968625d-9783-4ad6-8bf5-eb85b548844c
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f44dc85d6378f4a8303fac846ad32528081b54b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761104"
 ---
 # <a name="debugging-web-applications-and-script"></a>Debugowanie aplikacji internetowych i skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ Tabela legendy:
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Zawiera wymagania wstępne i instrukcje dotyczące sposobu debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, podczas tworzenia lub po wdrożeniu.  
   
- [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Zawiera listę błędów, które mogą wystąpić podczas debugowania aplikacji sieci Web i sugeruje poprawki.  
   
- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: Debugowanie aplikacji równoległej](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -67,6 +62,3 @@ Tabela legendy:
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

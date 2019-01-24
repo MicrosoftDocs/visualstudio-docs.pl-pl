@@ -1,25 +1,20 @@
 ---
-title: 'Porady: ręczne pakietu rozszerzenia (VSIX wdrożenie) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Ręcznie pakietu rozszerzenia (VSIX wdrożenie) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
-manager: douge
-ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925841"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773588"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Porady: ręczne pakietu rozszerzenia (VSIX wdrożenia)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Instrukcje: Ręcznie pakietu rozszerzenia (VSIX wdrożenia)
 Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń dla wdrożenia. Istnieją trzy sposoby, aby utworzyć pakiet:  
   
 - Utwórz projekt VSIX pakietu przy użyciu jednego z szablonów rozszerzeń, które są zawarte w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawu SDK. Jest to opcja najłatwiejsza, w przypadku większości scenariuszy.  
@@ -31,7 +26,7 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
   W tym dokumencie opisano trzecią opcję.  
   
 ## <a name="creating-a-vsix-package"></a>Tworzenie pakietu VSIX  
- Aby ręcznie pakiet rozszerzenia, Dodaj plik extension.manifest i pliku [Content_Types] .xml do projektu rozszerzenia, umieść je w pliku skompresowanym wraz z danych wyjściowych kompilacji, a tak, że ma rozszerzenie nazwy pliku .vsix, Zmień nazwę skompresowanego pliku. Rozszerzenie do umieszczenia w pakiecie musi być typu, który jest obsługiwany przez [schematu VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Aby ręcznie pakiet rozszerzenia, Dodaj plik extension.manifest i pliku [Content_Types] .xml do projektu rozszerzenia, umieść je w pliku skompresowanym wraz z danych wyjściowych kompilacji, a tak, że ma rozszerzenie nazwy pliku .vsix, Zmień nazwę skompresowanego pliku. Rozszerzenie do umieszczenia w pakiecie musi być typu, który jest obsługiwany przez [schematu VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 >  Nazwy plików pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -42,7 +37,7 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
   
 2.  Utwórz plik XML i nadaj mu nazwę `extension.vsixmanifest`.  
   
-3.  Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3.  Wprowadź w pliku extension.vsixmanifest zgodnie ze schematem VSIX. Manifest przykładzie można zobaczyć [PackageManifest elementu (Element główny, schemat VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4.  Utwórz drugi plik XML i nadaj mu nazwę `[Content_Types].xml`.  
   
@@ -61,4 +56,4 @@ Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzenia programu Visual Studio wysyłki](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Element PackageManifest (Element główny, VSX schematu)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Element PackageManifest (Element główny, VSX schematu)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

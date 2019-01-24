@@ -1,13 +1,9 @@
 ---
 title: 'CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
 - CA1024
@@ -19,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0116ff7c7bb2486b522edb90319afc6db877b4d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759935"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Korzystanie z właściwości, gdzie jest to odpowiednie
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

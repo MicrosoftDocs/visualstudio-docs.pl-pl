@@ -1,27 +1,22 @@
 ---
 title: Diagnostyka grafiki programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce3ce61af3843259f2adee1e03c5978a690cd0d9
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757141"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,6 +85,3 @@ Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania
 |-----------|-----------------|  
 |[Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)|Wprowadza funkcji debugowania w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[DirectX Graphics i gry](http://go.microsoft.com/fwlink/?LinkId=256498)|Zawiera artykuły na temat technologii grafiki DirectX.|
-
-
-

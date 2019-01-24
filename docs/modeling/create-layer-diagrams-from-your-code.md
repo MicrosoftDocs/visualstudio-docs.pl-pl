@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761417"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
-Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utwórz *diagram zależności* w programie Visual Studio. Aby upewnić się, że kod pozostaje zgodny z tym projektem, Przeprowadź walidację kodu z diagramów zależności. Możesz tworzyć diagramy zależności dla projektów języka Visual C# i Visual Basic. Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utwórz *diagram zależności* w programie Visual Studio. Aby upewnić się, że kod pozostaje zgodny z tym projektem, Przeprowadź walidację kodu z diagramów zależności. Możesz tworzyć diagramy zależności dla projektów języka Visual C# i Visual Basic. Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Tworzenie diagramów zależności](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -159,6 +159,7 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 
 ## <a name="see-also"></a>Zobacz też
 
+- [Obsługa wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
 - [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)

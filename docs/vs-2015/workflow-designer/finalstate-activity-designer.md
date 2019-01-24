@@ -1,23 +1,20 @@
 ---
 title: FinalState, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 48c44dc585ce1c9cf4e7b29970b4014f128b873d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0a969b81e3291191cf42df4e1775c4212f54e4cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803616"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState, projektant działań
 <xref:System.Activities.Core.Presentation.FinalState> Projektanta jest używany do tworzenia <xref:System.Activities.Statements.State> kończy się wystąpienia maszyny stanu.  

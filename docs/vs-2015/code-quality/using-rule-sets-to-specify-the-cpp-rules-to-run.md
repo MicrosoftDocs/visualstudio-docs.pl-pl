@@ -1,25 +1,20 @@
 ---
 title: Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
 caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 42c8926403825032f295c31e2ce113bef4ff1bbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773895"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,6 +76,3 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
 -   Aby przełączać się między pokazywaniu i ukrywaniu reguł, które są przypisane **Brak** akcji, wybierz **Pokaż reguły, które nie są włączone**.  
   
 -   Aby dodać lub usunąć domyślnej reguły ustawia bieżący zestaw reguł firmy Microsoft, wybierz opcję **apletu Dodaj lub usuń podrzędne zestawy reguł**.
-
-
-

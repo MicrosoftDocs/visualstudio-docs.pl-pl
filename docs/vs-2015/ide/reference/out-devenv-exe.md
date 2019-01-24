@@ -1,14 +1,9 @@
 ---
 title: -Out (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
 - Devenv, /out switch
@@ -23,13 +18,13 @@ ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cbf9608bc4f476599676b27f12bc125fd170fc71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b198732a5771ad39dab6d3797bad01e7b55c189
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770623"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ devenv /out FileName
   
 ## <a name="arguments"></a>Argumenty  
  `FileName`  
- Wymagane. Ścieżka i nazwa pliku, aby otrzymywać komunikaty o błędach podczas kompilowania pliku wykonywalnego.  
+ Wymagana. Ścieżka i nazwa pliku, aby otrzymywać komunikaty o błędach podczas kompilowania pliku wykonywalnego.  
   
 ## <a name="remarks"></a>Uwagi  
  Jeśli określono nazwę pliku, który nie istnieje, plik zostanie utworzony automatycznie. Jeśli plik już istnieje, wyniki są dołączane do istniejącej zawartości pliku.  
@@ -65,6 +60,3 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
  [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
-
-
-
