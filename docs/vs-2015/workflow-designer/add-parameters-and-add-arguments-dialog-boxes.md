@@ -1,11 +1,8 @@
 ---
 title: Dodawanie parametrów i dodawanie argumentów, okno dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
@@ -13,13 +10,13 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: d01eb02a68666007021aad9d789502e58f684528
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64698ba801254f05ce0d51502a1290952109a383
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766094"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodawanie parametrów i Dodawanie argumentów, okna dialogowe
 W poniższej tabeli opisano elementy interfejsu użytkownika **Dodawanie parametrów** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeMethod> projektanta.  
