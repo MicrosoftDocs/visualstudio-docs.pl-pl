@@ -1,14 +1,9 @@
 ---
 title: 'Instrukcje: Dołączanie do skryptu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e0fbdbf31c4ff504011a4ab80d50746d87ac3dac
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 84f2ad17a2dd97683ec01d3d97b5d28ddb883f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53858031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790789"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
 2. W **dołączyć do procesu** okno dialogowe, przyjrzeć **dostępne procesy** chcesz dołączyć do listy i Znajdź skryptu procedur. Procesy skryptu można zidentyfikować, analizując **typu** kolumny.  
   
-   1.  Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1.  Jeśli proces, który chcesz debugować jest uruchomiony na innym komputerze, musisz najpierw wybrać komputera zdalnego. Aby uzyskać więcej informacji, zobacz [jak: Wybierz komputer zdalny](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2.  Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.  
   
@@ -64,7 +59,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
   
    **Dostępne procesy** zostanie wyświetlona lista automatycznie po otwarciu **procesy** okno dialogowe. Procesy można uruchomić i zatrzymać w tle, gdy jest otwarte okno dialogowe. W związku z tym zawartość może nie zawsze być nieaktualne. Można odświeżyć listę w dowolnym momencie, aby wyświetlić bieżącą listę procesów, naciskając klawisz **Odśwież** przycisku.  
   
-   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw bieżący proces](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Można być dołączonym do wielu programów podczas debugowania, ale tylko jeden program jest aktywny w debugerze w dowolnym momencie. Można ustawić aktywny program w pasku narzędzi debugowania lokalizacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw bieżący proces](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Wszystkie **debugowania** poleceń menu wpływają na aktywny program. W oknie dialogowym procesów, może przerwać dowolnego debugowanego programu. Zobacz [używanie punktów przerwania](../debugger/using-breakpoints.md).  
   
@@ -78,6 +73,3 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
  [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: MarkProfile | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: MarkProfile | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79fcc7fe8789916cce24919551e4130f78653abf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105e81ed15a540a0c008eb94cb4af49caa099879
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722008"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803033"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,9 +61,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informacje o funkcji  
- Nagłówek: Zadeklarowanych w VSPerf.h  
+ Nagłówek: Zadeklarowane w VSPerf.h  
   
- Bibliotekę importowaną: VSPerf.lib  
+ Biblioteka importów: VSPerf.lib  
   
 ## <a name="example"></a>Przykład  
  Poniższy kod ilustruje funkcja MarkProfile.  
@@ -107,6 +102,3 @@ void ExerciseMarkProfile()
   
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja interfejsów API profilera programu Visual Studio (natywnych)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

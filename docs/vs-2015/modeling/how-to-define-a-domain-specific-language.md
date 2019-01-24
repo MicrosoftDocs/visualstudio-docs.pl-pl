@@ -1,12 +1,9 @@
 ---
 title: Jak zdefiniować języka specyficznego dla domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -20,20 +17,20 @@ ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b3c83ded60359bff2f84d35aec41eb387227022a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4a03c8901eba94c7c96e200a38a6619ae7df3e70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794885"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania na podstawie szablonu. Kluczowym elementem rozwiązania jest diagramem definicji DSL, który jest przechowywany w DslDefinition.dsl. W definicji DSL definiuje klasy i kształty język DSL. Po zmodyfikowaniu i dodawane do tych elementów, można dodać kod programu, aby dostosować DSL bardziej szczegółowo.  
   
- Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ##  <a name="templates"></a> Wybieranie szablonu rozwiązania  
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:  
@@ -173,9 +170,9 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 |Sposób wyświetlania elementu|Klasa nadrzędna (osadzanie)|Przykład szablonu rozwiązania dotyczącego języka DSL|  
 |------------------------------|--------------------------------|--------------------------------------|  
-|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadanie: Klasa aktora.|  
-|Kształt w toru.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Zadania klasy.|  
-|Element na liście w kształcie, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klas: klasy atrybutu.<br /><br /> Diagram składników: Port klasy.|  
+|Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadań: Klasa aktora.|  
+|Kształt w toru.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Klasa zadania.|  
+|Element na liście w kształcie, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klasy: Klasy atrybutu.<br /><br /> Diagram składników: Klasa portu.|  
 |Element na liście, nie zostanie usunięty po usunięciu kontenera.|Klasa główna DSL.<br /><br /> Na liście zostaną wyświetlone linki odwołań.||  
 |Nie bezpośrednio wyświetlane.|Klasy, które wchodzi w skład części.||  
   
@@ -191,7 +188,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 >  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy funkcje z obiektów nadrzędnych.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Dodawanie właściwości domeny do każdej klasy domeny  
- Właściwości domeny przechowywać wartości. Przykładami są: nazwa, tytuł, niż data publikacji.  
+ Właściwości domeny przechowywać wartości. Oto przykłady: Nazwa, nazwa, Data publikacji.  
   
  Kliknij przycisk **właściwości domeny** w klasie, naciśnij klawisz ENTER, a następnie wpisz nazwę właściwości. Domyślny typ właściwości domeny jest ciąg. Jeśli chcesz zmienić typ, wybierz właściwość domeny i ustaw **typu** w **właściwości** okna. Jeśli typ, który ma nie znajduje się na liście rozwijanej, zobacz [dodanie typów właściwości](#addTypes).  
   
@@ -217,7 +214,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
 ##### <a name="to-test-the-new-domain-classes"></a>Aby przetestować nowe klasy domeny  
   
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2.  **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie doświadczalnym. W doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.  
   
@@ -413,7 +410,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
    Po przetestowaniu najpierw łącznik, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: kształtów przedziałów  
+##  <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: Kształtów przedziałów  
  Kształt przedziału zawiera jedną lub więcej list elementów. Na przykład w języku DSL biblioteki utworów muzycznych wystarczą kształtów przedziałów do reprezentowania utworów muzycznych albumy. W przypadku każdego albumu ma listę utworów.  
   
  ![Przedział kształtu](../modeling/media/compartmentshape.png "element CompartmentShape")  
@@ -609,7 +606,7 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
   
  Dlatego należy pamiętać, że zmiana niektórych relacji w definicji DSL, nie jest niczym niezwykłym, błędy, należy podać podczas zapisywania definicji lub gdy Transformuj wszystkie szablony. Większość z tych błędów jest łatwo rozwiązać. Kliknij dwukrotnie raport o błędach, aby zobaczyć pozycję Lokalizacja błędu.  
   
- Zobacz też [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
+ Zobacz też [jak: Zmień Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
 ##  <a name="trouble"></a> Rozwiązywanie problemów  
  Poniższa lista zawiera niektóre z najczęściej występujących problemów napotkanych podczas projektowania DSL, wraz z sugestie dotyczące ich rozwiązania. Więcej porad jest dostępny na [Extensibililty Forum narzędzia wizualizacji](http://go.microsoft.com/fwlink/?LinkId=186074).  
@@ -622,13 +619,10 @@ Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć [!INC
 |Po utworzeniu klasy domeny, ale nie można utworzyć wystąpienia w Eksploratorze języka.|Każda klasa domeny, z wyjątkiem głównego musi być elementem docelowym relacji osadzania.|  
 |W Eksploratorze dla mojego języka DSL elementy są wyświetlane tylko w przypadku ich nazwy typu.|W definicji DSL wybierz właściwość domeny klasy, a w oknie właściwości ustaw oknie **jest nazwa elementu** na wartość true.|  
 |Moje DSL zawsze zostanie otwarty w edytorze XML.|Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak mimo należy naprawić ten błąd, możesz jawnie zresetować edytora projektanta DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz _YourLanguage_**projektanta (ustawienie domyślne)**.|  
-|Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu.|Sprawdzić i zaktualizować **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
+|Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu.|Sprawdzanie i zaktualizuj **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [jak: Zmień Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |Przybornik Moje DSL nie pojawia się, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawia się komunikat z raportowania błędów, które można załadować rozszerzenia.|Zresetuj wystąpienie eksperymentalne programu i ponownie skompiluj rozwiązanie.<br /><br /> 1.  Windows — w menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu**.<br />2.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wprowadzenie do języków specyficznych dla domeny](../modeling/getting-started-with-domain-specific-languages.md)   
  [Tworzenie języka specyficznego dla domeny opartego na formularzach Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-
-

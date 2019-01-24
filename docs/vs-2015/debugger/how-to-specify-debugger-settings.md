@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Określanie ustawień debugera | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Określanie ustawień debugera | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799128"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Porady: Określanie ustawień debugera
+# <a name="how-to-specify-debugger-settings"></a>Instrukcje: Określanie ustawień debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można określić różne ustawienia dla zachowania debugera, w tym, jak zmienne są wyświetlane, czy są prezentowane niektórych ostrzeżeń, jak ustawić punktów przerwania i wpływ podziału na uruchomione programy. Określanie ustawień debugera w **opcje** okno dialogowe.  
@@ -57,6 +52,3 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można określić różne ustawi
  [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Typowe makra dla właściwości i poleceń kompilacji](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
-
-
-

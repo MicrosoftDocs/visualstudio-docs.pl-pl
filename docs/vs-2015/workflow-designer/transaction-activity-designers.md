@@ -1,23 +1,20 @@
 ---
 title: Projektanci działań Transaction | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266157"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797305"
 ---
 # <a name="transaction-activity-designers"></a>Projektanci działań Transaction
 Działania transakcji, projektantów są używane do tworzenia i konfigurowania transakcyjnych działań, takich jak wyrównania i potwierdź. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  

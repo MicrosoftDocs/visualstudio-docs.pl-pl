@@ -1,14 +1,9 @@
 ---
 title: Ustawienia konfiguracji debugowania języka C++ projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
 - VC.Project.IVCGPUDebugPageObject.EnvironmentMerge
@@ -116,13 +111,13 @@ ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 404bbc753b2729ad5ec7625fa01803b8a6bdf5c8
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51800799"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799191"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,6 +187,3 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual
  [Tworzenie i zarządzanie projektami Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
  [/ ASSEMBLYDEBUG (Dodaj DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
  [Typowe makra dla właściwości i poleceń kompilacji](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
-
-
-

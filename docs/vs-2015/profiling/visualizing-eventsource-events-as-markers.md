@@ -1,25 +1,20 @@
 ---
 title: Wizualizowanie zdarzeń EventSource w postaci znaczników | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801495"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń i znaczników EventSource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 ### <a name="marker-type"></a>Typ znacznika  
   
-1.  Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
+1.  Zdarzenia, które mają [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.  
   
-2.  Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
+2.  Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.  
   
 3.  We wszystkich innych przypadkach zdarzenia jest traktowany jak jeden komunikat.  
   
@@ -42,13 +37,13 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 |Poziom funkcji ETW|Znaczenie wizualizatora współbieżności|  
 |---------------|---------------------------------------|  
-|win: LogAlways|Normalny|  
+|win: LogAlways|Normalne|  
 |Wygraj: krytyczne|Krytyczny|  
 |win: błąd|Krytyczny|  
 |win: ostrzeżenie|Wysoka|  
-|Wygraj: informacyjne|Normalny|  
-|Wygraj: pełne|Niska|  
-|Większa niż win: pełne|Niska|  
+|Wygraj: informacyjne|Normalne|  
+|Wygraj: pełne|Małe|  
+|Większa niż win: pełne|Małe|  
   
 ### <a name="series-name"></a>Nazwa serii  
  Nazwa zadania zdarzenia jest używany dla nazwy serii. Nazwa serii jest pusta, jeśli zadanie nie został zdefiniowany dla tego zdarzenia.  
@@ -78,13 +73,13 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 |wartość cvImportance|Znaczenie wizualizatora współbieżności|  
 |------------------------|---------------------------------------|  
-|0|Normalny|  
+|0|Normalne|  
 |1|Krytyczny|  
 |2|Wysoka|  
 |3|Wysoka|  
-|4|Normalny|  
-|5|Niska|  
-|Wszystkie inne wartości|Niska|  
+|4|Normalne|  
+|5|Małe|  
+|Wszystkie inne wartości|Małe|  
   
 ### <a name="series-name"></a>Nazwa serii  
  Użyj `cvSeries` pole zdarzenia, ciąg, aby kontrolować nazwę serii, zapewniająca przez narzędzie Concurrency Visualizer do zdarzeń EventSource.  
@@ -103,6 +98,3 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
   
 ## <a name="see-also"></a>Zobacz też  
  [Znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md)
-
-
-
