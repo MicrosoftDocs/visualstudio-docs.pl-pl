@@ -515,11 +515,6 @@ items:
         - name: Debugowanie kontenera i serwera COM
           href: com-server-and-container-debugging.md
           items:
-          - name: Debugowanie serwerów COM
-            href: how-to-debug-com-servers.md
-            items:
-            - name: aplikacje serwera SDI
-              href: sdi-server-applications.md
           - name: Debugowanie klientów i serwerów COM za pomocą debugowania RPC
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: Debugowanie kontrolki ActiveX
@@ -840,9 +835,9 @@ items:
   items:
   - name: Co nowego w debugerze programu Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8b5579f74964cb645fd21ba04ce0e8708a1517e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947481"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417944"
