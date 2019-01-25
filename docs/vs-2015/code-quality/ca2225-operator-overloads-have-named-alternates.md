@@ -1,13 +1,9 @@
 ---
 title: 'CA2225: Operator overloads ma nazwanych zastępców | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -19,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6500c43ff735d9249501ec63c0cb16f3a4c4c2db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895998"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786583"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operator overloads ma nazwanych zastępców
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,7 +45,7 @@ ms.locfileid: "53895998"
 |+ (binarnych)|+|+ (binarnych)|Dodaj|
 |+=|+=|+=|Dodaj|
 |&|Oraz|&|BitwiseAnd|
-|&=|I =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|BitwiseOr|
 |&#124;=|Lub =|&#124;=|BitwiseOr|
 |--|Brak|--|Dekrementacja|
@@ -57,7 +53,7 @@ ms.locfileid: "53895998"
 |/=|/=|/=|Dzielenie|
 |==|=|==|Równa się|
 |^|XOR|^|XOR|
-|^=|XOR =|^=|XOR|
+|^=|Xor=|^=|XOR|
 |>|>|>|{1&gt;Compare&lt;1}|
 |>=|>=|>=|{1&gt;Compare&lt;1}|
 |++|Brak|++|Inkrementacja|
@@ -79,8 +75,8 @@ ms.locfileid: "53895998"
 |-(binarnych)|-(binarnych)|-(binarnych)|Odejmowanie|
 |-=|Brak|-=|Odejmowanie|
 |true|IsTrue|Brak|IsTrue (właściwość)|
-|-(jednoargumentowy)|Brak|-|negate —|
-|+ (jednoargumentowy)|Brak|+|znak plus|
+|-(jednoargumentowy)|Brak|-|Negate|
+|+ (jednoargumentowy)|Brak|+|Plus|
 |false|IsFalse|False|IsTrue (właściwość)|
 
  N/d == nie mogą być przeciążone w wybranym języku.

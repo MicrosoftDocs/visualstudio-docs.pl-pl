@@ -1,25 +1,20 @@
 ---
 title: Twórz aplikacje dla platformy Universal Windows (UWP) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787021"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
   
 - [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
-- [Program Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Upewnij się, że wybrano Universal Windows narzędzia do programowania aplikacji z listy opcjonalnych funkcji. Bez tych narzędzi nie będzie mieć możliwość tworzenia aplikacji uniwersalnych.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Upewnij się, że wybrano Universal Windows narzędzia do programowania aplikacji z listy opcjonalnych funkcji. Bez tych narzędzi nie będzie mieć możliwość tworzenia aplikacji uniwersalnych.  
   
   Po zainstalowaniu oprogramowania należy [włączyć urządzenia z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) do tworzenia aplikacji. (Nie potrzebujesz już licencję dewelopera dla każdego urządzenia z systemem Windows 10.)  
   
@@ -66,4 +61,3 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
  Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal apps utworzonych za pomocą programu Visual Studio 2015 RC [portu tych istniejących aplikacji](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) używać najnowszej wersji uniwersalnej platformy Windows.  
   
  Po utworzeniu aplikacji Universal Windows, należy najpierw [Zapakuj aplikację](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) go zainstalować na urządzeniu z systemem Windows 10 lub przesłać go do Windows Store.
-

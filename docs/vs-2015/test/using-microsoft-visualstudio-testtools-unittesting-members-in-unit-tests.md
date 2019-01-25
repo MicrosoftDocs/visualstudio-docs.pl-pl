@@ -1,23 +1,19 @@
 ---
 title: Korzystanie ze składowych Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9cc93fb1382dba70aedc989a609ac2932cf4f466
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c3b0e7cf2ddc4ada4fe015feba17c5adbcc328d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53901480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803270"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Korzystanie z członków Microsoft.VisualStudio.TestTools.UnitTesting w testach jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +41,7 @@ Framework testów jednostkowych obsługuje testowanie jednostek w [!INCLUDE[vspr
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atrybuty używany do ustanawiania kolejności wywoływania
- Element kodu dekorowane za pomocą jednej z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia Test jednostkowy](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Element kodu dekorowane za pomocą jednej z następujących atrybutów jest wywoływana w tej chwili, które określisz. Aby uzyskać więcej informacji, zobacz [anatomia Test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Dla zestawów
  AssemblyInitialize i AssemblyCleanup są nazywane prawo po załadowaniu zestawu i po prawej stronie przed zestawu jest zwalniana.
@@ -68,7 +64,7 @@ Framework testów jednostkowych obsługuje testowanie jednostek w [!INCLUDE[vspr
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atrybuty stosowane do identyfikowania, badania klasy i metody
- Każda klasa testu musi mieć atrybut TestClass i każdej metody testowej musi mieć atrybut TestMethod. Aby uzyskać więcej informacji, zobacz [anatomia Test jednostkowy](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Każda klasa testu musi mieć atrybut TestClass i każdej metody testowej musi mieć atrybut TestMethod. Aby uzyskać więcej informacji, zobacz [anatomia Test jednostkowy](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -122,7 +118,7 @@ Framework testów jednostkowych obsługuje testowanie jednostek w [!INCLUDE[vspr
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Klasy stosowane przy użyciu prywatnych metod dostępu
- Zgodnie z opisem w [przy użyciu Publicize, aby utworzyć prywatny akcesor](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), można wygenerować testu jednostkowego dla metody prywatnej. Ta generacja tworzy klasie prywatnego akcesora, która tworzy obiekt klasy obiektu PrivateObject. Klasa obiektu PrivateObject jest klasą otoki, która używa odbicia w ramach procesu prywatnego akcesora. Klasa PrivateType są podobne, ale jest używany do wywoływania prywatnej metody statyczne, zamiast wywoływania metod wystąpieniem prywatnym.
+ Zgodnie z opisem w [przy użyciu Publicize, aby utworzyć prywatny akcesor](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), można wygenerować testu jednostkowego dla metody prywatnej. Ta generacja tworzy klasie prywatnego akcesora, która tworzy obiekt klasy obiektu PrivateObject. Klasa obiektu PrivateObject jest klasą otoki, która używa odbicia w ramach procesu prywatnego akcesora. Klasa PrivateType są podobne, ale jest używany do wywoływania prywatnej metody statyczne, zamiast wywoływania metod wystąpieniem prywatnym.
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

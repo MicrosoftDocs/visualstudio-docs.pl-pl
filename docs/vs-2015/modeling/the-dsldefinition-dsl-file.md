@@ -1,25 +1,22 @@
 ---
 title: Plik DslDefinition.dsl | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937655"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800500"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +50,7 @@ W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl 
  XmlSerializationBehavior  
  Ta sekcja definiuje schemat serializacji i zawiera dodatkowe informacje na temat sposobu każdej klasy są zapisywane do pliku.  
   
- Zachowania ExplorerBehavior  
+ ExplorerBehavior  
  Ta sekcja definiuje sposób, w jaki **Eksplorator DSL** okna jest wyświetlany, gdy użytkownik edytuje modelu.  
   
  ConnectionBuilders  
@@ -90,7 +87,7 @@ W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl 
   
  Moniker system wymaga, że elementów równorzędnych w drzewie XML mają różne nazwy. Z tego powodu błędy walidacji występują, jeśli zostanie podjęta próba zapisania definicji języka specyficznego dla domeny, który, na przykład dwóch klas o takiej samej nazwie. Zawsze należy poprawić błędy takie zduplikowana nazwa, zanim zapiszesz plik DslDefinition.dsl, dzięki czemu możesz ponownie załadować je poprawnie później.  
   
- Każdy typ ma swój własny typ monikera: DomainClassMoniker, DomainRelationshipMoniker, i tak dalej.  
+ Każdy typ ma swój własny typ monikera: DomainClassMoniker DomainRelationshipMoniker i tak dalej.  
   
 ## <a name="types"></a>Types  
  Sekcja: typy określa wszystkie typy, które zawiera plik DslDefinition.dsl jako typy właściwości. Te typy można podzielić na dwa rodzaje: typy zewnętrzne, np. System.String oraz typach wyliczeniowych.  
@@ -214,7 +211,7 @@ W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl 
 ### <a name="source-and-target-roles"></a>Role źródłowe i docelowe  
  Każda relacja zawiera role źródłowe i docelowe, które mają następujące atrybuty:  
   
--   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: elementu OutPort dla źródła, InPort dla obiektu docelowego.  
+-   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: Elementu outPort źródła InPort dla obiektu docelowego.  
   
 -   `Multiplicity` Atrybut ma czterech możliwych wartości (wartości ZeroMany, wartość ZeroOne, co i OneMany). Ten atrybut odwołuje się do liczby łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.  
   
@@ -281,7 +278,7 @@ W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl 
  Podczas pisania C# dla tego modelu, możesz przejść przez łącze w jednym kroku, za pomocą właściwości, która generuje relacji na każdą z klas, które odnosi się:  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  Jednak należy wykonać obie przeskoków jawnie przy użyciu składni ścieżki. Ze względu na to wymaganie jest dostępny link pośredni łatwiejsze. Poniższy kod wykonuje przeskoku z łącza do składnika:  
@@ -387,7 +384,7 @@ W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl 
   
  Możesz ustawić **IsMonikerQualifier** atrybutu dla właściwości ciągu i podaj dodatkowe sposobem konstruowania pełną nazwę elementu. Na przykład w plik DslDefinition.dsl **Namespace** jest kwalifikatorem monikera.  
   
-### <a name="xmlrelationshipdata"></a>Element XmlRelationshipData  
+### <a name="xmlrelationshipdata"></a>XmlRelationshipData  
  W pliku modelu serializowane łącza (relacji osadzania i odwołania) są reprezentowane przez węzły podrzędne końca źródło relacji. Aby osadzić relacje, węzeł podrzędny zawiera poddrzewo. W przypadku relacji odwołania węzeł podrzędny zawiera moniker elementu, który odwołuje się do innej części drzewa.  
   
  **XmlRelationshipData** atrybutu w **XmlClassData** atrybut definiuje dokładnie, jak węzły podrzędne są zagnieżdżone w obrębie elementu źródłowego. Każda relacja, który jest źródłem dla klasy domeny ma jeden **XmlRelationshipData** atrybutu.  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Mapowania łączników może również zawierać mapowania dekoratorów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Jak zdefiniować języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
  [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

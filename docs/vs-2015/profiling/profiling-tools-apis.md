@@ -1,25 +1,20 @@
 ---
 title: Interfejsy API narzędzi profilowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10b97169440814366141670768561ce314498191
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801160"
 ---
 # <a name="profiling-tools-apis"></a>Interfejsy API narzędzi profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Możesz wstawić zarządzane lub natywne metody z interfejsów API [!INCLUDE[vsp
  <xref:Microsoft.VisualStudio.Profiler>  
  W tym artykule opisano metody .NET Profiling Tools.  
   
- [Przewodnik: korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)  
+ [Przewodnik: Korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)  
  Dowiedz się, jak używać metod .NET Profiling Tools, w tym przykładzie ukończone.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
@@ -41,6 +36,3 @@ Możesz wstawić zarządzane lub natywne metody z interfejsów API [!INCLUDE[vsp
   
 ## <a name="see-also"></a>Zobacz też  
  [Eksplorator wydajności](../profiling/performance-explorer.md)
-
-
-

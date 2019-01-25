@@ -1,24 +1,19 @@
 ---
 title: Ustawianie unikatowej właściwości automatyzacji dla kontrolek Windows Store do testowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 25890adaf22d1855426813c35e69766bba02a1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789082"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek Sklepu Windows przeznaczonych do testowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
  Ustaw AutomationProperties.AutomationId **ButtonX** jawnie w XAML dla formantu.  
   
 ```xaml  
-<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
+<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
@@ -76,13 +71,13 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
 ###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Przypisz unikatowy usługi automation — właściwości przy użyciu programu Visual Studio i Blend for Visual Studio  
  Aby przypisać unikatowe nazwy elementów interaktywnych, takich jak przyciski, pola listy, pola kombi i pól tekstowych, można użyć programu Visual Studio lub Blend for Visual Studio. Zapewnia to kontrolka unikatową wartość w AutomationProperties.Name.  
   
- **Visual Studio:** na **narzędzia** menu wskaż **opcje** , a następnie wybierz **edytora tekstów**, następnie **XAML**, a na koniec **Różne**.  
+ **Visual Studio:** Na **narzędzia** menu wskaż **opcje** , a następnie wybierz **edytora tekstów**, następnie **XAML**, a na koniec **różne** .  
   
  Wybierz **automatycznie nazwij elementy interakcyjne przy tworzeniu** , a następnie wybierz **OK**.  
   
  ![XAML — różne opcje](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
- **Program Blend for Visual Studio:** użyj jednej z następujących metod, w tym celu z programu Blend for Visual Studio.  
+ **Blend for Visual Studio:** Użyj jednej z następujących metod, w tym celu z programu Blend for Visual Studio.  
   
 > [!NOTE]
 >  Tej metody można używać tylko dla formantów, które są tworzone statycznie przy użyciu XAML.  
@@ -133,7 +128,7 @@ Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji op
                         </Setter.Value>  
                     </Setter>  
                 </Style>  
-            </ListBox.ItemContainerStyle>           
+            </ListBox.ItemContainerStyle>           
         </ListBox>  
   
 ```  
@@ -206,7 +201,3 @@ private void CreateCheckBox(string txt, StackPanel panel)
     }  
   
 ```  
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Projektowanie i wyświetlanie klas i typów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756862"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Projektowanie i tworzenie klas i typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Projektowanie oraz ich wizualizowanie i Refaktoryzacja klas i innych typów w ko
   
  Poniżej przedstawiono więcej informacji na temat co można zrobić z diagramami klas:  
   
--   **Projekt**: edytowanie kodu projektu poprzez edycję diagramu klas. Dodawanie nowych elementów i usuń niepożądane. Zmiany są odzwierciedlane w kodzie.  
+-   **Projekt**: Edytowanie kodu projektu poprzez edycję diagramu klas. Dodawanie nowych elementów i usuń niepożądane. Zmiany są odzwierciedlane w kodzie.  
   
--   **Wizualizuj**: zrozumienie struktury projektu, wyświetlając klasy w projekcie na diagramie. Dostosuj do diagramu, dzięki czemu można skupić się na potrzeby szczegółów projektu, które najbardziej interesujących Cię. Zapisz diagramu do późniejszego użycia w celu wykazania lub dokumentacji.  
+-   **Wizualizuj**: Zrozumienie struktury projektu, wyświetlając klasy w projekcie na diagramie. Dostosuj do diagramu, dzięki czemu można skupić się na potrzeby szczegółów projektu, które najbardziej interesujących Cię. Zapisz diagramu do późniejszego użycia w celu wykazania lub dokumentacji.  
   
--   **Refaktoryzuj**: Przesłaniaj metody, zmiana nazw identyfikatorów, Refaktoryzuj parametrów i implementowanie interfejsów i klas abstrakcyjnych.  
+-   **Refaktoryzuj**: Przesłaniaj metody i zmiana nazw identyfikatorów, Refaktoryzacja parametrów, implementowanie interfejsów i klas abstrakcyjnych.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Praca z klasami i innymi typami (Projektant klas)](../ide/working-with-classes-and-other-types-class-designer.md)  
@@ -61,6 +56,3 @@ Projektowanie oraz ich wizualizowanie i Refaktoryzacja klas i innych typów w ko
  [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)  
   
  [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)
-
-
-

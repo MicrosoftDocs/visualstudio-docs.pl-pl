@@ -1,26 +1,21 @@
 ---
 title: Uruchamianie testów jednostkowych w Eksploratorze testów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805111"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,8 +130,8 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
 |Grupa|Opis|  
 |-----------|-----------------|  
-|**Czas trwania**|Grupuje testy według czasu wykonywania: **Fast**, **średni**, i **wolna**.|  
-|**Wynik**|Grupuje testy według wyników wykonania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|  
+|**Czas trwania**|Grupuje testy według czasu wykonywania: **Szybkie**, **średni**, i **powolne**.|  
+|**Wynik**|Grupy testy według wyników wykonania: **Testy zakończone niepowodzeniem**, **testy pominięte**, **przeszedł testy**.|  
 |**Cechy**|Grupuje testy według par kategoria/wartość, należy zdefiniować. Składnia określająca kategorie i wartości cech jest zdefiniowana przez strukturę testu jednostki.|  
 |**Project**|Grupuje testy według nazw projektów.|  
   
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**Ścieżka pliku**|Wyszukuje dopasowania WE w pełni kwalifikowanej nazwy pliku źródłowych plików testowych.|  
 |**W pełni kwalifikowana nazwa**|Wyszukuje dopasowania WE w pełni kwalifikowanej nazwy pliku testu w przestrzeni nazw, klas i metod.|  
 |**Output**|Przeszukuje zdefiniowane przez użytkownika komunikaty o błędach, które są zapisywane do wyjścia standardowego (stdout) lub błędzie standardowym (stderr). Składnia określająca komunikaty wyjściowe są definiowane przez strukturę testu jednostki.|  
-|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|  
+|**Wynik**|Wyszukuje dopasowania w nazwach kategorii Eksploratora testów: **Testy zakończone niepowodzeniem**, **testy pominięte**, **przeszedł testy**.|  
   
  Aby wykluczyć podzbiór wyników filtrowania, należy użyć następującej składni:  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
   
 ###  <a name="BKMK_Guidance"></a> Wskazówki dotyczące  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
  [Uruchamianie testu jednostkowego jako procesu 64-bitowego](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

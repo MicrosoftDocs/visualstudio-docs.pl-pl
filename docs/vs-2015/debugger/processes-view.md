@@ -1,14 +1,9 @@
 ---
 title: Widok procesów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe042a3511dbf6118922e54f8953bde599481c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8b9c04d1cabd44418c70725ef331c9c4b5ec67e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788653"
 ---
 # <a name="processes-view"></a>Widok procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim system
   
 1. Z **Spy** menu, wybierz **procesy**.  
   
-   ![Szpieguj&#43; &#43; widok procesów](../debugger/media/spy-processes.png "Spy ++ _Processes")  
+   ![Spy&#43;&#43; Processes View](../debugger/media/spy-processes.png "Spy++_Processes")  
    Widok procesów programu Spy ++  
   
    Powyższy rysunek przedstawia widok procesów z węzłami procesu i wątku, rozwinięty.  
@@ -67,6 +62,3 @@ Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim system
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
-
-
-

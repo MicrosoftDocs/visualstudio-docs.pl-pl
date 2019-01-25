@@ -1,23 +1,19 @@
 ---
 title: Narzędzia do oceny
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d8ed36ba7ebc4085d24147ff02763bcadf3cb777
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 00e1ccccb0ff86140d15dee987cd61a02e74fcba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801149"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Narzędzi programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,44 +1,41 @@
 ---
-title: 'Wskazówki: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792128"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Wskazówki: debugowanie szablonu tekstowego uzyskującego dostęp do modelu
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka dotyczącego określonej domeny mogą wystąpić błędy, gdy aparat przekształcenia szablonu do kodu źródłowego lub kompiluje wygenerowanego kodu. Następujące Instruktaż pokazuje niektóre rzeczy, które można zrobić, aby debugowanie szablonu tekstowego.  
   
 > [!NOTE]
->  Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, patrz [wskazówki: debugowanie szablonu tekstowego](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+>  Aby uzyskać więcej informacji na temat tekstu, szablony ogólnie rzecz biorąc, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Aby uzyskać więcej informacji na temat debugowania szablonów tekstowych, patrz [instruktażu: Debugowanie szablonu tekstowego](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka dotyczącego określonej domeny  
  Ta procedura służy do tworzenia rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:  
   
 - Nazwa: DebuggingTestLanguage  
   
-- Szablon rozwiązania: minimalne języka  
+- Szablon rozwiązania: Minimalny języka  
   
 - Rozszerzenie pliku: .ddd  
   
 - Nazwa firmy: Fabrikam  
   
-  Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [jak: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Tworzenie szablonów tekstowych  
  Dodaj szablon tekstowy do rozwiązania.  
@@ -164,7 +161,7 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
   
      (C#)  
   
-     **Kompilowanie transformacji: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**  
+     **Kompilowanie transformacji: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**  
   
      (Visual Basic)  
   
@@ -216,6 +213,3 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy DebugTest.tt, a następnie kliknij przycisk **Uruchom narzędzie niestandardowe**.  
   
      Teraz system przekształcenia szablonu tekstu i generuje odpowiadający plik danych wyjściowych. Nie zobaczysz żadnych błędów w **lista błędów** okna.
-
-
-

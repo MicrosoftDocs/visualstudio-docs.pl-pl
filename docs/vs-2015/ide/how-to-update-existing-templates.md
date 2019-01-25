@@ -1,14 +1,9 @@
 ---
-title: 'Porady: aktualizowanie istniejących szablonów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Aktualizowanie istniejących szablonów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating existing templates
 - Visual Studio templates, updating existing templates
@@ -17,15 +12,15 @@ ms.assetid: d585e45b-7fe2-45fa-9cf3-7f2bc060f3c4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5b1ffd20fb33048427ba4cacdbbd9360313db089
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771116"
 ---
-# <a name="how-to-update-existing-templates"></a>Porady: aktualizowanie istniejących szablonów
+# <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po utworzeniu szablonu i Kompresuj pliki w pliku zip, można zmodyfikować szablon. Można to zrobić ręcznie, zmieniając pliki w szablonie, lub przez wyeksportowanie szablonu z projektu, który jest oparty na szablonie.  
@@ -71,9 +66,6 @@ Po utworzeniu szablonu i Kompresuj pliki w pliku zip, można zmodyfikować szabl
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [Instrukcje: Tworzenie pakietów startowych](../ide/how-to-create-starter-kits.md)
-
-
-

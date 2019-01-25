@@ -1,14 +1,9 @@
 ---
 title: Rozwiązywanie problemów z fragmentów kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - IntelliSense Code Snippets, troubleshooting
 - troubleshooting IntelliSense Code Snippets
@@ -17,13 +12,13 @@ ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4fff2767c962cf6899840e54bff798bae1f9e202
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803765"
 ---
 # <a name="troubleshooting-snippets"></a>Rozwiązywanie problemów z wstawkami kodu programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Problemy z fragmenty kodu IntelliSense są zazwyczaj spowodowane dwa problemy: p
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmenty kodu](../ide/code-snippets.md)
-
-
-

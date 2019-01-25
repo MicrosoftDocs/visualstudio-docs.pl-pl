@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy aktywności UML: Odwołanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy aktywności UML: Dokumentacja | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803371"
 ---
-# <a name="uml-activity-diagrams-reference"></a>Diagramy aktywności UML: Odnośnik
+# <a name="uml-activity-diagrams-reference"></a>Diagramy aktywności UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Diagram aktywności* przedstawia proces biznesowy lub procesu oprogramowania jako przepływ pracy za pomocą szeregu akcji. Osoby, składniki oprogramowania lub komputerów, można wykonywać te akcje.  
@@ -39,13 +36,13 @@ ms.locfileid: "51810471"
   
 - Proces biznesowy lub przepływ pracy między użytkownikami i systemu. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
-- Kroki wykonywane w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Kroki wykonywane w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Protokół oprogramowania, oznacza to, że dozwolone sekwencje interakcje pomiędzy składnikami.  
   
 - Algorytm oprogramowania.  
   
-  W tym temacie opisano elementy, które można użyć w diagramach aktywności. Aby uzyskać bardziej szczegółowe uzyskać informacje na temat działania rysowania diagramów zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md). Aby utworzyć diagram aktywności UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+  W tym temacie opisano elementy, które można użyć w diagramach aktywności. Aby uzyskać bardziej szczegółowe uzyskać informacje na temat działania rysowania diagramów zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md). Aby utworzyć diagram aktywności UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Odczytywanie diagramów aktywności  
  W tabelach w poniższych sekcjach opisano elementy, które można używać na diagramie aktywności i ich właściwości głównego. Aby uzyskać pełną listę właściwości elementów, zobacz [właściwości elementów w diagramach aktywności UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  
@@ -55,7 +52,7 @@ ms.locfileid: "51810471"
  Do odczytu na diagramie, załóżmy, że tokenu lub wątek kontroli, przekazuje wzdłuż łączniki z jedną akcję do następnego.  
   
 ### <a name="simple-control-flows"></a>Prosty formant przepływów  
- Możesz wyświetlić sekwencję akcji przy użyciu gałęzi i pętli. Aby uzyskać więcej informacji o sposobie używania elementy opisane w tym miejscu, w sekcji opisujący przepływ sterowania tematu [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+ Możesz wyświetlić sekwencję akcji przy użyciu gałęzi i pętli. Aby uzyskać więcej informacji o sposobie używania elementy opisane w tym miejscu, w sekcji opisujący przepływ sterowania tematu [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Prosty przepływ sterowania](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ ms.locfileid: "51810471"
 |9|**Wywołaj akcję zachowania**|Akcja, która jest zdefiniowana w bardziej szczegółowo w innym diagramie aktywności.<br /><br /> -   **IsSynchronous** — Jeśli to ustawienie ma wartość true, akcja czeka, aż do zakończenia działania.<br />-   **Zachowanie** -wywołane działanie.|  
 |(niewyświetlany)|**Wywołanie operacji**|Akcja wywołująca operację na wystąpienie klasy.|  
 ||**Aktywność**|Przepływ pracy, który jest przedstawiony za diagramie aktywności. Aby wyświetlić właściwości działania, należy wybrać w **Eksploratora modelu UML**.<br /><br /> -   **Jest tylko do odczytu** — Jeśli to ustawienie ma wartość true, działanie nie należy zmieniać stan każdego obiektu.<br />-   **Wykonanie jednej** — w przypadku wartości true, co najwyżej jednego wykonania tego diagramu w danym momencie.|  
-||**Diagram aktywności UML**|Diagram, który wyświetla działania. Aby wyświetlić jego właściwości, kliknij pustą część diagramu. **Uwaga:** nazw Diagram aktywności, plik, który zawiera diagram i działania wyświetlane przez diagram można wszystkie się różnić.|  
+||**Diagram aktywności UML**|Diagram, który wyświetla działania. Aby wyświetlić jego właściwości, kliknij pustą część diagramu. **Uwaga:**  Nazwy Diagram aktywności, plik, który zawiera diagram i działania wyświetlane przez diagram może wszystkie różnić.|  
   
 ### <a name="concurrent-flows"></a>Przepływy współbieżne  
  Możesz opisać sekwencji akcji, które są wykonywane w tym samym czasie. Aby uzyskać więcej informacji zobacz rysunek przepływy współbieżne.  
@@ -104,7 +101,4 @@ ms.locfileid: "51810471"
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)

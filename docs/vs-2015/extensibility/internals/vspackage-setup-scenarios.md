@@ -1,26 +1,21 @@
 ---
 title: Scenariusze instalacji pakietu VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799904"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ Należy zaprojektować swój Instalatora pakietu VSPackage, aby zapewnić elasty
   
  Na przykład, wartości rejestru są używane do rejestrowania swojej pakietów VSPackage przy użyciu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] powinny być oddzielone w składniku z jednego używane do rejestrowania swojej pakietów VSPackage przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Wartości rejestru lub plików udostępnionych przejść w jeszcze inny składnik.  
   
-## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Udostępnione pakietu VSPackage  
+## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Shared VSPackage  
  W tym scenariuszu udostępnionego pakietu VSPackage (pojedynczy plik binarny, który obsługuje wiele wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]) jest dostarczany w pakiecie Instalatora Windows. Rejestrowanie z każdą wersją programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest kontrolowany przy użyciu funkcji wybierane przez użytkownika. Oznacza to również, że po przypisaniu do oddzielania funkcji, każdego składnika można wybrać indywidualnie celu instalacji lub odinstalowania, zapewnieniem użytkownikowi kontroli nad integrowanie pakietu VSPackage różne wersje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. (Zobacz [funkcje Instalatora Windows](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) Aby uzyskać więcej informacji na temat korzystania z funkcji w pakietów Instalatora Windows.)  
   
- ![Grafika udostępnionego pakietu VSPackage VS](../../extensibility/internals/media/vs-sharedpackage.gif "VS_SharedPackage")  
+ ![VS Shared VSPackage graphic](../../extensibility/internals/media/vs-sharedpackage.gif "VS_SharedPackage")  
 Udostępnione Instalatora pakietu VSPackage  
   
  Jak pokazano na ilustracji, składników udostępnionych stają się częścią funkcji Feat_Common, która będzie zawsze instalowana. Przez funkcje Feat_VS2002 i Feat_VS2003 widoczności, użytkownicy mogą wybrać w momencie instalacji w wersjach programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mają pakietu VSPackage, aby zintegrować. Użytkownicy mogą także skorzystać z trybu konserwacji Instalatora Windows, dodawanie i usuwanie funkcji, która w tym przypadku dodaje lub usuwa informacje o rejestracji pakietu VSPackage z różnych wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,12 +53,12 @@ Udostępnione Instalatora pakietu VSPackage
 > [!CAUTION]
 >  Zawsze, gdy pakietu VSPackage jest współużytkowana przez wiele wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], istotne jest, że kolejne wersje pakietu VSPackage zachowania zgodności z poprzednimi wersjami z wcześniejszych wersji programu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W przypadku, gdy nie można zachować zgodności z poprzednimi wersjami, należy użyć pakietów VSPackage side-by-side przypadku wartość prywatna. Aby uzyskać więcej informacji, zobacz [obsługi wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
- ![VS udostępnionego obrazu aktualizacji pakietu programu VS](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
+ ![VS Shared VS Package Update Image](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Udostępnione Instalatora aktualizacji pakietu VSPackage  
   
  W tym scenariuszu przedstawiono nowego Instalatora pakietu VSPackage, korzystając z zalet Instalatora Windows obsługę niewielkie uaktualnienia. Użytkownicy instalują wersji 1.1 i uaktualni ona w wersji 1.0. Jednak nie jest konieczne w wersji 1.0 w systemie. Tym samym Instalator zainstaluje wersji 1.1 w systemie bez wersji 1.0. Zaletą zapewnienie niewielkie uaktualnienia w ten sposób jest to, że nie jest konieczne przechodzą przez prac związanych z tworzeniem uaktualnienia Instalatora i Instalator pełnego produktu. Jeden Instalator wykonuje oba zadania. Poprawkę zabezpieczeń lub service pack może zamiast tego skorzystaj z zalet poprawek Instalatora Windows. Aby uzyskać więcej informacji, zobacz [stosowanie poprawek i uaktualnień](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
   
-## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3: Side-by-Side VSPackage  
+## <a name="scenario-3-side-by-side-vspackage"></a>Scenariusz 3: Side-by-Side pakietu VSPackage  
  W tym scenariuszu przedstawiono dwa pliki instalacyjne pakietu VSPackage — jeden dla każdej wersji programu Visual Studio .NET 2003 i [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Każdy Instalator instaluje side-by-side i prywatnych, pakietu VSPackage (taki, który jest specjalnie utworzone i zainstalowane dla konkretnej wersji [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]). Każdego pakietu VSPackage znajduje się w jego własnej składnika. W związku z tym, każdy może być indywidualnie obsługiwany przy użyciu poprawek lub obsługi wersji. Ponieważ biblioteki DLL pakietu VSPackage teraz jest specyficzny dla wersji, jest bezpieczne dołączyć swoje informacje rejestracyjne w jednym składniku jako biblioteki DLL.  
   
  ![Po stronie VS&#45;przez&#45;grafiki pakietu programu VS po stronie](../../extensibility/internals/media/vs-sbys-package.gif "VS_SbyS_Package")  
@@ -84,4 +79,3 @@ Instalator aktualizacji pakietu VSPackage Side-by-side
 ## <a name="see-also"></a>Zobacz też  
  [Instalator Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
-

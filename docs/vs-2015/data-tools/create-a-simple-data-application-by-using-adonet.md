@@ -1,12 +1,9 @@
 ---
 title: Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805517"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|Zdefiniuj metodę, aby sprawdzić, czy nazwa klienta jest obecna.<br /><br /> — Jeśli pole tekstowe jest puste, wyświetlany komunikat i zwracają `false`, ponieważ nazwa jest wymagana do utworzenia konta.<br />— Jeśli pole tekstowe nie jest pusta, zwróć `true`.|  
 |NC-17|Dodaj kod do obsługi zdarzeń kliknij `btnPlaceOrder` przycisku.|  
 |NC-18|Opakować wywołanie `isPlaceOrderReady` wokół `btnPlaceOrder_Click` kodu zdarzenia, aby `uspPlaceNewOrder` nie działa, jeśli jest to wymagane dane wejściowe nie będą dostępne.|  
-|NC-19 poprzez NC-25|Te sekcje kodu odpowiadają kodowi dodanemu przez dodano dla `btnCreateAccount_Click` programu obsługi zdarzeń.<br /><br /> -NC-19. Tworzenie `SqlCommand` obiektu `cmdNewOrder`, a następnie określ `Sales.uspPlaceOrder` jako procedurę przechowywaną.<br />-NC-20 do NC 23 są parametrami wejściowymi dla procedury składowanej.<br />-NC-24. `@RC` będzie zawierać zwracanej wartości, która jest identyfikator zamówieniem wygenerowany z bazy danych. Kierunek tego parametru jest określony jako `ReturnValue`.<br />-NC-25. Wartość Identyfikatora zamówienia w Store `orderID` zmiennej zadeklarowanej w NC-2 i Wyświetl tę wartość, w oknie komunikatu.|  
+|NC-19 poprzez NC-25|Te sekcje kodu odpowiadają kodowi dodanemu przez dodano dla `btnCreateAccount_Click` programu obsługi zdarzeń.<br /><br /> -   NC-19. Tworzenie `SqlCommand` obiektu `cmdNewOrder`, a następnie określ `Sales.uspPlaceOrder` jako procedurę przechowywaną.<br />-NC-20 do NC 23 są parametrami wejściowymi dla procedury składowanej.<br />-   NC-24. `@RC` będzie zawierać zwracanej wartości, która jest identyfikator zamówieniem wygenerowany z bazy danych. Kierunek tego parametru jest określony jako `ReturnValue`.<br />-   NC-25. Wartość Identyfikatora zamówienia w Store `orderID` zmiennej zadeklarowanej w NC-2 i Wyświetl tę wartość, w oknie komunikatu.|  
 |NC-26|Zdefiniuj metodę, aby sprawdzić, czy istnieje identyfikator klienta i że kwota została określona w `numOrderAmount`.|  
 |NC-27|Wywołaj `ClearForm` method in Class metoda `btnAddAnotherAccount` program obsługi zdarzeń kliknięcia.|  
 |NC-28|Utwórz `ClearForm` metodę, aby wyczyścić wartości z formularza, jeśli chcesz dodać innego klienta.|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> Testowanie aplikacji  
  Wybierz klawisz F5, aby skompilować i przetestować aplikację po zakodowaniu każdej obsługi zdarzenia Click, a następnie po zakończenia kodowania.
-

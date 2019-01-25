@@ -4,25 +4,27 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.General
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.General
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.General
+- VS.ToolsOptionsPages.Text_Editor.C/C++.General
 - VS.ToolsOptionsPages.Text_Editor.CoffeeScript.General
 - VS.ToolsOptionsPages.Text_Editor.CSS.General
 - VS.ToolsOptionsPages.Text_Editor.Dockerfile.General
-- VS.ToolsOptionsPages.Text_Editor.F%2523.General
+- VS.ToolsOptionsPages.Text_Editor.F#.General
+- VS.ToolsOptionsPages.Text_Editor.Fsharp.General
 - VS.ToolsOptionsPages.Text_Editor.HQL.General
 - VS.ToolsOptionsPages.Text_Editor.HTML.General
-- VS.ToolsOptionsPages.Text_Editor.HTMLX.General
+- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.General
 - VS.ToolsOptionsPages.Text_Editor.JSON.General
 - VS.ToolsOptionsPages.Text_Editor.LESS.General
 - VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
-- VS.ToolsOptionsPages.Text_Editor.ResJSON.General
 - VS.ToolsOptionsPages.Text_Editor.SCSS.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Server_Tools.General
+- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.General
@@ -41,12 +43,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0715d9dea9dd3424c5e623cd8fc7a89ea1caed
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: f15490b9bae512ba01a9723d9bfc1695c83bd370
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785383"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 

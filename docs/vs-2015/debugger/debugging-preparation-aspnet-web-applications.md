@@ -1,14 +1,9 @@
 ---
-title: 'Przygotowanie debugowania: Aplikacje sieci Web ASP.NET | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przygotowanie debugowania: Aplikacje sieci Web programu ASP.NET | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781303"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Przygotowanie debugowania: Aplikacje internetowe ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,14 +43,14 @@ ms.locfileid: "51730685"
   
 1.  Ustaw co najmniej jednego punktu przerwania w funkcji i procedury obsługi zdarzeń.  
   
-     Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Po osiągnięciu punktu przerwania przejść przez kod wewnątrz funkcji. Obserwuj wykonywanie kodu, dopóki nie można ustalić przyczynę problemu.  
   
-     Aby uzyskać więcej informacji, zobacz [przechodzenie krok po kroku](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) i [debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md).  
+     Aby uzyskać więcej informacji, zobacz [przechodzenie krok po kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) i [debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Zmiana konfiguracji domyślnych  
- Jeśli chcesz zmienić domyślne debugowania i zwalniania konfiguracji utworzone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], możesz to zrobić. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie debugowania i konfiguracje wydania](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Jeśli chcesz zmienić domyślne debugowania i zwalniania konfiguracji utworzone przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], możesz to zrobić. Aby uzyskać więcej informacji, zobacz [jak: Ustaw wartość Debug i Release konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 #### <a name="to-change-the-default-debug-configuration"></a>Aby zmienić domyślną konfigurację debugowania  
   
@@ -74,6 +69,3 @@ ms.locfileid: "51730685"
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
-
-
-

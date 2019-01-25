@@ -1,28 +1,23 @@
 ---
-title: 'Porady: otwieranie edytorów dla otwartych dokumentów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Otwieranie edytorów dla otwartych dokumentów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750983"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788750"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Porady: otwieranie edytorów dla otwartych dokumentów
+# <a name="how-to-open-editors-for-open-documents"></a>Instrukcje: Otwieranie edytorów dla otwartych dokumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy określić czy plik jest już otwarty w oknie dokumentu innym edytorze. Może to być plik albo otworzyć w edytorze specyficzne dla projektu lub jednego z standardowych edytorów zarejestrowane w usłudze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -57,10 +52,9 @@ Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy okr
   
      Ta metoda sprawdza najpierw, że dokument nie jest już otwarty przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Jeśli dokument jest już otwarty, to resurfaced jej okna edytora.  
   
-2.  Jeśli dokument nie jest otwarty, wykonaj kroki [porady: otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md).  
+2.  Jeśli dokument nie jest otwarty, wykonaj kroki [jak: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Porady: otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)   
- [Instrukcje: otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md)
-
+ [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)   
+ [Instrukcje: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md)

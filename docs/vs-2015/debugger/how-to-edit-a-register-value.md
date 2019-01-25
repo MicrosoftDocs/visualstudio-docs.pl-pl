@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Edytowanie wartości rejestru | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Edytowanie wartości rejestru | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c41b54ea075415dac7114413f9cdc15cc6a07a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798338"
 ---
-# <a name="how-to-edit-a-register-value"></a>Porady: edytowanie wartości rejestru
+# <a name="how-to-edit-a-register-value"></a>Instrukcje: Edytowanie wartości rejestru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
@@ -53,9 +48,4 @@ Okno rejestrów jest dostępna tylko wtedy, gdy debugowanie na poziomie adresów
     >  Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych najmniej znaczące bity w rejestrze zmiennoprzecinkowych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

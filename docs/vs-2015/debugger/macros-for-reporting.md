@@ -1,14 +1,9 @@
 ---
 title: Makra raportowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788505"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Możesz użyć **_RPTn**, i **_RPTFn** makra, zdefiniowane w CRTDBG. Godz., aby 
 |Macro|Opis|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Generuje ciąg wiadomości i zero do czterech argumentów. Dla _RPT1 za pośrednictwem **_RPT4**, ciąg komunikatu o służy jako ciąg formatowania funkcji printf stylu dla argumentów.|  
-|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Taki sam jak **_RPTn** , ale te makra dane wyjściowe pliku nazwa i numer wiersza gdzie znajduje się makro.|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Taki sam jak **_RPTn** , ale te makra dane wyjściowe pliku nazwa i numer wiersza gdzie znajduje się makro.|  
   
  Rozważmy następujący przykład:  
   
@@ -90,6 +85,3 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
 ## <a name="see-also"></a>Zobacz też  
  [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
-
-
-

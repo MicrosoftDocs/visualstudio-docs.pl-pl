@@ -1,26 +1,21 @@
 ---
-title: 'Wskazówki: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c110ace4eba116c578d9d675eeafe4f678ac9d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257533"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792236"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation (WPF) do przedstawienia sposobu tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
@@ -60,7 +55,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 12. Zaznacz formant pola wyboru. W oknie Właściwości zmień wartość **nazwa** właściwość \<Brak nazwy > na checkBox1 i wyczyść **IsEnabled** właściwości.  
   
-     ![Prostej aplikacji WPF](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")  
+     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")  
   
 13. Kliknij dwukrotnie formant przycisku aby dodać obsługę zdarzeń kliknięcia.  
   
@@ -381,7 +376,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [kodowanego interfejsu użytkownika testów-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>Ćwiczenia praktyczne  
- [Wirtualne laboratorium MSDN: Wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+ [MSDN Virtual Lab: Wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
 ### <a name="faq"></a>Najczęściej zadawane pytania  
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -393,9 +388,6 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Wprowadzenie do projektanta WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [Wprowadzenie do projektanta WPF](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
-
-
-

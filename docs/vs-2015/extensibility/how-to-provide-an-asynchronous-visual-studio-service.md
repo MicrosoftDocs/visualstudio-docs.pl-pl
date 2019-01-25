@@ -1,28 +1,24 @@
 ---
-title: 'Instrukcje: asynchroniczne obsługi | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zapewniają asynchroniczne usługi | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e57de7ca683678441b4e0908110e8e651930b64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 3a0bae91d5525de54c967c09e8c4ef130cb85cab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779893"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Porady: obsługi asynchronicznego programu Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Instrukcje: Dostarczanie asynchronicznej usługi programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli chcesz uzyskać usługi bez blokowania wątku interfejsu użytkownika, należy Tworzenie usługi asynchronicznego i załadować pakiet w wątku tła. W tym celu można użyć <xref:Microsoft.VisualStudio.Shell.AsyncPackage> zamiast <xref:Microsoft.VisualStudio.Shell.Package>i Dodaj usługę za pomocą specjalnych metod asynchronicznych asynchronicznego pakietu
 
- Aby dowiedzieć się, jak dostarczanie synchroniczne usługi Visual Studio, zobacz [jak: świadczenia usług](../extensibility/how-to-provide-a-service.md).
+ Aby dowiedzieć się, jak dostarczanie synchroniczne usługi Visual Studio, zobacz [jak: Oferuje usługi](../extensibility/how-to-provide-a-service.md).
 
 ## <a name="implementing-an-asynchronous-service"></a>Wdrażanie usługi asynchroniczne
 

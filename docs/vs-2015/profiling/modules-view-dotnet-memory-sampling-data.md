@@ -1,27 +1,22 @@
 ---
 title: Widok modułów — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804098"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Widok modułów danych alokacji pamięci .NET, które są zbierane przy użyciu 
   
  Numery wierszy pliku źródłowego w instrukcji, które przydzielają pamięć są wymienione poniżej tego węzła funkcji, a adresy instrukcji, które wykonują alokacji są wymienione pod węzeł wiersza. Wartości włączne i wyłączne są zawsze takie same dla wiersza danych i danych instrukcji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa modułu, funkcji, numer wiersza lub adres instrukcji.|  
 |**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
@@ -49,10 +44,7 @@ Widok modułów danych alokacji pamięci .NET, które są zbierane przy użyciu 
 |**% Bajtów wyłącznych**|Procent wszystkich bajtów przydzielonych w uruchomienia profilowania były bajty wyłączne modułu, funkcji, wiersza lub instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Widok modułów](../profiling/modules-view-sampling-data.md)   
  [Widok modułów](../profiling/modules-view-instrumentation-data.md)
-
-
-

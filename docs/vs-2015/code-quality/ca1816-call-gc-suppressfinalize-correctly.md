@@ -1,13 +1,9 @@
 ---
 title: 'CA1816: Wywołaj GC. SuppressFinalize poprawnie | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -19,21 +15,21 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 897edd38cb9d0c50d098afd31e2c7a52c6343b2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794925"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Wywołaj GC. SuppressFinalize poprawnie
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Poprawnie wywołaj metodę GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
-|Kategoria|Firmy Microsoft. Użycie|
+|Kategoria|Microsoft. Użycie|
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna

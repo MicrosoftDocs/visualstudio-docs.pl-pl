@@ -1,14 +1,9 @@
 ---
 title: Projektant programu do cieniowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942013"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805464"
 ---
 # <a name="shader-designer"></a>Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj eksport)|  
 |-----------------|--------------------|-------------------------------------------------|  
 |Język programu do cieniowania wykresu bezpośredniego|.dgsl|Wyświetl, Edytuj|  
-|Modułu cieniującego HLSL (kodu źródłowego)|.hlsl|Eksportuj|  
-|Modułu cieniującego HLSL (kodu bajtowego)|.CSO|Eksportuj|  
-|Nagłówek języka C++ (tablica kodu bajtowego języka HLSL)|.h|Eksportuj|  
+|Modułu cieniującego HLSL (kodu źródłowego)|.hlsl|Eksportowanie|  
+|Modułu cieniującego HLSL (kodu bajtowego)|.cso|Eksportowanie|  
+|Nagłówek języka C++ (tablica kodu bajtowego języka HLSL)|.h|Eksportowanie|  
   
 ## <a name="getting-started"></a>Wprowadzenie  
  W tej sekcji opisano sposób dodawania do modułu cieniującego DGSL swoje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu i zawiera podstawowe informacje, aby pomóc Ci rozpocząć pracę.  
@@ -86,7 +81,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Podgląd przy użyciu płaszczyzny**|Po włączeniu modelu płaszczyzny służy do podglądu modułu cieniującego. Kształt tylko jeden (wersja zapoznawcza) w danym momencie może być włączone.|  
 |**Przybornik**|Zamiennie pokazuje i ukrywa **przybornika**.|  
 |**Właściwości**|Można również pokazuje lub ukrywa **właściwości** okna.|  
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: umożliwia eksport cieniowania w różnych formatach.<br /><br /> **Eksportuj jako**: eksportuje programu do cieniowania, jako kod źródłowy albo HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [porady: eksport cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór modułu renderowania, który służy do wyświetlania na powierzchnię projektową.<br /><br /> **Renderowanie z D3D11**: używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Renderowanie z D3D11WARP**: używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowe informacje na temat Shader Designer.<br /><br /> **Klatki, szybkości**: po włączeniu Wyświetla bieżącą szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.  Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.|  
+|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Eksportuj**: Umożliwia eksportowanie cieniowania w różnych formatach.<br /><br /> **Eksportuj jako**: Eksportuje programu do cieniowania, jako kod źródłowy albo HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).<br /><br /> **Aparaty grafiki**: Umożliwia wybór modułu renderowania, który służy do wyświetlania na powierzchnię projektową.<br /><br /> **Renderowanie z D3D11**: Używa programu Direct3D 11 do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Renderowanie z D3D11WARP**: Używa programu Direct3D 11 Windows Advanced rasteryzacji platformy WARP () do renderowania powierzchni projektowej projektanta modułu cieniującego.<br /><br /> **Widok**: Umożliwia wybór dodatkowe informacje na temat Shader Designer.<br /><br /> **Klatki, szybkości**: Po włączeniu Wyświetla bieżąca szybkość odtwarzania w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.  Ta opcja jest przydatna po włączeniu **tryb renderowania w czasie rzeczywistym** opcji.|  
   
 > [!TIP]
 >  Możesz wybrać **zaawansowane** przycisk, aby ponownie uruchomić ostatnie polecenie.  
@@ -133,12 +128,12 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 |Parametr|Właściwości|  
 |---------------|----------------|  
-|**Tekstury 1** — **tekstury 8**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Nazwa pliku**: Pełna ścieżka pliku tekstury, który jest skojarzony z tym rejestrem tekstury.|  
-|**Otoczenie materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor rozpraszania bieżącego piksela z powodu oświetlenia pośredniego — lub otoczenia —.|  
-|**Rozpraszanie materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor, który opisuje, jak diffuses przez bieżący piksel oświetlenia bezpośredniego.|  
-|**Emisja materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: udział koloru materiału bieżącego piksela ze względu na własnym podana oświetlenia.|  
-|**Odblask materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: kolor opisujący Odbijanie oświetlenia bezpośredniego przez bieżącego piksela.|  
-|**Moc odblasku materiału**|**Dostęp do**: **publicznych** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: wykładnik definiujący intensywność światła odbitego na bieżącego piksela.|  
+|**Tekstury 1** — **tekstury 8**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Nazwa pliku**: Pełna ścieżka pliku tekstury, który jest skojarzony z tym rejestrem tekstury.|  
+|**Otoczenie materiału**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Kolor rozpraszania bieżącego piksela z powodu oświetlenia pośredniego — lub otoczenia —.|  
+|**Rozpraszanie materiału**|**Dostęp do**: **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**:  Kolor, który opisuje, jak diffuses przez bieżący piksel oświetlenia bezpośredniego.|  
+|**Emisja materiału**|**Dostęp do**:                              **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Udział koloru materiału bieżącego piksela ze względu na własnym podana oświetlenia.|  
+|**Odblask materiału**|**Dostęp do**:                              **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Kolor opisujący Odbijanie oświetlenia bezpośredniego przez bieżącego piksela.|  
+|**Moc odblasku materiału**|**Dostęp do**:                             **Publiczne** umożliwia właściwość można ustawić w edytorze modeli w przeciwnym razie **prywatnej**.<br /><br /> **Wartość**: Wykładnik definiujący intensywność światła odbitego na bieżącego piksela.|  
   
 #### <a name="time-based-effects"></a>Wpływ na podstawie czasu  
  Niektóre programy do cieniowania mają animuje efekt składnik oparte na czasie. Aby pokazać, jak wygląda efekt w działaniu, korzystania z wersji zapoznawczej musi zostać zaktualizowane kilka razy na sekundę. Domyślnie program wersji zapoznawczej są aktualizowane tylko po zmianie programu do cieniowania; Aby zmienić to zachowanie, dzięki czemu można wyświetlić wpływ na podstawie czasu, należy włączyć renderowania w czasie rzeczywistym.  
@@ -159,7 +154,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
  Programy do cieniowania można wyeksportować jako kod źródłowy języka HLSL lub kodu bajtowego skompilowanego modułu cieniującego. Kod źródłowy języka HLSL jest eksportowany do pliku tekstowego, który ma rozszerzenie nazwy pliku .hlsl. Kod bajtowy programu do cieniowania można wyeksportować do surowego plik binarny, który ma rozszerzenie nazwy pliku .cso lub do pliku nagłówka (.h) języka C++, który koduje kodu bajtowego programu cieniującego w tablicy.  
   
- Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [porady: eksport cieniowania](../designers/how-to-export-a-shader.md).  
+ Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania, zobacz [jak: Eksport cieniowania](../designers/how-to-export-a-shader.md).  
   
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe  
   
@@ -175,8 +170,8 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |Pomniejszanie|CTRL obrót kółkiem myszy do tyłu<br /><br /> Znak minusa (-)|  
 |Przesuń w górę powierzchni projektowej|Obrót kółkiem myszy do tyłu<br /><br /> PageDown|  
 |Przesuń w dół na powierzchnię projektową|Obrót kółkiem myszy do przodu<br /><br /> PageUp|  
-|Przesuń w lewo powierzchni projektowej|Shift+obrót kółkiem myszy do tyłu<br /><br /> Ruch kółkiem myszy w lewo<br /><br /> SHIFT + PageDown|  
-|Przesuń w prawo powierzchni projektowej|Shift+obrót kółkiem myszy do przodu<br /><br /> Ruch kółkiem myszy w prawo<br /><br /> SHIFT + PageUp|  
+|Przesuń w lewo powierzchni projektowej|Shift+obrót kółkiem myszy do tyłu<br /><br /> Ruch kółkiem myszy w lewo<br /><br /> Shift+PageDown|  
+|Przesuń w prawo powierzchni projektowej|Shift+obrót kółkiem myszy do przodu<br /><br /> Ruch kółkiem myszy w prawo<br /><br /> Shift+PageUp|  
 |Przenieś fokus klawiatury do innego węzła|Klawisze strzałek|  
 |Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy zaznaczenia)|SHIFT + SPACJA|  
 |Przełącz zaznaczenie węzła, który ma fokus klawiatury|Ctrl+Spacja|  
@@ -193,6 +188,3 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Zawiera omówienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzia, które służą do pracy z tekstury i obrazy, modele 3D i efekty cieniowania.|  
 |[Edytor obrazów](../designers/image-editor.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytora obrazów do pracy z teksturami i obrazami.|  
 |[Edytor modelu](../designers/model-editor.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytora modelu do pracy z modelami 3-D.|
-
-
-

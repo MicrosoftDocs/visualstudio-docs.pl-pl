@@ -1,30 +1,25 @@
 ---
-title: 'Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8f35b050b38013d57d347e10d1dcfd374a44d6d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779860"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [wizualne omówienie style](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [wizualne omówienie style](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:  
   
@@ -75,7 +70,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
          Ten przycisk pokazuje wszystkie elementy projektu, w tym te, które zostały wykluczone, które zwykle są ukryte. Plik manifestu jest wyświetlany jako element projektu.  
   
-2.  Twórz i Publikuj swoje rozwiązanie. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Twórz i Publikuj swoje rozwiązanie. Aby uzyskać więcej informacji o sposobie publikowania rozwiązania, zobacz [jak: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ##  <a name="BKMK_CreateManifest"></a> Utwórz plik manifestu  
   
@@ -169,8 +164,5 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Omówienie funkcji stylów wizualnych](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
+ [Omówienie funkcji stylów wizualnych](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
  [Wiersze polecenia](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
-
-
-

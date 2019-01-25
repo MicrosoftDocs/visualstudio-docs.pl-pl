@@ -1,11 +1,8 @@
 ---
-title: 'Porady: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, state machine workflow library
@@ -15,15 +12,15 @@ ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 9f813df11fdc787455c1c435a53cff2e074612a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1f972903cadf6a918b34b1d0fbed560bd26606f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773149"
 ---
-# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Porady: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)
+# <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Instrukcje: Tworzenie biblioteki przepływu pracy automatu stanów (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt biblioteki przepływu pracy automatu stanu za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-state-machine-workflow-library-project"></a>Aby utworzyć projekt biblioteki przepływu pracy stanu maszyny  

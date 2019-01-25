@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967777"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800051"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak tworzenie systemu podstawowego projektu. W tym przewodniku opiera się na systemu podstawowego projektu, dodając szablonu programu Visual Studio, strony właściwości i inne funkcje. Pierwszym przewodniku należy wykonać przed rozpoczęciem korzystania z niej.  
@@ -223,7 +223,7 @@ ZipProjects:
   
 5.  W *.csproj* Dodaj \<OutputSubPath > do każdego z elementów ZipProject. Cofnij ładowanie projektu, jak poprzednio i wyedytuj plik projektu.  
   
-6.  Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. ZipProject  
+6.  Znajdź \<ZipProject > elementy. Do każdego \<ZipProject > elementu Dodawanie \<OutputSubPath > element i nadaj mu wartość konsoli. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr strony właściwości projektu  
+## <a name="create-a-project-property-page"></a>Tworzenie strony właściwości projektu  
  Można utworzyć strony właściwości dla danego typu projektu, tak aby użytkownicy mogli wyświetlić i zmienić właściwości w projektach, które są oparte na szablonie. W tej sekcji dowiesz się, jak utworzyć stronę właściwości niezależne od konfiguracji. Tej strony właściwości podstawowych użyto siatki właściwości, aby wyświetlić właściwości publiczne, które uwidaczniają w klasie strony właściwości.  
   
  Pochodzi z klasy strony właściwości `SettingsPage` klasy bazowej. Siatki właściwości udostępniane przez `SettingsPage` klasy zna najbardziej pierwotne typy danych i wie, jak można je wyświetlić.  Ponadto `SettingsPage` klasy wie, jak zachować wartości właściwości do pliku projektu.  

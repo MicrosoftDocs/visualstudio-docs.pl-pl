@@ -1,27 +1,22 @@
 ---
 title: Instalowanie aplikacji Isolated Shell | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776470"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
         ```  
   
     > [!NOTE]
-    >  Wymaganych zależności dla aplikacji, Shell (Isolated): DebuggerProxy, MasterPkgDef, zasoby (szczególnie plik .winprf), aplikacji i PkgDefs.  
+    >  Dostępne są następujące zależności wymagane dla aplikacji, Shell (Isolated): DebuggerProxy, MasterPkgDef, zasoby (szczególnie plik .winprf), aplikacji i PkgDefs.  
   
 ### <a name="registry-entries"></a>Wpisy rejestru  
  Szablon projektu Shell (Isolated) zawiera *ProjectName*plik reg dla kluczy rejestru w celu scalenia w instalacji. Te wpisy rejestru musi być częścią pliku MSI dla instalacji i czyszczenia celów. Należy także utworzyć pasującego bloki rejestru w ApplicationRegistry.wxs.  
@@ -181,10 +176,10 @@ Aby zainstalować aplikację powłoki należy wykonać następujące czynności.
   
 5.  Dla każdego wpisu rejestru w *ProjectName*.reg, Dodaj odpowiedni blok rejestru, jak w poniższych przykładach pokazano.  
   
-    |*ProjectName*reg.|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "Obiekt PhotoStudio DTE"|\<Identyfikator RegistryKey = Root "DteClsidRegKey" = "HKCR" klucz = "$(var.) DteClsidRegKey) "Akcja ="createAndRemoveOnUninstall"><br /><br /> \<Typ RegistryValue = "string" Name = "@" wartość = "$(var.) Obiekt ShortProductName) DTE "/ ><br /><br /> \</ Element RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\\LocalServer32 {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "$RootFolder$\PhotoStudio.exe"|\<Identyfikator RegistryKey = Root "DteLocSrv32RegKey" = "HKCR" klucz = "$(var.) \LocalServer32 DteClsidRegKey) "Akcja ="createAndRemoveOnUninstall"><br /><br /> \<Typ RegistryValue = "string" Name = "@" wartość = "[INSTALLDIR] $(var.) ShortProductName) .exe "/ ><br /><br /> \</ Element RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<Typ RegistryValue = "string" Name = "@" wartość = "$(var.) Obiekt ShortProductName) DTE "/ ><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<Typ RegistryValue = "string" Name = "@" wartość = "[INSTALLDIR] $(var.) ShortProductName) .exe "/ ><br /><br /> \</RegistryKey>|  
   
      W tym przykładzie Var.DteClsidRegKey jest rozpoznawany jako klucz rejestru w górnym wierszu. Var.ShortProductName jest rozpoznawana jako `PhotoStudio`.  
   
@@ -375,4 +370,3 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Tworzenie podstawowej aplikacji Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-

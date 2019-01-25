@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3cae6558bdce8206340f10d570a620ba0fb1972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f4164b9d66e0a171a00d81e1044c5078298ec60
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932327"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876021"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1
   Możesz rozszerzyć systemu projektu programu SharePoint w programie Visual Studio, tworząc własny projekt typów elementów. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint w celu utworzenia akcji niestandardowej w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do **Akcje witryny** menu witryny programu SharePoint.
@@ -62,7 +62,7 @@ ms.locfileid: "53932327"
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Aby ukończyć ten Instruktaż, musisz utworzyć trzy projekty:
 
-- Projekt VSIX. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.
+- A VSIX project. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.
 
 - Element projektu szablonu. Ten projekt tworzy szablon elementu, który może służyć do dodawania elementu projektu programu SharePoint do projektu programu SharePoint.
 

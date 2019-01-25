@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32a628cd5279d0f80ac7af0de5adaf8ddda6c31c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773195"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -24,7 +24,7 @@ Narzędzia diagnostyczne zawierają nowe wizualizacje, aby pomóc w zidentyfikow
 
 Aby uzyskać więcej informacji, zobacz [informacje o wersji programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-A **Podsumowanie** karta została dodana do narzędzia, które pomaga skoncentrować się na kluczowych obszarach analizy wydajności. Ta karta pokazuje, ile zdarzenia wystąpiły pozwala korzystać z migawki sterty i pozwala na szybkie włączenie zbierania danych użycia procesora CPU. Ten widok przedstawia dowolne [usługi Application insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) lub [analiza interfejsu użytkownika](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) zdarzenia. Ponadto dla programu Visual Studio Enterprise, ten widok również przedstawia zdarzenia funkcji IntelliTrace.
+A **Podsumowanie** karta została dodana do narzędzia, które pomaga skoncentrować się na kluczowych obszarach analizy wydajności. Ta karta pokazuje, ile zdarzenia wystąpiły pozwala korzystać z migawki sterty i pozwala na szybkie włączenie zbierania danych użycia procesora CPU. Ten widok przedstawia dowolne [usługi Application insights](/azure/azure-monitor/app/visual-studio) lub [analiza interfejsu użytkownika](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) zdarzenia. Ponadto dla programu Visual Studio Enterprise, ten widok również przedstawia zdarzenia funkcji IntelliTrace.
 
 ![Karta podsumowania narzędzia diagnostyczne](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: debugowanie aplikacji internetowych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie aplikacji internetowych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805043"
 ---
-# <a name="how-to-debug-web-applications"></a>Porady: debugowanie aplikacji internetowych
+# <a name="how-to-debug-web-applications"></a>Instrukcje: Debugowanie aplikacji sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] jest podstawową technologię do opracowywania aplikacji sieci Web w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Debugera oferuje zaawansowane narzędzia do debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, lokalnie lub na serwerze zdalnym. W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projektu podczas programowania. Aby uzyskać informacje dotyczące debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] już wdrożone na serwerze produkcyjnym aplikacji sieci Web, zobacz [debugowania wdrożonych aplikacji sieci Web](../debugger/debugging-deployed-web-applications.md).  
@@ -44,7 +39,7 @@ ms.locfileid: "51793636"
   
 -   Plik konfiguracyjny aplikacji (Web.config) musi być ustawiony w tryb debugowania. Powoduje, że tryb debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] generuje symbole dla dynamicznie wygenerowanych plików i umożliwia debugerowi dołączenie do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt jest utworzony z szablonu projektów sieci Web.  
   
--   Aby uzyskać więcej informacji, zobacz [porady: Włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+-   Aby uzyskać więcej informacji, zobacz [jak: Włącz debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Aby debugować aplikację sieci Web podczas programowania  
   
@@ -61,7 +56,4 @@ ms.locfileid: "51793636"
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md)   
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Instrukcje: włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-
-
-
+ [Instrukcje: Włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

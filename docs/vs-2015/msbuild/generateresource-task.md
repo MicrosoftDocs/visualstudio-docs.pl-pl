@@ -1,14 +1,9 @@
 ---
 title: Generateresource — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796909"
 ---
 # <a name="generateresource-task"></a>GenerateResource — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +89,7 @@ Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na j�
  Przy założeniu, że zestaw jest o nazwie myAssembly, poniższy kod generuje osadzony zasób o nazwie someQualifier.someResource.resources:  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Bez \<LogicalName > metadane, zasobu będą miały postać myAssembly.myResource.resources.  Ten przykład dotyczy tylko dla procesu kompilacji w Visual Basic i Visual C#.  
@@ -102,6 +97,3 @@ Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na j�
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

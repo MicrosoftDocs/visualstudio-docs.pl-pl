@@ -1,13 +1,9 @@
 ---
 title: Przenoszenie, migrowanie i uaktualnianie projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -22,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805556"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można
 |Inne|Większość innych rodzajów projektów można otworzyć [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]i Visual Studio 2010 SP1.|
 |Witryny sieci Web programu FrontPage|Nie można otworzyć tego projektu w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ponieważ program nie obsługuje tego typu projektu.|
 |Biblioteka klas przenośnych|Jeśli zezwolisz programowi Visual Studio na automatyczne aktualizowanie projektu, możesz otworzyć go w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub Visual Studio 2010 SP1.<br /><br /> -Projekty ukierunkowane na Silverlight 4 będą ukierunkowane na Silverlight 5.<br />-Projekty ukierunkowane na Windows Phone 7.0 lub Windows Phone 7.5 będą ukierunkowane na Windows Phone 8.<br />-Projekty ukierunkowane na konsolę Xbox 360 nie będą już ukierunkowane konsoli Xbox 360.|
-|Projekty platformy Azure, takich jak chmury usługi (z rozszerzeniem ccproj) i projektów usługi Azure Resource Manager (projektów wdrożeń w chmurze) z rozszerzeniem .deployproj|Aby otworzyć tych typów projektów, należy najpierw zainstalować [zestawu Azure SDK dla platformy .NET](http://azure.microsoft.com/en-us/downloads/), następnie otworzyć projekt.|
+|Projekty platformy Azure, takich jak chmury usługi (z rozszerzeniem ccproj) i projektów usługi Azure Resource Manager (projektów wdrożeń w chmurze) z rozszerzeniem .deployproj|Aby otworzyć tych typów projektów, należy najpierw zainstalować [zestawu Azure SDK dla platformy .NET](http://azure.microsoft.com/downloads/), następnie otworzyć projekt.|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Rozwiązywanie problemów ze zgodnością projektów
  Oto kilka rzeczy, które można wykonać, gdy projekt nie otwiera się w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:

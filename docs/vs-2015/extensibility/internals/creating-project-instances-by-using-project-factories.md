@@ -1,27 +1,22 @@
 ---
 title: Tworzenie wystąpień projektów przy użyciu fabryk projektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736259"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772626"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Typów projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] użyj *fabry
   
  Możesz zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu w klasie w projekcie. Zazwyczaj znajduje się w module swój własny.  
   
- Na przykład implementacja `IVsProjectFactory` interfejsu, zobacz PrjFac.cpp, który jest zawarty w [podstawowego projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) katalog przykładu.  
+ Na przykład implementacja `IVsProjectFactory` interfejsu, zobacz PrjFac.cpp, który jest zawarty w [podstawowego projektu](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) katalog przykładu.  
   
  Projekty, które obsługuje Agregacja przez właściciela, muszą zostać zachowane klawiszem właściciela w pliku projektu. Gdy <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda jest wywoływana w projekcie przy użyciu klucza właściciela, należących do projektu konwertuje jego właściciela klucza fabryką projektu, następnie wywołuje GUID `CreateProject` metody w tej fabryce projektu w celu utworzenia rzeczywistych.  
   
@@ -57,5 +52,4 @@ Typów projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] użyj *fabry
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Lista kontrolna: tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)
-
+ [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)

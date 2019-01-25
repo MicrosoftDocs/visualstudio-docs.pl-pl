@@ -1,14 +1,9 @@
 ---
 title: Funkcja IntelliSense programu Visual C# | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800878"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować tokenów nie ma znaczenia i wstępnie wybierz token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w języku C#](../misc/filtered-completion-lists-in-csharp.md) i [Pre-selected listy uzupełniania w C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Fragmenty kodu w listach uzupełniania  
- W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
+ W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
   
 ###  <a name="Keywords"></a> Słowa kluczowe języka w listach uzupełniania  
  W języku Visual C# na liście uzupełniania także słowa kluczowe języka. Aby uzyskać więcej informacji na temat słowa kluczowe języka C#, zobacz [słowa kluczowe języka C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
@@ -66,17 +61,17 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   
 -   **Interfejsy i klas bazowych.** Funkcja IntelliSense automatycznie usuwa elementy z interfejsu i podstawowej klasy listy uzupełniania, w deklaracji klasy podstawowe i interfejs listy i listy ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ nie można używać wyliczenia dla klas podstawowych. Na liście uzupełniania klas bazowych zawiera tylko interfejsów i przestrzeni nazw. Jeśli wybierz element na liście, a następnie wpisz przecinek, IntelliSense usuwa klas bazowych z listy uzupełniania, ponieważ Visual C# nie obsługuje wielokrotne dziedziczenie. Takie samo zachowanie występuje także klauzule ograniczenia.  
   
--   **Atrybuty**: po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.  
+-   **Atrybuty**: Po zastosowaniu atrybutu do typu, na liście uzupełniania jest filtrowana, tak aby lista zawiera tylko tych typów, które jest elementem podrzędnym elementu przestrzeni nazw, które zawierają te typy, takie jak <xref:System.Attribute>.  
   
 -   `as` i `is` operatorów.  
   
 -   **CATCH klauzul.**  
   
--   **Inicjatory obiektów:** tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.  
+-   **Inicjatory obiektów:** Tylko elementy członkowskie, które mogą być inicjowane pojawi się na liście uzupełniania.  
   
--   **New — słowo kluczowe**: podczas wpisywania `new` i naciśnij klawisz spacji, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.  
+-   **New — słowo kluczowe**: Podczas wpisywania `new` i naciśnij klawisz spacji, zostanie wyświetlona lista uzupełniania. Automatycznie wybrano element na liście na podstawie kontekstu w kodzie. Na przykład automatycznie zaznaczono elementów na liście uzupełniania dla deklaracji i instrukcjach return w metodzie.  
   
--   **jako operatorów i is:** listy filtrowane zakończenia jest wyświetlany automatycznie po naciśnięciu klawisza klawisz spacji po wpisaniu `as` lub `is` — słowo kluczowe.  
+-   **jako operatorów i is:** Listy uzupełniania filtrowane jest wyświetlany automatycznie po naciśnięciu klawisza klawisz spacji po wpisaniu `as` lub `is` — słowo kluczowe.  
   
 -   Zdarzenia: Podczas wpisywania słowa kluczowego `event`, na liście uzupełniania zawiera tylko typy delegatów.  
   
@@ -114,7 +109,7 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
 ### <a name="implement-abstract-base-class"></a>Implementowanie abstrakcyjnych klas podstawowych  
  Technologia IntelliSense zawiera opcję, aby pomóc w zaimplementowaniu członkowie abstrakcyjną klasę bazową automatycznie podczas pracy w edytorze kodu. Zazwyczaj do zaimplementowania elementów członkowskich abstrakcyjną klasę bazową wymaga, tworząc nową definicję metody dla każdej metody abstrakcyjnej klasy bazowej w klasie pochodnej. Za pomocą technologii IntelliSense po wpisaniu nazwę abstrakcyjną klasę bazową w deklaracji klasy, jest wyświetlany tagu inteligentnego. Tag inteligentny zapewnia możliwość implementacji metody klasy bazowej automatycznie.  
   
- Wycinków metody, które są generowane przez funkcję implementacji klasy abstrakcyjnej bazy są modelowane przy zdefiniowane w pliku MethodStub.snippet fragmentu kodu. Fragmenty kodu pochodzą można modyfikować. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md).  
+ Wycinków metody, które są generowane przez funkcję implementacji klasy abstrakcyjnej bazy są modelowane przy zdefiniowane w pliku MethodStub.snippet fragmentu kodu. Fragmenty kodu pochodzą można modyfikować. Aby uzyskać więcej informacji, zobacz [instruktażu: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md).  
   
 ### <a name="generate-from-usage"></a>Generowanie na podstawie użycia  
  **Generowanie z użycia** funkcja pozwala na użycie klas i składowych, przed zdefiniowaniem je. Można wygenerować klasy zastępczej dla dowolnej klasy, Konstruktor, metoda, właściwość, pole lub typu wyliczeniowego, którą chcesz używać, ale nie został jeszcze zdefiniowany. Możesz wygenerować nowe typy i elementy członkowskie bez opuszczania Twojej bieżącej lokalizacji w kodzie. Pozwala to zmniejszyć zakłócenia działania przepływu pracy.  
@@ -164,6 +159,3 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

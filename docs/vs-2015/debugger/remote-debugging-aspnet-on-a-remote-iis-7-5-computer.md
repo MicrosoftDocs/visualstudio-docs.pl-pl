@@ -1,25 +1,20 @@
 ---
 title: Zdalne debugowanie platformy ASP.NET na zdalnym serwerze IIS 7.5 komputera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51764072"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766462"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +108,3 @@ Po zainstalowaniu, upewnij się, że debuger zdalny jest uruchomiony na komputer
 1. Na stronie sieci web platformy ASP.NET, kliknij link, aby **o** strony.
 
     W programie Visual Studio powinny trafiony punkt przerwania.
-
-
-

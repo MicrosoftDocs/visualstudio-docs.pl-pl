@@ -1,27 +1,22 @@
 ---
-title: MSSCCPRJ. Plik SCC | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: MSSCCPRJ.SCC File | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779917"
 ---
 # <a name="mssccprjscc-file"></a>Plik MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,4 +77,3 @@ Umieszczeniem rozwiązania programu Visual Studio lub projektu objętego kontrol
 ## <a name="see-also"></a>Zobacz też  
  [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
  [Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
-

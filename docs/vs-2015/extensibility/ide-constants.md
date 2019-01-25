@@ -1,14 +1,9 @@
 ---
 title: Stałe środowiska IDE | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789498"
 ---
 # <a name="ide-constants"></a>Stałe środowiska IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ ms.locfileid: "51743314"
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Metoda zwraca tę wartość, jeśli dokument ma format, którego nie można otworzyć w edytorze.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|Wartość HRESULT, która wskazuje, że użytkownik, kliknij przycisk Wstecz w Kreatorze programu Visual Studio.|  
   
-## <a name="visual-studio-constants"></a>Stałe programu Visual Studio  
+## <a name="visual-studio-constants"></a>Visual Studio Constants  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
@@ -124,4 +119,3 @@ ms.locfileid: "51743314"
   
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

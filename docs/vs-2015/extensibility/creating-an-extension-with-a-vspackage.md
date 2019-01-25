@@ -1,24 +1,19 @@
 ---
 title: Tworzenie rozszerzenia za pomocą pakietu VSPackage | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774186"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia za pomocą pakietu VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ W tym instruktażu dowiesz się, jak utworzyć projekt VSIX i Dodaj element proj
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Dodajmy komunikat, który informuje nas o tym, że został załadowany pakietu VSPackage. Używamy metody Initialize() VSPackage Aby to zrobić, ponieważ usługi Visual Studio można uzyskać tylko wtedy, gdy pakietu VSPackage zostały zlokalizowane. (Aby uzyskać więcej informacji o pobieraniu usług, zobacz [porady: pobieranie usługi](../extensibility/how-to-get-a-service.md).) Zastąp metodę Initialize() FirstPackage kod, który pobiera <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługa, która pobiera <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu i wywołania jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metody.  
+2.  Dodajmy komunikat, który informuje nas o tym, że został załadowany pakietu VSPackage. Używamy metody Initialize() VSPackage Aby to zrobić, ponieważ usługi Visual Studio można uzyskać tylko wtedy, gdy pakietu VSPackage zostały zlokalizowane. (Aby uzyskać więcej informacji na temat uzyskiwania usług zobacz [jak: Usługi](../extensibility/how-to-get-a-service.md).) Zastąp metodę Initialize() FirstPackage kod, który pobiera <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> usługa, która pobiera <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejsu i wywołania jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> metody.  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ W tym instruktażu dowiesz się, jak utworzyć projekt VSIX i Dodaj element proj
 3.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
 4.  Otwórz rozwiązanie w doświadczalnym wystąpieniu. Powinien zostać wyświetlony komunikat informujący, że **pierwszego pakietu wewnątrz Initialize()**.
-

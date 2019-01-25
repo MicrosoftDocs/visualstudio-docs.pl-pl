@@ -1,24 +1,19 @@
 ---
 title: Przy użyciu innej przeglądarki, za pomocą kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805537"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
   -   Windows Internet Explorer 9  
   
-  -   Program Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
   -   Obsługiwane wersje Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
@@ -61,14 +56,14 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  Testując aplikację internetową za pomocą przeglądarek internetowych różnego typu, można lepiej emulować doświadczenia z interfejsem użytkowników korzystających z różnych przeglądarek. Na przykład aplikacja może zawierać formant lub kod w Internet Explorer, który nie jest zgodny z innymi przeglądarkami sieci Web. Uruchamianie kodowanych testów interfejsu użytkownika w różnych przeglądarkach pozwoli wykryć i naprawić wszelkie problemy, zanim wpłyną one na doświadczenia klientów.  
   
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak nagrywać i odtwarzać kodowane testy interfejsu użytkownika w aplikacjach internetowych przy użyciu obsługiwanych przeglądarek internetowych?  
- **Nagrywanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md).  
+ **Rejestrowanie:** Konstruktor kodowanego testu IU należy użyć, aby nagrać test aplikacji sieci web za pomocą programu Internet Explorer. Można opcjonalnie dodać sprawdzanie poprawności i niestandardowy kod dla formantów testowanych przy użyciu wstępnie zdefiniowanego zestawu właściwości, jak zwykle w przypadku kodowanych testów interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
 >  Nie można zarejestrować zakodowanych testów interfejsu użytkownika przy użyciu przeglądarek Google Chrome i Mozilla Firefox.  
   
- **Odtwarzanie za pomocą programu Internet Explorer:** gdy przeglądarka nie jest jawnie określona, domyślnie testy zostaną uruchomione w Internet Explorer. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.  
+ **Odtwarzanie z programem Internet Explorer:** Przeglądarka nie jest jawnie określona, testy będą uruchamiane w programie Internet Explorer domyślnie. Można jawnie określać przeglądarki, który będzie używany przez ustawienie **BrowserWindow.CurrentBrowser** właściwości w kodzie testowym. Dla programu Internet Explorer ta właściwość powinna być równa **IE** lub **programu Internet Explorer**.  
   
- **Odtwarzanie z przeglądarek sieci web innych niż Internet Explorer:** Aby odtwarzać w przeglądarkach sieci web innych niż Internet Explorer, należy zmienić właściwość BrowserWindow.CurrentBrowser w kodzie testowym na albo **Firefox** lub **dla programu Chrome** .  
+ **Odtwarzanie z przeglądarek sieci web innych niż Internet Explorer:** Aby odtwarzać w przeglądarkach sieci web innych niż Internet Explorer, należy zmienić właściwość BrowserWindow.CurrentBrowser w kodzie testowym na albo **Firefox** lub **Chrome**.  
   
  Aby odtwarzać testy w przeglądarkach sieci web-IE, należy zainstalować **Selenium components for Coded UI Cross Browser Testing**.  
   
@@ -144,7 +139,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  [Rozwiązywanie problemów z wielu niepowodzeń testów przeglądarki](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
  [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
@@ -160,6 +155,3 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników zakodowanych testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-
-
-

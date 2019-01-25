@@ -1,14 +1,9 @@
 ---
 title: Dia2dump — przykład | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 727d7a4a97bc0aa55d370a45549941ab286930f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791162"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump — Przykład
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,8 +51,5 @@ Dia2dump — przykład został zainstalowany przy użyciu programu Visual Studio
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Plik źródłowy Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Instrukcje: rozwiązywanie problemów z nieudanymi uaktualnieniami projektu programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
-
-
-
+ [Dia2dump.cpp Source File](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
+ [Instrukcje: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

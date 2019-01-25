@@ -1,23 +1,20 @@
 ---
 title: Użycie ModelBus w szablonie tekstu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 5ed3e5c2-f60f-43c7-8ef4-754f511339c5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1516d7fb282766adb96c3a67f5a86361e68c1f38
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cd5963b47a2e2e13cdf71edec4108062b50da66b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800432"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +163,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 -   Użyj `this.ModelBus` do uzyskania dostępu do ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Wskazówki: Testowanie szablonu tekstu, który używa ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Przewodnik: Testowanie szablonu tekstu, który używa ModelBus
  W tym przewodniku należy wykonać następujące kroki:
 
 1.  Skonstruuj dwóch języków DSL. Jednym języku DSL *konsumenta*, ma `ModelBusReference` właściwość, która może odwoływać się do innych DSL *dostawcy*.
@@ -187,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. W definicji DSL diagramu, kliknij prawym przyciskiem myszy pustą część diagramu, który nie jest u góry, a następnie kliknij **Włącz Modelbus**.
 
-   -   Jeśli nie widzisz **Włącz Modelbus**, należy pobrać i zainstalować rozszerzenie VMSDK ModelBus. Znajdź je w witrynie VMSDK: [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+   -   Jeśli nie widzisz **Włącz Modelbus**, należy pobrać i zainstalować rozszerzenie VMSDK ModelBus. Znajdź je w witrynie VMSDK: [Wizualizacja i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 3. W **Włącz Modelbus** okno dialogowe, wybierz opcję **udostępnienia tego języka DSL do ModelBus**, a następnie kliknij przycisk **OK**.
 

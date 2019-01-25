@@ -1,27 +1,22 @@
 ---
-title: 'Porady: wykonywanie transformacji XSLT w edytorze XML | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wykonywanie transformacji XSLT w edytorze XML | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 358c799c0ef6cd6ab90f64e5025376141ff534c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245287"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805574"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Porady: wykonywanie transformacji XSLT w edytorze XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Instrukcje: Wykonywanie transformacji XSLT w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -73,6 +68,3 @@ Edytor XML umożliwia kojarzenie arkusz stylów XSLT z dokumentu XML na przekszt
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)
-
-
-

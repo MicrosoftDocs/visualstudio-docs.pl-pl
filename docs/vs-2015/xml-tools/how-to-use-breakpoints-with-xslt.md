@@ -1,32 +1,27 @@
 ---
-title: 'Porady: Używanie punktów przerwania w kodzie XSLT | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Używanie punktów przerwania w kodzie XSLT | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773273"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>Porady: Używanie punktów przerwania w kodzie XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>Instrukcje: Używanie punktów przerwania w kodzie XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz ustawić punkty przerwania w arkuszu stylów XSLT lub w dokumencie źródłowym XML. Jeśli ustawisz punkt przerwania w tagu, gdy rozpoczyna się wykonywanie punkt przerwania zostanie przeniesione do następna instrukcja, która zawiera informacje o wiersz w źródle.  
   
- Aby uzyskać więcej informacji, zobacz [podstawy debugowania: punkty przerwania](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Aby uzyskać więcej informacji, zobacz [podstawy debugowania: Punkty przerwania](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Ustaw punkt przerwania w arkuszu stylów  
  Początkowe znaczniki, znacznikami końcowymi i węzły tekstowe arkusz stylów XSLT, można ustawić punktów przerwania. Ponadto można ustawić punktów przerwania na kod w bloku skryptu.  
@@ -64,4 +59,3 @@ Możesz ustawić punkty przerwania w arkuszu stylów XSLT lub w dokumencie źró
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-

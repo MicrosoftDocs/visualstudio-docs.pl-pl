@@ -1,27 +1,22 @@
 ---
 title: Widok drzewa wywołań - dane Instrumentacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 630f75468adf5995eb887ac5f73d82462bfe32a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782391"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Widok drzewa wywołań — dane instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 ## <a name="general"></a>Ogólne  
  Ogólne kolumn identyfikować ich funkcję w wierszu widoku.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa funkcji**|Nazwa funkcji.|  
 |**Adres funkcji**|Adres funkcji.|  
@@ -44,12 +39,12 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 |**Nazwa procesu**|Nazwa, która jest przypisana do procesu.|  
 |**Narzut sondy czasu wyłącznego**|Narzut czasu dla tej funkcji, które zostało spowodowane przez Instrumentację. Narzut sondy odjęciu z cały czas wyłączny.|  
 |**Narzut sondy czasu Włącznego**|Narzut czasu dla tej funkcji i jej funkcji podrzędnych, które zostało spowodowane przez Instrumentację. Narzut sondy odjęciu z cały czas (włącznie).|  
-|**poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
+|**Poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|  
   
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Upłynęło wartości włącznie wskazują godzinę na stosie wywołań wystąpień tych funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań. Czas obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję, jak i w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas, który upłynął**|Łączny całkowity czas wszystkie wywołania do tej funkcji, w tym kontekście, który upłynął.|  
 |**% Całkowitego czasu, który upłynął**|Wartość procentowa całkowity czas całkowity czas uruchomienia profilowania przeznaczony całkowity czas całkowity czas tej funkcji, w tym kontekście.|  
@@ -60,7 +55,7 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 ## <a name="elapsed-exclusive-values"></a>Czas wyłączny wartości  
  Czas wyłączny wartości wskazują czasu wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań zostały wykonywanie kodu w treści funkcji; oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań. Czas obejmuje czas w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Jednak podczas nie obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Czas wyłączny, który upłynął**|Suma własny czas wszystkie wywołania do tej funkcji, w tym kontekście, który upłynął.|  
 |**% Wyłącznego czasu, który upłynął**|Łączny czas wyłączny czas tej funkcji, w tym kontekście przeznaczony procent całkowity czas własny czas uruchomienia profilowania.|  
@@ -71,7 +66,7 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 ## <a name="application-inclusive-values"></a>Wartości Włączne aplikacji  
  Aplikacji wartości włącznie wskazują czas wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań znajdowały się w stosie wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia, jednak czas uwzględnia czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Całkowity czas aplikacji**|Łączny całkowity czas aplikacji dla wszystkich wywołań tej funkcji, w tym kontekście.|  
 |**% Całkowitego czasu aplikacji**|Wartość procentowa całkowity czas całkowity czas uruchomienia profilowania był poświęcony w kompletnej aplikacji, całkowity czas tej funkcji, w tym kontekście.|  
@@ -82,7 +77,7 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 ## <a name="application-exclusive-values"></a>Wartości wyłączne aplikacji  
  Aplikacja wyłączne wartości wskazują czasu, że wystąpień funkcji, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań bezpośrednio wykonywały kod w treści funkcji; oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań. Czas nie obejmuje czas spędzony w wywołaniach do systemu operacyjnego, takie jak przełączeń kontekstu i operacji wejścia/wyjścia. Ponadto nie obejmuje czas spędzony w funkcji podrzędnych, które zostały wywołane przez funkcję.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Własny czas aplikacji**|Łączna liczba własny czas aplikacji dla wszystkich wywołań tej funkcji, w tym kontekście.|  
 |**% Własnego czasu aplikacji**|Wartość procentowa całkowity czas własny czas uruchomienia profilowania przeznaczony własny czas aplikacji całkowita tej funkcji, w tym kontekście.|  
@@ -91,10 +86,7 @@ Wartości dla funkcji w drzewie wywołań wskazują godzinę dla wystąpień fun
 |**Minimalny własny czas aplikacji**|Minimalny własny czas aplikacji wywołania tej funkcji, w tym kontekście.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)   
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Widok drzewa wywołań — Próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-
-
-

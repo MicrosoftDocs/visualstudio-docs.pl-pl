@@ -1,14 +1,9 @@
 ---
-title: 'DA0001: Używaj StringBuilder do konkatenacji | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'DA0001: Użyj klasy StringBuilder do konkatenacji | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
@@ -18,18 +13,18 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cbfbabc96273f6a39a69888025b80d12103dd4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da0de740155936497c2e21213d7e063fa761aade
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804904"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Używaj StringBuilder do łączenia
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Użyj klasy StringBuilder do konkatenacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0001: Używaj StringBuilder do konkatenacji](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0001: Użyj klasy StringBuilder do konkatenacji](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) w witrynie docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -51,4 +46,3 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA000
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych jej profilu. Znajdź części programu, które najczęściej wykorzystać ciągów. Użyj klasy StringBuilder do złożonych działań na ciągach, w tym operacje na ciągach częste łączenia.  
   
  Aby uzyskać więcej informacji na temat sposobu pracy z ciągami [operacje na ciągach](http://go.microsoft.com/fwlink/?LinkId=177816) części [rozdział 5 - poprawę wydajności kodu zarządzanego](http://go.microsoft.com/fwlink/?LinkId=177817) w bibliotece Microsoft Patterns and Practices.
-

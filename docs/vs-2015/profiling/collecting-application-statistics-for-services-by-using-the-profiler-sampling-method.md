@@ -1,25 +1,20 @@
 ---
 title: Zbieranie statystyk aplikacji dla usług przy użyciu metody próbkowania Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 076a8f5fb376914998030c194d55bf505a5ed953
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794176"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Zbieranie statystyk aplikacji dla usług przy użyciu metody próbkowania profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajnoś
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Dołącz profiler do usługi .NET**|-   [Jak: Dołącz Profiler do usługi .NET w celu zbierania statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Dołącz profiler do usługi .NET**|-   [Jak: Dołączanie profilera do usługi .NET w celu zbierania statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Dołączanie profilera do usługi języka C/C++**|-   [Jak: Dołącz Profiler do usługi natywnej i zbieranie statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Dołączanie profilera do usługi języka C/C++**|-   [Jak: Dołączanie profilera do usługi natywnej w celu zbierania statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   
@@ -56,6 +51,3 @@ W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajnoś
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analizowanie danych próbkowania widoków i raportów  
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
-
-
-

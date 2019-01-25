@@ -1,32 +1,27 @@
 ---
-title: 'Krok 5: Dodawanie formantów do formularza | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: Krok 5. Dodawanie formantów do formularza | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 37e73beaadb5c8ce3b289676fc3fd7a7d1f18e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780627"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
+# <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie kontrolek do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku dodaj formanty, takie jak `PictureBox` kontroli i `CheckBox` formantu do formularza. Następnie dodaj przyciski do formularza.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+ ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic – wideo 2](http://go.microsoft.com/fwlink/?LinkId=205211) lub [samouczek 1: Tworzenie przeglądarki obrazów w C# — wideo 2](http://go.microsoft.com/fwlink/?LinkId=205200). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-add-controls-to-your-form"></a>Aby dodać formanty do formularza  
   
@@ -86,9 +81,6 @@ Przeglądarka obrazów z czterema przyciskami
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Nazwa Your Controls przycisk](../ide/step-6-name-your-button-controls.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Nazw kontrolkom przycisków](../ide/step-6-name-your-button-controls.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: określa się Twój formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Określić układ formularza z formantem TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).

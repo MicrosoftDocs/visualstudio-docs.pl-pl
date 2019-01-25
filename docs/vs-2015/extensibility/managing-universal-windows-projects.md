@@ -1,24 +1,19 @@
 ---
 title: Zarządzanie projektami Windows Universal | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771269"
 ---
 # <a name="managing-universal-windows-projects"></a>Zarządzanie uniwersalnymi projektami systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
     ```  
   
 13. Skompiluj i uruchom projekt. Utwórz projekt Universal C# w doświadczalnym wystąpieniu, przejdź do **narzędzia** menu i kliknij przycisk **wywołania TestUniversalProject**i zaznacz tekst, w okienku danych wyjściowych ogólny. Po zmianie nazwy pliku w projekcie platformy powinien zostać wyświetlony zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzeń i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzeń. Ponieważ zmiana pliku spowodowane żadne inne pliki nie mają być zmienione, a ponieważ zmiany wprowadzone w elementy w projekcie platformy nie uzyskać propagowane w dowolnym miejscu, jest tylko jednej z tych zdarzeń.
-

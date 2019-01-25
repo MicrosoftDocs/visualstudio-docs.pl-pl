@@ -1,13 +1,9 @@
 ---
 title: 'CA2218: Przesłaniaj metodę GetHashCode w przesłaniania metody Equals | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -19,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26e004958fa498115b7cfad2b5c5d44c22c17fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ed7c1a072fdca6e0572ecb04350f5d64bed067d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792556"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Przesłaniaj metodę GetHashCode w przesłaniania metody Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Przesłaniaj metodę GetHashCode w razie przesłaniania metody Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

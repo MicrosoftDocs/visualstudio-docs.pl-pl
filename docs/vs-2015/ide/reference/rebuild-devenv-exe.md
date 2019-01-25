@@ -1,14 +1,9 @@
 ---
 title: -Odbudować (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
 - rebuild Devenv switch (/rebuild)
@@ -19,13 +14,13 @@ ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58cd259f602d1f2364b37d8d6905753b2ce44068
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 027612d7ce4ee2ec933897b05f33f03e8a6df992
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788817"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,12 +36,12 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="arguments"></a>Argumenty  
  `SolnConfigName`  
- Wymagane. Nazwa konfiguracji rozwiązania, która będzie służyć do ponownie skompiluj rozwiązanie o nazwie w `SolutionName`.  
+ Wymagana. Nazwa konfiguracji rozwiązania, która będzie służyć do ponownie skompiluj rozwiązanie o nazwie w `SolutionName`.  
   
  `SolutionName`  
- Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.  
+ Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.  
   
- / Project `ProjName`  
+ /project `ProjName`  
  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
@@ -72,6 +67,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

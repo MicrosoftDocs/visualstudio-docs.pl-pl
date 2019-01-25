@@ -1,14 +1,9 @@
 ---
 title: Pisanie kodu w edytorze kodu i tekstu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794244"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożli
 
  ![Kierunek przód- tył przyciski nawigacyjne](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Można również użyć rozszerzonego paska przewijania w oknie kodu można pobrać z lotu ptaka kodu. W trybie mapy, zobacz wersje zapoznawcze kodu, gdy kursor Przenieś w górę i w dół na pasku przewijania, aby uzyskać więcej informacji, zobacz [porady: śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Można również użyć rozszerzonego paska przewijania w oknie kodu można pobrać z lotu ptaka kodu. W trybie mapy, zobacz wersje zapoznawcze kodu, gdy kursor Przenieś w górę i w dół na pasku przewijania, aby uzyskać więcej informacji, zobacz [jak: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Następujące polecenia są metodami nawigacji specyficznymi dla kodu:  
 
 |||  
 |-|-|  
-|Przejdź do \<numer wiersza >|(**Edytuj/przejdź do** lub CTRL + G): przenoszenie do wiersza o podanym numerze w aktywnym dokumencie.|  
-|Przejdź do|(**Edycji/Nawiguj do** lub CTRL +): znajdzie symbol lub pliku w aktywnym rozwiązaniu. Pomaga wybrać dobry zestaw pasujących wyników z zapytania. Można wyszukiwać słowa kluczowe, które są zawarte w symbolu przy użyciu pisane i podkreślenia znaków do podziału symbolu na słowa kluczowe.|  
-|Znajdź wszystkie odwołania|(menu kontekstowe): wyszukuje wszystkie odwołania do wybranego elementu w rozwiązaniu.|  
-|Przejdź do definicji|(menu kontekstowe lub F12): znajdzie definicję zaznaczonego elementu.|  
-|Zobacz definicję|(menu kontekstowe lub Alt + F12): znajdzie definicję zaznaczonego elementu i wyświetla go w oknie podręcznym. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Przejdź do \<numer wiersza >|(**Edytuj/przejdź do** lub CTRL + G): Przenieś do wiersza o podanym numerze w aktywnym dokumencie.|  
+|Przejdź do|(**Edytuj/przejdź do** lub CTRL +): Znajdzie symbol lub pliku w aktywnym rozwiązaniu. Pomaga wybrać dobry zestaw pasujących wyników z zapytania. Można wyszukiwać słowa kluczowe, które są zawarte w symbolu przy użyciu pisane i podkreślenia znaków do podziału symbolu na słowa kluczowe.|  
+|Znajdź wszystkie odwołania|(menu kontekstowe): Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu.|  
+|Przejdź do definicji|(menu kontekstowe lub F12): Znajdzie definicję zaznaczonego elementu.|  
+|Zobacz definicję|(menu kontekstowe lub Alt + F12): Znajdzie definicję zaznaczonego elementu i wyświetla go w oknie podręcznym. Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Następna metoda, Poprzednia metoda|(**Edytuj/Następna metoda, Poprzednia metoda**) plików kodu w języku Visual Basic, użyj tych poleceń, aby przenieść wstawiania wskaż różnych metod.|  
 |Wyróżnianie odwołań|Po kliknięciu symbolu w kodzie źródłowym, wszystkie wystąpienia tego symbolu zostaną wyróżnione w dokumencie. Wyróżnione symbole mogą zawierać oświadczenia i odwołania i wiele innych symboli, które **Znajdź wszystkie odwołania** zwróci. Należą do nich nazwy klas, obiektów, zmiennych, metod i właściwości. W kodzie języka Visual Basic słowa kluczowe dla wielu struktur sterowania są również wyróżnione. Aby przejść do następnego lub poprzedniego wyróżnionego symbolu, naciśnij klawisz Strzałka CTRL + SHIFT + Strzałka w dół lub CTRL + SHIFT + Strzałka w górę Strzałka. Można zmienić kolor podświetlenia w **narzędzia/Opcje/środowisko/czcionki i kolory/wyróżnione odwołanie.**|  
 |Znajdź informacje związane z kodem|Można znaleźć informacje dotyczące konkretnego kodu, takich jak zmian i kto wprowadził te zmiany, odwołania, usterki, elementy robocze, przeglądy kodu i jednostki stan testu w przypadku korzystania z witryny CodeLens w edytorze kodu. CodeLens działa jak ekran projekcyjny, gdy używasz programu Visual Studio Enterprise z programem Team Foundation Server. Zobacz [znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -188,9 +183,9 @@ Jeśli używasz camelcase w kodzie, szybciej znaleźć elementy kodu, wprowadzaj
 Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 ## <a name="customize-the-editor"></a>Dopasowywanie edytora  
- **Import i eksport ustawień**: można udostępnić ustawienia innemu deweloperowi, ustawienia są zgodne z normą, lub przywrócić ustawienia domyślne programu Visual Studio przy użyciu zostały **Kreatora importowania i eksportowania ustawień** na **Narzędzia** menu. Możesz zmienić ustawienia ogólne lub język i ustawienia specyficzne dla projektu.  
+ **Import i eksport ustawień**: Można udostępnić ustawienia innemu deweloperowi, ustawienia są zgodne z normą, lub przywrócić ustawienia domyślne programu Visual Studio przy użyciu zostały **Kreatora importowania i eksportowania ustawień** na **narzędzia** menu. Możesz zmienić ustawienia ogólne lub język i ustawienia specyficzne dla projektu.  
 
- **Mapowanie klawiatury**: możesz zdefiniować nowe klawisze dostępu lub zmienić definicje istniejących w ustawieniach narzędzia/Opcje/środowisko/klawiatura. Aby uzyskać więcej informacji o klawiszach dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Mapowanie klawiatury**: Można zdefiniować nowe klawisze dostępu lub zmienić definicje istniejących w ustawieniach narzędzia/Opcje/środowisko/klawiatura. Aby uzyskać więcej informacji o klawiszach dostępu, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Aby uzyskać informacje o opcjach edytora specyficznych dla języka zobacz następujące tematy:  
 
@@ -218,7 +213,7 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 -   [Instrukcje: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -236,5 +231,3 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-

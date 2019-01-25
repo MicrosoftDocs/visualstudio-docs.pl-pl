@@ -1,12 +1,9 @@
 ---
 title: Wypełnij zestawów danych za pomocą adapterów TableAdapter | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790089"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +59,8 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
  [!code-csharp[VbRaddataTableAdapters#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs#7)]
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
-## <a name="associated-datatable-schema"></a>Skojarzonego schematu elementu DataTable  
- Gdy utworzysz TableAdapter, użyj początkowego zapytania lub skojarzonej procedurę przechowywaną, aby zdefiniować schemat TableAdapter <xref:System.Data.DataTable>. Uruchomienie tego początkowego zapytania lub procedurę składowaną przez wywołanie metody TableAdapter `Fill` — metoda (która wypełnia TableAdapter skojarzonej <xref:System.Data.DataTable>). Wszelkie zmiany wprowadzone do zapytanietableadapter główne są odzwierciedlane w schemat tabeli powiązane dane. Na przykład usunięcie kolumny z główne zapytanie spowoduje również usunięcie kolumny z tabeli powiązane dane. Jeśli żadnych dodatkowych kwerend w metodzie TableAdapter używa instrukcji SQL, które zwracają kolumn, które nie znajdują się w głównym zapytania, Projektant próbuje synchronizować zmiany kolumn między kwerendy głównych i dodatkowych kwerend. Aby uzyskać więcej informacji, zobacz [porady: edytowanie TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+## <a name="associated-datatable-schema"></a>Associated DataTable schema  
+ Gdy utworzysz TableAdapter, użyj początkowego zapytania lub skojarzonej procedurę przechowywaną, aby zdefiniować schemat TableAdapter <xref:System.Data.DataTable>. Uruchomienie tego początkowego zapytania lub procedurę składowaną przez wywołanie metody TableAdapter `Fill` — metoda (która wypełnia TableAdapter skojarzonej <xref:System.Data.DataTable>). Wszelkie zmiany wprowadzone do zapytanietableadapter główne są odzwierciedlane w schemat tabeli powiązane dane. Na przykład usunięcie kolumny z główne zapytanie spowoduje również usunięcie kolumny z tabeli powiązane dane. Jeśli żadnych dodatkowych kwerend w metodzie TableAdapter używa instrukcji SQL, które zwracają kolumn, które nie znajdują się w głównym zapytania, Projektant próbuje synchronizować zmiany kolumn między kwerendy głównych i dodatkowych kwerend. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Polecenia aktualizacji TableAdapter  
  Funkcja aktualizacji TableAdapter jest zależna od ilości informacji jest dostępnych w główne zapytanie w Kreatorze TableAdapter. Na przykład adapterów TableAdapter, które są skonfigurowane do pobierania wartości z wielu tabel (sprzężenia), wartości skalarnych, widokach lub wyniki funkcji agregujących nie są wstępnie utworzone za pomocą możliwość wysyłania aktualizacji do podstawowej bazy danych. Jednak należy skonfigurować ręcznie w poleceń INSERT, UPDATE i DELETE **właściwości** okna.  
@@ -117,4 +114,3 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-

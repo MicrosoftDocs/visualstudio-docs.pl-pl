@@ -1,24 +1,19 @@
 ---
 title: Analizowanie kodowanych testów interfejsu użytkownika, przy użyciu dzienników testu kodowanego interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e492f3bfaf725c157060a23778e1f1725bb88ee3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773379"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analiza dzienników zakodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
 ## <a name="how-do-i-do-this"></a>Jak to zrobić?  
   
-### <a name="step-1-enable-logging"></a>Krok 1: Włączanie rejestrowania  
+### <a name="step-1-enable-logging"></a>Krok 1. Włącz rejestrowanie  
  Zależnie od scenariusza należy użyć jednej z następujących metod Aby włączyć dziennik.  
   
 -   Docelowa wersja .NET Framework 4 z pliku App.config, nie jest obecne w projekcie testowym  
@@ -69,7 +64,7 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
     -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Uruchamianie kodowanego testu interfejsu użytkownika i Wyświetl dziennik  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchom kodowany test interfejsu użytkownika, aby wyświetlić dziennik  
  Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do **QTAgent32.exe.config** pliku w miejscu, zostanie wyświetlony w wynikach Eksploratora testów znajduje się link danych wyjściowych. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także w przypadku udanych testów, gdy poziom śledzenia jest ustawiona na "pełne."  
   
 1.  Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.  
@@ -99,7 +94,7 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: co się stało z kluczem EnableHtmlLogger?  
+### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>PYT.: Co się stało z kluczem EnableHtmlLogger?  
  W poprzednich wersjach programu Visual Studio wystąpiły dwa więcej ustawień konfiguracji włączania Html rejestratora kodowanego testu interfejsu użytkownika:  
   
 ```  
@@ -114,7 +109,4 @@ Kodowane filtr dzienników testu interfejsu użytkownika i rekord, który urucha
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
- [Porady: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
-
-
-
+ [Instrukcje: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

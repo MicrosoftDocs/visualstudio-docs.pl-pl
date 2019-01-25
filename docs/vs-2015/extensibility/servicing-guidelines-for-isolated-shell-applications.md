@@ -1,27 +1,22 @@
 ---
 title: Wytyczne dotyczące obsługi izolowanych powłoki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783724"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Wytyczne dotyczące aplikacji Isolated Shell obsługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ Podczas dystrybucji aplikacji powłoki programu Visual Studio, izolowany musi um
 -   Aktualizowanie plików udostępnionych może spowodować problemy ze zgodnością aplikacji, ponieważ aktualizacja do jednej aplikacji mogą ulec zmianie wersji pliku używany przez aplikację drugi, który nie został zaktualizowany. Instalatory dla produktów, które pliki można udostępniać zliczanie odwołań do udostępnionych plików. W związku z tym odinstalowywanie produktu nie wpływa na pliki udostępnione poza zmniejszanie liczby zainstalowanych wystąpień.  
   
 -   Instalator Quick Fix Engineering (QFE) zostanie przywrócony do wersji produktów, które Instalator QFE obsługiwanych wersji plików. Ten proces zostanie przerwany potencjalnie aplikacji, które zostało dostarczone zaktualizowanego pliku udostępnionego.
-

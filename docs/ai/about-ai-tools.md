@@ -1,5 +1,6 @@
 ---
-title: Narzędzia sztucznej Inteligencji dla programu Visual Studio
+title: AI Tools for Visual Studio
+titleSuffix: ''
 description: Przegląd narzędzi SI dla programu Visual Studio
 keywords: sztuczna inteligencja, program visual studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800934"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
@@ -46,5 +47,5 @@ To rozszerzenie ułatwia szkolenie modeli na komputerze lokalnym lub można prze
 ## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 To rozszerzenie obsługuje obecnie Windows 64-bitowych systemach operacyjnych
 
-# <a name="support"></a>Obsługa
+## <a name="support"></a>Obsługa
 Pomoc techniczna dla tego rozszerzenia znajduje się na naszych [narzędzie do śledzenia problemów GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Możesz przesłać raport o usterce, sugestię dotyczącą funkcji lub uczestniczyć w dyskusjach.

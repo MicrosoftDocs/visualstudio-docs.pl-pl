@@ -1,28 +1,23 @@
 ---
-title: 'Porady: Dodawanie znaczników standardowy tekst | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dodaj znaczniki standardowy tekst | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 54dcfc9a1952dc0cd816c2ce7ad83cd8355f0066
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805523"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Porady: Dodawanie znaczników standardowy tekst
+# <a name="how-to-add-standard-text-markers"></a>Instrukcje: Dodaj znaczniki standardowy tekst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika tekstu, wyposażone w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.  
@@ -55,7 +50,6 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
   
 ## <a name="see-also"></a>Zobacz też  
  [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
- [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
-
+ [Instrukcje: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
+ [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

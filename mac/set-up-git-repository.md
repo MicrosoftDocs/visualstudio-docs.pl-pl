@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796973"
 ---
 # <a name="set-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 
@@ -68,7 +68,10 @@ Jeśli masz istniejący projekt, który _nie_ już w kontroli wersji, wykonaj na
 
 6. Kliknij przycisk **OK**, a następnie **Publikuj** z okna dialogowego alertu.
 
-7. Jeśli użytkownik jeszcze nie wprowadzono poświadczeń Git w programie Visual Studio dla Preferencje systemu Mac, należy wprowadzić je teraz. Najpierw musisz utworzyć Token dostępu, który jest używany zamiast hasła. Jeśli token dostępu nie została utworzona, wykonaj kroki w Git [Token dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentacji.
+7. W **poświadczeń Git** okna, wprowadź nazwę użytkownika usługi GitHub i hasło. 
+
+> [!NOTE]
+> Jeśli Twoje konto ma uwierzytelniania dwuskładnikowego (2FA) włączone, należy utworzyć Token dostępu, który jest używany zamiast hasła. Jeśli token dostępu nie została utworzona, wykonaj kroki w Git [Token dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentacji.
 
 8. Wprowadź nazwę użytkownika i osobisty Token dostępu i naciśnij klawisz **OK**:
 
