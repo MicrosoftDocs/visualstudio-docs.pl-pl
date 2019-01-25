@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852946"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862281"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;punkty wejścia&gt; — element (Office development w programie Visual Studio)
   `entryPoints` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoint` elementy związane z rozwiązania do pakietu Office.
@@ -48,7 +48,7 @@ ms.locfileid: "53852946"
 
  `entryPoints` zawiera następujące elementy.
 
-### <a name="entrypoint"></a>Punkt wejścia
+### <a name="entrypoint"></a>entryPoint
  Wymagana. Rola `entryPoint` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;punktu wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu

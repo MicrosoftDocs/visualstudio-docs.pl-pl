@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Korzystanie z pliku konfiguracji, aby zdefiniować źródło danych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843044"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835124"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowane w pliku app.config dla testów jednostkowych. Przedstawiono sposób tworzenia pliku app.config, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:  
@@ -200,7 +195,7 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
   
 3.  Utwórz dwa pola w `MyDataTable` o nazwie `Arg1` i `Arg2` przy użyciu `Number` typu danych.  
   
-4.  Dodawanie pięć jednostek do `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`odpowiednio: (10,50), (3,2) (6,0) (0,8) i (12312,1000).  
+4.  Dodaj jednostki pięć `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`odpowiednio: (10,50), (3,2) (6,0) (0,8) i (12312,1000).  
   
 5.  Zapisz i zamknij bazy danych.  
   
@@ -214,7 +209,7 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
   
 3.  Utwórz dwa nagłówki kolumn i nazwij je `Val1` i `Val2` w `Sheet1`.  
   
-4.  Dodawanie pięć jednostek do `Sheet1` z następującymi wartościami dla `Val1` i `Val2`odpowiednio: (1,1), (2, 2,) (3,3) (4,4) i (5,0).  
+4.  Dodaj jednostki pięć `Sheet1` z następującymi wartościami dla `Val1` i `Val2`odpowiednio: (1,1), (2, 2,) (3,3) (4,4) i (5,0).  
   
 5.  Zapisz i zamknij arkusza kalkulacyjnego.  
   
@@ -224,7 +219,7 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
   
 1.  Dodaj test jednostkowy do projektu testowego.  
   
-     Aby uzyskać więcej informacji, zobacz [tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Aby uzyskać więcej informacji, zobacz [tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2.  Zastąp zawartość automatycznego generowania testu jednostkowego z następującym kodem:  
   
@@ -275,9 +270,6 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
   
 ## <a name="see-also"></a>Zobacz też  
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
- [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Tworzenie i Uruchamianie testów jednostkowych dla istniejącego kodu](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Instrukcje: tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-
+ [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

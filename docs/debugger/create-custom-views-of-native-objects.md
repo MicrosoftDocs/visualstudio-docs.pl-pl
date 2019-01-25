@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe692f7f9cc00fa90d15ccf43b2526becc24b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821195"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864426"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework dostosowuje sposób, w typach natywnych są wy�
 
 Zastępuje Natvis *autoexp.dat —* pliku we wcześniejszych wersjach programu Visual Studio przy użyciu składni XML lepszą diagnostykę, przechowywanie wersji i obsłudze wielu plików.  
 
-Natvis nie działa w przypadku:
-
-- Projekty pulpitu Windows C++, przy użyciu **typ debugera** równa **mieszany** w obszarze **właściwości konfiguracji** > **debugowanie**. 
-- [Debugowanie trybu mieszanego](how-to-debug-in-mixed-mode.md) dla aplikacji komputerowych Windows w trybie zgodności zarządzanego (**narzędzia** > **opcje** > **debugowania**  >  **Ogólne** > **Użyj zarządzanego trybu zgodności**).
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Wizualizacje Natvis
 

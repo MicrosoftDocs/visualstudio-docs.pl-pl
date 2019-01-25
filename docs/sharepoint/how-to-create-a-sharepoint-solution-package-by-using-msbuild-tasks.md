@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bc1e74e4ae288adcbb2890dda6ab4e4534802a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818329"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865661"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Instrukcje: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild
   Kompilacji, czyszczenia i sprawdzanie poprawności pakietu programu SharePoint (*.wsp*) przy użyciu wiersza polecenia zadania programu MSBuild na komputerze deweloperskim. Te polecenia umożliwia również Automatyzowanie procesu kompilacji za pomocą programu Team Foundation Server na komputerze kompilacji.  

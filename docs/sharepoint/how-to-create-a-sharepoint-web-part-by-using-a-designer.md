@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a109ee84cc79596323dcdceff2ad86c4de15b0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870717"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Instrukcje: Tworzenie części sieciowej SharePoint za pomocą projektanta
   Można utworzyć składnik web part, dodając **wizualny składnik Web Part** element do każdego projektu programu SharePoint. Spowoduje to otwarcie projektanta Visual Web Developer w Visual Studio, w którym można dodać formanty i kod do składnika web part. Wizualne części sieci web działają tak samo, jak części sieci web. Jedyna różnica polega na projektowania wizualnego składnika web Part w Projektancie Visual Web Developer.  

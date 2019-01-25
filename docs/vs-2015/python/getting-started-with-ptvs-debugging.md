@@ -1,27 +1,22 @@
 ---
-title: 'Rozpoczęcie pracy z narzędziami PTVS: debugowanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Wprowadzenie do narzędzi PTVS: Debugowanie | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 82803559-1d60-4c57-98fb-2dc1e0182b42
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 8a92eb3779abf5be00f39bd4aa3e66238a729ded
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204942"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834477"
 ---
-# <a name="getting-started-with-ptvs-debugging"></a>Pierwsze kroki z narzędziami PTVS: debugowanie
+# <a name="getting-started-with-ptvs-debugging"></a>Wprowadzenie do narzędzi PTVS: Debugowanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Interaktywny debuger programu Visual Studio ułatwia diagnozowanie i rozwiązywanie problemów w kodzie języka Python.  
@@ -62,4 +57,3 @@ if __name__ == "__main__":
 ## <a name="see-also"></a>Zobacz też  
  [Dokumentacja witryny typu wiki](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [Wprowadzenie rozpoczęcie pracy i Deep Dive wideo narzędzi PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

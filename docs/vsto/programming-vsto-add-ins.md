@@ -27,17 +27,17 @@ helpviewer_keywords:
 - ThisAddIn_Startup
 - application-level add-ins [Office development in Visual Studio], programming
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef06079322b521abca2aa1fb6becf720c4ad86c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867250"
 ---
 # <a name="program-vsto-add-ins"></a>Program dodatków narzędzi VSTO
   Podczas rozszerzania aplikacji pakietu Microsoft Office, tworzenia dodatku narzędzi VSTO dla programów, piszesz kod bezpośrednio przed `ThisAddIn` klasy w projekcie. Ta klasa służy do wykonywania zadań, takich jak uzyskiwanie dostępu do modelu obiektów programu Microsoft Office aplikacji hosta, dostosowywanie interfejsu użytkownika (UI), aplikacji i udostępnianie obiektów w dodatku narzędzi VSTO dla programów do innych rozwiązań pakietu Office.  
@@ -61,13 +61,13 @@ ms.locfileid: "53830654"
   
 |Aplikacja hosta|Zwracany typ wartości|  
 |----------------------|-----------------------|  
-|Program Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|  
-|Program Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
-|Program Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|  
+|Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|  
+|Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|  
+|Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|  
 |Microsoft Office PowerPoint|<xref:Microsoft.Office.Interop.PowerPoint.Application>|  
-|Program Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|  
-|Program Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|  
-|Program Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|  
+|Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|  
+|Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|  
+|Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|  
   
  Poniższy przykład kodu pokazuje sposób użycia `Application` pola, aby utworzyć nowy skoroszyt w dodatku narzędzi VSTO dla programu Microsoft Office Excel. W tym przykładzie jest przeznaczona do uruchamiania z `ThisAddIn` klasy.  
   

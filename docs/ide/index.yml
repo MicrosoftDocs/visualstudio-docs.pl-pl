@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d837018992450f8ae04c56e30aebd68d26843c1f
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: e594da18fde001feec8364d76deaf268c2198ceb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269607"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834010"
 documentType: LandingData
 title: Dokumentacja programu Visual Studio IDE
 metadata:
@@ -71,8 +71,8 @@ sections:
       text: Python
       href: /visualstudio/python/
     - image:
-        src: https://docs.microsoft.com/media/logos/logo_nodejs.svg
-      text: Node.js
+        src: https://docs.microsoft.com/media/logos/logo_js.svg
+      text: JavaScript
       href: /visualstudio/javascript/
 - title: Tworzenie aplikacji
   items:

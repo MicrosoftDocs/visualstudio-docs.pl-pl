@@ -10,17 +10,17 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], security
 - deployment manifests [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0ce327c620531a1ba5f9a21ccbfd3aeef1c1fa8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53150ecb4f5a8c4233a2cea8a1955908e4becec8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986248"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863399"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Wskazówki dotyczące wdrażania i zabezpieczeń
   W poniższych tematach pokazano, jak można ustawić zasady zabezpieczeń, aby zezwolić na rozwiązania w celu uruchomienia i jak można wdrożyć rozwiązania pakietu Office.  

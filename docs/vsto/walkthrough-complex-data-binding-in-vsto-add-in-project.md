@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], Excel
 - data [Office development in Visual Studio], binding data
 - complex data [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce629e01192137474382452690e6d7051bb163ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9346b448a64e6e1e89081d628865911897e37eb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831774"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867562"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Przewodnik: Złożone powiązanie danych w projekcie dodatku narzędzi VSTO
   Dane można powiązać formanty hosta i kontrolek Windows Forms w projektach dodatku narzędzi VSTO. W tym instruktażu pokazano, jak dodawanie formantów do arkusza programu Microsoft Office Excel i powiązać formanty z danymi w czasie wykonywania.

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: 987efcb2d45253326ec2744776c304376cd3bc67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0551c67ee86f0d63655c584905a5a6280f450901
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865853"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868503"
 ---
 # <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio 2017 przy użyciu platformy Docker
 
@@ -34,6 +34,13 @@ Aby rozwiązać ten problem:
 > Jeśli pliki są wyświetlane udostępniony, nadal może być konieczne kliknij link "Resetuj poświadczenia..." w dolnej części okna dialogowego, aby ponownie włączyć udostępnianie woluminów. Aby kontynuować po zresetowaniu poświadczeń, może być ponowne uruchomienie programu Visual Studio.
 
 ![dyski udostępnione](media/vs-azure-tools-docker-troubleshooting-docker-errors/shareddrives.png)
+
+> [!TIP]
+> Visual Studio 2017 w wersji 15.6 lub nowszej monitowanie, gdy **udostępnione dyski** nie są skonfigurowane.
+
+### <a name="container-type"></a>Typ kontenera
+
+Podczas dodawania obsługi programu Docker do projektu, możesz wybrać kontener systemu Linux lub Windows. Hosta platformy Docker musi działać ten sam typ kontenera. Aby zmienić typ kontenera, na uruchomione wystąpienie platformy Docker, kliknij prawym przyciskiem myszy ikonę platformy Docker w zasobniku systemowym, a następnie wybierz **przełączyć się do kontenerów Windows...**  lub **przełączyć się do kontenerów systemu Linux...** .
 
 ## <a name="unable-to-start-debugging"></a>Nie można rozpocząć debugowania
 

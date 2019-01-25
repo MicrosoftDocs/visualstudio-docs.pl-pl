@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a10e7d48bf44305285d13c3b20fa4c1854e2bb59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956521"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863789"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Instrukcje: Zmiana położenia zakładki na Wstążce
   Można zmienić kolejność niestandardowych kart na Wstążce za pomocą **Edotor kolekcji zakładek**. Można określić położenie niestandardowych kart przed lub po wbudowanej karcie na Wstążce. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel.  

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], saving string data
 - projects [SharePoint development in Visual Studio], saving string data
 - SharePoint projects, saving string data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373f031795238c599d15eec92f1730289662c3a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829257"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866545"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Zapisywanie danych w rozszerzeniach systemu projektu SharePoint
   Podczas rozszerzania systemu projektu programu SharePoint, możesz zapisać dane ciągu, która utrzymuje się po zamknięciu projektu programu SharePoint. Dane są zwykle skojarzone z elementem określonego projektu lub z samym projekcie.  

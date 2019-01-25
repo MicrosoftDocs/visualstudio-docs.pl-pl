@@ -1,13 +1,9 @@
 ---
 title: 'CA1064: Wyjątki powinny być publiczne | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1064
 - ExceptionsShouldBePublic
@@ -19,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4b147a7660b3558234ffaf7720e90be69444bd0d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d188188f722907c2bac20e84cb9291ef8bc0fe
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893229"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833638"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Wyjątki powinny być publiczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

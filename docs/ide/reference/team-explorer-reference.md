@@ -6,12 +6,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b4ab4677e8fe8fec9f1915d79cbcf841787cb48
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840755"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834170"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja programu Team Explorer
 
@@ -80,8 +80,12 @@ Zobacz [Add/Wyświetl pliki i foldery](/azure/devops/repos/tfvc/add-files-server
 - [Lista wyników zapytania poczty e-mail przy użyciu programu Outlook](/azure/devops/boards/queries/share-plans)
 - [Tworzenie raportów na podstawie zapytania w programie Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (tylko w programie TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Jest dostępny nowy [środowisko elementów roboczych](/azure/devops/boards/work-items/set-work-item-experience-vs) w programie Visual Studio 1 2019 r w wersji zapoznawczej. Informacje o wyświetlaniu elementów roboczych w programie Visual Studio 2019 r w wersji zapoznawczej 1, zobacz [widoku i dodać elementy robocze](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Strona kompilacji
 

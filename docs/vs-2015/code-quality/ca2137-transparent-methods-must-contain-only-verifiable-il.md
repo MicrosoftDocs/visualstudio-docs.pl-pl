@@ -1,13 +1,9 @@
 ---
 title: 'CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
@@ -15,14 +11,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a626d71754b1a08b9d474e0b1a0b668f2908288d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2876a70eedb1191aaed91204505286f97e00a27b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967419"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833775"
 ---
-# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalny język pośredni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Windows Forms [Office development in Visual Studio], collecting data
 - forms [Office development in Visual Studio], walkthroughs
 - worksheets [Office development in Visual Studio], collecting data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 791c0221381696cfd587cfb65d8214bd50590729
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926636"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867198"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Przewodnik: Zbieranie danych przy użyciu formularza Windows
   W tym instruktażu pokazano, jak otworzyć formularz Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisanie tych informacji w komórce arkusza.  

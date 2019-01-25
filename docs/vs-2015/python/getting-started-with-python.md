@@ -1,25 +1,20 @@
 ---
 title: Wprowadzenie do języka Python | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275291"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833946"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Do zainstalowania języka Python, samego, odwiedź stronę [ https://www.python.
   
 ## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
   
-Python Tools for Visual Studio, które można zainstalować z [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), zapewniają następujące funkcje:  
+Python Tools for Visual Studio, które można zainstalować z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), zapewniają następujące funkcje:  
   
 - Obsługa wielu interpreterów: różne wersje CPython, IronPython i IPython  
 - System projektu, niejawnie przejmuje strukturę folderów w kodzie języka Python, a także umożliwia jawną kontrolę, dzięki czemu można zidentyfikować kodu aplikacji, kodu testu, stron sieci web, JavaScript, skrypty kompilacji i tak dalej.  
@@ -98,10 +93,9 @@ Firma Microsoft zaleca uzyskiwanie IPython i naukowych bibliotek obliczeń (matp
   
 ## <a name="see-also"></a>Zobacz też  
 
-[Rozpoczęcie pracy z narzędziami PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[rozpoczęcie pracy z narzędziami PTVS: Start kodowania (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[rozpoczęcie pracy z narzędziami PTVS: edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md) 
- [Rozpoczęcie pracy z narzędziami PTVS: debugowanie](../python/getting-started-with-ptvs-debugging.md)
-[rozpoczęcie pracy z narzędziami PTVS: interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)
-[wprowadzenie Kroki z narzędziami PTVS: tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[Wprowadzenie do narzędzi PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[rozpoczęcie pracy z narzędziami PTVS: Rozpoczęcie kodowania (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[rozpoczęcie pracy z narzędziami PTVS: Edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md)
+[rozpoczęcie pracy z narzędziami PTVS: Debugowanie](../python/getting-started-with-ptvs-debugging.md)
+[rozpoczęcie pracy z narzędziami PTVS: Interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)
+[rozpoczęcie pracy z narzędziami PTVS: Tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

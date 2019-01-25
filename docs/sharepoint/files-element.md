@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Files element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25bb220d3c22af280a486de115193af38c85dbe
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922315"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864530"
 ---
 # <a name="files-element"></a>Element Pliki
   Określa pliki do wdrożenia przy użyciu elementu projektu programu SharePoint, takich jak funkcja elementu pliki i dane wyjściowe projektów zależnych programu SharePoint.  
@@ -44,8 +44,8 @@ ms.locfileid: "53922315"
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Projectitemfile —](../sharepoint/projectitemfile-element.md)|Opcjonalnie **ProjectItemFileType** elementu.<br /><br /> Reprezentuje plik programu SharePoint, takich jak funkcja element pliku do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
-|[Projectoutputfile —](../sharepoint/projectoutputfile-element.md)|Opcjonalnie **ProjectOutputFileType** elementu.<br /><br /> Reprezentuje dane wyjściowe projektu do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Opcjonalnie **ProjectItemFileType** elementu.<br /><br /> Reprezentuje plik programu SharePoint, takich jak funkcja element pliku do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Opcjonalnie **ProjectOutputFileType** elementu.<br /><br /> Reprezentuje dane wyjściowe projektu do uwzględnienia przy użyciu elementu projektu, gdy aplikacja jest wdrożona w programie SharePoint.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne
   
@@ -57,7 +57,7 @@ ms.locfileid: "53922315"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|  
 |**Plik walidacji**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  

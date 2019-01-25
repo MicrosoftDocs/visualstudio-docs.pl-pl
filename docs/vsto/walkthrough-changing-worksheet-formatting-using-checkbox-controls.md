@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935102"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871029"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania arkusza za pomocą formantów CheckBox
   W tym instruktażu przedstawiono podstawy używania pola wyboru w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby zmienić formatowanie. Użyjesz narzędzi programistycznych pakietu Office w programie Visual Studio do tworzenia i dodać kod do projektu. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -83,7 +83,7 @@ ms.locfileid: "53935102"
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyUnderlineFont**|  
-    |**Text**|**Podkreślenie**|  
+    |**Text**|**Underline**|  
   
 7.  Wybierz wszystkie formanty trzy pola wyboru podczas przechowywania **Ctrl** klucza.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "53935102"
    |Właściwość|Wartość|  
    |--------------|-----------|  
    |**Nazwa**|**textFont**|  
-   |**Wartość2**|**Kliknij pole wyboru, aby zmienić formatowanie tekstu.**|  
+   |**Value2**|**Kliknij pole wyboru, aby zmienić formatowanie tekstu.**|  
   
    Następnie należy napisać kod do formatowania tekstu, gdy opcja jest zaznaczona.  
   

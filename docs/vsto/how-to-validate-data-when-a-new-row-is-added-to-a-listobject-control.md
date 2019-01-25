@@ -9,17 +9,17 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], validating data
 - ListObject control, new row
 - ListObject control, validating data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f6fd03238f9b477f7530353b8b10afb71a41edd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4820acb20b8eadfd79b3d2a22714dbfee5a75cb7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989844"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862359"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Instrukcje: Walidacja danych po dodaniu nowego rzędu do kontrolki ListObject
   Użytkownicy mogą dodawać nowe wiersze do <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który jest powiązany z danymi. Możesz walidować dane użytkownika przed zatwierdzeniem zmian w źródle danych.  

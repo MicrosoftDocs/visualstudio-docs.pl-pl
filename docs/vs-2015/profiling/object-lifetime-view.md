@@ -1,14 +1,9 @@
 ---
 title: Widok okresu istnienia obiektów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833690"
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych
   
 ## <a name="general"></a>Ogólne  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa klasy**|Nazwa klasy przydzielonego typu.|  
 |**Identyfikator procesu**|Identyfikator procesu uruchomienia profilowania.|  
@@ -51,7 +46,7 @@ Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych
 ## <a name="instance-data"></a>Dane wystąpienia  
  Dane wystąpienia wskazuje liczbę obiektów tego typu, które zostały utworzone w profilowania i generowania, w którym obiekty zostały z cofniętą alokacją przez moduł odśmiecania pamięci.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wystąpienia**|Liczba alokacji obiektów tego typu.|  
 |**% Łącznej liczby wystąpień**|Wartość procentowa łącznej liczby przydziałów, które zostały wprowadzone w profilowania wykonywania.|  
@@ -63,7 +58,7 @@ Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych
 ## <a name="size-byte-data"></a>Danych o rozmiarze (bajty)  
  Rozmiar (bajtów) danych wskazuje rozmiar obiektów tego typu, które zostały utworzone w profilowania i ilość pamięci, które zostało odzyskane w każdej generacji, w którym zostały cofnięciu przydziału obiektów.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Łączna liczba przydzielonych bajtów**|Całkowita liczba bajtów dla wszystkich wystąpień tego typu.|  
 |**% Łącznej liczby bajtów**|Procent całkowita liczba przydzielonych bajtów w trakcie uruchomienia profilowania, przydzielonych dla wystąpienia tego typu.|  
@@ -74,13 +69,10 @@ Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych
 ## <a name="large-object-heap-data"></a>Dane sterty obiektów wielkich  
  Alokator pamięci .NET zarządza bardzo duże obiekty w lokalizacji, który jest oddzielony od standardowego zarządzanego stosu. Dane sterty dużych obiektów wskazuje liczbę i rozmiar obiektów tego typu, które były zarządzane w tej lokalizacji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Zebrane wystąpienia sterty obiektów wielkich**|Liczba wystąpień tego typu, które znajdowały się w stosie dużego obiektu i które zostały zebrane w profilowania przebieg.|  
 |**Zebrane bajty sterty obiektów wielkich**|Rozmiar w bajtach wystąpień tego typu, które znajdowały się w stosie dużego obiektu i które zostały zebrane podczas uruchomienia profilowania.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

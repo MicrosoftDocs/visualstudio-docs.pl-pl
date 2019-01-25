@@ -10,17 +10,17 @@ helpviewer_keywords:
 - calculations, running in Excel
 - Excel [Office development in Visual Studio], running calculations programmatically
 - workbooks, running calculations
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e2cbd2f3e74e50c7ff01f6943fdb62e11f1525
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d1a896a7c09a7ce8c84297757d31c31deb49aa6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821064"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871705"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Instrukcje: Programowe wykonywanie obliczeń programu Excel  
   Używasz podobnej do wykonywania obliczeń <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.  

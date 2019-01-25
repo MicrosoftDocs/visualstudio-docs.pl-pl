@@ -1,14 +1,9 @@
 ---
-title: 'Porady: znajdowanie nazwy procesu ASP.NET | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Znajdowanie nazwy procesu ASP.NET | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793246"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834030"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Porada: Znajdowanie nazwy procesu ASP.NET
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Instrukcje: Znajdowanie nazwy procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, musisz znać nazwę [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu:  
@@ -43,7 +38,7 @@ Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
   Starsze aplikacje ASP uruchamiane wewnątrz inetinfo.exe proces usług IIS, gdy są uruchomione w procesie.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Aby określić, czy kod projektu znajduje się na system plików lub IIS  
   
@@ -72,6 +67,3 @@ Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
  [Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)   
  [Przygotowywanie do debugowania ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
  [Debugowanie aplikacji internetowych i skryptu](../debugger/debugging-web-applications-and-script.md)
-
-
-

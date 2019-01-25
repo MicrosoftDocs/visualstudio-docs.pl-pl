@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064063"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834442"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Jak zgłosić Problem w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [jak z
 
 Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, aby firma Microsoft zdiagnozować i rozwiązać go.  Za pomocą **Zgłoś Problem** narzędzia, możesz zbierać szczegółowe informacje o problemie i wysyłać do firmy Microsoft, za pomocą kilku kliknięć przycisków.
 
- Firma Microsoft szanuje Twoją prywatność. Aby dowiedzieć się, jak będzie traktowany jak dane, które możesz wysłać do nas, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/en-us/dn948229).
+ Firma Microsoft szanuje Twoją prywatność. Aby dowiedzieć się, jak będzie traktowany jak dane, które możesz wysłać do nas, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Otwórz raport z narzędziem Problem
  Kliknij ikony opinii użytkownika obok **Szybkie uruchamianie** w pasku tytułu lub kliknąć **pomocy &#124; Wyślij opinię &#124; Zgłoś Problem**.

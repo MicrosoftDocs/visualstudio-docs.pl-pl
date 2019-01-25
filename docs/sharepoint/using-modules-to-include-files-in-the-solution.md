@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9d8cf0da022c038c0e15e6b00f0bea0cdc3cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe8572ea5ac6f2c100d203063dd43b02c78749b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864192"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Użyj modułów, aby uwzględnić pliki w rozwiązaniu
   Mogą wystąpić sytuacje, kiedy warto wdrożyć pliki do serwera programu SharePoint, niezależnie od ich typu pliku, na przykład nowe strony wzorcowej. Aby to zrobić, można użyć *modułów* (nie należy mylić z [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modułów kodu). Moduły są kontenerami dla plików w rozwiązaniu programu SharePoint. Po wdrożeniu rozwiązania plików w module są kopiowane do określonych folderów na serwerze programu SharePoint.  
@@ -43,7 +43,7 @@ ms.locfileid: "53921552"
   
 |Nazwa pliku|Opis|  
 |---------------|-----------------|  
-|*Elements.XML*|Plik definicji modułu.|  
+|*Elements.xml*|Plik definicji modułu.|  
 |*Przykład.txt*|Plik zastępczy, który stanowi przykład pliku w module.|  
   
  *Elements.xml* plik zawiera następujące elementy:  

@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - security [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862945"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia dla rozwiązań SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby pomóc zwiększyć bezpieczeństwo aplikacji programu SharePoint.
@@ -28,7 +28,7 @@ ms.locfileid: "53904906"
 ## <a name="safe-control-entries"></a>Wpisy bezpiecznych kontrolek
  Każdy element projektu programu SharePoint, utworzone w [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] ma **wpisy bezpiecznych kontrolek** właściwość, która reprezentuje bezpiecznego kontroluje kolekcji. Jego **bezpieczne** wykorzystanie pozwala na określenie formantów, które należy rozważyć bezpieczne. Aby uzyskać więcej informacji, zobacz [zawierają wdrażanie pakietów i informacje w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [Określanie bezpiecznych składników Web Part](http://go.microsoft.com/fwlink/?LinkId=177521).
 
-## <a name="allowpartiallytrustedcallers-attribute"></a>Atrybut AllowPartiallyTrustedCallers
+## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers attribute
  Domyślnie tylko aplikacje, które są w pełni zaufana przez system zabezpieczenia dostępu kodu plików środowiska uruchomieniowego dostęp można uzyskać zestawu udostępnionego kodu zarządzanego. Oznaczanie zestawie całkowicie zaufanym o atrybucie AllowPartiallyTrustedCallers umożliwia częściowo zaufanych zestawów do niego dostęp.
 
  Wszystkie rozwiązania programu SharePoint, który nie jest wdrożony w globalnej pamięci podręcznej systemu jest dodawany atrybut AllowPartiallyTrustedCallers ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Obejmuje to rozwiązania w trybie piaskownicy lub rozwiązań wdrożonych do katalogu Bin aplikacji programu SharePoint. Aby uzyskać więcej informacji, zobacz [wersji 1 zmiany dotyczące zabezpieczeń platformy Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) i [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).

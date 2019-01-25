@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989033"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871315"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Przewodnik: Wywoływanie kodu z VBA w wizualizacji C# projektu
   W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Excel z Visual Basic for Applications (VBA) kod w skoroszycie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `Sheet1` hosta klasa elementu, ujawnia metody dla kodu VBA w skoroszycie i następnie wywołaj metodę z kodu VBA w skoroszycie.  

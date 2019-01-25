@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 427c4545425f19576da39455bbf659fe64aac549
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ba64c7bbfaef5b357fd7a903b3eec9cedd469676
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834205"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -141,8 +141,8 @@ Python</a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/javascript/">
-                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
-Node.js</a>
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_js.svg" alt="JavaScript logo">
+JavaScript</a>
                                                                 </li>
                                                             </ul>
                                                         </td>

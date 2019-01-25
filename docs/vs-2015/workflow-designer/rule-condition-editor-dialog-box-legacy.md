@@ -1,11 +1,8 @@
 ---
 title: Okno dialogowe Edytor warunku reguły (starsza wersja) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838546"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834466"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Edytor warunku reguły, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -62,9 +59,9 @@ W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe 
   
 - Operatory arytmetyczne: +, -, *, / MOD  
   
-- Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
+- Operatory logiczne: PONADTO &AMP; &AMP;, OR &AMP;#124; &AMP;#124;, NIE!  
   
-- Operatory bitowe: &,&#124;  
+- Bitwise operators: &, &#124;  
   
   Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
   
@@ -86,7 +83,7 @@ W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe 
   
 ## <a name="see-also"></a>Zobacz też  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   
- [Grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
+ [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)   
  [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)   
  [Działanie WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   
  [Wybieranie warunku, okno dialogowe (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md)   

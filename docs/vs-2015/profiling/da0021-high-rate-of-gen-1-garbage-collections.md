@@ -1,14 +1,9 @@
 ---
 title: 'DA0021: Duża częstotliwość odzyskiwania pamięci Gen 1 | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.21
 - vs.performance.DA0021
@@ -17,19 +12,19 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 77bcfd877bb0e5a8bf20caa629c226c4f304fafa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a4502be6c683376b93bc144ef5b3568550a1c9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765856"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834354"
 ---
-# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Wysoki stopień odzyskiwania pamięci Gen 1
+# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Duża częstotliwość odzyskiwania pamięci Gen 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identyfikator reguły | DA0021 |  
-| Kategoria |. NET Framework użycia |  
+Rule Id|DA0021|  
+|Category|.NET Framework Usage|  
 | Profilowanie metody | Wszystkie |  
 | Komunikat | Istnieje stosunkowo wysoki stopień Gen 1 wyrzucania elementów bezużytecznych występuje. Jeśli zgodnie z projektem, większość struktur danych programu są przydzielane i utrwalane na dłuższy czas, to nie jest zazwyczaj problem. Jednak w przypadku niezamierzonego to zachowanie aplikacji może być przypinanie obiektów. Jeśli nie masz pewności, można gromadzić .NET pamięć alokacji danych i obiekt informacji o czasie życia poznać wzorce przydzielania pamięci, które Twoja aplikacja używa. |  
 | Typ reguły | Informacji |  
@@ -52,6 +47,3 @@ Identyfikator reguły | DA0021 |
  Aby poznać wzorzec użycia pamięci zarządzanej aplikacji, profilować będzie ponownie działać alokacji pamięci obfuskatorem pomiarów okres istnienia obiektu profilu i żądania.  
   
  Aby dowiedzieć się, jak poprawić wydajność odzyskiwania pamięci zbierania danych, zobacz [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje na temat obciążenie automatyczne wyrzucanie elementów bezużytecznych, zobacz [duży obiekt sterty Niepokryty](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

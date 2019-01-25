@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384b96364af71436c3f769ea1da3a7515185696c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863867"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Przewodnik: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym instruktażu pokazano, jak importować niestandardową stronę wzorcową i stronę witryny, która ma obraz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.  
@@ -40,7 +40,7 @@ ms.locfileid: "53904156"
 
 -   Program Visual Studio.  
 
--   Program SharePoint Designer 2010.  
+-   SharePoint Designer 2010.  
 
 ## <a name="create-items-in-sharepoint-designer"></a>Tworzenie elementów w programie SharePoint Designer
  W tym przykładzie pokazano, jak utworzyć trzy elementy w programie SharePoint Designer eksportu: niestandardową stronę wzorcową, strony witryny, która odwołuje się niestandardową stronę wzorcową i plikiem obrazu na stronie witryny. Obraz, który jest dodawany do folderu /images/ w programie SharePoint.  

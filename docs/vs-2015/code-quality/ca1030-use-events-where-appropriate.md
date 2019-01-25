@@ -1,13 +1,9 @@
 ---
 title: 'CA1030: Używać zdarzeń, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3cb3420cdfe3dbe66a96b504539b48fab9177861
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835075"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używać zdarzeń, gdzie jest to odpowiednie
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń, o ile to możliwe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -39,7 +35,7 @@ ms.locfileid: "53881239"
 ## <a name="cause"></a>Przyczyna
  Nazwy metody publiczne, protected lub private rozpoczyna się od jednego z następujących czynności:
 
--   Dodatek
+-   AddOn
 
 -   RemoveOn
 

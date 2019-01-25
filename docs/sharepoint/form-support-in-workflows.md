@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cda1d413eac76136e3ea40bfec02322927c2368
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857974"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868803"
 ---
 # <a name="form-support-in-workflows"></a>Obsługa formularzy w przepływach pracy
   Cztery rodzaje formularzy może służyć w przepływie pracy: skojarzenie, inicjowania, zadania i modyfikacji. Tych typów formularza może opierać się na formularzu ASPX lub formularza programu InfoPath. Poziom pomocy technicznej, który [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] udostępnia dla danego formularza zależy od wielu czynników, które są opisane w poniższych tabelach. Aby uzyskać więcej informacji na temat typów formularza przepływu pracy, zobacz [Przegląd formularzy przepływu pracy](http://go.microsoft.com/fwlink/?LinkId=185228).  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91349edaeb864e913351e79846825fb67f2d7d97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966054"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864088"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu Instalatora Windows
 Dowiedz się, jak utworzyć Instalatora Windows dla rozwiązania pakietu Office przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -35,7 +35,7 @@ Za pomocą programu Visual Studio, aby utworzyć Instalatora Windows, można wdr
 
 - [Pobierz przykłady dodatku narzędzi VSTO](#Download)  
 
-- [Pobierz InstallShield Limited Edition](#Obtain)  
+- [Get InstallShield Limited Edition](#Obtain)  
 
 - [Wybieranie sposobu udzielenia zaufania rozwiązaniu](#ApplySecurity)  
 
@@ -326,8 +326,8 @@ Instalacje na użytkownika wymagają tylko jednego Instalatora niezależnie od w
 
 | Wersja pakietu Office<br /><br /> | Ścieżka konfiguracji programu InstallShield<br /><br /> |
 |----------------------------| - |
-| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-bitowy<br /><br /> | **HKEY_LOCAL_MACHINE\Software(64-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-bitowy<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Instalatory dla komputera, na podstawie wersji Windows**  
 
@@ -335,8 +335,8 @@ Instalacje na użytkownika wymagają tylko jednego Instalatora niezależnie od w
 
 | Wersja Windows<br /><br /> | Ścieżka konfiguracji programu InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-bitowy<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\Software(64-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32-bitowa<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64-bitowy<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]  
    >    Instalator Windows 64-bitowego wymaga dwóch ścieżek rejestru, ponieważ jest to możliwe, aby użytkownicy uruchamiali 32-bitowych i 64-bitowej wersji pakietu Office na komputerze z systemem Windows 64-bitowych.  
@@ -420,7 +420,7 @@ Aby zmodyfikować właściwości niestandardowe, należy utworzyć program, któ
 6. W **Menadżer odwołań** okna dialogowego wybierz **rozszerzenia** kartę, a następnie zaznacz pole wyboru obok następujących zestawów, a następnie wybierz **OK** przycisku.  
 
 
-   - Obiektów Microsoft.VisualStudio.Tools.Applications.Runtime  
+   - Microsoft.VisualStudio.Tools.Applications.Runtime  
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument  
 

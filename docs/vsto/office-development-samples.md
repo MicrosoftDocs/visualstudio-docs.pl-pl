@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, samples
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 441137d7da74e6fb9b0b53370e012bbacb859087
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964536"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873291"
 ---
 # <a name="office-development-samples"></a>Office development ― przykłady
   Visual Studio zawiera przykładowe aplikacje, które pokazują, jak utworzyć rozwiązania pakietu Office za pomocą programu Microsoft Office developer tools. Kod w tych przykładach przedstawiono składnię, struktury i techniki używane do tworzenia rozwiązań dla pakietu Office.  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - localizing code [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d61f9f0dff98d25185233fcf07bc937de3a6455
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862802"
 ---
 # <a name="how-to-localize-code"></a>Instrukcje: Lokalizowanie kodu
   Niezlokalizowany kod używa ciągu ustalonych wartości. Aby zlokalizowania ciągi kodów, zastąp je wywołaniami do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, czyli metody, która odwołuje się do zlokalizowanych zasobów.  

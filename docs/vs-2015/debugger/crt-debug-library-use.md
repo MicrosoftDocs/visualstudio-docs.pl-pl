@@ -1,14 +1,9 @@
 ---
 title: Korzystanie z biblioteki debugowania CRT | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
 dev_langs:
@@ -34,13 +29,13 @@ ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c6bba5b9c1b9d65c867176ac72c0641fac4cd286
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51534d226f3ae0f8726bb818423bf0a9b788fd8c
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834658"
 ---
 # <a name="crt-debug-library-use"></a>Korzystanie z biblioteki debugowania CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ Biblioteki wykonawczej C zapewnia rozbudowaną obsługę debugowania. Aby użyć
 ## <a name="see-also"></a>Zobacz też  
  [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)   
  [/MD, /MT, /LD (Korzystaj z bibliotek wykonawczych)](http://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)
-
-
-

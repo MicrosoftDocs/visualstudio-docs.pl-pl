@@ -10,17 +10,17 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d7cf32019d3bfa1e6690512f4f348728a409bbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff8bdde07844da26b03bca45f41887d6b4eb64ef
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941613"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863828"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Przewodnik: Wyświetlanie tekstu w polu tekstowym w arkuszu za pomocą przycisku
   W tym instruktażu przedstawiono podstawy używania przycisków i pola tekstowe w arkuszach programu Microsoft Office Excel i jak tworzyć projekty programu Excel przy użyciu narzędzi programistycznych pakietu Office w programie Visual Studio. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  

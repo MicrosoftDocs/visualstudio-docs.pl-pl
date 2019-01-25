@@ -1,14 +1,9 @@
 ---
 title: Nieobsługiwane edycje w języku Visual Basic, Edytuj i Kontynuuj | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834293"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Nieobsługiwane edycje funkcji Edytuj i kontynuuj programu Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ Edytuj i Kontynuuj les zatrzymują wykonywanie programu w trybie przerwania, wpr
  Jeśli potrzebujesz wprowadzić zmianę, która nie jest obsługiwana, musi zatrzymać debugowanie, wprowadzić zmiany i rozpocznij nową sesję debugowania.  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Metody i właściwości treści edycji  
- **Nieobsługiwane zmiany statyczne zmienne lokalne**: Dodawanie lub aktualizowanie zmiennej lokalnej lub usuwanie zmiennej lokalnej statycznej, jeśli spowodowałoby błąd kompilacji.  
+ **Nieobsługiwane zmiany statyczne zmienne lokalne**: Dodawanie lub aktualizowanie zmiennej lokalnej lub usuwanie zmiennej lokalnej statycznej, jeśli to spowoduje, że błąd kompilacji.  
   
- **Nieobsługiwane zmiany do typów ogólnych**: zmiany metody rodzajowej, samego lub treści metody ogólne nie są obsługiwane. Podczas tworzenia wystąpienia typu ogólnego lub połączeń do istniejących metod ogólnych mogą być dodane, usunięte lub zmienione.  
+ **Nieobsługiwane zmiany do typów ogólnych**: Zmiany metody rodzajowej, samego lub treści metody ogólne nie są obsługiwane. Podczas tworzenia wystąpienia typu ogólnego lub połączeń do istniejących metod ogólnych mogą być dodane, usunięte lub zmienione.  
   
  **Inne nieobsługiwane zmiany**  
   
@@ -223,8 +218,5 @@ Edytuj i Kontynuuj les zatrzymują wykonywanie programu w trybie przerwania, wpr
 -   Zmiana typu pola.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Instrukcje: Zastosowanie zmian w trybie przerwania za pomocą Edytuj i Kontynuuj](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Edytuj i kontynuuj (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

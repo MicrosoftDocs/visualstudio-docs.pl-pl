@@ -1,14 +1,9 @@
 ---
 title: Idiasession::findsymbolbyrva — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6d5b9012159e785aebaa2213a286b24e6190c6a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc77a6f5e8be35b86f94dc676648f563f7978ee9
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740721"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833736"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,8 +57,5 @@ pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

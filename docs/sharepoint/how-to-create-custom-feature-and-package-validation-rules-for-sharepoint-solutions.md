@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 - SharePoint development in Visual Studio, validation rules
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 794974991216a521bf2ca4afb1e958716a3bf735
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874084"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Instrukcje: Tworzenie funkcji niestandardowej oraz pakiet reguł sprawdzania poprawności dla rozwiązań SharePoint
   Możesz utworzyć niestandardowe reguły poprawności można zweryfikować pakietu rozwiązania generowane przez program Visual Studio. Można wykonać pełnej weryfikacji na całej funkcji lub pakiet, wybierając **weryfikacji** z menu kontekstowego pakietu lub funkcji w **PackagingExplorer**. Częściowej weryfikacji odbywa się po dodaniu nowych elementów projektu SharePonit lub funkcji do projektu, aby określić, czy pakiet lub funkcja może być w prawidłowym stanie.  
@@ -52,7 +52,7 @@ ms.locfileid: "53939231"
   
 -   Microsoft.VisualStudio.SharePoint.  
   
--   Elementy System.ComponentModel.Composition.  
+-   System.ComponentModel.Composition.  
   
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
  Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla programu SharePoint narzędzia w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  

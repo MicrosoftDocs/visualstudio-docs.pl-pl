@@ -1,14 +1,9 @@
 ---
 title: Publikowanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Options
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.PublishWizard.Help
@@ -25,13 +20,13 @@ ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 52a6e91783a66adc09046ef6f193074e22c8dc6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823492"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834818"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +53,11 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wła
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: Określanie lokalizacji kopiowania plików w programie Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|W tym artykule opisano sposób ustawiania, gdzie program Visual Studio umieści pliki aplikacji i manifestów.|  
-|[Instrukcje: Określ lokalizację, w której użytkownicy końcowi będą przeprowadzać instalacje](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Opisuje sposób ustawiania lokalizacji, z którego użytkownicy używają do pobrania i zainstalowania aplikacji.|  
-|[Instrukcje: Określanie ClickOnce w trybie Offline lub Online instalowania tryb](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|W tym artykule opisano, jak określić, czy aplikacja będzie dostępna w trybie offline lub online.|  
-|[Instrukcje: ClickOnce ustawienie wersji publikacji](../deployment/how-to-set-the-clickonce-publish-version.md)|W tym artykule opisano sposób ustawiania ClickOnce **opublikować wersję** właściwość, która określa, czy w przypadku publikowania aplikacji będzie traktowane jako aktualizację.|  
-|[Instrukcje: Automatyczne ClickOnce zwiększenie wersji publikacji](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Opisuje sposób automatycznie zwiększ numer poprawki **PublishVersion** każdorazowo, możesz opublikować aplikację.|  
+|[Instrukcje: Określanie lokalizacji kopiowania plików przez program Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|W tym artykule opisano sposób ustawiania, gdzie program Visual Studio umieści pliki aplikacji i manifestów.|  
+|[Instrukcje: Określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Opisuje sposób ustawiania lokalizacji, z którego użytkownicy używają do pobrania i zainstalowania aplikacji.|  
+|[Instrukcje: Określanie trybu instalacji offline lub online w ramach technologii ClickOnce](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|W tym artykule opisano, jak określić, czy aplikacja będzie dostępna w trybie offline lub online.|  
+|[Instrukcje: Ustawianie wersji publikacji technologii ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|W tym artykule opisano sposób ustawiania ClickOnce **opublikować wersję** właściwość, która określa, czy w przypadku publikowania aplikacji będzie traktowane jako aktualizację.|  
+|[Instrukcje: Automatyczne zwiększanie wersji publikacji ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Opisuje sposób automatycznie zwiększ numer poprawki **PublishVersion** każdorazowo, możesz opublikować aplikację.|  
   
  Aby uzyskać więcej informacji, zobacz [strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)  
   
@@ -82,35 +77,32 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wła
   
 |||  
 |-|-|  
-|[Instrukcje: Zmiana języka publikacji dla aplikacji ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Opisuje sposób określania języka i kultury, aby dopasować zlokalizowanej wersji.|  
-|[Instrukcje: Określanie nazwy Menu Start dla aplikacji ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|W tym artykule opisano, jak zmienić nazwę wyświetlaną dla aplikacji ClickOnce.|  
-|[Instrukcje: Określanie Linku do pomocy technicznej](../deployment/how-to-specify-a-link-for-technical-support.md)|W tym artykule opisano sposób ustawiania **adres URL pomocy technicznej** właściwość, która identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji.|  
-|[Instrukcje: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Pokazano, jak ręcznie zmienić manifest aplikacji, aby uwzględnić adresy URL poszczególnych pomocy technicznej dla poszczególnych wymagań wstępnych.|  
+|[Instrukcje: Zmienianie języka publikacji dla aplikacji ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Opisuje sposób określania języka i kultury, aby dopasować zlokalizowanej wersji.|  
+|[Instrukcje: Określanie nazwy menu Start dla aplikacji ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|W tym artykule opisano, jak zmienić nazwę wyświetlaną dla aplikacji ClickOnce.|  
+|[Instrukcje: Określanie linku do pomocy technicznej](../deployment/how-to-specify-a-link-for-technical-support.md)|W tym artykule opisano sposób ustawiania **adres URL pomocy technicznej** właściwość, która identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji.|  
+|[Instrukcje: Określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników we wdrożeniu ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Pokazano, jak ręcznie zmienić manifest aplikacji, aby uwzględnić adresy URL poszczególnych pomocy technicznej dla poszczególnych wymagań wstępnych.|  
 |[Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|W tym artykule opisano sposób generowania i opublikować domyślna strona internetowa (publish.htm) wraz z aplikacji|  
-|[Instrukcje: Dostosowywanie ClickOnce domyślnej strony sieci Web](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Opisuje sposób dostosowywania strony sieci Web, która jest automatycznie generowany i opublikowanych wraz z aplikacji.|  
-|[Instrukcje: Włączenie funkcji AutoStart dla instalacji z dysku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|W tym artykule opisano, jak włączyć automatyczne uruchamianie aplikacji ClickOnce jest uruchamiane automatycznie, gdy znajduje się nośnik.|  
+|[Instrukcje: Dostosowywanie domyślnej strony internetowej technologii ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Opisuje sposób dostosowywania strony sieci Web, która jest automatycznie generowany i opublikowanych wraz z aplikacji.|  
+|[Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|W tym artykule opisano, jak włączyć automatyczne uruchamianie aplikacji ClickOnce jest uruchamiane automatycznie, gdy znajduje się nośnik.|  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
 |[Instrukcje: Tworzenie skojarzeń plików dla aplikacji ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|W tym artykule opisano sposób dodawania obsługi rozszerzenia nazw plików dla aplikacji ClickOnce.|  
-|[Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Pokazuje, jak pobrać parametry przekazywane w adresie URL, używanych do uruchamiania aplikacji ClickOnce.|  
-|[Instrukcje: Wyłączanie aktywacji adresu URL aplikacji ClickOnce przy użyciu narzędzia Projektant](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Opisuje sposób wymuszenie użytkowników, aby uruchomić aplikację z **Start** menu przy użyciu projektanta.|  
-|[Instrukcje: Wyłączanie aktywacji adresu URL aplikacji ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Opisuje sposób wymuszenie użytkowników, aby uruchomić aplikację z **Start** menu.|  
-|[Przewodnik: Pobieranie zestawów na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację za pomocą projektanta.|  
-|[Przewodnik: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
-|[Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Opisuje sposób oznaczania zestawy satelickie jako opcjonalną i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury.|  
+|[Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Pokazuje, jak pobrać parametry przekazywane w adresie URL, używanych do uruchamiania aplikacji ClickOnce.|  
+|[Instrukcje: Wyłączanie aktywacji aplikacji ClickOnce przy użyciu adresu URL za pomocą Projektanta](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Opisuje sposób wymuszenie użytkowników, aby uruchomić aplikację z **Start** menu przy użyciu projektanta.|  
+|[Instrukcje: Wyłączanie aktywacji aplikacji ClickOnce przy użyciu adresu URL](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Opisuje sposób wymuszenie użytkowników, aby uruchomić aplikację z **Start** menu.|  
+|[Przewodnik: Pobieranie zestawów na żądanie przy użyciu interfejsu API wdrażania ClickOnce za pomocą Projektanta](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację za pomocą projektanta.|  
+|[Przewodnik: Pobieranie zestawów na żądanie przy użyciu interfejsu API wdrażania ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Wyjaśnia, jak można pobrać zestawów aplikacji tylko wtedy, gdy najpierw są one używane przez aplikację.|  
+|[Przewodnik: Pobieranie zestawów satelickich na żądanie przy użyciu interfejsu API wdrażania ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Opisuje sposób oznaczania zestawy satelickie jako opcjonalną i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury.|  
 |[Przewodnik: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|W tym temacie omówiono wdrażanie aplikacji ClickOnce przy użyciu narzędzia .NET Framework.|  
-|[Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Wyjaśnia, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzia .NET Framework.|  
-|[NIB: Instrukcje: Optymalizowanie aplikacji dla określonego typu procesora CPU](http://msdn.microsoft.com/en-us/294a75d2-4279-4b72-8298-2bea05be907a)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowego** lub **platformę docelową** właściwość w projekcie.|  
-|[Przewodnik: Włączanie aplikacji ClickOnce uruchomić przy użyciu wielu wersji programu .NET Framework](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
-|[Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia sposób tworzenia niestandardowego Instalatora, aby zainstalować aplikację ClickOnce.|  
+|[Przewodnik: Ręczne wdrażanie aplikacji ClickOnce, które nie wymaga ponownego podpisywania i zachowuje informacje o znakowaniu](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Wyjaśnia, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzia .NET Framework.|  
+|[NIB: Instrukcje: Optymalizowanie aplikacji dla określonego typu procesora CPU](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowego** lub **platformę docelową** właściwość w projekcie.|  
+|[Przewodnik: Włączanie aplikacji ClickOnce uruchomić przy użyciu wielu wersji programu .NET Framework](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
+|[Przewodnik: Tworzenie niestandardowego instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia sposób tworzenia niestandardowego Instalatora, aby zainstalować aplikację ClickOnce.|  
 |[Instrukcje: Publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Zawiera instrukcje krok po kroku, aby rozwiązać błąd, który jest wyświetlany, gdy spróbujesz opublikować aplikację WPF, która ma włączonej funkcji stylów wizualnych.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Dokumentacja ClickOnce](../deployment/clickonce-reference.md)
-
-
-

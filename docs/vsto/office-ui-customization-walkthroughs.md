@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents, walkthroughs
 - walkthroughs [Office development in Visual Studio], smart tags
 - walkthroughs [Office development in Visual Studio], action panes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 705d79dce456a244a0729d60fb8033429541030a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826588"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863334"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Wskazówki dotyczące dostosowywania interfejsu użytkownika pakietu Office
   Poniższe instruktaże przedstawiają że sposoby dostosowywania użytkowników interfejsu aplikacji pakietu Microsoft Office za pomocą dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.  

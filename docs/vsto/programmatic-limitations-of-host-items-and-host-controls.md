@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host items
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70e68a47d4685e3bba9e58fb225f2105f8bdabe4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: facf78a9c737dbaa0d3a48e93d8424d5288f683a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966028"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865466"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Ograniczenia programowe elementów hosta i kontrolek hosta
   Każdy element hosta i kontrolki hosta jest przeznaczony do zachowują się jak odpowiedni natywnego Microsoft Office Word lub obiektu programu Microsoft Office Excel z dodatkowymi funkcjami. Istnieją jednak pewne podstawowe różnice między zachowanie elementów hosta i kontrolek hosta i natywnego obiektów pakietu Office w czasie wykonywania.  

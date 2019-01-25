@@ -22,17 +22,17 @@ helpviewer_keywords:
 - Sheet2 class
 - document-level customizations [Office development in Visual Studio], programming
 - application development [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9eb0243a99b1730a911c65aebdf1f7c2d763959e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925449"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866817"
 ---
 # <a name="program-document-level-customizations"></a>Program dostosowań na poziomie dokumentu
   Rozszerzając program Microsoft Office Word lub Microsoft Office Excel za pomocą dostosowania poziomu dokumentu, należy wykonać następujące zadania:  

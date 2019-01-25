@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
 - BDC [SharePoint development in Visual Studio], custom properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9821b2ba9602c86916487bf3444eb74e2c0850c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913300"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873837"
 ---
 # <a name="how-to-add-a-custom-property"></a>Instrukcje: Dodawanie właściwości niestandardowej
   Można dodać właściwości niestandardowe do modelu przy użyciu **Edytor właściwości**. Możesz uzyskać dostęp tych właściwości w kodzie, aby pobrać informacje, takie jak parametry połączenia i inne dane w czasie wykonywania.  

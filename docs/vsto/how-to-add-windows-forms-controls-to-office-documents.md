@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba2d1f46a16724f120d3e3ac788dfc8f2e290474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 816f5b8d21578b57e93dab7349bfd877da11401c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899918"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869294"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Instrukcje: Dodawanie kontrolek formularzy Windows Forms do dokumentów pakietu Office
   Możesz dodać kontrolek formularzy Windows Forms do programu Microsoft Office Excel i Microsoft Office Word dokumentów w czasie projektowania w projektach na poziomie dokumentu. W czasie wykonywania można dodawać formanty w dostosowaniach na poziomie dokumentu i dodatków narzędzi VSTO. Na przykład można dodać <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> sterowania do arkusza, co użytkownicy mogą wybrać z listy opcji.  

@@ -1,23 +1,19 @@
 ---
 title: Pomoc i tekst interfejsu użytkownika
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0e0c71f82a8268f3c52f4b4d0d6794cfdaebdbe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 11352c6d73bdbbd0783a6bb4f16860920fb5d9b7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862174"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834194"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

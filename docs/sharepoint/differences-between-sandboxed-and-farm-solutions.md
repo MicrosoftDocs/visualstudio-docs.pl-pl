@@ -10,17 +10,17 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f37d908448eba54924589cd669dbdda84956d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49dcd021e3f04d78af9d0ff50e7001dedcc73297
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849750"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867861"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Różnice między piaskownicy oraz rozwiązaniami farmy
   Podczas kompilowania rozwiązania programu SharePoint, wdraża ją do serwera programu SharePoint i debuger dołącza do debugowania. Proces używany do debugowania rozwiązania zależy od ustawienia właściwości rozwiązanie w trybie piaskownicy: rozwiązanie w trybie piaskownicy lub rozwiązaniu farmy.  

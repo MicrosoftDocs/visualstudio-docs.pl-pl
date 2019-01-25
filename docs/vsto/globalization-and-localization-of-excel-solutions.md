@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856413"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866834"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizacja i lokalizacja rozwiązania programu Excel
   Ta sekcja zawiera informacje o specjalne uwagi dotyczące rozwiązania Microsoft Office Excel, które będą uruchamiane na komputerach, które mają ustawienia innej niż angielska dla Windows. Większością aspektów globalizacja i lokalizacja pakietu Microsoft Office jest taki sam, Ci zaznajomić się podczas tworzenia innych rodzajów rozwiązań przy użyciu programu Visual Studio. Aby uzyskać ogólne informacje, zobacz [Globalize i lokalizacja aplikacji](../ide/globalizing-and-localizing-applications.md).

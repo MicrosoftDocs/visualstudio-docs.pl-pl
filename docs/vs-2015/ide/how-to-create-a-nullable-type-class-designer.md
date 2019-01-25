@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie typu Zerowalnego (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie typu Zerowalnego (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -16,15 +11,15 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941948"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834920"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Instrukcje: Tworzenie typu Zerowalnego (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej wartości. Jest to powszechną praktyką w bazach danych, gdzie niektóre pola nie można przypisać dowolną wartość. Na przykład może przypisać wartości null z polem bazy danych, aby oznaczają, że nie jeszcze nadano jej wartość.  
@@ -90,8 +85,5 @@ Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej warto�
  <xref:System.Nullable%601>   
  [Typy dopuszczające wartości zerowe](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Przy użyciu typów dopuszczających wartości zerowe](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Porady: Identyfikowanie typu dopuszczającego wartość null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Instrukcje: Identyfikowanie typu dopuszczającego wartość null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Typy wartości dopuszczających wartości null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
-
-
-

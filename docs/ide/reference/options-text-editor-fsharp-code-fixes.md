@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Code_Fixes
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bbe6b49d7b80138c7fc465e1c86aa13e6bc5e92d
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 7129afde1105abefd175799a554cdedb552c1214
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54399985"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833871"
 ---
 # <a name="options-text-editor-f-code-fixes"></a>Opcje, Edytor tekstu, F#, poprawki kodu
 

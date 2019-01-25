@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - SharePoint development in Visual Studio, importing .wsp files
 - importing items [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dfe79823bbbbb9b96d9732a18272a15c9b3024e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864621"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importowanie elementów z istniejącej witryny programu SharePoint
   Importowanie pakietu rozwiązań programu SharePoint szablon projektu umożliwia ponowne używanie elementów, takich jak typy zawartości i pola z istniejącej witryny programu SharePoint, w nowym [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozwiązania programu SharePoint. Chociaż można uruchomić najbardziej importowanych rozwiązania bez żadnych modyfikacji, istnieją pewnych ograniczeń i zagadnień, które należy wziąć pod uwagę, zwłaszcza wtedy, gdy modyfikować elementów po ich zaimportowaniu.  
@@ -42,7 +42,7 @@ ms.locfileid: "53918157"
   
 - [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
-- Program Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
 - [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   

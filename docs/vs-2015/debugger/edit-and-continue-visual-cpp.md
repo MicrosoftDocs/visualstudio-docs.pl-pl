@@ -1,14 +1,9 @@
 ---
 title: Edytuj i Kontynuuj (Visual C++) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748350"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834024"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsłu
   
  [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opcję kompilatora, która została wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje w plikach .pdb (symbol) dla danych binarnych skompilowany bez [/Od (Wyłącz (Debuguj)) ](http://msdn.microsoft.com/library/aafb762y.aspx) opcji.  
   
- **/ZO** wyłącza Edytuj i Kontynuuj. Zobacz [porady: debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).  
+ **/ZO** wyłącza Edytuj i Kontynuuj. Zobacz [jak: Debugowanie zoptymalizowanego kodu](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Włączanie lub wyłączanie funkcji Edytuj i Kontynuuj  
  Można wyłączyć automatycznego wywołania opcji Edytuj i Kontynuuj, jeśli jest wprowadzanie zmian do kodu, który ma zostać zastosowane podczas bieżącej sesji debugowania. Możesz też ponownie włączyć automatyczne Edytuj i Kontynuuj.  
@@ -84,6 +79,3 @@ W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsłu
   
 ## <a name="see-also"></a>Zobacz też  
  [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

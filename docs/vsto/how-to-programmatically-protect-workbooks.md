@@ -12,17 +12,17 @@ helpviewer_keywords:
 - document protection, removing from workbooks
 - document protection, adding to workbooks
 - workbooks, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5333504ed534373b6bb65902edb2566953de7a59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900778"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863685"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Instrukcje: Programowe Włączanie ochrony skoroszytów
   Może chronić programu Microsoft Office Excel, dzięki czemu użytkownicy nie mogą dodać lub usuwanie arkuszy i również programowe usuwające ochronę skoroszytu. Opcjonalnie można określić hasło, wskazują, czy mają strukturę chronione (dzięki czemu użytkownicy nie można przenieść arkusze) i wskazuje, czy windows skoroszytu chronionego.  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ed82b900c82ecc704a74e39a9ab8e3fa82d49bd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828501"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834230"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
 
@@ -127,4 +127,4 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 ## <a name="see-also"></a>Zobacz także
 
 - [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
-- [Co nowego w programie Visual Studio 2017](../ide/whats-new-in-visual-studio.md)
+- [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio.md)

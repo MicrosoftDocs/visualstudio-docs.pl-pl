@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946844"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863932"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.
@@ -340,7 +340,7 @@ ms.locfileid: "53946844"
 
  W ramach procesu niestandardowej instalacji, należy wywołać narzędzie Instalatora dla rozwiązań pakietu Office (*VSTOInstaller.exe*), która jest domyślnie instalowana w następującej lokalizacji:
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Jeśli narzędzie nie znajduje się w tej lokalizacji, możesz użyć **folderze Runtime Setup\v4\InstallerPath** lub **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** klucz rejestru, aby znaleźć ścieżkę do tego narzędzia.
 

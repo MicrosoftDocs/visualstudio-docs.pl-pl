@@ -13,17 +13,17 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], calendars
 - calendars [Office development in Visual Studio], about calendars in Outlook
 - e-mail [Office development in Visual Studio], calendars
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a087f0c11dfe1723a53fe04fc3b44c9212b60f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3800c5e2665d201f9f8806272e95a6862ef98c0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887922"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863412"
 ---
 # <a name="work-with-calendar-items"></a>Praca z elementami kalendarza
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Klasa zawiera metody i właściwości, które umożliwiają wykonywanie zadań z elementami kalendarza.  

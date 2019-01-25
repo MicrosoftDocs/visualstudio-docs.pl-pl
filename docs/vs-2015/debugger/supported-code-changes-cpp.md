@@ -1,14 +1,9 @@
 ---
 title: Obsługiwane zmiany kodu (C++) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -28,13 +23,13 @@ ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02ba30fe6ad2fbc59822b6bdfb954db7c29e0eb3
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834431"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -149,6 +144,3 @@ Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

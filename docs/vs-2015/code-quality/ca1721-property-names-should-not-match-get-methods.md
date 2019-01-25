@@ -1,13 +1,9 @@
 ---
 title: 'CA1721: Nazwy właściwości nie powinny odpowiadać metody get | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1721
 - PropertyNamesShouldNotMatchGetMethods
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af5b5a128bfbc5b005007b4f4a970c3d50b06d58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9a3dcf6566267cebdfeecb91f57bf139be46de2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943923"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834894"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nazwy właściwości nie powinny odpowiadać metody get
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nazwy właściwości nie powinny być takie same jak nazwy metod Get
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

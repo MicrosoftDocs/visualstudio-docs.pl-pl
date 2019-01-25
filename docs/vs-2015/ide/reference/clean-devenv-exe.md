@@ -1,14 +1,9 @@
 ---
 title: -Wyczyść (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
 - clean Devenv switch
@@ -18,13 +13,13 @@ ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aaaf231fc7ec3ab62f8f1f3b89a02e089832231d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b6aed7fd5ac6282d66d44ae04c4a989b72a7c37b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834458"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
   
 ## <a name="arguments"></a>Argumenty  
  `FileName`  
- Wymagane. Pełna ścieżka i nazwa pliku rozwiązania lub pliku projektu.  
+ Wymagana. Pełna ścieżka i nazwa pliku rozwiązania lub pliku projektu.  
   
- / Project `ProjName`  
+ /project `ProjName`  
  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
@@ -71,6 +66,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

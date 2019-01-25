@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], workbooks
 - workbooks, events
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f15d93818c2db553d22d9639e6460f6637d33c80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96adc07fb9be28e3d45a16e010eac9baf125dd42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952891"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863022"
 ---
 # <a name="workbook-host-item"></a>Element hosta skoroszytu
   <xref:Microsoft.Office.Tools.Excel.Workbook> Hosta elementu to typ, który rozszerza <xref:Microsoft.Office.Interop.Excel.Workbook> typu na podstawie podstawowego zestawu międzyoperacyjnego dla programu Excel. <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta zawiera wszystkie właściwości, metody i zdarzenia jako <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu, ale udostępnia także dodatkowe funkcje.  
