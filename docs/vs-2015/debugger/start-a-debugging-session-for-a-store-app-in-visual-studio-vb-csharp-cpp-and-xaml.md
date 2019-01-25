@@ -1,13 +1,9 @@
 ---
 title: Rozpocznij sesję debugowania dla Store app (VB, C#, C++ i XAML) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -37,13 +33,13 @@ ms.assetid: 66ec0e79-8261-4c19-a618-3fd1b3f71bbd
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0e66c47c0bf36bf98e4d5f0439d1c3cb84c6b999
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761772"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (VB, C#, C++ i XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

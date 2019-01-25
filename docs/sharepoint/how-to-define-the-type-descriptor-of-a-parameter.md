@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953160"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866795"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Określanie deskryptora typu parametru
   Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
@@ -101,13 +101,13 @@ ms.locfileid: "53953160"
   
       W poniższym przykładzie ustawiono wartość **TypeName** właściwości kolekcji typów w zestawie, do którego można odwołać się w rozwiązaniu.  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, wersja = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089] "  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje tylko przestrzeń nazw i nazwę typu.  
   
       W poniższym przykładzie ustawiono wartość **TypeName** właściwości w kolekcji typów zdefiniowanych w modelu usługi BDC.  
   
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType] "  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.  
   

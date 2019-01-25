@@ -1,23 +1,20 @@
 ---
 title: Uruchamianie testów jednostkowych na rozszerzeniach UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790245"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -385,9 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Jest to sposób, że firma Microsoft zaleca najmniej. Starsze wersje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podane narzędzie, które są tworzone automatycznie dla każdej metody prywatnej metody dostępu. Mimo że jest to wygodne, nasze środowisko sugeruje, że zwykle powoduje testy jednostkowe, które są bardzo silnie sprzężona wewnętrznej struktury aplikacji, poddawanego testom. Skutkuje to dodatkowej pracy po zmianie wymagań lub architektura, ponieważ testy mają zostać zmienione wraz z wdrożenia. Ponadto błędne założenia w projekcie wdrożenia również są wbudowane w testów, tak, aby testy nie uważają, że błędy.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Anatomia testu jednostkowego](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomia testu jednostkowego](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML — szybka wejścia przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
-
-
-

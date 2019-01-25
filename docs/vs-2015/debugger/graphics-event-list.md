@@ -1,27 +1,22 @@
 ---
 title: Lista zdarzeń graficznych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93054404894ab21522728d00d33f2c862ed127b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768015"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
 ### <a name="color-coded-events-in-direct3d-12"></a>Oznaczone kolorami zdarzenia w Direct3D 12  
  Direct3D 12 udostępnia wiele kolejek, które odnoszą się do funkcji z innego sprzętu. Aby ułatwić identyfikację kolejki, który jest skojarzony ze zdarzeniem grafiki określonego w Direct3D 12, zdarzenia są oznaczone kolorami zgodnie z ich kolejki na liście zdarzeń podczas pracy z przechwytywania aplikacji Direct3D 12.  
   
-|Direct3D 12 kolejki|Kolor|  
+|Direct3D 12 Queue|Kolor|  
 |-----------------------|-----------|  
 |Renderowanie kolejki|Zielony|  
 |Obliczenia kolejki|Żółty|  
@@ -90,10 +85,10 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
   
 |Opis interfejsu API|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|Sprawdź dostępność zdarzenie zdefiniowane przez użytkownika|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|Rozpocznij grupy zdarzeń|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|W końcu grupy zdarzeń|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|Utwórz — znacznik zdarzenia|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|Sprawdź dostępność zdarzenie zdefiniowane przez użytkownika|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|Rozpocznij grupy zdarzeń|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|W końcu grupy zdarzeń|[PIXEndEvent](http://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|Utwórz — znacznik zdarzenia|[PIXSetMarker](http://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 11 i jego starszych wersji  
  Aby utworzyć grupy i znaczniki w interfejsie Direct3D 11 lub wcześniej, przy użyciu interfejsów API, opisane w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, które służy do różnych wersji programu Direct3D 11 i starszych wersji Direct3D.  
@@ -107,7 +102,4 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
  Można użyć dowolnego z tych interfejsów API, które obsługuje daną wersję programu Direct3D — na przykład, jeśli są przeznaczone dla interfejsu API Direct3D 11.1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` utworzyć znacznika zdarzenia, ale nie `SetMarkerInt` ponieważ jej dostępność tylko w Direct3D 11.2 — a nawet można łączyć te, które obsługują różne wersje programu Direct3D ze sobą w tej samej aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-
+ [Przewodnik: Brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)

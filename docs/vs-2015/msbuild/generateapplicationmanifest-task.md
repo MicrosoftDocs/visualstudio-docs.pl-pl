@@ -1,14 +1,9 @@
 ---
 title: Generateapplicationmanifest — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245573"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756587"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -360,9 +355,6 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikac
   
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
- [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)   
+ [GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md)   
  [Signfile — zadanie](../msbuild/signfile-task.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

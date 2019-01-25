@@ -1,25 +1,20 @@
 ---
-title: Licznik | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Counter | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4d0d15c404284dfb40105f7a52cb23aef132f3a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758351"
 ---
 # <a name="counter"></a>Licznik
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,10 +74,7 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
-
-
-

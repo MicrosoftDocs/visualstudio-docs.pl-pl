@@ -1,24 +1,22 @@
 ---
 title: Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++ | Dokumentacja firmy Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791228"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
+# <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów.  Program Visual Studio obsługuje teraz pakiety dodatku, tworzonych dodatkowe reguły dla kodu, narzędziami do analizowania sprawdzać Twój kod pod kątem zgodności z podstawowych wytycznych dotyczących języka C++, a także sugerują ulepszenia.  
@@ -81,32 +79,29 @@ int main()
   
  W tym przykładzie pokazano kilka ostrzeżeń, które można znaleźć reguły podstawowe sprawdzanie języka C++:  
   
-- C26494 jest reguła Type.5: zawsze Inicjuj obiekt.  
+- C26494 jest regułą Type.5: Zawsze Inicjuj obiekt.  
   
-- C26485 jest reguła Bounds.3: nie zanikania tablicy do wskaźnika.  
+- C26485 jest regułą Bounds.3: Nie zanikania tablicy do wskaźnika.  
   
-- C26481 jest reguła Bounds.1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.  
+- C26481 jest regułą Bounds.1: Nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.  
   
   Jeśli zestawów reguł podstawowe sprawdzanie języka C++ analizy kodu są zainstalowane i włączone, skompilować ten kod, pierwsze dwa ostrzeżenia są dane wyjściowe, ale trzecie jest pomijane. Oto dane wyjściowe kompilacji z przykładowego kodu:  
   
   **1 >---Kompilacja została rozpoczęta: Projekt: CoreCheckExample, konfiguracja: Debug Win32 —**  
 **----**  
-**1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.cpp**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (pełny plik PDB)**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6): ostrzeżenie C26494: zmienna "AAR" jest uninitializ**  
+**ckexample\corecheckexample.cpp(6): ostrzeżenie C26494: Zmienna "AAR" jest uninitializ**  
 **wyd zawsze Inicjuj obiekt. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**IDENTYFIKATOR = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): ostrzeżenie C26485: wyrażenie "AAR": Brak tablicy do**  
+**ckexample\corecheckexample.cpp(7): ostrzeżenie C26485: Wyrażenie "AAR": Brak tablicy do**  
  **decay wskaźnika. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== Kompilacja: 1 zakończyła się pomyślnie, 0 nie, aktualne, 0 0 pominięte ===** podstawowych wytycznych dotyczących języka C++, czy istnieją ułatwia pisanie kodu lepsze i bezpieczniejsze. Jednak w przypadku wystąpienia, gdzie nie należy zastosować regułę lub profil jest łatwy do pomijania go bezpośrednio w kodzie. Możesz użyć `gsl::suppress` atrybutu, aby zapobiec podstawowe sprawdzanie języka C++ wykrywania i raportowania wszelkie naruszenia reguły w następującym fragmencie kodu. Możesz oznaczyć pojedyncze instrukcje, aby pominąć określone zasady. Można nawet pominąć cały profil granic, pisząc `[[gsl::suppress(bounds)]]` bez uwzględniania numer określonej reguły.  
+**=== Kompilacji: 1 zakończyła się pomyślnie, 0 nie, aktualne, 0 0 pominięte ===** podstawowych wytycznych dotyczących języka C++, czy istnieją ułatwia pisanie kodu lepsze i bezpieczniejsze. Jednak w przypadku wystąpienia, gdzie nie należy zastosować regułę lub profil jest łatwy do pomijania go bezpośrednio w kodzie. Możesz użyć `gsl::suppress` atrybutu, aby zapobiec podstawowe sprawdzanie języka C++ wykrywania i raportowania wszelkie naruszenia reguły w następującym fragmencie kodu. Możesz oznaczyć pojedyncze instrukcje, aby pominąć określone zasady. Można nawet pominąć cały profil granic, pisząc `[[gsl::suppress(bounds)]]` bez uwzględniania numer określonej reguły.  
   
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki obsługi wskazówek dotyczących  
  Pakiet Microsoft.CppCoreCheck NuGet instaluje też pakiet zawierający implementację firmy Microsoft z biblioteki obsługi wskazówek dotyczących (GSL). GSL jest również dostępna w formie autonomicznej na [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Ta biblioteka jest przydatne, jeśli chcesz obserwować podstawowych wytycznych dotyczących. GSL zawiera definicje, które umożliwiają Zamień podatne konstrukcje bezpieczniejszych alternatyw. Na przykład, możesz zastąpić `T*, length` pary parametrów za pomocą `span<T>` typu. GSL jest typu open source, więc jeśli chcesz Przyjrzyj się źródeł biblioteki, dodać komentarz lub współtworzyć, projekt można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
-
-
-

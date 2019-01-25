@@ -1,26 +1,21 @@
 ---
 title: Importy edytora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779875"
 ---
 # <a name="editor-imports"></a>Importy edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Aby uzyskać więcej przykładów użycia importów zobacz następujące instruktaże:  
   
- [Przewodnik: tworzenie symbolu na marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Przewodnik: Tworzenie marginesie](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Przewodnik: dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Przewodnik: Dostosowywanie widoku tekstu](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Przewodnik: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
+ [Przewodnik: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Przewodnik: wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Przewodnik: wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Przewodnik: Wyświetlanie tagi inteligentne](../misc/walkthrough-displaying-smarttags.md)  
   
@@ -71,12 +66,12 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Zobacz [wskazówki: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Aby uzyskać więcej informacji.  
+ Zobacz [instruktażu: Uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Aby uzyskać więcej informacji.  
   
 ## <a name="services"></a>Usługi  
  Edytor usługi są ogólnie pojedynczych jednostek, świadczenia usług, które są współużytkowane przez wiele składników.  
   
-|{1&gt;Importuj&lt;1}|Zawiera|  
+|Import|Zawiera|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relacja między rozszerzeniami plików i <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekcja <xref:Microsoft.VisualStudio.Utilities.IContentType> obiektów.|  
@@ -118,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Pozostałe Importy  
  Fabryki dostawców i brokerów są zwykle jednostek, które mogą mieć wiele wystąpień w wielu składników.  
   
-|{1&gt;Importuj&lt;1}|Zawiera|  
+|Import|Zawiera|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> Typu <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) dla podanego buforu.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Moduł tagujący znacznika tekstu ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
-
