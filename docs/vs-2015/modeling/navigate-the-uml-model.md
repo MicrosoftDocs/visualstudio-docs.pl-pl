@@ -1,25 +1,22 @@
 ---
 title: Nawigowanie po modelu UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774609"
 ---
 # <a name="navigate-the-uml-model"></a>Nawigowanie po modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Ten temat wprowadza główne typy modelu UML.
   
  Jeśli usuniesz element z modelu, każda relacja, w której bierze jest automatycznie usuwana, a właściwość na drugim końcu jest aktualizowana.  
   
- Jeśli specyfikacja UML przypisuje liczebność 0.. 1 do właściwości, może mieć wartość `null`. Liczebność z wartością maksymalną większą niż 1 oznacza, że właściwość .NET jest typu: `IEnumerable<` *typu*`>`.  
+ Jeśli specyfikacja UML przypisuje liczebność 0.. 1 do właściwości, może mieć wartość `null`. Liczebność z wartością maksymalną większą niż 1 oznacza, że właściwość .NET jest typu: `IEnumerable<`*Typ*`>`.  
   
  Aby uzyskać więcej informacji dotyczących nakierowanych relacji, zobacz [nawigowanie po relacjach z UML API](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ Ten temat wprowadza główne typy modelu UML.
   
  Każdy element modelu jest tworzony z właścicielem. Aby uzyskać więcej informacji, zobacz [tworzenie elementów i relacji w modelach UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Diagram klas: Model, Diagram, kształt i Element](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Diagram klasy: Model, Diagram, kształt i Element](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Kształty i diagramy  
  Elementy modelu UML mogą być wyświetlane na diagramach. Różne rodzaje diagramów mogą wyświetlić różne podtypy IElement.  
@@ -78,8 +75,8 @@ Ten temat wprowadza główne typy modelu UML.
 |Typ atrybutu|Czego to zapewnia dostęp do|Więcej informacji|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Bieżący diagram fokusowy.|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> . ILinkedUndoContext<br /><br /> (w Microsoft.VisualStudio.Modeling.Sdk. [wersja] .dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
-|Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (w Microsoft.VisualStudio.Shell.Immutable. [wersja] .dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca można uzyskać dostęp, plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
+|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (in Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
+|Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (w Microsoft.VisualStudio.Shell.Immutable. [wersja] .dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca można uzyskać dostęp, plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
 ### <a name="to-get-the-context"></a>Aby uzyskać kontekst  
  Zadeklaruj jeden lub oba z następujących interfejsów wewnątrz klasy rozszerzenia:  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

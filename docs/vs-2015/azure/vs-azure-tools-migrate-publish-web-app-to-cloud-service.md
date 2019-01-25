@@ -2,7 +2,7 @@
 title: Jak migrować i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure
 description: Dowiedz się, jak migrować i publikowanie aplikacji sieci web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: dd81e33d34cd3e61c01e62f941edd074304499be
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53072790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805542"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure z programu Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
 Aby móc korzystać z usług hostingu i możliwości skalowania platformy Azure, możesz chcieć migrację i wdrażanie aplikacji sieci web w usłudze w chmurze platformy Azure. Wymagane są tylko minimalne zmiany. W tym artykule opisano wdrażanie usług w chmurze. usługi App Service, zobacz [wdrażanie aplikacji sieci web w usłudze Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Aby móc korzystać z usług hostingu i możliwości skalowania platformy Azure,
 
 Wszelkie ostrzeżenia lub błędy, które występują wskazują na problemy, aby naprawić przed przystąpieniem do wdrażania na platformie Azure, takie jak brak zestawy.
 
-Jeśli tworzenie aplikacji, uruchomić go lokalnie za pomocą emulatora obliczeń lub opublikować go na platformie Azure zostanie wyświetlony błąd: "określona ścieżka i nazwa pliku są za długie." Ten błąd wskazuje, że długość nazwy FQDN projekt platformy Azure przekracza 146 znaków. Aby rozwiązać ten problem, należy przenieść swoje rozwiązanie do innego folderu o krótszej ścieżce.
+Tworzenie aplikacji, uruchomić go lokalnie za pomocą emulatora obliczeń lub opublikować go na platformie Azure może zostać wyświetlony błąd: "Określoną ścieżkę i/lub nazwa pliku jest zbyt długa." Ten błąd wskazuje, że długość nazwy FQDN projekt platformy Azure przekracza 146 znaków. Aby rozwiązać ten problem, należy przenieść swoje rozwiązanie do innego folderu o krótszej ścieżce.
 
 Aby uzyskać więcej informacji na temat Traktuj ostrzeżenia jako błędy, zobacz [Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 

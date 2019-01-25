@@ -1,27 +1,22 @@
 ---
 title: MaxFrameworkVersion, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <MaxFrameworkVersion> Element (Visual Studio Templates)
 - MaxFrameworkVersion Element (Visual Studio Templates)
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c5201d42bddb02eade61546ee61ae99283347082
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791575"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51778179"
 Określa maksymalną wersję programu .NET Framework, która jest wymagana przez szablon. Określa, czy szablon jest wyświetlany w **szablony** części **Dodaj nowy projekt** okno dialogowe, na podstawie wartości, który wybrano w **wersji platformy docelowej** pole **Dodaj nowy projekt** okno dialogowe.  
   
  \<VSTemplate>  
- \<MaxFrameworkVersion >  
+ \<MaxFrameworkVersion>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -83,6 +78,5 @@ Określa maksymalną wersję programu .NET Framework, która jest wymagana przez
  W tym przykładzie maksymalna wersja systemu .NET Framework, która jest wymagana przez szablon, reprezentowane przez `MaxFrameworkVersion`, to 3.5. Powyższego szablonu będą wyświetlane tylko po wybraniu 3.0 lub 3.5 w **wersji platformy docelowej** pole w **Dodaj nowy projekt** okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-

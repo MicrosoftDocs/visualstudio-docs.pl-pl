@@ -1,14 +1,9 @@
 ---
 title: Okno dialogowe czcionki i kolory, środowisko, opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761630"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220238"
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.  
   
@@ -155,7 +150,7 @@ ms.locfileid: "50220238"
 |**Pamięć zmieniła się**|Kolor tekstu używany do wyświetlania zmienionych danych wewnątrz **pamięci** okna.|  
 |**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz **pamięci** okna.|  
 |**Pamięć niemożliwa do odczytu**|Kolor tekstu używany do wyświetlania obszary pamięci nie można go odczytać w ramach **pamięci** okna.|  
-|**Numer**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|  
+|**Liczba**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|  
 |**Operator**|Operatory, takie jak +, -, i! =.|  
 |**Inny błąd**|Inne typy błędów nie pasuje do żadnego innymi zygzaki sygnalizujące błędy. Obecnie dotyczy to również prosta zmiany w Edytuj i Kontynuuj.|  
 |**Preprocesora — słowo kluczowe**|Słowa kluczowe używane przez preprocesor, takich jak #include.|  
@@ -199,15 +194,15 @@ ms.locfileid: "50220238"
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|  
 |**Sekcja Cdata XML**|Zawartość \<! [ CDATA [...]] >.|  
 |**Komentarz XML**|Zawartość \<!---->.|  
-|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!-,-->,?\>, \<! [,]] > i [,].|  
+|**XML Delimiter**|Ograniczniki składni XML, w tym <, <?, <!, \<!-,-->,?\>, \<! [,]] > i [,].|  
 |**Atrybut dokumentu XML**|Wartość dokumentacji xml atrybutów, takich jak \<param name = "I" > gdzie "I" jest w trybie kolorowym.|  
 |**Komentarz dokumentu XML**|Komentarze, ujęte w komentarze dokumentacji xml.|  
-|**Tag dokumentu XML**|Komentarze tagów w dokumencie XML, takich jak<br /><br /> /// \<Podsumowanie >.|  
+|**XML Doc Tag**|Komentarze tagów w dokumencie XML, takich jak<br /><br /> /// \<Podsumowanie >.|  
 |**Słowo kluczowe XML**|Słowa kluczowe DTD CDATA, IDREF i NDATA.|  
 |**Nazwa XML**|Nazwy elementów i nazwa docelowego instrukcje przetwarzania.|  
 |**Instrukcja przetwarzania XML**|Zawartość instrukcje przetwarzania nie zawiera nazwy docelowej.|  
 |**Tekst XML**|Zawartość elementu zwykłego tekstu.|  
-|**Słowo kluczowe XSLT**|Nazwy elementów XSLT.|  
+|**XSLT Keyword**|Nazwy elementów XSLT.|  
   
  **Pierwszy plan elementu**  
  Wyświetla listę dostępnych kolorów, można wybrać dla pierwszego planu elementu wybranego w **wyświetlania elementów**. Ponieważ niektóre elementy są ze sobą powiązane i w związku z tym należy zachować schemat spójne wyświetlanie, zmiana kolorem tekstu także zmianę wartości domyślne dla elementów, takich jak błąd kompilatora, słowo kluczowe lub Operator.  
@@ -241,7 +236,4 @@ ms.locfileid: "50220238"
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)   
  [Okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
+ [Instrukcje: Zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

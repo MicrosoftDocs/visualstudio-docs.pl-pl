@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Debugowanie aplikacji równoległych | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Debugowanie aplikacji równoległych | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f7c580ed07198f47776ee1edbad23918c03d564
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771318"
 ---
-# <a name="walkthrough-debugging-a-parallel-application"></a>Wskazówki: debugowanie aplikacji równoległych
+# <a name="walkthrough-debugging-a-parallel-application"></a>Przewodnik: Debugowanie aplikacji równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równoległych** systemu windows do debugowania aplikacji równoległej. Te okna pomaga zrozumieć i zweryfikować zachowanie środowiska uruchomieniowego kodu, który używa [Biblioteka zadań równoległych (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) lub [współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Ten przewodnik zawiera przykładowy kod, który ma wbudowane punkty przerwania. Po kodu przerywa, instruktaż przedstawia sposób użycia **zadań równoległych** i **stosów równoległych** systemu windows, aby go sprawdzić.  
@@ -88,7 +83,7 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
     Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Za pomocą równoległych stosów okna: widoku wątków  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Korzystanie z okna stosów równoległych: Widok wątków  
  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**. Poczekaj, aż pierwszy punkt przerwania, aby zostanie osiągnięty.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Aby wyświetlić stos wywołań jest jeden wątek  
@@ -317,6 +312,3 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
  [Współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)
-
-
-

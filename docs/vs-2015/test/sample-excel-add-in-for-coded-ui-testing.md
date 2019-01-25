@@ -1,33 +1,28 @@
 ---
 title: Przykładowy dodatek programu Excel dla kodowanych testów UI | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
 ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791953"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Przykładowy dodatek Excel dla kodowanych testów UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przykład dodatku [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] jest zaprojektowany specjalnie w celu obsługi arkuszy kodowanych testów interfejsu użytkownika programu Excel, które są rejestrowane i uruchamiać w programie Visual Studio Enterprise. Dodatek jest tworzony przy użyciu programu Visual Studio Tools dla pakietu Office.  
   
- Aby uzyskać więcej informacji o tym, jak utworzyć dodatek programu Excel, zobacz [wskazówki: tworzenie Twojej pierwszej dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) lub przeszukiwania witryny MSDN dla "dodatek programu Excel".  
+ Aby uzyskać więcej informacji o tym, jak utworzyć dodatek programu Excel, zobacz [instruktażu: Tworzenie dodatku Twój pierwszy narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) lub przeszukiwania witryny MSDN dla "dodatek programu Excel".  
   
  Mimo że dodatek programu Excel nie jest podstawowym przedmiotem niniejszy rozszerzenie kodowanych testów interfejsu użytkownika dla programu Excel, pomocne może być kilka komentarzy.  
   
@@ -52,8 +47,5 @@ Ten przykład dodatku [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] jest za
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Wskazówki: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla programu Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Pakiet Office i programu SharePoint](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
-
-
-

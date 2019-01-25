@@ -1,14 +1,9 @@
 ---
 title: 'CA1903: Używaj tylko interfejsu API platformy docelowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,14 +15,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f0b2849c6ac10be6663628ca1964eaa490e0d78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759901"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko API z frameworku docelowego
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA1903: Używaj tylko interfejsu API platformy docelowej](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) w witrynie docs.microsoft.com.  
@@ -50,8 +45,8 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA190
 |||  
 |-|-|  
 |Gdy jest platforma docelowa|Uruchamiany na użycia elementów członkowskich wprowadzone w systemie|  
-|.NET Framework 2.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2|  
-|.NET Framework 3.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2, .NET Framework 3.0 z dodatkiem SP1, .NET Framework 3.0 z dodatkiem SP2|  
+|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|  
 |Program .NET Framework 4|Brak|  
   
@@ -76,4 +71,3 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [CA190
 ## <a name="see-also"></a>Zobacz też  
  [Ostrzeżenia przenośności](../code-quality/portability-warnings.md)   
  [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)
-

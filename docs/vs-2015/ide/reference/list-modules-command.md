@@ -1,14 +1,9 @@
 ---
 title: Lista modułów — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmodules
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 97a269fd5ed0e30e648e2dade210ab0238c8d759
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 26c2a2c07e09863c3320c3c69b8cc093bdf39466
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790036"
 ---
 # <a name="list-modules-command"></a>Lista modułów — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,16 +46,16 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
  / Order:`yes|no`  
  Opcjonalna. Określa, czy z kolejnością modułów. Wartość domyślna to `no`.  
   
- / Path:`yes|no`  
+ /Path:`yes|no`  
  Opcjonalna. Określa, czy ma być wyświetlana ścieżki modułów. Wartość domyślna to `yes`.  
   
  / Process:`yes|no`  
  Opcjonalna. Określa, czy ma być wyświetlana procesy modułów. Wartość domyślna to `no`.  
   
- / SymbolFile:`yes|no`  
+ /SymbolFile:`yes|no`  
  Opcjonalna. Określa, czy ma być wyświetlana pliki symboli modułów. Wartość domyślna to `no`.  
   
- / SymbolStatus:`yes|no`  
+ /SymbolStatus:`yes|no`  
  Opcjonalna. Określa, czy mają być wyświetlane stany symboli modułów. Wartość domyślna to `yes`.  
   
  / Sygnatura czasowa:`yes|no`  
@@ -79,9 +74,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
- [Instrukcje: korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)
-
-
-
+ [Instrukcje: Korzystanie z okna modułów](../../debugger/how-to-use-the-modules-window.md)

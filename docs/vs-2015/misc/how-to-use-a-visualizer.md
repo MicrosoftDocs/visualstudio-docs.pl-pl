@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z wizualizatora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z wizualizatora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721922"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773644"
 ---
-# <a name="how-to-use-a-visualizer"></a>Porady: korzystanie z wizualizatora
+# <a name="how-to-use-a-visualizer"></a>Instrukcje: Korzystanie z wizualizatora
 Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w sposób zrozumiały dla typu danych. Można użyć wizualizatorów z **DataTips**, **Obejrzyj** oknie **automatyczne** oknie lub **zmiennych lokalnych** okna.  
   
  Wizualizatory nie są obsługiwane w Compact Framework.  
@@ -61,10 +56,10 @@ Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w
   
      —lub—  
   
-     `My Documents\Visual Studio 2010\Visualizers` *Wersja programu Visual Studio* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
- [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
+ [Instrukcje: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md)   
+ [Instrukcje: Pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
  [Wyświetlanie wartości danych w etykietkach danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

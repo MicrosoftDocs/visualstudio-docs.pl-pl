@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Tworzenie skojarzenia (Relacja) między LINQ to SQL klas (Projektant O-R) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Utwórz skojarzenie (Relacja) między LINQ to SQL klas (Projektant O-R) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797380"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Porady: Tworzenie skojarzenia (Relacja) między LINQ to SQL klas (Projektant O/R)
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Utwórz skojarzenie (Relacja) między LINQ to SQL klas (Projektant O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -54,8 +51,7 @@ Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../includes/vbtecd
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Wskazówki: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Przewodnik: Tworzenie składnika LINQ to SQL klas (Projektant O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ do SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Instrukcje: Reprezentacja kluczy podstawowych](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
-

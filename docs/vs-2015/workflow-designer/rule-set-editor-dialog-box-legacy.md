@@ -1,11 +1,8 @@
 ---
 title: Zestaw reguł edytora okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797487"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -31,7 +28,7 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
 > [!NOTE]
 >  Jeśli chcesz otworzyć plik Rules z **Edytor XML z kodowaniem**, należy zamknąć skojarzone okno projektanta przepływu pracy lub działania.  
   
- Aby uzyskać informacje o tym, jak uzyskać dostęp do **Edytor zestawu reguł** okno dialogowe, zobacz [instrukcje: tworzenie działania PolicyActivity reguły zestawu (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Aby uzyskać informacje o tym, jak uzyskać dostęp do **Edytor zestawu reguł** okno dialogowe, zobacz [jak: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
 >  W edytorze zasad starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] umożliwiający docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] nie obsługuje wielowersyjności kodu w programie.  
@@ -73,13 +70,13 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
   
 - Operatory arytmetyczne: +, -, *, / MOD  
   
-- Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
+- Operatory logiczne: PONADTO &AMP; &AMP;, OR &AMP;#124; &AMP;#124;, NIE!  
   
-- Operatory bitowe: &,&#124;  
+- Bitwise operators: &, &#124;  
   
   Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
   
-  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zatrzymaj i aktualizacji funkcji  
  **Następnie akcje:** i **inne akcje:** wyrażenia obsługują **zatrzymanie** i **aktualizacji** funkcji. Do użycia **zatrzymanie** funkcji, wpisz **zatrzymanie** do **następnie akcji:** lub **Else akcji:** pola tekstowego. **Zatrzymanie** czynność powoduje wykonanie zestawu reguł zatrzymać natychmiast, a sterowanie powraca do wywołującego kodu. Możesz użyć **aktualizacji** funkcji z łańcucha do przodu.  

@@ -1,14 +1,9 @@
 ---
 title: Przy użyciu plików zrzutu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f5c759e921ca1659e2821961e6295e096d19b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783548"
 ---
 # <a name="using-dump-files"></a>Przy użyciu plików zrzutu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
 - Visual Studio nie umożliwia debugowania plików zrzutu zapisanych w starszym formacie zrzutu znanym jako [zrzut trybu użytkownika pełnego](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Należy zauważyć, że pełny zrzut trybu użytkownika to nie to samo, co zrzut ze stertą.  
   
-- Aby debugować z [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) w programie Visual Studio, należy zainstalować debugowania narzędzi dla Windows będącego częścią Windows Driver Kit (WDK). Zobacz [Podgląd Windows 8.1: zestawy, bity i narzędzia do pobrania](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Aby debugować z [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) w programie Visual Studio, należy zainstalować debugowania narzędzi dla Windows będącego częścią Windows Driver Kit (WDK). Zobacz [Windows 8.1 (wersja zapoznawcza): Pobierz zestawy, bity i narzędzia](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
@@ -147,4 +142,3 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
  [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

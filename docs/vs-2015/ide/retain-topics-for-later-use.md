@@ -1,14 +1,9 @@
 ---
 title: Zaznaczanie tematów do późniejszego użycia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_favorites
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: f0a4c657-001d-4604-a403-d46f15782724
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c2df1a95dacf7dc57817a6167cebc48d42d275cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8e5c4fb8bde2f8ecbc231540047a8d4cd3398a54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763252"
 ---
 # <a name="retain-topics-for-later-use"></a>Zaznaczanie tematów do późniejszego użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Po znalezieniu przydatnego tematu, można do niego dostęp później przez skopi
   
 ## <a name="see-also"></a>Zobacz też  
  [Klawisze skrótów (Podgląd Pomocy)](../ide/shortcut-keys-help-viewer.md)
-
-
-

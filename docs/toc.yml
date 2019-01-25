@@ -1102,10 +1102,8 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: Resources
   items:
-  - name: Co nowego w programie Visual Studio 2017
-    href: ide/whats-new-in-visual-studio.md
-  - name: Co nowego w programie Visual Studio 2019
-    href: ide/whats-new-visual-studio-2019.md
+  - name: Co nowego w programie Visual Studio
+    href: ide/whats-new-visual-studio.md
   - name: Informacje o wersji i wymagania systemowe
     items:
     - name: Informacje o bieżącej wersji
@@ -1146,9 +1144,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Porozmawiaj z nami
     href: ide/talk-to-us.md
-ms.openlocfilehash: ee98252a961a3a2e6a656be5042e8f4298132c2c
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 240f0069093e2db2ed4bf74c88aed8d0244bb8c1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417957"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834243"

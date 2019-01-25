@@ -1,26 +1,21 @@
 ---
 title: Analizowanie problemów pamięci .NET Framework | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769021"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analiza problemów pamięci .NET Framework
 Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET Framework za pomocą programu Visual Studio zarządzany analizator pamięci. Minimalna wersja systemu .NET Framework kod docelowy jest .NET Framework 4.5.  
@@ -110,7 +105,7 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
 ###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizowanie danych pamięci z jednego migawki  
  Visual Studio uruchamia nową sesję debugowania, analizowanie pliku i wyświetla dane w pamięci w oknie Widok sterty.  
   
- ![Lista typów obiektów](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
+ ![The Object Type list](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
@@ -126,7 +121,7 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
   Możesz wybrać ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) w **typu obiektu** kolumny, aby wyświetlić listę wystąpień Typ.  
   
 #### <a name="instance-table"></a>Tabela wystąpienia  
- ![Tabela wystąpień](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
+ ![Instances table](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
 - **Wystąpienie** jest lokalizację obiektu, który służy jako identyfikator obiektu obiektu w pamięci  
   
@@ -189,6 +184,6 @@ Wyszukiwanie przecieków pamięci i pamięci nieefektywne, użyj w kodzie .NET F
    ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Zobacz też  
- [VS ALM w programie TFS Blog: Przy użyciu programu Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
- [Channel 9 &#124; TV programu Visual Studio &#124; zarządzane analizy pamięci](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
- [Channel 9 &#124; Visual Studio Toolbox &#124; zarządzane analizy pamięci w programie Visual Studio 2013](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)
+ [Blog dotyczący programu VS ALM w programie TFS: Za pomocą programu Visual Studio 2013 do diagnozowania problemów z pamięcią .NET w środowisku produkcyjnym](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
+ [Channel 9 &#124; Visual Studio TV &#124; Managed Memory Analysis](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
+ [Channel 9 &#124; Visual Studio Toolbox &#124; Managed Memory Analysis in Visual Studio 2013](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

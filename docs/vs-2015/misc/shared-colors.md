@@ -1,23 +1,18 @@
 ---
 title: Udostępnione kolory | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: e6dad35d2fe70866eee8ffbace81c44c502f67d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764659"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
 Tutaj wstaw wprowadzenie.  
@@ -68,7 +63,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Tło|Brak|  
 |![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -77,7 +72,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tytuł menu, po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Tytuł menu, po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
@@ -86,7 +81,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tytuł menu naciśnięty](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Tytuł menu naciśnięty](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -95,7 +90,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Tło|Brak|  
 |![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
@@ -117,7 +112,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -133,7 +128,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Po wskazaniu wskaźnikiem menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Element menu**|Tło|`Environment.CommandBarMenuItemMouseOver`|  
 |![Po wskazaniu wskaźnikiem menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Element menu**|Pierwszego planu (tekst)|`Environment.CommandBarMenuItemMouseOver`|  
@@ -145,7 +140,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Element menu|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
 |![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Element menu|Pierwszego planu (podmenu symbol)|`Environment.CommandBarMenuSubmenuGlyph`|  
@@ -184,7 +179,7 @@ Tutaj wstaw wprowadzenie.
   
   **Domyślne** (nie innych Państw)  
   
-|Element|Nazwa tokenu: Category.color|  
+|Element|Nazwa tokenu: Category.Color|  
 |-------------|--------------------------------|  
 |Tło|`Environment.CommandBarGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |Obramowanie|`Environment.CommandBarToolBarBorder`|  
@@ -206,7 +201,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Tło|N/d (dziedziczy tło paska poleceń)|  
 |![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -217,7 +212,7 @@ Tutaj wstaw wprowadzenie.
   
  **Aktywowanie i fokus klawiatury**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Polecenie ikony po wskazaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standardowa po najechaniu wskaźnikiem**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Polecenie ikony po wskazaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standardowa po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
@@ -228,7 +223,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ikona polecenia naciśnięty](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Ikona po naciśnięciu polecenia**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Ikona polecenia naciśnięty](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Ikona po naciśnięciu polecenia**|Pierwszego planu (tekst)|`Environment.CommandBarTextMouseDown`|  
@@ -236,7 +231,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Tło|N/d (dziedziczy tło paska poleceń)|  
 |![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
@@ -261,7 +256,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxBackground`|  
 |![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxText`|  
@@ -275,7 +270,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxMouseOverText`|  
@@ -337,7 +332,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownBackground`|  
 |![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`DropDownText`|  
@@ -352,7 +347,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`Environment.DropDownMouseOverText`|  
@@ -366,7 +361,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseDownBackground`|  
 |![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`Environment.DropDownMouseDownText`|  
@@ -377,7 +372,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Tło|`Environment.DropDownDisabledBackground`|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Pierwszego planu (tekst)|`Environment.DropDownDisabledText`|  
@@ -401,7 +396,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Tło|Brak|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -411,7 +406,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
@@ -421,7 +416,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Pierwszego planu (tekst)|`Environment.CommandBarTextMouseDown`|  
@@ -431,7 +426,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Brak|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (tekst)|`Environment.ComboBoxItemTextInactive`|  
@@ -452,7 +447,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsBackground`|  
 |![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsGlyph`|  
@@ -461,7 +456,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Więcej opcji po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Więcej opcji po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -470,7 +465,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Więcej opcji naciśnięty](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Więcej opcji naciśnięty](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
@@ -501,7 +496,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Dokument: zadokowany lub liczb zmiennoprzecinkowych|Tło|Zależy od typu dokumentu|  
 |Dokument: zadokowany lub liczb zmiennoprzecinkowych|Pierwszego planu (tekst)|Zależy od typu dokumentu|  
@@ -519,7 +514,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ramka koncentruje się na przesunięciu](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Ramka: Opływanie, fokus**|Tło (symbol)|`Environment.RaftedWindowButtonHoverActive`|  
 |![Ramka koncentruje się na przesunięciu](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
@@ -530,7 +525,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Ramka skupia się po naciśnięciu](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Ramka: Opływanie, fokus**|Tło (symbol)|`Environment.RaftedWindowButtonDown`|  
 |![Ramka skupia się po naciśnięciu](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonDownGlyph`|  
@@ -567,7 +562,7 @@ Tutaj wstaw wprowadzenie.
 ##### <a name="selected-tab"></a>Wybranej karty  
  **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Tło|`Environment.FileTabSelectedGradientTop`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Pierwszego planu (tekst)|`Environment.FileTabSelectedText`|  
@@ -576,7 +571,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po przeniesieniu fokusu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Tło|`Environment.FileTabInactiveGradientTop`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.FileTabInactiveText`|  
@@ -613,35 +608,35 @@ Tutaj wstaw wprowadzenie.
   
 - dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
   
-  **Karta podgląd wybranych: fokus**  
+  **Karta wybranego (wersja zapoznawcza): Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Tło|`Environment.FileTabProvisionalSelectedActive`|  
 |![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
 |![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Obramowanie|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Ustaw kolor tła.|  
 |![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **Karta podgląd wybranych: po przeniesieniu fokusu**  
+ **Karta wybranego (wersja zapoznawcza): Po przeniesieniu fokusu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Tło|`Environment.FileTabProvisionalSelectedInactive`|  
 |![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
 |![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Obramowanie|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
 |![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **Tło karcie podglądu: domyślna**  
+ **Karta (wersja zapoznawcza) tła: Domyślne**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Tło|`Environment.FileTabProvisionalInactive`|  
 |![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalInactiveForeground`|  
 |![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Obramowanie|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Ustaw kolor tła.|  
   
- **Tło karcie podglądu: Zatrzymaj wskaźnik myszy**  
+ **Karta (wersja zapoznawcza) tła: Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tło po najechaniu wskaźnikiem**|Tło|`Environment.FileTabProvisionalHover`|  
 |![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tło po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalHoverForeground`|  
@@ -662,7 +657,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Przycisk przepełnienie dokument**|Tło|`Environment.DocWellOverflowButtonBackground`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Przycisk przepełnienie dokument**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonGlyph`|  
@@ -670,7 +665,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Przycisk przepełnienie dokument po najechaniu wskaźnikiem**|Tło|`Environment.DocWellOverflowButtonMouseOverBackground`|  
 |![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Przycisk przepełnienie dokument po najechaniu wskaźnikiem**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
@@ -678,7 +673,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Naciśnięty przycisk przepełnienie dokument**|Tło|`Environment.DocWellOverflowButtonMouseDownBackground`|  
 |![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Naciśnięty przycisk przepełnienie dokument**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
@@ -708,21 +703,21 @@ Tutaj wstaw wprowadzenie.
   
  **Zadokowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Okno zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Tło|`Environment.ToolWindowBackground`|  
 |![Okno zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Obramowanie|`Environment.ToolWindowBorder`|  
   
  **Zmiennoprzecinkowa: fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Okna narzędzi, które skupia się](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Tło|`Environment.ToolWindowBackground`|  
 |![Okna narzędzi, które skupia się](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Obramowanie|`Environment.MainWindowActiveDefaultBorder`|  
   
  **Zmiennoprzecinkowa: po przeniesieniu fokusu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu okna narzędzi](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Tło|`Environment.ToolWindowBackground`|  
 |![Po przeniesieniu fokusu okna narzędzi](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Obramowanie|`Environment.MainWindowInactiveBorder`|  
@@ -740,7 +735,7 @@ Tutaj wstaw wprowadzenie.
   
  **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Tło|`Environment.TitleBarActiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Pierwszego planu (tekst)|`Environment.TitleBarActiveText`|  
@@ -749,7 +744,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po przeniesieniu fokusu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Tło|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.TitleBarInactiveText`|  
@@ -769,7 +764,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Brak|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonActiveGlyph`|  
@@ -780,7 +775,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk paska tytułu, który skupia się na przesunięciu](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Fokus**|Tło|`Environment.ToolWindowButtonHoverActive`|  
 |![Przycisk paska tytułu, który skupia się na przesunięciu](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
@@ -791,7 +786,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tytuł paska przycisk fokus i naciśnięciu](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Fokus**|Tło|`Environment.ToolWindowButtonDown`|  
 |![Tytuł paska przycisk fokus i naciśnięciu](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonDownActiveGlyph`|  
@@ -811,13 +806,13 @@ Tutaj wstaw wprowadzenie.
   
  **Wybranej karty**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Tło|`Environment.ToolWindowTabSelectedTab`|  
 |![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Pierwszego planu (tekst)|`Environment.ToolWindowTabSelectedActiveText`|  
 |![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Obramowanie|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Ustaw kolor tła.|  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta w oknie narzędzia po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Karta okna narzędzia zaznaczona, po przeniesieniu fokusu**|Tło|`Environment.ToolWindowTabSelectedTab`|  
 |![Karta w oknie narzędzia po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Karta okna narzędzia zaznaczona, po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.ToolWindowTabSelectedText`|  
@@ -825,13 +820,13 @@ Tutaj wstaw wprowadzenie.
   
  **Karta tła**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Tło|`Environment.ToolWindowTabGradientBegin`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.|  
 |![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Pierwszego planu (tekst)|`Environment.ToolWindowTabText`|  
 |![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Obramowanie|`Environment.ToolWindowTabBorder`|  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Karta tła okna narzędzia po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okna narzędzia tło po najechaniu wskaźnikiem**|Tło|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.|  
 |![Karta tła okna narzędzia po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okna narzędzia tło po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.ToolWindowTabMouseOverText`|  
@@ -848,7 +843,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatyczne&#45;Ukrywanie karty](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Domyślną kartę autoukrywanie**|Tło|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Automatyczne&#45;Ukrywanie karty](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Domyślną kartę autoukrywanie**|Pierwszego planu (tekst)|`Environment.AutoHideTabText`|  
@@ -856,7 +851,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Autoukrywanie kartę po najechaniu wskaźnikiem**|Tło|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Autoukrywanie kartę po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.AutoHideTabMouseOverText`|  
@@ -890,7 +885,7 @@ Tutaj wstaw wprowadzenie.
   
   **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Tło|`SearchControl.FocusedBackground`|  
 |![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.FocusedBackground`|  
@@ -907,7 +902,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po przeniesieniu fokusu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Tło|`SearchControl.SearchActiveBackground`|  
 |![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.SearchActiveBackground`|  
@@ -928,7 +923,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Naciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Akcja przycisku**|Tło|`SearchControl.ActionButtonMouseDown`|  
 |![Naciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol)|`SearchControl.ActionButtonMouseDownGlyph`|  
@@ -939,7 +934,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyróżnione (tylko tekst)**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Tło|`SearchControl.Selection`|  
 |![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Pierwszego planu (tekst)|`SearchControl.FocusedBackground`|  
@@ -948,7 +943,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Tło|`SearchControl.Disabled`|  
 |![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.Disabled`|  
@@ -978,7 +973,7 @@ Tutaj wstaw wprowadzenie.
   
   **Domyślne (nie innych Państw)**  
   
-|Element|Nazwa tokenu: Category.color|  
+|Element|Nazwa tokenu: Category.Color|  
 |-------------|--------------------------------|  
 |Obramowanie|`SearchControl.PopupBorder`|  
 |Separator|`SearchControl.PopupSectionHeaderSeparator`|  
@@ -986,7 +981,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wyszukaj sugerowane](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Wyszukaj sugerowane](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Pierwszego planu (tekst)|`SearchControl.PopupItemText`|  
@@ -1003,7 +998,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wyszukaj sugerowane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Wyszukaj sugerowane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Pierwszego planu (tekst)|`SearchControl.PopupMouseOverItemText`|  
@@ -1019,7 +1014,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
@@ -1045,25 +1040,25 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Domyślne hiperłącze](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")|Pierwszego planu (tekst)|`Environment.PanelHyperlink`|  
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hiperłącza po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkHover`|  
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hiperłącze naciśnięty](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkPressed`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Hiperłącze wyłączone](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkDisabled`|  
   
@@ -1078,7 +1073,7 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  dla elementów interfejsu użytkownika, które nie są podobne do paska informacyjnego.  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Tło|`Environment.InfoBackground`|  
 |![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Pierwszego planu (tekst)|`Environment.InfoText`|  
@@ -1097,7 +1092,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
 |![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbBackground`|  
@@ -1106,7 +1101,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pasek przewijania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
 |![Pasek przewijania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbMouseOverBackground`|  
@@ -1115,7 +1110,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Naciśnięto paska przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
 |![Naciśnięto paska przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbPressedBackground`|  
@@ -1137,7 +1132,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Tło|`TreeView.Background`|  
 |![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Pierwszego planu (tekst)|`TreeView.Background`|  
@@ -1146,7 +1141,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Tło|`TreeView.Background`|  
 |![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Pierwszego planu (tekst)|`TreeView.Background`|  
@@ -1155,7 +1150,7 @@ Tutaj wstaw wprowadzenie.
   
  **Przeciągnij kursor nad**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Tło|`TreeView.DragOverItem`|  
 |![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Pierwszego planu (tekst)|`TreeView.DragOverItem`|  
@@ -1164,7 +1159,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wybrane**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Tło|`TreeView.SelectedItemActive`|  
 |![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`|  
@@ -1177,7 +1172,7 @@ Tutaj wstaw wprowadzenie.
   
  **Umieść kursor nad wybrane**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Tło|`TreeView.SelectedItemActive`|  
 |![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`|  
@@ -1199,35 +1194,35 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Przycisk|`CommonControls.Button`|  
 |![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Obramowanie przycisku|`CommonControls.ButtonBorder`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk wyłączone](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Przycisk|`CommonControls.ButtonDisabled`|  
 |![Przycisk wyłączone](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Obramowanie przycisku|`CommonControls.ButtonBorderDisabled`|  
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Przycisk po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Przycisk|`CommonControls.ButtonHover`|  
 |![Przycisk po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Obramowanie przycisku|`CommonControls.ButtonBorderHover`|  
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Przycisk|`CommonControls.ButtonPressed`|  
 |![Wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Obramowanie przycisku|`CommonControls.ButtonBorderPressed`|  
   
  **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Fokus przycisku](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Przycisk|`CommonControls.ButtonFocused`|  
 |![Fokus przycisku](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Obramowanie przycisku|`CommonControls.ButtonBorderFocused`|  
@@ -1243,7 +1238,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Tło|`CommonControls.CheckBoxBackground`|  
 |![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Obramowanie|`CommonControls.CheckBoxBorder`|  
@@ -1252,7 +1247,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Tło|`CommonControls.CheckBoxBackgroundDisabled`|  
 |![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Obramowanie|`CommonControls.CheckBoxBorderDisabled`|  
@@ -1261,7 +1256,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Tło|`CommonControls.CheckBoxBackgroundHover`|  
 |![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Obramowanie|`CommonControls.CheckBoxBorderHover`|  
@@ -1270,7 +1265,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Tło|`CommonControls.CheckBoxBackgroundPressed`|  
 |![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Obramowanie|`CommonControls.CheckBoxBorderPressed`|  
@@ -1279,7 +1274,7 @@ Tutaj wstaw wprowadzenie.
   
  **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Tło|`CommonControls.CheckBoxBackgroundFocused`|  
 |![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Obramowanie|`CommonControls.CheckBoxBorderFocused`|  
@@ -1299,7 +1294,7 @@ Tutaj wstaw wprowadzenie.
   
   **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Tło|`CommonControls.ComboBoxBackground`|  
 |![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Obramowanie|`CommonControls.ComboBoxBorder`|  
@@ -1310,7 +1305,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Tło|`CommonControls.ComboBoxBackgroundDisabled`|  
 |![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Obramowanie|`CommonControls.ComboBoxBorderDisabled`|  
@@ -1321,7 +1316,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Tło|`CommonControls.ComboBoxBackgroundHover`|  
 |![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Obramowanie|`CommonControls.ComboBoxBorderHover`|  
@@ -1332,7 +1327,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Tło|`CommonControls.ComboBoxBackgroundPressed`|  
 |![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Obramowanie|`CommonControls.ComboBoxBorderPressed`|  
@@ -1343,7 +1338,7 @@ Tutaj wstaw wprowadzenie.
   
  **Fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Tło|`CommonControls.ComboBoxBackgroundFocused`|  
 |![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Obramowanie|`CommonControls.ComboBoxBorderFocused`|  
@@ -1354,7 +1349,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wybór danych wejściowych tekstu**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Upuść&#45;dół&#47;wprowadź tekst pola kombi](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")|Wyróżnij|`CommonControls.ComboBoxTextInputSelection`|  
   
@@ -1390,7 +1385,7 @@ Tutaj wstaw wprowadzenie.
 ##### <a name="column-headers"></a>Nagłówki kolumn  
  Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonalnie symbol zwykle używany podczas siatki są posortowane według tej kolumny.  
   
-|Stan|Element|Nazwa tokenu: Category.color|  
+|Stan|Element|Nazwa tokenu: Category.Color|  
 |-----------|-------------|--------------------------------|  
 |Domyślny|Tło|`Header.Default`|  
 |Domyślny|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -1408,7 +1403,7 @@ Tutaj wstaw wprowadzenie.
 ##### <a name="list-view-items"></a>Elementy widoku listy  
  Elementy widoku listy składają się z tła i jego zawartość. Zawartość może być tekst i/lub ikonę.  
   
-|Stan|Element|Nazwa tokenu: Category.color|  
+|Stan|Element|Nazwa tokenu: Category.Color|  
 |-----------|-------------|--------------------------------|  
 |Domyślny|Tło|Przezroczyste|  
 |Domyślny|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
@@ -1435,7 +1430,7 @@ Tutaj wstaw wprowadzenie.
   
 - dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.  
   
-|Stan|Składnik|Element|Nazwa tokenu: Category.color|  
+|Stan|Składnik|Element|Nazwa tokenu: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Domyślne (wybrane)|Tab|Tło|`ManifestDesigner.TabActive`|  
 |Domyślne (wybrane)|Tab|Obramowanie|Brak|  
@@ -1458,7 +1453,7 @@ Tutaj wstaw wprowadzenie.
   
 #### <a name="tag"></a>Tag  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Tło|`Tag.Background`|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Pierwszego planu (tekst)|`Tag.Background`|  
@@ -1472,14 +1467,14 @@ Tutaj wstaw wprowadzenie.
 #### <a name="glyph-close-icon"></a>Symbol (ikonę zamknięcia)  
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Brak|  
 |![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyph`|  
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Po wskazaniu wskaźnikiem (ustawienie domyślne tagu)**|Tło|`Tag.TagHoverGlyphHoverBackground`|  
 |![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Po wskazaniu wskaźnikiem (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyphHover`|  
@@ -1487,7 +1482,7 @@ Tutaj wstaw wprowadzenie.
   
  **Naciśnięto**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag &#40;symbol&#41; naciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Naciśnięto (ustawienie domyślne tagu)**|Tło|`Tag.TagHoverGlyphPressedBackground`|  
 |![Tag &#40;symbol&#41; naciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Naciśnięto (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyphPressed`|  
@@ -1495,14 +1490,14 @@ Tutaj wstaw wprowadzenie.
   
  **Domyślne wybrany symbol znacznika**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Brak|  
 |![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyph`|  
   
  **Wybrany symbol znacznika po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag wybrane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Po wskazaniu wskaźnikiem (wybrany tag)**|Tło|`Tag.TagSelectedGlyphHoverBackground`|  
 |![Tag wybrane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Po wskazaniu wskaźnikiem (wybrany tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyphHover`|  
@@ -1510,7 +1505,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wybrano/symbol tagu wciśnięty**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Zaznaczony tag naciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Po naciśnięciu (wybrany tag)**|Tło|`Tag.TagSelectedGlyphPressedBackground`|  
 |![Zaznaczony tag naciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Po naciśnięciu (wybrany tag)**|Foreground(Glyph)|`Tag.TagSelectedGlyphPressed`|  
@@ -1531,11 +1526,11 @@ Tutaj wstaw wprowadzenie.
   
 -   jako tła, na którym chcesz umieścić elementy pierwszego planu.  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Dolna warstwa|Tło|`Environment.EnvironmentBackground`|  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientBegin`|  
 |Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientEnd`|  
@@ -1555,7 +1550,7 @@ Tutaj wstaw wprowadzenie.
   Nie używaj...  
   dla obszarów, które nie są podobne do półki polecenia.  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |Pasek menu|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfHighlightGradientBegin`|  
 |Pasek menu|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfHighlightGradientMiddle`|  
@@ -1577,7 +1572,7 @@ Tutaj wstaw wprowadzenie.
   
  **Default**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Węzeł nadrzędny przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli brak dostępnych kontrolek|  
 |![Węzeł podrzędny przybornika](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli brak dostępnych kontrolek|  
@@ -1590,7 +1585,7 @@ Tutaj wstaw wprowadzenie.
   
  **Po wskazaniu wskaźnikiem**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Przybornik umieść wskaźnik myszy na węzeł podrzędny**|Tło|`Environment.ToolboxContentMouseOver`<br /><br /> Tylko pojedynczych elementów|  
 |![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Przybornik umieść wskaźnik myszy na węzeł podrzędny**|Obramowanie|Brak|  
@@ -1598,7 +1593,7 @@ Tutaj wstaw wprowadzenie.
   
  **Wybrane**  
   
-|Składnik|Element|Nazwa tokenu: Category.color|  
+|Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Węzeł nadrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Węzeł nadrzędny fokusem**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
 |![Węzeł podrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Węzeł podrzędny fokusem**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  

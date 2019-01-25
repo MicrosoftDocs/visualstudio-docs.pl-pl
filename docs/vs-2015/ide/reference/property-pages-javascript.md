@@ -1,14 +1,9 @@
 ---
 title: Strony właściwości, JavaScript | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
 - javascript.project.property.debugging.requireauthentication
@@ -21,13 +16,13 @@ ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904196"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768145"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ ms.locfileid: "49904196"
  Użyj następujących opcji, aby wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
  **Konfiguracja**  
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, **wszystkie konfiguracje**, lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, **wszystkie konfiguracje**, lub Konfiguracja zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia są **dowolny Procesor** (domyślne dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji), **x64**, **ARM**, **x86**, lub platforma zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Ustawienia są **dowolny Procesor** (domyślne dla [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji), **x64**, **ARM**, **x86**, lub platforma zdefiniowana przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Strona ogólna  
  Następujące opcje służą do ustawiania właściwości ogólnych projektu.  
@@ -59,7 +54,7 @@ ms.locfileid: "49904196"
  **Ścieżka wyjściowa**  
  Określa położenie plików wyjściowych dla tej konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, ścieżka bezwzględna jest zapisywana w projekcie. Domyślna ścieżka to bin\Debug.  
   
- Korzystając z uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. Po kliknięciu **debugowania**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5) kompilacja jest umieszczany w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **Kompiluj rozwiązanie** polecenie **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **narzędzia**, **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, wybierz opcję **ogólne**, a następnie wyczyść **Pokaż zaawansowane konfiguracjekompilacji**pole wyboru. Daje to ręczne sterowanie wszystkimi wartościami konfiguracji i czy jest wbudowana wersja debugowania lub publikacji. Aby uzyskać więcej informacji, zobacz [NIB: Ogólne, projekty i rozwiązania, okno dialogowe Opcje](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Korzystając z uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. Po kliknięciu **debugowania**, **Rozpocznij debugowanie** (lub naciśnij klawisz F5) kompilacja jest umieszczany w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **Kompiluj rozwiązanie** polecenie **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby włączyć zaawansowane konfiguracje kompilacji, na pasku menu wybierz **narzędzia**, **opcje**. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania**, wybierz opcję **ogólne**, a następnie wyczyść **Pokaż zaawansowane konfiguracjekompilacji**pole wyboru. Daje to ręczne sterowanie wszystkimi wartościami konfiguracji i czy jest wbudowana wersja debugowania lub publikacji. Aby uzyskać więcej informacji, zobacz [NIB: Ogólne, projekty i rozwiązania, okno dialogowe Opcje](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Język domyślny**  
  Określa język domyślny dla projektu. Opcja języka wybranego w **zegar, język i Region** w Panelu sterowania określa język preferowany przez użytkownika. Określając język domyślny dla projektu, należy upewnić się, że zasoby określonego domyślnego języka są używane, jeśli język preferowany przez użytkownika nie jest zgodny z zasobami językowymi aplikacji.  
@@ -93,6 +88,3 @@ ms.locfileid: "49904196"
   
   **Wymagaj uwierzytelniania**  
   Określa, czy komputer zdalny wymaga uwierzytelniania. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** ustawiono **maszyny zdalnej**.
-
-
-

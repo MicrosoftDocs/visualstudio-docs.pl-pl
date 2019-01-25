@@ -1,27 +1,22 @@
 ---
 title: Starszego języka usługi analizator i skaner | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776452"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Gotowe.  
   
 ### <a name="summary"></a>Podsumowanie  
- Operacji dopasowywania nawiasów klamrowych jest zazwyczaj ograniczone do prostych pary elementów języka. Bardziej złożone elementy, takie jak dopasowanie trójek ("`if(…)`","`{`"i"`}`", lub "`else`","`{`"i"`}`"), może być wyróżniony jako część operacji dokończenie wyrazu. Na przykład po zakończeniu słowo "else", dopasowywania "`if`" może być wyróżniony instrukcji. Gdyby szereg `if` / `else if` instrukcji, wszystkie z nich może być wyróżniony za pomocą tego samego mechanizmu jako dopasowywanie nawiasów klamrowych. <xref:Microsoft.VisualStudio.Package.Source> Klasa bazowa już obsługuje tę funkcję, w następujący sposób: skaner musi zwracać wartość tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> połączeniu z wartością wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tokenu przed pozycja kursora.  
+ Operacji dopasowywania nawiasów klamrowych jest zazwyczaj ograniczone do prostych pary elementów języka. Bardziej złożone elementy, takie jak dopasowanie trójek ("`if(…)`","`{`"i"`}`", lub "`else`","`{`"i"`}`"), może być wyróżniony jako część operacji dokończenie wyrazu. Na przykład po zakończeniu słowo "else", dopasowywania "`if`" może być wyróżniony instrukcji. Gdyby szereg `if` / `else if` instrukcji, wszystkie z nich może być wyróżniony za pomocą tego samego mechanizmu jako dopasowywanie nawiasów klamrowych. <xref:Microsoft.VisualStudio.Package.Source> Klasa bazowa już obsługuje tę funkcję, w następujący sposób: Skaner musi zwracać wartość tokenów wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> połączeniu z wartością wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tokenu przed pozycja kursora.  
   
  Aby uzyskać więcej informacji, zobacz [parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Omówienie usługi starszego języka](../../extensibility/internals/legacy-language-service-overview.md)   
  [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Parowanie nawiasów klamrowych w starszej wersji usługi językowej](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

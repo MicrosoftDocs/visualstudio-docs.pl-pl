@@ -1,14 +1,9 @@
 ---
-title: Przybornik, karta HTML | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Toolbox, HTML Tab | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 9bfdd3b8-f5ac-4a5f-bdbf-c2b4e97641d8
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31ee75c419870d9047b3892c668c5e4665850654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780427"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ ms.locfileid: "49292077"
   
 ## <a name="tasks"></a>Zadania  
   
--   [Porady: Zarządzanie okno przybornika](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [Instrukcje: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Porady: manipulowanie karty przybornika](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)  
+-   [Instrukcje: Manipulowanie karty przybornika](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Elementy interfejsu użytkownika  
  Następujące narzędzia są dostępne na karcie HTML domyślnie.  
@@ -47,7 +42,7 @@ ms.locfileid: "49292077"
  **Pointer**  
  ![ASP.NET Mobile projektanta HTMLpage wskaźnik](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- To narzędzie jest domyślnie zaznaczona, po otwarciu dowolnej karcie przybornika. Nie można usunąć. Wskaźnik umożliwia przeciągnij obiekty na powierzchni projektowej widoku, zmieniać ich rozmiar i zmiany ich położenia na stronie lub formularza. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie okno przybornika](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [porady: manipulowanie karty przybornika](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+ To narzędzie jest domyślnie zaznaczona, po otwarciu dowolnej karcie przybornika. Nie można usunąć. Wskaźnik umożliwia przeciągnij obiekty na powierzchni projektowej widoku, zmieniać ich rozmiar i zmiany ich położenia na stronie lub formularza. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  **Dane wejściowe (przycisk)**  
  ![Przycisk strony internetowej HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -60,7 +55,7 @@ ms.locfileid: "49292077"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej HtmlInputButton serwera kontroli](http://msdn.microsoft.com/en-us/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: instrukcje: tworzenie skryptów i edytowanie programów obsługi zdarzeń](http://msdn.microsoft.com/en-us/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [ Serwer sieci Web przycisku kontrolki zawartości mapy](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, i <xref:System.Web.UI.WebControls.Button>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputButton](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: Instrukcje: Tworzenie skryptów i edytowanie programów obsługi zdarzeń](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [serwera sieci Web przycisku kontrolki zawartości mapy](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton>, i <xref:System.Web.UI.WebControls.Button>.  
   
  **Dane wejściowe (Resetowanie)**  
  ![HTMLpageResetButton — zrzut ekranu](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -73,7 +68,7 @@ ms.locfileid: "49292077"
 <input id="Reset1" type="reset" value="Reset" name="Reset1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputReset](http://msdn.microsoft.com/en-us/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, i <xref:System.Web.UI.WebControls.Button>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputReset](http://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, i <xref:System.Web.UI.WebControls.Button>.  
   
  **Dane wejściowe (Prześlij)**  
  ![HTMLpageToolbarSubmitButton — zrzut ekranu](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
@@ -86,7 +81,7 @@ ms.locfileid: "49292077"
 <input id="Submit1" type="submit" value="Submit" name="Submit1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputSubmit](http://msdn.microsoft.com/en-us/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, i <xref:System.Web.UI.WebControls.Button>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputSubmit](http://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, i <xref:System.Web.UI.WebControls.Button>.  
   
  **Dane wejściowe (tekst)**  
  ![HTMLpageToolbarTextField — zrzut ekranu](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
@@ -99,7 +94,7 @@ ms.locfileid: "49292077"
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputText](http://msdn.microsoft.com/en-us/87060d90-a11c-434d-9fc9-b03a8487041e), [omówienie kontrolki serwera sieci Web w polu tekstowym](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, i <xref:System.Web.UI.WebControls.TextBox>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [omówienie kontrolki serwera sieci Web w polu tekstowym](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, i <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Zalecane jest, sprawdź poprawność wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w produkcie ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -115,7 +110,7 @@ ms.locfileid: "49292077"
 <input id="File1" type="file" name="File1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputFile](http://msdn.microsoft.com/en-us/a817b4a0-056f-4c17-a696-b9fdcde43db6), i <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), i <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
 >  Zalecane jest, sprawdź poprawność wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w produkcie ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -131,7 +126,7 @@ ms.locfileid: "49292077"
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej HtmlInputPassword serwera kontroli](http://msdn.microsoft.com/en-us/df703dd0-1624-4e5a-a547-c97f2f331b9f), [instrukcje: Ustawianie kontrolki serwera sieci Web pole tekstowe do wprowadzenia hasła](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), i [wskazówki: Sprawdzanie poprawności danych wejściowych użytkownika w sieci Web Forms strony](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [jak: Ustaw formant serwera sieci Web pole tekstowe do wprowadzenia hasła](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), i [instruktażu: Walidacja danych wejściowych użytkownika w sieci Web Forms strony](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
 >  Jeśli Twoja aplikacja przesyła nazwy użytkownika i hasła, należy skonfigurować witryny sieci Web na potrzeby przekazywania szyfrowanie Secure Sockets Layer (SSL). Aby uzyskać więcej informacji, zobacz "Zabezpieczenia połączeń z protokołem SSL" w [przewodniku obsługi usług IIS](http://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w produkcie ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -147,10 +142,10 @@ ms.locfileid: "49292077"
 <input id="Checkbox1" type="checkbox" name="Checkbox1">   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputCheckBox](http://msdn.microsoft.com/en-us/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [pole wyboru i omówienie kontrolki serwera sieci Web CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, i <xref:System.Web.UI.WebControls.CheckBox>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputCheckBox](http://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [pole wyboru i omówienie kontrolki serwera sieci Web CheckBoxList](http://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, i <xref:System.Web.UI.WebControls.CheckBox>.  
   
  **Dane wejściowe (przycisk radiowy)**  
- ![VisualStudioHTMLpageRadioButton — zrzut ekranu](../../ide/reference/media/vxradio.gif "vxRadio")  
+ ![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif "vxRadio")  
   
  Wstawia `input` elementu `type="radio"`. Aby zmienić tekst, który jest wyświetlany, należy edytować `name` właściwości. Domyślnie `id="Radio1"` jest wstawiany za pierwszy przycisk radiowy `id="Radio2"` dla drugiej i tak dalej.  
   
@@ -160,7 +155,7 @@ ms.locfileid: "49292077"
 <input id="Radio1" type="radio" name="Radio1">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputRadioButton](http://msdn.microsoft.com/en-us/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton i omówienie kontrolki serwera sieci Web RadioButtonList](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, i <xref:System.Web.UI.WebControls.RadioButton>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputRadioButton](http://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [RadioButton i omówienie kontrolki serwera sieci Web RadioButtonList](http://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, i <xref:System.Web.UI.WebControls.RadioButton>.  
   
  **Dane wejściowe (ukryte)**  
  ![Strona HTML — ukryty element](../../ide/reference/media/vxhidden.gif "vxhidden")  
@@ -173,9 +168,9 @@ ms.locfileid: "49292077"
 <input id="Hidden1" type="hidden" name="Hidden1">   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputHidden](http://msdn.microsoft.com/en-us/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), i <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
+ Aby uzyskać więcej informacji, zobacz [kontrolki wprowadzania HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [składni deklaratywnej kontroli serwera HtmlInputHidden](http://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9), i <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.  
   
- **Textarea**  
+ **Obszar tekstu**  
  ![Obszar tekstu na pasku narzędzi strony HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
   
  Wstawia `textarea` elementu. Możesz zmienić rozmiar obszaru tekstu lub użyj jej pasków przewijania, aby wyświetlić tekst, który wykracza poza jego obszaru wyświetlania. Aby zmienić domyślny tekst, który jest wyświetlany, należy edytować `value` atrybutu. Domyślnie `id="textarea1"` jest wstawiany pierwszego obszaru tekstu `id=" textarea 2"` dla drugiej i tak dalej.  
@@ -186,7 +181,7 @@ ms.locfileid: "49292077"
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlTextArea](http://msdn.microsoft.com/en-us/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, i <xref:System.Web.UI.WebControls.TextBox>.  
+ Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, i <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
 >  Zalecane jest, sprawdź poprawność wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych wejściowych użytkownika w produkcie ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
@@ -202,7 +197,7 @@ ms.locfileid: "49292077"
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlTable](http://msdn.microsoft.com/en-us/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabeli wymagają elementu oraz omówienie kontrolki serwera sieci Web TableCell](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, i <xref:System.Web.UI.WebControls.Table>.  
+ Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlTable](http://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [tabeli wymagają elementu oraz omówienie kontrolki serwera sieci Web TableCell](http://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable>, i <xref:System.Web.UI.WebControls.Table>.  
   
  **Obraz**  
  ![Strona HTML elementu obrazu](../../ide/reference/media/vximage.gif "vxImage")  
@@ -215,7 +210,7 @@ ms.locfileid: "49292077"
 <img alt="" src="">  
 ```  
   
- Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlImage](http://msdn.microsoft.com/en-us/528430e8-ced1-47d1-8db2-942e734a61f6), [omówienie kontrolki serwera sieci Web obraz](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, i <xref:System.Web.UI.WebControls.Image>.  
+ Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlImage](http://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [omówienie kontrolki serwera sieci Web obraz](http://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, i <xref:System.Web.UI.WebControls.Image>.  
   
  **Select**  
  ![Strona HTML listy rozwijanej przybornika](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
@@ -230,7 +225,7 @@ ms.locfileid: "49292077"
   
  Można utworzyć wiele wierszy `select` elementu przez zwiększenie wartości właściwości size.  
   
- Aby uzyskać więcej informacji, zobacz [składni deklaratywnej HtmlSelect serwera kontroli](http://msdn.microsoft.com/en-us/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: instrukcje: tworzenie skryptów i edytowanie programów obsługi zdarzeń](http://msdn.microsoft.com/en-us/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [omówienie kontrolki serwera sieci Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Omówienie kontrolki serwera sieci Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, i <xref:System.Web.UI.WebControls.DropDownList>.  
+ Aby uzyskać więcej informacji, zobacz [składni deklaratywnej kontroli serwera HtmlSelect](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Instrukcje: Tworzenie skryptów i edytowanie programów obsługi zdarzeń](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [omówienie kontrolki serwera sieci Web DropDownList](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [omówienie kontrolki serwera sieci Web ListBox](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect>, i <xref:System.Web.UI.WebControls.DropDownList>.  
   
  **Linia pozioma**  
  ![Strona HTML poziomy elementu reguły](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
@@ -262,6 +257,3 @@ ms.locfileid: "49292077"
  [Przybornik](../../ide/reference/toolbox.md)   
  [Standardowa karta, przybornik](http://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870)   
  [Formanty HTML](http://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)
-
-
-

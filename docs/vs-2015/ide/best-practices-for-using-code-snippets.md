@@ -1,14 +1,9 @@
 ---
 title: Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
@@ -16,13 +11,13 @@ ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770326"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49919913"
 W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś zrobić. W przypadku większości aplikacji należy zmodyfikować kod do własnych aplikacji.  
   
 ## <a name="handling-exceptions"></a>Obsługa wyjątków  
- Zazwyczaj fragment kodu Try... CATCH w blokach catch i zgłoś ponownie wszystkie wyjątki. Może to nie być dobrym wyborem dla projektu. Dla każdego wyjątku istnieje kilka sposobów na odpowiedź. Przykłady, zobacz [porady: obsługa wyjątków za pomocą bloku try/catch (C# Programming Guide)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) i [spróbuj... CATCH... Na koniec instrukcji](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Zazwyczaj fragment kodu Try... CATCH w blokach catch i zgłoś ponownie wszystkie wyjątki. Może to nie być dobrym wyborem dla projektu. Dla każdego wyjątku istnieje kilka sposobów na odpowiedź. Aby uzyskać przykłady, zobacz [jak: Obsługa wyjątków za pomocą bloku try/catch (C# Programming Guide)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) i [spróbuj... CATCH... Na koniec instrukcji](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Lokalizacje plików  
  Podczas lokalizacji plików można przystosować do aplikacji, możesz pomyśleć o następujących czynności:  
@@ -75,6 +70,3 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
  [Fragmenty kodu IntelliSense w języku Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Zabezpieczanie aplikacji](../ide/securing-applications.md)   
  [Fragmenty kodu](../ide/code-snippets.md)
-
-
-

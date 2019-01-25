@@ -1,24 +1,19 @@
 ---
 title: Omówienie programu Visual Studio Tools for Unity | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: overview
 ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f403a1001cb32376b91da472acdebaa31cc91682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 69b9fb9bd21ad19199e5ba268c8f0a87fb546d57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776514"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Omówienie narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ W tej sekcji możesz dowiesz się więcej o funkcjach programu Visual Studio Too
   
 ## <a name="see-also"></a>Zobacz też  
  [Strona główna aparatu Unity](http://unity3d.com)
-

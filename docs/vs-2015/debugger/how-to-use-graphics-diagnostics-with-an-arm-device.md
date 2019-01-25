@@ -1,27 +1,22 @@
 ---
-title: 'Porady: używanie diagnostyki grafiki z urządzeniem ARM | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z diagnostyki grafiki z urządzeniem ARM | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 003f17ad34219a21b69578902e5f48716c917789
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797783"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Porady: używanie diagnostyki grafiki z urządzeniem ARM
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Instrukcje: Korzystanie z diagnostyki grafiki z urządzeniem ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Graphics Diagnostics obsługuje zdalne debugowanie aplikacji Direct3D na urządzeniach z systemem ARM z systemem Windows RT 8.1 lub Windows Phone 8.1. Możesz przechwytywać informacje graficzne z aplikacji Direct3D, po uruchomieniu na urządzeniu lub korzystanie z urządzenia jako maszynę odtwarzającą dla wcześniej przechwycone informacje graficzne.  
@@ -48,11 +43,8 @@ Graphics Diagnostics obsługuje zdalne debugowanie aplikacji Direct3D na urządz
   
 2.  Na **Debuguj element docelowy** listy rozwijanej wybierz urządzenie ARM.  
   
-3.  W menu, wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: Alt + F5)  
+3.  W menu, wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: Alt+F5)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
- [Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-
+ [Instrukcje: Zmiana maszyny odtwarzania diagnostyki grafiki](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

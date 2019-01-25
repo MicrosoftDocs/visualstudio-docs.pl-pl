@@ -1,11 +1,8 @@
 ---
 title: CancellationScope, Projektant działań | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 125e9fd934ce40d2a6633daa62b817628306daa3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6207d1fcd2e920de979a13624e5cf1b442c2703c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767459"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope, projektant działań
 **CancellationScope** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CancellationScope> działania.  
@@ -38,8 +35,8 @@ ms.locfileid: "49229895"
 |Nazwa właściwości|Wymagane|Użycie|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.Activities.Statements.CancellationScope> działania. Wartość domyślna to CancellationScope. Mimo że <xref:System.Activities.Activity.DisplayName%2A> wartość nie jest bezwzględnie konieczne, jest najlepszym rozwiązaniem, aby użyć jednego.|  
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Określa działanie anulowania, który znajduje się logiki. Można dodać <xref:System.Activities.Statements.CancellationScope.Body%2A> działania, listy działanie z **przybornika** do **treści** polu na **CancellationScope** projektanta działań z tekst wskazówki "listy Działanie tutaj".|  
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Określa działania, który jest wykonywany w przypadku anulowania. Można dodać <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> działania, listy działanie z **przybornika** do **CancellationHandler** polu na **CancellationScope** projektanta działań ze wskazówką tekst "Upuść działanie tutaj".|  
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Prawda|Określa działanie anulowania, który znajduje się logiki. Można dodać <xref:System.Activities.Statements.CancellationScope.Body%2A> działania, listy działanie z **przybornika** do **treści** polu na **CancellationScope** projektanta działań z tekst wskazówki "listy Działanie tutaj".|  
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Prawda|Określa działania, który jest wykonywany w przypadku anulowania. Można dodać <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> działania, listy działanie z **przybornika** do **CancellationHandler** polu na **CancellationScope** projektanta działań ze wskazówką tekst "Upuść działanie tutaj".|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Transakcji](../workflow-designer/transaction-activity-designers.md)   

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: pisanie funkcji raportowania błędów czasu wykonywania | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Pisanie funkcji raportowania błędów czasu wykonywania | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5884ab002590f8944aa8c1134c67758a2f0c58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788179"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Porady: pisanie funkcji raportowania błędów czasu wykonywania
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Instrukcje: Pisanie funkcji raportowania błędów czasu wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Raportów niestandardowych funkcji błędów czasu wykonywania musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Wartość 1 powinien zostać zwrócony do debugera.  
@@ -134,8 +129,3 @@ int main()
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie macierzystego sprawdzania w trakcie wykonywania](../debugger/native-run-time-checks-customization.md)
-
-
-
-
-

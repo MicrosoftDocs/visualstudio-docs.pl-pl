@@ -1,31 +1,26 @@
 ---
 title: Zarządzanie przybornika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772112"
 ---
 # <a name="managing-the-toolbox"></a>Zarządzanie przybornika
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umożliwia pakietu VSPackage, przykład edytora lub projektanta, do zarządzania członkostwa i wygląd **przybornika**.  
   
- Ponadto **przybornika** sam mogą być zarządzane przy użyciu automatyzacji. Aby uzyskać więcej informacji na temat zarządzania przybornika dzięki automatyzacji, zobacz [porady: kontrolowanie przybornika](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Ponadto **przybornika** sam mogą być zarządzane przy użyciu automatyzacji. Aby uzyskać więcej informacji na temat zarządzania przybornika dzięki automatyzacji, zobacz [jak: Kontrolowanie przybornika](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Wybór karty przybornika automatyczne  
  Konkretny **przybornika** karty lub kategorii może zostać automatycznie uaktywniona oparte na które edytora lub projektanta jest obecnie aktywna. Na przykład, jeśli projektant formularzy jest aktywna, może być **wszystkie formularze Windows** wybraną kartą.  

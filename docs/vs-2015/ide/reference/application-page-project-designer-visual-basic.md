@@ -1,14 +1,9 @@
 ---
 title: Strona aplikacji, Projektant (Visual Basic) projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774863"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
 > [!NOTE]
 >  Wstępnie wymagane pakiety, które są wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie po otwarciu okna dialogowego po raz pierwszy. Jeśli użytkownik zmieni później platformę docelową projektu, należy określić wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.  
   
- Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) i [programu Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Typ aplikacji**  
  Określa typ aplikacji pozwalają na tworzenie. Aby uzyskać [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji, można określić **Windows Store App**, **biblioteki klas**, lub **plik WinMD**. W przypadku większości innych typów aplikacji, możesz określić **aplikacji Windows**, **aplikację Konsolową**, **biblioteki klas**, **usługi Windows**, lub **Biblioteka formantów sieci Web**.  
@@ -116,7 +111,7 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
  Następujące ustawienia są dostępne w **właściwości szablonu aplikacji Windows** sekcji. Te opcje są dostępne tylko wtedy, gdy **struktury aplikacji Włącz** pole wyboru jest zaznaczone. Opis sekcji następujące po niej **właściwości szablonu aplikacji Windows** ustawienia dla aplikacji Windows Presentation Foundation (WPF).  
   
  **Włączyć style wizualne XP**  
- Włącza lub wyłącza stylów wizualnych Windows XP, znany także jako *Windows XP motywy*. Na przykład stylów wizualnych Windows XP włącz kontrolek z zaokrąglone rogi i dynamiczne kolorów. Wartość domyślna jest ustawiona. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych Windows XP zobacz [funkcje systemu Windows XP i kontrolki formularzy Windows](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Włącza lub wyłącza stylów wizualnych Windows XP, znany także jako *Windows XP motywy*. Na przykład stylów wizualnych Windows XP włącz kontrolek z zaokrąglone rogi i dynamiczne kolorów. Wartość domyślna jest ustawiona. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych Windows XP zobacz [funkcje systemu Windows XP i kontrolki formularzy Windows](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Pojedyncze wystąpienie aplikacji**  
  Zaznacz to pole wyboru, aby uniemożliwić użytkownikom uruchamianie wielu wystąpień aplikacji. Ustawieniem domyślnym dla tego pola wyboru jest wyczyszczone. To ustawienie zezwala na wiele wystąpień aplikacji do uruchomienia.  
@@ -166,6 +161,3 @@ Użyj **aplikacji** strony projektanta projektu, aby określić ustawienia aplik
   
 ## <a name="see-also"></a>Zobacz też  
 [Zarządzanie właściwościami aplikacji](../../ide/application-properties.md) [pisany w rozwiązaniach pakietu Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

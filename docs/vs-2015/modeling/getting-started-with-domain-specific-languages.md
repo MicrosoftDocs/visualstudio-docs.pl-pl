@@ -1,30 +1,27 @@
 ---
 title: Wprowadzenie do języków specyficznych dla domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac9b92921ba180c3f986a28d9fc47ee9acfdeb78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752902"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie z języka specyficznego dla domeny (DSL), utworzone za pomocą zestawu Modeling SDK for Visual Studio.  
   
- Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowanie zestawu SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić za pomocą języka dotyczącego określonej domeny?  
  Języka specyficznego dla domeny jest notacji, zwykle graficzny, który jest przeznaczony do użycia do określonego celu. Z drugiej strony języków, takich jak UML są ogólnego przeznaczenia. W języku DSL można zdefiniować typów elementu modelu i ich wzajemne relacje i jak są przedstawione na ekranie.  
@@ -107,7 +104,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 1. Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Większość kodu źródłowego z DslDefinition.dsl to generuje.  
   
    > [!NOTE]
-   >  Zawsze, gdy zmienisz DslDefinition.dsl, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   >  Zawsze, gdy zmienisz DslDefinition.dsl, należy kliknąć przycisk **Przekształć wszystkie szablony** przed Kompiluj rozwiązanie. Możesz zautomatyzować ten krok. Aby uzyskać więcej informacji, zobacz [jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Naciśnij klawisz F5, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
@@ -377,7 +374,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 ## <a name="validation-and-commands"></a>Sprawdzanie poprawności i polecenia  
  Dalsze tego języka DSL można rozwijać, dodając ograniczenia sprawdzania poprawności. Te ograniczenia są metody, które można zdefiniować, które upewnij się, że model jest w poprawnym stanie. Na przykład można zdefiniować ograniczenie, aby upewnić się, że, Data urodzenia dziecka jest późniejsza niż jego elementów nadrzędnych. Funkcję weryfikacji zostanie wyświetlone ostrzeżenie, jeśli użytkownik DSL próbuje zapisać modelu, który przerywa żadne ograniczenia. Aby uzyskać więcej informacji, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).  
   
- Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia można modyfikować modelu. Może również korzystać z innych modeli w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oraz z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [porady: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia można modyfikować modelu. Może również korzystać z innych modeli w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oraz z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Wdrażanie język DSL  
  Aby umożliwić innym użytkownikom korzystanie z języka specyficznego dla domeny, rozpowszechniać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliku rozszerzenie (VSIX). Zostanie on utworzony podczas kompilowania rozwiązania DSL.  
@@ -405,6 +402,3 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
  [Objaśnienie modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)   
  [Jak zdefiniować języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

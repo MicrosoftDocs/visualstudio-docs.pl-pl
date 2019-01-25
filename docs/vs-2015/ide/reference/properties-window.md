@@ -1,14 +1,9 @@
 ---
 title: Okno właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
 - handler functions, Properties window
@@ -25,13 +20,13 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753535"
 ---
 # <a name="properties-window"></a>Okno Właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,6 +88,3 @@ To okno służy do wyświetlania i zmieniania właściwości projektowania oraz 
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)   
  [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

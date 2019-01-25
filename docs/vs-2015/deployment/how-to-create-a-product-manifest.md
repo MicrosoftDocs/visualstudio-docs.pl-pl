@@ -1,14 +1,9 @@
 ---
-title: 'Porady: tworzenie manifestu produktu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie manifestu produktu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788631"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Porady: tworzenie manifestu produkt
+# <a name="how-to-create-a-product-manifest"></a>Instrukcje: Tworzenie manifestu produktu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Manifest pakietu zawiera aspekty specyficzne dla lokalizacji pakietu. W tym ciągi, Umowa licencyjna użytkownika oprogramowania i pakietów językowych.  
   
- Aby uzyskać więcej informacji na temat manifestów produktu, zobacz [porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
+ Aby uzyskać więcej informacji na temat manifestów produktu, zobacz [jak: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="creating-the-product-manifest"></a>Tworzenie manifestu produktu  
   
@@ -168,6 +163,3 @@ Aby wdrożyć wymagania wstępne dotyczące aplikacji, można utworzyć pakietu 
   
 ## <a name="see-also"></a>Zobacz też  
  [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
-
-
-

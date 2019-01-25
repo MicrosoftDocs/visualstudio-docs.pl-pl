@@ -1,27 +1,22 @@
 ---
 title: Karta Ogólne, okno dialogowe właściwości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b2c0410944e9a28a4ff13f51e99592dff4f756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797789"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Karta ogólna, okno dialogowe właściwości okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ Użyj **ogólne** kartę, aby wyświetlić informacje dotyczące wybranego okna.
 |**Identyfikator formantu lub uchwyt Menu**|Jeśli okno jest wyświetlane jest okno podrzędne, jest wyświetlana etykieta identyfikator kontrolki. Identyfikator formantu jest liczba całkowita, która identyfikuje identyfikator to okno podrzędne kontrolki. Jeśli okno jest wyświetlane nie jest oknem podrzędnym, jest wyświetlana etykiety Menu obsługi. Uchwyt menu jest liczbą całkowitą, która identyfikuje uchwyt menu skojarzone z tego okna.|  
 |**Dane użytkownika**|Dane specyficzne dla aplikacji, który jest dołączony do tej struktury okna.|  
 |**Bajty okna**|Liczba bajtów dodatkowej skojarzone z tego okna. Znaczenie tych bajtów jest określany przez aplikację. Rozwiń pole listy, aby wyświetlić wartości bajtów w formacie typu DWORD.|
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: 'CA2003: Nie Traktuj włókien jak wątków | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2003
 - DoNotTreatFibersAsThreads
@@ -19,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b09d3a7dd5406db6fef1d8ffbe0618078390fe28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785415"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie Traktuj włókien jak wątków
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Nie traktuj włókien jak wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: przechodzenie do usług WCF | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Przechodzenie do usług WCF | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 9893ad01-54af-499f-85a6-9d1cfe6eb640
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7474626ccf5310faf5fc22c6323dc388dd20461d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ad5ca2d74a1c141b9687d9b9eac5d8b3e268cc0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759175"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Porady: usługi WCF krok po kroku
+# <a name="how-to-step-into-wcf-services"></a>Instrukcje: Przechodzenie do usług WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], możesz wejść do usługi WCF. Jeśli usługa WCF jest w tej samej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania jako klienta, można identyfikować punkty przerwania wewnątrz usługi WCF.  
@@ -51,7 +46,4 @@ W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], możesz wejść do
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)   
  [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-
+ [Instrukcje: Debugowanie samodzielnie hostowanej usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

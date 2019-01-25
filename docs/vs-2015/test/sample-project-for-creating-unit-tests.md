@@ -1,36 +1,31 @@
 ---
 title: Przykładowy projekt dotyczący tworzenia testów jednostkowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791899"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Przykładowy projekt dotyczący tworzenia testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten przykładowy kod znajduje się do użytku w poniższych instruktażach:  
   
--   [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Ten instruktaż poprowadzi Cię przez kroki, aby utworzyć i dostosować testy jednostkowe, uruchamiać je i sprawdź wyniki testu.  
+-   [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Ten instruktaż poprowadzi Cię przez kroki, aby utworzyć i dostosować testy jednostkowe, uruchamiać je i sprawdź wyniki testu.  
   
--   [Przewodnik: Uruchamianie testów i wyświetlanie pokrycia kodu](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). W tym instruktażu przedstawiono sposób wyświetlania danych pokrycia kodu, który zawiera część kodu projektu, który jest poddawana testom.  
+-   [Przewodnik: Uruchom testy, aby wyświetlić pokrycia kodu](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). W tym instruktażu przedstawiono sposób wyświetlania danych pokrycia kodu, który zawiera część kodu projektu, który jest poddawana testom.  
   
 -   [Wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). W tym przewodniku umożliwia narzędzie wiersza polecenia MSTest.exe przeprowadzać testy i przeglądać wyniki.  
   
@@ -134,12 +129,9 @@ namespace BankAccountNS
  / * Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w niniejszym dokumencie są fikcyjne.  Wszelkie rzeczywistą firmą, organizacji, produktu, nazwy domeny, adres e-mail, logo, osoby, miejsca lub zdarzeń jest przeznaczone i powinno być wnioskowane. \*/  
   
 ## <a name="working-with-the-code"></a>Praca z kodem  
- Aby pracować przy użyciu tego kodu, najpierw należy utworzyć projekt dla niego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Postępuj zgodnie z instrukcjami w sekcji "Przygotowanie instruktażu" [wskazówki: tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
+ Aby pracować przy użyciu tego kodu, najpierw należy utworzyć projekt dla niego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Postępuj zgodnie z instrukcjami w sekcji "Przygotowanie instruktażu" [instruktażu: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Przewodnik: Uruchamianie testów i wyświetlanie pokrycia kodu](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
+ [Przewodnik: Uruchom testy, aby wyświetlić pokrycia kodu](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [Wskazówki: Korzystanie z narzędzia testu wiersza polecenia](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
-
-
-

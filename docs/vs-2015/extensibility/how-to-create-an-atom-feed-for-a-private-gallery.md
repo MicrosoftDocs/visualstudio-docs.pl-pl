@@ -1,29 +1,24 @@
 ---
-title: 'Instrukcje: tworzenie Atom dla galerii prywatnej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Utwórz Atom dla galerii prywatnej | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f720c4297ab2ff31abe90365b0e25209762dba1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796242"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: tworzenie Atom dla galerii prywatnej
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: Tworzenie strumieniowego źródła Atom dla galerii prywatnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
@@ -82,4 +77,3 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
   
 ## <a name="see-also"></a>Zobacz też  
  [Galerie prywatne](../extensibility/private-galleries.md)
-

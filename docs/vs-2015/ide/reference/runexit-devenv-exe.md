@@ -1,14 +1,9 @@
 ---
 title: -Runexit (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
 - Devenv, /runexit switch
@@ -17,13 +12,13 @@ ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86a99aed7876454d09e5bb0157f6dcaaa7fb4072
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793154"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +34,10 @@ devenv /runexit {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>Argumenty  
  `SolutionName`  
- Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.  
+ Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.  
   
  `ProjectName`  
- Wymagane. Pełna ścieżka i nazwa pliku projektu.  
+ Wymagana. Pełna ścieżka i nazwa pliku projektu.  
   
 ## <a name="remarks"></a>Uwagi  
  Kompiluje i uruchamia określony projekt lub rozwiązanie, zgodnie z ustawieniami określonymi dla aktywnej konfiguracji rozwiązania. Ten przełącznik minimalizuje IDE, podczas projektu lub rozwiązania jest uruchomiona i zamknięcie IDE po projektu lub rozwiązania zakończy działanie.  
@@ -64,6 +59,3 @@ devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\P
  [/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Używanie obiektów 3-d w grach i aplikacjach | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775114"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
   
     |Typ zasobu|Nazwa dostosowania kompilacji|  
     |----------------|------------------------------|  
-    |Obrazami i teksturami|**ImageContentTask (.targets, .props)**|  
+    |Obrazami i teksturami|**ImageContentTask(.targets, .props)**|  
     |Modele 3-D|**MeshContentTask (.targets, .props)**|  
-    |Programy do cieniowania|**ShaderGraphContentTask (.targets, .props)**|  
+    |Programy do cieniowania|**ShaderGraphContentTask(.targets, .props)**|  
   
 3.  Wybierz **OK** przycisku.  
   
@@ -72,8 +67,8 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|  
 |---------------|-----------------------|------------------------|  
-|**Potok zawartości obrazu**|Portable Network Graphics (PNG)<br /><br /> JPEG (jpg, JPEG, jpe, JFIF)<br /><br /> Bezpośrednie powierzchni rysowania (.dds)<br /><br /> Plik tekstowy w formacie GIF (.gif)<br /><br /> Mapa bitowa (.bmp, .dib)<br /><br /> Plik TIFF (.tif, .tiff)<br /><br /> Targa (.tga)|Powierzchnia DirectDraw (.dds)|  
-|**Potok zawartości siatki**|Plik wymiany AutoDesk FBX (.fbx)<br /><br /> Plik Collada DAE (.dae)<br /><br /> Plik OBJ czoła fali (.obj)|Plik siatki 3-D (.cmo)|  
+|**Potok zawartości obrazu**|Portable Network Graphics (PNG)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Bezpośrednie powierzchni rysowania (.dds)<br /><br /> Plik tekstowy w formacie GIF (.gif)<br /><br /> Mapa bitowa (.bmp, .dib)<br /><br /> Plik TIFF (.tif, .tiff)<br /><br /> Targa (.tga)|Powierzchnia DirectDraw (.dds)|  
+|**Potok zawartości siatki**|AutoDesk FBX Interchange File (.fbx)<br /><br /> Plik Collada DAE (.dae)<br /><br /> Plik OBJ czoła fali (.obj)|Plik siatki 3-D (.cmo)|  
 |**Potok zawartości programu do cieniowania**|Wizualny wykres modułu cieniującego (.dgsl)|Skompilowane dane wyjściowe cieniowania (.cso)|  
   
 ## <a name="configuring-asset-content-pipeline-properties"></a>Konfigurowanie właściwości potoku zawartości zasobów  
@@ -97,26 +92,26 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 |**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **Bez kompresji**<br />-   **Kompresja bc1_unorm**<br />-   **Kompresja bc1_unorm_srgb**<br />-   **Kompresja bc2_unorm**<br />-   **Kompresja bc2_unorm_srgb**<br />-   **Kompresja bc3_unorm**<br />-   **Kompresja bc3_unorm_srgb**<br />-   **Kompresja bc4_unorm**<br />-   **Kompresja bc4_snorm**<br />-   **Kompresja bc5_unorm**<br />-   **Kompresja bc5_snorm**<br />-   **Kompresja bc6h_uf16**<br />-   **Kompresja bc6h_sf16**<br />-   **Kompresja bc7_unorm**<br />-   **Kompresja bc7_unorm_srgb**<br /><br /> Aby uzyskać informacje o kompresji formaty są obsługiwane w różnych wersjach programu DirectX, zobacz [przewodnik programowania w infrastrukturze dxgi](http://go.microsoft.com/fwlink/p/?LinkId=246265).|  
 |Konwertuj na wstępnie przemnożonego alfa formatu|**Tak** konwersji obrazu wstępnie przemnożonego alfa format w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy pozostaje niezmieniony.|  
 |**Generuj Mips**|**Tak** do generowania pełnego łańcucha MIP w czasie kompilacji i uwzględnić go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie zawierał łańcuch MIP; w przeciwnym wypadku plik wyjściowy będzie zawierał żadnego łańcucha MIP.|  
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguracja potoku zawartości siatki  
  Gdy używasz narzędzia potoku zawartości siatki do tworzenia zawartości siatki można zmienić nazwę pliku wyjściowego.  
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguracja potoku zawartości modułu cieniującego  
  Korzystając z narzędzia potoku zawartości modułu cieniującego do tworzenia zasobów programu do cieniowania, możesz zmienić nazwę pliku wyjściowego.  
   
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:** zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
+|**Wyjście zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego pliku nie ma wpływu na jego format pliku.|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Ładowanie i używanie obiektów 3-d w czasie wykonywania  
   
 ### <a name="using-textures-and-images"></a>Używanie obrazów i tekstur  
- Program Direct3D oferuje funkcje tworzenia zasobów tekstur. W interfejsie Direct3D 11 Biblioteka narzędzi D3DX11 oferuje dodatkowe funkcje tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazu. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w interfejsie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji o sposobie używania biblioteki D3DX11 do utworzenia zasobu tekstury lub widoku zasobu z pliku obrazu, zobacz [porady: inicjowanie tekstury z pliku](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
+ Program Direct3D oferuje funkcje tworzenia zasobów tekstur. W interfejsie Direct3D 11 Biblioteka narzędzi D3DX11 oferuje dodatkowe funkcje tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazu. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w interfejsie Direct3D 11, zobacz [tekstury](http://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji o sposobie używania biblioteki D3DX11 do utworzenia zasobu tekstury lub widoku zasobu z pliku obrazu, zobacz [jak: Inicjowanie tekstury z pliku](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
   
 ### <a name="using-3-d-models"></a>Przy użyciu modeli 3D  
  Direct3D 11 nie zapewnia funkcji tworzenia zasobów z modelami 3-D. Zamiast tego trzeba napisać kod, który odczytuje plik modelu 3-D i tworzy bufory wierzchołków i indeksów, które reprezentują 3-D model i wszystkie zasoby, których wymaga model — na przykład tekstury lub cieniowania.  
@@ -207,11 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|  
-|[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|  
-|[Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|  
+|[Instrukcje: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które zawierają wstępnie obliczone mipmapy.|  
+|[Instrukcje: Eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Informacje dotyczące używania potoku zawartości obrazu do eksportowania tekstur, które zawierają wstępnie przemnożone wartości alfa.|  
+|[Instrukcje: Eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Informacje dotyczące używania potoku zawartości obrazu do wyeksportowania tekstury, które mogą być używane w aplikacji Direct2D lub JavaScript.|  
 |[Praca z obiektami 3-D do gier i aplikacji](../designers/working-with-3-d-assets-for-games-and-apps.md)|Opisuje narzędzia edycji programu Visual Studio udostępnia do tworzenia i manipulowania zestawami 3D, które obejmują tekstury i obrazy, modele 3D i programów do cieniowania.|  
-|[Instrukcje: eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|
-
-
-
+|[Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)|Opisuje sposób eksportowania modułu cieniującego od projektanta modułu cieniującego.|
