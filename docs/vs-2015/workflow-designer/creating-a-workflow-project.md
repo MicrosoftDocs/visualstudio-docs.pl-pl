@@ -1,11 +1,8 @@
 ---
 title: Tworzenie projektu przepływu pracy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
@@ -15,13 +12,13 @@ ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236720"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834463"
 ---
 # <a name="creating-a-workflow-project"></a>Tworzenie projektu przepływu pracy
 Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepływu pracy, działań niestandardowych i projektanci mogą być tworzone za pomocą działania niestandardowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów. W tej sekcji opisano sposób tworzenia bibliotek i aplikacji przy użyciu szablonów projektu dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -43,7 +40,7 @@ Przepływy pracy, [!INCLUDE[indigo1](../includes/indigo1-md.md)] usług przepły
  [Instrukcje: Tworzenie biblioteki projektanta działań](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  W tym artykule opisano sposób tworzenia projektantach, które są dostosowane do wielu odbiorców.  
   
- [Instrukcje: Dodawanie nowego elementu do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [Instrukcje: Dodaj nowy element do projektu przepływu pracy](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  W tym artykule opisano sposób dodawania działań przepływu pracy dodatkowe lub projektantów i innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elementy, takie jak działania kodu do istniejącego projektu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

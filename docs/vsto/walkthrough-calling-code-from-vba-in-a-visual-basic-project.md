@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e402e54e04f95e9faf4365e9b3d359da2d951a8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917660"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869466"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Przewodnik: Wywoływanie kodu z VBA w projektach Visual Basic
   W tym instruktażu przedstawiono sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word z Visual Basic for Applications (VBA) kod w dokumencie. Procedura obejmuje trzy podstawowe kroki: Dodaj metodę, która `ThisDocument` hosta klasy elementu, ujawnia metody dla kodu VBA, a następnie wywołaj metodę z kodu VBA w dokumencie.  

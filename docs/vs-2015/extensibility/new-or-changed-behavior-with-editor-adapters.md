@@ -1,26 +1,21 @@
 ---
 title: Zachowaniem nowe lub zostały zmienione z kartami edytora | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758950"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowaniem nowe lub zostały zmienione z kartami edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
  Tryb WPF różni się od trybu Win32 na dwa sposoby. Najpierw wyświetl tekst może być hostowana w kontekście WPF. Dostęp do okienka WPF przez rzutowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> i wywoływać metodę <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Drugi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> nadal zwraca HWND, ale ta HWND można tylko sprawdź jego położenie i ustawić fokus na nim. Nie można używać tego HWND odpowiedzieć na komunikat WM_PAINT, ponieważ nie wpłynie to jak edytor umożliwia malowanie okna. Ta HWND znajduje się tylko po to, aby ułatwić przejście do nowego kodu w edytorze za pomocą kart. Zdecydowanie zaleca się, że nie należy używać `VIF_NO_HWND_SUPPORT` Jeśli składnik wymaga do pracy ze względu na ograniczenia w HWND zwrócony z właściwością HWND `GetWindowHandle` while, w tym trybie.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>Przekazywanie tablic jako parametrów w kodzie natywnym  
- Istnieje wiele metod w edytorze starszej wersji interfejsu API, które mają parametry, które zawierają tablicy i liczbę jej. Przykładami są:  
+ Istnieje wiele metod w edytorze starszej wersji interfejsu API, które mają parametry, które zawierają tablicy i liczbę jej. Oto przykłady:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -62,7 +57,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
  Karta bufor zawsze powinna wywołać z wątku interfejsu użytkownika. Karta buforu jest obiekt zarządzany, co oznacza, że wywołanie go z kodu zarządzanego pomijał kierowanie modelu COM i wywołania będą nie automatycznie być przekazywane do wątku interfejsu użytkownika.  W przypadku wywołania adapter buforu z wątku w tle, należy użyć <xref:System.Windows.Threading.Dispatcher.Invoke%2A> lub podobnej metody.  
   
 #### <a name="lockbuffer-methods"></a>Metody LockBuffer  
- Wszystkie metody LockBuffer() są przestarzałe. Przykładami są:  
+ Wszystkie metody LockBuffer() są przestarzałe. Oto przykłady:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -127,7 +122,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda zakończy się niepowodzeniem, jeśli przekażesz w klasie, który nie implementuje albo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Niestandardowe akcje Win32 rysowanych przez właściciela podręczne nie są już obsługiwane.  
   
-#### <a name="smarttags"></a>Tagi inteligentne  
+#### <a name="smarttags"></a>SmartTags  
  Brak obsługi karty tagów inteligentnych utworzonych za pomocą, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfejsów.  
   
 #### <a name="dte"></a>DTE  
@@ -150,4 +145,3 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> jest zaimplementowana w kartach, ale ignorowane przez konspektu interfejsu użytkownika.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> jest zaimplementowana w kartach, ale ignorowane przez konspektu interfejsu użytkownika.|
-

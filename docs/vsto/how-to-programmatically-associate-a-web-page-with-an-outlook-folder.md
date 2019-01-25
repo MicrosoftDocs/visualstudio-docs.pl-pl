@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6dc6bec7ecbf872d10045cb24e007edec893585
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c60ac58c59adaacd66a7c56b4c394d596cfd6b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089638"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871276"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Instrukcje: Programowe kojarzenie strony internetowej z folderem programu Outlook
   W tym przykładzie wyszukuje folder o nazwie `HtmlView` w programie Microsoft Office Outlook. Jeśli folder nie istnieje, kod tworzy folder i przypisuje do strony sieci Web. Jeśli folder istnieje, kod wyświetla zawartość folderu.  

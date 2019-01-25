@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Włącz i Wyłącz Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Włącz i Wyłącz Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,15 +24,15 @@ ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0fe1af00bde865b98fb165efe109fe1bb5cabd49
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781260"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835078"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue"></a>Porady: włączanie i wyłączanie opcji edytuj i kontynuuj
+# <a name="how-to-enable-and-disable-edit-and-continue"></a>Instrukcje: Włącz i Wyłącz Edytuj i Kontynuuj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe, w czasie projektowania. Nie można zmienić tego ustawienia podczas debugowania.  
@@ -55,7 +50,7 @@ Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe,
 3. Aby włączyć, wybierz **Włącz edytowanie i kontynuowanie** pole wyboru. Aby wyłączyć, wyczyść pole wyboru.  
   
    > [!NOTE]
-   >  Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [skonfigurować IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   >  Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [skonfigurować IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 4. Kliknij przycisk **OK**.  
   
@@ -63,6 +58,3 @@ Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe,
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj](../debugger/edit-and-continue.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wyświetlanie dziedziczenia pomiędzy typami (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
 helpviewer_keywords:
@@ -19,18 +14,18 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782239"
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)
+# <a name="how-to-view-inheritance-between-types-class-designer"></a>Instrukcje: Wyświetlanie dziedziczenia między typami (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie klasy w Projektancie klas, można znaleźć relacji dziedziczenia. Aby utworzyć relację dziedziczenia, jeśli nie istnieją między dwoma typami, zobacz [porady: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+Jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie klasy w Projektancie klas, można znaleźć relacji dziedziczenia. Aby utworzyć relację dziedziczenia, jeśli nie istnieją między dwoma typami, zobacz [jak: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Aby znaleźć typ podstawowy  
   
@@ -53,8 +48,5 @@ Jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie 
    Również kliknięciu prawym przyciskiem myszy typ, dla którego chcesz wyświetlić jego typów pochodnych, a następnie wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

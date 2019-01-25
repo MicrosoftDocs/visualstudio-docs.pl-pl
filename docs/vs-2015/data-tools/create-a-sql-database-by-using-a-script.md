@@ -1,12 +1,9 @@
 ---
 title: Tworzenie bazy danych SQL za pomocą skryptu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773892"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Tworzenie bazy danych SQL za pomocą skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -276,4 +273,3 @@ W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danyc
   
 ##  <a name="DeployDatabase"></a> Wdrażanie bazy danych  
  Po naciśnięciu klawisza **F5** klucza, Wdróż (lub opublikować) bazę danych do bazy danych LocalDB, domyślnie. Można wdrożyć bazy danych do innej lokalizacji otwierając stronę właściwości dla projektu, wybierając **debugowania** kartę, a następnie zmieniając ciąg połączenia.
-

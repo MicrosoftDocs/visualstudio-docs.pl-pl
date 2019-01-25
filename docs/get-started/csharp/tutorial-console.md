@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204434"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872511"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio
 
@@ -46,15 +46,38 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
 ## <a name="create-the-app"></a>Tworzenie aplikacji
 
-Najpierw dodamy kod, aby utworzyć podstawowy kalkulatora. Firma Microsoft będzie następnie dostosować kod, aby dodać funkcje. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. Na koniec mamy uściślić kod, aby bardziej wydajne.
+Najpierw przyjrzymy się talent matematyczny podstawowe liczby całkowitej w C#. Następnie dodasz kod, aby utworzyć podstawowy kalkulatora. Firma Microsoft będzie następnie dostosować kod, aby dodać funkcje. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. I wreszcie firma uściślić kod, aby bardziej wydajne.
 
-Zacznijmy od dodania kodu podstawowego Kalkulator do projektu.
+Zacznijmy od niektórych matematyki całkowitoliczbowej w C#.
 
 1. W edytorze kodu należy usunąć domyślny kod "Hello World".
 
     ![Usuń domyślnego kodu Hello World z nowej aplikacji Kalkulator](./media/csharp-console-calculator-deletehelloworld.png)
 
-   Ściślej mówiąc Usuń cały kod, który zostanie wyświetlony w edytorze kodu.
+   W szczególności usunąć wiersza, który mówi, `Console.WriteLine("Hello World!");`.
+
+1. W jego miejsce wpisz następujący kod:
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
+
+   ![Wybierz przycisk Kalkulator, aby uruchomić aplikację z paska narzędzi](./media/csharp-console-calculator-button.png)
+
+   Zostanie otwarte okno konsoli, która ujawnia sumę 42 + 119.  
+
+1. Teraz, spróbuj zmienić `int c = a + b;` wiersz kodu przy użyciu innego operatora, takich jak `-` odejmowanie, `*` mnożenie, lub */* dla działu.
+
+    Zwróć uwagę, że gdy operator zmienić, a następnie uruchom program, wynik zmienia, zbyt.
+
+Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
+
+1. Usuń cały kod, który zostanie wyświetlony w edytorze kodu.
 
 1. Wprowadź lub wklej następujący kod do nowego edytora kodu:
 
@@ -509,7 +532,7 @@ Platforma .NET core to ewolucyjny następnym krokiem programu .NET Framework. Gd
 
 Obciążenia w programie Visual Studio reprezentuje zestaw programistycznych, opcji i szablony, które umożliwiają dostosowanie instalacji programu Visual Studio. Obciążenie instaluje tylko narzędzia potrzebne do programowania języka i wybranej platformy. Poniżej przedstawiono sposób je zainstalować.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: Użyj okna dialogowego Nowy projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Użyj okna dialogowego Nowy projekt
 
 1. Wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
 
@@ -519,7 +542,7 @@ Obciążenia w programie Visual Studio reprezentuje zestaw programistycznych, op
 
    ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Użyj paska menu Narzędzia
 
 1. Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 

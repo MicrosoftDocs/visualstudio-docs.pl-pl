@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 206a6ecf028497e63a7fe3e0d6bb320febd8bde5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764670"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Options, Text Editor, Basic (Visual Basic), Advanced
 **VB określonych** stronie właściwości, **podstawowe** folderu **edytora tekstów** folderu **opcje** (**narzędzia** menu) okno dialogowe zawiera następujące właściwości:
@@ -77,7 +77,7 @@ Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki �
 
 ## <a name="block-structure-guides"></a>Prowadnice struktury blokowej
 
-Zaznacz pola wyboru, aby wyświetlić kropkowana pionowe linie w nawiasach klamrowych (**{}**) w kodzie. Umożliwia to łatwe wyświetlenie poszczególnych bloków kodu dla Twojego poziomu deklaracji i tworzy na poziomie kodu.
+Po wybraniu wyświetlane pionowe linie w edytorze tego wiersza się przy użyciu bloków kodu ze strukturą, co pozwala łatwo identyfikować poszczególnych bloków kodu. Na przykład, zostanie wyświetlony wiersz między `Sub` i `EndSub` w `Sub` instrukcji.
 
 ## <a name="editor-help"></a>Pomoc Edytora
 

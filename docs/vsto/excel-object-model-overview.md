@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dc2f62a80865fa441a18fc80d0c8e4bd792e8db
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821772"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872095"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:  
@@ -55,9 +55,9 @@ ms.locfileid: "53821772"
 |Visual Basic|C#|  
 |------------------|---------|  
 |ThisWorkbook.vb|ThisWorkbook.cs|  
-|Sheet1.VB|Sheet1.CS|  
-|Sheet2.VB|Sheet2.CS|  
-|Sheet3.VB|Sheet3.CS|  
+|Sheet1.vb|Sheet1.CS|  
+|Sheet2.vb|Sheet2.CS|  
+|Sheet3.vb|Sheet3.CS|  
   
  Możesz użyć `Globals` klasy w projekcie w celu uzyskania dostępu do `ThisWorkbook`, `Sheet1`, `Sheet2`, lub `Sheet3` z poza odpowiedniej klasy. Aby uzyskać więcej informacji, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md). Poniższy przykład wywołuje <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metody `Sheet1` niezależnie od tego, czy kod jest umieszczany w jednym z `Sheet` *n* klasy lub `ThisWorkbook` klasy.  
   

@@ -1,25 +1,20 @@
 ---
 title: Wprowadzenie do WPF | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756012"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,16 +86,16 @@ Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows kli
 ```  
   
 ```csharp  
-using System.Windows; // Window, RoutedEventArgs, MessageBox   
+using System.Windows; // Window, RoutedEventArgs, MessageBox   
   
 namespace SDKSample  
 {  
-    public partial class AWindow : Window  
+    public partial class AWindow : Window  
     {  
         public AWindow()  
         {  
-            // InitializeComponent call is required to merge the UI   
-            // that is defined in markup with this class, including    
+            // InitializeComponent call is required to merge the UI   
+            // that is defined in markup with this class, including    
             // setting properties and registering event handlers  
             InitializeComponent();  
         }  
@@ -117,28 +112,28 @@ namespace SDKSample
 ```vb  
 Namespace SDKSample  
   
-    Partial Public Class AWindow  
+    Partial Public Class AWindow  
         Inherits System.Windows.Window  
   
-        Public Sub New()  
+        Public Sub New()  
   
-            ' InitializeComponent call is required to merge the UI   
-            ' that is defined in markup with this class, including    
+            ' InitializeComponent call is required to merge the UI   
+            ' that is defined in markup with this class, including    
             ' setting properties and registering event handlers  
             InitializeComponent()  
   
-        End Sub   
+        End Sub   
   
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
   
             ' Show message box when button is clicked  
             MessageBox.Show("Hello, Windows Presentation Foundation!")  
   
-        End Sub   
+        End Sub   
   
-    End Class   
+    End Class   
   
-End Namespace  
+End Namespace  
   
 ```  
   
@@ -194,11 +189,11 @@ End Namespace
   
  System układu jest narażony na formantów podrzędnych za pomocą klasy bazowe WPF. W przypadku typowych układów, takich jak siatki, układanie i dokowanie WPF zawiera kilka formantów układu:  
   
-- <xref:System.Windows.Controls.Canvas>: Formanty podrzędne Podaj własne układu.  
+- <xref:System.Windows.Controls.Canvas>: Formanty podrzędne zawierają własne układu.  
   
 - <xref:System.Windows.Controls.DockPanel>: Formanty podrzędne są wyrównane do krawędzi panelu.  
   
-- <xref:System.Windows.Controls.Grid>: Formanty podrzędne są pozycjonowane według wierszy i kolumn.  
+- <xref:System.Windows.Controls.Grid>: Formanty podrzędne są rozmieszczane według wierszy i kolumn.  
   
 - <xref:System.Windows.Controls.StackPanel>: Formanty podrzędne są ułożone poziomo lub pionowo.  
   
@@ -311,7 +306,7 @@ End Namespace
   
  Aby uzyskać więcej informacji, zobacz [Przegląd animacja](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx).  
   
-##  <a name="Media"></a> Nośnik  
+##  <a name="Media"></a> Media  
  Jest jednym ze sposobów w celu przekazania sformatowanej zawartości przy użyciu nośnika audiowizualnych. WPF obsługuje specjalne obrazy, wideo i audio.  
   
 ### <a name="images"></a>Obrazy  
@@ -358,7 +353,7 @@ End Namespace
   
  Z tego powodu WPF zawiera szereg mechanizmów do tworzenia środowisk unikatowych użytkowników, w tym sformatowanego model zawartości kontrolki, wyzwalacze, kontroli i szablony danych, style, zasoby interfejsu użytkownika i motywy i skórki.  
   
-### <a name="content-model"></a>Model zawartości  
+### <a name="content-model"></a>Content Model  
  Głównym celem większości kontrolek WPF jest do wyświetlania zawartości. W środowisku WPF typu i liczby elementów, które mogą stanowić zawartość kontrolki jest nazywany formantu *model zawartości*. Niektóre kontrolki mogą zawierać jeden element i typu zawartości; na przykład zawartość <xref:System.Windows.Controls.TextBox> jest wartość ciągu, która jest przypisana do <xref:System.Windows.Controls.TextBox.Text%2A> właściwości. W poniższym przykładzie ustawiono zawartość <xref:System.Windows.Controls.TextBox>.  
   
  [!code-xml[IntroToWPFSnippets#TextBoxContentMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/TextBoxContentWindow.xaml#textboxcontentmarkup1)]  
@@ -526,6 +521,3 @@ End Namespace
  [Wprowadzenie do WPF](../designers/getting-started-with-wpf.md)   
  [Tworzenie nowoczesnych aplikacji klasycznych przy użyciu programu Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)
-
-
-

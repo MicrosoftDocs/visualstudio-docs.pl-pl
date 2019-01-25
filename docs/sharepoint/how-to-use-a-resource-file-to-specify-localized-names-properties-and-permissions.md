@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], resource file
 - BDC [SharePoint development in Visual Studio], resource strings
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c61e996380ff2cca6ddc3c60ad4c6d13d10c93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e128a3d6f0dca07f9f2092af882532f7e07cd7eb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819468"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873538"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Instrukcje: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień
   Za pomocą pliku zasobów, można podać zlokalizowanych nazw, zdefiniuj właściwości i stosować uprawnienia tor obiekty, które są zdefiniowane w modelu łączności danych biznesowych (BDC). Aby podać te informacje, należy dodać **zasobu łączności danych biznesowych** elementu do projektu, który zawiera **Model usługi łączności danych biznesowych** elementu. Następnie można określić nazwy, właściwości i uprawnienia, edytując XML pliku zasobu.  

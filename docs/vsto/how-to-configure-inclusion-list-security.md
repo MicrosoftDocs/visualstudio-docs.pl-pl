@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895580"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868683"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Instrukcje: Konfigurowanie zabezpieczeń listy dołączania
   Jeśli masz uprawnienia administratora, można skonfigurować [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zaufany monit formant czy użytkownicy końcowi otrzymają możliwość instalowania rozwiązań pakietu Office, zapisując decyzji dotyczącej zaufania do listy dołączania. Aby uzyskać informacje o listach dołączania, zobacz [zaufania rozwiązań pakietu Office przy użyciu list dołączania](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -46,7 +46,7 @@ ms.locfileid: "53895580"
   
 2.  Znajdź następujący klucz rejestru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
@@ -56,9 +56,9 @@ ms.locfileid: "53895580"
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Disabled (Wyłączone)**|  
-    |**Mój komputer**|**Włączone**|  
+    |**MyComputer**|**Włączone**|  
     |**LocalIntranet**|**Włączone**|  
-    |**TrustedSites:**|**Włączone**|  
+    |**TrustedSites**|**Włączone**|  
   
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** i **UntrustedSites** ma wartość **wyłączone**.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "53895580"
   
 2.  Znajdź następujący klucz rejestru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
@@ -115,9 +115,9 @@ ms.locfileid: "53895580"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled (Wyłączone)**|  
     |**Internet**|**AuthenticodeRequired**|  
-    |**Mój komputer**|**AuthenticodeRequired**|  
+    |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
-    |**TrustedSites:**|**AuthenticodeRequired**|  
+    |**TrustedSites**|**AuthenticodeRequired**|  
   
      Domyślnie **Internet** ma wartość **AuthenticodeRequired** i **UntrustedSites** ma wartość **wyłączone**.  
   
@@ -164,7 +164,7 @@ ms.locfileid: "53895580"
   
 2.  Jeśli to nie istnieje, utwórz następujący klucz rejestru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  Dodaj poniższe podklucze jako **wartość ciągu**, jeśli ich jeszcze nie istnieje, z powiązanymi wartościami.  
   
@@ -172,9 +172,9 @@ ms.locfileid: "53895580"
     |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled (Wyłączone)**|  
     |**Internet**|**Disabled (Wyłączone)**|  
-    |**Mój komputer**|**Disabled (Wyłączone)**|  
+    |**MyComputer**|**Disabled (Wyłączone)**|  
     |**LocalIntranet**|**Disabled (Wyłączone)**|  
-    |**TrustedSites:**|**Disabled (Wyłączone)**|  
+    |**TrustedSites**|**Disabled (Wyłączone)**|  
   
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Aby wyłączyć programowo lista dołączania  
   

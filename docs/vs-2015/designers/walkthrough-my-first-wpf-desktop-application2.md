@@ -1,30 +1,25 @@
 ---
-title: 'Wskazówki: Mój pierwszy WPF pulpitu Aplikacja2 | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Mój pierwszy Aplikacja2 pulpitu WPF | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795948"
 ---
-# <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Mój pierwszy klasycznych aplikacji WPF
+# <a name="walkthrough-my-first-wpf-desktop-application"></a>Przewodnik: Mój pierwszy aplikacji klasycznej WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania Windows Presentation Foundation (WPF). Utworzysz Podstawowa aplikacja, która zawiera elementy, które są wspólne dla większości aplikacji klasycznej WPF: XAML znaczników, związanym z kodem, definicji aplikacji, formanty, układ, powiązanie danych i stylów.  
+name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania Windows Presentation Foundation (WPF). Utworzysz Podstawowa aplikacja, która zawiera elementy, które są wspólne dla większości aplikacji klasycznej WPF: Znaczników XAML związanym z kodem, definicji aplikacji, formanty, układ, powiązanie danych i stylów.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Tworzenie projektu aplikacji  
  W tej sekcji utworzysz infrastruktury aplikacji, która zawiera projekt i okna głównego lub formularza.  
@@ -647,17 +642,17 @@ name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania
   
      Ta XAML dodaje następujące style:  
   
-    -   `headerTextStyle`: Aby. formatowanie tytułu strony `Label`.  
+    -   `headerTextStyle`: Aby sformatować tytuł strony `Label`.  
   
-    -   `labelStyle`: Do sformatowania `Label` kontrolki.  
+    -   `labelStyle`: Aby sformatować `Label` kontrolki.  
   
-    -   `columnHeaderStyle`: Do sformatowania `DataGridColumnHeader`.  
+    -   `columnHeaderStyle`: Aby sformatować `DataGridColumnHeader`.  
   
-    -   `listHeaderStyle`: Do sformatowania nagłówków `Border` kontrolki.  
+    -   `listHeaderStyle`: Aby sformatować nagłówek listy `Border` kontrolki.  
   
-    -   `listHeaderTextStyle`: Do sformatowania nagłówków **etykiety**.  
+    -   `listHeaderTextStyle`: Aby sformatować nagłówek listy **etykiety**.  
   
-    -   `buttonStyle`: Do sformatowania `Button` na **ExpenseItHome.xaml** pppage.  
+    -   `buttonStyle`: Aby sformatować `Button` na **ExpenseItHome.xaml** pppage.  
   
 3.  Otwórz **ExpenseItHome.xaml** i Zamień wszystko pomiędzy `<Grid>` i `</Grid>` elementów za pomocą następujących XAML  
   
@@ -981,8 +976,5 @@ name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania
 - [Dokumenty w WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej platformy Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Tworzenie nowoczesnych aplikacji klasycznych przy użyciu platformy Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

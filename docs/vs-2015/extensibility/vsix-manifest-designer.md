@@ -1,14 +1,9 @@
 ---
-title: Projektant manifestu VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: VSIX Manifest Designer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752329"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
   
 - Elementy docelowe instalacji  
   
-- Zasoby  
+- Elementy zawartości  
   
 - Zależności  
   
@@ -97,7 +92,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
   **Typ instalacji**  
   Wyświetla listę **rozszerzenie programu Visual Studio** i **zestaw SDK rozszerzeń** docelowy jako typy instalacji. Opcje różnią się w zależności od wybranego typu.  
   
-  **Rozszerzenie programu Visual Studio**  
+  **Visual Studio Extension**  
   Wyświetla listę **InstallationTarget** elementy, które opisują, jak można zainstalować pakietu i do produktów Visual Studio, które można zainstalować tego rozszerzenia. Każdy produkt został zidentyfikowany osobno według nazwy i wersji lub zakresu.  Produkty mogą dodany do listy, modyfikacji i usunięte. Nazwa i wersja produktu odpowiadają **identyfikator** i **wersji** atrybuty skojarzonego **InstallationTarget** elementu.  
   
   **Zakres wersji** jest [12.0, 14,0] i używa następujący zapis:  
@@ -158,4 +153,3 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu 2.0 rozszerzenia VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-

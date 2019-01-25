@@ -1,14 +1,9 @@
 ---
 title: '&lt;param&gt; (JavaScript) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <param> JavaScript XML tag
 - param JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 2c4e0167-c1dd-4e54-83f1-c437856bddc1
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b1178fc6ff2cb5b4664930eaa70fd3de5ebed0f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a8477de8bf84950d778d4ce843522be35b2d7387
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949074"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772384"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,6 +123,3 @@ function calculate(a) {
   
 ## <a name="see-also"></a>Zobacz też  
  [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - ranges, extending
 - documents [Office development in Visual Studio], extending ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed2df2d844383ab0cfc26d67104d03644e1db671
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919667"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868865"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Instrukcje: Programowe rozszerzanie zakresów w dokumentach
   Po zdefiniowaniu <xref:Microsoft.Office.Interop.Word.Range> obiektów w dokumencie programu Microsoft Office Word, zmienić jego punkt początkowy i końcowy za pomocą <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> i <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody przyjmują tego samego dwa argumenty *jednostki* i *liczba*. *Liczba* argument jest liczba jednostek, aby przenieść, a *jednostki* argument może być jedną z następujących <xref:Microsoft.Office.Interop.Word.WdUnits> wartości:  

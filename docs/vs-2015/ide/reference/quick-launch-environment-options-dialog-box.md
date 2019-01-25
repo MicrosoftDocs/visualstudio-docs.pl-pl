@@ -1,14 +1,9 @@
 ---
 title: Szybkie uruchamianie, środowisko, okno dialogowe Opcje | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
 - vs.quicklaunch
@@ -19,13 +14,13 @@ ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e012e5ec4d9326cb1e6732ed78a8de8a60aeda8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782284"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie 
  **Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia**, **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.  
   
 ## <a name="category-list"></a>Lista kategorii  
- Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z programem Liczba elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz klawisze Ctrl + Q, aby Pokaż wszystkie wyniki z kategorii dalej. Po ostatnim kategoria zostanie wyświetlona, Ctrl + Q pokazuje kilka wyniki z każdej kategorii. Ctrl + Shift + Q służy do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.  
+ Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **Większość ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z liczbą elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz klawisze Ctrl + Q, aby Pokaż wszystkie wyniki z kategorii dalej. Po ostatnim kategoria zostanie wyświetlona, Ctrl + Q pokazuje kilka wyniki z każdej kategorii. Ctrl + Shift + Q służy do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.  
   
  Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonej kategorii.  
   
@@ -58,6 +53,3 @@ Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie 
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne elementy interfejsu użytkownika (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
-
-
-

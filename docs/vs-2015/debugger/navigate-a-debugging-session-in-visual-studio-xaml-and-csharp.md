@@ -1,13 +1,9 @@
 ---
 title: Nawigowanie po sesji debugowania (Xaml i C#) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: 1da33203-333f-4a05-b4e2-8d407c497233
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37af3c995e3dde5ad33e8135e8a648b6c0f6a962
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773356"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,9 +140,9 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  **Przekrocz nad funkcją.** Należy zauważyć, że następnego wiersza w przykład2, `int y = Example2_A();` jest zasadniczo taki sam jak w poprzednim wierszu. Możesz bezpiecznie wejść na tym wierszu. Wybierz klawisz F10, aby przenieść z wznowienie przykład2 to drugie wywołanie Example2_A. Wybierz F10, aby przejść przez tę metodę. Należy pamiętać, że `methodTrack` ciąg wskazuje metodę Example2_A wykonano dwa razy. Można również zauważyć, że debuger natychmiast przechodzi do następnego wiersza. Wstrzymuje wykonywanie w wznawia przykład2 punktu.
 
- **Wyjdź z funkcji.** Wciśnij klawisz F11, aby można było wkroczyć do metody Example2_B. Należy pamiętać, że nie jest bardzo różnią się od Example2_A Example2_B. Aby wkraczać poza metodę, wybierz **Step Out** na **debugowania** menu (klawiatury: SHIFT + F11). Należy pamiętać, że `methodTrack` zmiennej wskazuje wykonano Example2_B i zwróciła w punkcie, gdzie wznawia przykład2 debugera.
+ **Wyjdź z funkcji.** Wciśnij klawisz F11, aby można było wkroczyć do metody Example2_B. Należy pamiętać, że nie jest bardzo różnią się od Example2_A Example2_B. Aby wkraczać poza metodę, wybierz **Step Out** na **debugowania** menu (klawiatury: Shift + F11). Należy pamiętać, że `methodTrack` zmiennej wskazuje wykonano Example2_B i zwróciła w punkcie, gdzie wznawia przykład2 debugera.
 
- **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: SHIFT + F5). Kończy sesję debugowania.
+ **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: Shift+F5). Kończy sesję debugowania.
 
 ##  <a name="BKMK_ConditionCursorVisualize"></a> Ustawianie warunkowego punktu przerwania, uruchom do kursora i wizualizować zmienną
  Warunkowego punktu przerwania określa warunek, który powoduje, że debuger w celu wstrzymania wykonywania. Warunek jest określona przez dowolne wyrażenie kodu, które mogą być obliczane jako wartość true lub false. Może na przykład użyć warunkowego punktu przerwania, aby sprawdzić stan programu w przypadku często wywołanej metody tylko wtedy, gdy zmienna osiągnie określoną wartość.
@@ -182,7 +178,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  **Uruchom do kursora.** Kliknij prawym przyciskiem myszy wiersz `methodTrack += "->Example3";` , a następnie wybierz **Uruchom do kursora** (klawiatury: Przenieś kursor do linii; CTRL + F10). Debuger kończy iteracji pętli, a następnie zawiesza wykonywanie w wierszu.
 
- **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: SHIFT + F5). Kończy sesję debugowania.
+ **Zatrzymaj debugowanie.** W menu debugowanie, wybierz polecenie Zatrzymaj debugowanie (klawiatury: Shift+F5). Kończy sesję debugowania.
 
 ##  <a name="BKMK_EditContinueRecoverExceptions"></a> Edytuj i Kontynuuj, odzyskanie wyjątek
  W niektórych sytuacjach po wejściu do kodu w debugerze programu Visual Studio masz możliwość zmiany wartości zmiennych i nawet warunki logiczne instrukcji. Ta funkcja nosi nazwę Edytuj i Kontynuuj.
@@ -214,7 +210,7 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
 
  Wybierz klawisz F11, aby wkraczać do instrukcji, która wcześniej zgłosiła wyjątek. Należy pamiętać, że wiersz jest wykonywany bez błędów. Ponownie wybierz F11.
 
- **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: SHIFT + F5). Kończy sesję debugowania.
+ **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatury: Shift+F5). Kończy sesję debugowania.
 
 ## <a name="see-also"></a>Zobacz też
  [Rozpocznij sesję debugowania (VB, C#, C++ i XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [wyzwalacza wstrzymania, wznowienia i zdarzeń Windows Store w tle)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

@@ -1,14 +1,9 @@
 ---
 title: Szybkie informacje w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796223"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Szybkie informacje w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Szybkie informacje technologii IntelliSense zawiera informacje o odpowiadającym w źródle, gdy użytkownik umieszcza karetkę w identyfikatorze i wybiera **Quick Info** z **IntelliSense** menu lub mieści wskaźnik myszy kursor nad identyfikatorem. Powoduje to etykietki narzędzia się z informacjami o tym identyfikatorze. Te informacje zazwyczaj składa się z typ identyfikatora. Gdy aparat debugowania jest aktywne, te informacje mogą obejmować bieżącą wartość. Aparat debugowania dostarcza wartości wyrażeń, gdy usługa językowa obsługuje tylko identyfikatorów.  
   
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [wskazówki: wyświetlanie etykietek narzędzi Szybkieinfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [instruktażu: Wyświetlanie etykietek narzędzi Szybkieinfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
 >  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
@@ -49,4 +44,3 @@ Szybkie informacje technologii IntelliSense zawiera informacje o odpowiadającym
  Większość parsery zrobić początkowej analizy całego pliku źródłowego i zapisać wyniki w drzewo analizy. Pełna analiza odbywa się podczas <xref:Microsoft.VisualStudio.Package.ParseReason> jest przekazywany do <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody. Inne rodzaje analizy, następnie można użyć w drzewie analizy uzyskać odpowiednie informacje.  
   
  Na przykład analizy Przyczyna wartość <xref:Microsoft.VisualStudio.Package.ParseReason> można znaleźć identyfikatora w lokalizacji źródłowej i wyszukiwanie w drzewie analizy w celu uzyskania informacji o typie. Informacje o tym typie są następnie przekazywane do <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy i jest zwracany przez <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> metody.
-

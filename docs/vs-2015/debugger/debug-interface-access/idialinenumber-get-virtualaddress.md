@@ -1,14 +1,9 @@
 ---
 title: Idialinenumber::get_virtualaddress — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce30cc2808158744f8738e877a3fbc82a9c83d31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21bd5364c8fa6d91962dd82b4cbcf8b8c0db90e1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751897"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756352"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT get_virtualAddress ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
-
-
-

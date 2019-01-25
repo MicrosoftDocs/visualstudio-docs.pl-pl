@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868329"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874045"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Tworzenie definicji witryny dla SharePoint
   Projekt definicji witryny programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwia tworzenie *definicji witryny*, który służy jako podstawa nową witrynę programu SharePoint. Te definicje określić nie tylko wyglądu i zachowania witryny programu SharePoint, ale również jego domyślnej zawartości i funkcji. W definicji można umieścić wstępnie skonfigurowanej listy, typy zawartości, odbiorcy zdarzeń, obrazów i innych elementów. Program SharePoint zawiera niektóre definicje witryn, blogów, np. na przykład. Podczas tworzenia witryny, na podstawie definicji witryny blogów lokacja zawiera listy, składniki Web Part i inne elementy, które wymaga lokacji do obsługi blogów.  
@@ -36,9 +36,9 @@ ms.locfileid: "53868329"
   
 |Nazwa pliku|Opis|  
 |---------------|-----------------|  
-|*Default.aspx*|Domyślną stronę główną ASPX dla nowej witryny programu SharePoint.|  
-|*Onet.XML*|Określa konfigurację nowej lokacji, składniki szablonu definicji witryny i zachowanie domyślne. Te ustawienia można obejmować atrybuty takie jak typy zawartości, które są włączone, domyślne widoki listy plików szablonów dokumentów i składniki Web Part dołączone do lokacji. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|  
-|*webtemp_\<SiteDefinitionName > .xml*|Określa konfiguracje definicji witryny, które pojawia się w **wybór szablonu** części **nową witrynę programu SharePoint** strony.|  
+|*default.aspx*|Domyślną stronę główną ASPX dla nowej witryny programu SharePoint.|  
+|*onet.xml*|Określa konfigurację nowej lokacji, składniki szablonu definicji witryny i zachowanie domyślne. Te ustawienia można obejmować atrybuty takie jak typy zawartości, które są włączone, domyślne widoki listy plików szablonów dokumentów i składniki Web Part dołączone do lokacji. Domyślnie `Modules` sekcja zawiera listę plików, które mają zostać dodane do witryny programu SharePoint i sposobu ich konfiguracji.|  
+|*webtemp_\<SiteDefinitionName>.xml*|Określa konfiguracje definicji witryny, które pojawia się w **wybór szablonu** części **nową witrynę programu SharePoint** strony.|  
   
  Domyślnie wszystkie definicje lokacji są przechowywane w  *\<dysku: > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* folderu. Każda definicja lokacji ma swój własny podfolderu.  
   

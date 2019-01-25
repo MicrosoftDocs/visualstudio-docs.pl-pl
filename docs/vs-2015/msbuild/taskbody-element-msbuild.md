@@ -1,14 +1,9 @@
 ---
 title: Taskbody — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb6121a6fc2260ac988552433ee847b13abc32d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6b02616b54c0697f824d53eab978142679e8a358
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752396"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Zawiera dane, które są przekazywane do `UsingTask``TaskFactory`. Aby uzyskać 
   
  \<Project>  
  \<UsingTask>  
- \<Taskbody — >  
+ \<TaskBody>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -86,6 +81,3 @@ Zawiera dane, które są przekazywane do `UsingTask``TaskFactory`. Aby uzyskać 
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

@@ -1,28 +1,23 @@
 ---
 title: IntelliSense Hosting | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7e6ae688c0af3506f3d77cf2c1bac5291595b80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763667"
 ---
-# <a name="intellisense-hosting"></a>Funkcja IntelliSense hostingu
+# <a name="intellisense-hosting"></a>IntelliSense Hosting
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program Visual Studio umożliwia hostowanie funkcji IntelliSense. Umożliwia hostowanie IntellSense udostępni funkcję IntelliSense dla kodu, który nie jest obsługiwany przez Edytor tekstu Visual Studio.  
@@ -48,7 +43,7 @@ Program Visual Studio umożliwia hostowanie funkcji IntelliSense. Umożliwia hos
 |IHF_FORCECOMMITTOCONTEXT|Jeśli ta flaga jest ustawiona, muszą zostać zaktualizowane buforu kontekstu hosta umożliwia flagi tylko do odczytu dla buforu kontekstu, które mają być ignorowane i zmiany, aby kontynuować.|  
 |IHF_OVERTYPE|Edytowanie (podmiotu lub w kontekście) ma się odbywać w trybie zastępowania.|  
   
-#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit i IVsIntellisenseHost.AfterCompletorCommit  
+#### <a name="ivsintellisensehostbeforecompletorcommit-and-ivsintellisensehostaftercompletorcommit"></a>IVsIntellisenseHost.BeforeCompletorCommit and IVsIntellisenseHost.AfterCompletorCommit  
  Te metody wywołania zwrotnego są wywoływane przez okna ukończenia, przed i po zatwierdzone, aby umożliwić przetwarzanie końcowe i wstępnego przetwarzania tekstu.  
   
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
@@ -56,4 +51,3 @@ Program Visual Studio umożliwia hostowanie funkcji IntelliSense. Umożliwia hos
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TextManager.Interop>
-

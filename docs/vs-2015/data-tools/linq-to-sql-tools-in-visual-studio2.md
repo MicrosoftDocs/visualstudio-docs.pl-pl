@@ -1,23 +1,20 @@
 ---
 title: LINQ to SQL Tools | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7c8a9d35f0f435ccbe336f366346f1ccb89c6072
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: d7dcb33add9726a341c1b4b92c032be7c289c2d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53067471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758088"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

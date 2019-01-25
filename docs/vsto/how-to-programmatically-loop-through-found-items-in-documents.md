@@ -9,17 +9,17 @@ helpviewer_keywords:
 - loops, through found items in documents
 - documents [Office development in Visual Studio], searching
 - text [Office development in Visual Studio], searching in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a04cf49d1414ae1cedf2d157237e53883182eb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17c379f9c2f2ae1fbd7dac36b174bd0718cefeb2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961845"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872680"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwość, która zwraca **true** zawsze, gdy zostanie znaleziony przeszukiwane dla elementu. Można pętli za pośrednictwem wszystkich wystąpień w <xref:Microsoft.Office.Interop.Word.Range> przy użyciu <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody.  

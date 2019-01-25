@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832154"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864608"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1
   Projekty programu SharePoint są kontenerami dla jednego lub więcej elementów projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozszerzyć przez utworzenie własnych typów elementów projektu programu SharePoint i kojarzenie ich z szablonem projektu. W tym przewodniku określi typ elementu projektu programu do tworzenia kolumny witryny, a następnie zostanie utworzony szablon projektu, który może służyć do tworzenia nowego projektu, który zawiera elementu projektu kolumn witryny.
@@ -56,7 +56,7 @@ ms.locfileid: "53832154"
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Aby ukończyć ten Instruktaż, musisz utworzyć trzy projekty:
 
-- Projekt VSIX. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu kolumn witryny i szablon projektu.
+- A VSIX project. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu kolumn witryny i szablon projektu.
 
 - Projekt szablonu projektu. Ten projekt tworzy szablon projektu, który może służyć do tworzenia nowego projektu programu SharePoint, który zawiera elementu projektu kolumn witryny.
 
@@ -111,7 +111,7 @@ ms.locfileid: "53832154"
 
     -   *Settings.Designer.vb*
 
-    -   Plik Settings.Settings
+    -   Settings.settings
 
 #### <a name="to-create-the-extension-project"></a>Aby utworzyć projekt rozszerzenia
 
@@ -150,7 +150,7 @@ ms.locfileid: "53832154"
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
 
-## <a name="create-a-visual-studio-project-template"></a>Tworzenie szablonu projektu programu Visual Studio
+## <a name="create-a-visual-studio-project-template"></a>Create a Visual Studio project template
  Tworząc szablon projektu, możesz włączyć innym deweloperom tworzenie projektów programu SharePoint, które zawierają elementy projektu kolumn witryny. Szablon projektu programu SharePoint zawiera pliki, które są wymagane dla wszystkich projektów w programie Visual Studio, takie jak *.csproj* lub *.vbproj* i *.vstemplate* pliki i pliki są specyficzne dla projektów programu SharePoint. Aby uzyskać więcej informacji, zobacz [Tworzenie elementu szablonów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
  W tej procedurze należy utworzyć pusty projekt programu SharePoint, który ma generować pliki, które są specyficzne dla projektów programu SharePoint. Te pliki można następnie dodać do projektu SiteColumnProjectTemplate, dzięki czemu są one dołączone w szablonie, który jest generowany na podstawie tego projektu. Możesz także skonfigurować plik projektu SiteColumnProjectTemplate, aby określić, gdzie szablon projektu pojawia się w **nowy projekt** okno dialogowe.
@@ -179,17 +179,17 @@ ms.locfileid: "53832154"
 
 8. Powtórz kroki 5 – 8, aby dodać następujące pliki z podfolderów określonego w katalogu BaseSharePointProject:
 
-   - *\Field1\Elements.XML*
+   - *\Field1\Elements.xml*
 
    - *\Field1\SharePointProjectItem.spdata*
 
    - *\Features\Feature1\Feature1.Feature*
 
-   - *\Features\Feature1\Feature1.template.XML*
+   - *\Features\Feature1\Feature1.Template.xml*
 
-   - *\Package\Package.Package*
+   - *\Package\Package.package*
 
-   - *\Package\Package.template.XML*
+   - *\Package\Package.Template.xml*
 
      Dodaj te pliki bezpośrednio do projektu SiteColumnProjectTemplate; Nie, ponownie utwórz podfoldery pole1, funkcji lub pakietów w projekcie. Aby uzyskać więcej informacji o tych plikach, zobacz [Tworzenie elementu szablonów i szablonów projektu dla elementów projektu programu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
 
@@ -224,13 +224,13 @@ ms.locfileid: "53832154"
 
 - *AssemblyInfo.cs* lub *AssemblyInfo.vb*
 
-- *Elements.XML*
+- *Elements.xml*
 
 - *SharePointProjectItem.spdata*
 
 - *Feature1.Feature*
 
-- *Package.Package*
+- *Package.package*
 
 - *SiteColumnProjectTemplate.vstemplate*
 

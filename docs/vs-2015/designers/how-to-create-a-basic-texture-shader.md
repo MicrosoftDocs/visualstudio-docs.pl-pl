@@ -1,27 +1,22 @@
 ---
-title: 'Porady: tworzenie cieniowania tekstury podstawowej | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie cieniowania tekstury podstawowej | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898541"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793437"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Porady: tworzenie cieniowania tekstury podstawowej
+# <a name="how-to-create-a-basic-texture-shader"></a>Instrukcje: Tworzenie cieniowania tekstury podstawowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania tekstury jednego języka programu do cieniowania wykres kierowany (DGSL) i Projektant programu do cieniowania. Ten program do cieniowania Ustawia kolor końcowy bezpośrednio RGB i wartości alfa, które są próbkowane z tekstury.  
@@ -71,10 +66,7 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania tekstury
  Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat programów do cieniowania w projektancie programu do cieniowania w wersji zapoznawczej, zobacz [Shader Designer](../designers/shader-designer.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Edytor obrazów](../designers/image-editor.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Porady: zbieranie danych licznika Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zbieranie danych licznika Windows | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -20,15 +15,15 @@ ms.assetid: db4fbac2-bea5-4558-aa8b-160fcccf4b33
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 030a36f2f09465b29faf23b1fc05ad13f4a01326
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753419"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Porady: zbieranie danych liczników systemu Windows
+# <a name="how-to-collect-windows-counter-data"></a>Instrukcje: Zbieranie danych liczników systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane podczas profilowania w ustalonych odstępach czasu. W widoku znaczniki raportu narzędzi profilowania z wiersza jest oznaczona etykietą **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisują wartości licznika wydajności, w tym odstępach czasu. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, zaznacz znaki, kliknij prawym przyciskiem myszy, a następnie wybierz **Filtruj wg** ->  **znaczniki** z menu skrótów.  
@@ -62,6 +57,3 @@ Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane po
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)   
  [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)
-
-
-

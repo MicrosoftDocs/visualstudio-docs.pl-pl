@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875826"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
   Można określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości dla każdego elementu. Na przykład, jeśli chcesz dołączyć regionu formularza do dolnej części elementu poczty, można skojarzyć regionu formularza z `IPM.Note` klasą wiadomości.  
@@ -64,7 +64,7 @@ ms.locfileid: "53923351"
   
  Nazwy, które podczas pisania muszą przestrzegać następujących wytycznych:  
   
-- Użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM. Note.Contoso").  
+- Użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM.Note.Contoso").  
   
 - Użyj średników do oddzielenia nazwy klas wiadomości.  
   
@@ -91,7 +91,7 @@ ms.locfileid: "53923351"
   
  Atrybuty muszą być zgodne z następującymi wytycznymi:  
   
-- Dla niestandardowych klasach wiadomości, użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM. Note.Contoso").  
+- Dla niestandardowych klasach wiadomości, użyj wiadomości w pełni kwalifikowaną nazwę klasy (na przykład: "IPM.Note.Contoso").  
   
 - Nie określono klasy bazowej wiadomości samodzielnie (na przykład: "IPM").  
   

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio]
 - publishing, Office solutions
 - Property Pages dialog box, Publish [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63094c3bdf8bd2787f11dd6fd6818ea265d781f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966002"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869674"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Strona publikowania, Projektant projektu (Office development w programie Visual Studio)
   **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrożenia.

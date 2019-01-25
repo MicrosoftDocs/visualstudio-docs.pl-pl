@@ -1,25 +1,22 @@
 ---
-title: 'Porady: Tworzenie biblioteki działań | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie biblioteki działań | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341e87459cbaae204baba66108a5944eb1f7f97f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 41941893162f6463595652d39547e585176a539f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776198"
 ---
-# <a name="how-to-create-an-activity-library"></a>Porady: Tworzenie biblioteki działań
+# <a name="how-to-create-an-activity-library"></a>Instrukcje: Tworzenie biblioteki działań
 Działania niestandardowe są używane do modelowania procesów biznesowych w szczególności w przepływie pracy. Szablon Biblioteka działań w [!INCLUDE[vs2010](../includes/vs2010-md.md)] została przekazana do utworzenia takiego działania niestandardowe, które wizualnie za pomocą [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
 ### <a name="to-create-a-workflow-activity-library"></a>Aby utworzyć biblioteki działania przepływu pracy  
@@ -51,5 +48,5 @@ Działania niestandardowe są używane do modelowania procesów biznesowych w sz
     >  Tylko jeden element podrzędny działania są dozwolone w treści działanie niestandardowe; jednak działania podrzędne może być złożone działania, takie jak <xref:System.Activities.Statements.Sequence> działania lub <xref:System.Activities.Statements.Flowchart> działania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: tworzenie działania](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Instrukcje: Utwórz działanie](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Tworzenie projektu przepływu pracy](../workflow-designer/creating-a-workflow-project.md)

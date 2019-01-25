@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Obsługa wczesnego testowania przy użyciu użycia funkcji generowania na podstawie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Wcześniejsze testowanie obsługi przy użyciu użycia funkcji generowania na podstawie | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -16,15 +11,15 @@ ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2308be73eb7b483168544dc706a9b682af7eca35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755141"
 ---
-# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Wskazówki: wcześniejsze testowanie obsługi przy użyciu funkcji generowania na podstawie sposobu użycia
+# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Przewodnik: Wcześniejsze testowanie obsługi przy użyciu użycia funkcji generowania na podstawie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../misc/generate-from-usage.md) funkcji, która obsługuje rozwoju pierwszego badania.  
@@ -196,6 +191,3 @@ Wyniki testów - Okno
  [Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Za pomocą funkcji IntelliSense](../ide/using-intellisense.md)   
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)
-
-
-

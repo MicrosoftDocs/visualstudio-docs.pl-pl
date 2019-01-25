@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 867eb1fd64a7318d460a387ededd39e4f188d445
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835477"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868108"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Instrukcje: Dostosowywanie funkcji SharePoint
   Można tworzyć i dostosowywać funkcje programu SharePoint przy użyciu narzędzia Projektant funkcji w programie Visual Studio. Na przykład można ustawić zakres funkcji i dodać inne funkcje jako zależności. Domyślnie Projektant funkcji jest otwierany podczas dodawania nowej funkcji w Eksploratorze rozwiązań lub w Eksploratorze pakietu programu SharePoint.  

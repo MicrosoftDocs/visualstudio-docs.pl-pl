@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text searches, documents
 - text [Office development in Visual Studio], searching in documents
 - text [Office development in Visual Studio], text searches
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677a7484a6c0356635dd2d6f8353e8b27c38a562
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823678"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864036"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Instrukcje: Programowe wyszukiwanie i zastępowanie tekstu w dokumentach
   <xref:Microsoft.Office.Interop.Word.Find> Obiektu jest elementem członkowskim obu <xref:Microsoft.Office.Interop.Word.Selection> i <xref:Microsoft.Office.Interop.Word.Range> obiektów i możesz użyć dowolnego z nich do wyszukiwania tekstu w dokumentach programu Microsoft Office Word. Polecenie replace jest rozszerzeniem polecenie find.  

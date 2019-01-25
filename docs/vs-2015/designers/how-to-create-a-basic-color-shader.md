@@ -1,27 +1,22 @@
 ---
-title: 'Porady: tworzenie cieniowania koloru podstawowego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie cieniowania koloru podstawowego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774117"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Porady: tworzenie cieniowania koloru podstawowego
+# <a name="how-to-create-a-basic-color-shader"></a>Instrukcje: Tworzenie cieniowania koloru podstawowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania wykres kierowany (DGSL) i Projektant programu do cieniowania do tworzenie cieniowania koloru. Ten program do cieniowania Ustawia kolor końcowy stałej wartości kolorów RGB.  
@@ -63,10 +58,7 @@ W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania w
  Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych programów do cieniowania. Aby uzyskać więcej informacji na temat programów do cieniowania w projektancie programu do cieniowania w wersji zapoznawczej, zobacz [Shader Designer](../designers/shader-designer.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

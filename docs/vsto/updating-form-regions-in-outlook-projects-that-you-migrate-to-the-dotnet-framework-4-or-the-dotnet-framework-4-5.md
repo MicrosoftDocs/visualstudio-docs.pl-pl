@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61cab3cfb81ef1d4ccecfce5194334042a8c2268
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842807"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870288"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie regionów formularzy w projektach programu Outlook, są migrowane do programu .NET Framework 4 lub .NET Framework 4.5
   Zmiana platformy docelowej projektu dodatku narzędzi VSTO dla programu Outlook z regionu formularza na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później, należy wprowadzić pewne zmiany do kodu regionu generowanym formularzu i wszelki kod, który tworzy wystąpienie niektórych klas regionu formularza w czasie wykonywania.  

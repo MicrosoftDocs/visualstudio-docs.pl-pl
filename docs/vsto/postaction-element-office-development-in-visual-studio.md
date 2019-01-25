@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <postAction> element
 - <postAction> element
 - postAction element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1886a1c0be486cfae8e85d0accd0fb42dc5d5353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53cf47ef9a78ebb54c377e19b4f7fbad444bbfcd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958803"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867119"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; — element (Office development w programie Visual Studio)
   `postAction` Elementu `vstav3` przestrzeń nazw zawiera `entrypoint` elementy i wszystkie `postActionData` elementy, które są skojarzone z akcji po wdrożeniu, uruchamianych po zainstalowaniu rozwiązania dla pakietu Office.
@@ -42,10 +42,10 @@ ms.locfileid: "53958803"
 
  `postAction` zawiera następujące elementy.
 
-### <a name="entrypoint"></a>Punkt wejścia
+### <a name="entrypoint"></a>entryPoint
  Opcjonalna. Rola `entryPoint` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;punkty wejścia&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="postactiondata"></a>postactiondata —
+### <a name="postactiondata"></a>postActionData
  Opcjonalna. Rola `postActionData` element `vstav3` przestrzeń nazw została zdefiniowana w [ &#60;postactiondata —&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Przykład akcję powdrożeniową

@@ -1,4 +1,19 @@
 ---
+title: Sklonuj repozytorium
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1a5c3fd3e4960381edc390ba473c53b9e4b62d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771446"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 

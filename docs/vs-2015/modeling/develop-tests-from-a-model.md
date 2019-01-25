@@ -1,25 +1,22 @@
 ---
 title: Opracowywanie testów na podstawie modelu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799283"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
  Można tworzyć i utrzymania relacji między testy systemu i modelu wymagań. Aby ustalić tę relację, piszesz testy, które odpowiadają głównych elementów modelu wymagań. Program Visual Studio pomaga zachować tej relacji przez umożliwienie tworzenia łącza między testy i części modelu. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
 ### <a name="write-tests-for-each-use-case"></a>Pisanie testów dla każdego przypadku użycia  
- Jeśli używasz [!INCLUDE[TCMext](../includes/tcmext-md.md)], można utworzyć grupę testów dla każdego przypadku użycia, zdefiniowanego w modelu wymagań. Na przykład jeśli przypadek użycia zamówienie posiłku, który zawiera, Utwórz zamówienie i Dodaj element do zamówienia, można utworzyć testy dla obu ogólnych i bardziej szczegółowe te przypadki użycia. Aby uzyskać więcej informacji dotyczących przypadków użycia, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+ Jeśli używasz [!INCLUDE[TCMext](../includes/tcmext-md.md)], można utworzyć grupę testów dla każdego przypadku użycia, zdefiniowanego w modelu wymagań. Na przykład jeśli przypadek użycia zamówienie posiłku, który zawiera, Utwórz zamówienie i Dodaj element do zamówienia, można utworzyć testy dla obu ogólnych i bardziej szczegółowe te przypadki użycia. Aby uzyskać więcej informacji dotyczących przypadków użycia, zobacz [diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
  Te wytyczne mogą być pomocne:  
   
@@ -59,7 +56,7 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
     -   Jeśli plan rozwoju implementuje jednym aspekcie przypadek użycia przed inny, możesz włączyć testy oddzielnie, w miarę postępów rozwoju.  
   
--   Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.  
+-   Podczas projektowania testy, należy oddzielić wybór danych testowych, od kodu lub skryptu, który określa, czy osiągnięte zostały postcondition. Na przykład może być testu z prostą funkcją arytmetyczne: Dane wejściowe 4; Sprawdź, czy dane wyjściowe to 2. Zamiast tego należy projektować skryptu jako: Wybierz dane wejściowe mnożenia danych wyjściowych przez siebie i sprawdź, czy wynik jest oryginalne dane wejściowe. Ten styl umożliwia różne dane wejściowe testu bez wprowadzania zmian w głównej części testu.  
   
 #### <a name="linking-tests-to-use-cases"></a>Łączenie testy z przypadkami użycia  
  Jeśli używasz [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] do projektowania i uruchomić testy, możesz organizować testy w ramach wymaganie, przypadek użycia lub elementów roboczych historii użytkownika. Można połączyć te elementy robocze z przypadkami użycia w modelu. Dzięki temu można szybko śledzenia zmiany do testów i przypadek użycia pomaga śledzić postęp każdego z nich.  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  Regułę niezmiennej, tego rodzaju decyduje, nie tylko wszystkie przypadki użycia, które są obecnie zdefiniowane, ale również wszelkich innych przypadków użycia, które będą zdefiniowane później. Dlatego jest przydatne do zapisu w oddzielnie od wszelkich przypadków użycia i przetestować go oddzielnie z przypadkami użycia.  
   
- Reguła biznesowa niezmiennej można napisać jako komentarz na diagramie klasy. Aby uzyskać więcej informacji, zobacz [UML Class Diagrams: wskazówki dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
+ Reguła biznesowa niezmiennej można napisać jako komentarz na diagramie klasy. Aby uzyskać więcej informacji, zobacz [diagramów klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md).  
   
  Testy można połączyć reguły biznesowej, łącząc komentarz do wymagań lub użytkownika historii elementu roboczego, którą można połączyć do zestawu testów w [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]. Aby uzyskać więcej informacji, zobacz [dołączanie przypadków testowych z elementami modelu](#Attaching).  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  Spróbuj sprawdzić stan systemu po każdej wiadomości lub akcji. Może to wymagać dodatkowych instrumentacji.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>Wyprowadzanie podsystemu testów z modeli  
- W projektowania wysokiego poziomu w dużym systemie można zidentyfikować, składniki i podsystemy. Reprezentują one części, które mogą być oddzielnie projektowane, znajdują się na różnych komputerach lub to moduły wielokrotnego użytku, które mogą być odtwarzane na wiele sposobów. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+ W projektowania wysokiego poziomu w dużym systemie można zidentyfikować, składniki i podsystemy. Reprezentują one części, które mogą być oddzielnie projektowane, znajdują się na różnych komputerach lub to moduły wielokrotnego użytku, które mogą być odtwarzane na wiele sposobów. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: Wytyczne dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
  Można zastosować do poszczególnych głównych składników te same zasady używania dla całego systemu. W dużym projekcie każdy składnik może mieć własny model wymagania. W projektach mniejszych aby pokazać główne składniki i ich interakcje można utworzyć architektury model lub projektowania wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)   
  [Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)   
  [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
-
-
-

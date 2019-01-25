@@ -1,12 +1,9 @@
 ---
-title: 'Porady: Modyfikowanie standardowego polecenia Menu w języku specyficznego dla domeny | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Modyfikowanie standardowego polecenia Menu w języku specyficznego dla domeny | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837571"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776039"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Instrukcje: Modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można zmodyfikować zachowanie niektóre standardowe polecenia, które są automatycznie definiowane w DSL. Na przykład, można zmodyfikować **Wytnij** tak, aby nie obejmuje on poufne informacje. Aby to zrobić, można zastąpić metody w klasie zestawu poleceń. Te klasy są zdefiniowane w pliku CommandSet.cs w projekcie DslPackage i są uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -38,7 +35,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
    W tym temacie opisano tę procedurę.  
   
 > [!NOTE]
->  Jeśli chcesz utworzyć własne polecenia menu, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+>  Jeśli chcesz utworzyć własne polecenia menu, zobacz [jak: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ##  <a name="what"></a> Jakie polecenia mogą zmodyfikować?  
   
@@ -83,7 +80,7 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
      **Uwaga** Jeżeli szablon pliku klasy został użyty do utworzenia nowego pliku, należy usunąć przestrzeni nazw i nazwę klasy.  
   
 ##  <a name="override"></a> Przesłaniaj metody polecenia  
- Większość poleceń ma dwie metody skojarzone: metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.  
+ Większość poleceń mają dwie metody skojarzone: Metody o nazwie, takich jak `ProcessOnStatus`... określa, czy polecenie powinno być widoczne i włączone. Jest wywoływane, gdy użytkownik kliknie prawym przyciskiem myszy diagram i powinna wykonać szybkie i nie wprowadzaj żadnych zmian. `ProcessOnMenu`... jest wywoływana, gdy użytkownik kliknie polecenie i należy wykonać funkcję polecenia. Można zastąpić jedną lub obie te metody.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Aby zmienić, gdy polecenie jest wyświetlane w menu  
  Zastąp ProcessOnStatus... metody. Ta metoda powinna być ustawiona widoczne i włączone właściwości tego parametru MenuCommand. Zazwyczaj polecenia wygląda na to. CurrentSelection, aby określić, czy polecenie ma zastosowanie do wybranych elementów i mogą również przeglądać ich właściwości, aby określić, czy polecenia mogą być stosowane w jego bieżącym stanie.  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [Pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Wskazówki: Uzyskiwanie informacji z wybranego łącza](../misc/walkthrough-getting-information-from-a-selected-link.md)   
+ [Instrukcje: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Przewodnik: Uzyskiwanie informacji z wybranego łącza](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Tabeli poleceń programu Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Odwołanie do schematu VSCT XML](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK — przykładowe wykresy obwodu. Dostosowywanie rozbudowane DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Przykładowy kod: diagramy obwodu](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Przykładowy kod: Diagramy obwodu](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

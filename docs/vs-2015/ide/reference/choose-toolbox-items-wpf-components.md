@@ -1,14 +1,9 @@
 ---
 title: Wybierz elementy paska narzędzi, składniki WPF | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 6ce1d178-88c0-4295-8915-59fdeedabb11
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3c04a5f4be811c7cb1cae525ef0a16b437dd88b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887140"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835029"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
 - Gdy zaznaczone jest pole wyboru obok składnika, ikona tych składników, będą wyświetlane w **przybornika**.  
   
   > [!TIP]
-  >  Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie okno przybornika](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [porady: manipulowanie karty przybornika](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  >  Aby dodać wystąpienie kontrolki WPF do projektu dokument otwarty do edycji, przeciągnij jego **przybornika** ikony na powierzchnię projektową widoku. Domyślne znaczników i kodu dla składnika są wstawiane do projektu, możesz zmodyfikować. Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie oknem przybornika](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) i [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Po wyczyszczeniu pola wyboru obok składnika odpowiednią ikonę zostaną usunięte z **przybornika.**  
   
@@ -48,7 +43,7 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
   Wyświetla listę nazw kontrolek WPF, dla których wpisy znajdują się w rejestrze na komputerze.  
   
   Przestrzeń nazw  
-  Wyświetla hierarchię [NIB: Biblioteka klas programu .NET Framework](http://msdn.microsoft.com/en-us/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składników w każdej przestrzeni nazw z .NET Framework zainstalowana na danym komputerze.  
+  Wyświetla hierarchię [NIB: Biblioteka klas programu .NET Framework](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) przestrzeni nazw, który definiuje strukturę składnika. Sortuj w tej kolumnie, aby wyświetlić listę dostępnych składników w każdej przestrzeni nazw z .NET Framework zainstalowana na danym komputerze.  
   
   Nazwa zestawu  
   Wyświetla nazwę zestawu .NET Framework, który zawiera przestrzeń nazw dla każdego składnika. Sortuj od tej kolumny, aby wyświetlić listę przestrzeni nazw zawartych w każdym zestawie .NET Framework zainstalowana na danym komputerze.  
@@ -78,13 +73,10 @@ Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę forma
   
   Ponadto, jeśli metadanych w czasie projektowania jest stosowany do formantu niestandardowego i metadane Określa, że <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> ustawiono `false`, formant nie jest wyświetlana w przyborniku.  
   
-  Możesz odwoływać się kontrolkom bezpośrednio w widoku XAML przez mapowanie przestrzeni nazw i zestawu dla formantu. Aby uzyskać więcej informacji, zobacz [porady: importowanie Namespace XAML](http://msdn.microsoft.com/en-us/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  Możesz odwoływać się kontrolkom bezpośrednio w widoku XAML przez mapowanie przestrzeni nazw i zestawu dla formantu. Aby uzyskać więcej informacji, zobacz [jak: Importowanie Namespace XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wybierz elementy przybornika, okno dialogowe (Visual Studio)](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [Wybierz elementy przybornika, okno dialogowe (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Przybornik](../../ide/reference/toolbox.md)   
- [Porady: Korzystanie z kontroli WPF innych firm w aplikacji WPF](http://msdn.microsoft.com/en-us/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [Projektant WPF](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)
-
-
-
+ [Instrukcje: Użyj kontrolki WPF innych firm w aplikacji WPF](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [Projektant WPF](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

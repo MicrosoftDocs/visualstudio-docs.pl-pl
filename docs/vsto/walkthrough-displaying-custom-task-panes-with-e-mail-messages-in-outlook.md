@@ -11,17 +11,17 @@ helpviewer_keywords:
 - displaying custom task panes in e-mail
 - e-mail [Office development in Visual Studio], custom task panes displayed in
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b9a9e3d5fba8b9aeea2124f79522642d4320783
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926589"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867783"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu przedstawiono sposób wyświetlania unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który został utworzony lub otwarty. Użytkowników można wyświetlić lub ukryć niestandardowego okienka zadań, za pomocą przycisku na Wstążce każdej wiadomości e-mail.  
@@ -102,7 +102,7 @@ ms.locfileid: "53926589"
   
 6.  Z **formanty wstążki Office** karcie **przybornika**, przeciągnij formant ToggleButton na **Menedżera okienka zadań** grupy.  
   
-7.  Kliknij przycisk **toggleButton1**.  
+7.  Click **toggleButton1**.  
   
 8.  W **właściwości** oknie **etykiety** właściwości **Pokaż okienko zadań**.  
   

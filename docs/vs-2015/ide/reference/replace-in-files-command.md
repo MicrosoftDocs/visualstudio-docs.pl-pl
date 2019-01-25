@@ -1,14 +1,9 @@
 ---
 title: Zastąp w plikach — polecenie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eba6dfcf95c006fb05d4faaa0c370c9dba56e4e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 919e3ed3f372a2f6614553974f5f47cfba24e3ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798535"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,10 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>Argumenty  
  `findwhat`  
- Wymagane. Tekst do dopasowania.  
+ Wymagana. Tekst do dopasowania.  
   
  `replacewith`  
- Wymagane. Tekst do podstawienia w dopasowany tekst.  
+ Wymagana. Tekst do podstawienia w dopasowany tekst.  
   
 ## <a name="switches"></a>Przełączniki  
  / all lub /a  
@@ -73,7 +68,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  / Reset i/e  
  Opcjonalna. Zwraca opcje wyszukiwania do ustawień domyślnych, a nie wyszukiwania.  
   
- / stop  
+ /stop  
  Opcjonalna. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zastąp ignoruje wszystkie inne argumenty po `/stop` została określona. Na przykład aby zatrzymać zastąpienie bieżącego wprowadziłbyś następujące czynności:  
   
 ```  
@@ -104,8 +99,5 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  [Zastąp w plikach](../../ide/replace-in-files.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
  [Znajdź/Command — pole](../../ide/find-command-box.md)   
- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

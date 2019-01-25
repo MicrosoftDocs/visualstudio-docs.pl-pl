@@ -2,7 +2,7 @@
 title: Przygotowywanie do opublikowania lub wdrożyć usługę w chmurze
 description: Dowiedz się procedury konfigurowania chmura i magazyn usługi kont i konfigurowanie aplikacji systemu Azure.
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 4b0ac752e65530d98b680d7e2e4a9095639423e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792661"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Przygotowywanie do publikowania lub wdrażania usługi w chmurze z programu Visual Studio
 

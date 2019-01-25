@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Excel
 - Excel [Office development in Visual Studio], walkthroughs
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf70d0c87a089292caf07f39f54b52f5cfaa13aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d6d3aceb52b788d1a3f7bfc2828ac2550e6161a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823040"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869557"
 ---
 # <a name="walkthroughs-using-excel"></a>Wskazówki dotyczące za pomocą programu Excel
   Poniższe instruktaże przedstawiają sposoby używania dostosowań na poziomie dokumentu i dodatków narzędzi VSTO dla programów Automatyzacja programu Microsoft Office Excel i ich dostosowywania interfejsu użytkownika (UI).  

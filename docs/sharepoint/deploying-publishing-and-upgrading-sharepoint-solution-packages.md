@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bef002d1d32abf4f97a63f284545cbaa6eee403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebe207bffe16ef7b8dc7af5a79c01b3ee74abe3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853460"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863282"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint
   Po opracowywania rozwiązania programu SharePoint w programie Visual Studio, możesz wdrożyć jego pliku pakietu (wsp) na lokalnym serwerze programu SharePoint lub opublikować ją w lokalnym lub zdalnym serwerem programu SharePoint. Jeśli pliki są wdrożone, można dostosować, jak wdrożonych plików pakietu (wsp).  

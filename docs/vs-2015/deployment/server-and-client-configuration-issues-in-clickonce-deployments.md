@@ -1,14 +1,9 @@
 ---
 title: Serwer i problemy z konfiguracją klienta we wdrożeniach ClickOnce | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776385"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +40,9 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
 - Manifest  
   
-- .Deploy  
+- .deploy  
   
-  Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
+  Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
   
   Trzeba będzie skonfigurować manifest, .application i .deploy, na przykład korzystania z usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], lub jeśli używasz innego serwera sieci Web (np. Apache).  
   
@@ -104,20 +99,20 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
 |Typ adresu URL|Opis|  
 |--------------|-----------------|  
-|FTP: / /|Możesz opublikować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
+|ftp://|Możesz opublikować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
 |http://|Możesz zainstalować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
 |https://|Możesz zainstalować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
-|File://|Możesz zainstalować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
+|file://|Możesz zainstalować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji przy użyciu tego protokołu.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP z dodatkiem SP2: Zapora Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP z dodatkiem SP2: Zapora systemu Windows  
  Domyślnie Windows XP z dodatkiem SP2, powoduje włączenie zapory Windows. Jeśli tworzysz aplikację na komputerze, na którym zainstalowano Windows XP zainstalowane jesteś nadal można opublikować, a następnie uruchom [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji z lokalnego serwera, na którym działa program IIS. Jednak nie można uzyskać dostęp do tego serwera, na którym działa program IIS z innego komputera, chyba że Otwórz zaporę Windows. Aby uzyskać instrukcje dotyczące zarządzania zaporą Windows, zapoznaj się z pomocą Windows.  
   
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Włącz rozszerzenia serwera FrontPage  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Włączanie rozszerzenia serwera FrontPage  
  Rozszerzenia serwera FrontPage firmy Microsoft jest wymagana do publikowania aplikacji na serwerze sieci Windows Web, która korzysta z protokołu HTTP.  
   
  Domyślnie system Windows Server nie ma zainstalowanych rozszerzeń serwera FrontPage. Jeśli chcesz używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do publikowania na serwerze sieci Web usługi Windows Server, który korzysta z protokołu HTTP przy użyciu rozszerzenia serwera FrontPage, należy zainstalować rozszerzenia serwera FrontPage najpierw. Instalację można wykonać za pomocą narzędzia administracyjnego Zarządzanie serwerem w systemie Windows Server.  
   
-## <a name="windows-server-locked-down-content-types"></a>Systemu Windows Server: Typy zawartości w trybie blokady  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Typy zawartości w trybie blokady  
  Usługi IIS na [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] zablokuje wszystkich typów plików, z wyjątkiem niektórych znanych typów zawartości (na przykład htm, HTML, txt i tak dalej). Aby włączyć wdrażanie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji za pomocą tego serwera, musisz zmienić ustawienia programu IIS, aby zezwolić na pobieranie plików typu .application, manifest i wszelkie inne niestandardowe typy plików używanych przez aplikację.  
   
  W przypadku wdrożenia przy użyciu serwera usług IIS, uruchom inetmgr.exe, a następnie dodaj nowe typy plików dla domyślnej strony sieci Web:  
@@ -144,6 +139,3 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
  [Rozwiązywanie problemów z wdrożeniami ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Wstępnie wymagane składniki wdrażania aplikacji](../deployment/application-deployment-prerequisites.md)
-
-
-

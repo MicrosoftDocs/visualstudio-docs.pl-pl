@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879137"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865892"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Tworzenie składników web Part programu SharePoint
   Za pomocą składników web Part, można zmodyfikować zawartość, wygląd i zachowanie stron witryny programu SharePoint za pomocą przeglądarki. Części sieci Web to formanty po stronie serwera, które są uruchamiane wewnątrz strona składników web part: są blokami konstrukcyjnymi stron, które pojawiają się w witrynie programu SharePoint. Zobacz [bloków konstrukcyjnych: Składniki Web Part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -45,7 +45,7 @@ ms.locfileid: "53879137"
   
 |Plik|Opis|  
 |----------|-----------------|  
-|*Elements.XML*|Zawiera informacje, których używa plik definicji funkcji w projekcie, aby wdrożyć składnik web part.|  
+|*Elements.xml*|Zawiera informacje, których używa plik definicji funkcji w projekcie, aby wdrożyć składnik web part.|  
 |plik .webpart|Udostępnia informacje wymagające wyświetlił składnik web part w galerii składników web part programu SharePoint.|  
 |Plik kodu|Zawiera metody, które dodają formanty do składnika web part i które generują niestandardową zawartość wewnątrz składnika web part.|  
   
@@ -66,7 +66,7 @@ ms.locfileid: "53879137"
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Zwraca właściwość określonej listy.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Zwraca właściwość globalną bieżącej witryny sieci Web.|  
 |[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Wstaw łącze czytnika kanałów RSS do *.aspx* strony.|  
-|[Łącza](http://go.microsoft.com/fwlink/?LinkId=235313)|Udostępnia właściwości i metody rejestracji zasobów, takich jak skrypty na stronie, dzięki czemu można ich żądać Po wyrenderowaniu strony.|  
+|[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Udostępnia właściwości i metody rejestracji zasobów, takich jak skrypty na stronie, dzięki czemu można ich żądać Po wyrenderowaniu strony.|  
 |[Motyw](http://go.microsoft.com/fwlink/?LinkId=235314)|Stosuje motyw do *.aspx* strony.|  
   
 ## <a name="debug-a-web-part"></a>Debugowanie składnika web part

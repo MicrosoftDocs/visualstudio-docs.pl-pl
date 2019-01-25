@@ -1,13 +1,9 @@
 ---
 title: Kompilowanie i tworzenie
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
@@ -15,13 +11,13 @@ ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779452"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilowanie i tworzenie w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ Można używać programu Visual Studio do kompilacji aplikacji i do tworzenia ze
 |Użycie Team Foundation Build|— Można zautomatyzować proces kompilacji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Można również kompilować projekty na udostępnionych serwerach kompilacji, a nie na komputerze dewelopera.<br />— Można szybko określić kod, który ma być skompilowany, testy, które chcesz uruchomić, oraz inne typowe opcje.<br />— Można modyfikować przepływ kompilacji, a w razie potrzeby, tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|[Kompiluj aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Kompilacja z IDE
- Podczas tworzenia projektu domyślne konfiguracje kompilacji zostają dla niego zdefiniowane, a konfiguracja kompilacji rozwiązania zostaje do niego przypisana, aby dostarczyć kontekst dla kompilacji. Konfiguracje rozwiązania definiują, jak projekty w rozwiązaniu mają być kompilowane i wdrażane. Konfiguracje projektu są zestawem właściwości projektu, które są unikatowe dla platformy i typu kompilacji (na przykład wydanie Win32). Można edytować domyślne konfiguracje oraz można tworzyć własne konfiguracje. Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) i [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Podczas tworzenia projektu domyślne konfiguracje kompilacji zostają dla niego zdefiniowane, a konfiguracja kompilacji rozwiązania zostaje do niego przypisana, aby dostarczyć kontekst dla kompilacji. Konfiguracje rozwiązania definiują, jak projekty w rozwiązaniu mają być kompilowane i wdrażane. Konfiguracje projektu są zestawem właściwości projektu, które są unikatowe dla platformy i typu kompilacji (na przykład wydanie Win32). Można edytować domyślne konfiguracje oraz można tworzyć własne konfiguracje. Aby uzyskać więcej informacji, zobacz [wprowadzenie do projektanta projektu](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) i [NIB jak: Modyfikowanie właściwości projektu i ustawień konfiguracji](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Spoza IDE można wykonywać następujące zadania dodatkowe:
 

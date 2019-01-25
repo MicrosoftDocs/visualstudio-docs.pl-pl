@@ -1,14 +1,9 @@
 ---
 title: Porady dotyczące wyszukiwania pełnotekstowego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791711"
 ---
 # <a name="full-text-search-tips"></a>Wskazówki dotyczące wyszukiwania pełnotekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Jednym z bardziej użyteczne metody lokalizowania informacji w pomocy jest, wyko
 >    2.  Użyj operatorów logicznych, aby określić relację między wyrazami w swojej frazy wyszukiwania. Możesz uwzględnić operatorów logicznych, takich jak AND, OR, NOT i w pobliżu, aby jeszcze bardziej Uściślij kryteria wyszukiwania. Na przykład jeśli wyszukasz "deklarowanie Unii w pobliżu" wyniki wyszukiwania zawierają tematy zawierające słowa "deklarowanie" i "union" ma więcej niż kilka słów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtry  
- Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć wyniki wyszukiwania. Pomoc zawiera trzy kategorie, które można użyć do filtrowania wyników wyszukiwania pełnotekstowego: tytuł, kodu i słowo kluczowe. Aby uzyskać więcej informacji, zobacz [operatora wyszukiwania zaawansowanego w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md).  
+ Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć wyniki wyszukiwania. Pomoc zawiera trzy kategorie, które można użyć do filtrowania wyników wyszukiwania pełnotekstowego: Tytuł, kodu i słowo kluczowe. Aby uzyskać więcej informacji, zobacz [operatora wyszukiwania zaawansowanego w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md).  
   
 ### <a name="ranking-of-search-results"></a>Klasyfikacja wyników wyszukiwania  
  Algorytm wyszukiwania mają zastosowanie określone kryteria w celu ranga wyniki, wyższe lub niższe wyszukiwania na liście wyników. Ogólnie rzecz biorąc:  
@@ -68,6 +63,3 @@ Jednym z bardziej użyteczne metody lokalizowania informacji w pomocy jest, wyko
 ## <a name="see-also"></a>Zobacz też  
  [Lokalizowanie informacji](../ide/locate-information.md)   
  [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md)
-
-
-

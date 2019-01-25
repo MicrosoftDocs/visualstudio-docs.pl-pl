@@ -1,12 +1,9 @@
 ---
 title: Właściwości elementów w diagramach aktywności UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.shapes.properties
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5a3233d073a4b54c7c52b4b725f0d15833f5a51f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760643"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Właściwości elementów w diagramach aktywności UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +27,14 @@ ms.locfileid: "51803061"
 Na diagramie aktywności UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
 > [!NOTE]
->  Ten temat dotyczy właściwości elementów w diagramach aktywności UML. Aby uzyskać informacje o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
+>  Ten temat dotyczy właściwości elementów w diagramach aktywności UML. Aby uzyskać informacje o tym, jak odczytać diagramy aktywności UML, zobacz [diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy aktywności UML, zobacz [diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Właściwości elementów  
   
 |         Właściwość         |        Domyślny         |                               Element                               |                                                                                                                                                                Opis                                                                                                                                                                 |
 |--------------------------|------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         **Nazwa**         |     Domyślna nazwa     |                                 Wszystkie                                 |                                                                                                                                                          Identyfikuje element.                                                                                                                                                           |
-|    **Kwalifikowana nazwa**    |    Pakiet:: nazwy     |                                 Wszystkie                                 |                                                                                                                     Jednoznacznie identyfikuje element. Prefiks kwalifikowaną nazwę pakietu, który go zawiera.                                                                                                                     |
+|    **Kwalifikowana nazwa**    |    Pakiet:: Nazwa     |                                 Wszystkie                                 |                                                                                                                     Jednoznacznie identyfikuje element. Prefiks kwalifikowaną nazwę pakietu, który go zawiera.                                                                                                                     |
 |      **Elementy robocze**      |      skojarzone 0      |                                 Wszystkie                                 |                                                                                Liczba elementów roboczych skojarzonych z tym elementem. Aby skojarzyć elementy robocze, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).                                                                                |
 |     **Opis**      |         (Brak)         |                                 Wszystkie                                 |                                                                                                                                             Można wprowadzić ogólne uwagi na temat elementu, w tym miejscu.                                                                                                                                             |
 |        **Kolor**         | (wartość domyślna dla typu) |                                 Wszystkie                                 |                                                                                                                                                          Kolor kształtu.                                                                                                                                                           |
@@ -45,7 +42,7 @@ Na diagramie aktywności UML każdego elementu na diagramie ma właściwości. A
 |       **Język**       |         (Brak)         |                               Akcja                                |                                                                                                                                                  Język wyrażeń w treści.                                                                                                                                                   |
 | **Lokalne warunków końcowych** |         (Brak)         |         Akcja, wysyłania, Zaakceptuj wywołanie zachowanie wywołania operacji         |                                                                                                                          Ograniczenia, które muszą zostać spełnione, po zakończeniu wykonywania. Celem osiągnięte przez akcję.                                                                                                                          |
 | **Warunki wstępne lokalne**  |         (Brak)         |         Akcja, wysyłania, Zaakceptuj wywołanie zachowanie wywołania operacji         |                                                                                                                                        Ograniczenia, które muszą zostać spełnione przed rozpoczęciem wykonywania.                                                                                                                                         |
-|    **Jest synchroniczne**    |          True          |                    Wywołanie zachowanie, wywołaj operację                    |                                                                                                                                        — W przypadku opcji true akcji czeka, aż do zakończenia działania.                                                                                                                                        |
+|    **Jest synchroniczne**    |          Prawda          |                    Wywołanie zachowanie, wywołaj operację                    |                                                                                                                                        — W przypadku opcji true akcji czeka, aż do zakończenia działania.                                                                                                                                        |
 |       **Behavior**       |         (Brak)         |                            Zachowanie wywołania                            |                                                                                                                                                         — Działania wywoływane.                                                                                                                                                          |
 |      **Operacja**       |         (Brak)         |                           Operacja wywołania                            |                                                                                                                                                         — Operacja wywołana.                                                                                                                                                         |
 |    **Jest wycofać**     |         False          |                            Zaakceptuj zdarzeń                             |                                                                                                       — W przypadku opcji true może istnieć kilka PinY wyjściowe wpisane, a dane są wycofana na nich. Jeśli wartość to false, wszystkie dane są wyświetlane na jeden kod pin.                                                                                                        |
@@ -61,8 +58,5 @@ Na diagramie aktywności UML każdego elementu na diagramie ma właściwości. A
 | **Jest pojedyncze wykonanie**  |         False          |                          Diagram aktywności                           |                                                                                                                                   -Jeśli ustawić, jest co najwyżej jednego wykonania tego diagramu w danym momencie.                                                                                                                                    |
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)

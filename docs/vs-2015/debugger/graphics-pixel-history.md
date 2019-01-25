@@ -1,27 +1,22 @@
 ---
 title: Historia pikseli grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733173"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834981"
 ---
 # <a name="graphics-pixel-history"></a>Historia pikseli grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,4 @@ Okno Historia pikseli grafiki w analizatora grafiki programu Visual Studio pomag
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Brak obiektów spowodowany stanem urządzenia](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
- [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-
+ [Przewodnik: Debugowanie błędów renderowania spowodowanych cieniowaniem](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

@@ -1,14 +1,9 @@
 ---
 title: Tworzenie rozszerzenia za pomocą polecenia Menu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774256"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +119,18 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
   
 1. Możesz wykonać wiele innych rzeczy przy użyciu prostego polecenia:  
   
-   1.  Dodaj własną ikonę: [dodawanie ikon do poleceń Menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Dodaj własną ikonę: [Dodawanie ikon do poleceń menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Zmiana tekstu polecenia menu: [zmiana tekstu polecenia Menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Zmiana tekstu polecenia menu: [Zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Dodawanie menu skrótu do polecenia: [wiązanie skrótów klawiaturowych z elementami Menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Dodaj skrót menu do polecenia: [Wiązanie skrótów klawiaturowych z elementami menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. Dodaj różne rodzaje polecenia, menu i paski narzędzi: [rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)  
+2. Dodaj różne rodzaje polecenia, menu i paski narzędzi: [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)  
   
-3. Dodawanie okna narzędzi i rozszerzyć wbudowane okna narzędzi programu Visual Studio: [rozszerzanie i dostosowywanie narzędzi Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Dodawanie okna narzędzi i rozszerzyć wbudowane okna narzędzi programu Visual Studio: [Rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. Dodaj funkcję IntelliSense, sugestie kodu i inne funkcje do istniejącej kodu edytorów: [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)  
+4. Dodaj funkcję IntelliSense, sugestie dotyczące kodu i inne funkcje do istniejących edytory kodu: [Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. Dodawanie do rozszerzenia strony Opcje i właściwości i ustawienia użytkownika: [rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzanie ustawień użytkownika ani opcji](../extensibility/extending-user-settings-and-options.md)  
+5. Dodaj strony Opcje i właściwości i ustawienia użytkownika do rozszerzenia: [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzanie opcje i ustawienia użytkownika](../extensibility/extending-user-settings-and-options.md)  
   
    Inne rodzaje rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub Wdrażanie rozszerzenia w izolowanej powłoki: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
-

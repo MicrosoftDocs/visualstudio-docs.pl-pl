@@ -1,25 +1,20 @@
 ---
 title: Skróty klawiaturowe w Projektancie XAML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53eef64f396b6c9362a42d351bd546d97f8d205a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f59853d91d5e3f18ba662c722a5c47b7114e364e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271404"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757611"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Skróty klawiaturowe w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,12 +45,9 @@ Skróty klawiaturowe w Projektancie XAML można przyspieszyć pracę przez ogran
 |**Aby wykonać tę akcję**|**W tym**|  
 |--------------------------------|-----------------|  
 |Ukryj obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|CTRL + H|  
-|Pokaż obiekty na obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|SHIFT + KLAWISZE CTRL + H|  
+|Pokaż obiekty na obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|SHIFT + CTRL + H|  
 |Blokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|CTRL + L|  
-|Odblokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|SHIFT + KLAWISZE CTRL + L|  
+|Odblokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|SHIFT + CTRL + L|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

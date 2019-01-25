@@ -1,25 +1,20 @@
 ---
 title: Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191077"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776291"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Bezpośrednie zaznaczenie klawisze modyfikujące w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,8 +30,8 @@ W poniższej tabeli przedstawiono skróty, które służy do modyfikowania kszta
 |Zmień kąt tangens dla punktu na ścieżce|Kliknij punkt lub segment ścieżki, aby uchwytów są wyświetlane, a następnie przeciągnij jeden z punktów końcowych stycznej|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png "beb1a907-1e50-450c-aab3-4d7026f5e426")<br /><br /> Przesuń wskaźnik stycznej|  
 |Wprowadzić punkt do sharp rogu lub zmniejsza tangens od zera.|Umieść kursor nad punktem, przytrzymaj wciśnięty klawisz ALT, a następnie kliknij punkt|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Konwertowanie wskaźnika|  
 |Wprowadź dowolnego zakątka sharp smooth (lub jeśli jest już smooth, zmień kąt krzywej przekazywanego w ramach punktu klikniętego)|Umieść kursor nad punktem, przytrzymaj wciśnięty klawisz ALT, a następnie przeciągnij punkt|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Konwertowanie wskaźnika|  
-|Zmień segmentu krzywej do linii prostej|Umieść kursor nad segmentów w ścieżce, przytrzymaj wciśnięty klawisz ALT, a następnie kliknij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Konwertuj segment wskaźnika|  
-|Wykonaj segment i pochylić ją do krzywej do przekazywania pozycji wskaźnika|Umieść kursor nad segmentów w ścieżce, przytrzymaj wciśnięty klawisz ALT, a następnie przeciągnij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Konwertuj segment wskaźnika|  
+|Zmień segmentu krzywej do linii prostej|Umieść kursor nad segmentów w ścieżce, przytrzymaj wciśnięty klawisz ALT, a następnie kliknij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Konwertuj segment wskaźnika|  
+|Wykonaj segment i pochylić ją do krzywej do przekazywania pozycji wskaźnika|Umieść kursor nad segmentów w ścieżce, przytrzymaj wciśnięty klawisz ALT, a następnie przeciągnij segmentu|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> Konwertuj segment wskaźnika|  
 |Dopasuj jeden z punktów końcowych tangens niezależnie od drugiej strony|Zaznacz bezpośrednio punkt lub segment, przytrzymaj wciśnięty klawisz ALT, a następnie przeciągnij stycznej punktu końcowego|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> Konwertowanie wskaźnika stycznej|  
   
 ## <a name="see-also"></a>Zobacz też  
@@ -44,6 +39,3 @@ W poniższej tabeli przedstawiono skróty, które służy do modyfikowania kszta
  [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)   
  [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)   
  [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)
-
-
-

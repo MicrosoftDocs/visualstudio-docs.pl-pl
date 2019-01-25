@@ -1,27 +1,22 @@
 ---
 title: Zadania wbudowane programu MSBuild | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792177"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,6 +195,3 @@ File.WriteAllText(Path, content);
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Przewodnik: Tworzenie zadania wbudowanego](../msbuild/walkthrough-creating-an-inline-task.md)
-
-
-

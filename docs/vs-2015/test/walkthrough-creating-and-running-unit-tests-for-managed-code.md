@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784663"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Wskazówki: tworzenie i uruchamianie testów jednostkowych zarządzanego kodu
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym przewodniku krok po kroku tworzenia, uruchamiania i dostosowywać serie testów jednostkowych przy użyciu środowiska testów jednostkowych Microsoft dla kodu zarządzanego i Visual Studio Test Explorer. Rozpocznij z projektu języka C#, który jest w fazie projektowania, tworzy testy, które wykonują kod, uruchom testy i bada wyniki. Następnie można zmienić kodu projektu i ponownie uruchomić testy.  
@@ -113,7 +108,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Tworzenie projektu testu jednostkowego  
- **Wymagań wstępnych**: wykonaj kroki opisane w procedurze [Przygotuj przewodnik](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Wymagań wstępnych**: Wykonaj kroki opisane w procedurze [Przygotuj przewodnik](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  W tej sekcji końcowej praca, że wykonana nad ulepszeniem kodu testu doprowadziła do bardziej niezawodnych i wartościowych metod testowych. Ale co ważniejsze, dodatkowe analizy doprowadziły również do lepszego kodu, w testowanym projekcie.
-
-
-

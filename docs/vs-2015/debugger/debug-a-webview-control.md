@@ -1,14 +1,9 @@
 ---
 title: Debugowanie kontrolki WebView | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69c7aa5e83da4ec829b439940d4affcd536bc128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760431"
 ---
 # <a name="debug-a-webview-control"></a>Debugowanie kontrolki WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,10 +84,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     > [!NOTE]
     >  Za pomocą konsoli, możesz wchodzić w interakcje za pomocą jednego `WebView`, `iFrame`, udostępnić kontraktu lub internetowych procesów roboczych w danym momencie. Każdy element wymaga oddzielnego wystąpienia hosta platformy sieci web (WWAHost.exe). Możesz korzystać z jednego hosta w danym momencie.  
   
-6.  Wyświetlanie i modyfikację zmiennych w swojej aplikacji lub użyj polecenia konsoli, zgodnie z opisem w [Szybki Start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
+6.  Wyświetlanie i modyfikację zmiennych w swojej aplikacji lub użyj polecenia konsoli, zgodnie z opisem w [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

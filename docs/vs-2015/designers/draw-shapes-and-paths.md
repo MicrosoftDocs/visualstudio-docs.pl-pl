@@ -1,25 +1,20 @@
 ---
 title: Rysowanie kształtów i ścieżek | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188191"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775356"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,12 +99,12 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
 ##  <a name="Convert"></a> Konwertowanie kształtu do ścieżki  
  Aby zmodyfikować kształtu w taki sam sposób, aby zmodyfikować ścieżkę, konwertowanie kształtu do ścieżki.  
   
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Praca ze ścieżkami: konwertowanie kształtu na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Konwertowanie kształtu na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
 ##  <a name="Combine"></a> Połącz ścieżki  
  Można połączyć kształtów i ścieżek w pojedynczą ścieżkę.  
   
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-A338-4ef4-96c5-dae51cc1ca8a")  
+ ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -117,26 +112,23 @@ W Projektancie XAML *kształt* dokładnie to, czego można oczekiwać. Na przyk�
 |![](../designers/media/b1-2.png "B1_2")|Różne|![](../designers/media/b1-5.png "B1_5")|Wyklucz nakładanie|  
 |![](../designers/media/b1-3.png "B1_3")|Dzielenie|![](../designers/media/b1-6.png "B1_6")|Odejmowanie|  
   
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Praca ze ścieżkami: łączenia ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Połącz ścieżki](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
 ##  <a name="Compound"></a> Utwórz ścieżkę złożoną  
  Podczas tworzenia ścieżki złożonej żadnych przecinających się części ścieżki są odejmowane od wyniku, a wynikowe ścieżki zajmuje się we właściwościach visual znajdujących się najniżej ścieżki.  
   
  Możesz przerwać od siebie ścieżkę złożoną dowolnej chwili po jego utworzeniu.  
   
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8DE5-b10d28f08a84")  
+ ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Praca ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
 ##  <a name="Clipping"></a> Tworzenie ścieżki przycinania  
  Ścieżki przycięcia jest ścieżka lub kształtu, który jest stosowany do innego obiektu, ukrywanie części maskowanego obiektu, które wykraczają poza przycinania.  
   
- ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-A841-4f39-a3ef-36090cf5a625")  
+ ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Obejrzyj krótki film wideo:** ![Konfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Praca ze ścieżkami: Tworzenie ścieżki przycinania](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pracy dzięki określeniu ścieżki: Tworzenie ścieżki przycinania](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

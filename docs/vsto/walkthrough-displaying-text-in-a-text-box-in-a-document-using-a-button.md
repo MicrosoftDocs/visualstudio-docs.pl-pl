@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - text boxes, displaying text in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd685ea02dc8943edc1aa214b97b61d0fa9ff35b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910142"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863620"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Przewodnik: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku
   W tym instruktażu pokazano, jak używać przycisków i pola tekstowe w dostosowaniu na poziomie dokumentu dla programu Microsoft Office Word.  

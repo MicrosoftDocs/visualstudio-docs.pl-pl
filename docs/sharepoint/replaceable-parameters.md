@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871952"
 ---
 # <a name="replaceable-parameters"></a>Parametry wymienne
   Parametry wymienne lub *tokenów*, może służyć w plikach projektu o podanie wartości elementów rozwiązania programu SharePoint, w których rzeczywiste wartości nie są znany w czasie projektowania. Są one podobne w funkcji standardu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokenów szablonu. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).  
@@ -66,7 +66,7 @@ ms.locfileid: "53989168"
 |$SharePoint.Feature.Id$|Identyfikator programu SharePoint zawierającego funkcji. Ten token, jak za pomocą wszystkich tokenów poziom funkcji, może być użyty tylko przez pliki zawarte w pakiecie za pośrednictwem funkcji nie dodał bezpośrednio do pakietu poza funkcją.|  
 |$SharePoint.ProjectItem.Name$|Nazwa elementu projektu (nie jego nazwa pliku), jako uzyskany z **ISharePointProjectItem.Name**.|  
 |$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Nazwy kwalifikowanej zestawu zgodnych typów [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] tokenu. Format [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] jest pisana małymi literami i odnosi się do formatu Guid.ToString("D") (czyli xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. Imię i nazwisko$|Pełna nazwa typu dopasowania identyfikatora GUID w tokenie. Format identyfikatora GUID jest pisana małymi literami i odnosi się do formatu Guid.ToString("D") (czyli xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type.\<GUID>.FullName$|Pełna nazwa typu dopasowania identyfikatora GUID w tokenie. Format identyfikatora GUID jest pisana małymi literami i odnosi się do formatu Guid.ToString("D") (czyli xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Dodawanie rozszerzeń do listy rozszerzeń plików zastępowania tokenu
  Mimo że tokeny, teoretycznie mogą być używane przez dowolny plik, który należy do projektu programu SharePoint, elementu uwzględniony w pakiecie, domyślnie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wyszukuje tokenów tylko w przypadku plików pakietu, pliki manifestu i plików, które mają następujące rozszerzenia:  

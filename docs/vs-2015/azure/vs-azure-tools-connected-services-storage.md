@@ -2,7 +2,7 @@
 title: Dodawanie usługi Azure Storage przy użyciu usług połączonych
 description: Dodawanie usługi Azure Storage do swojej aplikacji za pomocą okna dialogowego programu Visual Studio Dodaj połączone usługi
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: b48bef55908000e2febe4d4c1312a41c2442f3ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7f072cad1d50bc03c708353fa6f08aac2c93bce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793646"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure storage przy użyciu programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio, można nawiązać żadnego z następujących usługi Azure Storage za pomocą **Dodaj usługi połączone** okno dialogowe:
@@ -69,6 +69,6 @@ Po zakończeniu okna dialogowego programu Visual Studio dodaje odwołania i mody
 - Projekt zadania WebJob — [co się stało — projekty zadań WebJob](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Następne kroki
-- [MSDN Forum: Usługa Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog zespołu usługi Microsoft Azure Storage](http://blogs.msdn.com/b/windowsazurestorage/)
 - [Dokumentacja usługi Azure Storage](https://docs.microsoft.com/azure/storage/)

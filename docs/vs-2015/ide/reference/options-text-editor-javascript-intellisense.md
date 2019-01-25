@@ -1,14 +1,9 @@
 ---
 title: Opcje, Edytor tekstu, JavaScript, IntelliSense | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
@@ -16,13 +11,13 @@ ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 422a96f51022f52cab7499f8e5dcfe5e3db510f4
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834735"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,6 +82,3 @@ Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawi
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcja IntelliSense dla języka JavaScript](../../ide/javascript-intellisense.md)
-
-
-

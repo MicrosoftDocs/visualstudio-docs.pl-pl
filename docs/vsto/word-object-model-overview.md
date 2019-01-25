@@ -12,17 +12,17 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], Word
 - objects [Office development in Visual Studio], Office object models
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a946dc469fe03eb5ad8b42ffc68ef13370542d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922280"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875205"
 ---
 # <a name="word-object-model-overview"></a>Model obiektu Word — omówienie
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio możesz korzystać z modelu obiektów programu Word. Ten model obiektów składa się z klasy i interfejsy, które znajdują się w podstawowy zestaw międzyoperacyjny dla programu Word i są definiowane w <xref:Microsoft.Office.Interop.Word> przestrzeni nazw.  

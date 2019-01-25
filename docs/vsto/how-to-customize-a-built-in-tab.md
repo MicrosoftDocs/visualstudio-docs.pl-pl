@@ -10,15 +10,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 939c9c6d2d50e9feb6a50d9b49b84620d96a03cc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872225"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Instrukcje: Dostosowywanie wbudowanej karty
   Grupy i formanty można dodać do wbudowanej karty. Wbudowana karty to karta, która jest już na Wstążce aplikacji Microsoft Office. Na przykład **danych** karty to karta wbudowana w programie Excel. Podczas tworzenia grup niestandardowych, zostanie wyświetlone ostatnie na karcie, ale można przenieść grupy dowolne miejsce na karcie.  

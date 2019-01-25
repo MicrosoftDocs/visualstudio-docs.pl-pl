@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821130"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875956"
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
   Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.

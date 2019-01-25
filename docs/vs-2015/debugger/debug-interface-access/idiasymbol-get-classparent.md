@@ -1,14 +1,9 @@
 ---
 title: Idiasymbol::get_classparent — | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c468ec447cc201184315c3d708ecc45502c747fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0a6b29d6ba2efade1864166a9ce9b1791bf4ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760450"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,8 +54,5 @@ HRESULT get_classParent ( 
  Rodzaje symboli, które mogą być elementami nadrzędnymi klasy są udokumentowane w artykule [symboli typów klasy hierarchii](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

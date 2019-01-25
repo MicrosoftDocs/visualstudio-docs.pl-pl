@@ -11,15 +11,15 @@ helpviewer_keywords:
 - error messages, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b790bd1311dc4fdc460b5f7f533d25319efd72f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5dd568703539e91b2b5067d00531e5704cd24ea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866153"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875072"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Komunikaty o błędach (Office development w programie Visual Studio)
   Każdy temat komunikat o błędzie zawiera informacje dotyczące możliwe przyczyny błędu i potencjalne rozwiązania lub obejścia problemu.  

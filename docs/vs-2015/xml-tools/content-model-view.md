@@ -1,25 +1,20 @@
 ---
 title: Widok modelu zawartości | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790599"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,13 @@ Widok modelu zawartości zapewnia graficzną reprezentację węzłów schematu l
 ## <a name="xsd-designer-toolbar"></a>Pasek narzędzi Projektanta XSD  
  Następujące przyciski narzędzi Projektanta XSD są włączone, gdy widok modelu zawartości jest aktywny.  
   
- ![Pasek narzędzi Projektanta schematu XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
+ ![XML Schema Designer Toolbar](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 1**.|  
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 2**.|  
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **CTRL + 3**.|  
+|**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 1**.|  
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 2**.|  
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL + 3**.|  
 |**Usuń obszar roboczy**|Usuwa obszar roboczy i powierzchni projektowej.|  
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i serface projektu.|  
 |**Usuń wszystkie oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i serface projektu.|  
@@ -123,6 +118,3 @@ Widok modelu zawartości zapewnia graficzną reprezentację węzłów schematu l
   
 ## <a name="see-also"></a>Zobacz też  
  [Obszar roboczy projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

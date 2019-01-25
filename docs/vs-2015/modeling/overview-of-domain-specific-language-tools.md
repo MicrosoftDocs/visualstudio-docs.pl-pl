@@ -1,25 +1,22 @@
 ---
 title: Przegląd narzędzi języka specyficznego dla domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802980"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
   
 - Minimalny WPF  
   
-- Minimalny Windows.Forms  
+- Minimal Windows.Forms  
   
 - Biblioteka DSL  
   
@@ -57,7 +54,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
   
   Kreator utworzy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które ma następujące projekty:  
   
-- Język DSL  
+- Dsl  
   
    Projektu Dsl definiuje języka specyficznego dla domeny i jego narzędzi edycji i przetwarzania.  
   
@@ -71,7 +68,7 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="validation-in-dsl-tools"></a>Sprawdzanie poprawności w narzędzia DSL  
  Język DSL zapewnia jeden poziom sprawdzania poprawności, aby upewnić się, że model domeny spełnia wymagania podstawowe do generowania kodu. Zwykle podczas tworzenia języka specyficznego dla domeny, możesz dodać weryfikację określenie reguł logiki biznesowej. Aby uzyskać więcej informacji na temat niestandardowego sprawdzania poprawności, zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md).  
   
- Zaleca się sprawdzenie poprawności języka specyficznego dla domeny często podczas projektowania. Jeśli języka specyficznego dla domeny ma błędy sprawdzania poprawności, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów odbywa się przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Przy każdej modyfikacji definicji języka Pamiętaj również o **Przekształć wszystkie szablony**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Zaleca się sprawdzenie poprawności języka specyficznego dla domeny często podczas projektowania. Jeśli języka specyficznego dla domeny ma błędy sprawdzania poprawności, nie można wygenerować kodu źródłowego. Proces generowania kodu źródłowego z szablonów odbywa się przez kliknięcie przycisku **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań. Przy każdej modyfikacji definicji języka Pamiętaj również o **Przekształć wszystkie szablony**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="customization-of-dsl-tools"></a>Dostosowywanie narzędzia DSL  
  Możesz podać dodatkowe kodu, aby dostosować zachowanie w modelu i zdefiniować ograniczenia za pośrednictwem języka. W razie potrzeby możesz wprowadzeniem znaczących zmian, modyfikując szablony tekstowe.  
@@ -83,7 +80,4 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
   
 ## <a name="see-also"></a>Zobacz też  
  [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md)   
- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

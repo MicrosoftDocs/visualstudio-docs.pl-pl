@@ -12,15 +12,15 @@ helpviewer_keywords:
 - RibbonManager class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989493"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876229"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Dostęp do wstążki w czasie wykonywania
   Można napisać kod, aby pokazać, ukrywanie i modyfikowania Wstążki i umożliwienie użytkownikom uruchomić kod z kontrolek w niestandardowego okienka zadań, okienka akcji lub region formularza programu Outlook.  

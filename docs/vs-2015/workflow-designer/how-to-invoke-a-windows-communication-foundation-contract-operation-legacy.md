@@ -1,25 +1,22 @@
 ---
-title: 'Porady: wywoływanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Wywoływanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 5e59d5ed9617d4be71a0542e35dd509d9035ae33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761692"
 ---
-# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Porady: wywoływanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja)
+# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Instrukcje: Wywoływanie operacji kontraktu usługi WCF (Windows Communication Foundation) (starsza wersja)
 W tym temacie opisano, jak wywołać [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontrakt operacji za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Po przeciągnięciu **SendActivity** działania z przybornika do powierzchni projektu przepływu pracy, musisz zaimportować istniejący kontrakt i określić, która operacja zostanie wywołany przy jego użyciu **SendActivity** działanie. Zaznacz kontrakt usługi i jego operacji za pośrednictwem [wybierz operację okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
@@ -52,5 +49,5 @@ W tym temacie opisano, jak wywołać [!INCLUDE[indigo1](../includes/indigo1-md.m
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybierz operację, okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [Porady: Implementowanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Instrukcje: Implementowanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
  [Działania przepływu pracy w starszej wersji](../workflow-designer/legacy-workflow-activities.md)

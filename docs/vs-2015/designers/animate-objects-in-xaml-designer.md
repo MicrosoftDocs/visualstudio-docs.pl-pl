@@ -1,25 +1,20 @@
 ---
 title: Animowanie obiektów w Projektancie XAML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805512"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animowanie obiektów w projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Tworzenie animacji w krótkim przenoszenie obiektów lub zanikanie je wewnątrz 
   
  Dowiedz się, tworzenie animacji, obejrzyj te klipy wideo.  
   
-|Obejrzyj krótki film wideo:|Dowiedz się, jak:|  
+|Obejrzyj krótki film wideo:|Instrukcje:|  
 |--------------------------|-------------------|  
 |![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tworzenia osi czasu](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Tworzenie osi czasu i pracy z obiektami na osi czasu.|  
 |![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Dodaj klatki kluczowe i powtórz animację](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Dodaj ramkami kluczowymi, a następnie ustaw właściwości w każdej klatce kluczowej. Następnie uruchom obiektów animacji i obejrzyj płynne przejście między nimi.|  
@@ -47,6 +42,3 @@ Tworzenie animacji w krótkim przenoszenie obiektów lub zanikanie je wewnątrz 
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

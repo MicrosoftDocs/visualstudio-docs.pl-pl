@@ -9,17 +9,17 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829050"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871666"
 ---
 # <a name="how-to-sign-office-solutions"></a>Instrukcje: Podpisywanie rozwiązań pakietu Office
   Jeśli utworzysz rozwiązanie, możesz udzielić zaufania do rozwiązania przy użyciu certyfikatu jako dowód. Możesz użyć tego samego certyfikatu dla wielu rozwiązań, a wszystkie rozwiązania pozostaną zaufane, nie dodatkowe aktualizacje zasad.

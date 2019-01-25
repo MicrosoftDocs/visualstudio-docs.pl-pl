@@ -1,25 +1,20 @@
 ---
 title: Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 49bd65d0ca9be83665f5f364f5e1f2115279cf5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9a7bf4918779fa3c15a21b32432f46dec18564af
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773264"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sortowanie, filtrowanie i grupowanie (Eksplorator schematu XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +77,3 @@ W tym temacie opisano opcje, które są dostępne za pośrednictwem **opcje grup
   
 ## <a name="persisting-sortfilter-options"></a>Utrwalanie opcje sortowania/filtrowania  
  Sortowanie, filtrowanie i grupowanie opcje są zapisywane w rejestrze dla każdego użytkownika, niezależnie od tego, które rozwiązanie lub pliki były otwarte podczas ustawienia zostały zmienione.
-
-
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Wyświetl wywołującego/wywoływanego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788947"
 ---
 # <a name="callercallee-view"></a>Widok wywołujący/wywoływany
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla
   
  Możesz wybrać inną funkcję do bieżącej funkcji w środkowej części widoku raportu, klikając dwukrotnie dowolny z funkcji, które są wymienione w dwóch częściach widoku. Widok raportu jest aktualizowana automatycznie w celu odzwierciedlenia zmian.  
   
- Dane można sortować, klikając nazw kolumn. Widok wywołujący/wywoływany można dodać dodatkowe kolumny. Aby uzyskać więcej informacji, zobacz [porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
+ Dane można sortować, klikając nazw kolumn. Widok wywołujący/wywoływany można dodać dodatkowe kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Element wywołujący / widok / / wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)   
@@ -51,6 +46,3 @@ Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla
  [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Element wywołujący / widok / / wywoływany - dane Kontencji](../profiling/caller-callee-view-contention-data.md)
-
-
-

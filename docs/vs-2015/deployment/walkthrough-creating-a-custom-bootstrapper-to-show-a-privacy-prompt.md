@@ -1,14 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zasad ochrony prywatności | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zasad ochrony prywatności | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893395"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781337"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Wskazówki: tworzenie niestandardowego programu inicjującego wyświetlającego prywatny monit
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wyświetlającego monit o prywatności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.  
@@ -42,7 +37,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Program Visual Studio 2010.  
+-   Visual Studio 2010.  
   
 ## <a name="creating-an-update-consent-dialog-box"></a>Tworzenie okna dialogowego zgody aktualizacji  
  Wyświetlenie monitu o prywatności, należy utworzyć aplikację, która prosi czytnik do wyrażenia zgody na automatyczne aktualizacje aplikacji.  
@@ -154,7 +149,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 -   Dokument postanowienia licencyjne dotyczące oprogramowania.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1: Można utworzyć katalogu programu inicjującego  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Krok 1. Można utworzyć katalogu programu inicjującego  
   
 1.  Utwórz katalog o nazwie **UpdateConsentDialog** w %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
@@ -166,7 +161,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
     > [!NOTE]
     >  Utwórz nowy katalog dla poszczególnych ustawień regionalnych. Na przykład można dodać podkatalogów dla ustawień regionalnych fr i "de". Te katalogi zawierałoby ciągi francuskim i niemieckim i pakietów językowych, jeśli to konieczne.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2: Aby utworzyć plik manifestu product.xml  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Krok 2. Aby utworzyć plik manifestu product.xml  
   
 1.  Utwórz plik tekstowy o nazwie `product.xml`.  
   
@@ -198,7 +193,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 3.  Zapisz plik w katalogu program inicjujący UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3: Aby utworzyć package.xml manifest plików i oprogramowania postanowienia licencyjne  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Krok 3. Aby utworzyć plik manifestu package.xml i postanowienia licencyjne dotyczące oprogramowania  
   
 1.  Utwórz plik tekstowy o nazwie `package.xml`.  
   
@@ -272,13 +267,13 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 6.  Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
   
-     Aplikacja okna dialogowego zgody aktualizacji wyświetlane wraz z następującego tekstu: sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
+     Okno dialogowe zgody aktualizacji aplikacji pojawi się i pokaże następujący tekst: Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
   
 7.  Zamknij aplikację, lub przycisk Anuluj.  
   
      Aplikacja zawiera błąd: Wystąpił błąd podczas instalowania składników systemowych dla *ApplicationName*. Instalator nie może kontynuować, dopóki wszystkie składniki systemowe zostały pomyślnie zainstalowane.  
   
-8.  Kliknij przycisk Szczegóły, aby wyświetlić komunikat o błędzie: Aktualizuj składnik zgody okna dialogowego nie udało się zainstalować za pomocą następujący komunikat o błędzie: "Umowy automatyczna aktualizacja nie zostanie zaakceptowany." Nie można zainstalować następujące składniki: — okno dialogowe zgody aktualizacji  
+8.  Kliknij przycisk Szczegóły, aby wyświetlić komunikat o błędzie: Okno dialogowe zgody aktualizacji składników ma nie można zainstalować za pomocą następujący komunikat o błędzie: "Umowy automatyczna aktualizacja nie zostanie zaakceptowany." Nie można zainstalować następujące składniki: — okno dialogowe zgody aktualizacji  
   
 9. Kliknij przycisk **Zamknij**.  
   
@@ -298,7 +293,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 6.  Przeczytaj umowę licencyjną oprogramowania, a następnie kliknij przycisk **Akceptuj**.  
   
-     Aplikacja okna dialogowego zgody aktualizacji wyświetlane wraz z następującego tekstu: sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
+     Okno dialogowe zgody aktualizacji aplikacji pojawi się i pokaże następujący tekst: Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając zgadzam się, upoważniasz aplikacji, aby sprawdzić, czy są aktualizacje automatyczne w Internecie.  
   
 7.  Kliknij przycisk **zgadzam się**, a następnie kliknij przycisk **Kontynuuj**.  
   
@@ -309,9 +304,6 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 ## <a name="see-also"></a>Zobacz też  
  [Wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md)   
  [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md)   
- [Porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
- [Porady: tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)   
+ [Instrukcje: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md)   
+ [Instrukcje: Tworzenie manifestu pakietu](../deployment/how-to-create-a-package-manifest.md)   
  [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)
-
-
-

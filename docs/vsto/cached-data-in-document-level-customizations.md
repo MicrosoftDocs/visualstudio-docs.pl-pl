@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964653"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868277"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dane w pamięci podręcznej dostosowywane na poziomie dokumentu
   Podstawowym celem dostosowania poziomu dokumentu jest oddzielenie danych z widoku w dokumentach pakietu Office. Danych odnosi się do informacji, które są przechowywane w dokumencie, w tym liczby i tekst. Widok odwołuje się do interfejsu użytkownika i modelu obiektów programu Microsoft Office Word i Microsoft Office Excel.  

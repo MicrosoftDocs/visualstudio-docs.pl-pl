@@ -1,14 +1,9 @@
 ---
 title: MT — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -29,13 +24,13 @@ ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9b14de0b9e80379736dd7f6a02cb374d475fcda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805477"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ Opakowuje narzędziu manifestu Microsoft mt.exe. Aby uzyskać więcej informacji
 |**Źródła**|Opcjonalnie `ITaskItem[]` parametru.<br /><br /> Określa listę plików źródłowych manifestu, rozdzielone spacjami.<br /><br /> Aby uzyskać więcej informacji, zobacz **/manifest** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**SuppressDependencyElement**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, generuje manifest bez zależności elementów. Jeśli ten parametr jest `true`, również określić **ManifestFromManagedAssemblyMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nodependency** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**SuppressStartupBanner**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**Katalog TrackerLogDirectory**|Opcjonalnie `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
+|**TrackerLogDirectory**|Opcjonalnie `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
 |**TypeLibraryFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę pliku biblioteki (.tlb) typów. W przypadku określenia tego parametru należy także określić **ComponentFileNameMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/TLB** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**UpdateFileHashes**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, oblicza wartość skrótu pliku w ścieżce określonej przez **UpdateFileHashesSearchPathMT** parametru zadania, a następnie aktualizuje wartość **skrótu** atrybut **pliku** elemencie manifestu za pomocą wartości obliczanej.<br /><br /> Aby uzyskać więcej informacji, zobacz **/hashupdate** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web. Zobacz też **UpdateFileHashesSearchPath** parametru w tej tabeli.|  
 |**UpdateFileHashesSearchPath**|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę szukania używaną podczas aktualizacji plików skrótu. Użyj tego parametru z **UpdateFileHashesMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **UpdateFileHashes** parametru w tej tabeli.|  
@@ -81,6 +76,3 @@ Opakowuje narzędziu manifestu Microsoft mt.exe. Aby uzyskać więcej informacji
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

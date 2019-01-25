@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - ListObject control, resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e655305400915f1ac97a042ac1cca26e52a05ec5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98b37c91ff2d36832345f3c0ee93a98de0372060
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909687"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869583"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Instrukcje: Zmiana rozmiaru formantów ListObject
   Ustaw rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli po dodaniu go do programu Microsoft Office Excel; Jednakże, możesz chcieć zmienić jej rozmiar w późniejszym czasie. Na przykład można zmienić listę dwóch kolumn na trzy kolumny.  

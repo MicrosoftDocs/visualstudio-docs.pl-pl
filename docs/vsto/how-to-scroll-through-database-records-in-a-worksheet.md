@@ -10,17 +10,17 @@ helpviewer_keywords:
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
 - worksheets [Office development in Visual Studio], scrolling records
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47a95db3797592f4c8d55ffa72e0e7323d251378
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897473"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863607"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Instrukcje: Przewijanie rekordów bazy danych w arkuszu
   Poniższa procedura pokazuje, jak używać projektanta do wyświetlania jedno pole z tabeli bazy danych w arkuszu programu Microsoft Office Excel, za pomocą formantów, które umożliwiają użytkownikowi końcowemu przewiń wszystkie rekordy.  

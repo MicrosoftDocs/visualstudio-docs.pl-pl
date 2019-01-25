@@ -1,27 +1,22 @@
 ---
 title: Widok wskaźników instrukcji (IP) - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: f5e49c24-d4cf-4f87-977d-37e3223d1196
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f8945e405304d8080c9c4c53ccb0ac48d38d4c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737054"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834590"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Widok wskaźników instrukcji (IP) — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Adresy IP widok rywalizacji o zasoby danych zawierający dane, instrukcje zestaw
   
  W poniższej tabeli przedstawiono wartości w kolumnach w widok wskaźników instrukcji.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączny czas blokowania**|Czas blokowania w tej funkcji.|  
 |**% Własnego czasu blokowania**|Procent czasu blokowania, gdy została wykonana instrukcja.|  
@@ -51,10 +46,7 @@ Adresy IP widok rywalizacji o zasoby danych zawierający dane, instrukcje zestaw
 |**Końcowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym kończy się w tej instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)   
  [Wskaźników instrukcji (IP) View - próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
-
-
-

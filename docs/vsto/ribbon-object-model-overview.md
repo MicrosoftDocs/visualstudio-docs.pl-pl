@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961312"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876034"
 ---
 # <a name="ribbon-object-model-overview"></a>Model obiektu Wstążka ― omówienie
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Udostępnia model silnie typizowany obiekt, który służy do pobierania i ustawiania właściwości formantów wstążki w czasie wykonywania. Na przykład użytkownik może dynamicznie wypełnianie kontrolek menu lub wyświetlania i ukrywania kontrolek kontekstowe. Na Wstążce, ale tylko w przypadku, przed załadowaniem wstążki według aplikacji pakietu Office, można dodać karty, grupy i formanty. Aby uzyskać informacje, zobacz [Ustaw właściwości, które stają się tylko do odczytu](#SettingReadOnlyProperties).  
@@ -52,14 +52,14 @@ ms.locfileid: "53961312"
 |**Grupa przycisków**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
-|**Lista rozwijana**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
-|**Pole edycji**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
+|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galeria**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Grupa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Etykieta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
-|**Przycisk podziału**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**Karta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
@@ -135,7 +135,7 @@ ms.locfileid: "53961312"
 |Właściwość|Klasa formantów wstążki|  
 |--------------|--------------------------|  
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
-|**Właściwości ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**columnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Vlastnosti ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
@@ -143,8 +143,8 @@ ms.locfileid: "53961312"
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Grupy**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
-|**Elementem ItemSize ustawionym**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Element maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Nazwa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Stanowisko**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  

@@ -2,22 +2,20 @@
 title: Uzyskiwanie dostępu do programu Visual Studio 2015 lub innych hostów z szablonu tekstu | Dokumentacja firmy Microsoft
 titleSuffix: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dd5f3c1dfacfa256422235647b877373aa714487
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: d26c168780051d3644d04d209001bf0cc9a551cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796799"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Dostęp do Visual Studio lub innych hostów z szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

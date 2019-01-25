@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942375"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867367"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Przewodnik: Projektowanie regionów formularzy programu Outlook
   Regiony formularza niestandardowego rozszerzenie standardowych lub niestandardowych formularzy programu Microsoft Office Outlook. W tym przewodniku projektujesz region formularza niestandardowego, który jest wyświetlany jako nową stronę w oknie Inspektora, skontaktuj się z elementu. Ten region formularza jest wyświetlenie mapy każdego adresu, który znajduje się do kontaktu, wysyłając informacje o adresach do witryny Windows Live lokalnego wyszukiwania w przeglądarce. Aby uzyskać informacji na temat regionów formularzy, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).  
@@ -154,7 +154,7 @@ ms.locfileid: "53942375"
     |Typ adresu|Adres|  
     |------------------|-------------|  
     |**biznesowe**|**Saint Main 4567 pole, Polska**|  
-    |**Strona główna**|**Saint Północna 1234 pole, Polska**|  
+    |**Strona główna**|**1234 North St. Buffalo, NY**|  
     |**Inne**|**Saint Main 3456 Seattle, WA**|  
   
 4.  Zapisz i Zamknij element kontaktu.  

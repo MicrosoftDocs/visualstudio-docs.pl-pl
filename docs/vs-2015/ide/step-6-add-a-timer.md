@@ -1,25 +1,20 @@
 ---
-title: Krok 6. Dodawanie czasomierza | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: Krok 6. Dodaj czasomierz | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 31116171a15a7a38b76451777faaed35dc8b1e52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795290"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Następnie dodaj **czasomierza** formantu do gry w dopasowywanie. Czasomierz cze
   
 1.  Z przybornika w programie Windows Forms Designer wybierz **czasomierza** (w **składniki** kategorii) a następnie naciśnij klawisz ENTER lub kliknij dwukrotnie czasomierz, aby dodać format czasomierza do formularza. Ikona czasomierza, o nazwie **Timer1**, powinien pojawić się w przestrzeni poniżej formularza, jak pokazano na poniższej ilustracji.  
   
-     ![Czasomierz](../ide/media/express-timer.png "Express_Timer")  
+     ![Timer](../ide/media/express-timer.png "Express_Timer")  
 Czasomierz  
   
     > [!NOTE]
@@ -43,7 +38,7 @@ Czasomierz
      [!code-csharp[VbExpressTutorial4Step6#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial4Step6#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb#7)]  
   
-     Program obsługi zdarzeń taktu wykonuje trzy rzeczy: po pierwsze, sprawdza, czy czasomierz nie jest uruchomiony, wywołując `Stop()` metody. Następnie wykorzystuje dwie zmienne odniesienia, `firstClicked` i `secondClicked`, aby ponownie ukryć ikony dwóch etykiet, które wybrał gracz. Na koniec resetuje `firstClicked` i `secondClicked` odwoływać się do zmiennych do `null` w języku Visual C# i `Nothing` w języku Visual Basic. Ten krok jest ważny, ponieważ w ten sposób program się resetuje. Teraz go jest nie rejestrowanie informacji o dowolnej `Label` kontrolek, a jego gracz jest gotowy do ponownie wybrać etykietę.  
+     Program obsługi zdarzeń taktu wykonuje trzy rzeczy: Po pierwsze, sprawdza, czy czasomierz nie jest uruchomiony, wywołując `Stop()` metody. Następnie wykorzystuje dwie zmienne odniesienia, `firstClicked` i `secondClicked`, aby ponownie ukryć ikony dwóch etykiet, które wybrał gracz. Na koniec resetuje `firstClicked` i `secondClicked` odwoływać się do zmiennych do `null` w języku Visual C# i `Nothing` w języku Visual Basic. Ten krok jest ważny, ponieważ w ten sposób program się resetuje. Teraz go jest nie rejestrowanie informacji o dowolnej `Label` kontrolek, a jego gracz jest gotowy do ponownie wybrać etykietę.  
   
     > [!NOTE]
     >  A `Timer` obiekt ma `Start()` metodę, która uruchamia czasomierz, i `Stop()` metody, która go zatrzymuje. Po ustawieniu czasomierza **włączone** właściwości **True** w **właściwości** oknie zacznie jak należy jak najszybciej rozpoczyna się program. Ale gdy pozostawisz równa **False**, nie rozpoczyna odliczania, dopóki nie jego `Start()` metoda jest wywoływana. Normalnie, czasomierz wyzwala zdarzenie taktu cyklicznie wielokrotnie, za pomocą **interwał** właściwości w celu określenia liczby milisekund między taktami. Być może zauważono, jak czasomierza `Stop()` metoda jest wywoływana wewnątrz zdarzenia takt. To przestawia czasomierz w *tryb jednego zadziałania*, co oznacza, że w przypadku `Start()` metoda jest wywoływana, jego czeka przez określony interwał, wyzwala pojedyncze zdarzenie taktu i się zatrzymuje.  
@@ -63,9 +58,6 @@ Czasomierz
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Zachować widoczność par](../ide/step-7-keep-pairs-visible.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Add Label References](../ide/step-5-add-label-references.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).

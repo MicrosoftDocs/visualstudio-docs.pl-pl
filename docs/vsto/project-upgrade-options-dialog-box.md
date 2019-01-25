@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - project upgrade [Office development in Visual Studio]
 - Options dialog box, Project Upgrade page
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2f6e251be529cc066c1e66fa9d79773b161bb6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0bd21a6833bcbc5e9b51b65d4d7ca1c719a666d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825597"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873044"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Okno dialogowe Opcje uaktualniania, projekt
   Użyj **uaktualnienia projektu** stronę, aby określić, czy program Visual Studio automatycznie zmieni projektów dodatku VSTO docelową wersję pakietu Office, który jest zainstalowany na komputerze deweloperskim.  

@@ -1,23 +1,20 @@
 ---
 title: Nieobsługiwane scenariusze w Projektancie przepływu pracy debugowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: aece5a71965a1935218027dd97b1b8363a646388
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2f9799aa821c2281c8d7889009871e28a72dd5f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184486"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788082"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nieobsługiwane scenariusze debugowania w Projektancie przepływu pracy
 Projektant przepływu pracy w [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] dodano wiele nowych funkcji, ale nadal istnieje kilka scenariuszy debugowania, które nie obsługuje. Ten dokument wyszczególnia nieobsługiwany projektanta przepływu pracy debugowania scenariuszy.  

@@ -1,14 +1,9 @@
 ---
 title: Fragmenty kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774876"
 ---
 # <a name="code-snippets"></a>Wstawki kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +86,10 @@ End Property
  Można dodawać i usuwać katalogów fragmentu kodu przy użyciu **Dodaj** i **Usuń** przycisków w **Menedżera wstawek kodu** okna dialogowego. Aby dodać poszczególne fragmenty kodu, należy użyć **importu** przycisku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)   
- [Porady: rozprowadzanie wstawek kodu](../ide/how-to-distribute-code-snippets.md)   
+ [Przewodnik: Tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md)   
+ [Instrukcje: Dystrybuowanie fragmentów kodu](../ide/how-to-distribute-code-snippets.md)   
  [Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../ide/best-practices-for-using-code-snippets.md)   
  [Rozwiązywanie problemów z fragmentów kodu](../ide/troubleshooting-snippets.md)   
  [Fragmenty kodu Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Fragmenty kodu Visual C++](../ide/visual-cpp-code-snippets.md)   
  [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
-
-
-

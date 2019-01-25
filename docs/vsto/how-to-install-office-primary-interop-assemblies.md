@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Office primary interop assemblies, installing
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a37c93cfe1d0bb03a022e69e2be31f354017c2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3967ef285aff57c84cd5d43fa1812218dbe0d0e6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914650"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876086"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office
   Po zainstalowaniu pakietu Office, należy zainstalować podstawowe zestawy międzyoperacyjne Microsoft Office (PIA).  

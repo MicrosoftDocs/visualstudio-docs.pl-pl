@@ -9,17 +9,17 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcc0869b8d255ba91e1a1fd017c93cdb24346b27
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829174"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874552"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Instrukcje: Programowe zapisywanie skoroszytów
   Istnieje kilka sposobów, aby zapisać skoroszyt. Skoroszyt programu bez wprowadzania zmian w ścieżce. Jeśli skoroszyt nie zostały zapisane, zanim należy zapisać skoroszyt, określając ścieżkę. Bez jawnej ścieżki program Microsoft Office Excel zapisuje plik w bieżącym folderze o nazwie, które podano podczas jej tworzenia. Można również zapisać kopię skoroszytu bez modyfikowania Otwórz skoroszyt w pamięci.  

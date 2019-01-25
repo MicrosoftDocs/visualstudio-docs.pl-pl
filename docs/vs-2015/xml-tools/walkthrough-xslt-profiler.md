@@ -1,27 +1,22 @@
 ---
-title: 'Wskazówki: Profiler XSLT | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: XSLT Profiler | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229453"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757211"
 ---
-# <a name="walkthrough-xslt-profiler"></a>Przewodnik: profiler XSLT
+# <a name="walkthrough-xslt-profiler"></a>Przewodnik: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -82,11 +77,11 @@ Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które ułatwiają 
   
 2.  **Wywołujący/wywoływany** widok ma trzy oddzielne części:  
   
-    -   **Funkcje, które wywołały**: wszystkie funkcje, które wywołuje określoną funkcję znajduje się w górnej części widoku.  
+    -   **Funkcje, które wywołały**: Wszystkie funkcje, które wywołuje określoną funkcję znajduje się w górnej części widoku.  
   
-    -   **Bieżąca funkcja**: konkretną funkcję, która została wywołana znajduje się w środkowej części widoku.  
+    -   **Bieżąca funkcja**: Konkretną funkcję, która została wywołana znajduje się w środkowej części widoku.  
   
-    -   **Funkcje, które zostały wywołane przez** : wszystkie funkcje, które zostały wywołane przez konkretną funkcję znajduje się w dolnej części widoku.  
+    -   **Funkcje, które zostały wywołane przez** : Wszystkie funkcje, które zostały wywołane przez konkretną funkcję znajduje się w dolnej części widoku.  
   
 3.  Jeśli funkcja o nazwie `SyncToNavigator` pojawia się w środkowej części widoku, funkcje, które wywoływały `SyncToNavigator` funkcji są wyświetlane w górnej części widoku, a wszystkie funkcje, które zostały wywołane przez `SyncToNavigator` są wyświetlane w dolnej części widoku.  
   
@@ -116,6 +111,3 @@ Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które ułatwiają 
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-

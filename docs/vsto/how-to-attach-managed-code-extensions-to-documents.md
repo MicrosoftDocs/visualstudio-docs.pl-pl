@@ -10,15 +10,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e54e8f4b2cb4e94a83446497c24f9f808210f7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a2c218453edfa29d79ae4acb8dcf4ccd0010eab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849797"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865648"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów
   Zestaw dostosowania można dołączyć do istniejącego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. Dokument lub skoroszyt może być w dowolnym formacie pliku, który jest obsługiwany przez program Microsoft Office projektów i narzędzi programistycznych w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md).  

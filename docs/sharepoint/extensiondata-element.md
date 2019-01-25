@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ExtensionData element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c50eac5a470a2800acff89316bd53fda683d6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 815846ad310fa32ebcd3195806956cb34e40fd86
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922161"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876177"
 ---
 # <a name="extensiondata-element"></a>ExtensionData — element
   Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.  
@@ -40,7 +40,7 @@ ms.locfileid: "53922161"
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Extensiondataitem —](../sharepoint/extensiondataitem-element.md)|Element opcjonalny.<br /><br /> Reprezentuje element danych niestandardowych, który jest skojarzony z elementu projektu programu SharePoint w formacie klucz/wartość. Klucz i wartość muszą być ciągami.|  
+|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Element opcjonalny.<br /><br /> Reprezentuje element danych niestandardowych, który jest skojarzony z elementu projektu programu SharePoint w formacie klucz/wartość. Klucz i wartość muszą być ciągami.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne
   
@@ -55,7 +55,7 @@ ms.locfileid: "53922161"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|  
 |**Plik walidacji**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  

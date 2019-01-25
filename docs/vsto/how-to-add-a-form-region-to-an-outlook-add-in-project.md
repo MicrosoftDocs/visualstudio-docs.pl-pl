@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5e5a549a912a84634c2025a3cfa71e4f6688ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adc1b788c01dca16663fa769ffd69904b04e8a98
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846324"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871003"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Instrukcje: Dodawanie regionu formularza do projektu dodatku programu Outlook
   Tworzenie regionu formularza, aby rozszerzyć standardowy lub niestandardowy formularz programu Microsoft Office Outlook za pomocą **nowy Region formularza programu Outlook** kreatora. Możesz utworzyć nowy region formularza i projektowanie interfejsu użytkownika w programie Visual Studio lub można importować regionu formularza zaprojektowanego w programie Outlook i Dodaj języka Visual Basic lub C# kodu.  

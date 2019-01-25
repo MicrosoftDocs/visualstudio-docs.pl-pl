@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,18 +17,18 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772157"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
+# <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą projektanta klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Do projektowania nowych typów projektów Visual Basic .NET i Visual C# .NET, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md).  
+Do projektowania nowych typów projektów Visual Basic .NET i Visual C# .NET, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [jak: Wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md).  
   
 -   [Utwórz nowy typ](#CreateType)  
   
@@ -101,11 +96,8 @@ Do projektowania nowych typów projektów Visual Basic .NET i Visual C# .NET, na
      Kiedy skończysz, atrybuty niestandardowe są stosowane do typu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [Porady: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Instrukcje: Tworzenie dziedziczenia między typami (Projektant klas)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [Instrukcje: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Tworzenie i konfigurowanie składowych typu (Projektant klas)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
  [Projektowanie klas i typów (Projektant klas)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

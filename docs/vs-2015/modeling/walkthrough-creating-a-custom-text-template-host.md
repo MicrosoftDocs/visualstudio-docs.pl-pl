@@ -1,12 +1,9 @@
 ---
-title: 'Wskazówki: Tworzenie niestandardowego hosta szablonu tekstu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783311"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Przewodnik: Tworzenie niestandardowego hosta szablonu tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *aparatu przekształceń szablonu tekstu* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
@@ -820,10 +817,7 @@ A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *apar
     ```  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, zobacz [wskazówki: łączenie hosta z procesorem dyrektywy generowane](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ W tym przewodniku utworzono hosta przekształcania szablonu tekstu, który obsługuje podstawową funkcjonalność przekształcania. Możesz rozszerzyć hosta o obsługę szablonów tekstowych, które wywołują niestandardowe lub wygenerowane procesory dyrektyw. Aby uzyskać więcej informacji, zobacz [instruktażu: Łączenie hosta z generowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

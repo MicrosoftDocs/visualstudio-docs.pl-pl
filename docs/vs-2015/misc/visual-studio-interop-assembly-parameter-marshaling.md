@@ -1,27 +1,22 @@
 ---
 title: Parametr zestawu międzyoperacyjnego programu Visual Studio Marshaling | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195022"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755223"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parametr zestawu międzyoperacyjnego programu Visual Studio Marshalingu
 Pakietów VSPackage, które są zapisywane w kodzie zarządzanym może być konieczne wywoływanie lub można wywoływać za pomocą kodu niezarządzanego COM. Argumenty metody są zazwyczaj transformowany lub zorganizować automatycznie, organizator międzyoperacyjny. Jednak czasami argumenty nie mogą zostać przekształcone w prosty sposób. W takich przypadkach parametrów prototypu zestawu międzyoperacyjnego metody są używane do możliwie najdokładniej dopasować parametrów funkcji COM. Aby uzyskać więcej informacji, zobacz [Marshaling międzyoperacyjności](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -128,7 +123,7 @@ else
  Zarządzanych metod, które wywołują interfejsy tego typu należy ściągnąć pierwszego elementu poza [out] tablica. Ten element może być traktowana tak, jakby była `retval` zwracanie wartości z odpowiedniego interfejsu COM.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Marshaling międzyoperacyjny](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling międzyoperacyjny](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Marshaling międzyoperacyjny](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Problemów związanych ze współdziałaniem](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
- [Zarządzane pakietów VSPackage](../misc/managed-vspackages.md)
+ [Managed VSPackages](../misc/managed-vspackages.md)

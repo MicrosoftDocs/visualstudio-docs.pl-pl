@@ -1,14 +1,9 @@
 ---
 title: '&lt;fileassociation —&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234460"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773967"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileassociation —&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +45,10 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`extension`|Wymagane. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
-|`description`|Wymagane. Opis typu plików do użytku przez powłokę.|  
-|`progid`|Wymagane. Nazwa, który unikatowo identyfikuje typ pliku.|  
-|`defaultIcon`|Wymagane. Określa ikonę do używania z plików z tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<Plik > Element](../deployment/file-element-clickonce-application.md) w ramach [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
+|`extension`|Wymagana. Rozszerzenie pliku, który ma zostać skojarzony z aplikacją.|  
+|`description`|Wymagana. Opis typu plików do użytku przez powłokę.|  
+|`progid`|Wymagana. Nazwa, który unikatowo identyfikuje typ pliku.|  
+|`defaultIcon`|Wymagana. Określa ikonę do używania z plików z tego rozszerzenia. Plik ikony musi być określona za pomocą [ \<Plik > Element](../deployment/file-element-clickonce-application.md) w ramach [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md) zawierający ten element.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ten element musi zawierać odwołanie do przestrzeni nazw XML "urn: schemas-microsoft-com:clickonce.v1". Jeśli `<fileAssociation>` element jest używany, musi być późniejsza `<application>` elementu w jego element nadrzędny [ \<zestawu > Element](../deployment/assembly-element-clickonce-application.md).  
@@ -88,6 +83,3 @@ Określa rozszerzenie pliku do skojarzenia z aplikacją.
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

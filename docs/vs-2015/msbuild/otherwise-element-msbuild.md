@@ -1,14 +1,9 @@
 ---
 title: Otherwise — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a84284c1378ba5fd2cd4cf953a6d7e15b4f207e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 26215c798e96127faf66eec8cae268eb96ef6a6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770911"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ ms.locfileid: "49266360"
 Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkich `When` zwrócić elementy `false`.  
   
  \<Project>  
- \<Wybierz >  
+ \<Choose>  
  \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
  ...  
  \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Choose>  
  ...  
   
 ## <a name="syntax"></a>Składnia  
@@ -66,7 +61,7 @@ Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkic
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `Otherwise` elementu.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `Otherwise` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `Otherwise` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `Otherwise` elementu.|  
   
@@ -74,7 +69,7 @@ Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkic
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|  
   
 ## <a name="remarks"></a>Uwagi  
  Może istnieć tylko jeden `Otherwise` element `Choose` elementu, a musi być ostatnim elementem.  
@@ -132,6 +127,3 @@ Określa blok kodu do wykonania w przypadku i tylko wtedy, gdy warunki wszystkic
 ## <a name="see-also"></a>Zobacz też  
  [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)   
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

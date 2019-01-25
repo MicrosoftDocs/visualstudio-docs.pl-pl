@@ -1,14 +1,9 @@
 ---
 title: Ograniczenia debugowania WCF | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c1d569712547144067cbfcfd894e31e1b41964e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777913"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,14 +77,11 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
     ```  
   
 ## <a name="self-hosting"></a>Hostingu samodzielnego  
- A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego. Aby uzyskać informacje o tym, jak można debugować samodzielnie hostowanej usługi, zobacz [porady: debugowanie usług WCF własne](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego. Aby uzyskać informacje o tym, jak można debugować samodzielnie hostowanej usługi, zobacz [jak: Debugowanie hostowania samoobsługowego WCF usługi](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Hostingu samodzielnego  
  Aby włączyć debugowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji w wersji 3.0 lub 3.5, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 lub 3.5 musi zostać zainstalowany przed [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] jest zainstalowany. Jeśli [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] została zainstalowana przed [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 lub 3.5, wystąpi błąd podczas próby debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji w wersji 3.0 lub 3.5. Jest komunikat o błędzie, "nie można automatycznie wkroczyć do serwera." Aby rozwiązać ten problem, należy użyć Windows **Panelu sterowania**, **programy i funkcje** naprawić swoje [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] instalacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)   
- [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
-
-
-
+ [Instrukcje: Debugowanie samodzielnie hostowanej usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -1,14 +1,9 @@
 ---
 title: Odwołanie do zestawu reguł analizy kodu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279165"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786643"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Odwołanie zestawu reguł analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Podczas konfigurowania analizy kodu dla zarządzanych projektów kodu w [!INCLUD
 |[Natywny minimalny zestaw reguł](../code-quality/native-minimum-rules-rule-set.md)|Te reguły dotyczą najpoważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.|  
 |[Natywny zalecany zestaw reguł](../code-quality/native-recommended-rules-rule-set.md)|Te reguły dotyczą i najpoważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji.  Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.  Ten zestaw reguł jest przeznaczona do pracy z Visual Studio Professional edition lub nowszy.|  
 |[Zestaw reguł zabezpieczeń dla kodu zarządzanego](../code-quality/security-rules-rule-set-for-managed-code.md)|Ten zestaw reguł zawiera wszystkie reguły zabezpieczeń firmy Microsoft. Obejmują ten zestaw reguł, aby zmaksymalizować liczbę potencjalnych problemów z zabezpieczeniami, które są zgłaszane.|
-
-
-

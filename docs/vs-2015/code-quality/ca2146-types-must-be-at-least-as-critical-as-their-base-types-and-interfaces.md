@@ -1,13 +1,9 @@
 ---
 title: 'CA2146: Typy muszą być co najmniej tak krytyczne jak ich typy podstawowe i interfejsy | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2146
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
@@ -15,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 72a3c96c0e6d50144e7a28009b4496ea87273d9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1a0120caf16fbed34fa87ab71fe50abc4467d51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765977"
 ---
-# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy muszą być co najmniej tak krytyczne jak ich typy podstawowe i interfejsy
+# <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Typy muszą być co najmniej tak krytyczne jak ich typy i interfejsy podstawowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

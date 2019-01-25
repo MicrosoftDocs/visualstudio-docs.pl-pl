@@ -1,14 +1,9 @@
 ---
 title: Przełączniki wiersza polecenia Devenv | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - builds [Team System], command-line
@@ -25,13 +20,13 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754974"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 |[/ Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Uruchamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i loguje wszelką aktywność do pliku dziennika.|  
 |[/ Uruchomienia (devenv.exe)](../../ide/reference/run-devenv-exe.md) lub `/r`|Kompiluje i uruchamia określone rozwiązanie.|  
 |[/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Kompiluje i uruchamia określone rozwiązanie, minimalizuje IDE w rozwiązaniu jest uruchamiany, gdy IDE jest zamykane po rozwiązaniu zakończył działanie.|  
-|[/ UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Powoduje, że środowisko IDE będzie używać zmiennych środowiskowych PATH, INCLUDE i Biblioteka, aby uzyskać [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilacji, a nie ustawienia określone w sekcji katalogi VC ++ **projektów** opcji na liście **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Powoduje, że środowisko IDE będzie używać zmiennych środowiskowych PATH, INCLUDE i Biblioteka, aby uzyskać [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] kompilacji, a nie ustawienia określone w sekcji katalogi VC ++ **projektów** opcji na liście **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Ustawianie ścieżki i zmiennych środowiskowych dla kompilacji wiersza polecenia](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/ Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. W przypadku Brak uruchomionych wystąpień rozpocznie nowa instancja o uproszczonym układzie okna.|  
 |[/ ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Uruchamia wystąpienie programu Visual Studio IDE bez ładowania określonego dodatku.|  
 |[/ SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Uruchamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] w trybie awaryjnym, ładuje tylko środowisko domyślne i usługi oraz wydane wersje pakietów innych firm.|  
-|[/ ResetSkipPkgs (devenv.exe)](../../ide/reference/resetskippkgs-devenv-exe.md)|Czyści wszystkie tagi SkipLoading dodane do VSPackages przez użytkowników, którzy chcą uniknąć obciążania problem pakietów VSPackage.|  
+|[/ResetSkipPkgs (devenv.exe)](../../ide/reference/resetskippkgs-devenv-exe.md)|Czyści wszystkie tagi SkipLoading dodane do VSPackages przez użytkowników, którzy chcą uniknąć obciążania problem pakietów VSPackage.|  
 |[/ Konfiguracja (devenv.exe)](../../ide/reference/setup-devenv-exe.md)|Wymusza Visual Studio, aby scalić metadanych zasobu, który opisuje menu, paski narzędzi i grup poleceń, ze wszystkich pakietów VSPackage, które są dostępne.|  
   
  Użyj następujących przełączników wiersza polecenia do wykonania zadań opisanych. Te przełączniki wiersza polecenia nie są wyświetlane w środowisku IDE.  
@@ -104,11 +99,8 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 |[/ ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)|Określa konfigurację projektu do kompilacji lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również przełącznika/Project.|  
 |[/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)|Czyści, a następnie kompiluje określone rozwiązanie lub projekt zgodnie z konfiguracją określonego rozwiązania.|  
 |[/ ResetSettings (devenv.exe)](../../ide/reference/resetsettings-devenv-exe.md)|Przywraca ustawienia domyślne programu Visual Studio. Opcjonalnie resetuje ustawienia do określonego pliku .vssettings.|  
-|[/ Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Powiadamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do scalenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żadnych zmian w pamięci podręcznej pakietów w systemie i wyboru MEF.|  
+|[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Powiadamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do scalenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żadnych zmian w pamięci podręcznej pakietów w systemie i wyboru MEF.|  
 |[/ Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Uaktualnienie do bieżącego pliku określonego rozwiązania i wszystkie jego pliki projektu lub pliku określonego projektu, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] formatów tych plików.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

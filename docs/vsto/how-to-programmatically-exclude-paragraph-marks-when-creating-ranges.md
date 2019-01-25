@@ -10,17 +10,17 @@ helpviewer_keywords:
 - ranges, excluding paragraph marks in Word
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20227318063a2b9a2c7b64384d7c31b7fb956946
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872069"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Instrukcje: Programowe wykluczanie znaczników akapitu podczas tworzenia zakresów
   Zawsze, gdy tworzysz <xref:Microsoft.Office.Interop.Word.Range> obiektu w oparciu akapitu, wszystkie znaki niedrukowane, takie jak znaczniki akapitu, znajdują się w zakresie. Możesz wstawić tekst z akapitu źródła do docelowego akapitu. Jeśli chcesz podzielić akapit docelowy na oddzielnych akapitów, następnie należy najpierw usunąć znak z akapitu źródła. Ponadto ponieważ informacje o formatowaniu akapitu są przechowywane w ramach znak, nie można uwzględniać, to podczas wstawiania zakresu do istniejącego akapitu.  

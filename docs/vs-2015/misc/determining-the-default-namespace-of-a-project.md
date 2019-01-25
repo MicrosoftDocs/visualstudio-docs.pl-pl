@@ -1,25 +1,20 @@
 ---
 title: Określanie Namespace domyślnego projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - custom tools, computing default namespace
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791763"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Określanie Namespace domyślnego projektu
 Dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], jeśli `CustomToolNamespace` właściwość jest ustawiona w pliku wejściowego, a następnie wartość `CustomToolNamespace` staje się wartością domyślnego parametru przestrzeni nazw, przekazana do <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metody. W przeciwnym razie `wszDefaultNamespace` parametr przekazany do `Generate` jest zawsze równa głównej przestrzeni nazw. Aby uzyskać więcej informacji na temat przestrzenie nazw, zobacz [słowa kluczowe Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

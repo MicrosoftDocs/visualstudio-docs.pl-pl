@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - solutions [Office development in Visual Studio], configuration files
 - configuration files [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9db171b038178c9fe0bd4ffc4fbb98b221b9b4d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916643"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864478"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Instrukcje: Ustawianie informacji o konfiguracji dla rozwiązań pakietu Office
   Pliki konfiguracji można użyć do konfigurowania ustawień, które są specyficzne dla rozwiązania pakietu Office. Można określić ustawienia, takie jak zasady tworzenia powiązań zestawów, obiekty usług zdalnych, debugowania i ustawienia śledzenia.  

@@ -1,14 +1,9 @@
 ---
 title: 'DA0038: Wysoki współczynnik rywalizacji o blokadę | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,18 +12,18 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766205"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Wysoka liczba rywalizacji blokad
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Wysoki współczynnik rywalizacji o blokadę
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0038: wysoki współczynnik rywalizacji o blokadę](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0038: Wysoki współczynnik rywalizacji o blokadę](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) w witrynie docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -55,10 +50,9 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA003
  Ta reguła jest uruchamiana, gdy pomiarów dokonanych podczas uruchomienia profilowania wskazują, że istnieje zbyt dużej ilości Rywalizacja o blokady. Rywalizacji blokad opóźnienie wykonania wątków, które oczekują na blokadę. Należy zbadać nawet stosunkowo małe ilości Rywalizacja o blokady w testach jednostkowych lub w testach obciążenia uruchomione na dolnej sprzętowych zakończenia.  
   
 > [!NOTE]
->  Po bardzo wysoka liczba rywalizacji blokad zgłoszone w danych profilowania [DA0039: bardzo wysoki współczynnik rywalizacji o blokadę](../profiling/da0039-very-high-rate-of-lock-contentions.md) komunikat ostrzegawczy jest uruchamiany zamiast komunikat z informacjami.  
+>  Po bardzo wysoka liczba rywalizacji blokad zgłoszone w danych profilowania [DA0039: Bardzo wysoki współczynnik rywalizacji o blokadę](../profiling/da0039-very-high-rate-of-lock-contentions.md) komunikat ostrzegawczy jest uruchamiany zamiast komunikat z informacjami.  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
  Kliknij dwukrotnie komunikat, aby przejść do [znaczniki](../profiling/marks-view.md) widoku danych profilowania.  Znajdź **.NET CLR LocksAndThreads\Contention szybkość / sec** kolumny. Określa, czy określone faz wykonywania programu Rywalizacja o blokady w przypadku większych niż pozostałych faz.  
   
  Ta reguła jest uruchamiana tylko wtedy, gdy nie używasz metoda profilowania współbieżności. Metoda profilowania współbieżności to najlepsze narzędzie służące do diagnozowania problemów z wydajnością związanych z Rywalizacja o blokady w aplikacji. Zbieranie danych, aby zrozumieć zachowania blokującego aplikacji profilowania współbieżności. W tym opis blokad, które są silnie utrzymywał, ile czasu wykonywania wątków zostanie opóźnione, oczekiwania na blokady rywalizacją i jakie określonego kodu jest powiązana. Współbieżność profile zbiera dane na wszystkich zablokować rywalizacji, w tym zachowania blokującego natywnych urządzeń Windows, klas .NET Framework i inne biblioteki innych firm aplikacji odwołania. Aby uzyskać informacje dotyczące profilowania współbieżności z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE, zobacz [danych współbieżności procesu i zbieranie wątku](../profiling/collecting-thread-and-process-concurrency-data.md). Aby uzyskać łącza do informacji o współbieżności profilowania z wiersza polecenia, zobacz **za pomocą metody współbieżności zbieranie rywalizacji o zasoby i dane o aktywności wątku** części [przy użyciu profilowania metody z Wiersz polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-

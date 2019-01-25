@@ -9,17 +9,17 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79651c3404256b3abd7750cdfc20b33abe44c477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926740"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876112"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -59,11 +59,11 @@ Te kopie zestawów PIA pomagają programowi Visual Studio uniknąć kilka proble
   
 Program Visual Studio instaluje te kopie zestawów PIA w następujących lokalizacjach na komputerze deweloperskim:  
   
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*  
   
   (lub *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* na 64-bitowych systemach operacyjnych)  
   
-- *%ProgramFiles%\Microsoft visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*  
   
   (lub *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* na 64-bitowych systemach operacyjnych)  
   
@@ -102,7 +102,7 @@ W poniższej tabeli wymieniono podstawowe zestawy międzyoperacyjne, które są 
 |Microsoft Graph 14.0 Object Library (używany przez program PowerPoint, Access i Word dla wykresów)<br /><br /> Biblioteka obiektów programu Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|  
 |Program Microsoft InfoPath 2.0 biblioteki typów (tylko program InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|  
 |Program Microsoft InfoPath XML Interop Assembly (tylko program InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|  
-|Microsoft Office 14.0 Object Library (funkcje wspólne pakietu Office)<br /><br /> Biblioteki obiektów Microsoft Office 15.0 (funkcje wspólne pakietu Office)|zestawów Office.dll|  
+|Microsoft Office 14.0 Object Library (funkcje wspólne pakietu Office)<br /><br /> Biblioteki obiektów Microsoft Office 15.0 (funkcje wspólne pakietu Office)|office.dll|  
 |Formantu widoku pakietu Microsoft Office Outlook (może służyć w stronach sieci Web i aplikacji dostępu do skrzynki odbiorczej)|Microsoft.Office.Interop.OutlookViewCtl.dll|  
 |Biblioteka obiektów programu Microsoft Outlook 14.0<br /><br /> Biblioteka obiektów programu Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|  
 |Biblioteka obiektów programu Microsoft PowerPoint 14.0<br /><br /> Biblioteka obiektów programu Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|  

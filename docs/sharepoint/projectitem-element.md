@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2736dbcde8708589b4918979acacfdafa34cc4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890105"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864284"
 ---
 # <a name="projectitem-element"></a>ProjectItem — element
   Reprezentuje element projektu programu SharePoint. Ten element wymaganego głównego elementu z *spdata* pliku.  
@@ -57,11 +57,11 @@ ms.locfileid: "53890105"
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Extensiondata —](../sharepoint/extensiondata-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.<br /><br /> Może zawierać tylko jeden **extensiondata —** elementu.|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję elementów danych niestandardowych, które są skojarzone z elementem projektu programu SharePoint.<br /><br /> Może zawierać tylko jeden **extensiondata —** elementu.|  
 |[Featureproperties —](../sharepoint/featureproperties-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję wartości właściwości, które są uwzględniane przy użyciu funkcji, gdy aplikacja jest wdrożona w programie SharePoint.<br /><br /> Może zawierać tylko jeden **featureproperties —** elementu.|  
 |[Pliki](../sharepoint/files-element.md)|Opcjonalnie **FileCollectionType** elementu.<br /><br /> Określa pliki do wdrożenia przy użyciu elementu projektu programu SharePoint, takich jak funkcja elementu pliki i dane wyjściowe projektów zależnych programu SharePoint.<br /><br /> Włącz **pliki** lub **projectitemfolder —** elementu, ale nie oba.|  
-|[Projectitemfolder —](../sharepoint/projectitemfolder-element.md)|Opcjonalnie **ProjectItemFolderType** elementu.<br /><br /> Reprezentuje zamapowany folder.<br /><br /> Włącz **pliki** lub **projectitemfolder —** elementu, ale nie oba.|  
-|[SafeControls —](../sharepoint/safecontrols-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję formantów ASPX i składniki Web Part, które zostały oznaczone jako bezpieczne dla każdego użytkownika, dostęp do w dowolnej strony ASPX w witrynie programu SharePoint.<br /><br /> Może zawierać tylko jeden **SafeControls** elementu.|  
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Opcjonalnie **ProjectItemFolderType** elementu.<br /><br /> Reprezentuje zamapowany folder.<br /><br /> Włącz **pliki** lub **projectitemfolder —** elementu, ale nie oba.|  
+|[SafeControls](../sharepoint/safecontrols-element.md)|Element opcjonalny.<br /><br /> Reprezentuje kolekcję formantów ASPX i składniki Web Part, które zostały oznaczone jako bezpieczne dla każdego użytkownika, dostęp do w dowolnej strony ASPX w witrynie programu SharePoint.<br /><br /> Może zawierać tylko jeden **SafeControls** elementu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne
  Brak.  
@@ -70,7 +70,7 @@ ms.locfileid: "53890105"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|  
 |**Plik walidacji**|ProjectItemModelSchema.xsd|  
 |**Może być pusta.**|Nie|  

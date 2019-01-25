@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950819"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875722"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
   Można debugować rozszerzenia narzędzi programu SharePoint w wystąpieniu doświadczalnym lub regularnych wystąpieniach programu Visual Studio. Jeśli potrzebujesz rozwiązać problem zachowania rozszerzenia, możesz zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować, jak Visual Studio wykonuje polecenia programu SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "53950819"
 |AttachDebuggerToHostProcess|REG_DWORD, który określa, czy mają być wyświetlane okno dialogowe, które pozwala na dołączanie debugera do *vssphost4.exe* zaraz po jego uruchomieniu. Jest to przydatne, jeśli polecenie, które chcesz debugować jest wykonywana przez vssphost.exe, natychmiast po jego uruchomieniu, a nie jest wystarczająco dużo czasu na ręczne dołączenie debugera przed wykonaniem polecenia. Aby wyświetlić okno dialogowe *vssphost4.exe* wywołania <xref:System.Diagnostics.Debugger.Break%2A> metoda podczas uruchamiania.<br /><br /> Aby włączyć to zachowanie, należy ustawić tę wartość na 1. Aby wyłączyć to zachowanie, ustaw tę wartość na 0 lub Usuń tę wartość.<br /><br /> Jeśli ta wartość jest ustawiona na 1, również można zwiększyć wartość HostProcessStartupTimeout, aby przyznać sobie wystarczająco dużo czasu, aby dołączyć debuger, zanim Visual Studio *vssphost4.exe* do sygnalizowania, czy usługa została uruchomiona pomyślnie.|
 |ChannelOperationTimeout|REG_DWORD, który określa czas w sekundach, Visual Studio czeka na wykonanie polecenia programu SharePoint. Jeśli polecenie nie jest wykonywane w czasie, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> zgłaszany.<br /><br /> Wartość domyślna to 120 sekund.|
 |HostProcessStartupTimeout|REG_DWORD, który określa czas w sekundach, że program Visual Studio czeka na *vssphost4.exe* do sygnalizowania, czy usługa została uruchomiona pomyślnie. Jeśli *vssphost4.exe* nie sygnalizuje pomyślnego uruchomienie w czasie, <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> zgłaszany.<br /><br /> Wartość domyślna to 60 sekund.|
-|maxReceivedMessageSize|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach, wiadomościach WCF, które są przekazywane między Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1 048 576 bajtów (1 MB).|
+|MaxReceivedMessageSize|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach, wiadomościach WCF, które są przekazywane między Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1 048 576 bajtów (1 MB).|
 |MaxStringContentLength|REG_DWORD, który określa maksymalny dozwolony rozmiar w bajtach, ciągach, które są przekazywane między Visual Studio i *vssphost4.exe*.<br /><br /> Wartość domyślna to 1 048 576 bajtów (1 MB).|
 
 ## <a name="see-also"></a>Zobacz także

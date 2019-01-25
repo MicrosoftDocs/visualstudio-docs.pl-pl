@@ -1,23 +1,20 @@
 ---
 title: Definiowanie kształtów i łączników | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775998"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +47,3 @@ Istnieje kilka typów podstawowych kształtów, które mogą być używane do wy
   
 ##  <a name="shapeInheritance"></a> Kształt dziedziczenia  
  Kształt może dziedziczyć z innego kształtu. Jednak kształty muszą być tego samego rodzaju. Na przykład kształt geometryczny może dziedziczyć kształt geometryczny. Kształty dziedziczone mają przedziały i dekoratory ich kształtu podstawowego. Łączniki mogą dziedziczyć łączników.
-
-
-

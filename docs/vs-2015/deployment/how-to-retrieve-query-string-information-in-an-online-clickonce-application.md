@@ -1,14 +1,9 @@
 ---
-title: 'Porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798254"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Instrukcje: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *Ciągu zapytania* jest to część URL zaczynającym się od znaku zapytania (?), który zawiera dowolne informacje w formie *nazwa = wartość*. Załóżmy, że masz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji o nazwie `WindowsApp1` hostujący na `servername`, i chcesz przekazać wartość zmiennej `username` po uruchomieniu aplikacji. Adres URL może wyglądać następująco:  
@@ -47,7 +42,7 @@ ms.locfileid: "49278931"
 > [!NOTE]
 >  Przed wprowadzeniem decyzji, aby włączyć tę funkcję, zobacz sekcję "Zabezpieczenia" w dalszej części tego tematu.  
   
- Aby uzyskać informacje o sposobie tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenie za pomocą Mage.exe lub MageUI.exe, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Aby uzyskać informacje o sposobie tworzenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenie za pomocą Mage.exe lub MageUI.exe, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Począwszy od programu .NET Framework 3.5 z dodatkiem SP1, istnieje możliwość przekazać argumenty wiersza polecenia do trybu offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Jeśli chcesz podać argumenty do aplikacji, możesz przekazać parametry w pliku skrótu, za pomocą. Rozszerzenie APPREF MS.  
@@ -88,6 +83,3 @@ ms.locfileid: "49278931"
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)
-
-
-

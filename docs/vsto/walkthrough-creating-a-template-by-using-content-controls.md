@@ -9,17 +9,17 @@ helpviewer_keywords:
 - building blocks [Office development in Visual Studio]
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b2bc96a9df16c43c8fe4e66dbed4079a1ae3a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931989"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874182"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Przewodnik: Tworzenie szablonu za pomocą formantów zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowywania poziomie dokumentu, który używa kontrolek zawartości do tworzenia zawartości ze strukturą i wielokrotnego użytku w szablonie programu Microsoft Office Word.  
@@ -49,7 +49,7 @@ ms.locfileid: "53931989"
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Program Microsoft Word.  
+-   Microsoft Word.  
   
 ## <a name="create-a-new-word-template-project"></a>Utwórz nowy projekt szablonu programu Word  
  Utwórz szablon programu Word, dzięki czemu użytkownicy mogą łatwo tworzyć własne kopie.  

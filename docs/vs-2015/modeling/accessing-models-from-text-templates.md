@@ -1,25 +1,22 @@
 ---
 title: Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796869"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +61,7 @@ Here is a list of elements in the model:
   
 -   Szablon ładuje plik modelu, który określisz w `requires` właściwości.  
   
--   Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest `this.ExampleModel`.  
+-   Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest to `this.ExampleModel`.  
   
 -   Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.  
   
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  Aby załadować plik, najbardziej efektywną metodę polega na użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus. W typowym scenariuszu szablon tekstowy użyje dyrektywy specyficzne dla języka DSL załadować pierwszy model w zwykły sposób. Ten model zawiera ModelBus odwołania do innego modelu. ModelBus służy do otwierania przywoływanym modelem i dostęp do konkretnego elementu. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- W przypadku mniej zwykle możesz chcieć Otwórz plik modelu, do której masz tylko nazwę pliku, który może nie być w bieżącym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. W takim przypadku można otworzyć pliku przy użyciu techniki opisanej w [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+ W przypadku mniej zwykle możesz chcieć Otwórz plik modelu, do której masz tylko nazwę pliku, który może nie być w bieżącym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. W takim przypadku można otworzyć pliku przy użyciu techniki opisanej w [jak: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
 ## <a name="generating-multiple-files-from-a-template"></a>Generowanie wielu plików na podstawie szablonu  
  Jeśli chcesz wygenerować kilka plików — na przykład, aby wygenerować osobny plik dla każdego elementu w modelu, istnieje kilka możliwych rozwiązań. Domyślnie tylko jeden plik jest generowany dla każdego pliku szablonu.  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-

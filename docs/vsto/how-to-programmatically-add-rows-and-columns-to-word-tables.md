@@ -11,15 +11,15 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], adding to Word tables
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 122a30b25099d924702012bf1e2d7b8adcbafdca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875423"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Instrukcje: Programowe Dodawanie wierszy i kolumn do tabel programu Word
   W tabeli programu Microsoft Office Word komórki są zorganizowane w wiersze i kolumny. Możesz użyć <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Rows> obiektu, aby dodać wiersze do tabeli i <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Columns> obiektu, aby dodać kolumny.  
@@ -33,7 +33,7 @@ ms.locfileid: "53909089"
 >  Ten kod zadziała tylko w projektach, które tworzysz przy użyciu dowolnej z poniższych szablonów projektu:  
 > 
 > - Dokument programu Word 2013  
-> - Szablon programu Word 2013  
+> - Word 2013 Template  
 > - Dokument programu Word 2010  
 > - Szablon programu Word 2010  
 > 

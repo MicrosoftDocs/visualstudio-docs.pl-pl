@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871060"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869021"
 ---
 # <a name="develop-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typu projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint oraz elementów witryny. Aby uzyskać listę typów dostępnych projektów, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej znajduje się opis elementów i właściwości projektu programu SharePoint.  
@@ -101,7 +101,7 @@ ms.locfileid: "53871060"
 |Lokalizacja wdrożenia|Pełna ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych główny wdrożenia i ścieżka wdrożenia.|  
 |Ścieżka do wdrożenia|Ścieżka względna pliku w pliku serwera SharePoint, takich jak Workflow1\\. W pełni kwalifikowanej ścieżki pliku jest tworzona przez dołączenie *Ścieżka rozmieszczania* wartość na końcu *główny wdrożenia* wartość.<br /><br /> Wybranie wartości z *RootFile* dla *typu wdrożenia* zmiany właściwości *główny wdrożenia* właściwości \<SharePointRoot >\\, dając w efekcie w pełni kwalifikowaną ścieżką \<SharePointRoot > \Workflow1\\. Aby uzyskać więcej informacji, zobacz [pakowania i wdrażania rozwiązań programu SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Główny wdrożenia|ciąg. Folder główny, gdzie plik jest wdrożony na serwerze programu SharePoint. Na przykład \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Wartość *główny wdrożenia* właściwość jest określana przez *typu wdrożenia* ustawienie.|  
-|Typ wdrożenia|Typ wdrażania pliku, który określa jego *główny wdrożenia* wartość. Może być jednym z następujących wartości:<br /><br /> NoDeployment:  *\<żadnej wartości >*<br /><br /> Manifest elementu: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> Plik elementu: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Typ wdrożenia|Typ wdrażania pliku, który określa jego *główny wdrożenia* wartość. Może być jednym z następujących wartości:<br /><br /> NoDeployment:  *\<żadnej wartości >*<br /><br /> ElementManifest: *\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> Plik elementu: *\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile: *\<SharePointRoot>\Template\\*<br /><br /> RootFile: *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot>\Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nazwa pliku|Nazwa pliku lub folderu dla pliku elementu.|  
 |Pełna ścieżka|Lokalizacja pliku dla elementu. (Tylko do odczytu).|  
   

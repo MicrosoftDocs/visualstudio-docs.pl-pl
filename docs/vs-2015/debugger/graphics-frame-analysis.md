@@ -1,27 +1,22 @@
 ---
 title: Analiza klatek grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7ac0fedd5c78af474e37079f640f74a0d5e0bf8b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54154497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781275"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,6 +202,3 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 |**Kompresji tekstury BC**|Umożliwia zablokowanie kompresji dla wszystkich tekstury, które mają B8G8R8X8, B8G8R8A8 lub R8G8B8A8 wariant format pikseli. Warianty format B8G8R8X8 są kompresowane przy użyciu formantów BC1; B8G8R8A8 i wariantów format R8G8B8A8 są kompresowane przy użyciu BC3.<br /><br /> Aby uzyskać więcej informacji, zobacz [wariant kompresji tekstury BC](../debugger/bc-texture-compression-variant.md).|  
   
  Większość wariantów powstaje przetestowanego rozwiązania ze szczegółami: "25 procent szybciej jest zmniejszenie rozmiaru tekstura o połowę" lub "Włączanie 2 x MSAA jest tylko 2% wolniej". Inne odmiany może wymagać interpretacji więcej — na przykład, jeśli wariant, który zmienia rozmiary okienka ekranu do 1 x 1 wykazuje duże są bardziej wydajne, może to wskazywać, że renderowanie jest bottlenecked przez współczynnik wypełnienia niski; Alternatywnie Jeśli nie ma żadnych istotnych zmian w wydajności, może to wskazywać, renderowanie jest bottlenecked przez przetwarzanie wierzchołka.
-
-
-

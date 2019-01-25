@@ -22,15 +22,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3bb4f99c4a77a398cb1f5e3765ee6353a367fb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2898f4ed7c10e46801def2f409074f41004b343
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875852"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.  
@@ -133,7 +133,7 @@ ms.locfileid: "53923156"
   
  Następujące grupy aplikacji nie mają wymagania dotyczące opracowywania inną:  
   
-- [Program Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
 - [Word, InfoPath i PowerPoint](#WordAndInfoPath)  
   

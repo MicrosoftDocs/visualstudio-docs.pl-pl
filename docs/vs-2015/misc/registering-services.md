@@ -1,30 +1,25 @@
 ---
 title: Rejestrowanie usługi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775523"
 ---
 # <a name="registering-services"></a>Rejestrowanie usługi
 Aby zapewnić obsługę ładowania na żądanie, dostawca usług należy zarejestrować jego usług globalnych z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Podczas tworzenia aplikacji, dostawcom usług zarządzanych rejestracji usług i zastąpienia usługi przez dodawanie atrybutów do kodu źródłowego dla pakietów, a następnie tworzenia pakietów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Spowoduje to uruchomienie narzędzia RegPkg.exe na wynikowy zestaw rejestrowania pakietu i przygotowywanie wdrożenia. Aby uzyskać więcej informacji, zobacz [porady: rejestrowanie usługi](../misc/how-to-register-a-service.md).  
+ Podczas tworzenia aplikacji, dostawcom usług zarządzanych rejestracji usług i zastąpienia usługi przez dodawanie atrybutów do kodu źródłowego dla pakietów, a następnie tworzenia pakietów [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Spowoduje to uruchomienie narzędzia RegPkg.exe na wynikowy zestaw rejestrowania pakietu i przygotowywanie wdrożenia. Aby uzyskać więcej informacji, zobacz [jak: Zarejestruj usługę](../misc/how-to-register-a-service.md).  
   
  Dostawcy usług niezarządzanych musisz się zarejestrować, usług, które dostarczają z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w usługach sekcji lub usługa zastępuje części rejestru systemowego. Poniższy fragment pliku reg pokazuje, jak usługa SVsTextManager, może zostać zarejestrowana:  
   

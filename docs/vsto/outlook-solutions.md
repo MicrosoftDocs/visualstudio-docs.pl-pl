@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], Outlook
 - Outlook [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], Outlook solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5537b07263cbdf48da9a0ce2e5705b8bd71941e9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868699"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870025"
 ---
 # <a name="outlook-solutions"></a>rozwiązania programu Outlook
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft Office Outlook. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu Outlook, Rozszerz funkcje programu Outlook lub dostosowywanie interfejsu użytkownika (UI) programu Outlook. Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  

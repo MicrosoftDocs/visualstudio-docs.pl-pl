@@ -1,13 +1,9 @@
 ---
 title: Debugowanie just in time
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - CSharp
@@ -19,13 +15,13 @@ ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea9cb8b37c95153cc7a9509cced643c094fc7c20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 436cb6cd803eb351113ddfc9ca39934e8557c573
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786132"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

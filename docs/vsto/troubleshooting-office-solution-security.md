@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 105e28398b3ee5119ba66e2a666856e9edd4755c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f2cb978ddd62c3e274133e2d209c2634783c708
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955662"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871237"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Rozwiązywanie problemów z zabezpieczeniami rozwiązań pakietu Office
   Ten temat zawiera wskazówki dotyczące rozwiązywania typowych problemów, które można napotkać podczas pracy z Zabezpieczanie rozwiązań pakietu Office.  

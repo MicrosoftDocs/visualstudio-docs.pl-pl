@@ -1,14 +1,9 @@
 ---
 title: Dodawanie adnotacji do zachowania blokującego | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790763"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834371"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,6 +118,3 @@ Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze 
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
  [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)   
  [Blog zespołu ds. analizy kodu](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

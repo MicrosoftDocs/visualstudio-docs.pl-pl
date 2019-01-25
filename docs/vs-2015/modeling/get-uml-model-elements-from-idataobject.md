@@ -1,25 +1,22 @@
 ---
 title: Pobieranie elementów modelu UML z IDataObject | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, copy and paste
 ms.assetid: e0b9cec8-3b93-4a24-8bd3-3e086501d387
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a560ce5116c52b8c2e83ce9b28252f060e2485f1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755101"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Pobieranie elementów modelu UML z elementu IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +29,11 @@ Gdy użytkownik przeciągnie elementy z dowolnego źródła na diagramie, przeci
 ## <a name="code-sample"></a>Przykładowy kod  
  Projekt musi odwoływać się do następujących [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] zestawów:  
   
- **Microsoft.VisualStudio.Modeling.Sdk. [wersja]**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version]**  
   
- **Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [wersja]**  
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]**  
   
- **Przestrzeń nazw System.Windows.Forms**  
+ **System.Windows.Forms**  
   
 ```  
 using Microsoft.VisualStudio.Modeling;    
@@ -86,6 +83,3 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Zobacz też  
  [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)   
  [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

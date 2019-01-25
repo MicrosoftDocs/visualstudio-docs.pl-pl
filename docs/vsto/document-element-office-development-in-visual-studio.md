@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1798815ee3216d6f3bb41eae70ae3e2cdc0121
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854759"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866389"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;dokument&gt; — element (Office development w programie Visual Studio)
   `document` Elementu `vstov4` przestrzeni nazw są przechowywane informacje dotyczące dostosowywania przypadku dostosowań na poziomie dokumentu.

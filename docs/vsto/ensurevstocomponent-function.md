@@ -7,15 +7,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88ed4de9f126f819f0cbdc7f3f49b4798ccb2195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 912c28086bb918afa406fca7cf4acce06e5be099
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838966"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866085"
 ---
 # <a name="ensurevstocomponent-function"></a>Ensurevstocomponent — funkcja
   Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  

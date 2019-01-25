@@ -35,15 +35,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1656f40cd0d75c73f9f1e4b3a74a6f2b7e7ad0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a837aec3c5f87b51c5874f2fa7bd3f155479b6c2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956547"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868852"
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają dla Ciebie dokumentów projektów i szablonów, które mają następujące funkcje:  

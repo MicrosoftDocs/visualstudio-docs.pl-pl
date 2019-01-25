@@ -18,17 +18,17 @@ helpviewer_keywords:
 - hiding custom task panes
 - task panes [Office development in Visual Studio], creating
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 985573e6110ddb3ab055f919a14b95faa8cc303a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943567"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875280"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Przewodnik: Synchronizuj niestandardowego okienka zadań z przyciskiem wstążki
   Ten przewodnik przedstawia sposób tworzenia niestandardowego okienka zadań, które użytkownicy mogą ukryć lub wyświetlić, klikając przycisk przełącznika na Wstążce. Należy zawsze utworzyć elementu interfejsu użytkownika, takie jak przycisk, który można kliknąć, aby wyświetlić lub ukryć niestandardowego okienka zadań, ponieważ aplikacje Microsoft Office nie umożliwiają domyślne użytkownikom wyświetlanie lub ukrywanie niestandardowych okienek zadań.  
@@ -83,7 +83,7 @@ ms.locfileid: "53943567"
   
 6.  Z **formanty wstążki Office** karcie **przybornika**, przeciągnij **ToggleButton** na **Menedżera okienka zadań** grupy.  
   
-7.  Kliknij przycisk **toggleButton1**.  
+7.  Click **toggleButton1**.  
   
 8.  W **właściwości** oknie **etykiety** właściwości **Pokaż okienko zadań**.  
   

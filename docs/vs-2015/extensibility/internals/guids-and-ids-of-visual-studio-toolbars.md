@@ -1,13 +1,9 @@
 ---
 title: Identyfikatory GUID i identyfikatory pasków narzędzi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -19,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c404870417fc6b3d1cf95fcdeda2b6d8dfb43fb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775007"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identyfikatory GUID i identyfikatory pasków narzędzi programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

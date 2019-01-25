@@ -3,7 +3,7 @@ title: Dodawanie usługi Mobile Services przy użyciu usług połączonych
 description: Dodawanie usługi Mobile Services za pomocą okna dialogowego programu Visual Studio Dodaj połączone usługi
 documentationcenter: na
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 75c3cb93-88e1-476d-a416-f34caa3608e3
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 5192dcd2a19904db1c97136f41e1e6a1af112a95
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756078"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Dodawanie usługi Mobile Services za pomocą programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy użyciu usług Azure Mobile Services **Dodaj podłączoną usługę** okna dialogowego. Możesz połączyć się z dowolnej aplikacji klienckiej języka C#, dowolnej aplikacji JavaScript lub aplikacji Cordova dla wielu platform. Po nawiązaniu połączenia, można utworzyć i uzyskać dostęp do danych, tworzenie niestandardowych interfejsów API i zaplanowane zadania lub dodawać obsługę powiadomień wypychanych.  Operacja usług połączonych dodaje wszystkie odpowiednie odwołania i kod połączenia. Możesz również korzystać z zalet wbudowanej obsługi uwierzytelniania przy użyciu różnych popularnych schematów tożsamości, takiego jak Azure AD, Facebook, Twitter i Accounts firmy Microsoft.
@@ -70,7 +70,7 @@ Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języ
 ## <a name="next-steps"></a>Następne kroki
 Zadawanie pytań i uzyskiwanie pomocy:
 
-* [MSDN Forum: Usług Azure Mobile Services](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
+* [MSDN Forum: Azure Mobile Services](https://social.msdn.microsoft.com/forums/azure/home?forum=azuremobile)
 * [Usług Azure Mobile Services w blogu zespołu programu Microsoft Azure](https://azure.microsoft.com/blog/topics/mobile/)
 * [Usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/services/mobile-services/)
 * [Dokumentacja usług Azure Mobile Services w witrynie azure.microsoft.com](https://azure.microsoft.com/documentation/services/mobile-services/)

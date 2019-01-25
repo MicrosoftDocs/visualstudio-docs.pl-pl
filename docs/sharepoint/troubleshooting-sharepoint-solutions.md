@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957965"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870626"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Rozwiązywanie problemów z rozwiązaniami SharePoint
   Następujące problemy lub alerty, mogą wystąpić podczas debugowania rozwiązań programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz [debugowanie rozwiązania przepływu pracy programu SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -174,7 +174,7 @@ ms.locfileid: "53957965"
 
 -   Administracja centralna programu SharePoint 2010. Aby uzyskać więcej informacji, zobacz [zarządzania modelu usługi łączności danych biznesowych](http://go.microsoft.com/fwlink/?LinkID=181472) witryny sieci Web TechNet firmy Microsoft.
 
--   Windows PowerShell. Można usunąć modelu, wpisując polecenie w wierszu polecenia: **Usuń SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [ogólne polecenia cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) witryny sieci Web TechNet firmy Microsoft.
+-   Windows PowerShell. Można usunąć modelu, wpisując polecenie w wierszu polecenia: **Remove-SPBusinessDataCatalogModel**. Aby uzyskać więcej informacji, zobacz [ogólne polecenia cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) witryny sieci Web TechNet firmy Microsoft.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Błąd jest wyświetlany, gdy użytkownik próbuje wyświetlić wizualny składnik web part w programie SharePoint
  Ten problem występuje, gdy **ścieżki** właściwości kontrolki użytkownika nie zaczyna się od ciągu "CONTROLTEMPLATES\\".

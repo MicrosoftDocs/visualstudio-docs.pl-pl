@@ -1,26 +1,21 @@
 ---
-title: 'Wskazówki: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763147"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematyczne przy użyciu języka Visual C# i następnie pakietu SDK jako programu Visual Studio rozszerzenia (VSIX). Wykonasz następujące procedury:  
@@ -120,7 +115,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 22. W **Eksploratora rozwiązań**, wybierz **SimpleMath.winmd**.  
   
-23. Na pasku menu wybierz **widoku**, **właściwości** (klawiatura: naciśnij klawisz F4).  
+23. Na pasku menu wybierz **widoku**, **właściwości** (klawiatury: Wybierz klawisz F4).  
   
 24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,**.  
   
@@ -179,7 +174,6 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
     Pomyślnie tworzone i używane rozszerzenie SDK.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Wskazówki: Tworzenie zestawu SDK przy użyciu języka JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
  [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)
-

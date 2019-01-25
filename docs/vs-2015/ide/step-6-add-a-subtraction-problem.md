@@ -1,27 +1,22 @@
 ---
 title: Krok 6. Dodawanie problemu odejmowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796627"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
+# <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie zadania z odejmowaniem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, jak wykonywać następujące zadania:  
@@ -88,9 +83,6 @@ Quiz matematyczny z problemem odejmowania
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: problemów dodawać mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [kroku 7: Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie wprowadź procedury obsługi zdarzeń dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5: Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

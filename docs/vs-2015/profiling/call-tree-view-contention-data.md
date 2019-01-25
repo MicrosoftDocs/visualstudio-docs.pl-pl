@@ -1,27 +1,22 @@
 ---
 title: Widok drzewa wywołań - dane Kontencji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791656"
 ---
 # <a name="call-tree-view---contention-data"></a>Widok drzewa wywołań — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
   
  Po ustawieniu węzła głównego, można wyeliminować wszystkie wpisy z widoku, z wyjątkiem poddrzewo wybranego węzła. Aby przywrócić węzła głównego oryginalnego węzła, kliknij prawym przyciskiem myszy w widoku drzewa wywołań, a następnie kliknij **resetowania głównego**.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Wyłączny czas blokowania**|Czas wystąpienia tej funkcji w tej ścieżce wykonywania zostały zablokowane wykonania podczas uruchomienia profilowania. Czas nie obejmuje czas blokowania funkcji podrzędnych, które zostały wywołane przez funkcję.|  
 |**% Własnego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był wyłączny czas blokowania dla tej funkcji w tej ścieżce wykonywania.|  
@@ -52,7 +47,7 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
 |**% Całkowitego czasu blokowania**|Procent wszystkich czas blokowania w profilowania, był całkowity czas blokowania dla wystąpień tej funkcji w tej ścieżce wykonywania.|  
 |**Rywalizacje włączne**|Całkowita liczba rywalizacji, które blokowane wystąpienia tej funkcji w tej ścieżce wykonywania. Liczba uwzględnia rywalizacji wywołanych przez funkcję funkcji podrzędnych.|  
 |**% Rywalizacji włącznych**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji włącznych wystąpień tej funkcji w tej ścieżce wykonywania.|  
-|**poziom**|Poziom funkcji w drzewie wywołań. Tylko w raportach VSReport, wiersza polecenia. Aby uzyskać więcej informacji, zobacz w [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Poziom**|Poziom funkcji w drzewie wywołań. Tylko w raportach VSReport, wiersza polecenia. Aby uzyskać więcej informacji, zobacz w [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
 |**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
 |**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
@@ -61,12 +56,9 @@ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które został
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
+ [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view.md)   
  [Widok drzewa wywołań - Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Widok drzewa wywołań - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)   
  [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
-
-
-

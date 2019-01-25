@@ -2,19 +2,19 @@
 title: Analizowanie jakości kodu aplikacji Store przy użyciu statycznej analizy kodu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 2341013d-a08b-49a7-b6fd-a7b6aaa797e0
 caps.latest.revision: 13
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3f8be03c55ca5415041c2db70360719a184563b2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 19cb42eeac68a4a6ec112c8edade9b67e7f39116
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783509"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu aplikacji Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], saving
 - Word [Office development in Visual Studio], saving documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6031d301db3592434afcb06f19c34677ab510d68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821597"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866640"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Instrukcje: Programowe zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty Microsoft Word pakietu Office. Można zapisać dokumentu, bez zmiany nazwy dokumentu lub zapisaniu dokumentu pod nową nazwą.  

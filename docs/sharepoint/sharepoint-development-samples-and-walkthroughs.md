@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
 - SharePoint development in Visual Studio, walkthroughs
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a62ee1c081399cdbaaa586256a25f859e02acbc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874019"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Rozwój SharePoint — przykłady i przewodniki
   Ta sekcja zawiera przykładowe aplikacje, przykładowy kod i instrukcje krok po kroku instruktaży, które ilustrują składni, struktury i technik umożliwiających tworzenie rozwiązań programu SharePoint.  

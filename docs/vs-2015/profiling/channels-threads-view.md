@@ -1,14 +1,9 @@
 ---
 title: Kanały (Widok wątków) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794205"
 ---
 # <a name="channels-threads-view"></a>Kanały (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +41,10 @@ Wizualizator współbieżności przedstawia cztery rodzaje kanałów: wątek kan
 |Wątek Winsock|Wątek, który został utworzony jako wątek usługi Winsock.|  
 |Pula wątków|Wątek, który został utworzony przez CLR puli wątków.|  
   
-## <a name="disk-channels"></a>Kanały dysku  
+## <a name="disk-channels"></a>Disk Channels  
  Kanały dysku odpowiadają fizycznych dysków w komputerze. Ponieważ istnieje osobny kanał dla operacji odczytu i zapisu dla każdego dysku fizycznego w systemie, każdy dysk ma dwa kanały. Numery dysków odnoszą się do nazwy urządzeń jądra. Kanał dysku jest wyświetlany tylko jeśli były wykonywane działania na dysku.  
   
-## <a name="marker-channels"></a>Kanały znacznika  
+## <a name="marker-channels"></a>Marker Channels  
  Kanały znacznika odpowiadają zdarzenia wygenerowane przez aplikację i bibliotek, które są używane. Na przykład biblioteka zadań równoległych, biblioteka równoległych wzorców i C++ AMP generować zdarzenia, które są wyświetlane w postaci znaczników. Każdy znacznik kanał jest skojarzony z identyfikator wątku, który jest wyświetlany obok opis kanału. Identyfikator identyfikuje wątku, który wygenerował zdarzenie. Opis kanału zawiera nazwę dostawcy śledzenie zdarzeń dla Windows (ETW), który wygenerował zdarzenia. Jeśli kanał Wyświetla zdarzenia z [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md), wyświetlana jest także nazwa serii.  
   
 ## <a name="gpu-channels"></a>Kanały procesora GPU  
@@ -57,6 +52,3 @@ Wizualizator współbieżności przedstawia cztery rodzaje kanałów: wątek kan
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)
-
-
-

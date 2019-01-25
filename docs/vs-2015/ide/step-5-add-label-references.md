@@ -1,25 +1,20 @@
 ---
 title: Krok 5. Dodawanie odwołań do etykiet | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 829911bc2f08010b9e0d3d9c710862097720d4df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285227"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833668"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Program musi śledzić, które formanty etykiet wybiera gracz. W tej chwili prog
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]  
   
-     Te zmienne odwołania wyglądają podobnie do instrukcji było wcześniej używane do dodawania obiektów (takich jak `Timer` obiektów `List` obiekty, i `Random` obiektów) do formularza. Jednakże te instrukcje nie powodują dwa dodatkowe formanty etykiet do wyświetlane w formularzu, ponieważ nie istnieje żadne `new` słowa kluczowego w jednym z dwóch instrukcji. Bez `new` — słowo kluczowe, zostanie utworzony żaden obiekt. Dlatego `firstClicked` i `secondClicked` są nazywane zmiennymi odwołania: one po prostu śledzić (lub odwoływać się do) `Label` obiektów.  
+     Te zmienne odwołania wyglądają podobnie do instrukcji było wcześniej używane do dodawania obiektów (takich jak `Timer` obiektów `List` obiekty, i `Random` obiektów) do formularza. Jednakże te instrukcje nie powodują dwa dodatkowe formanty etykiet do wyświetlane w formularzu, ponieważ nie istnieje żadne `new` słowa kluczowego w jednym z dwóch instrukcji. Bez `new` — słowo kluczowe, zostanie utworzony żaden obiekt. Dlatego `firstClicked` i `secondClicked` są nazywane zmiennymi odwołania: Oni po prostu śledzić (lub odwoływać się do) `Label` obiektów.  
   
      Jeśli zmienna nie jest rejestrowanie informacji o obiekcie, jest ustawiona na specjalną zarezerwowaną wartość: `null` w języku Visual C# i `Nothing` w języku Visual Basic. Tak, po uruchomieniu programu, zarówno `firstClicked` i `secondClicked` są ustawione na `null` lub `Nothing`, co oznacza, że zmienne nie są utrzymywanie o wszystkim.  
   
@@ -53,9 +48,6 @@ Gra w dopasowywanie pokazująca jedną ikonę
   
 ### <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć  
   
--   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodawanie czasomierza](../ide/step-6-add-a-timer.md).  
+-   Aby przejść do następnego kroku samouczka, zobacz [krok 6: Dodaj czasomierz](../ide/step-6-add-a-timer.md).  
   
--   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie obsługi zdarzeń kliknij do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md).
-
-
-
+-   Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4: Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md).

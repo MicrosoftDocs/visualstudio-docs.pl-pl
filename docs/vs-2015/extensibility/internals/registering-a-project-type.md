@@ -1,14 +1,9 @@
 ---
 title: Rejestrowanie typu projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774309"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -275,4 +270,3 @@ Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożli
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   
  [Tworzenie wystąpień projektów przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

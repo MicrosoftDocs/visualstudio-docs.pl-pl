@@ -13,15 +13,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24650d2cb4cbed3a5b4c4f1ee02e395e7b8c2988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9deabada5a9e3d69c3d3a9a821abf7d6b8dcf56e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828564"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875618"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifesty aplikacji i wdrożenia w rozwiązaniach pakietu Office
   Manifest aplikacji jest plikiem XML, który dostarcza informacje o używanym przez rozwiązania do pakietu Office, aby znaleźć i zaktualizować jego zestawów. Manifest aplikacji może służyć z manifestu wdrażania jest plikiem XML przechowywane na serwerze, który zawiera informacje potrzebne do zlokalizowania aktualna wersja manifestu aplikacji i zestawy.

@@ -11,12 +11,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60e7a94acd9fb758c722374b4ef2317cd2043c03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790049"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -85,7 +85,7 @@ Aby opisać modyfikatorów symbole ma być stosowana reguła nazewnictwa, należ
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami.
+Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami. Reguły nazewnictwa tylko będzie zgodna z podpisami, które mają wszystkie modyfikatory, które są określone w `required_modifiers`. Jeśli pominiesz tę właściwość, jest używana domyślna wartość pusta lista, oznacza to, brak określonych modyfikatorów wymaganych do dopasowania. Oznacza to, że symbol modyfikatorów nie mają wpływu na informację, czy ta reguła jest stosowana.
 
 - `abstract` lub `must_inherit`
 - `async`

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - NamedRange control, events
 - NamedRange control, data binding
 - NamedRange control
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f23da0d6e91e63eaab9cd1153f07727b6399b375
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c5c0717fae0446957ccec9b2d09615ca982c1a8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871888"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871718"
 ---
 # <a name="namedrange-control"></a>NamedRange — formant
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontrolka jest w zakresie, który ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  

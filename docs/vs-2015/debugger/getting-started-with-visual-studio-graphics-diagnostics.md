@@ -1,24 +1,20 @@
 ---
 title: Wprowadzenie do diagnostyki grafiki | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 271d3e181fee4c7491b785808d0b4b9856755e32
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781753"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,4 +105,4 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
  Aby dowiedzieć się więcej o sposobie używania narzędzia Analizator grafiki programu ze sobą, zobacz [przykłady](../debugger/graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Zobacz też
- [Direct3D 12 grafiki](http://msdn.microsoft.com/en-us/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)
+ [Direct3D 12 grafiki](http://msdn.microsoft.com/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)

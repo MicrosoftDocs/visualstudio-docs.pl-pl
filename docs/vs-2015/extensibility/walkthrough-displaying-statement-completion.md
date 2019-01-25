@@ -1,28 +1,23 @@
 ---
 title: 'Przewodnik: Wyświetlanie uzupełniania instrukcji | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733038"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774887"
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Przewodnik: wyświetlanie uzupełniania instrukcji
+# <a name="walkthrough-displaying-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania składni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez określenie identyfikatorów, dla których chcesz udostępnić uzupełniania i następnie wyzwalania sesja kończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i następnie wyświetlić uzupełnianie po prostu tego typu lub mogą wyzwalać zakończenia dla istniejącego typu zawartości — na przykład "plaintext". W tym przewodniku pokazano, jak wyzwolić uzupełniania instrukcji dla typu zawartości "w postaci zwykłego tekstu", który jest typem zawartości pliki tekstowe. Typ zawartości "text" jest element nadrzędny elementu wszystkich innych typów zawartości, w tym kodu i pliki XML.  
@@ -209,5 +204,4 @@ Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez okr
 4.  Podczas wpisywania najpierw "a", a następnie "d" powinna być wyświetlana lista zawierająca "Dodawanie" i "dostosowanie". Należy zauważyć, że wybrano dodawania. Podczas wpisywania tekstu "d", lista może zawierać tylko "dodatkowe", który jest zaznaczony. Zatwierdź "dodatkowe", naciskając klawisz spacji, tabulatorów ani Enter lub odrzucić listę, wpisując Esc lub dowolny inny klawisz.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

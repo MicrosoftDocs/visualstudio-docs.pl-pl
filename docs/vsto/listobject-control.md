@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ListObject control, events
 - ListObject control, data binding
 - ListObject control, improving performance when bound to data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7bcd1c3710b9306d9a02dd552c7924eb27ab568
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945187"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862892"
 ---
 # <a name="listobject-control"></a>ListObject — formant
   <xref:Microsoft.Office.Tools.Excel.ListObject> Formant jest listę, która udostępnia zdarzenia i może być powiązana z danymi. Po dodaniu listy do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject> formant, który można programować względem bezpośrednio, bez konieczności przechodzenia z modelu obiektów programu Microsoft Office Excel.  

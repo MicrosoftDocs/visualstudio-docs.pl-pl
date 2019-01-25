@@ -1,14 +1,9 @@
 ---
 title: 'Instrukcje: Debugowanie zoptymalizowanego kodu | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ae18cda3d3cbba28c53402e7989c83c60007b2fc
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+manager: jillfra
+ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790750"
 ---
 # <a name="how-to-debug-optimized-code"></a>Instrukcje: Debugowanie zoptymalizowanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UWAGA]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
 >  [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
@@ -95,11 +90,8 @@ UWAGA]
 for (x=0; x<10; x++)  
 ```  
   
- Załóżmy, że Ustaw punkt przerwania w tym wierszu. Można by oczekiwać punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że to tylko należy wykonać jeden raz i przenosi ją wyjścia z pętli. Przenosi punkt przerwania z nim. Instrukcje, które porównania i zwiększ `x` pozostają wewnątrz pętli. Po wyświetleniu **dezasemblacji** oknie [jednostka kroku](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) jest automatycznie ustawiana na instrukcji lepszą kontrolę, co jest przydatne, jeśli krok po kroku przez zoptymalizowany kod.  
+ Załóżmy, że Ustaw punkt przerwania w tym wierszu. Można by oczekiwać punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że to tylko należy wykonać jeden raz i przenosi ją wyjścia z pętli. Przenosi punkt przerwania z nim. Instrukcje, które porównania i zwiększ `x` pozostają wewnątrz pętli. Po wyświetleniu **dezasemblacji** oknie [jednostka kroku](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) jest automatycznie ustawiana na instrukcji lepszą kontrolę, co jest przydatne, jeśli krok po kroku przez zoptymalizowany kod.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
-
-
-

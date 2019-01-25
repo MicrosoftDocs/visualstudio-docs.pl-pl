@@ -1,14 +1,9 @@
 ---
 title: Strona opcji, Edytor tekstu — właściwości węzła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767995"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
 |WordWrap|Get/Set (wartość logiczna)|Określa, czy widok będzie zawijał długie wiersze na granicy słowa. Ustawienie tej opcji na `true` powoduje, że `VirtualSpace` element właściwości (na tej liście), należy ustawić `false`.|  
 |WordWrapGlyphs|Get/Set (wartość logiczna)|Wyświetla znacznik na końcu wiersza; oznacza to, że wiersz jest zawijany do następnego wiersza.|  
 |EnableLeftClickForURLs|Get/Set (wartość logiczna)|Określa, czy edytor podkreśla adresy URL i włącza przejście do adresu URL w zarejestrowanej systemowej przeglądarce WWW po pojedynczym kliknięciu lewym przyciskiem myszy.|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Określa styl wcięcia tekstu: domyślne, inteligentne lub brak.|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Określa styl wcięcia tekstu: Domyślne, inteligentne lub Brak.|  
 |TabSize|Get/Set (Long)|Reprezentuje liczbę spacji, które są równe tabulatorowi. Ustawienie liczby całkowitej spoza zakresu 1-60 (włącznie) kończy się niepowodzeniem.|  
 |InsertTabs|Get/Set (wartość logiczna)|Jeśli `True`, są używane znaki tabulacji.|  
 |IndentSize|Get/Set (Long)|Reprezentuje liczbę spacji, która jest równa jednemu poziomowi wcięcia. Ustawienie wartości całkowitej spoza zakresu 1-60 (włącznie) kończy się niepowodzeniem.|  
@@ -76,6 +71,3 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
  [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Strona opcji, środowisko — właściwości węzła](../../ide/reference/options-page-environment-node-properties.md)   
  [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

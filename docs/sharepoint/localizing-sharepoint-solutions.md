@@ -12,17 +12,17 @@ helpviewer_keywords:
 - globalizing [SharePoint development in Visual Studio]
 - localizing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb23307326d1018238354997b98a0cef48efc2c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837359"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864374"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalizowanie rozwiązań SharePoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "53837359"
 |Typ plików zasobów|Opis|  
 |------------------------|-----------------|  
 |Domyślny|Znany również jako bazoey zasoby, domyślne pliki zasobów zawierją ciągi zlokalizowane dla domyślnej kultury, na przykład w języku angielskim. Są one używane, jeśli można znaleźć nie zlokalizowane pliki zasobów dla określonego języka. Domyślne zasoby nie mają osobnych plików, są one przechowywane w zestawie aplikacji głównej.|  
-|Niezależny od języka|Plik zasobów zawiera ciągi zlokalizowane dla języka, ale nie konkretną kulturę. Na przykład "fr", francuski.|  
+|Language-neutral|Plik zasobów zawiera ciągi zlokalizowane dla języka, ale nie konkretną kulturę. Na przykład "fr", francuski.|  
 |Specyficzne dla języka|Plik zasobów zawiera ciągi zlokalizowane dla języka i kultury. Na przykład "fr-CA" Francuski kanadyjski.|  
   
  Aby uzyskać więcej informacji, zobacz [hierarchiczna organizacja zasobów do lokalizacji](http://go.microsoft.com/fwlink/?LinkId=178360).  

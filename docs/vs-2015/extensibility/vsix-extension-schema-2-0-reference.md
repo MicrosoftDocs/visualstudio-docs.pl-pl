@@ -1,27 +1,22 @@
 ---
 title: Odwołanie do schematu 2.0 rozszerzenia VSIX | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785940"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753581"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,9 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
   
 -   `<Identity>` — Definiuje informacje identyfikacyjne tego pakietu i zawiera następujące atrybuty:  
   
-    -   `Id` — Ten atrybut musi być unikatowy identyfikator pakietu wybranego przez jego autora. Powinny być kwalifikowane nazwy typów CLR są namespaced tak samo: Company.Product.Feature.Name. `Id` Atrybut jest ograniczona do 100 znaków.  
+    -   `Id` — Ten atrybut musi być unikatowy identyfikator pakietu wybranego przez jego autora. Nazwa powinna być kwalifikowana taki sam sposób, który namespaced są typy CLR: Company.Product.Feature.Name. `Id` Atrybut jest ograniczona do 100 znaków.  
   
-    -   `Version` — Definiuje wersję tego pakietu i jego zawartość. Ten atrybut jest zgodna format wersji zestawów CLR: główna.pomocnicza.kompilacja.poprawka (1.2.40308.00). Pakiet o wyższy numer wersji jest uznawany za aktualizacje pakietu i można zainstalować za pośrednictwem istniejących zainstalowanej wersji.  
+    -   `Version` — Definiuje wersję tego pakietu i jego zawartość. Ten atrybut następujący format wersji zestawów CLR: Główna.pomocnicza.kompilacja.poprawka (1.2.40308.00). Pakiet o wyższy numer wersji jest uznawany za aktualizacje pakietu i można zainstalować za pośrednictwem istniejących zainstalowanej wersji.  
   
     -   `Language` — Ten atrybut jest to domyślny język dla pakietu i odnosi się do danych tekstowych, w tym manifeście. Ten atrybut następuje po Konwencji kod ustawień regionalnych środowiska CLR dla zestawów zasobów, na przykład: en-us, en, fr-fr. Można określić `neutral` do deklarowania rozszerzenia niezależny od języka, który będzie uruchamiany w dowolnej wersji programu Visual Studio. Wartość domyślna to `neutral`.  
   
@@ -101,7 +96,7 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
   
 -   `<InstallationTarget>` — Ten element określa lokalizację, w której Instalator VSIX instaluje pakiet. Jeśli wartość `Scope` atrybut jest "ProductExtension" pakiet musi być przeznaczony dla jednostki SKU, która ma zainstalowany plik manifestu w ramach jego zawartość, aby anonsować jej dostępność rozszerzenia. `<InstallationTarget>` Element ma następujące atrybuty kiedy `Scope` atrybut ma jawnie lub wartość domyślną "ProductExtension":  
   
-    -   `Id` — Ten atrybut określa pakiet.  Ten atrybut następuje po Konwencji przestrzeni nazw: Company.Product.Feature.Name. `Id` Atrybut może zawierać tylko znaki alfanumeryczne i jest ograniczona do 100 znaków. Oczekiwane wartości:  
+    -   `Id` — Ten atrybut określa pakiet.  Ten atrybut następującą konwencją nazw: Company.Product.Feature.Name. `Id` Atrybut może zawierać tylko znaki alfanumeryczne i jest ograniczona do 100 znaków. Oczekiwane wartości:  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -222,4 +217,3 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

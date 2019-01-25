@@ -1,11 +1,8 @@
 ---
 title: Działania przepływu pracy w starszej wersji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802386"
 ---
 # <a name="legacy-workflow-activities"></a>Działania przepływu pracy w starszej wersji
 [!INCLUDE[wf](../includes/wf-md.md)] zawiera domyślny zestaw działań, które zapewniają funkcje przepływu sterowania, warunki, obsługa zdarzeń, zarządzanie stanem i komunikacji z aplikacjami i usługami. Podczas projektowania przepływów pracy, można użyć działań dostarczane przez system, które są dostarczane przez [!INCLUDE[wfd1](../includes/wfd1-md.md)], lub możesz utworzyć własne niestandardowe działania.  
@@ -31,7 +28,7 @@ ms.locfileid: "49205418"
 |Działanie|Opis|  
 |--------------|-----------------|  
 |[CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65025)|Używane z **działanie HandleExternalEventActivity** działania dla danych wejściowych i wyjściowych komunikacji z lokalną usługą. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65060).|  
-|[Aktivity typu CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)|Zawiera logikę oczyszczania dla działania złożonego anulowana, zanim wszystkie złożone działania podrzędne zostały zakończone wykonywania. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65061).|  
+|[CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050)|Zawiera logikę oczyszczania dla działania złożonego anulowana, zanim wszystkie złożone działania podrzędne zostały zakończone wykonywania. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65061).|  
 |[CodeActivity](http://go.microsoft.com/fwlink?LinkID=65026)|Umożliwia dodanie kodu języka Visual Basic lub C# do przepływu pracy. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CodeActivity](http://go.microsoft.com/fwlink?LinkID=65062).|  
 |[CompensatableSequenceActivity](http://go.microsoft.com/fwlink?LinkID=65027)|Możliwy do kompensacji wersję [to SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CompensatableSequenceActivity](http://go.microsoft.com/fwlink?LinkID=65002).|  
 |[CompensatableTransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65051)|Możliwy do kompensacji wersję **działania TransactionScopeActivity**. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania CompensatableTransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65063).|  
@@ -40,17 +37,17 @@ ms.locfileid: "49205418"
 |[ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)|Wykonuje działania podrzędne, w oparciu o warunek, który ma zastosowanie do [grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) działania i na podstawie warunków, które są stosowane osobno do każdego elementu podrzędnego. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania grupy ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066).|  
 |[DelayActivity](http://go.microsoft.com/fwlink?LinkID=65028)|Umożliwia tworzenie opóźnienia w przepływie pracy, które są oparte na interwał limitu czasu. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania DelayActivity](http://go.microsoft.com/fwlink?LinkID=65067).|  
 |[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Opakowuje jedno lub wiele działań, które są wykonywane, gdy wystąpi określone zdarzenie. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
-|[Działanie EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018)|Zapewnia ramy pozwalające kojarzenie zdarzeń z działaniem. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działanie EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65069).|  
+|[EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018)|Zapewnia ramy pozwalające kojarzenie zdarzeń z działaniem. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działanie EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65069).|  
 |[EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030)|Wykonuje jego działanie główny-podrzędny równocześnie z [działanie EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65070).|  
 |[FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65054)|Używane do obsługi wyjątku typu, który określisz. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65071).|  
 |[FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055)|Reprezentuje złożone działania, które jest uporządkowaną listą działania podrzędne typu [FaultHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65054). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65072).|  
 |[Działanie HandleExternalEventActivity](http://go.microsoft.com/fwlink?LinkID=65031)|Używany w połączeniu z [CallExternalMethodActivity](http://go.microsoft.com/fwlink?LinkID=65025) działania dla danych wejściowych i wyjściowych komunikacji z lokalną usługą. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działanie HandleExternalEventActivity](http://go.microsoft.com/fwlink?LinkID=65073).|  
 |[IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)|Sprawdza warunek w każdej gałęzi i wykonuje działania na pierwszej gałęzi, dla której warunek ma wartość **true**. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65074).|  
 |[IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)|Reprezentuje gałęzi [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033). [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075).|  
-|[Działaniu InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65035)|Włącza przepływ pracy do wywołania usługi sieci Web. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działaniu InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65076).|  
+|[InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65035)|Włącza przepływ pracy do wywołania usługi sieci Web. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działaniu InvokeWebServiceActivity](http://go.microsoft.com/fwlink?LinkID=65076).|  
 |[InvokeWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65036)|Włącza przepływ pracy do wywołania inny przepływ pracy. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania InvokeWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65077).|  
 |[Działanie ListenActivity](http://go.microsoft.com/fwlink?LinkID=65037)|Działanie złożone, który zawiera tylko [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029) działania podrzędne. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania Działanie ListenActivity](http://go.microsoft.com/fwlink?LinkID=65078).|  
-|[Działaniu równoległym](http://go.microsoft.com/fwlink?LinkID=65038)|Zapewnia sposób planowania dwóch lub więcej podrzędnych **to SequenceActivity** gałęzie działań do przetworzenia w tym samym czasie. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działaniu równoległym](http://go.microsoft.com/fwlink?LinkID=65079).|  
+|[ParallelActivity](http://go.microsoft.com/fwlink?LinkID=65038)|Zapewnia sposób planowania dwóch lub więcej podrzędnych **to SequenceActivity** gałęzie działań do przetworzenia w tym samym czasie. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działaniu równoległym](http://go.microsoft.com/fwlink?LinkID=65079).|  
 |[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)|Służy do reprezentowania kolekcji reguł. Reguła zawiera warunki i akcje wynikowe. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
 |[ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)|Tworzy wiele wystąpień działania pojedynczy element podrzędny. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080).|  
 |[To SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020)|Zapewnia to prosty sposób łączenia wielu działań razem dla wykonywania sekwencyjnego. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Przy użyciu działania to SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65081).|  
@@ -83,10 +80,10 @@ ms.locfileid: "49205418"
  [Instrukcje: Tworzenie zestawu reguł działania PolicyActivity (starsza wersja)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Przedstawia kroki, aby utworzyć zestaw reguł działania PolicyActivity.  
   
- [Instrukcje: implementowanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Instrukcje: Implementowanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Przedstawia kroki, aby wdrożyć [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontrakt operacji.  
   
- [Instrukcje: wywoływanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Instrukcje: Wywoływanie operacji kontraktu usługi WCF (starsza wersja)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Przedstawia kroki, aby wywołać [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontrakt operacji.  
   
 ## <a name="see-also"></a>Zobacz też  

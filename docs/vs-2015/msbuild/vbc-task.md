@@ -1,14 +1,9 @@
 ---
 title: Vbc — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281865"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802192"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączany
 |`BaseAddress`|Opcjonalnie `String` parametru.<br /><br /> Określa adres podstawowy DLL. Ten parametr odnosi się do [/baseAddress](http://msdn.microsoft.com/library/c982bcf2-46e5-47a2-bc8f-a5cc32b7dc47) przełącznika kompilatora vbc.exe.|  
 |`CodePage`|Opcjonalnie `Int32` parametru.<br /><br /> Określa stronę kodową do użycia dla wszystkich plikach kodu źródłowego w kompilacji. Ten parametr odnosi się do [/CODEPAGE](http://msdn.microsoft.com/library/be36ec33-6800-4505-838c-4124564f5cc9) przełącznika kompilatora vbc.exe.|  
 |`DebugType`|Opcjonalnie `String[]` parametru.<br /><br /> Powoduje, że kompilator generuje informacje o debugowaniu. Ten parametr może mieć następujące wartości:<br /><br /> -   `full`<br />-   `pdbonly`<br /><br /> Wartość domyślna to `full`, który umożliwia dołączanie debugera do uruchomionego programu. Wartość `pdbonly` umożliwia debugowanie kodu źródłowego, gdy program jest uruchomiony w debugerze, ale tylko wtedy, gdy jest uruchomiony program jest dołączony do debugera jest wyświetlany kod języka asemblera. Aby uzyskać więcej informacji, zobacz [/Debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).|  
-|`DefineConstants`|Opcjonalnie `String[]` parametru.<br /><br /> Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *wartość1* `;` *symbol2* `=` *wartość2*<br /><br /> Ten parametr odnosi się do [/ define](http://msdn.microsoft.com/library/f735c57d-1cf9-4f2f-a26f-0de630fd4077) przełącznika kompilatora vbc.exe.|  
+|`DefineConstants`|Opcjonalnie `String[]` parametru.<br /><br /> Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *value1* `;` *symbol2* `=` *value2*<br /><br /> Ten parametr odnosi się do [/ define](http://msdn.microsoft.com/library/f735c57d-1cf9-4f2f-a26f-0de630fd4077) przełącznika kompilatora vbc.exe.|  
 |`DelaySign`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zadania, umieszcza klucz publiczny w zestawie. Jeśli `false`, zadanie jest w pełni podpisuje zestaw. Wartość domyślna to `false`. Ten parametr jest ignorowany, chyba że używana z `KeyFile` parametru lub `KeyContainer` parametru. Ten parametr odnosi się do [/DelaySign](http://msdn.microsoft.com/library/c76e61a4-1884-4252-9fb2-377f99caa690) przełącznika kompilatora vbc.exe.|  
 |`DisabledWarnings`|Opcjonalnie `String` parametru.<br /><br /> Pomija określone ostrzeżenia. Wystarczy określić część numeryczna identyfikatora ostrzeżenia. Wielokrotne ostrzeżenia są oddzielone średnikami. Ten parametr odnosi się do [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) przełącznika kompilatora vbc.exe.|  
 |`DocumentationFile`|Opcjonalnie `String` parametru.<br /><br /> Przetwarza komentarze dokumentacji do określonego pliku XML. Ten parametr zastępuje `GenerateDocumentation` atrybutu. Aby uzyskać więcej informacji, zobacz [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).|  
@@ -113,6 +108,3 @@ Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączany
  [Kompilator wiersza polecenia programu Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

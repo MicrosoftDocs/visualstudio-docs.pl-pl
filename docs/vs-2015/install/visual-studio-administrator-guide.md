@@ -1,14 +1,9 @@
 ---
 title: Podręcznik administratora programu Visual Studio | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,13 +12,13 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722826"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834880"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy kompu
 ## <a name="controlling-what-is-installed"></a>Kontrolowanie, co jest zainstalowany  
  Jeśli chcesz kontrolować, jakie można zainstalować użytkownikowi końcowemu, dostępne są dwie opcje: administrator plików instalacji i opcje wiersza polecenia. Wybierz instalację pliku administratora, jeśli dowiesz się, jak ograniczyć użytkownikowi końcowemu korzystać z ich działanie Instalatora programu Visual Studio. Wybierz parametry wiersza polecenia utworzyć początkową konfigurację, ale Zezwalaj użytkownikowi końcowemu wybrać własne środowisko Instalatora programu Visual Studio.  
   
- Aby uzyskać więcej informacji na temat doświadczeń pliku administratora, zobacz [porady: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) i [porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Aby uzyskać więcej informacji na temat opcji wiersza polecenia, zobacz [Użyj parametrów wiersza polecenia do zainstalowania programu Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) strony.  
+ Aby uzyskać więcej informacji na temat doświadczeń pliku administratora, zobacz [jak: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) i [jak: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Aby uzyskać więcej informacji na temat opcji wiersza polecenia, zobacz [Użyj parametrów wiersza polecenia do zainstalowania programu Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) strony.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Określanie ustawień opinii klienta  
  Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można skonfigurować programu Visual Studio, aby wyłączyć opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
@@ -73,8 +68,8 @@ Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy kompu
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Instrukcje: instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonej konfiguracji bieżącą wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Instrukcje: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym.|  
-|[Instrukcje: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowanie kluczy produktów podczas wdrażania na wielu komputerach.|  
+|[Instrukcje: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonej konfiguracji bieżącą wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym.|  
+|[Instrukcje: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowanie kluczy produktów podczas wdrażania na wielu komputerach.|  
 |[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)|Zawiera informacje o sposobie zarządzania lokalnymi instalacjami pomocy dla środowisk sieciowych, które mają lub nie masz dostępu do Internetu.|  
 |[Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)|Zawiera instrukcje i linki do tematów opisujących sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

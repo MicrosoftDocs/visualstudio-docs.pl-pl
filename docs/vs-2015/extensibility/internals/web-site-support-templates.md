@@ -1,26 +1,21 @@
 ---
 title: Szablony pomocy technicznej dotyczącej witryn sieci Web | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801981"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51760220"
   
  Jeśli ciąg nie jest obecny, system projektu sieci Web spróbuje określić domyślny język na podstawie rozszerzeń atrybut i plik języka strony dodane do projektu sieci Web przez szablon projektu szablon.  
   
-## <a name="project-templates"></a>Szablony projektów  
+## <a name="project-templates"></a>Project Templates  
  Szablony projektów witryny sieci Web są używane do tworzenia nowych witryn sieci Web w odpowiedzi na **nową witrynę sieci Web** polecenie **pliku** menu. Obecnie obsługiwane są trzy typy projektu witryny sieci Web:  
   
 -   Pusta witryna internetowa projektów  
@@ -87,7 +82,7 @@ ms.locfileid: "51760220"
   
      Strona HTML dla nowej usługi sieci Web. Atrybut Language określa język codebehind, a atrybut CodeBehind określa pliku zależnego zawierające kod codebehind skojarzonego z tą usługą.  
   
--   Usługa. *Rozszerzenie*  
+-   Usługa. *extension*  
   
      Plik zależny, który implementuje klasa usługi. Określa język codebehind *rozszerzenia* tego pliku.  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51760220"
 ### <a name="new-class"></a>Nowa klasa  
  Ten szablon tworzy nowy plik źródłowy, który definiuje pustą klasę w odpowiedzi na **Dodaj nową klasę** polecenia.  
   
--   Klasa. *Rozszerzenie*  
+-   Klasa. *extension*  
   
      Plik źródłowy, który implementuje pustą klasę. Określa język codebehind *rozszerzenia* tego pliku.  
   
@@ -154,7 +149,7 @@ ms.locfileid: "51760220"
   
      Począwszy od zawartość strony sieci Web. Ta strona sieci Web ma skojarzony plik codebehind plik zależne.  
   
--   Plik CodeBehind. *Rozszerzenie*  
+-   Plik CodeBehind. *extension*  
   
      Plik zależny, który implementuje klasa formularz sieci Web. Określa język codebehind *rozszerzenia* tego pliku.  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760220"
   
 ## <a name="see-also"></a>Zobacz też  
  [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)
-

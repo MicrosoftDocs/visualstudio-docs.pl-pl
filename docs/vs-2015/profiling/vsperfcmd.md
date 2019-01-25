@@ -1,14 +1,9 @@
 ---
-title: Narzędzia VSPerfCmd | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: VSPerfCmd | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -19,13 +14,13 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776101"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Zatrzymuje zbieranie danych dla określonego procesu.|  
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wznawia profilowania dla określonego procesu po profilowanie została wstrzymana przez wywołanie **VSPerfCmdThreadOff**. Użyj **ThreadOn** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|  
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wstrzymano profilowanie dla określonego wątku. Użyj **ThreadOff** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|  
-|[Oznacz](../profiling/mark.md) **:** _MarkNum_[**,**_Tekst_znacznika_**]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|  
+|[Oznacz](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|  
   
 ## <a name="sampling-method-options"></a>Opcje metody pobierania próbek  
  Poniższe opcje są dostępne tylko w przypadku, gdy używana jest metoda profilowania próbkowanie.  
@@ -67,7 +62,7 @@ VSPerfCmd [/U] [/options]
 |Opcja|Opis|  
 |------------|-----------------|  
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określoną aplikację i rozpoczyna się profilowanie.|  
-|[Argumenty](../profiling/args.md) **:** *argumentów*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
+|[Argumenty](../profiling/args.md) **:** *argumenty*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
 |[Console](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|  
 |[Dołącz](../profiling/attach.md) **:** *PID*[**,**_PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu.|  
 |[Odłącz](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|  
@@ -91,16 +86,13 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security** \< **Zezwalaj&#124;ODMÓW**> *po prawej stronie*[ *po prawej stronie*] \< *użytkownika*  &#124; *Grupy*>|Zezwala lub nie zezwala określonemu użytkownikowi lub grupie dostępu do usług profilowania.<br /><br /> `Right` może być:<br /><br /> CrossSession — zapewnia użytkownikowi dostęp do usługi w celu krzyżowego sesji profilowania.<br /><br /> SampleProfiling — daje użytkownikowi dostęp do sterownika, aby włączyć profilowanie próbkowania. Umożliwia również dostęp do informacji przejścia jądra podczas profilowania śledzenia.<br /><br /> FullAccess — zapewnia dostęp zarówno CrossSession, jak i SampleProfiling.|  
 |**Admin:Security, lista**|Wyświetla listę bieżącego stanu usług profilowania i wyświetla listę uprawnień użytkownika.|  
-|**Administrator:** \< *usługi*&#124;*sterownika*>\<**START**&#124;**STOP**  &#124; **Zainstalować**&#124;**DEZINSTALACJI**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
-|**Administrator:** \< *usługi*&#124;*sterownika*>**AutoStart**\<**na** &#124; **OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  
+|**Administrator:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
+|**Administrator:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  
   
-## <a name="vsperfcmd-driver"></a>Driver/Driver narzędzia VSPerfCmd  
+## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **Driver/Driver narzędzia VSPerfCmd** opcja jest obecnie przestarzała. Użyj **VsPerfCmdAdmin** opcje dla tej funkcji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzie VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8787e79744dc52d3907f502b5696f4ca91522e01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86db84122876603ccea44be5fc1cd65b47263a92
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921789"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867484"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
   Można tworzyć aplikacje SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Visual Studio promuje szybki rozwój programu SharePoint, udostępniając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, dokańczanie instrukcji i szablony projektów. Program Visual Studio również korzysta z zaawansowanych języków i narzędzi opartych na programie .NET Framework. Można rozwijać projekty programu SharePoint przy użyciu języka Visual Basic lub Visual C# i można opracować aplikację dla projektów programu SharePoint przy użyciu języka JavaScript.  
@@ -38,5 +38,5 @@ ms.locfileid: "53921789"
 |![Szkolenie](../sharepoint/media/vs-icon-training.gif "szkolenia")|**Blogi**<br /><br /> -   [Blog programu Visual Studio SharePoint Development](https://blogs.msdn.microsoft.com/vssharepointtoolsblog/)|  
 |![Jak mogę? Filmy wideo](../sharepoint/media/vs-icon-howdoivideos.gif "jak to zrobić? Filmy wideo")|**Jak mogę? Filmy wideo**<br /><br /> -   [Jak mogę Tworzenie wizualne części sieci Web dla programu SharePoint 2010 w programie Visual Studio 2010?](https://visualstudio.microsoft.com/)<br />-   [Jak mogę Tworzenie typów zawartości dla programu SharePoint 2010 w programie Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Jak mogę Tworzenie definicji witryn dla programu SharePoint 2010 w programie Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Jak mogę Tworzenie modelu łączności danych biznesowych dla programu SharePoint 2010 przy użyciu programu Visual Studio 2010?](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|  
 |![Filmy na kanale 9](../sharepoint/media/vs-icon-channel9videos.gif "filmy na kanale 9")|**Filmy na kanale 9**<br /><br /> -   [Omówienie programowanie SharePoint w Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Najlepsze rozwiązania dotyczące tworzenia składników programu SharePoint 2010 Web Part za pomocą programu Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [Funkcja programu SharePoint i projektanci pakietów w programie Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|  
-|![Centrum deweloperów](../sharepoint/media/vs-icon-msdndevcenter.gif "Centrum deweloperów")|**Centra deweloperów**<br /><br /> -   [Centrum deweloperów programu Visual Studio](https://visualstudio.microsoft.com/)<br />-   [Centrum deweloperów programu SharePoint](/sharepoint/dev/)<br />-   [Centrum deweloperów programu SharePoint Server](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centrum deweloperów programu SharePoint Designer](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centrum deweloperów platformy ASP.NET](https://msdn.microsoft.com/aa336522.aspx)|  
+|![Centrum deweloperów](../sharepoint/media/vs-icon-msdndevcenter.gif "Centrum deweloperów")|**Centra deweloperów**<br /><br /> -   [Visual Studio Development Center](https://visualstudio.microsoft.com/)<br />-   [Centrum deweloperów programu SharePoint](/sharepoint/dev/)<br />-   [Centrum deweloperów programu SharePoint Server](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [Centrum deweloperów programu SharePoint Designer](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [ASP.NET Developer Center](https://msdn.microsoft.com/aa336522.aspx)|  
 |![Przekazywanie opinii](../sharepoint/media/vs-icon-feedback.gif "opinii")|**Przekazywanie opinii**<br /><br /> Wyraź swoją opinię dotyczącą programu Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Przekaż opinie o dokumentacji programu Visual Studio:<br /><br /> -   **Widok lekki.** Jeśli jesteś w górnej części każdego tematu można wybrać **ocenić ten temat** link, aby przeskoczyć do dolnej części tego tematu, w którym można określić **tak** lub **nie** w odpowiedzi na **Zostało to pomocne?** Następnie można wybrać jeden lub więcej pól wyboru, które pojawiają się w przypadku wybrania **nie**, podaj więcej informacji, w polu tekstowym i / lub. Gdy skończysz, wybierz **przesyłania** przycisku.<br />-   **Widok Scriptfree.** U góry tematu wybierz **opinii** łącze, aby przekazać opinię na forum TechNet i opinii o bibliotece wyrażeń.<br />-   **Widok klasyczny.** U góry tematu wybierz **kliknij, aby ocenić i dodać opinię** ikony, aby przekazać opinię o temacie dla zespołu dokumentującego.|  

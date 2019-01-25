@@ -1,13 +1,9 @@
 ---
 title: 'CA1815: Przesłoń metodę equals i operator równości w typach wartości | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1815
 - OverrideEqualsAndOperatorEqualsOnValueTypes
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 86db8dd380efd657f55633eb1bd458d02fc1e612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e21585a7a56fde2fb46ea86adde92eecfd1a4565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785108"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Przesłoń metodę equals i operator równości dla typów wartości
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Przesłaniaj metodę equals i operator równości w typach wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

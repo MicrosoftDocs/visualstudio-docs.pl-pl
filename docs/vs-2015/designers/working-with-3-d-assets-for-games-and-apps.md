@@ -1,27 +1,22 @@
 ---
 title: Praca z obiektami 3-d do gier i aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797598"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Praca z obiektami 3-D do gier i aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ W tym dokumencie opisano [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzi 
 |[Praca z modelami 3-D](../designers/working-with-3-d-models.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do pracy z modelami 3-D.|  
 |[Praca z cieniowaniem](../designers/working-with-shaders.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader Designer do tworzenia i modyfikowania efekty cieniowania niestandardowych.|  
 |[Korzystanie z obiektów 3-D w grach i aplikacjach](../designers/using-3-d-assets-in-your-game-or-app.md)|W tym artykule opisano sposób użycia zasobów, które utworzono przy użyciu edytora obrazów, edytora modeli lub projektanta modułu cieniującego w grach i aplikacjach.|
-
-
-

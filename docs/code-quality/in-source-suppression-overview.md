@@ -1,6 +1,6 @@
 ---
 title: Pomijanie ostrzeżeń analizy kodu
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932885"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835061"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
@@ -66,17 +66,19 @@ Właściwości atrybutu obejmują:
 
 - **Identyfikator komunikatu** — Unikatowy identyfikator problemu dla każdego komunikatu.
 
-- **Zakres** — element docelowy, na którym pomijane jest ostrzeżenie. Jeśli element docelowy nie zostanie określony, ustawiono element docelowy atrybutu. Zakresy obsługiwane są następujące:
+- **Zakres** — element docelowy, na którym pomijane jest ostrzeżenie. Jeśli element docelowy nie zostanie określony, ustawiono element docelowy atrybutu. Obsługiwane [zakresy](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) obejmują następujące elementy:
 
-    - Moduł
+   - `module`
 
-    - Przestrzeń nazw
+   - `resource`
 
-    - Zasób
+   - `type`
 
-    - Typ
+   - `member`
 
-    - Element członkowski
+   - `namespace` — W tym zakresie pomija ostrzeżeń względem samej przestrzeni nazw. Go nie Pomijaj ostrzeżenia typów w przestrzeni nazw.
+
+   - `namespaceanddescendants` -(Nowy dla programu Visual Studio 2019 r.) ten zakres pomija ostrzeżeń w przestrzeni nazw i jego elementów podrzędnych symboli. `namespaceanddescendants` Wartość jest prawidłowa tylko dla analizatory Roslyn i jest ignorowana przez analizę statyczną binarne, na podstawie programu FxCop.
 
 - **Docelowy** — identyfikator, który służy do określania docelowych, na którym pomijane jest ostrzeżenie. Musi zawierać nazwę FQDN elementu.
 
@@ -151,7 +153,7 @@ Narzędzie do analizy kodu zarządzanego analizuje `SuppressMessage` atrybutów,
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Ostrzeżenie o zakresie przestrzeni nazw zostanie pominięty, powoduje pominięcie ostrzeżenie przed samej przestrzeni nazw. Ostrzeżenie typów w przestrzeni nazw, nie są odrzuca.
+> Kiedy pominąć ostrzeżenia o `namespace` zakresie go umożliwia pominięcie ostrzeżenia względem samej przestrzeni nazw. Ostrzeżenie typów w przestrzeni nazw, nie są odrzuca.
 
 Wszelkie pomijanie może być wyrażona przez określenie zakresu jawnego. Pominięcia na te muszą znajdować się na poziomie globalnym. Nie można określić poziom elementu członkowskiego pomijanie przez urządzanie typu.
 
@@ -168,5 +170,6 @@ Plik pominięć globalnych zachowuje ograniczeń, które są pominięcia na pozi
 
 ## <a name="see-also"></a>Zobacz także
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Używanie analizatorów Roslyn](../code-quality/use-roslyn-analyzers.md)

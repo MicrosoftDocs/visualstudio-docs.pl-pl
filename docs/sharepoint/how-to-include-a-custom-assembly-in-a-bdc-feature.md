@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], add reference
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b53b7c8b5cf4dd2c13adbb53a9724a8adaf2328
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4effb22f85ed7328a121340124f43b24b09e0ddc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870665"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Instrukcje: Dołączanie niestandardowego zestawu w funkcji BDC
   Projekt można odwołuje się do zestawów z innych projektów w tym samym rozwiązaniu. Jednakże, należy dodać te zestawy do pliku funkcji projektu, przy użyciu **Przypisz przywoływane zestawy do elementów LobSystem** okno dialogowe.  

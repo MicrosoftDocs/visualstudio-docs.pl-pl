@@ -1,12 +1,9 @@
 ---
-title: 'Diagramy warstw: Odwołanie | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Diagramy warstw: Dokumentacja | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,15 +21,15 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803837"
 ---
-# <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
+# <a name="layer-diagrams-reference"></a>Diagramy warstw: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizować logiczną architekturę wysokiego systemu. Diagram warstwy organizuje artefaktów fizycznych w systemie w logiczne, abstrakcyjne grupy o nazwie *warstwy*. Te warstwy opisania głównych zadań wykonywanych przez te artefakty pełnią lub główne składniki systemu. Każda warstwa może również zawierać zagnieżdżone warstwy opisujące bardziej szczegółowe zadania.  
@@ -51,7 +48,7 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
   
 - Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.  
   
-  W tym temacie opisano elementy, które można użyć na diagramie warstwy. Aby uzyskać szczegółowe informacje o sposobie tworzenia i narysuj diagramy warstwowe, zobacz [diagramy warstw: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  W tym temacie opisano elementy, które można użyć na diagramie warstwy. Aby uzyskać szczegółowe informacje o sposobie tworzenia i narysuj diagramy warstwowe, zobacz [diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstw  
  ![Elementy na diagramach warstwy](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -77,7 +74,7 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
   
   Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:  
   
-- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)  
   
 - [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
@@ -94,11 +91,8 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
     |----------------------------------|---------------------|  
     |**Kategorie**|Rodzaj artefaktu, takie jak klasy, przestrzeni nazw, plik źródłowy i tak dalej|  
     |**Warstwa**|Warstwy, który stanowi łącze do artefaktu|  
-    |**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md).|  
+    |**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md).|  
     |**Identyfikator**|Odwołanie do połączonych artefaktów|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)
-
-
-

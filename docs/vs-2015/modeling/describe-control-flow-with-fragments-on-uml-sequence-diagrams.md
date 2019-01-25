@@ -1,12 +1,9 @@
 ---
 title: Opisywanie przepływu sterowania, przy użyciu fragmentów w diagramach sekwencji UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782257"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
  Połączony fragment składa się z co najmniej jeden *operandy interakcji*, a każdy z nich zawiera co najmniej jeden wiadomości, zastosowania interakcji lub połączonego fragmentu.  
   
 > [!NOTE]
->  Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: wskazówki dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Ten temat dotyczy fragmentów w diagramach sekwencji. Aby uzyskać więcej informacji o tym, jak odczytać diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Odwołanie](../modeling/uml-sequence-diagrams-reference.md). Aby uzyskać więcej informacji na temat narysować diagramy sekwencji UML, zobacz [UML Sequence Diagrams: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Połączone fragmentu przyjmuje dwa argumenty operacji interakcji](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -134,9 +131,6 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
 |**minus**|Sekwencja przedstawione w tym fragmencie nie musi realizowane. Zazwyczaj używane w obrębie fragmentu rozważ lub Ignoruj.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

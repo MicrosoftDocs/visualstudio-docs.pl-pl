@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f1acdec565a2d03b98a2423f500d527934235bd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964776"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874879"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Instrukcje: Usuwanie rozszerzenia kodu zarządzanego z dokumentów
   Zestaw dostosowania można programowo usunąć dokument lub skoroszyt, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Użytkownicy mogą otwierać dokumentów i wyświetlanie zawartości, ale dowolnego niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów, nie będą widoczne, a kod nie będzie działał.  

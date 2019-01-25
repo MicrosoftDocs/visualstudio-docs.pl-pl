@@ -1,28 +1,23 @@
 ---
-title: 'Porady: Implementowanie znaczniki błędów | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Implementowanie znaczniki błędów | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779655"
 ---
-# <a name="how-to-implement-error-markers"></a>Porady: Implementowanie znaczniki błędów
+# <a name="how-to-implement-error-markers"></a>Instrukcje: Implementowanie znaczniki błędów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Znaczniki błędów (lub czerwone faliste podkreślenia) są najtrudniejsze dostosowania edytora tekstu do zaimplementowania. Jednak korzyści, które zapewniają użytkownikom usługi pakietu VSPackage może znacznie przeważają nad koszt zapewnić im. Znaczniki błędów kliknięcia zaznacz tekst, który Twoja analizatora języka jeśli uzna, że nieprawidłowe z czerwona linia falista lub faliste. Ten wskaźnik pomaga programistom wizualnie, wyświetlając nieprawidłowy kod.  
@@ -33,11 +28,11 @@ Znaczniki błędów (lub czerwone faliste podkreślenia) są najtrudniejsze dost
   
 1. Zaznacz tekst, w którym chcesz umieścić czerwoną, falistą linią.  
   
-2. Utworzyć znacznik o typie `MARKER_CODESENSE_ERROR`. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md).  
+2. Utworzyć znacznik o typie `MARKER_CODESENSE_ERROR`. Aby uzyskać więcej informacji, zobacz [jak: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Następnie należy przekazać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> wskaźnika interfejsu.  
   
-   Ten proces umożliwia również tworzenie tekst porady lub menu kontekstowego specjalne za pośrednictwem danego znacznika. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md).  
+   Ten proces umożliwia również tworzenie tekst porady lub menu kontekstowego specjalne za pośrednictwem danego znacznika. Aby uzyskać więcej informacji, zobacz [jak: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md).  
   
    Następujące obiekty są wymagane, przed wyświetleniem znaczniki błędów.  
   
@@ -62,7 +57,6 @@ Znaczniki błędów (lub czerwone faliste podkreślenia) są najtrudniejsze dost
   
 ## <a name="see-also"></a>Zobacz też  
  [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Porady: Dodawanie znaczników standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
- [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
-
+ [Instrukcje: Dodaj znaczniki standardowy tekst](../extensibility/how-to-add-standard-text-markers.md)   
+ [Instrukcje: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
+ [Instrukcje: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)

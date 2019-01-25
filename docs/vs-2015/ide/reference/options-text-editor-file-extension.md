@@ -1,14 +1,9 @@
 ---
 title: Rozszerzenie pliku opcje, Edytor tekstu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755009"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określony
  Po wybraniu opcji "z kodowaniem", pojawi się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użytku na różnych platformach i w różnych językach docelowego.  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  **Rozszerzenie**  
@@ -63,6 +58,3 @@ Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określony
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Zarządzanie trybami edytora](../../ide/how-to-manage-editor-modes.md)
-
-
-

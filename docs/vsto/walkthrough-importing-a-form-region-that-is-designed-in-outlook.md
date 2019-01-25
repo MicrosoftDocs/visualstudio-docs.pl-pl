@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956182"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870233"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Przewodnik: Importowanie regionów formularzy zaprojektowanych w programie Outlook
   W tym instruktażu pokazano, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionu formularza w projekcie dodatku narzędzi VSTO dla programu Outlook, za pomocą **nowy Region formularza** kreatora. Projektowanie regionów formularzy programu Outlook umożliwia dodanie natywne kontrolki programu Outlook do regionu formularza, który należy powiązać dane programu Outlook. Po zaimportowaniu region formularza można obsługiwać zdarzenia każdej kontrolki.  

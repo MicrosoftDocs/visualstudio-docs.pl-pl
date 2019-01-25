@@ -1,14 +1,9 @@
 ---
 title: Strona opcji, środowisko — właściwości węzła | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,13 +11,13 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753519"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -141,7 +136,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
   
 |Nazwa elementu właściwości|Wartość|Opis|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -0: Otwórz stronę główną<br />-1: obciążenia ostatniego załadowania rozwiązania<br />-2: Pokaż **Otwórz projekt** okno dialogowe<br />-3: Pokaż **nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: strona startowa show|  
+|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -   0: Otwórz stronę główną<br />-   1: Załaduj ostatnie załadowanego rozwiązania<br />-   2: Pokaż **Otwórz projekt** okno dialogowe<br />-   3: Pokaż **nowy projekt** okno dialogowe<br />-   4: Pokaż puste środowisko<br />-   5: Pokaż stronę początkową|  
 |StartPageRSSUrl|Get/Set (ciąg)|Adres URL dla źródła danych RSS, jest używany podczas uruchamiania.|  
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża strona startowa po każdym przejściu z interwałem określonym w StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (krótki)|Interwał w minutach, aby odświeżyć stronę początkową.|  
@@ -172,6 +167,3 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
  [Strona opcji, czcionki i kolory — właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Strona opcji, Edytor tekstu — właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
-
-
-

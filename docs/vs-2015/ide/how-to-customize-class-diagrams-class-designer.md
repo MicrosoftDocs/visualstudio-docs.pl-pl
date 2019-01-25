@@ -1,14 +1,9 @@
 ---
-title: 'Porady: dostosowywanie diagramów klas (Projektant klas) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Dostosowywanie diagramów klas (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
@@ -18,15 +13,15 @@ ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781053"
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Porady: dostosowywanie diagramów klasy (Projektant klas)
+# <a name="how-to-customize-class-diagrams-class-designer"></a>Instrukcje: Dostosowywanie diagramów klas (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można zmienić sposób wyświetlania informacji na diagramach klas. Można dostosować cały diagram lub poszczególne typy na powierzchni projektowej.  
@@ -154,9 +149,6 @@ Można zmienić sposób wyświetlania informacji na diagramach klas. Można dost
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)   
- [Porady: zmiana między notacją składowych i notacją skojarzeń (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
- [Porady: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)   
+ [Instrukcje: Zmiana między notacją składowych i notacją skojarzeń (Projektant klas)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)   
+ [Instrukcje: Wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md)   
  [Wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

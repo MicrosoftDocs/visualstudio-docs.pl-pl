@@ -1,26 +1,21 @@
 ---
 title: 'Przykładowe rozszerzenie programu Excel: Klasa ActionFilter | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 87bffbbd3d463de19c923e6d1bd9f865aca37851
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 86c1dda46ed0e62649a576a12c9f9e48561ec891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767847"
 ---
-# <a name="sample-excel-extension-actionfilter-class"></a>Przykładowe rozszerzenie programu Excel: klasa ActionFilter
+# <a name="sample-excel-extension-actionfilter-class"></a>Przykładowe rozszerzenie programu Excel: ActionFilter — Klasa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Klasa wewnętrznego rozszerza <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> klasy i reprezentuje filtr akcji testowych na [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] elementu.  
@@ -38,6 +33,3 @@ Klasa wewnętrznego rozszerza <xref:Microsoft.VisualStudio.TestTools.UITest.Comm
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

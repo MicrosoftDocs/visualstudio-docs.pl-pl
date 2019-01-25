@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 188c7fbf16002086a4968b91c068cd67357292de
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821451"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870496"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Instrukcje: Programowe ukrywanie arkuszy
   Możesz pokazać lub ukryć wszystkie arkusza w skoroszycie. Aby ukryć arkusza, użyj element hosta arkusza lub dostęp do arkusza za pomocą kolekcji arkuszy skoroszytu.  

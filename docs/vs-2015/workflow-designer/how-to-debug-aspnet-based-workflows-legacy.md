@@ -1,11 +1,8 @@
 ---
-title: 'Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - ASP.NET, debugging workflows
@@ -16,15 +13,15 @@ ms.assetid: 79b21edc-9e7d-410d-af68-09c1598b9c30
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b9da40b0b40216fc36ea45b199ecde9c6dc4a89d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766216"
 ---
-# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Porady: debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)
+# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)
 W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]— na podstawie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla albo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
   
  Można debugować starszej wersji przepływów pracy, które są uruchamiane w ASP.NET lub starszej wersji przepływów pracy, które są publikowane jako usługi sieci Web przez dołączenie do procesu, w którym znajduje się przepływ pracy.  
@@ -57,5 +54,5 @@ W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vsteca
   
 ## <a name="see-also"></a>Zobacz też  
  [Wywoływanie debugera programu Visual Studio dla programu Windows Workflow Foundation (starsza wersja)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Porady: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
+ [Instrukcje: Ustawianie punktów przerwania w przepływach pracy (starsza wersja)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)

@@ -1,12 +1,9 @@
 ---
 title: Przekazywanie danych pomiędzy formularzami | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5958aafb39fface87020fb8ee75c7ca5a1497c73
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783357"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

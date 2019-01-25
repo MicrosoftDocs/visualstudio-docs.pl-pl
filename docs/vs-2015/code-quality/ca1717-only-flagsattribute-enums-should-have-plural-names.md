@@ -1,13 +1,9 @@
 ---
 title: 'CA1717: Tylko wyliczenia FlagsAttribute powinny mieć nazwy w liczbie mnogiej | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1717
 - OnlyFlagsEnumsShouldHavePluralNames
@@ -19,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb97db92ca2b39c13667887f02038007d58a97b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767247"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Tylko wyliczenia FlagsAttribute powinny mieć nazwy w liczbie mnogiej
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Tylko wyliczenia z atrybutem Flags powinny mieć nazwy w liczbie mnogiej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||

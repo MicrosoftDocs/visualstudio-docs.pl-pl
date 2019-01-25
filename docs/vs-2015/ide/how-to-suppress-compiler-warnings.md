@@ -1,32 +1,27 @@
 ---
-title: 'Porady: pomijanie ostrzeżeń kompilatora | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Pomijanie ostrzeżeń kompilatora | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 90a5624997a3f2a6719ccd174abee39798f1c488
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782090"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Porady: pomijanie ostrzeżeń kompilatora
+# <a name="how-to-suppress-compiler-warnings"></a>Instrukcje: Pomijanie ostrzeżeń kompilatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrzeżenia kompilatora, że nie ma on zawierać. Na przykład użyć tej techniki, aby przejrzeć niektóre, ale nie wszystkie informacje, które jest generowany automatycznie, gdy poziom szczegółowości dziennika kompilacji jest ustawiona na normalny, szczegółowe lub diagnostyki. Aby uzyskać więcej informacji na temat poziomu szczegółowości, zobacz [porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
+Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrzeżenia kompilatora, że nie ma on zawierać. Na przykład użyć tej techniki, aby przejrzeć niektóre, ale nie wszystkie informacje, które jest generowany automatycznie, gdy poziom szczegółowości dziennika kompilacji jest ustawiona na normalny, szczegółowe lub diagnostyki. Aby uzyskać więcej informacji na temat poziomu szczegółowości, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pomija określone ostrzeżenia dla języka Visual C# lub F #  
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pomija określone ostrzeżenia dla wizualizacji C# lubF#  
   
 1.  W **Eksploratora rozwiązań**, wybierz projekt, w którym chcesz pominąć ostrzeżenia.  
   
@@ -113,8 +108,5 @@ Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrz
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)   
- [Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)   
+ [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

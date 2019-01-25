@@ -1,27 +1,22 @@
 ---
 title: Lista dostępnych usług | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6eef832ae8b8bc912b79185cbc9cc6271ccb9924
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768354"
 ---
 # <a name="list-of-available-services"></a>Lista dostępnych usług
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -165,6 +160,5 @@ ms.locfileid: "51730692"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Tak|Tak|Zapewnia dostęp do dokumentacji w formacie XML plików skojarzonych z plikiem metadanych określonej.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [COM i usługi zarządzane](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM i usługi zarządzane](http://msdn.microsoft.com/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
  [Korzystanie z usług i dostarczanie ich](../../extensibility/using-and-providing-services.md)
-

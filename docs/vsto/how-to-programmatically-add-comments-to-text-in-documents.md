@@ -10,15 +10,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding comments
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dcb313989b8aa6615a186785297caef92631413
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857030"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872082"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Instrukcje: Programowe Dodawanie komentarzy do tekstu w dokumentach
   Właściwość komentarze klasy dokumentu dodaje komentarz do zakresu w dokumencie programu Microsoft Office Word.  

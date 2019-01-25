@@ -1,14 +1,9 @@
 ---
 title: OnError — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10f89d21441418ae0b5c267c0fea7e8451115afe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 70430172c734a37259f7dc80fdfa440d9d0ee471
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228712"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766294"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,6 +83,3 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Docelowe elementy](../msbuild/msbuild-targets.md)
-
-
-

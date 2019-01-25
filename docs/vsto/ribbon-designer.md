@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867263"
 ---
 # <a name="ribbon-designer"></a>Projektant wstążki
   Projektant wstążki jest wizualną kanwą. Za pomocą projektanta wstążki można dodać niestandardowe karty, grupy i formanty do Wstążki aplikacji pakietu Microsoft Office.
@@ -145,13 +145,13 @@ ms.locfileid: "53928870"
 |**Grupa przycisków**|Grupa, która zawiera jeden lub więcej przycisków, przyciski przełączników, menu, przyciski dzielone i galerie. Grupa przycisków można dodać do grupy lub menu.|
 |**CheckBox**|Pole zaznaczane lub odznaczane, aby włączyć lub wyłączyć opcję.|
 |**ComboBox**|Pole edycji z dołączonym polem listy. Użytkownikom można wpisać lub wybrać żądaną pozycję. Pola są wyświetlane bieżące zaznaczenie. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> właściwości, aby dodawać i usuwać elementy w czasie wykonywania przed lub po załadowaniu wstążki do aplikacji pakietu Office.|
-|**Lista rozwijana**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowej pozycji na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> właściwości, aby dodać przyciski do listy. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
-|**Pole edycji**|Pole, w którym użytkownik może wpisać tekst.|
+|**DropDown**|Lista elementów, które użytkownik może wybrać. Użytkownik nie może wpisać nowej pozycji na liście rozwijanej.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> właściwości, aby dodać elementy do listy. Można dodawać i usuwać elementy w czasie wykonywania.<br /><br /> Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> właściwości, aby dodać przyciski do listy. Nie można jednak dodawać i usuwać przycisków w czasie wykonywania po załadowaniu wstążki do aplikacji pakietu Office.|
+|**EditBox**|Pole, w którym użytkownik może wpisać tekst.|
 |**Galeria**|Menu przedstawiające tablicę lub wykres wyborów wizualnych, z których użytkownicy mogą wybrać. Można kontrolować układ zaznaczeń w menu. Użyj <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> i <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> właściwości, aby określić liczbę wierszy i kolumn, które będą wyświetlane elementy i przyciski galerii.|
 |**Etykieta**|Tekst, który służy do określania formantów na Wstążce.|
 |**Menu**|Listy rozwijanej, która może zawierać dowolny z następujących formantów:<br /><br /> — Przycisk<br />— Pole<br />— Galeria<br />— Menu<br />-Przycisk podziału<br />-Przycisk przełączania<br />-Separatora<br /><br /> Aby dodać formant do menu w Projektancie wstążki, kliknij strzałkę w dół w menu aby odsłonić powierzchnię projektową menu. Następnie można przeciągać formanty wstążki z **przybornika** na menu. Aby rozmieścić formanty, przeciągnij je do żądanych pozycji.<br /><br /> Aby dodać formanty do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po załadowaniu wstążki do aplikacji pakietu Office, należy ustawić <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> właściwości **true** przed załadowaniem wstążki. Aby dowiedzieć się, jak to zrobić, zobacz [model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|
 |**Separator**|Cienki słupek używany do oddzielania elementów listy. Po dodaniu do grupy pasek jest pionowy. Po dodaniu do menu pasek jest poziomy.|
-|**Przycisk podziału**|Przycisk z dołączonym menu. Przycisk podziału może zawierać żadnego z następujących formantów:<br /><br /> — Przycisk<br />— Pole<br />— Galeria<br />— Menu<br />-Przycisk podziału<br />-Przycisk przełączania<br />-Separatora<br /><br /> Podobnie jak menu przycisk podziału ma swoją własną powierzchnię projektową. Jednak w przeciwieństwie do menu, można tylko aktualizować elementy w przycisku podziału przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobie aktualizowania elementów w przycisku podziału, zobacz [model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|
+|**SplitButton**|Przycisk z dołączonym menu. Przycisk podziału może zawierać żadnego z następujących formantów:<br /><br /> — Przycisk<br />— Pole<br />— Galeria<br />— Menu<br />-Przycisk podziału<br />-Przycisk przełączania<br />-Separatora<br /><br /> Podobnie jak menu przycisk podziału ma swoją własną powierzchnię projektową. Jednak w przeciwieństwie do menu, można tylko aktualizować elementy w przycisku podziału przed załadowaniem wstążki do aplikacji pakietu Office. Aby uzyskać informacje o sposobie aktualizowania elementów w przycisku podziału, zobacz [model obiektu Wstążka ― omówienie](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Pojawiający się przycisk jest wciśnięty lub nie.|
 
 ##  <a name="HandleEventsSetProperties"></a> Obsługa zdarzeń i ustawianie właściwości
@@ -179,16 +179,16 @@ ms.locfileid: "53928870"
 
 |Akcja|Skrót klawiaturowy|
 |------------|-----------------------|
-|Przenieś formant przed poprzedni formant na liście.|**CTRL**+**się**<br /><br /> **CTRL**+**po lewej stronie**|
-|Przenieś formant po następnym formancie na liście.|**CTRL**+**w dół**<br /><br /> **CTRL**+**po prawej stronie**|
+|Przenieś formant przed poprzedni formant na liście.|**Ctrl**+**Up**<br /><br /> **CTRL**+**po lewej stronie**|
+|Przenieś formant po następnym formancie na liście.|**Ctrl**+**Down**<br /><br /> **Ctrl**+**Right**|
 |Przenieś zaznaczenie z jednego formantu do drugiego w tej samej grupie. Dla panelu listy rozwijanej przechodzenie między formantem nadrzędnym a kontrolki w panelu listy rozwijanej.|**W górę**<br /><br /> **W dół**|
 |Iteracja FO przodu przez wszystkie formanty.|**Karta**|
 |Iteruj do tyłu przez wszystkie formanty.|**SHIFT**+**kartę**|
 |Usuń zaznaczony formant lub zestaw formantów.|**Delete**|
-|Kopiuj wybrane formanty.|**CTRL**+**C**|
-|Wytnij wybrane formanty.|**CTRL**+**X**|
-|Wklej formanty ze Schowka.|**CTRL**+**V**|
-|Wybierz **przybornika**.|**CTRL**+**Alt**+**X**|
+|Kopiuj wybrane formanty.|**Ctrl**+**C**|
+|Wytnij wybrane formanty.|**Ctrl**+**X**|
+|Wklej formanty ze Schowka.|**Ctrl**+**V**|
+|Wybierz **przybornika**.|**Ctrl**+**Alt**+**X**|
 |Wybierz składnik nadrzędny.|**ESC**|
 
  Skróty klawiaturowe, które mają zastosowanie tylko do Menu pakietu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, i <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> są wyświetlane w poniższej tabeli.

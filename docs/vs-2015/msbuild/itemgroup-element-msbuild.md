@@ -1,14 +1,9 @@
 ---
 title: Itemgroup — Element (MSBuild) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f3a98238e922e08767524c361cdae850c40a4ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 18d01e5ebe9b1f675fb0af8b2bf5737cf4ab9f78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772082"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,6 +92,3 @@ Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-elem
  [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementy](../msbuild/msbuild-items.md)   
  [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

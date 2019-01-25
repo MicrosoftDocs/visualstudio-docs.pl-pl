@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960420"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873681"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
   <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest zakładki, która ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy, aby oznaczyć element lub lokalizacji w dokumencie programu Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Kontroli jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.
@@ -90,7 +90,7 @@ W poniższej tabeli przedstawiono, jak zdania "To jest tekst przykładowy." jest
 |--------------|----------|
 |Dwa oddzielne zakładki|[to jest zastąpienie.]{}|
 |Bookmark1|To zastąpienie.|
-|Bookmark2|*\<pusty >*|
+|Bookmark2|*\<empty>*|
 
 ## <a name="events"></a>Zdarzenia
 

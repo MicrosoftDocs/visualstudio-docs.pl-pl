@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, moving
 - workbooks, moving worksheets in
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4df9f10872283cf8f8b38ba29a9ea140646aa16f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10f610513b802b2b5101bdc0c2689c3d4c5ed90b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870535"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Instrukcje: Programowe przenoszenie arkuszy w obrębie skoroszytu
   Można programowo zmienić położenie arkuszy względem innych arkuszy w skoroszycie. Jeśli nie określisz lokalizacji przenoszony arkusz Excel utworzy nowy skoroszyt zawiera go.  

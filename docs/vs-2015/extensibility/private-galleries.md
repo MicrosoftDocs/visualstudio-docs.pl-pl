@@ -1,34 +1,29 @@
 ---
 title: Galerie prywatne | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763618"
 ---
 # <a name="private-galleries"></a>Galerie prywatne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz udostępnić formanty, szablony i narzędzia, które tworzysz, publikując je do *prywatną galerię* w sieci intranet dla całej organizacji, w następujący sposób:  
   
--   Utwórz Atom () kanału informacyjnego RSS do odpowiednio skonfigurowanego centralną lokalizację (repozytorium) w sieci intranet. Aby uzyskać więcej informacji, zobacz [jak: utworzyć źródło danych Atom dla galerii prywatnej](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
+-   Utwórz Atom () kanału informacyjnego RSS do odpowiednio skonfigurowanego centralną lokalizację (repozytorium) w sieci intranet. Aby uzyskać więcej informacji, zobacz [jak: Utwórz Atom dla galerii prywatnej](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
   
 -   Dystrybuuj plik .pkgdef, który opisuje prywatną galerię. Firma Microsoft zaleca tej konfiguracji dla administratorów, którzy chcą nawiązać ona prywatną galerię na wielu komputerach jednocześnie.  
   
@@ -68,7 +63,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Aby uzyskać więcej informacji, zobacz [porady: Zarządzanie prywatnej Galerii za pomocą ustawień rejestru](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie galerią prywatną za pomocą ustawień rejestru](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).  
   
 ## <a name="installing-extensions-from-a-private-gallery"></a>Instalowanie rozszerzenia z galerii prywatnej  
  Można wyszukać i zainstalować rozszerzenia programu Visual Studio z prywatną galerię w **rozszerzenia i aktualizacje**. Użyto ona prywatną galerię o nazwie `My Gallery`.  
@@ -99,4 +94,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## <a name="see-also"></a>Zobacz też  
  [Znajdowanie rozszerzeń programu Visual Studio i korzystanie](../ide/finding-and-using-visual-studio-extensions.md)   
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

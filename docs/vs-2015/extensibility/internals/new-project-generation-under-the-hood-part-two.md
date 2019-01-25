@@ -1,37 +1,32 @@
 ---
 title: 'Generowanie nowego projektu: Za kulisami, część dwóch | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764410"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: za kulisami, część druga
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisami część druga
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-W [Generowanie nowego projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy sposób, w jaki **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows Application**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i kliknięto OK.  
+W [Generowanie nowego projektu: Kulisami, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy sposób, w jaki **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows Application**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i kliknięto OK.  
   
 ## <a name="generating-the-solution-files"></a>Generowanie plików rozwiązania  
  Wybieranie szablonu aplikacji kieruje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Rozpakowywanie i otwieranie odpowiedni plik .vstemplate i uruchom szablon, aby zinterpretować poleceń XML w tym pliku. Te polecenia powodują utworzenie projektów i elementów projektu w nowym lub istniejącym rozwiązaniu.  
   
- Szablon wypakowuje plików źródłowych, o nazwie szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Ten szablon kopiuje te pliki do nowego projektu, dostosowywanie ich odpowiednio. Aby zapoznać się z omówieniem szablonów projektów i elementów, zobacz [NIB: szablony programu Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Szablon wypakowuje plików źródłowych, o nazwie szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Ten szablon kopiuje te pliki do nowego projektu, dostosowywanie ich odpowiednio. Aby zapoznać się z omówieniem szablonów projektów i elementów, zobacz [NIB: Visual Studio Templates](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Zastąpienie parametru szablonu  
  Gdy szablon kopiuje szablon elementu do nowego projektu, zastępuje wszelkie parametry szablonu z ciągami, aby dostosować plik. Parametr szablonu ma specjalne token, który jest poprzedzony i następuje znak dolara, na przykład, $date$.  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Zobaczyliśmy \<TemplateData > sekcji [Generowanie nowego projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Znaczniki w tej sekcji są używane do kontrolowania wygląd **nowy projekt** okno dialogowe.  
+ Zobaczyliśmy \<TemplateData > sekcji [Generowanie nowego projektu: Za kulisami, część jednego](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Znaczniki w tej sekcji są używane do kontrolowania wygląd **nowy projekt** okno dialogowe.  
   
  Znaczniki \<TemplateContent > sekcji kontroli Generowanie nowych projektów i elementów projektu. Oto \<TemplateContent > sekcji z pliku cswindowsapplication.vstemplate w folderze 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip \Program Files\Microsoft programu Visual Studio.  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Generowanie nowego projektu: za kulisami, część pierwsza](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Generowanie nowego projektu: Kulisami część pierwsza](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

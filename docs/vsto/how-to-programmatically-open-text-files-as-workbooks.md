@@ -9,17 +9,17 @@ helpviewer_keywords:
 - workbooks, opening text files as
 - text [Office development in Visual Studio], text files
 - text files, opening as workbooks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f45eef21448ecbc0ee4e866d15ea746f098f2aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0e333cd8ebb76df964c52ee48f4bde07e90fbaf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964192"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866207"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Instrukcje: Programowe otwieranie plików tekstowych jako skoroszytu
   Można otworzyć pliku tekstowego jako skoroszyt. Należy podać nazwę pliku tekstowego, który chcesz otworzyć. Można określić kilka opcjonalnych parametrów, takich jak numer wiersza, w jaki do analizowania na początku i format kolumn danych w pliku.  

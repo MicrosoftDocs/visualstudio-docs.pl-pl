@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], Outlook
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e7b99272e4ef7ca59566c3de0ab9f89804d4cbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932369"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863633"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Dostosowywanie wstążki do programu Outlook
   Podczas dostosowywania wstążki w programie Microsoft Outlook pakietu Office, należy rozważyć, gdzie Twoje niestandardowa Wstążka pojawią się w aplikacji. Program Outlook wyświetli wstążki w głównej aplikacji interfejsu użytkownika (UI), a w systemie windows, które otwierają, gdy użytkownicy wykonają pewnych zadań, takich jak tworzenie wiadomości e-mail. Tych aplikacji systemu windows są nazywane inspektorzy.  

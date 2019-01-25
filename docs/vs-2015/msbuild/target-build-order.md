@@ -1,27 +1,22 @@
 ---
 title: Docelowa kompilacja — kolejność | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764864"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
   
  Importowany projektów może mieć własne `InitialTargets` atrybutów. Wszystkie cele początkowe są zagregowane ze sobą i są uruchamiane w kolejności.  
   
- Aby uzyskać więcej informacji, zobacz [jak: Określ którego elementem docelowym w celu tworzenia pierwszego](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Określanie pierwszego obiektu docelowego do kompilacji](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Domyślne elementy docelowe  
  `DefaultTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa, których cel lub cele są tworzone, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
@@ -71,7 +66,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
   
  Importowany projektów może mieć własne `DefaultTargets` atrybutów. Pierwszy `DefaultTargets` napotkano atrybut określa, które domyślne elementy docelowe zostanie uruchomiony.  
   
- Aby uzyskać więcej informacji, zobacz [jak: Określ którego elementem docelowym w celu tworzenia pierwszego](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Aby uzyskać więcej informacji, zobacz [jak: Określanie pierwszego obiektu docelowego do kompilacji](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Pierwszy element docelowy  
  Jeśli nie ma żadnych cele początkowe, domyślne elementy docelowe ani wiersza polecenia obiekty docelowe, MSBuild uruchamia pierwszego obiektu docelowego napotka w pliku projektu lub jakiegokolwiek projektu, zaimportowane pliki.  
@@ -129,6 +124,3 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
   
 ## <a name="see-also"></a>Zobacz też  
  [Docelowe elementy](../msbuild/msbuild-targets.md)
-
-
-

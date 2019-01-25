@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ranges, applying color
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4cd8a9528b0bcd360fd00f700172899f1480d0ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a7a3e58212b0c20264b3b325f3658760aa5ae4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868027"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868173"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Instrukcje: Programowe stosowanie koloru do zakresów programu Excel
   Aby zastosować kolor tekstu w zakres komórek, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.  

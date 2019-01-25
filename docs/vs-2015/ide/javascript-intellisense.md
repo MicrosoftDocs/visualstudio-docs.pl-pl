@@ -1,13 +1,9 @@
 ---
 title: Funkcja IntelliSense języka JavaScript | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -29,13 +25,13 @@ ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a70e9598a6cae07a1ef6fcb861924b250a444ffe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763287"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +54,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
 - [Przetwarzanie informacji IntelliSense](#ProcessingIntelliSenseInformation)
 
-- [Funkcje JavaScript IntelliSense](#Features)
+- [JavaScript IntelliSense Features](#Features)
 
 - [Rozszerzalność JavaScript IntelliSense](#Extensibility)
 
@@ -263,7 +259,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 
   Technologia IntelliSense nie jest dostępna, gdy jeden plik .aspx odwołuje się do innego pliku aspx.
 
-###  <a name="ASPNet"></a> Obiekty ASP.NET AJAX
+###  <a name="ASPNet"></a> ASP.NET AJAX Objects
  ASP.NET AJAX również obsługuje technologię JavaScript IntelliSense. ASP.NET AJAX obejmuje strukturę klienta, która rozszerza standardowe typy, które są dostępne w języku ECMAScript (JavaScript). Aby umożliwić technologii JavaScript IntelliSense dostarczanie szczegółowych informacji o obiektach ASP.NET AJAX, komentarze dokumentacji XML zostały dodane w całej [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Te komentarze dokumentacji XML są wyświetlane podczas korzystania z typów i elementów członkowskich, które są zawarte w bibliotece programu ASP.NET AJAX.
 
 > [!NOTE]
@@ -288,5 +284,5 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 - [Uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
 - [Komentarze dokumentacji XML](../ide/xml-documentation-comments-javascript.md)
 - [Model obiektowy DHTML — informacje](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Lista członków](http://msdn.microsoft.com/en-us/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Lista członków](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Atrybut SRC &#124; src właściwości](http://go.microsoft.com/fwlink/?LinkId=92345)

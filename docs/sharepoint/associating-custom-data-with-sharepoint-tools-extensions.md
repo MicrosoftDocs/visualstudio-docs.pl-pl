@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint project items, associating custom data
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 754f5f92dcaf6d19a226f4d1f69ebcbdd8f7d5aa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951043"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875501"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
   Możesz dodać niestandardowe dane do niektórych obiektów w rozszerzenia narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części Twojego rozszerzenia, który chcesz uzyskać dostęp później z innym kodem Twojego rozszerzenia. Zamiast wykonywania niestandardowych sposób przechowywania i dostępu do danych, można skojarzyć dane z obiektu w rozszerzeniu i następnie później pobrać dane z tego samego obiektu.  

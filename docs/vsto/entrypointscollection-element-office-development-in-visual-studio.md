@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPointsCollection element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a8ae05669bcb7babedc74ad1d97e045a74f07f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933612"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871172"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entrypointscollection —&gt; — element (Office development w programie Visual Studio)
   `entryPointsCollection` Elementu `vstav3` przestrzeń nazw zawiera wszystkie `entryPoints` elementy związane z rozwiązań pakietu Office.

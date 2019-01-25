@@ -1,22 +1,20 @@
 ---
 title: Dodawanie nowych połączeń | Dokumentacja firmy Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a5c7d4bda59b8ff9bdedb775ecc6376a23a2db7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770628"
 ---
 # <a name="add-new-connections"></a>Dodaj nowe połączenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +25,7 @@ Przetestuj połączenie z bazą danych lub usługi i eksplorować zawartość ba
  Server Explorer  
  Instalowany domyślnie w programie Visual Studio. Może służyć do testowania połączeń i wyświetlania baz danych programu SQL Server, innych baz danych, które mają zainstalowanego dostawcę ADO.NET i niektórych usług platformy Azure. Pokazuje również obiektów niskiego poziomu, takie jak liczniki wydajności systemu, dzienniki zdarzeń i kolejki komunikatów. Jeśli źródło danych nie ma żadnego dostawcy ADO.NET, nie będzie widoczna w tym miejscu, ale możesz nadal używać go w programie Visual Studio, łącząc programowo.  
   
- Eksplorator chmury  
+ Cloud Explorer  
  Ręcznie zainstaluj to okno jako rozszerzenia programu Visual Studio, wybierając **narzędzia** > **rozszerzenia i aktualizacje** > **Online**  >  **Galerii visual Studio**. Udostępnia funkcje specjalne podczas samodzielnego eksplorowania i łączenie się z usługami platformy Azure.  
   
  Eksplorator obiektów SQL Server  
@@ -56,4 +54,3 @@ Przetestuj połączenie z bazą danych lub usługi i eksplorować zawartość ba
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

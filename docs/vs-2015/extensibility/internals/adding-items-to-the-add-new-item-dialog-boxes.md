@@ -1,26 +1,21 @@
 ---
 title: Dodawanie elementów do Dodaj nowy element okna dialogowe | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778556"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835066"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do okien dialogowych Dodawanie nowego elementu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
   
  @="#6"  
   
- "TemplatesDir"="\<ścieżka instalacji programu Visual Studio SDK\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ "TemplatesDir"="\<Visual Studio SDK installation path\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
  "SortPriority" = dword:00000064  
   
@@ -89,4 +84,3 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
  [Dodawanie projektu i szablony elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Opis katalogu szablonu (. Pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

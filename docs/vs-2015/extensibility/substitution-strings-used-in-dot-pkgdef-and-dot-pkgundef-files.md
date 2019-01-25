@@ -1,26 +1,21 @@
 ---
 title: Ciągi podstawienia używane w. Pkgdef i. Pliki Pkgundef | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode%2C .pkgdef and .pkgundef files
 ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1496931b02c5673c1f08253ebed7da0cae0b904c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817545"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756731"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Ciągi podstawienia używane w. Pkgdef i. Pliki Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ Można użyć ciągów podstawienia wymienione poniżej w pkgdef i pkgundef plik
 |$WINDIR$|Windows folder.|  
   
  Jeżeli Analizator nie rozpoznaje ciąg podstawienia nie może ustalić wartości wpisu rejestru lub zmienną środowiskową, a następnie podstawienia nie są wykonywane w tej części ciągu.
-

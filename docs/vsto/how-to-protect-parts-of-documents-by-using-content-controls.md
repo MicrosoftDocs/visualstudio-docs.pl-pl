@@ -13,17 +13,17 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f12eb0e43b1868d93a155354756b10b9661e560
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989260"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875527"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Instrukcje: Ochrona części dokumentów za pomocą formantów zawartości
   W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów, w części dokumentu Microsoft Word pakietu Office można chronić za pomocą formantów zawartości:  

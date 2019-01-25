@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Excel [Office development in Visual Studio], worksheets
 - worksheets [Office development in Visual Studio], common tasks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9133fbf2e8ede3ec8595ae3a0e22bea3b5b07c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 749e2936609b425d13116ba905b9b739e8bf834e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857695"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876242"
 ---
 # <a name="work-with-worksheets"></a>Praca z arkuszami
   <xref:Microsoft.Office.Tools.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Worksheet> klasy zawierają metody i właściwości, które umożliwiają wykonywanie zadań przy użyciu arkuszy.  

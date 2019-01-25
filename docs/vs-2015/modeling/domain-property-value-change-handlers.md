@@ -1,25 +1,22 @@
 ---
 title: Obsługa zmian wartości właściwości domeny | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ad8cc11947bdaa99fa7d3ee1d48576896859e598
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232729"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835072"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obsługa zmian wartości właściwości domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>Alternatywna metoda: obliczane właściwości  
+### <a name="alternative-technique-calculated-properties"></a>Alternatywna metoda: Obliczony właściwości  
  W poprzednim przykładzie pokazano, jak OnValueChanged() może służyć do propagowania wartości z właściwości w jednej domenie. Każda właściwość ma swój własny przechowywanej wartości.  
   
  Zamiast tego należy rozważyć Definiowanie właściwości pochodnej jako właściwość obliczeniowe. W tym przypadku właściwość ma nie swój własny magazyn, a jest zdefiniowanie szacowania funkcji będzie zawsze wtedy, gdy jej wartość jest wymagana. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  Potencjalną wadą właściwości obliczeniowej jest jednak, że wyrażenie jest obliczane, za każdym razem, gdy wartość jest używana, które mogą stanowić problem z wydajnością. Ponadto jest mało bez OnValueChanging() i OnValueChanged() na obliczonej właściwości.  
   
-### <a name="alternative-technique-change-rules"></a>Alternatywna metoda: zmiana reguł  
+### <a name="alternative-technique-change-rules"></a>Alternatywna metoda: Zmiany zasad  
  Jeśli zdefiniujesz ChangeRule, jest ono wykonywane na końcu transakcji, w którym ulega zmianie wartość właściwości.  Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).  
   
  Jeśli kilka zmian jest wprowadzonych w jednej transakcji, ChangeRule wykonuje, gdy są one wszystkie ukończone. Natomiast OnValue... metody są wykonywane, gdy niektóre zmiany nie zostały wykonane. W zależności od tego, co chcesz osiągnąć to może spowodować ChangeRule bardziej odpowiednie.  
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

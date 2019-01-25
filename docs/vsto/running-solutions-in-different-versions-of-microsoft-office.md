@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, multiple Office versions
 - Office solutions [Office development in Visual Studio]
 - multiple Office versions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b21acc0122a3cdbbcfe208c5e0f9886bb05d116
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843401"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875982"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Uruchamianie rozwiązań w różnych wersjach pakietu Microsoft Office
     
@@ -29,10 +29,10 @@ ms.locfileid: "53843401"
   
 |Wersja pakietu Office przez szablon projektu|Docelowy .NET Framework projektu<sup>1</sup>|Wersje pakietu Office, które można uruchamiać rozwiązanie|Wymagane środowisko uruchomieniowe na komputerze użytkownika końcowego|  
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|  
-|Pakiety Office 2016 i [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy|Pakiety Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools for Office Runtime|  
-|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy|Pakiety Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools for Office Runtime|  
-|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Program .NET Framework 3,5|Pakiety Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Visual Studio 2010 Tools for Office Runtime|  
-|System Microsoft Office 2007|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy,<br /><br /> lub<br /><br /> Program .NET Framework 3,5|Pakiety Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> System Microsoft Office 2007|Visual Studio 2010 Tools for Office Runtime|  
+|Pakiety Office 2016 i [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools for Office Runtime|  
+|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools for Office Runtime|  
+|[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Program .NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Visual Studio 2010 Tools for Office Runtime|  
+|System Microsoft Office 2007|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy,<br /><br /> lub<br /><br /> Program .NET Framework 3,5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> System Microsoft Office 2007|Visual Studio 2010 Tools for Office Runtime|  
   
  1. .NET Framework w wersji wymagające projekt jest ukierunkowany na komputerach użytkowników końcowych dla rozwiązania w celu uruchomienia. Na przykład jeśli projekt jest przeznaczony dla .NET Framework 3.5, .NET Framework 3.5 jest wymagany na komputerach użytkowników końcowych. W tym przykładzie rozwiązania nie będzie działać w przypadku tylko [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest zainstalowany na komputerach użytkowników końcowych.  
   
@@ -46,8 +46,8 @@ ms.locfileid: "53843401"
 |Wersja programu Visual Studio, użyty do utworzenia rozwiązania|Wersja pakietu Office przez szablon projektu|Wersje pakietu Office, które można uruchamiać rozwiązanie|Wymagane środowisko uruchomieniowe na komputerze użytkownika końcowego|Wymagana wersja programu .NET Framework na komputerze użytkownika końcowego|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
 |Visual Studio 2008 Professional<br /><br /> lub<br /><br /> Visual Studio Team System 2008|System Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> System Microsoft Office 2007|Visual Studio 2010 Tools for Office Runtime<sup>1</sup><br /><br /> lub<br /><br /> Visual Studio Tools dla pakietu Microsoft Office system (wersja 3.0 Runtime)|Program .NET Framework 3,5|  
-|Jedną z następujących wersji programu Visual Studio 2005 za pomocą VSTO 2005 SE<sup>2</sup> zainstalowane:<br /><br /> — Program visual Studio 2005 Tools dla pakietu Office<br />— Program visual Studio Team System 2005<br />— Program visual Studio 2005 Professional|System Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-bitowych<sup>3</sup>)<br /><br /> System Microsoft Office 2007|Visual Studio 2005 Tools for Office Second Edition Runtime|.NET framework 2.0, .NET Framework 3.0 lub .NET Framework 3.5|  
-|Dowolny z następujących wersji programu Visual Studio:<br /><br /> — Program visual Studio 2008 Professional<br />— Program visual Studio Team System 2008<br />— Program visual Studio 2005 Tools dla pakietu Office (z lub bez VSTO 2005 SE<sup>2</sup> zainstalowane)<br />— Program visual Studio Team System 2005 (z lub bez VSTO 2005 SE<sup>2</sup> zainstalowane)<br />— Program visual Studio Professional 2005 z VSTO 2005 SE<sup>2</sup> zainstalowane|Program Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-bitowych<sup>3</sup>)<br /><br /> System Microsoft Office 2007<br /><br /> Program Microsoft Office 2003|Visual Studio 2005 Tools for Office Second Edition Runtime|.NET framework 2.0, .NET Framework 3.0 lub .NET Framework 3.5|  
+|Jedną z następujących wersji programu Visual Studio 2005 za pomocą VSTO 2005 SE<sup>2</sup> zainstalowane:<br /><br /> — Program visual Studio 2005 Tools dla pakietu Office<br />-   Visual Studio Team System 2005<br />-   Visual Studio 2005 Professional|System Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-bitowych<sup>3</sup>)<br /><br /> System Microsoft Office 2007|Visual Studio 2005 Tools for Office Second Edition Runtime|.NET framework 2.0, .NET Framework 3.0 lub .NET Framework 3.5|  
+|Dowolny z następujących wersji programu Visual Studio:<br /><br /> -   Visual Studio 2008 Professional<br />-   Visual Studio Team System 2008<br />— Program visual Studio 2005 Tools dla pakietu Office (z lub bez VSTO 2005 SE<sup>2</sup> zainstalowane)<br />— Program visual Studio Team System 2005 (z lub bez VSTO 2005 SE<sup>2</sup> zainstalowane)<br />— Program visual Studio Professional 2005 z VSTO 2005 SE<sup>2</sup> zainstalowane|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32-bitowych<sup>3</sup>)<br /><br /> System Microsoft Office 2007<br /><br /> Microsoft Office 2003|Visual Studio 2005 Tools for Office Second Edition Runtime|.NET framework 2.0, .NET Framework 3.0 lub .NET Framework 3.5|  
   
  1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikacji obejmują Visual Studio 2010 Tools dla pakietu Office runtime. W związku z tym, te aplikacje zawsze korzystają z programu Visual Studio 2010 Tools dla pakietu Office runtime zamiast programu Visual Studio Tools dla pakietu Microsoft Office (wersja 3.0 Runtime) w tym scenariuszu. Aplikacji w programie Microsoft Office system 2007 można użyć Visual Studio 2010 Tools dla pakietu Office Runtime lub Visual Studio Tools dla pakietu Microsoft Office system (wersja 3.0 Runtime).  
   

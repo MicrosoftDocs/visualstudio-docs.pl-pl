@@ -1,14 +1,9 @@
 ---
 title: FormatVersion, zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +13,13 @@ ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 817731ae86eeb5f6e093cdb2b0e93000761f141a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755128"
 ---
 # <a name="formatversion-task"></a>FormatVersion — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ ms.locfileid: "49269343"
   
 Dołącza numer wersji do numeru wersji.  
   
--   Przypadek #1: Dane wejściowe: wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
+-   Przypadek #1: Dane wejściowe: Wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
--   Przypadek #2: Dane wejściowe: wersji = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
+-   Przypadek #2: Dane wejściowe: Wersja = poprawkę "1.0.0.*" = "5" w danych wyjściowych: OutputVersion = "1.0.0.5"  
   
--   Przypadek #3: Dane wejściowe: wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
+-   W przypadku #3: Dane wejściowe: Wersja = "1.0.0.0" poprawki =\<nieważne >;  Dane wyjściowe: OutputVersion = "1.0.0.0"  
   
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry `FormatVersion` zadania.  
@@ -54,6 +49,3 @@ Dołącza numer wersji do numeru wersji.
 ## <a name="see-also"></a>Zobacz też  
  [Zadania](../msbuild/msbuild-tasks.md)   
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
-
-
-

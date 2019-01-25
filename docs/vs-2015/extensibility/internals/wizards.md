@@ -1,26 +1,21 @@
 ---
 title: Kreatorzy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cbf2eceeb3ae8a3870954d53f8d85c46f3322d24
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7afb8956ab3c5f4fb202adadbeea32d90e159074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747585"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763562"
 ---
 # <a name="wizards"></a>Kreatory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,9 +50,8 @@ Po utworzeniu kreatora, zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../in
  [Typy projektów](../../extensibility/internals/project-types.md)  
  Zawiera łącza do dodatkowych tematów, które oferują informacji na temat sposobu projektowania nowych typów projektów.  
   
- [Wskazówki: Tworzenie kreatora](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
+ [Przewodnik: Tworzenie kreatora](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
  Ilustruje sposób tworzenia kreatora.  
   
  [Rozszerzanie projektów](../../extensibility/extending-projects.md)  
  Opisuje sposób używania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projekty i rozwiązania do organizowania plików kodu i plików zasobów i sposób implementowania kontroli źródła.
-

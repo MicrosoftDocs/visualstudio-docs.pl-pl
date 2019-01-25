@@ -1,14 +1,9 @@
 ---
 title: Ocenianie wyrażeń | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
 - debugging [Debugging SDK], expression evaluation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8bcecdaaea21dfc0d6e776790757cbd207494271
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: caff42c2e203151c6bab7d50b41744c2469ab3c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752367"
 ---
 # <a name="evaluating-expressions"></a>Ocenianie wyrażeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,4 +37,3 @@ Wyrażenia są tworzone na podstawie ciągi przekazywane z automatyczne, wyraże
  [Ramki stosu](../../extensibility/debugger/stack-frames.md)   
  [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)   
  [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)
-

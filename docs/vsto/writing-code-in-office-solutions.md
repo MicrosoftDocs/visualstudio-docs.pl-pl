@@ -28,17 +28,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], writing code
 - Office applications [Office development in Visual Studio], programming model
 - managed code extensions [Office development in Visual Studio], writing code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942976"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864075"
 ---
 # <a name="write-code-in-office-solutions"></a>Pisanie kodu w rozwiązaniach pakietu Office
   Istnieją pewne aspekty pisanie kodu w projektach pakietu Office, które różnią się od innych typów projektów w programie Visual Studio. Wiele z tych różnic odnoszą się do sposobu modele obiektów pakietu Office są widoczne dla kodu zarządzanego. Inne różnice są związane z projekt projektów Office.
