@@ -1,12 +1,9 @@
 ---
 title: Nawigowanie i aktualizowanie modeli warstw w kodzie programu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734733"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805338"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Nawigowanie i aktualizowanie modeli warstw w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym temacie opisano elementy i relacje w modelach warstwy, które można znaleźć i zaktualizować przy użyciu kodu programu. Aby uzyskać więcej informacji dotyczących diagramów warstw z punktu widzenia użytkownika, zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md) i [diagramy warstwowe: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md).  
+W tym temacie opisano elementy i relacje w modelach warstwy, które można znaleźć i zaktualizować przy użyciu kodu programu. Aby uzyskać więcej informacji dotyczących diagramów warstw z punktu widzenia użytkownika, zobacz [diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md) i [diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md).  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Modelu opisane w tym temacie jest fasada w bardziej ogólnej <xref:Microsoft.VisualStudio.GraphModel> modelu. Jeśli piszesz [rozszerzenie menu polecenia lub gestu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), użyj `Layer` modelu. Jeśli piszesz [rozszerzenie sprawdzania poprawności warstwy](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), jest łatwiejszy w obsłudze `GraphModel`.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Dodawanie poleceń i gestów do diagramów warstw](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)   
- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy warstw: Odwołanie](../modeling/layer-diagrams-reference.md)   
+ [Diagramy warstw: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)   
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], project templates
 - Word projects in Visual Studio
 - Outlook [Office development in Visual Studio], project templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc1cce8e951e074d45317a9908e7a8b7cbb04f43
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940604"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874695"
 ---
 # <a name="office-project-templates-overview"></a>Omówienie szablonów projektu pakietu Office
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów umożliwiające tworzenie następujących typów rozwiązań dla pakietu Office:  
@@ -64,13 +64,13 @@ ms.locfileid: "53940604"
   
 - **Excel 2013 i 2016 szablon narzędzi VSTO**  
   
-- **Dokument narzędzi VSTO programu Word 2010**  
+- **Word 2010 VSTO Document**  
   
-- **Szablon VSTO programu Word 2010**  
+- **Word 2010 VSTO Template**  
   
-- **Skoroszyt narzędzi VSTO dla programu Excel 2010**  
+- **Excel 2010 VSTO Workbook**  
   
-- **Szablon narzędzi VSTO dla programu Excel 2010**  
+- **Excel 2010 VSTO Template**  
   
   Szablony projektów dokumentów programu Word i skoroszytów programu Excel zawierają kod źródłowy, który pomoże rozpocząć tworzenie rozwiązania opartego na konkretnym dokumencie lub skoroszycie. W tego typu rozwiązaniach kod działa tylko wtedy, gdy powiązany dokument zostanie otwarty w programie Word lub Excel.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "53940604"
   
 - **Dodatek narzędzi VSTO dla programów Excel 2013 i 2016**  
   
-- **Dodatek programu InfoPath 2013 VSTO**  
+- **InfoPath 2013 VSTO Add-in**  
   
 - **Dodatek narzędzi VSTO dla programów Outlook 2013 i 2016**  
   
@@ -110,11 +110,11 @@ ms.locfileid: "53940604"
   
 - **Dodatek programu Excel 2010**  
   
-- **Dodatek programu InfoPath 2010**  
+- **InfoPath 2010 Add-in**  
   
-- **Dodatek programu Outlook 2010**  
+- **Outlook 2010 Add-in**  
   
-- **Dodatek programu PowerPoint 2010**  
+- **PowerPoint 2010 Add-in**  
   
 - **Dodatek Project 2010**  
   

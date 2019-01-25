@@ -1,14 +1,9 @@
 ---
 title: VisibilityConstraints, Element | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1781355e6dedf4d614b4e461021accf017f3f214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06f6a74fabfc1bd86f54656c6b30b55690940a0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763028"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,4 +68,3 @@ VisibilityConstraints, element określa statyczne widoczność grupy poleceń i 
 ## <a name="see-also"></a>Zobacz też  
  [VisibilityItem, Element](../extensibility/visibilityitem-element.md)   
  [Tabela poleceń programu Visual Studio (pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

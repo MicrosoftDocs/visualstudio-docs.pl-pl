@@ -1,32 +1,29 @@
 ---
-title: 'Porady: Otwieranie modelu z pliku w kodzie programu | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Otwieranie modelu z pliku w kodzie programu | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940869"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803802"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Instrukcje: Otwieranie modelu z pliku w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.  
   
  Z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia, w tym celu można użyć ModelBus. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## <a name="target-framework"></a>Platforma docelowa  
+## <a name="target-framework"></a>Struktura docelowa  
  Ustaw **platformę docelową** projektu aplikacji do **.NET Framework 4**.  
   
 #### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

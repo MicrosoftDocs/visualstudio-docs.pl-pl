@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Excel [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaf5fe98e5c5a9c54245307f50e71345d0e2d477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871250"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.  

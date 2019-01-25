@@ -1,14 +1,9 @@
 ---
 title: Widok podsumowania — dane próbkowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method, Summary view
 - Summary view
@@ -16,13 +11,13 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e470cee87a2d83f72df369d79ac337fce5412ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8570692ec620ee50cd24f3fa95ceec8b21172919
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803088"
 ---
 # <a name="summary-view---sampling-data"></a>Widok podsumowania — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +28,14 @@ Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funk
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="timeline-graph"></a>Wykres osi czasu  
- Wykres osi czasu w widoku podsumowania przedstawia wartość procentową wykorzystania procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtr widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Wykres osi czasu w widoku podsumowania przedstawia wartość procentową wykorzystania procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="hot-path"></a>Ścieżka aktywna  
  **Ścieżka aktywna** wyświetla to ścieżka wykonania, w którym większość próbek. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.  
   
  **Ścieżka aktywna** zawiera następujące dane dotyczące każdej funkcji:  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji.|  
 |**% Włącznych próbek**|Procent wszystkie przykłady, które wystąpiły podczas wykonywania tej funkcji i funkcji wywoływanych przez tę funkcję.|  
@@ -53,7 +48,7 @@ Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funk
   
  **Działa w sposób najbardziej samodzielnej pracy** zawiera następujące dane dotyczące każdej funkcji:  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji.|  
 |**% Wyłącznych próbek**|Procent wszystkich przykładów podczas uruchomienia profilowania, które zostały zebrane podczas wykonywania kodu funkcji w jego treści funkcji. Wartość procentowa wyklucza przykładów, które zostały zebrane podczas wykonywania zostały funkcje, które wywołuje tę funkcję.|  
@@ -61,6 +56,3 @@ Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funk
 ## <a name="see-also"></a>Zobacz też  
  [Widok podsumowania](../profiling/summary-view-dotnet-memory-data.md)   
  [Widok podsumowania](../profiling/summary-view-instrumentation-data.md)
-
-
-

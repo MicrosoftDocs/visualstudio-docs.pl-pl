@@ -1,12 +1,9 @@
 ---
 title: Powiązywanie kontrolek formularzy Windows Forms z danymi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ce8cc39880908d099c72142699b4cb19fb514e6
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783430"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

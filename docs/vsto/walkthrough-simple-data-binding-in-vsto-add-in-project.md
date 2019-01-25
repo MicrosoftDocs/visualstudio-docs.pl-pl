@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828423"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872277"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Przewodnik: Proste powiązanie danych w projekcie dodatku narzędzi VSTO
 

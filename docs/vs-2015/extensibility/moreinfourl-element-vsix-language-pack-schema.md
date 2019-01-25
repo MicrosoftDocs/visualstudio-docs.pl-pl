@@ -1,24 +1,19 @@
 ---
 title: Element MoreInfoURL (VSIX Language Pack schemat) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0f92a64e3cc4c701b30b313bab984dc18d7de3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04168f2e69cb613a00313a45a38b2db2882d6d1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795662"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Element MoreInfoURL (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,5 +62,4 @@ Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [Odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

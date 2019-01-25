@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aec5557b2837317bfd634035875628ef0e68220c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920621"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863360"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konwertowanie pomiędzy typami systemu projektu SharePoint a innymi typami projektu Visual Studio
   W niektórych przypadkach może być obiekt w systemie projektu programu SharePoint i chcesz korzystać z funkcji odpowiedni obiekt w modelu obiektu automatyzacji programu Visual Studio lub model obiektów integracji, lub na odwrót. W takich przypadkach można użyć <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> metody usługi projektu programu SharePoint, aby przekonwertować obiekt do innego obiektu modelu.

@@ -1,14 +1,9 @@
 ---
 title: Widoku komunikatów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779832"
 ---
 # <a name="messages-view"></a>Widok komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wy
   
  Typowe okno widoku komunikatów pojawia się poniżej. Pamiętaj, że pierwsza kolumna zawiera uchwyt okna, a druga kolumna zawiera kod komunikatu (wyjaśnione w [kody komunikatów](../debugger/message-codes.md)). Zdekodowany komunikat parametrów i zwracanych wartości są po prawej stronie.  
   
- ![Szpieguj&#43; &#43; widoku komunikatów](../debugger/media/spy-messagesview.png "Spy ++ _MessagesView")  
+ ![Spy&#43;&#43; Messages View](../debugger/media/spy-messagesview.png "Spy++_MessagesView")  
 Widok komunikatów programu Spy ++  
   
 ## <a name="procedures"></a>Procedury  
@@ -89,6 +84,3 @@ Widok komunikatów programu Spy ++
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
-
-
-

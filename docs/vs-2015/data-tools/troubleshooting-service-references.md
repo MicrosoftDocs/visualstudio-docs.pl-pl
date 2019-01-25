@@ -1,12 +1,9 @@
 ---
 title: Rozwiązywanie problemów z odwołaniami usługi | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804667"
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 -   W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt biblioteki usługi WCF i kliknij przycisk **kompilacji**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Błąd podczas uzyskiwania dostępu do usługi za pośrednictwem pulpitu zdalnego
- Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośrednictwem połączenia pulpitu zdalnego i użytkownik nie ma uprawnienia administracyjne, zostanie użyte uwierzytelnianie NTLM. Jeśli użytkownik nie ma uprawnienia administracyjne, użytkownik może zostać wyświetlony następujący komunikat o błędzie: "żądanie HTTP nie ma autoryzacji przez schemat uwierzytelniania klienta"Anonymous". Nagłówek uwierzytelnienia otrzymany z serwera była "NTLM"."
+ Gdy użytkownik uzyskuje dostęp do usługi WCF hostowanej w sieci Web za pośrednictwem połączenia pulpitu zdalnego i użytkownik nie ma uprawnienia administracyjne, zostanie użyte uwierzytelnianie NTLM. Jeśli użytkownik nie ma uprawnienia administracyjne, użytkownik może pojawić się następujący komunikat o błędzie: "Żądanie HTTP nie ma autoryzacji przez schemat uwierzytelniania klienta"Anonymous". Nagłówek uwierzytelnienia otrzymany z serwera była "NTLM"."
 
  Aby naprawić ten błąd:
 
@@ -79,9 +76,9 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 
 3.  Upewnij się, że **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru jest zaznaczone, a następnie kliknij przycisk **OK**.
 
-4.  Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: tworzenie rozwiązań dotyczących wielu projektów](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4.  Załaduj projekt usługi WCF. Aby uzyskać więcej informacji, zobacz [NIB jak: Tworzenie rozwiązań dotyczących wielu projektów](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
+5.  W **programu Configuration Manager** okno dialogowe, zestaw **Konfiguracja rozwiązania aktywnego** do **debugowania**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 
 6.  W **Eksploratora rozwiązań**, wybierz projekt usługi WCF.
 

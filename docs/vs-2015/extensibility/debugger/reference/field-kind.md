@@ -1,14 +1,9 @@
 ---
 title: FIELD_KIND | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - FIELD_KIND
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60622f96550445070d89c239e2d1ca5a37184e73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d18d032043370a266fdccdcf56e68d574913f3ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781780"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -236,13 +231,12 @@ public enum enum_FIELD_KIND {
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

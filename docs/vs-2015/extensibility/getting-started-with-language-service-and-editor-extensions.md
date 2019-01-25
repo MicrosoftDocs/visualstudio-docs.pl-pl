@@ -1,26 +1,21 @@
 ---
 title: Wprowadzenie do usługi językowej i edytora rozszerzenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795755"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do rozszerzeń usługi językowej i edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
 ## <a name="running-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzenia w doświadczalnym wystąpieniu  
  Można związane z działającą wersją programu Visual Studio, gdy rozszerzenie jest tworzona przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7):  
   
- *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*firmy*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  gdzie *% LOCALAPPDATA %* jest nazwą użytkownika zalogowanego *firmy* to nazwa firmy, który jest właścicielem rozszerzenia, a *ExtensionID* jest Identyfikatorem rozszerzenia.  
   
@@ -89,10 +84,9 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
   
  Można również utworzyć edytora składników MEF z rozszerzeniem pakiet rozszerzeń Visual Studio. Zobacz poniższe poradniki, aby uzyskać szczegółowe informacje:  
   
--   [Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Przewodnik: Używanie polecenia programu PowerShell z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
-

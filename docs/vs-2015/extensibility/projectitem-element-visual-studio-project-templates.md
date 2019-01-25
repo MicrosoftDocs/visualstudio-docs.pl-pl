@@ -1,14 +1,9 @@
 ---
 title: Projectitem — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800839"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem — Element (Szablony projektu Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Określa plik, który znajduje się w szablonie projektu.
 >  `ProjectItem` Akceptuje różnych atrybutów w zależności od tego, czy szablon projektu lub elementu. W tym temacie opisano `ProjectItem` element dla szablonów projektu. Aby uzyskać informacje o `ProjectItem` element dla szablonów elementów, zobacz [ProjectItem, Element (element szablony programu Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -145,8 +140,7 @@ Określa plik, który znajduje się w szablonie projektu.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [ProjectItem, element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

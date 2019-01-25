@@ -1,14 +1,9 @@
 ---
 title: Okno listy błędów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873707"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785774"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ UWAGA]
   Aby posortować listę, kliknij nagłówek dowolnej kolumny. Aby ponownie sortować według dodatkowej kolumny, przytrzymaj wciśnięty klawisz SHIFT i kliknij inny nagłówek kolumny. Aby wybrać kolumny, które są wyświetlane, a które ukryte, wybierz **Pokaż kolumny** z menu skrótów. Aby zmienić kolejność wyświetlania kolumn, przeciągnij dowolny nagłówek kolumny w lewo lub w prawo.  
   
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, kliknij przycisk **narzędzia / Import i eksport ustawień**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtry listy błędów  
  Istnieją dwa rodzaje filtru w dwa pola listy rozwijanej: jeden po prawej stronie paska narzędzi, a drugi z lewej strony paska narzędzi. Lista rozwijana na pasku narzędzi po lewej stronie określa zestaw plików kodu do użycia (**całe rozwiązanie**, **otwarte dokumenty**, **bieżący projekt**,  **Bieżący dokument**).  
@@ -100,6 +95,3 @@ UWAGA]
   
  Wiersz  
  Wyświetla wiersz, w którym występuje problem.
-
-
-

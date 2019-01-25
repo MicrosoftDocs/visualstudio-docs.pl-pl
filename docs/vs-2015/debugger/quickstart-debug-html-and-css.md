@@ -1,14 +1,9 @@
 ---
-title: 'Szybki Start: Debugowanie HTML i CSS | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Szybki start: Debugowanie kodu HTML i CSS | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50c6899699bc8186c3cc1979b86d6659d9e3f13d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777687"
 ---
-# <a name="quickstart-debug-html-and-css"></a>Szybki Start: Debugowanie HTML i CSS
+# <a name="quickstart-debug-html-and-css"></a>Szybki start: Debugowanie kodu HTML i CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -60,7 +55,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 - [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)  
   
-  Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak korzystanie z okna konsoli języka JavaScript i ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Aby uzyskać informacje na temat innych debugowanie funkcji, takich jak korzystanie z okna konsoli języka JavaScript i ustawiania punktów przerwania, JavaScript, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Sprawdzanie modelu DOM na żywo  
  Narzędzia DOM Explorer Pokazuje widok renderowanej strony i narzędzia DOM Explorer można użyć, aby zmienić wartości i natychmiast wyświetlić wyniki. Dzięki temu można testować zmiany bez zatrzymywania i ponownego uruchamiania debugera. Kod źródłowy w projekcie nie zmienia się podczas interakcji z strony za pomocą tej metody, dlatego podczas korekt odpowiedni kod możesz znaleźć, wprowadź zmiany do kodu źródłowego.  
@@ -76,7 +71,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 - Sprawdzanie, jak zostały zastosowane style CSS do elementów strony i śledzenia reguł, które zostały zastosowane.  
   
-  Podczas debugowania aplikacji, często jest konieczne do wybrania elementów w modelu DOM Explorer. Po wybraniu elementu, wartości, które są wyświetlane na kartach po prawej stronie Eksploratora DOM automatycznie aktualizowana w celu odzwierciedlenia wybranego elementu w programie DOM Explorer. Są to karty: **style**, **obliczane**, **układ**. Windows Store apps obsługuje również **zdarzenia** i **zmiany** karty. Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [wybierania elementów](#SelectingElements).  
+  Podczas debugowania aplikacji, często jest konieczne do wybrania elementów w modelu DOM Explorer. Po wybraniu elementu, wartości, które są wyświetlane na kartach po prawej stronie Eksploratora DOM automatycznie aktualizowana w celu odzwierciedlenia wybranego elementu w programie DOM Explorer. Oto karty: **Style**, **obliczane**, **układ**. Windows Store apps obsługuje również **zdarzenia** i **zmiany** karty. Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [wybierania elementów](#SelectingElements).  
   
 > [!TIP]
 >  Jeśli nastąpi zamknięcie okna narzędzia DOM Explorer, wybierz **debugowania**>**Windows** > **narzędzia DOM Explorer** otworzyć go ponownie. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.  
@@ -234,7 +229,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
      W **układ** kartę, zostaną wyświetlone następujące wartości:  
   
-    - Dla symulator: 320px (przesunięcie) i 320px (margines).  
+    - Aby uzyskać symulator: 320px (przesunięcie) i 320px (margines).  
   
     - Emulatora telefonu: 100px (przesunięcie) i 100px (margines).  
   
@@ -258,7 +253,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 2.  Otwórz plik default.html i zmodyfikować kod źródłowy, zmieniając wysokości i szerokości `"fView"` elementu DIV na 100%.  
   
-3.  Wybierz **aplikacji Windows Odśwież** znajdujący się na pasku narzędzi debugowania (lub naciśnij klawisz F4). Przycisk wygląda następująco: ![przycisku aplikacji Windows Odśwież](../debugger/media/js-refresh.png "JS_Refresh").  
+3.  Wybierz **aplikacji Windows Odśwież** znajdujący się na pasku narzędzi debugowania (lub naciśnij klawisz F4). Przycisk wygląda następująco: ![Odśwież aplikację Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Ponowne załadowanie strony aplikacji, a następnie przywraca symulator lub w emulatorze telefonu pierwszego planu.  
   
@@ -312,6 +307,3 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)   
  [Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Pomoc techniczna i dostępność](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

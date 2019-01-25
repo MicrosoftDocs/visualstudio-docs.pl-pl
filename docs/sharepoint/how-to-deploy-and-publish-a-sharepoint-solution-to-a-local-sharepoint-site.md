@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8dd0dd78ca8f6b6f9791a657546cabc0d098b563
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2efdc339500786de87c35b4caeb3c85cef5191b7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835329"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864101"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Instrukcje: Wdrażanie oraz publikowanie rozwiązania SharePoint w lokalnej witrynie SharePoint
   Można wdrożyć i publikować rozwiązań programu SharePoint na lokalnym serwerze programu SharePoint na komputerze deweloperskim. Kopiuje procesu wdrażania *.wsp* pliku na serwerze programu SharePoint, instaluje rozwiązanie, a następnie aktywuje funkcje. Publikowanie przetwarzać tylko kopie *.wsp* pliku na serwerze programu SharePoint i instaluje je. Należy ręcznie aktywuj go, aby ją włączyć w programie SharePoint.  

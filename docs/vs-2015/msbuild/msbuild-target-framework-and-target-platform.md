@@ -1,25 +1,20 @@
 ---
 title: Platforma docelowa programu MSBuild i platformy docelowej | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796614"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +39,13 @@ Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli ko
   
 - [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (zawarte w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
-- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- The [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
 - [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (zawarte w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
   Na liście zestawów, że każdy sprawia, że można odwoływać się do wersji programu .NET Framework różnią się od siebie. Na przykład nie można tworzyć aplikacje Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla .NET Framework w wersji 3.0 lub nowszej.  
   
-  Platforma docelowa jest określona w `TargetFrameworkVersion` właściwości w pliku projektu. Możesz zmienić platformę docelową dla projektu, używając strony właściwości projektu w programie Visual Studio zintegrowane środowisko programistyczne (IDE). Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostępne wartości dla `TargetFrameworkVersion` są `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, i `v4.6`.  
+  Platforma docelowa jest określona w `TargetFrameworkVersion` właściwości w pliku projektu. Możesz zmienić platformę docelową dla projektu, używając strony właściwości projektu w programie Visual Studio zintegrowane środowisko programistyczne (IDE). Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostępne wartości dla `TargetFrameworkVersion` są `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, i `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -58,7 +53,7 @@ Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli ko
   
  A *docelowy profil* to podzbiór platformy docelowej. Na przykład profilu klienta .NET Framework 4 nie zawiera odwołania do zestawów programu MSBuild.  
   
- Profil docelowy jest określona w `TargetFrameworkProfile` właściwości w pliku projektu. Profil docelowy można zmienić za pomocą formantu platformy docelowej na stronach właściwości projektu w środowisku IDE. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+ Profil docelowy jest określona w `TargetFrameworkProfile` właściwości w pliku projektu. Profil docelowy można zmienić za pomocą formantu platformy docelowej na stronach właściwości projektu w środowisku IDE. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -93,6 +88,3 @@ Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli ko
   
 ## <a name="see-also"></a>Zobacz też  
  [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Co&#39;nowego w narzędziach profilowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling
 - what's new
@@ -16,13 +11,13 @@ ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2cf92f6560966cc5b41ad21a1587030e12f86d2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0fc61a68e363c7a1616b35fb9ebc875e88550885
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791522"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędziach profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ Aby uzyskać informacji o tym, co nowego w programie Visual Studio 2015 Update 1
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzia profilowania](../profiling/profiling-tools.md)
-
-
-

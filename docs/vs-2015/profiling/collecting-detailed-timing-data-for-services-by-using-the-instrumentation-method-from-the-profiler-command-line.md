@@ -1,25 +1,20 @@
 ---
 title: Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody Instrumentacji z wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805448"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Profilowanie usługi .NET**|-   [Jak: Dokument usługi .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profilowanie usługi .NET**|-   [Jak: Instrumentacja usługi .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Profil usługi języka C/C++**|-   [Jak: Instrumentacja natywnych usług i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**Profil usługi języka C/C++**|-   [Jak: Instrumentacja usługi natywnej i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   
@@ -53,6 +48,3 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analizowanie danych Instrumentacji widoków i raportów  
  [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
-
-
-

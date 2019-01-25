@@ -1,14 +1,9 @@
 ---
 title: Tylko mój kod | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3b016c8565b3c501c5cc41802512f02b1c10d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777898"
 ---
 # <a name="just-my-code"></a>Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,10 +56,10 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   Inny kod jest uważane za kod użytkownika.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
- Po użytkownik **Step Into** (skrót klawiaturowy: F11) kod niezwiązany z użytkownikiem, debuger nie wchodzi WE kod do następnej instrukcji użytkownika. Gdy możesz **Step Out** (klawiatura: Shift + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
+ Gdy użytkownik **Step Into** (skrót klawiaturowy: Kod niezwiązany z użytkownikiem F11), debuger nie wchodzi WE kod do następnej instrukcji użytkownika. Gdy użytkownik **Step Out** (klawiatury: SHIFT + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Zachowanie punktu przerwania  
- Jeśli włączono opcję tylko mój kod, można określić **Przerwij wszystko** (klawiatura: Ctrl + Alt + Break) i zatrzymać wykonywanie w miejscu, w przypadku, gdy nie jest wykonywany kod użytkownika do wyświetlenia. W takiej sytuacji zostanie wyświetlone okno Brak źródła. Jeśli następnie wybierzesz polecenie kroku, debuger spowoduje przejście do następnego wiersza kodu użytkownika.  
+ Jeśli włączono opcję tylko mój kod, można określić **Przerwij wszystko** (klawiatury: Ctrl + Alt + Break) i zatrzymać wykonywanie w miejscu, w przypadku, gdy nie jest wykonywany kod użytkownika do wyświetlenia. W takiej sytuacji zostanie wyświetlone okno Brak źródła. Jeśli następnie wybierzesz polecenie kroku, debuger spowoduje przejście do następnego wiersza kodu użytkownika.  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Zachowanie wyjątku  
  Jeśli wystąpi nieobsługiwany wyjątek w kodzie niezwiązanych z użytkownikiem, debuger przerywa w wierszu w kodzie użytkownika, w którym został wygenerowany wyjątek.  
@@ -93,7 +88,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   Możesz utworzyć swój własny `.natstepfilter` i `.natjmc` dostosować przechodzenie krok po kroku i wywoływać zachowanie okna stosu `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
- Gdy użytkownik **Step Into** (skrót klawiaturowy: F11) kod niezwiązany z użytkownikiem z kodu użytkownika, debuger nie wchodzi WE kod do następnego wiersza kodu użytkownika. Gdy możesz **Step Out** (klawiatura: Shift + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
+ Gdy użytkownik **Step Into** (skrót klawiaturowy: Kod niezwiązany z użytkownikiem F11) z kodu użytkownika, debuger nie wchodzi WE kod do następnego wiersza kodu użytkownika. Gdy użytkownik **Step Out** (klawiatury: SHIFT + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
   
  Jeśli debuger przerwie działanie na kodzie niezwiązanych z użytkownikiem (na przykład, jeśli polecenie Przerwij wszystko zatrzyma niebędący kodem użytkownika), nadal przechodzenie krok po kroku w kodzie niezwiązanych z użytkownikiem.  
   
@@ -213,13 +208,13 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
   
--   Jeśli funkcja nie jest użytkownikiem (**MyCode**) kod, **Step Into** (skrót klawiaturowy: F11) zachowuje się jak **Step Over** (klawiatura: F10).  
+-   Jeśli funkcja nie jest użytkownikiem (**MyCode**) kod, **Step Into** (skrót klawiaturowy: F11), który zachowuje się jak **Step Over** (klawiatury: F10).  
   
 -   Jeśli krok rozpoczyna się w niezwiązanych z użytkownikiem (**LibraryCode** lub **UnrelatedCode**) kodu, a następnie tymczasowo przechodzenie krok po kroku zachowuje się tak, jakby nie włączono opcję tylko mój kod. Jak najszybciej po kroku do kodu użytkownika, tylko mój kod przechodzenie krok po kroku zostanie ponownie włączony.  
   
 -   Gdy krok w kodzie użytkownika skutkuje opuszczania bieżącego kontekstu wykonywania (takich jak krok w ostatnim wierszu programu obsługi zdarzeń), debuger zatrzymuje się w następnym wierszu wykonywany kod użytkownika. Na przykład, jeśli wykonuje wywołanie zwrotne **LibraryCode** Debuger kontynuuje do czasu następnego wiersza kodu użytkownika wykonuje kod.  
   
--   **Step Out** (klawiatura: Shift + F11) zatrzymuje się w następnym wierszu kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
+-   **Wyjdź** (klawiatury: SHIFT + F11) zatrzymuje się w następnym wierszu kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Zachowanie punktu przerwania  
   
@@ -291,7 +286,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 |-|-|  
 |**Eval**|Skrypt, który jest wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcji. Domyślnie skrypt — wersja próbna zostanie sklasyfikowany jako **MyCode**.|  
 |**Function**|Skrypt, który jest wykonywany, przekazując ciąg do `Function` konstruktora. Domyślnie funkcja skryptu zostanie sklasyfikowany jako **LibraryCode**.|  
-|**Blok skryptu**|Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji. Domyślnie skryptów w blok skryptu zostanie sklasyfikowany jako **UnrelatedCode**.|  
+|**ScriptBlock**|Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji. Domyślnie skryptów w blok skryptu zostanie sklasyfikowany jako **UnrelatedCode**.|  
   
  Możesz zmienić wartość, do jednego z tych słów kluczowych:  
   
@@ -312,8 +307,3 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 |**Niepowiązane**|Tablicę adresów URL lub pliki, które są klasyfikowane jako **UnrelatedCode**.|  
   
  Adres url lub plik ciąg może zawierać jeden lub więcej `*` znaków, które dopasowuje zero lub więcej znaków. `*` jest to równoważne wyrażenie regularne `.*`.
-
-
-
-
-

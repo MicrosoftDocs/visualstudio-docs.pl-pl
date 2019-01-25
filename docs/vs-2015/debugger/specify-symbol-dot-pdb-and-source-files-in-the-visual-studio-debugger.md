@@ -1,13 +1,9 @@
 ---
 title: Określ symboli (.pdb) i pliki w debugerze źródłowe | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
 - VS.ToolsOptionsPages.Debugger.Symbols
@@ -30,13 +26,13 @@ ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8b8fc64588962c7f3adaa05eb33543802672b57e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 4f5dc8d361386417fe52706fbfc2049d5a420d4c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789685"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

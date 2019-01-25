@@ -1,27 +1,22 @@
 ---
 title: Okno dialogowe Wyszukiwanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2f32bf9800bc2ce08039fffcec26f965cbab444
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72405ced4348228432bc7cf75d135e317a3fd833
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748076"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799125"
 ---
 # <a name="window-search-dialog-box"></a>Wyszukiwanie okien — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ Umożliwia to okno dialogowe Znajdź i wybierz węzeł w określonym oknie w [wi
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
  Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
-
-
-

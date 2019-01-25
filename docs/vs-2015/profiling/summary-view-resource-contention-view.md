@@ -1,27 +1,22 @@
 ---
 title: Widok podsumowania — widok Kontencji zasobów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 45052997e9dd8332518ce5fb7804963f88e97959
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804111"
 ---
 # <a name="summary-view---resource-contention-view"></a>Widok podsumowania — widok rywalizacji o zasoby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +26,14 @@ Widok podsumowania Wyświetla informacje o zdarzeniach w Twojej aplikacji, w kt�
  Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [Widok Podsumowanie](../profiling/summary-view.md).  
   
 ## <a name="timeline-graph"></a>Wykres osi czasu  
- Wykres osi czasu w widoku podsumowania przedstawia liczbę zdarzeń rywalizacji o zasoby w profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtr widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Wykres osi czasu w widoku podsumowania przedstawia liczbę zdarzeń rywalizacji o zasoby w profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="most-contended-resources"></a>Zasoby z największą rywalizacją  
  **Większość zasobów z rywalizacją** zawiera listę zasobów w aplikacji, która spowodowała najbardziej zdarzenia rywalizacji. Kliknięcie nazwy zasobu, aby wyświetlić widok rywalizacji. Widok Kontencji zapewnia szczegółowe oś czasu rywalizacji zasobów przez wątek.  
   
  **Większość zasobów z rywalizacją** zawiera następujące dane dla każdego zasobu.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa zasobu.|  
 |**% Rywalizacji**|Procent wszystkich zdarzeń rywalizacji o zasoby w danych profilowania, które były rywalizacji za pośrednictwem tego zasobu.|  
@@ -48,11 +43,8 @@ Widok podsumowania Wyświetla informacje o zdarzeniach w Twojej aplikacji, w kt�
   
  **Większość wątków z rywalizacją** zawiera następujące dane dla każdego wątku.  
   
-|Kolumny|Opis|  
+|Kolumna|Opis|  
 |------------|-----------------|  
-|**ID**|Identyfikator wątku.|  
+|**Identyfikator**|Identyfikator wątku.|  
 |**Nazwa**|Nazwa procesu, który jest właścicielem wątku.|  
 |**% Rywalizacji**|Procent wszystkich zdarzeń rywalizacji o zasoby w danych profilowania, które były rywalizacji za pośrednictwem tego zasobu.|
-
-
-

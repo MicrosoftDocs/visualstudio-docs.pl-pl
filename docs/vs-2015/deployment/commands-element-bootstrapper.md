@@ -1,14 +1,9 @@
 ---
 title: '&lt;Polecenia&gt; — Element (program inicjujący) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777718"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Polecenia&gt; — Element (program inicjujący)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ ms.locfileid: "49276578"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`PackageFile`|Wymagane. Nazwa pakietu do zainstalowania należy co najmniej jeden z warunków określonych przez `InstallConditions` zwróci wartość false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|  
+|`PackageFile`|Wymagana. Nazwa pakietu do zainstalowania należy co najmniej jeden z warunków określonych przez `InstallConditions` zwróci wartość false. Pakiet musi być zdefiniowany w tym samym pliku przy użyciu `PackageFile` elementu.|  
 |`Arguments`|Opcjonalna. Zestaw argumenty wiersza polecenia do przekazania do pliku pakietu.|  
 |`EstimatedInstallSeconds`|Opcjonalna. Szacowany czas w sekundach, trwa instalowanie pakietu. Ta wartość określa rozmiar paska postępu, który program inicjujący wyświetla dla użytkownika. Wartość domyślna to 0, w którym to przypadku nie razem, gdy określono szacowania.|  
 |`EstimatedDiskBytes`|Opcjonalna. Szacowana ilość miejsca na dysku, w bajtach, które zajmują po zakończeniu instalacji pakietu zostało zakończone. Ta wartość jest używana w wymagania dotyczące miejsca na dysku twardym, które program inicjujący wyświetla dla użytkownika. Wartość domyślna to 0, w przypadku program inicjujący nie wyświetla żadnych wymagań dotyczących miejsca na dysku twardym.|  
@@ -102,9 +97,9 @@ ms.locfileid: "49276578"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Property`|Wymagane. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Wymagane. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Wymagane. Wartość do porównania z właściwościami.|  
+|`Property`|Wymagana. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Wymagana. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Wymagana. Wartość do porównania z właściwościami.|  
 |`Schedule`|Opcjonalna. Nazwa `Schedule` tag, który definiuje, gdy ta reguła powinna być oceniana.|  
   
 ## <a name="failif"></a>FailIf  
@@ -114,9 +109,9 @@ ms.locfileid: "49276578"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Property`|Wymagane. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Wymagane. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Wymagane. Wartość do porównania z właściwościami.|  
+|`Property`|Wymagana. Nazwa właściwości do testowania. Właściwość musi wcześniej zostały zdefiniowane przez element podrzędny elementu `InstallChecks` elementu. Aby uzyskać więcej informacji, zobacz [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Wymagana. Typ porównania do wykonania. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Wymagana. Wartość do porównania z właściwościami.|  
 |`String`|Opcjonalna. Tekst do wyświetlenia dla użytkownika w przypadku awarii.|  
 |`Schedule`|Opcjonalna. Nazwa `Schedule` tag, który definiuje, gdy ta reguła powinna być oceniana.|  
   
@@ -128,8 +123,8 @@ ms.locfileid: "49276578"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Value`|Wymagane. Wartość kodu zakończenia, do którego należy to `ExitCode` element ma zastosowanie.|  
-|`Result`|Wymagane. Sposób instalacji powinien reagować na ten kod wyjścia. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Success`. Flag pakietów, jak pomyślnie zainstalowane.<br /><br /> `SuccessReboot`. Flagi pakietu, jak pomyślnie zainstalować i powoduje, że ponowne uruchomienie systemu.<br /><br /> `Fail`. Flagi pakietu jako zakończony niepowodzeniem.<br /><br /> `FailReboot`. Flagi pakietu, ponieważ nie powiodło się i powoduje, że ponowne uruchomienie systemu.|  
+|`Value`|Wymagana. Wartość kodu zakończenia, do którego należy to `ExitCode` element ma zastosowanie.|  
+|`Result`|Wymagana. Sposób instalacji powinien reagować na ten kod wyjścia. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Success`. Flag pakietów, jak pomyślnie zainstalowane.<br /><br /> `SuccessReboot`. Flagi pakietu, jak pomyślnie zainstalować i powoduje, że ponowne uruchomienie systemu.<br /><br /> `Fail`. Flagi pakietu jako zakończony niepowodzeniem.<br /><br /> `FailReboot`. Flagi pakietu, ponieważ nie powiodło się i powoduje, że ponowne uruchomienie systemu.|  
 |`String`|Opcjonalna. Wartość do wyświetlania użytkownikowi w odpowiedzi na ten kod wyjścia.|  
 |`FormatMessageFromSystem`|Opcjonalna. Określa, czy należy użyć dostarczane przez system komunikat o błędzie odpowiadający kod zakończenia lub wartość podana w `String`. Prawidłowe wartości to `true`, co oznacza, że do użycia dostarczane przez system błąd i `false`, co oznacza, że użyć parametrów dostarczonych przez `String`. Wartość domyślna to `false`. Jeśli ta właściwość jest `false`, ale `String` nie jest ustawiona, błąd dostarczane przez system, który będzie używany.|  
   
@@ -213,7 +208,4 @@ ms.locfileid: "49276578"
   
 ## <a name="see-also"></a>Zobacz też  
  [Produkt i pakiet — dokumentacja schematu](../deployment/product-and-package-schema-reference.md)   
- [\<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md)
-
-
-
+ [\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)

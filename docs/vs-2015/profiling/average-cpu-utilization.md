@@ -1,14 +1,9 @@
 ---
 title: Średnie wykorzystanie procesora CPU | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.percentage
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5534da38c373b36a7e34bb1623d0a83f9bc405cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796986"
 ---
 # <a name="average-cpu-utilization"></a>Średnie wykorzystanie CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +28,3 @@ Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzenie logiczne systemu w
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)   
  [Wykres wykorzystania procesora CPU](../profiling/cpu-utilization-graph.md)
-
-
-

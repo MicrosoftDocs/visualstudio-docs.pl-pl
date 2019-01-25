@@ -1,24 +1,19 @@
 ---
 title: Dystrybuowanie aplikacji Isolated Shell | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796233"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Dystrybuowanie aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +32,3 @@ Aby można było utworzyć aplikacji isolated shell, należy zainstalować progr
   
 ## <a name="allowing-for-updates-to-your-application"></a>Zezwalanie na aktualizacje aplikacji  
  Program instalacyjny musi zezwalać na możliwość, że aplikacji zostaną zaktualizowane, za pomocą funkcji Aktualizacje firmy Microsoft lub za pomocą funkcji Aktualizacje w firmie. Aby uzyskać więcej informacji o aktualizacjach, zobacz [obsługi wytyczne dotyczące aplikacje izolowane powłoki](../extensibility/servicing-guidelines-for-isolated-shell-applications.md).
-

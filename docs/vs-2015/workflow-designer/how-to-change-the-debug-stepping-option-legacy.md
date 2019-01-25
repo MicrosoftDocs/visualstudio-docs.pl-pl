@@ -1,11 +1,8 @@
 ---
-title: 'Porady: zmiana debugowania opcji krokowego (starsza wersja) | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Zmień debugowania opcję krokowego (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - branch stepping
@@ -17,15 +14,15 @@ ms.assetid: aedc06af-d58a-44d6-aee4-f397f1f923a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b89ad55fec7b15884acefd5607cfd863a45564b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791645"
 ---
-# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Porady: zmiana debugowania opcji krokowego (starsza wersja)
+# <a name="how-to-change-the-debug-stepping-option-legacy"></a>Instrukcje: Opcja zmiany debugowania krokowego (starsza wersja)
 W tym temacie opisano sposób zmiany debugowania wykonywania krokowego opcję [!INCLUDE[wf](../includes/wf-md.md)] aplikacji w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)] współbieżnych akcje, które mają. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Kiedy debugujesz starsze działania, które mają wykonania, takie jak **działaniu równoległym** lub **grupy ConditionedActivityGroup**, można użyć jedną z dwóch opcji, aby przejść przez kod.  

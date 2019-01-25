@@ -1,26 +1,22 @@
 ---
 title: Publikowanie rozszerzenia | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 073ac55cce908a43bed2a2c6acb4e11cc1fa2ead
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 27a581175fd0cb63a598006ea2519058bdd8fcbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781518"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

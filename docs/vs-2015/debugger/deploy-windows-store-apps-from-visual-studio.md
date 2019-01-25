@@ -1,13 +1,9 @@
 ---
 title: Wdrażanie aplikacji Windows Store
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,13 +13,13 @@ ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ae55804edffec85ba39a1bd6ad4596959400120
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53867415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805220"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Wdrażanie aplikacji Windows Store za pomocą programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

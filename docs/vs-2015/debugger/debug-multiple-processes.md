@@ -1,14 +1,9 @@
 ---
 title: Debugowanie wielu procesów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752692"
 ---
 # <a name="debug-multiple-processes"></a>Debugowanie wielu procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Znajdowanie symboli i źródłowych plików (.pdb)  
  Aby nawigować po kodzie źródłowym procesu, debuger musi mieć dostęp do plików źródłowych i plików symboli procesu. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- Jeśli nie masz dostępu plików dla procesu, można nawigować przy użyciu okna dezasemblacja. Zobacz [porady: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)  
+ Jeśli nie masz dostępu plików dla procesu, można nawigować przy użyciu okna dezasemblacja. Zobacz [jak: Korzystanie z okna dezasemblacji](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
@@ -218,7 +213,7 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
 |**Debugowanie** menu:<br /><br /> -   **Odłącz wszystko**|Debuger odłączy się od wszystkich procesów.|  
 |**Procesy** menu kontekstowe okna:<br /><br /> -   **Odłącz proces**|Debuger odłączy się od wybranych procesów.<br /><br /> Inne procesy utrzymują istniejący stan (zawieszone lub uruchomione).|  
 |**Procesy** menu kontekstowe okna:<br /><br /> -   **Zakończenie procesu**|Wybrany proces zostanie zakończony.<br /><br /> Inne procesy utrzymują istniejący stan (zawieszone lub uruchomione).|  
-|**Procesy** menu kontekstowe okna:<br /><br /> -   **Odłącz po zatrzymaniu debugowania**|Przełącza **debugowania**, **Zatrzymaj debugowanie** dla wybranego procesu:<br /><br /> -Zaznaczone: Debuger odłącza się od procesu.<br />-Wyczyszczone: Proces zostanie zakończony.|  
+|**Procesy** menu kontekstowe okna:<br /><br /> -   **Odłącz po zatrzymaniu debugowania**|Przełącza **debugowania**, **Zatrzymaj debugowanie** dla wybranego procesu:<br /><br /> -Sprawdzono: Debuger odłączy się od procesu.<br />-Wyczyszczone: Ten proces zostanie zakończony.|  
   
  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zatrzymywanie debugowania, kończenie lub odłączanie od procesów](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
@@ -230,6 +225,3 @@ Oto jak rozpocząć debugowanie procesów, przełączać się między procesami,
  [Nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md)   
  [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

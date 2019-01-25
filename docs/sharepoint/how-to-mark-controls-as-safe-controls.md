@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875471"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek
   Dla bezpieczeństwa SharePoint oddzieli kontrolki sieci Web, które są chronione przed uruchomienie skryptu kontrolki sieci Web, które nie są. Chronione formantów, lub *bezpiecznych kontrolek*, może zostać oceniony przez niezaufanym użytkownikom. Możesz oznaczyć kontrolek jako bezpiecznych właściwości wpisy bezpiecznych kontrolek elementu projektu programu SharePoint lub w **projektancie pakietu** po dodaniu zestawu do pakietu. Aby uzyskać więcej informacji, zobacz artykuł  
@@ -89,7 +89,7 @@ ms.locfileid: "53989377"
     |-------------------|-----------|  
     |Przestrzeń nazw|W pełni kwalifikowanych przestrzeni nazw kontrolki, takie jak **BdcModelProject1.VisualWebPart1**.|  
     |Nazwa typu|Button1|  
-    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Bezpieczne|Wyczyść **bezpieczne** pole wyboru.|  
     |Bezpieczne względem skryptu|Pozostaw **bezpieczne względem skryptu** wyczyść pole wyboru.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "53989377"
     |-------------------|-----------|  
     |Przestrzeń nazw|W pełni kwalifikowanych przestrzeni nazw kontrolki, takie jak **BdcModelProject1.VisualWebPart1**.|  
     |Nazwa typu|TextBox1|  
-    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|  
+    |Nazwa zestawu|Zestawu silne nazwy, takie jak: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|  
     |Bezpieczne|Wybierz **bezpieczne** pole wyboru.|  
     |Bezpieczne względem skryptu|Wybierz **bezpieczne względem skryptu** pole wyboru.|  
   

@@ -1,21 +1,17 @@
 ---
 title: Konfigurowanie i instalowanie oprogramowania | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781712"
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +59,7 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
 > [!TIP]
 >  Te instrukcje dotyczą programu Visual Studio 2015. Aby korzystać z platformy Xamarin w programie Visual Studio 2013 (wymagana jest aktualizacja 2), postępuj zgodnie z instrukcjami dotyczącymi [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (strony xamarin.com).  
   
-1. [Pobierz i uruchom Instalatora programu Visual Studio 2015 w każdej wersji](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community, Professional lub Enterprise). Visual Studio 2015 Community jest bezpłatną; wersje Professional i Enterprise może służyć do wypróbowania przez 30 dni, po upływie których musisz zakupić licencję.  
+1. [Pobierz i uruchom Instalatora programu Visual Studio 2015 w każdej wersji](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional lub Enterprise). Visual Studio 2015 Community jest bezpłatną; wersje Professional i Enterprise może służyć do wypróbowania przez 30 dni, po upływie których musisz zakupić licencję.  
   
    1.  Jeśli masz już zainstalowany program Visual Studio, otwórz **Panel sterowania > programy i funkcje**, wybierz **programu Visual Studio 2015** elementu, a następnie kliknij przycisk **zmiany**. Gdy Instalator zostanie otwarta, kliknij przycisk **Modyfikuj** , a następnie przejdź do kroku 3 poniżej.  
   
@@ -77,7 +73,7 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
   
         ![Wybierz opcję Xamarin, w ramach granic&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "2 instalacji Xamarin Cross-Plat")  
   
-   2.  W systemie Windows 8 i nowsze: **Cross-Platform Mobile Development > program Microsoft Visual Studio Emulator for Android**. Uwaga: Jeśli jesteś przy użyciu komputerze z systemem Windows 7 lub starszej lub systemem Windows na komputerze Mac, upewnij się, to *unchecked*. Po wykonaniu kroku 5, zobacz "Note o emulatorów na komputerach Windows". Można także pozostawić to unchecked Aby przeprowadzić debugowanie tylko na fizycznych urządzeniach z systemem Android.  
+   2.  W systemie Windows 8 +: **Tworzenie aplikacji mobilnych dla wielu Platform > program Microsoft Visual Studio Emulator for Android**. Uwaga: Jeśli jesteś przy użyciu komputerze z systemem Windows 7 lub starszej lub systemem Windows na komputerze Mac, upewnij się, to *unchecked*. Po wykonaniu kroku 5, zobacz "Note o emulatorów na komputerach Windows". Można także pozostawić to unchecked Aby przeprowadzić debugowanie tylko na fizycznych urządzeniach z systemem Android.  
   
    3.  (Opcjonalnie) Jeśli planujesz przeznaczone dla urządzeń Windows również sprawdzić **Windows i aplikacji sieci Web > Narzędzia do programowania aplikacji uniwersalnych Windows** i/lub **Windows 8.1 i Windows Phone 8.0/8.1 narzędzi**. Obejmują one opcje instalacji obrazów emulatorów, które będzie trwać dłużej, aby pobrać; zawsze możesz wrócić do Instalatora programu Visual Studio, aby je dodać później.  
   
@@ -94,7 +90,7 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
       
 6. Windows 7 i Windows starszej lub jest uruchomiony na komputerze Mac, należy użyć [emulatora Android SDK](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/) braku urządzeń fizycznych. Zobacz uwagi poniżej.  
   
-   **Uwaga dotycząca emulatorów na komputerach Windows:** procesorów obsługują tylko jeden technologii wirtualizacji w czasie, zaleca się mieć tylko jedną używana na komputerze deweloperskim. Istnieją trzy główne wirtualizacji komputerów PC, technologie są funkcji Hyper-V (używane przez program Visual Studio Emulator dla systemu Android i emulatora Windows Phone), Virtual Box (wykorzystywane przez Genymotion) i Intel HAXM (wykorzystywane przez emulator zestawu SDK systemu Android). Ze względu na różne problemy między funkcją Hyper-V i Virtual Box najlepiej Aby użyć emulatorów tylko jednego typu na dowolnym danym komputerze, dlatego zalecenia powyżej, aby użyć funkcji Hyper-V w systemie Windows 8 i nowszych komputerów i Intel HAXM emulatorów w systemie Windows 7 i wcześniejszych oraz kiedy systemem Windows na komputerach Mac.  
+   **Należy zwrócić uwagę na emulatorach na Windows komputerów:** Ponieważ procesorów obsługują tylko jeden technologii wirtualizacji w danym momencie, najlepiej jest mieć tylko jedną używana na komputerze deweloperskim. Istnieją trzy główne wirtualizacji komputerów PC, technologie są funkcji Hyper-V (używane przez program Visual Studio Emulator dla systemu Android i emulatora Windows Phone), Virtual Box (wykorzystywane przez Genymotion) i Intel HAXM (wykorzystywane przez emulator zestawu SDK systemu Android). Ze względu na różne problemy między funkcją Hyper-V i Virtual Box najlepiej Aby użyć emulatorów tylko jednego typu na dowolnym danym komputerze, dlatego zalecenia powyżej, aby użyć funkcji Hyper-V w systemie Windows 8 i nowszych komputerów i Intel HAXM emulatorów w systemie Windows 7 i wcześniejszych oraz kiedy systemem Windows na komputerach Mac.  
   
 ##  <a name="mac"></a> Instalator Mac (identyfikator Apple ID, Xcode i Xamarin)  
   
@@ -107,4 +103,3 @@ Jeśli masz problemy po wykonaniu tego Instalator i instalacja przy użyciu plat
 4.  Po zakończeniu instalacji Xamarin na komputerach Mac i Windows, postępuj zgodnie z instrukcjami [nawiązywania połączenia z komputerem Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (strony xamarin.com), dzięki czemu można pracować z systemami iOS i Mac w programie Visual Studio na komputerze Windows.  
   
      Należy pamiętać, że oba komputery muszą należeć do tej samej sieci lokalnej.
-

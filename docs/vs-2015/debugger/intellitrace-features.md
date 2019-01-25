@@ -1,14 +1,9 @@
 ---
 title: Funkcje IntelliTrace | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
 - IntelliTrace, recording execution history
@@ -26,13 +21,13 @@ ms.assetid: 5ccc059c-6097-46b4-9d4b-34236c02d549
 caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d1d7e949236067331408c6b9a8268891ff8b88db
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51817480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790828"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,8 +116,3 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
  [Środowisko funkcji IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)  
   
  [Debugowanie historyczne za pomocą IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
-
-
-
-
-

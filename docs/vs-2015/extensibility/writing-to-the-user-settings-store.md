@@ -1,24 +1,19 @@
 ---
 title: Zapisywanie Store ustawienia użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70522d8a291cad559a042dab7f4eeb3c3c4684ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783379"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
   
 1.  Musi być możliwe zresetowanie ustawień zewnętrznych narzędzi, dzięki czemu można debugować i powtórz procedurę. Aby to zrobić, należy zapisać ustawienia oryginalne tak, aby można je przywrócić zgodnie z potrzebami.  
   
-2.  Otwórz Regedit.exe.  
+2.  Open Regedit.exe.  
   
 3.  Przejdź do pozycji narzędzia HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
@@ -135,4 +130,3 @@ Ustawienia użytkownika są zapisywalne ustawień, jak w powyższym **narzędzia
 8.  Na **narzędzia** menu, kliknij przycisk **wywołania UserSettingsStoreCommand**. Spowoduje to dodanie Notatnika na potrzeby **narzędzia** menu.  
   
 9. Powinien zostać wyświetlony Notatnik w menu Narzędzia / Opcje menu, a następnie klikając polecenie **Notatnik** należy wywołać wystąpienie Notatnika.
-

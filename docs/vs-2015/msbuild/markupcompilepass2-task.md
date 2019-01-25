@@ -1,14 +1,9 @@
 ---
-title: Markupcompilepass2 — zadanie | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: MarkupCompilePass2 Task | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 1d25689a-d21f-4b05-be26-95aa0ed4fd03
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea61e827bfae47c3bea961cb15c208f585aa6ed9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777095"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +79,3 @@ ms.locfileid: "49179241"
  [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
  [Kompilowanie aplikacji WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Aplikacje przeglądarek WPF XAML — omówienie](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

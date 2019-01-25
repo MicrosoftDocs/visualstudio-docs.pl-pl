@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Tworzenie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54786811"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
+# <a name="how-to-create-a-custom-rule-set"></a>Instrukcje: Tworzenie niestandardowego zestawu reguł
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], i [!INCLUDE[vsPro](../includes/vspro-md.md)], można tworzyć i modyfikować niestandardowego *zestaw reguł* do potrzeb określonego projektu skojarzony z analizy kodu. Aby utworzyć niestandardową regułę zestaw, otwórz jedną lub więcej standardowe reguły ustawia z edytora zestawu reguł. Można następnie dodać lub usunąć określone zasady i możesz zmienić akcję wykonywaną podczas analizy kodu Określa, że reguły zostały naruszone.  
@@ -117,8 +112,5 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
 -   Aby dodać lub usunąć domyślnej reguły ustawia bieżący zestaw reguł firmy Microsoft, kliknij przycisk **apletu Dodaj lub usuń podrzędne zestawy reguł**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Instrukcje: Konfigurowanie analizy kodu dla projektu kodu zarządzanego](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Informacje o zestawie reguł analizy kodu](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

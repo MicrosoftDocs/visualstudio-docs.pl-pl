@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3697fe85d13e1131c58f28d572e443affa77a81
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914439"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875566"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Scalanie XML w funkcji i wykazu manifestów
   Funkcji i pakietów, które są definiowane przez [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu. Te manifesty spakowanych są kombinacją danych generowanych przez projektantów i niestandardowe [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] wprowadzone w szablonie manifestu przez użytkowników. W czasie tworzenia pakietów [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scala niestandardowej [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrukcje z warunkiem projektanta [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w celu utworzenia spakowanych [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku manifestu. Podobnych elementów, z wyjątkiem wymienionych w dalszej części scalania wyjątków, są scalane w celu uniknięcia [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] błędy sprawdzania poprawności po wdrażanie plików w programie SharePoint i zapewnienie manifest pliki mniejszy i wydajniejszy.  
@@ -35,11 +35,11 @@ ms.locfileid: "53914439"
   
  Poniżej przedstawiono listę wyjątków scalania dla funkcji i pakietów [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki manifestu.  
   
-|Projektant|— Element XML|  
+|Projektant|XML Element|  
 |--------------|-----------------|  
-|Funkcja projektanta|Zależności aktywacji|  
+|Funkcja projektanta|ActivationDependency|  
 |Funkcja projektanta|UpgradeAction|  
-|Projektanta pakietów|SafeControl —|  
+|Projektanta pakietów|SafeControl|  
 |Projektanta pakietów|CodeAccessSecurity|  
   
 ## <a name="feature-manifest-elements"></a>Elementy manifestu funkcji
@@ -66,7 +66,7 @@ ms.locfileid: "53914439"
 |ApplicationResourceFiles/ApplicationResourceFile|Lokalizacja|  
 |Zestawy/zestawu|Lokalizacja|  
 |ClassResources/ClassResource|Lokalizacja|  
-|DwpFiles/plik dwp|Lokalizacja|  
+|DwpFiles/DwpFile|Lokalizacja|  
 |FeatureManifests/FeatureManifest|Lokalizacja|  
 |Zasobów/zasobów|Lokalizacja|  
 |RootFiles/RootFile|Lokalizacja|  

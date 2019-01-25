@@ -12,15 +12,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2a7661a1bce8e1ff6152040fe5b8d5567b55c7e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859844"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863841"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Instrukcje: Tworzenie obsługi zdarzeń w projektach pakietu Office
   Istnieje kilka sposobów, aby utworzyć procedury obsługi zdarzeń w języku Visual Basic i C#. W widoku Projekt, możesz utworzyć domyślny procedury obsługi zdarzeń dla kontrolek przez dwukrotne kliknięcie formantu lub za pomocą okienka zdarzenia z **właściwości** okna, aby utworzyć procedury obsługi dla dowolnego zdarzenia w formancie. Jednak jeśli jesteś w widoku kodu, może nie chcesz przełączyć do widoku projektu, aby utworzyć program obsługi zdarzeń.  

@@ -1,26 +1,21 @@
 ---
 title: Obsługa poleceń | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d26350e9b0465b3a175cb135509f85cf69da21f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793445"
 ---
 # <a name="command-handling"></a>Obsługa poleceń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ Edytor mogą definiować nowych poleceń. Polecenia są zwykle wyświetlane w me
  Usługa języka można kontrolować, jakie menu kontekstowe są wyświetlane w edytorze przechwycenie <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczenia. Alternatywnie można kontrolować menu kontekstowego na podstawie poszczególnych znacznika. Aby uzyskać więcej informacji, zobacz [ważne polecenia dotyczące filtrów usługi językowej](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Dodawanie poleceń do Menu kontekstowe edytora  
- Aby dodać polecenie do menu kontekstowego, należy najpierw zdefiniować zestaw poleceń menu należących do określonej grupy. Poniższy przykład pochodzi z pliku vsct wygenerowane jako część tego przewodnika [wskazówki: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+ Aby dodać polecenie do menu kontekstowego, należy najpierw zdefiniować zestaw poleceń menu należących do określonej grupy. Poniższy przykład pochodzi z pliku vsct wygenerowane jako część tego przewodnika [instruktażu: Dodawanie funkcji do edytora niestandardowego](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu identyfikator guid = "guidCustomEditorCmdSet" id = "IDMX_RTF" priorytet = "0x0000" type = "Kontekst" >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Nadrzędny identyfikator guid = "guidCustomEditorCmdSet" id = "0" / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
- \<Ciągi >  
+ \<Strings>  
   
  \<ButtonText > Menu kontekstowe CustomEditor\</ButtonText >  
   
@@ -46,7 +41,7 @@ Edytor mogą definiować nowych poleceń. Polecenia są zwykle wyświetlane w me
   
  \</ Ciągi >  
   
- \</ Menu >  
+ \</Menu>  
   
  \</ Menu >  
   
@@ -56,4 +51,3 @@ Edytor mogą definiować nowych poleceń. Polecenia są zwykle wyświetlane w me
   
 ## <a name="see-also"></a>Zobacz też  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
-

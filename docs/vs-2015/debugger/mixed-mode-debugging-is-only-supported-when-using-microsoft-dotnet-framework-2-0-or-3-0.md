@@ -1,14 +1,9 @@
 ---
 title: Debugowanie w trybie mieszanym jest obsługiwane tylko podczas korzystania z programu Microsoft .NET Framework 2.0 lub 3.0 | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1248ab59841ccd2861507bbf075fcbeb93959ae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 760763855064cabb096fca0b8012ede9ea9dbde1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781247"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 2.0 or 3.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +54,7 @@ Wersje programu Microsoft .NET Framework wcześniejszych niż 2.0 nie zapewniaj�
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Zobacz [Konfigurowanie debugowania SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   Zobacz [Konfigurowanie debugowania SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: 'Porady: tworzenie i modyfikacja poziomów MIP | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie i modyfikacja poziomów MIP | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9578fd2bdafeaf8c9a3e9fcd3dd5523b4d8cc7f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774065"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Porady: tworzenie i modyfikacja poziomów MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowania i modyfikowania *poziomów MIP* dla przestrzeni tekstury poziomu z Detail (poziomu).  
@@ -31,7 +26,7 @@ W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowan
   
 #### <a name="to-generate-mip-levels"></a>Aby wygenerować poziomy MIP  
   
-1.  Rozpocznij od podstawowej tekstury, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są wartością potęgi liczby dwa, na przykład 256, 512, 1024 itd.  
+1.  Rozpocznij od podstawowej tekstury, zgodnie z opisem w [jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są wartością potęgi liczby dwa, na przykład 256, 512, 1024 itd.  
   
 2.  Generuj poziomy MIP. Na **tryb edytora obrazów** narzędzi, wybierz **zaawansowane**, **narzędzia**, **Generuj Mips**.  
   
@@ -47,10 +42,7 @@ W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowan
 2.  Po wybraniu poziom MIP, który chcesz zmodyfikować, można użyć narzędzi do rysowania go zmodyfikować bez zmiany zawartości innych poziomów MCI. Narzędzia do rysowania są dostępne na **edytora obrazów** paska narzędzi. Po wybraniu narzędzia, możesz zmienić jego właściwości w **właściwości** okna. Aby uzyskać informacji na temat narzędzi do rysowania i ich właściwości, zobacz [edytora obrazów](../designers/image-editor.md).  
   
 > [!NOTE]
->  Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [porady: eksportowanie tekstury tego mipmapy zawiera](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
+>  Jeśli nie trzeba modyfikować zawartość poszczególnych poziomów MIP — co możesz zrobić, aby uzyskać pewne efekty — firma Microsoft zaleca generowanie mipmap z tekstury źródłowej w czasie kompilacji. Pomaga to zapewnić, że poziomy MCI pozostają zsynchronizowane z teksturą źródła, ponieważ modyfikacje poziomu MIP nie są propagowane do innych poziomów automatycznie. Aby uzyskać więcej informacji na temat generowania mipmap w czasie kompilacji, zobacz [jak: Eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)
-
-
-
+ [Instrukcje: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md)

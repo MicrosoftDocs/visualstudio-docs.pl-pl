@@ -1,14 +1,9 @@
 ---
-title: 'Porady: docelowa wersja systemu .NET Framework | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Docelowa wersja systemu .NET Framework | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -16,21 +11,21 @@ ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3370c62535f2bb915115533ea79f4b913c3ac347
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ee322255cbb737aa4503517c599c62c9151937ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182367"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782310"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Porady: wersja docelowa platformy .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Instrukcje: Docelowa wersja systemu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersję .NET Framework i jak zmienić wersję docelową w istniejących projektach Visual Basic, Visual C# lub Visual F#.  
   
 > [!IMPORTANT]
->  Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+>  Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **W tym temacie**  
   
@@ -58,16 +53,16 @@ W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersj
      Lista szablonów pokazuje tylko projekty, które są obsługiwane przez wybraną przez użytkownika wersję .NET Framework.  
   
 ##  <a name="bkmk_existing"></a> Zmiana wersji docelowej  
- Możesz zmienić wersję docelową .NET Framework w projekcie języka Visual Basic, Visual C# lub Visual F #, korzystając z następującej procedury.  
+ Można zmienić wersję docelową .NET Framework w języku Visual Basic, Visual C#, lub Visual F# projekt, korzystając z następującej procedury.  
   
 #### <a name="to-change-the-targeted-version"></a>Aby zmienić wersję docelową  
   
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz zmienić, a następnie wybierz **właściwości**.  
   
-     ![Właściwości Eksploratora rozwiązań w usłudze Visual Studio](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
+     ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [porady: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    >  Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2.  W lewej kolumnie okna właściwości wybierz **aplikacji** kartę.  
   
@@ -93,6 +88,3 @@ W tym dokumencie opisano, jak ukierunkować tworzony projekt na konkretną wersj
  [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Konfigurowanie projektów](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
  [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
-
-
-

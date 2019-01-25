@@ -10,17 +10,17 @@ helpviewer_keywords:
 - end characters
 - start characters
 - documents [Office development in Visual Studio], retrieving ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88876641d0c6e72385d6f9e514ff8135de9518fa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863204"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Instrukcje: Programowe pobieranie znaków początkowych i końcowych w zakresach
   W tym przykładzie pokazano, jak można pobrać pozycji znaku pozycji początkowej i końcowej zakresu.  

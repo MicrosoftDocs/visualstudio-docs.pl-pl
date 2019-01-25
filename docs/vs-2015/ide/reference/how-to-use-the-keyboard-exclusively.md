@@ -1,14 +1,9 @@
 ---
-title: 'Porady: używanie wyłącznie klawiatury | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Używanie wyłącznie klawiatury | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -20,22 +15,22 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782624"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Porady: używanie wyłącznie klawiatury
+# <a name="how-to-use-the-keyboard-exclusively"></a>Instrukcje: Używanie wyłącznie klawiatury
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] udostępnia wiele domyślne kombinacji klawiszy skrótów ułatwia nawigowanie do kodu w ramach zintegrowanego środowiska programistycznego (IDE). Aby uzyskać pełną listę skrótów klawiaturowych używane w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Aby uzyskać informacje na skróty klawiaturowe są dostępne dla innych produktów firmy Microsoft, zobacz [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Kontrolki przybornika  
  Formularz lub Projektant za pomocą klawiatury, można dodać kontrolki w przyborniku.  
@@ -106,6 +101,3 @@ ms.locfileid: "49862167"
  [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)   
  [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
-
-
-

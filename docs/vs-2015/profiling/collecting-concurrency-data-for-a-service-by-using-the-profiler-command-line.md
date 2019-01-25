@@ -1,25 +1,20 @@
 ---
 title: Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: afa82e7fab97e4f10ac1080d4ffd8ae77d2e5b71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2764116c6e502af76b9577cf4752a6d3b19f0986
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788878"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760115"
 ---
 # <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla usługi przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ Metoda współbieżności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Dołącz do uruchomionej usługi .NET**|-   [Porady: dołączyć Profiler do usługi .NET w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Dołącz do uruchomionej usługi .NET**|-   [Jak: Dołączanie profilera do usługi .NET w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**Dołącz do uruchomionej usługi w języka C/C++**|-   [Porady: dołączyć Profiler do usługi natywnej i zbieranie danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Dołącz do uruchomionej usługi w języka C/C++**|-   [Jak: Dołączanie profilera do usługi natywnej w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Informacje o zadaniach pokrewnych  
   
@@ -61,6 +56,3 @@ Metoda współbieżności [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling
   
 ## <a name="reference"></a>Tematy pomocy  
  [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
-
-
-

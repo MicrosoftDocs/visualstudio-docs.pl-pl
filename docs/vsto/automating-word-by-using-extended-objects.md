@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8244aec25b0179c22e88f91b4577d2fa78c119f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 296946aa4d0bd012649cd39cbde99274db82484d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950150"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874292"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatyzowanie programu Word za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Word w programie Visual Studio, możesz użyć *hostować elementy* i *kontrolki hosta*s w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Word (oznacza to, że model obiektu, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Word), takie jak <xref:Microsoft.Office.Interop.Word.Document> i <xref:Microsoft.Office.Interop.Word.ContentControl> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Word, w których są one oparte na, ale dodają dodatkowe zdarzenia i możliwości wiązania danych do obiektów.  

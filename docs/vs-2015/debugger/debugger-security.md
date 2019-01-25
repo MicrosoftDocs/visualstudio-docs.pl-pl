@@ -1,14 +1,9 @@
 ---
 title: Zabezpieczenia debugera | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14389ec72094b2f6642c74b93bdd5f8a076f6387
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53842796"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790917"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
  Aby uzyskać więcej informacji, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Zabezpieczenia debugowania usług sieci Web  
- Bezpieczniej jest Debuguj lokalnie, ale ponieważ prawdopodobnie nie masz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowany na serwerze sieci web, debugowanie lokalne może być niepraktyczne. Ogólnie rzecz biorąc debugowanie usług sieci Web jest wykonywane zdalnie, z wyjątkiem podczas tworzenia aplikacji, więc zalecenia dotyczące zdalnego debugowania zabezpieczeń dotyczą również usług sieci Web profilowanie. Poniżej przedstawiono pewne dodatkowe najlepsze rozwiązania. Aby uzyskać więcej informacji, zobacz [debugowanie usług XML sieci Web](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Bezpieczniej jest Debuguj lokalnie, ale ponieważ prawdopodobnie nie masz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowany na serwerze sieci web, debugowanie lokalne może być niepraktyczne. Ogólnie rzecz biorąc debugowanie usług sieci Web jest wykonywane zdalnie, z wyjątkiem podczas tworzenia aplikacji, więc zalecenia dotyczące zdalnego debugowania zabezpieczeń dotyczą również usług sieci Web profilowanie. Poniżej przedstawiono pewne dodatkowe najlepsze rozwiązania. Aby uzyskać więcej informacji, zobacz [debugowanie usług XML sieci Web](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 -   Nie należy włączać debugowania na serwerze sieci Web, którego bezpieczeństwo zostało naruszone.  
   
@@ -90,8 +85,3 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
-
-
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: Wdrażanie niestandardowego procesora dyrektywy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795320"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
  Alternatywne metody to:  
   
-- [Rozszerzenie programu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
+- [Rozszerzenie programu Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
   
 - [Pakietu VSPackage](../extensibility/internals/vspackages.md). W przypadku definiowania VSPackage, zawierającego inne funkcje oprócz procesora dyrektywy, istnieje wygodna metoda rejestracji procesora dyrektywy.  
   
@@ -37,7 +34,7 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   Należy użyć jednej z następujących metod tylko wtedy, gdy chcesz przekształcić szablon tekstowy w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Wdrażanie procesora dyrektywy w VSIX  
- Można dodać niestandardowy procesor dyrektywy do [rozszerzeniu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Można dodać niestandardowy procesor dyrektywy do [rozszerzeniu Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Upewnij się, że w pliku .vsix znajdują się dwa następujące elementy:  
   
@@ -205,6 +202,3 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

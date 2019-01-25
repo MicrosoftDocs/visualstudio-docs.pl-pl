@@ -1,13 +1,9 @@
 ---
 title: 'CA1601: Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1601
 - DoNotUseTimersThatPreventPowerStateChanges
@@ -19,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ddc731ecc2c6b1e0e4ddf931066aced2011102eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 228c95a8f0c3e1b9b1643e529e78f52f1e059bc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753131"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Nie używaj czasomierzy, które uniemożliwiają zmiany stanu zasilania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,11 +1,8 @@
 ---
 title: InvokeDelegate | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - InvokeDelegate Designer
@@ -14,13 +11,13 @@ ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3b47a975c12cfcfd02b01925685b47cba47cc1fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228855"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798912"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -43,7 +40,7 @@ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.InvokeDeleg
 |Nazwa właściwości|Wymagane|Użycie|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Przyjazna nazwa <xref:System.Activities.Statements.InvokeDelegate> działania. Wartość domyślna to InvokeDelegate.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Nazwa <xref:System.Activities.ActivityDelegate> wywoływana, gdy działanie wykonuje. Tej właściwości można edytować na powierzchni projektowej. To jest obowiązkowa.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Prawda|Nazwa <xref:System.Activities.ActivityDelegate> wywoływana, gdy działanie wykonuje. Tej właściwości można edytować na powierzchni projektowej. To jest obowiązkowa.|
 |<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Kolekcja argument wywoływany delegat. Klucze są nazwami <xref:System.Activities.DelegateArgument> obiektów na <xref:System.Activities.ActivityDelegate> i wartości argumentów, których wyrażenia są obliczane i przypisane do odpowiednich <xref:System.Activities.DelegateArgument> obiektów. W siatce właściwości kliknij przycisk z wielokropkiem w **DelegateArguments** pola, wyświetla **DelegateArguments** okno dialogowe pozwala ustawić tę właściwość. Kliknij przycisk **Utwórz Argument** pola w celu dodania argumenty.|
 
 ## <a name="see-also"></a>Zobacz także

@@ -1,14 +1,9 @@
 ---
 title: '&lt;plik&gt; — Element (aplikacja ClickOnce) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791034"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;plik&gt; — Element (aplikacja ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,20 +91,20 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`name`|Wymagane. Określa nazwę pliku.|  
-|`size`|Wymagane. Określa rozmiar w bajtach, pliku.|  
+|`name`|Wymagana. Określa nazwę pliku.|  
+|`size`|Wymagana. Określa rozmiar w bajtach, pliku.|  
 |`group`|Opcjonalny, jeśli `optional` atrybut jest określony lub nie ustawiono `false`; wymagany, jeżeli `optional` jest `true`. Nazwa grupy, do której należy ten plik. Nazwa może być dowolną wartością ciągu Unicode, wybierany przez deweloperów i służy do pobierania plików na żądanie przy użyciu <xref:System.Deployment.Application.ApplicationDeployment> klasy.|  
 |`optional`|Opcjonalna. Określa, czy ten plik musi uruchomić pobieranie, gdy aplikacja jest pierwszym, czy plik powinien znajdować się tylko na serwerze do momentu aplikacja żąda ją na żądanie. Jeśli `false` lub niezdefiniowany, plik jest pobierany podczas najpierw uruchomić lub zainstalować aplikacji. Jeśli `true`, `group` musi być określony dla manifestu aplikacji był prawidłowy. `optional` nie może mieć wartość true, jeśli `writeableType` jest określony z wartością `applicationData`.|  
 |`writeableType`|Opcjonalna. Określa, że ten plik jest plikiem danych. Obecnie jedyna prawidłowa wartość to `applicationData`.|  
   
-## <a name="typelib"></a>biblioteki typów  
+## <a name="typelib"></a>typelib  
  `typelib` Element jest opcjonalny element podrzędny elementu file. Element zawiera opis biblioteki typów, który należy do składnika COM. Element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`tlbid`|Wymagane. Identyfikator GUID jest przypisany do biblioteki typów.|  
-|`version`|Wymagane. Numer wersji biblioteki typów.|  
-|`helpdir`|Wymagane. Katalog, który zawiera pliki pomocy dla tego składnika. Może mieć długości zerowej.|  
+|`tlbid`|Wymagana. Identyfikator GUID jest przypisany do biblioteki typów.|  
+|`version`|Wymagana. Numer wersji biblioteki typów.|  
+|`helpdir`|Wymagana. Katalog, który zawiera pliki pomocy dla tego składnika. Może mieć długości zerowej.|  
 |`resourceid`|Opcjonalna. Reprezentacja ciągu szesnastkowego identyfikator ustawień regionalnych (LCID). Jest jednej do czterech liczb szesnastkowych bez prefiksu 0 x i bez zer wiodących. Identyfikator LCID może mieć identyfikator podjęzyk neutralne.|  
 |`flags`|Opcjonalna. Ciąg reprezentujący flagi biblioteki typów dla tego typu biblioteki. W szczególności powinien być jednym z "RESTRICTED", "CONTROL", "HIDDEN" i "HASDISKIMAGE".|  
   
@@ -118,7 +113,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`clsid`|Wymagane. Identyfikator klasy składnika modelu COM, wyrażony jako identyfikator GUID.|  
+|`clsid`|Wymagana. Identyfikator klasy składnika modelu COM, wyrażony jako identyfikator GUID.|  
 |`description`|Opcjonalna. Nazwa klasy.|  
 |`threadingModel`|Opcjonalna. Model wątkowości, używane przez klasy modelu COM w procesie. Jeśli ta właściwość ma wartość null, jest używany bez modelu wątkowości. Składnik jest tworzony w głównym wątku klienta i wywołania z innych wątków są przekazywane do tego wątku. Poniższa lista przedstawia prawidłowe wartości:<br /><br /> `Apartment`, `Free`, `Both`, i `Neutral`.|  
 |`tlbid`|Opcjonalna. Identyfikator GUID dla biblioteki typów dla tego składnika COM.|  
@@ -134,7 +129,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`iid`|Wymagane. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|  
+|`iid`|Wymagana. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|  
 |`baseInterface`|Opcjonalna. IID interfejsu, z którego odwołuje się interfejs `iid` pochodzi.|  
 |`numMethods`|Opcjonalna. Liczba metod zaimplementowanych przez interfejs.|  
 |`name`|Opcjonalna. Nazwa interfejsu, ponieważ pojawi się w kodzie.|  
@@ -146,7 +141,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`iid`|Wymagane. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|  
+|`iid`|Wymagana. Interfejs identyfikator (IID), który jest obsługiwany przez ten serwer proxy. Identyfikator IID musi mieć nawiasów klamrowych otaczających je.|  
 |`baseInterface`|Opcjonalna. IID interfejsu, z którego odwołuje się interfejs `iid` pochodzi.|  
 |`numMethods`|Opcjonalna. Liczba metod zaimplementowanych przez interfejs.|  
 |`Name`|Opcjonalna. Nazwa interfejsu, ponieważ pojawi się w kodzie.|  
@@ -185,7 +180,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 |---------------|-----------------|  
 |`Algorithm`|Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
   
 ## <a name="remarks"></a>Uwagi  
@@ -208,6 +203,3 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
   
 ## <a name="see-also"></a>Zobacz też  
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

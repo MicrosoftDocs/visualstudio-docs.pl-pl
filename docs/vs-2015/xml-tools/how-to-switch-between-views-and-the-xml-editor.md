@@ -1,27 +1,22 @@
 ---
-title: 'Porady: przełączanie się między widokami i edytorem XML | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Przełączanie się między widokami i edytorem XML | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752785"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Porady: przełączanie się między widokami i edytorem XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Instrukcje: Przełączanie się między widokami i edytorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -29,7 +24,7 @@ W tym temacie przedstawiono sposób przełączać się między widokami projekta
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Aby przełączać się między widokami i edytorem XML  
   
-1.  Aby tworzyć i edytować nowy plik schematu XML, wykonaj kroki opisane w [porady: tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Aby tworzyć i edytować nowy plik schematu XML, wykonaj kroki opisane w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
 2.  Aby przełączyć się do projektanta schematu XML w edytorze XML, kliknij prawym przyciskiem myszy kliknij w dowolnym miejscu w edytorze XML, a następnie wybierz **Projektant widoków**.  
   
@@ -44,6 +39,3 @@ W tym temacie przedstawiono sposób przełączać się między widokami projekta
 6.  Aby przełączyć się między widokami przy użyciu klawiszy dostępu, naciśnij klawisze CTRL + 1 dla widoku startowego, CTRL + 2 dla widoku wykresu i CTRL + 3 dla widoku modelu zawartości.  
   
 7.  Aby przejść do edytora XML z widoku modelu zawartości, kliknij prawym przyciskiem myszy węzeł, a następnie wybierz **Wyświetl kod** w menu kontekstowym.
-
-
-

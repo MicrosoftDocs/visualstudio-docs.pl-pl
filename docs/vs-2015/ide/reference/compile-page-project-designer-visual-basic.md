@@ -1,14 +1,9 @@
 ---
 title: Strona kompilowania, Projektant (Visual Basic) projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778915"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
  Następujące ustawienia pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  
   
 > [!NOTE]
->  Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+>  Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. W związku z tym **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfiguracja**  
- Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) i [porady: tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
+ Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowania** (ustawienie domyślne), **wersji**, lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) i [jak: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Platforma**  
- Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny Procesor** (ustawienie domyślne), **x64**, lub **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny Procesor** (ustawienie domyślne), **x64**, lub **x86**. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Opcje konfiguracji kompilatora  
  Następujące ustawienia pozwalają włączyć ustawienia kompilatora opcji konfiguracji.  
   
  **Kompiluj ścieżkę wyjściową**  
- Określa położenie plików wyjściowych dla tej konfiguracji projektu. W tym polu wpisz ścieżkę dane wyjściowe kompilacji, lub kliknij przycisk **Przeglądaj** przycisk, aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, jego zostanie zapisana jako względna. Domyślna ścieżka to bin\Debug\ lub bin\Release\\. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Określa położenie plików wyjściowych dla tej konfiguracji projektu. W tym polu wpisz ścieżkę dane wyjściowe kompilacji, lub kliknij przycisk **Przeglądaj** przycisk, aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, jego zostanie zapisana jako względna. Domyślna ścieżka to bin\Debug\ lub bin\Release\\. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. **Kompilacji** polecenia **debugowania** menu (F5) umieszcza kompilację w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **kompilacji** polecenia **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Za pomocą uproszczonych konfiguracjach kompilacji system projektu określa, czy do kompilacji debugowania lub wydania wersji. **Kompilacji** polecenia **debugowania** menu (F5) umieszcza kompilację w lokalizacji debugowania bez względu na to **ścieżkę wyjściową** określisz. Jednak **kompilacji** polecenia **kompilacji** menu umieszcza go w miejscu określonym przez użytkownika. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Opcja explicit**  
  Określa, czy zezwalać na niejawne deklaracji zmiennych. Wybierz **na** będą musieli jawnej deklaracji zmiennych. Powoduje to kompilator, aby włączyć raportowanie błędów, jeśli zmienne nie są deklarowane, zanim zostaną użyte. Wybierz **poza** umożliwia niejawne deklaracji zmiennych.  
@@ -175,11 +170,8 @@ Użyj **skompilować** strony projektanta projektu, aby określić instrukcje ko
   Kliknij ten przycisk, aby uzyskać dostęp do **ustawienia AdvancedCompiler** okno dialogowe. Użyj **ustawienia AdvancedCompiler** okno dialogowe, aby określić projektu najbardziej zaawansowane właściwości konfiguracji kompilacji. To okno dialogowe dotyczy tylko dla projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Zaawansowane z okno dialogowe Ustawienia kompilatora (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Porady: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Konfiguracji Debug i Release projektu](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Zarządzanie właściwościami kompilacja](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Kompilator wiersza polecenia programu Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

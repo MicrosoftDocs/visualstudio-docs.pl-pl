@@ -1,25 +1,20 @@
 ---
 title: Praca z cieniowaniem | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795913"
 ---
 # <a name="working-with-shaders"></a>Praca z cieniowaniem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Można użyć projektanta modułu cieniującego opartej na wykresach w [!INCLUDE
 |[Projektant cieniowania](../designers/shader-designer.md)|Opisuje sposób używania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektanta modułu cieniującego do pracy z programów do cieniowania.|  
 |[Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)|W tym artykule omówiono rodzaje węzły Shader Designer, które można użyć w celu osiągnięcia efekty graficzne.|  
 |[Przykłady projektanta cieniowania](../designers/shader-designer-examples.md)|Zawiera łącza do tematów, które pokazują, jak uzyskać typowe efekty graficzne za pomocą projektanta modułu cieniującego.|
-
-
-

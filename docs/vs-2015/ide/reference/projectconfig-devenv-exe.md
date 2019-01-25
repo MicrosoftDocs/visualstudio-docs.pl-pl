@@ -1,14 +1,9 @@
 ---
 title: -ProjectConfig (devenv.exe) | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
 - configurations, rebuilding
@@ -25,13 +20,13 @@ ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 669378e02b2a38fa8b94c23543c6cc0136d8e07e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 59a3ad19a6e2a51ec865f66721e35548323d20a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785971"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,25 +41,25 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 ```  
   
 ## <a name="arguments"></a>Argumenty  
- / Build  
+ /build  
  Tworzy projekt określony przez `/project` `ProjName`.  
   
  / clean  
  Czyści wszystkie pośrednie pliki i katalogi dane wyjściowe utworzone podczas kompilacji.  
   
- / REBUILD  
+ /rebuild  
  Czyści, a następnie kompiluje projekt określony przez `/project` `ProjName`.  
   
- / deploy  
+ /deploy  
  Określa, czy wdrożony po kompilacji lub skompiluj ponownie projekt.  
   
  `SolnConfigName`  
- Wymagane. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w `SolutionName`.  
+ Wymagana. Nazwa konfiguracji rozwiązania, które zostaną zastosowane do rozwiązania o nazwie w `SolutionName`.  
   
  `SolutionName`  
- Wymagane. Pełna ścieżka i nazwa pliku rozwiązania.  
+ Wymagana. Pełna ścieżka i nazwa pliku rozwiązania.  
   
- / Project `ProjName`  
+ /project `ProjName`  
  Opcjonalna. Ścieżka i nazwa pliku projektu w rozwiązaniu. Możesz wprowadzić ścieżkę względną z `SolutionName` folderu pliku projektu lub nazwy wyświetlanej projektu, lub pełną ścieżkę i nazwę pliku projektu.  
   
  / projectconfig `ProjConfigName`  
@@ -93,6 +88,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
  [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

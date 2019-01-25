@@ -1,14 +1,9 @@
 ---
 title: 'Instrukcje: Tworzenie testu jednostkowego opartego na danych | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779165"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
+# <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, możesz skonfigurować metodę testu jednostkowego można pobrać wartości używanych w metodzie testowej, ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, dzięki czemu można łatwo przetestować różne dane wejściowe, korzystając z jednej metody.  
@@ -151,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Konstruktor z jednym parametrem używa informacji o połączeniu, który jest przechowywany w pliku app.config dla rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.  
   
- Przy użyciu pliku app.config umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje o sposobie tworzenia i używania pliku app.config, zobacz [wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ Przy użyciu pliku app.config umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje o sposobie tworzenia i używania pliku app.config, zobacz [instruktażu: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Porady: tworzenie i uruchamianie testu jednostkowego](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Instrukcje: Tworzenie i uruchamianie testu jednostkowego](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Testowanie jednostek kodu](../test/unit-test-your-code.md)   
  [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md)   
  [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

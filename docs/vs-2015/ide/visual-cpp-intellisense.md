@@ -1,27 +1,22 @@
 ---
 title: Intellisense dla programu Visual C++ | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881680"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802632"
 ---
-# <a name="visual-c-intellisense"></a>Intellisense dla programu Visual C++
+# <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual Studio 2015 IntelliSense dostępnej dla pojedynczego kodu pliki także jak w przypadku plików w projektach. W projektach dla wielu platform niektóre funkcje IntelliSense są dostępne w plikach CPP i .c w projekcie współdzielonym kodem nawet wtedy, gdy jesteś w kontekście systemu Android lub iOS.  
@@ -29,11 +24,11 @@ W programie Visual Studio 2015 IntelliSense dostępnej dla pojedynczego kodu pli
 ## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense w języku C++  
  Funkcja IntelliSense jest nazwą nadaną zestaw funkcji, które kodowania bardziej wygodne. Ponieważ różne osoby mają różne pomysłów dotyczących co to jest wygodne, praktycznie wszystkie funkcje IntelliSense może być włączone lub wyłączone w **Edytor tekstu, C/C++, zaawansowane** stronę właściwości.  
   
- ![Narzędzia, opcje, Edytor tekstu, C&#47;C&#43;&#43;, zaawansowany](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
+ ![Tools, Options, Text Editor, C&#47;C&#43;&#43;, Advanced](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
   
  Elementy menu i skróty klawiaturowe, które pokazano na poniższej ilustracji umożliwia dostęp do funkcji IntelliSense.  
   
- ![Program Visual C&#43; &#43; IntelliSense Menu](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")  
+ ![Visual C&#43;&#43; IntelliSense Menu](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")  
   
 ### <a name="statement-completion-and-member-list"></a>Listy uzupełniania i elementów członkowskich — instrukcja  
  Po uruchomieniu, wpisując słowo kluczowe, typ, funkcji, nazwa zmiennej lub inny element program, który kompilator rozpoznaje, Edytor umożliwia Dokończ wyraz dla Ciebie  
@@ -92,9 +87,9 @@ W programie Visual Studio 2015 IntelliSense dostępnej dla pojedynczego kodu pli
 - Wiersz 12 ma purpurowy wężyk na identyfikatorze BYE; Ten identyfikator nie jest zdefiniowany w obecnie nieaktywne Android.NativeActivity projektu.  
   
 ## <a name="single-file-intellisense"></a>Pojedynczy plik IntelliSense  
- Po otwarciu pojedynczy plik poza jakiegokolwiek projektu, będzie nadal się pojawiać IntelliSense. Można włączyć lub wyłączyć określonych funkcji, przechodząc do **Edytor tekstu, C/C++, zaawansowane** można włączyć lub wyłączyć funkcje IntelliSense. Aby skonfigurować ustawienia funkcji IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądania plików poza projektami** w **zaawansowane** sekcji. Zobacz [Przewodnik po Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Po otwarciu pojedynczy plik poza jakiegokolwiek projektu, będzie nadal się pojawiać IntelliSense. Można włączyć lub wyłączyć określonych funkcji, przechodząc do **Edytor tekstu, C/C++, zaawansowane** można włączyć lub wyłączyć funkcje IntelliSense. Aby skonfigurować ustawienia funkcji IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądania plików poza projektami** w **zaawansowane** sekcji. Zobacz [Przewodnik po Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
- ![Program Visual C&#43; &#43; pojedynczy plik intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
+ ![Visual C&#43;&#43; single file intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
  Domyślnie pojedynczy plik IntelliSense używane tylko standardowe obejmują katalogi w celu znalezienia plików nagłówkowych. Aby dodać dodatkowe katalogi, otwórz menu skrótów węzła rozwiązania i Dodaj katalog na **debugować kod źródłowy** listy, jak pokazano na następującym rysunku:  
   
@@ -102,6 +97,3 @@ W programie Visual Studio 2015 IntelliSense dostępnej dla pojedynczego kodu pli
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-
-
-

@@ -3,11 +3,8 @@ title: Użyj parametrów wiersza polecenia, aby zainstalować program Visual Stu
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -16,13 +13,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794042"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

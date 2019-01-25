@@ -1,29 +1,24 @@
 ---
-title: 'Wskazówki: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Przewodnik: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792223"
 ---
-# <a name="walkthrough-using-msbuild"></a>Wskazówki: używanie programu MSBuild
+# <a name="walkthrough-using-msbuild"></a>Przewodnik: Korzystanie z programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -247,10 +242,10 @@ $(PropertyName)
  Niemal wszystkie elementy programu MSBuild może mieć atrybutu warunku. Aby uzyskać więcej dyskusję na temat przy użyciu atrybutu warunku, zobacz [warunki](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Właściwości zastrzeżone  
- Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. MSBuildToolsPath znajduje się przykład właściwości zastrzeżonych. Właściwości zastrzeżone są przywoływane przy użyciu notacji $, podobnie jak inne właściwości. Aby uzyskać więcej informacji, zobacz [porady: odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. MSBuildToolsPath znajduje się przykład właściwości zastrzeżonych. Właściwości zastrzeżone są przywoływane przy użyciu notacji $, podobnie jak inne właściwości. Aby uzyskać więcej informacji, zobacz [jak: Odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Zmienne środowiskowe  
- Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Ustawianie właściwości w wierszu polecenia  
  Właściwości może być określona w wierszu polecenia przy użyciu /property lub /p przełącznik wiersza polecenia. Wartości właściwości odebranych w wierszu polecenia zastępują wartości właściwości ustawione w projekcie plików i zmiennymi środowiskowymi.  
@@ -312,7 +307,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- Definiuje grupy elementów zawierających dwa elementy. Typ elementu kompilacji ma dwie wartości: "Program.cs" i "Properties\AssemblyInfo.cs".  
+ Definiuje grupy elementów zawierających dwa elementy. Typ elementu kompilacji ma dwie wartości: "W pliku Program.cs" i "Properties\AssemblyInfo.cs".  
   
  Poniższy kod tworzy tego samego typu elementu, deklarując oba pliki w jednym atrybucie Include, rozdzielając je średnikiem.  
   
@@ -408,7 +403,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- dodaje wszystkie pliki z rozszerzeniem pliku "JPEG" w folderze obrazów i jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
+ dodaje wszystkie pliki z rozszerzeniem pliku "JPEG" w folderze obrazów i jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
   
  Należy zauważyć, że podaną elementów dodanych do typu elementu. Na przykład  
   
@@ -429,7 +424,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- dodaje wszystkie pliki z rozszerzeniem pliku".cs" do elementu kompilacji typu z wyjątkiem plików, których nazwy zawierają ciąg "Designer". Aby uzyskać więcej przykładów, zobacz [porady: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
+ dodaje wszystkie pliki z rozszerzeniem pliku".cs" do elementu kompilacji typu z wyjątkiem plików, których nazwy zawierają ciąg "Designer". Aby uzyskać więcej przykładów, zobacz [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  Ten atrybut wykluczania dotyczy tylko elementy dodane przez atrybut Include w pozycji elementu, który zawiera oba te. Na przykład  
   
@@ -582,10 +577,8 @@ $(PropertyName)
    Zwróć uwagę, że metadane wyrażone w tej składni nie powoduje, że przetwarzanie wsadowe.  
   
 ## <a name="whats-next"></a>Jaka jest przyszłość?  
- Informacje na temat tworzenia pliku prostego projektu w jednym kroku w danym momencie, wypróbuj [wskazówki: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Informacje na temat tworzenia pliku prostego projektu w jednym kroku w danym momencie, wypróbuj [instruktażu: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Zobacz też
 [Przegląd MSBuild](msbuild.md)  
  [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
-
-

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, searching
 - text [Office development in Visual Studio], searching in worksheets
 - text searches, worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37f59f2888fc5a572029f4c21116281df008706e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826130"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868592"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Instrukcje: Programowe wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  

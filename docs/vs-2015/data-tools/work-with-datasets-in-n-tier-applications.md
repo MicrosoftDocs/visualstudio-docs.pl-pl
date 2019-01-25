@@ -1,12 +1,9 @@
 ---
 title: Praca z zestawami danych w aplikacjach n warstwowych | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +24,13 @@ ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e481eaa70a54028cbea8cbdbd9e6581f2f400214
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 6af9bb10066a6e5178d4f6864214fae5ec6796d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773206"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,7 @@ Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, któ
  [Dodawanie walidacji do n-warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)  
  W tym artykule opisano gdzie dodać kod do wykonywania sprawdzania poprawności od zmieniających się danych.  
   
- [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Przewodnik: Tworzenie n-warstwowej aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów.  
   
  [Przewodnik: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  

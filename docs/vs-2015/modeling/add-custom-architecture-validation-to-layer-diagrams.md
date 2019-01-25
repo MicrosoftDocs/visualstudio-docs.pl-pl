@@ -1,25 +1,22 @@
 ---
 title: Dodawanie niestandardowej walidacji architektury do diagramów warstw | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796802"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md)
-
-
-

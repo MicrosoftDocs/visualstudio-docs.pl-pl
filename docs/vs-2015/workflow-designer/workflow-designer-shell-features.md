@@ -1,11 +1,8 @@
 ---
 title: Funkcje powłoki projektanta przepływu pracy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDShellFeatures.UI
@@ -13,16 +10,16 @@ ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790545"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkcje powłoki Projektanta przepływu pracy
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] składa się z trzech głównych obszarach interfejsu użytkownika: powierzchni projektanta i nad nim za pomocą paska nawigacji powłoki poniżej. Na pasku nawigacji, umieszczony w górnej części ekranu służy do wyświetlania listy elementów nadrzędnych bieżącego działania głównego. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Porady: Korzystanie z nawigacji z linków do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta umieszczony na środku ekranu jest używana do tworzenia przepływów pracy. Powłoka, umieszczony w dolnej części ekranu zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] składa się z trzech głównych obszarach interfejsu użytkownika: powierzchni projektanta i nad nim za pomocą paska nawigacji powłoki poniżej. Na pasku nawigacji, umieszczony w górnej części ekranu służy do wyświetlania listy elementów nadrzędnych bieżącego działania głównego. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Jak: Użyj do stron nadrzędnych](../workflow-designer/how-to-use-breadcrumb-navigation.md). Powierzchni projektanta umieszczony na środku ekranu jest używana do tworzenia przepływów pracy. Powłoka, umieszczony w dolnej części ekranu zawiera szereg przyciski umożliwiające zarządzanie bieżącym widokiem.  
   
 ## <a name="shell-features"></a>Funkcje powłoki  
  Powłoka zawiera przyciski po prawej stronie paska, który umożliwia powiększanie lub pomniejszanie przepływu pracy, do zawartości przepływu pracy do rozmiaru ekranu i Pokaż lub Ukryj mapowanie przeglądów. Użytkownik może również powiększyć lub pomniejszyć, przepływ pracy za pomocą skrótów klawiaturowych CTRL ++ i CTRL +-.  

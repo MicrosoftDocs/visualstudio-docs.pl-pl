@@ -1,27 +1,22 @@
 ---
 title: Kończenie i odłączanie | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debug engines, detaching from programs
 ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b1641a9a44a3f37b07e8192169e7301153881484
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d92fe88826baf19ba66b200990aee7797e91f87b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793906"
 ---
 # <a name="termination-and-detaching"></a>Kończenie i odłączanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,4 +30,3 @@ Poniżej opisano normalne zakończenie.
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

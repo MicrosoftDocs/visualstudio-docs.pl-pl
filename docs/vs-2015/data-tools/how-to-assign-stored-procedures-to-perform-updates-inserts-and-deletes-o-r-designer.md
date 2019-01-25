@@ -1,23 +1,20 @@
 ---
 title: 'Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (Projektant O-R) | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 09c1beaa38cff27917263f6efa8219c1dc590daa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782066"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

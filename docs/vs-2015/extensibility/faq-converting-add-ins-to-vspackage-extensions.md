@@ -1,26 +1,21 @@
 ---
-title: 'Często zadawane pytania: Konwertowanie dodatków na rozszerzenia pakietu VSPackage | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796049"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące jak konwertować dodatek programu Visual Studio rozszerzenia VSIX.  
@@ -57,7 +52,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
   
      Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.  
   
-     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien zostać wyświetlony komunikat: **wewnątrz TestVSPackagePackage.MenuItemCallback()**.  
+     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
  Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:  
@@ -111,7 +106,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
   
 1. Utwórz projekt VSIX z elementem projektu pakietu Visual Studio. (Aby uzyskać instrukcje to zrobić, zobacz [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Wystarczy dodać atrybut **pakiet rozszerzeń Visual Studio** zamiast tego elementu projektu.) Nazwij projekt VSIX **TestAutoload**.  
   
-2. Otwórz TestAutoloadPackage.cs. Znajdź wiersz, w którym jest zadeklarowana w klasie pakietu:  
+2. Open TestAutoloadPackage.cs. Znajdź wiersz, w którym jest zadeklarowana w klasie pakietu:  
   
    ```csharp  
    public sealed class <name of your package>Package : Package  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

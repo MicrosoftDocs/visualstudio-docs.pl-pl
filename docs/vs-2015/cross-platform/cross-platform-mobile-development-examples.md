@@ -1,27 +1,22 @@
 ---
 title: Przykłady programowania aplikacji mobilnych na wiele Platform | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783765"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Przykłady programowania międzyplatformowych aplikacji mobilnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Kompletne przykłady, których można użyć, aby dowiedzieć się więcej z kil
   Aby otworzyć jeden z przykładów w programie Visual Studio, Pobierz plik zip, a następnie otwórz **właściwości** strony pobranego pliku w Eksploratorze. Wybierz **odblokowanie** przycisk, a następnie wybierz pozycję **OK**. Wyodrębnij zawartość pliku zip w dogodnym miejscu, a następnie otwórz folder języka C++ w przykładzie wyodrębniony i Otwórz plik rozwiązania.  
   
   Aby stworzyć próbkę, naciśnij klawisz F7 lub na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.
-

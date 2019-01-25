@@ -1,27 +1,22 @@
 ---
 title: Wybór obiektów kontekstu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794434"
 ---
 # <a name="selection-context-objects"></a>Obiekty kontekstu wyboru
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ ms.locfileid: "51769397"
  [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Typy projektów](../../extensibility/internals/project-types.md)
-

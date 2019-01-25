@@ -1,14 +1,9 @@
 ---
 title: 'DA0011: Kosztowna funkcja CompareTo | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0011
 - vs.performance.rules.DAExpensiveCompareTo
@@ -18,18 +13,18 @@ ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af5797a9e3939d3163d6d1cee9719f38036543ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06e723fc30bfde69344218beaca4e1c0b3c5d742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804166"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Expensive CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Kosztowna funkcja CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0011: kosztowna funkcja CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA0011: Kosztowna funkcja CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) w witrynie docs.microsoft.com.  
   
 |||  
 |-|-|  
@@ -47,4 +42,3 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [DA001
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Zmniejsz złożoność CompareTo — metoda.
-

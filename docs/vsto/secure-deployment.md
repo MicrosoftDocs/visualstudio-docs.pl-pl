@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - ClickOnce deployment [Office development in Visual Studio], security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40428d36648e159bd8fa90c2680b660b2112ef5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a334b9eab9fb9b859d45eda4419cdfdcde4b44fc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827930"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875644"
 ---
 # <a name="secure-deployment"></a>Zabezpieczanie wdrożenia
   Podczas tworzenia rozwiązań pakietu Office, komputer deweloperski jest aktualizowany automatycznie uruchamianie kodu w projekcie do uruchomienia. Jednak podczas wdrażania rozwiązania, należy podać dowód, na którym można oprzeć decyzji o zaufaniu rozwiązania przy użyciu certyfikatu podpisywania lub używając [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucz monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -34,7 +34,7 @@ ms.locfileid: "53827930"
   
 - **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
-- **Folderze**  
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
   
   Aby uniemożliwić uruchamianie kodu rozwiązań pakietu Office, należy utworzyć `Disabled` wpis w co najmniej jeden z tych kluczy rejestru i określ jedną z następujących typów danych i wartości dla `Disabled`:  
   

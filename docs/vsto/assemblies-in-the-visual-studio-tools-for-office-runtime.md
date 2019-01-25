@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a992621bc3311fa6dd9ca2703c00aa06d5998494
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d636b81c1080c9439f37fe6e53f7cfbff170ad93
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838862"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864023"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools for Office runtime
   Podczas tworzenia projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zestawów, które są używane dla tego typu projektu oraz docelowego środowiska .NET Framework projektu. Istnieją różne zestawy w rozszerzeniach pakietu Office, programu .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby uzyskać więcej informacji na temat rozszerzeń pakietu Office, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).  

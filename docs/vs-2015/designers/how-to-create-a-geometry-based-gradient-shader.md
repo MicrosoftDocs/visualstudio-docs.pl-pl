@@ -1,27 +1,22 @@
 ---
-title: 'Porady: tworzenie cieniowania gradientu geometrycznego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Tworzenie cieniowania gradientu geometrycznego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797540"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradientu geometrycznego Shader Designer i język programu do cieniowania wykres kierowany. Ten program do cieniowania można skalować stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.  
@@ -70,19 +65,16 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradient
   
  Niektórych kształtów udostępniać lepsze wersje zapoznawcze niektórych programów do cieniowania. Aby dowiedzieć się, jak wyświetlić podgląd programów do cieniowania w projektancie programu do cieniowania, zobacz **Podgląd cieniowania** w [Shader Designer](../designers/shader-designer.md)  
   
- Poniższa ilustracja przedstawia programu do cieniowania, który jest opisany w tym dokumencie dotyczą w scenie 3-D, która została przedstawiona w [instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokości punktów na całym świecie.  
+ Poniższa ilustracja przedstawia programu do cieniowania, który jest opisany w tym dokumencie dotyczą w scenie 3-D, która została przedstawiona w [jak: Modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokości punktów na całym świecie.  
   
  ![Efekt gradientu stosowane do 3&#45;modelu terenu D](../designers/media/digit-gradient-effect-result.png "cyfry-gradientu — efekt — wynik")  
   
- Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Aby uzyskać więcej informacji dotyczących sposobu stosowania programu do cieniowania do modelu 3-D, zobacz [jak: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   
- [Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)   
- [Porady: tworzenie cieniowania tekstury skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [Instrukcje: Stosowanie cieniowania do modelu 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Instrukcje: Eksport cieniowania](../designers/how-to-export-a-shader.md)   
+ [Instrukcje: Model terenu 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Instrukcje: Tworzenie cieniowania tekstury skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Projektant programu do cieniowania](../designers/shader-designer.md)   
  [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)
-
-
-

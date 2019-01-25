@@ -1,13 +1,9 @@
 ---
 title: Dokumentacja dotycząca szablonów | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, reference
 - reference, Visual Studio templates
@@ -15,13 +11,13 @@ ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a9d0e4df6252e05695ed1dcbced84ae7c0e81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801144"
 ---
 # <a name="visual-studio-template-reference"></a>Odwołanie do szablonu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +32,7 @@ Poniższe łącza zawierają informacje na temat różnych aspektów [!INCLUDE[v
  <xref:Microsoft.VisualStudio.TemplateWizard> W tym artykule opisano <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu i powiązanych typów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
+ [Instrukcje: Create Project Templates](../ide/how-to-create-project-templates.md)
 
  [Instrukcje: Tworzenie szablonów elementu](../ide/how-to-create-item-templates.md)
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8360194e9efc59634162781fd3b4e0787c1c3260
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909115"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870168"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   W przypadku wdrażania dodatków narzędzi VSTO, które są tworzone za pomocą programu Visual Studio, należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru Podaj informacje, które umożliwiają aplikacji Microsoft Office wykrycie i załadowanie dodatku narzędzi VSTO.  
@@ -59,15 +59,15 @@ ms.locfileid: "53909115"
   
 |Wersja pakietu Office|Ścieżka konfiguracji|  
 |--------------------|------------------------|  
-|32-bitowa|*Główny*\Software\Microsoft\Office\\*Nazwa aplikacji*\Addins\\*identyfikator dodatku*|  
-|64-bitowy|*Główny*\Software\Wow6432Node\Microsoft\Office\\*Nazwa aplikacji*\Addins\\*identyfikator dodatku*|  
+|32-bitowa|*Root*\Software\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
+|64-bitowy|*Root*\Software\Wow6432Node\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
   
- **Programu Visio**  
+ **Visio**  
   
 |Wersja pakietu Office|Ścieżka konfiguracji|  
 |--------------------|------------------------|  
-|32-bitowa|*Główny*\Software\Microsoft\Visio\Addins\\*identyfikator dodatku*|  
-|64-bitowy|*Główny*\Software\Wow6432Node\Visio\Addins\\*identyfikator dodatku*|  
+|32-bitowa|*Root*\Software\Microsoft\Visio\Addins\\*add-in ID*|  
+|64-bitowy|*Root*\Software\Wow6432Node\Visio\Addins\\*add-in ID*|  
   
  W poniższej tabeli wymieniono wpisy w tym kluczu rejestru.  
   
@@ -81,7 +81,7 @@ ms.locfileid: "53909115"
 ###  <a name="OutlookEntries"></a> Wpisy rejestru dla regionów formularza programu Outlook  
  Jeśli tworzysz region formularza niestandardowego w dodatku narzędzi VSTO dla programu Outlook, wpisy rejestru dodatkowe są używane do rejestrowania regionu formularza programu Outlook. Te wpisy są tworzone w kluczu rejestru różnych dla każdej klasy wiadomości, który obsługuje regionu formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *głównego* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.  
   
- *Główny*\Software\Microsoft\Office\Outlook\FormRegions\\*message — klasa*  
+ *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*  
   
  Podobnie jak inne wpisy rejestru współużytkowane przez wszystkie dodatki narzędzi VSTO dla programów, Visual Studio tworzy formularz region wpisy rejestru na komputerze deweloperskim podczas kompilowania projektu. Jeśli używasz technologii ClickOnce do wdrażania dodatku narzędzi VSTO dla programów wpisy rejestru są tworzone automatycznie na komputerze użytkownika końcowego. Jeśli używasz Instalatora Windows do wdrożenia dodatku narzędzi VSTO dla programów, należy skonfigurować projekt InstallShield Limited Edition, aby utworzyć wpisy rejestru na komputerze użytkownika końcowego.  
   

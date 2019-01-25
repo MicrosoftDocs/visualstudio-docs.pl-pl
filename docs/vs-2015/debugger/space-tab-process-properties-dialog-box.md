@@ -1,27 +1,22 @@
 ---
 title: Karta przestrzeń, okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2cab2263da44ba46d7fbbe301f61e51b5308ba73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800065"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Karta Przestrzeń, okno dialogowe właściwości procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ Użyj **miejsca** kartę do zbadania przestrzeni adresowej procesu. Aby wyświet
 |**Tylko do odczytu w bajtach**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, które mogą być wykonywane, a także odczytu.|  
 |**Bajty odczytu / zapisu**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, która umożliwia odczytywanie i zapisywanie.|  
 |**Zapis / kopia bajtów**|Dla wybranej kategorii sumę wszystkich przestrzeni adresowej, która umożliwia udostępnianie pamięci, do odczytu, ale nie do zapisu. Procesy odczytują tę pamięć, mogą współużytkować ten sam pamięci. Jednak gdy procesy chce mieć odczyt/zapis dostęp do tej pamięci współużytkowanej, kopię pamięci składa się do zapisu.|
-
-
-

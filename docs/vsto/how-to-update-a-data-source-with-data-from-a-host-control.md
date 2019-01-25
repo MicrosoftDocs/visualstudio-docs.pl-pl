@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], updating a data source from a document
 - host controls [Office development in Visual Studio], data source updates
 - Office documents [Office development in Visual Studio, data sources
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f35b5a67ce43d2e727aa052a8165fbdf7123eda0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933025"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863122"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Instrukcje: Aktualizowanie źródła danych danymi z kontrolki hosta
   Można powiązać kontrolki hosta ze źródłem danych i zaktualizować źródło danych ze zmianami, które zostały wprowadzone do danych w formancie. Istnieją dwa podstawowe kroki w ramach tego procesu:  

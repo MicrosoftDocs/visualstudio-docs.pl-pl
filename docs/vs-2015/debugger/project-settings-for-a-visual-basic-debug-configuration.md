@@ -1,14 +1,9 @@
 ---
 title: Ustawienia dla konfiguracji debugowania w języku Visual Basic projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vbProjectPropertiesDebug
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f3b221af6267966a9621d7926c3aeb5aa684cdad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 390742c7b9dea5b39432a5998ec367555700d890
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781457"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Można zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../includes/vbprvb-md.
 |Ustawienie|Opis|  
 |-------------|-----------------|  
 |**Konfiguracja**|Ustawia tryb do kompilowania aplikacji. Można wybrać jedną z **aktywna (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**.|  
-|**Akcja uruchamiania**|Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [NIB sposobu: Ustaw projekty startowe](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web.|  
+|**Akcja uruchamiania**|Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [NIB jak: Ustaw projekty startowe](http://msdn.microsoft.com/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web.|  
 |**Argumenty wiersza polecenia**|Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu, określone w uruchomienia programu zewnętrznego. Jeśli akcja uruchamiania jest ustawiony na początkowy adres URL, argumenty wiersza polecenia są ignorowane.|  
 |**Katalog roboczy**|Określa katalog roboczy debugowanego programu. W [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z. Domyślny katalog roboczy jest \bin\Debug lub \bin\Release, w zależności od bieżącej konfiguracji.|  
 |**Użyj komputera zdalnego**|Gdy pole wyboru jest zaznaczone, zdalne debugowanie jest włączone. W polu tekstowym, możesz wpisać nazwę komputera zdalnego, gdy aplikacja zostanie uruchomiona na potrzeby debugowania lub [nazwy serwera Msvsmon](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Lokalizacja pliku EXE na komputerze zdalnym jest określona przez właściwość ścieżki wyjściowej na karcie kompilacji. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym.|  
@@ -66,6 +61,3 @@ Można zmienić ustawienia projektu dla [!INCLUDE[vbprvb](../includes/vbprvb-md.
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
-
-
-

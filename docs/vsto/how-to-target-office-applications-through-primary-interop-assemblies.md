@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Office primary interop assemblies in Visual Studio, adding references to
 - Office applications [Office development in Visual Studio], automating
 - application development [Office development in Visual Studio], automating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94bc4add4cfbc61e79ded57ee43c41c88ccb37e7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873434"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
   Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:  

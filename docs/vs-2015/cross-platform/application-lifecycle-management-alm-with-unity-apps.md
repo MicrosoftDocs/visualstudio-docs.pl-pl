@@ -1,25 +1,20 @@
 ---
 title: Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778594"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
  W poniższych tabelach umożliwia określenie, jak funkcje programu Visual Studio ALM zastosowania lub nie mają zastosowania podczas pracy z użyciem aparatu Unity. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.  
   
 ## <a name="agile-tools"></a>Narzędzia agile  
- Opis łącza: **[pracy](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)  
+ Opis łącza: **[Praca](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)  
   
  Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.  
   
@@ -45,9 +40,9 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |Tworzenie raportów i wizualizowanie postępu|Tak||  
   
 ## <a name="modeling"></a>Modelowanie  
- Opis łącza:  **[analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**  
+ Opis łącza: **[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)**  
   
- Komentarz ogólny: Mimo że te funkcje projektu są albo, niezależnie od języka programowania, lub pracować z języków .NET, takich jak C#, działają one na paradygmatu tradycyjnych aplikacji za pomocą hierarchii obiektów i relacji klas. Projektowanie gier w ramach aparatu Unity pociąga za sobą paradygmatu różne, a mianowicie relacje obiektów graficznych, dźwięki, programów do cieniowania, skrypty i tak dalej. Z tego powodu programu Visual Studio, diagram modelowania narzędzia nie są szczególnie istotne dla całego projektu środowiska Unity. Prawdopodobnie można ich użyć do zarządzanie relacjami w skrypty języka C#, ale to tylko jednej części całości.  
+ Komentarz ogólny: Chociaż te funkcje projektu są albo, niezależnie od języka programowania lub pracy w językach .NET, takich jak C#, działają na paradygmatu tradycyjnych aplikacji za pomocą hierarchii obiektów, a klasy relacji. Projektowanie gier w ramach aparatu Unity pociąga za sobą paradygmatu różne, a mianowicie relacje obiektów graficznych, dźwięki, programów do cieniowania, skrypty i tak dalej. Z tego powodu programu Visual Studio, diagram modelowania narzędzia nie są szczególnie istotne dla całego projektu środowiska Unity. Prawdopodobnie można ich użyć do zarządzanie relacjami w skrypty języka C#, ale to tylko jednej części całości.  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
@@ -79,7 +74,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 3.  Zasobów binarnych w projekcie Unity — przykład tekstury lub pliki audio — może zajmować dużo pamięci. Różnych systemów kontroli źródła, takich jak Git przechowywać unikatową kopię pliku dla każdej zmiany, które wykonano, nawet wtedy, gdy zmiana ta dotyczy tylko niewielką część pliku. Może to spowodować repozytorium Git, aby stać się przeglądarek. Aby rozwiązać ten problem, deweloperów Unity często zdecydować się na dodawanie tylko końcowej zasobów do swojego repozytorium i korzysta z różnych metod na przechowywanie historii pracy w ich zasobów, takich jak OneDrive, DropBox lub git załącznika. Ta metoda działa, ponieważ takie zasoby zwykle nie trzeba być poddany kontroli wersji, wraz ze zmianami kodu źródłowego. Deweloperzy zwykle także ustawić tryb serializacji zasobów w edytorze projektu na życie tekst, aby przechowywać pliki sceny w tekstu, a nie w formacie binarnym, który pozwala na scalenia w kontroli źródła. Aby uzyskać więcej informacji, zobacz [ustawienia edytora](http://docs.unity3d.com/Manual/class-EditorManager.html) (dokumentacja aparatu Unity).  
   
 ## <a name="build"></a>Kompilacja  
- Opis łącza:  **[kompilacji](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Opis łącza: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
@@ -90,7 +85,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań w przypadku repozytorium TFVC, tylko wtedy, gdy usługa Git działa w modelu żądania ściągnięcia, a nie do zaewidencjonowania.|  
   
 ## <a name="testing"></a>Testowanie  
- Opis łącza:  **[testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Opis łącza: **[Testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
@@ -102,7 +97,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Nie|Kodowane testy interfejsu użytkownika zależą od formantów do odczytu w Interfejsie użytkownika aplikacji; Aplikacje Unity są graficznych i dlatego zawartość nie jest do odczytu za pomocą narzędzi testu kodowanego interfejsu użytkownika.|  
   
 ## <a name="improve-code-quality"></a>Poprawianie jakości kodu  
- Opis łącza:  **[poprawić jakość kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Opis łącza: **[Poprawianie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
@@ -113,7 +108,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |[Analizowanie problemów pamięci .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w ramy Mono (jako używane przez środowisko Unity) do profilowania. Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|  
   
 ## <a name="release-management"></a>Release Management  
- Opis łącza:  **[Automatyzacja wdrażania przy użyciu rozwiązania Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Opis łącza: **[Automatyzacja wdrażania przy użyciu rozwiązania Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
@@ -122,11 +117,8 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami.  Zobacz [rozszerzenia programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą platformy HockeyApp  
- Opis łącza:  **[monitorowanie za pomocą platformy HockeyApp](https://www.hockeyapp.net/features/)**  
+ Opis łącza: **[Monitorowanie za pomocą platformy HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
 |Awarii dystrybucji analizy i telemetrię oraz wersji beta|Tak|Platforma HockeyApp jest szczególnie przydatne w przypadku obsługi dystrybucja wersji beta i uzyskiwanie raportów o awarii.<br /><br /> Dane telemetryczne z skrypty języka C# należy można użyć dowolnej architektury analizy, pod warunkiem, że działa na wersję platformy .NET, który jest używany przez aparatu Unity. Jednak dzięki temu analizy tylko w ramach skryptów gier i nie głębiej w aparacie Unity. Obecnie nie jest brak wtyczki dla usługi Application Insights, ale takie jak wtyczki są dostępne dla innych rozwiązań do analizy [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) i [usługi Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi, takie jak Analytics Unity, które zrozumienie natury projektów aparatu Unity będzie, oczywiście zapewniają analizy znacznie bardziej opisowe niż ogólny struktur.|
-
-
-

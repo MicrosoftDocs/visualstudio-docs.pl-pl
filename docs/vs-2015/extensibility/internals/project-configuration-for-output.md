@@ -1,26 +1,21 @@
 ---
 title: Konfiguracja danych wyjściowych projektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794851"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ Grupy danych wyjściowych
  [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
  [Obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md)   
  [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md)
-

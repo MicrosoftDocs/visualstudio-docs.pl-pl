@@ -1,13 +1,9 @@
 ---
 title: Co&#39;s nowego w dziedzinie projektowania
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
+ms.prod: visual-studio-dev14
 ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
@@ -16,13 +12,13 @@ ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5b824316c8268122d20144d48e51620ac8bbb6b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 496f263c360a45bd096f1f9fb69c330945cfe3c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758250"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

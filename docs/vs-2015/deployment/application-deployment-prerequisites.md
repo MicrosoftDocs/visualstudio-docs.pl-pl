@@ -1,14 +1,9 @@
 ---
 title: Wymagania wstępne wdrożenia aplikacji | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776234"
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,14 +47,14 @@ Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyśl
   
 - Minimalna wersja wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w deklaracji zależności zestawu w manifeście zestawu.  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [jak: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów, a następnie ponownie podpisać manifesty aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów, a następnie ponownie podpisać manifesty aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [jak: Ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Jeśli używasz programu Visual Studio i technologii ClickOnce do wdrażania aplikacji, pakietów programu inicjującego, które są wybrane domyślnie są zależne od wersji programu .NET Framework w rozwiązaniu. Jednak jeśli zmienisz .NET Framework w wersji docelowej, należy zaktualizować opcje w **wstępnie wymagane składniki, okno dialogowe** ręcznie.  
   
-|Docelowy .NET Framework|Wybrany program inicjujący pakietów|  
+|Target .NET Framework|Wybrany program inicjujący pakietów|  
 |---------------------------|------------------------------------|  
 |.NET Framework 4 Client Profile|.NET Framework 4 Client Profile<br /><br /> Instalator Windows 3.1|  
 |Program .NET Framework 4|Program .NET Framework 4<br /><br /> Instalator Windows 3.1|  
@@ -84,7 +79,7 @@ Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyśl
 |**— adres url, - componentsurl**|Pokazuje adres URL przechowywanych i składników adresów url dla tego zestawu w górę.|  
 |**-url =** `location`|Ustawia adres URL, gdzie będzie szukał Setup.exe [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.|  
 |**-componentsurl =** `location`|Ustawia adres URL, w którym Setup.exe będzie szukał zależności, takie jak [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|**-homesite =** `true`**&#124;** `false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. Ustawienie to zastępuje **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**.|  
+|**-homesite=** `true` **&#124;** `false`|Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. Ustawienie to zastępuje **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Obsługa systemu operacyjnego  
  Program inicjujący programu Visual Studio nie jest obsługiwana w systemie Windows Server 2008 Server Core lub systemu Windows Server 2008 R2 Server Core, które zapewniają środowisko niski konserwacji serwera z ograniczoną funkcjonalnością. Na przykład opcja instalacji Server Core obsługuje tylko profilu platformy .NET Framework 3.5 Server Core, więc nie można uruchomić funkcji programu Visual Studio, które są zależne od pełnego środowiska .NET Framework.  
@@ -92,6 +87,3 @@ Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyśl
 ## <a name="see-also"></a>Zobacz też  
  [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)
-
-
-

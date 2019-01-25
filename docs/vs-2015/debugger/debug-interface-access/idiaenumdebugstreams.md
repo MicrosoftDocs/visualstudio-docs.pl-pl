@@ -1,14 +1,9 @@
 ---
-title: Idiaenumdebugstreams — | Dokumentacja firmy Microsoft
-ms.custom: ''
+title: IDiaEnumDebugStreams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9e1224905a22d5679efb4ff5df6107502ab8a28b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b56170ce1551f4443d511d4b6fde6c5d177d9c21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785156"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,12 +85,9 @@ void DumpAllDebugStreams( IDiaSession* pSession)
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
+ [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)
-
-
-

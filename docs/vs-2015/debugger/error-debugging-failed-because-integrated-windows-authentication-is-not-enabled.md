@@ -1,14 +1,9 @@
 ---
 title: 'Błąd: Debugowanie nie powiodło się, ponieważ nie włączono uwierzytelniania zintegrowanego Windows | Dokumentacja firmy Microsoft'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
 dev_langs:
@@ -23,15 +18,15 @@ ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b922e8e8fde8b185207810d107afb9a9c5a6e05
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 11b4834cfe6c87f3d6093a38c7a97fe0da67aab4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757260"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797496"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: Debugowanie nie powiodło się, ponieważ nie włączono uwierzytelniania zintegrowanego Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uwierzytelnianie użytkownika, która wnioskowała o debugowaniu została uniemożliwiona przez błąd uwierzytelniania. Taka sytuacja może wystąpić przy próbie wkraczać do aplikacji sieci Web lub usługi sieci Web XML. Jedną z przyczyn tego błędu jest to zintegrowane uwierzytelnianie Windows nie jest włączona. Aby ją włączyć, wykonaj kroki opisane w "Aby włączyć zintegrowane uwierzytelnianie Windows".  
@@ -123,9 +118,6 @@ Uwierzytelnianie użytkownika, która wnioskowała o debugowaniu została uniemo
 10. Zamknij **Internet Information Services (IIS) Manager** okna.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Uwierzytelnianie szyfrowane firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
  [Uruchamianie aplikacji sieci Web w systemie Windows Vista z usługami IIS 7.0 i Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
-
-
-
