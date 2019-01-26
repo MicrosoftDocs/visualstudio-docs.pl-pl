@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb1c2d460e0b70621924df4d7c32e478aa8a2e86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916049"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003158"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
 
@@ -61,7 +61,7 @@ W tym samouczku zaczynać prosty projekt zawierający pojedynczy pusty plik kodu
 
     (1) wyróżniony pogrubioną czcionką jest projektu, przy użyciu nazwę nadaną w **nowy projekt** okna dialogowego. Na dysku, ten projekt jest reprezentowany przez *.pyproj* pliku w folderze projektu.
 
-    (2) przy najwyższym poziomie jest *rozwiązania*, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów. Na przykład jeśli piszesz rozszerzenie języka C++ dla aplikacji języka Python projektu C++ może znajdują się w tym samym rozwiązaniu. Rozwiązanie może również zawierać projekt usługi sieci web, wraz z projektów dla programów dedykowanych testu. 
+    (2) przy najwyższym poziomie jest *rozwiązania*, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów. Na przykład jeśli piszesz rozszerzenie języka C++ dla aplikacji języka Python projektu C++ może znajdują się w tym samym rozwiązaniu. Rozwiązanie może również zawierać projekt usługi sieci web, wraz z projektów dla programów dedykowanych testu.
 
     (3) w ramach projektu Zobacz pliki źródłowe, w tym przypadku jest tylko jeden *PY* pliku. Wybranie pliku powoduje wyświetlenie jego właściwości w **właściwości** okna. Dwukrotne kliknięcie pliku otwierany w sposób, który jest odpowiedni dla tego pliku.
 

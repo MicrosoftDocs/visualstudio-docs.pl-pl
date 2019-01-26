@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3bec4b99998e2e3c581dd15e0311e23e93779c17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5018216157334636ee7a6e8e057efae13b0396b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010132"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET
 Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody Instrumentacji narzędzi profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i danych o okresie istnienia obiektu platformy .NET z dynamicznie kompilowany [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.  
@@ -48,7 +48,7 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------|--------------------------------------|
-   | **xmlns** | **Nazwa urn: schemas-microsoft-com:asm.v1** |
+   | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
 
 
 4. Dodaj **dependentAssembly** element jako element podrzędny **assemblyBinding** elementu.  
@@ -64,7 +64,7 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
    |--------------------| - |
    | **Nazwa** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **Kultury** | **Niezależny od** |
+   | **Kultury** | **Neutral** |
 
 
 7. Dodaj **codeBase** element jako element podrzędny elementu **dependentAssembly** elementu.  
@@ -112,7 +112,7 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
-    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, wersja = 10.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a**|  
+    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
 
 ```xml  
     <configuration>  
@@ -144,7 +144,7 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------| - |
    | **Klucz** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **value** | `PerformanceToolsFolder` **\VSInstr.exe** |
+   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 
 4. Dodaj kolejną **Dodaj** element jako element podrzędny elementu **appSettings** elementu.  

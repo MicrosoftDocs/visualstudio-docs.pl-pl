@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e6cb50e3b62380ff8de191de153ff4edd0545de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877422"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982991"
 ---
 # <a name="just-my-code-threads-view"></a>Tylko mój kod (Widok wątków)
 Jeśli wybierzesz tę opcję, będzie filtrować stos wywołań, aby pokazać tylko Twój kod i jeden poziom funkcji o nazwie.  

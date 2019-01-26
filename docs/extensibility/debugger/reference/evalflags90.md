@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 | Dokumentacja firmy Microsoft
+title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18f077bff6733467dbdf885be480fb4346edd513
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 783ffb1b0fe101a0f2f70eac9c824c213db34b62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833183"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992272"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Wylicza prawidłowe wartości dla flagi sterujące Obliczanie wyrażenia. To wyliczenie rozszerza [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenia.  

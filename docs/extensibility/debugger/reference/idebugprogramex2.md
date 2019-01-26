@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2 | Dokumentacja firmy Microsoft
+title: IDebugProgramEx2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3131dae9d9bf715d3927f9654224cab3d6a36d53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c30be6fb9bd87972c3a3d186acc1fae9568ccc20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011965"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 Ten interfejs umożliwia sesji debugowania manager (SDM) Dołącz do programu i przełączyć węzeł program skojarzony z programu.  

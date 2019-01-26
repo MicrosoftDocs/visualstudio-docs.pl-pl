@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f83e5f1c9e5084b51dc1feb5ca31b20ff6bf6e97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837280"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019479"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 Pobiera numery wierszy w ramach określonego compiland — i identyfikatory plików źródłowych.  
@@ -48,5 +48,5 @@ HRESULT findLines ( 
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

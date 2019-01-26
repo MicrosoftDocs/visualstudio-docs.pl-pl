@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b069e1ed40c4bd110cba87886ea21ea90a96774b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006167"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 
@@ -58,7 +58,7 @@ Gdy TableAdapters są skonstruowane z **Projektanta obiektów Dataset**, klasy T
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
 
-## <a name="associated-datatable-schema"></a>Skojarzonego schematu elementu DataTable
+## <a name="associated-datatable-schema"></a>Associated DataTable schema
 
 Gdy utworzysz TableAdapter, użyj początkowego zapytania lub skojarzonej procedurę przechowywaną, aby zdefiniować schemat TableAdapter <xref:System.Data.DataTable>. Uruchomienie tego początkowego zapytania lub procedurę składowaną przez wywołanie metody TableAdapter `Fill` — metoda (która wypełnia TableAdapter skojarzonej <xref:System.Data.DataTable>). Wszelkie zmiany wprowadzone do zapytanietableadapter główne są odzwierciedlane w schemat tabeli powiązane dane. Na przykład usunięcie kolumny z główne zapytanie spowoduje również usunięcie kolumny z tabeli powiązane dane. Jeśli żadnych dodatkowych kwerend w metodzie TableAdapter używa instrukcji SQL, które zwracają kolumn, które nie znajdują się w głównym zapytania, Projektant próbuje synchronizować zmiany kolumn między kwerendy głównych i dodatkowych kwerend.
 

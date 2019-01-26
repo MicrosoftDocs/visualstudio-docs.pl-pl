@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019362"
 ---
 # <a name="windows-view"></a>Widok okien
 Przy pierwszym otwarciu programu Spy ++, widok Windows wyświetla drzewo wszystkich okien i formantów w systemie. Nazwa okna dojścia i klasy są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne okna są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchią standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej nadrzędnych.  
@@ -35,7 +35,7 @@ Wyświetl Windows Spy ++
  [Instrukcje: Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md)  
  Pokazuje, jak to narzędzie skanowania systemu windows do właściwości lub komunikaty.  
   
- [Instrukcje: Wyszukiwanie okna w widoku Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ [Instrukcje: Wyszukiwanie okna w widoku okien](../debugger/how-to-search-for-a-window-in-windows-view.md)  
  Wyjaśnia, jak można odnaleźć określonego okna w widoku Windows.  
   
  [Instrukcje: Wyświetlanie właściwości okna](../debugger/how-to-display-window-properties.md) m  

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: bcb25566d530f85d5ac9a8d1a5f32c770a07bf21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c21fbbee529cc67f31df98f4a441fdefa3bae6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020116"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 

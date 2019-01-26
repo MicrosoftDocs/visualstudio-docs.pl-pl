@@ -1,5 +1,5 @@
 ---
-title: StartProfile | Dokumentacja firmy Microsoft
+title: StartProfile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b61f52cda107a05d76c4642ca5775e8800bfb8dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f656d0d669fbe9186412805b145b02bdff8e22da
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982445"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` Funkcja ustawia licznik do 1 (funkcja włączona) dla określonego poziomu profilowania.  

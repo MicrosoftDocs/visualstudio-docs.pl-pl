@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a95588be4f0a1f37f45a731786ea410a0300f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c97d56b5ff47652ae04d2cb2e37105b08a00612
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996002"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Pobiera różne typu zdefiniowanego przez użytkownika (UDT).  
@@ -41,5 +41,5 @@ HRESULT get_udtKind ( 
 >  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [UdtKind, wyliczenie](../../debugger/debug-interface-access/udtkind.md)

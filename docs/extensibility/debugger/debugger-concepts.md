@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99ecd5d685592a252a185feaedc75a5566f1c5ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca5beb3d3a1ebffe33b8bcf2d7c1e4d546dd1ba1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857494"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976579"
 ---
 # <a name="debugger-concepts"></a>Pojęcia dotyczące debugera
 Aby utworzyć pakiet debugowania programu Visual Studio, musisz należy zapoznać się z architektury koncepcji używanych podczas projektowania pakietu.  

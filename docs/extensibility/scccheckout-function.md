@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728382594b1682f93ba1823558f3f9f02689be1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a01ee4e4010782570d267d5b2e35d56fedb45a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984980"
 ---
 # <a name="scccheckout-function"></a>Funkcja SccCheckout
 Biorąc pod uwagę listę w pełni kwalifikowanej nazwy, ta funkcja wyewidencjonowuje je na dysku lokalnym. Komentarza ma zastosowanie do wszystkich plików, które są wyewidencjonowane. Argument komentarz może być `null` ciągu.  

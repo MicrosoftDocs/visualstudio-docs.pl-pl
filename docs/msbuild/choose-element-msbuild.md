@@ -16,26 +16,26 @@ helpviewer_keywords:
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 227cf3ff0f065c535da10d23363044f33972a28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9769cc862df3dd7c9502e84a8638ff051f5b330
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995807"
 ---
 # <a name="choose-element-msbuild"></a>Choose — element (MSBuild)
 Ocenia elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementy i/lub `PropertyGroup` elementy do oceny.  
 
  \<Project>  
- \<Wybierz >  
+ \<Choose>  
  \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
  ...  
  \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Choose>  
  ...  
 
 ## <a name="syntax"></a>Składnia  

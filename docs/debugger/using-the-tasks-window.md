@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227775"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993013"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Korzystanie z okna zadań (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
 |**AsyncState**|Dla kodu zarządzanego, stan zadania. Domyślnie ta kolumna jest ukryta. Aby wyświetlić tę kolumnę, otwórz menu kontekstowe dla jednego z nagłówków kolumn. Wybierz **kolumn**, **AsyncState**.|
 |**Nadrzędny**|Identyfikator zadania, które utworzył to zadanie. Jeśli to pole jest puste, zadania jest Brak elementu nadrzędnego. Dotyczy tylko programów zarządzanych.|
 |**Wątek przypisania**|Identyfikator i nazwa wątku, na którym działa zadanie.|
-|**Domeny aplikacji**|Dla kodu zarządzanego, domeny aplikacji, w którym zadanie jest wykonywane.|
+|**AppDomain**|Dla kodu zarządzanego, domeny aplikacji, w którym zadanie jest wykonywane.|
 |**task_group**|Dla kodu natywnego adresu [task_group](/cpp/parallel/concrt/reference/task-group-class) obiekt, który zaplanowane zadanie. Dla agentów asynchronicznych i zadań lekkich ta kolumna jest równa 0.|
 |**Proces**|Identyfikator procesu, który zadanie jest uruchomione.|
 

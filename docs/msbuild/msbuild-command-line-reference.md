@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 583f6558bb9af35f71e98d61ec78d0b90429f27b
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: fd1e81a065a15a1a269d2d2f6bdd86b0b323dc95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010106"
 ---
 # <a name="msbuild-command-line-reference"></a>Dokumentacja wiersza polecenia programu MSBuild
 Kiedy używasz *MSBuild.exe* do tworzenia pliku projektu lub rozwiązania, mogą obejmować kilka przełączników, aby określić różne aspekty procesu.  

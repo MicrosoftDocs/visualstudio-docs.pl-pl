@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67140b4c-7125-4895-932d-42412326da29
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b12926fb1fb79ee02dc934f808b6e5ba8f742e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ad89beb8672c8f8cf2d6d6710ee53dccba5b5ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834090"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000334"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 Pomija określoną liczbę elementów danych ramki w kolejności wyliczenia.  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53d03011b779265f7049bbe50317b31daf064d41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997666"
 ---
 # <a name="debugger-project-settings"></a>Ustawienia projektu debugowania
 Niektóre ustawienia projektu wpływa również na debugowanie. Te ustawienia określają takich zadań jak katalogów, jaki debuger będzie wyglądać na polecenie i argumenty wiersza polecenia używane do uruchomienia programu, a typ informacji o debugowaniu utworzonych dla programu. Możesz zmienić te ustawienia w **stron właściwości** okno dialogowe.  
@@ -32,7 +32,7 @@ Niektóre ustawienia projektu wpływa również na debugowanie. Te ustawienia ok
  [Instrukcje: Określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)  
  W tym artykule opisano ustawienia debugera w **opcje** okno dialogowe.  
   
- [Instrukcje: Ustaw wartość Debug i Release konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Instrukcje: Ustawianie konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)  
  W tym artykule opisano **debugowania** i **wersji** ustawienia oraz sposób przełączać się między nimi.  
   
  [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  

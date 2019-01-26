@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyCreateEvent2 | Dokumentacja firmy Microsoft
+title: IDebugPropertyCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b86ac1ba81a7d203177afdde302e8f32599ea698
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edbd781fbaba285b56afca027aed657ee7585f3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003150"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), podczas tworzenia właściwości, który jest skojarzony z określonym dokumentem.  
@@ -45,7 +45,7 @@ IDebugPropertyCreateEvent2 : IUnknown
  Jeśli właściwość jest konkretnym dokumencie lub skrypt skojarzony z nim, DE może wysyłać to zdarzenie SDM, aby można było zaktualizować **dokumenty skryptów** okna o nazwie dokumentu. Wywoła SDM [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) z argumentem `guidDocument` można pobrać `VARIANT` zawierający [IUnknown](/cpp/atl/iunknown) wskaźnika. Wywoła SDM [QueryInterface](/cpp/atl/queryinterface) tego wskaźnika można pobrać [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejs, który służy do aktualizowania **dokumenty skryptów** okna.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

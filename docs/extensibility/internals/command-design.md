@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4386294f6c2e3b4a3f81b0cf46f8804c53f490d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42b41ee59f842c277400ba03ff682a757d5343e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933891"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009833"
 ---
 # <a name="command-design"></a>Projektowanie poleceń
 Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gdy jest dostępna i jak ma być obsługiwane.  
@@ -68,5 +68,5 @@ Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gd
 |[Wskazówki dotyczące umieszczania poleceń](../../extensibility/internals/command-placement-guidelines.md)|Sugeruje położenie poleceń w środowisku Visual Studio.|  
 |[Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|W tym artykule opisano, jak pakietów VSPackage najlepiej mogą korzystać z architekturą polecenia programu Visual Studio.|  
 |[Domyślne położenie poleceń, grup i narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|W tym artykule opisano, jak pakietów VSPackage najlepiej użyć polecenia, które znajdują się w programie Visual Studio.|  
-|[Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md)|W tym artykule opisano, jak Visual Studio ładuje pakietów VSPackage.|  
+|[Manage VSPackages](../../extensibility/managing-vspackages.md)|W tym artykule opisano, jak Visual Studio ładuje pakietów VSPackage.|  
 |[Pliki tabeli (vsct) polecenia programu Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Informacje na temat opartych na języku XML *vsct* pliki, które są używane do opisywania układ i wygląd poleceń w pakietach VSPackage.|

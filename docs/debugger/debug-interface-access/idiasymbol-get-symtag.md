@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 139a35bd-faeb-4878-be72-394dedfbb18f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb8c758bb9b23951493990ac663398918cd08ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69c8061d8ae19b1d3f22096928bef74a0709a7f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020454"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 Pobiera klasyfikatora typ symbolu.  
@@ -49,5 +49,5 @@ pType->get_symTag( &tag );
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

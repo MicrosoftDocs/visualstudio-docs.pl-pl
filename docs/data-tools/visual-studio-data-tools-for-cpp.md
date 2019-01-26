@@ -6,17 +6,17 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c764887701e00d27123904c45e408101acb39df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895485"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990852"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
 

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d920897c831ca1c92b1db5fe3d649ffd7ee67143
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: c96a52a1aba71af25ff66cacefd34e36d7ec33e4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268776"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992675"
 ---
 # <a name="debugging-options-dialog-box"></a>Debugowanie, opcje ― Okno dialogowe
 **Debugowanie** folder, w **opcje** okno dialogowe na **narzędzia** menu, zawiera następujące stron, które umożliwiają określenie debugera opcje narzędzia.  
