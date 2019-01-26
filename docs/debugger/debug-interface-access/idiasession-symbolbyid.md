@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54bf8c4457ed8a9808ebdbcf96f2a835e6fe8e54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba13c62f5e72e7192572def7b48046be3e1a20c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832128"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964463"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Pobiera symbol według unikatowego identyfikatora.  
@@ -65,5 +65,5 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

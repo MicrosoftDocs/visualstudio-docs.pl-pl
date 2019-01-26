@@ -6,20 +6,20 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: feb5b247bb3e7bb8814946f5648408323a33084c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0e3c148e52de053cce27912305281c115767697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956184"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usługę w tle. Po jego uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  
 
-- Visual Studio 2019 r.: 4024
+- Visual Studio 2019: 4024
 
 - Visual Studio 2017: 4022
 
@@ -27,7 +27,7 @@ Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usł
   
 - Visual Studio 2013: 4018  
   
-- Program Visual Studio 2012: 4016  
+- Visual Studio 2012: 4016  
   
   Innymi słowy numer portu przypisany do zdalnego debugera jest zwiększany przez 2 dla każdej wersji. Możesz ustawić inny numer portu, np. Firma Microsoft wyjaśniono, jak ustawić numery portów w dalszej części tego tematu.  
   

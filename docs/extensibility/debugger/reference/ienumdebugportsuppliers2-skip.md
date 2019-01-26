@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd95d7e9-274f-485d-8bf6-865306ae1b81
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db0f0a6a65386155a0548accae13a39375ac326e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6d410d9356bd4971064866843d3e67599288d78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034535"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 Pomija w ciągu określonej liczby elementów.  

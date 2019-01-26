@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9fca1eedc94aeb327191f44469945f69584500
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1000009e243906daf32fd68b22b5c49a07b21595
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868589"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947533"
 ---
 # <a name="performance-warnings"></a>Wydajność — Ostrzeżenia
 Ostrzeżeń dotyczących wydajności obsługi bibliotek o wysokiej wydajności i aplikacji.

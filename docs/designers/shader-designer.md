@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043560"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -33,7 +33,7 @@ Możesz użyć **Shader Designer** do tworzenia niestandardowych efektów wizual
 |-----------------| - | - |
 |Język programu do cieniowania wykresu bezpośredniego|*.dgsl*|Wyświetl, Edytuj|
 |Modułu cieniującego HLSL (kodu źródłowego)|*.hlsl*|Eksportowanie|
-|Modułu cieniującego HLSL (kodu bajtowego)|*.CSO*|Eksportowanie|
+|Modułu cieniującego HLSL (kodu bajtowego)|*.cso*|Eksportowanie|
 |Nagłówek języka C++ (tablica kodu bajtowego języka HLSL)|*.h*|Eksportowanie|
 
 ## <a name="get-started"></a>Wprowadzenie
@@ -177,21 +177,21 @@ Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz się do **wybierz** tryb|**CTRL**+**G**, **Ctrl**+**funkcji pytania i odpowiedzi**<br /><br /> **S**|
-|Przełącz się do **powiększenia** tryb|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Przełącz się do **Pan** tryb|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Zaznacz wszystkie|**CTRL**+**A**|
+|Przełącz się do **wybierz** tryb|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Przełącz się do **powiększenia** tryb|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Przełącz się do **Pan** tryb|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Znak ucieczki** (**Esc**)|
 |Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> Znak plus (**+**)|
 |Pomniejszanie|**CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> Znak minus (**-**)|
 |Przesuń w górę powierzchni projektowej|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
 |Przesuń w dół na powierzchnię projektową|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
-|Przesuń w lewo powierzchni projektowej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **SHIFT**+**PageDown**|
+|Przesuń w lewo powierzchni projektowej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **Shift**+**PageDown**|
 |Przesuń w prawo powierzchni projektowej|**SHIFT**+**kółkiem myszy do przodu**<br /><br /> **Obrót kółkiem myszy do prawej**<br /><br /> **SHIFT**+**PageUp**|
 |Przenieś fokus klawiatury do innego węzła|**Strzałkę** kluczy|
 |Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy zaznaczenia)|**SHIFT**+**spacja**|
-|Przełącz zaznaczenie węzła, który ma fokus klawiatury|**CTRL**+**spacja**|
+|Przełącz zaznaczenie węzła, który ma fokus klawiatury|**Ctrl**+**Spacebar**|
 |Przełączanie bieżącego zaznaczenia (Jeśli nie zaznaczono żadnych węzłów, wybierz węzeł, który ma fokus klawiatury)|**SPACJA**|
 |Przenieś bieżący wybór w górę|**SHIFT**+**Strzałka w górę**|
 |Przenieś bieżący wybór w dół|**SHIFT**+**strzałkę w dół**|

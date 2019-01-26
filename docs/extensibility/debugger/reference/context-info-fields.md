@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 532a2f309af612fb74a2f810b7fe445b79f813fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 712876c38996b0e9b5f0b65cf0b0269d43b15907
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028438"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Określa, jakie informacje należy pobrać o kontekście pamięci.  
@@ -76,7 +76,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
  Te wartości mogą być łączone z bitowe OR.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

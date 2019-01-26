@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e28364360cf636273384480a35cd07468b9b7e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039153"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion, element (szablony Visual Studio)
 
@@ -26,7 +26,7 @@ Określa maksymalną wersję programu .NET Framework, która jest wymagana przez
 > [!IMPORTANT]
 > Począwszy od programu Visual Studio 2017 w wersji 15.6, **wersji platformy docelowej** listy rozwijanej nie jest już filtr dla szablonów wyświetlanych w **szablony** części **nowy projekt** okna dialogowego. Zamiast tego **wersji platformy docelowej** listy rozwijanej działa jako selektora framework, dla wybranego szablonu.
 
- \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Składnia
 

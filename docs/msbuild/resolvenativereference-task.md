@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb8d697351d29bbba8a5df47ce9bfdf6ca82ea6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b88e03f03eb0568ba2b71324010b19990f917b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035994"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference — zadanie
 Usuwa odwołania natywne. Implementuje <xref:Microsoft.Build.Tasks.ResolveNativeReference> klasy. Ta klasa obsługuje infrastrukturę .NET Framework, która nie jest przeznaczona do użycia bezpośrednio w kodzie.  

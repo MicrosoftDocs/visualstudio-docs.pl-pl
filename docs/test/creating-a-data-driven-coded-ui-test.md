@@ -7,15 +7,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: c83ed77a1971b711c4089927998bc27cab403d01
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964954"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Tworzenie opartych na danych kodowanego testu interfejsu użytkownika
 

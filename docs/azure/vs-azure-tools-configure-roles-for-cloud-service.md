@@ -2,7 +2,7 @@
 title: Konfigurowanie ról usługi w chmurze platformy Azure
 description: Informacje o sposobie instalowania i konfigurowania ról dla usług Azure cloud services przy użyciu programu Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,15 +10,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c9bbc913b98b4acddd04a2cc1e5b331848f85e2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07876679742ed8d303ebb2e715fbeadc6098303e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023504"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
-Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
+Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Informacje dotyczące usługi w chmurze są przechowywane w następujących plikach:
 
@@ -38,20 +38,20 @@ W programie Visual Studio, można skonfigurować usługi w chmurze platformy Azu
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **właściwości**.
-   
+
     ![Menu kontekstowego projektu Eksploratora rozwiązań](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
-1. Na stronie właściwości projektu, wybierz **rozwoju** kartę. 
+1. Na stronie właściwości projektu, wybierz **rozwoju** kartę.
 
     ![Strony właściwości projektu — karta rozwoju](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
 1. W **konfiguracji usługi** listy, wybierz nazwę konfiguracji usługi, które chcesz edytować. (Wprowadzić zmiany w konfiguracji usługi dla tej roli, należy zaznaczyć **wszystkie konfiguracje**.)
-   
+
     > [!IMPORTANT]
     > Jeśli wybierzesz konfigurację określonej usługi, niektóre właściwości są wyłączone, ponieważ ich można ustawić tylko w przypadku wszystkich konfiguracji. Aby edytować te właściwości, należy wybrać **wszystkie konfiguracje**.
-    > 
-    > 
-   
+    >
+    >
+
     ![Lista konfiguracji usługi dla usługi w chmurze platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
 ## <a name="change-the-number-of-role-instances"></a>Zmień liczbę wystąpień roli
@@ -68,7 +68,7 @@ Aby poprawić wydajność usługi w chmurze, możesz zmienić liczbę wystąpie�
     ![Karta Konfiguracja](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page.png)
 
 1. W **konfiguracji usługi** wybierz konfigurację usługi, które chcesz zaktualizować.
-   
+
     ![Lista konfiguracji usługi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. W **liczba wystąpień** tekstu wprowadź liczbę wystąpień, które chcesz uruchomić tę rolę. Każde wystąpienie jest uruchamiany na oddzielnej maszynie wirtualnej, gdy Opublikuj usługę w chmurze na platformie Azure.
@@ -82,8 +82,8 @@ Możesz dodać, usunąć lub zmodyfikować parametrów połączenia w przypadku 
 
 > [!WARNING]
 > Po wprowadzeniu usługi Azure storage kluczowych informacji o koncie parametry połączenia konta magazynu, te informacje są przechowywane lokalnie w pliku konfiguracji usługi. Jednak te informacje obecnie nie są przechowywane jako tekst zaszyfrowany.
-> 
-> 
+>
+>
 
 Za pomocą innej wartości dla każdej konfiguracji usługi, nie trzeba używać parametrów połączenia w innej usłudze w chmurze lub zmodyfikować kod, po opublikowaniu usługi w chmurze na platformie Azure. Można użyć dla tej samej nazwy parametrów połączenia w kodzie, a wartość jest inny, na podstawie konfiguracji usługi, który należy wybrać podczas tworzenia usługi w chmurze lub podczas publikowania go.
 
@@ -111,7 +111,7 @@ Za pomocą innej wartości dla każdej konfiguracji usługi, nie trzeba używać
 
     - **Nazwa** — wprowadź nazwę, którą chcesz używać dla parametrów połączenia.
     - **Typ** — wybierz tę opcję **parametry połączenia** z listy rozwijanej.
-    - **Wartość** — można wprowadzić parametry połączenia bezpośrednio w **wartość** komórki lub wybierz wielokropek (...) do pracy w **utworzyć parametry połączenia magazynu** okna dialogowego.  
+    - **Wartość** — można wprowadzić parametry połączenia bezpośrednio w **wartość** komórki lub wybierz wielokropek (...) do pracy w **utworzyć parametry połączenia magazynu** okna dialogowego.
 
 1. W **utworzyć parametry połączenia magazynu** okno dialogowe, wybierz opcję dla **nawiązywanie połączenia przy użyciu**. Następnie postępuj zgodnie z instrukcjami dotyczącymi wybranej opcji:
 
@@ -135,7 +135,7 @@ Poniższe kroki pokazują jak programowo uzyskać dostęp parametrów połączen
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Poniższy kod ilustruje przykład dostęp do parametrów połączenia. Zastąp &lt;ConnectionStringName > Symbol zastępczy odpowiednią wartość. 
+1. Poniższy kod ilustruje przykład dostęp do parametrów połączenia. Zastąp &lt;ConnectionStringName > Symbol zastępczy odpowiednią wartość.
 
     ```csharp
     // Setup the connection to Azure Storage
@@ -173,14 +173,14 @@ Za pomocą innej wartości dla każdej konfiguracji usługi, nie trzeba używać
 
     - **Nazwa** — Podaj nazwę ustawienia.
     - **Typ** — wybierz tę opcję **ciąg** z listy rozwijanej.
-    - **Wartość** -wprowadź wartość ustawienia. Można wprowadzać wartości bezpośrednio do **wartość** komórki lub wybierz wielokropek (...), aby wprowadzić wartość **Edytowanie ciągu** okna dialogowego.  
+    - **Wartość** -wprowadź wartość ustawienia. Można wprowadzać wartości bezpośrednio do **wartość** komórki lub wybierz wielokropek (...), aby wprowadzić wartość **Edytowanie ciągu** okna dialogowego.
 
 1. Aby usunąć niestandardową wartość ustawienia, wybierz ustawienie, a następnie wybierz **Usuń ustawienie**.
 
 1. W programie Visual Studio pasek narzędzi, wybierz opcję **Zapisz**.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>Programowy dostęp do wartości ustawienia niestandardowego
- 
+
 Poniższe kroki pokazują jak programowo uzyskać dostęp ustawienia niestandardowego przy użyciu języka C#.
 
 1. Dodaj następujące dyrektywy using do pliku języka C# których zamierzasz używać ustawienia:
@@ -191,14 +191,14 @@ Poniższe kroki pokazują jak programowo uzyskać dostęp ustawienia niestandard
     using Microsoft.WindowsAzure.ServiceRuntime;
     ```
 
-1. Poniższy kod ilustruje przykład niestandardowe ustawienie dostępu. Zastąp &lt;SettingName > Symbol zastępczy odpowiednią wartość. 
-    
+1. Poniższy kod ilustruje przykład niestandardowe ustawienie dostępu. Zastąp &lt;SettingName > Symbol zastępczy odpowiednią wartość.
+
     ```csharp
     var settingValue = RoleEnvironment.GetConfigurationSettingValue("<SettingName>");
     ```
 
 ## <a name="manage-local-storage-for-each-role-instance"></a>Zarządzanie magazynem lokalnym dla każdego wystąpienia roli
-Możesz dodać magazyn systemu plików lokalnych dla każdego wystąpienia roli. Danych przechowywanych w pamięci masowej nie jest dostępny przez innych wystąpień roli, dla którego dane są przechowywane lub innych ról.  
+Możesz dodać magazyn systemu plików lokalnych dla każdego wystąpienia roli. Danych przechowywanych w pamięci masowej nie jest dostępny przez innych wystąpień roli, dla którego dane są przechowywane lub innych ról.
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
@@ -210,7 +210,7 @@ Możesz dodać magazyn systemu plików lokalnych dla każdego wystąpienia roli.
 
     ![Karta magazynu lokalnego](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. W **konfiguracji usługi** listy, upewnij się, że **wszystkie konfiguracje** jest zaznaczone, ponieważ ustawienia lokalnego magazynu mają zastosowanie do wszystkich konfiguracji z usługi. Dowolna inna wartość powoduje pól wejściowych na stronie są wyłączone. 
+1. W **konfiguracji usługi** listy, upewnij się, że **wszystkie konfiguracje** jest zaznaczone, ponieważ ustawienia lokalnego magazynu mają zastosowanie do wszystkich konfiguracji z usługi. Dowolna inna wartość powoduje pól wejściowych na stronie są wyłączone.
 
     ![Lista konfiguracji usługi](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
@@ -232,20 +232,20 @@ Możesz dodać magazyn systemu plików lokalnych dla każdego wystąpienia roli.
 
 ## <a name="programmatically-accessing-local-storage"></a>Programowe uzyskiwanie dostępu do magazynu lokalnego
 
-W tej sekcji przedstawiono sposób programowego dostępu do magazynu lokalnego przy użyciu języka C#, pisząc plik tekstowy testu `MyLocalStorageTest.txt`.  
+W tej sekcji przedstawiono sposób programowego dostępu do magazynu lokalnego przy użyciu języka C#, pisząc plik tekstowy testu `MyLocalStorageTest.txt`.
 
 ### <a name="write-a-text-file-to-local-storage"></a>Wpisywanie tekstu do pliku w magazynie lokalnym
 
-Poniższy kod przedstawia przykład sposobu wpisywanie tekstu do pliku w magazynie lokalnym. Zastąp &lt;LocalStorageName > Symbol zastępczy odpowiednią wartość. 
+Poniższy kod przedstawia przykład sposobu wpisywanie tekstu do pliku w magazynie lokalnym. Zastąp &lt;LocalStorageName > Symbol zastępczy odpowiednią wartość.
 
     ```csharp
     // Retrieve an object that points to the local storage resource
     LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
-    
+
     //Define the file name and path
     string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
     String filePath = Path.Combine(paths);
-    
+
     using (FileStream writeStream = File.Create(filePath))
     {
         Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
@@ -257,8 +257,8 @@ Poniższy kod przedstawia przykład sposobu wpisywanie tekstu do pliku w magazyn
 ### <a name="find-a-file-written-to-local-storage"></a>Znajdź plik zapisany w magazynie lokalnym
 
 Aby wyświetlić plik utworzony przez kod w poprzedniej sekcji, wykonaj następujące kroki:
-    
-1.  W obszarze powiadomień Windows kliknij prawym przyciskiem myszy ikonę platformy Azure oraz z menu kontekstowego wybierz **Pokaż interfejs użytkownika emulatora obliczeń**. 
+
+1.  W obszarze powiadomień Windows kliknij prawym przyciskiem myszy ikonę platformy Azure oraz z menu kontekstowego wybierz **Pokaż interfejs użytkownika emulatora obliczeń**.
 
     ![Pokaż emulatora obliczeń platformy Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
@@ -270,7 +270,7 @@ Aby wyświetlić plik utworzony przez kod w poprzedniej sekcji, wykonaj następu
 
     ![Element menu Otwórz magazynu lokalnego](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. Po otwarciu okna Eksploratora Windows, wpisz "MyLocalStorageTest.txt'' do **wyszukiwania** pola tekstowego, a następnie wybierz pozycję **Enter** ma się rozpocząć wyszukiwanie. 
+1. Po otwarciu okna Eksploratora Windows, wpisz "MyLocalStorageTest.txt'' do **wyszukiwania** pola tekstowego, a następnie wybierz pozycję **Enter** ma się rozpocząć wyszukiwanie.
 
 ## <a name="next-steps"></a>Następne kroki
 Więcej informacji na temat projektów systemu Azure w programie Visual Studio, czytając [Konfigurowanie projektu Azure](vs-azure-tools-configuring-an-azure-project.md). Więcej informacji na temat schematu usługi w chmurze, czytając [odwołanie do schematu](https://msdn.microsoft.com/library/azure/dd179398).

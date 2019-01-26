@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74351e891b3bac4fe96e7e5b2ca9e46c412ca72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7470ad1a277356e663ea8756eebd36bb081cfb27
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920527"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942415"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -104,7 +104,7 @@ Aby zarejestrować się przy użyciu przepływu kodu urządzenia:
 
 1. W obszarze **programu Visual Studio**, wybierz **Kontynuuj**.
 
-   ![urządzenia — logowanie — page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Postępuj zgodnie z monitami, aby wprowadzić swoje poświadczenia konta.
 

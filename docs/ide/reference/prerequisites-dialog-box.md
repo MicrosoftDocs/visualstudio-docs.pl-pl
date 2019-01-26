@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3425573d1ee60ce5a4f96d5762b353afa18dc9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2af20a0a50e9405cf7df2fb97aa38cfa6be5c50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042793"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -43,7 +43,7 @@ Wstępnie wymagane składniki, które pojawiają się w **wymagania wstępne** o
 
 |Element|Opis|
 |-------------|-----------------|
-|**.NET framework 3.5 z dodatkiem SP1**|Ten pakiet zainstaluje następujące:<br /><br /> — Program .NET framework w wersji 2.0, 3.0 i 3.5.<br />— Obsługuje dla wszystkich wersji .NET Framework na 32-bitowych (x86) i (x64) 64-bitowych systemów operacyjnych.<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest instalowana z pakietem.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do Windows Vista i .NET Framework 3.5 jest dołączony do Visual Studio. .NET framework 3.5 jest wymagany dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemach operacyjnych i dla którego platforma docelowa jest ustawiona na **.NET Framework 3.5**oraz dla projektów języka Visual Basic i C# dla 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwany.) Należy pamiętać, że projekty języka Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Ten pakiet zainstaluje następujące:<br /><br /> — Program .NET framework w wersji 2.0, 3.0 i 3.5.<br />— Obsługuje dla wszystkich wersji .NET Framework na 32-bitowych (x86) i (x64) 64-bitowych systemów operacyjnych.<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest instalowana z pakietem.<br />-Dodatki service Pack dla programu .NET Framework 2.0 i 3.0.<br /><br /> .NET framework 3.0 jest dołączony do Windows Vista i .NET Framework 3.5 jest dołączony do Visual Studio. .NET framework 3.5 jest wymagany dla wszystkich projektów Visual Basic i C#, które są kompilowane dla 32-bitowych systemach operacyjnych i dla którego platforma docelowa jest ustawiona na **.NET Framework 3.5**oraz dla projektów języka Visual Basic i C# dla 64-bitowych systemy operacyjne. (IA64 nie jest obsługiwany.) Należy pamiętać, że projekty języka Visual Basic i C# są kompilowane dla dowolnej architektury Procesora domyślnie. Aby uzyskać więcej informacji, zobacz [Visual Studio Wielowersyjnością kodu – Przegląd](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ten pakiet instaluje program .NET Framework 4.x x86 i x64 64.|
 |**Program Microsoft System CLR Types dla programu SQL Server 2014 (x64 i x86)**|Ten pakiet zainstaluje Microsoft System CLR Types dla programu SQL Server 2014 dla x64 lub x86.|
 |**SQL Server 2008 R2 Express**|Ten pakiet zainstaluje Microsoft SQL Server 2008 R2 Express, bezpłatna wersja programu Microsoft SQL Server 2008 R2, idealną bazę danych dla małych sieci web, serwera lub aplikacji klasycznych. Może służyć do swobodnego rozwoju i produkcji.|
@@ -51,7 +51,7 @@ Wstępnie wymagane składniki, które pojawiają się w **wymagania wstępne** o
 |**SQL Server 2012 Express LocalDB**|Ten pakiet zainstaluje Microsoft SQL Server 2012 Express LocalDB.|
 |**Visual C++ "14" środowiska uruchomieniowego bibliotek (ARM)**|Ten pakiet instaluje biblioteki Visual C++ środowiska wykonawczego dla architektury Itanium, które zapewniają procedury programowania systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
 |**Visual C++ "14" środowiska uruchomieniowego bibliotek (x64)**|Ten pakiet instaluje biblioteki uruchomieniowe Visual C++ x64 systemów, które zapewniają procedury programowania systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
-|**Visual C++ "14" środowiska uruchomieniowego bibliotek (x86)**|Ten pakiet instaluje biblioteki uruchomieniowe Visual C++ dla x86 systemów, które zapewniają procedury programowania systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Visual C++ "14" Runtime Libraries (x86)**|Ten pakiet instaluje biblioteki uruchomieniowe Visual C++ dla x86 systemów, które zapewniają procedury programowania systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
 
 ## <a name="see-also"></a>Zobacz także
 

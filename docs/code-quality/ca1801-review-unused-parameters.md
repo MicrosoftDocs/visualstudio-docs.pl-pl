@@ -1,5 +1,5 @@
 ---
-title: 'CA1801: Przejrzyj nieużywane parametry'
+title: 'CA1801: Dokonaj przeglądu nieużywanych parametrów'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b7fdbf4d842218b8a06146c777a1e468459d140
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dea30f8053844cc6ce6eb38dd5138e935e8020df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029898"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Przejrzyj nieużywane parametry
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Dokonaj przeglądu nieużywanych parametrów
 
 |||
 |-|-|

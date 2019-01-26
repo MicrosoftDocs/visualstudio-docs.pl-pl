@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e85a3ff4-dedd-4ff4-9b22-3a1e94755362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ce78d9358b866a31d9af7cc7fbcba6d299667
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ade955f53f7e3d3823580934f623c9b0157f04c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936584"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042234"
 ---
 # <a name="wpf-targets-files"></a>Pliki .targets WPF
 [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] Rozszerza [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] przez dodanie zestawu [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)]-określonych zadań, które są łączone w specjalnym *.targets* pliku *Microsoft.WinFX.targets*. Ten plik łączy zbiór [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] zadania, które są wymagane do utworzenia [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] projektu w [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].  

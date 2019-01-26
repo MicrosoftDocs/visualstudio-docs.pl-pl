@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54741301c1c1402876ab7b13dba30b3c4ef03831
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028611"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skrótów klawiaturowych z elementami menu
 Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy dodać wpis do *vsct* plik pakietu. W tym temacie opisano sposób mapowania skrótów klawiaturowych na niestandardowy przycisk, element menu lub paska narzędzi polecenia, a także jak zastosować Mapowanie klawiatury w edytorze domyślnej lub ograniczyć je do edytora niestandardowego.  

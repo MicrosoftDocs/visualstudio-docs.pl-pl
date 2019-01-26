@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1da67a213ed1add0ce670ca133163538e2cde1b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21b4abf2ddb2bd7a8f026c31bac681eef8c18253
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913859"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024152"
 ---
 # <a name="frequently-asked-questions"></a>Często zadawane pytania
 
@@ -46,7 +46,7 @@ A. Nie. RTVS jest narzędziem do tworzenia kodu języka R i używa standardowych
 
 A. Wersja 1.0 RTVS jest tylko do języka angielskiego. W wersji 1.1 zostanie zlokalizowany dla tego samego zestawu języków, które jest programu Visual Studio. W międzyczasie użyj [pakiet językowy dla programu Visual Studio 2015 w języku angielskim](https://www.microsoft.com/download/details.aspx?id=48157), lub w programie Visual Studio 2017, uruchom Instalatora i wybierz w języku angielskim w **pakiety językowe** kartę.
 
-![Ustawienia międzynarodowe w programie Visual Studio 2017](media/FAQ-international-settings.png)
+![International settings for Visual Studio 2017](media/FAQ-international-settings.png)
 
 **PYTANIA I ODPOWIEDZI. Podoba mi się naprawdę Moje bieżące ustawienia programu Visual Studio, ale chcę, aby wypróbować nowe ustawienia do nauki o danych. Co należy zrobić?**
 

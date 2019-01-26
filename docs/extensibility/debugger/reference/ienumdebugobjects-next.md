@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c984474545b8858d0a12ed5ef98c661196c797fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2921c5d49665b59c94fa82027ac5562f38b8b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034574"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Ta metoda zwraca następny zestaw elementów z wyliczenia.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e582849fe392a77b48a8c83664c98fedb8037f5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 060835769b6a9cbe0bf2153ea444d62ef5c2d301
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039878"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 Pobiera flagę wskazującą, czy sekcja zawiera komentarze lub podobne informacje.  

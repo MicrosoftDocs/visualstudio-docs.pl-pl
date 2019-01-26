@@ -17,15 +17,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227840"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035240"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)
 

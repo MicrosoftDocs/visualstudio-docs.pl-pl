@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetProjPath | Dokumentacja firmy Microsoft
+title: SccGetProjPath Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f714260af3ef247ad4fe0a059e6166d59f1df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9da39a5216f313371753a1b52e411aba093419e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935803"
 ---
-# <a name="sccgetprojpath-function"></a>Funkcja SccGetProjPath
+# <a name="sccgetprojpath-function"></a>SccGetProjPath function
 Ta funkcja monituje użytkownika o ścieżkę projektu, który jest ciągiem, który ma znaczenie tylko do wtyczka do kontroli źródła. Jest ona wywoływana, gdy użytkownik jest:  
   
 -   Tworzenie nowego projektu  

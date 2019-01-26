@@ -15,25 +15,25 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e562b611e1efa89fdfc5b2d80fdd0a702cc692cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847704"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034782"
 ---
 # <a name="encodings-and-line-endings"></a>Końce kodowania i wiersza
 
 Następujące znaki są interpretowane jako podziały wierszy w programie Visual Studio:
 
-- CR-LF: Znaku powrotu karetki i wysuwu wiersza Unicode znaki 000 D + 000A
+- CR LF: Znaku powrotu karetki i wysuwu wiersza Unicode znaki 000 D + 000A
 
 - LF: Znak nowego wiersza, Unicode 000A
 
-- USTAW: Następny wiersz, znaków Unicode 0085
+- NEL: Następny wiersz, znaków Unicode 0085
 
 - LS: Separator wiersza, znaków Unicode 2028
 

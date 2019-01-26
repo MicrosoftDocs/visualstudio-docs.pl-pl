@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Dokumentacja firmy Microsoft
+title: IDebugObject2::GetICorDebugValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1eea40a045a4210c97905f5734e165e604de94a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 230b183710ae1a34f3419914e11b235fb96e4e56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844018"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034691"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 Pobiera obiekt zarządzany kod reprezentujący wartość skojarzoną z tym obiektem.  

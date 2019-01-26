@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929130"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.  
@@ -65,7 +65,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 ### <a name="installation"></a>Instalacja  
  Zestawów SDK rozszerzeń można zainstalować dla określonego użytkownika lub dla wszystkich użytkowników bez określenia klucza rejestru. Aby zainstalować zestaw SDK dla wszystkich użytkowników, należy użyć następującej ścieżki:  
 
- *% Program Files%\Microsoft SDK\<platformę docelową > \v<platform version number>\ExtensionSDKs*  
+ *%Program Files%\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs*  
 
  Instalacja specyficzne dla użytkownika należy użyć następującej ścieżki:  
 
@@ -75,7 +75,7 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 
 1.  Określ ją w kluczu rejestru:  
 
-     **Zestawy SDK HKLM\Software\Microsoft\Microsoft\<platformę docelową > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\  
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\  
 
      i dodaj podklucz (ustawienie domyślne), który ma wartość `<path to SDK><SDKName><SDKVersion>`.  
 
@@ -170,7 +170,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 6. MaxPlatformVerson: Wersja platformy docelowej maksymalna powinna służyć do określania wersje platformy, na których zestaw SDK rozszerzenia nie będą działać. Na przykład element programu Microsoft Visual C++ Runtime Package v11.0 powinna się odwoływać tylko do projektów systemu Windows 8. W efekcie MaxPlatformVersion projektu systemu Windows 8 jest 8.0. Oznacza to, że Menadżer odwołań odfiltrowuje programu Microsoft Visual C++ Runtime Package dla projektu Windows 8.1 i MSBuild zgłasza błąd podczas [!INCLUDE[win81](../debugger/includes/win81_md.md)] projekt odwołuje się do niej. Uwaga: ten element jest obsługiwany począwszy od [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)].  
 
-7. AppliesTo: Określa zestawy SDK, które są dostępne w Menedżerze odwołań, określając odpowiednie typy projektu programu Visual Studio. Dziewięć wartości są rozpoznawane: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, zarządzane i natywne. Tworzenie zestawu SDK można używać i ("+"), lub ("&#124;"), a nie ("!") operatory, aby określić zakres dokładnie typów projektów, które są stosowane do zestawu SDK.  
+7. AppliesTo: Określa zestawy SDK, które są dostępne w Menedżerze odwołań, określając odpowiednie typy projektu programu Visual Studio. Dziewięć wartości są rozpoznawane: WindowsAppContainer, VisualC, VB, CSharp, WindowsXAML, JavaScript, Managed, and Native. Tworzenie zestawu SDK można używać i ("+"), lub ("&#124;"), a nie ("!") operatory, aby określić zakres dokładnie typów projektów, które są stosowane do zestawu SDK.  
 
     WindowsAppContainer identyfikuje projektów dla [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.  
 
@@ -180,7 +180,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 10. SupportsMultipleVersions: Jeśli ten atrybut jest ustawiony na **błąd** lub **ostrzeżenie**, MSBuild wskazuje, że wiele wersji tej samej rodziny zestawu SDK nie może odwoływać się tego samego projektu. Jeśli ten atrybut nie istnieje lub została ustawiona na **Zezwalaj**, MSBuild nie wyświetla tego rodzaju błąd lub ostrzeżenie.  
 
-11. Pakiet AppX: Określa ścieżkę do pakietów aplikacji dla Windows biblioteki składników na dysku. Ta wartość jest przekazywany do składnika rejestracji biblioteki składników Windows podczas lokalnego debugowania. Konwencja nazewnictwa dla nazwy pliku jest  *\<firmy >.\< Produktu >. \<Architektury >. \<Konfiguracji >. \<Wersji > .appx*. Architektura i konfiguracyjnych są opcjonalne w nazwie atrybutu, a wartość atrybutu, jeśli nie odnoszą się do biblioteki składników Windows. Ta wartość ma zastosowanie tylko do bibliotek składnika Windows.  
+11. AppX: Określa ścieżkę do pakietów aplikacji dla Windows biblioteki składników na dysku. Ta wartość jest przekazywany do składnika rejestracji biblioteki składników Windows podczas lokalnego debugowania. Konwencja nazewnictwa dla nazwy pliku jest  *\<firmy >.\< Produktu >. \<Architektury >. \<Konfiguracji >. \<Wersji > .appx*. Architektura i konfiguracyjnych są opcjonalne w nazwie atrybutu, a wartość atrybutu, jeśli nie odnoszą się do biblioteki składników Windows. Ta wartość ma zastosowanie tylko do bibliotek składnika Windows.  
 
 12. CopyRedistToSubDirectory: Określa, gdzie pliki objęte *\redist* powinny zostać skopiowane folderu względem katalogu głównego pakietu aplikacji (oznacza to, **lokalizacji pakietu** w wybrane **tworzenia pakietu aplikacji** Kreator) oraz główny obiekt układu środowiska uruchomieniowego. Domyślną lokalizacją jest katalog główny pakietu aplikacji i **F5** układu.  
 

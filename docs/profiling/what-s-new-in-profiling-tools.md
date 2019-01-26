@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a628cd5279d0f80ac7af0de5adaf8ddda6c31c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773195"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026948"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

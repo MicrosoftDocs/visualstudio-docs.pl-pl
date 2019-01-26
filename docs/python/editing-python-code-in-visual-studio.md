@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036059"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 

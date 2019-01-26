@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e501b50b0ecca922cb52ed5406ba4c62b98de96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ef2e7787b523a6c73265fc2673a5947e2ed0341
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030538"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 Pobiera zaplecza główny numer wersji kompilatora.  

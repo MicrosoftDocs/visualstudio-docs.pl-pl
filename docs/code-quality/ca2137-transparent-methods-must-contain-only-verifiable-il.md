@@ -1,5 +1,5 @@
 ---
-title: 'CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL'
+title: 'CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalny język pośredni'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76d628b05ae5c0b6ccb8db94a1bf2c09537fd812
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85e306a230d3e06330fd449f40bb001417ac9801
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033159"
 ---
-# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalne IL
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Metody przezroczyste muszą zawierać tylko weryfikowalny język pośredni
 
 |||
 |-|-|

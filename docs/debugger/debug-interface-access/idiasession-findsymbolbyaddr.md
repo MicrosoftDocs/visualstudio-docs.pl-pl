@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb92d46b63668c5b0b590134dd8b36587ab11c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9567e272167c34d3061e9273d912ea9a2cd0ab7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031425"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu.  
@@ -58,5 +58,5 @@ pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

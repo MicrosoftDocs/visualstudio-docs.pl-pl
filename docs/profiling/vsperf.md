@@ -1,19 +1,19 @@
 ---
-title: VSPerf | Dokumentacja firmy Microsoft
+title: VSPerf | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7293914d2969e3e697ee7137256692270ac16f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70a31e5efca4fe2c8b81e3f8653422ed3311a0ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919034"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946675"
 ---
 # <a name="vsperf"></a>VSPerf
 Użyj **VsPerf** narzędzie wiersza polecenia do:  
@@ -30,7 +30,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |||  
 |-|-|  
 |**App: {AppName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
-|**/ pakietu: {Pełna_nazwa_pakietu}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
+|**/package:{PackageFullName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|  
 |**/js**|Wymagane na potrzeby profilowania aplikacji JavaScript.<br /><br /> Zbieranie danych wydajności z aplikacji JavaScript.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
 |**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja, symboli zarządzanych, nie zostanie rozwiązany.|  
 |**/listapps**|Lista zainstalowanych aplikacji, nazwy i PackageFullNames.|  
@@ -50,7 +50,7 @@ Użyj **VsPerf** narzędzie wiersza polecenia do:
 |||  
 |-|-|  
 |**/ Dołącz: {identyfikator PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|  
-|**/ file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastąpi istniejący plik).<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
+|**/file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastąpi istniejący plik).<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|  
 |**/ pause**|Wstrzymaj zbieranie danych.|  
 |**/Resume**|Wznów zbieranie danych.|  
 |**/ stop**|Zatrzymaj zbieranie danych, a następnie Zakończ działanie procesów docelowych.|  

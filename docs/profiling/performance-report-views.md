@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8586bff16bdcf8a67d8d1e27abb37b13efa5ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844946"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041974"
 ---
 # <a name="performance-report-views"></a>Widoki raportu wydajności
 Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools. Widoki pliku danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmentIDE rozwoju. Raporty są generowane przez [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia.  

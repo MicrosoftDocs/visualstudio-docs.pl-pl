@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd41bb8fd0e35ee13815b11941950d9031f824a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041792"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: Kulisami część pierwsza
 Nigdy nie myśl o tym, jak utworzyć swój własny typ projektu? Zastanawiasz się, co rzeczywiście się dzieje po utworzeniu nowego projektu? Teraz wykonać podglądu pod maską i zobacz, co naprawdę dzieje.  
@@ -90,7 +90,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Jeśli występuje ten podklucz Pozycja węzła głównego jest kontrolowana przez okno dialogowe Ustawienia dewelopera. Na przykład  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZ VC#  
   
  Wskazuje, że Visual C# będą węzeł główny Jeśli ustawiono program Visual Studio na [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] rozwoju. W przeciwnym razie będzie elementem podrzędnym **inne języki**.  
   
@@ -110,7 +110,7 @@ devenv /installvstemplates
   
  Odpowiedni folder ProjectTemplates wygląda następująco:  
   
- ![Szablony projektów](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Project Templates](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  Gdy **nowy projekt** zostanie otwarte okno dialogowe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przechodzi przez ProjectTemplates folder i zostaje odtworzony strukturę w **typów projektów** drzewa z niektórych zmian:  
   
@@ -208,7 +208,7 @@ devenv /installvstemplates
   
 10. Otwórz **nowy projekt** okna dialogowego pole, a następnie rozwiń węzeł **Visual C#** węzeł projektu.  
   
-    ![Obiekt MyProjectNode](../../extensibility/internals/media/myprojectnode.png "Obiekt MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
     **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.  
   

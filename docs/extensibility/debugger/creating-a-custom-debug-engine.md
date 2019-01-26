@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aff0f3ba1bef25c7754f80dcbb6fb04e2e7da60e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029911"
 ---
 # <a name="create-a-custom-debug-engine"></a>Tworzenie niestandardowego aparatu debugowania
 Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej architektury środowiska wykonawczego. Zazwyczaj jest tylko jedna implementacja DE na środowisku uruchomieniowym.  
@@ -58,7 +58,7 @@ Aparat debugowania (DE) to składnik, który umożliwia debugowanie określonej 
  [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)  
  Dokumenty kolejności wywołań zdarzeń występujących w sesji debugowania.  
   
- [Jak: Debugowanie niestandardowego aparatu debugowania](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Instrukcje: Debugowanie niestandardowego aparatu debugowania](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Wyjaśnia, jak można debugować DE niestandardowych.  
   
 ## <a name="see-also"></a>Zobacz także  

@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: fd5a496ea53bf7958385e6d8fdf106c9bf45afb3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53894158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043612"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Narzędzi LINQ to SQL w programie Visual Studio
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfcf57c7bba3774e97990703384b6d4c04694b74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 997d330cc6ba2084ea01e9b661a3daac9497a2d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879601"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925140"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 Pobiera zmienną klasyfikacji symbol danych.  
@@ -48,5 +48,5 @@ HRESULT get_dataKind ( 
 |Wersja:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [DataKind, wyliczenie](../../debugger/debug-interface-access/datakind.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca3c20a9-934a-4b2c-a7f6-7d06e8611ff2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78c80d0dbe682a511b209a0d357cb2fbf8f3fcf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 561527f24da6d46236b6484ac081f43864431650
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036046"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 Pobiera wartość rejestru.  
@@ -42,5 +42,5 @@ HRESULT get_registerValue ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md)   
+ [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

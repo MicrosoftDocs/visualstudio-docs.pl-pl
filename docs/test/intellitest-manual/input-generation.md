@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936622"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych, za pomocą dynamiczne symboliczne wykonywanie
 
-Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie. Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu. Analiza jest procesem przyrostowe. Udoskonalanie predykat **Pyt.: Czy mogę -> {true lub false}** za pośrednictwem formalnych testu parametry wejściowe **I**. **q** reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest. Początkowo **q: = false**, ponieważ nic nie został jeszcze zaobserwowany.
+Funkcja IntelliTest generuje dane wejściowe dla [parametryzowane testy jednostki](test-generation.md#parameterized-unit-testing) , analizując warunków gałęzi w programie.
+Dane wejściowe testu są wybierane w zależności od tego, czy można uruchomić nowego zachowania rozgałęziania programu.
+Analiza jest procesem przyrostowe. Udoskonalanie predykat **Pyt.: Czy mogę -> {true lub false}** za pośrednictwem formalnych testu parametry wejściowe **I**. **q** reprezentuje zestaw zachowań, które ma zaobserwowane IntelliTest.
+Początkowo **q: = false**, ponieważ nic nie został jeszcze zaobserwowany.
 
 Procedura pętli jest następująca:
 
-1. IntelliTest Określa dane wejściowe **i** tak, aby **funkcji pytania i odpowiedzi (i) = false** przy użyciu [moduł rozwiązywania ograniczeń](#constraint-solver). 
+1. IntelliTest Określa dane wejściowe **i** tak, aby **funkcji pytania i odpowiedzi (i) = false** przy użyciu [moduł rozwiązywania ograniczeń](#constraint-solver).
    Wynikające z konstrukcji, dane wejściowe **i** zajmie ścieżką wykonywania nie zauważony. Oznacza to, że początkowo **i** może być dowolnych danych wejściowych, ponieważ wykryto jeszcze żadnej ścieżki wykonywania.
 
 1. IntelliTest wykonuje test przy użyciu wybrane dane wejściowe **i**oraz monitoruje wykonanie testu i program w ramach testu.
@@ -55,7 +58,8 @@ Używa funkcji IntelliTest [Z3](https://github.com/Z3Prover/z3/wiki) moduł rozw
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Pokrycie kodu dynamiczne
 
-Jako efekt uboczny środowiska uruchomieniowego, monitorowanie program IntelliTest zbiera dane pokrycia kodu dynamicznych. Jest to nazywane *dynamiczne* ponieważ IntelliTest tylko zna kod, który został wykonany, w związku z tym go nie można nadać wartości bezwzględne dla pokrycia w taki sam sposób jak inne narzędzie pokrycia zwykle. 
+Jako efekt uboczny środowiska uruchomieniowego, monitorowanie program IntelliTest zbiera dane pokrycia kodu dynamicznych.
+Jest to nazywane *dynamiczne* ponieważ IntelliTest tylko zna kod, który został wykonany, w związku z tym go nie można nadać wartości bezwzględne dla pokrycia w taki sam sposób jak inne narzędzie pokrycia zwykle.
 
 Na przykład, gdy program IntelliTest zgłasza pokrycie dynamiczne jako 5/10 podstawowe bloki, oznacza to, że pięć bloków z 10 zostały pokryte, gdzie całkowita liczba bloków w wszystkie metody, które zostały osiągnięte do tej pory w analizie (w przeciwieństwie do wszystkich metod, które istnieją w zestawu w ramach testu) wynosi dziesięć.
 W dalszej części analizy, ponieważ więcej metod dostępne są odnajdywane licznika (5, w tym przykładzie) i może zwiększyć mianownik (10).
@@ -80,8 +84,7 @@ IntelliTest monitoruje instrukcje wykonany po uruchomieniu testu i program w ram
 Oznacza to, że program IntelliTest muszą do tworzenia obiektów określonego typu i ustaw ich wartości pól. Jeśli klasa jest [widoczne](#visibility) i ma [widoczne](#visibility) domyślnego konstruktora IntelliTest można utworzyć wystąpienia klasy.
 W przypadku wszystkich pól klasy [widoczne](#visibility), IntelliTest można ustawić pola automatycznie.
 
-Typ nie jest widoczny, czy pola nie są [widoczne](#visibility), IntelliTest potrzebuje pomocy, aby utworzyć obiekty i ich dostosowania do Państwa interesujące do osiągnięcia pokrycia kodu maksymalny. IntelliTest można używać odbicia do tworzenia i inicjowania wystąpień w dowolny sposób, ale nie jest to zazwyczaj  
-pożądane, ponieważ może ona Przenieś obiekt w stan, który nigdy nie mogą wystąpić podczas normalnego działania programu. Zamiast tego program IntelliTest opiera się na wskazówki od użytkownika.
+Typ nie jest widoczny, czy pola nie są [widoczne](#visibility), IntelliTest potrzebuje pomocy, aby utworzyć obiekty i ich dostosowania do Państwa interesujące do osiągnięcia pokrycia kodu maksymalny. IntelliTest można używać odbicia do tworzenia i inicjowania wystąpień w dowolny sposób, ale nie jest to zazwyczaj pożądane, ponieważ może ona Przenieś obiekt w stan, który nigdy nie mogą wystąpić podczas normalnego działania programu. Zamiast tego program IntelliTest opiera się na wskazówki od użytkownika.
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>Widoczność
@@ -108,7 +111,7 @@ Dostępne są następujące reguły:
 
 Jak przetestować metodę, która ma parametr typu interfejsu? Lub klasą niezapieczętowaną? Funkcja IntelliTest nie zna implementacji, które zostaną użyte później, gdy ta metoda jest wywoływana. I prawdopodobnie nie ma jeszcze rzeczywistej implementacji dostępne w czasie testu.
 
-Konwencjonalne odpowiedzi jest użycie *testowanie obiektów* z zachowaniem jawnego. 
+Konwencjonalne odpowiedzi jest użycie *testowanie obiektów* z zachowaniem jawnego.
 
 Makiety obiektu implementuje interfejs (lub rozszerza klasą niezapieczętowaną). Nie odpowiada on rzeczywistej implementacji, ale po prostu skrót, który zezwala na wykonywanie testów przy użyciu makiety obiektu. Jego zachowanie jest definiowane ręcznie w ramach każdego przypadku testowego, w którym jest używana. Istnieje wiele narzędzi, ułatwiających zdefiniowanie makiety obiektów i ich oczekiwane zachowanie, ale nadal należy ręcznie zdefiniować to zachowanie.
 
@@ -129,7 +132,8 @@ Program IntelliTest w wnioskowania o **struktury** wartości jest podobny sposó
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Tablice i ciągi
 
-IntelliTest monitoruje instrukcje wykonanych podczas wykonywania testu, a program w ramach testu. W szczególności przestrzega, gdy program jest zależny od długość ciągu lub tablicy (i dolne granice i długości tablicy wielowymiarowej). Przestrzega również, jak program używa różnych elementów, string lub tablicy. Następnie używa [moduł rozwiązywania ograniczeń](#constraint-solver) Aby określić długości i element wartości, które mogą powodować testu i programu w trakcie testu będzie działać w różny sposób.
+IntelliTest monitoruje instrukcje wykonanych podczas wykonywania testu, a program w ramach testu. W szczególności przestrzega, gdy program jest zależny od długość ciągu lub tablicy (i dolne granice i długości tablicy wielowymiarowej).
+Przestrzega również, jak program używa różnych elementów, string lub tablicy. Następnie używa [moduł rozwiązywania ograniczeń](#constraint-solver) Aby określić długości i element wartości, które mogą powodować testu i programu w trakcie testu będzie działać w różny sposób.
 
 IntelliTest próbuje zminimalizować rozmiar macierzy i ciągi wymaganym do wyzwolenia interesujące zachowania programu.
 

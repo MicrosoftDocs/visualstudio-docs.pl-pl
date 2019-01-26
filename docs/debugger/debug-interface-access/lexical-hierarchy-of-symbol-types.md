@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5695f2c2398a1abafb5325c85d5cd7e98324dab8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c32bdeee62216c17c7557d6651e608953b73b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928987"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 W poniższej tabeli przedstawiono typy symbol w hierarchia leksykalna.  
@@ -47,6 +47,6 @@ W poniższej tabeli przedstawiono typy symbol w hierarchia leksykalna.
   
 ## <a name="see-also"></a>Zobacz też  
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Idiasymbol::get_symtag —](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

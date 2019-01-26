@@ -1,32 +1,32 @@
 ---
-title: 'Samouczek: Rozpoczynanie pracy z usługą C# aplikacji konsoli'
+title: 'Samouczek: Tworzenie prostego C# aplikacji konsoli'
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 71a465b80f56cba56d0c20d3484765ca1837b167
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936960"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
-W ramach tego samouczka dla języka C#, użyjesz programu Visual Studio do tworzenia i uruchomisz aplikację konsoli i zapoznaj się z niektórymi funkcjami [środowiska zintegrowanego rozwoju Visual Studio (IDE)](../visual-studio-ide.md) podczas możesz to zrobić.
+W tym samouczku dla C#, użyjesz programu Visual Studio do tworzenia i uruchomisz aplikację konsoli i Poznaj niektóre funkcje programu Visual Studio zintegrowane środowisko programistyczne (IDE), chociaż możesz to zrobić.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -42,7 +42,23 @@ Aby rozpocząć, utworzymy C# projekt aplikacji. Typ projektu jest dostarczany z
 
 ### <a name="add-a-workgroup-optional"></a>Dodaj grupy roboczej (opcjonalnie)
 
-Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz ją uzyskać, dodając **programowanie dla wielu platform .NET Core** obciążenia. Aby dowiedzieć się, jak to zrobić, zobacz "[co to jest obciążenie i jak jedną dodać?](#workload)" sekcja w często zadawanych PYTAŃ.
+Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz ją uzyskać, dodając **programowanie dla wielu platform .NET Core** obciążenia. Poniżej przedstawiono sposób.
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Użyj okna dialogowego Nowy projekt
+
+1. Wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
+
+   ![Wybierz łącze Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
+
+   ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Użyj paska menu Narzędzia
+
+1. Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
+
+1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
 ## <a name="create-the-app"></a>Tworzenie aplikacji
 
@@ -69,7 +85,7 @@ Zacznijmy od niektórych matematyki całkowitoliczbowej w C#.
 
    ![Wybierz przycisk Kalkulator, aby uruchomić aplikację z paska narzędzi](./media/csharp-console-calculator-button.png)
 
-   Zostanie otwarte okno konsoli, która ujawnia sumę 42 + 119.  
+   Zostanie otwarte okno konsoli, która ujawnia sumę 42 + 119.
 
 1. Teraz, spróbuj zmienić `int c = a + b;` wiersz kodu przy użyciu innego operatora, takich jak `-` odejmowanie, `*` mnożenie, lub */* dla działu.
 
@@ -188,7 +204,10 @@ Udoskonaliliśmy nasza aplikacja Kalkulator podstawowego, ale go nie ma jeszcze 
 
 Na przykład, jeśli zostanie podjęta próba dzielenia liczby przez zero, lub wprowadź znaków alfanumerycznych, gdy aplikacja oczekuje, że znak numeryczny (lub odwrotnie), aplikacja przestaje działać i zwraca błąd.
 
-Teraz omówimy kilka typowych błędów danych wejściowych użytkownika, zlokalizuj je w [debugera](../../debugger/debugger-feature-tour.md)i rozwiąż je w kodzie.
+Teraz opisano kilka typowych błędów danych wejściowych użytkownika, zlokalizuj je w debugerze i naprawić w kodzie.
+
+>[!TIP]
+>Aby uzyskać więcej informacji na temat debugera i jak to działa, zobacz [Pierwsze spojrzenie na debugera programu Visual Studio](../../debugger/debugger-feature-tour.md) strony.
 
 ### <a name="fix-the-divide-by-zero-error"></a>Napraw błąd "dzielenie przez zero"
 
@@ -232,7 +251,7 @@ Aby naprawić ten błąd, możemy refaktoryzować kod, który wcześniej wpisano
 
 #### <a name="revise-the-code"></a>Popraw kod
 
-Zamiast polegać na `program` klasy do obsługi całego kodu, firma Microsoft będzie podzielić naszą aplikację dwóch klas: `calculator` i `program`.  
+Zamiast polegać na `program` klasy do obsługi całego kodu, firma Microsoft będzie podzielić naszą aplikację dwóch klas: `calculator` i `program`.
 
 `calculator` Klasy będzie obsługiwać większość pracy obliczeń i `program` klasy będzie obsługiwać interfejs użytkownika i przechwytywania błędów pracy.
 
@@ -506,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>Szybkie odpowiedzi na często zadawane pytania
-
-Poniżej przedstawiono listę często zadawanych PYTAŃ szybkiego aby zaznaczyć kilka podstawowych pojęć. Często zadawane pytania obejmuje również odpowiedzi na pytania, które mogą się po wykonaniu procedury w tym samouczku.
-
-### <a name="what-is-c"></a>Co to jest C#?
-
-C# to bezpieczny typowo język programowania, który działa w .NET Framework i .NET Core. Za pomocą języka C# można utworzyć Windows aplikacji, aplikacji typu klient serwer, aplikacji baz danych, sieci Web XML usług, rozpowszechnianych komponentów i więcej.
-
-### <a name="what-is-visual-studio"></a>Co to jest program Visual Studio?
-
-Program Visual Studio jest zintegrowanego rozwoju pakietu narzędzi zwiększających produktywność dla deweloperów. Go traktować jako program, który służy do tworzenia aplikacji i programów.
-
-### <a name="what-is-a-console-app"></a>Co to jest aplikacją konsoli?
-
-Aplikacja konsoli akceptuje dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, zwanego również Konsola.
-
-### <a name="what-is-net-core"></a>Co to jest .NET Core?
-
-Platforma .NET core to ewolucyjny następnym krokiem programu .NET Framework. Gdzie programu .NET Framework mogą pozwala na udostępnianie kodu w językach programowania .NET Core dodaje możliwość udostępniania kodu między platformami. Jeszcze lepiej jest "open source".
-
-(.NET Framework i .NET Core zawierają biblioteki, funkcji wbudowanych. Te aktualizacje obejmują również środowisko uruchomieniowe języka wspólnego (CLR), który działa jako maszynę wirtualną, w którym ma być uruchamiany w kodzie.)
-
-### <a id="workload"></a>Co to jest obciążenie i jak jedną dodać?
-
-Obciążenia w programie Visual Studio reprezentuje zestaw programistycznych, opcji i szablony, które umożliwiają dostosowanie instalacji programu Visual Studio. Obciążenie instaluje tylko narzędzia potrzebne do programowania języka i wybranej platformy. Poniżej przedstawiono sposób je zainstalować.
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Użyj okna dialogowego Nowy projekt
-
-1. Wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
-
-   ![Wybierz łącze Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
-
-   ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Użyj paska menu Narzędzia
-
-1. Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
-
-1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
-
 ## <a name="next-steps"></a>Następne kroki
 
 Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, przejdź do następujących samouczków.
@@ -557,4 +534,5 @@ Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, prze
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Podstawy języka C# dla początkujących kurs wideo](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Kurs wideo: C#Podstawy dla osób początkujących](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [Dowiedz się, jak debugowanie C# kodu w programie Visual Studio](tutorial-debugger.md)

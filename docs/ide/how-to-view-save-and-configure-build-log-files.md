@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dabfb6b9209ff57249ceb79460c2bc75e7d63bf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026199"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
 Po skompilowaniu projektu w środowisku IDE programu Visual Studio można wyświetlić informacje o tej kompilacji w **dane wyjściowe** okna. Za pomocą tych informacji, można na przykład rozwiązywania problemów dotyczących niepowodzenia kompilacji. Dla projektów języka C++, można również wyświetlić te same informacje w *.txt* pliku, który został utworzony i zapisywane automatycznie. Dla projektów kodu zarządzanego, można skopiować i wkleić informacje z **dane wyjściowe** okna do *.txt* plik i zapisz go samodzielnie. Aby określić, jakiego rodzaju informacje mają być wyświetlane dotyczące każdej kompilacji umożliwia także środowiska IDE.
 

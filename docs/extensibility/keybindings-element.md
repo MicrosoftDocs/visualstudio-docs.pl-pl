@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651587c6ab4de6873ff6d319a032a09d3ecc1375
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4caecb1af8e620c671d5c2cc63e032ad5e1df26d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920646"
 ---
 # <a name="keybindings-element"></a>KeyBindings, element
 KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiązań klawiszy.  
@@ -46,7 +46,7 @@ KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiąza
 |Element|Opis|  
 |-------------|-----------------|  
 |[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
-|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
+|[KeyBindings](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

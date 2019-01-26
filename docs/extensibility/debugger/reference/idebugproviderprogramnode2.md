@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80f86ac24d6e9e214b19a3e8c4564bdf11523b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b21b643c372cb5481868bc28496f273d4b6a5287
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041350"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Ten interfejs kieruje związane z interfejsów granice procesu.  
@@ -45,7 +45,7 @@ IDebugProviderProgramNode2 : IUnknown
  Ten interfejs jest implementowany, gdy DE jest uruchamiane w innej przestrzeni procesu debugowanego: na przykład, gdy DE jest uruchomiony w przestrzeni procesu programu Visual Studio, zamiast obszaru debugowanego procesu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

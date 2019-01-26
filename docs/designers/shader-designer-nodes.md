@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77af1e3edbe1a8ced088dd7c8c8b1afb2ae677cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4793a6e4e5b2db841c3d4fded1c1ea41e3de9816
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042026"
 ---
 # <a name="shader-designer-nodes"></a>Węzły projektanta cieniowania
 Artykuły w tej sekcji dokumentacji zawierają informacje dotyczące różnych węzłów programu Shader Designer używanych do tworzenia efektów grafiki.

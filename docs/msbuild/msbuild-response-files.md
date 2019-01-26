@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156a0614ad47839187056e4e0a24b5ee2f7ae2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3777be5701e9876352db41a5454d5e12668f6f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932120"
 ---
 # <a name="msbuild-response-files"></a>Pliki odpowiedzi MSBuild
 Odpowiedź (*rsp*) pliki to pliki tekstowe, które zawierają *MSBuild.exe* przełączniki wiersza polecenia. Każdy przełącznik może być w oddzielnym wierszu lub wszystkich przełączników mogą znajdować się na jeden wiersz. Komentarz wiersze są poprzedzone znakiem **#** symboli. **@** Przekazać inny plik odpowiedzi, który jest używany przełącznik *MSBuild.exe*.  

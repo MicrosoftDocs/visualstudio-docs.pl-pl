@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4285c9e83521e991deafaf5e35c32acb1dd8867f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76229d86c973c9ef512ecf5039ae420085129160
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029248"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger, metoda
 Pobiera tablicę wszystkich <xref:System.Threading.Tasks.TaskScheduler> obiektów, które są aktualnie aktywne.  

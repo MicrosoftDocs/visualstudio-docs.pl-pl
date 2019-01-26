@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2 | Dokumentacja firmy Microsoft
+title: IDebugCoreServer2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33347f985f1c495e61e097e04890ca6931751331
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ace007b07b2e36004d034a804f9e1a070d0c92e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921760"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963102"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 Ten interfejs jest używany do reprezentowania i uzyskiwania informacji z serwera na komputerze w sieci.  
@@ -53,7 +53,7 @@ IDebugCoreServer2 : IUknown
  Ten interfejs jest również używany przez program Visual Studio do przeglądania procesów uruchomionych na komputerach w sieci.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

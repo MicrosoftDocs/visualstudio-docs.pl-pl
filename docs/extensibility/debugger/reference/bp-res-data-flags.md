@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0d8f842d68e9f307b720409203e02db36aec45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8db95158ece61792148483a88fb7b4b9c4bf76ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025621"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Określa, czy punkt przerwania danych jest emulowane lub wdrożonych w sprzętu.  
@@ -45,7 +45,7 @@ public enum enum_BP_RES_DATA_FLAGS { 
  Używany do `dwFlags` członkiem [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

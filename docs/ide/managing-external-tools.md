@@ -9,15 +9,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: d82a42e83364e43afbe242e93c7f08dbfb27be96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154066"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025803"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
@@ -67,7 +67,7 @@ Oto Pełna lista argumentów, które mogą być używane podczas definiowania na
 |Katalog danych binarnych|$(BinDir)|Lokalizacji końcowej plik binarny, który jest konstruowany (zdefiniowany jako dysku i ścieżki).|
 |Katalog projektu|$(ProjectDir)|Katalog bieżący projekt (dysku i ścieżki).|
 |Nazwa pliku projektu|$(ProjectFileName)|Nazwa pliku bieżącego projektu (dysk i ścieżkę pliku nazwa).|
-|Katalog rozwiązania|$ (Solutiondir)|Katalog bieżącego rozwiązania (dysku i ścieżki).|
+|Katalog rozwiązania|$(SolutionDir)|Katalog bieżącego rozwiązania (dysku i ścieżki).|
 |Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk i ścieżkę pliku nazwa).|
 
 > [!NOTE]

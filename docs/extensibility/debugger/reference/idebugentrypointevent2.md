@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bf75f84d8adf6aa8786c02a6b5fb1a927be7595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2205ef7d6fa8b270ce30224f867dd2c318272b37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992285"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 Aparat debugowania (DE) wysyła ten interfejs do Menedżer debugowania sesji (SDM), gdy program ma wykonać jego pierwszej instrukcji kodu użytkownika.  
@@ -40,7 +40,7 @@ IDebugEntryPointEvent2 : IUnknown
  Kiedy wysyła DE `IDebugEntryPointEvent2`, bieżącej pozycji kodu powinna być w pierwszej instrukcji kodu użytkownika, na przykład `main`.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

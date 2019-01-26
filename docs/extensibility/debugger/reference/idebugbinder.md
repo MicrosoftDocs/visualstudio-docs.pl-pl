@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e425a1790c2452e56061c8f4adee3c473e4b58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69a2a85ae3058f5172240d7da6aeaa6cd8c35d47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040947"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]

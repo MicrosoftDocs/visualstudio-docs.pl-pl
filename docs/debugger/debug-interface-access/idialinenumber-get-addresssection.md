@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a01c1bae-04b2-4c30-8621-60939a3124c2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7be1140cbfbdda23b2cb2861f9fbd51bb711dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c764e99fc9c5e5024ccc3d508949fd3a9d9b39e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920594"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
 Pobiera część sekcji adres pamięci, gdzie rozpoczyna się w bloku.  

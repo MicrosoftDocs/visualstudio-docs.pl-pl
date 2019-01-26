@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66eb38ce-a5e1-467e-b845-b3dc433eda91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1202f5956d0ab32c8be75438077a3277b6ff1029
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 750df05aa2a6d4665bc4e212a14eac435eab25fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036020"
 ---
 # <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
 Pobiera flagę wskazującą, czy sekcja jest plik wykonywalny jako kod.  

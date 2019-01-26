@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895444"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967550"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjmuje plik .imagemanifest dla usługi obrazów programu Visual Studio i generuje plik z otoką lub plików do odwoływania się do wartości manifestu obrazu w języku C++, C#, VB lub vsct plików dla programu Visual Studio rozszerzenia. To narzędzie generuje pliki otoki, których można użyć dla obrazów żądania z usługi Visual Studio obraz bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego interfejsu użytkownika i renderowania.  
@@ -33,18 +33,18 @@ Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjm
 |/imageIdClass|Nazwa imageIdClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyImageIds. \<Lang Ext >|Optional|  
 |/monikerClass|Nazwa monikerClass i skojarzony plik utworzony przez narzędzie. Dla opcji języka C++ są generowane tylko pliki .h. To jest ignorowany dla języka VSCT.<br /><br /> Wartość domyślna: \<Ścieżka manifestu > \MyMonikers. \<Lang Ext >|Optional|  
 |/classAccess|Modyfikator dostępu dla imageIdClass i monikerClass. Sprawdź, czy modyfikator dostępu jest prawidłowy dla danego języka. To jest ignorowany dla opcji języka VSCT.<br /><br /> Wartość domyślna: Public|Optional|  
-|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo '. 'lub'::' są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: Mojeobrazy|Optional|  
-|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|/ Namespace|Przestrzeń nazw zdefiniowana w otokę kodu. To jest ignorowany dla opcji języka VSCT. Albo '. 'lub'::' są separatory prawidłowy obszar nazw, niezależnie od opcji wybranym języku.<br /><br /> Wartość domyślna: MyImages|Optional|  
+|/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
--   /Manifest:D:\MyManifest.imagemanifest ManifestToCode w/Language: CSharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: Moje:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Uwagi  
   

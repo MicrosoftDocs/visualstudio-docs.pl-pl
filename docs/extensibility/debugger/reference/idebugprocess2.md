@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2 | Dokumentacja firmy Microsoft
+title: IDebugProcess2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2a17c5c9f4121725ebfb9ca5a01f6209408c9a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdb218bb7b982d145d2c296edb68a00dff144349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031229"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Ten interfejs reprezentuje proces uruchomiony na porcie. Jeśli port lokalny port, następnie `IDebugProcess2` zazwyczaj reprezentuje fizyczny proces na komputerze lokalnym.  
@@ -70,9 +70,9 @@ IDebugProcess2 : IUnknown
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Getprocess —](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
+ [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Getprocess —](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)   
+ [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)   
  [Dalej](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)   
  [Zdarzenia](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

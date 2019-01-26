@@ -1,5 +1,5 @@
 ---
-title: 'CA1303: Nie przekazuj literałów jako parametrów zlokalizowanych'
+title: 'CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ada56147ae384303b0d2fed736f41c9e6c11ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca26a7c0a11915f1f68fab2ec4a6e4b3268f349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043352"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie przekazuj literałów jako parametrów zlokalizowanych
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie przekazuj literałów jako zlokalizowanych parametrów
 
 |||
 |-|-|

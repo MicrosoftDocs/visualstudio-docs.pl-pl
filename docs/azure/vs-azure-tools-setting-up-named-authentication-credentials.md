@@ -2,7 +2,7 @@
 title: Skonfiguruj poświadczenia uwierzytelniania o nazwie | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak Podaj poświadczenia, które Visual Studio może użyć do uwierzytelniania żądań do platformy Azure, dzięki czemu można opublikować aplikację na platformie Azure z programu Visual Studio lub monitorowanie istniejącej usługi w chmurze.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b4ae1be3c0c024f7cafb4f1b5ee3e82558cced83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b8b3ab9bc5bd61a4abc983826cc97c3d032e824
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034840"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Konfigurowanie nazwanych poświadczeń uwierzytelniania
 
@@ -39,6 +39,6 @@ Jeśli chcesz samodzielnie utworzyć certyfikat, mogą odwoływać się do instr
 ## <a name="next-steps"></a>Następne kroki
 
 - [Ogólne omówienie aplikacji sieci Web](https://docs.microsoft.com/azure/app-service/)
-- [Wdrażanie aplikacji w usłudze Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Wdrażanie aplikacji w usłudze Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Wdrażanie zadań Webjob za pomocą programu Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Tworzenie i wdrażanie usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

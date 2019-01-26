@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74ef70228979d1d302a644cda022d086e710b7c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822774"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921023"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
@@ -61,5 +61,5 @@ Aby uzyskać więcej informacji na temat informacji zbieranych, przetwarzanych l
 * [Informacje diagnostyczne zebrane przez program Visual Studio](diagnostic-data-collection.md)
 * [Porozmawiaj z nami](../ide/talk-to-us.md)
 * [Jak zgłosić problem z programem Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-* [Fora społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
 * [Poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement)

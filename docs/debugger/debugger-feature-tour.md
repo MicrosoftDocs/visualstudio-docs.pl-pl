@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042065"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 
@@ -43,7 +43,7 @@ Firma Microsoft zapewnia skróty klawiaturowe dla większości poleceń, poniewa
 
 Aby uruchomić aplikację w debugerze, naciśnij klawisz **F11** (**Debuguj > Step Into**). Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. Po uruchomieniu aplikacji za pomocą F11 debuger przerywa na pierwszej instrukcji, która zostanie wykonana.
 
-![F11 Wkrocz](../debugger/media/dbg-tour-f11.png "F11 Wkrocz do")
+![F11 Step Into](../debugger/media/dbg-tour-f11.png "F11 Step Into")
 
 Żółta strzałka reprezentuje instrukcji, w której debuger wstrzymany, również zawiesza wykonywanie aplikacji w tym samym punkcie (Ta instrukcja nie jeszcze wykonane).
 
@@ -185,7 +185,7 @@ W tym przykładzie **pomocnika wyjątków** pokazuje `System.Argument` wyjątku 
 
 W tym przykładzie `DirectoryInfo` wywołanie udostępniła błędu na pusty ciąg, które są przechowywane w `value` zmiennej.
 
-Pomocnik wyjątków jest doskonałym funkcja, która pomaga debugować błędy. Można również wykonywać następujące czynności dla widoku szczegółów błędu i Dodaj wyrażenie kontrolne z Pomocnika wyjątków. Lub, jeśli to konieczne, można zmienić warunków zgłaszania określonego wyjątku. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md).
+Pomocnik wyjątków jest doskonałym funkcja, która pomaga debugować błędy. Można również wykonywać następujące czynności dla widoku szczegółów błędu i Dodaj wyrażenie kontrolne z Pomocnika wyjątków. Lub, jeśli to konieczne, można zmienić warunków zgłaszania określonego wyjątku. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
 > Pomocnik wyjątków zastępuje Asystenta wyjątków w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].

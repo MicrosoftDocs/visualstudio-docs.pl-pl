@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 9b057d10e03274186160fc468da8fbc7714ffe14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269518"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034080"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych aplikacji. Technik opisanych w tej sekcji są techniki wysokiego poziomu. Mechanika przy użyciu debugera programu Visual Studio, można zobaczyć [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)).  

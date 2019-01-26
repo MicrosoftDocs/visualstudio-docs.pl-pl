@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5474ccf175c3f3cbb5b1d92a405f235ba665352
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ead53c33fb1af321fb790f0f7caf9532c9e58b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027870"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 Zwraca następny zestaw elementów z wyliczenia.  

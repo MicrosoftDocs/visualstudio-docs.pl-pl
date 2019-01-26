@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b197913abecbaf2ff74913a41720f464646fc67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16ba1c2fd9b1bd562171a69a846fed4e37352f54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030447"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Błąd: Błąd logowania zdalnego grupy roboczej
 Odczytuje ten błąd:  
@@ -71,7 +71,7 @@ Odczytuje ten błąd:
   
 5.  W **dostęp sieciowy: Udostępnianie i model zabezpieczeń dla kont lokalnych** okna dialogowego pola, zmień wartość na **klasycznego — uwierzytelnianie użytkowników lokalnych, jak samodzielnie** i kliknij przycisk **Zastosuj** przycisku.  
   
-     ![Opcje zabezpieczeń zasady zabezpieczeń lokalnych](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Local Security Policy Security Options](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Zobacz też  
  [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   

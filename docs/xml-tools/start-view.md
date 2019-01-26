@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042254"
 ---
 # <a name="start-view"></a>Widok startowy
 
@@ -42,9 +42,9 @@ Następujące przyciski są włączone w pasku narzędzi Projektanta XSD, gdy wi
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do widoku startowego. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**2**.|
-|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **CTRL**+**3**.|
+|**Pokaż widok startowy**|Przełącza do widoku startowego. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do widoku modelu zawartości. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do widoku wykresu. Ten widok jest możliwy za pomocą skrótów klawiaturowych: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Zobacz także
 

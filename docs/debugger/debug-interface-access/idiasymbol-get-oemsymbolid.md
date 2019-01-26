@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d12001e11e69bed1fe306e36192291dd9a06a35a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c255dd670d5cf8e8c9e68a0f953697c8f3ce36a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848327"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034350"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Pobiera wartość Identyfikatora symbolu producenta sprzętu (OEM).  
@@ -46,5 +46,5 @@ HRESULT get_oemSymbolId ( 
  Ta właściwość ma zastosowanie tylko do symboli z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) typu `SymTagCustomType`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

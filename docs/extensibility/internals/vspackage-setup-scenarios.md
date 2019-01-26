@@ -6,15 +6,15 @@ helpviewer_keywords:
 - VSPackages, deployment considerations
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f92e2b3d73c29896153df9f1496e286ffcca752b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922002"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
@@ -36,11 +36,11 @@ Zliczanie odwołań występuje na poziomie składnika. W związku z tym mieszani
 
 Na przykład, wartości rejestru są używane do rejestrowania swojej pakietów VSPackage przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] powinny być przechowywane w składniku oddzielnie od używany do rejestrowania Twojego pakietu VSPackage przy użyciu programu Visual Studio. Wartości rejestru lub plików udostępnionych przejść w jeszcze inny składnik.
 
-## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Udostępnione pakietu VSPackage
+## <a name="scenario-1-shared-vspackage"></a>Scenariusz 1: Shared VSPackage
 
 W tym scenariuszu udostępnionego pakietu VSPackage (pojedynczy plik binarny, który obsługuje wielu wersji programu Visual Studio jest dostarczany w pakiecie Instalatora Windows. Rejestrowanie z każdą wersją programu Visual Studio jest kontrolowana przez funkcje wybierane przez użytkownika. Oznacza to również, że po przypisaniu do oddzielania funkcji, każdego składnika można wybrać indywidualnie celu instalacji lub odinstalowania, zapewnieniem użytkownikowi kontroli nad integrowanie pakietu VSPackage różne wersje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Zobacz [funkcje Instalatora Windows](/windows/desktop/Msi/windows-installer-features) Aby uzyskać więcej informacji na temat korzystania z funkcji w pakietów Instalatora Windows.)
 
-![Instalator udostępnionego pakietu VSPackage VS](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
+![VS Shared VSPackage installer](../../extensibility/internals/media/vs_sharedpackage.gif "VS_SharedPackage")
 
 Jak pokazano na ilustracji, składników udostępnionych stają się częścią funkcji Feat_Common, która będzie zawsze instalowana. Przez funkcje Feat_VS2002 i Feat_VS2003 widoczności, użytkownicy mogą wybrać w momencie instalacji w wersjach programu Visual Studio mają pakietu VSPackage, aby zintegrować. Użytkownicy mogą również używać trybu konserwacji Instalatora Windows do dodawania lub usuwania funkcji, która w tym przypadku dodaje lub usuwa informacje o rejestracji pakietu VSPackage z różnych wersji programu Visual Studio.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036943"
 ---
 # <a name="average-cpu-utilization"></a>Średnie wykorzystanie procesora CPU
 Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzenie logiczne systemu w czasie trwania procesu. Wykres nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50% dla danego okresu, w tym widoku pokaże jednego rdzenia logicznego wykorzystywane.  

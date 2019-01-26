@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS | Dokumentacja firmy Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6037abb152c1ff582787c8ebebe16c027c96cc20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39586e8d6c6417bbfa828b2dc58b63b1cfdc532b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947130"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920472"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Określa flagi, które kontrolują Obliczanie wyrażenia.  
@@ -77,7 +77,7 @@ public enum enum_EVALFLAGS {
  Te flagi mogą być łączone z bitowe OR.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

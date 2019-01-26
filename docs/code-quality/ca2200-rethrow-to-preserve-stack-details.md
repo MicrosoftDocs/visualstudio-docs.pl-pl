@@ -1,5 +1,5 @@
 ---
-title: 'CA2200: Ponownie, aby zachować szczegóły stosu'
+title: 'CA2200: Ponowie zgłoś wyjątek, aby zachować szczegóły stosu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b52d6d9081827de764e47399dc09159d29ad149
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f2dcc8a39e5ad29c590c5f0a7283154bfe1361a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915776"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036397"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Ponownie, aby zachować szczegóły stosu
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Ponowie zgłoś wyjątek, aby zachować szczegóły stosu
 
 |||
 |-|-|

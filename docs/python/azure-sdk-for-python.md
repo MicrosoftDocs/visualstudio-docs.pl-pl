@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: db391b30305e3fad8384dcbeea611379f0061054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b14066272fa160cf2b4fc9f344185a3b68751926
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031724"
 ---
 # <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>Korzystanie z usług platformy Azure przy użyciu zestawu Azure SDK dla języka Python
 

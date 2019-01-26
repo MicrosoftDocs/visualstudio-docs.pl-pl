@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bae9005c8acc1272c8ca2142f929bffc03c54e16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878656"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033503"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData — Element (szablony Visual Studio)
 Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,24 +51,24 @@ Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub 
 | [Nazwa](../extensibility/name-element-visual-studio-templates.md) | Element wymagany.<br /><br /> Określa nazwę szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe. |
 | [Opis](../extensibility/description-element-visual-studio-templates.md) | Element wymagany.<br /><br /> Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe. |
 | [Ikona](../extensibility/icon-element-visual-studio-templates.md) | Element wymagany.<br /><br /> Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która pojawia się w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe dla szablonu. |
-| [Typ projektu](../extensibility/projecttype-element-visual-studio-templates.md) | Element wymagany.<br /><br /> Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** okno dialogowe. |
-| [Projectsubtype —](../extensibility/projectsubtype-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Klasyfikuje szablon projektu, tak aby pojawiło się pod określonym podkategorii w **nowy projekt** okno dialogowe. |
+| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Element wymagany.<br /><br /> Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** okno dialogowe. |
+| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Klasyfikuje szablon projektu, tak aby pojawiło się pod określonym podkategorii w **nowy projekt** okno dialogowe. |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa identyfikator szablonu. |
-| [Templategroupid —](../extensibility/templategroupid-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa identyfikator szablonu grupy. |
+| [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa identyfikator szablonu grupy. |
 | [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa wartość, która jest służy do rozmieszczania szablonu, wśród innych szablonów w ramach tej samej kategorii, wyświetlaną w albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe. |
-| [Createnewfolder —](../extensibility/createnewfolder-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy zawierający folder jest tworzony przy tworzeniu wystąpienia projektu. |
+| [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy zawierający folder jest tworzony przy tworzeniu wystąpienia projektu. |
 | [Defaultname —](../extensibility/defaultname-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa nazwę, który zostanie wygenerowany przez system projektu programu Visual Studio dla projektu lub elementu, podczas jego tworzenia. |
-| [Providedefaultname —](../extensibility/providedefaultname-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy system projektu programu Visual Studio wygeneruje domyślną nazwę projektu lub elementu po jego utworzeniu. |
-| [Promptforsaveoncreation —](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy można utworzyć projektu jako projekt tymczasowy. |
+| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy system projektu programu Visual Studio wygeneruje domyślną nazwę projektu lub elementu po jego utworzeniu. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy można utworzyć projektu jako projekt tymczasowy. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okno dialogowe, dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w której zostanie zapisany nowy projekt. |
 | [Ukryte](../extensibility/hidden-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon jest wyświetlany w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe. |
-| [Locationfieldmruprefix —](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Element opcjonalny. |
+| [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Element opcjonalny. |
 | [Locationfield —](../extensibility/locationfield-element-visual-studio-project-templates.md) | Element opcjonalny.<br /><br /> Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jest włączona, wyłączona albo ukryty w przypadku szablonu projektu. |
 | [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Użyj tego elementu, jeśli szablon obsługuje tylko określoną wersję minimalną i nowsze wersje ewentualnej programu .NET Framework. |
 | [Supportsmasterpage —](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon obsługuje stronę wzorcową dla projektów sieci web. |
-| [Supportscodeseparation —](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon obsługuje separacją kodu lub modelu strony związanym z kodem dla projektów sieci web. |
-| [Supportslanguagedropdown —](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon jest taka sama dla wielu języków oraz czy **języka** opcja jest dostępna z **nowy projekt** okno dialogowe. |
+| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon obsługuje separacją kodu lub modelu strony związanym z kodem dla projektów sieci web. |
+| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa, czy szablon jest taka sama dla wielu języków oraz czy **języka** opcja jest dostępna z **nowy projekt** okno dialogowe. |
 | [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | Element opcjonalny.<br /><br /> Określa platformę, że projekt jest ukierunkowany szablonu. Ten element określa, że szablon projektu jest używany do tworzenia [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji. |
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
@@ -110,5 +110,5 @@ Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub 
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

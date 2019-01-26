@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80896483e0d7d1f3b42fce11ed53cbd253dc1b82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030135"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Instrukcje: Tworzenie zlokalizowanego pakietu programu inicjującego
 Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla poszczególnych ustawień regionalnych, można utworzyć zlokalizowane wersje pakietu programu inicjującego: postanowienia licencyjne dotyczące oprogramowania plików (takich jak *eula.rtf*) oraz manifest pakietu (*package.xml*).  
@@ -47,20 +47,20 @@ Po utworzeniu pakietu programu inicjującego, tworząc dwie więcej plików dla 
   
     |Regionalne|Nazwa folderu|  
     |------------|-----------------|  
-    |Chiński uproszczony|nazwy zh-Hans|  
-    |Chiński (tradycyjny)|nazwy zh-Hant|  
-    |czeski|CS|  
+    |Chiński uproszczony|zh-Hans|  
+    |Chiński (tradycyjny)|zh-Hant|  
+    |czeski|cs|  
     |niemiecki|Niemcy|  
     |Angielski|pl|  
-    |Hiszpański|ES|  
-    |Francuski|FR|  
+    |Hiszpański|es|  
+    |Francuski|fr|  
     |Włoski|go|  
     |koreański|ko|  
     |japoński|ja|  
     |polski|pl|  
     |portugalski (Brazylia)|pt-BR|  
     |Rosyjski|ru|  
-    |turecki|TR|  
+    |turecki|tr|  
   
 2.  Utwórz plik, który zawiera postanowienia licencyjne dotyczące oprogramowania pakietu programu inicjującego i umieścić go w nowym folderze.  
   

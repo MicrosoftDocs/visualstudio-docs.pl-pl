@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673db7f0e31a32e7e4fdf92e447f373b5a29dfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 671593cf19eab22d1b7e233481ee4004ca8ed8ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925102"
 ---
 # <a name="no-source-available"></a>Nie jest dostępne żadne źródło
 Projekt nie zawiera kodu źródłowego dla kodu, który chcesz wyświetlić. Najczęstszą przyczyną jest dwukrotne kliknięcie modułu, który nie ma kodu źródłowego w **okna stosu wywołań** lub **okno wątków**. Można kontynuować debugowania, ale nie można użyć okna źródła do ustawiania punktów przerwania i wykonywać inne działania w tej lokalizacji. Jeśli potrzebujesz ustawić punkt przerwania, użyj **okna dezasemblacji** zamiast tego.  

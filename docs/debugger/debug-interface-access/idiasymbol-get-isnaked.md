@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a91a605a0f1b08ee3c8c1d005a1af21e086b88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9d30ff3762e8c429cdd92725ee79c6bff603db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924457"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Pobiera flagę określającą, czy funkcja ma ["naked"](/cpp/cpp/naked-cpp) atrybutu (oznacza to, że funkcja ma żaden kod prologu i epilogu dodane przez kompilator).  
@@ -48,5 +48,5 @@ HRESULT get_isNaked(
 |Wersja:|DIA SDK w wersji 8.0|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Wywołania funkcji Naked](/cpp/cpp/naked-function-calls)

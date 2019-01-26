@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e014889613317f773a741b6e43e6f08e5494af5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46df412a1f3f717ae8a8ee369b9b6f57a0242d04
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929104"
 ---
 # <a name="properties-window-object-list"></a>Lista obiektów okna właściwości
 Lista obiektów w **właściwości** okno jest listy umożliwia zmianę zaznaczenia do innych obiektów, które są dostępne w ramach jednego lub kilku wybranych okien. Wybierając inny obiekt na tej liście wyzwala wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> poinformować środowiska wybrano nowego obiektu. Informacje wyświetlane w **właściwości** okna jest następnie zmieniane, aby wyświetlić właściwości skojarzone z nowo wybrany obiekt.  

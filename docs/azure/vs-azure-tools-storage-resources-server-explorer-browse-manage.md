@@ -2,7 +2,7 @@
 title: Przeglądanie i zarządzanie zasobami magazynu za pomocą Eksploratora serwera | Dokumentacja firmy Microsoft
 description: Przeglądanie i zarządzanie zasobami magazynowania za pomocą Eksploratora serwera
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: dc4e5abf5ecc96ea11771158c646d67492f85ec4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97c6bea6fbdb676e33be1bfc9aa40ebbfe9eac85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934632"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -44,7 +44,7 @@ Do wyświetlania zasobów w ramach konta magazynu, rozwiń węzeł konta magazyn
 ### <a name="to-create-a-blob-container"></a>Aby utworzyć kontener obiektów blob
 
 1. Otwórz menu skrótów dla **obiektów blob** węzeł, a następnie wybierz **Utwórz kontener obiektów Blob**.
-1. W **Utwórz kontener obiektów Blob** okna dialogowego wprowadź nazwę nowego kontenera.  
+1. W **Utwórz kontener obiektów Blob** okna dialogowego wprowadź nazwę nowego kontenera.
 1. Naciśnij klawisz Enter na klawiaturze lub możesz kliknąć lub nacisnąć poza pole nazwy, aby zapisać kontenera obiektów blob.
 
    > [!NOTE]
@@ -286,7 +286,7 @@ Jeśli utworzono konto magazynu przy użyciu **dostęp do odczytu z magazynu geo
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>Aby usunąć konto storage z poziomu Eksploratora serwera
 
-W Eksploratorze serwera, otwórz menu skrótów dla nazwy konta, a następnie wybierz **Usuń**. 
+W Eksploratorze serwera, otwórz menu skrótów dla nazwy konta, a następnie wybierz **Usuń**.
 
 Jeśli usuniesz konto magazynu, wszelkie zapisane informacje o kluczu dla tego konta zostaną również usunięte.
 

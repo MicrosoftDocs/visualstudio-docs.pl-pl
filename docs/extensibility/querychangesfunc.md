@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a50de0f08f5e31404a6dbe2cbf3a268ee53cc69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d281de537d55fad74538df9ed34efc662acaab0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037034"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Jest to funkcja wywołania zwrotnego używane przez [SccQueryChanges](../extensibility/sccquerychanges-function.md) operację, aby wyliczyć Kolekcja nazw plików i ustalić stan każdego pliku.  

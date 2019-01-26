@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026362"
 ---
 # <a name="idiasession"></a>IDiaSession
 Udostępnia kontekst zapytania dla symboli debugowania.  
@@ -110,18 +110,18 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [plik exe](../../debugger/debug-interface-access/exe.md)   
- [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::opensession —](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [Idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Używanie zapytań dotyczących pliku .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

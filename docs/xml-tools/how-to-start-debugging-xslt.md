@@ -5,17 +5,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 170d4d3d0c952e13a5fefb74b23536f50be1e9a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 966bcaa9a2fc2e9a07166f2851c34af9f9574d2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956249"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Instrukcje: Rozpoczynanie debugowania kodu XSLT
 
@@ -93,4 +93,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik: Debugowanie arkusza stylów XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)   
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

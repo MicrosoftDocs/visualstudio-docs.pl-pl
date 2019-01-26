@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5217e9bd86462b793a9172ba3073c12bc9502d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51a8df6b84f248ca5cf48ad70f4f9fc1111ccbd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022914"
 ---
 # <a name="how-to-display-process-properties"></a>Instrukcje: Wyświetlanie właściwości procesu
 Aby dowiedzieć się więcej na temat procesu, na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).  

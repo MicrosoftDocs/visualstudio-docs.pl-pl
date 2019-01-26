@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b0a686dee156710584263b1bde76b0ae1552a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff1315b2af395e8d809c2cbcbf9f642ac1c93557
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029885"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Określa stan oczekujący punkt przerwania (punkt przerwania, która nie została jeszcze powiązana).  
@@ -60,7 +60,7 @@ public enum enum_PENDING_BP_STATE { 
  Użyj jako `state` członkiem [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

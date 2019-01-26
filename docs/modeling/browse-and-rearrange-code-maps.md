@@ -19,16 +19,16 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9bec9a2ceaee03d73f02511c84393902dd66839b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd9c431bdac6eb258084944bcff80c86e81796f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042702"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
 
@@ -279,7 +279,7 @@ Możesz zmienić ikony na elementy kodu i kolory elementów kodu i linki korzyst
 
 5.  Skorzystaj z poniższej tabeli, aby wybrać styl, który ma zostać zmieniony:
 
-    |**Aby zmienić**|**Wybierz opcję**|
+    |**Aby zmienić**|**Choose**|
     |-|-|
     |Kolor tła|**Tło**|
     |Kolor konturu|**Pociągnięcia**|
@@ -306,7 +306,7 @@ Można ponownie rozmieścić, usunąć lub tymczasowo dezaktywować style w **le
 
 2.  Wykonaj jedno z następujących zadań:
 
-    |**To**|**Wybierz opcję**|
+    |**To**|**Choose**|
     |-|-|
     |Dezaktywuj element kodu|**Wyłącz**|
     |Usuń code element|**Delete**|

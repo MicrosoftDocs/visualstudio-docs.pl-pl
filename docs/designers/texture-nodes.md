@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858857dae187174a70740a91063943383526def9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e426201acc0aed4c6d5fe897e78d261edaa5e4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041909"
 ---
 # <a name="texture-nodes"></a>Węzły tekstury
 
@@ -31,5 +31,5 @@ W projektancie programu do cieniowania węzły tekstury przykładowy różne typ
 |**Obróć mapowanie UV**|Obraca się współrzędnych tekstury określonego wokół punktu centralnego w funkcji czasu.<br /><br /> Służy to do obrócenia tekstury lub mapy normalnej na powierzchni obiektu.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne wymiany.<br /><br /> `Time`: `float`<br /> Długość czasu, aby przesunąć, w ciągu kilku sekund.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`<br /> Obrócony współrzędne.|**Współrzędnej X środka**<br /> Współrzędna x definiująca środek obrotu.<br /><br /> **Wyśrodkuj na osi Y**<br /> Współrzędna y definiująca środek obrotu.<br /><br /> **szybkość**<br /> Kąt w radianach, przez który Tekstura obraca się w ciągu sekundy.|
 |**Współrzędna tekstury**|Współrzędne tekstury bieżącego piksela.<br /><br /> Współrzędne tekstury są określane przez interpolacji między atrybutów współrzędnych tekstury pobliskich wierzchołków. To można traktować jako pozycję bieżącego piksela w przestrzeni tekstury.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`<br /> Współrzędne tekstury.|Brak|
 |**Wymiary tekstury**|Dane wyjściowe, szerokość i wysokość mapy tekstury 2W.<br /><br /> Wymiary tekstury umożliwia należy wziąć pod uwagę szerokość i wysokość tekstury w modułu cieniującego.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`<br /> Szerokość i wysokość tekstury, wyrażone jako wektor. Szerokość znajduje się w pierwszym elemencie wektora. Wysokość jest przechowywany w elemencie drugiego.|**Tekstury**<br /> Rejestr tekstury skojarzony z wymiarów tekstury.|
-|**Delta Teksela**|Generuje różnicowej (odległość) między tekseli mapy tekstury 2W.<br /><br /> Delta teksela służy do próbkowania sąsiadujących wartości texel w module cieniującym.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`<br /> Delta (odległość) z teksela do dalej teksela (przenoszenie po przekątnej w kierunku dodatnią,), wyrażone jako wektor w przestrzeni tekstury znormalizowana. Pochodzi z pozycji wszystkie tekseli sąsiednich, selektywnie ignorowanie lub Negacja współrzędne U lub V różnicowej.|**Tekstury**<br /> Rejestr tekstury skojarzony z delty teksela.|
+|**Texel Delta**|Generuje różnicowej (odległość) między tekseli mapy tekstury 2W.<br /><br /> Delta teksela służy do próbkowania sąsiadujących wartości texel w module cieniującym.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float2`<br /> Delta (odległość) z teksela do dalej teksela (przenoszenie po przekątnej w kierunku dodatnią,), wyrażone jako wektor w przestrzeni tekstury znormalizowana. Pochodzi z pozycji wszystkie tekseli sąsiednich, selektywnie ignorowanie lub Negacja współrzędne U lub V różnicowej.|**Tekstury**<br /> Rejestr tekstury skojarzony z delty teksela.|
 |**Próbki tekstury**|Pobiera próbkę koloru z mapy tekstury 2D na określonych współrzędnych.<br /><br /> Można użyć mapy tekstury, aby udostępnić szczegóły koloru na powierzchni obiektu.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne, w którym próbki.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Przykład koloru.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem.|

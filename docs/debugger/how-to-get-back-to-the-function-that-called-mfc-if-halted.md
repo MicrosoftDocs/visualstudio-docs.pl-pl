@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b3d95108ac91066da51feed9f5813d15693d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8430c1814e83dbd8410b0f172a15d879bb221cf3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956678"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Instrukcje: Wróć do funkcji, która wywołała MFC przy zatrzymaniu
 

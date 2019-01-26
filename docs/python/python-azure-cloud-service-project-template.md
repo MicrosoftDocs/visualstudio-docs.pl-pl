@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59ca011b425848e2e6ffb3fa4ada8b998b79bdc4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921976"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
 

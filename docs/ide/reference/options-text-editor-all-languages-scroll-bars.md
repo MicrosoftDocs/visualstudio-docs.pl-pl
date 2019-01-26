@@ -30,15 +30,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54d70789fd603f66bdf60af7bb0198030be6b524
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec0121f9048151ae91bd21d9ede1528f6e48f812
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945115"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opcje, Edytor tekstu wszystkie języki paski przewijania
 To okno dialogowe pozwala zmienić domyślne zachowanie paska przewijania w edytorze kodu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **pasków przewijania**.

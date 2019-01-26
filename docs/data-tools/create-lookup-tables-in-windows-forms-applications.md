@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eddbdfe8b2b5f6f3c5940200077f29df0d6003a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043374"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 
@@ -54,7 +54,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
     |Właściwość|Wyjaśnienie ustawienia|
     |--------------| - |
     |**DataSource**|Program Visual Studio ustawia tę właściwość <xref:System.Windows.Forms.BindingSource>utworzony dla tabeli przeciągniętej na kontrolkę (w przeciwieństwie do <xref:System.Windows.Forms.BindingSource>, utworzone podczas tworzenia kontrolki).<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na <xref:System.Windows.Forms.BindingSource> tabeli zawierającej kolumnę, którą chcesz wyświetlić.|
-    |**Elementu DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na nazwę kolumny, która ma być wyświetlany.|
+    |**DisplayMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę po kluczu podstawowym zawierającą dane będące ciągiem tekstowym w tabeli, która została przeciągnięta na kontrolkę.<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na nazwę kolumny, która ma być wyświetlany.|
     |**ValueMember**|Jako wartość tej właściwości program Visual Studio ustawia pierwszą kolumnę należącą do klucza podstawowego, a jeśli klucz nie został zdefiniowany, pierwszą kolumnę tabeli.<br /><br /> Jeśli musisz wprowadzić poprawkę, wartość klucza podstawowego w tabeli zawierającej kolumnę, którą chcesz wyświetlić.|
     |**SelectedValue**|Program Visual Studio ustawia oryginalną kolumnę upuszczoną z tej właściwości **źródeł danych** okna.<br /><br /> Jeśli potrzebujesz wprowadzić poprawkę, ustaw tę opcję na kolumny klucza obcego w pokrewnej tabeli.|
 

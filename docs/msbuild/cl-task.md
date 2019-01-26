@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cea2e191c5a85b8aac592e4e438eaa3b93bcd4f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e8de1edc266489a6260176e0b9e8aec8df62ba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956704"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje plik wykonywalny (*.exe*) plików, biblioteka dołączana dynamicznie (*.dll*) plików lub modułu kodu (*.netmodule*) plików. Aby uzyskać więcej informacji, zobacz [opcje kompilatora](/cpp/build/reference/compiler-options).  
@@ -208,7 +208,7 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
   - **OldStyle** - **/Z7**  
   
-  - **ProgramDatabase** -   **/zi**  
+  - **ProgramDatabase** - **/Zi**  
   
   - **EditAndContinue** - **/ZI**  
   
@@ -268,13 +268,13 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Brak** -   **/errorreport: Brak**  
+  - **None** - **/errorReport:none**  
   
   - **Wiersz** - **/errorReport:prompt**  
   
-  - **Kolejka** - **/errorReport:queue**  
+  - **Queue** - **/errorReport:queue**  
   
-  - **Wyślij** -   **/errorreport: Send**  
+  - **Send** - **/errorReport:send**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy kompilatora)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
@@ -312,7 +312,7 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Ani** - *\<Brak >*  
+  - **Neither** - *\<none>*  
   
   - **Rozmiar** -   **/OS**  
   
@@ -410,7 +410,7 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
     Aby uzyskać więcej informacji, zobacz [/Ob (rozszerzenie funkcji wbudowanej)](/cpp/build/reference/ob-inline-function-expansion).  
   
-- **Intrinsicfunctions —**  
+- **IntrinsicFunctions**  
   
    Opcjonalnie `Boolean` parametru.  
   
@@ -502,7 +502,7 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
   - **Tworzenie** - **/Yc**  
   
-  - **Użyj** - **/Yu**  
+  - **Use** - **/Yu**  
   
     Aby uzyskać więcej informacji, zobacz [/Yc (Utwórz prekompilowany plik nagłówka)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Korzystaj z prekompilowanego pliku nagłówkowego pliku)](/cpp/build/reference/yu-use-precompiled-header-file). Zobacz też **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** parametrów w tej tabeli.  
   
@@ -668,7 +668,7 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
    Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
   
-- **Katalog TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
    Opcjonalnie `String` parametru.  
   

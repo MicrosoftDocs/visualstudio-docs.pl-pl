@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ. Plik SCC | Dokumentacja firmy Microsoft
+title: MSSCCPRJ.SCC File | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3566903824f82cb266fa87f1dec0e8bcf04f9ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 028490e6c23051496202fad2d85b0d11cc434218
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825928"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964291"
 ---
-# <a name="mssccprjscc-file"></a>MSSCCPRJ. Plik SCC
+# <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC file
 Po umieszczeniu rozwiązania Visual Studio lub projektu objętego kontrolą źródła przy użyciu IDE, IDE otrzymuje dwa ważnych informacji. Informacje pochodzą z wtyczka do kontroli źródła w postaci ciągów. Te ciągi "AuxPath" i "ProjName" są nieprzezroczyste IDE, ale są używane przez wtyczkę do zlokalizowania rozwiązania lub projektu w kontroli wersji. IDE zazwyczaj pobiera te ciągi po raz pierwszy, wywołując [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a następnie zapisuje je w pliku rozwiązania lub projektu w przyszłych wywołaniach do [SccOpenProject](../extensibility/sccopenproject-function.md). Po osadzeniu w plikach rozwiązania i projektu, ciągi "AuxPath" i "ProjName" nie są automatycznie aktualizowane po użytkownik gałęzi, rozwidleń, lub kopiuje pliki rozwiązań i projektów, które znajdują się w kontroli wersji. Aby upewnić się, że pliki rozwiązań i projektów wskazują ich poprawnej lokalizacji w kontroli wersji, należy ręcznie zaktualizować ciągi. Ponieważ ciągi mają być nieprzezroczyste, jego mogą nie być jasne jak powinny być aktualizowane.  
   
  Wtyczka do kontroli źródła można uniknąć tego problemu, przechowując ciągi "AuxPath" i "ProjName" w specjalnym pliku o nazwie *MSSCCPRJ.SCC* pliku. Jest to plik lokalnego, po stronie klienta jest własnością i utrzymywane przez wtyczkę. Ten plik nigdy nie jest umieszczony pod kontrolą źródła, ale jest generowany przez wtyczki dla każdego katalogu, który zawiera pliki pod kontrolą źródła. Aby określić, które pliki są pliki rozwiązań i projektów programu Visual Studio, wtyczka do kontroli źródła można porównać rozszerzeń plików z listą standardowy lub podanego przez użytkownika. Gdy IDE wykrywa, że wtyczka obsługuje *MSSCCPRJ.SCC* pliku przestaje osadzanie ciągów "AuxPath" i "ProjName" na rozwiązanie i pliki projektu i odczytuje te ciągi z *MSSCCPRJ.SCC*zamiast tego pliku.  

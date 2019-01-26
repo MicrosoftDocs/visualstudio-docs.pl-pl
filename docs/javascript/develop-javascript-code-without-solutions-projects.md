@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899759"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043716"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 
@@ -32,9 +32,9 @@ Aby rozpocząć, wybierz **Otwórz Folder** z poziomu strony startowej, która p
 
 ## <a name="npm-integration"></a>Integracja z menedżerem npm
 
-Możesz otworzyć zawiera *package.json* pliku, możesz kliknąć prawym przyciskiem myszy *package.json* do wyświetlenia menu kontekstowego (menu skrótów) specyficzne dla Menedżera npm. 
+Możesz otworzyć zawiera *package.json* pliku, możesz kliknąć prawym przyciskiem myszy *package.json* do wyświetlenia menu kontekstowego (menu skrótów) specyficzne dla Menedżera npm.
 
-![menu npm w oknie Eksploratora rozwiązań](../javascript/media/solution-explorer-npm-ctx.png) 
+![menu npm w oknie Eksploratora rozwiązań](../javascript/media/solution-explorer-npm-ctx.png)
 
 W menu skrótów, można zarządzać pakiety instalowane przez pakiety npm w taki sam sposób, jak [Zarządzanie pakietami npm](npm-package-management.md) podczas korzystania z pliku projektu.
 
@@ -43,7 +43,8 @@ Ponadto menu umożliwia również uruchamiać skrypty zdefiniowane w `scripts` e
 ## <a name="build-and-debug"></a>Kompilowanie i debugowanie
 
 ### <a name="packagejson"></a>pliku Package.JSON
-Jeśli *package.json* w folderze Określa `main` elementu **debugowania** polecenia będą dostępne w menu skrótów kliknij prawym przyciskiem myszy *package.json*. Kliknięcie rozpocznie *node.exe* przy użyciu określonego skryptu jako argumentem.
+Jeśli *package.json* w folderze Określa `main` elementu **debugowania** polecenia będą dostępne w menu skrótów kliknij prawym przyciskiem myszy *package.json*.
+Kliknięcie rozpocznie *node.exe* przy użyciu określonego skryptu jako argumentem.
 
 ### <a name="javascript-files"></a>Pliki JavaScript
 Pliki JavaScript można debugować, kliknij plik prawym przyciskiem myszy i wybierając **debugowania** z menu skrótów. Spowoduje to uruchomienie *node.exe* razem z tym plikiem języka JavaScript jako argumentem.

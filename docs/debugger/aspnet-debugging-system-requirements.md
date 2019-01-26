@@ -1,5 +1,5 @@
 ---
-title: 'Debugowanie ASP.NET: Wymagania systemowe | Dokumentacja firmy Microsoft'
+title: 'ASP.NET Debugging: Wymagania systemowe | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 334f2887b85cf0c58ace27cfca65984b29067246
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d86b27a27884c0b8764c28a25ffb8ea9623efd9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025380"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Debugowanie ASP.NET: Wymagania systemowe
+# <a name="aspnet-debugging-system-requirements"></a>ASP.NET Debugging: Wymagania systemowe
 W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debugowania scenariuszy:  
   
 - Debugowanie lokalne, w którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i aplikacji sieci Web, uruchom na tym samym komputerze. Istnieją dwie wersje tego scenariusza:  
@@ -53,4 +53,4 @@ W tym temacie opisano wymagania dotyczące oprogramowania i zabezpieczeń dla [!
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Instrukcje: Uruchamianie procesu roboczego z konta użytkownika](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

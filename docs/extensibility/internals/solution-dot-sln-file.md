@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7879f019be8eb151d3274eb7d69aa5b947427b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fae42a1d95a005ae4db4d1bac1a043f18f1120cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922210"
 ---
 # <a name="solution-sln-file"></a>Plik rozwiązania (Sln)
 To rozwiązanie jest strukturą służący do organizowania projektów w programie Visual Studio. Rozwiązanie przechowuje informacje o stanie dla projektów w plikach .suo (opcje rozwiązania binarne, specyficzne dla użytkownika) i SLN (oparte na tekście, udostępniony). Aby uzyskać więcej informacji na temat .suo — pliki Zobacz [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790864b44725287774b4ed3d0eefe2cfa9821179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975442"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Instrukcje: Użycie technologii ClickOnce do wdrażania aplikacji, które można uruchamiać na wielu wersji programu .NET framework
 Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu .NET Framework przy użyciu technologii wdrażania ClickOnce. Wymaga to Generowanie i zaktualizuj manifesty aplikacji i wdrożenia.  
@@ -57,11 +57,11 @@ Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu 
   
     |Wersja programu .NET Framework|XML|  
     |----------------------------|---------|  
-    |4 klienta|\<Framework targetVersion = "4.0" profile = supportedRuntime "Client" = "4.0.30319" / >|  
-    |Pełne 4|\<Framework targetVersion = "4.0" profile = supportedRuntime "Pełnej" = "4.0.30319" / >|  
-    |3.5 klient|\<Framework targetVersion = "3.5" profile = supportedRuntime "Client" = "2.0.50727" / >|  
-    |3.5 pełne|\<Framework targetVersion = "3.5" profile = supportedRuntime "Pełnej" = "2.0.50727" / >|  
-    |3.0|\<Framework targetVersion = supportedRuntime "3.0" = "2.0.50727" / >|  
+    |4 klienta|\<framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />|  
+    |Pełne 4|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|  
+    |3.5 klient|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 pełne|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Aby zmienić plik app.config, aby wyświetlić listę niezgodne wersje środowiska uruchomieniowego .NET Framework  
   
@@ -73,10 +73,10 @@ Można wdrożyć aplikację, który jest przeznaczony dla wielu wersji programu 
   
     |Wersja środowiska uruchomieniowego .NET framework|XML|  
     |------------------------------------|---------|  
-    |4 klienta|\<Wersja supportedRuntime = jednostki sku "v4.0.30319" = ". NETFramework, Version = w wersji 4.0, profilu klienta = "/ >|  
-    |Pełne 4|\<Wersja supportedRuntime = jednostki sku "v4.0.30319" = ". NETFramework, Version = v4.0 "/ >|  
+    |4 klienta|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
+    |Pełne 4|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
     |3.5 pełne|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 klient|\<Wersja supportedRuntime = jednostki sku "v2.0.50727" = "Client" / >|  
+    |3.5 klient|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Aby zmienić manifest aplikacji, aby oznaczyć zestawów zależnych jako zestawy .NET Framework  
   

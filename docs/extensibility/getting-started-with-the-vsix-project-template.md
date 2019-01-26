@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 374b9f447c27dea99d1897bde8ed218a7ffcc394
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0862ee1ca9c9c8fc21771469bf1baddfc2e8d3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942571"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Rozpoczynanie pracy przy użyciu szablonu projektu VSIX
 Aby utworzyć rozszerzenie lub istniejące rozszerzenie wdrożenia pakietu, można użyć szablonu projektu VSIX. Szablon projektu VSIX w wersji Visual Basic i Visual C# i jest instalowany jako część programu Visual Studio SDK.  

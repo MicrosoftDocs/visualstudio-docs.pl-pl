@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 393cc1ea5835b66c18a9f4ca46b9f2ac0a88860a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934060"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031828"
 ---
 # <a name="localize-menu-commands"></a>Lokalizowanie poleceń menu
 Możesz podać zlokalizowanego tekstu polecenia menu i paski narzędzi, tworząc zlokalizowane *vsct* pliki i zlokalizowane *resx* plików dla Twojego pakietu VSPackage, a następnie zaktualizować plików projektu dołączyć zmiany.  
@@ -98,7 +98,7 @@ Możesz podać zlokalizowanego tekstu polecenia menu i paski narzędzi, tworząc
     </data>  
     ```  
   
-     [*Resources.es ES.resx*]  
+     [*Resources.es-ES.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  

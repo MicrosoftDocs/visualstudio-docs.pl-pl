@@ -11,15 +11,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfef5db28b187d88c49cb6c35a0e008e78198cc4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f9c62970ab6377ddaaf295007fd49ba8be7dd225
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350188"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026285"
 ---
 # <a name="options-text-editor-javascript-linting"></a>Opcje, Edytor tekstu, JavaScript, Zaznaczanie błędów
 
