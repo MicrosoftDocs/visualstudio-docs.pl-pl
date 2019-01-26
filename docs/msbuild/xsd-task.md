@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44113f00f56ca471b0d8a922fc68b0003645b329
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9996ee8c3b1cf8a6298ad21d0ae0058d90f78b64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991022"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963830"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.  
@@ -80,7 +80,7 @@ Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki s
   
      Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
   
--   **Katalog TrackerLogDirectory**  
+-   **TrackerLogDirectory**  
   
      Opcjonalnie **ciąg** parametru.  
   

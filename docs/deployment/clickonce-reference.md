@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3353240e5b6d1a1218c4a6afc663c7778867e414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 754b765f52e15f3738630a9594ec54e68dc63cae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034621"
 ---
 # <a name="clickonce-reference"></a>ClickOnce — odwołanie
 Następujące strony opisania struktury pliku XML, używany do reprezentowania aplikacji ClickOnce.  

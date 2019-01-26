@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df13749a16ad107c864fa1dcf1b3e0f4e7cbed41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e452523c8789214d35281840cb307d329e485ada
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978545"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybieranie katalogu instalacyjnego dla pakietu VSPackage
 Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage odbywa się lub niezarządzane schematu przechowywania wersji side-by-side i wybór użytkownika.  
@@ -23,19 +23,19 @@ Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie pli
 ## <a name="unmanaged-vspackages"></a>Niezarządzane pakietów VSPackage  
  Niezarządzane pakietu VSPackage jest serwera COM, który można zainstalować w dowolnym miejscu. Swoje informacje rejestracyjne musi dokładnie odzwierciedlać jego lokalizacji. Instalator interfejsu użytkownika (UI) należy podać lokalizację domyślną jak podkatalog `ProgramFilesFolder` wartość właściwości Instalatora Windows. Na przykład:  
   
-*&lt;ProgramFilesFolder&gt;\\&lt;Moja firma&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
+*&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\V1.0\\*
   
  Użytkownik powinien może zmienić domyślny katalog, aby dopasować użytkowników, którzy nadal partycją rozruchową małych i preferowanie tych instalacji aplikacji i narzędzi na innym woluminie.  
   
  Jeśli schemat side-by-side używa określonej wersji pakietu VSPackage, można użyć podkatalogów przechowywać różne wersje. Na przykład:
 
- *&lt;ProgramFilesFolder&gt;\\&lt;Moja firma&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
   
- *&lt;ProgramFilesFolder&gt;\\&lt;Moja firma&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003\\*
   
- *&lt;ProgramFilesFolder&gt;\\&lt;Moja firma&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
   
-## <a name="managed-vspackages"></a>Zarządzane pakietów VSPackage  
+## <a name="managed-vspackages"></a>Managed VSPackages  
  Zarządzane pakietów VSPackage można również zainstalować w dowolnym miejscu. Jednak należy rozważyć, zawsze instalowania ich do globalnej pamięci podręcznej zestawów (GAC), aby skrócić czas ładowania zestawu. Ponieważ pakietów VSPackage zarządzane są zawsze zestawy o silnych nazwach, instalowania ich w pamięci podręcznej GAC oznacza, że ich weryfikacji podpisu silnej nazwy przyjmuje tylko w czasie instalacji. Zestawy o silnych nazwach, zainstalowany w innym miejscu w systemie plików musi mieć ich podpisy zweryfikowane za każdym razem, gdy są one załadowane. Po zainstalowaniu pakietów VSPackage zarządzanych w pamięci podręcznej GAC Użyj narzędzie regpkg **/Assembly** przełącznika na zapisywanie wpisów rejestru, wskazując silnej nazwy zestawu.  
   
  Po zainstalowaniu pakietów VSPackage zarządzanych w lokalizacji innej niż pamięci podręcznej GAC, postępuj zgodnie z wcześniej przekazanej niezarządzanych pakietów VSPackage dotyczące wybierania hierarchie katalogów. Użyj narzędzia regpkg **/ codebase** przełącznika na zapisywanie wpisów rejestru wskazuje ścieżkę zestawu pakietu VSPackage.  

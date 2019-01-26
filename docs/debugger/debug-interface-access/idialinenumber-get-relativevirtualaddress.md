@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ba8142e3-5c77-43cc-bd33-c077dcc18cab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea19cae4f587ff6a7fb505653db5b3142564868
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19a1150e3c4ffcd2823226ed2c831938aa00f942
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978844"
 ---
 # <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
 Pobiera względne adres wirtualnych (RVA) bloku.  

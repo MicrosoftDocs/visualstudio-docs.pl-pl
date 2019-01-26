@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98d19546f3b02601b35f24e26db3b875c6f089b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5906268fa281295f0f6e70db54ea9a50bed4b642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949144"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920230"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Określa żądane właściwości, które mają zostać uzyskane od dostawcy programu.  
@@ -83,7 +83,7 @@ public enum enum_PROVIDER_FLAGS {
   Te wartości można łączyć przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

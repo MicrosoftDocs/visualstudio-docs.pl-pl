@@ -8,15 +8,15 @@ helpviewer_keywords:
 - F# features [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18803d3033cc3aa1fdfb43620eb741ff1724ec74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990088"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920633"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą wizualizacji F# w programie Visual Studio
 
@@ -48,7 +48,7 @@ W poniższej tabeli podsumowano funkcje we właściwościach projektu dla F#:
 |Odwołanie do ustawienia, debugowania i kompilacji|Tak||
 |Wielowersyjność kodu|Tak||
 |Ikony i manifestu|Nie|Dostępne opcje wiersza polecenia kompilatora.|
-|Usługi klienta programu ASP.NET|Nie||
+|ASP.NET Client Services|Nie||
 |ClickOnce|Nie|W innym języku .NET Framework, należy użyć projektu klienta, jeśli ma to zastosowanie.|
 |Silne nazewnictwo|Nie|Dostępne opcje wiersza polecenia kompilatora.|
 |Zestaw publikowania i przechowywania wersji|Nie||
@@ -62,7 +62,7 @@ W poniższej tabeli podsumowano funkcje we właściwościach projektu dla F#:
 |Strona projektanta projektu|Linki pokrewne|Opis|
 | - |-------------|-----------|
 |Aplikacja|[Strona aplikacji, Projektant projektu](reference/application-page-project-designer-csharp.md)|Umożliwia określenie ustawień na poziomie aplikacji i właściwości, takie jak tego, czy tworzysz bibliotekę lub plik wykonywalny, jakiej wersji programu .NET Framework jest przeznaczony dla aplikacji i informacje o którym zasobu pliki aplikacji zastosowań są przechowywane.|
-|Kompilacja|[Strona, Projektant projektu kompilacji](reference/build-page-project-designer-csharp.md)|Umożliwia kontrolowanie sposobu kompilowania kodu.|
+|Kompilacja|[Build Page, Project Designer](reference/build-page-project-designer-csharp.md)|Umożliwia kontrolowanie sposobu kompilowania kodu.|
 |Zdarzenia kompilacji|[Strona zdarzenia, Projektant projektu kompilacji](reference/build-events-page-project-designer-csharp.md)|Pozwala określić polecenie do uruchomienia przed lub po kompilacji.|
 |Debugowanie|[Strona debugowania, Projektant projektu](reference/debug-page-project-designer.md)|Można kontrolować, jak aplikacja zostanie uruchomiona podczas debugowania. Obejmuje to, co polecenia i co na uruchamianie aplikacji, że katalog jest i wszelkie specjalne trybów debugowania, który chcesz włączyć, takich jak SQL i kodu natywnego.|
 |Pakiet (tylko zestaw SDK platformy .NET)|Brak|Umożliwia zdefiniowanie metadanych pakietu NuGet, podczas publikowania jako pakiet NuGet.|

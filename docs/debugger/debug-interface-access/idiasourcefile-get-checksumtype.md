@@ -1,5 +1,5 @@
 ---
-title: Idiasourcefile::get_checksumtype — | Dokumentacja firmy Microsoft
+title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825917"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928974"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Pobiera typ sumy kontrolnej.  
@@ -40,7 +40,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>Uwagi  
  Typ sumy kontrolnej to wartości, które mogą być mapowane do algorytmu sumy kontrolnej. Na przykład standardowy format pliku PDB zazwyczaj może mieć jedną z następujących wartości:  
   
-|Typ sumy kontrolnej|Etykieta interfejsu CryptoAPI|Opis|  
+|Typ sumy kontrolnej|CryptoAPI Label|Opis|  
 |-------------------|---------------------|-----------------|  
 |0|\<Brak >|Nie istnieje sumy kontrolnej.|  
 |1|`CALG_MD5`|Suma kontrolna jest generowany przy użyciu algorytmu wyznaczania wartości skrótu MD5.|  
@@ -51,5 +51,5 @@ HRESULT get_checksumType ( 
  Aby uzyskać bajtów rzeczywista suma kontrolna pliku źródłowego, należy wywołać [idiasourcefile::get_checksum —](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

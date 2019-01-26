@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94374d27-e335-4e90-a442-233181ab8e58
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e2ccf30f07ff86a846b25ab6957c70b5ae6033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1f45287ade10ddff6dc10ddea44936890d6208
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005348"
 ---
 # <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
 Pobiera liczbę elementów danych ramki.  
@@ -38,5 +38,5 @@ HRESULT get_Count ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

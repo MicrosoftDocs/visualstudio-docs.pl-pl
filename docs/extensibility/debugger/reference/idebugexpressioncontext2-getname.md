@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb504a961acd7455df0bb2b5f4f3801f7c063d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71bff3671b3f11479606a08c768116865915d03f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966689"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Pobiera nazwę kontekst oceny.  

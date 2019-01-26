@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd11440b5b50f41674e9837b88ca15e4c0144d37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf495335fb6522aadb82337e284d299c0fbb8b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013798"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Ten interfejs określa komunikat o błędzie, należy podać użytkownikowi.  
@@ -45,7 +45,7 @@ IDebugErrorEvent2 : IUnknown
  Jeśli aparat debugowania napotka błąd, może używać tego interfejsu, do zgłaszania komunikatów za pomocą programu Visual Studio do użytkownika.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ecdda93-950e-40d6-b79b-4ae3c55b6cfc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3864cb92708f0b726ee73316fd2060c981f0a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0dd46f6b1939f83cfad633b2c404337b85410824
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031451"
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) obliczonym na podstawie kodu źródłowego w bajtach.  

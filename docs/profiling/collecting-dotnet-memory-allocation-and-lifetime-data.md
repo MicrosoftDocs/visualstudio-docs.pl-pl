@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2095b06347c577811cdeb91d0a9039a140758c86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006089"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych alokacji pamięci .NET i okresu istnienia
 
@@ -72,9 +72,9 @@ Zadania przedstawione w poniższej tabeli są opcje w **stron właściwości** o
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|Na **pliki binarne** Określ lokalizację instrumentowanych kopie modułów. Domyślnie oryginalnych danych binarnych są przenoszone do folderu kopii zapasowej.|- [Jak: Zmień lokalizację instrumentowanych danych binarnych](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Na **Instrumentacji** strony, Wyklucz małe funkcje z profilowania, aby zmniejszyć profilowania obciążenie, Profiluj kod JavaScript na stronach sieci Web platformy ASP.NET, a także określić polecenie do uruchomienia w wierszu polecenia przed i po proces instrumentacji.|- [Jak: Wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Jak: Profiluj kod JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Jak: Określ polecenia przed i po Instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
-|Na **liczniki CPU** stronie Określ co najmniej jeden licznik wydajności procesora do dodania do danych profilowania.|- [Jak: Zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)|
+|Na **pliki binarne** Określ lokalizację instrumentowanych kopie modułów. Domyślnie oryginalnych danych binarnych są przenoszone do folderu kopii zapasowej.|- [Jak: Zmienianie lokalizacji instrumentowanych danych binarnych](../profiling/how-to-relocate-instrumented-binaries.md)|
+|Na **Instrumentacji** strony, Wyklucz małe funkcje z profilowania, aby zmniejszyć profilowania obciążenie, Profiluj kod JavaScript na stronach sieci Web platformy ASP.NET, a także określić polecenie do uruchomienia w wierszu polecenia przed i po proces instrumentacji.|- [Jak: Wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Jak: Profilowanie kodu JavaScript na stronach internetowych](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Jak: Określanie poleceń przed i po instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Na **liczniki CPU** stronie Określ co najmniej jeden licznik wydajności procesora do dodania do danych profilowania.|- [Jak: Zbieranie danych licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na **zaawansowane** określ wszelkie dodatkowe VSInstr.exe żądane opcje, takie jak opcje do dołączania lub wykluczania określonych funkcji. Aby uzyskać więcej informacji na temat opcji VSInstr zobacz [VSInstr](../profiling/vsinstr.md)|- [Jak: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Jak: Ograniczenie Instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Zobacz także

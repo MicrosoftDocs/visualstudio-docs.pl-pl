@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5b04bba-a8b9-4141-94fb-250c77f0534c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a736bb3570671ca0c46fce3b8342b7aa822d9e4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b172771052264d091bb69c3ff734769f533902a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937304"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
 Resetuje wyliczenia do pierwszego elementu.  

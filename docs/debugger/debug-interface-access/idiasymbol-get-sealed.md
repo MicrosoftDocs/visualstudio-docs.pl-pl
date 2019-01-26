@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb4e6e82b3c34b8186bbee2a42fba8a1f6a8b68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2acc4aa3d488a98990e6e822e0c55f3f5fff416
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026622"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Pobiera flagę określającą, czy ta klasa lub metoda jest zapieczętowany.  
@@ -44,11 +44,11 @@ HRESULT get_sealed( 
  Klasa zapieczętowana nie może służyć jako klasę bazową. Metody zapieczętowane nie może być overidden.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

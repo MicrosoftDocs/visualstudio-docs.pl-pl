@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bc68272523100c07879b00b261b86f27023a13b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8fb849d7b0d029d298cb4bd828513536424061a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018244"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Pobiera opis portu, który został wcześniej użyty do utworzenia portu (jeśli jest dostępny).  

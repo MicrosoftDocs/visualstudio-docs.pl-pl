@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54486835fd2e5ee511e1ccdaa1fa179bbf23d7cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ee4c44cb23c8df5d0a7ea64c54cc37440eaa57c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014981"
 ---
 # <a name="single-and-multi-tab-views"></a>Widoki z jedną i wieloma kartami
 Edytor można tworzyć różne typy widoków. Przykładem jest oknem edytora kodu, jest inny Projektant formularzy.  

@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021991"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalowanie aplikacji mobilnych dla wielu platform przy użyciu języka C++
 
@@ -120,7 +120,7 @@ Przeczytaj poniższe informacje, a następnie użyj poniższych linków, aby rę
 
    Domyślnie Instalator umieszcza narzędzia języka Java na platformie *\Java C:\Program Files (x86)*.
 
-- [Zestaw SDK systemu android](https://developer.android.com/sdk/index.html#command-tools)
+- [Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
    Podczas instalacji należy zaktualizować interfejsów API, zgodnie z zaleceniami. Upewnij się, że co najmniej zainstalowano zestaw SDK dla systemu Android 5.0 Lollipop (poziom 21 interfejsu API). Domyślnie Instalator umieszcza zestawu SDK systemu Android w *\Android\android-sdk C:\Program Files (x86)*.
 

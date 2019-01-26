@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d20175422a78a2b84c1b969f7a9776a45b2522
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b541a21afb997e2864f4b43fd6074f760c8e6dd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951540"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920581"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.  

@@ -1,5 +1,5 @@
 ---
-title: Getwinfxpath — zadanie | Dokumentacja firmy Microsoft
+title: GetWinFXPath Task | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63c8b6c0834f427103240ae0b9d11f5958d1b41c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce88efd0c2fd116d0f8008ead45a82d0ce68a4ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822589"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022459"
 ---
-# <a name="getwinfxpath-task"></a>Getwinfxpath — zadanie
+# <a name="getwinfxpath-task"></a>GetWinFXPath task
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> Zadanie zwraca katalogu bieżącego [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] środowiska uruchomieniowego.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

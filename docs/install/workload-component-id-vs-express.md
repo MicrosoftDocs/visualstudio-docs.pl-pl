@@ -5,7 +5,7 @@ description: Użyj obciążenia i identyfikatory składników, aby zainstalować
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: f04e52ed3198c37f19cd5cf1ce9eb334446c6d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 172bf74c9c5d7b1a84b8c88134f386750b8e99c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027454"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express składników katalogu
 
@@ -41,7 +41,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 ## <a name="express-for-windows-desktop"></a>Express for Windows Desktop
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WDExpress
+**ID:** Microsoft.VisualStudio.Workload.WDExpress
 
 **Opis:** Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32 edytowania kodu uwzględniającej składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++.
 

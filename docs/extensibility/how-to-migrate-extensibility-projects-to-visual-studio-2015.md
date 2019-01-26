@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021484"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015
 Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.  
@@ -29,13 +29,13 @@ Poniżej przedstawiono sposób uaktualnić Twoje rozszerzenie.
   
 2.  Po zakończeniu uaktualniania, należy zmienić ścieżkę zewnętrzny program do nowej wersji *devenv.exe*. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań**, następnie wybierz **właściwości**. W **debugowania** znaleźć pola tekstowego, a **uruchomienia programu zewnętrznego** i zmień ścieżkę *devenv.exe* do ścieżki programu Visual Studio 2015, która powinna wyglądać mniej więcej tak:  
   
-     *%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe*  
+     *%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe*  
   
 3.  Dodaj odwołanie do *Microsoft.VisualStudio.Shell.14.0.dll*. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** , a następnie wybierz **Dodaj** > **odwołania**. Wybierz **rozszerzenia** kartę, a następnie sprawdź **Microsoft.VisualStudio.Shell.14.0**.)  
   
 4.  Skompiluj rozwiązanie. Tworzenie plików są wdrażane do:  
   
-     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nazwa autora\>\\< Nazwa projektu\>\\< wersja projektu\>\\*.  
+     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\<Author Name\>\\<Project Name\>\\<Project Version\>\\*.  
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Aby zaktualizować projekt rozszerzenia NuGet zestawu SDK dla zestawów odwołań  
   

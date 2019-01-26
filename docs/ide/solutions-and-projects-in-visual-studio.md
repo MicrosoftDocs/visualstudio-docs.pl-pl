@@ -21,15 +21,15 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4f2d68920edad0b2c9e21c0897130b286180689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032979"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -60,7 +60,7 @@ Program Visual Studio używa dwóch typów plików (*.sln* i *.suo*) do przechow
 
 |Wewnętrzny|Nazwa|Opis|
 |---------------|----------|-----------------|
-|.sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i rozwiązania elementów w rozwiązaniu.|
+|.sln|Visual Studio Solution|Organizuje projekty, elementy projektu i rozwiązania elementów w rozwiązaniu.|
 |.suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia na poziomie użytkownika i dostosowania, takie jak punkty przerwania.|
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66dc3cfcdd8cf815ba8f7744b36e0c04a750d49a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990579"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
@@ -65,14 +65,14 @@ Jeśli masz istniejące foldery *. R* pliki, które mają być zarządzane w pro
 Aby otworzyć na stronach właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, lub wybierz **projektu > właściwości (nazwa projektu)** menu element. W otwartym oknie Wyświetla właściwości projektu:
 
 
-| Tab | Właściwość | Opis | 
-| --- | --- | --- | 
-| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany z **źródłowy plik startowy** polecenia **F5**, **debugowania** > **Rozpocznij debugowanie**, lub  **Debugowanie** > **Uruchom bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierając polecenie **ustawiony jako skrypt uruchamiania R** także ustawia go jako plik startowy. | 
-| | Resetuj R interakcyjne przy uruchomieniu | Czyści wszystkie zmienne z obszaru roboczego w oknie interaktywnym podczas uruchamiania projektu. Gwarancje tak tą operacją nie jest zawartość nie końcowej obszaru roboczego z poprzednich przebiegów. | 
-| | Ścieżka projektu zdalnego | Ścieżka do zdalnego obszaru roboczego. | 
-| | Transfer plików przy uruchomieniu | Wskazuje, czy projekt pliki podlegają filtru **plików do transferu**, mają zostać skopiowane do zdalnego obszaru roboczego z poszczególnymi uruchomieniami. | 
-| | Transfer plików | Nazwy plików i symboli wieloznacznych, wskazując określone pliki do skopiowania do zdalnego obszaru roboczego, jeśli **transferu plików przy uruchomieniu** jest zaznaczone. | 
-| Ustawienia | (Plik Settings.R) | Ustawienia projektu języka R pochodzą *Settings.R* lub **. Settings.R* pliki, które znajdują się w projekcie. Jeśli nie ma żadnego pliku ustawień, można dodać zmienne zapisywania strony i domyślnym *Settings.R* zostanie utworzony plik. Plik ustawień można również dodać do projektu przy użyciu **pliku** > **Dodaj nowy element** polecenia menu. <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródło przed uruchomieniem innych modułów, w związku z tym wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. | 
+| Tab | Właściwość | Opis |
+| --- | --- | --- |
+| Uruchom | Plik startowy | Nazwa pliku, który jest uruchamiany z **źródłowy plik startowy** polecenia **F5**, **debugowania** > **Rozpocznij debugowanie**, lub  **Debugowanie** > **Uruchom bez debugowania**. Kliknij prawym przyciskiem myszy plik w projekcie i wybierając polecenie **ustawiony jako skrypt uruchamiania R** także ustawia go jako plik startowy. |
+| | Resetuj R interakcyjne przy uruchomieniu | Czyści wszystkie zmienne z obszaru roboczego w oknie interaktywnym podczas uruchamiania projektu. Gwarancje tak tą operacją nie jest zawartość nie końcowej obszaru roboczego z poprzednich przebiegów. |
+| | Ścieżka projektu zdalnego | Ścieżka do zdalnego obszaru roboczego. |
+| | Transfer plików przy uruchomieniu | Wskazuje, czy projekt pliki podlegają filtru **plików do transferu**, mają zostać skopiowane do zdalnego obszaru roboczego z poszczególnymi uruchomieniami. |
+| | Transfer plików | Nazwy plików i symboli wieloznacznych, wskazując określone pliki do skopiowania do zdalnego obszaru roboczego, jeśli **transferu plików przy uruchomieniu** jest zaznaczone. |
+| Ustawienia | (Plik Settings.R) | Ustawienia projektu języka R pochodzą *Settings.R* lub **. Settings.R* pliki, które znajdują się w projekcie. Jeśli nie ma żadnego pliku ustawień, można dodać zmienne zapisywania strony i domyślnym *Settings.R* zostanie utworzony plik. Plik ustawień można również dodać do projektu przy użyciu **pliku** > **Dodaj nowy element** polecenia menu. <br/> Ustawienia są przechowywane jako kod języka R, a plik może być źródło przed uruchomieniem innych modułów, w związku z tym wstępne wypełnianie środowiska ze wstępnie zdefiniowanymi ustawieniami. |
 
 ## <a name="r-specific-project-commands"></a>Polecenia projektu specyficznego dla języka R
 
@@ -84,7 +84,7 @@ Projektów programu Visual Studio obsługuje szereg ogólne poleceń w menu klik
 | Otwórz Folder zawierający | Zostanie otwarty Eksplorator Windows w lokalizacji wybranego pliku. |
 | Dodaj skrypt języka R | Tworzy i otwiera nową *. R* plik o nazwie domyślnej. Można również użyć **Dodaj** > **nowy element** polecenie, aby utworzyć *. R* plików, a także wiele innych typów plików. Zobacz [szablonów elementów specyficznych dla języka R](#r-specific-item-templates). |
 | Dodaj znaczniki R Markdown | Tworzy i otwiera nowe *.rmd* dokumentu o domyślnej nazwie. Można również użyć **Dodaj** > **nowy element** polecenie, aby utworzyć *.rmd* plików, a także wiele innych typów plików. Zobacz [szablonów elementów specyficznych dla języka R](#r-specific-item-templates).  |
-| Publikuj procedury składowane | Uruchamia proces publikowania żadnych procedur składowanych zawarte w skryptów języka R. Zobacz [pracy za pomocą procedur składowanych serwera SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Publikuj procedury składowane | Uruchamia proces publikowania żadnych procedur składowanych zawarte w skryptów języka R. Zobacz [pracy za pomocą procedur składowanych serwera SQL Server](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>Szablony elementów specyficznych dla języka R
 
@@ -97,11 +97,11 @@ RTVS zawiera wiele szablonów dla określonych typów plików. Możesz uzyskać 
 | --- | --- |
 | Skrypt języka R | Plik tekstowy zawierający te same polecenia, które mogą być wprowadzane w wierszu polecenia języka R. |
 | Znaczniki R Markdown | Plik zawierający [R Markdown](rmarkdown-with-r-in-visual-studio.md) dokumentu. |
-| Ustawienia języka R | Plik, który zawiera ustawienia aplikacji R. | 
+| Ustawienia języka R | Plik, który zawiera ustawienia aplikacji R. |
 | Dokumentace R | Ogólny plik dokumentacji języka R zawierający tylko nazwę aliasu i pola tytułu. |
 | Dokumentace R (funkce) | Dokumentacja języka R plik zawierający wiele pól z komentarzami do opisywania funkcji. |
 | Dokumentace R (zestaw danych) | Dokumentacja języka R plik zawierający wiele pól z komentarzami do opisywania zestawu danych. |
-| Zapytanie SQL | I puste *.sql* pliku. Zobacz [pracy z programu SQL Server i R](integrating-sql-server-with-r.md). |
+| SQL Query | I puste *.sql* pliku. Zobacz [pracy z programu SQL Server i R](integrating-sql-server-with-r.md). |
 | Procedura składowana przy użyciu języka R | Plik języka R z podrzędnych zapytanie SQL i podrzędne przechowywane procedury pliku szablonu. Zobacz [pracy z programu SQL Server i R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Używanie wielu typów projektu w programie Visual Studio

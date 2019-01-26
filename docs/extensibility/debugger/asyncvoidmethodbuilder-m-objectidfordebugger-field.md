@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d24affabaf22f44e56b7e3c818b302ea6bd3b40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d689e2038563c0192a3f904b604a9a8d67256d1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944421"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038763"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Pole AsyncVoidMethodBuilder.m_objectIdForDebugger
+# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger field
 Reprezentuje obiekt opóźnieniem zainicjowane, używany przez debuger do jednoznacznego identyfikowania tego konstruktora.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  

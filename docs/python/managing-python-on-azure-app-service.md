@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d7cfcb3a288103bd79ff0196073411e81c3bf8b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943120"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service (Windows)
 
@@ -126,7 +126,7 @@ FastCGI jest interfejsem, który działa na poziomie żądania. IIS odbiera poł
 
 - Wartość `PYTHONPATH` może być swobodnie przedłużony, ale mogą zawierać katalogu głównego aplikacji.
 - `WSGI_HANDLER` musi wskazywać aplikacją WSGI importowane z aplikacji.
-- `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania aplikacji. 
+- `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania aplikacji.
 
 Zobacz [Opublikuj na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) więcej informacji na temat *web.config* aplikacje sieci web Bottle, Flask i Django zawartości.
 

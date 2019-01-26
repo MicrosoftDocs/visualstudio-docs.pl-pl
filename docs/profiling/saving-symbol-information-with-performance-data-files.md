@@ -7,15 +7,15 @@ helpviewer_keywords:
 - profiling tools, packsymbols
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc39f8e07ed0947bedc31ba39d74fc8cee742a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1785be784b48a0130fd09c616d09900cb4c2656c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975897"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plików danych dotyczących wydajności
 
@@ -55,12 +55,12 @@ Jeśli nie ma żadnych symboli we własnym kodzie, dostępne są niektórych typ
 
 Jeśli chcesz ponownie spakować symboli do raportu, możesz to zrobić za pomocą narzędzia wiersza polecenia VsPerfReport. Użyj następujących wierszy polecenia:
 
-VsPerfReport — clearpackedsymbols filename.vsp
+VsPerfReport -clearpackedsymbols filename.vsp
 
 VsPerfReport — packsymbols-summary: all filename.vsp
 
 ## <a name="see-also"></a>Zobacz także
 
 [Zapisywanie i eksportowanie danych dotyczących narzędzi do oceny wydajności](../profiling/saving-and-exporting-performance-tools-data.md)  
-[Instrukcje: Informacje o symbolach Windows odwołania](../profiling/how-to-reference-windows-symbol-information.md)  
+[Instrukcje: Odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
 [VSPerfReport](../profiling/vsperfreport.md)

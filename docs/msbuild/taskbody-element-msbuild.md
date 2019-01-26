@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcddcc0a050698f6e73f12df87316c344da42ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c95761dd87d9d8d36aaff228d6395547bc07fe41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015709"
 ---
 # <a name="taskbody-element-msbuild"></a>Taskbody — element (MSBuild)
 Zawiera dane, które są przekazywane do `UsingTask` `TaskFactory`. Aby uzyskać więcej informacji, zobacz [usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
- \<Taskbody — >  
+ \<TaskBody>  
 
 ## <a name="syntax"></a>Składnia  
 

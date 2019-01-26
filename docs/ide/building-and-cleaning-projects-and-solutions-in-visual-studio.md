@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942756"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio
 
-Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby uzyskać samouczek krok po kroku, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
+Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby uzyskać samouczek krok po kroku, zobacz [instruktażu: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [— kompilowanie i czyszczenie projektów i rozwiązań w programie Visual Studio dla komputerów Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -114,11 +114,11 @@ Wykonaj jedną z następujących czynności:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)
 - [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
-- [Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Instrukcje: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)

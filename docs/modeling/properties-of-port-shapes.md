@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5559bd3b27f66ab54a05ca7be184b8aff34ae636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842281"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938409"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektancie.
@@ -41,7 +41,7 @@ Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektan
 |Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|False|
 |Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowana z portu (`none`, `abstract` lub `sealed`).|brak|
-|Podstawowy Port|Klasa bazowa tego kształtu.|(Brak)|
+|Base Port|Klasa bazowa tego kształtu.|(Brak)|
 |Nazwa|Nazwa tego kształtu.|Bieżąca nazwa|
 |Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym kształtem.|Bieżąca przestrzeń nazw|
 |Typ Porada narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|

@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a635d36a18c5630f654922e0d96bca54a223fd91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb24a4bf5b3625255ea9503c2ce88bb64b28ef4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037073"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe
 Można określić, jakie rodzaje informacji debugowania są wyświetlane w **dane wyjściowe** okna. Aby wyświetlić te opcje, otwórz **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzeł, a następnie kliknij przycisk **okno danych wyjściowych**.

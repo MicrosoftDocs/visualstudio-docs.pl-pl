@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,18 +43,18 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154314"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956236"
 ---
 # <a name="clang-project-properties-android-c"></a>Właściwości projektu clang (Android C++)
 
 Właściwość | Opis | Opcje
 --- | ---| ---
-Dodatkowe katalogi dyrektywy Include | Określa jeden lub więcej katalogów do dodania do ścieżki dołączenia; Oddziel przy użyciu średnikami, jeśli istnieje więcej niż jedna. (-I[ścieżka]).
+Dodatkowe katalogi dyrektywy Include | Określa jeden lub więcej katalogów do dodania do ścieżki dołączenia; Oddziel przy użyciu średnikami, jeśli istnieje więcej niż jedna. (-I[path]).
 Format informacji o debugowaniu | Określa typ informacji o debugowaniu generowanych przez kompilator. | **Brak** — tworzy żadnych informacji debugowania, więc kompilacja może przebiegać szybciej.<br>**Pełne informacje debugowania (DWARF2)** — Generowanie debugowania dwarf2.<br>**Informacje o numerze wiersza** — tylko informacje o numerze wiersza wygenerować.<br>
 Nazwa pliku obiektu | Określa nazwę do zastąpienia domyślnej nazwy pliku obiektu; może być nazwą pliku lub katalogu. (/ FO[nazwa]).
 Poziom ostrzeżeń | Wybierz jak ścisły kompilator o błędów kodu.  Inne flagi należy dodać bezpośrednio do dodatkowych opcji. (/ w, / weverything). | **Włącz Wyłącz wszystkie ostrzeżenia** — wyłącza wszystkie ostrzeżenia kompilatora.<br>**EnableAllWarnings** -włącza wszystkie ostrzeżenia, w tym te domyślnie wyłączone.<br>
@@ -82,7 +82,7 @@ Prekompilowany plik nagłówkowy | Utworzenie/użycie Prekompilowanego nagłówk
 Prekompilowany plik nagłówka | Określa nazwę pliku do użycia dla prekompilowanego pliku nagłówkowego. Ten plik zostanie też dodany do "Wymuszone pliki dyrektywy Include" podczas kompilacji
 Katalog pliku danych wyjściowych prekompilowanego nagłówka | Określa katalog wygenerowanego prekompilowanego pliku nagłówkowego. Ten katalog zostanie też dodany do elementu "Dodatkowe katalogi dołączenia" podczas kompilacji
 Kompiluj prekompilowany nagłówek jako | Wybierz język kompilacji dla prekompilowanego pliku nagłówkowego (- x c-header, - x c ++ - nagłówek). | **Kompiluj jako kod C** — Kompiluj jako kod C.<br>**Kompiluj jako kod C++** — Kompiluj jako kod C++.<br>
-Kompiluj jako | Wybierz opcję języka kompilowania dla plików .c i .cpp.  "Default" wykryje na podstawie rozszerzenia c lub CPP rozszerzenie. (-x c, - x c ++) | **Domyślne** — domyślne.<br>**Kompiluj jako kod C** — Kompiluj jako kod C.<br>**Kompiluj jako kod C++** — Kompiluj jako kod C++.<br>
+Kompiluj jako | Wybierz opcję języka kompilowania dla plików .c i .cpp.  "Default" wykryje na podstawie rozszerzenia c lub CPP rozszerzenie. (-x c, -x c++) | **Domyślne** — domyślne.<br>**Kompiluj jako kod C** — Kompiluj jako kod C.<br>**Kompiluj jako kod C++** — Kompiluj jako kod C++.<br>
 Wymuszone pliki dołączane | co najmniej jeden wymuszony plik dyrektywy dołączyć pliki.     (-include [nazwa])
 Kompilacja wieloprocesorowa | Kompilacja wieloprocesorowa.
 Dodatkowe opcje | Dodatkowe opcje.

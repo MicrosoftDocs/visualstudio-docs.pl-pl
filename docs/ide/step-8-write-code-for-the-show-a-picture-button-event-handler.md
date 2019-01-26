@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9ce9b4bd35966c67dfc7f4a4b04407e55c76980
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887896"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021835"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku obrazu
 
@@ -38,7 +38,7 @@ IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu.
 
 3.  **IntelliSense** okno powinno podkreślać wyraz `if`. (Jeśli nie, należy wprowadzić małymi literami `f`, i będzie ono.) Zwróć uwagę, jak małe *etykietki narzędzia* obok pola **IntelliSense** zostanie wyświetlone okno z opisem **fragment kodu dotyczący if — instrukcja**. (W języku Visual Basic etykietka narzędzia również wskazuje to fragment, lecz nieco inaczej sformułowane.) Aby użyć tej wstawki, więc wybierz **kartę** klawisz, aby wstawić `if` w kodzie. Następnie wybierz **kartę** klucz ponownie `if` fragmentu kodu. (Jeśli użytkownik zaznaczy gdzie indziej i **IntelliSense** okna zniknął, trzeba cofnąć się za `i` i wpisać to ponownie, a **IntelliSense** ponownie zostanie otwarte okno.)
 
-     ![Program Visual C&#35; kodu](../ide/media/express_highlighttrue.png)
+     ![Visual C&#35; code](../ide/media/express_highlighttrue.png)
 
 4.  Następnie użyj funkcji IntelliSense, aby wprowadzić więcej kodu, aby otworzyć **Otwórz plik** okno dialogowe. Jeśli użytkownik wybrał **OK** button, element PictureBox ładuje plik wybrany przez użytkownika. Poniższe kroki pokazują jak wprowadzać kod, a wiele czynności, ale jest kilka naciśnięć klawiszy:
 

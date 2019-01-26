@@ -2,7 +2,7 @@
 title: Jak migrować i publikowanie aplikacji sieci Web w usłudze w chmurze platformy Azure
 description: Dowiedz się, jak migrować i publikowanie aplikacji sieci web w usłudze w chmurze platformy Azure przy użyciu programu Visual Studio
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: e910158519f9d1be01158799706a667449711773
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b889c6bd8b23dd49b5fd550a69b2678d6c9b09db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967305"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -58,7 +58,7 @@ Jeśli masz parametry połączenia dla aplikacji sieci web, która korzysta z lo
 1. Tworzenie chmury niezbędnych kont magazynu i usługi w subskrypcji platformy Azure, zgodnie z opisem na [przygotować się do publikowania lub wdrażania aplikacji platformy Azure z programu Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. W programie Visual Studio, kliknij prawym przyciskiem myszy projekt aplikacji, a następnie wybierz **publikowanie w usłudze Microsoft Azure...**  (jest to różni się od polecenie "Publikuj...".).
 1. W **publikowanie aplikacji platformy Azure** wyświetlany, zaloguj się przy użyciu konta z subskrypcją platformy Azure, a następnie wybierz pozycję **Dalej >**.
-1. W **Ustawienia > typowe ustawienia** , a następnie wybierz docelową usługę w chmurze z **usługi w chmurze** listy rozwijanej, wraz z konfiguracjami oraz wybranego środowiska. 
+1. W **Ustawienia > typowe ustawienia** , a następnie wybierz docelową usługę w chmurze z **usługi w chmurze** listy rozwijanej, wraz z konfiguracjami oraz wybranego środowiska.
 1. W **Ustawienia > Ustawienia zaawansowane**, wybierz konto magazynu do użycia, a następnie wybierz **Dalej >**.
 1. W **diagnostyki**, określ, czy chcesz wysłać informacje do usługi Application Insights.
 1. Wybierz **Dalej >** można wyświetlić podsumowanie, następnie wybierz pozycję **Publikuj** rozpocząć wdrażanie.

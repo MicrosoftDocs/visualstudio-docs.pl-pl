@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcd07f34fb790f593653547f94112bffce248c55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1d6e6e6ff48cd9aaf15e3dfa471b35e300777d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021757"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Określa lokalizację wierszy i kolumn w podanym tekście.  
@@ -71,7 +71,7 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -80,9 +80,9 @@ public struct TEXT_POSITION { 
 ## <a name="see-also"></a>Zobacz też  
  [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
- [Getsourcerange —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
- [Getrange —](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
- [Getoffset —](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   
+ [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
+ [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)   
+ [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)   
  [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   

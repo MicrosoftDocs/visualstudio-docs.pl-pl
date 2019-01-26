@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 4b93f2eae0272649d990033970780e1ba9c507b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227684"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024789"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -32,11 +32,11 @@ devenv /Edit [File1[ FileN]...]
 
 ## <a name="arguments"></a>Argumenty
 
-- *Plik1*
+- *File1*
 
   Opcjonalna. Plik można otworzyć w istniejącego wystąpienia programu Visual Studio. Jeśli nie ma wystąpień programu Visual Studio, jest tworzone nowe wystąpienie o uproszczonym układzie okna i otwarciu narzędzia *plik1* w nowym wystąpieniu.
 
-- *Plikn*
+- *FileN*
 
   Opcjonalna. Jeden lub więcej dodatkowych plików do otwierania w istniejącym wystąpieniu programu Visual Studio.
 

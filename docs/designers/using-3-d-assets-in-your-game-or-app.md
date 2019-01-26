@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9a292e1bdd25a07029ab90d9f2ba5bbfc08bed2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942376"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Korzystanie z zasobów 3D w grach i aplikacjach
 
@@ -41,9 +41,9 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 
     |Typ zasobu|Nazwa dostosowania kompilacji|
     |----------------| - |
-    |Obrazami i teksturami|**ImageContentTask (.targets, .props)**|
+    |Obrazami i teksturami|**ImageContentTask(.targets, .props)**|
     |Modele 3D|**MeshContentTask (.targets, .props)**|
-    |Programy do cieniowania|**ShaderGraphContentTask (.targets, .props)**|
+    |Programy do cieniowania|**ShaderGraphContentTask(.targets, .props)**|
 
 3.  Wybierz **OK** przycisku.
 
@@ -67,7 +67,7 @@ Poniżej przedstawiono trzy typy elementów potoku zawartości i ich skojarzone 
 
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|
 |---------------| - | - |
-|**Potok zawartości obrazu**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *JPEG*, *.jpe*, *.jfif*)<br /><br /> Bezpośrednie powierzchni do rysowania (*.dds*)<br /><br /> Format GIF (*.gif*)<br /><br /> Mapa bitowa (*.bmp*, *.dib*)<br /><br /> Plik TIFF (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|Powierzchnia DirectDraw (*.dds*)|
+|**Potok zawartości obrazu**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Bezpośrednie powierzchni do rysowania (*.dds*)<br /><br /> Format GIF (*.gif*)<br /><br /> Mapa bitowa (*.bmp*, *.dib*)<br /><br /> Plik TIFF (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|Powierzchnia DirectDraw (*.dds*)|
 |**Potok zawartości siatki**|Plik wymiany AutoDesk FBX (*.fbx*)<br /><br /> Plik Collada DAE (*.dae*)<br /><br /> Plik OBJ czoła fali (*.obj*)|Plik siatki 3D (*.cmo*)|
 |**Potok zawartości programu do cieniowania**|Wizualny wykres modułu cieniującego (*.dgsl*)|Skompilowane dane wyjściowe programu do cieniowania (*.cso*)|
 
