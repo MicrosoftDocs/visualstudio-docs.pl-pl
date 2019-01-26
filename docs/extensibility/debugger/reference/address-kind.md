@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4c103884da28bedfd221e26b159e9e8f98e55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 635602117eac80aacd8c78ef6a30de905877a550
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983147"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Określa typy adresów.  
@@ -93,6 +93,6 @@ public enum enum_ADDRESS_KIND {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
+ [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

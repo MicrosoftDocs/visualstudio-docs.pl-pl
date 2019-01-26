@@ -5,17 +5,17 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 893fc2f989dab579690cdac37edae3ba0fad606a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4434d5187809a4517161f1239c3adfea193fcd5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869141"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980196"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refaktoryzacja, aby zastąpić var jawnego typu
 

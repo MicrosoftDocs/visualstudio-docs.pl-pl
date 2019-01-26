@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a57fa611f157fa588158225cece8d38da2babd0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b62df361a965028240316c14da4c8c9ee8e578c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997705"
 ---
 # <a name="strings-element"></a>Strings, element
 Strings, element musi zawierać co najmniej jeden **ButtonText** elementu podrzędnego. Wszystkie inne elementy podrzędne są opcjonalne. Nieprawidłowy kod XML znaków takich jak "&" i "<" musi być kodowane jako jednostki ("&amp;"i"&lt;" i tak dalej).  
@@ -39,7 +39,7 @@ Strings, element musi zawierać co najmniej jeden **ButtonText** elementu podrz�
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|język|Opcjonalna. Language = ".".|  
+|język|Opcjonalna. Language=".".|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a16ee92f-3081-416a-98f6-ce6bc8288a8b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec2d311bb29650105f0a08243abd8d2a5778da0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17b972b8dba8217e4bd82d8072adfde4ffc54c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973015"
 ---
 # <a name="idiaenumsectioncontribsgetnewenum"></a>IDiaEnumSectionContribs::get__NewEnum
 Pobiera <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> wersję tego modułu wyliczającego.  

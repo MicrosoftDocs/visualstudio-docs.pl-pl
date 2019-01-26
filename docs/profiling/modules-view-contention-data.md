@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57e37b85dbcf1cbbb6801cd73b30b65ee7f16d9b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932054"
 ---
 # <a name="modules-view---contention-data"></a>Widok modułów — dane rywalizacji
 Widok modułów danych rywalizacji o zasoby współbieżności dane są pogrupowane według modułów, które zostały poddane próbkowaniu w danych profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcji modułu, w którym wystąpiło zdarzenia rywalizacji są wyświetlane w węźle modułu.  

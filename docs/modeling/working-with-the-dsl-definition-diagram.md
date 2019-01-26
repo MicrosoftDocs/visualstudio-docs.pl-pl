@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2c95d1a096d2b7d90292711ae53117321e54746b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6924e73d97b282b4027244c542684c2090520437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888429"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039245"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
 Diagram [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definicja jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Możesz dodać elementy do domeny, modelowanie i definiowanie relacji na diagramie, a także mogą modyfikować układ diagramu, aby był bardziej czytelny.

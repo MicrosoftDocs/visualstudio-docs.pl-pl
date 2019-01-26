@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f2538c5c07231fa46f70a640784d1b6ac93712
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850141"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970529"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Instrukcje: Czas odpowiedzi strony sieci web widoku w teście obciążenia za pomocą analizatora testu obciążenia
 

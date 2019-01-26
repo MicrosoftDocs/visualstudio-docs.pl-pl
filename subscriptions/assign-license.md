@@ -2,19 +2,19 @@
 title: Przypisywanie licencji do subskrypcji programu Visual Studio | Dokumentacja firmy Microsoft
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do subskrybentów
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970126"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Przypisz licencje w portal administratora subskrypcji programu Visual Studio
 
@@ -46,7 +46,7 @@ Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual 
 
     Jeśli chcesz dodać notatki odwołania do subskrypcji, możesz zrobić to w **Dodaj odwołanie do** sekcji.
    > [!div class="mx-imgBorder"]
-   > ![Dodaj notatki odwołania do każdej subskrypcji](media/add-subscriber-reference-notes.png) 
+   > ![Dodaj notatki odwołania do każdej subskrypcji](media/add-subscriber-reference-notes.png)
 
     Gdy ukończysz pracę wybierając opcje i wprowadzania danych dla subskrybenta, wybierz **Dodaj** w dolnej części **Dodaj subskrybenta** staną się.
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual 
 
 4. Po dodaniu subskrybenta, wiadomość e-mail dotycząca przypisania będzie automatycznie wysyłane do nowych subskrybentów z dalszymi instrukcjami. Możesz wysłać wiadomość e-mail dotycząca przypisania w dowolnym momencie ponownie, wybierając subskrybenta i klikając **Wyślij ponownie** przycisku w menu u góry.
    > [!div class="mx-imgBorder"]
-   > ![Wyślij ponownie wiadomość e-mail dotyczącą aktywacji do żadnego użytkownika lub wielu użytkowników zawsze wtedy, gdy chcesz](media/resend-subscriber-activation-emails.png) 
+   > ![Wyślij ponownie wiadomość e-mail dotyczącą aktywacji do żadnego użytkownika lub wielu użytkowników zawsze wtedy, gdy chcesz](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Zbiorcze przypisania
 
@@ -65,7 +65,7 @@ Poniżej przedstawiono sposób przypisać licencję subskrypcji programu Visual 
 2. Przypisz zbiorczo używa szablonu programu Microsoft Excel, można przekazać subskrybentów. W oknie dialogowym Przekaż wielu subskrybentów kliknij **Pobierz** pobrać szablon.
    > [!div class="mx-imgBorder"]
    > ![Pobierz szablon programu Excel, aby przesłać wielu subskrybentów](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Zawsze należy pobrać najnowszą wersję tego szablonu. Jeśli używasz starszej wersji, przekazywanie zbiorcze może zakończyć się niepowodzeniem.
 

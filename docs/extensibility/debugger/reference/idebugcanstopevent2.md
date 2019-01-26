@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2 | Dokumentacja firmy Microsoft
+title: IDebugCanStopEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5313595bd96b2176255822425d11776eedaedbe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2609ca6cdf06117da56572c3574426a6d68c9178
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942245"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987950"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Ten interfejs jest używany do zadania Menedżer debugowania sesji (SDM), czy można zatrzymać w bieżącej lokalizacji kodu.  
@@ -50,7 +50,7 @@ IDebugCanStopEvent2 : IUknown
  DE wysyła tego interfejsu, jeśli czynności użytkownika do funkcji i "de" wykryje żadnych informacji debugowania lub informacje o debugowaniu istnieje, ale DE nie wie, jeśli dla tej lokalizacji można wyświetlić kodu źródłowego.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974022"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i komentarze, implementując niestandardowe elementy z możliwością kolorowania jako część usługi języka.  
@@ -30,7 +30,7 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
 > [!CAUTION]
 >  Nazwa języka należy uwzględnić w nazwie elementu z możliwością kolorowania, aby uniknąć konfliktów z już istniejącymi nazwami elementów z możliwością kolorowania. Jeśli zmienisz nazwę jednego z elementów z możliwością kolorowania podczas projektowania należy zresetować pamięć podręczną, która została utworzona po raz pierwszy uzyskano elementów z możliwością kolorowania. Możesz zresetować eksperymentalne pamięci podręcznej przy użyciu **CreateExpInstance** narzędzia, które jest instalowany z programem Visual Studio SDK, zwykle znajduje się w katalogu:  
 >   
->  *C:\Program pliki (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  Aby zresetować pamięć podręczną, należy wprowadzić **/reset CreateExpInstance**. Aby uzyskać więcej informacji na temat **CreateExpInstance**, zobacz [narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   

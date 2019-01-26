@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed12330a2acce09a5fb8a9aabc3b434b4c42fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0156012f116a3189441b47d17e5c75014cf8ac0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931911"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 Projekty w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] może obsługiwać wiele konfiguracji, które może być kompilowana, debugowania, wykonywania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje *debugowania* i *wersji*. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych lub zmodyfikowane w celu spełnienia określonych wymagań rozwiązania lub projektu. Niektóre pakiety można tworzyć na dwa sposoby: jako edytora ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępna tylko w jednej konfiguracji, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.  

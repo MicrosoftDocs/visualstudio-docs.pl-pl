@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccQueryChanges | Dokumentacja firmy Microsoft
+title: SccQueryChanges Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b2f1fff6bff9130bc337a4636aea3127d85514b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993512"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges, funkcja
 Ta funkcja wylicza danej listy plików, przekazywania informacji na temat zmiany nazwy dla każdego pliku za pomocą funkcji wywołania zwrotnego.  

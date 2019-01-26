@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNameChangedEvent2 | Dokumentacja firmy Microsoft
+title: IDebugProgramNameChangedEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91ae416431129ebf5dffafc69ca93441e7f72dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ab44a6673a80b8a20a560ce149a4f5600606c68
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889296"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980950"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 Wysyłane z aparatu debugowania (DE) do Menedżer debugowania sesji (SDM) po zmianie nazwy programu.  

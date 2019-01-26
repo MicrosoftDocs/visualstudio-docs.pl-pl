@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::Attach
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e7726786d3488cc4578dbc6efd016510a3d52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42f269a62671864f3da2c0ca00c56a43a4ab9cba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935440"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975988"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -59,7 +59,7 @@ Implementacja zawsze powinna zwrócić `E_NOTIMPL`.
 > [!WARNING]
 > Począwszy od programu Visual Studio 2005, ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`. Zobacz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejs dla alternatywne podejście, jeśli węzeł program musi wskazywać, nie można dołączyć do lub węzeł program po prostu ustawia program `GUID`. W przeciwnym razie zaimplementować [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.
 
-## <a name="prior-to-visual-studio-2005"></a>Przed Visual Studio 2005
+## <a name="prior-to-visual-studio-2005"></a>Prior to Visual Studio 2005
 
 Ta metoda musi zaimplementować tylko wtedy, gdy DE działa w przestrzeni adresowej debugowanego programu. W przeciwnym razie ta metoda powinna zwracać `S_FALSE`.
 

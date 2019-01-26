@@ -1,5 +1,5 @@
 ---
-title: Narzędzie VSInstr | Dokumentacja firmy Microsoft
+title: VSInstr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ccb25955a7ecb1ed37a69434e695a7417ea308
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039036"
 ---
 # <a name="vsinstr"></a>VSInstr
 Narzędzie VSInstr służy do Instrumentacji danych binarnych. Jest wywoływany przy użyciu następującej składni:  
@@ -57,7 +57,7 @@ VSInstr [/U] filename [/options]
   
 ## <a name="see-also"></a>Zobacz także  
  [VSPerfMon](../profiling/vsperfmon.md)   
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Ostrzeżenia VSInstr](../profiling/vsinstr-warnings.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

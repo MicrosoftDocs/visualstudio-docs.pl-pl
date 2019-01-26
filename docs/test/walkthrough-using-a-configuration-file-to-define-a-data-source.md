@@ -9,15 +9,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70312472a11c0a0ea2cce6e760db9987858990c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935231"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Korzystanie z pliku konfiguracji do określania źródła danych
 
@@ -271,4 +271,4 @@ Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, k
 ## <a name="see-also"></a>Zobacz także
 
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)
-- [Jak: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+- [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

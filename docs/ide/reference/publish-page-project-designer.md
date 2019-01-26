@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 641b6ba6e1e9c5d277cb2861b8d3c4d53ba9a13c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945531"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce.
@@ -82,17 +82,17 @@ ms.locfileid: "53911418"
 
 - [Publikowanie aplikacji ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Instrukcje: Określanie lokalizacji kopiowania plików w programie Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Instrukcje: Określ lokalizację, w której użytkownicy końcowi będą przeprowadzać instalacje](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Instrukcje: Określanie Linku do pomocy technicznej](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Instrukcje: Określanie ClickOnce w trybie Offline lub Online instalowania tryb](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Instrukcje: Włączenie funkcji AutoStart dla instalacji z dysku CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Instrukcje: ClickOnce ustawienie wersji publikacji](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Instrukcje: Automatyczne ClickOnce zwiększenie wersji publikacji](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Instrukcje: Określanie lokalizacji kopiowania plików przez program Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Instrukcje: Określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Instrukcje: Określanie linku do pomocy technicznej](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Instrukcje: Określanie trybu instalacji offline lub online w ramach technologii ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Instrukcje: Ustawianie wersji publikacji technologii ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Instrukcje: Automatyczne zwiększanie wersji publikacji ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Instrukcje: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Instrukcje: Instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Instrukcje: Zmiana języka publikacji dla aplikacji ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Instrukcje: Określanie nazwy Menu Start dla aplikacji ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Instrukcje: Zmienianie języka publikacji dla aplikacji ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Instrukcje: Określanie nazwy menu Start dla aplikacji ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
 - [Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
 - [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../../deployment/clickonce-security-and-deployment.md)

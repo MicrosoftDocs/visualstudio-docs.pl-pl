@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 051c2f3f9c25eebbfbf686587652df1b830806f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e18ee7fbd3772a9a3f894c100f42b59060ace5bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961926"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Pobiera żądanie przerwania, który został użyty do utworzenia tego oczekujący punkt przerwania.  

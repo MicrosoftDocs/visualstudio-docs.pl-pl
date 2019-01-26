@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf4b4250098303d1fcba8334281fe9c337226b2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 5fcecaab6971b70064edf5d38c86ecaa80c05351
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53942401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974909"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — zadanie
 Określa wszystkie zestawy, które są zależne od określonych zestawów, łącznie z drugiego i `n`th kolejności zależności.  

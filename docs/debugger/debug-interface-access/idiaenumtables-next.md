@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d7bd359-d33e-4317-9674-d89283efd7de
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d9811fe55a3b942cd020ae8038f07df8bf7a2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e1cad345d099c9f5f8ecd870bcd80de7c886a55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977580"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Pobiera określoną liczbę tabel w kolejności wyliczenia.  

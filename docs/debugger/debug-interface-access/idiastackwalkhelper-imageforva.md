@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a65c93bbac1cd49c52f6e93e2f009aba22581bb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26cb6957edd30d36fbc1a9ebbf982fd3ce91c94a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971250"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 Zwraca początek obrazu pliku wykonywalnego w pamięci podany wirtualny adres gdzieś w obszarze pamięci pliku wykonywalnego.  

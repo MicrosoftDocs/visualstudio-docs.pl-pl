@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fdc5a568f70795aff3388a3b0722807611bfc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1c5b485bf0fbd06b71aa7fb3239ca2796a4512a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944803"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
 Pobiera adres wirtualny (oceny luk w zabezpieczeniach) w bloku.  

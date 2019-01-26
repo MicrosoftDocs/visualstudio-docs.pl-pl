@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f0d00b29912f1e5baff93b81a7c69924271a24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56bdbb9d32d91fc16048475cb1fa69f5e5aed9a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965893"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 Pobiera flagę określającą, czy klasa jest typem wewnętrzne.  
@@ -43,11 +43,11 @@ HRESULT get_intrinsic( 
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2 | Dokumentacja firmy Microsoft
+title: IEnumCodePaths2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43491c329753e50e7c733afb55ecd4f415d11a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20bfd418da802e136fd92948285f9431efae88ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982120"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 Ten interfejs reprezentuje listę ścieżek kodu.  
@@ -49,7 +49,7 @@ IEnumCodePaths2 : IUnknown
  Ścieżka kodu reprezentuje gałęzi punktu lub wywołania funkcji w programie. Lista ścieżek kodu reprezentuje ścieżkę, przez które zajęło wykonanie kodu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

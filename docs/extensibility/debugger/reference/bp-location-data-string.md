@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a9f822dfe13d6adf4ea79481ca5bca2cacf2463
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58e1e5d4a390b24fdb1c718d3ebd4e9d2479b189
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946944"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040713"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Używana do ustawiania punktów przerwania danych, które są oparte na ciąg, który użytkownik może wprowadzić ze zintegrowanego środowiska programistycznego (IDE).  
@@ -50,7 +50,7 @@ typedef struct _BP_LOCATION_DATA_STRING { 
  Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

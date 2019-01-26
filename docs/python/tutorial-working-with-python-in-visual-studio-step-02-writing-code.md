@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a378efd38a4ccd415276cb1a10f24ff39600894f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988678"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
 
@@ -46,7 +46,7 @@ Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna
     ![Kolorowanie składni IntelliSense i funkcji wyróżniania błędów](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Ponieważ w jednym środowisku programistycznym jest bardzo osobistych kwestią, Visual Studio zapewnia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **narzędzia** > **opcje** menu poleceń i zapoznaj się z ustawieniami w obszarze **środowiska** i **edytora tekstów** karty. Domyślnie zostanie wyświetlony tylko ograniczoną liczbę opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego. 
+    > Ponieważ w jednym środowisku programistycznym jest bardzo osobistych kwestią, Visual Studio zapewnia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **narzędzia** > **opcje** menu poleceń i zapoznaj się z ustawieniami w obszarze **środowiska** i **edytora tekstów** karty. Domyślnie zostanie wyświetlony tylko ograniczoną liczbę opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego.
 
 1. Uruchamianie kodu napisanych do tego punktu, naciskając klawisz **Ctrl**+**F5** lub wybierając **debugowania** > **Uruchom bez debugowania**  elementu menu. Program Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
 

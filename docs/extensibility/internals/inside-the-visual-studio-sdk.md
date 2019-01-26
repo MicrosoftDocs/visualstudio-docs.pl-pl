@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978272"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual Studio, w tym architektury programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.
@@ -102,7 +102,7 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual
 ## <a name="properties-and-options"></a>Właściwości i opcje
  **Właściwości** oknie zostaną wyświetlone właściwości jednego lub wielu wybranych elementów: [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md) strony opcje zawierają zestawy opcji, które odnoszą się do określonego składnika, takiego jak język programowania lub pakietu VSPackage: [Opcje i strony opcji](../../extensibility/internals/options-and-options-pages.md). Ustawienia są zwykle interfejsu użytkownika funkcjach, które mogą być importowane i wyeksportowane: [Obsługa ustawień użytkowników](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Usługi Visual Studio
+## <a name="visual-studio-services"></a>Visual Studio Services
  Usługa zawiera zbiór interfejsów składników z. Program Visual Studio udostępnia zestaw usług, które mogą być używane przez wszystkie składniki, włącznie z rozszerzeniami. Na przykład usługi Visual Studio umożliwiają okien narzędziowych, aby wyświetlony lub ukryty dynamicznie, Włącz dostęp do pomocy i pasek stanu, w tym także zdarzenia interfejsu użytkownika. Edytor programu Visual Studio udostępnia również usługi, które mogą być importowane przez rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [Using i dostarczanie usług](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>Debuger

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941076"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995690"
 ---
 # <a name="application-deployment-prerequisites"></a>Wymagania wstępne wdrożenia aplikacji
 
@@ -52,7 +52,7 @@ Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie,
 
  Jeśli używasz programu Visual Studio i technologii ClickOnce do wdrażania aplikacji, pakietów programu inicjującego, które są wybrane domyślnie są zależne od wersji programu .NET Framework w rozwiązaniu. Jednak jeśli zmienisz .NET Framework w wersji docelowej, należy zaktualizować opcje w **wstępnie wymagane składniki, okno dialogowe** ręcznie.  
 
-|Docelowy .NET Framework|Wybrany program inicjujący pakietów|  
+|Target .NET Framework|Wybrany program inicjujący pakietów|  
 |---------------------------|------------------------------------|  
 |.NET Framework 4 Client Profile|.NET Framework 4 Client Profile<br /><br /> Instalator Windows 3.1|  
 |Program .NET Framework 4|Program .NET Framework 4<br /><br /> Instalator Windows 3.1|  
@@ -78,7 +78,7 @@ Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie,
 | **— adres url, - componentsurl** | Pokazuje adres URL przechowywanych i składników adresów url dla tego zestawu w górę. |
 | **-url =** `location` | Ustawia adres URL, gdzie *Setup.exe* będzie szukał [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. |
 | **-componentsurl =** `location` | Ustawia adres URL, gdzie *Setup.exe* będzie szukał zależności, takie jak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
-| **-homesite =** `true`**&#124;** `false` | Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. To ustawienie przesłania **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**. |
+| **-homesite=** `true` **&#124;** `false` | Gdy `true`, pliki do pobrania zależności z preferowanych lokalizacji witryny dostawcy. To ustawienie przesłania **- componentsurl** ustawienie. Gdy `false`, pobiera zależności z adresu URL określonego przez **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Obsługa systemów operacyjnych  
  Program inicjujący programu Visual Studio nie jest obsługiwana instalacja Server Core systemu Windows Server 2008 lub Windows Server 2008 R2 Server Core, ponieważ zapewniają środowisku niski konserwacji serwera z ograniczoną funkcjonalnością. Opcja instalacji Server Core obsługuje tylko profilu platformy .NET Framework 3.5 Server Core, którego nie można uruchomić funkcji programu Visual Studio, które są zależne od pełny program .NET Framework.  

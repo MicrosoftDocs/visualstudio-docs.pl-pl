@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9641dc70fb1aa175c0d9e1017a1eb866bc5e3737
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16fc85090b59909add7ae228a795c6396ca61a3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967235"
 ---
 # <a name="create-a-breakpoint"></a>Utwórz punkt przerwania
 Poniżej opisano proces tworzenia punktu przerwania.  

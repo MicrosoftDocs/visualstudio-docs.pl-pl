@@ -8,14 +8,14 @@ helpviewer_keywords:
 - solution filtering
 author: gewarren
 ms.author: stsu
-manager: douge
+manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 92c48117a7f55c793ac52327468db0b094f1efa0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1ce2c3fbb8386cb58e096e526dc27b03d16e428e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834144"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972563"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrowane rozwiązań w programie Visual Studio
 

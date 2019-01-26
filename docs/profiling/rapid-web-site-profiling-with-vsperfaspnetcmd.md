@@ -7,15 +7,15 @@ helpviewer_keywords:
 - VSPerfASPNETCmd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ec48f7e860d4588a1d133792ceeb1c26add45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 617e032805f0074b813bc3a7dc5a66047186861b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849648"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989721"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie za pomocą polecenia VSPerfASPNETCmd witryny sieci web
 
@@ -39,13 +39,13 @@ Do profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikac
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>W celu zbierania statystyk aplikacji przy użyciu metody próbkowania
  Próbkowanie to domyślna metoda profilowania **VSPerfASPNETCmd** narzędzie i nie musi być określona w wierszu polecenia. Następujące polecenie w wierszu służy do zbierania statystyk aplikacji z określonej aplikacji sieci web:
 
- **polecenie vsperfaspnetcmd***podanym adresem URL*
+ **vsperfaspnetcmd**  *websiteUrl*
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji
 
 Użyj następującego polecenia, aby zebrać szczegółowe dane czasowe z dynamicznie skompilowanej [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web:
 
-**polecenie vsperfaspnetcmd/trace***podanym adresem URL*
+**vsperfaspnetcmd /trace**  *websiteUrl*
 
 Jeśli chcesz przeprowadzić profilowanie statycznie skompilowany. *dll* plików w aplikacji sieci web muszą instrumentować plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzie wiersza polecenia. Polecenie vsperfaspnetcmd/trace będzie zawierać dane z instrumentowanych plików.
 
@@ -53,7 +53,7 @@ Jeśli chcesz przeprowadzić profilowanie statycznie skompilowany. *dll* plików
 
 **/Memory** opcji zbiera dane dotyczące alokacji obiektów w pamięci platformy .NET i zbierać dane dotyczące okresu istnienia tych obiektów. Zbieranie danych alokacji to domyślny tryb **/Memory** danych opcji i nie musi być określona w wierszu polecenia.
 
- **polecenie vsperfaspnetcmd/Memory** *podanym adresem URL*
+ **vsperfaspnetcmd /memory** *websiteUrl*
 
  Użyj **okres istnienia** parametru dodatkowo do zebrania danych o okresie istnienia obiektu z danymi alokacji:
 
@@ -72,11 +72,11 @@ Jeśli chcesz przeprowadzić profilowanie statycznie skompilowany. *dll* plików
 
 Aby zebrać dane interakcji między warstwami przy użyciu dane próbkowania:
 
-**TIP vsperfaspnetcmd** `websiteUrl`
+**vsperfaspnetcmd /tip** `websiteUrl`
 
 Aby zebrać dane interakcji między warstwami przy użyciu danych Instrumentacji:
 
-**polecenie vsperfaspnetcmd/trace TIP** *podanym adresem URL*
+**vsperfaspnetcmd /trace /tip** *websiteUrl*
 
 Aby zebrać dane interakcji między warstwami przy użyciu danych pamięci .NET:
 
@@ -88,11 +88,11 @@ Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia
 
 Aby rozpocząć profilowanie:
 
-**polecenie vsperfaspnetcmd** [*/opcje*] **flagi/nowait**_podanym adresem URL_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 Aby zakończyć profilowania:
 
-**polecenie vsperfaspnetcmd/shutdown** *podanym adresem URL*
+**vsperfaspnetcmd /shutdown** *websiteUrl*
 
 ## <a name="additional-options"></a>Dodatkowe opcje
 
@@ -101,4 +101,4 @@ Można dodać dowolne z następujących opcji na polecenia wymienione wcześniej
 |Opcja|Opis|
 |------------|-----------------|
 |**/ Dane wyjściowe:** `VspFile`|Domyślnie dane profilowania (. *Vsp*) plik zostanie utworzony w bieżącym katalogu z nazwą pliku **pliku PerformanceReport.vsp**. Użyj opcji/OUTPUT, aby określić inną lokalizację i nazwę pliku.|
-|**/ PackSymbols: wyłączone**|Domyślnie VsPerfASPNETCmd osadza w symbole (nazwy funkcji i parametrów oraz itp.). *vsp* pliku. Osadzanie symbole można wprowadzać bardzo duży plik danych profilowania. Jeśli masz dostęp do. *pdb* pliki, które zawierają symbole podczas analizowania danych, użyj packsymbols: Wyłącz możliwość wyłączenia osadzania symboli.|
+|**/PackSymbols:Off**|Domyślnie VsPerfASPNETCmd osadza w symbole (nazwy funkcji i parametrów oraz itp.). *vsp* pliku. Osadzanie symbole można wprowadzać bardzo duży plik danych profilowania. Jeśli masz dostęp do. *pdb* pliki, które zawierają symbole podczas analizowania danych, użyj packsymbols: Wyłącz możliwość wyłączenia osadzania symboli.|

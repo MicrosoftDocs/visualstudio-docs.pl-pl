@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 967a5ddd369700e66aec4d910ece9115f5809c98
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035266"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:
@@ -55,7 +55,7 @@ Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera k
 |Usunąć, zmienić elementu nadrzędnego lub Połącz ponownie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje Usuń** wartość rolę w relacji. Dla bardziej złożonych efektów zastąpić `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metody `MyDslDeleteClosure` klasy zdefiniowane w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md)|
 |Zachowaj kształt układ i wygląd na kopiowanie i przeciąganie i upuszczanie.|Dodawanie kształtów i łączników do skopiowanych `ElementGroupPrototype`. To najwygodniejsza metody do przesłonięcia `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|
 |Wklejanie kształtów w wybranej lokalizacji, na przykład w bieżącej pozycji kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()` użyć lokalizacji określonej wersji `ElementOperations.Merge().` zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|
-|Tworzyć linki do dodatkowych przy wklejaniu|Zastąp ClipboardCommandSet.ProcessOnPasteCommand()|
+|Tworzyć linki do dodatkowych przy wklejaniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Przeciągania i upuszczania, z tym diagramie z innymi językami DSL i Windows, elementy|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Zezwalaj na kształt lub narzędziu można przeciągać kształt podrzędny, taki jak port, tak, jakby były przeciągnięto element nadrzędny.|Zdefiniuj dyrektywa scalania elementów na klasę obiektu docelowego do przekazywania upuszczony obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|
 |Zezwalaj na kształcie lub narzędzia można przeciągać kształt i linki do dodatkowych lub obiekty utworzone. Na przykład, aby zezwolić na komentarz, aby być upuszczone na element, do której ma być połączone.|Zdefiniuj dyrektywa scalania elementów dla klasy domeny docelowej i definiują łącza do wygenerowania. W przypadku złożonych można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|

@@ -1,5 +1,5 @@
 ---
-title: 'CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute'
+title: 'CA2217: Nie oznaczaj typów wyliczeniowych atrybutem Flags'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -16,17 +16,17 @@ dev_langs:
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c0a400dc960a1b7eab7165dba718dc70b3f88437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920914"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Nie oznaczaj wyliczeń za pomocą FlagsAttribute
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Nie oznaczaj typów wyliczeniowych atrybutem Flags
 
 |||
 |-|-|

@@ -5,15 +5,15 @@ ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2afbff14be944e17a26df09d041d9267ac5cb87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23ff00cea9bda6216a87bfd64b8c2c72ea5c3c2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987794"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Rozwiązywanie problemów z punktów przerwania w debugerze programu Visual Studio
 

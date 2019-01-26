@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170f80cc1abb12570e01dd9f9b2fcd04d7bff139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961900"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild — pliki .targets
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera kilka *.targets* pliki, które zawierają elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliki w celu uproszczenia konserwacji i czytelności projektu.  
 
  Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Na przykład [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekt utworzony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zaimportuje *Microsoft.CSharp.targets* które importuje *Microsoft.Common.targets*. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Sam projekt Definiowanie elementów i właściwości określonych do tego projektu, ale standard tworzenia reguł dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu są zdefiniowane w zaimportowanych *.targets* plików.  
 
- `$(MSBuildToolsPath)` Określa ścieżkę dla tych wspólnych *.targets* plików. Jeśli `ToolsVersion` 4.0, pliki znajdują się w następującej lokalizacji: *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*  
+ `$(MSBuildToolsPath)` Określa ścieżkę dla tych wspólnych *.targets* plików. Jeśli `ToolsVersion` 4.0, pliki znajdują się w następującej lokalizacji: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*  
 
 > [!NOTE]
 >  Aby uzyskać informacje o sposobie tworzenia własnych elementów docelowych, zobacz [cele](../msbuild/msbuild-targets.md). Aby uzyskać informacje o sposobie używania `Import` element, aby wstawić plik projektu do innego pliku projektu, zobacz [Import — element (MSBuild)](../msbuild/import-element-msbuild.md) i [jak: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  

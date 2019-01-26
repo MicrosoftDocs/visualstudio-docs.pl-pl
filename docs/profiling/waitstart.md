@@ -1,19 +1,19 @@
 ---
-title: WaitStart | Dokumentacja firmy Microsoft
+title: WaitStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17e4b8a2aac1ae2eac20fb7579977df66ee9caa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbf17eb7a07a253aba8e82bd12cdb26d18f14dcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938004"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946636"
 ---
 # <a name="waitstart"></a>WaitStart
 Przyczyny opcji WaitStart *VSPerfCmd.exe* podrzędne polecenia uruchomienia, aby zwrócić tylko wtedy, gdy program profilujący został zainicjowany lub po upływie określonej liczby sekund. Domyślnie polecenia uruchomienia zwraca natychmiast. Jeśli polecenie podrzędne uruchamiania jest zwracane bez Inicjowanie programu profilującego, zwracany jest błąd. Jeśli nie określono liczbę sekund, przez czas nieokreślony oczekuje polecenia uruchomienia.  

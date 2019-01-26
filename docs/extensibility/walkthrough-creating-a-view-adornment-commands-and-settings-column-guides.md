@@ -5,21 +5,21 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947418"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Utwórz widok zakończeń, poleceń i ustawień (prowadnice kolumn)
 Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym artykule pokazano, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.
 
 W tym przewodniku możesz:
-- Utwórz projekt VSIX
+- Create a VSIX project
 - Dodaj zakończeń widoku edytora
 - Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)
 - Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)
@@ -747,7 +747,7 @@ W ramach wspólny wzorzec rozszerzenie prowadnice kolumn tworzy drugiej grupy, z
 
 ```
 
-**IDENTYFIKATORY GUID**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je, należy upewnić się identyfikator GUID zadeklarowanych w pakietu *ColumnGuideCommandsPackage.cs* pakietu, identyfikator GUID jest zadeklarowana w pasuje do pliku (generowany na podstawie szablonu elementu projektu) *vsct* pliku (skopiowany z powyższych). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
+**GUIDS**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je, należy upewnić się identyfikator GUID zadeklarowanych w pakietu *ColumnGuideCommandsPackage.cs* pakietu, identyfikator GUID jest zadeklarowana w pasuje do pliku (generowany na podstawie szablonu elementu projektu) *vsct* pliku (skopiowany z powyższych). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
 
 Znajdź ten wiersz w *ColumnGuideCommandsPackage.cs* i skopiuj identyfikator GUID znajdujące znaki cudzysłowu:
 

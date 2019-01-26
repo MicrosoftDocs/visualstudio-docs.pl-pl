@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fe692f7f9cc00fa90d15ccf43b2526becc24b24
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997328"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze
 

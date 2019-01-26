@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5855f2d861912baf62ac4afcf1db36815e26cb94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8bf0c2e075a6251abb47a6dda71e1576fd90a7e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985227"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 Pobiera listę wszystkich programów, które są zawarte w tym procesie.  

@@ -1,19 +1,19 @@
 ---
-title: Podstawy interfejsu użytkownika dla programu Visual Studio | Dokumentacja firmy Microsoft
+title: UX Essentials for Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac8fdabc54965d521df2552ad4f152b53a7be70a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997185"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 ## <a name="best-practices"></a>Najlepsze rozwiązania  

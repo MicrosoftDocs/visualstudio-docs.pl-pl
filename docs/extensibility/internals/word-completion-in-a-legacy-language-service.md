@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f89027e69c319c74e9c61ceb053edd9c2428548d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040808"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 Uzupełnianie wyrazów wypełnia brakujących znaków na częściowo wpisane programu word. Jeśli istnieje tylko jedno możliwe ukończenie, wyraz zostało zakończone, po wprowadzeniu znaku zakończenia. Jeśli wyrazów częściowych pasuje do więcej niż jedną z możliwości, zostanie wyświetlona lista możliwych ukończenia. Znak zakończenia może być dowolny znak, który nie jest używany dla identyfikatorów.  

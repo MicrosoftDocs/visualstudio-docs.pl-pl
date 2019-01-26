@@ -1,5 +1,5 @@
 ---
-title: UDT | Dokumentacja firmy Microsoft
+title: UDT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987547"
 ---
 # <a name="udt"></a>UDT
 Każdej klasy, struktury i Unii jest identyfikowany przez `SymTagUDT` symboli. Każdy element członkowski, funkcji, danych lub typu zagnieżdżonego i każdej klasy bazowej jest wyświetlany jako element podrzędny klasy typu zdefiniowanego przez użytkownika (UDT).  

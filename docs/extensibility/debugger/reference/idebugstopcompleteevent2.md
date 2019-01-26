@@ -6,15 +6,15 @@ helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39da50c17d4d4b8b02390e0d2960d5696b93b1f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33272f87ae30832588a998ebea2fc46e9adaae50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984239"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -36,7 +36,7 @@ Zatrzymaj jest używany do asynchronicznie powiadamia SDM, który programu zosta
 
 ## <a name="requirements"></a>Wymagania
 
-Nagłówek: msdbg.h
+Header: msdbg.h
 
 Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 

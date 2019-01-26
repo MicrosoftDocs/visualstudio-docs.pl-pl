@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5349aa86ff0411164b292da8c9bf7a9b657c64cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848827"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975767"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 Opakowuje narzędziu manifestu Microsoft *mt.exe*. Aby uzyskać więcej informacji, zobacz [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).  
@@ -62,7 +62,7 @@ Opakowuje narzędziu manifestu Microsoft *mt.exe*. Aby uzyskać więcej informac
 |**Źródła**|Opcjonalnie `ITaskItem[]` parametru.<br /><br /> Określa listę plików źródłowych manifestu, rozdzielone spacjami.<br /><br /> Aby uzyskać więcej informacji, zobacz **/manifest** opcji [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  
 |**SuppressDependencyElement**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, generuje manifest bez zależności elementów. Jeśli ten parametr jest `true`, również określić **ManifestFromManagedAssemblyMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nodependency** opcji [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  
 |**SuppressStartupBanner**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/nologo** opcji [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  
-|**Katalog TrackerLogDirectory**|Opcjonalnie `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
+|**TrackerLogDirectory**|Opcjonalnie `String` parametru.<br /><br /> Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.|  
 |**TypeLibraryFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę biblioteki typów (*.tlb*) pliku. W przypadku określenia tego parametru należy także określić **ComponentFileNameMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **/TLB** opcji [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|  
 |**UpdateFileHashes**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, oblicza wartość skrótu pliku w ścieżce określonej przez **UpdateFileHashesSearchPathMT** parametru zadania, a następnie aktualizuje wartość **skrótu** atrybut **pliku** elemencie manifestu za pomocą wartości obliczanej.<br /><br /> Aby uzyskać więcej informacji, zobacz **/hashupdate** opcji [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe). Zobacz też **UpdateFileHashesSearchPath** parametru w tej tabeli.|  
 |**UpdateFileHashesSearchPath**|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę szukania używaną podczas aktualizacji plików skrótu. Użyj tego parametru z **UpdateFileHashesMT** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz **UpdateFileHashes** parametru w tej tabeli.|  

@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: fafde7c8355b5087c6168345c57540e0356227b1
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 74931c1636ef2e1f512579907c162cb13148ef3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135539"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969028"
 documentType: LandingData
 title: Migracja z programu FxCop analizy kodu do analizatorów platformy kompilatora .NET
 metadata:
@@ -16,7 +16,7 @@ metadata:
   ms.topic: landing-page
   ms.author: gewarren
   author: gewarren
-  manager: douge
+  manager: jillfra
 abstract:
   description: Dowiedz się, jak analizować kod po raz pierwszy lub jak przeprowadzić migrację z programu FxCop, aby nowy sposób analizowania kodu zarządzanego za pomocą analizatorów.
   aside:
@@ -84,7 +84,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
       title: Zestawy reguł
-- title: Powiązane artykuły
+- title: 'Pokrewne artykuły:'
   items:
   - type: list
     style: cards

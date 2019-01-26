@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE | Dokumentacja firmy Microsoft
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a064e5076c9970ed827119923c8f232dfdc85e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4f483ca341055e7d041fe690dcdb4271138cf97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922223"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Określa typ lokalizacji punktu przerwania dla żądania punktu przerwania.  
@@ -119,7 +119,7 @@ public enum enum_BP_LOCATION_TYPE { 
  `BPT_CODE` i `BPT_DATA` są elementami członkowskimi [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) wyliczenia.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

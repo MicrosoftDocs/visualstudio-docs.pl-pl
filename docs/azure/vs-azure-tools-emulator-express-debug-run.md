@@ -2,19 +2,19 @@
 title: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej | Dokumentacja firmy Microsoft
 description: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze na komputerze lokalnym
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ff35e862c46ed669c104825ac0252b2b67c0bd1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7cc217732c3f058a4a824a2146eb0d7de0ee0f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939526"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964189"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą Emulator Express, można przetestować i debugowanie usługi w chmurze bez konieczności uruchamiania programu Visual Studio jako administrator. Możesz ustawić ustawienia projektu, aby użyć Emulator Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [uruchamiania aplikacji platformy Azure w emulatorze obliczeń](/azure/storage/common/storage-use-emulator).
@@ -33,15 +33,15 @@ Podczas tworzenia projektu platformy Azure w systemie Azure SDK 2.3 lub nowszym,
 1. W obszarze **lokalnego serwera wdrożeniowego**, wybierz opcję **opcję Użyj usług IIS Express**.
 
 1. W obszarze **emulatora**, wybierz opcję **Użyj Emulator Express**.
-   
-1. Aby uruchomić Emulator Express, uruchom następujące polecenie w wierszu polecenia: 
+
+1. Aby uruchomić Emulator Express, uruchom następujące polecenie w wierszu polecenia:
 
     ```
     csrun.exe /useemulatorexpress
     ```
 
 ## <a name="emulator-express-limitations"></a>Emulator Express ograniczenia
-Znane ograniczenia Emulator Express następujące problemy: 
+Znane ograniczenia Emulator Express następujące problemy:
 
 - Emulator Express nie jest zgodna z serwerem sieci Web usług IIS.
 - Usługi w chmurze może zawierać wiele ról, ale każda rola jest ograniczona do jednego wystąpienia.

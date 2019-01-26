@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b88e2d24ea6ff412e3a496b4844d29dc11cc033b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843115"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973203"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Zostanie otwarta sesja zapytań symboli.  
@@ -39,7 +39,7 @@ HRESULT openSession ( 
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|WARTOŚĆ E_UNEXPECTED|[Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) obiektu nie wcześniej została zainicjowana przy użyciu źródła symboli.|  
+|E_UNEXPECTED|[Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) obiektu nie wcześniej została zainicjowana przy użyciu źródła symboli.|  
 |E_INVALIDARG|Nieprawidłowy `ppSession` parametru.|  
 |E_OUTOFMEMORY|Za mało pamięci, aby otworzyć sesji.|  
   
@@ -60,7 +60,7 @@ if (FAILED(hr))
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Omówienie](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
  [Używanie zapytań dotyczących pliku .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

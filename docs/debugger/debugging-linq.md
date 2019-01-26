@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a21fb412b5b207dca78c70561b8b25199ae3ac96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976397"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Obsługa debugowania języka zintegrowanego zapytania kodu (LINQ), z pewnymi ograniczeniami. Najbardziej debugujące funkcje współpracują z instrukcjami LINQ, w tym przechodzenie krok po kroku, ustawiania punktów przerwania i wyświetlaniem wyników w oknach debugera. Ten temat opisuje główne ograniczenia debugowania LINQ.  

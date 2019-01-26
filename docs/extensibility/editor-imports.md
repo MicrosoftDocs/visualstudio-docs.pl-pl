@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24fb5b51dbb2d377aee4f4bcd376c3e3745e6a26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893934"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037866"
 ---
 # <a name="editor-imports"></a>Importy edytora
 Można zaimportować szereg usług edytora, fabryk i brokerzy, umożliwiające rozszerzenie z różnymi rodzajami dostępu do podstawowy edytor. Na przykład można importować <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> zapewnienie użytkownikowi <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> dla danego typu zawartości. (To navigator pozwala wykonywać różne rodzaje wyszukiwania dla bufora tekstowego.)  

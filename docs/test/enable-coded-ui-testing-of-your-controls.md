@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 84eb09b26318b00e5c0ec6e1be6b04013696bccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b06b92c1b9b58f48f10ec052ee688c1235388211
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999928"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek
 
 Implementuje obsługę kodowanych testów interfejsu użytkownika framework się bardziej sprawdzalnego działa zgodnie z kontroli. Zwiększa poziom obsługi można dodać przyrostowo. Rozpocznij dzięki obsłudze rekordu i odtwarzania oraz właściwości sprawdzania poprawności. Następnie kompilacji na tym, aby umożliwić konstruktora kodowanego testu interfejsu użytkownika, rozpoznawał właściwości niestandardowych kontroli nad. Podaj niestandardowe klasy dostęp do tych właściwości z wygenerowanego kodu. Może również pomóc kodowanego interfejsu użytkownika testu konstruktora przechwytywania akcje w sposób, który jest bliżej celem akcji rejestrowane.
 
-![CUIT&#95;pełne](../test/media/cuit_full.png)
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -31,12 +31,12 @@ Konstruktor kodowanego testu interfejsu użytkownika przechwytuje informacji na 
 
  W przypadku zaimplementowania ułatwień dostępu kodowanego testu interfejsu użytkownika używa, do przechwytywania informacji na temat kontrolki, gdy rejestruje testu. Następnie po uruchomieniu testu, wygenerowany kod będzie oparte na metodzie powtórzeń tych zdarzeń dla formantu, nawet jeśli jest on gdzieś w interfejsie użytkownika. Autorzy testów można również utworzyć potwierdza przy użyciu podstawowe właściwości formantu.
 
- ![CUIT&#95;rekordu](../test/media/cuit_record.png)
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Do obsługi rekord i odtwarzania, właściwości sprawdzania poprawności i nawigacji dla formantu Windows Forms
  Implementowanie ułatwień dostępu dla kontrolki, co zostało opisane w poniższej procedurze, a omówiona szczegółowo w <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;dostępne](../test/media/cuit_accessible.png)
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  Implementowanie klasy, która pochodzi od klasy <xref:System.Windows.Forms.Control.ControlAccessibleObject>i zastępowania <xref:System.Windows.Forms.Control.AccessibilityObject%2A> właściwości, aby zwrócić obiekt klasy.
 
@@ -80,7 +80,7 @@ Po zaimplementowaniu podstawowa pomoc techniczna dla rekordu i odtwarzania oraz 
 
 ### <a name="to-support-custom-property-validation"></a>Do obsługi sprawdzania poprawności właściwości niestandardowej
 
-![CUIT&#95;właściwości](../test/media/cuit_props.png)
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. Zastąpienie krzywej legendy dostępne obiektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> właściwości, aby przekazać wartości właściwości sformatowanego ciągu opisu. Wiele wartości należy rozdzielić średnikami (;).
 
@@ -148,7 +148,7 @@ Jeśli zastało zaimplementowane Dostawca właściwości w celu zapewnienia dost
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Aby dodać klas wyspecjalizowanych do usługi kontroli dostępu
 
-![CUIT&#95;generowanie kodu](../test/media/cuit_codegen.png)
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Implementuje klasę, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> i dodać do kolekcji właściwości wyszukiwania w Konstruktorze typ formantu.
 

@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6c58aa23e4b5c3133de2bee8f29b3205cf7aff9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942635"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
@@ -28,19 +28,19 @@ ms.locfileid: "53899028"
   * [Przekroczono MaxCalls](#maxcalls-exceeded)
   * [Przekroczono MaxStack](#maxstack-exceeded)
   * [Przekroczono MaxRuns](#maxruns-exceeded)
-  * [Przekroczono MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests exceeded](#maxrunswithoutnewtests-exceeded)<p />
 
 * **Rozwiązywanie ograniczeń**
-  * [Nie można skonkretyzować rozwiązania](#cannot-concretize-solution)<p />
+  * [Cannot Concretize Solution](#cannot-concretize-solution)<p />
 
-* **domen**
+* **Domains**
   * [Potrzebna pomoc do konstruowania obiektu](#help-construct)
   * [Potrzebujesz pomocy w celu odnalezienia typów](#help-types)
   * [Można używać typu złamać](#usable-type-guessed)<p />
 
 * **Wykonanie**
   * [Nieoczekiwany błąd podczas eksploracji](#unexpected-exploration)
-  * [Targetinvocationexception —](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)<p />
 
 * **Instrumentacja**
   * [Niezinstrumentowanej metody o nazwie](#uninstrumented-method-called)
@@ -190,7 +190,7 @@ public void MyTest(...) {
 ```
 
 <a name="maxrunswithoutnewtests-exceeded"></a>
-## <a name="maxrunswithoutnewtests-exceeded"></a>Przekroczono MaxRunsWithoutNewTests
+## <a name="maxrunswithoutnewtests-exceeded"></a>MaxRunsWithoutNewTests exceeded
 
 IntelliTest ogranicza liczbę ścieżek wykonywania, które analizuje go podczas [wejściowych generowania](input-generation.md). Ta funkcja pozwala zagwarantować, że IntelliTest kończy działanie, gdy program ma pętli lub rekursji.
 
@@ -267,7 +267,7 @@ Przechwycono nieoczekiwany wyjątek podczas eksploracji testu.
 Proszę [Zgłoś to jako usterkę](#report-bug).
 
 <a name="targetinvocationexception"></a>
-## <a name="targetinvocationexception"></a>Targetinvocationexception —
+## <a name="targetinvocationexception"></a>TargetInvocationException
 
 Wystąpił wyjątek w kodzie użytkownika. Sprawdź ślad stosu i usuwanie błędów w kodzie.
 

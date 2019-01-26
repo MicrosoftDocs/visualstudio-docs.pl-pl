@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30073dd0-c864-4c4a-8863-80f243419f6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70373ef0b2024cc0650d8b8a5b1607bc86b6350d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042091"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
 Pobiera adres wirtualny (oceny luk w zabezpieczeniach) początkowi sekcji.  

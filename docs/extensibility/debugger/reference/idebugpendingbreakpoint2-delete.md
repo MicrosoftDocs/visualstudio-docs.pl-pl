@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91885471093fd6f8d270d69d090b56472970a772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 535bc8e16fbb62a700c36a47d62dabd488959667
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961939"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania, powiązany z niego.  

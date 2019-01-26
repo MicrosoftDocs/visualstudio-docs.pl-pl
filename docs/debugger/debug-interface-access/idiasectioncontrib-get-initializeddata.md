@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5c108be-a0cc-408b-9590-b8d44361810c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 016ce3def422e270083a9f20c672f71f46da2244
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e80a33351bf451bc7b5f033e5d435e40b42de88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973424"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
 Pobiera flagę wskazującą, czy sekcja zawiera dane zainicjowane.  

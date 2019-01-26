@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a5da65343a08f0c94be27837e70f4078192d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aec25bac7d1851095a9c7c5d96766b2326fb36ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943068"
 ---
 # <a name="compare-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
 Funkcji porównywania plików danych narzędzi profilowania można wybrać dwa pliki raportów (. *Vsp* lub. *vsps*) plików i Generowanie raportu, który przedstawia różnice, największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.  

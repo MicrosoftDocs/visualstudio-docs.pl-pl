@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974256"
 ---
 # <a name="t4-template-directive"></a>Dyrektywa T4 dotycząca szablonu
 
@@ -36,7 +36,7 @@ Przykład:
 `compilerOptions="optimize+"`
 
 Prawidłowe wartości:
- 
+
 Wszystkie prawidłowe opcje kompilatora.
 
 Ignorowane dla szablonów w czasie wykonywania (wstępnie przetworzonych).
@@ -46,11 +46,11 @@ Te opcje są stosowane, gdy szablon został przekształcony w [!INCLUDE[csprcs](
 ## <a name="culture-attribute"></a>Atrybut culture
 
 Przykład:
- 
+
 `culture="de-CH"`
 
 Prawidłowe wartości:
- 
+
 "", niezmienna kultura, co jest ustawieniem domyślnym.
 
 Kultura jest wyrażona jako ciąg w postaci xx-XX. Na przykład en-US, ja-JP, de-CH, de-DE. Aby uzyskać więcej informacji, zobacz <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 Prawidłowe wartości:
- 
+
 `true`
- 
+
 `false` (ustawienie domyślne)
- 
+
 Jeśli `debug` atrybut jest `true`, plik kodu pośredniego będzie zawierać informacje, które umożliwiają debugerowi dokładne określenie pozycji w szablonie, gdzie wystąpiło przerwanie lub wyjątek.
 
 Dla szablonów czasu projektowania plik kodu pośredniego zostanie zapisany z **% TEMP %** katalogu.
@@ -88,9 +88,9 @@ hostspecific="true"
 Prawidłowe wartości:
 
 `true`
- 
+
 `false` (ustawienie domyślne)
- 
+
 `trueFromBase`
 
 Jeśli wartość tego atrybutu zostanie ustawiona `true`, właściwość o nazwie `Host` jest dodawana do klasy generowanej przez szablon tekstowy. Właściwość jest odwołaniem do hosta silnika transformacji i jest zadeklarowana jako <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Jeśli został zdefiniowany niestandardowy host, można go rzutować na niestandardowy typ hosta.

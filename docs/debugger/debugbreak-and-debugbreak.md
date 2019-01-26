@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb05c054ffc5dd273b532f72afe0ca046adbe606
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041727"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak i __debugbreak
 Można wywołać funkcję DebugBreak Win32 lub [__debugbreak](/cpp/intrinsics/debugbreak) wewnętrzne w dowolnym momencie w kodzie. `DebugBreak` i `__debugbreak` mają ten sam efekt jak ustawienie punktu przerwania w tej lokalizacji.  

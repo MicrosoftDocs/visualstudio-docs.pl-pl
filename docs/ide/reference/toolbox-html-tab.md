@@ -11,15 +11,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6e7f5e09a1352ee1fdcb6247920c12990c2df19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862929"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966114"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 
@@ -33,7 +33,7 @@ Następujące narzędzia są dostępne na karcie HTML domyślnie.
 
 **Pointer**
 
-![Wskaźnik projektanta HTMLpage przenośnych ASP.NET](../../ide/reference/media/vxpointer.gif)
+![ASP.NET Mobile Designer HTMLpage Pointer](../../ide/reference/media/vxpointer.gif)
 
 To narzędzie jest domyślnie zaznaczona, po otwarciu dowolnej karcie przybornika. Nie można usunąć. Wskaźnik umożliwia przeciągnij obiekty na powierzchni projektowej widoku, zmieniać ich rozmiar i zmiany ich położenia na stronie lub formularza. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
 
@@ -105,7 +105,7 @@ Podczas przeciągania **dane wejściowe (plik)** wstawiony na powierzchni projek
 
 **Dane wejściowe (hasło)**
 
-![Pole hasła programu Visual Studio](../../ide/reference/media/vxpassword.gif)
+![Visual Studio Password Field](../../ide/reference/media/vxpassword.gif)
 
 Wstawia `input` elementu `type="password"`. Domyślnie `id="Password1"` jest wstawiany za pierwsze pole hasło `id="Password2"` dla drugiej i tak dalej.
 
@@ -132,7 +132,7 @@ Podczas przeciągania **dane wejściowe (pole)** wstawiony na powierzchni projek
 
 **Dane wejściowe (przycisk radiowy)**
 
-![VisualStudioHTMLpageRadioButton — zrzut ekranu](../../ide/reference/media/vxradio.gif)
+![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif)
 
 Wstawia `input` elementu `type="radio"`. Aby zmienić tekst, który jest wyświetlany, należy edytować `name` właściwości. Domyślnie `id="Radio1"` jest wstawiany za pierwszy przycisk radiowy `id="Radio2"` dla drugiej i tak dalej.
 

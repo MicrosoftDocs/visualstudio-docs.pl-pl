@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8bec2d34abd463ef196b957c1d19f38954bd998
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c0f7eb3ccc2527396f7d4029a57d83720a907f43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978493"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Określa typ porównanie dla odwołań.  
@@ -55,7 +55,7 @@ public enum enum_REFERENCE_COMPARE { 
  Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugreference2-compare.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

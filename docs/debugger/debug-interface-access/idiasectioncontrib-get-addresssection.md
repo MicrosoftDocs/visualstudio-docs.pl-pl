@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 13fe7e0b-c978-4a1d-bb57-64c8583b5e14
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03a3955bbb3e247d2f2a2324f2715c960fd6fab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059f3b2ec1510df1d060252512baf38a3484321c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924681"
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
 Pobiera część sekcji adres wkładu.  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38144381520002e1e3e9f9c7b440d6b87b90cb6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5c011c1bbaaa66e3da39c7ca8d713099d11e5a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041688"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
 
@@ -41,7 +41,7 @@ Import:`filename`
 
 Opcjonalna. Importuje ustawienia w określonym pliku.
 
-/ Reset
+/reset
 
 Opcjonalna. Przywraca bieżące ustawienia.
 

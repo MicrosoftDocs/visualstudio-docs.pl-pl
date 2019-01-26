@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 3aa9639c75d791d21803f803536042d0c4cdc3b2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8175d1a280c09921b42ee08120b2906b2598d345
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987029"
 documentType: LandingData
 title: Usługi cognitive Services w programie Visual Studio
 metadata:
@@ -12,7 +12,7 @@ metadata:
   meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
   ms.custom: seohack18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-azure
   ms.topic: landing-page

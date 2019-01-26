@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0efefa39-49a5-4282-9d41-e50832d927e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6170fea30bbace630def3b8f80ebd622b666b275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 212e05a60dd85348dcb80a12d9c6b06efa2a9f7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982965"
 ---
 # <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
 Pobiera wartość podpisu symbolu.  

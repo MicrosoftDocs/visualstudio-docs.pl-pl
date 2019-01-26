@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bf36870e20b630c6de388c13f2b01bae4a274b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 507a26290143bd3a5605e3b97b388d4cfeef4112
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985802"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Podręcznik administratora w usłudze Visual Studio 2017
 

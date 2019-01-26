@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a1371e8c87b98bdc30a4172be7420686cf21e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f49164149e642544a4a814378e7aa0bc95caf5c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909245"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979208"
 ---
 # <a name="window-properties-dialog-box"></a>Okno dialogowe właściwości okna
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego okna. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
@@ -27,7 +27,7 @@ Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego 
  [Karta stylów. Okno dialogowe właściwości](../debugger/styles-tab-window-properties-dialog-box.md)  
  Pokazuje stylów zastosowana do wybranego okna.  
   
- [Karta Windows. Okno dialogowe właściwości](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [Windows Tab. Okno dialogowe właściwości](../debugger/windows-tab-window-properties-dialog-box.md)  
  Wyświetla informacje o windows powiązane z wybranego okna.  
   
  [Klasa — karta. Okno dialogowe właściwości](../debugger/class-tab-window-properties-dialog-box.md)  

@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6f8ebe41f2775dddd5f70c654e21c7dc64adc44e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984226"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debugowanie aplikacji platformy UWP przy użyciu pobieranych z wyprzedzeniem zawartości w programie Visual Studio
   
@@ -30,7 +30,7 @@ ms.locfileid: "53835201"
   
 1. Uruchom aplikację, aby zarejestrować zawartość pobieranie z wyprzedzeniem identyfikatory URI z aplikacją. Na **debugowania** menu, wybierz **Rozpocznij debugowanie** (skrót klawiaturowy: F5).  
   
-2. Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (skrót klawiaturowy: SHIFT + F5).  
+2. Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (skrót klawiaturowy: Shift + F5).  
   
 3. Na **debugowania** menu, wybierz **inne cele debugowania** , a następnie wybierz **wyzwalacza Windows Store App pobieranie z wyprzedzeniem**.  
   

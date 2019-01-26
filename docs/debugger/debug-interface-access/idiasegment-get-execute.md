@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 746cdf8e-9097-415d-ba10-069854153185
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cacaaed95c0ab37ec4d7567de2fd9f0c777537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c126ec1c809284bd2f720680b1b51b5f3839670c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929000"
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
 Pobiera flagę wskazującą, czy segment jest wykonywalny.  

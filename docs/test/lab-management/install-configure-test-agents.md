@@ -7,15 +7,15 @@ helpviewer_keywords:
 - configure test agents, test lab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc0ea16ea10f4479fb635d4b84cb2eaee24c8b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c0a9078cdbe9ad84b53cd7f667dbd9e3c83d2b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879880"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970490"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -30,7 +30,7 @@ W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania ko
 | Element | Wymagania |
 | ---- | ------------ |
 | **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
-| **Kontroler** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
+| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 z dodatkiem Service Pack 1<br />Windows Server 2016 Standard i Datacenter<br />Windows Server 2012 z dodatkiem R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj agentów testowych i kontrolera testów

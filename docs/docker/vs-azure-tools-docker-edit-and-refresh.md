@@ -3,19 +3,19 @@ title: Debugowanie aplikacji w lokalnym kontenerze platformy Docker | Dokumentac
 description: Dowiedz się, jak zmodyfikować aplikację, która jest uruchomiona w lokalnym kontenerze Docker, odśwież kontener za pomocą edytowania i odświeżania i ustawiania punktów przerwania do debugowania
 services: container-service
 author: ghogen
-manager: douge
+manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.service: multiple
 ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962974"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 ## <a name="overview"></a>Omówienie
@@ -97,6 +97,6 @@ Dzięki obsłudze platformy Docker w programie Visual Studio 2017 możesz uzyska
 [Wprowadzenie do Mikrousług z NGINX](https://www.nginx.com/blog/introduction-to-microservices/)
 
 ## <a name="presentations"></a>Prezentacje
-* [Steve Lasker: VS Live Las Vegas 2016 - e2e platformy Docker](https://github.com/SteveLasker/Presentations/blob/master/VSLive2016/Vegas/)
+* [Steve Lasker: VS Live Las Vegas 2016 - Docker e2e](https://github.com/SteveLasker/Presentations/blob/master/VSLive2016/Vegas/)
 * [Wprowadzenie do platformy ASP.NET Core @ build 2016 — której możesz w wersji demonstracyjnej](https://channel9.msdn.com/Events/Build/2016/B810)
 * [Tworzenie aplikacji .NET w kontenerach, Channel 9](https://blogs.msdn.microsoft.com/stevelasker/2016/02/19/developing-asp-net-apps-in-docker-containers/)

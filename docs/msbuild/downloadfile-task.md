@@ -19,15 +19,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: Mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f22d335cb9f0c9bde5d9a5adc11c32e2d165fd97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978155"
 ---
 # <a name="downloadfile-task"></a>Zadanie DownloadFile
 Pobiera określone pliki przy użyciu Hyper tekstu Transfer Protocol (HTTP).

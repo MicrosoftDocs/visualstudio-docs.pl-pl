@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6ead69099d02cf4eb62cdabcc285da8d3e90b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a5fba25effa5e2888f86c08d41e52f2e4cd7966
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981587"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 Za pomocą **Zaawansowane ustawienia** okno dialogowe w Wizualizatorze współbieżności można kontrolować, jak zbierane są dane śledzenia.  Okno dialogowe zawiera karty dla symboli, tylko mój kod, buforowanie, filtrowania, CLR zdarzenia, znaczniki, dostawców i plików.  
