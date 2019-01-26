@@ -5,7 +5,7 @@ description: Użyj identyfikatory obciążeń i składników programu Visual Stu
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e5ab69491af3add542e30bb4cdd44047ca094e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5db2c9c4f1cbe3c216d4fe4f4fb392a95761fc1f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942177"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069983"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 kompilacji narzędzia składników katalogu
 
@@ -41,7 +41,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 ## <a name="azure-development-build-tools"></a>Narzędzia do kompilacji programowanie na platformie Azure
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.AzureBuildTools
+**ID:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
 **Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji platformy Azure.
 
@@ -85,7 +85,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="data-storage-and-processing-build-tools"></a>Przechowywanie i przetwarzanie danych narzędzia do kompilacji
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.DataBuildTools
+**ID:** Microsoft.VisualStudio.Workload.DataBuildTools
 
 **Opis:** Tworzenie projektów bazodanowych SQL Server
 
@@ -106,7 +106,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy s
 
 ## <a name="net-desktop-build-tools"></a>Narzędzia kompilacji klasycznej platformy .NET
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**ID:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
 
@@ -148,7 +148,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.8.27825.0 |
 
 ## <a name="msbuild-tools"></a>Narzędzia MSBuild
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.MSBuildTools
+**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
 **Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji opartych na platformie MSBuild.
 
@@ -162,7 +162,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Vi
 
 ## <a name="net-core-build-tools"></a>Narzędzia kompilacji platformy .NET core
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów.
 
@@ -178,7 +178,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="nodejs-build-tools"></a>Narzędzia do kompilacji node.js
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NodeBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
 **Opis:** Zadania MSBuild i elementy docelowe do tworzenia skalowalnych sieci aplikacji przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript.
 
@@ -191,7 +191,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 zestawu SDK | 1
 
 ## <a name="officesharepoint-build-tools"></a>Narzędzia do kompilacji pakietu Office/SharePoint
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**ID:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
 **Opis:** Twórz dodatki pakietu Office i programu SharePoint i dodatków narzędzi VSTO.
 
@@ -231,7 +231,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="universal-windows-platform-build-tools"></a>Narzędzia do kompilacji Universal Windows Platform
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**ID:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
 **Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji uniwersalnych platformy Windows.
 
@@ -265,7 +265,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-c-build-tools"></a>Narzędzi Visual C++ build tools
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VCTools
+**ID:** Microsoft.VisualStudio.Workload.VCTools
 
 **Opis:** Twórz aplikacje pulpitu Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
 
@@ -310,7 +310,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**ID:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
 **Opis:** Narzędzia do tworzenia dodatków i rozszerzeń dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
 
@@ -336,7 +336,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="web-development-build-tools"></a>Narzędzia kompilacji programowanie sieci Web
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WebBuildTools
+**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
 **Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji sieci web.
 
@@ -381,7 +381,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="mobile-development-with-net"></a>Tworzenie aplikacji mobilnych przy użyciu platformy .NET
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**ID:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
 **Opis:** Narzędzia do tworzenia aplikacji dla wielu platform dla systemów iOS, Android i Windows przy użyciu C# i F#.
 

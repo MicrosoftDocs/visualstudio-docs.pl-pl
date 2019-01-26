@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ecd36719170fdc027667e15c6b3913fba86cd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962392"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958982"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Instrukcje: Debugowanie niestandardowego aparatu debugowania
 Typ projektu spowoduje uruchomienie aparatu debugowania (DE) z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metody. Oznacza to, że DE jest uruchamiane pod kontrolą programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kontrolowanie tego typu projektu. Jednak to wystąpienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie można debugować DE. Poniżej przedstawiono kroki, które umożliwiają debugowanie Twojego niestandardowego DE.  

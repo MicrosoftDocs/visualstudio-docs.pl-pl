@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83dc69bb3856a7fe98e35cf66b0a6325c97a0651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6ac21b5a10f45d6f105e02517a15a5b6c4b2368
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956600"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
 
@@ -52,7 +52,7 @@ Określa, czy należy zgłaszać błędy kompilatora do firmy Microsoft. Jeśli 
 
 Określa, czy liczba całkowita arytmetyczne instrukcja, nie jest w zakresie [zaznaczone](/dotnet/csharp/language-reference/keywords/checked) lub [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) słów kluczowych i że wyniki w wartość spoza zakresu typu danych spowoduje, że środowiska wykonawczego wyjątek. Aby uzyskać więcej informacji, zobacz [/ checked (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
-**Nie odwołuj się do biblioteki mscorlib.dll**
+**Do not reference mscorlib.dll**
 
 Określa, czy biblioteka mscorlib.dll zostaną zaimportowane do programu, definiując całą <xref:System> przestrzeni nazw. Zaznacz to pole wyboru, jeśli chcesz zdefiniować lub utworzyć własne <xref:System> przestrzeni nazw i obiektów. Aby uzyskać więcej informacji, zobacz [/nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
@@ -72,7 +72,7 @@ Określa typ informacji o debugowaniu generowanych przez kompilator. Aby uzyska�
 
    Umożliwia dołączanie debugera do uruchomionego programu.
 
-- **"pdbonly"**
+- **pdbonly**
 
    Umożliwia kodu źródłowego, debugowanie, gdy program jest uruchomiony w debugerze, ale będą wyświetlane tylko asemblera, gdy uruchomiony program jest dołączony do debugera.
 
@@ -80,7 +80,7 @@ Określa typ informacji o debugowaniu generowanych przez kompilator. Aby uzyska�
 
    Tworzy. Plik PDB, plik symboli nie określonej platformy, przenośną, który zawiera inne narzędzia, szczególnie debugery, informacje o tym, co znajduje się w głównym pliku wykonywalnego i jak został utworzony. Zobacz [przenośnego pliku PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Aby uzyskać więcej informacji.
 
-- **Osadzony**
+- **embedded**
 
    Osadza informacje o symbolach przenośne w zestawie. Nie zewnętrznych. Generowany jest plik PDB.
 

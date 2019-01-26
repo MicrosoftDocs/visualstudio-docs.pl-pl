@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e9739ffe1e66186f62bb87ef5ffabdef27801a
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 827977f2763eff209e400538262b511a2124a1f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378126"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956197"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatory logiczne i Zaawansowane w wyrażeniach wyszukiwania
 

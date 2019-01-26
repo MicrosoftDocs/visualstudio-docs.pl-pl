@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 961b71d7bf5a28eb91bef24b84c13f72de424628
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958033"
 ---
 # <a name="editor-factories"></a>Fabryki edytora
 Fabryka edytora tworzy obiekty edytora i umieszcza je w ramkę okna, znane jako fizyczny widok. Tworzy dane dokumentu i obiekty widoku dokumentu, które są niezbędne do utworzenia w edytorach i projektantach. Fabryka edytora jest wymagana do utworzenia podstawowy edytor programu Visual Studio i dowolnego edytora standardowego. Niestandardowy Edytor również opcjonalnie mogą być tworzone za pomocą fabryki edytora.  

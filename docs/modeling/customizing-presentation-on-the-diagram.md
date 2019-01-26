@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cada6491e0c4af20197848302ff0cf7006acd3ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968300"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068918"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Dostosowywanie prezentacji na diagramie
 Diagram jest obszaru głównego prezentacji projektanta języka specyficznego dla domeny. Zazwyczaj użytkownicy użyje diagramu do konstruowania ich modeli. Diagram można dostosować zgodnie z opisem w poniższych tematach.

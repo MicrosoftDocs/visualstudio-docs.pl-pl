@@ -1,5 +1,5 @@
 ---
-title: Aktualna karta | Dokumentacja firmy Microsoft
+title: Current Tab | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4303336fe12f817bdb2843d03f9e936a5b1736c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964737"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069150"
 ---
 # <a name="current-tab"></a>Aktualna karta
 Klikając **bieżącego** karcie, możesz zobaczyć stos wywołań (jeśli jest dostępny) jest najbardziej zbliżony do bieżącego zaznaczenia punktu na osi czasu zaznaczenie segment wątku procesora CPU.  W tym przypadku punktu zaznaczenia jest reprezentowana przez czarną strzałkę lub daszek powyżej osi czasu. Po wybraniu segment blokujący karetkę nie jest wyświetlany, ponieważ nie było żadnych wykonywania. Jednak segmentu nadal jest wyróżniona i stos wywołań jest wyświetlany.  

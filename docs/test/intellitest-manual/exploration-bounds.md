@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935466"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069918"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 
@@ -106,7 +106,7 @@ Na przykład każda ścieżka w poniższym kodzie zużywa n + 1 warunków:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ Maksymalna liczba unikatowych ścieżek, które program IntelliTest zostanie nal
 
 Motywacja za tej prezentacji powiązany jest jakiegokolwiek kodu zawierające pętli lub rekursji może mieć nieograniczoną liczbę ścieżki wykonywania i dlatego IntelliTest muszą być ograniczone podczas [wejściowych generowania](input-generation.md).
 
-Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są ze sobą powiązane w następujący sposób: 
+Dwa ustawienia **MaxRuns** i **MaxRunsWithUniquePaths** są ze sobą powiązane w następujący sposób:
 
 * Program IntelliTest zostanie do wywołania metody test sparametryzowany **MaxRuns** razy z różnymi elementami wejściowymi.
-* Jeśli wykonywany kod jest deterministyczna, IntelliTest potrwa ścieżką wykonywania różnych każdorazowo. Jednak w niektórych warunkach wykonywany kod może wykonać ścieżką wykonywania podjętą już wcześniej, za pomocą różnych danych wejściowych. 
+* Jeśli wykonywany kod jest deterministyczna, IntelliTest potrwa ścieżką wykonywania różnych każdorazowo. Jednak w niektórych warunkach wykonywany kod może wykonać ścieżką wykonywania podjętą już wcześniej, za pomocą różnych danych wejściowych.
 * IntelliTest zlicza liczbę ścieżek wykonywania unikatowy znajdzie; Ta liczba jest ograniczona przez **MaxRunsWithUniquePaths** opcji.
 
 <a name="maxexceptions"></a>

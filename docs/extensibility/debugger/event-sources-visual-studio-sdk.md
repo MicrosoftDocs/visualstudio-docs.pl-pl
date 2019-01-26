@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0566468a7beaf7e50723c2e8e594e5cd2eebec79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d141deacd987155a5af947eeb0dcc2b5ae05e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888611"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069047"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
 Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i sesja debugowania Manager (SDM). Zdarzenia wysyłane z URZ mają aparatem inną niż NULL, a zdarzeń wysłanych z SDM aparat o wartości NULL.  

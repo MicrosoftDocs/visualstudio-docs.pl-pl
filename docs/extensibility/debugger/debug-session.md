@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 049a2d2e2738c3d3182cd014f0aa52429406a08c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97c43a440eee4aa6ebe5e51a53c4aa2da13111a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959642"
 ---
 # <a name="debug-session"></a>Sesja debugowania
 Pod względem architektury debugera *sesji*:  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c62a0fda-17b8-4cf6-b321-6014ce581096
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8236090d6520bf62cafb795eed9c3546c0ed2541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73c4743592ef15e333e04c9f80d15e1bc68b7c4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863267"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960181"
 ---
 # <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
 Pobiera liczbę segmentów.  

@@ -13,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 74c30506dacd4b156fa7d065b11478fcf5e63765
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a3e3caeb311557aef0e586cbffa494875cab85b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890679"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068787"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Instrukcje: Wyniki testu obciążeniowego dostęp do analizy
 

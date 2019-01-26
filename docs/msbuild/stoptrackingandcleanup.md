@@ -1,5 +1,5 @@
 ---
-title: StopTrackingAndCleanup | Dokumentacja firmy Microsoft
+title: StopTrackingAndCleanup | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf9f27acf0cebbf6a0e1d00da961f1733a66f4d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b6ed74dab67cc2ca718ba312fb657659897c78c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990467"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955599"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 Zatrzymanie wszystkich funkcji śledzenia i zwalnia pamięć, wszystkie używane w sesji śledzenia.  

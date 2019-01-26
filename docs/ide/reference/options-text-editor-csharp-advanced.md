@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959726"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
@@ -47,7 +47,7 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Po sortowaniu:
 
    ```csharp
@@ -58,7 +58,7 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Oddziel grupy dyrektywy using
 
    Po wybraniu **Usuń i Sortuj wyrażenia Using** oddziela polecenia w menu kliknij prawym przyciskiem myszy `using` dyrektyw, wstawiając pusty wiersz między grupami dyrektyw, które mają ten sam głównej przestrzeni nazw.
@@ -73,28 +73,28 @@ Użyj **zaawansowane** Strona opcji, aby modyfikować ustawienia formatowania ed
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Po sortowaniu:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Sugeruj dyrektywy Using dla typów w zestawach referencyjnych 
-- Sugeruj dyrektywy Using dla typów w pakietach NuGet 
+
+- Sugeruj dyrektywy Using dla typów w zestawach referencyjnych
+- Sugeruj dyrektywy Using dla typów w pakietach NuGet
 
    Po wybraniu tych opcji [szybka akcja](../quick-actions.md) jest dostępna zainstalować pakiet NuGet i dodać `using` dyrektywy dla typów bez odwołań.
 
    ![Szybkie działanie, aby zainstalować pakiet NuGet w programie Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Wyróżnianie
 
 - Wyróżnij odwołania do symbolu pod kursorem

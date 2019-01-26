@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204495"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070620"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Nawigowanie po kodzie za pomocą debugera programu Visual Studio
 
-Debuger programu Visual Studio może pomóc w nawigowaniu po kodzie, aby sprawdzić stan aplikacji i wyświetlić jego przepływ wykonania. Skróty klawiaturowe, poleceń debugowania, punkty przerwania i inne funkcje umożliwia szybki dostęp do kodu, który chcesz zbadać. Znajomość poleceń nawigacji debugera i skróty umożliwia szybsze i łatwiejsze do znajdowania i rozwiązywania problemów z aplikacjami.  Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) i [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md) przed przejściem w tym artykule.
+Debuger programu Visual Studio może pomóc w nawigowaniu po kodzie, aby sprawdzić stan aplikacji i wyświetlić jego przepływ wykonania. Skróty klawiaturowe, poleceń debugowania, punkty przerwania i inne funkcje umożliwia szybki dostęp do kodu, który chcesz zbadać. Znajomość poleceń nawigacji debugera i skróty umożliwia szybsze i łatwiejsze do znajdowania i rozwiązywania problemów z aplikacjami.  Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) i [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md) przed przejściem w tym artykule.
   
 ## <a name="basic-debugging"></a>Debugowanie podstawowe  
 
@@ -186,5 +186,5 @@ Aby załadować symbole firmy Microsoft, zobacz [skonfigurować lokalizacje symb
 
 ## <a name="see-also"></a>Zobacz także
  [Co to jest debugowanie?](../debugger/what-is-debugging.md)  
- [Usuwanie usterek, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md)  
+ [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)  
  [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md) 

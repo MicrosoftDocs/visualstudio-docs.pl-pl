@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f43a01902801e6d3af9b6611ac2181acbcf398f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841070"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070490"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Vsperfmon — narzędzie służy do zbierania danych dotyczących wydajności aplikacji; zwykle to narzędzie jest uruchamiane przez *VSPerfCmd.exe*. Vsperfmon — Wyświetla dodatkowe informacje na temat procesu dołączania lub odłączania, który nie jest dostępny za pomocą narzędzia VSPerfCmd. Aby wyświetlić te informacje, należy uruchomić VSPerfMon w osobnym oknie. Aby wywołać VSPerfMon, użyj następującej składni:  
@@ -48,6 +48,6 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
 ## <a name="see-also"></a>Zobacz także  
  [Narzędzie VSInstr](../profiling/vsinstr.md)   
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

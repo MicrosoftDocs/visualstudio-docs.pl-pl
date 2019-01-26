@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Text Editor, customizing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f89430827ba102b74b89adedde883b71583dc0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c8b85983c1651dfcbac135ef6fa2d4941e4fa09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848879"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958124"
 ---
 # <a name="customize-the-editor"></a>Dopasowywanie edytora
 
@@ -29,7 +29,7 @@ Aby uzyskać więcej informacji o opcjach edytora tekstu, zobacz [Opcje edytora 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Personalizowanie programu Visual Studio IDE i edytorem](../ide/quickstart-personalize-the-ide.md)
+- [Szybki start: Personalizowanie programu Visual Studio IDE i edytorem](../ide/quickstart-personalize-the-ide.md)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md)
 - [Okno dialogowe Ogólne, środowisko, opcje](../ide/reference/general-environment-options-dialog-box.md)

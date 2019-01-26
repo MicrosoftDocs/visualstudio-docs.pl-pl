@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetParentProjectPath | Dokumentacja firmy Microsoft
+title: SccGetParentProjectPath Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa052b7273b0917e604a525e5e7a5265d8e549c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935167"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068696"
 ---
-# <a name="sccgetparentprojectpath-function"></a>Funkcja SccGetParentProjectPath
+# <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath function
 Ta funkcja określa ścieżkę projektu nadrzędny określonego projektu. Ta funkcja jest wywoływana, gdy użytkownik dodaje projekt programu Visual Studio do kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
