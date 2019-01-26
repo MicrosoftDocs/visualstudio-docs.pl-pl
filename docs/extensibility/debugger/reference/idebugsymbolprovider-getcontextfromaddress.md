@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161dc0ce94ac2b92d85b29e5c83512ffd25fc49e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76eb907983795160b379325ecb64e36f443d7d14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959459"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987131"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Ta metoda mapuje adres debugowania do kontekstu dokumentu.  

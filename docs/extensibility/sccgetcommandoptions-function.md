@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetCommandOptions | Dokumentacja firmy Microsoft
+title: SccGetCommandOptions Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4237b967e63e89890bba5bed157ff98e7898a115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ba76a398bd3d5976ba0b2edb1356194f17014c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823503"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005443"
 ---
-# <a name="sccgetcommandoptions-function"></a>Funkcja SccGetCommandOptions
+# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions function
 Ta funkcja monituje użytkownika o zaawansowane opcje dla podanego polecenia.  
   
 ## <a name="syntax"></a>Składnia  

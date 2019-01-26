@@ -1,5 +1,5 @@
 ---
-title: CA1062 Waliduj argumenty metod publicznych
+title: 'CA1062: Waliduj argumenty metod publicznych'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - ValidateArgumentsOfPublicMethods
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3b9461c72b21fcb2b77590786f47b90f5a98f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afd8666b036e85b0584c0d84600a229b286c592e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937184"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062 Waliduj argumenty metod publicznych
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Waliduj argumenty metod publicznych
 
 |||
 |-|-|

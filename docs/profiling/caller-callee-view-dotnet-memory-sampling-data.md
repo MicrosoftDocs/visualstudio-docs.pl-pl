@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ef27cae8825fc77f49f5201ef03615227e383e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb2e2f735ec6c3f280cd0de79844f078ed0727d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027382"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET
 Widok wywołujący/wywoływany wyświetla dane dla wybranej funkcji i jej funkcji nadrzędne i podrzędne profilowania pamięci .NET. Widok wywołujący/wywoływany zawiera trzy siatki.  

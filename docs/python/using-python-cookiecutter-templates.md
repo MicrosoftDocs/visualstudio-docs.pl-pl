@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11a3b8fb91c068475c82d8352b9a8a66439ece72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975026"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Używanie rozszerzenia Cookiecutter
 
@@ -60,7 +60,7 @@ Po lokalnym zainstalowaniu szablonu Cookiecutter wyświetla na stronie opcji, w 
 
 ![Strona opcji Cookiecutter](media/cookiecutter-template-options.png)
 
-Każdy szablon Cookiecutter definiuje swój własny zestaw opcji i określenie wartości domyślnej dla każdego z nich (wyświetlane jako Sugerowany tekst w każdym polu Zapis). Wartość domyślna może być fragment kodu, często w przypadku, gdy jest wartość dynamiczna, która korzysta z innych opcji. 
+Każdy szablon Cookiecutter definiuje swój własny zestaw opcji i określenie wartości domyślnej dla każdego z nich (wyświetlane jako Sugerowany tekst w każdym polu Zapis). Wartość domyślna może być fragment kodu, często w przypadku, gdy jest wartość dynamiczna, która korzysta z innych opcji.
 
 Użytkownik może dostosować domyślne wartości dla określonych opcji przy użyciu pliku konfiguracyjnego użytkownika. Gdy rozszerzenia Cookiecutter wykryje plik konfiguracyjny użytkownika, zastępuje wartości domyślne szablonu przy użyciu wartości domyślnych konfiguracji użytkownika. To zachowanie jest omówiona w [konfiguracji użytkownika](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) sekcji dokumentacji Cookiecutter.
 
@@ -91,8 +91,8 @@ Aby uzyskać podstawowe informacje dotyczące tworzenia szablonów Cookiecutter,
 
 Domyślne renderowanie zmiennych szablonu jest zależna od typu danych (ciągów lub listy):
 
-- Ciąg: Etykieta nazwa zmiennej, pole tekstowe do wprowadzania wartość i znak wodny, wartością domyślną. Etykietki narzędzia w polu tekstowym jest wyświetlana wartość domyślną.
-- Lista: Etykieta nazwa zmiennej, pole kombi na wybranie wartości. Etykietki narzędzia w polu kombi zawiera wartość domyślną.
+- String: Etykieta nazwa zmiennej, pole tekstowe do wprowadzania wartość i znak wodny, wartością domyślną. Etykietki narzędzia w polu tekstowym jest wyświetlana wartość domyślną.
+- List: Etykieta nazwa zmiennej, pole kombi na wybranie wartości. Etykietki narzędzia w polu kombi zawiera wartość domyślną.
 
 Można wprowadzić ulepszenia tego renderowanie, określając dodatkowe metadane w swojej *cookiecutter.json* pliku, który jest specyficzne dla programu Visual Studio (i ignorowane przez Cookiecutter interfejsu wiersza polecenia). Wszystkie właściwości są opcjonalne:
 

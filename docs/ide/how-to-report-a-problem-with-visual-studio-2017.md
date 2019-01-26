@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba1b46a8473336b95a7e90c4a80e4b1e961386b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6225fa70bba0f6b044bb77a83ea03bda34591a41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042650"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem w programie Visual Studio 2017
 
@@ -135,5 +135,5 @@ Jeśli masz problem, aby zgłosić, ale chcesz zaproponować funkcję, ma miejsc
 * [Porozmawiaj z nami](../ide/talk-to-us.md)
 * [Zgłoś problem z programem Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
 * [Zgłoś problem przy użyciu języka C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Fora społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
+* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
 * [Prywatność danych społeczności deweloperów](developer-community-privacy.md)

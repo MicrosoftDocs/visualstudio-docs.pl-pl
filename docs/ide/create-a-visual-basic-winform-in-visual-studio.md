@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2844f876377e1b875a2086a1fad6c3809bd3af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 347506903e9ef261dca122ee278ed3d53e0c2bf3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043443"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Utwórz Windows Forms aplikacji w programie Visual Studio za pomocą Visual Basic
 
@@ -102,5 +102,5 @@ Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Szybki Start: Tworzenie aplikacji konsoli w programie Visual Studio za pomocą Visual Basic](quickstart-visual-basic-console.md)
+* [Szybki start: Tworzenie aplikacji konsoli w programie Visual Studio za pomocą Visual Basic](quickstart-visual-basic-console.md)
 * [Dowiedz się więcej o technologii IntelliSense w języku Visual Basic](visual-basic-specific-intellisense.md)

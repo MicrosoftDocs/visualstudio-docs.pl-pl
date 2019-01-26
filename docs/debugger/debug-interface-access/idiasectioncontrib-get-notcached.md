@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5408ea53-f64c-431e-9f62-62819026b038
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9aaf964d4072691746009c4d1ebb8f46a3c4d47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8903e302b6b6461e2acb6084ac25f06c6666eb21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851605"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973606"
 ---
 # <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
 Pobiera flagę wskazującą, czy nie można buforować sekcji.  

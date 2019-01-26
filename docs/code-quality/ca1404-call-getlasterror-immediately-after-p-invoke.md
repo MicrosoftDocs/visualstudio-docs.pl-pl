@@ -1,5 +1,5 @@
 ---
-title: 'CA1404: Wywołaj metodę GetLastError natychmiast po P-Invoke'
+title: 'CA1404: Wywołaj metodę GetLastError bezpośrednio po elemencie P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ae16f99aefe4411b345a1b135c7f014a1061911
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eec2a29f3d1e967d946488043882e96eb4f081de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970932"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Wywołaj metodę GetLastError natychmiast po P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Wywołaj metodę GetLastError bezpośrednio po elemencie P/Invoke
 
 |||
 |-|-|

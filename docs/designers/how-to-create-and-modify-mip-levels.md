@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56463df627a0e20624403ec4e1369569795d71fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c781c1e23cf58c24d554d3a3299ccfc07f7f0dcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874423"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992740"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikacja poziomów MIP
 W tym dokumencie przedstawiono sposób użycia **edytora obrazów** do generowania i modyfikowania *poziomów MIP* dla przestrzeni tekstury poziomu z Detail (poziomu).

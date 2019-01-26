@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Dokumentacja firmy Microsoft
+title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a88a1a3c2d07387399a1701b6645d300bce8993d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43f3ead0a927786a183c547e6d87d1cb71adda12
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966611"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Ta struktura zawiera opis kontekście pamięci lub kontekst kodu.  
@@ -76,7 +76,7 @@ public struct CONTEXT_INFO {
  Typowym zastosowaniem dla tej struktury jest wspierających **pamięci** okna debugowania.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

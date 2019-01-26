@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd4f2676c9d696ecf7a59fa327a7c3f35eb2a4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035422"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd*.  
@@ -85,7 +85,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
 | DependentUpon | Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji. |
-| Automatyczne generowanie | Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). |
+| AutoGen | Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy plik został wygenerowany dla projektu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). |
 | Łącze | Opcjonalny ciąg. Ścieżka notational wyświetlany, gdy plik znajduje się fizycznie poza wpływają na pliku projektu. |
 | Widoczne | Opcjonalny atrybut typu wartość logiczna. Wskazuje, czy mają być wyświetlane w pliku w **Eksploratora rozwiązań** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Opcjonalny ciąg. Określa, czy należy skopiować plik do katalogu wyjściowego. Dostępne są następujące wartości:<br /><br /> 1.  nigdy nie<br />2.  zawsze<br />3.  PreserveNewest |

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920659"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależność&gt; — element (aplikacja ClickOnce)
 Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.  
@@ -104,7 +104,7 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 ### <a name="osversioninfo"></a>osVersionInfo  
  Wymagana. Ten element jest elementem podrzędnym `dependentOS` elementu i zawiera `os` elementu. Ten element nie ma żadnych atrybutów.  
 
-### <a name="os"></a>system operacyjny  
+### <a name="os"></a>os  
  Wymagana. Ten element jest elementem podrzędnym `osVersionInfo` elementu. Ten element ma następujące atrybuty.  
 
 |Atrybut|Opis|  
@@ -166,7 +166,7 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-### <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
 
 ## <a name="remarks"></a>Uwagi  

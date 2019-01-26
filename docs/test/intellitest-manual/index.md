@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c8db2e17f18d96f8d8b6c9eee3261c9329ece0b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2123ca4367feaf43603a25b4497e23886605bc4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926944"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968355"
 ---
 # <a name="intellitest-reference-manual"></a>Funkcja IntelliTest Reference Manual
 
@@ -109,13 +109,13 @@ ms.locfileid: "53926944"
   - [Przekroczono MaxCalls](warnings-and-errors.md#maxcalls-exceeded)
   - [Przekroczono MaxStack](warnings-and-errors.md#maxstack-exceeded)
   - [Przekroczono MaxRuns](warnings-and-errors.md#maxruns-exceeded)
-  - [Przekroczono MaxRunsWithoutNewTests](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
+  - [MaxRunsWithoutNewTests exceeded](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
   - [Nie można skonkretyzować rozwiązania](warnings-and-errors.md#cannot-concretize-solution)
   - [Potrzebna pomoc do konstruowania obiektu](warnings-and-errors.md#help-construct)
   - [Potrzebujesz pomocy w celu odnalezienia typów](warnings-and-errors.md#help-types)
   - [Można używać typu złamać](warnings-and-errors.md#usable-type-guessed)
   - [Nieoczekiwany błąd podczas eksploracji](warnings-and-errors.md#unexpected-exploration)
-  - [Targetinvocationexception —](warnings-and-errors.md#targetinvocationexception)
+  - [TargetInvocationException](warnings-and-errors.md#targetinvocationexception)
   - [Niezinstrumentowanej metody o nazwie](warnings-and-errors.md#uninstrumented-method-called)
   - [Zewnętrzne metodę o nazwie](warnings-and-errors.md#external-method-called)
   - [Niemożliwy do Instrumentacji metodę o nazwie](warnings-and-errors.md#uninstrumentable-method-called)

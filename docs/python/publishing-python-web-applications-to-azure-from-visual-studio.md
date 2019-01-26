@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: ea5a4d53302d19d11da819cac94bb620df3dab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b31a19a08473f71404395ac4d1694489253738b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991739"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
@@ -34,7 +34,7 @@ Wdrażanie Git łączy usługi App Service w systemie Linux do określonej gał�
 
 Aby uzyskać więcej informacji zobacz następujące artykuły w dokumentacji platformy Azure:
 
-- [Szybki Start: Tworzenie aplikacji sieci web w języku Python w usłudze App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) zawiera krótki przewodnik dotyczący usługi Git wdrażanie proces, korzystając z prostej aplikacji Flask i wdrażanie z lokalnego repozytorium Git.
+- [Szybki start: Tworzenie aplikacji sieci web w języku Python w usłudze App Service](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) zawiera krótki przewodnik dotyczący usługi Git wdrażanie proces, korzystając z prostej aplikacji Flask i wdrażanie z lokalnego repozytorium Git.
 - [Konfigurowanie języka Python](/azure/app-service/containers/how-to-configure-python) opisuje cechy usługi App Service na kontenera systemu Linux i dostosowywanie Gunicorn polecenie uruchamiania aplikacji.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publikowanie w usłudze App Service w systemie Linux przy użyciu kontenerów

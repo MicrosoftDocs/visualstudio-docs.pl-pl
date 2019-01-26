@@ -15,26 +15,26 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a10831690dec436c284ff265f4402fa1e2a0ca5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932311"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981236"
 ---
 # <a name="when-element-msbuild"></a>Gdy element (MSBuild)
 Określa możliwe blok kodu dla `Choose` element, aby wybrać.  
   
  \<Project>  
- \<Wybierz >  
+ \<Choose>  
  \<Gdy >  
- \<Wybierz >  
+ \<Choose>  
  ...  
  \<W przeciwnym razie >  
- \<Wybierz >  
+ \<Choose>  
  ...  
 
 ## <a name="syntax"></a>Składnia  
@@ -60,7 +60,7 @@ Określa możliwe blok kodu dla `Choose` element, aby wybrać.
 
 |Element|Opis|  
 |-------------|-----------------|  
-|[Wybierz opcję](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
+|[Choose](../msbuild/choose-element-msbuild.md)|Element opcjonalny.<br /><br /> Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania. Może wynosić zero lub więcej `Choose` elementów w `When` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Może wynosić zero lub więcej `ItemGroup` elementów w `When` elementu.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Element opcjonalny.<br /><br /> Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Może wynosić zero lub więcej `PropertyGroup` elementów w `When` elementu.|  
 

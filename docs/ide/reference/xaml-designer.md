@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 907ead76b91048967c50c7e4c4460d8f68ac0c7b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938123"
 ---
 # <a name="xaml-designer-options-page"></a>Strona Opcje projektanta XAML
 

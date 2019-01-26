@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c260a8ebfd925b9da1210482b519aacddfa77ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d508c26e27b6a9d9709eff00b2b248ee5feb3466
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986859"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000240"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrowanie starszej wersji usługi językowej
 Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projekcie, można migrować starszej wersji usługi językowej do nowszej wersji programu Visual Studio. Sama usługa języka będzie działać tak jak poprzednio, ponieważ w edytorze programu Visual Studio dostosowuje go.  
@@ -93,7 +93,7 @@ Aktualizowanie projektu i dodawanie pliku source.extension.vsixmanifest w projek
   
     -   Zmień następujące pola:  
   
-    -   **IDENTYFIKATOR**: RegExLangServ  
+    -   **ID**: RegExLangServ  
   
     -   **Nazwa produktu**: RegExLangServ  
   

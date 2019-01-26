@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969671"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołączanych dynamicznie (*.dll*), lub modułów kodu (*.netmodule*). Aby uzyskać więcej informacji na temat *vbc.exe*, zobacz [wiersza polecenia kompilatora języka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -39,7 +39,7 @@ Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołąc
 | `BaseAddress` | Opcjonalnie `String` parametru.<br /><br /> Określa adres podstawowy DLL. Ten parametr odnosi się do [- baseaddress](/dotnet/visual-basic/reference/command-line-compiler/baseaddress) przełączyć z *vbc.exe* kompilatora. |
 | `CodePage` | Opcjonalnie `Int32` parametru.<br /><br /> Określa stronę kodową do użycia dla wszystkich plikach kodu źródłowego w kompilacji. Ten parametr odnosi się do [- strona kodowa](/dotnet/visual-basic/reference/command-line-compiler/codepage) przełączyć z *vbc.exe* kompilatora. |
 | `DebugType` | Opcjonalnie `String[]` parametru.<br /><br /> Powoduje, że kompilator generuje informacje o debugowaniu. Ten parametr może mieć następujące wartości:<br /><br /> -   `full`<br />-   `pdbonly`<br /><br /> Wartość domyślna to `full`, który umożliwia dołączanie debugera do uruchomionego programu. Wartość `pdbonly` umożliwia debugowanie kodu źródłowego, gdy program jest uruchomiony w debugerze, ale tylko wtedy, gdy jest uruchomiony program jest dołączony do debugera jest wyświetlany kod języka asemblera. Aby uzyskać więcej informacji, zobacz [-debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug). |
-| `DefineConstants` | Opcjonalnie `String[]` parametru.<br /><br /> Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *wartość1* `;` *symbol2* `=` *wartość2*<br /><br /> Ten parametr odnosi się do [— Zdefiniuj](/dotnet/visual-basic/reference/command-line-compiler/define) przełączyć z *vbc.exe* kompilatora. |
+| `DefineConstants` | Opcjonalnie `String[]` parametru.<br /><br /> Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane za pomocą następującej składni:<br /><br /> *symbol1* `=` *value1* `;` *symbol2* `=` *value2*<br /><br /> Ten parametr odnosi się do [— Zdefiniuj](/dotnet/visual-basic/reference/command-line-compiler/define) przełączyć z *vbc.exe* kompilatora. |
 | `DelaySign` | Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zadania, umieszcza klucz publiczny w zestawie. Jeśli `false`, zadanie jest w pełni podpisuje zestaw. Wartość domyślna to `false`. Ten parametr jest ignorowany, chyba że używana z `KeyFile` parametru lub `KeyContainer` parametru. Ten parametr odnosi się do [- delaysign](/dotnet/visual-basic/reference/command-line-compiler/delaysign) przełączyć z *vbc.exe* kompilatora. |
 | `Deterministic` | Opcjonalnie `Boolean` parametru.<br/><br/> Jeśli `true`, powoduje, że kompilator do wyjściowego zestawu, którego zawartość binarna jest identyczna w kompilacjach, jeśli dane wejściowe są identyczne.<br/><br/>Aby uzyskać więcej informacji, zobacz [-deterministyczne](/dotnet/visual-basic/reference/command-line-compiler/deterministic). |
 | `DisabledWarnings` | Opcjonalnie `String` parametru.<br /><br /> Pomija określone ostrzeżenia. Wystarczy określić część numeryczna identyfikatora ostrzeżenia. Wielokrotne ostrzeżenia są oddzielone średnikami. Ten parametr odnosi się do [- nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) przełączyć z *vbc.exe* kompilatora. |

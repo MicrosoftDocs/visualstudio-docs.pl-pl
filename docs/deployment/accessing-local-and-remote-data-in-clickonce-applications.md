@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f080af10bbac990359f176792f5fab02e5bd285
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874879"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973515"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapewnia różne opcje do odczytywania i zapisywania danych, zarówno lokalnie, jak i zdalnie.  
@@ -28,7 +28,7 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 ## <a name="local-data"></a>Dane lokalne  
  Za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], możesz załadować i przechowywać dane lokalnie, używając jednej z następujących metod:  
   
-- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Katalog danych  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Data Directory  
   
 - Izolowany magazyn  
   
