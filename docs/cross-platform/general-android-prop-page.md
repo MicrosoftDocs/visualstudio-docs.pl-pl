@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -22,12 +22,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949912"
 ---
 # <a name="general-project-properties-android-c"></a>Ogólne właściwości projektu (Android C++)
 
@@ -43,4 +43,4 @@ Zestaw narzędzi platformy | Określa zestaw narzędzi, używana do tworzenia bi
 Typ konfiguracji | Określa typ danych wyjściowych generowanych przez tę konfigurację. | **Biblioteka dynamiczna (SO)** — Biblioteka dynamiczna (*SO*)<br>**Biblioteka statyczna (.a)** — biblioteka statyczna (*.a*)<br>**Narzędzie** — narzędzie<br>**Plik reguł programu make** -pliku reguł programu make<br>
 Docelowy poziom interfejsu API | Android NDK docelowy poziom interfejsu API przez tę konfigurację.
 Użycie biblioteki STL | Określa, które standardowej biblioteki języka C++ do użycia dla tej konfiguracji. | **Minimalny Biblioteka środowiska uruchomieniowego języka C++ (system)**<br>**Biblioteka statyczna środowiska uruchomieniowego języka C++ (gabi ++ _static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego języka C++ (gabi ++ _shared)**<br>**Biblioteka statyczna środowiska uruchomieniowego STLport (stlport_static)**<br>**Biblioteka udostępniona środowiska uruchomieniowego STLport (stlport_shared)**<br>**Biblioteka statyczna GNU STL (gnustl_static)**<br>**Biblioteka udostępniona GNU STL (gnustl_shared)**<br>**Biblioteka libc ++ LLVM statyczne (c ++ _static)**<br>**Biblioteka libc ++ LLVM udostępnionego (c ++ _shared)**<br>
-Tryb Thumb | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Wyłączone**<br>
+Tryb Thumb | Generuj kod wykonujący dla mikroarchitektury thumb. Dotyczy tylko architektury arm. | **Thumb**<br>**ARM**<br>**Disabled (Wyłączone)**<br>

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - XML Web services, timeout while debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0963d1675c3456601aba70bb5291b7cc19d454fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832574"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930761"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web
 Gdy są Wkraczanie do usługi sieci Web XML, z kodu wywołującego, wywołanie może czasami limit czasu, w wyniku możliwe, że nie można kontynuować debugowanie. Zobaczysz komunikat o błędzie, np. to.  
@@ -40,4 +40,4 @@ obj.TimeOut = -1; // infinite time out.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

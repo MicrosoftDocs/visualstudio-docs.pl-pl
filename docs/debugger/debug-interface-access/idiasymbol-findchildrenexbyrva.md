@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83711ca61a1bd9a27a7ebed2262bd5ca3f3487e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aa1c1d10d9f1675811c63a78b017fe3dc3f537e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950798"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 Pobiera elementy podrzędne symbolu, które są prawidłowe w określonym względny adres wirtualny (RVA).  
@@ -57,14 +57,14 @@ HRESULT findChildrenExByRVA ( 
  Symbole lokalne, które są zwracane zawierają informacje na żywo zakresu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   

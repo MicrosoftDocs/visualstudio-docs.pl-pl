@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 674135c80f871babeb8ad2a3246f9b849a75f371
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939533"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Przewodnik: Wyświetlanie etykietek narzędzi Szybkieinfo
 Skrócone informacje jest funkcja IntelliSense, który wyświetla podpisy metod i opisy, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Definiowanie identyfikatory, które zawierają opisy skrócone informacje, a następnie tworząc etykietka narzędzia, w której chcesz wyświetlić zawartość można zaimplementować opartych na języku funkcje, takie jak skrócone informacje. Można zdefiniować skrócone informacje w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i wyświetlić skrócone informacje dla właśnie tego typu lub skrócone informacje może wyświetlać dla istniejącego typu zawartości (na przykład "text"). W tym instruktażu przedstawiono sposób wyświetlenia sekcji szybkich informacji dla typu zawartości "text".  

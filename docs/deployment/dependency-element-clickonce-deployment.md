@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834168"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941304"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — element (wdrażanie ClickOnce)
 Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście aplikacji.  
@@ -123,7 +123,7 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
 
 ## <a name="remarks"></a>Uwagi  

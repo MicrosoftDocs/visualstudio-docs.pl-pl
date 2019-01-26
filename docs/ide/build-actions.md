@@ -6,17 +6,17 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb4c000973afd1eef92d283e5688862413add16
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 45a0e4822bc9b6d20bd2cf63d664e6cba97c77bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001778"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951303"
 ---
-# <a name="build-actions"></a>Akcja kompilacji
+# <a name="build-actions"></a>Akcje kompilacji
 
 Wszystkie pliki w projekcie programu Visual Studio mają akcji kompilacji. Akcja kompilacji Określa, co się dzieje z pliku, gdy projekt jest skompilowany.
 

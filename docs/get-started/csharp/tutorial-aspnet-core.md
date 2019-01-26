@@ -10,18 +10,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 020d8dee31fbb2b1358ecefceef4859db93ecd3d
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 49177cf534c99d955474abbd9586effd33bf1cb9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443449"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943945"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -47,7 +47,7 @@ Najpierw utworzysz projekt programu ASP.NET Core. Typ projektu jest dostarczany 
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. 
+2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
 3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **Visual C#**, rozwiń węzeł **Web**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**. Następnie nadaj plikowi nazwę *MyCoreApp* i wybierz polecenie **OK**.
 
@@ -57,7 +57,7 @@ Najpierw utworzysz projekt programu ASP.NET Core. Typ projektu jest dostarczany 
 
 Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablon projektu, możesz ją uzyskać, dodając **ASP.NET i tworzenie aplikacji internetowych** obciążenia. Można dodać tego obciążenia w jednej z dwóch sposobów, zależności od tego, które aktualizacje programu Visual Studio 2017 są instalowane na komputerze.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: Użyj okna dialogowego Nowy projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Użyj okna dialogowego Nowy projekt
 
 1. Wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. (W zależności od ustawień wyświetlania, trzeba będzie Przewinięcie w celu wyświetlenia go.)
 
@@ -69,7 +69,7 @@ Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablon projekt
 
    (Może być ma zamknięcie programu Visual Studio, zanim będzie można kontynuować instalowania nowego obciążenia).
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2: Użyj paska menu Narzędzia
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2: Użyj paska menu Narzędzia
 
 1. Anuluj poza **nowy projekt** okno dialogowe. Następnie na pasku menu u góry wybierz **narzędzia** > **Pobierz narzędzia i funkcje**.
 

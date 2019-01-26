@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38234a2c1e2bdc7e0f3e51a25642e7372bec968a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af30f7092c36edfa706664e97bf988255bcfa44c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951511"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Określa typ odwołania.  
@@ -52,7 +52,7 @@ public enum enum_REFERENCE_TYPE { 
  Przekazany jako parametr do [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

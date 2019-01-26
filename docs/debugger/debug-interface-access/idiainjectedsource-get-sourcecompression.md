@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 854b142f-23a9-466c-bf7f-98e581d5abcd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86679c1e97ab50f55e8f887d582e8d8b46a35ae7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db0cb61d0b2836e5ed3cd3549dbc393b222c58d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912652"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939969"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 Pobiera wskaźnik kompresji źródła używane.  

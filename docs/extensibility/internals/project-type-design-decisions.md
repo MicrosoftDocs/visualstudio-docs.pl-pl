@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01bebdb26b4a3b89d9f9814c9428107d2cef6b9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 706bbda01912c660982a84a385686d1418566971
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898599"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948339"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzji projektowych dotyczących danego typu projektu. Należy zdecydować, jakie rodzaje elementów, który będzie zawarty w projekcie, jak pliki projektu zostaną utrwalone i jakie modelu zobowiązania będą używane.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e6dc6e35ca6388926030412dbbb5380e054b1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930411"
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
 **Filtr widoku raportów Profiler** okna znajduje się w górnej części **raport dotyczący wydajności** okna. Jeśli nie widzisz, kliknij pozycję **Pokaż filtr** przycisku.  

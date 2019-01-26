@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc0f6e3fe8078675792109c41ee75272b44ca714
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cc30e43ea10a0b206351df9722d813b565b78a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942181"
 ---
 # <a name="properties-of-decorators"></a>Właściwości elementów Decorator
 Dekoratory są ikony, tekst lub cudzysłów ostrokątny rozwijania/zwijania, które mogą być wyświetlane na kształtów i łączników na diagramie. W poniższej tabeli przedstawiono właściwości dla trzy rodzaje dekoratora. Niektóre właściwości są wyświetlane tylko dekoratory kształtu lub tylko dekoratory łącznika.
@@ -30,7 +30,7 @@ Dekoratory są ikony, tekst lub cudzysłów ostrokątny rozwijania/zwijania, kt�
 |Nazwa|Nazwa dekoratora.|ExpandCollapseDecorator|
 |Uwagi|Uwagi informacyjne, które są skojarzone z tego dekoratora.|\<Brak >|
 |HorizontalOffset|Przesunięcie w poziomie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
-|Verticaloffset w razie|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
+|VerticalOffset|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
 |OffsetFromLine|Przesunięcie dekoratora od linii, względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |OffsetFromShape|Przesunięcie dekoratora od kształtu względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |Pozycja|Domyślnej pozycji dekoratora.|SourceTop|
@@ -41,26 +41,26 @@ Dekoratory są ikony, tekst lub cudzysłów ostrokątny rozwijania/zwijania, kt�
 |-|-|-|
 |DefaultIcon|Ścieżka pliku ikony lub obrazu do wyświetlenia.|\<Brak >|
 |Nazwa wyświetlana|Nazwa dekoratora, który ma być wyświetlana w wygenerowanym projektancie.|Ikona Dekoratora|
-|Nazwa|Nazwa dekoratora.|Elementu IconDecorator|
+|Nazwa|Nazwa dekoratora.|IconDecorator|
 |Uwagi|Uwagi informacyjne, które są skojarzone z dekoratora.|\<Brak >|
 |HorizontalOffset|Przesunięcie w poziomie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
-|Verticaloffset w razie|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
+|VerticalOffset|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
 |OffsetFromLine|Przesunięcie dekoratora od linii, względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |OffsetFromShape|Przesunięcie dekoratora od kształtu względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |Pozycja|Domyślnej pozycji dekoratora.|SourceTop|
 
-## <a name="textdecorator"></a>Elementu TextDecorator
+## <a name="textdecorator"></a>TextDecorator
 
 |Właściwość|Opis|Domyślny|
 |-|-|-|
 |DefaultText|Domyślny tekst, który ma być wyświetlany.|Etykieta|
 |Nazwa wyświetlana|Nazwa dekoratora, który ma być wyświetlana w wygenerowanym projektancie.|Etykieta|
 |FontSize|Rozmiar czcionki dla tekstu wyświetlanego w dekoratorze.|8|
-|fontStyle|Styl czcionki dla tekstu wyświetlanego w dekoratorze.|Regularne|
+|FontStyle|Styl czcionki dla tekstu wyświetlanego w dekoratorze.|Regularne|
 |Nazwa|Nazwa dekoratora.|Etykieta|
 |Uwagi|Uwagi informacyjne, które są skojarzone z dekoratora.|\<Brak >|
 |HorizontalOffset|Przesunięcie w poziomie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
-|Verticaloffset w razie|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
+|VerticalOffset|Przesunięcie w pionie, względem domyślnej pozycji dekoratora, w calach. (Na tylko kształty.)|0|
 |OffsetFromLine|Przesunięcie dekoratora od linii, względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |OffsetFromShape|Przesunięcie dekoratora od kształtu względem jego bieżącej pozycji (w calach). (W łącznikach jedynie.)|0|
 |Pozycja|Domyślnej pozycji dekoratora.|TargetBottom|

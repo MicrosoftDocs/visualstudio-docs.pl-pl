@@ -18,22 +18,22 @@ helpviewer_keywords:
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0946502c694704be62be2872da233bf1d6059b64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7abb1f4a47c7d5274aaef28dfa0838c755f9a689
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930936"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytowanie kodu i kontynuowanie debugowania w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadzania zmian w kodzie źródłowym, gdy program działa w trybie przerwania. Po wznowieniu działania programu, wybierając polecenie wykonania, takie jak **Kontynuuj** lub **kroku**, Edytuj i Kontynuuj automatycznie stosuje te zmiany kodu, z pewnymi ograniczeniami. Dzięki temu można wprowadzić zmiany do kodu podczas sesji debugowania, nie trzeba zatrzymać, ponownie skompilować całego programu i ponownie uruchomić sesję debugowania.  
   
  Ta sekcja zawiera następujące tematy:   
   
- [Instrukcje: Włącz i Wyłącz Edytuj i Kontynuuj](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Instrukcje: Włączanie i wyłączanie funkcji Edytuj i kontynuuj](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Instrukcje: Zatrzymywanie zmian kodu](../debugger/how-to-stop-code-changes.md)   
   

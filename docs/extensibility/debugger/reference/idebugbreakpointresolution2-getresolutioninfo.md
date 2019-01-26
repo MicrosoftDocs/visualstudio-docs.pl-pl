@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a023f44e3c3b74b86b31f2eab91c008fd96a295
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5198a6aac174a6ddb2ff42a9a56cfbeea8fdf7b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900246"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948898"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Pobiera informacje o rozdzielczości punkt przerwania, opisujący tego punktu przerwania.  

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider | Dokumentacja firmy Microsoft
+title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652eaf5525de404fe3107449f56ad714b1b827cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 308063a9c6612e9426831c31253fbc2e601498a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937811"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Inicjuje źródło danych pod kątem tego obiektu i zwraca obiekt zawierający dane pierwotne.  

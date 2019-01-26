@@ -1,5 +1,5 @@
 ---
-title: 'CA2123: Zastąpienie konsolidacji powinny być identyczne z bazowym'
+title: 'CA2123: Przesłonięcia żądań konsolidacji powinny być identyczne z podstawowymi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4538ecd5-fc6f-4480-ab00-90b2ce4730db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca27f9c6cf15c663514588a0c08bd5b91e3bd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31c644beab7a9945832e0bc7fc28162ee680d56e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939858"
 ---
-# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Zastąpienie konsolidacji powinny być identyczne z bazowym
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Przesłonięcia żądań konsolidacji powinny być identyczne z podstawowymi
 
 |||
 |-|-|

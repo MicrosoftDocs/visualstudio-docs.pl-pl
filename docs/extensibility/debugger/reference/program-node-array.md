@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY | Dokumentacja firmy Microsoft
+title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353a0906b1f0dc81c4c0c08483ad472b46fb864b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ebdb40634deea9c1a2362e6027ea6d6ae5117ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934026"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 Zawiera tablicę obiektów, które opisują interesujące programy.  
@@ -49,7 +49,7 @@ public struct tagPROGRAM_NODE_ARRAY {
  Ta struktura jest częścią [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturę, która z kolei jest wypełniane przez wywołanie [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

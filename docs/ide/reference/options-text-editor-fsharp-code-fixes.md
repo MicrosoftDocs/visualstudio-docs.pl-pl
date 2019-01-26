@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7129afde1105abefd175799a554cdedb552c1214
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9345cf5d608ec8b69d88ac1c1644510f105337fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947078"
 ---
 # <a name="options-text-editor-f-code-fixes"></a>Opcje, Edytor tekstu, F#, poprawki kodu
 

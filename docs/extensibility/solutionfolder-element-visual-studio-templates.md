@@ -11,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84dc0dfa85be447041051d4bb6fc1494a35307d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2eb19e10bac46269e8cd1c44e83f6ebd3602101
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934000"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder — Element (szablony Visual Studio)
 Grupowanie projektów w szablonach wieloprojektowych.  
   
  \<VSTemplate>  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -99,6 +99,6 @@ Grupowanie projektów w szablonach wieloprojektowych.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
- [Instrukcje: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)
+ [Instrukcje: Create Multi-Project Templates](../ide/how-to-create-multi-project-templates.md)

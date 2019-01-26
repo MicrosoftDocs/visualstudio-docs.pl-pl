@@ -1,5 +1,5 @@
 ---
-title: IDebugObject | Dokumentacja firmy Microsoft
+title: IDebugObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b10e14d310d5b5b259f696df63ce899765538a94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b29382a7a4a75ecb6292e6d239657b23257dea0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941956"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -65,5 +65,5 @@ IDebugObject : IUnknown
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy oceny wyrażenia](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [Getelement —](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
+ [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
  [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

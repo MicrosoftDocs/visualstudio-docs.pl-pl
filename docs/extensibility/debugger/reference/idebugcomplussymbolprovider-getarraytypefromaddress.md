@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ca47cd494c4d1ab1d57f0273a1374702472d76b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6131b3a52ab7ee092f69bcb4970c28500337c021
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941538"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 Pobiera typ informacji o określonej tablicy, na podstawie jego adresu debugowania.  

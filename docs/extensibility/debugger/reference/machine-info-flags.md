@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Dokumentacja firmy Microsoft
+title: MACHINE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e3e472341545277ebf3171bb35e747e738828d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3a444da9ea10eb560899a8ebce18ce7f72174c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937967"
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 Używane do opisywania na maszynie.  
@@ -45,7 +45,7 @@ public enum enum_MACHINE_INFO_FLAGS { 
  Używane jako `Flags` członkiem [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5f9872b66bdb22a53f7c8f6b774bec389e2eaa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933714"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie aplikacji autonomicznej .NET Framework z profilerem do zbierania danych pamięci przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools uruchamianie aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych pamięci.  
@@ -56,7 +56,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 3. Uruchom aplikację docelową. Wpisz:  
 
-    **Narzędzia VSPerfCmd**[/uruchamianie](../profiling/launch.md) **:** `appName` **/gc:**{**alokacji**&#124;**okresu istnienia** }[`Options`]    
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]  
 
    - [/Gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` opcja jest wymagana w celu zbierania danych pamięci .NET Framework. Parametr — słowo kluczowe Określa, czy należy zbierać dane alokacji pamięci lub zbieranie alokacji pamięci oraz danych o okresie istnienia obiektu.  
 

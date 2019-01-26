@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77473f001d3d363309f1ac2403a146d0aa8124cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884727"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951290"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania na poniższej liście są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są wykorzystywane do zorganizowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadań Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -46,7 +46,7 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [AL (Assembly Linker) zadanie](../msbuild/al-assembly-linker-task.md)  
  Tworzy zestaw z manifestem z co najmniej jeden plik, który jest modułem lub plikiem zasobów.  
 
- [Aspnetcompiler — zadanie](../msbuild/aspnetcompiler-task.md)  
+ [AspNetCompiler task](../msbuild/aspnetcompiler-task.md)  
  Opakowuje *aspnet_compiler.exe*, narzędzie wstępnej kompilacji aplikacji ASP.NET.  
 
  [Assignculture — zadanie](../msbuild/assignculture-task.md)  
@@ -70,7 +70,7 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [Copy — zadanie](../msbuild/copy-task.md)  
  Kopiuje pliki do nowej lokalizacji.  
 
- [Createcsharpmanifestresourcename — zadanie](../msbuild/createcsharpmanifestresourcename-task.md)  
+ [CreateCSharpManifestResourceName task](../msbuild/createcsharpmanifestresourcename-task.md)  
  Tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.  
 
  [Createitem — zadanie](../msbuild/createitem-task.md)  
@@ -79,7 +79,7 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [CreateProperty — zadanie](../msbuild/createproperty-task.md)  
  Wypełnia właściwości z wartości wejściowych, dzięki czemu wartości, które mają być kopiowane z jedną właściwość lub ciągu do innego.  
 
- [Createvisualbasicmanifestresourcename — zadanie](../msbuild/createvisualbasicmanifestresourcename-task.md)  
+ [CreateVisualBasicManifestResourceName task](../msbuild/createvisualbasicmanifestresourcename-task.md)  
  Tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.  
 
  [CSC — zadanie](../msbuild/csc-task.md)  
@@ -97,13 +97,13 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [Exec — zadanie](../msbuild/exec-task.md)  
  Uruchamia określony program lub polecenie z określonymi argumentami.  
 
- [Findappconfigfile — zadanie](../msbuild/findappconfigfile-task.md)  
+ [FindAppConfigFile task](../msbuild/findappconfigfile-task.md)  
  Umożliwia znalezienie *app.config* plik w podanej listy.  
 
  [Findinlist — zadanie](../msbuild/findinlist-task.md)  
  Wyszukuje element w określonej listy, która ma pasujące itemspec.  
 
- [Findunderpath — zadanie](../msbuild/findunderpath-task.md)  
+ [FindUnderPath task](../msbuild/findunderpath-task.md)  
  Określa, które elementy w kolekcji określony element istnieje w określonym folderze i wszystkich jego podfolderów.  
 
  [Formaturl — zadanie](../msbuild/formaturl-task.md)  
@@ -118,7 +118,7 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [Generatebootstrapper — zadanie](../msbuild/generatebootstrapper-task.md)  
  Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki.  
 
- [Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)  
+ [GenerateDeploymentManifest task](../msbuild/generatedeploymentmanifest-task.md)  
  Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia.  
 
  [Generateresource — zadanie](../msbuild/generateresource-task.md)  
@@ -184,10 +184,10 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [Resolvemanifestfiles — zadanie](../msbuild/resolvemanifestfiles-task.md)  
  Jest rozpoznawana jako następujące elementy w procesie kompilacji plików do generowania manifestu: wbudowane elementy, zależności, satelity, zawartość, symbole debugowania i dokumentację.  
 
- [Resolvenativereference — zadanie](../msbuild/resolvenativereference-task.md)  
+ [ResolveNativeReference task](../msbuild/resolvenativereference-task.md)  
  Usuwa odwołania natywne.  
 
- [Resolvenonmsbuildprojectoutput — zadanie](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
+ [ResolveNonMSBuildProjectOutput task](../msbuild/resolvenonmsbuildprojectoutput-task.md)  
  Określa pliki wyjściowe dla odwołań do projektu niekorzystających z programu MSBuild.  
 
  [SGen — zadanie](../msbuild/sgen-task.md)  

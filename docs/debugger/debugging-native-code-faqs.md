@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ced728eeba7fd1ae7a39bc885473f76c181dab5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941197"
 ---
 # <a name="debugging-native-code-faqs"></a>Debugowanie kodu natywnego — Często zadawane pytania
 Odpowiedzi na niektóre często zadawane pytania można znaleźć w następujących tematach:  

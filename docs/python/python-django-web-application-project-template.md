@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3512e67ed7a97c4f8cb4c6aa0be256c32087de40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78ec334667f6bdc789bb5b638ca5ea84156c8900
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923786"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950523"
 ---
 # <a name="django-web-project-template"></a>Szablon projektów internetowych Django
 
@@ -38,7 +38,7 @@ Program Visual Studio udostępnia pełną obsługą technologii IntelliSense dla
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-Visual Studio udostępnia również podpowiedzi pełnej [obsługi debugowania](debugging-python-in-visual-studio.md) dla projektów Django: 
+Visual Studio udostępnia również podpowiedzi pełnej [obsługi debugowania](debugging-python-in-visual-studio.md) dla projektów Django:
 
 ![Punkty przerwania](media/template-django-debugging.png)
 

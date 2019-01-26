@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata — | Dokumentacja firmy Microsoft
+title: IDiaFrameData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 604b35e61f0ee020512a020c28e5451aa9a9fb5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948449"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924629"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Przedstawia szczegóły ramki stosu.  
@@ -113,14 +113,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   
+ [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [Idiaenumframedata::Item —](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

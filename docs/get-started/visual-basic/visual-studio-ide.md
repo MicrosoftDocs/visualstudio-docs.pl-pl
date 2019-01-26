@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 506581dc329249fc4043e01222163499f2de46d7
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 113a333c7a1ca100b6572f730ec9291ffc20ff87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939182"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 

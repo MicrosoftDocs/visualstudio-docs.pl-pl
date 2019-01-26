@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c759ad3c-1c21-4234-869b-86aa3a608a38
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0699510f419a510c004cd2bf7e840a5aa631316
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b2fe4e5cb71f0b378d21442ba8e0e1297f273e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941707"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 Pobiera języka źródłowego.  
@@ -41,5 +41,5 @@ HRESULT get_language ( 
 >  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_CFL_LANG, wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md)

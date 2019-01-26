@@ -3,7 +3,7 @@ title: Zwiększ wydajność pracy podczas tworzenia aplikacji .NET
 description: Przegląd Nawigacja, analizy kodu jednostki testowania i inne funkcje ułatwiające pisanie lepiej kodu platformy .NET szybciej.
 author: kuhlenh
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 300754cd975f16419d3e6faebc2074ed3eacb727
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926034"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941395"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -40,7 +40,7 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 |-|-|-|
 | **CTRL**+**T** | Przejdź do wszystkich | Przejdź do dowolnego pliku/typu/elementu członkowskiego/symbolu deklaracji |
 | **F12** (również **Ctrl**+**kliknij**) | Przejdź do definicji | Przejdź do której jest zdefiniowany symbol |
-| **CTRL**+**F12** | Przejdź do implementacji | Przechodzenie z typem bazowym lub elementu członkowskiego do jej różnych implementacji |
+| **Ctrl**+**F12** | Przejdź do implementacji | Przechodzenie z typem bazowym lub elementu członkowskiego do jej różnych implementacji |
 | **SHIFT**+**F12** | Znajdź wszystkie odwołania | Zobacz wszystkie symboli lub literału odwołania |
 | **Ctrl**+**.** (również **Alt**+**wprowadź** w profilu C#) | Szybkie akcje i operacje refaktoryzacji | Zobacz, jaki kod poprawki, akcje generowania kodu, refaktoryzacji lub innych szybkie akcje są dostępne na wybór pozycji lub kod kursora |
 | **Ctrl**+**D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępne w **programu Visual Studio 2017 w wersji 15.6** i nowsze) |
@@ -48,10 +48,10 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 | **SHIFT** + **Alt** + **.** | Wstaw dalej pasującego karetki | Dodaje zaznaczenia i karetki w następnej lokalizacji, która pasuje do bieżącego zaznaczenia (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 | **CTRL**+**funkcji pytania i odpowiedzi** | Szybkie uruchamianie | Wyszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
-| **CTRL**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
+| **Ctrl**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **CTRL**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**D**  (Profilu w języku C#) | [Formatuj dokument](code-styles-and-quick-actions.md#format-document-command) | Czyści formatowanie naruszeń w pliku na podstawie nowego wiersza, odstępy i ustawienia wcięć |
 | **CTRL**+**\\**,**Ctrl**+**E** (profil domyślny) lub **Ctrl** + **W**,**E** (profilu w języku C#) | Wyświetl listę błędów | Zobacz wszystkie błędy w dokumencie, projekt lub rozwiązanie |
-| **ALT** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/dalej błąd, ostrzeżenie, sugestii w dokumencie (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
+| **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/dalej błąd, ostrzeżenie, sugestii w dokumencie (dostępne w **Visual Studio 2017 w wersji 15.8** i nowsze) |
 
 > [!NOTE]
 > Niektóre rozszerzenia unbind powiązania klawiszy programu Visual Studio domyślną. Aby użyć poleceń powyżej, Przywróć usługi powiązania klawiszy programu Visual Studio domyślne, przechodząc do **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**  lub **narzędzia** > **opcje** > **klawiatury** > **resetowania**.
@@ -98,7 +98,7 @@ Program Visual Studio 2017 jest dostarczany z dużą liczbą operacji refaktoryz
 - Kilka członków społeczności napisano bezpłatne rozszerzenia, które dodać dodatkowy kod inspekcji:
   - [Analizatory FxCop analizujące kod](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
-  - [SonarLint dla programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
+  - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
 ![Refaktoryzacje w programie Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
@@ -110,7 +110,7 @@ Program Visual Studio 2017 oferuje wiele funkcji ułatwiające wyszukiwanie i pr
 | Funkcja | Skrót | Szczegóły/ulepszeń |
 |- | - | -|
 | Znajdź wszystkie odwołania | **SHIFT**+**F12**| Wyniki są wyróżnione kolorem i mogą być grupowane według projektu, definicji, itp. Można również "zablokować" wyników. |
-| Przejdź do implementacji | **CTRL**+**F12** | Przejdź do definicji można używać na `override` — słowo kluczowe, aby przejść do zgodnym z przesłoniętą składową |
+| Przejdź do implementacji | **Ctrl**+**F12** | Przejdź do definicji można używać na `override` — słowo kluczowe, aby przejść do zgodnym z przesłoniętą składową |
 | Przejdź do definicji | **F12** lub **Ctrl**+**kliknij**| Naciśnij i przytrzymaj **Ctrl** przy zaznaczaniu navgiate do definicji |
 | Zobacz definicję | **ALT**+**F12** | Wbudowany view definicji |
 | Wizualizator struktury | Szare, kropkowana — linie między nawiasy klamrowe | Po wskazaniu wskaźnikiem, aby zobaczyć strukturę kodu |

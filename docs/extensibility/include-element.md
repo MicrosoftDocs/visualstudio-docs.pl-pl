@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f79a05268a6c1741f7c5d341b0d56e316dbce9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940534"
 ---
 # <a name="include-element"></a>Umieść element
 Include element Określa plik, który może znajdować się w podanym ścieżkę załączania dla wstawiania do bieżącego pliku.  Wszystkie symbole i typy zdefiniowane staną się częścią wynik.  
@@ -36,7 +36,7 @@ Include element Określa plik, który może znajdować się w podanym ścieżkę
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|href|Wymagana. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
+|{1&gt;href&lt;1}|Wymagana. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

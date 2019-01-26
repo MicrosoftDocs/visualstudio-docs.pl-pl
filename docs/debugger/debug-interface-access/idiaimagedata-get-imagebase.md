@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dea0b3e717187bb79525fde0be02d0482e53243
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 238eb138f7e7452e942047d776411d973a689c2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931444"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Pobiera lokalizację pamięci, gdzie obraz powinien opierać się.  

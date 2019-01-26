@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_hasassignmentoperator — | Dokumentacja firmy Microsoft
+title: IDiaSymbol::get_hasAssignmentOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7677d9dd84f62d4a9efb30b7e317873b88369743
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 726412304f40b652a33cfae0bc9958fa01fb3dec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950692"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma wszystkie operatory przypisania zdefiniowane.  

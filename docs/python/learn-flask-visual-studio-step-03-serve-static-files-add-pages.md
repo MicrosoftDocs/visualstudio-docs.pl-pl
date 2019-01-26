@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 1b6464e48441f436b4f93fc8747972e334e768b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918541"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3. Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 
@@ -289,4 +289,4 @@ Poniższe kroki prezentują dziedziczenia:
 - [Wdrażanie aplikacji sieci web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Aby uzyskać więcej możliwości Jinja szablonów, takich jak przepływ sterowania, zobacz [Jinja szablon projektanta dokumentacji](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Aby uzyskać szczegółowe informacje na temat korzystania z `url_for`, zobacz [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) w dokumentacji obiekt aplikacji Flask (flask.pocoo.org)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — platformy flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

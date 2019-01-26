@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fdec31314dcce0d5c83adee69de4e4fb2754c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27682e09de494fedaaf446b7cd533bde0715f459
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939208"
 ---
 # <a name="exe"></a>Exe
 Exe jest jedynym symbolu bez leksykalne lub klasy nadrzędnej, ponieważ reprezentuje on zakresu globalnego pliku .exe lub .dll. Istnieje tylko jeden symbol `SymTagExe` tag na plik. [Idiasession::get_globalscope —](../../debugger/debug-interface-access/idiasession-get-globalscope.md) metoda zwraca symbol.  

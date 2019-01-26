@@ -1,19 +1,19 @@
 ---
-title: Czasomierz | Dokumentacja firmy Microsoft
+title: Timer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dd87a682eb92b510dd22191769e488437e8486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8735c3514ef8232a65f23ec59a5f9dc6f3e21f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940274"
 ---
 # <a name="timer"></a>Czasomierz
 *VSPerfCmd.exe* **czasomierza** opcja umożliwia ustawienie profilowania zdarzenia, które są próbkowane tak, aby cykle zegara procesora i opcjonalnie zmienia liczbę cykli w interwale próbkowania z domyślnego 10 000 000. W przypadku procesora 1GH (jeden gigaherc) cykle zegara 10 000 000 jest około 100 próbek na sekundę. Minimalna liczba cykli, które można określić to 50 000.  
@@ -55,7 +55,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
  **Licznik**[**:**`Name,Reload,FriendlyName`]  
  Ustawia zdarzenie próbkowania wydajności procesorów CPU, licznik określonej przez `Name` i ustawia interwał próbkowania `Reload`.  
   
- **GC**[**:**{**alokacji**&#124;**okres istnienia**}]  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
  Zbiera dane pamięci platformy .NET. Domyślnie (**alokacji**), dane są zbierane na każde zdarzenie alokacji pamięci. Gdy **okres istnienia** parametr jest określony, dane są również zbierane przy każdym zdarzeniu kolekcji wyrzucania elementów.  
   
 ## <a name="example"></a>Przykład  
@@ -67,7 +67,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

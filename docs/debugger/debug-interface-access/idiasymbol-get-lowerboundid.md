@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0d47fad6015a39550eca8e6ea046f7ec9c6417f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72943fd155753fb7712d9f72baacf678b33447ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926803"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
 Pobiera identyfikator symbol dolna granica FORTRAN wymiaru tablicy.  

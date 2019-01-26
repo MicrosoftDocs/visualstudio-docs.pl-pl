@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98985877a2a85e56e9e1861c3baeaf0c87ad0f9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852193"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952096"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debugowanie i proces hostingu
 Procesu hostingu Visual Studio zwiększa wydajność debugera i włącza nowe funkcje debugera, takich jak debugowanie częściowego zaufania i Obliczanie wyrażenia czasu projektowania. Jeśli chcesz, możesz wyłączyć procesu hostingu. W poniższych sekcjach opisano niektóre różnice między debugowania i bez procesu hostingu.
@@ -38,9 +38,9 @@ Procesu hostingu Visual Studio zwiększa wydajność debugera i włącza nowe fu
 ## <a name="appdomaincurrentdomainfriendlyname-differences"></a>Różnice AppDomain.CurrentDomain.FriendlyName
  `AppDomain.CurrentDomain.FriendlyName` Zwraca różne wyniki, w zależności od tego, czy jest włączona procesu hostingu. Jeśli wywołasz `AppDomain.CurrentDomain.FriendlyName` przy użyciu procesu hostingu włączone, zwraca *nazwa_aplikacji*`.vhost.exe`. Jeśli wywołasz ją procesu hostingu wyłączone, funkcja zwraca *nazwa_aplikacji*`.exe`.
 
-## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly(). Różnice imię i nazwisko
+## <a name="assemblygetcallingassemblyfullname-differences"></a>Assembly.GetCallingAssembly().FullName Differences
  `Assembly.GetCallingAssembly().FullName` Zwraca różne wyniki, w zależności od tego, czy jest włączona procesu hostingu. Jeśli wywołasz `Assembly.GetCallingAssembly().FullName` przy użyciu procesu hostingu włączone, zwraca `mscorlib`. Jeśli wywołasz `Assembly.GetCallingAssembly().FullName` przy użyciu procesu hostingu wyłączone, funkcja zwraca nazwę aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Debugowanie aplikacji częściowej relacji zaufania](/visualstudio/debugger/debugger-security)
+- [Instrukcje: Debugowanie częściowo zaufanych aplikacji](/visualstudio/debugger/debugger-security)

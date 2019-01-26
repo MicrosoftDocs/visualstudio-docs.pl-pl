@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e8295187087915feb8b0766e363f0d4883d56d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d462c760688ee31727eb44066a9a24088a753d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941733"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 W tym artykule opisano lokalizacji punktu przerwania w kodzie.  
@@ -44,7 +44,7 @@ public struct BP_RESOLUTION_CODE { 
  Ta struktura jest elementem członkowskim [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struktury, która jest w Włącz członkiem [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracany przez strukturę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

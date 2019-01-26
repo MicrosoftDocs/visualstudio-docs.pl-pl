@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857729"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947026"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -176,6 +176,7 @@ Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega 
 * Uruchomienie polecenia `npm run build` jako zdarzenie sprzed kompilacji, we właściwościach projektu nie rozwiąże problemu, korzystając z vue-cli 3.0.
 
 ## <a name="see-also"></a>Zobacz także
-https://vuejs.org/v2/guide -Vue Wprowadzenie — przewodnik.  
-https://github.com/vuejs/vue-cli — Projekt Vue interfejs wiersza polecenia.  
-https://webpack.js.org/configuration/ — Dokumentacja konfiguracji Webpack.
+
+- https://vuejs.org/v2/guide -Vue Wprowadzenie — przewodnik.
+- https://github.com/vuejs/vue-cli — Projekt Vue interfejs wiersza polecenia.
+- https://webpack.js.org/configuration/ — Dokumentacja konfiguracji Webpack.

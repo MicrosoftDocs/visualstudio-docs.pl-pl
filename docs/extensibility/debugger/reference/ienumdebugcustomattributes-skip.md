@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Skip | Dokumentacja firmy Microsoft
+title: IEnumDebugCustomAttributes::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48b58141119f6722d66e153a87022ca8fcb770e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9525a96f1d5a5d7c6c31994058dabb6c051874c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903789"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943958"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 Pomija określoną liczbę atrybutów niestandardowych, w kolejności wyliczenia.  
