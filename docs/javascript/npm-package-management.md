@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948209"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
@@ -36,7 +36,7 @@ Jest najprostszym sposobem zainstalowania pakietów npm w oknie instalacji pakie
 
 ![Zainstaluj nowy pakiet npm z Eksploratora rozwiązań](../javascript/media/solution-explorer-install-package.png)
 
-W tym oknie można wyszukać pakietu, określ opcje i zainstalować. 
+W tym oknie można wyszukać pakietu, określ opcje i zainstalować.
 
 ![Wyszukiwanie pakietów Menedżera npm](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Można również użyć `.npm` polecenia w oknie interaktywne Node.js do wykonyw
 W oknie poleceń, takich jak następujące służy do zainstalowania pakietu:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > Domyślnie npm będą wykonywane w katalogu głównym projektu. Jeśli masz wiele projektów w rozwiązaniu należy określić nazwę lub ścieżkę projektu w nawiasach. 
+ > Domyślnie npm będą wykonywane w katalogu głównym projektu. Jeśli masz wiele projektów w rozwiązaniu należy określić nazwę lub ścieżkę projektu w nawiasach.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Jeśli projekt nie zawiera pliku package.json, użyj `.npm init -y` Aby utworzyć nowy plik package.json przy użyciu domyślnych wpisów. 
+ > Jeśli projekt nie zawiera pliku package.json, użyj `.npm init -y` Aby utworzyć nowy plik package.json przy użyciu domyślnych wpisów.

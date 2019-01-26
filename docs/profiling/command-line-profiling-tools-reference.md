@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65a44552ee2b8e7b62656580528d13db2a1530e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 018ef620438a678ac90c92d319cc8bb23757b742
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819773"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952642"
 ---
 # <a name="command-line-profiling-tools-reference"></a>Narzędzia profilowania wiersza polecenia — dokumentacja
 Narzędzia do oceny wydajności z wiersza polecenia umożliwiają deweloperom profile swoich aplikacji, w tym celu w wierszu polecenia. Następujące narzędzia profilowania wiersza polecenia umożliwiają kod profilu w wierszu polecenia.  

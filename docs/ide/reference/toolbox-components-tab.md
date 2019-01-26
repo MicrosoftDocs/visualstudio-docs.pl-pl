@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3324063e80bdb33ec928135ef8760c5e15c7a8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00417b853fbaac9e57d93553974cab786dce5aad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967073"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949132"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 

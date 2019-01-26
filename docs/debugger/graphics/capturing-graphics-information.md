@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f6bbaf9a387a43accfd779c9583687ec98b1813
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952434"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator grafiki programu Visual Studio można użyć do diagnozowania problemów z renderowaniem i problemy z wydajnością.  
