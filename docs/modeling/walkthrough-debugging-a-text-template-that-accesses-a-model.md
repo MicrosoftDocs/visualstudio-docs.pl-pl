@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004503"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu
 W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu języka dotyczącego określonej domeny mogą wystąpić błędy, gdy aparat przekształcenia szablonu do kodu źródłowego lub kompiluje wygenerowanego kodu. Następujące Instruktaż pokazuje niektóre rzeczy, które można zrobić, aby debugowanie szablonu tekstowego.
@@ -30,7 +30,7 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 
 - Rozszerzenie pliku: .ddd
 
-- Nazwa firmy: Firma Fabrikam
+- Nazwa firmy: Fabrikam
 
   Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [jak: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
@@ -158,7 +158,7 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 
      (C#)
 
-     **Kompilowanie transformacji: Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**
+     **Kompilowanie transformacji: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation "nie zawiera definicji"ExampleModel"**
 
      (Visual Basic)
 

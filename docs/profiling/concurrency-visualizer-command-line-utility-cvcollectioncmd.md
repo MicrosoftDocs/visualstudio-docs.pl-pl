@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013070"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
 Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollectionCmd.exe*) aby zbierać ślady z wiersza polecenia, dzięki czemu można je przeglądać w Wizualizatorze współbieżności dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.  
@@ -77,7 +77,7 @@ Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollection
 | Nazwa | Określa opis dostawcę znaczników. | Ciąg. |
 | Kategorie | Określa kategorie zbierane na potrzeby dostawcę znaczników. | Rozdzielana przecinkami ciąg liczb lub zakresy liczb. |
 | isEnabled | Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji. | — Wartość true<br />— Wartość false |
-| FilterConfig | Określa listę opcji konfiguracji zdarzeń ETW, które zostały przefiltrowane z kolekcji. | Może zawierać następujące elementy:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-CollectFileIO |
+| FilterConfig | Określa listę opcji konfiguracji zdarzeń ETW, które zostały przefiltrowane z kolekcji. | Może zawierać następujące elementy:<br /><br /> -CollectClrEvents<br />-ClrCollectionOptions<br />-CollectSampleEvents<br />-CollectGpuEvents<br />-   CollectFileIO |
 | CollectClrEvents | Wartość, która określa, czy są zbierane zdarzenia CLR. | — Wartość true<br />— Wartość false |
 | ClrCollectionOptions | Określa, czy służąca do gromadzenia zdarzeń CLR w przypadku aplikacji natywnych i czy służąca do gromadzenia zdarzeń podsumowania NGEN. | Może zawierać jeden, zarówno lub żadna z tych wartości:<br /><br /> -CollectForNative<br />-DisableNGenRundown |
 | CollectSampleEvents | Ustawia wartość określającą, czy próbkowane zdarzenia są zbierane. | — Wartość true<br />— Wartość false |

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c05e19b3bbd5078b29628101e90ca33592cda31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014045"
 ---
 # <a name="view-menu-commands"></a>Polecenia menu Widok
 **Widoku** menu zawiera polecenia służące do kontrolowania Spy ++ interfejsu użytkownika.  

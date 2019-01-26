@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021523"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: Zarządzanie galerią prywatnej za pomocą ustawień rejestru
 Jeśli jesteś administratorem lub deweloperem rozszerzenia Isolated Shell można kontrolować dostęp do formantów, szablonów i narzędzi dostępnych w galerii Visual Studio, galerii przykładów lub galerie prywatne. Aby galerii dostępne lub niedostępne, należy utworzyć *.pkgdef* pliku, który opisuje zmodyfikowanych kluczy i ich wartości.  
@@ -38,7 +38,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` Klucz odnosi się do galerii, aby włączyć lub wyłączyć. W galerii Visual Studio i galerii przykładów należy użyć następujących repozytorium identyfikatorów GUID:  
   
-- Galeria Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio Gallery : 0F45E408-7995-4375-9485-86B8DB553DC9  
   
 - Galeria przykładów: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   

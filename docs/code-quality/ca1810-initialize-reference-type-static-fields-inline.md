@@ -1,5 +1,5 @@
 ---
-title: 'CA1810: Inicjowanie pola statyczne typu referencyjnego śródwierszowo'
+title: 'CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7726ce96eed20e1ce7bb96112703777cb8f582
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42877ea2b3b42f0fc9bed5c88a6809ba31cab3e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944603"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996925"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicjowanie pola statyczne typu referencyjnego śródwierszowo
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo
 
 |||
 |-|-|

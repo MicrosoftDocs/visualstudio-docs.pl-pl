@@ -14,15 +14,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42714a44ebaee4d7e72d3997537491195d504f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24392fe34069025209f0e2c02e1231d1cbbe3397
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938980"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993277"
 ---
 # <a name="sdk-element-msbuild"></a>Zestaw SDK, element (MSBuild)
 Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zestawu SDK.  

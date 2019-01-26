@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9ba9f39a88a968524517a6c23f16ffa1aff0d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018803"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetl stos wywołań i korzystanie z okna stosu wywołań w debugerze
 

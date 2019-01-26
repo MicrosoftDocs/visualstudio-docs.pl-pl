@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30547a985f752d2302e7d8cd33203a9261c3445c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003265"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce
 Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie rozpoznaje Windows, takich jak plik programu Microsoft Word, usługi IIS będą odrzucać do przekazywania pliku, a wdrożenie zakończy się niepowodzeniem.  
@@ -35,9 +35,9 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 
 - *.Application*  
 
-- *Manifest*  
+- *.manifest*  
 
-- *.Deploy* 
+- *.deploy* 
 
   Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
 
@@ -97,10 +97,10 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
 
 | Typ adresu URL | Opis |
 |----------| - |
-| FTP: / / | Możesz opublikować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
+| ftp:// | Możesz opublikować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
 | http:// | Możesz zainstalować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
 | https:// | Możesz zainstalować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
-| File:// | Możesz zainstalować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
+| file:// | Możesz zainstalować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji przy użyciu tego protokołu. |
 
 ## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP z dodatkiem SP2: Zapora systemu Windows  
  Domyślnie Windows XP z dodatkiem SP2, powoduje włączenie zapory Windows. Jeśli tworzysz aplikację na komputerze, na którym zainstalowano Windows XP zainstalowane jesteś nadal można opublikować, a następnie uruchom [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z lokalnego serwera, na którym działa program IIS. Jednak nie można uzyskać dostęp do tego serwera, na którym działa program IIS z innego komputera, chyba że Otwórz zaporę Windows. Aby uzyskać instrukcje dotyczące zarządzania zaporą Windows, zapoznaj się z pomocą Windows.  

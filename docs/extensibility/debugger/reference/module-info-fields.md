@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Dokumentacja firmy Microsoft
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3687237849e39e1cba76a37ed6273e8cc39fccfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d0b5e1423875bfa7834bd1340339ebab2a9e3b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831488"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040349"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Określa flagi dla informacji debugowania w module.  
@@ -109,7 +109,7 @@ public enum enum_MODULE_INFO_FIELDS { 
  Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
