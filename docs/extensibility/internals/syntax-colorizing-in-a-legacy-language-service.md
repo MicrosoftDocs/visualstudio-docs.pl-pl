@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948651"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 Kolorowanie składni jest funkcją, która powoduje, że różne elementy języka programowania mają być wyświetlane w pliku źródłowego w różnych kolorach i stylów. Aby obsługiwać tę funkcję, musisz podać analizator i skaner identyfikujące typów elementy leksykalne lub tokenów w pliku. Wiele języków rozróżnia słowa kluczowe, ograniczniki (na przykład nawiasów zwykłych lub klamrowych) i komentarze, kolorowanie je na różne sposoby.  

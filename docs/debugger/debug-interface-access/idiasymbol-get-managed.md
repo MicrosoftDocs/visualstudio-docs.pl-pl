@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a69d00be-2a89-415c-b116-385c422e2fd5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ae5047ca7f8db2c4b85d3f92154619418202e1a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75df4f6d0b95ebdc50905e312de76b7f50f114e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935895"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070776"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 Pobiera flagę określającą, czy symbol odwołuje się do kodu zarządzanego.  

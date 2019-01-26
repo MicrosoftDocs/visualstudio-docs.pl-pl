@@ -1,5 +1,5 @@
 ---
-title: 'CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu'
+title: 'CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a612aa39899336eda4802e849529ae61faf192be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935647"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów
 
 |||
 |-|-|

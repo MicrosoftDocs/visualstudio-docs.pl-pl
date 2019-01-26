@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b852e917e55803fd37687ced86f819e0b591e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 215b228c14a7928f7f60e5e668c246815509f95f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939195"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Zostanie otwarty i przygotowuje dane debugowania skojarzone z plikiem.exe/.dll.  
@@ -52,7 +52,7 @@ HRESULT loadDataForExe (
 |E_PDB_INVALID_SIG|Podpis nie odpowiada.|  
 |E_PDB_INVALID_AGE|Okres ważności jest niezgodny.|  
 |E_INVALIDARG|Nieprawidłowy parametr.|  
-|WARTOŚĆ E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
+|E_UNEXPECTED|Źródło danych zostało już przygotowane.|  
   
 ## <a name="remarks"></a>Uwagi  
  Nagłówek debugowania pliku.exe/.dll nazwy skojarzone debugowania lokalizacji danych.  
@@ -84,12 +84,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idialoadcallback —](../../debugger/debug-interface-access/idialoadcallback.md)   
- [Idialoadcallback2 —](../../debugger/debug-interface-access/idialoadcallback2.md)   
- [Idialoadcallback::notifydebugdir —](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)   
- [Idiareadexeatoffsetcallback —](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
- [Idiareadexeatrvacallback —](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [Idiadatasource::loaddatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
+ [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)   
+ [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
+ [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)   
+ [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
+ [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [Idiadatasource::loadandvalidatedatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

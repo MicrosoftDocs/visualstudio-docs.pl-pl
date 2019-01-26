@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93172b8ed16e2520c060671d12ef0ab35960f6ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5c7533f9ec4dd9a915d50aa7676dcf6397ec451
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829411"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924100"
 ---
 # <a name="set-radix-command"></a>Ustaw Radix — Polecenie
 Ustawia lub zwraca base numeryczne, używany do wyświetlania wartości całkowitych.

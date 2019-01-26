@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bbc76b3975773cd639e194524e8cece0018eb25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932665"
 ---
 # <a name="load-test-scenario-properties"></a>Właściwości scenariusza testów obciążenia
 
@@ -33,9 +33,9 @@ Zmienić ustawienia właściwości scenariusza testu obciążenia w programie Vi
 
 |Właściwość|Definicja|
 |-|----------------|
-|**Rozkład przeglądarek**|Określa Miks przeglądarki internetowej dla testu obciążeniowego. Można określić typy przeglądarki innej witryny sieci web oraz rozkład obciążenia między nimi.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj mieszaną przeglądarkę** okno i użyj **Dodaj** i **Usuń** wybrać typy przeglądarek sieci web w teście obciążeniowym.<br /><br />Aby uzyskać więcej informacji, zobacz [Określanie typów przeglądarek sieci web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Browser Mix**|Określa Miks przeglądarki internetowej dla testu obciążeniowego. Można określić typy przeglądarki innej witryny sieci web oraz rozkład obciążenia między nimi.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj mieszaną przeglądarkę** okno i użyj **Dodaj** i **Usuń** wybrać typy przeglądarek sieci web w teście obciążeniowym.<br /><br />Aby uzyskać więcej informacji, zobacz [Określanie typów przeglądarek sieci web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Mieszany profil sieciowy**|Określa mieszany profil sieciowy dla testu obciążeniowego. Można określić, które typy sieci mają zostać objęte testem, oraz rozkład obciążenia między nimi.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj mieszany profil sieciowy** okno dialogowe i użyj **Dodaj** i **Usuń** wybierz typy sieci do testu obciążeniowego.<br /><br />Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
-|**Test mieszany**|Określa, że wydajność sieci web oraz testów jednostkowych mieszanego dla testu obciążeniowego. Można określić, które testy mają zostać wykonane, oraz rozkład obciążenia między nimi.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj Test mieszany** okno dialogowe i użyj **Dodaj** i **Usuń** do wybierania testów w teście obciążeniowym.<br /><br />Aby uzyskać więcej informacji [Edytuj test mieszany w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Test Mix**|Określa, że wydajność sieci web oraz testów jednostkowych mieszanego dla testu obciążeniowego. Można określić, które testy mają zostać wykonane, oraz rozkład obciążenia między nimi.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj Test mieszany** okno dialogowe i użyj **Dodaj** i **Usuń** do wybierania testów w teście obciążeniowym.<br /><br />Aby uzyskać więcej informacji [Edytuj test mieszany w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Typ testu mieszanego**|Określa model testu mieszanego dla testu obciążeniowego.<br /><br />Wybierz przycisk wielokropka **(...)**  przycisk, aby otworzyć **Edytuj Test mieszany** okno dialogowe i użyj listy rozwijanej w obszarze **model testu mieszanego** można wybrać model mieszaniny testu do użycia w teście obciążeniowym.<br /><br />Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).|
 
 ## <a name="options"></a>Opcje

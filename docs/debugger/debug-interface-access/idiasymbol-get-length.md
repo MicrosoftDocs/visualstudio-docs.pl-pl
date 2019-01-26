@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e32585e44c7100d673b35e99ad0db081caa9fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b536aae5431163ae8ac6d7bd2a52d23ced662447
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941505"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Pobiera liczbę bitów lub bajty pamięci używane przez obiekt reprezentowany przez ten symbol.  
@@ -59,5 +59,5 @@ pSymbol->get_length( &length );
 |Wersja:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

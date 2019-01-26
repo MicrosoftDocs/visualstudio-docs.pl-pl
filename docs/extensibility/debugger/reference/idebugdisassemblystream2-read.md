@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce82bc81ef54cff9dbfb0a6282411e03775ebc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e97544e4f2389ef1704d418dda841938a17a88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892017"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948534"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Odczytuje instrukcje od bieżącej pozycji w strumieniu dezasemblacji.  
@@ -69,5 +69,5 @@ int Read( 
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Getsize —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
+ [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
  [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

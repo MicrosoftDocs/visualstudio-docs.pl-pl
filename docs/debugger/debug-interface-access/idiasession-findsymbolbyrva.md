@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef883d8b0aa7870b9444ea92f6b0b23143caf43d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9061a4f95e8bc70382185c9996c21524339fcaa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919957"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego względny adres wirtualny (RVA).  
@@ -54,5 +54,5 @@ pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

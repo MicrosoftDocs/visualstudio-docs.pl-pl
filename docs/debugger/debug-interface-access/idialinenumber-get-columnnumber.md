@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b5b79a7f5342a240a16506f97322d915228949
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f8442c12cdbe31111967bd04e2af6d091e36b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925781"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Pobiera numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji.  

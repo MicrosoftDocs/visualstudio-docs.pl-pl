@@ -1,5 +1,5 @@
 ---
-title: 'CA2216: Typy możliwe do rozporządzania powinny deklarować finalizator'
+title: 'CA2216: Typy możliwe do likwidacji powinny deklarować finalizator'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f53f91a6a4775fb17e273fb87c4c669f74ad45e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8518a2278a8e7a7d5f3df8aaba7f7a37aaebdba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917786"
 ---
-# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Typy możliwe do rozporządzania powinny deklarować finalizator
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Typy możliwe do likwidacji powinny deklarować finalizator
 
 |||
 |-|-|

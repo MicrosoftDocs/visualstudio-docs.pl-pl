@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e6fd49e72b3cb6ffdb1ade70dcd1ffb562bdd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84cdc938320be106ffa230595448fa0ffb332cee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924126"
 ---
 # <a name="utilization-view"></a>Widok wykorzystania
 **Widok wykorzystania** Wyświetla informacje o procesorze CPU, procesora GPU i innych zasobów systemowych, które są używane przez bieżący proces (wybierz **analizy** > **współbieżności Wizualizator** można uruchomić narzędzie concurrency visualizer). Pokazuje średnie wykorzystanie przez proces analizy, proces bezczynny, proces systemowy i inne procesy, które są uruchomione w systemie, wraz z upływem czasu. Nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50 procent w określonym czasie, ten widok przedstawia jednego rdzenia logicznego wykorzystywane. Widok jest generowany przez podzielenie podczas profilowania na segmenty krótki czas. Dla każdego segmentu wykres, które to średnia liczba wątków procesów, które są wykonywane na rdzenie logiczne, w tym przedziale.  
   
- ![Widok wykorzystania CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![CPU Utilization View](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  Na wykresie widać, czas (na osi x) i średni rdzenie logiczne, które są wykorzystywane przez proces docelowy, proces bezczynności i proces systemowy. (Proces bezczynny pokazuje bezczynnych rdzeni. Proces systemowy jest procesem w Windows, które może wykonywać pracę w imieniu innych procesów). Pozostałe procesy, które są uruchomione na koncie systemu w celu wykorzystania pozostałe rdzenie.  
   

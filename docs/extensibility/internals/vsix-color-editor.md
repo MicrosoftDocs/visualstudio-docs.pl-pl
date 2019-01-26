@@ -1,24 +1,24 @@
 ---
-title: Edytor kolorów VSIX | Dokumentacja firmy Microsoft
+title: VSIX Color Editor | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe9e98d4a30def296f395b7175e871a71383437
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a83c56adaec939c5244afff44cb5ff6823a6a713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960475"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923285"
 ---
 # <a name="vsix-color-editor"></a>Edytor kolorów VSIX
 Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i edytować kolorów niestandardowych dla programu Visual Studio. Narzędzie można również wygenerować klucze zasobu motywu, czemu kolory, można użyć w kodzie. To narzędzie jest przydatne do tworzenia rozszerzenia programu Visual Studio, który obsługuje motywów kolorów. To narzędzie może otwierać pliki .pkgdef i XML. Visual Studio motywy (.vstheme plików) może służyć za pomocą rozszerzenia kolor Edytor programu Visual Studio, zmieniając rozszerzenie pliku .xml. Ponadto pliki .vstheme można importować do bieżącego pliku .xml.  
   
- ![Główny Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "Hero Edytor kolorów VSIX")  
+ ![VSIX Color Editor Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX Color Editor Hero")  
   
  **Pliki definicji pakietów**  
   
@@ -115,7 +115,7 @@ Narzędzie edytora koloru rozszerzenia programu Visual Studio można tworzyć i 
   
   Wartości kolorów są wyświetlane w pary tła/pierwszego planu, za pomocą "None" wskazujący, że nie został zdefiniowany kolor. Uwaga: Jeśli kolor, który nie ma pary kolor tła/kolor tekstu, tylko tła musi być zdefiniowany.  
   
-  ![Wartości kolorów Edytor kolorów VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "wartości kolorów Edytor kolorów VSIX")  
+  ![VSIX Color Editor Color Values](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX Color Editor Color Values")  
   
   Aby edytować token kolorów, wybierz pozycję kolor motywu (kolumna) tego tokenu. Dodaj wartość koloru, wpisując wartość szesnastkowy koloru w formacie ARGB 8-cyfrowy, wprowadzając nazwę kolorów systemowych w komórce, lub przy użyciu menu rozwijanego, aby wybrać żądany kolor przy użyciu zestawu suwaków lub Podaj listę kolorów systemowych.  
   

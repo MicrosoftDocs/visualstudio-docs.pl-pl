@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927859"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -40,7 +40,7 @@ Visual Studio **środowiska Python** okna (w widoku szerokie, rozwinięty pokaza
 
 ![Rozwinięty widok okna środowiska Python](media/environments-expanded-view.png)
 
-Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie języka Python, w ramach programu Visual Studio. Użyj **Otwórz w programie PowerShell** polecenie, aby otworzyć okno oddzielne polecenia w folderze wybranego środowiska. Z tego okna polecenia skrypt można uruchomić dowolnego języka python. 
+Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie języka Python, w ramach programu Visual Studio. Użyj **Otwórz w programie PowerShell** polecenie, aby otworzyć okno oddzielne polecenia w folderze wybranego środowiska. Z tego okna polecenia skrypt można uruchomić dowolnego języka python.
 
 Informacje dodatkowe:
 

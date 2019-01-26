@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927206"
 ---
 # <a name="filter-report-views"></a>Filtrowanie widoków raportu
 Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, który jest wyświetlany w widokach raport dotyczący wydajności i wyeksportowane pliki raportu profilowania. Można ograniczyć raport, aby dane między wartości sygnatur czasowych i umożliwia ograniczenie danych do określonych procesów i wątków. Można zapisać w pliku filtrów i utworzenie filtru na inny plik danych profilowania, importując zapisany filtr.  
   
  Można również ograniczyć raportu do segmentu czasu za pomocą graficznego osi czasu w widoku Podsumowanie. Zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
- Aby wykluczyć systemu i kod innych firm z raportu, zobacz [jak: Filtrowanie widoków raportów narzędzi, aby wyświetlić tylko mój kod profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ Aby wykluczyć systemu i kod innych firm z raportu, zobacz [jak: Filtrowanie widoków raportu narzędzi profilowania w celu wyświetlania kodu w ramach funkcji Tylko mój kod](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>Procedury  
   

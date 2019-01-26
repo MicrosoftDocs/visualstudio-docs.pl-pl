@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2a99fc6e87e59bf4cc0008c20905f9dc145102b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709cea938ea898eab1440f38deb563db2530e57d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949624"
 ---
 # <a name="command-routing-algorithm"></a>Algorytm routingu poleceń
 W programie Visual Studio polecenia są obsługiwane przez szereg różnych składników. Polecenia są kierowane z najbardziej kontekst, który jest oparty na bieżącym zaznaczeniu, prowadzące kontekst (znany także jako globalna). Aby uzyskać więcej informacji, zobacz [polecenia dostępności](../../extensibility/internals/command-availability.md).  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928832"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Pobiera część lub całość nieozdobioną nazwę w przypadku języka C++ dekorowane nazwy (połączenie).  

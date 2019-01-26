@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bce0eda36e637140d10408a37b0ecbb3d8b91ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7476208c52884f82a7277d8cbcd69208831efeb3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944309"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 Istnieją dwa rodzaje ustawień magazynów:  
@@ -77,7 +77,7 @@ Istnieją dwa rodzaje ustawień magazynów:
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Aby sprawdzić ustawienia konfiguracji za pomocą Edytora rejestru  
   
-1.  Otwórz Regedit.exe.  
+1.  Open Regedit.exe.  
   
 2.  Przejdź do HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   

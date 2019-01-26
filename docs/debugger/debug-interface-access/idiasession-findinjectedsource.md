@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 907531b6-1ef8-4153-986d-b72611a1632d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a16e3827999d165f0d04b803e4d0611bf4f2538d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e49d7332fee2b6e5e3c919e595e891fe8511edca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939273"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 Pobiera listę źródeł, który został umieszczony w magazynie symboli przez atrybut dostawców lub innych części procesu kompilacji.  

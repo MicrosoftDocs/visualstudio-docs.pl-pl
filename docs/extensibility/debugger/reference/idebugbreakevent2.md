@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23a8c534ba3d829a02075d2d195689df6d08482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 218c1d01a693b81472a40430fa60455073bb8fb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929013"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Ten interfejs Menedżer debugowania sesji (SDM) informuje o pomyślnym ukończeniu asynchronicznego podziału.  
@@ -38,7 +38,7 @@ IDebugBreakEvent2 : IUnknown
  Na przykład użytkownik może wybrać **Przerwij wszystkie** polecenie **debugowania** menu, aby zerwać program, który jest uruchomiony w pętli nieskończonej. SDM mówi programowi, aby zatrzymać, wywołując [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). Wysyła DE `IDebugBreakEvent2` program na koniec zatrzymania.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

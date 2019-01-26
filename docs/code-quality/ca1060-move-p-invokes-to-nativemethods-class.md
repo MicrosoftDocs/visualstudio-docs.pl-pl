@@ -1,5 +1,5 @@
 ---
-title: 'CA1060: Przenieś P-Invoke do klasy NativeMethods'
+title: 'CA1060: Przenieś metody P-Invoke do klasy NativeMethods'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cdea132c68b178f8e5ab8f0129a714364fbe4c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917799"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś metody P/Invoke do klasy NativeMethods
 
 |||
 |-|-|
@@ -79,7 +79,7 @@ Te klasy są deklarowane jako `internal` (`Friend`, w języku Visual Basic) i Za
  [!code-csharp[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_2.cs)]
  [!code-vb[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_2.vb)]
 
-## <a name="safenativemethods-example"></a>Przykład SafeNativeMethods
+## <a name="safenativemethods-example"></a>SafeNativeMethods Example
 
 ### <a name="description"></a>Opis
  Metody P/Invoke, które mogą bezpiecznie łączyć się z dowolnej aplikacji i które nie mają żadnych efektów ubocznych powinien znajdować się w klasie o nazwie **SafeNativeMethods**. Nie masz uprawnień na żądanie i nie trzeba płacić większej uwagi, do której zostaną wywołane.

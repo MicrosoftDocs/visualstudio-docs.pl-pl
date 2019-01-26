@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe15813489fbdc0f3a9506468f56773fb3f35deb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fe410eddd345dd80d270cd9c6a3eb29213d4389
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926569"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>W jaki sposób można debugować naruszenie zasad dostępu C++?
 ## <a name="problem-description"></a>Opis problemu  

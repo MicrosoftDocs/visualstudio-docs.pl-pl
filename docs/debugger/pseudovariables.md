@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7056c3535e05febfa8de2ddd57385fc73ec182
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7f5eadd7072a3b250fa117909f4d5b2e9c2868f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925438"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudozmienne w debugerze programu Visual Studio
 Pseudozmienne są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub **QuickWatch** okno dialogowe. Możesz wprowadzić zmienną pseudovariable taki sam sposób, jak wprowadziłbyś normalną zmienną. Pseudozmienne to nie zmienne, a nie odpowiadają nazwom zmiennych w programie.  
@@ -34,7 +34,7 @@ Pseudozmienne są terminami używanymi do wyświetlania pewnych informacji w okn
   
  W kodzie natywnym można użyć pseudozmiennych pokazanych w następującej tabeli:  
   
-|Pseudozmienne|Funkcja|  
+|Pseudovariable|Funkcja|  
 |--------------------|--------------|  
 |`$err`|Wyświetla zestaw wartości ostatniego błędu z funkcji SetLastError. Wartość, która jest wyświetlana reprezentuje co zostałaby zwrócone przez funkcję GetLastError.<br /><br /> Użyj `$err,hr` aby zobaczyć zdekodowaną postać tej wartości. Na przykład jeśli ostatnim błędem było 3 `$err,hr` zostanie wyświetlony `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|  
 |`$handles`|Wyświetla liczbę dojść przydzielanych w aplikacji.|  
@@ -51,14 +51,14 @@ Pseudozmienne są terminami używanymi do wyświetlania pewnych informacji w okn
   
  W języku C# i Visual Basic można użyć pseudozmiennych pokazanych w następującej tabeli:  
   
-|Pseudozmienne|Funkcja|  
+|Pseudovariable|Funkcja|  
 |--------------------|--------------|  
 |`$exception`|Wyświetla informacje o ostatnim wyjątku. Jeśli wystąpił żaden wyjątek, ocena `$exception` wyświetli komunikat o błędzie.<br /><br /> W języku Visual C# tylko wtedy, gdy Asystent wyjątków jest wyłączony, `$exception` jest automatycznie dodawany do **lokalne** okna, gdy wystąpi wyjątek.|  
 |`$user`|Wyświetla strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje hasła nie są wyświetlane.|  
   
  W języku Visual Basic można użyć pseudozmiennych pokazanych w następującej tabeli:  
   
-|Pseudozmienne|Funkcja|  
+|Pseudovariable|Funkcja|  
 |--------------------|--------------|  
 |`$delete` lub `$$delete`|Usuwa zmienną niejawną, który został utworzony w **bezpośrednie** okna. Składnia jest `$delete,` *zmiennej* lub`$delete,` *zmiennej*`.`|  
 |`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest `$objectid,` *wyrażenie* lub`$listobjectids,` *wyrażenia*`.`|  

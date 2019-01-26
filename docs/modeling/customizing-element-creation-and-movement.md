@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933029"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -39,7 +39,7 @@ Mimo że operacje tworzenia mogą wydawać się różnił się od operacji kopio
 
 Odpowiedzialność za EMD jest podjęcie decyzji, jak obiekt lub grupę obiektów powinny zostać scalone do określonej lokalizacji w modelu. W szczególności decyduje, jakie relacje należy można utworzyć wystąpienia połączyć grupę scalony do modelu. Można również dostosować, aby ustawić właściwości i utworzyć dodatkowe obiekty.
 
-![Język DSL&#45;EMD&#95;scalania](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 EMD jest generowana automatycznie podczas definiowania relacji osadzania. Po dodaniu nowych wystąpień podrzędnych do elementu nadrzędnego, to ustawienie domyślne EMD tworzy wystąpienie relacji. Na przykład te EMDs domyślne można modyfikować, dodając kod niestandardowy.
 
@@ -49,7 +49,7 @@ Można również dodać własne EMDs w definicji DSL, aby umożliwić użytkowni
 
 Możesz dodać dyrektywy scalania elementów klasy domeny relacje domeny, kształty, łączników i diagramy. Można dodawać lub je znaleźć w Eksplorator DSL w odbieranie klasy domeny. Odbieranie klasa jest klasą domeny elementu, który jest już w modelu i na którym zostaną scalone nowych lub skopiowany element.
 
-![Język DSL&#45;EMD&#95;szczegóły](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 **Klasy indeksowania** jest klasą domeny elementów, które może zostać scalony składowe klasy odbierania. Również zostaną scalone wystąpieniami podklasami klasy indeksowania przy tym EMD, chyba że **dotyczy podklas** na wartość False.
 

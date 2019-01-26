@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Nie deklaruj chronionych elementów członkowskich w typach zapieczętowanych'
+title: 'CA1047: Nie deklaruj chronionych składowych w typach zapieczętowanych'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b46e64fb4092f8e0f773671ff13eb401b6b67890
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77277c093396ddbfdf458e93f468ad5ce5775bd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928402"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Nie deklaruj chronionych elementów członkowskich w typach zapieczętowanych
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Nie deklaruj chronionych składowych w typach zapieczętowanych
 
 |||
 |-|-|

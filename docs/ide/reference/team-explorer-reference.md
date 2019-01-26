@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: 2b4ab4677e8fe8fec9f1915d79cbcf841787cb48
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834170"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918741"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja programu Team Explorer
 

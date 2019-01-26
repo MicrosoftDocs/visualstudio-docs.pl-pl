@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac673709ea648a3c0fb6602797af90f86f33f0e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e01a0030d4c8948652cdfc8706bb620190fd45b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923019"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfejs użytkownika (UI) mogą stać się przepełniona za pomocą poleceń. Można programować pakietu w celu ograniczenia tego problemu w następujący sposób:

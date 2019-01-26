@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvCreateMarkerSeriesWithCodePageA | Dokumentacja firmy Microsoft
+title: CvCreateMarkerSeriesWithCodePageA Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55466cc96e4969f05bc34edfaf4a28564dba17ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 410e23163d2d12ac141aecdc7d7f65036ff26406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942077"
 ---
-# <a name="cvcreatemarkerserieswithcodepagea-function"></a>Cvcreatemarkerserieswithcodepagea — funkcja
+# <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA function
 Tworzy serię znacznika dla danego dostawcy oraz określonej strony kodowej. Ta funkcja może służyć do określenia strony kodowej jawnie dla tekstu, napisanych przez funkcje API ANSI znacznika. Ustawianie strony kodowej może być przydatne w przypadku, gdy śledzenie jest przechwycony i następnie analizowane na różnych maszynach, za pomocą różnych ustawień regionalnych/języków. Domyślnie używany jest zwrócona przez funkcję GetACP() strony kodowej.  
   
 ## <a name="syntax"></a>Składnia  

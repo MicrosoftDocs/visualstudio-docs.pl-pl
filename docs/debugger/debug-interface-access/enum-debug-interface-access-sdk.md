@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c777e2e6-88be-435b-b632-8d43f42b0b49
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9825f4c30569b4f251dc1128ec972307861b7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9b72e6c62c9ee2a5f22582dd0e4315e9b1e1060
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939871"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Typ wyliczeniowy (Zestaw SDK dostępu do interfejsu debugowania)
 Wyliczenia są identyfikowane za pomocą `SymTagEnum` symboli. Każda wartość wyliczenia jest wyświetlany jako element podrzędny klasy z `SymTagConstant` tagu.  

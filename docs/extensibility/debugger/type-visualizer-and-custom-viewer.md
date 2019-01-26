@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0879d18922e730d9cd737bdefde52576b6b03638
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09dc2d578ade421d35bb17dfbdf01e93313bbdb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926869"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Wizualizator typów i Przeglądarka niestandardowa
 Wizualizator typów jest składnikiem, który wyświetla część danych w określonym formacie. Format jest całkowicie maksymalnie visualizer, który implementuje, jest to użytkownik końcowy lub dostawcą firm wizualizatorów.  

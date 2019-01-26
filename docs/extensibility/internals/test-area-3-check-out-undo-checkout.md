@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfb1b2ff397fad1d8a4e74ef21cbb85805d1b1cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51722c39ed5fcf6fc35208c5d3ae73f85ac9be9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929708"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Obszar testowy 3: Zapoznaj się z / Cofnij wyewidencjonowanie
 Ten obszar testowy wtyczki kontroli źródła obejmuje edycji oraz przywracanie elementów z magazynu wersji za pomocą **Wyewidencjonuj** i **Cofnij wyewidencjonowanie** poleceń.  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d947dbc3fae436fa64d3effa963df5445991be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13bcc997f57695c0c8f6e50c755cd485be91c663
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924207"
 ---
 # <a name="performance-rules-reference"></a>Zasady wydajności — Odwołanie
 Reguły wydajności narzędzi profilowania zapewniają dodatkowe ostrzeżenia i informacje o wydajności aplikacji. Reguły wydajności analizy danych profilowania zbieranych ze źródeł takich jak liczniki wydajności procesora i Windows. Reguł komunikaty są wyświetlane w oknie dane wyjściowe błędu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowanego środowiska programistycznego. Komunikaty są wyświetlane przy użyciu jednego z następujących poziomów reguły:  

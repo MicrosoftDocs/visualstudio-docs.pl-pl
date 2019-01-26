@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46a81190fb1c1c9b15627b7fb9620e01faa2f53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b33858910c435f4dc899b24a707de06548f1c915
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931157"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>Funkcja SccGetExtendedCapabilities
+# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities function
 Ta funkcja zwraca dodatkowe funkcje obsługiwane przez wtyczka do kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  

@@ -1,5 +1,5 @@
 ---
-title: Cv_hreg_e — | Dokumentacja firmy Microsoft
+title: CV_HREG_e | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919555"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Określa rejestru docelowego.  
@@ -409,37 +409,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elementy  
- CV_REG_ *  
+ CV_REG_*  
  Rejestry używane przez firmę Intel 80 x 86 i ix86 procesorów i p-code.  
   
- CV_R68_ *  
+ CV_R68_*  
  Rejestry, używane przez procesor 68K.  
   
- CV_M4_ *  
+ CV_M4_*  
  Rejestry używane przez MIPS 4000 serii procesora.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Używane przez procesor serii cyfrowego Equipment Corporation alfa AXP rejestrów.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Używane przez Procesor PowerPC Motorola/IBM rejestrów.  
   
  CV_SH3_ * i CV_SH_\*  
  Używane przez procesor serii Hitachi SH3 i Hitachi SH rejestrów.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Rejestry używane przez procesory Advanced RISC Machine (ARM).  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Rejestry korzystają z procesorów Intel IA64 z serii.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Używane przez procesor TriCore technologii Infineon rejestrów.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Rejestry używane przez AM33 Matsushita/Panasonic i związane z procesorów.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Używane przez procesor Mitsubishi M32R rejestrów.  
   
 ## <a name="remarks"></a>Uwagi  
@@ -462,8 +462,8 @@ enum CV_HREG_e { 
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe::get_registervalue —](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe::put_registervalue —](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

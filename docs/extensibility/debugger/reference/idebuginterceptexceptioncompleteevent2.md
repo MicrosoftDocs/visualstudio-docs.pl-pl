@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2 | Dokumentacja firmy Microsoft
+title: IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910c8d3fe94d047eb2323a2e1d9f309875bc1a88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a54ea7c9745eedf2fe86aed2df29a380447e154
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932782"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po zakończeniu obsługi przechwycone zdarzenia DE.  
@@ -45,7 +45,7 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
  To zdarzenie, które będą wysyłane przez [interceptcurrentexception —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) kiedy metoda została ukończona pomyślnie Obsługa wyjątku przechwycone.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

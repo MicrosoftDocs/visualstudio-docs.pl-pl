@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9fda2004d80f8512fcb09f7cc493927d6ef23b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c0531bd5a633a0105d9be57ef1258d632b0ee84
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937624"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923442"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalowanie obsługi języka Python w programie Visual Studio
 

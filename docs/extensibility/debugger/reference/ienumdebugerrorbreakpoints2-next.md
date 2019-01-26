@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a3dee11-5267-4d77-9e28-6a38413ba70b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbf637df851bd4eb654f67e02f2bf00b59fecba6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c48c9196b7ea0db66601bf2e3a3d41b571584f85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935478"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 Zwraca następny zestaw elementów z wyliczenia.  

@@ -6,15 +6,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926682"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -26,7 +26,7 @@ Pobierz [wprowadzenie do tworzenia aplikacji WPF](https://code.msdn.microsoft.co
 
 ## <a name="create-a-custom-build-configuration"></a>Utwórz niestandardową konfigurację kompilacji
 
-Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [konfiguracje kompilacji omówienie](../ide/understanding-build-configurations.md), [omówienie platformy kompilacji](../ide/understanding-build-platforms.md), i [porady: zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
+Podczas tworzenia rozwiązania Debuguj i zwolnij konfiguracje kompilacji i ich domyślne elementy docelowe platformy są automatycznie definiowane dla rozwiązania. Następnie można dostosować te konfiguracje lub tworzyć własne. Konfiguracje kompilacji określają typ kompilacji. Platformy kompilacji określają system operacyjny do aplikacji jest przeznaczony dla tej konfiguracji. Aby uzyskać więcej informacji, zobacz [konfiguracje kompilacji omówienie](../ide/understanding-build-configurations.md), [omówienie platformy kompilacji](../ide/understanding-build-platforms.md), i [jak: Zestaw debugowania i zwalniania konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Można zmienić lub utworzyć konfigurację i ustawienia platformy za pomocą **programu Configuration Manager** okno dialogowe. W tej procedurze utworzysz konfigurację kompilacji dla badania.
 
@@ -130,7 +130,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji za
 
    ![Okno danych wyjściowych, Visual Basic kompilacji ostrzeżenia](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).
+   Aby uzyskać więcej informacji, zobacz [jak: Pomijanie ostrzeżeń kompilatora](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Wyświetl dodatkowe kompilacji szczegóły w oknie danych wyjściowych
 
@@ -162,13 +162,13 @@ Możesz zmienić ilość informacji dotyczących procesu kompilacji, który poja
     > [!TIP]
     > Możesz przeszukiwać zawartość **dane wyjściowe** okno po wyświetleniu **znaleźć** okno dialogowe, wybierając **Ctrl**+**F** klucze.
 
-Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
+Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Tworzenie kompilacji wydania
 
 Można utworzyć wersję przykładowej aplikacji, która jest zoptymalizowana do wysłania go. W przypadku kompilacji wydania określisz, że plik wykonywalny jest kopiowany do udziału sieciowego, zanim rozpocznie się kompilowanie.
 
-Aby uzyskać więcej informacji, zobacz [porady: zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md) i [kompilacji i wyczyść projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Aby uzyskać więcej informacji, zobacz [jak: Zmiana katalogu wyjściowego kompilacji](../ide/how-to-change-the-build-output-directory.md) i [kompilacji i wyczyść projektów i rozwiązań w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Określić kompilację wydania dla języka Visual Basic
 
@@ -224,6 +224,6 @@ Gratulacje! W tym przewodniku zakończyła się pomyślnie.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wskazówki: Tworzenie projektu (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Przewodnik: Tworzenie projektu (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Omówienie wstępnej kompilacji projektu aplikacji sieci web platformy ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Przewodnik: Użyj programu MSBuild](../msbuild/walkthrough-using-msbuild.md)

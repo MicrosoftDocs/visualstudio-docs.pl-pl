@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c3ca0877500e8242e7fb96ba15b19c9d8a6e13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929231"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916993"
 ---
 # <a name="clickonce-application-manifest"></a>Manifest aplikacji ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji jest plik XML, który opisuje aplikację, która jest wdrażany za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -31,12 +31,12 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest apl
 | Element | Opis | Atrybuty |
 | - | - | - |
 | [\<zestaw > Element](../deployment/assembly-element-clickonce-application.md) | Wymagana. Element najwyższego poziomu. | `manifestVersion` |
-| [\<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-application.md) | Wymagana. Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) | Określa wymagania dotyczące zabezpieczeń aplikacji. | Brak |
-| [\<entryPoint > Element](../deployment/entrypoint-element-clickonce-application.md) | Wymagana. Określa punkt wejścia kodu aplikacji. | `name` |
-| [\<zależność > Element](../deployment/dependency-element-clickonce-application.md) | Wymagana. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być wstępnie zainstalowane. | Brak |
-| [\<Plik > Element](../deployment/file-element-clickonce-application.md) | Opcjonalna. Identyfikuje każdy plik nonassembly, który jest używany przez aplikację. Może zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileassociation — > Element](../deployment/fileassociation-element-clickonce-application.md) | Opcjonalna. Określa rozszerzenie pliku do skojarzenia z aplikacją. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md) | Wymagana. Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) | Określa wymagania dotyczące zabezpieczeń aplikacji. | Brak |
+| [\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) | Wymagana. Określa punkt wejścia kodu aplikacji. | `name` |
+| [\<dependency> Element](../deployment/dependency-element-clickonce-application.md) | Wymagana. Identyfikuje poszczególne zależności wymagane do uruchomienia aplikacji. Opcjonalnie określa zestawy, które muszą być wstępnie zainstalowane. | Brak |
+| [\<file> Element](../deployment/file-element-clickonce-application.md) | Opcjonalna. Identyfikuje każdy plik nonassembly, który jest używany przez aplikację. Może zawierać dane izolacji Component Object Model (COM) skojarzone z plikiem. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md) | Opcjonalna. Określa rozszerzenie pliku do skojarzenia z aplikacją. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>Uwagi  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Pliku manifestu aplikacji identyfikuje aplikacje wdrożone za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Aby uzyskać więcej informacji na temat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md).  

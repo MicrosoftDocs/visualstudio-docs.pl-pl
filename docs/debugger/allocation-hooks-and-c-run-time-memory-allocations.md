@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a654c2d86ed0eb598a963b56cd6e3ef16ad91f19
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: f9432eab55f22bcf18266a10e4e1616997ed8c4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154098"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924181"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Punkty zaczepienia alokacji i alokacja pamięci środowiska wykonawczego języka C
 Ograniczenie funkcje punktu zaczepienia alokacji z bardzo ważne jest, musisz jawnie Ignoruj `_CRT_BLOCK` bloków. Te bloki są alokacji pamięci dokonanych wewnętrznie przez funkcje biblioteki wykonawczej języka C, jeśli dokonają wszelkie wywołania do funkcji biblioteki wykonawczej C, które przydzielają pamięć. Możesz zignorować `_CRT_BLOCK` funkcję podłączania bloków, dodając następujący kod na początku przydziału:  

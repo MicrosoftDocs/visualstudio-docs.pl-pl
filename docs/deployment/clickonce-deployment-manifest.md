@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c42d1b0323e8f2d66f7abab13c8fecbf6a1ae4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e62fb21f33658c07a5c7b60885c0cc83310e15f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927798"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifest wdrażania ClickOnce
 Manifest wdrożenia jest plikiem XML, który opisuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia, w tym identyfikator bieżącego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wersję aplikacji do wdrożenia.  
@@ -31,14 +31,14 @@ Manifest wdrożenia jest plikiem XML, który opisuje [!INCLUDE[ndptecclick](../d
 | Element | Opis | Atrybuty |
 | - | - | - |
 | [\<zestaw > Element](../deployment/assembly-element-clickonce-deployment.md) | Wymagana. Element najwyższego poziomu. | `manifestVersion` |
-| [\<assemblyIdentity > Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Wymagana. Identyfikuje manifest aplikacji dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<Opis > Element](../deployment/description-element-clickonce-deployment.md) | Wymagana. Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **apletu Dodaj lub usuń programy** w Panelu sterowania. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Wymagana. Identyfikuje manifest aplikacji dla [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description> Element](../deployment/description-element-clickonce-deployment.md) | Wymagana. Określa informacje o aplikacji, które pozwala utworzyć obecności powłoki i **apletu Dodaj lub usuń programy** w Panelu sterowania. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
 | [\<wdrożenie > Element](../deployment/deployment-element-clickonce-deployment.md) | Opcjonalna. Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie na system. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks > Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Wymagana. Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalować i uruchamiać. | `SupportUrl` |
-| [\<zależność > Element](../deployment/dependency-element-clickonce-deployment.md) | Wymagana. Identyfikuje wersję aplikacji do zainstalowania dla wdrożenia i lokalizację w manifeście aplikacji. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
-| [\<publisheridentity — > Element](../deployment/publisheridentity-element-clickonce-deployment.md) | Wymagany dla podpisanych manifestów. Zawiera informacje o wydawcy, który podpisał tego manifestu wdrażania. | `Name`<br /><br /> `issuerKeyHash` |
+| [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Wymagana. Identyfikuje wersje programu .NET Framework, gdzie tę aplikację można instalować i uruchamiać. | `SupportUrl` |
+| [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md) | Wymagana. Identyfikuje wersję aplikacji do zainstalowania dla wdrożenia i lokalizację w manifeście aplikacji. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md) | Wymagany dla podpisanych manifestów. Zawiera informacje o wydawcy, który podpisał tego manifestu wdrażania. | `Name`<br /><br /> `issuerKeyHash` |
 | [\<Podpis > Element](../deployment/signature-element-clickonce-deployment.md) | Opcjonalna. Zawiera informacje potrzebne do cyfrowego podpisywania to manifest wdrożenia. | Brak |
-| [\<customErrorReporting > Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Opcjonalna. Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd. | Identyfikator URI |
+| [\<customErrorReporting> Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Opcjonalna. Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd. | Identyfikator URI |
 
 ## <a name="remarks"></a>Uwagi  
  Identyfikuje pliku manifestu wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji, w tym bieżącej wersji i inne ustawienia wdrażania. Odwołuje się manifest aplikacji, który opisuje bieżącą wersję aplikacji i wszystkich plików znajdujących się we wdrożeniu.  

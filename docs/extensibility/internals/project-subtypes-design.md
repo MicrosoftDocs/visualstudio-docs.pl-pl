@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf1b3f57fe82a4f5f6747c2667e0849f6ce6456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41f7708e9e10c1d5ec78354c137c5ee657575bd6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927609"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 Podtypy projektów umożliwiają pakietów VSPackage rozszerzanie projektów opartych na aparatu Microsoft Build Engine (MSBuild). Użycie agregacji umożliwia ponowne używanie zbiorcze systemu projektu core zarządzane, które są zaimplementowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , ale nadal dostosować zachowanie w przypadku danego scenariusza.  
@@ -61,7 +61,7 @@ Podtyp wielopoziomowej projektu
   
  Na poniższej ilustracji koncentruje się na implementacji extender automatyzacji, obiekt przeglądania konfiguracji projektu w szczególności używanej przez podtypy projektów do rozszerzania systemu podstawowego projektu.  
   
- ![Grafika przedstawiająca automatyczne rozszerzanie podtypu projektu VS](../../extensibility/internals/media/vs_projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
+ ![VS Project Flavor Auto Extender graphic](../../extensibility/internals/media/vs_projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
 Urządzenie Extender automatyzacji podtypu projektu.  
   
  Podtypy projektów Dodatkowo można rozszerzyć systemu podstawowego projektu, rozszerzając modelu obiektu automatyzacji. Te są zdefiniowane jako część obiektu automatyzacji DTE i służą do rozszerzania obiektu projektu `ProjectItem` obiektu i `Configuration` obiektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie modelu obiektu projektu Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

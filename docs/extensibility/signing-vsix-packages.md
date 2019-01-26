@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9d5ac7d9700d8ff5b047134a53d0147af3a78f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2805c2ecaff3704d96e9ebac176d96a4d820551
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959804"
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
 Zestawy rozszerzenia nie trzeba zostać podpisane przed uruchomieniem w programie Visual Studio, ale jest dobrym rozwiązaniem, aby to zrobić.  
@@ -44,7 +44,7 @@ Zestawy rozszerzenia nie trzeba zostać podpisane przed uruchomieniem w programi
   
    Na przykład aby zalogować się przy użyciu pliku certyfikatu chronione hasłem:  
   
-   /F logowania VSIXSignTool.exe \<certfile > /p \<hasło > \<VSIXfile >  
+   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

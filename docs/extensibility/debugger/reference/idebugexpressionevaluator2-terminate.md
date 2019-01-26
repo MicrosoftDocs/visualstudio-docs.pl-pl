@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692165f11b9a43f62fc9d2d84faaba3c83fb5346
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b95602e2f9b4b01b7dec4622986d512b338be7f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918983"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Zatrzymuje i czyści Ewaluator wyrażeń.  

@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927519"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4. Pełny szablon projektu sieci Web Flask
 
@@ -163,7 +163,7 @@ Szablony pojedynczej strony *about.html*, *contact.html*, i *index.html*, Rozsze
 
 Jak wspomniano na początku tego artykułu, programu Visual Studio udostępniają szablon "Projekt sieci Web Flask/Jade", która tworzy aplikację, która jest wizualnie taka sama, jak co to jest generowany przez "Projekt sieci Web Flask". Podstawowa różnica polega na tym, że używa on aparat Jade szablonów, który jest rozszerzeniem Jinja, która implementuje te same pojęcia z bardziej zwięzłą języka. W szczególności Jade używa słowa kluczowe zamiast tagi ujęty w znaki {filtr ograniczników, na przykład i umożliwia dotyczą stylów CSS oraz elementów HTML za pomocą słów kluczowych.
 
-Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *requirements.txt*. 
+Aby włączyć Jade, szablon projektu najpierw zawiera pakiet pyjade w *requirements.txt*.
 
 Aplikacja  *\_ \_init\_\_PY* pliku zawiera wiersz do
 
@@ -236,4 +236,4 @@ Możesz eksperymentować z zarówno Jinja i Jade składni, aby zobaczyć, który
 
 - [Zapisywanie swoją pierwszą aplikację Flask, część 4 — formularzy i widoków ogólny](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - [Jade na GitHib (dokumentacja)](https://github.com/liuliqiang/pyjade) (github.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — platformy flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

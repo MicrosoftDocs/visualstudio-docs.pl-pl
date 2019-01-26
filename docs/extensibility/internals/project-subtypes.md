@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdbc00863c7aa0d03ad94bd60966e81f7faaf81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c2e5151131efdab36a3c9e5cf646b1ca9bf94b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922720"
 ---
 # <a name="project-subtypes"></a>Podtypy projektów
 Podtypy projektów pozwalają dostosować lub flavor zachowanie systemów projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Możliwe modyfikacje obejmują zapisywanie dodatkowe dane w pliku projektu, dodawanie lub filtrowanie elementów w **Dodaj nowy element** okno dialogowe, kontrolowanie jak debugować zestawy i wdrożona i rozszerzanie projektu **właściwości Strony** okno dialogowe. Pakietów VSPackage zaimplementować podtypy projektów za pomocą modelu COM agregacji.  

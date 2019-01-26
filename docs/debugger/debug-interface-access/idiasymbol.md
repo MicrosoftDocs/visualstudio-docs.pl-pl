@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol — | Dokumentacja firmy Microsoft
+title: IDiaSymbol | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47d898e9a0fb40347b2463cfa8ecccb1e58f896
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0f8241bfb4ba4d6eee228dd3563209a4c4afae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906712"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920126"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Opisuje właściwości instancji symbolu.  
@@ -336,15 +336,15 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- `Header:` dia2.h  
+ `Header:` Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+ [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   

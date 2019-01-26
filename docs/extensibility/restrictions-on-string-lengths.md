@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bb973a1f50bb29cc605ab63916d8e75b17d1853
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 679737b9590cd018f0de16298391351aedb0ac94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852719"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929955"
 ---
 # <a name="restrictions-on-string-lengths"></a>Ograniczenia długości ciągów
 Interfejs API wtyczki kontroli źródła ogranicza długości ciągów używanych w różnych funkcji.  

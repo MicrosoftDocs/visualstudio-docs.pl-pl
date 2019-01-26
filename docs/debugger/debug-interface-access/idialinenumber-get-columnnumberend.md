@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a528201d7f3ba817da9e903abf4bc7570351711a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895197"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919450"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Pobiera numer kolumny liczonego od jednego źródła, gdzie kończy się wyrażenia lub instrukcji.  

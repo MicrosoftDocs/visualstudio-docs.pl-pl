@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 260e2779618f4683756132ca15e708ffee87830a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918059"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 

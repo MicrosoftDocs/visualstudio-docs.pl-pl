@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f320a23fa75dccdb4c273bc851832f3b762696d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f22e6f01ded792a450c7b69b5dd36e36066821
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910220"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927596"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurowanie projektu do kompilowania
 Lista konfiguracje rozwiązania dla danego rozwiązania jest zarządzany przez okna dialogowego konfiguracje rozwiązania.  
@@ -39,7 +39,7 @@ Wiele konfiguracji
   
  Zależności projektu i kolejność kompilacji są niezależne konfiguracji rozwiązania: oznacza to, należy skonfigurować tylko jedną zależność drzewa dla wszystkich projektów w rozwiązaniu. Kliknij prawym przyciskiem myszy rozwiązanie lub projekt, a następnie wybierając opcję **zależności projektu** lub **kolejność kompilacji projektu** opcję otwarcia **zależności projektu** okno dialogowe. Można go również otworzyć z **projektu** menu.  
   
- ![Zależności projektu](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Project Dependencies](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Zależności projektu  
   
  Zależności projektu określają kolejność, w którym projekty są kompilowane. Karta kolejność kompilacji w oknie dialogowym dokładnie kolejność, w którym projektów w rozwiązaniu zostaną kompilacji i użyj karty zależności Aby zmodyfikować kolejność kompilacji.  

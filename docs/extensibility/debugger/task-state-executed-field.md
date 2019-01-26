@@ -1,5 +1,5 @@
 ---
-title: Pole TASK_STATE_EXECUTED | Dokumentacja firmy Microsoft
+title: TASK_STATE_EXECUTED Field | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd5bf1b68c197c04fa39f97ec89b54a54022db85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b7c3bd3c487c7aa979e6cd3c24122465b13ebeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922600"
 ---
 # <a name="taskstateexecuted-field"></a>Pole TASK_STATE_EXECUTED
 Zadanie jest uruchomiony, ale nie została jeszcze zakończona.  

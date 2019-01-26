@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1ba8071-669c-4cf7-9ac0-02f26d99f366
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03f288b0da63e3740a2d954aab2100fa97551154
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5731c0ec7ba6b7e6e05205e266ecc91efaba194
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919437"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 Pobiera bieżący wyrównanie obrazu.  
@@ -41,5 +41,5 @@ HRESULT get_imageAlign ( 
  Obrazy są wyrównane do granic dotyczące pamięci, zależności, jak załadować i utworzyć obrazu. Wyrównanie zwykle znajduje się na granice 1, 2, 4, 8, 16, 32 lub 64 bajtów. Wyrównanie obrazu można ustawić za pomocą wywołania [idiaaddressmap::put_imagealign —](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)

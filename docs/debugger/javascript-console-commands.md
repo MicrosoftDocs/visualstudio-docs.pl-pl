@@ -9,16 +9,16 @@ helpviewer_keywords:
 - debugging JavaScript, console [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf9f339283af27f450950d9a79079ea35c97e3b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941468"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
   
@@ -130,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

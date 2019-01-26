@@ -11,21 +11,21 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2c18ba6cb7360be904d491f29195eea7add6c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 453dd2d93b8ac3c1a9ba2d194f20ee14897d6fa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918657"
 ---
 # <a name="collect-tier-interaction-data"></a>Zbieranie danych o interakcji między warstwami
 
 Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje na temat czasu wykonania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pośrednictwem usług ADO.NET. Dane są zbierane tylko w przypadku wywołania funkcji synchronicznej.
 
-**Wersje programu Visual Studio**
+**Visual Studio editions**
 
 Obejrzeć takie dane mogą być zbierane przy użyciu dowolnej wersji programu Visual Studio. Natomiast obejrzeć takie dane można wyświetlać tylko w programie Visual Studio Enterprise.
 

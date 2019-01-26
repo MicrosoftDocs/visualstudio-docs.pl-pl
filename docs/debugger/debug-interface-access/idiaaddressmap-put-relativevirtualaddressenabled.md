@@ -1,5 +1,5 @@
 ---
-title: Idiaaddressmap::put_relativevirtualaddressenabled — | Dokumentacja firmy Microsoft
+title: IDiaAddressMap::put_relativeVirtualAddressEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a973c5ba66dbe63cf0c9751effbfd73c45b5b29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f32b83ce4d44a18b3eb50d246a5d5ff4800316c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927636"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 Pozwoli to klientowi włączyć lub wyłączyć Obliczanie i Użyj względnych adresów wirtualnych (RVA).  
@@ -45,6 +45,6 @@ HRESULT put_relativeVirtualAddressEnabled ( 
  `put_relativeVirtualAddress` Można wywołać metody, aby włączyć RVA po pomyślnym wywołaniem [idiaaddressmap::set_imageheaders —](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) metoda ustanowiła nowe nagłówki obrazu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap::get_relativevirtualaddressenabled —](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

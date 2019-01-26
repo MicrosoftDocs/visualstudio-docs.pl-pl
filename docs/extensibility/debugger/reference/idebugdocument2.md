@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2 | Dokumentacja firmy Microsoft
+title: IDebugDocument2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 240efad211f9d5aaee9c9494d545f11dd79e0bce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c4bae697b12fa7056777c3875a651d8ac1c6dbd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940911"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Ten interfejs reprezentuje dokumentu źródłowego.  
@@ -46,7 +46,7 @@ IDebugDocument2 : IUnknown
  Ten interfejs jest implementowany tylko wtedy, gdy DE dostarcza kod źródłowy. Na przykład podczas debugowania skryptu na stronie HTML DE dostarcza kod źródłowy, ponieważ źródło pobraniem lub generowany dynamicznie i nie istnieje jako plik z dysku. Podczas debugowania tradycyjnych językach, takich jak C++, ten interfejs nie musi być implementowane.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

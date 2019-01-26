@@ -1,5 +1,5 @@
 ---
-title: ArrayType — | Dokumentacja firmy Microsoft
+title: ArrayType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1d973a3a-2bde-46df-8625-85d519bb3cc9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdaa91c06e81b4f4591701590499ddd7f058a54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd7c53359799d8c7b25e10e54825bf438e04d157
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936311"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931277"
 ---
 # <a name="arraytype"></a>ArrayType
 Tablica jest identyfikowane za pomocą `SymTagArray` symboli.  

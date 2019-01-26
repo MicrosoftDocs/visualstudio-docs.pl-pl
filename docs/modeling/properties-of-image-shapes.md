@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f1f18a0957c3ee2c67fb9a316460a8883e146f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918216"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 

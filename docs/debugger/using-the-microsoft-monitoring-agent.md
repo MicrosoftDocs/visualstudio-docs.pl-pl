@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 0e62c662a9936467f2a434c48e1c588e7dd5c9cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227580"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923782"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -65,7 +65,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-####  <a name="PowerShell2"></a> PYT.: Co się stanie, jeśli mam Windows PowerShell 2.0?  
+####  <a name="PowerShell2"></a> Q: Co się stanie, jeśli mam Windows PowerShell 2.0?  
  **ODP.:** Zdecydowanie zaleca się użycie PowerShell 3.0. W przeciwnym wypadku musisz zaimportować poleceń cmdlet programu Microsoft Monitoring Agent PowerShell z każdym razem, gdy uruchamiasz program PowerShell. Nie masz też dostęp do zawartości pomocy do pobrania.  
   
 1.  Otwórz **programu Windows PowerShell** lub **środowiska Windows PowerShell ISE** okna wiersza polecenia jako administrator.  
@@ -76,7 +76,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 3.  [Odwiedź TechNet](http://technet.microsoft.com/systemcenter/default) można pobrać najnowszej zawartości pomocy.  
   
-####  <a name="FullPermissionsITLog"></a> PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?  
+####  <a name="FullPermissionsITLog"></a> Q: Jak skonfigurować uprawnienia dla puli aplikacji?  
  **ODP.:** Użyj Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików). Na przykład:  
   
 - Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:  
@@ -118,7 +118,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
      Oto skróconej składni:  
   
-     **Start-WebApplicationMonitoring** *"\<nazwa_aplikacji >"*  *\<monitoringMode >* *"\<outputPath >"*  *\<UInt32 >* *"\<collectionPlanPathAndFileName >"*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      Oto przykład pokazujący, po prostu nazwę aplikacji sieci web i uproszczone **Monitor** trybu:  
   
@@ -134,11 +134,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
     |||  
     |-|-|  
-    |*"\<nazwa_aplikacji >"*|Określ ścieżkę do nazwy aplikacji sieci web i witryny sieci web w usługach IIS. Można także dodać ścieżkę usług IIS, jeśli użytkownik sobie tego życzy.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> —lub—<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci web usług IIS i aplikacji sieci web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Można również użyć [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) i [uzyskać WebApplication](http://technet.microsoft.com/library/ee790554.aspx) poleceń.|  
-    |*\<monitoringMode >*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitor**: Rejestrowanie minimalne szczegółowe informacje o zdarzeń dotyczących wyjątków i zdarzeń dotyczących wydajności. W tym trybie wykorzystuje domyślny plan kolekcji.</li><li>**Śledzenie**: Zarejestruj szczegóły na poziomie funkcji lub monitorowanie aplikacji SharePoint 2010 i 2013 programu SharePoint przy użyciu planu w określonej kolekcji. Ten tryb może uniemożliwić aplikacji wykonywania wolniej.<br /><br /> <ul><li>[PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Przykład ten rejestruje zdarzenia dla aplikacji programu SharePoint hostowany w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" śledzenia "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: Niestandardowe szczegóły rekordu przy użyciu określić dostosowanego planu kolekcji. Musisz ponownie uruchomić monitorowanie edycji planu kolekcji po monitorowania został już uruchomiony.</li></ul>|  
+    |*"\<appName>"*|Określ ścieżkę do nazwy aplikacji sieci web i witryny sieci web w usługach IIS. Można także dodać ścieżkę usług IIS, jeśli użytkownik sobie tego życzy.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> —lub—<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci web usług IIS i aplikacji sieci web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Można również użyć [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) i [uzyskać WebApplication](http://technet.microsoft.com/library/ee790554.aspx) poleceń.|  
+    |*\<monitoringMode>*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitor**: Rejestrowanie minimalne szczegółowe informacje o zdarzeń dotyczących wyjątków i zdarzeń dotyczących wydajności. W tym trybie wykorzystuje domyślny plan kolekcji.</li><li>**Śledzenie**: Zarejestruj szczegóły na poziomie funkcji lub monitorowanie aplikacji SharePoint 2010 i 2013 programu SharePoint przy użyciu planu w określonej kolekcji. Ten tryb może uniemożliwić aplikacji wykonywania wolniej.<br /><br /> <ul><li>[PYT.: Jak skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Przykład ten rejestruje zdarzenia dla aplikacji programu SharePoint hostowany w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" śledzenia "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: Niestandardowe szczegóły rekordu przy użyciu określić dostosowanego planu kolekcji. Musisz ponownie uruchomić monitorowanie edycji planu kolekcji po monitorowania został już uruchomiony.</li></ul>|  
     |*"\<outputPath >"*|Określ pełną ścieżką do przechowywania dzienników IntelliTrace. Upewnij się, utworzyć ten katalog, przed rozpoczęciem monitorowania.|  
-    |*\<UInt32 >*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy osiągnie ten limit, agent zastępuje najwcześniej wpisy, aby zrobić miejsce na więcej wpisów. Aby zmienić ten limit, użyj **— wartość właściwości MaximumFileSizeInMegabytes** opcji lub edytować `MaximumLogFileSize` atrybutu w planie kolekcji.|  
-    |*"\<collectionPlanPathAndFileName >"*|Określ pełną ścieżkę lub względną ścieżkę i nazwę pliku w planie kolekcji. Ten plan jest plikiem .xml, który konfiguruje ustawienia dla agenta.<br /><br /> Te plany są uwzględnione w agencie i Praca z aplikacjami sieci web i aplikacji programu SharePoint:<br /><br /> -   **ASP.NET.default.XML**<br />     Zbiera tylko zdarzenia, takie jak wyjątki, zdarzenia wydajności, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-   **collection_plan.asp.NET.trace.XML**<br />     Wywołania funkcji na poziomie zbiera oraz wszystkie dane w domyślny plan kolekcji. Ten plan jest dobry szczegółową analizę, ale może spowolnić aplikację.<br /><br /> Zlokalizowane wersje tych planów można znaleźć w podfolderach agenta. Możesz również [Dostosuj te plany lub utworzyć własne plany](http://go.microsoft.com/fwlink/?LinkId=227871) aby nie spowalniać pracy swojej aplikacji. Umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu na agenta.<br /><br /> [PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)|  
+    |*\<UInt32>*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy osiągnie ten limit, agent zastępuje najwcześniej wpisy, aby zrobić miejsce na więcej wpisów. Aby zmienić ten limit, użyj **— wartość właściwości MaximumFileSizeInMegabytes** opcji lub edytować `MaximumLogFileSize` atrybutu w planie kolekcji.|  
+    |*"\<collectionPlanPathAndFileName>"*|Określ pełną ścieżkę lub względną ścieżkę i nazwę pliku w planie kolekcji. Ten plan jest plikiem .xml, który konfiguruje ustawienia dla agenta.<br /><br /> Te plany są uwzględnione w agencie i Praca z aplikacjami sieci web i aplikacji programu SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Zbiera tylko zdarzenia, takie jak wyjątki, zdarzenia wydajności, wywołaniami bazy danych i żądaniami serwera sieci Web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Wywołania funkcji na poziomie zbiera oraz wszystkie dane w domyślny plan kolekcji. Ten plan jest dobry szczegółową analizę, ale może spowolnić aplikację.<br /><br /> Zlokalizowane wersje tych planów można znaleźć w podfolderach agenta. Możesz również [Dostosuj te plany lub utworzyć własne plany](http://go.microsoft.com/fwlink/?LinkId=227871) aby nie spowalniać pracy swojej aplikacji. Umieścić plany kolekcji niestandardowej w tym samym bezpiecznym miejscu na agenta.<br /><br /> [PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)|  
   
      Aby uzyskać więcej informacji o pełnej składni i inne przykłady, uruchom **get-help Start-WebApplicationMonitoring-szczegółowe** polecenia lub **get-help Start-WebApplicationMonitoring-przykłady** polecenie.  
   
@@ -146,7 +146,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
-####  <a name="Minimizing"></a> PYT.: Jak uzyskać większość danych bez spowalniania mojej aplikacji?  
+####  <a name="Minimizing"></a> Q: Jak uzyskać większość danych bez spowalniania mojej aplikacji?  
  **ODP.:** Program Microsoft Monitoring Agent może zbierać dużą ilość danych i ma wpływ na wydajność aplikacji, w zależności od zbierania danych i jak je zebrać. Oto kilka sposobów na zdobycie większości danych bez spowalniania aplikacji:  
   
 - Dla aplikacji sieci web i aplikacji programu SharePoint agent rejestruje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można ograniczyć kolekcji do modułów, w ramach jednej aplikacji. Aby nie spowalniać inne aplikacje, Hostuj każdą aplikację we własnej puli aplikacji.  
@@ -237,11 +237,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 2. Uruchom [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) polecenie, aby zapisać migawkę dziennika IntelliTrace:  
   
-    **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- lub —  
   
-    **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     Na przykład:  
   
@@ -249,7 +249,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
     —lub—  
   
-    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     Aby uzyskać więcej informacji, uruchom **get-help Checkpoint-WebApplicationMonitoring-szczegółowe** polecenia lub **get-help Checkpoint-WebApplicationMonitoring-przykłady** polecenia.  
   
@@ -267,11 +267,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
 2. Uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć dziennik IntelliTrace i zatrzymać monitorowanie aplikacji internetowej:  
   
-    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \- lub —  
   
-    **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     Lub aby zatrzymać monitorowanie wszystkich aplikacji sieci web:  
   
@@ -283,7 +283,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
     \- lub —  
   
-    **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
     Aby uzyskać więcej informacji, uruchom **get-help Stop-WebApplicationMonitoring-szczegółowe** polecenia lub **get-help Stop-WebApplicationMonitoring-przykłady** polecenia.  
   
@@ -301,4 +301,4 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
  [Optymalizacja kolekcji IntelliTrace na serwerach produkcyjnych](http://go.microsoft.com/fwlink/?LinkId=255233)  
   
 #### <a name="forums"></a>Fora  
- [Diagnostyka programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio Diagnostics](http://go.microsoft.com/fwlink/?LinkId=262263)

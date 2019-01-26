@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918212"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -64,7 +64,7 @@ Po uruchomieniu zwykle aplikacji, zobaczysz błędy i niepoprawne wyniki tylko w
 
 Uruchamianie aplikacji w debugerze, nazywany również *tryb debugowania*, oznacza, że debuger aktywnie monitoruje wszystko, co dzieje się jako program zostanie uruchomiony. Umożliwia on również wstrzymać aplikacji w dowolnym momencie, aby zbadać jego stan, a następnie krokowo kodu wiersz po wierszu, aby obejrzeć szczegóły każdego zdarzenia, jak to się dzieje.
 
-W programie Visual Studio, wprowadź tryb debugowania przy użyciu **F5** (lub **debugowania** > **Rozpocznij debugowanie** polecenie menu lub **Rozpocznij debugowanie**  przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania). Jeśli wystąpią wyjątki, pomocnika wyjątków programu Visual Studio umożliwia przejście do dokładny moment, w którym wyjątek wystąpił i zawiera inne przydatne informacje. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [naprawiania błędów, pisząc lepiej C# kodu](../debugger/write-better-code-with-visual-studio.md).
+W programie Visual Studio, wprowadź tryb debugowania przy użyciu **F5** (lub **debugowania** > **Rozpocznij debugowanie** polecenie menu lub **Rozpocznij debugowanie**  przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania). Jeśli wystąpią wyjątki, pomocnika wyjątków programu Visual Studio umożliwia przejście do dokładny moment, w którym wyjątek wystąpił i zawiera inne przydatne informacje. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md).
 
 Jeśli nie wystąpi wyjątek, prawdopodobnie masz dobry pomysł gdzie szukać problem w kodzie. Jest to, gdzie możesz użyć *punktów przerwania* za pomocą debugera, aby przyznać sobie możliwość bardziej dokładnie sprawdź swój kod. Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie program Visual Studio wstrzymania uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych, lub zachowanie pamięci lub sekwencji, na których działa kod.
 

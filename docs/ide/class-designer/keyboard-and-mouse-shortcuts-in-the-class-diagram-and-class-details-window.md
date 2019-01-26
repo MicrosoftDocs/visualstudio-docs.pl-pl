@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2541847c82a14099df703e0842e706a1e913315f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826737"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928207"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Skróty myszy i klawiatury w oknie Diagram klas i szczegóły klasy
 
@@ -76,7 +76,7 @@ Obsługiwane są następujące akcje klawiatury w diagramach klas:
 |**ALT**+**Shift**+**B**|Wewnątrz kształtów typu + kształtów typu.|Jeśli listę typów podstawowych są wyświetlane na kształt typu i ma więcej niż jeden element, przełącza tego stanu rozszerzenia listy (Zwiń/Rozwiń).|
 |**Delete**|Typ i komentarz kształtów|Wywołuje **Usuń z diagramu** polecenia.|
 |**Delete**|Na całą resztą.|Wywołuje **usuwanie kodu** polecenia (elementy członkowskie, parametrów, asocjacje, dziedziczenie, etykiet interfejsów typu lizak).|
-|**CTRL**+**Usuń**|Wszystkie konteksty|Wywołuje **usuwanie kodu** na wybór polecenia.|
+|**Ctrl**+**Delete**|Wszystkie konteksty|Wywołuje **usuwanie kodu** na wybór polecenia.|
 |**Karta**|Wszystkie konteksty|Powoduje przejście do następnego elementu podrzędnego w obrębie tego samego nadrzędnego (obsługuje zawijania).|
 |**SHIFT**+**kartę**|Wszystkie konteksty|Powoduje przejście do poprzedniego elementu podrzędnego w obrębie tego samego nadrzędnego (obsługuje zawijania).|
 |**SPACJA**|Wszystkie konteksty|Włącza lub wyłącza zaznaczenie dla bieżącego elementu.|
@@ -95,7 +95,7 @@ Aby przejść za pomocą następujących klawiszy **szczegóły klasy** okna:
 |**;**  (średnik) lub **)** (zamykający nawias)|Przesuń kursor do pola nazwy następny wiersz elementu członkowskiego w **szczegóły klasy** siatki okna.|
 |**Karta**|Przenosi kursor do następnego pola, najpierw przejście od lewej do prawej, a następnie z góry na dół. Jeśli kursor jest przenoszona z polem, w jakiej został wpisany tekst, **szczegóły klasy** przetwarza ten tekst i zapisuje go, jeśli nie generuje błąd.<br /><br /> Jeśli kursor znajduje się na puste pole takie jak \<Dodaj parametr >, kartę przenosi je do pierwszego pola następnego wiersza.|
 |**SPACJA**|Przenosi kursor do następnego pola, najpierw przejście od lewej do prawej, a następnie z góry na dół. Jeśli kursor znajduje się na puste pole takie jak \<Dodaj parametr >, przenosi do pierwszego pola następnego wiersza. Należy pamiętać, że \<miejsca > wpisane natychmiast, po przecinek jest ignorowana.<br /><br /> Jeśli kursor znajduje się w polu Podsumowanie, miejsce na wpisanie dodaje znak spacji.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj w danym wierszu, miejsce na wpisanie przełącza wartość Ukryj pola wyboru.|
-|**CTRL**+**kartę**|Przełącz do innego okna dokumentu. Na przykład zmienić **szczegóły klasy** okna można otworzyć pliku kodu.|
+|**Ctrl**+**Tab**|Przełącz do innego okna dokumentu. Na przykład zmienić **szczegóły klasy** okna można otworzyć pliku kodu.|
 |**ESC**|Jeśli rozpoczęto wpisać tekst w polu, naciskając klawisz ESC działa jako klawiszem Cofnij przywrócenie zawartości tego pola do poprzedniej wartości. Jeśli okno Szczegóły klasy zawiera ogólne fokus, ale nie określona komórka jest ustawiony fokus, naciskając klawisz ESC powoduje przeniesienie fokusu opuszczenie **szczegóły klasy** okna.|
 |**Strzałka w górę** i **Strzałka w dół**|Te klucze Przesuń kursor wiersz po wierszu w pionie w **szczegóły klasy** siatki okna.|
 |**Strzałka w lewo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz Strzałka w lewo Zwija bieżący węzeł w hierarchii (jeśli jest otwarty).|
