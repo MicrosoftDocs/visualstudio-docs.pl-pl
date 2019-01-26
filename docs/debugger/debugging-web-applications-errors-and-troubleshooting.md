@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827421"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018270"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów
 Podczas próby debugowania aplikacji sieci Web, mogą wystąpić następujące błędy.  
@@ -41,19 +41,19 @@ Podczas próby debugowania aplikacji sieci Web, mogą wystąpić następujące b
   
 -   [Błąd: Witryna korzysta z adresu IP](../debugger/error-site-uses-ip-address.md)  
   
--   [Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ administrator usług IIS nie odpowiada.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+-   [Błąd: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
--   [Błąd: ASP.NET nie jest zainstalowany](../debugger/error-aspnet-not-installed.md)  
+-   [Błąd: Platforma ASP.NET nie jest zainstalowana](../debugger/error-aspnet-not-installed.md)  
   
--   [Błąd: Debugowanie nie powiodło się, ponieważ nie włączono uwierzytelniania zintegrowanego Windows](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+-   [Błąd: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
--   [Błąd: Serwer sieci web nie jest poprawnie skonfigurowany.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+-   [Błąd: Serwer internetowy nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
--   [Błąd: Serwer sieci Web został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+-   [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Błąd: Przekroczono limit czasu podczas debugowania usług sieci Web](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [Błąd: Przekroczono limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Błąd: Nie można rozpocząć debugowania na serwerze sieci Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+-   [Błąd: Nie można rozpocząć debugowania na serwerze internetowym](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

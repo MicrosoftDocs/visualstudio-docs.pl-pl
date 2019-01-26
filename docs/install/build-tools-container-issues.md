@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bbcabe25a4cbefed3e1e928eaac8942e3c8de2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3979f455be670b6d730da5f908ed9c57f9c2e5c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905192"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010314"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy z kontenerami
 
@@ -33,7 +33,7 @@ Następujące znane problemy, które występują po zainstalowaniu programu Visu
 * Przekaż `--norestart` w wierszu polecenia. Zgodnie z pisania tego dokumentu, podjęciem próby ponownego uruchomienia kontenera Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
 * Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Na przykład może zostać wyświetlony błąd podczas kompilowania przy użyciu programu MSBuild, takich jak:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.TARGETS(84,5): błąd MSB6003: Nie można uruchomić pliku wykonywalnego "csc.exe" określone zadanie. Nie można załadować pliku lub zestawu ' System.IO.FileSystem, wersja = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a "lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): error MSB6003: Nie można uruchomić pliku wykonywalnego "csc.exe" określone zadanie. Nie można załadować pliku lub zestawu ' System.IO.FileSystem, wersja = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a "lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
 
 * Nie można zainstalować programu Visual Studio 2017 w wersji należy zachować 15,8 lub starszej (dowolny produkt) na mcr<span></span>.microsoft.com/windows/servercore:1809 lub nowszej. Aby uzyskać więcej informacji, zobacz https://aka.ms/setup/containers/servercore1809.
 

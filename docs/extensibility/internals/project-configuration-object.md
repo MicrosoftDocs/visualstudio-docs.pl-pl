@@ -8,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e4ea69779e88cbe01dc6a76809e05c7ab1a6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 682df39774d3f58ca4d4d0df560b2d900b8f6c9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006882"
 ---
 # <a name="project-configuration-object"></a>Obiekt konfiguracji projektu
 Obiekt konfiguracji projektu zarządza wyświetlanie informacji o konfiguracji w interfejsie użytkownika.  
   
- ![Konfiguracja projektu usługi Visual Studio](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
+ ![Visual Studio Project Configuration](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
 Strony właściwości konfiguracji projektu  
   
  Dostawca konfiguracji projektu zarządza konfiguracje projektu. Środowisko i inne pakiety w celu uzyskania dostępu do i pobierania informacji o konfiguracji projektu, wywołania interfejsów dołączony do obiektu dostawcy konfiguracji projektu.  

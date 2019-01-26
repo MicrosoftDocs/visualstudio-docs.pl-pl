@@ -1,5 +1,5 @@
 ---
-title: VSPerfReport | Dokumentacja firmy Microsoft
+title: VSPerfReport | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56dbbded2f141ab2e4be02c81f4e40fd6f523809
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020805"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Umożliwia tworzenie raportów przy użyciu narzędzia wiersza polecenia VSPerfReport [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools pliku danych profilowania. Domyślny format raportu. *csv* pliku.  
@@ -69,7 +69,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opcje|Opis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
+|**JustMyCode**[**:**[`caller`][,`callee`]]|Pokaż tylko użytkowników wywołań funkcji aplikacji; Ukryj wywołań systemowych.<br /><br /> -Brak parametrów - ukryć wszystkie funkcje system.<br />-   `caller` — Pokaż jeden poziom funkcji systemu, które wywołują funkcje aplikacji.<br />-   `callee` — Pokaż jeden poziom funkcji systemu, które są wywoływane przez funkcje aplikacji użytkownika.|  
 |**Godzina rozpoczęcia:**[*wartość*]|Wyświetla tylko dane zebrane po wartości (w milisekundach).|  
 |**EndTime:**[*wartość*]|Wyświetla tylko dane zebrane przed wartością (w milisekundach).|  
 |**FilterFile:** `VSPFFile`|Określa lokalizację pliku filtru, który został wygenerowany z okna Raport dotyczący wydajności programu Visual Studio.|  

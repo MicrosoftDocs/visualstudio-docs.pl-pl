@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer | Dokumentacja firmy Microsoft
+title: IDebugCustomViewer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72f273cc08926b79e188f43356466fa00736fa5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988993"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Ten interfejs umożliwia ewaluatora wyrażeń (EE), aby wyświetlić wartości właściwości w dowolnych format jest konieczne.  
@@ -51,7 +51,7 @@ IDebugCustomViewer : IUknown
  Normalnie, Przeglądarka niestandardowa udostępnia widok tylko do odczytu danych, ponieważ [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejs dostarczony do [się pozycje DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) nie ma żadnych metod w przypadku zmiany wartości właściwości z wyjątkiem jako ciąg. Aby można było obsługiwać, zmieniając dowolne bloki danych, EE implementuje niestandardowy interfejs na ten sam obiekt, który implementuje `IDebugProperty3` interfejsu. Ten niestandardowy interfejs będzie dostarczać metody stosowane do zmiany dowolnego bloku danych.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

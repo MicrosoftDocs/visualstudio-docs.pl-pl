@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c63eed47093a8713512ce2586d1a019d303dc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71f69fb0ad4326e5ad3ab3afc768ca468816fa1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970867"
 ---
 # <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
 Pobiera liczbę elementów na liście lub tablicy.  

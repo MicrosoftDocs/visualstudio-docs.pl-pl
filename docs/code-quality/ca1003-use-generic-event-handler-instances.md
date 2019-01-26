@@ -1,5 +1,5 @@
 ---
-title: 'CA1003: Użyj wystąpień obsługi zdarzeń generycznych'
+title: 'CA1003: Użyj ogólnych wystąpień procedury obsługi zdarzeń'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26630aa008e944f0af3fdcc66a16dc4c08bd4e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a6a7040c8400e7c0717f812cb0973a4b0a70bc6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997107"
 ---
-# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Użyj wystąpień obsługi zdarzeń generycznych
+# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Użyj ogólnych wystąpień procedury obsługi zdarzeń
 
 |||
 |-|-|

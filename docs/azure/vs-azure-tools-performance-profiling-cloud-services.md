@@ -2,19 +2,19 @@
 title: Testowanie wydajności usługi w chmurze | Dokumentacja firmy Microsoft
 description: Testowanie wydajności usługi w chmurze przy użyciu programu Visual Studio profiler
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 05af766e3e138c8dd83978d5ae359b6662ba73bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e58548bddfbb9426b459fe3260129a14b6eba87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976240"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -59,8 +59,8 @@ Aby dowiedzieć się więcej na temat profilowanie ich wydajności w programie V
 
 > [!NOTE]
 > Można włączyć funkcji IntelliTrace lub profilowania po opublikowaniu usługi w chmurze. Nie można włączyć jednocześnie.
-> 
-> 
+>
+>
 
 ### <a name="profiler-collection-methods"></a>Metody zbierania Profiler
 Inną kolekcję metody służą do profilowania, oparte na problemy z wydajnością:
@@ -78,8 +78,8 @@ Na poniższej ilustracji pokazano, jak skonfigurować ustawienia profilowania w 
 
 > [!NOTE]
 > Aby włączyć **Włącz profilowanie** pole wyboru, konieczne jest posiadanie programu profilującego zainstalowane na komputerze lokalnym, którego używasz do publikowania swojej usługi w chmurze. Domyślnie program profilujący jest instalowany podczas instalowania programu Visual Studio.
-> 
-> 
+>
+>
 
 ### <a name="to-configure-profiling-settings"></a>Aby skonfigurować ustawienia profilowania
 1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz **Publikuj**. Aby uzyskać szczegółowe instrukcje dotyczące publikowania usługi w chmurze, zobacz [publikowania usługi w chmurze przy użyciu narzędzi Azure](http://go.microsoft.com/fwlink/p?LinkId=623012).
@@ -89,7 +89,7 @@ Na poniższej ilustracji pokazano, jak skonfigurować ustawienia profilowania w 
 5. Z **profilowanie jakiego metodą chcesz użyć** przyciski opcji, wybierz typ profilowania, że jest wymagane.
 6. Aby zebrać obejrzeć takie dane, wybierz **Włącz profilowanie interakcji pomiędzy warstwami** pole wyboru.
 7. Aby zapisać ustawienia, wybierz opcję **OK** przycisku.
-   
+
     Podczas publikowania tej aplikacji, te ustawienia są używane do tworzenia sesji profilowania dla każdej roli.
 
 ## <a name="viewing-profiling-reports"></a>Wyświetlanie raportów profilowania
@@ -101,7 +101,7 @@ Sesję profilowania jest tworzony dla każdego wystąpienia roli w usłudze w ch
 1. Aby wyświetlić okno Eksploratora serwera w programie Visual Studio, na pasku menu wybierz widok Eksploratora serwera.
 2. Wybierz węzeł obliczeń Azure, a następnie wybierz węzeł wdrażania platformy Azure dla usługi w chmurze, wybranego profilu podczas publikowania z programu Visual Studio.
 3. Aby wyświetlić raporty profilowania w przypadku wystąpienia, wybierz rolę, usługi, otwórz menu skrótów dla konkretnego wystąpienia, a następnie wybierz **Wyświetl raport profilowania**.
-   
+
     Raport plik Vsp jest teraz pobierane z platformy Azure, a stan pobierania zostanie wyświetlony w dzienniku aktywności platformy Azure. Po zakończeniu pobierania raportu profilowania pojawia się na karcie w edytorze programu Visual Studio o nazwie <Role name> *<Instance Number>* <identifier>Vsp. Zostanie wyświetlone podsumowanie danych dla tego raportu.
 4. Aby wyświetlić różne widoki tego raportu, na liście bieżącego widoku, wybierz typ widoku, który chcesz. Aby uzyskać więcej informacji, zobacz [widoków raportów narzędzi profilowania](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed9c24717866750c3b9139ab2e04b48d5eda960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d4d3075e04d5ebe158adc220839577a0d35ac50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010236"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 Aparat debugowania (DE) wysyła ten interfejs Menedżer debugowania sesji (SDM), aby ustawić stan paska komunikatów podczas ładowania symboli.  

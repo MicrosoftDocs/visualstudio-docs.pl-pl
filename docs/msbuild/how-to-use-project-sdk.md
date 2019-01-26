@@ -6,15 +6,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5640e02813c22465815576e1435210e2d55712
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020597"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: Korzystanie z zestawów SDK projektu MSBuild
 

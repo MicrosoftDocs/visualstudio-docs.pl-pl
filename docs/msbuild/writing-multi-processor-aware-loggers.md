@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005270"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zapis procesorów uwzględniających rejestratorów
 Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."  

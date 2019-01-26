@@ -7,15 +7,15 @@ helpviewer_keywords:
 - profiling tools,tier interaction method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8c5e04baad8083c2794cc6dbed8a08408a8da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50e6af91a542c105704a7237d5cd1dcbf8efa2a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015813"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 
@@ -25,7 +25,7 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
 
 Aby zbierać dane interakcji między warstwami na aplikacje pulpitu systemu Windows 8 i aplikacje systemu Windows Server 2012 należy użyć metody instrumentacji. Zbieranie danych o interakcji między warstwami aplikacji platformy uniwersalnej systemu Windows nie jest obsługiwane.
 
-**Wersje programu Visual Studio**
+**Visual Studio editions**
 
 Profilowanie interakcji między warstwami można zbierać w programach dowolnej wersji programu Visual Studio. Natomiast obejrzeć takie dane można wyświetlać tylko w programie Visual Studio Enterprise.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1412: Oznacz interfejsy ComSource jako IDispatch'
+title: 'CA1412: Oznacz interfejsy ComSource atrybutem IDispatch'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,20 +12,20 @@ helpviewer_keywords:
 ms.assetid: 131a7563-0410-443c-a8f5-52104250cfb4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43891cad047b2740944d98f05c1d420fa9639715
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61a7042c4eae547a9da64503301351e96681f328
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912065"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013967"
 ---
-# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Oznacz interfejsy ComSource jako IDispatch
+# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Oznacz interfejsy ComSource atrybutem IDispatch
 
 |||
 |-|-|

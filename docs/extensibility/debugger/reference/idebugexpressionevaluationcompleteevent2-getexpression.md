@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd0be9c8b8237a9d8ab2466dfd7f60b31acabe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdd4f1a48658b748a4ed48bb9fcbab1507331638
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006557"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Pobiera oryginalne wyrażenie.  

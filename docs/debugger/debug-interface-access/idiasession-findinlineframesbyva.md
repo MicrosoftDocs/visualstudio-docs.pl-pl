@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8de2cbe874f6955c679ce5d3dc8b089f01058a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69ab6587cfb1e0051bee4e39da842978cbadd666
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015657"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane na określony adres wirtualny (oceny luk w zabezpieczeniach).  
@@ -44,5 +44,5 @@ HRESULT findInlineFramesByVA ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

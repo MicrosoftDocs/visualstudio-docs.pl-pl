@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010067"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi i Edytor rozszerzenia językowe
 Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspektu, parowanie nawiasów klamrowych, funkcja IntelliSense i żarówki, język programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład tekst kolorowanie, marginesy, zakończeń i inne elementy wizualne. Można również zdefiniować własny typ zawartości i określ wygląd i zachowanie widoki tekstowe, w których zawartość zostanie wyświetlona.  
@@ -64,7 +64,7 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
 ## <a name="run-extensions-in-the-experimental-instance"></a>Uruchamianie rozszerzenia w doświadczalnym wystąpieniu  
  Można związane z działającą wersją programu Visual Studio, gdy rozszerzenie jest tworzona przez wdrożenie jej w następującym folderze eksperymentalne (w systemach Windows Vista i Windows 7):  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{company}\\{ExtensionID}*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  gdzie *% LOCALAPPDATA %* jest nazwą użytkownika zalogowanego *firmy* to nazwa firmy, który jest właścicielem rozszerzenia, a *ExtensionID* jest Identyfikatorem rozszerzenia.  
   

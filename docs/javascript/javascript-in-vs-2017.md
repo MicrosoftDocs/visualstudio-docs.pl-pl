@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 9ab08479485769121de276b5889603b984e39ef8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786974"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013005"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 

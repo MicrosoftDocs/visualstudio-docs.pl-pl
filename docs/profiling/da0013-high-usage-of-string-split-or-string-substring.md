@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: ZNACZĄCE Wykorzystanie funkcji String.Split i String.Substring | Dokumentacja firmy Microsoft'
+title: 'DA0013: Wykorzystanie funkcji String.Split i String.Substring | Dokumentacja firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 851c6083152c687869634ca016d53ce353274abb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e261a0822622ec7a2c404539c3cd53f5daf9b67a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863878"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989916"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: ZNACZĄCE Wykorzystanie funkcji String.Split i String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Wykorzystanie funkcji String.Split i String.Substring
 
 |||  
 |-|-|  
-|Identyfikator reguły|DA0013 ZNACZĄCE|  
-|Kategoria|Wskazówki dotyczące użycia programu .NET framework|  
+|Identyfikator reguły|DA0013|  
+|Kategoria|.NET Framework Usage Guidance|  
 |Metod profilowania|Próbkowania|  
 |Komunikat|Należy rozważyć ograniczenie użycia funkcji String.Split i String.Substring.|  
 |Typ reguły|Ostrzeżenie|  

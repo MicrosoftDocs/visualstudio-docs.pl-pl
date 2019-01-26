@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2ef1b83dba8e35a1eee1c26090cc965b6afa41f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947897"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015540"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Ten interfejs reprezentuje typ wskaźnika.  

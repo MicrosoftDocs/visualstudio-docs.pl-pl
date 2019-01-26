@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e8975f67925976a0c6c446d798d048068c1ad6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d8dfc8e032eecc854a0572c8a7bd14b0c551df7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848038"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028640"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Zapewnia powodów, dla którego punkt przerwania został niepowiązanej.  
@@ -60,7 +60,7 @@ public enum enum_BP_UNBOUND_REASON { 
  Zwrócone przez [getreason —](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

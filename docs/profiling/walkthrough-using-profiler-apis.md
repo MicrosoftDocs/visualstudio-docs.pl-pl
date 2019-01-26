@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09368aceed6828e63c0e5c9d20a77d1787bc2c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18a22e0ecf9bd3af9a26ac84441345cb6d523fc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007099"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Za pomocą interfejsów API profilera
 
@@ -151,7 +151,7 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  Wpisz następujące polecenie: **Narzędzie VSInstr \<nazwa pliku > .exe**  
+3.  Wpisz następujące polecenie: **VSInstr \<filename>.exe**  
   
 4.  Wpisz następujące polecenie: **/ OUTPUT polecenia VSPerfCmd:\<nazwa pliku > .vsp**  
   
@@ -161,7 +161,7 @@ DataCollection.CurrentId);
   
 7.  Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**  
   
-8.  Wpisz następujące polecenie: **VSPerfReport/calltrace:\<nazwa pliku > .vsp**  
+8.  Wpisz następujące polecenie: **VSPerfReport /calltrace:\<filename>.vsp**  
   
      ELEMENT. *csv* plik zostanie utworzony w bieżącym katalogu z wynikowe dane dotyczące wydajności.  
   

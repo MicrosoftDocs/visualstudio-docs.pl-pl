@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2 | Dokumentacja firmy Microsoft
+title: IDebugComPlusSymbolProvider2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fb3b32d2154c85ccf127dc6329980d387f49fa8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa7d6cc2a38248cf97045f450cc30cdc1572105
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004620"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 Reprezentuje dostawcę symbol modelu COM +, za pomocą metod, które są specyficzne dla kodu zarządzanego i rozszerza **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md).  
@@ -40,7 +40,7 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 |[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|Obciążenie debugowania symbole, biorąc pod uwagę **ICorDebugModule** obiektu.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: SH.h  
+ Nagłówek: Sh.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

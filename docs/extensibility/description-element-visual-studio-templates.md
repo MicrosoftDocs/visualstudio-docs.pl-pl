@@ -8,21 +8,21 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88b01dfad315d003840bb2eb5f97c7f0022f85e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e80a56569fbfcbd513a9ed741f118534916518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982809"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description — element (szablony Visual Studio)
 Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<Opis >  
   
 ## <a name="syntax"></a>Składnia  

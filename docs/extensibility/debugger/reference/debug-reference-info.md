@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 330ed06d4993d8bbe8b8a889e8f052c8bc7e7049
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb3b9f0c89d350fece18d49eee34d14d01d03352
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007684"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 W tym artykule opisano odwołania.  
@@ -74,7 +74,7 @@ public struct DEBUG_REFERENCE_INFO { 
  Ta struktura jest przekazywany do wywołania [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metodę, aby wypełnić. Ta struktura jest także zwracany jako część listy z [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interfejs, który z kolei jest zwracany z wywołania [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e28ed348d0c994d38ef0614a12430f419b66ba71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3f9c4dca4877d608aaeb8cda1791217a02207de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000682"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
@@ -137,7 +137,7 @@ Nadszedł czas na tworzenie, wdrażanie i uruchomić aplikację "Hello World" pl
 
 2. Wyświetl aplikację, która pojawia się, gdy ekran powitalny zniknie. Aplikacja powinna wyglądać mniej więcej tak:
 
-   ![Platformy uniwersalnej systemu Windows aplikacja "Hello World"](media/uwp-hello-world-app.png)
+   ![A UWP "Hello World" app](media/uwp-hello-world-app.png)
 
 3. Kliknij przycisk **Witaj, świecie** przycisku.
 

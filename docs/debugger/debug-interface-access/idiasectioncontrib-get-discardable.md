@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30ca88d4-3198-4b0f-b30e-2e54b3607fe9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3827010c2bd15ad1048a4f65c057d2bce505ebf5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02307fda339bb7cf45d07aeb1053a2f8a4ca8528
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879491"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009079"
 ---
 # <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
 Pobiera flagę wskazującą, czy można odrzucać sekcji.  

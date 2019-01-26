@@ -8,15 +8,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104584f415e3b4167206632e75e1c7b6d29bb6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d6aea526494e2adfd8151497f8b8b01f3f5c07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836314"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038386"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -108,9 +108,9 @@ Należy zauważyć, że nazwa *Program Files* folderu jest zależna od systemu o
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETCore\v4.5\
+    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\
+    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\
 
 3. Skopiuj następujące pliki z komputera hosta do komputera kompilacji:
 
@@ -211,29 +211,29 @@ Musisz utworzyć wpisy rejestru, aby skonfigurować ustawienia dla programu MSBu
 
    - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-   - **% RegistryRoot %\VisualStudio\11.0@Source katalogów**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-   - <strong>% RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir</strong>
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64</strong>
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-   - **% RegistryRoot %\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-   - **% RegistryRoot %\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
    - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
    X64 komputer kompilacji, również Utwórz następujący wpis rejestru i odnoszą się do komputera hosta, aby określić sposób ustawienia go.
 
@@ -262,8 +262,8 @@ W tej tabeli opisano obsługiwane argumenty dla *vcvarsall.bat*:
 |Vcvarsall.bat argument|Kompilator|Architektura komputera kompilacji.|Architektura obiektów wyjściowych kompilacji|
 | - |--------------| - | - |
 |x86 (ustawienie domyślne)|Natywne 32-bitowe|x86, x64|x86|
-|x86_amd64|x64 cross|x86, x64|X64|
-|amd64|x64 natywne|X64|X64|
+|x86_amd64|x64 Cross|x86, x64|X64|
+|amd64|x64 Native|X64|X64|
 
 Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)części tego dokumentu.
 
@@ -345,7 +345,7 @@ Można utworzyć środowisko budowania, które mogą być rozmieszczone na róż
 
          Nazewnictwo opiera się na opierało.
 
-    - W % Depot % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets należy zmienić każde wystąpienie
+    - In %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets, change every instance of
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 

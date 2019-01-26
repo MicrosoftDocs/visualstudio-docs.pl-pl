@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a6d72df07578701da33213be62d197be9c71ef5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992857"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Instrukcje: Konfigurowanie redukcji szumu w widoku raportu
 Raporty dotyczące wydajności można skonfigurować dla obniżenia poziomu hałasu, ograniczając ilość danych, które są prezentowane w widokach drzewo wywołań i alokacji. Za pomocą redukcji szumu, problemy z wydajnością są lepiej widoczne. Jest to przydatne podczas analizowania raportów wydajności.  

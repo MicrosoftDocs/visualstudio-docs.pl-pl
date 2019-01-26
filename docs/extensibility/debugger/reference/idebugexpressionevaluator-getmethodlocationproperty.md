@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd429da81e4a7aeaad6f06684888cfc48270bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0c8778c512719302c90e1513575714d15105ccf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013811"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Ta metoda konwertuje metody lokalizacji i Przesunięcie adresu pamięci.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 933cbe4f95c5082fb4c5d8b9958c7cd43e9e95d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf8a39001fa07632fe6e229587aadf4ea4c9aacf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838534"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014773"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Wylicza różne numery wierszy zawartych w źródle danych.  
@@ -86,11 +86,11 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

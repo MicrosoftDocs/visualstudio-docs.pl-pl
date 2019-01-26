@@ -4,7 +4,7 @@ description: Instrukcje krok po kroku, aby skonfigurować domyślne wystąpienie
 services: azure-container-service
 documentationcenter: na
 author: mlearned
-manager: douge
+manager: jillfra
 ms.assetid: 0b1335a2-7720-42a8-8260-4e06fc00c9f6
 ms.service: multiple
 ms.devlang: dotnet
@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: multiple
 ms.date: 06/08/2016
 ms.author: mlearned
-ms.openlocfilehash: e332f0367119ef9b5858a66ff82947b6afb6633d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3c02d59021f7596c4c754e185782c591b71fd11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941763"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965753"
 ---
 # <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurowanie hosta platformy Docker przy użyciu rozwiązania VirtualBox
 ## <a name="overview"></a>Omówienie
@@ -28,7 +28,7 @@ Jeśli używasz [Docker for Windows](https://www.docker.com/products/docker-desk
 ## <a name="prerequisites"></a>Wymagania wstępne
 Następujące narzędzia muszą być zainstalowane.
 
-* [Przybornik platformy docker](https://github.com/docker/toolbox/releases)
+* [Docker Toolbox](https://github.com/docker/toolbox/releases)
 
 ## <a name="configuring-the-docker-client-with-windows-powershell"></a>Konfigurowanie klienta platformy Docker przy użyciu programu Windows PowerShell
 Aby skonfigurować klienta platformy Docker, po prostu otwórz program Windows PowerShell i wykonaj następujące czynności:

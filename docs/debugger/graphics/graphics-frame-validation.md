@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991531"
 ---
 # <a name="graphics-frame-validation"></a>Weryfikacja ramki grafiki
 <!-- VERSIONLESS --> Visual Studio 2017 i lepsze wsparcie **Weryfikacja ramki** narzędzia.  Weryfikacja ramki okna wyświetla błędy i ostrzeżenia skojarzony z listy zdarzeń.  Aby wyświetlić to okno, wybierz **Widok > Weryfikacja ramki** menu.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b28d78a-1974-4d8a-8bb7-781bf630f2f4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13669c7a93141f3b54c15a20a5faee43d5a8747
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a9edc2f6e4c8d37aa6c491fcd10e02f0ea285d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017077"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
 Pobiera typ thunk funkcji.  
@@ -46,6 +46,6 @@ HRESULT get_thunkOrdinal ( 
  "thunk" jest fragmentem kodu, który wykonuje konwersję między pamięci 32-bitowej przestrzeni adresowej (znany także jako płaska przestrzeń adresowa) i 16-bitowej przestrzeni adresowej (znanych jako przestrzeń adresową segmenty).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Thunk_ordinal — wyliczenie](../../debugger/debug-interface-access/thunk-ordinal.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

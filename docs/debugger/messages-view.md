@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db1b4ec3c2ae5fa0b24c3981e2b0296b54aec3cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016372"
 ---
 # <a name="messages-view"></a>Widok komunikatów
 Każde okno ma strumienia skojarzonych komunikatów. Okno widoku komunikatów wyświetla ten strumień komunikatu. Uchwyt okna, kod komunikatu i wiadomości są wyświetlane. Można utworzyć widoku komunikatów dla wątku lub również proces. Dzięki temu można wyświetlić komunikaty wysyłane do wszystkich okien należące do określonego proces lub wątek, który jest szczególnie przydatne w przypadku przechwytywania komunikaty inicjowania okna.  
   
  Typowe okno widoku komunikatów pojawia się poniżej. Pamiętaj, że pierwsza kolumna zawiera uchwyt okna, a druga kolumna zawiera kod komunikatu (wyjaśnione w [kody komunikatów](../debugger/message-codes.md)). Zdekodowany komunikat parametrów i zwracanych wartości są po prawej stronie.  
   
- ![Szpieguj&#43; &#43; widoku komunikatów](../debugger/media/spy--_messagesview.png "Spy ++ _MessagesView")  
+ ![Spy&#43;&#43; Messages View](../debugger/media/spy--_messagesview.png "Spy++_MessagesView")  
 Widok komunikatów programu Spy ++  
   
 ## <a name="procedures"></a>Procedury  

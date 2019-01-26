@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e9b0584e48dee4a074e1826c795c62f9c612e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6c0226ab3535587466629561738efa6d12d4499
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944090"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018956"
 ---
 # <a name="how-to-change-fonts"></a>Instrukcje: Zmienianie czcionek
 Można zmienić czcionkę, styl czcionki i rozmiar czcionki dla Spy ++ systemu windows.  

@@ -1,5 +1,5 @@
 ---
-title: SuspendProfile | Dokumentacja firmy Microsoft
+title: SuspendProfile | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c52c3821bb545efb8fe16365b11c9820db9214
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebee87186754d2a262cd39bd55ccc8e529f718c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952128"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004555"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` Metody zwiększa Licznik wstrzymań/wznowień dla określonego poziomu profilowania.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebd8518a6fd2048de0d5204dcede8943f4da62e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e232ba0fb13cfdb383d7f63a402b361e296505e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922198"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971276"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Ta metoda konwertuje ciąg wyrażenia przeanalizowany wyrażenia.  

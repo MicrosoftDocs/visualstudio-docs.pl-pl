@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315582"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020883"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.  

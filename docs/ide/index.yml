@@ -1,17 +1,17 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: e594da18fde001feec8364d76deaf268c2198ceb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4635e0cbd9cf8d27d56e6c3e02c6c32838ea724b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993198"
 documentType: LandingData
 title: Dokumentacja programu Visual Studio IDE
 metadata:
   title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
   description: Samouczki i artykuły koncepcyjne dotyczące nauki korzystania z programu Visual Studio.
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-ide
   ms.topic: landing-page

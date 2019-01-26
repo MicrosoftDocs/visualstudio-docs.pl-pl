@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96b1d55ee31c08f51ab62e799dac843fff55fb67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997887"
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie niestandardowej strony początkowej
 Można utworzyć niestandardowej strony początkowej, wykonując kroki opisane w tym dokumencie.  

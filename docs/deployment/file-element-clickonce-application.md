@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984720"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;plik&gt; — element (aplikacja ClickOnce)
 Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.  
@@ -94,7 +94,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 |`optional`|Opcjonalna. Określa, czy ten plik musi uruchomić pobieranie, gdy aplikacja jest pierwszym, czy plik powinien znajdować się tylko na serwerze do momentu aplikacja żąda ją na żądanie. Jeśli `false` lub niezdefiniowany, plik jest pobierany podczas najpierw uruchomić lub zainstalować aplikacji. Jeśli `true`, `group` musi być określony dla manifestu aplikacji był prawidłowy. `optional` nie może mieć wartość true, jeśli `writeableType` jest określony z wartością `applicationData`.|  
 |`writeableType`|Opcjonalna. Określa, że ten plik jest plikiem danych. Obecnie jedyna prawidłowa wartość to `applicationData`.|  
 
-## <a name="typelib"></a>biblioteki typów  
+## <a name="typelib"></a>typelib  
  `typelib` Element jest opcjonalny element podrzędny elementu file. Element zawiera opis biblioteki typów, który należy do składnika COM. Element ma następujące atrybuty.  
 
 |Atrybut|Opis|  
@@ -179,7 +179,7 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `http://www.w3.org/2000/09/xmldsig#sha1`. |
 
-## <a name="dsigdigestvalue"></a>DSIG:DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  `dsig:DigestValue` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestValue` Element nie ma żadnych atrybutów. Jego wartość tekstowa jest obliczana wartość skrótu dla określonego pliku.  
 
 ## <a name="remarks"></a>Uwagi  

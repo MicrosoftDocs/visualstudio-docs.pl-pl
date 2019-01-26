@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1348e83a3b07240fcb1c5e6ae4819ea85e4c054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ac5c3aceb9519d66c185f78bdde37861467ecdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983877"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 Aparat debugowania (DE) wysyła ten interfejs do Menedżer debugowania sesji (SDM), gdy wyjątek jest generowany w programie obecnie wykonywane.  
@@ -45,7 +45,7 @@ IDebugExceptionEvent2 : IUnknown
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Określa, czy wyjątek powinien zostać przekazany do aktualnie debugowanego po wznowieniu działania wykonywania, czy wyjątek powinien zostać odrzucony.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

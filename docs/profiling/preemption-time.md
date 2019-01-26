@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d0981a5803f4b04f564fcea934f040d34db7b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0e3c3488c54477a9517263bf363cede3198fc3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007636"
 ---
 # <a name="preemption-time"></a>Czas wywłaszczania
 Te segmenty na osi czasu są skojarzone z czasu blokowania, które należą do kategorii wywłaszczania. Ta kategoria wynika, że wątek jest przełączenie ze względu na jeden z następujących powodów:  

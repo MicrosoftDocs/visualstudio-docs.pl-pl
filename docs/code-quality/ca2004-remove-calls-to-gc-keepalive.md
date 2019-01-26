@@ -1,5 +1,5 @@
 ---
-title: 'CA2004: Usuń wywołania GC. Utrzymywania aktywności'
+title: 'CA2004: Usuń wywołania funkcji GC.KeepAlive'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e025a8af3f7f5c1810abe2b9e182f607a29760e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e2787b3d0876034113e777d7f8932d63e5c1a27
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001462"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Usuń wywołania GC. Utrzymywania aktywności
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Usuń wywołania funkcji GC.KeepAlive
 
 |||
 |-|-|

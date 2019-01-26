@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83b983ee2644010b19370e44be616df7171d7d91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937252"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów
 Jeśli jesteś autorem kilku [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu może znasz muszą używać tych samych zadań i obiekty docelowe w plikach inny projekt. Zamiast w każdym pliku projektu w tym pełny opis tych zadań lub miejsc docelowych, można zapisać elementu docelowego w oddzielny plik projektu i następnie zaimportować ten projekt do innego projektu, który musi używać obiektu docelowego.  

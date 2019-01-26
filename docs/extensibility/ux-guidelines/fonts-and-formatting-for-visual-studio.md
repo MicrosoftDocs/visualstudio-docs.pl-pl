@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7cecbe627d432e24f12b334747d4e4ec55c1c73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020168"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -121,7 +121,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="310-environment-font--light"></a>Czcionka środowiska 310% + światła  
- **Wygląda następująco:** 28 (czas pacyficzny) Segoe UI Light   
+ **Wygląda następująco:** 28 pt Segoe UI Light   
  **Na użytek:** tytułów okna dialogowego podpisu dużych, głównym, nagłówkiem w raportach  
   
  **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
@@ -161,7 +161,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="155-environment-font"></a>Czcionka środowiska 155%  
- **Wygląda następująco:** 14 punktów Segoe UI    
+ **Wygląda następująco:** 14 pt Segoe UI    
  **Na użytek:** nagłówki sekcji w dokumencie również interfejs użytkownika lub raportów  
   
  **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
@@ -181,7 +181,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="133-environment-font"></a>Czcionka środowiska 133%  
- **Wygląda następująco:** 12 pkt. Segoe UI    
+ **Wygląda następująco:** 12 pt Segoe UI    
  **Na użytek:** mniejszych podpozycji w dokumencie i okna dialogowe sygnatury dobrze interfejsu użytkownika  
   
  **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
@@ -201,7 +201,7 @@ label.SetResourceReference(Label.StyleProperty,  
 ```
   
 #### <a name="122-environment-font"></a>Czcionka środowiska 122%  
- **Wygląda następująco:** 11 (czas pacyficzny) Segoe UI    
+ **Wygląda następująco:** 11 pt Segoe UI    
  **Na użytek:** sekcji nagłówków w oknach dialogowych podpisu, najważniejsze węzły w widoku drzewa, tabulator pionowy nawigacji  
   
  **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:  
@@ -415,7 +415,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 28 (czas pacyficzny) Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
+|**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 28 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|  
   
 #### <a name="200-environment-font--semilight"></a>Czcionka środowiska 200% + Semilight  
   
@@ -427,19 +427,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> -Section nagłówków w dokumencie dobrze interfejsu użytkownika<br />— Raporty<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 14 punktów Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 155% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**Sposób użycia:**<br /><br /> -Section nagłówków w dokumencie dobrze interfejsu użytkownika<br />— Raporty<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 14 pt Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 155% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>Czcionka środowiska 133%  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> — Mniejsze podpozycji w oknach dialogowych podpisu<br />— Mniejsze podpozycji w dokumencie dobrze interfejsu użytkownika<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 12 pkt. Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 133% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**Sposób użycia:**<br /><br /> — Mniejsze podpozycji w oknach dialogowych podpisu<br />— Mniejsze podpozycji w dokumencie dobrze interfejsu użytkownika<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 12 pt Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 133% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>Czcionka środowiska 122%  
   
 |||  
 |-|-|  
-|**Sposób użycia:**<br /><br /> -Section nagłówków w oknach dialogowych podpisu<br />-Najważniejsze węzły w widoku drzewa<br />-Pionowej karcie nawigacji<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 11 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 122% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**Sposób użycia:**<br /><br /> -Section nagłówków w oknach dialogowych podpisu<br />-Najważniejsze węzły w widoku drzewa<br />-Pionowej karcie nawigacji<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:**<br /><br /> -Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w formantów standardowych programu Visual Studio<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 11 pt Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład 122% środowiska czcionki nagłówka](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>Czcionka środowiska + pogrubienia  
   
@@ -451,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Sposób użycia:** Inny tekst<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:** Krojów z kursywą lub pogrubienie, kursywa|**Wygląda następująco:** 9 (czas pacyficzny) Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**Sposób użycia:** Inny tekst<br /><br /> **Należy wykonać:** Stosuj wielkość liter<br /><br /> **Nie:** Krojów z kursywą lub pogrubienie, kursywa|**Wygląda następująco:** 9 pt Segoe UI<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>Wypełnienie i odstępy  
  Nagłówki wymagają ilość wolnego miejsca wokół je, aby dać im odpowiednią wyróżnienia. Miejsce to różni się zależnie od rozmiaru punktów i co jeszcze jest bliski nagłówka, takich jak linii poziomej lub wiersza tekstu w czcionce środowiska.  

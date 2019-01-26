@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992389"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 
@@ -31,11 +31,11 @@ Program Visual Studio ma kilka trybów REPL języka Python do wyboru:
 | Standardowa | Domyślne REPL, rozmowy bezpośrednio języka Python. | Standard edycji (wielowierszowe itp.). | Tak, za pośrednictwem `$attach` | Nie |
 | Debugowanie | Domyślne REPL, rozmowy do debugowanego procesu języka Python | Edycja standardowa | Debugowania wyłącznie kodu | Nie |
 | IPython | Rozmawiają zaplecza IPython REPL | Program IPython poleceń, udogodnienia Pylab | Nie | Tak, bezpośrednio w REPL |
-| Program IPython bez Pylab | Rozmawiają zaplecza IPython REPL | Standardowa IPython | Nie | Tak, strona potwierdzenia | 
+| Program IPython bez Pylab | Rozmawiają zaplecza IPython REPL | Standardowa IPython | Nie | Tak, strona potwierdzenia |
 
 W tym artykule opisano **standardowa** i **debugowania** REPL tryby. Szczegółowe informacje na temat trybów IPython, [Użyj środowiska IPython REPL](interactive-repl-ipython.md).
 
-Szczegółowy przewodnik dotyczący wraz z przykładami, w tym interakcji z edytorem takich jak **Ctrl**+**Enter**, zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Szczegółowy przewodnik dotyczący wraz z przykładami, w tym interakcji z edytorem takich jak **Ctrl**+**Enter**, zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 |   |   |
 |---|---|

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973411"
 ---
 # <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
 Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,8 +40,8 @@ HKEY_LOCAL_MACHINE\
 |-----------------|-----------| - | - |
 | Nazwa | REG_SZ | "Krótką nazwę miejsce" | Krótka nazwa opisująca okna narzędzia. Używany tylko w przypadku odwołania w rejestrze. |
 | float | REG_SZ | "X1, Y1, X2, Y2" | Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu. |
-| Styl | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Z kartami"<br /><br /> "AlwaysFloat" | Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej. |
-| Okno | REG_SZ | *\<IDENTYFIKATOR GUID &GT;* | Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Styl | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Tabbed"<br /><br /> "AlwaysFloat" | Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej. |
+| Okno | REG_SZ | *\<GUID>* | Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
 | Orientacja | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej" | Zobacz sekcję uwagi poniżej. |
 | DontForceCreate | REG_DWORD | 0 lub 1 | Gdy ten wpis jest obecny, a jego wartość nie wynosi zero, okno jest załadowany, ale nie natychmiast wyświetlone. |
 
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
 |(Domyślnie)|REG_SZ|Brak|Pozostaw puste.|  
-|*\<IDENTYFIKATOR GUID &GT;*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
+|*\<GUID>*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
 
 ### <a name="example"></a>Przykład  
 

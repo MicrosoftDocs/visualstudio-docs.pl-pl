@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8419ea4f653d870802fd104da2824952b422ab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2509b7e3c373cecfe5cd1554805554afbedd2b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999317"
 ---
 # <a name="graphics-diagnostics-examples"></a>Przykłady diagnostyki grafiki
 Te przykłady przedstawiają sposób debugowania problemów z renderowaniem w aplikacjach opartych na technologii DirectX przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki.  

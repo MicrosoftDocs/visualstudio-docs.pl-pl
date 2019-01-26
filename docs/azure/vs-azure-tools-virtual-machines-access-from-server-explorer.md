@@ -2,7 +2,7 @@
 title: Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera | Dokumentacja firmy Microsoft
 description: Pobierz omówienie sposobu wyświetlania tworzenie i zarządzanie nimi maszyn wirtualnych (VM) w Eksploratorze serwera w programie Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 317103b1367f5181f8a806925df67b88215ce6a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 996950b2ed7a6281f489a6842b2472fee1039f64
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003011"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 
@@ -34,7 +34,7 @@ W przypadku maszyn wirtualnych hostowanych na platformie Azure można uzyskiwać
    | Stan |Wartości obejmują uruchamianie, uruchomiono, zatrzymywania, zatrzymane i pobierania stanu. Jeśli pojawi się stan pobierania, bieżący stan jest nieznany. Wartości dla tej właściwości różnią się od wartości, które są używane na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | Identyfikator subskrypcji |Identyfikator subskrypcji dla Twojego konta platformy Azure. Te informacje można wyświetlić na [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) , wyświetlając właściwości dla subskrypcji. |
 2. Wybierz węzeł punktu końcowego, a następnie wyświetlić **właściwości** okna.
-3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, należy użyć [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, należy użyć [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Właściwość | Opis |
    | --- | --- |

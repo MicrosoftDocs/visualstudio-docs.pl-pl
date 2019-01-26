@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999473"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Szablon usługi Visual Studio manifest odwołanie do schematu
 Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, które są generowane dla szablonów projektu lub elementu programu Visual Studio. Schemat opisuje także lokalizacji i inne istotne informacje o szablonie.  
@@ -34,9 +34,9 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
--   **VSTemplateContainer** opcjonalne.  
+-   **VSTemplateContainer** Optional.  
   
--   **VSTemplateDir** opcjonalne.  
+-   **VSTemplateDir** Optional.  
   
 ### <a name="parent-element"></a>Element nadrzędny  
  Brak.  
@@ -51,7 +51,7 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
   
 -   **RelativePathOnDisk**:  Ścieżka względna pliku szablonu na dysku. Ta lokalizacja definiuje również umieszczania szablonu w drzewie szablonu wyświetlane w **nowy projekt** lub **nowy element** okna dialogowego. Dla wdrożonych jako katalog i poszczególnych plików szablonów ta ścieżka odwołuje się do katalogu zawierającego pliki szablonów. Dla szablonów wdrożony jako *zip* pliku, ścieżka ta powinna być ścieżką do *zip* pliku.  
   
--   ** VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, który opisuje nagłówka.  
+-   **VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, który opisuje nagłówka.  
   
 ### <a name="parent-element"></a>Element nadrzędny  
  **VSTemplateManifest**  
@@ -84,7 +84,7 @@ Ten schemat opisuje format manifestu szablonu Visual Studio (*vstman*) plików, 
   
 -   **Pakiet**: Wartość ciągu, który określa pakiet. Opcjonalna.  
   
--   **IDENTYFIKATOR**: Wartość ciągu, który określa identyfikator. Opcjonalna.  
+-   **ID**: Wartość ciągu, który określa identyfikator. Opcjonalna.  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

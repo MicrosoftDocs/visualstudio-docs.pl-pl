@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c4c03eba5d0b154ce219daeea3761a001a2198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a476027333b648d175dbe54c487dd2081aecae7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949579"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978103"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo — zadanie
 Generuje zaufanie aplikacji z manifestu podstawowej oraz `TargetZone` i `ExcludedPermissions` parametrów.  

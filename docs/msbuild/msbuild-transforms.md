@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44bafe690d34f24ed4dedb3279628414a1143d3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020259"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia w programie MSBuild
 Transformacja jest konwersją jeden do jednego jeden element listy do innej. Oprócz włączenia projektu można przekonwertować listy elementów, przekształcenia umożliwia docelowego w celu identyfikowania bezpośrednie mapowanie między ich dane wejściowe i wyjściowe. W tym temacie opisano przekształceń i w jaki sposób [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] są one używane do kompilowania projektów wydajniej.  

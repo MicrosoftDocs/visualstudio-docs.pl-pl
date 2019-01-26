@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012277"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -42,7 +42,7 @@ Zmiany formatu VSIX obejmują:
 
 Projektanta, narzędzia do tworzenia nowej format manifestu VSIX v3 jest teraz dostępna w programie Visual Studio 2017. Zobacz dokument towarzyszący [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) szczegółowe informacje na temat przy użyciu narzędzia projektanta lub dokonywania ręczne aktualizacje do projektu i manifest do tworzenia rozszerzenia v3 VSIX.
 
-## <a name="change-visual-studio-user-data-path"></a>Zmiana: Ścieżka danych użytkownika w usłudze Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Zmiana: Visual Studio user data path
 
 Wcześniej tylko jedna instalacja każdego wydania programu Visual Studio może znajdować się na każdym komputerze. Aby obsługiwać instalacje side-by-side programu Visual Studio 2017, wiele ścieżek danych użytkownika dla programu Visual Studio może istnieć na komputerze użytkownika.
 
@@ -89,12 +89,12 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 * W rezultacie, TLB większość / OLB / plików biblioteki DLL w % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv są już zainstalowane domyślnie w programie Visual Studio. Te pliki są teraz instalowane w ramach [INSTALLDIR] za pomocą odpowiedniego manifesty COM bez rejestrowania używane w procesie hosta programu Visual Studio.
 * W rezultacie kod zewnętrzny, która zależy od globalnej rejestracji COM dla interfejsów COM usługi Visual Studio nie jest już znajduje się tyto registrace. Kodzie działającym wewnątrz procesu programu Visual Studio nie będzie widoczna różnica.
 
-### <a name="visual-studio-registry"></a>Visual Studio rejestru
+### <a name="visual-studio-registry"></a>Visual Studio registry
 
 * Wcześniej zainstalowany program Visual Studio wielu kluczy rejestru w systemie **HKEY_LOCAL_MACHINE** i **HKEY_CURRENT_USER** gałęzie w kluczu dotyczące programu Visual Studio:
-  * **HKLM\Software\Microsoft\VisualStudio\{wersji}**: Klucze rejestru, tworzone przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
-  * **HKCU\Software\Microsoft\VisualStudio\{wersji}**: Klucze rejestru, utworzone przez program Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
-  * **HKCU\Software\Microsoft\VisualStudio\{wersji} _Config**: Kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Klucze rejestru, tworzone przez instalatory MSI i rozszerzeń dla poszczególnych komputerów.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Klucze rejestru, utworzone przez program Visual Studio, aby przechowywać ustawienia specyficzne dla użytkownika.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Kopię programu Visual Studio HKLM klucz powyżej, a także klucze rejestru są scalane z *.pkgdef* plików według rozszerzenia.
 * Aby zmniejszyć wpływ na rejestrze, używa teraz program Visual Studio [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkcję, aby przechowywać klucze rejestru w prywatnej pliku binarnego w obszarze *[VSAPPDATA]\privateregistry.bin*. Bardzo niewielkiej liczby Visual Studio kluczy pozostają w rejestrze systemowym.
 
 * Nie ma wpływu na istniejącym kodzie działającym wewnątrz procesu programu Visual Studio. Program Visual Studio będzie przekierowywać wszystkie operacje rejestru w kluczu HKCU Visual Studio specyficzne dla do prywatnego rejestru. Odczytywanie i zapisywanie do innych lokalizacji rejestru będzie nadal korzystać z rejestru systemowego.

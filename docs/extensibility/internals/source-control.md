@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f1245818ef964a49aafdec3e25b67fddbfac40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdf98d64b5896d0827d39983a812b80500ff9515
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929244"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008000"
 ---
 # <a name="source-control"></a>Kontrola źródła
 W tej sekcji omówiono opcje implementowania kontroli źródła jako zintegrowaną funkcją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], za pomocą wtyczki kontroli źródła lub pakietu VSPackage kontroli źródła.  

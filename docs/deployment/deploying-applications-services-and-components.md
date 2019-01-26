@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0db2a9dcd19b2100239a99ec8fc08850432aa80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974935"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -83,7 +83,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
 W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia w Microsoft Store.
 
-- **PLATFORMY UNIWERSALNEJ SYSTEMU WINDOWS**: Można Tworzenie pakietu dla aplikacji i wdróż je przy użyciu elementów menu. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji platformy uniwersalnej systemu Windows przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP**: Można Tworzenie pakietu dla aplikacji i wdróż je przy użyciu elementów menu. Aby uzyskać więcej informacji, zobacz [pakietu aplikacji platformy uniwersalnej systemu Windows przy użyciu programu Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Tworzenie pakietu aplikacji](../deployment/media/feature-tour-create-app-package.jpg)
 

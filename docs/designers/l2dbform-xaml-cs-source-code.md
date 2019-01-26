@@ -6,15 +6,15 @@ ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99effa4820b33e860d44889bc67ba48ee9b590a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 716e3d1b75134f881851b8b7cae8b872290a9128
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984551"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.xaml.cs
 
@@ -139,5 +139,5 @@ Dla skojarzonego źródła XAML te programy obsługi, zobacz [kod źródłowy L2
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Elementu linqtoxmldatabinding — przykład](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Przewodnik: LinqToXmlDataBinding example](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Kod źródłowy L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)

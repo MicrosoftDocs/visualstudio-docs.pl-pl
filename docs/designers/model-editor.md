@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966036"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
@@ -32,7 +32,7 @@ Możesz użyć **edytora modelu** na potrzeby tworzenia podstawowych modeli 3D o
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj, Utwórz)|
 |-----------------| - | - |
 |Plik wymiany AutoDesk FBX|*.fbx*|Wyświetl, edytuj, utwórz|
-|Plik w formacie Collada DAE|*DAE*|Wyświetl, edytuj (modyfikacje plików Collada DAE są zapisywane przy użyciu formatu FBX).|
+|Plik w formacie Collada DAE|*.dae*|Wyświetl, edytuj (modyfikacje plików Collada DAE są zapisywane przy użyciu formatu FBX).|
 |OBJ|*.obj*|Wyświetl, edytuj (modyfikacje plików OBJ są zapisywane przy użyciu formatu FBX).|
 
 ## <a name="get-started"></a>Wprowadzenie
@@ -93,7 +93,7 @@ W tej tabeli opisano elementy na **tryb edytora modelu** narzędzi, które są w
 |**Przesuwanie**|Umożliwia ruch sceny 3D w względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W **wybierz** trybu, można nacisnąć i przytrzymać **Ctrl** aktywować **Pan** tymczasowo w trybie.|
 |**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W **powiększenia** tryb, wybierz punkt w scenie a następnie przesuń w prawo lub w dół, aby powiększyć lub poziomie w lewo lub do powiększania.<br /><br /> W **wybierz** trybie można powiększyć lub przy użyciu kółka myszy podczas trzymania wciśniętego **Ctrl**.|
 |**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:**  W tym trybie nie ma efektu, gdy **prostopadły** jest włączone rzutowanie.|
-|**Lokalne świata**|Po włączeniu tego elementu przekształcenia wybranego obiektu występują w przestrzeni kuli ziemskiej. W przeciwnym razie przekształcenia na zaznaczonym obiekcie występują w przestrzeni lokalnej.|
+|**World Local**|Po włączeniu tego elementu przekształcenia wybranego obiektu występują w przestrzeni kuli ziemskiej. W przeciwnym razie przekształcenia na zaznaczonym obiekcie występują w przestrzeni lokalnej.|
 |**Tryb obrotu**|Po włączeniu tego elementu przekształcenia wpływają na położenie i orientację *punkt obrotu* wybranego obiektu (punkt obrotu definiuje środek operacji przesunięcia, skalowania i obrót). W przeciwnym razie przekształcenia wpływają na położenie i orientację geometrii obiektu względem punktu obrotu.|
 |**Zablokuj oś X**|Ogranicza możliwość manipulacji obiektem tylko do osi x. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Zablokuj oś Y**|Ogranicza możliwość manipulacji obiektem tylko do osi y. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
@@ -124,7 +124,7 @@ W następnej tabeli opisano elementy na **edytora modelu** narzędzi, które są
 |**Wybierz krawędź**|Zestawy **trybu zaznaczania** aby wybierał krawędź (linię między dwoma wierzchołkami) obiektu.|
 |**Wybierz pierwszy plan**|Zestawy **trybu zaznaczania** na powierzchnię obiektu.|
 |**Wybierz obiekt**|Zestawy **trybu zaznaczania** aby wybierał cały obiekt.|
-|**Wyciągnięcie**|Tworzy dodatkową powierzchnię i łączy ją z wybraną powierzchnią.|
+|**Extrude**|Tworzy dodatkową powierzchnię i łączy ją z wybraną powierzchnią.|
 |**Dzielenie**|Dzieli każdą wybraną powierzchnię na wiele powierzchni. Aby utworzyć nowe powierzchnie, dodawane są nowe wierzchołki — jeden w środku oryginalnej powierzchni i jeden w połowie każdej krawędzi — które następnie są łączone z oryginalnymi wierzchołkami. Liczba dodanych powierzchni jest równa liczbie krawędzi oryginalnej powierzchni.|
 
 ### <a name="control-the-view"></a>Formant widoku
@@ -294,43 +294,43 @@ Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, zaznacz 
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz się do **wybierz** tryb|**CTRL**+**G**, **Ctrl**+**funkcji pytania i odpowiedzi**<br /><br /> **S**|
-|Przełącz się do **powiększenia** tryb|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Przełącz się do **Pan** tryb|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Zaznacz wszystkie|**CTRL**+**A**|
+|Przełącz się do **wybierz** tryb|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Przełącz się do **powiększenia** tryb|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Przełącz się do **Pan** tryb|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Znak ucieczki** (**Esc**)|
-|Powiększanie|**Obrót kółkiem myszy do przodu**<br /><br /> **CTRL**+**kółkiem myszy do przodu**<br /><br /> **SHIFT**+**kółkiem myszy do przodu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znak plus (**+**)|
-|Pomniejszanie|**Obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> **SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**+**PageDown**<br /><br /> Znak minus (**-**)|
+|Powiększanie|**Obrót kółkiem myszy do przodu**<br /><br /> **CTRL**+**kółkiem myszy do przodu**<br /><br /> **SHIFT**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus (**+**)|
+|Pomniejszanie|**Obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> **SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Ctrl**+**PageDown**<br /><br /> Znak minus (**-**)|
 |Przesunięcie kamery do góry|**PageDown**|
 |Przesunięcie kamery w dół|**PageUp**|
-|Przesunięcie kamery w lewo|**Obrót kółkiem myszy w lewo**<br /><br /> **CTRL**+**PageDown**|
-|Przesunięcie kamery w prawo|**Obrót kółkiem myszy do prawej**<br /><br /> **CTRL**+**PageDown**|
-|Widok góry modelu|**CTRL**+**L**, **Ctrl**+**T**<br /><br /> **T**|
+|Przesunięcie kamery w lewo|**Obrót kółkiem myszy w lewo**<br /><br /> **Ctrl**+**PageDown**|
+|Przesunięcie kamery w prawo|**Obrót kółkiem myszy do prawej**<br /><br /> **Ctrl**+**PageDown**|
+|Widok góry modelu|**Ctrl**+**L**, **Ctrl**+**T**<br /><br /> **T**|
 |Widok dołu modelu|**CTRL**+**L**, **Ctrl**+**U**|
-|Widok lewej strony modelu|**CTRL**+**L**, **Ctrl**+**L**|
-|Widok prawej strony modelu|**CTRL**+**L**, **Ctrl**+**R**|
-|Widok przodu modelu|**CTRL**+**L**, **Ctrl**+**F**|
-|Widok tyłu modelu|**CTRL**+**L**, **Ctrl**+**B**|
+|Widok lewej strony modelu|**Ctrl**+**L**, **Ctrl**+**L**|
+|Widok prawej strony modelu|**Ctrl**+**L**, **Ctrl**+**R**|
+|Widok przodu modelu|**Ctrl**+**L**, **Ctrl**+**F**|
+|Widok tyłu modelu|**Ctrl**+**L**, **Ctrl**+**B**|
 |Umieść obiekt w ramce w oknie|**F**|
-|Przełącz tryb szkieletowy|**CTRL**+**L**, **Ctrl**+**W**|
-|Przełącz przyciąganie do siatki|**CTRL**+**G**, **Ctrl**+**N**|
-|Przełącz tryb obracania|**CTRL**+**G**, **Ctrl**+**V**|
-|Przełącz ograniczenie osi x|**CTRL**+**L**, **Ctrl**+**X**|
-|Przełącz ograniczenie osi y|**CTRL**+**L**, **Ctrl**+**Y**|
-|Przełącz ograniczenie osi z|**CTRL**+**L**, **Ctrl**+**Z**|
-|Przełącz do trybu przesunięcia|**CTRL**+**G**, **Ctrl**+**W**<br /><br /> **W**|
-|Przełącz do trybu skalowania|**CTRL**+**G**, **Ctrl**+**E**<br /><br /> **E**|
-|Przełącz do trybu obrotu|**CTRL**+**G**, **Ctrl**+**R**<br /><br /> **R**|
-|Przełącz do trybu zaznaczania punktu|**CTRL**+**L**, **Ctrl**+**1**|
-|Przełącz do trybu zaznaczania krawędzi|**CTRL**+**L**, **Ctrl**+**2**|
-|Przełącz do trybu zaznaczania powierzchni|**CTRL**+**L**, **Ctrl**+**3**|
-|Przełącz do trybu zaznaczania obiektu|**CTRL**+**L**, **Ctrl**+**4**|
-|Przełącz do trybu orbity (kamery)|**CTRL**+**G**, **Ctrl**+**O**|
+|Przełącz tryb szkieletowy|**Ctrl**+**L**, **Ctrl**+**W**|
+|Przełącz przyciąganie do siatki|**Ctrl**+**G**, **Ctrl**+**N**|
+|Przełącz tryb obracania|**Ctrl**+**G**, **Ctrl**+**V**|
+|Przełącz ograniczenie osi x|**Ctrl**+**L**, **Ctrl**+**X**|
+|Przełącz ograniczenie osi y|**Ctrl**+**L**, **Ctrl**+**Y**|
+|Przełącz ograniczenie osi z|**Ctrl**+**L**, **Ctrl**+**Z**|
+|Przełącz do trybu przesunięcia|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
+|Przełącz do trybu skalowania|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
+|Przełącz do trybu obrotu|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
+|Przełącz do trybu zaznaczania punktu|**Ctrl**+**L**, **Ctrl**+**1**|
+|Przełącz do trybu zaznaczania krawędzi|**Ctrl**+**L**, **Ctrl**+**2**|
+|Przełącz do trybu zaznaczania powierzchni|**Ctrl**+**L**, **Ctrl**+**3**|
+|Przełącz do trybu zaznaczania obiektu|**Ctrl**+**L**, **Ctrl**+**4**|
+|Przełącz do trybu orbity (kamery)|**Ctrl**+**G**, **Ctrl**+**O**|
 |Wybierz następny obiekt w scenie|**Karta**|
 |Wybierz poprzedni obiekt w scenie|**SHIFT**+**kartę**|
 |Manipuluj zaznaczonym obiektem za pomocą bieżącego narzędzia.|**Strzałkę** kluczy|
-|Dezaktywuj bieżący manipulator|**PYTANIA I ODPOWIEDZI**|
+|Dezaktywuj bieżący manipulator|**Q**|
 |Obracanie kamery|**ALT**+**przeciągania** za pomocą lewego przycisku myszy|
 
 ## <a name="related-topics"></a>Tematy pokrewne

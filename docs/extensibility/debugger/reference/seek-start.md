@@ -1,5 +1,5 @@
 ---
-title: SEEK_START | Dokumentacja firmy Microsoft
+title: SEEK_START | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa97560982b49f4544589b18b72892c683d24e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 203371cd1ee2d1a9efe4c50f8d5a73f2fa7d7980
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961883"
 ---
 # <a name="seekstart"></a>SEEK_START
 Określa położenie, z którym ma zostać rozpoczęte wyszukiwanie w strumieniu dezasemblacji.  
@@ -65,7 +65,7 @@ public enum enum_SEEK_START { 
  Przekazywany jako argument do [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

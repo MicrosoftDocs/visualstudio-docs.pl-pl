@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df3bcaadcd81ece4718b0f5a49fca69fcd29382
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db439ebf40d09b822d998ba7b9baf28c7c56e199
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003035"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Sprawia, że węzeł program dostępne do użytku przez aparaty debugowania (DEs) i sesja debugowania manager (SDM).  

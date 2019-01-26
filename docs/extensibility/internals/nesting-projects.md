@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38b0544d58362a37113b0e193324a2ef5b8cdb49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ee02bbe830c8ef3eab5766cd97a4c04837dc585
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860991"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014020"
 ---
 # <a name="nesting-projects"></a>Zagnieżdżanie projektów
 Deweloperom aplikacji dla przedsiębiorstw, którzy korzystają z pakietu programu VS wygodnie można grupować podobne typy projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu *projektu zagnieżdżanie*. Na przykład projekt szablonu organizacji używa zagnieżdżonych projektów i projektów grupy na kategorie. Projekty fasady biznesowe, projekty interfejsu użytkownika sieci Web i tak dalej są zgrupowane razem w jednej kategorii.  
@@ -30,7 +30,7 @@ Deweloperom aplikacji dla przedsiębiorstw, którzy korzystają z pakietu progra
  Przykładem zagnieżdżonych projektów można znaleźć w przykładowym projekcie Example.Nested C#.  
   
 ## <a name="nested-projects-example"></a>Przykład zagnieżdżonych projektów  
- ![Zagnieżdżone projektów rozwiązania](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
+ ![Nested Projects Solution](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Przykład zagnieżdżonych projektów  
   
 ## <a name="see-also"></a>Zobacz też  

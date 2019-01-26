@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ba5c26ece60c6689509054b733109ee11799ccd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828140"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010080"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Tworzenie i konfigurowanie składowych typu w Projektancie klas
 
@@ -196,7 +196,7 @@ Wiersze parametrów zawierają następujące elementy:
 
      **Typ parametru** komórki korzysta z technologii IntelliSense, która pozwala na wybranie z listy wszystkich typów dostępnych w bieżącym projekcie lub w projektach odwołania.
 
-- **Modyfikator**
+- **Modifier**
 
      **Modyfikator** komórki w wierszu parametru akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametru, użyj pola listy rozwijanej, aby dokonać wyboru spośród **Brak**, **ref**, **się**, lub **params** w języku C# i **ByVal**, **ByRef**, lub **ParamArray** w VB.
 

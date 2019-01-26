@@ -5,13 +5,13 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-manager: douge
-ms.openlocfilehash: 5ad55066eb3109d1a553d2496b522d0f18e4ba29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 028070971347f35caa903e9124cc7e24f4259bc2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986413"
 ---
 # <a name="in-place-activation"></a>Aktywacja w miejscu
 Jeśli widok Edytor obsługuje ActiveX lub inne aktywne kontrolki, należy zaimplementować widoku edytora jako formant ActiveX, lub jako obiekt danych aktywnego dokumentu przy użyciu modelu aktywacji w miejscu.  

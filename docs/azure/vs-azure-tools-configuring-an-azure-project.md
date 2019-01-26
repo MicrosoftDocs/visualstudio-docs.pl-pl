@@ -2,7 +2,7 @@
 title: Konfigurowanie projektu usługi w chmurze platformy Azure
 description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure w programie Visual Studio, w zależności od wymagań dla tego projektu.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
@@ -10,25 +10,25 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 0b6eff5920d94d34087cbdd73d3a2345f2da71c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a083559831f9cb79d3f7474e191afcddb3aaf688
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994035"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurowanie projektu usługi w chmurze platformy Azure przy użyciu programu Visual Studio
 Projekt usługi w chmurze platformy Azure, można skonfigurować w zależności od wymagań dla tego projektu. Można ustawić właściwości dla projektów w ramach następujących kategorii:
 
 - **Opublikuj usługę w chmurze na platformie Azure** — możesz ustawić właściwość, aby upewnić się, że istniejącej usługi w chmurze wdrożona na platformie Azure nie zostanie przypadkowo usunięta.
 - **Uruchamianie i debugowanie usługi w chmurze na komputerze lokalnym** — można wybrać konfigurację usługi, i wskazuje, czy można uruchomić emulatora usługi Azure storage.
-- **Sprawdzanie poprawności pakietu usługi w chmurze, po utworzeniu** — możesz zdecydować się na traktuje wszystkie ostrzeżenia jako błędy, tak aby zagwarantować, że pakiet usługi w chmurze wdraża się bez żadnych problemów. 
+- **Sprawdzanie poprawności pakietu usługi w chmurze, po utworzeniu** — możesz zdecydować się na traktuje wszystkie ostrzeżenia jako błędy, tak aby zagwarantować, że pakiet usługi w chmurze wdraża się bez żadnych problemów.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Kroki, aby skonfigurować projekt usługi w chmurze platformy Azure
 1. Otwórz lub Utwórz projekt usługi w chmurze w programie Visual Studio
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **właściwości**.
-   
+
 1. Na stronie właściwości projektu, wybierz **rozwoju** kartę.
 
     ![Menu Właściwości projektu](./media/vs-azure-tools-configuring-an-azure-project/solution-explorer-project-properties-menu.png)

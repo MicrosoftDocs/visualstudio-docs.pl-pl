@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81bc9c82c2e6056284e63a7391c202c760022b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7649d644926edaf77e4c8c49ce159b4519218aeb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972628"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji śródwierszowych, które odpowiadają określonej nazwie.  
@@ -45,7 +45,7 @@ HRESULT findInlineesByName ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

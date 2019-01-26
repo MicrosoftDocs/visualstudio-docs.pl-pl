@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a3fc46a60ee004ae102cade120f1ab54149416
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52dd90f12a367b0f555b16cdee74ee0ff62342dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013950"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 
@@ -35,7 +35,7 @@ Mimo że każde wystąpienie programu do cieniowania pikseli odbiera tylko jeden
 |**Stałe**|Stała wartość skalarną.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Wartość skalarna.|**Output**<br /> Wartość skalarna.|
 |**Stała 2W**|Stała dwiema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|
 |**Stała 3W**|Stała trzema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Wartość wektorowa.|**Output**<br /> Wartość wektorowa.|
-|**Stała 4W**|Stała czterema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektorowa.|
+|**4D Constant**|Stała czterema składowymi.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Wartość koloru.|**Output**<br /> Wartość wektorowa.|
 |**Pozycja znormalizowana**|Pozycja bieżącego piksela wyrażona w urządzenia znormalizowanych współrzędnych.<br /><br /> Współrzędne x i współrzędne y mają wartości z zakresu [-1, 1], Współrzędna z ma wartość z zakresu [0, 1], i w składnik zawiera wartość głębię punktów w przestrzeni widoku; w nie jest znormalizowana.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Pozycja bieżącego piksela.|Brak|
 |**Kolor punktu**|Kolor rozpraszania bieżącego piksela jest kombinacją materiału rozpraszania koloru i wierzchołka atrybutów koloru.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Kolor rozpraszania bieżącego piksela.|Brak|
 |**Głębokość punktu**|Głębokość bieżącego piksela w przestrzeni widoku.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Głębokość bieżącego piksela.|Brak|

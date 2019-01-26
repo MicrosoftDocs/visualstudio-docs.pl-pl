@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 202d4f8f62aeb19836c30e76751d8a2c5b6f3033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d2d637dfb74a6d3a0e4c8b4ae346aa8236f28a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018894"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Błąd: Usługa zdalnego debugera Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem
 Ten błąd oznacza, że usługa zdalnego debugera Visual Studio jest uruchomiona w ramach konta użytkownika, które nie mogą uwierzytelnić się podczas próby połączenia z komputerem, na którym wykonujesz debugowanie z.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fa6561dbbe2a91af5d59ecd46985683f9879695
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b64cffb3c903654bb9d393fcf2b6607d3c23641
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964486"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.  

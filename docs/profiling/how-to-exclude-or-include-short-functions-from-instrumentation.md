@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adeff3a6f068c5432f1640cd96752a84228b8ad9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46edc453e16fec43028876d7d590c88651229994
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965526"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Instrukcje: Wykluczanie lub uwzględnianie krótkich funkcji z instrumentacji
 Domyślnie, narzędzia profilowania wykluczyć *małe funkcje* z Instrumentacji. Małe funkcje są krótkich funkcji, których nie należy wprowadzać wszelkie wywołania funkcji. Te małe funkcje z wyjątkiem zapewnia mniejsze koszty Instrumentacji i w związku z tym zwiększona szybkość instrumentacji. Wyłączenie małych funkcji zmniejsza wydajność plik danych profilowania (. *Vsp*) rozmiar i czas, który jest wymagany do analizy. Jeśli małe funkcje zostaną wykluczone, czasu spędzonego w małych funkcji zmniejsza wyłącznych i całkowity czas ich funkcji nadrzędnej. Małe funkcje mogą być wyłączone lub objęte instrumentacji, zgodnie z opisem w poniższej procedurze.  

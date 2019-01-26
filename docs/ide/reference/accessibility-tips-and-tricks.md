@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010392"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
@@ -51,9 +51,9 @@ Visual Studio IDE ma paski narzędzi, jak wielu okien narzędziowych. Następuj�
 
 |Funkcja|Opis|Kombinacja klawiszy|
 |-------------|-----------------| - |
-|Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**ALT**, **CTRL** + **KARTĘ**|
+|Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**ALT**, **CTRL** + **TAB**|
 |Paskach narzędzi okna|Przenieś fokus na paski narzędzi w oknie narzędzi. <br> <br> **UWAGA:** Działa to dla większości okien narzędzi, ale tylko wtedy, gdy fokus znajduje się w oknie narzędzi. Ponadto musisz wybrać klawisz SHIFT przed klawisza ALT. W niektórych oknach narzędzi, takich jak Team Explorer musi przytrzymaj klawisz SHIFT, przez chwilę przed wybraniem klawisza ALT.|**SHIFT** + **ALT**|
-|Paski narzędzi|Przejdź do pierwszego elementu w pasku dalej (w przypadku pasek narzędzi jest ustawiony fokus).|**CTRL** + **KARTĘ**|
+|Paski narzędzi|Przejdź do pierwszego elementu w pasku dalej (w przypadku pasek narzędzi jest ustawiony fokus).|**CTRL** + **TAB**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Inne kombinacje klawiszy skrótu przydatne
 

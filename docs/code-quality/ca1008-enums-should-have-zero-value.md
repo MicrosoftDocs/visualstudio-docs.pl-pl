@@ -1,5 +1,5 @@
 ---
-title: 'CA1008: Typy wyliczeniowe powinny mieć wartości zerowej'
+title: 'CA1008: Typy wyliczeniowe powinny mieć wartość zero'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b535424a391c91f57ce4a3d2edf997688989fdde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9264b37992885ff3d93aba4802d8d7f0cee535aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992909"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Typy wyliczeniowe powinny mieć wartości zerowej
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Typy wyliczeniowe powinny mieć wartość zero
 
 |||
 |-|-|

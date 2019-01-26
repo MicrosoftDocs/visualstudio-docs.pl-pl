@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28459d2bd5aedb6a3735cf8dcc10ff082c325daa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da6b3641a33a19cef01f9a6a4a9a833643169f25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006570"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Określa, jak można przeanalizować wyrażenia.  
@@ -55,7 +55,7 @@ public enum enum_PARSEFLAGS { 
  Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

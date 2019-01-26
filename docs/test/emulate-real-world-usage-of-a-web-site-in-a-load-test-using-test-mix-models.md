@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6e44597fe9a770b76ba043d74f6048dc50a5e031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81364c4f6cb963d713fc0a63c1f0076268a84b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950397"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964642"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
 
@@ -57,9 +57,9 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 ###  <a name="PacingTestMix"></a> Tempo testu mieszanego
  Jeśli określisz pacing mieszanki testów, możesz ustawić wskaźnik wykonania testu dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu ten kurs jest wyrażona jako testy na wirtualnego użytkownika na godzinę. Na przykład może przypisywać pacing się test mieszany, do następujących testów:
 
-- Testu a: 4 testy na użytkownika na godzinę
+- TestA: 4 testy na użytkownika na godzinę
 
-- Testu b.: 2 testy na użytkownika na godzinę
+- TestB: 2 testy na użytkownika na godzinę
 
 - TestC: 0,125 testy na użytkownika na godzinę
 

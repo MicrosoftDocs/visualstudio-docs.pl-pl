@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009898"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w języku C++ w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu.  
@@ -82,7 +82,7 @@ int main() {
 |**Nazwa**|Pomija adres pamięci wskaźnika do obiektu.|\<Lokalizacja >, {elementu członkowskiego = wartość...}|{member=value...}|  
 |**ND**|Wyświetla tylko klasy bazowej informacje, ignorując klasy pochodne|`(Shape*) square` zawiera klasy podstawowej i pochodnej informacji o klasie|Wyświetla tylko podstawowy informacji o klasie|  
 |godz.|Kod błędu HRESULT lub Win32. Ten specyfikator jest już potrzebny dla wartości HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|  
-|WC|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
+|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|16|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|  
   
@@ -95,7 +95,7 @@ int main() {
 |Specyfikator|Format|Oryginalnej wartości czujki|Wartości wyświetlanej|  
 |---------------|------------|---------------------------|---------------------|  
 |n|Dziesiętna lub **szesnastkowe** liczba całkowita|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Wyświetla `pBuffer` jako tablica 32 elementów.|  
-|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer, [bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
+|**[exp]**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą.|pBuffer,[bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|  
 |**expand(n)**|Prawidłowe wyrażenie C++, którego wynikiem jest liczbą całkowitą|pBuffer, expand(2)|Wyświetla trzeci element  `pBuffer`|  
   
 ##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu języka C + +/ CLI  
@@ -108,7 +108,7 @@ int main() {
 |o|Nieoznaczona ósemkowa liczba całkowita|0xF065|0170145|  
 |x<br /><br />X|Szesnastkowa liczba całkowita|61541|0x0000f065|  
 |**l**<br /><br />**h**|długi lub krótki prefiks dla: d, i, u, o, x X|00406042|0x0c22|  
-|**f**|oznaczona liczba zmiennoprzecinkowa|(3. / 2.), f|1.500000|  
+|**f**|oznaczona liczba zmiennoprzecinkowa|(3./2.), f|1.500000|  
 |**e**|podpisana Notacja naukowa|(3.0/2.0)|1.500000e + 000|  
 |**g**|podpisana zmiennoprzecinkowa lub oznaczona Notacja naukowa<br/> nich okaże się krótsza|(3.0/2.0)|1,5|  
 |c|pojedynczy znak|\<Lokalizacja >|101 "e"|  
@@ -117,7 +117,7 @@ int main() {
 |Sub|Const wchar_t *<br /><br /> Const char16_t\*|\<Lokalizacja >|Cześć ludzie|  
 |s8|Const char * (ze znakami cudzysłowu)|\<Lokalizacja >|"hello world"|  
 |godz.|Kod błędu HRESULT lub Win32.<br/>Ten specyfikator jest już potrzebny dla wartości HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|  
-|WC|Flaga klasy okna|0x00000040,|WC_DEFAULTCHAR|  
+|wc|Flaga klasy okna|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numery komunikatu Windows|0x0010|WM_CLOSE|  
 |!|format RAW, ignorowanie wszelkich dostosowań widoku typu danych|\<dostosowane reprezentacji >|4|  
   

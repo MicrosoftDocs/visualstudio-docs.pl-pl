@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7673a4a9ccde94589ba03bd130645558ec088f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013161"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Instrukcje: Korzystanie z narzędzia wyszukiwania
 Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzia wyszukiwania można zlokalizować okien podrzędnych wyłączone i określenia, które okno, aby wyróżnić Jeśli wyłączone podrzędnych nakładają się z systemu windows.  

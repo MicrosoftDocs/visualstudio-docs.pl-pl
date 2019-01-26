@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5629bcd7e4db81cd7a46d71d9f0e9928d5eaab15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995261"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visualization i Modeling SDK można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.

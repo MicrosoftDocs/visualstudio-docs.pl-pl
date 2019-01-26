@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965223"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030395"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Instrukcje: Tworzenie niestandardowego tekstu znaczników
 Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:  
@@ -32,7 +32,7 @@ Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub 
   
 1. Utwórz wpis rejestru w następujący sposób:  
   
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<wersji > Znaczniki \Text Editor\External\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
   
     *\<MarkerGUID >* jest `GUID` używany do identyfikowania znacznika dodawany  
   

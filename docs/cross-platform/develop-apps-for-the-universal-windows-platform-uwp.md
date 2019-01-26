@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: stevehoag
 ms.author: shoag
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a7f0279249be7b5a48b342f1de26179af7b89f80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981700"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 Dzięki platformie Universal Windows i naszych jednego rdzenia Windows można uruchamiać tę samą aplikację na dowolnym urządzeniu systemu Windows 10, od telefonów do komputerów stacjonarnych. Tworzenie aplikacji Universal Windows za pomocą programu Visual Studio i narzędzia do programowania uniwersalnych aplikacji Windows.
@@ -37,9 +37,9 @@ Platformy uniwersalnej Windows jest po prostu kolekcją umów i wersji. Te pozwa
 
  Poniżej przedstawiono listę oprogramowania, które są potrzebne:
 
--   [System Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
+-   [Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
--   [Program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
 
      ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
 

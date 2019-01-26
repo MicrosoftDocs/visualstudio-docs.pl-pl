@@ -19,15 +19,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6fc2b414ae7e49cae326ae5ce660e45cc8b47a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010261"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 

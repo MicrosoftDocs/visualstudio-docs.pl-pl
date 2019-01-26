@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8360e44109819a5de75e6262efcfb71fc10ade
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2368f3f0deff4262ffebca736fc14e6d5bc142a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830550"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005440"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 Program musi śledzić które formanty etykiet wybiera gracz. W tej chwili program pokazuje wszystkie etykiety wybrane przez gracza. Ale zaraz to zmienimy. Po wybraniu pierwszej etykiety program powinien wyświetlać ikonę etykiety. Po wybraniu drugiej etykiety program powinien wyświetlić obie ikony przez krótki czas i potem ponownie je ukryć. Program będą teraz przechowywać informacje o który formant etykiety został wybrany jako pierwszy, a który jako drugi przy użyciu *odwoływać się do zmiennych*.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8158a8eaf4b0ee85858cc81e93fbb7e4fa0b9f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8143ab83e2d166ac4d9ad49b27934ff425d371ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893781"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005205"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementowanie starszej wersji usługi językowej
 Aby zaimplementować usługi języka przy użyciu środowiska pakietu zarządzanego (MPF), należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.LanguageService> klasę i zaimplementować następujące metody abstrakcyjne i właściwości:  

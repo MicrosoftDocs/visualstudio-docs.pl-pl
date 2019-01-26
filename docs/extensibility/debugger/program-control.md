@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 979a56740da506b51941211d5c6316a0614df142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6cc27c70076a7c91b6c74e5f1cfed6402555fba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013200"
 ---
 # <a name="program-control"></a>Kontrola programu
 W programie Visual Studio debugowanie wszystkich następujących przechodzenie krok po kroku i kontynuowanie procedury wykonywane na poziomie programu:  

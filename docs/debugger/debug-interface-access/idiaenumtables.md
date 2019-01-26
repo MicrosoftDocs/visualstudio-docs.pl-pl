@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 016190c5-09e4-48f2-bf60-9b02603a03e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e6dbfc2a61be36dbe64d8198dc56e695d774602
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80b8bd26fbdb39f539df7ce520ca638458f2de65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999356"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
 Wylicza różnych tabel znajdujących się w źródle danych.  
@@ -62,11 +62,11 @@ void ShowTableNames(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

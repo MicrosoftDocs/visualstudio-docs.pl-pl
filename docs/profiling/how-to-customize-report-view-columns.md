@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8fc2cf5dd2994384f0e01c6dbbb64438515f1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a5da139d9d4e1ddc797f48f55e120906f03109b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861163"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019726"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Instrukcje: Dostosowywanie kolumn widoku raportu
 Narzędzia do oceny wydajności w Visual Studio Team System Development Edition są zintegrowane w pełni zintegrowanego środowiska programistycznego (IDE), aby zapewnić nie zakłóca pracy użytkowników. Poniższa lista jest reprezentatywna dla widoków, które można dostosowywać przez dodawanie, usuwanie i zmiana kolejności kolumn:  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b450c6aca73ccef253e2006df485a530664b4c66
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837891"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002528"
 ---
 # <a name="property-pages"></a>Strony właściwości
 Użytkownicy mogą przeglądać i zmieniać właściwości zależne od konfiguracji i - niezależny od projektu za pomocą strony właściwości. A **stron właściwości** przycisk jest aktywny w **właściwości** oknie lub na pasku narzędzi Eksploratora rozwiązań dla obiektów, które zapewniają widok strony właściwości wybranego obiektu. Strony właściwości są tworzone przez środowisko i są dostępne dla projektów i rozwiązań. Jednak mogą również być udostępnione dla elementów projektu, które należy używać właściwości zależne od konfiguracji. Ta funkcja może być używany, gdy pliki w obrębie projektu wymaga ustawienia przełącznika kompilatora różnych, aby kompilować się właściwie.  
@@ -56,7 +56,7 @@ Okno dialogowe strony właściwości projektu o strukturze format i drzewa pola
   
   Drugi typ strony właściwości wyświetlane w hostach przykłady postaci siatki właściwości, jak pokazano na poniższym zrzucie ekranu.  
   
-  ![Strony właściwości VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  ![VC Property Pages](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
   Okno dialogowe strony właściwości z siatki właściwości  
   
   Interfejsy `IVSMDPropertyBrowser` i `IVSMDPropertyGrid` (deklaracja w vsmanaged.h) są używane do tworzenia i wypełniania siatki właściwości, w ramach lub oknie dialogowym.  

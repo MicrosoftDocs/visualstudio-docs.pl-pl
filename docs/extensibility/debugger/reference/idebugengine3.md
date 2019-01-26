@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7110a69c84a131a600c903ac73fbb6acdde7cd64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f89452582677334f75c330ff00af58b95e928c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913440"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992350"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Reprezentuje aparat debugowania pojedynczego (DE), sterująca debugowanie jednego lub więcej modułów.  
@@ -46,7 +46,7 @@ IDebugEngine3 : IDebugEngine2
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Ustaw wszystkie wyjątki jest aktualnie oczekujących do określonego stanu.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

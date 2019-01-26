@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82705ad50d5dca6c3c20758663163832b5da8179
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f78e592597b4b35ab2c8c98bf99c40dd07d4c5af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956860"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Określa typ nazwy hosta.  
@@ -50,7 +50,7 @@ public enum enum_GETHOSTNAME_TYPE { 
  Te wartości są przekazywane jako argument do [gethostname —](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodę, aby pobrać nazwy hosta, w różnych formatach.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

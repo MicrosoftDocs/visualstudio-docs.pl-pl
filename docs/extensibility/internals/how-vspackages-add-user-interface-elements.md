@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b83da9cfa04183a1820d8b455d6bc609216cf9cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962691"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975299"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak dodać elementy interfejsu użytkownika w pakietach VSPackage
 Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i narzędzi systemu windows, do programu Visual Studio poprzez pakietu VSPackage *vsct* pliku.  
@@ -195,7 +195,7 @@ priority="0x0100" type="Menu">
 |Pasek narzędzi|[Element menu](../../extensibility/menus-element.md), IDE, innych pakietów VSPackage|Sam element|0, aby *n* grup|  
 |Element menu|[Buttons, element](../../extensibility/buttons-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element|-0, aby *n* grup|  
 |Przycisk|[Buttons, element](../../extensibility/buttons-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element||  
-|Pole kombi|[Combos, element](../../extensibility/combos-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element||  
+|Combo|[Combos, element](../../extensibility/combos-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup sam element||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu, poleceń oraz grupy umieszczania  
  Menu, grupy lub polecenia może znajdować się w więcej niż jedną lokalizację w środowisku IDE. Dla elementu pojawią się w wielu lokalizacjach, należy dodać do `CommandPlacements` sekcji jako [CommandPlacement, element](../../extensibility/commandplacement-element.md). Wszelkie menu, grupy lub polecenia mogą być dodawane jako położenie polecenia. Jednak pasków narzędzi nie może znajdować się w ten sposób, ponieważ nie pojawiają się w wielu lokalizacjach kontekstowej.  

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b5b82b00235404c599f77b8909b007fc80bb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857017"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987690"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Kontrolki, w którym jest uruchamiany kod R z obszarami roboczymi
 
@@ -34,7 +34,7 @@ Domyślnie RTVS nie zostanie zapisany stan obszaru roboczego po zamknięciu i po
 
 ## <a name="local-workspaces"></a>Lokalne obszary robocze
 
-Na liście lokalne obszary robocze zostaną wyświetlone wszystkie interpreterów języka R, zainstalowanych na komputerze. 
+Na liście lokalne obszary robocze zostaną wyświetlone wszystkie interpreterów języka R, zainstalowanych na komputerze.
 
 Po uruchomieniu programu Visual Studio podejmie próbę automatycznego wykrycia, wszystkie wersje języka R, który jest zainstalowany, przeglądając **HKEY_LOCAL_MACHINE\Software\R Core\\**  klucza rejestru. To sprawdzenie odbywa się tylko przy uruchamianiu, dlatego musisz ponownie program Visual Studio po zainstalowaniu nowego interpreter języka R.
 
@@ -129,7 +129,7 @@ Pliki są kopiowane do serwera zdalnego:
 
 ![Właściwości projektu kartę transferu pliku parametrów uruchomieniowych](media/workspaces-remote-file-transfer-filter-settings.png)
 
-W tym miejscu **transferu plików przy uruchomieniu** właściwość określa, czy RTVS automatycznie kopiuje pliki projektu. **Plików do transferu** następnie wartość filtry dokładnie pliki, które są przenoszone. Wartość domyślna to można skopiować tylko *. R*, *. RMD*, *.sql*, *MD*, i *.cpp* plików. To zachowanie zapobiega przypadkowo kopiowanie duże pliki danych na serwerze przy użyciu każdego uruchomienia. 
+W tym miejscu **transferu plików przy uruchomieniu** właściwość określa, czy RTVS automatycznie kopiuje pliki projektu. **Plików do transferu** następnie wartość filtry dokładnie pliki, które są przenoszone. Wartość domyślna to można skopiować tylko *. R*, *. RMD*, *.sql*, *MD*, i *.cpp* plików. To zachowanie zapobiega przypadkowo kopiowanie duże pliki danych na serwerze przy użyciu każdego uruchomienia.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Skopiuj pliki ze zdalnego obszaru roboczego
 

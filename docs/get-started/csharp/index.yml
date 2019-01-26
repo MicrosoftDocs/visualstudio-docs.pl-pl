@@ -1,18 +1,18 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f65c4c6ea5ed255f40467839e5fa41c879d422f2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 7da3e8111a16a8003331de0c388805c459cefa07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204323"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014073"
 documentType: LandingData
-title: Program Visual Studio |C#
+title: Visual Studio tutorials | C#
 metadata:
   title: C#Tworzenie aplikacji przy użyciu programu Visual Studio | Dokumentacja firmy Microsoft
   description: Samouczki i artykuły koncepcyjne dotyczące programowania C# aplikacji za pomocą programu Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
@@ -20,6 +20,8 @@ metadata:
   ms.author: ghogen
   dev_langs:
   - CSharp
+abstract:
+  description: Ta strona zawiera linki do samouczków dla początkujących nauce tworzenia C# aplikacji za pomocą programu Visual Studio. Aby uzyskać pełną dokumentację programu Visual Studio, zobacz <a href="/visualstudio/ide/">programu Visual Studio</a>. Aby uzyskać C# dokumentację języka, zobacz <a href="/dotnet/csharp"> C# przewodnik</a>.
 sections:
 - title: Rozpocznij
   items:

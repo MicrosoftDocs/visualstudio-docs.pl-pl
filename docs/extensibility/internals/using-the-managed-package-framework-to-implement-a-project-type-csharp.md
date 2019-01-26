@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489537560d43246097d00121142d729be130ec9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e82bf87d946c7aa5fcf9ad23185782563325c7c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961637"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017336"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Implementowanie typu projektu przy użyciu środowiska pakietu zarządzanego (C#)
 Framework pakietu zarządzanego (MPF) udostępnia klasy C#, możesz użyć lub dziedziczyć zaimplementować swój własny typ projektu. MPF implementuje wiele interfejsów programu Visual Studio oczekuje, że typ projektu, aby zapewnić, pozostawiając użytkownika na skoncentrowanie się na implementowaniu dane tego typu projektu.  

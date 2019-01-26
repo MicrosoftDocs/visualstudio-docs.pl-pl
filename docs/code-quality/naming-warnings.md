@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931c4b29bd5f90b23492cba854644435a7e99bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980885"
 ---
 # <a name="naming-warnings"></a>Nazewnictwo — Ostrzeżenia
 Ostrzeżenia nazewnictwa obsługuje gotowość do konwencji nazewnictwa wytycznych projektowych programu .NET Framework.
@@ -30,7 +30,7 @@ Ostrzeżenia nazewnictwa obsługuje gotowość do konwencji nazewnictwa wytyczny
 |Reguła|Opis|
 |----------|-----------------|
 |[CA1700: Nie nadawaj wartościom wyliczenia nazwy "Reserved"](../code-quality/ca1700-do-not-name-enum-values-reserved.md)|Ta reguła zakłada, że element członkowski wyliczenia o nazwie, która zawiera „reserved”, nie jest obecnie używany, ale jest symbolem zastępczym do zmiany nazwy lub usunięcia w przyszłej wersji. Zmiana nazwy lub usuwanie członka jest zmianą przerywającą.|
-|[CA1713 Zdarzenia nie powinny mieć prefiksu before ani after](../code-quality/ca1713-events-should-not-have-before-or-after-prefix.md)|Nazwa zdarzenia rozpoczyna się od „Before” lub „After”. Nazwa powiązanych zdarzeń, które są wywoływane w określonej kolejności, używa czasu teraźniejszego lub przeszłego, aby wskazać względne położenie akcji w sekwencji.|
+|[CA1713: Zdarzenia nie powinny mieć prefiksu before ani after](../code-quality/ca1713-events-should-not-have-before-or-after-prefix.md)|Nazwa zdarzenia rozpoczyna się od „Before” lub „After”. Nazwa powiązanych zdarzeń, które są wywoływane w określonej kolejności, używa czasu teraźniejszego lub przeszłego, aby wskazać względne położenie akcji w sekwencji.|
 |[CA1714: Typy wyliczeniowe flag powinny mieć nazwy w liczbie mnogiej](../code-quality/ca1714-flags-enums-should-have-plural-names.md)|Publiczne wyliczenie ma atrybut System.FlagsAttribute, a jego nazwa nie kończy się na "s". Typy, które są oznaczone atrybutem Flags mają nazwy, które mają liczbę mnogą, ponieważ ten atrybut wskazuje, że można określić więcej niż jedną wartość.|
 |[CA1704: Identyfikatory powinny być zapisane poprawnie](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)|Nazwa widocznego na zewnątrz identyfikatora zawiera jeden lub więcej wyrazów, które nie są rozpoznane przez bibliotekę sprawdzania pisowni Microsoft.|
 |[CA1708: Identyfikatory powinny różnić się przez więcej niż wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Identyfikatory przestrzeni nazw, typów, elementów członkowskich i parametry nie mogą się różnić jedynie wielkością liter, ponieważ języki dla środowiska uruchomieniowego języka wspólnego nie muszą rozróżniać wielkości liter.|

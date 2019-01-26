@@ -6,16 +6,16 @@ ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a9f13493b93dde73726253edf43d66f41bd2ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006037"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest
 
@@ -27,7 +27,7 @@ Po uruchomieniu testów funkcji IntelliTest, można łatwo zobaczyć, testy, kt�
 
 **Tworzenie testów funkcji IntelliTest** i **Uruchom test IntelliTest** polecenia menu:
 
-* Są dostępne w tylko Enterprise Edition dla programu Visual Studio 2015 i nowszych wersjach.
+* Są dostępne tylko w przedsiębiorstwie wersji programu Visual Studio 2015 i nowszych wersjach.
 
 * Obsługuje tylko C# kod, który jest przeznaczony dla .NET Framework.
 
@@ -69,7 +69,7 @@ Do generowania testów jednostkowych, typów muszą być publiczne. W przeciwnym
 
      Jeśli zmieni się kod metody, należy ponownie uruchomić program IntelliTest, aby zachować synchronizację ze zmianami, testy jednostkowe.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Pomóc: Użyj funkcji IntelliTest, aby fokus kod — Eksploracja
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assist: Użyj funkcji IntelliTest, aby fokus kod — Eksploracja
 
 1.  W przypadku bardziej złożonego kodu funkcji IntelliTest pomaga z poziomu Eksploracja kodu. Na przykład jeśli masz metodę, która ma interfejs jako parametr, a istnieje więcej niż jedną klasę, która implementuje ten interfejs, IntelliTest umożliwia odnalezienie tych klas i zgłosi ostrzeżenie.
 
@@ -129,7 +129,7 @@ Określ ogólne relacji między dane wejściowe i wyjściowe, które mają wygen
 
  Jeśli dodasz potwierdzenie, a następnie ponownie uruchom program IntelliTest, będzie sprawdzał, czy Twoje potwierdzenie jest prawidłowa, i test zakończy się niepowodzeniem, jeśli nie jest.
 
-###  <a name="NoRun"></a> PYT.: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?
+###  <a name="NoRun"></a> Q: Czy mogę wygenerować sparametryzowane testy jednostek bez konieczności uruchamiania programu IntelliTest najpierw?
 
 **ODP.:** Tak, kliknij prawym przyciskiem myszy klasy lub metody, a następnie wybierz **tworzenie testów funkcji IntelliTest**.
 

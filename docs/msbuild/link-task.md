@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d21e6cc4c3701716c72ad3e62dc75e2df383da0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 789a830b281d7905d8b067c1d69665cc6de3c610
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001790"
 ---
 # <a name="link-task"></a>Link — Zadanie
 Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny (*.exe*) pliku lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).  
@@ -141,7 +141,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** -   **/clrimagetype: PURE**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
@@ -195,7 +195,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
   
      Określ jedną z następujących wartości, które odpowiada opcji konsolidatora.  
   
-    -   **Włączone** - **/FUNCTIONPADMIN**  
+    -   **Enabled** - **/FUNCTIONPADMIN**  
   
     -   **X86Image** - **/FUNCTIONPADMIN:5**  
   
@@ -451,7 +451,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
   
     -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-    -   **SendErrorReport** -   **/errorreport: Send**  
+    -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](/cpp/build/reference/errorreport-report-internal-linker-errors).  
   
@@ -847,7 +847,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
   
      Aby uzyskać więcej informacji, zobacz [/tsaware (Utwórz serwer terminali pamiętać aplikacji)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
   
--   **Katalog TrackerLogDirectory**  
+-   **TrackerLogDirectory**  
   
      Opcjonalnie **ciąg** parametru.  
   

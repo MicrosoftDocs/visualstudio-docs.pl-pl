@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1914c406cbe8b74ce3dc8f736c209b183ce47c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013343"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Wizualne klasy języka C++ w Projektancie klas
 
@@ -171,7 +171,7 @@ W poniższej tabeli przedstawiono kilka przykładów klas wyspecjalizowanych can
 
 |Element Code|Widok projektanta klas|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> -> C\<float >|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T >|
 
 ## <a name="see-also"></a>Zobacz także

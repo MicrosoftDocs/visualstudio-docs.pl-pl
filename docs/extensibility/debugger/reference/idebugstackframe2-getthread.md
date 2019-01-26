@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fe4a7f5ef0ad06777983a1760f933e78d963838
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686757863c80f2f7a1841bb464544daccbe9a4f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990584"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984434"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Pobiera wątek skojarzony z ramki stosu.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d491a43e65ed7e6c06a5c94e94b62230db1634dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e358efc95d3c0d281a24109ee5ab954d6ea88506
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864323"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989037"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika (UDT) jest nietrwały.  

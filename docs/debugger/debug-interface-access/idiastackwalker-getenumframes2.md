@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6391e90a10477d07e5f35e8f5607bee3f412031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fb7fff92007160abdba64970d652ee73042661b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935934"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938136"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.  
@@ -50,7 +50,7 @@ Pobiera moduł wyliczający ramek stosu dla typu określonej platformy.
  Aby uzyskać listę ramek stosu dla właśnie x86 platforma, wywołanie [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackwalker —](../../debugger/debug-interface-access/idiastackwalker.md)   
+ [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
  [Cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)   

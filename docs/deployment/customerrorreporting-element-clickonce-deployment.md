@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd94ebc54716f68ed6d7f76b87d76529daeb680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7254f5735be3efa45b7ba3be0541996cb6c2cc69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876723"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997640"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; — element (wdrażanie ClickOnce)
 Określa identyfikator URI do wyświetlenia, gdy wystąpi błąd.  

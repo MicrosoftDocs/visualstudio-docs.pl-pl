@@ -1,5 +1,5 @@
 ---
-title: Narzędzie RegPkg | Dokumentacja firmy Microsoft
+title: RegPkg Utility | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc1e818e576c4593eb890f1f31b4d67d4c7c4488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904880"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979429"
 ---
 # <a name="regpkg-utility"></a>Narzędzie RegPkg
 > [!NOTE]
@@ -32,24 +32,24 @@ ms.locfileid: "53904880"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
- /Root:root  
+ /root:root  
  Przeprowadza rejestrację o określonej nazwie.  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] element główny.  
   
- /RegFile:filename  
+ /regfile:FileName  
  Tworzy plik .reg, a nie aktualizacji rejestru.  Nie można używać z /vrgfile lub /rgsfile lub /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Tworzy plik .rgs, a nie aktualizacji rejestru.  Nie można używać z /vrgfile lub/regfile razem lub /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Tworzy plik .vrg, a nie aktualizacji rejestru.  Nie można używać z/regfile razem lub /rgsfile lub /wixfile.  
   
  /rgm  
  Tworzy plik .rgm oprócz pliku rgs.  Musi być łączona z /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Tworzy plik zgodnego zestawu narzędzi XML Instalatora Windows, a nie aktualizacji rejestru.  Nie można używać z/regfile razem lub /rgsfile lub /vrgfile.  
   
  /codebase  
@@ -58,7 +58,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  / Assembly  
  Wymusza rejestrację przy użyciu zestawu, a nie bazy kodu.  
   
- / unregister  
+ /unregister  
  Wyrejestrowuje tego pakietu.  Nie można użyć  
   
  / regfile razem lub /vrgfile lub /rgsfile albo /wixfile.  

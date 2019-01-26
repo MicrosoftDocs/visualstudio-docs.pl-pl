@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5866ae345aaa8b28cdc0ff448500104ba946f504
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883217"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010145"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowane składniki, które są nadal aktualne nie są odbudowany. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, gdy, każda kompilacja potrwa długo. Aby włączyć kompilacje przyrostowe (kompilacji, w którym tylko te obiekty docelowe, które nie zostały skompilowane zanim lub który jest przeznaczony dla są nieaktualne, są ponownie skompilowany), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. Jednakże musi być mapowanie jeden do jednego między dane wejściowe i wyjściowe. Można użyć transformacji umożliwiające obiekty docelowe zidentyfikować ten bezpośredniego mapowania. Aby uzyskać więcej informacji na temat przekształceń, zobacz [przekształca](../msbuild/msbuild-transforms.md).  

@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Dokumentacja firmy Microsoft
+title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad42049bf10b3b5e0f599ea5b043dd73cabc051
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b19dbf2d103d76ca01a3843c1cfc0072c0e23ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931518"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006206"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Określa informacje, które mają zostać pobrane informacje pomyślnego rozwiązania punktu przerwania.  
@@ -64,7 +64,7 @@ public enum enum_BPRESI_FIELDS { 
  Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_hascastoperator — | Dokumentacja firmy Microsoft
+title: IDiaSymbol::get_hasCastOperator | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a21114a6-56a3-4e8a-a65f-58ec2a0a8908
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 046605ec892bf15f1ec00fda0b103b8123a87897
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83ba8c334ada3e5397395c03603339af9303599a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996132"
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
 Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika ma dowolnych operatorów rzutowania, zdefiniowane.  

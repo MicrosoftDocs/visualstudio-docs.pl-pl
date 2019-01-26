@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1320587-7ce7-401f-9548-2f8bcece5cc3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87861d4672d3ff7691fae3378dd3de09beb70a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5a2530dce21c31df57003d3d4eb4de63ce0aad6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999096"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 Pobiera następny symbole w kolejności według adresu.  
@@ -49,5 +49,5 @@ HRESULT Next ( 
  Ta metoda aktualizuje pozycja modułu wyliczającego według liczby elementów pobrana.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+ [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

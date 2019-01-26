@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCreateEvent2 | Dokumentacja firmy Microsoft
+title: IDebugThreadCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d075657ca034ebfd6d35418aa30f5c5ad85414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c730ff3ee9f5c8301c2c518ccb76a4a84faa919
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999538"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 Ten interfejs wysyłany przez aparat debugowania (DE) do Menedżer debugowania sesji (SDM) podczas tworzenia w programie debugowanego wątku.  
@@ -35,7 +35,7 @@ IDebugThreadCreateEvent2 : IUnknown
  DE tworzy i wysyła tego obiektu zdarzenia do raportowania, że wątek został utworzony. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

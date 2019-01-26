@@ -7,15 +7,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abdb1d23598c0a103b706781b41fa0a59e6e6ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869323"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977999"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowników oraz przy użyciu architektury Twojego systemu.
@@ -34,7 +34,7 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
 
 |**Kategoria**|**Łącza**|
 |-|-|
-|**Filmy wideo**|![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Doug 7: Rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę serii: Jak sprawdzić poprawność kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Filmy wideo**|![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Doug Seven: Rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę serii: Jak sprawdzić poprawność kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogi**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|

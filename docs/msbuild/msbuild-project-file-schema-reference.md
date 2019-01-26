@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95167a5b9b07d7aa446a756e31c267925ee79349
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852430"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012154"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
 Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementów schematu XML z ich dostępne atrybuty i elementy podrzędne.  
@@ -41,7 +41,7 @@ Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/inclu
 |[Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Element*|Warunek|  
 |[OnError — element (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|Warunek<br /><br /> ExecuteTargets|  
 |[Otherwise — element (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
-|[OUTPUT — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> Nazwa elementu<br /><br /> PropertyName<br /><br /> TaskParameter|  
+|[OUTPUT — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
 |[Parameter — element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> Zgodność<br /><br /> Wymagane|  
 |[Parametergroup — element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
 |[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz<br /><br /> Import<br /><br /> ItemGroup<br /><br /> Projectextensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|Defaulttargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  

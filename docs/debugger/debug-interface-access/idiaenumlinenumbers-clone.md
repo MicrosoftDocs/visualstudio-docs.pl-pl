@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5f027d3ccc2347e73b1c6e5caa096144b446ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415cf28fa5b130a53d10226255facae91bf7ea4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036870"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  

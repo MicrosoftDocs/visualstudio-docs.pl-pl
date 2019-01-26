@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 40a4326924d83d4604f512f41f85e7adb8d21bb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975052"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Oznacz wszystkie pola nieprzeznaczone do serializacji
 
@@ -39,7 +39,7 @@ ms.locfileid: "54154153"
 
 ## <a name="rule-description"></a>Opis reguły
  Typ możliwy do serializacji to taki, który jest oznaczony przy użyciu <xref:System.SerializableAttribute?displayProperty=fullName> atrybutu. Gdy typ jest serializowana, <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> wyjątek jest generowany, jeśli typ zawiera pola wystąpienia typu, który nie jest możliwy do serializacji.
- 
+
  Wyjątkiem jest, gdy typ używa niestandardowej serializacji za pośrednictwem <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfejsu. Typów implementujących ten interfejs zapewnia logikę serializacji, a więc CA2235 nie zostanie zastosowana do pola nieprzeznaczone do wystąpienia takich typów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia

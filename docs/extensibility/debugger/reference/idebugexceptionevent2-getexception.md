@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fad5aca8dcb548718c6acabb5c58e8c31592558
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6184a6283b6a93143132afdecb737f011794e96c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998173"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Pobiera szczegółowy opis wyjątku, która wywołała zdarzenie.  

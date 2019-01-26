@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15100a7a43147e49d6762119828566d613034fea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3320192e75d47194f7421f49ab28925306540ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998680"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision, projektant działań
 

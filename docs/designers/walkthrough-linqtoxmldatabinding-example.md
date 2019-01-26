@@ -1,22 +1,22 @@
 ---
-title: 'Przewodnik: Elementu linqtoxmldatabinding — przykład'
+title: 'Przewodnik: LinqToXmlDataBinding Example'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17323482bfd300dc226ae21354a3dd11bd0c1753
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011031"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: Elementu linqtoxmldatabinding — przykład
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Przewodnik: LinqToXmlDataBinding example
 Ten przewodnik zawiera opis elementu linqtoxmldatabinding — przykład i omówiono bardziej interesującej zawartości dwóch plików podstawowym źródłem *L2DBForm.xaml* i *L2DBForm.xaml.cs*.
 
 ## <a name="prerequisites"></a>Wymagania wstępne

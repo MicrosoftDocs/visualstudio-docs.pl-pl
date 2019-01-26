@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8840cd8fa2645ad618cb6981469d2415bca99fd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59eee930f13cb7f2d870c62d6cd0b47704eb94db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991336"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 Zwraca wskaźnik metod konwencji wywoływania.  
@@ -48,5 +48,5 @@ HRESULT get_callingConvention ( 
 |Wersja:|V7.0 DIA SDK|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_call_e, wyliczenie](../../debugger/debug-interface-access/cv-call-e.md)

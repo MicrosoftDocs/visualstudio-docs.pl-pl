@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d520947c5e5e998ecf67a1b9dbb6d77bdff2c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f478af5932626a738f0212716511d9a28c1dcde3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000263"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 Pobiera flagę określającą, czy funkcja jest wprowadzenie do funkcji wirtualnej.  

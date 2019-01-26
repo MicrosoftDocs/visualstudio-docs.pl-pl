@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae0b5831ef6007832438c4d589c4385711666dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b440c2e95432dfa543d7e9aacae1256b27929de1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020194"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Korzystanie ze sprawdzania w trakcie wykonywania bez biblioteki wykonawczej języka C
 W przypadku połączenia programu bez biblioteki wykonawczej C za pomocą **/nodefaultlib**i chcesz używać do sprawdzania w trakcie wykonywania, należy połączyć z RunTmChk.lib.  
@@ -64,4 +64,4 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
  Po wykonaniu procedury instalacji funkcji raportowania błędów domyślne, można zainstalować dodatkowe błędów raportowania funkcje za pomocą `_RTC_SetErrorFuncW`. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Korzystanie z macierzystego sprawdzania w czasie wykonywania](../debugger/how-to-use-native-run-time-checks.md)
+ [Instrukcje: Korzystanie z natywnego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)

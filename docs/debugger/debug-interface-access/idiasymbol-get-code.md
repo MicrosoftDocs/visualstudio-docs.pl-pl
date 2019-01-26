@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b6b0c5940f6c32477989a4d260d57c5def8ae0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abfdc449d85a193aef41799d77dd0739599794c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993538"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 Pobiera flagę określającą, czy symbol odwołuje się pod adresem kod.  

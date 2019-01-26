@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2 | Dokumentacja firmy Microsoft
+title: IDebugActivateDocumentEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 190eb405d4c3158a9dd3b131e15a6a999cd862e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb4d672fb140394256f9efcc2951e1b25381856a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008364"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Aparat debugowania (DE) używa tego interfejsu, aby zażądać dokumentu do załadowania.  
@@ -46,7 +46,7 @@ IDebugActivateDocumentEvent2 : IUnknown
  Typowy scenariusz, w którym ten interfejs jest wykorzystywany jest, jeśli wystąpi błąd analizy w kodzie skryptu na stronie HTML, skrypt DE wysyła ten interfejs SDM wyświetlany dokument z błąd analizy.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

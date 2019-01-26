@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53923760"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014669"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 **Object Relational Designer** (**O/R Designer**) obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Dziedziczenie pojedynczej tabeli Brak tabeli pojedynczej bazy danych, która zawiera pola zarówno informacje nadrzędnego, jak i podrzędnych. Z danymi relacyjnymi kolumna dyskryminatora zawiera wartość, która określa, która klasa dowolnego rekordu, o których należy.

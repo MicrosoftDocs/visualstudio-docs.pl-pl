@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0c2512bd6b446c35aa01e9f56711bb39cd85b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dca4d55d58f6fe4c2238fe881440f1bdd9e6661
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846090"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007493"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 Wyświetla zawartość określonego zakresu pamięci.
@@ -38,7 +38,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Opcjonalna. Adres pamięci, od którego należy rozpocząć wyświetlanie pamięci.
 
 ## <a name="switches"></a>Przełączniki
- / ANSI&#124;Unicode
+ /ANSI&#124;Unicode
 
  Opcjonalna. Wyświetl pamięć jako znaki odpowiadający bajtów pamięci, ANSI lub Unicode.
 
@@ -50,7 +50,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  Opcjonalna. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.
 
- / Szesnastkowy&#124;podpisany&#124;bez znaku
+ /Hex&#124;Signed&#124;Unsigned
 
  Opcjonalna. Określa format wyświetlania liczb: jak podpisem, bez znaku lub szesnastkową.
 
@@ -72,13 +72,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |Alias|Polecenia i przełączniki|
 |-----------| - |
 |**d**|Debug.listmemory —|
-|**Akcelerator deweloperski w wersji**|Debug.listmemory — /Ansi|
-|**bazy danych**|Debug.listmemory — /Format:OneByte|
-|**Kontroler domeny**|Debug.listmemory — /Format:FourBytes /Ansi|
+|**da**|Debug.listmemory — /Ansi|
+|**db**|Debug.listmemory — /Format:OneByte|
+|**dc**|Debug.listmemory — /Format:FourBytes /Ansi|
 |**dd**|Debug.listmemory — /Format:FourBytes|
-|**DF**|Debug.listmemory — /Format:Float|
+|**df**|Debug.listmemory — /Format:Float|
 |**dq**|Debug.listmemory — /Format:EightBytes|
-|**jednostka bazy danych**|Debug.listmemory — /Unicode|
+|**du**|Debug.listmemory — /Unicode|
 
 ## <a name="example"></a>Przykład
 

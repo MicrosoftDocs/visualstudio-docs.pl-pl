@@ -1,5 +1,5 @@
 ---
-title: Projektant manifestu VSIX | Dokumentacja firmy Microsoft
+title: VSIX Manifest Designer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993565"
 ---
 # <a name="vsix-manifest-designer"></a>Projektant manifestu VSIX
 Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas instalacji rozszerzenia programu Visual Studio.  
@@ -90,7 +90,7 @@ Modyfikuje VSIX plik manifestu pakietu, który określa zachowanie podczas insta
   **Typ instalacji**  
   Wyświetla listę **rozszerzenie programu Visual Studio** i **zestaw SDK rozszerzeń** docelowy jako typy instalacji. Opcje różnią się w zależności od wybranego typu.  
   
-  **Rozszerzenie programu Visual Studio**  
+  **Visual Studio Extension**  
   Wyświetla listę **InstallationTarget** elementy, które opisują, jak można zainstalować pakietu i do produktów Visual Studio, które można zainstalować tego rozszerzenia. Każdy produkt został zidentyfikowany osobno według nazwy i wersji lub zakresu. Produkty mogą dodany do listy, modyfikacji i usunięte. Nazwa i wersja produktu odpowiadają **identyfikator** i **wersji** atrybuty skojarzonego **InstallationTarget** elementu.  
   
   **Zakres wersji** jest [12.0, 14,0] i używa następujący zapis:  

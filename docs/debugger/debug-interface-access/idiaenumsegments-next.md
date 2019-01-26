@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53f61874-d821-47ab-a1f5-27e982804a6a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ac8d4811cdad62f22d3d8101dc1530652bcb52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 965e226d4d3cfef563ee8237b96734e4d620ae42
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009742"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Pobiera określoną liczbę segmentów w kolejności wyliczenia.  

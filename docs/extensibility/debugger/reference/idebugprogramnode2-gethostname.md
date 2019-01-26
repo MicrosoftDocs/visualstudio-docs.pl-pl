@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326ae91be2f20029f6ccc4ffca5c5e31ca89a4dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84e57f6458f376fef226de63f730345fc7e86f30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006886"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Pobiera nazwę procesu hostingu programu.  

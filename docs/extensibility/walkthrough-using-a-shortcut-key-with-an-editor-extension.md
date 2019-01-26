@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953014"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988574"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Użyj klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.  

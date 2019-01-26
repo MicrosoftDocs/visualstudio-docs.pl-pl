@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120b5b6818900b8f177a7358d9ef0cee7bb88482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992623"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Znajdowanie nazwy procesu ASP.NET
 
@@ -34,8 +34,8 @@ Aby debugować działającego [!INCLUDE[vstecasp](../code-quality/includes/vstec
 1. W **dołączyć do procesu** okno dialogowe, typ pierwsze litery procesu nazwy z poniższej listy lub wprowadź je w polu wyszukiwania. Ta, która jest uruchomiona jest aplikacja ASP.NET działa. Dołącz do procesu debugowania aplikacji. 
    
     - *W3wp.exe* jest IIS 6.0 lub nowszym. 
-    - *Aspnet_wp.exe* jest wcześniejszych wersji usług IIS.
-    - *iisexpress.exe* jest programu IISExpress.
+    - *aspnet_wp.exe* is earlier versions of IIS.
+    - *iisexpress.exe* is IISExpress.
     - *DotNet.exe* jest platforma ASP.NET Core.
     - *Inetinfo.exe* jest starszych aplikacji ASP, uruchamianych w trakcie. 
 

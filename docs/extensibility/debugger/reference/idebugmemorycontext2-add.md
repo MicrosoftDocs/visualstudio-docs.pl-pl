@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e821be283958185f9290e65248bacabe6ab4f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9625bcdc69d4df157f4309ae24d4baafcda1264a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974347"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Dodaje określoną wartość do bieżącego kontekstu i zwraca nowy kontekst.  

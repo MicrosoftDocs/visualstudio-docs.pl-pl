@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: f14fa381a007579d39feafe878d1283635060997
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269764"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011528"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017100"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu, pracy w programie Visual Studio
 
@@ -55,7 +55,7 @@ Naciśnij klawisz **Ctrl**+**G** można szybko przechodzić do numer wiersza w k
 
 Ten błąd jest identyfikowany przez czerwony znak podkreślenia "Zygzakowata". Umieść kursor nad jej, aby uzyskać więcej informacji. Wprowadzić poprawki i jego znikną, chociaż może powodować nowy błąd z korekty. (Jest to nazywane "regresji").
 
-![Umieść błąd w usłudze Visual Studio](../ide/media/vs_ide_gs_debug_error_hover1.png)
+![Visual Studio error hover](../ide/media/vs_ide_gs_debug_error_hover1.png)
 
 Omówimy listę błędów i naprawić wszystkie błędy w kodzie.
 

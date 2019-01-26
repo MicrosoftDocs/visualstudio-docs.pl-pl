@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 090f70776ab3323be55d13888f29d4855386a511
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874592"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020896"
 ---
 # <a name="solutions-overview"></a>Omówienie rozwiązań
 Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Informacje o projekcie i stanie odnoszących się do rozwiązania są przechowywane w dwóch plikach innego rozwiązania. Plik rozwiązania (.sln) są oparte na tekście umieszczone pod kontrolą kodu źródłowego i udostępniana między użytkownikami i. Plik opcji (suo) użytkownika rozwiązania jest plikiem binarnym. Co w efekcie plik .suo nie można umieścić pod kontrolą kodu źródłowego i zawiera informacje specyficzne dla użytkownika.  

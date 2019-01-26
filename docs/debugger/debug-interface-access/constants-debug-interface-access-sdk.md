@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae34269cd0f15d522233a73e3500ded4f90a3d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852065"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969918"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Stałe (Zestaw SDK dostępu do interfejsu debugowania)
 Te stałe typu string może służyć do identyfikowania różnych sekcji plik bazy danych (PDB) programu debugowania za pośrednictwem DIA SDK.  
@@ -28,14 +28,14 @@ Te stałe typu string może służyć do identyfikowania różnych sekcji plik b
   
 |Macro|Wartość|  
 |-----------|-----------|  
-|`DiaTable_Symbols`|L "Symbole"|  
+|`DiaTable_Symbols`|L"Symbols"|  
 |`DiaTable_Sections`|L "Sekcji"|  
-|`DiaTable_SrcFiles`|L "Pliki_źródłowe"|  
+|`DiaTable_SrcFiles`|L"SourceFiles"|  
 |`DiaTable_LineNums`|L "LineNumbers"|  
-|`DiaTable_SegMap`|L "SegmentMap"|  
+|`DiaTable_SegMap`|L"SegmentMap"|  
 |`DiaTable_Dbg`|L "Dbg"|  
 |`DiaTable_InjSrc`|L "InjectedSource"|  
-|`DiaTable_FrameData`|L "FrameData"|  
+|`DiaTable_FrameData`|L"FrameData"|  
   
 ## <a name="example"></a>Przykład  
  Oto przykład przy użyciu jednej z tych symboli:  

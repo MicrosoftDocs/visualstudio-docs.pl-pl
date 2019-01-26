@@ -1,5 +1,5 @@
 ---
-title: 'CA2220: Finalizatory powinny wywoływać finalizatory klasy bazowej'
+title: 'CA2220: Finalizatory powinny wywoływać finalizator klasy bazowej'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4befae0ca3095994c3d48d20647045d4825154e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30892ce84e1370aec06e73a51f47c3de66dfa620
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998186"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Finalizatory powinny wywoływać finalizatory klasy bazowej
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Finalizatory powinny wywoływać finalizator klasy bazowej
 
 |||
 |-|-|

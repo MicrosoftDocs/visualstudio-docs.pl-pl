@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce30279cb58704ab712245ad69bcda197d0e7fc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdc20711d168a25ee28dde04849369a752fdb74a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988093"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Ten interfejs jest używany przez aparat debugowania (DE), aby wysyłać zdarzenia debugowania Menedżer debugowania sesji (SDM).  
@@ -47,7 +47,7 @@ IDebugEventCallback2 : IUnknown
  Jeśli pakiet implementuje [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) w kodzie zarządzanym zdecydowanie zalecane jest, <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> wywołana na różnych interfejsów, które są przekazywane do [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

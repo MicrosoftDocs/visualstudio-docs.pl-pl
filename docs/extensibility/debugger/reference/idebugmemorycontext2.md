@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acd36140d4624c2002b28f2d7932931817f46f56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 974466977995b866d70ad7e1619a6ae536886f6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870797"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007613"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Ten interfejs reprezentuje pozycję w przestrzeni adresowej maszyny z uruchomionym programem debugowanego programu.  
@@ -49,7 +49,7 @@ IDebugMemoryContext2 : IUnknown
  Visual Studio **pamięci** wywołania okna [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) uzyskać `IDebugMemoryContext2` interfejsu, który zawiera obliczane wyrażenie używane dla adresu pamięci. Ten kontekst jest następnie przekazywany do [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) i [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) do określenia adresu do odczytu lub zapisu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

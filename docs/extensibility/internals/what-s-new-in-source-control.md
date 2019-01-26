@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c373e061ba7aa057babccd178354f4577b2c74fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0eb0d88d0e4cf2628ef2c9c8ed2c9070f25aac9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004776"
 ---
 # <a name="what39s-new-in-source-control"></a>Co&#39;s Nowość w kontroli źródła
 W [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] może udostępnić rozwiązanie kontroli źródła ściśle zintegrowana z zastosowaniem kontroli źródła pakietu VSPackage. Ta sekcja zawiera opis funkcji kontroli źródła pakietów VSPackage i zawiera omówienie kroków wdrożenia.  

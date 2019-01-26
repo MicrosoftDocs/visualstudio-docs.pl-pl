@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4665d437290e75d1542e79d62f898f916576806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978142"
 ---
 # <a name="generateresource-task"></a>GenerateResource — zadanie
 Wykonuje konwersję między *.txt* i *resx* plików (w formacie zasobów opartych na języku XML) i środowisko uruchomieniowe języka wspólnego binarne *Resources* pliki, które można osadzić w binarnym środowiska uruchomieniowego pliku wykonywalnego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używana do konwersji *.txt* lub *resx* plików *Resources* plików. `GenerateResource` Zadanie jest podobne do [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -44,7 +44,7 @@ Wykonuje konwersję między *.txt* i *resx* plików (w formacie zasobów opartyc
 |`PublicClass`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, tworzy silnie typizowanej klasy zasobów jako klasę publiczną.|  
 |`References`|Opcjonalnie `String[]` parametru.<br /><br /> Odwołania można załadować typów w *resx* plików z. *resx* elementy danych pliku może mieć typ architektury .NET. Gdy *resx* plik jest do odczytu, musi to być rozwiązane. Zwykle rozwiązania problemu pomyślnie za pomocą standardowej, trwa ładowanie reguł. Jeśli podasz zestawów w `References`, ich wyższy priorytet.<br /><br /> Ten parametr nie jest wymagane dla silnie typizowanych zasobów.|  
 |`SdkToolsPath`|Opcjonalnie `String` parametru.<br /><br /> Określa ścieżkę do narzędzi zestawu SDK, takich jak *resgen.exe*.|  
-|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Pozycji przekazanych do tego parametru musi mieć jedną z następujących rozszerzeń pliku:<br /><br /> -   *.txt*: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   *resx*: Określa rozszerzenie pliku zasobów w formacie XML do konwersji.<br />-   *restext*: Określa tego samego formatu co *.txt*. To rozszerzenie innej jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe, zawierające zasoby z innych plikach źródłowych w procesie kompilacji.<br />-   *.resources*: Określa rozszerzenie pliku zasobu do konwersji.|  
+|`Sources`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa elementy do przekonwertowania. Pozycji przekazanych do tego parametru musi mieć jedną z następujących rozszerzeń pliku:<br /><br /> -   *.txt*: Określa rozszerzenie pliku tekstowego do przekonwertowania. Pliki tekstowe mogą zawierać tylko zasoby w postaci ciągów.<br />-   *resx*: Określa rozszerzenie pliku zasobów w formacie XML do konwersji.<br />-   *.restext*: Określa tego samego formatu co *.txt*. To rozszerzenie innej jest przydatne, jeśli chcesz wyraźnie odróżnić pliki źródłowe, zawierające zasoby z innych plikach źródłowych w procesie kompilacji.<br />-   *.resources*: Określa rozszerzenie pliku zasobu do konwersji.|  
 |`StateFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa ścieżkę do pliku opcjonalne pamięci podręcznej, który jest używany w celu przyspieszenia sprawdzania łączy w zależności *resx* plików wejściowych.|  
 |`StronglyTypedClassName`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę klasy dla silnie typizowanej klasy zasobów. Jeśli ten parametr nie jest określony, używany jest podstawowej nazwy pliku zasobów.|  
 |`StronglyTypedFilename`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa nazwę pliku dla pliku źródłowego. Jeśli ten parametr nie jest określony, nazwa klasy jest używany jako podstawowej nazwy pliku z rozszerzeniem zależne od języka. Na przykład: *MyClass.cs*.|  

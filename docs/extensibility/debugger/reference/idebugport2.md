@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be76132e263a95412810c9fd1c4ba7162af9a77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06026276b6f9b37f005ee296d56ee17df5c75ca8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876919"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962757"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Ten interfejs reprezentuje port debugowania na komputerze.  
@@ -52,7 +52,7 @@ IDebugPort2 : IUnknown
  Port lokalny zapewnia dostęp do wszystkich procesów i programy uruchomione na komputerze lokalnym. Inne porty może reprezentować połączenia kabel szeregowy do urządzenia z systemem Windows CE lub połączenie sieciowe z komputerem bez modelu DCOM. `IDebugPort2` Interfejs służy do znajdowania nazwy i identyfikatora portu i wyliczyć wszystkie procesy uruchomione na porcie. Funkcje służące do uruchamiania i zakończenie procesów na porcie są implementowane w `IDebugPortEx2` interfejsu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

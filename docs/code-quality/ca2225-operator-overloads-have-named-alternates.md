@@ -1,5 +1,5 @@
 ---
-title: 'CA2225: Operator overloads ma nazwanych zastępców'
+title: 'CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965136"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operator overloads ma nazwanych zastępców
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Przeciążenia operatorów mają nazwane elementy alternatywne
 
 |||
 |-|-|
@@ -44,7 +44,7 @@ ms.locfileid: "53954808"
 |+ (binarnych)|+|+ (binarnych)|Dodaj|
 |+=|+=|+=|Dodaj|
 |&|Oraz|&|BitwiseAnd|
-|&=|I =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|BitwiseOr|
 |&#124;=|Lub =|&#124;=|BitwiseOr|
 |--|Brak|--|Dekrementacja|
@@ -52,7 +52,7 @@ ms.locfileid: "53954808"
 |/=|/=|/=|Dzielenie|
 |==|=|==|Równa się|
 |^|XOR|^|XOR|
-|^=|XOR =|^=|XOR|
+|^=|Xor=|^=|XOR|
 |>|>|>|{1&gt;Compare&lt;1}|
 |>=|>=|>=|{1&gt;Compare&lt;1}|
 |++|Brak|++|Inkrementacja|
@@ -74,8 +74,8 @@ ms.locfileid: "53954808"
 |-(binarnych)|-(binarnych)|-(binarnych)|Odejmowanie|
 |-=|Brak|-=|Odejmowanie|
 |true|IsTrue|Brak|IsTrue (właściwość)|
-|-(jednoargumentowy)|Brak|-|negate —|
-|+ (jednoargumentowy)|Brak|+|znak plus|
+|-(jednoargumentowy)|Brak|-|Negate|
+|+ (jednoargumentowy)|Brak|+|Plus|
 |false|IsFalse|False|IsTrue (właściwość)|
 
  N/d == nie mogą być przeciążone w wybranym języku.

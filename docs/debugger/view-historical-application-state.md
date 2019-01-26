@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227281"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992701"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio (Visual Studio Enterprise)
 
@@ -111,7 +111,7 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszt
   * Alternatywnie: 
     1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
     2. Skompiluj aplikację docelową.
-    3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program pliki (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na debuger nie wchodzi i punktów przerwania.
 
        > [!Note]

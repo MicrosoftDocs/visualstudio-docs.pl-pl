@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010210"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
@@ -46,7 +46,7 @@ Menu kontekstowe **środowiska Python** węzła zawiera także dodatkowe polecen
 
 ## <a name="use-virtual-environments"></a>Korzystanie ze środowisk wirtualnych
 
-Środowisko wirtualne ma unikatową kombinację określonych interpreter języka Python i określony zbiór bibliotek, który różni się od innych środowisk globalnych i conda. Środowisko wirtualne jest specyficzne dla projektu i są przechowywane w folderze projektu. Ten folder zawiera środowisko biblioteki zainstalowane wraz z *pyvenv.cfg* pliku, który określa ścieżkę w środowisku *podstawowy interpreter* innym miejscu w systemie plików. (Oznacza to, że środowisko wirtualne nie zawiera kopię interpretera tylko łącza do niego). 
+Środowisko wirtualne ma unikatową kombinację określonych interpreter języka Python i określony zbiór bibliotek, który różni się od innych środowisk globalnych i conda. Środowisko wirtualne jest specyficzne dla projektu i są przechowywane w folderze projektu. Ten folder zawiera środowisko biblioteki zainstalowane wraz z *pyvenv.cfg* pliku, który określa ścieżkę w środowisku *podstawowy interpreter* innym miejscu w systemie plików. (Oznacza to, że środowisko wirtualne nie zawiera kopię interpretera tylko łącza do niego).
 
 Korzyścią z używania środowiska wirtualnego jest, że podczas tworzenia projektu wraz z upływem czasu, środowisko wirtualne zawsze odzwierciedla dokładnie zależności projektu. (Globalny środowisku współdzielonym, z drugiej strony, zawiera dowolnej liczby bibliotek czy będziesz ich używać w projekcie lub nie). Następnie można łatwo utworzyć *requirements.txt* pliku ze środowiska wirtualnego, który jest następnie używany do ponownej instalacji tych zależności na innym komputerze programowania lub produkcji. Aby uzyskać więcej informacji, zobacz [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
 

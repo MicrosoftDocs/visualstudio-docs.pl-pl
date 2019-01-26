@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe922960b0571593cc15581c29244798fd0f671e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899017"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018738"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu C# w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)i w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) wyświetlania określonego formatu.  
@@ -57,7 +57,7 @@ Użyjemy poniższy przykład kodu:
   
 |Specyfikator|Format|Oryginalnej wartości czujki|Wyświetla|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Wymuszenie obliczenia wyrażenia, które mogą być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<wartość >|  
+|ac|Wymuszenie obliczenia wyrażenia, które mogą być przydatne, gdy bezwarunkowa ocena właściwości i niejawne wywołania funkcji jest wyłączone.|Komunikat "niejawne Obliczanie funkcji zostało wyłączone przez użytkownika"|\<value>|  
 |d|Liczba całkowita dziesiętna|0x0065|101|  
 |dynamic|Wyświetla określony obiekt przy użyciu dynamicznego widoku|Wyświetla wszystkie elementy członkowskie obiektu, w tym widoku dynamicznego|Wyświetla tylko widoku dynamicznego|  
 |h|Szesnastkowa liczba całkowita|61541|0x0000F065|  

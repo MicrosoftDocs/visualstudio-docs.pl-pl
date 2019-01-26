@@ -1,5 +1,5 @@
 ---
-title: 'CA2213: Pola możliwe do rozporządzania należy rozporządzać'
+title: 'CA2213: Pola możliwe do likwidacji należy likwidować'
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8df7e124cd8dd8ba9764add4006f7244155de8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a57b3f094449665ec49688b21ebf89dc8b7a1669
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998238"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do rozporządzania należy rozporządzać
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Pola możliwe do likwidacji należy likwidować
 
 |||
 |-|-|

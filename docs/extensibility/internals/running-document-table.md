@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa66cb409b1ccdf8a0d60635c343fe7f356090af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da0ec7eb05c27c3c5f78a4337f2df508b3f3e0ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945908"
 ---
 # <a name="running-document-table"></a>Uruchamianie tabeli dokumentu
 IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struktury o nazwie uruchomionej tabeli dokumentu (Normalizacją). Ta lista zawiera wszystkie otwarte dokumenty w pamięci, niezależnie od tego, czy te dokumenty są obecnie edytowane. Dokument jest dowolny element, który jest trwały, w tym pliki w projekcie lub w pliku projektu głównego (na przykład plik .vcxproj).  
@@ -57,5 +57,5 @@ IDE utrzymuje listę wszystkich aktualnie otwarte dokumenty w wewnętrznej struk
 -   Identyfikator hierarchii lub element umożliwia poproś system projektu dla ścieżki pełny dokument, a następnie wyszukaj element Normalizacją.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Użycie flagi RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   
+ [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
  [Trwałość i uruchamianie tabeli dokumentów](../../extensibility/internals/persistence-and-the-running-document-table.md)

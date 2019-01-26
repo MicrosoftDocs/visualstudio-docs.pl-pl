@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 23c4997f6079a2b5f27a380afb4ef07b84c4fa61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38403c71218eed3e82a18c8ecf526fa3189d9939
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012420"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 

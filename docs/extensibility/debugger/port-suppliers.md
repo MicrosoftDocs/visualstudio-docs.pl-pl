@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e134b9b4adeb45693a9841a0a867a9c3630bf2aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf81cfeea10a0687e84982db595a5c7a9aab6074
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998225"
 ---
 # <a name="port-suppliers"></a>Dostawcy portów
 W architekturze debugera *dostawcy portu*:  

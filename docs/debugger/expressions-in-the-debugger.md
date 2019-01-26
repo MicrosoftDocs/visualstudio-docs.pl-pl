@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dbf98cf8fd6ae7990440e820febd860138b9162
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009859"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
@@ -102,7 +102,7 @@ int main()
 |**Długość ciągu**|strlen —, wcslen —, strnlen — wcsnlen —|  
 |**Porównanie ciągów**|strcmp — wcscmp —, stricmp —, _stricmp —, _strcmpi —, wcsicmp —, _wcscmpi, _wcsnicmp —, strncmp —, wcsncmp —, strnicmp —, wcsnicmp —|  
 |**Ciąg wyszukiwania**|strchr —, wcschr —, strstr — wcsstr —|  
-|**Win32**|Polecenia GetLastError(), TlsGetValue()|  
+|**Win32**|GetLastError(), TlsGetValue()|  
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Te funkcje wymagają procesu, który jest debugowany należy uruchomić w systemie Windows 8. Debugowanie plików zrzutu generowane z urządzenia z systemem Windows 8 również wymaga, aby komputer z programem Visual Studio systemem operacyjnym Windows 8. Jednak jeśli przeprowadzasz debugowanie zdalne urządzenie Windows 8, komputer z programem Visual Studio może być uruchomiony Windows 7.|  
 |**Różne**|__log2<br /><br /> Zwraca dziennik podstawie 2 określona liczba całkowita zaokrąglona do najbliższej liczby całkowitej. niższe.|  
   

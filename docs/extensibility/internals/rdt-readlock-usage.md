@@ -1,5 +1,5 @@
 ---
-title: Użycie flagi RDT_ReadLock | Dokumentacja firmy Microsoft
+title: RDT_ReadLock Usage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96248d799eae5005c996fa1cc192ee3b447571f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d90e2fcdd07738aaa9cdda28f8d131767bf7ffe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011732"
 ---
 # <a name="rdtreadlock-usage"></a>Użycie flagi RDT_ReadLock
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes | Dokumentacja firmy Microsoft
+title: IEnumDebugCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 11aa768d-1852-44d6-9de3-17f9bafaded2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebf7250f0845eb666b910b5ddcce266be1ea9361
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30540c768f657a51b7245c9f6a547289fdaa1eee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001423"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Wylicza atrybutów niestandardowych.  

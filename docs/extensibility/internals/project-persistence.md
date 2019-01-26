@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15b605d4beffc85c2ac5e8803d627c13dd4c7d38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021809"
 ---
 # <a name="project-persistence"></a>Trwałość projektu
 Trwałość stanowi kluczy dla Twojego projektu. Większość projektów używać elementów projektu, które reprezentują plików. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje również projektów, których dane są inne niż oparte na pliku. Pliki należące do projektu i pliku projektu musi być utrwalone. IDE powoduje, że projekt, aby zapisać siebie lub elementu projektu.  

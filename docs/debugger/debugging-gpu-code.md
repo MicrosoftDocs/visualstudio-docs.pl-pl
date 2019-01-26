@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6344d37566fb37fcb7b35d005aa6bef66d18dd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964265"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (GPU). Obsługa w programie Visual Studio do debugowania GPU obejmuje wykrywania wyścigu, uruchamianie procesów i dołączanie do, a Integracja debugowania systemu windows.  
@@ -57,7 +57,7 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
   
 -   [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md) (pasek narzędzi debugowania lokalizacji)  
   
--   [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Instrukcje: Korzystanie z okna wątków procesora GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Wyjątki synchronizacji danych  
  Debuger można określić wiele warunków synchronizacji danych podczas wykonywania. Gdy zostanie wykryty warunek, debuger przejdzie w stan przerwania. Dostępne są dwie opcje —**Przerwij** lub **Kontynuuj**. Za pomocą **wyjątki** okno dialogowe, możesz określić, czy debuger wykryje te warunki, a także jakich warunkach go spowoduje przerwanie dla. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md). Można również użyć **opcje** okno dialogowe, aby określić, czy debuger powinien Ignoruj wyjątki, jeśli dane, które są zapisywane nie zmienia wartość danych. Aby uzyskać więcej informacji, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  

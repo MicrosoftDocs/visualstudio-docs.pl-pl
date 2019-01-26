@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2 | Dokumentacja firmy Microsoft
+title: IDebugExpressionEvaluationCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d56671d3e0edecde7d67937e07b70cab335efefe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 322831fa7946de02cffc37f1b550cc79bc95ca86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988981"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po zakończeniu oceny wyrażenia asynchroniczne.  
@@ -48,7 +48,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
  Jeśli ocena zakończyła się niepowodzeniem, `DEBUG_PROPINFO_VALUE` i `DEBUG_PROPINFO_ATTRIB` nie będzie można ustawić flagi [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która jest zwracana przez [getpropertyinfo —](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) ( [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt jest tworzony przez DE i zwracane w `IDebugExpressionEvaluationCompleteEvent2` zdarzeń, jeśli oceny nie powiodła się).  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

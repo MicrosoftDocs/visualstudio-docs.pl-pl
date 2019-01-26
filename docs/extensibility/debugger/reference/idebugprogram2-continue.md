@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 225a1d78e3fb6610d9cbcebd1253131f0fe9caf2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938111"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028546"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Nadal uruchomiony ten program w stanie zatrzymania. Dowolnego poprzedniego stanu wykonywania (np. krok) są zachowywane, i ponownym wykonaniem uruchamiania programu.  

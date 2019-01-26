@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca62a511cd247f3344e319a7c3b4946b848103f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f648888e41557e7debe460d99c07cd1017150c0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909702"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992298"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Ten interfejs reprezentuje pozycji w dokumencie pliku źródłowym.  
@@ -49,7 +49,7 @@ IDebugDocumentContext2 : IUnknown
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Przenosi kontekstu dokumentu o podanej liczbie wierszy lub instrukcji.|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

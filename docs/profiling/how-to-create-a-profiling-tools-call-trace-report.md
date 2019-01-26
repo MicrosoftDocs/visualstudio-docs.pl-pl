@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d48b266108a053fa24da517d2367fe85b2b6a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d38bc320e2c1604930c5f5767408876089e4119a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985868"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004867"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania
 *Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Wyświetla listę informacji chronometrażu dla każdego punktu wejścia i wyjścia do funkcji w aplikacji oraz dla każdego wywołania innych funkcji przez funkcję. Raporty śledzenia wywołań są dostępne dla danych profilowania, tylko wtedy, gdy zostały one pobrane metodą instrumentacji.  
@@ -30,12 +30,12 @@ ms.locfileid: "53985868"
   
 2.  W wierszu polecenia wpisz następujące polecenie:  
   
-     *ToolsPath* **VSPerfReport** *Plik_vsp* **/calltrace [podsumowań w plikach]**  
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
     |||  
     |-|-|  
     |*ToolsPath*|Ścieżka narzędzi wiersza poleceń Profiling Tools. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*Plik_vsp*|Dane profilowania (. *Vsp* lub. *vsps*) pliku. Akceptowane są pełne i częściowe ścieżki.|  
+    |*VSPFile*|Dane profilowania (. *Vsp* lub. *vsps*) pliku. Akceptowane są pełne i częściowe ścieżki.|  
     |Xml|Generuje raport w formacie XML.|  
 
   

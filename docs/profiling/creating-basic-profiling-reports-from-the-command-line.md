@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee2494ffaf8dce2c62564a866c73bb3663e1813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c66829402c5002f21ec983a3946273f062a85cdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017438"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Tworzenie podstawowych raportów profilowania z wiersza polecenia
 W tym artykule opisano podstawowe polecenia VSPerfReport generujące wartości rozdzielanych przecinkami (. *CSV*) raportów. *vsp* lub. *vsps* pliku danych profilowania. Aby uzyskać opis wszystkich opcji raportu, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
@@ -37,7 +37,7 @@ W tym artykule opisano podstawowe polecenia VSPerfReport generujące wartości r
 |-----------------------|------------------------|----------------------|  
 |**CallerCallee**|Reprezentuje relacje nadrzędne/podrzędne między funkcjami.|-   [Próbkowanie danych](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/caller-callee-view-contention-data.md)|  
 |**Function**|Wyświetla listę danych profilowania posortowanych według funkcji.|-   [Próbkowanie danych](../profiling/functions-view-sampling-data.md)<br />-   [Dane Instrumentacji](../profiling/functions-view-instrumentation-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dane Instrumentacji pamięci platformy .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/functions-view-contention-data.md)|  
-|**Alokowania**|Reprezentuje ścieżki wykonywania i dane profilowania funkcji w trakcie uruchomienia profilowania.|-   [Dane Instrumentacji](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Próbkowanie danych](../profiling/call-tree-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dane Instrumentacji pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/call-tree-view-contention-data.md)|  
+|**CallTree**|Reprezentuje ścieżki wykonywania i dane profilowania funkcji w trakcie uruchomienia profilowania.|-   [Dane Instrumentacji](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Próbkowanie danych](../profiling/call-tree-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dane Instrumentacji pamięci platformy .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dane rywalizacji](../profiling/call-tree-view-contention-data.md)|  
 |**Counter**|Wyświetla listę znaczników profilowania i wartości licznika wydajności Windows, które zostały zebrane podczas uruchomienia profilowania.|-   [Widok znaczników](../profiling/marks-view.md)|  
 |**Adresów IP**|Wyświetla listę danych profilowania posortowanych według instrukcji.|-   [Próbkowanie danych](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dane próbkowania pamięci platformy .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dane rywalizacji](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**Życia**|Wyświetla listę okresów istnienia przydzielonych obiektów.|-   [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)|  

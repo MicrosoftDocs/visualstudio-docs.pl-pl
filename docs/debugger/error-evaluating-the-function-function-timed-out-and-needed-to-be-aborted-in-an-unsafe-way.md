@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72bd821d7ecd32e82b2ad3b02debe03ff511531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be26ff3c1c878cee5f2760897f3652de30c52d52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883314"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004789"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: Obliczenie funkcji &#39;funkcja&#39; przekroczyła limit czasu i konieczne było przerwanie procesu w niebezpieczny sposób
 

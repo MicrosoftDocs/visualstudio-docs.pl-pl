@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1a5c3fd3e4960381edc390ba473c53b9e4b62d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986062"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 
@@ -25,16 +25,16 @@ Po [zainstalowany program Visual Studio Tools for AI](installation.md), można �
 
 2. Uruchom program Visual Studio.
 
-3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
+3. Wybierz **Widok > Team Explorer** otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
 
-    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media/create-project-repo/team-explorer.png)
+    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media/create-project-repo/team-explorer-devops.png)
 
 4. W polu adres URL w taki sposób, w obszarze **lokalne repozytoria Git**, wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folderu na sklonowane pliki i wybierz **klonowania**.
 
     > [!Tip]
     > Folder, który określisz w programie Team Explorer jest dany folder do odbierania sklonowane pliki. W odróżnieniu od `git clone` polecenia Tworzenie własnego klonu w programie Team Explorer nie tworzy automatycznie podfolder o nazwie repozytorium.
 
-5. Po ukończeniu klonowania, kliknij dwukrotnie folder repozytorium w dolnej części programu Team Explorer, aby przejść do pulpitu nawigacyjnego repozytorium. W obszarze **rozwiązania**, wybierz opcję **nowy...** .
+5. Po ukończeniu klonowania, kliknij dwukrotnie folder repozytorium w dolnej części programu Team Explorer, aby przejść do pulpitu nawigacyjnego repozytorium. W obszarze **rozwiązania**, wybierz opcję **New**.
 
     ![Okno Eksploratora zespołu, tworząc nowy projekt z klonu](media/create-project-repo/team-explorer-new-project.png)
 
@@ -44,7 +44,7 @@ Po [zainstalowany program Visual Studio Tools for AI](installation.md), można �
 
 8. W Eksploratorze rozwiązań rozwiń `TensorFlow Examples> MNIST` węzła, kliknij prawym przyciskiem myszy `convolutional.py`i wybierz **Ustaw jako plik startowy**. W tym kroku opisano programu Visual Studio, plik, który należy używać, podczas uruchamiania projektu.
 
-9. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **Debuguj > Uruchom bez debugowania** do uruchomienia programu. Jeśli widzisz ", ponownie Sprawdź katalog roboczy ustawienia w poprzednim kroku.
+9. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **Debuguj > Uruchom bez debugowania** do uruchomienia programu. Jeśli zostanie wyświetlony błąd, sprawdź ponownie ustawienia katalogu roboczego w poprzednim kroku.
 
 10. Gdy program zostanie uruchomiony pomyślnie, zobaczysz go uruchomić, aby pobrać szkolenia i testowanie zestawu danych, a następnie uczenie modelu oraz Twoje współczynnik błędów wyjścia. Chcesz, aby współczynnik błędów, aby zmniejszyć wraz z upływem czasu
 
@@ -57,6 +57,6 @@ Po [zainstalowany program Visual Studio Tools for AI](installation.md), można �
 
    ![Uruchom narzędzia tensorboard](media/create-project-repo/run-tensorboard.png)
 
-12. Zwróć uwagę, błąd zmniejsza się z czasem, co oznacza, że w celu ulepszania jakości
+12. Zwróć uwagę, błąd zmniejsza się z czasem, co oznacza, że w celu ulepszania jakości.
 
    ![Uruchom narzędzia tensorboard](media/create-project-repo/tensorboard.png)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987327"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Zachowaniem nowe lub zostały zmienione z kartami edytora
 Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edytor programu Visual Studio i planujesz używać edytora karty (lub podkładki) zamiast przy użyciu nowego interfejsu API, należy pamiętać o następujących różnicach zachowania kart edytora w odniesieniu do poprzedniego podstawowy edytor.  
@@ -120,7 +120,7 @@ Jeśli aktualizujesz kodu napisanego dla wcześniejszych wersji podstawowy edyto
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Metoda zakończy się niepowodzeniem, jeśli przekażesz w klasie, który nie implementuje albo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> lub <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Niestandardowe akcje Win32 rysowanych przez właściciela podręczne nie są już obsługiwane.  
   
-#### <a name="smarttags"></a>Tagi inteligentne  
+#### <a name="smarttags"></a>SmartTags  
  Brak obsługi karty tagów inteligentnych utworzonych za pomocą, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfejsów.  
   
 #### <a name="dte"></a>DTE  

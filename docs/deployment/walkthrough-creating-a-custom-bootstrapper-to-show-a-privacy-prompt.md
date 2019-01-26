@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8719f3dc6d892801135d14d093c265445e90fcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021536"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: Tworzenie niestandardowego programu inicjującego wraz z monitem o prywatności
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.  
@@ -34,7 +34,7 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   Program Visual Studio 2010.  
+-   Visual Studio 2010.  
   
 ## <a name="create-an-update-consent-dialog-box"></a>Utwórz okno dialogowe zgody aktualizacji  
  Wyświetlenie monitu o prywatności, należy utworzyć aplikację, która prosi czytnik do wyrażenia zgody na automatyczne aktualizacje aplikacji.  

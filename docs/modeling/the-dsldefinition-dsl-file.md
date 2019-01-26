@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aff681c72b17882db8f7e97daae45bb5da69347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995872"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -55,7 +55,7 @@ Ta sekcja definiuje wygląd elementów łączników, które pojawiają się w pr
 
 Ta sekcja definiuje schemat serializacji i zawiera dodatkowe informacje na temat sposobu każdej klasy są zapisywane do pliku.
 
-### <a name="explorerbehavior"></a>Zachowania ExplorerBehavior
+### <a name="explorerbehavior"></a>ExplorerBehavior
 
 Ta sekcja definiuje sposób, w jaki **Eksplorator DSL** okna jest wyświetlany, gdy użytkownik edytuje modelu.
 
@@ -407,7 +407,7 @@ W pliku modelu serializowane pełną moniker elementu jest ścieżka z katalogu 
 
 Możesz ustawić **IsMonikerQualifier** atrybutu dla właściwości ciągu i podaj dodatkowe sposobem konstruowania pełną nazwę elementu. Na przykład w plik DslDefinition.dsl **Namespace** jest kwalifikatorem monikera.
 
-### <a name="xmlrelationshipdata"></a>Element XmlRelationshipData
+### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 W pliku modelu serializowane łącza (relacji osadzania i odwołania) są reprezentowane przez węzły podrzędne końca źródło relacji. Aby osadzić relacje, węzeł podrzędny zawiera poddrzewo. W przypadku relacji odwołania węzeł podrzędny zawiera moniker elementu, który odwołuje się do innej części drzewa.
 

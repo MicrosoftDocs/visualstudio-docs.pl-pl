@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d143eb9750aecfcadf63fe999df858ae02dd18a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882e08f155d3da05b63a74850ec966ef71a611c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991037"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.
 Ten komunikat o błędzie oznacza, że program Visual Studio nie można odnaleźć poprawne wystąpienie programu Visual Studio Monitor zdalnego debugowania na komputerze zdalnym. Visual Studio Monitor zdalnego debugowania musi być zainstalowany dla zdalnego debugowania do pracy. Aby uzyskać informacje dotyczące pobierania i konfigurowania zdalnego debugera, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a211c7e3c338c962c75d31871515c4398dd04406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998472"
 ---
 # <a name="scccheckin-function"></a>Funkcja SccCheckin
 Ta funkcja sprawdza, czy wcześniej pobranych plików do systemu kontroli źródła, przechowywania zmian i tworzenie nowej wersji. Ta funkcja jest wywoływana z liczbą i tablicę nazw plików do wyewidencjonowania.  

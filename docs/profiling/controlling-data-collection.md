@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c1f0b435790622bee54b6cf91d57bd0cc9be29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32f61ab0e7922b2d7eb721fa8b50ba1fd8dd54df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848789"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995651"
 ---
 # <a name="control-data-collection"></a>Sterowanie zbieraniem danych
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Narzędzia profilowania umożliwiają kontroli po danych profilowania zbieranych podczas sesji wydajności i określić funkcje, które są profilowane. W tej sekcji opisano sposób uruchamiają i zatrzymują zbieranie danych z **Eksplorator wydajności** i **kontroli zbierania danych** systemu windows oraz sposób ograniczyć liczbę obiektów, dla których są zbierane dane profilowania.  

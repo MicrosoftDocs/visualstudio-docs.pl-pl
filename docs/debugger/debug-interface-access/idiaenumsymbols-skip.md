@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e601fbc9-b10b-41c7-8180-959e57efabe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 492748dc54f68d4f888b8cfb6ad8e27ec44435d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0168c3f58cf9bd701f0cc34edf77673c70e66222
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918628"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021445"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Pomija określoną liczbę symboli w kolejności wyliczenia.  

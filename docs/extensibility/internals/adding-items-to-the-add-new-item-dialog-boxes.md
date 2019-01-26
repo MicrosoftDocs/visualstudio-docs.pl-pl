@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989955"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna się od kluczy rejestru. Jak pokazano w następujących wpisach rejestru **AddItemTemplates** sekcja zawiera ścieżkę i nazwę katalogu, w które elementy udostępnione w **Dodaj nowy element** są umieszczane okno dialogowe.  
@@ -27,7 +27,7 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
 
  Pierwszy identyfikator GUID jest identyfikator CLSID dla projektów tego typu; drugi identyfikator GUID wskazuje typ projektu zarejestrowanego dla szablonów Dodaj elementy:  
 
- **\\{C061DB26-5833-11D2-96F5-000000000000} \\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
  **@** = #6 
 

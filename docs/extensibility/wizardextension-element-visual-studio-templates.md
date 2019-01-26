@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c67d85666cc9dd45186b13d9a95ea37eb86447ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e3b2a01976dede37e3f20d5b9fcc8853e548502
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986166"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension — Element (szablony Visual Studio)
 Zawiera elementy rejestracji dostosowywania Kreatora szablonu.  
@@ -91,6 +91,6 @@ Zawiera elementy rejestracji dostosowywania Kreatora szablonu.
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   
  [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

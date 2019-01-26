@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5842b79e6dd38ed99a7a255b4164762b1dd1b68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6102c0897c80fc927713d2f8bb1e5c83708e6bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000201"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Określa, dlaczego ten proces został uruchomiony dla debugowania.  
@@ -65,7 +65,7 @@ public enum enum_DEBUG_REASON {
  Zwrócone w wyniku [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
