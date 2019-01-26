@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f05a28ab046c1c0221162bce623a2ccf983f3d43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958150"
 ---
 # <a name="error-codes"></a>Kody błędów
 Po powrocie z funkcji API wtyczki kontroli źródła wystąpił błąd oczekuje się jedną z następujących kodów błędów. Wszystkie błędy są negatywne, ostrzeżenia i kody błędów informacyjny dodatnia, i sukcesu ma wartość 0.  

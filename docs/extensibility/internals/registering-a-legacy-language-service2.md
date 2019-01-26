@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5d65617a354bc5e752d138bc2cf80261ba2736a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955162"
 ---
 # <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
 Poniższe sekcje zawierają listę wpisów rejestru dla różnych języków opcje usługi dostępne w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -29,9 +29,9 @@ Poniższe sekcje zawierają listę wpisów rejestru dla różnych języków opcj
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID usługi języka.|  
-|LangResID|REG_DWORD|0x0 0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy języka zlokalizowanego tekstu.|  
-|Package|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID pakietu VSPackage.|  
+|(Domyślnie)|REG_SZ|*\<GUID>*|Identyfikator GUID usługi języka.|  
+|LangResID|REG_DWORD|0x0-0xffff|Ciąg identyfikatora zasobów (ResID) dla nazwy języka zlokalizowanego tekstu.|  
+|Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Określa, czy **uzupełniania instrukcji** opcji na liście **opcje** okno dialogowe są włączone.|  
 |ShowSmartIndent|REG_DWORD|0-1|Określa, czy możliwość dokonania wyboru **inteligentne** wcięcia w **opcje** okno dialogowe jest włączona.|  
 |RequestStockColors|REG_DWORD|0-1|Określa, czy niestandardowe lub domyślne kolory Kolor słów kluczowych.|  
@@ -86,8 +86,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ|Atrybut resID|Zlokalizowana wyświetlana nazwa ta strona opcji. Nazwa może zawierać tekst dosłowny lub #`nnn`, gdzie `nnn` jest identyfikator zasobu ciągu w towarzyszącej bibliotece DLL z określonego pakietu VSPackage.|  
-|Package|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID pakietu VSPackage, który implementuje ta strona opcji.|  
-|Strona|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID strony właściwości, do żądania z pakietu VSPackage, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli tego wpisu rejestru nie jest obecny, klucz rejestru w tym artykule opisano węzła nie strony.|  
+|Package|REG_SZ|*GUID*|Identyfikator GUID pakietu VSPackage, który implementuje ta strona opcji.|  
+|Strona|REG_SZ|*GUID*|Identyfikator GUID strony właściwości, do żądania z pakietu VSPackage, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metody. Jeśli tego wpisu rejestru nie jest obecny, klucz rejestru w tym artykule opisano węzła nie strony.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
-|(Domyślnie)|REG_SZ|*IDENTYFIKATOR GUID*|Identyfikator GUID usługi Usługa języka domyślnego dla tego typu rozszerzenia nazwy pliku.|  
+|(Domyślnie)|REG_SZ|*GUID*|Identyfikator GUID usługi Usługa języka domyślnego dla tego typu rozszerzenia nazwy pliku.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -140,8 +140,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nazwa na karcie przybornika, aby ustawić domyślną, gdy edytora jest aktywny.|  
 |Nazwa wyświetlana|REG_SZ|Atrybut resID|Nazwa do wyświetlenia w **Otwórz za pomocą** okno dialogowe. Nazwa jest identyfikator ciągu zasobu lub nazwę formatu standardowego.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Używany do **Otwórz za pomocą** polecenia menu. Jeśli chcesz wyświetlić listę domyślnego edytora tekstu, na liście dostępnych edytorów dla określonego typu pliku, ta wartość 1.|  
-|LinkedEditorGUID|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Używane dla dowolnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostarczane do Edytor kodu źródłowego za pomocą oraz bez kodowania.<br /><br /> GUID określony nazwę podklucza który jest stroną kodową fabryki edytora; połączone GUID określony tego wpisu rejestru to fabryki edytora regularne. Celem tego wpisu jest, że jeśli IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE podejmie próbę użycia edytora dalej na liście. Ten edytor dalej nie powinien być fabryka edytora strony kodowej, ponieważ tej fabryki edytora jest zasadniczo taki sam jak fabryka edytora, który uległ awarii.|  
-|Package|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Używane dla dowolnej usługi języka, który można otworzyć pliku z obsługą stronę kodową. Na przykład po otwarciu pliku txt przy użyciu **Otwórz za pomocą** polecenia i opcje są dostarczane do Edytor kodu źródłowego za pomocą oraz bez kodowania.<br /><br /> GUID określony nazwę podklucza który jest stroną kodową fabryki edytora; połączone GUID określony tego wpisu rejestru to fabryki edytora regularne. Celem tego wpisu jest, że jeśli IDE nie można otworzyć pliku przy użyciu domyślnego edytora, IDE podejmie próbę użycia edytora dalej na liście. Ten edytor dalej nie powinien być fabryka edytora strony kodowej, ponieważ tej fabryki edytora jest zasadniczo taki sam jak fabryka edytora, który uległ awarii.|  
+|Package|REG_SZ|*\<GUID>*|Identyfikator GUID pakietu VSPackage ResID nazwę wyświetlaną.|  
   
 ### <a name="example"></a>Przykład  
   
@@ -162,7 +162,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nazwa|Typ|Zakres|Opis|  
 |----------|----------|-----------|-----------------|  
 |(Domyślnie)|REG_SZ||Nieużywane.|  
-|*\<IDENTYFIKATOR GUID &GT;*|REG_SZ|""|Klucz do logicznych widoków obsługiwane. Może mieć jako wiele z nich, ilu potrzebujesz. Nazwa wpisu rejestru to, co jest ważne, nie wartość, która zawsze jest ciągiem pustym.|  
+|*\<GUID>*|REG_SZ|""|Klucz do logicznych widoków obsługiwane. Może mieć jako wiele z nich, ilu potrzebujesz. Nazwa wpisu rejestru to, co jest ważne, nie wartość, która zawsze jest ciągiem pustym.|  
   
 ### <a name="example"></a>Przykład  
   

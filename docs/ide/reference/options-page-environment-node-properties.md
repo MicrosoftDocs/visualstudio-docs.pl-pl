@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959817"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
@@ -133,7 +133,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnie załadowanego rozwiązania<br />-2: Pokaż **Otwórz projekt** okno dialogowe<br />-3: Pokaż **nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
+|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>, przy użyciu wartości od 0 do 5:<br /><br /> -   0: Otwórz stronę główną<br />-   1: Załaduj ostatnie załadowanego rozwiązania<br />-   2: Pokaż **Otwórz projekt** okno dialogowe<br />-   3: Pokaż **nowy projekt** okno dialogowe<br />-   4: Pokaż puste środowisko<br />-   5: Pokaż stronę początkową|
 |StartPageRSSUrl|Get/Set (ciąg)|Adres URL dla źródła danych RSS, jest używany podczas uruchamiania.|
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża strona startowa po każdym przejściu z interwałem określonym w StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (krótki)|Interwał w minutach, aby odświeżyć stronę początkową.|

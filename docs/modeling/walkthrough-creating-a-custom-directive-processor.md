@@ -7,19 +7,19 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b5a832be03280ce41cad1930e55d4b88e18a40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932431"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: Tworzenie niestandardowego procesora dyrektywy
 
@@ -660,7 +660,7 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
    | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Ścieżka do rozwiązania ></strong>CustomDP\bin\Debug\CustomDP.dll |
+   | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:
 

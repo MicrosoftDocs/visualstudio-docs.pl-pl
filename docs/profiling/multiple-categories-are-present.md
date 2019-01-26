@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858094"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956821"
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
 Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w danym momencie. Zwróć uwagę, że nie są wyświetlane dwa kolory, jeden w pionie skumulowany z drugiej strony. Te kolory reprezentują tylko najważniejsze dwa najczęstsze działania w danym okresie. Częstotliwości te dwa działania są wyświetlane względem siebie jako trzecie lub połowami kreska pionowa. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji Widok wątków.  

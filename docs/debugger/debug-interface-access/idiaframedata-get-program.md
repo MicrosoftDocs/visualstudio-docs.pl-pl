@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_program — | Dokumentacja firmy Microsoft
+title: IDiaFrameData::get_program | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5552f242e2c53791fd4afc7831a2c5b3cadcdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f356dec92e1553eba0b8704f6d456b4d1fb4326f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989925"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916345"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Pobiera ciąg program, który jest używany do obliczania rejestru ustawić przed wywołaniem do bieżącej funkcji.  

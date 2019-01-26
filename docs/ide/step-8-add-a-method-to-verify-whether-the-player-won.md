@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d06338a92722b6e969d45960eb449b0a6dcf2a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af467c46899f03422dff654607574f1a5ff14383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925385"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodaj metodę, aby sprawdzić, czy gracz wygrał
 Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna się kończyć kiedy gracz wygrywa, więc trzeba dodać `CheckForWinner()` metodę, aby sprawdzić, czy gracz wygrał.

@@ -1,5 +1,5 @@
 ---
-title: 'CA1025: Zastąp powtarzające się argumenty tablicą params'
+title: 'CA1025: Zastąp powtarzalne argumenty tablicą params'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: reference
@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4d2bb3330883e44b015698b740cd6403f953dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de109dddf3bc0ddb8cd50df8dc27e81111d4b6df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868868"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938513"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Zastąp powtarzające się argumenty tablicą params
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Zastąp powtarzalne argumenty tablicą params
 
 |||
 |-|-|

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21cb675136ba5180c8a7d26073ea16e6c6831aac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23bdb6bc462f88f1409fdfb3ab792bce092acb0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961221"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
 W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczegółowe dane dla składnika klienta (autonomiczny) przy użyciu metody Instrumentacji z wiersza polecenia.  

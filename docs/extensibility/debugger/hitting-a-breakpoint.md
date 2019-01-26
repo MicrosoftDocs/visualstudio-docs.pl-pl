@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728258dc363f906e005c654909cb86fd782824a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0df2de67466205c9dfe3cd27b338762b80c888ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935635"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959073"
 ---
 # <a name="hit-a-breakpoint"></a>Trafiony punkt przerwania
 W poniższej sekcji opisano proces, gdy aparat debugowania (DE) trafienia punktu przerwania podczas uruchamiania lub przechodzenie krok po kroku:  

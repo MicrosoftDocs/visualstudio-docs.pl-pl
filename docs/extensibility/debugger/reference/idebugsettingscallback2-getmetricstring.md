@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796d2571b7fdf3bfe7d157a89c4fbebe45aacced
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45f88191dc626bfccccb7fad7ce1cadd398f47b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959843"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Pobiera ciąg wartość metryki nadać jej nazwę.  

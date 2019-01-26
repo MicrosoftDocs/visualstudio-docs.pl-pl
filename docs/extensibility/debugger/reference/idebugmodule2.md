@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af77d25a0bde9f01e27c4f99dd90aff055607395
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ea20dac16cdffbac24cbca68c1a337a250ea8cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899694"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922772"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Ten interfejs reprezentuje moduł — czyli jednostkę pliku wykonywalnego programu — takich jak biblioteki DLL.  
@@ -50,7 +50,7 @@ IDebugModule2 : IUnknown
  Informacje o module mogą być wyświetlane w **modułów** okna środowiska IDE.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -59,6 +59,6 @@ IDebugModule2 : IUnknown
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
- [Getmodule —](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
+ [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

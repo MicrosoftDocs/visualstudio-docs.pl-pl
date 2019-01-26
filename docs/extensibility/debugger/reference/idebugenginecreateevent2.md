@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineCreateEvent2 | Dokumentacja firmy Microsoft
+title: IDebugEngineCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: accf18a72969d160d9b4469d9f0e6f4d843a5c70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7164137d2598f564f5bb2c107f9e1ffdff173d20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963165"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069658"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Aparat debugowania (DE) wysyła ten interfejs do Menedżer debugowania sesji (SDM), gdy tworzone jest wystąpienie DE.  
@@ -42,7 +42,7 @@ IDebugEngineCreateEvent2 : IUnknown
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Pobiera obiekt, który reprezentuje aparat debugowania nowo utworzony (DE).|  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918605"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Edytowanie kodu języka R w programie Visual Studio
 
@@ -40,7 +40,7 @@ Aby zmienić to zachowanie, zobacz **zaawansowane** > **sprawdzanie składni** w
 
 ## <a name="edit-and-organize-code"></a>Edytuj i organizowania kodu
 
-Podczas pisania kodu RTVS zapewnia automatyczne uzupełnianie, zgodnie z opisem na [IntelliSense](r-intellisense.md) strony. Wykonuje też, automatycznego formatowania, takie jak uzupełnianie nawiasów klamrowych i nawiasy: 
+Podczas pisania kodu RTVS zapewnia automatyczne uzupełnianie, zgodnie z opisem na [IntelliSense](r-intellisense.md) strony. Wykonuje też, automatycznego formatowania, takie jak uzupełnianie nawiasów klamrowych i nawiasy:
 
 ![Animacja formatowanie wbudowanych](media/editing-inline-formatting.gif)
 
@@ -129,6 +129,6 @@ Opcje na **R** > **zaawansowane** karty są specyficzne dla RTVS:
 | | Listy uzupełniania w pierwszym znakiem | On | Zawiera listy uzupełniania w pierwszym typy znaków. Gdy wyłączone, zostanie wyświetlona lista uzupełniania z **Edytuj** > **IntelliSense** > **List Members** (**Ctrl** + **"J"**). |
 | | Listy uzupełniania w **kartę** klucza | Off | Wywołuje listy uzupełniania, wpisując jeden lub więcej znaków, a następnie naciskając klawisz **kartę**. |
 | | Dopasowanie częściowe typy nazwy argumentu | Off | Podczas wpisywania nazwy argumentów w wywołaniu funkcji, pomocy dotyczącej sygnatur zawiera opis argumentu, który najlepiej odpowiada. |
-| Okno interaktywne | Kontrola syntaxe v Konzole R | Off | Stosuje składni sprawdzania w oknie interaktywnym. Sprawdzanie składni mogą nie działać poprawnie w instrukcjach wiele wierszy. | 
+| Okno interaktywne | Kontrola syntaxe v Konzole R | Off | Stosuje składni sprawdzania w oknie interaktywnym. Sprawdzanie składni mogą nie działać poprawnie w instrukcjach wiele wierszy. |
 | Tworzenie konspektu | Zwijanie kodu | On | Automatycznie tworzy zwijane regiony dla zagadnień, takich jak wielowierszowe instrukcje. |
 | Sprawdzanie składni | Pokaż błędy składniowe | On | Umożliwia automatyczne sprawdzanie kodu składni. |

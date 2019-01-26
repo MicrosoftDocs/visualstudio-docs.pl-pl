@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2f32273ff00121ea764add262f16635d52de77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1859694a85b25effe56afef17f65bd831a65882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959411"
 ---
 # <a name="task-base-class"></a>Klasa podstawowa zadania
 Wiele zadań, ale ostatecznie dziedziczyć <xref:Microsoft.Build.Utilities.Task> klasy. Ta klasa dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.  

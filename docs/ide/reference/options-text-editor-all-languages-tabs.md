@@ -39,15 +39,15 @@ helpviewer_keywords:
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1923211a880956636570cd34fcabf876ee1f0055
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ab42486adae5347941e95b27b1e0444aee4cc05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960766"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
 

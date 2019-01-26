@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc687421123769e36594a11b2c34dd86fe0ebf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918813"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>Platforma kompilatora .NET (&quot;Roslyn&quot;) rozszerzalności
 Misję core platformie kompilatora .NET ("Roslyn") jest otwarcia Kompilatory języka C# i Visual Basic i umożliwiając narzędzi i deweloperom na współużytkowanie w kompilatorach rozbudowane informacje ma temat programów. Narzędzia do analizy kodu poprawianie jakości kodu i generatory pomocy w aplikacji konstrukcji kodu. Jak uzyskuj narzędzia, potrzebować dostępu do coraz więcej wiedzy głębokiego kodu, które posiadają tylko kompilatory. Zamiast nieprzezroczystości tłumaczy (kodu źródłowego w i kod obiektowy out), kompilatory Roslyn oferują interfejsy API, które służy do zadań związanych z kodu, narzędzia i aplikacje.

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30953bb5cd41722ff99e37a0820a67aba77f3eef
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53378132"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961429"
 ---
 # <a name="help-content-manager-overrides"></a>Przesłonięcia menedżera zawartości pomocy
 
@@ -35,11 +35,11 @@ Można zmienić domyślne zachowanie w Podglądzie pomocy i pomocy funkcjach dos
 |Wartość klucza rejestru|Typ|Dane|Opis|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|string|\<adres URL HTTP dla punktu końcowego usługi\>|Definiowanie punktu końcowego, unikatowa usługa|
-|UseOnlineHelp|typu DWORD.|`0` Aby określić pomocy lokalnej `1` do określenia Pomoc online|Zdefiniować domyślne pomocy online lub offline|
+|UseOnlineHelp|dword|`0` Aby określić pomocy lokalnej `1` do określenia Pomoc online|Zdefiniować domyślne pomocy online lub offline|
 |OnlineBaseUrl|string|\<adres URL HTTP dla punktu końcowego usługi\>|Zdefiniuj unikatowe końcowy F1|
-|OnlineHelpPreferenceDisabled|typu DWORD.|`0` Aby włączyć lub `1` wyłączyć opcja preferencji Pomoc online|Wyłącz opcja preferencji Pomoc online|
-|DisableManageContent|typu DWORD.|`0` Aby włączyć lub `1` wyłączyć **zarządzanie zawartością** karty w Podglądzie pomocy|Wyłącz **zarządzanie zawartością** kartę|
-|DisableFirstRunHelpSelection|typu DWORD.|`0` Aby włączyć lub `1` można wyłączyć funkcji pomocy, które są skonfigurowane przy pierwszym uruchomieniu programu Visual Studio|Wyłączyć możliwość instalacji zawartości podczas pierwszego uruchomienia programu Visual Studio|
+|OnlineHelpPreferenceDisabled|dword|`0` Aby włączyć lub `1` wyłączyć opcja preferencji Pomoc online|Wyłącz opcja preferencji Pomoc online|
+|DisableManageContent|dword|`0` Aby włączyć lub `1` wyłączyć **zarządzanie zawartością** karty w Podglądzie pomocy|Wyłącz **zarządzanie zawartością** kartę|
+|DisableFirstRunHelpSelection|dword|`0` Aby włączyć lub `1` można wyłączyć funkcji pomocy, które są skonfigurowane przy pierwszym uruchomieniu programu Visual Studio|Wyłączyć możliwość instalacji zawartości podczas pierwszego uruchomienia programu Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Zawartość pliku .pkgdef przykład
 

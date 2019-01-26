@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e21418da2516553f2c62e2c746e6a75e3f67cbc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce60ea631fe0c769740a2c3aa20281b13e525d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961741"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916200"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 Pobiera typ wskaźnika obiektu dla metody klasy.  
@@ -44,5 +44,5 @@ HRESULT get_objectPointerType ( 
  Ta właściwość ma zastosowanie tylko do symboli z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) typu `SymTagFunctionType`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

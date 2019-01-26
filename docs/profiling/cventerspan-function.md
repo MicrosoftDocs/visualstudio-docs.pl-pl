@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvEnterSpan | Dokumentacja firmy Microsoft
+title: CvEnterSpan Function | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7135ce785665bcaf01b209ebc8e9ec094db55f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922837"
 ---
 # <a name="cventerspan-function"></a>Cventerspan — funkcja
 Oznacza początek nowy zakres.  
@@ -126,9 +126,9 @@ HRESULT CvEnterSpanExVA(
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** *cvmarkers.h*  
   
- **Unicode:** Cventerspanw —, cventerspanexvw — cventerspanvw —, cventerspanexw —,  
+ **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
   
- **ANSI:** Cventerspana —, cventerspanexvw — cventerspanva —, cventerspanexa —,  
+ **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
   
 ## <a name="see-also"></a>Zobacz także  
  [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

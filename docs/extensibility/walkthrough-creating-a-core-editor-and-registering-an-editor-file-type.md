@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6bd1cbf23bf56a6d475f6afa3db5a6225dc75de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2cfad04648f62cbe289c1ce2408973ed3701c4b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896022"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959567"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Przewodnik: Tworzenie edytorze podstawowych i rejestrowania typu pliku w edytorze
 W tym instruktażu przedstawiono sposób tworzenia pakietu VSPackage, który rozpoczyna się [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor, gdy plik za pomocą *.myext* rozszerzenie nazwy pliku jest ładowany.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadDestroyEvent2 | Dokumentacja firmy Microsoft
+title: IDebugThreadDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecf71ce4d59c01f92d460d2107a1c8dceff76627
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f511a7f90a7f9d34352bf0b42bb4182b58ddd50c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957994"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po uruchomieniu wątku do zakończenia.  
@@ -45,7 +45,7 @@ IDebugThreadDestroyEvent2 : IUnknown
  Program Visual Studio używa tego zdarzenia do zaktualizowania **wątków** okna.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

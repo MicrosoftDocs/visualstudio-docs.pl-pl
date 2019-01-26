@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918581"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
@@ -153,7 +153,7 @@ Kwalifikowana klucza krótkie nazwy to łatwiejsza do odczytania niż identyfika
 
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza krótkiej nazwy.
 
-### <a name="avoid-duplicate-monikers"></a>Unikaj zduplikowanych monikerów
+### <a name="avoid-duplicate-monikers"></a>Avoid Duplicate Monikers
 
 Jeśli używasz kwalifikowaną monikerów klucza, istnieje możliwość, dwa elementy w modelu użytkownika mają taką samą wartość właściwości klucza. Na przykład jeśli DSL ma klasę osoby, która ma właściwość Name, użytkownika można ustawić nazwy dwóch elementów w taki sam. Mimo że modelu może być zapisana w pliku, go czy nie zostanie odświeżona poprawnie.
 

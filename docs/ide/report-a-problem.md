@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958735"
 ---
 # <a name="overview-report-a-problem"></a>Przegląd: Zgłoś Problem
 
@@ -63,7 +63,7 @@ Po zgłosić problem stany wskazują, gdzie materiałów przesłanych znajdują 
 
 - - -
 
-![Zamknięte — stan stały dla problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Zamknięte — stan stały dla problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Zamknięty — rozwiązany** wskazuje, że wydaliśmy poprawkę rozwiązującą ten problem. Problem jest teraz również oznaczane "rozwiązane w:" tag określania pełnej wersji.
 

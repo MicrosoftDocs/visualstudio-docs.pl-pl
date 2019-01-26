@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPorts2 | Dokumentacja firmy Microsoft
+title: IEnumDebugPorts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92e8c48cfc7da8a9a167d2b132e2c6bb5449edd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea904df883994bd7ef0a905057b7dac1f3c46fff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852404"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070568"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Ten interfejs wylicza porty dostawcy maszynowo lub port.  
@@ -51,7 +51,7 @@ IEnumDebugPorts2 : IUnknown
  Aparat debugowania zwykle nie korzysta z tego interfejsu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

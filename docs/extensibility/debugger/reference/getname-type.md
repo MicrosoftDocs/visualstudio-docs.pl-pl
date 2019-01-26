@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a0c15f97548386192a635e81a4d0e8a0274cb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6443c4c359562cc6b04ab413c31fb61441511ef4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916566"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Określa typ nazwy plików do pobrania.  
@@ -75,7 +75,7 @@ public enum enum_GETNAME_TYPE { 
  Te wartości są przekazywane jako parametry [getname —](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [getname —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), i [getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody, aby określić, jakiego rodzaju nazwy do zwrócenia.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

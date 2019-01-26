@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bcc1485834209133897c776fcb52ed5c600d9ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b37d8d123ff45d563c165a6833151692582ebe6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961562"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 
@@ -226,7 +226,7 @@ Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz pod
   
 9. Znajdź *sn.exe* narzędzia podpisywania. Na przykład w systemie operacyjnym 64-bitowego systemu Windows 10, typowe ścieżki będzie następujące:  
   
-     *Narzędzia \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 pliki (x86) C:\Program*  
+     *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*  
   
      Jeśli nie można odnaleźć narzędzia, spróbuj uruchomić **gdzie/r.  SN.exe** w oknie wiersza polecenia. Zanotuj ścieżkę.  
   
@@ -299,7 +299,7 @@ Teraz możesz utworzyć projekt na podstawie szablonu i użyć niestandardowego 
   
 1.  Ponownie skompiluj rozwiązanie, a następnie rozpocząć debugowanie. Drugie wystąpienie programu Visual Studio powinny być wyświetlane.  
   
-2.  Utwórz nowy projekt MyProjectTemplate. (**Pliku** > **nowe** > **projektu** > **Visual C#**  >  **MyProjectTemplate**)  
+2.  Utwórz nowy projekt MyProjectTemplate. (**File** > **New** > **Project** > **Visual C#** > **MyProjectTemplate**)  
   
 3.  W **nowy projekt** okno dialogowe, zlokalizuj szablon, wpisz nazwę i kliknij przycisk **OK**.  
   

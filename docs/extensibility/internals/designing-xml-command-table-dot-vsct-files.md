@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923097"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Projektowanie plików (vsct) tabeli poleceń XML
 Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd elementów polecenia dla pakietu VSPackage. Polecenie elementy obejmują przyciski, pola kombi, menu, paski narzędzi i grup elementów polecenia. W tym artykule opisano XML pliki tabeli poleceń, jak wpływają na elementy polecenia i menu oraz jak je utworzyć.
@@ -54,7 +54,7 @@ Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd eleme
 
 - Mapa bitowa sekcji: W tej sekcji jest taka sama, jak w *.ctc* pliku, z tą różnicą, że można teraz określić nazwę pliku, za pośrednictwem Href, który będzie pobierany w przez *vsct.exe* kompilatora w czasie kompilacji.
 
-- Atrybut resID: Stary mapy bitowej zasobu, identyfikator może być używane i nadal działa tak samo, jak w *.ctc* plików.
+- ResID: Stary mapy bitowej zasobu, identyfikator może być używane i nadal działa tak samo, jak w *.ctc* plików.
 
 - HRef: Nową metodę, która pozwala określić nazwę pliku zasobu mapy bitowej. Przyjęto założenie, że wszystkie są używane, dzięki czemu można pominąć używanej sekcji. Kompilator wyszuka najpierw zasoby lokalne dla pliku, a następnie netto udziałów, a wszelkie zasoby zdefiniowane przez **/I** przełącznika.
 
@@ -117,7 +117,7 @@ Możesz użyć *vsct.exe* kompilator, aby przekonwertować istniejącą *.cto* m
 
  Podczas tworzenia aplikacji możliwe jest dla wielu projektów pakietu VSPackage zostać utworzona i zarejestrowana w gałęzi rejestru eksperymentalnych, który może prowadzić do mylące nieładu w IDE. Aby rozwiązać ten problem, możesz zresetować eksperymentalne gałęzi do domyślnych ustawień do usuwania wszystkich zarejestrowanych pakietów VSPackage i wszelkie zmiany, które mogły zostać wprowadzone do środowiska IDE. Aby zresetować eksperymentalne hive, narzędzie CreateExpInstance.exe dostarczanego z Visual Studio SDK. Można znaleźć na stronie:
 
- *% PROGRAMFILES (x 86) %\Visual Studio\\\<wersji > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  Uruchom narzędzie przy użyciu polecenia **/reset CreateExpInstance**. Należy pamiętać, że to narzędzie spowoduje usunięcie z doświadczalnych hive wszystkie zarejestrowane, nie jest zainstalowane przy użyciu pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

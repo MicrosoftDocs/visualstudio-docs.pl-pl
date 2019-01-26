@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3986a90754f073fa28ecce11ff0053ecad512289
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954503"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957926"
 ---
 # <a name="model-for-source-control-packages"></a>Model pakietów kontroli kodu źródłowego
 Poniższy model reprezentuje przykładem implementacji kontroli źródła. W modelu Zobacz interfejsów, które należy zaimplementować i usług środowiska, które należy wywołać. Podobnie jak wszystkie usługi faktycznie wywołanie metody określonego interfejsu, którą można uzyskać za pomocą usługi. Nazwy klas są identyfikowane ułatwiają zobacz sposób wykonywania kontroli źródła.  

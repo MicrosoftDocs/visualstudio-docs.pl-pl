@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384c966c9553ac07131eb74d065df17640305421
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825295"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961640"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -113,7 +113,7 @@ Połączone pliki są ignorowane w żadnej z następujących warunków:
 
 Aby dodać istniejący element jako łącza, kliknij prawym przyciskiem myszy folderu w projekcie, w której chcesz dodać plik, a następnie wybierz **Dodaj** > **istniejący element**. W wyświetlonym oknie dialogowym Wybierz plik, a następnie wybierz **Dodaj jako Link** z listy rozwijanej na **Dodaj** przycisku. Pod warunkiem, że nie ma żadnych plików powodujące konflikt, to polecenie tworzy łącze w wybranym folderze. Jednak link nie zostanie dodane, jeśli istnieje już plik o takiej samej nazwie lub łącze do tego pliku już istnieje w projekcie.
 
-Jeśli spróbujesz utworzyć link do pliku, który już istnieje w folderze projektu jest dodawany jako zwykłego pliku, a nie jako link. Aby przekonwertować plik łącza, wybierz polecenie **pliku** > **Zapisz jako** Aby zapisać plik do lokalizacji poza hierarchii projektu; Program Visual Studio automatycznie konwertuje go na łącze. Podobnie, można przekonwertować link ponownie za pomocą **pliku** > **Zapisz jako** można zapisać pliku gdzieś w hierarchii projektu. 
+Jeśli spróbujesz utworzyć link do pliku, który już istnieje w folderze projektu jest dodawany jako zwykłego pliku, a nie jako link. Aby przekonwertować plik łącza, wybierz polecenie **pliku** > **Zapisz jako** Aby zapisać plik do lokalizacji poza hierarchii projektu; Program Visual Studio automatycznie konwertuje go na łącze. Podobnie, można przekonwertować link ponownie za pomocą **pliku** > **Zapisz jako** można zapisać pliku gdzieś w hierarchii projektu.
 
 Jeśli zostanie przeniesiony plik połączony **Eksploratora rozwiązań**, łącze jest przenoszony, ale nie wpływa na rzeczywisty plik. Podobnie usunięcie łącze spowoduje usunięcie linku bez wywierania wpływu na plik.
 

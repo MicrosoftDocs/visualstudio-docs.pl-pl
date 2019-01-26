@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916622"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Dowiedz się więcej o debuger Windows w programie Visual Studio
 
@@ -36,10 +36,10 @@ Podczas debugowania programu, można otworzyć większość okien debugera. Aby 
 |Równoległe wyrażenie kontrolne|EWIDENCYJNE: + SHIFT + D, (1, 2, 3, 4)|[Rozpoczynanie pracy debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Wątki|CTRL+ALT+H|[Debugowanie za pomocą okna wątków](../debugger/how-to-use-the-threads-window.md)|
 |Moduły|CTRL+ALT+U|[Instrukcje: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md)|
-|Wątki procesora GPU|-|[Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Wątki procesora GPU|-|[Instrukcje: Korzystanie z okna wątków procesora GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Zadania|EWIDENCYJNE: + SHIFT + D, K|[Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)|
 |Interaktywne debugowania języka Python|SHIFT+ALT+I|[Interaktywna pętla REPL języka Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Konsola JavaScript|CTRL+ALT+V, C|[Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Konsola JavaScript|CTRL+ALT+V, C|[Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Eksplorator DOM|CTRL + ALT + V, D|[Debugowanie układu przy użyciu eksploratora modelu DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |Dynamiczne drzewo wizualne|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Eksplorator właściwości na żywo|-|[Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)|

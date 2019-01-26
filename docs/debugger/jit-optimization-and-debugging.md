@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959294"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 **Optymalizacje działania na platformie .NET:** Jeśli chcesz debugować kod, łatwiej gdy kod jest **nie** zoptymalizowane pod kątem. To dlatego, gdy kod jest zoptymalizowany, kompilatora i środowiska uruchomieniowego dokonać zmian emitowany kod procesora CPU, aby działa szybciej, ale jest mniej bezpośrednie mapowanie do oryginalnego kodu źródłowego. Oznacza to, że debugery są często nie może poinformować Cię, wartości lokalnych zmiennych i kodu, przechodzenie krok po kroku, a punkty przerwania mogą nie działać zgodnie z oczekiwaniami.

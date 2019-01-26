@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e8207ffb52fd41c82eac896611f7454bd7379d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e71b8675aad05f45d13be5a86e8729266a3a017
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954101"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 
@@ -54,7 +54,7 @@ Kontrola źródła pakietu VSPackage muszą komunikować się z innymi jednostka
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-Usługa SVsRegisterScciProvider
+SVsRegisterScciProvider Service
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 

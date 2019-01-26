@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3c79ca7c18b4b854b38920481757dbf49d2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966015"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919801"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
@@ -193,15 +193,15 @@ Wyświetl elementy, należą:
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|
 |**Sekcja Cdata XML**|Zawartość \<![CDATA[...]]>.|
 |**Komentarz XML**|Zawartość \<!---->.|
-|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!-,-->,?\>, \<! [,]] > i [,].|
+|**XML Delimiter**|Ograniczniki składni XML, w tym <, <?, <!, \<!-,-->,?\>, \<! [,]] > i [,].|
 |**Atrybut dokumentu XML**|Wartość dokumentacji xml atrybutów, takich jak \<param name = "I" > gdzie "I" jest w trybie kolorowym.|
 |**Komentarz dokumentu XML**|Komentarze, ujęte w komentarze dokumentacji xml.|
-|**Tag dokumentu XML**|Komentarze tagów w dokumencie XML, takich jak<br /><br /> /// \<Podsumowanie >.|
+|**XML Doc Tag**|Komentarze tagów w dokumencie XML, takich jak<br /><br /> /// \<Podsumowanie >.|
 |**Słowo kluczowe XML**|Słowa kluczowe DTD CDATA, IDREF i NDATA.|
 |**Nazwa XML**|Nazwy elementów i nazwa docelowego instrukcje przetwarzania.|
 |**Instrukcja przetwarzania XML**|Zawartość instrukcje przetwarzania nie zawiera nazwy docelowej.|
 |**Tekst XML**|Zawartość elementu zwykłego tekstu.|
-|**Słowo kluczowe XSLT**|Nazwy elementów XSLT.|
+|**XSLT Keyword**|Nazwy elementów XSLT.|
 
 **Pierwszy plan elementu**
 

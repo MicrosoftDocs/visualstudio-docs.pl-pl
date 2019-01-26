@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c16d3a9658f2e53a651f7a5201bc5f04d48413c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fec663bce0c64d4da003ca337ab43cebbe73a2d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989480"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960298"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Określa typ błąd punktu przerwania.  
@@ -97,7 +97,7 @@ public enum enum_BP_ERROR_TYPE { 
  Typ błędu punktu przerwania składa się z typu i ważności. Oznacza, że typ błąd punktu przerwania nigdy nie tylko typem (na przykład `BPET_TYPE_ERROR`,) lub ważność (na przykład `BPET_SEV_GENERAL`) przez siebie. `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` zapewnia wstępnie zdefiniowane wartości dla punktów przerwania ogólne, ostrzeżeń i błędów.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

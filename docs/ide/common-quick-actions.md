@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19284bb1b8a96443411226343bfd5ec08f0cff7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877449"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955742"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0 LUB NOWSZY | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Konwertuj funkcję anonimowych do funkcji lokalnej
 
@@ -662,7 +662,7 @@ int fibonacci(int n)
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0041 | C# 7.0 + | Visual Studio 2017 w wersji 15.5 |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 w wersji 15.5 |
 
 Tej szybkiej akcji sugeruje użycie [dopasowywania do wzorca](/dotnet/csharp/pattern-matching) zamiast ```ReferenceEquals``` kodowania wzorzec, gdzie to możliwe.
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0 + | Visual Studio 2017 w wersji 15.5 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 w wersji 15.5 |
 
 ### <a name="introduce-pattern-matching"></a>Wprowadzenie dopasowywania do wzorca
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0 + | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0 + | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
 
 ### <a name="change-base-for-numeric-literals"></a>Podstawa zmiany w literałach numerycznych
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | Identyfikator diagnostyczny | Właściwe języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
 
 ### <a name="make-method-synchronous"></a>Oznaczanie metody synchroniczne
 

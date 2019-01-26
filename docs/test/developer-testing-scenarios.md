@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit testing, create unit tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46d2d41cd337ec2cbdd1fe44bde97db39b1b764e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed3dccb61be21e571deb2bb8475b784e3a981449
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956015"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Narzędzia, scenariusze i możliwości testowania dla deweloperów
 
@@ -65,7 +65,7 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 
 **Eksplorator testów** ułatwia deweloperom tworzenie i Uruchamianie testów jednostkowych zarządzanie.
 
-![Eksplorator testów programu Visual Studio](media/devtest-testexplorer.png)
+![Visual Studio Test Explorer](media/devtest-testexplorer.png)
 
 * [Wprowadzenie do testów jednostkowych](unit-test-your-code.md)
 * [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](run-unit-tests-with-test-explorer.md)

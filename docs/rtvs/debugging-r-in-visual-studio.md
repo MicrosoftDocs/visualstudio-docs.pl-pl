@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918371"
 ---
 # <a name="debug-r-in-visual-studio"></a>Debugowanie języka R w programie Visual Studio
 
 Narzędzia R Tools for Visual Studio (RTVS) integruje się z pełnego środowiska debugowania programu Visual Studio (zobacz [debugowania w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour). Ta obsługa obejmuje punkty przerwania, dołączanie do uruchomionego procesu, kontroli i oglądaniu zmiennych i sprawdzanie stosu wywołań. W tym artykule przedstawiono następnie aspekty debugowania, które są unikatowe dla języków R i RTVS.
 
-Uruchamianie debugera, aby plik startowy języka R, w projekcie języka R jest taka sama, jak w przypadku innych typów projektów: Użyj **debugowania** > **Rozpocznij debugowanie**, **F5** klucza, lub **Źródłowy plik startowy** na pasku narzędzi debugowania: 
+Uruchamianie debugera, aby plik startowy języka R, w projekcie języka R jest taka sama, jak w przypadku innych typów projektów: Użyj **debugowania** > **Rozpocznij debugowanie**, **F5** klucza, lub **Źródłowy plik startowy** na pasku narzędzi debugowania:
 
 ![Przycisk Uruchom debuger dla języka R](media/debugger-start-button.png)
 

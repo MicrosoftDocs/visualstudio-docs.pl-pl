@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66af0c4ce83feb1153cfd53bf12d8ae40f38b69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941521"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071010"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>PROJECTTYPE — element (szablony Visual Studio)
 Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
@@ -27,8 +27,8 @@ Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej gr
 >  Szablony projektów są obsługiwane dla języka C++, począwszy od programu Visual Studio 2012. Nie są obsługiwane w języku C++ w Visual Studio 2010 i starszych wersji.  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<Typ projektu >  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Składnia  
   

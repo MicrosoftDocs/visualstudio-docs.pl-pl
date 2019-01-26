@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b7488f-dc9c-47b3-b08c-737e0eb1bf7d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a11d36a92c2b2251a2313ba627012904457d354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3688b6074422fc8af0cde6cdfa9299b9c3af556d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851839"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956210"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
 Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) danych w tej sekcji.  

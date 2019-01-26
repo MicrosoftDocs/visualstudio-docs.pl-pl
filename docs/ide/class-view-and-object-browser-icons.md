@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3791c6b94f4c229efe843b463cb51a64998e5b6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958254"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Widok klasy i Przeglądarka obiektów, ikony
 
@@ -34,14 +34,14 @@ ms.locfileid: "53844395"
 |![Ikona klasy](../ide/media/vxclass_icon.gif)|Class|![Symbol operatora](../ide/media/vxoperator_icon.gif)|Operator|
 |![Symbol interfejsu typu lizak](../ide/media/vxinterface_icon.gif)|Interface|![Właściwości symbolu](../ide/media/vxproperty_icon.gif)|Właściwość|
 |![Struktura symboli](../ide/media/vxstruct_icon.gif)|Struktura|![Ikona pola](../ide/media/vxfield_icon.gif)|Pola lub zmiennej|
-|![Symbol Unii](../ide/media/vxunion_icon.gif)|Union|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Zdarzenie|
+|![Union Symbol](../ide/media/vxunion_icon.gif)|Union|![Symbol zdarzenia](../ide/media/vxevent_icon.gif)|Zdarzenie|
 |![Symbol wyliczenia](../ide/media/vxenum_icon.gif)|Wyliczenie|![Ikona Stała](../ide/media/vxconstant_icon.gif)|Stała|
-|![Symbol definicji typu](../ide/media/vxtypedef_icon.gif)|Element TypeDef|![Symbol wyliczenia elementów](../ide/media/vxenumitem_icon.gif)|Elementu wartości wyliczeniowej|
-|![Symbol modułu programu Visual Studio](../ide/media/vxmodule_icon.gif)|Moduł|![Symbol elementu mapowania](../ide/media/vxmapitem_icon.gif)|Mapowania elementu|
+|![Symbol definicji typu](../ide/media/vxtypedef_icon.gif)|TypeDef|![Symbol wyliczenia elementów](../ide/media/vxenumitem_icon.gif)|Elementu wartości wyliczeniowej|
+|![Visual Studio Module Symbol](../ide/media/vxmodule_icon.gif)|Moduł|![Symbol elementu mapowania](../ide/media/vxmapitem_icon.gif)|Mapowania elementu|
 |![Symbol — metoda rozszerzenia](../ide/media/extensionmethod.gif)|Metoda rozszerzenia|![Deklaracja symbolu](../ide/media/vxmethod_icon.gif)|Deklaracja zewnętrznych|
-|![Symbol delegata](../ide/media/vxdelegate_icon.gif)|Delegate|![Ikona błędu dla widoku klas i przeglądarce obiektów](../ide/media/erroricon.gif)|Błąd|
+|![Delegate Symbol](../ide/media/vxdelegate_icon.gif)|Delegate|![Ikona błędu dla widoku klas i przeglądarce obiektów](../ide/media/erroricon.gif)|Błąd|
 |![Wyjątek symbolu](../ide/media/vxexception_icon.gif)|Wyjątek|![Symbol szablonu](../ide/media/vxtemplate_icon.gif)|Szablon|
-|![Mapowanie symboli](../ide/media/vxmap_icon.gif)|Mapa|![Błąd punktu wykrzyknik](../ide/media/vxerror_icon.gif)|Nieznany|
+|![Map Symbol](../ide/media/vxmap_icon.gif)|Mapa|![Błąd punktu wykrzyknik](../ide/media/vxerror_icon.gif)|Nieznany|
 |![Typ przekazywania — Symbol](../ide/media/ob_type_forward.gif)|Przekazywanie dalej typu|||
 
 ## <a name="signal-icons"></a>Ikony sygnałowe

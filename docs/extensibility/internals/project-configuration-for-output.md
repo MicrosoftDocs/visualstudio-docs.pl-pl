@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72660ab5a3c3aedd888f22bdf7db1ef635d5bc34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843297"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069554"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurowanie projektu dla danych wyjściowych
 Każdej konfiguracji może obsługiwać zestaw procesów kompilacji, które generują dane wyjściowe elementów, takich jak pliki wykonywalne lub zasobu. Te elementy danych wyjściowych są prywatne dla użytkownika i można umieścić w grupach, które łączą powiązanych typów danych wyjściowych, takich jak pliki wykonywalne (.exe, .dll, .lib) i pliki źródłowe (.idl, pliki .h).  

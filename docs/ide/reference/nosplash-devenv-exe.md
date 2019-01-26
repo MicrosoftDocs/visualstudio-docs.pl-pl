@@ -10,15 +10,15 @@ helpviewer_keywords:
 - NoSplash Devenv switch
 author: DennisLee-DennisLee
 ms.author: v-dele
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794934ab0bddcc90a36accf639b26e5ecc6bab30
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: f11b44833ae54c6982cc4df9e2dbd6cb03e7fcd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927896"
 ---
 # <a name="nosplash-devenvexe"></a>/ NoSplash (devenv.exe)
 
@@ -32,11 +32,11 @@ devenv /NoSplash [File1[ FileN]...]
 
 ## <a name="arguments"></a>Argumenty
 
-- *Plik1*
+- *File1*
 
   Opcjonalna. Plik można otworzyć w istniejącego wystąpienia programu Visual Studio. Jeśli nie ma wystąpień programu Visual Studio, jest tworzone nowe wystąpienie o uproszczonym układzie okna i otwarciu narzędzia *plik1* w nowym wystąpieniu.
 
-- *Plikn*
+- *FileN*
 
   Opcjonalna. Jeden lub więcej dodatkowych plików do otwierania w istniejącym wystąpieniu programu Visual Studio.
 
