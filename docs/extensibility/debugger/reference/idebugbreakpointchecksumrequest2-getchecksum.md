@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46e83e1edab1fe6f0cd18c716a867542c4ee109
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 421fcc14316ae463b83daee16f528cc3ee573ebe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865092"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944621"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 Pobiera suma kontrolna dokumentu żądania punktu przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.  

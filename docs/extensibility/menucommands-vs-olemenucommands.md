@@ -1,5 +1,5 @@
 ---
-title: MenuCommands programu Vs. OleMenuCommands | Dokumentacja firmy Microsoft
+title: MenuCommands Vs. OleMenuCommands | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-manager: douge
-ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0923b179c3a2237c6923a7f889c802239d824fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935712"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommands programu Vs. OleMenuCommands
+# <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Można utworzyć polecenia menu pochodząca z <xref:System.ComponentModel.Design.MenuCommand> lub <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object i Implementowanie obsługi zdarzeń odpowiednie. W większości przypadków można użyć <xref:System.ComponentModel.Design.MenuCommand>, zgodnie z szablonu projektu pakietu VSPackage, ale może od czasu do czasu może być konieczne użycie <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Można ich używać poleceń, że udostępnia pakietu VSPackage środowiska IDE programu musi być widoczne i włączone przed użytkownikiem. Gdy polecenia są tworzone w *vsct* plików za pomocą szablonu projektu pakietu Visual Studio, są one widoczne i włączone domyślnie. Ustawienie niektórych flag poleceń, takich jak `DynamicItemStart`, można zmienić domyślne zachowanie. Widoczność, włączony stan i inne właściwości polecenia można także zmienić w kodzie w czasie wykonywania, uzyskując dostęp do <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> obiekt, który jest skojarzony z poleceniem.  

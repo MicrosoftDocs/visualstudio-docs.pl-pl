@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6735d51d993b60c55170af38943986526c5d1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a64868b8bbf92f2c11faeb2b0890c6cd4893941f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951563"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Pobiera wierszy w określonej compiland —, które zawierają określony adres.  

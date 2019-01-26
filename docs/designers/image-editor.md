@@ -8,15 +8,15 @@ f1_keywords:
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be73a9d17125c1b0186afbb12a20ce07c899ebe5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935218"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
@@ -30,13 +30,13 @@ Możesz użyć **edytora obrazów** do pracy z rodzajami zaawansowanych formaty 
 
 |Nazwa formatu|Rozszerzenie nazwy pliku|
 |-----------------| - |
-|Portable Network Graphics|*PNG*|
-|JPEG|*jpg*, *JPEG*, *.jpe*, *.jfif*|
-|Bezpośrednie powierzchni rysowania|*.DDS*|
+|Portable Network Graphics|*.png*|
+|JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
+|Bezpośrednie powierzchni rysowania|*.dds*|
 |Graphics Interchange Format|*Obraz GIF*|
 |Mapy bitowej|*.bmp*, *.dib*|
 |Plik TIFF|*.tif*, *TIFF*|
-|TGA (Targa)|*.TGA*|
+|TGA (Targa)|*.tga*|
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -73,7 +73,7 @@ Format obrazu mapy bitowej. Format obrazu nieskompresowanych, który obsługuje 
 
 Format obrazu Graphics (Interchange Format GIF). Format obrazu skompresowanej LZW, bezstratne, która obsługuje maksymalnie 256 kolorów. Nie nadaje się do fotografii i obrazów, które znacznej ilości szczegółów kolorów, ale zapewnia współczynniki kompresji dobre na samych obrazach niska color, które mają wysoki stopień spójności kolorów.
 
-**Obraz JPG (.jpg)**
+**JPG Image (.jpg)**
 
 Format obrazu wspólnego fotograficzne ekspertów Group (JPEG). Format wysoce skompresowanym, stratnej obrazu, który obsługuje 24-bitowe i nadaje się do ogólnego przeznaczenia kompresji obrazów, które mają wysoki stopień spójności kolor.
 
@@ -141,7 +141,7 @@ W poniższej tabeli opisano elementy na **edytora obrazów** narzędzi, które s
 |**Ołówka**|Używa kodowania aktywnego koloru do rysowania pociągnięcie aliasem. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
 |**Pędzel**|Używa kodowania aktywnego koloru do rysowania pociągnięcie wygładzanie. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
 |**Aerograf**|Używa wybór koloru active do rysowania pociągnięcie wygładzanie miesza wraz z obrazu, która staje się bardziej nasycony funkcji czasu. Można ustawić kolor i grubość obrysu w **właściwości** okna.|
-|**Pipeta**|Ustawia kolor wybrany piksel wybór koloru active.|
+|**Eyedropper**|Ustawia kolor wybrany piksel wybór koloru active.|
 |**Wypełnienie**|Używa wybór koloru active do wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienie wraz z każdy piksel, który jest z nią połączona pikseli tego samego koloru i to ten sam kolor, sam. Jeśli wypełnienie jest stosowana w ramach aktywnego zaznaczenia, dotyczy region jest ograniczone przez zaznaczenie.<br /><br /> Domyślnie wybór koloru active jest zmieszana wraz z zainfekowanego region obrazu zgodnie z jego składnik alfa. Aby użyć wybór koloru active zastąpić dotyczy region, naciśnij i przytrzymaj klawisz **Shift** klucza podczas używania narzędzia wypełnienia.|
 |**Gumka**|Jeśli obraz, który obsługuje kanał alfa, ustawia piksele, aby całkowicie przezroczysty kolor. W przeciwnym razie piksele Ustawia kolor tła active.|
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i grubość konturu w **właściwości** okna.<br /><br /> Aby narysować elementu podstawowego, który ma równa szerokość i wysokość, naciśnij i przytrzymaj **Shift** podczas rysowania.|
@@ -215,14 +215,14 @@ Po wybraniu regionu, możesz zmienić rozmiar on lub jego zawartość obrazu, zm
 
 W poniższej tabeli opisano modyfikator prawidłowe kombinacje klawiszy:
 
-|CTRL|Shift|ALT|Opis|
+|Ctrl|Shift|Alt|Opis|
 |----------|-----------|---------|-----------------|
 ||||Zmienia rozmiar zawartości wybranego regionu.|
 ||**SHIFT**||Proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
 |||**ALT**|Zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|
 ||**SHIFT**|**ALT**|Proporcjonalnie zmienia rozmiar wybranego regionu. Definiuje nowy region zaznaczenia.|
-|**CTRL**|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|
-|**CTRL**|**SHIFT**||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
+|**Ctrl**|||Kopiuje, a następnie zmienia rozmiar zawartości wybranego regionu.|
+|**Ctrl**|**SHIFT**||Kopiuje, a następnie proporcjonalnie zmienia rozmiar zawartości wybranego regionu.|
 
 ### <a name="tool-properties"></a>Właściwości narzędzia
 
@@ -238,8 +238,8 @@ W poniższej tabeli opisano właściwości narzędzia:
 |**Ołówek**, **pędzla**, **Aerograf**, **Gumka**|**Grubość**<br /> Określa rozmiar obszaru, który jest zależna od narzędzia.|
 |**Text**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|
 |**2D podstawowego**|**Wygładzanie**<br /> Rysuje podstawowych, które mają wygładzanie krawędzi. To daje im gładsze wygląd.<br /><br /> **Grubość**<br /> Określa grubość linii, który wchodzi w skład granicy podstawowego.<br /><br /> **Promień X**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje górną i dolną krawędzią element pierwotny zaokrąglania usługi radius.<br /><br /> **Promień Y**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje zaokrąglania usługi radius do lewej i prawej krawędzi element pierwotny.|
-|**Ołówek**, **pędzla**, **Aerograf**, **2D podstawowego**|**kanały**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|
-|**Wybór Różdżka**, **wypełnienia**|**Na uszkodzenia**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|
+|**Pencil**, **Brush**, **Airbrush**, **2D Primitive**|**Channels**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|
+|**Wybór Różdżka**, **wypełnienia**|**Tolerance**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -248,27 +248,27 @@ W poniższej tabeli opisano właściwości narzędzia:
 |Przełącz się do **wybierz** tryb|**S**|
 |Przełącz się do **powiększenia** tryb|**Z**|
 |Przełącz się do **Pan** tryb|**K**|
-|Zaznacz wszystkie|**CTRL**+**A**|
+|Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**ESC** (ucieczki)|
-|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znak plus (**+**)|
-|Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**-**PageDown**<br /><br /> Znak minus (**-**)|
+|Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus (**+**)|
+|Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Znak minus (**-**)|
 |Przesuń w górę obrazu|**Obrót kółkiem myszy do tyłu**<br /><br /> **PageDown**|
 |Przesuń w dół obrazu|**Obrót kółkiem myszy do przodu**<br /><br /> **PageUp**|
-|Przesuń obrazu po lewej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **SHIFT**+**PageDown**|
+|Przesuń obrazu po lewej|**SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **Obrót kółkiem myszy w lewo**<br /><br /> **Shift**+**PageDown**|
 |Przesuń w prawo obrazu|**SHIFT**+**kółkiem myszy do przodu**<br /><br /> **Obrót kółkiem myszy do prawej**<br /><br /> **SHIFT**+**PageUp**|
 |Powiększ do rzeczywistego rozmiaru|**CTRL**+**0** (zero)|
-|Dopasuj obraz do okna|**CTRL**+**G**, **Ctrl**+**F**|
-|Obraz Dopasuj do szerokości okna|**CTRL**+**G**, **Ctrl**+**I**|
-|Przełącz siatkę|**CTRL**+**G**, **Ctrl**+**G**|
-|Przytnij obraz do bieżącego zaznaczenia|**CTRL**+**G**, **Ctrl**+**C**|
-|Wyświetlanie następnego (szczegóły wyższej) Poziom MIP|**CTRL**+**G**, **Ctrl**+**6**|
-|Wyświetl poprzednie (niższe szczegóły) Poziom MIP|**CTRL**+**G**, **Ctrl**+**7**|
-|Przełącz kanału koloru czerwonego|**CTRL**+**G**, **Ctrl**+**1**|
-|Przełącz kolor zielony kanału|**CTRL**+**G**, **Ctrl**+**2**|
-|Przełącz koloru niebieskiego kanału|**CTRL**+**G**, **Ctrl**+**3**|
-|Przełącz kanał alfa (przezroczystości)|**CTRL**+**G**, **Ctrl**+**4**|
-|Przełącz wzorzec szachownicy alfa|**CTRL**+**G**, **Ctrl**+**B**|
+|Dopasuj obraz do okna|**Ctrl**+**G**, **Ctrl**+**F**|
+|Obraz Dopasuj do szerokości okna|**Ctrl**+**G**, **Ctrl**+**I**|
+|Przełącz siatkę|**Ctrl**+**G**, **Ctrl**+**G**|
+|Przytnij obraz do bieżącego zaznaczenia|**Ctrl**+**G**, **Ctrl**+**C**|
+|Wyświetlanie następnego (szczegóły wyższej) Poziom MIP|**Ctrl**+**G**, **Ctrl**+**6**|
+|Wyświetl poprzednie (niższe szczegóły) Poziom MIP|**Ctrl**+**G**, **Ctrl**+**7**|
+|Przełącz kanału koloru czerwonego|**Ctrl**+**G**, **Ctrl**+**1**|
+|Przełącz kolor zielony kanału|**Ctrl**+**G**, **Ctrl**+**2**|
+|Przełącz koloru niebieskiego kanału|**Ctrl**+**G**, **Ctrl**+**3**|
+|Przełącz kanał alfa (przezroczystości)|**Ctrl**+**G**, **Ctrl**+**4**|
+|Przełącz wzorzec szachownicy alfa|**Ctrl**+**G**, **Ctrl**+**B**|
 |Przełącz się do kształt-narzędzie|**L**|
 |Przejdź do narzędzia zaznaczania Różdżka|**M**|
 |Przełącz do Ołówek narzędzia|**P**|

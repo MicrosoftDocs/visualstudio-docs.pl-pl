@@ -2,7 +2,7 @@
 title: Konfigurowanie projektu platformy Azure przy użyciu wielu konfiguracji usługi | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak skonfigurować projekt usługi w chmurze platformy Azure, zmieniając plików ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg i ServiceConfiguration.Cloud.cscfg.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 1df5ce686fef0a48f9bd58cb966332d7d8c00d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e12c7c321022672283c2e202829d53fcebacfe02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924170"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -88,7 +88,7 @@ Aby uzyskać więcej informacji o sposobie aktualizowania konfiguracji usługi, 
 Rola internetowa zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Z drugiej strony, rolę procesu roboczego może mieć dowolną liczbę punktów końcowych HTTP, HTTPS lub TCP. Punkty końcowe można wejściowych punktów końcowych, które są dostępne dla klientów zewnętrznych, lub wewnętrznych punktów końcowych, które są dostępne dla innych ról, które działają w usłudze.
 
 - Aby udostępnić punkt końcowy HTTP do klientów zewnętrznych i przeglądarki sieci Web, Zmień typ punktu końcowego na dane wejściowe, a następnie określ nazwę i numeru portu publicznego.
-- Aby udostępnić punkt końcowy HTTPS do klientów zewnętrznych i przeglądarki sieci Web, należy zmienić typ punktu końcowego na **danych wejściowych**, a następnie określ nazwę, numeru portu publicznego i nazwa certyfikatu zarządzania. Należy także zdefiniować certyfikat na **certyfikaty** strony właściwości można było określić certyfikat zarządzania. 
+- Aby udostępnić punkt końcowy HTTPS do klientów zewnętrznych i przeglądarki sieci Web, należy zmienić typ punktu końcowego na **danych wejściowych**, a następnie określ nazwę, numeru portu publicznego i nazwa certyfikatu zarządzania. Należy także zdefiniować certyfikat na **certyfikaty** strony właściwości można było określić certyfikat zarządzania.
 - Aby udostępnić punkt końcowy wewnętrznego dostępu przez inne role w usłudze w chmurze, Zmień typ punktu końcowego wewnętrznego i określ nazwę i możliwe prywatnej portów dla tego punktu końcowego.
 
 ## <a name="local-storage-page"></a>Strona magazynu lokalnego

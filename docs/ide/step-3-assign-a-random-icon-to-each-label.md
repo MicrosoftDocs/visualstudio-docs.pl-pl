@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efcb151fd7ecba4db5d7b911c22c8fea9b86d16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3043605e401942fe6aedb51d5a36d58dc03f6d1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959479"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisanie losowej ikony do każdej etykiety
 Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie należy do szczególnie trudnych. Aby tego uniknąć, przypisz ikony losowo do formantów etykiet w formularzu za pomocą `AssignIconsToSquares()` metody.

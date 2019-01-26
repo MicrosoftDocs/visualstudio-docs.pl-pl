@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07e3924db75f870910e22aee8c913f5a26a7411
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c44b31eb8f160695589dda79f19e10389490c38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944023"
 ---
 # <a name="manage-vspackages"></a>Zarządzanie pakietami VSPackage
 W większości przypadków nie trzeba martwić się o zarządzaniu pakietami VSPackage, ponieważ szablony projektów i elementów Zarejestruj i automatycznie załadować pakietu. Jednak w niektórych sytuacjach konieczne może się nieco więcej, aby można było zarządzać pakietu.  

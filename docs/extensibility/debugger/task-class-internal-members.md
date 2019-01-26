@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfcdf7e4509e5e06bd5c39ecbb5f538f7d2d01a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952330"
 ---
 # <a name="task-class---internal-members"></a>Task — klasa — składowe wewnętrzne
 W tym artykule opisano wewnętrznych członków <xref:System.Threading.Tasks.Task?displayProperty=fullName> klasy, które pomagają implementacji niestandardowego debugera. Aby uzyskać ogólne informacje dotyczące tej klasy, zobacz <xref:System.Threading.Tasks.Task> artykule dotyczącym struktury.  

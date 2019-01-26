@@ -2,7 +2,7 @@
 title: Publikowanie WebApplicationVM | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak wdrożyć aplikację sieci web, do maszyny wirtualnej. Ten skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
 ms.prod: visual-studio-dev15
 ms.custom: vs-azure
@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 08d5023da83c99fd3581509c697b2db4e928fd58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8c2a3264b61870b0d76398af8e49a5ec12701f2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925103"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924277"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skrypt programu Windows PowerShell)
 Wdraża aplikację sieci web do maszyny wirtualnej. Skrypt tworzy wymagane zasoby w subskrypcji platformy Azure, jeśli nie istnieją.
@@ -42,7 +42,7 @@ Publish-WebApplicationVM
 | Akceptować wejście potokowe? |false |
 | Akceptować symbole wieloznaczne? |false |
 
-### <a name="subscriptionname"></a>subscriptionName
+### <a name="subscriptionname"></a>SubscriptionName
 Nazwa subskrypcji platformy Azure, w której chcesz utworzyć maszynę wirtualną.
 
 | Aliasy | brak |

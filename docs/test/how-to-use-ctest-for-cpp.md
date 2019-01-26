@@ -4,16 +4,16 @@ ms.date: 11/07/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 057f243b0246bac1796fe160550e83f922593830
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 51338b594819fc8b162498b0bbcf2ac0ad9dc662
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930722"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać narzędzia CTest dla języka C++ w programie Visual Studio
 

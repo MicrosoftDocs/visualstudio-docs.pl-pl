@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498ea6f34522b3eb5ca8eda78f9bb188ea1c241
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80f269df947227f36e0c87a7efeddda8d8ef1248
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944231"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Ułatwia zalet stosu przy użyciu pliku bazy danych (PDB) programu debugowania.  
@@ -52,15 +52,15 @@ IDiaStackWalkHelper: IUnknown
  Aplikacja kliencka implementuje ten interfejs do obsługi zalet stosu podczas wykonywania programu. Wystąpienie tego interfejsu jest przekazywany do [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) lub [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

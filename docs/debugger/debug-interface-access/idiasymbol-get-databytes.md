@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3261c6331e1651b618b710116737bef5b465ec27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d70ede5bdade583d0b25787f7c97c345cef9cbe1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925360"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 Pobiera bajtów danych symbolu OEM.  

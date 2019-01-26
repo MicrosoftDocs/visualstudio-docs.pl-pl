@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 4c246aec092cbaea8d5caf22cb8f204d32533ddb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952837"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Instrukcje: Korzystanie z okna wątków procesora GPU (C++)
 Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w procesorze GPU w aplikacji, na którym wykonujesz debugowanie. Aby uzyskać więcej informacji na temat aplikacji działających na procesorze GPU, zobacz [Przegląd C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  

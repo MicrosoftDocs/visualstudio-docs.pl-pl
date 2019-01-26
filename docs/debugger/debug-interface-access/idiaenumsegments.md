@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72795807415e3ae81a44e38e66ddfc9ebc7ab94c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 426d8dc998bfdf6859735e508595f9661b5c38d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954477"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939221"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Wylicza różnych segmentów znajdujących się w źródle danych.  
@@ -65,11 +65,11 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

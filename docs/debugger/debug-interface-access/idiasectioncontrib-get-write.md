@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7e75348e-c12c-44ec-b004-e97767580a3f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677e42799c4098d2ba1100dd27b234855c7e7fcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8aca080642e696d0c34c8cc1514eff484f03e037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946850"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 Pobiera flagę wskazującą, czy sekcja może być modyfikowana.  

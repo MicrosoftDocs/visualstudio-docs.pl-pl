@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72aceefc2491b88fa23bf7598961ded43329b3e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09a7448036d54fba38487fa5d7026ed1ba580e71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832479"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916213"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Instrukcje: Przywracanie ukrytych poleceń debugera
 Podczas konfigurowania programu Visual Studio zostanie wyświetlony monit o wybranie zestawu domyślnego ustawienia środowiska IDE dla Twojego nadrzędnego języka programowania. Domyślne ustawienia IDE w przypadku niektórych języków może ukryć niektórych poleceń debugera.  

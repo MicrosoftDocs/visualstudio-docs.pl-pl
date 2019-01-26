@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 895e71616ad992fb1a25bd5f2b5e44c1438c100a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 15f4d5f09fc5076730689fa58248e47cb775c796
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834638"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947299"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciuC#
 

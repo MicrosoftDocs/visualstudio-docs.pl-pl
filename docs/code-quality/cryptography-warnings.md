@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ffef284c0cbf1503d573ba01c7a88c1c5e95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c70941f1c450b4df0e485266611835208306fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964179"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928155"
 ---
 # <a name="cryptography-warnings"></a>Ostrzeżenia dotyczące kryptografii
 Ostrzeżenia dotyczące kryptografii obsługują bezpieczniejsze biblioteki i aplikacje przy użyciu poprawnego użycia kryptografii. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.

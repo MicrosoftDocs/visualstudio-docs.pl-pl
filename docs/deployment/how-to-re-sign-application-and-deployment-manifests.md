@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba021e15e78f2a139cace9059187374ae39afe71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937991"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947520"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Instrukcje: Ponowne podpisywanie manifestów aplikacji i wdrożenia
 Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ją ponownie podpisać zarówno aplikację i manifesty wdrożenia za pomocą certyfikat. Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  

@@ -1,19 +1,19 @@
 ---
-title: Kompilator kolorów VSIX | Dokumentacja firmy Microsoft
+title: VSIX Color Compiler | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990860"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948404"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
 Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację konsolową, która przyjmuje plik XML reprezentujący kolorów dla istniejących kompozycji programu Visual Studio i konwertuje je do .pkgdef plików tak, aby te kolory mogą być używane w programie Visual Studio. Ponieważ jest to łatwe porównywanie różnic między plikami XML to narzędzie jest przydatne w celu zarządzania kolorów niestandardowych w kontroli źródła. On również mogą być dołączane do środowisk kompilacji tak, aby dane wyjściowe kompilacji, plik .pkgdef prawidłowe.  
@@ -134,7 +134,7 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  
  **Składnia**  
   
- VsixColorCompiler \<pliku XML > \<pliku PkgDef > \<argumentów opcjonalnych >  
+ VsixColorCompiler \<XML file> \<PkgDef file> \<Optional Args>  
   
  **Argumenty**  
   
@@ -142,16 +142,16 @@ Narzędzie kompilatora kolor rozszerzeń programu Visual Studio jest aplikację 
 |-|-|-|  
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|  
 |Nienazwane (plik XML)|To jest pierwszy parametr nienazwany i ścieżkę do pliku XML do konwersji.|Wymagane|  
-|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<Nazwa pliku XML > .pkgdef|Optional|  
-|/ nologo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
+|Nienazwane (plik .pkgdef)|To jest drugi parametr bez nazwy i ścieżki wyjściowej dla pliku .pkgdef wygenerowany.<br /><br /> Wartość domyślna: \<XML Filename>.pkgdef|Optional|  
+|/noLogo|Ustawienie tej flagi powoduje zatrzymanie produktu i praw autorskich informacje dotyczące drukowania.|Optional|  
 |/?|Wydrukuj informacje pomocy.|Optional|  
 |/help|Wydrukuj informacje pomocy.|Optional|  
   
  **Przykłady**  
   
--   D:\pkgdef\colors.pkgdef VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   / Nologo VsixColorCompiler D:\xml\colors.xml  
+-   VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Uwagi  
   

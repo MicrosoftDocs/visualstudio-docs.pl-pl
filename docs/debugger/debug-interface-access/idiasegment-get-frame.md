@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9fece9c7-064a-4d6b-9cef-fc387f322205
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90dbe786155fa11e5bf1df9ed113362382838d2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1b6eb85126dc7612ec76522088f45fb3aabac11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951446"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 Pobiera numer segmentu.  

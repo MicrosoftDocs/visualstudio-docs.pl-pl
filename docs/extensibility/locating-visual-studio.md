@@ -1,22 +1,22 @@
 ---
-title: Lokalizowanie programu Visual Studio | Dokumentacja firmy Microsoft
+title: Locating Visual Studio | Microsoft Docs
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b57150a7a2ad94b4e0706f3dd21d2fe410ed813d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944387"
 ---
-# <a name="locate-visual-studio"></a>Znajdź program Visual Studio
+# <a name="locate-visual-studio"></a>Locate Visual Studio
 
 Począwszy od programu Visual Studio 2017 można zainstalować wiele wystąpień tej samej wersji lub nawet edition. Jest to przydatne, gdy chcesz wyświetlić podgląd nowych funkcji na komputerze deweloperskim głównej, przy jednoczesnym zachowaniu poprzedniej instalacji. Z powodu tych zmian nie ma jednego środowiska zmiennej i z rejestru wartości używane w celu zlokalizowania wystąpienia. Zamiast tego można użyć [kwerendy COM API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) można znaleźć wystąpień na podstawie kryteriów, które dotyczą Twojego rozszerzenia.
 

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cd504d2b-194f-4106-8de5-2de827a79cbd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15787528e7acae9d1bc7b1a49c15570b2c04fefe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49aa4df8c37a51ee5347c2a983c383c2ecca8ee0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951966"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
 Pobiera identyfikator symboli, z której opiera się wskaźnik myszy.  
@@ -35,5 +35,5 @@ HRESULT get_baseSymbolId(
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)

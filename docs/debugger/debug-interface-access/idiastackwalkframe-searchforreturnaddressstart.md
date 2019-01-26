@@ -1,5 +1,5 @@
 ---
-title: Idiastackwalkframe::searchforreturnaddressstart — | Dokumentacja firmy Microsoft
+title: IDiaStackWalkFrame::searchForReturnAddressStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dd00d6e515e26ae5b2c7c8f90e29220ec1e1564
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a9c1e28c458ad863248235166df03cb2ae4f8a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961715"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931235"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 Wyszukuje ramki określonego stosu, dla adres zwrotny po lub w pobliżu podanym adresem.  
@@ -46,5 +46,5 @@ HRESULT searchForReturnAddressStart ( 
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md)   
+ [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924194"
 ---
 # <a name="extern-element"></a>Extern, element
 Extern, element odwołuje się do dowolnego nagłówka zewnętrznego (*.h*) pliki do scalania z *vsct* plik w czasie kompilacji. Pliki do scalenia muszą znajdować się w ścieżce Include podane do kompilatora VSCT lub jest przywoływany przez [Include element](../extensibility/include-element.md). Pliki mogą być inne *vsct* pliki lub pliki nagłówkowe C++.  
@@ -41,9 +41,9 @@ Extern, element
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|href|Wymagana. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
+|{1&gt;href&lt;1}|Wymagana. Ścieżka do pliku nagłówka:<br /><br /> href="stdidcmd.h"|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|język|Opcjonalna. Domyślny język wszystkich [ \<ciągi >](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "en-us"|  
+|język|Opcjonalna. Domyślny język wszystkich [ \<ciągi >](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> language="en-us"|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   

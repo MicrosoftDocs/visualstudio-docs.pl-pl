@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f311705a6cb898ee9bff81a3bbad3890aea92c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947312"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Instrukcje: Tworzenie skojarzeń plików dla aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje mogą być skojarzone z jednego lub więcej rozszerzeń nazw plików, więc, że aplikacja będzie uruchamiana automatycznie kiedy użytkownik otwiera plik z tych typów. Dodaniem obsługi rozszerzenia nazwy pliku [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji jest bardzo proste.  
@@ -54,6 +54,6 @@ ms.locfileid: "53842835"
     Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>Zobacz także  
- [\<fileassociation — > element](../deployment/fileassociation-element-clickonce-application.md)   
+ [\<fileAssociation> element](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)   
  [Mage.exe (narzędzie generowania manifestu i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

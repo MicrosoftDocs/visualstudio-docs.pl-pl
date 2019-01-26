@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e554561598086193b4862f5962435b25a1ae4d47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953396"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Dziedziczenie klas danych (O/R Designer)
 
@@ -39,7 +39,7 @@ Tworzenie modelu obiektów, która korzysta z dziedziczenia i odpowiada relacyjn
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Instrukcje: Skonfigurować dziedziczenie za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|W tym artykule opisano sposób konfigurowania klas jednostek, korzystających z pojedynczej tabeli dziedziczenia przy użyciu **O/R Designer**.|
+|[Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|W tym artykule opisano sposób konfigurowania klas jednostek, korzystających z pojedynczej tabeli dziedziczenia przy użyciu **O/R Designer**.|
 |[Przewodnik: Tworzenie zapytań LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Zawiera instrukcje krok po kroku dotyczące sposobu konfigurowania klas jednostek, korzystających z pojedynczej tabeli dziedziczenia przy użyciu **O/R Designer**.|
 
 ## <a name="see-also"></a>Zobacz także

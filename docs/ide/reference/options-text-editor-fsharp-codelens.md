@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20611b0c6fd4af57be160d2cd8df2a2113dd4701
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01e9452a8f77595f84d268bce8aff7852c82fc46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920140"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opcje, Edytor tekstu, F#, wskaźników CodeLens
 

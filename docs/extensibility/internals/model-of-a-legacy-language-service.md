@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4478ef31c107fcf437a452a857eabe2cd015734
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b399a7d65f4bc1eb214b19e5447c99b1f438ff78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953409"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model starszej wersji usługi językowej
 Usługa języka definiuje elementy i funkcje dla określonego języka i służy do zapewnienia edytora z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka w celu obsługi kolorowanie składni.  
@@ -31,7 +31,7 @@ Usługa języka definiuje elementy i funkcje dla określonego języka i służy 
   
   Poniższy rysunek koncepcyjny przedstawiający zawiera model usługi w języka podstawowego.  
   
-  ![Grafika przedstawiająca usługi Model języka](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  ![Language Service Model graphic](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
   Podstawowy język modelu usług  
   
   Hosty okna dokumentu *widok dokumentu* edytora, w tym przypadku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Widok dokumentu i buforu tekstowego są własnością edytora. Te obiekty pracować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą okna dokumentu wyspecjalizowane o nazwie *okna kodu*. W oknie kod znajduje się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekt, który jest tworzony i kontrolowane przez środowisko IDE.  

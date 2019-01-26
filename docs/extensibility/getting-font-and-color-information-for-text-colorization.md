@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48a500323185466b1fa5ffaedeff750de31e04d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919433"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924087"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Uzyskaj informacje czcionek i kolorów tekstu kolorowania
 Proces, który renderuje lub wyświetla wyróżnione kolorem tekstu w elementach interfejsu użytkownika zależy od typu projektu, jego technologii i dla deweloperów preferencji. **Czcionki i kolory** strona właściwości są przechowywane ustawienia.

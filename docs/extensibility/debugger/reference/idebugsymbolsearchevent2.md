@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619092f75ad6c4e030b77729e7e11835d4e4ef9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7af963afab74149da0c1c0bd6394e7de9df6cd36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931144"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Ten interfejs są wysyłane przez aparat debugowania (DE) w celu wskazania, czy załadowano symbole debugowania dla debugowanego modułu.  
@@ -47,7 +47,7 @@ IDebugSymbolSearchEvent2 : IUnknown
  Program Visual Studio zazwyczaj używa tego zdarzenia do aktualizowania stanu załadowano symbole w **modułów** okna.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

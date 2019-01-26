@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932730"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
@@ -61,7 +61,7 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 - **Maksymalna liczba użytkowników**: 2000
 
-- **Czas trwania kroku (w sekundach)**: 1800
+- **Czas trwania kroku (w sekundach)**: 1,800
 
 - **Czas narastania (w sekundach)**: 20
 

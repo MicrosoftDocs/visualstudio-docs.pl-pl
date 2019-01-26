@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953188"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki start: Tworzenie projektu z szablonu Cookiecutter
 
@@ -26,7 +26,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Uruchom program Visual Studio.
 
-1. Wybierz **pliku** > **nowe** > **z Cookiecutter**. To polecenie powoduje otwarcie okna w programie Visual Studio, w którym można przeglądać szablony. 
+1. Wybierz **pliku** > **nowe** > **z Cookiecutter**. To polecenie powoduje otwarcie okna w programie Visual Studio, w którym można przeglądać szablony.
 
     ![Nowy projekt z szablonów Cookiecutter](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Po zakończeniu procesu zostanie wyświetlony komunikat **plików utworzony pomyślnie.** Wybierz polecenie **Otwórz w Eksploratorze rozwiązań** otworzyć projektu.
 
-1. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **debugowania** > **Uruchom bez debugowania** do uruchomienia programu. 
+1. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **debugowania** > **Uruchom bez debugowania** do uruchomienia programu.
 
     ![Dane wyjściowe projektu szablonu języka python — skryptu sklearn klasyfikatora cookiecutter](media/projects-from-cookiecutter4.png)
 

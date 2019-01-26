@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b57e3494a4d9ed1461f9efa53ad97642e745b06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940547"
 ---
 # <a name="manage-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 
@@ -36,7 +36,7 @@ Właściwości projektu są zorganizowane w grupy, a każda grupa ma swoją wła
 
 W C#, Visual Basic i F# projektów, właściwości są widoczne w **projektanta projektu**. Poniższa ilustracja przedstawia **kompilacji** strony właściwości dla projektu WPF w C#:
 
-![Projektant projektu programu Visual Studio](../ide/media/vs2015_proppage_build.png)
+![Visual Studio Project Designer](../ide/media/vs2015_proppage_build.png)
 
 Aby uzyskać informacje o poszczególnych stron właściwości w programie **projektanta projektu**, zobacz [projektu odwołanie do właściwości](../ide/reference/project-properties-reference.md).
 

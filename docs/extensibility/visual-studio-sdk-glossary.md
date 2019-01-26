@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b036142e119157d04dcf971a4bbbba984394956
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 140fc5cc5db1ff7cb0b92bccf664e9b3d4ed4baa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930475"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Słownik usługi Visual Studio SDK
 W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentacji.  
@@ -180,7 +180,7 @@ W tym słowniku zawiera definicje dla terminów używanych w [!INCLUDE[vsipsdk](
   Obiekt COM, który implementuje `IVsUIHierarchy` interfejs umożliwia wyświetlanie hierarchii. Implementuje okno hierarchii interfejsu użytkownika `ISelectionContainer` współpracować w celu aktualizacji w oknie właściwości; innych typów projektów systemu windows można użyć tej implementacji, w razie potrzeby.  
   
   VSCT  
-  Tabela poleceń programu Visual Studio. Pliku vsct zawiera informacje na temat umieszczania i zachowań, menu, paski narzędzi i poleceń w formacie XML.  
+  Visual Studio Command Table. Pliku vsct zawiera informacje na temat umieszczania i zachowań, menu, paski narzędzi i poleceń w formacie XML.  
   
-  Pakietu VSPackage  
+  VSPackage  
   Do zainstalowania część oprogramowania, które rozszerza środowiska IDE programu Visual Studio, przyczyniając się co najmniej jeden z następujących elementów: interfejs użytkownika, usługi, typy projektów lub Projektant/Edytor. Pakietu VSPackage składa się z obiektu COM, który implementuje `IVsPackage` interfejsu i jeden lub więcej innych obiektów COM, które implementują inne interfejsy do obsługi zaznaczenia i inne funkcje. Ponadto pakietu VSPackage ma wymagania dotyczące określonej rejestracji.

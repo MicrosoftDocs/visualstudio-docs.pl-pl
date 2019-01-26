@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03b784e10e7f5bb604431625be6467cdee25bd0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944102"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista kontrolna: Tworzenie starszej wersji usługi językowej
 Poniższa lista zawiera podsumowanie podstawowe kroki, które należy wykonać, aby można było utworzyć language service Pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Aby zintegrować usługi w języka [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy utworzyć ewaluatora wyrażeń debugowania. Aby uzyskać więcej informacji, zobacz [pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) w [rozszerzalność debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

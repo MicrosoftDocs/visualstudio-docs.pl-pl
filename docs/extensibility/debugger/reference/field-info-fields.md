@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS | Dokumentacja firmy Microsoft
+title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e48ac549001ed8a6ef363540cf50affb0e7b605
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 550490f677f2d63eabfeba61bcac2c49cb258217
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902509"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931422"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Określa, jakie informacje należy pobrać o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  

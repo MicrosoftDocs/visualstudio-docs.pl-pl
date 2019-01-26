@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2b3611245b796cc42f6ef1dcf951d2961510b3d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953490"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom.  

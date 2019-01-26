@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0e356fc1683da505068899bf15e916b2bc1408
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7eda2399b3bd711664e141800c503f31b12e244
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916553"
 ---
 # <a name="expression-evaluator"></a>Ewaluator wyrażeń
 Ewaluatory wyrażeń (EE) Sprawdź składnię języka do analizy i Szacowanie zmiennych i wyrażeń w czasie wykonywania, umożliwiając im wyświetlanie przez użytkownika, gdy IDE jest w trybie przerwania.  

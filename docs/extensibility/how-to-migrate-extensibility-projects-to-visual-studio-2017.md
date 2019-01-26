@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820413"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953513"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -26,7 +26,7 @@ Upewnij się, że ta instalacja obejmuje następujące obciążenia:
 * Programowanie aplikacji klasycznych dla platformy .NET
 * Programowanie rozszerzeń programu Visual Studio
 
-## <a name="open-vsix-solution-in-visual-studio-2017"></a>Otwórz rozwiązanie VSIX w programie Visual Studio 2017
+## <a name="open-vsix-solution-in-visual-studio-2017"></a>Open VSIX Solution in Visual Studio 2017
 
 Wszystkie projekty VSIX będzie wymagają jednokierunkowego uaktualnienia wersji głównej programu Visual Studio 2017.
 
@@ -104,7 +104,7 @@ Zamiast bezpośrednio edytować plik manifestu XML, można użyć nowej **wymaga
 
 Jeśli chcesz debugować rozszerzenia w eksperymentalnym wystąpieniu programu Visual Studio, upewnij się, że ustawienia projektu dla **debugowania** > **Akcja uruchamiania** ma **Start zewnętrznych Program:** wartość *devenv.exe* plików instalacji programu Visual Studio 2017.
 
-Może wyglądać: *C:\Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+Może wyglądać: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Uruchom zewnętrzny program](media/start-external-program.png)
 
@@ -118,8 +118,8 @@ Może wyglądać: *C:\Program pliki (x86) \Microsoft Visual Studio\2017\Enterpri
   * Zmień nazwę *.vsix* do *zip* łatwe wyświetlanie zawartości.
 * Sprawdź, czy istnienie trzy pliki:
   * *Extension.vsixmanifest*
-  * *Manifest.JSON*
-  * *Catalog.JSON*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Sprawdź, gdy wszystkie wymagane wstępnie wymagane składniki są zainstalowane
 
@@ -129,16 +129,16 @@ Sprawdź, czy VSIX pomyślnie instaluje na komputerze przy użyciu wszystkich wy
 
 Próba zainstalowania rozszerzenia:
 
-* W programie Visual Studio 2017
+* On Visual Studio 2017
 
-![Instalator VSIX w programie Visual Studio 2017](media/vsixinstaller-vs-2017.png)
+![VSIX installer on Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Opcjonalne: Sprawdź w poprzednich wersjach programu Visual Studio.
   * Okazuje się zgodności z poprzednimi wersjami.
   * Powinna działać w przypadku programu Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Opcjonalne: Sprawdź, czy sprawdzanie wersji Instalator VSIX zapewnia szeroki wybór wersji.
   * Zawiera poprzednie wersje programu Visual Studio (jeśli jest zainstalowana).
-  * Zawiera program Visual Studio 2017.
+  * Includes Visual Studio 2017.
 
 Ostatnio otwarto programu Visual Studio, może zostać wyświetlony okno dialogowe następująco:
 

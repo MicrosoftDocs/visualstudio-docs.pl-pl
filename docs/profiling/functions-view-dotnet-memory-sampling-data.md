@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4c689a39a606c57b6e534390ce98fd92b2e572d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2e25e1106741e3ebb81bbff52fd5bc75368e806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941119"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Widok funkcji - dane próbkowania pamięci platformy .NET
 Widok funkcji danych, które zostały zebrane przy użyciu metody pobierania próbek profilowania alokacji pamięci .NET zawiera listę funkcji, które pamięci przydzielonej podczas uruchomienia profilowania i zgłasza rozmiar i liczba przydziałów.  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948989"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.  
@@ -86,10 +86,10 @@ Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego
 |Element|Opis|  
 |-------------|-----------------|  
 |IDENTYFIKATOR LCID %|Identyfikator ustawień regionalnych.|  
-|Element InstallRoot %|Główny folder instalacji programu Visual Studio, na przykład C:\Program Files\Microsoft Visual Studio 8.|  
-|ProjDir %|Folder zawierający bieżącego projektu.|  
-|ProjItem %|Folder zawierający bieżącego elementu projektu.|  
-|TestDocs %|Folderu w folderze Ustawienia użytkownika, na przykład C:\Documents and Settings\\ *[username]* \My Studio\8.|  
+|%InstallRoot%|Główny folder instalacji programu Visual Studio, na przykład C:\Program Files\Microsoft Visual Studio 8.|  
+|%ProjDir%|Folder zawierający bieżącego projektu.|  
+|%ProjItem%|Folder zawierający bieżącego elementu projektu.|  
+|%TestDocs%|Folderu w folderze Ustawienia użytkownika, na przykład C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Włączanie fragmentów kodu dla usługi w języka  
  Fragmenty kodu można włączyć usługi języka, dodając <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atrybutu do Twojego pakietu VSPackage (zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md) Aby uzyskać szczegółowe informacje). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> i <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry są opcjonalne, ale powinien zawierać `SearchPaths` o nazwie parametru, aby poinformować **Menedżera wstawek kodu** lokalizacji z fragmentów kodu.  

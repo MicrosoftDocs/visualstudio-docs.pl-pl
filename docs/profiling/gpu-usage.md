@@ -4,15 +4,15 @@ ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 893383d8260a3b7904921e12175f81741a7978b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941089"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948911"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 
@@ -145,7 +145,7 @@ Obsługiwane są następujące sprzęcie procesora GPU i sterowniki:
 
 |Dostawcy|Opis procesora GPU|Wymagana wersja sterownika|
 |------------|---------------------|-----------------------------|
-|Intel®|4. generacji Intel® procesory (Haswell)<br /><br /> — Procesor Intel® HD grafiki (GT1)<br />— Procesor Intel® HD grafiki 4200 (GT2)<br />— Procesor Intel® HD grafiki 4400 (GT2)<br />— Procesor Intel® HD grafiki 4600 (GT2)<br />— P4600 procesor Intel® HD grafiki (GT2)<br />— P4700 procesor Intel® HD grafiki (GT2)<br />— Procesor Intel® HD grafiki 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />— Grafika Pro procesor Intel® Iris™ 5200 (GT3e)|--(Użyj najnowsze sterowniki)|
+|Intel®|4th Generation Intel® Core Processors ('Haswell')<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|--(Użyj najnowsze sterowniki)|
 |AMD®|Większość od serii 7000 HD™ AMD Radeon (AMD Radeon™ HD 7350 7670 z wyłączeniem)<br /><br /> Akceleratory AMD Radeon™ GPU, AMD FirePro™ GPU i procesora GPU FirePro AMD oferujący funkcje architektury grafiki Core dalej (GCN).<br /><br /> Seria E AMD® i serii AMD A Accelerated przetwarzania jednostki (APU) oferujący funkcje grafiki Core dalej (GCN) architektury ("Kaveri", "Kabini", "Temash", "Beema", "Mullins")|14.7 RC3 lub nowszej|
 |NVIDIA®|Najbardziej od 400 serii NVIDIA GeForce®.<br /><br /> Procesory GPU NVIDIA® GeForce®, procesory GPU NVIDIA Quadro® i procesor GPU Tesla™ NVIDIA® akceleratorów, oferujący funkcje Fermi™, Kepler™ lub Maxwell™ architektury.|343.37 lub nowszej|
 

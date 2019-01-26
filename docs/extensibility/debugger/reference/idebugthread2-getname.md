@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5d53d0e9a76caa1341494cea93311f9c912191c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f28726afd6dad7c193d552cd05e4c9a9335fef1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951901"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Pobiera nazwę wątku.  

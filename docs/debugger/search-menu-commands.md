@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6058d3a704119515dc6bb3675d338d1f656cf1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0de9fdd38655c5c4baf8630df75c1365e38fca1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884509"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069067"
 ---
 # <a name="search-menu-commands"></a>Polecenia menu Wyszukaj
 **Wyszukiwania** menu zawiera polecenia służące do wyszukiwania określonego systemu windows.  

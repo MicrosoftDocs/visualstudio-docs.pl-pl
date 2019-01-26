@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14846955-7270-451d-91d2-9cb34bb65187
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf52767a3e68442df1288d644d8d97ebcf78aaa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d258e2c1ba71ab294435f2437c7b6dc3de75cfb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925798"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
 Pobiera wstrzyknięte źródło za pomocą indeksu.  

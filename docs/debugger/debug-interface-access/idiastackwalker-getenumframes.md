@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9f09729-4c34-441c-989c-e0b7339ee32c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ab73810b79db8c98f45727d4019da1e7055db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b59824b8010987161937d16f852295e6929f2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935713"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951914"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Pobiera moduł wyliczający ramek stosu dla x86 platform.  
@@ -45,7 +45,7 @@ HRESULT getEnumFrames( 
  Aby uzyskać listę ramek stosu na inne platformy, należy wywołać [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Idiastackwalker —](../../debugger/debug-interface-access/idiastackwalker.md)   
+ [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

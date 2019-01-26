@@ -7,13 +7,13 @@ dev_langs:
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 413952e516a7beb9a9371a3fe8c7c4517135d470
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: badf98a908fb9a5782ff773ca53c91b6be2b7692
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922746"
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 Określa, czy `this` wskaźnik wskazuje na element członkowski danych za pomocą pojedyncze dziedziczenie.  

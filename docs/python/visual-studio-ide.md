@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d671a81c75483bfc21cf83954e03307d05a93ce8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97b48daf123ea39cd00070fa95c4b488da9d9163
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952954"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -120,7 +120,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 Poznaj języka Python w programie Visual Studio w dalszej, wykonując jedną z następujących przewodników Szybki Start lub samouczki:
 
 > [!div class="nextstepaction"]
-> [Szybki Start: Tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Szybki start: Tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Praca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

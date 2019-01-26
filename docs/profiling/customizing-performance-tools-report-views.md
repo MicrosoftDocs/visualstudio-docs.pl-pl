@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4cd42732d6e7b4a7ff1bdfbec69d5c35f0cd2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70d9942e7bc711889006184b5ec3dc491168183d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937642"
 ---
 # <a name="customize-performance-tools-report-views"></a>Dostosowywanie widoków raportów narzędzi wydajności
 W tej sekcji opisano, jak dostosować raporty, które są generowane przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools.  

@@ -8,15 +8,15 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7cbbf0e727269baa0a9e199574afcfee1d8ee687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f43518ccc223a52173de4df28d081392a89efdb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886685"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938422"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Kod lint języka R w programie Visual Studio
 
@@ -47,7 +47,7 @@ Te opcje Flaga identyfikatorów, które używają różnych konwencji nazewnictw
 | **Flaga camelCase** | **False** | Identyfikatory flagi, które używają camelCase. |
 | **Długie nazwy flagi** | **False** | Flagi identyfikatory, których nazwy przekracza **maksymalna długość nazwy** ustawienie. |
 | **Flaga wielu punktów.** | **True** | Flagi identyfikatorów, które używają wielu punktów. |
-| **Flaga PascalCase** | **True** | Identyfikatory flagi, które używają PascalCase. |
+| **Flag PascalCase** | **True** | Identyfikatory flagi, które używają PascalCase. |
 | **Flaga snake_case** | **False** | Flagi identyfikatorów, które zawierać znaki podkreślenia. |
 | **Flaga wielkimi literami** | **True** | Identyfikatory flagi używających wersalików. |
 | **Maksymalna długość nazwy** | **32** | Długość stosowane z **Flaga długich nazw** ustawienie. |

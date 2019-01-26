@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 52246c1e-a371-40a0-b756-a435cc51876f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f7ecafbbf9c3d43c49d253bba482e0f2ff0941
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17511c5f89ca40cc002a80da955df10c8773b97c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952187"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub nie masz do nich pełnego zaufania, nie dołączaj do tego procesu
 To okno dialogowe ostrzeżenia pojawia się po dołączeniu do procesu, który zawiera kod częściowo zaufany lub właścicielem jest niezaufanego użytkownika natychmiast, zanim wystąpi dołączanie. Niezaufane procesu, który zawiera złośliwy kod ma potencjalnie uszkodzić komputer podczas debugowania. Jeśli masz powód, aby obdarzać procesu, a następnie kliknij przycisk **anulować** zapobiegające debugowania.  

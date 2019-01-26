@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bee8f954e21082e4013320aeef3f802470350a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dee838a83389e7cd9461f0563d646adc0a8a29e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953711"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Określa, czy ten oczekujący punkt przerwania można powiązać z lokalizacji kodu.  

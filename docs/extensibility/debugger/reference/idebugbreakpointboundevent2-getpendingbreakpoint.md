@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b37f36942ab5797af980fdf98b50fa71fbda4e59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7da5e8f656dd7120aedb1b6e593e495f15d4e1a9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944478"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 Pobiera oczekujący punkt przerwania, który jest powiązany.  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d4bfa27ac2a71e53418ac1be1f9a377f06aede7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b065d54f41ce2e3122a51f133e360b3340186c97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937850"
 ---
 # <a name="button-element"></a>Button, element
 Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyciski może być różnego rodzaju: Przycisk, przycisk menu i SplitDropDown.  
@@ -51,7 +51,7 @@ Definiuje element, który użytkownik może interakcyjnie przeprowadzić. Przyci
 |-------------|-----------------|  
 |[Element nadrzędny](../extensibility/parent-element.md)|Opcjonalna. Elementu nadrzędnego przycisku.|  
 |[Icon, element](../extensibility/icon-element.md)|Opcjonalna. Ikona skojarzone z nim.|  
-|[Command flag, element](../extensibility/command-flag-element.md)|Wymagana. Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly.|  
+|[Command flag, element](../extensibility/command-flag-element.md)|Wymagana. Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> - TextOnly|  
 |[Strings, element](../extensibility/strings-element.md)|Wymagana. Element podrzędny [ButtonText, element](../extensibility/buttontext-element.md) musi być zdefiniowany.|  
 |Adnotacja|Opcjonalny komentarz.|  
   

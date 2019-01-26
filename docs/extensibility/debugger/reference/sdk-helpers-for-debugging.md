@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951741"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
 Te funkcje i deklaracji są funkcje pomocnicze globalnego dotyczące implementowania silniki debugowania, ewaluatory wyrażeń i dostawców symboli w języku C++.  
@@ -420,7 +420,7 @@ HRESULT EnumMetricSections(
 ## <a name="requirements"></a>Wymagania  
  Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] katalogu instalacji zestawu SDK (domyślnie *[dysk]* \Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
   
- Nagłówek: includes\dbgmetric.h  
+ Header: includes\dbgmetric.h  
   
  Biblioteki: libs\ad2de.lib, libs\dbgmetric.lib  
   

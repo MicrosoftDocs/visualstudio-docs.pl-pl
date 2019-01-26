@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f31563418e3a72599ea441c41f2b76910f94c870
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927869"
 ---
 # <a name="extend-projects"></a>Rozszerzanie projektów
 Projekty i rozwiązania są sposoby programu Visual Studio organizuje plików kodu i zasobów w jednostki kompilacji i wdrożenia. Można znaleźć więcej informacji na temat projektów w [projektów (Visual Studio SDK)](../extensibility/extending-projects.md).  
