@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d82471258807563e8607146815f0034902ed3863
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b719d907402a1671a66a42b3ff9b0295cee6856e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896542"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004542"
 ---
 # <a name="start"></a>Uruchamianie
 **Start** jest opcja *VSPerfCmd.exe* opcja, która inicjuje profiler do określonej metody profilowania.  
@@ -72,7 +72,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

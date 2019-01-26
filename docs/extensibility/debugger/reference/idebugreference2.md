@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df5eb1558cf2d93866eaa50e3a480ba70f904fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c6e68785640e68aa6fe4641528ca2f96d3c8406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978285"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Ten interfejs reprezentuje odwołanie do właściwości ramki stosu lub niektóre inne właściwości.  
@@ -66,7 +66,7 @@ IDebugReference2 : IUnknown
  `IDebugProperty2` Interfejsu można traktować jako wartość składającą się z nazwy, typu i adres. `IDebugReference2`, Z drugiej strony drugiej strony, można traktować jako typ i adresu.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

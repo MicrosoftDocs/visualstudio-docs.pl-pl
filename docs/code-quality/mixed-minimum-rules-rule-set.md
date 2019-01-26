@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32592ce00088e4072ed6fc614c5af44004e7a2c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009716"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problemów w projektach C++ obsługujących środowisko uruchomieniowe języka wspólnego, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów C++ obsługujących środowisko uruchomieniowe języka wspólnego.
@@ -151,7 +151,7 @@ Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problem
 |[C28305](../code-quality/c28305.md)|Wykryto błąd podczas analizowania tokenu.|
 |[C28350](../code-quality/c28350.md)|Adnotacja opisuje sytuację, która nie jest warunkowo stosowana.|
 |[C28351](../code-quality/c28351.md)|Adnotacja zawiera opis, gdy wartość dynamiczna (zmienna) nie można użyć w warunku.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, które posiadają pola usuwalne powinny być usuwalne|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Typy, do których należą pola możliwe do likwidacji, powinny być możliwe do likwidacji|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Usuwaj puste finalizatory|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Pola możliwe do rozporządzania należy rozporządzać|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Pola możliwe do likwidacji należy likwidować|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Przeciążaj operator równości w przypadku przesłaniania metody ValueType.Equals|

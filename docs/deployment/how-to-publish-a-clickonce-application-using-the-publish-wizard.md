@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016554"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji
 Aby udostępnić aplikację ClickOnce użytkownikom, możesz opublikować go do udziału plików lub ścieżki, serwer FTP lub nośnik wymienny. Aplikację można opublikować za pomocą Kreatora publikacji; dodatkowe właściwości związanych z publikowaniem są dostępne na **Publikuj** strony **projektanta projektu**. Aby uzyskać więcej informacji, zobacz [publikowania ClickOnce applications](../deployment/publishing-clickonce-applications.md).

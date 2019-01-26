@@ -7,15 +7,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623a0a0515059a903f59d9c9b330876584c40f64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 726ce5ba0ceca4f1369b0590c14da89851a9be37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860606"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004532"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -63,7 +63,7 @@ Sprawdź, czy historią swojego kodu, aby dowiedzieć się, co się stało z kod
 
 Potrzebujesz:
 
-- Visual Studio Enterprise lub Professional programu Visual Studio
+- Visual Studio Enterprise or Visual Studio Professional
 
 - Team Foundation Server 2013 lub nowszy, usługom DevOps platformy Azure lub usługi Git
 

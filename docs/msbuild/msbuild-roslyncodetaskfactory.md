@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c91931e92a40990c742f5cef05e6b056ebc72b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0f391e39c815be289dc0985005ee10ff63b958a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982666"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
 Podobnie jak [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory używa kompilatory Roslyn dla wielu platform, aby wygenerować zestawy zadań w pamięci do użycia jako zadań w tekście.  Zadania RoslynCodeTaskFactory docelowych .NET Standard i może pracować nad środowiska uruchomieniowe platformy .NET Framework i .NET Core, a także innych platformach, takich jak Linux i Mac OS.

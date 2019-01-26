@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07728e5f978fce519fa0acdff28d38b987621593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010353"
 ---
 # <a name="tooltaskextension-base-class"></a>Tooltaskextension — klasa bazowa
 Wiele zadań, o których dziedziczy <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.  

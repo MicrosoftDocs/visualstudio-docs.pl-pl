@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25de3d88cb495d869ae76e854eaad476f778bce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885864"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986114"
 ---
 # <a name="thread-search-dialog-box"></a>Wyszukiwanie wątków — Okno dialogowe
 Umożliwia to okno dialogowe Znajdź i wybierz węzeł w określonym wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz **Znajdź wątek** z **wyszukiwania** menu.  

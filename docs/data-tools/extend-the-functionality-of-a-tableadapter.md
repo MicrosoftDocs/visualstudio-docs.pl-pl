@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a99ff0c28eac785e7e0e52958abcc4c94799685
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 989eb815a6e55b5ecaed0b960963eb036b73065a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53900194"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970542"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
 

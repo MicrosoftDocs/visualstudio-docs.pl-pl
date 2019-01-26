@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e2d680bb1342b66ac8fc063ff2fb840c63d05cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010119"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Instrukcje: Otwieranie edytorów specyficznych dla projektu
 Jeśli plik elementu otwierana przez projekt wewnętrznie jest powiązany z określonego edytora dla tego projektu, projekt musi otworzyć plik za pomocą edytora specyficznych dla projektu. Plik nie może być delegowane do środowiska IDE mechanizm wybierania edytora. Na przykład zamiast za pomocą edytora standardowego mapy bitowej służy tej opcji edytora specyficznych dla projektu do określenia Edytor mapa bitowa szczególnych, który rozpoznaje informacje zawarte w pliku, który jest unikatowy dla projektu.  

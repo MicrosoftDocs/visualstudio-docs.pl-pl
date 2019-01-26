@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38b88b8b-c2e0-4b2d-8b8b-9ff373733e78
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac6a920e45c3b8d008d83185feb2a138f9273d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 492c223543b4c7661a9709b88d6d162dd591a756
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832703"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973619"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Pobiera liczbę bajtów kodu.  

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 05ca223405635f8ceed02487aabf364fb59d5893
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4945515def65a0a1a363e6ba6cd76ca411dc6d6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009052"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debugowanie kontrolki WebView w aplikacji platformy uniwersalnej systemu Windows
   
@@ -83,4 +83,4 @@ ms.locfileid: "53944408"
 6.  Wyświetlanie i modyfikację zmiennych w swojej aplikacji lub użyj polecenia konsoli, zgodnie z opisem w [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) i [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS | Dokumentacja firmy Microsoft
+title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155703f0791be4d0cf32bbf53f6a6696587aee5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2df09b8a95d80a2eade19a4c9094529bbabe2bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859308"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012823"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Określa informacje, które mają zostać pobrane dotyczących rozwiązania nie powiodło się punktu przerwania.  
@@ -74,7 +74,7 @@ public enum enum_BPERESI_FIELDS { 
  Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

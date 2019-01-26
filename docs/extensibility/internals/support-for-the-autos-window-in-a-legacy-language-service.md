@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f65b6d4daeb928cab1c59aaa5f1f2ded3225e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0e10413581e7047b92b640f105023b0a1a8ff3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979585"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej
 **Autos** oknie wyświetlane są wyrażenia, takie jak zmienne i parametry, które znajdują się w zakresie, gdy program debugowany jest wstrzymany, (albo z powodu punkt przerwania lub wyjątku). Wyrażenie może zawierać zmiennych lokalnych lub globalnych oraz parametry, które zostały zmienione w zakresie lokalnym. **Autos** okna może również obejmować wystąpień klasy, struktury lub innego typu. Wszystko, co może ocenić ewaluatora wyrażeń potencjalnie mogą być wyświetlane w **Autos** okna.  

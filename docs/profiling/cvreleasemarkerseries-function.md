@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60394b799c2468d45818fa07d876dde2a651467d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ef7cc83c876f5ac9031010fd45e2230e6c4c03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007006"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Cvreleasemarkerseries — funkcja
 Zwalnia znaczników serii. Nie używaj znaczników serii obiektu po zwalniania w przeciwnym razie aplikacja może ulec awarii. Nie można zwolnić znaczników serii powoduje, że przeciek pamięci.  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69178039d89d1a20a361045c3c6716cc780b679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06447475e2686bf3f4ec7c79c0e2417d4ee99a8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011315"
 ---
 # <a name="design-warnings"></a>Ostrzeżenia projektu
 Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi projektowania programu .NET Framework.
@@ -86,7 +86,7 @@ Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi p
 | [CA1059: Składowe nie powinny ujawniać niektórych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby włączyć powszechne użycie elementu członkowskiego, zamień konkretny typ, używając sugerowanego interfejsu. |
 | [CA1060: Przenieś P/Invokes do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Metody platform Invocation, takich jak oznaczone <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub metody zdefiniowane przy użyciu słowa kluczowego Declare w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], dostęp do kodu niezarządzanego. Metody te powinny być klasami NativeMethods, SafeNativeMethods lub UnsafeNativeMethods. |
 | [CA1061: Nie ukrywaj metod klasy bazowej](../code-quality/ca1061-do-not-hide-base-class-methods.md) | Metoda w typie podstawowym jest ukryta przez metodę o identycznej nazwie typu pochodnego, gdy sygnatura parametru metody pochodnej różni się tylko typami, które są słabiej dziedziczone niż odpowiadające typy w sygnaturze parametru metody podstawowej. |
-| [CA1062 Waliduj argumenty metod publicznych](../code-quality/ca1062-validate-arguments-of-public-methods.md) | Wszystkie argumenty odwołania, które są przekazywane do metody widocznej na zewnątrz, powinny być sprawdzane pod kątem wartości null. |
+| [CA1062: Waliduj argumenty metod publicznych](../code-quality/ca1062-validate-arguments-of-public-methods.md) | Wszystkie argumenty odwołania, które są przekazywane do metody widocznej na zewnątrz, powinny być sprawdzane pod kątem wartości null. |
 | [CA1063: Poprawnie zaimplementuj interfejs IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md) | Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose. |
 | [CA1064: Wyjątki powinny być publiczne](../code-quality/ca1064-exceptions-should-be-public.md) | Wyjątek wewnętrzny jest widoczny tylko wewnątrz własnego zakresu wewnętrznego. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wyjątek wewnętrzny jest dziedziczony z <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, lub <xref:System.ApplicationException?displayProperty=fullName>, kod zewnętrzny nie ma wystarczające informacje, aby wiedzieli, co należy zrobić z wyjątkiem. |
 | [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Metoda, od której nie oczekiwano zgłaszania wyjątków, zgłasza wyjątek. |

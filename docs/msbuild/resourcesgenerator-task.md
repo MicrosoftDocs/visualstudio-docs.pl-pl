@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c28327ec391bbed7062d5957739f21d27655b048
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4ea1e45864918ef3b6329da04a8c6b493a50697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882712"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013863"
 ---
 # <a name="resourcesgenerator-task"></a>Resourcesgenerator — zadanie
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Zadań osadza co najmniej jeden zasób (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) do *Resources* pliku.  

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7764b1ef6ac0399421dbd8bf6817a0173391bc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77fa0d60c4c702e2594121d5db54bf6c5e7cc6f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005972"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w języku C#
 

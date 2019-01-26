@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0bee04719a9c984f300d34da09a6b9f6adbb81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06bfb109ce58ee822a32bc3a92d7e6e45578fb05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005513"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzaj projektami Universal Windows
 Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Phone 8.1 dzięki czemu deweloperzy mogą używać kodu i inne zasoby w obu platform. Wspólny kod i zasoby są przechowywane w udostępnionego projektu, gdy kod specyficzny dla platform i zasobów, które są przechowywane w oddzielnych projektów: jeden dla Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji dla Windows, zobacz [Universal Windows apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, zarządzanie projektami, które należy pamiętać, że uniwersalne projekty aplikacji Windows mają strukturę, która różni się od aplikacji pojedynczej platformy. W tym instruktażu dowiesz się, jak nawigować udostępnionego projektu i zarządzanie elementami udostępnionymi.  

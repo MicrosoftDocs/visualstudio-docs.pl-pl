@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c760c4a66a3f1d4bc9e3956d2d7dc824145d7cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8616d2cf922f1522f44470bc76ed3b80e3ef9ceb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008897"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, element (szablony Visual Studio)
 Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funkcje są udostępniane przez typy projektów za pośrednictwem hierarchii jako właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.  
@@ -24,8 +24,8 @@ Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zob
  Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwoływanie się do zestawów dostarczane w Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<AppliesTo >  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>Składnia  
   

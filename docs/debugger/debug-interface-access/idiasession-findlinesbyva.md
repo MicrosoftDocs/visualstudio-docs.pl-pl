@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c94558cb7ee4c3cb71b323f3dc50fcec7cc100
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 063403df90ff222d13384ef61d865ba2c5187c9f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838612"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000435"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 Pobiera informacje o numerze wiersza dla wierszy znajdujących się w zakresie określony adres wirtualny (oceny luk w zabezpieczeniach).  

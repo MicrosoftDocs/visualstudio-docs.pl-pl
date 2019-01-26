@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Dokumentacja firmy Microsoft
+title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeaa86ae2a740a1a31147f7294fd91bdbf5872d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6b9744e1586de5f20404e1db71810fb9d3b8b32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988184"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Ta metoda powoduje, że program jest dostępny dla silniki debugowania (DEs) i Menedżer debugowania sesji.  

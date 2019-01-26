@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreams — | Dokumentacja firmy Microsoft
+title: IDiaEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0154972398656c3ebd1caf8cab112f193c02fd62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bc7895248e8ba201debf4d5020de9cef6b0a836
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014630"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Wylicza różnych strumieni debugowania zawartych w źródle danych.  
@@ -78,13 +78,13 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: dia2.h  
+ Nagłówek: Dia2.h  
   
  Biblioteka: diaguids.lib  
   
- Biblioteki DLL: msdia80.dll  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
+ [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

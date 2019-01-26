@@ -1,5 +1,5 @@
 ---
-title: Idiaaddressmap::set_addressmap — | Dokumentacja firmy Microsoft
+title: IDiaAddressMap::set_addressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a1177208ac747373f2625a9fc76b7f3bc1cdb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3150cc591c77d1ab3abc31ed9b07062d094d3d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954133"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973099"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 Zawiera mapę adresu do obsługi obrazów układ tłumaczenia.  
@@ -50,6 +50,6 @@ HRESULT set_addressMap ( 
   
 ## <a name="see-also"></a>Zobacz też  
  [Diaaddressmapentry — struktura](../../debugger/debug-interface-access/diaaddressmapentry.md)   
- [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap::put_addressmapenabled —](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
+ [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

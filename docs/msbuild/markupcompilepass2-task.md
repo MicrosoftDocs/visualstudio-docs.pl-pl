@@ -1,5 +1,5 @@
 ---
-title: Markupcompilepass2 — zadanie | Dokumentacja firmy Microsoft
+title: MarkupCompilePass2 Task | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 - MarkupCompilePass2 task [WPF MSBuild], parameters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a119f3217f8e867dfa4539972cdb2d3d6715b597
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c426e65df270f6fcc3fa9a574f84cc0406d42294
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016307"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 — zadanie
 

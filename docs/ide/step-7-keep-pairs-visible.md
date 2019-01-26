@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56d6d63aba5ab437cffd1e7275afa5eb9203a169
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016759"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachować widoczność par
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast ukrywania okien przez włączanie czasomierza (za pomocą <xref:System.Windows.Forms.Timer.Start> metoda), gra powinna się zresetować, aby go jest już rejestrowanie informacji o wszystkich etykiet używających `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez resetowania kolory dla dwóch etykiet, które zostały wybrane.

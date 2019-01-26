@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13ffde9d399e0535f7cf6790f199ba4924156636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012186"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 

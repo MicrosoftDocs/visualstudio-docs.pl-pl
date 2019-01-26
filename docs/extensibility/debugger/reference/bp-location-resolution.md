@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION | Dokumentacja firmy Microsoft
+title: BP_LOCATION_RESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bfee3974e97f6eacf3ea506c36c120035390c76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56a990c13699d31b06396d0a762abda68e409c49
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997985"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 W tym artykule opisano rozwiązania punktu przerwania w określonej lokalizacji.  
@@ -38,7 +38,7 @@ typedef struct _BP_LOCATION_RESOLUTION { 
  Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
   
 ## <a name="requirements"></a>Wymagania  
- Nagłówek: msdbg.h  
+ Header: msdbg.h  
   
  Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
   

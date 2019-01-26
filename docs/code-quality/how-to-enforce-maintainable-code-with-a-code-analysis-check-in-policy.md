@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu zaewidencjonowania'
+title: 'Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad ewidencjonowania analizy kodu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9b868054813f65e15c3dfd422be7240df09e284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956756"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Instrukcje: Wymuszanie kodu łatwego w utrzymaniu za pomocą zasad analizy kodu zaewidencjonowania
 
@@ -50,9 +50,9 @@ Administratorzy kontroli wersji serwera Team Foundation można dodać reguły ut
 
    - Złożoność: **CA1502 AvoidExcessiveComplexity** -progu: Ostrzeżenie na więcej niż 25
 
-   - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** -progu: Ostrzeżenie w mniej niż 20
+   - Indeks łatwości utrzymania: **CA1505 AvoidUnmaintainableCode** - Threshold: Ostrzeżenie w mniej niż 20
 
-   - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** -progu: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody
+   - Sprzężenia klas: **CA1506 AvoidExcessiveClassCoupling** - Threshold: Ostrzeżenie na więcej niż 80 dla klasy i więcej niż 30 dla metody
 
      Ponadto naruszenie reguły, aby zapobiec pomyślnej kompilacji, wybierz **Traktuj ostrzeżenie jako błąd** pole wyboru obok opis reguły.
 

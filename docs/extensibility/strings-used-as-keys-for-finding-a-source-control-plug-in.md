@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f245a1657883acb63e9721837063c6a8ef245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977029"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła
 Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, aby znaleźć informacje o kontroli źródła wtyczek.  
@@ -36,7 +36,7 @@ Następujące ciągi są klucze służące do uzyskiwania dostępu do rejestru, 
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
 |`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Plik kontroli kodu źródłowego|  
 |`SCC_NSE`|Rozszerzenie Namespace|  

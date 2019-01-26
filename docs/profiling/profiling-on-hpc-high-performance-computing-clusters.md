@@ -16,15 +16,15 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df5a05b3ffe4a8ab05fb548a8ca41b6a61f747d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963492"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Klastry profilu na HPC (przetwarzanie o wysokiej wydajności)
 
@@ -54,7 +54,7 @@ Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące c
 |------------------| - |
 | *%HeadNode%* | Nazwa węzła głównego klastra. |
 | *%FxPath%* | Ścieżka do [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalatora. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: Profiler\x64\vs_profiler.exe autonomiczny |
+| *%ProfilerPath%* | Ścieżka do wersji autonomicznego Instalatora narzędzi profilowania. Na nośniku instalacyjnym programu Visual Studio ścieżka jest: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil w węźle obliczeń HPC
 

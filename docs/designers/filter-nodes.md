@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba6246f68505a4b1d0a93011b46e32918779dfa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b047bba87ef99916ba83d5cef07f26382755ce6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836900"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976540"
 ---
 # <a name="filter-nodes"></a>Węzły filtrów
 
@@ -24,7 +24,7 @@ W projektancie programu do cieniowania węzły filtru przekształcania danych we
 
 |Węzeł|Szczegóły|Właściwości|
 |----------|-------------|----------------|
-|**Rozmycie**|Rozmywa pikseli tekstury za pomocą funkcji Gaussa.<br /><br /> Możesz użyć tego zmniejszenie szczegóły koloru lub szumu tekstury.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmyte.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas Rozmycie.|
+|**Blur**|Rozmywa pikseli tekstury za pomocą funkcji Gaussa.<br /><br /> Możesz użyć tego zmniejszenie szczegóły koloru lub szumu tekstury.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmyte.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas Rozmycie.|
 |**Zmniejszanie nasycenia**|Zmniejsza ilość koloru w określony kolor.<br /><br /> Usunięcia koloru wartość koloru zbliża się odpowiadającą jej równoważnika na skali.<br /><br /> **Dane wejściowe:**<br /><br /> `RGB`: `float3`<br /> Zmniejsz nasycenie koloru.<br /><br /> `Percent`: `float`<br /> Procent kolor, aby usunąć, wyrażone jako znormalizowaną wartość z zakresu [0, 1].<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Nasycony kolor.|**Jasności**<br /> Wagi, które są określone dla składników koloru czerwonego, zielonego i niebieskiego.|
 |**Wykrywanie krawędzi**|Wykrywa krawędzie tekstury za pomocą wykrywanie krawędzi Canny'ego. Pikseli na krawędzi są wyświetlane jako biały; pikseli na krawędzi nie są wyświetlane jako czarny.<br /><br /> Służy to do określenia krawędzi tekstury, dzięki czemu można użyć dodatkowych efektów traktowanie pikseli na krawędzi.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Białe, jeśli teksela znajduje się na krawędzi; w przeciwnym razie czarny.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wykrywania krawędzi.|
 |**Doskonalenie**|Wyostrza teksturę.<br /><br /> Możesz użyć tego, aby wyróżnić szczegółów tekstury.<br /><br /> **Dane wejściowe:**<br /><br /> `UV`: `float2`<br /> Współrzędne texel do testowania.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float4`<br /> Wartość koloru rozmyte.|**Tekstury**<br /> Rejestr tekstury skojarzony z próbnikiem używany podczas wyostrzania.|

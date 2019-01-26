@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32c221359733761f7f5fa307308a5666502722c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947437"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod 
 
@@ -283,7 +283,7 @@ Specyfikacje w tym pliku przesłonić domyślne klasyfikacje i *mycode.default.w
 |-|-|  
 |**Eval**|Skrypt, który jest wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcji. Domyślnie skrypt — wersja próbna zostanie sklasyfikowany jako **MyCode**.|  
 |**Function**|Skrypt, który jest wykonywany, przekazując ciąg do `Function` konstruktora. Domyślnie funkcja skryptu zostanie sklasyfikowany jako **LibraryCode**.|  
-|**Blok skryptu**|Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji. Domyślnie skryptów w blok skryptu zostanie sklasyfikowany jako **UnrelatedCode**.|  
+|**ScriptBlock**|Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji. Domyślnie skryptów w blok skryptu zostanie sklasyfikowany jako **UnrelatedCode**.|  
   
  Możesz zmienić wartość, do jednego z tych słów kluczowych:  
   

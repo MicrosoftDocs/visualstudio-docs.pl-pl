@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: b19bba65ebfb8ecec778f33211cfb127acc612bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008689"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wdrażania i zabezpieczeń ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest to technologia wdrażania umożliwiająca tworzenie automatycznie aktualizowane aplikacje z systemem Windows, które można instalować i uruchamiać z interakcji z użytkownikiem minimalny. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zapewnia pełną obsługę publikowanie i aktualizowanie aplikacji wdrożonych przy użyciu technologii ClickOnce, jeśli opracowano Twoich projektów w języku Visual Basic i Visual C#. Aby dowiedzieć się, jak wdrażanie aplikacji Visual C++, zobacz [wdrożenie rozwiązania ClickOnce dla aplikacji Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -98,7 +98,7 @@ ms.locfileid: "54154353"
 |[*Mage.exe* (Manifest narzędzie generowania i edytowania)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generuje manifestów aplikacji i wdrożenia dla aplikacji Visual Basic, Visual C# i Visual C++.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.<br /><br /> Można uruchomić z wiersza polecenia i skrypty usługi batch.|  
 |[*MageUI.exe* (Manifest narzędzie, graficzny klient generowania i edytowania)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Generuje i umożliwia edycję manifestów aplikacji i wdrożenia.<br /><br /> Podpisuje i podpisuje ponownie manifestów aplikacji i wdrożenia.|  
 |[Generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikacji.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
-|[Generatedeploymentmanifest — zadanie](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest wdrożenia.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest task](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest wdrożenia.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
 |[Signfile — zadanie](../msbuild/signfile-task.md)|Objawy manifestów aplikacji i wdrożenia.<br /><br /> Można uruchomić z programu MSBuild. Aby uzyskać więcej informacji, zobacz [odwołanie do MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Tworzenie własnych aplikacji można wygenerować manifestów aplikacji i wdrożenia.|  
   
@@ -106,7 +106,7 @@ ms.locfileid: "54154353"
   
 |Przeglądarka|Wersja programu .NET Framework|  
 |-------------|----------------------------|  
-|Internet Explorer|W WERSJI 2.0, 3.0, 3.5, 3.5 Z DODATKIEM SP1, 4|  
+|Internet Explorer|2.0, 3.0, 3.5, 3.5 SP1, 4|  
 |Firefox|W WERSJI 2.0 Z DODATKIEM SP1, 3.5 Z DODATKIEM SP1, 4|  
   
 ## <a name="see-also"></a>Zobacz także  

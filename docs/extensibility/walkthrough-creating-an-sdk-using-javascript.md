@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed81ac8e79db6a11dd4897b2d9f96c7c63d10294
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9be3054b8ee93421e9c7353d35f9ead8baa57bfe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004660"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript
 W tym przewodniku pokazano, jak utworzyć proste matematyczne SDK jako programu Visual Studio rozszerzenia (VSIX) za pomocą języka JavaScript.  Instruktażu jest podzielony na te części:  
