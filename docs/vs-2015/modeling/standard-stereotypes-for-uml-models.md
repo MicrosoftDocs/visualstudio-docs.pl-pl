@@ -1,12 +1,9 @@
 ---
 title: Standardowe stereotypy dla modeli UML | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770702"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardowe stereotypy dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +33,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 |-------------|-------------|  
 |[Profil standardowy UML pamięci podręcznej L2](#L2)|Standardowy zestaw stereotypów, które mogą służyć do dodawania dodatkowych informacji na temat elementu lub relacji.|  
 |[L3 standardowy profil UML](#L3)|Standardowy zestaw stereotypów, które mogą służyć do dodawania dodatkowych informacji na temat elementu lub relacji.|  
-|[Profil C#](#NetProfile)|Jeśli planujesz klasę lub inny element w modelu UML do reprezentowania kodu programu, możesz to zasygnalizować, stosując jednemu ze stereotypów z profilu C#.<br /><br /> Tych stereotypów również dodać właściwości do elementów modelu.|  
+|[C# Profile](#NetProfile)|Jeśli planujesz klasę lub inny element w modelu UML do reprezentowania kodu programu, możesz to zasygnalizować, stosując jednemu ze stereotypów z profilu C#.<br /><br /> Tych stereotypów również dodać właściwości do elementów modelu.|  
   
  Podczas tworzenia nowego modelu UML standardowa L2 profilów UML i L3 są połączone z modelu, chyba że usuniesz łącza.  
   
@@ -82,23 +79,23 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 |Stereotyp|Informacje zawarte w tym artykule dotyczą|Znaczenie|  
 |----------------|----------------|-------------|  
 |pomocnicze|Class|Klasa, która obsługuje innej klasy, zazwyczaj przez zaimplementowanie dodatkowej logiki. Inne klasy mogą mieć stereotyp «fokus».|  
-|— wywołanie|Zależność|Klasa klienta wywołania operacji dostawcy.|  
+| — wywołanie|Zależność|Klasa klienta wywołania operacji dostawcy.|  
 |tworzenie|Zależność|Klasa klienta tworzy wystąpienia dostawcy.|  
 |tworzenie|Komunikat|Nadawca tworzenia odbiornika.|  
 |tworzenie|Operacja|Ta operacja jest konstruktora.|  
 |pochodzi|Zależność|Element klienta jest obliczany całkowicie lub częściowo od dostawcy.|  
-|Zniszcz|Operacja|Operacja niszczy jego wystąpienia.|  
+|destroy|Operacja|Operacja niszczy jego wystąpienia.|  
 |dokument|Artefakt|Element "pliku" nie jest źródłem lub pliku wykonywalnego.|  
 |jednostka|Składnik|Składnik reprezentuje koncepcji biznesowych.|  
 |pliku wykonywalnego|Artefakt|Plik wykonywalny "pliku".|  
-|— plik|Artefakt|Pliku fizycznego.|  
+|plik|Artefakt|Pliku fizycznego.|  
 |fokus|Class|Klasą zdefiniowanie logiki biznesowej core, obsługiwane przez kilka klas "pomocnicze".|  
 |szablon|Package|Ten pakiet definiuje wzorzec projektowania do wielokrotnego użytku.|  
 |Implementowanie|Składnik|Implementacja specyfikacji «».|  
 |implementationClass|Class|Klasa Opisuje implementację i każde wystąpienie środowiska uruchomieniowego ma jedną klasę stały implementacji. Natomiast określenie "typu".|  
 |Utwórz wystąpienie|Zależność|Klient tworzy wystąpienia dostawcy.|  
 |biblioteka|Artefakt|Biblioteka "pliku".|  
-|Metaklasa|Class|Wystąpienia tej klasy są również klasami.|  
+|metaclass|Class|Wystąpienia tej klasy są również klasami.|  
 |modelLibrary|Package|Zawiera elementy modelu, które ma być ponownie używane przez zaimportowanie pakietów. Zazwyczaj zdefiniowane jako część profilu i automatycznie importowane przez aplikację profilu.|  
 |proces|Składnik|Składnik usługi opartej na transakcjach, lub takiego, który prowadzi wątku.|  
 |Realizacja|Klasy, interfejsu, składnik|W tym artykule opisano implementację.|  
@@ -125,7 +122,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 |metaModel|Model|Określa język modelowania, takich jak wariant UML lub języka specyficznego dla domeny.|  
 |systemModel|Model|Model, który jest kolekcją modeli, które dotyczą tego samego systemu, na przykład specyfikację, realizacja i śledzenia relacji między nimi.|  
   
-##  <a name="NetProfile"></a> Profil C#  
+##  <a name="NetProfile"></a> C# Profile  
  Stereotypy zdefiniowane w tym profilu pozwalają wskazać, że element modelu ma na celu translacji na kod programu. Każdy stereotyp definiuje dodatkowe właściwości, które można ustawić dla elementu modelu.  
   
  Aby udostępnić te stereotypów, połączyć modelu lub pakietu profil C#. Mogą następnie zastosować Stereotypy do elementów modelu, w tym modelu lub pakietu.  
@@ -134,7 +131,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
   
 |Stereotyp|Informacje zawarte w tym artykule dotyczą|Właściwości|  
 |----------------|----------------|----------------|  
-|**Klasa C#**|Klasa UML<br /><br /> Składnik|**Atrybuty CLR**<br /><br /> **Jest częściowy**<br /><br /> **Jest zapieczętowany**<br /><br /> **Jest statyczny**<br /><br /> **Jest niebezpieczny**<br /><br /> **Widoczność pakietu**|  
+|**C# Class**|Klasa UML<br /><br /> Składnik|**Atrybuty CLR**<br /><br /> **Jest częściowy**<br /><br /> **Jest zapieczętowany**<br /><br /> **Jest statyczny**<br /><br /> **Jest niebezpieczny**<br /><br /> **Widoczność pakietu**|  
 |**Struktura C#**|Klasa UML<br /><br /> Składnik|**Atrybuty CLR**<br /><br /> **Jest częściowy**<br /><br /> **Jest niebezpieczny**<br /><br /> **Widoczność pakietu**|  
 |**C# globalnego elementów członkowskich**|Klasa UML<br /><br /> Składnik|**Atrybuty CLR**|  
 |**Interfejs C#**|Interfejs UML|**Atrybuty CLR**<br /><br /> **Jest częściowy**<br /><br /> **Widoczność pakietu**|  
@@ -145,6 +142,3 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
  [Dodawanie stereotypów do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definiowanie profilu w celu rozszerzenia kodu UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

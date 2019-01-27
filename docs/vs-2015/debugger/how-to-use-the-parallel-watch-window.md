@@ -1,14 +1,9 @@
 ---
-title: 'Porady: Korzystanie z okna równoległego wyrażenia kontrolnego | Dokumentacja firmy Microsoft'
-ms.custom: ''
+title: 'Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego | Dokumentacja firmy Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779775"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Porady: korzystanie z okna czujki równoległej
+# <a name="how-to-use-the-parallel-watch-window"></a>Instrukcje: Korzystanie z okna równoległego wyrażenia kontrolnego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:  
@@ -44,7 +39,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   > [!TIP]
   >  Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
   
-- **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
+-  **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -70,7 +65,7 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   
 ### <a name="to-switch-frames"></a>Aby przełączyć ramki  
   
--   Kliknij dwukrotnie kolumnę ramki. (Klawiatura: zaznacz wiersz, a następnie naciśnij klawisz Enter.)  
+-   Kliknij dwukrotnie kolumnę ramki. (Klawiatura: Zaznacz wiersz i naciśnij klawisz Enter).  
   
 ### <a name="to-sort-a-column"></a>Aby posortować kolumnę  
   
@@ -94,8 +89,5 @@ W oknie czujki równoległej może jednocześnie wyświetlać wartości, które 
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Przewodnik: debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-
+ [Instrukcje: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Przewodnik: Debugowanie aplikacji C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

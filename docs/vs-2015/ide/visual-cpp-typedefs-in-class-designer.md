@@ -1,14 +1,9 @@
 ---
 title: Definicje typów Visual C++ w Projektancie klas | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
@@ -18,13 +13,13 @@ ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ba65af46589e01aa5473b5757124ed184da2197
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778620"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definicje typów Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Aby uzyskać więcej informacji o korzystaniu z `typedef` typu, zobacz [specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
   
  Kształt typu C++ ma kształt z typem określonym w definicji typu. Na przykład, jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i etykiety **klasy**. Aby uzyskać `typedef struct`, kształt ma ostre rogi i etykieta **struktury**.  
   
@@ -69,7 +64,7 @@ typedef class coord
   
  *Nazwa* : *typu*  
   
- — klasa typedef  
+  — klasa typedef  
   
  Rysuje linię skojarzenia nawiązywania połączenia z typu *nazwa*, jeśli to możliwe.  
   
@@ -77,7 +72,7 @@ typedef class coord
   
  `func: void (*)(int)`  
   
- — klasa typedef  
+  — klasa typedef  
   
  Element TypeDef dla wskaźników funkcji. Linia skojarzenia, nie jest rysowane.  
   
@@ -92,7 +87,7 @@ class A {
   
  `MyInt: int`  
   
- — klasa typedef  
+  — klasa typedef  
   
  `A`  
   
@@ -110,7 +105,7 @@ class A {
   
  `MyB : B`  
   
- — klasa typedef  
+  — klasa typedef  
   
  Kliknij prawym przyciskiem myszy kształt typu, a następnie klikając polecenie **Pokaż jako skojarzenie** Wyświetla element typedef lub klasy i **Alias** linię łączącą dwa kształty, które (podobnie jak linia skojarzenia).  
   
@@ -120,7 +115,7 @@ class A {
   
  `MyBar : Bar`  
   
- — klasa typedef  
+  — klasa typedef  
   
  Wartość taka sama jak powyżej.  
   
@@ -139,7 +134,7 @@ class A {
   
  `MyB : B`  
   
- — klasa typedef  
+  — klasa typedef  
   
  `A`  
   
@@ -161,7 +156,7 @@ class A {
   
  `MyIntVect : vector<int>`  
   
- — klasa typedef  
+  — klasa typedef  
   
  `class B {};`  
   
@@ -171,7 +166,7 @@ class A {
   
  `MyB : B`  
   
- — klasa typedef  
+  — klasa typedef  
   
  -> B  
   
@@ -197,7 +192,7 @@ class A {
   
  `MyIntVect : std::vector<int>`  
   
- — klasa typedef  
+  — klasa typedef  
   
  `MyVect`  
   
@@ -207,7 +202,4 @@ class A {
   
 ## <a name="see-also"></a>Zobacz też  
  [Praca z kodem Visual C++ (Projektant klas)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
-
-
-
+ [Specyfikator typedef (NOTINBUILD)](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

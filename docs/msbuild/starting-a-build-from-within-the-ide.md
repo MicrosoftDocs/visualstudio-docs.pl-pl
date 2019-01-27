@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d5d9022362b39dea4e9a36155c4c1b3b056c6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10f97a5cbc51e2f42af1601e8abd43d1e3529e9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942194"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Uruchom kompilację z poziomu środowiska IDE
 Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym artykule opisano przyczyny tego wymagania i opisano procedurę.  
@@ -25,7 +25,7 @@ Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.She
 
  Jeśli system projektu modyfikuje zmienne środowiskowe, jego musi ustawić NodeAffinity kompilacji outofproc. Wymaganie to oznacza, że nie można używać obiektów hosta, ponieważ wymagają one węzła w proc.  
 
-## <a name="use-ivsbuildmanageraccessor"></a>Użyj IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>Use IVSBuildManagerAccessor  
  Poniższy kod przedstawia metodę, którą system projektu może użyć do uruchomienia kompilacji:  
 
 ```csharp

@@ -1,14 +1,9 @@
 ---
 title: Edytowanie kodowanych testów interfejsu użytkownika, za pomocą edytora testu kodowanego interfejsu użytkownika | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793766"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ Edycja właściwości akcji UI
   
  Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.  
   
- Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>"** , można zmienić adres URL do `‘http://Contoso2/default.aspx’`.  
+ Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>**, można zmienić adres URL do `‘http://Contoso2/default.aspx’`.  
   
  ![Właściwości formantu](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Edycja właściwości kontrolki  
@@ -125,7 +120,7 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
-- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** Jeśli możesz podzielić metodę, należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę zamierzasz utworzyć, jeśli nadal chcesz tych interfejsu użytkownika włączone czynności. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą chcesz utworzyć. Wybierz **tak**.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Jeśli podzieli metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą zamierzasz utworzyć, jeśli nadal chcesz te akcje interfejsu użytkownika uwzględnione. Podczas podziału metody zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby wywoływał również nową metodę, którą chcesz utworzyć. Wybierz **tak**.  
   
   **Porady**  
   
@@ -149,7 +144,7 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
-- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** po przeniesieniu metody nie będzie można edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody, zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ma zostać przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie już można edytować metody za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Po przeniesieniu metody mogą nie trzeba już edytować go za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Po przeniesieniu metody, zostanie wyświetlone okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ma zostać przeniesiona z pliku UIMap.uitest do UIMap.cs lub UIMap.vb, który nie będzie już można edytować metody za pomocą edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.  
   
   **Porady**  
   
@@ -167,7 +162,7 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
-- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** przed kontrolki interfejsu użytkownika możesz zlokalizować, sprawdź, czy aplikacja skojarzona z test jest uruchomiony.  
+- ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Przed kontrolki interfejsu użytkownika możesz zlokalizować, należy sprawdzić, czy jest uruchomiona aplikacja skojarzona z testem.  
   
   **Porady**  
   
@@ -185,7 +180,7 @@ Edycja właściwości kontrolki
  *Co jeszcze muszę wiedzieć?*  
  **Istotne problemy**  
   
--   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **Ostrzeżenie:** przed lokalizować kontrolek interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z test jest uruchomiony.  
+-   ![Ikona ostrzegawcza](../test/media/caution.gif "Przestroga") **ostrzeżenia:** Przed lokalizować kontrolek interfejsu użytkownika, należy sprawdzić, czy aplikacja skojarzona z test jest uruchomiony.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Wstawianie opóźnienia przed akcją UI  
  Czasami możesz chcieć wykonać próbę, poczekaj, aż niektóre zdarzenia, takiego jak okna wyświetlany pasek postępu znikną i tak dalej. Za pomocą edytora kodowanego testu interfejsu użytkownika, można to zrobić, wstawiając opóźnienia przed akcją UI. Można określić, ile sekund ma opóźnienie za.  
@@ -194,7 +189,7 @@ Edycja właściwości kontrolki
   
  ![Dodaje się z 5 sekund opóźnienia](../test/media/codeduidealy2.png "CodedUIDealy2")  
   
- W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz wstawić opóźnienie przed. Wybieranie akcji interfejsu użytkownika. Następnie otwórz menu skrótów dla działania interfejsu użytkownika i wybierz polecenie **Wstaw opóźnienie przed**. Opóźnienie jest wstawiany i wyróżnione przed wybranej akcji interfejsu użytkownika w następującym tekstem: **poczekaj 1 w sekundach dla opóźnienia użytkownika między akcjami**. W oknie Właściwości zmień wartość **opóźnienie** żądaną liczbę milisekund.  
+ W **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz wstawić opóźnienie przed. Wybieranie akcji interfejsu użytkownika. Następnie otwórz menu skrótów dla działania interfejsu użytkownika i wybierz polecenie **Wstaw opóźnienie przed**. Opóźnienie jest wstawiany i wyróżnione przed wybranej akcji interfejsu użytkownika w następującym tekstem: **Poczekaj 1 w sekundach dla opóźnienia użytkownika między akcjami**. W oknie Właściwości zmień wartość **opóźnienie** żądaną liczbę milisekund.  
   
  Po zakończeniu Wstawianie opóźnienia, zapisać zmiany w pliku UIMap.Designer, wybierając **Zapisz** na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] paska narzędzi.  
   
@@ -210,7 +205,7 @@ Edycja właściwości kontrolki
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   
 ### <a name="guidance"></a>Wskazówki  
- [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: testowanie jednostkowe: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 2: Testy jednostkowe: Testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>Najczęściej zadawane pytania  
  [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -225,7 +220,4 @@ Edycja właściwości kontrolki
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md)   
  [Generowanie kodowanego testu interfejsu użytkownika na podstawie dotychczasowego rejestrowania akcji](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Przewodnik: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-
+ [Przewodnik: Tworzenia, edytowania i utrzymywania kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859084"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009937"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Tworzenie wykresów danych wizualnych języka r
 
@@ -38,7 +38,7 @@ Wykres systemu windows są niezależne od projektów programu Visual Studio i po
 
 Generowanie wykres używa okna wykres "aktywny" Zapisywanie wszystkie poprzednie wykreślania go do wykresu historii (zobacz [wykresu historii](#plot-history)). Na przykład, wprowadź `plot(100:1)` i pierwszy wykres jest zastępowany linię w dół.
 
-Podobnie jak inne okna programu Visual Studio. w oknie Diagram obsługuje układy niestandardowe (zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Wykres systemu windows można zadokowane w różnych lokalizacjach w ramce programu Visual Studio, zmiany rozmiaru w tej ramce lub pobierane poza ramkę, całkowicie dla niezależnie od rozmiaru. 
+Podobnie jak inne okna programu Visual Studio. w oknie Diagram obsługuje układy niestandardowe (zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Wykres systemu windows można zadokowane w różnych lokalizacjach w ramce programu Visual Studio, zmiany rozmiaru w tej ramce lub pobierane poza ramkę, całkowicie dla niezależnie od rozmiaru.
 
 Ponownie zmiany rozmiaru okna diagram zawsze renderuje wykres, aby zapewnić najlepszą jakość obrazu. Zwykle Aby zmienić rozmiar wykresu przed wyeksportowaniem na powierzchni do pliku lub do Schowka, przy użyciu polecenia opisane w następnej sekcji.
 
@@ -46,7 +46,7 @@ Ponownie zmiany rozmiaru okna diagram zawsze renderuje wykres, aby zapewnić naj
 
 Pasek narzędzi okna wykres zawiera odpowiednie polecenia, a większość z nich jest również dostępna za pośrednictwem **R Tools** > **powierzchni** menu.
 
-| Przycisk | Polecenie | Opis | 
+| Przycisk | Polecenie | Opis |
 | --- | --- | --- |
 | ![Przycisk okno nowy wykres](media/plotting-toolbar-01-new-plot-window.png) | Nowe okno wykresu | Tworzy okno, diagram oddzielnych z własną historią. Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
 | ![Uaktywnij przycisk Okno wykresu](media/plotting-toolbar-02-activate-plot-window.png) | Uaktywnij okno wykresu | Ustawia bieżące okno wykresu jako aktywne okno zatem oznacza kolejne `plot` renderowania do tego okna polecenia. Zobacz [wiele okien kreślenia](#multiple-plot-windows). Zobacz [wiele okien kreślenia](#multiple-plot-windows). |
@@ -54,8 +54,8 @@ Pasek narzędzi okna wykres zawiera odpowiednie polecenia, a większość z nich
 | ![Wykres historii przycisków](media/plotting-toolbar-04-plot-history-arrows.png) | Wykres poprzednie/dalej |  Powoduje przejście do poprzedniego lub następnego kreślenia w historii. Możesz także przejść historii za pomocą klawiszy Ctrl + Alt + F11 (wstecz) i Ctrl + Alt + F12 (dalej). Zobacz [wykresu historii](#plot-history). |
 | ![Zapisz jako obraz przycisku](media/plotting-toolbar-05-save-as-image.png)| Zapisz jako obraz | Monituje o podanie nazwy pliku i zapisuje bieżący diagram (zawartość okna, w rozmiarze okna) do pliku obrazu. Dostępne formaty `.png`, `.jpg`, `.bmp`, i `.tif`. |
 | ![Zapisz jako plik PDF przycisku](media/plotting-toolbar-06-save-as-pdf.png)| Zapisz jako plik PDF | Zapisuje bieżący diagram do pliku PDF, przy użyciu bieżącego rozmiaru okna. Wykres będą renderowane ponownie, jeśli plik PDF jest skalowany. |
-| ![Kopiuj jako przycisk mapy bitowej](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiuj jako mapy bitowej | Kopiuje wykres do Schowka jako mapę bitową rastrowych, przy użyciu bieżącego rozmiaru okna. | 
-| ![Kopiuj jako przycisk metaplik](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje wykres do Schowka jako [metaplik Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Kopiuj jako przycisk mapy bitowej](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopiuj jako mapy bitowej | Kopiuje wykres do Schowka jako mapę bitową rastrowych, przy użyciu bieżącego rozmiaru okna. |
+| ![Kopiuj jako przycisk metaplik](media/plotting-toolbar-08-copy-as-metafile.png)| Kopiuj jako metaplik | Kopiuje wykres do Schowka jako [metaplik Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Usuwanie przycisku Wykres](media/plotting-toolbar-09-remove-plot.png)| Odebrat diagram | Usuwa bieżący diagram z historii. |
 | ![Przycisk Wyczyść wszystko powierzchni](media/plotting-toolbar-10-clear-all-plots.png) | Wyczyść wszystkie powierzchnie | Usuwa wszystkie powierzchnie z historii (monituje o potwierdzenie). |
 
@@ -84,7 +84,7 @@ Okres istnienia historię kreślenia we wszystkich oknach jest powiązany z okre
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Programowe zmienianie kreślenia systemu windows
 
-Można programowo manipulować windows wykres z kodu języka R do identyfikowania określonych kreślenia systemu windows przy użyciu numerów urządzeń. 
+Można programowo manipulować windows wykres z kodu języka R do identyfikowania określonych kreślenia systemu windows przy użyciu numerów urządzeń.
 
 - `dev.list()`: Wyświetl listę wszystkich urządzeń grafiki w bieżącej sesji języka R:.
 - `dev.new()`: Tworzenie nowego urządzenia grafiki (nowe okno wykresu).

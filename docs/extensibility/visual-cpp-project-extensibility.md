@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013707"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -97,7 +97,7 @@ Aby dodać nowy typ aplikacji, Utwórz *MyApplicationType* folderze `$(VCTargets
 
 Uproszczone drzewo importów dla Microsoft C++ cele i właściwości plików wygląda następująco:
 
-> `$(VCTargetsPath)`\\*Pliku Microsoft.Cpp.Default.props*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*domyślne*\\\*. *właściwości*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Typ aplikacji*\\`$(ApplicationType)`\\*Default.props*  
@@ -107,7 +107,7 @@ Uproszczone drzewo importów dla Microsoft C++ cele i właściwości plików wyg
 
 Projekty Windows Desktop nie Definiuj `$(ApplicationType)`, więc tylko importowanie
 
-> `$(VCTargetsPath)`\\*Pliku Microsoft.Cpp.Default.props*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*domyślne*\\\*. *właściwości*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platform*\\`$(Platform)`\\*Platform.default.props*  
@@ -125,7 +125,7 @@ Aby uzyskać całą resztą.
 
 Pliki właściwości są importowane w następującej kolejności:
 
-> `$(VCTargetsPath)`\\*Pliku Microsoft.Cpp.props*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *właściwości*  
@@ -138,7 +138,7 @@ Pliki obiekty docelowe są importowane w następującej kolejności:
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.TARGETS*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *obiekty docelowe*  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*targets*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *obiekty docelowe*  
 
@@ -482,8 +482,8 @@ Format reguły jest prosta, więc w tej sekcji opisano tylko atrybuty, które wp
 |------------| - |
 | `generic` | Wszystkie właściwości są wyświetlane na jednej stronie w obszarze nagłówki kategorii<br/>Reguła może być widoczny dla `Project` i `PropertySheet` kontekstów, ale nie `File`.<br/><br/> Przykład: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | Kategorie są wyświetlane jako podstrony.<br/>Reguły są widoczne we wszystkich kontekstach: `Project`, `PropertySheet` i `File`.<br/>Reguła jest widoczny we właściwościach projektu tylko wtedy, gdy projekt zawiera elementy `ItemType` zdefiniowane w `Rule.DataSource`, chyba, że nazwa reguły jest uwzględniona w `ProjectTools` grupy elementów.<br/><br/>Przykład: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | Strona jest wyświetlana jako część strony debugowanie.<br/>Kategorie aktualnie są ignorowane.<br/>Nazwa reguły powinna odpowiadać obiektowi debugowanie MEF uruchamiania `ExportDebugger` atrybutu.<br/><br/>Przykład: `$(VCTargetsPath)`\\*1033*\\*debugera\_lokalnego\_windows.xml* |
-| *custom* | Szablon niestandardowy. Nazwa szablonu powinna odpowiadać `ExportPropertyPageUIFactoryProvider` atrybut `PropertyPageUIFactoryProvider` obiektu MEF. Zobacz **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Przykład: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
+| `debugger` | Strona jest wyświetlana jako część strony debugowanie.<br/>Kategorie aktualnie są ignorowane.<br/>Nazwa reguły powinna odpowiadać obiektowi debugowanie MEF uruchamiania `ExportDebugger` atrybutu.<br/><br/>Przykład: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
+| *custom* | Szablon niestandardowy. Nazwa szablonu powinna odpowiadać `ExportPropertyPageUIFactoryProvider` atrybut `PropertyPageUIFactoryProvider` obiektu MEF. See **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Przykład: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Jeśli reguła używa jednego z szablonów na podstawie siatki właściwości, służy te punkty rozszerzalności dla jego właściwości:
 
