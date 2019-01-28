@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941236"
 ---
 # <a name="create-a-settings-category"></a>Tworzenie kategorii ustawień
 
@@ -118,7 +118,7 @@ Aby uruchomić ten Instruktaż, najpierw musisz zakończyć w pierwszej sekcji [
 
      **Eksportowanie ukończone** strony zgłasza, że Twoje ustawienia zostały pomyślnie wyeksportowane.
 
-10. Na **pliku** menu wskaż **Otwórz**, a następnie kliknij przycisk pliku. Znajdź *MySettings.vssettings* i otwórz go.
+10. Na **pliku** menu wskaż **Otwórz**, a następnie kliknij przycisk **pliku**. Znajdź *MySettings.vssettings* i otwórz go.
 
      Możesz znaleźć kategorii właściwości, który został wyeksportowany w poniższej sekcji pliku (swoje identyfikatory GUID będą się różnić).
 

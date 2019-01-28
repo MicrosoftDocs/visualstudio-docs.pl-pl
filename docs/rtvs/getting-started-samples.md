@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ebd1c8363c9801a9ac16a3b10a702de5954a14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023265"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Narzędzia języka R dla programu Visual Studio przykładowych projektów
 
@@ -48,7 +48,7 @@ Zgodnie z przykładami dla wszystkich, otwórz plik, umieść kursor na początk
 
     ![Przykład testu porównawczego wykres](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` Tworzy model prognozowania popytu wypożyczenia rowerów, na podstawie zestawu danych historycznych, przy użyciu Microsoft ML Server. 
+- `Bike_Rental_Estimation_with_MRS` Tworzy model prognozowania popytu wypożyczenia rowerów, na podstawie zestawu danych historycznych, przy użyciu Microsoft ML Server.
 
 - `Data_Exploration` zawiera trzy skrypty:
 
@@ -59,7 +59,7 @@ Zgodnie z przykładami dla wszystkich, otwórz plik, umieść kursor na początk
       ![Dane wyjściowe przy użyciu ggplot2. Przykład języka R](media/samples-3d-interactive.png)
 
 - `Datasets` zawiera trzy *CSV* pliki używane przez inne przykłady
-- `Flight_Delays_Prediction_with_R` i `Flight_Delays_Prediction_with_MRS` pokazuje, jak do prognozowania opóźnień lotów przy użyciu języka R, usługi machine learning i historycznych punktualności lotów oraz danych o pogodzie. 
+- `Flight_Delays_Prediction_with_R` i `Flight_Delays_Prediction_with_MRS` pokazuje, jak do prognozowania opóźnień lotów przy użyciu języka R, usługi machine learning i historycznych punktualności lotów oraz danych o pogodzie.
 - `Machine learning` zawiera trzy próbki do nauki do prognozowania opóźnień lotów, ceny obudowy i wypożyczenia rowerów. Razem te przykłady pokazują zastosowanie języków R i Microsoft ML Server do rzeczywistych problemów. Mogą również pokazują, jak używać modele uczenia maszynowego popularne w kilku i wdrażanie ich jako usługi sieci Web platformy Azure przy użyciu [usługi Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) obszaru roboczego.
 
 - `R_MRO_MRS_Comparison` to porównanie sześcioczęściowej, który pokazuje podobieństw i różnic języka R, Microsoft R Open i Microsoft ML Server za pomocą poleceń, składni, konstrukcje i wydajności.
@@ -82,7 +82,7 @@ Poniższe porównanie pokazuje, że MLS oraz MRO z MKL ma znacznie lepszą wydaj
 
 ![Porównanie MLS i MRO z MKL r i MRO bez MKL](media/samples-speed-comparison.png)
 
-Techniczne porównanie R MRO i MLS, zapoznaj się z [Lixun Zhang szczegółowe omówienie](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) tematu.
+Techniczne porównanie R MRO i MLS, zapoznaj się z [Lixun Zhang szczegółowe omówienie](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) tematu.
 
 Poniższa ilustracja następnie porównuje czas w sekundach stosowanego w budynku, modele regresji logistycznej do prognozowania opóźnień lotów więcej niż 15 minut.  Upłynęło czasu używany w języku R z sieci CRAN gwałtowny wzrost podczas zwiększenie niewielką liczbę wierszy, podczas gdy MLS zwiększa tylko przez około dwa razy. Aby uzyskać szczegółowe informacje o tym testów porównawczych, zapoznaj się *testy porównawcze/rxGlm_benchmark. R* przykład.
 

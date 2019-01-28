@@ -1,31 +1,26 @@
 ---
 title: Tworzenie kategorii ustawień | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793498"
 ---
 # <a name="creating-a-settings-category"></a>Tworzenie kategorii ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Tworzenie kategorii ustawień przez wywodzić ją z <xref:Microsoft.VisualStudio.Shell.DialogPage> klasy.  
   
@@ -160,4 +155,3 @@ W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używa�
 16. Upewnij się, że **Moje ustawienia** jest zaznaczone, a następnie kliknij przycisk **Zakończ**. Gdy **pełny Import** zostanie wyświetlona strona, kliknij przycisk **Zamknij**.  
   
 17. Na **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **Moje kategorii**, kliknij przycisk **Moja strona siatki** i sprawdź, czy wartości właściwości w kategorii zostały przywrócone.
-

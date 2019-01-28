@@ -1,25 +1,20 @@
 ---
 title: Użycie sieci | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759912"
 ---
 # <a name="network-usage"></a>Użycie sieci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,8 +75,5 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
   
 ## <a name="see-also"></a>Zobacz też  
  [Uruchamianie narzędzi profilowania bez debugowania](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog dotyczący programu Visual Studio: Inspektor sieci wprowadzenie do programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Wideo Channel 9: Narzędzia do diagnostyki programu VS — nowy Profiler sieci](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-
+ [Visual Studio blog: Wprowadzenie do programu Visual Studio, inspektor sieci](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Wideo Channel 9: Narzędzia diagnostyczne VS — nowy Profiler sieci](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
