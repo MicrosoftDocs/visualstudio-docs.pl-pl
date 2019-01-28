@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93054404894ab21522728d00d33f2c862ed127b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768015"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089303"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
 ### <a name="user-defined-events-in-direct3d-12"></a>Zdarzeń zdefiniowanych przez użytkownika w Direct3D 12  
  Aby utworzyć grupy i znaczników w Direct3D 12, przy użyciu interfejsów API, opisane w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, które można użyć w zależności od tego, czy są oznaczanie zdarzeń w kolejce poleceń, czy polecenie listy.  
   
-|Opis interfejsu API|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|Opis interfejsu API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |Sprawdź dostępność zdarzenie zdefiniowane przez użytkownika|[PIXGetStatus](http://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
 |Rozpocznij grupy zdarzeń|[PIXBeginEvent](http://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
@@ -93,7 +93,7 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 11 i jego starszych wersji  
  Aby utworzyć grupy i znaczniki w interfejsie Direct3D 11 lub wcześniej, przy użyciu interfejsów API, opisane w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, które służy do różnych wersji programu Direct3D 11 i starszych wersji Direct3D.  
   
-|Opis interfejsu API|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Rodzina D3DPerf_ interfejsu API (Direct3D 11.0 i starsze)|  
+|Opis interfejsu API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Rodzina D3DPerf_ interfejsu API (Direct3D 11.0 i starsze)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Rozpocznij grupy zdarzeń|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |W końcu grupy zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  

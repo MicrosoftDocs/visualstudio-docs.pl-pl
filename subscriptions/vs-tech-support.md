@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380248"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089227"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -27,7 +27,7 @@ Rozwiązywanie problemów wymagających usunięcia awarii w środowiskach niepro
 > ![Kafelek korzyści z pomocy technicznej](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Aby rozpocząć korzystanie z korzyści z pomocy technicznej, kliknij **rozmowy, aby aktywować** na kafelku pomocy technicznej. 
+1. Aby rozpocząć korzystanie z korzyści z pomocy technicznej, przejdź do https://my.visualstudio.com/Benefits, przewiń w dół do sekcji pomocy technicznej i na kliknięcie kafelka pomocy technicznej **rozmowy, aby aktywować**. 
 2. Spowoduje to Zainicjowanie sesji rozmowy z przedstawicielem, który można utworzyć swój identyfikator umowy i identyfikator dostępu i tych, które należy podać. 
 3. Aby ukończyć proces, należy zapewnić przedstawiciel za pomocą:
    - Adres e-mail, którego używasz do logowania się do subskrypcji

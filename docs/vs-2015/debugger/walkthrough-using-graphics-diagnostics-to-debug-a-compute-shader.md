@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 001827c1b37596228221d6b4285abb2915ec5b8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788715"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089190"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio d
   
 1. Na **Graphics Diagnostics** narzędzi, wybierz **stos wywołań zdarzenia** otworzyć **stos wywołań zdarzenia grafiki** okna.  
   
-2. Począwszy od zdarzenia rysowania, które renderuje wyniki symulacji, przesunąć się do tyłu przez każde poprzednie `CSSetShader` zdarzeń. Następnie w **stos wywołań zdarzenia grafiki** oknie Wybierz pierwszą funkcję, aby przejść do witryny wywołania. W witrynie wywołania można użyć pierwszy parametr [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) wywołania funkcji do określenia, które cieniowanie obliczenia jest wykonywane przez następne `Dispatch` zdarzeń.  
+2. Począwszy od zdarzenia rysowania, które renderuje wyniki symulacji, przesunąć się do tyłu przez każde poprzednie `CSSetShader` zdarzeń. Następnie w **stos wywołań zdarzenia grafiki** oknie Wybierz pierwszą funkcję, aby przejść do witryny wywołania. W witrynie wywołania można użyć pierwszy parametr [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) wywołania funkcji do określenia, które cieniowanie obliczenia jest wykonywane przez następne `Dispatch` zdarzeń.  
   
    W tym scenariuszu istnieją trzy pary `CSSetShader` i `Dispatch` zdarzenia w każdej ramce. Licząc od tyłu, trzeci reprezentuje parę integracji krok (gdzie cząstek płynu faktycznie się poruszyły), Druga para reprezentuje kroku obliczenia siły (gdzie siły, które wpływają na wszystkie cząstki są obliczane), a pierwsza Krok obliczania gęstości.  
   

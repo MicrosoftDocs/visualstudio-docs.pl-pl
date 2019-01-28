@@ -10,18 +10,18 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 673f31451d778e288da49f078da0ca4263189586
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021208"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089269"
 ---
 # <a name="custom-native-etw-heap-events"></a>Niestandardowe zdarzenia ETW sterty natywnej
 
 Program Visual Studio zawiera szereg [profilowania i narzędzia diagnostyczne](../profiling/profiling-feature-tour.md), łącznie z profilera pamięci natywnej.  Przechwytuje ten program profilujący [zdarzenia ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i umożliwia analizowanie jak pamięci są przydzielone i używane.  Domyślnie to narzędzie tylko analizować przydziałów wykonanych ze standardowego stosu Windows i nie będzie można wyświetlić alokacje poza tym sterty natywnej.
 
-Istnieje wiele przypadków, w których warto używać własnych niestandardowych sterty i uniknąć obciążenie alokacji ze standardowego stosu.  Na przykład można użyć [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) do przydzielania dużej ilości pamięci na początku aplikację lub grę, a następnie Zarządzaj własne bloki w ramach tej listy.  W tym scenariuszu narzędzie memory profiler widział tylko tej początkowej alokacji i nie niestandardowych zarządzania wykonywane wewnątrz fragmentu pamięci.  Jednak przy użyciu dostawcy funkcji ETW sterty natywnej niestandardowego, można pozwolić narzędzie wiedzieć o dowolnych alokacji, które wykonujesz poza standardowe sterty.
+Istnieje wiele przypadków, w których warto używać własnych niestandardowych sterty i uniknąć obciążenie alokacji ze standardowego stosu.  Na przykład można użyć [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) do przydzielania dużej ilości pamięci na początku aplikację lub grę, a następnie Zarządzaj własne bloki w ramach tej listy.  W tym scenariuszu narzędzie memory profiler widział tylko tej początkowej alokacji i nie niestandardowych zarządzania wykonywane wewnątrz fragmentu pamięci.  Jednak przy użyciu dostawcy funkcji ETW sterty natywnej niestandardowego, można pozwolić narzędzie wiedzieć o dowolnych alokacji, które wykonujesz poza standardowe sterty.
 
 Na przykład w projekcie podobnie do poniższego gdzie `MemoryPool` niestandardowe sterty jest pojedynczą alokację byłaby widoczna tylko na stosie Windows:
 
