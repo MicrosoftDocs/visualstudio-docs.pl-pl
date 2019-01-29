@@ -52,6 +52,11 @@
 ## [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)
 ## [Praca z podwersją](working-with-subversion.md)
 
+# [Wdrożenie aplikacji internetowej](web-app-deployment.md)
+## [Publikowanie w usłudze Azure App Service](publish-app-svc.md)
+## [Publikowanie w folderze](publish-folder.md)
+
+
 # [Pakiety robocze](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
