@@ -1,6 +1,6 @@
 ---
 title: Rozszerzeń projektu programu Visual C++
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013707"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232055"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -274,6 +274,8 @@ Microsoft.Cpp.Common.Tasks.dll implementuje te zadania:
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 Jeśli masz narzędzie, która wykonuje tę samą akcję jako istniejące narzędzia i zawierający podobne przełączniki wiersza polecenia (jak clang-cl i CL), można użyć tego samego zadania dla obu z nich.
 
 Jeśli potrzebujesz utworzyć nowe zadanie dla narzędzia kompilacji, można wybrać spośród następujących opcji:
@@ -294,11 +296,14 @@ Jeśli potrzebujesz utworzyć nowe zadanie dla narzędzia kompilacji, można wyb
 
 Kompilacja przyrostowa MSBuild domyślny jest przeznaczony dla użycia `Inputs` i `Outputs` atrybutów. Jeśli określasz je własnoręcznie MSBuild wywołuje obiekt docelowy tylko wtedy, gdy dowolne dane wejściowe sygnaturę czasową nowsze niż wszystkie dane wyjściowe. Ponieważ pliki źródłowe często obejmują lub importowanie innych plików, a różne wyniki, w zależności od opcji narzędzia kompilacji narzędzia produktu, jest trudne do określenia wszystkich możliwych danych wejściowych i danych wyjściowych w docelowych elementów MSBuild.
 
-Aby zarządzać ten problem, kompilacja w języku C++ używa różnych technik do obsługi kompilacje przyrostowe. Większość obiektów docelowych nie Określ dane wejściowe i wyjściowe, a w rezultacie, są zawsze uruchamiane podczas kompilacji. Zadania wywoływane przez obiekty docelowe zapisać informacje o wszystkich danych wejściowych i danych wyjściowych do *tlog* plików mających rozszerzenie .tlog. Pliki .tlog są używane przez nowszej kompilacji. Aby sprawdzić zmiany i wymaga odbudowania i co to jest aktualna.
+Aby zarządzać ten problem, kompilacja w języku C++ używa różnych technik do obsługi kompilacje przyrostowe. Większość obiektów docelowych nie Określ dane wejściowe i wyjściowe, a w rezultacie, są zawsze uruchamiane podczas kompilacji. Zadania wywoływane przez obiekty docelowe zapisać informacje o wszystkich danych wejściowych i danych wyjściowych do *tlog* plików mających rozszerzenie .tlog. Pliki .tlog są używane przez nowszej kompilacji. Aby sprawdzić zmiany i wymaga odbudowania i co to jest aktualna. Pliki .tlog również są tylko źródło domyślne Sprawdzanie aktualności kompilacji w środowisku IDE.
 
 Aby określić wszystkie dane wejściowe i wyjściowe, zadania natywnego narzędzia korzystają tracker.exe i [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) klasy dostarczane przez program MSBuild.
 
 Definiuje Microsoft.Build.CPPTasks.Common.dll `TrackedVCToolTask` publicznych abstrakcyjną klasę bazową. Większość zadań natywnego narzędzia są uzyskiwane z tej klasy.
+
+Począwszy od aktualizacji programu Visual Studio 2017 15.8, możesz użyć `GetOutOfDateItems` zaimplementowane w Microsoft.Cpp.Common.Tasks.dll, aby utworzyć pliki .tlog dla niestandardowych elementów docelowych przy użyciu znanych dane wejściowe i wyjściowe zadań.
+Alternatywnie, możesz je utworzyć za pomocą `WriteLinesToFile` zadania. Zobacz `_WriteMasmTlogs` obiektów docelowych w systemie `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* jako przykład.
 
 ## <a name="tlog-files"></a>pliki .tlog
 
@@ -314,7 +319,6 @@ Program MSBuild udostępnia te klasy pomocnika, aby odczytywać i zapisywać pli
 
 Pliki .tlog wiersza polecenia zawierają informacje dotyczące wierszy polecenia używane w kompilacji. Są stosowane tylko w przypadku kompilacji przyrostowej kontroli nie jest aktualna, dzięki czemu wewnętrzny format jest określany przez zadanie programu MSBuild, która je tworzy.
 
-Jeśli .tlog pliki są tworzone przez zadanie, najlepiej jest używać tych klas pomocniczych do ich utworzenia. Jednak ponieważ domyślne Sprawdzanie aktualności teraz opiera się wyłącznie na pliki .tlog, czasami jest bardziej wygodne do tworzenia ich w elemencie docelowym bez zadania. Napisz je za pomocą `WriteLinesToFile` zadania. Zobacz `_WriteMasmTlogs` obiektów docelowych w systemie `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* jako przykład.
 
 ### <a name="read-tlog-format"></a>Format .tlog odczytu
 
