@@ -29,34 +29,34 @@ ms.locfileid: "54935634"
 Na tej stronie koncentruje się na możliwości programu Dotfuscator Community Edition (Dotfuscator CE) przy użyciu pewne odwołania do opcji zaawansowanych, które są dostępne za pośrednictwem [uaktualnień][upgrades].
 
 Jest Dotfuscator *postkompilacyjnego* systemu dla aplikacji .NET.
-Przy użyciu zaciemniacza kodu Dotfuscator CE programu Visual Studio użytkownicy mogą [zaciemniania zestawy] [ obfuscation] i wstawiać [środki obrony active] [ checks] do Aplikacja — a wszystko to bez konieczności dostęp do oryginalnego kodu źródłowego narzędzia Dotfuscator.
+Przy użyciu zaciemniacza kodu Dotfuscator CE programu Visual Studio użytkownicy mogą [zaciemniania zestawy][obfuscation] i wstawiać [środki obrony active][checks] do Aplikacja — a wszystko to bez konieczności dostęp do oryginalnego kodu źródłowego narzędzia Dotfuscator.
 System Dotfuscator chroni aplikację na wiele sposobów, Tworzenie strategii ochrony warstwowej.
 
-System Dotfuscator CE obsługuje szeroki zakres .NET zestawu i aplikacji typów, w tym [Windows platformy Uniwersalnej] [ uwp] i [Xamarin] [ xamarin].
+System Dotfuscator CE obsługuje szeroki zakres .NET zestawu i aplikacji typów, w tym [Windows platformy Uniwersalnej][uwp] i [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Ochrona własności intelektualnej
 
 Projektowania aplikacji, zachowanie i implementacja są form własności intelektualnej (IP).
 Aplikacje utworzone w programie .NET Framework są jednak zasadniczo Otwieranie książki; jest bardzo proste do zestawów .NET odtwarzania, [ponieważ zawierają one metadanych wysokiego poziomu i kodu pośredniego][assemblies].
 
-System Dotfuscator CE zawiera podstawowe [zasłanianie .NET] [ obfuscation] w formie [zmiana nazwy][renaming].
+System Dotfuscator CE zawiera podstawowe [zasłanianie .NET][obfuscation] w formie [zmiana nazwy][renaming].
 Polega na zaciemnianiu kodu przy użyciu narzędzia Dotfuscator zmniejsza ryzyko przed nieautoryzowanym dostępem do kodu źródłowego za pomocą odtwarzania ważne informacje dotyczące nazewnictwa już nie będą dostępne publicznie.
 Zasłanianie również pokazuje nakład pracy ze strony użytkownika, aby zabezpieczyć swój kod z badania - cenne krok w ustaleniu, że adres IP jest prawnie chronione jako tajemnice handlowe.
 
 Wiele [funkcje ochrony integralności aplikacji](#application-integrity-protection) Dotfuscator CE dalsze utrudniają odtwarzanie.
 Na przykład nieuprawnione może próbować dołączyć debuger do uruchomionego wystąpienia aplikacji w taki sposób, aby zrozumieć logiki programu.
-System Dotfuscator może wprowadzać [zachowanie zapobieganie debugowania] [ debug] do aplikacji, aby to utrudniać.
+System Dotfuscator może wprowadzać [zachowanie zapobieganie debugowania][debug] do aplikacji, aby to utrudniać.
 
 ## <a name="application-integrity-protection"></a>Ochrona integralności aplikacji
 
 Oprócz ochrony kodu źródłowego, jest również ważne, aby upewnić się, że Twoja aplikacja jest używana zgodnie z założeniami.
 Osoby atakujące mogą próbować przejąć kontrolę nad aplikację w celu obejścia zasad licencjonowania (czyli piractwa), wykradać lub wykonywać operacje na danych poufnych, obsługiwane przez aplikację lub zmienić sposób działania aplikacji.
 
-System Dotfuscator CE może wprowadzać [kod sprawdzania poprawności aplikacji] [ checks] do zestawów, w tym [zapobieganie odporne][tamper], [ zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem] [ root] miary.
+System Dotfuscator CE może wprowadzać [kod sprawdzania poprawności aplikacji][checks] do zestawów, w tym [zapobieganie odporne][tamper], [ zapobieganie debugowania][debug], i [zapobiegających odblokowanym dostępem][root] miary.
 Po wykryciu stanu aplikacji nieprawidłowy kod sprawdzania poprawności można [zapraszać kod aplikacji, adres do sytuacji, w odpowiedni sposób][check-app].
-Lub, jeśli nie chcesz napisać kod, aby nieprawidłowe dojście korzysta z aplikacji, system Dotfuscator może również wprowadzać [odpowiedzi] [ check-action] zachowań, bez żadnych modyfikacji kodu źródłowego.
+Lub, jeśli nie chcesz napisać kod, aby nieprawidłowe dojście korzysta z aplikacji, system Dotfuscator może również wprowadzać [odpowiedzi][check-action] zachowań, bez żadnych modyfikacji kodu źródłowego.
 
-Wiele z tych samych metod może również Wymuszanie [terminy wycofanych z eksploatacji] [ shelflife] oceny lub wersja próbna oprogramowania.
+Wiele z tych samych metod może również Wymuszanie [terminy wycofanych z eksploatacji][shelflife] oceny lub wersja próbna oprogramowania.
 
 ## <a name="see-also"></a>Zobacz też
 
