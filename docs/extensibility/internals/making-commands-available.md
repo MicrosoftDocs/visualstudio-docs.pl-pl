@@ -13,24 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e01a0030d4c8948652cdfc8706bb620190fd45b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a14998b8dca3c14bdae4f00f1940c19b696646ff
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923019"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231860"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
+
 Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfejs użytkownika (UI) mogą stać się przepełniona za pomocą poleceń. Można programować pakietu w celu ograniczenia tego problemu w następujący sposób:
 
--   Program pakiet tak, że jest załadowany, tylko wtedy, gdy użytkownik wymaga go.
+- Program pakiet tak, że jest załadowany, tylko wtedy, gdy użytkownik wymaga go.
 
--   Program pakietu, tak aby jego polecenia są wyświetlane tylko wtedy, gdy może być wymagane w kontekście bieżącego stanu zintegrowanego środowiska programistycznego (IDE).
+- Program pakietu, tak aby jego polecenia są wyświetlane tylko wtedy, gdy może być wymagane w kontekście bieżącego stanu zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="delayed-loading"></a>Opóźnione ładowanie
- Typowym sposobem, aby umożliwić opóźnione ładowanie jest projektować pakietu VSPackage, dzięki czemu polecenia są wyświetlane w interfejsie użytkownika, ale sam pakiet nie został załadowany, dopóki użytkownik kliknie jedno z poleceń. Aby to osiągnąć, w pliku vsct, Utwórz polecenia, które mają nie flag poleceń.
 
- Poniższy przykład przedstawia definicję polecenia menu z pliku vsct. To polecenie, które są generowane przez szablon pakietu Visual Studio podczas **polecenia Menu** wybrano opcję w szablonie.
+Typowym sposobem, aby umożliwić opóźnione ładowanie jest projektować pakietu VSPackage, dzięki czemu polecenia są wyświetlane w interfejsie użytkownika, ale sam pakiet nie został załadowany, dopóki użytkownik kliknie jedno z poleceń. Aby to osiągnąć, w pliku vsct, Utwórz polecenia, które mają nie flag poleceń.
+
+Poniższy przykład przedstawia definicję polecenia menu z pliku vsct. To polecenie, które są generowane przez szablon pakietu Visual Studio podczas **polecenia Menu** wybrano opcję w szablonie.
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -48,10 +50,10 @@ W przykładzie Jeśli grupy nadrzędnej `MyMenuGroup`, jest elementem podrzędny
 Należy zauważyć, że opóźnionego ładowania może również zwiększyć wydajność uruchamiania.
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>Bieżący kontekst i widoczności poleceń
- Można programować pakietu VSPackage polecenia ma być widoczny lub ukryty, w zależności od bieżącego stanu danych pakietu VSPackage lub akcje, które są aktualnie istotne. Możesz włączyć pakietu VSPackage ustawić stan jego poleceń zazwyczaj przy użyciu implementacji z <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs, ale wymaga to pakietu VSPackage, należy załadować przed może on wykonać kod. Zamiast tego zaleca się włączenie zarządzania widocznością polecenia bez załadowania pakietu środowiska IDE. W tym celu w pliku vsct kojarzenie poleceń z jednego lub więcej specjalnych kontekstami interfejsu użytkownika. Tych kontekstach interfejsu użytkownika są identyfikowane przez identyfikator GUID znane jako *polecenia w kontekście identyfikatora GUID*.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitoruje zmiany, które wynikają z akcje użytkownika, takie jak ładowania projektu lub ruch do edycji do tworzenia. Wraz ze zmianami, wygląd IDE automatycznie zostanie zmodyfikowany. W poniższej tabeli przedstawiono cztery główne kontekstach IDE zmienimy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorów.
+Można programować pakietu VSPackage polecenia ma być widoczny lub ukryty, w zależności od bieżącego stanu danych pakietu VSPackage lub akcje, które są aktualnie istotne. Możesz włączyć pakietu VSPackage ustawić stan jego poleceń zazwyczaj przy użyciu implementacji z <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs, ale wymaga to pakietu VSPackage, należy załadować przed może on wykonać kod. Zamiast tego zaleca się włączenie zarządzania widocznością polecenia bez załadowania pakietu środowiska IDE. W tym celu w pliku vsct kojarzenie poleceń z jednego lub więcej specjalnych kontekstami interfejsu użytkownika. Tych kontekstach interfejsu użytkownika są identyfikowane przez identyfikator GUID znane jako *polecenia w kontekście identyfikatora GUID*.
 
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitoruje zmiany, które wynikają z akcje użytkownika, takie jak ładowania projektu lub ruch do edycji do tworzenia. Wraz ze zmianami, wygląd IDE automatycznie zostanie zmodyfikowany. W poniższej tabeli przedstawiono cztery główne kontekstach IDE zmienimy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorów.
 
 | Typ kontekstu | Opis |
 |-------------------------| - |
@@ -60,57 +62,60 @@ Należy zauważyć, że opóźnionego ładowania może również zwiększyć wyd
 | Usługa Active języka | Usługa języka, który jest skojarzony z pliku który jest aktualnie wyświetlany w edytorze tekstów. |
 | Aktywnego okna narzędzi | Okna narzędzi, które jest otwarty i ma fokus. |
 
- Piąty obszar głównych kontekstu jest stan interfejsu użytkownika IDE. Konteksty interfejsu użytkownika są identyfikowane za pomocą kontekstu aktywnego polecenia `GUID`s w następujący sposób:
+Piąty obszar głównych kontekstu jest stan interfejsu użytkownika IDE. Konteksty interfejsu użytkownika są identyfikowane za pomocą kontekstu aktywnego polecenia `GUID`s w następujący sposób:
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
 
 Te identyfikatory GUID są oznaczone jako aktywną lub nieaktywną, w zależności od bieżącego stanu środowiska IDE. Wiele kontekstów interfejsu użytkownika może być aktywne w tym samym czasie.
 
-### <a name="hiding-and-displaying-commands-based-on-context"></a>Ukrywanie i wyświetlanie poleceń na podstawie kontekstu
- Można wyświetlić lub ukryć polecenia pakietu w środowisku IDE bez załadowania pakietu. W tym celu należy zdefiniować polecenia w pliku vsct pakietu przy użyciu `DefaultDisabled`, `DefaultInvisible`, i `DynamicVisibility` command flag i dodawania co najmniej jeden [VisibilityItem](../../extensibility/visibilityitem-element.md) elementów [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sekcji. Gdy w kontekście określonego polecenia `GUID` staje się aktywny, będzie ono wyświetlane bez ładowania pakietu.
+### <a name="hide-and-display-commands-based-on-context"></a>Ukryj i wyświetlania poleceń na podstawie kontekstu
+
+Można wyświetlić lub ukryć polecenia pakietu w środowisku IDE bez załadowania pakietu. W tym celu należy zdefiniować polecenia w pliku vsct pakietu przy użyciu `DefaultDisabled`, `DefaultInvisible`, i `DynamicVisibility` command flag i dodawania co najmniej jeden [VisibilityItem](../../extensibility/visibilityitem-element.md) elementów [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sekcji. Gdy w kontekście określonego polecenia `GUID` staje się aktywny, będzie ono wyświetlane bez ładowania pakietu.
 
 ### <a name="custom-context-guids"></a>Identyfikatory GUID kontekstowego
- Jeśli kontekst odpowiednie polecenia, identyfikator GUID nie jest już zdefiniowany, można zdefiniować, w swojej pakietu VSPackage i Zaprogramuj się być aktywne lub nieaktywne zgodnie z potrzebami można kontrolować widoczność poleceń. Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi:
 
--   Rejestrowanie identyfikatorów GUID w kontekście (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody).
+Jeśli kontekst odpowiednie polecenia, identyfikator GUID nie jest już zdefiniowany, można zdefiniować, w swojej pakietu VSPackage i Zaprogramuj się być aktywne lub nieaktywne zgodnie z potrzebami można kontrolować widoczność poleceń. Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> usługi:
 
--   Pobieranie stanu kontekst `GUID` (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody).
+- Rejestrowanie identyfikatorów GUID w kontekście (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody).
 
--   Włącz kontekstu `GUID`s włączać i wyłączać (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody).
+- Pobieranie stanu kontekst `GUID` (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody).
+
+- Włącz kontekstu `GUID`s włączać i wyłączać (przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody).
 
     > [!CAUTION]
     > Upewnij się, że Twoje pakietu VSPackage nie ma wpływu na stan dowolnego kontekstu istniejącego identyfikatora GUID ponieważ innych pakietów VSPackage może zależeć od ich.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład polecenia pakietu VSPackage pokazuje dynamiczne widoczność polecenia, który jest zarządzany przez kontekstów polecenia bez załadowania pakietu VSPackage.
 
- Polecenie jest ustawiona na włączony i wyświetlany zawsze, gdy rozwiązanie istnieje; oznacza to, że zawsze, gdy jeden z następującym kontekstem polecenia identyfikatorów GUID jest aktywna:
+Poniższy przykład polecenia pakietu VSPackage pokazuje dynamiczne widoczność polecenia, który jest zarządzany przez kontekstów polecenia bez załadowania pakietu VSPackage.
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+Polecenie jest ustawiona na włączony i wyświetlany zawsze, gdy rozwiązanie istnieje; oznacza to, że zawsze, gdy jeden z następującym kontekstem polecenia identyfikatorów GUID jest aktywna:
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
 W tym przykładzie należy zauważyć, że flaga każdego polecenia jest oddzielny [flagi polecenia](../../extensibility/command-flag-element.md) elementu.
 
@@ -144,6 +149,7 @@ Zwróć również uwagę, które każdy kontekstu interfejsu użytkownika muszą
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Dodaj polecenie do paska narzędzi Eksploratora rozwiązań](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [MenuCommands programu Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
 - [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Routing poleceń w pakietach VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)

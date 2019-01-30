@@ -11,18 +11,18 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821104"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231951"
 ---
 # <a name="installation"></a>Instalacja
 
 Visual Studio Tools for AI można zainstalować w systemach operacyjnych Windows 64-bitowych.
 
-## <a name="install-visual-studio-tools-for-ai"></a>Instalowanie narzędzia Visual Studio Tools for AI
+## <a name="install-visual-studio-tools-for-ai"></a>Install Visual Studio Tools for AI
 
 To rozszerzenie działa przy użyciu programu Visual Studio 2015 i Visual Studio 2017 Community edition lub nowszy.
 
@@ -199,21 +199,32 @@ pip3.5 install Theano==0.9.0
 Aby zainstalować PyTorch, uruchom następujące polecenie w terminalu:
 
 - **Windows**
-    - Istnieje jeszcze nie pakiet wheel oficjalnych. Możesz pobrać innych firm [pakietu Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all).
-    - Dekompresja go do katalogu macierzystego, np. "C:\Users\test\pytorch".
-    - Dodaj "C:\Users\test\pytorch\Lib\site-packages", aby zmienna środowiskowa % PYTHONPATH %.
+
+   Istnieje jeszcze nie pakiet wheel oficjalnych. Możesz pobrać pakiet innych firm z [Anaconda](https://anaconda.org/pytorch/repo?type=all) lub [uniwersytet kalifornijski](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Na przykład Dekompresuj do katalogu macierzystego, *C:\Users\test\pytorch*.
+   - Dodaj *C:\Users\test\pytorch\Lib\site-packages* Aby zmienna środowiskowa % PYTHONPATH %.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > pliki binarne systemu macOS nie obsługuje CUDA, zainstaluj ze źródła, jeśli jest potrzebny CUDA
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Pojedynczy pakiet obsługuje zarówno procesorów GPU i CPU.
 

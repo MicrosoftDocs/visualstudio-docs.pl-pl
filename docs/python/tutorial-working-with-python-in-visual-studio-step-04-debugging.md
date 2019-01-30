@@ -2,7 +2,7 @@
 title: Debugowania języka Python w programie Visual Studio — samouczek krok 4,
 titleSuffix: ''
 description: Krok 4 przewodnika podstawowe możliwości języka Python w programie Visual Studio, obejmujących sposobu uruchamiania kodu w języku Python w debugerze.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de38f06615be4ddba5c8cdc16ac69f2c5ff2204b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e48619c34774425986888a9210c2c533e4b5d0db
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979383"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231899"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4. Uruchamianie kodu w debugerze
 

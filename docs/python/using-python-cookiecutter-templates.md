@@ -1,7 +1,7 @@
 ---
 title: Użyj szablonów CookieCutter za pomocą języka Python
 description: Program Visual Studio obsługuje graficzny rozszerzenia Cookiecutter do odnajdowania szablonów dla kodu w języku Python i twórz projekty na podstawie tych szablonów.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11a3b8fb91c068475c82d8352b9a8a66439ece72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975026"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231795"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Używanie rozszerzenia Cookiecutter
 

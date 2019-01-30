@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a847e8692c57f4c7b421eb9a6f73b7153d9af9e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d7659de6e90ca13172459b1bcc1e305e14a91cfc
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016385"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231964"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
@@ -354,11 +354,7 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 ## <a name="videos"></a>Wideo
 
-![Link do klipu wideo](../data-tools/media/playvideo.gif) [wprowadzenie kodowane testy interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![Link do klipu wideo](../data-tools/media/playvideo.gif) [konserwacji i debugowanie kodowane testy interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![Link do klipu wideo](../data-tools/media/playvideo.gif) [kodowania ręcznie kodowanych testów interfejsu użytkownika](http://go.microsoft.com/fwlink/?LinkID=230575)
+![Link do klipu wideo](../data-tools/media/playvideo.gif) [wprowadzenie kodowane testy interfejsu użytkownika](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 

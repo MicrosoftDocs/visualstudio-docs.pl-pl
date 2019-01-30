@@ -1,7 +1,7 @@
 ---
 title: Program IPython REPL (okno interaktywne)
 description: Okno interaktywne Visual Studio w trybie IPython na użytek środowisku przyjazny dla użytkownika opracowywanie interakcyjne funkcje interaktywne przetwarzania równoległego.
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 43032d5a898348c32b605139eea9fde7edc886ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4aec0b6c20efd224bc4ddf5eb447a34c3b68ba4d
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038009"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231912"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Użycie IPython w oknie interaktywnym
 

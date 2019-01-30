@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d9b6dd78f30ccc362a26145d66f4983389f8445
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983472"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231823"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
@@ -30,19 +30,7 @@ Panele układów ułatwiają rozmieścić obiekty na stronie, ale ich nie więce
 
 Twoja strona początkowa, wybierając jedną z tych paneli układu. Strona może mieć więcej niż jeden. Na przykład możesz zacząć od **siatki** Układ panelu, a następnie dodaj **StackPanel** do obszaru w **siatki** , dzięki czemu można rozmieścić formanty w pionie w tym elemencie.
 
-Poniższe panele układów to najbardziej co jest często używane, ale istnieją inne osoby. Można je znaleźć w **zasoby** panelu.
-
-- [Siatka](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Kanwa](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Poniższe panele układów to najbardziej co jest często używane, ale istnieją inne osoby. Można je znaleźć w **przybornika** w programie Visual Studio lub **zasoby** panel w programie Blend for Visual Studio.
 
 ### <a name="grid"></a>Siatka
 
@@ -92,15 +80,7 @@ Rozmieszczanie obiektów, więc, że pozostają, lub *zadokować*, jednej krawę
 
 Możesz dodać obiekty do układu kontrolek także. Nie są one jako wiele funkcji, jak panel układu, ale mogą je znaleźć przydatne w niektórych scenariuszach.
 
-Następujące elementy sterujące układu są najbardziej popularne, ale istnieją inne osoby. Można je znaleźć w **zasoby** panelu.
-
-- [Obramowanie](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Okno widoku](#viewbox)
+Następujące elementy sterujące układu są najbardziej popularne, ale istnieją inne osoby. Można je znaleźć w **przybornika** w programie Visual Studio lub **zasoby** panel w programie Blend for Visual Studio.
 
 ### <a name="border"></a>Obramowanie
 

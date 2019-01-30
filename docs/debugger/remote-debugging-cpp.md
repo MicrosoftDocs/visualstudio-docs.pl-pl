@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f14fa381a007579d39feafe878d1283635060997
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011528"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231574"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.
@@ -96,9 +96,11 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 lub nowszej (nie phone) i 
 11. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonanie zostanie zatrzymana w punkcie przerwania.  
   
     > [!TIP]
-    >  Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.  
+    > Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.
   
-    Jeśli masz pliki niezawierające kodu, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Utworzenie folderu projektu do dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > Nowy Folder**.) Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > istniejący element**, następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.
+    Jeśli masz pliki niezawierające kodu, które są wymagane przez aplikację, można określić je w **dodatkowe pliki do wdrażania** na **zdalny debuger Windows** strony.
+
+    Alternatywnie można dołączyć pliki w projekcie i ustaw **zawartości** właściwości **tak** w **właściwości** strony dla każdego pliku. Te pliki są kopiowane do **katalogu wdrażania** określono na **zdalny debuger Windows** strony. Możesz również zmienić **typu elementu** do **kopiowania pliku** i określić dodatkowe właściwości istnieje, jeśli potrzebne pliki będą kopiowane do podfolderu **katalogu wdrażania**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Konfigurowanie debugowania przy użyciu zdalnego symboli 
 

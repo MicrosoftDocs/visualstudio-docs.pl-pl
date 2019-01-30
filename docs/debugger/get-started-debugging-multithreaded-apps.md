@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3289081a818a4a80fd6f9066144c73b20f509d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917201"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231977"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
 Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytkownika w celu ułatwienia debugowania aplikacji wielowątkowych. W tym samouczku pokazano, jak i używaj znaczników wątków **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okien, warunkowe punkty przerwania i filtr punktów przerwania. Ten samouczek umożliwia zapoznanie się z funkcjami programu Visual Studio do debugowania aplikacji wielowątkowych.
@@ -106,39 +106,37 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
     ```
   
 7.  Na **pliku** menu, wybierz opcję **Zapisz wszystko**.  
+
+8. (Tylko Visual Basic) W Eksploratorze rozwiązań (w okienku po prawej stronie), kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **właściwości**. W obszarze **aplikacji** kartę, zmień **obiekt początkowy** do **proste**.
   
 ## <a name="debug-the-multithreaded-app"></a>Debugowanie aplikacji wielowątkowych  
   
@@ -205,8 +205,8 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
     Console.WriteLine()
     ```
 
-1. Kliknięcie lewym przyciskiem myszy na oprawę po lewej stronie `Thread.Sleep` lub `this_thread::sleep_for` instrukcję, aby wstawić nowy punkt przerwania.  
+1. Kliknięcie lewym przyciskiem myszy na oprawę po lewej stronie `Thread.Sleep` lub `std::this_thread::sleep_for` instrukcję, aby wstawić nowy punkt przerwania.  
   
     Na oprawę czerwone kółko wskazuje, że punkt przerwania jest ustawiony w tej lokalizacji. 
   

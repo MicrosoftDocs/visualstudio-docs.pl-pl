@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 07ffcf9f1af4e6b23f0d2469d757eeb9ab95f2b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927859"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232068"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -140,7 +140,7 @@ Informacje dodatkowe:
 
 Obciążenie języka Python zawiera zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z aplikacji Windows, Mac OS X i Linux.
 
-Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](azure-sdk-for-python.md)
+Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/python/azure/?view=azure-python).
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python Szkolenie Microsoft Virtual Academy
 
