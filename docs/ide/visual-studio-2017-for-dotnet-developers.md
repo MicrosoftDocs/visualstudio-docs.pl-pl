@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941395"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484098"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -81,7 +81,7 @@ Możesz użyć *.editorconfig* plik skodyfikować Konwencji kodowania i ich podr
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Potrzebuję więcej poprawek refaktoryzacji i kodu
 
-Program Visual Studio 2017 jest dostarczany z dużą liczbą operacji refaktoryzacji, akcji generowania kodu i poprawek kodu. Czerwone faliste linie reprezentującego błędy, zielone symbole reprezentują ostrzeżenia i trzy kropki znajdujące się szare reprezentują sugestie kodu. Możesz poprawki kodu dostępu, klikając ikonę żarówki/śrubokręt lub naciskając **Ctrl**+**.** lub **Alt**+**wprowadź**. Każda poprawka jest powiązana z okno podglądu, który pokazuje różnice kodu na żywo, sposobu działania poprawki.
+Program Visual Studio 2017 jest dostarczany z dużą liczbą operacji refaktoryzacji, akcji generowania kodu i poprawek kodu. Czerwone faliste linie reprezentującego błędy, zielone symbole reprezentują ostrzeżenia i trzy kropki znajdujące się szare reprezentują sugestie kodu. Poprawki kodu dostępu, można przez kliknięcie żarówki lub ikonę śrubokręt lub naciskając **Ctrl**+**.** lub **Alt**+**wprowadź**. Każda poprawka jest powiązana z okno podglądu, który pokazuje różnice kodu na żywo, sposobu działania poprawki.
 
 - Popularne szybkich poprawek i operacje refaktoryzacji obejmują:
   - *Zmiana nazwy*
@@ -155,7 +155,7 @@ Poniżej przedstawiono listę funkcji edytora i produktywności, aby wprowadzić
 | Funkcja | Szczegóły | Jak włączyć |
 |-|-|-|
 | Zlokalizuj plik w Eksploratorze rozwiązań | Wyróżnia aktywnego pliku w **Eksploratora rozwiązań** | **Narzędzia** > **opcje** > **projekty i rozwiązania** > **Śledź aktywny element w Eksploratorze rozwiązań** |
-| Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet | Pokazuje ikona żarówki z poprawki kodu, aby zainstalować pakiet NuGet dla typu bez odwołań | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Sugeruj dyrektywy Using dla typów w zestawach referencyjnych** i **Sugeruj dyrektywy Using dla typów w pakietach NuGet** |
+| Dodaj dyrektywy Using dla typów odwołań do zestawów i pakietów NuGet | Pokazuje błąd ikona żarówki z poprawki kodu, aby zainstalować pakiet NuGet dla typu bez odwołań | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Sugeruj dyrektywy Using dla typów w zestawach referencyjnych** i **Sugeruj dyrektywy Using dla typów w pakietach NuGet** |
 | Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **lista błędów** | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włączanie pełnej analizy rozwiązania** |
 | Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |
 | Tryb uzupełniania/sugestii | Zmiany zachowania uzupełnianie przez funkcję IntelliSense — deweloperom tła IntelliJ zwykle konieczna zmiana ustawienia tutaj z domyślnego | **Menu** > **Edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |

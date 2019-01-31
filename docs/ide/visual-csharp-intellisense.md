@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979065"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484189"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ Aby zainicjować **Dodaj instrukcję using** operacji położenia kursora w dany
 
 ![Dodawanie przy użyciu szybkich akcji rozwiniętej obrazu](../ide/media/addusing-quickaction.png)
 
-Kliknij ikonę żarówki, a następnie wybierz **przy użyciu System.Xml;** automatyczne dodawanie za pomocą dyrektywy.
+Kliknij ikonę żarówki błąd, a następnie wybierz **przy użyciu System.Xml;** automatyczne dodawanie za pomocą dyrektywy.
 
 ### <a name="remove-and-sort-usings"></a>Usuń i Sortuj wyrażenia Using
 
@@ -123,7 +123,7 @@ Wycinki metody, które są generowane przez **abstrakcyjna klasa bazowa implemen
 
 Czerwone faliste podkreślenie pojawia się w obszarze każdej Niezdefiniowany identyfikator. Po umieszczeniu wskaźnika myszy na identyfikatorze w etykietce narzędzia pojawi się komunikat o błędzie. Aby wyświetlić odpowiednie opcje, można użyć jednej z następujących procedur:
 
-- Kliknij przycisk Niezdefiniowany identyfikator. A **szybkie akcje** żarówki pojawia się w obszarze identyfikator. Kliknij żarówkę.
+- Kliknij przycisk Niezdefiniowany identyfikator. A **szybkie akcje** żarówki błąd pojawia się w obszarze identyfikator. Kliknij żarówkę błędu.
 
 - Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl**+**.** (**Ctrl** + kropka).
 

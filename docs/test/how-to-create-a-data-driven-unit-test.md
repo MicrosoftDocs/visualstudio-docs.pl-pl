@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie testu jednostkowego opartego na danych'
+title: Tworzenie testów jednostkowych opartych na danych
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e8092663f7ccc0b6443f392358e7c487d0f6b63f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5166b2d4e7bc56ab61d8ca93b4d86019572554df
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968141"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484020"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
@@ -36,7 +36,7 @@ Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynnoś
 
 4.  Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.
 
-##  <a name="BKMK_The_method_under_test"></a> Testowaną metodę
+## <a name="the-method-under-test"></a>Testowaną metodę
 
 Na przykład załóżmy, że masz:
 
@@ -64,8 +64,9 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="create-a-data-source"></a>Utwórz źródło danych
- Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie utworzymy o nazwie bazy danych Sql Compact `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości
+## <a name="create-a-data-source"></a>Utwórz źródło danych
+
+Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie utworzymy o nazwie bazy danych Sql Compact `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości
 
 |Pierwszaliczba|SecondNumber|Suma|
 |-|------------------|-|
@@ -73,8 +74,9 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="add-a-testcontext-to-the-test-class"></a>Dodaj TestContext do klasy testowej
- Tworzy środowiska testów jednostkowych `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwość, którą tworzysz.
+## <a name="add-a-testcontext-to-the-test-class"></a>Dodaj TestContext do klasy testowej
+
+Tworzy środowiska testów jednostkowych `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwość, którą tworzysz.
 
 ```csharp
 private TestContext testContextInstance;
@@ -85,10 +87,11 @@ public TestContext TestContext
 }
 ```
 
- W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
+W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
 
-##  <a name="write-the-test-method"></a>Pisanie metody testowej
- Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametry i sprawdź wartość zwracaną względem **suma** wartość kolumny:
+## <a name="write-the-test-method"></a>Pisanie metody testowej
+
+Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametry i sprawdź wartość zwracaną względem **suma** wartość kolumny:
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -110,8 +113,9 @@ public void AddIntegers_FromDataSourceTest()
 
 `Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie wartość potwierdzone `expected` i `actual`, znajdują się już w szczegółach testów zakończonych niepowodzeniem.
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Określ DataSourceAttribute
- `DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Konkretne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych, którego używasz. W tym przykładzie użyliśmy SqlServerCe bazy danych.
+### <a name="specify-the-datasourceattribute"></a>Określ DataSourceAttribute
+
+`DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Konkretne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych, którego używasz. W tym przykładzie użyliśmy SqlServerCe bazy danych.
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
@@ -123,17 +127,17 @@ Atrybut źródła danych ma trzy konstruktory.
 [DataSource(dataSourceSettingName)]
 ```
 
- Konstruktor z jednym parametrem używa informacji o połączeniu, która jest przechowywana w *app.config* pliku rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
+Konstruktor z jednym parametrem używa informacji o połączeniu, która jest przechowywana w *app.config* pliku rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
 
- Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [instruktażu: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [instruktażu: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
- `DataSource` Konstruktor z dwoma parametrami określa parametry połączenia dla źródła danych i nazwę tabeli, która zawiera dane dla metody testowej.
+`DataSource` Konstruktor z dwoma parametrami określa parametry połączenia dla źródła danych i nazwę tabeli, która zawiera dane dla metody testowej.
 
- Parametry połączenia są zależne od rodzaju typu źródła danych, ale musi on zawierać element dostawcy, który określa nazwę niezmienną dostawcy danych.
+Parametry połączenia są zależne od rodzaju typu źródła danych, ale musi on zawierać element dostawcy, który określa nazwę niezmienną dostawcy danych.
 
 ```csharp
 [DataSource(
@@ -144,21 +148,26 @@ Atrybut źródła danych ma trzy konstruktory.
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Użyj TestContext.DataRow, aby uzyskać dostęp do danych
- Aby uzyskać dostęp do danych `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektów, więc pobrać wartości w kolumnie według nazwy indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, należy przekonwertować je na odpowiedni typ:
+### <a name="use-testcontextdatarow-to-access-the-data"></a>Użyj TestContext.DataRow, aby uzyskać dostęp do danych
+
+Aby uzyskać dostęp do danych `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektów, więc pobrać wartości w kolumnie według nazwy indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, należy przekonwertować je na odpowiedni typ:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="run-the-test-and-view-results"></a>Uruchom test, aby wyświetlić wyniki
- Po zakończeniu pisania metody testowej kompilacji projektu testowego. Metoda testowa jest wyświetlana w **Eksploratora testów** okna **testy nieuruchamiane** grupy. Jak uruchomić, zapisać i ponownie uruchomić testy, **Eksplorator testów** wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, i **testy nieuruchamiane**. Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
+## <a name="run-the-test-and-view-results"></a>Uruchom test, aby wyświetlić wyniki
 
- Paski wyników testów w górnej części Eksploratora jest animowany podczas działania testu. Na końcu przebiegu testowego pasek będzie zielony, jeśli wszystkie testy zostały przekazane lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie przebiegu testu jest wyświetlana w okienku szczegółów u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
+Po zakończeniu pisania metody testowej, skompiluj projekt testu. Metoda testowa jest wyświetlana w **Eksploratora testów** w **testy nieuruchamiane** grupy. Jak uruchomić, zapisać i ponownie uruchomić testy, **Eksplorator testów** wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, i **testy nieuruchamiane**. Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
 
- Po przeprowadzeniu `AddIntegers_FromDataSourceTest` metody w naszym przykładzie paski wyników zmieni kolor na czerwony, i metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Test opartych na danych zakończy się niepowodzeniem, jeśli iterowany metod ze źródła danych nie powiedzie się. Po wybraniu nieudanego testu opartego na danych w **Eksploratora testów** okna, w okienku szczegółów są wyświetlane wyniki każdej iteracji, która jest identyfikowana przez indeks wiersza danych. W tym przykładzie wydaje się, że `AddIntegers` algorytm poprawnie nie obsługuje wartości ujemnych.
+Paski wyników testów w górnej części **Eksploratora testów** jest animowany podczas działania testu. Na końcu przebiegu testowego pasek będzie zielony, jeśli wszystkie testy zostały przekazane lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie przebiegu testu jest wyświetlana w okienku szczegółów u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
 
- Po poprawieniu testowaną metodę test, uruchom ponownie, paski wyników zmieni kolor na zielony i metoda testowa jest przenoszona do **przekazywane Test** grupy.
+> [!NOTE]
+> Brak wyników dla każdego wiersza danych, a także jeden wynik podsumowania. Jeśli test zakończył się powodzeniem w każdym wierszu danych, uruchom w podsumowaniu jako **zakończone powodzeniem**. W przypadku niepowodzenia testu na każdy wiersz danych podsumowanie uruchomienia jest wyświetlany jako **niepowodzenie**.
+
+Po przeprowadzeniu `AddIntegers_FromDataSourceTest` metody w naszym przykładzie paski wyników zmieni kolor na czerwony, i metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Test opartych na danych zakończy się niepowodzeniem, jeśli iterowany metod ze źródła danych nie powiedzie się. Po wybraniu nieudanego testu opartego na danych w **Eksploratora testów** okna, w okienku szczegółów są wyświetlane wyniki każdej iteracji, która jest identyfikowana przez indeks wiersza danych. W tym przykładzie wydaje się, że `AddIntegers` algorytm poprawnie nie obsługuje wartości ujemnych.
+
+Po poprawieniu testowaną metodę test, uruchom ponownie, paski wyników zmieni kolor na zielony i metoda testowa jest przenoszona do **przekazywane Test** grupy.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924603"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484202"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
 1. Na **pliku** menu, wybierz opcję **Dodaj** > **nowy projekt**.
+
+   > [!TIP]
+   > Istnieje kilka sposobów, aby dodać dodatkowe projekt do istniejącego rozwiązania. Kliknięcie prawym przyciskiem myszy nad rozwiązaniem w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Lub możesz wybrać **pliku** > **New** > **projektu**, a następnie w **nowy projekt** okno dialogowe, wybierz opcję **Dodaj do rozwiązania** opcji:
+   >
+   > ![Dodaj do rozwiązania opcji w oknie dialogowym Nowy projekt](media/add-to-solution.png)
 
 2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.
 

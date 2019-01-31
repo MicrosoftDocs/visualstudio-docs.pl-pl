@@ -2,7 +2,7 @@
 title: Przewodnik po funkcjach wdrożenia
 description: Poznaj opcje wdrażania aplikacji w programie Visual Studio.
 ms.custom: mvc
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974935"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483916"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -48,20 +48,28 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-- **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: Narzędzie publikowania szybko Wdrażaj aplikacje w usłudze Azure App Service lub na maszynie wirtualnej platformy Azure. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W oknie dialogowym publikowania wybierz **usługi App Service** lub **maszyn wirtualnych platformy Azure**, a następnie wykonaj kroki konfiguracji.
+- **ASP.NET**, **platformy ASP.NET Core**, **Python**, i **Node.js**: Publikowanie w usłudze Azure App Service lub Azure App Service dla systemu Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
 
-    ![Usługa Azure App Service wybierz](../deployment/media/quickstart-publish-azure.png "wybierz usługi Azure App Service")
+  - Ciągła (lub automatycznych) wdrożenia aplikacji, użyj DevOps platformy Azure za pomocą [potoki Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-    W programie Visual Studio 2017 wersji 15.7 lub nowszej można wdrażać aplikacje platformy ASP.NET Core **usługi App Service dla systemu Linux**.
+  - Jednorazowe (lub ręczne) wdrożenia aplikacji, należy użyć **Publikuj** narzędzia w programie Visual Studio.
 
-    Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+  Do wdrożenia, który zapewnia dostosować konfigurację serwera, można również użyć **Publikuj** narzędzia do wdrażania aplikacji na maszynie wirtualnej platformy Azure.
 
-    Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md) i [publikowania w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
+  Aby użyć **Publikuj** narzędzia, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **Publikuj**. (Jeśli zostały wcześniej skonfigurowane wszystkie profile publikowania, musisz kliknąć **Utwórz nowy profil**.) W oknie dialogowym publikowania wybierz **usługi App Service** lub **maszyn wirtualnych platformy Azure**, a następnie wykonaj kroki konfiguracji.
 
-    Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
+  ![Usługa Azure App Service wybierz](../deployment/media/quickstart-publish-azure.png "wybierz usługi Azure App Service")
 
-    > [!NOTE]
-    > Jeśli nie masz już konto platformy Azure, możesz to zrobić [Zarejestruj się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+  Począwszy od programu Visual Studio 2017 w wersji 15.7, można wdrażać aplikacje platformy ASP.NET Core **usługi App Service dla systemu Linux**.
+
+  Dla aplikacji w języku Python, zobacz też [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+
+  Szybkie wprowadzenie, zobacz [Opublikuj na platformie Azure](quickstart-deploy-to-azure.md) i [publikowania w systemie Linux](quickstart-deploy-to-linux.md). Zobacz też [publikowanie aplikacji platformy ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Do wdrożenia przy użyciu narzędzia Git, zobacz [ciągłe wdrażanie platformy ASP.NET Core na platformie Azure przy użyciu narzędzia Git](/aspnet/core/publishing/azure-continuous-deployment).
+
+  Aby uzyskać informacje na temat importowania profilu publikowania w usłudze Azure App Service w programie Visual Studio, zobacz [importowanie ustawień publikowania i wdrażanie na platformie Azure](../deployment/tutorial-import-publish-settings-azure.md).
+
+  > [!NOTE]
+  > Jeśli nie masz już konto platformy Azure, możesz to zrobić [Zarejestruj się tutaj](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikuj w sieci Web lub wdrożyć do udziału sieciowego
 
@@ -111,9 +119,9 @@ Jeśli potrzebujesz więcej złożonej instalacji aplikacji pulpitu niż [ClickO
 
 Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożenie aplikacji w środowiskach wirtualnych. Aby uzyskać więcej informacji, zobacz [testów w środowisku laboratoryjnym](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-## <a name="devops-deployment"></a>Wdrożenie metodyki DevOps
+## <a name="continuous-deployment"></a>Ciągłe wdrażanie
 
-W środowisku zespołowym potoki Azure służy również do włączyć ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts) i [Wdróż na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
+Potoki usługi Azure umożliwia włączanie ciągłego wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts) i [Wdróż na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenia dla innych typów aplikacji
 

@@ -1,6 +1,6 @@
 ---
 title: Wdrażanie w folderze lokalnym
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -10,18 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0260be91e89a8ed1f9ce0cef89a5e361933ecc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0772e44bf7636edd84c88b3dbaedce7bf2f51604
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007714"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483565"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w lokalnym folderze przy użyciu programu Visual Studio
 
 Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.NET, ASP.NET Core, .NET Core i języka Python do folderu lokalnego z programu Visual Studio. Dla środowiska Node.js czynności są obsługiwane, ale interfejs użytkownika jest inny.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Jeśli potrzebujesz opublikować aplikację pulpitu Windows do folderu lokalnego, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic) lub [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) (C++).
 
 ## <a name="deploy-to-a-local-folder"></a>Wdrażanie w folderze lokalnym
 
@@ -33,7 +36,7 @@ Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.N
 
 1. W **wybierz lokalizację docelową publikowania** okna dialogowego wybierz **folderu**.
 
-    ![Wybierz folder lokalny jako docelowych Publikuj](../deployment/media/quickstart-publish-folder.png "wybierz Folder")
+    ![Wybierz folder lokalny, jako lokalizację docelową publikowania](../deployment/media/quickstart-publish-folder.png "wybierz Folder")
 
 1. Wprowadź ścieżkę lub wybierz **Przeglądaj** do określenia folderu lokalnego.
 

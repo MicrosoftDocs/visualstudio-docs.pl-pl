@@ -1,6 +1,6 @@
 ---
 title: Publikowanie w usłudze App Service w systemie Linux
-ms.date: 07/23/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,18 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3e80f96e1af39747a6dfa9fb9737ec11bb5baf00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951940"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483968"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publikowanie aplikacji platformy ASP.NET Core w usłudze App Service w systemie Linux przy użyciu programu Visual Studio
 
-Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.NET Core w usłudze Azure App Service w systemie Linux.
+Począwszy od programu Visual Studio 2017 w wersji 15.7 można publikować aplikacje platformy ASP.NET Core do usługi Azure App Service dla systemu Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
 
-Wdrażanie w usłudze App Service w systemie Linux przy użyciu **Publikuj** narzędzie wymaga programu Visual Studio 2017 w wersji 15.7.
+* Ciągła (lub automatycznych) wdrożenia aplikacji, użyj DevOps platformy Azure za pomocą [potoki Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Jednorazowe (lub ręczne) wdrożenia aplikacji, należy użyć **Publikuj** narzędzia w programie Visual Studio do publikowania aplikacji platformy ASP.NET Core w usłudze App Service dla systemu Linux (przy użyciu kontenerów).
+
+W tym artykule opisano sposób używania **Publikuj** narzędzie jednorazowe wdrożenia.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

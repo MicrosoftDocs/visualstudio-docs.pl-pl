@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020467"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483721"
 ---
 # <a name="code-snippet-functions"></a>Funkcje fragmentów kodu
 
@@ -30,11 +30,11 @@ W poniższej tabeli opisano funkcje dostępne w połączeniu z `Function` elemen
 
 |Funkcja|Opis|Język|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje instrukcję switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określony przez `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musi być odwołaniem do wyliczenia literału lub typ wyliczenia.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Generuje instrukcję switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określony przez `EnumerationLiteral` parametru. `EnumerationLiteral` Parametr musi być odwołaniem do wyliczenia literału lub typ wyliczenia.|C#|
 |`ClassName()`|Zwraca nazwę klasy, która zawiera wstawiono fragment kodu.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Zmniejsza *TypeName* parametr najprostszej postaci w kontekście, w której wywołano fragmentu kodu.|C#|
+|`SimpleTypeName(TypeName)`|Zmniejsza *TypeName* parametr najprostszej postaci w kontekście, w której wywołano fragmentu kodu.|C#|
 
-## <a name="example"></a>Przykład
+## <a name="generateswitchcases-example"></a>Przykład GenerateSwitchCases
 
 Poniższy przykład pokazuje, jak używać `GenerateSwitchCases` funkcji. Po wstawieniu ten fragment kodu i wyliczenia jest zawierana `$switch_on$` literału, `$cases$` generuje literał `case` poufności informacji dla każdej wartości w wyliczeniu.
 
@@ -76,7 +76,7 @@ Poniższy przykład pokazuje, jak używać `GenerateSwitchCases` funkcji. Po wst
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="classname-example"></a>Przykład ClassName
 
 Poniższy przykład pokazuje, jak używać `ClassName` funkcji. Podczas wstawiania tego fragmentu kodu `$classname$` literał jest zastępowana nazwą otaczającej klasy w tej lokalizacji w pliku kodu.
 
@@ -123,7 +123,7 @@ Poniższy przykład pokazuje, jak używać `ClassName` funkcji. Podczas wstawian
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Przykład
+## <a name="simpletypename-example"></a>Przykład SimpleTypeName
 
 W tym przykładzie pokazano, jak używać `SimpleTypeName` funkcji. Gdy ten fragment kodu jest wstawiany do pliku z kodem `$SystemConsole$` literał zostanie zastąpiony najprostsza forma <xref:System.Console> typu w kontekście, w której wywołano fragment kodu.
 

@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,14 +15,14 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090204"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483708"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>What's new in Visual Studio Preview 2019 r
+# <a name="whats-new-in-visual-studio-2019-preview"></a>Co nowego w programie Visual Studio 2019 (wersja zapoznawcza)
 
 **Zaktualizowano do programu [wersji 2 (wersja zapoznawcza)](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
 
@@ -40,7 +40,7 @@ Poniżej przedstawiono podsumowanie wysokiego poziomu oferowane przez program Vi
 * **[Ciągłe wprowadzanie innowacji](#continuous-innovation)**. Kod inteligentne z obsługą inteligentną i w chmurze.
 
 > [!NOTE]
-> Aby uzyskać pełną listę nowych funkcji i funkcjonalności w Visual Studio Preview 2019 r, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Aby uzyskać pełną listę nowych funkcji i funkcjonalności w Visual Studio Preview 2019 r, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017). I roundup nowości w naszej drugiej wersji zapoznawczej, można zobaczyć [programu Visual Studio 2 2019 r w wersji zapoznawczej jest teraz dostępna](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) wpis w blogu.
 
 ## <a name="personal-and-team-productivity"></a>Osobistych i zespołowych produktywności
 
@@ -82,6 +82,8 @@ Możesz również sformatować, jak wartość jest wyświetlana w oknach wyraże
 
    ![Obejrzyj okna i format wartości nowością w Visual Studio 2019 r.](media/search-watch-window.png)
 
+Aby uzyskać więcej informacji, zobacz [rozszerzone w Visual Studio 2019 r.: Wyszukiwanie obiektów i właściwości w kontrolnych, zmiennych automatycznych i zmiennych lokalnych Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) wpis w blogu.
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio funkcja udostępniania na żywo](https://visualstudio.microsoft.com/services/live-share/) to usługa dla deweloperów, która umożliwia udostępnianie kodu i kontekst współpracownikom i uzyskać natychmiastowy współpracy dwukierunkowej bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.
@@ -110,7 +112,7 @@ Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3
 
 Jeśli używasz monitory, które są skonfigurowane przy użyciu innego ekranu skale, lub zdalnie połączyć się z maszyną za pomocą wyświetlania skali czynników, które różnią się od głównego urządzenia, można zauważyć, że Visual Studio wygląda rozmyty lub renderowanie w skali problem.
 
-Wraz z wydaniem programu Visual Studio 2019 r w wersji zapoznawczej 1 podejmujemy pierwszy krok w kierunku co program Visual Studio — monitorowanie aplikacji obsługującej (PMA). Kładziemy podstawowe prace, która umożliwi programu Visual Studio zapewnić prawidłowe renderowanie, niezależnie od tego, co wyświetlane skale, którego używasz.
+Wraz z wydaniem programu Visual Studio 2019 Preview podejmujemy pierwszy krok w kierunku co program Visual Studio — monitorowanie aplikacji obsługującej (PMA). Kładziemy podstawowe prace, która umożliwi programu Visual Studio zapewnić prawidłowe renderowanie, niezależnie od tego, co wyświetlane skale, którego używasz.
 
    ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](media/per-monitor-aware-dpi-scaling.png)
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951290"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483981"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania na poniższej liście są dołączone [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są wykorzystywane do zorganizowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [zadań Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -130,7 +130,10 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
  [Getassemblyidentity — zadanie](../msbuild/getassemblyidentity-task.md)  
  Pobiera tożsamość zestawu z określonych plików i wyświetla informacje o tożsamości.  
 
- [Getframeworkpath — zadanie](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash task](../msbuild/getfilehash-task.md)  
+ Oblicza sumy kontrolne zawartości pliku lub zestawu plików.
+
+[Getframeworkpath — zadanie](../msbuild/getframeworkpath-task.md)  
  Pobiera ścieżkę do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zestawów.  
 
  [Getframeworksdkpath — zadanie](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania 
 
  [Vbc — zadanie](../msbuild/vbc-task.md)  
  Wywołuje kompilator języka Visual Basic generuje pliki wykonywalne, bibliotek dołączanych dynamicznie lub modułów kodu...  
+
+ [Zadanie VerifyFileHash](../msbuild/verifyfilehash-task.md)  
+ Sprawdza, czy plik odpowiada oczekiwanej wyznaczania wartości skrótu.
 
  [Warning — zadanie](../msbuild/warning-task.md)  
  Dzienniki ostrzeżenie podczas kompilacji w oparciu ocenianą instrukcji warunkowej.  

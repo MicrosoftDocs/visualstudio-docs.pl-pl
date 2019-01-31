@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039062"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483994"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -31,7 +31,7 @@ Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybran
 
 ## <a name="preference-and-severity"></a>Preferencji i ważność
 
-Dla każdego elementu można ustawić **preferencji** i **ważność** wartości przy użyciu listy rozwijane w każdym wierszu. Można ustawić ważność **Brak**, **sugestii**, **ostrzeżenie**, lub **błąd**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) potrzeby stylu kodu, upewnij się, że **ważność** został ustawiony na coś innego niż **Brak**. **Szybkie akcje** ikoną żarówki ![ikon Małe ikony żarówki](media/vs2015_lightbulbsmall.png) pojawia się styl z innymi niż preferowane jest używany, gdy konieczne jest wybranie opcji na **szybkie akcje** do listy automatycznie ponownego pisania kodu, preferowany styl.
+Dla każdego elementu można ustawić **preferencji** i **ważność** wartości przy użyciu listy rozwijane w każdym wierszu. Można ustawić ważność **Brak**, **sugestii**, **ostrzeżenie**, lub **błąd**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) potrzeby stylu kodu, upewnij się, że **ważność** został ustawiony na coś innego niż **Brak**. **Szybkie akcje** żarówki ![żarówki](media/vs2015_lightbulbsmall.png), błąd żarówki ![błąd żarówki](media/error-bulb.png), lub śrubokręt ![śrubokręt](media/screwdriver.png) ikona pojawia się, gdy Styl innymi niż preferowane jest używany i konieczne jest wybranie opcji na **szybkie akcje** listy, aby automatycznie ponownie pisać kodu do preferowanego stylu.
 
 ## <a name="editorconfig-files"></a>Plików EditorConfig
 

@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981700"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483799"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 Dzięki platformie Universal Windows i naszych jednego rdzenia Windows można uruchamiać tę samą aplikację na dowolnym urządzeniu systemu Windows 10, od telefonów do komputerów stacjonarnych. Tworzenie aplikacji Universal Windows za pomocą programu Visual Studio i narzędzia do programowania uniwersalnych aplikacji Windows.
@@ -39,7 +39,7 @@ Platformy uniwersalnej Windows jest po prostu kolekcją umów i wersji. Te pozwa
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
 
      ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
 

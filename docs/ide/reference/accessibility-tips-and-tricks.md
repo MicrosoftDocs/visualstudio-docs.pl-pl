@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010392"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484137"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
@@ -41,7 +41,7 @@ Dla niektórych osób niektóre kolory są trudne do wyświetlić. Jeśli chcesz
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Aby wyświetlić przydatnych informacji o kodzie korzystanie z adnotacji
 
-Edytor programu Visual Studio zawiera wiele tekst "zakończeń", które pozwalają poznać cechy i funkcje w punktach konkretnego wiersza kodu, takie jak lightbulbs, błąd i ostrzeżenie "zygzaki" zakładek i tak dalej. Można użyć zestaw ułatwiają odnajdywanie i następnie przechodzić między zakończeniami tych poleceń "Pokaż adnotacje z linią".
+Edytor programu Visual Studio zawiera wiele tekst "zakończeń", które pozwalają poznać cechy i funkcje w punktach konkretnego wiersza kodu, takie jak śrubokręt i ikony żarówki, błędów i ostrzeżeń "zygzaki" zakładek i tak dalej. Można użyć zestaw ułatwiają odnajdywanie i następnie przechodzić między zakończeniami tych poleceń "Pokaż adnotacje z linią".
 
   ![Użyj zestawu poleceń Pokaż adnotacje z linią](media/show-line-annotations-command-set.png)
 

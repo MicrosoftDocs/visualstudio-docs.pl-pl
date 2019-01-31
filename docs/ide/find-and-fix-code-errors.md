@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017100"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483773"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu, pracy w programie Visual Studio
 
@@ -89,9 +89,9 @@ Wszelkie nowe lub zaktualizowane ostrzeżenia są wyświetlane w **lista błęd�
 
 ![Lista błędów programu Visual Studio z ostrzeżeniami](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Użyj żarówki, aby naprawić lub refaktoryzacji kodu
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Użyj szybkie akcje, aby naprawić lub refaktoryzacji kodu
 
-[Szybkie akcje](../ide/quick-actions.md), która jest dostępna z żarówkę lub ikonę śrubokręt Pozwól, Refaktoryzuj kod inline. Są one prosty sposób, aby rozwiązać typowe ostrzeżenia szybko i skutecznie w C#, C++ i Visual Basic code. Aby uzyskać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie, a następnie wybierz **szybkie akcje i refaktoryzacje**. Lub, jeśli kursor znajduje się na wiersz z kolorowym wężyk, naciśnij klawisze **Ctrl**+**.** lub wybierz żarówkę lub śrubokręt ikonę na marginesie. Zobaczysz listę możliwych poprawki lub refaktoryzacji, które można zastosować do tego wiersza kodu.
+[Szybkie akcje](../ide/quick-actions.md), która jest dostępna z żarówkę lub ikonę śrubokręt Pozwól, Refaktoryzuj kod inline. Są one prosty sposób, aby rozwiązać typowe ostrzeżenia szybko i skutecznie w C#, C++ i Visual Basic code. Aby uzyskać do nich dostęp, kliknij prawym przyciskiem myszy na wężyk ostrzeżenie, a następnie wybierz **szybkie akcje i refaktoryzacje**. Lub, jeśli kursor znajduje się na wiersz z kolorowym wężyk, naciśnij klawisze **Ctrl**+**.** lub wybierz żarówki, błąd żarówki lub śrubokręt ikonę na marginesie. Zobaczysz listę możliwych poprawki lub refaktoryzacji, które można zastosować do tego wiersza kodu.
 
 ![Visual Studio żarówka — Podgląd](../ide/media/quick-actions-options.png)
 

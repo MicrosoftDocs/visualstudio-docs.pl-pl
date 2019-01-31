@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954777"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483786"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -98,7 +98,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 
-Ten poglądowy artykuł przeprowadzi Cię przez proces tworzenia prostego projektu i podjęcie próby niektóre rzeczy można zrobić za pomocą programu Visual Studio, takich jak Zmienianie motywu kolorów przy użyciu [IntelliSense](../ide/using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość Zmienna podczas wykonywania programu. Aby rozpocząć pracę, [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) i zainstaluj go na system.
+Ten poglądowy artykuł przeprowadzi Cię przez proces tworzenia prostego projektu i podjęcie próby niektóre rzeczy można zrobić za pomocą programu Visual Studio, takich jak Zmienianie motywu kolorów przy użyciu [IntelliSense](../ide/using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość Zmienna podczas wykonywania programu. Aby rozpocząć pracę, [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) i zainstaluj go na system.
 
 Instalator modułowej umożliwia wybierz i zainstaluj *obciążeń*, służą do grup funkcje potrzebne do programowania języka lub platformy, użytkownik sobie tego życzy. Wykonaj kroki dla [tworzenie programu](#create-a-program), pamiętaj o wybraniu **programowanie dla wielu platform .NET Core** obciążenie podczas instalacji.
 

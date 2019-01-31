@@ -12,19 +12,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 573a4fcfa9d9889f4fc6eaaeaf01ce0b1a478651
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d46c26881c07e066ba57afba8e648f5b81325b49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021182"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483825"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem programowania. Jeśli nie masz, zalecamy najpierw się jednej z programowania przewodników Szybki Start, takie jak tworzenie aplikacji sieci web i [Python](../ide/quickstart-python.md) lub [C#](../get-started/csharp/tutorial-aspnet-core.md), lub Utwórz aplikację konsoli przy użyciu [języka Visual Basic](../ide/quickstart-visual-basic-console.md) lub [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Publikowanie w usłudze Azure App Service
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -10,16 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3bad335fe9781cbd039f17a1a78c51bfa63775d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970646"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483760"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio
 
-Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.NET, ASP.NET Core, Node.js i platformy .NET Core do usługi Azure App Service lub Azure App Service dla systemu Linux (przy użyciu kontenerów). Dla aplikacji w języku Python, postępuj zgodnie z instrukcjami [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+W przypadku aplikacji ASP.NET, ASP.NET Core, Node.js i platformy .NET Core, publikowanie do usługi Azure App Service lub Azure App Service dla systemu Linux (przy użyciu kontenerów) przy użyciu jednej z następujących metod.
+
+* Ciągła (lub automatycznych) wdrożenia aplikacji, użyj DevOps platformy Azure za pomocą [potoki Azure](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+
+* Jednorazowe (lub ręczne) wdrożenia aplikacji, należy użyć **Publikuj** narzędzia w programie Visual Studio, aby wdrożyć aplikacje ASP.NET, ASP.NET Core, Node.js i platformy .NET Core w usłudze Azure App Service lub usługi App Service dla systemu Linux (przy użyciu kontenerów). Dla aplikacji w języku Python, postępuj zgodnie z instrukcjami [językiem Python — publikowanie w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+W tym artykule opisano sposób używania **Publikuj** narzędzie jednorazowe wdrożenia.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 

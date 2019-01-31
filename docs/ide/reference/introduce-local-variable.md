@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961952"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483813"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
@@ -47,11 +47,11 @@ Dotyczy to generowanie kodu:
       - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
       - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+      - Kliknij ikonę ![śrubokręt](media/screwdriver.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu za pomocą wyrażenia wyróżnione.
 
    ![Wprowadzenie lokalnego (wersja zapoznawcza)](media/local-preview-cs.png)
 
-3. Wybierz **wprowadź element lokalny dla (wszystkie wystąpienia) "*wyrażenie*"** z menu rozwijanego.
+3. Wybierz **wprowadź element lokalny dla (wszystkich wystąpień), "wyrażenia"** z menu rozwijanego.
 
    > [!TIP]
    > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
