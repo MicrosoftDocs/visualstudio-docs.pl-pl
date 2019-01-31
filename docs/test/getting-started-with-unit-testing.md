@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999759"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424385"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
-Aby zdefiniować i uruchomić testy jednostkowe do utrzymania kondycji kodu, upewnij się, pokrycie kodu i Znajdź błędy i usterek, zanim klienci, należy użyć programu Visual Studio.
+Aby zdefiniować i uruchomić testy jednostkowe do utrzymania kondycji kodu, upewnij się, pokrycie kodu i Znajdź błędy i usterek, zanim klienci, należy użyć programu Visual Studio. Uruchamianie testów jednostkowych często, aby upewnić się, że Twój kod działa poprawnie.
 
 ## <a name="create-unit-tests"></a>Tworzenie testów jednostkowych
 
-Utwórz testy jednostkowe i uruchamiaj je często, aby upewnić się, że Twój kod działa poprawnie.
+Tej sekcji opisano na wysokim poziomie, jak utworzyć projekt testów jednostkowych.
+
+> [!TIP]
+> Projektu, nazwę "HelloWorld" jest przykładowy projekt i żaden kod dla niej jest przeznaczony do wyświetlenia. Jeśli chcesz utworzyć projekt "nazwę HelloWorld" do testowania, zobacz [tworzenia pierwszej C# aplikacja konsolowa](../ide/quickstart-csharp-console.md). Aby uzyskać szczegółowy przewodnik, zobacz [tworzenia i uruchamiania testów dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. Utwórz projekt testów jednostkowych.
 
@@ -150,6 +153,7 @@ Poniżej przedstawiono kroki, aby włączyć platform testowych innych firm:
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
 * [Generuj testy z funkcją IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Uruchom testy z Eksploratora testów](run-unit-tests-with-test-explorer.md)

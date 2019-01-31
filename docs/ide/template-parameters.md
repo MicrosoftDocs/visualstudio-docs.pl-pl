@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935023"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424450"
 ---
 # <a name="template-parameters"></a>Parametry szablonu
 
 Można zastąpić wartości w szablonie, podczas tworzenia wystąpienia szablonu. Aby skonfigurować tę funkcję, należy użyć *parametry szablonu*. Parametry szablonu może służyć do zastąpienia wartości, takich jak nazwy klas i przestrzenie nazw w szablonie. Kreator szablonu, który działa w tle, gdy użytkownik dodaje nowy element lub projekt zastępuje te parametry.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Deklarowanie i włączanie parametrów szablonu
+## <a name="declare-and-enable-template-parameters"></a>Deklarowanie i włączanie parametrów szablonu
 
 Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
@@ -32,7 +32,7 @@ Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Aby włączyć podstawienie parametru w szablonach
+### <a name="enable-parameter-substitution-in-templates"></a>Włączyć Podstawienie parametru w szablonach
 
 1. W *.vstemplate* pliku szablonu, zlokalizuj `ProjectItem` element, który odpowiada elementowi, dla którego chcesz włączyć podmianę parametrów.
 
@@ -46,11 +46,12 @@ Parametry szablonu są deklarowane w formacie $*parametru*$. Na przykład:
 
 ## <a name="reserved-template-parameters"></a>Zastrzeżone parametry szablonu
 
-Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mogą być używane przez dowolny szablon.
+Poniższa tabela zawiera listę zastrzeżonych parametrów szablonu, które mogą być używane przez dowolny szablon:
 
 |Parametr|Opis|
 |---------------|-----------------|
 |clrversion|Aktualna wersja środowiska uruchomieniowego języka wspólnego (CLR).|
+|ext_*|Dodaj `ext_` długości prefiksu do żadnych parametrów, aby odwołać się do zmiennych szablonu nadrzędnego. Na przykład `ext_safeprojectname`.|
 |Identyfikator GUID [1 – 10]|Identyfikator GUID służący do zamienienia identyfikatora GUID w pliku projektu. Można określić maksymalnie 10 unikatowych identyfikatorów GUID (na przykład `guid1`).|
 |Nazwa elementu|Nazwa podana przez użytkownika w **Dodaj nowy element** okno dialogowe.|
 |NazwaKomputera|Bieżąca nazwa komputera (na przykład Computer01).|
@@ -118,6 +119,7 @@ W *.vstemplate* pliku szablonu projektu, obejmują `ReplaceParameters="true"` at
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Instrukcje: Zastępowanie parametrów w szablonie](how-to-substitute-parameters-in-a-template.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
 - [Odwołanie do schematu szablonu](../extensibility/visual-studio-template-schema-reference.md)

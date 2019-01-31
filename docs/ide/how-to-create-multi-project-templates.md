@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985919"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424217"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Instrukcje: Tworzenie szablonów obejmujących wiele projektów
 
@@ -69,17 +69,20 @@ Katalog główny *vstemplate* plik szablonu wieloprojektowego różni się od sz
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Aby utworzyć szablon wielu projektów z istniejącego rozwiązania
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Tworzenie szablonów wielu projektów z istniejącego rozwiązania
 
 1. Tworzenie rozwiązania i dodaj dwa lub więcej projektów.
 
 1. Dostosowywanie projektów, aż będą gotowe do wyeksportowania do szablonu.
 
+   > [!TIP]
+   > Jeśli używasz [parametry szablonu](template-parameters.md) i chcesz odwoływać się do zmiennych z szablonu nadrzędnego, poprzedź nazwę parametru za pomocą `ext_`. Na przykład `$ext_safeprojectname$`.
+
 1. Na **projektu** menu, wybierz **Eksportuj szablon**.
 
    **Kreatora eksportowania szablonu** zostanie otwarty.
 
-1. Na **wybierz typ szablonu** wybierz opcję **szablonu projektu**. Wybierz projekt, którego chcesz wyeksportować do szablonu, a następnie wybierz **dalej**.
+1. Na **wybierz typ szablonu** wybierz opcję **szablonu projektu**. Wybierz jeden z projektów, które chcesz wyeksportować do szablonu, a następnie wybierz **dalej**. (Należy powtórzyć te kroki dla każdego projektu w rozwiązaniu.)
 
 1. Na **wybierz opcje szablonu** strony, wprowadź nazwę i opcjonalny opis, ikona i obrazu podglądu dla szablonu. Wybierz **Zakończ**.
 
