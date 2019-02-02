@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 423a153c42b8ca07cd3a78e7ab78721fa6fd67e3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a4b94a26b8f22ee87e42a1f890c58ab1299524f
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935673"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571086"
 documentType: LandingData
 title: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
 metadata:
@@ -19,7 +19,7 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: Publikowanie na platformie Azure
+- title: Wdrażanie w usłudze Azure App Service
   items:
   - type: paragraph
     text: Wdrażanie aplikacji na platformie Azure dla środowisk przejściowych lub produkcyjnych z programem Visual Studio lub konfigurowanie ciągłej integracji i ciągłego wdrażania (CI/CD).
@@ -32,17 +32,12 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure
+      title: Wdrażanie aplikacji ASP.NET Core na platformie Azure
     - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: Publikowanie aplikacji sieci Web platformy ASP.NET na platformie Azure
-    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: Publikowanie funkcji Azure Functions
+      title: Wdrażanie aplikacji sieci Web platformy ASP.NET na platformie Azure
     - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
       html: <p></p>
       image:
@@ -57,8 +52,8 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
-      title: Publikowanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
-- title: Usługa Azure App Services i Azure Functions
+      title: Wdrażanie aplikacji sieci Web platformy ASP.NET na maszynie Wirtualnej platformy Azure
+- title: Usługa Azure App Service, Logic Apps i usługa Azure Functions
   items:
   - type: paragraph
     text: Samouczki dotyczące tworzenia aplikacji sieci web i funkcjom bezserwerowym hostowanych na platformie Azure
@@ -72,7 +67,12 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/AppService.svg
       title: ASP.NET Core
-    - href: /azure/azure-functions/functions-develop-vs
+    - href: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+      html: <p>Tworzenie zautomatyzowanych, skalowalnych przepływów pracy z usługą Azure Logic Apps.</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/LogicApp.svg
+      title: Usługi Azure Logic Apps
+    - href: /azure/azure-functions/functions-create-your-first-function-visual-studio
       html: <p>Przetwarzanie zdarzeń za pomocą kodu bezserwerowego</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
@@ -95,8 +95,8 @@ sections:
       href: /visualstudio/containers
     - image:
         src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      text: Narzędzia aparatu docker w programie Visual Studio
-      href: /visualstudio/docker/vs-azure-tools-docker-setup
+      text: Narzędzia kontenerów programu Visual Studio
+      href: /visualstudio/docker/docker-tools
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
       text: Narzędzia usługi Kubernetes
@@ -178,10 +178,10 @@ sections:
         src: https://docs.microsoft.com//media/common/i_code-performance.svg
       title: Analizowanie wydajności
     - href: vs-azure-tools-publishing-a-cloud-service.md
-      html: <p>Publikowanie usługi w chmurze na platformie Azure</p>
+      html: <p>Wdrażanie usługi w chmurze na platformie Azure</p>
       image:
         src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: Publikowanie
+      title: Deploy
     - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
       html: <p>Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych działających na platformie Azure</p>
       image:

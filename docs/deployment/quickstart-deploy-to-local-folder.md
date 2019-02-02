@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0772e44bf7636edd84c88b3dbaedce7bf2f51604
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483565"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571230"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Wdrażanie aplikacji w lokalnym folderze przy użyciu programu Visual Studio
 
@@ -24,7 +24,7 @@ Możesz użyć **Publikuj** narzędzie do publikowania aplikacji platformy ASP.N
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Jeśli potrzebujesz opublikować aplikację pulpitu Windows do folderu lokalnego, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic) lub [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) (C++).
+> Jeśli potrzebujesz opublikować aplikację pulpitu Windows do folderu lokalnego, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# lub Visual Basic). C + +/ CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) lub C/c++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Wdrażanie w folderze lokalnym
 

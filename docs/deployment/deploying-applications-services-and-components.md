@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 920734a76c184b8c0a44fb5118c40fc79ebd539c
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483916"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571112"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -44,7 +44,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
 
-- **Środowisko uruchomieniowe Visual C++**: Możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia lokalnego lub łączenia statycznego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Windows desktop** możesz opublikować aplikację pulpitu Windows, w folderze za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). C + +/ CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) lub C/c++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
@@ -83,9 +83,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     Można także wdrożyć aplikacji ASP.NET i usług na wiele różnych sposobów. Aby uzyskać więcej informacji, zobacz [usług i aplikacji sieci web ASP.NET wdrażanie](http://www.asp.net/aspnet/overview/deployment).
 
-- **Środowisko uruchomieniowe Visual C++**: Możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia centralnego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
-
-- **Windows desktop** możesz opublikować aplikację pulpitu Windows, na serwerze sieci web lub w sieciowym udziale plików za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) i [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+- **Windows desktop** możesz opublikować aplikację pulpitu Windows, na serwerze sieci web lub w sieciowym udziale plików za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# i Visual Basic). C + +/ CLR, zobacz [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) lub C/c++, zobacz [wdrażanie aplikacji natywnych przy użyciu projektu instalacji](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publikowanie Microsoft Store
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
+ms.lasthandoff: 02/01/2019
 ms.locfileid: "54924019"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
@@ -43,7 +43,7 @@ Poniższa tabela zawiera listę wszystkich opcji *VSTest.Console.exe* i krótkie
 |**/TestAdapterPath:[*path*]**|Wymusza *vstest.console.exe* proces używa niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieją) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/ Platform: [*typu platformy*]**|Docelowa platforma architektury ma być używany dla wykonywania testów.<br />Prawidłowe wartości to x86 x64 i ARM.|
 |**/ Framework: [*framework w wersji*]**|Wersja docelowa.NET Framework służący do wykonywania testów.<br />Prawidłowe wartości to Framework35, Framework40 i Framework45 oraz FrameworkUap10.<br />Jeśli platforma docelowa jest określona jako **Framework35**, testy w CLR w wersji 4.0 "compatibly tryb".<br />Przykład: `/Framework:framework40`|
-|**/TestCaseFilter:[*expression*]**|Uruchom testy, które odpowiadają danemu wyrażeniu.<br />< wyrażenie\> jest w formacie < właściwość\>= < wartość\>[\|< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: "/ TestCaseFilter:" TestCategory = Nightly|FullyQualifiedName=Namespace.ClassName.MethodName""<br />**/Testcasefilter** opcji wiersza polecenia nie można używać z **/testy** opcji wiersza polecenia. <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [filtr przypadków testowych](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expression*]**|Uruchom testy, które odpowiadają danemu wyrażeniu.<br />< wyrażenie\> jest w formacie < właściwość\>= < wartość\>[\|< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** opcji wiersza polecenia nie można używać z **/testy** opcji wiersza polecenia. <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [filtr przypadków testowych](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użyciu.|
 |**/ Logger: [*identyfikatora uri/friendlyname*]**|Określ Rejestrator dla wyników badań.<br />Przykład: Aby rejestrować wyniki w Visual Studio Test wyniki pliku (TRX), użyj **/Logger:trx**.<br />Przykład: Aby opublikować wyniki testu z Team Foundation Server, użyj wyrażenia TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekcja = < adres url projektu\>;**<br />**BuildName = < nazwa kompilacji\>;**<br />**TeamProject = < Nazwa projektu\>;**<br />**[; Platform = < wartość domyślna to "Dowolny procesor CPU" >]**<br />**[; Flavor = < wartość domyślna to "Debugowanie" >]**<br />**[;RunTitle=<title\>]**|
 |**/ ListTests: [*nazwy pliku*]**|Wyświetla listy odkrytych testów z podanego kontenera testowego.|

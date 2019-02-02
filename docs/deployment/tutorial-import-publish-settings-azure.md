@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bfb9c93c3cf69b13c7879b25e6855f421fbea9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4400135eb48c68dc855bd38c2155c8e23c2c417c
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003866"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571138"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usłudze Azure App Service przez importowanie ustawień publikowania w programie Visual Studio
 
@@ -37,7 +37,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET** i. **NET Framework** pakiet roboczy programowania. Dla aplikacji platformy .NET Core, należy również. **.NET Core** obciążenia.
+* Konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
 
     Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -47,9 +47,9 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 1. Na komputerze z programem Visual Studio wybierz **pliku** > **nowy projekt**.
 
-1. W obszarze **Visual C#**  lub **języka Visual Basic**, wybierz **Web**, a następnie w środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **OK**.
+1. W obszarze **Visual C#**  lub **języka Visual Basic**, wybierz **Web**, a następnie w środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (dla C# tylko) **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
-    Jeśli nie widzisz szablony określonego projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Zobacz wymagania wstępne w tym artykule, aby zidentyfikować wymagane obciążeń programu Visual Studio, które trzeba zainstalować.
+    Jeśli nie widzisz szablony określonego projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Zainstaluj **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
 
 1. Wybierz opcję **MVC** (.NET Framework) lub **aplikacji sieci Web (Model-View-Controller)** (dla platformy .NET Core) i upewnij się, że **bez uwierzytelniania** jest zaznaczone, a następnie kliknij przycisk **OK**.
 

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020571"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571190"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Django przy użyciu widoków i szablonów stron
 
@@ -35,7 +35,7 @@ W tym kroku teraz dowiesz się, jak:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 1 z 2 Tworzenie aplikacji z domyślnej struktury
 
-Aplikacja Django jest oddzielny pakiet języka Python, który zawiera zestaw powiązanych plików w określonym celu. Projekt Django może zawierać dowolną liczbę aplikacji, która odzwierciedla fakt, że host sieci web może obsługiwać dowolną liczbę punktów oddzielny wpis z pojedynczą nazwę domeny. Na przykład projekt Django dla domeny, np. contoso.com może zawierać jedną aplikację www.contoso.com, drugą aplikację dla support.contoso.com i trzeci aplikację dla docs.contoso.com. W tym przypadku projekt Django obsługuje routing adresów URL i ustawień poziomie witryny (w jego *urls.py* i *settings.py* plików), a każda aplikacja ma swoją własną odrębnych stylów i działanie za pomocą wewnętrznej Routing, widoki, modele, pliki statyczne i interfejsu administracyjnego.
+Aplikacja Django jest oddzielny pakiet języka Python, który zawiera zestaw powiązanych plików w określonym celu. Projekt Django może zawierać dowolną liczbę aplikacji, która odzwierciedla fakt, że host sieci web może obsługiwać dowolną liczbę punktów oddzielny wpis z pojedynczą nazwę domeny. Na przykład Django projekt służący do domeny, takich jak contoso.com może zawierać jedną aplikację dla `www.contoso.com`, drugą aplikację dla support.contoso.com i trzeci aplikację dla docs.contoso.com. W tym przypadku projekt Django obsługuje routing adresów URL i ustawień poziomie witryny (w jego *urls.py* i *settings.py* plików), a każda aplikacja ma swoją własną odrębnych stylów i działanie za pomocą wewnętrznej Routing, widoki, modele, pliki statyczne i interfejsu administracyjnego.
 
 Aplikacja Django zwykle zaczyna się od standardowego zestawu plików. Program Visual Studio udostępnia szablony elementów, aby zainicjować aplikację Django, w ramach projektu Django, wraz z zintegrowanym polecenie, który służy do tego samego celu:
 

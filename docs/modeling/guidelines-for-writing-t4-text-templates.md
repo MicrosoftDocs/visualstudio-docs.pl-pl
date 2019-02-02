@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a302eb05e6b4c763740f03baea4aa8bd41c72891
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959895"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571164"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio. Zasady nie zostały ustalone.
@@ -48,7 +48,8 @@ Zezwalaj na kod, który można zapisać ręcznie dodatkowo do wygenerowanego kod
 
   W innych językach wygenerowane, takich jak XML, należy użyć `<#@include#>` dyrektywy, aby proste kombinacji odręcznej i generowanej zawartości. W bardziej złożonych przypadkach trzeba napisać kroku przetwarzania końcowego, który łączy wygenerowany plik z plikami odręcznej.
 
-  Przenieś materiał typowe w plikach dołączonych lub szablonów czasu wykonywania, aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
+  Przenieś wspólnej materiały do dołączonych plików lub szablonów czasu wykonywania.
+  Aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, użyj `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
 
   Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu. Aby uzyskać przykłady, zobacz ["Dziedziczenie w szablonów tekstowych" w blogu Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -57,13 +58,15 @@ Zezwalaj na kod, który można zapisać ręcznie dodatkowo do wygenerowanego kod
 
   Metody można umieścić w klasę abstrakcyjną, która może dziedziczyć szablonu. Klasa ogólna musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
 
-  Generowanie kodu, nie konfiguracji plików jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
+  Generuj kod, nie pliki konfiguracji.
+  Jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
 
   Z drugiej strony, których części zmiennych są generowane przed kompilacją aplikacji może być silnie typizowane. Dzięki temu znacznie prostszy i bardziej niezawodne pisać kod odręcznej i zintegrować ją z wygenerowanym części oprogramowania.
 
   Aby uzyskać pełne zaletą generowania kodu, spróbuj do generowania kodu programu zamiast plików konfiguracyjnych.
 
-  Użyj folderu wygenerowany kod umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
+  Użyj folderu wygenerowany kod.
+  Umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
 
 ```
 MyProject
@@ -79,7 +82,8 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Wytyczne dotyczące szablonów T4 (wstępnie przetworzony) czasu wykonywania
- Przenieś wspólnej materiał do dziedziczonych szablonów można użyć dziedziczenia udostępniania, metody i bloki tekstu między szablonów tekstowych T4. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
+ Przenieś wspólnej materiał do dziedziczonej szablonów.
+Dziedziczenie umożliwia udostępnianie metody i bloki tekstu między szablonów tekstowych T4. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
 
  Można również użyć obejmują pliki, które mają szablonów czasu wykonywania.
 
@@ -96,7 +100,8 @@ Każdy szablon czasu wykonywania generuje definicję klasy częściowej, która 
 
  `private string ComputeTotal() { ... }`
 
- Zezwalaj niestandardowego kodu: Podaj punkty rozszerzenia rozważ Generowanie metody wirtualne \<#+ klasy funkcja blokuje #>. Umożliwia to pojedynczy szablon ma być używany w wielu kontekstach bez żadnych modyfikacji. Zamiast modyfikowania szablonu, można utworzyć pochodnej klasy, która dostarcza minimalne dodatkowej logiki. Klasa pochodna może być albo regularne kodu lub może być szablon czasu wykonywania.
+ Zezwalaj na niestandardowego kodu: Podaj punkty rozszerzenia.
+Weź pod uwagę Generowanie metody wirtualne \<#+ klasy funkcja blokuje #>. Umożliwia to pojedynczy szablon ma być używany w wielu kontekstach bez żadnych modyfikacji. Zamiast modyfikowania szablonu, można utworzyć pochodnej klasy, która dostarcza minimalne dodatkowej logiki. Klasa pochodna może być albo regularne kodu lub może być szablon czasu wykonywania.
 
  Na przykład w MyStandardRunTimeTemplate.tt:
 
@@ -117,9 +122,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Wytyczne dotyczące wszystkie szablony T4
- Oddzielne zbieranie danych z Generowanie tekstu spróbuj się unikać mieszania obliczeń i bloków tekstu. W każdym szablonie tekstu należy użyć pierwszego \<kod # block #> do ustawiania zmiennych i wykonywania złożonych obliczeń. Z pierwszego bloku tekstu w dół do końca szablonu lub pierwszy \<cechę klasy #+ block #> Unikaj długich wyrażeń i uniknąć pętli i warunkowych, chyba że zawierają bloki tekstu. Praktyka ta sprawia, że szablon jest łatwiej odczytywać i obsługa.
+ Zbieranie danych należy oddzielić od Generowanie tekstu.
+Staraj się unikać mieszania obliczeń i bloków tekstu. W każdym szablonie tekstu należy użyć pierwszego \<kod # block #> do ustawiania zmiennych i wykonywania złożonych obliczeń. Z pierwszego bloku tekstu w dół do końca szablonu lub pierwszy \<cechę klasy #+ block #> Unikaj długich wyrażeń i uniknąć pętli i warunkowych, chyba że zawierają bloki tekstu. Praktyka ta sprawia, że szablon jest łatwiej odczytywać i obsługa.
 
- Nie używaj `.tt` dołączanych plików użytku innym rozszerzeniem nazwy pliku takich jak `.ttinclude` dołączonych plików. Użyj `.tt` tylko dla plików, które mają być przetwarzane w czasie wykonywania lub czasu projektowania szablonów tekstowych. W niektórych przypadkach program Visual Studio rozpoznaje `.tt` pliki i automatycznie ustawia jego właściwości dla przetwarzania.
+ Nie używaj `.tt` dołączonych plików.
+Używanie innym rozszerzeniem nazwy pliku, takiej jak `.ttinclude` dołączonych plików. Użyj `.tt` tylko dla plików, które mają być przetwarzane w czasie wykonywania lub czasu projektowania szablonów tekstowych. W niektórych przypadkach program Visual Studio rozpoznaje `.tt` pliki i automatycznie ustawia jego właściwości dla przetwarzania.
 
  Rozpoczęcie każdego szablonu jako stały prototypu.
 Napisz przykładem kodu lub tekstu, który chcesz wygenerować i upewnij się, że jest on poprawny. Następnie zmień jego rozszerzenie na .tt po czym stopniowo wstawiać kod, który modyfikuje zawartość, czytając modelu.
