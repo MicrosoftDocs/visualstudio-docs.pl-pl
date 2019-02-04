@@ -2,19 +2,17 @@ items:
 - name: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
   href: index.yml
   expanded: true
-- name: Publikowanie na platformie Azure
+- name: Wdrażanie w usłudze Azure App Service
   items:
-  - name: Publikowanie aplikacji platformy ASP.NET Core na platformie Azure
+  - name: Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
     href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
-  - name: Publikowanie aplikacji internetowej listy zadań do wykonania platformy .NET na platformie Azure
+  - name: Wdrażanie aplikacji internetowej listy zadań do wykonania platformy .NET na platformie Azure
     href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
-  - name: Publikowanie funkcji Azure Functions
-    href: /azure/azure-functions/functions-develop-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   - name: Ciągłe wdrażanie na platformie Azure za pomocą programu Visual Studio i rozwiązania Git na platformie ASP.NET Core
     href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
   - name: Ciągłe wdrażanie na platformie Azure za pomocą usługi Azure Pipelines
     href: /azure/devops/pipelines/get-started-yaml?view=vsts
-  - name: Publikowanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
+  - name: Wdrażanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
     href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   expanded: true
 - name: Łączenie z usługami platformy Azure
@@ -77,19 +75,19 @@ items:
       href: vs-azure-tools-performance-profiling-cloud-services.md
     - name: Optymalizacja kodu platformy Azure
       href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
-  - name: Publikowanie usługi w chmurze na platformie Azure
+  - name: Wdrażanie usługi w chmurze na platformie Azure
     items:
-    - name: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure
+    - name: Migrowanie i wdrażanie aplikacji internetowej w usłudze w chmurze platformy Azure
       href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-    - name: Korzystanie z kreatora publikacji aplikacji platformy Azure programu Visual Studio
+    - name: Korzystanie z kreatora wdrażania aplikacji platformy Azure programu Visual Studio
       href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: Publikowanie usługi w chmurze za pomocą programu Visual Studio
+    - name: Wdrażanie usługi w chmurze za pomocą programu Visual Studio
       href: vs-azure-tools-publishing-a-cloud-service.md
     - name: Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
       href: vs-azure-tools-publishing-using-powershell-scripts.md
-    - name: Publish-WebApplicationVM (skrypt programu Windows PowerShell)
+    - name: Deploy-WebApplicationVM (skrypt programu Windows PowerShell)
       href: vs-azure-tools-publish-webapplicationvm.md
-    - name: Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
+    - name: Deploy-WebApplicationWebSite (skrypt programu Windows PowerShell)
       href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
     - name: Zarządzanie konfiguracjami i profilami usług
       href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
@@ -120,9 +118,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: c0c4a4085432d18eed9b46b767069f18df39df8a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 47bd746cddc9563615d271a096fbd02911032077
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000832"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571099"
