@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: e817302031ba2ec37102e5b3eb41a5b35460c546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029872"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690245"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -44,7 +44,7 @@ Konieczne jest posiadanie programu Visual Studio, z następującymi pakietami ro
 - **Programowanie aplikacji klasycznych w języku C++**
 - Albo **programowanie aplikacji klasycznych dla platformy .NET** lub **platformy .NET Core programowanie wieloplatformowych**, w zależności od typu aplikacji, którą chcesz utworzyć.
 
-Jeśli nie masz programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli nie masz programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Otwórz Instalator programu Visual Studio** w okienku po lewej stronie programu Visual Studio **nowy projekt** okno dialogowe. W Instalatorze programu Visual Studio, wybierz obciążenia potrzebujesz, a następnie wybierz **Modyfikuj**.
 

@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835295"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690319"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze postępuj zgodnie z odpowiednią dyscypliny blokowania i korzystanie z adnotacji SAL.
@@ -105,6 +105,19 @@ Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze 
 |`_Interlocked_`|Oznacza stosowanym zmienną i jest odpowiednikiem `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Parametr funkcji adnotacjami jest operand docelowej jednego z różnych funkcji Interlocked.  Te operandy muszą posiadać określone dodatkowe właściwości.|
 |`_Write_guarded_by_(expr)`|Oznacza stosowanym zmienną i wskazuje, że zawsze, gdy zmienna jest modyfikowany, liczbę blokad blokady obiektu, który jest nazwany przez `expr` co najmniej jeden.|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Blokada Smart Lock i adnotacje RAII
+ Inteligentnych zamków zazwyczaj opakować natywnych blokad i zarządzanie nimi ich istnienia. W poniższej tabeli wymieniono adnotacji, które mogą być używane z inteligentnych zamków i idiomu RAII wzorców, obsługę `move` semantyki.
+
+|Adnotacja|Opis|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Informuje, analizator założono pozyskany blokady inteligentnej. Ta adnotacja oczekuje, że typ blokady odwołanie jako parametr.|
+|`_Analysis_assume_smart_lock_released_`|Informuje, analizator założono, że zwolniono blokady inteligentnej. Ta adnotacja oczekuje, że typ blokady odwołanie jako parametr.|
+|`_Moves_lock_(target, source)`|W tym artykule opisano `move constructor` operacji, który przenosi stan blokady z `source` obiekt `target`. `target` Należy traktować jako obiekt nowo skonstruowany, dzięki czemu dowolny stan miał wcześniej utracone i zastąpione przez `source` stanu. `source` Jest również Resetuj do stanu czystego nie blokady docelowej liczby lub Tworzenie aliasów, ale aliasy wskazujących na niego pozostają niezmienione.|
+|`_Replaces_lock_(target, source)`|W tym artykule opisano `move assignment operator` semantykę, gdzie blokada docelowy jest zwalniana przed przeniesieniem stanu ze źródła. To może być traktowane jako kombinacji `_Moves_lock_(target, source)` poprzedzone `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|W tym artykule opisano standardowe `swap` zachowanie, które przyjęto założenie, że obiekty `left` i `right` wymiany ich stanu. Stan wymieniane obejmuje blokady aliasów i liczba obiektu docelowego, jeśli jest obecny. Aliasy, które wskazują na `left` i `right` obiekty pozostają bez zmian.|
+|`_Detaches_lock_(detached, lock)`|W tym artykule opisano scenariusz, w którym typ otoki blokady umożliwia odmówiono z jego zawartego zasobu. Jest to podobne do jak `std::unique_ptr` współpracuje z jego wewnętrzny wskaźnik: umożliwia programistom wyodrębnić wskaźnik i pozostawienie jej kontenera inteligentnego wskaźnika w stanu czystego. Podobnej logiki jest obsługiwana przez `std::unique_lock` i może być implementowany w otoki niestandardowe blokady. Odłączony blokady zachowuje swój stan (blokady aliasów i liczba obiekt docelowy, jeśli istnieje), podczas gdy otoki jest resetowana do zawierać zero liczbę blokad i żadne miejsce docelowe aliasów, zachowując swoje własne aliasy. Nie istnieje żadna operacja związane z liczbami blokady (zwalniania i uzyskiwanie). Ta adnotacja zachowuje się dokładnie tak jak `_Moves_lock_` z tą różnicą, że odłączony argument powinien być `return` zamiast `this`.|
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61da2f7de84ca5ab76e244faa7f45a9527f40515
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571112"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690518"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -101,17 +101,17 @@ W programie Visual Studio można utworzyć pakiety aplikacji do wdrożenia w Mic
 
 Jeśli wdrażasz aplikacji platformy uniwersalnej systemu Windows na potrzeby testowania na urządzeniu, zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym w programie Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="create-an-installer-package-windows-client"></a>Utwórz pakiet Instalatora (systemu Windows Windows client)
+## <a name="create-an-installer-package-windows-desktop"></a>Tworzenie pakietu Instalatora (Windows wersja klasyczna)
 
-Jeśli potrzebujesz więcej złożonej instalacji aplikacji pulpitu niż [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) może zapewnić można utworzyć pakiet instalacyjny, projektu Instalatora lub niestandardowego programu inicjującego.
+Jeśli potrzebujesz bardziej złożonej instalacji aplikacji pulpitu niż [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) można zapewnić, możesz utworzyć pakiet Instalatora Windows (pliku instalacyjnego MSI i EXE) lub niestandardowego programu inicjującego.
 
-- Instalatora WiX opartym na MSI mogą być tworzone przy użyciu [WiX zestawu narzędzi Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+- Pakiet instalacyjny opartym na MSI można utworzyć przy użyciu [WiX zestawu narzędzi Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Jest to zestaw narzędzi wiersza polecenia.
 
-- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z Flexera oprogramowania może być używany z programu Visual Studio 2017 (Community Edition nie są obsługiwane). Należy pamiętać, że InstallShield Limited Edition nie jest już dołączony do Visual Studio i nie jest obsługiwana w programie Visual Studio 2017; Skontaktuj się z [oprogramowania Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o przyszłych dostępności.
+- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z Flexera oprogramowania. InstallShield mogą być używane w programie Visual Studio 2017 (Community Edition nie są obsługiwane). Należy pamiętać, że InstallShield Limited Edition nie jest już dołączony do Visual Studio i nie jest obsługiwana w programie Visual Studio 2017; Skontaktuj się z [oprogramowania Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o przyszłych dostępności.
 
-- Jeśli chcesz utworzyć projekt Instalatora (vdproj), zainstaluj [rozszerzenia programu Visual Studio 2017 Instalatora projektów](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą projektu Instalatora (vdproj). Aby użyć tej opcji, należy zainstalować [rozszerzenia programu Visual Studio 2017 Instalatora projektów](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
-- Można zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący. Aby uzyskać więcej informacji, zobacz [wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md).
+- Można także zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący. Aby uzyskać więcej informacji, zobacz [wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md).
 
 ## <a name="deploy-to-test-lab"></a>Wdrażanie laboratorium testowego
 

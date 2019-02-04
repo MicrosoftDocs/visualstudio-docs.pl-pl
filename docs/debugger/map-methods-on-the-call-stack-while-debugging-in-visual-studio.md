@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 087e8f850aa7d12a427924133f82f1e72c9c4bd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959489"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690505"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Aby uzyskać przewodnik Obejrzyj ten film wideo: [Wideo: Wizualne debugowanie dz
 Aby uzyskać szczegóły poleceń i akcji za pomocą map kodu, zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Można tworzyć tylko w mapy kodu [programu Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+>Można tworzyć tylko w mapy kodu [programu Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 Poniżej przedstawiono krótkie omówienie mapy kodu:
 

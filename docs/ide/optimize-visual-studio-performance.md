@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070464"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690320"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizacja wydajności programu Visual Studio
 
@@ -26,7 +26,7 @@ Ten artykuł zawiera wskazówki, aby wypróbować, jeśli okaże się, że progr
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Uaktualnianie do programu Visual Studio 2017 w wersji 15.6 lub nowszej
 
-Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) bezpłatnie, aby zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej w programie Visual Studio 2017 o ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 jest side-by-side zgodny z programu Visual Studio 2015, dzięki czemu nie będzie utracie danych dzięki eksperymentom.
+Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) bezpłatnie, aby zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej w programie Visual Studio 2017 o ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 jest side-by-side zgodny z programu Visual Studio 2015, dzięki czemu nie będzie utracie danych dzięki eksperymentom.
 
 Jeśli obecnie używasz programu Visual Studio 2017, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązania ładować się dwa lub trzy razy szybszy w wersji 15.6. Pobierz go [tutaj](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
