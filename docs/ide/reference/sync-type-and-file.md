@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948183"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742433"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Wpisz nazwę pliku lub nazwę pliku do refaktoryzacji typu synchronizacji
 
@@ -31,6 +31,9 @@ Ta Refaktoryzacja mają zastosowanie do:
 **Kiedy:** Zmieniono nazwę pliku lub typ, a nie zostały jeszcze zaktualizowane odpowiedniego pliku lub typ do dopasowania.
 
 **Dlaczego:** Wprowadzenie do typu w pliku o innej nazwie lub odwrotnie, go, które są trudne do znalezienia, czego szukasz. Zmieniając typ lub nazwa pliku, kod staje się bardziej czytelny i łatwiejszą nawigacją.
+
+> [!NOTE]
+> Ta Refaktoryzacja nie jest jeszcze dostępne dla projektów .NET Standard i .NET Core.
 
 ## <a name="how-to"></a>Instrukcje
 
@@ -62,8 +65,6 @@ Ta Refaktoryzacja mają zastosowanie do:
    - Visual Basic: W przykładzie poniżej plik **Employee.vb** została zmieniona na **Person.vb** Period z nazwą typu.
 
        ![Wynik wbudowanego Visual Basic](media/synctype-result-vb.png)
-
-> ! [UWAGA] Ta Refaktoryzacja nie jest jeszcze dostępne dla projektów .NET Standard i .NET Core.
 
 ## <a name="see-also"></a>Zobacz także
 

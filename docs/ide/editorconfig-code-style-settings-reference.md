@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956093"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742524"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -1390,6 +1390,7 @@ Na poniższej liście przedstawiono reguły formatowania Konwencji dostępne w p
 - Ustawienia formatowania platformy .NET
     - [Organizuj użycia](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - Ustawienia formatowania C#
     - [Opcje nowego wiersza](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1433,7 @@ W poniższej tabeli przedstawiono nazwy reguły, właściwe języki, wartość d
 | Nazwa zasady | Właściwe języki | Visual Studio domyślną | Visual Studio 2017 w wersji |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# i Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# i Visual Basic | true | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1458,6 +1460,34 @@ Przykład *.editorconfig* pliku:
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
+```
+
+**polecenia DotNet\_oddzielnych\_zaimportować\_dyrektywy\_grup**
+
+- Gdy ta reguła jest ustawiona na **true**, umieść pusty wiersz między grupy dyrektywy using.
+- Gdy ta reguła jest ustawiona na **false**, nie należy umieszczać pusty wiersz między grupy dyrektywy using.
+
+Przykłady kodu:
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+Przykład *.editorconfig* pliku:
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
 ```
 
 ### <a name="c-formatting-settings"></a>Ustawienia formatowania C#
@@ -2193,6 +2223,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

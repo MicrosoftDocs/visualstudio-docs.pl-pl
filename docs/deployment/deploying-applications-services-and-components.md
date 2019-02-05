@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e083acb49d430c749929d84f58f59229fbde46ab
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690518"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742459"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki start: Pierwsze spojrzenie na wdrażanie w programie Visual Studio
+# <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
 Wdrażanie aplikacji, usług lub składników, rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach lub serwerów lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz. (Wiele typów aplikacji obsługuje inne narzędzia wdrażania takich jak wdrażanie z wiersza polecenia lub NuGet, które nie zostały opisane w tym miejscu).
 

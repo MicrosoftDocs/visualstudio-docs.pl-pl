@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029163"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742396"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), gdy program jest ładowany, ale przed wykonaniem jakiegokolwiek kodu.  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
  DE tworzy i wysyła tego obiektu zdarzenia, aby zgłosić, że program został pomyślnie załadowany. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
-  
-## <a name="remarks"></a>Uwagi  
- To zdarzenie jest zdarzenie zatrzymywanie i musi zawierać `EVENT_STOPPING` Flaga w atrybutach zdarzeń.  
-  
+   
 ## <a name="requirements"></a>Wymagania  
  Header: msdbg.h  
   
