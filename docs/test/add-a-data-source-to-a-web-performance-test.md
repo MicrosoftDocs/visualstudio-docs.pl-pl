@@ -10,12 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c2ea0d43a4c6aa4c7e83d2faedadd768024d96e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e773088671abfb5feffe50379bb717d09cb5ab64
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921807"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768512"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -35,7 +35,7 @@ Twoje rozwiązanie powinien również zawierać test wydajności sieci web, któ
 
 ## <a name="create-a-sql-database"></a>Tworzenie bazy danych SQL
 
-1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony.
+1. Jeśli nie masz programu Visual Studio Enterprise, możesz pobrać go z [pobieranie Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony.
 
 2. Utwórz bazę danych SQL.
 

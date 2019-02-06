@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
-ms.openlocfilehash: a71b873a2c853d5b90aea2853d73eb1fe8f6abb6
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 505d65bc070446fa4b3f30a31fc12c3ee5c51026
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090179"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767848"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -22,7 +22,7 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w folde
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
- - [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
+ - [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) zainstalowane za pomocą programu ASP.NET Core włączone.
  - Projekt platformy ASP.NET Core. Jeśli nie masz jeszcze projektu, możesz to zrobić [Utwórz nową](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-folder"></a>Publikowanie do folderu

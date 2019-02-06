@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4c272ba3009f3a9e947563cfa8c65843eab57067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf5c2af7f8c1737c83d9e39ddf9a87d9e2783960
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034132"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767985"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W tym krótkie wprowadzenie do edytora kodu w programie Visual Studio omówimy kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
 
 W tym artykule przyjęto założenie, że już znasz za pomocą języka JavaScript. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [utworzyć aplikację Node.js lub Express](../javascript/tutorial-nodejs.md) pierwszy.
 

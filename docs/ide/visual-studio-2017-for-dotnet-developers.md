@@ -11,16 +11,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 582387ee410b8500fd8737130d5325e550824b9d
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484098"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768352"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
-Dowiedz się, jak [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) sprawia, że deweloperzy jest bardziej wydajne niż kiedykolwiek wcześniej. Skorzystaj z zalet naszej wydajność i produktywność ulepszenia, takie jak nawigacja do dekompilowanych zestawów, nazwa zmiennej sugestie, podczas wpisywania widok hierarchii w **Eksplorator testów**, przejdź do wszystkich (**Ctrl** + **T**) przejdź do pliku/typu/elementu członkowskiego/symbolu deklaracji, inteligentnej **pomocnika wyjątków**, styl konfiguracji i wymuszania i wiele operacji refaktoryzacji kodu oraz poprawki kodu.
+Dowiedz się, jak [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) sprawia, że deweloperzy jest bardziej wydajne niż kiedykolwiek wcześniej. Skorzystaj z zalet naszej wydajność i produktywność ulepszenia, takie jak nawigacja do dekompilowanych zestawów, nazwa zmiennej sugestie, podczas wpisywania widok hierarchii w **Eksplorator testów**, przejdź do wszystkich (**Ctrl** + **T**) przejdź do pliku/typu/elementu członkowskiego/symbolu deklaracji, inteligentnej **pomocnika wyjątków**, styl konfiguracji i wymuszania i wiele operacji refaktoryzacji kodu oraz poprawki kodu.
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Z przyzwyczajenia używam Moje skrótów klawiaturowych z inne rozszerzenie/Edytor/środowisko IDE
 

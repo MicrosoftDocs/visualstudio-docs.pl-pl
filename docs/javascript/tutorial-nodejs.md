@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4ba6526f05cd0d7acf795151c379d751b9add413
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028559"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768388"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 
-Tego samouczka do tworzenia aplikacji programu Visual Studio przy użyciu środowiska Node.js i Express służy do tworzenia prostą aplikację sieci web środowiska Node.js, Dodaj kod, zapoznaj się z niektórymi funkcjami środowiska IDE i uruchamiania aplikacji. Jeśli jeszcze nie zainstalowano programu Visual Studio, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
+Tego samouczka do tworzenia aplikacji programu Visual Studio przy użyciu środowiska Node.js i Express służy do tworzenia prostą aplikację sieci web środowiska Node.js, Dodaj kod, zapoznaj się z niektórymi funkcjami środowiska IDE i uruchamiania aplikacji. Jeśli jeszcze nie zainstalowano programu Visual Studio, zainstaluj go bezpłatnie [tutaj](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
 Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji w trybie offline
 description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy zawodne połączenie z Internetem lub niskiej przepustowości.
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a9c30570a284e037dc529b7ffa90eb2ed7d80c7
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035526"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768219"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie instalacji offline programu Visual Studio 2017
 
-Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
+Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
 Na przykład może być zawodne połączenia internetowego lub taki, który ma o niskiej przepustowości. Jeśli tak, możesz skorzystać z kilku opcji: Można użyć nowej "Pobierz wszystko, a następnie zainstaluj" funkcję, aby pobrać pliki, przed zainstalowaniem lub wiersza polecenia można użyć do utworzenia lokalnej pamięci podręcznej plików.
 
@@ -33,10 +33,14 @@ Na przykład może być zawodne połączenia internetowego lub taki, który ma o
 
 ## <a name="use-the-download-all-then-install-feature"></a>Użyj "Pobierz wszystko, a następnie zainstaluj" funkcji
 
-[**Nowość w 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
+[**Nowość w 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
 
    !["Pobierz wszystko, a następnie zainstaluj" opcja](media/download-all-then-install.png)
+
+Został zaprojektowany "Pobierz wszystko, a następnie zainstaluj" funkcji tak, aby Visual Studio można pobrać jako pojedyncza instalacja na tym samym komputerze, na którym został pobrany. Dzięki temu można bezpiecznie odłączyć od sieci web przed zainstalowaniem programu Visual Studio.
+
+> [!IMPORTANT]
+> Nie używaj "Pobierz wszystko, a następnie zainstaluj" funkcję umożliwiającą tworzenie pamięci podręcznej offline, który chcesz przenieść na inny komputer. Nie ustalono, aby działać w ten sposób. <br><br>Jeśli chcesz utworzyć pamięci podręcznej offline, aby zainstalować program Visual Studio na innym komputerze, zobacz [użyć wiersza polecenia, aby utworzyć lokalną pamięć podręczną](#use-the-command-line-to-create-a-local-cache) części tej strony, aby uzyskać informacje o sposobie tworzenia lokalnej pamięci podręcznej lub [Create sieci instalacji programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) strony, aby uzyskać informacje na temat tworzenia pamięci podręcznej sieci.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Użyj wiersza polecenia, aby utworzyć lokalną pamięć podręczną
 

@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f3b2e3c5179c5edb390fc494b49ba0051e04108e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995063"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768412"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
 Możesz debugować kod JavaScript i TypeScript za pomocą programu Visual Studio. Można ustawić i identyfikować punkty przerwania, Dołącz debuger, sprawdzanie zmiennych, przejrzyj stos wywołań i korzystanie z innych funkcji debugowania.
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Debugowanie skryptu po stronie serwera
 
