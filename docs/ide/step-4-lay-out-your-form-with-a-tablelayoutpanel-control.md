@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda2189af9fd564c6240909e44db91f297b46b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 529665d342275611ab13253229fb8a2abde035fe
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985971"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853863"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. Określić układ formularza z formantem TableLayoutPanel
 W tym kroku dodasz <xref:System.Windows.Forms.TableLayoutPanel> formantu do formularza. TableLayoutPanel pomaga poprawnie wyrównać formanty w formularzu, który zostanie dodany później.

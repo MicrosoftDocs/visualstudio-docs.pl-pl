@@ -1,5 +1,5 @@
 ---
-title: Dowiedz się, jak przetestować kod na żywo 2017 Test jednostki | Dokumentacja firmy Microsoft
+title: Dowiedz się, jak przetestować kod za pomocą testów jednostkowych na żywo
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ca02e4961d687d737887777bfe19d586298b6a9a
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834256"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854021"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z usługą Live Unit Testing w programie Visual Studio
 
@@ -24,8 +24,11 @@ Po włączeniu opcji Live Unit Testing w rozwiązaniu Visual Studio Live Unit Te
 Live Unit Testing może służyć do testowania rozwiązania przeznaczone dla .NET Framework lub .NET Core. W tym samouczku dowiesz się, jak używać funkcji Live Unit Testing, tworząc bibliotekę klas proste przeznaczonego .NET Standard, a następnie utworzysz Projekt narzędzia MSTest przeznaczonego platformy .NET Core, aby ją przetestować.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 Kompletne rozwiązanie języka C# można pobrać z [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) repozytorium w witrynie GitHub.
+
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 Kompletne rozwiązanie programu Visual Basic można go pobrać ze [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) repozytorium w witrynie GitHub.
 
 ---
@@ -51,6 +54,7 @@ Rozwiązanie to po prostu kontener dla jednego lub więcej projektów. Aby utwor
 Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLibrary` zawiera szereg metod rozszerzenia do pracy z ciągami.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
 1. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **.NET Standard**.
@@ -76,9 +80,10 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
       - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
 
-1.  Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
 1. W **Dodaj nowy projekt** okno dialogowe, wybierz węzeł Visual Basic, a następnie wybierz **.NET Standard**.
@@ -108,7 +113,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
    ![Okno dialogowe właściwości projektu dla projektów języka Visual Basic](./media/lut-start/vb-properties.png)
 
-1.  Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
+1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
 
 ---
 
@@ -117,6 +122,7 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 Następnym krokiem jest utworzenie projektu testu jednostkowego do testowania `StringLibrary` biblioteki. Utwórz testy jednostkowe, wykonując następujące czynności:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
 1. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **platformy .NET Core**.
@@ -208,9 +214,11 @@ Jeśli, mimo że napisanych testów dla `StringLibrary` biblioteki klas, które 
 Po zakończeniu uruchamiania testów, **Eksplorator testów** wyświetla ogólne wyniki i wyników badań indywidualnych. Ponadto okno kodu wyświetla w postaci graficznej pokrycia kodu testu i wyniki testów. Jak pokazano na poniższej ilustracji, wszystkie trzy testy zostały wykonane pomyślnie. Pokazano także, że nasze testy zostały omówione wszystkie ścieżki kodu `StartsWithUpper` metody te testy i wszystkie wykonane pomyślnie (które jest wskazywany przez zielony znacznik wyboru "✓"). Na koniec pokazuje, że żadna z innych metod w `StringLibrary` mają pokrycie kodu, (który jest wskazywany przez linię "➖").
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![Okno Eksploratora testów i kodu, po uruchomieniu testów jednostkowych na żywo](media/lut-start/lut-results-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![Okno Eksploratora testów i kodu, po uruchomieniu testów jednostkowych na żywo](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +226,7 @@ Po zakończeniu uruchamiania testów, **Eksplorator testów** wyświetla ogólne
 Również uzyskasz bardziej szczegółowe informacje dotyczące badania pokrycia i wyników testów, wybierając ikonę pokrycia kodu określonego w oknie kodu. Aby zbadać te dane, wykonaj następujące czynności:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Kliknij zielony znacznik wyboru w wierszu, który odczytuje `if (String.IsNullOrWhiteSpace(s))` w `StartsWithUpper` metody. Jak pokazano na poniższej ilustracji, Live Unit Testing wskazuje, że trzy testy obejmują ten wiersz kodu i że wszystkie zostały wykonane pomyślnie.
 
    ![Pokrycie kodu dla instrukcji warunkowej "if"](media/lut-start/code-coverage-cs1.png)
@@ -227,6 +236,7 @@ Również uzyskasz bardziej szczegółowe informacje dotyczące badania pokrycia
    ![Pokrycie kodu dla instrukcji return](media/lut-start/code-coverage-cs2.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Kliknij zielony znacznik wyboru w wierszu, który odczytuje `If (String.IsNullOrWhiteSpace(s)) Then` w `StartsWithUpper` metody. Jak pokazano na poniższej ilustracji, Live Unit Testing wskazuje, że trzy testy obejmują ten wiersz kodu i że wszystkie zostały wykonane pomyślnie.
 
    ![Pokrycie kodu dla instrukcji warunkowej "If"](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +256,7 @@ W tej sekcji możesz rozszerzyć testy jednostek, aby `StartsWithLower` metody. 
 Aby rozszerzyć pokrycia kodu do `StartsWithLower` metody, wykonaj następujące czynności:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Dodaj następujący kod `TestStartsWithLower` i `TestDoesNotStartWithLower` metody służące do pliku z kodem źródłowym projektu testowego:
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -263,6 +274,7 @@ Aby rozszerzyć pokrycia kodu do `StartsWithLower` metody, wykonaj następujące
     ![Pokrycie kodu dla metody StartsWithLower](media/lut-start/lut-extended-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Dodaj następujący kod `TestStartsWithLower` i `TestDoesNotStartWithLower` metody służące do pliku z kodem źródłowym projektu testowego:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +302,7 @@ Do tej pory wszystkie nasze testy zakończyły się powodzeniem. W następnej se
 W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania, rozwiązywanie problemów i adres niepowodzeń testów. Możesz to zrobić, rozwijając pokrycia testu do `HasEmbeddedSpaces` metody.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Dodaj następującą metodę do pliku testu:
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -323,6 +336,7 @@ W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania,
 1. Wybierz **debugowania** > **Kontynuuj**, naciśnij klawisz **F5**, lub kliknij przycisk **Kontynuuj** przycisk na pasku narzędzi, aby kontynuować wykonywanie Test program. Ponieważ wystąpił nieobsługiwany wyjątek, test kończy się.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Dodaj następującą metodę do pliku testu:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +374,7 @@ W tej sekcji dowiesz się, jak skorzystać Live Unit Testing do identyfikowania,
 Zapewnia to za mało informacji dla badań wstępnych usterki. Albo `TestHasEmbeddedSpaces` (procedury testu) wprowadzone niepoprawne założeń lub `HasEmbeddedSpaces` niepoprawnie rozpoznać wszystkich osadzonych spacje. Aby zdiagnozować i rozwiązać ten problem, zacznij od `StringLibrary.HasEmbeddedSpaces` metody:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Przyjrzyj się porównanie w `HasEmbeddedSpaces` metody. Traktuje nim osadzona spacja to U + 0020. Jednak standardu Unicode obejmuje szereg innych znaków spacji. Sugeruje to, że kod biblioteki niepoprawnie jest sprawdzane pod kątem znak odstępu.
 
 1. Zamień na wywołanie w celu porównania równości <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> metody:
@@ -371,6 +386,7 @@ Zapewnia to za mało informacji dla badań wstępnych usterki. Albo `TestHasEmbe
     ![Pomyślnego testowego HasEmbeddedSpaces.](media/lut-start/test-success-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Przyjrzyj się porównanie w `HasEmbeddedSpaces` metody. Traktuje nim osadzona spacja to U + 0020. Jednak standardu Unicode obejmuje szereg innych znaków spacji. Sugeruje to, że kod biblioteki niepoprawnie jest sprawdzane pod kątem znak odstępu.
 
 1. Zamień na wywołanie w celu porównania równości <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> metody:
@@ -384,5 +400,6 @@ Zapewnia to za mało informacji dla badań wstępnych usterki. Albo `TestHasEmbe
 ---
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Live Unit Testing w programie Visual Studio](live-unit-testing.md)
 - [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)

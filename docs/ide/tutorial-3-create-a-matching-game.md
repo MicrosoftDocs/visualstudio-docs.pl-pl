@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a26f6b06c972d88ba1dfd56e8c3e4ebc1e4fed36
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6765c50e29602ef1e753bb7365233811727840f0
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943161"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853667"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Utwórz pasujący obiekt typu gier
 

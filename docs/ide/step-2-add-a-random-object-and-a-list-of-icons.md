@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e98c79edfc3269781aa97250926f4c2587fb61bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b24e6547e1e95e497088f2bde224eee033f32c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923678"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853212"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie obiektu Random i listy ikon
 W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dodawany do dwóch losowych komórek w TableLayoutPanel na formularzu. Aby to zrobić, użyj dwóch `new` instrukcji, aby utworzyć dwa obiekty. Pierwsza to <xref:System.Random> obiektu, takiego jak używany w grze quiz matematyczny. Jest używany w tym kodzie, aby losowo wybierać komórki w TableLayoutPanel. Drugi obiekt, który może być dla Ciebie nowe, jest <xref:System.Collections.Generic.List%601> obiektu, który jest używany do przechowywania losowo wybranych symboli.

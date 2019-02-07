@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 267308ba6cedf5277a986b9d953dd5774d789c9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1b282ffea92977f4d9c99adeb43e68017f95480
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981379"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853238"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio opinie o produkcie
 

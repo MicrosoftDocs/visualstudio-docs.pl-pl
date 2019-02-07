@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980365"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853784"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — zadanie
-Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.  
-  
-## <a name="task-parameters"></a>Parametry zadania  
- Poniżej opisano parametry `GenerateBootstrapper` zadania.  
-  
+Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.
+
+## <a name="task-parameters"></a>Parametry zadania
+Poniżej opisano parametry `GenerateBootstrapper` zadania.
+
 - `ApplicationFile`  
   
    Opcjonalnie `String` parametru.  
@@ -67,14 +67,14 @@ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej ws
   
    Określa produktów, które mają wbudowane w program inicjujący. Elementy przekazany do tego parametru powinna mieć następującą składnię:  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    `Include` Atrybut oznacza nazwę wstępnie wymaganego składnika, który powinien być zainstalowany. `ProductName` Metadanych elementu jest opcjonalna i będzie używany przez aparat kompilacji jako przyjaznej nazwy nie można odnaleźć pakietu. Te elementy nie są wymagane [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wprowadzania parametrów, chyba że nie `ApplicationFile` jest określony. Powinien zawierać jeden element dla każdego wymagania wstępne, które musi być zainstalowany dla swojej aplikacji.  
   
@@ -146,35 +146,35 @@ Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej ws
   
    Opcjonalnie `Boolean` parametru.  
   
-   Jeśli `true`, program inicjujący przeprowadza weryfikację XSD elementów określony wejściowy programu inicjującego. Wartość domyślna tego parametru to `false`.  
-  
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `GenerateBootstrapper` zadanie, aby zainstalować aplikację, która musi mieć [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] zainstalowany jako warunek wstępny.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+   Jeśli `true`, program inicjujący przeprowadza weryfikację XSD elementów określony wejściowy programu inicjującego. Wartość domyślna tego parametru to `false`.
+
+## <a name="remarks"></a>Uwagi
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Przykład
+W poniższym przykładzie użyto `GenerateBootstrapper` zadanie, aby zainstalować aplikację, która musi mieć [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] zainstalowany jako warunek wstępny.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Zobacz także
+[Zadania](../msbuild/msbuild-tasks.md)  
+[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

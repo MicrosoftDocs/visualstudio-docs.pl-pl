@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4624f6a4ce77aa03d3daea0781dc1cbd1028343d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043599"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853030"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nazw kontrolkom przycisków
 Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu, IDE automatycznie nadał mu **pictureBox1**. Jest tylko jedna <xref:System.Windows.Forms.CheckBox>, który nosi **checkBox1**. Wkrótce będzie pisanie kodu i ten kod będzie odnosić się do CheckBox i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza wyświetlenie **pictureBox1** lub **checkBox1** w kodzie.

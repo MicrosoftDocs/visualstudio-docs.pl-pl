@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c26af81045723e8986db4dffafb012fb850a82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37d00030407e483c2c6cb816bf9415458988922f
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997445"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853732"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 W tym kroku dodaj formanty, takie jak <xref:System.Windows.Forms.PictureBox> kontroli i <xref:System.Windows.Forms.CheckBox> formantu do formularza. Następnie dodaj <xref:System.Windows.Forms.Button> formantów do formularza.

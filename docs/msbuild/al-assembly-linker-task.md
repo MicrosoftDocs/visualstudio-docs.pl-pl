@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e00afd9c03200f39100ad885a58ccee79715b4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931755"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854047"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) zadanie
 Al — zadanie jest zawijany *AL.exe*, to narzędzie, które jest rozpowszechniana z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker służy do tworzenia zestawu z manifestem z co najmniej jeden plik, który jest modułem lub plikiem zasobów. Kompilatory języków i środowisk programistycznych może już zapewniają te funkcje, często nie jest niezbędne do korzystania z tego zadania bezpośrednio. Assembly Linker jest najbardziej użyteczna dla deweloperów, konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak oferowanych od etapu programowania w językach mieszanych. To zadanie nie łączyć modułów w pliku jednym zestawie; indywidualne moduły muszą być rozproszone i dostępne, aby Wynikowy zestaw można prawidłowo załadować. Aby uzyskać więcej informacji na temat *AL.exe*, zobacz [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -93,5 +93,6 @@ Al — zadanie jest zawijany *AL.exe*, to narzędzie, które jest rozpowszechnia
 ```  
 
 ## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Zadania](../msbuild/msbuild-tasks.md)
+* [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
+* [Zadania](../msbuild/msbuild-tasks.md)
+

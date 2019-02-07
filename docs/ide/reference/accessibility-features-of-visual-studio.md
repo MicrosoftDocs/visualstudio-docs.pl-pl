@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9a42279680f6cb0b2f617428af49114bbc993c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7011ec455ae9d723e7abfb8289f240c1fa6dd425
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937525"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853017"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 

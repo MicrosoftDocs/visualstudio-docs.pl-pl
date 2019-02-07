@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b97ad15c6064f1c27eba252173f9afdfc33eda8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009690"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854125"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
-Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołączanych dynamicznie (*.dll* plików), lub modułów kodu (*.netmodule* pliki). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).  
+Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołączanych dynamicznie (*.dll* plików), lub modułów kodu (*.netmodule* pliki). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `Csc` zadania.  
-
+## <a name="parameters"></a>Parametry
+W poniższej tabeli opisano parametry `Csc` zadania.
 
 | Parametr | Opis |
 |------------------------------| - |
@@ -81,19 +80,19 @@ Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołą
 | `Win32Manifest` | Opcjonalnie `String` parametru.<br /><br /> Określa manifest Win32 do uwzględnienia. |
 | `Win32Resource` | Opcjonalnie `String` parametru.<br /><br /> Wstawia zasób Win32 (*.res*) pliku w pliku wyjściowym. Aby uzyskać więcej informacji, zobacz [-win32res (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z `Microsoft.Build.Tasks.ManagedCompiler` klasy, która dziedziczy po elemencie <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Uwagi
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z `Microsoft.Build.Tasks.ManagedCompiler` klasy, która dziedziczy po elemencie <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Przykład  
- W poniższym przykładzie użyto `Csc` zadanie, aby skompilować plik wykonywalny przy użyciu plików źródłowych w `Compile` elementu kolekcji.  
+## <a name="example"></a>Przykład
+W poniższym przykładzie użyto `Csc` zadanie, aby skompilować plik wykonywalny przy użyciu plików źródłowych w `Compile` elementu kolekcji.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Zadania](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Zobacz także
+[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
+[Zadania](../msbuild/msbuild-tasks.md)

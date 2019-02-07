@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296310"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853641"
 ---
 # <a name="customizing-the-build-system"></a>Dostosowywanie procesu kompilacji
 
-Program MSbuild jest aparat kompilacji, opracowany przez firmę Microsoft, która umożliwia budynku głównie aplikacji .NET. Mono framework również ma własną implementację firmy Microsoft kompilacji aparatu, o nazwie **xbuild**. Jednak xbuild ma zostało zniesione na rzecz korzystanie z programu MSBuild we wszystkich systemach operacyjnych.
+Program MSBuild jest aparat kompilacji, opracowany przez firmę Microsoft, która umożliwia budynku głównie aplikacji .NET. Mono framework również ma własną implementację firmy Microsoft kompilacji aparatu, o nazwie **xbuild**. Jednak xbuild ma zostało zniesione na rzecz korzystanie z programu MSBuild we wszystkich systemach operacyjnych.
 
-**Program MSbuild** jest używany głównie dla jako system kompilacji dla projektów w programie Visual Studio dla komputerów Mac.
+**Program MSBuild** jest używany głównie dla jako system kompilacji dla projektów w programie Visual Studio dla komputerów Mac.
 
 Program MSBuild działa, korzystając z zestawu danych wejściowych, takich jak pliki źródłowe i przekształca je wyjściowych, takich jak pliki wykonywalne. Powoduje to osiągnięcie tych danych wyjściowych za pomocą narzędzia, takie jak kompilator.
 

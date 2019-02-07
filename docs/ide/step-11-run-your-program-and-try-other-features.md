@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f37018a7ccc642b06382308b366644d5580d4cc
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042897"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853277"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11. Uruchamianie programu i próbowanie innych funkcji
 Program jest gotowy i gotowa do uruchomienia. Możesz uruchomić program i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj poprawić program zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.

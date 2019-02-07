@@ -9,13 +9,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: stsu
 manager: jillfra
-monikerRange: vs-2019
-ms.openlocfilehash: 1ce2c3fbb8386cb58e096e526dc27b03d16e428e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: ef7a9874a89e8d2051e20008415824637305a34d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972563"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853368"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrowane rozwiązań w programie Visual Studio
 

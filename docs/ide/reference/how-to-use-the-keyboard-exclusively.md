@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9f82d9b19d1a256a9fb3e8fa8671025ee267ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d26507b3e26aeb90e26ad7d20774f7a659f58c90
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981496"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853891"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Instrukcje: Używanie wyłącznie klawiatury
 

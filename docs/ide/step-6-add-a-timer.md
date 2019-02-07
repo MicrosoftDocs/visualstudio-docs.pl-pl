@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5b1a83c377b58bd42f03e3898243b3e956e31b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ab23e935aa9cc143dadae67eaf95d1309fcb3710
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016368"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854034"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6. Dodaj czasomierz
 Następnie dodaj <xref:System.Windows.Forms.Timer> formantu do gry w dopasowywanie. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, określane jako *znaczników*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.

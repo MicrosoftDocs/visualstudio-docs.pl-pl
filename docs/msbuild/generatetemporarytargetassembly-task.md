@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3537a3b1a8183acf4a8470147ed747c39a855d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933337"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853875"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Generatetemporarytargetassembly — zadanie
-<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadanie generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.  
-  
-## <a name="task-parameters"></a>Parametry zadania  
-  
+<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadanie generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.
+
+## <a name="task-parameters"></a>Parametry zadania
+
 | Parametr | Opis |
 |--------------------------| - |
 | `AssemblyName` | Wymagane **ciąg** parametru.<br /><br /> Określa krótką nazwę zestawu, który jest generowany dla projektu i jest również nazwą zestawu docelowego, który tymczasowo jest generowany. Na przykład, jeśli projekt wygeneruje [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] plik wykonywalny, którego nazwa jest *WinExeAssembly.exe*, **AssemblyName** parametr ma wartość **WinExeAssembly**. |
@@ -41,39 +41,39 @@ ms.locfileid: "54933337"
 | `MSBuildBinPath` | Wymagane **ciąg** parametru.<br /><br /> Określa lokalizację *MSBuild.exe*, co jest wymagane do kompilowania zestawu docelowego tymczasowej. |
 | `ReferencePath` | Opcjonalnie **[] ITaskItem** parametru.<br /><br /> Określa listę zestawów, ścieżkę i nazwę pliku, który odwołuje się typy, które są kompilowane do zestawu docelowego tymczasowej. |
 | `ReferencePathTypeName` | Wymagane **ciąg** parametru.<br /><br /> Określa parametr, który jest używany przez element docelowy kompilacji (**CompileTargetName**) parametr, który określa listę odwołań do zestawu (**ReferencePath**). Jest odpowiednią wartość **ReferencePath**. |
-  
-## <a name="remarks"></a>Uwagi  
- Pierwszym przebiegu kompilacji znaczników, który jest wykonywany przez [markupcompilepass1 —](../msbuild/markupcompilepass1-task.md), kompiluje [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki na format binarny. W związku z tym, kompilator musi listę przywoływanych zestawów zawierających typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików. Jednak jeśli [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plik używa typ, który jest zdefiniowany w tym samym projekcie, odpowiedniego zestawu dla tego projektu nie jest tworzony, dopóki projekt jest kompilowany. W związku z tym odwołania do zestawu, nie można podać podczas pierwszego przejścia znaczników w kompilacji.  
-  
- Zamiast tego **markupcompilepass1 —** odracza konwersji [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] przekazać pliki, które zawierają odwołania do typów w tym samym projekcie do drugiego kompilacji znaczników, które jest wykonywane przez [markupcompilepass2 —](../msbuild/markupcompilepass2-task.md). Przed **markupcompilepass2 —** jest wykonywane, tymczasowy zestawu jest generowany. Ten zestaw zawiera typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, których kompilacji znaczników — dostęp próbny został wstrzymany. Odwołanie do zestawu wygenerowany został dostarczony do **markupcompilepass2 —** podczas wykonywania umożliwiające odroczonego kompilacji [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, które ma zostać przekonwertowany na format binarny.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład generuje zestaw tymczasowego, ponieważ *Page1.xaml* zawiera odwołanie do typu, który znajduje się w tym samym projekcie.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask  
-    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="GenerateTemporaryTargetAssemblyTask">  
-    <GenerateTemporaryTargetAssembly  
-      AssemblyName="WPFMSBuildSample"  
-      CompileTargetName="CoreCompile"  
-      CompileTypeName="Compile"  
-      CurrentProject="FullBuild.proj"  
-      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"  
-      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"  
-      IntermediateOutputPath=".\obj\debug\"  
-      MSBuildBinPath="$(MSBuildBinPath)"  
-      ReferencePathTypeName="ReferencePath"/>  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)   
- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+
+## <a name="remarks"></a>Uwagi
+Pierwszym przebiegu kompilacji znaczników, który jest wykonywany przez [markupcompilepass1 —](../msbuild/markupcompilepass1-task.md), kompiluje [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki na format binarny. W związku z tym, kompilator musi listę przywoływanych zestawów zawierających typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików. Jednak jeśli [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plik używa typ, który jest zdefiniowany w tym samym projekcie, odpowiedniego zestawu dla tego projektu nie jest tworzony, dopóki projekt jest kompilowany. W związku z tym odwołania do zestawu, nie można podać podczas pierwszego przejścia znaczników w kompilacji.
+
+Zamiast tego **markupcompilepass1 —** odracza konwersji [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] przekazać pliki, które zawierają odwołania do typów w tym samym projekcie do drugiego kompilacji znaczników, które jest wykonywane przez [markupcompilepass2 —](../msbuild/markupcompilepass2-task.md). Przed **markupcompilepass2 —** jest wykonywane, tymczasowy zestawu jest generowany. Ten zestaw zawiera typy, które są używane przez [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, których kompilacji znaczników — dostęp próbny został wstrzymany. Odwołanie do zestawu wygenerowany został dostarczony do **markupcompilepass2 —** podczas wykonywania umożliwiające odroczonego kompilacji [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki, które ma zostać przekonwertowany na format binarny.
+
+## <a name="example"></a>Przykład
+Poniższy przykład generuje zestaw tymczasowego, ponieważ *Page1.xaml* zawiera odwołanie do typu, który znajduje się w tym samym projekcie.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="GenerateTemporaryTargetAssemblyTask">
+    <GenerateTemporaryTargetAssembly
+      AssemblyName="WPFMSBuildSample"
+      CompileTargetName="CoreCompile"
+      CompileTypeName="Compile"
+      CurrentProject="FullBuild.proj"
+      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"
+      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"
+      IntermediateOutputPath=".\obj\debug\"
+      MSBuildBinPath="$(MSBuildBinPath)"
+      ReferencePathTypeName="ReferencePath"/>
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Zobacz także
+[Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
+[Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)  
+[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
+[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
+[Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+[Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

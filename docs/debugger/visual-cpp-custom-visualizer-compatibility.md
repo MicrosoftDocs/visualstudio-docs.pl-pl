@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 43ac7f0f5506725103d185e575514e821674eb27
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 3c90c66e338330d77af29564c7586e68b8ee35b6
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232074"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55852611"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Zgodność niestandardowego wizualizatora Visual C/C++
 

@@ -9,14 +9,15 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
+ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 9b73d598ef2d498d4c2c9c1296ef8cd3de760134
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768327"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853930"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -67,3 +68,7 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w usłu
       ![Utwórz wiadomość usługi App Service](media/publish-create-app-service-message.png)
 
     Po kliknięciu przycisku **OK** wiadomości jest odrzucane i można kontynuować pracę nad projektem. Możesz obserwować stan procesu publikowania za pomocą paska stanu w górnej części IDE. Po pomyślnym opublikowaniu aplikacji sieci web, witryny jest otwierany przy użyciu domyślnej przeglądarki.
+
+## <a name="related-video"></a>Pokrewne wideo
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

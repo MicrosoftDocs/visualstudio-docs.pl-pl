@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d8441620f9df135b2fbee51e2dfbbfc6e2f074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21d163945d15d701d766a3b94456021349bd613b
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943263"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853839"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utwórz quiz matematyczny
 

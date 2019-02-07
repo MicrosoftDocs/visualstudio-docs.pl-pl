@@ -7,13 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 7dd58249ac3e10392ac1009e5ffb8bb0a62dc6ff
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: d55a5b5473e49484e95261e239286e8c8f3cad3d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742383"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853789"
 ---
 # <a name="quickstart-visual-studio-tools-for-docker"></a>Szybki start: Visual Studio Tools for Docker
 

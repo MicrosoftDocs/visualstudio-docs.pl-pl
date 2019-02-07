@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b86b9a81426b81e7fdf4237a70640c6385dd2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de2f6df9f44f79280addf2f83574857a0e2980d8
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980716"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853108"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.

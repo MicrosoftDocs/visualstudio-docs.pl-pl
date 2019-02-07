@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a4911281776b0ff6a95ea0b6496b5d413bc654e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b5bab682f11e112dac29cb192dad81adef0364b8
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960480"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853589"
 ---
 # <a name="overview-suggest-a-feature"></a>Przegląd: Zaproponuj funkcję
 

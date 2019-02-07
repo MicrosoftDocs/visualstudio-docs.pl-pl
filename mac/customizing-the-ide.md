@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.custom: video
+ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349614"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853394"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie IDE
 
@@ -35,7 +36,7 @@ Program Visual Studio for Mac jest zlokalizowana w następujących językach 14,
 * niemiecki
 * Angielski
 * Włoski
-* japoński
+* Japoński
 * koreański
 * polski
 * Portugalski (Brazylia)
@@ -126,6 +127,10 @@ Edytor karty można przeciągnąć poza obszar dokumentu, aby utworzyć przestaw
 ![Dwie kolumny obok dodatkowe karty](media/customizing-the-ide-sbs2.png)
 
 Aby powrócić do jednego, Otwórz Edytor, wybierz **Widok > kolumny edytora > 1 kolumnowego**.
+
+## <a name="related-video"></a>Pokrewne wideo
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>Zobacz także
 

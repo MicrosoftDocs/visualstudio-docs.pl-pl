@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0095ec2788cf0ce0a906ceea4300d7c23b2325
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a2f96b1ff3df25244d203cba4872eb6e57fd141
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941249"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853043"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2. Uruchom program
 Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.
