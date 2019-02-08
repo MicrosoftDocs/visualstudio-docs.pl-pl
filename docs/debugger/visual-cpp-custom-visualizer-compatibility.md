@@ -1,6 +1,7 @@
 ---
 title: Zgodność niestandardowego wizualizatora Visual C/C++
 ms.date: 01/28/2019
+ms.prod: visual-studio-dev16
 ms.topic: reference
 dev_langs:
 - C++
@@ -16,12 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3c90c66e338330d77af29564c7586e68b8ee35b6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a51f2d87b432bf6f4a3925b55622273b56cf5c32
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852611"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920967"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Zgodność niestandardowego wizualizatora Visual C/C++
 

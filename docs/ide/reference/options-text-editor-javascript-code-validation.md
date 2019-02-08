@@ -1,7 +1,6 @@
 ---
 title: Opcje, Edytor tekstu, JavaScript, kod sprawdzania poprawności
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece72f46500b67325250a6b13d4c79359e0873ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068900"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925933"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>Opcje, Edytor tekstu, JavaScript, kod sprawdzania poprawności
 Użyj **sprawdzanie poprawności kodu** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które mają wpływ na sposób obsługi błędów języka JavaScript. Możesz uzyskać dostęp **sprawdzanie poprawności kodu** strony, wybierając **narzędzia** > **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**  >  **JavaScript** > **kodu sprawdzania poprawności.**

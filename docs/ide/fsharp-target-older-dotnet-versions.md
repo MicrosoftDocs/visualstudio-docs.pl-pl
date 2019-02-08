@@ -2,19 +2,18 @@
 title: Poprzednie wersje programu .NET Framework dla docelowychF#
 description: Dowiedz się więcej o przeznaczone dla starszej wersji programu .NET Framework, korzystając z F# w programie Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88a689461fd5417800c6243950f296fde18fb3a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970945"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942079"
 ---
 # <a name="target-older-versions-of-net-f"></a>Docelowa starszej wersji platformy .NET (F#)
 

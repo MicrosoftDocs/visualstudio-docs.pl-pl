@@ -1,19 +1,18 @@
 ---
 title: IntelliSense dla C++
 ms.date: 10/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203e36c1ea7863b18495284174690d3c985b2900
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959764"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942274"
 ---
 # <a name="visual-c-intellisense-features"></a>Funkcje programu Visual C++ IntelliSense
 
@@ -41,7 +40,7 @@ Aby uzyskać listę ikon i ich znaczenie, zobacz [ikony w widoku klas i przeglą
 
 Przy pierwszym wywołaniu listy członków pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli użytkownik naciśnie klawisz **Ctrl**+**"j"** po tym pokazuje wszystkie elementy członkowskie, niezależnie od tego, w ułatwienia dostępu. Jeśli wywołujesz ją raz trzeci, wyświetlany jest jeszcze większą listę elementów programu. Można wyłączyć listy członków w **opcje** dialogowego **edytora tekstów** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
 
-![Program Visual C&#43; &#43; listę elementów członkowskich](../ide/media/vs2015_cpp_list_members.png)
+![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Parametr pomocy
 
@@ -53,13 +52,13 @@ Po wpisaniu nawiasu otwierającego wywołania funkcji lub nawiasu ostrego w dekl
 
 Po umieszczeniu kursora myszy nad zmienną wbudowane, który zawiera informacje o typie i nagłówek, w którym zdefiniowano typ zostanie wyświetlone okno małe. Umieść kursor nad wywołanie funkcji, aby zobaczyć podpisu funkcji. Można wyłączyć szybkie informacje w **opcje** dialogowego **edytora tekstów** > **C/C++** > **zaawansowane**  >  **Auto Quick Info**.
 
-![Program Visual C&#43; &#43; skrócone informacje](../ide/media/vs2015_cpp_quickinfo.png)
+![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
 ## <a name="error-squiggles"></a>Zygzaki sygnalizujące błędy
 
 Faliste linie w elemencie programu, (zmienna, słowo kluczowe, nawias klamrowy, wpisz nazwę i tak dalej) Wywołaj zwrócić uwagę na komunikat o błędzie lub potencjalnych błędów w kodzie. Zielony fala pojawi się podczas pisania deklaracją do przodu, aby przypomnieć, że nadal należy napisać implementację. Purpurowa wężyk w projekcie udostępnionym jest wyświetlany błąd w kodzie, który nie jest obecnie aktywny, na przykład podczas pracy w kontekście Windows, ale wprowadzenie tekstu, która byłaby błędu w kontekście systemu Android. Czerwona fala wskazuje błąd kompilatora lub ostrzeżenie w aktywnej kod, który należy do czynienia z.
 
-![Program Visual C&#43; &#43; zygzaki sygnalizujące błędy](../ide/media/vs2015_cpp_error_quiggles.png)
+![Visual C&#43;&#43; error squiggles](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Czcionki i kolorowanie kodu
 

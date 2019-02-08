@@ -1,7 +1,6 @@
 ---
 title: Polecenia nawigacji kodu
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a2bb4bf9467000a792a728259d37f40e534ad3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039140"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927610"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 

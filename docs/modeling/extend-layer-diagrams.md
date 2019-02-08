@@ -1,7 +1,6 @@
 ---
 title: Rozszerzanie diagramów zależności
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04aa7c1948cd07bf49ab754619442e5310b023f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8888dfeef0a519aed66fc3c66be8c5bf6d215b02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069137"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955222"
 ---
 # <a name="extend-dependency-diagrams"></a>Rozszerzanie diagramów zależności
 Można napisać kod do tworzenia i aktualizowania diagramów zależności i do sprawdzania poprawności strukturę kodu programu względem diagramów zależności w programie Visual Studio. Możesz dodać polecenia, które są wyświetlane w menu skrótów (kontekstu), diagramy Dostosowywanie gestów przeciągania i upuszczania oraz dostęp do warstwy modelu z poziomu szablonów tekstu. Można spakować te rozszerzenia w Visual Studio Integration rozszerzenie (VSIX) i rozdystrybuować je innym użytkownikom programu Visual Studio.

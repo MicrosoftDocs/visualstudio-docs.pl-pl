@@ -1,7 +1,6 @@
 ---
 title: Krok 6. Dodawanie problemu odejmowania
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8921a3ad10e0f785110cfb2c0ebb8de66b19e6cc
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853147"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917392"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
 W szóstej części tego samouczka dodasz problem odejmowania i Dowiedz się, jak wykonywać następujące zadania:

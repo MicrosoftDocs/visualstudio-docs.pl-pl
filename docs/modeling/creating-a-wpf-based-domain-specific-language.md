@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 92c7244a69f00e42beae7291b505e18919443608
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0492ec90bd9ef1ca576aad9e8b708783a3ef8ad9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015046"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915711"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF
 

@@ -1,19 +1,18 @@
 ---
 title: Pokrycie kodu — wyszukiwanie błędów
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3bcefaa9c316b0308eb68ccf82231c11926a7e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967803"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935605"
 ---
 # <a name="troubleshoot-code-coverage"></a>Rozwiązywanie problemów z pokryciem kodu
 

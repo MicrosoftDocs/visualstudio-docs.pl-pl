@@ -8,13 +8,12 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 758e07ba6fae2d06d72f9a2df98a2e78b6e2284a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917929"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932563"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: Zastosuj rozkład do opóźnienia dla użytkownika w tempie model testu mieszanego do
 

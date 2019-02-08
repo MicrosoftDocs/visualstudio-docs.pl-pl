@@ -1,7 +1,6 @@
 ---
 title: Numery wersji dla głównych i zlokalizowanych zestawów satelickich
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - satellite assemblies, version numbers
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6776df2bd0edf6fc639604e6b00502dbf83f657
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ca6724a78ca6b01a5d893b06e01674a35abc7f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925555"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940675"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numery wersji dla głównych i zlokalizowanych zestawów satelickich
 <xref:System.Resources.SatelliteContractVersionAttribute> Klasy obsługuje przechowywanie wersji głównej zestawu, który używa zlokalizowane zasoby przy użyciu usługi Resource Manager. Stosowanie <xref:System.Resources.SatelliteContractVersionAttribute> dla aplikacji zestawu głównego pozwala na aktualizowanie i ponowne wdrażanie zestawu bez aktualizowania swoich zestawów satelickich. Na przykład, można użyć <xref:System.Resources.SatelliteContractVersionAttribute> klasy dodatku service pack, który nie wprowadzają nowych zasobów bez ponownego kompilowania lub wdrażania zestawów satelickich. Zlokalizowanych zasobów była dostępna, musi być zgodna wersja kontraktu satelickie zestawu głównego <xref:System.Reflection.AssemblyVersionAttribute> klasy zestawów satelickich. Określ numer wersji dokładnie w <xref:System.Resources.SatelliteContractVersionAttribute>; znaki symboli wieloznacznych, takich jak "*" nie są dozwolone. Aby uzyskać więcej informacji, zobacz [pobierania zasobów](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).

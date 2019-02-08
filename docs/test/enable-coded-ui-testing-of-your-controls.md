@@ -1,19 +1,18 @@
 ---
 title: Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b06b92c1b9b58f48f10ec052ee688c1235388211
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999928"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943392"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek
 

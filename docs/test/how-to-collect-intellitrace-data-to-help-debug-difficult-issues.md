@@ -11,13 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 33dd1d131d85a066078d9e145ccbbc1fed6e98b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932353"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926557"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Instrukcje: Zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 

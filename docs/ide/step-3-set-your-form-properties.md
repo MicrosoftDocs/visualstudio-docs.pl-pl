@@ -1,7 +1,6 @@
 ---
 title: Krok 3. Ustawianie właściwości formularza
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de2f6df9f44f79280addf2f83574857a0e2980d8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853108"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931458"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 Następnie użyj **właściwości** okna, aby zmienić wygląd formularza.
