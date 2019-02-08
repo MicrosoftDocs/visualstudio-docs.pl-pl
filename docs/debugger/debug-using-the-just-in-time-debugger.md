@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9a85afd2024cb2ec723df053ebeca89ff52822
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020626"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921435"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debugowanie w programie Visual Studio za pomocą debugera just in Time
 
@@ -193,6 +192,7 @@ Można napotkać następujące komunikaty o błędach podczas Just-In-Time debug
     Aby rozwiązać ten problem, należy użyć Instalatora programu Visual Studio ponownie zainstalować lub naprawić instalację programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Opcje debugowania Just-In-Time okno dialogowe](../debugger/just-in-time-debugging-options-dialog-box.md)

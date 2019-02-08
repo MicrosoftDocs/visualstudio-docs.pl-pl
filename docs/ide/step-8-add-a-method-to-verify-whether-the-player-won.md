@@ -1,7 +1,6 @@
 ---
 title: Krok 8. Dodaj metodę, aby sprawdzić, czy gracz wygrał
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53cef833cfcd13a659e987ed28c32b7b6bb069ca
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b6bd64908c902c83023bc48bc72ab6443b2a7df7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853180"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934461"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodaj metodę, aby sprawdzić, czy gracz wygrał
 Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna się kończyć kiedy gracz wygrywa, więc trzeba dodać `CheckForWinner()` metodę, aby sprawdzić, czy gracz wygrał.

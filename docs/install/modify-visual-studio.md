@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Dowiedz się, jak modyfikowanie programu Visual Studio krok po kroku.
 ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99609efbdb3776f6ec55da9b8ec2f1acfd11c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930072"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957302"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio 2017, dodając lub usuwając obciążenia i składniki
 

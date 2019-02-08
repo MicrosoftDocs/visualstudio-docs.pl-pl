@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70ec77254ec4d76e978b685441bb8d6e3df1b802
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921225"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924399"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Instrukcje: Użycie transakcji do aktualizacji modelu
 Transakcje upewnij się, że zmiany wprowadzone do magazynu są traktowane jako grupa. Zmiany, które są grupowane może być przekazana lub wycofana jako pojedyncza jednostka.

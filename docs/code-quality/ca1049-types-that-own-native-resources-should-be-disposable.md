@@ -1,7 +1,6 @@
 ---
 title: 'CA1049: Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1049
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bd88e00ed8663be974bbc6ba78d5ce3ae45662
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960272"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922618"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Typy, do których należą natywne zasoby, powinny być możliwe do likwidacji
 

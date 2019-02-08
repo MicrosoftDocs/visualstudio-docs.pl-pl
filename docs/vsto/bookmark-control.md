@@ -1,7 +1,6 @@
 ---
 title: 'Bookmark, formant:'
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
@@ -18,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914230"
 ---
 # <a name="bookmark-control"></a>Bookmark, formant:
   <xref:Microsoft.Office.Tools.Word.Bookmark> Formant jest zakładki, która ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Zakładka może służyć jako symbol zastępczy, aby oznaczyć element lub lokalizacji w dokumencie programu Microsoft Office Word. <xref:Microsoft.Office.Tools.Word.Bookmark> Kontroli jest kombinacją <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu i <xref:Microsoft.Office.Interop.Word.Range> obiektu.

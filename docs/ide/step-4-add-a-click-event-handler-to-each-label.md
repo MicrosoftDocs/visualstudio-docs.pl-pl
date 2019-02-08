@@ -1,7 +1,6 @@
 ---
 title: Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e500827debaf9943a22c14fe6c67b65ebfd61d61
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853573"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954575"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 

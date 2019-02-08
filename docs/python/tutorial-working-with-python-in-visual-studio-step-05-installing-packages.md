@@ -3,7 +3,6 @@ title: Pakiety instalowania języka Python w kroku 5 samouczka dla programu Visu
 titleSuffix: ''
 description: Krok 5 przewodnika podstawowe możliwości języka Python w programie Visual Studio, demonstrując funkcje zarządzania pakietami w środowisku Python za pomocą programu Visual Studio.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7df99346d30c4255aaf9c08648f185b732c3ae32
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231405"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934760"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5. Instalowanie pakietów w środowisku Python
 

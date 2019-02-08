@@ -1,7 +1,6 @@
 ---
 title: 'Samouczek 2: Utwórz quiz matematyczny'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d163945d15d701d766a3b94456021349bd613b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853839"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956938"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utwórz quiz matematyczny
 

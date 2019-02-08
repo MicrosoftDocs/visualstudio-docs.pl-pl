@@ -2,18 +2,17 @@
 title: Obszary robocze i usług językowych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ecd995446969c271694c554ae21e03c1afc79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850271"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929781"
 ---
 # <a name="workspaces-and-language-services"></a>Obszary robocze i usług językowych
 
@@ -25,7 +24,7 @@ W [obszaru roboczego](workspaces.md), usługi w języka są inicjowane przez <xr
 
 Po otwarciu dokumentu w edytorze programu Visual Studio analizuje tylko język dostawców usług, które wymagają typów kontekstu plików, dla których można znaleźć pasującego dostwcy kontekstu pliku. Następnie przekazuje kontekstów pliku z dostawców pasujących do dostawcy usług w wybranym języku za pośrednictwem `ILanguageServiceProvider.InitializeAsync`. Dostawcy usług języka działanie z pliku danych kontekstu jest szczegółowo opisuje implementacja dostawcy usługi w języka, że oczekiwanego komfortu to bardziej rozbudowane usługa języka w tym otworzyć dokument.
 
-## <a name="using-ilanguageserviceprovider"></a>Za pomocą ILanguageServiceProvider
+## <a name="using-ilanguageserviceprovider"></a>Using ILanguageServiceProvider
 
 Usługa językowa zostanie powiadomiony, gdy kontekstu pliku jest tworzona przy użyciu `ContextType` odpowiada jednej z `SupportedContextTypes` wartości serwera języka export — atrybut.
 
@@ -61,4 +60,4 @@ Aby zapewnić obsługę usługi językowej, rozszerzenia będą potrzebne:
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Obszar roboczy kompilacji](workspace-build.md) — funkcja otwierania folderu obsługuje tworzenie systemów, takich jak MSBuild i pliki reguł programu make. 
+* [Obszar roboczy kompilacji](workspace-build.md) — funkcja otwierania folderu obsługuje tworzenie systemów, takich jak MSBuild i pliki reguł programu make.

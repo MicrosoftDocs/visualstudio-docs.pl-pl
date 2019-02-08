@@ -2,7 +2,6 @@
 title: Definiowanie niestandardowych poleceń menu dla projektów języka Python
 description: Edycji projektu i plików obiektów docelowych można dodać niestandardowe polecenia do menu kontekstowego projektu języka Python w programie Visual Studio, aby wywołać programów wykonywalnych, skryptów, moduły, fragmenty kodu i narzędzia pip.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5ef751610510e6b167d2aa7975196d17cb1b72b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965565"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943093"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definiowanie niestandardowych poleceń dla projektów języka Python
 
@@ -134,7 +133,7 @@ Aby odwołać się do właściwości projektu lub zmiennych środowiskowych w wa
 
 | Atrybut | Wymagane | Opis |
 | --- | --- | --- |
-| Nazwa | Tak | Identyfikator polecenia w ramach projektu programu Visual Studio. Ta nazwa musi zostać dodany do `<PythonCommands>` grupy właściwości dla polecenia ma być wyświetlana w podmenu języka Python. |
+| Name | Tak | Identyfikator polecenia w ramach projektu programu Visual Studio. Ta nazwa musi zostać dodany do `<PythonCommands>` grupy właściwości dla polecenia ma być wyświetlana w podmenu języka Python. |
 | Etykieta | Tak | Nazwa wyświetlana interfejsu użytkownika jest wyświetlana w podmenu języka Python. |
 | Zwraca | Tak | Musi zawierać `@(Commands)`, który identyfikuje element docelowy jako polecenie. |
 

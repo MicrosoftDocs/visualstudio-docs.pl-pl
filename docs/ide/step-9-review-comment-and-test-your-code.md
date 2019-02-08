@@ -1,7 +1,6 @@
 ---
 title: Krok 9. Przejrzyj, komentowanie i testowanie kodu
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c8808b8de7bd42ea5dab1c9e739e98ce63e6c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934318"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzyj, komentowanie i testowanie kodu
 Następnie dodaj komentarz do kodu. Należy zauważyć, że nie zmienia sposób, w jaki program zachowuje się jest komentarz. To ułatwia komuś, kto czyta swój kod, aby zrozumieć, jak działa. Dodawanie komentarzy do kodu to dobry sposób na. W języku Visual C# dwie kreski ułamkowe (/ /) oznaczają wiersz jako komentarz. W języku Visual Basic pojedynczy cudzysłów (') służy do oznaczania wiersza jako komentarz. Po dodaniu komentarza, przetestuj swój program. Jest dobrą praktyką, aby uruchomić i przetestować kod często podczas pracy nad swoimi projektami, aby można było wyłapać i rozwiązać wszelkie problemy wcześnie, zanim kod stanie się bardziej skomplikowane. Jest to nazywane *iteracyjne testowanie*.

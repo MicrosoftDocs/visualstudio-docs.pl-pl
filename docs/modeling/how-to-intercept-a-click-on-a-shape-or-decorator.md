@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fa5a7b1de4eb656147033e8d06655e3e726fc898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eeb3a96889d96911f43e7c8c271cea12951f9cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932262"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916157"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury pokazują, jak przechwytywanie kliknięć w kształcie lub elemencie decorator ikonę. Można przechwycić kliknięć, kliknie dwukrotnie, przeciągnie, oraz innych gesty i wprowadzić element reagować.

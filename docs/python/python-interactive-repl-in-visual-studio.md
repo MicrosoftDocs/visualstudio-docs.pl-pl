@@ -2,7 +2,6 @@
 title: Okno interaktywne języka Python (REPL)
 description: Okno interaktywne (REPL) służący do szybkiego opracowywania kodu języka Python w programie Visual Studio.
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc6d9896cc8d6015606d5e5fc3c21d2547aae233
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992389"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912849"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 

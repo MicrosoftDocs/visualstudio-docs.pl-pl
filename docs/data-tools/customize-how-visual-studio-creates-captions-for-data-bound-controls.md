@@ -11,15 +11,14 @@ ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 838e35c0be5ed9cc0e8e7cb34e118b1f57da4689
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939843"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 

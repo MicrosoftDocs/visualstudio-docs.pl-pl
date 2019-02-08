@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296479"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910990"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -22,7 +23,7 @@ ms.locfileid: "51296479"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Tworzenie aplikacji ASP.NET Core w programie Visual Studio dla komputerów Mac
 
-Otwórz w programie Visual Studio dla komputerów Mac. Na stronie powitalnej zaznacz **nowy projekt...**
+Open Visual Studio for Mac. Na stronie powitalnej zaznacz **nowy projekt...**
 
 ![Okno dialogowe nowego projektu](media/asp-net-core-image1.png)
 
@@ -35,13 +36,13 @@ Istnieje wiele projektów, które udostępnia wstępnie utworzonego szablonu, ab
 - **.NET core > Interfejs API sieci Web platformy ASP.NET Core**
 - **Dla wielu platform > aplikacji > połączonych aplikacji**
 
-![Opcje projektu programu ASP.NET](media/asp-net-core-image11.png)
+![ASP.NET Project Options](media/asp-net-core-image11.png)
 
 Wybierz **pusta aplikacja sieci Web platformy ASP.NET Core** i naciśnij klawisz **dalej**. Należy nadać projektowi nazwę i naciśnij klawisz **Utwórz**. Spowoduje to utworzenie nowej aplikacji platformy ASP.NET Core, która powinna wyglądać podobnie do poniższej ilustracji:
 
 ![Nowy widok pusty projekt programu ASP.NET Core](media/asp-net-core-image4.png)
 
-Pusta aplikacja sieci Web platformy ASP.NET Core tworzy aplikację sieci web z dwoma plikami domyślne: **Program.cs** i **Startup.cs**, które zostały wyjaśnione poniżej. Tworzy również folder Dependencies, która zawiera zależności pakietów NuGet projektu, takich jak ASP.NET Core, w ramach platformy .NET Core i docelowych elementów MSBuild, które są kompilowane w projekcie:
+Pusta aplikacja sieci Web platformy ASP.NET Core tworzy aplikację sieci web z dwóch domyślnych plików: **Plik program.cs** i **Startup.cs**, które zostały wyjaśnione poniżej. Tworzy również folder Dependencies, która zawiera zależności pakietów NuGet projektu, takich jak ASP.NET Core, w ramach platformy .NET Core i docelowych elementów MSBuild, które są kompilowane w projekcie:
 
 ![Konsola rozwiązania wyświetlanie zależności](media/asp-net-core-image12.png)
 
@@ -65,13 +66,13 @@ public static void Main(string[] args)
 Aplikacji ASP.NET Core tworzy serwer sieci web w jego głównej metody, konfigurowania i uruchamiania hosta za pośrednictwem wystąpienia [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ten konstruktor zapewnia metody do Zezwalaj na hoście należy skonfigurować. W szablonie aplikacji są używane następujące konfiguracje:
 
 * `UseKestrel`: Określa, że serwer Kestrel będzie używany przez aplikację
-* `UseContentRoot(Directory.GetCurrentDirectory())`: Folder główny projektu sieci web podczas używa jako zawartość katalogu głównego aplikacji Aplikacja została uruchomiona z tego folderu
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Używa folder główny projektu sieci web jako główny zawartości aplikacji, gdy aplikacja została uruchomiona z tego folderu
 * `.UseIISIntegration()`: Określa, czy aplikacja powinna współdziałać z usług IIS. Usługi IIS za pomocą platformy ASP.NET Core zarówno `UseKestrel` i `UseIISIntegration` muszą być określone.
 * `.UseStartup<Startup>()`: Określa klasę uruchamiania.
 
   Kompilowanie i uruchamianie metody tworzenia IWebHost, który będzie hostować aplikację i uruchom ją nasłuchuje przychodzących żądań HTTP.
 
-### <a name="startupcs"></a>Startup.CS
+### <a name="startupcs"></a>Startup.cs
 
 Klasa początkowa dla aplikacji jest określony w `UseStartup()` metody `WebHostBuilder`. Jest w tej klasie określą żądania obsługi potoku i konfigurowania usług.
 
@@ -130,9 +131,9 @@ Otwórz wybraną przeglądarkę i wprowadź `http://localhost:5000/`, zastępuj�
 
 Aplikacje platformy ASP.NET Core Użyj wzorca projektowego Model-View-Controller (MVC), aby dostarczyć logiczne restrykcyjne rozdzielenie obowiązków dla poszczególnych części aplikacji. MVC składa się z następujących czynności:
 
-- **Model**: klasa, która odzwierciedla dane aplikacji.
+- **Model**: Klasa, która odzwierciedla dane aplikacji.
 - **Widok**: Wyświetla interfejs użytkownika aplikacji (jest to często danych modelu).
-- **Kontroler**: klasa, która obsługuje żądania przeglądarki reaguje na dane wejściowe użytkownika i interakcji.
+- **Kontroler**: Klasa, która obsługuje żądania przeglądarki reaguje na dane wejściowe użytkownika i interakcji.
 
 Aby uzyskać więcej informacji na temat korzystania z platformy MVC dotyczą [omówienie platformy ASP.NET Core MVC](/aspnet/core/mvc/overview) przewodnik.
 
@@ -236,3 +237,7 @@ Więcej informacji na temat następnych kroków w tym miejscu można znaleźć w
 - [Platforma ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) docs.
 - [Tworzenie usług zaplecza dla natywnych aplikacji mobilnych](/aspnet/core/mobile/native-mobile-backend), który pokazuje, jak utworzyć usługę REST, za pomocą platformy ASP.NET Core dla aplikacji platformy Xamarin.Forms.
 - [Praktyczne laboratorium platformy ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+
+## <a name="related-video"></a>Pokrewne wideo
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

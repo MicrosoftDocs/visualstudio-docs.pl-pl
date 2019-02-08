@@ -1,7 +1,6 @@
 ---
 title: Ułatwienia dostępu w Podglądzie pomocy
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility features [Help Viewer]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7aca674968251418242b57625fb9e0b8b3561e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940807"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913704"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkcje ułatwień dostępu w Podglądzie pomocy
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Ten temat zawiera informacje dotyczące funkcji, produktów i usług, które tworzą podglądu pomocy firmy Microsoft dostępne dla osób z wadami szeroką gamę możliwości.

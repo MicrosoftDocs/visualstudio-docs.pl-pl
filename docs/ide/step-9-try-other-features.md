@@ -1,7 +1,6 @@
 ---
 title: Krok 9. Spróbuj innych funkcji
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b964c15dd132659b96d407e4d1ef04e5fa3ee319
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d2d32a0d2e208b5f8bfd7869c8dfa92f063f1db5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853121"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925946"
 ---
 # <a name="step-9-try-other-features"></a>Krok 9. Spróbuj innych funkcji
 Aby dowiedzieć się więcej, spróbuj zmienić ikony i kolory, dodać czasomierz gry i dźwięki. Aby gra była bardziej wymagająca, spróbuj zwiększyć planszę i dostosować czasomierz.

@@ -4,19 +4,18 @@ description: Przegląd Nawigacja, analizy kodu jednostki testowania i inne funkc
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582387ee410b8500fd8737130d5325e550824b9d
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768352"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920603"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 

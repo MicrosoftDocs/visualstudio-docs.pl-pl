@@ -1,7 +1,6 @@
 ---
 title: 'Instrukcje: Używanie projektanta schematu XML z literałami XML'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3883b4515ab304e2a247414f63c79db6314a654c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922081"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927285"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
 

@@ -1,7 +1,6 @@
 ---
 title: Krok 1. Utwórz projekt Windows Forms aplikacji
 ms.date: 01/26/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2011749e0a2cf67edd6645b4b8f12b3b89ad6783
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853537"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956077"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utwórz projekt Windows Forms aplikacji
 

@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 75c1e4c2ba3ca50ba49cd00a404747bbd7041500
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941015"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937350"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. Program Visual Studio muszą być zainstalowane na komputerze docelowym.

@@ -1,7 +1,6 @@
 ---
 title: Dostosowywanie zadań kompilacji debugowania, za pomocą pliku launch.vs.json tasks.vs.json
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ec32fa822b087ba98743b78231039eff71de7ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034041"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919056"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 

@@ -1,7 +1,6 @@
 ---
 title: Kodowanie i wiersz znaków podziału
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e562b611e1efa89fdfc5b2d80fdd0a702cc692cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59ed38c28c6818fb618156450d47c05b4f35d63d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034782"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907286"
 ---
 # <a name="encodings-and-line-endings"></a>Końce kodowania i wiersza
 

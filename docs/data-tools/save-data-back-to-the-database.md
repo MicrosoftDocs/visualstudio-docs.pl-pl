@@ -18,15 +18,14 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3bbb8b93eb4b2f0cc1078224118b41caa590df6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966962"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928663"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 

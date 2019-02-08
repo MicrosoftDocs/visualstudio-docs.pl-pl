@@ -8,15 +8,14 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bde98c7acb8c4f5c2b8b2cee4fd1c442438da540
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940976"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924646"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projekty baz danych i aplikacji warstwy danych
 

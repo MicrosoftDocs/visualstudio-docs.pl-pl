@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031295"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927049"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 

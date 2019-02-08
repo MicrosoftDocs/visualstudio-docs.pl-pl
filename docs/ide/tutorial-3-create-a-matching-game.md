@@ -1,7 +1,6 @@
 ---
 title: 'Samouczek 3: Utwórz pasujący obiekt typu gier'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6765c50e29602ef1e753bb7365233811727840f0
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853667"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928494"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Utwórz pasujący obiekt typu gier
 

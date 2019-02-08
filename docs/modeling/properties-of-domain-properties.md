@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6151cafd1b89333e6db45abd3d93a61648346bc9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927857"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
 A *właściwość domeny* jest funkcją elementu modelu, który może zawierać wartości. Na przykład `Person` klasa domeny może mieć właściwości `Name` i `BirthDate`. W definicji DSL właściwości domeny są wyświetlane w polu Domena klas na diagramie, a w ramach klasy domeny w Eksplorator DSL. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md).

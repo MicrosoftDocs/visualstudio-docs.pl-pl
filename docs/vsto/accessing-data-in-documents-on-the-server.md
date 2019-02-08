@@ -1,7 +1,6 @@
 ---
 title: Dostęp do danych w dokumentach na serwerze
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef03779b541e4d6de99caf402793d62eeee68f3a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d13a15386fe8486dae16173ebb52ec2593de24f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866229"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926856"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Dostęp do danych w dokumentach na serwerze
   Można programować względem danych w dostosowaniu na poziomie dokumentu, bez konieczności używania modelu obiektów programu Microsoft Office Word lub Microsoft Office Excel. Oznacza to, że można dostęp do danych znajdujących się w dokumencie na serwerze, który nie ma programu Word lub programem Excel zainstalowanym. Na przykład kod na serwerze (na przykład w [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] strony) można dostosować dane w dokumencie i dostosowany dokument wysyłany do użytkownika końcowego. Po otwarciu dokumentu przez użytkownika końcowego dostosowanych danych Kod powiązania danych w zestawie rozwiązania wiąże się z dokumentem. Jest to możliwe, ponieważ dane w dokumencie są oddzielone od interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [dane dostosowywane na poziomie dokumentu z pamięci podręcznej](../vsto/cached-data-in-document-level-customizations.md).

@@ -1,7 +1,6 @@
 ---
 title: 'Przykładowy plik XSD: Relacje'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394936e9a6b94fdcb186e077c51977432dc2013d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920387"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951699"
 ---
 # <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: Relacje
 

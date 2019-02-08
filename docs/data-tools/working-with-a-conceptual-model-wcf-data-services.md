@@ -10,15 +10,14 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989643"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910028"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
 

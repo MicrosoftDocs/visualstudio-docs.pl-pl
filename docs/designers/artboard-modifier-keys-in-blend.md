@@ -1,7 +1,6 @@
 ---
 title: Klawisze modyfikujące obszar kompozycji w programie Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5723552a7716e7bfc846e209baa3a6f4001cf49b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb5d461045bd555b87b42c7de8e5c669952392d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013923"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930730"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich wykrycie. W poniższej tabeli wymieniono skróty, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.

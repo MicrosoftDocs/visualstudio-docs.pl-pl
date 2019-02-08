@@ -33,15 +33,14 @@ ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919944"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933668"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 

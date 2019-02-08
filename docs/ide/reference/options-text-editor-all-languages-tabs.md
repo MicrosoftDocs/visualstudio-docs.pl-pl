@@ -1,7 +1,6 @@
 ---
 title: Opcje, edytor tekstu, wszystkie języki, karty
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs
@@ -42,12 +41,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ab42486adae5347941e95b27b1e0444aee4cc05
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960766"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954871"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opcje, edytor tekstu, wszystkie języki, karty
 

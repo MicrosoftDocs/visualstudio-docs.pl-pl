@@ -3,7 +3,6 @@ title: Język Python w programie Visual Studio — samouczek krok 2, pisania i u
 titleSuffix: ''
 description: Krok 2 przewodnika podstawowe funkcje języka Python w programie Visual Studio, w tym edytowanie kodu i uruchamianie projektu.
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231782"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918107"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
 

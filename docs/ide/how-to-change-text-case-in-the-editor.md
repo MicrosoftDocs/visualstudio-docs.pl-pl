@@ -1,7 +1,6 @@
 ---
 title: Konwertuj tekst na wielkie lub małe litery
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ddd6cd204a9f301553f2f83ab0199937dc7ae1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989578"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907454"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Instrukcje: Zmiana wielkości liter w edytorze
 

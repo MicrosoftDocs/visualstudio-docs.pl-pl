@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071075"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913317"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny
 Aby utworzyć rozwiązanie języka dotyczącego określonej domeny, wybierz jedną z szablonów rozwiązań, które są dostępne w Kreatorze projektanta języka specyficznego dla domeny. Wybierając szablon, który najbardziej przypomina język, który ma zostać utworzona, można zminimalizować modyfikacjach, które należy podjąć, począwszy od rozwiązania.

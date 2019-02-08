@@ -2,7 +2,6 @@
 title: Wprowadzenie do edycji dla deweloperów języka JavaScript
 description: To wprowadzenie do edytora kodu w programie Visual Studio zawiera kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu JavaScript jest łatwiejsze.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -11,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bf5c2af7f8c1737c83d9e39ddf9a87d9e2783960
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767985"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957836"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 

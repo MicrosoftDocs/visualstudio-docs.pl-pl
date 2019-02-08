@@ -3,7 +3,6 @@ title: Poznaj samouczek Flask w programie Visual Studio w kroku 1, podstawy Flas
 titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w tym wymagania wstępne, Git i środowisk wirtualnych.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a3386647edeb9af7fa8d6d0e97e142f7cf6ef60
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990488"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920109"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio
 

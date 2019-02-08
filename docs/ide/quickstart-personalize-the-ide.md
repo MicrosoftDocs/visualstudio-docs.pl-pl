@@ -1,19 +1,18 @@
 ---
 title: Zestaw motyw kolorów i czcionek
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e2de0dba830269711b9ee08f6f3ac2a24522
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690365"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934071"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki start: Personalizowanie programu Visual Studio IDE i edytorem
 

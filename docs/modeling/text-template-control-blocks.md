@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e49cc7161d5f061d18e51865325f27fe37a35864
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 939198eb18dd8fd572f1bd5bf3f4a21b44a5cf2d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928740"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936970"
 ---
 # <a name="text-template-control-blocks"></a>Bloki formantów szablonów tekstowych
 Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu różnią się w danych wyjściowych. Istnieją trzy rodzaje bloki sterujące, które są rozróżniane na podstawie ich otwierające nawiasy:

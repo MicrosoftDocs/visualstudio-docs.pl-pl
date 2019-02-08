@@ -1,7 +1,6 @@
 ---
 title: Okienko akcji ― omówienie
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875956"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924386"
 ---
 # <a name="actions-pane-overview"></a>Okienko akcji ― omówienie
   Okienka akcji jest dostosowywany **akcji dla dokumentów** okienka zadań, który jest dołączony do określonego dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel. W okienku Akcje znajduje się wewnątrz okienka zadań pakietu Office oraz inne okienka wbudowanego zadania, takie jak **źródła XML** okienka zadań w programie Excel lub **style i formatowanie** okienka zadań w programie Word. Formanty Windows Forms lub kontrolek WPF umożliwia projektowanie interfejsu użytkownika w okienku Akcje.

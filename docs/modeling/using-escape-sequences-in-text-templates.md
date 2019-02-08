@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a4b88786c8403347e6526a7a097afcee69889b2a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6de30faec90fd59531187d09f7eef76c3db7b043
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031103"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910444"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji unikowych w szablonach tekstowych
 Można użyć sekwencji ucieczki w szablonach tekstowych, które mają być Generowanie tagi szablonu tekstu i (w kodzie języka C# tylko) do anulowania, znaki kontrolne i znaki cudzysłowu.

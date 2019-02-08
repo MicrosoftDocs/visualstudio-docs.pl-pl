@@ -1,7 +1,6 @@
 ---
 title: Menu kontekstowe w Eksplorator schematu XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddec20f2cf806a5910d0e0a7b06f1dac8f364d88
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952941"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910550"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 

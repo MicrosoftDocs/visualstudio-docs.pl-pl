@@ -13,16 +13,15 @@ helpviewer_keywords:
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6b0e303e1e7c1639b926f3f2d5b889e3a10920b8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854086"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911874"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 

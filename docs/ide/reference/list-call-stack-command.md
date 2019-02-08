@@ -1,7 +1,6 @@
 ---
 title: Lista stosu wywołań — Polecenie
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listcallstack
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4442b5c7275bd7733f4d5a49c4ac3baf0b92c1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007467"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912407"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
 Wyświetla bieżący stos wywołań.

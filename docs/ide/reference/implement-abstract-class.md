@@ -1,19 +1,18 @@
 ---
 title: Implementowanie klasy abstrakcyjnej
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c9927f810dabd028cba311a576e2bbc33a398f5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483955"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926167"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementuj klasę abstrakcyjną w programie Visual Studio
 

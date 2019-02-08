@@ -3,7 +3,6 @@ title: Rozwiązywanie problemów z instalacją lub Uaktualnij problemów
 description: Czasami mogą wystąpić problemy. Jeśli Twoje instalację programu Visual Studio lub uaktualnienie nie powiedzie się, może pomóc tej strony.
 ms.date: 08/01/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f456e1516d1baf4ee87fd4ebe5e5ad76423f1175
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768416"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931575"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio 2017 i uaktualnić problemów
 

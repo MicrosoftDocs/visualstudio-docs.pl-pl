@@ -12,20 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: e9b4cd77fb0d755079271668ba827c7d708b30b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231977"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936697"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
+
 Program Visual Studio udostępnia wiele narzędzi i elementów interfejsu użytkownika w celu ułatwienia debugowania aplikacji wielowątkowych. W tym samouczku pokazano, jak i używaj znaczników wątków **stosów równoległych** oknie **równoległego wyrażenia kontrolnego** okien, warunkowe punkty przerwania i filtr punktów przerwania. Ten samouczek umożliwia zapoznanie się z funkcjami programu Visual Studio do debugowania aplikacji wielowątkowych.
 
 | | |
@@ -342,7 +342,8 @@ Możesz ustawić punkty przerwania dla różnych warunków, takich jak nazwa wą
     > [!NOTE]
     > Po dojściu jest debugera, zostaną uruchomione wszystkie wątki. Jednak debuger nie będzie Wejdź do kodu w innych wątkach, chyba że jeden z innych wątków trafienia punktu przerwania. 
   
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz także
+
 [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [Instrukcje: Przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
 [Instrukcje: Korzystanie z okna równoległego stosu](../debugger/using-the-parallel-stacks-window.md)  

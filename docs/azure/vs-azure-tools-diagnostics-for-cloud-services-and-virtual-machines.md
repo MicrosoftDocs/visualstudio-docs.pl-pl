@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fbbdfa3bbe76a4b09503f619d7a05c89291e5dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969163"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908729"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

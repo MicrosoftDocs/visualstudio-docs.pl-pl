@@ -1,7 +1,6 @@
 ---
 title: Dostępność produktów i usług (program Blend)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c71f39a4c4a34145f844b7abbd1915a3117d224
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853095"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920434"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Dostępność produktów i usług (program Blend)
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. W rozdziałach poniżej zawarto informacje o funkcjach, produktach i usługach, dzięki którym system Microsoft Windows jest łatwiej dostępny dla osób niepełnosprawnych:

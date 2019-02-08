@@ -2,7 +2,6 @@
 title: Refaktoryzacja kodu w języku Python
 description: Visual Studio ułatwia refaktoryzacji kodu języka Python, zmieniając nazwę identyfikatorów, wyodrębnianie metody, dodając Importy i usuwanie nieużywanych importuje.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1c851205bd99dc0a21e42b55f7476824b96ba6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 244fbc87af508740e875ee73d948a2f37cce67c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031347"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929937"
 ---
 # <a name="refactor-python-code"></a>Refaktoryzacja kodu w języku Python
 

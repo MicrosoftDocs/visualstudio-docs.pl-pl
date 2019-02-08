@@ -2,7 +2,6 @@
 title: Omówienie programu Visual Studio dla programistów używających języka Python
 titleSuffix: ''
 ms.date: 12/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97b48daf123ea39cd00070fa95c4b488da9d9163
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8b8c0476c404604eca38ed16916a92d92e25275
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952954"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925426"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 

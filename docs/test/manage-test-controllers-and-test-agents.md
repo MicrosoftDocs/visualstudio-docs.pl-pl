@@ -1,19 +1,18 @@
 ---
 title: Zarządzanie kontrolerami testów i agentami testowymi
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23eb4163758a51fafecf8231da4614fad449c750
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932717"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912807"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 

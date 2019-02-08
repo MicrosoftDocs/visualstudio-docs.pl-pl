@@ -4,18 +4,17 @@ description: Dowiedz się więcej o sposobie publikowania projektów usług w ch
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bfc284b06274bfae625dcaa0dbebb5fc7d414b64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440e5198cf05168cffb43ba8c81453413e7754dd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911705"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikowanie usługi w chmurze za pomocą programu Visual Studio
 

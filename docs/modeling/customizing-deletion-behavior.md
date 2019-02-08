@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6e72d5165319eab7062c6a3f4106f232dca23808
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35707e715a8f38f7ebe1b508ee1e933f54b09c3e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969606"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939687"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usuwanie elementu zwykle powoduje, że powiązanych elementów można również usunąć. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne są usuwane. To zachowanie jest o nazwie *Usuń propagacji*. Można dostosować propagacji delete, na przykład aby rozmieścić, że dodatkowe powiązane elementy zostaną usunięte. Pisząc kod programu, można wprowadzić propagacji delete zależą od stanu modelu. Może również spowodować inne zmiany w odpowiedzi na usunięcie.

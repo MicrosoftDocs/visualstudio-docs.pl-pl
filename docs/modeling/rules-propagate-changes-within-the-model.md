@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aded621c89f6d351c6abb9bbe1744de51673e6b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070802"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919875"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagowanie zmian jeden element do innego w wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany dowolnego elementu w Store, zasady są zaplanowane do wykonania, zwykle w przypadku, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak elementu Dodawanie lub usuwanie go. Zasady można dołączyć do określonych typów elementów, kształty i diagramy. Wiele wbudowanych funkcji są definiowane przez reguły: na przykład zasady upewnij się, że diagram jest aktualizowana po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.

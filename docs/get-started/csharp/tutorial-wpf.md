@@ -3,7 +3,6 @@ title: 'Samouczek: Aplikacja Hello World z Windows Presentation Foundation (WPF)
 description: Utwórz prostą aplikację Windows Desktop .NET w C# z programem Visual Studio przy użyciu struktury interfejsu użytkownika Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 10/03/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be52f96cc105d1de2acb4fbcf37d37951ca9f609
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853917"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909950"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciuC#
 

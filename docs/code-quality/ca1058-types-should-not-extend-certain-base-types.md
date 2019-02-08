@@ -1,7 +1,6 @@
 ---
 title: 'CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3196cdba1b321c87d7a45846eac29338b04291a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932960"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915533"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Typy nie powinny rozszerzać niektórych typów podstawowych
 

@@ -1,7 +1,6 @@
 ---
 title: Środowisko, opcje — Okno dialogowe
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67642057c85a74633a8793ac2ef800a1b31bceb0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012979"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952830"
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 

@@ -1,7 +1,6 @@
 ---
 title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a06fc7cce620922e71fefc341f3bcf039deb1e
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853693"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917756"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 

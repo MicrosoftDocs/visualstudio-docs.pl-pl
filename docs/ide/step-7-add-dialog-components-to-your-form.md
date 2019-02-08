@@ -1,7 +1,6 @@
 ---
 title: Krok 7. Dodawanie składników okna dialogowego do formularza
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11788ed21d536642bdb3c88c59cea2dad009c9c3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853485"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911081"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać <xref:System.Windows.Forms.OpenFileDialog> składnika i <xref:System.Windows.Forms.ColorDialog> składnika do formularza.

@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd0785e3e20051a58fe46695f27d9be0ae8567a
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853969"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957994"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Co nowego w programie Visual Studio 2019 (wersja zapoznawcza)
 
@@ -99,11 +99,16 @@ Wprowadzamy nowe rozszerzenie, które można pobrać za pomocą Visual Studio Pr
 
 Aby rozpocząć, Pobierz [żądania ściągnięcia dla programu Visual Studio](https://aka.ms/pr4vs) rozszerzenie z witryny Marketplace programu Visual Studio.
 
-### <a name="develop-with-net-core-3-preview-1"></a>Programowanie przy użyciu platformy .NET Core 3 (wersja zapoznawcza) 1
+### <a name="develop-with-net-core-3-preview"></a>Programowanie za pomocą programu .NET Core 3 w wersji zapoznawczej
 
-Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3](http://aka.ms/netcore3preview1) aplikacje dla dowolnej platformy. Będziemy dalej do obsługi i poprawić Programowanie w języku C++ dla wielu platform, a także .NET opracowywania aplikacji mobilnych dla systemów iOS i Android za pomocą platformy Xamarin.
+Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) aplikacje dla dowolnej platformy. Będziemy dalej do obsługi i poprawić Programowanie w języku C++ dla wielu platform, a także .NET opracowywania aplikacji mobilnych dla systemów iOS i Android za pomocą platformy Xamarin.
 
    ![Tworzenie aplikacji za pomocą programu .NET Core 3 Preview 1 w Visual Studio 2019 r.](media/dot-net-core-three-dev.png)
+
+Aby uzyskać więcej informacji zobacz następujące strony:
+
+* [.NET core 3 (wersja zapoznawcza) 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) i [.NET Core 3 w wersji zapoznawczej 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) informacje o wersji
+* [Przedstawienie programu .NET Core 3 (wersja zapoznawcza) 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) i [Announcing .NET Core 3 w wersji zapoznawczej 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) wpisów w blogu
 
 ## <a name="continuous-innovation"></a>Ciągłe wprowadzanie innowacji
 
@@ -115,7 +120,7 @@ Wraz z wydaniem programu Visual Studio 2019 Preview podejmujemy pierwszy krok w 
 
    ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](media/per-monitor-aware-dpi-scaling.png)
 
-Aby uzyskać więcej informacji, zobacz [lepiej wielu monitorów z programu Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) wpis w blogu.
+Aby uzyskać więcej informacji, zobacz [lepsze środowisko wielu monitorów z programu Visual Studio 2019](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) wpis w blogu.
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 

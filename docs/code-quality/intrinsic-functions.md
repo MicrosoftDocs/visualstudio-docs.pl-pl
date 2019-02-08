@@ -1,7 +1,6 @@
 ---
 title: Funkcje wewnętrzne
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944525"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907961"
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 Wyrażenia w SAL może być wyrażeniem języka C/C++, pod warunkiem, że to wyrażenie ma efekty uboczne — na przykład ++,--i wywołania funkcji, wszystkie mają skutki uboczne w tym kontekście.  SAL zapewnia jednak niektóre obiekty funkcyjne i niektóre zastrzeżone symboli, które mogą być używane w wyrażeniach SAL. Są one określane jako *funkcje wewnętrzne*.

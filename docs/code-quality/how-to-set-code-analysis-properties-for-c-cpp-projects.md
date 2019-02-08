@@ -1,7 +1,6 @@
 ---
 title: 'Instrukcje: Ustawianie właściwości analizy kodu dla projektów C/C++'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
@@ -19,12 +18,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 000b731bffe6b2fe02e34e98ebfd3ce8a21f5bd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917339"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Instrukcje: Ustawianie właściwości analizy kodu dla projektów C/C++
 Można skonfigurować zasady, które używa narzędzie do analizy kodu w celu analizowania kodu w każdej konfiguracji projektu. Ponadto można kierować analizy kodu, aby pominąć ostrzeżenia, od kodu, który został wygenerowany i dodany do projektu za pomocą narzędzia innych firm.
