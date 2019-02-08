@@ -15,13 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 59c9513514b6e7ccb47e68168396593dc23b6b2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86c31a33abd5767207f9c2406907961379f84bae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012992"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924474"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.

@@ -11,15 +11,14 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 41728d6a2070cfa58a7d94cc8c129720b97ea92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952655"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943692"
 ---
 # <a name="n-tier-data-applications-overview"></a>Omówienie aplikacji N-warstwowa danych
 *N-warstwowa* dane aplikacji są aplikacje danych, które są rozdzielone na wiele *warstwy*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.

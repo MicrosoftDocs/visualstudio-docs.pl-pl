@@ -1,7 +1,6 @@
 ---
 title: Refaktoryzuj kod konwertujący dla pętli foreach — instrukcja
 ms.date: 05/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -10,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16b4a2d4c6f80c2c38b659a54c3d631124754644
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936557"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921307"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refaktoryzacja do konwersji między pętla, a Instrukcja foreach
 

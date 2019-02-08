@@ -1,7 +1,6 @@
 ---
 title: 'Instrukcje: Dystrybuowanie fragmentów kodu'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 61b3b9a8045fdda71df1f979aef09aa368e03749
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690373"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917808"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
 

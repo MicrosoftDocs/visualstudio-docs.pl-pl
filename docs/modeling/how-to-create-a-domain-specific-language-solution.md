@@ -13,13 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9fd859c3d7fe7af56df976d0e46182dd7f1c6fc6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936944"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych rozwiązania programu Visual Studio.

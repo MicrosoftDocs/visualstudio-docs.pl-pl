@@ -1,7 +1,6 @@
 ---
 title: Ostrzeżenia i błędy | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e6c58aa23e4b5c3133de2bee8f29b3205cf7aff9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925410"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 

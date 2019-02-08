@@ -1,18 +1,17 @@
 ---
-title: Plik dołączania
+title: Plik dyrektywy include
 ms.date: 05/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: include
 author: eross-msft
 ms.author: lizross
-ms.openlocfilehash: 66672b4f53f755dac37d15ac59115deac700e0aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 31b4021feb2b33babff123a56436d3a57d3e9f13
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34573405"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957656"
 ---
 > [!NOTE]
-> Jeśli interesuje Cię przeglądanie lub usuwanie danych osobowych, przejrzyj wskazówki firmy Microsoft w [żądania podmiotu danych systemu Windows dla GDPR](/microsoft-365/compliance/gdpr-dsr-windows). Jeśli szukasz ogólne informacje o GDPR, zobacz sekcję GDPR [portalu zaufania](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> Jeśli interesuje Cię wyświetlania lub usuwania danych osobowych, przejrzyj wskazówek firmy Microsoft dostępnych pod adresem [żądania podmiotów danych Windows do wprowadzenia RODO](/microsoft-365/compliance/gdpr-dsr-windows). Jeśli szukasz, aby uzyskać ogólne informacje na temat rozporządzenia RODO, zobacz sekcję RODO [Portal zaufania usługi](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-[//]: # (2018-5/22: mimo że ten plik może być oddzielony, nie należy go usuwać.)
+[//]: # (5/22/2018: Mimo że ten plik może być oddzielone, nie usuwaj go.)

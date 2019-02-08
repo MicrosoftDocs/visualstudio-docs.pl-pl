@@ -4,15 +4,14 @@ author: ghogen
 description: Dowiedz się, jak używać narzędzi Visual Studio 2017 i platformy Docker for Windows
 ms.author: ghogen
 ms.date: 02/01/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: e5bbc5d699facb32e8d476dbcdb5604b30ff5fa4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: d4f29056d81ab926318b987c7197a37989af8b49
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702042"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957645"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
 

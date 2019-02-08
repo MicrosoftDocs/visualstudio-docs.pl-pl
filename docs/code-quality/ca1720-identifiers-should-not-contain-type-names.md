@@ -1,7 +1,6 @@
 ---
 title: 'CA1720: Identyfikatory nie powinny zawierać nazw typów'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d56b2d3ae58a3cb24042c4bd4befdd2b92bae3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f233863667ea7be6ecef088537fde9a104b19906
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037216"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920759"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 
@@ -43,7 +42,7 @@ ms.locfileid: "55037216"
 
  Każdy token dyskretnych nazwę parametru lub elementu członkowskiego jest porównywany następujące nazwy typów danych specyficznych dla języka, bez uwzględniania wielkości liter:
 
-- wartość logiczna
+- Bool
 
 - WChar
 
@@ -125,7 +124,7 @@ Ponadto nazwy parametru również są porównywane z następujących nazw typu d
 
 - Wartość dziesiętna
 
-- Identyfikator GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  **Jeśli uruchamiany dla parametru:**
