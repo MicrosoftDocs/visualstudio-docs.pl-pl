@@ -1,7 +1,6 @@
 ---
 title: Identyfikowanie i dostosowywanie skrótów klawiaturowych
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5394f58ac150fb482cbbec915fa99ef6f7fc2005
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987482"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935722"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio
 

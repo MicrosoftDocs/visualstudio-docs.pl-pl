@@ -2,7 +2,6 @@
 title: 'Instrukcje: Ustawianie opcji ułatwień dostępu środowiska IDE'
 description: Dowiedz się, jak ustawić opcje ułatwień dostępu w programie Visual Studio, który ułatwi jego zintegrowanego środowiska programistycznego (IDE) dla każdego, w tym dla osób niedowidzących do odczytu, jak i dla osób o ograniczonej sprawności ruchowej, aby zapisać.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f971b71041daf29c6e8b92228f7381c93239aa
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854060"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928442"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Instrukcje: Ustawianie opcji ułatwień dostępu środowiska IDE
 
