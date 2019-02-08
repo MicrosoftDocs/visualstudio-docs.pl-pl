@@ -2,7 +2,6 @@
 title: Rozwiązywanie problemów z błędami sieci lub serwera proxy
 description: Rozwiązania związane z siecią lub serwer proxy błędy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwerem proxy.
 ms.date: 02/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 569b137d7a0a85f9c124bd1c643c921f1d64c775
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017828"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928338"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 

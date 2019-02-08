@@ -2,18 +2,17 @@
 title: Konteksty plików obszaru roboczego w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826867"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939193"
 ---
 # <a name="workspace-file-contexts"></a>Konteksty plików obszaru roboczego
 
@@ -27,7 +26,7 @@ Najbardziej typowe scenariusze dotyczące konteksty plików odnoszą się do kom
 
 ## <a name="file-context-lifecycle"></a>Cykl życia kontekstu pliku
 
-Cykle życia dla `FileContext` są niejednoznaczne. W dowolnym momencie składnika można asynchronicznie żądanie pewne zestawów typów kontekstu. Będzie można wyświetlić dostawców, które obsługują pewien podzbiór typów kontekstu żądania. `IWorkspace` Wystąpienia działa jako środka man między odbiorców i dostawców <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> metody. Konsumenci mogą kontekst żądania i wykonanie akcji krótkoterminowych na podstawie kontekstu, gdy inne osoby mogą kontekst żądania i obsługa długotrwałych odwołania. 
+Cykle życia dla `FileContext` są niejednoznaczne. W dowolnym momencie składnika można asynchronicznie żądanie pewne zestawów typów kontekstu. Będzie można wyświetlić dostawców, które obsługują pewien podzbiór typów kontekstu żądania. `IWorkspace` Wystąpienia działa jako środka man między odbiorców i dostawców <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> metody. Konsumenci mogą kontekst żądania i wykonanie akcji krótkoterminowych na podstawie kontekstu, gdy inne osoby mogą kontekst żądania i obsługa długotrwałych odwołania.
 
 Zmiany może się zdarzyć, pliki, które powodują kontekstu pliku, aby stać się nieaktualne. Dostawca może wyzwolić zdarzenie na `FileContext` do powiadamiania odbiorców aktualizacji. Na przykład jeśli podano kontekstu kompilacji dla niektórych plików, ale zmiany na dysku unieważnia tego kontekstu, następnie producentów oryginalnego wywołać zdarzenie. Żadnych użytkowników nadal odwołuje się do który `FileContext` można następnie requery nowej `FileContext`.
 

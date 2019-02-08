@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033287"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928286"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w programie Visual Studio. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.

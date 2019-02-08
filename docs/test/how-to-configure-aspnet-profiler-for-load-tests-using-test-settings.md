@@ -8,13 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7b9e61e7eee3303f39cb0fbb32d6e61eac3bb8e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958527"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935995"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Instrukcje: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testów w programie Visual Studio
 

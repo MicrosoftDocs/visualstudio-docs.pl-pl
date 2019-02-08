@@ -1,7 +1,6 @@
 ---
 title: Strony aplikacji C# właściwości projektu
 ms.date: 10/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a501ec056a3d8754d8f855a1584035e087f34b0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f287de1e756d20575e1c72775719b2c366534b6d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034002"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927558"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 

@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8964c36a2960829e257f46bdec2b238decada8ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041935"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937351"
 ---
 # <a name="properties-of-geometry-shapes"></a>Właściwości kształtów geometrycznych
 Aby określić, jak wystąpień klasy domeny są wyświetlane w języku specyficznym dla domeny, można użyć kształtów geometrycznych. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).

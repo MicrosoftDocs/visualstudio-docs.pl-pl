@@ -1,7 +1,6 @@
 ---
 title: Zainstaluj Pomoc w trybie offline
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c15dd5ee82c8c37f35a6c0ad07c4513a8d568c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005712"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936912"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
