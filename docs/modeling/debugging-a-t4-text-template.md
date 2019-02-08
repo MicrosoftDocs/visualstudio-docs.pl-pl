@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 93990d8437df75ff290d6c471f5f2ff38f710959
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033911"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944601"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szablon tekstowy czasu projektowania, Zapisz plik szablonu tekstu, a następnie wybierz **Debuguj szablon T4** menu skrótów pliku w Eksploratorze rozwiązań. Aby debugować szablonie tekstowym czasu wykonywania, po prostu debugowania aplikacji, do której należy.

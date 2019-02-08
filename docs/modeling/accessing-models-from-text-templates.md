@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 513ab6f1a953a2992b744aa3680cd453f677f5bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966806"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945680"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.

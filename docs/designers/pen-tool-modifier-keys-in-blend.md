@@ -1,7 +1,6 @@
 ---
 title: Klawisze modyfikujące Pióro w programie Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4239deccfb77bccc2a6f6637d5daf3176e1a3dab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957562"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
 W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ścieżki, podczas tworzenia go **pióra** narzędzie ![pióro](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Można również użyć **pióra** narzędzia, aby dodać lub usunąć punkty w istniejącej ścieżki lub połączyć dwa istniejące ścieżki.

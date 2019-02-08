@@ -2,7 +2,6 @@
 title: Konfigurowanie zdalnego usługi języka R w systemie Linux
 description: Jak skonfigurować zdalnej usługi języka R na platformach Ubuntu i podsystemu Windows dla systemu Linux.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d73f6df65c1ce1b78448a7582330741c887f7768
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020207"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945823"
 ---
 # <a name="remote-r-service-for-linux"></a>Usługa zdalnego języka R dla systemu Linux
 

@@ -1,7 +1,6 @@
 ---
 title: 'Instrukcje: Kompilowanie do wspólnego katalogu wyjściowego'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea36368a60fc08d6a818d1ca1e66cfb92d814478
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949711"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Instrukcje: Kompilowanie do wspólnego katalogu wyjściowego
 

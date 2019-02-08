@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing — często zadawane pytania
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935596"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947396"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -139,7 +138,7 @@ Nie zastępują `<OutDir>` bezpośrednio w procesie kompilacji; należy zastąpi
 
 Ustaw `LiveUnitTesting_BuildRoot` zmiennej środowiskowej poziomu użytkownika do ścieżki, którego Live Unit Testing artefakty kompilacji do go porzucić. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer programu vs. Przebiegi testów Live Unit Testing 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer programu vs. Przebiegi testów Live Unit Testing
 **Jak działa testów z okna Eksploratora testów różni się od uruchamiania testów w Live Unit Testing?**
 
 Istnieje kilka różnic:
@@ -158,7 +157,7 @@ Istnieje kilka różnic:
 **Jak wyłączyć testy z uczestnictwa w Live Unit Testing?**
 
 Zobacz sekcję "Dołączanie i wykluczanie projekty testowe i metod testowych" [Użyj Live Unit Testing w programie Visual Studio 2017 Enterprise Edition](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) artykuł, aby ustawienia specyficzne dla użytkownika. Uwzględniając lub wykluczając testów jest przydatne, gdy chcesz uruchomić określonego zestawu testów dla sesji edytowania określonego lub utrwalić osobistych preferencji.
- 
+
 W przypadku ustawienia specyficzne dla rozwiązania, można zastosować <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atrybut programowo, aby wykluczyć metody, właściwości, klasy lub struktury z są instrumentowane przez funkcję Live Unit Testing. Ponadto można również ustawić `<ExcludeFromCodeCoverage>` właściwości `true` w pliku projektu, aby wykluczyć całego projektu z są instrumentowane. Live Unit Testing nadal odpowiedzialnej za przeprowadzanie testów, które nie zostały zinstrumentowane, ale ich zakres nie będzie wizualizowane.
 
 Możesz również sprawdzić czy `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` jest ładowany w bieżącej domenie aplikacji i Wyłącz testy, w oparciu o tym, dlaczego. Na przykład zrobić coś podobnego do następujących w narzędziu xUnit:

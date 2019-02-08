@@ -1,7 +1,6 @@
 ---
 title: Znajdź w plikach
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c1b3bade38f356929819832c478afa8369b9fd0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1247bae6193294667953376f7e86c42cf5b8f8a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937759"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952960"
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 

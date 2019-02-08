@@ -1,7 +1,6 @@
 ---
 title: 'CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e290fa29f27638c327565825872e0de96bbd8bb7
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483893"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948449"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testuj obecność pustych ciągów przy użyciu długości ciągu
 

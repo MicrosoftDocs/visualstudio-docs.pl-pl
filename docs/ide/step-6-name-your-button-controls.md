@@ -1,7 +1,6 @@
 ---
 title: Krok 6. Nazw kontrolkom przycisków
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4624f6a4ce77aa03d3daea0781dc1cbd1028343d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853030"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946158"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nazw kontrolkom przycisków
 Jest tylko jedna <xref:System.Windows.Forms.PictureBox> w formularzu. Po dodaniu, IDE automatycznie nadał mu **pictureBox1**. Jest tylko jedna <xref:System.Windows.Forms.CheckBox>, który nosi **checkBox1**. Wkrótce będzie pisanie kodu i ten kod będzie odnosić się do CheckBox i PictureBox. Ponieważ istnieje tylko jeden z tych kontrolek, będzie wiadomo, co oznacza wyświetlenie **pictureBox1** lub **checkBox1** w kodzie.

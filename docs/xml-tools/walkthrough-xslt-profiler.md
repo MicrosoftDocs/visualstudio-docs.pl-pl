@@ -1,7 +1,6 @@
 ---
 title: 'Przewodnik: Profiler XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3e3a81628a9de88855abad5812eba6458265ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1866500fc4b04622aeb469f663b3b3893ca89c80
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970256"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954546"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Przewodnik: Profiler XSLT
 

@@ -1,7 +1,6 @@
 ---
 title: Strona debugowania, Projektant projektu
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b0de77c461b8196508adcdf5cb87c4729988b4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026234"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949684"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 

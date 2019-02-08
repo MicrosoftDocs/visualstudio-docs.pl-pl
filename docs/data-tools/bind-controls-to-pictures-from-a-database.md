@@ -15,15 +15,14 @@ ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f5afe5032f062205ada6c507c7d03d50c9d4209
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5afabf877fbd1a34bc579d81a137abbd5771fed5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008440"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944068"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Powiązywanie kontrolek z obrazami z bazy danych
 

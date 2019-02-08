@@ -9,13 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e4761eee5a45314911811dd55d1e3fc45a496baf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976196"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946951"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
 

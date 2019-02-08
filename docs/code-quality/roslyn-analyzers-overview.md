@@ -1,7 +1,6 @@
 ---
 title: Analiza kodu za pomocą analizatorów Roslyn
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71db8b7e7805b66c1c6213a227cc4705367ea551
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948280"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Omówienie analizatory platformie kompilatora .NET
 

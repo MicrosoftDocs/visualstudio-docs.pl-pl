@@ -1,7 +1,6 @@
 ---
 title: Struktury Visual C++ w Projektancie klas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6daa85e9f8a3ea6f5fe68808cd46fc4414f77c17
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966364"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954533"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Struktury Visual C++ w w Projektancie klas
 

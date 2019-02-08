@@ -13,16 +13,15 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dd1f5f3295b289467a5d678cc510c8ef85c0695
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: ad043d82dcefd899bbffd4d931506732c474f2f5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770152"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948436"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 kompilacji narzędzia składników katalogu
 

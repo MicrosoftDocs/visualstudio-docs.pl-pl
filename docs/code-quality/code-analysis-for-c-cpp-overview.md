@@ -1,7 +1,6 @@
 ---
 title: Analiza kodu dla C/C++ — Omówienie
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896399"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947643"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu C/C++ — Przegląd
 
@@ -67,7 +66,7 @@ Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Szybki Start: Analiza kodu C/c++](quick-start-code-analysis-for-c-cpp.md)
+- [Szybki start: Analiza kodu C/c++](quick-start-code-analysis-for-c-cpp.md)
 - [Przewodnik: Analizowanie kodu C/C++ pod względem wad](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Analiza kodu C/C++ — ostrzeżenia](code-analysis-for-c-cpp-warnings.md)
 - [Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++](using-the-cpp-core-guidelines-checkers.md)
