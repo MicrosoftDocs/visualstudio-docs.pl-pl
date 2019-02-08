@@ -9,13 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e773088671abfb5feffe50379bb717d09cb5ab64
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768512"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950607"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 

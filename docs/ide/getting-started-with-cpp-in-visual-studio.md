@@ -3,7 +3,6 @@ title: Wprowadzenie do języka C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
@@ -12,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7a4380c5226fb1876223792c8b5cb9307f7d7f5
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854008"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920486"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 

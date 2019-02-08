@@ -1,7 +1,6 @@
 ---
 title: Porozmawiaj z nami
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b282ffea92977f4d9c99adeb43e68017f95480
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853238"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946082"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio opinie o produkcie
 

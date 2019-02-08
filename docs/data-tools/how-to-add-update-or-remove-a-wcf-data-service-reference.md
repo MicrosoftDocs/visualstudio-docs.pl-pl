@@ -12,15 +12,14 @@ ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d00c711a1d26f8fb38acc66d15454bae035bcdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947260"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945459"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Instrukcje: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF
 A *sług* umożliwia dostęp do co najmniej jeden projekt [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Użyj **Dodaj odwołanie do usługi** okno dialogowe, aby wyszukać [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] w bieżącym rozwiązaniu lokalnie, w sieci lokalnej lub w Internecie.

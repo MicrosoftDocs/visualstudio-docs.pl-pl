@@ -1,7 +1,6 @@
 ---
 title: Omówienie dla deweloperów programu Visual Basic
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 9b07fd6048290d49254d44f408b8a352847802cf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690531"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954283"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 

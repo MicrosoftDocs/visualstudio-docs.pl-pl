@@ -15,15 +15,14 @@ ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b7ce4e595f9f2bc4b30488dd3cab67efe638afa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b961af0bf35bb4476f9f336fcf5298bb0bd3651
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953097"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951673"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio
 

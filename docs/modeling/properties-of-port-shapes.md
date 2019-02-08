@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5559bd3b27f66ab54a05ca7be184b8aff34ae636
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97de488672ac201a418326e39535b7e7c9bd643b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938409"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914243"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektancie.

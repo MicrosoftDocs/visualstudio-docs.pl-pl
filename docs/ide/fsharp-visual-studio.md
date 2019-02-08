@@ -2,7 +2,6 @@
 title: F#Narzędzia
 description: Dowiedz się, które funkcje programu Visual Studio są obsługiwane w F#.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920633"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955866"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą wizualizacji F# w programie Visual Studio
 

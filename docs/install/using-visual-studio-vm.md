@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure
 ms.date: 09/12/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926751"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952908"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 

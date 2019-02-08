@@ -9,13 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 27ad32dc88253fcbe9be3f6f3aae1b3618c9ae5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966988"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907909"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 

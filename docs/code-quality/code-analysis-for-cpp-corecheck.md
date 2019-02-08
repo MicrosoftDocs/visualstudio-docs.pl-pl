@@ -1,7 +1,6 @@
 ---
 title: W języku C++ podstawowych wytycznych dotyczących sprawdzania odwołania
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959486"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949476"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>W języku C++ podstawowych wytycznych dotyczących sprawdzania odwołania
 
@@ -66,7 +65,7 @@ W tej sekcji przedstawiono podstawowe sprawdzanie wytyczne dotyczące języka C+
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) nie używaj arytmetyki wskaźnika. W zamian użyj zakresu. Zobacz [C++ podstawowe wytyczne Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-Wyrażenie "% wyrażenie %": Brak zanikania tablicy do wskaźnika. Zobacz [C++ podstawowe wytyczne Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Expression '%expr%': Brak zanikania tablicy do wskaźnika. Zobacz [C++ podstawowe wytyczne Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 ## <a name="uniquepointer-group"></a>Grupa UNIQUE_POINTER
 

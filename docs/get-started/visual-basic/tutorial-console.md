@@ -3,7 +3,6 @@ title: 'Samouczek: Wprowadzenie do języka Visual Basic'
 description: Dowiedz się, jak tworzyć aplikacje konsoli języka Visual Basic w programie Visual Studio krok po kroku.
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c700d9078e8916704ff61d69f11e546e5d4b85
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b308dae2f16819fe66d40bea5f4b487695f31032
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853420"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909963"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do języka Visual Basic w programie Visual Studio
 

@@ -18,15 +18,14 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b78bd412343888a5f90fdc84f1c4fe31a3babaa7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d568434e8820ef11e0f2b75ba2409d7b643cc011
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996769"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955911"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Wyłączanie ograniczeń podczas zapełniania zestawu danych
 

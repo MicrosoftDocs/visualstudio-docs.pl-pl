@@ -7,13 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f32048501fe36bead87eb0fcec9891621eacc482
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969239"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948826"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 

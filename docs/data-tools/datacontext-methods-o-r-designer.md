@@ -6,15 +6,14 @@ ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb37e041872b8f5c37f256f762986ed22276e4c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83ca0059e576683571435764914bf0087eded2fa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069398"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951166"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 

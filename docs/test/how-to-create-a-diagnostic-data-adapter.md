@@ -8,13 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 57c0ac315aa7ca24d5fbd95bd67b99f49a108d92
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914022"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
 

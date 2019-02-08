@@ -1,7 +1,6 @@
 ---
 title: Architektura dostosowywania na poziomie dokumentu
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e80fbe0244c897f626c6fba248447881a92594a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eab615c7ce03dbf5a2763a5081c32ea3e09317c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868459"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949183"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań poziomu dokumentu:  

@@ -13,15 +13,14 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 989eb815a6e55b5ecaed0b960963eb036b73065a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970542"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955274"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
 

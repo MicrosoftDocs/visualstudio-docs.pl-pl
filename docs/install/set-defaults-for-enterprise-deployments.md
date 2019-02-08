@@ -3,7 +3,6 @@ title: Ustawianie wartości domyślnych w przypadku wdrożeń w przedsiębiorstw
 description: Dowiedz się więcej o zasadach domeny i inne operacje konfiguracji dla wdrożeń programu Visual Studio w przedsiębiorstwie.
 ms.date: 05/05/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fbea5daced46e8437bf4a277798b9911a13669
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042624"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910821"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Ustawianie wartości domyślnych dla wdrożeń w przedsiębiorstwie programu Visual Studio 2017
 

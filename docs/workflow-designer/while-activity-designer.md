@@ -2,7 +2,6 @@
 title: Projektant przepływu pracy — podczas Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81caba883293a59fe67988d34785758340b4705a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987040"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953249"
 ---
 # <a name="while-activity-designer"></a>While, projektant działań
 

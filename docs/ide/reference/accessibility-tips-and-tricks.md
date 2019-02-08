@@ -2,7 +2,6 @@
 title: Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 description: Więcej informacji na temat porady i wskazówki, które mogą pomóc, że program Visual Studio zintegrowane środowisko programistyczne (IDE) jest bardziej dostępny dla każdego, w tym osobom niepełnosprawnym.
 ms.date: 09/15/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b59fda5efe0c68154d46daf0fbd34db6bbfacf
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853134"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954052"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 

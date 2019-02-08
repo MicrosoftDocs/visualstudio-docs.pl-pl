@@ -6,16 +6,15 @@ ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a8cca5d3ff93612e17750caa303db386616a6573
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956782"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 

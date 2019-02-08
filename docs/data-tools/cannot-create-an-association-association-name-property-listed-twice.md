@@ -6,15 +6,14 @@ ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: da5ee57dda360f9851737fe061ee02c6aeae4c8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c198518fca543eb9275afd918a640275f797b19
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954751"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952622"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — właściwość jest wymieniona dwukrotnie
 

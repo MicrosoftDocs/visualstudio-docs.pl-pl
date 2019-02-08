@@ -1,7 +1,6 @@
 ---
 title: Krok 2. Uruchom program
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2f96b1ff3df25244d203cba4872eb6e57fd141
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853043"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952325"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2. Uruchom program
 Podczas tworzenia nowego rozwiązania, w rzeczywistości skompilowano program, który uruchamia. Większość nie robi jeszcze — po prostu wyświetla puste okno, które pokazuje **Form1** na pasku tytułu. Ale działał, zgodnie z którą chcesz dowiedzieć się.

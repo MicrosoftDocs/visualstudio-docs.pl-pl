@@ -6,17 +6,16 @@ ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926281"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957942"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
+# <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
 Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł w ramach jego narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakiet NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
 

@@ -4,16 +4,15 @@ title: Wdrażanie aplikacji | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do wdrożenia aplikacji, usług i składników.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: b2463395707a62091292256d601290121295d76c
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571021"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947124"
 ---
 # <a name="deployment-in-visual-studio"></a>Wdrożenie w programie Visual Studio
 
@@ -272,7 +271,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają wdrażanie a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wdrażanie aplikacji w języku C/C++</h3>
+                        <h3>Wdrażanie aplikacji C/C++</h3>
                     </div>
                 </div>
             </div>

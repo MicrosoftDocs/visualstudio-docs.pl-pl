@@ -1,7 +1,6 @@
 ---
 title: Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b994206c1721c09f3b1729762ae589293dbae15
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc86bf7d258bcabd6d7eec1b838eeebfa94c626
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872667"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949853"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatyzowanie programu Excel za pomocą obiektów rozszerzonych
   Podczas opracowywania rozwiązań programu Excel w programie Visual Studio, możesz użyć *hostować elementy* i *kontrolki hosta*s w posiadanych rozwiązaniach. Są to obiekty, które rozszerzają niektóre powszechnie używane obiekty w modelu obiektów programu Excel (oznacza to, że model obiektu, który jest udostępniany przez podstawowy zestaw międzyoperacyjny dla programu Excel), takie jak <xref:Microsoft.Office.Interop.Excel.Worksheet> i <xref:Microsoft.Office.Interop.Excel.Range> obiektów. Obiekty rozszerzone zachowują się jak obiekty programu Excel, które są one oparte na, ale dodają dodatkowe funkcje, takie jak nowe zdarzenia i możliwości wiązania danych do obiektów.  

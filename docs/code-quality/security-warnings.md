@@ -1,7 +1,6 @@
 ---
 title: Ostrzeżenia o zabezpieczeniach
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e99623e84bcd5342f1d0b080d2dd00095b6262
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955378"
 ---
 # <a name="security-warnings"></a>Ostrzeżenia o zabezpieczeniach
 

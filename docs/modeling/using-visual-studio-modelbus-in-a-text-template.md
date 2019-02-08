@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3db39365705a019672154c24e54dce01a09390e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1d048dc82d76cb8eb3e7cf00edb84126ba4cf15f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030937"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951257"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Użycie programu Visual Studio ModelBus w szablonie tekstu
 Jeśli piszesz szablony tekstowe, które odczytują modelu, który zawiera odwołania Visual Studio ModelBus, możesz chcieć rozpoznawania odwołań, aby uzyskiwać dostęp do modeli docelowego. W takim przypadku konieczne będzie dostosowywać szablony tekstowe i odwołania języków specyficznych dla domeny (językami DSL):

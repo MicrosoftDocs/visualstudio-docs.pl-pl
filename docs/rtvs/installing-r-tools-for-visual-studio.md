@@ -2,19 +2,18 @@
 title: Instalowanie narzędzi języka R
 description: Jak zainstalować narzędzia języka R w programie Visual Studio 2017 i Visual Studio 2015, łącznie z instalacji w trybie offline.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3555db278f469dde7754e752dd65b55ec51ceee0
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768487"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909196"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Jak zainstalować narzędzia języka R dla programu Visual Studio
 

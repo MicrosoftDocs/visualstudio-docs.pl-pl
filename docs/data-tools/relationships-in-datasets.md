@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970230"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951738"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
 Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data.DataRelation> obiekty do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwrócić powiązanych rekordów od siebie nawzajem. Dodawanie powiązanych tabel do zestawów danych przy użyciu **Kreatora konfiguracji źródła danych**, lub **Projektanta obiektów Dataset**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt dla Ciebie.

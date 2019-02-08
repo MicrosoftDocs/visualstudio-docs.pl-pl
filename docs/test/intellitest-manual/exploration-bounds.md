@@ -1,7 +1,6 @@
 ---
 title: Wiązania eksploracji | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069918"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952362"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 
