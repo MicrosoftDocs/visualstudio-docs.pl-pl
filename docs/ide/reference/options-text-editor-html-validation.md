@@ -1,7 +1,6 @@
 ---
 title: Opcje, Edytor tekstu HTML (formularze sieci Web), sprawdzanie poprawności
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f629a0b8d9f149ee10f7a35c75e351a6c3abfd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d06674d476dd671f715d2f4c88bdd23852f78687
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031776"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970676"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), sprawdzanie poprawności
 
