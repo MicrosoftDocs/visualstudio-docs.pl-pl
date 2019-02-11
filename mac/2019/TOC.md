@@ -10,7 +10,7 @@
 
 # [Konta użytkowników](/visualstudio/mac/user-accounts)
 ## [Logowanie](/visualstudio/mac/signing-in)
-## [Włączanie subskrypcji](/visualstudio/mac/activation)
+## [Włączanie subskrypcji](/visualstudio/mac/enable-subscription)
 
 # [Dostosowywanie środowiska IDE](/visualstudio/mac/customizing-the-ide)
 ## [Rozszerzenie programu Visual Studio dla komputerów Mac](/visualstudio/mac/extending-visual-studio-mac)

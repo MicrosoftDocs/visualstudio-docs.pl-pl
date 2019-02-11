@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ef49ce6e84f4e96c92489b35ca2c91401f16c7d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957994"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987421"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Co nowego w programie Visual Studio 2019 (wersja zapoznawcza)
 
@@ -89,6 +89,8 @@ Aby uzyskać więcej informacji, zobacz [rozszerzone w Visual Studio 2019 r.: Wy
 
 I za pomocą programu Visual Studio 2019 r (wersja zapoznawcza), ta usługa jest instalowana domyślnie.
 
+   ![Animowany plik GIF, pokazujący funkcję współpracy udostępniania na żywo w programie Visual Studio 2019 r.](media/live-share-collaboration.gif)
+
 Aby uzyskać więcej informacji, zobacz [Visual Studio udostępniania na żywo do przeglądów kodu w czasie rzeczywistym i interaktywne edukacji](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpis w blogu.
 
 ## <a name="modern-development-support"></a>Obsługa nowoczesnego projektowania
@@ -103,7 +105,7 @@ Aby rozpocząć, Pobierz [żądania ściągnięcia dla programu Visual Studio](h
 
 Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) aplikacje dla dowolnej platformy. Będziemy dalej do obsługi i poprawić Programowanie w języku C++ dla wielu platform, a także .NET opracowywania aplikacji mobilnych dla systemów iOS i Android za pomocą platformy Xamarin.
 
-   ![Tworzenie aplikacji za pomocą programu .NET Core 3 Preview 1 w Visual Studio 2019 r.](media/dot-net-core-three-dev.png)
+   ![Tworzenie aplikacji za pomocą programu .NET Core 3 Preview w programie Visual Studio 2019 r.](media/dot-net-core-three-dev.png)
 
 Aby uzyskać więcej informacji zobacz następujące strony:
 
@@ -132,6 +134,8 @@ Oto kilka sposobów, że program Visual Studio IntelliCode może pomóc zwiększ
 * Przewodnik deweloperów stosować się do wzorców i style ich zespołu
 * Znajdowanie problemów z kodem trudne catch
 * Przeglądy kodu fokus przez zwrócenie uwagi do obszarów, które naprawdę mają znaczenie
+
+ ![Przykładem sugestii IntelliSense](media/intellicode-intellisense-suggestion.png)
 
 Początkowo obsługiwane tylko C# kiedy możemy najpierw podglądu rozszerzenia IntelliCode dla programu Visual Studio. Teraz Dodaliśmy obsługę języków C++ i XAML w programie Visual Studio, zbyt.
 
