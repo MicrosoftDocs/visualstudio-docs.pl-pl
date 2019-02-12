@@ -10,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e22a7cf9aa00a48d3284273f66ec3e6069c16fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929196"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155399"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
 Ponieważ większość czasu projektowania w edytorze kodu wydatków [obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) udostępnia funkcje ułatwiające mu bardziej wydajnej pracy. Funkcje obejmują IntelliSense wyróżniania składni, automatyczne uzupełnianie, pomocy dotyczącej sygnatur, zastąpienia metody, wyszukiwania i nawigacji.
 
 Edytor jest także zintegrowana z **Interactive** okna w programie Visual Studio, ułatwiając wymiany kodu między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [użycie okna interaktywnego — Wyślij polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Aby uzyskać szczegółowe informacje.
-
-|   |   |
-|---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) demonstracyjne edycji kodu w języku Python (2 mln 30 sekund).|
 
 Ogólna dokumentacja na temat edytowania kodu w programie Visual Studio, można zobaczyć [funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md). Zobacz też [konspekt](../ide/outlining.md), co pomoże Ci bieżąco koncentruje się na określonych sekcji kodu.
 

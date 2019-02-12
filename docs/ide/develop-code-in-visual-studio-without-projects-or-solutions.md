@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4668b79c2a7516cc6432d96b44a8afb152b8bf7f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930548"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155360"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
 
@@ -61,10 +61,6 @@ Poniższy przykład pokazuje, jak klonowanie repozytorium GitHub, a następnie o
    ![Pokaż widok folderu](./media/VSIDE_Code_Clone3_show.png)
 
    Można teraz przeglądać foldery i pliki na sklonowane repozytorium i wyświetlić i wyszukiwanie kodu w edytorze kodu programu Visual Studio wraz z kolorowania składni i inne funkcje.
-
-| | |
-|---------|---------|
-| ![Ikona aparatu filmu wideo](../install/media/video-icon.png)| [Obejrzyj film wideo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) na temat sposobu Klonuj i otwórz kod z repozytorium GitHub w programie Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Uruchamianie i debugowanie kodu
 

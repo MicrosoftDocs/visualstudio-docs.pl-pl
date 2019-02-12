@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead4ed51d2cf72e505f905e5bab7be0551a6ee86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909976"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155959"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -286,5 +286,4 @@ Jeśli chcesz zacząć korzystać do kodowania więcej jedną z następujących 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Odczyt [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Zapoznaj się z bezpłatnym kursom programu Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)
 - Pobierz program Visual Studio na [pliki do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

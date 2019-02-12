@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf8f680cedaf64fba5f75e65f2e4ca5398969b89
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970585"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155139"
 ---
 # <a name="profile-python-code"></a>Profiluj kod języka Python
 
@@ -30,10 +30,6 @@ Profilowanie została uruchomiona przy użyciu **analizy** > **Uruchom profilowa
 Po wybraniu **OK**, program profilujący jest uruchamiany i otwiera raport wydajności za pomocą którego możesz eksplorować, jak czas w aplikacji:
 
 ![Raport profilowania wydajności](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) demonstracyjne Python profilowania (3 m 00s).|
 
 > [!Note]
 > Obecnie program Visual Studio obsługuje tylko na tym poziomie profilowania pełnej aplikacji, ale chcemy poznać Twoją opinię na temat przyszłych funkcji bez obaw. Użyj [ **opinie o produkcie** przycisk](#feedback) u dołu tej strony.

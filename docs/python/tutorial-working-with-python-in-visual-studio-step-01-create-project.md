@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: da95e1b4da39d645712a8429798d8a1ca468e056
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924152"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155217"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
 
@@ -78,5 +78,3 @@ W tym samouczku zaczynać prosty projekt zawierający pojedynczy pusty plik kodu
 - [Projekty Python w programie Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Dowiedz się więcej o języku Python w witrynie python.org](https://www.python.org)
 - [Python dla początkujących](https://www.python.org/about/gettingstarted/) (python.org)
-- [Bezpłatne kursy języka Python w Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Python najważniejsze pytania w Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

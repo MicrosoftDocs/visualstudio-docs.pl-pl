@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04c418824ff3d21e033466427cf805913d156465
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935280"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155984"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Konfigurowanie testów jednostkowych dla kodu w języku Python
 
@@ -24,10 +24,6 @@ Testy jednostkowe są fragmenty kodu, które testują inne jednostki kodu w apli
 Python często używa testów jednostkowych do weryfikacji scenariuszy podczas projektowania programu. Obsługa języka Python w programie Visual Studio zawiera odnajdywanie, wykonywanie i debugowanie testów jednostkowych w kontekście swojego procesu programistycznego, bez konieczności uruchomić testy oddzielnie.
 
 Ten artykuł zawiera krótkie konspektu testów jednostkowych funkcji w programie Visual Studio za pomocą języka Python. Aby uzyskać więcej informacji na ogół testów jednostkowych, zobacz [kodu testu jednostkowego](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) na testowanie w języku Python (2 m 31s) jednostek. |
 
 ## <a name="discover-and-view-tests"></a>Odnajdywanie i wyświetlić testy
 

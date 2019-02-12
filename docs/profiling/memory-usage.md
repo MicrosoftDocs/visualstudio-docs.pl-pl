@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c58825aab4d882ac6ca80b71b2c5a0aa542f76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef69d38374835632768bda69e57ee0c2cf1200cb
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994569"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155737"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego ułatwi zrozumienie wpływu użycia pamięci typów obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
@@ -160,10 +160,6 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
   ![Typy natywne Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogi i filmy wideo  
-
-| | |
-|---------|---------|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) na temat korzystania z narzędzia diagnostyczne, które pokazuje, jak i analizowanie użycia pamięci i użycie procesora CPU w programie Visual Studio 2017. |
 
  [Analizowanie użycia Procesora i pamięci podczas debugowania](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

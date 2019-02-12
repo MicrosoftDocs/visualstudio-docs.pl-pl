@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e0ee9629a3ea4a98dd720886af14238c92fd6780
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912082"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156075"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
@@ -533,5 +533,4 @@ Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, prze
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Kurs wideo: C#Podstawy dla osób początkujących](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
 * [Dowiedz się, jak debugowanie C# kodu w programie Visual Studio](tutorial-debugger.md)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdaff4b9e67ff1dce7edd2d0002d119ba7a84003
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941894"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155880"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -26,10 +26,6 @@ Zobacz też następujące artykuły debugowania specyficzne dla scenariusza:
 - [Zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Debugowanie w trybie mieszanym języków Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) demonstracyjne (3 m 32s) debugowania języka Python.|
 
 <a name="debugging-without-a-project"></a>
 

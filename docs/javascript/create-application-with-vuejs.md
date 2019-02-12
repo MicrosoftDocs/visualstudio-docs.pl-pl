@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947026"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155386"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -177,6 +177,6 @@ Wystąpił nieznany problem z vue — interfejs wiersza polecenia 3.0 zapobiega 
 
 ## <a name="see-also"></a>Zobacz także
 
-- https://vuejs.org/v2/guide -Vue Wprowadzenie — przewodnik.
-- https://github.com/vuejs/vue-cli — Projekt Vue interfejs wiersza polecenia.
-- https://webpack.js.org/configuration/ — Dokumentacja konfiguracji Webpack.
+- [Przewodnik Wprowadzenie dla VUE get](https://vuejs.org/v2/guide).
+- [Project Vue CLI] (https://github.com/vuejs/vue-cli(.
+- [Dokumentacja konfiguracji Webpack](https://webpack.js.org/configuration/).

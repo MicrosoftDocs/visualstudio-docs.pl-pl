@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 487d03ff462fbb8fbcd5cbd1131103e5bacb3316
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935189"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155867"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -36,8 +36,7 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) wprowadzenie do projektów języka Python (2 m 17s). |
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Zobacz też [szczegółowe informacje: Korzystanie z kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Szczegółowe informacje: Korzystanie z kontroli źródła z projektów języka Python](https://youtu.be/Aq8eqApnugM) (witrynie youtube.com, 8 m 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Dodaj pliki, Przypisz plik startowy i ustaw środowisk
 

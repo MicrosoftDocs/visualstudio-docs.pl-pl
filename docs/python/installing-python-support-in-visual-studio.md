@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4b37d2d8db3aad649b0285a952d2537e67d7c1b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916755"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155490"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -68,10 +68,6 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 1. Po zakończeniu instalacji Instalator oferuje opcje, aby zmodyfikować, uruchamianie, napraw lub odinstaluj program Visual Studio. **Modyfikuj** przycisku zmienia się na **aktualizacji** po aktualizacji do programu Visual Studio są dostępne dla żadnych zainstalowanych składników. ( **Modyfikuj** opcja jest dostępna w menu rozwijanym.) Można również uruchomić program Visual Studio i Instalator Windows **Start** menu, wyszukując "Visual Studio".
 
     ![Uruchamianie, modyfikowanie, modyfikowania lub odinstalowywania programu Visual Studio z poziomu Instalatora](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) na temat instalowania obsługi języka Python w programie Visual Studio.|
 
 ### <a name="troubleshooting"></a>Rozwiązywanie problemów
 

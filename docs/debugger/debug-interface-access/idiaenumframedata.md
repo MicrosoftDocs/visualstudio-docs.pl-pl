@@ -12,102 +12,102 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55aba0ff827bde1be1736e7b4dc4e57eb249e144
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eea2b3e903e3311773bc1fcfe9df7d67949dc5e5
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014721"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155569"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-Wylicza różnych elementów danych ramek, znajdujących się w źródle danych.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDiaEnumFrameData : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaEnumFrameData`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Pobiera `IEnumVARIANT Interface` wersję tego modułu wyliczającego.|  
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Pobiera liczbę elementów danych ramki.|  
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Pobiera element danych ramki za pomocą indeksu.|  
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Pobiera określoną liczbę elementów danych ramki w kolejności wyliczenia.|  
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Pomija określoną liczbę elementów danych ramki w kolejności wyliczenia.|  
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Przywraca ramkę względnych adresów wirtualnych (RVA).|  
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Przywraca ramkę adresów wirtualnych (oceny luk w zabezpieczeniach).|  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Uzyskanie tego interfejsu z [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody. Zobacz przykład, aby uzyskać szczegółowe informacje.  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak uzyskać ( `GetEnumFrameData` funkcja) i użyj ( `ShowFrameData` funkcji) `IDiaEnumFrameData` interfejsu. Zobacz [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) interfejsu, na przykład `PrintFrameData` funkcji.  
-  
-```C++  
-  
-      IDiaEnumFrameData* GetEnumFrameData(IDiaSession *pSession)  
-{  
-    IDiaEnumFrameData* pUnknown    = NULL;  
-    REFIID             iid         = __uuidof(IDiaEnumFrameData);  
-    IDiaEnumTables*    pEnumTables = NULL;  
-    IDiaTable*         pTable      = NULL;  
-    ULONG              celt        = 0;  
-  
-    if (pSession->getEnumTables(&pEnumTables) != S_OK)  
-    {  
-        wprintf(L"ERROR - GetTable() getEnumTables\n");  
-        return NULL;  
-    }  
-    while (pEnumTables->Next(1, &pTable, &celt) == S_OK && celt == 1)  
-    {  
-        // There is only one table that matches the given iid  
-        HRESULT hr = pTable->QueryInterface(iid, (void**)&pUnknown);  
-        pTable->Release();  
-        if (hr == S_OK)  
-        {  
-            break;  
-        }  
-    }  
-    pEnumTables->Release();  
-    return pUnknown;  
-}  
-  
-void ShowFrameData(IDiaSession *pSession)  
-{  
-    IDiaEnumFrameData* pEnumFrameData = GetEnumFrameData(pSession);;  
-  
-    if (pEnumFrameData != NULL)  
-    {  
-        IDiaFrameData* pFrameData;  
-        ULONG celt = 0;  
-  
-        while(pEnumFrameData->Next(1, &pFrameData, &celt) == S_OK &&  
-              celt == 1)  
-        {  
-            PrintFrameData(pFrameData);  
-            pFrameData->Release();  
-        }  
-        pEnumFrameData->Release();   
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** Dia2.h  
-  
- **Biblioteka:** diaguids.lib  
-  
- **DLL:** msdia80.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Wylicza różnych elementów danych ramek, znajdujących się w źródle danych.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDiaEnumFrameData : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+W poniższej tabeli przedstawiono metody `IDiaEnumFrameData`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Pobiera `IEnumVARIANT Interface` wersję tego modułu wyliczającego.|
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Pobiera liczbę elementów danych ramki.|
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Pobiera element danych ramki za pomocą indeksu.|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Pobiera określoną liczbę elementów danych ramki w kolejności wyliczenia.|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Pomija określoną liczbę elementów danych ramki w kolejności wyliczenia.|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Resetuje sekwencji wyliczenia na początku.|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Przywraca ramkę względnych adresów wirtualnych (RVA).|
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Przywraca ramkę adresów wirtualnych (oceny luk w zabezpieczeniach).|
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+Uzyskanie tego interfejsu z [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody. Zobacz przykład, aby uzyskać szczegółowe informacje.
+
+## <a name="example"></a>Przykład
+W tym przykładzie pokazano, jak uzyskać ( `GetEnumFrameData` funkcja) i użyj ( `ShowFrameData` funkcji) `IDiaEnumFrameData` interfejsu. Zobacz [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) interfejsu, na przykład `PrintFrameData` funkcji.
+
+```C++
+
+      IDiaEnumFrameData* GetEnumFrameData(IDiaSession *pSession)
+{
+    IDiaEnumFrameData* pUnknown    = NULL;
+    REFIID             iid         = __uuidof(IDiaEnumFrameData);
+    IDiaEnumTables*    pEnumTables = NULL;
+    IDiaTable*         pTable      = NULL;
+    ULONG              celt        = 0;
+
+    if (pSession->getEnumTables(&pEnumTables) != S_OK)
+    {
+        wprintf(L"ERROR - GetTable() getEnumTables\n");
+        return NULL;
+    }
+    while (pEnumTables->Next(1, &pTable, &celt) == S_OK && celt == 1)
+    {
+        // There is only one table that matches the given iid
+        HRESULT hr = pTable->QueryInterface(iid, (void**)&pUnknown);
+        pTable->Release();
+        if (hr == S_OK)
+        {
+            break;
+        }
+    }
+    pEnumTables->Release();
+    return pUnknown;
+}
+
+void ShowFrameData(IDiaSession *pSession)
+{
+    IDiaEnumFrameData* pEnumFrameData = GetEnumFrameData(pSession);;
+
+    if (pEnumFrameData != NULL)
+    {
+        IDiaFrameData* pFrameData;
+        ULONG celt = 0;
+
+        while(pEnumFrameData->Next(1, &pFrameData, &celt) == S_OK &&
+              celt == 1)
+        {
+            PrintFrameData(pFrameData);
+            pFrameData->Release();
+        }
+        pEnumFrameData->Release(); 
+    }
+}
+```
+
+## <a name="requirements"></a>Wymagania
+**Nagłówek:** Dia2.h
+
+**Biblioteka:** diaguids.lib
+
+**DLL:** msdia80.dll
+
+## <a name="see-also"></a>Zobacz też
+[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
+[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

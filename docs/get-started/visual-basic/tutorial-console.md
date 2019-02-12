@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b308dae2f16819fe66d40bea5f4b487695f31032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909963"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155698"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do języka Visual Basic w programie Visual Studio
 
@@ -141,10 +141,10 @@ Platforma .NET core to ewolucyjny następnym krokiem programu .NET Framework. Gd
 Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, zobacz następujące samouczki.
 
 > [!div class="nextstepaction"]
-> [Samouczek wideo: Podstawy Visual Basic dla całkowicie początkujących](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Tworzenie biblioteki w języku Visual Basic i .NET Core SDK w programie Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Co nowego w języku Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
-* [Funkcja IntelliSense w plikach kodu języka Visual Basic](../../ide/visual-basic-specific-intellisense.md)
+* [Wskazówki dotyczące języka Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Odwołanie językowe Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Funkcja IntelliSense w plikach kodu języka Visual Basic](../../ide/visual-basic-specific-intellisense.md)

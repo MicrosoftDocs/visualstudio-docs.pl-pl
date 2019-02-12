@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9b07fd6048290d49254d44f408b8a352847802cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee53c59c0ff3fcc898e30551357733b9d8b71725
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954283"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155711"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 
@@ -297,4 +297,3 @@ Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsz
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
 - Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - Odczyt [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-- Zapoznaj się z bezpłatnym kursom programu Visual Studio na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033)

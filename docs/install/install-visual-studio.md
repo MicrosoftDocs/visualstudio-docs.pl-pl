@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d306ec5789359469a25631f6e27dc2c13bcb7cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946460"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156140"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
@@ -54,10 +54,6 @@ Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobi
  > [!div class="button"]
  > [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![Ikona aparatu film wideo](media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) o tym, jak pobrać plik inicjujący programu Visual Studio i wybierz wersję programu Visual Studio, który jest odpowiedni dla Ciebie. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3 — instalowanie Instalatora programu Visual Studio
 
@@ -94,29 +90,17 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 > [!TIP]
 > W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. Z tego miejsca możesz wybrać obciążeń lub składników, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.
 
-|         |         |
-|---------|---------|
-|  ![Ikona aparatu film wideo](media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) na temat instalowania Instalatora programu Visual Studio, a następnie zainstaluj obciążenia. |
-
 ## <a name="step-5---select-individual-components-optional"></a>Krok 5 — wybierz poszczególne składniki (opcjonalnie)
 
 Jeśli nie chcesz korzystać z funkcji obciążeń dostosować instalację programu Visual Studio, możesz to zrobić, instalując zamiast pojedynczych składników. Aby wybrać poszczególne składniki, kliknij przycisk **poszczególne składniki** za pomocą Instalatora programu Visual Studio, wybierz co, a następnie postępuj zgodnie z monitami.
 
   ![Visual Studio 2017 — instalowanie poszczególne składniki](media/vs2017-components.PNG "poszczególne składniki Zainstaluj program Visual Studio")
 
-  |         |         |
-  |---------|---------|
-  |  ![Ikona aparatu film wideo](media/video-icon.png "Obejrzyj klip wideo")  |   [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) na temat sposobu instalacji poszczególnych składników za pomocą Instalatora programu Visual Studio. |
-
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 — instalowanie pakietów językowych (opcjonalnie)
 
 Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacyjnego, gdy jest uruchamiany po raz pierwszy. Aby zainstalować program Visual Studio 2017 w języku wybrane, kliknij przycisk **pakiety językowe** opcji za pomocą Instalatora programu Visual Studio, a następnie postępuj zgodnie z monitami.
 
   ![Visual Studio 2017 — instalowanie pakietów językowych](media/vs2017-languages.PNG "pakiety językowe Zainstaluj program Visual Studio")
-
-  |         |         |
-  |---------|---------|
-  |  ![Ikona aparatu film wideo](media/video-icon.png "Obejrzyj klip wideo")  |   [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) na temat zainstalować pakiet językowy przy użyciu Instalatora programu Visual Studio. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Zmień język Instalatora z poziomu wiersza polecenia
 

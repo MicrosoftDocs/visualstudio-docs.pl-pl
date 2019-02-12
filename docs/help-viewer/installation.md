@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c15dd5ee82c8c37f35a6c0ad07c4513a8d568c1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936912"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155672"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
@@ -42,10 +42,6 @@ Innym sposobem na łatwe instalowanie podglądu pomocy firmy Microsoft jest za p
 1. W wyświetlonym oknie dialogowym wybierz **zainstalować** przycisku.
 
    ![Przycisk Zainstaluj](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![Ikona aparatu filmu wideo](../install/media/video-icon.png) | [Obejrzyj film wideo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) dotyczące sposobu instalowania podglądu pomocy firmy Microsoft przy użyciu Instalatora programu Visual Studio. |
 
 ## <a name="see-also"></a>Zobacz także
 

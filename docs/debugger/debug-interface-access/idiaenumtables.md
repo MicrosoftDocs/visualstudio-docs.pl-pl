@@ -12,62 +12,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80b8bd26fbdb39f539df7ce520ca638458f2de65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 44a74d0c11f6d3f7265455bd8df1d481408d8e7b
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999356"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155828"
 ---
 # <a name="idiaenumtables"></a>IDiaEnumTables
-Wylicza różnych tabel znajdujących się w źródle danych.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDiaEnumTables : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaEnumTables`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|  
-|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Pobiera liczbę tabel.|  
-|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Pobiera tabelę przy użyciu indeksu lub nazwę.|  
-|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Pobiera określoną liczbę tabel w kolejności wyliczenia.|  
-|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Pomija określoną liczbę tabel w kolejności wyliczenia.|  
-|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Uzyskanie tego interfejsu, wywołując [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody.  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak uzyskać `IDiaEnumTables` interfejsu z sesji. Aby uzyskać bardziej szczegółowy przykład użycia tabel, zobacz [idiatable —](../../debugger/debug-interface-access/idiatable.md) interfejsu.  
-  
-```C++  
-void ShowTableNames(IDiaSession *pSession)  
-{  
-    CComPtr<IDiaEnumTables> pTables;  
-    if ( FAILED( psession->getEnumTables( &pTables ) ) )  
-    {  
-        Fatal( "getEnumTables" );  
-    }  
-    // Do something with table  
-}  
-```  
-  
-## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
-  
- Biblioteka: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+Wylicza różnych tabel znajdujących się w źródle danych.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDiaEnumTables : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+ W poniższej tabeli przedstawiono metody `IDiaEnumTables`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[IDiaEnumTables::get__NewEnum](../../debugger/debug-interface-access/idiaenumtables-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
+|[IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)|Pobiera liczbę tabel.|
+|[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)|Pobiera tabelę przy użyciu indeksu lub nazwę.|
+|[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)|Pobiera określoną liczbę tabel w kolejności wyliczenia.|
+|[IDiaEnumTables::Skip](../../debugger/debug-interface-access/idiaenumtables-skip.md)|Pomija określoną liczbę tabel w kolejności wyliczenia.|
+|[IDiaEnumTables::Reset](../../debugger/debug-interface-access/idiaenumtables-reset.md)|Resetuje sekwencji wyliczenia na początku.|
+|[IDiaEnumTables::Clone](../../debugger/debug-interface-access/idiaenumtables-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+Uzyskanie tego interfejsu, wywołując [idiasession::getenumtables —](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody.
+
+## <a name="example"></a>Przykład
+W tym przykładzie pokazano, jak uzyskać `IDiaEnumTables` interfejsu z sesji. Aby uzyskać bardziej szczegółowy przykład użycia tabel, zobacz [idiatable —](../../debugger/debug-interface-access/idiatable.md) interfejsu.
+
+```C++
+void ShowTableNames(IDiaSession *pSession)
+{
+    CComPtr<IDiaEnumTables> pTables;
+    if ( FAILED( psession->getEnumTables( &pTables ) ) )
+    {
+        Fatal( "getEnumTables" );
+    }
+    // Do something with table
+}
+```
+
+## <a name="requirements"></a>Wymagania
+Nagłówek: Dia2.h
+
+Biblioteka: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Zobacz też
+[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
