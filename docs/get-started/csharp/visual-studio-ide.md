@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155997"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227842"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w środowisku IDE programu Visual Studio |C#
 
@@ -122,18 +122,6 @@ Skonfigurujmy Visual Studio, aby użyć ustawienia środowiska dostosowane do C#
 Aby dowiedzieć się więcej o innych metodach, które można spersonalizować środowisko IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-program"></a>Utwórz program
-
-Najpierw skonfigurujemy Visual Studio, aby użyć ustawienia środowiska dostosowane do C# deweloperów.
-
-1. Na pasku menu wybierz **narzędzia** > **Import i eksport ustawień**.
-
-2. W **Kreatora importowania i eksportowania ustawień**, wybierz opcję **Resetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz **dalej**.
-
-3. Na **zapisać bieżące ustawienia** stronie, wybierz opcję, aby zapisać bieżące ustawienia lub nie, a następnie wybierz **dalej**. (Jeśli nie zostały dostosowane ustawienia, wybierz opcję **nie, tylko Zresetuj ustawienia, zastępując Moje bieżące ustawienia**.)
-
-4. Na **wybierz domyślnej kolekcji ustawień** wybierz **Visual C#**  , a następnie wybierz **Zakończ**.
-
-5. Na **resetowania pełną** wybierz **Zamknij**.
 
 Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 

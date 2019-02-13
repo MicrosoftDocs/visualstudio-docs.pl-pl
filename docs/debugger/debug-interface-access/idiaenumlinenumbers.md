@@ -12,91 +12,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8a39001fa07632fe6e229587aadf4ea4c9aacf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc977826517bca14187dcadbd73dfbf03b99d6bf
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014773"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227595"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-Wylicza różne numery wierszy zawartych w źródle danych.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDiaEnumLineNumbers : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDiaEnumLineNumbers`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|  
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Pobiera liczbę numerów wierszy.|  
-|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Pobiera numer wiersza za pomocą indeksu.|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Pomija określoną liczbę numery wierszy w kolejności wyliczenia.|  
-|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Resetuje sekwencji wyliczenia na początku.|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Ten interfejs jest można uzyskać przez wywołanie jednej z następujących metod w [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu:  
-  
--   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
-  
--   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
-  
--   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
-  
--   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
-  
--   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
-  
-## <a name="example"></a>Przykład  
- W tym przykładzie pokazano, jak uzyskać `IDiaEnumLineNumbers` interfejsu z sesji. W takim przypadku w przykładzie pokazano sposób uzyskiwania wyliczenie numeru wiersza dla funkcji (reprezentowane przez `pSymbol`). Aby uzyskać bardziej szczegółowy przykład przy użyciu numerów wierszy, zobacz [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) interfejsu.  
-  
-```C++  
-void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
-{  
-    ULONGLONG length = 0;  
-    DWORD isect = 0;  
-    DWORD offset = 0;  
-    pSymbol->get_addressSection( &isect );  
-    pSymbol->get_addressOffset( &offset );  
-    pSymbol->get_length( &length );  
-    if ( isect != 0 && length > 0 )  
-    {  
-        CComPtr< IDiaEnumLineNumbers > pLines;  
-        if ( SUCCEEDED( pSession->findLinesByAddr(  
-                                      isect,  
-                                      offset,  
-                                      static_cast<DWORD>( length ),  
-                                      &pLines )  
-                      )  
-           )  
-        {  
-            // Do something with the enumeration  
-        }  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
-  
- Biblioteka: diaguids.lib  
-  
- DLL: msdia80.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy (debugowanie zestaw SDK dostępu do interfejsu)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession::findlinesbylinenum —](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession::findlinesbyrva —](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession::findlinesbyva —](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Idiasession::findlines —](../../debugger/debug-interface-access/idiasession-findlines.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
+Wylicza różne numery wierszy zawartych w źródle danych.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDiaEnumLineNumbers : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+W poniższej tabeli przedstawiono metody `IDiaEnumLineNumbers`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Pobiera [interfejsu interfejs IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) wersję tego modułu wyliczającego.|
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Pobiera liczbę numerów wierszy.|
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Pobiera numer wiersza za pomocą indeksu.|
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.|
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Pomija określoną liczbę numery wierszy w kolejności wyliczenia.|
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Resetuje sekwencji wyliczenia na początku.|
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+Ten interfejs jest można uzyskać przez wywołanie jednej z następujących metod w [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu:
+
+- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)
+
+- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
+
+- [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)
+
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
+
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+
+## <a name="example"></a>Przykład
+W tym przykładzie pokazano, jak uzyskać `IDiaEnumLineNumbers` interfejsu z sesji. W takim przypadku w przykładzie pokazano sposób uzyskiwania wyliczenie numeru wiersza dla funkcji (reprezentowane przez `pSymbol`). Aby uzyskać bardziej szczegółowy przykład przy użyciu numerów wierszy, zobacz [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) interfejsu.
+
+```C++
+void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
+{
+    ULONGLONG length = 0;
+    DWORD isect = 0;
+    DWORD offset = 0;
+    pSymbol->get_addressSection( &isect );
+    pSymbol->get_addressOffset( &offset );
+    pSymbol->get_length( &length );
+    if ( isect != 0 && length > 0 )
+    {
+        CComPtr< IDiaEnumLineNumbers > pLines;
+        if ( SUCCEEDED( pSession->findLinesByAddr(
+                                      isect,
+                                      offset,
+                                      static_cast<DWORD>( length ),
+                                      &pLines )
+                      )
+           )
+        {
+            // Do something with the enumeration
+        }
+    }
+}
+```
+
+## <a name="requirements"></a>Wymagania
+Nagłówek: Dia2.h
+
+Biblioteka: diaguids.lib
+
+DLL: msdia80.dll
+
+## <a name="see-also"></a>Zobacz też
+[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
+[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
+[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

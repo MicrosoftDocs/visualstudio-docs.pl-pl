@@ -9,15 +9,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 165676bae3b3a0b6a5e0fd51f2b505701a0eba2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795523"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227558"
 ---
 # <a name="primitives-activity-designers"></a>Projektanci działań Primitives
-Projektanci działań primitives są używane do tworzenia i konfigurowania różnych działań w <xref:System.Activities> przestrzeni nazw, takich jak przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  
+Projektanci działań primitives są używane do tworzenia i konfigurowania różnych działań w <xref:System.Activities.Statements> przestrzeni nazw, takich jak przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Assign](../workflow-designer/assign-activity-designer.md)  
@@ -49,5 +49,6 @@ Projektanci działań primitives są używane do tworzenia i konfigurowania ró�
   
  [Obsługa błędów](../workflow-designer/error-handling-activity-designers.md)  
   
-## <a name="see-also"></a>Zobacz też  
- [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)
+## <a name="see-also"></a>Zobacz też
+
+-[Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56ae83f41a53ad35c1bec0fd4e0d256f0a8575d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c547dd00f7a5a31b949d22c13f305050355207c7
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926257"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227319"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie natywnym
 Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Wątek nazewnictwa jest przydatny do identyfikowania wątków zainteresowanie **wątków** okna podczas debugowania uruchomionego procesu. Posiadanie uznane o silnych nazwach wątków przydatne może być również podczas wykonywania po zakończeniu działania debugowania za pomocą inspekcji zrzutu awaryjnego i analizowania wydajności przechwytuje przy użyciu różnych narzędzi.
@@ -35,14 +35,14 @@ Warto zauważyć, że _zarówno_ podejścia można ze sobą, jeśli to konieczne
 ### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Ustawianie nazw wątków przy użyciu `SetThreadDescription`
 
 Korzyści:
- * Nazwy wątków są widoczne podczas debugowania w programie Visual Studio, niezależnie od tego, czy debuger został dołączony do procesu w czasie, które jest wywoływane SetThreadDescription.
- * Nazwy wątków są widoczne podczas przeprowadzania późniejszej debugowania, ładując zrzut awaryjny w programie Visual Studio.
- * Nazwy wątków również są widoczne, gdy przy użyciu innych narzędzi, takich jak [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugera i [Analizator wydajności Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizator wydajności.
+* Nazwy wątków są widoczne podczas debugowania w programie Visual Studio, niezależnie od tego, czy debuger został dołączony do procesu w czasie, które jest wywoływane SetThreadDescription.
+* Nazwy wątków są widoczne podczas przeprowadzania późniejszej debugowania, ładując zrzut awaryjny w programie Visual Studio.
+* Nazwy wątków również są widoczne, gdy przy użyciu innych narzędzi, takich jak [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugera i [Analizator wydajności Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizator wydajności.
 
 Ostrzeżenia:
- * Nazwy wątków są tylko widoczne w programie Visual Studio 2017 w wersji 15.6 i nowsze.
- * Gdy plik zrzutu po zakończeniu działania debugowania awarii, nazwy wątku są widoczne tylko w przypadku awarii został utworzony w systemie Windows 10 w wersji 1607, Windows Server 2016 lub nowszych wersjach systemu Windows.
- 
+* Nazwy wątków są tylko widoczne w programie Visual Studio 2017 w wersji 15.6 i nowsze.
+* Gdy plik zrzutu po zakończeniu działania debugowania awarii, nazwy wątku są widoczne tylko w przypadku awarii został utworzony w systemie Windows 10 w wersji 1607, Windows Server 2016 lub nowszych wersjach systemu Windows.
+
 *Przykład:*
 
 ```C++
@@ -63,52 +63,52 @@ int main()
 
 ### <a name="set-a-thread-name-by-throwing-an-exception"></a>Ustawianie nazw wątków, zostanie zgłoszony wyjątek
 
-Innym sposobem na Ustawianie nazw wątków w programie służy do przekazywania nazwa żądanego wątku do debugera programu Visual Studio, zgłaszając wyjątek specjalnie skonfigurować. 
+Innym sposobem na Ustawianie nazw wątków w programie służy do przekazywania nazwa żądanego wątku do debugera programu Visual Studio, zgłaszając wyjątek specjalnie skonfigurować.
 
 Korzyści:
- * Działa we wszystkich wersjach programu Visual Studio.
+* Działa we wszystkich wersjach programu Visual Studio.
 
 Ostrzeżenia:
- * Tylko wtedy, gdy debuger jest dołączony w czasie, stosuje się metodę opartą na wyjątkach. 
- * Nazwy wątków ustawiane przez przy użyciu tej metody nie będą dostępne w zrzuty lub narzędzi do analizy wydajności.
- 
+* Tylko wtedy, gdy debuger jest dołączony w czasie, stosuje się metodę opartą na wyjątkach.
+* Nazwy wątków ustawiane przez przy użyciu tej metody nie będą dostępne w zrzuty lub narzędzi do analizy wydajności.
+
 *Przykład:*
 
-`SetThreadName` Funkcja poniżej przedstawiono to podejście oparte na wyjątek. Należy pamiętać, że nazwa wątku będą automatycznie skopiowane do wątku, tak aby pamięci dla `threadName` parametru może być zwolnione po `SetThreadName` ukończenie wywołania. 
+`SetThreadName` Funkcja poniżej przedstawiono to podejście oparte na wyjątek. Należy pamiętać, że nazwa wątku będą automatycznie skopiowane do wątku, tak aby pamięci dla `threadName` parametru może być zwolnione po `SetThreadName` ukończenie wywołania.
 
 ```C++
-//  
-// Usage: SetThreadName ((DWORD)-1, "MainThread");  
-//  
-#include <windows.h>  
-const DWORD MS_VC_EXCEPTION = 0x406D1388;  
-#pragma pack(push,8)  
-typedef struct tagTHREADNAME_INFO  
-{  
-    DWORD dwType; // Must be 0x1000.  
-    LPCSTR szName; // Pointer to name (in user addr space).  
-    DWORD dwThreadID; // Thread ID (-1=caller thread).  
-    DWORD dwFlags; // Reserved for future use, must be zero.  
- } THREADNAME_INFO;  
-#pragma pack(pop)  
-void SetThreadName(DWORD dwThreadID, const char* threadName) {  
-    THREADNAME_INFO info;  
-    info.dwType = 0x1000;  
-    info.szName = threadName;  
-    info.dwThreadID = dwThreadID;  
-    info.dwFlags = 0;  
-#pragma warning(push)  
-#pragma warning(disable: 6320 6322)  
-    __try{  
-        RaiseException(MS_VC_EXCEPTION, 0, sizeof(info) / sizeof(ULONG_PTR), (ULONG_PTR*)&info);  
-    }  
-    __except (EXCEPTION_EXECUTE_HANDLER){  
-    }  
-#pragma warning(pop)  
-}  
-```  
+//
+// Usage: SetThreadName ((DWORD)-1, "MainThread");
+//
+#include <windows.h>
+const DWORD MS_VC_EXCEPTION = 0x406D1388;
+#pragma pack(push,8)
+typedef struct tagTHREADNAME_INFO
+{
+    DWORD dwType; // Must be 0x1000.
+    LPCSTR szName; // Pointer to name (in user addr space).
+    DWORD dwThreadID; // Thread ID (-1=caller thread).
+    DWORD dwFlags; // Reserved for future use, must be zero.
+} THREADNAME_INFO;
+#pragma pack(pop)
+void SetThreadName(DWORD dwThreadID, const char* threadName) {
+    THREADNAME_INFO info;
+    info.dwType = 0x1000;
+    info.szName = threadName;
+    info.dwThreadID = dwThreadID;
+    info.dwFlags = 0;
+#pragma warning(push)
+#pragma warning(disable: 6320 6322)
+    __try{
+        RaiseException(MS_VC_EXCEPTION, 0, sizeof(info) / sizeof(ULONG_PTR), (ULONG_PTR*)&info);
+    }
+    __except (EXCEPTION_EXECUTE_HANDLER){
+    }
+#pragma warning(pop)
+}
+```
 
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+## <a name="see-also"></a>Zobacz też
+[Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
+[Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)  
+[Instrukcje: Ustawianie nazwy wątku w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)
