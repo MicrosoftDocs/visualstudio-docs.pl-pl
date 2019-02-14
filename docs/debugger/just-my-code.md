@@ -1,6 +1,6 @@
 ---
 title: Debugowanie kodu użytkownika przy użyciu tylko mój kod | Dokumentacja firmy Microsoft
-ms.date: 10/22/2018
+ms.date: 02/13/2019
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 497a8eb821766fcc1823d93d73733add9853388c
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 18471a94720a7e625cc183685a83c9f5388c64bb
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227712"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270618"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod
 
@@ -80,24 +80,24 @@ Jeśli wystąpi nieobsługiwany wyjątek w kodzie niezwiązanych z użytkownikie
 Włączenie wyjątku pierwszej szansy wyjątki wywołujący wiersz kodu użytkownika jest wyróżniona na zielono w kodzie źródłowym. **Stos wywołań** adnotowanej ramki etykietą jest wyświetlana w oknie **[kod zewnętrzny]**.
 
 ## <a name="BKMK_C___Just_My_Code"></a> Tylko mój kod w języku C++
+  
+Począwszy od programu Visual Studio 2017 w wersji 15.8, tylko mój kod dla kodu przechodzenie krok po kroku jest również obsługiwany. Ta funkcja wymaga również użycia [/JMC (tylko mój kod debugowanie)](/cpp/build/reference/jmc) przełącznika kompilatora. Przełącznik jest domyślnie włączona. Aby uzyskać **stos wywołań** okna i wywołanie stosu pomocy technicznej w tylko mój kod, opcja /JMC nie jest wymagana.
 
-W języku C++, włączenie tylko mój kod jest taki sam, jak za pomocą [/JMC (tylko mój kod debugowanie)](/cpp/build/reference/jmc) przełącznika kompilatora.
+<a name="BKMK_CPP_User_and_non_user_code"></a> Jest uważany za kod użytkownika, plik PDB dla pliku binarnego zawierającego kod użytkownika muszą być ładowane przez debuger (Użyj **modułów** okna, aby to sprawdzić).
 
-<a name="BKMK_CPP_User_and_non_user_code"></a> Tylko mój kod różni się w języku C++ niż .NET Framework i JavaScript, ponieważ można określić pliki niezwiązanych z użytkownikiem oddzielnie dla przechodzenie krok po kroku zachowanie i **stos wywołań** okna.
+Dla zachowania stosu wywołań, tak jak w **stos wywołań** oknie tylko mój kod w języku C++ traktuje tylko te funkcje, aby być *niebędący kodem użytkownika*:
 
-Tylko mój kod w języku C++ traktuje tylko te funkcje za kod niezwiązany z użytkownikiem:
+- Funkcje za pomocą informacji o źródle pozbawionego włókien w pliku symboli.
+- Funkcje, w której pliki symboli oznacza, że brak pliku źródłowego, odpowiadający ramki stosu.
+- Określona w funkcji  *\*.natjmc* pliki *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
+  
+Kod zachowania przechodzenia krok po kroku, tylko mój kod w języku C++ traktuje tylko te funkcje, aby być *niebędący kodem użytkownika*:
+  
+- Funkcje, dla których odpowiedni plik PDB nie został załadowany w debugerze.
+- Określona w funkcji  *\*.natjmc* pliki *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
 
-- Aby uzyskać **stos wywołań** okna:
-
-  - Funkcje za pomocą informacji o źródle pozbawionego włókien w pliku symboli.
-  - Funkcje, w której pliki symboli oznacza, że brak pliku źródłowego, odpowiadający ramki stosu.
-  - Określona w funkcji  *\*.natjmc* pliki *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-
-- Do przechodzenia zachowanie:
-
-  - Określona w funkcji  *\*.natstepfilter* pliki *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-
-Możesz utworzyć *.natstepfilter* i *.natjmc* plików, aby dostosować zachowanie przechodzenia krok po kroku tylko mój kod i **stos wywołań** okna. Zobacz [zachowania przechodzenia krok po kroku Dostosowywanie C++](#BKMK_CPP_Customize_stepping_behavior) i [zachowanie stosu wywołań Dostosowywanie C++](#BKMK_CPP_Customize_call_stack_behavior).
+> [!NOTE]
+> Obsługę kodu przechodzenia krok po kroku w tylko mój kod, kodu w języku C++ muszą być skompilowane z za pomocą kompilatorów MSVC w programie Visual Studio 15.8 w wersji zapoznawczej 3 lub nowszym oraz przełącznika kompilatora /JMC musi być włączona (jest włączony domyślnie). Aby uzyskać więcej informacji, zobacz [Dostosowywanie C++ stos wywołań i kodem zachowanie przechodzenia krok po kroku](#BKMK_CPP_Customize_call_stack_behavior)) to [wpis w blogu](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Dla kodu skompilowane przy użyciu starszego kompilatora *.natstepfilter* pliki są jedynym sposobem, aby dostosować program code przechodzenie krok po kroku, który jest niezależny od tylko mój kod. Zobacz [zachowania przechodzenia krok po kroku Dostosowywanie C++](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Podczas debugowania języka C++:
 
@@ -108,117 +108,117 @@ W przypadku braku więcej kodu użytkownika profilowanie będzie kontynuowane, d
 
 Jeśli debuger przerwie działanie na kodzie niezwiązanych z użytkownikiem (na przykład użyć **debugowania** > **Przerwij wszystko** i oraz ich wstrzymywania w kodzie niezwiązanych z użytkownikiem), wykonywanie krokowe odbywa się w kod niezwiązany z użytkownikiem.
 
-Jeśli debuger uderza w wyjątku, zatrzymuje na wyjątek, czy jest ono w kodzie użytkownika lub niezwiązanych z użytkownikiem. **Nieobsługiwane przez użytkownika** opcji na liście **ustawienia wyjątków** okno dialogowe, są ignorowane.
+Jeśli debuger uderza w wyjątku, zatrzymuje na wyjątek, czy jest ono w kodzie użytkownika lub niezwiązanych z użytkownikiem. **Nieobsługiwane przez użytkownika** opcji na liście **ustawienia wyjątków** okno dialogowe, są ignorowane.   
+  
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie C++ stos wywołań i kodu, przechodzenie krok po kroku zachowanie  
 
-### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosowywanie zachowania przechodzenia krok po kroku w C++
+Dla projektów języka C++, można określić moduły, pliki źródłowe i funkcji **stos wywołań** okna traktuje jako kod niezwiązany z użytkownikiem, określając je w  *\*.natjmc* plików. To dostosowanie ma zastosowanie również do kodu, przechodzenie krok po kroku, korzystając z najnowszą wersję kompilatora (zobacz [C++ tylko mój kod](#BKMK_CPP_User_and_non_user_code)).
+  
+- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać *.natjmc* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natjmc* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.  
 
-W projektach C++ można określić funkcji, aby przejść przez wymienienie ich jako kod niezwiązany z użytkownikiem w  *\*.natstepfilter* plików.
+A *.natjmc* plik jest plikiem XML o następującej składni:  
 
-- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników lokalnych z programu Visual Studio, należy dodać *.natstepfilter* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natstepfilter* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">  
+  
+  <!-- Modules -->  
+  <Module Name="ModuleSpec" />  
+  <Module Name="ModuleSpec" Company="CompanyName" />  
+  
+  <!-- Files -->  
+  <File Name="FileSpec"/>  
+  
+  <!-- Functions -->  
+  <Function Name="FunctionSpec" />  
+  <Function Name="FunctionSpec" Module ="ModuleSpec" />  
+  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />  
+  
+</NonUserCode>  
+  
+```  
 
-A *.natstepfilter* plik jest plikiem XML o następującej składni:
+ **Atrybuty elementu modułów**  
+  
+|Atrybut|Opis|  
+|---------------|-----------------|  
+|`Name`|Wymagana. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Nakazuje debugerowi Traktuj wszystkie moduły w *\3rdParty\UtilLibs* na dowolnym dysku jako kodu zewnętrznego.|  
+|`Company`|Opcjonalna. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnym. Ten atrybut służy do odróżniania modułów.|  
+  
+ **Atrybuty elementu pliku**  
+  
+|Atrybut|Opis|  
+|---------------|-----------------|  
+|`Name`|Wymagana. Pełna ścieżka pliku źródłowego lub pliki, które mają być traktowane jako kodu zewnętrznego. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|  
+  
+ **Atrybuty elementów — funkcja**  
+  
+|Atrybut|Opis|  
+|---------------|-----------------|  
+|`Name`|Wymagana. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|  
+|`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcji o tej samej nazwie.|  
+|`ExceptionImplementation`|Po ustawieniu `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek, a nie z tej funkcji.|  
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
-    <Function>
-        <Name>FunctionSpec</Name>
-        <Action>StepAction</Action>
-    </Function>
-    <Function>
-        <Name>FunctionSpec</Name>
-        <Module>ModuleSpec</Module>
-        <Action>StepAction</Action>
-    </Function>
-</StepFilter>
+###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosowywanie zachowania przechodzenia krok po kroku C++ niezależne od ustawień tylko mój kod
 
-```
+W projektach C++ można określić funkcji, aby przejść przez wymienienie ich jako kod niezwiązany z użytkownikiem w  *\*.natstepfilter* plików. Funkcje wymienione w  *\*.natstepfilter* pliki nie są zależne od ustawień tylko mój kod.
+  
+- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników lokalnych z programu Visual Studio, należy dodać *.natstepfilter* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natstepfilter* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.  
+  
+A *.natstepfilter* plik jest plikiem XML o następującej składni:  
+  
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">  
+    <Function>  
+        <Name>FunctionSpec</Name>  
+        <Action>StepAction</Action>  
+    </Function>  
+    <Function>  
+        <Name>FunctionSpec</Name>  
+        <Module>ModuleSpec</Module>  
+        <Action>StepAction</Action>  
+    </Function>  
+</StepFilter>  
+  
+```  
+  
+|Element|Opis|  
+|-------------|-----------------|  
+|`Function`|Wymagana. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|  
+|`Name`|Wymagana. ECMA 262 sformatowane wyrażeń regularnych, określając nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Nakazuje debugerowi, że wszystkie metody w `MyNS::MyClass` należy uznać za kod niezwiązany z użytkownikiem. W dopasowaniu jest uwzględniana wielkość liter.|  
+|`Module`|Opcjonalna. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|  
+|`Action`|Wymagana. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> `NoStepInto`  -Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji.<br /> `StepInto`  -Nakazuje debugerowi na wkroczenie do funkcji zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.| 
+  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod języka JavaScript  
 
-|Element|Opis|
-|-------------|-----------------|
-|`Function`|Wymagana. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|
-|`Name`|Wymagana. ECMA 262 sformatowane wyrażeń regularnych, określając nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Nakazuje debugerowi, że wszystkie metody w `MyNS::MyClass` należy uznać za kod niezwiązany z użytkownikiem. W dopasowaniu jest uwzględniana wielkość liter.|
-|`Module`|Opcjonalna. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|
-|`Action`|Wymagana. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> `NoStepInto`  -Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji.<br /> `StepInto`  -Nakazuje debugerowi na wkroczenie do funkcji zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|
+<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript tylko mój kod kontrolki przechodzenie krok po kroku, a następnie wywołać wyświetlanie stosu przez skategoryzowanie kodu w jednym z tych klasyfikacji:  
 
-### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie zachowania dotyczącego stosu wywołań języka C++
+|||  
+|-|-|  
+|**MyCode**|Kod użytkownika, który umożliwia zbieranie i kontrolowanie.|  
+|**LibraryCode**|Kod niezwiązany z użytkownikiem z bibliotek, które regularnie używane i aplikacji zależy od działał poprawnie (na przykład WinJS lub jQuery).|  
+|**UnrelatedCode**|Kod niezwiązany z użytkownikiem w aplikację, która nie jest własnością i aplikacja nie jest zależny od działał poprawnie. Na przykład advertising SDK, który wyświetla reklamy, może być UnrelatedCode. W projektach platformy uniwersalnej systemu Windows każdy kod, który jest ładowany do aplikacji za pomocą protokołu HTTP lub HTTPS identyfikatora URI jest również uważana za UnrelatedCode.|  
 
-Dla projektów języka C++, można określić moduły, pliki źródłowe i funkcji **stos wywołań** okna traktuje jako kod niezwiązany z użytkownikiem, określając je w  *\*.natjmc* plików.
+Debuger JavaScript klasyfikuje kod jako użytkownika lub niezwiązanych z użytkownikiem w następującej kolejności:  
+  
+1. Domyślne klasyfikacje.  
+   -   Skrypt wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcja **MyCode**.  
+   -   Skrypt wykonywany, przekazując ciąg do `Function` Konstruktor jest **LibraryCode**.  
+   -   Skrypt w odwołaniu do struktury, takich jak WinJS lub zestawu Azure SDK jest **LibraryCode**.  
+   -   Skrypt wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcje **UnrelatedCode**.  
+   
+2. Klasyfikacje, określony dla wszystkich projektów Visual Studio JavaScript w *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* pliku.  
+   
+3. Klasyfikacje w *mycode.json* pliku bieżącego projektu.  
+  
+Każdy krok klasyfikacji zastąpienia poprzednich kroków. 
 
-- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać *.natjmc* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natjmc* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.
+Inny kod jest klasyfikowana jako **MyCode**.  
 
-A *.natjmc* plik jest plikiem XML o następującej składni:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">
-
-  <!-- Modules -->
-  <Module Name="ModuleSpec" />
-  <Module Name="ModuleSpec" Company="CompanyName" />
-
-  <!-- Files -->
-  <File Name="FileSpec"/>
-
-  <!-- Functions -->
-  <Function Name="FunctionSpec" />
-  <Function Name="FunctionSpec" Module ="ModuleSpec" />
-  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />
-
-</NonUserCode>
-
-```
-
-**Atrybuty elementu modułów**
-
-|Atrybut|Opis|
-|---------------|-----------------|
-|`Name`|Wymagana. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> Nakazuje debugerowi Traktuj wszystkie moduły w *\3rdParty\UtilLibs* na dowolnym dysku jako kodu zewnętrznego.|
-|`Company`|Opcjonalna. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnym. Ten atrybut służy do odróżniania modułów.|
-
-**Atrybuty elementu pliku**
-
-|Atrybut|Opis|
-|---------------|-----------------|
-|`Name`|Wymagana. Pełna ścieżka pliku źródłowego lub pliki, które mają być traktowane jako kodu zewnętrznego. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|
-
-**Atrybuty elementów — funkcja**
-
-|Atrybut|Opis|
-|---------------|-----------------|
-|`Name`|Wymagana. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|
-|`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcji o tej samej nazwie.|
-|`ExceptionImplementation`|Po ustawieniu `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek, a nie z tej funkcji.|
-
-## <a name="BKMK_JavaScript_Just_My_Code"></a> Tylko mój kod języka JavaScript
-
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript tylko mój kod kontrolki przechodzenie krok po kroku, a następnie wywołać wyświetlanie stosu przez skategoryzowanie kodu w jednym z tych klasyfikacji:
-
-|||
-|-|-|
-|**MyCode**|Kod użytkownika, który umożliwia zbieranie i kontrolowanie.|
-|**LibraryCode**|Kod niezwiązany z użytkownikiem z bibliotek, które regularnie używane i aplikacji zależy od działał poprawnie (na przykład WinJS lub jQuery).|
-|**UnrelatedCode**|Kod niezwiązany z użytkownikiem w aplikację, która nie jest własnością i aplikacja nie jest zależny od działał poprawnie. Na przykład advertising SDK, który wyświetla reklamy, może być UnrelatedCode. W projektach platformy uniwersalnej systemu Windows każdy kod, który jest ładowany do aplikacji za pomocą protokołu HTTP lub HTTPS identyfikatora URI jest również uważana za UnrelatedCode.|
-
-Debuger JavaScript klasyfikuje kod jako użytkownika lub niezwiązanych z użytkownikiem w następującej kolejności:
-
-1. Domyślne klasyfikacje.
-   - Skrypt wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcja **MyCode**.
-   - Skrypt wykonywany, przekazując ciąg do `Function` Konstruktor jest **LibraryCode**.
-   - Skrypt w odwołaniu do struktury, takich jak WinJS lub zestawu Azure SDK jest **LibraryCode**.
-   - Skrypt wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcje **UnrelatedCode**.
-
-2. Klasyfikacje, określony dla wszystkich projektów Visual Studio JavaScript w *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* pliku.
-
-3. Klasyfikacje w *mycode.json* pliku bieżącego projektu.
-
-Każdy krok klasyfikacji zastąpienia poprzednich kroków.
-
-Inny kod jest klasyfikowana jako **MyCode**.
-
-Możesz zmodyfikować domyślne klasyfikacje i klasyfikowania określonych plików i adresy URL jako kod użytkownika lub niezwiązanych z użytkownikiem, dodając *.json* plik o nazwie *mycode.json* do głównego folderu projektu w języku JavaScript. Zobacz [dostosować tylko mój kod JavaScript](#BKMK_JS_Customize_Just_My_Code).
+Możesz zmodyfikować domyślne klasyfikacje i klasyfikowania określonych plików i adresy URL jako kod użytkownika lub niezwiązanych z użytkownikiem, dodając *.json* plik o nazwie *mycode.json* do głównego folderu projektu w języku JavaScript. Zobacz [dostosować tylko mój kod JavaScript](#BKMK_JS_Customize_Just_My_Code). 
 
 <a name="BKMK_JS_Stepping_behavior"></a> Podczas debugowania języka JavaScript:
 
