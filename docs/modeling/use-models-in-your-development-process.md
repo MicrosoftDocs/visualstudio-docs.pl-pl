@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f528f650f51d2d0db2aed2b40dcc6442d3b74b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950464"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315810"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
@@ -133,7 +133,7 @@ Różne rodzaje diagramów są przydatne do opisywania projektu na różnych poz
 |-|-|
 |**Filmy wideo**|![Link do klipu wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę wideo: Sposób tworzenia i używania modeli UML i diagramów (Visual Studio 2010 w wersji Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: UML w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę serii: Narzędzia UML i rozszerzalność (Visual Studio 2010 w wersji Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Fora**|- [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogi**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Architektura Visual Studio — wskazówki dotyczące oprzyrządowania](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Zobacz także

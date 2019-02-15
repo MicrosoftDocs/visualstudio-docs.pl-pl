@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012277"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318748"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
-Za pomocą programu Visual Studio 2017, oferujemy [szybszego i lżejszego środowisko instalacji programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) , zmniejsza wpływ programu Visual Studio w systemach użytkowników, zapewniając użytkownikom większy wybór za pośrednictwem obciążeń i funkcje są instalowane. Aby obsługiwać te ulepszenia, firma Microsoft wprowadzone zmiany modelu rozszerzalności i wprowadzono kilka zmian niepowodujących rozszerzalności programu Visual Studio. W tym dokumencie opisano szczegóły techniczne dotyczące tych zmian i co można zrobić pozwalających im sprostać. Należy pamiętać, że pewne informacje jest szczegółów implementacji w momencie i może być później zmienić.
+Za pomocą programu Visual Studio 2017, oferujemy [szybszego i lżejszego środowisko instalacji programu Visual Studio](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) , zmniejsza wpływ programu Visual Studio w systemach użytkowników, zapewniając użytkownikom większy wybór za pośrednictwem obciążeń i funkcje są instalowane. Aby obsługiwać te ulepszenia, firma Microsoft wprowadzone zmiany modelu rozszerzalności i wprowadzono kilka zmian niepowodujących rozszerzalności programu Visual Studio. W tym dokumencie opisano szczegóły techniczne dotyczące tych zmian i co można zrobić pozwalających im sprostać. Należy pamiętać, że pewne informacje jest szczegółów implementacji w momencie i może być później zmienić.
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>Zmiany wpływające na VSIX format i instalacji
 
@@ -28,7 +28,7 @@ Zmiany formatu VSIX obejmują:
 * Deklaracja wymagań wstępnych Instalatora. Spełniającej obietnicy lekkie, szybkie — Instalowanie programu Visual Studio Instalator oferuje więcej opcji konfiguracji użytkowników. W rezultacie w zapewnienie zainstalowania funkcji i składniki wymagane przez rozszerzenie rozszerzenia należy zadeklarować ich zależności.
   * Instalator programu Visual Studio 2017 będzie automatycznie oferować uzyskanie i zainstalowanie wymaganych składników dla użytkownika w ramach instalacji rozszerzenia.
   * Użytkownicy będą również ostrzegani podczas próby instalacji rozszerzenia, które nie zostało utworzone przy użyciu nowego formatu VSIX v3, nawet wtedy, gdy zostały oznaczone w manifeście jako przeznaczone dla wersji 15.0.
-* Poprawione możliwości w zakresie VSIX format. Spełniającej [instalacji o niskim wpływie na](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) programu Visual Studio, który również obsługuje instalacje side-by-side, firma Microsoft nie jest już Zapisz większość danych konfiguracji do rejestru systemowego i zostały przeniesione do programu Visual Studio specyficzne dla zestawów z globalnej pamięci podręcznej zestawów. Zwiększyliśmy także możliwości VSIX format i aparat instalacji VSIX, umożliwiając użyj go zamiast MSI lub EXE, aby zainstalować rozszerzenia dla niektórych typów instalacji.
+* Poprawione możliwości w zakresie VSIX format. Spełniającej [instalacji o niskim wpływie na](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) programu Visual Studio, który również obsługuje instalacje side-by-side, firma Microsoft nie jest już Zapisz większość danych konfiguracji do rejestru systemowego i zostały przeniesione do programu Visual Studio specyficzne dla zestawów z globalnej pamięci podręcznej zestawów. Zwiększyliśmy także możliwości VSIX format i aparat instalacji VSIX, umożliwiając użyj go zamiast MSI lub EXE, aby zainstalować rozszerzenia dla niektórych typów instalacji.
 
   Nowe funkcje obejmują:
 

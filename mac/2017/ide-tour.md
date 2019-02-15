@@ -6,20 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917003"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316733"
 ---
-# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac Tour
+# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac w wersji zapoznawczej samouczek
 
-Program Visual Studio for Mac ewoluuje skoncentrowane na telefon komórkowy środowiska IDE platformy Xamarin, Xamarin Studio w środowisko programistyczne stawiana jest mobilność i chmurę na komputerze Mac. To narzędzie dla deweloperów, umożliwia korzystanie z możliwości platformy .NET do tworzenia aplikacji dla wszystkich platform wymaganych przez użytkowników.
+> [!NOTE]
+> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md) w wersji zapoznawczej na potrzeby testowania.
 
-Użytkownik środowiska programu Visual Studio dla komputerów Mac jest podobny do jego odpowiednika Windows, ale o działaniu natywnych systemu macOS. Tworzenia, otwierania i tworzenia aplikacji będzie pracę w znanym środowisku dla każdego, kto ma korzystał już z programu Visual Studio na Windows. Ponadto program Visual Studio for Mac wykorzystuje wiele zaawansowanych narzędzi, które jego odpowiednika Windows zaawansowane IDE. Platformę kompilatora programu Roslyn jest używana do refaktoryzacji i technologii IntelliSense. Silnik projektu systemu i kompilacji, użyj programu MSBuild, a jego Edytor źródła obsługuje pakiety TextMate. Używa tego samego aparatów debugera dla aplikacji platformy Xamarin i .NET Core i ten sam projektantów Xamarin.iOS i Xamarin.Android.
+Program Visual Studio dla komputerów Mac jest .NET _zintegrowanego środowiska programistycznego_ na komputerze Mac, który może służyć do edycji, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Oprócz oczekiwane funkcje, takie jak standardowy edytor i debugera Visual Studio for Mac obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i kontroli źródła do aparatu ese procesu tworzenia oprogramowania.
 
-W tym artykule przedstawiono różne części programu Visual Studio dla komputerów Mac, podając informacje o niektórych funkcji, które ułatwiają zaawansowane narzędzie do tworzenia aplikacji dla wielu platform.
+Program Visual Studio for Mac obsługuje wiele typów plików jako jego odpowiednika Windows, takich jak `.csproj`, `.fsproj`, lub `.sln` pliki i obsługuje funkcje, takie jak EditorConfig, co oznacza, użyć środowiska IDE, który w najlepszy dla siebie.
+Tworzenia, otwierania i tworzenia aplikacji będzie pracę w znanym środowisku dla każdego, kto ma korzystał już z programu Visual Studio na Windows. Ponadto program Visual Studio for Mac wykorzystuje wiele zaawansowanych narzędzi, które jego odpowiednika Windows zaawansowane IDE. Platformę kompilatora programu Roslyn jest używana do refaktoryzacji i technologii IntelliSense. Silnik projektu systemu i kompilacji, użyj programu MSBuild, a jego Edytor źródła obsługuje pakiety TextMate. Używa tego samego aparatów debugera dla aplikacji platformy Xamarin i .NET Core i ten sam projektantów Xamarin.iOS i Xamarin.Android.
+
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Co można zrobić w programie Visual Studio dla komputerów Mac
+
+Program Visual Studio for Mac obsługuje następujące typy tworzenia:
+
+- Aplikacje sieci web platformy ASP.NET Core za pomocą C#, F#i pomoc techniczna dla stron Razor, JavaScript i TypeScript
+- Aplikacje konsoli .NET core za pomocą C# lubF#
+- Gry Unity dla wielu platform i aplikacji przy użyciuC#
+- Aplikacje systemu android, iOS, tvOS i watchOS w środowisku Xamarin za pomocą C# lub F# i XAML
+- Cocoa aplikacje komputerowe w C# lubF#
+
+W tym artykule przedstawiono różne części programu Visual Studio dla komputerów Mac, podając informacje o niektórych funkcji, które ułatwiają zaawansowane narzędzie do tworzenia tych aplikacji.
 
 ## <a name="ide-tour"></a>Samouczek środowiska IDE
 

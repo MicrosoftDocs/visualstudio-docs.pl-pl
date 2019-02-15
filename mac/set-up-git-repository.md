@@ -3,14 +3,14 @@ title: Konfigurowanie repozytorium Git
 description: Przy użyciu narzędzia Git i Subversion w programie Visual Studio dla komputerów Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796973"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317351"
 ---
 # <a name="set-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 
@@ -87,9 +87,45 @@ Jeśli masz istniejący projekt, który _nie_ już w kontroli wersji, wykonaj na
 
 ## <a name="publishing-a-new-project"></a>Publikowanie nowego projektu
 
-Okno dialogowe nowego projektu może służyć do opublikowania nowego projektu przy użyciu narzędzia git. Aby ją włączyć, wybierz **za pomocą narzędzia git do kontroli wersji.** Zaznacz pole wyboru, jak pokazano na poniższym zrzucie ekranu. Spowoduje to zainicjowanie repozytorium i Dodaj plik gitignore opcjonalne:
+Okno dialogowe nowego projektu może służyć do tworzenia nowego projektu z repozytorium lokalnego narzędzia git. Aby ją włączyć, wybierz **za pomocą narzędzia git do kontroli wersji** pole wyboru, jak pokazano na poniższym zrzucie ekranu. Spowoduje to zainicjowanie repozytorium i Dodaj plik gitignore opcjonalne:
 
-![Wypchnij zmiany do repozytorium zdalnego](media/version-control-git12.png)
+![Utwórz nowy projekt z obsługą usługi git](media/version-control-git-publish-new1.png)
+
+Wykonaj poniższe kroki, aby wypchnąć nowe repozytorium lokalne do nowego repozytorium usługi GitHub:
+
+> [!NOTE]
+> Jeśli jeszcze nie utworzono repozytorium GitHub, zapoznaj się [Tworzenie zdalnego repozytorium w serwisie GitHub](#creating-a-remote-repo-on-github) sekcji.
+
+1. Tworzenie pierwszego zatwierdzenia, przechodząc do **kontroli wersji > Przejrzyj rozwiązanie i zatwierdź** na pasku Menu.
+
+2. Na karcie Stan wybierz **zatwierdzić** w lewym górnym rogu.
+
+3. Napisz wiadomość dotyczącą zatwierdzenia, na przykład "pierwsze zatwierdzenie", a następnie kliknij pozycję **zatwierdzenia**:
+
+    ![Zatwierdź początkowej zmiany do repozytorium git](media/version-control-git-publish-new2.png)
+
+4. Następnie na pasku Menu, przejdź do **kontroli wersji > Zarządzanie gałęziami i źródłami zdalnymi**.
+
+5. Przejdź do **zdalnych źródeł** , a następnie kliknij **Dodaj**.
+
+6. W **zdalnego źródła** okna, Dodaj szczegóły wcześniej utworzonego repozytorium GitHub i kliknij przycisk **OK**:
+
+    ![Konfigurowanie zdalnych źródeł dla repozytorium git](media/version-control-git-publish-new3.png)
+
+7. Zamknij **Konfiguracja repozytorium Git** okna, a następnie na pasku Menu, przejdź do **kontroli wersji > wypychanie zmian**.
+
+8. W **Wypchnij do repozytorium** kliknij okno **wypychanie zmian** przycisku:
+
+    ![Wypchnij zmiany do repozytorium zdalnego](media/version-control-git-publish-new4.png)
+
+9. Po wyświetleniu monitu wprowadź nazwę użytkownika usługi GitHub i hasło.
+
+> [!NOTE]
+> Jeśli Twoje konto ma uwierzytelniania dwuskładnikowego (2FA) włączone, należy utworzyć Token dostępu, który jest używany zamiast hasła. Jeśli token dostępu nie została utworzona, wykonaj kroki w Git [Token dostępu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentacji.
+
+Program Visual Studio for Mac zostanie teraz Wypchnij zmiany do zdalnego repozytorium GitHub:
+
+![Wypychanie potwierdzenia pomyślnie Ukończono operację](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Zapoznaj się z istniejącym repozytorium
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 693c63e7d1094974643d17c3899a7c7c93f9f5d0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984226"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315797"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debugowanie aplikacji platformy UWP przy użyciu pobieranych z wyprzedzeniem zawartości w programie Visual Studio
   
@@ -40,4 +40,4 @@ ms.locfileid: "54984226"
 >  Powtórz te czynności przy dodawaniu lub zmodyfikować zawartość określona witryna sieci web.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wpis w blogu: Wyzwalanie pobierania z wyprzedzeniem dla aplikacji Windows Store w Visual Studio 2013 Update 2](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+ [Wpis w blogu: Wyzwalanie pobierania z wyprzedzeniem dla aplikacji Windows Store w Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

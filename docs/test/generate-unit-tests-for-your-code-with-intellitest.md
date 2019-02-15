@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6bdb40610050f03e54b499b6bc44a57faa09cb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907753"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317422"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest
 
@@ -157,4 +157,4 @@ Następnie uruchom test IntelliTest do generowania testów jednostkowych poszcze
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>PYT.: Można dowiedzieć się więcej na temat sposobu generowania testów?
 
-**ODP.:** Tak, aby uzyskać ogólne omówienie, przeczytaj ten [wpis w blogu](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).
+**ODP.:** Tak, aby uzyskać ogólne omówienie, przeczytaj ten [wpis w blogu](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

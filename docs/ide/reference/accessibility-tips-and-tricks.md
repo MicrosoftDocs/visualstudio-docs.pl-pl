@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fddaedca2e1e1728916a2e12ea9d9538081be96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954052"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318556"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
 > [!TIP]
-> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
+> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
 Visual Studio ma wbudowanych funkcji ułatwień dostępu, które są zgodne z czytnikami ekranu i innych technologii pomocniczych. Ten temat zawiera listę typowych kombinacje klawiszy skrótu można używać do wykonywania zadań przy użyciu tylko klawiatury i zawiera informacje o używaniu motywy o wysokim kontraście poprawi widoczność. Także pokazuje jak ujawnić przydatnych informacji o kodzie za pomocą adnotacji i jak ustawić dźwięku wskazówek dla kompilacji i punkt przerwania zdarzenia.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3b213c9baf82317c390ee29512de946a220fb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909639"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317838"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
 
@@ -99,7 +99,7 @@ Gdy aplikacja jest gotowa do wdrożenia użytkownicy lub klienci, program Visual
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzaj kodem źródłowym i współpracować z innymi
 
-Możesz zarządzać kodem źródłowym w repozytoriach Git hostowanych przez dowolnego dostawcę, w tym witrynę GitHub. Lub użyj [usługom DevOps platformy Azure](/azure/devops/index) do zarządzania kodem, usterkami i elementami roboczymi dla całego projektu. Zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej na temat zarządzania repozytoriami Git w programie Visual Studio za pomocą programu Team Explorer. Visual Studio ma również innych funkcji kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [Git nowe funkcje w programie Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
+Możesz zarządzać kodem źródłowym w repozytoriach Git hostowanych przez dowolnego dostawcę, w tym witrynę GitHub. Lub użyj [usługom DevOps platformy Azure](/azure/devops/index) do zarządzania kodem, usterkami i elementami roboczymi dla całego projektu. Zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej na temat zarządzania repozytoriami Git w programie Visual Studio za pomocą programu Team Explorer. Visual Studio ma również innych funkcji kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [Git nowe funkcje w programie Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Usługom DevOps platformy Azure są usługami w chmurze do planu, obsługi, automatyczne i wdrażanie oprogramowania i umożliwianie współpracy w zespołach. Usługom DevOps platformy Azure obsługuje zarówno repozytoria Git (rozproszonej kontroli wersji), jak i Team Foundation Version Control (scentralizowany system kontroli wersji). Obsługiwane są też potoki ciągłej kompilacji i wersji (CI/CD) przechowywane w systemach kontroli wersji kodu. Usługom DevOps platformy Azure obsługują również Scrum i CMMI Agile metodologii programowania.
 

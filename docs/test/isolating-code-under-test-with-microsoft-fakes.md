@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937724"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316460"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolowanie testowanego kodu za pomocą struktury Microsoft Fakes
 
@@ -35,7 +35,8 @@ Podróbki występują w dwóch wersjach:
 -   Projekt programu .NET Framework
 
 > [!NOTE]
-> Projekty .NET standard nie są obsługiwane.
+> - Projekty .NET standard nie są obsługiwane.
+> - Profilowanie za pomocą programu Visual Studio nie jest dostępna do testów, które używają Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Wybór między typami podkładek i wycinków
 Projekt Visual Studio zazwyczaj zostanie zakwalifikowany jako składnik, ponieważ klasy te są opracowywane i aktualizowane równocześnie. Można rozważyć użycie wycinków i podkładek do wywołań, które dany projekt kieruje w stronę innych projektów w rozwiązaniu, lub w stronę innych zestawów, do których projekt się odnosi.

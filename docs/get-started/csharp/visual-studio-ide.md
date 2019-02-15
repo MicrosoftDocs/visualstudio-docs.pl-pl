@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4bc87c717125e23c1312fa403a90452ba0dd3e6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227842"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317227"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w środowisku IDE programu Visual Studio |C#
 
@@ -291,4 +291,4 @@ Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsz
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
 - Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Odczyt [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)

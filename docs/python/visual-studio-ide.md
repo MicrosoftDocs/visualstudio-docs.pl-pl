@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155854"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316616"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -134,4 +134,4 @@ Poznaj języka Python w programie Visual Studio w dalszej, wykonując jedną z n
 
 - Odkryj [więcej funkcji programu Visual Studio](../ide/advanced-feature-overview.md)
 - Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Odczyt [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
+- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)

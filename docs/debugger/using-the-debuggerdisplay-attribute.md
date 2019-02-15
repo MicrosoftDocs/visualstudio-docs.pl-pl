@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f50a053a88098a8f60cb891c70737ce6a64d90c
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227803"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317006"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Korzystanie z atrybutu DebuggerDisplay (C#, Visual Basic, C + +/ CLI)
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Korzystanie z atrybutu DebuggerDisplay (C#, Visual Basic F#, C + +/ CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.
 
 `DebuggerDisplay` Atrybut ma jeden argument, czyli ciąg tekstowy, który ma być wyświetlana w kolumnie wartość dla wystąpienia typu. Ten ciąg może zawierać nawiasy klamrowe (`{` i `}`). Tekst w parę nawiasów klamrowych jest oceniane jako pola, właściwości lub metody.

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016537"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318423"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -77,9 +77,9 @@ Można łatwo wyświetlić zmiennych przy użyciu okna debugera, takie jak **Obe
 3. Znajdź zmienną w **zmiennych lokalnych** okna (**debugowania > Windows > lokalne**), kliknij prawym przyciskiem myszy zmienną i wybierz **wprowadzić identyfikator obiektu**.
 
     ![Tworzenie Identyfikatora obiektu](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Ta zmienna jest identyfikator obiektu.
-  
+
 5.  Kliknij prawym przyciskiem myszy zmienna Identyfikatora obiektu, a następnie wybierz **Dodaj czujkę**.
 
 Aby uzyskać więcej informacji, zobacz [tworzenia Identyfikatora obiektu](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
@@ -123,11 +123,11 @@ Jeśli musisz debugować rodzaje problemów, które są wspólne dla aplikacji w
 #### <a name="to-show-threads-in-your-source-code"></a>Aby wyświetlić wątków w kodzie źródłowym
 
 1.  Podczas debugowania, kliknij przycisk **Pokaż wątki w źródle** przycisk ![Pokaż wątki w źródle](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") w **debugowania** paska narzędzi.
-  
+
 2.  Spójrz na oprawę w lewej części okna. W tym wierszu, zostanie wyświetlony *znacznika wątku* ikonę ![znacznika wątku](../debugger/media/dbg-thread-marker.png "ThreadMarker") o podobny dwoma wątkami ręczników. Znacznika wątku wskazuje, że wątek został zatrzymany w tej lokalizacji.
 
     Należy zauważyć, że znacznika wątku może częściowo zasłonięte przez punkt przerwania.
-  
+
 3.  Umieść wskaźnik myszy nad znacznika wątku. Pojawi się DataTip. DataTip informuje numer identyfikacyjny nazwy i wątku dla każdego wątku zatrzymania.
 
     Można również wyświetlić lokalizację wątków w [okna stosów równoległych](../debugger/get-started-debugging-multithreaded-apps.md).
@@ -162,8 +162,8 @@ Aby dowiedzieć się, jak debuger klasyfikuje kod jako kod użytkownika, zobacz 
 
 Aby uzyskać dodatkowe porady i wskazówki oraz bardziej szczegółowe informacje Zobacz te Posty na blogu:
 
-- [7 mniejszym hakerskie znanych do debugowania w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 ukrytych Klejnoty w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 mniejszym hakerskie znanych do debugowania w programie Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 ukrytych Klejnoty w programie Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Zobacz też
 [Skróty klawiaturowe](../ide/tips-and-tricks-for-visual-studio.md)

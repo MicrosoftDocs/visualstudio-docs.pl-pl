@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: af9f3031fed0711bc21709a2df7b91c4b4089a73
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270592"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318397"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Co nowego w programie Visual Studio 2019 (wersja zapoznawcza)
 
@@ -89,7 +89,7 @@ Aby uzyskać więcej informacji, zobacz [rozszerzone w Visual Studio 2019 r.: Wy
 
 I za pomocą programu Visual Studio 2019 r (wersja zapoznawcza), ta usługa jest instalowana domyślnie.
 
-   ![Animowany plik GIF, pokazujący funkcję współpracy udostępniania na żywo w programie Visual Studio 2019 r.](media/live-share-collaboration.gif)
+![Animowany plik GIF, pokazujący funkcję współpracy udostępniania na żywo w programie Visual Studio 2019 r.](media/live-share-collaboration.gif)
 
 Aby uzyskać więcej informacji, zobacz [Visual Studio udostępniania na żywo do przeglądów kodu w czasie rzeczywistym i interaktywne edukacji](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpis w blogu.
 

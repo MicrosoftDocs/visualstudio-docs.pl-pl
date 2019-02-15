@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965695"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318800"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia protokołu Language Server Protocol
 
@@ -89,9 +89,9 @@ textDocument/zmiany nazwy | tak
 ## <a name="getting-started"></a>Wprowadzenie
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 15.8 wersję zapoznawczą 3, obsługa common Language Server Protocol jest wbudowana w program Visual Studio.  Jeśli został zbudowany rozszerzeń LSP przy użyciu naszym podglądzie [języka serwera klienta VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) wersji, ich przestanie działać po do przeprowadzono uaktualnienie do wersji Preview należy zachować 15,8 3 lub nowszej.  Należy wykonać następujące czynności, które można pobrać rozszerzeń LSP spowodowana:
+> Począwszy od programu Visual Studio 15.8 wersję zapoznawczą 3, obsługa common Language Server Protocol jest wbudowana w program Visual Studio. Jeśli został zbudowany rozszerzeń LSP przy użyciu naszym podglądzie [języka serwera klienta VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) wersji, ich przestanie działać po do przeprowadzono uaktualnienie do wersji Preview należy zachować 15,8 3 lub nowszej. Należy wykonać następujące czynności, które można pobrać rozszerzeń LSP spowodowana:
 >
-> 1. Odinstaluj program Microsoft Visual Studio Language Server protokołu Preview VSIX.  Począwszy od należy zachować 15,8 w wersji zapoznawczej 4, każdym razem, gdy należy wykonać uaktualnienie w programie Visual Studio, firma Microsoft umożliwia automatyczne wykrywanie i Usuń Podgląd VSIX dla Ciebie podczas procesu uaktualniania.
+> 1. Odinstaluj program Microsoft Visual Studio Language Server protokołu Preview VSIX. Począwszy od należy zachować 15,8 w wersji zapoznawczej 4, każdym razem, gdy należy wykonać uaktualnienie w programie Visual Studio, firma Microsoft umożliwia automatyczne wykrywanie i Usuń Podgląd VSIX dla Ciebie podczas procesu uaktualniania.
 >
 > 2. Aktualizuj odwołania programu Nuget do najnowszej wersji — wersja zapoznawcza dla [pakietów LSP](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
@@ -129,10 +129,10 @@ LSP nie zawiera specyfikacji dostarczania tekstu kolorowania dla języków. Aby 
 
 4. Tworzenie *.pkgdef* pliku i Dodaj wiersz podobny do poniższego:
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. Kliknij prawym przyciskiem myszy na pliki i wybierz **właściwości**. Zmiana **kompilacji** akcji **zawartości** i **Include w VSIX** właściwości na wartość true.
 
@@ -292,31 +292,31 @@ Wykonaj następujące kroki poniżej, aby dodać obsługę ustawień do rozszerz
 
 1. Dodaj plik w formacie JSON (na przykład *MockLanguageExtensionSettings.json*) w projekcie, który zawiera ustawienia i wartości domyślnych. Na przykład:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. Kliknij prawym przyciskiem myszy plik JSON, a następnie wybierz pozycję **właściwości**. Zmiana **kompilacji** akcji "Treści" i "Dołącz VSIX" właściwości na wartość true.
 
 3. Implementowanie elementów ConfigurationSections i zwrócić listę prefiksów dla ustawień zdefiniowanych w pliku JSON (w programie Visual Studio Code to mapującej nazwę sekcji konfiguracji w pliku package.json):
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. Dodaj plik .pkgdef do projektu (Dodaj nowy plik tekstowy i zmień rozszerzenie pliku .pkgdef). Plik pkgdef powinien zawierać te informacje:
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     Przykład:
     ```xml
@@ -340,13 +340,13 @@ Wykonaj następujące kroki poniżej, aby dodać obsługę ustawień do rozszerz
 2. Użytkownik doda plik w *.vs* folder o nazwie *VSWorkspaceSettings.json*.
 3. Użytkownik dodaje wiersz do *VSWorkspaceSettings.json* pliku ustawienia zawiera serwer. Na przykład:
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>Włączanie śledzenia diagnostyki
-   Śledzenie diagnostyczne można włączyć w taki sposób, aby dane wyjściowe wszystkich wiadomości między klientem i serwerem, które mogą być przydatne podczas debugowania problemów.  Aby włączyć śledzenie diagnostyczne, wykonaj następujące czynności:
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>Włączanie śledzenia diagnostyki
+    Śledzenie diagnostyczne można włączyć w taki sposób, aby dane wyjściowe wszystkich wiadomości między klientem i serwerem, które mogą być przydatne podczas debugowania problemów. Aby włączyć śledzenie diagnostyczne, wykonaj następujące czynności:
 
 4. Otwórz lub Utwórz plik ustawień obszaru roboczego *VSWorkspaceSettings.json* (patrz "Użytkownika edytowania ustawień dla obszaru roboczego").
 5. Dodaj następujący wiersz w pliku ustawień json:
@@ -362,7 +362,7 @@ Istnieją trzy możliwe wartości szczegółowości śledzenia:
 * "Komunikaty o": śledzenie włączone, ale jedyną metodą identyfikator nazwy i odpowiedzi są śledzone.
 * "Pełne": śledzenie włączone; komunikat całego rpc jest śledzone.
 
-Jeśli śledzenie jest włączone zawartości są zapisywane do pliku w *%temp%\VisualStudio\LSP* katalogu.  Dziennik w formacie nazewnictwa *[LanguageClientName]-log [sygnatury Datetime]*.  Obecnie śledzenie można włączyć tylko w scenariuszach Otwórz folder.  Otwieranie pojedynczy plik, aby aktywować aplikację serwer języka nie ma diagnostyki śledzenie pomocy technicznej.
+Jeśli śledzenie jest włączone zawartości są zapisywane do pliku w *%temp%\VisualStudio\LSP* katalogu. Dziennik w formacie nazewnictwa *[LanguageClientName]-log [sygnatury Datetime]*. Obecnie śledzenie można włączyć tylko w scenariuszach Otwórz folder. Otwieranie pojedynczy plik, aby aktywować aplikację serwer języka nie ma diagnostyki śledzenie pomocy technicznej.
 
 ### <a name="custom-messages"></a>Niestandardowe komunikaty
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ Aby wyświetlić kod źródłowy Przykładowe rozszerzenie przy użyciu interfej
 
 **Chcę stworzyć system niestandardowego projektu, aby uzupełnić Mój serwer języka LSP umożliwia bogatszych obsługi różnych funkcji w programie Visual Studio, jak przejść o tych czynności?**
 
-Obsługa języka opartego na LSP serwerów w programie Visual Studio, który opiera się na [funkcja otwierania folderu](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) i jest specjalnie z myślą o nie wymagają systemu niestandardowego projektu. Można utworzyć własny system niestandardowego projektu, postępując zgodnie z instrukcjami [tutaj](https://github.com/Microsoft/VSProjectSystem), ale niektóre funkcje, takie jak ustawienia, może nie działać. Domyślnej logiki inicjowania dla serwerów języka LSP służy do przekazywania w lokalizacji folderu głównego folderu jest otwarty, dlatego jeśli używasz systemu niestandardowego projektu, może być konieczne zapewnić logikę niestandardową podczas inicjowania, aby upewnić się, możesz serwera języka prawidłowe uruchomienie.
+Obsługa języka opartego na LSP serwerów w programie Visual Studio, który opiera się na [funkcja otwierania folderu](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) i jest specjalnie z myślą o nie wymagają systemu niestandardowego projektu. Można utworzyć własny system niestandardowego projektu, postępując zgodnie z instrukcjami [tutaj](https://github.com/Microsoft/VSProjectSystem), ale niektóre funkcje, takie jak ustawienia, może nie działać. Domyślnej logiki inicjowania dla serwerów języka LSP służy do przekazywania w lokalizacji folderu głównego folderu jest otwarty, dlatego jeśli używasz systemu niestandardowego projektu, może być konieczne zapewnić logikę niestandardową podczas inicjowania, aby upewnić się, możesz serwera języka prawidłowe uruchomienie.
 
 **Jak dodać obsługę debugera?**
 

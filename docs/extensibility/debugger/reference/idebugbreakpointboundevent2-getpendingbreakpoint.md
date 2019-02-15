@@ -12,66 +12,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7da5e8f656dd7120aedb1b6e593e495f15d4e1a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4039a8ca3b6759480ff1df7b2a9f648ae4ad01e9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944478"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316161"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Pobiera oczekujący punkt przerwania, który jest powiązany.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBP  
-);  
-```  
-  
-```cpp  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBP  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppPendingBP`  
- [out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje oczekujący punkt przerwania, które są powiązane.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CBreakpointSetDebugEventBase** obiekt ujawniający [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfejsu.  
-  
-```cpp  
-STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  
-    IDebugPendingBreakpoint2 **ppPendingBP)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppPendingBP )  
-    {  
-        if ( m_pPendingBP )  
-        {  
-            *ppPendingBP = m_pPendingBP;  
-  
-            m_pPendingBP->AddRef();  
-  
-            hRes = S_OK;  
-        }  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+Pobiera oczekujący punkt przerwania, który jest powiązany.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetPendingBreakpoint(
+    IDebugPendingBreakpoint2** ppPendingBP
+);
+```
+
+```cpp
+int GetPendingBreakpoint(
+    out IDebugPendingBreakpoint2 ppPendingBP
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`ppPendingBP`  
+[out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje oczekujący punkt przerwania, które są powiązane.
+
+## <a name="return-value"></a>Wartość zwracana
+Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CBreakpointSetDebugEventBase** obiekt ujawniający [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfejsu.
+
+```cpp
+STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
+    IDebugPendingBreakpoint2 **ppPendingBP)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppPendingBP )
+    {
+        if ( m_pPendingBP )
+        {
+            *ppPendingBP = m_pPendingBP;
+
+            m_pPendingBP->AddRef();
+
+            hRes = S_OK;
+        }
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>Zobacz też
+[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

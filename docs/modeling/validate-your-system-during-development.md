@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970377"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316759"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowników oraz przy użyciu architektury Twojego systemu.
@@ -35,7 +35,7 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
 |-|-|
 |**Filmy wideo**|![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Doug Seven: Rozpoznawanie kodu oraz projekt systemu w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: Projektowanie aplikacji przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![Link do klipu wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę serii: Jak sprawdzić poprawność kodu przy użyciu diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogi**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Artykuły techniczne i dzienniki**|[Centrum MSDN architektury](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Zobacz także

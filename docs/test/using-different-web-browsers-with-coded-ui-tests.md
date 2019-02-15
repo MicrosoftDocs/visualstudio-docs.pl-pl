@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdcc9e05a3b238adcd559911208cbb6532b1d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918250"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318436"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
@@ -24,13 +24,13 @@ Najpierw zainstaluj [Selenium components for coded UI cross testowania przegląd
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Co jest obsługiwane we wszystkich przeglądarkach sieci web?
 
--   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
+-   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.
 
 -   Wyskakujące okienka i okna dialogowe
 
--   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?
 

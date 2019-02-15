@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032218"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316785"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -988,7 +988,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
         <h2>Utrzymuj kontakt z nami</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> Blog </a>
+                <a href="https://devblogs.microsoft.com/visualstudio/"> Blog </a>
             </li>
             <li>
                 <a href="https://twitter.com/VisualStudio"> W usłudze Twitter </a>
