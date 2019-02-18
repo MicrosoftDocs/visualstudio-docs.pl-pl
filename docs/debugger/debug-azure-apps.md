@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967576"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335039"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debugowanie usług platformy Azure w programie Visual Studio
 
 Visual Studio umożliwia debugowanie usług platformy Azure w różnych scenariuszach:
 
 - Aby debugować aplikacji produkcyjnej, hostowana w usłudze Azure App Service, zobacz [debugowania na żywo aplikacji ASP.NET przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md).
+
+- Aby debugować aplikacji produkcyjnej hostowanych w maszynie wirtualnej platformy Azure lub zestawu skalowania maszyn wirtualnych platformy Azure, zobacz [debugowania na żywo maszyn wirtualnych platformy Azure w programie ASP.NET i maszyn wirtualnych platformy Azure skalowanie zestawów za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md).
+
+- Aby debugować aplikacji produkcyjnej, hostowana w usłudze Azure Kubernetes Service, zobacz [debugowania na żywo usług Kubernetes usługi Azure ASP.NET przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md).
 
 - Aby debugować aplikacji produkcyjnej za pomocą usługi Application Insights i hostowanych w usłudze Azure App Service lub Service Fabric, zobacz [debugowanie migawek wyjątków w aplikacjach .NET](/azure/application-insights/app-insights-snapshot-debugger).
 

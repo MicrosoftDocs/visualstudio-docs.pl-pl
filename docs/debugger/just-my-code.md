@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18471a94720a7e625cc183685a83c9f5388c64bb
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270618"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335522"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod
 
@@ -81,7 +81,7 @@ Włączenie wyjątku pierwszej szansy wyjątki wywołujący wiersz kodu użytkow
 
 ## <a name="BKMK_C___Just_My_Code"></a> Tylko mój kod w języku C++
   
-Począwszy od programu Visual Studio 2017 w wersji 15.8, tylko mój kod dla kodu przechodzenie krok po kroku jest również obsługiwany. Ta funkcja wymaga również użycia [/JMC (tylko mój kod debugowanie)](/cpp/build/reference/jmc) przełącznika kompilatora. Przełącznik jest domyślnie włączona. Aby uzyskać **stos wywołań** okna i wywołanie stosu pomocy technicznej w tylko mój kod, opcja /JMC nie jest wymagana.
+Począwszy od programu Visual Studio 2017 w wersji 15.8, tylko mój kod dla kodu przechodzenie krok po kroku jest również obsługiwany. Ta funkcja wymaga również użycia [/JMC (tylko mój kod debugowanie)](/cpp/build/reference/jmc) przełącznika kompilatora. Przełącznik jest domyślnie włączona, w projektach C++. Aby uzyskać **stos wywołań** okna i wywołanie stosu pomocy technicznej w tylko mój kod, opcja /JMC nie jest wymagana.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Jest uważany za kod użytkownika, plik PDB dla pliku binarnego zawierającego kod użytkownika muszą być ładowane przez debuger (Użyj **modułów** okna, aby to sprawdzić).
 

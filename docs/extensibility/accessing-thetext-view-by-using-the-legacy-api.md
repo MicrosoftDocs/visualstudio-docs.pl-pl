@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979650"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335507"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API
 Widok tekstu jest prezentacji tekst, który znajduje się w buforze tekstu. Można uzyskać dostęp do widoku tekstu przy użyciu starszej wersji interfejsu API, jak pokazano w poniższej sekcji.
@@ -23,7 +23,7 @@ Widok tekstu jest prezentacji tekst, który znajduje się w buforze tekstu. Moż
 ## <a name="text-view-object"></a>Obiekt widoku tekstu
  Każdy widok jest skojarzony z buforu tekstu, a widok jest oknem na dane w buforze. Na poniższym diagramie przedstawiono kluczowe interfejsy obiekt widoku tekstu, który jest reprezentowany przez <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Obiekt widoku tekstu w usłudze Visual Studio](../extensibility/media/vstextview.gif "vstextview") obiekt widoku tekstu
+ ![Obiekt widoku tekstu w programie Visual Studio](../extensibility/media/vstextview.gif)
 
  Widok jest sposób przedstawiania tekstu w buforze. Obejmuje funkcje, takie jak zawijania słów oraz Tworzenie konspektu, tak, aby wyświetlić w widoku nie jest dokładnie reprezentacja tekstu w buforze.
 

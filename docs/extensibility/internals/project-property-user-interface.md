@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957057"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335301"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
+
 Podtypu projektu można użyć elementów w projekcie **stron właściwości** okno dialogowe, ponieważ są one dostarczane przez projektu podstawowego, ukryć lub przygotowywanie kontrolek tylko do odczytu i całe strony dostarczony lub dodać strony specyficzne dla podtypu projektu do **Stron właściwości** okno dialogowe.
 
 ## <a name="extending-the-project-property-dialog-box"></a>Rozszerzanie okno dialogowe właściwości projektu
- Podtypu projektu implementuje urządzeń Extender automatyzacji i obiekty przeglądania konfiguracji projektu. Implementacji tych rozszerzeń <xref:EnvDTE.IFilterProperties> interfejsu, aby wprowadzić szczególne właściwości ukryte lub tylko do odczytu. **Stron właściwości** okno dialogowe projektu podstawowego, implementowany przez projektu podstawowego honoruje, filtrowanie, wykonywane przez automatyzacji urządzeń Extender.
 
- Proces rozszerzania **właściwość projektu** okno dialogowe jest przedstawiona poniżej:
+Podtypu projektu implementuje urządzeń Extender automatyzacji i obiekty przeglądania konfiguracji projektu. Implementacji tych rozszerzeń <xref:EnvDTE.IFilterProperties> interfejsu, aby wprowadzić szczególne właściwości ukryte lub tylko do odczytu. **Stron właściwości** okno dialogowe projektu podstawowego, implementowany przez projektu podstawowego honoruje, filtrowanie, wykonywane przez automatyzacji urządzeń Extender.
+
+Proces rozszerzania **właściwość projektu** okno dialogowe jest przedstawiona poniżej:
 
 -   Podstawowy projekt pobiera rozszerzeń z podtypu projektu poprzez implementację <xref:EnvDTE80.IInternalExtenderProvider> interfejsu. Przeglądanie, automatyzacji projektu i projektu konfiguracji przeglądania obiektów projektu podstawowego wszystkich implementować ten interfejs.
 
@@ -39,11 +41,11 @@ Podtypu projektu można użyć elementów w projekcie **stron właściwości** o
 
 -   Podtypu projektu można określić odpowiednich identyfikatorów CatID dla różnych obiektów rozszerzalnej podstawowego projektu w czasie wykonywania, pobierając następujące <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> wartości:
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Aby określić identyfikatorów CatID zakresu projektu, podtypu projektu pobiera powyżej właściwości [VSITEMID. Główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) z `VSITEMID typedef`. Podtypu projektu może być również kontrolować, które **strony właściwości** okna dialogowego pola strony są wyświetlane dla projektu, niezależnie od konfiguracji i zależne od konfiguracji. Niektóre podtypy projektów może być konieczne Usuń wbudowane strony i Dodaj określonych stron podtypu projektu. Aby włączyć to wywoływanych w projekcie zarządzanego klienta <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metoda następujących właściwości:
 

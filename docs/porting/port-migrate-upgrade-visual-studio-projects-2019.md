@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058666"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335574"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Odwołanie do migracji i uaktualniania projektu dla Visual Studio Preview 2019 r
 
@@ -35,7 +35,7 @@ Obsługa niektórych typach projektów zmienia się również wraz z upływem cz
 
 Ten artykuł zawiera szczegółowe informacje dla typów projektów, które można migrować Visual Studio Preview 2019 r. Zawiera także szczegółowe informacje o typach projektów, które zostały zaniechane w Visual Studio 2019 Preview lub mają wkrótce staną się przestarzałe. Artykuł nie obejmuje typów projektów, które nie są już obsługiwane w programie Visual Studio 2019 r i nie można migrować. Artykuł nie obejmuje także obsługiwane typy projektów, które mają nie problemy przy migracji; Ta lista znajduje się na [obsługiwane platformy i zgodność](/visualstudio/releases/2019/compatibility).
 
-> [!Important]
+> [!IMPORTANT]
 > Niektóre typy projektów wymagają zainstalowania konkretnych obciążeń za pośrednictwem Instalatora programu Visual Studio. Jeśli nie masz z zainstalowanym obciążeniem programu Visual Studio zgłasza typu projektu nieznane lub niezgodne. W takim przypadku sprawdź opcje instalacji i spróbuj ponownie. Zobacz [obsługiwane platformy i zgodność](/visualstudio/releases/2019/compatibility) artykuł, aby uzyskać szczegółowe informacje na temat obsługi projektu w Visual Studio Preview 2019 r.
 
 ## <a name="project-types"></a>Typy projektów
@@ -70,10 +70,10 @@ Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapozn
 | Program SharePoint 2016 | Nie można otworzyć dodatku programu SharePoint projekty utworzone w wersji 2 (wersja zapoznawcza) narzędzia dla deweloperów pakietu Office w Visual Studio Preview 2019 r. Aby obejść to ograniczenie, zaktualizuj `MinimumVisualStudioVersion` do 12.0 i `MinimumOfficeToolsVersion` do 12.2 w pliku vbproj csproj. |
 | Silverlight | Projekty Silverlight nie jest obsługiwane w Visual Studio Preview 2019 r. Aby obsługiwać aplikacje Silverlight, należy nadal używać programu Visual Studio 2015. |
 | SQL — Redgate | SQL zmiany automatyzacji Core (nazywanymi wcześniej ReadyRoll Core), SQL Prompt Core i SQL Search firmy Redgate już jest dostarczany w Instalatorze programu Visual Studio.<br/><br/>Aby kontynuować, te funkcje przy użyciu programu Visual Studio 2017. W programie Visual Studio 2019 Preview możesz uaktualnić do płatnej produktów SQL zmiany automatyzacji i SQL Prompt, które są dostępne w firmy Redgate SQL Toolbelt.|
-| SQL Server Reporting Services i SQL Server Analysis Services (SSRS, narzędzi SSDT, usług SSAS, MSA) | Pomoc techniczna dla tych typów projektów jest świadczona za pośrednictwem dwóch rozszerzeń w galerii Visual Studio: [projekty modelowania usług Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) i [projekty usług raportowania programu Microsoft](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Obsługa narzędzi SSDT jest również z obciążeniem przechowywanie i przetwarzanie danych w Visual Studio Preview 2019 r. |
+| SQL Server Reporting Services i SQL Server Analysis Services (SSRS, narzędzi SSDT, usług SSAS, MSA) | Dla tych typów projektu jest oferowana w ramach dwóch rozszerzeń w galerii Visual Studio:  [Dostawcy Microsoft Analysis Services projektów modelowania](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) i [usług Microsoft Reporting Services projektów](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Obsługa narzędzi SSDT jest również z obciążeniem przechowywanie i przetwarzanie danych w Visual Studio Preview 2019 r. |
 | SQL Server Integration Services (SSIS) | Obsługa programu Visual Studio 2019 r w wersji zapoznawczej jest dostępna za pośrednictwem programu SQL Server Data Tools (SSDT). Aby uzyskać więcej informacji, zobacz [blogu SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio Preview 2019 r można użyć do pracy w projektach, które zostały utworzone we wcześniejszych wersjach programu Visual Studio do programu Visual Studio 2010. Przy pierwszym otwarciu projektu, istnieje możliwość uaktualnienia do najnowszej kompilatora i narzędzi, lub aby kontynuować korzystanie z oryginalnych. Jeśli zdecydujesz się na dalsze korzystanie z oryginalnych, Visual Studio 2019 Preview nie powoduje modyfikacji pliku projektu i korzysta z zestawu narzędzi z wcześniejszej instalacji programu Visual Studio w celu skompilowania projektu. Utrzymywanie oryginalnego oznacza Opcje możesz nadal otworzyć projektu w pierwotnej wersji programu Visual Studio w razie potrzeby. Aby uzyskać więcej informacji, zobacz [Użyj natywnej wielowersyjności kodu w programie Visual Studio do kompilacji starych projektów](/cpp/porting/use-native-multi-targeting). |
-| Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
+| Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Możesz użyć programu Microsoft Test Manager lub programu Visual Studio 2010 z dodatkiem SP1 i nowszych, aby otwierać środowiska, utworzone w którejkolwiek z tych wersji. Jednak dla Visual Studio 2010 SP1 wersji programu Microsoft Test Manager musi odpowiadać wersji programu Team Foundation Server, zanim będzie można utworzyć środowiska. |
 | Visual Studio Tools for Apache Cordova | Obsługa Apache Cordova został usunięty w Visual Studio Preview 2019 r. Ponieważ nie ma odpowiednika w Visual Studio Preview 2019 r, nie ma automatycznej migracji ścieżki dla takich projektów.<br/><br/>Można użyć narzędzi Cordova dla rozszerzenia programu Visual Studio Code, (który zapewnia obsługę najnowszą wersję programu Cordova) lub kontynuować korzystanie z programu Visual Studio 2017. |
 | Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w Visual Studio Preview 2019 r, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Zobacz też [plany dotyczące projekty wdrażania w sieci web i witryny sieci Web](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |

@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d90e2fcdd07738aaa9cdda28f8d131767bf7ffe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011732"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335036"
 ---
 # <a name="rdtreadlock-usage"></a>Użycie flagi RDT_ReadLock
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> jest flagę, która udostępnia logikę blokowania dokumentu w systemem dokumentu tabeli (Normalizacją), który znajduje się lista wszystkich dokumentów, które są aktualnie otwarte w środowisku IDE programu Visual Studio. Ta flaga Określa, kiedy są otwarte dokumenty i tego, czy dokument jest widoczne w interfejsie użytkownika lub które odbyło się w sposób niewidoczny w pamięci.
+[_VSRDTFLAGS. Flagi RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) jest flaga, która udostępnia logikę blokowania dokumentu w systemem dokumentu tabeli (Normalizacją), który znajduje się lista wszystkich dokumentów, które są aktualnie otwarte w środowisku IDE programu Visual Studio. Ta flaga Określa, kiedy są otwarte dokumenty i tego, czy dokument jest widoczne w interfejsie użytkownika lub które odbyło się w sposób niewidoczny w pamięci.
 
-Ogólnie rzecz biorąc, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> gdy jest spełniony jeden z następujących czynności:
+Ogólnie rzecz biorąc, możesz użyć [_VSRDTFLAGS. Flagi RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) gdy jest spełniony jeden z następujących czynności:
 
-- Kiedy chcesz otworzyć dokument w sposób niewidoczny i tylko do odczytu, ale go nie jest jeszcze nawiązane, który <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> należy jej właścicielem.
+- Chcesz otworzyć dokument w sposób niewidoczny i tylko do odczytu, ale go nie jest jeszcze nawiązane, który <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> należy jej właścicielem.
 
-- Kiedy chcesz użytkownikowi monit o zapisanie dokumentów, którą otwarto w sposób niewidoczny przed użytkownika on wyświetlany w interfejsie użytkownika, a następnie podjęto próbę je zamknąć.
+- Chcesz, aby użytkownikowi monit o zapisanie dokumentów, którą otwarto w sposób niewidoczny przed użytkownika on wyświetlany w interfejsie użytkownika, a następnie podjęto próbę je zamknąć.
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Jak zarządzać widoczne i niewidoczne dokumentów
 
-Gdy użytkownik otwiera dokument w interfejsie użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> właściciela dokumentu należy ustanowić i <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> musi zostać ustawiona flaga. Jeśli nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> może zostać nawiązana właściciela, a następnie nie będzie można zapisać dokumentu, gdy użytkownik kliknie **Zapisz wszystko** lub zamyka IDE. Oznacza to, czy dokument jest otwarty niewidocznie w przypadku, gdy zostanie zmodyfikowany w pamięci, a użytkownik jest monitowany o zapisanie dokumentu podczas zamykania lub zapisany, jeśli **Zapisz wszystko** zostanie wybrana, a następnie `RDT_ReadLock` nie mogą być używane. Zamiast tego należy użyć `RDT_EditLock` i Zarejestruj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> podczas <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> flagi.
+Gdy użytkownik otwiera dokument w interfejsie użytkownika <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> właściciela dokumentu należy ustanowić i [_VSRDTFLAGS. RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) musi zostać ustawiona flaga. Jeśli nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> może zostać nawiązana właściciela, a następnie nie będzie można zapisać dokumentu, gdy użytkownik kliknie **Zapisz wszystko** lub zamyka IDE. Oznacza to, czy dokument jest otwarty niewidocznie w przypadku, gdy zostanie zmodyfikowany w pamięci, a użytkownik jest monitowany o zapisanie dokumentu podczas zamykania lub zapisany, jeśli **Zapisz wszystko** zostanie wybrana, a następnie `RDT_ReadLock` nie mogą być używane. Zamiast tego należy użyć `RDT_EditLock` i Zarejestruj <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> podczas [__VSREGDOCLOCKHOLDER. RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) flagi.
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock i modyfikacja dokumentu
 

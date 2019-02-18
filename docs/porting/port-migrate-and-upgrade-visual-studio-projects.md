@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768835"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335544"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -34,7 +35,7 @@ Obsługa niektórych typach projektów zmienia się również wraz z upływem cz
 
 W tym artykule istnieje zawiera szczegółowe informacje, tylko dla typów projektów, które można migrować Visual Studio 2017. Artykuł nie obejmuje typów projektów, które nie są już obsługiwane w programie Visual Studio 2017 i dlatego nie można migrować. Artykuł nie obejmuje także obsługiwane typy projektów, które mają nie problemy przy migracji; Ta lista znajduje się na [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs).
 
-> [!Important]
+> [!IMPORTANT]
 > Niektóre typy projektu wymagają instalowania odpowiednich obciążeń za pośrednictwem Instalatora programu Visual Studio. Jeśli nie masz z zainstalowanym obciążeniem programu Visual Studio zgłasza typu projektu nieznane lub niezgodne. W takim przypadku sprawdź opcje instalacji i spróbuj ponownie. Znajduje się w artykule [obsługiwane platformy i zgodność](/visualstudio/productinfo/vs2017-compatibility-vs) artykuł, aby uzyskać szczegółowe informacje na temat obsługi projektu w programie Visual Studio 2017.
 
 ## <a name="project-types"></a>Typy projektów

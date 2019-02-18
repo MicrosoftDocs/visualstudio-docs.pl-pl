@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037840"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335249"
 ---
 # <a name="how-to-implement-nested-projects"></a>Instrukcje: Implementowanie zagnieżdżonych projektów
 
@@ -65,7 +65,7 @@ Po utworzeniu typu projektu zagnieżdżonego, istnieje kilka dodatkowych kroków
      Ponieważ nadrzędne i podrzędne projekty są tworzone programowo, można ustawić właściwości dla zagnieżdżonych projektów w tym momencie.
 
     > [!NOTE]
-    > Nie tylko, czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale można również zadawać, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu, sprawdzając <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. W ten sposób możesz dodać atrybuty bardzo dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
+    > Nie tylko, czy są wyświetlane informacje o kontekście z projektu zagnieżdżonego, ale można również zadawać, jeśli projekt nadrzędny ma dowolnego kontekstu dla tego elementu, sprawdzając [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). W ten sposób możesz dodać atrybuty bardzo dynamiczna Pomoc i opcje menu określonych dla poszczególnych projektów zagnieżdżonych.
 
 10. Hierarchia zaprojektowano pod kątem wyświetlania w **Eksploratora rozwiązań** wywołaniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metody.
 

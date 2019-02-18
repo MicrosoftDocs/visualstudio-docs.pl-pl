@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824291"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335353"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: Użyj kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
+
 Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dobrze znanych <xref:Microsoft.VisualStudio.Shell.UIContext>s zostaną aktywowane. Jednak tych kontekstach interfejsu użytkownika nie są poprawnie szczegółowej, dlatego twórcy rozszerzeń Brak wyboru, ale do wyboru dostępne kontekstu interfejsu użytkownika, który aktywuje przed punktem chcieli naprawdę pakietu VSPackage do załadowania. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Ładowanie pakietów może mieć negatywny wpływ na wydajność i szybciej, niż jest to potrzebne podczas ich ładowania nie jest najlepszym rozwiązaniem. Program Visual Studio 2015 wprowadzono pojęcie opartych na regułach kontekstów interfejsu użytkownika, mechanizm, który umożliwia twórcy rozszerzeń zdefiniować dokładne warunki kontekstu interfejsu użytkownika jest aktywowana i skojarzonych pakietach VSPackage są ładowane.  
+Ładowanie pakietów może mieć negatywny wpływ na wydajność i szybciej, niż jest to potrzebne podczas ich ładowania nie jest najlepszym rozwiązaniem. Program Visual Studio 2015 wprowadzono pojęcie opartych na regułach kontekstów interfejsu użytkownika, mechanizm, który umożliwia twórcy rozszerzeń zdefiniować dokładne warunki kontekstu interfejsu użytkownika jest aktywowana i skojarzonych pakietach VSPackage są ładowane.  
   
 ## <a name="rule-based-ui-context"></a>Kontekst oparty na regułach interfejsu użytkownika  
- "Reguła" składa się z nowym kontekście interfejsu użytkownika (GUID), a wyrażenie logiczne, które odwołuje się do co najmniej jeden "Terms" w połączeniu z logiczną "i", "or", "not" operacji. "Terms" są obliczane dynamicznie w czasie wykonywania, a wyrażenie jest ponownie oceniane zawsze wtedy, gdy jego zmiany warunków. Jeśli wyrażenie ma wartość true, jest ono aktywowane skojarzonego kontekstu interfejsu użytkownika. W przeciwnym razie kontekstu interfejsu użytkownika jest wyłączony.  
+
+"Reguła" składa się z nowym kontekście interfejsu użytkownika (GUID), a wyrażenie logiczne, które odwołuje się do co najmniej jeden "Terms" w połączeniu z logiczną "i", "or", "not" operacji. "Terms" są obliczane dynamicznie w czasie wykonywania, a wyrażenie jest ponownie oceniane zawsze wtedy, gdy jego zmiany warunków. Jeśli wyrażenie ma wartość true, jest ono aktywowane skojarzonego kontekstu interfejsu użytkownika. W przeciwnym razie kontekstu interfejsu użytkownika jest wyłączony.  
   
- Oparty na regułach kontekstu interfejsu użytkownika mogą służyć na różne sposoby:  
+Oparty na regułach kontekstu interfejsu użytkownika mogą służyć na różne sposoby:  
   
 1. Określ ograniczeń widoczność dla poleceń i okien narzędzi. Można ukryć polecenia/narzędzi systemu windows, dopóki nie zostanie spełniony reguły kontekstu interfejsu użytkownika.  
   
@@ -124,7 +126,8 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
 ```  
   
 ## <a name="term-types"></a>Określenie typów  
- Poniżej przedstawiono różne typy termin, które są obsługiwane:  
+
+Poniżej przedstawiono różne typy termin, które są obsługiwane:  
   
 |Termin|Opis|  
 |-|-|  
@@ -138,16 +141,15 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
 |SolutionHasProjectCapability:\<wyrażenia >|Podobny do powyższego, ale termin ma wartość true, jeśli rozwiązanie ma załadowanego projektu, który pasuje do wyrażenia.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Termin będzie mieć wartość true, zawsze wtedy, gdy to rozwiązanie ma projektu, który jest składni (łącznie), a wersja odpowiadał typowi danego projektu identyfikatora GUID.|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>Zgodność z rozszerzeniem między wersjami  
- Konteksty interfejsu użytkownika opartego na regułach to nowa funkcja w programie Visual Studio 2015 i nie będzie można przenieść do wcześniejszych wersji. Nie przenoszenie do wcześniejszych wersji tworzy problem z rozszerzeń/pakietów przeznaczonych dla wielu wersji programu Visual Studio. Te wersje musiały być ładowane automatycznie w programie Visual Studio 2013 i starszych, ale może być korzystne oparty na regułach kontekstów interfejsu użytkownika, aby zapobiec auto ładowany w programie Visual Studio 2015.  
+
+Konteksty interfejsu użytkownika opartego na regułach to nowa funkcja w programie Visual Studio 2015 i nie będzie można przenieść do wcześniejszych wersji. Nie przenoszenie do wcześniejszych wersji tworzy problem z rozszerzeń/pakietów przeznaczonych dla wielu wersji programu Visual Studio. Te wersje musiały być ładowane automatycznie w programie Visual Studio 2013 i starszych, ale może być korzystne oparty na regułach kontekstów interfejsu użytkownika, aby zapobiec auto ładowany w programie Visual Studio 2015.  
   
- W celu obsługi tych pakietów, AutoLoadPackages wpisów rejestru umożliwia teraz flagę w polu jego wartość w taki sposób, aby wskazać, że wpis ma być pomijana w programie Visual Studio 2015 i nowszych. Można to zrobić, dodając flagi opcję <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Teraz można dodać pakietów VSPackage **SkipWhenUIContextRulesActive** opcji w celu ich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atrybutu, aby wskazać, zapis mają być ignorowane w programie Visual Studio 2015 i nowszych.  
-  
+W celu obsługi tych pakietów, AutoLoadPackages wpisów rejestru umożliwia teraz flagę w polu jego wartość w taki sposób, aby wskazać, że wpis ma być pomijana w programie Visual Studio 2015 i nowszych. Można to zrobić, dodając flagi opcję <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Teraz można dodać pakietów VSPackage **SkipWhenUIContextRulesActive** opcji w celu ich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atrybutu, aby wskazać, zapis mają być ignorowane w programie Visual Studio 2015 i nowszych.  
 ## <a name="extensible-ui-context-rules"></a>Rozszerzalne reguły kontekstu interfejsu użytkownika  
- Czasami pakietów nie można użyć statycznej reguły kontekstu interfejsu użytkownika. Na przykład załóżmy, że masz pakiet obsługi rozszerzalność w taki sposób, że stan polecenia opiera się na typy edytora, które są obsługiwane przez zaimportowane dostawców MEF. Polecenie jest włączone, jeśli plik ma rozszerzenia obsługi bieżącego typu edycji. W takich przypadkach pakietu nie można użyć statycznej regułę kontekstu interfejsu użytkownika, ponieważ warunki zmieniłby się w zależności od MEF, które są dostępne rozszerzenia.  
+
+Czasami pakietów nie można użyć statycznej reguły kontekstu interfejsu użytkownika. Na przykład załóżmy, że masz pakiet obsługi rozszerzalność w taki sposób, że stan polecenia opiera się na typy edytora, które są obsługiwane przez zaimportowane dostawców MEF. Polecenie jest włączone, jeśli plik ma rozszerzenia obsługi bieżącego typu edycji. W takich przypadkach pakietu nie można użyć statycznej regułę kontekstu interfejsu użytkownika, ponieważ warunki zmieniłby się w zależności od MEF, które są dostępne rozszerzenia.  
   
- W celu obsługi tych pakietów, oparty na regułach kontekstów interfejsu użytkownika obsługują wyrażenia zapisane na stałe "*" oznacza wszystkie poniższe warunki zostaną dołączone za pomocą lub. Dzięki temu główny pakietu Definiowanie znanych kontekstu interfejsu użytkownika opartego na regułach i powiązanie stanu polecenia dla tego kontekstu. Później każde rozszerzenie MEF, przeznaczony dla pakietu głównego dodać przestrzegania postanowień edytory, obsługiwane bez wpływu na inne postanowienia lub wyrażenie wzorca.  
+W celu obsługi tych pakietów, oparty na regułach kontekstów interfejsu użytkownika obsługują wyrażenia zapisane na stałe "*" oznacza wszystkie poniższe warunki zostaną dołączone za pomocą lub. Dzięki temu główny pakietu Definiowanie znanych kontekstu interfejsu użytkownika opartego na regułach i powiązanie stanu polecenia dla tego kontekstu. Później każde rozszerzenie MEF, przeznaczony dla pakietu głównego dodać przestrzegania postanowień edytory, obsługiwane bez wpływu na inne postanowienia lub wyrażenie wzorca.  
   
- Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> dokumentacji przedstawiono składnię rozszerzalnych zasad kontekstu interfejsu użytkownika.
+Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> dokumentacji przedstawiono składnię rozszerzalnych zasad kontekstu interfejsu użytkownika.

@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 4c945af52f4d19a1966809e905119d491cfc7432
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.custom: video
+ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295751"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335093"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Uwzględnione pakietu NuGet w projekcie
 
@@ -114,6 +115,10 @@ W tym artykule omówiono dokumentacji NuGet [za pomocą narzędzia NuGet nie po�
 
 Można znaleźć w dokumentacji kontroli konkretnego źródła, aby uzyskać szczegółowe informacje na temat wykluczania `packages` katalogu z są śledzone.
 
+## <a name="related-video"></a>Pokrewne wideo
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
+
 ## <a name="see-also"></a>Zobacz także
 
-* [Zainstaluj i użyj pakietu w programie Visual Studio (na Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Instalowanie i używanie pakietu w programie Visual Studio (na Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
