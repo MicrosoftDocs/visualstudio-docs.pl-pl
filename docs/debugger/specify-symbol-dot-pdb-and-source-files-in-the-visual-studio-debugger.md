@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7784e6bde19a556d31394f3443dbf4494042481
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4eb542c06ce14aaa57106fb5413f285595592ca0
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005310"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317436"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -262,6 +262,6 @@ Określ lokalizacje, debuger wyszukuje pliki źródłowe i wykluczenie określon
 
 
 ## <a name="see-also"></a>Zobacz także  
-[Pliki symboli i ustawienia symboli programu Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Pliki symboli i ustawienia symboli programu Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
