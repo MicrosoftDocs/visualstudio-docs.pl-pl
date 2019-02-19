@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800791"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Porady i wskazówki związane z ułatwieniami dostępu

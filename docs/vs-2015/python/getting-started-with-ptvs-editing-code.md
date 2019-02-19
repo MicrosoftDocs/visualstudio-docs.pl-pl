@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758403"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Wprowadzenie do narzędzi PTVS: Edytowanie kodu
