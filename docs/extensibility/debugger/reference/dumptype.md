@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab7d66ecae911faf8cc42a840ac853d585fc80bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c81d9c9f3f5dc6b0a849e405133b7ecef1e4e59b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012585"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412971"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Określa, ile stanu programu (np. uruchamianie wątków, ramek stosu i bieżący adres instrukcji) zrzutu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_DUMPTYPE {   
-   DUMP_MINIDUMP = 0,  
-   DUMP_FULLDUMP = 1  
-};  
-typedef DWORD DUMPTYPE;  
-```  
-  
-```csharp  
-public enum enum_DUMPTYPE {   
-   DUMP_MINIDUMP = 0,  
-   DUMP_FULLDUMP = 1  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- DUMP_MINIDUMP  
- Określa zrzutu małe, compact.  
-  
- DUMP_FULLDUMP  
- Określa duża, pełny zrzut.  
-  
-## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+Określa, ile stanu programu (np. uruchamianie wątków, ramek stosu i bieżący adres instrukcji) zrzutu.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_DUMPTYPE {
+    DUMP_MINIDUMP = 0,
+    DUMP_FULLDUMP = 1
+};
+typedef DWORD DUMPTYPE;
+```
+
+```csharp
+public enum enum_DUMPTYPE {
+    DUMP_MINIDUMP = 0,
+    DUMP_FULLDUMP = 1
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+DUMP_MINIDUMP  
+Określa zrzutu małe, compact.
+
+DUMP_FULLDUMP  
+Określa duża, pełny zrzut.
+
+## <a name="remarks"></a>Uwagi
+Przekazywany jako argument do [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.
+
+## <a name="requirements"></a>Wymagania
+Header: msdbg.h
+
+Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

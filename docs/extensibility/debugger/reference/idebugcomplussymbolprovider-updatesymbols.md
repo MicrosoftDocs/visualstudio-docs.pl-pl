@@ -11,85 +11,85 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be91f2e66edb1a2426fbdb37160d5ffd8a24571b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021226"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413296"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-Aktualizuje symbole debugowania w pamięci z tymi ze strumienia określone dane.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT UpdateSymbols (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pUpdateStream  
-);  
-```  
-  
-```csharp  
-int UpdateSymbols (  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pUpdateStream  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ulAppDomainID`  
- [in] Identyfikator domeny aplikacji.  
-  
- `guidModule`  
- [in] Unikatowy identyfikator modułu.  
-  
- `pUpdateStream`  
- [in] Strumień danych, który zawiera symbole debugowania zaktualizowane.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::UpdateSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream  
-)  
-{  
-    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");  
-    return E_NOTIMPL;  
-}  
-  
-HRESULT CDebugSymbolProvider::UpdateSymbols2(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream,  
-    LINEDELTA* pDeltaLines,  
-    ULONG cDeltaLines  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );  
-  
-    IfFailGo( GetModule( idModule, &pModule ) );  
-    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Aktualizuje symbole debugowania w pamięci z tymi ze strumienia określone dane.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT UpdateSymbols (
+    ULONG32  ulAppDomainID,
+    GUID     guidModule,
+    IStream* pUpdateStream
+);
+```
+
+```csharp
+int UpdateSymbols (
+    uint    ulAppDomainID,
+    Guid    guidModule,
+    IStream pUpdateStream
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`ulAppDomainID`  
+[in] Identyfikator domeny aplikacji.
+
+`guidModule`  
+[in] Unikatowy identyfikator modułu.
+
+`pUpdateStream`  
+[in] Strumień danych, który zawiera symbole debugowania zaktualizowane.
+
+## <a name="example"></a>Przykład
+Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+
+```cpp
+HRESULT CDebugSymbolProvider::UpdateSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream
+)
+{
+    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");
+    return E_NOTIMPL;
+}
+
+HRESULT CDebugSymbolProvider::UpdateSymbols2(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream,
+    LINEDELTA* pDeltaLines,
+    ULONG cDeltaLines
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );
+
+    IfFailGo( GetModule( idModule, &pModule ) );
+    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );
+
+    return hr;
+}
+```
+
+## <a name="return-value"></a>Wartość zwracana
+Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

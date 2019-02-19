@@ -12,73 +12,73 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e255695cd461f5c272bc65f695d8935ab892d034
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ff28c46931905e3386a675711653fff99df8b08
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960246"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413582"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-W tym artykule opisano, wystąpi wyjątek lub błąd czasu wykonywania zgłoszony przez debugowanego programu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-typedef struct tagEXCEPTION_INFO {   
-   IDebugProgram2* pProgram;  
-   BSTR            bstrProgramName;  
-   BSTR            bstrExceptionName;  
-   DWORD           dwCode;  
-   EXCEPTION_STATE dwState;  
-   GUID            guidType;  
-} EXCEPTION_INFO;  
-```  
-  
-```csharp  
-public struct EXCEPTION_INFO {   
-   public IDebugProgram2 pProgram;  
-   public string         bstrProgramName;  
-   public string         bstrExceptionName;  
-   public uint           dwCode;  
-   public uint           dwState;  
-   public Guid           guidType;  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- pProgram  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wyjątek wystąpił.  
-  
- bstrProgramName  
- Nazwa programu, w którym wyjątek wystąpił.  
-  
- bstrExceptionName  
- Nazwa wyjątku.  
-  
- dwCode  
- Kod identyfikacyjny dla błędu lub wyjątku czasu wykonywania.  
-  
- dwState  
- Wartość z zakresu od [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wyliczenie, które definiuje stan wyjątku.  
-  
- guidType  
- Identyfikator GUID języka, każdy `guidLang` lub `guidEng`.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywany jako parametr do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) i [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody. Ta struktura jest również przekazywany do [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodę, aby wypełnić.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
- [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)   
- [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)
+W tym artykule opisano, wystąpi wyjątek lub błąd czasu wykonywania zgłoszony przez debugowanego programu.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+typedef struct tagEXCEPTION_INFO {
+    IDebugProgram2* pProgram;
+    BSTR            bstrProgramName;
+    BSTR            bstrExceptionName;
+    DWORD           dwCode;
+    EXCEPTION_STATE dwState;
+    GUID            guidType;
+} EXCEPTION_INFO;
+```
+
+```csharp
+public struct EXCEPTION_INFO {
+    public IDebugProgram2 pProgram;
+    public string         bstrProgramName;
+    public string         bstrExceptionName;
+    public uint           dwCode;
+    public uint           dwState;
+    public Guid           guidType;
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+pProgram  
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wyjątek wystąpił.
+
+bstrProgramName  
+Nazwa programu, w którym wyjątek wystąpił.
+
+bstrExceptionName  
+Nazwa wyjątku.
+
+dwCode  
+Kod identyfikacyjny dla błędu lub wyjątku czasu wykonywania.
+
+dwState  
+Wartość z zakresu od [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wyliczenie, które definiuje stan wyjątku.
+
+guidType  
+Identyfikator GUID języka, każdy `guidLang` lub `guidEng`.
+
+## <a name="remarks"></a>Uwagi
+Ta struktura jest przekazywany jako parametr do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) i [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody. Ta struktura jest również przekazywany do [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodę, aby wypełnić.
+
+## <a name="requirements"></a>Wymagania
+Header: msdbg.h
+
+Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+[Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)  
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
+[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)  
+[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)  
+[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)

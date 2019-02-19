@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba5f493303fd3b667e51bcd1f71a02d35c8fbc6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98621fbea4fc114616ccf23ada9b372c88461970
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963063"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413049"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-Używany do określenia, jeśli program zatrzymać wykonywanie po osiągnięciu określonego punktu w realizacji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_CANSTOP_REASON {   
-   CANSTOP_ENTRYPOINT = 0x0000,  
-   CANSTOP_STEPIN     = 0x0001  
-};  
-typedef DWORD CANSTOP_REASON;  
-```  
-  
-```csharp  
-public enum enum_CANSTOP_REASON {   
-   CANSTOP_ENTRYPOINT = 0x0000,  
-   CANSTOP_STEPIN     = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- CANSTOP_ENTRYPOINT  
- Określa punkt wejścia w danym programu.  
-  
- CANSTOP_STEPIN  
- Określa, przechodzenie krok po kroku do funkcji.  
-  
-## <a name="remarks"></a>Uwagi  
- Przekazywany jako argument do [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Manager (SDM), jeśli ma nic złego zatrzymać po osiągnięciu punktu wejścia programu, lub po przejściu do funkcji lub metody.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+Używany do określenia, jeśli program zatrzymać wykonywanie po osiągnięciu określonego punktu w realizacji.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_CANSTOP_REASON {
+    CANSTOP_ENTRYPOINT = 0x0000,
+    CANSTOP_STEPIN     = 0x0001
+};
+typedef DWORD CANSTOP_REASON;
+```
+
+```csharp
+public enum enum_CANSTOP_REASON {
+    CANSTOP_ENTRYPOINT = 0x0000,
+    CANSTOP_STEPIN     = 0x0001
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+CANSTOP_ENTRYPOINT  
+Określa punkt wejścia w danym programu.
+
+CANSTOP_STEPIN  
+Określa, przechodzenie krok po kroku do funkcji.
+
+## <a name="remarks"></a>Uwagi
+Przekazywany jako argument do [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Manager (SDM), jeśli ma nic złego zatrzymać po osiągnięciu punktu wejścia programu, lub po przejściu do funkcji lub metody.
+
+## <a name="requirements"></a>Wymagania
+Header: msdbg.h
+
+Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

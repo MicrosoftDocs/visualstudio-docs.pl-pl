@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a081f49fd8d19cac524021ca854cd5b8142e22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e819ebb18e5bb723d3a138a139cdc0269fa6ed
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920842"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413322"
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest systemem kompilacji dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje referencyjne.  
@@ -56,7 +56,7 @@ ms.locfileid: "54920842"
  [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)  
  Wyświetla metadane, który jest tworzony wraz z każdego elementu.  
   
- [Riles odpowiedzi](../msbuild/msbuild-response-files.md)  
+ [Pliki odpowiedzi](../msbuild/msbuild-response-files.md)  
  Wyjaśnia *rsp* pliki zawierające przełączniki wiersza polecenia.  
   
  [Dodatkowe zasoby](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  

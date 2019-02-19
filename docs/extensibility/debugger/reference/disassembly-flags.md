@@ -12,72 +12,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ada1fba496051d3e71b21c94e61c951f7c14c6c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2ac3a43f64e4284cd14741acde390c930ffbb69
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036436"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413283"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Określa flagi dla dezasemblacji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_DISASSEMBLY_FLAGS {   
-   DF_DOCUMENTCHANGE     = 0x00000001,  
-   DF_DISABLED           = 0x00000002,  
-   DF_INSTRUCTION_ACTIVE = 0x00000004,  
-   DF_DATA               = 0x00000008,  
-   DF_HASSOURCE          = 0x00000010,  
-   DF_DOCUMENT_CHECKSUM  = 0x00000020  
-};  
-typedef DWORD DISASSEMBLY_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_DISASSEMBLY_FLAGS {   
-   DF_DOCUMENTCHANGE     = 0x00000001,  
-   DF_DISABLED           = 0x00000002,  
-   DF_INSTRUCTION_ACTIVE = 0x00000004,  
-   DF_DATA               = 0x00000008,  
-   DF_HASSOURCE          = 0x00000010,  
-   DF_DOCUMENT_CHECKSUM  = 0x00000020  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- DF_DOCUMENTCHANGE  
- Wskazuje, że ta instrukcja znajduje się w innym dokumencie niż poprzednia.  
-  
- DF_DISABLED  
- Wskazuje, że ta instrukcja nie zostanie wykonany.  
-  
- DF_INSTRUCTION_ACTIVE  
- Wskazuje, że tej instrukcji jest jednym z następnej instrukcji do wykonania (może istnieć więcej niż jeden).  
-  
- DF_DATA  
- Wskazuje, czy tej instrukcji jest naprawdę danych (nie kodzie).  
-  
- DF_HASSOURCE  
- Wskazuje, że ta instrukcja ma źródła. Niektóre instrukcje, takich jak profilowania lub wyrzucania elementów kodu, ma nie odpowiadającego jej źródła.  
-  
- DF_DOCUMENT_CHECKSUM  
- Oznacza to, że `bstrDocumentUrl` pole zawiera dane sumy kontrolnej po adres URL dokumentu. Zobacz sekcję Spostrzeżenia, aby [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury przechowywania danych sumy kontrolnej.  
-  
-## <a name="remarks"></a>Uwagi  
- Używane jako `dwFlags` członkiem [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.  
-  
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+Określa flagi dla dezasemblacji.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_DISASSEMBLY_FLAGS {
+    DF_DOCUMENTCHANGE     = 0x00000001,
+    DF_DISABLED           = 0x00000002,
+    DF_INSTRUCTION_ACTIVE = 0x00000004,
+    DF_DATA               = 0x00000008,
+    DF_HASSOURCE          = 0x00000010,
+    DF_DOCUMENT_CHECKSUM  = 0x00000020
+};
+typedef DWORD DISASSEMBLY_FLAGS;
+```
+
+```csharp
+public enum enum_DISASSEMBLY_FLAGS {
+    DF_DOCUMENTCHANGE     = 0x00000001,
+    DF_DISABLED           = 0x00000002,
+    DF_INSTRUCTION_ACTIVE = 0x00000004,
+    DF_DATA               = 0x00000008,
+    DF_HASSOURCE          = 0x00000010,
+    DF_DOCUMENT_CHECKSUM  = 0x00000020
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+DF_DOCUMENTCHANGE  
+Wskazuje, że ta instrukcja znajduje się w innym dokumencie niż poprzednia.
+
+DF_DISABLED  
+Wskazuje, że ta instrukcja nie zostanie wykonany.
+
+DF_INSTRUCTION_ACTIVE  
+Wskazuje, że tej instrukcji jest jednym z następnej instrukcji do wykonania (może istnieć więcej niż jeden).
+
+DF_DATA  
+Wskazuje, czy tej instrukcji jest naprawdę danych (nie kodzie).
+
+DF_HASSOURCE  
+Wskazuje, że ta instrukcja ma źródła. Niektóre instrukcje, takich jak profilowania lub wyrzucania elementów kodu, ma nie odpowiadającego jej źródła.
+
+DF_DOCUMENT_CHECKSUM  
+Oznacza to, że `bstrDocumentUrl` pole zawiera dane sumy kontrolnej po adres URL dokumentu. Zobacz sekcję Spostrzeżenia, aby [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury przechowywania danych sumy kontrolnej.
+
+## <a name="remarks"></a>Uwagi
+Używane jako `dwFlags` członkiem [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.
+
+Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.
+
+## <a name="requirements"></a>Wymagania
+Header: msdbg.h
+
+Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
