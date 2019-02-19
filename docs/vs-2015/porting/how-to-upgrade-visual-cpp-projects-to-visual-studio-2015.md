@@ -13,10 +13,10 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54797055"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Instrukcje: Aktualizacja projektów Visual C++ w Visual Studio 2015

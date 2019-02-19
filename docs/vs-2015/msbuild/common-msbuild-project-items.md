@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796880"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
@@ -50,7 +50,7 @@ W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane
 |Nazwa elementu|Opis|  
 |---------------|-----------------|  
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana składnika.|  
-|Identyfikator GUID|Opcjonalny ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|  
+|Guid|Opcjonalny ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Opcjonalny ciąg. Główna część numeru wersji składnika. Na przykład "5" Jeśli pełny numer wersji jest "5.46".|  
 |VersionMinor|Opcjonalny ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46" Jeśli pełny numer wersji jest "5.46".|  
 |LCID|Opcjonalny ciąg. Identyfikator ustawień regionalnych dla składnika.|  

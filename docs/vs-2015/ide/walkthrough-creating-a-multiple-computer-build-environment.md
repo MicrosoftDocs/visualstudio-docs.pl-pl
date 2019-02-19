@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769078"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
@@ -121,7 +121,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
    - Zestaw certyfikacji sprzętu Microsoft Windows  
   
-     .. .mogli zainstalować pliki w folderach %ProgramFiles%\Windows Kits\8.0\, wymienione w poprzednim kroku, a których warunki licencji mogą nie zezwalać na praw serwera kompilacji dla tych plików. Sprawdź warunki licencji dla każdego zainstalowanego zestawu Windows sprawdzić, czy pliki mogą być kopiowane do komputera kompilacji. Jeśli postanowienia licencyjne nie dopuszczają praw serwera kompilacji, Usuń pliki z komputera kompilacji.  
+     ... może zainstalować pliki w folderach %ProgramFiles%\Windows Kits\8.0\, które są wymienione w poprzednim kroku, a których warunki licencji mogą nie zezwalać na praw serwera kompilacji dla tych plików. Sprawdź warunki licencji dla każdego zainstalowanego zestawu Windows sprawdzić, czy pliki mogą być kopiowane do komputera kompilacji. Jeśli postanowienia licencyjne nie dopuszczają praw serwera kompilacji, Usuń pliki z komputera kompilacji.  
   
 2. Kopiuj następujące foldery rekurencyjnie z komputera hosta do komputera kompilacji:  
   
