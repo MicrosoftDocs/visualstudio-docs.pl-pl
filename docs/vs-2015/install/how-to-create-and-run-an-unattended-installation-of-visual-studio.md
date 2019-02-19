@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803565"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Instrukcje: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio

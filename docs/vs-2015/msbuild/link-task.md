@@ -32,10 +32,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768517"
 ---
 # <a name="link-task"></a>Połącz — Zadanie
@@ -299,11 +299,11 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Włączone** -   **/FORCE**  
+  - **Włączone** -  ** /FORCE**  
   
   - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** -   **/FORCE: NIEROZPOZNANA**  
+  - **UndefinedSymbolOnly** -  ** /FORCE: NIEROZPOZNANA**  
   
     Aby uzyskać więcej informacji, zobacz [/Force (Wymuszaj produkt wyjściowy pliku)](http://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -449,7 +449,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **NoErrorReport** -   **/errorreport: Brak**  
+  - **NoErrorReport** -  ** /errorreport: Brak**  
   
   - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   

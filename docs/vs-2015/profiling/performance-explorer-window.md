@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780724"
 ---
 # <a name="performance-explorer-window"></a>Okno Eksploratora wydajności
@@ -37,7 +37,7 @@ ms.locfileid: "54780724"
   
 -   **Nowa sesja wydajności** — dodaje sesję wydajności puste okno Eksploratora wydajności.  
   
--   **Uruchom** — **Uruchom** polecenia Lista przycisk umożliwia uruchamianie aplikacji docelowej, która ma natychmiast włączono profilowanie (**Uruchom za pomocą profilowania**) lub za pomocą profilowania zawieszone ( **Wstrzymano uruchamiania za pomocą profilowania**).  
+-   **Uruchom** — **Uruchom** polecenia Lista przycisk umożliwia uruchamianie aplikacji docelowej, która ma natychmiast włączono profilowanie (**Uruchom za pomocą profilowania**) lub za pomocą profilowania zawieszone (** Wstrzymano uruchamiania za pomocą profilowania**).  
   
 -   **Metoda** -Określa, czy metody profilowania sesji jest próbkowania i instrumentacji.  
   

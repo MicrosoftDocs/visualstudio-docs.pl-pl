@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756666"
 ---
 # <a name="cl-task"></a>CL — Zadanie
@@ -88,7 +88,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **AssemblyAndSourceCode** - **/FAs**  
   
-  - **Wszystkie** -   **/facs**  
+  - **Wszystkie** -  ** /facs**  
   
     Aby uzyskać więcej informacji, zobacz **/FA**, **/FAC**, **/FAS**, i **/facs** opcji na liście [/FA, /Fa (wyświetlanie listy plików)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -184,7 +184,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **true** - **/clr**  
   
-  - **Czysty** -   **/CLR: pure**  
+  - **Czysty** -  ** /CLR: pure**  
   
   - **Safe** - **/clr:safe**  
   
@@ -316,7 +316,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **Neither** - *\<none>*  
   
-  - **Rozmiar** -   **/OS**  
+  - **Rozmiar** -  ** /OS**  
   
   - **Szybkość** - **/Ot**  
   
@@ -338,9 +338,9 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Dokładne** -   **/FP: precise**  
+  - **Dokładne** -  ** /FP: precise**  
   
-  - **Ścisłe** -   **/FP: strict**  
+  - **Ścisłe** -  ** /FP: strict**  
   
   - **Fast** - **/fp:fast**  
   
@@ -486,7 +486,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **MinSpace** - **/O1**  
   
-  - **MaxSpeed** -   **/O2**  
+  - **MaxSpeed** -  ** /O2**  
   
   - **Full** - **/Ox**  
   
@@ -752,7 +752,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **Level4** - **/W4**  
   
-  - **EnableAllWarnings** -   **/Wall**  
+  - **EnableAllWarnings** -  ** /Wall**  
   
     Aby uzyskać więcej informacji, zobacz **Wn**_n_ opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
