@@ -10,66 +10,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72cc81a9c93e35ad972a49d7c8ed14e02c16387e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880f00528b1c2b1f081b6c306e1f94cccc109ec
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003356"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450285"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-Pobiera tablicę informacji o serwerze źródłowym.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetSourceServerData(  
-   ULONG* pDataByteCount,   
-   BYTE** ppData  
-);  
-```  
-  
-```csharp  
-public int GetSourceServerData(  
-   out uint  pDataByteCount,   
-   out int[] ppData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pDataByteCount`  
- [out] Liczba bajtów w tablicy danych.  
-  
- `ppData`  
- [out] Odwołanie do tablicy danych.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CModule** obiekt ujawniający [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interfejsu.  
-  
-```cpp  
-HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<ISymUnmanagedReader> pSymReader;  
-    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;  
-  
-    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );  
-    *pDataByteCount = 0;  
-    *ppData = NULL;  
-  
-    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );  
-    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );  
-  
-    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );  
-  
-Error:  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+Pobiera tablicę informacji o serwerze źródłowym.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetSourceServerData(
+    ULONG* pDataByteCount,
+    BYTE** ppData
+);
+```
+
+```csharp
+public int GetSourceServerData(
+    out uint  pDataByteCount,
+    out int[] ppData
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`pDataByteCount`  
+[out] Liczba bajtów w tablicy danych.
+
+`ppData`  
+[out] Odwołanie do tablicy danych.
+
+## <a name="return-value"></a>Wartość zwracana
+Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CModule** obiekt ujawniający [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interfejsu.
+
+```cpp
+HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)
+{
+    HRESULT hr = S_OK;
+    CComPtr<ISymUnmanagedReader> pSymReader;
+    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;
+
+    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );
+    *pDataByteCount = 0;
+    *ppData = NULL;
+
+    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );
+    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );
+
+    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );
+
+Error:
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Zobacz też
+[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

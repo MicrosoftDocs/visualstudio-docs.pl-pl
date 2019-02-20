@@ -12,62 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f151391de60bea7164f61edfe608c425534c9b44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934325"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449999"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
-Określa flagi uruchamiania debugowania.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_LAUNCH_FLAGS {   
-   LAUNCH_DEBUG      = 0x0000,  
-   LAUNCH_NODEBUG    = 0x0001,  
-   LAUNCH_ENABLE_ENC = 0x0002,  
-   LAUNCH_MERGE_ENV  = 0x0004  
-};  
-typedef DWORD LAUNCH_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_LAUNCH_FLAGS {   
-   LAUNCH_DEBUG      = 0x0000,  
-   LAUNCH_NODEBUG    = 0x0001,  
-   LAUNCH_ENABLE_ENC = 0x0002,  
-   LAUNCH_MERGE_ENV  = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- LAUNCH_DEBUG  
- Uruchamia proces debugowania.  
-  
- LAUNCH_NODEBUG  
- Uruchamia proces bez debugowania go.  
-  
- LAUNCH_ENABLE_ENC  
- PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
-  
- LAUNCH_MERGE_ENV  
- Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.  
-  
-## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.  
-  
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+Określa flagi uruchamiania debugowania.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_LAUNCH_FLAGS {
+    LAUNCH_DEBUG      = 0x0000,
+    LAUNCH_NODEBUG    = 0x0001,
+    LAUNCH_ENABLE_ENC = 0x0002,
+    LAUNCH_MERGE_ENV  = 0x0004
+};
+typedef DWORD LAUNCH_FLAGS;
+```
+
+```csharp
+public enum enum_LAUNCH_FLAGS {
+    LAUNCH_DEBUG      = 0x0000,
+    LAUNCH_NODEBUG    = 0x0001,
+    LAUNCH_ENABLE_ENC = 0x0002,
+    LAUNCH_MERGE_ENV  = 0x0004
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+LAUNCH_DEBUG  
+Uruchamia proces debugowania.
+
+LAUNCH_NODEBUG  
+Uruchamia proces bez debugowania go.
+
+LAUNCH_ENABLE_ENC  
+PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+
+LAUNCH_MERGE_ENV  
+Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
+
+## <a name="remarks"></a>Uwagi
+Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
+
+Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.
+
+## <a name="requirements"></a>Wymagania
+Header: msdbg.h
+
+Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

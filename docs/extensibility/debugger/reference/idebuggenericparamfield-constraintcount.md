@@ -11,72 +11,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9020aab0ad2cecbb5dc402bf479aa0a97e45c202
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 019b223c22e8101c902023f2d9996d7756005c49
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007984"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450363"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-Zwraca liczbę ograniczenia, które są skojarzone z tym parametru ogólnego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT ConstraintCount(  
-   ULONG32* pcConst  
-);  
-```  
-  
-```csharp  
-int ConstraintCount(  
-   ref uint pcConst  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pcConst`  
- [out w] Liczba ograniczeń, które są skojarzone z tym polem.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
-  
-```cpp  
-HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    CComPtr<IMetaDataImport2> pMetadata2;  
-    HCORENUM hEnum = 0;  
-    ULONG cConst = 0;  
-  
-    METHOD_ENTRY( CDebugGenericParamFieldType::ConstraintCount );  
-  
-    IfFalseGo(pcConst, E_INVALIDARG );  
-    *pcConst = 0;  
-    IfFailGo( m_spSH->GetMetadata( m_idModule, &pMetadata ) );  
-    IfFailGo( pMetadata->QueryInterface(IID_IMetaDataImport2, (void**)&pMetadata2) );  
-    IfFailGo( pMetadata2->EnumGenericParamConstraints( &hEnum,  
-              m_tokParam,  
-              NULL,  
-              0,  
-              &cConst) );  
-    IfFailGo( pMetadata->CountEnum(hEnum, &cConst) );  
-    pMetadata->CloseEnum(hEnum);  
-    hEnum = NULL;  
-  
-    *pcConst = cConst;  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugGenericParamFieldType::ConstraintCount, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+Zwraca liczbę ograniczenia, które są skojarzone z tym parametru ogólnego.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT ConstraintCount(
+    ULONG32* pcConst
+);
+```
+
+```csharp
+int ConstraintCount(
+    ref uint pcConst
+);
+```
+
+#### <a name="parameters"></a>Parametry
+`pcConst`  
+[out w] Liczba ograniczeń, które są skojarzone z tym polem.
+
+## <a name="return-value"></a>Wartość zwracana
+Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.
+
+```cpp
+HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)
+{
+    HRESULT hr = S_OK;
+    CComPtr<IMetaDataImport> pMetadata;
+    CComPtr<IMetaDataImport2> pMetadata2;
+    HCORENUM hEnum = 0;
+    ULONG cConst = 0;
+
+    METHOD_ENTRY( CDebugGenericParamFieldType::ConstraintCount );
+
+    IfFalseGo(pcConst, E_INVALIDARG );
+    *pcConst = 0;
+    IfFailGo( m_spSH->GetMetadata( m_idModule, &pMetadata ) );
+    IfFailGo( pMetadata->QueryInterface(IID_IMetaDataImport2, (void**)&pMetadata2) );
+    IfFailGo( pMetadata2->EnumGenericParamConstraints( &hEnum,
+              m_tokParam,
+              NULL,
+              0,
+              &cConst) );
+    IfFailGo( pMetadata->CountEnum(hEnum, &cConst) );
+    pMetadata->CloseEnum(hEnum);
+    hEnum = NULL;
+
+    *pcConst = cConst;
+
+Error:
+
+    METHOD_EXIT( CDebugGenericParamFieldType::ConstraintCount, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Zobacz też
+[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318813"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450597"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -364,7 +364,7 @@ Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for AI](../ai/about
 
 Firma Microsoft aktualizuje program Visual Studio 2017 często z nowymi funkcjami, które mogą ułatwić programowanie jeszcze lepsze środowisko. Poniżej przedstawiono podsumowanie niektórych nasze najbardziej znaczące aktualizacje, które znajdują się w eksperymentalnej wersji zapoznawczej:
 
-* **[Na żywo udziału](https://visualstudio.microsoft.com/services/live-share/)**, nowe narzędzie, które pozwala na udostępnianie kodu i kontekst współpracownikom i uzyskać natychmiastowy współpracy dwukierunkowej bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.<br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania dotyczące udostępniania na żywo](/visualstudio/liveshare/faq).<br><br>
+* **[Na żywo udziału](https://visualstudio.microsoft.com/services/live-share/)**, nowe narzędzie, które pozwala na udostępnianie kodu i kontekst współpracownikom i Uzyskaj natychmiastowej dwukierunkowej możliwości współpracy bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.<br><br>Aby uzyskać więcej informacji, zobacz [często zadawane pytania dotyczące udostępniania na żywo](/visualstudio/liveshare/faq).<br><br>
 * **[Rozszerzenie IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, nową możliwość, która rozszerza Wytwarzanie oprogramowania za pomocą sztucznej Inteligencji do dostarczania uzupełnienia lepiej oparte na kontekście kodu przewodnik deweloperom kodu do wzorców i style ich zespołu, znajdowanie problemów z kodem trudne catch , i przeglądy kodu skoncentrować się na obszarach, które naprawdę mają znaczenie. <br><br>Aby uzyskać więcej informacji, zobacz [IntelliCode — często zadawane pytania](/visualstudio/intellicode/faq).
 
 Chcesz wiedzieć więcej o tym, co jeszcze jest działa w programie Visual Studio 2017? Zobacz [Visual Studio plan](/visualstudio/productinfo/vs2018-roadmap) strony.

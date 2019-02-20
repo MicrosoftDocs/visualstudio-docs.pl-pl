@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988574"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450493"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Użyj klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 W pliku klasy KeyBindingTestTextViewCreationListener.cs, Zmień nazwę AdornmentLayer z **KeyBindingTest** do **PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>Polecenie TYPECHAR uchwytu
 Przed Visual Studio 2017 w wersji 15.6, jedynym sposobem obsługi poleceń w rozszerzenia edytora została Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> na podstawie filtru polecenia. Visual Studio 2017 w wersji 15.6 wprowadzono nowoczesnej uproszczone podejście oparte na programy obsługi poleceń edytora. W dwóch następnych sekcjach pokazują sposób obsługi polecenia przy użyciu zarówno starsze i nowoczesne podejście.

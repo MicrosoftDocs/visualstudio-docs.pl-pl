@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335236"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450324"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
+# <a name="create-applications-in-bidirectional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 
 Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tekstu w językach zapisywane prawej do lewej, łącznie z arabski i hebrajski. W przypadku niektórych funkcji można po prostu ustaw właściwości. W innych przypadkach należy zaimplementować funkcje w kodzie.
 
 > [!NOTE]
-> Aby można było wprowadzanie i wyświetlanie językach dwukierunkowych, musisz pracować z wersją systemu Windows, który jest skonfigurowany przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows przy użyciu odpowiedniego pakietu języka zainstalowane lub prawidłowo zlokalizowaną wersję Windows.
+> Aby można było wprowadzanie i wyświetlanie języki dwukierunkowe, musisz pracować z wersją systemu Windows, który jest skonfigurowany przy użyciu odpowiedniego języka. Może to być angielska wersja systemu Windows przy użyciu odpowiedniego pakietu języka zainstalowane lub prawidłowo zlokalizowaną wersję Windows.
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>Typy aplikacji, które obsługują językach dwukierunkowych
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>Typy aplikacji, które obsługują języki dwukierunkowe
 
 -  Aplikacje Windows
 
-   Możesz tworzyć aplikacje całkowicie dwukierunkowej, umożliwiające obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+   Możesz utworzyć w pełni aplikacjach, które obejmują obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
 
 -  Aplikacje internetowe
 
-   Obsługa usług sieci Web, wysyłanie i odbieranie UTF-8 i tekst w formacie Unicode, czemu są odpowiednie dla aplikacji, które obejmują językach dwukierunkowych. Aplikacji klienta sieci Web zależy od przeglądarki dla interfejsu użytkownika, więc stopień Obsługa dwukierunkowych w aplikacji sieci web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowych. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci web platformy ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Obsługa usług sieci Web, wysyłanie i odbieranie UTF-8 i tekst w formacie Unicode, czemu są odpowiednie dla aplikacji, które obejmują języki dwukierunkowe. Zależą od przeglądarki dla interfejsu użytkownika aplikacji klienta sieci Web, więc stopień dwukierunkowe obsługuje w aplikacji sieci web jest zależny od stopnia przeglądarki użytkownika obsługuje te funkcje dwukierunkowy. W programie Visual Studio możesz tworzyć aplikacje z obsługą tekst arabski lub hebrajski, kolejność czytania od prawej do lewej, kodowanie pliku i ustawienia lokalnych kultury. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji sieci web platformy ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 Aplikacje konsoli nie uwzględniają tekstu Obsługa języków dwukierunkowych. Jest to wynikiem sposobu działania Windows za pomocą aplikacji konsoli.
 
@@ -48,7 +48,7 @@ W czasie projektowania w programie Visual Studio można użyć języków dwukier
 
 - **Nazwy obiektów**
 
-   Aby przypisać nazwy do rozwiązania, projekty, pliki, foldery i tak dalej, można użyć językach dwukierunkowych. W kodzie używając języków dwukierunkowych nazw zmiennych, klasy, obiektu, atrybuty, metadane i inne elementy.
+   Języki dwukierunkowe można użyć, aby przypisać nazwy do rozwiązania, projekty, pliki, foldery i tak dalej. W kodzie można użyć języki dwukierunkowe nazw zmiennych, klasy, obiektu, atrybuty, metadane i inne elementy.
 
 - **Kodowanie pliku**
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172ec56815f989b13cd5a15c22241b669a9dc0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908858"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450584"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -56,15 +56,15 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 |Formatuj zaznaczenie|Ustawia właściwe wcięcia linii kodu i przenosi nawiasy klamrowe, aby rozdzielić linie w zaznaczeniu.|
 |Zmień spacje na tabulatory w zaznaczonych wierszach|Zmienia spacje wiodące na tabulatory, gdzie jest to odpowiednie.|
 |Zmień tabulatory na spacje w zaznaczonych wierszach|Zmienia tabulatory wiodące na spacje. Jeśli chcesz przekonwertować wszystkie spacje w pliku na tabulacje (lub wszystkie tabulacje na spacje), możesz użyć `Edit.ConvertSpacesToTabs` i `Edit.ConvertTabsToSpaces` poleceń. Te polecenia nie są wyświetlane w menu programu Visual Studio, ale możesz je wywołać **szybki dostęp** okna lub okna poleceń.|
-|Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery.|
-|Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery.|
+|Zmień litery na wielkie|Zmienia wszystkie znaki w zaznaczeniu na wielkie litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na wielkie litery. Skrót: **CTRL**+**Shift**+**U**.|
+|Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery. Skrót: **CTRL**+**U**.|
 |Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **ALT**+**Strzałka w górę**.|
 |Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **ALT**+**strzałkę w dół**.|
 |Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **Zawijanie** > **Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|
 |Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączać zawijanie wyrazów i Włącz w **Edytor tekstu wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
-|Dodaj komentarz do zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia.|
-|Usuń komentarz z zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia.|
+|Dodaj komentarz do zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia. Skrót: **Ctrl**+**K**, **Ctrl**+**C**|
+|Usuń komentarz z zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia. Skrót: **CTRL**+**K**, **Ctrl**+**U**|
 |Zwiększ wcięcie wiersza|Dodaje znak tabulatora (lub równoważne spacje) do wybranych wierszy lub w bieżącym wierszu.|
 |Zmniejsz wcięcie wiersza|Usuwa znak tabulatora (lub równoważne spacje) z wybranych wierszy lub w bieżącym wierszu.|
 |Wybierz Tag|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML) zaznacza znacznik.|
