@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853706"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603234"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Instrukcje: Konfigurowanie obiektów docelowych i zadań
 Można ustawić wybranych zadań programu MSBuild do uruchamiania w środowisku, docelowych, niezależnie od środowiska na komputerze deweloperskim. Na przykład gdy używasz 64-bitowy komputer do tworzenia aplikacji w danej architekturze celów 32-bitowa wybranych zadań są uruchamiane w procesie 32-bitowym.
@@ -108,4 +108,4 @@ W przeciwieństwie do innych parametrów zadania `MSBuildRuntime` i `MSBuildArch
 > Parametry zadania są oceniane w kontekście węzła nadrzędnego, a nie w kontekście hosta zadań. Zmienne środowiskowe, które są zależne środowiska uruchomieniowego lub architektura (takie jak *Program Files* lokalizacji) będą oceniać na wartość, która pasuje do węzła nadrzędnego. Jednak jeśli ten sam zmienna środowiskowa jest odczytywana bezpośrednio przez zadanie, zostanie prawidłowo ono ocenione w ramach hosta zadań.
 
 ## <a name="see-also"></a>Zobacz także
-[Konfigurowanie obiektów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md)
+- [Konfigurowanie obiektów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md)

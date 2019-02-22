@@ -12,42 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81700f73b7a1730a4f74f5340d5928b3662db3b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619423"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
-Pobiera poprzednich symboli w kolejności według adresu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Prev (   
-   ULONG        celt,   
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba symboli w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.  
-  
- pceltFetched  
- [out] Zwraca liczbę symboli w pobrano modułu wyliczającego.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku żadnych poprzednich symboli. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta metoda aktualizuje pozycja modułu wyliczającego według liczby elementów pobrana.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Pobiera poprzednich symboli w kolejności według adresu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Prev ( 
+   ULONG        celt,
+   IDiaSymbol** rgelt,
+   ULONG*       pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba symboli w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.
+
+ pceltFetched
+
+[out] Zwraca liczbę symboli w pobrano modułu wyliczającego.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku żadnych poprzednich symboli. W przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Ta metoda aktualizuje pozycja modułu wyliczającego według liczby elementów pobrana.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

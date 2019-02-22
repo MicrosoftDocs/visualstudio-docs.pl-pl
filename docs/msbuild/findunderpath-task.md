@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853758"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602188"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath — zadanie
 Określa, które elementy w kolekcji określonego elementu mają ścieżek, które znajdują się w lub pod określonym folderze.
@@ -73,6 +73,6 @@ W poniższym przykładzie użyto `FindUnderPath` zadanie, aby określić, jeśli
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
-[Zadania](../msbuild/msbuild-tasks.md)  
-[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

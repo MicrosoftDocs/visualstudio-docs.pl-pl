@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852843"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610414"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Instrukcje: Kompilacja projektu zawierającego zasoby
 Jeśli tworzysz zlokalizowane wersje projektu, wszystkich elementów interfejsu użytkownika muszą być oddzielone do plików zasobów w różnych językach. Jeśli projekt używa tylko ciągi, pliki zasobów, można użyć plików tekstowych. Alternatywnie, można użyć *resx* pliki jako pliki zasobów.
@@ -77,7 +77,7 @@ Poniższy przykładowy projekt zawiera dwa zadania: `GenerateResource` zadanie, 
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[MSBuild](../msbuild/msbuild.md)  
-[Generateresource — zadanie](../msbuild/generateresource-task.md)  
-[CSC — zadanie](../msbuild/csc-task.md)  
-[Resgen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [Generateresource — zadanie](../msbuild/generateresource-task.md)
+- [CSC — zadanie](../msbuild/csc-task.md)
+- [Resgen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

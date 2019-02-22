@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919277"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596741"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -88,7 +88,7 @@ Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze.
 ## <a name="control-display-options"></a>Opcje wyświetlania kontrolki
 
 > [!NOTE]
-> **Kontrolowanie opcji wyświetlania** jest dostępna tylko dla aplikacji Universal Windows Platform, których platformą docelową Windows 10 Fall Creators Update (kompilacja 16299) lub nowszej. **Opcje wyświetlania kontrolki** funkcja jest dostępna w programie Visual Studio 2017 w wersji 15.9 lub nowszej. 
+> **Kontrolowanie opcji wyświetlania** jest dostępna tylko dla aplikacji Universal Windows Platform, których platformą docelową Windows 10 Fall Creators Update (kompilacja 16299) lub nowszej. **Opcje wyświetlania kontrolki** funkcja jest dostępna w programie Visual Studio 2017 w wersji 15.9 lub nowszej.
 
 W Projektancie XAML możesz zmienić opcje wyświetlania kontrolki, aby wyświetlić tylko kontrolek platformy z zestawu Windows SDK. Może to zwiększyć niezawodność projektanta XAML.
 

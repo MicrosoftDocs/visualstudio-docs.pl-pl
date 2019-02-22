@@ -16,30 +16,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e261a0822622ec7a2c404539c3cd53f5daf9b67a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83ddc7462b703ef28a52b531aa379b46198516df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989916"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608206"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Wykorzystanie funkcji String.Split i String.Substring
 
-|||  
-|-|-|  
-|Identyfikator reguły|DA0013|  
-|Kategoria|.NET Framework Usage Guidance|  
-|Metod profilowania|Próbkowania|  
-|Komunikat|Należy rozważyć ograniczenie użycia funkcji String.Split i String.Substring.|  
-|Typ reguły|Ostrzeżenie|  
+|||
+|-|-|
+|Identyfikator reguły|DA0013|
+|Kategoria|.NET Framework Usage Guidance|
+|Metod profilowania|Próbkowania|
+|Komunikat|Należy rozważyć ograniczenie użycia funkcji String.Split i String.Substring.|
+|Typ reguły|Ostrzeżenie|
 
-## <a name="cause"></a>Przyczyna  
- Wywołania metod System.String.Split lub System.String.Substring jest znaczna część danych profilowania. Należy rozważyć użycie System.String.IndexOf lub System.String.IndexOfAny, jeśli testujesz istnienie podciągów w ciągu.  
+## <a name="cause"></a>Przyczyna
+ Wywołania metod System.String.Split lub System.String.Substring jest znaczna część danych profilowania. Należy rozważyć użycie System.String.IndexOf lub System.String.IndexOfAny, jeśli testujesz istnienie podciągów w ciągu.
 
-## <a name="rule-description"></a>Opis reguły  
- Metoda Podziel operuje na obiekt ciągu i zwraca nową tablicę ciągów, która przechowuje podciągów z oryginalnego. Funkcja przydziela pamięć dla obiektu zwróconej tablicy i przydziela nowy obiekt ciągu dla każdego elementu tablicy, które znajdzie. Podobnie SUBSTR — metoda operuje na obiekt ciągu i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciąg.  
+## <a name="rule-description"></a>Opis reguły
+ Metoda Podziel operuje na obiekt ciągu i zwraca nową tablicę ciągów, która przechowuje podciągów z oryginalnego. Funkcja przydziela pamięć dla obiektu zwróconej tablicy i przydziela nowy obiekt ciągu dla każdego elementu tablicy, które znajdzie. Podobnie SUBSTR — metoda operuje na obiekt ciągu i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciąg.
 
- Jeśli zarządzanie alokacji pamięci ma kluczowe znaczenie dla aplikacji, należy rozważyć użycie alternatywy dla funkcji String.Split i String.Substr metod. Na przykład służy metoda IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.  
+ Jeśli zarządzanie alokacji pamięci ma kluczowe znaczenie dla aplikacji, należy rozważyć użycie alternatywy dla funkcji String.Split i String.Substr metod. Na przykład służy metoda IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.
 
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
+## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
  Kliknij dwukrotnie komunikat w **lista błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych jej profilu. Sprawdź wywołania funkcji można znaleźć w sekcjach program najczęściej wykorzystać System.String.Split lub System.String.Substr metod. Jeśli to możliwe należy użyć metody IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.

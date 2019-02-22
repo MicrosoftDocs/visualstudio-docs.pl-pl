@@ -16,28 +16,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e57775a90523b02986cdc9b2a13ec42fdf950cc0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612520"
 ---
 # <a name="work-with-folders"></a>Praca z folderami
-  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Klasa zawiera metody i właściwości, które umożliwiają dostęp, tworzyć i dostosowywać folderów.  
-  
-|Zadanie|Procedura|  
-|----------|---------------|  
-|Wyszukiwanie ciągów w polu tematu wiadomości w **skrzynki odbiorczej**.|[Instrukcje: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
-|Pobierz odwołanie do folderu i wyświetlać zawartość.|[Instrukcje: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
-|Utwórz folder, który wyświetla stronę sieci Web, w okienku podglądu.|[Instrukcje: Programowe kojarzenie strony internetowej z folderem programu Outlook](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
-|Utwórz folder, który ma identyfikator bieżącego użytkownika dla nazwy.|[Instrukcje: Programowe tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
-|Przenoszenie wiadomości, spełniających określone kryteria do określonego folderu.|[Instrukcje: Programowe przenoszenie elementów w programie Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
-  
- Aby uzyskać więcej informacji o zadaniach programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
- [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
- [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)   
- [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)  
+  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Klasa zawiera metody i właściwości, które umożliwiają dostęp, tworzyć i dostosowywać folderów.
+
+|Zadanie|Procedura|
+|----------|---------------|
+|Wyszukiwanie ciągów w polu tematu wiadomości w **skrzynki odbiorczej**.|[Instrukcje: Programowe wyszukiwanie w określonym folderze](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
+|Pobierz odwołanie do folderu i wyświetlać zawartość.|[Instrukcje: Programowe pobieranie folderu według nazwy](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|
+|Utwórz folder, który wyświetla stronę sieci Web, w okienku podglądu.|[Instrukcje: Programowe kojarzenie strony internetowej z folderem programu Outlook](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|
+|Utwórz folder, który ma identyfikator bieżącego użytkownika dla nazwy.|[Instrukcje: Programowe tworzenie niestandardowych elementów folderu](../vsto/how-to-programmatically-create-custom-folder-items.md)|
+|Przenoszenie wiadomości, spełniających określone kryteria do określonego folderu.|[Instrukcje: Programowe przenoszenie elementów w programie Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|
+
+ Aby uzyskać więcej informacji o zadaniach programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [Praca z elementami poczty](../vsto/working-with-mail-items.md)
+- [Praca z elementami kalendarza](../vsto/working-with-calendar-items.md)
+- [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)

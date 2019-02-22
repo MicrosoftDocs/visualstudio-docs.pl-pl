@@ -12,62 +12,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d188f67a646d327c683125b7e59f208bdc7de61
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b04f9edc946b83f8785c6a6fb3e9720db4840f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023215"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596201"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
-Inicjuje nowe wystąpienie klasy `span` klasy.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-span(  
-   const marker_series& _Series,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `_Series`  
- Kontekst serii prawidłowe znacznika.  
-  
- `_Format`  
- Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
-  
- `_Importance`  
- Poziom ważności.  
-  
- `_Category`  
- Kategoria.  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *cvmarkersobj.h*  
-  
+Inicjuje nowe wystąpienie klasy `span` klasy.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+span(
+   const marker_series& _Series,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `_Series` Kontekst serii prawidłowe znacznika.
+
+ `_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
+
+ `_Importance` Poziom ważności.
+
+ `_Category` Kategoria.
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *cvmarkersobj.h*
+
  **Namespace:** CONCURRENCY::Diagnostic —
- 
+
  ## <a name="see-also"></a>Zobacz także
- [span, klasa](../profiling/span-class.md)
+- [span, klasa](../profiling/span-class.md)

@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0d126616827e496abc9cf45d4f54444c94a238
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596389"
 ---
 # <a name="cores-view-timeline"></a>Oś czasu widoku rdzeni
-Każdy wiersz na osi czasu reprezentuje rdzenia procesora logicznego w systemie profilowane. Dla każdego wiersza oś pozioma ukazuje, który wątek była uruchomiona na rdzeń logiczny w danym punkcie w czasie. Możesz umieścić kursor kolor zainteresowania na osi czasu do zwrócenia etykietkę narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendę u dołu okna pokazuje, co reprezentuje każdy kolor. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i przesuwanie kółka myszy. Spójność powiększenia jest zachowywane podczas przełączania się między widokiem rdzeni i wątków.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok rdzeni](../profiling/cores-view.md)   
- [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)
+Każdy wiersz na osi czasu reprezentuje rdzenia procesora logicznego w systemie profilowane. Dla każdego wiersza oś pozioma ukazuje, który wątek była uruchomiona na rdzeń logiczny w danym punkcie w czasie. Możesz umieścić kursor kolor zainteresowania na osi czasu do zwrócenia etykietkę narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendę u dołu okna pokazuje, co reprezentuje każdy kolor. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i przesuwanie kółka myszy. Spójność powiększenia jest zachowywane podczas przełączania się między widokiem rdzeni i wątków.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok rdzeni](../profiling/cores-view.md)
+- [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)

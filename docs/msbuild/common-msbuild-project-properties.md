@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020883"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610609"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
-W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.  
-  
- Pliki w programie Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*i inne) zawierają kod MSBuild XML, który jest uruchamiany, gdy tworzysz projekt za pomocą IDE. Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Aby uzyskać więcej informacji, zobacz [MSBuild — pliki .targets](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Lista typowych właściwości i parametrów  
-  
+W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.
+
+ Pliki w programie Visual Studio projektu (*.csproj*, *.vbproj*, *.vcxproj*i inne) zawierają kod MSBuild XML, który jest uruchamiany, gdy tworzysz projekt za pomocą IDE. Projekty zazwyczaj importują jeden lub więcej *.targets* pliki, aby zdefiniować ich proces kompilacji. Aby uzyskać więcej informacji, zobacz [MSBuild — pliki .targets](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Lista typowych właściwości i parametrów
+
 | Nazwa właściwości lub parametru | Opis |
 |------------------------------------| - |
 | AdditionalLibPaths | Określa dodatkowe foldery, w których kompilatory mają szukać zestawów odwołań. |
@@ -128,6 +128,6 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | WarningsNotAsErrors | Określa listę ostrzeżeń, które nie są traktowane jako błędy. Ten parametr jest równoważny `/warnaserror` przełącznika kompilatora. |
 | Win32Manifest | Nazwa pliku manifestu, który powinien być osadzony w końcowym zestawie. Ten parametr jest równoważny `/win32Manifest` przełącznika kompilatora. |
 | Win32Resource | Nazwa pliku zasobu Win32 osadzanego w końcowym zestawie. Ten parametr jest równoważny `/win32resource` przełącznika kompilatora. |
-  
-## <a name="see-also"></a>Zobacz także  
- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Zobacz także
+- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

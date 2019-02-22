@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e59bf79355b4e610091ac8662b8d2a01af322
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608500"
 ---
 # <a name="datakind"></a>DataKind
 Wskazuje zakresu określonej wartości danych.
@@ -40,35 +40,25 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Elementy
-DataIsUnknown  
-Nie można ustalić symbol danych.
+Nie można ustalić symbol DataIsUnknown danych.
 
-DataIsLocal  
-Element danych jest zmienną lokalną.
+Element danych DataIsLocal jest zmienną lokalną.
 
-DataIsStaticLocal  
-Element danych jest statyczna zmienna lokalna.
+Element danych DataIsStaticLocal jest statyczna zmienna lokalna.
 
-DataIsParam  
-Element danych jest parametrów formalnych.
+Element danych DataIsParam jest parametrów formalnych.
 
-DataIsObjectPtr  
-Element danych jest wskaźnikiem obiektu (`this`).
+Element danych DataIsObjectPtr jest wskaźnikiem obiektu (`this`).
 
-DataIsFileStatic  
-Element danych jest zmienną o zakresie pliku.
+Element danych DataIsFileStatic jest zmienną o zakresie pliku.
 
-DataIsGlobal  
-Element danych jest zmienną globalną.
+Element danych DataIsGlobal jest zmienną globalną.
 
-DataIsMember  
-Element danych jest zmienną elementu członkowskiego obiektu.
+Element danych DataIsMember jest zmienną elementu członkowskiego obiektu.
 
-DataIsStaticMember  
-Element danych jest zmienna statyczna klasy.
+Element danych DataIsStaticMember jest zmienna statyczna klasy.
 
-DataIsConstant  
-Element danych jest wartością stałą.
+Element danych DataIsConstant jest wartością stałą.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_datakind —](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metody.
@@ -77,5 +67,5 @@ Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_datakind —](../
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

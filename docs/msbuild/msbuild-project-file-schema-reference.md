@@ -15,48 +15,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95167a5b9b07d7aa446a756e31c267925ee79349
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c49c2198a4ecc40a40e3f5f6414bfd4af47279b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596610"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
-Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementów schematu XML z ich dostępne atrybuty i elementy podrzędne.  
-  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa plików projektu, aby nakazać aparat kompilacji, co do kompilacji i jak ją skompilować. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu są plikami XML, które będą zgodne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] schematu XML. W tej sekcji omówiono definicji schematu XML (*XSD*) plik [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
-## <a name="msbuild-xml-schema-elements"></a>Elementy schematu MSBuild XML  
- Poniższa tabela zawiera listę wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementy schematu XML wraz z ich elementów podrzędnych i atrybutów.  
-  
-|Element|Elementy podrzędne|Atrybuty|  
-|-------------|--------------------|----------------|  
-|[Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)|W przeciwnym razie<br /><br /> Kiedy|--|  
-|[Import — element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Projekt|  
-|[Importgroup — element](../msbuild/importgroup-element.md)|Import|Warunek|  
-|[Item — element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Warunek<br /><br /> Wyklucz<br /><br /> Uwzględnij<br /><br /> Usuń|  
-|[ItemDefinitionGroup — element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Element*|Warunek|  
-|[Itemgroup — element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Element*|Warunek|  
-|[Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Element*|Warunek|  
-|[OnError — element (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|Warunek<br /><br /> ExecuteTargets|  
-|[Otherwise — element (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|  
-|[OUTPUT — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|  
-|[Parameter — element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> Zgodność<br /><br /> Wymagane|  
-|[Parametergroup — element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
-|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz<br /><br /> Import<br /><br /> ItemGroup<br /><br /> Projectextensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|Defaulttargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|  
-|[Projectextensions — element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
-|[Property — element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Warunek|  
-|[PropertyGroup — element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Warunek|  
-|[Zestaw SDK, element (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|Nazwa<br /><br /> Wersja|  
-|[TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Zadanie*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Warunek<br /><br /> DependsOnTargets<br /><br /> Dane wejściowe<br /><br /> KeepDuplicateOutputs<br /><br /> Nazwa<br /><br /> Dane wyjściowe<br /><br /> Zwraca|  
-|[Task — element (MSBuild)](../msbuild/task-element-msbuild.md)|Dane wyjściowe|Warunek<br /><br /> ContinueOnError<br /><br /> *Parametr*|  
-|[Taskbody — element (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dane*|Oceń|  
-|[Usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Taskbody —|AssemblyFile<br /><br /> AssemblyName<br /><br /> Warunek<br /><br /> TaskFactory<br /><br /> TaskName|  
-|[Gdy element (MSBuild)](../msbuild/when-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|Warunek|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Warunki](../msbuild/msbuild-conditions.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+Zawiera spis wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementów schematu XML z ich dostępne atrybuty i elementy podrzędne.
+
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa plików projektu, aby nakazać aparat kompilacji, co do kompilacji i jak ją skompilować. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki projektu są plikami XML, które będą zgodne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] schematu XML. W tej sekcji omówiono definicji schematu XML (*XSD*) plik [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+## <a name="msbuild-xml-schema-elements"></a>Elementy schematu MSBuild XML
+ Poniższa tabela zawiera listę wszystkich [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementy schematu XML wraz z ich elementów podrzędnych i atrybutów.
+
+|Element|Elementy podrzędne|Atrybuty|
+|-------------|--------------------|----------------|
+|[Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)|W przeciwnym razie<br /><br /> Kiedy|--|
+|[Import — element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Warunek<br /><br /> Projekt|
+|[Importgroup — element](../msbuild/importgroup-element.md)|Import|Warunek|
+|[Item — element (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Warunek<br /><br /> Wyklucz<br /><br /> Uwzględnij<br /><br /> Usuń|
+|[ItemDefinitionGroup — element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Element*|Warunek|
+|[Itemgroup — element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Element*|Warunek|
+|[Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)|*Element*|Warunek|
+|[OnError — element (MSBuild)](../msbuild/onerror-element-msbuild.md)|--|Warunek<br /><br /> ExecuteTargets|
+|[Otherwise — element (MSBuild)](../msbuild/otherwise-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|--|
+|[OUTPUT — element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Warunek<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|
+|[Parameter — element](../msbuild/parameter-element.md)|--|Dane wyjściowe<br /><br /> Zgodność<br /><br /> Wymagane|
+|[Parametergroup — element](../msbuild/parametergroup-element.md)|*Parametr*|--|
+|[Project — element (MSBuild)](../msbuild/project-element-msbuild.md)|Wybierz<br /><br /> Import<br /><br /> ItemGroup<br /><br /> Projectextensions —<br /><br /> PropertyGroup<br /><br /> Cel<br /><br /> UsingTask|Defaulttargets —<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
+|[Projectextensions — element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
+|[Property — element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Warunek|
+|[PropertyGroup — element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|Warunek|
+|[Zestaw SDK, element (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|Nazwa<br /><br /> Wersja|
+|[TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Zadanie*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Warunek<br /><br /> DependsOnTargets<br /><br /> Dane wejściowe<br /><br /> KeepDuplicateOutputs<br /><br /> Nazwa<br /><br /> Dane wyjściowe<br /><br /> Zwraca|
+|[Task — element (MSBuild)](../msbuild/task-element-msbuild.md)|Dane wyjściowe|Warunek<br /><br /> ContinueOnError<br /><br /> *Parametr*|
+|[Taskbody — element (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dane*|Oceń|
+|[Usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Taskbody —|AssemblyFile<br /><br /> AssemblyName<br /><br /> Warunek<br /><br /> TaskFactory<br /><br /> TaskName|
+|[Gdy element (MSBuild)](../msbuild/when-element-msbuild.md)|Wybierz<br /><br /> ItemGroup<br /><br /> PropertyGroup|Warunek|
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Warunki](../msbuild/msbuild-conditions.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

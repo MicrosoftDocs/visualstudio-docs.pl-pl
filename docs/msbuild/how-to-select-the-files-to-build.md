@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942816"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610544"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do kompilacji
 Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić listę każdego pliku osobno w pliku projektu lub można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów.
@@ -29,25 +29,25 @@ Aby uwzględnić pliki dla kompilacji, muszą być uwzględnione na liście elem
 
 #### <a name="to-declare-items-individually"></a>Aby zadeklarować elementy pojedynczo
 
-- Użyj `Include` atrybuty podobne do następujących:  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    lub  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- Użyj `Include` atrybuty podobne do następujących:
+
+    `<CSFile Include="form1.cs"/>`
+
+    lub
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > Jeśli elementy w kolekcji elementów nie znajdują się w tym samym katalogu co plik projektu, należy określić pełną lub względną ścieżkę do elementu. Na przykład: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>Aby zadeklarować wiele elementów
 
--   Użyj `Include` atrybuty podobne do następujących:  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    lub  
-  
+-   Użyj `Include` atrybuty podobne do następujących:
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    lub
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Określ dane wejściowe z symbolami wieloznacznymi
@@ -63,24 +63,24 @@ Poniższe przykłady są oparte na projekt, który zawiera pliki grafiki w nast�
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Aby uwzględnić wszystkie *.jpg* pliki *obrazów* katalogu i podkatalogach
 
-- Należy użyć następującego `Include` atrybutu:  
-  
+- Należy użyć następującego `Include` atrybutu:
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Aby uwzględnić wszystkie *.jpg* pliki *img*
 
-- Należy użyć następującego `Include` atrybutu:  
-  
+- Należy użyć następującego `Include` atrybutu:
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Aby włączyć wszystkie pliki w katalogach przy użyciu nazwy kończące się na *jpg*
 
-- Użyj jednej z następujących `Include` atrybuty:  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    lub  
-  
+- Użyj jednej z następujących `Include` atrybuty:
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    lub
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Przekazywanie elementów do zadania
@@ -88,17 +88,17 @@ W pliku projektu, można użyć @ notacji () w zadaniach, aby określić listę 
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Aby używać wszystkich Visual C# lub Visual Basic plików jako dane wejściowe
 
-- Użyj `Include` atrybuty podobny do następującego:  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    lub  
-  
+- Użyj `Include` atrybuty podobny do następującego:
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    lub
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  Przy użyciu elementów należy użyć symboli wieloznacznych, aby określić dane wejściowe dla kompilacji; Nie można określić przy użyciu danych wejściowych `Sources` atrybutu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań, takich jak [Csc](../msbuild/csc-task.md) lub [Vbc](../msbuild/vbc-task.md). Poniższy przykład jest nieprawidłowy w pliku projektu:
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Przykład
@@ -170,5 +170,5 @@ Poniższy przykład kodu wykorzystuje symboli wieloznacznych, aby uwzględnić w
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)  
-[Elementy](../msbuild/msbuild-items.md)
+- [Instrukcje: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Elementy](../msbuild/msbuild-items.md)

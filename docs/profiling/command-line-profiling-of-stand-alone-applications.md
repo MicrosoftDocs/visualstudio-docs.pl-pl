@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603290"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilowanie wiersza polecenia aplikacji autonomicznych
-W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności dla aplikacji autonomicznej (klienta) przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.  
+W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności dla aplikacji autonomicznej (klienta) przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.
 
-## <a name="common-tasks"></a>Wspólne zadania  
+## <a name="common-tasks"></a>Wspólne zadania
 
 | Zadanie | Zawartość pokrewna |
 | - | - |
@@ -32,9 +32,9 @@ W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności 
 | **Dodawanie danych interakcji między warstwami:** Możesz dodać dane wydajności dotyczące ADO.NET synchroniczne wywołania aplikacji do firmy Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazy danych. Dodawanie danych interakcji do profilowania uruchomi wymaga określonych procedur z wiersza polecenia narzędzia profilowania. | -   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **Wypróbuj to:** Użyj procedury krok po kroku do profilowania Przykładowa aplikacja kliencka, za pomocą metody próbkowania i instrumentacji. | -   [Wskazówki: Wiersza polecenia, profilowania przy użyciu metody próbkowania](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [Wskazówki: Wiersza polecenia, profilowania przy użyciu metody Instrumentacji](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>Zadania powiązane  
+## <a name="related-tasks"></a>Zadania powiązane
 
-|Zadanie|Powiązana zawartość|  
-|----------|---------------------|  
-|**Profil aplikacji ASP.NET**|-   [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|Zadanie|Powiązana zawartość|
+|----------|---------------------|
+|**Profil aplikacji ASP.NET**|-   [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Usługi profilowania**|-   [Usługi profilowania](../profiling/command-line-profiling-of-services.md)|

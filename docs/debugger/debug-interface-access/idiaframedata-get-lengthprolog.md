@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16446e67bb3efa55bdb2ebe4733dff93e732807c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad162a8a29bd9432424ce64d00e820a0bfde1dd9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973710"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598846"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
-Pobiera liczbę bajtów kod prologu w bloku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_lengthProlog (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca liczbę bajtów kod prologu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Kod prologu jest sekwencją instrukcji, która zachowuje rejestrów, ustawia stan procesora CPU i ustanawia stosu dla funkcji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Pobiera liczbę bajtów kod prologu w bloku.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_lengthProlog ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca liczbę bajtów kod prologu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Kod prologu jest sekwencją instrukcji, która zachowuje rejestrów, ustawia stan procesora CPU i ustanawia stosu dla funkcji.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

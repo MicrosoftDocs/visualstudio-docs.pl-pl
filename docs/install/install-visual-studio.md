@@ -2,7 +2,7 @@
 title: Instalowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
-ms.date: 05/07/2018
+ms.date: 02/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156140"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607031"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
-Nowy sposób instalowania programu Visual Studio — Zapraszamy! W naszych najnowszych wersji wprowadziliśmy je łatwiej można wybierać i instalować tylko funkcje, których potrzebujesz. Również zmniejszyliśmy minimalnego śladu programu Visual Studio, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
+Nowy sposób instalowania programu Visual Studio — Zapraszamy! W tej wersji wprowadziliśmy je łatwiej można wybierać i instalować tylko funkcje, których potrzebujesz. Również zmniejszyliśmy minimalnego śladu programu Visual Studio, tak aby zainstalował szybciej i z mniejszym wpływem na system niż kiedykolwiek wcześniej.
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Zainstaluj program Visual Studio dla komputerów Mac](/visualstudio/mac/installation).
