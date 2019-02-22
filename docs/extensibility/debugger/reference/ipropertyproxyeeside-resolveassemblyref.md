@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::ResolveAssemblyRef | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 helpviewer_keywords:
@@ -12,61 +12,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d161e5e66d60b3967dcdd0e9e6f67e5699c4444c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949782"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681416"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Określa lokalizację odwołanie do określonego zestawu zarządzanego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT ResolveAssemblyRef(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  assemLocation,  
-   ASSEMBLYLOCRESOLUTION* alr  
-);  
-```  
-  
-```csharp  
-int ResolveAssemblyRef(  
-   ref string                     assemName,  
-   out IEEDataStorage             assemBytes,  
-   out IEEDataStorage             assemPdb,  
-   out string                     assemLocation,  
-   out enum_ASSEMBLYLOCRESOLUTION alr  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `assemName`  
- [in] Nazwa zestawu, aby rozwiązać.  
-  
- `assemBytes`  
- [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający bajtów zestawu skojarzonej z odwołaniem.  
-  
- `assemPdb`  
- [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol są przechowywane dane skojarzone z tym odwołaniem.  
-  
- `assemLocation`  
- [out] Zwraca ścieżkę lokalizacji tego odwołania.  
-  
- `alr`  
- [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizację to odwołanie do zestawu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest zwykle implementowany przez ewaluatora wyrażeń niestandardowych.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
+Określa lokalizację odwołanie do określonego zestawu zarządzanego.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT ResolveAssemblyRef(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  assemLocation,
+   ASSEMBLYLOCRESOLUTION* alr
+);
+```
+
+```csharp
+int ResolveAssemblyRef(
+   ref string                     assemName,
+   out IEEDataStorage             assemBytes,
+   out IEEDataStorage             assemPdb,
+   out string                     assemLocation,
+   out enum_ASSEMBLYLOCRESOLUTION alr
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `assemName`
+
+ [in] Nazwa zestawu, aby rozwiązać.
+
+ `assemBytes`
+
+ [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający bajtów zestawu skojarzonej z odwołaniem.
+
+ `assemPdb`
+
+ [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol są przechowywane dane skojarzone z tym odwołaniem.
+
+ `assemLocation`
+
+ [out] Zwraca ścieżkę lokalizacji tego odwołania.
+
+ `alr`
+
+ [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizację to odwołanie do zestawu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Ta metoda nie jest zwykle implementowany przez ewaluatora wyrażeń niestandardowych.
+
+## <a name="see-also"></a>Zobacz też
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+- [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

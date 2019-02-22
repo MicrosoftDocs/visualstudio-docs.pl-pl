@@ -7,13 +7,7 @@ ms.author: gregvanl
 ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
-- apexprodleads
-ms.openlocfilehash: 089173cc363bfa006d23fc784c1a437aeebcbf3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824093"
+  - apexprodleads
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentacja rozszerzalności programu Visual Studio
 

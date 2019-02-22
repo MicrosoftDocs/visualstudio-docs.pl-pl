@@ -12,20 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f01745ff7274719d6a967a50274eb316718c3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632124"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703009"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Pobiera numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji.
 
 ## <a name="syntax"></a>Składnia
 
-```
-- [C++]
+```cpp
 HRESULT get_columnNumber ( 
    DWORD* pRetVal
 );
