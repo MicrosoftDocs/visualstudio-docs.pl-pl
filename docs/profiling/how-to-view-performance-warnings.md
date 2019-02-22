@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa5f9f9ba05972895fd356b4e00287e05403d83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55c699f7d3bc1a74383da5eef481ee080c6d85e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622582"
 ---
 # <a name="how-to-view-performance-warnings"></a>Instrukcje: Wyświetlanie ostrzeżeń dotyczących wydajności
-Ostrzeżenia dotyczące wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Profiling Tools wskazują na problemy w profilowanej aplikacji, która może spowolnić działanie programu. Ostrzeżenia mogą również wskazywać, że można zmienić metody kolekcji, aby zebrać więcej przydatnych danych. Ostrzeżenia wydajności są automatycznie generowane w sesji profilowania i są wyświetlane w **lista błędów** okna po otwarciu pliku danych profilowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
-  
+Ostrzeżenia dotyczące wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Profiling Tools wskazują na problemy w profilowanej aplikacji, która może spowolnić działanie programu. Ostrzeżenia mogą również wskazywać, że można zmienić metody kolekcji, aby zebrać więcej przydatnych danych. Ostrzeżenia wydajności są automatycznie generowane w sesji profilowania i są wyświetlane w **lista błędów** okna po otwarciu pliku danych profilowania w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.
+
  Jeśli **lista błędów** okna nie pojawia się po otwarciu pliku danych profilowania, kliknij przycisk **widoku** menu, a następnie kliknij przycisk **lista błędów**.

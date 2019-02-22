@@ -12,49 +12,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6e20f043e7f23dc881ab95ac7d6fd51200d12e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef151b369c18863b8a87944cdbf69fed9aeb0840
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039517"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598690"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
-Pobiera określoną liczbę symboli w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Next (   
-   ULONG        celt,  
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba symboli w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.  
-  
- pceltFetched  
- [out] Zwraca liczbę symboli w pobrano modułu wyliczającego.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak symboli więcej. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
-  
-```C++  
-IDiaEnumSymbols* pEnum  
-CComPtr< IDiaSymbol> pSym;  
-DWORD celt;  
-pEnum->Next( 1, &pSym, &celt );  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession::findlinesbylinenum —](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Pobiera określoną liczbę symboli w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Next ( 
+   ULONG        celt,
+   IDiaSymbol** rgelt,
+   ULONG*       pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba symboli w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.
+
+ pceltFetched
+
+[out] Zwraca liczbę symboli w pobrano modułu wyliczającego.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak symboli więcej. W przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+
+```C++
+IDiaEnumSymbols* pEnum
+CComPtr< IDiaSymbol> pSym;
+DWORD celt;
+pEnum->Next( 1, &pSym, &celt );
+```
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

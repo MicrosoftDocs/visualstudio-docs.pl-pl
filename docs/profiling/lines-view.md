@@ -14,35 +14,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b81c724d5b0c8057abb706073c3faf94bfe1b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965201"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613989"
 ---
 # <a name="lines-view"></a>Widok linii
-Widok linii jest dostępna tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.  
-  
- Dla pobierania próbek danych profilowych, widok linii identyfikuje instrukcji w funkcji, która bezpośrednio był wykonywany, gdy zostały zebrane próbki. W przypadku danych pamięci .NET widok linii określa instrukcje, które przydzielić pamięci.  
-  
- W pliku źródłowym instrukcji może obejmować więcej tego wiersza w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
-  
- Instrukcja jest identyfikowane przez następujące elementy:  
-  
--   Plik źródłowy, który zawiera deklarację funkcji.  
-  
--   Funkcja, która zawiera instrukcję.  
-  
--   Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
-  
--   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
-  
--   Wiersza źródłowego, w którym kończy się instrukcji.  
-  
--   Znak w wierszu źródłowym, w którym kończy się instrukcji.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok linii](../profiling/lines-view-sampling-data.md)   
- [Widok linii - próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)   
- [Widok linii](../profiling/lines-view-contention-data.md)
+Widok linii jest dostępna tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.
+
+ Dla pobierania próbek danych profilowych, widok linii identyfikuje instrukcji w funkcji, która bezpośrednio był wykonywany, gdy zostały zebrane próbki. W przypadku danych pamięci .NET widok linii określa instrukcje, które przydzielić pamięci.
+
+ W pliku źródłowym instrukcji może obejmować więcej tego wiersza w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.
+
+ Instrukcja jest identyfikowane przez następujące elementy:
+
+-   Plik źródłowy, który zawiera deklarację funkcji.
+
+-   Funkcja, która zawiera instrukcję.
+
+-   Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.
+
+-   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.
+
+-   Wiersza źródłowego, w którym kończy się instrukcji.
+
+-   Znak w wierszu źródłowym, w którym kończy się instrukcji.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok linii](../profiling/lines-view-sampling-data.md)
+- [Widok linii - próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Widok linii](../profiling/lines-view-contention-data.md)

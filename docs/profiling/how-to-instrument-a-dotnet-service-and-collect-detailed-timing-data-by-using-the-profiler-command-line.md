@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933286"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638988"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentacja usługi .NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
 
@@ -20,7 +20,7 @@ W tym artykule opisano, jak używać narzędzi wiersza polecenia programu Visual
 
 > [!NOTE]
 > Nie można profilować usługi za pomocą metody instrumentacji, jeśli usługa nie można uruchomić ponownie po uruchomieniu komputera, takiej usługi, który uruchamia tylko wtedy, gdy zostanie uruchomiony system operacyjny.
-> 
+>
 > Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 >
 > Dodawanie danych interakcji do profilowania uruchomi wymaga określonych procedur za pomocą narzędzi profilowania z wiersza polecenia. Zobacz [zbierania danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -108,5 +108,5 @@ Należy ponownie uruchomić komputer, aby nowe ustawienia środowiska, które ma
 
 ## <a name="see-also"></a>Zobacz także
 
-[Usługi profilowania](../profiling/command-line-profiling-of-services.md)  
-[Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+[Profil usługi](../profiling/command-line-profiling-of-services.md)
+[widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)

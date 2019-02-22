@@ -11,45 +11,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5ecacb9baecbbfe136adebb92021c07fc4f7a7d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8fd108e71a49e8860a0fd4fec8751da4bc81644
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638845"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Zbieranie statystyk aplikacji sieci web ASP.NET
 
-W tej sekcji opisano procedury składowane i zbieranie statystyk wydajności dla aplikacji sieci Web platformy ASP.NET przy użyciu opcji **VSPerfASPNETCmd** i **VSPerfCmd** narzędzie wiersza polecenia i Metoda profilowania próbkowanie.  
-  
+W tej sekcji opisano procedury składowane i zbieranie statystyk wydajności dla aplikacji sieci Web platformy ASP.NET przy użyciu opcji **VSPerfASPNETCmd** i **VSPerfCmd** narzędzie wiersza polecenia i Metoda profilowania próbkowanie.
+
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
+>  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
 > [!NOTE]
->  Mimo że **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcje Profiling Tools, w tym wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows, należy użyć **VSPerfASPNETCmd** narzędzia wiersza polecenia, jeśli nie potrzebujesz tej funkcji. **VSPerfASPNETCmd** narzędzia wiersza polecenia jest to preferowana metoda gdy jesteś profilowania witryn sieci Web platformy ASP.NET przy użyciu autonomicznego profilera. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe, które należy skonfigurować i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
-  
-## <a name="common-tasks"></a>Wspólne zadania  
-  
-|Zadanie|Powiązana zawartość|  
-|----------|---------------------|  
-|**Dołącz profiler do aplikacji ASP.NET**|-   [Jak: Dołącz profiler do aplikacji sieci web ASP.NET w celu zbierania statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
-  
-## <a name="related-tasks"></a>Zadania powiązane  
-  
-### <a name="profile-aspnet-web-applications"></a>Aplikacje sieci web ASP.NET profilu  
-  
-|Zadanie|Powiązana zawartość|  
-|----------|---------------------|  
-|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
-|**Profil kolekcji alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
-  
-### <a name="sample-method"></a>Przykładowa metoda  
-  
-|Zadanie|Powiązana zawartość|  
-|----------|---------------------|  
-|**Profil aplikacji autonomicznej (klienta)**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|-   **Usługi profilowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-  
-### <a name="analyze-sampling-data-views-and-reports"></a>Analizowanie próbkowanie danych widoków i raportów  
- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
+>  Mimo że **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcje Profiling Tools, w tym wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows, należy użyć **VSPerfASPNETCmd** narzędzia wiersza polecenia, jeśli nie potrzebujesz tej funkcji. **VSPerfASPNETCmd** narzędzia wiersza polecenia jest to preferowana metoda gdy jesteś profilowania witryn sieci Web platformy ASP.NET przy użyciu autonomicznego profilera. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe, które należy skonfigurować i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+
+## <a name="common-tasks"></a>Wspólne zadania
+
+|Zadanie|Powiązana zawartość|
+|----------|---------------------|
+|**Dołącz profiler do aplikacji ASP.NET**|-   [Jak: Dołącz profiler do aplikacji sieci web ASP.NET w celu zbierania statystyk aplikacji](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|
+
+## <a name="related-tasks"></a>Zadania powiązane
+
+### <a name="profile-aspnet-web-applications"></a>Aplikacje sieci web ASP.NET profilu
+
+|Zadanie|Powiązana zawartość|
+|----------|---------------------|
+|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
+|**Profil kolekcji alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
+|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+
+### <a name="sample-method"></a>Przykładowa metoda
+
+|Zadanie|Powiązana zawartość|
+|----------|---------------------|
+|**Profil aplikacji autonomicznej (klienta)**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|-   **Usługi profilowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
+
+### <a name="analyze-sampling-data-views-and-reports"></a>Analizowanie próbkowanie danych widoków i raportów
+- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)

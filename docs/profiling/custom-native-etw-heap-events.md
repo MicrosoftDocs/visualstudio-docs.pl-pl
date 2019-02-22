@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089269"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615549"
 ---
 # <a name="custom-native-etw-heap-events"></a>Niestandardowe zdarzenia ETW sterty natywnej
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Tego dekoratora poinformuje kompilator, że ta funkcja jest wywołaniem alokatora.  Każde wywołanie funkcji zwróci adres miejsca wywołania, rozmiar instrukcji wywołania i typeId nowy obiekt do nowego `S_HEAPALLOCSITE` symboli.  Gdy stos wywołań jest przydzielany, Windows będzie emitować zdarzenia ETW za pomocą tych informacji.  Narzędzie memory profiler przedstawia stos wywołań wyszukiwania pasującego adres zwrotny `S_HEAPALLOCSITE` symboli i typeId informacje zawarte w symbolu jest używana do wyświetlania typ środowiska uruchomieniowego alokacji.
    >
@@ -79,7 +79,7 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    ```
 
    Jeśli używasz języka C, należy użyć `OpenHeapTracker` zamiast tego funkcji.  Ta funkcja zwraca uchwyt, który będzie używany podczas wywoływania innych funkcji śledzenia:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    ```
 
 ## <a name="track-memory-usage"></a>Śledzenie użycia pamięci
-Za pomocą tych wywołań w miejscu użycia niestandardowego sterty teraz można śledzić przy użyciu standardu **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [użycie pamięci](../profiling/memory-usage.md) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowych sterty wyświetlane. 
+Za pomocą tych wywołań w miejscu użycia niestandardowego sterty teraz można śledzić przy użyciu standardu **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [użycie pamięci](../profiling/memory-usage.md) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowych sterty wyświetlane.
 
 ![Włącz profilowanie sterty](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Przy użyciu standardowego stosu Windows, można używać to narzędzie do poró
 > Program Visual Studio zawiera także **użycie pamięci** narzędzia w **profilowanie wydajności** zestawu narzędzi, które zostały włączone w **debugowania**  >   **Profiler wydajności** opcji menu lub **Alt**+**F2** za pomocą klawiatury w połączeniu.  Ta funkcja nie obejmuje śledzenia stosu i nie będą wyświetlane na swojej niestandardowej sterty, zgodnie z opisem w tym miejscu.  Tylko **narzędzia diagnostyczne** okno, które można włączyć za pomocą **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**  menu lub **Ctrl**+**Alt**+**F2** połączenie za pomocą klawiatury, zawiera tę funkcję.
 
 ## <a name="see-also"></a>Zobacz także
-[Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)  
-[Użycie pamięci](../profiling/memory-usage.md)
+[Pierwsze spojrzenie na profilowanie narzędzia](../profiling/profiling-feature-tour.md)
+[użycie pamięci](../profiling/memory-usage.md)

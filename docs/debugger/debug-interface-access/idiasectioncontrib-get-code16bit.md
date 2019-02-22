@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0200c65cfd89086a58466913967e73a00e4d7fd4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993525"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635894"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
-Pobiera flagę wskazującą, czy sekcja zawiera 16-bitowego kodu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_code16bit(  
-   BOOL *pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` w przypadku 16-bitową; w przeciwnym razie kod w sekcji zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta metoda wskazuje tylko, jeśli kod jest 16-bitowych. Jeśli kod jest nie 16-bitowych, może to być dowolne inne, takie jak kod 32-bitową lub 64-bitowych.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Pobiera flagę wskazującą, czy sekcja zawiera 16-bitowego kodu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_code16bit(
+   BOOL *pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` w przypadku 16-bitową; w przeciwnym razie kod w sekcji zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Ta metoda wskazuje tylko, jeśli kod jest 16-bitowych. Jeśli kod jest nie 16-bitowych, może to być dowolne inne, takie jak kod 32-bitową lub 64-bitowych.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

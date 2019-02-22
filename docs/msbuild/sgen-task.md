@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948222"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607359"
 ---
 # <a name="sgen-task"></a>SGen — Zadanie
-Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie jest zawijany narzędzie generatora serializatora XML (*Sgen.exe*). Aby uzyskać więcej informacji, zobacz [narzędzie generatora serializatora XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie jest zawijany narzędzie generatora serializatora XML (*Sgen.exe*). Aby uzyskać więcej informacji, zobacz [narzędzie generatora serializatora XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `SGen` zadania.  
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry `SGen` zadania.
 
 
 | Parametr | Opis |
@@ -50,10 +50,10 @@ Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie jes
 | `Types` | Opcjonalnie `String[]` parametru.<br /><br /> Pobiera lub ustawia listę określonych typów do generowania kodu serializacji. SGen wygeneruje kod serializacji tylko dla tych typów. |
 | `UseProxyTypes` | Wymagane `Boolean` parametru.<br /><br /> Jeśli `true`, SGen — zadanie generuje kod serializacji tylko dla typów serwera proxy usług sieci Web XML. |
 
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

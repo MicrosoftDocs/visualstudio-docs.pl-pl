@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ca06250c7b488cfc951abfaf2f19a72f55f659
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69792da25430c53405e477bf07aadc13dcaa36f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000314"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623401"
 ---
 # <a name="idiaenumdebugstreamsreset"></a>IDiaEnumDebugStreams::Reset
-Resetuje sekwencji wyliczenia na początku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK`.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Resetuje sekwencji wyliczenia na początku.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ Zwraca `S_OK`.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

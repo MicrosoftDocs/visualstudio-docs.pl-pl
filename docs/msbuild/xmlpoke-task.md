@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626690"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — zadanie
 
@@ -30,7 +30,7 @@ Ustawia wartości określonych przez zapytanie XPath do pliku XML.
 ## <a name="parameters"></a>Parametry
 
  W poniższej tabeli opisano parametry `XmlPoke` zadania.
-  
+
 |Parametr|Opis|
 |---------------|-----------------|
 |`Namespaces`|Opcjonalnie `String` parametru.<br /><br /> Określa obszary nazw w przypadku prefiksów kwerendy XPath. `Namespaces` jest składający się z fragmentu kodu XML `Namespace` elementy z atrybutami `Prefix` i `Uri`. Ten atrybut `Prefix` Określa prefiks do skojarzenia z przestrzeni nazw określonej w `Uri` atrybutu. Nie używaj pustego `Prefix`.|
@@ -81,5 +81,5 @@ W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/Phone
 
 ## <a name="see-also"></a>Zobacz także
 
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

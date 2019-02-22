@@ -10,41 +10,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a774c3e04a2a4ded098424728cf3f9621699be1d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2dcea1097b33c612094c4a7eb35b240c28f8bde0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613950"
 ---
 # <a name="functions-view---contention-data"></a>Widok funkcji — dane rywalizacji
-Raport funkcji widoku list danych rywalizacji o zasoby funkcji w trakcie uruchomienia profilowania, które zostały zablokowane z wykonanie w trakcie uruchomienia profilowania.  
-  
- W poniższej tabeli przedstawiono wartości, które są wyświetlane w widoku funkcji w pliku danych profilowania, które zostały zebrane za pomocą metody współbieżności.  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Wyłączny czas blokowania**|Ilość czasu, w którym ta funkcja został zablokowany wykonywanie kodu w treści funkcji. Czas blokowania w funkcjach, które zostały wywołane przez funkcję nie jest włączony.|  
-|**% Własnego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był wyłączny czas blokowania w tej funkcji.|  
-|**Rywalizacje wyłączne**|Liczba przypadków, które tej funkcji został zablokowany wykonywanie kodu w treści funkcji. Rywalizacje w funkcjach, które zostały wywołane przez funkcję nie są uwzględniane.|  
-|**% Rywalizacji wyłącznych**|Wartość procentowa rywalizacji wszystkich podczas uruchomienia profilowania były rywalizacji wyłącznych tej funkcji.|  
-|**Adres funkcji**|Adres funkcji.|  
-|**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|  
-|**Całkowity czas blokowania**|Czas, jaki ta funkcja lub funkcja, która została wywołana przez tę funkcję zablokowano wykonywania.|  
-|**% Całkowitego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był całkowity czas blokowania w tej funkcji lub modułu.|  
-|**Rywalizacje włączne**|Ile razy ta funkcja lub funkcja, która została wywołana przez tę funkcję zablokowano wykonywania.|  
-|**% Rywalizacji włącznych**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji włącznych tej funkcji lub modułu.|  
-|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|  
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) procesu, w którym wykonywania funkcji.|  
-|**Nazwa procesu**|Nazwa procesu.|  
-|**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
- [Widok funkcji](../profiling/functions-view.md)   
- [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Widok funkcji](../profiling/functions-view-instrumentation-data.md)   
- [Widok funkcji](../profiling/functions-view-sampling-data.md)
+Raport funkcji widoku list danych rywalizacji o zasoby funkcji w trakcie uruchomienia profilowania, które zostały zablokowane z wykonanie w trakcie uruchomienia profilowania.
+
+ W poniższej tabeli przedstawiono wartości, które są wyświetlane w widoku funkcji w pliku danych profilowania, które zostały zebrane za pomocą metody współbieżności.
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Wyłączny czas blokowania**|Ilość czasu, w którym ta funkcja został zablokowany wykonywanie kodu w treści funkcji. Czas blokowania w funkcjach, które zostały wywołane przez funkcję nie jest włączony.|
+|**% Własnego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był wyłączny czas blokowania w tej funkcji.|
+|**Rywalizacje wyłączne**|Liczba przypadków, które tej funkcji został zablokowany wykonywanie kodu w treści funkcji. Rywalizacje w funkcjach, które zostały wywołane przez funkcję nie są uwzględniane.|
+|**% Rywalizacji wyłącznych**|Wartość procentowa rywalizacji wszystkich podczas uruchomienia profilowania były rywalizacji wyłącznych tej funkcji.|
+|**Adres funkcji**|Adres funkcji.|
+|**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|
+|**Całkowity czas blokowania**|Czas, jaki ta funkcja lub funkcja, która została wywołana przez tę funkcję zablokowano wykonywania.|
+|**% Całkowitego czasu blokowania**|Procent wszystkich czas blokowania podczas uruchomienia profilowania, który był całkowity czas blokowania w tej funkcji lub modułu.|
+|**Rywalizacje włączne**|Ile razy ta funkcja lub funkcja, która została wywołana przez tę funkcję zablokowano wykonywania.|
+|**% Rywalizacji włącznych**|Wartość procentowa wszystkie rywalizacje w uruchomienia profilowania były rywalizacji włącznych tej funkcji lub modułu.|
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
+|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|
+|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|
+|**Identyfikator procesu**|Identyfikator procesu (PID) procesu, w którym wykonywania funkcji.|
+|**Nazwa procesu**|Nazwa procesu.|
+|**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
+
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
+- [Widok funkcji](../profiling/functions-view.md)
+- [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Widok funkcji](../profiling/functions-view-instrumentation-data.md)
+- [Widok funkcji](../profiling/functions-view-sampling-data.md)

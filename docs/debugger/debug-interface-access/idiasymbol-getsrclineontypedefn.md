@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2112f7186ee8bb861cf4d283b0bb0b4499f2c4ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023996"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613222"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Pobiera źródło pliku i numer wiersza wskazujące, gdzie zdefiniowane jest określonego typu zdefiniowanego przez użytkownika.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT getSrcLineOnTypeDefn(  
-   IDiaLineNumber **ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppResult`  
- [out] A `IDiaLineNumber` obiekt, który zawiera numer pliku i wierszu źródła gdzie zdefiniowany przez użytkownika.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Pobiera źródło pliku i numer wiersza wskazujące, gdzie zdefiniowane jest określonego typu zdefiniowanego przez użytkownika.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT getSrcLineOnTypeDefn(
+   IDiaLineNumber **ppResult);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppResult`
+
+[out] A `IDiaLineNumber` obiekt, który zawiera numer pliku i wierszu źródła gdzie zdefiniowany przez użytkownika.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

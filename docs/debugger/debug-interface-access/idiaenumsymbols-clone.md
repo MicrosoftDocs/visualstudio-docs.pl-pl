@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baea8fb7d0bf43f648cd4201bef74c97e91db7ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 098dd1f5ba12c5b3aeff6add364f63b8baa676bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042742"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620151"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
-Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumSymbols** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- ppenum  
- [out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Symbole nie są duplikowane, tylko moduł wyliczający.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumSymbols** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ ppenum
+
+[out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Symbole nie są duplikowane, tylko moduł wyliczający.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

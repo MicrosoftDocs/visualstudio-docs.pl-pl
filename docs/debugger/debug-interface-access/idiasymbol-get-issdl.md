@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ae80a4074b023b5b4e4d8dea3b32387dfc0902
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6904fc673462a79578549bcf22c2973a5c10c95c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630174"
 ---
 # <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
-Określa, czy moduł został skompilowany z opcją/SDL.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_isSdl(  
-   BOOL *pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Wskaźnik do `BOOL` określająca, czy moduł został skompilowany z opcją/SDL.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Określa, czy moduł został skompilowany z opcją/SDL.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_isSdl(
+   BOOL *pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Wskaźnik do `BOOL` określająca, czy moduł został skompilowany z opcją/SDL.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

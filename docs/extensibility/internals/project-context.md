@@ -10,22 +10,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd9d4c93ac69c73f81adc3111b0aeb4e141ab39f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 800a28d9829600821014aab17b36ca8506fd044a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990332"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645098"
 ---
 # <a name="project-context"></a>Kontekst projektu
-Gdy użytkownik dodaje lub współpracuje z projektów i elementów projektu, IDE używa pojęcie kontekstem projektu, aby określić, jak różne operacje, które powinny być wykonywane.  
-  
- Zazwyczaj pliki są standardowy projekt obiektów tworzonych użytkownik jawnie, wybierając **nowy projekt** polecenia lub udostępnia, wybierając **Otwórz projekt** polecenie  **Plik** menu. W takich przypadkach pliki są tworzone i otwierane w ramach projektu, a typ projektu Określa kontekst dla edytowania dokumentu.  
-  
- Niektóre projekty zawierają bardzo szeroki kontekst. Na przykład projekt zarządza o zasięgu projektu, programowe przestrzeni nazw lub zakresie projektu połączenia bazy danych dla powiązania danych. Użytkownik może często otwierać pliki lub połączenia z bazą danych bezpośrednio przy użyciu obiektu określonego projektu, takich jak element projektu wyświetlane w Eksploratorze rozwiązań.  
-  
- W pozostałym czasie kontekstem projektu elementu nie jest jawnie określona. Na przykład kontekst elementu nie jest dostępne po użytkownik otwiera plik, wybierając **Otwórz istniejący plik** polecenie **pliku** menu, gdy debuger działa z pliku lub po kliknięciu przez użytkownika **Znajdź w plikach** polecenia w pliku **Znajdź i Zamień** okno dialogowe. Do obsługi tych sytuacji wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> do zarządzania procesem odnajdywania najlepsze projekt, aby otworzyć dokument.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Priorytet projektu](../../extensibility/internals/project-priority.md)   
- [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+Gdy użytkownik dodaje lub współpracuje z projektów i elementów projektu, IDE używa pojęcie kontekstem projektu, aby określić, jak różne operacje, które powinny być wykonywane.
+
+ Zazwyczaj pliki są standardowy projekt obiektów tworzonych użytkownik jawnie, wybierając **nowy projekt** polecenia lub udostępnia, wybierając **Otwórz projekt** polecenie  **Plik** menu. W takich przypadkach pliki są tworzone i otwierane w ramach projektu, a typ projektu Określa kontekst dla edytowania dokumentu.
+
+ Niektóre projekty zawierają bardzo szeroki kontekst. Na przykład projekt zarządza o zasięgu projektu, programowe przestrzeni nazw lub zakresie projektu połączenia bazy danych dla powiązania danych. Użytkownik może często otwierać pliki lub połączenia z bazą danych bezpośrednio przy użyciu obiektu określonego projektu, takich jak element projektu wyświetlane w Eksploratorze rozwiązań.
+
+ W pozostałym czasie kontekstem projektu elementu nie jest jawnie określona. Na przykład kontekst elementu nie jest dostępne po użytkownik otwiera plik, wybierając **Otwórz istniejący plik** polecenie **pliku** menu, gdy debuger działa z pliku lub po kliknięciu przez użytkownika **Znajdź w plikach** polecenia w pliku **Znajdź i Zamień** okno dialogowe. Do obsługi tych sytuacji wywołania IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> do zarządzania procesem odnajdywania najlepsze projekt, aby otworzyć dokument.
+
+## <a name="see-also"></a>Zobacz też
+- [Priorytet projektu](../../extensibility/internals/project-priority.md)
+- [Dodawanie projektu i szablonów elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)

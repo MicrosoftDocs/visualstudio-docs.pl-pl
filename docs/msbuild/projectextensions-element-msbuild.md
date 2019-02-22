@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c600d7756c83fb55a63a91e81b3d826aa9f3d747
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996756"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617135"
 ---
 # <a name="projectextensions-element-msbuild"></a>Projectextensions — element (MSBuild)
-Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki, aby zawierała non - projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Wszystko wewnątrz elementu `ProjectExtensions` element zostanie zignorowana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki, aby zawierała non - projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Wszystko wewnątrz elementu `ProjectExtensions` element zostanie zignorowana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
- \<Project>  
- \<ProjectExtensions>  
+ \<Project> \<ProjectExtensions>
 
-## <a name="syntax"></a>Składnia  
+## <a name="syntax"></a>Składnia
 
-```xml  
-<ProjectExtensions>  
-    Non-MSBuild information to include in file.  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    Non-MSBuild information to include in file.
+</ProjectExtensions>
+```
 
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty  
- Brak  
+### <a name="attributes"></a>Atrybuty
+ Brak
 
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak  
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak
 
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
-## <a name="remarks"></a>Uwagi  
- Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
+## <a name="remarks"></a>Uwagi
+ Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.
 
-## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje informacje z zintegrowanego środowiska programistycznego znajdujących się w `ProjectExtensions` elementu.  
+## <a name="example"></a>Przykład
+ Poniższy przykład kodu pokazuje informacje z zintegrowanego środowiska programistycznego znajdujących się w `ProjectExtensions` elementu.
 
-```xml  
-<ProjectExtensions>  
-    <VSIDE>  
-        <External>  
-            <!--  
-            Raw XML passed to the IDE by an external source  
-            -->  
-        </External>  
-    </VSIDE>  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    <VSIDE>
+        <External>
+            <!--
+            Raw XML passed to the IDE by an external source
+            -->
+        </External>
+    </VSIDE>
+</ProjectExtensions>
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601385"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Wpływ automatycznego zapisywania na rozwiązania pakietu Office
 
@@ -27,5 +27,4 @@ Automatyczne zapisywanie to funkcja dla programów Excel, PowerPoint i Word, kt�
 > Automatyczne zapisywanie for Windows Desktop programu Word, Excel i PowerPoint została wprowadzona w 2017 r. i jest obecnie dostępna dla subskrybentów usługi Office 365. Jeśli zakupiono licencję bezterminową do pakietu Office 2016 lub starszym, nie obecnie masz dostęp do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS, a Mobile programu Excel w Store Windows obsługuje tę funkcję, mimo że).
 
 ## <a name="see-also"></a>Zobacz także
-
-[Opracowywania rozwiązań pakietu Office](./developing-office-solutions.md)
+- [Opracowywania rozwiązań pakietu Office](./developing-office-solutions.md)

@@ -12,31 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6baaeb9b28cda7494ba0d5eec1b4c2b5ff028ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa4478788c820485ac3284e9533987ceb8e3492f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933259"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623791"
 ---
 # <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
-Pobiera typ ramki.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_type (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca wartość z zakresu od [stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md) wyliczenia.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiastackframe —](../../debugger/debug-interface-access/idiastackframe.md)   
- [StackFrameTypeEnum, wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)
+Pobiera typ ramki.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_type ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca wartość z zakresu od [stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md) wyliczenia.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+- [StackFrameTypeEnum, wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f532b55ffd401b88471921cb41d47410604dfa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939377"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614730"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` Jeśli blok zawiera punkt wejścia; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Istnieje możliwość ramka stosu nie są początku funkcji, ponieważ ramka reprezentuje wbudowane metody lub funkcji wstawione do funkcji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` Jeśli blok zawiera punkt wejścia; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Istnieje możliwość ramka stosu nie są początku funkcji, ponieważ ramka reprezentuje wbudowane metody lub funkcji wstawione do funkcji.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

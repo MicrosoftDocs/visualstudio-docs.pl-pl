@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee06900559dd27b0cf499693987037db4a08da03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624129"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-Pobiera gniazda danych podstawowych.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_baseDataSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Wskaźnik do `DWORD` zawierający miejsce danych podstawowych.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Pobiera gniazda danych podstawowych.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_baseDataSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Wskaźnik do `DWORD` zawierający miejsce danych podstawowych.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

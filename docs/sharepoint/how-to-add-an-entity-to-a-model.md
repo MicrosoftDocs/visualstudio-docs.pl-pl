@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b269bb18580784fb08d9b081a37935c7b3f37627
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7a51786cc8a448bf8b7348917df58cef43468619
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864666"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609660"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Instrukcje: Dodawanie jednostki do modelu
-  Aby utworzyć jednostki, należy dodać kontrolkę typu jednostki z programu Visual Studio **przybornika** do projektanta łączności danych biznesowych (BDC).  
-  
-### <a name="to-add-an-entity-to-the-model"></a>Aby dodać obiekt do modelu  
-  
-1.  Tworzenie projektu usługi łączności danych biznesowych lub Otwórz istniejący projekt usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-2.  W **przybornika**, z **BusinessDataCatalog** grupy, Dodaj **jednostki** formant do projektanta.  
-  
-     Nowa jednostka zostanie wyświetlony w projektancie. Program Visual Studio dodaje `<Entity>` elementu XML modelu BDC w projekcie. Aby uzyskać więcej informacji na temat atrybutów elementu jednostki zobacz [jednostki](http://go.microsoft.com/fwlink/?LinkId=169296).  
-  
-3.  W projektancie, otwórz menu skrótów dla jednostki, wybierz polecenie **Dodaj**, a następnie wybierz **identyfikator**.  
-  
-     Nowy identyfikator pojawia się w jednostce.  
-  
-    > [!NOTE]  
-    >  Możesz zmienić nazwę jednostki i identyfikatora w **właściwości** okna.  
-  
-4.  Definiowanie pól jednostki w klasie. Możesz dodać nową klasę do projektu lub użyj istniejącej klasy utworzone przy użyciu innych narzędzi, takich jak Object Relational Designer (O/R Designer). Poniższy przykład przedstawia klasę jednostki o nazwie kontaktu.  
-  
+  Aby utworzyć jednostki, należy dodać kontrolkę typu jednostki z programu Visual Studio **przybornika** do projektanta łączności danych biznesowych (BDC).
+
+### <a name="to-add-an-entity-to-the-model"></a>Aby dodać obiekt do modelu
+
+1.  Tworzenie projektu usługi łączności danych biznesowych lub Otwórz istniejący projekt usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+2.  W **przybornika**, z **BusinessDataCatalog** grupy, Dodaj **jednostki** formant do projektanta.
+
+     Nowa jednostka zostanie wyświetlony w projektancie. Program Visual Studio dodaje `<Entity>` elementu XML modelu BDC w projekcie. Aby uzyskać więcej informacji na temat atrybutów elementu jednostki zobacz [jednostki](http://go.microsoft.com/fwlink/?LinkId=169296).
+
+3.  W projektancie, otwórz menu skrótów dla jednostki, wybierz polecenie **Dodaj**, a następnie wybierz **identyfikator**.
+
+     Nowy identyfikator pojawia się w jednostce.
+
+    > [!NOTE]
+    >  Możesz zmienić nazwę jednostki i identyfikatora w **właściwości** okna.
+
+4.  Definiowanie pól jednostki w klasie. Możesz dodać nową klasę do projektu lub użyj istniejącej klasy utworzone przy użyciu innych narzędzi, takich jak Object Relational Designer (O/R Designer). Poniższy przykład przedstawia klasę jednostki o nazwie kontaktu.
+
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
-     [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
-  
+     [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
+
 ## <a name="see-also"></a>Zobacz także
- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)  
+- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)
+- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
+- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)

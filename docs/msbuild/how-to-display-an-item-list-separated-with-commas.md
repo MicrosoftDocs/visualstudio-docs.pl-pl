@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531bd7877a6bfc2f1300a7a397556c9e24d84654
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853433"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610466"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami
 Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), czasami jest to przydatne do wyświetlania zawartości listy tych elementów w sposób, który jest łatwy do odczytania. Lub możesz mieć do zadań, która przyjmuje listę elementów oddzielonych specjalne separatora. W obu przypadkach można określić ciąg separatora listy elementów.
@@ -67,5 +67,5 @@ W tym przykładzie jest równoważne wiersza polecenia:
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
-[Elementy](../msbuild/msbuild-items.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Elementy](../msbuild/msbuild-items.md)

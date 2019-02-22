@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3026dc8b228d16ecdd5b41379c180a2a3a5f0502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ac588314b69c6be8b31cc5719a4be8add3cad33
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986725"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611038"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-Pobiera flagę określającą, czy symbol danych jest częścią funkcję agregującą lub kolekcję symboli; kompilator będzie traktować zagregowane symboli jako osobne jednostki, ale są one naprawdę częścią jednego symbol większe.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_isAggregated(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pFlag`  
- [out] Zwraca `TRUE` Jeśli danych jest częścią agregacji symboli podziału z symbolem nadrzędnego; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera flagę określającą, czy symbol danych jest częścią funkcję agregującą lub kolekcję symboli; kompilator będzie traktować zagregowane symboli jako osobne jednostki, ale są one naprawdę częścią jednego symbol większe.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_isAggregated(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pFlag`
+
+[out] Zwraca `TRUE` Jeśli danych jest częścią agregacji symboli podziału z symbolem nadrzędnego; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="remarks"></a>Uwagi  
- [Idiasymbol::get_issplitted —](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) metodą jest `TRUE` dla symbolu, który jest elementem nadrzędnym zagregowane symboli.  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="remarks"></a>Uwagi
+ [Idiasymbol::get_issplitted —](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) metodą jest `TRUE` dla symbolu, który jest elementem nadrzędnym zagregowane symboli.
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|DIA SDK w wersji 8.0|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

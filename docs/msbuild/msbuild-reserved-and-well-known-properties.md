@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1241de2849ce0b32206c0815928c8beb140e23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963661"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632397"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Program MSBuild zarezerwowane i dobrze znane właściwości
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki binarne. Te właściwości są obliczane w taki sam sposób jak inne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości. Na przykład, aby użyć `MSBuildProjectFile` właściwości, wpisz `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki binarne. Te właściwości są obliczane w taki sam sposób jak inne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] właściwości. Na przykład, aby użyć `MSBuildProjectFile` właściwości, wpisz `$(MSBuildProjectFile)`.
 
  Program MSBuild używa wartości w tabeli poniżej w celu wstępnego zdefiniowania zarezerwowanych i dobrze znanych właściwości. Właściwości zastrzeżone nie mogą być zastępowane, ale dobrze znane właściwości można zastąpić za pomocą identycznie nazwanymi właściwościami środowiskowymi, właściwościami globalnymi lub właściwościami zadeklarowanymi w pliku projektu.
 
-## <a name="reserved-and-well-known-properties"></a>Właściwości zastrzeżone i dobrze znane  
- W poniższej tabeli opisano [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] predefiniowane właściwości.  
+## <a name="reserved-and-well-known-properties"></a>Właściwości zastrzeżone i dobrze znane
+ W poniższej tabeli opisano [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] predefiniowane właściwości.
 
 
 | Właściwość | Zastrzeżone lub dobrze znane | Opis |
@@ -75,7 +75,7 @@ Oprócz powyższych nazwy odpowiadające elementy języka nie można używać w�
 * Kiedy
 * W przeciwnym razie
 
-## <a name="see-also"></a>Zobacz także  
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
 
-[Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
+- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

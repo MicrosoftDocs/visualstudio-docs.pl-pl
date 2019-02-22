@@ -14,33 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a26f6b2abdf0e24d4179986acc56335fb36d002
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619332"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Instrukcje: Dodawanie odwołania wyjścia projektu
-  Aby wdrożyć zestawy projektu programu SharePoint (lub pliki XAP w projektach programu Silverlight) do programu SharePoint, należy dodać ich jako odwołania wyjścia projektu.  
-  
- Ten proces tworzy zależność kompilacji rozwiązania, między dwa projekty. Projekty skojarzone z odwołania danych wyjściowych projektu są skompilowane, zanim projekt programu SharePoint jest utworzeniu i wdrożeniu.  
-  
+  Aby wdrożyć zestawy projektu programu SharePoint (lub pliki XAP w projektach programu Silverlight) do programu SharePoint, należy dodać ich jako odwołania wyjścia projektu.
+
+ Ten proces tworzy zależność kompilacji rozwiązania, między dwa projekty. Projekty skojarzone z odwołania danych wyjściowych projektu są skompilowane, zanim projekt programu SharePoint jest utworzeniu i wdrożeniu.
+
 ### <a name="to-add-a-project-output-reference"></a>Aby dodać odwołania wyjścia projektu
-  
-1.  Załaduj rozwiązanie, które zawiera co najmniej jeden projekt programu SharePoint i jeden projekt programu SharePoint.  
-  
-2.  W **Eksploratora rozwiązań**, wybierz element z węzła projektu programu SharePoint.  
-  
-3.  W **właściwości** okna, wybierz **odwołania danych wyjściowych projektu** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")) przycisk obok niej.  
-  
-4.  W **odwołania danych wyjściowych projektu** okna dialogowego wybierz **Dodaj** przycisku.  
-  
-5.  W okienku właściwości wybierz strzałkę obok **typu wdrożenia** właściwości, a następnie wybierz odpowiednią wartość dla elementu programu SharePoint, odwołujesz się do, takich jak **plik elementu**.  
-  
-6.  Wybierz strzałkę obok **Nazwa projektu**, wybierz nazwę elementu projektu programu SharePoint, a następnie wybierz **OK** przycisku.  
-  
+
+1.  Załaduj rozwiązanie, które zawiera co najmniej jeden projekt programu SharePoint i jeden projekt programu SharePoint.
+
+2.  W **Eksploratora rozwiązań**, wybierz element z węzła projektu programu SharePoint.
+
+3.  W **właściwości** okna, wybierz **odwołania danych wyjściowych projektu** właściwości, a następnie wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Projektant Mobile NET elipsy")) przycisk obok niej.
+
+4.  W **odwołania danych wyjściowych projektu** okna dialogowego wybierz **Dodaj** przycisku.
+
+5.  W okienku właściwości wybierz strzałkę obok **typu wdrożenia** właściwości, a następnie wybierz odpowiednią wartość dla elementu programu SharePoint, odwołujesz się do, takich jak **plik elementu**.
+
+6.  Wybierz strzałkę obok **Nazwa projektu**, wybierz nazwę elementu projektu programu SharePoint, a następnie wybierz **OK** przycisku.
+
 ## <a name="see-also"></a>Zobacz także
- [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+- [Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Instrukcje: Oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md)
+- [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 059f3b2ec1510df1d060252512baf38a3484321c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89642ac461de6157de7c75e91532191f85b167a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602497"
 ---
 # <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
-Pobiera część sekcji adres wkładu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca część sekcji adres wkładu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Pobiera część sekcji adres wkładu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca część sekcji adres wkładu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609439"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio opinie o produkcie
 
@@ -38,12 +38,12 @@ Wersje wstępne programu Visual Studio mają **Oceń ten produkt** nie ma elemen
 
 Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [Cykl wsparcia technicznego i obsługi](/visualstudio/productinfo/vs-servicing-vs) strony.
 
-Dla innych produktów i usług, zobacz [pomocy technicznej firmy Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
+Dla innych produktów i usług, zobacz [pomocy technicznej firmy Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
 
 > [!NOTE]
-> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [witryny Microsoft na świecie](http://www.microsoft.com/worldwide/).
+> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [witryny Microsoft na świecie](https://www.microsoft.com/worldwide/).
 
-W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft kontrakty są dostępne za pośrednictwem różnych ofert pomocy technicznej Enterprise. Aby uzyskać więcej informacji, zobacz [rozwiązań pomocy technicznej Microsoft Enterprise](http://go.microsoft.com/fwlink/?LinkId=258223).
+W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft kontrakty są dostępne za pośrednictwem różnych ofert pomocy technicznej Enterprise. Aby uzyskać więcej informacji, zobacz [rozwiązań pomocy technicznej Microsoft Enterprise](https://go.microsoft.com/fwlink/?LinkId=258223).
 
 Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, producent sprzętu zapewnia pomoc i obsługę techniczną dla tego oprogramowania. Skontaktuj się bezpośrednio z producentem, aby uzyskać wsparcie.
 
@@ -51,7 +51,7 @@ Usługi pomocy technicznej firmy Microsoft podlegają aktualnej cenie i warunkom
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Chcę angażowanie się w społeczność deweloperów
 
-Jeśli chcesz udostępnić swoje pytania i odpowiedzi z innymi deweloperami, użyj [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com) lokacji [fora MSDN](https://social.msdn.microsoft.com/Forums/home), lub [StackOverflow](http://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępniać własne przykłady w [próbki kodu deweloperskiego](https://code.msdn.microsoft.com/) lokacji.
+Jeśli chcesz udostępnić swoje pytania i odpowiedzi z innymi deweloperami, użyj [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com) lokacji [fora MSDN](https://social.msdn.microsoft.com/Forums/home), lub [Stack Overflow](https://stackoverflow.com/). Możesz również wyświetlić kod z innymi deweloperami i udostępniać własne przykłady w [próbki kodu deweloperskiego](https://code.msdn.microsoft.com/) lokacji.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Czy chcesz pomóc udoskonalić dokumentację programu Visual Studio
 

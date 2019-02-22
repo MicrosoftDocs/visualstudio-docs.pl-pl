@@ -1,22 +1,16 @@
 ---
 layout: LandingPage
 title: Pomiaru wydajności aplikacji za pomocą profilowania | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017, profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.
+description: 'Dowiedz się, jak używać programu Visual Studio 2017, profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155776"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Mierzyć wydajność aplikacji w programie Visual Studio
 
-Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu. 
+Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu.
 
 <ul class="panelContent cardsFTitle">
     <li>

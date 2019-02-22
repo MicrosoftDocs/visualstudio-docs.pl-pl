@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923097"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641549"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Projektowanie plików (vsct) tabeli poleceń XML
 Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd elementów polecenia dla pakietu VSPackage. Polecenie elementy obejmują przyciski, pola kombi, menu, paski narzędzi i grup elementów polecenia. W tym artykule opisano XML pliki tabeli poleceń, jak wpływają na elementy polecenia i menu oraz jak je utworzyć.
@@ -61,7 +61,7 @@ Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd eleme
 - Powiązanie klawiszy: Masz już Określ emulator. Jeśli określono, kompilator zakłada, że edytor i emulatora są takie same.
 
 - Keychord: Keychord został porzucony. Nowy format jest *klucz1, Mod1, klucz2, Mod2*.  Można określić znak, szesnastkowo lub VK stałą.
-       
+
 Nowy kompilator *vsct.exe*, kompiluje zarówno *.ctc* i *vsct* plików. Stary *ctc.exe* kompilatora, jednak nie rozpoznaje i skompilować *vsct* plików.
 
 Możesz użyć *vsct.exe* kompilator, aby przekonwertować istniejącą *.cto* mezzanine do *vsct* pliku. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie pliku vsct z istniejącego pliku .cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
@@ -69,31 +69,31 @@ Możesz użyć *vsct.exe* kompilator, aby przekonwertować istniejącą *.cto* m
 ## <a name="the-vsct-file-elements"></a>Elementy pliku vsct
  Tabeli poleceń ma następujące hierarchii i elementy:
 
- [CommandTable, element](../../extensibility/commandtable-element.md): Reprezentuje wszystkie polecenia, grupy menu i menu skojarzone z pakietu VSPackage.
+- [CommandTable, element](../../extensibility/commandtable-element.md): Reprezentuje wszystkie polecenia, grupy menu i menu skojarzone z pakietu VSPackage.
 
- [Extern, element](../../extensibility/extern-element.md): Odwołuje się do plików zewnętrznych .h, które mają do scalenia *vsct* pliku.
+- [Extern, element](../../extensibility/extern-element.md): Odwołuje się do plików zewnętrznych .h, które mają do scalenia *vsct* pliku.
 
- [Umieść element](../../extensibility/include-element.md): Odwołuje się do żadnych plików dodatkowych nagłówków (.h) do skompilowania wraz z Twojej *vsct* pliku. A *vsct* plik może zawierać *.h* pliki zawierające stałe, które określają polecenia, grupy menu i menu, które zapewnia IDE lub innego pakietu VSPackage.
+- [Umieść element](../../extensibility/include-element.md): Odwołuje się do żadnych plików dodatkowych nagłówków (.h) do skompilowania wraz z Twojej *vsct* pliku. A *vsct* plik może zawierać *.h* pliki zawierające stałe, które określają polecenia, grupy menu i menu, które zapewnia IDE lub innego pakietu VSPackage.
 
- [Commands, element](../../extensibility/commands-element.md): Reprezentuje wszystkie pojedynczych poleceń, które mogą być wykonywane. Każde polecenie ma następujących elementów podrzędnych cztery:
+- [Commands, element](../../extensibility/commands-element.md): Reprezentuje wszystkie pojedynczych poleceń, które mogą być wykonywane. Każde polecenie ma następujących elementów podrzędnych cztery:
 
- [Element menu](../../extensibility/menus-element.md): Reprezentuje wszystkie menu i paski narzędzi pakietu VSPackage. Menu są kontenerami dla grupy poleceń.
+- [Element menu](../../extensibility/menus-element.md): Reprezentuje wszystkie menu i paski narzędzi pakietu VSPackage. Menu są kontenerami dla grupy poleceń.
 
- [Element grupy](../../extensibility/groups-element.md): Reprezentuje wszystkie grupy w pakietu VSPackage. Grupy są kolekcjami pojedynczych poleceń.
+- [Element grupy](../../extensibility/groups-element.md): Reprezentuje wszystkie grupy w pakietu VSPackage. Grupy są kolekcjami pojedynczych poleceń.
 
- [Buttons, element](../../extensibility/buttons-element.md): Reprezentuje wszystkie przyciski poleceń i elementów menu w pakietu VSPackage. Przyciski są visual formanty, które mogą być skojarzone z poleceniami.
+- [Buttons, element](../../extensibility/buttons-element.md): Reprezentuje wszystkie przyciski poleceń i elementów menu w pakietu VSPackage. Przyciski są visual formanty, które mogą być skojarzone z poleceniami.
 
- [Bitmaps, element](../../extensibility/bitmaps-element.md): Reprezentuje wszystkie mapy bitowe dla wszystkich przycisków z pakietu VSPackage. Mapy bitowe mają rozmiar obrazów wyświetlanych obok lub przycisków poleceń, w zależności od kontekstu.
+- [Bitmaps, element](../../extensibility/bitmaps-element.md): Reprezentuje wszystkie mapy bitowe dla wszystkich przycisków z pakietu VSPackage. Mapy bitowe mają rozmiar obrazów wyświetlanych obok lub przycisków poleceń, w zależności od kontekstu.
 
- [CommandPlacements, element](../../extensibility/commandplacements-element.md): Określa dodatkowe lokalizacje, w której poszczególne polecenia powinien znajdować się w menu Twojego pakietu VSPackage.
+- [CommandPlacements, element](../../extensibility/commandplacements-element.md): Określa dodatkowe lokalizacje, w której poszczególne polecenia powinien znajdować się w menu Twojego pakietu VSPackage.
 
- [VisibilityConstraints, element](../../extensibility/visibilityconstraints-element.md): Określa informację określającą, czy polecenie wyświetla przez cały czas lub tylko w niektórych kontekstach, np. gdy zostanie wyświetlona określonego okna dialogowego lub okna. Menu i poleceń, które mają wartość dla tego elementu spowoduje wyświetlenie tylko wtedy, gdy określony kontekst jest aktywny. Zachowanie domyślne jest do wyświetlenia polecenia przez cały czas.
+- [VisibilityConstraints, element](../../extensibility/visibilityconstraints-element.md): Określa informację określającą, czy polecenie wyświetla przez cały czas lub tylko w niektórych kontekstach, np. gdy zostanie wyświetlona określonego okna dialogowego lub okna. Menu i poleceń, które mają wartość dla tego elementu spowoduje wyświetlenie tylko wtedy, gdy określony kontekst jest aktywny. Zachowanie domyślne jest do wyświetlenia polecenia przez cały czas.
 
- [KeyBindings, element](../../extensibility/keybindings-element.md): Określa wszelkie powiązań klawiszy dla polecenia. Oznacza to, co najmniej jeden kombinacji klawiszy, które muszą zostać naciśnięte w celu wykonania tego polecenia, takie jak **Ctrl**+**S**.
+- [KeyBindings, element](../../extensibility/keybindings-element.md): Określa wszelkie powiązań klawiszy dla polecenia. Oznacza to, co najmniej jeden kombinacji klawiszy, które muszą zostać naciśnięte w celu wykonania tego polecenia, takie jak **Ctrl**+**S**.
 
- [UsedCommands, element](../../extensibility/usedcommands-element.md): Informuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska, mimo że określone polecenie jest implementowany przez inny kod, gdy bieżącego pakietu VSPackage jest aktywny, zapewnia wykonania polecenia.
+- [UsedCommands, element](../../extensibility/usedcommands-element.md): Informuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska, mimo że określone polecenie jest implementowany przez inny kod, gdy bieżącego pakietu VSPackage jest aktywny, zapewnia wykonania polecenia.
 
- [Symbols, element](../../extensibility/symbols-element.md): Zawiera nazwy symboli i identyfikatory GUID dla wszystkich poleceń w pakiecie.
+- [Symbols, element](../../extensibility/symbols-element.md): Zawiera nazwy symboli i identyfikatory GUID dla wszystkich poleceń w pakiecie.
 
 ## <a name="vsct-file-design-guidelines"></a>wytyczne dotyczące projektowania pliku vsct
  Aby pomyślnie projektowania *vsct* plików, należy przestrzegać następujących wytycznych.
@@ -122,4 +122,4 @@ Możesz użyć *vsct.exe* kompilator, aby przekonwertować istniejącą *.cto* m
  Uruchom narzędzie przy użyciu polecenia **/reset CreateExpInstance**. Należy pamiętać, że to narzędzie spowoduje usunięcie z doświadczalnych hive wszystkie zarejestrowane, nie jest zainstalowane przy użyciu pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Zobacz także
- [Rozszerzenie menu i poleceń](../../extensibility/extending-menus-and-commands.md)
+- [Rozszerzenie menu i poleceń](../../extensibility/extending-menus-and-commands.md)

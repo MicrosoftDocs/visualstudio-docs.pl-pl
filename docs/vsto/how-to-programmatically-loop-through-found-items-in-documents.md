@@ -14,65 +14,65 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17c379f9c2f2ae1fbd7dac36b174bd0718cefeb2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bcd549a6b7939e27460e9c9362e71f2bb333b079
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872680"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628679"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Instrukcje: Programowe przechodzenie w pętli poprzez znalezione elementy w dokumentach
-  <xref:Microsoft.Office.Interop.Word.Find> Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwość, która zwraca **true** zawsze, gdy zostanie znaleziony przeszukiwane dla elementu. Można pętli za pośrednictwem wszystkich wystąpień w <xref:Microsoft.Office.Interop.Word.Range> przy użyciu <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="to-loop-through-found-items"></a>W pętli poprzez znalezione elementy  
-  
-1. Zadeklaruj <xref:Microsoft.Office.Interop.Word.Range> obiektu.  
-  
-    Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.  
-  
+  <xref:Microsoft.Office.Interop.Word.Find> Klasa ma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwość, która zwraca **true** zawsze, gdy zostanie znaleziony przeszukiwane dla elementu. Można pętli za pośrednictwem wszystkich wystąpień w <xref:Microsoft.Office.Interop.Word.Range> przy użyciu <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> metody.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="to-loop-through-found-items"></a>W pętli poprzez znalezione elementy
+
+1. Zadeklaruj <xref:Microsoft.Office.Interop.Word.Range> obiektu.
+
+    Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.
+
     [!code-vb[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#79)]
-    [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]  
-  
-    Poniższy przykład kodu może służyć w dodatku VSTO. W tym przykładzie użyto aktywnego dokumentu.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]
+
+    Poniższy przykład kodu może służyć w dodatku VSTO. W tym przykładzie użyto aktywnego dokumentu.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#79)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#79)]  
-  
-2. Użyj <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwości w pętli, aby wyszukać wszystkie wystąpienia ciągu w dokumencie i zwiększ zmienną całkowitą przez 1 każdorazowo ciąg zostanie znaleziony.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#79)]
+
+2. Użyj <xref:Microsoft.Office.Interop.Word.Find.Found%2A> właściwości w pętli, aby wyszukać wszystkie wystąpienia ciągu w dokumencie i zwiększ zmienną całkowitą przez 1 każdorazowo ciąg zostanie znaleziony.
+
     [!code-vb[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#80)]
-    [!code-csharp[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#80)]  
-  
-3. Wyświetlana jest liczba przypadków, gdy ciąg został znaleziony w oknie komunikatu.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#80)]
+
+3. Wyświetlana jest liczba przypadków, gdy ciąg został znaleziony w oknie komunikatu.
+
     [!code-vb[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#81)]
-    [!code-csharp[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#81)]  
-  
-   Poniższe przykłady przedstawiają kompletny metody.  
-  
-## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
-  
-### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pętli elementów w dostosowaniu na poziomie dokumentu  
-  
-1.  Poniższy przykład pokazuje kompletny kod dla dostosowywania poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#81](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#81)]
+
+   Poniższe przykłady przedstawiają kompletny metody.
+
+## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu
+
+### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pętli elementów w dostosowaniu na poziomie dokumentu
+
+1.  Poniższy przykład pokazuje kompletny kod dla dostosowywania poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#78)]
-     [!code-csharp[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#78)]  
-  
-## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO  
-  
-### <a name="to-loop-through-items-in-a-vsto-add-in"></a>W pętli między elementami w dodatku narzędzi VSTO  
-  
-1.  Poniższy przykład pokazuje kompletny kod dla dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#78)]
+
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO
+
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>W pętli między elementami w dodatku narzędzi VSTO
+
+1.  Poniższy przykład pokazuje kompletny kod dla dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#78)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
-  
-## <a name="see-also"></a>Zobacz także  
- [Instrukcje: Programowe wyszukiwanie i zastępowanie rext w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Instrukcje: Programowe Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]
+
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: Programowe wyszukiwanie i zastępowanie rext w dokumentach](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [Instrukcje: Programowe Ustawianie opcji wyszukiwania w programie Word](../vsto/how-to-programmatically-set-search-options-in-word.md)
+- [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Instrukcje: Programowe Przywracanie zaznaczenia po wyszukiwaniu](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623830"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
-Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołączanych dynamicznie (*.dll*), lub modułów kodu (*.netmodule*). Aby uzyskać więcej informacji na temat *vbc.exe*, zobacz [wiersza polecenia kompilatora języka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołączanych dynamicznie (*.dll*), lub modułów kodu (*.netmodule*). Aby uzyskać więcej informacji na temat *vbc.exe*, zobacz [wiersza polecenia kompilatora języka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `Vbc` zadania.  
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry `Vbc` zadania.
 
 
 | Parametr | Opis |
@@ -88,21 +88,21 @@ Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołąc
 | `Win32Icon` | Opcjonalnie `String` parametru.<br /><br /> Wstawia *.ico* pliku w zestawie, który nadaje plikowi wyjściowemu pożądany wygląd w **Eksploratora plików**. Ten parametr odnosi się do [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) przełączyć z *vbc.exe* kompilatora. |
 | `Win32Resources` | Opcjonalnie `String` parametru.<br /><br /> Wstawia zasób Win32 (*.res*) pliku w pliku wyjściowym. Ten parametr odnosi się do [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) przełączyć z *vbc.exe* kompilatora. |
 
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.ToolTask> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [tooltaskextension — klasa bazowa](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Przykład  
- Poniższy przykład kompiluje projekt języka Visual Basic.  
+## <a name="example"></a>Przykład
+ Poniższy przykład kompiluje projekt języka Visual Basic.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Kompilator wiersza polecenia programu Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Zobacz także
+- [Kompilator wiersza polecenia programu Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

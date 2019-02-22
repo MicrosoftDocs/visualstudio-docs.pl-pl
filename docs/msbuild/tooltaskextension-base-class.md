@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010353"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623011"
 ---
 # <a name="tooltaskextension-base-class"></a>Tooltaskextension — klasa bazowa
-Wiele zadań, o których dziedziczy <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.  
+Wiele zadań, o których dziedziczy <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.
 
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry klas bazowych.  
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry klas bazowych.
 
 
 | Parametr | Opis |
@@ -48,6 +48,6 @@ Wiele zadań, o których dziedziczy <xref:Microsoft.Build.Tasks.ToolTaskExtensio
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Opcjonalnie `bool` parametru.<br /><br /> Po ustawieniu `true`, to zadanie tworzy plik wsadowy, w wierszu polecenia i uruchamia go przy użyciu procesora poleceń zamiast bezpośrednio wykonywania polecenia. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Opcjonalnie `bool` parametru.<br /><br /> Po ustawieniu `true`, to zadanie daje węzła, gdy jego zadanie jest wykonywane. |
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)   
- [Zadania](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)

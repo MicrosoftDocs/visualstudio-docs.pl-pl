@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53c2ce19b0a45b7b177c5e34eeeedb862911727f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 77feefe7a2d274403e483dbaa3167f53f72ae168
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864179"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608269"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Instrukcje: Programowe kopiowanie danych i formatowanie między arkuszami
-  Możesz skopiować dane z zakresu na jeden arkusz do innych arkuszy w skoroszycie za pomocą <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metody. Określ zakres, oraz czy mają zostać skopiowane dane, formatowanie lub obu.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="example"></a>Przykład  
+  Możesz skopiować dane z zakresu na jeden arkusz do innych arkuszy w skoroszycie za pomocą <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metody. Określ zakres, oraz czy mają zostać skopiowane dane, formatowanie lub obu.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="example"></a>Przykład
  [!code-csharp[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#44)]
- [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]  
-  
-## <a name="compile-the-code"></a>Skompilować kod  
- W tym przykładzie wymaga danych o nazwie `rangeData` w arkuszu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Instrukcje: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [!code-vb[Trin_VstcoreExcelAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#44)]
+
+## <a name="compile-the-code"></a>Skompilować kod
+ W tym przykładzie wymaga danych o nazwie `rangeData` w arkuszu.
+
+## <a name="see-also"></a>Zobacz także
+- [Praca z arkuszami](../vsto/working-with-worksheets.md)
+- [Instrukcje: Programowe Dodawanie nowych arkuszy do skoroszytu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [Instrukcje: Programowe zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

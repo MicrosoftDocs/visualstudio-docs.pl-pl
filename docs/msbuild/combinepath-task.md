@@ -16,28 +16,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d7dd3a6ecfbaf86c607a5dd42dde1b9fe10e2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b73ddd4715d3abd29f87d7ef38a269d821733ba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610286"
 ---
 # <a name="combinepath-task"></a>CombinePath — zadanie
-Łączy określonych ścieżek w pojedynczą ścieżkę.  
-  
-## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry [combinepath — zadanie](../msbuild/combinepath-task.md).  
-  
-|Parametr|Opis|  
-|---------------|-----------------|  
-|`BasePath`|Wymagane `String` parametru.<br /><br /> Ścieżki podstawowej, aby połączyć się z innych ścieżek. Może być ścieżką względną, ścieżka bezwzględna lub pusty.|  
-|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista poszczególnych ścieżek do łączenia z BasePath do utworzenia złożonej ścieżki. Ścieżki mogą być względna lub bezwzględna.|  
-|`CombinedPaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Połączone ścieżki, który jest tworzony przez to zadanie.|  
-  
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+Łączy określonych ścieżek w pojedynczą ścieżkę.
+
+## <a name="task-parameters"></a>Parametry zadania
+ W poniższej tabeli opisano parametry [combinepath — zadanie](../msbuild/combinepath-task.md).
+
+|Parametr|Opis|
+|---------------|-----------------|
+|`BasePath`|Wymagane `String` parametru.<br /><br /> Ścieżki podstawowej, aby połączyć się z innych ścieżek. Może być ścieżką względną, ścieżka bezwzględna lub pusty.|
+|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista poszczególnych ścieżek do łączenia z BasePath do utworzenia złożonej ścieżki. Ścieżki mogą być względna lub bezwzględna.|
+|`CombinedPaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Połączone ścieżki, który jest tworzony przez to zadanie.|
+
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

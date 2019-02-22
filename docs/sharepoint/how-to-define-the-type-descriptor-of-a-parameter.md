@@ -15,111 +15,111 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 95e8989524c8e4df707fca364bc068b9151ba8bb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866795"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605084"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Instrukcje: Określanie deskryptora typu parametru
-  Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
-  
-### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru  
-  
-1.  W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru.  
-  
-2.  Na pasku menu wybierz **widoku**, **okno właściwości**.  
-  
-3.  W **właściwości** okna, ustaw właściwości deskryptora typu.  
-  
-     W poniższych procedurach opisano sposób definiowania deskryptora typu jako pola, jednostki lub kolekcja.  
-  
-### <a name="to-define-a-field"></a>Aby zdefiniować pole  
-  
-1.  W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **Imię**).  
-  
-2.  Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).  
-  
-     Aby uzyskać informacje na temat innych parametrów opcjonalnych, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
-  
-### <a name="to-define-an-entity"></a>Aby zdefiniować jednostkę  
-  
-1.  W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Skontaktuj się z pomocą**).  
-  
-2.  Ustaw **TypeName** właściwość w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.  
-  
-    -   Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.  
-  
-         W pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę klasy, następuje nazwa systemu LOB. W poniższym przykładzie ustawiono wartość **TypeName** właściwości do klasy w projekcie.  
-  
-         `MyBDCNamespace.BdcModel1.Contact, BdcModel1`  
-  
-    -   Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.  
-  
-         W poniższym przykładzie ustawiono wartość **TypeName** właściwości Typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu.  
-  
-         `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
-  
-    -   Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę typu.  
-  
-         W poniższym przykładzie ustawiono wartość **TypeName** właściwość do typu w modelu usługi BDC.  
-  
-         `Microsoft.BusinessData.Runtime.DynamicType`  
-  
-3.  W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.  
-  
-     **Eksplorator BDC** zostanie otwarte okno.  
-  
-4.  W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.  
-  
-     Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu. Skonfiguruj ten deskryptor typu jako pole.  
-  
-5.  Powtórz krok 4, aby dodać deskryptor typu podrzędnego dla każdego pola encji.  
-  
-### <a name="to-define-a-collection-of-entities"></a>Aby zdefiniować kolekcję jednostek  
-  
-1. W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru, który chcesz.  
-  
-2. Na pasku menu wybierz **widoku**, **okno właściwości**.  
-  
-3. W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Kontaktuje się**).  
-  
-4. Ustaw **IsCollection** właściwości **True**. Oznacza to, że ten deskryptor typu jest kolekcję jednostek.  
-  
-5. Ustaw **TypeName** właściwości na ciąg, który zawiera odwołanie do <xref:System.Collections.Generic.IEnumerable%601> interfejsu i w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.  
-  
-   - Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.  
-  
-      W pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę klasy, następuje nazwa systemu LOB.  
-  
-      W poniższym przykładzie ustawiono wartość **TypeName** właściwości do kolekcji klas w projekcie.  
-  
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1] "  
-  
-   - Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.  
-  
-      W poniższym przykładzie ustawiono wartość **TypeName** właściwości kolekcji typów w zestawie, do którego można odwołać się w rozwiązaniu.  
-  
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
-  
-   - Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje tylko przestrzeń nazw i nazwę typu.  
-  
-      W poniższym przykładzie ustawiono wartość **TypeName** właściwości w kolekcji typów zdefiniowanych w modelu usługi BDC.  
-  
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
-  
-6. W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.  
-  
-    **Eksplorator BDC** zostanie otwarte okno.  
-  
-7. W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.  
-  
-    Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu kolekcji. Skonfiguruj ten deskryptor typu jako jednostkę.  
-  
+  Deskryptor typu zawiera właściwości, które opisują typ danych parametru. Deskryptor typu może zdefiniować pole, jednostkę lub kolekcję jednostek. Aby uzyskać więcej informacji, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
+
+### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Aby zdefiniować deskryptor typu parametru
+
+1.  W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru.
+
+2.  Na pasku menu wybierz **widoku**, **okno właściwości**.
+
+3.  W **właściwości** okna, ustaw właściwości deskryptora typu.
+
+     W poniższych procedurach opisano sposób definiowania deskryptora typu jako pola, jednostki lub kolekcja.
+
+### <a name="to-define-a-field"></a>Aby zdefiniować pole
+
+1.  W **właściwości** oknie **nazwa** właściwości deskryptora typu na nazwę pola w typie, która reprezentuje jednostkę (na przykład: **Imię**).
+
+2.  Na liście obok **TypeName** właściwości, wybierz odpowiedni typ danych (na przykład **Int32**).
+
+     Aby uzyskać informacje na temat innych parametrów opcjonalnych, zobacz [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
+
+### <a name="to-define-an-entity"></a>Aby zdefiniować jednostkę
+
+1.  W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Skontaktuj się z pomocą**).
+
+2.  Ustaw **TypeName** właściwość w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.
+
+    -   Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.
+
+         W pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę klasy, następuje nazwa systemu LOB. W poniższym przykładzie ustawiono wartość **TypeName** właściwości do klasy w projekcie.
+
+         `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
+
+    -   Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.
+
+         W poniższym przykładzie ustawiono wartość **TypeName** właściwości Typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu.
+
+         `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
+
+    -   Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę typu.
+
+         W poniższym przykładzie ustawiono wartość **TypeName** właściwość do typu w modelu usługi BDC.
+
+         `Microsoft.BusinessData.Runtime.DynamicType`
+
+3.  W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.
+
+     **Eksplorator BDC** zostanie otwarte okno.
+
+4.  W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
+
+     Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu. Skonfiguruj ten deskryptor typu jako pole.
+
+5.  Powtórz krok 4, aby dodać deskryptor typu podrzędnego dla każdego pola encji.
+
+### <a name="to-define-a-collection-of-entities"></a>Aby zdefiniować kolekcję jednostek
+
+1. W **szczegóły metody BDC** oknie Wybierz deskryptor typu parametru, który chcesz.
+
+2. Na pasku menu wybierz **widoku**, **okno właściwości**.
+
+3. W **właściwości** oknie **nazwa** właściwość na nazwę opisującą element (na przykład: **Kontaktuje się**).
+
+4. Ustaw **IsCollection** właściwości **True**. Oznacza to, że ten deskryptor typu jest kolekcję jednostek.
+
+5. Ustaw **TypeName** właściwości na ciąg, który zawiera odwołanie do <xref:System.Collections.Generic.IEnumerable%601> interfejsu i w pełni kwalifikowaną nazwę typu, która reprezentuje jednostkę. Ten typ może być klasą w projekcie, typ zdefiniowany w zestawie, do którego można odwołać się w rozwiązaniu lub typem zdefiniowanym w modelu usługi BDC.
+
+   - Klasy w projekcie, wybierz strzałkę w dół **TypeName** właściwości, wybierz **bieżący projekt** karty w oknie dialogowym zostanie wyświetlony, a następnie wybierz klasę w projekcie.
+
+      W pełni kwalifikowana nazwa obejmuje przestrzeń nazw i nazwę klasy, następuje nazwa systemu LOB.
+
+      W poniższym przykładzie ustawiono wartość **TypeName** właściwości do kolekcji klas w projekcie.
+
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1] "
+
+   - Dla typu znajdującego się w zestawie w rozwiązaniu w pełni kwalifikowana nazwa obejmuje nazwę typu, nazwę zestawu, numer wersji, kulturę i token klucza publicznego.
+
+      W poniższym przykładzie ustawiono wartość **TypeName** właściwości kolekcji typów w zestawie, do którego można odwołać się w rozwiązaniu.
+
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`
+
+   - Dla typu zdefiniowanego w modelu usługi BDC w pełni kwalifikowana nazwa obejmuje tylko przestrzeń nazw i nazwę typu.
+
+      W poniższym przykładzie ustawiono wartość **TypeName** właściwości w kolekcji typów zdefiniowanych w modelu usługi BDC.
+
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`
+
+6. W **szczegóły metody BDC** , Otwórz listę, która pojawia się dla deskryptora typu, a następnie wybierz **Edytuj**.
+
+    **Eksplorator BDC** zostanie otwarte okno.
+
+7. W **Eksplorator BDC**, otwórz menu skrótów deskryptora typu, a następnie wybierz **Dodaj deskryptor typu**.
+
+    Nowy deskryptor typu jest dodawany jako element podrzędny do deskryptora typu kolekcji. Skonfiguruj ten deskryptor typu jako jednostkę.
+
 ## <a name="see-also"></a>Zobacz także
- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  
+- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Instrukcje: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)
+- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)

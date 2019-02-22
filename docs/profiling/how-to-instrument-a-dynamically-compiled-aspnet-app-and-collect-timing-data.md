@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8daab493a867d2a62d85ecafc57420dfa195c68d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae33644c72288f79d6be9fcc1aec476939980a5c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000799"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646164"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: Instrument dynamicznie skompilowanej aplikacji sieci web ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu profilera przy użyciu wiersza polecenia
 
@@ -115,5 +115,5 @@ Po ukończeniu wszystkich zadań profilowania, Zastąp *web.config* pliku, wyczy
 
 ## <a name="see-also"></a>Zobacz także
 
-[Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
-[Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+[Profil aplikacji sieci web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)

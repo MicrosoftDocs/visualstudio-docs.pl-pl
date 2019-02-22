@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620294"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych w .NET Framework
 W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu odwołania problemy i jak można naprawić te błędy.
@@ -54,4 +54,7 @@ W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu
 >  Po zamknięciu i ponownym otwarciu projektu powinien również można odbudować ją, aby zapewnić poprawnie rozpoznać wszystkie odwołania.
 
 ## <a name="see-also"></a>Zobacz także
- [Instrukcje: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile) [przeznaczonych dla określonej wersji środowiska .NET Framework](../ide/visual-studio-multi-targeting-overview.md) [wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
+- [Instrukcje: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Profil klienta .NET framework](/dotnet/framework/deployment/client-profile)
+- [Przeznaczone dla określonej wersji środowiska .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

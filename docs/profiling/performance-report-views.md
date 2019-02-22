@@ -12,37 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8586bff16bdcf8a67d8d1e27abb37b13efa5ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041974"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632826"
 ---
 # <a name="performance-report-views"></a>Widoki raportu wydajności
-Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools. Widoki pliku danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmentIDE rozwoju. Raporty są generowane przez [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Wspólne widoki danych](../profiling/common-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są wspólne dla wszystkich metod profilowania do profilowania.  
-  
- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody pobierania próbek profilowania.  
-  
- [Widoki danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody Instrumentacji profilowania.  
-  
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które zawierają dane pamięci platformy .NET do profilowania.  
-  
- [Widoki danych rywalizacji o zasób](../profiling/resource-contention-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności profilowania.  
-  
- [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  
- Informacje referencyjne dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności i że profilowania obejmują danych wykonanie wątku.  
-  
- [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)  
- Informacje referencyjne dotyczące widok interakcji i raportów plików danych, które zawierają dane interakcji między warstwami profilowania.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
+Ta sekcja zawiera informacje dotyczące raportów i widoków [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools. Widoki pliku danych profilowania są wyświetlane w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmentIDE rozwoju. Raporty są generowane przez [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Wspólne widoki danych](../profiling/common-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są wspólne dla wszystkich metod profilowania do profilowania.
+
+- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody pobierania próbek profilowania.
+
+- [Widoki danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody Instrumentacji profilowania.
+
+- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych, które zawierają dane pamięci platformy .NET do profilowania.
+
+- [Widoki danych rywalizacji o zasób](../profiling/resource-contention-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności profilowania.
+
+- [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
+
+ Informacje referencyjne dotyczące widoków i raportów plików danych, które są generowane przy użyciu metody współbieżności i że profilowania obejmują danych wykonanie wątku.
+
+- [Widok interakcji między warstwami](../profiling/tier-interactions-view.md)
+
+ Informacje referencyjne dotyczące widok interakcji i raportów plików danych, które zawierają dane interakcji między warstwami profilowania.
+
+## <a name="see-also"></a>Zobacz także
+- [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

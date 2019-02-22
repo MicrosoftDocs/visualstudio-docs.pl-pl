@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd5459b2451289133c83ddaddd2834de4c4ec23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc8b4fe63553846a46ec8fb333f9f924c44dca99
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622335"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
-Pobiera flagę wskazującą, czy plik symboli zawiera typy C.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_isCTypes(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pFlag`  
- [out] Zwraca `TRUE` Jeśli plik symboli zawiera typy C; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera flagę wskazującą, czy plik symboli zawiera typy C.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_isCTypes(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pFlag`
+
+[out] Zwraca `TRUE` Jeśli plik symboli zawiera typy C; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta właściwość jest dostępna z `SymTagExe` typu symbolu (zobacz [Exe](../../debugger/debug-interface-access/exe.md)).  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Exe](../../debugger/debug-interface-access/exe.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="remarks"></a>Uwagi
+ Ta właściwość jest dostępna z `SymTagExe` typu symbolu (zobacz [Exe](../../debugger/debug-interface-access/exe.md)).
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|DIA SDK w wersji 8.0|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)

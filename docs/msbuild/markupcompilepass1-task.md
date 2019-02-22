@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5f9ec3f2db14369cf8f469b718b027fd394649
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027337"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643057"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 task
 
@@ -102,11 +102,11 @@ Poniższy przykład pokazuje, jak przekonwertować trzy *strony* [!INCLUDE[TLA2#
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -121,9 +121,9 @@ Poniższy przykład pokazuje, jak przekonwertować trzy *strony* [!INCLUDE[TLA2#
 
 ## <a name="see-also"></a>Zobacz także
 
-[Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
-[Odwołanie do zadania MSBuild](../msbuild/msbuild-task-reference.md)  
-[Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Odwołanie do zadania MSBuild](../msbuild/msbuild-task-reference.md)
+- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

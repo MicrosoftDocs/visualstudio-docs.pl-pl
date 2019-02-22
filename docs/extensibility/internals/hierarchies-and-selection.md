@@ -12,29 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d30c57139141bf0d739097032064190f4fcd3da
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009963"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596584"
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie i zaznaczenia
-Podczas dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy się dowiedzieć, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje hierarchie, takich jak projekty i jak używa kontekst zaznaczenia, aby określić, co jest wyświetlane użytkownikowi. W tej sekcji omówiono pojęcia związane z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchie i wybór.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- W tym artykule opisano ogólna koncepcja hierarchii i hierarchii projektu.  
-  
- [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- W tym artykule opisano sposób, w jaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o obiektach aktualnie aktywnego użytkownika i umożliwia śledzenie waluty pakietów VSPackage.  
-  
- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)  
- W tym artykule omówiono model jaki sposób można określić użytkownika wybór kontekstu fokus w oknie.  
-  
- [Opinia dla użytkownika](../../extensibility/internals/feedback-to-the-user.md)  
- W tym artykule omówiono sposób funkcji dostępnych w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opiera się na kontekst zaznaczenia bieżącego użytkownika i ogólnym kontekście IDE.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Architektura typów projektów](../../extensibility/internals/project-types-architecture.md)  
+Podczas dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], należy się dowiedzieć, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje hierarchie, takich jak projekty i jak używa kontekst zaznaczenia, aby określić, co jest wyświetlane użytkownikowi. W tej sekcji omówiono pojęcia związane z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchie i wybór.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
+
+ W tym artykule opisano ogólna koncepcja hierarchii i hierarchii projektu.
+
+- [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+
+ W tym artykule opisano sposób, w jaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o obiektach aktualnie aktywnego użytkownika i umożliwia śledzenie waluty pakietów VSPackage.
+
+- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)
+
+ W tym artykule omówiono model jaki sposób można określić użytkownika wybór kontekstu fokus w oknie.
+
+- [Opinia dla użytkownika](../../extensibility/internals/feedback-to-the-user.md)
+
+ W tym artykule omówiono sposób funkcji dostępnych w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opiera się na kontekst zaznaczenia bieżącego użytkownika i ogólnym kontekście IDE.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Architektura typów projektów](../../extensibility/internals/project-types-architecture.md)
+
  Zawiera szczegółowe informacje techniczne dotyczące typów projektów.

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317941"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637350"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Debugowanie zainstalowanego pakietu aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
 
@@ -33,7 +33,7 @@ Visual Studio umożliwia debugowanie zainstalowanych pakietów aplikacji uniwers
 
 >[!NOTE]
 >Visual Studio do debugowania dla zainstalowanych aplikacji platformy uniwersalnej systemu Windows nie jest obsługiwana na telefonach.
-   
+
 Aby uzyskać więcej informacji na temat debugowania aplikacji platformy uniwersalnej systemu Windows, zobacz wpisy w blogu na [debugowania zainstalowanych pakietów aplikacji](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) i [tworzenia Windows aplikacji Uniwersalnej](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Debugowanie aplikacji platformy uniwersalnej systemu Windows zainstalowanych na komputerze lokalnym

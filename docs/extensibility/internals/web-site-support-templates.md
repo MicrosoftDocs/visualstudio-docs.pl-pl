@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961601"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618201"
 ---
 # <a name="web-site-support-templates"></a>Szablony pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Szablony projektów i elementów dla witryn sieci Web zawierają wycinków projektów i elementów witryny sieci Web wielokrotnego użytku i można go dostosowywać, przyspieszające proces tworzenia aplikacji, usuwając konieczność do utworzenia nowych projektów witryny sieci Web i elementy od początku. Aby uzyskać więcej informacji na temat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] szablonów, zobacz [tworzenie projektów i szablonów elementów](../../ide/creating-project-and-item-templates.md).
@@ -185,4 +185,4 @@ ms.locfileid: "54961601"
      Plik szablonu, określająca zawartość nowej strony wzorcowej i jego plików zależnych, jeśli istnieje.
 
 ## <a name="see-also"></a>Zobacz też
- [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)
+- [Pomoc techniczna dotycząca witryny internetowej](../../extensibility/internals/web-site-support.md)

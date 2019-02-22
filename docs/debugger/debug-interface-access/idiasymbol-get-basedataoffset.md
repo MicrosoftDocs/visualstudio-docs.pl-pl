@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b77c08d98535666f109610b618eac00b24aaf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069008"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632033"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Pobiera Przesunięcie danych podstawowych.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Wskaźnik do `DWORD` przechowuje Przesunięcie danych podstawowych.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Pobiera Przesunięcie danych podstawowych.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Wskaźnik do `DWORD` przechowuje Przesunięcie danych podstawowych.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

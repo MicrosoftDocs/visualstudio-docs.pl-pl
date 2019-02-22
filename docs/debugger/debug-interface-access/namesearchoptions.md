@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639690"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Określa opcje wyszukiwania dla nazwy symboli i plików.
@@ -43,23 +43,17 @@ enum NameSearchOptions {
 ```
 
 ## <a name="elements"></a>Elementy
-`nsNone`  
-Nie określono opcji.
+`nsNone` Nie określono opcji.
 
-`nsfCaseSensitive`  
-Stosuje musi odpowiadać nazwie uwzględniana wielkość liter.
+`nsfCaseSensitive` Stosuje musi odpowiadać nazwie uwzględniana wielkość liter.
 
-`nsfCaseInsensitive`  
-Stosuje dopasowanie bez uwzględniania wielkości liter nazwy.
+`nsfCaseInsensitive` Stosuje dopasowanie bez uwzględniania wielkości liter nazwy.
 
-`nsfFNameExt`  
-Traktuje nazw jako ścieżki, a następnie stosuje musi odpowiadać nazwie nazwa_pliku.Ext.
+`nsfFNameExt` Traktuje nazw jako ścieżki, a następnie stosuje musi odpowiadać nazwie nazwa_pliku.Ext.
 
-`nsfRegularExpression`  
-Stosuje dopasowanie liter nazwy przy użyciu gwiazdki (*) i znaki zapytania (?) jako symboli wieloznacznych.
+`nsfRegularExpression` Stosuje dopasowanie liter nazwy przy użyciu gwiazdki (*) i znaki zapytania (?) jako symboli wieloznacznych.
 
-`nsfUndecoratedName`  
-Dotyczy tylko symbole, które mają zarówno niedekorowanego i nazw ozdobionych.
+`nsfUndecoratedName` Dotyczy tylko symbole, które mają zarówno niedekorowanego i nazw ozdobionych.
 
 ## <a name="remarks"></a>Uwagi
 Wartości z tego wyliczenia są przekazywane do następujących metod:
@@ -74,7 +68,7 @@ Wartości z tego wyliczenia są przekazywane do następujących metod:
 Nagłówek: dia2.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

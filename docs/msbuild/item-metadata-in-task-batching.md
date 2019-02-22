@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946550"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623713"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchomić zadanie jeden raz z każdej partii. Może być mylące zrozumieć, dokładnie jakie elementy są przekazywany przy użyciu której usługi batch. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)  
-[Item — element (MSBuild)](../msbuild/item-element-msbuild.md)  
-[Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)  
-[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)
+- [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)

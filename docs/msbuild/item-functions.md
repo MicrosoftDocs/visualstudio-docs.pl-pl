@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950516"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617161"
 ---
 # <a name="item-functions"></a>Funkcje elementów
 Począwszy od programu MSBuild 4.0, kod w zadania i elementy docelowe można wywołać elementu funkcji, aby uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i są szybsze niż elementy w pętli.
@@ -100,4 +100,4 @@ Poniższy przykład pokazuje, jak używać funkcji wewnętrznych elementów.
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Elementy](../msbuild/msbuild-items.md)
+- [Elementy](../msbuild/msbuild-items.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928571"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642745"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Instrukcje: Zbieranie danych licznika procesora CPU
 
@@ -60,7 +60,7 @@ Występują dwa typy zdarzeń licznika procesora CPU:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
-[Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)  
-[Instrukcje: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
+[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
+[właściwości sesji wydajności](../profiling/performance-session-properties.md)
+[liczniki procesora CPU i Windows](../profiling/cpu-and-windows-counters.md)
+[jak: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)

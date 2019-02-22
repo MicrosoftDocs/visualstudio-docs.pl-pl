@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613274"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Określa typy thunk.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementy
-THUNK_ORDINAL_NOTYPE  
-Standardowe wywołanie.
+Standardowa THUNK_ORDINAL_NOTYPE thunk.
 
-THUNK_ORDINAL_ADJUSTOR  
-A `this` adjustor thunk.
+THUNK_ORDINAL_ADJUSTOR A `this` adjustor thunk.
 
-THUNK_ORDINAL_VCALL  
-Thunk wywołanie wirtualne.
+Wirtualne THUNK_ORDINAL_VCALL thunk wywołania.
 
-THUNK_ORDINAL_PCODE  
-Thunk P-code.
+Thunk P-code THUNK_ORDINAL_PCODE.
 
-THUNK_ORDINAL_LOAD  
-Thunk obciążenia opóźnienia.
+Opóźnienie THUNK_ORDINAL_LOAD thunk obciążenia.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Thunk trampoline przyrostowej (trampoline sekcją thunk służy do Odbijanie wywołania z miejsca w pamięci z jednego do drugiego).
+Przyrostowe THUNK_ORDINAL_TRAMP_INCREMENTAL thunk trampoline (trampoline sekcją thunk służy do Odbijanie wywołania z miejsca w pamięci z jednego do drugiego).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Thunk trampoline punktu gałęzi.
+Thunk trampoline punktu THUNK_ORDINAL_TRAMP_BRANCHISLAND gałęzi.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane z wywołania [idiasymbol::get_thunkordinal —](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.
@@ -67,5 +60,5 @@ Wartości w tym wyliczeniu są zwracane z wywołania [idiasymbol::get_thunkordin
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

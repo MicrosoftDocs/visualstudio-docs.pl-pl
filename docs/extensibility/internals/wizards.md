@@ -10,43 +10,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22aa4c86cc00b57e7c290d8b5a5655713ee05052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad90c1ec332c2f214514e660b27dc5a915485f99
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955366"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641341"
 ---
 # <a name="wizards"></a>Kreatory
-Po utworzeniu kreatora, zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko projektowe (IDE), aby inne osoby mogą go używać. Pojawi się w Kreatorze dodano **Dodaj nowy projekt** lub **Dodaj nowy element** okien dialogowych. Aby wyświetlić **Dodaj nowy projekt** lub **Dodaj nowy element** okna dialogowego pola, kliknij prawym przyciskiem myszy otwartego rozwiązania w **Eksploratora rozwiązań**, wskaż polecenie **Dodaj**, i następnie kliknij przycisk **nowy projekt** lub **nowy element**.  
-  
- Kreatorzy mogą być implementowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby powiadomić użytkowników, wybierz jedną z dostępnych wartości po otwarciu w widoku drzewa **Dodaj nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe, lub po ich prawym przyciskiem myszy element **Eksploratora rozwiązań**.  
-  
- W kreatora możesz podać opcji lokalizowania nazwę nowego projektu lub ites i możesz określić ikony, którą użytkownicy zobaczą, gdy wybierają kreatora. Możesz również kontrolować kolejność, w którym pojawią się nowe elementy, względem innych dostępnych elementów; elementy mają być zorganizowane alfabetycznie.  
-  
- Możesz również dostarczyć kreatora, który rozpoczyna się inaczej, oparte na niestandardowych parametrów, które są przekazywane do kreatora po jego otwarciu.  
-  
- W tematach w tej sekcji opisano pliki, które można zaimplementować, aby spowodować, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Dodaj nowy projekt** i **Dodaj nowy element** oknach dialogowych, aby wyświetlić listę kreatora wśród dostępnych kreatorów i szablonów i wymagania które muszą spełniać kreatora, aby działać poprawnie w środowisku IDE.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
- Omówienie szablonu katalogu plików opisu i wyjaśniono, jak działają w IDE, aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych.  
-  
- [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)  
- Wyjaśnia sposób uruchamiania kreatorów w IDE i zawiera trzy części pliku .vsz.  
-  
- [Interfejs kreatora (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  
- W tym artykule opisano `IDTWizard` interfejs, który musi implementować kreatorów, aby pracować w środowisku IDE.  
-  
- [Parametry kontekstu](../../extensibility/internals/context-parameters.md)  
- Wyjaśnia implementacji kreatorów i zachowanie występujące podczas IDE przekazuje parametry kontekstu do wykonania.  
-  
- [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)  
- Wyjaśnia, jak używać parametrów niestandardowych do kontroli działania kreatora, po uruchomieniu kreatora.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Typy projektów](../../extensibility/internals/project-types.md)  
- Zawiera łącza do dodatkowych tematów, które oferują informacji na temat sposobu projektowania nowych typów projektów.  
-  
- [Rozszerzanie projektów](../../extensibility/extending-projects.md)  
+Po utworzeniu kreatora, zazwyczaj chcesz dodać go do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko projektowe (IDE), aby inne osoby mogą go używać. Pojawi się w Kreatorze dodano **Dodaj nowy projekt** lub **Dodaj nowy element** okien dialogowych. Aby wyświetlić **Dodaj nowy projekt** lub **Dodaj nowy element** okna dialogowego pola, kliknij prawym przyciskiem myszy otwartego rozwiązania w **Eksploratora rozwiązań**, wskaż polecenie **Dodaj**, i następnie kliknij przycisk **nowy projekt** lub **nowy element**.
+
+ Kreatorzy mogą być implementowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby powiadomić użytkowników, wybierz jedną z dostępnych wartości po otwarciu w widoku drzewa **Dodaj nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe, lub po ich prawym przyciskiem myszy element **Eksploratora rozwiązań**.
+
+ W kreatora możesz podać opcji lokalizowania nazwę nowego projektu lub ites i możesz określić ikony, którą użytkownicy zobaczą, gdy wybierają kreatora. Możesz również kontrolować kolejność, w którym pojawią się nowe elementy, względem innych dostępnych elementów; elementy mają być zorganizowane alfabetycznie.
+
+ Możesz również dostarczyć kreatora, który rozpoczyna się inaczej, oparte na niestandardowych parametrów, które są przekazywane do kreatora po jego otwarciu.
+
+ W tematach w tej sekcji opisano pliki, które można zaimplementować, aby spowodować, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Dodaj nowy projekt** i **Dodaj nowy element** oknach dialogowych, aby wyświetlić listę kreatora wśród dostępnych kreatorów i szablonów i wymagania które muszą spełniać kreatora, aby działać poprawnie w środowisku IDE.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Opis katalogu szablonu (pliki Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+
+ Omówienie szablonu katalogu plików opisu i wyjaśniono, jak działają w IDE, aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych.
+
+- [Kreator (plik Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+
+ Wyjaśnia sposób uruchamiania kreatorów w IDE i zawiera trzy części pliku .vsz.
+
+- [Interfejs kreatora (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)
+
+ W tym artykule opisano `IDTWizard` interfejs, który musi implementować kreatorów, aby pracować w środowisku IDE.
+
+- [Parametry kontekstu](../../extensibility/internals/context-parameters.md)
+
+ Wyjaśnia implementacji kreatorów i zachowanie występujące podczas IDE przekazuje parametry kontekstu do wykonania.
+
+- [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)
+
+ Wyjaśnia, jak używać parametrów niestandardowych do kontroli działania kreatora, po uruchomieniu kreatora.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Typy projektów](../../extensibility/internals/project-types.md)
+
+ Zawiera łącza do dodatkowych tematów, które oferują informacji na temat sposobu projektowania nowych typów projektów.
+
+- [Rozszerzanie projektów](../../extensibility/extending-projects.md)
+
  Opisuje sposób używania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty i rozwiązania do organizowania plików kodu i plików zasobów i sposób implementowania kontroli źródła.

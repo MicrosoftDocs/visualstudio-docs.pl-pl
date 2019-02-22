@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ac47f107c7365e2932d36084b2fc114934daba
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227358"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623570"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Wylicza różnych segmentów znajdujących się w źródle danych.
@@ -72,6 +72,6 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaTable](../../debugger/debug-interface-access/idiatable.md)  
-[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

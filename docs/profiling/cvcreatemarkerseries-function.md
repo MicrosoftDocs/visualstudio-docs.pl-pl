@@ -14,49 +14,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c0371992bde7b7ac58551457fa81e2b18a8f56
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630304"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Cvcreatemarkerseries — funkcja
-Tworzy serię znacznika dla danego dostawcy.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C  
-_Check_return_ HRESULT CvCreateMarkerSeriesW(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCWSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-  
-_Check_return_ HRESULT CvCreateMarkerSeriesA(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pProvider`  
- Poprzednio inicjowany przez cvinitprovider — obiekt dostawcy. Nie może mieć wartości NULL.  
-  
- `pSeriesName`  
- Nazwa serii znacznika. Nie może mieć wartości NULL, ale dozwolone jest pustym ciągiem.  
-  
- `ppMarkerSeries`  
- Adres zmiennej danych wyjściowych, który będzie przechowywał znaczników serii kontekstu. Nie może mieć wartości NULL.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- S_OK znaczników serii został pomyślnie utworzony lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *cvmarkers.h*  
-  
- **Unicode:** CvCreateMarkerSeriesW  
-  
- **ANSI:** CvCreateMarkerSeriesA  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+Tworzy serię znacznika dla danego dostawcy.
+
+## <a name="syntax"></a>Składnia
+
+```C
+_Check_return_ HRESULT CvCreateMarkerSeriesW(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCWSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+
+_Check_return_ HRESULT CvCreateMarkerSeriesA(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pProvider` Poprzednio inicjowany przez cvinitprovider — obiekt dostawcy. Nie może mieć wartości NULL.
+
+ `pSeriesName` Nazwa serii znacznika. Nie może mieć wartości NULL, ale dozwolone jest pustym ciągiem.
+
+ `ppMarkerSeries` Adres zmiennej danych wyjściowych, który będzie przechowywał znaczników serii kontekstu. Nie może mieć wartości NULL.
+
+## <a name="return-value"></a>Wartość zwracana
+ S_OK znaczników serii został pomyślnie utworzony lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *cvmarkers.h*
+
+ **Unicode:** CvCreateMarkerSeriesW
+
+ **ANSI:** CvCreateMarkerSeriesA
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

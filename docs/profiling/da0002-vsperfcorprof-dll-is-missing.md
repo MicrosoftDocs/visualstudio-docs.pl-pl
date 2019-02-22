@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc44f1dd1a7c9b81330912871a090881987d2a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637207"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brakuje VSPerfCorProf.dll
 
-|||  
-|-|-|  
-|Identyfikator reguły|DA0002|  
-|Kategoria|Użycie narzędzia profilowania|  
-|Metod profilowania|Profilowanie przy użyciu narzędzia wiersza polecenia narzędzia VSPerfCmd i VSPerfASPNETCmd|  
-|Komunikat|Wygląda na to, że plik został zebrany bez odpowiedniego ustawienia zmiennych środowiskowych poleceniem *VSPerfCLREnv.cmd*. Symbole dla zarządzanych danych binarnych mogą nie być rozpoznawane.|  
-|Typ reguły|Informacje|  
+|||
+|-|-|
+|Identyfikator reguły|DA0002|
+|Kategoria|Użycie narzędzia profilowania|
+|Metod profilowania|Profilowanie przy użyciu narzędzia wiersza polecenia narzędzia VSPerfCmd i VSPerfASPNETCmd|
+|Komunikat|Wygląda na to, że plik został zebrany bez odpowiedniego ustawienia zmiennych środowiskowych poleceniem *VSPerfCLREnv.cmd*. Symbole dla zarządzanych danych binarnych mogą nie być rozpoznawane.|
+|Typ reguły|Informacje|
 
-## <a name="cause"></a>Przyczyna  
- Program profilujący nie może odnaleźć *VSPerfCorProf.dll* podczas uruchomienia profilowania. To ostrzeżenie występuje, gdy są używane narzędzia wiersza polecenia do zbierania danych profilera, bez używania *VSPerfCLREnv.cmd* narzędzia, aby zainicjować zmienne środowiskowe wymagane. Ostrzeżenie można również uruchamiają się, jeśli inny profiler jest uruchomiona, gdy start Profiling Tools.  
+## <a name="cause"></a>Przyczyna
+ Program profilujący nie może odnaleźć *VSPerfCorProf.dll* podczas uruchomienia profilowania. To ostrzeżenie występuje, gdy są używane narzędzia wiersza polecenia do zbierania danych profilera, bez używania *VSPerfCLREnv.cmd* narzędzia, aby zainicjować zmienne środowiskowe wymagane. Ostrzeżenie można również uruchamiają się, jeśli inny profiler jest uruchomiona, gdy start Profiling Tools.
 
-## <a name="rule-description"></a>Opis reguły  
- Przed uruchomienie profilowania profiler można rozpoznać symboli w plikach binarnych w .NET Framework, należy ustawić określonych zmiennych środowiskowych. To ostrzeżenie wskazuje, żeby *VSPerfCLREnv.cmd* narzędzie nie zostało uruchomione, zanim został zebrany danych profilowania. Symbole dla zarządzanych danych binarnych nie może rozpoznać. Aby uzyskać więcej informacji o korzystaniu z narzędzi profilowania z wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+## <a name="rule-description"></a>Opis reguły
+ Przed uruchomienie profilowania profiler można rozpoznać symboli w plikach binarnych w .NET Framework, należy ustawić określonych zmiennych środowiskowych. To ostrzeżenie wskazuje, żeby *VSPerfCLREnv.cmd* narzędzie nie zostało uruchomione, zanim został zebrany danych profilowania. Symbole dla zarządzanych danych binarnych nie może rozpoznać. Aby uzyskać więcej informacji o korzystaniu z narzędzi profilowania z wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Jeśli profilowany zarządzanych aplikacji za pomocą narzędzia wiersza polecenia w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools, uruchom [VSPerfCLREnv](../profiling/vsperfclrenv.md) narzędzie wiersza polecenia, przed rozpoczęciem zbierania danych.

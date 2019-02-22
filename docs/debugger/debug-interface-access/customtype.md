@@ -12,28 +12,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521b7576293be30a1ce4e305ef355ef79e79a4f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f960ebddbe5e58371f6a8bc7bd592be2fc2f25fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960467"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629433"
 ---
 # <a name="customtype"></a>CustomType
-Typy danych zdefiniowane przez dostawców (specyficzne dla kompilatora typy) są identyfikowane przez `SymTagCustomType` symboli.  
-  
-## <a name="properties"></a>Właściwości  
- W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.  
-  
-|Właściwość|Typ danych|Opis|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identyfikator producenta OEM.|  
-|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Wewnętrzny identyfikator producenta OEM|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu: symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagCustomType` (jeden z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartości).|  
-|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Pierwszy typ odwołuje się symbol typu niestandardowego.|  
-|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Identyfikator typu symbolu.|  
-|[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Tablica wszystkich typów, które odwołuje się symbol typu niestandardowego.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+Typy danych zdefiniowane przez dostawców (specyficzne dla kompilatora typy) są identyfikowane przez `SymTagCustomType` symboli.
+
+## <a name="properties"></a>Właściwości
+ W poniższej tabeli przedstawiono dodatkowe prawidłowe właściwości dla tego typu symbolu.
+
+|Właściwość|Typ danych|Opis|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_oemId](../../debugger/debug-interface-access/idiasymbol-get-oemid.md)|`DWORD`|Identyfikator producenta OEM.|
+|[IDiaSymbol::get_oemSymbolId](../../debugger/debug-interface-access/idiasymbol-get-oemsymbolid.md)|`DWORD`|Wewnętrzny identyfikator producenta OEM|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Identyfikator indeksu: symbolu.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Zwraca `SymTagCustomType` (jeden z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wartości).|
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Pierwszy typ odwołuje się symbol typu niestandardowego.|
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Identyfikator typu symbolu.|
+|[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Tablica wszystkich typów, które odwołuje się symbol typu niestandardowego.|
+
+## <a name="see-also"></a>Zobacz też
+- [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

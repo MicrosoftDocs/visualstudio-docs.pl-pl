@@ -18,38 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f1f3cb85b32aac9c81ac6ea2b64da61060ebb0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612585"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Rozwiązywanie problemów z wdrożeniami ClickOnce
-Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń.  
-  
- W większości przypadków [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostanie pobrana do komputera użytkownika i uruchomić bez problemów. Istnieją przypadki, jednak gdy problemy konfiguracji serwera lub aplikacji sieci Web może spowodować nieprzewidzianych problemów.  
+Ten temat ułatwia diagnozowanie i rozwiązywanie typowych problemów z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń.
+
+ W większości przypadków [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostanie pobrana do komputera użytkownika i uruchomić bez problemów. Istnieją przypadki, jednak gdy problemy konfiguracji serwera lub aplikacji sieci Web może spowodować nieprzewidzianych problemów.
 
 ## <a name="deployment-considerations"></a>Zagadnienia dotyczące wdrażania
 
- [Instrukcje: Ustaw niestandardowej lokalizacji pliku dziennika błędów wdrażania technologii ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
- Opisuje sposób przekierować wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] błędów aktywacji na komputerze do jednego pliku dziennika.  
-  
- [Instrukcje: Określanie pełnych plików dziennika dla wdrożeń technologii ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
- W tym artykule opisano jak zwiększyć szczegółów, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w plikach dziennika.  
-  
- [Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
- W tym artykule opisano różne problemy z konfiguracją serwera sieci Web, który może powodować trudności pobieranie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
-  
- [Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
- W tym artykule opisano różne zagadnienia dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń.  
-  
- [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
- W tym artykule opisano konkretne scenariusze, w którym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażanie nie powiedzie się i zawiera instrukcje dotyczące rozwiązywania tych problemów.  
-  
- [Debugowanie aplikacji ClickOnce używających System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
- W tym artykule opisano techniki debugowania aplikacji ClickOnce używających System.Deployment.Application.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)
+ [Instrukcje: Ustaw niestandardowej lokalizacji pliku dziennika błędów wdrażania technologii ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+
+ Opisuje sposób przekierować wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] błędów aktywacji na komputerze do jednego pliku dziennika.
+
+ [Instrukcje: Określanie pełnych plików dziennika dla wdrożeń technologii ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+
+ W tym artykule opisano jak zwiększyć szczegółów, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapisuje w plikach dziennika.
+
+ [Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)
+
+ W tym artykule opisano różne problemy z konfiguracją serwera sieci Web, który może powodować trudności pobieranie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+
+ [Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)
+
+ W tym artykule opisano różne zagadnienia dotyczące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń.
+
+ [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+
+ W tym artykule opisano konkretne scenariusze, w którym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrażanie nie powiedzie się i zawiera instrukcje dotyczące rozwiązywania tych problemów.
+
+ [Debugowanie aplikacji ClickOnce używających System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+
+ W tym artykule opisano techniki debugowania aplikacji ClickOnce używających System.Deployment.Application.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md)

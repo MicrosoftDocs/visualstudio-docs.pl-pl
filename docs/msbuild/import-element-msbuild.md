@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629914"
 ---
 # <a name="import-element-msbuild"></a>Import — element (MSBuild)
 Importuje zawartość pliku jednego projektu do innego pliku projektu.
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>Składnia
 
@@ -108,5 +107,5 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
-[Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Instrukcje: Użyj tej samej wartości docelowej w wielu plikach projektów](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

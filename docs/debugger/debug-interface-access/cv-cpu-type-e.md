@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd089cc22c69978485c9277a67b44114b66c38b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ab2081d5f75eea3ad23db4151f43ed882bdf74cc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315253"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599739"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 Określa procesor docelowy.
@@ -101,5 +101,5 @@ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_platfo
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

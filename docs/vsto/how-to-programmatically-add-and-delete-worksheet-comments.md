@@ -14,53 +14,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23b14cf662da3440aae2c7fc2d05e2ead5eabaa8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0a9d174773493546a4d9cd8d7889c39945afafe6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869687"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636765"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Instrukcje: Programowe Dodawanie i usuwanie komentarzy do arkusza
-  Można programowo Dodawanie i usuwanie komentarzy w arkuszach programu Microsoft Office Excel. Komentarze można dodawać tylko do jednej komórki, nie do zakresów wielu komórek.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Dodawanie i usuwanie komentarzy w projekcie na poziomie dokumentu  
- W poniższych przykładach założono, że jest pojedynczą komórkę <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `dateComment` w arkuszu o nazwie `Sheet1`.  
-  
-### <a name="to-add-a-new-comment-to-a-named-range"></a>Aby dodać nowy komentarz do nazwany zakres  
-  
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli i podać tekst komentarza. Ten kod musi być umieszczony w `Sheet1` klasy.  
-  
+  Można programowo Dodawanie i usuwanie komentarzy w arkuszach programu Microsoft Office Excel. Komentarze można dodawać tylko do jednej komórki, nie do zakresów wielu komórek.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="add-and-delete-a-comment-in-a-document-level-project"></a>Dodawanie i usuwanie komentarzy w projekcie na poziomie dokumentu
+ W poniższych przykładach założono, że jest pojedynczą komórkę <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `dateComment` w arkuszu o nazwie `Sheet1`.
+
+### <a name="to-add-a-new-comment-to-a-named-range"></a>Aby dodać nowy komentarz do nazwany zakres
+
+1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli i podać tekst komentarza. Ten kod musi być umieszczony w `Sheet1` klasy.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#30)]
-     [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]  
-  
-#### <a name="to-delete-a-comment-from-a-named-range"></a>Usuń komentarz z nazwany zakres  
-  
-1.  Sprawdź, czy komentarz istnieje na zakres i usuń go. Ten kod musi być umieszczony w `Sheet1` klasy.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]
+
+#### <a name="to-delete-a-comment-from-a-named-range"></a>Usuń komentarz z nazwany zakres
+
+1.  Sprawdź, czy komentarz istnieje na zakres i usuń go. Ten kod musi być umieszczony w `Sheet1` klasy.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
-     [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]  
-  
-## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Dodawanie i usuwanie komentarzy w projekcie dodatku narzędzi VSTO  
- W poniższych przykładach założono, że jest pojedynczą komórkę <xref:Microsoft.Office.Interop.Excel.Range> o nazwie `dateComment` w aktywnym arkuszu.  
-  
-### <a name="to-add-a-new-comment-to-an-excel-range"></a>Aby dodać nowy komentarz do zakresu programu Excel  
-  
-1.  Wywołaj <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> metody <xref:Microsoft.Office.Interop.Excel.Range> i Podaj tekst komentarza.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
+
+## <a name="add-and-delete-a-comment-in-a-vsto-add-in-project"></a>Dodawanie i usuwanie komentarzy w projekcie dodatku narzędzi VSTO
+ W poniższych przykładach założono, że jest pojedynczą komórkę <xref:Microsoft.Office.Interop.Excel.Range> o nazwie `dateComment` w aktywnym arkuszu.
+
+### <a name="to-add-a-new-comment-to-an-excel-range"></a>Aby dodać nowy komentarz do zakresu programu Excel
+
+1.  Wywołaj <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> metody <xref:Microsoft.Office.Interop.Excel.Range> i Podaj tekst komentarza.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#20)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]  
-  
-### <a name="to-delete-a-comment-from-an-excel-range"></a>Usuń komentarz z zakresu programu Excel  
-  
-1.  Sprawdź, czy komentarz istnieje na zakres i usuń go.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]
+
+### <a name="to-delete-a-comment-from-an-excel-range"></a>Usuń komentarz z zakresu programu Excel
+
+1.  Sprawdź, czy komentarz istnieje na zakres i usuń go.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]  
-  
-## <a name="see-also"></a>Zobacz także  
- [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Instrukcje: Programowe wyświetlanie komentarzy do arkusza](../vsto/how-to-programmatically-display-worksheet-comments.md)   
- [Namedrange — formant](../vsto/namedrange-control.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
+
+## <a name="see-also"></a>Zobacz także
+- [Praca z arkuszami](../vsto/working-with-worksheets.md)
+- [Instrukcje: Programowe wyświetlanie komentarzy do arkusza](../vsto/how-to-programmatically-display-worksheet-comments.md)
+- [Namedrange — formant](../vsto/namedrange-control.md)

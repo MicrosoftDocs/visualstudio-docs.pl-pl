@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1fd51605e8d08d10195896f2d35a72f3dd82dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016514"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636804"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Żadnej aktywności dysku, aby pokazać (Widok wątków)
-Nie można wyświetlić aktywność dysku dla bieżącego zakresu czasu w kanałach We/Wy dysku. Aktywność dysku może być wyświetlany, jeśli pomniejszyć lub przewiń. Ponadto upewnij się, że kanałów dysku są ukryte.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Nie można wyświetlić aktywność dysku dla bieżącego zakresu czasu w kanałach We/Wy dysku. Aktywność dysku może być wyświetlany, jeśli pomniejszyć lub przewiń. Ponadto upewnij się, że kanałów dysku są ukryte.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -12,51 +12,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9567e272167c34d3061e9273d912ea9a2cd0ab7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fcbe9e97eb429fa7427ae0e3da4dce77281b40a0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031425"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625884"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
-Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT findSymbolByAddr (   
-   DWORD        isect,  
-   DWORD        offset,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `isect`  
- [in] Określa składnik części adresu.  
-  
- `offset`  
- [in] Określa przesunięcie składnik adresu.  
-  
- `symtag`  
- [in] Typ symbolu, który ma zostać odnaleziona. Wartości są pobierane z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia.  
-  
- `ppSymbol`  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) pobrać obiekt reprezentujący symbol.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
-  
-```C++  
-IDiaSymbol* pFunc;  
-pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
+Pobiera typ określony symbol, który zawiera lub jest najbardziej zbliżony do określonego adresu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT findSymbolByAddr ( 
+   DWORD        isect,
+   DWORD        offset,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `isect`
+
+[in] Określa składnik części adresu.
+
+ `offset`
+
+[in] Określa przesunięcie składnik adresu.
+
+ `symtag`
+
+[in] Typ symbolu, który ma zostać odnaleziona. Wartości są pobierane z [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) wyliczenia.
+
+ `ppSymbol`
+
+[out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) pobrać obiekt reprezentujący symbol.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+
+```C++
+IDiaSymbol* pFunc;
+pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );
+```
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)

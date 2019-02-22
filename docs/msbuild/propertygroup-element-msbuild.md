@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae63602b1892bca722ae8eb5e2052c103597fb6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941199"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622920"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup — element (MSBuild)
-Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` elementu używanego przy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być obiektem podrzędnym obiektu `PropertyGroup` elementu.  
+Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` elementu używanego przy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być obiektem podrzędnym obiektu `PropertyGroup` elementu.
 
- \<Project>  
- \<PropertyGroup>  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Składnia  
+## <a name="syntax"></a>Składnia
 
-```xml  
-<PropertyGroup Condition="'String A' == 'String B'">  
-    <Property1>...</Property1>  
-    <Property2>...</Property2>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'String A' == 'String B'">
+    <Property1>...</Property1>
+    <Property2>...</Property2>
+</PropertyGroup>
+```
 
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty  
+### <a name="attributes"></a>Atrybuty
 
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementy podrzędne  
+### <a name="child-elements"></a>Elementy podrzędne
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwość* elementów w `PropertyGroup` elementu.|  
+|Element|Opis|
+|-------------|-----------------|
+|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Właściwości zdefiniowane nazwę użytkownika, który zawiera wartość właściwości. Może wynosić zero lub więcej *właściwość* elementów w `PropertyGroup` elementu.|
 
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
-## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje sposób ustawiania właściwości na podstawie warunku. W tym przykładzie Jeśli wartość `CompileConfig` właściwość `DEBUG`, `Optimization`, `Obfuscate`, i `OutputPath` właściwości wewnątrz `PropertyGroup` elementu są ustawione.  
+## <a name="example"></a>Przykład
+ Poniższy przykład kodu pokazuje sposób ustawiania właściwości na podstawie warunku. W tym przykładzie Jeśli wartość `CompileConfig` właściwość `DEBUG`, `Optimization`, `Obfuscate`, i `OutputPath` właściwości wewnątrz `PropertyGroup` elementu są ustawione.
 
-```xml  
-<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  
-    <Optimization>false</Optimization>  
-    <Obfuscate>false</Obfuscate>  
-    <OutputPath>$(OutputPath)\debug</OutputPath>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >
+    <Optimization>false</Optimization>
+    <Obfuscate>false</Obfuscate>
+    <OutputPath>$(OutputPath)\debug</OutputPath>
+</PropertyGroup>
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

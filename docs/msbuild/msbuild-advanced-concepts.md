@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e532f76c628c486e9d19a24bef92fbcdbc5562f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e66c8b597e999f1eab3a52c663537ee94fe4f40a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001346"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603199"
 ---
 # <a name="msbuild-advanced-concepts"></a>Pojęcia zaawansowane dotyczące programu MSBuild
-Dokumenty w tej sekcji opisano sposób korzystania z zaawansowanych technik w celu kompilacji, które są uruchamiane przy użyciu programu MSBuild.  
-  
-## <a name="related-topics"></a>Tematy pokrewne  
-  
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)|Opisuje sposób wsadowe obiektów docelowych kompilacji i zadania, na podstawie metadanych elementu.|  
-|[Przekształcenia](../msbuild/msbuild-transforms.md)|Wyjaśnia, jak użyć przekształceń, aby umożliwić analizę zależności.|  
-|[Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|W tym artykule omówiono sposób użycia plików projektu MSBuild podczas kompilowania kodu z programu Visual Studio IDE.|  
-|[Tworzenie wielu projektów wykonywane równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|W tym artykule opisano sposób tworzenia wielu projektów na komputerach, które mają wiele procesorów lub wyspecjalizowanymi procesorami wielordzeniowymi.|  
-|[Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)|W tym artykule opisano sposób kompilowania aplikacji do uruchamiania na jednym z kilku różnych wersji programu .NET Framework.|  
-|[Najlepsze rozwiązania](../msbuild/msbuild-best-practices.md)|Zaleca najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)
+Dokumenty w tej sekcji opisano sposób korzystania z zaawansowanych technik w celu kompilacji, które są uruchamiane przy użyciu programu MSBuild.
+
+## <a name="related-topics"></a>Tematy pokrewne
+
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)|Opisuje sposób wsadowe obiektów docelowych kompilacji i zadania, na podstawie metadanych elementu.|
+|[Przekształcenia](../msbuild/msbuild-transforms.md)|Wyjaśnia, jak użyć przekształceń, aby umożliwić analizę zależności.|
+|[Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|W tym artykule omówiono sposób użycia plików projektu MSBuild podczas kompilowania kodu z programu Visual Studio IDE.|
+|[Tworzenie wielu projektów wykonywane równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|W tym artykule opisano sposób tworzenia wielu projektów na komputerach, które mają wiele procesorów lub wyspecjalizowanymi procesorami wielordzeniowymi.|
+|[Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)|W tym artykule opisano sposób kompilowania aplikacji do uruchamiania na jednym z kilku różnych wersji programu .NET Framework.|
+|[Najlepsze rozwiązania](../msbuild/msbuild-best-practices.md)|Zaleca najlepsze rozwiązania dotyczące pisania skryptów programu MSBuild.|
+
+## <a name="see-also"></a>Zobacz także
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)

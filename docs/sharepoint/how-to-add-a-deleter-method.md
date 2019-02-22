@@ -19,59 +19,59 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cad4de5ed1b31d02d9136b5ec2b46be71f54fea4
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870886"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644396"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Instrukcje: Dodawanie metody Deleter
-  Aby umożliwić użytkownikowi końcowemu usunąć rekord danych z listy zewnętrznej w witrynie programu SharePoint przez dodawanie metody Deleter do modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-### <a name="to-create-a-deleter-method"></a>Aby utworzyć metody Deleter  
-  
-1. Na **projektanta łączności danych biznesowych**, wybierz jednostkę.  
-  
-2. Na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC**.  
-  
-    **Szczegóły metody BDC** zostanie otwarte okno. Aby uzyskać więcej informacji na temat tego okna, zobacz [Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych](../sharepoint/bdc-model-design-tools-overview.md).  
-  
-3. W **Dodaj metodę** wybierz **Utwórz metodę usuwającą**.  
-  
-    Visual Studio dodaje następujące elementy w modelu. Te elementy są wyświetlane w **szczegóły metody BDC** okna.  
-  
-   - Metodę o nazwie **Usuń**.  
-  
-   - Parametr wejściowy metody.  
-  
-   - Deskryptor typu parametru.  
-  
-   - Wystąpienia metody dla metody.  
-  
-     Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**.  
-  
-    Pliku kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-5. Dodaj kod do metody Deleter, aby usunąć rekord. Poniższy przykład usuwa element wiersza z zamówienia sprzedaży, korzystając z przykładowej bazy danych AdventureWorks programu SQL Server.  
-  
-   > [!NOTE]  
-   >  Metody, w tym przykładzie używa dwóch parametrów wejściowych.  
-  
-   > [!NOTE]  
-   >  Zastąp wartość `ServerName` pole z nazwą serwera.  
-  
+  Aby umożliwić użytkownikowi końcowemu usunąć rekord danych z listy zewnętrznej w witrynie programu SharePoint przez dodawanie metody Deleter do modelu. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+### <a name="to-create-a-deleter-method"></a>Aby utworzyć metody Deleter
+
+1. Na **projektanta łączności danych biznesowych**, wybierz jednostkę.
+
+2. Na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC**.
+
+    **Szczegóły metody BDC** zostanie otwarte okno. Aby uzyskać więcej informacji na temat tego okna, zobacz [Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych](../sharepoint/bdc-model-design-tools-overview.md).
+
+3. W **Dodaj metodę** wybierz **Utwórz metodę usuwającą**.
+
+    Visual Studio dodaje następujące elementy w modelu. Te elementy są wyświetlane w **szczegóły metody BDC** okna.
+
+   - Metodę o nazwie **Usuń**.
+
+   - Parametr wejściowy metody.
+
+   - Deskryptor typu parametru.
+
+   - Wystąpienia metody dla metody.
+
+     Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).
+
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku kodu usługi, który został wygenerowany dla jednostki, a następnie wybierz **Wyświetl kod**.
+
+    Pliku kodu usługi jednostki zostanie otwarty w edytorze kodu. Aby uzyskać więcej informacji na temat pliku kodu usługi jednostki, zobacz [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+5. Dodaj kod do metody Deleter, aby usunąć rekord. Poniższy przykład usuwa element wiersza z zamówienia sprzedaży, korzystając z przykładowej bazy danych AdventureWorks programu SQL Server.
+
+   > [!NOTE]
+   >  Metody, w tym przykładzie używa dwóch parametrów wejściowych.
+
+   > [!NOTE]
+   >  Zastąp wartość `ServerName` pole z nazwą serwera.
+
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
-    [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
-  
+    [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
+
 ## <a name="see-also"></a>Zobacz także
- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)  
+- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
+- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)

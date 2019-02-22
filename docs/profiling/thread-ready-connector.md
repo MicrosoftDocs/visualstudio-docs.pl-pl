@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f8364ff4eb8c88715796ac84defa4b02d3e575
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939367"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620567"
 ---
 # <a name="thread-ready-connector"></a>Łącznik gotowego wątku
 Po kliknięciu przycisku segment blokujący, aby zobaczyć stos wywołań i jego stos odblokowywania łącznik gotowego wątku może również zostać wyświetlony. Jeśli odblokowywanie zdarzenie wystąpiło w innym wątku w bieżącym procesie, łącznik gotowego wątku identyfikuje wizualnie segment wątku i wykonanie, który włączone zablokowanego wątku, aby wznowić wykonywanie.

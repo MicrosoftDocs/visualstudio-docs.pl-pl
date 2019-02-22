@@ -14,28 +14,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e283128d17d088ed9d90597ccde24bcb22470b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645228"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: Ręczne tworzenie sesji wydajności
-Można ręcznie utworzyć sesję wydajności. Nie należy otworzyć projekt w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).  
-  
-### <a name="to-manually-create-a-performance-session"></a>Ręczne tworzenie sesji wydajności  
-  
-1.  Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowa sesja wydajności**.  
-  
-     Sesja wydajności puste jest dodawany do **Eksplorator wydajności**.  
-  
-2.  Kliknij prawym przyciskiem myszy **cele**, a następnie kliknij przycisk **Dodaj binarne docelowej**.  
-  
-3.  W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.  
-  
-     Zostanie dodany nowy plik binarny.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Eksplorator wydajności](../profiling/performance-explorer.md)   
- [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)
+Można ręcznie utworzyć sesję wydajności. Nie należy otworzyć projekt w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w tym celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
+
+### <a name="to-manually-create-a-performance-session"></a>Ręczne tworzenie sesji wydajności
+
+1.  Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **nowa sesja wydajności**.
+
+     Sesja wydajności puste jest dodawany do **Eksplorator wydajności**.
+
+2.  Kliknij prawym przyciskiem myszy **cele**, a następnie kliknij przycisk **Dodaj binarne docelowej**.
+
+3.  W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.
+
+     Zostanie dodany nowy plik binarny.
+
+## <a name="see-also"></a>Zobacz także
+- [Eksplorator wydajności](../profiling/performance-explorer.md)
+- [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)

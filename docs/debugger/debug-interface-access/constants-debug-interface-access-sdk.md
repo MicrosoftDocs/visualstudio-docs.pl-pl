@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987408"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608581"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Stałe (Zestaw SDK dostępu do interfejsu debugowania)
 Te stałe typu string może służyć do identyfikowania różnych sekcji plik bazy danych (PDB) programu debugowania za pośrednictwem DIA SDK.
@@ -56,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 Nagłówek: dia2.h
 
 ## <a name="see-also"></a>Zobacz też
-[Dokumentacja](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [Dokumentacja](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

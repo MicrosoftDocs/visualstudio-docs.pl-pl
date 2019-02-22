@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853904"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621334"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowane składniki, które są nadal aktualne nie są odbudowany. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, gdy, każda kompilacja potrwa długo. Aby włączyć kompilacje przyrostowe (kompilacji, w którym tylko te obiekty docelowe, które nie zostały skompilowane zanim lub który jest przeznaczony dla są nieaktualne, są ponownie skompilowany), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. Jednakże musi być mapowanie jeden do jednego między dane wejściowe i wyjściowe. Można użyć transformacji umożliwiające obiekty docelowe zidentyfikować ten bezpośredniego mapowania. Aby uzyskać więcej informacji na temat przekształceń, zobacz [przekształca](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Obiekt docelowy może kompilowana przyrostowo, jeśli dane wejściowe i wyjścio
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. W poniższym przykładzie, jeśli dowolny plik w `@(CSFile)` listy elementów jest nowsza niż *hello.exe* pliku [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] uruchomi element docelowy; w przeciwnym razie zostanie pominięte:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Ten plik projektu zawiera zarówno `Convert` i `Build` elementów docelowych. `G
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Docelowe elementy](../msbuild/msbuild-targets.md)  
-[TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Przekształcenia](../msbuild/msbuild-transforms.md)  
-[CSC — zadanie](../msbuild/csc-task.md)  
-[Vbc — zadanie](../msbuild/vbc-task.md)
+- [Docelowe elementy](../msbuild/msbuild-targets.md)
+- [TARGET — element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Przekształcenia](../msbuild/msbuild-transforms.md)
+- [CSC — zadanie](../msbuild/csc-task.md)
+- [Vbc — zadanie](../msbuild/vbc-task.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bca63018ca2396126c487f2588da5c658a5eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975936"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637675"
 ---
 # <a name="visible-timeline-profile"></a>Profil widocznej osi czasu
-Profil widocznej osi czasu w widoku wątków blokowania zawiera informacje statystyczne i linki do raportów. Możesz powiększyć, pomniejszyć, być przewijane w poziomie, ukrywanie kanałów lub wyświetlanie kanałów, liczb w aktywna Legenda zmienić celu odzwierciedlenia, co znajduje się aktualnie w widoku. Aby wyświetlić raport dotyczący elementu w legendzie, kliknij element.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Profil widocznej osi czasu w widoku wątków blokowania zawiera informacje statystyczne i linki do raportów. Możesz powiększyć, pomniejszyć, być przewijane w poziomie, ukrywanie kanałów lub wyświetlanie kanałów, liczb w aktywna Legenda zmienić celu odzwierciedlenia, co znajduje się aktualnie w widoku. Aby wyświetlić raport dotyczący elementu w legendzie, kliknij element.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

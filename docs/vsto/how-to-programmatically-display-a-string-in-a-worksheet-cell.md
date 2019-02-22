@@ -13,41 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871809"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629446"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Instrukcje: Programowe wyświetlanie ciągu w komórce arkusza
-  W tym przykładzie przedstawiono sposób wyświetlania tekstu w komórce programowo. Aby wyświetlić tekst w komórce, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange  
- W tym przykładzie użyto <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `message`. Kontrolka musi zostać dodana do dostosowywania poziomie dokumentu, w czasie projektowania. Poniższy kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.  
-  
-### <a name="to-display-text-in-a-namedrange-control"></a>Do wyświetlania tekstu w kontrolce NamedRange  
-  
-1.  Ustaw wartość <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolę **Witaj, świecie**.  
-  
+  W tym przykładzie przedstawiono sposób wyświetlania tekstu w komórce programowo. Aby wyświetlić tekst w komórce, należy użyć <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange
+ W tym przykładzie użyto <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `message`. Kontrolka musi zostać dodana do dostosowywania poziomie dokumentu, w czasie projektowania. Poniższy kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.
+
+### <a name="to-display-text-in-a-namedrange-control"></a>Do wyświetlania tekstu w kontrolce NamedRange
+
+1.  Ustaw wartość <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolę **Witaj, świecie**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
-     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
-  
-## <a name="use-a-native-excel-range"></a>Użyj natywnego zakresu programu Excel  
- Poniższy kod tworzy nowy zakres programowo, a następnie przypisuje wartość do niego.  
-  
-### <a name="to-display-text-in-an-excel-range"></a>Do wyświetlania tekstu w zakresie programu Excel  
-  
-1.  Pobieranie zakresu komórek **A1** na `Sheet1` i ustaw wartość **Witaj, świecie**.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
+
+## <a name="use-a-native-excel-range"></a>Użyj natywnego zakresu programu Excel
+ Poniższy kod tworzy nowy zakres programowo, a następnie przypisuje wartość do niego.
+
+### <a name="to-display-text-in-an-excel-range"></a>Do wyświetlania tekstu w zakresie programu Excel
+
+1.  Pobieranie zakresu komórek **A1** na `Sheet1` i ustaw wartość **Witaj, świecie**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
-     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
-  
-## <a name="see-also"></a>Zobacz także  
- [Przewodnik: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)   
- [Namedrange — formant](../vsto/namedrange-control.md)   
- [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
+
+## <a name="see-also"></a>Zobacz także
+- [Przewodnik: Zbieranie danych za pomocą formularza Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Rozwiązywanie problemów z rozwiązań pakietu Office](../vsto/troubleshooting-office-solutions.md)
+- [Namedrange — formant](../vsto/namedrange-control.md)
+- [Globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

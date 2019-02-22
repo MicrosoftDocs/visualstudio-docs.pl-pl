@@ -10,55 +10,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d49cba09d5ca9f7a3a88d2b585937b50a2c5aa1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033080"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625208"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii — dane próbkowania pamięci platformy .NET
-Widok linii dla platformy .NET dane alokacji pamięci profilowania, która używa metody pobierania próbek Wyświetla listę instrukcji, które pamięci przydzielonej podczas uruchomienia profilowania. Kolumny także rozmiar i liczba przydziałów.  
-  
- W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
-  
- Instrukcja jest identyfikowane przez następujące elementy:  
-  
-- Plik źródłowy, który zawiera deklarację funkcji.  
-  
-- Funkcja, która zawiera instrukcję.  
-  
-- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
-  
-- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
-  
-- Wiersza źródłowego, w którym kończy się instrukcji.  
-  
-- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
-  
-  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
-  
-  Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
-|**Nazwa procesu**|Nazwa procesu.|  
-|**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
-|**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
-|**Plik źródłowy**|Plik źródłowy, który zawiera deklarację.|  
-|**Nazwa funkcji**|Nazwa funkcji, która zawiera instrukcję.|  
-|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Adres funkcji**|Adres początkowy funkcji.|  
-|**Początkowy wiersz w źródle**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła Alokacja.|  
-|**Końcowy wiersz w źródle**|Końcowy numer wiersza w pliku źródłowym, w którym wystąpiła Alokacja.|  
-|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
-|**Końcowy znak w źródle**|Przesunięcie końcowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|  
-|**Nazwa wiersza**|Generowane przez program profilujący identyfikator wiersza przy użyciu następującej składni:`Source File`**; [**  `Line Number Start` **,**`Character Start`**] ->; [** `Line Number Start,Character Start`**]**|  
-|**Przydziały wyłączne**|Całkowita liczba obiektów, które zostały utworzone w tym wierszu.|  
-|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone podczas uruchomienia profilowania, przydzielonych w taki sposób, w tym wierszu.|  
-|**Bajty wyłączne**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|  
-|**% Bajtów wyłącznych**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok linii](../profiling/lines-view-sampling-data.md)
+Widok linii dla platformy .NET dane alokacji pamięci profilowania, która używa metody pobierania próbek Wyświetla listę instrukcji, które pamięci przydzielonej podczas uruchomienia profilowania. Kolumny także rozmiar i liczba przydziałów.
+
+ W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.
+
+ Instrukcja jest identyfikowane przez następujące elementy:
+
+- Plik źródłowy, który zawiera deklarację funkcji.
+
+- Funkcja, która zawiera instrukcję.
+
+- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.
+
+- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.
+
+- Wiersza źródłowego, w którym kończy się instrukcji.
+
+- Znak w wierszu źródłowym, w którym kończy się instrukcji.
+
+  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.
+
+  Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|
+|**Nazwa procesu**|Nazwa procesu.|
+|**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|
+|**Plik źródłowy**|Plik źródłowy, który zawiera deklarację.|
+|**Nazwa funkcji**|Nazwa funkcji, która zawiera instrukcję.|
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
+|**Adres funkcji**|Adres początkowy funkcji.|
+|**Początkowy wiersz w źródle**|Numer wiersza początkowego w pliku źródłowym, w którym wystąpiła Alokacja.|
+|**Końcowy wiersz w źródle**|Końcowy numer wiersza w pliku źródłowym, w którym wystąpiła Alokacja.|
+|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|
+|**Końcowy znak w źródle**|Przesunięcie końcowy znak w wierszu pliku źródłowego, w którym wystąpiła Alokacja.|
+|**Nazwa wiersza**|Generowane przez program profilujący identyfikator wiersza przy użyciu następującej składni:`Source File`**; [**  `Line Number Start` **,**`Character Start`**] ->; [** `Line Number Start,Character Start`**]**|
+|**Przydziały wyłączne**|Całkowita liczba obiektów, które zostały utworzone w tym wierszu.|
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone podczas uruchomienia profilowania, przydzielonych w taki sposób, w tym wierszu.|
+|**Bajty wyłączne**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|
+|**% Bajtów wyłącznych**|Procent przydzielonych w taki sposób, w tym wierszu wszystkich bajtów pamięci, która została przydzielona podczas uruchomienia profilowania.|
+
+## <a name="see-also"></a>Zobacz także
+- [Widok linii](../profiling/lines-view-sampling-data.md)

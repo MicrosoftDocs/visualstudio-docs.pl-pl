@@ -20,71 +20,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9996ee8c3b1cf8a6298ad21d0ae0058d90f78b64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631175"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
-Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.  
+Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.
 
 > [!NOTE]
-> Projekt w programie Visual Studio 2017, obsługa C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC. 
-  
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry **XSD** zadania.  
-  
--   **AdditionalOptions**  
-  
-     Opcjonalnie **ciąg** parametru.  
-  
-     Lista opcji określonych w wierszu polecenia. Na przykład /\<opcja1 > /\<opcja2 > /\<opcja #>. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.  
-  
--   **GenerateFromSchema**  
-  
-     Opcjonalnie **ciąg** parametru.  
-  
-     Określa typy, które są generowane na podstawie określonego schematu.  
-  
-     Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.  
-  
-    -   **classes** - **/classes**  
-  
-    -   **dataset** - **/dataset**  
-  
--   **Język**  
-  
-     Opcjonalnie **ciąg** parametru.  
-  
-     Określa język programowania dla wygenerowanego kodu.  
-  
-     Wybierz z **CS** (C#, co jest ustawieniem domyślnym), **VB** (Visual Basic) lub **JS** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.  
-  
--   **Namespace**  
-  
-     Opcjonalnie **ciąg** parametru.  
-  
-     Określa przestrzeń nazw czasu wykonywania wygenerowany typów.  
-  
--   **Źródła**  
-  
-     Wymagane `ITaskItem[]` parametru.  
-  
-     Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.  
-  
--   **SuppressStartupBanner**  
-  
-     Opcjonalnie **logiczna** parametru.  
-  
-     Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.  
-  
--   **TrackerLogDirectory**  
-  
-     Opcjonalnie **ciąg** parametru.  
-  
-     Określa katalog dziennika śledzenia.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+> Projekt w programie Visual Studio 2017, obsługa C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC.
+
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry **XSD** zadania.
+
+-   **AdditionalOptions**
+
+     Opcjonalnie **ciąg** parametru.
+
+     Lista opcji określonych w wierszu polecenia. Na przykład /\<opcja1 > /\<opcja2 > /\<opcja #>. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez inne **XSD** parametru zadania.
+
+-   **GenerateFromSchema**
+
+     Opcjonalnie **ciąg** parametru.
+
+     Określa typy, które są generowane na podstawie określonego schematu.
+
+     Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
+
+    -   **classes** - **/classes**
+
+    -   **dataset** - **/dataset**
+
+-   **Język**
+
+     Opcjonalnie **ciąg** parametru.
+
+     Określa język programowania dla wygenerowanego kodu.
+
+     Wybierz z **CS** (C#, co jest ustawieniem domyślnym), **VB** (Visual Basic) lub **JS** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
+
+-   **Namespace**
+
+     Opcjonalnie **ciąg** parametru.
+
+     Określa przestrzeń nazw czasu wykonywania wygenerowany typów.
+
+-   **Źródła**
+
+     Wymagane `ITaskItem[]` parametru.
+
+     Określa tablicę elementów pliku źródłowego programu MSBuild, które mogą być używane i wyemitowane przez zadania.
+
+-   **SuppressStartupBanner**
+
+     Opcjonalnie **logiczna** parametru.
+
+     Jeśli `true`, uniemożliwia wyświetlanie wiadomości praw autorskich i wersji, podczas uruchamiania zadania.
+
+-   **TrackerLogDirectory**
+
+     Opcjonalnie **ciąg** parametru.
+
+     Określa katalog dziennika śledzenia.
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

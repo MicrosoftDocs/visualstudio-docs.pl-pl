@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947624"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605188"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplikacji. Zazwyczaj zawiera zestaw narzędzi MSBuild *microsoft.common.tasks* pliku *microsoft.common.targets* plików i kompilatory, takie jak *csc.exe* i  *vbc.exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jedną platformę systemu. Jednak zestaw narzędzi w wersji 2.0 programu MSBuild może służyć do docelowych tylko .NET Framework 2.0.
@@ -116,4 +116,5 @@ Program MSBuild zapewnia przeciążenia `ToolLocationHelper` metodach dodającyc
 Zestawy narzędzi podrzędne zostały wprowadzone w .NET Framework 4.5.
 
 ## <a name="see-also"></a>Zobacz także
- [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md) [wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
+- [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

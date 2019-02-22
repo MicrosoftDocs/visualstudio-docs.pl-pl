@@ -12,40 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3d82f31ab8226fbdf29dbf7b154d12da93cacd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66abd987e3da4fadaac9d5b2de6664c4ae9e24ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935842"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599093"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
-Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaLineNumber** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba numerów wierszy w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Zwraca tablicę [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) obiekty reprezentujące numery wierszy żądaną.  
-  
- pceltFetched  
- [out] Zwraca liczbę numery wierszy w pobrano modułu wyliczającego.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku bez więcej numerów wierszy. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+Pobiera określoną liczbę numery wierszy w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Next ( 
+   ULONG            celt,
+   IDiaLineNumber** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba numerów wierszy w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Zwraca tablicę [idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md) obiekty reprezentujące numery wierszy żądaną.
+
+ pceltFetched
+
+[out] Zwraca liczbę numery wierszy w pobrano modułu wyliczającego.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku bez więcej numerów wierszy. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

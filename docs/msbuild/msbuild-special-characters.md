@@ -12,31 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57334ea585c0561b1abdf7a89de46fa8da46835e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ad150a2eb9e27a9b2ce1e2e293d84ed956d8a7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005179"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603316"
 ---
 # <a name="msbuild-special-characters"></a>Znaki specjalne w MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezerwuje niektórych znaków specjalnych w określonych kontekstach. Masz tylko takie znaki ucieczki, aby ich używać dosłownie w kontekście, w którym są one zarezerwowane. Na przykład znak gwiazdki ma specjalne znaczenie tylko w `Include` i `Exclude` atrybuty definicji elementu i w wywołaniach `CreateItem`. Jeśli chcesz, aby znak gwiazdki, aby pojawiało się jako znak gwiazdki w jednym z tych kontekstach, musisz wyjść z niego. W każdym kontekście wystarczy wpisać gwiazdkę, w której ma się pojawić.  
-  
- Aby znak specjalny, należy użyć składni %\<xx >, gdzie \<xx > reprezentuje wartości szesnastkowej znaku ASCII. Aby uzyskać więcej informacji, zobacz [jak: Znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
-  
-## <a name="special-characters"></a>Znaki specjalne  
- W poniższej tabeli wymieniono [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] znaki specjalne:  
-  
-|**Znak**|**ASCII**|**Użycie zarezerwowanych**|  
-|-------------------|---------------|------------------------|  
-|%|%25|Odwoływanie się do metadanych|  
-|$|%24|Właściwości odwołania|  
-|@|%40|Odwołujący się listy elementów|  
-|'|%27|Warunki i inne wyrażenia|  
-|;|%3B|Separator listy|  
-|?|%3F|Znak symbolu wieloznacznego dla nazwy plików w `Include` i `Exclude` atrybutów|  
-|*|%2A|Znak symbolu wieloznacznego do użytku w nazwach plików w `Include` i `Exclude` atrybutów|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)   
- [Elementy](../msbuild/msbuild-items.md)
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezerwuje niektórych znaków specjalnych w określonych kontekstach. Masz tylko takie znaki ucieczki, aby ich używać dosłownie w kontekście, w którym są one zarezerwowane. Na przykład znak gwiazdki ma specjalne znaczenie tylko w `Include` i `Exclude` atrybuty definicji elementu i w wywołaniach `CreateItem`. Jeśli chcesz, aby znak gwiazdki, aby pojawiało się jako znak gwiazdki w jednym z tych kontekstach, musisz wyjść z niego. W każdym kontekście wystarczy wpisać gwiazdkę, w której ma się pojawić.
+
+ Aby znak specjalny, należy użyć składni %\<xx >, gdzie \<xx > reprezentuje wartości szesnastkowej znaku ASCII. Aby uzyskać więcej informacji, zobacz [jak: Znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+
+## <a name="special-characters"></a>Znaki specjalne
+ W poniższej tabeli wymieniono [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] znaki specjalne:
+
+|**Znak**|**ASCII**|**Użycie zarezerwowanych**|
+|-------------------|---------------|------------------------|
+|%|%25|Odwoływanie się do metadanych|
+|$|%24|Właściwości odwołania|
+|@|%40|Odwołujący się listy elementów|
+|'|%27|Warunki i inne wyrażenia|
+|;|%3B|Separator listy|
+|?|%3F|Znak symbolu wieloznacznego dla nazwy plików w `Include` i `Exclude` atrybutów|
+|*|%2A|Znak symbolu wieloznacznego do użytku w nazwach plików w `Include` i `Exclude` atrybutów|
+
+## <a name="see-also"></a>Zobacz także
+- [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)
+- [Elementy](../msbuild/msbuild-items.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b541a21afb997e2864f4b43fd6074f760c8e6dd7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920581"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641640"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca numer wiersza, w którym kończy się instrukcja lub wyrażenie. Jeśli wartość wynosi zero, end information nie jest obecny.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Pobiera numer wiersza liczonego od jednego źródła, gdzie kończy się instrukcja lub wyrażenie.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_lineNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca numer wiersza, w którym kończy się instrukcja lub wyrażenie. Jeśli wartość wynosi zero, end information nie jest obecny.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

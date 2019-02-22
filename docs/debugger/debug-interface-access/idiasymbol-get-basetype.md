@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2844003bf7ec81b256537fe06520dfdff473faa
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227280"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640171"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Pobiera typ podstawowy dla tego symbolu<em>.</em>
@@ -31,7 +31,8 @@ HRESULT get_baseType (
 ```
 
 #### <a name="parameters"></a>Parametry
-`pRetVal`  
+`pRetVal`
+
 [out] Zwraca wartość z zakresu od [basictype — wyliczenie](../../debugger/debug-interface-access/basictype.md) wyliczenie opisujące typ podstawowy elementu symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
@@ -66,6 +67,6 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Wersja:|V7.0 DIA SDK|
 
 ## <a name="see-also"></a>Zobacz też
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[BasicType, wyliczenie](../../debugger/debug-interface-access/basictype.md)  
-[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [BasicType, wyliczenie](../../debugger/debug-interface-access/basictype.md)
+- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

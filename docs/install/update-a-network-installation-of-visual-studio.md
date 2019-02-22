@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937542"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617291"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizowanie instalacji sieciowej programu Visual Studio 2017
 
@@ -26,13 +26,13 @@ Jego jest to możliwe, aby zaktualizować układu instalacji sieciowej programu 
 
 ## <a name="how-to-update-a-network-layout"></a>Jak zaktualizować układ sieci
 
-Aby odświeżyć instalacji udziale sieciowym, aby obejmowała najnowsze aktualizacje, uruchom polecenie — Układ, stopniowo pobrać zaktualizowane pakiety.
+Aby odświeżyć instalacji udziale sieciowym, aby obejmowała najnowsze aktualizacje, należy uruchomić `--layout` polecenie, aby pobrać przyrostowo zaktualizowane pakiety.
 
-Jeśli wybrano opcję częściowej układu podczas pierwszego utworzenia układu sieci, te ustawienia są zapisywane.  Dowolne polecenia przyszłych układu użyć poprzednie opcje, a także nowe opcje, które określisz.  (To jest nowe w programie 15.3).  Jeśli używasz układu starszej wersji, należy użyć tego samego parametry wiersza polecenia, które były używane podczas pierwszego utworzenia instalacji układ sieci (innymi słowy, tego samego obciążenia i języków) aby zaktualizować swoją zawartość.
+**Nowość w 15.3**: Jeśli wybrano opcję częściowej układu podczas pierwszego utworzenia układu sieci, te ustawienia są zapisywane.  Dowolne polecenia przyszłych układu użyć poprzednie opcje, a także nowe opcje, które określisz. Ale jeśli używasz układu starszej wersji, należy użyć tego samego parametry wiersza polecenia, które były używane podczas pierwszego utworzenia instalacji układ sieci (innymi słowy, tego samego obciążenia i języków) aby zaktualizować swoją zawartość.
 
 Jeśli hostujesz układu w udziale plików, należy zaktualizować prywatną kopię układu (na przykład c:\vs2017offline) i następnie, po pobraniu wszystkich zaktualizowanej zawartości, skopiuj go do udziału plików (na przykład \\server\products\VS2017). Jeśli nie możesz tego zrobić, istnieje duże prawdopodobieństwo, że użytkownicy, którzy uruchom Instalatora, podczas gdy aktualizujesz układ może nie można pobrać całą zawartość z układu, ponieważ to nie jest jeszcze całkowicie aktualizowany.
 
-Przejdźmy teraz przez sposób tworzenia, a następnie zaktualizuj układu:
+Przejdźmy przez kilka przykładów sposobu tworzenia, a następnie zaktualizuj układu:
 
 * Po pierwsze poniżej przedstawiono przykład sposobu tworzenia układu z obciążeniem jeden dla angielskiego tylko:
 
@@ -58,7 +58,7 @@ Przejdźmy teraz przez sposób tworzenia, a następnie zaktualizuj układu:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* A na koniec, Oto jak dodać dodatkowe obciążenie i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenia ASP.NET i sieci Web).  Teraz obciążeń zarządzanego pulpitu, Azure, platformy ASP.NET i sieci Web znajdują się w tym układzie.  Zasoby języka na język angielski, niemiecki i francuski dostępne są również dla tych obciążeń.  Układ nie został jednak zaktualizowany do najnowszej dostępnej wersji podczas uruchomienia tego polecenia.  Pozostaje w istniejącą wersję.
+* A na koniec, Oto jak dodać dodatkowe obciążenie i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenia ASP.NET i sieci Web).  Teraz obciążeń zarządzanego pulpitu, Azure, platformy ASP.NET i sieci Web znajdują się w tym układzie. Zasoby języka na język angielski, niemiecki i francuski dostępne są również dla tych obciążeń.  Układ nie został jednak zaktualizowany do najnowszej dostępnej wersji podczas uruchomienia tego polecenia. Pozostaje w istniejącą wersję.
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

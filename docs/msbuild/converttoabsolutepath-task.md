@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f82d5d7936a9c5fd318804ea6ba9c5731da39c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14695cbfddc2f469d48bf78ee002f0582ef7f4bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068982"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604057"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath — zadanie
-Konwertuje ścieżka względna lub odwołania, na ścieżkę bezwzględną.  
-  
-## <a name="task-parameters"></a>Parametry zadania  
- W poniższej tabeli opisano parametry `ConvertToAbsolutePath` zadania.  
-  
-|Parametr|Opis|  
-|---------------|-----------------|  
-|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista ścieżki względne do przekonwertowania na ścieżek bezwzględnych.|  
-|`AbsolutePaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Lista ścieżek bezwzględnych dla elementów, które zostały przekazane.|  
-  
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+Konwertuje ścieżka względna lub odwołania, na ścieżkę bezwzględną.
+
+## <a name="task-parameters"></a>Parametry zadania
+ W poniższej tabeli opisano parametry `ConvertToAbsolutePath` zadania.
+
+|Parametr|Opis|
+|---------------|-----------------|
+|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista ścieżki względne do przekonwertowania na ścieżek bezwzględnych.|
+|`AbsolutePaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Lista ścieżek bezwzględnych dla elementów, które zostały przekazane.|
+
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

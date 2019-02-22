@@ -13,46 +13,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 868ee74ba01014514f5b6bec10fba0fc044f34e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ddbf430358dce0ac57dfe5ef36ff8e8861ea0ef8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928542"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645306"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Instrukcje: Porównywanie plików danych dotyczących wydajności
-Możesz porównać wyniki dwóch plików danych profilera różnych (. *Vsp* lub. *vsps*), tworząc porównania ("Diff"), raportu lub wyświetlić. Porównanie przedstawiono różnice największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.  
-  
- Raport Diff przedstawia widok tabeli danych. W tabeli przedstawiono, różnicowej lub zmiana z linii bazowej. To jest obliczana przez określenie różnicy starej wartości, wartość punktu odniesienia i wartość wyniku z nowego analizy.  
-  
- Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
-  
- Próg można ustawić do zmniejszenia szumu i odfiltrować wszystkie dane w widoku tabeli wiersze, które nie uległy zmianie o określoną wartość.  
-  
-### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Aby utworzyć widok pliku porównania dla projektu w Eksploratorze wydajności  
-  
-1.  W **Eksplorator wydajności**w obszarze **raporty**, wybierz opcję. *Vsp* lub. *vsps* plik raportu, który chcesz użyć jako wartości linii bazowej do porównania.  
-  
-2.  Wybierz opcję. *vsp* lub. *vsps* pliki, które chcesz porównać raportów.  
-  
-3.  Kliknij prawym przyciskiem myszy jeden z wybranych plików, a następnie kliknij przycisk **raporty porównaj**.  
-  
-### <a name="to-compare-values"></a>Do porównywania wartości  
-  
-1.  Wybierz **raport porównawczy** karta w oknie widoku raportu.  
-  
-2.  W **tabeli** listy rozwijanej wybierz funkcję lub moduły do porównania.  
-  
-3.  W **kolumny** listy rozwijanej wybierz wartość, którą chcesz porównać.  
-  
-4.  (opcjonalnie) Wpisz wartość dla **próg**.  
-  
-5.  Kliknij przycisk **zastosować**.  
-  
-### <a name="to-compare-report-files"></a>Porównywanie plików raportów  
-  
-1.  Na **analizy** menu, wybierz opcję **Porównaj wydajność raportów**.  
-  
-2.  W **wybierz pliki analizy porównanie** okien, przeglądania i wybierz **plik punktu odniesienia** pliku analizy (. *Vsp* lub. *vsps*) i **plik do porównania** (. *Vsp* lub. *vsps*).  
-  
+Możesz porównać wyniki dwóch plików danych profilera różnych (. *Vsp* lub. *vsps*), tworząc porównania ("Diff"), raportu lub wyświetlić. Porównanie przedstawiono różnice największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.
+
+ Raport Diff przedstawia widok tabeli danych. W tabeli przedstawiono, różnicowej lub zmiana z linii bazowej. To jest obliczana przez określenie różnicy starej wartości, wartość punktu odniesienia i wartość wyniku z nowego analizy.
+
+ Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.
+
+ Próg można ustawić do zmniejszenia szumu i odfiltrować wszystkie dane w widoku tabeli wiersze, które nie uległy zmianie o określoną wartość.
+
+### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Aby utworzyć widok pliku porównania dla projektu w Eksploratorze wydajności
+
+1.  W **Eksplorator wydajności**w obszarze **raporty**, wybierz opcję. *Vsp* lub. *vsps* plik raportu, który chcesz użyć jako wartości linii bazowej do porównania.
+
+2.  Wybierz opcję. *vsp* lub. *vsps* pliki, które chcesz porównać raportów.
+
+3.  Kliknij prawym przyciskiem myszy jeden z wybranych plików, a następnie kliknij przycisk **raporty porównaj**.
+
+### <a name="to-compare-values"></a>Do porównywania wartości
+
+1.  Wybierz **raport porównawczy** karta w oknie widoku raportu.
+
+2.  W **tabeli** listy rozwijanej wybierz funkcję lub moduły do porównania.
+
+3.  W **kolumny** listy rozwijanej wybierz wartość, którą chcesz porównać.
+
+4.  (opcjonalnie) Wpisz wartość dla **próg**.
+
+5.  Kliknij przycisk **zastosować**.
+
+### <a name="to-compare-report-files"></a>Porównywanie plików raportów
+
+1.  Na **analizy** menu, wybierz opcję **Porównaj wydajność raportów**.
+
+2.  W **wybierz pliki analizy porównanie** okien, przeglądania i wybierz **plik punktu odniesienia** pliku analizy (. *Vsp* lub. *vsps*) i **plik do porównania** (. *Vsp* lub. *vsps*).
+
 3.  Kliknij przycisk **OK**.

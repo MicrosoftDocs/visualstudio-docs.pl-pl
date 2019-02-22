@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402cd3840e78785ca9cda755b5e7e33e33d7db36
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999694"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642147"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Pobiera flagę wskazującą, czy sekcja nie powinien dopełniana do następnej granicy w pamięci.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_nopad(  
-   BOOL* pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` Jeśli sekcji nie powinna być o do następnej granicy pamięci; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Jest to właściwość, zazwyczaj występuje tylko w przypadku starszych wersji plików.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Pobiera flagę wskazującą, czy sekcja nie powinien dopełniana do następnej granicy w pamięci.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_nopad(
+   BOOL* pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` Jeśli sekcji nie powinna być o do następnej granicy pamięci; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Jest to właściwość, zazwyczaj występuje tylko w przypadku starszych wersji plików.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

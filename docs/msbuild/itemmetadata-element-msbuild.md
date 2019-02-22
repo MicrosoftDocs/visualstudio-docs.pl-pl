@@ -16,60 +16,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78be9b906efd9720d9bc7ccdbe09614899ef6818
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644318"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Itemmetadata — element (MSBuild)
-Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.  
+Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.
 
- \<Project>  
- \<ItemGroup>  
- \<Element >  
+ \<Projekt > \<ItemGroup > \<element >
 
-## <a name="syntax"></a>Składnia  
+## <a name="syntax"></a>Składnia
 
-```xml  
-<ItemMetadataName> Item Metadata value</ItemMetadataName>  
-```  
+```xml
+<ItemMetadataName> Item Metadata value</ItemMetadataName>
+```
 
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty  
+### <a name="attributes"></a>Atrybuty
 
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|  
+|Atrybut|Opis|
+|---------------|-----------------|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak.  
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak.
 
-### <a name="parent-elements"></a>Elementy nadrzędne  
+### <a name="parent-elements"></a>Elementy nadrzędne
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Element](../msbuild/item-element-msbuild.md)|Element zdefiniowany przez użytkownika, który definiuje dane wejściowe dla procesu kompilacji.|  
+|Element|Opis|
+|-------------|-----------------|
+|[Element](../msbuild/item-element-msbuild.md)|Element zdefiniowany przez użytkownika, który definiuje dane wejściowe dla procesu kompilacji.|
 
-## <a name="text-value"></a>Wartość tekstowa  
- Wartość tekstowa jest opcjonalna.  
+## <a name="text-value"></a>Wartość tekstowa
+ Wartość tekstowa jest opcjonalna.
 
- Ten tekst Określa wartość elementu metadanych, które mogą być tekstem lub XML.  
+ Ten tekst Określa wartość elementu metadanych, które mogą być tekstem lub XML.
 
-## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.  
+## <a name="example"></a>Przykład
+ W poniższym przykładzie kodu przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.
 
-```xml  
-<ItemGroup>  
-    <CSFile Include="main.cs" >  
-        <Culture>fr</Culture>  
-    </CSFile>  
-</ItemGroup>  
-```  
+```xml
+<ItemGroup>
+    <CSFile Include="main.cs" >
+        <Culture>fr</Culture>
+    </CSFile>
+</ItemGroup>
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Elementy](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementy](../msbuild/msbuild-items.md)

@@ -10,39 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878d4d7e56c51d8a41a0e3cf3e78d6c83ed5d0b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7770da734143b2b6185b266137eeb46ba25bd32a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027675"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640613"
 ---
 # <a name="file-tracking"></a>Śledzenie plików
-Śledzenie pliku rejestruje wywołania do Windows systemu plików dla procesu i jego procesów podrzędnych. Przez wywołanie funkcji wymienionych poniżej, programy kontrolują kiedy należy włączyć rejestrowanie i wyłączyć i określ plik dziennika do użycia.  
-  
- [EndTrackingContext](../msbuild/endtrackingcontext.md)  
- Zatrzymaj śledzenie bieżącego kontekstu.  
-  
- [ResumeTracking](../msbuild/resumetracking.md)  
- Wznów śledzenie po wywołaniu [SuspendTracking](../msbuild/suspendtracking.md).  
-  
- [SetThreadCount](../msbuild/setthreadcount.md)  
- Ustaw liczbę wątków używanych na potrzeby śledzenia.  
-  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)  
- Rozpocznij nowy kontekst śledzenia.  
-  
- [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md)  
- Rozpocznij nowy kontekst śledzenia z określonym katalogiem głównym.  
-  
- [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md)  
- Zakończenia śledzenia i zwolnienia zasobów używane.  
-  
- [SuspendTracking](../msbuild/suspendtracking.md)  
- Czasowo zawieszają śledzenie.  
-  
- [WriteAllTLogs](../msbuild/writealltlogs.md)  
- Zapisać dziennik śledzenia dla wszystkich kontekstów.  
-  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
- Zapisać dziennik śledzenia dla bieżącego kontekstu.
+Śledzenie pliku rejestruje wywołania do Windows systemu plików dla procesu i jego procesów podrzędnych. Przez wywołanie funkcji wymienionych poniżej, programy kontrolują kiedy należy włączyć rejestrowanie i wyłączyć i określ plik dziennika do użycia.
+
+- [EndTrackingContext](../msbuild/endtrackingcontext.md) Zatrzymaj śledzenie bieżącego kontekstu.
+
+- [ResumeTracking](../msbuild/resumetracking.md) Wznów śledzenie po wywołaniu [SuspendTracking](../msbuild/suspendtracking.md).
+
+- [SetThreadCount](../msbuild/setthreadcount.md) Ustaw liczbę wątków używanych na potrzeby śledzenia.
+
+- [StartTrackingContext](../msbuild/starttrackingcontext.md) Rozpocznij nowy kontekst śledzenia.
+
+- [StartTrackingContextWithRoot](../msbuild/starttrackingcontextwithroot.md) Rozpocznij nowy kontekst śledzenia z określonym katalogiem głównym.
+
+- [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md) zakończenia śledzenia i zwalnia zasoby używane.
+
+- [SuspendTracking](../msbuild/suspendtracking.md) czasowo zawieszają śledzenie.
+
+- [WriteAllTLogs](../msbuild/writealltlogs.md) zapisać dziennik śledzenia dla wszystkich kontekstów.
+
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md) zapisać dziennik śledzenia dla bieżącego kontekstu.

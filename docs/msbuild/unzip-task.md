@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883595eb6cd7565250de216bcae23eba86bf5074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f570009ad937e955853a616987a08583f2ba2237
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937026"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632410"
 ---
 # <a name="unzip-task"></a>Rozpakuj zadania
 Unzips *zip* archiwum do określonej lokalizacji.
 
 >[!NOTE]
 >`Unzip` Zadanie jest dostępne w MSBuild 15.8 i nowszym tylko.
-  
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `Unzip` zadania.  
-  
-|Parametr|Opis|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry `Unzip` zadania.
+
+|Parametr|Opis|
+|---------------|-----------------|
 |`DestinationFolder`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru<br /><br /> Określa folder docelowy, aby rozpakować plik.|
 |`OverwriteReadOnlyFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zastępuje pliki tylko do odczytu. Wartość domyślna to `false`.|
 |`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija Rozpakowywanie plików, które nie uległy zmianie. Wartość domyślna to `true`. Zadanie `Unzip` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji.|
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa jeden lub więcej plików do rozpakowania. Podczas określania wielu plików, są one rozpakowany w kolejności, w tym samym folderze.|
-  
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Przykład  
+
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Przykład
  Poniższy przykład unzips archiwum i zastępuje wszystkie pliki tylko do odczytu.
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="UnzipArchive" BeforeTargets="Build">
@@ -64,7 +64,7 @@ Unzips *zip* archiwum do określonej lokalizacji.
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Zobacz także  
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Zobacz także
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

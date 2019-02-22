@@ -12,38 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37236435204bc5fc5d7f971b1ecbf14ca628dd13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010431"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616563"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-Pobiera określoną liczbę strumieni debugowania w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Next (   
-   ULONG                     celt,   
-   IDiaEnumDebugStreamData** rgelt,  
-   ULONG*                    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba strumieni debugowania w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Zwraca tablicę [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektów, które reprezentuje debugowania strumieni, trwa pobieranie.  
-  
- pceltFetched  
- [out] Zwraca liczbę strumieni debugowania zwracane.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak więcej strumieni. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Pobiera określoną liczbę strumieni debugowania w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Next ( 
+   ULONG                     celt,
+   IDiaEnumDebugStreamData** rgelt,
+   ULONG*                    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba strumieni debugowania w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Zwraca tablicę [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektów, które reprezentuje debugowania strumieni, trwa pobieranie.
+
+ pceltFetched
+
+[out] Zwraca liczbę strumieni debugowania zwracane.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak więcej strumieni. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

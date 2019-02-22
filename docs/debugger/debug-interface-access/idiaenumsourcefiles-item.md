@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aafa4143551afdc6fc057d6c83cf1b08303ac9a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 403aa09a487ea1587ab30389f180afecec5ac6bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029534"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623544"
 ---
 # <a name="idiaenumsourcefilesitem"></a>IDiaEnumSourceFiles::Item
-Pobiera plik źródłowy, za pomocą indeksu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Item (   
-   DWORD            index,  
-   IDiaSourceFile** sourceFile  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- indeks  
- [in] Indeks elementu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumsourcefiles::get_count —](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) metody.  
-  
- sourceFile  
- [out] Zwraca [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt reprezentujący pliku odpowiednią źródła.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Pobiera plik źródłowy, za pomocą indeksu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Item ( 
+   DWORD            index,
+   IDiaSourceFile** sourceFile
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ indeks
+
+[in] Indeks elementu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumsourcefiles::get_count —](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md) metody.
+
+ sourceFile
+
+[out] Zwraca [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt reprezentujący pliku odpowiednią źródła.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -12,39 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a74a1d35128eb61c08d44fc430305a9ba7756c0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936544"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639937"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled — metoda
-Określa, czy dowolnej sesji ma włączone dostawcy.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-bool is_enabled();  
-bool is_enabled(  
-   marker_importance _Importance,  
-   int _Category  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `_Importance`  
- Poziom ważności.  
-  
- `_Category`  
- Kategoria.  
-  
-## <a name="return-value"></a>Wartość zwracana  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *cvmarkersobj.h*  
-  
- **Namespace:** CONCURRENCY::Diagnostic —  
-  
-## <a name="see-also"></a>Zobacz także  
- [marker_series, klasa](../profiling/marker-series-class.md)
+Określa, czy dowolnej sesji ma włączone dostawcy.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+bool is_enabled();
+bool is_enabled(
+   marker_importance _Importance,
+   int _Category
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `_Importance` Poziom ważności.
+
+ `_Category` Kategoria.
+
+## <a name="return-value"></a>Wartość zwracana
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *cvmarkersobj.h*
+
+ **Namespace:** CONCURRENCY::Diagnostic —
+
+## <a name="see-also"></a>Zobacz także
+- [marker_series, klasa](../profiling/marker-series-class.md)

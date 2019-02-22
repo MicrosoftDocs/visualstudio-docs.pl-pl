@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c11cc560be00bd51f8c5ebb35803240c5fbe8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbcfbfcd1e95a45388d0b7c0626f1cd529607ce4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925334"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613508"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Wskazuje, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_isAcceleratorStubFunction(   
-   BOOL* pFlag);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pFlag`  
- [out] Wskaźnik do `BOOL` oznacza to, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Wskazuje, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_isAcceleratorStubFunction(
+   BOOL* pFlag);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pFlag`
+
+[out] Wskaźnik do `BOOL` oznacza to, czy symbol odpowiada symbolowi funkcji najwyższego poziomu do programu do cieniowania, skompilowane dla akceleratora, który odpowiada `parallel_for_each` wywołania.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

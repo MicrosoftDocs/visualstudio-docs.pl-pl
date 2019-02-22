@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece73b97ec0129b2acd26c8751ab8b10909ee4ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632566"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppenum`  
- [out] Zwraca [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Wprowadzony źródeł nie są duplikowane, tylko moduł wyliczający.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumInjectedSources** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppenum`
+
+[out] Zwraca [idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Wprowadzony źródeł nie są duplikowane, tylko moduł wyliczający.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

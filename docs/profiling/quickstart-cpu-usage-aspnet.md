@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996210"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634061"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania 
-  
+##  <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
+
 1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `Simple` Konstruktor:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
-  
+
 1.  **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
 1.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
@@ -189,7 +189,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 
      Program profilujący rozpoczyna, przygotowywanie danych wątku. Poczekaj na zakończenie jego działania.
-  
+
      Narzędzie użycie procesora CPU wyświetla raport w **użycie procesora CPU** kartę.
 
      W tym momencie można rozpocząć analizy danych.
@@ -207,7 +207,7 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
 2. Na liście funkcji dwukrotnie kliknij `MyProfilingApp_MVC.Models.ServerClass::GetNumber` funkcji.
 
-    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** w okienku po lewej stronie zostanie otwarty widok. 
+    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** w okienku po lewej stronie zostanie otwarty widok.
 
     ![Widok wywołujący/wywoływany narzędzia do diagnostyki](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 - [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) uzyskać bardziej szczegółowe informacje na temat narzędzia użycie procesora CPU.
 - Analizowanie użycia procesora CPU bez debugera dołączone lub stosując uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchamianie narzędzi z lub bez debugera profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz także
 
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Profilowanie w programie Visual Studio](../profiling/index.md)
+- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

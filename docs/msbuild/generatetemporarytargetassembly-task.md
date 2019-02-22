@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610037"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Generatetemporarytargetassembly — zadanie
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadanie generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.
@@ -71,9 +71,9 @@ Poniższy przykład generuje zestaw tymczasowego, ponieważ *Page1.xaml* zawiera
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)  
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
-[Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

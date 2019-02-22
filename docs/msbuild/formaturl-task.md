@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d7edcf74399e6d511a50008ef7ce86e822bc14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6c8bc23a843112a234dad0dfc718937bebfe5aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979312"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629888"
 ---
 # <a name="formaturl-task"></a>FormatUrl — zadanie
-Konwertuje adres URL do poprawnego formatu adresu URL.  
-  
-## <a name="parameters"></a>Parametry  
- W poniższej tabeli opisano parametry `FormatUrl` zadania.  
-  
-|Parametr|Opis|  
-|---------------|-----------------|  
-|`InputUrl`|Opcjonalnie `String` parametru.<br /><br /> Określa adres URL do sformatowania.|  
-|`OutputUrl`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa sformatowanym adresem URL.|  
-  
-## <a name="remarks"></a>Uwagi  
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Zadania](../msbuild/msbuild-tasks.md)   
- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+Konwertuje adres URL do poprawnego formatu adresu URL.
+
+## <a name="parameters"></a>Parametry
+ W poniższej tabeli opisano parametry `FormatUrl` zadania.
+
+|Parametr|Opis|
+|---------------|-----------------|
+|`InputUrl`|Opcjonalnie `String` parametru.<br /><br /> Określa adres URL do sformatowania.|
+|`OutputUrl`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Określa sformatowanym adresem URL.|
+
+## <a name="remarks"></a>Uwagi
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

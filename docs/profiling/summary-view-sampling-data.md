@@ -11,45 +11,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6240846439cd966e461722a2cda18a20bbfb478
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b98dc1baa94b9df4039718695ebe26ebf59da46
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029196"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614454"
 ---
 # <a name="summary-view---sampling-data"></a>Widok podsumowania — dane próbkowania
-Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funkcji w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [Widok Podsumowanie](../profiling/summary-view.md).  
-  
+Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funkcji w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [Widok Podsumowanie](../profiling/summary-view.md).
+
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="timeline-graph"></a>Wykres osi czasu  
- Wykres osi czasu w widoku podsumowania przedstawia wartość procentową wykorzystania procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
-  
-## <a name="hot-path"></a>Ścieżka aktywna  
- **Ścieżka aktywna** wyświetla to ścieżka wykonania, w którym większość próbek. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.  
-  
- **Ścieżka aktywna** zawiera następujące dane dotyczące każdej funkcji:  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Nazwa**|Nazwa funkcji.|  
-|**% Włącznych próbek**|Procent wszystkie przykłady, które wystąpiły podczas wykonywania tej funkcji i funkcji wywoływanych przez tę funkcję.|  
-|**% Wyłącznych próbek**|Procent wszystkie przykłady, które wystąpiły podczas wykonywania kodu funkcji w treści funkcji. Przykłady zebrane w funkcjach wywoływanych przez tę funkcję, nie są uwzględniane.|  
-  
-## <a name="functions-doing-most-individual-work"></a>Funkcje wykonujące najwięcej indywidualnej pracy  
- **Funkcji wykonywania najbardziej samodzielnej pracy** lista zawiera funkcje, które mają największą liczbę próbek wyłącznych podczas uruchomienia profilowania. Próbek wyłącznych jest przypisany do funkcji, jeśli funkcja jest wykonywana swój własny kod w momencie próbki zostały zebrane. Próbek wyłącznych nie jest przypisany do funkcji, jeśli funkcja wywołuje inną funkcję, gdy zostały zebrane próbki. Duża liczba próbek wyłącznych wskazuje, że znaczną ilość czasu spędzono w samej funkcji.  
-  
- Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.  
-  
- **Działa w sposób najbardziej samodzielnej pracy** zawiera następujące dane dotyczące każdej funkcji:  
-  
-|Kolumna|Opis|  
-|------------|-----------------|  
-|**Nazwa**|Nazwa funkcji.|  
-|**% Wyłącznych próbek**|Procent wszystkich przykładów podczas uruchomienia profilowania, które zostały zebrane podczas wykonywania kodu funkcji w jego treści funkcji. Wartość procentowa wyklucza przykładów, które zostały zebrane podczas wykonywania zostały funkcje, które wywołuje tę funkcję.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok podsumowania - dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)   
- [Widok podsumowania - dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
+>  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="timeline-graph"></a>Wykres osi czasu
+ Wykres osi czasu w widoku podsumowania przedstawia wartość procentową wykorzystania procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+
+## <a name="hot-path"></a>Ścieżka aktywna
+ **Ścieżka aktywna** wyświetla to ścieżka wykonania, w którym większość próbek. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.
+
+ **Ścieżka aktywna** zawiera następujące dane dotyczące każdej funkcji:
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Nazwa**|Nazwa funkcji.|
+|**% Włącznych próbek**|Procent wszystkie przykłady, które wystąpiły podczas wykonywania tej funkcji i funkcji wywoływanych przez tę funkcję.|
+|**% Wyłącznych próbek**|Procent wszystkie przykłady, które wystąpiły podczas wykonywania kodu funkcji w treści funkcji. Przykłady zebrane w funkcjach wywoływanych przez tę funkcję, nie są uwzględniane.|
+
+## <a name="functions-doing-most-individual-work"></a>Funkcje wykonujące najwięcej indywidualnej pracy
+ **Funkcji wykonywania najbardziej samodzielnej pracy** lista zawiera funkcje, które mają największą liczbę próbek wyłącznych podczas uruchomienia profilowania. Próbek wyłącznych jest przypisany do funkcji, jeśli funkcja jest wykonywana swój własny kod w momencie próbki zostały zebrane. Próbek wyłącznych nie jest przypisany do funkcji, jeśli funkcja wywołuje inną funkcję, gdy zostały zebrane próbki. Duża liczba próbek wyłącznych wskazuje, że znaczną ilość czasu spędzono w samej funkcji.
+
+ Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.
+
+ **Działa w sposób najbardziej samodzielnej pracy** zawiera następujące dane dotyczące każdej funkcji:
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Nazwa**|Nazwa funkcji.|
+|**% Wyłącznych próbek**|Procent wszystkich przykładów podczas uruchomienia profilowania, które zostały zebrane podczas wykonywania kodu funkcji w jego treści funkcji. Wartość procentowa wyklucza przykładów, które zostały zebrane podczas wykonywania zostały funkcje, które wywołuje tę funkcję.|
+
+## <a name="see-also"></a>Zobacz także
+- [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)
+- [Widok podsumowania - dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)

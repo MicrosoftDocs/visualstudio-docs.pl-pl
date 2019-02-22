@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4172516ebfdd39dc7504a81c8698337c9d84d5a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041883"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639664"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Komentarz kodu w starszej wersji usługi językowej
-Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze kodu. Komentarz to sekcja tekst, który zawiera dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji.  
-  
- Pakiet zarządzanych klas framework (MPF) zapewniają obsługę komentowania i Trwa usuwanie komentarza do zaznaczonego tekstu.  
-  
-## <a name="comment-styles"></a>Style komentarz  
-Istnieją dwa ogólne style komentarza:  
-   
-1.  Komentarze wiersza, gdzie jest komentarz w jednym wierszu.  
-  
-2.  Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.  
-  
+Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze kodu. Komentarz to sekcja tekst, który zawiera dodatkowe informacje o kodzie, ale jest ignorowany podczas kompilacji lub interpretacji.
 
-Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od `//`, i zaczyna się komentarza blokowego `/*` i kończy `*/`.  
-  
-Gdy użytkownik wybierze polecenie **Dodaj komentarz do zaznaczenia** z **Edytuj** > **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **Usuń komentarz zaznaczenia**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.  
-  
-## <a name="support-code-comments"></a>Komentarze w kodzie obsługi  
- Możesz mieć swoje komentarze kodu języka usługi pomocy technicznej przez `EnableCommenting` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Aby uzyskać więcej informacji o ustawianiu funkcje usługi w języka, zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md).  
-  
- Konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metodę, aby zwrócić <xref:Microsoft.VisualStudio.Package.CommentInfo> strukturę znaki komentarza dla danego języka. C# — znaków komentarza wierszu stylu są domyślne.  
-  
-### <a name="example"></a>Przykład  
- Poniżej przedstawiono przykład implementacji <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metody.  
-  
-```csharp  
-using Microsoft.VisualStudio.Package;  
-  
-namespace MyLanguagePackage  
-{  
-    class MySource : Source  
-    {  
-        public override CommentInfo GetCommentFormat() {  
-            CommentInfo info = new CommentInfo();  
-            info.LineStart       = "//";  
-            info.BlockStart      = "/*";  
-            info.BlockEnd        = "*/";  
-            info.UseLineComments = true;  
-            return info;  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)
+ Pakiet zarządzanych klas framework (MPF) zapewniają obsługę komentowania i Trwa usuwanie komentarza do zaznaczonego tekstu.
+
+## <a name="comment-styles"></a>Style komentarz
+Istnieją dwa ogólne style komentarza:
+
+1.  Komentarze wiersza, gdzie jest komentarz w jednym wierszu.
+
+2.  Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.
+
+
+Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od `//`, i zaczyna się komentarza blokowego `/*` i kończy `*/`.
+
+Gdy użytkownik wybierze polecenie **Dodaj komentarz do zaznaczenia** z **Edytuj** > **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **Usuń komentarz zaznaczenia**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.
+
+## <a name="support-code-comments"></a>Komentarze w kodzie obsługi
+ Możesz mieć swoje komentarze kodu języka usługi pomocy technicznej przez `EnableCommenting` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Aby uzyskać więcej informacji o ustawianiu funkcje usługi w języka, zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md).
+
+ Konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metodę, aby zwrócić <xref:Microsoft.VisualStudio.Package.CommentInfo> strukturę znaki komentarza dla danego języka. C# — znaków komentarza wierszu stylu są domyślne.
+
+### <a name="example"></a>Przykład
+ Poniżej przedstawiono przykład implementacji <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> metody.
+
+```csharp
+using Microsoft.VisualStudio.Package;
+
+namespace MyLanguagePackage
+{
+    class MySource : Source
+    {
+        public override CommentInfo GetCommentFormat() {
+            CommentInfo info = new CommentInfo();
+            info.LineStart       = "//";
+            info.BlockStart      = "/*";
+            info.BlockEnd        = "*/";
+            info.UseLineComments = true;
+            return info;
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)
+- [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)

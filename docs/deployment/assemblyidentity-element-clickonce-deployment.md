@@ -16,56 +16,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ebe08584e3be85b38778276c7876a6394d2cef1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043157"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608347"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; — element (wdrażanie ClickOnce)
-Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-  
-      <assemblyIdentity    
-   name   
-   version  
-   publicKeyToken  
-   processorArchitecture  
-    type  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `assemblyIdentity` Element jest wymagany. Go nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`name`|Wymagana. Identyfikuje zrozumiałą nazwę wdrożenia w celach informacyjnych.<br /><br /> Jeśli `name` zawiera znaki specjalne, takie jak pojedynczym lub podwójnym cudzysłowie, aplikacja może zakończyć się niepowodzeniem do aktywowania.|  
-|`version`|Wymagana. Określa numer wersji zestawu, w następującym formacie: `major.minor.build.revision`.<br /><br /> Ta wartość muszą być zwiększane w manifeście zaktualizowane w celu wyzwolenia aktualizacji aplikacji.|  
-|`publicKeyToken`|Wymagana. Określa ciąg szesnastkowy 16-znakowy, który reprezentuje ostatnie 8 bajtów wartości skrótu SHA-1 klucza publicznego, w ramach której manifest wdrożenia jest podpisany. Klucz publiczny, który jest używany do podpisywania musi wynosić 2048 bitów lub nowszej.<br /><br /> Mimo że zaleca się podpisywanie zestawu, ale opcjonalny, ten atrybut jest wymagany. Jeśli zestaw jest podpisany, możesz Kopiowanie wartości z podpisem własnym zestawu lub użyj wartości "fikcyjny" samych zer.|  
-|`processorArchitecture`|Wymagana. Określa procesor. Prawidłowe wartości to `msil` dla wszystkich procesorów `x86` dla Windows 32-bitowych `IA64` dla Windows 64-bitowych i `Itanium` dla procesorów Intel 64-bitowych procesorach Itanium.|  
-|`type`|Wymagana. Dla zachowania zgodności z technologii side-by-side instalacji Windows. Jest to jedyna wartość dozwolone `win32`.|  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie kodu pokazano `assemblyIdentity` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.  
-  
-```xml  
-<!-- Identify the deployment. -->  
-<assemblyIdentity   
-  name="My Application Deployment.app"  
-  version="1.0.0.0"  
-  publicKeyToken="43cb1e8e7a352766"  
-  language="neutral"  
-  processorArchitecture="x86"  
-  xmlns="urn:schemas-microsoft-com:asm.v1" />  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<assemblyIdentity > element](../deployment/assemblyidentity-element-clickonce-application.md)
+Określa podstawowy zestaw z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+
+      <assemblyIdentity  
+   name 
+   version
+   publicKeyToken
+   processorArchitecture
+    type
+/>
+```
+
+## <a name="elements-and-attributes"></a>Atrybuty i elementy
+ `assemblyIdentity` Element jest wymagany. Go nie zawiera żadnych elementów podrzędnych i ma następujące atrybuty.
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|`name`|Wymagana. Identyfikuje zrozumiałą nazwę wdrożenia w celach informacyjnych.<br /><br /> Jeśli `name` zawiera znaki specjalne, takie jak pojedynczym lub podwójnym cudzysłowie, aplikacja może zakończyć się niepowodzeniem do aktywowania.|
+|`version`|Wymagana. Określa numer wersji zestawu, w następującym formacie: `major.minor.build.revision`.<br /><br /> Ta wartość muszą być zwiększane w manifeście zaktualizowane w celu wyzwolenia aktualizacji aplikacji.|
+|`publicKeyToken`|Wymagana. Określa ciąg szesnastkowy 16-znakowy, który reprezentuje ostatnie 8 bajtów wartości skrótu SHA-1 klucza publicznego, w ramach której manifest wdrożenia jest podpisany. Klucz publiczny, który jest używany do podpisywania musi wynosić 2048 bitów lub nowszej.<br /><br /> Mimo że zaleca się podpisywanie zestawu, ale opcjonalny, ten atrybut jest wymagany. Jeśli zestaw jest podpisany, możesz Kopiowanie wartości z podpisem własnym zestawu lub użyj wartości "fikcyjny" samych zer.|
+|`processorArchitecture`|Wymagana. Określa procesor. Prawidłowe wartości to `msil` dla wszystkich procesorów `x86` dla Windows 32-bitowych `IA64` dla Windows 64-bitowych i `Itanium` dla procesorów Intel 64-bitowych procesorach Itanium.|
+|`type`|Wymagana. Dla zachowania zgodności z technologii side-by-side instalacji Windows. Jest to jedyna wartość dozwolone `win32`.|
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie kodu pokazano `assemblyIdentity` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. Ten przykład kodu jest częścią większego przykładu przewidzianego dla [manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md) tematu.
+
+```xml
+<!-- Identify the deployment. -->
+<assemblyIdentity
+  name="My Application Deployment.app"
+  version="1.0.0.0"
+  publicKeyToken="43cb1e8e7a352766"
+  language="neutral"
+  processorArchitecture="x86"
+  xmlns="urn:schemas-microsoft-com:asm.v1" />
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+- [\<assemblyIdentity > element](../deployment/assemblyidentity-element-clickonce-application.md)

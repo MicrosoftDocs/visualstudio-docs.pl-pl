@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600966"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Tworzenie wielu projektów wykonywane równolegle za pomocą narzędzia MSBuild
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:
@@ -70,6 +70,6 @@ Oto przykład, pobrany z *microsoft.common.targets*, jak ustawić `BuildInParall
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Użycie wielu procesorów w projektach kompilacji](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Zapis procesorów uwzględniających rejestratorów](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Dostrajanie blogu równoległości kompilacji C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Użycie wielu procesorów w projektach kompilacji](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Zapis procesorów uwzględniających rejestratorów](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Dostrajanie blogu równoległości kompilacji C++](http://go.microsoft.com/fwlink/?LinkId=251457)

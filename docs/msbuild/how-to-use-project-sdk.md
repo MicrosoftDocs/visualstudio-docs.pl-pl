@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020597"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638182"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: Korzystanie z zestawów SDK projektu MSBuild
 
@@ -94,7 +94,7 @@ Podczas obliczania wartości projektu [!INCLUDE[vstecmsbuild](../extensibility/i
 Podczas obliczania importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicznie jest rozpoznawana jako ścieżkę projektu zestawu SDK na podstawie nazwy i wersji określonego.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera również listę zarejestrowanych mechanizmów rozpoznawania zestawu SDK, będące wtyczek, które zlokalizować projektu zestawy SDK na maszynie.  Te dodatki obejmują:
 
 1. Rozpoznawania oparte na pakietach NuGet, który odpytuje skonfigurowanego pakietu źródła pakietów NuGet, zgodne z Identyfikatorem i wersją zestawu SDK określonej.<br/>
-   Ten mechanizm rozpoznawania jest aktywny tylko wtedy, jeśli określona wersja opcjonalne i może służyć do niestandardowego zestawu SDK projektu.  
+   Ten mechanizm rozpoznawania jest aktywny tylko wtedy, jeśli określona wersja opcjonalne i może służyć do niestandardowego zestawu SDK projektu.
 2. Mechanizm rozpoznawania do wiersza polecenia platformy .NET, który jest rozpoznawany jako zestawy SDK, które są instalowane przy użyciu interfejsu wiersza polecenia platformy .NET.<br/>
    Ten mechanizm rozpoznawania lokalizuje zestawy SDK projektu, takich jak `Microsoft.NET.Sdk` i `Microsoft.NET.Sdk.Web` będące częścią produktu.
 3. Mechanizm rozpoznawania do domyślnego, który jest rozpoznawany jako zestawy SDK, które zostały zainstalowane za pomocą narzędzia MSBuild.
@@ -110,11 +110,11 @@ Program rozpoznawania nazw oparty na pakietach NuGet zestawu SDK obsługuje okre
 }
 ```
 
-Tylko jedną wersję każdego projektu, zestaw SDK może służyć podczas kompilacji.  Jeśli odwołujesz się dwie różne wersje tego samego zestawu SDK projektu, program MSBuild będzie emituje ostrzeżenia.  Zaleca się **nie** Określ wersję w projektach, jeśli określono wersję w swojej *global.json*.  
+Tylko jedną wersję każdego projektu, zestaw SDK może służyć podczas kompilacji.  Jeśli odwołujesz się dwie różne wersje tego samego zestawu SDK projektu, program MSBuild będzie emituje ostrzeżenia.  Zaleca się **nie** Określ wersję w projektach, jeśli określono wersję w swojej *global.json*.
 
 ## <a name="see-also"></a>Zobacz także
 
- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [Dostosowywanie kompilacji](../msbuild/customize-your-build.md)   
- [Pakiety, metadane i platform](/dotnet/core/packages)   
- [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Dostosowywanie kompilacji](../msbuild/customize-your-build.md)
+- [Pakiety, metadane i platform](/dotnet/core/packages)
+- [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj)

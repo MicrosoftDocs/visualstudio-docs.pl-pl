@@ -21,44 +21,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023723"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629524"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;wdrożenie&gt; — element (wdrażanie ClickOnce)
-Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie na system.  
+Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie na system.
 
-## <a name="syntax"></a>Składnia  
+## <a name="syntax"></a>Składnia
 
-```xml  
+```xml
 
-      <deployment   
-   install  
-   minimumRequiredVersion  
-   mapFileExtensions  
-   disallowUrlActivation  
-   trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
-            <expiration  
-               maximumAge  
-               unit  
-            />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
-</deployment>  
-```  
+      <deployment
+   install
+   minimumRequiredVersion
+   mapFileExtensions
+   disallowUrlActivation
+   trustUrlParameters
+>
+   <subscription>
+         <update>
+            <beforeApplicationStartup/>
+            <expiration
+               maximumAge
+               unit
+            />
+         </update>
+   </subscription>
+   <deploymentProvider
+      codebase
+   />
+</deployment>
+```
 
-## <a name="elements-and-attributes"></a>Atrybuty i elementy  
- `deployment` Element jest wymagany i znajduje się w `urn:schemas-microsoft-com:asm.v1` przestrzeni nazw. Element ma następujące atrybuty.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy
+ `deployment` Element jest wymagany i znajduje się w `urn:schemas-microsoft-com:asm.v1` przestrzeni nazw. Element ma następujące atrybuty.
 
 
 | Atrybut | Opis |
@@ -69,59 +69,59 @@ Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie 
 | `disallowUrlActivation` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, uniemożliwia zainstalowanej aplikacji po uruchomieniu, klikając adres URL lub wprowadzić adres URL w programie Internet Explorer. Jeśli `install` atrybut nie jest obecny, atrybut ten jest ignorowany. |
 | `trustURLParameters` | Opcjonalna. Wartość domyślna to `false`. Jeśli `true`, zezwala na adres URL, aby zawierać parametrów ciągu zapytania, które są przekazywane do aplikacji, wiele podobnych argumenty wiersza polecenia są przekazywane do wiersza polecenia aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie Online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Jeśli `disallowUrlActivation` atrybut jest `true`, `trustUrlParameters` być wykluczone z manifestu, lub jawnie ustawione na `false`. |
 
- `deployment` Element zawiera także następujących elementów podrzędnych.  
+ `deployment` Element zawiera także następujących elementów podrzędnych.
 
-## <a name="subscription"></a>subskrypcja  
- Opcjonalna. Zawiera `update` elementu. `subscription` Element nie ma żadnych atrybutów. Jeśli `subscription` element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji nigdy nie rozpocznie skanowanie aktualizacji. Jeśli `install` atrybutu `deployment` element jest `false`, `subscription` element jest ignorowany, ponieważ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, który jest zawsze uruchamiany z sieci korzysta z najnowszej wersji.  
+## <a name="subscription"></a>subskrypcja
+ Opcjonalna. Zawiera `update` elementu. `subscription` Element nie ma żadnych atrybutów. Jeśli `subscription` element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji nigdy nie rozpocznie skanowanie aktualizacji. Jeśli `install` atrybutu `deployment` element jest `false`, `subscription` element jest ignorowany, ponieważ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, który jest zawsze uruchamiany z sieci korzysta z najnowszej wersji.
 
-## <a name="update"></a>Aktualizacja  
- Wymagana. Ten element jest elementem podrzędnym `subscription` elementu i zawierają dowolne `beforeApplicationStartup` lub `expiration` elementu. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia.  
+## <a name="update"></a>Aktualizacja
+ Wymagana. Ten element jest elementem podrzędnym `subscription` elementu i zawierają dowolne `beforeApplicationStartup` lub `expiration` elementu. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia.
 
- `update` Element nie ma żadnych atrybutów.  
+ `update` Element nie ma żadnych atrybutów.
 
-## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Opcjonalna. Ten element jest elementem podrzędnym `update` elementu i nie ma żadnych atrybutów. Gdy `beforeApplicationStartup` element istnieje, że aplikacja będzie zablokowana, gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sprawdza dostępność aktualizacji, jeśli klient jest w trybie online. Jeśli ten element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] najpierw rozpocznie skanowanie aktualizacji, na podstawie wartości określone dla `expiration` elementu. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia.  
+## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
+ Opcjonalna. Ten element jest elementem podrzędnym `update` elementu i nie ma żadnych atrybutów. Gdy `beforeApplicationStartup` element istnieje, że aplikacja będzie zablokowana, gdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sprawdza dostępność aktualizacji, jeśli klient jest w trybie online. Jeśli ten element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] najpierw rozpocznie skanowanie aktualizacji, na podstawie wartości określone dla `expiration` elementu. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia.
 
-## <a name="expiration"></a>wygaśnięcie  
- Opcjonalna. Ten element jest elementem podrzędnym `update` elementu, a nie ma elementów podrzędnych. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia. Gdy sprawdzanie aktualizacji jest wykonywane, i jest dostępna zaktualizowana wersja zostanie wykryte, nowa wersja zapisuje w pamięci podręcznej podczas uruchamiania istniejącą wersję. Następnie zainstalowaniu nowej wersji przy następnym uruchomieniu programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+## <a name="expiration"></a>wygaśnięcie
+ Opcjonalna. Ten element jest elementem podrzędnym `update` elementu, a nie ma elementów podrzędnych. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia. Gdy sprawdzanie aktualizacji jest wykonywane, i jest dostępna zaktualizowana wersja zostanie wykryte, nowa wersja zapisuje w pamięci podręcznej podczas uruchamiania istniejącą wersję. Następnie zainstalowaniu nowej wersji przy następnym uruchomieniu programu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.
 
- `expiration` Element obsługuje następujące atrybuty.  
+ `expiration` Element obsługuje następujące atrybuty.
 
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`maximumAge`|Wymagana. Określa, ile lat bieżącej aktualizacji powinna stać się przed aplikacja wykonuje sprawdzenie dostępności aktualizacji. Jednostka czasu jest określany przez `unit` atrybutu.|  
-|`unit`|Wymagana. Określa jednostkę czasu `maximumAge`. Prawidłowe jednostki są `hours`, `days`, i `weeks`.|  
+|Atrybut|Opis|
+|---------------|-----------------|
+|`maximumAge`|Wymagana. Określa, ile lat bieżącej aktualizacji powinna stać się przed aplikacja wykonuje sprawdzenie dostępności aktualizacji. Jednostka czasu jest określany przez `unit` atrybutu.|
+|`unit`|Wymagana. Określa jednostkę czasu `maximumAge`. Prawidłowe jednostki są `hours`, `days`, i `weeks`.|
 
-## <a name="deploymentprovider"></a>deploymentProvider  
- Dla programu .NET Framework 2.0, ten element jest wymagany, jeśli manifest wdrożenia zawiera `subscription` sekcji. Programu .NET Framework 3.5 lub nowszy ten element jest opcjonalny i domyślnie do serwera i ścieżki pliku, w którym zostało wykryte manifestu wdrażania.  
+## <a name="deploymentprovider"></a>deploymentProvider
+ Dla programu .NET Framework 2.0, ten element jest wymagany, jeśli manifest wdrożenia zawiera `subscription` sekcji. Programu .NET Framework 3.5 lub nowszy ten element jest opcjonalny i domyślnie do serwera i ścieżki pliku, w którym zostało wykryte manifestu wdrażania.
 
- Ten element jest elementem podrzędnym `deployment` elementu i ma następujący atrybut.  
+ Ten element jest elementem podrzędnym `deployment` elementu i ma następujący atrybut.
 
 
 | Atrybut | Opis |
 |------------| - |
 | `codebase` | Wymagana. Określa lokalizację, jako jednolity identyfikator zasobów (URI), manifest wdrożenia, który służy do aktualizowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Ten element umożliwia również przekazywanie lokalizacji aktualizacji do instalacji na dysku CD. Musi być prawidłowym identyfikatorem URI. |
 
-## <a name="remarks"></a>Uwagi  
- Można skonfigurować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w celu skanowania w poszukiwaniu aktualizacji uruchamianie skanowania w poszukiwaniu aktualizacji po uruchomieniu lub nigdy nie sprawdzaj, czy są aktualizacje. Do skanowania w poszukiwaniu aktualizacji podczas uruchamiania, upewnij się, że `beforeApplicationStartup` element istnieje w ramach `update` elementu. Do skanowania w poszukiwaniu aktualizacji po uruchomieniu, upewnij się, że `expiration` element istnieje w ramach `update` elementu, a podano interwały aktualizacji.  
+## <a name="remarks"></a>Uwagi
+ Można skonfigurować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w celu skanowania w poszukiwaniu aktualizacji uruchamianie skanowania w poszukiwaniu aktualizacji po uruchomieniu lub nigdy nie sprawdzaj, czy są aktualizacje. Do skanowania w poszukiwaniu aktualizacji podczas uruchamiania, upewnij się, że `beforeApplicationStartup` element istnieje w ramach `update` elementu. Do skanowania w poszukiwaniu aktualizacji po uruchomieniu, upewnij się, że `expiration` element istnieje w ramach `update` elementu, a podano interwały aktualizacji.
 
- Aby wyłączyć sprawdzanie dostępności aktualizacji, należy usunąć `subscription` elementu. Po określeniu w pliku manifestu wdrożenia, aby nigdy nie skanowanie w poszukiwaniu aktualizacji, możesz nadal ręcznie sprawdzić aktualizacje za pomocą <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> metody.  
+ Aby wyłączyć sprawdzanie dostępności aktualizacji, należy usunąć `subscription` elementu. Po określeniu w pliku manifestu wdrożenia, aby nigdy nie skanowanie w poszukiwaniu aktualizacji, możesz nadal ręcznie sprawdzić aktualizacje za pomocą <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> metody.
 
- Aby uzyskać więcej informacji na temat sposobu deploymentProvider odnosi się do aktualizacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Aby uzyskać więcej informacji na temat sposobu deploymentProvider odnosi się do aktualizacji, zobacz [Wybieranie strategii aktualizacji ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
-## <a name="examples"></a>Przykłady  
- W poniższym przykładzie kodu pokazano `deployment` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. W przykładzie użyto `deploymentProvider` element, aby wskazać lokalizację preferowanego aktualizacji.  
+## <a name="examples"></a>Przykłady
+ W poniższym przykładzie kodu pokazano `deployment` element [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. W przykładzie użyto `deploymentProvider` element, aby wskazać lokalizację preferowanego aktualizacji.
 
-```xml  
-<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="6" unit="hours" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />  
-  </deployment>  
-```  
+```xml
+<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="6" unit="hours" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />
+  </deployment>
+```
 
-## <a name="see-also"></a>Zobacz także  
- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Zobacz także
+- [Manifest wdrażania ClickOnce](../deployment/clickonce-deployment-manifest.md)

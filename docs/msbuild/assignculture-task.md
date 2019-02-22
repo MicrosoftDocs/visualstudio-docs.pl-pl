@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 980a9c49ee801af0caf45ecd6123c6af3e26f1ae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615251"
 ---
 # <a name="assignculture-task"></a>AssignCulture — zadanie
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kulturze identyfikatora. Na przykład, nazwa_pliku *Form1.fr-fr.resx* ma identyfikator "fr-fr", embedded kultury, dlatego to zadanie powoduje wygenerowanie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie tworzy także listę nazw plików z kulturą usunięte z nazwy pliku.
@@ -78,5 +78,5 @@ W poniższej tabeli opisano wartości elementów danych wyjściowych po wykonani
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (kultury = "fr")<br /><br /> *MyResource2.XX.resx* (nie dodatkowe metadane)|
 
 ## <a name="see-also"></a>Zobacz także
-[Zadania](../msbuild/msbuild-tasks.md)  
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

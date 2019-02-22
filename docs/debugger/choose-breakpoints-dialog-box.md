@@ -21,24 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2fe6b19312714815efc1e499bf89eacdaaff67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992584"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637038"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Wybierz punkty przerwania — okno dialogowe
-**Wybierz punkty przerwania** zostanie otwarte okno dialogowe, gdy użytkownik próbuje ustawić punkt przerwania z niejednoznaczne wejścia w **nowego punktu przerwania** okno dialogowe. Typowym przykładem niejednoznacznego wejścia jest nazwa funkcji przeładowanej.  
-  
- **Punkty przerwania**  
- Wskazuje możliwe punkty przerwania, które mogą być ustawione na podstawie niejednoznaczne dane wejściowe. Można wybrać jeden lub więcej punktów przerwania do ustawienia.  
-  
- **Wszystkie**  
- Zaznacza wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
-  
- **Brak**  
- Czyści wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Używanie punktów przerwania](../debugger/using-breakpoints.md)
+**Wybierz punkty przerwania** zostanie otwarte okno dialogowe, gdy użytkownik próbuje ustawić punkt przerwania z niejednoznaczne wejścia w **nowego punktu przerwania** okno dialogowe. Typowym przykładem niejednoznacznego wejścia jest nazwa funkcji przeładowanej.
+
+ **Punkty przerwania** zawiera listę możliwych punktów przerwania, które może być ustawiona na podstawie niejednoznaczne dane wejściowe. Można wybrać jeden lub więcej punktów przerwania do ustawienia.
+
+ **Wszystkie** zaznacza wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.
+
+ **Brak** czyści wszystkie punkty przerwania, wymienione w **punktów przerwania** pole.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Używanie punktów przerwania](../debugger/using-breakpoints.md)

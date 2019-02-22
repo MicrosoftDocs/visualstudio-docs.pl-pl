@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21678dd573030076d7248dfb7bbf47ea412cecae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626508"
 ---
 # <a name="assigntargetpath-task"></a>Assigntargetpath — zadanie
 To zadanie akceptuje listę plików i dodaje `<TargetPath>` atrybuty, jeśli nie są już określone.
@@ -52,5 +52,5 @@ RootFolder="Resources"
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Zadania](../msbuild/msbuild-tasks.md)  
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

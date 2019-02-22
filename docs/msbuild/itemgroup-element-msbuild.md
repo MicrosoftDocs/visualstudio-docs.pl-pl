@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64667ef01d1b21cce8303e2f72be3f252ec4245e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910002"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595870"
 ---
 # <a name="itemgroup-element-msbuild"></a>Itemgroup — element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Każdy element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `ItemGroup` elementu.
 
-\<Project>  
-\<ItemGroup>
+\<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>Składnia
 
@@ -83,6 +82,6 @@ Poniższy przykład kodu pokazuje kolekcji elementów zdefiniowanych przez użyt
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)  
-[Elementy](../msbuild/msbuild-items.md)  
-[Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Elementy](../msbuild/msbuild-items.md)
+- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)

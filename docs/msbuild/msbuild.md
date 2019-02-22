@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069866"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618240"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również znany jako MSBuild, dostarcza schemat XML pliku projektu, który kontroluje, jak platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa MSBuild, ale go nie są zależne od programu Visual Studio. Za pomocą wywołania *msbuild.exe* w pliku projektu lub rozwiązania organizowania i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.
@@ -183,6 +183,6 @@ Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-m
 | [Dodatkowe zasoby](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Wyświetla listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji na temat programu MSBuild. |
 
 ## <a name="reference"></a>Tematy pomocy
- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md) łącza do tematów, które zawierają informacje referencyjne.
+- [Odwołanie do MSBuild](../msbuild/msbuild-reference.md) łącza do tematów, które zawierają informacje referencyjne.
 
- [Słownik](msbuild-glossary.md) definiuje typowe terminy programu MSBuild.
+- [Słownik](msbuild-glossary.md) definiuje typowe terminy programu MSBuild.

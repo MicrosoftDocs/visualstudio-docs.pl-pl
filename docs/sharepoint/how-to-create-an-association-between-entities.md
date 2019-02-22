@@ -21,56 +21,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1870d8965947c1ee8adce5b7839c732d2d590daa
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867975"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645124"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Instrukcje: Tworzenie skojarzenia między jednostkami
-  Możesz zdefiniować relacje między jednostkami w modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metody udostępniające odbiorcy modelu informacje na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, list lub niestandardowych aplikacji do wyświetlania relacji między danymi w interfejsie użytkownika (UI).  
-  
- Można tworzyć dwa typy skojarzeń w Projektancie usługi łączności danych biznesowych: obcego skojarzenia opartego na kluczach i skojarzenia bez kluczy obcych. Aby uzyskać więcej informacji, zobacz [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).  
-  
-### <a name="to-create-an-association-between-entities"></a>Aby utworzyć skojarzenia między jednostkami  
-  
-1.  Na **BusinessDataConnectivity** karcie **przybornika**, wybierz **skojarzenia** elementu.  
-  
-2.  W Projektancie usługi łączności danych biznesowych wybierz jednostki źródłowej, a następnie wybierz jednostki docelowej.  
-  
-     **Edytor skojarzeń** pojawia się.  
-  
-3.  Aby utworzyć skojarzenie opartego na kluczach obcych, należy zaznaczyć **jest skojarzeniem klucza obcego** pole wyboru.  
-  
-    1.  W **identyfikator źródłowego** kolumny **mapowanie identyfikatora** tabeli, wybierz identyfikator obok każdego pasującego deskryptora typu, który pojawia się w **pola** kolumny.  
-  
-         Na przykład w **identyfikator źródłowego** kolumny wybierz `ContactID` obok `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` deskryptor typu i `ReadItem.salesOrder.SalesOrder.ContactID` deskryptor typu.  
-  
-4.  Jeśli chcesz utworzyć skojarzenie bez kluczy obcych, wyczyść **jest skojarzeniem klucza obcego** pole wyboru.  
-  
-5.  Wybierz **OK** przycisku.  
-  
-6.  W Projektancie usługi łączności danych biznesowych wiersza, który reprezentuje skojarzenia pojawia się między jednostki źródłowej i jednostki docelowej.  
-  
-     Visual Studio dodaje metodę Nawigator skojarzenia klasy usługi obiektu docelowego i Klasa usług jednostki źródłowej. Aby uzyskać więcej informacji na temat metod nawigacji skojarzenia zobacz [obsługiwane operacje](http://go.microsoft.com/fwlink/?LinkId=169286).  
-  
-7.  W metodzie Nawigator skojarzenia jednostki źródłowej Dodaj kod, który zwraca kolekcję jednostki docelowej.  
-  
-8.  W metodzie Nawigator skojarzenie obiektu docelowego Dodaj kod, który zwraca jednostki źródłowej powiązane.  
-  
-     Przykłady Nawigator skojarzenia metody, zobacz [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).  
-  
+  Możesz zdefiniować relacje między jednostkami w modelu łączności danych biznesowych (BDC) przez utworzenie skojarzenia. Program Visual Studio generuje metody udostępniające odbiorcy modelu informacje na temat każdego skojarzenia. Te metody mogą być używane przez składniki web Part programu SharePoint, list lub niestandardowych aplikacji do wyświetlania relacji między danymi w interfejsie użytkownika (UI).
+
+ Można tworzyć dwa typy skojarzeń w Projektancie usługi łączności danych biznesowych: obcego skojarzenia opartego na kluczach i skojarzenia bez kluczy obcych. Aby uzyskać więcej informacji, zobacz [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).
+
+### <a name="to-create-an-association-between-entities"></a>Aby utworzyć skojarzenia między jednostkami
+
+1.  Na **BusinessDataConnectivity** karcie **przybornika**, wybierz **skojarzenia** elementu.
+
+2.  W Projektancie usługi łączności danych biznesowych wybierz jednostki źródłowej, a następnie wybierz jednostki docelowej.
+
+     **Edytor skojarzeń** pojawia się.
+
+3.  Aby utworzyć skojarzenie opartego na kluczach obcych, należy zaznaczyć **jest skojarzeniem klucza obcego** pole wyboru.
+
+    1.  W **identyfikator źródłowego** kolumny **mapowanie identyfikatora** tabeli, wybierz identyfikator obok każdego pasującego deskryptora typu, który pojawia się w **pola** kolumny.
+
+         Na przykład w **identyfikator źródłowego** kolumny wybierz `ContactID` obok `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` deskryptor typu i `ReadItem.salesOrder.SalesOrder.ContactID` deskryptor typu.
+
+4.  Jeśli chcesz utworzyć skojarzenie bez kluczy obcych, wyczyść **jest skojarzeniem klucza obcego** pole wyboru.
+
+5.  Wybierz **OK** przycisku.
+
+6.  W Projektancie usługi łączności danych biznesowych wiersza, który reprezentuje skojarzenia pojawia się między jednostki źródłowej i jednostki docelowej.
+
+     Visual Studio dodaje metodę Nawigator skojarzenia klasy usługi obiektu docelowego i Klasa usług jednostki źródłowej. Aby uzyskać więcej informacji na temat metod nawigacji skojarzenia zobacz [obsługiwane operacje](http://go.microsoft.com/fwlink/?LinkId=169286).
+
+7.  W metodzie Nawigator skojarzenia jednostki źródłowej Dodaj kod, który zwraca kolekcję jednostki docelowej.
+
+8.  W metodzie Nawigator skojarzenie obiektu docelowego Dodaj kod, który zwraca jednostki źródłowej powiązane.
+
+     Przykłady Nawigator skojarzenia metody, zobacz [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md).
+
 ## <a name="see-also"></a>Zobacz także
- [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)   
- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)   
- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)   
- [Instrukcje: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
+- [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)
+- [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Instrukcje: Dodawanie metody wyszukiwania](../sharepoint/how-to-add-a-finder-method.md)
+- [Instrukcje: Dodawanie określonej metody wyszukiwania](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Instrukcje: Dodawanie metody Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Instrukcje: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)
+- [Instrukcje: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)
+- [Omówienie narzędzi projektowania modelu BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Instrukcje: Dodaj parametr do metody](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Instrukcje: Definiowanie wystąpienia metody](../sharepoint/how-to-define-a-method-instance.md)
+- [Instrukcje: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)

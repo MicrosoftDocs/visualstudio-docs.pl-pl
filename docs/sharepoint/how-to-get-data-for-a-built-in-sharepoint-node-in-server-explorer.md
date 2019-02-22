@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef3377b7c90aac183c1fc624743ea2882685eb27
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a51c64b2caf8520385a5334d7bbd3ad6c14d93f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870366"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633463"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Instrukcje: Pobieranie danych dla wbudowanego węzła SharePoint w Eksploratorze serwera
-  Dla każdego wbudowanego węzła SharePoint w **Eksploratora serwera**, możesz uzyskać dane podstawowego składnika programu SharePoint, który reprezentuje węzeł. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład kodu demonstruje sposób uzyskiwania danych podstawowych listy programu SharePoint reprezentująca węzeł listy w **Eksploratora serwera**. Domyślnie lista węzły mają **Pokaż w przeglądarce** element menu kontekstowego, który można kliknąć, aby otworzyć listy w przeglądarce sieci Web. W tym przykładzie rozszerza listy węzłów, dodając **widok w programie Visual Studio** element menu kontekstowego, który spowoduje otwarcie listy bezpośrednio w programie Visual Studio. Kod uzyskuje dostęp do danych listy dla węzła uzyskać adres URL na liście, aby otworzyć w programie Visual Studio.  
-  
+  Dla każdego wbudowanego węzła SharePoint w **Eksploratora serwera**, możesz uzyskać dane podstawowego składnika programu SharePoint, który reprezentuje węzeł. Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+
+## <a name="example"></a>Przykład
+ Poniższy przykład kodu demonstruje sposób uzyskiwania danych podstawowych listy programu SharePoint reprezentująca węzeł listy w **Eksploratora serwera**. Domyślnie lista węzły mają **Pokaż w przeglądarce** element menu kontekstowego, który można kliknąć, aby otworzyć listy w przeglądarce sieci Web. W tym przykładzie rozszerza listy węzłów, dodając **widok w programie Visual Studio** element menu kontekstowego, który spowoduje otwarcie listy bezpośrednio w programie Visual Studio. Kod uzyskuje dostęp do danych listy dla węzła uzyskać adres URL na liście, aby otworzyć w programie Visual Studio.
+
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]  
-  
- W tym przykładzie używa usługi projektu programu SharePoint do uzyskania <xref:EnvDTE.DTE> obiekt, który jest używany do otwierania listy w programie Visual Studio. Aby uzyskać więcej informacji na temat usługi projektu programu SharePoint, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
-  
- Aby uzyskać więcej informacji na temat podstawowych zadań, aby utworzyć rozszerzenie dla węzła SharePoint, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
-  
-## <a name="compile-the-code"></a>Skompilować kod  
- Ten przykład wymaga odwołania do następujących zestawów:  
-  
--   EnvDTE  
-  
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions  
-  
--   System.ComponentModel.Composition  
-  
-## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
- Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
-  
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+
+ W tym przykładzie używa usługi projektu programu SharePoint do uzyskania <xref:EnvDTE.DTE> obiekt, który jest używany do otwierania listy w programie Visual Studio. Aby uzyskać więcej informacji na temat usługi projektu programu SharePoint, zobacz [korzystania z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
+
+ Aby uzyskać więcej informacji na temat podstawowych zadań, aby utworzyć rozszerzenie dla węzła SharePoint, zobacz [jak: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+
+## <a name="compile-the-code"></a>Skompilować kod
+ Ten przykład wymaga odwołania do następujących zestawów:
+
+-   EnvDTE
+
+-   Microsoft.VisualStudio.SharePoint
+
+-   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+
+-   System.ComponentModel.Composition
+
+## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia
+ Aby wdrożyć **Eksploratora serwera** rozszerzenia, Utwórz [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+
 ## <a name="see-also"></a>Zobacz także
- [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Instrukcje: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
- [Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+- [Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Instrukcje: Rozszerzanie węzła SharePoint w Eksploratorze serwera](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+- [Korzystanie z usługi projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
+- [Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

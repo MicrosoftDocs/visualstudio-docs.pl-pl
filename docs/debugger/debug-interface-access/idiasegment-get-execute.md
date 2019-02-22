@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c126ec1c809284bd2f720680b1b51b5f3839670c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7851d379793ee21562b2993c89442a7fb728ec00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601771"
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
-Pobiera flagę wskazującą, czy segment jest wykonywalny.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_execute (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` Jeśli segment jest oznaczony jako pliku wykonywalnego; w przeciwnym razie, zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Pobiera flagę wskazującą, czy segment jest wykonywalny.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_execute ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` Jeśli segment jest oznaczony jako pliku wykonywalnego; w przeciwnym razie, zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
