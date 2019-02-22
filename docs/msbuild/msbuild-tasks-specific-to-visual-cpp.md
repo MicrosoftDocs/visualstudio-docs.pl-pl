@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0d6485ecec44bfafd286b4e0df6f1b476b219be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e676e8fc3bbd8532e5261ab2095fc67380e27ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986426"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597065"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Zadania programu MSBuild specyficzne dla języka Visual C++
-Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  
+Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).
 
- Oprócz parametrów dla każdego zadania każde zadanie ma następujące parametry.  
+ Oprócz parametrów dla każdego zadania każde zadanie ma następujące parametry.
 
 
 | Parametr | Opis |
@@ -33,24 +33,24 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zains
 | `Condition` | Opcjonalnie `String` parametru.<br /><br /> A `Boolean` wyrażenia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aparat używa do określenia, czy to zadanie zostanie wykonany. Aby uzyskać informacje o warunkach, które są obsługiwane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [warunki](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia<br />-   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na`Target` elementu i kompilacja nie są wykonywane i całą `Target` elementu i kompilacja są traktowane jako zakończone niepowodzeniem.<br /><br /> Wersje programu .NET Framework przed 4.5 obsługiwane tylko `true` i `false` wartości.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Ignorowanie błędów w zadaniach](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
-### <a name="related-topics"></a>Tematy pokrewne  
+### <a name="related-topics"></a>Tematy pokrewne
 
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Bscmake — zadanie](../msbuild/bscmake-task.md)|Opakowuje Microsoft Przeglądaj informacje narzędzie konserwacji (*bscmake.exe*).|  
-|[Cl — zadanie](../msbuild/cl-task.md)|Opakowuje narzędzia kompilatora Visual C++ (*cl.exe*).|  
-|[Cppclean — zadanie](../msbuild/cppclean-task.md)|Usuwa pliki tymczasowe, utworzone przez program MSBuild podczas kompilowania projektu Visual C++.|  
-|[Lib — zadanie](../msbuild/lib-task.md)|Opakowuje narzędzie Microsoft 32-bitowy Library Manager (*lib.exe*).|  
-|[Link — zadanie](../msbuild/link-task.md)|Opakowuje narzędzia konsolidatora Visual C++ (*link.exe*).|  
-|[MIDL — zadanie](../msbuild/midl-task.md)|Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) (*midl.exe*).|  
-|[MT — zadanie](../msbuild/mt-task.md)|Opakowuje narzędziu manifestu firmy Microsoft (*mt.exe*).|  
-|[RC — zadanie](../msbuild/rc-task.md)|Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows (*rc.exe*).|  
-|[SETENV — zadanie](../msbuild/setenv-task.md)|Ustawia lub usuwa wartość określonej zmiennej środowiskowej.|  
-|[Vcmessage — zadanie](../msbuild/vcmessage-task.md)|Dzienniki ostrzeżenie wiadomości i komunikaty o błędach podczas kompilacji. (Nie rozszerzalne. Wyłącznie do użytku wewnętrznego.)|  
-|[Xdcmake — zadanie](../msbuild/xdcmake-task.md)|Opakowuje narzędzie dokumentacji XML (*xdcmake.exe*), który scala komentarza dokumentu XML (*.xdc*) pliki do *.xml* pliku.|  
-|[XSD — zadanie](../msbuild/xsd-task.md)|Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła. *Zobacz uwagi poniżej.*|  
-|[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)|Opisano elementy systemu MSBuild.|  
-|[Zadania](../msbuild/msbuild-tasks.md)|W tym artykule opisano zadania, które są jednostkami kod, który można łączyć, aby utworzyć kompilację.|  
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Bscmake — zadanie](../msbuild/bscmake-task.md)|Opakowuje Microsoft Przeglądaj informacje narzędzie konserwacji (*bscmake.exe*).|
+|[Cl — zadanie](../msbuild/cl-task.md)|Opakowuje narzędzia kompilatora Visual C++ (*cl.exe*).|
+|[Cppclean — zadanie](../msbuild/cppclean-task.md)|Usuwa pliki tymczasowe, utworzone przez program MSBuild podczas kompilowania projektu Visual C++.|
+|[Lib — zadanie](../msbuild/lib-task.md)|Opakowuje narzędzie Microsoft 32-bitowy Library Manager (*lib.exe*).|
+|[Link — zadanie](../msbuild/link-task.md)|Opakowuje narzędzia konsolidatora Visual C++ (*link.exe*).|
+|[MIDL — zadanie](../msbuild/midl-task.md)|Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) (*midl.exe*).|
+|[MT — zadanie](../msbuild/mt-task.md)|Opakowuje narzędziu manifestu firmy Microsoft (*mt.exe*).|
+|[RC — zadanie](../msbuild/rc-task.md)|Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows (*rc.exe*).|
+|[SETENV — zadanie](../msbuild/setenv-task.md)|Ustawia lub usuwa wartość określonej zmiennej środowiskowej.|
+|[Vcmessage — zadanie](../msbuild/vcmessage-task.md)|Dzienniki ostrzeżenie wiadomości i komunikaty o błędach podczas kompilacji. (Nie rozszerzalne. Wyłącznie do użytku wewnętrznego.)|
+|[Xdcmake — zadanie](../msbuild/xdcmake-task.md)|Opakowuje narzędzie dokumentacji XML (*xdcmake.exe*), który scala komentarza dokumentu XML (*.xdc*) pliki do *.xml* pliku.|
+|[XSD — zadanie](../msbuild/xsd-task.md)|Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła. *Zobacz uwagi poniżej.*|
+|[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)|Opisano elementy systemu MSBuild.|
+|[Zadania](../msbuild/msbuild-tasks.md)|W tym artykule opisano zadania, które są jednostkami kod, który można łączyć, aby utworzyć kompilację.|
 |[Wpisywanie zadania](../msbuild/task-writing.md)|W tym artykule opisano sposób tworzenia zadania.|
 
 > [!NOTE]
