@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fd0bbf4ed0e3d5b16df70dda29a215fd03535b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035344"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622998"
 ---
 # <a name="copy-selection"></a>Kopiuj dokonany wybór
-Aby skopiować cały stos wywołań kartę raportu, kliknij przycisk **kopiowania**. Następnie można wkleić stos wywołań w każdym programie, która obsługuje tę akcję.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Aby skopiować cały stos wywołań kartę raportu, kliknij przycisk **kopiowania**. Następnie można wkleić stos wywołań w każdym programie, która obsługuje tę akcję.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -16,38 +16,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875488"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609530"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera
-  Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Korzystając z tej techniki, możesz przejść za pośrednictwem składników witryny programu SharePoint w Twoim systemie. Składniki witryny programu SharePoint, takich jak definicje list i typów zawartości, są wyświetlane w węźle, który nosi nazwę **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku** > **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, możesz usunąć elementy, przeglądać ich właściwości lub Odśwież widok drzewa za pomocą poleceń w menu skrótów.  
-  
-> [!IMPORTANT]  
->  Aby przeglądać witryny programu SharePoint, musisz być administratorem zbioru witryn programu SharePoint i uruchamiania programu Visual Studio jako administrator komputera lokalnego. W przeciwnym razie pojawi się w witrynie **Eksploratora serwera**, ale nie można rozwinąć jego węzła. Aby sprawdzić, czy jesteś administratorem zbioru witryn, otwórz witrynę w przeglądarce sieci web, otwórz **Akcje witryny** menu, wybierz **uprawnienia witryny**, a następnie na **uprawnienia: Zespół witryny** wybierz **Administratorzy zbioru witryn** polecenia **Zarządzaj** grupę na Wstążce. Twoja nazwa będzie widoczna w polu tekstowym, jeśli jesteś administratorem zbioru witryn. Jeśli **Administratorzy zbioru witryn** polecenie nie pojawi się w grupie zarządzania, na Wstążce, jesteś administratorem zbioru witryn i odpowiednie uprawnienia należy uzyskać od administratora lokacji.  
-  
+  Możesz teraz przeglądać lokalnych połączeń SharePoint w **Eksploratora serwera**. Korzystając z tej techniki, możesz przejść za pośrednictwem składników witryny programu SharePoint w Twoim systemie. Składniki witryny programu SharePoint, takich jak definicje list i typów zawartości, są wyświetlane w węźle, który nosi nazwę **połączeń SharePoint** w widoku drzewa **Eksploratora serwera**. Aby wyświetlić **Eksploratora serwera**, na pasku menu wybierz **widoku** > **Eksploratora serwera**. Oprócz wyświetlania składników witryny programu SharePoint, możesz usunąć elementy, przeglądać ich właściwości lub Odśwież widok drzewa za pomocą poleceń w menu skrótów.
+
+> [!IMPORTANT]
+>  Aby przeglądać witryny programu SharePoint, musisz być administratorem zbioru witryn programu SharePoint i uruchamiania programu Visual Studio jako administrator komputera lokalnego. W przeciwnym razie pojawi się w witrynie **Eksploratora serwera**, ale nie można rozwinąć jego węzła. Aby sprawdzić, czy jesteś administratorem zbioru witryn, otwórz witrynę w przeglądarce sieci web, otwórz **Akcje witryny** menu, wybierz **uprawnienia witryny**, a następnie na **uprawnienia: Zespół witryny** wybierz **Administratorzy zbioru witryn** polecenia **Zarządzaj** grupę na Wstążce. Twoja nazwa będzie widoczna w polu tekstowym, jeśli jesteś administratorem zbioru witryn. Jeśli **Administratorzy zbioru witryn** polecenie nie pojawi się w grupie zarządzania, na Wstążce, jesteś administratorem zbioru witryn i odpowiednie uprawnienia należy uzyskać od administratora lokacji.
+
 ## <a name="server-explorer-nodes"></a>Węzły w Eksploratorze serwera
- Każdy składnik witryny programu SharePoint jest reprezentowany przez węzeł w **Eksploratora serwera** drzewa widoku w obszarze **połączeń SharePoint**. Na przykład, domyślnej witryny programu SharePoint zawiera typ zawartości o nazwie dyskusji, który reprezentuje typ dyskusji, który wyświetla **dyskusje** strony w witrynie programu SharePoint. Typ zawartości Dyskusja zawiera kilka pól. Aby wyświetlić te pola w **Eksploratora serwera**, rozwiń węzeł **typów zawartości** węzła, a następnie **dyskusji** węzła. W obszarze są kilka węzłów pól, takich jak treść, temat dyskusji i tytuł.  
-  
+ Każdy składnik witryny programu SharePoint jest reprezentowany przez węzeł w **Eksploratora serwera** drzewa widoku w obszarze **połączeń SharePoint**. Na przykład, domyślnej witryny programu SharePoint zawiera typ zawartości o nazwie dyskusji, który reprezentuje typ dyskusji, który wyświetla **dyskusje** strony w witrynie programu SharePoint. Typ zawartości Dyskusja zawiera kilka pól. Aby wyświetlić te pola w **Eksploratora serwera**, rozwiń węzeł **typów zawartości** węzła, a następnie **dyskusji** węzła. W obszarze są kilka węzłów pól, takich jak treść, temat dyskusji i tytuł.
+
 ## <a name="node-shortcut-menu-commands"></a>Polecenia menu skrótów dla węzła
- Każdy węzeł ma menu skrótów, które są dostępne przez kliknięcie prawym przyciskiem myszy węzeł lub wybierając go, a następnie wybierając **Shift**+**F10** kluczy. Polecenia węzła może być następujące:  
-  
-|Nazwa polecenia|Opis|  
-|------------------|-----------------|  
-|Odśwież|Aktualizuje widok drzewa, aby odzwierciedlić zmiany, które mogły wystąpić od czasu ostatniego wyświetlania węzła.|  
-|Usuwanie|Usuwa wybrany węzeł w widoku drzewa. **Uwaga:**  To polecenie jest włączone tylko na połączenia programu SharePoint, na liście **połączeń SharePoint** węzła.|  
-|Właściwości|Wyświetla dostępne właściwości dla wybranego węzła w **właściwości** okna. Właściwości są wszystkie tylko do odczytu, a nie za każdy węzeł ma właściwości skojarzone z nim.|  
-|Dodawanie połączenia|Umożliwia określenie witryny programu SharePoint, które chcesz przeglądać. Dostępne na **połączeń SharePoint** węzła i węzłów podrzędnych lokacji.|  
-|Pokaż w przeglądarce|Wyświetla listę wybranych w przeglądarce sieci Web. To polecenie jest dostępne na niektóre listy w obszarze **Wyświetla** węzeł, który jest zawarty w **list i bibliotek**.|  
-  
+ Każdy węzeł ma menu skrótów, które są dostępne przez kliknięcie prawym przyciskiem myszy węzeł lub wybierając go, a następnie wybierając **Shift**+**F10** kluczy. Polecenia węzła może być następujące:
+
+|Nazwa polecenia|Opis|
+|------------------|-----------------|
+|Odśwież|Aktualizuje widok drzewa, aby odzwierciedlić zmiany, które mogły wystąpić od czasu ostatniego wyświetlania węzła.|
+|Usuwanie|Usuwa wybrany węzeł w widoku drzewa. **Uwaga:**  To polecenie jest włączone tylko na połączenia programu SharePoint, na liście **połączeń SharePoint** węzła.|
+|Właściwości|Wyświetla dostępne właściwości dla wybranego węzła w **właściwości** okna. Właściwości są wszystkie tylko do odczytu, a nie za każdy węzeł ma właściwości skojarzone z nim.|
+|Dodawanie połączenia|Umożliwia określenie witryny programu SharePoint, które chcesz przeglądać. Dostępne na **połączeń SharePoint** węzła i węzłów podrzędnych lokacji.|
+|Pokaż w przeglądarce|Wyświetla listę wybranych w przeglądarce sieci Web. To polecenie jest dostępne na niektóre listy w obszarze **Wyświetla** węzeł, który jest zawarty w **list i bibliotek**.|
+
 ## <a name="related-topics"></a>Tematy pokrewne
-  
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: Dodawanie lub usuwanie połączeń SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|W tym artykule opisano kroki, które są wymagane, aby dodać nową witrynę programu SharePoint do **połączeń SharePoint** w węźle **Eksploratora serwera**.|  
-  
+
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Instrukcje: Dodawanie lub usuwanie połączeń SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|W tym artykule opisano kroki, które są wymagane, aby dodać nową witrynę programu SharePoint do **połączeń SharePoint** w węźle **Eksploratora serwera**.|
+
 ## <a name="see-also"></a>Zobacz także
- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
+- [Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)
