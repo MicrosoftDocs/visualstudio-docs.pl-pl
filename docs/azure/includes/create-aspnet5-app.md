@@ -1,6 +1,6 @@
 ---
-title: Dołącz plik
-description: Dołącz plik
+title: Plik dyrektywy include
+description: Plik dyrektywy include
 services: container-registry
 author: mlearned
 ms.service: container-registry
@@ -8,12 +8,12 @@ ms.author: mlearned
 ms.topic: include
 ms.date: 05/21/2018
 ms.custom: include file
-ms.openlocfilehash: 92095a588e02b416fb229d58eebdfe541693b9fa
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b742e7b4b9e685bd0e3df9cab787fa3d2d5b3cec
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56660285"
 ---
 1. Wybierz z menu programu Visual Studio **Plik > Nowy > Projekt**.
 2. W obszarze **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C# > sieci Web**.
@@ -22,4 +22,3 @@ ms.locfileid: "50673739"
 5. Wybierz **aplikacji sieci Web**.
 6. Sprawdź **włączyć obsługę platformy Docker** pole wyboru.
 7. Wybierz typ kontenera (Windows lub Linux) i kliknij **OK**.
-

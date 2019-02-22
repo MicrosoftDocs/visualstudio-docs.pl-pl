@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8c11e84a514739049a044a12ae482f7b2d9929
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316195"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602757"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Określa konwencję wywołania funkcji.
@@ -39,23 +39,17 @@ typedef enum CV_call_e {
 ```
 
 ## <a name="elements"></a>Elementy
-CV_CALL_NEAR_C  
-Określa Konwencję wywoływania funkcji przy użyciu prawie wypychane od prawej do lewej. Funkcja wywołująca czyści stos.
+CV_CALL_NEAR_C określa Konwencję wywoływania funkcji przy użyciu prawie wypychane od prawej do lewej. Funkcja wywołująca czyści stos.
 
-CV_CALL_NEAR_FAST  
-Określa Konwencję wywoływania funkcji za pomocą rejestrów przy użyciu prawie wypychane od lewej do prawej. Wywołana funkcja używa Suma bajtów parametrów można wyczyścić stosu.
+Określa CV_CALL_NEAR_FAST Konwencja wywoływania funkcji przy użyciu prawie od lewej do prawej, wypychanie za pomocą rejestrów. Wywołana funkcja używa Suma bajtów parametrów można wyczyścić stosu.
 
-CV_CALL_NEAR_STD  
-Określa Konwencję wywoływania funkcji przy użyciu prawie standardowe wywołanie (push od prawej do lewej).
+CV_CALL_NEAR_STD określa Konwencję wywoływania funkcji przy użyciu prawie standardowe wywołanie (push od prawej do lewej).
 
-CV_CALL_NEAR_SYS  
-Określa Konwencję wywoływania funkcji przy użyciu prawie wywołanie systemowe.
+CV_CALL_NEAR_SYS określa Konwencję wywoływania funkcji przy użyciu prawie systemu jest wywołanie.
 
-CV_CALL_THISCALL  
-Określa Konwencję wywoływania funkcji przy użyciu `this` wywołania (`this` wskaźnik przekazywane w rejestrze).
+CV_CALL_THISCALL określa Konwencję wywoływania funkcji za pomocą `this` wywołania (`this` wskaźnik przekazywane w rejestrze).
 
-CV_CALL_CLRCALL  
-Określa Konwencję wywoływania funkcji używane przez wspólnego języka środowiska uruchomieniowego (CLR) (znany także jako kod zarządzany Konwencja wywoływania).
+CV_CALL_CLRCALL określa Konwencję wywoływania funkcji używane przez wspólnego języka środowiska uruchomieniowego (CLR) (znany także jako kod zarządzany Konwencja wywoływania).
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_callingconvention —](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) metody.
@@ -64,5 +58,5 @@ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_callin
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f624a1130c0da261e563e755e55dc2bfcfd49151
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966715"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630499"
 ---
 # <a name="per-thread-summary-report"></a>Raport Podsumowanie wątku
-Ten wykres słupkowy zawiera część czas spędzony przez każdy wątek odkrywanie każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonanie" oznacza, że wykonywany jest wątek; wszystkich innych kategoriach oznacza oczekiwania wątku do czegoś.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)   
- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)   
- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)   
- [Czas wywłaszczania](../profiling/preemption-time.md)   
- [Czas uśpienia](../profiling/sleep-time.md)   
- [Czas synchronizacji](../profiling/synchronization-time.md)   
- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)   
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Ten wykres słupkowy zawiera część czas spędzony przez każdy wątek odkrywanie każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonanie" oznacza, że wykonywany jest wątek; wszystkich innych kategoriach oznacza oczekiwania wątku do czegoś.
+
+## <a name="see-also"></a>Zobacz także
+- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
+- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
+- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
+- [Czas wywłaszczania](../profiling/preemption-time.md)
+- [Czas uśpienia](../profiling/sleep-time.md)
+- [Czas synchronizacji](../profiling/synchronization-time.md)
+- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

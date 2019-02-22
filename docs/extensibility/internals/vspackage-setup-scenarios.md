@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92e2b3d73c29896153df9f1496e286ffcca752b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a8c8d0501222616ad97b745ce69e102ebd54835
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922002"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613324"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
@@ -78,5 +78,5 @@ Aby uzyskać więcej informacji na temat wdrażania zestawów side-by-side, zoba
 
 ## <a name="see-also"></a>Zobacz też
 
-[Windows Installer](/windows/desktop/Msi/windows-installer-portal)  
-[Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+- [Obsługiwanie wielu wersji programu Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603472"
 ---
 # <a name="msbuild-batching"></a>Przetwarzanie wsadowe programu MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchom docelowego lub zadanie jeden raz z każdej partii.
@@ -100,7 +100,7 @@ nie jest dozwolone.
 Aby uzyskać więcej informacji na temat funkcji właściwości, zobacz [funkcji właściwości](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Zobacz także
-[Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
-[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)  
-[Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)
+- [Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

@@ -11,50 +11,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbec142635c1856dfd701f31253b3773cee1b01
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917384"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638779"
 ---
 # <a name="resource-contention-data-views"></a>Widok danych kontencji zasobów
-Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane profilowania rywalizacja wątków.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Widok podsumowania - dane Kontencji Profiler](../profiling/resource-contention-data-views.md)  
- Wyświetla graficzny oś czasu danych profilowania i wymieniono funkcje i zasoby, które brał udział w najbardziej blokowania zdarzenia.  
-  
- [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)  
- Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania i danych kontencji zasobów funkcji podczas uruchomienia profilowania.  
-  
- [Widok modułów](../profiling/modules-view-contention-data.md)  
- Organizuje dane rywalizacji wątków i zasobu przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w chwili blokowanie zdarzeń wystąpiło.  
-  
- [Element wywołujący / widok / / wywoływany - dane Kontencji](../profiling/caller-callee-view-contention-data.md)  
- Wyświetla listę danych rywalizacji wątków i zasobów dla wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.  
-  
- [Widok szczegółów zasobów](../profiling/resource-details-view-contention-data.md)  
- Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego zasobu rywalizacją i wyświetla stos wywołań zdarzeń blokujących.  
-  
- [Widok szczegółów wątku](../profiling/thread-details-view-contention-data.md)  
- Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego wątku i wyświetla stos wywołań zdarzeń blokujących.  
-  
- [Widok funkcji](../profiling/functions-view-contention-data.md)  
- Wyświetla listę danych rywalizacji wątków i zasobu przez funkcję.  
-  
- [Widok rywalizacji o zasoby](../profiling/resource-contentions-view-contention-data.md)  
- Wyświetla listę danych kontencji zasobów przez zasób zablokowane.  
-  
- [Widok linii](../profiling/lines-view-contention-data.md)  
- Wyświetla listę danych kontencji zasobów według wiersza kodu źródłowego.  
-  
- [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
- Wyświetla listę rywalizacji o zasoby według instrukcji.  
-  
- [Widok procesu](../profiling/process-view-contention-data.md)  
- Wyświetla listę rywalizacji zasobów, procesów i wątków.  
-  
-## <a name="reference"></a>Tematy pomocy  
- [Widok szczegółów funkcji](../profiling/function-details-view.md)  
+Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane profilowania rywalizacja wątków.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Widok podsumowania - dane Kontencji Profiler](../profiling/resource-contention-data-views.md)
+
+ Wyświetla graficzny oś czasu danych profilowania i wymieniono funkcje i zasoby, które brał udział w najbardziej blokowania zdarzenia.
+
+- [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)
+
+ Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania i danych kontencji zasobów funkcji podczas uruchomienia profilowania.
+
+- [Widok modułów](../profiling/modules-view-contention-data.md)
+
+ Organizuje dane rywalizacji wątków i zasobu przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w chwili blokowanie zdarzeń wystąpiło.
+
+- [Element wywołujący / widok / / wywoływany - dane Kontencji](../profiling/caller-callee-view-contention-data.md)
+
+ Wyświetla listę danych rywalizacji wątków i zasobów dla wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.
+
+- [Widok szczegółów zasobów](../profiling/resource-details-view-contention-data.md)
+
+ Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego zasobu rywalizacją i wyświetla stos wywołań zdarzeń blokujących.
+
+- [Widok szczegółów wątku](../profiling/thread-details-view-contention-data.md)
+
+ Wyświetla graficzny osi czasu blokowania zdarzeń dla każdego wątku i wyświetla stos wywołań zdarzeń blokujących.
+
+- [Widok funkcji](../profiling/functions-view-contention-data.md)
+
+ Wyświetla listę danych rywalizacji wątków i zasobu przez funkcję.
+
+- [Widok rywalizacji o zasoby](../profiling/resource-contentions-view-contention-data.md)
+
+ Wyświetla listę danych kontencji zasobów przez zasób zablokowane.
+
+- [Widok linii](../profiling/lines-view-contention-data.md)
+
+ Wyświetla listę danych kontencji zasobów według wiersza kodu źródłowego.
+
+- [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
+
+ Wyświetla listę rywalizacji o zasoby według instrukcji.
+
+- [Widok procesu](../profiling/process-view-contention-data.md)
+
+ Wyświetla listę rywalizacji zasobów, procesów i wątków.
+
+## <a name="reference"></a>Tematy pomocy
+- [Widok szczegółów funkcji](../profiling/function-details-view.md)
+
  Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.

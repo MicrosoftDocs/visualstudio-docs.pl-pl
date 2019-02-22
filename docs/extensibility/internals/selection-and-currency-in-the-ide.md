@@ -13,55 +13,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45c1f5b7299a279d5ceaab3d51fcb63dab8fe1f2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653960"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o użytkownikach aktualnie wybrane obiekty za pomocą wyboru *kontekstu*. Za pomocą kontekst zaznaczenia pakietów VSPackage mogą brać udział w walucie śledzenia na dwa sposoby:  
-  
--   Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.  
-  
--   Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.  
-  
-## <a name="selection-context"></a>Kontekst zaznaczenia  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalnie śledzi informacje o walucie IDE w obiekcie kontekstu własnego wyboru globalnego. W poniższej tabeli przedstawiono elementów, które tworzą kontekst zaznaczenia.  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|Bieżącej hierarchii|Zazwyczaj bieżącego projektu; wartość NULL z bieżącej hierarchii wskazuje bieżącego rozwiązania jako całości.|  
-|Identyfikator bieżącego elementu|Wybrany element w bieżącej hierarchii; w przypadku wielokrotny w oknie projektu może istnieć wiele bieżących elementów.|  
-|bieżący `SelectionContainer`|Zawiera co najmniej jeden obiekt, dla których w oknie właściwości należy wyświetlić właściwości.|  
-  
- Ponadto środowisko obsługuje dwie listy globalne:  
-  
--   Lista aktywnych identyfikatory poleceń interfejsu użytkownika  
-  
--   Lista typów obecnie aktywnym elementem.  
-  
-### <a name="window-types-and-selection"></a>Typy okien i wybór  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organizuje systemu windows na dwa ogólne typy:  
-  
-- Typ hierarchii systemu windows  
-  
-- Okna ramowe, takich jak narzędzia i okna dokumentu  
-  
-  IDE śledzi waluty inaczej dla każdego z tych typów okna.  
-  
-  Najbardziej typowe typ projektu jest ono Eksploratorze rozwiązań, który kontroluje IDE. Okno typu projektu śledzi hierarchii globalnej i ItemID kontekst zaznaczenia globalnych i okna zależy od wybranych przez użytkownika, aby określić bieżącą hierarchią. Dla typów projektów systemu windows, środowisko udostępnia globalną usługę <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>za pośrednictwem których pakietów VSPackage można monitorować bieżące wartości dla elementów, Otwórz. Właściwość przeglądania w środowisku jest wymuszany przez tę usługę globalnego.  
-  
-  Okien ramowych z drugiej strony, umożliwia element DocObject wewnątrz okna ramki wypychania wartość SelectionContext (Trójka hierarchii/ItemID/SelectionContainer). . Okna ramowe korzystania z usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> do tego celu. Element DocObject można wypchnąć tylko wartości w kontenerze zaznaczenia, pozostawiając wartości lokalne dla hierarchii i identyfikator elementu bez zmian, podobnie jak w typowej dokumentów podrzędnego MDI.  
-  
-### <a name="events-and-currency"></a>Zdarzenia i waluty  
- Mogą wystąpić dwa typy zdarzeń, które mają wpływ na środowisko pojęcie waluty:  
-  
--   Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.  
-  
--   Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)   
- [Opinia dla użytkownika](../../extensibility/internals/feedback-to-the-user.md)
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje informacje o użytkownikach aktualnie wybrane obiekty za pomocą wyboru *kontekstu*. Za pomocą kontekst zaznaczenia pakietów VSPackage mogą brać udział w walucie śledzenia na dwa sposoby:
+
+-   Poprzez propagowanie waluty informacji na temat pakietów VSPackage środowiska IDE.
+
+-   Monitorując wybory aktualnie aktywnych użytkowników w środowisku IDE.
+
+## <a name="selection-context"></a>Kontekst zaznaczenia
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalnie śledzi informacje o walucie IDE w obiekcie kontekstu własnego wyboru globalnego. W poniższej tabeli przedstawiono elementów, które tworzą kontekst zaznaczenia.
+
+|Element|Opis|
+|-------------|-----------------|
+|Bieżącej hierarchii|Zazwyczaj bieżącego projektu; wartość NULL z bieżącej hierarchii wskazuje bieżącego rozwiązania jako całości.|
+|Identyfikator bieżącego elementu|Wybrany element w bieżącej hierarchii; w przypadku wielokrotny w oknie projektu może istnieć wiele bieżących elementów.|
+|bieżący `SelectionContainer`|Zawiera co najmniej jeden obiekt, dla których w oknie właściwości należy wyświetlić właściwości.|
+
+ Ponadto środowisko obsługuje dwie listy globalne:
+
+-   Lista aktywnych identyfikatory poleceń interfejsu użytkownika
+
+-   Lista typów obecnie aktywnym elementem.
+
+### <a name="window-types-and-selection"></a>Typy okien i wybór
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organizuje systemu windows na dwa ogólne typy:
+
+- Typ hierarchii systemu windows
+
+- Okna ramowe, takich jak narzędzia i okna dokumentu
+
+  IDE śledzi waluty inaczej dla każdego z tych typów okna.
+
+  Najbardziej typowe typ projektu jest ono Eksploratorze rozwiązań, który kontroluje IDE. Okno typu projektu śledzi hierarchii globalnej i ItemID kontekst zaznaczenia globalnych i okna zależy od wybranych przez użytkownika, aby określić bieżącą hierarchią. Dla typów projektów systemu windows, środowisko udostępnia globalną usługę <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>za pośrednictwem których pakietów VSPackage można monitorować bieżące wartości dla elementów, Otwórz. Właściwość przeglądania w środowisku jest wymuszany przez tę usługę globalnego.
+
+  Okien ramowych z drugiej strony, umożliwia element DocObject wewnątrz okna ramki wypychania wartość SelectionContext (Trójka hierarchii/ItemID/SelectionContainer). . Okna ramowe korzystania z usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> do tego celu. Element DocObject można wypchnąć tylko wartości w kontenerze zaznaczenia, pozostawiając wartości lokalne dla hierarchii i identyfikator elementu bez zmian, podobnie jak w typowej dokumentów podrzędnego MDI.
+
+### <a name="events-and-currency"></a>Zdarzenia i waluty
+ Mogą wystąpić dwa typy zdarzeń, które mają wpływ na środowisko pojęcie waluty:
+
+-   Zdarzenia, które są przenoszone na poziomie globalnym i Zmień kontekst zaznaczenia ramki okna. Przykłady tego typu zdarzeń okno podrzędne MDI, są otwarte okna narzędzi globalnego otwierana lub okna narzędzi typu projektu otwieranego.
+
+-   Zdarzenia, które zmieniają elementy śledzone w kontekście wybór ramki okna. Przykłady obejmują zmianę w obiekt DocObject lub zmianę w oknie typu projektu.
+
+## <a name="see-also"></a>Zobacz też
+- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)
+- [Opinia dla użytkownika](../../extensibility/internals/feedback-to-the-user.md)

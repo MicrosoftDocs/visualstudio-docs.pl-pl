@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c764e99fc9c5e5024ccc3d508949fd3a9d9b39e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56a79ea8ba7c4e5622ee468cec8fe6cb53dd197c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920594"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615991"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
-Pobiera część sekcji adres pamięci, gdzie rozpoczyna się w bloku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pRetVal  
- [out] Zwraca część sekcji adres pamięci, gdzie rozpoczyna się w bloku.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="example"></a>Przykład  
-  
-```C++  
-CComPtr< IDiaLineNumber > pLine;  
-DWORD seg;  
-pLine->get_addressSection( &seg );  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idialinenumber —](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)
+Pobiera część sekcji adres pamięci, gdzie rozpoczyna się w bloku.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pRetVal
+
+[out] Zwraca część sekcji adres pamięci, gdzie rozpoczyna się w bloku.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="example"></a>Przykład
+
+```C++
+CComPtr< IDiaLineNumber > pLine;
+DWORD seg;
+pLine->get_addressSection( &seg );
+```
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

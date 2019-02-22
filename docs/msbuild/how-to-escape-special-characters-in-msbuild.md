@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853943"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634633"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Instrukcje: Znaki specjalne ucieczki w MSBuild
 
@@ -51,6 +51,6 @@ Można również użyć [funkcji właściwości](../msbuild/property-functions.m
 Notacja `%<xx>` zamiast znaki specjalne, gdzie `<xx>` reprezentuje wartości szesnastkowej znaku ASCII. Na przykład, aby użyć gwiazdki (`*`) jako znak literałowy, użyj wartości `%2A`.
 
 ## <a name="see-also"></a>Zobacz także
-[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[Elementy](../msbuild/msbuild-items.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Elementy](../msbuild/msbuild-items.md)

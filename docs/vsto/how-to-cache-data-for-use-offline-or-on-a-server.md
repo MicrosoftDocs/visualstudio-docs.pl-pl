@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873747"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636518"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Instrukcje: Dane z pamięci podręcznej do użytku w trybie offline lub na serwerze
   Można oznaczyć elementu danych w pamięci podręcznej w dokumencie, więc, że jest on dostępny w trybie offline. To również umożliwia dla danych w dokumencie, aby być manipulowane przez inny kod, gdy dokument jest przechowywany na serwerze.
@@ -60,4 +60,8 @@ ms.locfileid: "54873747"
 4.  W **właściwości** oknie **Modyfikatory** właściwości **publicznych** (domyślnie jest **wewnętrzne**).
 
 ## <a name="see-also"></a>Zobacz także
- [Dane z pamięci podręcznej](../vsto/caching-data.md) [jak: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [jak: Buforowanie danych w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md) [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md) [zapisywanie danych](../data-tools/saving-data.md)
+- [Dane w pamięci podręcznej](../vsto/caching-data.md)
+- [Instrukcje: Programowe buforowanie źródła danych w dokumencie programu Word](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Instrukcje: Dane w pamięci podręcznej w dokumentach zabezpieczonych hasłem](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Zapisywanie danych](../data-tools/saving-data.md)

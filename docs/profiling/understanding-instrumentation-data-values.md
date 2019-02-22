@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8131f7fecfcb28ad15fa4987767be4fa9955d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620776"
 ---
 # <a name="understand-instrumentation-data-values"></a>Zrozumienie wartościami danych Instrumentacji
 
@@ -97,5 +97,5 @@ Procent aplikacji w ramach całościowych wartości sum sesji profilowania, któ
 
 ## <a name="see-also"></a>Zobacz także
 
-[Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)  
-[Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+[Analizowanie danych dotyczących narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)
+[jak: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)

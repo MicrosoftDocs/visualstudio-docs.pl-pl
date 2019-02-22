@@ -10,34 +10,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c292dac52116bd736672f0ad88a28a3312975afa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613534"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT findSymbolsForAccleratorPointerTag (   
-   DWORD             tagValue,  
-   IDiaEnumSymbols** ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `tagValue`  
- [in] Wartość tagu wskaźnika, dla której rekordy symbol pointee zostaną znalezione.  
-  
- `ppResult`  
- [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Zwraca liczbę znaczników wskaźnika akceleratora w funkcji skrótową, C++ AMP.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT findSymbolsForAccleratorPointerTag (
+   DWORD             tagValue,
+   IDiaEnumSymbols** ppResult);
+```
+
+#### <a name="parameters"></a>Parametry
+ `tagValue`
+
+[in] Wartość tagu wskaźnika, dla której rekordy symbol pointee zostaną znalezione.
+
+ `ppResult`
+
+[out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który jest inicjowany z wynikiem.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

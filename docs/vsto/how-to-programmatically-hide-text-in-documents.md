@@ -13,50 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca17436e022763f606ed950cc7240d78e0ad1b68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874916"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646086"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Instrukcje: Programowe ukrywanie tekstu w dokumentach
-  Można ukryć tekstu w dokumencie, ustawiając <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range.Font%2A> dla określonego zakresu tekstu.  
-  
- Na przykład, można tymczasowo ukryć tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> (w VSTO Add-) przed wysłaniem dokumentu do drukarki.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Aby ukryć tekstu w kontrolce zakładki podczas wydruku dokumentu  
-  
-1.  Utwórz procedurę, która ukrywa cały tekst, który znajduje się w określonym zakresie.  
-  
+  Można ukryć tekstu w dokumencie, ustawiając <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range.Font%2A> dla określonego zakresu tekstu.
+
+ Na przykład, można tymczasowo ukryć tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> (w VSTO Add-) przed wysłaniem dokumentu do drukarki.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Aby ukryć tekstu w kontrolce zakładki podczas wydruku dokumentu
+
+1.  Utwórz procedurę, która ukrywa cały tekst, który znajduje się w określonym zakresie.
+
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
-     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
-  
-2.  Tworzenie procedury, która odkrywa cały tekst, który znajduje się w określonym zakresie.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
+
+2.  Tworzenie procedury, która odkrywa cały tekst, który znajduje się w określonym zakresie.
+
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
-     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
-  
-3.  Zakres zakładki w celu przekazania `HideText` metody, wydrukować dokument, a następnie przekazać ten sam zakres do `UnhideText` metody.  
-  
-     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
+
+3.  Zakres zakładki w celu przekazania `HideText` metody, wydrukować dokument, a następnie przekazać ten sam zakres do `UnhideText` metody.
+
+     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
-     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
-  
-     Poniższy przykład kodu może służyć w dodatku VSTO. W tym przykładzie użyto aktywnego dokumentu. Aby korzystać z przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]
+
+     Poniższy przykład kodu może służyć w dodatku VSTO. W tym przykładzie użyto aktywnego dokumentu. Aby korzystać z przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
-  
-## <a name="compile-the-code"></a>Skompilować kod  
- Ten przykład kodu zakłada, że dokument zawiera <xref:Microsoft.Office.Tools.Word.Bookmark> formantu (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> formantu (w VSTO Add-), który nosi nazwę `bookmark1`.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Instrukcje: Programowe drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)   
- [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Instrukcje: Programowe Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Instrukcje: Programowe Aktualizowanie tekstu zakładki](../vsto/how-to-programmatically-update-bookmark-text.md)   
- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
+
+## <a name="compile-the-code"></a>Skompilować kod
+ Ten przykład kodu zakłada, że dokument zawiera <xref:Microsoft.Office.Tools.Word.Bookmark> formantu (w dostosowaniu na poziomie dokumentu) lub <xref:Microsoft.Office.Interop.Word.Bookmark> formantu (w VSTO Add-), który nosi nazwę `bookmark1`.
+
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: Programowe drukowanie dokumentów](../vsto/how-to-programmatically-print-documents.md)
+- [Instrukcje: Programowe definiowanie i zaznaczanie zakresów w dokumentach](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Instrukcje: Programowe Resetowanie zakresów w dokumentach programu Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Instrukcje: Programowe Aktualizowanie tekstu zakładki](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)

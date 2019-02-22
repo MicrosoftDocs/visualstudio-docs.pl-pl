@@ -11,23 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4038b552a8be2ae1e47ad4f4a6fa1ca0cee6d82e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017805"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619865"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>Rozpoczynanie pracy z kontrolą źródła pakietów VSPackage
-Pakietu VSPackage kontroli źródła jest bardziej zaawansowanych alternatywa wtyczka do kontroli źródła. Aby uzyskać więcej informacji na temat wtyczek kontroli kodu źródłowego, zobacz [tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md). Pakietu VSPackage kontroli źródła umożliwia pełną kontrolę nad model kontroli źródła, funkcje i interfejs użytkownika (UI), a jej zintegrowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska jako pakietu VSPackage.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Określić, czy wdrożyć pakiet VSPackage kontroli źródła](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)  
- Opisano opcje dla rozwiązania kontroli źródła oraz szerokiego wskazówki dotyczące wybierania ścieżką odpowiednie integracji.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Co nowego w kontroli źródła](../../extensibility/internals/what-s-new-in-source-control.md)  
- W tym artykule opisano nowe funkcje za pomocą pakietów VSPackage przy użyciu kontroli źródła.  
-  
- [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+Pakietu VSPackage kontroli źródła jest bardziej zaawansowanych alternatywa wtyczka do kontroli źródła. Aby uzyskać więcej informacji na temat wtyczek kontroli kodu źródłowego, zobacz [tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md). Pakietu VSPackage kontroli źródła umożliwia pełną kontrolę nad model kontroli źródła, funkcje i interfejs użytkownika (UI), a jej zintegrowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska jako pakietu VSPackage.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Określić, czy wdrożyć pakiet VSPackage kontroli źródła](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+
+ Opisano opcje dla rozwiązania kontroli źródła oraz szerokiego wskazówki dotyczące wybierania ścieżką odpowiednie integracji.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Co nowego w kontroli źródła](../../extensibility/internals/what-s-new-in-source-control.md)
+
+ W tym artykule opisano nowe funkcje za pomocą pakietów VSPackage przy użyciu kontroli źródła.
+
+- [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)
+
  W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, ale mogą być używane do dostosowywania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródłowej kontrolki interfejsu użytkownika.

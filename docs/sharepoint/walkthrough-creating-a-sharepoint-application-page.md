@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630902"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Przewodnik: Tworzenie strony aplikacji SharePoint
- 
+
 Na stronie aplikacji jest formą specjalistyczne strony ASP.NET. Strony aplikacji zawierają treści, która jest połączone ze stroną wzorcową programu SharePoint. Aby uzyskać więcej informacji, zobacz [tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 W tym instruktażu dowiesz się, jak utworzyć witrynę aplikacji, a następnie ją debugować używając lokalnej witryny programu SharePoint. Ta strona pokazuje wszystkie elementy, które każdy użytkownik ma utworzone lub zmodyfikowane we wszystkich witrynach w farmie serwerów.
@@ -153,5 +153,5 @@ Możesz dowiedzieć się więcej o projektowaniu zawartości strony SharePoint p
 
 ## <a name="see-also"></a>Zobacz także
 
-[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)  
-[Typ strony układu aplikacji](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Instrukcje: Tworzenie strony aplikacji](../sharepoint/how-to-create-an-application-page.md)
+[układu aplikacji typ strony](http://go.microsoft.com/fwlink/?LinkID=169274)
