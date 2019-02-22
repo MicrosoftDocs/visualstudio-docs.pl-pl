@@ -12,48 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5633a735332813eb61102fb594ec179419507c2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c5ad583a29d38a61db6c485ad5adb3d33a4554f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938318"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615562"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
-Pobiera flagę wskazującą, czy inny symbol odwołuje się adres tego symbolu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_addressTaken (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` Jeśli inny symbol odwołuje się do tego adresu; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera flagę wskazującą, czy inny symbol odwołuje się adres tego symbolu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_addressTaken ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` Jeśli inny symbol odwołuje się do tego adresu; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie `B` odwołania `A`. W związku z tym, symbol `A`firmy `get_addressTaken` metoda zwraca `TRUE`.  
-  
-```C++  
-int A  = 0;  
-int* B = &A;  
-```  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|V7.0 DIA SDK|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie `B` odwołania `A`. W związku z tym, symbol `A`firmy `get_addressTaken` metoda zwraca `TRUE`.
+
+```C++
+int A  = 0;
+int* B = &A;
+```
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|V7.0 DIA SDK|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ad1f2f70a65df7ff6ce35290b5476c8a7bb0ce1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 936cd1f057258bdeda455c67e69e3cd7a9272cc7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615341"
 ---
 # <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
-Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_lengthSavedRegisters (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca liczbę bajtów zapisanych rejestrów.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Pobiera liczba bajtów zapisanych rejestrów wypychane na stos.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_lengthSavedRegisters ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca liczbę bajtów zapisanych rejestrów.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

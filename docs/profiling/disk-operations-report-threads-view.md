@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b9162941a560237e608e14debc331da6064af4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613859"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
-Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.  
-  
- Te informacje są zgłaszane dla każdego dostępu dysku występujący w imieniu procesu, który jest profilowany w przedziale czasowym aktualnie widoczne:  
-  
--   Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku  
-  
--   Identyfikator wątku, który uzyskał dostęp do dysku  
-  
--   Nazwa pliku, którego uzyskano dostęp  
-  
--   Liczba operacji odczytu na pliku  
-  
--   Liczba Bajty odczytane  
-  
--   Opóźnienie odczytu, w milisekundach  
-  
--   Liczba zapisów  
-  
--   Liczba bajtów zapisanych  
-  
--   Opóźnienie zapisu, w milisekundach  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.
+
+ Te informacje są zgłaszane dla każdego dostępu dysku występujący w imieniu procesu, który jest profilowany w przedziale czasowym aktualnie widoczne:
+
+-   Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku
+
+-   Identyfikator wątku, który uzyskał dostęp do dysku
+
+-   Nazwa pliku, którego uzyskano dostęp
+
+-   Liczba operacji odczytu na pliku
+
+-   Liczba Bajty odczytane
+
+-   Opóźnienie odczytu, w milisekundach
+
+-   Liczba zapisów
+
+-   Liczba bajtów zapisanych
+
+-   Opóźnienie zapisu, w milisekundach
+
+## <a name="see-also"></a>Zobacz także
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

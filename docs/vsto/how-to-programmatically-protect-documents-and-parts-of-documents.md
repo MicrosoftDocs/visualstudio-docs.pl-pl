@@ -14,63 +14,63 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d72f7c0136921592c8327dc0c101acd63388631
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872576"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613417"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Instrukcje: Programowe Włączanie ochrony dokumentów i części dokumentów
-  Można dodać ochrony do dokumentów programu Microsoft Office Word, aby uniemożliwić użytkownikom wprowadzanie żadnych zmian w dokumencie.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
- Niektóre obszary dokumentu można również oznaczyć jako wyjątki, aby określeni użytkownicy mogą edytować tylko te części dokumentu. Na przykład można chronić całego dokumentu, z wyjątkiem określonym zakładki. Możesz opcjonalnie dodać hasła, tak aby użytkownicy nie mogli usunąć ochronę dokumentu, chyba że hasło, które znają.  
-  
-> [!NOTE]  
->  Poniższy przykład nie korzysta z ochrony haseł. Jednak warto wziąć pod uwagę przy użyciu hasła, podczas dodawania ochrony dokumentu. Aby uzyskać więcej informacji, zobacz przykład ochrony dokumentu w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
-  
- Formanty zawartości umożliwia również ochrona części dokumentów. Aby uzyskać więcej informacji, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
-  
-## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Chroń dokument, który jest częścią dostosowywania poziomie dokumentu  
-  
-### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Aby chronić dokument, który jest częścią dostosowywania poziomie dokumentu  
-  
-1.  Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody `ThisDocument` klasy w projekcie.  
-  
+  Można dodać ochrony do dokumentów programu Microsoft Office Word, aby uniemożliwić użytkownikom wprowadzanie żadnych zmian w dokumencie.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+ Niektóre obszary dokumentu można również oznaczyć jako wyjątki, aby określeni użytkownicy mogą edytować tylko te części dokumentu. Na przykład można chronić całego dokumentu, z wyjątkiem określonym zakładki. Możesz opcjonalnie dodać hasła, tak aby użytkownicy nie mogli usunąć ochronę dokumentu, chyba że hasło, które znają.
+
+> [!NOTE]
+>  Poniższy przykład nie korzysta z ochrony haseł. Jednak warto wziąć pod uwagę przy użyciu hasła, podczas dodawania ochrony dokumentu. Aby uzyskać więcej informacji, zobacz przykład ochrony dokumentu w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).
+
+ Formanty zawartości umożliwia również ochrona części dokumentów. Aby uzyskać więcej informacji, zobacz [jak: Ochrona części dokumentów za pomocą formantów zawartości](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+
+## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Chroń dokument, który jest częścią dostosowywania poziomie dokumentu
+
+### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Aby chronić dokument, który jest częścią dostosowywania poziomie dokumentu
+
+1.  Wywołaj <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody `ThisDocument` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]  
-  
-### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Aby wykluczyć kontrolka zakładki z ochrony dokumentu  
-  
-1.  Ochrona za pomocą całego dokumentu <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+
+### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Aby wykluczyć kontrolka zakładki z ochrony dokumentu
+
+1.  Ochrona za pomocą całego dokumentu <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> metody.
+
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]  
-  
-2.  Wyklucz `Bookmark1` z ochrony dokumentu.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+
+2.  Wyklucz `Bookmark1` z ochrony dokumentu.
+
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
-     [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]  
-  
-### <a name="compile-the-code"></a>Skompilować kod  
- Aby wykorzystać te przykłady kodu, należy uruchomić je z `ThisDocument` klasy w projekcie. Te przykłady kodu założono, że istniejące <xref:Microsoft.Office.Tools.Word.Bookmark> formantu o nazwie `Bookmark1` w dokumencie, w której występuje ten kod.  
-  
-## <a name="protect-a-document-by-using-a-vsto-add-in"></a>Ochrona dokumentu przy użyciu dodatku narzędzi VSTO  
-  
-### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Aby chronić dokument za pomocą dodatku narzędzi VSTO dla dodatku poziomu aplikacji  
-  
-1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> metody <xref:Microsoft.Office.Interop.Word.Document> , którą chcesz chronić.  
-  
-     Poniższy kod chroni aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
+
+### <a name="compile-the-code"></a>Skompilować kod
+ Aby wykorzystać te przykłady kodu, należy uruchomić je z `ThisDocument` klasy w projekcie. Te przykłady kodu założono, że istniejące <xref:Microsoft.Office.Tools.Word.Bookmark> formantu o nazwie `Bookmark1` w dokumencie, w której występuje ten kod.
+
+## <a name="protect-a-document-by-using-a-vsto-add-in"></a>Ochrona dokumentu przy użyciu dodatku narzędzi VSTO
+
+### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Aby chronić dokument za pomocą dodatku narzędzi VSTO dla dodatku poziomu aplikacji
+
+1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> metody <xref:Microsoft.Office.Interop.Word.Document> , którą chcesz chronić.
+
+     Poniższy kod chroni aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]  
-  
-## <a name="see-also"></a>Zobacz także  
- [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
- [Ochrona za pomocą hasła w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)   
- [Instrukcje: Zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
+
+## <a name="see-also"></a>Zobacz także
+- [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)
+- [Ochrona za pomocą hasła w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)
+- [Instrukcje: Zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Instrukcje: Dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)

@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a093b89264df43574acd3929d4370bb43162d829
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc2a8b3dc2f5940c64be870df452b088dce7bc0e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946753"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632462"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
-Wstrzymuje śledzenia w bieżącym kontekście.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp 
-HRESULT WINAPI SuspendTracking(void);  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- **HRESULT** z **Powodzenie** bitu, jeśli śledzenie zostało wstrzymane.  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Zobacz także  
- [ResumeTracking](../msbuild/resumetracking.md)
+Wstrzymuje śledzenia w bieżącym kontekście.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT WINAPI SuspendTracking(void);
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ **HRESULT** z **Powodzenie** bitu, jeśli śledzenie zostało wstrzymane.
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *FileTracker.h*
+
+## <a name="see-also"></a>Zobacz także
+- [ResumeTracking](../msbuild/resumetracking.md)

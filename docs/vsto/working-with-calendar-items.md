@@ -18,27 +18,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3800c5e2665d201f9f8806272e95a6862ef98c0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863412"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612572"
 ---
 # <a name="work-with-calendar-items"></a>Praca z elementami kalendarza
-  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Klasa zawiera metody i właściwości, które umożliwiają wykonywanie zadań z elementami kalendarza.  
-  
-|Zadanie|Procedura|  
-|----------|---------------|  
-|Utwórz termin i Dodaj adresatów.|[Instrukcje: Programowe tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)|  
-|Usunięcia wystąpienia terminów cyklicznych.|[Instrukcje: Programowe usuwanie terminów](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Utwórz folder Kalendarz i Dodaj element spotkania.|[Instrukcje: Programowe tworzenie niestandardowego kalendarza](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Tworzenie wezwania na spotkanie, a następnie wyślij ją.|[Instrukcje: Programowe tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
-  
- Aby uzyskać więcej informacji o zadaniach programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
- [Praca z folderami](../vsto/working-with-folders.md)   
- [Praca z elementami poczty](../vsto/working-with-mail-items.md)   
- [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)  
+  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Klasa zawiera metody i właściwości, które umożliwiają wykonywanie zadań z elementami kalendarza.
+
+|Zadanie|Procedura|
+|----------|---------------|
+|Utwórz termin i Dodaj adresatów.|[Instrukcje: Programowe tworzenie terminów](../vsto/how-to-programmatically-create-appointments.md)|
+|Usunięcia wystąpienia terminów cyklicznych.|[Instrukcje: Programowe usuwanie terminów](../vsto/how-to-programmatically-delete-appointments.md)|
+|Utwórz folder Kalendarz i Dodaj element spotkania.|[Instrukcje: Programowe tworzenie niestandardowego kalendarza](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Tworzenie wezwania na spotkanie, a następnie wyślij ją.|[Instrukcje: Programowe tworzenie wezwania na spotkanie](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+
+ Aby uzyskać więcej informacji o zadaniach programu Outlook i modelu obiektów programu Outlook, zobacz [model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [Praca z folderami](../vsto/working-with-folders.md)
+- [Praca z elementami poczty](../vsto/working-with-mail-items.md)
+- [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)

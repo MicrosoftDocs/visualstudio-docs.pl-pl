@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96ce674e9bfc15913c8b7c142ee36780bf74c7ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068672"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641991"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-Resetuje sekwencji wyliczenia na początku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK`.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Resetuje sekwencji wyliczenia na początku.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ Zwraca `S_OK`.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -8,46 +8,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f78e7a6e71eccba185a9f1c363dc39b7a74a365
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637480"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework przy użyciu wiersza polecenia profilera
 
-W tej sekcji opisano procedury składowane i opcje dla zbieranie alokacji pamięci i danych o okresie istnienia obiektu dla aplikacji (autonomiczny) klienta platformy .NET przy użyciu metody pobierania próbek w wierszu polecenia.  
-  
-## <a name="common-tasks"></a>Wspólne zadania
-  
-|Zadanie|Zawartość pokrewna|  
-|----------|---------------------|  
-|**Uruchom aplikację i profilu pamięci platformy .NET**|-   [Jak: Uruchamianie aplikacji .NET Framework z profilerem do zbierania danych pamięci](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
-|**Dołącz profiler do aplikacji platformy .NET**|-   [Jak: Dołączanie profilera do aplikacji .NET Framework w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
-|**Instrumentacja aplikacji w celu zbierania danych pamięci .NET**|-   [Jak: Instrumentowanie składnika autonomicznego .NET Framework i pamięci zbierania danych profilera](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
-  
-## <a name="related-tasks"></a>Zadania powiązane
-  
-### <a name="profile-stand-alone-applications"></a>Profil aplikacji autonomicznych  
-  
-|Zadanie|Zawartość pokrewna|  
-|----------|---------------------|  
-|**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+W tej sekcji opisano procedury składowane i opcje dla zbieranie alokacji pamięci i danych o okresie istnienia obiektu dla aplikacji (autonomiczny) klienta platformy .NET przy użyciu metody pobierania próbek w wierszu polecenia.
 
-  
-### <a name="profile-net-memory-data"></a>Dane profilu .NET memory  
-  
-|Zadanie|Zawartość pokrewna|  
-|----------|---------------------|  
-|**Profil aplikacji ASP.NET**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Usługi profilowania**|-   [Zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
-  
-### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoki danych pamięci .NET i raporty  
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
-  
-## <a name="reference"></a>Tematy pomocy  
- [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
+## <a name="common-tasks"></a>Wspólne zadania
+
+|Zadanie|Zawartość pokrewna|
+|----------|---------------------|
+|**Uruchom aplikację i profilu pamięci platformy .NET**|-   [Jak: Uruchamianie aplikacji .NET Framework z profilerem do zbierania danych pamięci](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
+|**Dołącz profiler do aplikacji platformy .NET**|-   [Jak: Dołączanie profilera do aplikacji .NET Framework w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
+|**Instrumentacja aplikacji w celu zbierania danych pamięci .NET**|-   [Jak: Instrumentowanie składnika autonomicznego .NET Framework i pamięci zbierania danych profilera](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|
+
+## <a name="related-tasks"></a>Zadania powiązane
+
+### <a name="profile-stand-alone-applications"></a>Profil aplikacji autonomicznych
+
+|Zadanie|Zawartość pokrewna|
+|----------|---------------------|
+|**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+
+
+### <a name="profile-net-memory-data"></a>Dane profilu .NET memory
+
+|Zadanie|Zawartość pokrewna|
+|----------|---------------------|
+|**Profil aplikacji ASP.NET**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
+|**Usługi profilowania**|-   [Zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+
+### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoki danych pamięci .NET i raporty
+- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+
+## <a name="reference"></a>Tematy pomocy
+- [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

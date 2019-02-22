@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e8201a3df3887e098206ffcfcb3fee34ea00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0b97b30b6f19e367cfbae72be29b6d8961f4e1a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965032"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642004"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
-Umieszcza modułu wyliczającego, wykonując wyszukiwanie przy użyciu wirtualnego adresu (oceny luk w zabezpieczeniach).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT symbolByVA (   
-   DWORD**      virtualAddress,  
-   IDiaSymbol** ppsymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- virtualAddress  
- [in] Wirtualny adres.  
-  
- ppsymbol  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący odnaleziono symbolu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli symbol nie został odnaleziony. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Umieszcza modułu wyliczającego, wykonując wyszukiwanie przy użyciu wirtualnego adresu (oceny luk w zabezpieczeniach).
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT symbolByVA ( 
+   DWORD**      virtualAddress,
+   IDiaSymbol** ppsymbol
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ virtualAddress
+
+[in] Wirtualny adres.
+
+ ppsymbol
+
+[out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący odnaleziono symbolu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli symbol nie został odnaleziony. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

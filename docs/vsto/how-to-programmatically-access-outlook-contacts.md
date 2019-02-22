@@ -12,31 +12,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b47d90eef38c5aff055b7ba2a05e39f8de17269
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873668"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598209"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Instrukcje: Programowy dostęp do kontaktów programu Outlook
-  W tym przykładzie wyszukuje wszystkie kontakty, w których ostatni nazwy zawierają ciąg wyszukiwania.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Przykład  
+  W tym przykładzie wyszukuje wszystkie kontakty, w których ostatni nazwy zawierają ciąg wyszukiwania.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Przykład
  [!code-csharp[Trin_OL_AccessContacts#1](../vsto/codesnippet/CSharp/Trin_OL_AccessContacts.trin_ol_accesscontacts/thisaddin.cs#1)]
  [!code-csharp[Trin_OL_AccessContacts#1](../vsto/codesnippet/CSharp/Trin_OL_AccessContacts.trin_ol_accesscontacts/thisaddin.cs#1)]
- [!code-vb[Trin_OL_AccessContacts#1](../vsto/codesnippet/VisualBasic/Trin_OL_AccessContacts/thisaddin.vb#1)]  
-  
-## <a name="compile-the-code"></a>Skompilować kod  
- Ten przykład wymaga:  
-  
--   Kontakty, w których ostatni nazwy zawierają ciąg "**Na"** (na przykład Tzipi Butnaru) w **kontakty** folderu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)   
- [Instrukcje: Programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [Instrukcje: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
- [Instrukcje: Programowe usuwanie kontaktów programu Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
+ [!code-vb[Trin_OL_AccessContacts#1](../vsto/codesnippet/VisualBasic/Trin_OL_AccessContacts/thisaddin.vb#1)]
+
+## <a name="compile-the-code"></a>Skompilować kod
+ Ten przykład wymaga:
+
+-   Kontakty, w których ostatni nazwy zawierają ciąg "**Na"** (na przykład Tzipi Butnaru) w **kontakty** folderu.
+
+## <a name="see-also"></a>Zobacz także
+- [Praca z elementami kontaktów](../vsto/working-with-contact-items.md)
+- [Instrukcje: Programowe Dodawanie wpisu do kontaktów programu Outlook](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [Instrukcje: Programowe wyszukiwanie określonego kontaktu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
+- [Instrukcje: Programowe wyszukiwanie adresu e-mail w kontaktach](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [Instrukcje: Programowe usuwanie kontaktów programu Outlook](../vsto/how-to-programmatically-delete-outlook-contacts.md)

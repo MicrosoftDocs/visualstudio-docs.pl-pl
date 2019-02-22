@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921063"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635140"
 ---
 # <a name="project-element-msbuild"></a>Project — element (MSBuild)
-Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.  
+Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.
 
-## <a name="syntax"></a>Składnia  
+## <a name="syntax"></a>Składnia
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty  
+### <a name="attributes"></a>Atrybuty
 
 | Atrybut | Opis |
 |------------------------| - |
@@ -63,7 +63,7 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie były uznawane za będzie globalnym. Ten atrybut zapobiega zastępowanie wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych i wszystkie Importy kolejnych określonych właściwości wiersza polecenia. Wiele właściwości są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Zwykle globalne właściwości zastępują wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartość, wartość właściwości globalnej nie zastępuje wartości właściwości, które są ustawiane w pliku i wszystkie Importy kolejne. Aby uzyskać więcej informacji, zobacz [jak: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:**  Należy określić globalne właściwości w wierszu polecenia przy użyciu **— właściwość** (lub **-p**) przełącznika. Możesz również ustawić lub zmodyfikować globalnych właściwości dla projektów podrzędnych w kompilacji wielu projektów za pomocą `Properties` atrybut zadanie programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
 | `Xmlns` | Atrybut opcjonalny.<br /><br /> Jeśli zostanie określony, `xmlns` atrybut musi mieć wartość `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Elementy podrzędne  
+### <a name="child-elements"></a>Elementy podrzędne
 
 | Element | Opis |
 | - | - |
@@ -78,11 +78,11 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | [Docelowy](../msbuild/target-element-msbuild.md) | Element opcjonalny.<br /><br /> Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei. Zadania są określone za pomocą [zadań](../msbuild/task-element-msbuild.md) elementu. Może wynosić zero lub więcej `Target` elementy w projekcie. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Element opcjonalny.<br /><br /> Zapewnia sposób zarejestrować zadań w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Może wynosić zero lub więcej `UsingTask` elementy w projekcie. |
 
-### <a name="parent-elements"></a>Elementy nadrzędne  
- Brak.  
+### <a name="parent-elements"></a>Elementy nadrzędne
+ Brak.
 
-## <a name="see-also"></a>Zobacz także  
- [Instrukcje: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)   
- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Zobacz także
+- [Instrukcje: Określ, która docelowa do tworzenia najpierw](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
+- [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019570"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614600"
 ---
 # <a name="report-based-on-visible-time-range"></a>Raport bazujący na widocznym zakresie czasu
-Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałów. Aby wyświetlić szczegóły dotyczące różne podzbiory danych, kliknij elementów w legendzie.  
-  
- Więcej informacji na temat danych można znaleźć w tabelach, w tym miejscu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Do pokazania żadnej aktywności wątku](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Raport profilu wykonania](../profiling/execution-profile-report.md)   
- [Czas synchronizacji](../profiling/synchronization-time.md)   
- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)   
- [Czas uśpienia](../profiling/sleep-time.md)   
- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)   
- [Czas wywłaszczania](../profiling/preemption-time.md)   
- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)   
- [Raport dotyczący operacji na dysk](../profiling/disk-operations-report-threads-view.md)   
- [Raport Podsumowanie wątku](../profiling/per-thread-summary-report.md)   
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Widok profil zawiera raporty, które są oparte na aktualnie widocznym zakresie czasu i kanałów. Aby wyświetlić szczegóły dotyczące różne podzbiory danych, kliknij elementów w legendzie.
+
+ Więcej informacji na temat danych można znaleźć w tabelach, w tym miejscu.
+
+## <a name="see-also"></a>Zobacz także
+- [Brak aktywności wątku do pokazania](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Raport profilu wykonania](../profiling/execution-profile-report.md)
+- [Czas synchronizacji](../profiling/synchronization-time.md)
+- [Czas we/wy (widok wątków)](../profiling/i-o-time-threads-view.md)
+- [Czas uśpienia](../profiling/sleep-time.md)
+- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
+- [Czas wywłaszczania](../profiling/preemption-time.md)
+- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
+- [Raport dotyczący operacji na dysku](../profiling/disk-operations-report-threads-view.md)
+- [Raport dotyczący podsumowania każdego wątku](../profiling/per-thread-summary-report.md)
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

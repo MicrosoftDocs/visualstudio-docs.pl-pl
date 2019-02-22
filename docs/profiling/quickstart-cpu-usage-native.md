@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633710"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki start: Analizowanie danych użycia procesora CPU w Visual Studio (C++)
 
@@ -57,64 +57,64 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania 
-  
+
+## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
+
 1.  Najpierw ustaw punkt przerwania w swojej aplikacji, w tym wierszu kodu w `main` funkcji:
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
-  
+
 3.  **Narzędzia diagnostyczne** okna jest jeszcze widoczny, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
 4.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
@@ -147,7 +147,7 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 
      Program profilujący rozpoczyna, przygotowywanie danych wątku. Poczekaj na zakończenie jego działania.
-  
+
      Narzędzie użycie procesora CPU wyświetla raport w **użycie procesora CPU** kartę.
 
      W tym momencie można rozpocząć analizy danych.
@@ -165,7 +165,7 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
 2. Na liście funkcji dwukrotnie kliknij `getNumber` funkcji.
 
-    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** w okienku po lewej stronie zostanie otwarty widok. 
+    Po dwukrotnym kliknięciu funkcji **wywołujący/wywoływany** w okienku po lewej stronie zostanie otwarty widok.
 
     ![Widok wywoływany obiekt wywołujący narzędzia do diagnostyki](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 - [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) uzyskać bardziej szczegółowe informacje na temat narzędzia użycie procesora CPU.
 - Analizowanie użycia procesora CPU bez debugera dołączone lub stosując uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchamianie narzędzi z lub bez debugera profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz także  
+## <a name="see-also"></a>Zobacz także
 
- [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Profilowanie w programie Visual Studio](../profiling/index.md)
+- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

@@ -10,34 +10,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e609381bcdcd68a2ef3f3d739cf5c18c2f2610de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2f5f38205770b7b7574a37b700b3c9b23b4fe90
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015566"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643044"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
-Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, w tym symbolu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT findInlineeLines (   
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppResult`  
- [out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
- [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)
+Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, w tym symbolu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT findInlineeLines ( 
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppResult`
+
+[out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)

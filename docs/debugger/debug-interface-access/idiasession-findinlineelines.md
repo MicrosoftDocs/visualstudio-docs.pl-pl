@@ -10,37 +10,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502f05bbf5aeb5e7cb6813d8816024482fed1236
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aeed8047cd04e3cfedb5a3beed8dc42c87b551e4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625871"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
-Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT findInlineeLines (   
-   IDiaSymbol*       parent,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `parent`  
- [in] `IDiaSymbol` Obiekt reprezentujący element nadrzędny.  
-  
- `ppResult`  
- [out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT findInlineeLines ( 
+   IDiaSymbol*       parent,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `parent`
+
+[in] `IDiaSymbol` Obiekt reprezentujący element nadrzędny.
+
+ `ppResult`
+
+[out] Przechowuje `IDiaEnumLineNumbers` obiektu, który zawiera listę numerów wierszy, które są pobierane.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987356"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626144"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Zostanie otwarty i sprawdza, czy plik bazy danych (PDB) programu odpowiada informacjami podpisu i przygotowuje plik .pdb jako źródło danych debugowania.
@@ -34,16 +34,20 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>Parametry
-`pdbPath`  
+`pdbPath`
+
 [in] Ścieżka do pliku .pdb.
 
-`pcsig70`  
+`pcsig70`
+
 [in] Podpis identyfikator GUID do weryfikacji podpisu pliku .pdb. Pliki .pdb tylko [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] i później mają podpisy identyfikatora GUID.
 
-`sig`  
+`sig`
+
 [in] Podpis 32-bitowego do weryfikacji podpisu pliku .pdb.
 
-`age`  
+`age`
+
 [in] Wiek wartości w celu zweryfikowania. Wiek nie musi odpowiadać do każdej wartości czasu, jest on używany do określenia, czy plik .pdb jest zsynchronizowany z odpowiedniego pliku .exe.
 
 ## <a name="return-value"></a>Wartość zwracana
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

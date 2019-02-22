@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043521"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646138"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Instrukcje: Profiluj kod JavaScript na stronach sieci web
 
 Visual Studio Profiling Tools umożliwia zbieranie danych wydajności dla kodu JavaScript, która jest wykonywana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, dowolnej strony sieci web lub aplikacji JavaScript przy użyciu Instrumentacji, metoda profilowania. Wymaga programu Internet Explorer 8 lub nowszy.
 
 > [!WARNING]
-> Aby profilować kod JavaScript w aplikacjach platformy uniwersalnej systemu Windows, zobacz [pamięć języka JavaScript](../profiling/javascript-memory.md) 
+> Aby profilować kod JavaScript w aplikacjach platformy uniwersalnej systemu Windows, zobacz [pamięć języka JavaScript](../profiling/javascript-memory.md)
 
 Aby utworzyć sesję wydajności, można użyć Kreatora profilowania. Określ metody instrumentacji, a następnie określ JavaScript profilowania opcję na stronie Instrumentacji w oknie dialogowym właściwości sesji wydajności.
 

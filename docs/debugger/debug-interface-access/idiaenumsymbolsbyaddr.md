@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec61145d51ba383099d9b08fe0a50db10f97022
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155620"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623076"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Wylicza przy użyciu adresu różnych symboli znajdujących się w źródle danych.
@@ -101,6 +101,6 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

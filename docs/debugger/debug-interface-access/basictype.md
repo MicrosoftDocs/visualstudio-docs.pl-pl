@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626118"
 ---
 # <a name="basictype"></a>BasicType
 Określa podstawowy typ symbolu.
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elementy
-btNoType  
-Nie typ podstawowy jest określony.
+btNoType żaden typ podstawowy jest określona.
 
-btVoid  
-Typ podstawowy jest `void`.
+btVoid typ podstawowy jest `void`.
 
-btChar  
-Typ podstawowy jest `char` (C/C++ typu).
+btChar typ podstawowy jest `char` (C/C++ typu).
 
-btWChar  
-Typ podstawowy jest znakiem dwubajtowym (Unicode) (`WCHAR`).
+btWChar typ podstawowy jest znakiem dwubajtowym (Unicode) (`WCHAR`).
 
-btInt  
-Typ podstawowy jest `signed int` (C/C++ typu).
+btInt typ podstawowy jest `signed int` (C/C++ typu).
 
-btUInt  
-Typ podstawowy jest `unsigned int` (C/C++ typu).
+btUInt typ podstawowy jest `unsigned int` (C/C++ typu).
 
-btFloat  
-Typ podstawowy jest liczba zmiennoprzecinkowa (`FLOAT`).
+btFloat typ podstawowy jest liczba zmiennoprzecinkowa (`FLOAT`).
 
-btBCD  
-Typ podstawowy jest kodowane dane binarne wartości dziesiętnej (`BCD`).
+btBCD typ podstawowy jest kodowane dane binarne wartości dziesiętnej (`BCD`).
 
-btBool  
-Typ podstawowy jest wartością logiczną (`BOOL`).
+btBool typ podstawowy jest wartością logiczną (`BOOL`).
 
-btLong  
-Typ podstawowy jest `long int` (C/C++ typu).
+btLong typ podstawowy jest `long int` (C/C++ typu).
 
-btULong  
-Typ podstawowy jest `unsigned long int` (C/C++ typu).
+btULong typ podstawowy jest `unsigned long int` (C/C++ typu).
 
-btCurrency  
-Typ podstawowy jest waluta.
+btCurrency typ podstawowy jest waluta.
 
-btDate  
-Typ podstawowy jest daty/godziny (`DATE`).
+btDate typ podstawowy jest daty/godziny (`DATE`).
 
-btVariant  
-Typ podstawowy jest strukturą typu zmiennej (`VARIANT`).
+btVariant typ podstawowy jest strukturą typu zmiennej (`VARIANT`).
 
-btComplex  
-Typ podstawowy jest liczbą.
+btComplex typ podstawowy jest liczbą.
 
-btBit  
-Typ podstawowy jest nieco.
+btBit typ podstawowy jest nieco.
 
-btBSTR  
-Typ podstawowy jest ciągiem podstawowe lub binarny (`BSTR`).
+btBSTR typ podstawowy jest ciągiem podstawowe lub binarny (`BSTR`).
 
-btHresult  
-Typ podstawowy jest `HRESULT`.
+btHresult typ podstawowy jest `HRESULT`.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_basetype —](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) metody.
@@ -111,6 +93,6 @@ Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_basetype —](../
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

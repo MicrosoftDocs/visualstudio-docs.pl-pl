@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004516"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602419"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Ważne polecenia dotyczące filtrów usługi językowej
-Jeśli chcesz utworzyć filtr usługi języka w pełni wyposażone, należy rozważyć obsługę następujących poleceń. Pełną listę identyfikatorów poleceń jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczenie dla kodu zarządzanego i nagłówek Stdidcmd.h pliku niezarządzanych [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Można znaleźć w pliku Stdidcmd.h *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  
-  
-## <a name="commands-to-handle"></a>Polecenia do uchwytu  
-  
+Jeśli chcesz utworzyć filtr usługi języka w pełni wyposażone, należy rozważyć obsługę następujących poleceń. Pełną listę identyfikatorów poleceń jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wyliczenie dla kodu zarządzanego i nagłówek Stdidcmd.h pliku niezarządzanych [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kodu. Można znaleźć w pliku Stdidcmd.h *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
+
+## <a name="commands-to-handle"></a>Polecenia do uchwytu
+
 > [!NOTE]
->  Nie jest wymagane, aby filtrować dla każdego polecenia w poniższej tabeli.  
-  
-|Polecenie|Opis|  
-|-------------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik kliknie prawym przyciskiem myszy. To polecenie wskazuje, że nadszedł czas na Zapewnij menu skrótów. Jeśli nie obsługuje tego polecenia, Edytor tekstu zawiera domyślne menu skrótów, bez żadnych poleceń specyficznych dla języka. Aby dołączyć poleceń w tym menu, obsługi polecenia i wyświetli menu skrótów, samodzielnie.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Typowo wysyłana, gdy użytkownik wpisuje CTRL + J. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> aby pokazać pole uzupełniania instrukcji.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze jakiś znak. Monitorowanie to polecenie, aby określić po wpisaniu znaku wyzwalacza i zapewnienie instrukcji zakończenia, metoda porady i znaczników tekstu, takie jak kolorowanie składni, dopasowywanie nawiasów i znaczniki błędów. Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> uzupełniania instrukcji i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> porady metody. Aby zapewnić obsługę znaczników tekstu, monitorowanie to polecenie, aby określić, czy jest wpisany znak wymaga aktualizacji usługi znaczników.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze klawisz Enter. Monitorowanie tego polecenia, aby określić, kiedy zamknąć okno porad metoda przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Domyślnie widok tekstu obsługuje tego polecenia.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze klawisz Backspace. Monitor do określenia, kiedy zamknąć okno porad metoda przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Domyślnie widok tekstu obsługuje tego polecenia.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłane z menu lub klawisza skrótu. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> można zaktualizować okno porad o informacje o parametrach.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik znajduje się nad zmienną lub z kursorem na zmienną i wybiera **Quick Info** z **IntelliSense** w **Edytuj** menu. Zwracany typ zmiennej w oknie z poradami, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Jeśli debugowanie jest aktywna, porady również powinny pokazywać wartość zmiennej.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Typowo wysyłana, gdy użytkownik wpisuje klawisze CTRL + SPACJA. To polecenie informuje usługa językowa do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłane z menu, zwykle **Dodaj komentarz do zaznaczenia** lub **Usuń komentarz zaznaczenia** z **zaawansowane** w **Edytuj** menu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Wskazuje, że użytkownik chce, aby przekształcić w komentarz zaznaczonego tekstu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wskazuje, że użytkownik chce usuń znaczniki komentarza w zaznaczonym tekście. Te polecenia można zaimplementować tylko przez usługę języka.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)
+>  Nie jest wymagane, aby filtrować dla każdego polecenia w poniższej tabeli.
+
+|Polecenie|Opis|
+|-------------|-----------------|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik kliknie prawym przyciskiem myszy. To polecenie wskazuje, że nadszedł czas na Zapewnij menu skrótów. Jeśli nie obsługuje tego polecenia, Edytor tekstu zawiera domyślne menu skrótów, bez żadnych poleceń specyficznych dla języka. Aby dołączyć poleceń w tym menu, obsługi polecenia i wyświetli menu skrótów, samodzielnie.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Typowo wysyłana, gdy użytkownik wpisuje CTRL + J. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> aby pokazać pole uzupełniania instrukcji.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze jakiś znak. Monitorowanie to polecenie, aby określić po wpisaniu znaku wyzwalacza i zapewnienie instrukcji zakończenia, metoda porady i znaczników tekstu, takie jak kolorowanie składni, dopasowywanie nawiasów i znaczniki błędów. Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> uzupełniania instrukcji i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> porady metody. Aby zapewnić obsługę znaczników tekstu, monitorowanie to polecenie, aby określić, czy jest wpisany znak wymaga aktualizacji usługi znaczników.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze klawisz Enter. Monitorowanie tego polecenia, aby określić, kiedy zamknąć okno porad metoda przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Domyślnie widok tekstu obsługuje tego polecenia.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik wpisze klawisz Backspace. Monitor do określenia, kiedy zamknąć okno porad metoda przez wywołanie metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>. Domyślnie widok tekstu obsługuje tego polecenia.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłane z menu lub klawisza skrótu. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> można zaktualizować okno porad o informacje o parametrach.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłany, gdy użytkownik znajduje się nad zmienną lub z kursorem na zmienną i wybiera **Quick Info** z **IntelliSense** w **Edytuj** menu. Zwracany typ zmiennej w oknie z poradami, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>. Jeśli debugowanie jest aktywna, porady również powinny pokazywać wartość zmiennej.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Typowo wysyłana, gdy użytkownik wpisuje klawisze CTRL + SPACJA. To polecenie informuje usługa językowa do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wysyłane z menu, zwykle **Dodaj komentarz do zaznaczenia** lub **Usuń komentarz zaznaczenia** z **zaawansowane** w **Edytuj** menu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Wskazuje, że użytkownik chce, aby przekształcić w komentarz zaznaczonego tekstu. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> wskazuje, że użytkownik chce usuń znaczniki komentarza w zaznaczonym tekście. Te polecenia można zaimplementować tylko przez usługę języka.|
+
+## <a name="see-also"></a>Zobacz też
+- [Tworzenie starszej wersji usługi językowej](../../extensibility/internals/developing-a-legacy-language-service.md)

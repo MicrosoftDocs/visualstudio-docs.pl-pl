@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027240"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611077"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 Dziennik zmian w programie Visual Studio Tools for Unity.
@@ -34,11 +34,11 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Debuger:**
 
      -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
-     
+
 -   **Integracja:**
 
      -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
-     
+
      -   Tworzenie szablonu pliku stały aparatu Unity.
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Integracja:**
 
      -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
-     
+
 ## <a name="1601"></a>1.6.0.1
  Wydana 10 lipca 2018 r.
 
@@ -58,7 +58,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Integracja:**
 
      -   Obsługuje stały barwy kodu programu do cieniowania.
-     
+
 ## <a name="1600"></a>1.6.0.0
  Wydana 26 czerwca 2018 r.
 
@@ -71,23 +71,23 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 -   **Generowanie projektu:**
 
      -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
-     
+
      -   Nie można konwertować przenośnego pliku pdb mdb już korzystając z nowego środowiska uruchomieniowego platformy Unity.
-     
+
 ## <a name="1502"></a>1.5.0.2
  Wydana 18 kwietnia 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
 
     -   Dodano obsługę podstawowych uzupełnianie kodu programu do cieniowania.
-    
+
     -   Dodano obsługę przełączanie komentarze w plikach programu do cieniowania.
 
 ## <a name="1501"></a>1.5.0.1
  Wydana 28 marca 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
@@ -96,7 +96,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1500"></a>1.5.0.0
  Wydana 21 marca 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
@@ -105,7 +105,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1403"></a>1.4.0.3
  Wydanie 5 marca 2018 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
@@ -118,7 +118,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1402"></a>1.4.0.2
  Wydana 24 stycznia 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Generowanie projektu:**
@@ -133,7 +133,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1401"></a>1.4.0.1
  Wydana 23 stycznia 2018 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
@@ -142,7 +142,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1400"></a>1.4.0.0
  Wydana 13 grudnia 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
@@ -157,7 +157,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1301"></a>1.3.0.1
  Wydana 12 grudnia 2017 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**
@@ -170,7 +170,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1300"></a>1.3.0.0
  Wydana 20 listopada 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Kreatorów:**
@@ -181,7 +181,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1200"></a>1.2.0.0
  Wydana 23 października 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debuger:**
@@ -198,7 +198,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1103"></a>1.1.0.3
  Wydana 23 października 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Generowanie projektu:**
@@ -207,7 +207,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1102"></a>1.1.0.2
  Wydana 8 sierpnia 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Debuger:**
@@ -220,7 +220,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1101"></a>1.1.0.1
  Wydana 20 lipca 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
@@ -229,7 +229,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1100"></a>1.1.0.0
  Wydana 12 lipca 2017 r.
- 
+
 ### <a name="new-features"></a>Nowe funkcje
 
 -   **Integracja:**
@@ -240,9 +240,9 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Naprawiono zestawu odwołania do nazwy mcs.rsp plików.
 
-    -   Dodano obsługę jednostki kompilacji assembly.json.    
+    -   Dodano obsługę jednostki kompilacji assembly.json.
 
-    -   Naprawiono definiuje ze poziomy interfejsu API.    
+    -   Naprawiono definiuje ze poziomy interfejsu API.
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -252,7 +252,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 ## <a name="1001"></a>1.0.0.1
  Wydana 4 maja 2017 r.
- 
+
 ### <a name="bug-fixes"></a>Poprawki błędów
 
 -   **Integracja:**

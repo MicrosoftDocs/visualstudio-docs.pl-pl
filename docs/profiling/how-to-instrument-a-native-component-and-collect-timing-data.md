@@ -8,40 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4fc93e6481763c7970a5b7b962692b4d8d3b3ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fbf76392244978f8266f14ac56fcc60b1d16198
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997783"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638000"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji natywnych składnika, takiego jak C++. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.  
+W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji natywnych składnika, takiego jak C++. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.
 
 > [!NOTE]
 >  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
-Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie, aby wygenerować instrumentowaną wersję składnika. Następnie uruchamiasz profiler. Po wykonaniu instrumentowanego składnika, dane chronometrażu są automatycznie zbierane do pliku danych. Można wstrzymywać i wznawiać zbieranie danych podczas sesji profilowania.  
+Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie, aby wygenerować instrumentowaną wersję składnika. Następnie uruchamiasz profiler. Po wykonaniu instrumentowanego składnika, dane chronometrażu są automatycznie zbierane do pliku danych. Można wstrzymywać i wznawiać zbieranie danych podczas sesji profilowania.
 
- Aby zakończyć sesję profilowania, zamknij aplikację docelową i następnie jawnie Zamknij profiler.  
+ Aby zakończyć sesję profilowania, zamknij aplikację docelową i następnie jawnie Zamknij profiler.
 
-## <a name="start-the-profiling-session"></a>Rozpocznij sesję profilowania  
+## <a name="start-the-profiling-session"></a>Rozpocznij sesję profilowania
 
-#### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Aby rozpocząć profilowanie za pomocą metody Instrumentacji  
+#### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Aby rozpocząć profilowanie za pomocą metody Instrumentacji
 
-1. Otwórz okno wiersza polecenia.  
+1. Otwórz okno wiersza polecenia.
 
-2. Użyj **VSInstr** narzędzie do generowania instrumentowanej wersji aplikacji docelowej.  
+2. Użyj **VSInstr** narzędzie do generowania instrumentowanej wersji aplikacji docelowej.
 
-3. Uruchom program profiler. Wpisz:  
+3. Uruchom program profiler. Wpisz:
 
-    **/ OUTPUT polecenia VSPerfCmd:** `OutputFile` [`Options`]  
+    **/ OUTPUT polecenia VSPerfCmd:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: śledzenia** opcja inicjuje profiler.  
+   - [/Start](../profiling/start.md)**: śledzenia** opcja inicjuje profiler.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.  
+   - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
 
-     Można użyć co najmniej jeden z następujących opcji z **polecenia** opcji.  
+     Można użyć co najmniej jeden z następujących opcji z **polecenia** opcji.
 
    | Opcja | Opis |
    | - | - |
@@ -54,32 +54,32 @@ Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumen
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
 
 
-4. Uruchom aplikację docelową w typowy sposób.  
+4. Uruchom aplikację docelową w typowy sposób.
 
-## <a name="control-data-collection"></a>Sterowanie zbieraniem danych  
- Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
+## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
+ Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
 
-#### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
+#### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+-   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
-    |Opcja|Opis|  
-    |------------|-----------------|  
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu, który jest określony przez identyfikator procesu (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia (**/threadon**) lub zatrzymuje (**/threadoff**) zbieranie danych dla wątku, który jest określony przez identyfikator wątku (`TID`).|  
+    |Opcja|Opis|
+    |------------|-----------------|
+    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu, który jest określony przez identyfikator procesu (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia (**/threadon**) lub zatrzymuje (**/threadoff**) zbieranie danych dla wątku, który jest określony przez identyfikator wątku (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania  
- Aby zakończyć sesję profilowania, zamknij aplikację, która działa składnik instrumentowany, a następnie wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.  
+## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
+ Aby zakończyć sesję profilowania, zamknij aplikację, która działa składnik instrumentowany, a następnie wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
 
-#### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
+#### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Zamknij aplikację docelową.  
+1.  Zamknij aplikację docelową.
 
-2.  Zamknij program profilujący. Wpisz:  
+2.  Zamknij program profilujący. Wpisz:
 
-     **Narzędzia VSPerfCmd/shutdown**  
+     **Narzędzia VSPerfCmd/shutdown**
 
-## <a name="see-also"></a>Zobacz także  
- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Zobacz także
+- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)

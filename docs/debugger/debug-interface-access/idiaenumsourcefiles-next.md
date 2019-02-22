@@ -12,40 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973346"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631786"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Pobiera określoną liczbę plików źródłowych w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaSourceFile** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba plików źródłowych w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Tablica, która ma zostać wypełniony przy użyciu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiektami, które reprezentują pliki źródłowe żądaną.  
-  
- pceltFetched  
- [out] Zwraca liczbę plików źródłowych w pobrano modułu wyliczającego.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej plików źródłowych. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [Idiasession::findlinesbylinenum —](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Pobiera określoną liczbę plików źródłowych w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Next ( 
+   ULONG            celt,
+   IDiaSourceFile** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba plików źródłowych w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Tablica, która ma zostać wypełniony przy użyciu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiektami, które reprezentują pliki źródłowe żądaną.
+
+ pceltFetched
+
+[out] Zwraca liczbę plików źródłowych w pobrano modułu wyliczającego.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej plików źródłowych. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

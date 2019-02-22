@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8122f1a3869efe32d7ae35ff05cdbb77ad84375
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484888"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618383"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash task
 
@@ -64,6 +64,5 @@ W poniższym przykładzie użyto `VerifyFileHash` zadania, aby zweryfikować sw�
 
 ## <a name="see-also"></a>Zobacz także
 
-[Zadania](../msbuild/msbuild-tasks.md)
-
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

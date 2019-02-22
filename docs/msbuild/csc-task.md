@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854125"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643941"
 ---
 # <a name="csc-task"></a>Csc — Zadanie
 Opakowuje *csc.exe*i tworzy pliki wykonywalne (*.exe* plików), bibliotek dołączanych dynamicznie (*.dll* plików), lub modułów kodu (*.netmodule* pliki). Aby uzyskać więcej informacji na temat *csc.exe*, zobacz [opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -94,5 +94,5 @@ W poniższym przykładzie użyto `Csc` zadanie, aby skompilować plik wykonywaln
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)  
-[Zadania](../msbuild/msbuild-tasks.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)

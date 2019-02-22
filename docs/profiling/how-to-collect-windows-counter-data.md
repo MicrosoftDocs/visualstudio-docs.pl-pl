@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9554740cc576fc90ed232e64dbc4f73b619a8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022472"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640938"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Instrukcje: Zbieranie danych licznika Windows
 
@@ -48,6 +48,6 @@ Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane po
 
 ## <a name="see-also"></a>Zobacz także
 
-[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Właściwości sesji wydajności](../profiling/performance-session-properties.md)  
-[Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)
+[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
+[właściwości sesji wydajności](../profiling/performance-session-properties.md)
+[liczniki procesora CPU i Windows](../profiling/cpu-and-windows-counters.md)

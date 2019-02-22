@@ -18,75 +18,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1a3c1eff1775114bbeb17645ab782451ac2ae2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923223"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596870"
 ---
 # <a name="cvwriteflag-function"></a>Cvwriteflag — funkcja
-Zapisuje plik śledzenia Concurrency Visualizer flagę.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C  
-HRESULT CvWriteFlagExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteFlagExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `argList`  
- Lista argumentów.  
-  
- `category`  
- Kategoria.  
-  
- `level`  
- Poziom ważności.  
-  
- `pMarkerSeries`  
- Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.  
-  
- `pMessage`  
- Ciąg formatu komunikatów. Nie może mieć wartości NULL.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *cvmarkers.h*  
-  
- **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
-  
- <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+Zapisuje plik śledzenia Concurrency Visualizer flagę.
+
+## <a name="syntax"></a>Składnia
+
+```C
+HRESULT CvWriteFlagExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteFlagExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>Parametry
+ `argList` Lista argumentów.
+
+ `category` Kategoria.
+
+ `level` Poziom ważności.
+
+ `pMarkerSeries` Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.
+
+ `pMessage` Ciąg formatu komunikatów. Nie może mieć wartości NULL.
+
+## <a name="return-value"></a>Wartość zwracana
+ S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *cvmarkers.h*
+
+ **Unicode:** CvWriteFlagExW, CvWriteFlagExVW
+
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

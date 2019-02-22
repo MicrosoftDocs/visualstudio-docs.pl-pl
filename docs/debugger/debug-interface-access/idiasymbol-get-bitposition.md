@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1cbe949c12e3d1361563a5ead378b1aa81e1cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 521a21b2d3534433fe72ea6bd9578c0e668755ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611838"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-Pobiera Pozycja bitu lokalizacji. Używany podczas [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsBitField`.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_bitPosition (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca pozycję bit lokalizacji.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
-  
+Pobiera Pozycja bitu lokalizacji. Używany podczas [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsBitField`.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_bitPosition ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca pozycję bit lokalizacji.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|V7.0 DIA SDK|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|V7.0 DIA SDK|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

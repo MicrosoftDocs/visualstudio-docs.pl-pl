@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d3f343e54f2d45799b5020f7ea0d39d79f524c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977359"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632553"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-Pobiera część sekcji adresem kod dla ramki.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca część sekcji adresem kod dla ramki.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Pobiera część sekcji adresem kod dla ramki.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca część sekcji adresem kod dla ramki.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

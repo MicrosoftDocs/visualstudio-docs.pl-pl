@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956821"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597988"
 ---
 # <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
-Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w danym momencie. Zwróć uwagę, że nie są wyświetlane dwa kolory, jeden w pionie skumulowany z drugiej strony. Te kolory reprezentują tylko najważniejsze dwa najczęstsze działania w danym okresie. Częstotliwości te dwa działania są wyświetlane względem siebie jako trzecie lub połowami kreska pionowa. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji Widok wątków.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)   
- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)   
- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)   
- [Czas wywłaszczania](../profiling/preemption-time.md)   
- [Czas uśpienia](../profiling/sleep-time.md)   
- [Czas synchronizacji](../profiling/synchronization-time.md)   
- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
+Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w danym momencie. Zwróć uwagę, że nie są wyświetlane dwa kolory, jeden w pionie skumulowany z drugiej strony. Te kolory reprezentują tylko najważniejsze dwa najczęstsze działania w danym okresie. Częstotliwości te dwa działania są wyświetlane względem siebie jako trzecie lub połowami kreska pionowa. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji Widok wątków.
+
+## <a name="see-also"></a>Zobacz także
+- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
+- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
+- [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
+- [Czas wywłaszczania](../profiling/preemption-time.md)
+- [Czas uśpienia](../profiling/sleep-time.md)
+- [Czas synchronizacji](../profiling/synchronization-time.md)
+- [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)

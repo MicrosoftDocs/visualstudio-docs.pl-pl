@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d46934b6240c07b7fed3fe2025b732eb554813a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963869"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627470"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Przycisk Eksportuj (Concurrency Visualizer)
-**Wyeksportować** przycisk umożliwia wyeksportowanie jak stosu wywołań. *CSV* plik na użytek własny lub do użytku z innego narzędzia takiego jak program Microsoft Excel.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Narzędzie CONCURRENCY Visualizer](../profiling/concurrency-visualizer.md)   
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+**Wyeksportować** przycisk umożliwia wyeksportowanie jak stosu wywołań. *CSV* plik na użytek własny lub do użytku z innego narzędzia takiego jak program Microsoft Excel.
+
+## <a name="see-also"></a>Zobacz także
+- [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936645"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645722"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -61,6 +61,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Aktualizacja**: Dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, utworzyć plik wsadowy za pomocą następujących poleceń:
 
    ```cmd
@@ -123,7 +124,7 @@ Jeśli nazwy certyfikatów nie były w **wystawiony dla** kolumn muszą być zai
 
 ## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
-Po zainstalowaniu certyfikatów, za pomocą instrukcji z kontynuacją wdrożenia programu Visual Studio [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) części "Tworzenie instalacji sieciowej programu Visual Studio".
+Po zainstalowaniu certyfikatów, za pomocą instrukcji z kontynuacją wdrożenia programu Visual Studio [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) części "Tworzenie instalacji sieciowej programu Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

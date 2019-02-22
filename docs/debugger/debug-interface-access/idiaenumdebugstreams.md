@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afe2314d84d0cc90c6c372e69f6fbb765034a5d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7b17e79e1bfefd5b6b23695f2f49d694c7148ae0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155451"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645137"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 Wylicza różnych strumieni debugowania zawartych w źródle danych.
@@ -85,6 +85,6 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
-[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

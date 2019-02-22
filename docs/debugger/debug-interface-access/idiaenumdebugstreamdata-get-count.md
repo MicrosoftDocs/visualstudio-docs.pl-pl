@@ -12,31 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5874e4d27b3fe5940b5136958c64014c43f86c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f57318508f06258aec537de30f00326c3afca7a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602134"
 ---
 # <a name="idiaenumdebugstreamdatagetcount"></a>IDiaEnumDebugStreamData::get_Count
-Pobiera rekordy w strumieniu danych debugowania.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pRetVal  
- [out, retval] Zwraca liczbę rekordów.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)
+Pobiera rekordy w strumieniu danych debugowania.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pRetVal
+- [out, retval] Zwraca liczbę rekordów.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)

@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a80212a2de88a5896caf0b655b9710afbce096f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005959"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599002"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Powiązane usługi i interfejsy (pakiet VSPackage kontroli kodu źródłowego)
-W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kontroli źródła [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kontrola źródła pakietu VSPackage implementuje niektóre z tych interfejsów i używa innych użytkowników do wykonywania zadań kontroli źródła.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfejsy implementowane przez i pakietów VSPackage kontroli źródła  
- Następujące interfejsy są opisane w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], i do kontroli źródła pakietu VSPackage implementuje część z nich w zależności od jej zestaw żądanej funkcji. Niektóre interfejsy są oznaczone jako wymagane i muszą być zaimplementowane przez każdy formant źródła pakietu VSPackage.  
-  
- Dla tych interfejsów, które pakiet nie zawiera implementacji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia domyślną implementację interfejsu. Należy pamiętać, że domyślna implementacja jest przeznaczony dla przypadku, gdy VSPackage nie jest zarejestrowane, a projekt nie jest kontrolowany. Kontroli źródła poprawnie w pisemnej pakietu VSPackage implementuje wszystkie niezbędne interfejsy, a nie w gestii Domyślna implementacja z tych interfejsów.  
-  
- Kontroli źródła pakietu VSPackage musi implementować prywatnej usługa, która hermetyzuje niektóre lub wszystkie z następujących interfejsów.  
-  
- Interfejsy są:  
-  
--   Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.  
-  
--   Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.  
-  
--   Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.  
-  
+W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kontroli źródła [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kontrola źródła pakietu VSPackage implementuje niektóre z tych interfejsów i używa innych użytkowników do wykonywania zadań kontroli źródła.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfejsy implementowane przez i pakietów VSPackage kontroli źródła
+ Następujące interfejsy są opisane w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], i do kontroli źródła pakietu VSPackage implementuje część z nich w zależności od jej zestaw żądanej funkcji. Niektóre interfejsy są oznaczone jako wymagane i muszą być zaimplementowane przez każdy formant źródła pakietu VSPackage.
+
+ Dla tych interfejsów, które pakiet nie zawiera implementacji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia domyślną implementację interfejsu. Należy pamiętać, że domyślna implementacja jest przeznaczony dla przypadku, gdy VSPackage nie jest zarejestrowane, a projekt nie jest kontrolowany. Kontroli źródła poprawnie w pisemnej pakietu VSPackage implementuje wszystkie niezbędne interfejsy, a nie w gestii Domyślna implementacja z tych interfejsów.
+
+ Kontroli źródła pakietu VSPackage musi implementować prywatnej usługa, która hermetyzuje niektóre lub wszystkie z następujących interfejsów.
+
+ Interfejsy są:
+
+-   Wymagane: Odpowiednie jednostki (projektu kontroli źródła pakietu VSPackage, wycinka kontroli źródła,) musi implementować interfejs.
+
+-   Zalecane: Jednostka powinna implementować ten interfejs; w przeciwnym razie funkcji kontroli źródła może być ograniczona.
+
+-   Opcjonalnie: jednostki można zaimplementować ten interfejs umożliwia korzystanie z bogatszego zestawu funkcji.
+
 | Interface | Cel | Zaimplementowane przez | Implementowanie? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Edytory wywołanie tego interfejsu przed zmodyfikowaniem lub zapisanie pliku. Pakietu VSPackage kontroli źródła można wyewidencjonować pliku lub odmówić operację, jeśli wyewidencjonowanie nie powiedzie się. | Kontrola źródła pakietu VSPackage | Zalecane |
@@ -60,6 +60,6 @@ W tej sekcji przedstawiono wszystkie interfejsy dotyczące pakietu VSPackage kon
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Ten interfejs jest używany, aby zapisać ustawienia kontroli źródła w rozwiązania (.sln). Ustawienia obejmują lokalizację kontroli źródła i flagi stanu kontroli źródła. | Kontrola źródła pakietu VSPackage | Zalecane |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Ten interfejs jest używany, aby zapisać ustawienia kontroli źródła w pliku rozwiązania, opcje (suo). Może to obejmować ustawienia kontroli źródła specyficzne dla użytkownika, takie jak lokalizacja rejestracji bieżącego użytkownika. | Kontrola źródła pakietu VSPackage | Zalecane |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Ten interfejs jest używany do monitorowania zdarzeń w celu wykonywania operacji, takich jak sprawdzanie w plikach projektu przed zamknięciem rozwiązania lub wprowadzenie nowych plików z kontroli źródła, podczas otwierania projektu. | Kontrola źródła pakietu VSPackage | Zalecane |
-  
-## <a name="see-also"></a>Zobacz też  
- [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)

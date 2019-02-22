@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316109"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623427"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Określa rejestru docelowego.
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elementy
-CV_REG_*  
-Rejestry używane przez firmę Intel 80 x 86 i ix86 procesorów i p-code.
+CV_REG_ * rejestruje używane przez firmę Intel 80 x 86 i ix86 procesorów i p-code.
 
-CV_R68_*  
-Rejestry, używane przez procesor 68K.
+CV_R68_ * rejestruje używane przez procesor 68K.
 
-CV_M4_*  
-Rejestry używane przez MIPS 4000 serii procesora.
+CV_M4_ * rejestruje używane przez MIPS 4000 serii procesora.
 
-CV_ALPHA_*  
-Używane przez procesor serii cyfrowego Equipment Corporation alfa AXP rejestrów.
+CV_ALPHA_ * rejestruje posługują się cyfrowego Equipment Corporation alfa AXP serii procesora.
 
-CV_PPC_*  
-Używane przez Procesor PowerPC Motorola/IBM rejestrów.
+CV_PPC_ * rejestruje używane przez Procesor PowerPC Motorola/IBM.
 
-CV_SH3_ * i CV_SH_\*  
-Używane przez procesor serii Hitachi SH3 i Hitachi SH rejestrów.
+CV_SH3_ * i CV_SH_\* rejestry używane przez Hitachi SH3 i Hitachi SH procesor serii.
 
-CV_ARM_*  
-Rejestry używane przez procesory Advanced RISC Machine (ARM).
+CV_ARM_ * rejestruje używane przez procesory Advanced RISC Machine (ARM).
 
-CV_IA64_*  
-Rejestry korzystają z procesorów Intel IA64 z serii.
+CV_IA64_ * rejestruje korzystają z procesorów Intel IA64 z serii.
 
-CV_TRI_*  
-Używane przez procesor TriCore technologii Infineon rejestrów.
+CV_TRI_ * rejestruje posługują się TriCore technologii Infineon procesora.
 
-CV_AM33_*  
-Rejestry używane przez AM33 Matsushita/Panasonic i związane z procesorów.
+CV_AM33_ * rejestruje posługują się AM33 Matsushita/Panasonic i związane z procesorów.
 
-CV_M32R_*  
-Używane przez procesor Mitsubishi M32R rejestrów.
+CV_M32R_ * rejestruje używane przez procesor M32R sieci.
 
 ## <a name="remarks"></a>Uwagi
 Każdy typ procesora używa swój własny unikatowy zestaw rejestrów.
@@ -461,9 +450,9 @@ Wartości w tym wyliczeniu są przekazywane do następujących metod:
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

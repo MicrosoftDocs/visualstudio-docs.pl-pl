@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937369"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610453"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: Kompilacja określonych obiektów docelowych, w przypadku rozwiązań przy użyciu MSBuild.exe
-Możesz użyć *MSBuild.exe* do kompilacja określonych obiektów docelowych określonych projektów w rozwiązaniu.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Tworzenie konkretnego celu określonego projektu w rozwiązaniu  
-  
-1.  W wierszu polecenia wpisz polecenie `MSBuild.exe <SolutionName>.sln`, gdzie `<SolutionName>` odnosi się do nazwy pliku rozwiązania, który zawiera element docelowy, który chcesz wykonać.  
-  
+Możesz użyć *MSBuild.exe* do kompilacja określonych obiektów docelowych określonych projektów w rozwiązaniu.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Tworzenie konkretnego celu określonego projektu w rozwiązaniu
+
+1.  W wierszu polecenia wpisz polecenie `MSBuild.exe <SolutionName>.sln`, gdzie `<SolutionName>` odnosi się do nazwy pliku rozwiązania, który zawiera element docelowy, który chcesz wykonać.
+
 2. Określ element docelowy po `-target:` przełącznika w formacie \<nazwa_projektu >:\<TargetName >. Jeśli nazwa projektu zawiera którykolwiek ze znaków `%`, `$`, `@`, `;`, `.`, `(`, `)`, lub `'`, zastąp je za pomocą `_` w określonym Nazwa docelowego.
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład wykonuje `Rebuild` celem `NotInSlnFolder` projektu, a następnie wykonuje `Clean` celem `InSolutionFolder` projektu, który znajduje się w *Nowyfolder* folderu rozwiązania.  
-  
+
+## <a name="example"></a>Przykład
+ Poniższy przykład wykonuje `Rebuild` celem `NotInSlnFolder` projektu, a następnie wykonuje `Clean` celem `InSolutionFolder` projektu, który znajduje się w *Nowyfolder* folderu rozwiązania.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ Jeśli chcesz sprawdzić dostępne opcje, można użyć opcji debugowania, dosta
 
 Nie są kompilowane przy użyciu tej zmiennej środowiskowej, ustawić, chyba że potrzebne w tym widoku wewnętrznego. To ustawienie może spowodować problemy kompilowanie projektów w rozwiązaniu.
 
-## <a name="see-also"></a>Zobacz także  
- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)   
- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Zobacz także
+- [Informacje dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
+- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

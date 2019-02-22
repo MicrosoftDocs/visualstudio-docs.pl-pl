@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad74270ab9ed0cba970e133af1a798d9c905eb2a
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 44be5f88542d867d8baf25fbc3cdd3c060231d7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635335"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Wylicza różnych symboli znajdujących się w źródle danych.
@@ -93,7 +93,7 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

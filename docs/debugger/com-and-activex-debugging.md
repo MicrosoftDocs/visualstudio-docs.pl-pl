@@ -21,32 +21,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7196ce1342fb410f13729b9d204a9ff4be3d3f3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014014"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609103"
 ---
 # <a name="com-and-activex-debugging"></a>COM i debugowanie ActiveX
-Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontrolek ActiveX.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md)  
- Podczas debugowania aplikacji modelu COM jest wspomniany uwagi. Obejmują problemów: debugowanie kontenera przy użyciu dwóch projektów w obrębie tego samego rozwiązania, śledzenia do wywołania, które bardziej szczegółowo w granicach procesu, ustawiania punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między oraz kontenery i serwery i serwera COM.  
-  
- [Instrukcje: Debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md)  
- Zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w kontrolce ActiveX, debugowania powiązanych z danymi formantu ActiveX, symulując określonego kontenera i przechodzenie do kodu kontenera.  
-  
- [Narzędzia debugowania COM](../debugger/com-debugging-tools.md)  
- Wyświetla listę przeglądarek i przykładowe aplikacje, które mogą być przydatne podczas debugowania aplikacji modelu COM.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)  
- Zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują: co nowego w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowani, debugowanie zarządzanego kodu, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowania bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Wprowadzenie do modelu COM](/cpp/atl/introduction-to-com)   
- [Kontrolki ActiveX](/cpp/mfc/activex-controls)   
- [Aplikacje serwerowe SDI](../debugger/sdi-server-applications.md)
+Ta sekcja zawiera wskazówki dotyczące debugowania aplikacji modelu COM i kontrolek ActiveX.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Debugowanie kontenera i serwera COM](../debugger/com-server-and-container-debugging.md) wspomniany uwagi podczas debugowania aplikacji modelu COM. Obejmują problemów: debugowanie kontenera przy użyciu dwóch projektów w obrębie tego samego rozwiązania, śledzenia do wywołania, które bardziej szczegółowo w granicach procesu, ustawiania punktów przerwania w funkcjach wywołania zwrotnego i przechodzenie między oraz kontenery i serwery i serwera COM.
+
+ [Instrukcje: Debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md) zawiera informacje na temat debugowania formantów ActiveX. Obejmuje to: określenie kontenera dla sesji debugowania zobaczyć, jak wykonuje kod w kontrolce ActiveX, debugowania powiązanych z danymi formantu ActiveX, symulując określonego kontenera i przechodzenie do kodu kontenera.
+
+ [Narzędzia debugowania COM](../debugger/com-debugging-tools.md) zawiera listę przeglądarek i przykładowe aplikacje, które mogą być przydatne podczas debugowania aplikacji modelu COM.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md) zawiera łącza do większych sekcji dokumentacji debugowania. Informacje obejmują: co nowego w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, edytowanie i kontynuowani, debugowanie zarządzanego kodu, debugowania projektów Visual C++, debugowania modelu COM i ActiveX, debugowania bibliotek DLL, debugowanie SQL i użytkownika odwołania do interfejsu.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Wprowadzenie do modelu COM](/cpp/atl/introduction-to-com)
+- [Kontrolki ActiveX](/cpp/mfc/activex-controls)
+- [Aplikacje serwerowe SDI](../debugger/sdi-server-applications.md)

@@ -13,33 +13,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aacc1793d72457ff6c27331f81e401c5e51ca7ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639443"
 ---
 # <a name="work-with-workbooks"></a>Praca ze skoroszytami
-  <xref:Microsoft.Office.Tools.Excel.Workbook> i <xref:Microsoft.Office.Interop.Excel.Workbooks> klasa zawiera metody i właściwości, używany do wykonywania zadań za pomocą skoroszytów.  
-  
-|Zadanie|Procedura|  
-|----------|---------------|  
-|Utwórz nowy skoroszyt.|[Instrukcje: Programowe tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)|  
-|Otwórz skoroszyt określony.|[Instrukcje: Programowe otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)|  
-|Zamknij określonym skoroszycie i Zapisz zmiany.|[Instrukcje: Programowe zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)|  
-|Zapisywanie skoroszytów w formatach programu Excel lub w formacie XML.|[Instrukcje: Programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)|  
-|Przenieś fokus do bieżącego skoroszytu lub innym skoroszycie.|  
-|[Instrukcje: Programowe Włączanie ochrony skoroszytów](../vsto/how-to-programmatically-protect-workbooks.md)|  
-|Pobierz kolekcję skoroszytu ostatnio używanych plików.|[Instrukcje: Programowe listy ostatnio używanych plików skoroszytu](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|  
-|Otwieranie plików tekstowych jako skoroszytu.|[Instrukcje: Programowe otwieranie plików tekstowych jako skoroszytu](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|  
-  
- Aby uzyskać więcej informacji o zadaniach programu Excel i modelu obiektów programu Excel, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
-  
- W niektórych przypadkach sposób wykonywania tych zadań w dodatkach VSTO różni się od metody, wykonać je w dostosowaniach na poziomie dokumentu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
- [Praca z arkuszami](../vsto/working-with-worksheets.md)   
- [Praca z zakresami](../vsto/working-with-ranges.md)   
- [Użyj kontrolek Windows Forms w arkuszach Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
+  <xref:Microsoft.Office.Tools.Excel.Workbook> i <xref:Microsoft.Office.Interop.Excel.Workbooks> klasa zawiera metody i właściwości, używany do wykonywania zadań za pomocą skoroszytów.
+
+|Zadanie|Procedura|
+|----------|---------------|
+|Utwórz nowy skoroszyt.|[Instrukcje: Programowe tworzenie nowych skoroszytów](../vsto/how-to-programmatically-create-new-workbooks.md)|
+|Otwórz skoroszyt określony.|[Instrukcje: Programowe otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)|
+|Zamknij określonym skoroszycie i Zapisz zmiany.|[Instrukcje: Programowe zamykanie skoroszytów](../vsto/how-to-programmatically-close-workbooks.md)|
+|Zapisywanie skoroszytów w formatach programu Excel lub w formacie XML.|[Instrukcje: Programowe zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)|
+|Przenieś fokus do bieżącego skoroszytu lub innym skoroszycie.|
+|[Instrukcje: Programowe Włączanie ochrony skoroszytów](../vsto/how-to-programmatically-protect-workbooks.md)|
+|Pobierz kolekcję skoroszytu ostatnio używanych plików.|[Instrukcje: Programowe listy ostatnio używanych plików skoroszytu](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
+|Otwieranie plików tekstowych jako skoroszytu.|[Instrukcje: Programowe otwieranie plików tekstowych jako skoroszytu](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
+
+ Aby uzyskać więcej informacji o zadaniach programu Excel i modelu obiektów programu Excel, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).
+
+ W niektórych przypadkach sposób wykonywania tych zadań w dodatkach VSTO różni się od metody, wykonać je w dostosowaniach na poziomie dokumentu.
+
+## <a name="see-also"></a>Zobacz także
+- [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)
+- [Praca z arkuszami](../vsto/working-with-worksheets.md)
+- [Praca z zakresami](../vsto/working-with-ranges.md)
+- [Użyj kontrolek Windows Forms w arkuszach Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603264"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: Rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* pliki, które są importowane w pliku projektu. Te zaimportowane pliki *Microsoft.Common.targets*, można rozszerzyć, aby możliwe było uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym artykule opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu kompilacji:
@@ -35,8 +35,8 @@ ms.locfileid: "55908494"
 
 1. Identyfikowanie wstępnie zdefiniowanego elementu docelowego w *Microsoft.Common.targets* , którą chcesz zastąpić. Znajdują się w tabeli poniżej, aby uzyskać pełną listę obiektów docelowych, które można bezpiecznie zastąpić.
 
-2. Definiowanie docelowego lub miejsc docelowych, na końcu pliku projektu bezpośrednio przed `</Project>` tagu. Na przykład:  
-  
+2. Definiowanie docelowego lub miejsc docelowych, na końcu pliku projektu bezpośrednio przed `</Project>` tagu. Na przykład:
+
     ```xml
     <Project>
         ...
@@ -48,7 +48,7 @@ ms.locfileid: "55908494"
         </Target>
     </Project>
     ```
-  
+
 3. Tworzenie pliku projektu.
 
 W poniższej tabeli przedstawiono wszystkie obiekty docelowe w *Microsoft.Common.targets* można bezpiecznie zastąpić.
@@ -124,6 +124,6 @@ Projekty, które importują plików projektu można zastąpić te właściwości
 |`CompileDependsOn`|Właściwość, aby zastąpić, jeśli chcesz wstawić niestandardowych procesów przed lub po wykonaniu kroku kompilacji.|
 
 ## <a name="see-also"></a>Zobacz także
-[Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)  
-[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)  
-[pliki .targets](../msbuild/msbuild-dot-targets-files.md)
+- [Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [pliki .targets](../msbuild/msbuild-dot-targets-files.md)

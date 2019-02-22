@@ -15,34 +15,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07584130b89eb90da24ebf1ee4783a312033d07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940469"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632696"
 ---
 # <a name="summary-view"></a>Widok podsumowania
-Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.  
+Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.
 
- Wszystkie widoki podsumowanie oprócz widok podsumowania danych współbieżności wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania.  
+ Wszystkie widoki podsumowanie oprócz widok podsumowania danych współbieżności wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania.
 
--   Jeśli określisz odcinek czasu na wykresie, możesz przeanalizować dane dla tego segmentu lub zmieniaj segment, który określiłeś osi czasu. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   Jeśli określisz odcinek czasu na wykresie, możesz przeanalizować dane dla tego segmentu lub zmieniaj segment, który określiłeś osi czasu. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
 
--   Możesz kliknąć funkcji na liście Widok podsumowania, aby otworzyć widok szczegółów funkcji dla tej funkcji. Możesz również kliknąć prawym przyciskiem myszy funkcję dla innych opcji widoku.  
+-   Możesz kliknąć funkcji na liście Widok podsumowania, aby otworzyć widok szczegółów funkcji dla tej funkcji. Możesz również kliknąć prawym przyciskiem myszy funkcję dla innych opcji widoku.
 
--   Aby zmodyfikować liczbę elementów, które są wyświetlane na listach widok podsumowania, otwórz **narzędzia** menu wskaż **opcje**, a następnie kliknij przycisk **narzędzia do oceny wydajności**. W obszarze **ustawienia ogólne**, zmodyfikuj **liczba funkcji w widoku podsumowania** ustawienie.  
+-   Aby zmodyfikować liczbę elementów, które są wyświetlane na listach widok podsumowania, otwórz **narzędzia** menu wskaż **opcje**, a następnie kliknij przycisk **narzędzia do oceny wydajności**. W obszarze **ustawienia ogólne**, zmodyfikuj **liczba funkcji w widoku podsumowania** ustawienie.
 
-## <a name="notifications-links"></a>Linki powiadomienia  
- Możesz kliknąć linki, aby ustawić opcje wyświetlania raportu na liście powiadomień. Lista jest po prawej stronie wykres osi czasu.  
+## <a name="notifications-links"></a>Linki powiadomienia
+ Możesz kliknąć linki, aby ustawić opcje wyświetlania raportu na liście powiadomień. Lista jest po prawej stronie wykres osi czasu.
 
-|||  
-|-|-|  
-|**Pokaż kod niezwiązany z użytkownikiem**<br /><br /> **Pokaż tylko mój kod**|Nie są dostępne dla kodu natywnego lub dane, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Przełączenie między wyświetlaniem tylko dane z kodu użytkownika (**Pokaż tylko mój kod**) i wyświetlanie danych z całego kodu, w tym kodu systemowego (**Pokaż kod niezwiązany z użytkownikiem**). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [jak: Filtrowanie widoków raportu, aby wyświetlić tylko mój kod narzędzi profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
-|**Wyświetl asystę**|Wyświetla ostrzeżenia reguły wydajności w **lista błędów** okna. Aby uzyskać więcej informacji, zobacz [korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
+|||
+|-|-|
+|**Pokaż kod niezwiązany z użytkownikiem**<br /><br /> **Pokaż tylko mój kod**|Nie są dostępne dla kodu natywnego lub dane, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Przełączenie między wyświetlaniem tylko dane z kodu użytkownika (**Pokaż tylko mój kod**) i wyświetlanie danych z całego kodu, w tym kodu systemowego (**Pokaż kod niezwiązany z użytkownikiem**). Domyślnie dane są ograniczone do kodu użytkownika. Aby zmienić to ustawienie, zobacz [jak: Filtrowanie widoków raportu, aby wyświetlić tylko mój kod narzędzi profilowania](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
+|**Wyświetl asystę**|Wyświetla ostrzeżenia reguły wydajności w **lista błędów** okna. Aby uzyskać więcej informacji, zobacz [korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|
 
-## <a name="report"></a>Raport  
- Możesz kliknąć linki Otwórz różne widoki i do porównania, Zapisz lub filtrować raport na liście raportów. Lista jest po prawej stronie wykres osi czasu.  
+## <a name="report"></a>Raport
+ Możesz kliknąć linki Otwórz różne widoki i do porównania, Zapisz lub filtrować raport na liście raportów. Lista jest po prawej stronie wykres osi czasu.
 
 
 | | |
@@ -55,7 +55,7 @@ Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub
 | **Filtruj dane raportu** | Wyświetla profilowania okienko filtru raportu, na której można określić kryteria, aby ograniczyć dane w widoku raportu. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md) |
 | **Przełącz widok pełnoekranowy** | Włącza lub wyłącza tryb pełnoekranowy dla widoku raportu. |
 
-## <a name="see-also"></a>Zobacz także  
- [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)   
- [Widok podsumowania - dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)   
- [Widok podsumowania - dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)
+## <a name="see-also"></a>Zobacz także
+- [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
+- [Widok podsumowania - dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
+- [Widok podsumowania - dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

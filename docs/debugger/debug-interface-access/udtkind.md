@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317734"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636583"
 ---
 # <a name="udtkind"></a>UdtKind
 W tym artykule opisano różne typy zdefiniowane przez użytkownika (UDT).
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elementy
-UdtStruct  
-UDT to struktura.
+UdtStruct UDT jest strukturą.
 
-UdtClass  
-UDT jest klasą.
+UdtClass UDT jest klasą.
 
-UdtUnion  
-UDT to Unii.
+UdtUnion UDT jest Unii.
 
-UdtInterface  
-UDT jest interfejsem.
+UdtInterface UDT jest interfejsem.
 
 ## <a name="remarks"></a>Uwagi
 Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_udtkind —](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) metody.
@@ -53,5 +49,5 @@ Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_udtkind —](../.
 Nagłówek: cvconst.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

@@ -13,51 +13,51 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b1605705b161dfdb8b5857dcab6075d9a997a55
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 71e67ab41fd39563520370eb079fca1b7c82015e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874578"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601132"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji
-  W programie Visual Studio możesz utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Te kontrolki są nazywane kontrolki użytkownika. Formant użytkownika jest rodzajem złożonej kontrolki, która działa podobnie do strony sieci Web platformy ASP.NET — Dodawanie istniejących formantów serwera sieci Web i znaczników do formantu użytkownika i definiowanie właściwości i metody dla formantu. Następnie można osadzać na stronach sieci Web platformy ASP.NET, w których działają jako jednostka.  
-  
+  W programie Visual Studio możesz utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint. Te kontrolki są nazywane kontrolki użytkownika. Formant użytkownika jest rodzajem złożonej kontrolki, która działa podobnie do strony sieci Web platformy ASP.NET — Dodawanie istniejących formantów serwera sieci Web i znaczników do formantu użytkownika i definiowanie właściwości i metody dla formantu. Następnie można osadzać na stronach sieci Web platformy ASP.NET, w których działają jako jednostka.
+
 ## <a name="create-a-user-control"></a>Tworzenie kontrolki użytkownika
- Aby utworzyć kontrolkę użytkownika, należy dodać **kontrolki użytkownika** do **pusty projekt programu SharePoint**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
-  
- Po dodaniu **kontrolki użytkownika** element, tworzy folder w projekcie programu Visual Studio i następnie dodaje kilka plików do folderu. W poniższej tabeli opisano każdy plik.  
-  
-|Plik|Opis|  
-|----------|-----------------|  
-|Plik kontrolki użytkownika|Definiuje kontrolki użytkownika. Projektowanie kontrolki użytkownika, dodając formanty i znaczników do tego pliku.|  
-|Plik kodu|Zawiera kod związany z kontrolki użytkownika. Dodaj kod do obsługi zdarzeń do tego pliku.|  
-|Plik kodu projektanta|Zawiera kod generowany przez projektanta i nie należy bezpośrednio edytować.|  
-  
+ Aby utworzyć kontrolkę użytkownika, należy dodać **kontrolki użytkownika** do **pusty projekt programu SharePoint**. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).
+
+ Po dodaniu **kontrolki użytkownika** element, tworzy folder w projekcie programu Visual Studio i następnie dodaje kilka plików do folderu. W poniższej tabeli opisano każdy plik.
+
+|Plik|Opis|
+|----------|-----------------|
+|Plik kontrolki użytkownika|Definiuje kontrolki użytkownika. Projektowanie kontrolki użytkownika, dodając formanty i znaczników do tego pliku.|
+|Plik kodu|Zawiera kod związany z kontrolki użytkownika. Dodaj kod do obsługi zdarzeń do tego pliku.|
+|Plik kodu projektanta|Zawiera kod generowany przez projektanta i nie należy bezpośrednio edytować.|
+
 ## <a name="design-the-user-control"></a>Projektowanie kontrolki użytkownika
- Projektowanie kontrolki użytkownika przy użyciu projektanta Visual Web Developer w programie Visual Studio. Projektant jest wyświetlany, gdy otworzysz plik kontrolki użytkownika w projekcie i wybierz **projektowania** kartę.  
+ Projektowanie kontrolki użytkownika przy użyciu projektanta Visual Web Developer w programie Visual Studio. Projektant jest wyświetlany, gdy otworzysz plik kontrolki użytkownika w projekcie i wybierz **projektowania** kartę.
 
 ## <a name="consume-the-user-control"></a>Użyj kontrolki użytkownika
- Formanty użytkownika nie są wyświetlane w programie SharePoint, dopóki nie zostaną umieszczone na stronie aplikacji lub składnika Web Part.  
-  
- Aby dołączyć kontrolki użytkownika na stronie aplikacji, otwórz strony sieci Web, do której chcesz dodać kontrolkę użytkownika ASP.NET. Przełącz do widoku projektu, a następnie wybierz swój plik formant użytkownika niestandardowego w Eksploratorze rozwiązań, a następnie przeciągnij go na stronie. Kontrolka użytkownika ASP.NET jest dodawany do strony, a projektant tworzy dyrektywy @ rejestru, który jest wymagany do strony aby rozpoznać kontrolki użytkownika. Teraz możesz pracować z właściwości publiczne i metod formantu.  
-  
- Aby dołączyć kontrolki użytkownika w składniku Web Part, należy dodać kontrolkę użytkownika do składnika Web Part <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> kolekcji w pliku kodu składnika Web Part. Poniższy przykład dodaje formant użytkownika do <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> zbiór składnika Web Part.  
-  
+ Formanty użytkownika nie są wyświetlane w programie SharePoint, dopóki nie zostaną umieszczone na stronie aplikacji lub składnika Web Part.
+
+ Aby dołączyć kontrolki użytkownika na stronie aplikacji, otwórz strony sieci Web, do której chcesz dodać kontrolkę użytkownika ASP.NET. Przełącz do widoku projektu, a następnie wybierz swój plik formant użytkownika niestandardowego w Eksploratorze rozwiązań, a następnie przeciągnij go na stronie. Kontrolka użytkownika ASP.NET jest dodawany do strony, a projektant tworzy dyrektywy @ rejestru, który jest wymagany do strony aby rozpoznać kontrolki użytkownika. Teraz możesz pracować z właściwości publiczne i metod formantu.
+
+ Aby dołączyć kontrolki użytkownika w składniku Web Part, należy dodać kontrolkę użytkownika do składnika Web Part <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> kolekcji w pliku kodu składnika Web Part. Poniższy przykład dodaje formant użytkownika do <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> zbiór składnika Web Part.
+
  [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]  
-  
+ [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+
 ## <a name="debug-a-user-control"></a>Debugowanie kontrolki użytkownika
- Aby debugować formant użytkownika, upewnij się, czy kontrolka użytkownika znajduje się w stronę aplikacji lub składnika Web Part w projekcie programu SharePoint. Następnie można debugować kodu w kontrolce użytkownika, tak samo, jak debuguje się kod w dowolnym projektu programu Visual Studio.  
-  
- Po uruchomieniu debugera programu Visual Studio, Visual Studio otwiera witrynę programu SharePoint.  
-  
- W programie SharePoint otwórz strony aplikacji, który zawiera formant użytkownika. Jeśli kontrolka użytkownika znajduje się w składniku Web Part, należy dodać składnik Web Part do strony składników Web Part w programie SharePoint.  
-  
- Aby uzyskać więcej informacji na temat debugowania projektów programu SharePoint, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md).  
-  
+ Aby debugować formant użytkownika, upewnij się, czy kontrolka użytkownika znajduje się w stronę aplikacji lub składnika Web Part w projekcie programu SharePoint. Następnie można debugować kodu w kontrolce użytkownika, tak samo, jak debuguje się kod w dowolnym projektu programu Visual Studio.
+
+ Po uruchomieniu debugera programu Visual Studio, Visual Studio otwiera witrynę programu SharePoint.
+
+ W programie SharePoint otwórz strony aplikacji, który zawiera formant użytkownika. Jeśli kontrolka użytkownika znajduje się w składniku Web Part, należy dodać składnik Web Part do strony składników Web Part w programie SharePoint.
+
+ Aby uzyskać więcej informacji na temat debugowania projektów programu SharePoint, zobacz [rozwiązań SharePoint Rozwiązywanie problemów z](../sharepoint/troubleshooting-sharepoint-solutions.md).
+
 ## <a name="related-topics"></a>Tematy pokrewne
-  
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Dowiesz się, jak utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|  
+
+|Tytuł|Opis|
+|-----------|-----------------|
+|[Instrukcje: Tworzenie kontrolki użytkownika dla części strony lub sieci web aplikacji programu SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Dowiesz się, jak utworzyć niestandardowe formanty wielokrotnego użytku, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|

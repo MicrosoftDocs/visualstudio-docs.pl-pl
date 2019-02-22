@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 122a71289fc11e4301476c90e7ed9267cce18681
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cd768220b25ec93ffdb4f038db475304db71333
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014825"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605539"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
-Pobiera flagę określającą, czy funkcja została oznaczona jako nigdy nie zwróciło [noreturn](/cpp/cpp/noreturn) atrybutu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_noReturn(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pFlag  
- [out] Zwraca `TRUE` Jeśli funkcja została zadeklarowana jako nigdy nie zwróciło `noreturn` atrybutu; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera flagę określającą, czy funkcja została oznaczona jako nigdy nie zwróciło [noreturn](/cpp/cpp/noreturn) atrybutu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_noReturn(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pFlag
+
+[out] Zwraca `TRUE` Jeśli funkcja została zadeklarowana jako nigdy nie zwróciło `noreturn` atrybutu; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noreturn](/cpp/cpp/noreturn)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|DIA SDK w wersji 8.0|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [noreturn](/cpp/cpp/noreturn)

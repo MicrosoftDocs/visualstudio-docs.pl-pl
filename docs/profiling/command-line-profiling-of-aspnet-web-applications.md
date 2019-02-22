@@ -11,21 +11,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90fc485810c147ebb686382fca6bde4fd183d5ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06d1f4fa13f2cdb51e7e2fe6939b449fdb1c3f78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638140"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Profilowanie wiersza polecenia aplikacji sieci web ASP.NET
-W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.  
-  
+W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności dla [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi profilowania z wiersza polecenia.
+
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
+>  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
 ## <a name="common-tasks"></a>Wspólne zadania
-  
+
 | Zadanie | Powiązana zawartość |
 | - | - |
 | **Zbierz ASP.NET podstawowych danych profilowania w prosty sposób:** Użyj **VSPerfASPNETCmd** narzędzia do zbierania próbkowanie, instrumentację, pamięć .NET rywalizacji o zasoby i warstwy danych o interakcji między bez ponownego uruchomienia usług Internet Information Services (IIS), które są potrzebne i wymagania dotyczące konfiguracji Aby uzyskać **VSPerfCmd**. **Polecenie VSPerfASPNETCmd** nie pozwala zbierać dodatkowe dane lub kontrolować zbieranie danych. **Uwaga:**  **Polecenie VSPerfASPNETCmd** jest preferowanym narzędziem do użycia, możesz użyć programu profilującego autonomicznej do profilu usługi witryny sieci Web platformy ASP.NET. | -   [Szybkie profilowanie za pomocą polecenia VSPerfASPNETCmd witryny sieci web](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
@@ -34,11 +34,11 @@ W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności 
 | **Zbieranie danych pamięci .NET:** Aby zbierać dane alokacji pamięci .NET, który pokazuje, rozmiar i liczba przydzielonych obiektów, należy użyć próbkowania i instrumentacji. Może również zbierać danych o okresie istnienia obiektu, który pokazuje, rozmiaru i liczby obiektów, które są odzyskiwane w wszystkich generacjach wyrzucania. | -   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) |
 | **Zbieranie danych współbieżności:** Metoda współbieżności służy do zbierania danych kontencji zasobów. **Uwaga:**  Zbieranie danych o aktywności i wizualizacji wątku nie jest obsługiwana dla aplikacji sieci Web. | -   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md) |
 | **Dodaj dane interakcji między warstwami:** Możesz dodać dane wydajności dotyczące synchroniczne [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] wywołuje się, że [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web wysyła do firmy Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazy danych. | -   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
-  
+
 ## <a name="related-tasks"></a>Zadania powiązane
 
-  
-|Zadanie|Powiązana zawartość|  
-|----------|---------------------|  
-|**Profil aplikacji autonomicznej (klienta)**|-   [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+
+|Zadanie|Powiązana zawartość|
+|----------|---------------------|
+|**Profil aplikacji autonomicznej (klienta)**|-   [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)|
 |**Usługi profilowania**|-   [Usługi profilowania](../profiling/command-line-profiling-of-services.md)|
