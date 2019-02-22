@@ -12,33 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ef7cc83c876f5ac9031010fd45e2230e6c4c03
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007006"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630200"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Cvreleasemarkerseries — funkcja
-Zwalnia znaczników serii. Nie używaj znaczników serii obiektu po zwalniania w przeciwnym razie aplikacja może ulec awarii. Nie można zwolnić znaczników serii powoduje, że przeciek pamięci.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C  
-HRESULT CvReleaseMarkerSeries(  
-   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pMarkerSeries`  
- Adres dostawcy zmiennej obiektu. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- S_OK znaczników serii jest pomyślnie zwolnione lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.  
-  
-## <a name="requirements"></a>Wymagania  
- **Nagłówek:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)
+Zwalnia znaczników serii. Nie używaj znaczników serii obiektu po zwalniania w przeciwnym razie aplikacja może ulec awarii. Nie można zwolnić znaczników serii powoduje, że przeciek pamięci.
+
+## <a name="syntax"></a>Składnia
+
+```C
+HRESULT CvReleaseMarkerSeries(
+   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pMarkerSeries` Adres dostawcy zmiennej obiektu. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
+
+## <a name="return-value"></a>Wartość zwracana
+ S_OK znaczników serii jest pomyślnie zwolnione lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+
+## <a name="requirements"></a>Wymagania
+ **Nagłówek:** *cvmarkers.h*
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

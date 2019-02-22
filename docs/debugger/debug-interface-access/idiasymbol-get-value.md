@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8f5212c473e91813739b163f279ecd10da4a4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599145"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686369"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Pobiera wartość stałą.
@@ -32,7 +32,8 @@ HRESULT get_value (
 
 #### <a name="parameters"></a>Parametry
 `pRetVal`
-- [out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.
+
+[out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.

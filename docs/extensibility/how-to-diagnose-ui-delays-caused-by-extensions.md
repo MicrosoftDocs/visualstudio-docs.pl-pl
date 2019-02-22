@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317123"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719486"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Instrukcje: Diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia
 
@@ -21,7 +21,7 @@ Gdy interfejs użytkownika przestanie odpowiadać, Visual Studio sprawdza, czy s
 
 Powiadomienia informuje użytkownika, że opóźnienie reakcji interfejsu użytkownika (oznacza to problem z brakiem odpowiedzi w interfejsie użytkownika) mogły być wynikiem kodu z rozszerzeniem. Zapewnia również użytkowników z opcjami, aby wyłączyć rozszerzenie lub kolejnych powiadomień dotyczących tego rozszerzenia.
 
-W tym dokumencie opisano, jak diagnozować, co w kodzie rozszerzenia powoduje powiadomienia dotyczące opóźnienia interfejsu użytkownika. 
+W tym dokumencie opisano, jak diagnozować, co w kodzie rozszerzenia powoduje powiadomienia dotyczące opóźnienia interfejsu użytkownika.
 
 > [!NOTE]
 > Nie należy używać wystąpienie eksperymentalne programu Visual Studio do diagnozowania występują opóźnienia interfejsu użytkownika. Niektóre części analiz stos wywołań, wymaganych w celu powiadomienia dotyczące opóźnienia interfejsu użytkownika są wyłączone, gdy jest używane wystąpienie eksperymentalne, co oznacza, że powiadomienia dotyczące opóźnienia interfejsu użytkownika mogą nie być wyświetlane.
@@ -102,7 +102,7 @@ Następnie otwórz plik śledzenia. Można to zrobić przy użyciu tego samego w
 Następnie wybierz plik śledzenia w okienku po lewej stronie i otwórz go, wybierając **Otwórz** w menu kliknij prawym przyciskiem myszy lub kontekstu.
 
 > [!NOTE]
-> Domyślnie narzędzia PerfView generuje archiwum Zip. Po otwarciu *trace.zip*, automatycznie dekompresuje archiwum i otwiera śledzenia. Możesz to pominąć, usuwając zaznaczenie pola **Zip** pola podczas zbierania śladu. Jednak jeśli planowane jest transferu i używanie śledzenia na różnych komputerach, zdecydowanie zalecamy względem usuwając zaznaczenie pola wyboru **Zip** pole. Bez tej opcji wymagane pliki PDB dla zestawów Ngen nie będzie towarzyszyć śledzenia i dlatego symbole z Ngen zestawów, nie będą rozpoznawane na komputerze docelowym. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Aby uzyskać więcej informacji na temat plików PDB dla zestawów Ngen.) 
+> Domyślnie narzędzia PerfView generuje archiwum Zip. Po otwarciu *trace.zip*, automatycznie dekompresuje archiwum i otwiera śledzenia. Możesz to pominąć, usuwając zaznaczenie pola **Zip** pola podczas zbierania śladu. Jednak jeśli planowane jest transferu i używanie śledzenia na różnych komputerach, zdecydowanie zalecamy względem usuwając zaznaczenie pola wyboru **Zip** pole. Bez tej opcji wymagane pliki PDB dla zestawów Ngen nie będzie towarzyszyć śledzenia i dlatego symbole z Ngen zestawów, nie będą rozpoznawane na komputerze docelowym. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Aby uzyskać więcej informacji na temat plików PDB dla zestawów Ngen.)
 
 Może potrwać kilka minut, zanim programu PerfView do przetwarzania i Otwórz śledzenie. Po otwarciu śledzenia listę różnych "widoków" pojawiają się w nim.
 

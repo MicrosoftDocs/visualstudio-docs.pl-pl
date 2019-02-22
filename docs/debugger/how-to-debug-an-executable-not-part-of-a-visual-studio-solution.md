@@ -20,55 +20,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae2ea60a4f2427cbe1509a8fa05c787d44b19d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019138"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690204"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debuguj aplikację, która nie jest częścią rozwiązania programu Visual Studio (C++, C#, Visual Basic F#)
 
-Chcesz debugować aplikację (*.exe* pliku), która nie jest częścią rozwiązania programu Visual Studio. Ty lub inna osoba mogła zostać utworzona aplikacja poza programem Visual Studio lub masz aplikację w innym miejscu. 
+Chcesz debugować aplikację (*.exe* pliku), która nie jest częścią rozwiązania programu Visual Studio. Ty lub inna osoba mogła zostać utworzona aplikacja poza programem Visual Studio lub masz aplikację w innym miejscu.
 
-Jest zwykły sposób, aby debugować aplikację, która nie istnieje w programie Visual Studio, aby uruchomić aplikację poza programem Visual Studio, a następnie dołącz do niego przy użyciu **dołączyć do procesu** w debugerze programu Visual Studio. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
-  
-Dołączanie do aplikacji wymaga ręczne wykonanie czynności, które po kilku sekundach. Ze względu na to opóźnienie dołączanie nie pomoże, debugować problem uruchamiania lub aplikację, która nie czeka na użytkownika, danych wejściowych i szybko się kończy. 
+Jest zwykły sposób, aby debugować aplikację, która nie istnieje w programie Visual Studio, aby uruchomić aplikację poza programem Visual Studio, a następnie dołącz do niego przy użyciu **dołączyć do procesu** w debugerze programu Visual Studio. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-W takich przypadkach można utworzyć projekt EXE usługi Visual Studio dla aplikacji lub zaimportować go do istniejącego C#, Visual Basic lub C++ rozwiązania. Nie wszystkie języki programowania wspierają projekty EXE. 
+Dołączanie do aplikacji wymaga ręczne wykonanie czynności, które po kilku sekundach. Ze względu na to opóźnienie dołączanie nie pomoże, debugować problem uruchamiania lub aplikację, która nie czeka na użytkownika, danych wejściowych i szybko się kończy.
+
+W takich przypadkach można utworzyć projekt EXE usługi Visual Studio dla aplikacji lub zaimportować go do istniejącego C#, Visual Basic lub C++ rozwiązania. Nie wszystkie języki programowania wspierają projekty EXE.
 
 >[!IMPORTANT]
->Funkcje debugowania dla aplikacji, która nie została utworzona w programie Visual Studio są ograniczone, czy dołączyć do aplikacji, albo dodaj go do rozwiązania programu Visual Studio. 
+>Funkcje debugowania dla aplikacji, która nie została utworzona w programie Visual Studio są ograniczone, czy dołączyć do aplikacji, albo dodaj go do rozwiązania programu Visual Studio.
 >
 >Jeśli masz kod źródłowy, najlepszym rozwiązaniem jest importowanie kodu do projektu programu Visual Studio. Następnie uruchom kompilację debugowania aplikacji.
 >
->Jeśli nie masz kod źródłowy i aplikacja nie musi [informacje o debugowaniu](../debugger/how-to-set-debug-and-release-configurations.md) w zgodnym formacie, dostępne funkcje debugowania są bardzo mało. 
+>Jeśli nie masz kod źródłowy i aplikacja nie musi [informacje o debugowaniu](../debugger/how-to-set-debug-and-release-configurations.md) w zgodnym formacie, dostępne funkcje debugowania są bardzo mało.
 
-### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Aby utworzyć nowy projekt EXE dla istniejącej aplikacji  
-   
-1. W programie Visual Studio, wybierz **pliku** > **Otwórz** > **projektu**.  
-   
-1. W **Otwórz projekt** okno dialogowe, wybierz opcję **wszystkie pliki projektu**, jeśli jeszcze nie wybrano, w menu rozwijanym obok **nazwy pliku**.  
-   
-1. Przejdź do *.exe* plików, wybierz ją, a następnie wybierz **Otwórz**.  
-   
+### <a name="to-create-a-new-exe-project-for-an-existing-app"></a>Aby utworzyć nowy projekt EXE dla istniejącej aplikacji
+
+1. W programie Visual Studio, wybierz **pliku** > **Otwórz** > **projektu**.
+
+1. W **Otwórz projekt** okno dialogowe, wybierz opcję **wszystkie pliki projektu**, jeśli jeszcze nie wybrano, w menu rozwijanym obok **nazwy pliku**.
+
+1. Przejdź do *.exe* plików, wybierz ją, a następnie wybierz **Otwórz**.
+
    Plik pojawi się w rozwiązaniu programu Visual Studio do nowego, tymczasowego.
 
-1. Rozpocznij debugowanie aplikacji, wybierając polecenie wykonania, takie jak **Rozpocznij debugowanie**, z **debugowania** menu.    
-  
-### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Aby zaimportować aplikację do istniejącego rozwiązania Visual Studio  
-  
-1.  Przy użyciu języka C++ C#, lub wybierz rozwiązanie programu Visual Basic Otwórz w programie Visual Studio, **pliku** > **Dodaj** > **istniejący projekt**.  
-  
-1. W **Otwórz projekt** okno dialogowe, wybierz opcję **wszystkie pliki projektu**, jeśli jeszcze nie wybrano, w menu rozwijanym obok **nazwy pliku**.  
-   
-1. Przejdź do *.exe* plików, wybierz ją, a następnie wybierz **Otwórz**.  
-   
-   Plik pojawi się jako nowy projekt w bieżącym rozwiązaniu.  
-   
-1. Za pomocą nowego pliku wybrane, rozpocząć debugowanie aplikacji, wybierając polecenie wykonania, takie jak **Rozpocznij debugowanie**, z **debugowania** menu.    
-  
-### <a name="see-also"></a>Zobacz także  
- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
- [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [DBG, pliki](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))
+1. Rozpocznij debugowanie aplikacji, wybierając polecenie wykonania, takie jak **Rozpocznij debugowanie**, z **debugowania** menu.
+
+### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Aby zaimportować aplikację do istniejącego rozwiązania Visual Studio
+
+1.  Przy użyciu języka C++ C#, lub wybierz rozwiązanie programu Visual Basic Otwórz w programie Visual Studio, **pliku** > **Dodaj** > **istniejący projekt**.
+
+1. W **Otwórz projekt** okno dialogowe, wybierz opcję **wszystkie pliki projektu**, jeśli jeszcze nie wybrano, w menu rozwijanym obok **nazwy pliku**.
+
+1. Przejdź do *.exe* plików, wybierz ją, a następnie wybierz **Otwórz**.
+
+   Plik pojawi się jako nowy projekt w bieżącym rozwiązaniu.
+
+1. Za pomocą nowego pliku wybrane, rozpocząć debugowanie aplikacji, wybierając polecenie wykonania, takie jak **Rozpocznij debugowanie**, z **debugowania** menu.
+
+### <a name="see-also"></a>Zobacz także
+- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [DBG, pliki](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

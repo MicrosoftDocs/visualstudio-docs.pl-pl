@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449999"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680186"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Określa flagi uruchamiania debugowania.
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-LAUNCH_DEBUG  
-Uruchamia proces debugowania.
+LAUNCH_DEBUG uruchamia proces debugowania.
 
-LAUNCH_NODEBUG  
-Uruchamia proces bez debugowania go.
+LAUNCH_NODEBUG uruchamia proces, bez debugowania go.
 
-LAUNCH_ENABLE_ENC  
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE LAUNCH_ENABLE_ENC, NIE NALEŻY UŻYWAĆ.
 
-LAUNCH_MERGE_ENV  
-Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
+LAUNCH_MERGE_ENV uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
@@ -69,5 +65,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

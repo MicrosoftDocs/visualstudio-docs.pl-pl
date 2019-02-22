@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81fc367fc55b3e4eef89731896cf18f4db5dc744
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702762"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Informacje dotyczące załadowania symbolu — okno dialogowe
-**Informacje o ładowaniu symboli** po kliknięciu prawym przyciskiem myszy zostanie otwarte okno dialogowe **modułów** oknie i wybierz polecenie **informacje o ładowaniu symboli**.  
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- **Informacje o**  
- Pokazuje katalogi przeszukiwane przez zainstalować pliki symboli (pliki PDB) oparte na programie Visual Studio, ustawienia i zmiany wprowadzone w ustawieniach symboli **opcje** okno dialogowe.  
-  
- **Ustawienia symboli**  
- Kliknij ten przycisk, aby zmienić ustawienia symboli w **opcje** okno dialogowe (**debugowanie** kategorii **symbole** strony). Na tej stronie można dodać lub usunąć lokalizacje symboli, określ lokalizację lokalną pamięć podręczną, jeśli używasz serwera symboli i kontroli, gdy zostaną przeszukane lokalizacje symboli.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+**Informacje o ładowaniu symboli** po kliknięciu prawym przyciskiem myszy zostanie otwarte okno dialogowe **modułów** oknie i wybierz polecenie **informacje o ładowaniu symboli**.
+
+## <a name="uielement-list"></a>Lista elementów UI
+ **Informacje o** pokazuje katalogi przeszukiwane przez zainstalować pliki symboli (pliki PDB) oparte na programie Visual Studio, ustawienia i zmiany wprowadzone w ustawieniach symboli **opcje** okno dialogowe.
+
+ **Ustawienia symboli** kliknij ten przycisk, aby zmienić ustawienia symboli w **opcje** okno dialogowe (**debugowanie** kategorii **symbole** strony). Na tej stronie można dodać lub usunąć lokalizacje symboli, określ lokalizację lokalną pamięć podręczną, jeśli używasz serwera symboli i kontroli, gdy zostaną przeszukane lokalizacje symboli.
+
+## <a name="see-also"></a>Zobacz też
+- [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016242"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722281"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odwołanie wartości koloru dla programu Visual Studio
 
-Ten temat jest odwołaniem do tworzenia nowych tokenów kolorów. Gdy tworzysz nowy interfejs użytkownika, można użyć podobne kolory z istniejącego interfejsu użytkownika, aby wybrać kolory dla każdego głównego motywu i nazwę koloru systemu dla tego elementu, do dużego kontrastu, motywów. 
+Ten temat jest odwołaniem do tworzenia nowych tokenów kolorów. Gdy tworzysz nowy interfejs użytkownika, można użyć podobne kolory z istniejącego interfejsu użytkownika, aby wybrać kolory dla każdego głównego motywu i nazwę koloru systemu dla tego elementu, do dużego kontrastu, motywów.
 
 Implementacja informacji o tworzeniu nowych tokenów kolorów, zobacz [narzędzia do tworzenia motywów kolorów](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Tokeny koloru do użycia przy użyciu istniejącego interfejsu użytkownika, zob
 
 Korzystając z tego podręcznika, należy pamiętać:
 
--   **Zawsze Kopiuj ze sobą odcieni pierwszego planu i tła.** Nie należy wybierać planu z jednego elementu interfejsu użytkownika i tła z innego po prostu, ponieważ chcesz odcienie.  
+-   **Zawsze Kopiuj ze sobą odcieni pierwszego planu i tła.** Nie należy wybierać planu z jednego elementu interfejsu użytkownika i tła z innego po prostu, ponieważ chcesz odcienie.
 
 -   **Są to kodów szesnastkowych, a nie kolor tokenów.** Nie można użyć Kolor rzeczywisty token nazwy te elementy interfejsu użytkownika, ponieważ nie można kontrolować, jak tokenów można zmienić w przyszłości. Zamiast tego utwórz tokenów w ramach własnych kategorii i użyć wartości hue widocznych w tabelach. Kolor tokenów dla istniejącego interfejsu użytkownika można znaleźć w [udostępnione kolory dla programu Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Wysoki kontrast próbki są wyświetlane tylko porównanie.** Użyj nazwy kolorów systemu, wysoki kontrast interfejsu użytkownika i nie należy używać selektor Pipeta i kolor na te próbki. Wysoka próbki kontrastu w tym temacie odzwierciedlają kompozycję Duży kontrast nr 1 w Windows. Kolory będzie wyglądać inaczej w innych tematów o wysokim kontraście. 
+- **Wysoki kontrast próbki są wyświetlane tylko porównanie.** Użyj nazwy kolorów systemu, wysoki kontrast interfejsu użytkownika i nie należy używać selektor Pipeta i kolor na te próbki. Wysoka próbki kontrastu w tym temacie odzwierciedlają kompozycję Duży kontrast nr 1 w Windows. Kolory będzie wyglądać inaczej w innych tematów o wysokim kontraście.
 
 -   **Aby uzyskać najlepsze wyniki kolor pary ustawia za pomocą interfejsu użytkownika podobnie jak w przykładzie.**
 
@@ -39,17 +39,17 @@ Korzystając z tego podręcznika, należy pamiętać:
 ![Okno właściwości, w jasny (po lewej), ciemne (do środka) i niebieski motywy (po prawej)](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "okna właściwości w motywy jasny, ciemne i niebieski")<br />Okno właściwości w motywy jasny, ciemne i niebieski
 
 > [!NOTE]
-> **Wysoki kontrast próbki są wyświetlane tylko porównanie.** Użyj nazwy kolorów systemu, wysoki kontrast interfejsu użytkownika i nie należy używać selektor Pipeta i kolor na te próbki. Wysoka próbki kontrastu w tym temacie odzwierciedlają kompozycję Duży kontrast nr 1 w Windows. Kolory będzie wyglądać inaczej w innych tematów o wysokim kontraście. 
+> **Wysoki kontrast próbki są wyświetlane tylko porównanie.** Użyj nazwy kolorów systemu, wysoki kontrast interfejsu użytkownika i nie należy używać selektor Pipeta i kolor na te próbki. Wysoka próbki kontrastu w tym temacie odzwierciedlają kompozycję Duży kontrast nr 1 w Windows. Kolory będzie wyglądać inaczej w innych tematów o wysokim kontraście.
 
 ### <a name="divider-lines"></a>Linie podziału
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Domyślny | ![Próbka #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #FFEEEEF2")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Próbka #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #FFEEEEF2")<br />`#FFEEEEF2` | ![Próbka ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark próbki")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Ekspander glifów
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan |![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Okno próbnika](../../extensibility/ux-guidelines/media/HCWindow.png "próbkę z okna")<br />`Window`|
@@ -60,7 +60,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="embedded-tab-control-body"></a>Osadzone formant karty: treść
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![Próbka #FF1B1B1C](../../extensibility/ux-guidelines/media/1B1B1C.png "próbnika #FF1B1B1C")<br />`#FF1B1B1C` | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -68,7 +68,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="embedded-tab-control-active-tab"></a>Osadzone formant karty: aktywnej karty
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` |![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![##FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "##FF1B1B1C swatch")<br />`#FF1B1B1C` | ![#FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -76,7 +76,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Osadzone formant karty: karta nieaktywne
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -85,12 +85,12 @@ Korzystając z tego podręcznika, należy pamiętać:
 | Pierwszy plan: wyłączone | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 swatch](../../extensibility/ux-guidelines/media/656565.png "#FF656565 swatch")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![Próbka GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText próbki")<br />`GrayText` |
 | Tło: wyłączone | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
 | Obramowanie | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
-| Obramowanie: po wskazaniu wskaźnikiem | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Próbka #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "próbnika #FF3E3E40")<br />`#FF3E3E40` | ![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br />`#FFFEFEFE` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` | 
+| Obramowanie: po wskazaniu wskaźnikiem | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Próbka #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "próbnika #FF3E3E40")<br />`#FF3E3E40` | ![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br />`#FFFEFEFE` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
 | Obramowanie: wyłączone | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![WindowFrame swatch](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame swatch")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Nagłówek sekcji
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![##FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Pierwszy plan: po wskazaniu wskaźnikiem | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="category-group"></a>Grupy kategorii
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Treść pierwszego planu | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło treści | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -110,7 +110,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="toggle-buttons"></a>Przyciski przełączania
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText próbki")<br />`WindowText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Okno próbnika](../../extensibility/ux-guidelines/media/HCWindow.png "próbkę z okna")<br />`Window` |
@@ -127,7 +127,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="input-fields"></a>Pól danych wejściowych
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Próbka #FF333337](../../extensibility/ux-guidelines/media/333337.png "próbnika #FF333337")<br />`#FF333337` | ![#FFFCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC swatch")<br />`#FFFCFCFC` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -138,7 +138,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="list-items"></a>Elementy listy
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Pierwszy plan: po wskazaniu wskaźnikiem | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="command-buttons"></a>Przyciski poleceń
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło: po wskazaniu wskaźnikiem | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![Próbka #FF3E3E40](../../extensibility/ux-guidelines/media/3E3E40.png "próbnika #FF3E3E40")<br />`#FF3E3E40` | ![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br />`#FFFEFEFE` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -172,7 +172,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="content"></a>Zawartość
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![Próbka WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText próbki")<br />`WindowText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -184,7 +184,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="header"></a>nagłówek
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![Próbka WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText próbki")<br />`WindowText` |
 | Tło | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FFEEEEF2` | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30` | ![Próbka #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #FFEEEEF2")<br />`#FFEEEEF2` | ![Próbka ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark próbki")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ![Interfejs użytkownika funkcji CodeLens](../../extensibility/ux-guidelines/media/codelens.png "CodeLens interfejsu użytkownika")
 
-> [!NOTE] 
+> [!NOTE]
 > Kolory CodeLens interfejsu użytkownika są takie same dla motywy jasny, ciemne i niebieski.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="body"></a>Treść
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText próbki")<br />`WindowText` |
 | Tło | ![#FFFCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC swatch")<br />`#FFFCFCFC` | ![#FFFCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC swatch")<br />`#FFFCFCFC` | ![#FFFCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC swatch")<br />`#FFFCFCFC` | ![Okno próbnika](../../extensibility/ux-guidelines/media/HCWindow.png "próbkę z okna")<br />`Window` |
@@ -212,7 +212,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="hyperlink-and-separator"></a>Separator i hiperłącza
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Hiperłącze pierwszego planu | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![#FF0E70C0 swatch](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 swatch")<br />`#FF0E70C0` | ![Próbka HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack próbki")<br />`HotTrack` |
 | Separator pierwszego planu | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![#FF9C9C9C swatch](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C swatch")<br />`#FF9C9C9C` | ![Próbka HotTrack](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack próbki")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="body"></a>Treść
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![Próbka WindowText](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText próbki")<br />`WindowText` |
 | Pierwszy plan: wybrane | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Nagłówek podsekcji
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![Próbka GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText próbki")<br />`GrayText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Okno próbnika](../../extensibility/ux-guidelines/media/HCWindow.png "próbkę z okna")<br />`Window` |
@@ -241,7 +241,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="grid-lines"></a>Linie siatki
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Elementy (pierwszego planu) | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![#FF000000 swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![Pasek przewijania próbnika](../../extensibility/ux-guidelines/media/HCScrollBar.png "próbnika paska przewijania")<br />`ScrollBar` |
 | Nagłówek (pierwszego planu) | ![Próbka #FFE0E3E6](../../extensibility/ux-guidelines/media/E0E3E6.png "próbnika #FFE0E3E6")<br />`#FFE0E3E6` | ![Próbka #FF333337](../../extensibility/ux-guidelines/media/333337.png "próbnika #FF333337")<br />`#FF333337` | ![#FFBEC3CB swatch](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB swatch")<br />`#FFBEC3CB` | ![Próbka ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark próbki")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="body"></a>Treść
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
 
 ### <a name="active-tab"></a>Karty aktywne
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText próbki")<br />`ActiveCaptionText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` |![Próbka ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption próbki")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Karta nieaktywne
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText próbki")<br />`InactiveCaptionText` |
 | Tło | ![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br />`#FFFEFEFE` | ![Próbka #FF333337](../../extensibility/ux-guidelines/media/333337.png "próbnika #FF333337")<br />`#FF333337` | ![Próbka #FFFEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE próbki")<br />`#FFFEFEFE` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="watermark-text"></a>Tekst znaku wodnego
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 swatch](../../extensibility/ux-guidelines/media/717171.png "#FF717171 swatch")<br />`#FF717171` | ![Próbka GrayText](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText próbki")<br />`GrayText` |
 | Tło | ![#FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 swatch")<br />`#FFF6F6F6` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
 
 ### <a name="description-pane"></a>Okienko opisu
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszy plan | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
 | Tło | ![Próbka #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #FFEEEEF2")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -299,7 +299,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="tags"></a>Znaczniki
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Pierwszego planu (tekst) | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText próbki")<br />`ActiveCaptionText` |
 | Tło | ![#FFE1E6F1 swatch](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 swatch")<br />`#FFE1E6F1` | ![#FF424242 swatch](../../extensibility/ux-guidelines/media/424242.png "#FF424242 swatch")<br />`#FF424242` | ![Próbka #FFE9ECEE](../../extensibility/ux-guidelines/media/E9ECEE.png "próbnika #FFE9ECEE")<br />`#FFE9ECEE` | ![Próbka ActiveCaption](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption próbki")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="glyph-on-hover"></a>Symbol po najechaniu wskaźnikiem
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Symbol | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FF1E1E1E swatch](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E swatch")<br />`#FF1E1E1E` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 | Tło | ![#FFF7F7F9 swatch](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 swatch")<br />`#FFF7F7F9` | ![Próbka #FF393939](../../extensibility/ux-guidelines/media/393939.png "próbnika #FF393939")<br />`#FF393939` | ![#FFFFFCF4 swatch](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 swatch")<br />`#FFFFFCF4` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="selected-glyph"></a>Wybrany symbol
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Symbol | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![#FFFFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF swatch")<br />`#FFFFFFFF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 | Tło | ![Próbka #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "próbnika #FF52B0EF")<br />`#FF52B0EF` | ![Próbka #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "próbnika #FF52B0EF")<br />`#FF52B0EF` | ![Próbka #FF52B0EF](../../extensibility/ux-guidelines/media/52B0EF.png "próbnika #FF52B0EF")<br />`#FF52B0EF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="default"></a>Domyślny
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Przycisk domyślny motyw jasny](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "przycisk domyślny motyw jasny") | ![Przycisk domyślny motyw ciemny](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "przycisk domyślny motyw ciemny") | ![Przycisk domyślny motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "przycisk domyślny motyw niebieski") | ![Przycisk domyślny motyw z wysokim kontrastem](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "przycisk domyślny motyw o wysokim kontraście") |
 | Pierwszy plan | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText próbki")<br />`ControlText` |
@@ -348,7 +348,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="disabled"></a>Wyłączone
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Wyłączony przycisk motyw jasny](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "wyłączone znajdujący się w motyw jasny") | ![Wyłączony przycisk motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "wyłączony przycisk motywu ciemny") | ![Wyłączony przycisk motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "wyłączone znajdujący się w motyw niebieski") | ![Wyłączony przycisk motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "wyłączone znajdujący się w motyw o wysokim kontraście") |
 | Pierwszy plan | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![próbka #656565](../../extensibility/ux-guidelines/media/656565.png "próbnika #656565")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![Próbka InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText próbki")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="hover"></a>Po wskazaniu wskaźnikiem
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Po wskazaniu wskaźnikiem stan przycisku w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "przycisk Stan aktywowanego motyw jasny") | ![Przycisk Stan aktywowanego motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "przycisku stan aktywowanego motywu ciemny") | ![Po wskazaniu wskaźnikiem stan przycisku w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "przycisk Stan aktywowanego motyw niebieski") | ![Po wskazaniu wskaźnikiem stan przycisku w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "przycisk Stan aktywowanego motyw o wysokim kontraście") |
 | Pierwszy plan | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka ActiveCaptionText](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText próbki")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="pressed"></a>Naciśnięto
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Po naciśnięciu przycisku motyw jasny](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "po naciśnięciu przycisku motyw jasny") | ![Po naciśnięciu przycisku motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "po naciśnięciu przycisku motywu ciemny") | ![Po naciśnięciu przycisku motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "po naciśnięciu przycisku motyw niebieski") | ![Po naciśnięciu przycisku motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "po naciśnięciu przycisku motyw o wysokim kontraście") |
 | Pierwszy plan | ![#FFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF swatch")<br />`#FFFFFF` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![#FFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF swatch")<br />`#FFFFFF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="focused"></a>Fokus
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Przycisk Focused motyw jasny](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "Focused przycisk motyw jasny") | ![Przycisk Focused motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "przycisk Focused motywu ciemny") | ![Przycisk Focused motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "Focused przycisk motyw niebieski") | ![Przycisk Focused motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "Focused przycisk motyw o wysokim kontraście") |
 | Pierwszy plan | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 swatch")<br />`#F1F1F1` | ![Próbka #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "próbnika #1E1E1E")<br />`#1E1E1E` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="default"></a>Domyślny
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Pole wyboru domyślny motyw jasny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "domyślne pole wyboru w motyw jasny") | ![Pole wyboru domyślnego motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "pole wyboru domyślnego motywu ciemny") | ![Pole wyboru domyślnego motywu niebieski](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "domyślne pole wyboru w motyw niebieski") | ![Pole wyboru domyślnego motywu o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "domyślne pole wyboru w motyw o wysokim kontraście") |
 | Tło | ![Próbka #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE próbki")<br />`#FEFEFE` | ![próbka #252526](../../extensibility/ux-guidelines/media/252526.png "próbnika #252526")<br />`#252526` | ![Próbka #FEFEFE](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE próbki")<br />`#FEFEFE` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -399,7 +399,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="disabled"></a>Wyłączone
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Wyłączone pole wyboru w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "wyłączone pole wyboru w motyw jasny") | ![Wyłączone pole wyboru motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "wyłączone pole wyboru motywu ciemny") | ![Wyłączone pole wyboru w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "wyłączone pole wyboru w motyw niebieski") | ![Wyłączone pole wyboru w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "wyłączone pole wyboru w motyw o wysokim kontraście") |
 | Tło | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Próbka #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "próbnika #2D2D30")<br />`#2D2D30` | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Próbka InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption próbki")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="hover"></a>Po wskazaniu wskaźnikiem
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Pole wyboru mające stan po wskazaniu wskaźnikiem w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "pole wyboru mające stan po wskazaniu wskaźnikiem w motyw jasny") | ![Pole wyboru mające stan aktywowanego motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "pole wyboru mające stan aktywowanego motywu ciemny") | ![Pole wyboru mające stan po wskazaniu wskaźnikiem w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "pole wyboru mające stan po wskazaniu wskaźnikiem w motyw niebieski") | ![Pole wyboru mające stan po wskazaniu wskaźnikiem w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "pole wyboru mające stan po wskazaniu wskaźnikiem w motyw o wysokim kontraście") |
 | Tło | ![#F3F9FF swatch](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF swatch")<br />`#F3F9FF` | ![Próbka #1F1F20](../../extensibility/ux-guidelines/media/1F1F20.png "próbnika #1F1F20")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -419,7 +419,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="pressed"></a>Naciśnięto
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Po naciśnięciu pola wyboru w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "po naciśnięciu pola wyboru w motyw jasny") | ![Po naciśnięciu pola wyboru motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "po naciśnięciu pola wyboru motywu ciemny") | ![Po naciśnięciu pola wyboru w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "po naciśnięciu pola wyboru w motyw niebieski") | ![Po naciśnięciu pola wyboru w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "po naciśnięciu pola wyboru w motyw o wysokim kontraście") |
 | Tło | ![Próbka #007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #007ACC")<br />`#007ACC` | ![Próbka #007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #007ACC")<br />`#007ACC` | ![#E5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 swatch")<br />`#E5C365` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -429,7 +429,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="focused"></a>Fokus
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Pole wyboru Focused w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused pole wyboru w motyw jasny") | ![Pole wyboru Focused motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "pole wyboru Focused motywu ciemny") | ![Pole wyboru Focused w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused pole wyboru w motyw niebieski") | ![Pole wyboru Focused w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused pole wyboru w motyw o wysokim kontraście") |
 | Tło | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Próbka #1F1F20](../../extensibility/ux-guidelines/media/1F1F20.png "próbnika #1F1F20")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -446,7 +446,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="default"></a>Domyślny
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Domyślne pola listy — dół/kombi w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "domyślnej listy — dół/kombi w motyw jasny") | ![Domyślne listy — dół/kombi motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "domyślnej listy — dół/kombi motywu ciemny") | ![Domyślne pola listy — dół/kombi w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "domyślnej listy — dół/kombi w motyw niebieski") | ![Domyślne pola listy — dół/kombi w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "domyślnej listy — dół/kombi w motyw o wysokim kontraście") |
 | Tło | ![Próbka ## 007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika ## 007ACC")<br />`##007ACC` | ![próbka #333337](../../extensibility/ux-guidelines/media/333337.png "próbnika #333337")<br />`#333337` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Próbki kontroli](../../extensibility/ux-guidelines/media/HCControl.png "kontroli próbnika")<br />`Control` |
@@ -457,19 +457,19 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="disabled"></a>Wyłączone
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Wyłączone pole listy — dół/kombi w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "wyłączone pole listy — dół/kombi w motyw jasny") | ![Wyłączone pole listy — dół/kombi w motyw ciemny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "wyłączone pola listy — dół/kombi motywu ciemny") | ![Wyłączone pole listy — dół/kombi w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "wyłączone pole listy — dół/kombi w motyw niebieski") | ![Wyłączone pole listy — dół/kombi w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "wyłączone pole listy — dół/kombi w motyw o wysokim kontraście") |
 | Tło | ![Próbka #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #EEEEF2")<br />`#EEEEF2` | ![Próbka #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "próbnika #2D2D30")<br />`#2D2D30` | ![#DFE7F3 swatch](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 swatch")<br />`#DFE7F3` | ![Próbka InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption próbki")<br />`InactiveCaption` |
 | Obramowanie | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![próbka #434346](../../extensibility/ux-guidelines/media/434346.png "próbnika #434346")<br />`#434346` | ![#A4ADBA swatch](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA swatch")<br />`#A4ADBA` | ![Próbka InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder próbki")<br />`InactiveBorder` |
 | Tekst | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "próbnika #656565")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![Próbka InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText próbki")<br />`InactiveCaptionText` |
-| Separator | ![Próbka #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #EEEEF2")<br />`#EEEEF2` | ![Próbka #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "próbnika #2D2D30")<br />`#2D2D30` | ![Próbka #D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "próbnika #D5DCE8")<br />`#D5DCE8` | ![Próbka InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder próbki")<br />`InactiveBorder` | 
+| Separator | ![Próbka #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #EEEEF2")<br />`#EEEEF2` | ![Próbka #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "próbnika #2D2D30")<br />`#2D2D30` | ![Próbka #D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "próbnika #D5DCE8")<br />`#D5DCE8` | ![Próbka InactiveBorder](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder próbki")<br />`InactiveBorder` |
 | Symbol | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![próbka #656565](../../extensibility/ux-guidelines/media/656565.png "próbnika #656565")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![Próbka InactiveCaptionText](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText próbki")<br />`InactiveCaptionText` |
 | Tło glifów | ![Próbka #EEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "próbnika #EEEEF2")<br />`#EEEEF2` | ![Próbka #2D2D30](../../extensibility/ux-guidelines/media/2D2D30.png "próbnika #2D2D30")<br />`#2D2D30` | ![Próbka #D5DCE8](../../extensibility/ux-guidelines/media/D5DCE8.png "próbnika #D5DCE8")<br />`#D5DCE8` | ![Próbka InactiveCaption](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption próbki")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Po wskazaniu wskaźnikiem
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw jasny") | ![Po wskazaniu wskaźnikiem stan listy — dół/kombi motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "po wskazaniu wskaźnikiem stan listy — dół/kombi motywu ciemny") | ![Pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw niebieski") | ![Pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "pola listy — dół/kombi stanu po wskazaniu wskaźnikiem w motyw o wysokim kontraście") |
 | Tło | ![Próbka #007ACC](../../extensibility/ux-guidelines/media/007ACC.png "próbnika #007ACC")<br />`#007ACC` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -481,7 +481,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="pressed"></a>Naciśnięto
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Po naciśnięciu pola listy — dół/kombi w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "po naciśnięciu pola listy — dół/kombi w motyw jasny") | ![Po naciśnięciu pola listy — dół/kombi motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "po naciśnięciu pola listy — dół/kombi motywu ciemny") | ![Po naciśnięciu pola listy — dół/kombi w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "po naciśnięciu pola listy — dół/kombi w motyw niebieski") | ![Po naciśnięciu pola listy — dół/kombi w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "po naciśnięciu pola listy — dół/kombi w motyw o wysokim kontraście") |
 | Tło | ![#FFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF swatch")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -493,7 +493,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="focused"></a>Fokus
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Pola listy — dół/kombi Focused w motyw jasny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "Focused pola listy — dół/kombi w motyw jasny") | ![Pola listy — dół/kombi Focused motywu ciemny](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused listy — dół/kombi motywu ciemny") | ![Pola listy — dół/kombi Focused w motyw niebieski](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "Focused pola listy — dół/kombi w motyw niebieski") | ![Pola listy — dół/kombi Focused w motyw o wysokim kontraście](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused pola listy — dół/kombi w motyw o wysokim kontraście") |
 | Tło | ![#FFFFFF swatch](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF swatch")<br />`#FFFFFF` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FCFCFC swatch](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC swatch")<br />`#FCFCFC` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
@@ -511,7 +511,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="default"></a>Domyślny
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Tło | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` | ![Próbka #1B1B1C](../../extensibility/ux-guidelines/media/1B1B1C.png "próbnika #1B1B1C")<br />`#1B1B1C` | ![Próbka #EFEFEF](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF próbki")<br />`#EFEFEF` | ![Menu próbnika](../../extensibility/ux-guidelines/media/HCMenu.png "próbnika Menu")<br />`Menu` |
 | Obramowanie | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![Próbka #98A7B7](../../extensibility/ux-guidelines/media/98A7B7.png "próbnika #98A7B7")<br />`#98A7B7`| ![Próbka MenuText](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText próbki")<br />`MenuText` |
@@ -520,7 +520,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="hover"></a>Po wskazaniu wskaźnikiem
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Tło | ![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` | ![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
 | Obramowanie | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="pressed"></a>Naciśnięto
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Tło |![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
 | Obramowanie | ![#CCCEDB swatch](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB swatch")<br />`#CCCEDB` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 #### <a name="focused"></a>Fokus
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Tło | ![#F6F6F6 swatch](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 swatch")<br />`#F6F6F6` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Wyróżnij próbnika](../../extensibility/ux-guidelines/media/HCHighlight.png "próbnika wyróżnienia")<br />`Highlight` |
 | Obramowanie | ![#C9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 swatch")<br />`#C9DEF5` |![#3F3F46 swatch](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 swatch")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Korzystając z tego podręcznika, należy pamiętać:
 
 ### <a name="text-input-selection"></a>Wybór danych wejściowych tekstu
 
-| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast | 
+| | Motyw jasny | Motyw ciemny | Motyw niebieski | Duży kontrast |
 | --- | :---: | :---: | :---: | :---: |
 | Wygląd | ![Wybór w motyw jasny wprowadzania tekstu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "tekst pola kombi — dół/porzucenia danych wejściowych zaznaczenie w motyw jasny") | ![Wybór motywu ciemny wprowadzania tekstu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "tekst pola kombi — dół/porzucenia danych wejściowych Wybór motywu ciemny") | ![Wybór w motyw niebieski wprowadzania tekstu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "tekst pola kombi — dół/porzucenia danych wejściowych zaznaczenie w motyw niebieski") | ![Wybór w motyw o wysokim kontraście wprowadzania tekstu pola kombi — dół/upuszczania](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "tekst pola kombi — dół/porzucenia danych wejściowych zaznaczenie w motyw o wysokim kontraście") |
 | Wybór danych wejściowych tekstu | ![Próbka #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "próbnika #66007ACC")<br />`#66007ACC` | ![Próbka #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "próbnika #66007ACC")<br />`#66007ACC` | ![Próbka #66007ACC](../../extensibility/ux-guidelines/media/66007ACC.png "próbnika #66007ACC")<br />`#66007ACC` | ![Próbka HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText próbki")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>Próbki kolorów, funkcja
 
-| Światła | Ciemny | Niebieski | Używany w dla... | 
+| Światła | Ciemny | Niebieski | Używany w dla... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 swatch](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 swatch")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | Przyciski akcji, elementy pola kombi, przyciskami paska poleceń, przycisków listy rozwijanej i elementy menu: tła |
 | ![Próbka #FFCCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB próbki")<br />`#FFCCCEDB` | ![Próbka #FF3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "próbnika #FF3F3F46")<br />`#FF3F3F46` | ![Próbka #FF465A7D](../../extensibility/ux-guidelines/media/465A7D.png "próbnika #FF465A7D")<br />`#FF465A7D` | Obramowanie karty autoukrywanie |

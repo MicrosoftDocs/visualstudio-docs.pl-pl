@@ -11,43 +11,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbfb014e57f793bb39d696ac311c4f27884500f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949727"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687916"
 ---
 # <a name="parent-element"></a>Element nadrzędny
-Element nadrzędny przycisk lub pola kombi mogą być tylko grupy. Nadrzędny menu lub grupa może być dowolnego menu lub grupę. W [CommandPlacement, element](../extensibility/commandplacement-element.md), ten element jest wymagany; w innych wystąpieniach jest opcjonalne. W przypadku pominięcia tego elementu nadrzędnego `Group_Undefined:0` będzie wynikać.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|  
-|identyfikator|Wymagana. Identyfikator polecenia identyfikator GUID/ID.|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|  
-|[Buttons, element](../extensibility/buttons-element.md)|Grupy [Button element](../extensibility/button-element.md) elementów.|  
-|[Menus, element](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakietu VSPackage.|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Element nadrzędny przycisk lub pola kombi mogą być tylko grupy. Nadrzędny menu lub grupa może być dowolnego menu lub grupę. W [CommandPlacement, element](../extensibility/commandplacement-element.md), ten element jest wymagany; w innych wystąpieniach jest opcjonalne. W przypadku pominięcia tego elementu nadrzędnego `Group_Undefined:0` będzie wynikać.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Identyfikator GUID|Wymagana. Identyfikator polecenia dla identyfikatora GUID/identyfikator GUID.|
+|identyfikator|Wymagana. Identyfikator polecenia identyfikator GUID/ID.|
+
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń, które zapewnia pakietu VSPackage do zintegrowanego środowiska programistycznego (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
+|[Buttons, element](../extensibility/buttons-element.md)|Grupy [Button element](../extensibility/button-element.md) elementów.|
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu, które implementuje pakietu VSPackage.|
+|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|
+
+## <a name="see-also"></a>Zobacz także
+- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

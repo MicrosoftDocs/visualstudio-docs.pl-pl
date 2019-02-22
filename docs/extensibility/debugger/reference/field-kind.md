@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd9bd533a8314f73c6d39c34638f018cf4dde53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316304"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680377"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Określa typ pola ujętego w [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
@@ -122,104 +122,71 @@ public enum enum_FIELD_KIND {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-FIELD_KIND_TYPE  
-Wskazuje, że pole jest tylko typu.
+FIELD_KIND_TYPE wskazuje, że pole jest tylko typu.
 
-FIELD_KIND_SYMBOL  
-Wskazuje, że pole jest symbol, za pomocą typu, nazwy i inne informacje.
+FIELD_KIND_SYMBOL wskazuje, że pole jest symbol, za pomocą typu, nazwy i inne informacje.
 
-FIELD_TYPE_PRIMITIVE  
-Wskazuje, że pole jest typem danych pierwotnych.
+FIELD_TYPE_PRIMITIVE wskazuje, że pole jest typem danych pierwotnych.
 
-FIELD_TYPE_STRUCT  
-Wskazuje, że pole jest struktura.
+FIELD_TYPE_STRUCT wskazuje, że pole jest struktura.
 
-FIELD_TYPE_CLASS  
-Wskazuje, że pole jest klasą.
+FIELD_TYPE_CLASS wskazuje, że pole jest klasą.
 
-FIELD_TYPE_INTERFACE  
-Wskazuje, że pole jest interfejs.
+FIELD_TYPE_INTERFACE wskazuje, że pole jest interfejs.
 
-FIELD_TYPE_UNION  
-Wskazuje, że pole jest Unii.
+FIELD_TYPE_UNION wskazuje, że pole jest Unii.
 
-FIELD_TYPE_ARRAY  
-Wskazuje, że pole jest tablicą.
+FIELD_TYPE_ARRAY wskazuje, że pole jest tablicą.
 
-FIELD_TYPE_METHOD  
-Wskazuje, że pole jest metodą.
+FIELD_TYPE_METHOD wskazuje, że pole jest metodą.
 
-FIELD_TYPE_BLOCK  
-Wskazuje, że pole jest blokiem.
+FIELD_TYPE_BLOCK wskazuje, że pole jest blokiem.
 
-FIELD_TYPE_POINTER  
-Wskazuje, że pole jest wskaźnik.
+FIELD_TYPE_POINTER wskazuje, że pole jest wskaźnik.
 
-FIELD_TYPE_ENUM  
-Wskazuje, że pole jest wyliczany typ danych.
+FIELD_TYPE_ENUM wskazuje, że pole jest wyliczany typ danych.
 
-FIELD_TYPE_LABEL  
-Wskazuje, że pole jest etykietę.
+FIELD_TYPE_LABEL wskazuje, że pole jest etykietę.
 
-FIELD_TYPE_TYPEDEF  
-Wskazuje, że pole jest typedef.
+FIELD_TYPE_TYPEDEF wskazuje, że pole jest typedef.
 
-FIELD_TYPE_BITFIELD  
-Wskazuje, że pole jest bitfield.
+FIELD_TYPE_BITFIELD wskazuje, że pole jest bitfield.
 
-FIELD_TYPE_NAMESPACE  
-Wskazuje, że pole jest przestrzenią nazw.
+FIELD_TYPE_NAMESPACE wskazuje, że pole jest przestrzenią nazw.
 
-FIELD_TYPE_MODULE  
-Wskazuje, że pole jest modułem.
+FIELD_TYPE_MODULE wskazuje, że pole jest modułem.
 
-FIELD_TYPE_DYNAMIC  
-Wskazuje, że pole jest dynamiczny.
+FIELD_TYPE_DYNAMIC wskazuje, że pole jest dynamiczny.
 
-FIELD_TYPE_PROP  
-Wskazuje, że pole jest właściwością.
+FIELD_TYPE_PROP wskazuje, że pole jest właściwością.
 
-FIELD_TYPE_INNERCLASS  
-Wskazuje, że pole jest klasy wewnętrznej.
+FIELD_TYPE_INNERCLASS wskazuje, że pole jest klasy wewnętrznej.
 
-FIELD_TYPE_REFERENCE  
-Wskazuje, że pole jest odwołaniem.
+FIELD_TYPE_REFERENCE wskazuje, że pole jest odwołaniem.
 
-FIELD_TYPE_EXTENDED  
-Zarezerwowane do użytku w przyszłości.
+FIELD_TYPE_EXTENDED zarezerwowane do użytku w przyszłości.
 
-FIELD_SYM_MEMBER  
-Wskazuje, że pole jest elementem członkowskim.
+FIELD_SYM_MEMBER wskazuje, że pole jest elementem członkowskim.
 
-FIELD_SYM_LOCAL  
-Wskazuje, że pole jest lokalny.
+FIELD_SYM_LOCAL wskazuje, że pole jest lokalny.
 
-FIELD_SYM_PARAMETER  
-Wskazuje, że pole jest parametrem.
+FIELD_SYM_PARAMETER wskazuje, że pole jest parametrem.
 
-FIELD_SYM_THIS  
-Wskazuje, że pole jest wskaźnik "this".
+FIELD_SYM_THIS wskazuje, że pole jest wskaźnik "this".
 
-FIELD_SYM_GLOBAL  
-Wskazuje, że pole jest globalne.
+FIELD_SYM_GLOBAL wskazuje, że pole jest globalne.
 
-FIELD_SYM_PROP_GETTER  
-Wskazuje, że pole pobiera właściwości.
+FIELD_SYM_PROP_GETTER wskazuje, że pole pobiera właściwości.
 
-FIELD_SYM_PROP_SETTER  
-Wskazuje, że pole ustawia właściwości.
+FIELD_SYM_PROP_SETTER wskazuje, że pole ustawia właściwości.
 
-FIELD_SYM_EXTENDED  
-Zarezerwowane do użytku w przyszłości.
+FIELD_SYM_EXTENDED zarezerwowane do użytku w przyszłości.
 
-FIELD_KIND_MASK  
-Wskazuje maska dla typów pól.
+FIELD_KIND_MASK wskazuje maska dla typów pól.
 
-FIELD_TYPE_MASK  
-Określa maskę dla typów pól.
+FIELD_TYPE_MASK wskazuje maska dla typów pól.
 
-FIELD_SYM_MASK  
-Określa maskę, aby uzyskać informacje o symbolach.
+FIELD_SYM_MASK wskazuje maskę, aby uzyskać informacje o symbolach.
 
 ## <a name="remarks"></a>Uwagi
 Zwrócony z wywołania do [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.
@@ -234,7 +201,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

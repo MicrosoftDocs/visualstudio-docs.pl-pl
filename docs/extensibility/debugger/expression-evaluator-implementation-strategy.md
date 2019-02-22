@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 092c2250881b36563b672e0ac635b0d56d1309f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c79b1e59c40354e3805d034920d0d3acc396a435
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696002"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Strategia implementacji ewaluatora wyrażeń
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
-  
- Jedno z podejść do szybkiego tworzenia ewaluatora wyrażeń (EE) jest najpierw implementacja minimalne kod wymagany do wyświetlania zmiennych lokalnych w **lokalne** okna. Warto należy pamiętać, że każdy wiersz w **lokalne** okna wyświetla nazwę, typ i wartość zmiennej lokalnej, a wszystkie trzy są reprezentowane przez [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiektu. Nazwa, typ i wartość zmiennej lokalnej jest uzyskiwana z `IDebugProperty2` obiektu przez wywołanie jego [getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody. Aby uzyskać więcej informacji o sposobie wyświetlaniu zmiennych lokalnych w **lokalne** okna, zobacz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md).  
-  
-## <a name="discussion"></a>Dyskusja  
- Sekwencja możliwą implementację zaczyna się od wykonania [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). [Przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) i [metody GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) metody muszą być zaimplementowane w celu wyświetlenia zmiennych lokalnych. Wywoływanie `IDebugExpressionEvaluator::GetMethodProperty` zwraca `IDebugProperty2` obiekt, który reprezentuje metodę: oznacza to, że [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) obiektu. Metody sami nie są wyświetlane w **lokalne** okna.  
-  
- [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody, które powinny być zrealizowane dalej. Aparat debugowania (DE) wywołuje tę metodę, aby uzyskać listę zmiennych lokalnych i argumenty, przekazując `IDebugProperty2::EnumChildren` `guidFilter` argument `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` wywołania [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) i [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), łączenie wyników w jednym wyliczenia. Zobacz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać więcej informacji.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Implementowanie ewaluatora wyrażeń](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
- [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ Jedno z podejść do szybkiego tworzenia ewaluatora wyrażeń (EE) jest najpierw implementacja minimalne kod wymagany do wyświetlania zmiennych lokalnych w **lokalne** okna. Warto należy pamiętać, że każdy wiersz w **lokalne** okna wyświetla nazwę, typ i wartość zmiennej lokalnej, a wszystkie trzy są reprezentowane przez [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiektu. Nazwa, typ i wartość zmiennej lokalnej jest uzyskiwana z `IDebugProperty2` obiektu przez wywołanie jego [getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody. Aby uzyskać więcej informacji o sposobie wyświetlaniu zmiennych lokalnych w **lokalne** okna, zobacz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md).
+
+## <a name="discussion"></a>Dyskusja
+ Sekwencja możliwą implementację zaczyna się od wykonania [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). [Przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) i [metody GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) metody muszą być zaimplementowane w celu wyświetlenia zmiennych lokalnych. Wywoływanie `IDebugExpressionEvaluator::GetMethodProperty` zwraca `IDebugProperty2` obiekt, który reprezentuje metodę: oznacza to, że [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) obiektu. Metody sami nie są wyświetlane w **lokalne** okna.
+
+ [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody, które powinny być zrealizowane dalej. Aparat debugowania (DE) wywołuje tę metodę, aby uzyskać listę zmiennych lokalnych i argumenty, przekazując `IDebugProperty2::EnumChildren` `guidFilter` argument `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` wywołania [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) i [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), łączenie wyników w jednym wyliczenia. Zobacz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać więcej informacji.
+
+## <a name="see-also"></a>Zobacz także
+- [Implementowanie ewaluatora wyrażeń](../../extensibility/debugger/implementing-an-expression-evaluator.md)
+- [Wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md)

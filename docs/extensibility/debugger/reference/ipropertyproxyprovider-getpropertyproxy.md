@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyProvider::GetPropertyProxy
 helpviewer_keywords:
@@ -12,47 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa11057a66ab7b876d5f7866dfcca728bb3bb790
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 44a267b39ab630646803165a31f01b0bb4b45f47
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916909"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693792"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-Pobiera właściwość interfejsu serwera proxy dla identyfikatora określonego serwera proxy.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetPropertyProxy(  
-   DWORD                  dwID,  
-   IPropertyProxyEESide** proxy  
-);  
-```  
-  
-```csharp  
-int GetPropertyProxy(  
-   uint                     dwID,  
-   out IPropertyProxyEESide proxy  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `dwID`  
- [in] Identyfikator serwera proxy żądanej właściwości.  
-  
- `proxy`  
- [out] Zwraca [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) obiektu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Aby zapewnić obsługę wizualizatorów typu zewnętrznego, Metoda ta zazwyczaj przekazuje wywołanie do [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) metody. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) szczegółowe informacje na temat sposób uzyskiwania IEEVisualizerService.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [Wizualizacja i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+Pobiera właściwość interfejsu serwera proxy dla identyfikatora określonego serwera proxy.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetPropertyProxy(
+   DWORD                  dwID,
+   IPropertyProxyEESide** proxy
+);
+```
+
+```csharp
+int GetPropertyProxy(
+   uint                     dwID,
+   out IPropertyProxyEESide proxy
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `dwID`
+
+ [in] Identyfikator serwera proxy żądanej właściwości.
+
+ `proxy`
+
+ [out] Zwraca [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) obiektu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Aby zapewnić obsługę wizualizatorów typu zewnętrznego, Metoda ta zazwyczaj przekazuje wywołanie do [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) metody. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) szczegółowe informacje na temat sposób uzyskiwania IEEVisualizerService.
+
+## <a name="see-also"></a>Zobacz też
+- [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
+- [Wizualizacja i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md)

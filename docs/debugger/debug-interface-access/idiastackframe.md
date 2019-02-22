@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab68c077ea6897d32ca215ae1fa2726900622f7
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227306"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623245"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Udostępnia właściwości ramki stosu.
@@ -108,7 +108,7 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)  
-[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)  
-[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+- [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

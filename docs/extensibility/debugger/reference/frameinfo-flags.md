@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10641f9af57f572b660e900161a450c69886ad5e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316044"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694351"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Określa informacje, które można pobrać o obiekt w ramce stosu.
@@ -98,98 +98,67 @@ public enum enum_FRAMEINFO_FLAGS {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-FIF_FUNCNAME  
-Inicjowanie bądź użyj `m_bstrFuncName` pola.
+FIF_FUNCNAME zainicjować bądź użyj `m_bstrFuncName` pola.
 
-FIF_RETURNTYPE  
-Inicjowanie bądź użyj `m_bstrReturnType` pola.
+FIF_RETURNTYPE zainicjować bądź użyj `m_bstrReturnType` pola.
 
-FIF_ARGS  
-Inicjowanie bądź użyj `m_bstrArgs` pola.
+FIF_ARGS zainicjować bądź użyj `m_bstrArgs` pola.
 
-FIF_LANGUAGE  
-Inicjowanie bądź użyj `m_bstrLanguage` pola.
+FIF_LANGUAGE zainicjować bądź użyj `m_bstrLanguage` pola.
 
-FIF_MODULE  
-Inicjowanie bądź użyj `m_bstrModule` pola.
+FIF_MODULE zainicjować bądź użyj `m_bstrModule` pola.
 
-FIF_STACKRANGE  
-Inicjowanie bądź użyj `m_addrMin` i `m_addrMax` pola (zakres stosu).
+FIF_STACKRANGE zainicjować bądź użyj `m_addrMin` i `m_addrMax` pola (zakres stosu).
 
-FIF_FRAME  
-Inicjowanie bądź użyj `m_pFrame` pola.
+FIF_FRAME zainicjować bądź użyj `m_pFrame` pola.
 
-FIF_DEBUGINFO  
-Inicjowanie bądź użyj `m_fHasDebugInfo` pola.
+FIF_DEBUGINFO zainicjować bądź użyj `m_fHasDebugInfo` pola.
 
-FIF_STALECODE  
-Inicjowanie bądź użyj `m_fStaleCode` pola.
+FIF_STALECODE zainicjować bądź użyj `m_fStaleCode` pola.
 
-FIF_ANNOTATEDFRAME  
-Inicjowanie bądź użyj `m_fAnnotatedFrame` pola.
+FIF_ANNOTATEDFRAME zainicjować bądź użyj `m_fAnnotatedFrame` pola.
 
-FIF_DEBUG_MODULEP  
-Inicjowanie bądź użyj `m_pModule` pola.
+FIF_DEBUG_MODULEP zainicjować bądź użyj `m_pModule` pola.
 
-FIF_FUNCNAME_FORMAT  
-Formatuje nazwy funkcji. Wynik jest zwracany w `m_bstrFunName` pola i żadne inne pola są wypełnione.
+FIF_FUNCNAME_FORMAT formatów nazwy funkcji. Wynik jest zwracany w `m_bstrFunName` pola i żadne inne pola są wypełnione.
 
-FIF_FUNCNAME_RETURNTYPE  
-Dodaje typ zwracany `m_bstrFuncName` pola.
+FIF_FUNCNAME_RETURNTYPE dodaje typ zwracany `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_ARGS  
-Dodaje argumenty `m_bstrFuncName` pola.
+FIF_FUNCNAME_ARGS dodaje argumenty `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_LANGUAGE  
-Dodaje języka `m_bstrFuncName` pola.
+FIF_FUNCNAME_LANGUAGE dodaje języka `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_MODULE  
-Dodaje nazwę modułu, aby `m_bstrFuncName` pola.
+FIF_FUNCNAME_MODULE dodaje nazwę modułu, aby `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_LINES  
-Dodaje liczbę wierszy do `m_bstrFuncName` pola.
+FIF_FUNCNAME_LINES dodaje liczbę wierszy do `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_OFFSET  
-Dodaje do `m_bstrFuncName` pola przesunięcie w bajtach od początku wiersza, jeśli `FIF_FUNCNAME_LINES` jest określony. Jeśli `FIF_FUNCNAME_LINES` nie zostanie określony, lub jeśli numery wierszy nie są dostępne, dodaje przesunięcie w bajtach od początku funkcji.
+Dodaje FIF_FUNCNAME_OFFSET `m_bstrFuncName` pola przesunięcie w bajtach od początku wiersza, jeśli `FIF_FUNCNAME_LINES` jest określony. Jeśli `FIF_FUNCNAME_LINES` nie zostanie określony, lub jeśli numery wierszy nie są dostępne, dodaje przesunięcie w bajtach od początku funkcji.
 
-FIF_FUNCNAME_ARGS_TYPES  
-Dodaje typ każdego argumentu funkcji `m_bstrFuncName` pola.
+FIF_FUNCNAME_ARGS_TYPES dodaje typ każdego argumentu funkcji, aby `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_ARGS_NAMES  
-Dodaje nazwę każdego argumentu funkcji `m_bstrFuncName` pola.
+FIF_FUNCNAME_ARGS_NAMES dodaje nazwę każdego argumentu funkcji `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_ARGS_VALUES  
-Dodaje wartość każdego argumentu funkcji, aby `m_bstrFuncName` pola.
+FIF_FUNCNAME_ARGS_VALUES dodaje wartość każdego argumentu funkcji, aby `m_bstrFuncName` pola.
 
-FIF_FUNCNAME_ARGS_ALL  
-Dodaje typu, nazwy i wartości wszystkich argumentów `m_bstrFuncName` pola.
+FIF_FUNCNAME_ARGS_ALL dodaje typu, nazwy i wartości wszystkich argumentów `m_bstrFuncName` pola.
 
-FIF_ARGS_TYPES  
-Typy argumentów są pobierane i sformatowany.
+FIF_ARGS_TYPES typy argumentów są pobierane i sformatowany.
 
-FIF_ARGS_NAMES  
-Nazwy argumentów są pobierane i sformatowany.
+FIF_ARGS_NAMES nazwy argumentów są pobierane i sformatowany.
 
-FIF_ARGS_VALUES  
-Wartości argumentów są pobierane i sformatowany.
+FIF_ARGS_VALUES wartości argumentów są pobierane i sformatowany.
 
-FIF_ARGS_ALL  
-Pobierz i sformatować typu, nazwy i wartości wszystkich argumentów.
+FIF_ARGS_ALL pobierania i format typu, nazwy i wartości wszystkich argumentów.
 
-FIF_ARGS_NOFORMAT  
-Określa, że argumenty nie są sformatowane (na przykład nie dodawać otwierających i zamykających nawiasów wokół listy argumentów ani dodać separator między argumentami).
+Nie FIF_ARGS_NOFORMAT Określa, że argumenty są sformatowane (na przykład nie dodawać otwierających i zamykających nawiasów wokół listy argumentów ani dodać separator między argumentami).
 
-FIF_ARGS_NO_FUNC_EVAL  
-Określa, że obliczanie funkcji (właściwość) nie powinien być używany podczas pobierania wartości argumentu.
+FIF_ARGS_NO_FUNC_EVAL Określa, że funkcja oceny (właściwość) nie stosuje się podczas pobierania wartości argumentu.
 
-FIF_FILTER_NON_USER_CODE  
-Aparat debugowania jest filtrowanie ramki kodu niepochodzącego od użytkownika, dzięki czemu nie są uwzględniane.
+FIF_FILTER_NON_USER_CODE aparat debugowania jest filtrowanie ramki kodu niepochodzącego od użytkownika, dzięki czemu nie są uwzględniane.
 
-FIF_ARGS_NO_TOSTRING  
-Nie zezwalaj na `ToString()` funkcji oceny lub formatowania, gdy zwracany jest argumentów funkcji.
+FIF_ARGS_NO_TOSTRING nie zezwalają na `ToString()` funkcji oceny lub formatowania, gdy zwracany jest argumentów funkcji.
 
-FIF_DESIGN_TIME_EXPR_EVAL  
-Informacji o ramce powinny być uzyskane z hostowanej domeny aplikacji, a nie procesu hostingu.
+Informacji o ramce FIF_DESIGN_TIME_EXPR_EVAL powinny być uzyskane z hostowanej domeny aplikacji, a nie procesu hostingu.
 
 ## <a name="remarks"></a>Uwagi
 Te flagi są przekazywane do [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) i [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metod, aby określić, które pola mają być inicjowane w [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury lub struktury.
@@ -204,7 +173,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

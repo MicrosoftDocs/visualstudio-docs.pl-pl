@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989604"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691387"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serwery (zestaw SDK programu Visual Studio)
-W architekturze debugera *serwera*:  
-  
--   Jest kontenerem portów i dostawcy portów i komunikuje się portów i dostawcy portów Menedżer debugowania sesji (SDM) i aparaty debugowania.  
-  
--   Można zidentyfikować się według nazwy i wyliczanie jego portów i dostawcy portów.  
-  
--   Jest reprezentowany przez [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfejs, który jest implementowane tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia uruchomienia programu Visual Studio).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Porty](../../extensibility/debugger/ports.md)   
- [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)   
- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
+W architekturze debugera *serwera*:
+
+-   Jest kontenerem portów i dostawcy portów i komunikuje się portów i dostawcy portów Menedżer debugowania sesji (SDM) i aparaty debugowania.
+
+-   Można zidentyfikować się według nazwy i wyliczanie jego portów i dostawcy portów.
+
+-   Jest reprezentowany przez [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfejs, który jest implementowane tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia uruchomienia programu Visual Studio).
+
+## <a name="see-also"></a>Zobacz także
+- [Porty](../../extensibility/debugger/ports.md)
+- [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)
+- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

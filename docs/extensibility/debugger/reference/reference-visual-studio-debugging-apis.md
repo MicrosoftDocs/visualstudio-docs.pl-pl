@@ -1,7 +1,7 @@
 ---
 title: Dokumentacja (interfejsy API debugowania Visual Studio) | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - reference, Debugging SDK
 - debugging [Debugging SDK], reference
@@ -12,24 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab22fa02cdad34031c970c6d0abf591aba5b58bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d2f4a1c30542db5446c6f39054eb8ef4eaae19bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973320"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691465"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Dokumentacja (Interfejsy API debugowania programu Visual Studio)
-Odwołania do programu Visual Studio SDK debugowania opisują podstawowy model dla architektury w czasie wykonywania oraz funkcje debugowania i jego składników. Dokumentacja sprawia, że tak małą założenia możliwie o składnikach i interfejsy, które opisano w nim, oprócz zachowania, które definiuje za pośrednictwem interfejsów.  
-  
- Celem sekcja dokumentacji jest zapewniają wsparcie jako zróżnicowany zestaw języków, czas wykonywania i systemy operacyjne jak to możliwe.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- Zawiera dokumentację dla interfejsów, wyliczenia i struktury do API Visual Studio debugowania.  
-  
- [Słownik](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)  
- Zawiera listę pojęć związanych z debugowania oraz ich definicje.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+
+Odwołania do programu Visual Studio SDK debugowania opisują podstawowy model dla architektury w czasie wykonywania oraz funkcje debugowania i jego składników. Dokumentacja sprawia, że tak małą założenia możliwie o składnikach i interfejsy, które opisano w nim, oprócz zachowania, które definiuje za pośrednictwem interfejsów.
+
+Celem sekcja dokumentacji jest zapewniają wsparcie jako zróżnicowany zestaw języków, czas wykonywania i systemy operacyjne jak to możliwe.
+
+## <a name="in-this-section"></a>W tej sekcji
+
+[Dokumentacja interfejsu API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+
+Zawiera dokumentację dla interfejsów, wyliczenia i struktury do API Visual Studio debugowania.
+
+[Słownik](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
+
+Zawiera listę pojęć związanych z debugowania oraz ich definicje.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

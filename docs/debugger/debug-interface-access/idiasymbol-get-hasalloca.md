@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af3f7788814feb46b838320b9bcaddb592dc69b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f86eb2c4e0d95d3fbb9c24ee8596193b31223b11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606943"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698394"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 Pobiera flagę określającą, czy funkcja zawiera wywołanie `alloca` (który służy do przydzielania pamięci na stosie).
 
 ## <a name="syntax"></a>Składnia
 
-```
-- [C++]HRESULT get_hasAlloca(   BOOL *pFlag);
+```cpp
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>Parametry

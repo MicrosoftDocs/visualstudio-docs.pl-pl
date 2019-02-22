@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970832"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700266"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-**Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
+**Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia** > **opcje**, a następnie wybierając **środowiska** > **czcionek i Kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
 
 Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.
 
@@ -63,7 +63,13 @@ Wyświetla listę wszystkich elementów interfejsu użytkownika, dla których mo
 
 -   **Czcionka środowiska**
 
-     Zmienia styl czcionki i rozmiar wszystkie elementy interfejsu użytkownika IDE, które nie mają już osobną opcją w **Pokaż ustawienia dla.** Na przykład, ta opcja ma zastosowanie do **strona startowa** , ale nie wpłynie niekorzystnie **dane wyjściowe** okna.
+     Zmienia styl czcionki i rozmiar wszystkie elementy interfejsu użytkownika IDE, które nie mają już osobną opcją w **Pokaż ustawienia dla**.
+
+     ::: moniker range="vs-2017"
+
+     Na przykład, ta opcja ma zastosowanie do **strona startowa** , ale nie ma wpływu na **dane wyjściowe** okna.
+
+     ::: moniker-end
 
 -   **[Wszystkie tekstowe narzędzie Windows]**
 

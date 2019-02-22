@@ -12,70 +12,76 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d8ea9367d364f0374d08423c2acf892fe3ddb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996262"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691153"
 ---
 # <a name="scchistory-function"></a>SccHistory, funkcja
-Funkcja ta wyświetla historię określonych plików.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-SCCRTN SccHistory(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pvContext`  
- [in] Struktura kontekście wtyczki kontroli źródła.  
-  
- `hWnd`  
- [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
-  
- `nFiles`  
- [in] Liczba plików określonych w `lpFileName` tablicy.  
-  
- `lpFileName`  
- [in] Tablica z w pełni kwalifikowane nazwy plików.  
-  
- `fOptions`  
- [in] Polecenie flagi (aktualnie nieużywane).  
-  
- `pvOptions`  
- [in] Opcje plug-określonych kontroli źródła.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
-  
-|Wartość|Opis|  
-|-----------|-----------------|  
-|SCC_OK|Historia wersji zostały pomyślnie pobrane.|  
-|SCC_I_RELOADFILE|System kontroli źródła faktycznie zmodyfikowany plik na dysku podczas pobierania historii (na przykład przez pobranie starej wersji), aby załadować ponownie ten plik IDE.|  
-|SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|  
-|SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|  
-|SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
-|SCC_E_PROJNOTOPEN|Projekt nie został otwarty.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd. Nie można uzyskać historii plików.|  
-  
-## <a name="remarks"></a>Uwagi  
- Wtyczka do kontroli źródła może wyświetlać swoje własne okno dialogowe, aby wyświetlić historię każdego pliku, przy użyciu `hWnd` jako okno nadrzędne. Alternatywnie opcjonalny tekst dane wyjściowe wywołania zwrotnego funkcji dostarczonych [SccOpenProject](../extensibility/sccopenproject-function.md) mogą być używane, jeśli jest obsługiwana.  
-  
- Należy pamiętać, że w pewnych okolicznościach pliku sprawdzane mogą się zmieniać podczas wykonywania tego wywołania. Na przykład [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] polecenie history zapewnia możliwość pobrania starej wersji pliku. W takiej sytuacji zwraca wtyczki kontroli źródła `SCC_I_RELOAD` ostrzec IDE, że trzeba ponownie załadować plik.  
-  
+Funkcja ta wyświetla historię określonych plików.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+SCCRTN SccHistory(
+   LPVOID    pvContext,
+   HWND      hWnd,
+   LONG      nFiles,
+   LPCSTR*   lpFileNames,
+   LONG      fOptions,
+   LPCMDOPTS pvOptions
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pvContext`
+
+[in] Struktura kontekście wtyczki kontroli źródła.
+
+ `hWnd`
+
+[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+
+ `nFiles`
+
+[in] Liczba plików określonych w `lpFileName` tablicy.
+
+ `lpFileName`
+
+[in] Tablica z w pełni kwalifikowane nazwy plików.
+
+ `fOptions`
+
+[in] Polecenie flagi (aktualnie nieużywane).
+
+ `pvOptions`
+
+[in] Opcje plug-określonych kontroli źródła.
+
+## <a name="return-value"></a>Wartość zwracana
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+
+|Wartość|Opis|
+|-----------|-----------------|
+|SCC_OK|Historia wersji zostały pomyślnie pobrane.|
+|SCC_I_RELOADFILE|System kontroli źródła faktycznie zmodyfikowany plik na dysku podczas pobierania historii (na przykład przez pobranie starej wersji), aby załadować ponownie ten plik IDE.|
+|SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|
+|SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|
+|SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|
+|SCC_E_PROJNOTOPEN|Projekt nie został otwarty.|
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd. Nie można uzyskać historii plików.|
+
+## <a name="remarks"></a>Uwagi
+ Wtyczka do kontroli źródła może wyświetlać swoje własne okno dialogowe, aby wyświetlić historię każdego pliku, przy użyciu `hWnd` jako okno nadrzędne. Alternatywnie opcjonalny tekst dane wyjściowe wywołania zwrotnego funkcji dostarczonych [SccOpenProject](../extensibility/sccopenproject-function.md) mogą być używane, jeśli jest obsługiwana.
+
+ Należy pamiętać, że w pewnych okolicznościach pliku sprawdzane mogą się zmieniać podczas wykonywania tego wywołania. Na przykład [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] polecenie history zapewnia możliwość pobrania starej wersji pliku. W takiej sytuacji zwraca wtyczki kontroli źródła `SCC_I_RELOAD` ostrzec IDE, że trzeba ponownie załadować plik.
+
 > [!NOTE]
->  Jeśli wtyczka do kontroli źródła nie obsługuje tej funkcji dla plików, można wyświetlić pliku historii pierwszego pliku.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [SccOpenProject](../extensibility/sccopenproject-function.md)
+>  Jeśli wtyczka do kontroli źródła nie obsługuje tej funkcji dla plików, można wyświetlić pliku historii pierwszego pliku.
+
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+- [SccOpenProject](../extensibility/sccopenproject-function.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2::onDestroy | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2::OnDestroy
 helpviewer_keywords:
@@ -12,30 +12,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6af74aa399c070cf4807e882a65d158ce7218f10
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ade70ce0f72d2f3b86d6f7ec95a61b4bad57b102
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006927"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685186"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
-Wskazuje, że cały dokument został zniszczony.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT onDestroy(   
-   void   
-);  
-```  
-  
-```csharp  
-int onDestroy();  
-```  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
+Wskazuje, że cały dokument został zniszczony.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT onDestroy( 
+   void 
+);
+```
+
+```csharp
+int onDestroy();
+```
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

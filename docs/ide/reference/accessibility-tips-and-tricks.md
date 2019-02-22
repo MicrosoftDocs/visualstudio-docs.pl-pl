@@ -1,7 +1,7 @@
 ---
 title: Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 description: Więcej informacji na temat porady i wskazówki, które mogą pomóc, że program Visual Studio zintegrowane środowisko programistyczne (IDE) jest bardziej dostępny dla każdego, w tym osobom niepełnosprawnym.
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318556"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680935"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
 > [!TIP]
-> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
+> Aby dowiedzieć się więcej o dostępności aktualizacji, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
 Visual Studio ma wbudowanych funkcji ułatwień dostępu, które są zgodne z czytnikami ekranu i innych technologii pomocniczych. Ten temat zawiera listę typowych kombinacje klawiszy skrótu można używać do wykonywania zadań przy użyciu tylko klawiatury i zawiera informacje o używaniu motywy o wysokim kontraście poprawi widoczność. Także pokazuje jak ujawnić przydatnych informacji o kodzie za pomocą adnotacji i jak ustawić dźwięku wskazówek dla kompilacji i punkt przerwania zdarzenia.
 
@@ -64,6 +64,7 @@ Oto niektóre inne przydatne kombinacje klawiszy skrótu.
 |Okno dialogowe|Zaznacz lub wyczyść pole wyboru opcji w oknie dialogowym. <br> <br> **UWAGA:** Standardowa skrótów Windows|**SPACJA**|
 |Menu kontekstowe|Otwórz menu kontekstowe (kliknij prawym przyciskiem myszy). <br> <br> **UWAGA:** Standardowa skrótów Windows|**SHIFT** + **F10**|
 |Menu|Szybki dostęp do elementu menu przy użyciu jego klawiszy skrótów. Wybierz **ALT** klucz następuje podkreślnikiem w menu, aby uaktywnić to polecenie. Na przykład, aby wyświetlić okno dialogowe Otwórz projekt w programie Visual Studio, możesz wybrać **ALT** + **F** + **O**  +  **P**.  <br><br> **UWAGA:** Standardowa skrótów Windows|**ALT** + **[list]**|
+|Pole wyszukiwania w usłudze szybkiego uruchamiania| Użyj funkcji wyszukiwania w programie Visual Studio|**CTRL** + **funkcji pytania i odpowiedzi**|
 |Okno przybornika|Przechodzenie między karty przybornika.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **STRZAŁKA W DÓŁ**|
 |Okno przybornika|Dodawanie formantu z przybornika do formularza lub projektanta.|**WPROWADŹ**|
 |Klawiatura, środowisko, opcje — Okno dialogowe|Usunąć kombinacja klawiszy w **naciśnij klawisze skrótu** opcji.|**BACKSPACE**|

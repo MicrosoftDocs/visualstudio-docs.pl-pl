@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 351978f720f1aea47650eda7e8f213e8014320c0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f4f2fd84a818df43c62d60cf7fd2183e714eaa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957159"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705901"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task field
-Reprezentuje opóźnieniem zainicjowane utworzone zadanie.  
-  
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Zestaw:** mscorlib (w mscorlib.dll)  
-  
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```csharp  
-.field private class System.Threading.Tasks.Task`1<!TResult> m_task  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Reprezentuje opóźnieniem zainicjowane utworzone zadanie.
+
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Zestaw:** mscorlib (w mscorlib.dll)
+
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+
+## <a name="syntax"></a>Składnia
+
+```csharp
+.field private class System.Threading.Tasks.Task`1<!TResult> m_task
+```
+
+## <a name="see-also"></a>Zobacz także
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
+- [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

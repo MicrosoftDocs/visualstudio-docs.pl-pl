@@ -1,7 +1,7 @@
 ---
 title: BPRESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPRESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784d26f4d5ae6bd8edd9b6565644a6cd513db78
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413062"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680571"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Określa informacje, które mają zostać pobrane informacje pomyślnego rozwiązania punktu przerwania.
@@ -44,17 +44,13 @@ public enum enum_BPRESI_FIELDS {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-BPRESI_BPRESLOCATION  
-Inicjowanie bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
+BPRESI_BPRESLOCATION zainicjować bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
 
-BPRESI_PROGRAM  
-Inicjowanie bądź użyj `pProgram` pole `BP_RESOLUTION_INFO` struktury.
+BPRESI_PROGRAM zainicjować bądź użyj `pProgram` pole `BP_RESOLUTION_INFO` struktury.
 
-BPRESI_THREAD  
-Inicjowanie bądź użyj `pThread` pole `BP_RESOLUTION_INFO` struktury.
+BPRESI_THREAD zainicjować bądź użyj `pThread` pole `BP_RESOLUTION_INFO` struktury.
 
-BPRESI_ALLFIELDS  
-Określa wszystkie pola.
+BPRESI_ALLFIELDS określa wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodę, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury, które mają zostać zainicjowane.
@@ -71,6 +67,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

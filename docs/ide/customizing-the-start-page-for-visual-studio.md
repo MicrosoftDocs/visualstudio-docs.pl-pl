@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj niestandardową stronę początkową lub zmień element startowy
+title: Zmień środowisko uruchamiania
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f367a46423c12f6e7553d81baa9229d8c7138d1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948293"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685134"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Dostosuj stronę początkową dla programu Visual Studio
+# <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
-Możesz dostosować środowisko uruchamiania dla programu Visual Studio na kilka różnych sposobów, takich jak pokazywanie **Otwórz projekt** okno dialogowe lub otwieranie rozwiązania, które było ostatnio załadowane. Można także pokazać niestandardową stronę początkową, czyli stronę XAML Windows Presentation Foundation (WPF), która jest uruchamiana w oknie narzędzi i może wykonywać wewnętrzne polecenia Visual Studio.
+Możesz dostosować środowisko uruchamiania dla programu Visual Studio na kilka różnych sposobów, takich jak otwieranie najnowsze rozwiązania lub po prostu środowiska deweloperskiego puste.
+
+::: moniker range="vs-2017"
+
+Można także pokazać niestandardową stronę początkową, czyli stronę XAML Windows Presentation Foundation (WPF), która jest uruchamiana w oknie narzędzi i może wykonywać wewnętrzne polecenia Visual Studio.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>Aby zmienić element startowy
 
@@ -30,7 +36,19 @@ Możesz dostosować środowisko uruchamiania dla programu Visual Studio na kilka
 
 1. Rozwiń **środowiska**, a następnie wybierz **uruchamiania**.
 
+::: moniker range="vs-2017"
+
 1. W **przy uruchamianiu** listy, wybierz element który będzie wyświetlany po uruchomieniu programu Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W **podczas uruchamiania, należy otworzyć** , wybierz, co ma się stać po uruchomieniu programu Visual Studio. Możesz wybrać spośród **rozpoczęcia okna** (który umożliwia otwarcie nowego lub istniejącego projektu), **najnowsze rozwiązania**, lub **puste środowisko**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>Aby pokazać niestandardową stronę początkową
 
@@ -46,9 +64,11 @@ Aby zainstalować niestandardową stronę początkową, otwórz *.vsix* pliku, l
 
 1. W **Dostosuj stronę początkową** listy, wybierz stronę, która ma.
 
-> [!NOTE]
+> [!TIP]
 > Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

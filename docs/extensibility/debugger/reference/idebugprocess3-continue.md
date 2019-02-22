@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::Continue | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::Continue
 helpviewer_keywords:
@@ -12,46 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58cae37bb73a397a7d1b1226c91f68ecb44484c8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985435"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719343"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Kontynuuje, uruchomienie tego procesu w stanie zatrzymania. Dowolnego poprzedniego stanu wykonywania (np. krok) są zachowywane, a proces jest uruchamiany ponownie wykonywania.  
-  
+Kontynuuje, uruchomienie tego procesu w stanie zatrzymania. Dowolnego poprzedniego stanu wykonywania (np. krok) są zachowywane, a proces jest uruchamiany ponownie wykonywania.
+
 > [!NOTE]
->  Ta metoda powinna być używana zamiast [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT Continue(  
-   IDebugThread2* pThread  
-);  
-```  
-  
-```csharp  
-int Continue(  
-   IDebugThread2 pThread  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek będzie kontynuowane.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana na temat tego procesu, niezależnie od tego, jak wiele procesów są debugowane lub proces, który wygenerował zdarzenie zatrzymywania. Wdrożenie musi zachować poprzedni stan wykonania (np. krok) i kontynuować wykonywanie, tak, jakby nigdy nie przestała się przed wykonaniem jego wcześniejszego wykonania. Oznacza to, jeśli wątek w ten proces wykonywanych operacji przejścia i została zatrzymana z powodu jakiś inny proces jest zatrzymana, a następnie `Continue` została wywołana, określonego wątku, należy wykonać operację przejścia.  
-  
- **Ostrzeżenie** nie będą wysyłane zdarzenia zatrzymywania lub natychmiastowego zdarzeń (synchroniczne) [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+>  Ta metoda powinna być używana zamiast [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT Continue(
+   IDebugThread2* pThread
+);
+```
+
+```csharp
+int Continue(
+   IDebugThread2 pThread
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pThread`
+
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek będzie kontynuowane.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Ta metoda jest wywoływana na temat tego procesu, niezależnie od tego, jak wiele procesów są debugowane lub proces, który wygenerował zdarzenie zatrzymywania. Wdrożenie musi zachować poprzedni stan wykonania (np. krok) i kontynuować wykonywanie, tak, jakby nigdy nie przestała się przed wykonaniem jego wcześniejszego wykonania. Oznacza to, jeśli wątek w ten proces wykonywanych operacji przejścia i została zatrzymana z powodu jakiś inny proces jest zatrzymana, a następnie `Continue` została wywołana, określonego wątku, należy wykonać operację przejścia.
+
+ **Ostrzeżenie** nie będą wysyłane zdarzenia zatrzymywania lub natychmiastowego zdarzeń (synchroniczne) [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -12,41 +12,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ace81dbf3b39ed9e7707a50c1f7beae35e88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36f49d4e1ebaa6d8e15e43b821af56204739cb07
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989276"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687786"
 ---
 # <a name="using-and-providing-services"></a>Korzystanie z usług i dostarczanie ich
-Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage oferuje zestaw określonych interfejsów dla innego pakietu VSPackage korzystać. Na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferuje <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> do dowolnego pakietu VSPackage go obsłużyć obciążenia. Ta usługa zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).  
-  
- Pakietów VSPackage może oferować swoje własne przy użyciu usług <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejs...  
-  
- Program Visual Studio udostępnia ważne usługi, takie jak następujące:  
-  
-|Usługa środowiska IDE|Opis|  
-|-----------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Zapewnia dostęp do środowiska IDE usług radzenia sobie z podstawowych funkcji, pakietów VSPackage i rejestru.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Udostępnia podstawowe obsługi okien i związane z interfejsem użytkownika w środowisku IDE, takie jak możliwość tworzenia, narzędzi i oknami dokumentu.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Zapewnia podstawowe funkcje związane z rozwiązania, takimi jak wyliczyć projektów, Utwórz nowe projekty i monitorowanie zmian projektu.|  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md)  
- Przedstawia informacje o ważnych elementów usługi Visual Studio.  
-  
- [Instrukcje: Uzyskiwanie usługi](../extensibility/how-to-get-a-service.md)  
- W tym artykule omówiono sposób żądania (Używanie) usługi.  
-  
- [Instrukcje: Oferuje usługi](../extensibility/how-to-provide-a-service.md)  
- W tym artykule omówiono sposób zapewniania usług.  
-  
- [Instrukcje: Zapewniają usługi asynchronicznego programu Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
- W tym artykule omówiono sposób obsługi asynchronicznego.  
-  
- [Instrukcje: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md)  
- W tym artykule omówiono typowe problemy i przedstawia informacje o rozwiązaniach do nich.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage oferuje zestaw określonych interfejsów dla innego pakietu VSPackage korzystać. Na przykład [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferuje <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> do dowolnego pakietu VSPackage go obsłużyć obciążenia. Ta usługa zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../extensibility/how-to-use-the-activity-log.md).
+
+ Pakietów VSPackage może oferować swoje własne przy użyciu usług <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfejs...
+
+ Program Visual Studio udostępnia ważne usługi, takie jak następujące:
+
+|Usługa środowiska IDE|Opis|
+|-----------------|-----------------|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Zapewnia dostęp do środowiska IDE usług radzenia sobie z podstawowych funkcji, pakietów VSPackage i rejestru.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Udostępnia podstawowe obsługi okien i związane z interfejsem użytkownika w środowisku IDE, takie jak możliwość tworzenia, narzędzi i oknami dokumentu.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Zapewnia podstawowe funkcje związane z rozwiązania, takimi jak wyliczyć projektów, Utwórz nowe projekty i monitorowanie zmian projektu.|
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Podstawowe informacje o usłudze](../extensibility/internals/service-essentials.md) przedstawiono ważne elementy usługi Visual Studio.
+
+- [Instrukcje: Usługi](../extensibility/how-to-get-a-service.md) w tym artykule omówiono sposób żądania (Używanie) usługi.
+
+- [Instrukcje: Oferuje usługi](../extensibility/how-to-provide-a-service.md) w tym artykule omówiono sposób zapewniania usług.
+
+- [Instrukcje: Podaj asynchroniczne usługi Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) w tym artykule omówiono sposób obsługi asynchronicznej.
+
+- [Instrukcje: Rozwiązywanie problemów z usługami](../extensibility/how-to-troubleshoot-services.md) w tym artykule omówiono typowe problemy i przedstawia informacje o rozwiązaniach do nich.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

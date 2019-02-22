@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7905a9226d120c14a4b9e6472e14714167c1b09
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949392"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607346"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Pobiera określoną liczbę elementów danych ramki w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Next (   
-   ULONG           celt,   
-   IDiaFrameData** rgelt,  
-   ULONG*          pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba elementów danych ramki w modułu wyliczającego do pobrania.  
-  
- rgelt  
- [out] Tablica [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiektów, które ma zostać wypełniony przy użyciu elementów danych żądanego ramki.  
-  
- pceltFetched  
- [out] Zwraca liczbę elementów danych ramki w pobrano modułu wyliczającego.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Pobiera określoną liczbę elementów danych ramki w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Next ( 
+   ULONG           celt,
+   IDiaFrameData** rgelt,
+   ULONG*          pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba elementów danych ramki w modułu wyliczającego do pobrania.
+
+ rgelt
+
+[out] Tablica [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiektów, które ma zostać wypełniony przy użyciu elementów danych żądanego ramki.
+
+ pceltFetched
+
+[out] Zwraca liczbę elementów danych ramki w pobrano modułu wyliczającego.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

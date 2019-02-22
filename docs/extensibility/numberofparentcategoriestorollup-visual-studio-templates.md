@@ -14,79 +14,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93cbde61c4030a53819f42c65fca386174ac57d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b733b65a62db3cb39197fbdbed4c471651eae49a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036033"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687948"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Numberofparentcategoriestorollup — element (szablony Visual Studio)
-Określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<NumberOfParentCategoriesToRollUp >  
-  
-## <a name="syntax"></a>Składnia  
-  
+Określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.
+
+ \<VSTemplate> \<TemplateData> \<NumberOfParentCategoriesToRollUp>
+
+## <a name="syntax"></a>Składnia
+
 ```xml
-<NumberOfParentCategoriesToRollUp>  
-1  
-</NumberOfParentCategoriesToRollUp>  
+<NumberOfParentCategoriesToRollUp>
+1
+</NumberOfParentCategoriesToRollUp>
 ```
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
- Brak.  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak.  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
-  
-## <a name="text-value"></a>Wartość tekstowa  
- `integer` Wartość jest wymagana.  
-  
- Ta wartość określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.  
-  
-## <a name="remarks"></a>Uwagi  
- `NumberOfParentCategoriesToRollUp` element jest opcjonalny.  
-  
-## <a name="example"></a>Przykład  
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+ Brak.
+
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak.
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+
+## <a name="text-value"></a>Wartość tekstowa
+ `integer` Wartość jest wymagana.
+
+ Ta wartość określa liczbę kategorii nadrzędnych, wyświetlające szablonu w **nowy projekt** okno dialogowe.
+
+## <a name="remarks"></a>Uwagi
+ `NumberOfParentCategoriesToRollUp` element jest opcjonalny.
+
+## <a name="example"></a>Przykład
  Ten przykład ilustruje metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows. Jeśli szablon z te metadane jest umieszczany dwa poziomy folderu poniżej najwyższego poziomu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] węzła, szablon pojawi się na węzeł najwyższego poziomu w **nowy projekt** okno dialogowe. Jeśli `NumberOfParentCategoriesToRollUp` nie jest ustawiona, szablon jest wyświetlany tylko w węźle w którym się znajduje się fizycznie.
-  
+
 ```xml
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic starter kit</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyStarterKit.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic starter kit</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyStarterKit.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

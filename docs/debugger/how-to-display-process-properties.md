@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a8df6b84f248ca5cf48ad70f4f9fc1111ccbd2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 67590777acd5848b45c312a78268ba443d9b2a74
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022914"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692713"
 ---
 # <a name="how-to-display-process-properties"></a>Instrukcje: Wyświetlanie właściwości procesu
-Aby dowiedzieć się więcej na temat procesu, na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).  
-  
-### <a name="to-open-a-process-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości procesu  
-  
-1. Wybierz proces z poziomu drzewa wyświetlany w **widok procesów**.  
-  
-2. Z **widoku** menu, wybierz **właściwości**.  
-  
+Aby dowiedzieć się więcej na temat procesu, na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).
+
+### <a name="to-open-a-process-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości procesu
+
+1. Wybierz proces z poziomu drzewa wyświetlany w **widok procesów**.
+
+2. Z **widoku** menu, wybierz **właściwości**.
+
    Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.

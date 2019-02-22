@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e450ef87733ffed88436114458d804c125fc20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643837"
 ---
 # <a name="item-definitions"></a>Definicje elementów
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wersji 2.0 umożliwia deklarację statycznych elementów w plikach projektu za pomocą [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Jednak metadane mogą być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu o nazwie [ItemDefinitionGroup —](../msbuild/itemdefinitiongroup-element-msbuild.md) pozwala pokonać tego ograniczenia. *ItemDefinitionGroup —* umożliwiają definiowanie zestawu definicji elementu, aby dodać wartości metadanych domyślne dla wszystkich elementów w typie elementu o nazwie.
@@ -252,4 +252,4 @@ Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecm
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
+- [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)

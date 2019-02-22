@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318748"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680479"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -103,6 +103,6 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 ### <a name="reacting-to-this-breaking-change"></a>Reagowanie na tej istotnej zmiany
 
 * Kod zewnętrzny powinny być konwertowane na potrzeby aktywacji bez rejestracji składników COM, jak również.
-* Składniki zewnętrzne, można znaleźć lokalizacji programu Visual Studio [postępując zgodnie ze wskazówkami zawartymi w tym miejscu](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Składniki zewnętrzne, można znaleźć lokalizacji programu Visual Studio [postępując zgodnie ze wskazówkami zawartymi w tym miejscu](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Zalecane jest używanie składników zewnętrznych [zewnętrznego Menedżera ustawień](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) zamiast odczytu/zapisu bezpośrednio do kluczy rejestru programu Visual Studio.
 * Sprawdź, czy składniki, które używa rozszerzenia mogą wdrażać inna technika rejestracji. Na przykład rozszerzenia debugera można korzystać z zalet nowego [msvsmon rejestracji COM plik JSON](migrate-debugger-COM-registration.md).

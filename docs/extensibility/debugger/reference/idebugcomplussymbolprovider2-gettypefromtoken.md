@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 590e8705dec674b96a57b68934ab1bd5b75a6545
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413465"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681937"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Pobiera typ, biorąc pod uwagę jej token.
@@ -42,17 +42,21 @@ int GetTypeFromToken(
 ```
 
 #### <a name="parameters"></a>Parametry
-`appDomain`  
-[in] Identyfikator domeny aplikacji.
+`appDomain`
 
-`guidModule`  
-[in] Unikatowy identyfikator modułu.
+ [in] Identyfikator domeny aplikacji.
 
-`tdToken`  
-[in] Token typu, który ma zostać pobrane.
+`guidModule`
 
-`ppField`  
-[out] Zwraca typ, który jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+ [in] Unikatowy identyfikator modułu.
+
+`tdToken`
+
+ [in] Token typu, który ma zostać pobrane.
+
+`ppField`
+
+ [out] Zwraca typ, który jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -87,4 +91,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

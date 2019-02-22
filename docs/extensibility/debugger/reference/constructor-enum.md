@@ -1,7 +1,7 @@
 ---
 title: CONSTRUCTOR_ENUM | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONSTRUCTOR_ENUM
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd5067591f4f296825db6362f4a7b91f1a7a37e8
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412815"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680363"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Zaznacza różne rodzaje konstruktorów.
@@ -41,14 +41,11 @@ public enum ConstructorMatchOptions {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-crAll  
-Wybiera wszystkie konstruktory.
+crAll wybiera wszystkie konstruktory.
 
-crNonStatic  
-Wybiera niestatycznych konstruktorów.
+crNonStatic wybiera niestatycznych konstruktorów.
 
-crStatic  
-Wybiera konstruktorów statycznych.
+crStatic wybiera konstruktorów statycznych.
 
 ## <a name="remarks"></a>Uwagi
 Przekazywany jako argument do [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) metody.
@@ -61,5 +58,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

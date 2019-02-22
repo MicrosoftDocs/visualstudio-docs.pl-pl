@@ -13,58 +13,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4caecb1af8e620c671d5c2cc63e032ad5e1df26d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920646"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678348"
 ---
 # <a name="keybindings-element"></a>KeyBindings, element
-KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiązań klawiszy.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding>... </KeyBinding>  
-  <KeyBinding>... </KeyBinding>  
-</KeyBindings>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń.|  
-  
-## <a name="example"></a>Przykład  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
-</KeyBindings>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [KeyBinding, element](../extensibility/keybinding-element.md)   
- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+KeyBindings, element grupy elementów powiązanie klawiszy i inne grupy powiązań klawiszy.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<KeyBindings>
+  <KeyBinding>... </KeyBinding>
+  <KeyBinding>... </KeyBinding>
+</KeyBindings>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|
+|[KeyBindings](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują poleceń.|
+
+## <a name="example"></a>Przykład
+
+```xml
+<KeyBindings>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"
+    editor="guidWidgetEditor" key1="VK_F5"/>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>
+</KeyBindings>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [KeyBinding, element](../extensibility/keybinding-element.md)
+- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

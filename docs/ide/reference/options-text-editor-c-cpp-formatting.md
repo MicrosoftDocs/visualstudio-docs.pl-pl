@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645488"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 
@@ -42,7 +42,7 @@ Ta strona zawiera opcje formatowania instrukcji i bloków, podczas ich wpisywani
 
 ### <a name="configuring-clangformat-options"></a>Konfigurowanie opcji narzędzia ClangFormat
 
-W programie Visual Studio 2017 wersji 15.7 lub nowszej Obsługa narzędzia ClangFormat jest włączona domyślnie. Możesz wybrać, które z tych typowych Konwencji formatowanie, aby zastosować do wszystkich projektów: Maszyny wirtualnej niskiego poziomu, Google, chrom, Mozilla lub aparatu WebKit. Można również utworzyć definicję formatu niestandardowego pliku clang format lub _clang-format. Jeśli taki plik znajduje się w folderze projektu, Visual Studio używa jej do formatowania wszystkich plikach kodu źródłowego, w tym folderze i jego podfolderach. 
+W programie Visual Studio 2017 wersji 15.7 lub nowszej Obsługa narzędzia ClangFormat jest włączona domyślnie. Możesz wybrać, które z tych typowych Konwencji formatowanie, aby zastosować do wszystkich projektów: Maszyny wirtualnej niskiego poziomu, Google, chrom, Mozilla lub aparatu WebKit. Można również utworzyć definicję formatu niestandardowego pliku clang format lub _clang-format. Jeśli taki plik znajduje się w folderze projektu, Visual Studio używa jej do formatowania wszystkich plikach kodu źródłowego, w tym folderze i jego podfolderach.
 
 Domyślnie program Visual Studio clangformat.exe działa w tle, który ma zastosowanie formatowania podczas wpisywania. Można również określić ręcznie uruchomić je tylko w przypadku wywołana poleceń formatowania **Formatuj dokument (Ctrl + K, Ctrl + D)** lub **Formatuj zaznaczenie (Ctrl + K, Ctrl + F)**.
 

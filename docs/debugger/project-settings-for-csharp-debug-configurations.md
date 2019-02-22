@@ -21,44 +21,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77fa0d60c4c702e2594121d5db54bf6c5e7cc6f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005972"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680610"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w języku C#
 
-Możesz zmienić C# ustawienia debugowania w programie project [karty debugowania](#debug-tab) i [karta kompilacji](#build-tab) stron właściwości projektu. 
+Możesz zmienić C# ustawienia debugowania w programie project [karty debugowania](#debug-tab) i [karta kompilacji](#build-tab) stron właściwości projektu.
 
 Aby otworzyć na stronach właściwości, wybierz projekt w **Eksploratora rozwiązań** , a następnie wybierz **właściwości** ikonę, lub kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**.
 
-Aby uzyskać więcej informacji, zobacz [debugowania i zwalniania konfiguracji](how-to-set-debug-and-release-configurations.md). 
+Aby uzyskać więcej informacji, zobacz [debugowania i zwalniania konfiguracji](how-to-set-debug-and-release-configurations.md).
 
 >[!IMPORTANT]
->Te ustawienia nie dotyczą aplikacji .NET Core, ASP.NET lub platformy uniwersalnej systemu Windows. Aby skonfigurować ustawienia debugowania dla aplikacji platformy uniwersalnej systemu Windows, zobacz [uruchamianie sesji debugowania dla aplikacji platformy uniwersalnej systemu Windows](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
-  
-## <a name="debug-tab"></a>Debugowanie kartę  
-  
+>Te ustawienia nie dotyczą aplikacji .NET Core, ASP.NET lub platformy uniwersalnej systemu Windows. Aby skonfigurować ustawienia debugowania dla aplikacji platformy uniwersalnej systemu Windows, zobacz [uruchamianie sesji debugowania dla aplikacji platformy uniwersalnej systemu Windows](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+
+## <a name="debug-tab"></a>Debugowanie kartę
+
 |Ustawienie|Opis|
 |-------------------------------------| - |
 | **Konfiguracja** | Ustawia tryb w celu skompilowania aplikacji. Wybierz **aktywna (debugowanie)**, **debugowania**, **wersji**, lub **wszystkie konfiguracje** z listy rozwijanej. |
 | **Akcja uruchamiania** | Określa akcję po wybraniu **Start** w konfiguracji debugowania.<br />- **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [Wybieranie projektu startowego](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Uruchom zewnętrzny program** rozpoczyna się i dołącza do aplikacji, która nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionego procesu za pomocą debugera](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Uruchom przeglądarkę z adresem URL** umożliwia debugowanie aplikacji sieci web. |
 | **Opcje uruchamiania** > **argumenty wiersza polecenia** | Określa argumenty wiersza polecenia aplikacji debugowane. Nazwa polecenia jest nazwa aplikacji, określona w **uruchomienia programu zewnętrznego**. |
 | **Opcje uruchamiania** > **katalog roboczy** | Określa katalog roboczy aplikacji debugowane. W C#, katalog roboczy jest *\bin\debug* domyślnie.
-| **Opcje uruchamiania** > **maszyny zdalnej użycia**|Dla zdalnego debugowania, wybierz tę opcję, a następnie wprowadź nazwę docelowy debugowania zdalnego lub [nazwy serwera Msvsmon](../debugger/remote-debugging.md). <br />Lokalizacja aplikacji na komputerze zdalnym jest określona przez **ścieżkę wyjściową** właściwość **kompilacji** kartę. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym. 
+| **Opcje uruchamiania** > **maszyny zdalnej użycia**|Dla zdalnego debugowania, wybierz tę opcję, a następnie wprowadź nazwę docelowy debugowania zdalnego lub [nazwy serwera Msvsmon](../debugger/remote-debugging.md). <br />Lokalizacja aplikacji na komputerze zdalnym jest określona przez **ścieżkę wyjściową** właściwość **kompilacji** kartę. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym.
 | **Aparat debugera** > **włączenia debugowania niezarządzanego kodu** | Debuguje wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji. |
 | **Aparat debugera** > **programu SQL Server Włącz debugowanie** | Debuguje obiekty bazy danych programu SQL Server. |
-  
-## <a name="build-tab"></a>Tworzenie karty  
-  
-|Ustawienie|Opis|  
-|-------------|-----------------|  
-|**Ogólne** > **symbole kompilacji warunkowej**|Definiuj stałe debugowania i śledzenia, jeśli wybrana.<br /><br /> Te stałe Włącz kompilację warunkową [Klasa Debug](/dotnet/api/system.diagnostics.debug) i [klasa śledzenia](/dotnet/api/system.diagnostics.trace). Za pomocą tych zdefiniowanych stałych, debugowania i śledzenia metod klasy generują dane wyjściowe do [okno danych wyjściowych](../ide/reference/output-window.md). Bez tych stałe debugowania i śledzenia metod klasy nie są kompilowane i generowane żadne dane wyjściowe.<br /><br />Zazwyczaj debugowania jest zdefiniowany w wersji do debugowania kompilacji i niezdefiniowana w pełnej wersji. TRACE jest zdefiniowane w wersji debugowania i wydania.|  
-|**Ogólne** > **Optymalizuj kod**|Jeśli błąd pojawia się tylko w zoptymalizowanym kodzie, należy pozostawić to ustawienie, niezaznaczone w przypadku kompilacji debugowania. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ instrukcje nie odpowiadają bezpośrednio do instrukcji w kodzie źródłowym.|  
+
+## <a name="build-tab"></a>Tworzenie karty
+
+|Ustawienie|Opis|
+|-------------|-----------------|
+|**Ogólne** > **symbole kompilacji warunkowej**|Definiuj stałe debugowania i śledzenia, jeśli wybrana.<br /><br /> Te stałe Włącz kompilację warunkową [Klasa Debug](/dotnet/api/system.diagnostics.debug) i [klasa śledzenia](/dotnet/api/system.diagnostics.trace). Za pomocą tych zdefiniowanych stałych, debugowania i śledzenia metod klasy generują dane wyjściowe do [okno danych wyjściowych](../ide/reference/output-window.md). Bez tych stałe debugowania i śledzenia metod klasy nie są kompilowane i generowane żadne dane wyjściowe.<br /><br />Zazwyczaj debugowania jest zdefiniowany w wersji do debugowania kompilacji i niezdefiniowana w pełnej wersji. TRACE jest zdefiniowane w wersji debugowania i wydania.|
+|**Ogólne** > **Optymalizuj kod**|Jeśli błąd pojawia się tylko w zoptymalizowanym kodzie, należy pozostawić to ustawienie, niezaznaczone w przypadku kompilacji debugowania. Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ instrukcje nie odpowiadają bezpośrednio do instrukcji w kodzie źródłowym.|
 |**Dane wyjściowe** > **ścieżka wyjściowa**|Zazwyczaj równa *bin\Debug* do debugowania.|
-|**Zaawansowane** przycisku|Aby uzyskać informacje na temat zaawansowanych opcji debugowania, zobacz [okno dialogowe Ustawienia zaawansowane kompilacji (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Przenośne formatu dla symbolu (*.pdb*) plików to ostatnie format Międzyplatformowe aplikacje platformy .NET Core. 
-  
-## <a name="see-also"></a>Zobacz także  
- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+|**Zaawansowane** przycisku|Aby uzyskać informacje na temat zaawansowanych opcji debugowania, zobacz [okno dialogowe Ustawienia zaawansowane kompilacji (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Przenośne formatu dla symbolu (*.pdb*) plików to ostatnie format Międzyplatformowe aplikacje platformy .NET Core.
+
+## <a name="see-also"></a>Zobacz także
+- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

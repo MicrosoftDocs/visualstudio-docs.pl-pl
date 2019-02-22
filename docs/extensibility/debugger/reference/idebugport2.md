@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPort2
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06026276b6f9b37f005ee296d56ee17df5c75ca8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14c21b4f1546b262fb61c0da3ea95adee2aef8fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687422"
 ---
 # <a name="idebugport2"></a>IDebugPort2
-Ten interfejs reprezentuje port debugowania na komputerze.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDebugPort2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego portu implementuje ten interfejs do reprezentowania port debugowania na komputerze.  
-  
- Jeśli port obsługuje wysyłanie zdarzeń do portu, musi implementować też <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> obsługiwany przez interfejs <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejs, który z kolei udostępnia [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfejsu.  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołania [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) lub [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) zwraca ten interfejs reprezentujący żądanym porcie.  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugPort2`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Zwraca nazwę portu.|  
-|[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Zwraca identyfikator portu.|  
-|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Zwraca żądanie użyty do utworzenia portu (jeśli jest dostępny).|  
-|[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|Zwraca dostawcy portu dla tego portu.|  
-|[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Zwraca interfejs do procesu, który został podany identyfikator procesu.|  
-|[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Wylicza wszystkie procesy, które są uruchomione na porcie.|  
-  
-## <a name="remarks"></a>Uwagi  
- Port lokalny zapewnia dostęp do wszystkich procesów i programy uruchomione na komputerze lokalnym. Inne porty może reprezentować połączenia kabel szeregowy do urządzenia z systemem Windows CE lub połączenie sieciowe z komputerem bez modelu DCOM. `IDebugPort2` Interfejs służy do znajdowania nazwy i identyfikatora portu i wyliczyć wszystkie procesy uruchomione na porcie. Funkcje służące do uruchamiania i zakończenie procesów na porcie są implementowane w `IDebugPortEx2` interfejsu.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+Ten interfejs reprezentuje port debugowania na komputerze.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDebugPort2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
+ Dostawcy niestandardowego portu implementuje ten interfejs do reprezentowania port debugowania na komputerze.
+
+ Jeśli port obsługuje wysyłanie zdarzeń do portu, musi implementować też <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> obsługiwany przez interfejs <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfejs, który z kolei udostępnia [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfejsu.
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+ Wywołania [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) lub [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) zwraca ten interfejs reprezentujący żądanym porcie.
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+ W poniższej tabeli przedstawiono metody `IDebugPort2`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Zwraca nazwę portu.|
+|[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Zwraca identyfikator portu.|
+|[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Zwraca żądanie użyty do utworzenia portu (jeśli jest dostępny).|
+|[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|Zwraca dostawcy portu dla tego portu.|
+|[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Zwraca interfejs do procesu, który został podany identyfikator procesu.|
+|[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Wylicza wszystkie procesy, które są uruchomione na porcie.|
+
+## <a name="remarks"></a>Uwagi
+ Port lokalny zapewnia dostęp do wszystkich procesów i programy uruchomione na komputerze lokalnym. Inne porty może reprezentować połączenia kabel szeregowy do urządzenia z systemem Windows CE lub połączenie sieciowe z komputerem bez modelu DCOM. `IDebugPort2` Interfejs służy do znajdowania nazwy i identyfikatora portu i wyliczyć wszystkie procesy uruchomione na porcie. Funkcje służące do uruchamiania i zakończenie procesów na porcie są implementowane w `IDebugPortEx2` interfejsu.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

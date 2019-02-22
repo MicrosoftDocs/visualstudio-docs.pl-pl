@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317760"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703243"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej
+
 W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do niestandardowej strony początkowej. Przykład dodaje formant użytkownika do rozwiązania, tworzy kontrolkę użytkownika i następnie odwołuje się skompilowany zestaw z poziomu strony startowej *.xaml* pliku. Nowa karta obsługuje formant użytkownika, który działa jako podstawowa przeglądarka sieci Web.
 
 Można użyć tego samego procesu można dodać zestawu, który może zostać wywołana z *.xaml* pliku.
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Dodaj kontrolkę użytkownika WPF do rozwiązania
+
 Najpierw dodaj formant użytkownika Windows Presentation Foundation (WPF) z rozwiązaniem strony początkowej.
 
 1. Tworzenie strony początkowej, przy użyciu utworzonego w [Tworzenie niestandardowej strony początkowej](../extensibility/creating-a-custom-start-page.md).
@@ -36,6 +39,7 @@ Najpierw dodaj formant użytkownika Windows Presentation Foundation (WPF) z rozw
 4. Nazwij kontrolkę `WebUserControl` a następnie kliknij przycisk **OK**.
 
 ## <a name="implement-the-user-control"></a>Implementowanie formantu użytkownika
+
 Do zaimplementowania formanty użytkownika WPF, tworzenia interfejsu użytkownika (UI) w XAML, a następnie wpisz zdarzenia związanego z kodem w języku C# lub innym języku .NET.
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>Do pisania XAML, kontrolki użytkownika
@@ -132,7 +136,8 @@ Do zaimplementowania formanty użytkownika WPF, tworzenia interfejsu użytkownik
 4. Skompiluj rozwiązanie.
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej
- Aby udostępnić ten formant do projektu strony początkowej w pliku projektu strony początkowej, należy dodać odwołanie do Nowa biblioteka kontrolki. Następnie można dodać kontrolki do znaczników Start strony XAML.
+
+Aby udostępnić ten formant do projektu strony początkowej w pliku projektu strony początkowej, należy dodać odwołanie do Nowa biblioteka kontrolki. Następnie można dodać kontrolki do znaczników Start strony XAML.
 
 1. W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.
 
@@ -185,5 +190,6 @@ Do zaimplementowania formanty użytkownika WPF, tworzenia interfejsu użytkownik
     Powinien być wyświetlany z niestandardową stronę początkową. Jeśli chcesz zmienić wszystkie pliki, możesz musi Zamknij wystąpienie doświadczalne, wprowadzić zmiany, skopiuj Wklej zmienionych plików i następnie ponownie otwórz wystąpienie doświadczalne, aby wyświetlić zmiany.
 
 ## <a name="see-also"></a>Zobacz także
-[Kontrole kontenerów WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[Przewodnik: Dodaj niestandardowe XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [Kontrole kontenerów WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Przewodnik: Dodaj niestandardowe XAML do strony początkowej](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9f1fd7587eb99115751790fdca2995c9ab019
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450130"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689658"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Włącza/wyłącza zwirtualizowane stan to oczekujące punktu przerwania. Jeśli oczekujący punkt przerwania zostaje zwirtualizowany, aparat debugowania będzie podejmować próby powiązać go za każdym razem, gdy nowy kod ładuje się do programu.
@@ -38,8 +38,9 @@ int Virtualize(
 ```
 
 #### <a name="parameters"></a>Parametry
-`fVirtualize`  
-[in] Ustaw na wartość różną od zera (`TRUE`) do wirtualizacji oczekujący punkt przerwania lub równą zero (`FALSE`) Aby wyłączyć wirtualizacji.
+`fVirtualize`
+
+ [in] Ustaw na wartość różną od zera (`TRUE`) do wirtualizacji oczekujący punkt przerwania lub równą zero (`FALSE`) Aby wyłączyć wirtualizacji.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

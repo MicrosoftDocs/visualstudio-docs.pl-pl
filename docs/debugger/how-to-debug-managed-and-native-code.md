@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 011e51e126fc70f12be7dd94c05b27df17e77adf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690245"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714624"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
-Program Visual Studio pozwala włączyć więcej niż jeden typ debugera w sesji debugowania, która jest wywoływana, debugowanie w trybie mieszanym. W tym samouczku przedstawiono sposób debugowania kodu zarządzanego i natywnego w jednej sesji debugowania. 
+Program Visual Studio pozwala włączyć więcej niż jeden typ debugera w sesji debugowania, która jest wywoływana, debugowanie w trybie mieszanym. W tym samouczku przedstawiono sposób debugowania kodu zarządzanego i natywnego w jednej sesji debugowania.
 
 W tym samouczku pokazano, jak można debugować kodu natywnego z zarządzanej aplikacji, ale możesz też [debugować kodu zarządzanego z aplikacji natywnej](../debugger/how-to-debug-in-mixed-mode.md). Debuger obsługuje również debugowanie w trybie mieszanym, takich jak debugowanie innych typów [języka Python i kodu natywnego](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md)i w typach aplikacji, takich jak ASP.NET przy użyciu debugera skryptów.
 
@@ -60,7 +60,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
    Tworzy pusty projekt programu Visual Studio i wyświetla go w **Eksploratora rozwiązań**.
 
-1. W **Eksploratora rozwiązań**, wybierz opcję **pliki źródłowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki źródłowe** i wybierz **Dodaj** > **nowy element**. 
+1. W **Eksploratora rozwiązań**, wybierz opcję **pliki źródłowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki źródłowe** i wybierz **Dodaj** > **nowy element**.
 
 1. W **nowy element** okno dialogowe, wybierz opcję **plik C++ (.cpp)**. Typ **Mixed_Mode.cpp** w **nazwa** , a następnie wybierz opcję **Dodaj**.
 
@@ -71,7 +71,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. W **Eksploratora rozwiązań**, wybierz opcję **pliki nagłówkowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki nagłówkowe** i wybierz **Dodaj** > **nowy element**. 
+1. W **Eksploratora rozwiązań**, wybierz opcję **pliki nagłówkowe**, a następnie wybierz pozycję **projektu** > **Dodaj nowy element**. Lub kliknij prawym przyciskiem myszy **pliki nagłówkowe** i wybierz **Dodaj** > **nowy element**.
 
 1. W **nowy element** okno dialogowe, wybierz opcję **plik nagłówka (.h)**. Typ **Mixed_Mode.h** w **nazwa** , a następnie wybierz opcję **Dodaj**.
 
@@ -100,10 +100,10 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 1. W **Eksploratora rozwiązań**, wybierz opcję **Mixed_Mode_Debugging** węzeł projektu i wybierz pozycję **właściwości** ikonę, lub kliknij prawym przyciskiem myszy węzeł projektu i wybierz pozycję **Właściwości**.
 
-1. W górnej części **właściwości** okienka, upewnij się, że **konfiguracji** jest ustawiona na **Active(Debug)** i **platformy** jest taka sama jak tym, co Ustaw na pasku narzędzi: **x64**, lub **Win32** dla x86 platformy. 
+1. W górnej części **właściwości** okienka, upewnij się, że **konfiguracji** jest ustawiona na **Active(Debug)** i **platformy** jest taka sama jak tym, co Ustaw na pasku narzędzi: **x64**, lub **Win32** dla x86 platformy.
 
    > [!IMPORTANT]
-   > Po przełączeniu Platforma **x86** do **x64** lub na odwrót, należy ponownie skonfigurować właściwości dla nowej platformie. 
+   > Po przełączeniu Platforma **x86** do **x64** lub na odwrót, należy ponownie skonfigurować właściwości dla nowej platformie.
 
 1. W obszarze **właściwości konfiguracji** w okienku po lewej stronie wybierz **konsolidatora** > **zaawansowane**i w menu rozwijanym obok **punkt wejścia nie**, wybierz opcję **nie**. Jeśli konieczna była zmiana jego **nie**, wybierz opcję **Zastosuj**.
 
@@ -125,7 +125,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 1. W **nowy projekt** okno dialogowe, wybierz opcję **Visual C#** , a następnie w okienku środkowym:
 
    - W przypadku aplikacji .NET Framework wybierz **Aplikacja konsoli (.NET Framework)**.
-   
+
    - Dla aplikacji platformy .NET Core, wybierz **Aplikacja konsoli (.NET Core)**.
 
 1. W **nazwa** wpisz **Mixed_Mode_Calling_App**, a następnie wybierz pozycję **OK**.
@@ -164,9 +164,9 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 1. Wybierz **pliku** > **Zapisz plik Program.cs** lub naciśnij **Ctrl**+**S** można zapisać pliku.
 
-## <a name="configure-mixed-mode-debugging"></a>Konfigurowanie debugowania trybu mieszanego 
+## <a name="configure-mixed-mode-debugging"></a>Konfigurowanie debugowania trybu mieszanego
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Aby skonfigurować dla aplikacji programu .NET Framework debugowanie w trybie mieszanym 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Aby skonfigurować dla aplikacji programu .NET Framework debugowanie w trybie mieszanym
 
 1. W **Eksploratora rozwiązań**, wybierz opcję **Mixed_Mode_Calling_App** węzeł projektu i wybierz pozycję **właściwości** ikonę, lub kliknij prawym przyciskiem myszy węzeł projektu i wybierz pozycję **Właściwości**.
 
@@ -174,11 +174,11 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
     ![Włącz debugowanie w trybie mieszanym](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Aby skonfigurować debugowanie w trybie mieszanym dla aplikacji platformy .NET Core 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Aby skonfigurować debugowanie w trybie mieszanym dla aplikacji platformy .NET Core
 
 W większości wersji programu Visual Studio 2017, musisz użyć *launchSettings.json* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji platformy .NET Core. Aby śledzić aktualizacje interfejsu użytkownika dla tej funkcji, zobacz ten [problem w usłudze GitHub](https://github.com/dotnet/project-system/issues/1125).
 
-1. W **Eksploratora rozwiązań**, rozwiń węzeł **właściwości**, a następnie otwórz *launchSettings.json* pliku. 
+1. W **Eksploratora rozwiązań**, rozwiń węzeł **właściwości**, a następnie otwórz *launchSettings.json* pliku.
 
    >[!NOTE]
    >Domyślnie *launchSettings.json* znajduje się w *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Jeśli *launchSettings.json* nie istnieje, wybierz **Mixed_Mode_Calling_App** projektu w **Eksploratora rozwiązań** , a następnie wybierz **właściwości** ikonę, lub kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**. Tymczasowe zmiany w **debugowania** kartę i skompiluj projekt. Spowoduje to utworzenie *launchSettings.json* pliku. Cofnąć zmiany wprowadzone w **debugowania** kartę.

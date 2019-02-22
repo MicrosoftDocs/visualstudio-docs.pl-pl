@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450077"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700877"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 Pobiera ograniczenia, które są skojarzone z tym parametru ogólnego.
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>Parametry
-`cConstraints`  
-[in] Liczba ograniczeń.
+`cConstraints`
 
-`ppConstraints`  
-[out] Zwraca tablicę zawierającą ograniczeń powiązanych z tym polem.
+ [in] Liczba ograniczeń.
 
-`pcConstraints`  
-[out w] Liczba ograniczeń w `ppConstraints` tablicy.
+`ppConstraints`
+
+ [out] Zwraca tablicę zawierającą ograniczeń powiązanych z tym polem.
+
+`pcConstraints`
+
+ [out w] Liczba ograniczeń w `ppConstraints` tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

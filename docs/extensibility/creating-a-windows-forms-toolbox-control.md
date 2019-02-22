@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316590"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687890"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS) pozwala utworzyć formant, który jest automatycznie dodawany do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.
@@ -209,7 +209,7 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName.vsix* w folderze \bin\debug\ projektu. Kontrolki można wdrożyć, przekazując *.vsix* plików do sieci lub do witryny sieci Web. Gdy użytkownik uruchomi *.vsix* plik, formant został zainstalowany i dodane do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać *.vsix* plik [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) tak, aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia**  >   **Rozszerzenia i aktualizacje** okna dialogowego.
 
 ## <a name="see-also"></a>Zobacz także
-[Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
-[Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Podstawy programowania dla formantu Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Podstawy programowania dla formantu Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

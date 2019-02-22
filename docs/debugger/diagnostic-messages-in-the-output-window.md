@@ -26,39 +26,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3d65d888b2de32bc19235bc34acb9ce2a1d535
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969512"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682508"
 ---
 # <a name="send-messages-to-the-output-window"></a>Wysyłanie komunikatów do okna danych wyjściowych
 
-Można napisać komunikaty czasu wykonywania, aby **dane wyjściowe** przy użyciu okna <xref:System.Diagnostics.Debug> klasy lub <xref:System.Diagnostics.Trace> klasy, które są dostępne w ramach programu <xref:System.Diagnostics> biblioteki klas. Użyj <xref:System.Diagnostics.Debug> klasy, jeśli chcesz tylko dane wyjściowe *debugowania* wersji programu. Użyj <xref:System.Diagnostics.Trace> klasy, jeśli chcesz, aby dane wyjściowe w obu *debugowania* i *wersji* wersji.  
-  
-## <a name="output-methods"></a>Metod wyjścia  
- <xref:System.Diagnostics.Trace> i <xref:System.Diagnostics.Debug> klasy zapewniają następujące metody dane wyjściowe:  
-  
-- Różne `Write` metody, które dane wyjściowe informacji bez przerywania wykonywania. Te metody zamieniają `Debug.Print` metody używane w poprzednich wersjach programu Visual Basic.  
-  
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, które przerwanie wykonywania i danych wyjściowych informacji określony warunek zakończy się niepowodzeniem. Domyślnie `Assert` metoda Wyświetla informacje w oknie dialogowym. Aby uzyskać więcej informacji, zobacz [potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md).  
-  
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, które zawsze przerwanie wykonywania i danych wyjściowych informacji. Domyślnie `Fail` metody powodują wyświetlenie informacji w oknie dialogowym.  
-  
-**Dane wyjściowe** okna można również wyświetlić informacje o:  
-  
-- Modułów debuger został załadowany lub zwolnione.  
-  
-- Wyjątki, które są zgłaszane.  
-  
-- Procesy, które wyjść.  
-  
-- Wątki, które wyjść.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Okno danych wyjściowych](../ide/reference/output-window.md)   
- [Śledzenie i instrumentacji aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+Można napisać komunikaty czasu wykonywania, aby **dane wyjściowe** przy użyciu okna <xref:System.Diagnostics.Debug> klasy lub <xref:System.Diagnostics.Trace> klasy, które są dostępne w ramach programu <xref:System.Diagnostics> biblioteki klas. Użyj <xref:System.Diagnostics.Debug> klasy, jeśli chcesz tylko dane wyjściowe *debugowania* wersji programu. Użyj <xref:System.Diagnostics.Trace> klasy, jeśli chcesz, aby dane wyjściowe w obu *debugowania* i *wersji* wersji.
+
+## <a name="output-methods"></a>Metod wyjścia
+ <xref:System.Diagnostics.Trace> i <xref:System.Diagnostics.Debug> klasy zapewniają następujące metody dane wyjściowe:
+
+- Różne `Write` metody, które dane wyjściowe informacji bez przerywania wykonywania. Te metody zamieniają `Debug.Print` metody używane w poprzednich wersjach programu Visual Basic.
+
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, które przerwanie wykonywania i danych wyjściowych informacji określony warunek zakończy się niepowodzeniem. Domyślnie `Assert` metoda Wyświetla informacje w oknie dialogowym. Aby uzyskać więcej informacji, zobacz [potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md).
+
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> i <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, które zawsze przerwanie wykonywania i danych wyjściowych informacji. Domyślnie `Fail` metody powodują wyświetlenie informacji w oknie dialogowym.
+
+**Dane wyjściowe** okna można również wyświetlić informacje o:
+
+- Modułów debuger został załadowany lub zwolnione.
+
+- Wyjątki, które są zgłaszane.
+
+- Procesy, które wyjść.
+
+- Wątki, które wyjść.
+
+## <a name="see-also"></a>Zobacz także
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Okno danych wyjściowych](../ide/reference/output-window.md)
+- [Śledzenie i instrumentacji aplikacji](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [C#, F#i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)

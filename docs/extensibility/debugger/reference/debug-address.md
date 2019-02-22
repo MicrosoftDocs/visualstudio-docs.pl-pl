@@ -1,7 +1,7 @@
 ---
 title: DEBUG_ADDRESS | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 779564cf93e22f64b926a80644bb9da3375335b9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317825"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684614"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 Ta struktura reprezentuje adres.
@@ -43,14 +43,11 @@ public struct DEBUG_ADDRESS {
 ```
 
 ## <a name="terms"></a>Warunki
-ulAppDomainID  
-Identyfikator procesu.
+ulAppDomainID The process ID.
 
-guidModule  
-Identyfikator GUID moduł, który zawiera ten adres.
+guidModule identyfikator GUID modułu, który zawiera ten adres.
 
-tokClass  
-Token, który identyfikuje klasy lub typ tego adresu.
+tokClass token identyfikowanie klasy lub typ tego adresu.
 
 > [!NOTE]
 > Ta wartość jest specyficzne dla dostawcy symboli i dlatego nie ma znaczenia ogólne innych niż jako identyfikator dla typu klasy.
@@ -79,7 +76,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+- [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

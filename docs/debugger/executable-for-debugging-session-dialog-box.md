@@ -20,26 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d6bc004ac9d450e0f5ea358d16bb25ab6cabecf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018757"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682794"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Wykonywalny dla sesji debugowania — Okno dialogowe
 
-To okno dialogowe pojawia się podczas próby debugowania biblioteki DLL dla których nie pliku wykonywalnego jest określony. Program Visual Studio nie można uruchomić biblioteki DLL bezpośrednio. Zamiast tego program Visual Studio uruchamia określony plik wykonywalny. Można debugować biblioteki DLL, gdy jest wywoływana przez plik wykonywalny.  
-  
- **Nazwa pliku wykonywalnego**  
- Wprowadź ścieżkę do pliku wykonywalnego, który wywołuje bibliotekę DLL debugowania.  
-  
- **Adres URL, których projekt może być używane (tylko serwery ATL)**  
- Jeśli debugujesz ATL DLL serwera, wprowadź adres URL, gdzie można znaleźć projektu.  
-  
- Po wprowadzeniu, te ustawienia są przechowywane w projekcie strony właściwości, dzięki czemu nie trzeba wprowadzać ich ponownie udział podczas kolejnych sesji debugowania. Jeśli potrzebujesz zmienić ustawienia, można otwierać strony właściwości i zmienić wartości. Aby uzyskać więcej informacji na temat określania plik wykonywalny dla sesji debugowania, zobacz [debugowania bibliotek DLL](../debugger/how-to-debug-from-a-dll-project.md).  
-  
+To okno dialogowe pojawia się podczas próby debugowania biblioteki DLL dla których nie pliku wykonywalnego jest określony. Program Visual Studio nie można uruchomić biblioteki DLL bezpośrednio. Zamiast tego program Visual Studio uruchamia określony plik wykonywalny. Można debugować biblioteki DLL, gdy jest wywoływana przez plik wykonywalny.
+
+ **Nazwa pliku wykonywalnego** wprowadź nazwę ścieżki do pliku wykonywalnego, który wywołuje bibliotekę DLL debugowania.
+
+ **Adres URL, których projekt może być używane (tylko serwery ATL)** Jeśli debugujesz ATL DLL serwera, wprowadź adres URL gdzie można znaleźć projektu.
+
+ Po wprowadzeniu, te ustawienia są przechowywane w projekcie strony właściwości, dzięki czemu nie trzeba wprowadzać ich ponownie udział podczas kolejnych sesji debugowania. Jeśli potrzebujesz zmienić ustawienia, można otwierać strony właściwości i zmienić wartości. Aby uzyskać więcej informacji na temat określania plik wykonywalny dla sesji debugowania, zobacz [debugowania bibliotek DLL](../debugger/how-to-debug-from-a-dll-project.md).
+
 ## <a name="see-also"></a>Zobacz też
 
- [Debugowanie w programie Visual Studio](../debugger/index.md)  
- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

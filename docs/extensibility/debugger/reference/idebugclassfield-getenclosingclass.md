@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::GetEnclosingClass | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::GetEnclosingClass
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5be03fc6421f03742878f2b72f568ec0915dc
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 9e6b2cfae694d0d95f70b2251efc66764df1b539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412919"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682014"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 Pobiera klasę, która otacza tej klasy.
@@ -37,8 +37,9 @@ int GetEnclosingClass(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ppClassField`  
-[out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący otaczającej klasy. Zwraca wartość null, jeśli nie otaczającej klasy.
+`ppClassField`
+
+ [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący otaczającej klasy. Zwraca wartość null, jeśli nie otaczającej klasy.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
@@ -55,4 +56,4 @@ class RootClass {
 Wywoływanie `GetEnclosingClass` metody `IDebugClassField` obiekt reprezentujący `NestedClass` klasy zwraca `IDebugClassField` obiekt reprezentujący klasę `RootClass`.
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001972"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690529"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Ustawienia stron właściwości dla projektów sieci Web
-Możesz zmienić ustawienia właściwości dla konfiguracji debugowania witryny sieci web w **stron właściwości** okno dialogowe, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
-  
+Możesz zmienić ustawienia właściwości dla konfiguracji debugowania witryny sieci web w **stron właściwości** okno dialogowe, zgodnie z opisem w [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.
+
 ### <a name="start-options-category"></a>Kategoria opcji uruchamiania
-  
+
 | **Ustawienie** | **Opis** |
 | - | - |
 | **Akcja uruchamiania** | Nagłówek, że opcje grupy odnosi się do uruchomienia aplikacji. |
@@ -51,6 +51,6 @@ Możesz zmienić ustawienia właściwości dla konfiguracji debugowania witryny 
 | **Debugowanie kodu natywnego** | Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji. |
 | **Debugowanie serwera SQL Server** | Umożliwia debugowanie obiektów bazy danych programu SQL Server. |
 | **Debugowanie Silverlight** | Umożliwia debugowanie Silverlight składników. |
-  
-## <a name="see-also"></a>Zobacz też  
- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

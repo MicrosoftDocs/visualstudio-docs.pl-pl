@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb0b7d507453fc162c6fd748346e34c8abbdf88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959125"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690022"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Edytuj i Kontynuuj — okno dialogowe (C++)
-Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  
-  
- Możesz edytować kod, aby naprawić ten błąd nadal debugowania, Zatrzymaj debugowanie i naprawianie kodu, lub zignorować błąd i kontynuować debugowanie. Jeśli będziesz kontynuować bez wprowadzania poprawki zmian w kodzie nie zostaną zastosowane natychmiast.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)
+Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+
+ Możesz edytować kod, aby naprawić ten błąd nadal debugowania, Zatrzymaj debugowanie i naprawianie kodu, lub zignorować błąd i kontynuować debugowanie. Jeśli będziesz kontynuować bez wprowadzania poprawki zmian w kodzie nie zostaną zastosowane natychmiast.
+
+## <a name="see-also"></a>Zobacz też
+- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

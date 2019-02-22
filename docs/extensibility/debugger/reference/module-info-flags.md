@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FLAGS
 helpviewer_keywords:
@@ -12,45 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec59f745a0de459bb2b8b73337f13f5e03573975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946220"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688878"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-Określa stan symboli dla modułu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-typedef DWORD MODULE_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- MIF_SYMBOLS_LOADED  
- Co najmniej jeden zestaw symboli został załadowany przez moduł (w przeciwnym razie symboli nie zostały załadowane).  
-  
-## <a name="remarks"></a>Uwagi  
- Ta wartość jest zwracana przez [getsymbolsearchinfo —](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) metody.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
+Określa stan symboli dla modułu.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+typedef DWORD MODULE_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+ MIF_SYMBOLS_LOADED na co najmniej jeden zestaw symboli został załadowany przez moduł (w przeciwnym razie symboli nie zostały załadowane).
+
+## <a name="remarks"></a>Uwagi
+ Ta wartość jest zwracana przez [getsymbolsearchinfo —](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) metody.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

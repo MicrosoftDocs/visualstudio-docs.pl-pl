@@ -1,7 +1,7 @@
 ---
 title: THREADSTATE | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - THREADSTATE
 helpviewer_keywords:
@@ -12,65 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8acfff2f3b37cfe44565a432ff150073b3ab07ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962147"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694377"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Określa stan wątku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-typedef DWORD THREADSTATE;  
-```  
-  
-```csharp  
-public enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- THREADSTATE_RUNNING  
- Wskazuje, że wątek jest uruchomiony.  
-  
- THREADSTATE_STOPPED  
- Wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.  
-  
- THREADSTATE_FRESH  
- Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.  
-  
- THREADSTATE_DEAD  
- Wskazuje, że wątek jest nieaktywny.  
-  
- THREADSTATE_FROZEN  
- Wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).  
-  
-## <a name="remarks"></a>Uwagi  
- Używany do `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+Określa stan wątku.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+typedef DWORD THREADSTATE;
+```
+
+```csharp
+public enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+ THREADSTATE_RUNNING wskazuje, że wątek jest uruchomiony.
+
+ THREADSTATE_STOPPED wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.
+
+ THREADSTATE_FRESH wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
+
+ THREADSTATE_DEAD wskazuje, że wątek jest nieaktywny.
+
+ THREADSTATE_FROZEN wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).
+
+## <a name="remarks"></a>Uwagi
+ Używany do `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

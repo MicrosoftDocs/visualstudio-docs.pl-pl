@@ -11,72 +11,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e31be4d128ef9a349c4f2278a5b3f64982e1a4eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96628f3b7050a4ce6f14185033e3d59af63a9de5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039127"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705602"
 ---
 # <a name="menus-element"></a>Menus, element
-Definiuje menu i paski narzędzi, które implementuje pakietu VSPackage.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<Menus>  
-  <Menu>... </Menu>  
-  <Menu>... </Menu>  
-</Menus>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Menus, element](../extensibility/menus-element.md)|Definiuje menu i paski narzędzi, które implementuje pakietu VSPackage.|  
-|[Menu element](../extensibility/menu-element.md)|Reprezentuje pojedynczy menu lub paska narzędzi.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w pakietu VSPackage.|  
-  
-## <a name="example"></a>Przykład  
-  
-```xml  
-<Commands package="guidMyPackage">  
-    <Menus>  
-      <Menu Condition="'%(DEBUG)' != 'true'"   
-        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"   
-        priority="0x0000" type="Menu">  
-        <Annotation>  
-          <Documentation>this is an annotation</Documentation>  
-          <AppInfo>  
-            <CustomData>  
-              <CustomSubElement>Some data</CustomSubElement>  
-            </CustomData>  
-          </AppInfo>  
-        </Annotation>  
-        <CommandFlag>AlwaysCreate</CommandFlag>  
-        <Strings>  
-          <ButtonText>MainMenu</ButtonText>  
-        </Strings>  
-      </Menu>  
-  </Menus>  
-<Commands>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+Definiuje menu i paski narzędzi, które implementuje pakietu VSPackage.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<Menus>
+  <Menu>... </Menu>
+  <Menu>... </Menu>
+</Menus>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Menus, element](../extensibility/menus-element.md)|Definiuje menu i paski narzędzi, które implementuje pakietu VSPackage.|
+|[Menu element](../extensibility/menu-element.md)|Reprezentuje pojedynczy menu lub paska narzędzi.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w pakietu VSPackage.|
+
+## <a name="example"></a>Przykład
+
+```xml
+<Commands package="guidMyPackage">
+    <Menus>
+      <Menu Condition="'%(DEBUG)' != 'true'"
+        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"
+        priority="0x0000" type="Menu">
+        <Annotation>
+          <Documentation>this is an annotation</Documentation>
+          <AppInfo>
+            <CustomData>
+              <CustomSubElement>Some data</CustomSubElement>
+            </CustomData>
+          </AppInfo>
+        </Annotation>
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>MainMenu</ButtonText>
+        </Strings>
+      </Menu>
+  </Menus>
+<Commands>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

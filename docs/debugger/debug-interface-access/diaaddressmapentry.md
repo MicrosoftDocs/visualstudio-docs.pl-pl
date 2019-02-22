@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318644"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637090"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 W tym artykule opisano wpis z mapy adresów.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementy
-`rva`  
-Względny adres wirtualny (RVA) obraz A.
+`rva` Względny adres wirtualny (RVA) obraz A.
 
-`rvaTo`  
-Względny adres wirtualny `rva` jest mapowany na obrazie B.
+`rvaTo` Względny adres wirtualny `rva` jest mapowany na obrazie B.
 
 ## <a name="remarks"></a>Uwagi
 Mapa adres udostępnia tłumaczenia z jednego obrazu układu (A) do innego (B). Tablica `DiaAddressMapEntry` struktur, posortowane według `rva` definiuje mapę adresu.
@@ -55,5 +53,5 @@ Do translacji adresów `addrA`, na ilustracji A adres `addrB`, na ilustracji B, 
 Nagłówek: dia2.h
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
