@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621620"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Kosztowna funkcja CompareTo
 
-|||  
-|-|-|  
-|Identyfikator reguły|DA0011|  
-|Kategoria|Sposób użycia programu .NET framework|  
-|Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|  
-|Komunikat|Funkcje CompareTo powinny być tanie i nie przydzielić wszystkie pamięci. Mniejsza złożoność funkcji CompareTo, jeśli jest to możliwe.|  
-|Typ reguły|Ostrzeżenie|  
+|||
+|-|-|
+|Identyfikator reguły|DA0011|
+|Kategoria|Sposób użycia programu .NET framework|
+|Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|
+|Komunikat|Funkcje CompareTo powinny być tanie i nie przydzielić wszystkie pamięci. Mniejsza złożoność funkcji CompareTo, jeśli jest to możliwe.|
+|Typ reguły|Ostrzeżenie|
 
-## <a name="cause"></a>Przyczyna  
- CompareTo — metoda tego typu jest kosztowne lub przydziela pamięć.  
+## <a name="cause"></a>Przyczyna
+ CompareTo — metoda tego typu jest kosztowne lub przydziela pamięć.
 
-## <a name="rule-description"></a>Opis reguły  
- Metody CompareTo powinny być skuteczne i nie należy przydzielić pamięci.  
+## <a name="rule-description"></a>Opis reguły
+ Metody CompareTo powinny być skuteczne i nie należy przydzielić pamięci.
 
-## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Zmniejsz złożoność CompareTo — metoda.

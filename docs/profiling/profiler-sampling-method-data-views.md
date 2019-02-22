@@ -11,57 +11,69 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fb10681c43261d85cd4ba38fb4802cd1fcafd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe65358318ee00d53345d6d61ee999e46c1ecd06
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954335"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627756"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Widok danych metody próbkowania Profiler
-Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.  
-  
+Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.
+
 > [!NOTE]
->  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Widok podsumowania](../profiling/summary-view-sampling-data.md)  
- Wyświetla listę funkcji, które najczęściej wykonywały, gdy zostały zebrane próbki i funkcje, które wykonywały najbardziej indywidualną pracę.  
-  
- [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)  
- Wyświetla ścieżki wykonywania funkcji w formie drzewa hierarchicznego.  
-  
- [Widok modułów](../profiling/modules-view-sampling-data.md)  
- Organizuje dane profilowania przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w chwili próbek.  
-  
- [Element wywołujący / wywoływany widok — dane próbkowania](../profiling/caller-callee-view-sampling-data.md)  
- Wyświetla dane dla wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję profilowania.  
-  
- [Widok funkcji](../profiling/functions-view-sampling-data.md)  
- Organizuje profilowania posortowanych według funkcji i wyświetla listę funkcji, które były wykonywane w chwili próbek.  
-  
- [Widok linii](../profiling/lines-view-sampling-data.md)  
- Wyświetla listę wierszy kodu źródłowego, które były wykonywane w chwili próbek.  
-  
- [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
- Wyświetla listę wierszy kodu źródłowego, które były wykonywane w chwili próbek.  
-  
-## <a name="reference"></a>Tematy pomocy  
- [Widok procesu](../profiling/process-view.md)  
- Listy procesów i wątków godziny rozpoczęcia i zakończenia.  
-  
- [Widok znaczników](../profiling/marks-view.md)  
- Wyświetla zdarzenia, które zostały wstawione do pliku danych profilowania ETW i próbkowania.  
-  
- [Widok szczegółów funkcji](../profiling/function-details-view.md)  
- Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.  
-  
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Informacje z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
+>  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Widok podsumowania](../profiling/summary-view-sampling-data.md)
+
+ Wyświetla listę funkcji, które najczęściej wykonywały, gdy zostały zebrane próbki i funkcje, które wykonywały najbardziej indywidualną pracę.
+
+- [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
+
+ Wyświetla ścieżki wykonywania funkcji w formie drzewa hierarchicznego.
+
+- [Widok modułów](../profiling/modules-view-sampling-data.md)
+
+ Organizuje dane profilowania przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w chwili próbek.
+
+- [Element wywołujący / wywoływany widok — dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
+
+ Wyświetla dane dla wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję profilowania.
+
+- [Widok funkcji](../profiling/functions-view-sampling-data.md)
+
+ Organizuje profilowania posortowanych według funkcji i wyświetla listę funkcji, które były wykonywane w chwili próbek.
+
+- [Widok linii](../profiling/lines-view-sampling-data.md)
+
+ Wyświetla listę wierszy kodu źródłowego, które były wykonywane w chwili próbek.
+
+- [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+
+ Wyświetla listę wierszy kodu źródłowego, które były wykonywane w chwili próbek.
+
+## <a name="reference"></a>Tematy pomocy
+- [Widok procesu](../profiling/process-view.md)
+
+ Listy procesów i wątków godziny rozpoczęcia i zakończenia.
+
+- [Widok znaczników](../profiling/marks-view.md)
+
+ Wyświetla zdarzenia, które zostały wstawione do pliku danych profilowania ETW i próbkowania.
+
+- [Widok szczegółów funkcji](../profiling/function-details-view.md)
+
+ Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
+
+- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+
+ Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.
+
+## <a name="see-also"></a>Zobacz także
+- [Informacje z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

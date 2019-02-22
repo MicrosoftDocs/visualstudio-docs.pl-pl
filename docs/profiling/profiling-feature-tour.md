@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611922"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: Pierwsze spojrzenie na narzędziach profilowania
 
@@ -149,22 +149,22 @@ Jeśli potrzebujesz funkcji, takich jak Instrumentacja, które nie są aktualnie
 
 ![Okno Eksploratora wydajności](../profiling/media/prof-tour-performance-explorer.png "Eksploratora wydajności")
 
-## <a name="which-tool-should-i-use"></a>Narzędzie, które należy używać?  
+## <a name="which-tool-should-i-use"></a>Narzędzie, które należy używać?
 
 Poniżej przedstawiono listę różnych narzędzi oferowanych przez program Visual Studio i różnych typach projektów można ich używać za pomocą:
-  
-|Narzędzia wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Narzędzia wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
-|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak| 
-|[Użycie procesora GPU](../debugger/gpu-usage.md)|tak|tak|Brak| 
+|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
+|[Użycie procesora GPU](../debugger/gpu-usage.md)|tak|tak|Brak|
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|Brak|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak, aby XAML nie dla kodu HTML|tak|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|Brak|tak|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|Brak|tak|Brak|
-|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak w języku HTML, nie dla XAML|Brak| 
+|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak w języku HTML, nie dla XAML|Brak|
 |[Pamięć języka JavaScript](../profiling/javascript-memory.md)|Brak|tak w języku HTML, nie dla XAML|Brak|
 
-## <a name="see-also"></a>Zobacz także  
- [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>Zobacz także
+- [Debugowanie w programie Visual Studio](/visualstudio/debugger/debugger-feature-tour)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc99869276588da43a897e7b087f6e1251651b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624961"
 ---
 # <a name="set-general-performance-session-options"></a>Ustawianie opcji sesji wydajności ogólnej
 

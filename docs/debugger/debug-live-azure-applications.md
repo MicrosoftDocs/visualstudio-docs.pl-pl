@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613378"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
@@ -63,7 +63,7 @@ W tym samouczku wykonasz następujące czynności:
 2. Dołączanie rozszerzenia Snapshot Debugger. Można użyć jednej z kilku różnych metod:
 
     * Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz projekt jest wdrażany do usługi Azure App Service i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
-  
+
       ![Uruchamianie rozszerzenia snapshot debugger z menu Debugowanie](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Kliknij prawym przyciskiem myszy na projekt i wybierz **Publikuj**, a następnie na stronie kliknij przycisk Publikuj **dołączyć rozszerzenie Snapshot Debugger**. Wybierz projekt jest wdrażany do usługi Azure App Service i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
@@ -73,7 +73,7 @@ W tym samouczku wykonasz następujące czynności:
     ![Uruchamianie rozszerzenia snapshot debugger z menu rozwijanego F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Za pomocą Eksploratora chmury (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy projekt jest wdrażany do usługi Azure App Service i wybierz konto magazynu platformy Azure, a następnie kliknij **dołączyć rozszerzenie Snapshot Debugger**.
-  
+
       ![Uruchamianie rozszerzenia snapshot debugger Eksploratora chmury](../debugger/media/snapshot-launch.png)
 
     Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger**, zostanie wyświetlony monit zainstalować rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.

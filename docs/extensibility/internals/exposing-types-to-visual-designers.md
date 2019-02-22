@@ -12,38 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8330ab390a80f882ee8a72f04e70d50e55595752
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986842"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629693"
 ---
 # <a name="expose-types-to-visual-designers"></a>Udostępnianie typów projektantów wizualnych
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć dostęp do definicje klas i typów w czasie projektowania w celu wyświetlenia projektanta wizualnego. Klas są ładowane z wstępnie zdefiniowany zbiór zestawów, zawierające zestaw zależności pełny bieżący projekt (odwołania oraz ich zależności). Może być również konieczne dla projektantów wizualnych dostępu klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe.  
-  
- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] systemy projektu umożliwiają uzyskiwanie dostępu do wygenerowanych klas i typów poprzez tymczasowe przenośne pliki wykonywalne (PEs tymczasowe). Dowolny plik generowanych przez niestandardowe narzędzie może być kompilowane do zestawu tymczasowe tak, aby typy, które mogą być ładowane z tych zestawów i widoczne dla projektantów. Dane wyjściowe narzędzia niestandardowego jest skompilowany w oddzielnych tymczasowych i powodzenie lub niepowodzenie tej kompilacji tymczasowego zależy tylko określa, czy można kompilować wygenerowany plik. Mimo, że projekt może nie kompilować się jako całości, poszczególne PEs tymczasowe mogą być nadal dostępne do projektantów.  
-  
- System projektu zapewnia pełną obsługę śledzenia zmian do pliku danych wyjściowych niestandardowego narzędzia, pod warunkiem, że te zmiany są wynikiem uruchomić narzędzie niestandardowe. Każdorazowo, gdy niestandardowe narzędzie jest uruchamiane, jest generowany nowy tymczasowych i odpowiedniego powiadomienia są wysyłane do projektantów.  
-  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć dostęp do definicje klas i typów w czasie projektowania w celu wyświetlenia projektanta wizualnego. Klas są ładowane z wstępnie zdefiniowany zbiór zestawów, zawierające zestaw zależności pełny bieżący projekt (odwołania oraz ich zależności). Może być również konieczne dla projektantów wizualnych dostępu klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe.
+
+ [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] systemy projektu umożliwiają uzyskiwanie dostępu do wygenerowanych klas i typów poprzez tymczasowe przenośne pliki wykonywalne (PEs tymczasowe). Dowolny plik generowanych przez niestandardowe narzędzie może być kompilowane do zestawu tymczasowe tak, aby typy, które mogą być ładowane z tych zestawów i widoczne dla projektantów. Dane wyjściowe narzędzia niestandardowego jest skompilowany w oddzielnych tymczasowych i powodzenie lub niepowodzenie tej kompilacji tymczasowego zależy tylko określa, czy można kompilować wygenerowany plik. Mimo, że projekt może nie kompilować się jako całości, poszczególne PEs tymczasowe mogą być nadal dostępne do projektantów.
+
+ System projektu zapewnia pełną obsługę śledzenia zmian do pliku danych wyjściowych niestandardowego narzędzia, pod warunkiem, że te zmiany są wynikiem uruchomić narzędzie niestandardowe. Każdorazowo, gdy niestandardowe narzędzie jest uruchamiane, jest generowany nowy tymczasowych i odpowiedniego powiadomienia są wysyłane do projektantów.
+
 > [!NOTE]
->  Ponieważ plik wykonywalny Generowanie tymczasowego programu jest wykonywany w tle, nie błędy są zgłaszane dla użytkownika, jeśli kompilacja zakończy się niepowodzeniem.  
-  
- Narzędzia niestandardowe łączące korzystając z tymczasowego obsługi PE, należy wykonać następujące reguły:  
-  
--   **GeneratesDesignTimeSource** musi być równa 1 w rejestrze.  
-  
-     Nie kompilacji pliku wykonywalnego programu odbywa się bez tego ustawienia.  
-  
--   Wygenerowany kod musi być w tym samym języku co ustawienie globalne projektu.  
-  
-     Tymczasowych jest kompilowany niezależnie od tego, narzędzie niestandardowe raporty jako żądane rozszerzenie w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> pod warunkiem, że **GeneratesDesignTimeSource** jest ustawiona na 1 w rejestrze. Rozszerzenie musi być *.vb*, *.cs*, lub *.jsl*; może być dowolnym rozszerzeniem.  
-  
--   Kod wygenerowany przez niestandardowe narzędzie musi być prawidłowy, i należy ją skompilować na swój własny zestaw odwołania się w projekcie używane w czasie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zakończy się wykonywanie.  
-  
-     Po skompilowaniu tymczasowych tylko plik źródłowy, podany w kompilatorze znajduje się dane wyjściowe narzędzia niestandardowego. W związku z tym niestandardowe narzędzie, które używa tymczasowych, należy wygenerować pliki wyjściowe, które można skompilować niezależnie od innych plików w projekcie.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Wprowadzenie do obiektu BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
- [Implementowanie generatorów jednoplikowych](../../extensibility/internals/implementing-single-file-generators.md)   
- [Rejestrowanie generatorów jednoplikowych](../../extensibility/internals/registering-single-file-generators.md)
+>  Ponieważ plik wykonywalny Generowanie tymczasowego programu jest wykonywany w tle, nie błędy są zgłaszane dla użytkownika, jeśli kompilacja zakończy się niepowodzeniem.
+
+ Narzędzia niestandardowe łączące korzystając z tymczasowego obsługi PE, należy wykonać następujące reguły:
+
+-   **GeneratesDesignTimeSource** musi być równa 1 w rejestrze.
+
+     Nie kompilacji pliku wykonywalnego programu odbywa się bez tego ustawienia.
+
+-   Wygenerowany kod musi być w tym samym języku co ustawienie globalne projektu.
+
+     Tymczasowych jest kompilowany niezależnie od tego, narzędzie niestandardowe raporty jako żądane rozszerzenie w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> pod warunkiem, że **GeneratesDesignTimeSource** jest ustawiona na 1 w rejestrze. Rozszerzenie musi być *.vb*, *.cs*, lub *.jsl*; może być dowolnym rozszerzeniem.
+
+-   Kod wygenerowany przez niestandardowe narzędzie musi być prawidłowy, i należy ją skompilować na swój własny zestaw odwołania się w projekcie używane w czasie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zakończy się wykonywanie.
+
+     Po skompilowaniu tymczasowych tylko plik źródłowy, podany w kompilatorze znajduje się dane wyjściowe narzędzia niestandardowego. W związku z tym niestandardowe narzędzie, które używa tymczasowych, należy wygenerować pliki wyjściowe, które można skompilować niezależnie od innych plików w projekcie.
+
+## <a name="see-also"></a>Zobacz także
+- [Wprowadzenie do obiektu BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Implementowanie generatorów jednoplikowych](../../extensibility/internals/implementing-single-file-generators.md)
+- [Rejestrowanie generatorów jednoplikowych](../../extensibility/internals/registering-single-file-generators.md)

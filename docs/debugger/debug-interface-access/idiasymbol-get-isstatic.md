@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c1857a49d96ec79eb3611a9a92629d67cbd25d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af93290b28d44b18832f4f7c47df6ba6dfa3aa62
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997341"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622227"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
-Pobiera flagę określającą, czy warstwa funkcji lub thunk została oznaczona jako statyczna.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_isStatic(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pFlag`  
- [out] Zwraca `TRUE` warstwy funkcji lub thunk zostało oznaczone jako statyczne; w przeciwnym razie, zwraca wartość `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera flagę określającą, czy warstwa funkcji lub thunk została oznaczona jako statyczna.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_isStatic(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pFlag`
+
+[out] Zwraca `TRUE` warstwy funkcji lub thunk zostało oznaczone jako statyczne; w przeciwnym razie, zwraca wartość `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="requirements"></a>Wymagania  
-  
-|Wymaganie|Opis|  
-|-----------------|-----------------|  
-|Nagłówek:|dia2.h|  
-|Wersja:|DIA SDK w wersji 8.0|  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="requirements"></a>Wymagania
+
+|Wymaganie|Opis|
+|-----------------|-----------------|
+|Nagłówek:|dia2.h|
+|Wersja:|DIA SDK w wersji 8.0|
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

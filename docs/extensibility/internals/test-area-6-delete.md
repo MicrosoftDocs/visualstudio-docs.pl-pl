@@ -11,46 +11,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb1615768a195fc6a5abd7e4aedd992907b794e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966468"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627925"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: Usuwanie
-Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.  
-  
- Kontrola źródła reaguje na usuwanie akcji w **Eksploratora rozwiązań**.  
-  
- Poniżej przedstawiono listę elementów, które można usunąć:  
-  
-- Pliki  
-  
-- Foldery  
-  
-- Projekt  
-  
-  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.  
-  
-## <a name="expected-behavior"></a>Oczekiwane zachowanie  
- To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:  
-  
--   Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.  
-  
--   Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)  
-  
--   Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.  
-  
--   Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.  
-  
-|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
-|------------|----------------|--------------------------------|  
-|Usuń projekt klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|  
-|Usuń pusty plik|1.  Utwórz projekt klienta.<br />2.  Dodaj plik zero bajtów do projektu.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz plik, usuń go.|Typowe oczekiwane zachowanie.|  
-|Usuń folder z plikami|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj folder.<br />3.  Dodaj jeden plik do folderu.<br />4.  Dodaj rozwiązanie do kontroli źródła.<br />5.  Zapoznaj się z projektu, aby uniknąć monity.<br />6.  Usuń folder.|Typowe oczekiwane zachowanie.|  
-|Usuwanie projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików (Użyj przycisk Przeglądaj, aby określić ścieżkę UNC).<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|  
-|Usuwanie pliku z projektem sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
+
+ Kontrola źródła reaguje na usuwanie akcji w **Eksploratora rozwiązań**.
+
+ Poniżej przedstawiono listę elementów, które można usunąć:
+
+- Pliki
+
+- Foldery
+
+- Projekt
+
+  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.
+
+## <a name="expected-behavior"></a>Oczekiwane zachowanie
+ To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:
+
+-   Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.
+
+-   Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)
+
+-   Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.
+
+-   Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.
+
+|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|
+|------------|----------------|--------------------------------|
+|Usuń projekt klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|
+|Usuń pusty plik|1.  Utwórz projekt klienta.<br />2.  Dodaj plik zero bajtów do projektu.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz plik, usuń go.|Typowe oczekiwane zachowanie.|
+|Usuń folder z plikami|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj folder.<br />3.  Dodaj jeden plik do folderu.<br />4.  Dodaj rozwiązanie do kontroli źródła.<br />5.  Zapoznaj się z projektu, aby uniknąć monity.<br />6.  Usuń folder.|Typowe oczekiwane zachowanie.|
+|Usuwanie projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików (Użyj przycisk Przeglądaj, aby określić ścieżkę UNC).<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
+|Usuwanie pliku z projektem sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|
+
+## <a name="see-also"></a>Zobacz też
+- [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

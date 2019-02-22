@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626066"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 Pobiera wierszy w określonej compiland —, które zawierają określony względny adres wirtualny (RVA).
@@ -33,13 +33,16 @@ HRESULT findLinesByRVA ( 
 ```
 
 #### <a name="parameters"></a>Parametry
-`rva`  
+`rva`
+
 [in] Określa adres jako adres RVA.
 
-`length`  
+`length`
+
 [in] Określa liczbę bajtów zakres adresów, aby pokrywał się z tym zapytaniem.
 
-`ppResult`  
+`ppResult`
+
 [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę wszystkich linii numery określające określony zakres adresów.
 
 ## <a name="return-value"></a>Wartość zwracana
@@ -65,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

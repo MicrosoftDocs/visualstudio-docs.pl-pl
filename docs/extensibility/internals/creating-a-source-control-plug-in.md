@@ -12,32 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b8f7a02c0332a3f75131ddfaf2e021f4a0c65c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c33b852a585825f3c5b5fc415b01ac31e35f763f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035370"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606531"
 ---
 # <a name="create-a-source-control-plug-in"></a>Tworzenie wtyczki kontroli źródła
-Visual Studio SDK zawiera zasoby, które umożliwiają dodawanie możliwości kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Dzięki temu można użyć biblioteki DLL w dodatku plug-in, który jest zgodny z interfejsu API wtyczki kontroli źródła opisane w tej dokumentacji.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)  
- W tym artykule opisano sposób instalowania wtyczki kontroli źródła i wyróżnienie obecnie dostępnych wersji interfejsu API wtyczki kontroli źródła.  
-  
- [Architektura](../../extensibility/internals/source-control-plug-in-architecture.md)  
- Używa diagram architektury, aby wyjaśnić integracji wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
-  
- [Przewodnik po testowym](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
- Zawiera wskazówki dotyczące sposobu testowania instalacji i działania wtyczki kontroli źródła.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, lecz zastępuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródłowej kontrolki interfejsu użytkownika.  
-  
- [Wtyczek kontroli kodu źródłowego](../../extensibility/source-control-plug-ins.md)  
- Zawiera pełną listę wszystkich elementów w interfejsie API wtyczki kontroli źródła.  
-  
- [Kontrola źródła](../../extensibility/internals/source-control.md)  
+Visual Studio SDK zawiera zasoby, które umożliwiają dodawanie możliwości kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Dzięki temu można użyć biblioteki DLL w dodatku plug-in, który jest zgodny z interfejsu API wtyczki kontroli źródła opisane w tej dokumentacji.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Wprowadzenie](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+
+ W tym artykule opisano sposób instalowania wtyczki kontroli źródła i wyróżnienie obecnie dostępnych wersji interfejsu API wtyczki kontroli źródła.
+
+- [Architektura](../../extensibility/internals/source-control-plug-in-architecture.md)
+
+ Używa diagram architektury, aby wyjaśnić integracji wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
+
+- [Przewodnik po testowym](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+
+ Zawiera wskazówki dotyczące sposobu testowania instalacji i działania wtyczki kontroli źródła.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Tworzenie pakietu VSPackage kontroli źródła](../../extensibility/internals/creating-a-source-control-vspackage.md)
+
+ W tym artykule omówiono sposób tworzenia kontroli źródła pakietu VSPackage, który nie tylko zapewnia funkcji kontroli źródła, lecz zastępuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] źródłowej kontrolki interfejsu użytkownika.
+
+- [Wtyczek kontroli kodu źródłowego](../../extensibility/source-control-plug-ins.md)
+
+ Zawiera pełną listę wszystkich elementów w interfejsie API wtyczki kontroli źródła.
+
+- [Kontrola źródła](../../extensibility/internals/source-control.md)
+
  W tym artykule omówiono opcje implementowania kontroli źródła jako zintegrowaną funkcją [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

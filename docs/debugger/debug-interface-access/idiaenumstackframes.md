@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4b46d2b59566df003b455e9dcf07ae96a28872
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155347"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608747"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Wylicza różnych dostępnych ramek stosu.
@@ -70,7 +70,7 @@ Biblioteka: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)  
-[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)  
-[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)
+- [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)
+- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

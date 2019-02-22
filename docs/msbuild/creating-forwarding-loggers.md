@@ -11,34 +11,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c9157b09773a99d66ee4fa431482b64fc7528e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b63e71a3c904c6dad21f54269e336acd4291e7a3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936505"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610167"
 ---
 # <a name="create-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
-Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając Ci wybrać zdarzeń, które chcesz monitorować, podczas kompilowania projektów w systemie wieloprocesorowym. Po włączeniu przekazywanie rejestratorów może uniemożliwić niepożądanych zdarzeń z przeciążenia rejestratora centralnego, spowalniając czas kompilacji i zaśmiecania dziennika.  
-  
- Można utworzyć rejestratora przekazywania, można albo Implementowanie <xref:Microsoft.Build.Framework.IForwardingLogger> interfejsu, a następnie ręcznie wdrożyć jego metody lub użyj <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasa i jej wstępnie skonfigurowanych metod. (Ten ostatni będą wystarczające dla większości aplikacji.)  
-  
-## <a name="register-events-and-respond-to-them"></a>Rejestrowanie zdarzeń i Reaguj na nie  
- Rejestrator przekazywania zbiera informacje o zdarzeniach kompilacji zgłoszonej przez aparat kompilacji pomocniczy, który jest proces roboczy, który jest tworzony przez proces kompilacji głównego podczas kompilacji w systemie wieloprocesorowym. Następnie rejestratora przekazywania wybiera zdarzenia do przesyłania dalej do centralnej rejestratora, zgodnie z instrukcjami, którym przyznano go.  
-  
- Należy zarejestrować przekazywanie rejestratorów do obsługi zdarzeń, które chcesz monitorować. Aby rejestrować zdarzenia, należy zastąpić rejestratorów <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> metody. Ta metoda obejmuje teraz opcjonalny parametr `nodecount`, które można ustawić liczby procesorów w systemie. (Domyślna wartość to 1).  
-  
- Przykłady zdarzeń, które można monitorować <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, i <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.  
-  
- W środowisku wielu procesorów do odebrania poza kolejnością prawdopodobnie komunikaty o zdarzeniach. W związku z tym należy obliczyć zdarzeń za pomocą programu obsługi zdarzeń w rejestratora przekazywania i programu do określenia, które zdarzenia do przekazania do przekierowania do przekazywania danych do centralnej rejestratora. Aby to osiągnąć, można użyć <xref:Microsoft.Build.Framework.BuildEventContext> klasy, która jest dołączona do każdej wiadomości, aby ułatwić zidentyfikowanie zdarzenia, które mają być przekazywane, a następnie przekaż nazwy zdarzeń, aby <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasy (lub podklasa go). Korzystając z tej metody, nie inne określone kodowanie jest wymagana do przesyłania dalej zdarzeń.  
-  
-## <a name="specify-a-forwarding-logger"></a>Określ Rejestrator przekazywania  
- Rejestrator przekazywania został wcześniej skompilowany w zestawie, musisz poinformować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z niego korzystać podczas kompilacji. Aby to zrobić, należy użyć `-FileLogger`, `-FileLoggerParameters`, i `-DistributedFileLogger` zmienia się wraz z *MSBuild.exe*. `-FileLogger` Informuje o przełącznikiem *MSBuild.exe* bezpośrednio dołączonego rejestratora. `-DistributedFileLogger` Przełącznika oznacza, że istnieje plik dziennika w każdym węźle. Aby ustawić parametry rejestratora przekazywania, należy użyć `-FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych *MSBuild.exe* przełączników, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
-  
-## <a name="multi-processor-aware-loggers"></a>Procesorów uwzględniających rejestratorów  
- Podczas tworzenia projektu w systemie wieloprocesorowym komunikatów kompilacji z każdego procesora nie są automatycznie przeplotu ujednoliconego sekwencji. Zamiast tego należy ustanowić komunikat grupowanie priorytet za pomocą <xref:Microsoft.Build.Framework.BuildEventContext> klasy, który jest dołączony do każdej wiadomości. Aby uzyskać więcej informacji na temat tworzenia wielu procesorów zobacz [logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md).  
-  
-## <a name="see-also"></a>Zobacz także  
- [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Rejestratory kompilacji](../msbuild/build-loggers.md)   
- [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)
+Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając Ci wybrać zdarzeń, które chcesz monitorować, podczas kompilowania projektów w systemie wieloprocesorowym. Po włączeniu przekazywanie rejestratorów może uniemożliwić niepożądanych zdarzeń z przeciążenia rejestratora centralnego, spowalniając czas kompilacji i zaśmiecania dziennika.
+
+ Można utworzyć rejestratora przekazywania, można albo Implementowanie <xref:Microsoft.Build.Framework.IForwardingLogger> interfejsu, a następnie ręcznie wdrożyć jego metody lub użyj <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasa i jej wstępnie skonfigurowanych metod. (Ten ostatni będą wystarczające dla większości aplikacji.)
+
+## <a name="register-events-and-respond-to-them"></a>Rejestrowanie zdarzeń i Reaguj na nie
+ Rejestrator przekazywania zbiera informacje o zdarzeniach kompilacji zgłoszonej przez aparat kompilacji pomocniczy, który jest proces roboczy, który jest tworzony przez proces kompilacji głównego podczas kompilacji w systemie wieloprocesorowym. Następnie rejestratora przekazywania wybiera zdarzenia do przesyłania dalej do centralnej rejestratora, zgodnie z instrukcjami, którym przyznano go.
+
+ Należy zarejestrować przekazywanie rejestratorów do obsługi zdarzeń, które chcesz monitorować. Aby rejestrować zdarzenia, należy zastąpić rejestratorów <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> metody. Ta metoda obejmuje teraz opcjonalny parametr `nodecount`, które można ustawić liczby procesorów w systemie. (Domyślna wartość to 1).
+
+ Przykłady zdarzeń, które można monitorować <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, i <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.
+
+ W środowisku wielu procesorów do odebrania poza kolejnością prawdopodobnie komunikaty o zdarzeniach. W związku z tym należy obliczyć zdarzeń za pomocą programu obsługi zdarzeń w rejestratora przekazywania i programu do określenia, które zdarzenia do przekazania do przekierowania do przekazywania danych do centralnej rejestratora. Aby to osiągnąć, można użyć <xref:Microsoft.Build.Framework.BuildEventContext> klasy, która jest dołączona do każdej wiadomości, aby ułatwić zidentyfikowanie zdarzenia, które mają być przekazywane, a następnie przekaż nazwy zdarzeń, aby <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasy (lub podklasa go). Korzystając z tej metody, nie inne określone kodowanie jest wymagana do przesyłania dalej zdarzeń.
+
+## <a name="specify-a-forwarding-logger"></a>Określ Rejestrator przekazywania
+ Rejestrator przekazywania został wcześniej skompilowany w zestawie, musisz poinformować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z niego korzystać podczas kompilacji. Aby to zrobić, należy użyć `-FileLogger`, `-FileLoggerParameters`, i `-DistributedFileLogger` zmienia się wraz z *MSBuild.exe*. `-FileLogger` Informuje o przełącznikiem *MSBuild.exe* bezpośrednio dołączonego rejestratora. `-DistributedFileLogger` Przełącznika oznacza, że istnieje plik dziennika w każdym węźle. Aby ustawić parametry rejestratora przekazywania, należy użyć `-FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych *MSBuild.exe* przełączników, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
+
+## <a name="multi-processor-aware-loggers"></a>Procesorów uwzględniających rejestratorów
+ Podczas tworzenia projektu w systemie wieloprocesorowym komunikatów kompilacji z każdego procesora nie są automatycznie przeplotu ujednoliconego sekwencji. Zamiast tego należy ustanowić komunikat grupowanie priorytet za pomocą <xref:Microsoft.Build.Framework.BuildEventContext> klasy, który jest dołączony do każdej wiadomości. Aby uzyskać więcej informacji na temat tworzenia wielu procesorów zobacz [logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md).
+
+## <a name="see-also"></a>Zobacz także
+- [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Rejestratory kompilacji](../msbuild/build-loggers.md)
+- [Logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md)

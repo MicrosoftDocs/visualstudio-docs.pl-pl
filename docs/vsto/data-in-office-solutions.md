@@ -14,30 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871796"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621256"
 ---
 # <a name="data-in-office-solutions"></a>Dane w rozwiązaniach pakietu Office
   Wiele rozwiązań pakietu Office pozwalają użytkownikom na pobieranie i modyfikowanie danych. Podczas tworzenia rozwiązań dla pakietu Office przy użyciu programu Visual Studio, istnieje kilka różnych sposobów, które można pracować z danymi.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md) opisano, jak powiązać dane z kontrolek w rozwiązaniach pakietu Office.
+- [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md) opisuje sposób używania niestandardowych części XML do pracy z danymi w rozwiązaniach pakietu Office.
+ Opis sposobu tworzenia powiązania danych do kontrolek w rozwiązaniach pakietu Office.
 
- [Buforowane dane dostosowywane na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md) opisano, jak przechowywać dane na wyspie osadzonych danych, który jest dostępny bez uruchamiania aplikacji pakietu Office.
+- [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md)
 
- [Schematy XML i dane na poziomie dokumentu dostosowania](../vsto/xml-schemas-and-data-in-document-level-customizations.md) opisuje sposób używania schematów XML w dostosowaniach na poziomie dokumentu w celu tworzenia formantów, które są powiązane z danymi XML.
+ Opisuje sposób używania niestandardowych części XML do pracy z danymi w rozwiązaniach pakietu Office.
 
- [Korzystać z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md) opisuje sposób importowania plików bazy danych w swoich projektach i podczas buforowania danych w trybie offline.
+- [Dane w pamięci podręcznej dostosowywane na poziomie dokumentu](../vsto/cached-data-in-document-level-customizations.md)
+
+ W tym artykule opisano, jak przechowywać dane na wyspie osadzonych danych, który jest dostępny bez uruchamiania aplikacji pakietu Office.
+
+- [Schematy XML i dane dostosowywane na poziomie dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+
+ Opisuje sposób używania schematów XML w dostosowaniach na poziomie dokumentu w celu tworzenia formantów, które są powiązane z danymi XML.
+
+- [Korzystać z plików lokalnej bazy danych w rozwiązań Office ― omówienie](../vsto/using-local-database-files-in-office-solutions-overview.md)
+
+ W tym artykule opisano sposób importowania plików bazy danych w swoich projektach i podczas buforowania danych w trybie offline.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Dostęp do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md) listę tematów, które ilustrują sposób pracy z danymi w programie Visual Studio.
+- [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 
- [Zapisz dane](../data-tools/saving-data.md) udostępnia łącza do tematów dotyczących pracy z zestawami danych, w tym modyfikowanie danych w zestawie danych i zapisywanie zmian z powrotem do źródła danych.
+ Wyświetla listę tematów, które pokazują, jak pracować z danymi w programie Visual Studio.
 
- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md) zawiera łącza do informacji o tym, jak zacząć tworzenie projektów Office za pomocą programu Visual Studio.
+- [Zapisywanie danych](../data-tools/saving-data.md)
+
+ Zawiera łącza do tematów dotyczących pracy z zestawami danych, w tym modyfikowanie danych w zestawie danych i zapisywanie zmian z powrotem do źródła danych.
+
+- [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)
+
+ Zawiera łącza do informacji o tym, jak zacząć tworzenie projektów Office za pomocą programu Visual Studio.

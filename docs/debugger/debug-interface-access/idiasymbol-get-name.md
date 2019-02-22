@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1013d026e2943560ceeb9c0146469b754b2faa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982874"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611311"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Pobiera nazwę symbolu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_name (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca nazwę symbolu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
-  
+Pobiera nazwę symbolu.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_name ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca nazwę symbolu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.
+
 > [!NOTE]
->  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
-  
-## <a name="example"></a>Przykład  
-  
-```C++  
-IDiaSymbol* pType;  
-BSTR        name;  
-pType->get_name( &name );  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.
+
+## <a name="example"></a>Przykład
+
+```C++
+IDiaSymbol* pType;
+BSTR        name;
+pType->get_name( &name );
+```
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8903e302b6b6461e2acb6084ac25f06c6666eb21
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd58933146cea4a953c0c4290cebb0d12af8f199
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973606"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607996"
 ---
 # <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
-Pobiera flagę wskazującą, czy nie można buforować sekcji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_notCached (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pRetVal`  
- [out] Zwraca `TRUE` , jeśli nie można buforować sekcji; w przeciwnym razie zwraca `FALSE`.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Pobiera flagę wskazującą, czy nie można buforować sekcji.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_notCached ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pRetVal`
+
+[out] Zwraca `TRUE` , jeśli nie można buforować sekcji; w przeciwnym razie zwraca `FALSE`.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

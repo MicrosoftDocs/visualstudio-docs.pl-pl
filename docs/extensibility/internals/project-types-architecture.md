@@ -10,32 +10,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ae75501e705ef126ac11c3b13672b1713e7735
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3aee42e266e1082228c30ce56ac128e19ef6c576
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613621"
 ---
 # <a name="project-types-architecture"></a>Architektura typów projektów
-Ta sekcja zawiera szczegółowe informacje o architekturze typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)  
- Wyświetla listę usług, których może używać typu projektu i musi on implementować interfejs.  
-  
- [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)  
- W tym artykule opisano interfejsy typów projektów należy zaimplementować i opcjonalnie można zaimplementować w celu zapewnienia dodatkowych funkcji.  
-  
- [Kiedy należy tworzyć typy projektów](../../extensibility/internals/when-to-create-project-types.md)  
- Wpisz ułatwia podjęcie decyzji, kiedy należy utworzyć projekt, a kiedy można użyć innej [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji rozszerzeń, takich jak pakietów VSPackage i edytorów, aby osiągnąć ten sam cel.  
-  
- [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)  
- W tym artykule opisano sposób [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa hierarchii i kontekst zaznaczenia, aby zapewnić spójne i uproszczone środowisko.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Podtypy projektów](../../extensibility/internals/project-subtypes.md)  
- Wyjaśnia, jak podtypy projektów pozwalają dostosować zachowanie systemów projektu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
-  
- [Typy projektów](../../extensibility/internals/project-types.md)  
+Ta sekcja zawiera szczegółowe informacje o architekturze typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)
+
+ Wyświetla listę usług, których może używać typu projektu i musi on implementować interfejs.
+
+- [Podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md)
+
+ W tym artykule opisano interfejsy typów projektów należy zaimplementować i opcjonalnie można zaimplementować w celu zapewnienia dodatkowych funkcji.
+
+- [Kiedy należy tworzyć typy projektów](../../extensibility/internals/when-to-create-project-types.md)
+
+ Wpisz ułatwia podjęcie decyzji, kiedy należy utworzyć projekt, a kiedy można użyć innej [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkcji rozszerzeń, takich jak pakietów VSPackage i edytorów, aby osiągnąć ten sam cel.
+
+- [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)
+
+ W tym artykule opisano sposób [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] używa hierarchii i kontekst zaznaczenia, aby zapewnić spójne i uproszczone środowisko.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Podtypy projektów](../../extensibility/internals/project-subtypes.md)
+
+ Wyjaśnia, jak podtypy projektów pozwalają dostosować zachowanie systemów projektu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+
+- [Typy projektów](../../extensibility/internals/project-types.md)
+
  Zawiera omówienie projektów jako podstawowe bloki konstrukcyjne [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Podano linki do dodatkowych tematów, które wyjaśniają, jak kontrolować projektów, tworzenie i kompilowanie kodu.

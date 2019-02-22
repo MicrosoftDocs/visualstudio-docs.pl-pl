@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02add685cc3045fedca5bff8c8bf5efde17d371e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945050"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615042"
 ---
 # <a name="timeline-caret"></a>Daszek osi czasu
-Po wybraniu punktu na osi czasu wykonywania segment wątku, daszek osi czasu pojawi się nad nim. Stos wywołań, który jest wyświetlany na karcie bieżącego stosu jest ten, który znajduje się najbliżej w czasie gdy kliknięto przycisk segmentu. Służy do kojarzenia stos wywołań, który jest wyświetlany w obszarze karetkę **bieżącego** kartę za pomocą natychmiastowe jego był wtedy próbkowany. Daszek funkcja pokaże dokładną lokalizację stos wywołań, czyli najbliższy stos wywołań do lokalizacji określonej przez wybrany przez użytkownika.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Widok wątków](../profiling/threads-view-parallel-performance.md)
+Po wybraniu punktu na osi czasu wykonywania segment wątku, daszek osi czasu pojawi się nad nim. Stos wywołań, który jest wyświetlany na karcie bieżącego stosu jest ten, który znajduje się najbliżej w czasie gdy kliknięto przycisk segmentu. Służy do kojarzenia stos wywołań, który jest wyświetlany w obszarze karetkę **bieżącego** kartę za pomocą natychmiastowe jego był wtedy próbkowany. Daszek funkcja pokaże dokładną lokalizację stos wywołań, czyli najbliższy stos wywołań do lokalizacji określonej przez wybrany przez użytkownika.
+
+## <a name="see-also"></a>Zobacz także
+- [Widok wątków](../profiling/threads-view-parallel-performance.md)

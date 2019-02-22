@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987473"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628328"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcji asercji określa warunek, który chcą mieć wartość true w punkcie, w programie. Jeśli ten warunek nie zostanie spełniony, potwierdzenie nie powiedzie się, wykonania programu zostanie przerwany, a [błędy potwierdzenia — okno dialogowe](../debugger/assertion-failed-dialog-box.md) pojawia się.
@@ -46,7 +46,7 @@ Visual C++ obsługuje instrukcji potwierdzania, które są oparte na następują
 
 - Potwierdzenia CRT dla programów, które używają biblioteki wykonawczej C.
 
-- ANSI [assert — funkcja](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) innych programów C/C++.  
+- ANSI [assert — funkcja](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) innych programów C/C++.
 
   Potwierdzenia umożliwia przechwytywania błędów logiki, sprawdź wyniki operacji i testowanie warunki błędów, które powinno zostać obsłużone.
 
@@ -63,7 +63,7 @@ Visual C++ obsługuje instrukcji potwierdzania, które są oparte na następują
 
 - [MFC ASSERT_VALID i CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [Ograniczenia AssertValid](#BKMK_Limitations_of_AssertValid)  
+- [Ograniczenia AssertValid](#BKMK_Limitations_of_AssertValid)
 
   [Za pomocą potwierdzenia](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ Ten kod zależy od instrukcji asercji obsługę warunku błędu. W rezultacie, k
 [W tym temacie](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Zobacz też
-[Zabezpieczenia debugera](../debugger/debugger-security.md)  
-[Debugowanie kodu natywnego](../debugger/debugging-native-code.md)  
-[Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)
+
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
+- [Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)

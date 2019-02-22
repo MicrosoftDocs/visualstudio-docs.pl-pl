@@ -20,21 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942abb66e56e72cbe462f35944a9e4e03d471052
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941817"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619852"
 ---
 # <a name="assertion-failed-dialog-box"></a>Błędy potwierdzenia — Okno dialogowe
-Instrukcji asercji określa warunek, który chcą przechowywać wartość true, w pewnym momencie określonej w programie. Ten warunek nie ma wartość true, potwierdzenie nie powiedzie się, wykonanie programu zostało przerwane i pojawi się okno dialogowe.  
-  
-|Kliknij|Zadanie|  
-|-----------|--------|  
-|Ponawianie próby|Potwierdzenie debugowania lub get pomoc dotyczącą asercji.|  
-|Zignoruj|Ignoruj potwierdzenia i kontynuacji działania programu.|  
-|Przerwij|Zatrzymaj wykonywanie programu i zakończenie sesji debugowania.|  
-  
-## <a name="see-also"></a>Zobacz też  
- [Instrukcje asercji w języku C/C++](../debugger/c-cpp-assertions.md)
+Instrukcji asercji określa warunek, który chcą przechowywać wartość true, w pewnym momencie określonej w programie. Ten warunek nie ma wartość true, potwierdzenie nie powiedzie się, wykonanie programu zostało przerwane i pojawi się okno dialogowe.
+
+|Kliknij|Zadanie|
+|-----------|--------|
+|Ponawianie próby|Potwierdzenie debugowania lub get pomoc dotyczącą asercji.|
+|Zignoruj|Ignoruj potwierdzenia i kontynuacji działania programu.|
+|Przerwij|Zatrzymaj wykonywanie programu i zakończenie sesji debugowania.|
+
+## <a name="see-also"></a>Zobacz też
+
+- [Instrukcje asercji w języku C/C++](../debugger/c-cpp-assertions.md)

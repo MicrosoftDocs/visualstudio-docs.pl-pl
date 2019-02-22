@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025647"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629576"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Kolorowanie składni w starszej wersji usługi językowej
 
@@ -63,11 +63,17 @@ Program Visual Studio używa usługi, kolorowanie, aby zidentyfikować elementy 
 >  Oprócz używania colorizer usługi języka, pakietu VSPackage umożliwia również kolorowania mechanizm ogólnego przeznaczenia tekstu Visual Studio. Aby uzyskać więcej informacji na temat tego mechanizmu, zobacz [przy użyciu czcionki i kolory](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md) Discusses jak edytor uzyskuje dostęp usługa języka kolorowanie składni, którą usługa języka należy wdrożyć do obsługi kolorowanie składni.
+- [Implementowanie kolorowania składni](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md) pokazuje, jak korzystać z wbudowanych elementów z możliwością kolorowania usługi języka.
+ W tym artykule omówiono, jak edytor uzyskuje dostęp do, kolorowanie składni i jakie usługa językowa musi Implementowanie obsługi składni kolorowania usługi języka.
 
- [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md) w tym artykule omówiono sposób implementacji niestandardowych elementów z możliwością kolorowania.
+- [Instrukcje: Używanie wbudowanych elementów z możliwością kolorowania](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Pokazuje, jak korzystać z wbudowanych elementów z możliwością kolorowania usługi języka.
+
+- [Niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md)
+
+ W tym artykule omówiono sposób implementacji niestandardowych elementów z możliwością kolorowania.
 
 ## <a name="see-also"></a>Zobacz też
 

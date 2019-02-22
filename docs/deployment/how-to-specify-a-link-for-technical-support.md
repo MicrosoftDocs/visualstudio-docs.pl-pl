@@ -20,30 +20,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90c020f5bfed1c6b4bd3c63aed67b8ffede7b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0acf30ee16669901da89a23587729599c7b4039
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620086"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Instrukcje: Określanie linku do pomocy technicznej
-Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji **adres URL pomocy technicznej** właściwość identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji. Ta właściwość jest opcjonalna. Jeśli nie dostarczono, adres URL będzie wyświetlana w wpisu aplikacji **apletu Dodaj lub usuń programy** okno dialogowe.  
-  
- **Adres URL pomocy technicznej** właściwość można ustawić na **Publikuj** strony **projektanta projektu**.  
-  
-### <a name="to-specify-a-support-url"></a>Aby określić adres URL pomocy technicznej  
-  
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
-  
-2.  Kliknij przycisk **Publikuj** kartę.  
-  
-3.  Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.  
-  
-4.  Kliknij przycisk **opis**.  
-  
-5.  W **adres URL pomocy technicznej** wprowadź pełną ścieżkę do witryny sieci Web, strona sieci Web lub UNC udziału.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji **adres URL pomocy technicznej** właściwość identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji. Ta właściwość jest opcjonalna. Jeśli nie dostarczono, adres URL będzie wyświetlana w wpisu aplikacji **apletu Dodaj lub usuń programy** okno dialogowe.
+
+ **Adres URL pomocy technicznej** właściwość można ustawić na **Publikuj** strony **projektanta projektu**.
+
+### <a name="to-specify-a-support-url"></a>Aby określić adres URL pomocy technicznej
+
+1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.
+
+2.  Kliknij przycisk **Publikuj** kartę.
+
+3.  Kliknij przycisk **opcje** przycisk, aby otworzyć **opcji publikowania** okno dialogowe.
+
+4.  Kliknij przycisk **opis**.
+
+5.  W **adres URL pomocy technicznej** wprowadź pełną ścieżkę do witryny sieci Web, strona sieci Web lub UNC udziału.
+
+## <a name="see-also"></a>Zobacz także
+- [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)
+- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

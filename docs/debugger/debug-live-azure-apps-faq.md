@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630720"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Często zadawane pytania dotyczące debugowania migawek w programie Visual Studio
 
@@ -23,11 +23,11 @@ Poniżej przedstawiono listę pytań, które mogą się podczas debugowania na �
 
 #### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Co to jest to koszt wydajności wykonywania migawki?
 
-Po przechwyceniu przez rozszerzenie Snapshot Debugger migawkę aplikacji jest rozwidlenia procesu aplikacji i zawieszanie rozwidlone kopiowania. Podczas debugowania migawki debugowania względem rozwidlone kopię procesu. Ten proces zajmuje tylko 10-20 MS, ale nie kopiuje pełnego stosu aplikacji. Zamiast tego kopiuje tabeli strony i ustawia strony, aby skopiować przy zapisie. Jeśli niektóre obiekty aplikacji w przypadku zmiany sterty odpowiednich stronach są kopiowane. Każda migawka ma związku z tym niewielkim kosztem w pamięci (rzędu kilku setki kilobajtów dla większości aplikacji). 
+Po przechwyceniu przez rozszerzenie Snapshot Debugger migawkę aplikacji jest rozwidlenia procesu aplikacji i zawieszanie rozwidlone kopiowania. Podczas debugowania migawki debugowania względem rozwidlone kopię procesu. Ten proces zajmuje tylko 10-20 MS, ale nie kopiuje pełnego stosu aplikacji. Zamiast tego kopiuje tabeli strony i ustawia strony, aby skopiować przy zapisie. Jeśli niektóre obiekty aplikacji w przypadku zmiany sterty odpowiednich stronach są kopiowane. Każda migawka ma związku z tym niewielkim kosztem w pamięci (rzędu kilku setki kilobajtów dla większości aplikacji).
 
 #### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Co się dzieje w przypadku skalowania w poziomie w usłudze Azure App Service (wiele wystąpień aplikacji)?
 
-Jeśli masz wiele wystąpień aplikacji, punkty przyciągania stosowane do każdego pojedynczego wystąpienia. Tylko pierwszy punkt przyciągania, aby trafić warunkom określonym tworzy migawkę. Jeśli masz wiele punktów przyciągania, kolejne migawki pochodzą z tego samego wystąpienia, jak utworzyć pierwszą migawką. Punkty rejestrowania wysyłany do okna danych wyjściowych będzie wyświetlana tylko komunikaty z jednego wystąpienia, gdy punkty rejestrowania wysyłane do dzienników aplikacji wysyłanie komunikatów z każdego wystąpienia. 
+Jeśli masz wiele wystąpień aplikacji, punkty przyciągania stosowane do każdego pojedynczego wystąpienia. Tylko pierwszy punkt przyciągania, aby trafić warunkom określonym tworzy migawkę. Jeśli masz wiele punktów przyciągania, kolejne migawki pochodzą z tego samego wystąpienia, jak utworzyć pierwszą migawką. Punkty rejestrowania wysyłany do okna danych wyjściowych będzie wyświetlana tylko komunikaty z jednego wystąpienia, gdy punkty rejestrowania wysyłane do dzienników aplikacji wysyłanie komunikatów z każdego wystąpienia.
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Jak rozszerzenie Snapshot Debugger załadować symbole?
 
@@ -35,11 +35,11 @@ Rozszerzenie Snapshot Debugger wymaga posiadania pasujących symboli dla aplikac
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Rozszerzenie Snapshot Debugger działa dla kompilacji wydania mojej aplikacji?
 
-Tak — rozszerzenie Snapshot Debugger jest przeznaczony do pracy dla kompilacji wydania. Gdy punktu przyciągania jest umieszczany w funkcji, funkcja jest ponownie kompilowana do wersji debugowania, dzięki czemu debugowania. Po zatrzymaniu debugera migawki funkcji są zwracane do ich kompilacji wydania. 
+Tak — rozszerzenie Snapshot Debugger jest przeznaczony do pracy dla kompilacji wydania. Gdy punktu przyciągania jest umieszczany w funkcji, funkcja jest ponownie kompilowana do wersji debugowania, dzięki czemu debugowania. Po zatrzymaniu debugera migawki funkcji są zwracane do ich kompilacji wydania.
 
 #### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Punkty rejestrowania może spowodować skutki uboczne w mojej aplikacji produkcyjnych?
 
-Nie — komunikaty dziennika, dodanych do aplikacji są przetwarzane niemal. Nie spowodują one wszelkie efekty uboczne w aplikacji. Jednak niektóre właściwości natywne mogą być niedostępne z punkty rejestrowania. 
+Nie — komunikaty dziennika, dodanych do aplikacji są przetwarzane niemal. Nie spowodują one wszelkie efekty uboczne w aplikacji. Jednak niektóre właściwości natywne mogą być niedostępne z punkty rejestrowania.
 
 #### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Rozszerzenie Snapshot Debugger działa Jeśli mój serwer znajduje się pod obciążeniem?
 
@@ -55,8 +55,8 @@ Możesz odinstalować rozszerzenie witryny Snapshot Debugger w usłudze App Serv
 
 ## <a name="see-also"></a>Zobacz także
 
-[Debugowanie w programie Visual Studio](../debugger/index.md)  
-[Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)  
-[Debugowanie na żywo ASP.NET Azure wirtualnego Machines\Virtual maszyn Scale Sets przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)  
-[Debugowanie na żywo ASP.NET Azure Kubernetes za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)  
-[Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Debugowanie na żywo ASP.NET Azure wirtualnego Machines\Virtual maszyn Scale Sets przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Debugowanie na żywo ASP.NET Azure Kubernetes za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md)

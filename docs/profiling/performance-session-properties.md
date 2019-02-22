@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959424"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624974"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 
@@ -38,7 +38,7 @@ Aby uzyskać więcej informacji, zobacz:
 
 [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Instrukcje: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Instrukcje: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Uruchom
 
@@ -111,6 +111,6 @@ Aby uzyskać więcej informacji, zobacz:
 
 ## <a name="see-also"></a>Zobacz także
 
-[Omówienia](../profiling/overviews-performance-tools.md)  
-[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)  
-[Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
+[Omówienie](../profiling/overviews-performance-tools.md)
+[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
+[kontrolować zbieranie danych](../profiling/controlling-data-collection.md)

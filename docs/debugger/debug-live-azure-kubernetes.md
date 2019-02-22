@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627951"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debugowanie na żywo usług ASP.NET usługi Azure Kubernetes, za pomocą rozszerzenia Snapshot Debugger
 
@@ -57,7 +57,7 @@ W tym samouczku wykonasz następujące czynności:
 1. Dołączanie rozszerzenia Snapshot Debugger. Można użyć jednej z kilku różnych metod:
 
     * Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
-  
+
       ![Uruchamianie rozszerzenia snapshot debugger z menu Debugowanie](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Kliknij prawym przyciskiem myszy na projekt i wybierz **Publikuj**, a następnie na stronie kliknij przycisk Publikuj **dołączyć rozszerzenie Snapshot Debugger**. Wybierz zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
@@ -67,7 +67,7 @@ W tym samouczku wykonasz następujące czynności:
     ![Uruchamianie rozszerzenia snapshot debugger z menu rozwijanego F5](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Za pomocą Eksploratora chmury (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **dołączyć rozszerzenie Snapshot Debugger**.
-  
+
       ![Uruchamianie rozszerzenia snapshot debugger Eksploratora chmury](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

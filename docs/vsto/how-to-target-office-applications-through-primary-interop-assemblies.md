@@ -16,43 +16,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94bc4add4cfbc61e79ded57ee43c41c88ccb37e7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873434"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614327"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Instrukcje: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych
-  Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:  
-  
-- Chcesz korzystać z funkcji innych aplikacji pakietu Microsoft Office w projekcie. Na przykład można używać funkcji programu Microsoft Office Excel w projekcie dla programu Microsoft Office Word.  
-  
-- Chcesz zautomatyzować aplikacji Microsoft Office, które nie mają dedykowanych projektów w programie Visual Studio, takich jak Microsoft Office Access.  
-  
-  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
-  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
-  
-## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Aby dodać odwołanie do podstawowego zestawu międzyoperacyjnego  
-  
-1.  Otwórz projekt pakietu Office i wybierz nazwę projektu w **Eksploratora rozwiązań**.  
-  
-2.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.  
-  
-3.  Na **Framework** , a następnie wybierz PIA w **nazwa składnika** listy. Aby uzyskać więcej informacji na temat dostępnych podstawowych zestawów międzyoperacyjnych programu Microsoft Office, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
-  
-     Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, **Osadź typy współdziałania** dla odwołania do zestawu jest właściwością **True** domyślnie. Za pomocą tego ustawienia, rozwiązanie nie wymaga PIA na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).  
-  
-    > [!NOTE]  
-    >  W projektach pakietu Office, zawsze dodać odwołania do zestawów PIA pakietu Office za pomocą **.NET** karcie **Dodaj odwołanie** okna dialogowego, a nie od **COM** kartę. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
-  
-4.  Kliknij przycisk **OK**.  
-  
-     Nazwa zestawu, który pojawia się w **odwołania** folderu **Eksploratora rozwiązań**.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)   
- [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
- [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
- [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+  Podczas tworzenia nowego projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do programu Microsoft Office podstawowe zestawy międzyoperacyjne (PIA), które są wymagane do kompilowania projektu. Należy dodać odwołania do innych zestawów PIA w następujących scenariuszach:
+
+- Chcesz korzystać z funkcji innych aplikacji pakietu Microsoft Office w projekcie. Na przykład można używać funkcji programu Microsoft Office Excel w projekcie dla programu Microsoft Office Word.
+
+- Chcesz zautomatyzować aplikacji Microsoft Office, które nie mają dedykowanych projektów w programie Visual Studio, takich jak Microsoft Office Access.
+
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+
+## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Aby dodać odwołanie do podstawowego zestawu międzyoperacyjnego
+
+1.  Otwórz projekt pakietu Office i wybierz nazwę projektu w **Eksploratora rozwiązań**.
+
+2.  Na **projektu** menu, kliknij przycisk **Dodaj odwołanie**.
+
+3.  Na **Framework** , a następnie wybierz PIA w **nazwa składnika** listy. Aby uzyskać więcej informacji na temat dostępnych podstawowych zestawów międzyoperacyjnych programu Microsoft Office, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
+
+     Jeśli projekt jest ukierunkowany [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, **Osadź typy współdziałania** dla odwołania do zestawu jest właściwością **True** domyślnie. Za pomocą tego ustawienia, rozwiązanie nie wymaga PIA na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).
+
+    > [!NOTE]
+    >  W projektach pakietu Office, zawsze dodać odwołania do zestawów PIA pakietu Office za pomocą **.NET** karcie **Dodaj odwołanie** okna dialogowego, a nie od **COM** kartę. Aby uzyskać więcej informacji, zobacz [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).
+
+4.  Kliknij przycisk **OK**.
+
+     Nazwa zestawu, który pojawia się w **odwołania** folderu **Eksploratora rozwiązań**.
+
+## <a name="see-also"></a>Zobacz także
+- [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)
+- [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)
+- [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)
+- [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

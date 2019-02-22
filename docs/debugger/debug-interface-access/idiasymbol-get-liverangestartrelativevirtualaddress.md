@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ddf93be6779dc0fa2faf61d485e83b14f071e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b73839b4d9ee0482fc8248b5ebd9f5c61f63552a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639053"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
-   DWORD* address  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `address`  
- [out] Zwraca początek zakresu adresów.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.  
-  
+Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT get_liveRangeStartRelativeVirtualAddress ( 
+   DWORD* address
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `address`
+
+[out] Zwraca początek zakresu adresów.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.
+
 > [!NOTE]
->  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
-  
-## <a name="remarks"></a>Uwagi  
-  
-## <a name="requirements"></a>Wymagania  
- Nagłówek: Dia2.h  
-  
- Biblioteka: diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.
+
+## <a name="remarks"></a>Uwagi
+
+## <a name="requirements"></a>Wymagania
+ Nagłówek: Dia2.h
+
+ Biblioteka: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
