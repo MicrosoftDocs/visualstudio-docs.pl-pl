@@ -12,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 003e927702766c8d9b2f92dca6fe4cd8c13a50dc
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f1719656c475dc6ee78de27f068baaf77c8b2a85
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872693"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638156"
 ---
 # <a name="sharepoint-development-samples"></a>Rozwój SharePoint — przykłady
-  Visual Studio można użyć do pobrania i zainstalowania próbek aplikacji programu SharePoint z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).  
-  
- Możesz pobrać każdy przykład osobno. Można również pobrać przykładowy pakiet, który ma powiązane przykłady, które samą technologię lub artykułu. Otrzymasz powiadomienie po zmianach kodu źródłowego są publikowane do przykładów, które można pobrać.  
-  
+  Visual Studio można użyć do pobrania i zainstalowania próbek aplikacji programu SharePoint z [galerii kodu MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+
+ Możesz pobrać każdy przykład osobno. Można również pobrać przykładowy pakiet, który ma powiązane przykłady, które samą technologię lub artykułu. Otrzymasz powiadomienie po zmianach kodu źródłowego są publikowane do przykładów, które można pobrać.
+
 ## <a name="see-also"></a>Zobacz także
- [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)   
- [Visual Studio Samples](http://go.microsoft.com/fwlink/?LinkId=150928)   
- [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
+- [Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Przykłady w Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150928)
+- [Niestandardowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)

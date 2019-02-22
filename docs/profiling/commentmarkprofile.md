@@ -11,103 +11,103 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ef69d4830e413fe225841941778ad8e62897f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612078"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` Funkcji wstawia znacznik liczbowych i ciąg tekstowy w. *Vsp* pliku. Dla tego znaku i komentarz do wstawienia, profilowania dla wątku, który zawiera `CommentMarkProfile` funkcja musi być włączone.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
-                                   long lMarker,   
-                                   LPCTSTR szComment);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `lMarker`  
-  
- Znacznik liczbowych do wstawienia. Znacznik muszą być większe niż lub równa 0 (zero).  
-  
- `szComment`  
-  
- Wskaźnik do ciągu tekstowego do wstawienia. Ciąg musi być mniejsza niż 256 znaków, w tym terminator o wartości NULL.  
-  
-## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość  
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
-  
-|Moduł wyliczający|Opis|  
-|----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejsza lub równa 0. Te wartości są zastrzeżone. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_MODE_OFF|W trybie profilowania zostało ustawione na OFF, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznik, w tym kontekście. Znak i komentarzy nie są rejestrowane.|  
-|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia. Znak i komentarzy nie są rejestrowane.|  
-|MARK_TEXTTOOLONG|Ciąg przekracza maksymalnie 256 znaków. Ciąg komentarza zostanie obcięta i znacznika i komentarz są rejestrowane.|  
-|MARK_OK|MARK_OK jest zwracany do wskazania sukcesu.|  
-  
-## <a name="remarks"></a>Uwagi  
- Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia VSInstr znaku lub za pomocą funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).  
-  
- Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w. *vsp* pliku.  
-  
+`CommentMarkProfile` Funkcji wstawia znacznik liczbowych i ciąg tekstowy w. *Vsp* pliku. Dla tego znaku i komentarz do wstawienia, profilowania dla wątku, który zawiera `CommentMarkProfile` funkcja musi być włączone.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
+                                   long lMarker,
+                                   LPCTSTR szComment);
+```
+
+#### <a name="parameters"></a>Parametry
+ `lMarker`
+
+ Znacznik liczbowych do wstawienia. Znacznik muszą być większe niż lub równa 0 (zero).
+
+ `szComment`
+
+ Wskaźnik do ciągu tekstowego do wstawienia. Ciąg musi być mniejsza niż 256 znaków, w tym terminator o wartości NULL.
+
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
+ Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:
+
+|Moduł wyliczający|Opis|
+|----------------|-----------------|
+|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejsza lub równa 0. Te wartości są zastrzeżone. Znak i komentarzy nie są rejestrowane.|
+|MARK_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|
+|MARK_ERROR_MODE_OFF|W trybie profilowania zostało ustawione na OFF, gdy funkcja została wywołana. Znak i komentarzy nie są rejestrowane.|
+|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznik, w tym kontekście. Znak i komentarzy nie są rejestrowane.|
+|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia. Znak i komentarzy nie są rejestrowane.|
+|MARK_TEXTTOOLONG|Ciąg przekracza maksymalnie 256 znaków. Ciąg komentarza zostanie obcięta i znacznika i komentarz są rejestrowane.|
+|MARK_OK|MARK_OK jest zwracany do wskazania sukcesu.|
+
+## <a name="remarks"></a>Uwagi
+ Stan profilowania dla wątku, który zawiera funkcję profilu znacznika musi być na, jeśli znaczniki i komentarze wstawione za pomocą polecenia VSInstr znaku lub za pomocą funkcji (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).
+
+ Znaczniki profilu są globalne w zakresie. Na przykład profilu znacznik wstawiony w jednym wątku może służyć do oznaczania początku lub końcu segmentu data w żadnym z wątków w. *vsp* pliku.
+
 > [!IMPORTANT]
->  Metoda CommentMarkProfile należy używać tylko z Instrumentacją.  
-  
-## <a name="net-framework-equivalent"></a>Równoważne z .NET framework  
- Microsoft.VisualStudio.Profiler.dll  
-  
-## <a name="function-information"></a>Informacje o funkcji  
-  
-|||  
-|-|-|  
-|**Nagłówek**|Include VSPerf.h|  
-|**Biblioteka**|Use VSPerf.lib|  
-|**Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|  
-  
-## <a name="example"></a>Przykład  
- Poniższy kod ilustruje CommentMarkProfile wywołania funkcji. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora Unicode w celu ustalenia, czy kod wywołuje [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] wywołania funkcji.  
-  
-```cpp  
-void ExerciseCommentMarkProfile()  
-{  
-    // Declare and initalize variables to pass to   
-    // CommentMarkProfile.  The values of these   
-    // parameters are assigned based on the needs   
-    // of the code; and for the sake of simplicity  
-    // in this example, the variables are assigned  
-    // arbitrary values.  
-    long markId = 01;  
-    TCHAR * markText = TEXT("Exercising CommentMarkProfile...");  
-  
-    // Variables used to print output.  
-    HRESULT hResult;  
-    TCHAR tchBuffer[256];  
-  
-    // Declare MarkOperationResult Enumerator.    
-    // Holds return value from call to CommentMarkProfile.  
-    PROFILE_COMMAND_STATUS markResult;  
-  
-    markResult = CommentMarkProfile(  
-        markId,  
-        markText);  
-  
-    // Format and print result.  
-    LPCTSTR pszFormat = TEXT("%s %d.\0");  
-    TCHAR* pszTxt = TEXT("CommentMarkProfile returned");  
-    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,   
-        pszTxt, markResult);  
-  
-#ifdef DEBUG  
-    OutputDebugString(tchBuffer);  
-#endif  
-}  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+>  Metoda CommentMarkProfile należy używać tylko z Instrumentacją.
+
+## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
+ Microsoft.VisualStudio.Profiler.dll
+
+## <a name="function-information"></a>Informacje o funkcji
+
+|||
+|-|-|
+|**Nagłówek**|Include VSPerf.h|
+|**Biblioteka**|Use VSPerf.lib|
+|**Unicode**|Zaimplementowane jako `CommentMarkProfileW` (Unicode) i `CommentMarkProfileA` (ANSI).|
+
+## <a name="example"></a>Przykład
+ Poniższy kod ilustruje CommentMarkProfile wywołania funkcji. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora Unicode w celu ustalenia, czy kod wywołuje [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] wywołania funkcji.
+
+```cpp
+void ExerciseCommentMarkProfile()
+{
+    // Declare and initalize variables to pass to
+    // CommentMarkProfile.  The values of these
+    // parameters are assigned based on the needs
+    // of the code; and for the sake of simplicity
+    // in this example, the variables are assigned
+    // arbitrary values.
+    long markId = 01;
+    TCHAR * markText = TEXT("Exercising CommentMarkProfile...");
+
+    // Variables used to print output.
+    HRESULT hResult;
+    TCHAR tchBuffer[256];
+
+    // Declare MarkOperationResult Enumerator.
+    // Holds return value from call to CommentMarkProfile.
+    PROFILE_COMMAND_STATUS markResult;
+
+    markResult = CommentMarkProfile(
+        markId,
+        markText);
+
+    // Format and print result.
+    LPCTSTR pszFormat = TEXT("%s %d.\0");
+    TCHAR* pszTxt = TEXT("CommentMarkProfile returned");
+    hResult = StringCchPrintf(tchBuffer, 256, pszFormat,
+        pszTxt, markResult);
+
+#ifdef DEBUG
+    OutputDebugString(tchBuffer);
+#endif
+}
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)

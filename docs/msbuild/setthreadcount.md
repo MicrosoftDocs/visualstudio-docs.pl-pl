@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4bfb8e1f60ed668039011841e12021e0f0702f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 34040d368a531d257ef72d6e883cb6e151f28a0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942012"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636206"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
-Ustawia liczbę wątku globalnych i przypisuje obliczony wynik w bieżącym wątku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cmd  
-HRESULT WINAPI SetThreadCount(int threadCount);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- [in] `threadCount`  
- Liczba wątków używanych.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- **HRESULT** z **Powodzenie** bitu, jeśli liczba wątków został zaktualizowany.  
-  
-## <a name="requirements"></a>Wymagania  
+Ustawia liczbę wątku globalnych i przypisuje obliczony wynik w bieżącym wątku.
+
+## <a name="syntax"></a>Składnia
+
+```cmd
+HRESULT WINAPI SetThreadCount(int threadCount);
+```
+
+#### <a name="parameters"></a>Parametry
+- [in] `threadCount` Liczby wątków do użycia.
+
+## <a name="return-value"></a>Wartość zwracana
+ **HRESULT** z **Powodzenie** bitu, jeśli liczba wątków został zaktualizowany.
+
+## <a name="requirements"></a>Wymagania
  **Nagłówek:** *FileTracker.h*

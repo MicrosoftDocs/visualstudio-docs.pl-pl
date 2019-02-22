@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870038"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631968"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Opis współtworzenia i dodatków
 
@@ -26,4 +26,4 @@ Współtworzenia jest funkcją programu Excel dla Windows, która umożliwia edy
 Uwaga: Współtworzenia for Windows Desktop Excel została wprowadzona w 2017 r. i jest obecnie dostępna dla subskrybentów usługi Office 365. Użytkownicy, którzy zakupić licencję bezterminową do pakietu Office 2016 lub starszym obecnie nie masz dostępu do funkcji coauthoring. (Excel Online programu Excel dla systemu Android, programu Excel dla systemu iOS, a Mobile programu Excel w Store Windows obsługują także współtworzenia).
 
 ## <a name="see-also"></a>Zobacz także
-[Rozwiązania programu Excel](./excel-solutions.md)
+- [Rozwiązania programu Excel](./excel-solutions.md)

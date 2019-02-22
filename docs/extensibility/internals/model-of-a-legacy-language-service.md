@@ -10,36 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b399a7d65f4bc1eb214b19e5447c99b1f438ff78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621945"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model starszej wersji usługi językowej
-Usługa języka definiuje elementy i funkcje dla określonego języka i służy do zapewnienia edytora z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka w celu obsługi kolorowanie składni.  
-  
- Usługa językowa ściśle współpracuje z buforu tekstowego zarządzane przez Edytor i widok, który zawiera edytor. Microsoft IntelliSense **Quick Info** opcja znajduje się przykład funkcji udostępniony przez usługę języka.  
-  
-## <a name="a-minimal-language-service"></a>Usługa języka minimalny  
- Najbardziej podstawowa usługa językowa zawiera dwa następujące obiekty:  
-  
-- *Usługa językowa* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu. Usługa języka zawierają informacje dotyczące języka, łącznie z nazwy, rozszerzenia nazw plików, Menedżer okien kodu i colorizer.  
-  
-- *Colorizer* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejsu.  
-  
-  Poniższy rysunek koncepcyjny przedstawiający zawiera model usługi w języka podstawowego.  
-  
-  ![Language Service Model graphic](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-  Podstawowy język modelu usług  
-  
-  Hosty okna dokumentu *widok dokumentu* edytora, w tym przypadku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Widok dokumentu i buforu tekstowego są własnością edytora. Te obiekty pracować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą okna dokumentu wyspecjalizowane o nazwie *okna kodu*. W oknie kod znajduje się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekt, który jest tworzony i kontrolowane przez środowisko IDE.  
-  
-  Po załadowaniu pliku z danym rozszerzeniem edytora lokalizuje usługa językowa skojarzony z tym rozszerzeniem i przekazuje do niego okna kodu, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> metody. Usługa zwraca język *Menedżera okien kodu*, który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfejsu.  
-  
-  Poniższa tabela zawiera omówienie obiekty w modelu.  
-  
+Usługa języka definiuje elementy i funkcje dla określonego języka i służy do zapewnienia edytora z użyciem informacji specyficznych dla danego języka. Na przykład edytor musi znać elementów i słów kluczowych języka w celu obsługi kolorowanie składni.
+
+ Usługa językowa ściśle współpracuje z buforu tekstowego zarządzane przez Edytor i widok, który zawiera edytor. Microsoft IntelliSense **Quick Info** opcja znajduje się przykład funkcji udostępniony przez usługę języka.
+
+## <a name="a-minimal-language-service"></a>Usługa języka minimalny
+ Najbardziej podstawowa usługa językowa zawiera dwa następujące obiekty:
+
+- *Usługa językowa* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu. Usługa języka zawierają informacje dotyczące języka, łącznie z nazwy, rozszerzenia nazw plików, Menedżer okien kodu i colorizer.
+
+- *Colorizer* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejsu.
+
+  Poniższy rysunek koncepcyjny przedstawiający zawiera model usługi w języka podstawowego.
+
+  ![Grafika przedstawiająca usługi Model języka](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") podstawowy język modelu usług
+
+  Hosty okna dokumentu *widok dokumentu* edytora, w tym przypadku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. Widok dokumentu i buforu tekstowego są własnością edytora. Te obiekty pracować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą okna dokumentu wyspecjalizowane o nazwie *okna kodu*. W oknie kod znajduje się w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekt, który jest tworzony i kontrolowane przez środowisko IDE.
+
+  Po załadowaniu pliku z danym rozszerzeniem edytora lokalizuje usługa językowa skojarzony z tym rozszerzeniem i przekazuje do niego okna kodu, wywołując <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> metody. Usługa zwraca język *Menedżera okien kodu*, który implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfejsu.
+
+  Poniższa tabela zawiera omówienie obiekty w modelu.
+
 | Składnik | Obiekt | Funkcja |
 |------------------| - | - |
 | Bufor tekstowy | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Unicode odczytu/zapisu strumienia tekstu. Istnieje możliwość tekstu użyć innego kodowania. |
@@ -47,6 +46,6 @@ Usługa języka definiuje elementy i funkcje dla określonego języka i służy 
 | Widok tekstu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Okno, które umożliwia użytkownikowi przejść i wyświetlić tekst przy użyciu klawiatury i myszy. Jako edytora do użytkownika zostanie wyświetlony widok tekstu. Można użyć widoków tekstu w edytorze zwykły system windows, w oknie danych wyjściowych i oknie bezpośrednim. Ponadto można skonfigurować jeden lub więcej widoków tekstu w oknie kodu. |
 | Menedżer tekstu | Zarządza <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> usługi, z którego można uzyskać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> wskaźnika | Składnik, który przechowuje wspólne informacje współużytkowane przez wszystkie składniki, które są opisane wcześniej. |
 | Usługa językowa | Implementacja zależnych; implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Obiekt, który dostarcza informacje specyficzne dla języka, takich jak wyróżnianie składni, uzupełniania instrukcji i parowanie nawiasów klamrowych edytora. |
-  
-## <a name="see-also"></a>Zobacz też  
- [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../../extensibility/document-data-and-document-view-in-custom-editors.md)

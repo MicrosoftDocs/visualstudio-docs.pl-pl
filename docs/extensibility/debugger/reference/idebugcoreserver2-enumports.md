@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::EnumPorts | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::EnumPorts
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0555c9167ae24ad1ea700af142d4598117c58f3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bafa89a38d008a54536976097edc2a874d1ba2d3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037984"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686278"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
-Pobiera listę wszystkich dostępnych portów.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT EnumPorts(   
-   IEnumDebugPorts2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumPorts(   
-   out IEnumDebugPorts2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppEnum`  
- [out] Zwraca [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) obiekt, który zawiera listę portów wszystkich dostawców portu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
+Pobiera listę wszystkich dostępnych portów.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT EnumPorts( 
+   IEnumDebugPorts2** ppEnum
+);
+```
+
+```csharp
+int EnumPorts( 
+   out IEnumDebugPorts2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppEnum`
+
+ [out] Zwraca [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) obiekt, który zawiera listę portów wszystkich dostawców portu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+- [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
