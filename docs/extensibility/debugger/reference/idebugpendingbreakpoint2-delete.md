@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Delete | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Delete
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b47e1fdeb2da653be010aa1874023a75f214ae
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 7ae9b35ba47b08acd2623a3d28c9e634b1ffaa76
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449501"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694130"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 Usuwa ten oczekujący punkt przerwania i wszystkie punkty przerwania, powiązany z niego.
@@ -82,4 +82,4 @@ HRESULT CPendingBreakpoint::Delete(void)
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

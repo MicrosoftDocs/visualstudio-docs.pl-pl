@@ -13,55 +13,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cb97e6b4c111689cb94c0df7c04c565e96a39cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc0ac3d936037e9b92567a6fcf20b26c25cb5d3f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966767"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705940"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, element (szablony Visual Studio)
-Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projektu lub elementu jest tworzone na podstawie szablonu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-<CustomParameter Name="name" Value="value">  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`Name`|Wymagana. Nazwa parametru. Format parametrów jest $*nazwa*$.|  
-|`Value`|Wymagana. Wartość zastąpienia dla parametru.|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak.  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Customparameters —](../extensibility/customparameters-element-visual-studio-templates.md)|Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablonów, gdy Kreator przeprowadza zamiany parametru.|  
-  
-## <a name="remarks"></a>Uwagi  
- Gdy szablon zawiera `CustomParameter` elementy, każde wystąpienie `Name` atrybutu zostaje zastąpiona opcją `Value` atrybutu w utworzone pliki projektu lub elementu.  
-  
-## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak korzystać z kilku niestandardowych parametrów w szablonie. Podczas tworzenia projektu lub elementu za pomocą następujących parametrów niestandardowych, wszystkie wystąpienia szablonu `$color1$` i `$color2$` w szablonie zostanie zastąpiona pliki `Red` i `Blue`, odpowiednio.  
-  
-```  
-<CustomParameters>  
-    <CustomParameter Name="$color1$" Value="Red"/>  
-    <CustomParameter Name="$color2$" Value="Blue "/>  
-</CustomParameters>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Customparameters — element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
- [Parametry szablonu](../ide/template-parameters.md)   
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+Zawiera nazwę niestandardowego parametru i wartości do użycia podczas projektu lub elementu jest tworzone na podstawie szablonu.
+
+## <a name="syntax"></a>Składnia
+
+```
+<CustomParameter Name="name" Value="value">
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|`Name`|Wymagana. Nazwa parametru. Format parametrów jest $*nazwa*$.|
+|`Value`|Wymagana. Wartość zastąpienia dla parametru.|
+
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak.
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Customparameters —](../extensibility/customparameters-element-visual-studio-templates.md)|Grupy niestandardowe parametry, które mają być przekazane do Kreatora szablonów, gdy Kreator przeprowadza zamiany parametru.|
+
+## <a name="remarks"></a>Uwagi
+ Gdy szablon zawiera `CustomParameter` elementy, każde wystąpienie `Name` atrybutu zostaje zastąpiona opcją `Value` atrybutu w utworzone pliki projektu lub elementu.
+
+## <a name="example"></a>Przykład
+ Poniższy przykład pokazuje, jak korzystać z kilku niestandardowych parametrów w szablonie. Podczas tworzenia projektu lub elementu za pomocą następujących parametrów niestandardowych, wszystkie wystąpienia szablonu `$color1$` i `$color2$` w szablonie zostanie zastąpiona pliki `Red` i `Blue`, odpowiednio.
+
+```
+<CustomParameters>
+    <CustomParameter Name="$color1$" Value="Red"/>
+    <CustomParameter Name="$color2$" Value="Blue "/>
+</CustomParameters>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Customparameters — element (szablony Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
+- [Parametry szablonu](../ide/template-parameters.md)
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

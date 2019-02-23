@@ -10,41 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49661e379c81bac935e2d2ae2279e32d548eb698
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 257fb9f3d044992c9199eeae68feea1c60063be2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929877"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681858"
 ---
 # <a name="how-to-update-the-status-bar"></a>Instrukcje: Aktualizacja paska stanu
-**Pasek stanu** pasek sterowania znajduje się w dolnej części wiele okien aplikacji, zawierający co najmniej jeden stan wierszy tekstu lub wskaźniki.  
-  
-## <a name="to-update-the-status-bar"></a>Aby zaktualizować paska stanu  
-  
-1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> dla każdego obiektu poszczególnych widoku (DocView), zapewniająca edytora, takie jak widok formularza i widoku kodu.  
-  
-2.  Kiedy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, zaktualizuj informacje w **pasek stanu** przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
-  
+**Pasek stanu** pasek sterowania znajduje się w dolnej części wiele okien aplikacji, zawierający co najmniej jeden stan wierszy tekstu lub wskaźniki.
+
+## <a name="to-update-the-status-bar"></a>Aby zaktualizować paska stanu
+
+1.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> dla każdego obiektu poszczególnych widoku (DocView), zapewniająca edytora, takie jak widok formularza i widoku kodu.
+
+2.  Kiedy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, zaktualizuj informacje w **pasek stanu** przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.
+
     > [!NOTE]
-    >  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> tylko kiedy okno dokumentu został początkowo uaktywniony. Pozostały okres czasu, który okna dokumentu jest aktywny, należy zaktualizować **pasek stanu** informacji jako stan zmiany edytora.  
-  
-## <a name="robust-programming"></a>Skuteczne programowanie  
- A **pasek stanu** zawiera cztery oddzielne pola:  
-  
-- Tekst statusu  
-  
-- Pasek postępu  
-  
-- Animowaną ikonę  
-  
-- Edytor informacji  
-  
-  Aby uzyskać więcej informacji, zobacz [paski stanu](/cpp/mfc/status-bars).  
-  
-  IDE automatycznie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metody usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> wdrożenia po uaktywnieniu okna dokumentu.  
-  
-  Implementujący pakietu VSPackage jest odpowiedzialny za aktualizowanie tekst statusu na pasku stanu. IDE resetuje ten ciąg na "GOTOWY", jeśli pole tekstowe stan jest ustawiony na pusty tekst ("") w czasie bezczynności.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Paski stanu](/cpp/mfc/status-bars)
+    >  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> tylko kiedy okno dokumentu został początkowo uaktywniony. Pozostały okres czasu, który okna dokumentu jest aktywny, należy zaktualizować **pasek stanu** informacji jako stan zmiany edytora.
+
+## <a name="robust-programming"></a>Skuteczne programowanie
+ A **pasek stanu** zawiera cztery oddzielne pola:
+
+- Tekst statusu
+
+- Pasek postępu
+
+- Animowaną ikonę
+
+- Edytor informacji
+
+  Aby uzyskać więcej informacji, zobacz [paski stanu](/cpp/mfc/status-bars).
+
+  IDE automatycznie wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metody usługi <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> wdrożenia po uaktywnieniu okna dokumentu.
+
+  Implementujący pakietu VSPackage jest odpowiedzialny za aktualizowanie tekst statusu na pasku stanu. IDE resetuje ten ciąg na "GOTOWY", jeśli pole tekstowe stan jest ustawiony na pusty tekst ("") w czasie bezczynności.
+
+## <a name="see-also"></a>Zobacz także
+- [Paski stanu](/cpp/mfc/status-bars)

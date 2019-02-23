@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936648"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687084"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 
@@ -27,7 +27,7 @@ Jeśli zawartość pakietu VSIX zawiera pakietu VSPackage, który dodaje polece�
 
 ## <a name="directory-structure"></a>Struktura katalogów
 
- Gdy użytkownik instaluje rozszerzenie **rozszerzenia i aktualizacje** sprawdza najwyższym poziomie pakietu VSIX do folderu, w których nazwa jest zgodna z ustawieniami regionalnymi programu Visual Studio na komputerze docelowym. Jeśli **rozszerzenia i aktualizacje** znajdzie *.vsixlangpack* pliku w folderze, zastępuje zlokalizowane wartości w tym pliku, aby uzyskać odpowiednie wartości w *.vsixmanifest*pliku. Te wartości są wyświetlane po zainstalowaniu rozszerzenia. Poniższy przykład pokazuje strukturę katalogu pakietu VSIX, który jest zlokalizowany w hiszpański (es-ES) i francuski (fr-FR).  
+ Gdy użytkownik instaluje rozszerzenie **rozszerzenia i aktualizacje** sprawdza najwyższym poziomie pakietu VSIX do folderu, w których nazwa jest zgodna z ustawieniami regionalnymi programu Visual Studio na komputerze docelowym. Jeśli **rozszerzenia i aktualizacje** znajdzie *.vsixlangpack* pliku w folderze, zastępuje zlokalizowane wartości w tym pliku, aby uzyskać odpowiednie wartości w *.vsixmanifest*pliku. Te wartości są wyświetlane po zainstalowaniu rozszerzenia. Poniższy przykład pokazuje strukturę katalogu pakietu VSIX, który jest zlokalizowany w hiszpański (es-ES) i francuski (fr-FR).
 
 ```text
 .
@@ -63,7 +63,7 @@ Poniższy kod przedstawia istotne części *Extension.vsixmanifest* pliku. Plik 
 
 ### <a name="code"></a>Kod
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Poniższy kod przedstawia istotne części *Extension.vsixmanifest* pliku. Plik 
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

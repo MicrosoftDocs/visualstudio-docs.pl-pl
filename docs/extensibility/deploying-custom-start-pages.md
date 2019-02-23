@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982770"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693012"
 ---
 # <a name="deploy-custom-start-pages"></a>Wdrażanie niestandardowych stron Start
 
@@ -43,13 +44,13 @@ Szablon projektu strona startowa można uzyskać za pomocą **Menedżera rozszer
 
 - Za pomocą ręcznego tworzenia *.vsix* pliku. Aby utworzyć *.vsix* pliku ręcznie:
 
-  1.  Tworzenie *extension.vsixmanifest* pliku i *[Content_Types] .xml* plik w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Tworzenie *extension.vsixmanifest* pliku i *[Content_Types] .xml* plik w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk **Wyślij do**, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy *zip* plik *Filename.vsix*, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
+   2. W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk **Wyślij do**, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy *zip* plik *Filename.vsix*, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
 
-  Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.
+Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.
 
-  Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie ścieżka rejestracji tak, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera *.pkgdef* pliku, który zawiera następujące informacje.
+Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie ścieżka rejestracji tak, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera *.pkgdef* pliku, który zawiera następujące informacje.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

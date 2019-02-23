@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28a880af0a5d691a57e32b22f9f7823cca45827d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317786"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700017"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Wylicza dodatkowe rodzajów pól, które [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt może zawierać. To wyliczenie rozszerza [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) wyliczenia.
@@ -42,14 +42,11 @@ public enum enum_FIELD_KIND_EX
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-FIELD_KIND_EX_NONE  
-Pole nie zawiera typie rozszerzonym.
+Pole FIELD_KIND_EX_NONE nie zawiera typie rozszerzonym.
 
-FIELD_TYPE_EX_METHODVAR  
-Pole zawiera zmienną metody.
+Pole FIELD_TYPE_EX_METHODVAR zawiera zmienną metody.
 
-FIELD_TYPE_EX_CLASSVAR  
-Pole zawiera zmienną klasy.
+Pole FIELD_TYPE_EX_CLASSVAR zawiera zmienną klasy.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: Sh.h
@@ -59,5 +56,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

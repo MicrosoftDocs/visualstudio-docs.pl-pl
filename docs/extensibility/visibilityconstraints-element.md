@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5781916cf50f254c4cd5cf86f5bcec3c6b38d325
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c567291f2b91e092afecb264c2b2e0ca1bfd108
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930176"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702580"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
-VisibilityConstraints, element określa statyczne widoczność grupy poleceń i paski narzędzi. Widoczność najpierw jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) bez załadowania pakietu VSPackage.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<VisibilityConstraints>  
-  <VisibilityConstraint>... </VisibilityConstraint>  
-  <VisibilityConstraint>... </VisibilityConstraint>  
-</VisibilityConstraint>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[VisibilityItem, element](../extensibility/visibilityitem-element.md)|Określa statyczne widoczności poleceń i paski narzędzi.|  
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Określa statyczne widoczność grupy poleceń i paski narzędzi.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które stanowią polecenia (na przykład, elementy menu, menu, paski narzędzi i pola kombi), udostępniające pakietu VSPackage środowiska IDE.|  
-  
-## <a name="example"></a>Przykład  
-  
-```xml  
-<VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
-    context="guidNotViewSourceMode"/>  
-</VisibilityConstraints>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [VisibilityItem, element](../extensibility/visibilityitem-element.md)   
- [Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+VisibilityConstraints, element określa statyczne widoczność grupy poleceń i paski narzędzi. Widoczność najpierw jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) bez załadowania pakietu VSPackage.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<VisibilityConstraints>
+  <VisibilityConstraint>... </VisibilityConstraint>
+  <VisibilityConstraint>... </VisibilityConstraint>
+</VisibilityConstraint>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[VisibilityItem, element](../extensibility/visibilityitem-element.md)|Określa statyczne widoczności poleceń i paski narzędzi.|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Określa statyczne widoczność grupy poleceń i paski narzędzi.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które stanowią polecenia (na przykład, elementy menu, menu, paski narzędzi i pola kombi), udostępniające pakietu VSPackage środowiska IDE.|
+
+## <a name="example"></a>Przykład
+
+```xml
+<VisibilityConstraints>
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+    context="guidNotViewSourceMode"/>
+</VisibilityConstraints>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [VisibilityItem, element](../extensibility/visibilityitem-element.md)
+- [Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_RETVAL | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_RETVAL
 helpviewer_keywords:
@@ -12,60 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89e10bac9db8782c117e114b02e4ff73a3693518
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006102"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707812"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
-Ta struktura reprezentuje wartość zwracana z metody lub funkcji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-typedef struct _tagMETADATA_ADDRESS_RETVAL {  
-   _mdToken tokMethod;  
-   DWORD    dwCorType;  
-   DWORD    dwSigSize;  
-   BYTE     rgSig[10];  
-} METADATA_ADDRESS_RETVAL;  
-```  
-  
-```csharp  
-public struct METADATA_ADDRESS_RETVAL {  
-   public int    tokMethod;  
-   public uint   dwCorType;  
-   public uint   dwSigSize;  
-   public byte[] rgSig;  
-}  
-```  
-  
-## <a name="terms"></a>Warunki  
- tokMethod  
- Metody to wartość zwracana jest przeznaczony.  
-  
- dwCorType  
- Podstawowy typ wartości zwracanej. Jest to wartość z zakresu od `CorElementType` wyliczenie zdefiniowane w [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] pliku sekcję corhdr.h zestawu SDK.  
-  
- dwSigSize  
- Rozmiar podpisu zwracanej wartości (przechowywanej w `rgSig`).  
-  
- rgSig  
- Tablica bajtów tworzących podpis wartość zwracaną.  
-  
-## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_RETVAL` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
-  
-## <a name="requirements"></a>Wymagania  
- Nagłówek: sh.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+Ta struktura reprezentuje wartość zwracana z metody lub funkcji.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+typedef struct _tagMETADATA_ADDRESS_RETVAL {
+   _mdToken tokMethod;
+   DWORD    dwCorType;
+   DWORD    dwSigSize;
+   BYTE     rgSig[10];
+} METADATA_ADDRESS_RETVAL;
+```
+
+```csharp
+public struct METADATA_ADDRESS_RETVAL {
+   public int    tokMethod;
+   public uint   dwCorType;
+   public uint   dwSigSize;
+   public byte[] rgSig;
+}
+```
+
+## <a name="terms"></a>Warunki
+ tokMethod identyfikator jest to wartość zwracana dla metody.
+
+ dwCorType podstawowy typ zwracanej wartości. Jest to wartość z zakresu od `CorElementType` wyliczenie zdefiniowane w [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] pliku sekcję corhdr.h zestawu SDK.
+
+ dwSigSize rozmiar podpisu zwracanej wartości (przechowywanej w `rgSig`).
+
+ rgSig tablicę bajtów tworzących podpis wartość zwracaną.
+
+## <a name="remarks"></a>Uwagi
+ Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_RETVAL` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).
+
+## <a name="requirements"></a>Wymagania
+ Nagłówek: sh.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

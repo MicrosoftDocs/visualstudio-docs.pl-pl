@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012498"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693454"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Pliki zrzutu debugera programu Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a> A *plik zrzutu* jest migawką, który przedstawia proces, który był wykonywany i modułów, które zostały załadowane dla aplikacji w punkcie w czasie. Zrzutu z informacjami o stercie także migawkę pamięci aplikacji w tym momencie. 
+<a name="BKMK_What_is_a_dump_file_"></a> A *plik zrzutu* jest migawką, który przedstawia proces, który był wykonywany i modułów, które zostały załadowane dla aplikacji w punkcie w czasie. Zrzutu z informacjami o stercie także migawkę pamięci aplikacji w tym momencie.
 
 Otwieranie pliku zrzutu ze stertą w programie Visual Studio jest podobny do zatrzymywanie w punkcie przerwania w trakcie sesji debugowania. Mimo że nie można kontynuować wykonywania, można sprawdzić stosy, wątki i wartości zmiennych aplikacji w momencie zrzutu.
 
-Zrzuty są głównie używane do debugowania problemów z komputerów, które deweloperzy nie mają dostępu do. Można użyć pliku zrzutu z komputera klienta, gdy nie można odtworzyć awarii lub zawieszeniu na własnym komputerze. Testerom tworzyć również zrzuty, aby zapisać awarii lub zawieszeniu dane mają być używane do dalszego testowania. 
+Zrzuty są głównie używane do debugowania problemów z komputerów, które deweloperzy nie mają dostępu do. Można użyć pliku zrzutu z komputera klienta, gdy nie można odtworzyć awarii lub zawieszeniu na własnym komputerze. Testerom tworzyć również zrzuty, aby zapisać awarii lub zawieszeniu dane mają być używane do dalszego testowania.
 
 Debuger programu Visual Studio może zapisywać pliki zrzutu dla kodu zarządzanego lub natywnego. Można go debugować pliki zrzutu utworzone przez program Visual Studio lub przez inne aplikacje, które zapisują pliki w *minizrzutu* formatu.
 
@@ -55,23 +55,23 @@ Debuger programu Visual Studio może zapisywać pliki zrzutu dla kodu zarządzan
 
 Pliki zrzutu może lub nie może mieć informacje o stercie.
 
--   **Pliki zrzutu ze stertami** zawierają migawkę pamięci aplikacji, w tym wartości zmiennych, w momencie zrzutu. Program Visual Studio zapisuje także pliki binarne załadowanych modułów macierzystych w pliku zrzutu ze stertą, co znacznie ułatwia debugowanie. Program Visual Studio załadować symbole z pliku zrzutu ze stertą, nawet wtedy, gdy nie można odnaleźć binarnych aplikacji. 
+-   **Pliki zrzutu ze stertami** zawierają migawkę pamięci aplikacji, w tym wartości zmiennych, w momencie zrzutu. Program Visual Studio zapisuje także pliki binarne załadowanych modułów macierzystych w pliku zrzutu ze stertą, co znacznie ułatwia debugowanie. Program Visual Studio załadować symbole z pliku zrzutu ze stertą, nawet wtedy, gdy nie można odnaleźć binarnych aplikacji.
 
 -   **Zrzuć pliki bez stert** są znacznie mniejsze niż przy użyciu sterty, ale debuger musi załadować pliki binarne aplikacji, aby znaleźć informacje o symbolach. Załadowane dane binarne muszą dokładnie odpowiadać te działania podczas tworzenia zrzutu. Pliki zrzutu bez stert zapisać wartości tylko w zmiennych stosu.
 
 ##  <a name="BKMK_Create_a_dump_file"></a> Tworzenie pliku zrzutu
 
-Podczas debugowania procesu w programie Visual Studio, można zapisać zrzutu po zatrzymaniu debugera w punkt przerwania lub wyjątku. 
+Podczas debugowania procesu w programie Visual Studio, można zapisać zrzutu po zatrzymaniu debugera w punkt przerwania lub wyjątku.
 
 Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md) włączone, można dołączyć debuger programu Visual Studio do awarii procesu poza programem Visual Studio i następnie zapisać plik zrzutu z debugera. Zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **Aby zapisać plik zrzutu:**
 
-1. Po zatrzymaniu w błąd lub punkt przerwania podczas debugowania, wybierz **debugowania** > **Zapisz zrzut jako**. 
+1. Po zatrzymaniu w błąd lub punkt przerwania podczas debugowania, wybierz **debugowania** > **Zapisz zrzut jako**.
 
 1. W **Zapisz zrzut jako** dialogowego **Zapisz jako typ**, wybierz opcję **minizrzutu** lub **minizrzutu ze stertą** (ustawienie domyślne).
 
-1. Przejdź do ścieżki i wybierz nazwę dla pliku zrzutu, a następnie wybierz **Zapisz**. 
+1. Przejdź do ścieżki i wybierz nazwę dla pliku zrzutu, a następnie wybierz **Zapisz**.
 
 >[!NOTE]
 >Można tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) uzyskać informacji na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
@@ -99,7 +99,7 @@ Aby użyć funkcji w pliku zrzutu do debugowania programu Visual Studio wymaga:
 - *.Exe* i *.pdb* pliki, które dokładnie odpowiadać wersji i kompilacji plików podczas zrzutu tworzenia.
 - Pliki źródłowe dla odpowiednich modułów. Możesz użyć deasemblacji modułów, jeśli nie możesz znaleźć plików źródłowych.
 
-Jeśli zrzut zawiera dane sterty, Visual Studio może poradzić sobie z brakującymi plikami binarnymi dla niektórych modułów, ale musi on mieć pliki binarne dla wystarczającej liczby modułów generować prawidłowe stosy wywołań. 
+Jeśli zrzut zawiera dane sterty, Visual Studio może poradzić sobie z brakującymi plikami binarnymi dla niektórych modułów, ale musi on mieć pliki binarne dla wystarczającej liczby modułów generować prawidłowe stosy wywołań.
 
 ### <a name="search-paths-for-exe-files"></a>Przeszukuj ścieżki pod kątem plików .exe
 

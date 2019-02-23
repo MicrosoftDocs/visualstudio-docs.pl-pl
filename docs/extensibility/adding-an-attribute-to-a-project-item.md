@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3cf11a6ca7972a98b840ac514a4dff01d994778
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6992790be2a447c1539024d21d751041d43da2f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318267"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710074"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Dodawanie atrybutu do elementu projektu
 Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pobieranie i ustawianie wartości atrybutów elementu projektu. SetItemAttribute tworzy atrybut, jeśli go jeszcze nie istnieje, dodając go do metadanych elementu projektu.
@@ -44,4 +44,4 @@ Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetIte
     ```
 
 ## <a name="see-also"></a>Zobacz także
-[Utrwalanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [Utrwalanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027389"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683600"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
 
 Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
-## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
@@ -110,7 +110,7 @@ Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i
 
     ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Datatip pokazuje bieżącą wartość `c2` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu. 
+    Datatip pokazuje bieżącą wartość `c2` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu.
 
 2. Rozwiń etykietka danych, aby wyświetlić bieżące wartości właściwości `c2` obiektu.
 

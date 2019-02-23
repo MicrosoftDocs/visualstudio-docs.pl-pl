@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412997"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686301"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Określa, jakie informacje należy pobrać o obiektu odwołania debugowania.
@@ -54,32 +54,23 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-DEBUGREF_INFO_NAME  
-Inicjowanie bądź użyj `bstrName` pole w strukturze.
+DEBUGREF_INFO_NAME zainicjować bądź użyj `bstrName` pole w strukturze.
 
-DEBUGREF_INFO_TYPE  
-Inicjowanie bądź użyj `bstrType` pole w strukturze.
+DEBUGREF_INFO_TYPE zainicjować bądź użyj `bstrType` pole w strukturze.
 
-DEBUGREF_INFO_VALUE  
-Inicjowanie bądź użyj `bstrValue` pole w strukturze.
+DEBUGREF_INFO_VALUE zainicjować bądź użyj `bstrValue` pole w strukturze.
 
-DEBUGREF_INFO_ATTRIB  
-Inicjowanie bądź użyj `dwAttrib` pole w strukturze.
+DEBUGREF_INFO_ATTRIB zainicjować bądź użyj `dwAttrib` pole w strukturze.
 
-DEBUGREF_INFO_REFTYPE  
-Inicjowanie bądź użyj `dwRefType` pole w strukturze.
+DEBUGREF_INFO_REFTYPE zainicjować bądź użyj `dwRefType` pole w strukturze.
 
-DEBUGREF_INFO_REF  
-Inicjowanie bądź użyj `pReference` pole w strukturze.
+DEBUGREF_INFO_REF zainicjować bądź użyj `pReference` pole w strukturze.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND  
-Pole wartości powinien zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.
+DEBUGREF_INFO_VALUE_AUTOEXPAND pole wartości powinien zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.
 
-DEBUGREF_INFO_NONE  
-Wskazuje, że nie flagi są ustawione.
+DEBUGREF_INFO_NONE wskazuje, że ustawiono bez flag.
 
-DEBUGREF_INFO_ALL  
-Określa maskę flag.
+DEBUGREF_INFO_ALL wskazuje maskę flag.
 
 ## <a name="remarks"></a>Uwagi
 Te flagi są przekazywane do [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metod, aby określić które pola [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, które mają zostać zainicjowane.
@@ -96,7 +87,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

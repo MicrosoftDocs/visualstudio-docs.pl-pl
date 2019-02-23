@@ -1,7 +1,7 @@
 ---
 title: PARSEFLAGS | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PARSEFLAGS
 helpviewer_keywords:
@@ -12,56 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6b3641a33a19cef01f9a6a4a9a833643169f25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006570"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695716"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Określa, jak można przeanalizować wyrażenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-enum enum_PARSEFLAGS {   
-   PARSE_EXPRESSION            = 0x0001,  
-   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
-   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
-};  
-typedef DWORD PARSEFLAGS;  
-```  
-  
-```csharp  
-public enum enum_PARSEFLAGS {   
-   PARSE_EXPRESSION            = 0x0001,  
-   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
-   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- PARSE_EXPRESSION  
- Wskazuje, czy wyrażenie nie jest instrukcja.  
-  
- PARSE_FUNCTION_AS_ADDRESS  
- Wskazuje, czy wyrażenie jest analizowany (i później oceniane) jako adres.  
-  
- PARSE_DESIGN_TIME_EXPR_EVAL  
- Wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).  
-  
-## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+Określa, jak można przeanalizować wyrażenia.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+enum enum_PARSEFLAGS { 
+   PARSE_EXPRESSION            = 0x0001,
+   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,
+   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000
+};
+typedef DWORD PARSEFLAGS;
+```
+
+```csharp
+public enum enum_PARSEFLAGS { 
+   PARSE_EXPRESSION            = 0x0001,
+   PARSE_FUNCTION_AS_ADDRESS   = 0x0002,
+   PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+ PARSE_EXPRESSION wskazuje, czy wyrażenie nie jest instrukcja.
+
+ PARSE_FUNCTION_AS_ADDRESS wskazuje, że wyrażenie jest analizowany (i później oceniane) jako adres.
+
+ PARSE_DESIGN_TIME_EXPR_EVAL wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).
+
+## <a name="remarks"></a>Uwagi
+ Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
+- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

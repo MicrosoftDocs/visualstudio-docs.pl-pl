@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1efe8e9f09a76cc32b7a6d188d980c53e14fd34a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3911ad0eee59a8b6c34ecaef73df3b5d7eeff88
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966793"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687995"
 ---
 # <a name="maction-field"></a>pole m_action
-Delegat, który reprezentuje kod do wykonania w <xref:System.Threading.Tasks.Task> obiektu.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Zestaw:** mscorlib (w *mscorlib.dll*)  
-  
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```csharp  
-.field assembly object m_action  
-```  
-  
-## <a name="remarks"></a>Uwagi  
- Jest to `action` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)
+Delegat, który reprezentuje kod do wykonania w <xref:System.Threading.Tasks.Task> obiektu.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Zestaw:** mscorlib (w *mscorlib.dll*)
+
+ Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+
+## <a name="syntax"></a>Składnia
+
+```csharp
+.field assembly object m_action
+```
+
+## <a name="remarks"></a>Uwagi
+ Jest to `action` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora.
+
+## <a name="see-also"></a>Zobacz także
+- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)

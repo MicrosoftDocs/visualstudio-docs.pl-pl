@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetSize | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::GetSize
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9db83ed17b27090efef3e1d892d28f0078ce6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988847"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706382"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-Pobiera rozmiar w instrukcjach ten strumień dezasemblacji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetSize(   
-   UINT64* pnSize  
-);  
-```  
-  
-```csharp  
-int GetSize(   
-   out ulong pnSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pnSize`  
- [out] Zwraca rozmiar w instrukcjach.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Wartość zwracana z tej metody może służyć do przydzielania tablicy [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktur, które są następnie przekazywane do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+Pobiera rozmiar w instrukcjach ten strumień dezasemblacji.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetSize( 
+   UINT64* pnSize
+);
+```
+
+```csharp
+int GetSize( 
+   out ulong pnSize
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pnSize`
+
+ [out] Zwraca rozmiar w instrukcjach.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Wartość zwracana z tej metody może służyć do przydzielania tablicy [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktur, które są następnie przekazywane do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

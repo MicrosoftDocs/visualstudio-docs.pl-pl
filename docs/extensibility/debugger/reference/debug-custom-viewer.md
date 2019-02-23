@@ -1,7 +1,7 @@
 ---
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315836"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680459"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 Struktura, która identyfikuje podglądu niestandardowego lub typu wizualizatora.
@@ -47,23 +47,17 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-dwID  
-Identyfikator, aby odróżnić wiele osób przeglądających lub wizualizatorów implementowane za pomocą jednej `GUID`.
+dwID identyfikator do rozróżnienia wielu osób przeglądających lub wizualizatorów implementowane za pomocą jednej `GUID`.
 
-bstrMenuName  
-Tekst, który będzie wyświetlany w menu rozwijanym.
+bstrMenuName tekst, który będzie wyświetlany w menu rozwijanym.
 
-bstrDescription  
-Opis podglądu niestandardowego lub Wizualizator typów (musi być wartością null Jeśli nie są używane).
+Opis bstrDescription A Przeglądarka niestandardowa lub Wizualizator typów (musi być wartością null Jeśli nie są używane).
 
-guidLang  
-Język dostarczanie Ewaluator wyrażeń.
+guidLang języka dostarczanie Ewaluator wyrażeń.
 
-guidVendor  
-Dostawca dostarczanie Ewaluator wyrażeń.
+guidVendor dostawcy dostarczanie Ewaluator wyrażeń.
 
-bstrMetric  
-Metryki w ramach której przeglądarka niestandardowa lub typu wizualizatora `CLSID` są przechowywane.
+bstrMetric metryki w ramach której przeglądarka niestandardowa lub typu wizualizatora `CLSID` są przechowywane.
 
 ## <a name="remarks"></a>Uwagi
 Lista ta struktura jest zwracany przez wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) — metoda (a w konsekwencji, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metody).
@@ -76,6 +70,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

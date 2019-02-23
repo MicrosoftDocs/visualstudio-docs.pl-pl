@@ -27,34 +27,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018270"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699057"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów
-Podczas próby debugowania aplikacji sieci Web, mogą wystąpić następujące błędy.  
-  
--   [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)  
-  
--   [Błąd: Witryna korzysta z adresu IP](../debugger/error-site-uses-ip-address.md)  
-  
--   [Błąd: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
-  
--   [Błąd: Platforma ASP.NET nie jest zainstalowana](../debugger/error-aspnet-not-installed.md)  
-  
--   [Błąd: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
-  
--   [Błąd: Serwer internetowy nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)  
-  
--   [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
-  
--   [Błąd: Przekroczono limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)  
-  
--   [Błąd: Nie można rozpocząć debugowania na serwerze internetowym](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
-  
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Debugowanie aplikacji internetowych i skryptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+Podczas próby debugowania aplikacji sieci Web, mogą wystąpić następujące błędy.
+
+-   [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)
+
+-   [Błąd: Witryna korzysta z adresu IP](../debugger/error-site-uses-ip-address.md)
+
+-   [Błąd: Sprawdzenie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+
+-   [Błąd: Platforma ASP.NET nie jest zainstalowana](../debugger/error-aspnet-not-installed.md)
+
+-   [Błąd: Debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+
+-   [Błąd: Serwer internetowy nie jest poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)
+
+-   [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+
+-   [Błąd: Przekroczono limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)
+
+-   [Błąd: Nie można rozpocząć debugowania na serwerze internetowym](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Debugowanie aplikacji internetowych i skryptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

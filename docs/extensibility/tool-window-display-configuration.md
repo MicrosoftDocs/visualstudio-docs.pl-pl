@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973411"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707045"
 ---
 # <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
-Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)  
+Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>Wyświetl informacje o oknie  
- Konfiguracja podstawowa ekranu okna narzędzi są przechowywane w sześciu wartości opcjonalne:  
+## <a name="window-display-information"></a>Wyświetl informacje o oknie
+ Konfiguracja podstawowa ekranu okna narzędzi są przechowywane w sześciu wartości opcjonalne:
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | Nazwa | Typ | Dane | Opis |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | Orientacja | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej" | Zobacz sekcję uwagi poniżej. |
 | DontForceCreate | REG_DWORD | 0 lub 1 | Gdy ten wpis jest obecny, a jego wartość nie wynosi zero, okno jest załadowany, ale nie natychmiast wyświetlone. |
 
-### <a name="comments"></a>Komentarze  
- Wpis orientacji definiuje położenie, gdy okno narzędzia dokowane po dwukrotnym kliknięciu paska tytułu. Pozycja jest określana względem okna określony we wpisie okna. Jeśli wpis stylu jest ustawiony na "Połączone", wpis orientacji może być "Left", "Right", "Top" lub "Dolnej". Jeśli wpis styl "Kartach", orientacja wpis może być "Left" lub "Kliknij prawym przyciskiem myszy" i określa, gdzie dodaniu karty. W przypadku wpisu styl "Float", najpierw liczby zmiennoprzecinkowe okna narzędzia. Po dwukrotnym kliknięciu na pasku tytułu Zastosuj wpisy orientacji i okna, a okno używa stylu "Kartach". Okna narzędzi nie może być zadokowane, jeśli wpis stylu jest "AlwaysFloat". Jeśli wpis stylu jest "MDI", okna narzędzi jest połączony obszar MDI i jest ignorowany wpis okna.  
+### <a name="comments"></a>Komentarze
+ Wpis orientacji definiuje położenie, gdy okno narzędzia dokowane po dwukrotnym kliknięciu paska tytułu. Pozycja jest określana względem okna określony we wpisie okna. Jeśli wpis stylu jest ustawiony na "Połączone", wpis orientacji może być "Left", "Right", "Top" lub "Dolnej". Jeśli wpis styl "Kartach", orientacja wpis może być "Left" lub "Kliknij prawym przyciskiem myszy" i określa, gdzie dodaniu karty. W przypadku wpisu styl "Float", najpierw liczby zmiennoprzecinkowe okna narzędzia. Po dwukrotnym kliknięciu na pasku tytułu Zastosuj wpisy orientacji i okna, a okno używa stylu "Kartach". Okna narzędzi nie może być zadokowane, jeśli wpis stylu jest "AlwaysFloat". Jeśli wpis stylu jest "MDI", okna narzędzi jest połączony obszar MDI i jest ignorowany wpis okna.
 
-### <a name="example"></a>Przykład  
+### <a name="example"></a>Przykład
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>Widoczność okna narzędzi  
- Wartości w podkluczu widoczność Opcjonalnie określ ustawienia widoczność okna narzędzi. Nazwy wartości są używane do przechowywania identyfikatorów GUID poleceń, które wymagają widoczność okna. Jeśli polecenie jest wykonywane, IDE gwarantuje, że okno narzędzia jest utworzony i widoczne.  
+## <a name="tool-window-visibility"></a>Widoczność okna narzędzi
+ Wartości w podkluczu widoczność Opcjonalnie określ ustawienia widoczność okna narzędzi. Nazwy wartości są używane do przechowywania identyfikatorów GUID poleceń, które wymagają widoczność okna. Jeśli polecenie jest wykonywane, IDE gwarantuje, że okno narzędzia jest utworzony i widoczne.
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|Nazwa|Typ|Dane|Opis|  
-|----------|----------|----------|-----------------|  
-|(Domyślnie)|REG_SZ|Brak|Pozostaw puste.|  
-|*\<GUID>*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
+|Nazwa|Typ|Dane|Opis|
+|----------|----------|----------|-----------------|
+|(Domyślnie)|REG_SZ|Brak|Pozostaw puste.|
+|*\<GUID>*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|
 
-### <a name="example"></a>Przykład  
+### <a name="example"></a>Przykład
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>Zobacz też  
- [Pakiety VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>Zobacz też
+- [Pakiety VSPackage](../extensibility/internals/vspackages.md)

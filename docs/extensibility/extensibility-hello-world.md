@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688345"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Witaj Świecie
 
@@ -50,7 +50,11 @@ Krok 2. Z **szablony** menu, kliknij przycisk **Visual C#**, kliknij przycisk **
 
 Powinna zostać wyświetlona na stronie wprowadzenie i kilka przykładowych zasobów.
 
+::: moniker range="vs-2017"
+
 Jeśli potrzebujesz opuścić ten samouczek i wrócić do niego, można znaleźć nowego projektu HelloWorld na **strona startowa** w **ostatnie** sekcji.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Dodaj polecenie niestandardowe
 

@@ -14,47 +14,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30cab8602690df47a6fba18c3bc738a53959f036
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946129"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698875"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Błąd: Proces roboczy witryny internetowej został zakończony przez usługi IIS
-Debuger zatrzymana wykonywanie kodu na witrynie sieci Web. Spowodowało to Internet Information Services (IIS) aby założył, że proces roboczy przestał odpowiadać. W związku z tym usługi IIS zakończone procesu roboczego.  
-  
- Aby kontynuować debugowanie, należy skonfigurować serwer IIS zezwala na proces roboczy kontynuować. Nie ma tego komunikatu o błędzie z wersjami usług IIS, które są starsze niż IIS 7.  
-  
-### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Aby skonfigurować usługi IIS 7, aby zezwolić na proces roboczy kontynuować  
-  
-1. Otwórz **narzędzia administracyjne** okna.  
-  
-   1.  Kliknij przycisk **Start**, a następnie wybierz **Panelu sterowania**.  
-  
-   2.  W **Panelu sterowania**, wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.  
-  
-2. W **narzędzia administracyjne** okna, kliknij dwukrotnie **Internet Information Services (IIS) Manager**.  
-  
-    Zostanie otwarty Menedżer usług IIS.  
-  
-3. W **połączeń** okienku rozwiń \<nazwa komputera > węzła, jeśli to konieczne.  
-  
-4. W obszarze \<nazwa komputera > węzła, kliknij przycisk **pul aplikacji**.  
-  
-5. W **pul aplikacji** listy, kliknij prawym przyciskiem myszy nazwę puli aplikacji działa w, a następnie kliknij **Zaawansowane ustawienia**.  
-  
-6. W **Zaawansowane ustawienia** dialogowym zlokalizuj **Model procesu** sekcji, a następnie wykonaj jedną z następujących czynności:  
-  
-   - Ustaw **pingowanie włączone** do **False**.  
-  
-   - Ustaw **maksymalny czas odpowiedzi polecenia Ping** wartość, która jest większa niż 90 sekund.  
-  
-     Ustawienie **pingowanie włączone** do **False** zatrzymuje IIS sprawdzanie, czy Proces roboczy jest nadal uruchomione i utrzymuje aktywność procesu roboczego aż do zatrzymania usługi debugowanego procesu. Ustawienie **maksymalny czas odpowiedzi polecenia Ping** na dużą wartość umożliwia usług IIS kontynuować monitorowanie procesu roboczego.  
-  
-7. Kliknij przycisk **OK** zamknąć **Zaawansowane ustawienia** okno dialogowe.  
-  
-8. Zamknij Menedżera usług IIS i **narzędzia administracyjne** okna.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)
+Debuger zatrzymana wykonywanie kodu na witrynie sieci Web. Spowodowało to Internet Information Services (IIS) aby założył, że proces roboczy przestał odpowiadać. W związku z tym usługi IIS zakończone procesu roboczego.
+
+ Aby kontynuować debugowanie, należy skonfigurować serwer IIS zezwala na proces roboczy kontynuować. Nie ma tego komunikatu o błędzie z wersjami usług IIS, które są starsze niż IIS 7.
+
+### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Aby skonfigurować usługi IIS 7, aby zezwolić na proces roboczy kontynuować
+
+1. Otwórz **narzędzia administracyjne** okna.
+
+   1.  Kliknij przycisk **Start**, a następnie wybierz **Panelu sterowania**.
+
+   2.  W **Panelu sterowania**, wybierz **Przełącz na widok klasyczny**, jeśli to konieczne, a następnie kliknij dwukrotnie **narzędzia administracyjne**.
+
+2. W **narzędzia administracyjne** okna, kliknij dwukrotnie **Internet Information Services (IIS) Manager**.
+
+    Zostanie otwarty Menedżer usług IIS.
+
+3. W **połączeń** okienku rozwiń \<nazwa komputera > węzła, jeśli to konieczne.
+
+4. W obszarze \<nazwa komputera > węzła, kliknij przycisk **pul aplikacji**.
+
+5. W **pul aplikacji** listy, kliknij prawym przyciskiem myszy nazwę puli aplikacji działa w, a następnie kliknij **Zaawansowane ustawienia**.
+
+6. W **Zaawansowane ustawienia** dialogowym zlokalizuj **Model procesu** sekcji, a następnie wykonaj jedną z następujących czynności:
+
+   - Ustaw **pingowanie włączone** do **False**.
+
+   - Ustaw **maksymalny czas odpowiedzi polecenia Ping** wartość, która jest większa niż 90 sekund.
+
+     Ustawienie **pingowanie włączone** do **False** zatrzymuje IIS sprawdzanie, czy Proces roboczy jest nadal uruchomione i utrzymuje aktywność procesu roboczego aż do zatrzymania usługi debugowanego procesu. Ustawienie **maksymalny czas odpowiedzi polecenia Ping** na dużą wartość umożliwia usług IIS kontynuować monitorowanie procesu roboczego.
+
+7. Kliknij przycisk **OK** zamknąć **Zaawansowane ustawienia** okno dialogowe.
+
+8. Zamknij Menedżera usług IIS i **narzędzia administracyjne** okna.
+
+## <a name="see-also"></a>Zobacz też
+- [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

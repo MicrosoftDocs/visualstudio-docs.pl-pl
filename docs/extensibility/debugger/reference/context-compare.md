@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412841"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689177"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Określa kryteria do porównywania dwóch kontekstów pamięci.
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-CONTEXT_EQUAL  
-Znajdź pierwszy kontekstu pamięci na liście, która jest równa docelowej kontekstu pamięci.
+CONTEXT_EQUAL odszukać pierwszy kontekst pamięci na liście, która jest równa docelowej kontekstu pamięci.
 
-CONTEXT_LESS_THAN  
-Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż docelowy kontekstu pamięci.
+CONTEXT_LESS_THAN odszukać pierwszy kontekst pamięci na liście, która jest mniejsza niż docelowy kontekstu pamięci.
 
-CONTEXT_GREATER_THAN  
-Znajdź pierwszy kontekstu pamięci na liście, która jest większa niż docelowy kontekstu pamięci.
+CONTEXT_GREATER_THAN odszukać pierwszy kontekst pamięci na liście, która jest większa niż docelowy kontekstu pamięci.
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż lub równa docelowej kontekstu pamięci.
+CONTEXT_LESS_THAN_OR_EQUAL odszukać pierwszy kontekst pamięci na liście, która jest mniejsza niż docelowy kontekstu pamięci.
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-Znajdź pierwszy kontekstu pamięci na liście, która jest większa lub równa docelowej kontekstu pamięci.
+CONTEXT_GREATER_THAN_OR_EQUAL odszukać pierwszy kontekst pamięci na liście, która jest większa lub równa docelowej kontekstu pamięci.
 
-CONTEXT_SAME_SCOPE  
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w taki sam zakres jak kontekstu pamięci docelowego.
+CONTEXT_SAME_SCOPE odszukać pierwszy kontekst pamięci na liście znajduje się w taki sam zakres jak kontekstu pamięci docelowego.
 
-CONTEXT_SAME_FUNCTION  
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w taką samą funkcję jak zakres docelowy w pamięci.
+CONTEXT_SAME_FUNCTION odszukać pierwszy kontekst pamięci na liście znajduje się w taką samą funkcję jak zakres docelowy w pamięci.
 
-CONTEXT_SAME_MODULE  
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym modułem kontekstu pamięci docelowego.
+CONTEXT_SAME_MODULE odszukać pierwszy kontekst pamięci na liście znajduje się w tym samym modułem kontekstu pamięci docelowego.
 
-CONTEXT_SAME_PROCESS  
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym procesie co kontekstu pamięci docelowego.
+CONTEXT_SAME_PROCESS odszukać pierwszy kontekst pamięci na liście znajduje się w tym samym procesie co kontekstu pamięci docelowego.
 
 ## <a name="remarks"></a>Uwagi
 Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metody.
@@ -94,5 +85,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

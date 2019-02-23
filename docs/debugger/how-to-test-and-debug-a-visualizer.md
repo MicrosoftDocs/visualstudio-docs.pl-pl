@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227135"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700448"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Instrukcje: Testowanie i debugowanie Wizualizera
 Po napisaniu wizualizatora, należy do debugowania i testowania.
@@ -54,6 +54,6 @@ Jednym ze sposobów, aby przetestować Wizualizator jest zamontowany w programie
     Aby uzyskać pełniejszy przykład, zobacz [instruktażu: Pisanie wizualizatora w C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Zobacz też
-[Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
-[Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+- [Przewodnik: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
+- [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

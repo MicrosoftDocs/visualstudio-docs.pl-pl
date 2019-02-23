@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a365ac32ad59d01ceff7bc29cbb223a8fd32e5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002729"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684003"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Dostosowywanie formantów w edytorze i Mmenus przy użyciu starszej wersji interfejsu API
-Usługa języka lub widoku tekstu można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji zawierają szczegółowe instrukcje dotyczące korzystania z tych funkcji.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Listę rozwijaną paska](../extensibility/drop-down-bar.md)  
- W tym artykule opisano pasek listy rozwijanej i zawiera instrukcje dotyczące jego wykonania.  
-  
- [Obsługa poleceń](../extensibility/command-handling.md)  
- Obsługa w edytorach polecenie details.  
-  
- [Menu kontekstowe](../extensibility/context-menus.md)  
- W tym artykule opisano menu kontekstowe edytora.  
-  
- [Instrukcje: Aktualizacja paska stanu](../extensibility/how-to-update-the-status-bar.md)  
- Zawiera instrukcje dotyczące aktualizowania **pasek stanu**.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Edytor i język rozszerzenia usługi](../extensibility/editor-and-language-service-extensions.md)  
- Przedstawia różne rodzaje edytorach, których można używać w programie Visual Studio.
+Usługa języka lub widoku tekstu można kontrolować menu kontekstowe i formantów w edytorze. Strony w tej sekcji zawierają szczegółowe instrukcje dotyczące korzystania z tych funkcji.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Listę rozwijaną paska](../extensibility/drop-down-bar.md) opisuje pasek listy rozwijanej i zawiera instrukcje dotyczące jego wykonania.
+
+- [Obsługa polecenia](../extensibility/command-handling.md) obsługi w edytorach poleceń szczegółowe informacje.
+
+- [Menu kontekstowe](../extensibility/context-menus.md) opisuje menu kontekstowe edytora.
+
+- [Instrukcje: Na pasku stanu aktualizacji](../extensibility/how-to-update-the-status-bar.md) instrukcje na temat aktualizowania **pasek stanu**.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Edytor i język rozszerzenia usługi](../extensibility/editor-and-language-service-extensions.md) wprowadza różne rodzaje edytory, można użyć w programie Visual Studio.

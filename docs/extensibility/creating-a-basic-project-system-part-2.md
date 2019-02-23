@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318488"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681312"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak tworzenie systemu podstawowego projektu. W tym przewodniku opiera się na systemu podstawowego projektu, dodając szablonu programu Visual Studio, strony właściwości i inne funkcje. Pierwszym przewodniku należy wykonać przed rozpoczęciem korzystania z niej.
@@ -40,7 +40,7 @@ Ten przewodnik omawia sposób wykonywania tych zadań:
 > Kroki opisane w tym przewodniku są oparte na projekcie języka C#. Jednak z wyjątkiem określonych kryteriów, takich jak rozszerzeń nazw plików i kodu, te same czynności można użyć w projekcie języka Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Tworzenie szablonu programu Visual Studio
-[Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazuje, jak utworzyć szablon podstawowy projekt i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon przy użyciu programu Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut, który zapisuje pełną ścieżkę *\\Templates\Projects\SimpleProject\\* folder w systemie rejestr.
+- [Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazuje, jak utworzyć szablon podstawowy projekt i dodać go do systemu projektu. Pokazano również, jak zarejestrować ten szablon przy użyciu programu Visual Studio przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atrybut, który zapisuje pełną ścieżkę *\\Templates\Projects\SimpleProject\\* folder w systemie rejestr.
 
 Przy użyciu szablonu programu Visual Studio (*.vstemplate* pliku) zamiast szablonu podstawowego projektu, można kontrolować, jak szablon jest wyświetlany w **nowy projekt** okno dialogowe i jak są parametry szablonu zastąpione. A *.vstemplate* plik jest plikiem XML, który opisuje, jak mają być włączone, gdy projekt jest tworzony przy użyciu szablonu projektu systemu plików źródłowych. Sam system projekt jest kompilowany przez zbieranie *.vstemplate* plików i plików źródłowych w *zip* pliku, a następnie wdrażane przez skopiowanie *zip* plik do lokalizacji, która jest znane w programie Visual Studio. Ten proces opisano szczegółowo w dalszej części tego przewodnika.
 
@@ -271,7 +271,7 @@ Testowanie zmodyfikowany plik projektu aby zobaczyć, czy **konsoli** węzeł po
     ![Węzeł konsoli prostego projektu](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Zastąp parametry szablonu projektu
-[Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazano, jak zastąpić `ProjectNode.AddFileFromTemplate` metodę, aby wykonać podstawowe rodzaj Podstawienie parametru szablonu. W tej sekcji omawia sposób używania bardziej zaawansowanych parametrów szablonu programu Visual Studio.
+- [Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazano, jak zastąpić `ProjectNode.AddFileFromTemplate` metodę, aby wykonać podstawowe rodzaj Podstawienie parametru szablonu. W tej sekcji omawia sposób używania bardziej zaawansowanych parametrów szablonu programu Visual Studio.
 
 Po utworzeniu projektu przy użyciu szablonu programu Visual Studio w **nowy projekt** ciągi szablonu, parametry są zastępowane okno dialogowe, aby dostosować projekt. Parametr szablonu ma specjalne token, który rozpoczyna się i kończy znak dolara, na przykład $time$. Następujące dwa parametry są szczególnie przydatne w przypadku włączania dostosowania w projektach, które są oparte na szablonie:
 

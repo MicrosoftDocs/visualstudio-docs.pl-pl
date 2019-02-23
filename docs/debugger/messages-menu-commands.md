@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978935"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692570"
 ---
 # <a name="messages-menu-commands"></a>Polecenia menu Komunikaty
-**Wiadomości** menu zawiera polecenia służące do kontrolowania widoków komunikatu.  
-  
- **Uruchamianie/zatrzymywanie rejestrowania**  
- Uruchamia lub zatrzymuje wyświetlanie wiadomości.  
-  
- **Opcje rejestrowania**  
- Otwiera **MessageOptions** okno dialogowe, w którym można określić kryteria wyszukiwania komunikatu.  
-  
- **Wyczyść dziennik**  
- Czyści zawartość aktywnego widoku komunikatów.
+**Wiadomości** menu zawiera polecenia służące do kontrolowania widoków komunikatu.
+
+ **Rozpocznij/Zatrzymaj rejestrowanie** uruchamia lub zatrzymuje wyświetlanie wiadomości.
+
+ **Opcje rejestrowania** otwiera **MessageOptions** okno dialogowe, w którym można określić kryteria wyszukiwania komunikatu.
+
+ **Wyczyść dziennik** Czyści zawartość aktywnego widoku komunikatów.

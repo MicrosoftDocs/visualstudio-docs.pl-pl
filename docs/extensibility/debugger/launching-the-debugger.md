@@ -11,46 +11,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddf0eb95e298d15a2f3e44769f3202f9e5cdf7fa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25098b58dd615cabca67e96f0d1848d1f0e8c66d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966871"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689125"
 ---
 # <a name="launch-the-debugger"></a>Uruchamianie debugera
-Uruchamianie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń za pomocą ich odpowiednich atrybutów.  
-  
-## <a name="sequences-of-methods-and-events"></a>Sekwencje metody i zdarzenia  
-  
-1.  Menedżer debugowania sesji (SDM) nosi nazwę, wybierając **debugowania** menu, a następnie wybierając **Start**. Aby uzyskać więcej informacji, zobacz [Uruchom program](../../extensibility/debugger/launching-a-program.md).  
-  
-2.  Wywołania SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody.  
-  
-3.  Na podstawie modelu procesu aparatu (DE) debugowania, `IDebugProgramNodeAttach2::OnAttach` metoda zwraca jedną z następujących metod, które określa, co dzieje się potem.  
-  
-     Jeśli `S_FALSE` zwraca, aparat debugowania (DE) ma zostać załadowany w trakcie maszyny wirtualnej.  
-  
-     —lub—  
-  
-     Jeśli `S_OK` zwraca, DE ma być załadowany w procesie programu SDM. SDM następnie wykonuje następujące zadania:  
-  
-    1.  Wywołania [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) można pobrać informacji o aparacie programu DE.  
-  
-    2.  Wspólnie tworzy DE.  
-  
-    3.  Wywołania [dołączyć](../../extensibility/debugger/reference/idebugengine2-attach.md).  
-  
-4.  Wysyła DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
-  
-5.  Wysyła DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
-  
-6.  Wysyła DE [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
-  
-7.  Wysyła DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
-  
-8.  Wysyła DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) do SDM z `EVENT_SYNC` atrybutu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)   
- [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md)
+Uruchamianie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń za pomocą ich odpowiednich atrybutów.
+
+## <a name="sequences-of-methods-and-events"></a>Sekwencje metody i zdarzenia
+
+1.  Menedżer debugowania sesji (SDM) nosi nazwę, wybierając **debugowania** menu, a następnie wybierając **Start**. Aby uzyskać więcej informacji, zobacz [Uruchom program](../../extensibility/debugger/launching-a-program.md).
+
+2.  Wywołania SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) metody.
+
+3.  Na podstawie modelu procesu aparatu (DE) debugowania, `IDebugProgramNodeAttach2::OnAttach` metoda zwraca jedną z następujących metod, które określa, co dzieje się potem.
+
+     Jeśli `S_FALSE` zwraca, aparat debugowania (DE) ma zostać załadowany w trakcie maszyny wirtualnej.
+
+     —lub—
+
+     Jeśli `S_OK` zwraca, DE ma być załadowany w procesie programu SDM. SDM następnie wykonuje następujące zadania:
+
+    1.  Wywołania [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) można pobrać informacji o aparacie programu DE.
+
+    2.  Wspólnie tworzy DE.
+
+    3.  Wywołania [dołączyć](../../extensibility/debugger/reference/idebugengine2-attach.md).
+
+4.  Wysyła DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.
+
+5.  Wysyła DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.
+
+6.  Wysyła DE [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) do SDM z `EVENT_SYNC` atrybutu.
+
+7.  Wysyła DE [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) do SDM z `EVENT_SYNC` atrybutu.
+
+8.  Wysyła DE [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) do SDM z `EVENT_SYNC` atrybutu.
+
+## <a name="see-also"></a>Zobacz także
+- [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)
+- [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md)

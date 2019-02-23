@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43975e96e4760bfd2299f6cda4ab62f44a0bd13b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413127"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682183"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Obciążenie debugowania symbole, biorąc pod uwagę **ICorDebugModule** obiektu.
@@ -48,26 +48,33 @@ int LoadSymbolsWithCorModule(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identyfikator domeny aplikacji.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Unikatowy identyfikator modułu.
+ [in] Identyfikator domeny aplikacji.
 
-`baseAddress`  
-[in] Adres podstawowy pamięci.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Obiekt, który zawiera metadane symboli debugowania.
+ [in] Unikatowy identyfikator modułu.
 
-`pUnkCorDebugModule`  
-[in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`bstrModuleName`  
-[in] Nazwa modułu.
+ [in] Adres podstawowy pamięci.
 
-`bstrSymSearchPath`  
-[in] Ścieżka do wyszukiwania pliku symboli.
+`pUnkMetadataImport`
+
+ [in] Obiekt, który zawiera metadane symboli debugowania.
+
+`pUnkCorDebugModule`
+
+ [in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Nazwa modułu.
+
+`bstrSymSearchPath`
+
+ [in] Ścieżka do wyszukiwania pliku symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -168,4 +175,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsNullReference | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsNullReference
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021d7d8b7c1203aab68a93efe8581f66dec698f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25de5fdde9e0d834b98f09d2f5c9e2444f8a9d0e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975273"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706902"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Sprawdza, czy ten obiekt jest odwołanie o wartości null.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT IsNullReference(   
-   BOOL* pfIsNull  
-);  
-```  
-  
-```csharp  
-int IsNullReference(  
-   out int pfIsNull  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pfIsNull`  
- [out] Zwraca wartość różna od zera (`TRUE`) Jeśli ten obiekt jest odwołanie o wartości null; w przeciwnym razie zwraca wartość zero (`FALSE`).  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Odwołanie o wartości null oznacza obiekt, który nie został przypisany do pustego obiektu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Sprawdza, czy ten obiekt jest odwołanie o wartości null.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT IsNullReference( 
+   BOOL* pfIsNull
+);
+```
+
+```csharp
+int IsNullReference(
+   out int pfIsNull
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pfIsNull`
+
+ [out] Zwraca wartość różna od zera (`TRUE`) Jeśli ten obiekt jest odwołanie o wartości null; w przeciwnym razie zwraca wartość zero (`FALSE`).
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Odwołanie o wartości null oznacza obiekt, który nie został przypisany do pustego obiektu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

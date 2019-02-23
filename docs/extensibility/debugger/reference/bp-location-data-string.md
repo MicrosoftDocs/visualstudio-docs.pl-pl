@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_DATA_STRING | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_DATA_STRING
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44fbd40528196fdebee852d89108cf6205e5db71
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 056b7efc01b9536184c3e443156e27e328bdd2b3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318197"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689099"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Używana do ustawiania punktów przerwania danych, które są oparte na ciąg, który użytkownik może wprowadzić ze zintegrowanego środowiska programistycznego (IDE).
@@ -34,17 +34,13 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-`pThread`  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym występuje punkt przerwania.
+`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym występuje punkt przerwania.
 
-`bstrContext`  
-Kontekst punktu przerwania w kodzie, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.
+`bstrContext` Kontekst punktu przerwania w kodzie, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.
 
-`bstrDataExpr`  
-Ciąg danych, które użytkownik wprowadza ustawić punkt przerwania.
+`bstrDataExpr` Ciąg danych, które użytkownik wprowadza ustawić punkt przerwania.
 
-`dwNumElements`  
-Liczba elementów w ciągu danych, w której występuje punkt przerwania.
+`dwNumElements` Liczba elementów w ciągu danych, w której występuje punkt przerwania.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.
@@ -57,6 +53,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

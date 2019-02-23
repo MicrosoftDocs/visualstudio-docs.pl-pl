@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc89ad289d27579a81e7bbe869aab14e152bd6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611025"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694468"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Odczytuje blok danych z pliku wykonywalnego obrazu w pamięci.
@@ -52,7 +52,8 @@ HRESULT readMemory( 
 [out] Zwraca liczbę bajtów odczytanych w rzeczywistości. Jeśli `pbData` jest `NULL`, a następnie jest to całkowita liczba bajtów dostępnych danych.
 
  `pbData`
-- [out w] Buforu, który jest wypełniane pamięci odczytu.
+
+[out w] Buforu, który jest wypełniane pamięci odczytu.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

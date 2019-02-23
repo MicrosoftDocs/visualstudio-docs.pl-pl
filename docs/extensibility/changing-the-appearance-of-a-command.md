@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317084"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691348"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład możesz polecenie będzie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, ukryć lub pokazać je, lub sprawdź lub usuń ich zaznaczenie w menu.
@@ -85,7 +85,7 @@ Zmiana wyglądu polecenia, wykonaj jedną z następujących czynności:
 8. Na **narzędzia** menu powinien zostać wyświetlony **nowy tekst**. Kliknij przycisk **nowy tekst**. Polecenie powinno teraz wyszarzone.
 
 ## <a name="see-also"></a>Zobacz także
-[Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)  
-[Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
+- [Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

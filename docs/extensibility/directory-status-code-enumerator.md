@@ -11,40 +11,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd67ea448f7417200b0be9f2f44ca2feb4e3593
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e62685a1a351c9a5773e18a53316106a18af66a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945037"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694663"
 ---
 # <a name="directory-status-code-enumerator"></a>Moduł wyliczający kod stanu katalogu
-`SccDirStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używane przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API wtyczki kontroli źródła.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-enum SccDirStatus {  
-   SCC_DIRSTATUS_INVALID       = -1L,  
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- SCC_DIRSTATUS_INVALID  
- Nie można uzyskać stanu; nie należy polegać na niej.  
-  
- SCC_DIRSTATUS_NOTCONTROLLED  
- Katalog nie jest pod kontrolą źródła.  
-  
- SCC_DIRSTATUS_CONTROLLED  
- Katalog jest pod kontrolą źródła.  
-  
- SCC_DIRSTATUS_EMPTYPROJ  
- Projekt odpowiadający ten katalog jest pusty.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
- [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)
+`SccDirStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan katalogu w systemie kontroli źródła. To wyliczenie jest używane przez [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). To została wprowadzona w wersji 1.2 API wtyczki kontroli źródła.
+
+## <a name="syntax"></a>Składnia
+
+```
+enum SccDirStatus {
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+ Nie można uzyskać stanu SCC_DIRSTATUS_INVALID; nie należy polegać na niej.
+
+ Katalog SCC_DIRSTATUS_NOTCONTROLLED jest pod kontrolą źródła.
+
+ Katalog SCC_DIRSTATUS_CONTROLLED jest pod kontrolą źródła.
+
+ Projekt SCC_DIRSTATUS_EMPTYPROJ odpowiadający ten katalog jest pusty.
+
+## <a name="see-also"></a>Zobacz także
+- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)
+- [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

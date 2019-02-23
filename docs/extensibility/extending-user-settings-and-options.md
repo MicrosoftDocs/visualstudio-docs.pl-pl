@@ -13,27 +13,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983069"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697272"
 ---
 # <a name="extend-user-settings-and-options"></a>Rozszerzenie Opcje i ustawienia użytkownika
-W programie Visual Studio istnieją dwa główne sposoby celu obsługę preferencji użytkownika. **Narzędzia** > **opcje** stron zezwolić użytkownikom na ustawianie własnych wartości dla wielu różnych rodzajów ustawień ogólnych i specyficznych dla języka. Ustawienia użytkownika Zezwalaj użytkownikom na określanie ogólne właściwości konfiguracji programu Visual Studio. Aby uzyskać więcej informacji na temat stron opcji, zobacz [opcje i strony opcji](../extensibility/internals/options-and-options-pages.md). Aby uzyskać więcej informacji na temat ustawień użytkownika, zobacz [Obsługa ustawień użytkowników](../extensibility/internals/support-for-user-settings.md).  
-  
- [Tworzenie strony opcji](../extensibility/creating-an-options-page.md)  
- Wyjaśnia, jak utworzyć stronę opcji.  
-  
- [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md)  
- Wyjaśnia sposób tworzenia kategorii ustawień.  
-  
- [Użyj magazynu ustawień](../extensibility/using-the-settings-store.md)  
- Wyjaśnia, jak używać magazynu ustawień.  
-  
- [Uzyskaj informacje o usłudze z magazynu ustawień](../extensibility/getting-service-information-from-the-settings-store.md)  
- Wyjaśnia, jak można pobrać dostępnych usług z magazynu ustawień.  
-  
- [Zapisu w magazynie ustawień użytkownika](../extensibility/writing-to-the-user-settings-store.md)  
- Wyjaśnia, jak do zapisu w magazynie ustawień użytkownika.
+W programie Visual Studio istnieją dwa główne sposoby celu obsługę preferencji użytkownika. **Narzędzia** > **opcje** stron zezwolić użytkownikom na ustawianie własnych wartości dla wielu różnych rodzajów ustawień ogólnych i specyficznych dla języka. Ustawienia użytkownika Zezwalaj użytkownikom na określanie ogólne właściwości konfiguracji programu Visual Studio. Aby uzyskać więcej informacji na temat stron opcji, zobacz [opcje i strony opcji](../extensibility/internals/options-and-options-pages.md). Aby uzyskać więcej informacji na temat ustawień użytkownika, zobacz [Obsługa ustawień użytkowników](../extensibility/internals/support-for-user-settings.md).
+
+- [Tworzenie strony opcji](../extensibility/creating-an-options-page.md) wyjaśnia, jak utworzyć stronę opcji.
+
+- [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md) wyjaśnia sposób tworzenia kategorii ustawień.
+
+- [Użyj magazynu ustawień](../extensibility/using-the-settings-store.md) wyjaśnia, jak korzystać z magazynu ustawień.
+
+- [Uzyskaj informacje o usłudze z magazynu ustawień](../extensibility/getting-service-information-from-the-settings-store.md) wyjaśnia, jak można pobrać dostępnych usług z magazynu ustawień.
+
+- [Zapisu w magazynie ustawień użytkownika](../extensibility/writing-to-the-user-settings-store.md) wyjaśnia, jak do zapisu w magazynie ustawień użytkownika.
