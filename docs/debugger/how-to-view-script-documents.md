@@ -15,35 +15,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aff2a30846df811808364234000b5a6e7d696f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983810"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713402"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Instrukcje: Wyświetlanie dokumentów skryptu (JavaScript)
 
-Pliki skryptów po stronie serwera są widoczne w Eksploratorze rozwiązań. Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pliki skryptów po stronie klienta są wyświetlane w **dokumenty skryptów** węzła.  
-  
+Pliki skryptów po stronie serwera są widoczne w Eksploratorze rozwiązań. Pliki skryptów po stronie klienta są widoczne tylko wtedy, gdy jesteś w trybie debugowania lub w trybie przerwania. Pliki skryptów po stronie klienta są wyświetlane w **dokumenty skryptów** węzła.
+
 > [!NOTE]
 > Się [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], pliki skryptów po stronie klienta wygenerowany na podstawie skryptu po stronie serwera pojawiły się w oknie Eksplorator skryptów.
-  
-### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera  
-  
-1.  W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.  
-  
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
-  
-     Plik skryptu po stronie serwera, zostanie otwarty w oknie źródła.  
-  
-### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta  
-  
-1.  W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.  
-  
-2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.  
-  
-     Plik skryptu po stronie klienta zostanie otwarty w oknie źródła.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
+
+### <a name="to-view-a-server-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie serwera
+
+1.  W **Eksploratora rozwiązań**, otwórz  **\<Pathname witryny sieci Web >** węzła.
+
+2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
+
+     Plik skryptu po stronie serwera, zostanie otwarty w oknie źródła.
+
+### <a name="to-view-a-client-side-script-document"></a>Aby wyświetlić dokument skryptu po stronie klienta
+
+1.  W **Eksploratora rozwiązań**, otwórz **dokumenty skryptów** węzła.
+
+2.  Kliknij dwukrotnie plik skryptu, który chcesz wyświetlić.
+
+     Plik skryptu po stronie klienta zostanie otwarty w oknie źródła.
+
+## <a name="see-also"></a>Zobacz też
+- [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34040d368a531d257ef72d6e883cb6e151f28a0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 656e491e683c7ec2de23ea7e49938e833af3a295
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636206"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709619"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Ustawia liczbę wątku globalnych i przypisuje obliczony wynik w bieżącym wątku.
@@ -32,7 +32,9 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>Parametry
-- [in] `threadCount` Liczby wątków do użycia.
+[in] `threadCount`
+
+ Liczba wątków używanych.
 
 ## <a name="return-value"></a>Wartość zwracana
  **HRESULT** z **Powodzenie** bitu, jeśli liczba wątków został zaktualizowany.

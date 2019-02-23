@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932002"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707110"
 ---
 # <a name="tree-menu-commands"></a>Polecenia menu Drzewo
-**Drzewa** menu zawiera polecenia, aby rozwinąć lub zwinąć widoków.  
-  
- **Rozwiń jeden poziom**  
- Rozwija obecnie wybranego elementu w widoku systemu, wyświetlając jeden poziom poniżej.  
-  
- **Rozwiń gałąź**  
- Rozwija wszystkie poziomy poniżej aktualnie wybranego elementu.  
-  
- **Rozwiń wszystko**  
- Rozwija i wyświetla wszystkie poziomy w widoku systemu.  
-  
- **Zwiń**  
- Zwija wszystkie poziomy poniżej aktualnie wybranego elementu.
+**Drzewa** menu zawiera polecenia, aby rozwinąć lub zwinąć widoków.
+
+ **Rozwiń jeden poziom** rozwija obecnie wybranego elementu w widoku systemu, wyświetlając jeden poziom poniżej.
+
+ **Rozwiń gałąź** rozwija wszystkie poziomy poniżej aktualnie wybranego elementu.
+
+ **Rozwiń wszystko** Expands i wyświetla wszystkie poziomy w widoku systemu.
+
+ **Zwiń** Zwija wszystkie poziomy poniżej aktualnie wybranego elementu.

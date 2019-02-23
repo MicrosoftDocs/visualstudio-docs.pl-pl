@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316330"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681481"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Dodawanie menu skrótów w oknie narzędzi
 W tym przewodniku umieszcza menu skrótów w oknie narzędzi. Menu podręczne jest menu, który jest wyświetlany, gdy użytkownik kliknie prawym przyciskiem myszy przycisk, pole tekstowe lub tło okna. Polecenia menu skrótów zachowują się taka sama jak poleceń na inne menu i paski narzędzi. Aby zapewnić obsługę menu skrótów, określ ją w *vsct* plików i wyświetl ją w odpowiedzi na prawym przyciskiem myszy kursora myszy.
@@ -277,5 +277,5 @@ Menu skrótów, takich jak przedstawionego w tym przewodniku zezwala użytkownik
 4. Kliknij przycisk koloru w menu skrótów. Wybrany kolor, należy je zmienić kolor tła okna narzędzia.
 
 ## <a name="see-also"></a>Zobacz także
-[Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Korzystanie z usług i dostarczanie](../extensibility/using-and-providing-services.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Korzystanie z usług i dostarczanie](../extensibility/using-and-providing-services.md)

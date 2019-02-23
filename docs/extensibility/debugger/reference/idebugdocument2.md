@@ -1,7 +1,7 @@
 ---
 title: IDebugDocument2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocument2
 helpviewer_keywords:
@@ -12,49 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c4bae697b12fa7056777c3875a651d8ac1c6dbd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940911"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718199"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
-Ten interfejs reprezentuje dokumentu źródłowego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDebugDocument2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zwykle implementuje ten interfejs. Aparat debugowania (DE) mogą także implementować ten interfejs, gdy należy ją podać kod źródłowy i źródła nie istnieje na dysku.  W takich przypadkach DE będzie także implementować [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) i [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) interfejsów, a także niektórych dodatkowych metod na [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) i [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) interfejsów.  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Metody na `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, i `IDebugActivateDocumentEvent2` interfejsów zwraca ten interfejs.  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugDocument2`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Pobiera nazwę dokumentu w jednym z wielu formularzy.|  
-|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Pobiera identyfikator klasy dokumentu.|  
-  
-## <a name="remarks"></a>Uwagi  
- Ten interfejs jest implementowany tylko wtedy, gdy DE dostarcza kod źródłowy. Na przykład podczas debugowania skryptu na stronie HTML DE dostarcza kod źródłowy, ponieważ źródło pobraniem lub generowany dynamicznie i nie istnieje jako plik z dysku. Podczas debugowania tradycyjnych językach, takich jak C++, ten interfejs nie musi być implementowane.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
- [Getdocument —](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
- [Getdocument —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   
- [Getdocument —](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)   
- [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)
+Ten interfejs reprezentuje dokumentu źródłowego.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDebugDocument2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] zwykle implementuje ten interfejs. Aparat debugowania (DE) mogą także implementować ten interfejs, gdy należy ją podać kod źródłowy i źródła nie istnieje na dysku.  W takich przypadkach DE będzie także implementować [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) i [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) interfejsów, a także niektórych dodatkowych metod na [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) i [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) interfejsów.
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+ Metody na `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, i `IDebugActivateDocumentEvent2` interfejsów zwraca ten interfejs.
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+ W poniższej tabeli przedstawiono metody `IDebugDocument2`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Pobiera nazwę dokumentu w jednym z wielu formularzy.|
+|[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Pobiera identyfikator klasy dokumentu.|
+
+## <a name="remarks"></a>Uwagi
+ Ten interfejs jest implementowany tylko wtedy, gdy DE dostarcza kod źródłowy. Na przykład podczas debugowania skryptu na stronie HTML DE dostarcza kod źródłowy, ponieważ źródło pobraniem lub generowany dynamicznie i nie istnieje jako plik z dysku. Podczas debugowania tradycyjnych językach, takich jak C++, ten interfejs nie musi być implementowane.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)
+- [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)

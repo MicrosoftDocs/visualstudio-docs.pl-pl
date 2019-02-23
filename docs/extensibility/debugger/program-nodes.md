@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e09651786870d892eaa85a01561ddb283785bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93c2d82ca683e7fb771ff3a443eb54746d4bde29
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921898"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722381"
 ---
 # <a name="program-nodes"></a>Węzły programu
-W architekturze debugera *węzła programu*:  
-  
-- Jest uproszczone opis programu.  
-  
-- Można zidentyfikować wraz z procesu, który jest uruchomiony w. Można dołączyć węzła programu można odłączyć od oraz opisywania aparatu debugowania (DE), której został utworzony, jeśli istnieje.  
-  
-- Jest reprezentowany przez [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu, zwykle tworzony przy DE lub port. Węzły programu są dodawane do portu przez wywołanie metody [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Gdy węzeł programu zostanie dodany do portu, jest dodawany do procesu, zawierające program, który reprezentuje ten węzeł programu.  
-  
-  Później, po rozpoczęciu sesji debugowania, w zależności od implementacji pakietu debugowania węzły programu są używane do tworzenia odpowiednich programów. Gdy proces jest poddawany kwerendzie jego programów, te programy są wyliczane, jeden dla każdego węzła program.  
-  
-  Zanim program jest dołączony do, IDE wymaga uproszczone opis programu. Te informacje można uzyskać z poziomu węzła programu. Gdy program jest dołączony do, środowisko IDE Wyświetla szczegółowe informacje, takie jak lista wszystkie wątki uruchomione w programie. Te informacje są uzyskiwane z samego programu.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Programy](../../extensibility/debugger/programs.md)   
- [Procesy](../../extensibility/debugger/processes.md)   
- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
+W architekturze debugera *węzła programu*:
+
+- Jest uproszczone opis programu.
+
+- Można zidentyfikować wraz z procesu, który jest uruchomiony w. Można dołączyć węzła programu można odłączyć od oraz opisywania aparatu debugowania (DE), której został utworzony, jeśli istnieje.
+
+- Jest reprezentowany przez [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu, zwykle tworzony przy DE lub port. Węzły programu są dodawane do portu przez wywołanie metody [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Gdy węzeł programu zostanie dodany do portu, jest dodawany do procesu, zawierające program, który reprezentuje ten węzeł programu.
+
+  Później, po rozpoczęciu sesji debugowania, w zależności od implementacji pakietu debugowania węzły programu są używane do tworzenia odpowiednich programów. Gdy proces jest poddawany kwerendzie jego programów, te programy są wyliczane, jeden dla każdego węzła program.
+
+  Zanim program jest dołączony do, IDE wymaga uproszczone opis programu. Te informacje można uzyskać z poziomu węzła programu. Gdy program jest dołączony do, środowisko IDE Wyświetla szczegółowe informacje, takie jak lista wszystkie wątki uruchomione w programie. Te informacje są uzyskiwane z samego programu.
+
+## <a name="see-also"></a>Zobacz także
+- [Programy](../../extensibility/debugger/programs.md)
+- [Procesy](../../extensibility/debugger/processes.md)
+- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
+- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

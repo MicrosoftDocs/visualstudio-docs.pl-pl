@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject2::CreateStringObjectWithLength | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
@@ -11,46 +11,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ed28b28e38c3e855661c4d3941738f3cced28a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02ee13b62a2238624f1c6d42c52bf67db2ceaae4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954465"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710412"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Tworzy obiekt ciągu, który ma określony czas.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT CreateStringObjectWithLength (  
-   LPCOLESTR      pcstrString,  
-   UINT           uiLength,  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int CreateStringObjectWithLength (  
-   string           pcstrString,  
-   uint             uiLength,  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pcstrString`  
- [in] Wartość ciągu z obiektem ciągu.  
-  
- `uiLength`  
- [in] Długość ciągu w bajtach.  
-  
- `ppObject`  
- [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje obiekt ciągu nowo utworzony.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
+Tworzy obiekt ciągu, który ma określony czas.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT CreateStringObjectWithLength (
+   LPCOLESTR      pcstrString,
+   UINT           uiLength,
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int CreateStringObjectWithLength (
+   string           pcstrString,
+   uint             uiLength,
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pcstrString`
+
+ [in] Wartość ciągu z obiektem ciągu.
+
+ `uiLength`
+
+ [in] Długość ciągu w bajtach.
+
+ `ppObject`
+
+ [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje obiekt ciągu nowo utworzony.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

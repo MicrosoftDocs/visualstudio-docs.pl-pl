@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023957"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720034"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -47,7 +47,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 * Jeśli chcesz, aby uzyskać pomoc, aby upewnić się, że Twoja aplikacja jest skonfigurowana, wdrożeniu i poprawne działanie w usługach IIS tak, aby można było debugować, wykonaj wszystkie kroki przedstawione w tym temacie.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Tworzenie platformy ASP.NET 4.5.2 aplikacji na komputerze programu Visual Studio
-  
+
 1. Utwórz nową aplikację MVC ASP.NET. (**Plik > Nowy > Projekt**, a następnie wybierz <strong>Visual C# > sieci Web > Aplikacja sieci Web ASP.NET. W **ASP.NET 4.5.2</strong> szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
 
 2. Otwórz plik HomeController.cs, a następnie ustaw punkt przerwania `About()` metody.
@@ -147,7 +147,7 @@ Ta opcja umożliwia wdrażanie aplikacji, jeśli chcesz skopiować ją do usług
 Możesz również publikować i wdrażanie aplikacji przy użyciu systemu plików lub innych narzędzi.
 
 1. (ASP.NET 4.5.2) Upewnij się, że plik web.config zawiera poprawną wersję programu .NET Framework.  Na przykład jeśli są przeznaczone dla platformy ASP.NET 4.5.2, upewnij się, że ta wersja znajduje się w pliku web.config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +156,7 @@ Możesz również publikować i wdrażanie aplikacji przy użyciu systemu plikó
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Powinna to być na przykład wersja 4.0, instalowanie platformy ASP.NET 4 zamiast 4.5.2.
@@ -168,7 +168,7 @@ Możesz również publikować i wdrażanie aplikacji przy użyciu systemu plikó
 W tym samouczku używamy programu Visual Studio 2017.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera w systemie Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,7 +184,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 2. W programie Visual Studio, kliknij przycisk **Debuguj > Dołącz do procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > W programie Visual Studio 2017, możesz dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P). 
+    > W programie Visual Studio 2017, możesz dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P).
 
 3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: 4022**.
 4. Kliknij przycisk **Odśwież**.
@@ -200,7 +200,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 7. Kliknij przycisk **dołączania**
 
 8. Otwórz witrynę sieci Web na komputerze zdalnym. W przeglądarce przejdź do **http://\<nazwy komputera zdalnego >**.
-    
+
     Powinna zostać wyświetlona strona sieci web platformy ASP.NET.
 9. W działającej aplikacji platformy ASP.NET, kliknij link, aby **o** strony.
 
@@ -211,7 +211,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 W większości konfiguracji wymagane porty są otwarte przez instalację programu ASP.NET i zdalny debuger. Jednak może być konieczne Sprawdź, czy porty zostały otwarte.
 
 > [!NOTE]
-> Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Wymagane porty:
 

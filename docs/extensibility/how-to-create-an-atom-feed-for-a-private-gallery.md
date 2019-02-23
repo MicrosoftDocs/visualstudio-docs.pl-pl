@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030681"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722411"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: Tworzenie źródła danych dla galerii prywatnej Atom
-Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
-  
-## <a name="create-an-atom-feed"></a>Tworzenie źródła danych Atom  
- Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz rozszerzeń (*.vsix* plików) do folderu. Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:  
-  
-- *Atom.xml* pliku, który udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć *atom.xml* plik **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
-  
-- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). *Atom.xml* plik zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
-  
-  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
-  
-- *Template_Wizard_239.vsix*, który jest pusty szablon projektu VSIX.  
-  
-- *SelectionHighlight.vsix*, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego programu word.  
-  
-  Zawartość *atom.xml* plik będzie wyglądać następująco:  
-  
-```xml  
+Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).
+
+## <a name="create-an-atom-feed"></a>Tworzenie źródła danych Atom
+ Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz rozszerzeń (*.vsix* plików) do folderu. Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:
+
+- *Atom.xml* pliku, który udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć *atom.xml* plik **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).
+
+- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). *Atom.xml* plik zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.
+
+  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:
+
+- *Template_Wizard_239.vsix*, który jest pusty szablon projektu VSIX.
+
+- *SelectionHighlight.vsix*, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego programu word.
+
+  Zawartość *atom.xml* plik będzie wyglądać następująco:
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" />
@@ -68,9 +68,9 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
     ...
   </entry>
 </feed>
-```  
-  
- Należy zauważyć, że tagów łącza dwóch odnoszą się do zrzutów ekranu w folderze wygenerowanych obrazów.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Galerie prywatne](../extensibility/private-galleries.md)
+```
+
+ Należy zauważyć, że tagów łącza dwóch odnoszą się do zrzutów ekranu w folderze wygenerowanych obrazów.
+
+## <a name="see-also"></a>Zobacz także
+- [Galerie prywatne](../extensibility/private-galleries.md)

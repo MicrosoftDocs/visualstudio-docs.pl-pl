@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970555"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705534"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage
 
-Program Visual Studio umożliwia deweloperom Automatyzowanie zadań przy użyciu wiersza polecenia podczas wykonywania `devenv.exe`, plik, który uruchamia środowiska IDE programu Visual Studio.  
+Program Visual Studio umożliwia deweloperom Automatyzowanie zadań przy użyciu wiersza polecenia podczas wykonywania `devenv.exe`, plik, który uruchamia środowiska IDE programu Visual Studio.
 
- Zadania obejmują:  
+ Zadania obejmują:
 
-- Wdrażanie aplikacji w wstępnie zdefiniowanych konfiguracji z poza IDE.  
+- Wdrażanie aplikacji w wstępnie zdefiniowanych konfiguracji z poza IDE.
 
-- Automatyczne kompilowanie projektów za pomocą wstępnie ustawionych ustawienia kompilacji lub konfiguracji debugowania.  
+- Automatyczne kompilowanie projektów za pomocą wstępnie ustawionych ustawienia kompilacji lub konfiguracji debugowania.
 
-- Ładowanie środowiska IDE w określonej konfiguracji, wszystko poza IDE. Można również dostosować IDE po uruchomieniu.  
+- Ładowanie środowiska IDE w określonej konfiguracji, wszystko poza IDE. Można również dostosować IDE po uruchomieniu.
 
 ## <a name="guidelines-for-switches"></a>Wytyczne dotyczące przełączników
 
-Dokumentacja programu Visual Studio w tym artykule opisano poziomu użytkownika `devenv` przełączniki wiersza polecenia. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Narzędzie obsługuje również dodatkowe przełączniki wiersza polecenia, które są przydatne w przypadku pakietu VSPackage programowania, wdrażania i debugowania.  
+Dokumentacja programu Visual Studio w tym artykule opisano poziomu użytkownika `devenv` przełączniki wiersza polecenia. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Narzędzie obsługuje również dodatkowe przełączniki wiersza polecenia, które są przydatne w przypadku pakietu VSPackage programowania, wdrażania i debugowania.
 
 | Przełącznik wiersza polecenia | Opis |
 |---------------------| - |

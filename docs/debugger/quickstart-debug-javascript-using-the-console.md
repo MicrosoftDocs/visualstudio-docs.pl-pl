@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227577"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720513"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debugowanie kodu JavaScript przy użyciu konsoli w programie Visual Studio
 
@@ -249,11 +249,11 @@ Poniższa ilustracja przedstawia listy docelowej w oknie konsoli JavaScript.
 Można również przełączyć kontekst wykonywania za pomocą `cd` polecenie, ale musisz znać nazwę kontekstu wykonywania i odwołania, możesz użyć musi się mieścić w zakresie. **Docelowej** listy zapewnia lepszy dostęp do innych kontekstach wykonywania.
 
 ## <a name="see-also"></a>Zobacz też
-[Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)  
-[Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)  
-[Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)  
-[Pomoc techniczna i dostępność](https://visualstudio.microsoft.com/vs/support/)
+- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)
+- [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)
+- [Pomoc techniczna i dostępność](https://visualstudio.microsoft.com/vs/support/)

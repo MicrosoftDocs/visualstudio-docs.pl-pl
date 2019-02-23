@@ -21,22 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7568975ff23694e9a62f7d6b3010d1598c5bc8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940170"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701358"
 ---
 # <a name="select-code-type-dialog-box"></a>Wybór typu kodu — Okno dialogowe
-Aby otworzyć to okno dialogowe, otwórz **dołączyć do procesu** okno dialogowe, a następnie kliknij przycisk **wybierz** przycisku.  
-  
- **Automatycznie Określ typ kodu do debugowania**  
- Odpowiednie debugera zostanie wybrany oparte na rodzaju kodu, który jest uruchomiony.  
-  
- **Debugowania tych typów kodu:**  
- Z listy wybierz typ kodu, nad którym chcesz debugować.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Aby otworzyć to okno dialogowe, otwórz **dołączyć do procesu** okno dialogowe, a następnie kliknij przycisk **wybierz** przycisku.
+
+ **Automatycznie Określ typ kodu do debugowania** odpowiednie debugera zostanie wybrany oparte na rodzaju kodu, który jest uruchomiony.
+
+ **Debugowania tych typów kodu:** Z listy wybierz typ kodu, nad którym chcesz debugować.
+
+## <a name="see-also"></a>Zobacz też
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

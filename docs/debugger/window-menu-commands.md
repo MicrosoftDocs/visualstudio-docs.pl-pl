@@ -10,33 +10,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947104"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719769"
 ---
 # <a name="window-menu-commands"></a>Polecenia menu Okna
-**Okna** menu zawiera polecenia do zarządzania programu Spy ++ systemu windows.  
-  
- **Kaskadowe**  
- Ponownie Rozmieszcza wszystkie systemy windows we wzorcu cascade.  
-  
- **Sąsiadująco w poziomie**  
- Rozmieszczanie wszystkich okien we wzorcu poziomie kafelka.  
-  
- **Sąsiadująco w pionie**  
- Ponownie Rozmieszcza wszystkie systemy windows we wzorcu sąsiadująco w pionie.  
-  
- **Rozmieść ikony**  
- Rozmieszcza ikony, jeśli zminimalizowany systemu windows.  
-  
- **Zamknij / Zamknij wszystkie**  
- Zamyka jeden lub wszystkie okna w programie Spy ++.  
-  
- **Odśwież**  
- Odświeża aktualnie wybranego widoku.  
-  
- **Window**  
- Umożliwia wybór określonego okna.
+**Okna** menu zawiera polecenia do zarządzania programu Spy ++ systemu windows.
+
+ **Kaskadowe** Reorganizuje wszystkie systemy windows we wzorcu cascade.
+
+ **Sąsiadująco w poziomie** rozmieszczanie wszystkich okien we wzorcu poziomie kafelka.
+
+ **Sąsiadująco w pionie** Reorganizuje wszystkie systemy windows we wzorcu sąsiadująco w pionie.
+
+ **Rozmieść ikony** Rozmieszcza ikony, jeśli zminimalizowany systemu windows.
+
+ **Zamknij / Zamknij wszystkie** zamyka jeden lub wszystkie okna w programie Spy ++.
+
+ **Odśwież** odświeża aktualnie wybranego widoku.
+
+ **Okno** pozwala na wybór określonego okna.

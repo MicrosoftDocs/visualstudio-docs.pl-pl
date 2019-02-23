@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316850"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710594"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Przy użyciu autonomicznego modułu zbierającego IntelliTrace (C#, Visual Basic)
 
@@ -172,7 +172,7 @@ ms.locfileid: "56316850"
    > [!NOTE]
    > - Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.
    >   -   Pliki .iTrace i pliki modułów zbierających można umieścić w tym samym miejscu. Jednak jeśli masz aplikację sieci Web lub aplikacji programu SharePoint, upewnij się, że to miejsce jest poza katalogiem, który obsługuje aplikacja.
-   > 
+   >
    > [!IMPORTANT]
    > - Ogranicz katalogu plików .iTrace tylko do tych tożsamości, które należy skontaktować się z modułem zbierającym. Plik .iTrace może zawierać informacje poufne, takie jak dane od użytkowników, bazy danych, inne lokalizacje źródłowe i parametry połączenia, ponieważ IntelliTrace może rejestrować wszelkie dane, które przekazuje parametrami metody lub wartościami zwrotnymi.
    >   -   Upewnij się, że tych, którzy mogą otwierać pliki .iTrace mają uprawnienia do danych poufnych. Należy zachować ostrożność podczas udostępniania plików .iTrace. Jeśli inne osoby muszą mieć dostęp, skopiuj pliki do bezpiecznej lokalizacji udostępnionej.

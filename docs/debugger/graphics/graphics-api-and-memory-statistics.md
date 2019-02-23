@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925633"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720604"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Interfejsu API grafiki i statystyki pamięci
 <!-- VERSIONLESS --> Program Visual Studio 2017 i lepsze wsparcie Statystyka interfejsu API grafiki i narzędzia statystyki pamięci.  Te dwa narzędzia umożliwiają wyświetlanie różnych bity informacji na użycie interfejsu API Direct3D, a także użycie pamięci procesora GPU z różnych zasobów.
@@ -39,7 +39,7 @@ To narzędzie spowoduje wyświetlenie ilości pamięci, sterownik karty graficzn
 
 Podobnie jak w przypadku narzędzia Statystyka interfejsu API, możesz kliknąć prawym przyciskiem myszy w oknie danych Kopiuj wszystko jako plik CSV, który można wkleić do podobny do programu Excel w celu dalszej analizy.
 
-## <a name="see-also"></a>Zobacz też  
-[Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)   
-[Historia zasobów](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>Zobacz też
+- [Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)
+- [Historia zasobów](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

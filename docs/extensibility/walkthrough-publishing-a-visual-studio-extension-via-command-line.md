@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974152"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695378"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
@@ -34,7 +34,7 @@ Publikuje rozszerzenia w portalu Marketplace. Rozszerzenie może być vsix, plik
 |---------|---------|
 |ładunek (wymagane) | Albo ścieżka do ładunku do opublikowania lub link do użycia jako "Więcej informacji o adres URL". |
 |publishManifest (wymagane) | Ścieżka do publikowania manifestu plik do użycia. |
-|ignoreWarnings | Lista ostrzeżeń do zignorowania podczas publikowania rozszerzenia. Ostrzeżenia te są wyświetlane jako komunikaty wiersza polecenia przy publikowaniu rozszerzeniem. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | Lista ostrzeżeń do zignorowania podczas publikowania rozszerzenia. Ostrzeżenia te są wyświetlane jako komunikaty wiersza polecenia przy publikowaniu rozszerzeniem. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | Osobiste Token dostępu (PAT), który jest używany do uwierzytelniania wydawcy. Jeśli nie zostanie podana, osobisty token dostępu jest uzyskanych z zalogowanych użytkowników. |
 
 ```

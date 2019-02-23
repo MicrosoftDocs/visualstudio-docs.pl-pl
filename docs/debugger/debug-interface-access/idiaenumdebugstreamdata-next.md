@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558dd6a54d4fa4a5d9cb8f5613de5ed00d761de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642030"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695638"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Pobiera określoną liczbę rekordów w kolejności wyliczenia.
@@ -52,7 +52,8 @@ HRESULT Next ( 
 [out] Buforu, który ma zostać wypełnione danymi rekord strumienia debugowania.
 
  pceltFetched
-- [out w] Zwraca liczbę rekordów w `data`.
+
+[out w] Zwraca liczbę rekordów w `data`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów. W przeciwnym razie zwraca kod błędu.

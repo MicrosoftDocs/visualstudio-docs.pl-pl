@@ -17,24 +17,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb24a4bf5b3625255ea9503c2ce88bb64b28ef4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037073"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716262"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno danych wyjściowych, debugowanie, opcje ― Okno dialogowe
 Można określić, jakie rodzaje informacji debugowania są wyświetlane w **dane wyjściowe** okna. Aby wyświetlić te opcje, otwórz **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **debugowanie** węzeł, a następnie kliknij przycisk **okno danych wyjściowych**.
 
-**Ogólne ustawienia danych wyjściowych** ta kategoria zawiera kontrolki, które określają, czy komunikaty debugowania ogólne pojawiać się w **dane wyjściowe** okna. Można określić, czy pojawia się każdego typu komunikatu.  
+**Ogólne ustawienia danych wyjściowych** ta kategoria zawiera kontrolki, które określają, czy komunikaty debugowania ogólne pojawiać się w **dane wyjściowe** okna. Można określić, czy pojawia się każdego typu komunikatu.
 
 **Ustawienia śledzenia WPF** ta kategoria zawiera formanty, które określają poziom komunikaty śledzenia WPF, które pojawiają się w **dane wyjściowe** okna. Można określić, czy każdego typu komunikatu pojawia się i określić poziom od **krytyczny** do **wszystkich**.
 
 Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie informacji o śledzeniu WPF](../debugger/how-to-display-wpf-trace-information.md).
 
 Jeśli chcesz przywrócić ustawienia domyślne, możesz to zrobić, przy użyciu **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**. Jeśli chcesz zresetować podzbioru ustawień, Zapisz ustawienia w **Kreatora importowania i eksportowania ustawień** przed wprowadzeniem zmian, które mają zostać przetestowane, następnie zaimportuj zapisane ustawienia później.
-  
+
 ## <a name="see-also"></a>Zobacz także
-[Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
-[Okno Dane wyjściowe](../ide/reference/output-window.md)
+- [Debugowanie, Opcje, okno dialogowe](../debugger/debugging-options-dialog-box.md)
+- [Okno Dane wyjściowe](../ide/reference/output-window.md)

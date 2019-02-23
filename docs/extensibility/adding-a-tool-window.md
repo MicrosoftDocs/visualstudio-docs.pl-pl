@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ffcc334a69a38da4869532d633960cfac7260d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317136"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709944"
 ---
 # <a name="add-a-tool-window"></a>Dodawanie okna narzędzi
 W tym przewodniku dowiesz się, jak tworzyć okna narzędzi i zintegrować ją z programu Visual Studio w następujący sposób:
@@ -277,4 +277,4 @@ Dodawanie paska narzędzi i polecenia menu, który wywołuje **Otwórz plik** ok
     Powinno być słychać dźwięk brzęczyka.
 
 ## <a name="see-also"></a>Zobacz także
-[Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947418"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722294"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Utwórz widok zakończeń, poleceń i ustawień (prowadnice kolumn)
 Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym artykule pokazano, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.
@@ -24,10 +24,10 @@ W tym przewodniku możesz:
 - Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)
 - Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)
 - Umieść poleceń w menu Edycja i menu kontekstowe dokumentu tekstowego
-- Dodano obsługę wywoływania poleceń w oknie polecenia programu Visual Studio  
-  
-  Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
-  
+- Dodano obsługę wywoływania poleceń w oknie polecenia programu Visual Studio
+
+  Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+
   **UWAGA**: W tym przewodniku dużą ilość kodu Wklej kilka plików, generowane przez Szablony rozszerzenia programu Visual Studio. Ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie GitHub wraz z innymi przykładami rozszerzenia. Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.
 
 ## <a name="get-started"></a>Wprowadzenie
@@ -38,14 +38,14 @@ Najpierw utwórz projekt VSIX, Dodaj zakończeń widoku edytora, a następnie do
 - Masz odbiornik tworzenia widoku tekstu, który tworzy `ColumnGuideAdornment` obiekt widoku. Ten obiekt będzie nasłuchiwać pod kątem zdarzeń o zmienianiu widoku lub zmianę ustawienia, aktualizacji lub ponownego narysowania kolumna zawiera informacje na temat zgodnie z potrzebami.
 - Brak `GuidesSettingsManager` obsługująca odczytu i zapisu z magazynu ustawień programu Visual Studio. Menedżer ustawień są również operacje aktualizowania ustawień, które obsługują polecenia użytkownika (Dodaj kolumnę, usunąć kolumny, zmienić kolor).
 - Dostępny jest pakiet VSIP, które są niezbędne, jeśli masz poleceń użytkownika, ale jest po prostu standardowy kod, który inicjuje obiekt poleceń w implementacji.
-- Brak `ColumnGuideCommands` obiekt, który użytkownik uruchamia polecenia i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowanych w *vsct* pliku.  
-  
-  **VSIX**. Użyj **pliku &#124; nowy...**  polecenie, aby utworzyć projekt. Wybierz **rozszerzalności** węźle **C#** w okienku nawigacji po lewej stronie i wybierz polecenie **projekt VSIX** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuides** i wybierz polecenie **OK** do tworzenia projektu.  
-  
-  **Wyświetl zakończeń**. Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań. Wybierz **Dodaj &#124; nowy element...**  polecenie, aby dodać nowy element zakończeń widoku. Wybierz **rozszerzalności &#124; edytora** w okienku nawigacji po lewej stronie i wybierz polecenie **zakończeń okienka ekranu edytora** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideAdornment** jako element nazwę, a następnie wybierz **Dodaj** ją dodać.  
-  
-  Widać, że ten szablon elementu dodane dwa pliki do projektu (także odwołania i tak dalej): **ColumnGuideAdornment.cs** i **ColumnGuideAdornmentTextViewCreationListener.cs**. Szablony narysuj prostokąt purpurowy w widoku. W poniższej sekcji, możesz zmienić kilka wierszy w widoku odbiornika tworzenia i Zastąp zawartość **ColumnGuideAdornment.cs**.  
-  
+- Brak `ColumnGuideCommands` obiekt, który użytkownik uruchamia polecenia i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowanych w *vsct* pliku.
+
+  **VSIX**. Użyj **pliku &#124; nowy...**  polecenie, aby utworzyć projekt. Wybierz **rozszerzalności** węźle **C#** w okienku nawigacji po lewej stronie i wybierz polecenie **projekt VSIX** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuides** i wybierz polecenie **OK** do tworzenia projektu.
+
+  **Wyświetl zakończeń**. Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań. Wybierz **Dodaj &#124; nowy element...**  polecenie, aby dodać nowy element zakończeń widoku. Wybierz **rozszerzalności &#124; edytora** w okienku nawigacji po lewej stronie i wybierz polecenie **zakończeń okienka ekranu edytora** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideAdornment** jako element nazwę, a następnie wybierz **Dodaj** ją dodać.
+
+  Widać, że ten szablon elementu dodane dwa pliki do projektu (także odwołania i tak dalej): **ColumnGuideAdornment.cs** i **ColumnGuideAdornmentTextViewCreationListener.cs**. Szablony narysuj prostokąt purpurowy w widoku. W poniższej sekcji, możesz zmienić kilka wierszy w widoku odbiornika tworzenia i Zastąp zawartość **ColumnGuideAdornment.cs**.
+
   **Polecenia**. W **Eksploratora rozwiązań**, naciśnij przycisk prawo wskaźnika w węźle projektu. Wybierz **Dodaj &#124; nowy element...**  polecenie, aby dodać nowy element zakończeń widoku. Wybierz **rozszerzalności &#124; pakietu VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowego** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideCommands** jako element nazwę, a następnie wybierz **Dodaj**. Oprócz kilka odwołań, dodawanie poleceń i pakiet dodano także **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, i **ColumnGuideCommandsPackage.vsct** . W poniższej sekcji można zastąpić zawartość plików imię i nazwisko, definiować ani implementować poleceń.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Konfigurowanie odbiornika tworzenia widoku tekstu
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ W ramach wspólny wzorzec rozszerzenie prowadnice kolumn tworzy drugiej grupy, z
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ Wkrótce będą projektu GitHub, programu Visual Studio Extensibility przykłady
 Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
 ## <a name="see-also"></a>Zobacz także
-[Wewnątrz edytora](../extensibility/inside-the-editor.md)
-[rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md) 
-[punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)  
- [Rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md)
-[dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)
-[Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Wewnątrz edytora](../extensibility/inside-the-editor.md)
+- [Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)
+- [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)
+- [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md)
+- [Dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)
+- [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda25b870c110324962d0249948929b207d98826
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619683"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695820"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Odczytuje określoną liczbę bajtów, rozpoczynając od określonego przesunięcia przy użyciu pliku wykonywalnego.
@@ -47,7 +47,8 @@ HRESULT ReadExecutableAt ( 
 [out] Zwraca liczbę odczytanych bajtów.
 
  dane]
-- [out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.
+
+[out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest wywoływana przez kod pomocy technicznej DIA załadować bajtów danych z pliku wykonywalnego przy użyciu przesunięcie bezwzględnej. Ta metoda jest wywoływana wspierających [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.

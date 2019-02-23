@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::SetObjectForVisualizer | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer
 helpviewer_keywords:
@@ -12,50 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9ae1d22afc5d2faa54e623c76ba686624aaad1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069424"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711546"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
-Ta metoda zmienia obiekt, który reprezentuje wizualizatora.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT SetObjectForVisualizer(  
-   IDebugObject*  pNewObject,  
-   BSTR*          error,  
-   IDebugObject** pException  
-);  
-```  
-  
-```csharp  
-int SetObjectForVisualizer(  
-   IDebugObject     pNewObject,  
-   out string       error,  
-   out IDebugObject pException  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pNewObject`  
- [in] Obiekt, który można ustawić.  
-  
- `error`  
- [out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.  
-  
- `pException`  
- [out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Jest implementujący, aby określić, jak informacje o błędzie jest zwracana. Jednak jest możliwe, że niektóre obiekty wywołujące mogą tylko wygląd, aby zobaczyć, jeśli obiekt wyjątku został zwrócony wiedzieć, był błąd, więc ta metoda zawsze powinna zwracać obiekt wyjątku, jeśli wystąpił błąd. W przypadku, gdy obiekt wywołujący chce mieć należy również dostarczyć ciąg błędu z niego korzystać.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Ta metoda zmienia obiekt, który reprezentuje wizualizatora.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
+);
+```
+
+```csharp
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pNewObject`
+
+ [in] Obiekt, który można ustawić.
+
+ `error`
+
+ [out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.
+
+ `pException`
+
+ [out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Jest implementujący, aby określić, jak informacje o błędzie jest zwracana. Jednak jest możliwe, że niektóre obiekty wywołujące mogą tylko wygląd, aby zobaczyć, jeśli obiekt wyjątku został zwrócony wiedzieć, był błąd, więc ta metoda zawsze powinna zwracać obiekt wyjątku, jeśli wystąpił błąd. W przypadku, gdy obiekt wywołujący chce mieć należy również dostarczyć ciąg błędu z niego korzystać.
+
+## <a name="see-also"></a>Zobacz też
+- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

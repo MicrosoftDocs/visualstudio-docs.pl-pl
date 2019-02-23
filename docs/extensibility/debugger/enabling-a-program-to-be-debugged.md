@@ -10,32 +10,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8faa677e5893c0737bcd89db5567ef7459f6d07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f301de66421ef1327b86d900305cb4ecbfb5623
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953232"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695131"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Włącz program do debugowania
-Zanim program debugować silnik debugowania (DE), możesz uruchomić DE lub dołączyć do istniejącego programu.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Pobieranie portu](../../extensibility/debugger/getting-a-port.md)  
- W tym artykule omówiono sposób uzyskiwania portu jako pierwszy krok, aby włączyć program do debugowania.  
-  
- [Rejestrowanie programu](../../extensibility/debugger/registering-the-program.md)  
- Wyjaśnia, następnym krokiem podczas włączania programu do debugowania: rejestrując ją za pomocą portu. Po zarejestrowaniu programu mogą być debugowane przez proces dołączania lub debugowania just-in-time (JIT).  
-  
- [Dołącz do programu](../../extensibility/debugger/attaching-to-the-program.md)  
- Wyjaśnia, następnym krokiem: dołączanie debugera do programu.  
-  
- [Dołączanie na podstawie uruchamiania](../../extensibility/debugger/launch-based-attachment.md)  
- W tym artykule opisano na podstawie uruchamiania załącznika program, który odbywa się automatycznie po uruchomieniu przez kierownika ds.  
-  
- [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md)  
- Kroki wykonywane w wymaganych zdarzeń podczas tworzenia aparatu debugowania (DE) i dołączania ich do programu.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Definiuje aparat debugowania (DE), a w tym artykule opisano usług implementowane za pomocą interfejsów DE i jak może spowodować, że debuger w celu przejścia między różne tryby operacyjne.
+Zanim program debugować silnik debugowania (DE), możesz uruchomić DE lub dołączyć do istniejącego programu.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Pobieranie portu](../../extensibility/debugger/getting-a-port.md) w tym artykule omówiono sposób uzyskiwania portu jako pierwszy krok, aby włączyć program do debugowania.
+
+ [Zarejestruj program](../../extensibility/debugger/registering-the-program.md) wyjaśnia, następnym krokiem podczas włączania programu do debugowania: rejestrując ją za pomocą portu. Po zarejestrowaniu programu mogą być debugowane przez proces dołączania lub debugowania just-in-time (JIT).
+
+ [Dołącz do programu](../../extensibility/debugger/attaching-to-the-program.md) wyjaśnia następny krok: dołączanie debugera do programu.
+
+ [Dołączanie na podstawie uruchamiania](../../extensibility/debugger/launch-based-attachment.md) opisano na podstawie uruchamiania załącznika program, który odbywa się automatycznie po uruchomieniu przez kierownika ds.
+
+ [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md) przeprowadzi Cię przez wymaganych zdarzeń podczas tworzenia aparatu debugowania (DE) i dołączania ich do programu.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md) definiuje aparat debugowania (DE), a także opis usług implementowane za pomocą interfejsów DE i jak może spowodować, że debuger w celu przejścia między różne tryby operacyjne.

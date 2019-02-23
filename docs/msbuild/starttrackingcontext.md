@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0033e189706ee999876a5554e61b1c85eb48ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618812"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690516"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Rozpocznij kontekst śledzenia.
@@ -32,9 +32,13 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>Parametry
-- [in] `intermediateDirectory` Katalog, w którym mają zostać zapisane w dzienniku śledzenia.
+[in] `intermediateDirectory`
 
-- [in] `taskName` Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.
+ Katalog, w którym mają zostać zapisane w dzienniku śledzenia.
+
+[in] `taskName`
+
+ Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.
 
 ## <a name="return-value"></a>Wartość zwracana
  **HRESULT** z **Powodzenie** bitu, jeśli kontekst śledzenia został utworzony.

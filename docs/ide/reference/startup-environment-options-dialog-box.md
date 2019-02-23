@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942287"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696496"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Uruchamianie, środowisko, opcje — okno dialogowe
-Ta strona służy do Dostosuj stronę początkową programu Visual Studio lub ustawiania akcji różne domyślne, podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie strony początkowej](../../ide/customizing-the-start-page-for-visual-studio.md).
+# <a name="startup-environment-options-dialog-box"></a>Okno dialogowe Uruchamianie, środowisko, opcje
 
-## <a name="see-also"></a>Zobacz też
+::: moniker range="vs-2017"
+
+Ta strona służy do Dostosuj stronę początkową programu Visual Studio lub ustawiania akcji różne domyślne, podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie uruchamiania](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Ta strona służy do ustawiania akcji różne domyślne podczas uruchamiania programu Visual Studio. W **podczas uruchamiania, należy otworzyć** , wybierz z **rozpoczęcia okna** (który umożliwia otwarcie nowego lub istniejącego projektu), **najnowsze rozwiązania**, lub **pusty środowisko**.
+
+::: moniker-end
+
+## <a name="see-also"></a>Zobacz także
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

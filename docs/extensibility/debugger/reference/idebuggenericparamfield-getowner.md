@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetOwner | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e400e0b2f8da168becb5bc84ab833138c7750e
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449585"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694702"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Pobiera właściciela tego parametru ogólnego typu lub metody.
@@ -35,8 +35,9 @@ int GetOwner(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ppOwner`  
-[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu, który jest właścicielem tego parametru ogólnego.
+`ppOwner`
+
+ [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu, który jest właścicielem tego parametru ogólnego.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -93,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

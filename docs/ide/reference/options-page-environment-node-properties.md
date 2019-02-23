@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955755"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708332"
 ---
-# <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
-W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
+# <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — właściwości węzła
+
+W tym artykule opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)` z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
 
 ## <a name="general"></a>Ogólne
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |AutohidePinActiveTabOnly|Get/Set (wartość logiczna)|Określa, czy **Autoukrywanie** przycisk dotyczy tylko aktywną kartę.|
 
 ## <a name="add-inmacros-security"></a>Dodawanie dodatków/makr zabezpieczeń
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |LoadAddinsFromTheWeb|Get/Set (wartość logiczna)|Umożliwia dodatków ładowanie z adresu URL w sieci Web.|
 
 ## <a name="documents"></a>Dokumenty
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Pozycja w karcie dobrze, do której należy wstawić otwartego dokumentu.|
 
 ## <a name="extension-manager"></a>Menedżer rozszerzeń
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |AutomaticallyCheckForUpdates|Get/Set (wartość logiczna)|Automatycznie sprawdza, czy aktualizacje do zainstalowanych rozszerzeń.|
 
 ## <a name="find-and-replace"></a>Znajdź i zamień
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (wartość logiczna)|Ukrywa **Znajdź i Zamień** okna po dopasowanie znajduje się za pomocą **szybkie znajdowanie** lub **szybkiego zamieniania**.|
 
 ## <a name="import-and-export-settings"></a>Import i eksport ustawień
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |AutoSaveFile|Get/Set (ciąg)|Nazwa pliku, gdy ustawienia użytkownika są zapisywane automatycznie.|
 
 ## <a name="international-settings"></a>Ustawienia międzynarodowe
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
 |Język|Get/Set (ciąg)|Wartość identyfikatora LCID dla bieżącego języka dla programu Visual Studio.|
 
 ## <a name="keyboard"></a>Klawiatury
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
 |Schemat|Get/Set (ciąg)|Zwraca ciąg, który zawiera schemat wbudowany, ciąg zawierający pełną ścieżkę pliku .vsk, który jest ładowany, "(domyślna)", jeśli żaden plik .vsk jest ładowany.|
 
 ## <a name="projects-and-solution"></a>Projekty i rozwiązania
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |MSBuildOutputVerbosity|Get/Set (ciąg)|Określa poziom szczegółowości danych wyjściowych kompilacji.|
 
 ## <a name="startup"></a>Uruchamianie
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża strona startowa po każdym przejściu z interwałem określonym w StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (krótki)|Interwał w minutach, aby odświeżyć stronę początkową.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Nazwa elementu właściwości|Wartość|Opis|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Wyliczenie)|Działanie podejmowane w momencie uruchamiania z <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>TaskList
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |CommentTokens|SafeArray|Zwraca SafeArray komentarza wartości tokenu. Każdy ma pola, `Name` (ciąg) i `Priority` (<xref:EnvDTE.vsTaskPriority>, wysoki, średni lub niski).|
 
 ## <a name="web-browser"></a>Przeglądarki sieci Web
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 | - |-----------|-----------------|
@@ -157,7 +182,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z 
 |ViewSourceIn|Get/Set (Wyliczenie)|<xref:EnvDTE.vsBrowserViewSource> (Źródło, projekt, zewnętrzny).|
 |ViewSourceExternalProgram|Get/Set (ciąg)|Ścieżka Podgląd źródła zewnętrznego.|
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

@@ -1,19 +1,19 @@
 ---
 title: Przewodnik po środowisku IDE programu Visual Studio
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712531"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -78,6 +78,8 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 ## <a name="quick-launch"></a>Szybkie uruchamianie
 
 **Szybkie uruchamianie** pole jest szybka i łatwa metoda wygląda praktycznie wszystkich wymaganych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
+
+1. Znajdź **Szybkie uruchamianie** pole w prawym górnym rogu środowiska IDE. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
 
 1. Typ **szczegółowości** do **Szybkie uruchamianie** pole. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
 

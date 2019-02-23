@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ddcbf414d70d5952c9b4c7b5cca4eb4cd35e28a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6315032a36369eff7a5d43241ae4968a64ad42cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645696"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685460"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Zwraca skojarzony z wirtualnym adresem bloku danych PDATA.
@@ -47,7 +47,8 @@ HRESULT pdataForVA( 
 [out] Zwraca rzeczywisty rozmiar danych w bajtach, które zostały pobrane.
 
  `pbData`
-- [out w] Bufor, który jest wypełniane żądanych danych. Nie może być `NULL`.
+
+[out w] Bufor, który jest wypełniane żądanych danych. Nie może być `NULL`.
 
 ## <a name="return-value"></a>Wartość zwracana
  Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku nie PDATA dla określonego adresu. W przeciwnym razie zwraca kod błędu.

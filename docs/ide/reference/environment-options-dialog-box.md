@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952830"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703256"
 ---
 # <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
 
@@ -35,7 +35,7 @@ Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby u
 |Aby ustawić opcje mapowania klawiatury.|[Klawiatura, Środowisko, Opcje — okno dialogowe](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Aby określić, czy powiadomienia są włączone.|[Powiadomienia, Środowisko, Opcje — okno dialogowe](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Aby określić opcje dla okna szybkiego uruchamiania.|[Szybkie uruchamianie, Środowisko, Opcje — okno dialogowe](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Aby określić opcje strony uruchamiania.|[Uruchamianie, Środowisko, Opcje — okno dialogowe](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Aby określić opcje uruchamiania.|[Uruchamianie, Środowisko, Opcje — okno dialogowe](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Aby określić, czy z roamingu ustawienia na komputerach.|[Zsynchronizowane ustawienia, Środowisko, Opcje — okno dialogowe](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Dowiedzieć się, jak ustawić opcje dla zadań i listy zadań|[Lista zadań, Środowisko, Opcje — okno dialogowe](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Zmienić domyślną stronę domową i wyszukiwania, zmienić systemowy edytor źródeł i konfigurować opcje programu Internet Explorer.|[Przeglądarka internetowa, Środowisko, Opcje — okno dialogowe](../../ide/reference/web-browser-environment-options-dialog-box.md)|

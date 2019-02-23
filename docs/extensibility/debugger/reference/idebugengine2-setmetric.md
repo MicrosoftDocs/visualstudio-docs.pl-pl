@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::SetMetric | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2:::SetMetric
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50732b6e271ac3bf51eb2cde4549cd7396fb4b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 325cd30a49fb636c56eebd9e6301b3999e851363
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713610"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Ta metoda umożliwia ustawienie wartości rejestru znane jako metrykę.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT SetMetric(  
-   LPCOLESTR pszMetric,  
-   VARIANT   varValue  
-);  
-```  
-  
-```csharp  
-int SetMetric(  
-   string pszMetric,  
-   object varValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pszMetric`  
- [in] Nazwa metryki.  
-  
- `varValue`  
- [in] Określa wartość metryki.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Metryka to wartość rejestru używane do zmiany zachowania aparatu debugowania lub anonsowanie obsługiwanych funkcji. Ta metoda może przekazywać wywołanie odpowiednią formą [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji `SetMetric`.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+Ta metoda umożliwia ustawienie wartości rejestru znane jako metrykę.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT SetMetric(
+   LPCOLESTR pszMetric,
+   VARIANT   varValue
+);
+```
+
+```csharp
+int SetMetric(
+   string pszMetric,
+   object varValue
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pszMetric`
+
+ [in] Nazwa metryki.
+
+ `varValue`
+
+ [in] Określa wartość metryki.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Metryka to wartość rejestru używane do zmiany zachowania aparatu debugowania lub anonsowanie obsługiwanych funkcji. Ta metoda może przekazywać wywołanie odpowiednią formą [pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) funkcji `SetMetric`.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [Pomocnicy zestawu SDK do debugowania](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

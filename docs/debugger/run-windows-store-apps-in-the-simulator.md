@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949808"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710542"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows to aplikacja komputerowa, która symuluje aplikacji platformy uniwersalnej systemu Windows. Zazwyczaj chcesz debugować na komputerze lokalnym, podłączonym urządzeniu lub maszynie zdalnej. Jednak w niektórych przypadkach warto symulatorze programu Visual Studio umożliwia emulowanie różnych fizycznych rozmiaru i rozdzielczości. Można także symulacji typowe touch i obrót zdarzeń i symulowanie właściwości połączenia sieciowego.
@@ -149,4 +149,4 @@ Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu 
  Symulator można zamknąć, naciskając klawisz **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Zobacz też
- [Uruchamianie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Uruchamianie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

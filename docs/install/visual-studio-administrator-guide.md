@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970416"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710113"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Podręcznik administratora w usłudze Visual Studio 2017
 
@@ -54,7 +54,7 @@ Visual Studio 2017 można wdrożyć na klienckich stacjach roboczych, tak długo
 Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md) na maszynach klienckich.
 
 > [!TIP]
-> Oprócz dokumentacji w przewodniku administratora, jest dobrym źródłem informacji na temat instalacji programu Visual Studio 2017 [blogu Grunwald kondycji](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+> Oprócz dokumentacji w przewodniku administratora, jest dobrym źródłem informacji na temat instalacji programu Visual Studio 2017 [Visual Studio Instalator archiwa](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Określanie ustawień opinii klienta
 

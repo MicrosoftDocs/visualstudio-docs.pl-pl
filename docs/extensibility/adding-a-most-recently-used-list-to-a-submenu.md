@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316193"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710087"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj listy ostatnio używanych elementów do podmenu
 W tym przewodniku opiera się na pokazach w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i przedstawiono sposób dodawania listy dynamicznych elementów do podmenu. Lista dynamiczna stanowi podstawę do tworzenia list najbardziej ostatnio używanych elementów.
@@ -202,4 +202,4 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
 4. Ponownie otworzyć podmenu. Należy zauważyć, że **3 elementu** jest teraz w górnej części listy i inne elementy zostały wypchnięte jedną pozycję w dół. Kliknij przycisk **3 elementu** ponownie i zwróć uwagę, że nadal wyświetla okno komunikatu **wybrany element 3**, co oznacza, że tekst poprawnie zostały przeniesione do nowej pozycji wraz z etykiety polecenia.
 
 ## <a name="see-also"></a>Zobacz także
-[Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)
+- [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)

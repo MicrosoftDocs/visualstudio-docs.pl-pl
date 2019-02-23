@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cd4797809e13fc66834204e59ddbe358bca9a70
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 040b40b5990edbfbd99c240d8b7e2d02e59c33af
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315992"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695898"
 ---
 # <a name="get-local-properties"></a>Pobieranie właściwości lokalnych
 > [!IMPORTANT]
@@ -157,5 +157,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Przykłady implementacji zmiennych lokalnych](../../extensibility/debugger/sample-implementation-of-locals.md)  
-[Wyliczanie zmiennych lokalnych](../../extensibility/debugger/enumerating-locals.md)
+- [Przykłady implementacji zmiennych lokalnych](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [Wyliczanie zmiennych lokalnych](../../extensibility/debugger/enumerating-locals.md)

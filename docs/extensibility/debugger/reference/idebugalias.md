@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAlias
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 301acf451f2668e9e6da80a9669484dd0ef4dc6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fbf93b3675e81c1774fc018b14c3c7f66641381
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944465"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723100"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
->  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
-  
- Reprezentuje liczbowych aliasu dla zmiennej. Alias jest po prostu inną nazwę zmiennej.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDebugAlias : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Ewaluator wyrażeń (EE) implementuje ten interfejs do obsługi wartości liczbowych aliasów dla zmiennych.  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) tworzy alias dla określonego obiektu. Aby wyszukać aliasy, użyj [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) lub [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- Następujące metody są zdefiniowane w `IDebugAlias` interfejsu.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Pobiera obiekt, do którego odwołuje się ten alias.|  
-|[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Pobiera nazwę aliasu.|  
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Pobiera `ICorDebugValue` interfejsu, który zapewnia dostęp do zarządzanego kodu informacji dotyczących tego obiektu (tylko kod zarządzany).|  
-|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Oznacza to, alias jako nie jest już używana.|  
-  
-## <a name="remarks"></a>Uwagi  
- Alias jest liczbą dziesiętną w postaci ciągu, a następnie znak #, na przykład 1001#.  
-  
-## <a name="requirements"></a>Wymagania  
- Nagłówek: ee.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy oceny wyrażenia](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)   
- [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)   
- [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)
+>  W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ Reprezentuje liczbowych aliasu dla zmiennej. Alias jest po prostu inną nazwę zmiennej.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDebugAlias : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
+ Ewaluator wyrażeń (EE) implementuje ten interfejs do obsługi wartości liczbowych aliasów dla zmiennych.
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) tworzy alias dla określonego obiektu. Aby wyszukać aliasy, użyj [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md) lub [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md).
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+ Następujące metody są zdefiniowane w `IDebugAlias` interfejsu.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|Pobiera obiekt, do którego odwołuje się ten alias.|
+|[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|Pobiera nazwę aliasu.|
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|Pobiera `ICorDebugValue` interfejsu, który zapewnia dostęp do zarządzanego kodu informacji dotyczących tego obiektu (tylko kod zarządzany).|
+|[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|Oznacza to, alias jako nie jest już używana.|
+
+## <a name="remarks"></a>Uwagi
+ Alias jest liczbą dziesiętną w postaci ciągu, a następnie znak #, na przykład 1001#.
+
+## <a name="requirements"></a>Wymagania
+ Nagłówek: ee.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
+- [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)
+- [GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)

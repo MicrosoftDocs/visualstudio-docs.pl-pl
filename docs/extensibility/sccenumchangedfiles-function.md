@@ -12,51 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c672ddbd134f978e91bf6df06a902ca8a3fa4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9bc2738e9a4d7cac0d57b9c613b7070f60baff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009950"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711562"
 ---
 # <a name="sccenumchangedfiles-function"></a>Funkcja SccEnumChangedFiles
-Podana lista plików lokalnych, ta funkcja sprawdza pliki, które różnią się od odpowiedniej wersji w bazie danych kontroli kodu źródłowego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-SCCRTN SccEnumChangedFiles(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LONG    cFiles,  
-   LPCSTR* lpFileNames,  
-   LONG*   plIsFileDifferent  
-);  
-```  
-  
-### <a name="parameters"></a>Parametry  
- pContext  
- [in] Wskaźnik kontekście wtyczki kontroli źródła.  
-  
- hWnd  
- [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
-  
- cFiles  
- [in] Liczby nazw plików określonych w `lpFileNames` tablicy. Również określa rozmiar `plIsFileDifferent` tablicy.  
-  
- lpFileNames  
- [in] Tablica nazw plik lokalny do sprawdzenia.  
-  
- plIsFileDifferent  
- [out w] Tablica wartości wskazujący stan różnica każdego pliku (Tablica musi mieć co najmniej `cFiles` wpisy). Wartość różną od zera oznacza, że plik jest inny.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
-  
-|Wartość|Opis|  
-|-----------|-----------------|  
-|SCC_OK|Operacja została ukończona pomyślnie.|  
-|SCC_UNSPECIFIEDERROR|Błąd ogólny.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+Podana lista plików lokalnych, ta funkcja sprawdza pliki, które różnią się od odpowiedniej wersji w bazie danych kontroli kodu źródłowego.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+SCCRTN SccEnumChangedFiles(
+   LPVOID  pContext,
+   HWND    hWnd,
+   LONG    cFiles,
+   LPCSTR* lpFileNames,
+   LONG*   plIsFileDifferent
+);
+```
+
+### <a name="parameters"></a>Parametry
+ pContext
+
+[in] Wskaźnik kontekście wtyczki kontroli źródła.
+
+ hWnd
+
+[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+
+ cFiles
+
+[in] Liczby nazw plików określonych w `lpFileNames` tablicy. Również określa rozmiar `plIsFileDifferent` tablicy.
+
+ lpFileNames
+
+[in] Tablica nazw plik lokalny do sprawdzenia.
+
+ plIsFileDifferent
+
+[out w] Tablica wartości wskazujący stan różnica każdego pliku (Tablica musi mieć co najmniej `cFiles` wpisy). Wartość różną od zera oznacza, że plik jest inny.
+
+## <a name="return-value"></a>Wartość zwracana
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+
+|Wartość|Opis|
+|-----------|-----------------|
+|SCC_OK|Operacja została ukończona pomyślnie.|
+|SCC_UNSPECIFIEDERROR|Błąd ogólny.|
+
+## <a name="see-also"></a>Zobacz także
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

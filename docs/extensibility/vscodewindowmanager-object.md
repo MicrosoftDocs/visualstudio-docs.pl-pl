@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004637"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711088"
 ---
 # <a name="vscodewindowmanager-object"></a>Obiekt VSCodeWindowManager
-Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialny za zarządzanie zakończeń (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie Windows kodu za pomocą starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
-  
- W poniższej tabeli przedstawiono interfejsów w `VSCodeWindowManager` obiektu.  
-  
-|Interface|Opis|  
-|---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Umożliwia zakończeń (na przykład pasków listy rozwijanej) mają być dodawane do lub usunięte z okna kodu.|  
-  
-## <a name="see-also"></a>Zobacz także  
- [Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialny za zarządzanie zakończeń (na przykład pasek listy rozwijanej). Aby uzyskać więcej informacji, zobacz [Dostosowywanie Windows kodu za pomocą starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+
+ W poniższej tabeli przedstawiono interfejsów w `VSCodeWindowManager` obiektu.
+
+|Interface|Opis|
+|---------------|-----------------|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Umożliwia zakończeń (na przykład pasków listy rozwijanej) mają być dodawane do lub usunięte z okna kodu.|
+
+## <a name="see-also"></a>Zobacz także
+- [Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

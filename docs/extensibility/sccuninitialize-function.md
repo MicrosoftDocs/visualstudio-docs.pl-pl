@@ -12,38 +12,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dba45116c956c1edc1a8ffb691397375345c661
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fae6cf7d86d57152446e8acc9e87a0fcbb3d12db
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967209"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721839"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize, funkcja
-Ta funkcja czyści wszystkie alokacje lub otwartych połączeń utworzonych przez poprzednie wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) w ramach przygotowania do zamykania wtyczka do kontroli źródła.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-SCCRTN SccUninitialize (  
-   LPVOID pvContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pvContext  
- [in] Wskaźnik do struktury kontekście wtyczki kontroli źródła, utworzone w [SccInitialize](../extensibility/sccinitialize-function.md).  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
-  
-|Wartość|Opis|  
-|-----------|-----------------|  
-|SCC_OK|Oczyszczania została ukończona pomyślnie.|  
-  
-## <a name="remarks"></a>Uwagi  
- Wtyczka do kontroli źródła jest odpowiedzialny za przygotowywanie zamknięcie i zwalnianie pamięci, że wtyczka została przydzielona w strukturze kontekstu. Funkcja jest wywoływana raz dla każdego wystąpienia danego dodatku typu plug-in. Wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) poprzedza tego wywołania. Brak projektów nadal może być otwarty w momencie wywołania `SccUninitialize`.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [SccInitialize](../extensibility/sccinitialize-function.md)
+Ta funkcja czyści wszystkie alokacje lub otwartych połączeń utworzonych przez poprzednie wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) w ramach przygotowania do zamykania wtyczka do kontroli źródła.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+SCCRTN SccUninitialize (
+   LPVOID pvContext
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pvContext
+
+[in] Wskaźnik do struktury kontekście wtyczki kontroli źródła, utworzone w [SccInitialize](../extensibility/sccinitialize-function.md).
+
+## <a name="return-value"></a>Wartość zwracana
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+
+|Wartość|Opis|
+|-----------|-----------------|
+|SCC_OK|Oczyszczania została ukończona pomyślnie.|
+
+## <a name="remarks"></a>Uwagi
+ Wtyczka do kontroli źródła jest odpowiedzialny za przygotowywanie zamknięcie i zwalnianie pamięci, że wtyczka została przydzielona w strukturze kontekstu. Funkcja jest wywoływana raz dla każdego wystąpienia danego dodatku typu plug-in. Wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) poprzedza tego wywołania. Brak projektów nadal może być otwarty w momencie wywołania `SccUninitialize`.
+
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+- [SccInitialize](../extensibility/sccinitialize-function.md)

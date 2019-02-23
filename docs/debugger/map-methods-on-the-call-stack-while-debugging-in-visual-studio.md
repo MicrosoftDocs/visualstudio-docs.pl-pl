@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690505"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704816"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Tworzenie wizualnej mapy stosu wywołań podczas debugowania (C#, Visual Basic, C++, JavaScript)
 
@@ -54,7 +54,7 @@ Poniżej przedstawiono krótkie omówienie mapy kodu:
 ##  <a name="MapStack"></a> Mapuj stos wywołań
 
 1. W programie Visual Studio Enterprise C#, Visual Basic, C++ lub JavaScript projektu, Rozpocznij debugowanie wybierając **debugowania** > **Rozpocznij debugowanie** lub naciskając **F5**.
-   
+
 1. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **debugowania** > **mapy kodu**, lub naciśnij **Ctrl**+**Shift** +**`**.
 
    Bieżący stos wywołań jest wyświetlany w kolorze pomarańczowym na nowej mapie kodu:
@@ -73,19 +73,19 @@ Aby uzyskać więcej informacji na temat elementu, umieść kursor nad nią i pr
 ## <a name="map-external-code"></a>Mapy kodu zewnętrznego
 
 Domyślnie tylko Twój własny kod pojawia się na mapie. Aby wyświetlić kod zewnętrzny na mapie:
-  
+
 - Kliknij prawym przyciskiem myszy **stos wywołań** okna, a następnie wybierz pozycję **Pokaż kod zewnętrzny**:
-  
+
   ![Wyświetlić kod zewnętrzny, w oknie stosu wywołań](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - Lub Anuluj wybór **Włącz tylko mój kod** w programie Visual Studio **narzędzia** (lub **debugowania**) > **opcje**  >   **Debugowanie**:
-  
+
   ![Pokaż kod zewnętrzny, za pomocą okna dialogowego Opcje](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>Kontrolować układ mapy
 
-Zmienianie układu mapy nie ma wpływu na kod w dowolny sposób. 
+Zmienianie układu mapy nie ma wpływu na kod w dowolny sposób.
 
-Aby kontrolować układ mapy, wybierz **układ** menu na pasku narzędzi mapy. 
+Aby kontrolować układ mapy, wybierz **układ** menu na pasku narzędzi mapy.
 
 W **układ** menu, możesz:
 
@@ -95,9 +95,9 @@ W **układ** menu, możesz:
 
 ##  <a name="MakeNotes"></a> Robienie notatek dotyczących kodu
 
-Można dodawać komentarze, aby śledzić, co się dzieje w kodzie. 
+Można dodawać komentarze, aby śledzić, co się dzieje w kodzie.
 
-Aby dodać komentarz, kliknij prawym przyciskiem myszy na mapie kodu, a następnie wybierz **Edytuj** > **nowy komentarz**, następnie wpisz komentarz. 
+Aby dodać komentarz, kliknij prawym przyciskiem myszy na mapie kodu, a następnie wybierz **Edytuj** > **nowy komentarz**, następnie wpisz komentarz.
 
 Aby dodać nowy wiersz w komentarzu, naciśnij **Shift**+**Enter**.
 
@@ -109,11 +109,11 @@ Podczas uruchamiania aplikacji do następnego punktu przerwania lub wejścia do 
 
 ![Aktualizacja mapy kodu za pomocą następnego stosu wywołań](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Aby zatrzymać automatyczne dodawanie nowych stosów wywołań do mapy, wybierz ![Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif "Pokaż automatycznie umieszczane na mapie kodu") na pasku narzędzi mapy kodu. Mapa nadal wyróżniać istniejące stosy wywołań. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl**+**Shift**+**`**. 
+Aby zatrzymać automatyczne dodawanie nowych stosów wywołań do mapy, wybierz ![Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif "Pokaż automatycznie umieszczane na mapie kodu") na pasku narzędzi mapy kodu. Mapa nadal wyróżniać istniejące stosy wywołań. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl**+**Shift**+**`**.
 
 ##  <a name="AddRelatedCode"></a> Dodawanie kodu pokrewnego do mapy
 
-Teraz, gdy masz mapę, w C# lub Visual Basic, możesz dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie. 
+Teraz, gdy masz mapę, w C# lub Visual Basic, możesz dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie.
 
 Aby przejść do definicji metody w kodzie, kliknij dwukrotnie metodę na mapie lub wybierz ją i naciśnij klawisz **F12**, lub kliknij ją prawym przyciskiem myszy i wybierz polecenie **przejdź do definicji**.
 
@@ -151,7 +151,7 @@ Kontynuuj tworzenie mapy, aby zobaczyć więcej kodu.
 
 Można eksportować mapę, wysłać ją do innych osób z programem Microsoft Outlook, zapisz go do rozwiązania i sprawdź go do kontroli wersji.
 
-Aby udostępnić lub zapisać mapy, należy użyć **udostępnianie** na pasku narzędzi mapy kodu. 
+Aby udostępnić lub zapisać mapy, należy użyć **udostępnianie** na pasku narzędzi mapy kodu.
 
 ![Mapy kodu stosu wywołań udostępniania innym osobom](../debugger/media/debuggermap_sharewithothers.png "mapy kodu stosu wywołań udostępniania innym osobom")
 

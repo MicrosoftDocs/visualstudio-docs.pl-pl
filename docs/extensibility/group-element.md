@@ -11,56 +11,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6dadd65aa1e3850417e43bfce6dea848b12e07b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35528f694cf76c1971e07023125706c962e77fe2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955147"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708657"
 ---
 # <a name="group-element"></a>Element grupy
-Definiuje grupy poleceń pakietu VSPackage.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
-  <Parent>... </Parent>  
-</Group>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
-|priority|Opcjonalna. Wartość liczbowa określająca priorytet.|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|Nadrzędny|Opcjonalna. Elementu nadrzędnego przycisku.|  
-|Adnotacja|Opcjonalny komentarz.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|  
-  
-## <a name="example"></a>Przykład  
-  
-```xml  
-<Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
-  <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
-</Group>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Definiuje grupy poleceń pakietu VSPackage.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">
+  <Parent>... </Parent>
+</Group>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|
+|priority|Opcjonalna. Wartość liczbowa określająca priorytet.|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|Nadrzędny|Opcjonalna. Elementu nadrzędnego przycisku.|
+|Adnotacja|Opcjonalny komentarz.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|
+
+## <a name="example"></a>Przykład
+
+```xml
+<Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">
+  <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>
+</Group>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

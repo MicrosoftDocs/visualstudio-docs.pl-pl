@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918567"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716522"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
 Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
 
-## <a name="create-a-new-project"></a>Tworzenie nowego projektu 
+## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
 1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
 
@@ -47,7 +47,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
     przy użyciu tego kodu (nie należy usuwać `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studi
     > [!TIP]
     > Jeśli punkt przerwania w pętli lub rekursji, lub jeśli masz wiele punktów przerwania, które często krokach, użyj [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że Twój kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Warunkowego punktu przerwania pozwala zaoszczędzić czas i może również ułatwić debugowanie problemów, które są trudne do odtworzenia.
 
-    Podczas próby debugowania błędy związane z pamięcią w języku C++, umożliwia także punktów przerwania można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i odwoływać się do liczby. 
+    Podczas próby debugowania błędy związane z pamięcią w języku C++, umożliwia także punktów przerwania można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i odwoływać się do liczby.
 
 ## <a name="navigate-code"></a>Przechodzenie do kodu
 
@@ -110,7 +110,7 @@ Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i
 
     ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip.png "wyświetlanie etykietki danych")
 
-    Datatip pokazuje bieżącą wartość `c1` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu. 
+    Datatip pokazuje bieżącą wartość `c1` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu.
 
 2. Rozwiń etykietka danych, aby wyświetlić bieżące wartości właściwości `c1` obiektu.
 

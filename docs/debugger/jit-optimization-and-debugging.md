@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959294"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699148"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 **Optymalizacje działania na platformie .NET:** Jeśli chcesz debugować kod, łatwiej gdy kod jest **nie** zoptymalizowane pod kątem. To dlatego, gdy kod jest zoptymalizowany, kompilatora i środowiska uruchomieniowego dokonać zmian emitowany kod procesora CPU, aby działa szybciej, ale jest mniej bezpośrednie mapowanie do oryginalnego kodu źródłowego. Oznacza to, że debugery są często nie może poinformować Cię, wartości lokalnych zmiennych i kodu, przechodzenie krok po kroku, a punkty przerwania mogą nie działać zgodnie z oczekiwaniami.
@@ -46,8 +46,8 @@ Jeśli interesuje Cię tylko podczas debugowania kodu, które tworzysz, lokalnie
 1. W sytuacjach, w którym są dołączanie debugera do już uruchomionego procesu ta opcja nie wpłyną na moduły, które zostały już załadowane w czasie, który debuger został dołączony.
 2. Ta opcja nie ma wpływu na bibliotek DLL, które zostały wstępnie skompilowane (nazywane również przetworzone przez program ngen) do kodu natywnego. Jednak użycie wstępnie skompilowany kod można wyłączyć przez uruchomienie procesu ze środowiskiem, zmiennej COMPlus_ZapDisable ustawiony na "1".
 
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md)   
- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Proces zarządzanego wykonania](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>Zobacz też
+- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
+- [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
+- [Dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Proces zarządzanego wykonania](/dotnet/standard/managed-execution-process)

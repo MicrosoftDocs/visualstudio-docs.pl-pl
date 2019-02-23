@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73ec1bacc0efd02020712f0aceadf69772de47a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644331"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708111"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 Odczytuje określoną liczbę bajtów, zaczynając od określonego względny adres wirtualny (RVA) z pliku wykonywalnego.
@@ -47,7 +47,8 @@ HRESULT ReadExecutableAtRVA ( 
 [out] Zwraca liczbę odczytanych bajtów.
 
  `data[]`
-- [out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.
+
+[out w] Tablica, która jest wypełniane bajtów odczytanych z pliku.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest wywoływana przez kod pomocy technicznej DIA załadować bajtów danych z pliku wykonywalnego przy użyciu względny adres wirtualny. Ta metoda jest wywoływana wspierających [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody.

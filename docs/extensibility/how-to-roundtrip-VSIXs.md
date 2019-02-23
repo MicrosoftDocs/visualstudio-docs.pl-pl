@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880955"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710607"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Instrukcje: Dzięki rozszerzenia jest zgodny z programu Visual Studio 2017 i Visual Studio 2015
 
@@ -30,7 +30,7 @@ Poniżej przedstawiono zarys czynności, które zostaną wykonane w tym dokumenc
 2. Zaktualizuj Manifest rozszerzenia:
     * Docelowych instalacji
     * Wymagania wstępne
-3. Aktualizowanie pliku CSProj:
+3. Update CSProj:
     * Aktualizacja `<MinimumVisualStudioVersion>`.
     * Dodaj `<VsixType>` właściwości.
     * Dodaj właściwość debugowania `($DevEnvDir)` 3 razy.

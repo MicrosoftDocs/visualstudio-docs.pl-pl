@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::SetDebuggerPresent | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de18d9d30bcddd8692535bff2d8f7723d79dba4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921859"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713467"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Informuje wydawca programu, że debuger jest obecna i uruchomiona.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT SetDebuggerPresent(  
-   BOOL fDebuggerPresent  
-);  
-```  
-  
-```csharp  
-int SetDebuggerPresent(  
-   int fDebuggerPresent  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `fDebuggerPresent`  
- [in] Niezerowa Koniunkcja (`TRUE`) jest obecny debuger, wartość zero (`FALSE`) Jeśli nie jest.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Obecność lub brak debugera jest widoczny w danych zwracanych przez [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metoda: wartość zwracana jest ustawiony lub wyczyścić przy wywołaniu `SetDebuggerPresent` metody.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+Informuje wydawca programu, że debuger jest obecna i uruchomiona.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT SetDebuggerPresent(
+   BOOL fDebuggerPresent
+);
+```
+
+```csharp
+int SetDebuggerPresent(
+   int fDebuggerPresent
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `fDebuggerPresent`
+
+ [in] Niezerowa Koniunkcja (`TRUE`) jest obecny debuger, wartość zero (`FALSE`) Jeśli nie jest.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Obecność lub brak debugera jest widoczny w danych zwracanych przez [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metoda: wartość zwracana jest ustawiony lub wyczyścić przy wywołaniu `SetDebuggerPresent` metody.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

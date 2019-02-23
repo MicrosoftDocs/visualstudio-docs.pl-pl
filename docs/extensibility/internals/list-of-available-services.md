@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934208"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695794"
 ---
 # <a name="list-of-available-services"></a>Lista dostępnych usług
 
@@ -129,7 +129,7 @@ Użyj identyfikatorów GUID usługi wymienione w tym miejscu lub uzyskane z inne
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Tak | Tak | Użyj <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> usługi zamiast tego. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Tak | Tak | Umożliwia VSPackage do przechowywania i pobierania informacji z pliku .sln bieżącego rozwiązania. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Nie | Tak | Zapewnia możliwość dodawania i aktualizowania odwołań w zestawach kodu zarządzanego. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Nie | Tak | Zapewnia dostęp do strony początkowej pobierania usługi przez uruchamianie i zatrzymywanie usługi pobierania w wątku tła. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Nie | Tak | Zapewnia dostęp do programu Visual Studio 2017 Start strony Usługa pobierania za uruchamianie i zatrzymywanie usługi pobierania w wątku tła. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Tak | Tak | Zapewnia dostęp do pasku stanu środowiska IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Nie | Tak | Zapewnia dostęp do metod tworzenia silnych nazw kluczy i plików kluczy z hasłami, które są używane do podpisywania zestawów kodu zarządzanego. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Tak | Tak | Umożliwia pakietu VSPackage w celu zapewnienia obsługi zapisywanie danych w wielu formatach. |

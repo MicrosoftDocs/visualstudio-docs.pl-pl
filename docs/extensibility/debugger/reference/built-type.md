@@ -1,7 +1,7 @@
 ---
 title: BUILT_TYPE | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BUILT_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692391379c3f2581e535a9e5c885f776565fb93d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315490"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693529"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Ta struktura określa informacje o typie pola pobierana z metadanych.
@@ -41,14 +41,11 @@ public struct BUILT_TYPE {
 ```
 
 #### <a name="parameters"></a>Parametry
-ulAppDomainID  
-Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
+Identyfikator ulAppDomainID aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
 
-guidModule  
-Identyfikator GUID moduł, który zawiera tego pola.
+guidModule identyfikator GUID modułu, który zawiera tego pola.
 
-pUnderlyingField  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikowanie z polem powiązanych z tym polem skompilowany obiekt.
+pUnderlyingField [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identyfikowanie z polem powiązanych z tym polem skompilowany obiekt.
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest wyświetlany jako część Unii w [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury, kiedy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_BUILT` (wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Wyliczenie).
@@ -61,7 +58,7 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

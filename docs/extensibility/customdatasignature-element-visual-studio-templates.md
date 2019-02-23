@@ -12,49 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf09080d3e7ceb3221006e11d47881549ecf5faa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96c8431ec6382c19e5f771d92e4fe7d07d68ea4e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956834"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709658"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature, element (szablony Visual Studio)
-Określa podpis tekstowy do lokalizowania danych niestandardowych.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<CustomDataSignature>  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-<CustomDataSignature>"string"</CustomDataSignature>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
- Brak.  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak.  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
-  
-## <a name="text-value"></a>Wartość tekstowa  
- Wartość tekstowa jest wymagana.  
-  
- Tekst jest ciąg, który ma podpis tekst, który jest wymagany do zlokalizowania danych niestandardowych.  
-  
-## <a name="remarks"></a>Uwagi  
- `CustomDataSignature` element jest opcjonalny.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Visual Studio Template schema reference](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+Określa podpis tekstowy do lokalizowania danych niestandardowych.
+
+ \<VSTemplate> \<TemplateData> \<CustomDataSignature>
+
+## <a name="syntax"></a>Składnia
+
+```
+<CustomDataSignature>"string"</CustomDataSignature>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+ Brak.
+
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak.
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+
+## <a name="text-value"></a>Wartość tekstowa
+ Wartość tekstowa jest wymagana.
+
+ Tekst jest ciąg, który ma podpis tekst, który jest wymagany do zlokalizowania danych niestandardowych.
+
+## <a name="remarks"></a>Uwagi
+ `CustomDataSignature` element jest opcjonalny.
+
+## <a name="see-also"></a>Zobacz także
+- [Visual Studio Template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

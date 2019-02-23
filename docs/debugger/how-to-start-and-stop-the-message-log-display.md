@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f3d2cda787d751f45ae2da9344b62f89ac50c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1ba10dbdb9227c6631048f083ee1857dfc3091d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025465"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712414"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Instrukcje: Uruchamianie i zatrzymywanie wyświetlania dziennika komunikatów
-Gdy [widoku komunikatów](../debugger/messages-view.md) okno jest aktywne, **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** wyboru pojawia się w programie Spy ++ **wiadomości** menu i odpowiadające **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** przycisku paska narzędzi stanie się aktywny.  
-  
-### <a name="to-start-the-message-log-display"></a>Aby rozpocząć wyświetlania dziennika komunikatów  
-  
-1.  Z **wiadomości** menu, wybierz **Rozpocznij rejestrowanie**.  
-  
-### <a name="to-stop-the-message-log-display"></a>Aby zatrzymać wyświetlania dziennika komunikatów  
-  
+Gdy [widoku komunikatów](../debugger/messages-view.md) okno jest aktywne, **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** wyboru pojawia się w programie Spy ++ **wiadomości** menu i odpowiadające **Rozpocznij rejestrowanie** lub **Zatrzymaj rejestrowanie** przycisku paska narzędzi stanie się aktywny.
+
+### <a name="to-start-the-message-log-display"></a>Aby rozpocząć wyświetlania dziennika komunikatów
+
+1.  Z **wiadomości** menu, wybierz **Rozpocznij rejestrowanie**.
+
+### <a name="to-stop-the-message-log-display"></a>Aby zatrzymać wyświetlania dziennika komunikatów
+
 1.  Z **wiadomości** menu, wybierz **Zatrzymaj rejestrowanie**.

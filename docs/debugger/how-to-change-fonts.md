@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c0226ab3535587466629561738efa6d12d4499
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018956"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713962"
 ---
 # <a name="how-to-change-fonts"></a>Instrukcje: Zmienianie czcionek
-Można zmienić czcionkę, styl czcionki i rozmiar czcionki dla Spy ++ systemu windows.  
-  
-### <a name="to-change-font-options"></a>Aby zmienić opcje czcionki  
-  
-1. Z **widoku** menu, wybierz **czcionki**.  
-  
-2. Wybierz czcionkę, styl czcionki i rozmiar czcionki.  
-  
-3. Kliknij przycisk **OK**.  
-  
-   Wybieranie **Zapisz czcionkę jako domyślne** spowoduje, że wszystkie przyszłe Spy ++ okna czcionka.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
- [Widoków programu Spy ++](../debugger/spy-increment-views.md)   
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)
+Można zmienić czcionkę, styl czcionki i rozmiar czcionki dla Spy ++ systemu windows.
+
+### <a name="to-change-font-options"></a>Aby zmienić opcje czcionki
+
+1. Z **widoku** menu, wybierz **czcionki**.
+
+2. Wybierz czcionkę, styl czcionki i rozmiar czcionki.
+
+3. Kliknij przycisk **OK**.
+
+   Wybieranie **Zapisz czcionkę jako domyślne** spowoduje, że wszystkie przyszłe Spy ++ okna czcionka.
+
+## <a name="see-also"></a>Zobacz też
+- [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
+- [Widoki w programie Spy++](../debugger/spy-increment-views.md)
+- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

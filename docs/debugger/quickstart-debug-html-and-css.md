@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721059"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 
@@ -254,10 +254,10 @@ Podczas debugowania aplikacji, możesz wybrać elementy modelu DOM na trzy sposo
 > Wyróżnianie elementów, umieszczając kursor myszy nad nimi jest tylko częściowo obsługiwane w Emulator Windows Phone.
 
 ## <a name="see-also"></a>Zobacz też
-[Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)  
-[Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)  
-[Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[Pomoc techniczna i dostępność](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [Debugowanie kontrolki WebView](../debugger/debug-a-webview-control.md)
+- [Skróty klawiaturowe](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)
+- [Debugowanie przykładowego kodu HTML, CSS i JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [Pomoc techniczna i dostępność](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

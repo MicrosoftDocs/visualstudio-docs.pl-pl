@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
@@ -11,56 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b8850ab8b70f1da216ea4f5d90ebffd575bd50d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998966"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699551"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-Pobiera informacje o modułach w grupie symboli.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetCurrentModulesInfo(  
-   unsigned long * pCount,  
-   GUID *          ppGuids,  
-   DWORD *         pADIds,  
-   DWORD *         pCurrentState,  
-   IUnknown **     ppCDModItfs  
-);  
-```  
-  
-```csharp  
-int GetCurrentModulesInfo(  
-   uint       pCount,  
-   Guid       ppGuids,  
-   uint       pADIds,  
-   uint       pCurrentState,  
-   out object ppCDModItfs  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pCount`  
- [in] Liczba modułów w `ppGuids` tablicy.  
-  
- `ppGuids`  
- [in] Tablica, która zawiera unikatowe identyfikatory dla modułów.  
-  
- `pADIds`  
- [in] Identyfikatory domen aplikacji.  
-  
- `pCurrentState`  
- [in] Bieżący stan grupy symboli.  
-  
- `ppCDModItfs`  
- [out] Zwraca obiekt, który zawiera moduły w grupie symboli.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
+Pobiera informacje o modułach w grupie symboli.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetCurrentModulesInfo(
+   unsigned long * pCount,
+   GUID *          ppGuids,
+   DWORD *         pADIds,
+   DWORD *         pCurrentState,
+   IUnknown **     ppCDModItfs
+);
+```
+
+```csharp
+int GetCurrentModulesInfo(
+   uint       pCount,
+   Guid       ppGuids,
+   uint       pADIds,
+   uint       pCurrentState,
+   out object ppCDModItfs
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pCount`
+
+ [in] Liczba modułów w `ppGuids` tablicy.
+
+ `ppGuids`
+
+ [in] Tablica, która zawiera unikatowe identyfikatory dla modułów.
+
+ `pADIds`
+
+ [in] Identyfikatory domen aplikacji.
+
+ `pCurrentState`
+
+ [in] Bieżący stan grupy symboli.
+
+ `ppCDModItfs`
+
+ [out] Zwraca obiekt, który zawiera moduły w grupie symboli.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

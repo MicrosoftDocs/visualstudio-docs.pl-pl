@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 helpviewer_keywords:
@@ -12,54 +12,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 706a464fb7ce67e05ca284ee35af8b330f781579
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919138"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693402"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Pobiera atrybuty niestandardowe bajtów, biorąc pod uwagę nazwę atrybutu niestandardowego.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetCustomAttributeByName(   
-   LPCOLESTR pszCustomAttributeName,  
-   BYTE*     ppBlob,  
-   DWORD*    pdwLen  
-);  
-```  
-  
-```csharp  
-int GetCustomAttributeByName(  
-   [In] string        pszCustomAttributeName,   
-   [In, Out] byte[]   ppBlob,   
-   [In, Out] ref uint pdwLen  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pszCustomAttributeName`  
- [in] Ciąg zawierający nazwę atrybutu niestandardowego do wyszukania.  
-  
- `ppBlob`  
- [out w] Tablica, która jest wypełniane bajtów atrybutu niestandardowego.  
-  
- `pdwLen`  
- [out w] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisanych na tablicy.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma atrybutu niestandardowego. W przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Ustaw `ppBlob` parametr ma wartość null, aby zwrócić liczbę atrybutów dostępnych bajtów. Następnie przydzielić tablicy i przekażesz ten tablica w `ppBlob` parametru.  
-  
- Bajty atrybut reprezentują dane pierwotne atrybutu niestandardowego.  
-  
- Jeśli `ppBlob` i `pdwLen` parametry są ustawione na wartość null, Metoda ta może służyć do ustalenia, czy atrybut niestandardowy jedynie istnieje. Alternatywą łatwiej jest jednak wywołać [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) metody.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
- [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)
+Pobiera atrybuty niestandardowe bajtów, biorąc pod uwagę nazwę atrybutu niestandardowego.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetCustomAttributeByName( 
+   LPCOLESTR pszCustomAttributeName,
+   BYTE*     ppBlob,
+   DWORD*    pdwLen
+);
+```
+
+```csharp
+int GetCustomAttributeByName(
+   [In] string        pszCustomAttributeName,
+   [In, Out] byte[]   ppBlob,
+   [In, Out] ref uint pdwLen
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pszCustomAttributeName`
+
+ [in] Ciąg zawierający nazwę atrybutu niestandardowego do wyszukania.
+
+ `ppBlob`
+
+ [out w] Tablica, która jest wypełniane bajtów atrybutu niestandardowego.
+
+ `pdwLen`
+
+ [out w] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisanych na tablicy.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma atrybutu niestandardowego. W przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Ustaw `ppBlob` parametr ma wartość null, aby zwrócić liczbę atrybutów dostępnych bajtów. Następnie przydzielić tablicy i przekażesz ten tablica w `ppBlob` parametru.
+
+ Bajty atrybut reprezentują dane pierwotne atrybutu niestandardowego.
+
+ Jeśli `ppBlob` i `pdwLen` parametry są ustawione na wartość null, Metoda ta może służyć do ustalenia, czy atrybut niestandardowy jedynie istnieje. Alternatywą łatwiej jest jednak wywołać [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) metody.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
+- [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

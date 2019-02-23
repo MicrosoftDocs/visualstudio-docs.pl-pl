@@ -11,26 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f54572c7712d859925ce7a93eaa8a1f3d8c79060
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c79a22a81cd265d148987fc1660e6128ce0efceb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955131"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715001"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Identyfikatory GUID i stałe w Visual Studio SDK
-<xref:Microsoft.VisualStudio.VSConstants> Klasy zapewnia dostęp do wybranych środowiska identyfikatory GUID i stałe.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Identyfikatory GUID środowiska IDE](../extensibility/ide-guids.md)  
- Wyświetla listę identyfikatorów GUID dostarczone przez <xref:Microsoft.VisualStudio.VSConstants>.  
-  
- [Stałe środowiska IDE](../extensibility/ide-constants.md)  
- Wyświetla listę stałych zestawu SDK, dostarczone przez <xref:Microsoft.VisualStudio.VSConstants>.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)  
- Wyświetla listę standardowych dostępnych stałe modelu COM do zarządzanego kodu z Framework zarządzane pakietu (MPF).  
-  
- [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- Wyświetla listę różnych typów elementów polecenia używane do rozszerzania systemów projektu.
+<xref:Microsoft.VisualStudio.VSConstants> Klasy zapewnia dostęp do wybranych środowiska identyfikatory GUID i stałe.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Identyfikatory GUID środowiska IDE](../extensibility/ide-guids.md) zawiera listę identyfikatorów GUID dostarczone przez <xref:Microsoft.VisualStudio.VSConstants>.
+
+- [Stałe środowiska IDE](../extensibility/ide-constants.md) SDK zawiera listę stałych, dostarczone przez <xref:Microsoft.VisualStudio.VSConstants>.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md) stałe list standardowego modelu COM, dostępne dla kodu zarządzanego z Framework zarządzane pakietu (MPF).
+
+- [Polecenia definiowane w środowisku IDE do rozszerzania systemów projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) wymieniono różne rodzaje elementów polecenia używane do rozszerzania systemów projektu.

@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryBytes2::GetSize | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryBytes2::GetSize
 helpviewer_keywords:
@@ -13,36 +13,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8ac99883e2e7d25095a7a9f60eb5b5fe23c531
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007805"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712115"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Pobiera rozmiar w bajtach, pamięci, reprezentowane przez to [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetSize(   
-   UINT64* pqwSize  
-);  
-```  
-  
-```csharp  
-int GetSize(  
-   out ulong pqwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pqwSize`  
- [out] Zwraca rozmiar w bajtach miejsca w pamięci.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Pobiera rozmiar w bajtach, pamięci, reprezentowane przez to [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetSize( 
+   UINT64* pqwSize
+);
+```
+
+```csharp
+int GetSize(
+   out ulong pqwSize
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pqwSize`
+
+ [out] Zwraca rozmiar w bajtach miejsca w pamięci.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

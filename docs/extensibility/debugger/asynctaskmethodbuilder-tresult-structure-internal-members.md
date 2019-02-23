@@ -11,37 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6042b574976be6587a918de6b595d0e7b254defb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6dc0f1a2cf8be65d812591b6d0d87fef15b42cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716886"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; struktura — składowe wewnętrzne
-W tym temacie opisano wewnętrznych członków <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> klasy. Aby uzyskać ogólne informacje dotyczące tej klasy, zobacz <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> temat referencyjny.  
-  
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **Zestaw:** mscorlib (w mscorlib.dll)  
-  
- Ponieważ nie można uzyskać dostępu do tych wewnętrznych składowych z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```csharp  
-.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>  
-       extends System.ValueType  
-       implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
-```  
-  
-## <a name="internal-members"></a>Składowe wewnętrzne  
-  
-|Nazwa|Opis|  
-|----------|-----------------|  
-|[Właściwość ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Pobiera obiekt, który może być używany do jednoznacznego identyfikowania tego konstruktora do debugera.|  
-|[pole m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Reprezentuje opóźnieniem zainicjowane utworzone zadanie.|  
-  
-## <a name="see-also"></a>Zobacz także  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+W tym temacie opisano wewnętrznych członków <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> klasy. Aby uzyskać ogólne informacje dotyczące tej klasy, zobacz <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> temat referencyjny.
+
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **Zestaw:** mscorlib (w mscorlib.dll)
+
+ Ponieważ nie można uzyskać dostępu do tych wewnętrznych składowych z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+
+## <a name="syntax"></a>Składnia
+
+```csharp
+.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>
+       extends System.ValueType
+       implements System.Runtime.CompilerServices.IAsyncMethodBuilder
+```
+
+## <a name="internal-members"></a>Składowe wewnętrzne
+
+|Nazwa|Opis|
+|----------|-----------------|
+|[Właściwość ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Pobiera obiekt, który może być używany do jednoznacznego identyfikowania tego konstruktora do debugera.|
+|[pole m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Reprezentuje opóźnieniem zainicjowane utworzone zadanie.|
+
+## <a name="see-also"></a>Zobacz także
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
+- [Równoległe elementy wewnętrzne rozszerzeń dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

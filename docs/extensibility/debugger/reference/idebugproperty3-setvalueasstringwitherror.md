@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450311"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709281"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Ustawia wartość tej właściwości i zwraca komunikat o błędzie, jeśli to konieczne.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pszValue`  
-[in] Wartość do ustawienia.
+`pszValue`
 
-`dwRadix`  
-[in] Podstawa jest ustawiona wartość.
+ [in] Wartość do ustawienia.
 
-`dwTimeout`  
-[in] Czas oczekiwania na ustawienie wartości (`INFINITE` oznacza, że czekać w nieskończoność).
+`dwRadix`
 
-`errorString`  
-[out] Jeśli wystąpił błąd podczas ustawiania wartości, to zawiera przyczynę niepowodzenia.
+ [in] Podstawa jest ustawiona wartość.
+
+`dwTimeout`
+
+ [in] Czas oczekiwania na ustawienie wartości (`INFINITE` oznacza, że czekać w nieskończoność).
+
+`errorString`
+
+ [out] Jeśli wystąpił błąd podczas ustawiania wartości, to zawiera przyczynę niepowodzenia.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

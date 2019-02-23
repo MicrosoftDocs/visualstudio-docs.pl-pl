@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02e88780e41b9a46163c7b66b2d83e64d190c307
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413387"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717952"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 Obciążenie debugowania symbole danego strumienia danych.
@@ -44,20 +44,25 @@ int LoadSymbolsFromStream(
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identyfikator domeny aplikacji.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Unikatowy identyfikator modułu.
+ [in] Identyfikator domeny aplikacji.
 
-`baseAddress`  
-[in] Adres podstawowy pamięci.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Obiekt, który zawiera metadane symbolu.
+ [in] Unikatowy identyfikator modułu.
 
-`pStream`  
-[in] Strumień danych, który zawiera symbole.
+`baseAddress`
+
+ [in] Adres podstawowy pamięci.
+
+`pUnkMetadataImport`
+
+ [in] Obiekt, który zawiera metadane symbolu.
+
+`pStream`
+
+ [in] Strumień danych, który zawiera symbole.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -79,4 +84,4 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

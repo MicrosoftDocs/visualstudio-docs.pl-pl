@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryBytes2::ReadAt | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryBytes2::ReadAt
 helpviewer_keywords:
@@ -13,66 +13,71 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16c5df12b268fb53ebd5b6174cbf9225a868f048
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023632"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718238"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-Odczytuje sekwencji bajtów, zaczynając od danej lokalizacji.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT ReadAt(   
-   IDebugMemoryContext2* pStartContext,  
-   DWORD                 dwCount,  
-   BYTE*                 rgbMemory,  
-   DWORD*                pdwRead,  
-   DWORD*                pdwUnreadable  
-);  
-```  
-  
-```csharp  
-int ReadAt(  
-   IDebugMemoryContext2 pStartContext,  
-   uint                 dwCount,  
-   byte[]               rgbMemory,  
-   out uint             pdwRead,  
-   ref uint             pdwUnreadable  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pStartContext`  
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie należy rozpocząć odczyt bajtów.  
-  
- `dwCount`  
- [in] Liczba bajtów do odczytania. Również określa długość `rgbMemory` tablicy.  
-  
- `rgbMemory`  
- [out w] Tablica wypełniona Bajty odczytane.  
-  
- `pdwRead`  
- [out] Zwraca liczbę bajtów ciągłych odczytane.  
-  
- `pdwUnreadable`  
- [out w] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczbę bajtów nie można go odczytać.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Jeśli wymagane są 100 bajtów i 50 pierwszych można odczytać, następnych 20 są nieczytelne i pozostałe 30 do odczytu, Metoda ta zwraca:  
-  
- *`pdwRead` = 50  
-  
- *`pdwUnreadable` = 20  
-  
- W tym przypadku ponieważ `*pdwRead + *pdwUnreadable < dwCount`, obiekt wywołujący musi wywoływania dodatkowych odczytu pozostałe bajty 30 oryginalnego 100, żądane i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt przekazany w `pStartContext` parametru musi być zaawansowane za 70.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+Odczytuje sekwencji bajtów, zaczynając od danej lokalizacji.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT ReadAt( 
+   IDebugMemoryContext2* pStartContext,
+   DWORD                 dwCount,
+   BYTE*                 rgbMemory,
+   DWORD*                pdwRead,
+   DWORD*                pdwUnreadable
+);
+```
+
+```csharp
+int ReadAt(
+   IDebugMemoryContext2 pStartContext,
+   uint                 dwCount,
+   byte[]               rgbMemory,
+   out uint             pdwRead,
+   ref uint             pdwUnreadable
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pStartContext`
+
+ [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie należy rozpocząć odczyt bajtów.
+
+ `dwCount`
+
+ [in] Liczba bajtów do odczytania. Również określa długość `rgbMemory` tablicy.
+
+ `rgbMemory`
+
+ [out w] Tablica wypełniona Bajty odczytane.
+
+ `pdwRead`
+
+ [out] Zwraca liczbę bajtów ciągłych odczytane.
+
+ `pdwUnreadable`
+
+ [out w] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczbę bajtów nie można go odczytać.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Jeśli wymagane są 100 bajtów i 50 pierwszych można odczytać, następnych 20 są nieczytelne i pozostałe 30 do odczytu, Metoda ta zwraca:
+
+ *`pdwRead` = 50
+
+ *`pdwUnreadable` = 20
+
+ W tym przypadku ponieważ `*pdwRead + *pdwUnreadable < dwCount`, obiekt wywołujący musi wywoływania dodatkowych odczytu pozostałe bajty 30 oryginalnego 100, żądane i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt przekazany w `pStartContext` parametru musi być zaawansowane za 70.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

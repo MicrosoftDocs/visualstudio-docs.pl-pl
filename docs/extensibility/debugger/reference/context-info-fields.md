@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO_FIELDS | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da34a7b5e2c111f7e9385d729f6c3739d1ada285
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 13501c86eabd249e0e47137099862cd6db654415
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317528"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706096"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Określa, jakie informacje należy pobrać o kontekście pamięci.
@@ -50,23 +50,17 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-CIF_MODULEURL  
-Inicjowanie bądź użyj `bstrModuleUrl` pole [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury.
+CIF_MODULEURL zainicjować bądź użyj `bstrModuleUrl` pole [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury.
 
-CIF_FUNCTION  
-Inicjowanie bądź użyj `bstrFunction` pole `CONTEXT_INFO` struktury.
+CIF_FUNCTION zainicjować bądź użyj `bstrFunction` pole `CONTEXT_INFO` struktury.
 
-CIF_FUNCTIONOFFSET  
-Inicjowanie bądź użyj `posFunctionOffset` pole `CONTEXT_INFO` struktury.
+CIF_FUNCTIONOFFSET zainicjować bądź użyj `posFunctionOffset` pole `CONTEXT_INFO` struktury.
 
-CIF_ADDRESS  
-Inicjowanie bądź użyj `bstrAddress` pole `CONTEXT_INFO` struktury.
+CIF_ADDRESS zainicjować bądź użyj `bstrAddress` pole `CONTEXT_INFO` struktury.
 
-CIF_ADDRESSOFFSET  
-Inicjowanie bądź użyj `bstrAddressOffset` pole `CONTEXT_INFO` struktury.
+CIF_ADDRESSOFFSET zainicjować bądź użyj `bstrAddressOffset` pole `CONTEXT_INFO` struktury.
 
-CIF_ALLFIELDS  
-Inicjowanie bądź Użyj wszystkich pól `CONTEXT_INFO` struktury.
+CIF_ALLFIELDS zainicjować bądź Użyj wszystkich pól `CONTEXT_INFO` struktury.
 
 ## <a name="remarks"></a>Uwagi
 Te wartości są przekazywane parametr [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metodę, aby wskazać, które pola [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) struktury, które mają zostać zainicjowane.
@@ -83,6 +77,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

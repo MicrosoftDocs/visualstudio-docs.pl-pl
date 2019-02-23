@@ -8,30 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d5f599c11cf63efab69998880e228add354192
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c3b6e313bdf6641359c22e2dfa900d1b705a848
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996782"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722437"
 ---
 # <a name="add-commands-to-toolbars"></a>Dodawanie poleceń do pasków narzędzi
-Pasek narzędzi jest pasek poziomej lub pionowej, zawierający przyciski, powiązane polecenia. Można dodać własne poleceń do pasków narzędzi na wielu różnych systemu windows w programie Visual Studio: Okno główne programu Visual Studio, w Eksploratorze rozwiązań i własne niestandardowe okna narzędzi.  
-  
- W tej sekcji przedstawiono kilka kwestii, które można wykonać za pomocą poleceń na paskach narzędzi.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md)  
- Wyjaśnia, jak dodać pasek narzędzi do zestawu paski narzędzi w głównym oknie programu Visual Studio.  
-  
- [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
- Wyjaśnia, jak dodać pasek narzędzi do okna narzędzi.  
-  
- [Dodaj polecenie do paska narzędzi Eksploratora rozwiązań](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- Wyjaśnia, jak dodać polecenie do paska narzędzi w Eksploratorze rozwiązań.  
-  
- [Dodawanie kontrolera menu do paska narzędzi](../extensibility/adding-a-menu-controller-to-a-toolbar.md)  
- Wyjaśnia, jak dodawanie kontrolera menu do paska narzędzi.  
-  
- [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)  
- Wyjaśnia, jak i dynamiczne dodawanie elementów menu w różnych kontekstach.
+Pasek narzędzi jest pasek poziomej lub pionowej, zawierający przyciski, powiązane polecenia. Można dodać własne poleceń do pasków narzędzi na wielu różnych systemu windows w programie Visual Studio: Okno główne programu Visual Studio, w Eksploratorze rozwiązań i własne niestandardowe okna narzędzi.
+
+ W tej sekcji przedstawiono kilka kwestii, które można wykonać za pomocą poleceń na paskach narzędzi.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) wyjaśnia, jak dodać pasek narzędzi do zestawu paski narzędzi w głównym oknie programu Visual Studio.
+
+- [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) wyjaśnia, jak dodać pasek narzędzi do okna narzędzi.
+
+- [Dodaj polecenie do paska narzędzi Eksploratora rozwiązań](../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md) wyjaśnia, jak dodać polecenie do paska narzędzi w Eksploratorze rozwiązań.
+
+- [Dodawanie kontrolera menu do paska narzędzi](../extensibility/adding-a-menu-controller-to-a-toolbar.md) wyjaśnia, jak dodawanie kontrolera menu do paska narzędzi.
+
+- [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md) wyjaśnia, jak i dynamiczne dodawanie elementów menu w różnych kontekstach.

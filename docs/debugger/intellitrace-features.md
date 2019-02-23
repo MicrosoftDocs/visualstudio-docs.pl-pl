@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317773"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720188"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funkcje IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Migawki są dostępne w usłudze Visual Studio Enterprise 2017, wersja 15.5 lub 
 
 To nie jest domyślnie włączona, ale IntelliTrace może rejestrować wywołania metody wraz z wydarzeniami. Aby włączyć zbieranie wywołań, przejdź do metody **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **zdarzenia IntelliTrace i wywołania informacji (tylko zarządzany)**.
 
-Informacje na temat wywołań nie jest obecnie dostępna dla aplikacji platformy .NET Core i ASP.NET Core. 
+Informacje na temat wywołań nie jest obecnie dostępna dla aplikacji platformy .NET Core i ASP.NET Core.
 
 Dzięki temu można wyświetlić historię stosu wywołań, poruszać i wywołań w kodzie. IntelliTrace zapisuje dane, takie jak nazwy metod, punkty wejścia i wyjścia metody i niektóre wartości parametrów i zwracanych wartości.
 

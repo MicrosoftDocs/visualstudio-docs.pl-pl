@@ -12,61 +12,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949951"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711595"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList, funkcja
-Ta funkcja określa, które pliki i katalogi (opcjonalnie) są przechowywane w kontroli źródła, biorąc pod uwagę listę katalogów do sprawdzenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- pContext  
- [in] Wskaźnik kontekście wtyczki kontroli źródła.  
-  
- nDirs  
- [in] Liczba ścieżek katalogów w `lpDirPaths` tablicy.  
-  
- lpDirPaths  
- [in] Tablica ścieżek katalogów do sprawdzenia.  
-  
- pfnPopulate  
- [in] Funkcja wywołania zwrotnego do wywołania dla każdej ścieżki katalogu i (opcjonalnie) Nazwa pliku w `lpDirPaths` (zobacz [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Aby uzyskać szczegółowe informacje).  
-  
- pvCallerData  
- [in] Niezmieniona wartość, która zostanie przekazany do funkcji wywołania zwrotnego.  
-  
- fOptions  
- [in] Kombinacja wartości, które kontrolują, jak są przetwarzane katalogów (zobacz sekcję "PopulateDirList flags" [flagi bitowe używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) uzyskać odpowiednie wartości).  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
-  
-|Wartość|Opis|  
-|-----------|-----------------|  
-|SCC_OK|Operacja została ukończona pomyślnie.|  
-|SCC_E_UNKNOWNERROR|Wystąpił błąd.|  
-  
-## <a name="remarks"></a>Uwagi  
- Tylko te katalogi i (opcjonalnie) nazw plików, które są rzeczywiście repozytorium kontroli źródła są przekazywane do funkcji wywołania zwrotnego.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
- [Flagi bitowe używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md)   
- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
- [Kody błędów](../extensibility/error-codes.md)
+Ta funkcja określa, które pliki i katalogi (opcjonalnie) są przechowywane w kontroli źródła, biorąc pod uwagę listę katalogów do sprawdzenia.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+SCCRTN SccPopulateDirList(
+   LPVOID        pContext,
+   LONG          nDirs,
+   LPCSTR*       lpDirPaths,
+   POPDIRLISTFUNCpfnPopulate,
+   LPVOID        pvCallerData,
+   LONG          fOptions
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ pContext
+
+[in] Wskaźnik kontekście wtyczki kontroli źródła.
+
+ nDirs
+
+[in] Liczba ścieżek katalogów w `lpDirPaths` tablicy.
+
+ lpDirPaths
+
+[in] Tablica ścieżek katalogów do sprawdzenia.
+
+ pfnPopulate
+
+[in] Funkcja wywołania zwrotnego do wywołania dla każdej ścieżki katalogu i (opcjonalnie) Nazwa pliku w `lpDirPaths` (zobacz [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Aby uzyskać szczegółowe informacje).
+
+ pvCallerData
+
+[in] Niezmieniona wartość, która zostanie przekazany do funkcji wywołania zwrotnego.
+
+ fOptions
+
+[in] Kombinacja wartości, które kontrolują, jak są przetwarzane katalogów (zobacz sekcję "PopulateDirList flags" [flagi bitowe używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) uzyskać odpowiednie wartości).
+
+## <a name="return-value"></a>Wartość zwracana
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+
+|Wartość|Opis|
+|-----------|-----------------|
+|SCC_OK|Operacja została ukończona pomyślnie.|
+|SCC_E_UNKNOWNERROR|Wystąpił błąd.|
+
+## <a name="remarks"></a>Uwagi
+ Tylko te katalogi i (opcjonalnie) nazw plików, które są rzeczywiście repozytorium kontroli źródła są przekazywane do funkcji wywołania zwrotnego.
+
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+- [Flagi bitowe używane przez określone polecenia ](../extensibility/bitflags-used-by-specific-commands.md)
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
+- [Kody błędów](../extensibility/error-codes.md)

@@ -11,61 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b28112abad97dae3c4edcb46b5f93109df4a4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f30ce24d720ff849b4c3959780facc8115b0fb23
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980313"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697055"
 ---
 # <a name="buttons-element"></a>Buttons, element
-Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentują poszczególne polecenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-<Buttons>  
-  <Button>... </Button>  
-  <Button>... </Button>  
-</Buttons>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|  
-|[Button, element](../extensibility/button-element.md)|Określa polecenie, które użytkownik może interakcyjnie przeprowadzić.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
-  
-## <a name="example"></a>Przykład  
-  
-```  
-<Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
-    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
-    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
-    <Strings>  
-      <ButtonText>C# Command Sample</ButtonText>  
-    </Strings>  
-  </Button>  
-</Buttons>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentują poszczególne polecenia.
+
+## <a name="syntax"></a>Składnia
+
+```
+<Buttons>
+  <Button>... </Button>
+  <Button>... </Button>
+</Buttons>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|
+|[Button, element](../extensibility/button-element.md)|Określa polecenie, które użytkownik może interakcyjnie przeprowadzić.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
+
+## <a name="example"></a>Przykład
+
+```
+<Buttons>
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
+    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
+    <Strings>
+      <ButtonText>C# Command Sample</ButtonText>
+    </Strings>
+  </Button>
+</Buttons>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

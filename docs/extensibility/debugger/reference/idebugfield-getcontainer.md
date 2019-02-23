@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetContainer | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetContainer
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bf1aea1291b8d92d2ebdfcb35f4c6eeb5125f77
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283e23a70b95e3882569dbb18dda7ba365b8b765
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983892"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718147"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
-Ta metoda pobiera kontener pola.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetContainer(   
-   IDebugContainerField** ppContainerField  
-);  
-```  
-  
-```csharp  
-int GetContainer(  
-   out IDebugContainerField ppContainerField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppContainerField`  
- [out] Zwraca kontener, reprezentowane przez [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Jeśli to pole nie ma kontenera, zwrócony `ppContainerField` będzie mieć wartość null.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+Ta metoda pobiera kontener pola.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetContainer( 
+   IDebugContainerField** ppContainerField
+);
+```
+
+```csharp
+int GetContainer(
+   out IDebugContainerField ppContainerField
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppContainerField`
+
+ [out] Zwraca kontener, reprezentowane przez [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Jeśli to pole nie ma kontenera, zwrócony `ppContainerField` będzie mieć wartość null.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

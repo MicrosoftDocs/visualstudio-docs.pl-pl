@@ -1,7 +1,7 @@
 ---
 title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 152f3b501aad6bba9e87e861346fa9ddb876a44d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315628"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692765"
 ---
 # <a name="displaykind"></a>DisplayKind
 Wylicza prawidłowe wartości, reprezentujących rodzaje informacji od [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu i wyświetlenie użytkownikowi.
@@ -42,14 +42,11 @@ public enum enum_DisplayKind
 ```
 
 #### <a name="parameters"></a>Parametry
-DisplayKind_Value  
-Wartość pola.
+DisplayKind_Value wartość pola.
 
-DisplayKind_Name  
-Nazwa pola.
+DisplayKind_Name nazwę pola.
 
-DisplayKind_Type  
-Typ pola.
+Typ DisplayKind_Type pola.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: EE.h
@@ -59,5 +56,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

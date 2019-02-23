@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bde2d59bac380ca75fa8d5dcb8a1b6e5b98803e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 722d8c42786a7aaa2daae293b96f7926abcc90ca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598976"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719837"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Zapisuje pliki dziennika dla bieżącego kontekstu.
@@ -32,9 +32,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>Parametry
-- [in] `intermediateDirectory` Katalog, w którym mają zostać zapisane w dzienniku śledzenia.
+[in] `intermediateDirectory`
 
-- [in] `tlogRootName` Główna nazwa nazwy pliku dziennika.
+ Katalog, w którym mają zostać zapisane w dzienniku śledzenia.
+
+[in] `tlogRootName`
+
+ Nazwa głównej nazwy pliku dziennika.
 
 ## <a name="return-value"></a>Wartość zwracana
  **HRESULT** z **Powodzenie** bitu, jeśli kontekst śledzenia został utworzony.

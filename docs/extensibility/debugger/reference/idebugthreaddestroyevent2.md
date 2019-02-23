@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThreadDestroyEvent2
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f511a7f90a7f9d34352bf0b42bb4182b58ddd50c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fc94a1289f8b65798f5ad0dab1b4e82bf76b533
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957994"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700227"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
-Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po uruchomieniu wątku do zakończenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-IDebugThreadDestroyEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- DE implementuje ten interfejs do raportu, który wątek została zakończona. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu.  
-  
-## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- DE tworzy i wysyła tego obiektu zdarzenia do raportu, który wątek została zakończona. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.  
-  
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
- W poniższej tabeli przedstawiono metody `IDebugThreadDestroyEvent2`.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Pobiera kod wyjścia wątku.|  
-  
-## <a name="remarks"></a>Uwagi  
- Program Visual Studio używa tego zdarzenia do zaktualizowania **wątków** okna.  
-  
-## <a name="requirements"></a>Wymagania  
- Header: msdbg.h  
-  
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop  
-  
- Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Zobacz też  
- [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), po uruchomieniu wątku do zakończenia.
+
+## <a name="syntax"></a>Składnia
+
+```
+IDebugThreadDestroyEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
+ DE implementuje ten interfejs do raportu, który wątek została zakończona. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu.
+
+## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
+ DE tworzy i wysyła tego obiektu zdarzenia do raportu, który wątek została zakończona. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.
+
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+ W poniższej tabeli przedstawiono metody `IDebugThreadDestroyEvent2`.
+
+|Metoda|Opis|
+|------------|-----------------|
+|[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|Pobiera kod wyjścia wątku.|
+
+## <a name="remarks"></a>Uwagi
+ Program Visual Studio używa tego zdarzenia do zaktualizowania **wątków** okna.
+
+## <a name="requirements"></a>Wymagania
+ Header: msdbg.h
+
+ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Zobacz też
+- [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

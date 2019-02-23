@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450584"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721520"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
@@ -60,7 +60,7 @@ Możesz znaleźć wiele zaawansowanych funkcji w **Edytuj** > **zaawansowane** m
 |Zmień litery na małe|Zmienia wszystkie znaki w zaznaczeniu na małe litery, lub jeśli nie zaznaczono żadnego fragmentu, zmienia znak w punkcie wstawiania na małe litery. Skrót: **CTRL**+**U**.|
 |Przesuń wybrane wiersze w górę|Przenosi wybrany wiersz w górę o jeden wiersz. Skrót: **ALT**+**Strzałka w górę**.|
 |Przesuń wybrane wiersze w|Przenosi wybrany wiersz w dół o jeden wiersz. Skrót: **ALT**+**strzałkę w dół**.|
-|Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|
+|Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza. Skrót: **Ctrl**+**K**, **Ctrl**+**\\**|
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **Zawijanie** > **Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|
 |Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Można włączać zawijanie wyrazów i Włącz w **Edytor tekstu wszystkie języki** ustawień (**narzędzia** > **opcje** > **Edytor tekstu**   >  **Wszystkie języki**).|
 |Dodaj komentarz do zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia. Skrót: **Ctrl**+**K**, **Ctrl**+**C**|
@@ -76,7 +76,7 @@ Można przenieść w edytorze kodu w kilku różnych sposobów, łącznie z poru
 
 ## <a name="find-references-in-your-code-base"></a>Znajdowanie odwołań w kodzie
 
-Aby dowiedzieć się, gdzie elementy określonego kodu do których istnieją odwołania w całej bazie kodu, można użyć **Znajdź wszystkie odwołania** polecenia. Ponadto po kliknięciu typu lub elementu członkowskiego, **wyróżnianie odwołań** funkcja automatycznie wyróżnia wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
+Aby dowiedzieć się, gdzie elementy określonego kodu do których istnieją odwołania w całej bazie kodu, można użyć **Znajdź wszystkie odwołania** polecenie i naciśnij klawisz **Shift**+**F12**. Ponadto po kliknięciu typu lub elementu członkowskiego, **wyróżnianie odwołań** funkcja automatycznie wyróżnia wszystkie odwołania do tego typu lub elementu członkowskiego. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Dopasowywanie edytora
 

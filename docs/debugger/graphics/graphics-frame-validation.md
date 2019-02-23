@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991531"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694819"
 ---
 # <a name="graphics-frame-validation"></a>Weryfikacja ramki grafiki
 <!-- VERSIONLESS --> Visual Studio 2017 i lepsze wsparcie **Weryfikacja ramki** narzędzia.  Weryfikacja ramki okna wyświetla błędy i ostrzeżenia skojarzony z listy zdarzeń.  Aby wyświetlić to okno, wybierz **Widok > Weryfikacja ramki** menu.
@@ -33,6 +33,6 @@ Kliknij przycisk **Uruchom weryfikację** przycisk w lewym górnym rogu, aby zai
 | Komunikat | Komunikat skojarzony ze zdarzeniem. |
 | Zdarzenie | Zdarzenie skojarzone z błąd lub ostrzeżenie. |
 
-## <a name="see-also"></a>Zobacz też  
-[Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Zobacz też
+[Diagnostyka grafiki (debugowanie grafiki DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155360"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718554"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
 
-W programie Visual Studio 2017 można otworzyć kod z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, możesz można, na przykład klonowanie repozytorium w serwisie GitHub, otwórz go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu. Jeśli to konieczne, można określić zadania kompilacji niestandardowej i uruchom parametrów za pomocą prostego pliki w formacie JSON.
+Możesz otworzyć kod z niemal dowolnego typu na podstawie katalogu projektu do programu Visual Studio bez konieczności plik rozwiązania lub projektu. Oznacza to, możesz można, na przykład klonowanie repozytorium w serwisie GitHub, otwórz go bezpośrednio w programie Visual Studio i rozpocząć tworzenie bez konieczności tworzenia rozwiązania lub projektu. Jeśli to konieczne, można określić zadania kompilacji niestandardowej i uruchom parametrów za pomocą prostego pliki w formacie JSON.
 
 Po otwarciu plików kodu w programie Visual Studio, **Eksploratora rozwiązań** Wyświetla wszystkie pliki w folderze. Możesz kliknąć dowolny plik, aby rozpocząć jego edycji. W tle programu Visual Studio uruchamia indeksowanie plików, aby włączyć funkcję IntelliSense, nawigowanie i funkcje refaktoryzacji. Jak edytowanie, tworzenie, przenieść lub usunąć pliki programu Visual Studio automatycznie śledzi zmiany i stale aktualizuje jego indeksu funkcji IntelliSense. Za pomocą kolorowania składni i w wielu przypadkach, pojawi się kod obejmują podstawowe instrukcji IntelliSense.
 
@@ -29,9 +29,19 @@ Po otwarciu plików kodu w programie Visual Studio, **Eksploratora rozwiązań**
 Kod można otworzyć w programie Visual Studio, w dowolnym z następujących sposobów:
 
 - Na pasku menu programu Visual Studio, wybierz **pliku** > **Otwórz** > **folderu**, a następnie przejdź do lokalizacji kodu.
+
 - Menu kontekstowe (kliknij prawym przyciskiem myszy) do folderu zawierającego kod, wybierz **Otwórz w programie Visual Studio** polecenia.
+
+::: moniker range="vs-2017"
 - Wybierz **Otwórz Folder** linku w programie Visual Studio **strona startowa**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Wybierz **Otwórz Folder** link w oknie uruchamiania.
+::: moniker-end
+
 - Jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Ctrl**+**Shift**+**Alt**+**O** w wizualizacji Studio.
+
 - Otwórz kod ze sklonowanego repozytorium GitHub.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Aby otworzyć kod ze sklonowanego repozytorium GitHub

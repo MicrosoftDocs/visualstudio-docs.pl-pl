@@ -13,97 +13,79 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e63311698a21cdb5fed3d0ab5eee799d94ed109
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50312caddf0ce2b5c64d1ec83e1707e2e0ee086e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013850"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713480"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
-`SccStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcji wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) Aby uzyskać szczegółowe informacje).  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-enum SccStatus {  
-   SCC_STATUS_INVALID          = -1L,  
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
-   SCC_STATUS_CONTROLLED       = 0x0001L,  
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
-   SCC_STATUS_OUTOTHER         = 0x0004L,  
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
-   SCC_STATUS_OUTOFDATE        = 0x0020L,  
-   SCC_STATUS_DELETED          = 0x0040L,  
-   SCC_STATUS_LOCKED           = 0x0080L,  
-   SCC_STATUS_MERGED           = 0x0100L,  
-   SCC_STATUS_SHARED           = 0x0200L,  
-   SCC_STATUS_PINNED           = 0x0400L,  
-   SCC_STATUS_MODIFIED         = 0x0800L,  
-   SCC_STATUS_OUTBYUSER        = 0x1000L  
-   SCC_STATUS_NOMERGE          = 0x2000L  
-   SCC_STATUS_RESERVED_1       = 0x4000L  
-   SCC_STATUS_RESERVED_2       = 0x8000L  
-};  
-```  
-  
-## <a name="members"></a>Elementy członkowskie  
- SCC_STATUS_INVALID  
- Nie można uzyskać stanu; nie należy polegać na niej.  
-  
- SCC_STATUS_NOTCONTROLLED  
- Plik nie jest pod kontrolą źródła.  
-  
- SCC_STATUS_CONTROLLED  
- Plik jest pod kontrolą źródła.  
-  
- SCC_STATUS_CHECKEDOUT  
- Wyewidencjonowany przez bieżącego użytkownika na dysku lokalnym.  
-  
- SCC_STATUS_OUTOTHER  
- Plik jest wyewidencjonowany przez innego użytkownika.  
-  
- SCC_STATUS_OUTEXCLUSIVE  
- Plik jest wyewidencjonowany.  
-  
- SCC_STATUS_OUTMULTIPLE  
- Plik jest wyewidencjonowany przez więcej niż jednego użytkownika.  
-  
- SCC_STATUS_OUTOFDATE  
- Plik nie jest najnowsza.  
-  
- SCC_STATUS_DELETED  
- Plik został usunięty z projektu.  
-  
- SCC_STATUS_LOCKED  
- Plik jest zablokowany; nie dozwolone więcej wersji.  
-  
- SCC_STATUS_MERGED  
- Plik został połączony, ale nie zostały jeszcze rozwiązane/weryfikacji.  
-  
- SCC_STATUS_SHARED  
- Plik jest udostępniony między projektami.  
-  
- SCC_STATUS_PINNED  
- Plik jest udostępniony do jawnego wersji.  
-  
- SCC_STATUS_MODIFIED  
- Plik został zmodyfikowany/uszkodzony/naruszone.  
-  
- SCC_STATUS_OUTBYUSER  
- Plik jest wyewidencjonowany przez bieżącego użytkownika.  
-  
- SCC_STATUS_NOMERGE  
- Plik nigdy nie mogą zostać scalone z i nie muszą zostać zapisane przed GET.  
-  
- SCC_STATUS_RESERVED_1  
- Zarezerwowane do użytku wewnętrznego.  
-  
- SCC_STATUS_RESERVED_2  
- Zarezerwowane do użytku wewnętrznego.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)   
- [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
- [POPLISTFUNC](../extensibility/poplistfunc.md)
+`SccStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcji wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) Aby uzyskać szczegółowe informacje).
+
+## <a name="syntax"></a>Składnia
+
+```
+enum SccStatus {
+   SCC_STATUS_INVALID          = -1L,
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,
+   SCC_STATUS_CONTROLLED       = 0x0001L,
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,
+   SCC_STATUS_OUTOTHER         = 0x0004L,
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,
+   SCC_STATUS_OUTOFDATE        = 0x0020L,
+   SCC_STATUS_DELETED          = 0x0040L,
+   SCC_STATUS_LOCKED           = 0x0080L,
+   SCC_STATUS_MERGED           = 0x0100L,
+   SCC_STATUS_SHARED           = 0x0200L,
+   SCC_STATUS_PINNED           = 0x0400L,
+   SCC_STATUS_MODIFIED         = 0x0800L,
+   SCC_STATUS_OUTBYUSER        = 0x1000L
+   SCC_STATUS_NOMERGE          = 0x2000L
+   SCC_STATUS_RESERVED_1       = 0x4000L
+   SCC_STATUS_RESERVED_2       = 0x8000L
+};
+```
+
+## <a name="members"></a>Elementy członkowskie
+ Nie można uzyskać stanu SCC_STATUS_INVALID; nie należy polegać na niej.
+
+ Plik SCC_STATUS_NOTCONTROLLED nie jest pod kontrolą źródła.
+
+ Plik SCC_STATUS_CONTROLLED jest pod kontrolą źródła.
+
+ SCC_STATUS_CHECKEDOUT sprawdzane przez bieżącego użytkownika na dysku lokalnym.
+
+ SCC_STATUS_OUTOTHER plik jest wyewidencjonowany przez innego użytkownika.
+
+ SCC_STATUS_OUTEXCLUSIVE plik jest wyewidencjonowany.
+
+ SCC_STATUS_OUTMULTIPLE plik jest wyewidencjonowany przez więcej niż jednego użytkownika.
+
+ SCC_STATUS_OUTOFDATE pliku nie jest najnowsza.
+
+ Plik SCC_STATUS_DELETED został usunięty z projektu.
+
+ SCC_STATUS_LOCKED plik jest zablokowany; nie dozwolone więcej wersji.
+
+ Plik SCC_STATUS_MERGED została scalona, ale nie zostały jeszcze rozwiązane/weryfikacji.
+
+ SCC_STATUS_SHARED plik jest udostępniony między projektami.
+
+ SCC_STATUS_PINNED plik jest udostępniony do jawnego wersji.
+
+ SCC_STATUS_MODIFIED plik został zmodyfikowany/uszkodzony/naruszono.
+
+ SCC_STATUS_OUTBYUSER plik jest wyewidencjonowany przez bieżącego użytkownika.
+
+ Plik SCC_STATUS_NOMERGE nigdy nie mogą zostać scalone z i nie muszą zostać zapisane przed GET.
+
+ SCC_STATUS_RESERVED_1 zarezerwowane do użytku wewnętrznego.
+
+ SCC_STATUS_RESERVED_2 zarezerwowane do użytku wewnętrznego.
+
+## <a name="see-also"></a>Zobacz także
+- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)
+- [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
+- [POPLISTFUNC](../extensibility/poplistfunc.md)

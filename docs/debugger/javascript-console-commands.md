@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227410"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701956"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Obsługiwane są następujące wzorce podstawienia:
 
-- %s - ciągu %i - liczba całkowita  
-  %d - Liczba całkowita  
-  %f - float  
-  %o — obiekt  
-  %b - binarne  
-  %x - szesnastkowe  
-  %e - wykładnika  
+- %s - object - liczba całkowita %d - Liczba całkowita %f - float %o — ciąg %i %b - %x binarny - szesnastkowe %e - wykładnik
 
   Poniżej przedstawiono kilka przykładów użycia wzorce podstawienia w `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyCreateEvent2::GetDebugProperty | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyCreateEvent2::GetDebugProperty
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38ccf4adcef59454e6d65730034099777a2c549
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a289707110aed49cbd5e9f8b68ce5579ec92223f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999408"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709204"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
-Pobiera nową właściwość.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
-);  
-```  
-  
-```csharp  
-int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `ppProperty`  
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje nową właściwość.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Pobiera nową właściwość.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetDebugProperty ( 
+   IDebugProperty2** ppProperty
+);
+```
+
+```csharp
+int GetDebugProperty ( 
+   out IDebugProperty2 ppProperty
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `ppProperty`
+
+ [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje nową właściwość.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

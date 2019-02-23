@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 441f5c470f97012da7c63f79f06dd08f810c1d0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f6a93cc87be2369ba3bc96bf6682caeb4a727c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945336"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718940"
 ---
 # <a name="process-debug-manager"></a>Menedżer debugowania procesów
-Menedżer debugowania procesów (menedżerów PDM) jest składnikiem programu Visual Studio, która zarządza programów i procesów, udostępniając sesji debugowania, Menedżer i aparaty debugowania.  
-  
- Program PDM zarządza wszystkie procesy, które mogą być debugowane. Do debugowania, program musi być zarejestrowany z menedżerów PDM. Rejestracja odbywa się w czasie, który program jest uruchamiany przez port lub aparatu debugowania.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Procesy](../../extensibility/debugger/processes.md)   
- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
- [Porty](../../extensibility/debugger/ports.md)   
- [Programy](../../extensibility/debugger/programs.md)   
- [Składniki debugera](../../extensibility/debugger/debugger-components.md)
+Menedżer debugowania procesów (menedżerów PDM) jest składnikiem programu Visual Studio, która zarządza programów i procesów, udostępniając sesji debugowania, Menedżer i aparaty debugowania.
+
+ Program PDM zarządza wszystkie procesy, które mogą być debugowane. Do debugowania, program musi być zarejestrowany z menedżerów PDM. Rejestracja odbywa się w czasie, który program jest uruchamiany przez port lub aparatu debugowania.
+
+## <a name="see-also"></a>Zobacz także
+- [Procesy](../../extensibility/debugger/processes.md)
+- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
+- [Porty](../../extensibility/debugger/ports.md)
+- [Programy](../../extensibility/debugger/programs.md)
+- [Składniki debugera](../../extensibility/debugger/debugger-components.md)

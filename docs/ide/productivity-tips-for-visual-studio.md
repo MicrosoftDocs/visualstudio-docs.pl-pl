@@ -1,18 +1,18 @@
 ---
 title: Wskazówki dotyczące produktywności
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913031"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702723"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
@@ -66,11 +66,13 @@ Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, o
 
 - **Wyświetlenie tylko błędów, które mają adres**. Jeśli wybierzesz **filtru** znajdujący się na **lista błędów** narzędzi, można zmniejszyć liczbę błędów, które pojawiają się w **lista błędów** okna. Możesz wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można również wyszukiwać **lista błędów** okna, aby znaleźć określone błędy.
 
-- **Znajdowanie okien dialogowych, poleceń menu i opcji**. W [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład, poniższe opcje pojawiają się po wprowadzeniu `new project`:
+- **Znajdowanie okien dialogowych, poleceń menu i opcji**. W [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) polu wyszukiwania, wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład, poniższe opcje pojawiają się po wprowadzeniu `new project`:
 
     ![Szybkie uruchamianie wyniki "nowego projektu"](../ide/media/productivity_quicklaunch.png)
 
     **Szybkie uruchamianie** Wyświetla łącza do **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i **projekty i rozwiązania** strony w **Opcje** okno dialogowe, między innymi. Szybkie uruchomieni może również obejmować pliki projektu i okna narzędzi.
+
+  **Szybkie uruchamianie** pole wyszukiwania pojawi się w prawym górnym rogu środowiska IDE. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
 
 ## <a name="debug-code"></a>Możliwe jest debugowanie kodu
 

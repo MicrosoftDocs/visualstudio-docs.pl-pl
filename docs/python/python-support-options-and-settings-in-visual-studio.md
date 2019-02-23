@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987395"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702021"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
@@ -33,7 +33,7 @@ Aby wyświetlić opcje języka Python, użyj **narzędzia** > **opcje** menu pol
 Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edytora tekstów** > **Python** > **zaawansowane** kartę, a następnie na  **Środowisko** > **czcionki i kolory** kartę w ramach **edytora tekstów** grupy.
 
 > [!Note]
-> **Eksperymentalne** grupa zawiera opcje dla funkcji, które są nadal w fazie projektowania i nie są opisane tutaj. Są one często omówione w wpisy na [engineering języka Python w blogu firmy Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
+> **Eksperymentalne** grupa zawiera opcje dla funkcji, które są nadal w fazie projektowania i nie są opisane tutaj. Są one często omówione w wpisy na [engineering języka Python w blogu firmy Microsoft](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Opcje ogólne
 

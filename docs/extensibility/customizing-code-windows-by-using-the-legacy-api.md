@@ -10,39 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ff4fb8a8a2e60b047361624ae805910906c19e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0ea617a252d60d8e8d5810c42f7331508c28165
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708982"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Dostosowywanie kodu systemu windows przy użyciu starszej wersji interfejsu API
-Okno kodu jest obiekt okna dokumentu, który obsługuje jeden lub więcej widoków tekstu. Dokładne funkcje okna kodu, zależą od usługi skojarzone języka. W trybie interfejsu wielu dokumentów (MDI) w oknie Kod jest podrzędna ramka MDI.  
-  
- Kod systemu windows są kontrolowane przez usługi języka oraz każdej usługi w języka wprowadzić swój własny Menedżer okna kodu. Dzięki temu usługa językowa dodać własną zakończeń do okna kodu, takich jak faliste linie, kolorowanie i nie tylko. Aby uzyskać więcej informacji o tym, jak można utworzyć okna core, zobacz [wystąpienia podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
-  
- Okno kodu jest <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekt widoku tekstu i wszelkie zakończeń ulokowany w obiekcie. Podczas tworzenia okna kodu podczas konkretyzacji, rdzenia edytora, można dołączyć usługi języka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> do okna kodu, tak jak przedstawiono na poniższej ilustracji.  
-  
- ![Grafika CodeWindow](../extensibility/media/vscodewindow.gif "vscodewindow")  
-W oknie kodu  
-  
- Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialny za zarządzanie zakończeń, takie jak pasek listy rozwijanej. Kod wywołuje okno <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metody podczas inicjowania okna kodu. Po wykonaniu tego wywołania usługi językowej można dodać pasek listy rozwijanej lub przycisku (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) do okna kodu.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- `Customizing Code Windows by Using the Legacy API`  
- Opis sposobu dostosowywania kodu systemu windows za pomocą starszej wersji interfejsu API.  
-  
- [Instrukcje: Host redaktorem w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md)  
- Wyjaśnia, jak hostować drugi edytora w oknie edytora.  
-  
- [Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez Edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- Wyjaśnia, jak dołączyć widok dokumentu do obiektu danych dokumentu.  
-  
-## <a name="see-also"></a>Zobacz także  
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Wyświetl theText dostępu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+Okno kodu jest obiekt okna dokumentu, który obsługuje jeden lub więcej widoków tekstu. Dokładne funkcje okna kodu, zależą od usługi skojarzone języka. W trybie interfejsu wielu dokumentów (MDI) w oknie Kod jest podrzędna ramka MDI.
+
+ Kod systemu windows są kontrolowane przez usługi języka oraz każdej usługi w języka wprowadzić swój własny Menedżer okna kodu. Dzięki temu usługa językowa dodać własną zakończeń do okna kodu, takich jak faliste linie, kolorowanie i nie tylko. Aby uzyskać więcej informacji o tym, jak można utworzyć okna core, zobacz [wystąpienia podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).
+
+ Okno kodu jest <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekt widoku tekstu i wszelkie zakończeń ulokowany w obiekcie. Podczas tworzenia okna kodu podczas konkretyzacji, rdzenia edytora, można dołączyć usługi języka <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> do okna kodu, tak jak przedstawiono na poniższej ilustracji.
+
+ ![Grafika CodeWindow](../extensibility/media/vscodewindow.gif "vscodewindow") okno kodu
+
+ Usługa językowa implementuje Menedżera okien kodu i jest odpowiedzialny za zarządzanie zakończeń, takie jak pasek listy rozwijanej. Kod wywołuje okno <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metody podczas inicjowania okna kodu. Po wykonaniu tego wywołania usługi językowej można dodać pasek listy rozwijanej lub przycisku (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) do okna kodu.
+
+## <a name="in-this-section"></a>W tej sekcji
+ `Customizing Code Windows by Using the Legacy API` Opis sposobu dostosowywania kodu systemu windows za pomocą starszej wersji interfejsu API.
+
+- [Instrukcje: Hostowanie redaktorem w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md) wyjaśnia, jak hostować drugi edytora w oknie edytora.
+
+- [Instrukcje: Wyzwolenie zdarzenia po utracie fokusu przez edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md) wyjaśnia, jak dołączyć widok dokumentu do obiektu danych dokumentu.
+
+## <a name="see-also"></a>Zobacz także
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
+- [Utwórz wystąpienie podstawowy edytor przy użyciu starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
+- [Wyświetl theText dostępu przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

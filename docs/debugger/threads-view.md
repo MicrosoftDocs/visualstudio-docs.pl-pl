@@ -12,46 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979052"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679843"
 ---
 # <a name="threads-view"></a>Widok wątków
-Widok wątków jest płaską listę wszystkich wątków, skojarzone z systemem windows w systemie. Identyfikator wątku i nazwa modułu dla każdego wątku są wyświetlane. Procesy nie są włączone, ale można łatwo znaleźć proces, który jest właścicielem wybranym wątku.  
-  
-## <a name="procedures"></a>Procedury  
-  
-#### <a name="to-open-the-threads-view"></a>Aby otworzyć widok wątków  
-  
-1. Z **Spy** menu, wybierz **wątków**.  
-  
-   ![Szpieguj&#43; &#43; wątki widoku](../debugger/media/spy--_threads.png "Spy ++ _Threads")  
-   Widok wątków programu Spy ++  
-  
-   Powyższy rysunek przedstawia widok wątków.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.  
-  
- [Wyświetlanie właściwości wątku](../debugger/how-to-display-thread-properties.md)  
- Wyjaśnia, jak wyświetlić więcej informacji o wątku.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
-  
- [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
-  
- [Wyszukiwanie wątków, okno dialogowe](../debugger/thread-search-dialog-box.md)  
- Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
-  
- [Właściwości wątku, okno dialogowe](../debugger/message-properties-dialog-box.md)  
- Wyświetla właściwości wątku wybrany w widoku wątków lub wiadomości.  
-  
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.
+Widok wątków jest płaską listę wszystkich wątków, skojarzone z systemem windows w systemie. Identyfikator wątku i nazwa modułu dla każdego wątku są wyświetlane. Procesy nie są włączone, ale można łatwo znaleźć proces, który jest właścicielem wybranym wątku.
+
+## <a name="procedures"></a>Procedury
+
+#### <a name="to-open-the-threads-view"></a>Aby otworzyć widok wątków
+
+1. Z **Spy** menu, wybierz **wątków**.
+
+   ![Spy&#43; &#43; wątki widoku](../debugger/media/spy--_threads.png "Spy ++ _Threads") Spy ++ widoku wątków
+
+   Powyższy rysunek przedstawia widok wątków.
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md) wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.
+
+ [Wyświetlanie właściwości wątku](../debugger/how-to-display-thread-properties.md) wyjaśnia, jak wyświetlić więcej informacji o wątku.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+
+ [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+
+ [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md) umożliwia znalezienie węzła dla określonego wątku w widoku wątków.
+
+ [Okno dialogowe właściwości wątku](../debugger/message-properties-dialog-box.md) Wyświetla właściwości wybranego w widoku wątków wątek lub widoku komunikatów.
+
+ [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.

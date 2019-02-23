@@ -14,21 +14,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e72bbc19fef3f75bbd99d2d61902fd881c09bb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068709"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723542"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Rozszerzanie właściwości i okno właściwości
-**Właściwości** okno służy do wyświetlania i edytowania właściwości czasu projektowania oraz zdarzeń zaznaczonych obiektów.  
-  
- Po wybraniu obiektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], publiczne właściwości tego obiektu są wyświetlane w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Omówienie okna właściwości](../extensibility/internals/properties-window-overview.md).  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Udostępnianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md)  
- W tym artykule wyjaśniono, jak masz niestandardowe właściwości wyświetlane w oknie dialogowym właściwości.  
-  
- [Uzyskiwanie właściwości projektu](../extensibility/getting-project-properties.md)  
- Wyjaśnia, jak można pobrać właściwości projektu.
+**Właściwości** okno służy do wyświetlania i edytowania właściwości czasu projektowania oraz zdarzeń zaznaczonych obiektów.
+
+ Po wybraniu obiektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], publiczne właściwości tego obiektu są wyświetlane w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [Omówienie okna właściwości](../extensibility/internals/properties-window-overview.md).
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Udostępnianie właściwości w oknie właściwości](../extensibility/exposing-properties-to-the-properties-window.md) wyjaśnia, jak masz niestandardowe właściwości wyświetlane w oknie dialogowym właściwości.
+
+- [Uzyskiwanie właściwości projektu](../extensibility/getting-project-properties.md) wyjaśnia, jak uzyskać właściwości projektu.

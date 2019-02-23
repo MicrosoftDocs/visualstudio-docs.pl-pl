@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939793"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703711"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Rozpoczęcie korzystania z rozszerzenia Snapshot Debugger
 
@@ -27,7 +27,7 @@ Rozszerzenie Snapshot Debugger zbiera migawki z aplikacji. Migawki są takie jak
 
 ### <a name="set-a-snappoint"></a>Ustaw punkt przyciągania
 
-1. W edytorze kodu kliknij lewym marginesie na oprawę obok wiersza kodu, który Cię interesuje można ustawić punktu przyciągania. Upewnij się, że kod, który będzie uruchamiany. 
+1. W edytorze kodu kliknij lewym marginesie na oprawę obok wiersza kodu, który Cię interesuje można ustawić punktu przyciągania. Upewnij się, że kod, który będzie uruchamiany.
 
     ![Ustawianie punktu przyciągania w edytorze](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Rozszerzenie Snapshot Debugger zbiera migawki z aplikacji. Migawki są takie jak
 
 ### <a name="open-a-snapshot"></a>Otwórz migawkę
 
-1. Po osiągnięciu punktu przyciągania migawki pojawia się w oknie narzędzia diagnostyczne po prawej stronie. Jeśli nie zostanie otwarte okno, możesz go otworzyć, wybierając **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**. 
+1. Po osiągnięciu punktu przyciągania migawki pojawia się w oknie narzędzia diagnostyczne po prawej stronie. Jeśli nie zostanie otwarte okno, możesz go otworzyć, wybierając **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
     ![Migawka w oknie narzędzia diagnostyczne](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Nadal działa z witryną i nie ma to wpływ na użytkowników końcowych. Domyś
 
 3. W **komunikat** wprowadź komunikat dziennika, które mają być rejestrowane. Można również obliczyć zmiennych w wiadomości dziennika, umieszczając je wewnątrz nawiasów klamrowych.
 
-    Jeśli wybierzesz **Wyślij do okna danych wyjściowych**, komunikat zostanie wyświetlony w oknie narzędzia diagnostyczne, gdy zostanie osiągnięty punkt rejestrowania. 
+    Jeśli wybierzesz **Wyślij do okna danych wyjściowych**, komunikat zostanie wyświetlony w oknie narzędzia diagnostyczne, gdy zostanie osiągnięty punkt rejestrowania.
 
     Jeśli wybierzesz **Wyślij do dziennika aplikacji**, komunikat pojawi się gdziekolwiek zobaczyć komunikaty z `System.Diagnostics.Trace` (lub `ILogger` platformie .NET Core), takich jak usługi App Insights, gdy zostanie osiągnięty punkt rejestrowania.
 
@@ -69,6 +69,6 @@ Więcej informacji na temat rozszerzenia Snapshot Debugger można znaleźć na [
 
 ## <a name="dont-show-me-this-again"></a>Nie "pokazuj mi tego ponownie
 
-Aby nigdy nie pokazuj strony początkowej debugera migawki po nawiązaniu połączenia debugera migawki, należy zmienić **strony "Wprowadzenie" Pokaż w menu start sesji** opcji **narzędzia**  >   **Opcje** > **Snapshot Debugger**. 
+Aby nigdy nie pokazuj strony początkowej debugera migawki po nawiązaniu połączenia debugera migawki, należy zmienić **strony "Wprowadzenie" Pokaż w menu start sesji** opcji **narzędzia**  >   **Opcje** > **Snapshot Debugger**.
 
 ![Strony opcji narzędzi debugera migawki](../media/snapshot-startpage-tools-options.png)

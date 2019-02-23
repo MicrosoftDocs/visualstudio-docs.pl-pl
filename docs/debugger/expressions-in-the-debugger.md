@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227397"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692271"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
@@ -205,7 +205,7 @@ Nie można zadeklarować jawne nowych zmiennych w debugerze systemu windows. Jed
 - Namespace lub modułu na poziomie słów kluczowych, takich jak `End Sub` lub `Module`.
 
 ## <a name="see-also"></a>Zobacz też
-[Specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md)  
-[Operator kontekstu (C++)](../debugger/context-operator-cpp.md)  
-[Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md)  
-[Pseudozmienne](../debugger/pseudovariables.md)
+- [Specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md)
+- [Operator kontekstu (C++)](../debugger/context-operator-cpp.md)
+- [Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md)
+- [Pseudozmienne](../debugger/pseudovariables.md)

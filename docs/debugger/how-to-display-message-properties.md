@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985568"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720162"
 ---
 # <a name="how-to-display-message-properties"></a>Instrukcje: Wyświetlanie właściwości komunikatu
-Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
-  
-### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu  
-  
-1. Zaznacz wiadomość z drzewa wyświetlany w widoku komunikatów.  
-  
-2. Z **widoku** menu, wybierz **właściwości**.  
-  
+Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).
+
+### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu
+
+1. Zaznacz wiadomość z drzewa wyświetlany w widoku komunikatów.
+
+2. Z **widoku** menu, wybierz **właściwości**.
+
    Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.

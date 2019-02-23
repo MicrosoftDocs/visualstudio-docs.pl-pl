@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetContainerField | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetContainerField
 helpviewer_keywords:
@@ -12,43 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cced3eb3bea16d3c45fba69f86f607b8332f679
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935075"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705154"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
-Ta metoda pobiera pola, które zawiera adres debugowania.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetContainerField(   
-   IDebugAddress*         pAddress,  
-   IDebugContainerField** ppContainerField  
-);  
-```  
-  
-```csharp  
-int GetContainerField(  
-   IDebugAddress            pAddress,   
-   out IDebugContainerField ppContainerField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pAddress`  
- [in] Reprezentowane przez adres [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
-  
- `ppContainerField`  
- [out] Zwraca pole kontenera, reprezentowane przez [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+Ta metoda pobiera pola, które zawiera adres debugowania.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetContainerField( 
+   IDebugAddress*         pAddress,
+   IDebugContainerField** ppContainerField
+);
+```
+
+```csharp
+int GetContainerField(
+   IDebugAddress            pAddress,
+   out IDebugContainerField ppContainerField
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pAddress`
+
+ [in] Reprezentowane przez adres [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.
+
+ `ppContainerField`
+
+ [out] Zwraca pole kontenera, reprezentowane przez [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfejsu.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

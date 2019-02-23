@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 729b56b4161d6cfd38db91334427840d0c7339d8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449659"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678361"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Pobiera tekst z określonej pozycji w dokumencie.
@@ -43,17 +43,21 @@ int GetText(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pos`  
-[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.
+`pos`
 
-`cMaxChars`  
-[in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.
 
-`pText`  
-[out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.
+`cMaxChars`
 
-`pcNumChars`  
-[out] Zwraca liczbę znaków, które faktycznie pobrane.
+ [in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.
+
+`pText`
+
+ [out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.
+
+`pcNumChars`
+
+ [out] Zwraca liczbę znaków, które faktycznie pobrane.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -98,5 +102,5 @@ namespace Mynamespace
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

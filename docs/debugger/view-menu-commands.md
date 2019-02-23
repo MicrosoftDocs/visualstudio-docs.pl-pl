@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c05e19b3bbd5078b29628101e90ca33592cda31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014045"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721007"
 ---
 # <a name="view-menu-commands"></a>Polecenia menu Widok
-**Widoku** menu zawiera polecenia służące do kontrolowania Spy ++ interfejsu użytkownika.  
-  
- **Czcionka**  
- Otwiera **czcionki** okno dialogowe, w którym można wybrać czcionki do użycia w bieżącym widoku programu Spy ++.  
-  
- **Pasek narzędzi**  
- Ukrywa lub Wyświetla pasek narzędzi.  
-  
- **Pasek stanu**  
- Ukrywa lub Wyświetla pasek stanu.  
-  
- **Właściwości**  
- Otwiera **właściwości** okno dialogowe bieżącym widokiem.
+**Widoku** menu zawiera polecenia służące do kontrolowania Spy ++ interfejsu użytkownika.
+
+ **Czcionka** otwiera **czcionki** okno dialogowe, w którym można wybrać czcionki do użycia w bieżącym widoku programu Spy ++.
+
+ **Pasek narzędzi** ukrywa lub Wyświetla pasek narzędzi.
+
+ **Pasek stanu** ukrywa lub wyświetla na pasku stanu.
+
+ **Właściwości** otwiera **właściwości** okno dialogowe bieżącym widokiem.

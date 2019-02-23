@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_SCOPE | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_STREAM_SCOPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8773a37e8762ad88513a2636b9c692b45be2c4ae
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413088"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684497"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Określa zakres strumienia dezasemblacji.
@@ -44,17 +44,13 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-DSS_HUGE  
-Określa, że deasemblowanie kontekst kodu będzie generować więcej danych wyjściowych niż klient będzie zazwyczaj ma zostać pobrane w jednym wywołaniu.
+DSS_HUGE Określa, że deasemblowanie kontekst kodu wygeneruje więcej danych wyjściowych niż klienta zwykle chce pobrać w jednym wywołaniu.
 
-DSS_FUNCTION  
-Określa funkcję zawarte w kontekście kod powinien zostać zdezasemblowany. Określa, że strumienia dezasemblacji reprezentuje funkcji, gdy zwracany przez [getscope —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.
+Powinien zostać zdezasemblowany DSS_FUNCTION Określa, że funkcja zawartych kontekst kodu. Określa, że strumienia dezasemblacji reprezentuje funkcji, gdy zwracany przez [getscope —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.
 
-DSS_MODULE  
-Po zwróceniu przez `IDebugDisassemblyStream2::GetScope` metody Określa, że strumień dezasemblacji reprezentuje moduł.
+DSS_MODULE gdy zwracany przez `IDebugDisassemblyStream2::GetScope` metody Określa, że strumień dezasemblacji reprezentuje moduł.
 
-DSS_ALL  
-Określa dezasemblację dla całą przestrzenią adresową.
+Określa DSS_ALL dezasemblacji całą przestrzenią adresową.
 
 ## <a name="remarks"></a>Uwagi
 Przekazywany jako argument do [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metody i zwrócone przez [getscope —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.
@@ -69,6 +65,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)  
-[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
+- [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

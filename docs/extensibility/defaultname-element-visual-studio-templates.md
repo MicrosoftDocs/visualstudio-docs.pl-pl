@@ -13,76 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8dfd0a5efd302b64130fc2ed029b94d4396d4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc859155afcde0b72b8898b2ea37c098f7458e53
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927083"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717458"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Defaultname — element (szablony Visual Studio)
-Określa nazwę, który zostanie wygenerowany przez system projektu programu Visual Studio dla projektu lub elementu, podczas jego tworzenia.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<Defaultname — >  
-  
-## <a name="syntax"></a>Składnia  
-  
-```  
-<DefaultName>  
-    Default Project Name  
-</DefaultName>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
- Brak.  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
- Brak.  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|  
-  
-## <a name="text-value"></a>Wartość tekstowa  
- Wartość tekstowa jest wymagana.  
-  
- Ten tekst Określa domyślną nazwę projektu lub elementu.  
-  
-## <a name="remarks"></a>Uwagi  
- `DefaultName` element jest opcjonalny.  
-  
- W przypadku projektów ten element Określa nazwę katalogu, który przechowuje projektu na dysku. Dla elementów Określa nazwę pliku w pliku źródłowym.  
-  
- Podczas tworzenia projektu lub elementu, można modyfikować przy użyciu nazwy domyślnej **nazwa** opcja, która jest dostępna z poziomu **nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe.  
-  
- Jeśli użytkownik nie chce, aby system projektu ma generować domyślna nazwa projektu lub elementu, wartość [providedefaultname —](../extensibility/providedefaultname-element-visual-studio-templates.md) elementu `False`.  
-  
-## <a name="example"></a>Przykład  
- W poniższym przykładzie pokazano metadanych dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy.  
-  
-```  
-<VSTemplate Type="Item" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>MyClass</Name>  
-        <Description>My custom C# class.</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <DefaultName>MyClass.cs</DefaultName>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem ReplaceParameters="true">MyClass.cs</ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
+Określa nazwę, który zostanie wygenerowany przez system projektu programu Visual Studio dla projektu lub elementu, podczas jego tworzenia.
+
+ \<VSTemplate > \<TemplateData > \<defaultname — >
+
+## <a name="syntax"></a>Składnia
+
+```
+<DefaultName>
+    Default Project Name
+</DefaultName>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+ Brak.
+
+### <a name="child-elements"></a>Elementy podrzędne
+ Brak.
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+
+## <a name="text-value"></a>Wartość tekstowa
+ Wartość tekstowa jest wymagana.
+
+ Ten tekst Określa domyślną nazwę projektu lub elementu.
+
+## <a name="remarks"></a>Uwagi
+ `DefaultName` element jest opcjonalny.
+
+ W przypadku projektów ten element Określa nazwę katalogu, który przechowuje projektu na dysku. Dla elementów Określa nazwę pliku w pliku źródłowym.
+
+ Podczas tworzenia projektu lub elementu, można modyfikować przy użyciu nazwy domyślnej **nazwa** opcja, która jest dostępna z poziomu **nowy projekt** okno dialogowe lub **Dodaj nowy element** okno dialogowe.
+
+ Jeśli użytkownik nie chce, aby system projektu ma generować domyślna nazwa projektu lub elementu, wartość [providedefaultname —](../extensibility/providedefaultname-element-visual-studio-templates.md) elementu `False`.
+
+## <a name="example"></a>Przykład
+ W poniższym przykładzie pokazano metadanych dla szablonu elementu standardowego dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] klasy.
+
+```
+<VSTemplate Type="Item" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyClass</Name>
+        <Description>My custom C# class.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <DefaultName>MyClass.cs</DefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem ReplaceParameters="true">MyClass.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042065"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696743"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 
@@ -27,7 +27,7 @@ Funkcje opisane w tym miejscu mają zastosowanie do języka C#, C++, Visual Basi
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
 
-Do debugowania, należy uruchomić aplikację w debugerze proces aplikacji. **F5** (**Debuguj > Rozpocznij debugowanie**) to najbardziej popularny sposób, aby to zrobić. Jednak po prawej stronie teraz nie może ustawiono żadnych punktów przerwania, aby zbadać aplikacji kodu, dzięki czemu firma Microsoft będzie zrobić w pierwszej kolejności, a następnie rozpocząć debugowanie. Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu. 
+Do debugowania, należy uruchomić aplikację w debugerze proces aplikacji. **F5** (**Debuguj > Rozpocznij debugowanie**) to najbardziej popularny sposób, aby to zrobić. Jednak po prawej stronie teraz nie może ustawiono żadnych punktów przerwania, aby zbadać aplikacji kodu, dzięki czemu firma Microsoft będzie zrobić w pierwszej kolejności, a następnie rozpocząć debugowanie. Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
 
 Jeśli masz plik jest otwarty w edytorze kodu, można ustawić punktu przerwania, klikając na marginesie po lewej stronie wiersza kodu.
 

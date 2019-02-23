@@ -1,7 +1,7 @@
 ---
 title: EncUnavailableReason | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EncUnavailableReason
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ccc05c58eafe6f8902b3f8ac09b90dc771a3009
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315693"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717042"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Reprezentuje przyczyny, **Edytuj i Kontynuuj** nie jest dostępna.
@@ -50,26 +50,19 @@ public enum EncUnavailableReason {
 ```
 
 #### <a name="parameters"></a>Parametry
-ENCUN_NONE  
-Nie określonych powód, dlaczego Edytuj i Kontynuuj nie jest dostępny.
+Brak ENCUN_NONE powód Dlaczego Edytuj i Kontynuuj nie jest dostępny.
 
-ENCUN_INTEROP  
-Edytuj i Kontynuuj nie jest dostępna podczas wywołania międzyoperacyjnego.
+ENCUN_INTEROP Edytuj i Kontynuuj nie jest dostępna podczas wywołania międzyoperacyjnego.
 
-ENCUN_SQLCLR  
-Edytuj i Kontynuuj nie jest dostępna podczas wywołania procedury SQL, która używa środowiska uruchomieniowego języka wspólnego (CLR).
+ENCUN_SQLCLR Edytuj i Kontynuuj nie jest dostępna podczas wywołania procedury SQL, która używa środowiska uruchomieniowego języka wspólnego (CLR).
 
-ENCUN_MINIDUMP  
-Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania minizrzutu.
+ENCUN_MINIDUMP Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania minizrzutu.
 
-ENCUN_EMBEDDED  
-Edytuj i Kontynuuj nie jest dostępna, podczas przetwarzania osadzony kod.
+ENCUN_EMBEDDED Edytuj i Kontynuuj nie jest dostępna, podczas przetwarzania osadzony kod.
 
-ENCUN_ATTACH  
-Edytuj i Kontynuuj nie jest dostępna, ponieważ sesja została podłączona do, nie jest uruchamiane przez debuger.
+ENCUN_ATTACH Edytuj i Kontynuuj nie jest dostępna, ponieważ sesja została podłączona do, nie uruchomione przez debugera.
 
-ENCUN_WIN64  
-Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania kodu Windows 64-bitowego.
+ENCUN_WIN64 Edytuj i Kontynuuj nie jest dostępna podczas przetwarzania kodu Windows 64-bitowego.
 
 ## <a name="remarks"></a>Uwagi
 To wyliczenie jest do użytku wewnętrznego tylko przez [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) i [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) zaimplementowanego przez dostawcę numery portów należy zawsze zwracają `E_NOTIMPL`.
@@ -82,9 +75,8 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 
-[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
+- [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 
-[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
-
+- [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)

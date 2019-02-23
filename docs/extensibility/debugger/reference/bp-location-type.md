@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781aa55f26fbd332b901dacdb3b4ac12d85579cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318514"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715664"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Określa typ lokalizacji punktu przerwania dla żądania punktu przerwania.
@@ -66,50 +66,35 @@ public enum enum_BP_LOCATION_TYPE {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-BPLT_NONE  
-Określa nie lokalizacji punktu przerwania.
+BPLT_NONE określa nie lokalizacji punktu przerwania.
 
-BPLT_FILE_LINE  
-Określa typ lokalizacji punktu przerwania jako wiersza w pliku.
+BPLT_FILE_LINE Określa typ lokalizacji punktu przerwania, jako wiersz w pliku.
 
-BPLT_FUNC_OFFSET  
-Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji.
+BPLT_FUNC_OFFSET Określa typ lokalizacji punktu przerwania, jako przesunięcie funkcji.
 
-BPLT_CONTEXT  
-Określa typ lokalizacji punktu przerwania, ponieważ kontekst.
+BPLT_CONTEXT Określa typ lokalizacji punktu przerwania, ponieważ kontekst.
 
-BPLT_STRING  
-Określa typ lokalizacji punktu przerwania jako ciąg.
+BPLT_STRING Określa typ lokalizacji punktu przerwania, jako ciąg.
 
-BPLT_ADDRESS  
-Określa typ lokalizacji punktu przerwania adresu.
+BPLT_ADDRESS Określa typ lokalizacji punktu przerwania adresu.
 
-BPLT_RESOLUTION  
-Określa typ lokalizacji punktu przerwania rozwiązanie tego problemu.
+BPLT_RESOLUTION Określa typ lokalizacji punktu przerwania, rozwiązanie tego problemu.
 
-BPLT_CODE_FILE_LINE  
-Określa typ lokalizacji punktu przerwania jako wiersz kodu źródłowego.
+BPLT_CODE_FILE_LINE Określa typ lokalizacji punktu przerwania jako wiersz kodu źródłowego.
 
-BPLT_CODE_FUNC_OFFSET  
-Określa typ lokalizacji punktu przerwania jako przesunięcie funkcji kodu.
+BPLT_CODE_FUNC_OFFSET Określa typ lokalizacji punktu przerwania, jako przesunięcie funkcji kodu.
 
-BPLT_CODE_CONTEXT  
-Określa typ lokalizacji punktu przerwania, ponieważ kontekst kodu.
+BPLT_CODE_CONTEXT Określa typ lokalizacji punktu przerwania, ponieważ kontekst kodu.
 
-BPLT_CODE_STRING  
-Określa typ lokalizacji punktu przerwania jako ciągu kodu.
+BPLT_CODE_STRING Określa typ lokalizacji punktu przerwania, jako ciąg kodu.
 
-BPLT_CODE_ADDRESS  
-Określa typ lokalizacji punktu przerwania adresem kod.
+BPLT_CODE_ADDRESS Określa typ lokalizacji punktu przerwania, adresem kod.
 
-BPLT_DATA_STRING  
-Określa typ lokalizacji punktu przerwania jako ciąg.
+BPLT_DATA_STRING Określa typ lokalizacji punktu przerwania, jako ciąg znaków danych.
 
-BPLT_TYPE_MASK  
-Maska bitowa, określa, tak, aby typ punktu przerwania można wyodrębnić z wartością.
+Określa BPLT_TYPE_MASK nieco maski, tak aby typ punktu przerwania można wyodrębnić z wartością.
 
-BPLT_LOCATION_TYPE_MASK  
-Maska bitowa, określa, tak, aby typ lokalizacji punktu przerwania można wyodrębnić z wartością.
+Określa BPLT_LOCATION_TYPE_MASK nieco maski, tak aby typ lokalizacji punktu przerwania można wyodrębnić z wartością.
 
 ## <a name="remarks"></a>Uwagi
 Przekazany jako parametr do [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) metody.
@@ -126,6 +111,6 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

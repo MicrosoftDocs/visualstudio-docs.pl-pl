@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924863"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701696"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Karta Proces, okno dialogowe właściwości okna
-Użyj **procesu** kartę, aby zidentyfikować proces wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
-  
- Następujące ustawienia są dostępne na **procesu** karty:  
-  
-|Wpis|Opis|  
-|-----------|-----------------|  
-|**Identyfikator procesu**|Identyfikator procesu, który jest właścicielem wątek, który utworzył tego okna. Wybierz tę wartość, aby wyświetlić właściwości tego procesu.|  
+Użyj **procesu** kartę, aby zidentyfikować proces wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+
+ Następujące ustawienia są dostępne na **procesu** karty:
+
+|Wpis|Opis|
+|-----------|-----------------|
+|**Identyfikator procesu**|Identyfikator procesu, który jest właścicielem wątek, który utworzył tego okna. Wybierz tę wartość, aby wyświetlić właściwości tego procesu.|
 |**Identyfikator wątku**|Identyfikator wątku, który utworzone w tym oknie. Wybierz tę wartość, aby wyświetlić właściwości tego wątku.|

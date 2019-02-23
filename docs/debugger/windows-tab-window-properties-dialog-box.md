@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b968ac3cc7356aa085eb8237d37a5372e1f67bb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944452"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696847"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, okno dialogowe właściwości okna
-Użyj **Windows** kartę, aby wyświetlić informacje dotyczące systemu windows powiązane z wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
-  
- Następujące ustawienia są dostępne na **Windows** karty:  
-  
-|Wpis|Opis|  
-|-----------|-----------------|  
-|**Następne okno**|Uchwyt okna następnego równorzędnego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie następnego okna). Wybierz ten wpis, aby wyświetlić właściwości następnego okna.|  
-|**Poprzednie okno**|Uchwyt okna równorzędne poprzedniego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku żadnego poprzedniego okna). Wybierz ten wpis, aby wyświetlić właściwości poprzedniego okna.|  
-|**Okno nadrzędne**|Uchwyt okna nadrzędnego tego okna, ("none" w przypadku elementu nadrzędnego). Wybierz ten wpis, aby wyświetlić właściwości okna nadrzędnego.|  
-|**First Child**|Uchwyt to okno pierwsze okno podrzędne, w kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie okien podrzędnych). Wybierz tę wartość, aby wyświetlić właściwości pierwsze okno podrzędne.|  
+Użyj **Windows** kartę, aby wyświetlić informacje dotyczące systemu windows powiązane z wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.
+
+ Następujące ustawienia są dostępne na **Windows** karty:
+
+|Wpis|Opis|
+|-----------|-----------------|
+|**Następne okno**|Uchwyt okna następnego równorzędnego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie następnego okna). Wybierz ten wpis, aby wyświetlić właściwości następnego okna.|
+|**Poprzednie okno**|Uchwyt okna równorzędne poprzedniego w takiej samej kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku żadnego poprzedniego okna). Wybierz ten wpis, aby wyświetlić właściwości poprzedniego okna.|
+|**Okno nadrzędne**|Uchwyt okna nadrzędnego tego okna, ("none" w przypadku elementu nadrzędnego). Wybierz ten wpis, aby wyświetlić właściwości okna nadrzędnego.|
+|**First Child**|Uchwyt to okno pierwsze okno podrzędne, w kolejności (w porządku) wyświetlane w widoku drzewa okna ("none" w przypadku nie okien podrzędnych). Wybierz tę wartość, aby wyświetlić właściwości pierwsze okno podrzędne.|
 |**Okno właściciela**|Uchwyt okna właściciela tego okna. Okno główne aplikacji jest zwykle właścicielem okno modalne systemowe systemu windows, na przykład ("none" Jeśli nie ma właściciela). Wybierz ten wpis, aby wyświetlić właściwości okno właściciela.|

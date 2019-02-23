@@ -11,47 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407c161c700f4dd24eb8d123f0ef015398051caa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925620"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686590"
 ---
 # <a name="spy-reference"></a>Spy++ — Odwołanie
-Zobacz sekcje poniżej opisy każdego Spy ++ menu i okno dialogowe:  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Polecenia menu](../debugger/menu-commands.md)  
- W tym artykule opisano poleceń dostępnych w każdym menu Spy ++.  
-  
- [Czcionki — okno dialogowe](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- Umożliwia skonfigurowanie czcionki znaku używany w oknie widoków programu Spy ++.  
-  
- [Narzędzia wyszukiwania dotyczące widoków programu Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Okna dialogowe używane do wyszukiwania określonego węzła w oknie widoków programu Spy ++.  
-  
- [Właściwości okna, okno dialogowe](../debugger/window-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wybranego w widoku Windows okna.  
-  
- [Opcje komunikatów, okno dialogowe](../debugger/message-options-dialog-box.md)  
- Używany do wybierania, wiadomości, które są wyświetlane w widoku komunikatów.  
-  
- [Właściwości komunikatu, okno dialogowe](../debugger/message-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wiadomości wybrany w widoku komunikatów.  
-  
- [Właściwości procesu, okno dialogowe](../debugger/process-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości procesem, który został wybrany w widoku procesów.  
-  
- [Właściwości wątku, okno dialogowe](../debugger/thread-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.  
-  
- [Inne okna dialogowe](../debugger/other-dialog-boxes.md)  
- Umożliwia wyświetlenie informacji na temat programu Spy ++.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
-  
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+Zobacz sekcje poniżej opisy każdego Spy ++ menu i okno dialogowe:
+
+## <a name="in-this-section"></a>W tej sekcji
+ [Polecenia menu](../debugger/menu-commands.md) opisano poleceń dostępnych w każdym menu Spy ++.
+
+ [Okno dialogowe czcionki](../debugger/font-dialog-box-microsoft-spy-increment-help.md) umożliwiają skonfigurowanie czcionki znaku używany w oknie widoków programu Spy ++.
+
+ [Narzędzia wyszukiwania dotyczące widoków programu Spy ++](../debugger/search-tools-for-spy-increment-views.md) używane do wyszukiwania określonego węzła w oknie widoków programu Spy ++ w oknach dialogowych.
+
+ [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) używany do wyświetlania właściwości przedziału wybrany w widoku Windows.
+
+ [Okno dialogowe Opcje komunikatów](../debugger/message-options-dialog-box.md) używany do wybierania, wiadomości, które są wyświetlane w widoku komunikatów.
+
+ [Okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md) używany do wyświetlania właściwości wiadomości wybrany w widoku komunikatów.
+
+ [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md) używany do wyświetlania właściwości procesem, który został wybrany w widoku procesów.
+
+ [Okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md) umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.
+
+ [Inne okna dialogowe](../debugger/other-dialog-boxes.md) używany do wyświetlania informacji na temat programu Spy ++.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
+
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.

@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49f71edcdb2f5fb13be5465292ed7d9f7a3e1632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016279"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702970"
 ---
 # <a name="objects"></a>Obiekty
-Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpienia podstawowy edytor tekstu.  
-  
-## <a name="in-this-section"></a>W tej sekcji  
- [Obiekt VSCodeWindow](../extensibility/vscodewindow-object.md)  
- Opisuje obiekt okna kodu, okno dokumentu specjalistyczne, może być częścią widokach tekstu.  
-  
- [Obiekt VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md)  
- Opisuje obiekt menedżera okna kodu, jest implementowany przez usługę języka, który jest odpowiedzialny za zarządzanie zakończeń.  
-  
- [Obiekt VSTextBuffer](../extensibility/vstextbuffer-object.md)  
- Opisuje obiekt buforu tekstu, który reprezentuje strumień tekst w formacie Unicode, dane dla pliku.  
-  
- [Obiekt VSTextView](../extensibility/vstextview-object.md)  
- Opisuje widok tekstu, okno które pozwala użytkownikom wyświetlać i edytować tekst w formacie Unicode buforu tekstowego.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Odwołanie w Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)  
- Wyświetla listę tematów odwołań.
+Poniższe informacje opisano obiekty, które są używane do utworzenia wystąpienia podstawowy edytor tekstu.
+
+## <a name="in-this-section"></a>W tej sekcji
+- [Obiekt VSCodeWindow](../extensibility/vscodewindow-object.md) opisuje obiekt okna kodu, okno dokumentu specjalistyczne, może być częścią widokach tekstu.
+
+- [Obiekt VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md) opisuje obiekt menedżera okna kodu, jest implementowany przez usługę języka, który jest odpowiedzialny za zarządzanie zakończeń.
+
+- [Obiekt VSTextBuffer](../extensibility/vstextbuffer-object.md) opisuje obiekt buforu tekstu, który reprezentuje strumień tekst w formacie Unicode, dane dla pliku.
+
+- [Obiekt VSTextView](../extensibility/vstextview-object.md) opisuje widoku tekstu w oknie, który pozwala użytkownikom wyświetlać i edytować tekst w formacie Unicode buforu tekstowego.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+- [Odwołanie w Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Wyświetla listę tematów odwołań.

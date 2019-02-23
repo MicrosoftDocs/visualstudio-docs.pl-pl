@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e7aef1465ffe6e37a82fc3c685fef28bbf61e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978311"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705206"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pAddress`  
- [in] Adres debugowania.  
-  
- `ppEnum`  
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="remarks"></a>Uwagi  
- Mogą być różne przestrzenie nazw skojarzonych z adresu podanego debugowania, na przykład zagnieżdżone przestrzenie nazw lub wielu `using` instrukcji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+Ta metoda tworzy moduł wyliczający dla obszarów nazw skojarzonych z tym adresem debugowania.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetNamespacesUsedAtAddress( 
+   IDebugAddress*     pAddress,
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetNamespacesUsedAtAddress(
+   IDebugAddress        pAddress,
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pAddress`
+
+ [in] Adres debugowania.
+
+ `ppEnum`
+
+ [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) moduł wyliczający dla obszarów nazw.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="remarks"></a>Uwagi
+ Mogą być różne przestrzenie nazw skojarzonych z adresu podanego debugowania, na przykład zagnieżdżone przestrzenie nazw lub wielu `using` instrukcji.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7652f05bf6028dd7d5b14d207fdd0b83a73ef5ad
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227634"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722918"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Przewodnik: Programowe przechwytywanie informacji graficznych
 Możesz użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki, aby programowo przechwytywać informacje graficzne z aplikacji Direct3D.
@@ -115,6 +115,6 @@ W tym instruktażu zademonstrowano programowe przechwytywanie informacji graficz
 - Dowiedz się, jak analizować przechwycone informacje graficzne, przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Zobacz też
-[Przewodnik: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)  
-[Przechwytywanie informacji graficznych](capturing-graphics-information.md)  
-[Narzędzie wiersza polecenia do przechwytywania](command-line-capture-tool.md)
+- [Przewodnik: Przechwytywanie informacji graficznych](walkthrough-capturing-graphics-information.md)
+- [Przechwytywanie informacji graficznych](capturing-graphics-information.md)
+- [Narzędzie wiersza polecenia do przechwytywania](command-line-capture-tool.md)

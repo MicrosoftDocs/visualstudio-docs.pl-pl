@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b555c324de9ffc26bbe7a6c9231614deb279bfa7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d0954ffadd1bb1b09d7294be673f961ca2f18058
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994608"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713090"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie zarządzanym
 Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Nazewnictwo wątku jest przydatne do śledzenia wątków w **wątków** okna.
-  
- Aby Ustawianie nazw wątków w kodzie zarządzanym, użyć <xref:System.Threading.Thread.Name%2A> właściwości.  
-  
-## <a name="example"></a>Przykład  
+
+ Aby Ustawianie nazw wątków w kodzie zarządzanym, użyć <xref:System.Threading.Thread.Name%2A> właściwości.
+
+## <a name="example"></a>Przykład
 
 ```csharp
 public class Needle
 {
-    // This method will be called when the thread is started.  
+    // This method will be called when the thread is started.
     public void Baz()
     {
         Console.WriteLine("Needle Baz is running on another thread");
@@ -46,35 +46,35 @@ public void Main()
 {
     Console.WriteLine("Thread Simple Sample");
     Needle oNeedle = new Needle();
-    // Create a Thread object.   
+    // Create a Thread object.
     System.Threading.Thread oThread = new System.Threading.Thread(oNeedle.Baz);
-    // Set the Thread name to "MyThread".  
+    // Set the Thread name to "MyThread".
     oThread.Name = "MyThread";
-    // Starting the thread invokes the ThreadStart delegate  
+    // Starting the thread invokes the ThreadStart delegate
     oThread.Start();
 }
 ```
 
-```VB 
-Public Class Needle  
-    ' This method will be called when the thread is started.  
-    Sub Baz()  
-        Console.WriteLine("Needle Baz is running on another thread")  
-    End Sub  
-End Class  
-  
-Sub Main()  
-    Console.WriteLine("Thread Simple Sample")  
-    Dim oNeedle As New Needle()  
-   ' Create a Thread object.   
-    Dim oThread As New System.Threading.Thread(AddressOf oNeedle.Baz)  
-    ' Set the Thread name to "MyThread".  
-    oThread.Name = "MyThread"  
-    ' Starting the thread invokes the ThreadStart delegate  
-    oThread.Start()  
-End Sub  
-```  
-  
-## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Instrukcje: Ustawianie nazwy wątku w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)
+```VB
+Public Class Needle
+    ' This method will be called when the thread is started.
+    Sub Baz()
+        Console.WriteLine("Needle Baz is running on another thread")
+    End Sub
+End Class
+
+Sub Main()
+    Console.WriteLine("Thread Simple Sample")
+    Dim oNeedle As New Needle()
+   ' Create a Thread object.
+    Dim oThread As New System.Threading.Thread(AddressOf oNeedle.Baz)
+    ' Set the Thread name to "MyThread".
+    oThread.Name = "MyThread"
+    ' Starting the thread invokes the ThreadStart delegate
+    oThread.Start()
+End Sub
+```
+
+## <a name="see-also"></a>Zobacz też
+- [DDebug aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Instrukcje: Ustawianie nazwy wątku w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)

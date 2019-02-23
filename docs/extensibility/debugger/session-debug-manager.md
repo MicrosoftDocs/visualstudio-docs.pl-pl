@@ -15,28 +15,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321b0a7c7eb2a30465098da39abc49cbc9261e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947208"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715859"
 ---
 # <a name="session-debug-manager"></a>Menedżer debugowania sesji
-Menedżer debugowania sesji (SDM) zarządza dowolną liczbę silniki debugowania (DE), które jest debugowany dowolną liczbę programów w wielu procesach w dowolnej liczbie maszyn. Oprócz multiplekser aparat debugowania, SDM zapewnia spójny widok sesji debugowania środowiska IDE.  
-  
-## <a name="session-debug-manager-operation"></a>Operacja Menedżer debugowania sesji  
- Menedżer debugowania sesji (SDM) zarządza DE. Może istnieć więcej niż jeden aparat debugowania uruchomione na komputerze, w tym samym czasie. Aby multipleksować DEs, SDM opakowuje liczbę interfejsów z DEs i udostępnia je do środowiska IDE jako pojedynczy interfejs.  
-  
- Aby zwiększyć wydajność, nie są multiplexed niektóre interfejsy. Zamiast tego są one używane bezpośrednio z DE i wywołań do tych interfejsów nie przechodzą SDM. Na przykład multiplexed nie są interfejsy używane z pamięci, kodu i konteksty dokumentu, ponieważ odnoszą się do określonej instrukcji, pamięć lub dokumentu w debugowane określonych DE określonego programu. Nie inne DE należy zaangażować w tym samym poziomie komunikacji.  
-  
- Nie dotyczy wszystkich kontekstów. Wywołania interfejsu kontekstu oceny wyrażenia przechodzą przez SDM. Podczas obliczania wyrażenia opakowuje SDM [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejs, który zapewnia środowiska IDE, ponieważ gdy to wyrażenie jest obliczane, może pociągać za sobą wiele DEs, który debugowania programów w ten sam proces, który może być uruchomione na tym samym wątku.  
-  
- SDM typowo funkcjonuje jako mechanizm delegowania, ale może ona działać jako mechanizmu emisji. Na przykład podczas obliczania wyrażenia SDM działa jako mechanizmu emisji, aby powiadomić wszystkich DEs czy kodu mogą być uruchamiane na określony wątek. Podobnie gdy model SDM odbiera zdarzenia zatrzymywania, emituje do programów, że ich należy zatrzymać. Po wywołaniu krok SDM emituje do programów może nadal działa. Punkty przerwania są również emisji do każdego DE.  
-  
- SDM nie śledzi bieżącego programu, wątku lub ramki stosu. Proces, program i informacji o wątku są wysyłane do SDM w połączeniu z określonych zdarzeń debugowania.  
-  
-## <a name="see-also"></a>Zobacz także  
- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)   
- [Składniki debugera](../../extensibility/debugger/debugger-components.md)   
- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)
+Menedżer debugowania sesji (SDM) zarządza dowolną liczbę silniki debugowania (DE), które jest debugowany dowolną liczbę programów w wielu procesach w dowolnej liczbie maszyn. Oprócz multiplekser aparat debugowania, SDM zapewnia spójny widok sesji debugowania środowiska IDE.
+
+## <a name="session-debug-manager-operation"></a>Operacja Menedżer debugowania sesji
+ Menedżer debugowania sesji (SDM) zarządza DE. Może istnieć więcej niż jeden aparat debugowania uruchomione na komputerze, w tym samym czasie. Aby multipleksować DEs, SDM opakowuje liczbę interfejsów z DEs i udostępnia je do środowiska IDE jako pojedynczy interfejs.
+
+ Aby zwiększyć wydajność, nie są multiplexed niektóre interfejsy. Zamiast tego są one używane bezpośrednio z DE i wywołań do tych interfejsów nie przechodzą SDM. Na przykład multiplexed nie są interfejsy używane z pamięci, kodu i konteksty dokumentu, ponieważ odnoszą się do określonej instrukcji, pamięć lub dokumentu w debugowane określonych DE określonego programu. Nie inne DE należy zaangażować w tym samym poziomie komunikacji.
+
+ Nie dotyczy wszystkich kontekstów. Wywołania interfejsu kontekstu oceny wyrażenia przechodzą przez SDM. Podczas obliczania wyrażenia opakowuje SDM [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejs, który zapewnia środowiska IDE, ponieważ gdy to wyrażenie jest obliczane, może pociągać za sobą wiele DEs, który debugowania programów w ten sam proces, który może być uruchomione na tym samym wątku.
+
+ SDM typowo funkcjonuje jako mechanizm delegowania, ale może ona działać jako mechanizmu emisji. Na przykład podczas obliczania wyrażenia SDM działa jako mechanizmu emisji, aby powiadomić wszystkich DEs czy kodu mogą być uruchamiane na określony wątek. Podobnie gdy model SDM odbiera zdarzenia zatrzymywania, emituje do programów, że ich należy zatrzymać. Po wywołaniu krok SDM emituje do programów może nadal działa. Punkty przerwania są również emisji do każdego DE.
+
+ SDM nie śledzi bieżącego programu, wątku lub ramki stosu. Proces, program i informacji o wątku są wysyłane do SDM w połączeniu z określonych zdarzeń debugowania.
+
+## <a name="see-also"></a>Zobacz także
+- [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
+- [Składniki debugera](../../extensibility/debugger/debugger-components.md)
+- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

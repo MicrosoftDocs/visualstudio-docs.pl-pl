@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920603"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708644"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -92,6 +92,8 @@ Program Visual Studio 2017 jest dostarczany z dużą liczbą operacji refaktoryz
   - *Dodaj sprawdzanie wartości Null*
   - *Dodaj parametr*
   - *Usuń niepotrzebne użycia*
+  - *Pętla foreach do zapytań LINQ lub metoda LINQ*
+  - *Refaktoryzacja przy użyciu okna dialogowego Opcje obudowach elementów członkowskich*
   - Zobacz więcej w naszym [dokumentacji](https://aka.ms/refactorings)
 - Napisać własne dzięki kanałowi refaktoryzacji lub kod [analizatorów Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Kilka członków społeczności napisano bezpłatne rozszerzenia, które dodać dodatkowy kod inspekcji:
@@ -108,7 +110,7 @@ Program Visual Studio 2017 oferuje wiele funkcji ułatwiające wyszukiwanie i pr
 
 | Funkcja | Skrót | Szczegóły/ulepszeń |
 |- | - | -|
-| Znajdź wszystkie odwołania | **SHIFT**+**F12**| Wyniki są wyróżnione kolorem i mogą być grupowane według projektu, definicji, itp. Można również "zablokować" wyników. |
+| Znajdź wszystkie odwołania | **SHIFT**+**F12**| Wyniki są wyróżnione kolorem i mogą być grupowane według projektu, definicji odwołania i wpisz na przykład Odczyt lub zapis. Można również "zablokować" wyników. |
 | Przejdź do implementacji | **Ctrl**+**F12** | Przejdź do definicji można używać na `override` — słowo kluczowe, aby przejść do zgodnym z przesłoniętą składową |
 | Przejdź do definicji | **F12** lub **Ctrl**+**kliknij**| Naciśnij i przytrzymaj **Ctrl** przy zaznaczaniu navgiate do definicji |
 | Zobacz definicję | **ALT**+**F12** | Wbudowany view definicji |

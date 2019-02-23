@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809472"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723880"
 ---
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Publikuj** (formularzy sieci Web **publikowania aplikacji sieci Web**).
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809472"
 1. Kliknij przycisk **publikowania**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     Aplikacja publikuje **debugowania** konfigurację projektu do folderu lokalnego. Postęp pokazuje, w oknie danych wyjściowych.
 
 1. Skopiuj katalog projektu platformy ASP.NET z komputera programu Visual Studio do katalogu lokalnego, skonfigurować dla aplikacji platformy ASP.NET (w tym przykładzie **C:\Publish**) na komputerze z systemem Windows Server. W tym samouczku przyjęto założenie, kopiowane są ręcznie, ale można użyć innych narzędzi, takich jak program PowerShell, polecenia Xcopy lub Robocopy.

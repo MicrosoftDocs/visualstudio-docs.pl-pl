@@ -10,42 +10,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25de3d88cb495d869ae76e854eaad476f778bce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986114"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707162"
 ---
 # <a name="thread-search-dialog-box"></a>Wyszukiwanie wątków — Okno dialogowe
-Umożliwia to okno dialogowe Znajdź i wybierz węzeł w określonym wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz **Znajdź wątek** z **wyszukiwania** menu.  
-  
- Dostępne są następujące ustawienia:  
-  
- **Wątek**  
- Identyfikator wątku do wyszukania.  
-  
- **Module**  
- Ciąg modułu do wyszukania.  
-  
- **Kierunek wyszukiwania w górę lub w dół**  
- Początkowa kierunek wyszukiwania.  
-  
-## <a name="related-sections"></a>Sekcje pokrewne  
- [Właściwości wątku, okno dialogowe](../debugger/thread-properties-dialog-box.md)  
- Umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.  
-  
- [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.  
-  
- [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.  
-  
- [Widok wątków](../debugger/threads-view.md)  
- Wyświetla aktywne wątki w widoku drzewa  
-  
- [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
-  
- [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.
+Umożliwia to okno dialogowe Znajdź i wybierz węzeł w określonym wątku [Widok wątków](../debugger/threads-view.md). Aby wyświetlić to okno dialogowe, Przenieś fokus do **wątków** okno widoku. Następnie wybierz **Znajdź wątek** z **wyszukiwania** menu.
+
+ Dostępne są następujące ustawienia:
+
+ **Wątek** identyfikator wątku do wyszukania.
+
+ **Moduł** ciąg modułu do wyszukania.
+
+ **Wyszukaj kierunek w górę lub w dół** początkowej kierunek wyszukiwania.
+
+## <a name="related-sections"></a>Sekcje pokrewne
+ [Okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md) umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.
+
+ [Spy ++ — odwołanie](../debugger/spy-increment-reference.md) zawiera sekcje opisujące każdy Spy ++ menu i okno dialogowe.
+
+ [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md) wyjaśnia, jak można znaleźć określonego wątku w widoku wątków.
+
+ [Widok wątków](../debugger/threads-view.md) przedstawia widok drzewa aktywnych wątków
+
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md) wyjaśnia widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.
+
+ [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md) wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.
