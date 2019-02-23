@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35266ff23d93e0dbdfbe6a2be14631db5c0629e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 197c2890613ac376b8c494467b86576b1980b00b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972709"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723230"
 ---
 # <a name="groups-element"></a>Element grupy
-Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```xml  
-<Groups>  
-  <Group>... </Group>  
-  <Group>... </Group>  
-</Groups>  
-```  
-  
-## <a name="attributes-and-elements"></a>Atrybuty i elementy  
- W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.  
-  
-### <a name="attributes"></a>Atrybuty  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Elementy podrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Element grupy](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|  
-|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|  
-  
-### <a name="parent-elements"></a>Elementy nadrzędne  
-  
-|Element|Opis|  
-|-------------|-----------------|  
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|  
-  
-## <a name="example"></a>Przykład  
-  
-```xml  
-<Groups>  
-  <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
-  </Group>  
-</Groups>  
-```  
-  
-## <a name="see-also"></a>Zobacz także  
- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)
+Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.
+
+## <a name="syntax"></a>Składnia
+
+```xml
+<Groups>
+  <Group>... </Group>
+  <Group>... </Group>
+</Groups>
+```
+
+## <a name="attributes-and-elements"></a>Atrybuty i elementy
+ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+
+### <a name="attributes"></a>Atrybuty
+
+|Atrybut|Opis|
+|---------------|-----------------|
+|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Elementy podrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Element grupy](../extensibility/group-element.md)|Reprezentuje grupę jednego polecenia.|
+|[Element grupy](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy polecenia pakietu VSPackage.|
+
+### <a name="parent-elements"></a>Elementy nadrzędne
+
+|Element|Opis|
+|-------------|-----------------|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
+
+## <a name="example"></a>Przykład
+
+```xml
+<Groups>
+  <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">
+    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>
+  </Group>
+</Groups>
+```
+
+## <a name="see-also"></a>Zobacz także
+- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

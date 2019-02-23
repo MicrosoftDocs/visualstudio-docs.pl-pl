@@ -1,7 +1,7 @@
 ---
 title: CANSTOP_REASON | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98621fbea4fc114616ccf23ada9b372c88461970
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413049"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711621"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Używany do określenia, jeśli program zatrzymać wykonywanie po osiągnięciu określonego punktu w realizacji.
@@ -40,11 +40,9 @@ public enum enum_CANSTOP_REASON {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-CANSTOP_ENTRYPOINT  
-Określa punkt wejścia w danym programu.
+CANSTOP_ENTRYPOINT określa punkt wejścia w danym programu.
 
-CANSTOP_STEPIN  
-Określa, przechodzenie krok po kroku do funkcji.
+CANSTOP_STEPIN określa przechodzenie krok po kroku do funkcji.
 
 ## <a name="remarks"></a>Uwagi
 Przekazywany jako argument do [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Manager (SDM), jeśli ma nic złego zatrzymać po osiągnięciu punktu wejścia programu, lub po przejściu do funkcji lub metody.
@@ -57,5 +55,5 @@ Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Zobacz też
-[Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

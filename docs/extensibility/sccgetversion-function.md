@@ -12,35 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe071cb0c0de62f4e59785f829adfaacc992336
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2b3818aaa5097313d9150b365544267768507f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023541"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708943"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion, funkcja
-Ta funkcja pobiera numer wersji interfejsu API wtyczki kontroli źródła obsługiwane przez wtyczka do kontroli źródła.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-LONG SccGetVersion(void);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- Brak.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- A `LONG` typu danych, który zawiera numer wersji obsługiwanych API wtyczki kontroli źródła:  
-  
-|WORD|Opis|  
-|----------|-----------------|  
-|HIWORD|Wersja główna|  
-|LOWORD|Wersja pomocnicza|  
-  
-## <a name="remarks"></a>Uwagi  
- Na przykład jeśli wtyczka do kontroli źródła obsługuje interfejs API wtyczki kontroli źródła w wersji 1.3, ta funkcja zwróci 0x0103.  
-  
-## <a name="see-also"></a>Zobacz też  
- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+Ta funkcja pobiera numer wersji interfejsu API wtyczki kontroli źródła obsługiwane przez wtyczka do kontroli źródła.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+LONG SccGetVersion(void);
+```
+
+#### <a name="parameters"></a>Parametry
+ Brak.
+
+## <a name="return-value"></a>Wartość zwracana
+ A `LONG` typu danych, który zawiera numer wersji obsługiwanych API wtyczki kontroli źródła:
+
+|WORD|Opis|
+|----------|-----------------|
+|HIWORD|Wersja główna|
+|LOWORD|Wersja pomocnicza|
+
+## <a name="remarks"></a>Uwagi
+ Na przykład jeśli wtyczka do kontroli źródła obsługuje interfejs API wtyczki kontroli źródła w wersji 1.3, ta funkcja zwróci 0x0103.
+
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

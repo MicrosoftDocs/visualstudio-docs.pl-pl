@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6cd6d3f44c294788289f50ea55cef966e2250
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412763"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717848"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 Określa, czy funkcja pod adresem określonym debugowania jest uznawane za przestarzałe.
@@ -35,8 +35,9 @@ int IsFunctionStale(
 ```
 
 #### <a name="parameters"></a>Parametry
-`pAddress`  
-[in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu. Adres ten musi być METHOD_ADDRESS.
+`pAddress`
+
+ [in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu. Adres ten musi być METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli funkcja jest uznawana za przestarzałe, zwraca `S_OK`. Jeśli funkcja nie jest przestarzałe, zwraca `S_FALSE`.
@@ -89,4 +90,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

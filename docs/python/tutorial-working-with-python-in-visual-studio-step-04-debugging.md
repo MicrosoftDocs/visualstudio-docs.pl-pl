@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948813"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716509"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4. Uruchamianie kodu w debugerze
 
@@ -47,12 +47,9 @@ Oprócz zarządzania projektami, zapewniając bogate środowisko, edytowania i *
 1. Upewnij się, że kod działa poprawnie, naciskając klawisz **F5** lub wybierając **debugowania** > **Rozpocznij debugowanie** polecenia menu. To polecenie uruchamia kod w debugerze, ale ponieważ jeszcze nie wykonano żadnych czynności, aby zatrzymać program i jest uruchomiona, po prostu wyświetla wzorzec wave dla kilku iteracji. Naciśnij dowolny klawisz, aby zamknąć okno danych wyjściowych.
 
     > [!Tip]
-    > Aby zamknąć okno danych wyjściowych automatycznie po zakończeniu program, należy zastąpić `main()` wywołania z następującym kodem:
+    > Aby zamknąć okno danych wyjściowych automatycznie po zakończeniu działania programu, wybierz **narzędzia** > **opcje** menu polecenia, a następnie rozwiń **Python** węzła, wybierz opcję **Debugowanie**, a następnie usuń zaznaczenie opcji **czeka na dane wejściowe, gdy proces zakończy się normalnie**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Zakończ opcję debugowania języka Python, aby Zamknij okno danych wyjściowych w programie normalnego](media/vs-getting-started-python-22-debugging5.png)
 
 1. Ustaw punkt przerwania na `for` instrukcji, klikając szary marginesie przez ten wiersz lub umieszczając karetkę w tym wierszu i przy użyciu **debugowania** > **Przełącz punkt przerwania** poleceń () **F9**). Czerwona kropka pojawi się szare marginesie, aby wskazać punkt przerwania (jak wspomniano, strzałką poniżej):
 

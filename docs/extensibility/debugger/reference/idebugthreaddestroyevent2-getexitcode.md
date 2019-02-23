@@ -1,7 +1,7 @@
 ---
 title: IDebugThreadDestroyEvent2::GetExitCode | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThreadDestroyEvent2::GetExitCode
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56caa01fa99e515437116d4d6af9e9be696ac334
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b2330c8462f88fca401c2e83980465f6f98fc5a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977697"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704023"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
-Pobiera kod wyjścia wątku.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```cpp  
-HRESULT GetExitCode (   
-   DWORD* pdwExit  
-);  
-```  
-  
-```csharp  
-int GetExitCode (   
-   out uint pdwExit  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- `pdwExit`  
- [out] Zwraca kod wyjścia wątku.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)
+Pobiera kod wyjścia wątku.
+
+## <a name="syntax"></a>Składnia
+
+```cpp
+HRESULT GetExitCode ( 
+   DWORD* pdwExit
+);
+```
+
+```csharp
+int GetExitCode ( 
+   out uint pdwExit
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ `pdwExit`
+
+ [out] Zwraca kod wyjścia wątku.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+
+## <a name="see-also"></a>Zobacz też
+- [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

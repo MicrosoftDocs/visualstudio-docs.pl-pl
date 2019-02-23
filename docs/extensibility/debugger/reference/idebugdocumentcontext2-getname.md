@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetName | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetName
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa6957f2eb34d2b125d189c87d4ca9a58126209
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2c770c339399aaf01fee9598318c94266a391c55
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449986"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705732"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Pobiera nazwę zawiera dokument, który zawiera ten kontekst dokumentu.
@@ -39,11 +39,13 @@ int GetName(
 ```
 
 #### <a name="parameters"></a>Parametry
-`gnType`  
-[in] Wartość z zakresu od [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) wyliczenie, które określa typ nazwy do zwrócenia.
+`gnType`
 
-`pbstrFileName`  
-[out] Zwraca nazwę pliku.
+ [in] Wartość z zakresu od [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) wyliczenie, które określa typ nazwy do zwrócenia.
+
+`pbstrFileName`
+
+ [out] Zwraca nazwę pliku.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -92,5 +94,5 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

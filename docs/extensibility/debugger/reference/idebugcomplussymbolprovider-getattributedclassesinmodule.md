@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d6491560eecdae58fa5e62b13847f2cc390a47
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413400"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719017"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Pobiera klasy przy użyciu określonego atrybutu w danym module.
 
 ## <a name="syntax"></a>Składnia
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesinModule (
     ULONG32            ulAppDomainID,
     GUID               guidModule,
@@ -33,8 +32,7 @@ HRESULT GetAttributedClassesinModule (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesinModule (
     uint                 ulAppDomainID,
     Guid                 guidModule,
@@ -44,17 +42,21 @@ int GetAttributedClassesinModule (
 ```
 
 #### <a name="parameters"></a>Parametry
-`ulAppDomainID`  
-[in] Identyfikator domeny aplikacji.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Unikatowy identyfikator modułu.
+ [in] Identyfikator domeny aplikacji.
 
-`pstrAttribute`  
-[in] Ciąg atrybutu.
+`guidModule`
 
-`ppEnum`  
-[out] Zwraca wyliczenie opartego na atrybutach klas.
+ [in] Unikatowy identyfikator modułu.
+
+`pstrAttribute`
+
+ [in] Ciąg atrybutu.
+
+`ppEnum`
+
+ [out] Zwraca wyliczenie opartego na atrybutach klas.
 
 ## <a name="return-value"></a>Wartość zwracana
 Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
@@ -151,4 +153,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
