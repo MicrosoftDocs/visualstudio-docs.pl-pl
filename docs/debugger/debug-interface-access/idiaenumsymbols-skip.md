@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0168c3f58cf9bd701f0cc34edf77673c70e66222
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021445"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641215"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Pomija określoną liczbę symboli w kolejności wyliczenia.  
-  
-## <a name="syntax"></a>Składnia  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametry  
- celt  
- [in] Liczba symboli w kolejności wyliczenie, aby pominąć.  
-  
-## <a name="return-value"></a>Wartość zwracana  
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku żadnych więcej symboli, aby pominąć.  
-  
-## <a name="see-also"></a>Zobacz też  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Pomija określoną liczbę symboli w kolejności wyliczenia.
+
+## <a name="syntax"></a>Składnia
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parametry
+ celt
+
+[in] Liczba symboli w kolejności wyliczenie, aby pominąć.
+
+## <a name="return-value"></a>Wartość zwracana
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku żadnych więcej symboli, aby pominąć.
+
+## <a name="see-also"></a>Zobacz też
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
