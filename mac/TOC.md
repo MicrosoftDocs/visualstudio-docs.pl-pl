@@ -41,6 +41,7 @@
 # [Kompilowanie i tworzenie](compiling-and-building.md)
 ## [Kompilowanie oraz oczyszczanie projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md)
 ## [Akcja kompilacji](build-actions.md)
+## [Instrukcje: Ustawianie wielu projektów startowych](set-startup-projects.md)
 ## [Dostosowywanie procesu kompilacji](customizing-build-system.md)
 ## [Konfiguracje](configurations.md)
 ### [Tworzenie i edycja konfiguracji](create-and-edit-configurations.md)
