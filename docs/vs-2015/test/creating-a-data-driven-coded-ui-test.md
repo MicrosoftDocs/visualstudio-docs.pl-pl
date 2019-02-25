@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71c08c78d67f65ec69a982ce431a64ec1c620d27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755373"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796715"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 4.  Dodaj 1 i 2, Wstrzymaj Rejestrator i generować metodę testową. Firma Microsoft będzie później zastąpić wartości tych danych wejściowych użytkownika przy użyciu wartości z pliku danych.  
   
-     ![Metoda testowa Genetate](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Generuj metodę testową](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Zamknąć Konstruktora testu. Metoda jest dodawana do testu:  
   

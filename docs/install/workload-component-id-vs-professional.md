@@ -7,6 +7,7 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
+ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +17,13 @@ ms.service: ''
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f3c312bce84da669033162cdea086a8a5f2cee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 8aadc038028f31a1454e5f8e0923a55fc3f4dcac
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928065"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796949"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 składników katalogu
 

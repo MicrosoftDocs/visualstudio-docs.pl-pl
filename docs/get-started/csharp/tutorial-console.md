@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: acb2dfd88f9726442837656c2cf3e60c5f47397a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156075"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796780"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
@@ -80,6 +80,7 @@ Zacznijmy od niektórych matematyki całkowitoliczbowej w C#.
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
 
    ![Wybierz przycisk Kalkulator, aby uruchomić aplikację z paska narzędzi](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
         }
     }
     ```
+
 1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
 
    ![Wybierz przycisk Kalkulator, aby uruchomić aplikację z paska narzędzi](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Zaczynajmy.
         }
     }
     ```
+
 1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
 
 1. Postępuj zgodnie z monitami i podzieleniu **42** przez liczbę **119**. Aplikacja powinna wyglądać podobnie do następującego:
@@ -404,7 +407,7 @@ Zaczynajmy.
 
 ## <a name="code-complete"></a>Kompletności kodu
 
-Podczas tego tutortial Wprowadziliśmy wiele zmian do aplikacji kalkulatora. Aplikacja wydajniej teraz obsługuje zasobów obliczeniowych i obsługuje on większość błędów danych wejściowych użytkownika.
+W ramach tego samouczka Wprowadziliśmy wiele zmian do aplikacji kalkulatora. Aplikacja wydajniej teraz obsługuje zasobów obliczeniowych i obsługuje on większość błędów danych wejściowych użytkownika.
 
 Oto kompletny kod w jednym miejscu:
 

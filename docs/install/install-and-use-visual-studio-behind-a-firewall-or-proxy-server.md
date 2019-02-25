@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954650"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796624"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -84,7 +84,7 @@ Aby upewnić się, że masz dostęp do wszystkiego, czego potrzebujesz, korzysta
 | Usługa lub scenariusza | Punkt końcowy DNS | Protokół | Port | Opis |
 | - | - | - | - | - |
 | Adres URL<br>rozwiązanie | go.microsoft.com<br><br>aka.MS | | | Mające na celu skrócenie adresów URL, które następnie rozwiąż problem na dłużej adresów URL |
-| Strona początkowa | vsstartpage.blob.core.windows.net | | 443 | Używany do wyświetlania wiadomości dla deweloperów, wyświetlany na stronie początkowej w programie Visual Studio |
+| Strona początkowa | vsstartpage.blob.core.windows.net | | 443 | Używany do wyświetlania wiadomości dla deweloperów, wyświetlany na stronie początkowej (Visual Studio 2017 tylko) |
 | Docelowe<br> Powiadomienia <br>Usługa | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Używane do filtrowania globalną listę powiadomień do listy, która ma zastosowanie tylko do określonych rodzajów scenariusze maszyn/użycia |
 | Rozszerzenie <br>sprawdzenie dostępności aktualizacji | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Używane do udostępniania powiadomień, gdy zainstalowane rozszerzenie ma dostępną aktualizację <br><br> Używana jako lokalizacja logowania |
 | Projekt sztucznej Inteligencji <br>Integracja | az861674.vo.msecnd.net | | 443<br> | Używane do konfigurowania nowych projektów, aby wysłać dane użycia do swoje zarejestrowane konto w usłudze Application Insights |

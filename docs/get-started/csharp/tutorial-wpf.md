@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909950"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796806"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciuC#
 
@@ -32,9 +32,19 @@ Po uruchomieniu programu Visual Studio po raz pierwszy, zostanie wyświetlony mo
 
 ![Wybierz ustawienia, okno dialogowe](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Po uruchomieniu programu Visual Studio, zostaną wyświetlone okna narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Na środku okna aplikacji znajduje **strona startowa**. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w miejscu gdzie **strona startowa** jest. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 
-![Środowisko IDE z zastosowaniem ustawień ogólnych](../media/exploreide-idewithgeneralsettings.png)
+![Visual Studio 2017 IDE z zastosowaniem ustawień ogólnych](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Podczas uruchamiania programu Visual Studio **Start** najpierw zostanie otwarte okno. Wybierz **kontynuować bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Utwórz projekt
 

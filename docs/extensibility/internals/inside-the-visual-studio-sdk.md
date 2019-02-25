@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978272"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796676"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual Studio, w tym architektury programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.
@@ -55,13 +55,13 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual
 
  Okna narzędzi oferują zazwyczaj różne formanty, z którymi użytkownik może wchodzić w interakcje. Na przykład **właściwości** okna zezwala użytkownikowi na ustawianie właściwości obiektów, które służą do określonego celu. **Właściwości** okno jest wyspecjalizowane w tym sensie, ale także ogólne, ponieważ mogą być używane w wielu różnych sytuacjach. Podobnie **dane wyjściowe** okna jest przeznaczone, ponieważ zawiera ono tekst wyjściowy w formacie, ale ogólne, ponieważ wiele podsystemów w programie Visual Studio służy do zapewnienia dane wyjściowe użytkownika programu Visual Studio.
 
- Należy wziąć pod uwagę następujące obrazu programu Visual Studio, który zawiera kilka okien narzędzi.
+ Należy wziąć pod uwagę następujące obrazu programu Visual Studio, który zawiera kilka okien narzędzi:
 
  ![Zrzut ekranu przedstawiający](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Niektóre okna narzędzi są zadokowane razem jedną taflę, który wyświetla okna narzędzi w Eksploratorze rozwiązań i ukrywa innymi oknami narzędzi, ale udostępnia, klikając karty. Na ilustracji przedstawiono dwie innymi oknami narzędzi **lista błędów** i **dane wyjściowe** okno zadokowane w jednym okienku.
 
- Również wyświetlany jest okienko głównego dokumentu, które zawiera kilka okien edytora. Mimo że narzędzia windows mają zwykle tylko jedno wystąpienie (na przykład, można otworzyć tylko jeden **Eksploratora rozwiązań**), okna edytora może mieć wiele wystąpień, z których każdy jest używany do edytowania oddzielny dokument, ale które są zadokowane w okienko. Na rysunku przedstawiono panel dokumentu, który ma dwa okna edytora, jedno okno projektanta formularza i okna przeglądarki, który pokazuje strony początkowej. Wszystkie okna w panelu dokumentu są dostępne po kliknięciu karty, ale okno edytora, który zawiera plik EditorPane.cs jest widoczne i aktywne.
+ Również wyświetlany jest okienko głównego dokumentu, które zawiera kilka okien edytora. Mimo że narzędzia windows mają zwykle tylko jedno wystąpienie (na przykład, można otworzyć tylko jeden **Eksploratora rozwiązań**), okna edytora może mieć wiele wystąpień, z których każdy jest używany do edytowania oddzielny dokument, ale które są zadokowane w okienko. Na rysunku przedstawiono panel dokumentu, który ma dwa okna edytora, jedno okno projektanta formularza. Wszystkie okna w panelu dokumentu są dostępne po kliknięciu karty, ale okno edytora, który zawiera plik EditorPane.cs jest widoczne i aktywne.
 
  Po rozszerzeniu programu Visual Studio można utworzyć narzędzie systemu windows, które pozwalają użytkownikom programu Visual Studio wchodzić w interakcje z rozszerzeniem. Można również utworzyć własne edytory, które pozwalają użytkownikom programu Visual Studio, edytowanie dokumentów. Ponieważ Twoje okien narzędzi i edytory zostanie zintegrowana z programu Visual Studio, nie masz program je, aby zadokować lub są prawidłowo wyświetlane na karcie. Są one poprawnie zarejestrowany w programie Visual Studio, zostanie automatycznie mają typowe funkcje okna narzędzi i okna dokumentu w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [rozszerzanie i dostosowywanie narzędzi Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 

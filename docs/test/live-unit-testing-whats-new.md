@@ -1,6 +1,6 @@
 ---
 title: What's New in Live Unit Testing
-ms.date: 10-11-2017
+ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1e6cdbbc2b796ecd03d654c16086073285dc5aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714871"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796585"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Nowości dotyczące funkcji Live Unit Testing
 

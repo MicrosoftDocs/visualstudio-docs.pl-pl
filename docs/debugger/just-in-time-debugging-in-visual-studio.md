@@ -1,6 +1,6 @@
 ---
 title: Wyłączanie debugera Just In Time | Dokumentacja firmy Microsoft
-ms.date: 05/23/18
+ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be342204183503b881601491155dceee1d432c37
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8c848281a89213a216bd8ec3ac1e651b6dfc32e4
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708592"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796417"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera just in time
 

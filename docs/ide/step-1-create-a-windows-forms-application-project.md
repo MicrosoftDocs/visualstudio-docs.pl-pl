@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956077"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796533"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utwórz projekt Windows Forms aplikacji
 
@@ -37,20 +37,21 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
 
      Program Visual Studio tworzy rozwiązanie dla Twojego programu. To rozwiązanie działa jako kontener dla wszystkich projektów i plików wymaganych przez program. Te zwroty zostaną wyjaśnione bardziej szczegółowo w dalszej części tego samouczka.
 
-4. Poniższa ilustracja przedstawia, co powinien zostać wyświetlony w interfejsie programu Visual Studio.
-
-    > [!NOTE]
-    > Twój układ okna może nie wyglądać dokładnie tak samo jak na ilustracji. Dokładny układ okna zależy od wersji programu Visual Studio, język programowania, którego używasz i innych czynników. Należy jednak sprawdzić, czy są wyświetlane wszystkie trzy okna.
-
-     ![Okno IDE](../ide/media/express_ideoverview_visio.png)<br/>***IDE** okna*
-
-     Interfejs zawiera trzy okna: główne okno **Eksploratora rozwiązań**i **właściwości** okna.
+4. Środowisko projektowe zawiera trzy okna: główne okno **Eksploratora rozwiązań**i **właściwości** okna.
 
      Jeśli brakuje któregokolwiek z tych okien, Przywróć domyślny układ okna, na pasku menu, wybierając **okna** > **Zresetuj układ okna**. Można również wyświetlić okna przy użyciu poleceń menu. Na pasku menu wybierz **widoku** > **okno właściwości** lub **Eksploratora rozwiązań**. Jeśli inne okna są otwarte, zamknij je, wybierając **Zamknij** (przycisku w ich prawym górnym rogu x).
 
-5. Na ilustracji przedstawiono w następujących oknach (zgodnie z ruchem wskazówek zegara od lewego górnego rogu):
+    ::: moniker range="vs-2017"
 
-    - **Okno główne** w tym oknie wykonasz większość swojej pracy, takich jak praca z formularzami i Edycja kodu. Na ilustracji okno przedstawia formularz w **Edytor formularzy**. W górnej części okna **strona startowa** kartę i **Form1.cs [projekt]** karty są wyświetlane. (W języku Visual Basic nazwa karty kończy się *.vb* zamiast *.cs*.)
+    - **Okno główne** w tym oknie wykonasz większość swojej pracy, takich jak praca z formularzami i Edycja kodu. Okno przedstawia formularz w **Edytor formularzy**. W górnej części okna **strona startowa** kartę i **Form1.cs [projekt]** karty są wyświetlane. (W języku Visual Basic nazwa karty kończy się *.vb* zamiast *.cs*.)
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Okno główne** w tym oknie wykonasz większość swojej pracy, takich jak praca z formularzami i Edycja kodu. Okno przedstawia formularz w **Edytor formularzy**.
+
+    ::: moniker-end
 
     - **Okno Eksploratora rozwiązań** w tym oknie można przeglądać i nawigować do wszystkich elementów w rozwiązaniu. Po wybraniu pliku, zawartość **właściwości** okna zmiany. Jeśli otworzysz plik kodu (którego nazwa kończy się na *.cs* w elemencie wizualnym C# i *.vb* w języku Visual Basic), pojawi się plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na którym można dodać formanty, takie jak przyciski i listy. Formularzy programu Visual Studio Projektant nazywa **Windows Forms Designer**.
 

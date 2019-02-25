@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911198"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800534"
 ---
 # <a name="overview-report-a-problem"></a>Przegląd: Zgłoś Problem
 
@@ -52,7 +52,7 @@ Po zgłosić problem stany wskazują, gdzie materiałów przesłanych znajdują 
 
 ![Potrzebujesz więcej informacji o stanie problemu raportowanie społeczności deweloperów](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Potrzebujesz więcej informacji** wskazuje, że potrzebujemy więcej informacji diagnostycznych od Ciebie tak, aby firma Microsoft może przejść do przodu w badaniu.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**Potrzebujesz więcej informacji** wskazuje, że potrzebujemy więcej informacji diagnostycznych od Ciebie tak, aby firma Microsoft może przejść do przodu w badaniu.  [Dowiedz się, jak odpowiadać na żądania dalszych informacji.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ Po zgłosić problem stany wskazują, gdzie materiałów przesłanych znajdują 
 
 Firma Microsoft zaleca, aby upewnić się, czy problem, który masz zamiar raport już nie został zgłoszony w wyszukiwaniu. Jeśli istniejący element dopasowania problemu możesz znaleźć, wykonaj i głosować w sprawie tego biletu problem.
 
- Podaj informacje, które mogą pomóc nasze zespoły odtworzenia swój problem.  Informacje te obejmują potrzeby Odtwórz kroki, fragmenty kodu, zrzuty ekranu, nagrania odtwarzania, pliki dziennika i innych artefaktów.  Oto [jak zgłosić problem w programie Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Podaj informacje, które mogą pomóc nasze zespoły odtworzenia swój problem.  Informacje te obejmują potrzeby Odtwórz kroki, fragmenty kodu, zrzuty ekranu, nagrania odtwarzania, pliki dziennika i innych artefaktów.  Oto [jak zgłosić problem w programie Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Jak ma priorytet moje opinie
 

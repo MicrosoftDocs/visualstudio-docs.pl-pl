@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 377b80b27a8e28da86f89f011bb7047b553d894a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634646"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796143"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Instrukcje: Użycie zmiennych środowiskowych w kompilacji
 Podczas kompilowania projektów często jest to konieczne, można ustawić opcji kompilacji, korzystając z informacji, który nie znajduje się w pliku projektu lub plików, wchodzące w skład projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.
@@ -63,6 +63,6 @@ Podczas kompilowania projektów często jest to konieczne, można ustawić opcji
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [MSBuild ](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 - [Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

@@ -17,12 +17,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a2d5b587bd64b7cc07aa2b542a8d646a8885f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b30dc8ed9d277d2b7f1cbe8622b1b555659f3b14
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907428"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796468"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążeń i składników identyfikatorów
 
@@ -39,7 +39,7 @@ Kliknij nazwy wersji w tabeli poniżej, aby wyświetlić dostępne obciążenia 
 | [Visual Studio 2017 Express pulpitu](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Product.WDExpress | Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32 edytowania kodu uwzględniającej składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na platformie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów języka Visual C++ i bibliotek, MFC, ATL i C + +/ interfejsu wiersza polecenia. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
-| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Można rozprowadzać zautomatyzowane testy na wielu komputerach |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Można rozprowadzać zautomatyzowane testy na wielu komputerach |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 

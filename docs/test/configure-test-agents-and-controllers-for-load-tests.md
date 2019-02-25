@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948826"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796354"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 
@@ -77,7 +77,7 @@ Agent testowy działa jako usługa, która nasłuchuje od kontrolera testów ż�
 
 Na poniższej ilustracji pokazano punkty połączenia między kontrolerem testów, agentem testowym i klientem. Przedstawia, które porty są używane dla połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń używane na tych portach.
 
- ![Testowanie sterownika i test agent portów i zabezpieczeń](./media/test-controller-agent-firewall.png)
+ ![Kontroler testów i test agent portów i zabezpieczeń](./media/test-controller-agent-firewall.png)
 
  Aby uzyskać więcej informacji, zobacz [Konfiguracja portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md).
 

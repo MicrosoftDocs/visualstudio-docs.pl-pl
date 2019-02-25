@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155503"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796845"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -32,9 +32,9 @@ Po zainstalowaniu programu Visual Studio 2017 z poziomu wiersza polecenia można
 
 Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instalatora, który jest plikiem mała liczba godzin (około 1MB), który inicjuje proces pobierania. Program inicjujący jest pierwszy plik wykonywalny, który jest uruchamiany, gdy można pobrać z witryny Visual Studio. Aby uzyskać bezpośredni link do najnowszej wersji program inicjujący dla wydanie produktu, który instalujesz, użyj następujących linków:
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="command-line-parameters"></a>Parametry wiersza polecenia
 

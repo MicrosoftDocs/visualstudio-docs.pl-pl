@@ -1,7 +1,7 @@
 ---
 title: Aktualizowanie instalacji sieciowej
 description: Dowiedz się, jak zaktualizować instalacji programu Visual Studio za pośrednictwem sieci przy użyciu polecenia — układ
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617291"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796637"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizowanie instalacji sieciowej programu Visual Studio 2017
 
@@ -57,6 +57,10 @@ Przejdźmy przez kilka przykładów sposobu tworzenia, a następnie zaktualizuj 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
+
+    > [!IMPORTANT]
+    > Operacja aktualizacji nie można zainstalować nowo dodanych składniki opcjonalne, nawet wtedy, gdy zawierają te składniki w sekcji "add" [pliku odpowiedzi](automated-installation-with-response-file.md). Dzieje się tak, ponieważ operacji dodawania nie jest w trakcie aktualizacji.<br>
+    > **Obejście**: Oddzielny zmodyfikuj operacji po uaktualnieniu do zainstalowanie brakujących składników.
 
 * A na koniec, Oto jak dodać dodatkowe obciążenie i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenia ASP.NET i sieci Web).  Teraz obciążeń zarządzanego pulpitu, Azure, platformy ASP.NET i sieci Web znajdują się w tym układzie. Zasoby języka na język angielski, niemiecki i francuski dostępne są również dla tych obciążeń.  Układ nie został jednak zaktualizowany do najnowszej dostępnej wersji podczas uruchomienia tego polecenia. Pozostaje w istniejącą wersję.
 

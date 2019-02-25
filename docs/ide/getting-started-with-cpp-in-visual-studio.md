@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920486"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796650"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -28,13 +28,25 @@ Nie trzeba znać przy użyciu języka C++, aby ukończyć ten przewodnik Szybki 
 
 W tym samouczku potrzebujesz kopii programu Visual Studio 2017 w wersji 15.3 lub nowszej z **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
 
-## <a name="create-a-console-app"></a>Tworzenie aplikacji konsoli
+## <a name="create-a-console-app"></a>tworzenie aplikacji konsoli
 
-Jeśli nie jest jeszcze uruchomiona, uruchom program Visual Studio.
+Jeśli nie jest jeszcze uruchomiona, Otwórz program Visual Studio.
+
+::: moniker range="vs-2017"
 
 ![Środowisko IDE z Visual C&#43; &#43; zastosowanych ustawień](../ide/media/get-started-cpp-ide-layout.png)
 
 Po otwarciu programu Visual Studio, można wyświetlić trzy podstawowe części IDE: narzędzie systemu windows, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji. **Szybkie uruchamianie** pola, paska menu i standardowy pasek narzędzi znajdują się u góry. Zawiera środek okna **strona startowa**. Po otwarciu rozwiązania lub projektu, w tym miejscu pojawiają się edytory i projektanty. Podczas opracowywania aplikacji, większość czasu odbywa się w tym środkowym obszarze.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Po otwarciu programu Visual Studio **Start** pojawia się pierwsze okno. Wybierz **kontynuować bez konieczności pisania kodu** otworzyć środowisko programistyczne.
+
+Zobaczysz trzy podstawowe części IDE: narzędzie systemu windows, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji. **Szybkie uruchamianie** pola, paska menu i standardowy pasek narzędzi znajdują się u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+
+::: moniker-end
 
 Program Visual Studio używa *projektów* organizowania kodu dla aplikacji, a *rozwiązania* do organizowania projektów. Projekt zawiera wszystkie opcje, konfiguracji i reguły używane do tworzenia aplikacji. Umożliwia także zarządzanie relacji między plików wszystkich projektów i plików zewnętrznych. Aby utworzyć aplikację, najpierw należy utworzyć nowy projekt i rozwiązanie.
 

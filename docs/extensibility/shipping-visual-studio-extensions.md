@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720500"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796598"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na innych komputerach, udostępnić go ze znajomymi współpracowników lub opublikować ją w Visual Studio Marketplace. W tej sekcji Wyjaśnijmy, wszystkie elementy, które należy wykonać w celu publikowania i obsługa rozszerzenia: Praca z plikami .vsix, publikowania, lokalizacja i aktualizowania.
@@ -25,7 +25,7 @@ Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na inn
 ## <a name="working-with-vsix-extensions"></a>Praca z rozszerzeniami VSIX
  Tworzenie pustego projektu VSIX, a następnie dodając szablony różnych elementów do niego, można utworzyć rozszerzenia VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
 
- Można użyć formatu VSIX pakietu szablony projektów, szablonów, pakietów VSPackage, składniki Managed Extensibility Framework (MEF), element **przybornika** formantów, zestawów i typów niestandardowych (w tym niestandardowych stron Start). VSIX format używa wdrożenia oparte na plikach. Aby uzyskać więcej informacji na temat pakietów VSIX, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+ Można użyć formatu VSIX pakietu szablony projektów, szablonów, pakietów VSPackage, składniki Managed Extensibility Framework (MEF), element **przybornika** formantów, zestawów i typów niestandardowych (dotyczy to Start stron niestandardowych wizualizacji Studio 2017). VSIX format używa wdrożenia oparte na plikach. Aby uzyskać więcej informacji na temat pakietów VSIX, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
  VSIX format nie obsługuje instalacji fragmentów kodu. Nie obsługuje ona również niektórych innych scenariuszach, takich jak zapisywanie do globalnej pamięci podręcznej zestawów (GAC) lub w rejestrze systemu. Jeśli trzeba zapisać w pamięci podręcznej GAC i rejestru w instalacji, należy użyć Instalatora Windows. Aby uzyskać więcej informacji, zobacz [przygotowywanie rozszerzeń dla Windows wdrażanie za pomocą Instalatora](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 

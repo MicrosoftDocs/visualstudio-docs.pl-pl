@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694286"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796793"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 ## <a name="animation-fundamentals"></a>Podstawy animacji
@@ -305,7 +305,7 @@ Jak animowany przejście, kiedy element interfejsu użytkownika rozmiar w jednym
 
 -   Panel Eksploratora architektury, rozwijanie i zwijanie
 
--   Element strony Start rozwijać i zwijać
+-   Visual elementu stronę początkową 2017 Studio rozwijać i zwijać
 
 #### <a name="x-y-position-change"></a>X i Y pozycji zmiany
 W ramach tego wzorca elementu interfejsu użytkownika zmiany położenia X lub Y i / lub.

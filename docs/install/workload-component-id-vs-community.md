@@ -7,6 +7,7 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
+ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +17,13 @@ ms.service: ''
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: a70c7f4125c373041e8dc405143ad513079c9e57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 13986b02838da162f9b1b0ae49032585f8fcad8b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945901"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796962"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 składników katalogu
 

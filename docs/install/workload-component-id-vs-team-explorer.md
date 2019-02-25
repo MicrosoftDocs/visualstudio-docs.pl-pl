@@ -7,6 +7,7 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
+ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +17,13 @@ ms.service: ''
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: fd81a762112493bc40c40e27cb9d2547cead0c72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 0e7d19f7aff570e8347669418d42aece77fd2579
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927100"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796702"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 składników katalogu
 

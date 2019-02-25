@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690464"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796884"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Okno interakcji
@@ -128,10 +128,22 @@ Przykłady okien narzędzi można nawigować listy Eksploratora rozwiązań i w 
 
 **Inne okna narzędzi**
 
+::: moniker range="vs-2017"
+
 | Okna narzędzi | Funkcja |
 | --- | --- |
 | Przybornik | Okno narzędzia używane do przechowywania elementów, które zostaną usunięte na powierzchni projektowania, zapewniając spójny źródła przeciągania dla wszystkich projektantów. |
-| Strona początkowa | Portal użytkowników programu Visual Studio 2017, dostęp do źródeł wiadomości dla deweloperów, Pomoc programu Visual Studio i ostatnich projektów. Użytkownicy mogą również tworzyć niestandardowych stron początkowych przez skopiowanie pliku StartPage.xaml z "Common7\IDE\StartPages\" katalog plików programu Visual Studio do folderu StartPages w programie Visual Studio dokumenty katalogu, a następnie albo edytując XAML ręcznie lub otworzyć go w programie Visual Studio lub innego edytora kodu. |
+| Strona początkowa | Portal użytkowników w programie Visual Studio, dostęp do źródeł wiadomości dla deweloperów, Pomoc programu Visual Studio i ostatnich projektów. Użytkownicy mogą również tworzyć niestandardowych stron początkowych przez skopiowanie pliku StartPage.xaml z "Common7\IDE\StartPages\" katalog plików programu Visual Studio do folderu StartPages w programie Visual Studio dokumenty katalogu, a następnie albo edytując XAML ręcznie lub otworzyć go w programie Visual Studio lub innego edytora kodu. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Okna narzędzi | Funkcja |
+| --- | --- |
+| Przybornik | Okno narzędzia używane do przechowywania elementów, które zostaną usunięte na powierzchni projektowania, zapewniając spójny źródła przeciągania dla wszystkich projektantów. |
+
+::: moniker-end
 
 **Narzędzie okna debugera**
 

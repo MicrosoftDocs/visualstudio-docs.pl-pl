@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721826"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796754"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>Czcionka środowiska 375% + światła
- **Wygląda następująco:** pt 34 Segoe UI Light **na użytek:** (rzadkiego) unikatowy marki interfejsu użytkownika, takie jak w Visual Studio 2017 strony początkowej
 
- **Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:
+**Wygląda następująco:** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Na użytek:** (rzadkiego) unikatowy marki interfejsu użytkownika, takie jak w stronę początkową
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Na użytek:** (rzadkiego) unikatowy marki interfejsu użytkownika
+
+::: moniker-end
+
+**Kod proceduralny:** Gdzie `textBlock` to uprzednio zdefiniowany TextBlock i `label` jest uprzednio zdefiniowanej etykiety:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano.
+**XAML:** Ustaw styl TextBlock lub etykiety, jak pokazano.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>Czcionka środowiska 310% + światła
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika, takie jak strona początkowa<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 28 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Sposób użycia:**<br /><br /> — Większa nagłówka w oknach dialogowych podpisu<br />— Nagłówek raport główny<br /><br /> **Należy wykonać:**<br /><br /> -Użyj zdaniu<br />-Zawsze używaj lekkie<br /><br /> **Nie:**<br /><br /> -Użyj interfejsu użytkownika inne niż podpisu interfejsu użytkownika<br />-Pogrubienie, kursywę lub pogrubienie, kursywa<br />-Na użytek tekst podstawowy<br />— Użyj w oknach narzędzi|**Wygląda następująco:** 28 pt Segoe UI Light<br /><br /> **Przykład Visual:**<br /><br /> ![Przykład czcionka środowiska 310% &#43; światła nagłówek](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>Czcionka środowiska 200% + Semilight
 
