@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854112"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626625"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — zadanie
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji lub manifest macierzysty. Manifest natywny zawiera opis składnika poprzez określenie unikatowej tożsamości składnika i identyfikację wszystkich zestawów i plików, które tworzą składnik. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji rozszerza manifest natywny przez wskazanie punktu wejścia aplikacji i określenie poziomu zabezpieczeń aplikacji.
@@ -88,7 +88,7 @@ Obrazuje to najprostszy scenariusz możliwości generowania manifestu gdzie [!IN
 
 > [!NOTE]
 > W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.
-> 
+>
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).
 
@@ -141,7 +141,7 @@ Ten przykład jest podobny do poprzedniego przykładu, z wyjątkiem jawnie okre�
 
 > [!NOTE]
 > W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.
-> 
+>
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).
 
@@ -199,7 +199,7 @@ W tym przykładzie użyto `GenerateApplicationManifest` i `GenerateDeploymentMan
 
 > [!NOTE]
 > W poniższym przykładzie wszystkie pliki binarne aplikacji są wstępnie zbudowaną w celu skupiania się na aspektach generacji manifestu. Ten przykład generuje w pełni pracujące [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia.
-> 
+>
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat `Thumbprint` właściwości używane w `SignFile` zadań w tym przykładzie, zobacz [signfile — zadanie](../msbuild/signfile-task.md).
 
@@ -350,7 +350,7 @@ Ten przykład generuje *Test.exe.manifest*, że aplikacja staje się XCOPY możl
 ```
 
 ## <a name="see-also"></a>Zobacz także
-[Zadania](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest task](../msbuild/generatedeploymentmanifest-task.md)  
-[Signfile — zadanie](../msbuild/signfile-task.md)  
-[Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
+- [Zadania](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest task](../msbuild/generatedeploymentmanifest-task.md)
+- [Signfile — zadanie](../msbuild/signfile-task.md)
+- [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
