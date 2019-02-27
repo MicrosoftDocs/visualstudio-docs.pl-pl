@@ -1,6 +1,6 @@
 ---
-title: Evaluate Statement — Polecenie
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,51 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911744"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953058"
 ---
 # <a name="evaluate-statement-command"></a>Evaluate Statement — Polecenie
+
 Oblicza i wyświetla daną instrukcję.
 
 ## <a name="syntax"></a>Składnia
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Argumenty
- `text` Wymagane. Instrukcja do oceny.
 
-## <a name="remarks"></a>Uwagi
- Okno służące do wprowadzania **EvaluateStatement** polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.
+`text`
 
- W **polecenia** okna, znak równości (=) jest interpretowany jako operator porównania. Na przykład, jeśli wartości zmiennych `a` i `b` są różne, a następnie polecenie
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- Zwraca wartość `false`.
-
- W **bezpośrednie** okna, z drugiej strony, znak równości (=) jest interpretowany jako operator przypisania. Tak na przykład polecenie
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- przypiszą do zmiennej `a` wartość zmiennej `b`.
+Wymagana. Instrukcja do oceny.
 
 ## <a name="example"></a>Przykład
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Drukuj, polecenie](../../ide/reference/print-command.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)

@@ -4,13 +4,13 @@ description: Dodaj magazyn danych na platformie Azure, uwierzytelnianie i powiad
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2018
-ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.date: 11/06/2018
+ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295179"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953985"
 ---
 # <a name="connected-services-walkthrough"></a>Połączone usługi wskazówki
 
@@ -65,10 +65,10 @@ W tym instruktażu przedstawiono sposób dodawania usługi zaplecza platformy Az
 
 Nowa usługa wymaga następujących parametrów:
 
--   **Nazwa usługi App service** — unikatowe nazwy/identyfikatora dla tego planu
--   **Subskrypcja** — subskrypcji, o których chcesz użyć do zapłacenia za usługę
--   **Grupa zasobów** — lub sposób organizowania wszystkich zasobów platformy Azure dla projektu. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, Utwórz nową.
--   **Plan usługi** — Określa lokalizację i koszt zasobów, które go używają. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, użyj wartości domyślnej, jeden lub Utwórz nową (F1) w warstwie bezpłatna.
+- **Nazwa usługi App service** — unikatowe nazwy/identyfikatora dla tego planu
+- **Subskrypcja** — subskrypcji, o których chcesz użyć do zapłacenia za usługę
+- **Grupa zasobów** — lub sposób organizowania wszystkich zasobów platformy Azure dla projektu. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, Utwórz nową.
+- **Plan usługi** — Określa lokalizację i koszt zasobów, które go używają. Opcja Użyj istniejącej lub utworzyć nowy. Jeśli jest to pierwszy usługi platformy Azure, użyj wartości domyślnej, jeden lub Utwórz nową (F1) w warstwie bezpłatna.
 
 Odwiedź stronę [dokumentacja usługi Mobile apps](/azure/app-service-mobile/) Aby uzyskać więcej informacji.
 

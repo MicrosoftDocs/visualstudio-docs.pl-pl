@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 2096a8455eb997b6bda18f97f7a46049366181f5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+monikerRange: vs-2017
+ms.openlocfilehash: 96d3656b90efecb60d21de20987b401430258652
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841899"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954377"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 kompilacji narzędzia składników katalogu
 

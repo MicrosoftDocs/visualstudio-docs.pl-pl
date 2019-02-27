@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921539"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953638"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing w programie Visual Studio 2017
 
@@ -178,8 +178,8 @@ W przypadku rozwiązań z wieloma projektami testowymi można kontrolować, proj
 
 Po uruchomieniu Live Unit Testing, aby wybrać poszczególnych projektów testów jednostkowych, wykonaj następujące czynności:
 
-1.  Kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz polecenie **testów na żywo** > **wykluczyć** wyłączenie całego rozwiązania.
-1.  Kliknij prawym przyciskiem myszy każdy projekt testowy, który chcesz uwzględnić w testach, a następnie wybierz **testów na żywo** > **Include**.
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz polecenie **testów na żywo** > **wykluczyć** wyłączenie całego rozwiązania.
+1. Kliknij prawym przyciskiem myszy każdy projekt testowy, który chcesz uwzględnić w testach, a następnie wybierz **testów na żywo** > **Include**.
 
 **Wykluczanie indywidualnych testów z oknem edytora kodu**
 

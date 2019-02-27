@@ -1,6 +1,6 @@
 ---
 title: Okno bezpośrednie
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931952"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954202"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 
-**Bezpośrednie** okno służy do debugowania i obliczać wyrażeń, wykonywania instrukcji, drukowania wartości zmiennych i tak dalej. Umożliwia wprowadzenie wyrażenia, aby je ocenić lub wykonać przy pomocy języka programowania podczas debugowania.
+Użyj **bezpośrednie** okna, aby debugować i obliczać wyrażeń, wykonywania instrukcji i drukowania wartości zmiennych. **Bezpośrednie** okna ocenia wyrażenia, tworząc i przy użyciu obecnie wybranego projektu.
 
 Aby wyświetlić **bezpośrednie** okna, otwórz projekt do edycji, a następnie wybierz **debugowania** > **Windows** > **bezpośrednie**  lub naciśnij **Ctrl**+**Alt**+**I**. Możesz też wprowadzić **Debug.Immediate** w **polecenia** okna.
 
-Możesz użyć **bezpośrednie** okna, aby wydawać indywidualne polecenia programu Visual Studio. Dostępne polecenia obejmują `EvaluateStatement`, który może służyć do przypisywania wartości do zmiennych. **Bezpośrednie** okna obsługuje również technologię IntelliSense.
+**Bezpośrednie** okna obsługuje technologię IntelliSense.
 
 ## <a name="display-the-values-of-variables"></a>Wyświetlanie wartości zmiennych
 
-**Bezpośrednie** okno może być szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, możesz użyć [polecenie Drukuj](../../ide/reference/print-command.md):
+**Bezpośrednie** okno jest szczególnie przydatne podczas debugowania aplikacji. Na przykład, aby sprawdzić wartość zmiennej `varA`, możesz użyć [Print — polecenie](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ Możesz użyć **bezpośrednie** okna, aby wydawać indywidualne polecenia progr
 Znak zapytania (?) jest aliasem `Debug.Print`, dlatego to polecenie można również zapisać:
 
 ```cmd
->? varA
+? varA
 ```
 
 Obie wersje to polecenie zwraca wartość zmiennej `varA`.
 
 > [!TIP]
-> Aby wydać polecenie program Visual Studio w **bezpośrednie** okna, należy poprzedzić polecenie a znak większości (>). Aby wprowadzić kilka poleceń, przełącz się do **polecenia** okna.
+> Aby wydać polecenie program Visual Studio w **bezpośrednie** okna, należy poprzedzić polecenie a znak większości (>). Aby wprowadzić kilka poleceń, przełącz się do [okna polecenia](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Obliczanie wyrażenia czasu projektowania
 
@@ -56,7 +56,7 @@ Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w cz
 
 ### <a name="execute-a-function-at-design-time"></a>Wykonać funkcję w czasie projektowania
 
-1. Skopiuj następujący kod do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] konsoli aplikacji:
+1. Skopiuj następujący kod do aplikacji konsoli w języku Visual Basic:
 
    ```vb
    Module Module1
@@ -72,7 +72,7 @@ Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w cz
    End Module
    ```
 
-2. Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.
+2. Na **debugowania** menu, wybierz **Windows** > **bezpośrednie**.
 
 3. Typ `?MyFunction(2)` w **bezpośrednie** okna, a następnie naciśnij klawisz **Enter**.
 
@@ -80,7 +80,7 @@ Możesz użyć **bezpośrednie** okna do wykonania funkcji lub podprocedury w cz
 
 Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio przerywa wykonywanie we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [instruktażu: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projektów, projektów sieci web, projektów urządzeń inteligentnych i projektów SQL.
+Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym Visual Studio Tools dla projektów pakietu Office, projekty sieci web, projektów urządzeń inteligentnych i projektów SQL.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażenia czasu projektowania w rozwiązaniach dotyczących wielu projektów
 
@@ -88,7 +88,7 @@ Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania, w programie
 
 ## <a name="enter-commands"></a>Wprowadzanie poleceń
 
-Wprowadź znak większości (>) przy wydawaniu poleceń programu Visual Studio w **bezpośrednie** okna. Użyj **Strzałka w górę** i **Strzałka w dół** klucze do przewijania wcześniej wydanych poleceń.
+Wprowadź znak większości (>) przy wydawaniu poleceń programu Visual Studio w **bezpośrednie** okna. Użyj **Strzałka w górę** i **Strzałka w dół** klucze do przewijania wcześniej używanych poleceń.
 
 |Zadanie|Rozwiązanie|Przykład|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Wprowadź znak większości (>) przy wydawaniu poleceń programu Visual Studio w
 
 Po kliknięciu dowolnego poprzedniego wiersza w **bezpośrednie** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.
 
-## <a name="the-equals-sign-"></a>Znak równości (=)
+## <a name="examples"></a>Przykłady
 
-Okno służące do wprowadzania `EvaluateStatement` polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.
-
-W **bezpośrednie** okna, znak równości (=) jest interpretowany jako operator przypisania. Tak na przykład polecenie
+Poniższy przykład przedstawia cztery wyrażeń i ich wyniki w **bezpośrednie** okna dla projektów języka Visual Basic.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-przypisuje wartość zmiennej `varB` do zmiennej `varA`.
-
-W **polecenia** okna, z drugiej strony, znak równości (=) jest interpretowany jako operator porównania. Nie można użyć operacji przypisania w **polecenia** okna. Na przykład, jeśli wartości zmiennych `varA` i `varB` są różne, a następnie polecenie
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-Zwraca wartość `False`.
 
 ## <a name="first-chance-exception-notifications"></a>Powiadomienia o wyjątkach pierwszej szansy
 

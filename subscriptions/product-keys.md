@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843727"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953904"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 
@@ -104,10 +104,10 @@ Subskrybenci programu Visual Studio można zwiększyć liczbę użytkowników, k
 Pięć kluczy każdego typu są dostępne dla systemu Windows Server 2008 R2, a każdy klucz obsługuje 20 połączeń. Dla systemu Windows Server 2012 R2 cztery klucze każdego typu są zapewniają i obsługuje 50 połączeń.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Aby włączyć dodatkowe połączenia w systemie Windows Server:
-1.  Otwórz Menedżera serwera.
-2.  Otwórz listę serwerów w okienku nawigacji po lewej stronie.
-3.  Kliknij prawym przyciskiem myszy serwer licencji i wybierz pozycję "Instaluj licencje".
-4.  Postępuj zgodnie z instrukcjami w kreatorze.  Podczas wyboru typu umowy wybierz pozycję "Pakiet licencji (sprzedaż detaliczna)" i wprowadź klucz produktu uzyskany w portalu MY.
+1. Otwórz Menedżera serwera.
+2. Otwórz listę serwerów w okienku nawigacji po lewej stronie.
+3. Kliknij prawym przyciskiem myszy serwer licencji i wybierz pozycję "Instaluj licencje".
+4. Postępuj zgodnie z instrukcjami w kreatorze.  Podczas wyboru typu umowy wybierz pozycję "Pakiet licencji (sprzedaż detaliczna)" i wprowadź klucz produktu uzyskany w portalu MY.
 
 Użytkownicy końcowi mogli nawiązywać dostępu do aplikacji za pośrednictwem usług RDS, jeśli są spełnione następujące warunki:
 - Użytkownicy muszą być anonimowi (w stanie bez uwierzytelnienia).

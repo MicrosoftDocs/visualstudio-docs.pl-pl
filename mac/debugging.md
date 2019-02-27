@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295296"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953489"
 ---
 # <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
 
@@ -79,10 +79,10 @@ Po osiągnięciu punktu przerwania narzędzi debugowania pozwalają uzyskać kon
 
 Poniżej przedstawiono cztery przyciski:
 
-*   **Odtwórz** — spowoduje to rozpoczęcie wykonywania kodu, aż do następnego punktu przerwania.
-*   **Step Over** — spowoduje to wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Over spowoduje wykonanie funkcji, a zostanie zatrzymane w następnym wierszu kodu *po* funkcji.
-*   **Step Into** — spowoduje to również wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Into przestanie w pierwszym wierszu funkcji, co pozwala na dalsze wiersz po wierszu debugowanie funkcji. Jeśli następny wiersz nie jest funkcją, będzie ona działać taka sama jak Step Over.
-*   **Step Out** — spowoduje to zwrócenie do wiersza gdy wywołana została funkcja bieżąca.
+* **Odtwórz** — spowoduje to rozpoczęcie wykonywania kodu, aż do następnego punktu przerwania.
+* **Step Over** — spowoduje to wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Over spowoduje wykonanie funkcji, a zostanie zatrzymane w następnym wierszu kodu *po* funkcji.
+* **Step Into** — spowoduje to również wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Into przestanie w pierwszym wierszu funkcji, co pozwala na dalsze wiersz po wierszu debugowanie funkcji. Jeśli następny wiersz nie jest funkcją, będzie ona działać taka sama jak Step Over.
+* **Step Out** — spowoduje to zwrócenie do wiersza gdy wywołana została funkcja bieżąca.
 
 ## <a name="debugging-monos-class-libraries"></a>Debugowanie biblioteki klas platformy Mono firmy
 

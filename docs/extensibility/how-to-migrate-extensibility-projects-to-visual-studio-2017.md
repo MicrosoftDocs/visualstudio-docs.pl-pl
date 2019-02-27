@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681845"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954269"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
 
@@ -164,7 +164,7 @@ Aby zapewnić dalsze wskazówki, zidentyfikowaliśmy kilka popularnych typów ro
 
 Typ rozszerzenia | Nazwa wyświetlana | Id
 --- | --- | ---
-Edytor | Edytor rdzeni programu Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
+Edytor | Edytor rdzeni programu Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# i Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Podstawowe składniki dla obciążenia zarządzanego pulpitu | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Debuger | Debuger Just In Time | Microsoft.VisualStudio.Component.Debugger.JustInTime

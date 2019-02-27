@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155880"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954364"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -246,7 +246,7 @@ Następujące kroki umożliwiają debugowanie w bieżącej sesji programu Visual
 1. Wprowadź następujące polecenie:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Rozpocznij debugowanie i przechodzą przez dowolne kroki są niezbędne do odtworzenia problemu. W tym czasie, dzienniki debugowania są wyświetlane w **dane wyjściowe** okna w obszarze **dziennik hosta adaptera debugowania**. Następnie można skopiować dzienników z tego okna i wkleić do problemu w usłudze GitHub, poczty e-mail itd.
@@ -256,7 +256,7 @@ Następujące kroki umożliwiają debugowanie w bieżącej sesji programu Visual
 1. Jeśli program Visual Studio zawiesza się lub których w przeciwnym razie nie można uzyskać dostęp do **dane wyjściowe** okien, uruchom ponownie program Visual Studio, Otwórz okno polecenia i wprowadź następujące polecenie:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Uruchamianie debugowania i ponownie odtworzenie problemu. Następnie można znaleźć w dziennikach debugera w `%temp%\DebugAdapterHostLog.txt`.

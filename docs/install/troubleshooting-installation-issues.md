@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931575"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953972"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio 2017 i uaktualnić problemów
 
@@ -84,7 +84,7 @@ W tym miejscu znajduje się tabela znane problemy i obejścia, które mogą być
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Jak uzyskać dzienniki instalacji programu Visual Studio
 
-Dzienniki instalacji są wymagane do większości rozwiązywania problemów z instalacją. Gdy Prześlij problem za pomocą [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) w Instalatorze programu Visual Studio, te dzienniki są automatycznie uwzględniane w raporcie.
+Dzienniki instalacji są wymagane do większości rozwiązywania problemów z instalacją. Gdy Prześlij problem za pomocą [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio.md) w Instalatorze programu Visual Studio, te dzienniki są automatycznie uwzględniane w raporcie.
 
 Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji wszystkich składników program Visual Studio 2017, m.in. .NET Framework, zestaw Windows SDK i programu SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
 

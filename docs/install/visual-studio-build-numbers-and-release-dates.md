@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317994"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954137"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -171,16 +171,18 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.1 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 7 marca 2017 r. | 15.0.26304.0 |
 | 15.0.0 | Wydanie | 7 marca 2017 r. | 15.0.26228.4 |
 
-## <a name="visual-studio-2019-preview"></a>Visual Studio Preview 2019 r
+## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio Preview 2019 do daty.
+W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2019 r, do daty.
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | W wersji Release Candidate (RC) | 27 lutego 2019 r. | 16.0.28625.133 |
+| 16.0.0 | Wersja zapoznawcza 4 | 27 lutego 2019 r. | 16.0.28625.133 |
 | 16.0.0 | Wersja zapoznawcza 3 | 13 lutego 2019 r. | 16.0.28608.199 |
 | 16.0.0 | 2.2 w wersji zapoznawczej | 5 lutego 2019 r. | 16.0.28602.52 |
 | 16.0.0 | 2.1 w wersji zapoznawczej | 31 stycznia 2019 r. | 16.0.28529.54 |
-| 16.0.0 | Wersja zapoznawcza 2 | 23 stycznia 2019 r. | 16.0.28522.59 |
+| 16.0.0 | Preview 2 | 23 stycznia 2019 r. | 16.0.28522.59 |
 | 16.0.0 | 1.1 (wersja zapoznawcza) | 10 grudnia 2018 r. | 16.0.28408.50 |
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 

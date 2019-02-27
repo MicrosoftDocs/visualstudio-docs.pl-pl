@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Więcej informacji na temat obowiązków administratorów subskrypcji.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842354"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954483"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Omówienie obowiązki administratora
 Jako administrator możesz mieć możliwość zarządzania subskrypcjami dla Twojej organizacji.  Rola administratora są obowiązków, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia dotyczące roli administratora.
 
 ## <a name="roles--responsibilities"></a>Role i obowiązki
 Administrator programu Visual Studio ma cztery obowiązki klucza:
-1.  **Dowiedz się, korzyści i ograniczenia subskrypcji programu Visual Studio.** Poprawnie opis korzyści można umożliwiają zmniejszenie wydatków na sprzęt, korzystając z usług w chmurze i zmniejszyć koszty oprogramowania z licencjami na użytkownika w środowiskach produkcji wstępnej.
-2.  **Przypisywanie subskrypcji programu Visual Studio do określonych, o nazwie osoby i wsparcia użycia.** Twoja Umowa wymaga, że subskrypcje programu Visual Studio można przypisać do określonych, nazwanych użytkowników indywidualnych. Należy wykonać dalsze czynności z Twojej przypisanych użytkowników indywidualnych, aby zapewnić dostęp i w pełni korzystać z zalet dostępnych w ramach subskrypcji programu Visual Studio.
-3.  **Dokładnego spisu w środowisku produkcji wstępnej.** Jest to istotne, aby upewnić się, że wszyscy użytkownicy, którzy współpracują z programu Visual Studio, licencjonowane oprogramowanie są odpowiednio licencjonowane własnej subskrypcji programu Visual Studio.
-4.  **Śledź zmiany przypisania użytkownika i uzyskiwanie dodatkowych licencji zgodnie z harmonogramem.** Microsoft wolumin Licencjonowania umowy i umowy MPSA zapewniają większą elastyczność w sposób używania i przypisywanie subskrypcji programu Visual Studio. W zamian powinny śledzić zmiany do użycia oprogramowania i przypisań użytkowników oraz przetwarzać zamówienia dla dodatkowych licencji zgodnie z harmonogramem, opisanych w umowie.
+
+1. **Dowiedz się, korzyści i ograniczenia subskrypcji programu Visual Studio.** Poprawnie opis korzyści można umożliwiają zmniejszenie wydatków na sprzęt, korzystając z usług w chmurze i zmniejszyć koszty oprogramowania z licencjami na użytkownika w środowiskach produkcji wstępnej. 
+2. **Przypisywanie subskrypcji programu Visual Studio do określonych, o nazwie osoby i wsparcia użycia.** Twoja Umowa wymaga, że subskrypcje programu Visual Studio można przypisać do określonych, nazwanych użytkowników indywidualnych. Należy wykonać dalsze czynności z Twojej przypisanych użytkowników indywidualnych, aby zapewnić dostęp i w pełni korzystać z zalet dostępnych w ramach subskrypcji programu Visual Studio.
+3. **Dokładnego spisu w środowisku produkcji wstępnej.** Jest to istotne, aby upewnić się, że wszyscy użytkownicy, którzy współpracują z programu Visual Studio, licencjonowane oprogramowanie są odpowiednio licencjonowane własnej subskrypcji programu Visual Studio. 
+4. **Śledź zmiany przypisania użytkownika i uzyskiwanie dodatkowych licencji zgodnie z harmonogramem.** Microsoft wolumin Licencjonowania umowy i umowy MPSA zapewniają większą elastyczność w sposób używania i przypisywanie subskrypcji programu Visual Studio. W zamian powinny śledzić zmiany do użycia oprogramowania i przypisań użytkowników oraz przetwarzać zamówienia dla dodatkowych licencji zgodnie z harmonogramem, opisanych w umowie.
 
 ## <a name="benefits-and-limitations"></a>Zalety i ograniczenia
 Subskrypcje programu Visual Studio pozwalają rozwoju członkom zespołu zainstalować i korzystać z oprogramowania do projektowania, rozwoju, testowania, oceny i pokazują innego oprogramowania. Oprogramowania Visual Studio subskrypcji nie ma licencji w środowiskach produkcyjnych.
@@ -70,9 +71,10 @@ Administratorzy subskrypcji usługi Visual Studio powinny śledzić użycie prog
 - Użytkownik korzysta z oprogramowania Visual Studio.
 
 Sfinalizuj zakup zobowiązania jest określana przez **górnego limitu użycia**. Ten limit jest punkt wysokiej codzienne przypisania użytkownika lub użytkowników wchodzących w interakcję z oprogramowaniem Visual Studio, która kwota jest wyższa.
-1.  Administratorzy subskrypcji usługi Visual Studio może zwiększyć górny limit użycia przez przypisywanie subskrypcji programu Visual Studio do osób.
-2.  Administratorzy subskrypcji usługi Visual Studio może zmienić przypisanie subskrypcji od jednego abonenta, jeśli upłynęło 90 dni od czasu, oryginalnym przypisania. Aby uniknąć sztucznie górnego limitu, zawsze to zrobić, najpierw usunięcie istniejącej subskrypcji, a następnie dodanie nowego.
-3.  Administratorzy subskrypcji usługi Visual Studio mogą zmienić poziom przypisana subskrypcja dla poszczególnych będzie stanowić spadek jedno przypisanie i zwiększenie w innym. Po zmniejszeniu subskrybenta przypisany poziom subskrypcji poszczególnych musisz natychmiast zaprzestać korzystania z i odinstalować wszystkie elementy, które znajduje się tylko w wyższego poziomu subskrypcji.
+
+1. Administratorzy subskrypcji usługi Visual Studio może zwiększyć górny limit użycia przez przypisywanie subskrypcji programu Visual Studio do osób.
+2. Administratorzy subskrypcji usługi Visual Studio może zmienić przypisanie subskrypcji od jednego abonenta, jeśli upłynęło 90 dni od czasu, oryginalnym przypisania. Aby uniknąć sztucznie górnego limitu, zawsze to zrobić, najpierw usunięcie istniejącej subskrypcji, a następnie dodanie nowego.
+3. Administratorzy subskrypcji usługi Visual Studio mogą zmienić poziom przypisana subskrypcja dla poszczególnych będzie stanowić spadek jedno przypisanie i zwiększenie w innym. Po zmniejszeniu subskrybenta przypisany poziom subskrypcji poszczególnych musisz natychmiast zaprzestać korzystania z i odinstalować wszystkie elementy, które znajduje się tylko w wyższego poziomu subskrypcji. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Subskrypcje w chmurze, licencji Open lub Open Value
 Może być przypisanie subskrypcji przy użyciu programu, np. subskrypcji Microsoft Cloud, Open License lub Open Value. Jeśli tak, musi przetwarzać zamówienia dla dodatkowych użytkowników w miesiącu, w którym użytkownicy (pracownicy lub zewnętrznych wykonawców) rozpocząć wchodzenie w interakcje z oprogramowaniem licencję programu Visual Studio.

@@ -1,5 +1,5 @@
 ---
-title: Print — Polecenie
+title: Debug.Print
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,46 +14,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a3de1fba86c78f16703efd858448bc0f25e8d0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952297"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953560"
 ---
 # <a name="print-command"></a>Print — Polecenie
+
 Oblicza wyrażenie lub wyświetla określony tekst.
 
 ## <a name="syntax"></a>Składnia
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Argumenty
- `text`
 
- Wymagana. Wyrażenie do oceny lub tekst do wyświetlenia.
+`text`
+
+Wymagana. Wyrażenie do oceny lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
- Dla tego polecenia, można użyć znaku zapytania (?) jako alias. Tak na przykład polecenie
+
+Dla tego polecenia, można użyć znaku zapytania (?) jako alias. Tak na przykład polecenie
 
 ```cmd
 >Debug.Print expA
 ```
 
- można również zapisać
+można również zapisać jako
 
 ```cmd
->? expA
+? expA
 ```
 
- Obie wersje to polecenie zwraca bieżącą wartość wyrażenia `expA`.
+Obie wersje to polecenie zwraca bieżącą wartość wyrażenia `expA`.
 
 ## <a name="example"></a>Przykład
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>Zobacz też

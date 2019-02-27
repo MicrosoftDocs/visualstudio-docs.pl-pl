@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957942"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954312"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -161,27 +161,28 @@ Można użyć opcji wiersza polecenia, aby tymczasowo wyłączyć wszystkie anal
 
 Czasami może być przydatne do analizy kodu czy skupia się i nadal korzystaj środowiska IDE programu Visual Studio. Poniżej przedstawiono przykładowy scenariusz, który może służyć do dużych projektów, aby zapisać czas kompilacji i ułatwić filtrowania wyników.
 
-1.  W powłoce poleceń ustaw `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
-2.  Uruchom program Visual Studio z powłoki poleceń w celu odziedziczenia tych zmiennych.
-3.  Ładowanie projektu i otwórz jej właściwości.
-4.  Włącz analizę kodu, wybierz odpowiednią reguł, ale nie należy włączać rozszerzenia analizy kodu.
-5.  Przejdź do pliku, który chcesz analizować za pomocą wytycznych podstawowe sprawdzanie języka C++ i otwórz jej właściwości.
-6.  Wybierz **C / C ++ \Command opcje linii** i Dodaj `/analyze:plugin EspXEngine.dll`
-7.  Wyłącz używaniem prekompilowanego nagłówka (**C / C ++ \Precompiled nagłówki**). Jest to konieczne, ponieważ aparat rozszerzenia może próbować odczytywać wewnętrznych informacji prekompilowanego pliku nagłówkowego, a jeśli one został skompilowany przy użyciu domyślnej opcji projektu, nie będzie zgodny.
-8.  Skompiluj ponownie projekt. Typowe kontrole PREFast należy uruchomić we wszystkich plikach. Wytyczne dotyczące podstawowe sprawdzanie języka C++ nie jest domyślnie włączona, dlatego go powinien działać tylko na pliku, który jest skonfigurowany do używania go.
+1. W powłoce poleceń ustaw `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
+2. Uruchom program Visual Studio z powłoki poleceń w celu odziedziczenia tych zmiennych.
+3. Ładowanie projektu i otwórz jej właściwości.
+4. Włącz analizę kodu, wybierz odpowiednią reguł, ale nie należy włączać rozszerzenia analizy kodu.
+5. Przejdź do pliku, który chcesz analizować za pomocą wytycznych podstawowe sprawdzanie języka C++ i otwórz jej właściwości.
+6. Wybierz **C / C ++ \Command opcje linii** i Dodaj `/analyze:plugin EspXEngine.dll`
+7. Wyłącz używaniem prekompilowanego nagłówka (**C / C ++ \Precompiled nagłówki**). Jest to konieczne, ponieważ aparat rozszerzenia może próbować odczytywać wewnętrznych informacji prekompilowanego pliku nagłówkowego, a jeśli one został skompilowany przy użyciu domyślnej opcji projektu, nie będzie zgodny.
+8. Skompiluj ponownie projekt. Typowe kontrole PREFast należy uruchomić we wszystkich plikach. Wytyczne dotyczące podstawowe sprawdzanie języka C++ nie jest domyślnie włączona, dlatego go powinien działać tylko na pliku, który jest skonfigurowany do używania go.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Jak używać podstawowe sprawdzanie języka C++ wytycznych poza programem Visual Studio
 Sprawdzanie w podstawowych wytycznych dotyczących języka C++ można użyć w kompilacjach zautomatyzowanych.
 
 ### <a name="msbuild"></a>MSBuild
- Narzędzie do sprawdzania analizy kodu natywnego (PREfast) jest zintegrowana środowiska MSBuild przez pliki niestandardowych elementów docelowych. Można użyć właściwości projektu, aby ją włączyć, a następnie dodaj podstawowe sprawdzanie wytyczne dotyczące języka C++, (które opiera się na PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+Narzędzie do sprawdzania analizy kodu natywnego (PREfast) jest zintegrowana środowiska MSBuild przez pliki niestandardowych elementów docelowych. Można użyć właściwości projektu, aby ją włączyć, a następnie dodaj podstawowe sprawdzanie wytyczne dotyczące języka C++, (które opiera się na PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Upewnij się, że możesz dodać te właściwości, przed zaimportowaniem pliku Microsoft.Cpp.targets. Można wybrać zestawów reguł określone lub Tworzenie niestandardowego zestawu reguł lub użycie domyślnego zestawu reguł, zawierający inne kontrole PREfast.
@@ -221,14 +222,16 @@ Należy ustawić kilka zmiennych środowiskowych i użyć właściwych opcji wie
    - `/analyze:plugin EspXEngine.dll` Ta opcja ładuje aparatu rozszerzenia analizy kodu do PREfast. Ten aparat ładuje z kolei wytycznych podstawowe sprawdzanie języka C++.
 
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki obsługi wskazówek dotyczących
- Biblioteka obsługi wskazówek dotyczących zaprojektowano w celu postępuj zgodnie z podstawowych wytycznych dotyczących. GSL zawiera definicje, które umożliwiają Zamień podatne konstrukcje bezpieczniejszych alternatyw. Na przykład, możesz zastąpić `T*, length` pary parametrów za pomocą `span<T>` typu. GSL znajduje się w temacie [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest typu open source, dzięki czemu można wyświetlić źródła, dodawać komentarze lub współtworzyć. Projekt, można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Użyj wytycznych podstawowe sprawdzanie języka C++ w projektach programu Visual Studio 2015
-  Jeśli używasz programu Visual Studio 2015, zestawów reguł analizy kodu podstawowe sprawdzanie języka C++ nie są zainstalowane domyślnie. Aby można było włączyć narzędzi analizy kodu podstawowe sprawdzanie języka C++ w programie Visual Studio 2015, należy wykonać kilka dodatkowych kroków. Firma Microsoft zapewnia obsługę dla projektów programu Visual Studio 2015, przy użyciu pakietu Nuget. Pakiet o nazwie Microsoft.CppCoreCheck i jest on dostępny w [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga, że masz co najmniej zainstalowanego programu Visual Studio 2015 z aktualizacją Update 1.
+Biblioteka obsługi wskazówek dotyczących zaprojektowano w celu postępuj zgodnie z podstawowych wytycznych dotyczących. GSL zawiera definicje, które umożliwiają Zamień podatne konstrukcje bezpieczniejszych alternatyw. Na przykład, możesz zastąpić `T*, length` pary parametrów za pomocą `span<T>` typu. GSL znajduje się w temacie [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest typu open source, dzięki czemu można wyświetlić źródła, dodawać komentarze lub współtworzyć. Projekt, można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- Pakiet instaluje też inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Użyj wytycznych podstawowe sprawdzanie języka C++ w projektach programu Visual Studio 2015
 
- Ze względu na sposób, w jaki są ładowane reguł analizy kodu należy zainstalować pakiet Microsoft.CppCoreCheck NuGet do każdego projektu C++, który chcesz sprawdzić w programie Visual Studio 2015.
+Jeśli używasz programu Visual Studio 2015, zestawów reguł analizy kodu podstawowe sprawdzanie języka C++ nie są zainstalowane domyślnie. Aby można było włączyć narzędzi analizy kodu podstawowe sprawdzanie języka C++ w programie Visual Studio 2015, należy wykonać kilka dodatkowych kroków. Firma Microsoft zapewnia obsługę dla projektów programu Visual Studio 2015, przy użyciu pakietu Nuget. Pakiet o nazwie Microsoft.CppCoreCheck i jest on dostępny w [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga, że masz co najmniej zainstalowanego programu Visual Studio 2015 z aktualizacją Update 1.
+
+Pakiet instaluje też inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Ze względu na sposób, w jaki są ładowane reguł analizy kodu należy zainstalować pakiet Microsoft.CppCoreCheck NuGet do każdego projektu C++, który chcesz sprawdzić w programie Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Aby dodać pakiet Microsoft.CppCoreCheck do projektu w programie Visual Studio 2015
 

@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 2181d080875843c381d7498ac52a3bb0d381459a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+monikerRange: vs-2017
+ms.openlocfilehash: 901eb94a0ca53e73dcd1df21241f20870de64e7c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844408"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953198"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio 2017 klienta opinii składników katalogu
 

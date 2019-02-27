@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e79af99783d9e7fb8c43f72245dab828fea1736d
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841714"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953846"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -82,9 +82,9 @@ Upewnij się, że masz swój identyfikator umowy i identyfikator dostępu jest d
 
 Aby użyć swojej korzyści z pomocy technicznej subskrypcji programu Visual Studio zagadnienia odnoszące się do platformy Azure, należy połączyć swój identyfikator umowy i identyfikator dostępu do subskrypcji platformy Azure.
 
-1.  Odwiedź stronę https://portal.azure.com i zaloguj się
-2.  W nawigacji po lewej stronie kliknij **Pomoc i obsługa techniczna**
-3.  W obszarze "Support" kliknij **nowe żądanie pomocy technicznej**
+1. Odwiedź stronę https://portal.azure.com i zaloguj się
+2. W nawigacji po lewej stronie kliknij **Pomoc i obsługa techniczna**
+3. W obszarze "Support" kliknij **nowe żądanie pomocy technicznej**
 
 ## <a name="eligibility"></a>Uprawnienie
 

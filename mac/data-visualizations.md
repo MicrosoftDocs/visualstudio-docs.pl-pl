@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349442"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953450"
 ---
 # <a name="data-visualizations"></a>Wizualizacje danych
 
@@ -88,18 +88,18 @@ Poniżej wymieniono niektóre typy, które również mają własne wizualizator�
 
 ![Inne wizualizacje](media/data-visualizations-image23.png)
 
-*   **Typy pierwotne**
-    *   Spowoduje to wyświetlenie nieprzetworzonej wartości typu pierwotnego.
-*   **Enum**
-    *   Spowoduje to wyświetlenie wartości pola bez kwalifikatora typu wyliczenia.
-*   **Krotki**
-    *   Wyświetlane w formacie ()
-*   **Wartość null**
-    *   Pokazuje wartość "null".
-*   **ADRES URL**
-    *   Spowoduje to wyświetlenie możesz klikać hiperłącza.
-*   **Pola IntPtr**
-    *   Spowoduje to wyświetlenie reprezentacji szesnastkowej elementu IntPtr.
+* **Typy pierwotne**
+  * Spowoduje to wyświetlenie nieprzetworzonej wartości typu pierwotnego.
+* **Enum**
+  * Spowoduje to wyświetlenie wartości pola bez kwalifikatora typu wyliczenia.
+* **Krotki**
+  * Wyświetlane w formacie ()
+* **Null**
+  * Pokazuje wartość "null".
+* **Adres URL**
+  * Spowoduje to wyświetlenie możesz klikać hiperłącza.
+* **IntPtr**
+  * Spowoduje to wyświetlenie reprezentacji szesnastkowej elementu IntPtr.
 
 ## <a name="see-also"></a>Zobacz także
 

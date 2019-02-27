@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450597"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954403"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -377,7 +377,7 @@ Jeśli chcesz sugestię o jak możemy ulepszyć program Visual Studio, lub Dowie
 
 ### <a name="report-a-problem"></a>zgłaszanie problemu
 
- Czasami komunikat nie jest wystarczająca do przekazania pełnego wpływu napotkany problem. Występują zawieszenie, awarii lub innych problemów z wydajnością, możesz w prosty sposób udostępniać Odtwórz kroki i pliki pomocnicze (takie jak zrzuty ekranu i śledzenia i sterty pliki zrzutu) z nami za pomocą **Zgłoś Problem** narzędzia. Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [jak zgłosić problem](how-to-report-a-problem-with-visual-studio-2017.md) strony.
+ Czasami komunikat nie jest wystarczająca do przekazania pełnego wpływu napotkany problem. Występują zawieszenie, awarii lub innych problemów z wydajnością, możesz w prosty sposób udostępniać Odtwórz kroki i pliki pomocnicze (takie jak zrzuty ekranu i śledzenia i sterty pliki zrzutu) z nami za pomocą **Zgłoś Problem** narzędzia. Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [jak zgłosić problem](how-to-report-a-problem-with-visual-studio.md) strony.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio w produkty firmy Microsoft i umowy o świadczenie usług (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841675"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953810"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w Microsoft Products and Services Agreement (MPSA)
 
@@ -29,21 +29,22 @@ Niezarządzana dzierżawa jest bez żadnych administratorów w ramach dzierżawy
 Przed ukończenie skojarzenie dzierżawy poniżej przedstawiono kilka wymagań/czynnościach, które Aby zostać administratorem subskrypcji programu Visual Studio.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Skojarzenie wstępne dzierżawy (zarządzanego dzierżawcy)
--   Musi być zarejestrowany użytkownik do centrum danych firmy.
--   W ramach dzierżawy, które są częścią musi być użytkownika administratora (minimum) lub administrator globalny. (Dotyczy to jeśli firma korzysta już z usług w chmurze). Każda rola jest wymagana do administratora subskrypcji programu Visual Studio.
--   Musisz być administratorem globalnym w dzierżawie, które są częścią, aby można było skojarzyć swoje konto zakupu dla Twojej dzierżawy.
--   Musi być administratorem konta lub menedżerem w Centrum firmy.
--   Pole "Kraj lub Region" w ramach profilu użytkownika (i innych użytkowników) [Azure](https://portal.azure.com/) musi być wypełnione odpowiednio w zależności od regionu (czyli Stany Zjednoczone, urzędu certyfikacji itp.).
+
+- Musi być zarejestrowany użytkownik do centrum danych firmy.
+- W ramach dzierżawy, które są częścią musi być użytkownika administratora (minimum) lub administrator globalny. (Dotyczy to jeśli firma korzysta już z usług w chmurze). Każda rola jest wymagana do administratora subskrypcji programu Visual Studio.
+- Musisz być administratorem globalnym w dzierżawie, które są częścią, aby można było skojarzyć swoje konto zakupu dla Twojej dzierżawy.
+- Musi być administratorem konta lub menedżerem w Centrum firmy.
+- Pole "Kraj lub Region" w ramach profilu użytkownika (i innych użytkowników) [Azure](https://portal.azure.com/) musi być wypełnione odpowiednio w zależności od regionu (czyli Stany Zjednoczone, urzędu certyfikacji itp.). 
 
 > [!NOTE]
 > Użytkownicy, którzy mają być administratorów subskrypcji programu Visual Studio nie są wymagane do użytkowników w Centrum firmy, zgodnie z zapotrzebowaniem spełnia ono kryteriów w krokach 2 i 5.
 
 Gdy są spełnione kryteria w powyższych krokach 5 możesz skojarzyć swoje konto zakupu dla Twojej dzierżawy, poniższe kroki.
-1.  Zaloguj się do [Centrum biznesowych](https://businessaccount.microsoft.com/).
-2.  Kliknij pozycję **konta** kartę i wybierz polecenie **kojarzenie domen**.
-3.  Wybierz swoje **Zakup konto** (Jeśli masz więcej niż jeden).
-4.  Wybierz swoje **dzierżawy** (np. contoso.onmicrosoft.com).
-5.  Kliknij przycisk **skojarzenia domeny**.
+1. Zaloguj się do [Centrum biznesowych](https://businessaccount.microsoft.com/).
+2. Kliknij pozycję **konta** kartę i wybierz polecenie **kojarzenie domen**.
+3. Wybierz swoje **Zakup konto** (Jeśli masz więcej niż jeden).
+4. Wybierz swoje **dzierżawy** (np. contoso.onmicrosoft.com).
+5. Kliknij przycisk **skojarzenia domeny**.
 
 Po dokonaniu skojarzenia wszyscy użytkownicy spełniający kryteria wymagane zwykle przydzieli jako administratorów subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może potrwać do 24 godzin. Po zainicjowaniu będzie można uzyskać dostęp portalem administratora subskrypcji programu Visual Studio. Trwa to dłużej niż 24 godziny, skontaktuj się z umowami MPSA pomocy technicznej.
 

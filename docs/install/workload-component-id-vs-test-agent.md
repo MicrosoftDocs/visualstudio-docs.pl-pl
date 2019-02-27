@@ -15,12 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: 95fad33bfe21546e0e5ecbbab4e1259505941eec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+monikerRange: vs-2017
+ms.openlocfilehash: 480c44205d64e9dc7881afe34310b6e2d292bd97
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841042"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953411"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 składników katalogu
 

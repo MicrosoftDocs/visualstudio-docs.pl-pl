@@ -7,65 +7,76 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410ab74e672d29673674131b30e2412581b9b399
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce316f87e47a7846fc30f480c8e2bf197f38051d
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954208"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954262"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
+
 Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio. Zasady nie zostały ustalone.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Wytyczne dotyczące szablonów T4 w czasie projektowania
- Szablony T4 czasu projektowania są szablony, które generują kod w projekcie programu Visual Studio w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
- Generuj zmienną aspektów aplikacji.
+Szablony T4 czasu projektowania są szablony, które generują kod w projekcie programu Visual Studio w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+
+Generuj zmienną aspektów aplikacji.
+
 Generowanie kodu jest najbardziej użyteczne dla tych aspektów aplikacji, które mogą ulec zmianie w trakcie realizacji projektu lub zmieni się między różnymi wersjami aplikacji. Oddzielne te aspekty zmiennej z aspektów bardziej niezmiennej, tak, aby łatwiej określić, co ma zostać wygenerowane. Na przykład jeśli aplikacja zawiera witrynę sieci Web, należy oddzielić standardowej strony obsługująca funkcje z logikę, która definiuje ścieżki nawigacji z jednej strony do innego.
 
- Kodowanie zmiennej aspekty w co najmniej jednego modelu źródłowego.
+Kodowanie zmiennej aspekty w co najmniej jednego modelu źródłowego.
+
 Model jest pliku lub bazy danych, która odczytuje każdy szablon, można uzyskać określone wartości dla zmiennej części kodu, który ma zostać wygenerowane. Modele mogą być baz danych i plików XML, własny projekt, diagramy lub języków specyficznych dla domeny. Zazwyczaj jeden model jest używany do generowania wielu plików w projekcie programu Visual Studio. Każdy plik jest generowany na podstawie szablonu oddzielne.
 
- Można użyć więcej niż jednego modelu w projekcie. Na przykład można zdefiniować model nawigacji między stronami sieci web i osobnymi plikami modelu dla układu strony.
+Można użyć więcej niż jednego modelu w projekcie. Na przykład można zdefiniować model nawigacji między stronami sieci web i osobnymi plikami modelu dla układu strony.
 
- Na potrzeby użytkowników i słownictwa, a nie na implementacji, należy skoncentrować się modelu.
+Na potrzeby użytkowników i słownictwa, a nie na implementacji, należy skoncentrować się modelu.
+
 Na przykład w aplikacji witryny sieci Web, można oczekiwać modelu do odwoływania się do strony sieci web i hiperłączy.
 
- W idealnym przypadku Wybierz formę prezentacji, która odpowiada rodzaju informacje, który reprezentuje model. Na przykład model nawigacji ścieżek przy użyciu witryny sieci Web może być diagram pola i strzałki.
+W idealnym przypadku Wybierz formę prezentacji, która odpowiada rodzaju informacje, który reprezentuje model. Na przykład model nawigacji ścieżek przy użyciu witryny sieci Web może być diagram pola i strzałki.
 
- Przetestuj wygenerowanego kodu.
+Przetestuj wygenerowanego kodu.
+
 Aby sprawdzić, czy powstały kod działa zgodnie z użytkownicy muszą, należy użyć testy ręczne lub automatyczne. Należy unikać Generowanie testów z tego samego modelu, z którego jest generowany kod.
 
- W niektórych przypadkach ogólne można wykonać testy na podstawie modelu bezpośrednio. Na przykład można napisać test, który zapewnia, że każdej strony w witrynie sieci Web jest osiągalna nawigacji od innych.
+W niektórych przypadkach ogólne można wykonać testy na podstawie modelu bezpośrednio. Na przykład można napisać test, który zapewnia, że każdej strony w witrynie sieci Web jest osiągalna nawigacji od innych.
 
- Zezwalaj na niestandardowego kodu: Generuj klasy częściowe.
-Zezwalaj na kod, który można zapisać ręcznie dodatkowo do wygenerowanego kodu. Jest nietypowy dla schematu generowania kodu można było uwzględnić wszystkie ewentualne zmiany, które mogą wystąpić. Dlatego należy oczekiwać dodać lub zmienić niektóre z wygenerowanego kodu. Gdzie wygenerowanego materiału jest w języku .NET takich jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], są szczególnie przydatne, dwóch strategii:
+Zezwalaj na niestandardowego kodu: Generuj klasy częściowe.
+
+Zezwalaj na kod, który można zapisać ręcznie dodatkowo do wygenerowanego kodu. Jest nietypowy dla schematu generowania kodu można było uwzględnić wszystkie ewentualne zmiany, które mogą wystąpić. Dlatego należy oczekiwać dodać lub zmienić niektóre z wygenerowanego kodu. Gdzie wygenerowanego materiału jest w języku .NET takich jak C# lub Visual Basic są szczególnie przydatne w dwóch strategii:
 
 - Wygenerowane klasy powinna być częściowe. Dzięki temu można dodać zawartości do wygenerowanego kodu.
 
 - Klas powinny być generowane w parach, jeden dziedziczenie w innej. Klasa bazowa powinien zawierać wszystkie wygenerowane metody i właściwości, a klasa pochodna może zawierać tylko konstruktory. Dzięki temu kod odręcznej do żadnego z wygenerowanych metod zastąpienia.
 
-  W innych językach wygenerowane, takich jak XML, należy użyć `<#@include#>` dyrektywy, aby proste kombinacji odręcznej i generowanej zawartości. W bardziej złożonych przypadkach trzeba napisać kroku przetwarzania końcowego, który łączy wygenerowany plik z plikami odręcznej.
+W innych językach wygenerowane, takich jak XML, należy użyć `<#@include#>` dyrektywy, aby proste kombinacji odręcznej i generowanej zawartości. W bardziej złożonych przypadkach trzeba napisać kroku przetwarzania końcowego, który łączy wygenerowany plik z plikami odręcznej.
 
-  Przenieś wspólnej materiały do dołączonych plików lub szablonów czasu wykonywania.
-  Aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, użyj `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
+Przenieś wspólnej materiały do dołączonych plików lub szablonów czasu wykonywania.
 
-  Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu. Aby uzyskać przykłady, zobacz ["Dziedziczenie w szablonów tekstowych" w blogu Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, użyj `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
 
-  Należy rozważyć przeniesienie dużych bloków kodu w osobnym zestawie.
-  Jeśli masz kod dużych bloków i bloki cech klas może być przydatne przenieść niektóre ten kod do metody, które kompilujesz w osobnym projekcie. Możesz użyć `<#@ assembly #>` dyrektywy, aby uzyskiwać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).
+Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu.
 
-  Metody można umieścić w klasę abstrakcyjną, która może dziedziczyć szablonu. Klasa ogólna musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
+Należy rozważyć przeniesienie dużych bloków kodu w osobnym zestawie.
 
-  Generuj kod, nie pliki konfiguracji.
-  Jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
+Jeśli masz kod dużych bloków i bloki cech klas może być przydatne przenieść niektóre ten kod do metody, które kompilujesz w osobnym projekcie. Możesz użyć `<#@ assembly #>` dyrektywy, aby uzyskiwać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).
 
-  Z drugiej strony, których części zmiennych są generowane przed kompilacją aplikacji może być silnie typizowane. Dzięki temu znacznie prostszy i bardziej niezawodne pisać kod odręcznej i zintegrować ją z wygenerowanym części oprogramowania.
+Metody można umieścić w klasę abstrakcyjną, która może dziedziczyć szablonu. Klasa ogólna musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
 
-  Aby uzyskać pełne zaletą generowania kodu, spróbuj do generowania kodu programu zamiast plików konfiguracyjnych.
+Generuj kod, nie pliki konfiguracji.
 
-  Użyj folderu wygenerowany kod.
-  Umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
+Jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
+
+Z drugiej strony, których części zmiennych są generowane przed kompilacją aplikacji może być silnie typizowane. Dzięki temu znacznie prostszy i bardziej niezawodne pisać kod odręcznej i zintegrować ją z wygenerowanym części oprogramowania.
+
+Aby uzyskać pełne zaletą generowania kodu, spróbuj do generowania kodu programu zamiast plików konfiguracyjnych.
+
+Użyj folderu wygenerowany kod.
+
+Umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
 
 ```
 MyProject
@@ -81,35 +92,39 @@ MyProject
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Wytyczne dotyczące szablonów T4 (wstępnie przetworzony) czasu wykonywania
- Przenieś wspólnej materiał do dziedziczonej szablonów.
+
+Przenieś wspólnej materiał do dziedziczonej szablonów.
+
 Dziedziczenie umożliwia udostępnianie metody i bloki tekstu między szablonów tekstowych T4. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
 
- Można również użyć obejmują pliki, które mają szablonów czasu wykonywania.
+Można również użyć obejmują pliki, które mają szablonów czasu wykonywania.
 
- Przenieś dużych treści kodu do klasy częściowej.
+Przenieś dużych treści kodu do klasy częściowej.
+
 Każdy szablon czasu wykonywania generuje definicję klasy częściowej, która ma taką samą nazwę jako szablonu. Można napisać plik kodu, który zawiera innej definicji częściowej tej samej klasy. Możesz dodać metody, pola i Konstruktory klasy w ten sposób. Te elementy członkowskie można wywołać z bloków kodu w szablonie.
 
- Zaletą w ten sposób jest to kod jest łatwiejszy do zapisu, ponieważ IntelliSense jest dostępna. Ponadto można osiągnąć lepszą rozdzielenie prezentacji i podstawowej logiki.
+Zaletą w ten sposób jest to kod jest łatwiejszy do zapisu, ponieważ IntelliSense jest dostępna. Ponadto można osiągnąć lepszą rozdzielenie prezentacji i podstawowej logiki.
 
- Na przykład w **MyReportText.tt**:
+Na przykład w **MyReportText.tt**:
 
- `The total is: <#= ComputeTotal() #>`
+`The total is: <#= ComputeTotal() #>`
 
- W **MyReportText Methods.cs**:
+W **MyReportText Methods.cs**:
 
- `private string ComputeTotal() { ... }`
+`private string ComputeTotal() { ... }`
 
- Zezwalaj na niestandardowego kodu: Podaj punkty rozszerzenia.
+Zezwalaj na niestandardowego kodu: Podaj punkty rozszerzenia.
+
 Weź pod uwagę Generowanie metody wirtualne \<#+ klasy funkcja blokuje #>. Umożliwia to pojedynczy szablon ma być używany w wielu kontekstach bez żadnych modyfikacji. Zamiast modyfikowania szablonu, można utworzyć pochodnej klasy, która dostarcza minimalne dodatkowej logiki. Klasa pochodna może być albo regularne kodu lub może być szablon czasu wykonywania.
 
- Na przykład w MyStandardRunTimeTemplate.tt:
+Na przykład w MyStandardRunTimeTemplate.tt:
 
 ```
 This page is copyright <#= CompanyName() #>.
 <#+ protected virtual string CompanyName() { return ""; } #>
 ```
 
- W kodzie aplikacji:
+W kodzie aplikacji:
 
 ```
 class FabrikamTemplate : MyStandardRunTimeTemplate
@@ -121,16 +136,21 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Wytyczne dotyczące wszystkie szablony T4
- Zbieranie danych należy oddzielić od Generowanie tekstu.
+
+Zbieranie danych należy oddzielić od Generowanie tekstu.
+
 Staraj się unikać mieszania obliczeń i bloków tekstu. W każdym szablonie tekstu należy użyć pierwszego \<kod # block #> do ustawiania zmiennych i wykonywania złożonych obliczeń. Z pierwszego bloku tekstu w dół do końca szablonu lub pierwszy \<cechę klasy #+ block #> Unikaj długich wyrażeń i uniknąć pętli i warunkowych, chyba że zawierają bloki tekstu. Praktyka ta sprawia, że szablon jest łatwiej odczytywać i obsługa.
 
- Nie używaj `.tt` dołączonych plików.
+Nie używaj `.tt` dołączonych plików.
+
 Używanie innym rozszerzeniem nazwy pliku, takiej jak `.ttinclude` dołączonych plików. Użyj `.tt` tylko dla plików, które mają być przetwarzane w czasie wykonywania lub czasu projektowania szablonów tekstowych. W niektórych przypadkach program Visual Studio rozpoznaje `.tt` pliki i automatycznie ustawia jego właściwości dla przetwarzania.
 
- Rozpoczęcie każdego szablonu jako stały prototypu.
+Rozpoczęcie każdego szablonu jako stały prototypu.
+
 Napisz przykładem kodu lub tekstu, który chcesz wygenerować i upewnij się, że jest on poprawny. Następnie zmień jego rozszerzenie na .tt po czym stopniowo wstawiać kod, który modyfikuje zawartość, czytając modelu.
 
- Należy rozważyć użycie wpisane modeli.
+Należy rozważyć użycie wpisane modeli.
+
 Mimo że za tworzenie schematu XML lub bazy danych dla modeli, może być przydatne do tworzenia języka specyficznego dla domeny (DSL). DSL ma tę zaletę, generuje klasę do reprezentowania każdego węzła w schemacie i właściwości do reprezentowania atrybutów. Oznacza to, że można programować pod względem modelu biznesowego. Na przykład:
 
 ```
@@ -141,14 +161,15 @@ Team Members:
 <# } #>
 ```
 
- Należy wziąć pod uwagę dla modeli za pomocą diagramów.
+Należy wziąć pod uwagę dla modeli za pomocą diagramów.
+
 Wiele modeli najbardziej efektywny sposób prezentowania i zarządzane po prostu jako tabeli tekstu, zwłaszcza, jeśli są one bardzo duże.
 
- Jednak dla niektórych rodzajów wymagań biznesowych, jest ważne wyjaśnić, złożonych zestawów relacje i przepływów pracy i diagramy są najlepiej nadaje się nośnika. Zaletą diagram jest jest łatwy w celu omówienia ich z użytkownikami i innych zainteresowanych stron. Przez generowanie kodu z modelem na poziomie wymagań biznesowych, możesz sprawić, że kod większą elastyczność podczas zmiany wymagań.
+Jednak dla niektórych rodzajów wymagań biznesowych, jest ważne wyjaśnić, złożonych zestawów relacje i przepływów pracy i diagramy są najlepiej nadaje się nośnika. Zaletą diagram jest jest łatwy w celu omówienia ich z użytkownikami i innych zainteresowanych stron. Przez generowanie kodu z modelem na poziomie wymagań biznesowych, możesz sprawić, że kod większą elastyczność podczas zmiany wymagań.
 
- Istnieje również możliwość projektowania swój własny typ diagramu jako języka specyficznego dla domeny (DSL). Kod można wygenerować z UML i języków DSL. Aby uzyskać więcej informacji, zobacz [analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md).
+Istnieje również możliwość projektowania swój własny typ diagramu jako języka specyficznego dla domeny (DSL). Kod można wygenerować z UML i języków DSL. Aby uzyskać więcej informacji, zobacz [analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

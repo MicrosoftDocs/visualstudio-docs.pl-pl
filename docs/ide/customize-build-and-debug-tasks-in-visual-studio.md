@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919056"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954176"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -56,6 +56,7 @@ Jeśli baza kodu używa niestandardowych narzędzi kompilacji, które nie rozpoz
 
 Należy wziąć pod uwagę bazy kodu, który składa się z pojedynczego C# pliku o nazwie *hello.cs*. *Pliku reguł programu make* dla takiego kodu może wyglądać następująco:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Aby uzyskać takie *pliku reguł programu make* , zawierający kompilacji czyste, a odbudować elementów docelowych, można zdefiniować następujące *tasks.vs.json* pliku. Zawiera on trzy zadania kompilacji na potrzeby kompilowania, ponownie skompilować i czyszczenia kodu za pomocą NMAKE jako narzędzia kompilacji.
 

@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf540c2c3e12bb3fc33250b3bb1dc12fe94a73d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 073fc84d15cb31b4f7a4cc635524ab08a724911e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752217"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953736"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Jak można debugować naruszenia zasad dostępu?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ using namespace std;
   
 class ClassB {  
 public:  
-        ClassC* C;  
-        ClassB() {  
-                C = new ClassC();  
-        }  
+      ClassC* C;  
+      ClassB() {  
+            C = new ClassC();  
+      }  
      void printHello() {  
-                cout << "hello world";  
-        }  
+            cout << "hello world";  
+      }  
 };  
   
 class ClassA {  
 public:  
     ClassB* B;  
-      ClassA() {  
-                B = nullptr;  
-        }  
+    ClassA() {  
+            B = nullptr;  
+      }  
 };  
   
 int main() {  
     ClassA* A = new ClassA();  
-      A->B->printHello();  
+    A->B->printHello();  
 }  
 ```  
   

@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Często zadawane pytania dotyczące Volume License Service Center administrator migracji
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844103"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953953"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migracja administracji subskrypcji programu Visual Studio
 
@@ -44,21 +44,21 @@ Tak.  Istnieją dwie fazy, w ramach tego procesu. Konfigurowanie (lub dołączen
 ### <a name="what-is-the-onboarding-process"></a>Co to jest proces dołączania?
 Główna osoba kontaktowa i kontaktowa zaproszeniem do ukończenia procesu dołączania zostanie wysłana wiadomość e-mail.
 Zobacz poniżej, aby uzyskać instrukcje na temat procesu.
-1.  **Przy szukaniu numeru PCN i zaloguj się:**
+1. **Przy szukaniu numeru PCN i zaloguj się:**
 
-    a.  W wiadomości e-mail, podstawowej i osoba kontaktowa znajdują się za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN). *
+    a. W wiadomości e-mail, podstawowej i osoba kontaktowa znajdują się za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN). *
 
-    b.  W celu uzyskania cały numer PCN, musisz zalogować się do centrum VLSC głównej osoby kontaktowej (instrukcje dotyczące lokalizacji dla numeru PCN znajdują się poniżej).
+    b. W celu uzyskania cały numer PCN, musisz zalogować się do centrum VLSC głównej osoby kontaktowej (instrukcje dotyczące lokalizacji dla numeru PCN znajdują się poniżej).
 
-    c.  Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli zalogować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze Azure AD), jeśli Twoja organizacja nie znajduje się w usłudze Azure AD.
+    c. Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli zalogować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze Azure AD), jeśli Twoja organizacja nie znajduje się w usłudze Azure AD.
 
-    d.  Następnie zostanie wyświetlony monit o podanie numeru PCN.
+    d. Następnie zostanie wyświetlony monit o podanie numeru PCN.
 
-2.  **Konfigurowanie administratorów:**
+2. **Konfigurowanie administratorów:**
 
     Po wprowadzeniu numerów PCN, ich wyświetli się Strona gdzie są w stanie dodać superadministratorzy i Administratorzy (wcześniej znanej jako menedżerowie subskrypcji). W idealnym zostanie to ukończone przed datą migracji w organizacji dzięki temu można uniknąć przerw w zarządzaniu subskrypcjami.
 
-3.  **Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami:** Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.
+3. **Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami:** Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.
 
 > [!NOTE]
 > Jeśli główna osoba kontaktowa lub kontaktowa odbierze więcej niż jeden adres e-mail, oznacza to, że mają więcej niż jeden numer PCN. Należy ukończyć proces, korzystając z unikatowego linku dla numeru PCN, do którego odwołuje się każdej wiadomości e-mail.

@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af24417bccd91bb55112d4da5e7896809169b9c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3521f39227b5abcb51a4db6b61e6bf0d853e5afe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794728"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954061"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu 
   
 ```  
 {  
-        int my_var1 = 0x0065;  
-        int my_var2 = 0x0066;  
-        int my_var3 = 0x0067;  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
 }  
 ```  
   

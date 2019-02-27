@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b04f9edc946b83f8785c6a6fb3e9720db4840f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596201"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953304"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
+
 Inicjuje nowe wystąpienie klasy `span` klasy.
 
 ## <a name="syntax"></a>Składnia
@@ -52,18 +53,21 @@ span(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Series` Kontekst serii prawidłowe znacznika.
 
- `_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
+`_Series` Kontekst serii prawidłowe znacznika.
 
- `_Importance` Poziom ważności.
+`_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
 
- `_Category` Kategoria.
+`_Importance` Poziom ważności.
+
+`_Category` Kategoria.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+**Nagłówek:** *cvmarkersobj.h*
 
- ## <a name="see-also"></a>Zobacz także
+**Namespace:** CONCURRENCY::Diagnostic —
+
+## <a name="see-also"></a>Zobacz także
+
 - [span, klasa](../profiling/span-class.md)

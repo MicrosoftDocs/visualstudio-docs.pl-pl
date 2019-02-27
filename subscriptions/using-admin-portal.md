@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843722"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953959"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
 
@@ -38,13 +38,14 @@ Aby korzystać z portalu administratora do zarządzania subskrypcjami dla Twojej
 ### <a name="onboarding"></a>Dołączanie do
 
 Jeśli Twoja organizacja jest gotowy do dodania do portalu administratora subskrypcji Visual Studio zostanie wysłana wiadomość e-mail główna osoba kontaktowa i kontaktowa zaproszeniem do ukończenia procesu dołączania. Poniższe szczegóły przedstawiono kroki, które należy podjąć dołączyć do nowego portalu. Jeśli chcesz wskazówki procesu, zapoznaj się z tą [dołączania administratora wideo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) bądź [artykuł pomocy technicznej](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "procesu migracji administratora subskrypcje Studio Visual").
-1.  **Przy szukaniu numeru PCN i zaloguj się:**
-    - W wiadomości e-mail podstawowej i osoba kontaktowa są dostarczane za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN). *
-    - Aby uzyskać cały numer PCN, musisz zalogować się do centrum VLSC głównej osoby kontaktowej (można znaleźć instrukcje dotyczące lokalizacji numer PCN).
-    - Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli logować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD.
-    - Następnie należy wprowadź numer PCN.
-2.  **Konfigurowanie administratorów usługi.** Po wprowadzeniu numerów PCN, zostaną zarejestrowane jako superadministrator w nowym systemie i będzie można dodać inne superadministratorzy i Administratorzy (wcześniej znanej jako menedżerowie subskrypcji). Aby uniknąć utraty dostępu, to należy wykonać przed datą migracji Twojej organizacji.
-3.  **Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami.**  Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do nowo dodanego superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.
+
+1. **Przy szukaniu numeru PCN i zaloguj się:**
+    - W wiadomości e-mail podstawowej i osoba kontaktowa są dostarczane za pomocą unikatowego linku i trzy ostatnie cyfry dla swojego publicznego numeru klienta (PCN). * 
+    - Aby uzyskać cały numer PCN, musisz zalogować się do centrum VLSC głównej osoby kontaktowej (można znaleźć instrukcje dotyczące lokalizacji numer PCN). 
+    - Po uzyskaniu numer PCN, ich należy wybrać ich unikatowego linku, co spowoduje wyświetlenie monitu do logowania. Będą mogli logować się przy użyciu konta Microsoft (MSA) lub konto służbowe (jeśli Twojej organizacji w usłudze AAD), jeśli Twoja organizacja nie znajduje się w usłudze AAD. 
+    - Następnie należy wprowadź numer PCN. 
+2. **Konfigurowanie administratorów usługi.** Po wprowadzeniu numerów PCN, zostaną zarejestrowane jako superadministrator w nowym systemie i będzie można dodać inne superadministratorzy i Administratorzy (wcześniej znanej jako menedżerowie subskrypcji). Aby uniknąć utraty dostępu, to należy wykonać przed datą migracji Twojej organizacji. 
+3. **Uzyskiwanie dostępu do nowego portalu zarządzania subskrypcjami.**  Po zmigrowaniu organizacji wiadomości e-mail będą wysyłane do nowo dodanego superadministratorzy i Administratorzy zapraszając ich dostęp do nowego portalu i zarządzania subskrypcjami.  
 
 > [!NOTE]
 > Jeśli główna osoba kontaktowa lub kontaktowa odbierze więcej niż jeden adres e-mail, oznacza to, że mają więcej niż jeden numer PCN. Muszą się ukończyć proces, korzystając z unikatowego linku dla numeru PCN, do którego odwołuje się każdego email.*

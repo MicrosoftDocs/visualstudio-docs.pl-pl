@@ -2,15 +2,9 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
+description: 'Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.'
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821360"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,7 +36,7 @@ ms.locfileid: "52821360"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/mac" title="Visual Studio dla komputerów Mac">
+                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -118,7 +112,7 @@ ms.locfileid: "52821360"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Usługom DevOps platformy Azure">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -128,7 +122,7 @@ ms.locfileid: "52821360"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Usługom DevOps platformy Azure</h3>
+                                                    <h3>Usługa Azure DevOps Services</h3>
                                                     <p>Zwiększ produktywność zespołu za pomocą narzędzi Agile projektów i raportów. Tworzenia, testowania i wdrażania projektów z kontrolą źródła, za pomocą nowoczesnych narzędzi ciągłej integracji/ciągłego wdrażania.</p>
                                                 </div>
                                             </div>
@@ -137,7 +131,7 @@ ms.locfileid: "52821360"
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/" title="Serwer usługi Azure DevOps">
+                                <a href="/tfs/" title="Azure DevOps Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -147,7 +141,7 @@ ms.locfileid: "52821360"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Serwer usługi Azure DevOps</h3>
+                                                    <h3>Azure DevOps Server</h3>
                                                     <p>Instalowanie, uaktualnianie i zarządzanie wdrożeniami w środowisku lokalnym.</p>
                                                 </div>
                                             </div>

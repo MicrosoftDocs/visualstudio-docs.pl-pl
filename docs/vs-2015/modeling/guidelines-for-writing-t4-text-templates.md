@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 542b43b5addad1bee59921bd2f4b593ea4676c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795355"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952808"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu l
   Przenieś wspólnej materiały do dołączonych plików lub szablonów czasu wykonywania  
   Aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, użyj `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).  
   
-  Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu. Aby uzyskać przykłady, zobacz ["Dziedziczenie w szablonów tekstowych" w blogu Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu.
   
   Należy rozważyć przeniesienie dużych bloków kodu w osobnym zestawie.  
   Jeśli masz kod dużych bloków i bloki cech klas może być przydatne przenieść niektóre ten kod do metody, które kompilujesz w osobnym projekcie. Możesz użyć `<#@ assembly #>` dyrektywy, aby uzyskiwać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).  
