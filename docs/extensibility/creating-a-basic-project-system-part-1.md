@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692700"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843964"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie systemu podstawowego projektu, część 1
 W programie Visual Studio projekty są kontenerami, używanych przez deweloperów do organizowania plików kodu źródłowego i inne zasoby. Projekty są traktowane jako elementy podrzędne rozwiązań w **Eksploratora rozwiązań**. Projekty umożliwiają organizowanie, tworzenie, debugowanie i wdrażanie kodu źródłowego i utworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -35,7 +35,7 @@ W programie Visual Studio projekty są kontenerami, używanych przez deweloperó
  W tym instruktażu dowiesz się, jak utworzyć typ projektu, który ma rozszerzenie nazwy pliku projektu *.myproj*. W tym przewodniku pożycza z istniejącego systemu projektów języka Visual C#.
 
 > [!NOTE]
->  Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [przykłady VSSDK](http://aka.ms/vs2015sdksamples).
+>  Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
 
  Ten przewodnik omawia sposób wykonywania tych zadań:
 

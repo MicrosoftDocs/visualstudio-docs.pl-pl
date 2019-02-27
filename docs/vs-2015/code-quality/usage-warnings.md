@@ -2,7 +2,7 @@
 title: Ostrzeżenia dotyczące użycia | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-code-analysis - "vs-ide-general"
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.usagerules
@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 757cd0e45350d7c101a9c4bfdec7c94581183f2f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 679c12eb99e3cad7486384999a2393e09dbd277f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756084"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840346"
 ---
 # <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

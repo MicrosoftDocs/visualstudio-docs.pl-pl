@@ -6,15 +6,13 @@ manager: jillfra
 ms.date: 06/27/2018
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą zlokalizować poszczególnych subskrybentów lub grupy w portalu administratora.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 817ca49dc8cb1dae9f37e8f7d4267ac3a3699bb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916967"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842315"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Wyszukaj i Filtruj subskrybentów w subskrypcji programu Visual Studio
 

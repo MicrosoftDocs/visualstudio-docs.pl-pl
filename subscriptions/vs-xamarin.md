@@ -4,27 +4,25 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji platformy Xamarin University szkolenia dołączone do wybranej subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8e723e1b6763915907e8d138ba07d5974a2238d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950501"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842531"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleń Xamarin University w subskrypcji programu Visual Studio
 
 Twórz natywne aplikacje iOS i Android w języku C# za pomocą zaawansowanych szkoleń przez ekspertów opracowywania aplikacji mobilnych.
 
-Xamarin University będziemy przenosić zawartości za pośrednictwem do [Microsoft Learn](http://microsoft.com/learn), nową platformę interaktywnego i przyszłość uczenia w firmie Microsoft. W związku z tym, Xamarin University korzyści dla subskrybentów programu Visual Studio Enterprise i Professional przestanie być prawidłowy od 21 grudnia 2018 — ostatni daty, aby skorzystać z korzyści. 
+Xamarin University będziemy przenosić zawartości za pośrednictwem do [Microsoft Learn](http://microsoft.com/learn), nową platformę interaktywnego i przyszłość uczenia w firmie Microsoft. W związku z tym, Xamarin University korzyści dla subskrybentów programu Visual Studio Enterprise i Professional przestanie być prawidłowy od 21 grudnia 2018 — ostatni daty, aby skorzystać z korzyści.
 
-Jeśli aktywowano korzyści 3 lub 6-miesięczny, zwróć uwagę na to, że w witrynie Xamarin University zostanie zamknięty w czerwcu 2019 r. Office sesji godzinę i prowadzone przez instruktorów tylko kursy pozostaną dostępne do 1 maja 2019 r umożliwiając Zakończ wszystkie certyfikaty platformy Xamarin w toku. Po 1 maja tych programów, w tym Xamarin egzaminów certyfikacyjnych, nie będzie już dostępna. Po zamknięciu programu będzie można przejść do firmy Microsoft Learn aby kontynuować budowanie umiejętności programowania Xamarin. 
+Jeśli aktywowano korzyści 3 lub 6-miesięczny, zwróć uwagę na to, że w witrynie Xamarin University zostanie zamknięty w czerwcu 2019 r. Office sesji godzinę i prowadzone przez instruktorów tylko kursy pozostaną dostępne do 1 maja 2019 r umożliwiając Zakończ wszystkie certyfikaty platformy Xamarin w toku. Po 1 maja tych programów, w tym Xamarin egzaminów certyfikacyjnych, nie będzie już dostępna. Po zamknięciu programu będzie można przejść do firmy Microsoft Learn aby kontynuować budowanie umiejętności programowania Xamarin.
 
-Jeśli nie można aktywować swoje korzyści w czasie, wiedzieć, że Xamarin University będziemy przenosić większość certyfikacji i kursy Xamarin.Forms za pośrednictwem do ich [Learning wykładów](https://elearning.xamarin.com) portalu wczesne 2019 r, dzięki czemu można je całkowicie bezpłatne. Aby dostęp do tych kursów, po prostu [Utwórz bezpłatne konto platformy Xamarin University](https://university.xamarin.com/createfreeaccount). W kolejnych miesiącach kursy wszystkie samodzielnej nauki przekonwertuje Learn firmy Microsoft, co będzie prowadzić do zamknięcia platformy Xamarin University na koniec czerwca 2019 r. Pozostała część zawartość tylko do subskrybenta, w tym warsztatom i Wyłącz tematu filmów wideo, takich jak Gościnnych i wykładów, zostanie udostępniona publicznie gdzie indziej. 
+Jeśli nie można aktywować swoje korzyści w czasie, wiedzieć, że Xamarin University będziemy przenosić większość certyfikacji i kursy Xamarin.Forms za pośrednictwem do ich [Learning wykładów](https://elearning.xamarin.com) portalu wczesne 2019 r, dzięki czemu można je całkowicie bezpłatne. Aby dostęp do tych kursów, po prostu [Utwórz bezpłatne konto platformy Xamarin University](https://university.xamarin.com/createfreeaccount). W kolejnych miesiącach kursy wszystkie samodzielnej nauki przekonwertuje Learn firmy Microsoft, co będzie prowadzić do zamknięcia platformy Xamarin University na koniec czerwca 2019 r. Pozostała część zawartość tylko do subskrybenta, w tym warsztatom i Wyłącz tematu filmów wideo, takich jak Gościnnych i wykładów, zostanie udostępniona publicznie gdzie indziej.
 
 Zobacz [często zadawane pytania dotyczące programu Xamarin University](https://university.xamarin.com/faq) Aby uzyskać szczegółowe informacje.
 

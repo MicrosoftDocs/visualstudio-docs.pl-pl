@@ -1,14 +1,9 @@
 ---
 title: Oczekiwano obiektu | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5007
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49d66c82081af06bf23a43922629a579a6d6f590
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 09027661b07bbc489dff4985d3858eb8366437a7
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345789"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842211"
 ---
 # <a name="object-expected"></a>Oczekiwany obiekt
 Podjęto próbę wywołania metody lub właściwości w obiekcie typu innego niż `Object`, lub przekazany argument typu innego niż `Object` podczas `Object` była wymagana.  

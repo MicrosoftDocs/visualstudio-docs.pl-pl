@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które są dołączone do wybranej subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380399"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841432"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -33,7 +31,7 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 3. Na stronie DataCamp można utworzyć nowe konto.  Można wprowadzić adres e-mail i hasło lub zaloguj się przy użyciu istniejącego konta z usługi Facebook, LinkedIn i Google.  Gdy podano informacje logowania, kliknij przycisk **wprowadzenie**.
    > [!div class="mx-imgBorder"]
    > ![DataCamp Utwórz nowe konto](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Po rozpoczęciu tworzenia konta, może zostać wyświetlony następujący komunikat o błędzie: "NIESTETY!  Kod promocyjny jest: nieprawidłowy lub wygasł."  Dzieje się tak, ponieważ po utworzeniu kodu promocyjnego wygasa po upływie kilku minut.  Jeśli zostanie wyświetlony ten komunikat, po prostu zwrócenia do [korzyści](https://my.visualstudio.com/benefits) strony, a następnie kliknij pozycję **Aktywuj** łącze na kafelku DataCamp korzyści.
 
@@ -62,7 +60,7 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 
 Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu odwiedź [ http://www.datacamp.com ](http://www.datacamp.com)i zaloguj się.  Zostanie wyświetlony pulpit nawigacyjny i może wznowić działanie prawa szkolenia którym została wstrzymana. Po prostu kliknij **kontynuować śledzenie**.
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![DataCamp kontynuować szkolenie](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Uprawnienie

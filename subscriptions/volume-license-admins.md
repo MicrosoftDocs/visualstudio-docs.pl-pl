@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się, jak uzyskać dostęp do portalu administrowania i zarządzania subskrypcjami nabyte za pośrednictwem woluminu Licencjonowania administratorów subskrypcji
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379543"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843146"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Dostęp do portalu i zarządzanie administratorami — w przypadku subskrypcji nabyte za pośrednictwem woluminu Licencjonowania
 
@@ -22,7 +20,7 @@ ms.locfileid: "39379543"
 
 Od 1 marca 2017 r. klienci, którzy nadal jest wykonywane za pośrednictwem portalu proces dołączania i migracji należy zarządzają subskrypcjami w wolumin licencjonowania Service Center (VLSC).
 
-Aby uzyskać więcej informacji o zarządzaniu subskrypcjami w witrynie VLSC Zobacz te przewodniki: [opis subskrypcji programu Visual Studio dla centrum VLSC:](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Aby uzyskać więcej informacji o zarządzaniu subskrypcjami w witrynie VLSC, zobacz te przewodniki: [Subskrypcje programu Visual Studio dla centrum VLSC: omówienie](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 [zarządzania subskrypcjami programu Visual Studio dla centrum VLSC:](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Portal administratora subskrypcji programu Visual Studio** Jeśli Twoja organizacja została zmigrowana, ale użytkownik nie został ustawiony w nowym portalu jeszcze, sieci podstawowej lub osoba kontaktowa dla umowy licencjonowania zbiorowego organizacji należy podjąć kilka kroki, aby dołączyć, organizacji i konfigurowanie serwera jako administrator.

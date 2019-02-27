@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602042"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841744"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profil aplikacji programu SharePoint
   Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602042"
 ## <a name="create-a-sharepoint-project"></a>Utwórz projekt programu SharePoint
  Najpierw utwórz projekt programu SharePoint.
 
-#### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint
+### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602042"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Dodawanie funkcji i odbiorcę zdarzeń funkcji
  Następnie dodaj funkcję do projektu, wraz z obsługiwanego odbiornika dla tej funkcji. Odbiornik zdarzeń będzie zawierał kod, które mają być profilowane.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcę zdarzeń funkcji
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Aby dodać funkcję i odbiorcę zdarzeń funkcji
 
 1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **funkcji** węzła, wybierz **Dodaj funkcję**i pozostawić nazwę wartość domyślną **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602042"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Konfigurowanie i wdrażanie aplikacji programu SharePoint
  Teraz, gdy projekt programu SharePoint jest gotowa, ją skonfigurować i wdrożyć ją na serwerze programu SharePoint.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Do konfigurowania i wdrażania aplikacji programu SharePoint
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Do konfigurowania i wdrażania aplikacji programu SharePoint
 
 1.  Na **analizy** menu, wybierz **Uruchom Kreatora wydajności**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602042"
 ## <a name="run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
  Uaktywnij funkcję w programie SharePoint, wyzwalania `FeatureActivation` zdarzeń kod wymagany do uruchomienia.
 
-#### <a name="to-run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
+### <a name="to-run-the-sharepoint-application"></a>Uruchamianie aplikacji programu SharePoint
 
 1.  W programie SharePoint, należy otworzyć **Akcje witryny** menu, a następnie wybierz **ustawienia lokacji**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602042"
 ## <a name="view-and-interpret-the-profile-results"></a>Wyświetlanie i interpretacja wyników profilu
  Skoro masz uruchamiania i profilowania aplikacji programu SharePoint, należy wyświetlić wyniki testów.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlić i interpretacja wyników profilu
+### <a name="to-view-and-interpret-the-profile-results"></a>Aby wyświetlić i interpretacja wyników profilu
 
 1.  W **funkcje wykonujące najwięcej pracy poszczególnych** sekcji raportu profilowania próbki, należy zauważyć, że `TimeCounter` znajduje się w pobliżu górnej części listy.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602042"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Napraw kod i reprofile aplikacji
  Teraz, gdy funkcja punkt aktywny w aplikacji programu SharePoint został określony, należy go naprawić.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i reprofile aplikacji
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Aby naprawić kod i reprofile aplikacji
 
 1.  W kodzie funkcji odbiorcy zdarzeń komentarz `TimeCounter` metody wywołania w `FeatureActivated` aby zapobiec wywoływana.
 

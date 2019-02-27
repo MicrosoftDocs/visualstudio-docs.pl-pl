@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/25/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, które są dołączone do wybranej subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089243"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841643"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -29,29 +27,29 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 1. Aby aktywować swoją subskrypcję, połączyć się z [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij pozycję **kod** łącze na kafelku korzyści w witrynie Pluralsight, znajduje się w sekcji Projektowanie Professional.
    > [!div class="mx-imgBorder"]
    > ![Kafelek korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
-   > 
+   >
    > [!IMPORTANT]
    > Po kliknięciu w link "Pobierz kod" na kafelku korzyści z firmą Pluralsight, może być wyświetlany następujący komunikat:
-   > 
+   >
    > **"Uwaga:   Jeśli wcześniej została aktywowana inna oferta Pluralsight, za pośrednictwem subskrypcji programu Visual Studio, ten kod może nie umożliwiają tworzenie nowego konta Pluralsight."**
 
 2. Otrzymasz powiadomienie, które pomyślnie pobrano kod kuponu.  Kliknij przycisk **aktywować**.
    > [!div class="mx-imgBorder"]
    > ![Aktywuj korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Nastąpi przekierowanie do strony w witrynie Pluralsight korzyści, które zostało uwzględnione w ramach subskrypcji programu Visual Studio.  
+3. Nastąpi przekierowanie do strony w witrynie Pluralsight korzyści, które zostało uwzględnione w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
    - Kliknij pole wyboru, aby zaakceptować warunki użycia i zasady zachowania poufności
    - Kliknij przycisk **zgodę, Aktywuj korzyść**.
      > [!div class="mx-imgBorder"]
-     > ![Aktywacja korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
+     > ![Aktywacja korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
      > [!div class="mx-imgBorder"]
      > ![Warunki świadczenia Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
 5. Może upłynąć kilka minut, aby skonfigurować konto usługi.  Po zakończeniu tej operacji zostanie wyświetlone potwierdzenie na stronie, a otrzymasz wiadomość e-mail z informacjami logowania.  Wiadomości e-mail będą wysyłane na alias, czy określona podczas tworzenia konta.  Pamiętaj sprawdzić swoje wiadomości-śmieci lub spamu foldery poczty, jeśli masz problem ze znalezieniem wiadomości.
    > [!div class="mx-imgBorder"]
    > ![Potwierdzenie korzyści z firmą Pluralsight](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   > 
+   >
    > [!NOTE]
    > Jeśli Twoje konto nie ma uprawnień do realizacji nowych ofert, poczty e-mail, które otrzymujesz wyjaśnią, że wystąpił problem podczas tworzenia konta, ponieważ nie jest uprawniona.  Zawiera również informacje ułatwiające skontaktuj się z zespołem pomocy technicznej w witrynie Pluralsight, kto może odpowiedzieć na wszelkie pytania, które mogą wiązać Ciebie o Twoim koncie.
 
@@ -81,7 +79,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
-<sup>2</sup>*Pluralsight korzyści w ramach wybranej subskrypcji programu Visual Studio odnawia po odnowieniu subskrypcji.   Na przykład jeśli masz roczna subskrypcja, odnowienie każdego roku, korzyści jest dostępna dla Ciebie każdego roku po odnowieniu. Jeśli masz subskrypcję wieloletnich, korzyści z firmą Pluralsight jest udostępniane użytkownikowi w jeden raz w okresie obowiązywania subskrypcji.  Jeśli odnowisz subskrypcji wieloletnich korzyści będą dostępne, ponownie następujące odnowienia.*
+<sup>2</sup>*Pluralsight korzyści w ramach wybranej subskrypcji programu Visual Studio odnawia po odnowieniu subskrypcji. Na przykład jeśli masz roczna subskrypcja, odnowienie każdego roku, korzyści jest dostępna dla Ciebie każdego roku po odnowieniu. Jeśli masz subskrypcję wieloletnich, korzyści z firmą Pluralsight jest udostępniane użytkownikowi w jeden raz w okresie obowiązywania subskrypcji.  Jeśli odnowisz subskrypcji wieloletnich korzyści będą dostępne, ponownie następujące odnowienia.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
@@ -113,4 +111,4 @@ Odp.:  Na końcu bezpłatna subskrypcja Pluralsight można zakupić subskrypcję
 -  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Po utworzeniu konta możesz już rozpocząć szkolenie.  Odwiedź stronę [ https://www.pluralsight.com ](http://www.pluralsight.com) i naciśnij przycisk **Zaloguj** w prawym górnym rogu strony Aby uruchomić nowego kursu lub wrócić do kursu już w toku. 
+Po utworzeniu konta możesz już rozpocząć szkolenie.  Odwiedź stronę [ https://www.pluralsight.com ](http://www.pluralsight.com) i naciśnij przycisk **Zaloguj** w prawym górnym rogu strony Aby uruchomić nowego kursu lub wrócić do kursu już w toku.

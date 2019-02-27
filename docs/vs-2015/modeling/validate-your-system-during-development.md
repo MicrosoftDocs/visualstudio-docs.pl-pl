@@ -2,7 +2,7 @@
 title: Weryfikacja systemu w czasie projektowania | Dokumentacja firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams
@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d42618569e9b3924a43c11eb8feffeea8ed705a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753367"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842882"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

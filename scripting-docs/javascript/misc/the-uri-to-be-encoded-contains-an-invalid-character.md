@@ -1,14 +1,9 @@
 ---
 title: Identyfikator URI, który ma być zdekodowany, zawiera nieprawidłowy znak | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5024
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a3c71b90d0711bf317d0ed72d51c0d5d45297c80
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349793"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841873"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Identyfikator URI, który ma być zdekodowany, zawiera nieprawidłowy znak.
 Próbowano przeprowadzić kodowanie ciągu jako identyfikator URI (Uniform Resource Identifier), ale zawiera nieprawidłowe znaki. Mimo że większość znaki są prawidłowe wewnątrz ciągi są konwertowane na identyfikatory URI, niektóre sekwencje znaków Unicode są niedozwolone.  

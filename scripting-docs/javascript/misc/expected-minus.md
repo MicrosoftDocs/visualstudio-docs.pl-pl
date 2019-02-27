@@ -1,14 +1,9 @@
 ---
 title: Oczekiwano "-" | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1012
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 22d60c7029ce64ba8c8a7b130da3bbddce9b7f6b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348948"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842003"
 ---
 # <a name="expected--"></a>Oczekiwano "-"
 Podjęto próbę utworzenia literał wyrażenia regularnego, ale nie zawiera jeden z ukośnikami (/). Tak, jak literały ciągów są zapisywane jako znaki w obrębie dwa znaki cudzysłowu, literałów wyrażeń regularnych są wyrażane jako znaki w ciągu pary znaków ukośnika (/).  

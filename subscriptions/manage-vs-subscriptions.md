@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać możliwości subskrypcji programu Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822166"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842666"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -91,19 +89,19 @@ Na stronie korzyści używanej subskrypcji będzie zawsze wyświetlany w niebies
 
 **Subskrypcje standardowe**
 
-- Microsoft Store: W przypadku zakupu subskrypcji [Microsoft Store](http://www.microsoft.com/store), można go odnowić istnieje również.
-- Licencjonowania zbiorowego: Jeśli Twoja firma nabywa subskrypcje za pośrednictwem licencjonowania zbiorowego, Twój administrator powinni skontaktować się sprzedawcą, aby odnowić subskrypcji.
+- Microsoft Store: Jeśli zakupiono subskrypcję z [Microsoft Store](http://www.microsoft.com/store), można go odnowić istnieje również.
+- Licencja zbiorcza:  Jeśli Twoja firma nabywa subskrypcje za pośrednictwem licencjonowania zbiorowego, administrator powinni skontaktować się z odsprzedawcą, aby odnowić subskrypcji.
 
-**Subskrypcje usług w chmurze:** subskrypcje w chmurze nie ma potrzeby odnowienia. Tak długo, jak płatną subskrypcję pozostaną aktywne.
+**Subskrypcje chmury:**  Subskrypcje w chmurze nie muszą być odnawiane. Tak długo, jak płatną subskrypcję pozostaną aktywne.
 
-**Subskrypcje, które zakupione w ramach programów:** otrzymanie subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie. Skontaktuj się z Twoich kontaktów programu, aby uzyskać dodatkowe informacje.
+**Subskrypcje zakupione w ramach programów:**  Otrzymanie subskrypcję za pośrednictwem programu subskrypcji jest powiązany z uczestnictwa w programie. Skontaktuj się z Twoich kontaktów programu, aby uzyskać dodatkowe informacje.
 
 - [Wyobraź sobie](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials:** Dev Essentials to bezpłatny program, a nie wygasają w grupach.
+**Visual Studio Dev Essentials:**  Dev Essentials to bezpłatny program, a nie wygasają w grupach.
 
 ## <a name="transferring-subscriptions"></a>Przeniesienie subskrypcji
 
@@ -147,9 +145,9 @@ Po dodaniu alternatywnego konta, możesz zaktualizować lub usunąć w dowolnym 
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Pyt.: Jeśli nie odnowisz subskrypcji, jak długo Microsoft zachowa Moje dane?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>PYT.: Jeśli nie odnowisz subskrypcji, jak długo Microsoft zachowa Moje dane?
 
-Odp.: zależności od kanału zakupu firma Microsoft udostępnia danych klientów w celach różnej długości czasu.
+Odp.: W zależności od kanału zakupu firma Microsoft udostępnia danych klientów w celach różnej długości czasu.
 
 | Kanał                                                | Czas trwania (w dniach) |
 |--------------------------------------------------------|-----------------|

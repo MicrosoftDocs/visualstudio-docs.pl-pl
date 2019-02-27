@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się, jak zastosować korzyści użycia Chat doradztwa technicznego dotyczącego platformy Azure, uwzględniony w subskrypcjach programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e078ddd71c126cdf70b56f6b8d6a9a467a4f56d4
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380044"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841020"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 

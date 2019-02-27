@@ -1,14 +1,9 @@
 ---
 title: Nieprawidłowy argument zastępczy | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346218"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841289"
 ---
 # <a name="invalid-replacer-argument"></a>Nieprawidłowy argument zastępczy
 Podjęto próbę wywołania `JSON.stringify` z nieprawidłowym argumentem, który jest nieprawidłowy. `replacer` Argument musi być funkcją ani tablicą.  

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Więcej informacji na temat migracji otwierania i licencji Open do portalu administratora subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995845"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843198"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Otwórz i Open License migracji do nowego portalu programu Visual Studio subskrypcje administracji
 
@@ -28,22 +26,22 @@ W lipca 2018 r. wszystkich licencji Open klienci zostaną zmigrowani do nowego [
 
 - Po zalogowaniu, będzie miał dostęp do subskrypcji dla ich firmy.
 
-Po dniu migracji klientów i partnerów będą można podzielić na jednego ze scenariuszy wymienionych poniżej. 
+Po dniu migracji klientów i partnerów będą można podzielić na jednego ze scenariuszy wymienionych poniżej.
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>Otwórz i zarządzanie licencjami Open dla nowych zamówień
 
-Zarządzanie subskrypcjami w [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com), istnieje kilka kroków, które w ramach której partnerzy i klienci będą musieli wykonać. Ten proces będzie: 
+Zarządzanie subskrypcjami w [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com), istnieje kilka kroków, które w ramach której partnerzy i klienci będą musieli wykonać. Ten proces będzie:
 
 - Partnerzy spowoduje umieszczenie nowego zamówienia w imieniu klientów, wprowadzając adres e-mail firmy klienta.
 
 - Klient otrzyma powiadomienie z zaproszeniem do przypisywania administratorów i dostępu do ich subskrypcjami w [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com).
 
-- Dla partnerów zarządzać subskrypcjami w imieniu klientów muszą zarejestrować się w portalu administracyjnym. Poniżej przedstawiono różne sposoby, aby uzyskać dostęp, Uzyskaj dostęp do (podobnie do procesu Otwórz Dodaj). 
+- Dla partnerów zarządzać subskrypcjami w imieniu klientów muszą zarejestrować się w portalu administracyjnym. Poniżej przedstawiono różne sposoby, aby uzyskać dostęp, Uzyskaj dostęp do (podobnie do procesu Otwórz Dodaj).
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>Istniejących partnerów Dodawanie nowej licencji
 
-Dotyczy to partnerów, którzy mają już dostęp do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com), ale dokonali zamówienia dla licencji Open przy użyciu subskrypcji programu Visual Studio, które będą musieli zarządzać. 
+Dotyczy to partnerów, którzy mają już dostęp do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com), ale dokonali zamówienia dla licencji Open przy użyciu subskrypcji programu Visual Studio, które będą musieli zarządzać.
 
 - Partner przechodzi bezpośrednio do https://manage.visualstudio.com i loguje się.
 
@@ -57,9 +55,9 @@ Dotyczy to partnerów, którzy mają już dostęp do [Portal administratora subs
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Nowe partnerów, którzy zarejestrować na wolumin licencjonowania Service Center (VLSC)
 
-Dotyczy to Nowi partnerzy wprowadzania nowych zamówień Otwórz licencji, ale którzy rejestrują się [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) za pośrednictwem usługi flow Dodaj Otwórz przed podjęciem próby uzyskania dostępu [Visual Studio portalu administratora subskrypcji](https://manage.visualstudio.com). 
+Dotyczy to Nowi partnerzy wprowadzania nowych zamówień Otwórz licencji, ale którzy rejestrują się [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) za pośrednictwem usługi flow Dodaj Otwórz przed podjęciem próby uzyskania dostępu [Visual Studio portalu administratora subskrypcji](https://manage.visualstudio.com).
 
-- Partner będzie zalogować się do centrum VLSC i przejdź do "Podsumowanie relacji". 
+- Partner będzie zalogować się do centrum VLSC i przejdź do "Podsumowanie relacji".
 
 - Następnie będzie ich można wybrać licencji Open, ma być zarządzana.
 
@@ -75,9 +73,9 @@ Dotyczy to Nowi partnerzy wprowadzania nowych zamówień Otwórz licencji, ale k
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Nowi partnerzy bezpośrednio odwiedzający Portal administratora subskrypcji Visual Studio
 
-Ten scenariusz dotyczy Nowi partnerzy, którzy złożono już nowych zamówień licencji Open, ale które nie zostały zarejestrowane na [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź bezpośrednio do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com) . 
+Ten scenariusz dotyczy Nowi partnerzy, którzy złożono już nowych zamówień licencji Open, ale które nie zostały zarejestrowane na [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź bezpośrednio do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com) .
 
-- Partner przechodzi bezpośrednio do https://manage.visualstudio.com. 
+- Partner przechodzi bezpośrednio do https://manage.visualstudio.com.
 
 - Otrzyma błąd, nie są rozpoznane jako użytkownik.
 

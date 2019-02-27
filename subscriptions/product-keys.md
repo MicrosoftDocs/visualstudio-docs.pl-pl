@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803827"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843727"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 
@@ -47,9 +45,9 @@ Nasze badania wskazują, że większości subskrybentów są objęte wystarcza l
 
 ## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie i zgłaszanie kluczy produktów
 W celu wyświetlenia kluczy produktów, być zalogowany się do subskrypcji programu Visual Studio. Indywidualne klucze produktów można znaleźć, klikając niebieski **Pobierz klucz** link dla konkretnego produktu [pliki do pobrania](https://my.visualstudio.com/downloads) stronie, jak pokazano poniżej.  Wszystkie klucze są również dostępne w agregacji na [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) strony. Jeśli istnieje wiele kluczy dla jednego produktu, w kolumnie notatki do pobrania pomóc w identyfikacji klucza, które powinny być używane będą wyświetlone uwagi.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png)
-    
+
 Niektóre produkty pakietu wiele wersji produktu do za jednym razem. W takich przypadkach wprowadzony klucz produktu określa, którą wersję produktu jest zainstalowany.
 Niektóre klucze są dostarczane automatycznie, takie jak klucze "statyczne", których można użyć tyle razy, zgodnie z potrzebami, ponieważ aktywacja nie jest wymagana. Inne klucze należy zgłosić, klikając **Pobierz klucz** link dla produktu.
 
@@ -65,7 +63,7 @@ Różne typy kluczy są dostępne, w zależności od produktu.
 |    Wiele aktywacji        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu przy użyciu tego samego klucza. Klucze MAK są stosowane zazwyczaj z wersjami produktów licencjonowania zbiorowego. Zwykle tylko jeden klucz MAK znajduje się na subskrypcję.    |
 |    Statyczny klucz aktywacji    |    Statyczne klucze aktywacji są udostępniane dla produktów, które nie wymagają aktywacji. Służy do dowolnej liczby urządzeń.                                                                                                                  |
 |    Klucz niestandardowy                 |    Klucze niestandardowe umożliwiają stosowanie specjalnych działań lub informacji do aktywowania i instalacji produktu.                                                                                                                                                                |
-|    OCENY LUK W ZABEZPIECZENIACH 1.0                     |    Są to kluczy aktywacji wielokrotnej, podobnie jak Klucz MAK.                                                                                                                                                                                                 |
+|    VA 1.0                     |    Są to kluczy aktywacji wielokrotnej, podobnie jak Klucz MAK.                                                                                                                                                                                                 |
 |    Klucz producenta OEM                    |    Są to klucze Original Equipment Manufacturer, które umożliwiają wiele aktywacji.                                                                                                                                                                       |
 |    Klucz detalicznej programu DreamSpark    |    Te klucze detaliczne są dla programu DreamSpark i zezwolenia na aktywację jeden. Klucze detaliczne DreamSpark są wydawane w partiach, a przede wszystkim są przeznaczone do użycia dla uczniów.                                                                                     |
 |    Klucz laboratorium programu DreamSpark         |    Te klucze użycia laboratorium są programy DreamSpark i umożliwiają wiele aktywacji. DreamSpark laboratorium klucze są przeznaczone do użytku w scenariuszach laboratorium komputera university.                                                                                       |

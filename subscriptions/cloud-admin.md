@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/28/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Konfigurowanie administratorów w przypadku subskrypcji chmury
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 861862d964d5ccd8e926730f648a41bc790bc64d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283447"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841453"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Skonfiguruj administratorów w przypadku subskrypcji chmury programu Visual Studio
 
@@ -42,7 +40,7 @@ Aby dodać administratorów:
 6. Kliknij przycisk **Dodaj** kartę w górnej części strony.
 7. W okienku staną się po prawej stronie kliknij nazwę subskrybenta, którego chcesz dokonać administrator.
 8. Kliknij pozycję **roli** listy rozwijanej w górnej części okienka, przewiń w dół i wybierz **Administrator dostępu użytkowników**.
-9. Kliknij przycisk **Zapisz**.
+9. Kliknij pozycję **Zapisz**.
 
 Subskrybent wyznaczonych pojawia się w środku strony, a ich rolą jest wyświetlany jako "Administrator dostępu użytkowników".
 

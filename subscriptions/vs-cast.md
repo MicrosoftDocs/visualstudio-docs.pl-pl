@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379807"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840907"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
-Deweloperzy muszą kluczowe informacje na temat ich oprogramowania podczas migracji do chmury. Za pomocą wyróżnić RZUTOWANIA subskrybenci programu Visual Studio Enterprise szybko skanować ich kod źródłowy aplikacji, aby zidentyfikować przygotowania do chmury swoje aplikacje pod kątem migracji do platformy Azure i monitorowanie postępu aplikacji podczas i po migracji.  
+Deweloperzy muszą kluczowe informacje na temat ich oprogramowania podczas migracji do chmury. Za pomocą wyróżnić RZUTOWANIA subskrybenci programu Visual Studio Enterprise szybko skanować ich kod źródłowy aplikacji, aby zidentyfikować przygotowania do chmury swoje aplikacje pod kątem migracji do platformy Azure i monitorowanie postępu aplikacji podczas i po migracji.
 
-Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełne funkcji miesięcznej subskrypcji, aby wyróżnić RZUTOWANIA maksymalnie pięć aplikacje na subskrybenta. 
+Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełne funkcji miesięcznej subskrypcji, aby wyróżnić RZUTOWANIA maksymalnie pięć aplikacje na subskrybenta.
 
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
@@ -32,7 +30,7 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    > [!div class="mx-imgBorder"]
    > ![RZUTOWANIE wyróżnienia korzyści kafelka](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. Zobaczysz, że zostały pomyślnie pobrane komunikat z informacją o tym kodzie.  Kliknij przycisk **Aktywuj**, w tym momencie nastąpi przekierowanie do strony wyróżnić RZUTOWANIA kontynuować proces aktywacji.  (Jeśli użytkownik nie chce Aktywuj teraz, możesz zawsze możesz wrócić do kafelka RZUTOWANIA Wyróżnij w portalu subskrypcji programu.  Link "Pobierz kod" zostanie zmieniona na "Aktywuj", a kliknięcie go wznowi proces aktywacji.)
 
 0. Nastąpi przekierowanie do RZUTOWANIA zaznacz strony, gdzie możesz eksplorować funkcje subskrypcji.  Gdy wszystko będzie gotowe do utworzenia konta, po prostu Podaj swoje informacje kontaktowe w formularzu sieci web i kliknij **przesyłania**.
@@ -43,16 +41,16 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    > [!NOTE]
    > Aktywacje korzyści wyróżnić RZUTOWANIA są ograniczone do 10 w ramach organizacji.  Jeśli ma już użyte aktywacje dziesięć Twojej organizacji, będzie można aktywować korzyść wyróżnić RZUTOWANIA i otrzymasz wiadomość e-mail z dalszych informacji.
 
- 0. Po przesłaniu informacji zostanie wyświetlona strona potwierdzenia otrzymania żądania.    
+ 0. Po przesłaniu informacji zostanie wyświetlona strona potwierdzenia otrzymania żądania.
 
     > [!div class="mx-imgBorder"]
     > ![Strony Podziękowania wyróżnienia RZUTOWANIA](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  Zespół RZUTOWANIA oceni Twoje żądanie i skontaktuje się z Tobą, aby zakończyć tworzenie Twojego konta.  
+0.  Zespół RZUTOWANIA oceni Twoje żądanie i skontaktuje się z Tobą, aby zakończyć tworzenie Twojego konta.
 
 0.  Otrzymasz również następującą wiadomość e-mail z RZUTOWANIA, potwierdzenie odebrania żądania.
 
-   *Dziękujemy za Twoje żądanie aktywować dostęp do 30 dni, aby wyróżnić CAST - Ekskluzywna oferta dla klientów programu Microsoft Visual Studio Enterprise!*  
+   *Dziękujemy za Twoje żądanie aktywować dostęp do 30 dni, aby wyróżnić CAST - Ekskluzywna oferta dla klientów programu Microsoft Visual Studio Enterprise!*
 
    *Firma Microsoft obecnie przeglądania Twoje żądanie dotyczące aktywacji i dostępu, aby wyróżnić RZUTOWANIA. Powrót po awarii z mnie usłyszysz w nie więcej niż 48 godzin.*
 
@@ -60,7 +58,7 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    *Greg*
 
 
-Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający pomyślne utworzenie konta usługi i pytaniem, możesz kliknąć link aktywacyjny, aby zakończyć proces aktywacji. 
+Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający pomyślne utworzenie konta usługi i pytaniem, możesz kliknąć link aktywacyjny, aby zakończyć proces aktywacji.
 
    *Firma Microsoft pomyślnie zweryfikowane i zweryfikować Twoje żądanie dostępu, wyróżnij RZUTOWANIA. Witamy na pokład!*
 
@@ -76,7 +74,7 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
     -   [Getting Started Guide (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   Samouczek wideo — [skonfigurować Portfolio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   Samouczek wideo — [Dodawanie aplikacji](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    *Najlepszym rozwiązaniem,*
    *Greg*
 
@@ -120,4 +118,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 Jeśli nie została już aktywowana korzyść platformy Azure, która pochodzi z Twoją subskrypcją, odwiedź stronę [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a następnie kliknij przycisk na platformie Azure kafelka w kategorii narzędzi do konfigurowania subskrypcji platformy Azure i Zrealizuj swoje bezpłatnych środków platformy Azure.
 
-Nie zapomnij też wyewidencjonować wersji demonstracyjnej, przewodnik użytkownika i filmów instruktażowych wymienionych w wiadomości e-mail firmy Greg. 
+Nie zapomnij też wyewidencjonować wersji demonstracyjnej, przewodnik użytkownika i filmów instruktażowych wymienionych w wiadomości e-mail firmy Greg.

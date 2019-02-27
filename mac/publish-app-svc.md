@@ -1,5 +1,5 @@
 ---
-title: Publikowanie w usłudze Azure App Service — Visual Studio dla komputerów Mac
+title: Publikowanie w usłudze Azure App Service
 ms.date: 01/17/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,16 +8,16 @@ ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
+ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853930"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844272"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w usłudze Azure App Service przy użyciu programu Visual Studio dla komputerów Mac
 
@@ -45,7 +45,7 @@ Narzędzie publikowania do publikowania aplikacji platformy ASP.NET Core w usłu
 
     ![Publikowanie w usłudze Azure App Service w oknie dialogowym](media/publish-to-app-service-dialog.png)
 
- 5. Aby utworzyć nową usługę App Service, kliknij przycisk **New** przycisku. 
+ 5. Aby utworzyć nową usługę App Service, kliknij przycisk **New** przycisku.
 
     ![Publikowanie w oknie dialogowym App Service](media/publish-to-app-service-dialog-new-selected.png)
 

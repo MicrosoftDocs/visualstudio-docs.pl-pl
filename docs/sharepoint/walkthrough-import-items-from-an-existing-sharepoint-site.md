@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605994"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841753"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Przewodnik: Importowanie elementów z istniejącej witryny programu SharePoint
   W tym instruktażu pokazano, jak importować elementy z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -43,7 +43,7 @@ ms.locfileid: "56605994"
 ## <a name="customize-a-sharepoint-site"></a>Dostosowywanie witryny programu SharePoint
  W tym przykładzie utworzysz i dostosować podwitrynę programu SharePoint, dodając nowe kolumny witryny do niego i tworząc inną witrynę do użycia w przyszłości. Później będzie wyeksportować pierwszy podwitryny z plikiem WSP i zaimportowanie kolumny niestandardowej witryny do drugiego podwitryny przy użyciu WSP importowania projektu.
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Do tworzenia i dostosowywania witryny programu SharePoint
+### <a name="to-create-and-customize-a-sharepoint-site"></a>Do tworzenia i dostosowywania witryny programu SharePoint
 
 1. Otwórz witrynę programu SharePoint, korzystając z przeglądarki internetowej, takiej jak http://<em>Nazwa systemowa</em>/SitePages/Home.aspx.
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605994"
 > [!IMPORTANT]
 >  Jeśli zostanie wyświetlony błąd środowiska uruchomieniowego, wykonując następującą procedurę, musisz wykonać procedurę na komputerze, który ma dostęp do witryny programu SharePoint.
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>Aby wyeksportować istniejącej witryny programu SharePoint
+### <a name="to-export-an-existing-sharepoint-site"></a>Aby wyeksportować istniejącej witryny programu SharePoint
 
 1.  W witrynie programu SharePoint wybierz **ustawienia lokacji** na **Akcje witryny** kartę, aby wyświetlić stronę ustawień lokacji.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605994"
 ## <a name="import-the-wsp-file"></a>Importuj plik .wsp
  Teraz, gdy masz *.wsp* pliku, który zawiera element, który chcesz ponownie użyć (niestandardową witrynę kolumna kolumny testu), importowanie *.wsp* plik, aby uzyskać do niego dostęp.
 
-#### <a name="to-import-a-wsp-file"></a>Aby zaimportować plik .wsp
+### <a name="to-import-a-wsp-file"></a>Aby zaimportować plik .wsp
 
 1. W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt**okno dialogowe. Jeśli środowisko IDE jest ustawione do użycia ustawienia programowania Visual Basic, na pasku menu, wybierz opcję **pliku** > **nowy projekt**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605994"
 ## <a name="deploy-the-project"></a>Wdrażanie projektu
  Na koniec wdrażanie **WspImportProject1** programu SharePoint w drugiej lokacji podrzędnych utworzony wcześniej w celu wyświetlenia kolumny niestandardowej witryny.
 
-#### <a name="to-deploy-the-project"></a>Aby wdrożyć projekt
+### <a name="to-deploy-the-project"></a>Aby wdrożyć projekt
 
 1.  W [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], wybierz **F5** klawisz, aby wdrożyć i uruchomić *.wsp* Importuj projekt.
 

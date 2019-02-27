@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączonej subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089227"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841714"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -22,13 +20,13 @@ Rozwiązywanie problemów wymagających usunięcia awarii w środowiskach niepro
 
 > [!NOTE]
 > Nie wszystkie subskrypcje na danym poziomie kwalifikujesz się do otrzymania żądania pomocy technicznej. Subskrypcje, które zakupione w ramach ekwiwalentu pełnego wymiaru czasu, NFR, MPN, MCT i inne programy nie odbierają zdarzenia pomocy technicznej. Jeśli Twoja subskrypcja nie jest prawo do otrzymania pomocy technicznej, Kafelek pomocy technicznej nie pojawi się w Twoich korzyściach dostępnych.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Kafelek korzyści z pomocy technicznej](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Aby rozpocząć korzystanie z korzyści z pomocy technicznej, przejdź do https://my.visualstudio.com/Benefits, przewiń w dół do sekcji pomocy technicznej i na kliknięcie kafelka pomocy technicznej **rozmowy, aby aktywować**. 
-2. Spowoduje to Zainicjowanie sesji rozmowy z przedstawicielem, który można utworzyć swój identyfikator umowy i identyfikator dostępu i tych, które należy podać. 
+1. Aby rozpocząć korzystanie z korzyści z pomocy technicznej, przejdź do https://my.visualstudio.com/Benefits, przewiń w dół do sekcji pomocy technicznej i na kliknięcie kafelka pomocy technicznej **rozmowy, aby aktywować**.
+2. Spowoduje to Zainicjowanie sesji rozmowy z przedstawicielem, który można utworzyć swój identyfikator umowy i identyfikator dostępu i tych, które należy podać.
 3. Aby ukończyć proces, należy zapewnić przedstawiciel za pomocą:
    - Adres e-mail, którego używasz do logowania się do subskrypcji
    - Identyfikator subskrypcji, w której znajduje się na [subskrypcje](https://my.visualstudio.com/subscriptions) kartę.
@@ -38,7 +36,7 @@ Rozwiązywanie problemów wymagających usunięcia awarii w środowiskach niepro
 
 
 > [!NOTE]
-> Aby aktywować swoje konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj, z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
+> Aby aktywować swoje konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj, z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
 ## <a name="how-to-submit-an-incident"></a>Jak przesłać żądanie
@@ -48,12 +46,12 @@ Po użytkownik ma identyfikator umowy i identyfikator dostępu, konfigurowanie, 
 ### <a name="submit-an-incident-online"></a>Prześlij zdarzenie online
 
 1. Aby [przesłać online](http://support.microsoft.com/oas/), określ produkt, mamy Ci pomóc. Możesz wybierać poszczególne listy lub Wyszukaj według nazwy. Aby przesłać żądanie dla Visual Studio Enterprise 2017, na przykład kliknąć **programu Visual Studio** w **narzędzi deweloperskich** grupy.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Korzyści z pomocy technicznej wybierz produkt zdarzenia](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Wybierz produkt, dla których potrzebujesz pomocy technicznej. (Na przykład kliknąć **Visual Studio Enterprise 2017** na liście produktów Visual Studio.)
 3. Na **utworzenia zdarzenia** wybierz typ problemu dotyczy z listy rozwijanej. W tym przykładzie Wybraliśmy **rozwoju środowiska IDE (Integrated)**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Korzyści z pomocy technicznej Utwórz zdarzenie](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Następnie wybierz **kategorii** który najlepiej spełnia Twoje pytanie/problem. W tym przykładzie Wybraliśmy **architektury narzędzia.**
@@ -64,7 +62,7 @@ Po użytkownik ma identyfikator umowy i identyfikator dostępu, konfigurowanie, 
    - Wprowadź identyfikator i identyfikator umowy dostępu
    - Kliknij przycisk **Dodaj**
 7. Po dodaniu umowę na pomoc techniczną, pojawi się na liście umowy pomocy technicznej Professional. Wybierz go, a następnie kliknij przycisk **Kontynuuj**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Płatność korzyści z pomocy technicznej](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Podaj informacje kontaktowe i preferowaną metodę kontaktu, a następnie kliknij przycisk **Kontynuuj**.

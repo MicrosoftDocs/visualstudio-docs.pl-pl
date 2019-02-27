@@ -6,15 +6,13 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Jak dodać alternatywne tożsamości dla Twojej subskrypcji programu Visual Studio na potrzeby usługi Azure DevOps i platformie Azure
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858155"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842133"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Tożsamości dla subskrybentów programu Visual Studio
 
@@ -62,9 +60,9 @@ Twoje alternatywne konto jest dodawane do subskrypcji programu Visual Studio, dz
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>P: Dlaczego nie DevOps platformy Azure rozpoznaje mnie jako subskrybent programu Visual Studio?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>PYT.:  Dlaczego nie DevOps platformy Azure rozpoznaje mnie jako subskrybent programu Visual Studio?
 
-Odp.: azure DevOps powinien rozpoznaje automatycznie subskrypcji Zaloguj się przy użyciu Twojej tożsamości podstawowej lub alternatywnej. W przeciwnym razie możesz wypróbować kilka rzeczy:
+Odp.: Azure DevOps powinien rozpoznaje automatycznie subskrypcji Zaloguj się przy użyciu Twojej tożsamości podstawowej lub alternatywnej. W przeciwnym razie możesz wypróbować kilka rzeczy:
 
 * Sprawdź, czy aktywną subskrypcję programu Visual Studio, [obejmuje DevOps platformy Azure jako pakiety korzyści](vs-azure-devops.md).
 

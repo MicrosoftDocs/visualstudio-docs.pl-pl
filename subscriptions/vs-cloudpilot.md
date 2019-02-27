@@ -6,19 +6,17 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380113"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842562"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
 
-Przenieś swoje aplikacje w systemie Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Zidentyfikuj wszystkich wymaganych zmian w kodzie w dół do wiersza kodu do pomyślnej migracji do: Kontenery, maszyn wirtualnych, usług App Services, SQL Azure i/lub wystąpienia Zarządzanego SQL. Następnie migrowanie aplikacji na platformie Azure przy użyciu kreatorów, wykorzystując usługi ASR, DMA i usługi DMS. 
+Przenieś swoje aplikacje w systemie Microsoft Azure w kilku prostych krokach. W ciągu kilku minut Zidentyfikuj wszystkich wymaganych zmian w kodzie w dół do wiersza kodu do pomyślnej migracji do: Kontenery, maszyn wirtualnych, usług App Services, SQL Azure i/lub wystąpienia Zarządzanego SQL. Następnie migrowanie aplikacji na platformie Azure przy użyciu kreatorów, wykorzystując usługi ASR, DMA i usługi DMS.
 
 CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szybko i łatwo Przenieś aplikacje na platformie Azure.  W zaledwie ułamku czasu, jaki zajęłoby ręcznej oceny CloudPilot dokładnie określa koszty migracji usługi Azure PaaS i IaaS i zawiera szczegółowe zalecenia w dół do wiersza kodu, dotyczące zmian w kodzie potrzebne dla aplikacji do uruchamiania w chmurze. CloudPilot pomaga w początkowej oceny nakład pracy migracji chmury i projektowania, planowania w procesie ponownego factoring, zapewniając szczegółowe zmiany na poziomie kodu w chmurze i w finalnych testów przed formantów technologii przedsiębiorstwa i zasady.
 
@@ -30,10 +28,10 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
 
    > [!div class="mx-imgBorder"]
    > ![Kafelek CloudPilot korzyści](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
-   
+
 0. Zobaczysz, że zostały pomyślnie pobrane komunikat z informacją o tym kodzie.  Kliknij przycisk **Aktywuj**, w tym momencie nastąpi przekierowanie do strony CloudPilot, gdzie można kontynuować proces aktywacji.  (Jeśli użytkownik nie chce Aktywuj teraz, możesz zawsze możesz wrócić do kafelka CloudPilot w portalu subskrypcji programu.  Link "Pobierz kod" zostanie zmieniona na "Aktywuj", a kliknięcie jej spowoduje przejście do następnego kroku w procesie aktywacji).
 
-0. Zapoznaj się z zalet CloudPilot prace programistyczne.  Gdy wszystko będzie gotowe, kliknij przycisk **Aktywuj** przycisku. 
+0. Zapoznaj się z zalet CloudPilot prace programistyczne.  Gdy wszystko będzie gotowe, kliknij przycisk **Aktywuj** przycisku.
 
    > [!div class="mx-imgBorder"]
    > ![Strona docelowa CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
@@ -46,14 +44,14 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
    > [!NOTE]
    > Aktywacje korzyści CloudPilot są ograniczone do 10, jednej organizacji, skorzystać z dowolnej kombinacji subskrypcji programu Visual Studio Enterprise lub Visual Studio Professional.  Jeśli ma już użyte aktywacje dziesięć Twojej organizacji, będzie można aktywować korzyść CloudPilot i otrzymasz wiadomość e-mail z UnifyCloud dodatkowych informacji.
 
- 0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.  
+ 0. Następnie zostanie wyświetlona strona produktu umożliwiający zapoznanie się z CloudPilot.  Kliknij przycisk **przejdź do CloudPilot** w prawym górnym rogu, aby przejść do portalu CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot Product Page](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure. 
+0.  To wszystko!  Zostaną wyświetlone w portalu CloudPilot i wszystko będzie gotowe rozpocząć korzystanie z subskrypcji CloudPilot, aby przenieść swoje aplikacje w systemie Microsoft Azure.
 
-0.  Zaraz po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail od potwierdzający pomyślne utworzenie konta usługi VSS UnifyCloud działu pomocy technicznej. 
+0.  Zaraz po pomyślnym utworzeniu konta otrzymasz wiadomość e-mail od potwierdzający pomyślne utworzenie konta usługi VSS UnifyCloud działu pomocy technicznej.
 
     > [!div class="mx-imgBorder"]
     > ![Wiadomość E-mail z potwierdzeniem CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -84,7 +82,7 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej korzystania z CloudPilot?  Zapoznaj się z tymi zasobami:
-    - [Skontaktuj się z pomocą UnifyCloud](https://www.unifycloud.com/contacts/) dla zapytania o UnifyCloud produktów. 
+    - [Skontaktuj się z pomocą UnifyCloud](https://www.unifycloud.com/contacts/) dla zapytania o UnifyCloud produktów.
     - [Podręcznik użytkownika CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
 

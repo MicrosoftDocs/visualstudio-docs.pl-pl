@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316968"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843825"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio
 
@@ -38,7 +38,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 |[Dokumentacji dla deweloperów aplikacji mobilnych platformy Xamarin](/xamarin/) |
 |[DevOps przy użyciu aplikacji Xamarin](/xamarin/tools/ci/devops/) |
 |[Dowiedz się więcej o aplikacji Windows Universal apps w programie Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (Visual Studio)|
-|[Dowiedz się więcej o podobieństwa Swift i C#](http://aka.ms/scposter) (witrynie download.microsoft.com)|
+|[Dowiedz się więcej o podobieństwa Swift i C#](https://aka.ms/scposter) (witrynie download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
 

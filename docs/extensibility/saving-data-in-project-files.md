@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b35d09faab659d67f5534f3734172707cb7acd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700422"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843597"
 ---
 # <a name="save-data-in-project-files"></a>Zapisywanie danych w plikach projektu
 Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pliku projektu. Framework pakietu zarządzanego (MPF) zawiera dwa interfejsy do wykonania tego zadania:
@@ -206,7 +206,7 @@ Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pl
     ```
 
 > [!NOTE]
->  Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu w [przykłady VSSDK](http://aka.ms/vs2015sdksamples).
+>  Wszystkie przykłady kodu, podane w tym temacie stanowią część większego przykładu w [przykłady VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Zobacz także
 - [Utrwalanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

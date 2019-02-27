@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, dołączone do wybranej subskrypcji programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380187"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843873"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -94,14 +92,14 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>PYT.:  W przypadku bezpłatnych korzyści, dlaczego trzeba podać numer karty kredytowej?
-Odp.:  Korzyścią jest bezpłatne, ale aktywacji używa tego samego systemu, które są używane do przetwarzania zamówień płatną.  Istnieją dwa typy płatności. 
-- Karta kredytowa.  Jeśli podasz numer karty kredytowej, Twoja karta nie zostanie obciążona. 
-- Faktury.  Jeśli wybierzesz opcję "Pomocą faktury" jako typ płatności, nie trzeba podać numer karty kredytowej.  Można również ustawić interwał "corocznie".  Dzięki temu, otrzymasz jedną wiadomość e-mail informacją o tym, że faktury jest gotowa.  Kwota faktury będzie wynosić 0,00 USD.  
+Odp.:  Korzyścią jest bezpłatne, ale aktywacji używa tego samego systemu, które są używane do przetwarzania zamówień płatną.  Istnieją dwa typy płatności.
+- Karta kredytowa.  Jeśli podasz numer karty kredytowej, Twoja karta nie zostanie obciążona.
+- Faktury.  Jeśli wybierzesz opcję "Pomocą faktury" jako typ płatności, nie trzeba podać numer karty kredytowej.  Można również ustawić interwał "corocznie".  Dzięki temu, otrzymasz jedną wiadomość e-mail informacją o tym, że faktury jest gotowa.  Kwota faktury będzie wynosić 0,00 USD.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>PYT.:  To korzyść usługi Power BI Pro, zawarte w moich subskrypcji licencjonowane do użycia w środowisku produkcyjnym?
 Odp.:  Tak, można go użyć w środowisku produkcyjnym, z dwoma ważnymi zastrzeżeniami:
-- Ta oferta wymaga instalacji na jego własnej dzierżawy.  Jeśli musisz mieć licencję usługi Power BI skojarzoną z poświadczeń firmowych w dzierżawie firmy skontaktuj się z administratorem firmy w celu zakupu i przypisać licencję. 
-- Nie można użyć tej korzyści z usługi Power BI Pro w dzierżawach instytucji rządowych.  
+- Ta oferta wymaga instalacji na jego własnej dzierżawy.  Jeśli musisz mieć licencję usługi Power BI skojarzoną z poświadczeń firmowych w dzierżawie firmy skontaktuj się z administratorem firmy w celu zakupu i przypisać licencję.
+- Nie można użyć tej korzyści z usługi Power BI Pro w dzierżawach instytucji rządowych.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>PYT.:  Podczas próby aktywowania usługi Power BI Pro, otrzymuję komunikat "Masz już konto, za pośrednictwem pracy".  Można nadal korzystać z korzyści?
 Odp.:  Tak.  Komunikat wskazuje, że użytkownik jest zalogowany do domeny, która ma już aktywnych dzierżaw usługi Office 365, na których nie jesteś administratorem.  Aby dodać usługę Power BI Pro do dzierżawy, musi być administratorem tej dzierżawy.  Aby rozwiązać ten problem, wykonaj następujące kroki, aby utworzyć własną dzierżawę.
@@ -112,12 +110,12 @@ Odp.:  Tak.  Komunikat wskazuje, że użytkownik jest zalogowany do domeny, któ
 3.  Utwórz swoją nazwę użytkownika i hasło.  Aby skorzystać z bezpłatnej oferty, upewnij się, możesz wybrać **. onmicrosoft.com** jako domena. Kliknij przycisk **Utwórz moje konto**.
     > [!div class="mx-imgBorder"]
     > ![Usługa Power BI Pro korzyści tworzenia dzierżawy prywatny identyfikator użytkownika](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  Pozostałe kroki w procesie są identyczne z tymi wymienionymi w treści artykułu, zaczynając od kroku 6.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>PYT.:  Jestem w dzierżawie dla instytucji rządowych.  Czy można używać korzyści? 
-Odp.:  Nie.  Korzyści z usługi Power BI Pro nie można dodać do dzierżawach instytucji rządowych. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>PYT.:  Jestem w dzierżawie dla instytucji rządowych.  Czy można używać korzyści?
+Odp.:  Nie.  Korzyści z usługi Power BI Pro nie można dodać do dzierżawach instytucji rządowych.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu usługi Power BI Pro?

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 13986b02838da162f9b1b0ae49032585f8fcad8b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: deefd81ce08fe0991c0abc275edf15f11d5eb5c4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796962"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844168"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 składników katalogu
 

@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965462"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843241"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
 Visual Studio Kubernetes Tools usprawnić tworzenie konteneryzowanych aplikacji przeznaczonych dla platformy Kubernetes. Program Visual Studio może automatycznie tworzyć pliki konfiguracji jako kodu, potrzebne do obsługi platformy Kubernetes, takiego jak wdrożenie plików Dockerfile i Helm wykresów. Debugowanie kodu na żywo za pomocą usługi Azure Dev miejsca do magazynowania klastra Azure Kubernetes Service (AKS) lub opublikować bezpośrednio do klastra usługi AKS z poziomu programu Visual Studio.
 
-W tym samouczku opisano Dodawanie Obsługa klastra Kubernetes do projektu i publikowanie w usłudze AKS za pomocą programu Visual Studio. Jeśli interesuje Cię przede wszystkim za pomocą [miejsca do magazynowania Azure Dev](http://aka.ms/get-azds) do debugowania i przetestować projekt, uruchomiony w usłudze AKS, możesz przejść do tematu [samouczek usługi Azure Dev miejsca do magazynowania](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) zamiast tego.
+W tym samouczku opisano Dodawanie Obsługa klastra Kubernetes do projektu i publikowanie w usłudze AKS za pomocą programu Visual Studio. Jeśli interesuje Cię przede wszystkim za pomocą [miejsca do magazynowania Azure Dev](https://aka.ms/get-azds) do debugowania i przetestować projekt, uruchomiony w usłudze AKS, możesz przejść do tematu [samouczek usługi Azure Dev miejsca do magazynowania](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) zamiast tego.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -78,7 +78,7 @@ Dodano pliki są:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikowanie w usłudze Azure Kubernetes Service (AKS)
 
-Wszystkie te pliki w miejscu można użyć środowiska IDE programu Visual Studio umożliwia pisanie i debugowanie kodu aplikacji, tak samo, jak zawsze mieć. Można również użyć [miejsca do magazynowania Azure Dev](http://aka.ms/get-azds) do szybkiego uruchamiania i debugowania kodu działającej w klastrze AKS. Aby uzyskać więcej informacji, zobacz [samouczek usługi Azure Dev miejsca do magazynowania](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+Wszystkie te pliki w miejscu można użyć środowiska IDE programu Visual Studio umożliwia pisanie i debugowanie kodu aplikacji, tak samo, jak zawsze mieć. Można również użyć [miejsca do magazynowania Azure Dev](https://aka.ms/get-azds) do szybkiego uruchamiania i debugowania kodu działającej w klastrze AKS. Aby uzyskać więcej informacji, zobacz [samouczek usługi Azure Dev miejsca do magazynowania](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Po utworzeniu działanie kodu tak jak chcesz, możesz opublikować bezpośrednio z programu Visual Studio klastra usługi AKS.
 
@@ -120,4 +120,4 @@ Gratulacje! Można teraz używać pełnych możliwości programu Visual Studio w
 
 Więcej informacji na temat programowania w usłudze Kubernetes na platformie Azure, czytając [dokumentację dotyczącą usługi AKS](/azure/aks).
 
-Więcej informacji na temat usługi Azure Dev miejsca do magazynowania, czytając [dokumentacji usługi Azure Dev miejsca do magazynowania](http://aka.ms/get-azds)
+Więcej informacji na temat usługi Azure Dev miejsca do magazynowania, czytając [dokumentacji usługi Azure Dev miejsca do magazynowania](https://aka.ms/get-azds)

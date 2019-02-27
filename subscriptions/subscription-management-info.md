@@ -1,31 +1,29 @@
 ---
-title: Więcej informacji na temat zarządzania subskrypcji | Dokumentacja firmy Microsoft
+title: Dowiedz się więcej o zarządzaniu subskrypcjami | Dokumentacja firmy Microsoft
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
-description: Więcej informacji o subskrypcji zarządzania
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
+ms.topic: conceptual
+description: Więcej informacji dotyczących zarządzania subskrypcjami
 searchscope: VS Subscription
-ms.openlocfilehash: 04b2170e38954f4806a35bd960a2d4d41080d212
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283422"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843740"
 ---
-# <a name="learn-about-subscription-management"></a>Więcej informacji na temat zarządzania subskrypcji
+# <a name="learn-about-subscription-management"></a>Dowiedz się więcej o zarządzaniu subskrypcjami
 
-Możliwości zarządzania subskrypcją są dostępne dla klientów, którzy nabyli subskrypcji za pośrednictwem umowy licencjonowania zbiorowego, Product firmy Microsoft i umowy usług (MPSA) lub subskrypcję chmury programu Visual Studio.
+Funkcje zarządzania subskrypcjami są dostępne dla klientów, którzy uzyskali subskrypcje za pośrednictwem umowy licencjonowania zbiorowego, Product firmy Microsoft i Services Agreement (MPSA) lub subskrypcji chmury programu Visual Studio.
 
-Biorąc pod uwagę różne kanały zakupów, jest ważne dla administratorów subskrypcji dowiedzieć się, jak ich subskrypcje zostały kupowane, można użyć odpowiednich uprawnień i konfiguracji użytkownika. Informacje, aby dowiedzieć się, jak skonfigurować Administratorzy dla każdego typu umowy można znaleźć w uzyskiwanie dostępu do sekcji Portal.
+Biorąc pod uwagę różnych kanałów zakupu, jest ważne dla administratorów subskrypcji dowiedzieć się, sposobu ich subskrypcje zostały zakupu, można użyć odpowiednich uprawnień i konfiguracji użytkownika. Informacje, aby dowiedzieć się, jak skonfigurować administratorów dla każdego typu umowy można znaleźć w uzyskiwanie dostępu do sekcji Portal.
 
-Zespołu Visual Studio subskrypcje utworzone "programu Visual Studio [portalu administracyjnego subskrypcje](https://visualstudio.microsoft.com/subscriptions-administration/)".  Celem tego portalu ma pomóc administratorom subskrypcji szybko poznać narzędzia i możliwości, które mają przypisywania i Zarządzaj subskrypcjami w swojej organizacji.
+Zespół subskrypcji programu Visual Studio utworzono "programu Visual Studio [Portal administratora subskrypcji](https://visualstudio.microsoft.com/subscriptions-administration/)".  Celem tego portalu ma ułatwić administratorom subskrypcji, które szybko rozpoznają narzędzia i możliwości, które mają do przypisywania i zarządzanie subskrypcjami w swojej organizacji.
 
-W portalu administracyjnym subskrypcji informacje na temat tematów, takich jak:
+W portalu administratora subskrypcji możesz dowiedzieć się tematów, takich jak:
 - Zarządzanie subskrypcjami w [portalu zarządzania subskrypcjami](https://manage.visualstudio.com).
-- Zarządzanie subskrypcjami za pośrednictwem Centrum usługi licencji woluminu dla organizacji, które nie zostały jeszcze zmigrowane do portalu zarządzania subskrypcji.
+- Zarządzanie subskrypcjami za pośrednictwem Volume License Service Center dla organizacji, które nie zostały jeszcze zmigrowane do portalu zarządzania subskrypcjami.
 - Migracja do nowego portalu.
-- Inne porady i wskazówki przeznaczonego dla administratorów subskrypcji.
+- Inne porady i wskazówki dla administratorów subskrypcji.

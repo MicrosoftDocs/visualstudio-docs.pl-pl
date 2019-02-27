@@ -3,19 +3,17 @@ title: What's new in subskrypcje programu Visual Studio
 description: Poznaj nowe i zaktualizowane funkcje, które służą do zarządzania subskrypcjami programu Visual Studio.
 ms.custom: ''
 ms.date: 06/25/2018
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003419"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842068"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s Nowość w subskrypcji programu Visual Studio
 

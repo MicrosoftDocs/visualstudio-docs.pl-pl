@@ -1,5 +1,5 @@
 ---
-title: Publikowanie w folderze — Visual Studio dla komputerów Mac
+title: Publikowanie w folderze
 ms.date: 01/22/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,13 +8,13 @@ ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
-ms.openlocfilehash: 505d65bc070446fa4b3f30a31fc12c3ee5c51026
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.prod: visual-studio-mac
+ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767848"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840370"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publikowanie aplikacji sieci Web w folderze przy użyciu programu Visual Studio dla komputerów Mac
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji w chmurze.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67222d83ebe6bbc8be0683d0d4828397dbeaab9b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: d85b093b8877430c037fdc528abc8264b6c847b9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739238"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843782"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Chmura subskrypcji programu Visual Studio często zadawane pytania dotyczące rozliczeń
 
@@ -45,7 +43,7 @@ Odp.: Jest to najłatwiejsza metoda, aby określić, jeśli masz odpowiednich up
 Musisz wybrać subskrypcję platformy Azure (jest to konto rozliczeniowe) z prezentowanych listę subskrypcji platformy Azure, które są aktualnie połączone na potrzeby logowania.
 Ponieważ nazwa subskrypcji platformy Azure, wartość domyślna to typ konta rozliczeniowego ("Płatność za rzeczywiste użycie", "Enterprise Agreement" itp.), często jest jasne, czy subskrypcja platformy Azure jest częścią umowy Enterprise Agreement.
 
-Innym rozwiązaniem jest próba odwiedź [Azure Enterprise Portal](http://ea.azure.com).  Jeśli użytkownik mógł go osiągnąć pomyślnie, następnie masz już administratorem przedsiębiorstwa lub roli właściciela konta. Tylko właściciele kont można zdefiniować nowe konta rozliczeniowego Azure w ramach umowy Enterprise Agreement. Jeśli nie masz dostępu do portalu Azure Enterprise, następnie sprawdź zapytanie w Twojej organizacji, aby dowiedzieć się, kto jest administratorem przedsiębiorstwa i poproś tę osobę, aby dodał Cię jako właściciel konta w portalu Azure Enterprise.  Jeśli nie możesz odnaleźć tę osobę mogą [Wyślij bilet pomocy technicznej](http://aka.ms/AzureEntSupport) i poproś o informacje kontaktowe.  Potrzebujesz nazwę swojej organizacji oraz numer rejestracji umowy Enterprise Agreement bilet pomocy technicznej.
+Innym rozwiązaniem jest próba odwiedź [Azure Enterprise Portal](http://ea.azure.com).  Jeśli użytkownik mógł go osiągnąć pomyślnie, następnie masz już administratorem przedsiębiorstwa lub roli właściciela konta. Tylko właściciele kont można zdefiniować nowe konta rozliczeniowego Azure w ramach umowy Enterprise Agreement. Jeśli nie masz dostępu do portalu Azure Enterprise, następnie sprawdź zapytanie w Twojej organizacji, aby dowiedzieć się, kto jest administratorem przedsiębiorstwa i poproś tę osobę, aby dodał Cię jako właściciel konta w portalu Azure Enterprise.  Jeśli nie możesz odnaleźć tę osobę mogą [Wyślij bilet pomocy technicznej](https://aka.ms/AzureEntSupport) i poproś o informacje kontaktowe.  Potrzebujesz nazwę swojej organizacji oraz numer rejestracji umowy Enterprise Agreement bilet pomocy technicznej.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>PYT.: Czy można używać środków zobowiązania pieniężnego platformy Azure z moją umową Enterprise Agreement kupić subskrypcje chmury programu Visual Studio?
 

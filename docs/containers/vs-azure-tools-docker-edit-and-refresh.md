@@ -10,12 +10,12 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 570ceba7936631563706ab78bd4671b6f7db07ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701312"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844416"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 ## <a name="overview"></a>Omówienie
@@ -85,9 +85,9 @@ Dzięki obsłudze platformy Docker w programie Visual Studio 2017 możesz uzyska
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Więcej informacji na temat platformy Docker przy użyciu programu Visual Studio, Windows i platformy Azure
 * [Tworzenie kontenerów za pomocą programu Visual Studio](/visualstudio/containers) — strona Centrum rozwoju kontenera
-* [Integracja z platformą docker dla usługi Azure potoków](http://aka.ms/dockertoolsforvsts) — umożliwia tworzenie i wdrażanie kontenerów aparatu docker
-* [Narzędzia aparatu docker dla programu Visual Studio Code](http://aka.ms/dockertoolsforvscode) — usługi w języka do edycji plików docker przy użyciu scenariuszy e2e mieszczących się
-* [Informacje o kontenerze Windows](http://aka.ms/containers)— informacje o systemie Windows Server i serwera Nano Server
+* [Integracja z platformą docker dla usługi Azure potoków](https://aka.ms/dockertoolsforvsts) — umożliwia tworzenie i wdrażanie kontenerów aparatu docker
+* [Narzędzia aparatu docker dla programu Visual Studio Code](https://aka.ms/dockertoolsforvscode) — usługi w języka do edycji plików docker przy użyciu scenariuszy e2e mieszczących się
+* [Informacje o kontenerze Windows](https://aka.ms/containers)— informacje o systemie Windows Server i serwera Nano Server
 * [Usługa Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) - [dokumentacja usługi Azure Kubernetes Service](/azure/aks)
 
 ## <a name="various-docker-tools"></a>Różne narzędzia programu Docker

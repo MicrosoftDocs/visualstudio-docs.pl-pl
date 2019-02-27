@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679492"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844064"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog
 Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi obrazu w usłudze Visual Studio i katalog obrazów wprowadzone w programie Visual Studio 2015.
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Zaktualizuj kod w celu żądania monikerów za pośrednictwem zaktualizowane mapowania przy użyciu usługi obrazu. (Może to oznaczać, aktualizacja do **CrispImages** dla zarządzanego kodu, lub żądanie HBITMAPs lub HICONs od usługi obrazów i przekazywania ich wokół dla kodu natywnego.)
 
 ## <a name="testing-your-images"></a>Testowanie obrazów
- Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](visual-studio-sdk.md). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](http://aka.ms/VSImageThemeTools).
+ Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](visual-studio-sdk.md). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](https://aka.ms/VSImageThemeTools).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

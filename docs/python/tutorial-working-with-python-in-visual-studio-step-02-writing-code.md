@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918107"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843094"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
 
@@ -53,7 +53,7 @@ Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna
 
     ![Dane wyjściowe dla pierwszego uruchomienia programu](media/vs-getting-started-python-07-output.png)
 
-1. Oprócz uzupełniania instrukcji i funkcji, funkcji IntelliSense zapewniają uzupełnienia dla języka Python `import` i `from` instrukcji. Te uzupełnienia pomóc łatwo wykryć, które moduły są dostępne w Twoim środowisku oraz elementów członkowskich tych modułów. W edytorze, Usuń `print` wiersza, a następnie zacznij pisać `import `. Podczas wpisywania tekstu miejsca, zostanie wyświetlona lista modułów:
+1. Oprócz uzupełniania instrukcji i funkcji, funkcji IntelliSense zapewniają uzupełnienia dla języka Python `import` i `from` instrukcji. Te uzupełnienia pomóc łatwo wykryć, które moduły są dostępne w Twoim środowisku oraz elementów członkowskich tych modułów. W edytorze, Usuń `print` wiersza, a następnie zacznij pisać `import`. Podczas wpisywania tekstu miejsca, zostanie wyświetlona lista modułów:
 
     ![Wyświetlanie dostępnych modułów dla instrukcji importowania IntellSense](media/vs-getting-started-python-08-import1.png)
 

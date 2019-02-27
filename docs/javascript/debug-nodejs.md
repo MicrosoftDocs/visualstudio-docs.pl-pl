@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768412"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843807"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
@@ -168,7 +168,7 @@ Debugowanie dynamicznie generowanych plików nie jest automatyczna. Nie można a
    Dla programu Chrome, przejdź do **Eksploratora rozwiązań > dokumenty skryptów > YourPageName**.
 
     > [!NOTE]
-    > Korzystając z przeglądarki Chrome, może zostać wyświetlony komunikat `no source is available between `<script>` tags.`This is OK, just continue debugging.
+    > Korzystając z przeglądarki Chrome, może zostać wyświetlony komunikat **źródło nie jest dostępne między \<skryptu > Znaczniki**. Stanowi to problemu, po prostu kontynuować debugowanie.
 
    Dla programu Internet Explorer przejdź do **Eksploratora rozwiązań > dokumenty skryptów > Windows Internet Explorer > YourPageName**.
 

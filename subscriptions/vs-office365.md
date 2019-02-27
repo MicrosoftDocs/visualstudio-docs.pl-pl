@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380145"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841081"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 
@@ -23,9 +21,9 @@ Tworzenie najlepszych. Pracę z dowolnego miejsca dzięki aplikacjom, które zaw
 ## <a name="getting-started-with-office-365-pro-plus"></a>Rozpoczynanie pracy z usługą Office 365 Pro Plus
 
 Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
-1. Zaloguj się do subskrypcji programu Visual Studio Enterprise.  
+1. Zaloguj się do subskrypcji programu Visual Studio Enterprise.
 2. Kliknij pozycję **pliki do pobrania** kartę.
-3. Zobaczysz listę polecane pliki do pobrania. Na liście pakietu Office, wybierz opcję **usługi Office 365**. 
+3. Zobaczysz listę polecane pliki do pobrania. Na liście pakietu Office, wybierz opcję **usługi Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Pliki do pobrania usługi Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Aby zainstalować usługi Office 365, musisz mieć klucz produktu.  Kliknij pozycję **Pobierz klucz** link w obszarze listy usługi Office 365.
@@ -36,7 +34,7 @@ Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
    > ![Klucz produktu oświadczenia usługi Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Zapisz klucz, który po prostu zgłoszone. (Zawsze możesz wrócić do tej listy, aby ponownie wyświetlić.)
 0. Zamknij okno staną się.
-0. Kliknij przycisk **Pobierz** przycisku. 
+0. Kliknij przycisk **Pobierz** przycisku.
    > [!div class="mx-imgBorder"]
    > ![Pobieranie uruchamiania usługi Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Zaloguj się przy użyciu konta Microsoft. (Jeśli już zalogowano, kliknij przycisk **dalej**.)
@@ -44,7 +42,7 @@ Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
    > [!div class="mx-imgBorder"]
    > ![Usługi Office 365, wprowadź klucz produktu](_img/vs-office365/vs-office365-enter-key.png)
 0. Kliknij przycisk **dalej** ponownie.
-0. Kliknij przycisk **zainstalować** instalować aplikacje pakietu Office. 
+0. Kliknij przycisk **zainstalować** instalować aplikacje pakietu Office.
 
 ## <a name="next-steps"></a>Następne kroki
 

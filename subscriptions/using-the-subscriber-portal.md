@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Dowiedz się więcej o pełną gamę korzyści dostępne w portalu subskrypcji programu Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859023"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843817"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Korzystanie z portalu dla subskrybentów — Moje. <span> </span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Portal subskrypcji programu Visual Studio [ https://my.visualstudio.com ](https:
 
 Za pomocą portalu wymaga zalogowanie na tożsamość skojarzoną z Twoją subskrypcją.  Może to być Twoje konta Microsoft (MSA) lub adresu e-mail udostępnionego przez organizację, takich jak pracodawca lub szkoła.  Dowiedz się więcej o [logowania](signing-in.md).
 
-Portal jest zorganizowana w sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług zawartych w ramach subskrypcji.  Sześć stron są korzyści, pliki do pobrania, klucze produktów, subskrypcji, pomocy technicznej i portalu Marketplace. 
+Portal jest zorganizowana w sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług zawartych w ramach subskrypcji.  Sześć stron są korzyści, pliki do pobrania, klucze produktów, subskrypcji, pomocy technicznej i portalu Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Narzędzia i usługi dostarczane w ramach subskrypcji są wyświetlane jako "Kafelki" na stronie korzyści.  Nie wszystkie pakiety korzyści są uwzględniane w przypadku wszystkich subskrypcji. Kafelki są podzielone na trzy kategorie: narzędzia, Professional, programowania i pomocy technicznej.  Jeśli używasz programu Visual Studio Dev Essentials, widoczna będzie również zatytułowany kategorii polecane, obejmującą wybrane korzyści związane z trzech kategorii.
+Narzędzia i usługi dostarczane w ramach subskrypcji są wyświetlane jako "Kafelki" na stronie korzyści.  Nie wszystkie pakiety korzyści są uwzględniane w przypadku wszystkich subskrypcji. Kafelki są podzielone na trzy kategorie:  Narzędzia, profesjonalne rozwiązania programistyczne i pomocy technicznej.  Jeśli używasz programu Visual Studio Dev Essentials, widoczna będzie również zatytułowany kategorii polecane, obejmującą wybrane korzyści związane z trzech kategorii.
 
 ### <a name="tools"></a>Narzędzia
 Kategoria narzędzia jest, gdzie znajdują się podstawowe narzędzia programowania, takich jak Visual Studio IDE, DevOps platformy Azure, jak również narzędzi dostarczanych przez naszych partnerów.  Zobaczysz również usług, takich jak platforma Azure i programu Visual Studio App Center.
@@ -51,6 +49,6 @@ Na stronie subskrypcje zapewnia możliwości, aby wyświetlić subskrypcje, któ
 
 Oprócz korzyści indywidualnej znalezione w kategorii pomocy technicznej na stronie korzyści na stronie pomocy technicznej zapewnia dostęp do zasobów ułatwiających maksymalne wykorzystanie subskrypcji programu Visual Studio. Dostęp do [zasoby pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) celu rozwiązania problemów technicznych lub pytania dotyczące sprzedaży subskrypcji, kont i rozliczeń.
 
-## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Portal Marketplace](https://marketplace.visualstudio.com/)
+## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Potrzebujesz odnowić subskrypcję chmury programu Visual Studio?  Czy chcesz pobrać najnowsze rozszerzenia dla produktów z rodziny Visual Studio?  Portal Marketplace ułatwiają użytkownikom odnalezienie rozszerzeń, narzędzi i usług, które ulepszyć DevOps platformy Azure, Team Foundation Server i Visual Studio Code. Można nawet zostać wydawcą i opublikować swoje własne rozszerzenia w portalu Marketplace.

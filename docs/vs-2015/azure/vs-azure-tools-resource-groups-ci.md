@@ -4,19 +4,19 @@ description: W tym artykule opisano sposób konfigurowania ciągłej integracji 
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 01793705d5d89d31b82a84d1ccca192d043db5a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe4a7111088ca41534a487cb52872a210c35dbc9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775563"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844053"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Ciągła integracja w usługom DevOps platformy Azure przy użyciu projekty wdrażania grupy zasobów platformy Azure
+
 Aby wdrożyć szablon platformy Azure, należy wykonać zadania w poszczególnych etapach: Kopiuj kompilacji, testów, na platformie Azure (zwane również "Staging") i wdrożyć szablon. Istnieją dwa różne sposoby wdrażania szablonów usługom DevOps platformy Azure. Obie metody zapewniają takie same wyniki, więc wybierz ten, który najlepiej pasuje do przepływu pracy.
 
 1. Dodaj pojedynczego kroku do potoku Twojej kompilacji, który uruchamia skrypt programu PowerShell, który znajduje się w projekcie wdrożenia grupy zasobów platformy Azure (wdrażanie AzureResourceGroup.ps1). Skrypt kopiuje artefakty, a następnie wdrażania szablonu.

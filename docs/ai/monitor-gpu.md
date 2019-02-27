@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 599e66881be4063207a6f8d11be03e94d6b57500
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781128"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842237"
 ---
 # <a name="monitoring-gpu-utilization"></a>Monitorowanie użycia procesora GPU
 

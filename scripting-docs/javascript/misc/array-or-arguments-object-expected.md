@@ -1,14 +1,9 @@
 ---
 title: Tablica lub argumentów obiekt, oczekiwano | Dokumentacja firmy Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5028
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6bd30ac1a49ff976ae928243fb74b9939c1eaf27
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345360"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840623"
 ---
 # <a name="array-or-arguments-object-expected"></a>Oczekiwanie obiektu typu Tablica lub argumentów
 Tablica nie zostały dostarczone jako argument. Ten błąd dotyczy **Function.prototype.apply** tylko metody. Jeśli zostanie określony, drugi argument do tej funkcji musi być albo `Array` obiektu lub **argumenty** obiektu.  

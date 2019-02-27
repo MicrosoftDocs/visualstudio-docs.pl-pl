@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908585"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840834"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -30,7 +30,7 @@ Po zalogowaniu, możesz wzbogacić środowisko programu Visual Studio. Na przyk�
 
 Poniżej przedstawiono pełną listę można oczekiwać, i co można zrobić, po zalogowaniu się w:
 
-- **Dostęp do programu Visual Studio Dev Essentials** — ten program zawiera oferta bezpłatnego oprogramowania, szkoleń, pomocy technicznej i nie tylko. Zobacz [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
+- **Dostęp do programu Visual Studio Dev Essentials** — ten program zawiera oferta bezpłatnego oprogramowania, szkoleń, pomocy technicznej i nie tylko. Zobacz [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
 
 - **Synchronizuj ustawienia programu Visual Studio** — ustawienia, które można dostosować, takie jak klawiszy, układ okna i motyw kolorów, obowiązują natychmiast po zalogowaniu do programu Visual Studio na dowolnym urządzeniu. Zobacz [zsynchronizowane ustawienia w programie Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

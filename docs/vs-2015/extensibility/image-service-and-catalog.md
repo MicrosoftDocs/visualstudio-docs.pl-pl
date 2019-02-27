@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d1cd4b752bff98555159a751a04c1afbbd12a4bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768705"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844422"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |-|-|  
 |**Element podrzędny**|**Definicja**|  
 |Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście|  
-|Identyfikator GUID|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID|  
+|Guid|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID|  
 |ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
 |String|Symbol reprezentuje wartość dowolny ciąg|  
 
@@ -147,7 +147,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Identyfikator GUID|[Wymagane] Identyfikator GUID część monikera obrazu|  
+|Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
 |ID|[Wymagane] Część Identyfikatora monikera obrazu|  
 |AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|  
 
@@ -205,7 +205,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |||  
 |-|-|  
 |**Atrybut**|**Definicja**|  
-|Identyfikator GUID|[Wymagane] Identyfikator GUID część monikera obrazu|  
+|Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
 |ID|[Wymagane] Część Identyfikatora monikera obrazu|  
 |Zewnętrzna|[Opcjonalnie, wartość domyślna to false] Wskazuje, czy monikera obrazu odwołuje się do obrazu w bieżącym manifeście.|  
 
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Zaktualizuj kod w celu żądania monikerów za pośrednictwem zaktualizowane mapowania przy użyciu usługi obrazu. (Może to oznaczać, aktualizacja do **CrispImages** dla zarządzanego kodu, lub żądanie HBITMAPs lub HICONs od usługi obrazów i przekazywania ich wokół dla kodu natywnego.)  
 
 ## <a name="testing-your-images"></a>Testowanie obrazów  
- Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](http://aka.ms/VSImageThemeTools).  
+ Narzędzie przeglądarka biblioteki obrazów do przetestowania Twojej manifesty obrazu, aby upewnić się, że wszystko jest prawidłowo przypisany. Można znaleźć narzędzia w [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Można znaleźć dokumentację dla tego narzędzia i inne [tutaj](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby  
 
