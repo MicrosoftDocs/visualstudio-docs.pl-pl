@@ -1,5 +1,5 @@
 ---
-title: Synchronicznie załadowany automatycznie rozszerzeń
+title: Rozszerzenia automatycznie ładowane w sposób synchroniczny
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,30 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 960fd54564bc25a8338461c30cd8a893e277b5a5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844609"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007166"
 ---
-# <a name="synchronously-autoloaded-extensions"></a>Synchronicznie załadowany automatycznie rozszerzeń
+# <a name="synchronously-autoloaded-extensions"></a>Rozszerzenia automatycznie ładowane w sposób synchroniczny
 
-Synchronicznie rozszerzenia załadowany automatycznie mieć negatywny wpływ na wydajność programu Visual Studio i powinny być konwertowane na zamiast tego użyj Załaduj asynchronicznego. Począwszy od programu Visual Studio 2 2019 r (wersja zapoznawcza), użytkownicy będą powiadamiani, gdy rozszerzenie jest synchronicznie załadowany automatycznie. Rozszerzenie zostanie obciążenia i działają w zwykły sposób.
+Synchronicznie rozszerzenia załadowany automatycznie mieć negatywny wpływ na wydajność programu Visual Studio i powinny być konwertowane na zamiast tego użyj Załaduj asynchronicznego. Począwszy od programu Visual Studio 2 2019 r (wersja zapoznawcza), użytkownicy są powiadamiani, gdy rozszerzenie jest synchronicznie załadowany automatycznie. Rozszerzenie zostanie obciążenia i działają w zwykły sposób.
 
 ![Ostrzeżenie dotyczące zgodności rozszerzenia](media/extension-compatibility-warning.png)
 
-1. Użytkownicy będą mogli kliknąć na **więcej** można uzyskać dostęp do tej strony informacji.
+Użytkownicy mogą:
 
-3. Użytkownicy będą mogli kliknąć na **zarządzanie wydajnością** otworzyć [okno dialogowe Menedżer wydajności](#performance-manager-dialog) pokazujący problemy z wydajnością za pomocą rozszerzenia i okna narzędzi.
+- Kliknij pozycję **więcej** można uzyskać dostęp do tej strony informacji.
 
-3. Użytkownicy będą mogli kliknąć na **nie pokazuj ponownie tego komunikatu** aby odrzucić powiadomienie. Wybranie tej opcji spowoduje również wszystkich kolejnych powiadomień z synchronicznie załadowany automatycznie rozszerzeń. Użytkownicy będą w dalszym ciągu otrzymywać powiadomienia na inne funkcje programu Visual Studio.
+- Kliknij pozycję **zarządzanie wydajnością** otworzyć [okno dialogowe Menedżer wydajności](#performance-manager-dialog) pokazujący problemy z wydajnością za pomocą rozszerzenia i okna narzędzi.
+
+- Kliknij pozycję **nie pokazuj ponownie tego komunikatu** aby odrzucić powiadomienie. Wybranie tej opcji uniemożliwia również wszystkich kolejnych powiadomień z synchronicznie załadowany automatycznie rozszerzeń. Użytkownicy będą w dalszym ciągu otrzymywać powiadomienia o innych funkcjach programu Visual Studio.
 
 ### <a name="performance-manager-dialog"></a>Okno dialogowe Menedżer wydajności
 
-  ![okno dialogowe Menedżer wydajności](media/performance-manager.png)
+![okno dialogowe Menedżer wydajności](media/performance-manager.png)
 
-Wszystkie rozszerzenia, które synchronicznie załadowane wszystkie pakiety w innych sesji użytkownika będzie wyświetlana w **przestarzałe interfejsy API** kartę.
+Wszystkie rozszerzenia, które synchronicznie załadowane wszystkie pakiety w wszystkie sesje użytkowników są wyświetlane w **przestarzałe interfejsy API** kartę.
 
 * Użytkownicy będą mogli kliknąć na **więcej informacji o tym problemie** zebrać więcej informacji na temat przestarzałych API.
 * Użytkownicy mogą skontaktuj się z ich dostawcami rozszerzenia postęp migracji.

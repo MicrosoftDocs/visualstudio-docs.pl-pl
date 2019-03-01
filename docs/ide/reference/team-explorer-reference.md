@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a44a46f1e3b03d5b2f583f0e480089d56295950
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946278"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007257"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja programu Team Explorer
 
@@ -82,7 +82,7 @@ Zobacz [Add/Wyświetl pliki i foldery](/azure/devops/repos/tfvc/add-files-server
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Jest dostępny nowy [środowisko elementów roboczych](/azure/devops/boards/work-items/set-work-item-experience-vs) w programie Visual Studio 1 2019 r w wersji zapoznawczej. Informacje o wyświetlaniu elementów roboczych w programie Visual Studio 2019 r w wersji zapoznawczej 1, zobacz [widoku i dodać elementy robocze](/azure/devops/boards/work-items/view-add-work-items).
+> Jest dostępny nowy [środowisko elementów roboczych](/azure/devops/boards/work-items/set-work-item-experience-vs) w Visual Studio 2019 r. Informacje o wyświetlaniu elementów roboczych w programie Visual Studio 2019 r, zobacz [widoku i dodać elementy robocze](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

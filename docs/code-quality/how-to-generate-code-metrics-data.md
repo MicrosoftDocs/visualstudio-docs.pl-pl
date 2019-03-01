@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909209"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007361"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 
@@ -25,6 +25,8 @@ Można wygenerować wyniki metryki kodu dla co najmniej jeden projekt lub całe 
 Ponadto, możesz zainstalować [pakietu NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) zawierającego cztery metryki kodu [analizatora](roslyn-analyzers-overview.md) reguły: CA1501, CA1502, CA1505 i CA1506. Te reguły są domyślnie wyłączone, ale można je włączyć **Eksploratora rozwiązań** lub [zestaw reguł](using-rule-sets-to-group-code-analysis-rules.md) pliku.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Metryki kodu w usłudze Visual Studio IDE
+
+Generowanie metryki kodu dla jednego lub wszystkich otwartych projektów w IDE, za pomocą **analizy** > **Oblicz metryki kodu** menu.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generowanie wyników metryk kodów dla całego rozwiązania
 
@@ -45,6 +47,16 @@ Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno. A
 1. Na pasku menu wybierz **analizy** > **Oblicz metryki kodu** > **dla projektów wybrane**.
 
 Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno. Aby wyświetlić szczegółowe wyniki wyszukiwania, rozwiń węzeł drzewa w **hierarchii**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **Oblicz metryki kodu** polecenie nie działa w przypadku projektów .NET Core i .NET Standard. Aby obliczyć metryki kodu dla projektu .NET Core lub .NET Standard, możesz wykonywać następujące czynności:
+>
+> - Oblicz metrykę kodu z [wiersza polecenia](#command-line-code-metrics) zamiast tego
+> - uaktualnienie do programu Visual Studio 2019 r.
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Metryki kodu wiersza polecenia
 

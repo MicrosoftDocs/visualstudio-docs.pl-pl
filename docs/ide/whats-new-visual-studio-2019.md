@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e73dd3b39616d9c1840db3ea26feb518a97e6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954416"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007283"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
 **Zaktualizowano do programu [Wersja Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Pobierz RC](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[Pobierz RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 Visual Studio 2019 zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.<br/><br/>
 
@@ -39,7 +39,7 @@ Poniżej przedstawiono podsumowanie wysokiego poziomu oferowane przez program Vi
 * **[Ciągłe wprowadzanie innowacji](#continuous-innovation)**. Kod inteligentne z obsługą inteligentną i w chmurze.
 
 > [!NOTE]
-> Aby uzyskać pełną listę nowych funkcji i możliwości programu Visual Studio RC 2019 r, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes/).
+> Aby uzyskać pełną listę nowych funkcji i funkcji w programie Visual Studio 2019 r, zobacz [informacje o wersji RC](/visualstudio/releases/2019/release-notes/) i [4 (wersja zapoznawcza) — informacje o wersji](/visualstudio/releases/2019/release-notes-preview/). Aby uzyskać więcej informacji na temat obu tych najnowsze wersje zobacz [Visual Studio 2019 r w wersji Release Candidate udostępniono](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/) wpis w blogu.
 
 ## <a name="personal-and-team-productivity"></a>Osobistych i zespołowych produktywności
 
