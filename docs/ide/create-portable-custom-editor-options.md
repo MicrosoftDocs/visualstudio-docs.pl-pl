@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 259d1c3ca0d86125e0b7c59c39851c2bb2f20b83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953051"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223774"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
-W programie Visual Studio 2017, można dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub kodu, aby wymusić spójnej kodowania style dla wszystkich użytkowników, który działa w bazie kodu. Ustawienia polecenia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić preferencje edytora osobistych w programie Visual Studio **opcje** okno dialogowe. Te ustawienia są stosowane zawsze, gdy pracujesz w bazie kodu bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastępuje danego ustawienia. Przykładem takich preferencji jest styl wcięcia&mdash;tabulatory lub spacje.
+Możesz dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub kodu, aby wymusić spójnej kodowania style dla wszystkich użytkowników, który działa w bazie kodu. Ustawienia polecenia EditorConfig pierwszeństwo tekstu Visual Studio globalnego ustawienia edytora. Oznacza to, że możesz dostosować każdą bazę kodu do używania ustawień edytora tekstów, które są specyficzne dla tego projektu. Nadal można ustawić preferencje edytora osobistych w programie Visual Studio **opcje** okno dialogowe. Te ustawienia są stosowane zawsze, gdy pracujesz w bazie kodu bez *.editorconfig* pliku, lub gdy *.editorconfig* pliku nie zastępuje danego ustawienia. Przykładem takich preferencji jest styl wcięcia&mdash;tabulatory lub spacje.
 
 Polecenie EditorConfig ustawienia są obsługiwane przez wiele kodu edytorami i środowiskami IDE, w tym Visual Studio. Jest przenośny składnikiem przybliżone ilości tych danych przy użyciu kodu i mogą zostać wymuszone kodowania stylów nawet poza programem Visual Studio.
 

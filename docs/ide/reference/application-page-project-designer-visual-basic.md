@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913174"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223276"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
@@ -76,7 +76,7 @@ Aby uzyskać więcej informacji na temat **typ aplikacji** właściwości, zobac
 
 ### <a name="auto-generate-binding-redirects"></a>Automatyczne generowanie przekierowania powiązań
 
-Przekierowania powiązań są dodawane do projektu, jeśli Twoja aplikacja lub jej składniki odwołują się do więcej niż jednej wersji tego samego zestawu. Jeśli chcesz ręcznie definiować przekierowania powiązań w pliku projektu, usuń zaznaczenie opcji **automatycznego generowania przekierowania powiązań**. To pole wyboru została wprowadzona w programie Visual Studio 2017 wersji 15.7.
+Przekierowania powiązań są dodawane do projektu, jeśli Twoja aplikacja lub jej składniki odwołują się do więcej niż jednej wersji tego samego zestawu. Jeśli chcesz ręcznie definiować przekierowania powiązań w pliku projektu, usuń zaznaczenie opcji **automatycznego generowania przekierowania powiązań**.
 
 Aby uzyskać więcej informacji o przekierowywaniu, zobacz [przekierowanie wersji zestawu](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

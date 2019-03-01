@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935579"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222090"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
@@ -109,19 +109,29 @@ W niektórych przypadkach możesz chcieć ręcznie utworzyć szablon elementu od
 
 1. Tworzenie projektu i elementu projektu.
 
-1. Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.
+2. Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.
 
-1. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru wystąpi, jeśli w dowolnym miejscu. Aby uzyskać więcej informacji na temat wymiany parametru zobacz [jak: Zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru wystąpi, jeśli w dowolnym miejscu. Aby uzyskać więcej informacji na temat wymiany parametru zobacz [jak: Zastępowanie parametrów w szablonie.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Utwórz plik XML i zapisz go z *.vstemplate* rozszerzenie pliku, w tym samym katalogu co plik elementu projektu.
+4. Utwórz plik XML i zapisz go z *.vstemplate* rozszerzenie pliku, w tym samym katalogu co plik elementu projektu.
 
-1. Edytuj *.vstemplate* plik XML do udostępnienia metadanych szablonu elementu. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md) i w przykładzie w poprzedniej sekcji.
+5. Edytuj *.vstemplate* plik XML do udostępnienia metadanych szablonu elementu. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md) i w przykładzie w poprzedniej sekcji.
 
-1. Zapisz *.vstemplate* plik i zamknij go.
+6. Zapisz *.vstemplate* plik i zamknij go.
 
-1. W **Eksplorator Windows**, zaznacz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **wysyłać** > **skompresowany folder (zip)**. Wybrane pliki są kompresowane do *zip* pliku.
+7. W **Eksplorator Windows**, zaznacz pliki, które chcesz uwzględnić w szablonie. Kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **wysyłać** > **skompresowany folder (zip)**. Wybrane pliki są kompresowane do *zip* pliku.
 
-1. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2017, domyślnym katalogiem jest *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. Domyślny katalog jest *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Kopiuj *zip* plików i wklej go w lokalizacji szablonów elementów użytkownika. Domyślny katalog jest *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizowanie szablonów projektów i elementów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 

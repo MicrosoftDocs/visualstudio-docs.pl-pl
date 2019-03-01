@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923376"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223133"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
@@ -38,11 +38,11 @@ Kod platformy .NET można również zarządzać za pomocą ustawienia stylu [Edi
 
 ## <a name="format-document-command"></a>Format polecenia dokumentu
 
-W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych można skonfigurować **Formatuj dokument** polecenia (**Edytuj** > **zaawansowane**  >  **Formatuj dokument**) do wykonywania oczyszczania dodatkowy kod w pliku, taką jak Usuń i Sortuj wyrażenia Using lub zastosować preferencji stylu kodu. Można zdefiniować ustawienia, które chcesz **Formatuj dokument** można zastosować [strona Opcje formatowania](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Można skonfigurować **Formatuj dokument** polecenia (**Edytuj** > **zaawansowane** > **Formatuj dokument**) do Wykonaj czyszczenie dodatkowy kod w pliku, np. Usuń i Sortuj wyrażenia Using lub zastosować preferencji stylu kodu. Można zdefiniować ustawienia, które chcesz **Formatuj dokument** można zastosować [strona Opcje formatowania](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 Oczyszczanie kodu stosuje się do ustawień skonfigurowanych w *.editorconfig* pliku lub niedostatecznie tę zasadę lub pliku, określone **narzędzia** > **opcje**  >  **Edytora tekstów**  >  **C#** > [**styl kodu** lub **formatowanie**].
 
-Po raz pierwszy możesz wyzwolić **Formatuj dokument** polecenia w programie Visual Studio 2017, pasek informacji żółty monituje o oczyszczania kodu ustawień.
+Po raz pierwszy możesz wyzwolić **Formatuj dokument** polecenia w programie Visual Studio, pasek informacji żółty monituje o oczyszczania kodu ustawień.
 
 > [!TIP]
 > Zasady skonfigurowane jako **Brak** w *.editorconfig* pliku nie są używane w oczyszczania kodu, ale mogą być stosowane osobno za pośrednictwem **szybkie akcje i Refaktoryzacje** menu.

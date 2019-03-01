@@ -1,25 +1,25 @@
 ---
 title: Visual Studio Tools for Docker z platformą ASP.NET Core
 author: ghogen
-description: Dowiedz się, jak używać narzędzi Visual Studio 2017 i platformy Docker for Windows
+description: Dowiedz się, jak używać narzędzi Visual Studio 2019 r i platformy Docker for Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0d6e61fc4f41284b7ca9a551712542ad1e74af5d
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: b615207467222a061a5496b87ecb1929348c18fe
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702041"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223829"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 * [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
 * [Narzędzia programistyczne programu .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) podczas tworzenia aplikacji z platformy .NET Core 2.2
 * Publikowanie w usłudze Azure Container Registry w subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/).
 
@@ -67,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Poprzedni *pliku Dockerfile* opiera się na [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrazu i zawiera instrukcje dotyczące modyfikowania obraz podstawowy, tworząc projekt i dodanie go do kontenera. 
+Poprzedni *pliku Dockerfile* opiera się na [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrazu i zawiera instrukcje dotyczące modyfikowania obraz podstawowy, tworząc projekt i dodanie go do kontenera.
 
 Gdy okno dialogowe nowego projektu w **Konfigurowanie protokołu HTTPS** pole wyboru jest zaznaczone, *pliku Dockerfile* udostępnia dwa porty. Jeden port jest używany do ruchu HTTP; inne port jest używany do obsługi protokołu HTTPS. Jeśli nie jest zaznaczone pole wyboru, jednego portu (80) jest uwidaczniany dla ruchu HTTP.
 
@@ -101,7 +101,7 @@ cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago  
 
 Po zakończeniu cyklu programowanie i debugowanie aplikacji, można utworzyć obraz aplikacji produkcyjnych.
 
-1. Zmień konfigurację menu rozwijane **wersji** i kompilowania aplikacji. 
+1. Zmień konfigurację menu rozwijane **wersji** i kompilowania aplikacji.
 1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **Publikuj**.
 1. W oknie dialogowym docelowej publikowania wybierz **Container Registry** kartę.
 1. Wybierz **Tworzenie nowej usługi Azure Container Registry** i kliknij przycisk **Publikuj**.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926050"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221882"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
@@ -60,20 +60,30 @@ Ustawienia są synchronizowane z różnych wersji i wydań programu Visual Studi
 
 ## <a name="side-by-side-synchronized-settings"></a>Side-by-side zsynchronizowane ustawienia
 
-W programie Visual Studio 2017 w wersji 15.3 lub nowszym pewne ustawienia, takie jak układ okna narzędzi nie są współdzielone przez różnych instalacje side-by-side programu Visual Studio 2017. *CurrentSettings.vssettings* w pliku *%userprofile%\Documents\Visual Studio 2017\Settings* znajduje się w folderze specyficznych dla instalacji, która jest podobna do *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Niektóre ustawienia, takie jak układ okna narzędzi nie są współużytkowane przez różne instalacje side-by-side programu Visual Studio. *CurrentSettings.vssettings* w pliku *%userprofile%\Documents\Visual Studio 2017\Settings* znajduje się w folderze specyficznych dla instalacji, która jest podobna do *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Aby korzystać z nowych ustawień specyficznych dla instalacji, należy wykonać nowej instalacji. Po wykonaniu uaktualnienia istniejącej instalacji programu Visual Studio 2017 do najnowszej aktualizacji, za pomocą istniejącej lokalizacji udostępnionej.
+> Aby korzystać z nowych ustawień specyficznych dla instalacji, należy wykonać nowej instalacji. Podczas uaktualniania istniejącej instalacji programu Visual Studio używa istniejącej lokalizacji udostępnionej.
 
-Jeśli obecnie korzystasz z side-by-side instalacji programu Visual Studio 2017 i chcesz używać nowej lokalizacji pliku ustawień specyficznych dla instalacji, wykonaj następujące kroki:
+Jeśli obecnie masz instalacje side-by-side programu Visual Studio i chcesz używać nowej lokalizacji pliku ustawień specyficznych dla instalacji, wykonaj następujące czynności:
 
 1. Uaktualnienie do programu Visual Studio 2017 w wersji 15.3 lub nowszej.
 
-1. Użyj **importu/eksportu ustawień** kreatora, aby wyeksportować wszystkie istniejące ustawienia do lokalizacji poza *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* folderu.
+2. Użyj **importu/eksportu ustawień** kreatora, aby wyeksportować wszystkie istniejące ustawienia do lokalizacji poza *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* folderu.
 
-1. Otwórz **wiersz polecenia programisty dla programu VS 2017** uaktualnionej instalacji programu Visual Studio i uruchom `devenv /resetuserdata`.
+3. Otwórz **wiersz polecenia programisty dla programu VS 2017** i uruchom `devenv /resetuserdata`.
 
 1. Uruchom program Visual Studio i zaimportuj zapisane ustawienia z wyeksportowanego pliku ustawień.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Niektóre ustawienia, takie jak układ okna narzędzi nie są współużytkowane przez różne instalacje side-by-side programu Visual Studio. *CurrentSettings.vssettings* w pliku *%userprofile%\Documents\Visual Studio 2019\Settings* znajduje się w folderze specyficznych dla instalacji, która jest podobna do *%localappdata%\ Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ef8cc5f1a203b5cb43b02a13f5b4e462f33892
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954098"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222990"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady dotyczące wydajności programu Visual Studio i wskazówki
 
@@ -41,9 +41,9 @@ Jeśli wyłączysz plik automatycznego przywracania, Szybkie nawigowanie do plik
 
 - Do ogólnych **przejdź do** funkcji, wybierz opcję **Edytuj** > **przejdź do** > **przejdź do wszystkich**, lub naciśnij  **CTRL**+**T**.
 
-- W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych możesz przejść do ostatniej edycji lokalizacji w rozwiązaniu za pomocą **Edytuj** > **przejdź do** > **przejdź do ostatniego edytowanie lokalizacji**, lub naciskając **Ctrl**+**Shift**+**Backspace**.
+- Przejdź do ostatniej edycji lokalizacji w rozwiązaniu za pomocą **Edytuj** > **przejdź do** > **przejdź do ostatniego Edytuj lokalizację**, lub naciskając **Ctrl**  + **Shift**+**Backspace**.
 
-- W programie Visual Studio 2017 w wersji należy zachować 15,8 i nowszych **przejdź do pliku ostatnie** umożliwia wyświetlenie listy ostatnio odwiedzonych plików w rozwiązaniu. Wybierz **Edytuj** > **przejdź do** > **przejdź do pliku ostatnie**, lub naciśnij **Ctrl** + **1**, **Ctrl**+**R**.
+- Użyj **przejdź do pliku ostatnie** umożliwia wyświetlenie listy ostatnio odwiedzonych plików w rozwiązaniu. Wybierz **Edytuj** > **przejdź do** > **przejdź do pliku ostatnie**, lub naciśnij **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Skonfiguruj opcje debugowania
 

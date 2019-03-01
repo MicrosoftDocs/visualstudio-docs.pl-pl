@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52085e5ac2471c73d512252f85bd3db3e3cc0234
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919823"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223406"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
@@ -36,7 +36,17 @@ Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe* i określi�
 
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    Na Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia programisty dla programu VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   Na Windows **Start** menu, wybierz **Visual Studio 2019** > **wiersz polecenia programisty dla programu VS 2019**.
+
+   ::: moniker-end
 
 2. Wprowadź polecenie podobne do:
 
@@ -85,7 +95,7 @@ Następujący kody XML pokazuje zawartość typowej *.runsettings* pliku. Każdy
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -113,7 +123,7 @@ Następujący kody XML pokazuje zawartość typowej *.runsettings* pliku. Każdy
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>

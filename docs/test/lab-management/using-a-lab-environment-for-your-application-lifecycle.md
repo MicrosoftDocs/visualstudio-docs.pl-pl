@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318007"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223458"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyć środowiska laboratoryjnego dla Twojego metodyki devops
 
@@ -55,7 +55,7 @@ Aby uzyskać więcej informacji, zobacz [zarządzania Użyj kompilacji lub wydan
 
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Korzystanie z funkcji programu Visual Studio Lab Management programu Microsoft Test Manager
 
-Można tworzyć i zarządzać środowiskami laboratoryjnymi za pomocą funkcji Visual Studio Lab Management programu Microsoft Test Manager, korzystając z programu Visual Studio 2017 Enterprise edition.
+Można tworzyć i zarządzać środowiskami laboratoryjnymi za pomocą funkcji Visual Studio Lab Management programu Microsoft Test Manager, korzystając z programu Visual Studio Enterprise edition.
 
 Lab Management automatycznie instaluje agentów testowych na każdym komputerze w danym środowisku.
 

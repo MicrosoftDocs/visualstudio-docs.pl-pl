@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949047"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222492"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące programu FxCop i FxCop analizatorów
 
@@ -31,7 +31,7 @@ Analizatory FxCop analizujące kod opierają się na platformie kompilatora .NET
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Polecenie Uruchom analizę kodu, czy działa analizatory FxCop analizujące kod?
 
-Nie. Po wybraniu **analizy** > **Uruchom analizę kodu** w programie Visual Studio 2017, wykonuje statycznej analizy kodu lub starszej wersji programu FxCop. **Przeprowadź analizę kodu** nie ma wpływu na oparte na programie Roslyn analizatorów, w tym analizatory FxCop oparte na programie Roslyn.
+Nie. Po wybraniu **analizy** > **Uruchom analizę kodu**, wykonuje statycznej analizy kodu lub starszej wersji programu FxCop. **Przeprowadź analizę kodu** nie ma wpływu na oparte na programie Roslyn analizatorów, w tym analizatory FxCop oparte na programie Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Właściwości projektu programu msbuild RunCodeAnalysis przeprowadza analizatory?
 

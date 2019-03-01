@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907860"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222561"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 
 W programie Visual Studio, można tworzyć i modyfikować niestandardowego *zestaw reguł* do potrzeb określonego projektu skojarzony z analizy kodu. Domyślne zestawy reguł są przechowywane w `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 w wersji 15.7** można Tworzenie niestandardowych zestawów reguł za pomocą dowolnego tekstu edytora i zastosować je w kompilacji z wiersza polecenia niezależnie od tego, co skompilować używanego systemu. Aby uzyskać więcej informacji, zobacz [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 w wersji 15.7 lub nowszej** można Tworzenie niestandardowych zestawów reguł za pomocą dowolnego tekstu edytora i zastosować je w kompilacji z wiersza polecenia niezależnie od tego, co skompilować używanego systemu. Aby uzyskać więcej informacji, zobacz [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Aby utworzyć niestandardową regułę języka C++ w programie Visual Studio, projekt języka C/C++, należy otworzyć w programie Visual Studio IDE. Można następnie otwórz zestaw standardowych reguł w edytorze zestawu reguł i następnie dodaj lub usuń określone reguły i opcjonalnie Zmień akcję wykonywaną podczas analizy kodu Określa, że reguły zostały naruszone.
 

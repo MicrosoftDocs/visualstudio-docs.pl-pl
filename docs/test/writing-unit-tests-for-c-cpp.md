@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926791"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223062"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -30,11 +30,11 @@ Program Visual Studio zawiera następujące struktury testów języka C++ z żad
 
 Oprócz zainstalowanych platform można napisać własne rozszerzenia test adapter for niezależnie od framework, które chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych za pomocą **Eksploratora testów** okna. Kilka kart sieciowych innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 w wersji 15.7 (Professional i Enterprise)**
+**Visual Studio 2017 w wersji 15.7 i nowsze (Professional i Enterprise)**
 
 Test jednostkowy C++ projektów pomocy technicznej [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017, wersja 15.5**
+**Visual Studio 2017 w wersji 15.5 lub nowszej**
 
 - **Google Test Adapter** jest dołączony jako część domyślnego **programowanie aplikacji klasycznych w języku C++** obciążenia. Ma ona szablon projektu, można dodać do rozwiązania za pośrednictwem **Dodaj nowy projekt** menu kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań**i opcje, które można skonfigurować za pomocą **narzędzia**  >  **Opcje**. Aby uzyskać więcej informacji, zobacz [porady: Użyj platformy Google Test w programie Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ Aby uzyskać najlepsze rozwiązania związane z testów jednostkowych, zobacz [p
 
 ## <a name="use-codelens"></a>Używanie funkcji CodeLens
 
-**Visual Studio 2017 w wersji 15.7 Professional i Enterprise tylko**: [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
+**Visual Studio 2017 w wersji 15.7 i nowsze (wersje Professional i Enterprise tylko)**
+
+[Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
 
 - Edytowanie i tworzenie projektu testu lub rozwiązania.
 - Ponownie skompiluj swój projekt lub rozwiązanie.
@@ -127,10 +129,10 @@ Po **CodeLens** jest inicjowany, możesz zobaczyć testowanie ikony stanu powyż
 
 ![Ikony CodeLens języka C++](media/cpp-test-codelens-icons.png)
 
- Kliknij ikonę, aby uzyskać więcej informacji, lub do uruchamiania lub debugowania test jednostkowy:
+Kliknij ikonę, aby uzyskać więcej informacji, lub do uruchamiania lub debugowania test jednostkowy:
 
 ![C++ CodeLens, uruchamianie i debugowanie](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Kod testu jednostkowego](unit-test-your-code.md)
+- [Kod testu jednostkowego](unit-test-your-code.md)

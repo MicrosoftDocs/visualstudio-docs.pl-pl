@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919238"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223484"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -48,7 +48,7 @@ Aby uzyskać więcej informacji o tym, które platformy i konfiguracje są obsł
 
 ## <a name="install-the-coded-ui-test-component"></a>Zainstaluj składnik kodowanego testu interfejsu użytkownika
 
-Aby uzyskać dostęp do narzędzi do testowania interfejsu użytkownika kodowany i szablonów, należy zainstalować **kodowanego testu interfejsu użytkownika** składnika programu Visual Studio 2017.
+Aby uzyskać dostęp do narzędzi do testowania interfejsu użytkownika kodowany i szablonów, należy zainstalować **kodowanego testu interfejsu użytkownika** składnika programu Visual Studio.
 
 1. Uruchom **Instalatora programu Visual Studio** , wybierając **narzędzia** > **Pobierz narzędzia i funkcje**.
 

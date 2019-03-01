@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937451"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222822"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
-Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files). Nowość w programie Visual Studio 2017 w wersji 15.8 można znaleźć i zamienić *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
+Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files). Można również znaleźć i zamienić tylko *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
 
 > [!TIP]
 > Jeśli zmieniasz kodu symbole, takie jak zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentne i określa zakres, Znajdź i Zamień bezrefleksyjne zastępuje wszystkie wystąpienia.
@@ -93,7 +93,7 @@ Można zdefiniować zestawy składników jako zakres wyszukiwania, wybierając *
 > [!NOTE]
 > Ta sekcja dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [naczenie blokowe](/visualstudio/mac/block-selection).
 
-**Nowość w programie Visual Studio 2017 w wersji 15.8**
+**Wprowadzone w programie Visual Studio 2017 w wersji 15.8**
 
 Użyj *zaznaczenie wielu karetki* się tego samego edycji w dwóch lub więcej miejsc, w tym samym czasie. Na przykład można wstawić ten sam tekst lub zmodyfikować istniejący tekst w wielu lokalizacjach, w tym samym czasie.
 

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864877"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222899"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -74,7 +74,7 @@ Istnieją dwie typowe sposoby, w których ten problem występuje w programie Vis
 
 Aby rozwiązać tego rodzaju problemy, Dodaj plik o nazwie **cpp.hint** do głównego katalogu rozwiązania. Aby uzyskać więcej informacji, zobacz [pliki wskazówki](/cpp/ide/hint-files).
 
-**Visual Studio 2017 w wersji 15.7** błędy parsera tagów są wyświetlane w oknie Lista błędów.
+Błędy parsera tagów są wyświetlane w **lista błędów** okna.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Sprawdź poprawność ustawień projektu za pomocą funkcji rejestrowania diagnostycznego
 
@@ -107,7 +107,7 @@ Jednak w niektórych przypadkach program Visual Studio może nie aktualizować b
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Rozwiązywanie problemów z błędami kompilacji IntelliSense
 
-Kompilacja funkcji IntelliSense nie generuje pliki binarne, ale mogą w dalszym ciągu nie. Jedną z możliwych przyczyn niepowodzenia jest niestandardowe, .props i .targets pliki. W programie Visual Studio 2017 w wersji 15.6 błędy kompilacji w trybie tylko do funkcji IntelliSense są rejestrowane w oknie danych wyjściowych. Aby je wyświetlić, należy ustawić **Pokaż dane wyjściowe z** do **rozwiązania**:
+Kompilacja funkcji IntelliSense nie generuje pliki binarne, ale mogą w dalszym ciągu nie. Jedną z możliwych przyczyn niepowodzenia jest niestandardowe, .props i .targets pliki. W programie Visual Studio 2017 w wersji 15.6 i nowszych błędy kompilacji w trybie tylko do funkcji IntelliSense są rejestrowane w oknie danych wyjściowych. Aby je wyświetlić, należy ustawić **Pokaż dane wyjściowe z** do **rozwiązania**:
 
 ![Okno danych wyjściowych dla rozwiązania błędów](media/vcpp-intellisense-output-window.png)
 

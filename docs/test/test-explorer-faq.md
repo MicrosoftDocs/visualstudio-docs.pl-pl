@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318319"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221895"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -27,71 +27,71 @@ ms.locfileid: "56318319"
 
 **Eksplorator testów nie jest odnajdywanie Moje testy, które są definiowane dynamicznie. (Na przykład teorii, niestandardowych kart, niestandardowe cech, #ifdefs itp.) Jak odnajdywanie, te testy?**
 
-  Skompiluj projekt i upewnij się, odnajdywanie na podstawie zestawu jest włączona w programie **narzędzia** > **opcje** > **testu**.
+Skompiluj projekt i upewnij się, odnajdywanie na podstawie zestawu jest włączona w programie **narzędzia** > **opcje** > **testu**.
 
-  [Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) jest odnajdywanie testów opartych na źródle. Nie można odnaleźć, testy, które korzystają z teorii, niestandardowe karty, niestandardowe cech `#ifdef` instrukcji, a także innych, ponieważ są one definiowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby znaleźć dokładnie. W programie Visual Studio 2017 w wersji 15.6 i nowszych opartych na zestawie odnajdywania (wykrywacz tradycyjnych) działa tylko po kompilacji. To ustawienie znajduje odnajdywania testów w czasie rzeczywistym oznacza dowolną liczbę testów, jak to możliwe, podczas edytowania i odnajdywanie na podstawie zestawu umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym poprawia czas odpowiedzi, ale aparaturze pozwala uzyskać kompletne i dokładne wyniki po kompilacji.
+[Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) jest odnajdywanie testów opartych na źródle. Nie można odnaleźć, testy, które korzystają z teorii, niestandardowe karty, niestandardowe cech `#ifdef` instrukcji, a także innych, ponieważ są one definiowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby znaleźć dokładnie. W programie Visual Studio 2017 w wersji 15.6 i nowszych opartych na zestawie odnajdywania (wykrywacz tradycyjnych) działa tylko po kompilacji. To ustawienie znajduje odnajdywania testów w czasie rzeczywistym oznacza dowolną liczbę testów, jak to możliwe, podczas edytowania i odnajdywanie na podstawie zestawu umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym poprawia czas odpowiedzi, ale aparaturze pozwala uzyskać kompletne i dokładne wyniki po kompilacji.
 
 ## <a name="test-explorer--plus-symbol"></a>Eksplorator testów "+" (plus) symbol
 
 **Co to jest "+" (plus) symbol, który pojawia się w górnej linii średniej Eksploratora testów?**
 
-  "+" (Plus) symbol informuje, że może zostać odnalezionych więcej testów po kompilacji tak długo, jak odnajdywanie na podstawie zestawu jest włączona. Ten symbol zostanie wyświetlony w przypadku definiowane dynamicznie testy zostaną wykryte w projekcie.
+"+" (Plus) symbol informuje, że może zostać odnalezionych więcej testów po kompilacji tak długo, jak odnajdywanie na podstawie zestawu jest włączona. Ten symbol zostanie wyświetlony w przypadku definiowane dynamicznie testy zostaną wykryte w projekcie.
 
-  ![Symbol wiersz podsumowania plus](media/testex-plussymbol.png)
+![Symbol wiersz podsumowania plus](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Odnajdywanie na podstawie zestawu
 
 **Odnajdywanie na podstawie zestawu już nie działa dla mojego projektu. Jak włączyć go ponownie?**
 
-  Przejdź do **narzędzia** > **opcje** > **testu** i pole wyboru dla **dodatkowo odnajduj testy z poziomu skompilowanych zestawów po kompilacje.**
+Przejdź do **narzędzia** > **opcje** > **testu** i pole wyboru dla **dodatkowo odnajduj testy z poziomu skompilowanych zestawów po kompilacje.**
 
-  ![Na podstawie zestawu opcji](media/testex-toolsoptions.png)
+![Na podstawie zestawu opcji](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Wykrywanie testów w czasie rzeczywistym
 
 **Testy są wyświetlane w Eksploratorze testów podczas pisania, bez konieczności tworzenia projektu. Co się zmieniło?**
 
-  Ta funkcja jest nazywana [wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824). Użyto analizatora Roslyn można znaleźć testy i wypełnić Eksplorator testów w czasie rzeczywistym bez konieczności kompilowania projektu. Aby uzyskać więcej informacji o zachowaniu odnajdywania testów dla dynamicznie definiowane testów, takich jak TEORIE lub cechy niestandardowych zobacz często zadawane pytania dotyczące nr 1.
+Ta funkcja jest nazywana [wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824). Użyto analizatora Roslyn można znaleźć testy i wypełnić Eksplorator testów w czasie rzeczywistym bez konieczności kompilowania projektu. Aby uzyskać więcej informacji o zachowaniu odnajdywania testów dla dynamicznie definiowane testów, takich jak TEORIE lub cechy niestandardowych zobacz często zadawane pytania dotyczące nr 1.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Zgodność odnajdywania testów w czasie rzeczywistym
 
 **Jakich języków i środowisk testowych można użyć odnajdywaniem testów w czasie rzeczywistym?**
 
-  [Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ jest zbudowany za pomocą kompilatora Roslyn. Na razie wykrywanie testów w czasie rzeczywistym działa tylko w przypadku xUnit, NUnit oraz MSTest struktur.
+[Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ jest zbudowany za pomocą kompilatora Roslyn. Na razie wykrywanie testów w czasie rzeczywistym działa tylko w przypadku xUnit, NUnit oraz MSTest struktur.
 
 ## <a name="test-explorer-logs"></a>Dzienniki narzędzia Eksplorator testów
 
 **Jak można włączyć dzienniki dla Eksploratora testów?**
 
-  Przejdź do **narzędzia** > **opcje** > **testu** i znaleźć w sekcji rejestrowanie.
+Przejdź do **narzędzia** > **opcje** > **testu** i znaleźć w sekcji rejestrowanie.
 
 ## <a name="uwp-test-discovery"></a>Odnajdywanie testów platformy uniwersalnej systemu Windows
 
 **Dlaczego są moje testy w projektach platformy uniwersalnej systemu Windows, które nie zostało wykryte do momentu czy mogę wdrożyć mojej aplikacji?**
 
-  Testy platformy uniwersalnej systemu Windows przeznaczone różne środowiska uruchomieniowego, gdy aplikacja jest wdrożona. Oznacza to, aby znaleźć testy dokładnie dla projektów platformy UWP nie tylko konieczność Skompiluj projekt, ale także wdrożyć.
+Testy platformy uniwersalnej systemu Windows przeznaczone różne środowiska uruchomieniowego, gdy aplikacja jest wdrożona. Oznacza to, aby znaleźć testy dokładnie dla projektów platformy UWP nie tylko konieczność Skompiluj projekt, ale także wdrożyć.
 
 ## <a name="test-explorer-sorting"></a>Test Explorer sortowania
 
 **Jak działa sortowania wyników testów w widoku hierarchii**
 
-  Widok hierarchii sortowania testy alfabetycznie w przeciwieństwie do wyników. Grupy za pomocą ustawień zwykle sortować wyniki testów według wyników i następnie alfabetycznie. Aby wyświetlić innej grupy opcji na poniższej ilustracji do porównania. Możesz przekazywać opinie dotyczące projektowania [ten problem usługi GitHub](https://github.com/Microsoft/vstest/issues/1425).
+Widok hierarchii sortowania testy alfabetycznie w przeciwieństwie do wyników. Grupy za pomocą ustawień zwykle sortować wyniki testów według wyników i następnie alfabetycznie. Aby wyświetlić innej grupy opcji na poniższej ilustracji do porównania. Możesz przekazywać opinie dotyczące projektowania [ten problem usługi GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Widok hierarchii Eksploratora testów
 
 **W widoku hierarchii zostaną przekazane, zakończone niepowodzeniem, pominięto i nie uruchomiono ikony obok projektu, Namespace i klasa grupowania. Co oznaczają ikony**
 
-  Ikony obok projektu, Namespace i klasa grupowania wyświetlić stan testów w ramach tej grupy. Zobacz poniższą tabelę.
+Ikony obok projektu, Namespace i klasa grupowania wyświetlić stan testów w ramach tej grupy. Zobacz poniższą tabelę.
 
-  ![Ikony hierarchii Eksploratora testów](media/testex-hierarchyicons.png)
+![Ikony hierarchii Eksploratora testów](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Wyszukaj według ścieżki pliku
 
 **Nie ma już filtru "Ścieżka pliku" w polu wyszukiwania Eksploratora testów.**
 
-Filtr ścieżki pliku w **Eksplorator testów** pole wyszukiwania została usunięta w wersji 15.7 programu Visual Studio 2017 w wersji zapoznawczej 3. Ta funkcja była o niskim użyciu i Eksplorator testów może pobrać szybszych metod testowych, pomijając tej funkcji. Daj nam znać, jeśli ta zmiana przerywa przepływ rozwoju, przesyłając swoje opinie na [społeczności deweloperów](https://developercommunity.visualstudio.com/).
+Filtr ścieżki pliku w **Eksplorator testów** pole wyszukiwania została usunięta w programie Visual Studio 2017 wersji 15.7. Ta funkcja była o niskim użyciu i Eksplorator testów może pobrać szybszych metod testowych, pomijając tej funkcji. Daj nam znać, jeśli ta zmiana przerywa przepływ rozwoju, przesyłając swoje opinie na [społeczności deweloperów](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
 
@@ -112,11 +112,11 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 > [!NOTE]
 > Jeśli używasz rozszerzenie NUnit 2 Test Adapter i nie mogą przeprowadzić migrację do NUnit 3 test adapter, możesz wyłączyć to nowe zachowanie odnajdywania w programie Visual Studio w wersji 15.8 w **narzędzia** > **opcje**  >  **Testu**.
 
-  ![Testowanie zachowania Eksploratora karty w opcjach narzędzi](media/testex-adapterbehavior.png)
+![Testowanie zachowania Eksploratora karty w opcjach narzędzi](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>Nie można odnaleźć TestContainer platformy uniwersalnej systemu Windows
 
-**Moje testy platformy uniwersalnej systemu Windows nie są wykonywane w programie Visual Studio 2017 w wersji 15.7 lub nowszej.**
+**Moje testy platformy uniwersalnej systemu Windows nie są wykonywane w programie Visual Studio 2017 wersji 15.7 lub nowszej.**
 
 Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. W przypadku projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony ten błąd wystąpił w **dane wyjściowe** > **testy**:
 

@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915000"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223354"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
-Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł w ramach jego narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakiet NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
+
+Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł w ramach jego narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 i Visual Studio 2019 r oraz są [dostępne jako pakiet NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>C++ podstawowych wytycznych dotyczących projektu
- Utworzone przez Bjarne'a Stroustrupa i innym osobom, podstawowych wytycznych dotyczących języka C++ to przewodnik do wykorzystania nowoczesnym języku C++, bezpiecznie i wydajnie. Wytyczne podkreślić bezpieczeństwa typu statycznego i bezpieczeństwa zasobów. Identyfikowanie sposoby wyeliminowania lub zminimalizować najbardziej podatne na błędy części języka i sugeruje jak sprawić, że kod jest prostszy i wydajniej w niezawodny sposób. Te wytyczne są obsługiwane przez Standard C++ Foundation. Aby dowiedzieć się więcej, zapoznaj się z dokumentacją, [podstawowych wytycznych dotyczących języka C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), a dostęp do plików projektu dokumentacji podstawowych wytycznych dotyczących języka C++ na [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Utworzone przez Bjarne'a Stroustrupa i innym osobom, podstawowych wytycznych dotyczących języka C++ to przewodnik do wykorzystania nowoczesnym języku C++, bezpiecznie i wydajnie. Wytyczne podkreślić bezpieczeństwa typu statycznego i bezpieczeństwa zasobów. Identyfikowanie sposoby wyeliminowania lub zminimalizować najbardziej podatne na błędy części języka i sugeruje jak sprawić, że kod jest prostszy i wydajniej w niezawodny sposób. Te wytyczne są obsługiwane przez Standard C++ Foundation. Aby dowiedzieć się więcej, zapoznaj się z dokumentacją, [podstawowych wytycznych dotyczących języka C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), a dostęp do plików projektu dokumentacji podstawowych wytycznych dotyczących języka C++ na [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Włącz wskazówki podstawowe sprawdzanie języka C++ w analizie kodu
  Można włączyć analizę kodu projektu, wybierając **Włącz analizę kodu podczas kompilacji** pola wyboru w **analizy kodu** części **stron właściwości** okno dialogowe Projekt.

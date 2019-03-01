@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 7a44a46f1e3b03d5b2f583f0e480089d56295950
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007257"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222977"
 ---
 # <a name="team-explorer-reference"></a>Dokumentacja programu Team Explorer
 
@@ -33,7 +33,7 @@ Po zakończeniu [Połącz z projektem](../connect-team-project.md) w **Team Expl
 
 | **Strona główna** strony za pomocą narzędzia Git | **Strona główna** strony z użyciem systemu TFVC |
 | - | - |
-| ![Strony głównej programu Team Explorer przy użyciu narzędzia Git w programie Visual Studio 2019 r.](media/team-explorer-reference/team-explorer-git.png) | ![Strony głównej programu Team Explorer z użyciem systemu TFVC w programie Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Strony głównej programu Team Explorer przy użyciu narzędzia Git w programie Visual Studio 2019 r.](media/team-explorer-reference/team-explorer-git.png) | ![Strony głównej programu Team Explorer z użyciem systemu TFVC w programie Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Strony zmiany (Git)
 

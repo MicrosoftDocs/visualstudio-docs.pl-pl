@@ -16,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645488"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223224"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 
 Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu, podczas programowania w języku C lub C++.
 
-[Strony właściwości języka C++, formatowanie](media/cpp-formatting.png)
+![Strony właściwości języka C++, formatowanie](media/cpp-formatting.png)
 
- Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie kliknij przycisk **formatowanie** .
+Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie kliknij przycisk **formatowanie** .
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -38,20 +38,31 @@ Użyj tych stron właściwości, aby zmienić domyślne zachowanie edytora kodu,
 
 Ta strona zawiera opcje formatowania instrukcji i bloków, podczas ich wpisywania.
 
-**Visual Studio 2017 w wersji 15.7 lub nowszej**: Strona zawiera również opcje dotyczące konfigurowania obsługi adaptera [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) wersji 5.0. Narzędzie ClangFormat to narzędzie, które można łatwo styl i formatowanie kodu na podstawie zestawu reguł, które można skonfigurować w pliku clang format lub _clang-format.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 w wersji 15.7 lub nowszej**:
+
+::: moniker-end
+
+Strona zawiera również opcje dotyczące konfigurowania obsługi adaptera [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) wersji 5.0. Narzędzie ClangFormat to narzędzie, które można łatwo styl i formatowanie kodu na podstawie zestawu reguł, które można skonfigurować w pliku clang format lub _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Konfigurowanie opcji narzędzia ClangFormat
 
-W programie Visual Studio 2017 wersji 15.7 lub nowszej Obsługa narzędzia ClangFormat jest włączona domyślnie. Możesz wybrać, które z tych typowych Konwencji formatowanie, aby zastosować do wszystkich projektów: Maszyny wirtualnej niskiego poziomu, Google, chrom, Mozilla lub aparatu WebKit. Można również utworzyć definicję formatu niestandardowego pliku clang format lub _clang-format. Jeśli taki plik znajduje się w folderze projektu, Visual Studio używa jej do formatowania wszystkich plikach kodu źródłowego, w tym folderze i jego podfolderach.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 w wersji 15.7 lub nowszej**:
+
+::: moniker-end
+
+Obsługa narzędzia ClangFormat jest włączona domyślnie. Możesz wybrać, które z tych typowych Konwencji formatowanie, aby zastosować do wszystkich projektów: Maszyny wirtualnej niskiego poziomu, Google, chrom, Mozilla lub aparatu WebKit. Można również utworzyć definicję formatu niestandardowego pliku clang format lub _clang-format. Jeśli taki plik znajduje się w folderze projektu, Visual Studio używa jej do formatowania wszystkich plikach kodu źródłowego, w tym folderze i jego podfolderach.
 
 Domyślnie program Visual Studio clangformat.exe działa w tle, który ma zastosowanie formatowania podczas wpisywania. Można również określić ręcznie uruchomić je tylko w przypadku wywołana poleceń formatowania **Formatuj dokument (Ctrl + K, Ctrl + D)** lub **Formatuj zaznaczenie (Ctrl + K, Ctrl + F)**.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Strony zawijania odstępy wcięcia, nowych wierszy
 
 Te strony włączyć różne dostosowań formatowania, ale są ignorowane, jeśli narzędzie ClangFormat jest włączona.
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

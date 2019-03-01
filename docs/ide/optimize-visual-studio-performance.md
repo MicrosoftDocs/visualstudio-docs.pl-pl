@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: d163edf5e08df3b60bdf664da8048781927729ac
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953589"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223775"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optymalizacja wydajności programu Visual Studio
 
 Ten artykuł zawiera wskazówki, aby wypróbować, jeśli okaże się, że program Visual Studio działa wolno. Możesz również skorzystać z przyjrzeć się [i porady dotyczące wydajności programu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) Aby uzyskać więcej wskazówek na temat sposobu zwiększenia wydajności.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Uaktualnianie do programu Visual Studio 2017 w wersji 15.6 lub nowszej
+## <a name="upgrade-visual-studio"></a>Uaktualnij program Visual Studio
 
-Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) bezpłatnie, aby zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej w programie Visual Studio 2017 o ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 jest side-by-side zgodny z programu Visual Studio 2015, dzięki czemu nie będzie utracie danych dzięki eksperymentom.
+Jeśli obecnie używasz programu Visual Studio 2015, Pobierz [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) lub [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) bezpłatnie, aby zapoznaj się z jego lepszą wydajność. Rozwiązania załadować dwóch do trzech razy szybciej niż w programie Visual Studio 2015 za pomocą ulepszenia wydajności w innych obszarach zbyt. Visual Studio 2017 i Visual Studio 2019 r są zgodne side-by-side przy użyciu programu Visual Studio 2015, dzięki czemu nie będzie utracie danych dzięki eksperymentom.
 
-Jeśli obecnie używasz programu Visual Studio 2017, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązania ładować się dwa lub trzy razy szybszy w wersji 15.6. Pobierz go [tutaj](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Jeśli już używasz programu Visual Studio 2017, upewnij się, że używasz wersji 15.6 lub nowszej. Dane pokazują, że rozwiązania ładować się dwa lub trzy razy szybszy w wersji 15.6. Pobierz go [tutaj](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Rozszerzenia i okna narzędzi
 

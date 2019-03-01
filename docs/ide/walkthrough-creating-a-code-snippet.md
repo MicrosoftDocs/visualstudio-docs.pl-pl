@@ -17,18 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949060"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223432"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
+
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio przy użyciu **importu** znajdujący się na **Menedżera wstawek kodu** (**narzędzia**  >   **Menedżer fragmentów kodu**).
 
 ## <a name="snippet-template"></a>Szablon fragmentu kodu
- Oto podstawowy szablon fragmentu kodu:
+
+Oto podstawowy szablon fragmentu kodu:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,13 +50,13 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
 
 ### <a name="create-a-code-snippet"></a>tworzenie fragmentu kodu
 
-1.  Utwórz nowy plik XML w programie Visual Studio i Dodaj ukazany powyżej szablon.
+1. Utwórz nowy plik XML w programie Visual Studio i Dodaj ukazany powyżej szablon.
 
-2.  Wprowadź tytuł wstawki, np. "Witaj świecie VB", w **tytuł** elementu.
+2. Wprowadź tytuł wstawki, np. "Witaj świecie VB", w **tytuł** elementu.
 
-3.  Wprowadź język wstawki w **języka** atrybutu **kodu** elementu. W tym przykładzie należy użyć "VB".
+3. Wprowadź język wstawki w **języka** atrybutu **kodu** elementu. W tym przykładzie należy użyć "VB".
 
-4.  Dodaj jakiś kod w **CDATA** sekcji wewnątrz **kodu** elementu, na przykład:
+4. Dodaj jakiś kod w **CDATA** sekcji wewnątrz **kodu** elementu, na przykład:
 
     ```xml
     <Code Language="VB">
@@ -62,33 +64,53 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Code>
     ```
 
-5.  Zapisz fragment kodu jako *VBCodeSnippet.snippet*.
+5. Zapisz fragment kodu jako *VBCodeSnippet.snippet*.
 
 ### <a name="add-a-code-snippet-to-visual-studio"></a>Dodaj fragment kodu do programu Visual Studio
 
-1.  Możesz dodać własne fragmenty kodu do instalacji programu Visual Studio za pomocą Menedżera fragmentów kodu. Otwórz **Menedżera wstawek kodu** (**narzędzia** > **Menedżera wstawek kodu**).
+1. Możesz dodać własne fragmenty kodu do instalacji programu Visual Studio za pomocą Menedżera fragmentów kodu. Otwórz **Menedżera wstawek kodu** (**narzędzia** > **Menedżera wstawek kodu**).
 
-2.  Kliknij przycisk **importu** przycisku.
+2. Kliknij przycisk **importu** przycisku.
 
-3.  Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
+3. Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 
-4.  **Importowania fragmentu kodu** zostanie otwarte okno dialogowe prośbą o wybranie miejsca dodania fragmentu kodu spośród możliwości w okienku po prawej stronie. Jedną z opcji powinny być **Moje fragmenty kodu**. Zaznacz go i kliknij **Zakończ**, następnie **OK**.
+4. **Importowania fragmentu kodu** zostanie otwarte okno dialogowe prośbą o wybranie miejsca dodania fragmentu kodu spośród możliwości w okienku po prawej stronie. Jedną z opcji powinny być **Moje fragmenty kodu**. Zaznacz go i kliknij **Zakończ**, następnie **OK**.
 
-5.  Fragment kodu zostanie skopiowany do następującej lokalizacji:
+5. Fragment kodu zostanie skopiowany do następującej lokalizacji:
 
-     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   ::: moniker range="vs-2017"
 
-6.  Przetestuj swój fragment kodu, otwierając projekt Visual Basic i otwierania pliku kodu. W pliku wybierz **fragmenty** > **Wstaw fragment kodu** z menu kliknij prawym przyciskiem myszy, a następnie **Moje fragmenty kodu**. Powinieneś zobaczyć fragment o nazwie **Moje wstawki kodu programu Visual Basic**. Kliknij go dwukrotnie.
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+
+   ::: moniker-end
+
+6. Przetestuj swój fragment kodu, otwierając projekt Visual Basic i otwierania pliku kodu. W pliku wybierz **fragmenty** > **Wstaw fragment kodu** z menu kliknij prawym przyciskiem myszy, a następnie **Moje fragmenty kodu**. Powinieneś zobaczyć fragment o nazwie **Moje wstawki kodu programu Visual Basic**. Kliknij go dwukrotnie.
 
     `Console.WriteLine("Hello, World!")` dodaje się w pliku kodu.
 
 ### <a name="add-description-and-shortcut-fields"></a>Dodawanie pól opis i skrót
 
-1.  Pola opisów podać więcej informacji na temat fragmentów kodu po wyświetleniu w Menedżerze fragmentów kodu. Skrót jest znacznikiem, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj ten fragment kodu, które zostały dodane, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+::: moniker range="vs-2017"
 
-2.  Dodaj **Autor** i **opis** elementów **nagłówka** elementu i wypełnij je.
+1. Pola opisów podać więcej informacji na temat fragmentów kodu po wyświetleniu w Menedżerze fragmentów kodu. Skrót jest znacznikiem, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj ten fragment kodu, które zostały dodane, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
 
-3.  **Nagłówka** element powinien wyglądać mniej więcej tak:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Pola opisów podać więcej informacji na temat fragmentów kodu po wyświetleniu w Menedżerze fragmentów kodu. Skrót jest znacznikiem, który użytkownicy mogą wpisać w celu wstawienia fragmentu kodu. Edytuj ten fragment kodu, które zostały dodane, otwierając plik *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+
+::: moniker-end
+
+2. Dodaj **Autor** i **opis** elementów **nagłówka** elementu i wypełnij je.
+
+3. **Nagłówka** element powinien wyglądać mniej więcej tak:
 
     ```xml
     <Header>
@@ -98,9 +120,9 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Header>
     ```
 
-4.  Otwórz **Menedżera wstawek kodu** i wybierz wstawki kodu. W okienku po prawej stronie powinien zostać wyświetlony, **opis** i **Autor** teraz zostaną wypełnione pola.
+4. Otwórz **Menedżera wstawek kodu** i wybierz wstawki kodu. W okienku po prawej stronie powinien zostać wyświetlony, **opis** i **Autor** teraz zostaną wypełnione pola.
 
-5.  Aby dodać skrót, Dodaj **skrótów** element wraz z **Autor** i **opis** elementu:
+5. Aby dodać skrót, Dodaj **skrótów** element wraz z **Autor** i **opis** elementu:
 
     ```xml
     <Header>
@@ -111,19 +133,19 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Header>
     ```
 
-6.  Zapisz ponownie plik fragmentu kodu.
+6. Zapisz ponownie plik fragmentu kodu.
 
-7.  Aby przetestować ten skrót, otwórz projekt języka Visual Basic i Otwórz plik kodu. Typ `hello` w pliku i naciśnij klawisz **kartę** dwa razy.
+7. Aby przetestować ten skrót, otwórz projekt języka Visual Basic i Otwórz plik kodu. Typ `hello` w pliku i naciśnij klawisz **kartę** dwa razy.
 
     Fragment kodu jest wstawiany.
 
 ### <a name="add-references-and-imports"></a>Dodawanie odwołania i Importy
 
-1.  Można dodać odwołania do projektu przy użyciu **odwołania** elementu i dodawanie deklaracji Importy za pomocą **Importy** elementu. (Ta działa dla języka C# oraz.) Na przykład, jeśli zmienisz `Console.WriteLine` w przykładzie kodu, aby `MessageBox.Show`, może być konieczne dodanie *System.Windows.Forms.dll* zestawu do projektu.
+1. Można dodać odwołania do projektu przy użyciu **odwołania** elementu i dodawanie deklaracji Importy za pomocą **Importy** elementu. (Ta działa dla języka C# oraz.) Na przykład, jeśli zmienisz `Console.WriteLine` w przykładzie kodu, aby `MessageBox.Show`, może być konieczne dodanie *System.Windows.Forms.dll* zestawu do projektu.
 
-2.  Otwórz swoją wstawkę.
+2. Otwórz swoją wstawkę.
 
-3.  Dodaj **odwołania** pod **fragment** elementu:
+3. Dodaj **odwołania** pod **fragment** elementu:
 
     ```xml
     <References>
@@ -133,7 +155,7 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </References>
     ```
 
-4.  Dodaj **Importy** pod **fragment** elementu:
+4. Dodaj **Importy** pod **fragment** elementu:
 
     ```xml
     <Imports>
@@ -143,17 +165,17 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Imports>
     ```
 
-5.  Zmiana **CDATA** sekcji do następującego:
+5. Zmiana **CDATA** sekcji do następującego:
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
     ```
 
-6.  Zapisz fragment kodu.
+6. Zapisz fragment kodu.
 
-7.  Otwórz projekt języka Visual Basic i Dodaj fragment kodu.
+7. Otwórz projekt języka Visual Basic i Dodaj fragment kodu.
 
-8.  Zostanie wyświetlony `Imports` instrukcji na górze pliku kodu:
+8. Zostanie wyświetlony `Imports` instrukcji na górze pliku kodu:
 
     ```vb
     Imports System.Windows.Forms
@@ -163,11 +185,11 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
 
 ### <a name="add-replacements"></a>Dodawanie zamian
 
-1.  Możesz zdecydować o wymianie części swoich wstawek kodu mają zostać zastąpione przez użytkownika, na przykład jeśli dodasz zmienną i użytkownik zastąpił ją zmienną w bieżącym projekcie. Można zapewnić dwa rodzaje zamiany: literały i obiekty. Literały są ciągami specjalistycznymi (literały ciągów, nazwy zmiennych lub ciągi znaków reprezentujące wartości liczbowe). Obiekty są wystąpieniami niektórych typów innych niż ciąg. W tej procedurze zostanie zadeklarować zamianę literału i zastąpienie obiektu oraz zmiana kodu, aby odwołać te zmiany.
+1. Możesz zdecydować o wymianie części swoich wstawek kodu mają zostać zastąpione przez użytkownika, na przykład jeśli dodasz zmienną i użytkownik zastąpił ją zmienną w bieżącym projekcie. Można zapewnić dwa rodzaje zamiany: literały i obiekty. Literały są ciągami specjalistycznymi (literały ciągów, nazwy zmiennych lub ciągi znaków reprezentujące wartości liczbowe). Obiekty są wystąpieniami niektórych typów innych niż ciąg. W tej procedurze zostanie zadeklarować zamianę literału i zastąpienie obiektu oraz zmiana kodu, aby odwołać te zmiany.
 
-2.  Otwórz swoją wstawkę.
+2. Otwórz swoją wstawkę.
 
-3.  W tym przykładzie użyto parametrów połączenia SQL, dlatego należy zmienić **Importy** i **odwołania** elementy, aby dodać odpowiednie odwołania:
+3. W tym przykładzie użyto parametrów połączenia SQL, dlatego należy zmienić **Importy** i **odwołania** elementy, aby dodać odpowiednie odwołania:
 
     ```xml
     <References>
@@ -188,7 +210,7 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Imports>
     ```
 
-4.  Aby zadeklarować zamianę literału dla parametrów połączenia SQL, Dodaj **deklaracje** elementu w obszarze **fragment kodu** elementu, a w nim Dodaj **literału** element z elementy podrzędne dla Identyfikatora, etykietki narzędzia i wartość domyślna dla zastąpienia:
+4. Aby zadeklarować zamianę literału dla parametrów połączenia SQL, Dodaj **deklaracje** elementu w obszarze **fragment kodu** elementu, a w nim Dodaj **literału** element z elementy podrzędne dla Identyfikatora, etykietki narzędzia i wartość domyślna dla zastąpienia:
 
     ```xml
     <Declarations>
@@ -200,7 +222,7 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Declarations>
     ```
 
-5.  Aby zadeklarować zamianę obiektu dla połączenia SQL, Dodaj **obiektu** element wewnątrz **deklaracje** element i Dodaj elementy podrzędne dla Identyfikatora typu obiektu, wskazówki i wartość domyślna wartość. Wartość wynikowa **deklaracje** element powinien wyglądać następująco:
+5. Aby zadeklarować zamianę obiektu dla połączenia SQL, Dodaj **obiektu** element wewnątrz **deklaracje** element i Dodaj elementy podrzędne dla Identyfikatora typu obiektu, wskazówki i wartość domyślna wartość. Wartość wynikowa **deklaracje** element powinien wyglądać następująco:
 
     ```xml
     <Declarations>
@@ -218,7 +240,7 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Declarations>
     ```
 
-6.  W sekcji kodu można odwoływać się do zamian z otaczającymi znaków $, na przykład `$replacement$`:
+6. W sekcji kodu można odwoływać się do zamian z otaczającymi znaków $, na przykład `$replacement$`:
 
     ```xml
     <Code Language="VB" Kind="method body">
@@ -232,9 +254,9 @@ Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co n
     </Code>
     ```
 
-7.  Zapisz fragment kodu.
+7. Zapisz fragment kodu.
 
-8.  Otwórz projekt języka Visual Basic i Dodaj fragment kodu.
+8. Otwórz projekt języka Visual Basic i Dodaj fragment kodu.
 
 9. Kod powinien wyglądać podobnie do poniższego, gdzie zamiany `SQL connection string` i `dcConnection` są wyróżnione kolorem jasnopomarańczowym. Wybierz **kartę** przejść z jednego do drugiego.
 

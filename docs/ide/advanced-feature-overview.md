@@ -1,6 +1,5 @@
 ---
-title: Zaawansowane funkcje programu Visual Studio 2017
-titleSuffix: ''
+title: Funkcje zaawansowane
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dc5aad18aba1537a801081bd45e2cfd97fcfd2
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007348"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221778"
 ---
-# <a name="features-of-visual-studio-2017"></a>Funkcje programu Visual Studio 2017
+# <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
 [Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md) artykuł zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych deweloperów, którzy są już zaznajomieni z programu Visual Studio.
 
@@ -23,9 +22,19 @@ ms.locfileid: "57007348"
 
 Moduły Instalatora programu Visual Studio umożliwia wybierz i zainstaluj *obciążeń*. Obciążenia są grupami funkcje potrzebne do programowania języka lub platformy, na której użytkownik sobie tego życzy. Taka strategia pomaga zachować śladu mniejsze, instalacja programu Visual Studio, co oznacza, jej instalowanie i aktualizowanie szybciej za.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+::: moniker range="vs-2017"
 
-Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [Install Visual Studio 2017](../install/install-visual-studio.md).
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Tworzenie aplikacji z obsługą chmury dla platformy Azure
 
@@ -99,7 +108,7 @@ Gdy aplikacja jest gotowa do wdrożenia użytkownicy lub klienci, program Visual
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzaj kodem źródłowym i współpracować z innymi
 
-Możesz zarządzać kodem źródłowym w repozytoriach Git hostowanych przez dowolnego dostawcę, w tym witrynę GitHub. Lub użyj [usługom DevOps platformy Azure](/azure/devops/index) do zarządzania kodem, usterkami i elementami roboczymi dla całego projektu. Zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej na temat zarządzania repozytoriami Git w programie Visual Studio za pomocą programu Team Explorer. Visual Studio ma również innych funkcji kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [Git nowe funkcje w programie Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+Możesz zarządzać kodem źródłowym w repozytoriach Git hostowanych przez dowolnego dostawcę, w tym witrynę GitHub. Lub użyj [usługom DevOps platformy Azure](/azure/devops/index) do zarządzania kodem, usterkami i elementami roboczymi dla całego projektu. Zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) Aby dowiedzieć się więcej na temat zarządzania repozytoriami Git w programie Visual Studio za pomocą programu Team Explorer. Visual Studio ma również innych funkcji kontroli źródła wbudowanych. Aby dowiedzieć się więcej o nich, zobacz [Git nowe funkcje w programie Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Usługom DevOps platformy Azure są usługami w chmurze do planu, obsługi, automatyczne i wdrażanie oprogramowania i umożliwianie współpracy w zespołach. Usługom DevOps platformy Azure obsługuje zarówno repozytoria Git (rozproszonej kontroli wersji), jak i Team Foundation Version Control (scentralizowany system kontroli wersji). Obsługiwane są też potoki ciągłej kompilacji i wersji (CI/CD) przechowywane w systemach kontroli wersji kodu. Usługom DevOps platformy Azure obsługują również Scrum i CMMI Agile metodologii programowania.
 

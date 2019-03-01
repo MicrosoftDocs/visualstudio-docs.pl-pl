@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e51b734d3a8d5ea98848a53929cb78099ba853d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6be079a5adfe52a7ac750f6713672dad50c7d2a4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946928"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222038"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak używać narzędzia CTest dla języka C++ w programie Visual Studio
 
@@ -22,22 +22,40 @@ CMake (co obejmuje narzędzia CTest) jest zintegrowana w środowisku IDE program
 
 Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu Visual Studio. W związku z tym zapisu i Konfigurowanie narzędzia CTest testów, tak samo jak w każdym środowisku CMake. Aby uzyskać więcej informacji na temat używania narzędzia CMake w programie Visual Studio, zobacz [narzędzia CMake w języku Visual C++](/cpp/ide/cmake-tools-for-visual-cpp).
 
-## <a name="to-run-tests-visual-studio-2017-version-156"></a>Aby uruchomić testy (Visual Studio 2017 w wersji 15.6)
+## <a name="to-run-tests"></a>Aby uruchomić testy
 
-W programie Visual Studio 2017 w wersji 15.6 narzędzia CTest jest w pełni zintegrowana z **Eksplorator testów** i obsługuje także jednostki Google i zwiększenie wydajności, testowanie struktur. Te struktury są domyślnie dołączone jako składników w **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak w przypadku uaktualniania projektu ze starszej wersji programu Visual Studio, może być konieczne zainstalowanie tych środowisk przy użyciu programu Instalatora programu Visual Studio.
+::: moniker range="vs-2017"
+
+### <a name="visual-studio-2017-version-156-and-later"></a>Visual Studio 2017 w wersji 15.6 i nowsze
+
+W programie Visual Studio 2017 w wersji 15.6 i nowszych narzędzia CTest jest w pełni zintegrowana z **Eksplorator testów** i obsługuje także jednostki Google i zwiększenie wydajności, testowanie struktur. Te struktury są domyślnie dołączone jako składników w **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak w przypadku uaktualniania projektu ze starszej wersji programu Visual Studio, może być konieczne zainstalowanie tych środowisk przy użyciu programu Instalatora programu Visual Studio.
 
 Na poniższej ilustracji przedstawiono wyniki narzędzia CTest uruchamiane przy użyciu framework platformy Google Test:
 
-![Narzędzia CTest przy użyciu Framework platformy Google Test w programie VS2017 wersji 15.6](media/ctest-test-explorer.png)
+![Narzędzia CTest przy użyciu Framework platformy Google Test w programie Visual Studio 2017](media/ctest-test-explorer.png)
 
 Jeśli używasz narzędzia CTest, ale nie Google lub Boost kart, zobaczysz wyniki na poziomie narzędzia CTest zamiast poszczególnych testów poziom metody. Można debugować i krokowym tylko do narzędzia CTest pliki wykonywalne, ale ślady stosu na poszczególne testy nie są obsługiwane.
 
-## <a name="to-run-tests-visual-studio-2017-version-155"></a>Aby uruchomić testy (Visual Studio 2017 w wersji 15.5)
+### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 w wersji 15.5
 
-W **programu Visual Studio 2017 w wersji 15.5**, narzędzia CTest nie jest zintegrowany z **Eksplorator testów**. Możesz uruchomić testy z menu głównego narzędzia CMake lub w menu kliknij prawym przyciskiem myszy *CMakeLists.txt* w pliku **Eksploratora rozwiązań**. Wyniki testów są kierowane do programu Visual Studio **okno danych wyjściowych**.
+W programie Visual Studio 2017 w wersji 15.5 narzędzia CTest nie jest zintegrowany z **Eksplorator testów**. Możesz uruchomić testy z menu głównego narzędzia CMake lub w menu kliknij prawym przyciskiem myszy *CMakeLists.txt* w pliku **Eksploratora rozwiązań**. Wyniki testów są kierowane do programu Visual Studio **okno danych wyjściowych**.
 
-![Uruchom testy narzędzia CTest w wersji 15.5 programu VS 2017](media/cpp-cmake-run-tests.png)
+![Uruchamianie narzędzia CTest testów w programie Visual Studio 2017 w wersji 15.5](media/cpp-cmake-run-tests.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Narzędzia CTest jest w pełni zintegrowana z **Eksplorator testów** i obsługuje także jednostki Google i zwiększenie wydajności, testowanie struktur. Te struktury są domyślnie dołączone jako składników w **programowanie aplikacji klasycznych w języku C++** obciążenia. Jednak w przypadku uaktualniania projektu ze starszej wersji programu Visual Studio, może być konieczne zainstalowanie tych środowisk przy użyciu programu Instalatora programu Visual Studio.
+
+Na poniższej ilustracji przedstawiono wyniki narzędzia CTest uruchamiane przy użyciu framework platformy Google Test:
+
+![Narzędzia CTest przy użyciu Framework platformy Google Test w programie Visual Studio](media/ctest-test-explorer.png)
+
+Jeśli używasz narzędzia CTest, ale nie Google lub Boost kart, zobaczysz wyniki na poziomie narzędzia CTest zamiast poszczególnych testów poziom metody. Można debugować i krokowym tylko do narzędzia CTest pliki wykonywalne, ale ślady stosu na poszczególne testy nie są obsługiwane.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 
-[Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+- [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)

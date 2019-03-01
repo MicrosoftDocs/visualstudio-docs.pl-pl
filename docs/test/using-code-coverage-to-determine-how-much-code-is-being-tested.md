@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0869dcaccbd5f0b13661738a1d923758513aeb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935111"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222912"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -258,7 +258,17 @@ Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*. Pokrycie k
 
 1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    W Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia programisty dla programu VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   W Windows **Start** menu, wybierz **Visual Studio 2019** > **wiersz polecenia programisty dla programu VS 2019**.
+
+   ::: moniker-end
 
 2. W wierszu polecenia wpisz następujące polecenie:
 

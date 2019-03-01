@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923424"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222457"
 ---
 # <a name="workflow-project-templates"></a>Szablony projektów przepływu pracy
 
@@ -34,7 +34,7 @@ Program Visual Studio oferuje cztery różne szablony projektu przepływu pracy:
 
 - Biblioteka projektanta działań
 
-Aby uzyskać dostęp do tych szablonów, należy najpierw zainstalować **Windows Workflow Foundation** składnika programu Visual Studio 2017. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Aby uzyskać dostęp do tych szablonów, należy najpierw zainstalować **Windows Workflow Foundation** składnika programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Po zainstalowaniu **Windows Workflow Foundation** składnika, otwórz **nowy projekt** okna dialogowego wybierając **pliku** > **New**  >  **Projektu**.
 

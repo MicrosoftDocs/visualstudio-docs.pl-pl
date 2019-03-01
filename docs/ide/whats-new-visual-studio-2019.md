@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007283"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223549"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
 **Zaktualizowano do programu [Wersja Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Pobierz RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Pobierz RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 Visual Studio 2019 zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.<br/><br/>
 
@@ -110,7 +110,7 @@ Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3
 Aby uzyskać więcej informacji zobacz następujące strony:
 
 * [.NET core 3 (wersja zapoznawcza) 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) i [.NET Core 3 w wersji zapoznawczej 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) informacje o wersji
-* [Przedstawienie programu .NET Core 3 (wersja zapoznawcza) 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) i [Announcing .NET Core 3 w wersji zapoznawczej 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) wpisów w blogu
+* [Przedstawienie programu .NET Core 3 (wersja zapoznawcza) 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) i [Announcing .NET Core 3 w wersji zapoznawczej 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) wpisów w blogu
 
 ## <a name="continuous-innovation"></a>Ciągłe wprowadzanie innowacji
 

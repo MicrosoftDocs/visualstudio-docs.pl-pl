@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934071"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223042"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki start: Personalizowanie programu Visual Studio IDE i edytorem
 
@@ -22,7 +22,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ## <a name="set-the-color-theme"></a>Ustaw motyw kolorów
 
-Motyw domyślny dla interfejsu użytkownika w Visual Studio 2017 jest nazywany **niebieski**. Zmieńmy go do **ciemny**.
+Motyw domyślny dla interfejsu użytkownika programu Visual Studio jest nazywany **niebieski**. Zmieńmy go do **ciemny**.
 
 1. Na pasku menu, czyli wiersz menu, takich jak **pliku** i **Edytuj**, wybierz **narzędzia** > **opcje**.
 

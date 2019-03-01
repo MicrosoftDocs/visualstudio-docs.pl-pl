@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954403"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223315"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -266,7 +266,7 @@ Wybierz język programowania preferowanych&mdash;w językach C#, Visual Basic, C
 
 **Nowość w wersji 15.5**: Visual Studio 2017 w wersji 15.5 zapewnia najlepszą obsługę Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update zapewnia również wiele usprawnień dla deweloperów platformy uniwersalnej systemu Windows. Poniżej przedstawiono niektóre z największych zmian: 
 
-* **Obsługa .NET Standard 2.0**<br/>Oprócz wdrażania usprawnione aplikacji systemu Windows 10 Fall Creators Update jest pierwsza wersja systemu Windows 10, aby zapewnić obsługę .NET Standard 2.0. W rezultacie [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) jest referencyjnej implementacji Biblioteka klasy podstawowej, który może implementować dowolną platformę .NET. Celem .NET Standard jest zapewnienie bardzo proste, jak to możliwe, dla deweloperów platformy .NET, które umożliwiają współużytkowanie kodu dla dowolnej platformy .NET, które postanowili pracować nad.
+* **Obsługa .NET Standard 2.0**<br/>Oprócz wdrażania usprawnione aplikacji systemu Windows 10 Fall Creators Update jest pierwsza wersja systemu Windows 10, aby zapewnić obsługę .NET Standard 2.0. W rezultacie [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) jest referencyjnej implementacji Biblioteka klasy podstawowej, który może implementować dowolną platformę .NET. Celem .NET Standard jest zapewnienie bardzo proste, jak to możliwe, dla deweloperów platformy .NET, które umożliwiają współużytkowanie kodu dla dowolnej platformy .NET, które postanowili pracować nad.
 * **Najlepsze cechy zarówno platformy uniwersalnej systemu Windows, jak i Win32**<br/>Firma Microsoft ulepszyła platformy Windows 10 za pomocą [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) Aby ulepszyć systemu Windows 10 dla wszystkich deweloperów platformy .NET, czy ich bieżący fokus jest ustawiony na platformy UWP, WPF, Windows Forms lub Xamarin. Z nowym typem projektu pakietu aplikacji w programie Visual Studio 2017 w wersji 15.5 można tworzyć pakiety aplikacji Windows dla Twoich projektów WPF i formularze Windows, tak samo jak w przypadku projektów platformy uniwersalnej systemu Windows. Po spakowaniu aplikacji korzyści wdrożenia aplikacji systemu Windows 10 i mieć możliwość dystrybucji za pośrednictwem Microsoft Store (w przypadku aplikacji konsumenta) lub Microsoft Store dla firm i instytucji edukacyjnych. Ponieważ spakowane aplikacje mają dostęp do pełnego powierzchni interfejsu API platformy uniwersalnej systemu Windows oraz interfejsów API systemu Win32 na pulpicie, można teraz modernizowanie aplikacji WPF i formularze Windows stopniowo dzięki funkcjom interfejsów API platformy uniwersalnej systemu Windows i Windows 10. Ponadto możesz dołączyć składniki systemu Win32 w aplikacjach platformy uniwersalnej systemu Windows, które dostarczone na pulpicie ze wszystkimi funkcjami systemu Win32.
 
 Aby uzyskać więcej informacji na temat platformy uniwersalnej systemu Windows, zobacz [opracowywanie aplikacji dla uniwersalnej platformy Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) strony.

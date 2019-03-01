@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796650"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222522"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -26,7 +26,17 @@ Wykonaj ten przewodnik Szybki Start, aby zapoznać się z wielu narzędzi i okna
 
 Nie trzeba znać przy użyciu języka C++, aby ukończyć ten przewodnik Szybki Start, ale należy zapoznać się z ogólnych programowanie i debugowanie pojęcia. Dokumentacja programu Visual Studio nie pokazują, jak programować w języku C++. Przewodnik dobre zasoby do nauki języka c++ jest [wprowadzenie](https://isocpp.org/get-started) strony w witrynie sieci Web ISO C++.
 
-W tym samouczku potrzebujesz kopii programu Visual Studio 2017 w wersji 15.3 lub nowszej z **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+W tym samouczku potrzebujesz kopii programu Visual Studio 2017 z **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+W tym samouczku potrzebujesz kopii programu Visual Studio 2019 r przy użyciu **programowanie aplikacji klasycznych w języku C++** zainstalowanym obciążeniem. Szybki przewodnik dotyczący instalacji, zobacz [Instalowanie obsługi języka C++ w programie Visual Studio](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>tworzenie aplikacji konsoli
 

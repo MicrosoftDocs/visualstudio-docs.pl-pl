@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927818"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223094"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomijanie ostrzeżeń analizy kodu
 
@@ -33,7 +33,7 @@ W języku C + +/ interfejsu wiersza polecenia, użyj makra urzędu certyfikacji\
 > Nie należy używać pominięć w źródła kompilacji do wydania, aby zapobiec przypadkowo wysyłania metadanych pomijanie w źródła. Ponadto ze względu na koszt przetwarzania pomijanie-source, może być znacznie wydajności aplikacji.
 
 > [!NOTE]
-> Jeśli migrujesz projektu programu Visual Studio 2017, nagle może być wystąpiły z dużą liczbą ostrzeżenia analizy kodu. Ostrzeżenia te pochodzą z [analizatorów Roslyn](roslyn-analyzers-overview.md). Jeśli nie jesteś gotowy rozwiązać problem z ostrzeżeniami, można pominąć wszystkie z nich, wybierając **analizy** > **Uruchom analizę kodu i Pomiń aktywne problemy**.
+> Jeśli migrujesz projektu programu Visual Studio 2017 lub Visual Studio 2019 r nagle może być wystąpiły z dużą liczbą ostrzeżenia analizy kodu. Ostrzeżenia te pochodzą z [analizatorów Roslyn](roslyn-analyzers-overview.md). Jeśli nie jesteś gotowy rozwiązać problem z ostrzeżeniami, można pominąć wszystkie z nich, wybierając **analizy** > **Uruchom analizę kodu i Pomiń aktywne problemy**.
 >
 > ![Uruchom analizę kodu i Pomiń problemy w programie Visual Studio](media/suppress-active-issues.png)
 

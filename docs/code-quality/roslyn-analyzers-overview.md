@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948280"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221947"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Omówienie analizatory platformie kompilatora .NET
 
-Visual Studio 2017 zawiera zestaw wbudowanych analizatory platformie kompilatora .NET, analizujących kodu C# lub Visual Basic. Analizatory Przyjrzyj się styl kodu, jakość kodu i łatwość utrzymania, projekt kodu i inne problemy. Można zainstalować dodatkowe analizatory jako rozszerzenie programu Visual Studio lub na poszczególnych projektów jako pakiet NuGet.
+Program Visual Studio zawiera zestaw wbudowanych analizatory platformie kompilatora .NET, które analizują swoje C# lub kod języka Visual Basic podczas typu. Analizatory Przyjrzyj się styl kodu, jakość kodu i łatwość utrzymania, projekt kodu i inne problemy. Można zainstalować dodatkowe analizatory jako rozszerzenie programu Visual Studio lub na poszczególnych projektów jako pakiet NuGet.
 
 Jeśli naruszeń zasady zostaną znalezione przez analizator, są zgłaszane zarówno w edytorze kodu jako *falista* kodem naruszającym, a następnie w **lista błędów**.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007361"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223731"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 
@@ -206,7 +206,7 @@ Aby uzyskać więcej informacji, zobacz [Włącz generowanie metryki kodu w star
 
 ### <a name="previous-versions"></a>Poprzednie wersje
 
-Poprzednie wersje programu Visual Studio, Visual Studio 2015, w tym uwzględnione narzędzie metryki kodu wiersza polecenia, które również wywołano *Metrics.exe*. Ta wersja narzędzia zostało binarne analizy, oznacza to, na podstawie zestawu analiz. Nowe narzędzie analizuje kod źródłowy, zamiast tego. Ponieważ nowe narzędzie wiersza polecenia kodu w metryki na podstawie kodu źródłowego, wyniki są różni się od co to jest generowany przez poprzednie wersje *Metrics.exe* i w ramach programu Visual Studio 2017 IDE.
+Program Visual Studio 2015 uwzględnione narzędzie metryki kodu wiersza polecenia, które również wywołano *Metrics.exe*. Ta wersja narzędzia zostało binarne analizy, oznacza to, na podstawie zestawu analiz. Nowy *Metrics.exe* narzędzie analizuje kod źródłowy w zamian. Ponieważ nowe *Metrics.exe* narzędzie jest metryk kodu oparty na kodzie, wiersz polecenia źródła wyniki różnią się do tych wygenerowanych przez program Visual Studio IDE i poprzednie wersje *Metrics.exe*.
 
 Nowe narzędzie wiersza polecenia kodu w metryki oblicza metryki, nawet w obecności błędy kodu źródłowego, tak długo, jak rozwiązania i projektu może być załadowany.
 
@@ -214,7 +214,7 @@ Nowe narzędzie wiersza polecenia kodu w metryki oblicza metryki, nawet w obecno
 
 `LinesOfCode` Metryka jest bardziej dokładnych i wiarygodnych w narzędziu metryki kodu wiersza polecenia. Jest niezależna od wszelkich różnic generowanie kodu i nie zmienia się podczas zmiany zestawu narzędzi lub środowiska uruchomieniowego. Nowe narzędzie liczby rzeczywiste wiersze kodu, w tym puste wiersze i komentarze.
 
-Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używać tych samych formuł jako poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza `IOperations` (logiczne źródła instrukcje) zamiast pośredni instrukcje języka (IL). Numery będą nieco inne niż w poprzednich wersjach *Metrics.exe* i z wyników metryk kodów Visual Studio 2017 IDE.
+Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używać tych samych formuł jako poprzednie wersje *Metrics.exe*, ale nowe narzędzie zlicza `IOperations` (logiczne źródła instrukcje) zamiast pośredni instrukcje języka (IL). Liczby, może się nieco różnić do tych wygenerowanych przez program Visual Studio IDE i poprzednie wersje *Metrics.exe*.
 
 ## <a name="see-also"></a>Zobacz także
 

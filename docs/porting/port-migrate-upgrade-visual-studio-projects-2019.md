@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ed1d6ef42ebe0e9b9fd39f8f6da0d18ed2f35832
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 628f9210568298d7779a494002fe3c599acb45ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007322"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223211"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Odwołanie do migracji i uaktualniania projektu dla programu Visual Studio 2019 r.
 
@@ -76,7 +76,7 @@ Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapozn
 | Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Możesz użyć programu Microsoft Test Manager lub programu Visual Studio 2010 z dodatkiem SP1 i nowszych, aby otwierać środowiska, utworzone w którejkolwiek z tych wersji. Jednak dla Visual Studio 2010 SP1 wersji programu Microsoft Test Manager musi odpowiadać wersji programu Team Foundation Server, zanim będzie można utworzyć środowiska. |
 | Visual Studio Tools for Apache Cordova | Obsługa Apache Cordova został usunięty w programie Visual Studio 2019 r. Ponieważ nie ma odpowiednika w Visual Studio 2019 r, nie ma automatycznej migracji ścieżki dla takich projektów.<br/><br/>Można użyć narzędzi Cordova dla rozszerzenia programu Visual Studio Code, (który zapewnia obsługę najnowszą wersję programu Cordova) lub kontynuować korzystanie z programu Visual Studio 2017. |
-| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w Visual Studio 2019 r, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Zobacz też [plany dotyczące projekty wdrażania w sieci web i witryny sieci Web](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w Visual Studio 2019 r, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Możesz otworzyć ten projekt w Visual Studio 2019 r, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012. |
 | Windows Presentation Foundation | Możesz otworzyć ten projekt w Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 SP1. |
 | Aplikacje Windows Phone | Projekty dla Windows Phone nie są obsługiwane w programie Visual Studio 2019 r. <br/><br/>Aby obsługa systemu Windows Phone 8.x aplikacji, należy użyć programu Visual Studio 2015. Aby obsługiwać projekty systemu Windows Phone 7.x, należy używać programu Visual Studio 2012. |

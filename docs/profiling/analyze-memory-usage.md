@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73fc70231e9756bf20f90f5873a0241c5f29bdd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 277401cb8e4e3b90d3543d6f5307452e83d07cc8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315566"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222626"
 ---
 # <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 Użyj zintegrowane z debugerem **użycie pamięci** narzędzie do diagnostyki do umożliwia znajdowanie przecieków pamięci i wykorzystania pamięci nieefektywne. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego. Można zbierać migawki aplikacji platformy .NET, ASP.NET, Tryb natywny lub mieszany (.NET i natywny).
@@ -30,7 +30,7 @@ Można użyć narzędzi profilowania bez debugera, system Windows 7 lub nowszy. 
 
 [Analizowanie użycia Procesora i pamięci podczas debugowania](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blogu Visual C++: Profilowanie pamięci w programie Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)
+[Blogu Visual C++: Profilowanie pamięci w programie Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="see-also"></a>Zobacz także
 

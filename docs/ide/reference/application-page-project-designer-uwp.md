@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4d2f1dc7ba69d0c9521c5ad4a1a075b3da71e3a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911340"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222717"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy uniwersalnej systemu Windows)
 
@@ -44,7 +44,7 @@ Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.P
 
 Należy określić wersję docelową i minimalną wersję systemu Windows 10 dla aplikacji, przy użyciu list rozwijanych w tej sekcji. Zalecane jest, docelowych najnowszej wersji systemu Windows 10 i jeśli tworzysz aplikację przedsiębiorstwa, zbyt obsługi starszej wersji minimalnej. Aby uzyskać więcej informacji na temat wersji systemu Windows 10 do wyboru, zobacz [wybierz wersję platformy uniwersalnej systemu Windows](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Aby uzyskać informacje o platformie przeznaczonych dla programu Visual Studio 2017, zobacz [platformy](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
+Aby uzyskać informacje na temat platformy przeznaczonych dla programu Visual Studio, zobacz [platformy](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Zobacz także
 

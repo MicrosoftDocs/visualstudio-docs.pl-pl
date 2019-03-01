@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58f084e188f5c19319e37d3bad4fdf110d10376a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934669"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222298"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Umożliwia utworzenie pierwszej usługi sieci web platformy ASP.NET Core w programie Visual StudioF#
 
@@ -28,7 +28,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. Typ projektu jest dostarczany z plików szablonów, wchodzących w skład usługi sieci web funkcjonalności, zanim jeszcze dodano niczego!
 
-1. Otwórz program Visual Studio 2017.
+1. Otwórz program Visual Studio.
 
 2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 

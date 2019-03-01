@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935722"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222064"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio
 
@@ -106,11 +106,21 @@ Możesz udostępniać własne skróty, eksportując je do pliku, a następnie pr
 
 4. Wybierz **klawiatury** pole wyboru, a następnie wybierz **dalej** przycisku.
 
-    ![Wyeksportować tylko skróty klawiaturowe niestandardowe](../ide/media/exportshortcuts.png)
+   ![Wyeksportować tylko skróty klawiaturowe niestandardowe](../ide/media/exportshortcuts.png)
 
-5. W **co chcesz nazwać plik swoich ustawień?** i **Store plik moich ustawień w tym katalogu** pola, albo pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz  **Zakończ** przycisku.
+5. W **co chcesz nazwać plik swoich ustawień** i **Store plik moich ustawień w tym katalogu** pola, albo pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz  **Zakończ** przycisku.
 
-    Domyślnie skróty są zapisywane w pliku w *%USERPROFILE%\Documents\Visual Studio 2017\Settings* folderu. Nazwa pliku odzwierciedla datę, kiedy zostały wyeksportowane ustawienia, a rozszerzenie nie *.vssettings*.
+::: moniker range="vs-2017"
+
+Domyślnie skróty są zapisywane w pliku w *%USERPROFILE%\Documents\Visual Studio 2017\Settings* folderu. Nazwa pliku odzwierciedla datę, kiedy zostały wyeksportowane ustawienia, a rozszerzenie nie *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Domyślnie skróty są zapisywane w pliku w *%USERPROFILE%\Documents\Visual Studio 2019\Settings* folderu. Nazwa pliku odzwierciedla datę, kiedy zostały wyeksportowane ustawienia, a rozszerzenie nie *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Aby zaimportować tylko skróty klawiaturowe
 

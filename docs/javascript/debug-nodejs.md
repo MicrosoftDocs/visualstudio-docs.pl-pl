@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843807"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223393"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
@@ -172,4 +172,4 @@ Debugowanie dynamicznie generowanych plików nie jest automatyczna. Nie można a
 
    Dla programu Internet Explorer przejdź do **Eksploratora rozwiązań > dokumenty skryptów > Windows Internet Explorer > YourPageName**.
 
-Aby uzyskać więcej informacji, zobacz [klienta debugowania projektów programu ASP.NET w przeglądarce Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+Aby uzyskać więcej informacji, zobacz [klienta debugowania projektów programu ASP.NET w przeglądarce Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).

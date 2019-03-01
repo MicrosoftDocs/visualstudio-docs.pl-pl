@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913018"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223237"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -41,7 +41,7 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Dodaj nowy diagram zależności do projektu modelowania
 
 > [!NOTE]
-> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio 2017.
+> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio.
 
 1.  Na **architektury** menu, wybierz **nowy Diagram zależności**.
 

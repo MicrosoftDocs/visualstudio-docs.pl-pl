@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912745"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223029"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -24,7 +24,7 @@ Możesz też rozważyć, czy jest lepiej używać [kompilacji lub release manage
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
-W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania kontrolera testów agent lub test programu Visual Studio 2017:
+W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania kontrolera testów agent lub test programu Visual Studio:
 
 | Element | Wymagania |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania ko
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj agentów testowych i kontrolera testów
 
-Możesz pobrać agents for Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Wyszukaj *Agents for Visual Studio 2017*, wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+Możesz pobrać agents for Visual Studio z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Wyszukaj *Agents for Visual Studio 2017*, wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
 
 Możesz pobrać agenci dla programu Visual Studio 2015 i Visual Studio 2013 ze [starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/) strony.
 

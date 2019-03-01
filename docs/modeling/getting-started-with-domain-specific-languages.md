@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d085ca32363888e2c59748aa5fdfd19eb190d5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316798"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223510"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
 W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie z języka specyficznego dla domeny (DSL), utworzone za pomocą zestawu Modeling SDK for Visual Studio.
 
 > [!NOTE]
-> W programie Visual Studio 2017 SDK przekształcania szablonu tekstu programu Visual Studio do modelowania SDK są automatycznie instalowane i po zainstalowaniu określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> SDK przekształcania szablonu tekstu i programu Visual Studio do modelowania SDK są instalowane automatycznie podczas instalowania określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy za pośrednictwem **laboratorium narzędzia DSL**, która znajduje się w tej lokacji: [Visualizaton i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 

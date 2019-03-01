@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796533"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223003"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utwórz projekt Windows Forms aplikacji
 
@@ -33,7 +33,7 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
 3. Na liście szablonów wybierz **aplikacji programu Windows Forms (.NET Framework)**. Nazwij nowy formularz **PictureViewer**, a następnie wybierz **OK** przycisku.
 
     >[!NOTE]
-    >Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Install Visual Studio 2017](../install/install-visual-studio.md) strony.
+    >Jeśli nie widzisz **aplikacji programu Windows Forms (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.<br/><br/>![Obciążenie programowanie aplikacji klasycznych dla platformy .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [Zainstaluj program Visual Studio](../install/install-visual-studio.md) strony.
 
      Program Visual Studio tworzy rozwiązanie dla Twojego programu. To rozwiązanie działa jako kontener dla wszystkich projektów i plików wymaganych przez program. Te zwroty zostaną wyjaśnione bardziej szczegółowo w dalszej części tego samouczka.
 
