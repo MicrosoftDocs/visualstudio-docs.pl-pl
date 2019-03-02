@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914779"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222886"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Instrukcje: Definiowanie i stosowanie delegowania działania w Projektancie przepływu pracy
 
@@ -26,7 +26,7 @@ ms.locfileid: "55914779"
 2. W **nowy projekt** okno dialogowe, wybierz opcję **przepływu pracy** kategorii po lewej stronie, a następnie wybierz pozycję **Aplikacja konsoli przepływu pracy** szablonu projektu. Nazwij projekt (w razie potrzeby), a następnie kliknij przycisk **Ok**.
 
    > [!NOTE]
-   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio 2017. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Kliknij prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy element**. Wybierz **przepływu pracy** kategorii, a następnie wybierz **działania** szablon elementu. Nazwa nowego działania **MyForEach.xaml** , a następnie wybierz **OK**.
 

@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953638"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223718"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing w programie Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing w programie Visual Studio
 
 Ponieważ tworzysz aplikację Live Unit Testing automatycznie wykonuje w tle, wszystkie objęte testy jednostek i przedstawia wyniki i pokrycie kodu na żywo w programie Visual Studio IDE w czasie rzeczywistym. Jak można zmodyfikować kod, Live Unit Testing zapewnia informacje zwrotne na wpływ zmiany na istniejące testy i czy nowego kodu po dodaniu zgodnie z co najmniej jeden z istniejących testów. To delikatnie przypomni, do pisania testów jednostkowych, podczas wprowadzania poprawek lub dodawanie nowych funkcji.
 
 > [!NOTE]
-> Live Unit Testing jest dostępna dla projektów C# i Visual Basic, przeznaczonych dla platformy .NET Core lub .NET Framework w przedsiębiorstwie wersji programu Visual Studio 2017.
+> Live Unit Testing jest dostępna dla C# i projektach języka Visual Basic, przeznaczonych dla platformy .NET Core lub .NET Framework w Enterprise Edition dla programu Visual Studio.
 
 Korzystając z Live Unit Testing dla testów, Live Unit Testing utrzymuje dane o stanie testów. Możliwość użycia danych umożliwia Live Unit Testing można oferują doskonałą wydajność podczas uruchamiania testów dynamicznie w odpowiedzi na zmiany w kodzie.
 
@@ -51,7 +51,7 @@ Live Unit Testing działa z trzech struktur testowania jednostek popularne, wymi
 </tr>
 </table>
 
-Jeśli masz starszą MSTest na podstawie projekty testowe, które odwołują się do `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15.4.
+Jeśli masz starszą MSTest na podstawie projekty testowe, które odwołują się do `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15.4 lub nowszej.
 
 W niektórych przypadkach może być konieczne jawne Przywracanie pakietów NuGet, odwołują się projekty w rozwiązaniu aby Live Unit Testing do pracy. Możesz to zrobić, wykonując jawną kompilację rozwiązania (wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio) lub przywracając pakiety (rozwiązanie Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Przywróć pakiety NuGet**) przed włączeniem życia Unit Testing.
 
@@ -200,4 +200,4 @@ Aby wyłączyć poszczególne metody z Live Unit Testing umożliwia także nast�
 - [Narzędzia do testowania kodu](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing blog](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)
-- [Wideo Channel 9: Live Unit Testing w programie Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Wideo Channel 9: Live Unit Testing w programie Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

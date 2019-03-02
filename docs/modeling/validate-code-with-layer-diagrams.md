@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317370"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223198"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -49,7 +49,7 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 - Rozwiązanie, które ma projekt modelowania z diagramem zależności. Ten diagram zależności muszą zostać połączone z artefaktami w projektach C# lub Visual Basic, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio 2017.
+> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio.
 
 Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -235,6 +235,6 @@ W poniższej sekcji opisano składnię, która jest używana w tych błędach, w
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Walidacja aktywnych zależności w programie Visual Studio 2017](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Walidacja aktywnych zależności w programie Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 - [Wideo: Sprawdzanie poprawności zależności architektury w czasie rzeczywistym](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

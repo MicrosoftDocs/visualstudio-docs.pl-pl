@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927610"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223536"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 
@@ -82,7 +82,7 @@ Przejdź do zawiera następujące polecenia, które są dostępne w **Edytuj** m
 
 - **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Przenieś do określonego pliku w rozwiązaniu.
 
-- **Przejdź do niedawno używany plik** (**Ctrl**+**1**, **Ctrl**+**R**): Przenieś plik określony, przechodź do ostatnio wyświetlanych w rozwiązaniu (nowe w programie Visual Studio 2017 wersja 15.8).
+- **Przejdź do niedawno używany plik** (**Ctrl**+**1**, **Ctrl**+**R**): Przenieś do pliku określonego, przechodź do ostatnio wyświetlanych w rozwiązaniu.
 
 - **Przejdź do typu** (**Ctrl**+**1**, **Ctrl**+**T**): Przejście do określonego typu w rozwiązaniu.
 
@@ -105,7 +105,7 @@ Przejdź do definicji powoduje przejście do definicji wybranego elementu. Aby u
 Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **F12**
-**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do definicji** lub naciśnij **Ctrl** i kliknij nazwę typu (nowego programu Visual Studio 2017 wersji 15.4)
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do definicji** lub naciśnij **Ctrl** i kliknij nazwę typu
 
 ## <a name="peek-definition"></a>Zobacz definicję
 

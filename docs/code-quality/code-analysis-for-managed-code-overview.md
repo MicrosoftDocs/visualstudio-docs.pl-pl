@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909144"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222600"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Omówienie statycznej analizy kodu dla kodu zarządzanego w programie Visual Studio
 
-Program Visual Studio 2017 można wykonać analizy kodu dla kodu zarządzanego na dwa sposoby: za pomocą *FxCop* analizy statycznej zestawów zarządzanych, a za pomocą nowoczesnych więcej *analizatorów Roslyn*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów kodu, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Program Visual Studio można wykonać analizy kodu dla kodu zarządzanego na dwa sposoby: za pomocą *FxCop* analizy statycznej zestawów zarządzanych, a za pomocą nowoczesnych więcej *analizatorów Roslyn*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów kodu, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia programowania i projektowania reguły określone w wytycznych projektowych programu Microsoft .NET Framework.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Aby uzyskać więcej informacji, zobacz [pomijanie ostrzeżeń](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Jeśli migrujesz projektu programu Visual Studio 2017, nagle może być wystąpiły z dużą liczbą ostrzeżenia analizy kodu. Jeśli jesteś gotowy naprawić ostrzeżenia, a następnie od razu się w produktywności, możesz to zrobić *linii bazowej* stanu analiza projektu. Z **analizy** menu, wybierz opcję **Uruchom analizę kodu i Pomiń aktywne problemy**.
+> Jeśli migrujesz projektu programu Visual Studio 2017 lub Visual Studio 2019 r nagle może być wystąpiły z dużą liczbą ostrzeżenia analizy kodu. Jeśli jesteś gotowy naprawić ostrzeżenia, a następnie od razu się w produktywności, możesz to zrobić *linii bazowej* stanu analiza projektu. Z **analizy** menu, wybierz opcję **Uruchom analizę kodu i Pomiń aktywne problemy**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchamianie analizy kodu jako części zasad ewidencjonowania
 

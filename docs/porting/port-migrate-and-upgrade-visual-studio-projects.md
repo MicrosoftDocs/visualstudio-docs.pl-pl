@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 6bed8a6bc910b1a6878ccc089575abc624e6778f
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 1873cc68c33fca8912415a00e7c7dda9ded49695
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007335"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223666"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -69,7 +69,7 @@ Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapozn
 | Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Możesz użyć programu Microsoft Test Manager lub programu Visual Studio 2010 z dodatkiem SP1 i nowszych, aby otwierać środowiska, utworzone w którejkolwiek z tych wersji. Jednak dla Visual Studio 2010 SP1 wersji programu Microsoft Test Manager musi odpowiadać wersji programu Team Foundation Server, zanim będzie można utworzyć środowiska. |
 | Visual Studio Tools for Apache Cordova | Projekty mogą być otwierane w programie Visual Studio 2017, ale nie są wstecznie zgodne. Po otwarciu projektu programu Visual Studio 2015, zostanie wyświetlony monit pozostawienia do projektu. Ta modyfikacja uaktualnia projekt do korzystania z procesami zamiast `taco.json` plik, aby zarządzać wersjami biblioteki Cordova, jego platformy, jej wtyczek i jego zależności node/npm. Zobacz [Przewodnik po migracji](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) Aby uzyskać więcej informacji. |
-| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2017, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Zobacz też [plany dotyczące projekty wdrażania w sieci web i witryny sieci Web](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Wdrażanie w Internecie (wdproj) | Obsługa dla wdrażania w Internecie projektów została usunięta w programie Visual Studio 2012 z dodatkiem obsługi profilu publikowania. Ponieważ nie ma odpowiednika w programie Visual Studio 2017, nie ma automatycznej migracji ścieżki dla takich projektów. Zamiast tego otwórz plik wdproj w edytorze tekstów i kopiowanie i wklejanie jakiekolwiek dostosowania do pubxml (profil publikowania) pliku, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Możesz otworzyć ten projekt w Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 i Visual Studio 2012 |
 | Windows Presentation Foundation | Możesz otworzyć ten projekt w programie Visual Studio 2013, Visual Studio 2012 i Visual Studio 2010 SP1. |
 | Aplikacje Windows Store/Phone | Projekty Windows Store 8.1 i 8.0 oraz Windows Phone 8.1 i 8.0 nie są obsługiwane w programie Visual Studio 2017. Aby obsługiwać te aplikacje, należy nadal używać programu Visual Studio 2015. Aby obsługiwać projekty systemu Windows Phone 7.x, należy używać programu Visual Studio 2012. |

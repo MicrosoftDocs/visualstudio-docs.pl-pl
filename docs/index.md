@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 titleSuffix: ''
-description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
+description: 'Dowiedz się, jak używać programu Visual Studio do opracowywania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.'
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316785"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316785"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316785"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Co&#39;s Nowość w programie Visual Studio 2017</h3>
+                                    <h3>Co&#39;s Nowość w programie Visual Studio</h3>
                                 </div>
                             </div>
                         </div>

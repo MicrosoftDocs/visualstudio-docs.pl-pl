@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950230"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223705"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności z mapami kodu
 
@@ -47,7 +47,7 @@ Można mapować zależności dla kodu w tych językach:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Mapa kodu instalacja i weryfikacja zależności na żywo
 
-Aby utworzyć mapę kodu w programie Visual Studio 2017, należy najpierw zainstalować **mapy kodu** i **walidację aktywnych zależności** składników:
+Aby utworzyć mapę kodu w programie Visual Studio, należy najpierw zainstalować **mapy kodu** i **walidację aktywnych zależności** składników:
 
 1. Otwórz **Instalatora programu Visual Studio**. Możesz go otworzyć w menu Windows Start lub w programie Visual Studio, wybierając **narzędzia** > **Pobierz narzędzia i funkcje**.
 

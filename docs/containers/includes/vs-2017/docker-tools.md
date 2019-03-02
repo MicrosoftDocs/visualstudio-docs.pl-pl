@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d4f29056d81ab926318b987c7197a37989af8b49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c33c53e16e8845031676c6b729767c781b4f8c80
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957645"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "57223828"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
 
@@ -65,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Poprzedni *pliku Dockerfile* opiera się na [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrazu i zawiera instrukcje dotyczące modyfikowania obraz podstawowy, tworząc projekt i dodanie go do kontenera. 
+Poprzedni *pliku Dockerfile* opiera się na [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrazu i zawiera instrukcje dotyczące modyfikowania obraz podstawowy, tworząc projekt i dodanie go do kontenera.
 
 Gdy okno dialogowe nowego projektu w **Konfigurowanie protokołu HTTPS** pole wyboru jest zaznaczone, *pliku Dockerfile* udostępnia dwa porty. Jeden port jest używany do ruchu HTTP; inne port jest używany do obsługi protokołu HTTPS. Jeśli nie jest zaznaczone pole wyboru, jednego portu (80) jest uwidaczniany dla ruchu HTTP.
 
@@ -99,7 +99,7 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 
 Po zakończeniu cyklu programowanie i debugowanie aplikacji, można utworzyć obraz aplikacji produkcyjnych.
 
-1. Zmień konfigurację menu rozwijane **wersji** i kompilowania aplikacji. 
+1. Zmień konfigurację menu rozwijane **wersji** i kompilowania aplikacji.
 1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **Publikuj**.
 1. W oknie dialogowym docelowej publikowania wybierz **Container Registry** kartę.
 1. Wybierz **Tworzenie nowej usługi Azure Container Registry** i kliknij przycisk **Publikuj**.

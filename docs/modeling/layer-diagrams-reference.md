@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957916"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223016"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -34,7 +34,7 @@ W programie Visual Studio, można użyć *diagram zależności* aby zwizualizowa
 Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio 2017.
+> Diagramy zależności nie są obsługiwane dla projektów .NET Core w programie Visual Studio.
 
 Można określić zamierzone lub istniejące zależności między warstwami. Te zależności, które są reprezentowane jako strzałki, wskazują, które warstwy mogą używać lub obecnie używają funkcje reprezentowane przez inne warstwy. Organizacja systemu na warstwy, które opisują różne role i funkcje, diagram zależności może ułatwić ułatwiają zrozumienie, ponowne użycie i utrzymywać kod.
 

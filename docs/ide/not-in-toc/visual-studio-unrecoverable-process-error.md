@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ff34e07ddef0a85a6fa45de94e0c3b872dc607
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11605b9477397bb217bc2799feb622cb9d5bce37
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913408"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223640"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Błąd nieodwracalny procesu programu Visual Studio
 
-Program Visual Studio 2017 używa kilka procesów procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, analizatory i więcej kodu. Te procesy są uruchamiane procesem zapewnienie korzyści związanych z wydajnością programu Visual Studio, takich jak włączenie programu Visual Studio do szybszego reagowania na podczas long, uruchamiania zadań intensywnie korzystających z zasobów. Ponadto ponieważ program Visual Studio jest proces 32-bitowy, uruchomione procesy-procesem zapewnia pracy o znacznym wykorzystaniu pamięci większy obszar pamięci, w którym będą wykonywane.
+Visual Studio używa wielu procesów procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, analizatory i więcej kodu. Te procesy są uruchamiane procesem zapewnienie korzyści związanych z wydajnością programu Visual Studio, takich jak włączenie programu Visual Studio do szybszego reagowania na podczas long, uruchamiania zadań intensywnie korzystających z zasobów. Ponadto ponieważ program Visual Studio jest proces 32-bitowy, uruchomione procesy-procesem zapewnia pracy o znacznym wykorzystaniu pamięci większy obszar pamięci, w którym będą wykonywane.
 
 Jeśli *ServiceHub.RoslynCodeAnalysisService.exe* lub *ServiceHub.RoslynCodeAnalysisService32.exe* zakończeniu procesu jakiegoś powodu pasek informacji wyskakujące pojawia się następujący komunikat o błędzie:
 

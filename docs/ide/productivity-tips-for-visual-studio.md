@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702723"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223146"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
@@ -24,7 +24,7 @@ Aby uzyskać informacje o typowych skrótów klawiaturowych, zobacz [klawiatury 
 
 Pisz kod szybciej, korzystając z następujących funkcji.
 
-- **Użyj poleceń wygody**. Program Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład w **programu Visual Studio 2017 w wersji 15.6** i później, można wybrać polecenie, aby łatwo zduplikowany wiersz kodu, bez konieczności kopiowania go, zmienić położenie kursora a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij **Ctrl**+**E**,**V**. Można również szybkiego poszerzenia lub kontrakt zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **Rozwiń zaznaczenie** lub **Edytuj** > **zaawansowane** > **Zwiń zaznaczenie**, lub naciskając **Shift** + **Alt** + **=** lub **Shift**+**Alt** + **-** (dostępne w **programu Visual Studio 2017 w wersji 15.5** lub nowszy).
+- **Użyj poleceń wygody**. Program Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład można wybrać polecenie, aby łatwo zduplikowany wiersz kodu, bez konieczności kopiowania go, zmienić położenie kursora a następnie wklej go. Wybierz **Edytuj** > **zduplikowane** lub naciśnij **Ctrl**+**E**,**V**. Można również szybkiego poszerzenia lub kontrakt zaznaczonego tekstu, wybierając **Edytuj** > **zaawansowane** > **Rozwiń zaznaczenie** lub **Edytuj** > **zaawansowane** > **Zwiń zaznaczenie**, lub naciskając **Shift** + **Alt** + **=** lub **Shift**+**Alt** +  **-**.
 
 - **Korzystać z technologii IntelliSense**. Podczas wprowadzania kodu w edytorze, pojawi się informacje IntelliSense, takie jak lista członków, informacje o parametrach, szybkie informacje, pomoc podpisu i Dokończ wyraz. Funkcje te obsługują niepełne dopasowywanie tekstu. na przykład listy wyników dla List Members zawiera nie tylko wpisy, które rozpoczynają się od znaków czy zostały wprowadzone, ale także wpisy, które zawierają kombinacje znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [IntelliSense użyj](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Debugowanie może zajmować dużo czasu, ale poniższe porady mogą pomóc przys
 
 Można szybko wyświetlić wiersz polecenia dla deweloperów lub innego narzędzia programu Visual Studio, jeśli przypniesz go do Start menu lub paska zadań.
 
-1. W Eksploratorze Windows przejdź do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersz polecenia dla deweloperów**, a następnie wybierz **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
+1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersz polecenia dla deweloperów**, a następnie wybierz **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Zarządzanie plikami, paski narzędzi i systemu windows
 

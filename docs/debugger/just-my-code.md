@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722489"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223679"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod
 
@@ -97,7 +97,7 @@ Kod zachowania przechodzenia krok po kroku, tylko mój kod w języku C++ traktuj
 - Określona w funkcji  *\*.natjmc* pliki *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
 
 > [!NOTE]
-> Obsługę kodu przechodzenia krok po kroku w tylko mój kod, kodu w języku C++ muszą być skompilowane z za pomocą kompilatorów MSVC w programie Visual Studio 15.8 w wersji zapoznawczej 3 lub nowszym oraz przełącznika kompilatora /JMC musi być włączona (jest włączony domyślnie). Aby uzyskać więcej informacji, zobacz [Dostosowywanie C++ stos wywołań i kodem zachowanie przechodzenia krok po kroku](#BKMK_CPP_Customize_call_stack_behavior)) to [wpis w blogu](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Dla kodu skompilowane przy użyciu starszego kompilatora *.natstepfilter* pliki są jedynym sposobem, aby dostosować program code przechodzenie krok po kroku, który jest niezależny od tylko mój kod. Zobacz [zachowania przechodzenia krok po kroku Dostosowywanie C++](#BKMK_CPP_Customize_stepping_behavior).
+> Obsługę kodu przechodzenia krok po kroku w tylko mój kod, kodu w języku C++ muszą być skompilowane z za pomocą kompilatorów MSVC w programie Visual Studio 15.8 w wersji zapoznawczej 3 lub nowszym oraz przełącznika kompilatora /JMC musi być włączona (jest włączony domyślnie). Aby uzyskać więcej informacji, zobacz [Dostosowywanie C++ stos wywołań i kodem zachowanie przechodzenia krok po kroku](#BKMK_CPP_Customize_call_stack_behavior)) to [wpis w blogu](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Dla kodu skompilowane przy użyciu starszego kompilatora *.natstepfilter* pliki są jedynym sposobem, aby dostosować program code przechodzenie krok po kroku, który jest niezależny od tylko mój kod. Zobacz [zachowania przechodzenia krok po kroku Dostosowywanie C++](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Podczas debugowania języka C++:
 

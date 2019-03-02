@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919745"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222756"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzeń programu Visual Studio
 
@@ -61,9 +61,9 @@ Jeśli chcesz wyłączyć automatyczne aktualizacje, można wyłączyć funkcję
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Powiadomienia o awariach i sek rozszerzenia
 
-Nowość w **programu Visual Studio 2017 w wersji 15.3**, Visual Studio powiadamia użytkownika, jeśli podejrzenia, że rozszerzenie brał udział w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątków. Przy następnym uruchomieniu programu Visual Studio sprawdza, czy stosu, rozpoczynając od typu liść i działa na bazie. Jeśli program Visual Studio okaże się, że ramki należy do modułu, który jest częścią rozszerzenia zainstalowane i włączone, wyświetlane jest powiadomienie.
+Program Visual Studio powiadamia użytkownika, jeśli podejrzenia, że rozszerzenie brał udział w awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątków. Przy następnym uruchomieniu programu Visual Studio sprawdza, czy stosu, rozpoczynając od typu liść i działa na bazie. Jeśli program Visual Studio okaże się, że ramki należy do modułu, który jest częścią rozszerzenia zainstalowane i włączone, wyświetlane jest powiadomienie.
 
-Nowość w **programu Visual Studio 2017 w wersji 15.6**, Visual Studio również powiadamia użytkownika, jeśli podejrzewa, powoduje rozszerzenie interfejsu użytkownika przestanie odpowiadać.
+Program Visual Studio również powiadamia użytkownika, jeśli podejrzenia, że rozszerzenie jest przyczyną interfejsu użytkownika przestanie odpowiadać.
 
 Gdy te powiadomienia są wyświetlane, można zignorować powiadomienie lub wykonać jedną z następujących czynności:
 

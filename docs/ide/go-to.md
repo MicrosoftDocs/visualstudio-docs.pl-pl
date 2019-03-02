@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923541"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222493"
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdowanie kodu za pomocą poleceń Przejdź do
 
-Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, aby ułatwić szybkie znajdowanie określonych elementów. Możesz przejść do określonego wiersza, typów, symboli, plików i elementów członkowskich z prostego, jednolitego interfejsu. Ta funkcja istnieje w programie Visual Studio 2017 i nowszych wersjach.
+Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, aby ułatwić szybkie znajdowanie określonych elementów. Możesz przejść do określonego wiersza, typów, symboli, plików i elementów członkowskich z prostego, jednolitego interfejsu.
 
 ## <a name="how-to-use-it"></a>Jak z niej korzystać
 

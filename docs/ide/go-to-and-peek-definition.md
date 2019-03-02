@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84eda800cec594eaad390dc973152e094620b319
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908799"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222925"
 ---
 # <a name="view-type-and-member-definitions"></a>Wyświetlanie definicji typów i elementów członkowskich
 
@@ -30,17 +30,19 @@ Często deweloperzy muszą wyświetlać definicje kodu źródłowego dla typów 
 
 ### <a name="ctrl-click-go-to-definition"></a>Naciśnij klawisz CTRL i kliknij Przejdź do definicji
 
-W programie Visual Studio 2017 wersji 15.4 jest łatwiejszy sposób użytkownikom myszy szybkiego dostępu **przejdź do definicji**. Symbole stają się po naciśnięciu klawisza **Ctrl** i umieść kursor nad typu lub elementu członkowskiego. Szybkie przechodzenie do definicji symbolu, naciśnij klawisz **Ctrl** klucza, a następnie kliknij go. Jest tak proste!
+**CTRL**+**kliknij** jest skrótem dla użytkowników myszy, aby szybko uzyskać dostęp do **przejdź do definicji**. Symbole stają się po naciśnięciu klawisza **Ctrl** i umieść kursor nad typu lub elementu członkowskiego. Szybkie przechodzenie do definicji symbolu, naciśnij klawisz **Ctrl** klucza, a następnie kliknij go. Jest tak proste!
 
 ![Przejdź do definicji animacji kliknięcie myszą](../ide/media/click_gotodef.gif)
 
-Możesz zmienić klucz modyfikujący kliknięcie myszą **przejdź do definicji** , przechodząc do **narzędzia** > **opcje** > **Edytor tekstu**   >  **Ogólne**i wybierając opcję **Alt** lub **Ctrl + Alt** z **klawisz modyfikujący użyj**listy rozwijanej. Można również wyłączyć kliknięcie myszą **przejdź do definicji** , usuwając zaznaczenie pola **Włącz kliknięcie myszą, aby wykonać przejdź do definicji** pola wyboru.
+Możesz zmienić klucz modyfikujący kliknięcie myszą **przejdź do definicji** , przechodząc do **narzędzia** > **opcje** > **Edytor tekstu**   >  **Ogólne**i wybierając opcję **Alt** lub **Ctrl**+**Alt** z **klawisz modyfikujący użyj** listy rozwijanej. Można również wyłączyć kliknięcie myszą **przejdź do definicji** , usuwając zaznaczenie pola **Włącz kliknięcie myszą, aby wykonać przejdź do definicji** pola wyboru.
 
 ![Włączanie kliknięcie myszą, przejdź do definicji](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Zobacz definicję
 
-**Peek Definition** funkcji umożliwia podgląd definicji typu bez opuszczania Twojej bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem myszy, możesz wybrać **Peek Definition** z menu podręcznego. W programie Visual Studio 2017 w wersji 15.4 i nowszych istnieje nowy sposób na wyświetlanie podglądu definicji za pomocą myszy. Przejdź najpierw do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku podglądu** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
+**Peek Definition** funkcji umożliwia podgląd definicji typu bez opuszczania Twojej bieżącej lokalizacji w edytorze. Jeśli jesteś użytkownikiem klawiatury, umieść kursor tekst zawarty wewnątrz nazwy typu lub elementu członkowskiego i naciśnij klawisz **Alt + F12**. Jeśli jesteś użytkownikiem myszy, możesz wybrać **Peek Definition** z menu podręcznego.
+
+Aby włączyć **Ctrl**+**kliknij** funkcję, przejdź do **narzędzia** > **opcje**  >   **Edytor tekstu** > **ogólne**. Wybierz opcję **Otwórz definicję w widoku podglądu** i kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
 
 ![Ustawianie opcji kliknięcie myszą definicji wglądu](../ide/media/editor_options_peek_view.png)
 
@@ -48,7 +50,7 @@ Naciśnij klawisz **Ctrl** (lub dowolnego klawisz modyfikujący został wybrany 
 
 ![Peek definition animacji](../ide/media/peek_definition.gif)
 
-Jeśli wgląd w innej definicji w oknie podręcznym zostanie uruchomiona ścieżki linków do stron nadrzędnych, której można nawigować przy użyciu kółka i strzałki, które pojawiają się powyżej okno podręczne.
+Jeśli wgląd w innej definicji w oknie podręcznym można uruchomić ścieżkę nawigacji, za pomocą której można nawigować przy użyciu kółka i strzałki, które pojawiają się powyżej menu podręcznego.
 
 Aby uzyskać więcej informacji, zobacz [jak: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
@@ -67,7 +69,7 @@ Na przykład jeśli uruchomisz **przejdź do definicji** polecenie, aby uzyskać
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Wyświetlanie definicji dekompilowanych źródeł zamiast metadanych (C#)
 
-Nowość w programie Visual Studio 2017 w wersji 15.6, można ustawić opcje, aby wyświetlić kod źródłowy dekompilowanych, podczas wyświetlania definicji C# typu lub elementu członkowskiego, w której kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcję **narzędzia** > **opcje** z paska menu. Następnie rozwiń **edytora tekstów** > **C#** > **zaawansowane**i wybierz **Włącz nawigację do dekompilowanych źródeł** .
+Można ustawić opcje, aby wyświetlić kod źródłowy dekompilowanych, podczas wyświetlania definicji C# typu lub elementu członkowskiego, w której kod źródłowy jest niedostępny. Aby włączyć tę funkcję, wybierz opcję **narzędzia** > **opcje** z paska menu. Następnie rozwiń **edytora tekstów** > **C#** > **zaawansowane**i wybierz **Włącz nawigację do dekompilowanych źródeł** .
 
 ![Wyświetlanie definicji dekompilowanych](media/go-to-definition-decompiled-sources.png)
 

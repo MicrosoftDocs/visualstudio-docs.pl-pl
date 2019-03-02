@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924451"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223601"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Instrukcje: Wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)
 
@@ -24,7 +24,7 @@ Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W j
 
 ### <a name="to-open-a-peek-definition-window"></a>Aby otworzyć okno Zobacz definicję
 
-1. Można zobacz definicję, wybierając **Peek Definition** menu kliknij prawym przyciskiem myszy dla typu lub elementu członkowskiego, który chcesz zbadać. W Visual Studio 2017 w wersji 15.4 lub nowszy, jeśli opcja jest włączona, możesz również wgląd definicji za pomocą myszy, naciskając klawisz **Ctrl** (lub innego modyfikatora) i klikając nazwę elementu członkowskiego. Lub z klawiatury, naciśnij klawisz **Alt**+**F12**.
+1. Można zobacz definicję, wybierając **Peek Definition** menu kliknij prawym przyciskiem myszy dla typu lub elementu członkowskiego, który chcesz zbadać. Jeśli opcja jest włączona, można również wgląd definicji za pomocą myszy, naciskając klawisz **Ctrl** (lub innego modyfikatora) i klikając nazwę elementu członkowskiego. Lub z klawiatury, naciśnij klawisz **Alt**+**F12**.
 
      Ta ilustracja przedstawia **Peek Definition** okna dla metody, która nosi nazwę `Print()`:
 

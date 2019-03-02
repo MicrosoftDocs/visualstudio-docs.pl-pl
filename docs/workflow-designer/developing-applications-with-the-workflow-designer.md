@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909248"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223289"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Programowanie aplikacji za pomocą Projektanta przepływu pracy
 
@@ -29,7 +29,7 @@ Projektant przepływu pracy jest projektanta wizualnego i debugera dla konstrukc
 
 ## <a name="install-windows-workflow-foundation"></a>Instalowanie programu Windows Workflow Foundation
 
-Aby użyć szablonów projektu przepływu pracy w programie Visual Studio 2017, należy najpierw zainstalować **Windows Workflow Foundation** składnika.
+Aby użyć szablonów projektu przepływu pracy w programie Visual Studio, należy najpierw zainstalować **Windows Workflow Foundation** składnika.
 
 1. Otwórz Instalator programu Visual Studio. Szybki sposób, aby go otworzyć polega na wybraniu **narzędzia** > **Pobierz narzędzia i funkcje** w programie Visual Studio.
 
@@ -37,7 +37,7 @@ Aby użyć szablonów projektu przepływu pracy w programie Visual Studio 2017, 
 
 1. Przewiń w dół do **działań programistycznych** kategorii, a następnie wybierz **Windows Workflow Foundation** składnika.
 
-   ![Składnik Windows Workflow Foundation dla programu Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Składnik Windows Workflow Foundation dla programu Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Wybierz **zmodyfikować**.
 

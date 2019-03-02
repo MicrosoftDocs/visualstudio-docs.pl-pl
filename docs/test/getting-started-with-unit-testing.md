@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927987"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223523"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -74,7 +74,7 @@ Można również utworzyć testy jednostkowe metoda wycinków z **Utwórz testy 
 Jeśli używasz MSTest, xUnit i NUnit struktura testowania w programie Visual Studio 2017 lub nowszego, zostanie wyświetlony na żywo wyniki testów jednostkowych.
 
 > [!NOTE]
-> Testowanie jednostek na żywo jest tylko dostępne w Visual Studio 2017 Enterprise Edition.
+> Testowanie jednostek na żywo jest dostępna w tylko w wersji programu Visual Studio Enterprise.
 
 1. Włącz testowanie z jednostek na żywo **testu** menu.
 

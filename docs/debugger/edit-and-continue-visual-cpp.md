@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695001"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222366"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsługiwane zmiany kodu (C++, Distributed File System)](../debugger/supported-code-changes-cpp.md) informacji o ograniczeniach operacji Edytuj i Kontynuuj.
 
-Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 Update 3, zobacz [C++ Edytuj i Kontynuuj w Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 Update 3, zobacz [C++ Edytuj i Kontynuuj w Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](/cpp/build/reference/zo-enhance-optimized-debugging) opcję kompilatora, która została wprowadzona w Visual Studio 2013 Update 3 dodaje dodatkowe informacje w plikach .pdb (symbol) dla danych binarnych skompilowany bez [/Od (Wyłącz (Debuguj)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opcji.
 
@@ -37,7 +37,7 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
  Można wyłączyć automatycznego wywołania opcji Edytuj i Kontynuuj, jeśli jest wprowadzanie zmian do kodu, który ma zostać zastosowane podczas bieżącej sesji debugowania. Możesz też ponownie włączyć automatyczne Edytuj i Kontynuuj.
 
 > [!IMPORTANT]
-> Ustawienia kompilacji wymagane i inne informacje dotyczące zgodności z funkcji, zobacz [C++ Edytuj i Kontynuuj w Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Ustawienia kompilacji wymagane i inne informacje dotyczące zgodności z funkcji, zobacz [C++ Edytuj i Kontynuuj w Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**Shift + F5**).
 

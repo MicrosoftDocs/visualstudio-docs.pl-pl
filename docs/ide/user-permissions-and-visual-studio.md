@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946070"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222862"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -50,11 +50,25 @@ Jeśli musisz uruchomić program Visual Studio jako administrator, wykonaj nast�
 > [!NOTE]
 > Te instrukcje dotyczą systemu Windows 10. Są one podobne do innych wersji systemu Windows.
 
+::: moniker range="vs-2017"
+
 1. Otwórz **Start** menu, a następnie przewiń do programu Visual Studio 2017.
 
 1. Z menu kliknij prawym przyciskiem myszy lub kontekst **programu Visual Studio 2017**, wybierz opcję **więcej** > **Uruchom jako administrator**.
 
    Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz **Start** menu, a następnie przewiń do programu Visual Studio 2019 r.
+
+1. Z menu kliknij prawym przyciskiem myszy lub kontekst **Visual Studio 2019**, wybierz opcję **więcej** > **Uruchom jako administrator**.
+
+   Po uruchomieniu programu Visual Studio **(Administrator)** pojawia się po nazwie produktu na pasku tytułu.
+
+::: moniker-end
 
 Możesz również zmodyfikować skrót aplikacji, aby zawsze uruchamiane z uprawnieniami administracyjnymi.
 

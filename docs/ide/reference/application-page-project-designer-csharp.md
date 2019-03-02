@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f287de1e756d20575e1c72775719b2c366534b6d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927558"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222535"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
@@ -71,7 +71,7 @@ Aby dowiedzieć się, jak programowo dostęp do tej właściwości, zobacz <xref
 
 **Automatyczne generowanie przekierowania powiązań**
 
-Przekierowania powiązań są dodawane do projektu, jeśli Twoja aplikacja lub jej składniki odwołują się do więcej niż jednej wersji tego samego zestawu. Jeśli chcesz ręcznie definiować przekierowania powiązań w pliku projektu, usuń zaznaczenie opcji **automatycznego generowania przekierowania powiązań**. To pole wyboru została wprowadzona w programie Visual Studio 2017 wersji 15.7.
+Przekierowania powiązań są dodawane do projektu, jeśli Twoja aplikacja lub jej składniki odwołują się do więcej niż jednej wersji tego samego zestawu. Jeśli chcesz ręcznie definiować przekierowania powiązań w pliku projektu, usuń zaznaczenie opcji **automatycznego generowania przekierowania powiązań**.
 
 Aby uzyskać więcej informacji o przekierowywaniu, zobacz [przekierowanie wersji zestawu](/dotnet/framework/configure-apps/redirect-assembly-versions).
 
@@ -87,7 +87,7 @@ Zobacz [/main (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler
 
 Ten przycisk otwiera [informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md) okno dialogowe.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 **Zasobów** opcje ułatwiające konfigurowanie ustawień zasobów dla aplikacji.
 

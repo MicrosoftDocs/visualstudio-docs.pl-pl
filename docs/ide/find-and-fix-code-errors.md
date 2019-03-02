@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928312"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223614"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu, pracy w programie Visual Studio
 
@@ -74,7 +74,7 @@ Analizatorów kodu szukać typowych problemów z kodu, które mogą prowadzić d
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C#i analiza kodu języka Visual Basic
 
-Visual Studio 2017 zawiera zestaw wbudowanych [analizatory platformie kompilatora .NET](../code-quality/roslyn-analyzers-overview.md) , sprawdź C# i kodu języka Visual Basic podczas typu. Można zainstalować dodatkowe analizatorów, jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszeń zasady, są zgłaszane zarówno w edytorze kodu jako falista pod kodem powodujący problemy, a w **lista błędów**.
+Program Visual Studio zawiera zestaw wbudowanych [analizatory platformie kompilatora .NET](../code-quality/roslyn-analyzers-overview.md) , sprawdź C# i kodu języka Visual Basic podczas typu. Można zainstalować dodatkowe analizatorów, jako rozszerzenie programu Visual Studio lub jako pakiet NuGet. Jeśli zostaną znalezione naruszeń zasady, są zgłaszane zarówno w edytorze kodu jako falista pod kodem powodujący problemy, a w **lista błędów**.
 
 ### <a name="c-code-analysis"></a>Analiza kodu C++
 
