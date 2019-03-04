@@ -1425,7 +1425,7 @@ Reguły formatowania w tej sekcji mają zastosowanie do języka C# i Visual Basi
 
 #### <a name="usings"></a>Organizuj użycia
 
-Ta reguła formatowania dotyczy położenie Microsoft.* i System.* przy użyciu dyrektywy w odniesieniu do innych za pomocą dyrektywy.
+Ta reguła formatowania dotyczy położenie Microsoft. i System.* przy użyciu dyrektywy w odniesieniu do innych za pomocą dyrektywy.
 
 W poniższej tabeli przedstawiono nazwy reguły, właściwe języki, wartość domyślna i pierwszej obsługiwanej wersji programu Visual Studio:
 
@@ -1436,8 +1436,8 @@ W poniższej tabeli przedstawiono nazwy reguły, właściwe języki, wartość d
 
 **dotnet\_sort\_system\_directives_first**
 
-- Gdy ta reguła jest ustawiona na **true**Microsoft.* i System.* dyrektywy using alfabetycznie sortować i je umieścić przed innymi deklaracje Using.
-- Gdy ta reguła jest ustawiona na **false**, nie należy umieszczać Microsoft.* i System.* przy użyciu dyrektyw przed innymi za pomocą dyrektywy.
+- Gdy ta reguła jest ustawiona na **true**Microsoft. i System.* dyrektywy using alfabetycznie sortować i je umieścić przed innymi deklaracje Using.
+- Gdy ta reguła jest ustawiona na **false**, nie należy umieszczać Microsoft. i System.* przy użyciu dyrektyw przed innymi za pomocą dyrektywy.
 
 Przykłady kodu:
 
