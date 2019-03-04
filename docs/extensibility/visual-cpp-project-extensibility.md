@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692063"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223562"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -604,7 +604,7 @@ Aby wyłączyć uaktualnienia projektu, użyj `NoUpgrade` wartość:
 
 ## <a name="project-cache-and-extensibility"></a>Pamięć podręczna projektu i rozszerzalność
 
-Aby poprawić wydajność podczas pracy z dużymi rozwiązaniami C++ w programie Visual Studio 2017 [projektu pamięci podręcznej](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) została wprowadzona. Są one zaimplementowane jako bazy danych SQLite wypełniony danymi projektu, a następnie używana do ładowania projektów bez ładowania projektów programu MSBuild lub CPS do pamięci.
+Aby poprawić wydajność podczas pracy z dużymi rozwiązaniami C++ w programie Visual Studio 2017 [projektu pamięci podręcznej](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) została wprowadzona. Są one zaimplementowane jako bazy danych SQLite wypełniony danymi projektu, a następnie używana do ładowania projektów bez ładowania projektów programu MSBuild lub CPS do pamięci.
 
 Ponieważ nie ma żadnych obiektów CPS stosowany w przypadku projektów .vcxproj ładowane z pamięci podręcznej, składniki MEF rozszerzenia, importować `UnconfiguredProject` lub `ConfiguredProject` nie można utworzyć. Aby zapewnić obsługę rozszerzeń, pamięć podręczna projektu nie jest używany, gdy Visual Studio wykryje, czy projekt używa (lub jest najczęściej używana) rozszerzenia MEF.
 
