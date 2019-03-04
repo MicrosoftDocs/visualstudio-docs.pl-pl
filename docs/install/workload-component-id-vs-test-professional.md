@@ -1,12 +1,12 @@
 ---
-title: Visual Studio Test Professional 2017 obciążeń i składników identyfikatorów
+title: Visual Studio Test Professional obciążeń i składników identyfikatorów
 titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 281b41da594e56af4e66751aec47718cf98f7fd6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e8235ac3d123f33add52934112f81f0be9772294
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953276"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323335"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 składników katalogu
+# <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional składników katalogu
 
 Tabele na tej stronie listy identyfikatorów, w której można zainstalować program Visual Studio przy użyciu wiersza polecenia lub można określić jako zależności w manifestu VSIX. Należy pamiętać, że dodamy dodatkowe składniki, jak wydaniu aktualizacji do programu Visual Studio.
 

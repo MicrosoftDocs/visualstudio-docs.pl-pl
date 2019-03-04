@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843315"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323643"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray
 
@@ -298,7 +298,7 @@ Następnie metoda pobiera głównego dokumentu, a ponieważ może to obejmować 
 
 Teraz można nacisnąć klawisz **F5** do wykonania swojej analizator w drugim wystąpieniu programu Visual Studio. Otwórz projekt konsoli, używane przed. Powinien zostać wyświetlony żarówki, są wyświetlane, gdy nowe wyrażenie tworzenia obiektu dotyczy `ImmutableArray<int>`. Jeśli użytkownik naciśnie klawisz **Ctrl**+**.** (kropka) zostanie wyświetlone naprawić kod. wyświetlony zostanie automatycznie wygenerowany kod różnica (wersja zapoznawcza) w żarówki interfejsu użytkownika. Roslyn tworzy to dla Ciebie.
 
-**Porada Pro:** Jeśli Uruchom drugie wystąpienie programu Visual Studio, a nie widać ikony żarówki z poprawkę kodu, następnie może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza ponownej analizy składników, aby umożliwić programu Visual Studio należy następnie najnowsze składnika programu Visual Studio. Po pierwsze Zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksplorator Windows**, przejdź do *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" zmienia się od wersji programu Visual Studio). Usuń podkatalogu *ComponentModelCache*.
+**Porada Pro:** Jeśli Uruchom drugie wystąpienie programu Visual Studio, a nie widać ikony żarówki z poprawkę kodu, następnie może być konieczne wyczyszczenie pamięci podręcznej składnika programu Visual Studio. Wyczyszczenie pamięci podręcznej wymusza ponownej analizy składników, aby umożliwić programu Visual Studio należy następnie najnowsze składnika programu Visual Studio. Po pierwsze Zamknij drugie wystąpienie programu Visual Studio. Następnie w **Eksplorator Windows**, przejdź do *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16.0" zmienia od wersji programu Visual Studio). Usuń podkatalogu *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Rozmowy wideo i Zakończ projektu kodu
 

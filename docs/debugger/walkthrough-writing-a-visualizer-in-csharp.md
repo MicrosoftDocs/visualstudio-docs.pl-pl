@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb372fffac9c9750f5912871e32a987b41e41b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042403"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323374"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C\#
 W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu języka C#. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu okna komunikatu Windows forms. Ten Wizualizator prostego ciągu nie jest szczególnie przydatne w sobie, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej użyteczny, wizualizatorów dla innych typów danych.
 
 > [!NOTE]

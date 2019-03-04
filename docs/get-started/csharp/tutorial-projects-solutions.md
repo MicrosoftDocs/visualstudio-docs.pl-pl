@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 515cd501044b1b83f8adbd365e13336322c20f3f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931302"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323199"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>Więcej informacji na temat projektów i rozwiązań za pomocąC#
+# <a name="learn-about-projects-and-solutions-using-c"></a>Więcej informacji na temat projektów i rozwiązań za pomocą języka C\#
 
 W tym artykule wprowadzające przedstawimy wyjaśniono tworzenie *rozwiązania* i *projektu* w programie Visual Studio. To rozwiązanie jest kontenerem, który służy do organizowania jeden lub więcej powiązanych projektów kodu, na przykład projekt biblioteki klas i odpowiedniego projektu testowego. Omówimy właściwości projektu i niektórych plików, który może zawierać. Również utworzymy odwołanie z jednego projektu do drugiego.
 

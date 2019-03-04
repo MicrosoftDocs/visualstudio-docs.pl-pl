@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944263"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323468"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty wiersza polecenia dla menedżera zawartości pomocy
 
@@ -57,7 +57,7 @@ W poniższej tabeli opisano przełączniki i argumenty, które służą do narz�
 |/Membership|Nie|-   **Minimalna**--instaluje minimalny zestaw zawartości pomocy, w oparciu o jednostki SKU, który określisz przy użyciu przełącznika/skuid. Mapowanie między jednostką SKU a zestawem zawartości jest uwidoczniony w interfejsie API usługi.<br />-   **Zaleca się**— instaluje zbiór zalecanych książek dla obiektu SKU, który określono za pomocą/argumentu skuid. Źródło instalacji jest interfejs API usługi lub *. MSHA*.<br />-   **Pełna**— instaluje cały zbiór książek dla obiektu SKU, który określono za pomocą/argumentu skuid. Źródło instalacji jest interfejs API usługi lub *. MSHA*.|
 |/ locationpath|Nie|Określa folder domyślny dla lokalnej zawartość pomocy. Należy użyć tego przełącznika, tylko do zainstalowania lub przenoszenia zawartości. Jeśli określisz tego przełącznika, należy także określić/silent przełącznika.|
 |/silent|Nie|Instaluje lub usuwa zawartość pomocy bez monitowania użytkownika ani wyświetlania żadnych interfejsów użytkownika, w tym ikony w obszarze powiadomień stanu. Wyjście jest rejestrowane w pliku *% Temp %* katalogu. **Ważne:**  Do cichej instalacji zawartości, należy użyć podpisanych cyfrowo *cab* plików nie *.mshc* plików.|
-|/launchingApp|Nie|Definiuje kontekst aplikacji i wykazu, w przypadku uruchomienia podglądu pomocy bez nadrzędnej aplikacji. Argumenty dla tego przełącznika to *CompanyName*, *ProductName*, i *Numerwersji* (na przykład `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Jest to wymagane do zainstalowania zawartości przy użyciu/silent parametru.|
+|/launchingApp|Nie|Definiuje kontekst aplikacji i wykazu, w przypadku uruchomienia podglądu pomocy bez nadrzędnej aplikacji. Argumenty dla tego przełącznika to *CompanyName*, *ProductName*, i *Numerwersji* (na przykład `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Jest to wymagane do zainstalowania zawartości przy użyciu/silent parametru.|
 |/ wait *sekund*|Nie|Wstrzymuje instalowanie, odinstalowywanie oraz operacji odświeżania. Jeśli operacja jest już w toku dla wykazu, proces będzie czekał do danej liczby sekund, aby kontynuować. Użycie wartości 0 spowoduje czekać w nieskończoność.|
 |/?|Nie|Wyświetla listę przełączników i ich opisów dla narzędzia wiersza polecenia dla menedżera zawartości pomocy.|
 

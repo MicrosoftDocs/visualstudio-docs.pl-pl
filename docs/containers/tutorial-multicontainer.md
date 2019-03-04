@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 168afe9d5188b445260f9143967cc022771917d9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 3bf7b25ccbcb964572c3ae302523cd5a540829c8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223896"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323528"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Utwórz aplikację obsługującą wiele kontenerów przy użyciu narzędzia Docker Compose
 
@@ -23,13 +23,12 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednego kontenera i k
 
 ::: moniker range="vs-2017"
 * [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
-
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 * [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
 * [Narzędzia programistyczne programu .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) podczas tworzenia aplikacji z platformy .NET Core 2.2
 ::: moniker-end
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626131"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323539"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Instrukcje: Korzystanie ze znaczników wizualizatora współbieżności SDK
 W tym temacie pokazano, jak za pomocą SDK narzędzia Concurrency Visualizer utworzyć zakresy i zapisać flagi, wiadomości i alerty.
@@ -78,7 +78,7 @@ W tym temacie pokazano, jak za pomocą SDK narzędzia Concurrency Visualizer utw
 
      ![Narzędzie CONCURRENCY Visualizer 3 serii znacznika niestandardowego](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>Aby użyć programu Visual Basic lub C# #
+### <a name="to-use-visual-basic-or-c"></a>Aby użyć programu Visual Basic lub C\#
 
 1.  Dodanie obsługi SDK narzędzia Concurrency Visualizer do aplikacji. Aby uzyskać więcej informacji, zobacz [SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md).
 

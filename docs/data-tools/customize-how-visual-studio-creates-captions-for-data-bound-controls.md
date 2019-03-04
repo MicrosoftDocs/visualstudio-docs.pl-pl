@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939843"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323707"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 
-Podczas przeciągania elementów z [okna źródeł danych](add-new-data-sources.md#data-sources-window) do projektanta szczególną uwagę właśnie: nazwy kolumn w etykietach podpis jest umieszczany w ciąg bardziej czytelny, gdy dwie lub więcej słów okaże się, że połączone ze sobą. Można dostosować sposób tworzenia tych etykiet, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
+Podczas przeciągania elementów z [okna źródeł danych](add-new-data-sources.md#data-sources-window) do projektanta szczególną uwagę właśnie: nazwy kolumn w etykietach podpis jest umieszczany w ciąg bardziej czytelny, gdy dwie lub więcej słów okaże się, że połączone ze sobą.
+
+::: moniker range="vs-2017"
+
+Można dostosować sposób, w którym te etykiety są tworzone przez ustawienie **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** klucza rejestru.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Można dostosować sposób, w którym te etykiety są tworzone przez ustawienie **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data** klucza rejestru.
+
+::: moniker-end
 
 > [!NOTE]
 > Ten klucz rejestru nie istnieje, dopóki nie zostanie utworzony.
@@ -48,19 +60,29 @@ W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego d
 > [!CAUTION]
 > Należy zachować ostrożność w Edytorze rejestru niczym zajęty. Utwórz kopię zapasową rejestru przed jego edycji. Jeśli korzystanie z Edytora rejestru może spowodować poważne problemy, które może być konieczna ponowna instalacja systemu operacyjnego. Firma Microsoft nie gwarantuje, można rozwiązać problemy, które powodują za pomocą Edytora rejestru niepoprawnie. Używasz Edytora rejestru na własne ryzyko.
 >
-> W poniższym artykule bazy wiedzy zawiera instrukcje dotyczące tworzenia kopii zapasowej, edytowanie i przywracania rejestru: [Opis rejestru firmy Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Aby uzyskać informacje o tworzeniu kopii zapasowych, edytowanie i przywracania rejestru, zobacz [Windows informacji rejestru dla użytkowników zaawansowanych](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modyfikowanie zachowania podpisów inteligentne okna źródeł danych
 
-1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
-2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
+3. Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
-4.  Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
+4. Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Kliknij prawym przyciskiem myszy **16.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+
+::: moniker-end
+
+5. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ W poniższej tabeli wymieniono ustawienia wewnętrznego ustawienia domyślnego d
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Wyłącz funkcję inteligentnych funkcji podpisów
 
-1.  Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
+1. Otwórz okno polecenia, klikając **Start** i następnie **Uruchom**.
 
-2.  Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
+2. Typ `regedit` w **Uruchom** okno dialogowe, a następnie kliknij przycisk **OK**.
 
-3.  Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
+3. Rozwiń **HKEY_CURRENT_USER** > **oprogramowania** > **Microsoft** > **VisualStudio**węzła.
 
-4.  Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
+4. Kliknij prawym przyciskiem myszy **15.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Kliknij prawym przyciskiem myszy **16.0** węzeł i Utwórz nowy **klucz** o nazwie `Data Designers`.
+
+::: moniker-end
+
+5. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz trzy nowe wartości ciągu:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

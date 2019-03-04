@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222822"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323737"
 ---
 # <a name="find-and-replace-text"></a>Znajdowanie i zastępowanie tekstu
 
-Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files). Można również znaleźć i zamienić tylko *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
+Możesz znaleźć i zamienić tekst w edytorze programu Visual Studio przy użyciu [Znajdź i Zamień](#find-and-replace-control) (**Ctrl**+**F** lub **Ctrl** + **H**) lub [Znajdź/Zamień w plikach](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  lub **Ctrl**+**Shift**+**H**). Można również znaleźć i zamienić tylko *niektóre* wystąpień wzorca za pomocą  *[zaznaczenie wielu karetki](#multi-caret-selection)*.
 
 > [!TIP]
 > Jeśli zmieniasz kodu symbole, takie jak zmienne i metody, lepiej jest *[zrefaktoryzuj](../ide/reference/rename.md)* ich niż korzystać Znajdź i Zamień. Refaktoryzacja jest inteligentne i określa zakres, Znajdź i Zamień bezrefleksyjne zastępuje wszystkie wystąpienia.
@@ -53,7 +53,10 @@ Możesz ograniczyć wyszukiwanie do bieżącego dokumentu, bieżącego rozwiąza
 
 ## <a name="find-and-replace-control"></a>Formant Znajdź i Zamień
 
-**Znajdź i Zamień** formant jest widoczny w prawym górnym rogu okna edytora kodu. **Znajdź i Zamień** kontroli natychmiast wyróżnia każde wystąpienie wyszukiwanego ciągu w bieżącym dokumencie. Możesz przejść z jednego wystąpienia do innego, wybierając **Znajdź następny** przycisk lub **Find Previous** przycisku na kontrolce wyszukiwania.
+- Naciśnij klawisz **Ctrl**+**F** jako skrót do *znaleźć* ciągu w bieżącym pliku.
+- Naciśnij klawisz **Ctrl**+**H** jako skrót do *Znajdź i Zamień* ciągu w bieżącym pliku.
+
+**Znajdź i Zamień** formant jest widoczny w prawym górnym rogu okna edytora kodu. Go natychmiast wyróżnia każde wystąpienie wyszukiwanego ciągu w bieżącym dokumencie. Możesz przejść z jednego wystąpienia do innego, wybierając **Znajdź następny** przycisk lub **Find Previous** przycisku na kontrolce wyszukiwania.
 
 ![Znajdź i Zamień w programie Visual Studio](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Wersja **znaleźć** kontroli jest również dostępna w niektórych oknach narz
 
 ## <a name="find-in-files-and-replace-in-files"></a>Znajdź w plikach i Zamień w plikach
 
-**Znajdź/Zamień w plikach** działa jak **Znajdź i Zamień** kontrolować, z tą różnicą, że można zdefiniować zakres wyszukiwania. Nie tylko można przeszukiwać bieżący plik otwarty w edytorze, ale również wszystkie otwierać dokumenty, całe rozwiązanie, bieżący projekt i wybrane foldery zestawów. Możesz również wyszukiwać według rozszerzenia nazwy pliku. Aby uzyskać dostęp do **Znajdź/Zamień w plikach** okno dialogowe, wybierz opcję **Znajdź i Zamień** na **Edytuj** menu lub naciśnij klawisz **Ctrl + Shift + F**.
+- Naciśnij klawisz **Ctrl**+**Shift**+**F** jako skrót do *znaleźć* ciąg w wielu plikach.
+- Naciśnij klawisz **Ctrl**+**Shift**+**H** jako skrót do *Znajdź i Zamień* ciąg w wielu plikach.
+
+**Znajdź/Zamień w plikach** działa jak **Znajdź i Zamień** kontrolować, z tą różnicą, że można zdefiniować zakres wyszukiwania. Nie tylko można przeszukiwać bieżący plik otwarty w edytorze, ale również wszystkie otwierać dokumenty, całe rozwiązanie, bieżący projekt i wybrane foldery zestawów. Możesz również wyszukiwać według rozszerzenia nazwy pliku. Aby uzyskać dostęp do **Znajdź/Zamień w plikach** okno dialogowe, wybierz opcję **Znajdź i Zamień** na **Edytuj** menu (lub naciśnij **Ctrl** + **Shift**+**F**).
 
 ![Znajdź w plikach w programie Visual Studio](media/find-in-files-box.png)
 

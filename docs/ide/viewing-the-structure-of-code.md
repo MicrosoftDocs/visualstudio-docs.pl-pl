@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926375"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323870"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu za pomocą różne okna narzędzi
 
@@ -126,7 +126,19 @@ Menu skrótów na liście **hierarchię wywołań** okno zawiera następujące p
 
 **Przeglądarki obiektów** okno zawiera opisy kodu w projektach.
 
-Można filtrować składniki, które chcesz wyświetlić za pomocą listy rozwijanej w górnej części okna. Składniki niestandardowe mogą obejmować pliki wykonywalne kodu zarządzanego, zestawy bibliotek, bibliotek typów i *.ocx* plików. Nie jest możliwe dodać niestandardowe składniki C++. Ustawienia niestandardowe są zapisywane w katalogu aplikacji programu Visual Studio użytkownika *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Można filtrować składniki, które chcesz wyświetlić za pomocą listy rozwijanej w górnej części okna. Składniki niestandardowe mogą obejmować pliki wykonywalne kodu zarządzanego, zestawy bibliotek, bibliotek typów i *.ocx* plików. Nie jest możliwe dodać niestandardowe składniki C++.
+
+::: moniker range="vs-2017"
+
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji programu Visual Studio użytkownika *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji programu Visual Studio użytkownika *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 Okienka po lewej stronie z **przeglądarki obiektów** pokazuje zestawy. Można rozwinąć zestawów do wyświetlenia przestrzenie nazw, które zawierają, a następnie rozwiń przestrzenie nazw, aby wyświetlić typy, które zawierają. Po wybraniu typu, jej elementów członkowskich (na przykład właściwości i metody) są wyświetlane w okienku po prawej stronie. Dolnym okienku po prawej stronie wyświetla szczegółowe informacje na temat wybranego elementu.
 

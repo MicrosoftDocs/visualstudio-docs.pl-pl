@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323831"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Przewodnik: Pobieranie zestawów satelickich na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant
 Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu zestawów satelickich. A *zestawie satelickim* to zestaw, który zawiera zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.
@@ -53,7 +53,7 @@ Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu z
 
 6.  Zamknij **pliki aplikacji** okno dialogowe.
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Aby pobrać zestawów satelickich na żądanie w języku C#
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Aby pobrać zestawów satelickich na żądanie w języku C\#
 
 1.  Otwórz *Program.cs* pliku. Jeśli nie widzisz tego pliku w Eksploratorze rozwiązań, wybierz swój projekt, a na **projektu** menu, kliknij przycisk **Pokaż wszystkie pliki**.
 

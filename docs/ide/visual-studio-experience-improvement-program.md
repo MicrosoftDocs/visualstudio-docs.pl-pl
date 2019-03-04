@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97733ab60a832c6a3563ae3ca1ed791f331399dc
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953547"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323121"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
@@ -31,8 +31,7 @@ VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowani
 
    **Visual Studio Experience Improvement Program** zostanie otwarte okno dialogowe.
 
-1. Aby zrezygnować, należy wybrać **nie, nie chcę uczestniczyć**, a następnie wybierz pozycję **OK**.
-   Aby włączyć, wybierz pozycję **tak, chcę uczestniczyć**, a następnie wybierz pozycję **OK**.
+1. Aby zrezygnować, należy wybrać **nie, nie chcę uczestniczyć**, a następnie wybierz pozycję **OK**. Aby włączyć, wybierz pozycję **tak, chcę uczestniczyć**, a następnie wybierz pozycję **OK**.
 
    ![Visual Studio Experience Improvement Program okna dialogowego](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Jeśli zainstalujesz [Build Tools for Visual Studio](https://visualstudio.micros
 
 Odpowiedni klucz rejestru i ustawienia są następujące:
 
-W 64-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** na 32-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** zasad grupy po jest włączone, klucz = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- W 64-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- W 32-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Po włączeniu zasady grupy klucza = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- W 64-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- W 32-bitowych systemach operacyjnych, klucza = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Po włączeniu zasady grupy klucza = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Wpis = **OptIn**
 
 Wartość = (DWORD)
+
 - **0** jest wyłączony (Wyłącz VSCEIP)
 - **1** jest zgoda (Włącz VSCEIP)
 

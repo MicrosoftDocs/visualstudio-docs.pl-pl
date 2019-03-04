@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 58f084e188f5c19319e37d3bad4fdf110d10376a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222298"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323280"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Umożliwia utworzenie pierwszej usługi sieci web platformy ASP.NET Core w programie Visual StudioF#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Tworzenie pierwszej usługi sieci web platformy ASP.NET Core w F przy użyciu programu Visual Studio\#
 
 W ramach tego wprowadzenia 5 – 10 minut, aby F# w programie Visual Studio, utworzysz F# aplikacji sieci web platformy ASP.NET Core.
 

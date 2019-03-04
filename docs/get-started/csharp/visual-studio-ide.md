@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 69c39404f82f1d0ae56996ff931fa011b5fca308
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317227"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323909"
 ---
-# <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w środowisku IDE programu Visual Studio |C#
+# <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w środowisku IDE programu Visual Studio | C\#
 
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 

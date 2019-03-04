@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 919eb350f655dda2b96527b1e37f0ec027dd922d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937412"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323805"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -24,7 +24,7 @@ Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Program Visual Studio 2017](https://www.visualstudio.com/downloads/) z **obciążenie platformy Azure** zaznaczone, lub starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657).
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) z **obciążenie platformy Azure** zaznaczone, lub starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz to zrobić [utworzyć konto bezpłatnej wersji próbnej](http://go.microsoft.com/fwlink/?LinkId=623901) lub [aktywować korzyści dla subskrybentów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

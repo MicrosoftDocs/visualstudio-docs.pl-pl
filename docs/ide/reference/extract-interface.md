@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909183"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323439"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
 
@@ -29,13 +29,13 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 **Co:** Umożliwia utworzenie interfejsu przy użyciu istniejących członków z klasy, struktury lub interfejsu.
 
-**Kiedy:** Istnieje kilka klasy, struktury lub interfejsy z metod, które można ustanowić typowe i używane przez inne klasy, struktury lub interfejsów.
+**Kiedy:** Masz członków klasy, struktury lub interfejsu, który może być dziedziczona przez inne klasy, struktury lub interfejsów.
 
 **Dlaczego:** Interfejsy są doskonałe konstrukcje projekty zorientowane obiektowo. Wyobraź sobie, mających klasy dla różnych zwierząt (psów i kotów, Bird), które mogą mieć typowych metod, takich jak Eat, napoju, usypiania/budzenia. Przy użyciu interfejsu, takich jak IAnimal pozwoliłoby pies, Cat i Bird mają wspólne "signature" dotyczącej tych metod.
 
-## <a name="how-to"></a>Instrukcje
+## <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
 
-1. Wyróżnij nazwę klasy, aby wykonać akcji lub po prostu gdzieś umieścić kursor tekstu w nazwie klasy.
+1. Umieść kursor w polu Nazwa klasy.
 
    - C#:
 
@@ -48,7 +48,7 @@ Ta Refaktoryzacja mają zastosowanie do:
 2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + I**. (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
+      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + I**. (Skrót klawiaturowy mogą być inne niż oparte na profilu, który wybrano.)
       - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Wyodrębnij interfejs** z menu podręcznego okna podglądu.
    - **Myszy**
       - Wybierz **Edytuj > Refaktoryzuj > Wyodrębnij interfejs**.
@@ -56,13 +56,13 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 3. W **Wyodrębnij interfejs** okno dialogowe, które się pojawi, wprowadź informacje monit:
 
-   ![Wyodrębnij interface](media/extractinterface-dialog-cs.png)
+   ![Wyodrębnij interface](media/extractinterface-dialog-same-file.png)
 
 
    | Pole | Opis |
    | - | - |
-   | **Nowa nazwa interfejsu** | Nazwa interfejsu, który ma zostać utworzony. To domyślnie zostanie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. |
-   | **Nowa nazwa pliku** | Nazwa pliku, który zostanie wygenerowany i który będzie zawierał interfejsu. Zgodnie z nazwą interfejsu, to domyślnie zostanie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. |
+   | **Nowa nazwa interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwy będą domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. |
+   | **Nowa nazwa pliku** | Nazwę wygenerowanego pliku, który będzie zawierał interfejsu. Zgodnie z nazwą interfejsu, ta nazwa domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. Można również wybrać opcję, aby **dodać do bieżącego pliku**. |
    | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy, które można wyodrębnić w interfejsie. Można wybrać dowolną liczbę, jak chcesz. |
 
 
@@ -81,3 +81,4 @@ Ta Refaktoryzacja mają zastosowanie do:
 ## <a name="see-also"></a>Zobacz także
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
+- [Wskazówki dla deweloperów platformy .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

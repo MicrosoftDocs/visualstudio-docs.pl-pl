@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b3b9a8045fdda71df1f979aef09aa368e03749
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917808"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323056"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
 
@@ -67,7 +67,17 @@ W tej procedurze użyto tym samym fragmencie kodu Hello World, który jest tworz
 
 ### <a name="add-the-pkgdef-file"></a>Dodaj plik .pkgdef
 
+::: moniker range="vs-2017"
+
 1. Dodaj z pliku tekstowego *HelloWorldVB* folder i nadaj mu nazwę *HelloWorldVB.pkgdef*. Ten plik jest używany do dodania określonych kluczy rejestru. W tym przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** klucza.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Dodaj z pliku tekstowego *HelloWorldVB* folder i nadaj mu nazwę *HelloWorldVB.pkgdef*. Ten plik jest używany do dodania określonych kluczy rejestru. W tym przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** klucza.
+
+::: moniker-end
 
 2. Dodaj następujące wiersze do pliku.
 

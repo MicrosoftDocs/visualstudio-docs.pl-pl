@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb45d8e53b1ec24dceed7845bc344822c6a6830d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223089"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323432"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
@@ -284,17 +284,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().
+> Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().
 
 ## <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu
- Zwykle kilka plików w rozwiązaniu Visual Studio są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.
 
- Jeśli zmieni się w modelu źródłowym, należy ponownie uruchom wszystkie szablony w rozwiązaniu. Aby to zrobić ręcznie, wybierz opcję **Przekształć wszystkie szablony** na **kompilacji** menu.
+Zwykle kilka plików w rozwiązaniu Visual Studio są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.
 
- Po zainstalowaniu programu Visual Studio do modelowania SDK może mieć wszystkie szablony, które są przekształcane automatycznie zawsze wtedy, gdy wykonujesz kompilację. Aby to zrobić, Edytuj plik projektu (.csproj lub .vbproj) w edytorze tekstów i dodaj następujące wiersze w pobliżu końca pliku, po innych `<import>` instrukcji:
+Jeśli zmieni się w modelu źródłowym, należy ponownie uruchom wszystkie szablony w rozwiązaniu. Aby to zrobić ręcznie, wybierz opcję **Przekształć wszystkie szablony** na **kompilacji** menu.
+
+Po zainstalowaniu programu Visual Studio do modelowania SDK może mieć wszystkie szablony, które są przekształcane automatycznie zawsze wtedy, gdy wykonujesz kompilację. Aby to zrobić, Edytuj plik projektu (.csproj lub .vbproj) w edytorze tekstów i dodaj następujące wiersze w pobliżu końca pliku, po innych `<import>` instrukcji:
 
 > [!NOTE]
 > SDK przekształcania szablonu tekstu i programu Visual Studio do modelowania SDK są instalowane automatycznie podczas instalowania określone funkcje programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -304,10 +307,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Raportowanie błędów
- Aby umieścić błędach i komunikaty ostrzegawcze w oknie błędów programu Visual Studio, można użyć następujących metod:
+
+Aby umieścić błędach i komunikaty ostrzegawcze w oknie błędów programu Visual Studio, można użyć następujących metod:
 
 ```
 Error("An error message");

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954247"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323578"
 ---
 # <a name="manage-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
@@ -84,7 +84,9 @@ Jeśli wszystkie ustawienia z zakresu użytkownika zostały zmienione w czasie w
 
 Zdecydowanie zalecamy użycie `My.Settings` obiektu i domyślnego *.settings* pliku ustawień dostępu. To dlatego, możesz użyć **Projektant ustawień** do przypisywania właściwości do ustawienia i, dodatkowo użytkownika ustawienia są zapisywane automatycznie przed zamknięciem aplikacji. Jednak aplikacji Visual Basic można uzyskiwać dostęp do ustawień bezpośrednio. W takim przypadku musisz uzyskać dostęp `MySettings` klasy i użyć niestandardowego *.settings* plik w folderze głównym projektu. Musisz zapisać ustawienia użytkownika przed zakończeniem aplikacji, tak jak w języku C# aplikacji; jest to opisane w poniższej sekcji.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Dostępu lub zmień ustawienia aplikacji w czasie wykonywania w języku C# #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Dostępu lub zmień ustawienia aplikacji w czasie wykonywania w języku C#
+<!-- markdownlint-enable MD003 -->
 
 W językach innych niż Visual Basic, takich jak C#, należy przejść do `Settings` klasy bezpośrednio, jak pokazano w następującym [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] przykład.
 
