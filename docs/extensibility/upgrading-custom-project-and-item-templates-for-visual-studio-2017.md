@@ -8,16 +8,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbb34e93b4faf8df206353d2a06649f652cbcaeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689827"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323990"
 ---
-# <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017
 
-Począwszy od programu Visual Studio 2017, Visual Studio umożliwia odnalezienie szablonów projektów i elementów, zainstalowanych przez msi lub plikiem typu .vsix w inny sposób do poprzednich wersji programu Visual Studio. Jeśli jesteś właścicielem rozszerzenia, które używają niestandardowego projektu lub szablonów elementów, musisz zaktualizować swoje rozszerzenia. W tym temacie opisano, co należy zrobić.
+Począwszy od programu Visual Studio 2017, Visual Studio umożliwia odnalezienie szablonów projektów i elementów, zainstalowanych przez msi lub plikiem typu .vsix w inny sposób do poprzednich wersji programu Visual Studio. Jeśli jesteś właścicielem rozszerzenia, które używają niestandardowego projektu lub szablonów elementów, musisz zaktualizować swoje rozszerzenia. W tym artykule opisano, co należy zrobić.
 
 Ta zmiana dotyczy tylko programu Visual Studio 2017. Nie ma wpływu na poprzednie wersje programu Visual Studio.
 
@@ -27,7 +28,7 @@ Jeśli chcesz utworzyć szablon projektu lub elementu jako część rozszerzenia
 
 W poprzednich wersjach programu Visual Studio **devenv/Setup** lub **devenv/installvstemplates** skanowania dysku lokalnym, aby znaleźć szablonów projektów i elementów. Począwszy od programu Visual Studio 2017, skanowanie jest wykonywane tylko w przypadku lokalizacji poziomie użytkownika. Domyślna lokalizacja poziom użytkownika **%USERPROFILE%\Documents\\< wersja programu Visual Studio\>\Templates\\**. Ta lokalizacja jest używana dla szablonów generowane przez **projektu** > **Eksportuj szablony...**  polecenia, jeśli **automatycznie zaimportuj szablon do programu Visual Studio** opcja jest zaznaczona w kreatorze.
 
-Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik manifest(.vstman), który określa lokalizację i innych parametrów szablonu. W pliku vstman jest generowany wraz z pliku .vstemplate, używany do szablonów. Po zainstalowaniu rozszerzenia za pomocą plikiem typu .vsix, można to zrobić przez kompilację rozszerzenia programu Visual Studio 2017. Ale jeśli używasz pliku .msi, musisz wprowadzić zmiany ręcznie. Aby uzyskać listę co należy zrobić, aby wprowadzić te zmiany, zobacz **uaktualnienia zainstalowane za pomocą rozszerzenia. MSI** w dalszej części tego tematu.
+Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik manifest(.vstman), który określa lokalizację i innych parametrów szablonu. W pliku vstman jest generowany wraz z pliku .vstemplate, używany do szablonów. Po zainstalowaniu rozszerzenia za pomocą plikiem typu .vsix, można to zrobić przez kompilację rozszerzenia programu Visual Studio 2017. Ale jeśli używasz pliku .msi, musisz wprowadzić zmiany ręcznie. Aby uzyskać listę co należy zrobić, aby wprowadzić te zmiany, zobacz **uaktualnienia zainstalowane za pomocą rozszerzenia. MSI** dalej na tej stronie.
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Jak zaktualizować rozszerzenia VSIX przy użyciu projektu lub szablonów elementów
 
@@ -58,9 +59,9 @@ Do innych lokalizacji (niezwiązanych z użytkownikiem) musi zawierać plik mani
 
 -   Należy unikać używania plików zip szablonu. Pliki z rozszerzeniem zip szablonu, które pliki muszą mieć bez kompresji w celu pobrania zasobów i zawartości, więc będą one costlier do użycia. Zamiast tego należy wdrożyć szablonów projektów i elementów jako pojedyncze pliki, w ramach własnego katalogu w celu przyspieszenia inicjowanie szablonu. Rozszerzenia VSIX dla zadania kompilacji zestawu SDK zostanie automatycznie Rozpakuj dowolnego zip szablonu podczas tworzenia pliku VSIX.
 
--   Należy unikać używania wpisy identyfikator pakietu/zasobu dla nazwy szablonu, opis, ikona lub w wersji zapoznawczej, aby uniknąć niepotrzebnych zasobów załadowań zestawów podczas odnajdywania szablonów. Zamiast tego można użyć zlokalizowane manifesty można utworzyć wpisu szablonu dla poszczególnych ustawień regionalnych, który używa właściwości lub zlokalizowanych nazw.
+-   Należy unikać wpisy identyfikatorów pakietu/zasobów dla szablonu nazwę, opis, ikona lub aby uniknąć niepotrzebnych zasobów załadowań zestawów podczas odnajdywania szablonów w wersji zapoznawczej. Zamiast tego można użyć zlokalizowane manifesty można utworzyć wpisu szablonu dla poszczególnych ustawień regionalnych, który używa właściwości lub zlokalizowanych nazw.
 
--   Jeśli w tym szablony jako elementy pliku generowania manifestu może nie dać oczekiwanych wyników. W takim przypadku należy dodać ręcznie wygenerowany manifest w projekcie VSIX.
+-   Jeśli w tym szablony jako elementy pliku generowania manifestu może nie dać oczekiwanych wyników. W takim przypadku należy dodać ręcznie wygenerowanego manifestu do projektu VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Zmiany plików szablonów projektów i elementów
 Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w wersji plików szablonów, aby mogli tworzyć nowe pliki poprawnie.
@@ -168,7 +169,6 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
     </VSTemplateHeader>
   </VSTemplateContainer>
 </VSTemplateManifest>
-
 ```
 
  Informacje dostarczone przez  **\<TemplateData >** elementu pozostają bez zmian.  **\<VSTemplateContainer >** elementu wskazuje plik .vstemplate dla skojarzonego szablonu
@@ -177,7 +177,7 @@ Pokazujemy punkty różnica między Visual Studio 2015 i Visual Studio 2017 w we
 
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Aktualizacje dla rozszerzeń zainstalowany za pomocą. TOŻSAMOŚCI USŁUGI ZARZĄDZANEJ
 
-Niektóre rozszerzenia opartym na MSI wdrażania szablonów typowe lokalizacje szablonu, takie jak następujące:
+Niektóre rozszerzenia opartym na MSI wdrażania szablonów typowe lokalizacje szablonu, takie jak następujące katalogi:
 
 - **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\\< ProjectTemplates/elementów >**
 
@@ -185,7 +185,7 @@ Niektóre rozszerzenia opartym na MSI wdrażania szablonów typowe lokalizacje s
 
 Rozszerzenie wykonuje wdrożenie oparte na MSI, musisz ręcznie wygenerować manifest szablonu i upewnij się, że jest ona objęta Instalator rozszerzenia. Porównaj przykłady vstman wymienionych powyżej i [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-Należy utworzyć oddzielny manifesty dla szablonów projektów i elementów, a powinien wskazywać szablonu katalog główny jak określono powyżej. Utwórz jeden manifest rozszerzenia i ustawień regionalnych.
+Utwórz oddzielne manifesty dla szablonów projektów i elementów, a powinien wskazywać szablonu katalog główny jak określono powyżej. Utwórz jeden manifest rozszerzenia i ustawień regionalnych.
 
 ## <a name="see-also"></a>Zobacz także
 
