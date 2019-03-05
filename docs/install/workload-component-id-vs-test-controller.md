@@ -1,62 +1,46 @@
 ---
-title: Visual Studio Test Controller 2017 obciążeń i składników identyfikatorów
+title: Visual Studio Test Controller obciążeń i składników identyfikatorów
 titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia można rozprowadzać zautomatyzowane testy na wielu komputerach
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: 13db0095871a2c0b8308138b468f8eda78d66aa3
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 546ae0fe1660c6b04198f2b562d4358cebbdb192
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953625"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324107"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 składników katalogu
+# <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller składników katalogu
 
-Tabele na tej stronie listy identyfikatorów, w której można zainstalować program Visual Studio przy użyciu wiersza polecenia lub można określić jako zależności w manifestu VSIX. Należy pamiętać, że dodamy dodatkowe składniki, jak wydaniu aktualizacji do programu Visual Studio.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Ponadto należy pamiętać, że informacje o stronie:
+::: moniker range="vs-2017"
 
-* Każde obciążenie ma osobny rozdział, następuje identyfikator obciążenia i tabeli składników, które są dostępne dla obciążenia.
-* Domyślnie **wymagane** składniki zostaną zainstalowane po zainstalowaniu obciążenia.
-* Jeśli chcesz, możesz także zainstalować **zalecane** i **opcjonalnie** składników.
-* Dodaliśmy również sekcję, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnych obciążeń.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [Użyj parametry wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [Visual Studio 2017 obciążenia i identyfikatory składnika](workload-and-component-ids.md) strony.
+::: moniker-end
 
-## <a name="test-controller"></a>Kontroler testów
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Opis:** Można rozprowadzać zautomatyzowane testy na wielu komputerach
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
-
-Identyfikator składnika | Nazwa | Wersja | Typ zależności
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller podstawowe funkcje | 15.6.27309.0 | Wymagane
-
-## <a name="unaffiliated-components"></a>Składniki nie podlega
-
-Są to składniki, które nie są uwzględniane przy użyciu dowolnego obciążenia, ale można wybrać jako poszczególnych składników.
-
-Identyfikator składnika | Nazwa | Wersja
---- | --- | ---
-n/d | n/d | n/d
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

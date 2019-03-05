@@ -25,3 +25,7 @@ Postępuj zgodnie z wytycznymi dla [szybkie edycje istniejących dokumentów](ht
 ### <a name="larger-edits"></a>Większe zmiany
 
 Przejrzyj wskazówki dotyczące [żądań ściągnięcia](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) przewodnika dla współautorów.
+
+**UWAGA**
+
+Obecnie nie pracujemy w plikach w `docs/vs-2015` folderze te są przeznaczone dla programu Visual Studio 2015 starszej wersji produktu. Firma Microsoft nie akceptuj żądań ściągnięcia dla uproszczonych zmian do tych plików.

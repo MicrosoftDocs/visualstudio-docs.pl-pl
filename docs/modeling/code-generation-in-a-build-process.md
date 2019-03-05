@@ -8,14 +8,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 48695919506c18e3b88ec1c136221018b66595e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951296"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324328"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 
@@ -76,8 +79,8 @@ Po tym wierszu wstaw import szablonu tekstu:
 ```xml
 <!-- Optionally make the import portable across VS versions -->
   <PropertyGroup>
-    <!-- Get the Visual Studio version - defaults to 10: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Get the Visual Studio version: -->
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
     <!-- Keep the next element all on one line: -->
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
@@ -294,5 +297,16 @@ Jeśli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon pro
 
 ## <a name="see-also"></a>Zobacz także
 
+::: moniker range="vs-2017"
+
 - W szablonie T4 MSbuild na jest dobrą wskazówkę *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- W szablonie T4 MSbuild na jest dobrą wskazówkę *% ProgramFiles (x86) %\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)

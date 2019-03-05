@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023918"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323935"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -29,7 +29,8 @@ Ten artykuł zawiera następujące zadania integratorzy Visual Studio podglądu 
 
 -   Dodatkowe zasoby
 
-### <a name="creating-a-topic-f1-support"></a>Tworzenie tematu (Obsługa F1)
+## <a name="create-a-topic-f1-support"></a>Tworzenie tematu (Obsługa F1)
+
 Ta sekcja zawiera omówienie składników prezentowane tematu, temat wymagania, krótki opis sposobu tworzenia tematu (w tym wymagania w zakresie obsługi F1), a na końcu tematu na jej wynik renderowany.
 
 **Omówienie tematu podglądu pomocy**
@@ -91,17 +92,17 @@ Tworzenie nowego dokumentu XHTML o nazwie ContosoTopic4.htm i dołączyć tytuł
 
 ```
 
-Następnie dodaj dane, aby zdefiniować sposób jak temat jest przedstawiane (własne ani nie), aby odwołać się w tym temacie F1, w której istnieje w tym temacie w spisie treści, jego identyfikator (w przypadku odwołania do linku przez inne tematy), itp.  Zobacz tabelę "Metadane zawartości" poniżej, aby uzyskać pełną listę obsługiwanych metadanych.
+Następnie dodaj dane, aby zdefiniować sposób jak temat jest przedstawiane (własne ani nie), aby odwołać się w tym temacie F1, w której istnieje w tym temacie w spisie treści, jego identyfikator (w przypadku odwołania do linku przez inne tematy), itp. Zobacz tabelę "Metadane zawartości" poniżej, aby uzyskać pełną listę obsługiwanych metadanych.
 
 -   W tym przypadku użyjemy naszego znakowania pakietu wariant oznaczonego pakietu Visual Studio podglądu pomocy.
 
--   Dodaj F1 meta nazwę i wartość ("Microsoft.Help.F1" zawartość = "ContosoTopic4"), będą zgodne podana wartość F1 w zbiorze właściwości środowiska IDE.  (Zobacz sekcji pomocy F1, aby uzyskać więcej informacji).   Jest to wartość, która pasuje do F1 wywoływać z poziomu środowiska IDE, aby wyświetlić ten temat, po wybraniu F1 w środowisku IDE.
+-   Dodaj F1 meta nazwę i wartość ("Microsoft.Help.F1" zawartość = "ContosoTopic4"), będą zgodne podana wartość F1 w zbiorze właściwości środowiska IDE. (Zobacz sekcji pomocy F1, aby uzyskać więcej informacji). Jest to wartość, która pasuje do F1 wywoływać z poziomu środowiska IDE, aby wyświetlić ten temat, po wybraniu F1 w środowisku IDE.
 
--   Dodaj identyfikator tematu. Jest to ciąg, który jest używany przez innych tematów, aby utworzyć łącze do tego tematu.  Jest to identyfikator podglądu pomocy, w tym temacie.
+-   Dodaj identyfikator tematu. Jest to ciąg, który jest używany przez innych tematów, aby utworzyć łącze do tego tematu. Jest to identyfikator podglądu pomocy, w tym temacie.
 
 -   W przypadku spisu treści należy dodać węzła nadrzędnego w tym temacie do definiowania, gdzie pojawią się tego węzła spisu treści tematu.
 
--   Spis treści można dodać w kolejności węzła w tym temacie. Gdy węzeł nadrzędny ma n liczbę węzłów podrzędnych, zgodnie z kolejnością węzły podrzędne definiują lokalizacji w tym temacie. Adapterem, w tym temacie jest numer 4 4 tematy podrzędne.)
+-   Spis treści można dodać w kolejności węzła w tym temacie. Gdy węzeł nadrzędny ma `n` liczba elementów podrzędnych węzłów, zdefiniuj zgodnie z kolejnością węzłów podrzędnych lokalizację w tym temacie. Na przykład w tym temacie jest numer 4 4 tematy podrzędne.
 
 Przykład sekcji metadanych:
 
@@ -124,7 +125,6 @@ Przykład sekcji metadanych:
 
 </body>
 </html>
-
 ```
 
 **Treść tematu**
@@ -141,10 +141,10 @@ Treść (nie w tym nagłówku i stopce) tematu będzie zawierać łączy strony,
 
 5.  Dodaj tekst specyficzny dla języka kodu:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Należy pamiętać, że `devLangnu=` umożliwia wprowadzenie innych języków. Na przykład `devLangnu="Fortran"` Wyświetla Fortran po fragmencie kodu DisplayLanguage = Fortran
 
-6.  Dodawanie łączy strony: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Dodawanie łączy strony: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Uwaga: dla nieobsługiwanych nowe "Język" (przykład F#, Cobol, Pascal) kolorowania kodu we fragmencie kodu jest monochromatyczny.
+> Uwaga: dla nieobsługiwanych nowe "Język" (przykład F#, Cobol, Pascal) kolorowania kodu we fragmencie kodu jest monochromatyczny.
 
 **Temat Podglądu pomocy przykład** kod ilustruje sposób definiowania metadanych, fragment kodu, obszar zwijany i tekst specyficzny dla języka.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Użytkownik może następnie zarejestruj CustomLibrary jako przestrzeni nazw, w 
 
 Dodaj następujący klucz rejestru i wartości:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help key: Wyświetlanie danych wyjściowych debugowania w sprzedaży detalicznej wartości: TAK
+::: moniker range="vs-2017"
 
-W środowisku IDE, w menu Pomoc wybierz pozycję "Debuguj kontekst pomocy"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+Wartość: Wyświetlanie danych wyjściowych debugowania w danych sprzedaży detalicznej: TAK
+
+W środowisku IDE, w menu Pomoc wybierz **Debuguj kontekst pomocy**.
 
 **Metadane zawartości**
 
@@ -366,7 +378,8 @@ W poniższej tabeli dowolny ciąg, który pojawia się między nawiasami jest sy
 | \< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/> | Określa tą wersją tego tematu, gdy istnieje wiele wersji, w wykazie. Ponieważ Microsoft.Help.Id nie musi być unikatowa, ten tag jest wymagany, gdy więcej niż jedna wersja tematu istnieje w katalogu, na przykład, gdy wykaz zawiera temat dla programu .NET Framework 3.5 i temat dla programu .NET Framework 4 i mają ten sam Micro słabe. Help.Id. |
 | \< meta name="SelfBranded" content="[TRUE or FALSE]"/> | Określa, czy w tym temacie używany pakiet znakowania uruchamiania Help Library Manager lub znakowania pakietu, które są specyficzne dla tematu. Ten tag musi mieć wartość PRAWDA lub FAŁSZ. Jeśli wartość TRUE, a następnie znakowania pakiet dla skojarzonego tematu zastępuje znakowania pakiet, który jest ustawiony, po uruchomieniu Help Library Manager, tak aby tematu jest renderowana zgodnie z oczekiwaniami, nawet jeśli różni się od renderowania zawartości innego. Jeśli jest to wartość FALSE, bieżącego tematu jest renderowana zgodnie z znakowania pakiet, który jest ustawiony, po uruchomieniu Help Library Manager. Domyślnie Help Library Manager zakłada własnym znakowania mieć wartość false, chyba że SelfBranded zmienna jest zadeklarowana jako PRAWDA. w związku z tym, nie trzeba deklarować \<meta-name = "SelfBranded" content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Tworzenie pakietu znakowania
+## <a name="create-a-branding-package"></a>Utwórz pakiet znakowania
+
 Wersję programu Visual Studio obejmuje szereg różnych produktów Visual Studio, w tym izolowany i zintegrowane powłoki dla partnerów Visual Studio.  Każda z tych produktów wymaga pewien stopień oparte na temat zawartości pomocy znakowania pomocy technicznej, unikatowe dla produktu.  Na przykład tematów programu Visual Studio musi być prezentacji marki spójne SQL Studio, który otacza powłoki ISO, wymaga swój własny unikatowy pomocy zawartości znakowanie dla każdego tematu.  Zintegrowanych partnerów Shell może być ich tematy pomocy mieścić się w nadrzędnej zawartości pomocy produktu Visual Studio przy zachowaniu ich własnych znakowania tematu.
 
 Pakiety znakowania są instalowane przez produkt zawierający podglądu pomocy.  W przypadku produktów Visual Studio:
@@ -432,7 +445,6 @@ Plik Branding.xml zawiera listę elementów, używany do renderowania spójnie o
 Uwaga: Zmienne oznaczone przez "{n}" mają zależności w kodzie — usuwanie lub zmiana tych wartości spowoduje, że błędy i ewentualnie awarii aplikacji. Identyfikatory lokalizacji (przykład _locID="codesnippet.n") są objęte znakowania pakiet rozszerzeń Visual Studio.
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Zawartość usługi Visual Studio Wyświetla logo programu Visual Studio, a tak�
 |ccOn.png|Podpisy grafiki||
 |ImageSprite.png|Używany do renderowania obszaru zwijany|rozwijać i zwijać grafiki|
 
-### <a name="deploying-a-set-of-topics"></a>Wdrażanie zbiór tematów
+## <a name="deploy-a-set-of-topics"></a>Wdrożenie zestawu — tematy
+
 Jest to prosty i szybki samouczek dotyczący tworzenia zestawu rozmieszczania zawartości podglądu pomocy, składająca się z plikiem MSHA i zestaw plików cab lub MSHCs zawierający tematów. MSHA jest plik XML, który opisuje zestaw plików cab lub MSHC plików. W Podglądzie pomocy można odczytać MSHA, aby uzyskać listę zawartości (. Plik CAB lub. Pliki MSHC) dostępną do zainstalowania.
 
 Jest to tylko podstawowe informacje opisujące wykraczającego poza podstawowe schematu XML dla MSHA podglądu pomocy.  Jest przykładem implementacji poniżej to krótkie omówienie i przykładowy HelpContentSetup.msha.
@@ -677,14 +690,14 @@ Do uzyskania znakowania pakietów programu Visual Studio, skopiuj Branding_en US
 </div>
 </body>
 </html>
-
 ```
 
 **Podsumowanie**
 
 Używaniu i rozszerzaniu powyższych czynności umożliwi VSPs wdrożyć swoje zestawy zawartości dla programu Visual Studio podglądu pomocy.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Dodawanie pomocy do programu Visual Studio Shell (Integrated i Isolated)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Dodaj pomoc, aby program Visual Studio Shell (Integrated i Isolated)
+
 **Wprowadzenie**
 
 W tym instruktażu pokazano, jak dołączyć zawartości pomocy do aplikacji programu Visual Studio Shell, a następnie wdrożyć go.
@@ -786,7 +799,7 @@ Aby przetestować, tak, jakby wdrożona:
 
 6. Utwórz CatalogType.xml i dodać do magazynu zawartości (w poprzednim kroku), zawierający:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Aby przetestować, tak, jakby wdrożona:
 
 12. W środowisku IDE firmy Contoso wybierz klawisz F1, aby przetestować funkcje F1.
 
-### <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Dla interfejsu API środowiska uruchomieniowego, zobacz [interfejsu API Windows Help](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 

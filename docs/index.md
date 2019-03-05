@@ -580,7 +580,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Rozszerzalny język programowania, zwykle używane do przeprowadzania obliczeń statystycznych i grafiki.</p>
+                                                    <p>(Visual Studio 2017 tylko) Rozszerzalny język programowania, zwykle używane do przeprowadzania obliczeń statystycznych i grafiki.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplikacje do analizy i przetwarzania danych</h3>
-                                            <p>Języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python, R, a F#.</p>
+                                            <p>Języki i narzędzia do tworzenia aplikacji do analizy danych, w tym języka Python i F# (i R w programie Visual Studio 2017 tylko).</p>
                                         </div>
                                       </div>
                                     </div>

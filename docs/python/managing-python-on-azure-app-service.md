@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918926"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324185"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service (Windows)
 
@@ -76,7 +76,7 @@ Na przykład, po dodaniu odwołania do `python361x64` (Python 3.6.1 x 64), Twój
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Ustaw plik web.config, aby wskazać interpreter języka Python
 
-Po zainstalowaniu rozszerzenia witryny (za pośrednictwem portalu lub szablonu usługi Azure Resource Manager), następnie punktu aplikacji *web.config* pliku do interpretera języka Python. *Web.config* pliku powoduje, że serwer internetowy IIS (7 +), które są uruchomione w usłudze App Service o jak powinna obsługiwać żądania języka Python za pomocą interfejsu FastCGI lub HttpPlatform.
+Po zainstalowaniu rozszerzenia witryny (za pośrednictwem portalu lub szablonu usługi Azure Resource Manager), następnie punktu aplikacji *web.config* pliku do interpretera języka Python. *Web.config* pliku powoduje, że serwer sieci web usług IIS (7 i nowsze), które są uruchomiony w usłudze App Service o jak powinna obsługiwać żądania języka Python za pomocą HttpPlatform (zalecane) lub FastCGI.
 
 Rozpocznij, wyszukując pełną ścieżkę do rozszerzenia witryny *python.exe*, a następnie utwórz i zmodyfikuj odpowiednie *web.config* pliku.
 
@@ -97,6 +97,33 @@ Jeśli masz problemy z wyświetlaniem ścieżki dla rozszerzenia, można znaleź
 1. Na stronie usługi App Service, wybierz **narzędzia programistyczne** > **konsoli**.
 1. Wprowadź polecenie `ls ../home` lub `dir ..\home` się foldery najwyższego poziomu rozszerzeń, takich jak *Python361x64*.
 1. Wprowadź polecenie, takie jak `ls ../home/python361x64` lub `dir ..\home\python361x64` Aby sprawdzić, czy zawiera on *python.exe* i inne pliki interpretera.
+
+### <a name="configure-the-httpplatform-handler"></a>Konfigurowanie obsługi HttpPlatform
+
+Moduł HttpPlatform przekazuje połączenia z gniazdami bezpośrednio do autonomicznego proces języka Python. Przekazywanego ta umożliwia uruchamianie dowolnego serwera sieci web, ale wymaga skrypt uruchamiania, który uruchamia lokalny serwer internetowy. Określ skrypt w `<httpPlatform>` elementu *web.config*, gdzie `processPath` atrybutu punkty rozszerzenia witryny interpreter języka Python i `arguments` atrybut wskazuje się skrypt i argumenty chcesz udostępnić:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+`HTTP_PLATFORM_PORT` Zmienna środowiskowa, pokazano poniżej zawiera port lokalny serwer powinien nasłuchiwać połączeń z hostem lokalnym. W tym przykładzie również pokazano, jak utworzyć inną zmienną środowiskową, jeśli to konieczne, w tym przypadku `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Konfigurowanie obsługi interfejsu FastCGI
 
@@ -128,33 +155,6 @@ FastCGI jest interfejsem, który działa na poziomie żądania. IIS odbiera poł
 - `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania aplikacji.
 
 Zobacz [Opublikuj na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) więcej informacji na temat *web.config* aplikacje sieci web Bottle, Flask i Django zawartości.
-
-### <a name="configure-the-httpplatform-handler"></a>Konfigurowanie obsługi HttpPlatform
-
-Moduł HttpPlatform przekazuje połączenia z gniazdami bezpośrednio do autonomicznego proces języka Python. Przekazywanego ta umożliwia uruchamianie dowolnego serwera sieci web, ale wymaga skrypt uruchamiania, który uruchamia lokalny serwer internetowy. Określ skrypt w `<httpPlatform>` elementu *web.config*, gdzie `processPath` atrybutu punkty rozszerzenia witryny interpreter języka Python i `arguments` atrybut wskazuje się skrypt i argumenty chcesz udostępnić:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-`HTTP_PLATFORM_PORT` Zmienna środowiskowa, pokazano poniżej zawiera port lokalny serwer powinien nasłuchiwać połączeń z hostem lokalnym. W tym przykładzie również pokazano, jak utworzyć inną zmienną środowiskową, jeśli to konieczne, w tym przypadku `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Instalowanie pakietów
 

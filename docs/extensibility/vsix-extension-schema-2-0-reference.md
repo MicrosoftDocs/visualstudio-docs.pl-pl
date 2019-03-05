@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf013f24f38485d0db1ec6ca9f45d26f2ede2c9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: af4fd52b28846228f447f70320babbdd357bac89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684744"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324133"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.
@@ -127,11 +127,11 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
         -   Jednej wersji # - określonej wersji.
 
         > [!IMPORTANT]
-        >  Wersja 2.0 schematu VSIX został wprowadzony w programie Visual Studio 2012. Aby użyć tego schematu jest posiadanie programu Visual Studio 2012 lub później zainstalowane na komputerze i używać VSIXInstaller.exe należącego do tego produktu. Można wskazać wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym Instalator VSIX, ale tylko przy użyciu nowszej wersji Instalatora.
+        > Wersja 2.0 schematu VSIX został wprowadzony w programie Visual Studio 2012. Aby użyć tego schematu jest posiadanie programu Visual Studio 2012 lub później zainstalowane na komputerze i używać VSIXInstaller.exe należącego do tego produktu. Można wskazać wcześniejszych wersji programu Visual Studio za pomocą programu Visual Studio 2012 lub nowszym Instalator VSIX, ale tylko przy użyciu nowszej wersji Instalatora.
 
         Numery wersji usługi Visual Studio 2017, można znaleźć w folderze [programu Visual Studio numery wersji i daty wydania](../install/visual-studio-build-numbers-and-release-dates.md).
 
-        Wyrażając wersję dla wersji programu Visual Studio 2017, wersja pomocnicza powinny zawsze być **0**. Na przykład program Visual Studio 2017 w wersji 15.3.26730.0 powinien zostać przedstawiony jako [15.0.26730.0,16.0). Jest to tylko wymagane dla numerów wersji programu Visual Studio 2017.
+        Wyrażając wersję dla wersji programu Visual Studio 2017, wersja pomocnicza powinny zawsze być **0**. Na przykład program Visual Studio 2017 w wersji 15.3.26730.0 powinien zostać przedstawiony jako [15.0.26730.0,16.0). Jest to tylko wymagane dla programu Visual Studio 2017 i nowszym numerów wersji.
 
     -   `AnyAttribute*` `<InstallationTarget>` Elementu umożliwia nieograniczony zestaw atrybutów, która jest widoczna w czasie wykonywania w formie słownika pary nazwa wartość.
 

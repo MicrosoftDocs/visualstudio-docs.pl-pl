@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925439"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324237"
 ---
 # <a name="workspaces"></a>Obszary robocze
 
@@ -175,7 +175,19 @@ Kontekstu interfejsu użytkownika można automatycznie załadować pakietu. Wart
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Pakiet SourceExplorerPackage nie został poprawnie załadowany.
 
-Rozszerzalność obszar roboczy jest silnie MEF oparty na i kompozycji błędy spowoduje, że pakiet, otwórz Folder, aby nie można załadować hostingu. Na przykład, jeśli rozszerzenie eksportuje typ z `ExportFileContextProviderAttribute`, ale tylko implementuje `IWorkspaceProviderFactory<IFileContextActionProvider>`, wystąpi błąd podczas próby otwarcia folderu w programie Visual Studio. Szczegóły błędu znajdują się w _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Usuń wszelkie błędy typów implementowany przez Twoje rozszerzenie.
+Rozszerzalność obszar roboczy jest silnie MEF oparty na i kompozycji błędy spowoduje, że pakiet, otwórz Folder, aby nie można załadować hostingu. Na przykład, jeśli rozszerzenie eksportuje typ z `ExportFileContextProviderAttribute`, ale tylko implementuje `IWorkspaceProviderFactory<IFileContextActionProvider>`, wystąpi błąd podczas próby otwarcia folderu w programie Visual Studio.
+
+::: moniker range="vs-2017"
+
+Szczegóły błędu znajdują się w _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Usuń wszelkie błędy typów implementowany przez Twoje rozszerzenie.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Szczegóły błędu znajdują się w _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Usuń wszelkie błędy typów implementowany przez Twoje rozszerzenie.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 
