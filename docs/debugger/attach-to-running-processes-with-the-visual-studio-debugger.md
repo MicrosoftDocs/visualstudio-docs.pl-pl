@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637506"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428768"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
@@ -95,9 +95,20 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
 
    - Wybierz strzałkę listy rozwijanej obok pozycji **adres docelowy połączenia**, a następnie wybierz nazwę komputera, z listy rozwijanej.
    - Wpisz nazwę komputera w **adres docelowy połączenia** pole.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4024 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2019 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Wybierz **znaleźć** znajdujący się obok **adres docelowy połączenia** , aby otworzyć okno **połączeń zdalnych** okno dialogowe. **Połączeń zdalnych** okno dialogowe wyświetla listę wszystkich urządzeń, które znajdują się w podsieci lokalnej lub podłączone bezpośrednio do komputera. Konieczne może być [Otwórz UDP port 3702](../debugger/remote-debugger-port-assignments.md) na serwerze w celu odnajdywania urządzeń zdalnych. Wybierz komputer lub urządzenie, a następnie kliknij **wybierz**.
 
@@ -142,7 +153,7 @@ Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączen
 Szybko można dołączyć ponownie do procesów, które zostały wcześniej dołączone do, wybierając **debugowania** > **ponownie Dołącz do procesu** (**Shift** + **Alt**+**P**). Po wybraniu tego polecenia, debuger spowoduje natychmiastową próbę dołączenia do ostatniego procesy, które są dołączone do, najpierw próbując dopasować poprzedni identyfikator procesu i jeśli się nie powiedzie, dopasowując do poprzedniej nazwa procesu. Jeśli nie znaleziono żadnych dopasowań lub kilka procesów mają taką samą nazwę **dołączyć do procesu** zostanie otwarte okno dialogowe, dzięki czemu można wybrać prawidłowy proces.
 
 > [!NOTE]
-> **Ponownie Dołącz do procesu** polecenie jest nowe w programie Visual Studio 2017.
+> **Ponownie Dołącz do procesu** polecenie jest dostępna, począwszy od programu Visual Studio 2017.
 
 ## <a name="BKMK_Scenarios"></a> Typowe scenariusze debugowania
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637337"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428729"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurowanie zapory Windows w celu debugowania zdalnego
 
@@ -52,11 +52,25 @@ Program Visual Studio i zdalnym debugerem spróbuj otworzyć porty podczas insta
 
 Zdalne debugowanie, muszą być otwarte na komputerze zdalnym następujące porty:
 
+::: moniker range="vs-2017"
+
 |**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
 |-|-|-|-|
 |4022|przychodzące|TCP|Dla programu VS 2017. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |4023|przychodzące|TCP|Dla programu VS 2017. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Ten port jest tylko używany do zdalnego debugowania 32-bitowy proces z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Wychodzące|UDP|(Opcjonalnie) Wymagana w przypadku odnajdywania zdalnego debugera.|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|
+|-|-|-|-|
+|4024|przychodzące|TCP|For VS 2019. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|przychodzące|TCP|For VS 2019. Zwiększa numer portu przez 2 dla każdej wersji programu Visual Studio. Ten port jest tylko używany do zdalnego debugowania 32-bitowy proces z 64-bitowej wersji zdalnego debugera. Aby uzyskać więcej informacji, zobacz [przypisania portów zdalnego debugera programu Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|3702|Wychodzące|UDP|(Opcjonalnie) Wymagana w przypadku odnajdywania zdalnego debugera.|
+
+::: moniker-end
 
 Jeśli wybierzesz **Użyj trybu zgodności zarządzanej** w obszarze **narzędzia** > **opcje** > **debugowanie**, otwórz porty te dodatkowe zdalnego debugera. Trybu zgodności zarządzanej debuger umożliwia starszej wersji, wersji debugera programu Visual Studio 2010.
 

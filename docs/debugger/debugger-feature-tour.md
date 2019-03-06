@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696743"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428690"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 
@@ -77,7 +77,7 @@ Znajduje się w debugerze, umieść kursor nad wiersz kodu do czasu **uruchamian
 ![Uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click-2.png "uruchamianie do kliknięcia")
 
 > [!NOTE]
-> **Uruchamianie do kliknięcia** przycisk (Uruchom wykonywanie do tego miejsca) jest nowego w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Uruchamianie do kliknięcia** przycisku (Uruchom wykonywanie do tego miejsca) jest dostępna, począwszy od [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Kliknij przycisk **uruchamianie do kliknięcia** przycisku (Uruchom wykonywanie do tego miejsca). Debuger przechodzi do wiersza kodu, w której zostało kliknięte.
 
@@ -188,7 +188,7 @@ W tym przykładzie `DirectoryInfo` wywołanie udostępniła błędu na pusty ci�
 Pomocnik wyjątków jest doskonałym funkcja, która pomaga debugować błędy. Można również wykonywać następujące czynności dla widoku szczegółów błędu i Dodaj wyrażenie kontrolne z Pomocnika wyjątków. Lub, jeśli to konieczne, można zmienić warunków zgłaszania określonego wyjątku. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Pomocnik wyjątków zastępuje Asystenta wyjątków w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Pomocnik wyjątków zastąpione w Asystencie wyjątków [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozwiń **ustawienia wyjątków** węzeł, aby wyświetlić więcej opcji, w jaki sposób obsługiwać ten typ wyjątku, ale nie trzeba wprowadzić w tym samouczku zmiany!
 

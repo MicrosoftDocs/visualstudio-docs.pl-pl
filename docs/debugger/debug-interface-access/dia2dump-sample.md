@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607047"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428547"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump — Przykład
 
@@ -64,7 +64,7 @@ Domyślnie katalog instalacyjny jest chronionym katalogu. Oznacza to, że należ
 
 ## <a name="run-the-dia2dump-sample"></a>Uruchom dia2dump — przykład
 
-Dia2Dump.exe opiera się na msdia*wersji*DLL modelu COM serwera zapewnienie usług. W programie Visual Studio 2015 i Visual Studio 2017 wersja jest biblioteki msdia140.dll. Jeśli msdia*wersji*nie można zainicjować serwera COM DLL, należy zarejestrować go dia2dump.exe może pracować. Katalog DIA SDK ma podkatalogu pojemnika, który zawiera x86 wersję biblioteki DLL. Wersja x64 architektury maszyn w bin\amd64, a wersja dla ARM jest bin\arm. Aby zarejestrować bibliotekę dll, otworzyć podwyższone okno Wiersz polecenia dla deweloperów, a następnie przejdź do katalogu zawierającego wersję dla architektury maszyny. Wprowadź polecenie `regsvr32 msdia140.dll` do zarejestrowania serwera COM.
+Dia2Dump.exe opiera się na msdia*wersji*DLL modelu COM serwera zapewnienie usług. Począwszy od programu Visual Studio 2015, wersja jest biblioteki msdia140.dll. Jeśli msdia*wersji*nie można zainicjować serwera COM DLL, należy zarejestrować go dia2dump.exe może pracować. Katalog DIA SDK ma podkatalogu pojemnika, który zawiera x86 wersję biblioteki DLL. Wersja x64 architektury maszyn w bin\amd64, a wersja dla ARM jest bin\arm. Aby zarejestrować bibliotekę dll, otworzyć podwyższone okno Wiersz polecenia dla deweloperów, a następnie przejdź do katalogu zawierającego wersję dla architektury maszyny. Wprowadź polecenie `regsvr32 msdia140.dll` do zarejestrowania serwera COM.
 
 ### <a name="to-run-the-sample"></a>Aby uruchomić przykład
 

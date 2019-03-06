@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920047"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428664"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut przeniesiemy się części okna, menu i inne funkcje interfejsu użytkownika.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Okno uruchamiania
+
+Pierwszą rzeczą, jaką zobaczysz po uruchomieniu programu Visual Studio jest oknem rozpoczęcia. W oknie uruchamiania zaprojektowano w celu ułatwienia Ci "kod" szybciej. Posiada opcji, aby zamknąć lub zapoznaj się z kodu, otwórz istniejący projekt lub rozwiązanie, Utwórz nowy projekt lub po prostu otwórz folder, który zawiera kilka plików kodu.
+
+[![](media/vs-2019/start-window.png "Okno uruchamiania w programie Visual Studio 2019 r.")](media/vs-2019/start-window.png)
+
+Jeśli używasz programu Visual Studio po raz pierwszy, listy ostatnich projektów jest pusta.
+
+Jeśli pracujesz z niekorzystających z programu MSBuild na podstawie ścieżek bazowych kodów, użyjesz **Otwórz folder lokalny** opcję, aby otworzyć kod w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](develop-javascript-code-without-solutions-projects.md). W przeciwnym razie możesz utworzyć nowy projekt lub klonowanie projektu od dostawcy źródła, takich jak GitHub lub DevOps platformy Azure.
+
+**Kontynuuj bez konieczności pisania kodu** opcja po prostu otwiera środowiska programistycznego Visual Studio bez określonego projektu lub kodu załadowanego. Możesz wybrać tę opcję, aby dołączyć [udostępniania na żywo](/visualstudio/liveshare/) sesji lub dołączyć do procesu debugowania. Można również nacisnąć klawisz **Esc** aby zamknąć okno uruchamiania i otworzyć IDE.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Strona początkowa
 
@@ -31,9 +49,27 @@ Jeśli zamkniesz **strona startowa** i chcesz zobaczyć ją ponownie, możesz ur
 
 ![Menu Plik w programie Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy projekt.
+
+::: moniker range=">=vs-2019"
+
+1. Na **Uruchom okno**, wybierz opcję **Utwórz nowy projekt**, a następnie w polu wyszukiwania wpisz **javascript** do filtrowania listy typów projektów, które zawierają "javascript" w typie nazwy lub języka.
+
+   Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. (Alternatywnie Jeśli jesteś deweloperem TypeScript, możesz utworzyć projekt, w tym języku. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
+
+   ![Wyszukaj szablony projektów w oknie uruchamiania programu Visual Studio](media/vs-2019/create-new-project.png)
+
+1. Wybierz **pusta aplikacja sieci Web Node.js** szablonu projektu i kliknij przycisk **dalej**. 
+
+1. W **konfigurowania nowego projektu** okno dialogowe, które zostanie wyświetlone, zaakceptuj domyślną nazwę projektu i wybierz polecenie **Utwórz**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Na **strona startowa**, w polu wyszukiwania w obszarze **nowy projekt**, wpisz w **javascript** do filtrowania listy typów projektów, które zawierają "javascript" w nazwie lub Typ języka.
 
@@ -42,6 +78,7 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
    Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. Wybierz **pusta aplikacja sieci Web Node.js** szablonu projektu. (Alternatywnie Jeśli jesteś deweloperem TypeScript, możesz utworzyć projekt, w tym języku. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
 
 1. W **nowy projekt** okno dialogowe, które zostanie wyświetlone, zaakceptuj domyślną nazwę projektu i wybierz polecenie **OK**.
+::: moniker-end
 
    Projekt zostanie utworzony i plik o nazwie *server.cs* zostanie otwarty w **edytora** okna. **Edytora** pokazuje zawartość plików, a to, gdzie wykonasz większość swojej pracy kodowania w programie Visual Studio.
 

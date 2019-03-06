@@ -1,11 +1,16 @@
 ---
+author: TerryGLee
+ms.author: tglee
+ms.date: 03/02/2019
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 836b3c2e351062474d398b67fb9c543e6512a75e
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MT
+ms.openlocfilehash: 25aa7c50e344c121f0d63804262033694c23a003
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56963347"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57333920"
 ---
 ## <a name="get-support"></a>Uzyskiwanie pomocy technicznej
 

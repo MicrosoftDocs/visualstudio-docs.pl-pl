@@ -6,19 +6,19 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: c33c53e16e8845031676c6b729767c781b4f8c80
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0440c2515e3e1341f465d0d62a3a8daf490f9993
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "57223828"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57333927"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 * [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
 * Publikowanie w usłudze Azure Container Registry w subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Instalacja i Konfiguracja

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927116"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428612"
 ---
 # <a name="refactor-code"></a>Refaktoryzacja kodu
 
@@ -22,7 +22,11 @@ Refaktoryzacja polega na modyfikacji kodu, aby ułatwić utrzymanie, zrozumieć 
 
 ## <a name="programming-languages"></a>Języki programowania
 
-Różne operacje refaktoryzacji dostępnych dla różnych języków programowania w programie Visual Studio. Tematy w tej sekcji obejmują dostępne do refaktoryzacji C# i Visual Basic. Aby o Refaktoryzacja języka C++, kod, zobacz [pisanie i Refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp). Refaktoryzacja obsługę F# są dostarczane przez [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), rozszerzenia programu Visual Studio innych firm.
+Dostępne dla różnych języków programowania w programie Visual Studio są różne operacje refaktoryzacji:
+
+- Strony w tej sekcji spis treści obejmują dostępne do refaktoryzacji C# i Visual Basic. Oto kilka przykładów [Wyodrębnij metodę refaktoryzacji](reference/extract-method.md) i [przeniesienie typu do pasującego pliku refaktoryzacji](reference/move-type-to-matching-file.md).
+- Aby dowiedzieć się, jak Refaktoryzacja kodu w języku C++, zobacz [pisanie i Refaktoryzacja kodu (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Refaktoryzacja obsługę F# są dostarczane przez [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), rozszerzenia programu Visual Studio innych firm.
 
 ## <a name="see-also"></a>Zobacz także
 

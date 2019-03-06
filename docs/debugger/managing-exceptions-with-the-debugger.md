@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700916"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428703"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Zarządzanie wyjątkami za pomocą debugera programu Visual Studio
 
@@ -204,7 +204,7 @@ Możesz dodać wyjątek **ustawienia wyjątków** za pomocą poprzedniej procedu
 Użyj **ustawienia wyjątków** okna Ustawianie warunków wyjątków. Obecnie obsługiwane warunki obejmują nazwy modułu do dołączania lub wykluczania dla wyjątku. Przez ustawienie nazwy modułów, jako warunków, można wybrać przerwanie dla wyjątku tylko w przypadku niektórych modułów kodu. Można także uniknąć istotne dla konkretnego modułów.
 
 > [!NOTE]
-> Dodawanie warunków do wyjątku jest nowego w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Dodawanie warunków do wyjątku jest obsługiwane począwszy [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Aby dodać wyjątki warunkowe:
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703711"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428651"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Rozpoczęcie korzystania z rozszerzenia Snapshot Debugger
 
@@ -69,6 +69,6 @@ Więcej informacji na temat rozszerzenia Snapshot Debugger można znaleźć na [
 
 ## <a name="dont-show-me-this-again"></a>Nie "pokazuj mi tego ponownie
 
-Aby nigdy nie pokazuj strony początkowej debugera migawki po nawiązaniu połączenia debugera migawki, należy zmienić **strony "Wprowadzenie" Pokaż w menu start sesji** opcji **narzędzia**  >   **Opcje** > **Snapshot Debugger**.
+Aby nigdy nie pokazuj strony początkowej debugera migawki podczas łączenia z rozszerzenia Snapshot Debugger, należy zmienić **strony "Wprowadzenie" Pokaż w menu start sesji** opcji **narzędzia**  >   **Opcje** > **Snapshot Debugger**.
 
 ![Strony opcji narzędzi debugera migawki](../media/snapshot-startpage-tools-options.png)

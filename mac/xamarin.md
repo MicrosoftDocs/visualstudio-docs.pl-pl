@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319449"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428573"
 ---
 # <a name="xamarin-mobile-app-development"></a>Tworzenie aplikacji mobilnych platformy Xamarin
 
@@ -28,7 +28,7 @@ Aby uzyskać więcej informacji na temat narzędzia Android Designer, zobacz [Pr
 
 ## <a name="ios"></a>iOS
 
-IOS Designer jest w pełni zintegrowana z programem Visual Studio dla komputerów Mac i umożliwia wizualne edytowanie .pliki i pliki scenorysu, aby utworzyć dla systemu iOS, tvOS i UI systemu WatchOS i przejścia. Cały interfejs użytkownika może być skompilowana przy użyciu funkcji przeciągania i upuszczania między przybornik i powierzchni projektowej podczas korzystania z intuicyjnym sposobem obsługi zdarzeń. System iOS obsługuje również projektanta [niestandardowych formantów/xamarin/systemu ios /-interfejsu/projektanta/systemu ios — designable — omówienie kontrolek użytkownika —) jednocześnie ma dodatkową zaletę renderowania w czasie projektowania.
+IOS Designer jest w pełni zintegrowana z programem Visual Studio dla komputerów Mac i umożliwia wizualne edytowanie .pliki i pliki scenorysu, aby utworzyć dla systemu iOS, tvOS i UI systemu WatchOS i przejścia. Cały interfejs użytkownika może być skompilowana przy użyciu funkcji przeciągania i upuszczania między przybornik i powierzchni projektowej podczas korzystania z intuicyjnym sposobem obsługi zdarzeń. System iOS obsługuje również projektanta [niestandardowe formanty](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) jednocześnie ma dodatkową zaletę renderowania w czasie projektowania.
 
 ![Projektant scenorysu z systemem iOS](media/intro-image30.png)
 

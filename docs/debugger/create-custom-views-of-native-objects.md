@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637858"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428807"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze
 
@@ -99,11 +99,21 @@ Możesz dodać *.natvis* pliki do katalogu użytkownika lub w katalogu systemu, 
 
 1. Wszelkie *.natvis* pliki, które są osadzone w *.pdb* debugowania, chyba że istnieje plik o takiej samej nazwie w załadowanego projektu.
 
-1. Wszelkie *.natvis* pliki, które znajdują się w załadowanego projektu C++ lub rozwiązanie najwyższego poziomu. Ta grupa zawiera wszystkie załadowane projektów języka C++, w tym bibliotek klas, ale nie projektów w innych językach.
+2. Wszelkie *.natvis* pliki, które znajdują się w załadowanego projektu C++ lub rozwiązanie najwyższego poziomu. Ta grupa zawiera wszystkie załadowane projektów języka C++, w tym bibliotek klas, ale nie projektów w innych językach.
 
-1.  Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+::: moniker range="vs-2017"
 
-1.  Katalog Natvis systemowe (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Ten katalog ma *.natvis* pliki, które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodawać pliki do tego katalogu.
+3.  Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  Katalog Natvis specyficzne dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+
+::: moniker-end
+
+4.  Katalog Natvis systemowe (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Ten katalog ma *.natvis* pliki, które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodawać pliki do tego katalogu.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Zmodyfikuj pliki .natvis podczas debugowania
 

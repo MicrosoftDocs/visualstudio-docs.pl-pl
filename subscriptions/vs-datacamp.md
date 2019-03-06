@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które są dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841432"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428638"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -69,8 +69,8 @@ Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej | 3 miesiące       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | 3-miesięcznym                                             |  Nie.  Dostępne tylko dla nowych subskrybentów           |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | 3-miesięcznym                                              |  Nie.  Dostępne tylko dla nowych subskrybentów           |
 | Visual Studio Dev Essentials | Brak  | 2 miesiące | Nie. Dostępne tylko dla nowych subskrybentów |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
