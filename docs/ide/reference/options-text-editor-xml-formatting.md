@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943548"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525072"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, formatowanie
 
-Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumentach XML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów** > **XML** > **formatowanie** węzła .
+Użyj **formatowanie** Strona opcji, aby określić, jak sformatowane elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania, XML, wybierz opcję **narzędzia** > **opcje** > **edytora tekstów** > **XML**, a następnie wybierz **formatowanie**.
 
 ## <a name="attributes"></a>Atrybuty
 
@@ -30,7 +30,7 @@ Nie formatowania atrybutów. To ustawienie jest ustawieniem domyślnym.
 
 **Wyrównaj atrybuty w osobnym wierszu**
 
-Wyrównaj atrybuty drugie i kolejne w pionie, tak aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu atrybuty byłaby wyrównana.
+Wyrównaj atrybuty drugie i kolejne w pionie, tak aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu byłaby wyrównana atrybuty:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Jeśli element zawiera tekst i znacznik, uznaje się zawartość mieszaną zawar
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generowanie kodu](../code-generation-in-visual-studio.md)
+- [Opcje XML — różne](options-text-editor-xml-miscellaneous.md)
+- [Narzędzia XML w programie Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

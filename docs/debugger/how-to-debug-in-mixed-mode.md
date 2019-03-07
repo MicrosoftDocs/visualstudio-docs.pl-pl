@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968534"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526727"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Instrukcje: Debugowanie w trybie mieszanym (C#, C++, Visual Basic)
 
@@ -62,7 +62,7 @@ Jeśli nie masz dostępu do projektu wywołującej aplikacji można debugować b
    ![Włącz debugowanie kodu natywnego](../debugger/media/dbg-mixed-mode-from-csharp.png "Włącz debugowanie kodu natywnego")
 
 > [!NOTE]
-> W większości wersji programu Visual Studio 2017, musisz użyć *launchSettings.json* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji platformy .NET Core. Aby uzyskać więcej informacji, zobacz [debugowanie kodu zarządzanego i natywnego](../debugger/how-to-debug-managed-and-native-code.md).
+> W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, musisz użyć *launchSettings.json* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji platformy .NET Core. Aby uzyskać więcej informacji, zobacz [debugowanie kodu zarządzanego i natywnego](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Zobacz także
 

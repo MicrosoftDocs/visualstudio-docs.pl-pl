@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c8f327f17e6d2e05d0748195cb139f3a05a6f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931198"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525751"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
 

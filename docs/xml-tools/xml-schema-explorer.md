@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915989"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525713"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
@@ -31,7 +31,7 @@ ms.locfileid: "55915989"
 
 -   Sortuj drzewa w kolejności dokumentu, typ lub nazwa. Aby uzyskać więcej informacji, zobacz [sortowanie, filtrowanie i grupowanie](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   Otwórz Edytor XML, a następnie przejdź do lokalizacji kodu w pliku XSD. Aby uzyskać więcej informacji, zobacz [integracja za pomocą edytora XML](../xml-tools/integration-with-xml-editor.md).
+-   Otwórz w edytorze XML, a następnie przejdź do lokalizacji kodu w pliku XSD. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Wygeneruj przykładowy kod XML dla elementów globalnej.
 

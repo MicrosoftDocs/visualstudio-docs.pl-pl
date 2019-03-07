@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910550"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526493"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu kontekstowe (Eksplorator schematu XML)
 
@@ -50,7 +50,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |**Pokaż wszystkie odwołania wychodzące**|Wyszukuje i wyróżnione są następujące:<br /><br /> — Wszystkie przestrzenie nazw określony w atrybucie przestrzeni nazw wszystkich zaimportuj instrukcje, które nie mają `schemaLocation` atrybutu.<br />— Wszystkie pliki określone w `schemaLocation` wszystkie atrybuty importowania i instrukcji #include.|
 |**Pokaż typy globalne**|Umożliwia znalezienie i wyróżnia wszystkie typy globalne w tym pliku.|
 |**Pokaż elementy globalne**|Umożliwia znalezienie i wyróżnia wszystkie elementy globalne w tym pliku.|
-|**Wyświetl kod**|Otwiera plik, który zawiera wybrany węzeł w edytorze XML. Element, który wybrano w Eksplorator schematu XML zostanie również wybrana w edytorze XML.|
+|**Wyświetl kod**|Otwiera plik, który zawiera wybrany węzeł w edytorze XML. Element, który wybrano w Eksplorator schematu XML również zostanie wybrany w edytorze XML.|
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|
 
 ## <a name="all-global-node-types"></a>Wszystkie typy węzłów globalne
@@ -60,7 +60,7 @@ W poniższej tabeli opisano opcje, które są dostępne dla schematu zestawu wę
 |-|-----------------|
 |**Pokaż w widoku wykresu**|Zostanie otwarty w widoku wykresu. Jeśli wybrany węzeł nie jest w obszarze roboczym, dodaje go do obszaru roboczego, a następnie wybiera węzeł.|
 |**Pokaż w widoku modelu zawartości**|Zostanie otwarty widok modelu zawartości. Jeśli wybrany węzeł nie jest w obszarze roboczym, dodaje go do obszaru roboczego, a następnie wybiera węzeł.|
-|**Wyświetl kod**|Otwiera plik, który zawiera wybrany węzeł w edytorze XML. Element, który wybrano w Eksplorator schematu XML zostanie również wybrana w edytorze XML.|
+|**Wyświetl kod**|Otwiera plik, który zawiera wybrany węzeł w edytorze XML. Element, który wybrano w Eksplorator schematu XML również zostanie wybrany w edytorze XML.|
 |**Okno właściwości**|Otwiera **właściwości** okna (o ile nie jest jeszcze otwarty). To okno wyświetla informacje o węźle.|
 
 ## <a name="node-type-element"></a>Typ węzła: Element

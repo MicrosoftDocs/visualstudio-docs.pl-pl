@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961679"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526441"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalnego debugera programu Visual Studio.
@@ -57,11 +57,22 @@ Jeśli po prostu chcesz pobrać i zainstalować zdalnego debugera i nie ma potrz
 
 Można znaleźć zdalnego debugera (*msvsmon.exe*) na komputerze przy użyciu programu Visual Studio Community, Professional lub Enterprise już zainstalowane. W niektórych scenariuszach Najprostszym sposobem konfigurowania zdalnego debugowania jest uruchomienie zdalnego debugera (msvsmon.exe) z udziału plików. Dla ograniczenia użycia, zobacz stronę pomocy zdalny debuger (**Pomoc > użycie** w zdalnym debugerze).
 
-1. Znajdź *msvsmon.exe* w katalogu, zgodny z używaną wersją programu Visual Studio. For Visual Studio Enterprise 2017:
+1. Znajdź *msvsmon.exe* w katalogu, zgodny z używaną wersją programu Visual Studio:
 
-      *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program pliki (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. Udostępnij **zdalny debuger** folderu na komputerze programu Visual Studio.
 

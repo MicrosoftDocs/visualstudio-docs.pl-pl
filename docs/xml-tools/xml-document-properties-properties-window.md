@@ -1,6 +1,6 @@
 ---
 title: Właściwości dokumentu XML, Właściwości, okno
-ms.date: 11/04/2016
+ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cd8a8f1acd650c65c995f303adc4d3ee2c1bc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 679ac529708a49d18025672ce8f880c4f7710471
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938248"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526272"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno właściwości
 
@@ -22,35 +22,34 @@ ms.locfileid: "55938248"
 > [!NOTE]
 > Wszystkie właściwości dokumentu XML są zapisywane w rozwiązaniu. W rezultacie jest konieczne ponowne wprowadzenie tych wartości, przy następnym otwarciu rozwiązania.
 
- **Kodowanie**
+**Kodowanie**
 
- Kodowanie znaków dla pliku. Zmienianie tej właściwości również zmiany kodowanie atrybutu w deklaracji XML i odwrotnie. Nowe kodowanie będzie służyć do kodowania pliku, podczas zapisywania pliku.
+Kodowanie znaków dla pliku. Zmienianie tej właściwości również zmiany kodowanie atrybutu w deklaracji XML i odwrotnie. Nowe kodowanie jest używany do kodowania pliku, podczas zapisywania pliku.
 
- **Dane wejściowe**
+**Dane wejściowe**
 
- Dokument wejściowy skojarzone z arkusza stylów XSLT. Jest on używany przez **dane wyjściowe ShowXSLT** polecenia. Dokumentu można wybrać za pomocą przeglądania (**...** ) przycisku.
+Dokument wejściowy skojarzone z arkusza stylów XSLT. Jest on używany przez **Start XSLT** polecenia, na przykład **XML** > **Rozpocznij debugowanie kodu XSLT bez**. Dokumentu można wybrać za pomocą przeglądania (**...** ) przycisku.
 
- Ta właściwość jest widoczny tylko wtedy, gdy plik XSLT jest aktywna, w oknie edytora.
+Ta właściwość jest widoczny tylko wtedy, gdy plik XSLT jest otwarty w edytorze.
 
- **Output**
+**Output**
 
- Plik, który jest generowany, gdy Przekształcenie dokumentu XML.
+Plik, który jest generowany, gdy Przekształcenie dokumentu XML.
 
- Jeśli plik nie zostanie określony, domyślna nazwa pliku jest generowany na podstawie `method` atrybutu na `xsl:output` element, który określa rozszerzenie pliku. Domyślny plik znajduje się w katalogu tymczasowym bieżącego użytkownika.
+Jeśli plik nie zostanie określony, domyślna nazwa pliku jest generowany na podstawie `method` atrybutu na `xsl:output` element, który określa rozszerzenie pliku. Domyślny plik znajduje się w katalogu tymczasowym bieżącego użytkownika.
 
- **Schematy**
+**Schematy**
 
- Schematy do użycia w celu weryfikacji. Ten przycisk otwiera **schematy XSD** okno dialogowe, które mogą służyć do wybierania schematy do użycia.
+Schematy do użycia w celu weryfikacji. Ten przycisk otwiera **schematy XSD** okno dialogowe, które mogą służyć do wybierania schematy do użycia.
 
- Można również wprowadzić ścieżkę, do schematów. Jeśli nie określono wiele schematów, każda ścieżka schematu muszą być ujęte w cudzysłów.
+Można również wprowadzić ścieżkę, do schematów. Jeśli nie określono wiele schematów, każda ścieżka schematu muszą być ujęte w cudzysłów.
 
- **Arkusz stylów**
+**Arkusz stylów**
 
- Plik XSLT, która jest używana do przekształcania dokumentu po **Pokaż dane wyjściowe XSLT** polecenie jest używane. Jeśli to pole jest puste w przypadku **Pokaż dane wyjściowe XSLT** polecenie jest używane, Edytor używa wartość podana w `xml-stylesheet` przetwarzania instrukcji dokument, lub wyświetli monit o podanie nazwy pliku.
+Plik XSLT, która jest używana do przekształcania dokumentu po **Rozpocznij debugowanie kodu XSLT** i **Rozpocznij debugowanie kodu XSLT bez** polecenia łącza są używane. Jeśli to pole jest puste, Edytor używa wartość podana w `xml-stylesheet` przetwarzania instrukcji, dokumentu lub jego wyświetli monit o podanie nazwy pliku.
 
- Podczas edytowania pliku XSLT, ta właściwość może służyć do określenia, że arkusz stylów różnych powinny być używane podczas **Pokaż dane wyjściowe XSLT** lub **debugowania XSLT** polecenie jest zaznaczone. Na przykład można to zrobić, edytując arkusza stylów, który znajduje się w arkuszu stylów nadrzędnej.
+Podczas edytowania pliku XSLT, ta właściwość może służyć do określenia, że arkusz stylów różnych powinny być używane podczas **Rozpocznij debugowanie kodu XSLT** lub **Rozpocznij debugowanie kodu XSLT bez** polecenie jest zaznaczone. Na przykład można to zrobić podczas edytowania arkusza stylów, który znajduje się w arkuszu stylów nadrzędnej.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytor XML](../xml-tools/xml-editor.md)
-- [Składniki edytora XML](../xml-tools/xml-editor-components.md)

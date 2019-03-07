@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922033"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525147"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Instrukcje: Zapoznaj się z omówieniem schematu z zestawu przy użyciu widoku wykresu
 
@@ -23,11 +23,11 @@ W tym temacie opisano sposób użycia [widoku wykresu](../xml-tools/graph-view.m
 
 1.  Utwórz nowy plik schematu XML, a następnie zapisz plik jako *Relationships.xsd*.
 
-2.  Kliknij przycisk **Użyj edytora XML możesz wyświetlać i edytować podstawowego pliku schematu XML** link widoku startowego.
+2.  Kliknij przycisk **edytora XML użyj do wyświetlania i edytowania pliku schematu XML podstawowego** link widoku startowego.
 
 3.  Skopiuj przykładowy kod XML schematu z [schematu XML przykładowych: relacje](../xml-tools/sample-xsd-file-relationships.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
 
-4.  Kliknij prawym przyciskiem myszy w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
+4.  Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
 
 5.  Wybierz widok wykresu z **narzędzi XSD**.
 

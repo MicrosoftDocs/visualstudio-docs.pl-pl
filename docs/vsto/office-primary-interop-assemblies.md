@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602289"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525910"
 ---
 # <a name="office-primary-interop-assemblies"></a>podstawowe zestawy międzyoperacyjne pakietu Office
 
@@ -57,15 +57,15 @@ Po zainstalowaniu programu Visual Studio, zestawy PIA są automatycznie instalow
 
 Te kopie zestawów PIA pomagają programowi Visual Studio uniknąć kilka problemów projektowych, które mogą wystąpić, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej.
 
-Program Visual Studio instaluje te kopie zestawów PIA w następujących lokalizacjach na komputerze deweloperskim:
+Począwszy od programu Visual Studio 2017, te kopie zestawów PIA są instalowane następujące udostępnionych lokalizacji na komputerze deweloperskim:
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-  (lub *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office14* na 64-bitowych systemach operacyjnych)
+- (lub * % ProgramFiles (x86) %\Microsoft Studio\Shared\Visual Visual Studio Tools for Office\PIA\* na 64-bitowych systemach operacyjnych)
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*
-
-  (lub *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for Office\PIA\Office15* na 64-bitowych systemach operacyjnych)
+> [!NOTE]
+> W starszych wersjach programu Visual Studio zostanie zainstalowany tych zestawów PIA Visual Studio Tools for Office\PIA folderze * folderu % ProgramFiles % dla danej wersji programu Visual Studio.  
+> Na przykład: * % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Podstawowe zestawy międzyoperacyjne w globalnej pamięci podręcznej
 
@@ -79,7 +79,7 @@ Zestawy PIA pakietu Office nie są wymagane na komputerach użytkowników końco
 
 Każdy szablon projektu pakietu Office w programie Visual Studio jest przeznaczona do pracy z pojedynczą aplikacją Microsoft Office. Aby korzystać z funkcji wielu aplikacji pakietu Microsoft Office lub korzystać z funkcji w aplikacji lub składnika, który nie ma projektu w programie Visual Studio, należy dodać odwołanie do wymaganych zestawów PIA.
 
-W większości przypadków należy dodać odwołania do zestawów PIA, które są instalowane przez program Visual Studio w obszarze `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na **Framework** karcie **Menadżer odwołań** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+W większości przypadków należy dodać odwołania do zestawów PIA, które są instalowane przez program Visual Studio w obszarze `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` katalogu. Te wersje zestawów są wyświetlane na **Framework** karcie **Menadżer odwołań** okno dialogowe. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie pod kątem aplikacji pakietu Office przy użyciu podstawowych zestawów międzyoperacyjnych](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Jeśli masz zainstalowane i zarejestrowane zestawy PIA w globalnej pamięci podręcznej, te wersje zestawów są wyświetlane na **COM** karcie **Menadżer odwołań** okno dialogowe. Dodawanie odwołania do tych wersji zespołów, należy unikać, ponieważ istnieją pewne problemy projektowe, które mogą wystąpić podczas korzystania z nich. Na przykład, jeśli zarejestrowano różne wersje zestawów PIA w globalnej pamięci podręcznej zestawów, projekt będzie automatycznie wiązany wersji zestawu, która została zarejestrowana jako ostatnia — nawet jeśli określisz inną wersję zestawu na  **COM** karcie **Menadżer odwołań** okno dialogowe.
 
@@ -90,7 +90,7 @@ Jeśli masz zainstalowane i zarejestrowane zestawy PIA w globalnej pamięci podr
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Podstawowe zestawy międzyoperacyjne dla aplikacji Microsoft Office
 
-W poniższej tabeli wymieniono podstawowe zestawy międzyoperacyjne, które są dostępne dla [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+W poniższej tabeli wymieniono podstawowe zestawy międzyoperacyjne, które są dostępne dla [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

@@ -1,6 +1,6 @@
 ---
 title: Włącz debugowanie aplikacji ASP.NET | Dokumentacja firmy Microsoft
-ms.custom: H1HackMay2017
+ms.custom: ''
 ms.date: 09/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d5fd04ffbe75aef544ded66546d15409bf3c0936
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796910"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526662"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji ASP.NET lub ASP.NET Core w programie Visual Studio
 

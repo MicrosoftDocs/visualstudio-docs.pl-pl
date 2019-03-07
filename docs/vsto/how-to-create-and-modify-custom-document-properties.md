@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5747c4c530a358b5ca25b30aaadbe57c10c000c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aefe931bf4b53f0637c4bac1216e313b7a6fb092
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600883"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526506"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu
   Aplikacje Microsoft Office, w wymienionych powyżej oferują wbudowanej właściwości, które są przechowywane z dokumentami. Ponadto możesz utworzyć i modyfikowanie właściwości niestandardowego dokumentu, jeśli ma dodatkowych informacji, które mają być przechowywane w dokumencie.
@@ -30,9 +30,7 @@ ms.locfileid: "56600883"
 
  Poniższy przykład pokazuje, jak dodać właściwość niestandardową w dostosowaniu na poziomie dokumentu dla programu Excel i przypisać jej wartości.
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Dostęp i manipulowania nimi niestandardowe właściwości dokumentu w programie Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).
-
-## <a name="example"></a>Przykład
+ ## <a name="example"></a>Przykład
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
  [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
 

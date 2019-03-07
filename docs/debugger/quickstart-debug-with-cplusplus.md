@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716522"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526519"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
@@ -94,7 +94,7 @@ A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studi
 
 ## <a name="navigate-code"></a>Przechodzenie do kodu
 
-Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, co nowego w programie Visual Studio 2017.
+Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, która jest dostępna, począwszy od programu Visual Studio 2017.
 
 Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.push_back(20)` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisku.
 

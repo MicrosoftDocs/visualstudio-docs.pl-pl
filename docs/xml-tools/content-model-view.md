@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933577"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525794"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -121,7 +121,7 @@ Suwak powiększenia jest nieprzezroczysta, zaznacz go, umieść kursor nad nim l
 
 Możesz przełączać się między programami **Projektant XSD** i edytorem XML za pomocą menu kliknij prawym przyciskiem myszy (kontekstu).
 
-W przypadku wprowadzenia zmian schematu w edytorze XML zestawu zmian są synchronizowane w widoku modelu zawartości. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
+Jeśli wprowadzisz zmiany w schemacie ustawiane za pomocą edytora XML zmiany są synchronizowane w widoku modelu zawartości. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 

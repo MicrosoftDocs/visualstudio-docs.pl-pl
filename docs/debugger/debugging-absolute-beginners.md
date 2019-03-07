@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dee0372bc660d2246ead2ecc5340474c96230cbd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713155"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526584"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -78,7 +78,7 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
 1. Konieczne jest posiadanie zainstalowanego programu Visual Studio, a następnie **programowanie aplikacji klasycznych dla platformy .NET** obciążenia lub **platformy .NET Core programowanie wieloplatformowych** zainstalowanym obciążeniem, w zależności od typu aplikacji, która ma zostać utworzony.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** (lub **platformy .NET Core programowanie wieloplatformowych**) obciążeń, następnie wybierz **Modyfikuj**.
 

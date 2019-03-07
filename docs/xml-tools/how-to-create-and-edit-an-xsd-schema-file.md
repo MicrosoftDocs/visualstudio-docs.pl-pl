@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937919"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525361"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Instrukcje: Tworzenie i edytowanie pliku schematu XSD
 
@@ -29,14 +29,10 @@ W tym temacie opisano, jak utworzyć nowy plik schematu XML (XSD), a następnie 
 
 ## <a name="to-edit-a-file"></a>Aby edytować plik
 
-1. Wybierz **Użyj edytora XML możesz wyświetlać i edytować podstawowego pliku schematu XML** link widoku startowego.
+1. Wybierz **edytora XML użyj do wyświetlania i edytowania pliku schematu XML podstawowego** link widoku startowego.
 
-   Edytor XML pojawia się po otwarciu nowego pliku.
+   Za pomocą nowego pliku, otwórz pojawia się w edytorze XML.
 
 2. Skopiuj przykładowy kod XML schematu z [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-simple-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
 
    **Eksploratora schematu XML** będą aktualizowane przy użyciu nowego zestawu schematu.
-
-## <a name="see-also"></a>Zobacz także
-
-- [Praca z danymi XML](../xml-tools/working-with-xml-data.md)

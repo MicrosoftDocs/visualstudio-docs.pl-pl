@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317058"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526766"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Funkcja IntelliTrace programu Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -69,7 +69,7 @@ Funkcja IntelliTrace może również debugować błędy, które są trudne do od
 
 Możesz zapisywać dane IntelliTrace z następujących źródeł:
 
-- Sesja IntelliTrace w Visual Studio 2017 Enterprise, Visual Studio 2015 Enterprise ani we wcześniejszych wersjach programu Visual Studio Ultimate.
+- Sesja IntelliTrace w Visual Studio 2015 Enterprise lub nowszy ani we wcześniejszych wersjach programu Visual Studio Ultimate.
 
 - Sesji testowej w programie Microsoft Test Manager
 
@@ -131,7 +131,7 @@ Domyślnie IntelliTrace zapisuje tylko zdarzenia funkcji IntelliTrace: debugera,
 
 - **Zdarzenia aplikacji programów SharePoint 2010 i SharePoint 2013**
 
-     Można zapisać zdarzenia dotyczące profili użytkowników i zdarzenia w podzbiorze Unified Logging System (ULS) do aplikacji SharePoint 2010 i 2013 działających poza programem Visual Studio. Zdarzenia te można zapisać w pliku iTrace. Wymaga programu Visual Studio Enterprise 2017, Visual Studio Enterprise 2015, poprzedniej wersji programu Visual Studio Ultimate lub [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) działające w **śledzenia** trybu.
+     Można zapisać zdarzenia dotyczące profili użytkowników i zdarzenia w podzbiorze Unified Logging System (ULS) do aplikacji SharePoint 2010 i 2013 działających poza programem Visual Studio. Zdarzenia te można zapisać w pliku iTrace. Wymaga programu Visual Studio Enterprise 2015 lub nowszy poprzedniej wersji programu Visual Studio Ultimate lub [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) działające w **śledzenia** trybu.
 
      Po otwarciu pliku iTrace wprowadź identyfikator korelacji programu SharePoint, aby znaleźć odpowiadające mu żądanie sieci Web, zobaczyć zarejestrowane zdarzenia i rozpocząć debugowanie od określonego zdarzenia. Jeśli plik zawiera nieobsłużone wyjątki, można wybrać identyfikator korelacji, aby uruchomić debugowanie wyjątku.
 

@@ -1,6 +1,6 @@
 ---
 title: Wyrażenia w debugerze | Dokumentacja firmy Microsoft
-ms.date: 02/07/2017
+ms.date: 02/07/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692271"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526028"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.

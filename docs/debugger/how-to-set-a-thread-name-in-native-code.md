@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715183"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526233"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Instrukcje: Ustawianie nazw wątków w kodzie natywnym
 Nazwy wątków jest możliwe w dowolnej wersji programu Visual Studio. Wątek nazewnictwa jest przydatny do identyfikowania wątków zainteresowanie **wątków** okna podczas debugowania uruchomionego procesu. Posiadanie uznane o silnych nazwach wątków przydatne może być również podczas wykonywania po zakończeniu działania debugowania za pomocą inspekcji zrzutu awaryjnego i analizowania wydajności przechwytuje przy użyciu różnych narzędzi.
@@ -40,7 +40,7 @@ Korzyści:
 * Nazwy wątków również są widoczne, gdy przy użyciu innych narzędzi, takich jak [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) debugera i [Analizator wydajności Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analizator wydajności.
 
 Ostrzeżenia:
-* Nazwy wątków są tylko widoczne w programie Visual Studio 2017 w wersji 15.6 i nowsze.
+* Nazwy wątków są widoczne tylko w programie Visual Studio 2017 w wersji 15.6 i nowszych wersjach.
 * Gdy plik zrzutu po zakończeniu działania debugowania awarii, nazwy wątku są widoczne tylko w przypadku awarii został utworzony w systemie Windows 10 w wersji 1607, Windows Server 2016 lub nowszych wersjach systemu Windows.
 
 *Przykład:*

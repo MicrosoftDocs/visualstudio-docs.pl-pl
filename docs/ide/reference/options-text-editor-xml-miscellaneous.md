@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930288"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525085"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opcje, Edytor tekstu, XML, różne
 
-Użyj **różne** strony właściwości, aby zmienić ustawienia automatycznego uzupełniania i schematu edytora XML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **różne** właściwości rozwiń **edytora tekstów** > **XML** > **różne**węzła.
+Użyj **różne** Strona opcji, aby zmienić ustawienia automatycznego uzupełniania i schematu edytora XML. Aby uzyskać dostęp do różnych opcji XML, wybierz opcję **narzędzia** > **opcje** > **edytora tekstów** > **XML**, a następnie wybierz **różne**.
 
 ## <a name="auto-insert"></a>Automatyczne wstawianie
 
@@ -53,9 +53,9 @@ Włącza funkcję tworzenia konspektów podczas otwierania pliku. To pole wyboru
 
 **Schematy**
 
-Określa lokalizację pamięci podręcznej schematów. Przycisk przeglądania (...) w nowym oknie zostanie otwarta bieżącej lokalizacji pamięci podręcznej schematu. Domyślna lokalizacja to  *\<Management Studio katalog_instalacji >* \Xml\Schemas.
+Określa lokalizację pamięci podręcznej schematów. **Przeglądaj** przycisk otwiera bieżącej lokalizacji pamięci podręcznej schematu w nowym oknie. Domyślna lokalizacja to *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Tworzenie dokumentacji XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generowanie kodu](../code-generation-in-visual-studio.md)
+- [Opcje XML — formatowanie](options-text-editor-xml-formatting.md)
+- [Narzędzia XML w programie Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

@@ -1,19 +1,21 @@
 ---
-title: Schematy XML, okno dialogowe
+title: schematy XML
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930883"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524926"
 ---
 # <a name="xml-schemas-dialog-box"></a>Okno dialogowe schematy XML
 
@@ -22,15 +24,16 @@ ms.locfileid: "55930883"
 Możesz uzyskać dostęp **schematów XML** okno dialogowe, albo klikając **schematów** przycisku w oknie dialogowym właściwości dokumentu lub wybierając **schematów** z **XML** menu.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- **Korzystanie**
 
- Wybierz, jak ma być używany schemat XML.
+**Korzystanie**
 
--   **Automatyczne**. W tym schemacie nie jest używany przez bieżącego dokumentu, ale są dostępne na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, który odpowiada `targetNamespace` tego schematu schemat zostaną automatycznie skojarzone i znajduje się w zestawie schematów.
+Wybierz, jak ma być używany schemat XML.
 
--   **Użyj tego schematu**. Ten schemat jest on używany przez bieżącego dokumentu. Użytkownik ma jawnie zażądano, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone w oparciu o dopasowanie `targetNamespace`.
+- **Automatyczne**. W tym schemacie nie jest używany przez bieżącego dokumentu, ale są dostępne na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, który odpowiada `targetNamespace` tego schematu schemat zostaną automatycznie skojarzone i znajduje się w zestawie schematów.
 
--   **Nie używaj wybranych schematów**. W tym schemacie nie jest używany przez bieżącego dokumentu, nawet wtedy, gdy schemat miała zgodną `targetNamespace`. To ustawienie może być przydatne w przypadku rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja ten sam schemat w pamięci podręcznej schematów lub rozwiązania.
+- **Użyj tego schematu**. Ten schemat jest on używany przez bieżącego dokumentu. Użytkownik ma jawnie zażądano, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone w oparciu o dopasowanie `targetNamespace`.
+
+- **Nie używaj wybranych schematów**. W tym schemacie nie jest używany przez bieżącego dokumentu, nawet wtedy, gdy schemat miała zgodną `targetNamespace`. To ustawienie może być przydatne w przypadku rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja ten sam schemat w pamięci podręcznej schematów lub rozwiązania.
 
 **TARGET Namespace**
 
@@ -50,6 +53,5 @@ Usuwa aktualnie wybranego schematu z zestawu schematów. Spowoduje to usunięcie
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Składniki edytora XML](../xml-tools/xml-editor-components.md)
 - [Instrukcje: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Pamięci podręcznej schematów](../xml-tools/schema-cache.md)

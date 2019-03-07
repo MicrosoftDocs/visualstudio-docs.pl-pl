@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600392"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525200"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globalny dostęp do obiektów w projektach pakietu Office
   Podczas tworzenia projektu pakietu Office program Visual Studio automatycznie generuje klasę o nazwie `Globals` w projekcie. Możesz użyć `Globals` klasy, aby mieć dostęp do kilku elementów inny projekt, w czasie wykonywania z dowolnego kodu w projekcie.
@@ -74,7 +74,7 @@ ms.locfileid: "56600392"
  Kod, który próbuje użyć `Globals` klasy przed zainicjowaniem jest dokument lub dodatku narzędzi VSTO może zgłosić wyjątek czasu wykonywania. Na przykład za pomocą `Globals` podczas deklarowania zmienną na poziomie klasy może się nie powieść ponieważ `Globals` klasy może nie być zainicjowana za pomocą odwołania do wszystkich elementów hosta przed utworzeniem wystąpienia deklarowanego obiektu.
 
 > [!NOTE]
->  `Globals` Klasy nigdy nie został zainicjowany w czasie projektowania, ale wystąpienia kontrolki są tworzone przez projektanta. Oznacza to, że jeśli utworzysz formant użytkownika, który korzysta z właściwością `Globals` klasy z wewnątrz klasy formantu użytkownika, należy najpierw, czy właściwość ta zwraca **null** przed podjęciem próby użycia zwróconego obiektu.
+>  `Globals` Klasy nigdy nie został zainicjowany w czasie projektowania, ale wystąpienia kontrolki są tworzone przez projektanta. Oznacza to, że jeśli utworzysz formant użytkownika, który korzysta z właściwością `Globals` klasy z wewnątrz klasy formantu użytkownika, musisz sprawdzić, czy właściwość ta zwraca **null** przed podjęciem próby użycia zwróconego obiektu.
 
 ## <a name="see-also"></a>Zobacz także
 - [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)

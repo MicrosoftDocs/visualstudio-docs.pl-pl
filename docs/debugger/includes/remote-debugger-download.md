@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56740681"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526876"
 ---
 Na urządzeniu zdalnym lub serwerze, na którym chcesz debugować na, zamiast maszyny programu Visual Studio Pobierz i zainstaluj poprawną wersję narzędzi zdalnych z łączy w poniższej tabeli.
 
 - Pobierz najnowsze narzędzia zdalne dla używanej wersji programu Visual Studio. Najnowsza wersja narzędzi zdalnych jest zgodna z wcześniejszymi wersjami programu Visual Studio, ale wcześniejszych wersji narzędzi zdalnych nie są zgodne z nowszej wersji programu Visual Studio.
 - Pobierz narzędzia zdalnej z taką samą architekturę co maszyna instalujesz je na. Na przykład jeśli chcesz debugować aplikację 32-bitowego na komputerze zdalnym z systemem 64-bitowym systemie operacyjnym, należy zainstalować narzędzia zdalne 64-bitowych.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Do momentu autonomiczny Remote tools for Visual Studio 2019 r są dostępne, jeśli potrzebujesz zdalnego debugera za pomocą programu Visual Studio 2019 r, [znaleźć zdalny debuger](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) w instalacji programu Visual Studio 2019 r, a następnie skopiuj i uruchomienie go na zdalnych maszyny lub uruchamiać jej z udziałem plików.
+
+::: moniker-end
 
 |Wersja|Łącze|Uwagi|
 |-|-|-|

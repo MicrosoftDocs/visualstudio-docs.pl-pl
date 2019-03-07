@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615406"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526710"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.
@@ -136,8 +136,6 @@ ms.locfileid: "56615406"
 - [Outlook](#Outlook)
 
 - [Word, InfoPath i PowerPoint](#WordAndInfoPath)
-
-  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Zarządzanie okienka zadań w dodatkach VSTO programu Word? ](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Program Outlook
  Po utworzeniu niestandardowego okienka zadań programu Outlook niestandardowego okienka zadań jest skojarzony z określonym oknie Eksploratora lub Inspektora. Eksploratory usługi są systemu windows, które wyświetlają zawartość folderu i inspektorzy, wyświetlające element, taki jak wiadomość e-mail lub zadania.

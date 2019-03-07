@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931757"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525456"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 
@@ -34,7 +34,7 @@ Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XM
 
 3.  Wprowadź nazwę pliku w **nazwa** pole i naciśnij klawisz **Dodaj**.
 
-     Plik XML jest dodawany do projektu i otworzyć w edytorze XML. Ten plik zawiera domyślne deklaracji XML, `<?xml version="1.0" encoding="utf-8" ?>`.
+     Plik XML jest dodawany do projektu i otwarty w edytorze XML. Ten plik zawiera domyślne deklaracji XML, `<?xml version="1.0" encoding="utf-8" ?>`.
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>Aby dodać istniejący plik XML do projektu
 

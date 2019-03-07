@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720034"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526711"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -184,7 +184,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 2. W programie Visual Studio, kliknij przycisk **Debuguj > Dołącz do procesu** (Ctrl + Alt + P).
 
     > [!TIP]
-    > W programie Visual Studio 2017, możesz dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P).
+    > W programie Visual Studio 2017 i nowszych wersjach można dołączyć ponownie do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P).
 
 3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: 4022**.
 4. Kliknij przycisk **Odśwież**.

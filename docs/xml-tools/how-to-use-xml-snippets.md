@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913629"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526220"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 
@@ -80,7 +80,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do **Otocz** pole
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Aby korzystać z funkcji Otocz przez z menu kontekstowego
 
-1. Zaznacz tekst, aby ująć w edytorze XML.
+1. Zaznacz tekst, który należy ująć w edytorze XML.
 
 2. Kliknij prawym przyciskiem myszy i wybierz **Otocz**.
 
@@ -90,7 +90,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do **Otocz** pole
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Aby użyć Otocz menu funkcji IntelliSense
 
-1. Zaznacz tekst, aby ująć w edytorze XML.
+1. Zaznacz tekst, który należy ująć w edytorze XML.
 
 2. Z **Edytuj** menu wskaż **IntelliSense**, a następnie wybierz pozycję **Otocz**.
 

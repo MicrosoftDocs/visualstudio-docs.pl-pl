@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913957"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526246"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Instrukcje: Generowanie fragmentu kodu XML na podstawie schematu XML
 
@@ -43,7 +43,7 @@ Wartości domyślne są generowane i oznaczane jako wartości można edytować. 
 
 ## <a name="example"></a>Przykład
 
- Kroki opisane w tej sekcji opisano do użycia wygenerować schematu XML fragmentu kodu funkcji edytora XML.
+ Kroki opisane w tej sekcji pokazują, jak za pomocą funkcji fragment kodu XML generowanych przez schematu edytora XML.
 
 > [!NOTE]
 > Przed rozpoczęciem tych procedur, należy zapisać plik schematu na komputerze lokalnym.

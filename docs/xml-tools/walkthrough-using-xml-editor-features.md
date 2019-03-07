@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954689"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525873"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: Korzystanie z funkcji edytora XML
 
@@ -96,9 +96,11 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 
 ## <a name="to-format-the-xml-document"></a>Format dokumentu XML
 
-- Wybierz **Formatuj dokument** przycisk na pasku narzędzi edytora XML.
+- Wybierz **Formatuj dokument** przycisk na pasku narzędzi edytora XML, lub naciśnij **Ctrl**+**E**,**D**.
 
-    Dokument XML jest sformatowany.
+   ![Format XML dokumentu przycisku w programie Visual Studio](media/format-xml-document.png)
+
+   Dokument XML jest sformatowany.
 
 ## <a name="to-save-the-xml-document"></a>Można zapisać dokumentu XML
 
@@ -109,7 +111,8 @@ Kroki opisane w tym przewodniku opisano można utworzyć nowego dokumentu XML. P
 2.  Wprowadź nazwę pliku i lokalizację dokumentu XML, a następnie kliknij przycisk **Zapisz**.
 
 ## <a name="hiredatexsd-file"></a>Plik hireDate.xsd
- Następujący plik schematu jest używany przez instruktażu.
+
+Następujący plik schematu jest używany w tym przewodniku:
 
 ```xml
 <?xml version="1.0"?>

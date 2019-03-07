@@ -1,6 +1,6 @@
 ---
 title: Debugowanie aplikacji ASP.NET wdrożonej | Dokumentacja firmy Microsoft
-ms.date: 06/30/2017
+ms.date: 06/30/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: bfbf5dc7421446c863bfd104f4247bb06411dfb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 57594775afe5d6708cd5d11b141f8cffc1b42e6c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717627"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525391"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debugowanie ASP.NET wdrożonej aplikacji
 Aby użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugowanie wdrożonej aplikacji, należy dołączyć do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego przetwarzania i upewnij się, że debuger ma dostęp do symboli dla aplikacji. Należy również zlokalizować i Otwórz pliki źródłowe dla aplikacji. Aby uzyskać więcej informacji, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [jak: Znajdowanie nazwy procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), i [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).

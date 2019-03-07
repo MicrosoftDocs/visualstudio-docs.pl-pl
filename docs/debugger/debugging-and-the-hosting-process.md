@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952096"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525833"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debugowanie i proces hostingu
 Procesu hostingu Visual Studio zwiększa wydajność debugera i włącza nowe funkcje debugera, takich jak debugowanie częściowego zaufania i Obliczanie wyrażenia czasu projektowania. Jeśli chcesz, możesz wyłączyć procesu hostingu. W poniższych sekcjach opisano niektóre różnice między debugowania i bez procesu hostingu.
 
 > [!NOTE]
-> W programie Visual Studio 2017 możliwość debugowania za pomocą procesu hostingu nie jest już potrzebna i został usunięty. Aby uzyskać więcej informacji, zobacz [debugowania: Visual Studio 2017 ma na celu przyspieszenie najmniej Ulubione zadania](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> Począwszy od programu Visual Studio 2017, możliwość debugowania za pomocą procesu hostingu nie jest już potrzebna i został usunięty. Aby uzyskać więcej informacji, zobacz [debugowania: Visual Studio 2017 ma na celu przyspieszenie najmniej Ulubione zadania](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Częściowego zaufania, debugowania i kliknij przycisk — raz zabezpieczeń
  Debugowanie częściowego zaufania wymaga procesu hostingu. Jeśli wyłączysz procesu hostingu, debugowanie częściowego zaufania nie będzie działać nawet, jeśli włączona jest funkcja zabezpieczeń częściowego zaufania **zabezpieczeń** strony **właściwości projektu**. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie aplikacji częściowej relacji zaufania](/visualstudio/debugger/debugger-security).

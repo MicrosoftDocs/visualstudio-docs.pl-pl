@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689307"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526545"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -54,7 +54,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 **Włącz filtry punktów przerwania**: Umożliwia ustawiania filtrów punktów przerwania, tak że wpływają one tylko określone procesy, wątki lub komputery.
 
-**Użyj nowego pomocnika wyjątków**: Umożliwia pomocnika wyjątków (Visual Studio 2017), która zastępuje Asystenta wyjątków.
+**Użyj nowego pomocnika wyjątków**: Umożliwia pomocnika wyjątków, która zastępuje Asystenta wyjątków. (Pomocnika wyjątków jest obsługiwana w programie Visual Studio 2017)
 
 > [!NOTE]
 > Dla kodu zarządzanego, ta opcja był wcześniej nazywany programem **Włącz Asystenta wyjątków** .
@@ -158,7 +158,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 Jeśli używasz starszej wersji programu Visual Studio może istnieć pewne dodatkowe opcje.
 
-**Włącz Asystenta wyjątków**: Dla kodu zarządzanego umożliwia Asystenta wyjątków. W programie Visual Studio 2017 pomocnika wyjątków zastąpione Asystenta wyjątków.
+**Włącz Asystenta wyjątków**: Dla kodu zarządzanego umożliwia Asystenta wyjątków. Począwszy od programu Visual Studio 2017 pomocnika wyjątków zastąpione Asystenta wyjątków.
 
 **Operacja unwind na stosie wywołań dotycząca nieobsłużonych wyjątków**: Powoduje, że **stos wywołań** okna, aby wycofać stos wywołań do punktu przed wystąpieniem nieobsługiwanego wyjątku.
 

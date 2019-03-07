@@ -3,7 +3,7 @@ title: Zdalne debugowanie C# lub projektu VB | Dokumentacja firmy Microsoft
 ms.custom:
 - remotedebugging"=
 - seodec18
-ms.date: 08/14/2017
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f88379af3ecfe9466fca72f756fd88e6794e9cb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705453"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526740"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Aby debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, skonfiguruj projekt, aby nawiązać połączenie z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.

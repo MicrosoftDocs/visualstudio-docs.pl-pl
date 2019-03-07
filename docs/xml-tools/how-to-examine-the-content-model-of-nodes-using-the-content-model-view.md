@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920915"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526002"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Instrukcje: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości
 
@@ -23,11 +23,11 @@ W tym temacie opisano sposób zapoznaj się z węzłów za pomocą [widoku model
 
 1.  Utwórz nowy plik schematu XML.
 
-2.  Kliknij przycisk **Użyj edytora XML możesz wyświetlać i edytować podstawowego pliku schematu XML** w widoku startowego.
+2.  Kliknij przycisk **edytora XML użyj do wyświetlania i edytowania pliku schematu XML podstawowego** w widoku startowego.
 
 3.  Skopiuj przykładowy kod XML schematu z [schematu XML przykładowych: schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) i wklej go w celu zastąpienia kodu, który został dodany do nowego pliku XSD domyślnie.
 
-4.  Wybierz `purchaseOrder` element w Eksploratorze schematu, klikając prawym przyciskiem myszy `purchaseOrder` element w edytorze XML i wybierając polecenie **Pokaż w Eksploratorze XML**.
+4.  Wybierz `purchaseOrder` element w Eksploratorze schematu, klikając prawym przyciskiem myszy `purchaseOrder` elementu w pliku XML edytora i zaznaczanie **Pokaż w Eksploratorze XML**.
 
 5.  Kliknij prawym przyciskiem myszy `purchaseOrder` w Eksploratorze XML, a następnie wybierz pozycję **Pokaż w widoku modelu zawartości**.
 

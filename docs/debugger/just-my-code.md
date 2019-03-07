@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223679"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526779"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuguj tylko kod użytkownika przy użyciu tylko mój kod
 
@@ -115,7 +115,7 @@ Jeśli debuger uderza w wyjątku, zatrzymuje na wyjątek, czy jest ono w kodzie 
 Dla projektów języka C++, można określić moduły, pliki źródłowe i funkcji **stos wywołań** okna traktuje jako kod niezwiązany z użytkownikiem, określając je w  *\*.natjmc* plików. To dostosowanie ma zastosowanie również do kodu, przechodzenie krok po kroku, korzystając z najnowszą wersję kompilatora (zobacz [C++ tylko mój kod](#BKMK_CPP_User_and_non_user_code)).
 
 - Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać *.natjmc* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natjmc* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natjmc* plik *%USERPROFILE%\My dokumenty\\<Visual Studio version>\Visualizers* folderu.
 
 A *.natjmc* plik jest plikiem XML o następującej składni:
 
@@ -165,7 +165,7 @@ A *.natjmc* plik jest plikiem XML o następującej składni:
 W projektach C++ można określić funkcji, aby przejść przez wymienienie ich jako kod niezwiązany z użytkownikiem w  *\*.natstepfilter* plików. Funkcje wymienione w  *\*.natstepfilter* pliki nie są zależne od ustawień tylko mój kod.
 
 - Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników lokalnych z programu Visual Studio, należy dodać *.natstepfilter* plik *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* folderu.
-- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natstepfilter* plik *%USERPROFILE%\My 2017\Visualizers Documents\Visual Studio* folderu.
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, dodać *.natstepfilter* plik *%USERPROFILE%\My dokumenty\\<Visual Studio version>\Visualizers* folderu.
 
 A *.natstepfilter* plik jest plikiem XML o następującej składni:
 

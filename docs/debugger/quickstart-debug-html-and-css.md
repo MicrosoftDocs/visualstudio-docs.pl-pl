@@ -1,6 +1,6 @@
 ---
 title: Debugowanie kodu HTML i CSS w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.date: 07/17/2017
+ms.date: 07/17/2018
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3bb136367d08fa430080cb26290fff9aa4e15d13
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721059"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526259"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debugowanie kodu HTML i CSS w aplikacjach platformy UWP w programie Visual Studio
 

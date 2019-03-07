@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952648"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526649"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -27,7 +27,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 
  Obszar projektu w widoku wykresu wyświetla zawartość [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md). Jeśli obszar roboczy zawiera wszystkie globalne węzły z zestawu schematów, węzły są wyświetlane na powierzchni projektowej widoku wykresu i strzałki są rysowane między węzłami, które mają relacje.
 
- Dwukrotne kliknięcie węzła w widoku wykresu zostanie wyświetlone się Edytor XML.
+ Dwukrotne kliknięcie węzła w widoku wykresu zostanie wyświetlone okno edytora XML.
 
  Aby usunąć wybrane węzły z obszaru roboczego, użyj narzędzi Projektanta XSD lub **Usuń** klucza.
 
@@ -142,7 +142,7 @@ Suwak powiększenia jest nieprzezroczysta, zaznacz go, umieść kursor nad nim l
 
  Możesz przełączać się i z powrotem między widoku wykresu i edytorem XML, klikając węzeł i przy użyciu menu kontekstowe (kliknij prawym przyciskiem myszy) widoku kodu.
 
- Jeśli wprowadzisz zmiany w schemacie zestawu w edytorze XML, zmiany zostaną zsynchronizowane w widoku wykresu. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
+ Jeśli wprowadzisz zmiany w schemacie ustawiane za pomocą edytora XML, zmiany zostaną zsynchronizowane w widoku wykresu. Aby uzyskać więcej informacji, zobacz [Integracja z edytorem XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Zobacz także
 

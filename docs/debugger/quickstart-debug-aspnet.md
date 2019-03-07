@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683600"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525404"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
 
@@ -94,7 +94,7 @@ A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studi
 
 ## <a name="navigate-code"></a>Przechodzenie do kodu
 
-Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, co nowego w programie Visual Studio 2017.
+Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, która jest dostępna, począwszy od programu Visual Studio 2017.
 
 Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `return c2` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png) pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisk.
 

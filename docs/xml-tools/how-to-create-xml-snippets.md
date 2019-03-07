@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907337"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526623"
 ---
 # <a name="how-to-create-xml-snippets"></a>Instrukcje: Tworzenie fragmentów kodu XML
 

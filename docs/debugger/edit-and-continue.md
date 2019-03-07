@@ -1,7 +1,7 @@
 ---
 title: Edytowanie kodu i Kontynuuj debugowanie | Dokumentacja firmy Microsoft
 ms.custom: seodec18
-ms.date: 05/31/2017
+ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc71b37572d76632a0936f23386985c2e3a9dc1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696483"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525505"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edytowanie kodu i kontynuowanie debugowania w programie Visual Studio (C#, VB, C++)
 Edytuj i Kontynuuj jest funkcją zaoszczędzić czas, która pozwala do wprowadzania zmian w kodzie źródłowym, gdy program działa w trybie przerwania. Po wznowieniu działania programu, wybierając polecenie wykonania, takie jak **Kontynuuj** lub **kroku**, Edytuj i Kontynuuj automatycznie stosuje te zmiany kodu, z pewnymi ograniczeniami. Dzięki temu można wprowadzić zmiany do kodu podczas sesji debugowania, nie trzeba zatrzymać, ponownie skompilować całego programu i ponownie uruchomić sesję debugowania.

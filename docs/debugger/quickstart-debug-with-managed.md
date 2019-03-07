@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696886"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525378"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
 
@@ -142,7 +142,7 @@ A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studi
 
 ## <a name="navigate-code"></a>Przechodzenie do kodu
 
-Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, co nowego w programie Visual Studio 2017.
+Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, która jest dostępna, począwszy od programu Visual Studio 2017.
 
 Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.AddLast(20)` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisku.
 

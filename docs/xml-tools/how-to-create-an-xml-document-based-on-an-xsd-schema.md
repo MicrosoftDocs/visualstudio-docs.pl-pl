@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912888"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525121"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Instrukcje: Tworzenie dokumentu XML na podstawie schematu XSD
 
@@ -73,7 +73,3 @@ Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerow
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>Zobacz także
-
-- [Praca z danymi XML](../xml-tools/working-with-xml-data.md)
