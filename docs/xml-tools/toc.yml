@@ -1,129 +1,123 @@
+items:
 - name: Narzędzia XML w Visual Studio
   href: xml-tools-in-visual-studio.md
   items:
-    - name: Praca z danymi XML
-      href: working-with-xml-data.md
+  - name: Edytor XML
+    href: xml-editor.md
+    items:
+    - name: Walidacja dokumentów XML
+      href: xml-document-validation.md
+    - name: Funkcje IntelliSense w edytorze XML
+      href: xml-editor-intellisense-features.md
+    - name: Fragmenty kodu XML
+      href: xml-snippets.md
       items:
-        - name: Edytor XML
-          href: xml-editor.md
-          items:
-            - name: Walidacja dokumentów XML
-              href: xml-document-validation.md
-            - name: Funkcje IntelliSense w edytorze XML
-              href: xml-editor-intellisense-features.md
-            - name: Fragmenty kodu XML
-              href: xml-snippets.md
-            - name: Edytowanie arkuszy stylów XSLT
-              href: editing-xslt-style-sheets.md
-            - name: Pamięć podręczna schematów
-              href: schema-cache.md
-            - name: Składniki edytora XML
-              href: xml-editor-components.md
-              items:
-                - name: 'Inne, XML, Edytor tekstu, Opcje, okno dialogowe'
-                  href: miscellaneous-xml-text-editor-options-dialog-box.md
-                - name: 'Właściwości dokumentu XML, Właściwości, okno'
-                  href: xml-document-properties-properties-window.md
-                - name: 'Formatowanie, XML, Edytor tekstu, Opcje, okno dialogowe'
-                  href: formatting-xml-text-editor-options-dialog-box.md
-                - name: 'Schematy XML, okno dialogowe'
-                  href: xml-schemas-dialog-box.md
-            - name: Zadania edytora XML
-              items:
-                - name: 'Przewodnik: korzystanie z funkcji edytora XML'
-                  href: walkthrough-using-xml-editor-features.md
-                - name: Wybieranie schematów XML do użycia
-                  href: how-to-select-the-xml-schemas-to-use.md
-                - name: Tworzenie schematu XML na podstawie dokumentu XML
-                  href: how-to-create-an-xml-schema-from-an-xml-document.md
-                - name: Wykonywanie transformacji XSLT w edytorze XML
-                  href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
-                - name: Edytowanie plików XML
-                  href: how-to-edit-xml-files.md
-                - name: Używanie fragmentów kodu XML
-                  href: how-to-use-xml-snippets.md
-                - name: Generowanie fragmentu kodu XML na podstawie schematu XML
-                  href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
-                - name: Tworzenie fragmentów kodu XML
-                  href: how-to-create-xml-snippets.md
-                - name: 'Przewodnik: używanie funkcji XSLT IntelliSense'
-                  href: walkthrough-using-xslt-intellisense.md
-                - name: 'Przewodnik: używanie hierarchii XSLT'
-                  href: walkthrough-using-xslt-hierarchy.md
-                - name: 'Przewodnik: profiler XSLT'
-                  href: walkthrough-xslt-profiler.md
-        - name: Projektant schematu XML
-          href: xml-schema-designer.md
-          items:
-            - name: Eksplorator schematu XML
-              href: xml-schema-explorer.md
-              items:
-                - name: Wyszukiwanie zestawu schematów
-                  href: searching-the-schema-set.md
-                - name: 'Sortowanie, filtrowanie i grupowanie'
-                  href: sorting-filtering-and-grouping-xml-schema-explorer.md
-                - name: Menu kontekstowe
-                  href: context-menus-xml-schema-explorer.md
-                - name: Integracja literałów XML
-                  href: integration-of-xml-literals-with-xml-schema-explorer.md
-            - name: Obszar roboczy projektanta schematu XML
-              href: xml-schema-designer-workspace.md
-              items:
-                - name: Widok startowy
-                  href: start-view.md
-                - name: Widok modelu zawartości
-                  href: content-model-view.md
-                - name: Widok wykresu
-                  href: graph-view.md
-            - name: Integracja z edytorem XML
-              href: integration-with-xml-editor.md
-            - name: Zadania projektanta schematu XML
-              items:
-                - name: Tworzenie i edytowanie pliku schematu XSD
-                  href: how-to-create-and-edit-an-xsd-schema-file.md
-                - name: Tworzenie dokumentu XML na podstawie schematu XSD
-                  href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
-                - name: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
-                  href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
-                - name: Przełączanie się między widokami i edytorem XML
-                  href: how-to-switch-between-views-and-the-xml-editor.md
-                - name: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML
-                  href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
-                - name: Dodawanie węzłów do obszaru roboczego z widoku startowego
-                  href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
-                - name: Omówienie zestawu schematu przy użyciu widoku wykresu
-                  href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
-                - name: Badanie modelu zawartości węzłów przy użyciu widoku modelu zawartości
-                  href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
-                - name: Używanie projektanta schematu XML z literałami XML
-                  href: how-to-use-the-xml-schema-designer-with-xml-literals.md
-                - name: Drukowanie diagramów z widoku wykresu i widoku modelu zawartości
-                  href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
-                - name: Przykładowe pliki XSD
-                  href: sample-xsd-files.md
-                  items:
-                    - name: Prosty schemat
-                      href: sample-xsd-file-simple-schema.md
-                    - name: Schemat zamówienia zakupu
-                      href: sample-xsd-file-purchase-order-schema.md
-                    - name: Relacje
-                      href: sample-xsd-file-relationships.md
-        - name: Zagadnienia dotyczące zabezpieczeń podczas pracy z danymi XML
-          href: security-considerations-when-working-with-xml-data.md
-    - name: Debugowanie kodu XSLT
-      href: debugging-xslt.md
+      - name: Używanie fragmentów kodu XML
+        href: how-to-use-xml-snippets.md
+      - name: Generowanie fragmentu kodu na podstawie schematu XML
+        href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
+      - name: Tworzenie fragmentów kodu XML
+        href: how-to-create-xml-snippets.md
+    - name: Edytowanie arkuszy stylów XSLT
+      href: editing-xslt-style-sheets.md
+    - name: Pamięć podręczna schematów
+      href: schema-cache.md
+    - name: Zadania edytora XML
       items:
-        - name: Debugowanie XSLT
-          href: how-to-start-debugging-xslt.md
-        - name: Używanie punktów przerwania w kodzie XSLT
-          href: how-to-use-breakpoints-with-xslt.md
-        - name: Ocena wyrażenia XPath
-          href: how-to-evaluate-an-xpath-expression.md
-        - name: 'Przewodnik: debugowanie arkusza stylów XSLT'
-          href: walkthrough-debug-an-xslt-style-sheet.md
-        - name: Szablony domyślne XSLT
-          href: xslt-default-templates.md
-        - name: Interfejs użytkownika debugera (XSLT)
-          href: debugger-user-interface-xslt.md
-        - name: Profiler XSLT
-          href: xslt-profiler.md
+      - name: 'Przewodnik: Używanie funkcji edytora XML'
+        href: walkthrough-using-xml-editor-features.md
+      - name: Wybieranie schematów XML do użycia
+        href: how-to-select-the-xml-schemas-to-use.md
+      - name: Tworzenie schematu XML na podstawie dokumentu XML
+        href: how-to-create-an-xml-schema-from-an-xml-document.md
+      - name: Wykonywanie przekształcenia XSLT w edytorze XML
+        href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
+      - name: Edytowanie plików XML
+        href: how-to-edit-xml-files.md
+      - name: Wskazówki dotyczące XSLT
+        items:
+        - name: Funkcja IntelliSense XSLT
+          href: walkthrough-using-xslt-intellisense.md
+        - name: Hierarchia XSLT
+          href: walkthrough-using-xslt-hierarchy.md
+    - name: Właściwości pliku XML
+      href: xml-document-properties-properties-window.md
+    - name: Schematy XML, okno dialogowe
+      href: xml-schemas-dialog-box.md
+  - name: Projektant schematu XML
+    href: xml-schema-designer.md
+    items:
+    - name: Eksplorator schematu XML
+      href: xml-schema-explorer.md
+      items:
+      - name: Wyszukiwanie zestawu schematów
+        href: searching-the-schema-set.md
+      - name: Sortowanie, filtrowanie i grupowanie
+        href: sorting-filtering-and-grouping-xml-schema-explorer.md
+      - name: Menu kontekstowe
+        href: context-menus-xml-schema-explorer.md
+      - name: Integracja literałów XML
+        href: integration-of-xml-literals-with-xml-schema-explorer.md
+    - name: Obszar roboczy projektanta schematu XML
+      href: xml-schema-designer-workspace.md
+      items:
+      - name: Widok startowy
+        href: start-view.md
+      - name: Widok modelu zawartości
+        href: content-model-view.md
+      - name: Widok wykresu
+        href: graph-view.md
+    - name: Integracja z edytorem XML
+      href: integration-with-xml-editor.md
+    - name: Zadania projektanta schematu XML
+      items:
+      - name: Tworzenie i edytowanie pliku schematu XSD
+        href: how-to-create-and-edit-an-xsd-schema-file.md
+      - name: Tworzenie dokumentu XML na podstawie schematu XSD
+        href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
+      - name: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
+        href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
+      - name: Przełączanie między widokami i edytorem XML
+        href: how-to-switch-between-views-and-the-xml-editor.md
+      - name: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML
+        href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
+      - name: Dodawanie węzłów do obszaru roboczego z widoku startowego
+        href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
+      - name: Omówienie zestawu schematów
+        href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
+      - name: Badanie modelu zawartości węzłów
+        href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
+      - name: Używanie projektanta schematu XML z literałami XML
+        href: how-to-use-the-xml-schema-designer-with-xml-literals.md
+      - name: Drukowanie diagramów
+        href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
+      - name: Przykładowe pliki XSD
+        href: sample-xsd-files.md
+        items:
+        - name: Prosty schemat
+          href: sample-xsd-file-simple-schema.md
+        - name: Schemat zamówienia zakupu
+          href: sample-xsd-file-purchase-order-schema.md
+        - name: Relacje
+          href: sample-xsd-file-relationships.md
+  - name: Debugowanie kodu XSLT
+    href: debugging-xslt.md
+    items:
+    - name: 'Przewodnik: Debugowanie arkusza stylów XSLT'
+      href: walkthrough-debug-an-xslt-style-sheet.md
+    - name: Ocena wyrażenia XPath
+      href: how-to-evaluate-an-xpath-expression.md
+    - name: Interfejs użytkownika debugera XSLT
+      href: debugger-user-interface-xslt.md
+    - name: Szablon domyślny XSLT
+      href: xslt-default-templates.md
+    - name: Profiler XSLT
+      href: xslt-profiler.md
+  - name: Zagadnienia związane z zabezpieczeniami kodu XML
+    href: security-considerations-when-working-with-xml-data.md
+ms.openlocfilehash: 9d651c9402a1cd7bc7d1ebfe81c9fec151d065a0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525417"

@@ -29,6 +29,8 @@ items:
       href: install/create-an-offline-installation-of-visual-studio.md
     - name: Instalowanie certyfikatów wymaganych do instalacji w trybie offline
       href: install/install-certificates-for-visual-studio-offline.md
+  - name: Instalowanie obok siebie różnych wersji programu Visual Studio
+    href: install/install-visual-studio-versions-side-by-side.md
   - name: Wybieranie lokalizacji instalacji
     href: install/change-installation-locations.md
   - name: Rozwiązywanie problemów z instalacją
@@ -1151,9 +1153,9 @@ items:
   - name: Porozmawiaj z nami
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3ee3f3df16357d6a39090dc64504ef7f7fae6351
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324263"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526558"
