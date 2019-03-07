@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/06/2019
+ms.date: 03/07/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dc071535dee1d2f5405ab01af4fcefded1154c6
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526480"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567412"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -178,6 +178,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 marca 2019 r. | 16.0.28705.295 |
+| 16.0.0 | Wyświetl podgląd 4.1 Svc1 | 6 marca 2019 r. | 16.0.28705.295 |
 | 16.0.0 | W wersji Release Candidate 1 (RC.1) | 5 marca 2019 r. | 16.0.28701.123 |
 | 16.0.0 | Podgląd 4.1 | 5 marca 2019 r. | 16.0.28701.123 |
 | 16.0.0 | W wersji Release Candidate (RC) | 27 lutego 2019 r. | 16.0.28625.133 |

@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802569"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567305"
 ---
 # <a name="devops-with-unity-apps"></a>Metodyka DevOps dla aplikacji Unity
 
@@ -26,7 +26,7 @@ Poniższe tabele określają, jak funkcje DevOps w programie Visual Studio zasto
 
 ## <a name="agile-tools"></a>Narzędzia agile
 
-Opis łącza: [Zarządzanie projektem o narzędzi Agile i Agile](/azure/devops/boards/backlogs/overview?view=vsts) (przy użyciu platformy Azure, tablic lub TFS, w tym Team Explorer Everywhere)
+Opis łącza: [Zarządzanie projektem o narzędzi Agile i Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (przy użyciu platformy Azure, tablic lub TFS, w tym Team Explorer Everywhere)
 
 Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.
 
@@ -75,7 +75,7 @@ Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:
 
 ## <a name="build"></a>Kompilacja
 
-Opis łącza: **[Potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)**
+Opis łącza: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|

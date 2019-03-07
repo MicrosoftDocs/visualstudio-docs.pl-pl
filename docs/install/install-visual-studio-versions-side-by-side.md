@@ -1,5 +1,5 @@
 ---
-title: Instalowanie programu Visual Studio wersje side-by-side
+title: Instalowanie obok siebie różnych wersji programu Visual Studio
 ms.date: 03/05/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-isntallation
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 47957ac5ceac1d5b1be8da3b9625631a4617f61b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 22c4f24c8e97d98bb0bbe88fb998deb5929c6b7b
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526942"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567128"
 ---
-# <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie programu Visual Studio wersje side-by-side
+# <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
 Visual Studio można zainstalować na komputerze, który ma już zainstalowanego programu Visual Studio w wersji starszej lub nowszej.
 
@@ -61,7 +61,7 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 | Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Programowanie za pomocą wizualizacji F# w programie Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset.md?view=vs-2017) |
+|C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -69,7 +69,7 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assembiles.md?view=vs-2017)
+* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 | Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
 | Visual F# | [Programowanie za pomocą wizualizacji F# w programie Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2019) |
-| C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset.md?view=vs-2019) |
+| C++ | [Instrukcje: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -88,6 +88,6 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md?view=vs-2019)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assembiles.md?view=vs-2019)
+* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
 
 ::: moniker-end

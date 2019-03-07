@@ -155,7 +155,7 @@ JavaScript</a>
                                                 <h3>Tworzenie aplikacji</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                        <a class="barLink" href="/visualstudio/get-started/csharp/tutorial-uwp">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
 Windows Universal app</a>
                                                     </li>
@@ -170,8 +170,7 @@ Aplikacja klasyczna Windows</a>
 Aplikacja mobilna</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-                ">
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
 Gra na platformie Unity</a>
                                                     </li>

@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 89575318a8dd5357e5f786e25d3e3518d35348d6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 297c35b7c42287613bdbc567631ddb6b1c1d9dba
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954296"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567237"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji Offline programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +87,4 @@ Ta strona w tym artykule opisano sposób instalowania programu Visual Studio 201
 |        turecki        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>Zobacz też
- [Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)
+ [Instalowanie programu Visual Studio](install-visual-studio-2015.md)

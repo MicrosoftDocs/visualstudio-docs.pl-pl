@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834075"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567386"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 
 - Aby utworzyć aplikacje dla wielu platform przy użyciu Apache Cordova [pobieranie programu Visual Studio Tools for Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Aby utworzyć [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)oraz aplikacje uniwersalne (obsługujących obu platform) [Pobierz narzędzia](http://dev.windows.com/develop/downloads).
+- Aby utworzyć [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)oraz aplikacje uniwersalne (obsługujących obu platform) [Pobierz narzędzia](https://developer.microsoft.com/windows/downloads).
 
 - Aby utworzyć usług w chmurze, zobacz [witryny Microsoft Azure](http://azure.microsoft.com/documentation/).
 
@@ -44,15 +44,15 @@ JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pis
 |Funkcja|Opis|
 |-------------|-----------------|
 |Klasy|Nowa składnia obsługuje deklaracje [klasy](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
-|Obietnic|[Obietnic](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) umożliwia łatwiejsze i czyszcząca asynchronicznego programowania. Promise konstruktory są obsługiwane, wraz z `all` i `race` metody narzędziowe.|
+|Obietnic|[Obietnic](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) umożliwia łatwiejsze i czyszcząca asynchronicznego programowania. Promise konstruktory są obsługiwane, wraz z `all` i `race` metody narzędziowe.|
 |Iteratory|Teraz można wykonać iterację za pośrednictwem iterable obiektów (w tym tablice, tablicy obiektów i Iteratory), wywołując zaczepienia iteracji niestandardowych za pomocą instrukcji do wykonania dla wartości każdej różne właściwości. Aby uzyskać więcej informacji, zobacz [Iteratory i generatory kodu](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Uwaga:**  Generatory nie są jeszcze obsługiwane.|
 |Funkcje|W funkcji strzałkowej (= >) udostępnia skróconej składni `function` — słowo kluczowe, które funkcje leksykalne `this` powiązania.|
-|Nowe metody dla wbudowanych obiektów|[Obiekt Array](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math — obiekt](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [numer obiektu](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [obiektu obiektu](/visualstudio/scripting-docs/javascript/reference/object-object-javascript), i [ciągu obiektu](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) wbudowane obiekty zawierają wiele nowych funkcji narzędzia i właściwości do manipulowania i inspekcji danych.|
+|Nowe metody dla wbudowanych obiektów|[Obiekt Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math — obiekt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [numer obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [obiektu obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object), i [ciągu obiektu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) wbudowane obiekty zawierają wiele nowych funkcji narzędzia i właściwości do manipulowania i inspekcji danych.|
 |Ulepszenia literału obiektu|Obiekty obsługują obecnie obliczone właściwości, metody zwięzłe definicje i oczekiwaliśmy składni skrótu dla właściwości, której wartość jest inicjowany do zmiennej o tej samej nazwie. Aby uzyskać więcej informacji, zobacz [tworzenia obiektów](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
-|Serwery proxy|[Serwery proxy](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) Włącz niestandardowe zachowanie dla obiektów.|
+|Serwery proxy|[Serwery proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) Włącz niestandardowe zachowanie dla obiektów.|
 |Parametrów REST|Parametry REST umożliwiają włączenie następujących po sobie argumentów w wywołaniu funkcji do tablicy. Aby uzyskać więcej informacji, zobacz [funkcji](/visualstudio/scripting-docs/javascript/functions-javascript).|
-|Operator rozwijania|[Operator rozpiętości](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) rozszerza iterable wyrażeń w oddzielne argumenty. Na przykład `a.b(…array)` jest w przybliżeniu taki sam jak `a.b.apply(a, array)`.|
-|Symbole|[Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) obiektów Zezwalaj na właściwości, które mają zostać dodane do istniejących obiektów z możliwością nie zakłóceń z istniejącymi właściwościami obiektu, nie niezamierzone widoczności i innych dodatkach nieskoordynowane przez inny kod.|
-|Ciągi szablonu|[Ciągi szablonu](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) są literały ciągu, które umożliwiają wyrażeń, które ma zostać obliczone i łączone za pomocą literału ciągu.|
-|Ulepszenia Unicode|Wprowadzono ulepszenia do obsługi standardu Unicode. Na przykład nowy format sekwencji ucieczki obsługują punkty kodowe błyszczące (punkty kodowe z więcej niż cztery cyfry szesnastkowe). Aby uzyskać więcej informacji, zobacz [znaki specjalne](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
-|Weakset —|A [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) to zbiór obiektów, które będą bezużyteczne, jeśli nie są przywoływane dowolnej innej lokalizacji.|
+|Operator rozwijania|[Operator rozpiętości](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) rozszerza iterable wyrażeń w oddzielne argumenty. Na przykład `a.b(…array)` jest w przybliżeniu taki sam jak `a.b.apply(a, array)`.|
+|Symbole|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) obiektów Zezwalaj na właściwości, które mają zostać dodane do istniejących obiektów z możliwością nie zakłóceń z istniejącymi właściwościami obiektu, nie niezamierzone widoczności i innych dodatkach nieskoordynowane przez inny kod.|
+|Ciągi szablonu|[Ciągi szablonu](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) są literały ciągu, które umożliwiają wyrażeń, które ma zostać obliczone i łączone za pomocą literału ciągu.|
+|Ulepszenia Unicode|Wprowadzono ulepszenia do obsługi standardu Unicode. Na przykład nowy format sekwencji ucieczki obsługują punkty kodowe błyszczące (punkty kodowe z więcej niż cztery cyfry szesnastkowe). Aby uzyskać więcej informacji, zobacz [znaki specjalne](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|
+|Weakset —|A [WeakSet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) to zbiór obiektów, które będą bezużyteczne, jeśli nie są przywoływane dowolnej innej lokalizacji.|

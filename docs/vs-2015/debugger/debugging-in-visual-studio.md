@@ -18,12 +18,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b54f788c77488ba780a0b52d4d6b332a974748af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763851"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567162"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywan
 
  Aby uzyskać krótkie wprowadzenie do debugowania i diagnostyki w programie Visual Studio, zobacz [debugowanie, profilowanie i diagnozowanie](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Co nowego w debugerze programu Visual Studio 2015 jest](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) w tym artykule opisano nowe funkcje w programie Visual Studio 2015.
+-   [Co nowego w debugerze programu Visual Studio 2015 jest](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) w tym artykule opisano nowe funkcje w programie Visual Studio 2015.
 
--   [Debuger Windows](../debugger/debugger-windows.md)wyświetla inny debuger systemu windows.
+-   [Debuger Windows](../debugger/debugger-windows.md) wyświetla inny debuger systemu windows.
 
 -   [Podstawowe informacje o debugerze](../debugger/debugger-basics.md) w tym artykule omówiono podstawy używania debugera programu Visual Studio. Tematy obejmują podstawy, debugowania uruchamianie debugera automatycznie, zrzuty Kontrola wykonywania, dołączanie do uruchomionego programu debugowania Just-In-Time, punkty przerwania, inspekcja programu obsługi wyjątków, Edytuj i Kontynuuj oraz przy użyciu wyrażeń w debuger.
 
--   [Więcej funkcji debugowania](../debugger/more-debugging-features.md)w tym artykule opisano różne funkcje debugowania.
+-   [Więcej funkcji debugowania](../debugger/more-debugging-features.md) w tym artykule opisano różne funkcje debugowania.
 
 -   [Zdalne debugowanie](../debugger/remote-debugging.md) w tym artykule opisano sposób konfigurowania i używania zdalnego debugowania.
 

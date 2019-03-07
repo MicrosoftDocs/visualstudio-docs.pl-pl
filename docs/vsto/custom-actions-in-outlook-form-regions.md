@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638039"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567186"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Niestandardowe akcje w regionach formularzy programu Outlook
   Akcje wyświetlanie przycisków, które umożliwiają użytkownikom odpowiedzieć na element programu Microsoft Office Outlook. Na przykład, aby odpowiedzieć elementu poczty, użytkownik kliknie **odpowiedzi**, **Odpowiedz wszystkim**, lub **do przodu** przyciski akcji. Każda z tych akcji tworzy nowy element poczty i wypełni pola elementu przy użyciu informacji z oryginalnego elementu.
@@ -28,7 +28,7 @@ ms.locfileid: "56638039"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Dodawanie akcji niestandardowych do regionu formularza
- Aby dodać akcję niestandardową do regionu formularza, należy użyć **akcje niestandardowe** okno dialogowe. Możesz otworzyć **akcje niestandardowe** okno dialogowe w **Eksploratora rozwiązań** , rozwijając **manifestu** węzła, wybierając **CustomActions**właściwości, a następnie klikając przycisk wielokropka (![przenośnych elipsy projektanta ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")).
+ Aby dodać akcję niestandardową do regionu formularza, należy użyć **akcje niestandardowe** okno dialogowe. Możesz otworzyć **akcje niestandardowe** okno dialogowe po wybraniu regionu formularza w **Eksploratora rozwiązań**, coraz **manifestu** w węźle **właściwości Okno**, wybierając opcję **CustomActions** właściwości, a następnie klikając przycisk wielokropka (![przenośnych elipsy projektanta ASP.NET](../sharepoint/media/mwellipsis.gif "przenośnych ASP.NET Projektant elipsy")).
 
  Możesz użyć **akcje niestandardowe** okno dialogowe, aby określić *docelowe formularza*. Formularz docelowy jest formularz, który jest wyświetlany, gdy użytkownik wykonuje akcji niestandardowej.
 

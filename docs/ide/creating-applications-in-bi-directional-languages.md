@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450324"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567263"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Tworzenie aplikacji w językach dwukierunkowych
 
@@ -30,7 +30,7 @@ Visual Studio umożliwia tworzenie aplikacji, które poprawnie wyświetlania tek
 
 -  Aplikacje Windows
 
-   Możesz utworzyć w pełni aplikacjach, które obejmują obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
+   Możesz utworzyć w pełni aplikacjach, które obejmują obsługę tekstu dwukierunkowego, od prawej do lewej kolejność czytania i dublowanie (cofania układu systemu windows, menu, okna dialogowe i tak dalej). Z wyjątkiem funkcji dublowania, te funkcje są dostępne, domyślnie lub zgodnie z ustawieniami właściwości. Dublowanie obsługę natury niektóre funkcje, takie jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowania w kodzie. Aby uzyskać więcej informacji, zobacz [Dwukierunkowa obsługa aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
 -  Aplikacje internetowe
 
