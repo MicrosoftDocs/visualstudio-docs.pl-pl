@@ -12,7 +12,7 @@
         "/dotnet",
         "/uwp"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -30,7 +30,7 @@
       "locale": "pl-pl",
       "monikers": [],
       "moniker_ranges": ["vsmac-2017", "vsmac-2019"],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -46,7 +46,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "pl-pl",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -62,7 +62,7 @@
       "locale": "pl-pl",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
