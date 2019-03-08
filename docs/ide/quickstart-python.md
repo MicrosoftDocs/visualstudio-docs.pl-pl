@@ -1,7 +1,7 @@
 ---
 title: 'Szybki Start: Użyj programu Visual Studio do tworzenia aplikacji sieci web w języku Python'
 description: W tym przewodniku Szybki Start używasz programu Visual Studio i platforma Flask do tworzenia prostej aplikacji sieci web w języku Python.
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987434"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683388"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web języka Python za pomocą programu Visual Studio
 
@@ -27,21 +27,43 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 Poniższe kroki umożliwiają utworzenie pustego projektu, który służy jako kontener dla aplikacji:
 
+::: moniker range="vs-2017"
 1. Otwórz program Visual Studio 2017.
 
-1. Na pasku menu u góry wybierz **Plik > Nowy > Projekt**.
+2. Na pasku menu u góry wybierz **Plik > Nowy > Projekt**.
 
-1. W **nowy projekt** okna dialogowego pole, wprowadź "Projekt sieci Web języka Python" w polu wyszukiwania w prawym górnym rogu, wybierz pozycję **projektu sieci Web** w środkową listę, należy nadać projektowi nazwę, takich jak "HelloPython", a następnie wybierz **OK**.
+3. W **nowy projekt** okna dialogowego pole, wprowadź "Projekt sieci Web języka Python" w polu wyszukiwania w prawym górnym rogu, wybierz pozycję **projektu sieci Web** w środkową listę, należy nadać projektowi nazwę, takich jak "HelloPython", a następnie wybierz **OK**.
 
     ![Okno dialogowe nowego projektu z projektu sieci Web w języku Python wybrane](media/quickstart-python-00-web-project.png)
 
-    Jeśli nie widzisz szablony projektów języka Python, Anuluj poza **nowy projekt** okna dialogowego pole, a następnie na pasku menu u góry wybierz **Narzędzia > Pobierz narzędzia i funkcje** otworzyć **programu Visual Studio Instalator**. Wybierz **programowania w języku Python** obciążenia, wybierz **Modyfikuj**.
+    Jeśli nie widzisz szablony projektów języka Python, uruchom **Instalatora programu Visual Studio**, wybierz opcję **więcej** > **Modyfikuj**, wybierz opcję **języka Python Programowanie** obciążenia, wybierz **Modyfikuj**.
 
     ![Obciążenie programowania języka Python w Instalatorze programu Visual Studio](../python/media/installation-python-workload.png)
 
-1. Nowy projekt zostanie otwarty w **Eksploratora rozwiązań** w okienku po prawej stronie. Projekt jest pusta, w tym momencie ponieważ nie zawiera on innych plików.
+4. Nowy projekt zostanie otwarty w **Eksploratora rozwiązań** w okienku po prawej stronie. Projekt jest pusta, w tym momencie ponieważ nie zawiera on innych plików.
 
     ![Nowo utworzony projekt pusty Eksplorator rozwiązań](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. Open Visual Studio 2019.
+2. Na ekranie startowym wybierz **Utwórz nowy projekt**.
+3. W **Utwórz nowy projekt** okna dialogowego pole, wprowadź "Internetowego języka Python" w polu wyszukiwania u góry wybierz **projektu sieci Web** w środkową listę, a następnie zaznacz **dalej**:
+
+    ![Tworzenie nowego ekranu projektu za pomocą wybrany projekt sieci Web języka Python](media/quickstart-python-00-web-project-2019a.png)
+
+    Jeśli nie widzisz szablony projektów języka Python, uruchom **Instalatora programu Visual Studio**, wybierz opcję **więcej** > **Modyfikuj**, wybierz opcję **języka Python Programowanie** obciążenia, wybierz **Modyfikuj**.
+
+    ![Obciążenie programowania języka Python w Instalatorze programu Visual Studio](../python/media/installation-python-workload.png)
+
+4. W **konfigurowania nowego projektu** poniżej, oknie dialogowym wprowadź "HelloPython" **Nazwa projektu**, określ lokalizację i wybierz **Utwórz**. ( **Nazwa rozwiązania** automatycznie jest ustawiony na zgodny **Nazwa projektu**.)
+
+    ![Konfigurowanie okna dialogowego Nowy projekt](media/quickstart-python-00-web-project-2019b.png)
+
+5. Nowy projekt zostanie otwarty w **Eksploratora rozwiązań** w okienku po prawej stronie. Projekt jest pusta, w tym momencie ponieważ nie zawiera on innych plików.
+
+    ![Nowo utworzony projekt pusty Eksplorator rozwiązań](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **Pytanie: Jakie są zalety tworzenia projektu w programie Visual Studio dla aplikacji w języku Python?**
 
@@ -57,19 +79,37 @@ Aplikacje sieci Web w języku Python prawie zawsze użyj jednej z wielu dostępn
 
 W tym miejscu skorzystaj z poniższych wskazówek, celu zainstalować bibliotekę Flask do domyślnego "globalne środowiska" używający programu Visual Studio dla tego projektu.
 
+::: moniker range="vs-2017"
 1. Rozwiń **środowiska Python** węzeł w projekcie, aby wyświetlić domyślne środowisko dla projektu.
 
     ![Środowisko domyślne Eksplorator rozwiązań](media/quickstart-python-02-default-environment.png)
 
-1. Kliknij prawym przyciskiem myszy środowiska, a następnie wybierz pozycję **zainstaluj pakiet języka Python**. To polecenie otwiera **środowiska Python** okno na **pakietów** kartę.
+2. Kliknij prawym przyciskiem myszy środowiska, a następnie wybierz pozycję **zainstaluj pakiet języka Python**. To polecenie otwiera **środowiska Python** okno na **pakietów** kartę.
 
-1. W polu wyszukiwania wprowadź "flask", a następnie wybierz pozycję **polecenia pip install flask z PyPI**. Zaakceptuj wszystkie monity o uprawnienia administratora i obserwuj **dane wyjściowe** okna w programie Visual Studio, uzyskać informacje o postępie. (Monit o podniesienie uprawnień się dzieje, gdy folder packages globalne środowiska znajduje się w obszarze chronionym jak *C:\Program Files*.)
+3. W polu wyszukiwania wprowadź "flask", a następnie wybierz pozycję **polecenia pip install flask z PyPI**. Zaakceptuj wszystkie monity o uprawnienia administratora i obserwuj **dane wyjściowe** okna w programie Visual Studio, uzyskać informacje o postępie. (Monit o podniesienie uprawnień się dzieje, gdy folder packages globalne środowiska znajduje się w obszarze chronionym jak *C:\Program Files*.)
 
     ![Zainstalowanie biblioteki Flask za pomocą instalacji narzędzia pip](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Rozwiń **środowiska Python** węzeł w projekcie, aby wyświetlić domyślne środowisko dla projektu.
 
-1. Po zainstalowaniu biblioteki jest wyświetlana w środowisku w **Eksploratora rozwiązań**, co oznacza, że można wprowadzać z niego korzystać w kodzie języka Python.
+    ![Środowisko domyślne Eksplorator rozwiązań](media/quickstart-python-02-default-environment-2019.png)
 
+2. Kliknij prawym przyciskiem myszy środowiska, a następnie wybierz pozycję **Zarządzanie pakietami języka Python...** . To polecenie otwiera **środowiska Python** okno na **pakietów (PyPI)** kartę.
+
+3. Wprowadź "flask" w polu wyszukiwania. Jeśli **Flask** pojawia się poniżej pola wyszukiwania, możesz pominąć ten krok. W przeciwnym razie wybierz **Uruchom polecenie: polecenia pip install, flask**. Zaakceptuj wszystkie monity o uprawnienia administratora i obserwuj **dane wyjściowe** okna w programie Visual Studio, uzyskać informacje o postępie. (Monit o podniesienie uprawnień się dzieje, gdy folder packages globalne środowiska znajduje się w obszarze chronionym jak *C:\Program Files*.)
+
+    ![Zainstalowanie biblioteki Flask za pomocą instalacji narzędzia pip](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. Po zainstalowaniu biblioteki jest wyświetlana w środowisku w **Eksploratora rozwiązań**, co oznacza, że można wprowadzać z niego korzystać w kodzie języka Python.
+
+    ::: moniker range="vs-2017"
     ![Wyświetlanie i zainstalowanie biblioteki Flask w Eksploratorze rozwiązań](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Wyświetlanie i zainstalowanie biblioteki Flask w Eksploratorze rozwiązań](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > Zamiast instalowania bibliotek w środowisku globalnym, deweloperzy zazwyczaj utworzyć "środowisko wirtualne" w którym chcesz zainstalować biblioteki dla określonego projektu. Szablony programu Visual Studio oferują zazwyczaj tej opcji, zgodnie z opisem w [Szybki Start — Tworzenie projektu języka Python za pomocą szablonu](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
@@ -121,7 +161,14 @@ Teraz możesz dodać ilość kodu języka Python do wdrożenia aplikacji sieci w
 
 1. Kliknij prawym przyciskiem myszy *app.py* w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik startowy**. To polecenie Określa plik kodu, można uruchomić w języku Python, podczas uruchamiania aplikacji.
 
+    ::: moniker range="vs-2017"
     ![Ustawienie plik startowy dla projektu w Eksploratorze rozwiązań](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Ustawienie plik startowy dla projektu w Eksploratorze rozwiązań](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. Kliknij prawym przyciskiem myszy *app.py* w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik startowy**. To polecenie Określa plik kodu, można uruchomić w języku Python, podczas uruchamiania aplikacji.
 
 2. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**. Następnie wybierz pozycję **debugowania** kartę i ustawić **numer portu** właściwość `4449`. Ten krok zapewnia, że program Visual Studio otworzy w przeglądarce za pomocą `localhost:4449` do dopasowania `app.run` argumentów w kodzie.
 

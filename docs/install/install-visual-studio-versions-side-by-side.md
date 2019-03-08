@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 22c4f24c8e97d98bb0bbe88fb998deb5929c6b7b
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: b7b1eb1808fadf3bc7639662419f7d176909412c
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567128"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683375"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
@@ -69,7 +69,7 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -88,6 +88,6 @@ Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniż
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md?view=vs-2019)
 * [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
-* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [Tworzenie języka C/C++ izolowanymi oraz aplikacjami wykonywanymi side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
