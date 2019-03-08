@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951608"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567373"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 
@@ -172,7 +172,7 @@ Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częś
 
 |**Diagram**|**W tym artykule opisano**|
 |-|-|
-|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu Visual Studio, grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|
+|*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu Visual Studio, grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|
 
  Na przykład poniższy diagram zależności opisuje zależności między warstwami i liczbą artefaktów, które są skojarzone z poszczególnymi warstwami:
 
@@ -214,7 +214,7 @@ Jako postępem prac zespoły aktualizują elementy robocze, aby odzwierciedlić 
 
 Zobacz:
 
-- [Narzędzia Agile i Zwinne Zarządzanie projektami — informacje](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Narzędzia Agile i Zwinne Zarządzanie projektami — informacje](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Wykresy, pulpitów nawigacyjnych i widżetów (usługom DevOps platformy Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -329,7 +329,7 @@ Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni na
 
 |**Diagram**|**W tym artykule opisano**|
 |-|-|
-|Diagram zależności|Logiczna architektura systemu. Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących dependencys lub dependencys zamierzony, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)|
+|Diagram zależności|Logiczna architektura systemu. Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących dependencys lub dependencys zamierzony, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klasy (oparty na kodzie)|Istniejące klasy w kodzie dla konkretnego projektu.<br /><br /> Wizualizację i modyfikowanie istniejącej klasy w kodzie, za pomocą projektanta klas.<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Definiuj słownik typów: Diagramy klas
@@ -398,7 +398,7 @@ Jako punktu wyjścia do badania i omawiania istniejących klas można użyć pro
 
 |**Diagram**|**Opis**|
 |-|-|
-|Diagram zależności|Definiuj logiczną architekturę systemu, w odniesieniu do klasy.<br /><br /> Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagram zależności|Definiuj logiczną architekturę systemu, w odniesieniu do klasy.<br /><br /> Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby zidentyfikować klasy, ich relacje i ich metod, utwórz mapę kodu, pokazujący te elementy.<br /><br /> Zobacz:<br /><br /> - [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Opisz logiczną architekturę: diagramy zależności
@@ -454,9 +454,9 @@ Zobacz:
 
 - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
+- [Diagramy zależności: informacje](../modeling/layer-diagrams-reference.md)
 
-- [Diagramy zależności: Wytyczne dotyczące](../modeling/layer-diagrams-guidelines.md)
+- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)
 
 - [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)
 
