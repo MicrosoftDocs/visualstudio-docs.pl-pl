@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b615207467222a061a5496b87ecb1929348c18fe
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db11e23f56f6c7442768e84a731b28b095807220
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223829"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57691970"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
 
@@ -29,16 +29,12 @@ Instalacja platformy Docker, najpierw zapoznaj się z informacjami o [pulpitu pl
 
 ## <a name="add-a-project-to-a-docker-container"></a>Dodaj projekt do kontenera platformy Docker
 
-1. Wybierz z menu programu Visual Studio **Plik > Nowy > Projekt**.
-1. W obszarze **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C# > sieci Web**.
-1. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
-1. Nazwij swoją nową aplikację (lub wykonać domyślnie) i wybierz **OK**.
-1. Wybierz **aplikacji sieci Web**.
-1. Sprawdź **włączyć obsługę platformy Docker** pole wyboru.
+1. Utwórz nowy projekt za pomocą **aplikacji sieci Web programu ASP.NET Core** szablonu.
+1. Wybierz **aplikacji sieci Web**i upewnij się, że **włączyć obsługę platformy Docker** pole wyboru jest zaznaczone.
 
-   ![Zaznacz pole wyboru obsługę platformy Docker](../../media/docker-tools/enable-docker-support.PNG)
+   ![Zaznacz pole wyboru obsługę platformy Docker](../../media/docker-tools/vs-2019/create-new-web-application.PNG)
 
-1. Wybierz typ kontenera (Windows lub Linux) i kliknij **OK**.
+1. Wybierz typ kontenera (Windows lub Linux) i kliknij **Utwórz**.
 
 ## <a name="dockerfile-overview"></a>Plik Dockerfile — omówienie
 
