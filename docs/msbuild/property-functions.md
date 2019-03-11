@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623063"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737033"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
@@ -166,7 +166,7 @@ Poniżej przedstawiono listę funkcji właściwości programu MSBuild:
 |int BitwiseXor (int, int pierwszego, drugiego)|Wykonania bitowej `XOR` pierwszego i drugiego (pierwszy ^ drugiego).|
 |int BitwiseNot(int first)|Wykonaj bitowej `NOT` (~ pierwszy).|
 |wartość logiczna IsOsPlatform (platformString ciągu)|Określ, czy bieżąca Platforma systemu operacyjnego jest `platformString`. `platformString` Musisz być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
+|bool IsOSUnixLike()|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
 |ciąg NormalizePath (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podana ścieżka i gwarantuje, że zawiera ona znaki separatora katalogu poprawny w bieżącym systemie operacyjnym.|
 |ciąg NormalizeDirectory (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podany katalog i zapewnia zawiera znaki separatora katalogu poprawny dla bieżącego systemu operacyjnego, przy jednoczesnym zapewnieniu jej posiada na końcu ukośnik.|
 |ciąg EnsureTrailingSlash(string path)|Jeśli w podanej ścieżce nie ma ukośnika, dodać go. Jeśli ścieżka jest ciągiem pustym, nie powoduje modyfikacji go.|

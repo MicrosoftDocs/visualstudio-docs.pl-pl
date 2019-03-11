@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634269"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737020"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 
@@ -30,7 +30,7 @@ Czasami aplikacja równoległego stubbornly nadal wykonywane szeregowo, nawet je
 
 Jak pokazano na poniższej ilustracji, Concurrency Visualizer również może narazić ten symptom w widoku wykorzystania procesora CPU, where, niezależnie od obecności wielu wątków, aplikacja używa tylko jednego rdzenia logicznego.
 
-Aby uzyskać więcej informacji, zobacz "wzorca wydajności 1: Identyfikowanie Rywalizacja o blokady"w Hazim Shafi [równoległe narzędzia do oceny wydajności dla Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blogu w witrynie sieci Web blog MSDN.
+Aby uzyskać więcej informacji, zobacz sekcję "Start z sekcją problem" w artykule MSDN Magazine [wątku - Resource rywalizacji współbieżności profilowanie wydajności w programie Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Lock Contention](../profiling/media/lockcontention_2.png "LockContention_2")
 

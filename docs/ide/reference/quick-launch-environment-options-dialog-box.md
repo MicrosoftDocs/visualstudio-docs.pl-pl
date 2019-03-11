@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949164"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736990"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
@@ -36,9 +36,9 @@ Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określ
 |Kategoria|Skrót|Opis skrótów|
 |--------------|--------------| - |
 |Ostatnio używane|@mru<br /><br /> Na przykład:`@mru font`|Wyświetla maksymalnie pięć elementów, które **ostatnio używane**.|
-|Menu|@menu<br /><br /> Na przykład:`@menu font`|Ogranicza wyszukiwanie do elementów menu.|
+|Menu|@menu<br /><br /> Na przykład:`@menu project`|Ogranicza wyszukiwanie do elementów menu.|
 |Opcje|@opt<br /><br /> Na przykład:`@opt font`|Ogranicza wyszukiwanie do ustawienia w **opcje** okno dialogowe.|
-|Dokumenty|@doc<br /><br /> Na przykład:`@doc font`|Ogranicza wyszukiwanie do nazw plików oraz ścieżek otwarte dokumenty kryteriów wyszukiwania, ale nie wyszukuje tekst wewnątrz same pliki.|
+|Dokumenty|@doc<br /><br /> Na przykład:`@doc program.cs`|Ogranicza wyszukiwanie do nazw plików oraz ścieżek otwarte dokumenty kryteriów wyszukiwania, ale nie wyszukuje tekst wewnątrz same pliki.|
 
 > [!NOTE]
 > Klawisze skrótów można zmienić na **ogólne**, **klawiatury** strony w **opcje** okno dialogowe.

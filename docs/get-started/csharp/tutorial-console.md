@@ -2,7 +2,7 @@
 title: 'Samouczek: Tworzenie prostego C# aplikacji konsoli'
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841185"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736915"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
@@ -34,8 +34,9 @@ Aby rozpocząć, utworzymy C# projekt aplikacji. Typ projektu jest dostarczany z
 1. Otwórz program Visual Studio 2017.
 
 2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+   (Też nacisnąć klawisz **Ctrl**+**Shift**+**N**).
 
-3. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik *Kalkulator*.
+3. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik ***Kalkulator***.
 
    ![Szablon projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE konsoli](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
 ## <a name="create-the-app"></a>Tworzenie aplikacji
 
-Najpierw przyjrzymy się talent matematyczny podstawowe liczby całkowitej w C#. Następnie dodasz kod, aby utworzyć podstawowy kalkulatora. Firma Microsoft będzie następnie dostosować kod, aby dodać funkcje. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. I wreszcie firma uściślić kod, aby bardziej wydajne.
+Najpierw przyjrzymy się talent matematyczny podstawowe liczby całkowitej w C#. Następnie dodasz kod, aby utworzyć podstawowy kalkulatora. Dalej. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. I wreszcie firma uściślić kod, aby bardziej wydajne.
 
-Zacznijmy od niektórych matematyki całkowitoliczbowej w C#.
+### <a name="explore-integer-math"></a>Poznawanie matematyki całkowitoliczbowej
+
+Zacznijmy od talent matematyczny podstawowe liczby całkowitej w C#.
 
 1. W edytorze kodu należy usunąć domyślny kod "Hello World".
 
@@ -81,15 +84,23 @@ Zacznijmy od niektórych matematyki całkowitoliczbowej w C#.
             Console.ReadKey();
     ```
 
+    Należy zauważyć, że jeśli tak zrobisz, funkcję IntelliSense w programie Visual Studio oferuje możliwość automatycznego uzupełniania wpis.
+
+    ![Animacja kodu matematyczne liczba całkowita, która zawiera funkcję automatycznego uzupełniania IntelliSense w środowisku IDE programu Visual Studio](./media/integer-math-intellisense.gif)
+
 1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
 
    ![Wybierz przycisk Kalkulator, aby uruchomić aplikację z paska narzędzi](./media/csharp-console-calculator-button.png)
 
-   Zostanie otwarte okno konsoli, która ujawnia sumę 42 + 119.
+   Konsola zostanie wyświetlone okno dialogowe, które ujawnia sumę 42 + 119, czyli **161**.
 
-1. Teraz, spróbuj zmienić `int c = a + b;` wiersz kodu przy użyciu innego operatora, takich jak `-` odejmowanie, `*` mnożenie, lub */* dla działu.
+    ![Okno konsoli z wynikami matematyki całkowitoliczbowej](./media/csharp-console-integer-math.png)
 
-    Zwróć uwagę, że gdy operator zmienić, a następnie uruchom program, wynik zmienia, zbyt.
+1. **(Opcjonalnie)**  Można zmienić operatora, aby zmienić wynik. Na przykład można zmienić `+` operatora w `int c = a + b;` wiersz kodu do `-` odejmowanie, `*` mnożenie, lub `/` dla działu. Następnie po uruchomieniu programu, zmiany wyniku zbyt.
+
+1. Zamknij okno konsoli.
+
+### <a name="add-code-to-create-a-calculator"></a>Dodaj kod, aby utworzyć Kalkulator
 
 Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
 
@@ -165,6 +176,10 @@ Kontynuujmy, dodając bardziej złożonego zestawu Kalkulator kodu do projektu.
 
     ![Aplikacja Kalkulator wyświetlana w oknie konsoli i zawiera monity w przypadku których akcje do wykonania](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Dodawanie funkcji do Kalkulatora
+
+Umożliwia dostosowanie kod, aby dodać kolejne funkcje.
+
 ### <a name="add-decimals"></a>Dodaj liczbę miejsc dziesiętnych
 
 Aplikacja Kalkulator obecnie akceptuje i zwraca wartość liczby całkowite. Jednak będzie bardziej precyzyjne możemy dodać kod, który pozwala na liczbę miejsc dziesiętnych.
@@ -178,6 +193,8 @@ Możemy naprawić kod tak, że obsługuje ona liczbę miejsc dziesiętnych.
 1. Naciśnij klawisz **Ctrl** + **F** otworzyć **Znajdź i Zamień** kontroli.
 
 1. Zmienić każde wystąpienie `int` zmienną `float`.
+
+   Upewnij się, że Przełącz **Uwzględnij wielkość liter** (**Alt**+**C**) i **Uwzględnij całe wyrazy** (**Alt** + **W**) w **Znajdź i Zamień** kontroli.
 
     ![Animacja przedstawiająca sposób zmienić zmienną int float formant Znajdź i Zamień](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ Gratulujemy wykonanie kroków tego samouczka! Aby uzyskać jeszcze więcej, prze
 
 ## <a name="see-also"></a>Zobacz także
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Dowiedz się, jak debugowanie C# kodu w programie Visual Studio](tutorial-debugger.md)
