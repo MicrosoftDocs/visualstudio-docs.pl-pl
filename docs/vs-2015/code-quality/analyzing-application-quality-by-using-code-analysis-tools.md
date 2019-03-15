@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7230de07c5aa1472332dbbddc094629fd1cdf257
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775545"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867440"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analiza jakości aplikacji za pomocą narzędzi analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,8 +44,8 @@ W tej sekcji
 ### <a name="code-analysis-for-drivers"></a>Analiza kodu dla sterowników  
  Narzędzia do analizy kodu może zwiększyć stabilności i niezawodności sterownika, systematyczne analizowanie kodu źródłowego sterownika.  
   
- [Analiza jakości sterowników za pomocą narzędzi analizy kodu](http://go.microsoft.com/fwlink/?LinkId=227618)  
- Analiza kodu dla sterowników jest narzędziem kompilacji, weryfikacji statyczne, które wykrywa podstawowe błędy kodu w językach C i C++ programy i zawiera wyspecjalizowane moduł, który jest zaprojektowany do wykrywania błędów w kod sterownik trybu jądra (zasadniczo)... Statyczne sterownik weryfikatora (SDV) jest narzędziem weryfikacji statyczne, które systematycznie analizuje kod źródłowy sterowników trybu jądra Windows. SDV Określa, czy sterownik poprawnie wchodzi w interakcję z jądra systemu operacyjnego Windows.  
+ [Analiza jakości sterowników za pomocą narzędzi analizy kodu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Analiza kodu dla sterowników jest narzędziem kompilacji, weryfikacji statyczne, które wykrywa podstawowe błędy kodu w językach C i C++ programy i zawiera specjalistyczne moduł, który jest zaprojektowany do wykrywania błędów w kod sterownik trybu jądra (zasadniczo). Statyczne sterownik weryfikatora (SDV) jest narzędziem weryfikacji statyczne, które systematycznie analizuje kod źródłowy sterowników trybu jądra Windows. SDV Określa, czy sterownik poprawnie wchodzi w interakcję z jądra systemu operacyjnego Windows.  
   
  [Analiza kodu dla sterowników ostrzeżenia](http://go.microsoft.com/fwlink/?LinkId=225920)  
  W tym artykule opisano ostrzeżenia analizy kodu dla sterowników raporty po wykryciu możliwy błąd w kodzie sterownika.  

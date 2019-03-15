@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d4e2fa9c05aab6bd3a70edd2eb3d4b1d447056e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792122"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867834"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
   
 5.  W **właściwości** okna, ustaw następujące wartości dla formantów na powierzchni projektowej.  
   
-    |Formant|Właściwość|Wartość|  
+    |formant|Właściwość|Wartość|  
     |-------------|--------------|-----------|  
     |`Label1`|**Text**|""|  
     |`Button1`|**Nazwa**|btnReset|  
@@ -208,7 +208,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
      Resetuje licznik **0**.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName*.vsix w folderze \bin\debug\ projektu. Kontrolki można wdrożyć, przekazując plik .vsix do sieci lub do witryny sieci Web. Gdy użytkownik otwiera plik .vsix, formant jest zainstalowana i dodać do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać plik .vsix do [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, tak aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia / rozszerzenia i aktualizacje** okna dialogowego.  
+ Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName*.vsix w folderze \bin\debug\ projektu. Kontrolki można wdrożyć, przekazując plik .vsix do sieci lub do witryny sieci Web. Gdy użytkownik otwiera plik .vsix, formant jest zainstalowana i dodać do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać plik .vsix do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, tak aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia / rozszerzenia i aktualizacje** okna dialogowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie przybornika](../misc/extending-the-toolbox.md)   
