@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bac0907f08db03e56b32a85e9d228c67d0aae724
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911900"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069934"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
@@ -35,9 +35,11 @@ Pomimo swojej nazwy rozwiązania nie jest "" (odpowiedź). To rozwiązanie jest 
 
 Rozpoczniemy naszych badań, tworząc puste rozwiązanie. Po uzyskaniu znasz programu Visual Studio, prawdopodobnie nie będzie zaczniesz tworzyć puste rozwiązania bardzo często. Podczas tworzenia nowego projektu programu Visual Studio automatycznie tworzy rozwiązanie do przechowywania projektu, jeśli nie ma rozwiązania już otwarte.
 
+::: moniker range="vs-2017"
+
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu, czyli wiersz menu, takich jak **pliku** i **Edytuj**, wybierz **pliku** > **New**  >   **Projekt**.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
    **Nowy projekt** zostanie otwarte okno dialogowe.
 
@@ -46,6 +48,22 @@ Rozpoczniemy naszych badań, tworząc puste rozwiązanie. Po uzyskaniu znasz pro
    ![Pusty szablon rozwiązania w programie Visual Studio](media/tutorial-projects-new-solution.png)
 
    **Strona startowa** zostanie zamknięty i rozwiązania zostaną wyświetlone w **Eksploratora rozwiązań** po prawej stronie okna programu Visual Studio. Prawdopodobnie użyjesz **Eksploratora rozwiązań** często, aby przeglądać zawartość Twoich projektów.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio.
+
+2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+3. Na **Utwórz nowy projekt** wpisz **puste rozwiązanie** w polu wyszukiwania, wybierz **puste rozwiązanie** szablonu, a następnie wybierz **dalej**.
+
+4. Nazwij rozwiązanie **QuickSolution**, a następnie wybierz **Utwórz**.
+
+   To rozwiązanie jest wyświetlana w **Eksploratora rozwiązań** po prawej stronie okna programu Visual Studio. Prawdopodobnie użyjesz **Eksploratora rozwiązań** często, aby przeglądać zawartość Twoich projektów.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Dodaj projekt
 

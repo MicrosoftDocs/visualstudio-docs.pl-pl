@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948475"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069973"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Szybki start: Utwórz projekt testu obciążenia
+# <a name="quickstart-create-a-load-test-project"></a>Szybki start: Tworzenie projektu testu obciążeniowego
 
 W tym 10-minutowy Przewodnik Szybki Start dowiesz się, jak utworzyć i uruchomić projekt testu obciążenia i wydajności sieci web w programie Visual Studio. Testy obciążenia wykonać wydajności sieci web lub testów jednostkowych, aby symulować wielu użytkownikom dostęp do serwera, w tym samym czasie.
 
@@ -42,15 +42,33 @@ Jeśli nie masz już wydajności sieci web ale zainstalowany składnik narzędzi
 
 W tej sekcji utworzymy projektu testu obciążeniowego języka C#. Można również utworzyć projekt testowy obciążenia Visual Basic, jeśli użytkownik sobie tego życzy.
 
-1. Otwórz program Visual Studio, a następnie wybierz **pliku** > **New** > **projektu** z paska menu.
+::: moniker range="vs-2017"
+
+1. Otwórz program Visual Studio.
+
+2. Wybierz **pliku** > **New** > **projektu** z paska menu.
 
    **Nowy projekt** zostanie otwarte okno dialogowe.
 
-1. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** i **Visual C#**, a następnie wybierz pozycję **testu** kategorii. Wybierz **projekt testu obciążenia i wydajności sieci Web** szablonu.
+3. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** i **Visual C#**, a następnie wybierz pozycję **testu** kategorii. Wybierz **projekt testu obciążenia i wydajności sieci Web** szablonu.
 
    ![Szablon projektu testu wydajności sieci Web i obciążenia](media/web-perf-load-test-project-template.png)
 
-1. Wprowadź nazwę dla projektu, jeśli nie chcesz użyć nazwy domyślnej, a następnie wybierz **OK**.
+4. Wprowadź nazwę dla projektu, jeśli nie chcesz użyć nazwy domyślnej, a następnie wybierz **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio.
+
+2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+3. W **Utwórz nowy projekt** okno dialogowe, typ **testu sieci web** w polu wyszukiwania, a następnie wybierz pozycję **i Załaduj projekt testu wydajności sieci Web \[Deprecated]** Szablon C#. Wybierz **dalej**.
+
+4. Wprowadź nazwę dla projektu, jeśli nie chcesz użyć nazwy domyślnej, a następnie wybierz **Utwórz**.
+
+::: moniker-end
 
    Visual Studio tworzy projekt i wyświetla pliki w **Eksploratora rozwiązań**. Projekt zawiera początkowo jednego pliku testu sieci web o nazwie *WebTest1.webtest*.
 

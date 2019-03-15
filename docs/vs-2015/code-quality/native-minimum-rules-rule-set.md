@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 823a09275f71c69aef10ed7866ec863883dbe66f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 487e61a98117c8c64b993af5b9300face99478f8
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768255"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57870470"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Zestaw reguł Native Minimum Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,6 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                       [C6516](../code-quality/c6516.md)                        |                                          Brak właściwości dla atrybutu                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Nieprawidłowy rozmiar dla bufora bez możliwości odczytu                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Rozmiar obszaru do zapisu dla bufora bez możliwości zapisu                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Nieprawidłowa adnotacja: wartość właściwości "NeedsRelease" musi być tak lub nie                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Nieprawidłowy rozmiar ciągu Wyłuskania                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Nieprawidłowy typ ciągu rozmiaru                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Nieprawidłowy rozmiar parametru ciągu                                         |
@@ -137,7 +136,6 @@ Microsoft Native Minimum Rules skoncentrować się na najważniejszych problemó
 |                      [C28254](../code-quality/c28254.md)                       |                               (dynamic_cast <>) nie jest obsługiwane w adnotacjach                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Znaleziono błąd składni w adnotacji w funkcji dla adnotacji                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Znaleziono błąd składni w warunkowej adnotacji dla wewnętrznych adnotacji                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Wynikowe wartości listy muszą być stałymi.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Znaleziono błąd składni w adnotacjach adnotacji w funkcji.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Adnotacja dla funkcji, parametr podczas badania jest niespójny z deklaracją funkcji      |
 |                      [C28273](../code-quality/c28273.md)                       |                    W przypadku funkcji są niespójne z deklaracją funkcji                     |

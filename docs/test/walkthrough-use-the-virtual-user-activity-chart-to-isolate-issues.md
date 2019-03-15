@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947292"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069947"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Za pomocą wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
 
@@ -36,7 +36,7 @@ Wykres aktywności wirtualnych użytkowników umożliwia wizualizowanie aktywno�
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
 
-1.  Uruchom program Visual Studio.
+1.  Otwórz program Visual Studio.
 
 2.  Otwórz **ColorWebApp** rozwiązanie, które zawiera *testy LoadTest1.loadtest*. Obciążenie wyniki testów z czynności w trzech instruktażach wymienionych na początku tego tematu, w sekcji wymagania wstępne.
 

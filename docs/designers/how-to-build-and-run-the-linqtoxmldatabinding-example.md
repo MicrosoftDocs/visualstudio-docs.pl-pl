@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951907"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069921"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Instrukcje: Kompilowanie i uruchamianie elementu LinqToXmlDataBinding — przykład
 
@@ -20,11 +20,9 @@ W tym temacie pokazano, jak utworzyć i skompilować projekt programu Visual Stu
 
 Aby uzyskać więcej informacji na temat programu Visual Studio, zobacz [Omówienie środowiska IDE programu Visual Studio](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Utworzyć i wypełnić projektu
+## <a name="create-the-project"></a>Utwórz projekt
 
-### <a name="to-create-the-starting-project"></a>Do utworzenia projektu startowego
-
-1. Uruchom program Visual Studio i utworzyć aplikację WPF w języku C# o nazwie elementu linqtoxmldatabinding —. Projekt musi używać .NET Framework 3.5 (lub nowszy).
+1. Otwórz program Visual Studio i Utwórz C# **aplikacja WPF** o nazwie **elementu linqtoxmldatabinding —**. Projekt powinien skierowane do .NET Framework 3.5 (lub nowszy).
 
 1. Jeśli nie zrobiono, dodaj odwołania do projektu dla następujących zestawów platformy .NET:
 
@@ -38,9 +36,9 @@ Aby uzyskać więcej informacji na temat programu Visual Studio, zobacz [Omówie
 
 1. Skompiluj rozwiązanie, naciskając klawisz **Ctrl**+**Shift**+**B**, uruchom ją, naciskając klawisz **F5**. Projekt, należy skompilować bez błędów i Uruchom jako ogólnego aplikacji WPF.
 
-### <a name="to-add-custom-code-to-the-project"></a>Aby dodać niestandardowy kod do projektu
+## <a name="add-code-to-the-project"></a>Dodaj kod do projektu
 
-1. W Eksploratorze rozwiązań, Zmień nazwę pliku źródłowego **Window1.xaml** do **L2XDBForm.xaml**. Plik źródłowy zależne **Window1.xaml.cs** automatycznie powinna zostać zmieniona na **L2XDBForm.xaml.cs**.
+1. W **Eksploratora rozwiązań**, Zmień nazwę pliku źródłowego **Window1.xaml** do **L2XDBForm.xaml**. Plik źródłowy zależne **Window1.xaml.cs** automatycznie powinna zostać zmieniona na **L2XDBForm.xaml.cs**.
 
 1. Zastąp kod źródłowy znajdującą się w pliku **L2XDBForm.xaml** z sekcji kod z tematu [kod źródłowy L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). Użyj widoku kodu XAML do pracy z tym plikiem.
 
@@ -56,9 +54,7 @@ Program elementu linqtoxmldatabinding — umożliwia użytkownikowi wyświetlani
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Aby uruchomić program i wyświetlić listy książek
 
-- Uruchamianie elementu linqtoxmldatabinding —, naciskając klawisz **F5** (**Rozpocznij debugowanie**) lub **Ctrl**+**F5** (**Start Bez debugowania**).
-
-   Okno programu z tytułem **powiązanie danych WPF za pomocą LINQ to XML** pojawia się.
+Uruchamianie elementu linqtoxmldatabinding —, naciskając klawisz **F5** (**Rozpocznij debugowanie**) lub **Ctrl**+**F5** (**Start Bez debugowania**). Okno programu z tytułem **powiązanie danych WPF za pomocą LINQ to XML** pojawia się.
 
 - Zwróć uwagę, w górnej części interfejsu użytkownika, wyświetla nieprzetworzonych **XML** reprezentujący listy książek. Jest wyświetlana przy użyciu technologii WPF <xref:System.Windows.Controls.TextBlock> formant, który nie obsługuje interakcji za pomocą myszy lub klawiatury.
 

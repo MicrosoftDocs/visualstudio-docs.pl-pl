@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796637"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983835"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Aktualizowanie instalacji sieciowej programu Visual Studio 2017
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
 Jego jest to możliwe, aby zaktualizować układu instalacji sieciowej programu Visual Studio przy użyciu najnowszych aktualizacji produktów, tak, aby można go jako punkt instalacji wykorzystywana do najnowszej aktualizacji programu Visual Studio, a także do obsługi instalacji, które są już wdrożone do klienta stacje robocze.
 

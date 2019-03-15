@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58051826"
+---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zainstalowane odpowiednie obciążeń dla wybranego języka:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) zainstalowane odpowiednie obciążeń dla wybranego języka:
   * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
   * Node.js: **Tworzenia aplikacji node.js**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) zainstalowane odpowiednie obciążeń dla wybranego języka:
+  * ASP.NET: **ASP.NET i tworzenie aplikacji internetowych**
+  * Node.js: **Tworzenia aplikacji node.js**
+::: moniker-end
 
 * Subskrypcja platformy Azure. Jeśli nie masz już subskrypcję, [Utwórz bezpłatne konto](https://azure.microsoft.com/free/dotnet/), zawierający środki w wysokości 200 USD na 30 dni i 12 miesięcy z popularnych bezpłatnych usług.
 

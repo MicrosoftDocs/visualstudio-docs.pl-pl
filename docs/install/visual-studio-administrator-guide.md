@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710113"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983822"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Podręcznik administratora w usłudze Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
 W środowiskach przedsiębiorstw jest typowe dla administratorów systemu wdrożyć instalacje do użytkowników końcowych z udziału sieciowego lub za pomocą oprogramowania do zarządzania systemami. Zaprojektowaliśmy się aparat Instalatora programu Visual Studio do obsługi wdrożenia w przedsiębiorstwie, pozwalając administratorom systemów możliwość tworzenia lokalizacji instalacji sieciowej, można wstępnie skonfigurować domyślne ustawienia instalacji, aby wdrożyć kluczy produktów podczas procesu instalacji i do zarządzania aktualizacjami produktu po pomyślne wdrożenie. Ten Przewodnik administratora wskazówki oparte na scenariuszach dotyczące wdrażania w przedsiębiorstwie w środowiskach sieciowych.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Wdrażanie programu Visual Studio 2017 w środowisku przedsiębiorstwa
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Wdrażanie programu Visual Studio w środowisku przedsiębiorstwa
 
-Visual Studio 2017 można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub pliku wsadowego, zazwyczaj należy przejść przez następujące kroki:
+Visual Studio można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub pliku wsadowego, zazwyczaj należy przejść przez następujące kroki:
 
 1. [Utwórz udział sieciowy, który zawiera pliki produktu Visual Studio](create-a-network-installation-of-visual-studio.md) do lokalizacji sieciowej.
 
@@ -47,14 +47,14 @@ Visual Studio 2017 można wdrożyć na klienckich stacjach roboczych, tak długo
 8. [Odśwież lokalizacji sieciowej, z najnowszymi aktualizacjami](update-a-network-installation-of-visual-studio.md) do programu Visual Studio za pomocą polecenia używane w kroku 1 w regularnych odstępach czasu, aby dodać zaktualizowane składniki.
 
 > [!IMPORTANT]
-> Należy pamiętać, że urządzenia z sieci udziału "zapamiętają" w lokalizacji źródłowej pochodzą z. Oznacza to, naprawy maszyny klienta może być konieczne powrócić do udziału sieciowego, który pierwotnie zainstalowany klient z. Wybierz lokalizację sieci dokładnie tak, aby powoduje wyrównanie z okresem istnienia, których oczekujesz, że aby klienci programu Visual Studio 2017 w organizacji.
+> Należy pamiętać, że urządzenia z sieci udziału "zapamiętają" w lokalizacji źródłowej pochodzą z. Oznacza to, naprawy maszyny klienta może być konieczne powrócić do udziału sieciowego, który pierwotnie zainstalowany klient z. Wybierz lokalizację sieci dokładnie tak, aby powoduje wyrównanie z okresem istnienia, których oczekujesz, że aby klienci programu Visual Studio w organizacji.
 
 ## <a name="use-visual-studio-tools"></a>Za pomocą narzędzi Visual Studio
 
 Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md) na maszynach klienckich.
 
 > [!TIP]
-> Oprócz dokumentacji w przewodniku administratora, jest dobrym źródłem informacji na temat instalacji programu Visual Studio 2017 [Visual Studio Instalator archiwa](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Oprócz dokumentacji w przewodniku administratora, jest dobrym źródłem informacji na temat instalacji programu Visual Studio [Visual Studio Instalator archiwa](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Określanie ustawień opinii klienta
 
@@ -74,8 +74,8 @@ Aby uzyskać więcej informacji na temat ustawień opinii klienta, zobacz [progr
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
-* [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
+* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
   * [Odwołanie do obciążenia i identyfikator składnika](workload-and-component-ids.md)
 * [Utwórz na podstawie sieci instalację programu Visual Studio](create-a-network-installation-of-visual-studio.md)

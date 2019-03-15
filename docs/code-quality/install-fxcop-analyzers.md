@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270579"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983458"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop analizujące kod w programie Visual Studio
 
@@ -54,12 +54,27 @@ Skorzystaj z poniższych wskazówek w celu określenia którą wersję pakiet an
 
 W programie Visual Studio 2017 w wersji 15.5 i nowszych można zainstalować [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) rozszerzenia, który zawiera wszystkie analizatory FxCop analizujące kod dla projektów zarządzanych.
 
+::: moniker range="vs-2017"
+
 1. W programie Visual Studio, wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
 
    **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
 
    > [!NOTE]
    > Również pobrać rozszerzenia bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio, wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+
+   **Zarządzaj rozszerzeniami** zostanie otwarte okno dialogowe.
+
+   > [!NOTE]
+   > Również pobrać rozszerzenia bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Rozwiń **Online** w okienku po lewej stronie, a następnie wybierz **Visual Studio Marketplace**.
 
@@ -83,7 +98,17 @@ W programie Visual Studio 2017 w wersji 15.5 i nowszych można zainstalować [Mi
 
 1. Otwórz ponownie program Visual Studio.
 
+::: moniker range="vs-2017"
+
 Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **narzędzia** > **rozszerzenia i aktualizacje**. W **rozszerzenia i aktualizacje** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **rozszerzenia** > **Zarządzaj rozszerzeniami**. W **Zarządzaj rozszerzeniami** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 

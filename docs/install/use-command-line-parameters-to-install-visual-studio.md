@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796845"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983078"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
 
-Po zainstalowaniu programu Visual Studio 2017 z poziomu wiersza polecenia można użyć różnych parametrów wiersza polecenia do kontrolowania lub dostosować instalację. W wierszu polecenia należy wykonać następujące czynności:
+Po zainstalowaniu programu Visual Studio z poziomu wiersza polecenia można użyć różnych parametrów wiersza polecenia do kontrolowania lub dostosować instalację. W wierszu polecenia należy wykonać następujące czynności:
 
 - Rozpocznij instalację z określonymi opcjami wstępnie wybrane.
 - Zautomatyzuj proces instalacji.
@@ -45,7 +45,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 (Zastąp `vs_enterprise.exe` jako właściwe dla wersji produktu instalujesz.)
 
 >[!TIP]
-> Aby uzyskać więcej przykładów dotyczących sposobów użyć wiersza polecenia do zainstalowania programu Visual Studio 2017, zobacz [przykładowe parametry wiersza polecenia](command-line-parameter-examples.md) strony.
+> Aby uzyskać więcej przykładów jak zainstalować program Visual Studio za pomocą wiersza polecenia, zobacz [przykładowe parametry wiersza polecenia](command-line-parameter-examples.md) strony.
 
 | **Polecenie** | **Opis** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `update` | Aktualizuje zainstalowany produkt. |
 | `repair` | Naprawia zainstalowany produkt. |
 | `uninstall` | Odinstalowuje zainstalowany produkt. |
-| `export` | **Nowość w 15.9**: Eksportuje wybór instalacji do pliku konfiguracji instalacji. **Uwaga**: Należy używać tylko z vs_installer.exe. |
+| `export` | **Nowość w wersji 15.9**: Eksportuje wybór instalacji do pliku konfiguracji instalacji. **Uwaga**: Należy używać tylko z vs_installer.exe. |
 
 ## <a name="install-options"></a>Opcje instalacji
 
@@ -115,7 +115,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista identyfikatorów obciążenia i identyfikatory składników
 
-Aby uzyskać listę obciążenia i identyfikatorów składników, posortowane według produktu Visual Studio, zobacz [Visual Studio 2017 obciążenia i identyfikatory składników](workload-and-component-ids.md) strony.
+Aby uzyskać listę obciążenia i identyfikatorów składników, posortowane według produktu Visual Studio, zobacz [identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md) strony.
 
 ## <a name="list-of-language-locales"></a>Listę ustawień regionalnych języka
 
@@ -155,7 +155,7 @@ Każda operacja generuje kilka plików dziennika w `%TEMP%` katalogu, który wsk
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017](command-line-parameter-examples.md)
-- [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio](command-line-parameter-examples.md)
+- [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
-- [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)
+- [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

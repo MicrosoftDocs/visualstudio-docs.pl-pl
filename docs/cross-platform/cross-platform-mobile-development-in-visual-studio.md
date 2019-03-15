@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843825"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069687"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych dla wielu platform w programie Visual Studio
 
@@ -96,7 +96,7 @@ Program Visual Studio Tools for Xamarin można wskazać systemów Android, iOS i
 
  ![Aplikacje hybrydowe dla wielu urządzeń przy użyciu języka Javascript](../cross-platform/media/multidevicehybridapps.png "aplikacje hybrydowe dla wielu urządzeń przy użyciu języka Javascript")
 
- Aby rozpocząć pracę, zainstaluj program Visual Studio 2017, a następnie wybierz **programowanie aplikacji mobilnych za pomocą języka Javascript** funkcji podczas instalacji. Narzędzia Cordova są automatycznie instalować całe oprogramowanie innych firm, które są wymagane do kompilowania aplikacji dla wielu platform.
+ Aby rozpocząć pracę, zainstaluj program Visual Studio, a następnie wybierz **programowanie aplikacji mobilnych za pomocą języka Javascript** funkcji podczas instalacji. Narzędzia Cordova są automatycznie instalować całe oprogramowanie innych firm, które są wymagane do kompilowania aplikacji dla wielu platform.
 
  Po zainstalowaniu rozszerzenia, Otwórz program Visual Studio i Utwórz **pusta aplikacja (Apache Cordova)** projektu. Następnie możesz opracować aplikację przy użyciu języka JavaScript i Typescript. Możesz również dodać wtyczki, aby rozszerzyć funkcjonalność aplikacji i interfejsów API z dodatków plug-in są wyświetlane w IntelliSense podczas pisania kodu.
 

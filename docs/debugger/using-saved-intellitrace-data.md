@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969723"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57873479"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Przy użyciu zapisanych danych funkcji IntelliTrace (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
     |----------------|-------------|
     |Sesja IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|
     |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> Co chcesz zrobić?
 

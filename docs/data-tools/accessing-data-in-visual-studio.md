@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919173"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983497"
 ---
 # <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -65,10 +65,20 @@ Większość innych języków SQL i NoSQL bazy danych produktów, które są wym
 - VelocityDB
 - i więcej...
 
-Wielu dostawców bazy danych i innych firm obsługuje integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z oferty w witrynie nuget.org, lub za pośrednictwem Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych Integracja z programem Visual Studio jako rozszerzenie. Możesz przeglądać te oferty w witrynie Visual Studio Marketplace, przechodząc do **narzędzia**, **rozszerzenia i aktualizacje** , a następnie wybierając **Online** w okienku po lewej stronie okno dialogowe. Aby uzyskać więcej informacji, zobacz [zgodne systemy bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Wielu dostawców bazy danych i innych firm obsługuje integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z oferty w witrynie nuget.org, lub za pośrednictwem Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych Integracja z programem Visual Studio jako rozszerzenie. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub przechodząc do **narzędzia** > **rozszerzenia i aktualizacje** , a następnie wybierając  **Online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wielu dostawców bazy danych i innych firm obsługuje integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z oferty w witrynie nuget.org, lub za pośrednictwem Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych Integracja z programem Visual Studio jako rozszerzenie. Możesz przeglądać te oferty w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub przechodząc do **rozszerzenia** > **Zarządzaj rozszerzeniami** , a następnie wybierając  **Online** w lewym okienku okna dialogowego. Aby uzyskać więcej informacji, zobacz [zgodne systemy bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> Rozszerzona pomoc techniczna dla programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i nowszych wersjach będą w dalszym ciągu działać przy użyciu programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [anons zakończenia okresu objęcia wsparciem dla programu SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Rozszerzona pomoc techniczna dla programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i nowszych wersjach będą nadal działać przy użyciu programu SQL Server 2005. Aby uzyskać więcej informacji, zobacz [anons zakończenia okresu objęcia wsparciem dla programu SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Języków .NET
 

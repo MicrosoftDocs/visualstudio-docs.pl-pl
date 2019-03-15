@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c17fc93602f3d6f80941ca84f372d57c0cde43
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950490"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069817"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -31,9 +31,21 @@ W tym artykule przyjęto założenie, że jesteś zaznajomiony z językiem progr
 
 Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
-1. Otwórz program Visual Studio i **pliku** menu na pasku menu wybierz opcję **New** > **pliku**.
+::: moniker range="vs-2017"
 
-1. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#**, a następnie wybierz **Otwórz**.
+1. Otwórz program Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
+
+::: moniker-end
+
+2. Z **pliku** menu na pasku menu wybierz opcję **New** > **pliku**.
+
+3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#**, a następnie wybierz **Otwórz**.
 
    Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasy C#. (Zwróć uwagę, że firma Microsoft nie ma konieczności tworzenia pełnej projekt programu Visual Studio na uzyskanie niektórych korzyści, że Edytor kodu oferuje; wszystko co potrzebne jest pliku z kodem)!
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 426a3b57f7645cf0d0241ce0f382f2507351ec18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770573"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069986"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -57,11 +57,18 @@ webpack pakiety pliki JavaScript, dzięki czemu mogą działać w przeglądarce.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Konieczne jest posiadanie programu Visual Studio 2017 i obciążenie programowania Node.js.
+* Musisz mieć zainstalowany program Visual Studio i obciążenie programowania Node.js.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    ::: moniker range=">=vs-2019"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+
+    ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
 
@@ -73,13 +80,19 @@ webpack pakiety pliki JavaScript, dzięki czemu mogą działać w przeglądarce.
 
 Najpierw utwórz projekt aplikacji sieci web środowiska Node.js.
 
-1. Otwórz program Visual Studio 2017.
+1. Otwórz program Visual Studio.
 
 1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-1. W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **pusta aplikacja sieci Web Node.js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz **OK**.
+1. Utwórz nowy projekt.
 
-     Jeśli nie widzisz **pusta aplikacja sieci Web Node.js** szablon projektu, należy najpierw zainstalować obciążenia programowanie Node.js.
+    ::: moniker range=">=vs-2019"
+    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **pusta aplikacja sieci Web Node.js**, a następnie wybierz polecenie **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **pusta aplikacja sieci Web Node.js**, wpisz nazwę **NodejsWebAppBlank**, następnie wybierz **OK**.
+    ::: moniker-end
+    Jeśli nie widzisz **pusta aplikacja sieci Web Node.js** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
     Visual Studio tworzy nowego rozwiązania i otwiera projekt.
 
@@ -377,7 +390,7 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
 
     ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Wiesz, że debuger został dołączony poprawnie otwieraniu konsoli języka JavaScript i narzędzia DOM Explorer w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzia F12 Microsoft Edge i przeglądarki Chrome Developer Tools.
+    Wiesz, że debuger został dołączony poprawnie otwieraniu konsoli języka JavaScript i narzędzia DOM Explorer w programie Visual Studio. Te narzędzia do debugowania są podobne do narzędzia programistyczne dla programu Chrome i F12 Tools dla Microsoft Edge.
 
     > [!NOTE]
     > Jeśli debuger nie dołączy i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie. ", zamknij wszystkie wystąpienia programu Chrome, przed rozpoczęciem Chrome w trybie debugowania za pomocą Menedżera zadań. Rozszerzenia dla programu Chrome może być uruchomiony i zapobieganie tryb pełnego debugowania.

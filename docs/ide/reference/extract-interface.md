@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323439"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983205"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
 
@@ -72,11 +72,17 @@ Ta Refaktoryzacja mają zastosowanie do:
 
    - C#:
 
-      ![Klasa wynikowa — C# ](media/extractinterface-class-cs.png) ![wynikowy interfejs —C#](media/extractinterface-interface-cs.png)
+      ![Klasa wynikowa —C#](media/extractinterface-class-cs.png)
+      
+      
+      ![Wynikowy interfejs —C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Klasa wynikowa — języka Visual Basic](media/extractinterface-class-vb.png) ![wynikowy interfejs - Visual Basic](media/extractinterface-interface-vb.png)
+      ![Klasa wynikowa — języka Visual Basic](media/extractinterface-class-vb.png)
+      
+      
+      ![Interfejs wynikowy - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

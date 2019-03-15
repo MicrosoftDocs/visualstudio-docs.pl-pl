@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954024"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871330"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Tworzenie instalacji sieciowej programu Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
 Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na klienckich stacjach roboczych. Zaprojektowaliśmy programu Visual Studio 2017 umożliwia buforowanie plików dla początkowej instalacji oraz wszystkie aktualizacje produktu na pojedynczy folder. (Ten proces jest również określany jako _tworzenie układu_.) 
 
@@ -48,7 +48,7 @@ Inne obsługiwane programów inicjujących obejmują [vs_buildtools.exe](https:/
 Musi mieć połączenie internetowe, aby ukończyć ten krok. Aby utworzyć instalacji w trybie offline z wszystkich języków i wszystkie funkcje, użyj jednej z poleceń z poniższych przykładów.
 
    > [!IMPORTANT]
-   > Pełny układ programu Visual Studio 2017 wymaga co najmniej 35 GB miejsca na dysku i może zająć trochę czasu, aby pobrać.  Zobacz [dostosowywania układu sieci](#customizing-the-network-layout) sekcji, aby uzyskać szczegółowe informacje na temat sposobu tworzenia układu z wyłącznie te składniki, które chcesz zainstalować.
+   > Pełny układ programu Visual Studio 2017 wymaga co najmniej 35 GB miejsca na dysku i może zająć trochę czasu, aby pobrać.  Zobacz [Dostosowywanie układu sieci](#customize-the-network-layout) sekcji, aby uzyskać szczegółowe informacje na temat sposobu tworzenia układu z wyłącznie te składniki, które chcesz zainstalować.
    >
    > [!TIP]
    > Upewnij się, uruchom polecenie z katalogu pobierania. Zwykle to `C:\Users\<username>\Downloads` na komputerze z systemem Windows 10.
@@ -127,7 +127,7 @@ Poniżej przedstawiono kilka przykładów sposobu tworzenia niestandardowego uk�
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>Nowość w wersji 15.3
+### <a name="new-in-version-153"></a>Nowość w wersji 15.3
 
 Po uruchomieniu polecenia układ, opcje, które określisz są zapisywane (na przykład obciążeń i języków). Układ kolejnych poleceń będzie zawierać wszystkie poprzednie opcje.  Poniżej przedstawiono przykład układu z jednego obciążeniem dla języka angielskiego tylko:
 
@@ -209,7 +209,7 @@ Inne opcje pomocy technicznej dostępne, mamy zbyt. Aby uzyskać listę, zobacz 
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Aktualizowanie instalacji sieciowej programu Visual Studio 2017](update-a-network-installation-of-visual-studio.md)
+* [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

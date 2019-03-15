@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb330756ea98961f420be6b148b7a295eee6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970689"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983367"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
 
@@ -59,7 +59,17 @@ Najszybszą metodą tworzenia modułu sprawdzania poprawności jest użycie szab
    > [!NOTE]
    > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).
 
+::: moniker range="vs-2017"
+
 5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **rozszerzenia i aktualizacje** na **narzędzia** menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **Zarządzaj rozszerzeniami** na **rozszerzenia** menu.
+
+::: moniker-end
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Dodawanie warstwowego modułu Walidującego do oddzielnego VSIX
 
@@ -118,8 +128,6 @@ Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, pol
     > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).
 
 8.  Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
-
-     Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.
 
 ##  <a name="programming"></a> Sprawdzanie poprawności programowania
 

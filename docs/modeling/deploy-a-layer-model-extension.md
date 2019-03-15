@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915624"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983107"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
 
@@ -37,9 +37,19 @@ Rozszerzenie jest skompilowane do pliku VSIX, który można zainstalować na inn
 
 ### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie
 
-1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+::: moniker range="vs-2017"
 
-2.  Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.
+1. W programie Visual Studio, wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio, wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+
+::: moniker-end
+
+2. Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Zainstaluj rozszerzenie na serwerze Team Foundation Server
 

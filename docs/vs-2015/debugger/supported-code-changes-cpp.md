@@ -13,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02ba30fe6ad2fbc59822b6bdfb954db7c29e0eb3
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834431"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57872280"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,8 @@ Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w
  Zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) informacje na temat pracy z funkcją Edytuj i Kontynuuj dla języka C++ w programie Visual Studio.  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Nieobsługiwane zmiany  
- Nie można zastosować następujące zmiany języka C/C++ podczas sesji debugowania:  
+
+Nie można zastosować następujące zmiany języka C/C++ podczas sesji debugowania:  
   
 - Większość zmian wprowadzonych do danych globalnych lub statycznych.  
   
@@ -63,7 +64,7 @@ Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w
   
 - Zmiany do kodu, który nie ma obiektu pliku.  
   
-  Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
+Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
   
 - Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej, wykonywanie jest kontynuowane przy użyciu starej wersji, a nie ostrzeżenie.  
   

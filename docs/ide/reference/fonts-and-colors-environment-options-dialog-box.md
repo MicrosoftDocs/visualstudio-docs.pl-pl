@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700266"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070259"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
@@ -218,7 +218,7 @@ Elementy może dziedziczyć kolor pierwszego planu innych wyświetle elementy ta
 
 **Default**
 
-Kolor, który pojawia się po raz pierwszy element programu Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
+Kolor, który pojawia się po raz pierwszy element Otwórz program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
 
 **Custom**
 
@@ -237,7 +237,7 @@ Elementy może dziedziczyć kolor tła innych wyświetle elementy takie jak **zw
 
 **Default**
 
-Kolor, który pojawia się po raz pierwszy element programu Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
+Kolor, który pojawia się po raz pierwszy element Otwórz program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.
 
 **Custom**
 

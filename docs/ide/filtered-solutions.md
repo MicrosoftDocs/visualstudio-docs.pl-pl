@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007179"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983887"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Filtrowane rozwiązań w programie Visual Studio
 
@@ -37,7 +37,7 @@ Aby otworzyć rozwiązanie z tylko niektóre z jego projektów, wykonaj następu
 
 1. Wybierz **pliku** > **Otwórz** > **projekt/rozwiązanie** z paska menu.
 
-2. W **nowy projekt** okno dialogowe, wybierz rozwiązanie, a następnie wybierz **projekty nie są ładowane**.
+2. W **Otwórz projekt** okno dialogowe, wybierz rozwiązanie, a następnie wybierz **projekty nie są ładowane**.
 
    ![Visual Studio Otwórz okno dialogowe projektu za pomocą nie są ładowane projekty zaznaczone](media/filtered-solutions/do-not-load-projects.png)
 

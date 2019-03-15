@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953972"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984137"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio 2017 i uaktualnić problemów
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio i uaktualnić problemów
 
 > [!IMPORTANT]
 > Nie, problemów z instalacją? Możemy pomóc. Firma Microsoft oferuje [ **Czat na żywo** ](https://visualstudio.microsoft.com/vs/support/#talktous) opcję pomocy technicznej (tylko w języku angielskim).
@@ -86,7 +86,7 @@ W tym miejscu znajduje się tabela znane problemy i obejścia, które mogą być
 
 Dzienniki instalacji są wymagane do większości rozwiązywania problemów z instalacją. Gdy Prześlij problem za pomocą [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio.md) w Instalatorze programu Visual Studio, te dzienniki są automatycznie uwzględniane w raporcie.
 
-Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji wszystkich składników program Visual Studio 2017, m.in. .NET Framework, zestaw Windows SDK i programu SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
+Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji z wszystkie składniki zainstalowane przez program Visual Studio, w tym .NET Framework, zestaw Windows SDK i programu SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
 
 Aby zebrać dzienniki:
 
@@ -104,7 +104,7 @@ Jeśli te rozwiązania wymienione w tym przewodniku rozwiązywania problemów ni
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Usuń program Visual Studio 2017](remove-visual-studio.md)
+* [Remove Visual Studio](remove-visual-studio.md)
 * [Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
 * [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)

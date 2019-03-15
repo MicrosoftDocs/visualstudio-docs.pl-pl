@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323280"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069765"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Tworzenie pierwszej usługi sieci web platformy ASP.NET Core w F przy użyciu programu Visual Studio\#
 
@@ -28,6 +28,8 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. Typ projektu jest dostarczany z plików szablonów, wchodzących w skład usługi sieci web funkcjonalności, zanim jeszcze dodano niczego!
 
+::: moniker range="vs-2017"
+
 1. Otwórz program Visual Studio.
 
 2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
@@ -38,7 +40,23 @@ Najpierw utworzysz projekt internetowego interfejsu API platformy ASP.NET Core. 
 
      ![Obciążenie platformy ASP.NET w Instalatorze programu VS](../ide/media/quickstart-aspnet-workload.png)
 
-4. W **Nowa aplikacja internetowa ASP.NET Core** okno dialogowe, wybierz opcję **platformy ASP.NET Core 2.1** z górnego menu rozwijanego. (Jeśli nie widzisz **platformy ASP.NET Core 2.1** na liście, zainstaluj ją, wykonując **Pobierz** link, który powinien zostać wyświetlony w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
+4 w **Nowa aplikacja internetowa ASP.NET Core** okno dialogowe, wybierz opcję **platformy ASP.NET Core 2.1** z górnego menu rozwijanego. (Jeśli nie widzisz **platformy ASP.NET Core 2.1** na liście, zainstaluj ją, wykonując **Pobierz** link, który powinien zostać wyświetlony w żółty pasek w górnej części okna dialogowego.) Wybierz **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio.
+
+2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+3. Na **Utwórz nowy projekt** wpisz **f # web** do wyszukiwania, a następnie wybierz **aplikacji sieci Web programu ASP.NET Core** szablonu projektu. Wybierz **dalej**.
+
+4. Na **konfigurowania nowego projektu** strony, wprowadź nazwę, a następnie wybierz **Utwórz**.
+
+5. Na **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core** wybierz opcję **platformy ASP.NET Core 2.1** z górnego menu rozwijanego, a następnie wybierz **Utwórz**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE
 

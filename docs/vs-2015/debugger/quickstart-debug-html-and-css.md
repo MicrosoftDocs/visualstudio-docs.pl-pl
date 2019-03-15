@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50c6899699bc8186c3cc1979b86d6659d9e3f13d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777687"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57870284"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Szybki start: Debugowanie kodu HTML i CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -294,7 +294,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 - Uruchomione programie Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
   
-  Przejdź [tutaj](http://go.microsoft.com/fwlink/?LinkID=232448) można pobrać [!INCLUDE[win8](../includes/win8-md.md)] i programu Visual Studio.  
+  Przejdź [tutaj](https://developer.microsoft.com/windows/downloads/sdk-archive) można pobrać [!INCLUDE[win8](../includes/win8-md.md)] i programu Visual Studio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

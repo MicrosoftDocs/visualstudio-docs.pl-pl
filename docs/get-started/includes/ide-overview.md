@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 16aa42df49ca7874015a1d012f3d6ce1688b18db
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874252"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070337"
 ---
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
@@ -156,7 +156,7 @@ Aby rozpocząć pracę, [Pobierz program Visual Studio](https://visualstudio.mic
 
 ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Po uruchomieniu programu Visual Studio po raz pierwszy możesz opcjonalnie [Zaloguj](../../ide/signing-in-to-visual-studio.md) przy użyciu swojego konta Microsoft albo konta służbowego lub szkolnego.
+Po otwarciu programu Visual Studio po raz pierwszy, można opcjonalnie [Zaloguj](../../ide/signing-in-to-visual-studio.md) przy użyciu swojego konta Microsoft albo konta służbowego lub szkolnego.
 
 ## <a name="create-a-program"></a>Utwórz program
 
@@ -236,7 +236,7 @@ Przyjrzyjmy się temu bliżej i Utwórz prosty program.
 
 1. Wybierz **Utwórz nowy projekt**.
 
-   ![Visual Studio Uruchom okno Utwórz nowy projekt](../media/vs-2019/start-window.png)
+   ![Visual Studio Uruchom okno Utwórz nowy projekt](../media/vs-2019/start-window-create-new-project.png)
 
    **Utwórz nowy projekt** okna otwiera i pokazuje kilka projektów *szablony*. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu.
 

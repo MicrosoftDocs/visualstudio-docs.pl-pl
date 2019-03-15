@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716106"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983523"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 

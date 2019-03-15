@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631175"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982990"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła.
 
 > [!NOTE]
-> Projekt w programie Visual Studio 2017, obsługa C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC.
+> Począwszy od programu Visual Studio 2017 roku Obsługa projekt C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC.
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry **XSD** zadania.

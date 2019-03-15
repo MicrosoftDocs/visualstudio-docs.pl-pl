@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768388"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070324"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 
@@ -48,11 +48,18 @@ Express to platforma aplikacji sieci web, używane jako struktura serwera dla ś
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Konieczne jest posiadanie programu Visual Studio 2017 i obciążenie programowania Node.js.
+* Musisz mieć zainstalowany program Visual Studio i obciążenie programowania Node.js.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    ::: moniker range=">=vs-2019"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+
+    ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
 
@@ -66,13 +73,19 @@ Program Visual Studio zarządza plikami dla pojedynczej aplikacji w *projektu*. 
 
 W tym samouczku możesz zaczynają się od prostego projektu zawierającego kod Node.js i aplikacji express.
 
-1. Otwórz program Visual Studio 2017.
+1. Otwórz program Visual Studio.
 
 1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-1. W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, a następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowe Azure aplikację Node.js Express 4** , a następnie wybierz **OK**.
+1. Utwórz nowy projekt.
 
-     Jeśli nie widzisz **podstawowe Azure aplikację Node.js Express 4** szablonu projektu należy zainstalować **programowania Node.js** obciążenia pierwszy (patrz wymagania wstępne dotyczące instrukcji).
+    ::: moniker range=">=vs-2019"
+    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, a następnie wybierz pozycję **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.
+    ::: moniker-end
+    Jeśli nie widzisz **aplikacji podstawowe Azure node.js w środowisku Express 4** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
     Visual Studio tworzy nowego rozwiązania i otwiera projekt w okienku po prawej stronie. *App.js* plik projektu zostanie otwarty w edytorze (w okienku po lewej stronie).
 
@@ -191,7 +204,7 @@ Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. 
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Wybierz cel debugowania na pasku narzędzi debugowania, takie jak przeglądarki Edge lub Chrome.
+1. Wybierz cel debugowania na pasku narzędzi debugowania, takich jak Microsoft Edge lub Chrome.
 
     ![Wybierz element docelowy debugowania](../javascript/media/tutorial-nodejs-deploy-target.png)
 

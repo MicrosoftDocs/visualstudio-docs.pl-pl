@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155984"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983809"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Konfigurowanie testów jednostkowych dla kodu w języku Python
 
@@ -86,7 +86,7 @@ Aby rozpocząć debugowanie, ustaw początkowy punkt przerwania w kodzie, a nast
 
 ![Profilowanie testu](media/unit-test-debugging.png)
 
-Można również użyć **Analizuj pokrycie kodu dla wybrane testy** i **profilu testowego** poleceń w zależności od używanej wersji programu Visual Studio (zobacz [tabela funkcji](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+Można również użyć **Analizuj pokrycie kodu dla wybrane testy** i **profilu testowego** poleceń.
 
 ### <a name="known-issues"></a>Znane problemy
 

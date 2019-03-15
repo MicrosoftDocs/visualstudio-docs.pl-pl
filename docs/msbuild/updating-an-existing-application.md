@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596028"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984043"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejących aplikacji dla programu MSBuild 15
 
 W wersjach programu MSBuild przed 15.0 program MSBuild został załadowany z globalnej pamięci podręcznej zestawów (GAC) i rozszerzenia programu MSBuild zostały zainstalowane w rejestrze. To zapewnia wszystkie aplikacje używane w tej samej wersji programu MSBuild logować się na tym samym zestawy narzędzi, ale uniemożliwił instalacje side-by-side w różnych wersjach programu Visual Studio.
 
-Aby obsługiwać szybciej i mniejsze i side-by-side instalacji, programu Visual Studio 2017 już nie umieszcza MSBuild w pamięci podręcznej GAC lub modyfikuje rejestr. Niestety oznacza to, że aplikacje, które chcą oceny lub kompilowanie projektów za pomocą interfejsu API programu MSBuild nie można niejawnie polegać na instalację programu Visual Studio.
+Aby obsługiwać szybciej i mniejsze i side-by-side instalacji, Visual Studio 2017 i nowsze wersje nie są już MSBuild należy umieścić w pamięci podręcznej GAC, lub modyfikuje rejestr. Niestety oznacza to, że aplikacje, które chcą oceny lub kompilowanie projektów za pomocą interfejsu API programu MSBuild nie można niejawnie polegać na instalację programu Visual Studio.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Użyj programu MSBuild w programie Visual Studio
 
@@ -42,7 +42,7 @@ W poniższych instrukcjach przyjęto, że używasz [odwołań NuGet PackageRefer
 
 Zmień swoje pliki projektu, aby odwoływać się do zestawów programu MSBuild z pakietów NuGet. Określ `ExcludeAssets=runtime` NuGet można stwierdzić, że zestawy są wymagane tylko w czasie kompilacji, a nie powinny być kopiowany do katalogu wyjściowego.
 
-Główna i pomocnicza wersja pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, które chcesz obsługiwać. Jeśli chcesz obsługiwać dowolną wersję programu Visual Studio 2017, odwoływać się do pakietu wersji `15.1.548`.
+Główna i pomocnicza wersja pakietów MSBuild musi być mniejsza lub równa minimalnej wersji programu Visual Studio, które chcesz obsługiwać. Na przykład, jeśli chcesz obsługiwać programu Visual Studio 2017 i nowsze wersje, odwoływać się do wersji pakietu `15.1.548`.
 
 Na przykład można użyć tego kodu XML:
 

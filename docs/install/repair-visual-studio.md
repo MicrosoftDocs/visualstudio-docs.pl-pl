@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939440"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983208"
 ---
-# <a name="repair-visual-studio-2017"></a>Napraw program Visual Studio 2017
+# <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
 Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony. Naprawa może rozwiązać ten problem.
 
@@ -39,7 +39,7 @@ Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony.
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
-* [Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio 2017](troubleshooting-installation-issues.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
+* [Aktualizowanie programu Visual Studio](update-visual-studio.md)
+* [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)
+* [Rozwiązywanie problemów instalacji i uaktualniania programu Visual Studio](troubleshooting-installation-issues.md)

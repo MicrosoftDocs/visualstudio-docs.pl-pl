@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742459"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983861"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrażanie w programie Visual Studio
 
@@ -107,9 +107,9 @@ Jeśli potrzebujesz bardziej złożonej instalacji aplikacji pulpitu niż [Click
 
 - Pakiet instalacyjny opartym na MSI można utworzyć przy użyciu [WiX zestawu narzędzi Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Jest to zestaw narzędzi wiersza polecenia.
 
-- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z Flexera oprogramowania. InstallShield mogą być używane w programie Visual Studio 2017 (Community Edition nie są obsługiwane). Należy pamiętać, że InstallShield Limited Edition nie jest już dołączony do Visual Studio i nie jest obsługiwana w programie Visual Studio 2017; Skontaktuj się z [oprogramowania Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o przyszłych dostępności.
+- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) z Flexera oprogramowania. InstallShield mogą być używane z programu Visual Studio 2017 i nowsze wersje (Community Edition nie obsługiwane). Pamiętaj, że InstallShield Limited Edition nie jest już dołączony do Visual Studio i nie jest obsługiwana w programie Visual Studio 2017 i nowszych wersjach; Skontaktuj się z [oprogramowania Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o przyszłych dostępności.
 
-- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą projektu Instalatora (vdproj). Aby użyć tej opcji, należy zainstalować [rozszerzenia programu Visual Studio 2017 Instalatora projektów](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Pakiet Instalatora MSI i EXE mogą być tworzone za pomocą projektu Instalatora (vdproj). Aby użyć tej opcji, należy zainstalować [projektów Instalatora programu Visual Studio rozszerzenia](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
 - Można także zainstalować wstępnie wymagane składniki aplikacji komputerowych, konfigurując Instalator ogólny, który jest znany jako program inicjujący. Aby uzyskać więcej informacji, zobacz [wymagania wstępne wdrożenia aplikacji](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Potoki usługi Azure umożliwia włączanie ciągłego wdrażania aplikacji. Aby
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Możesz opublikować dodatek dla pakietu Office w programie Visual Studio. | [Wdrażanie i publikowanie dodatku pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Usługa WCF lub OData** | Inne aplikacje mogą używać usług WCF RIA, które są wdrażane na serwerze sieci web. | [Tworzenie i wdrażanie usług danych WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch nie jest już obsługiwana w programie Visual Studio 2017, ale nadal można wdrożyć z programu Visual Studio 2015 i starszych wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch nie jest już obsługiwany począwszy od programu Visual Studio 2017, ale nadal można wdrożyć z programu Visual Studio 2015 i starszych wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Następne kroki
 

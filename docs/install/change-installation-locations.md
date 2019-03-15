@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947825"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983900"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Wybierz lokalizację instalacji programu Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio"></a>Wybierz lokalizacje instalacji w programie Visual Studio
 
 **Nowość w wersji 15.7**: Można zmniejszyć miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym, zmieniając lokalizację dla niektórych plików. W szczególności można użyć innej lokalizacji pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i pliki narzędzia.
 
@@ -64,7 +64,7 @@ Chcesz zacząć? Poniżej przedstawiono sposób.
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Modyfikowanie programu Visual Studio 2017](update-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
+* [Aktualizowanie programu Visual Studio](update-visual-studio.md)
+* [Modyfikowanie programu Visual Studio](update-visual-studio.md)
+* [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

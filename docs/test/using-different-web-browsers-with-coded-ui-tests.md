@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318436"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983037"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Użyj innej przeglądarki za pomocą kodowanych testów interfejsu użytkownika
 
@@ -51,11 +51,23 @@ Testując aplikację internetową za pomocą przeglądarek internetowych różne
 
 ### <a name="install-selenium-components"></a>Instalowanie składników Selenium
 
-1.  Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.
+::: moniker range="vs-2017"
 
-2.  W **rozszerzenia i aktualizacje** okno dialogowe, wyszukaj `Selenium components for Cross Browser Testing`.
+1. Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.
 
-3.  Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.
+2. W **rozszerzenia i aktualizacje** okno dialogowe, wyszukaj `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Na **rozszerzenia** menu, wybierz **Zarządzaj rozszerzeniami**.
+
+2. W **Zarządzaj rozszerzeniami** okno dialogowe, wyszukaj `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.
 
     > [!TIP]
     > Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).

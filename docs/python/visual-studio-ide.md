@@ -1,7 +1,7 @@
 ---
 title: Omówienie programu Visual Studio dla programistów używających języka Python
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316616"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983510"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -28,6 +28,10 @@ Ten obraz pokazuje programu Visual Studio Otwórz projekt języka Python i kilko
 
 - [**Eksplorator rozwiązań** ](../ide/solutions-and-projects-in-visual-studio.md) (prawym górnym rogu) umożliwia wyświetlanie, przejść i zarządzanie plikami kodu. **Eksplorator rozwiązań** ułatwiają organizowanie kodu za pomocą tych plików do grupowania [rozwiązania i projekty](/visualstudio/get-started/tutorial-projects-solutions).
     - Wraz z **Eksploratora rozwiązań** jest [ **środowiska Python**](managing-python-environments-in-visual-studio.md), gdzie zarządzać różnych interpreterów języka Python, które są zainstalowane na tym komputerze.
+
+    ::: moniker range=">=vs-2019"
+    - Możesz również otwarty i uruchom kod języka Python w folderze bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
 
 - [Okna edytora](../ide/writing-code-in-the-code-and-text-editor.md) (center), gdzie prawdopodobnie spędzisz większość czasu, wyświetla zawartość pliku. To jest, gdy użytkownik [edycji kodu w języku Python](editing-python-code-in-visual-studio.md)nawigować do kodu struktury i ustawiać punkty przerwania podczas debugowania sesji. Za pomocą języka Python, możesz również wybrać kod i naciśnij klawisze Ctrl + Enter, aby uruchomić ten kod w [okna interaktywnego REPL](python-interactive-repl-in-visual-studio.md).
 
@@ -83,6 +87,12 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
    ![Polecenia nawigacji kodu](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Zaawansowane funkcje dla języka Python
+
+::: moniker range=">=vs-2019"
+- [Uruchamianie kodu bez projektu](quickstart-05-python-visual-studio-open-folder.md)
+
+    Począwszy od programu Visual Studio 2019 r można otworzyć folderu zawierającego kod języka Python w celu korzystania z funkcji, takich jak technologia IntelliSense i debugowanie bez konieczności tworzenia projektu programu Visual Studio Code.
+::: moniker-end
 
 - [Interaktywna pętla REPL języka Python](python-interactive-repl-in-visual-studio.md)
 

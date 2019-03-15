@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: Wdrażanie aplikacji | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do wdrożenia aplikacji, usług i składników.
+description: 'Dowiedz się, jak używać programu Visual Studio do wdrażania aplikacji, usług i składników.'
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947124"
 ---
 # <a name="deployment-in-visual-studio"></a>Wdrożenie w programie Visual Studio
 

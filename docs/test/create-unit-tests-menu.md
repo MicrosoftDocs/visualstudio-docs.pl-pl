@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315108"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982769"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Tworzenie jednostki wycinki kodu metoda testu za pomocą polecenia Utwórz testy jednostkowe
 
@@ -38,17 +38,28 @@ Aby rozpocząć, wybierz metodę, typu lub przestrzeni nazw w edytorze kodu w pr
 
 ![Za pomocą polecenia Utwórz testy jednostki](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Ustawienie cech testu jednostki
+## <a name="set-unit-test-traits"></a>Ustaw cech testu jednostki
 
 Jeśli planujesz uruchomić te testy jako część procesu automatyzacji testów, należy rozważyć, posiadające testu, utworzone w innym projekcie testowym (druga opcja w oknie dialogowym powyżej) i testów jednostkowych ustawienie cech dla testu jednostkowego. Dzięki temu można łatwiej lub wykluczane z tych określonych testów w ramach ciągłej integracji i ciągłego wdrażania potoku. Cechy są ustawiane przez dodanie metadanych do testu jednostkowego bezpośrednio, jak pokazano poniżej.
 
 ![Ustawienie cech testu jednostki](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Za pomocą platform testów jednostkowych innych firm
+## <a name="use-third-party-unit-test-frameworks"></a>Użyj struktury testów jednostkowych innej firmy
 
 Za pomocą programu Visual Studio mogą być testy jednostkowe, utworzony za pomocą dowolnej platformy testów. Aby zainstalować inne struktury testów:
 
+::: moniker range="vs-2017"
+
 1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+
+::: moniker-end
+
 2. Rozwiń **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz **testowania**.
 
 ![Za pomocą platform testowych innych firm](media/createunittestfx.png)

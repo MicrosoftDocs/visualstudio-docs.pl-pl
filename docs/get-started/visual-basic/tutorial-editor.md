@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939479"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069635"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -35,9 +35,21 @@ W tym artykule przyjęto założenie, że już znasz Visual Basic. Jeśli nie ma
 
 Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
-1. Otwórz program Visual Studio i **pliku** menu na pasku menu wybierz opcję **nowy plik**.
+::: moniker range="vs-2017"
 
-1. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual Basic**, a następnie wybierz **Otwórz**.
+1. Otwórz program Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
+
+::: moniker-end
+
+2. Z **pliku** menu na pasku menu wybierz opcję **nowy plik**.
+
+3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual Basic**, a następnie wybierz **Otwórz**.
 
    Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasa Visual Basic. (Można już zauważysz, że nie trzeba utworzyć pełny projekt programu Visual Studio na uzyskanie niektórych korzyści oferowanych przez Edytor kodu, takich jak wyróżnianie składni. Wymagany jest plik kodu!)
 

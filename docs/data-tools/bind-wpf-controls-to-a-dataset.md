@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939167"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069869"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -56,15 +56,29 @@ Znajomość następujących pojęć jest również przydatna, ale nie jest wymag
 
 Utwórz nowy projekt WPF, aby wyświetlić rekordy produktu.
 
-1. Uruchom program Visual Studio.
+::: moniker range="vs-2017"
+
+1. Otwórz program Visual Studio.
 
 2. Na **pliku** menu, wybierz opcję **New** > **projektu**.
 
 3. Rozwiń **języka Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
 
-4. Wybierz **aplikacji WPF** szablonu projektu.
+4. Wybierz **aplikacja WPF** szablonu projektu.
 
 5. W **nazwa** wprowadź **AdventureWorksProductsEditor** , a następnie wybierz **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Otwórz program Visual Studio.
+
+2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+3. Wyszukaj C# **aplikacja WPF** projektu szablonu, a następnie postępuj zgodnie z instrukcjami, aby utworzyć projekt, nazw projektu **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Program Visual Studio tworzy projekt AdventureWorksProductsEditor.
 

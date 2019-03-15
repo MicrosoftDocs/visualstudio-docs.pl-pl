@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718370"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983016"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Przewodnik: Tworzenie pakietu rozszerzeń
 
@@ -85,7 +85,7 @@ Teraz, gdy rozszerzenie zostanie opublikowany, zainstaluj go w programie Visual 
 
 Aby usunąć rozszerzenie z komputera:
 
-1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje...** .
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
 2. Wybierz `Test Extension Pack` a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie i jego listy rozszerzenia zawarte w pakiecie rozszerzenia są planowane do odinstalowania.
 

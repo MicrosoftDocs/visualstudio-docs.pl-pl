@@ -1,5 +1,5 @@
 ---
-title: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
+title: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922293"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069661"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
 Ten artykuł przeprowadzi Cię przez tworzenie, uruchamianie, i dostosowywać serie jednostek testów za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego i programu Visual Studio **Eksploratora testów**. Rozpocznij z projektu języka C#, który jest w fazie projektowania, tworzy testy, które wykonują kod, uruchom testy i bada wyniki. Następnie można zmienić kodu projektu i ponownie uruchom testy.
 
@@ -35,28 +35,38 @@ Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zo
 
 ## <a name="create-a-project-to-test"></a>Utwórz projekt do przetestowania
 
+::: moniker range="vs-2017"
+
 1. Otwórz program Visual Studio.
 
 2. Na **pliku** menu, wybierz opcję **New** > **projektu**.
 
    **Nowy projekt** pojawi się okno dialogowe.
 
-3. W obszarze **zainstalowane szablony**, kliknij przycisk **Visual C#**.
+::: moniker-end
 
-4. Na liście typów aplikacji, kliknij **biblioteki klas**.
+::: moniker range=">=vs-2019"
 
-5. W **nazwa** wpisz **Bank** a następnie kliknij przycisk **OK**.
+1. Otwórz program Visual Studio.
 
-   Nowy projekt o nazwie Bank jest tworzone i wyświetlane w **Eksploratora rozwiązań** z *Class1.cs* plik jest otwarty w edytorze kodu.
+2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+::: moniker-end
+
+3. Wybierz C# szablonu projektu biblioteki klas.
+
+4. Nadaj projektowi nazwę **Bank**, a następnie kliknij przycisk **OK** lub **Utwórz**.
+
+   Projekt o nazwie Bank, jest tworzony i wyświetlany w **Eksploratora rozwiązań** z *Class1.cs* plik jest otwarty w edytorze kodu.
 
    > [!NOTE]
    > Jeśli *Class1.cs* nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik *Class1.cs* w **Eksploratora rozwiązań** aby go otworzyć.
 
-6. Skopiuj kod źródłowy z [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)i Zamień oryginalną zawartość *Class1.cs* skopiowany kod.
+5. Skopiuj kod źródłowy z [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)i Zamień oryginalną zawartość *Class1.cs* skopiowany kod.
 
-7. Zapisz plik jako *BankAccount.cs*.
+6. Zapisz plik jako *BankAccount.cs*.
 
-8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 Masz teraz projekt o nazwie Bank. Zawiera on kod źródłowy do testowania i narzędzia do testowania go. Przestrzeń nazw dla banku, BankAccountNS, zawiera klasę publiczną BankAccount, której metody należy testować w poniższych procedurach.
 
@@ -346,7 +356,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Ponów test, przepisz i Analizuj ponownie
 
-Przyjęto założenie, znajduje się błąd w metodzie, w ramach testu i `Debit` metoda nawet nie wyrzuca <xref:System.ArgumentOutOfRangeException>, nieważne danych wyjściowych prawidłowy komunikat z wyjątkiem. Obecnie metoda testowa nie obsługuje tej sprawy. Jeśli `debitAmount` wartość jest prawidłowa (czyli mniej niż saldo, ale większa od zera), żaden wyjątek nie jest przechwytywany, więc asercja nigdy nie jest uruchamiany. Jeszcze Metoda test kończy się powodzeniem. To nie jest dobry, ponieważ chcesz, aby testowanej metody, aby zakończyć się niepowodzeniem, jeśli jest zgłaszany żaden wyjątek.
+Założono w testowanej metody znajduje się błąd i `Debit` metoda nawet nie wyrzuca <xref:System.ArgumentOutOfRangeException>, nigdy nie należy pamiętać, dane wyjściowe prawidłowy komunikat z wyjątkiem. Obecnie metoda testowa nie obsługuje tej sprawy. Jeśli `debitAmount` wartość jest prawidłowa (czyli mniej niż saldo, ale większa od zera), żaden wyjątek nie jest przechwytywany, więc asercja nigdy nie jest uruchamiany. Jeszcze Metoda test kończy się powodzeniem. To nie jest dobry, ponieważ chcesz, aby testowanej metody, aby zakończyć się niepowodzeniem, jeśli jest zgłaszany żaden wyjątek.
 
 Jest to błąd w metodzie testowej. Aby rozwiązać ten problem, należy dodać <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> asercja na koniec testowanej metody, aby obsłużyć przypadek, gdzie jest zgłaszany żaden wyjątek.
 

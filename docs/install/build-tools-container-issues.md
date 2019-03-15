@@ -1,6 +1,6 @@
 ---
 title: Znane problemy z kontenerami
-description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio kompilacji narzędzia 2017 do kontenera Windows.
+description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio Build Tools w kontenerze Windows.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935020"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983705"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy z kontenerami
 
 Istnieje kilka kwestii, podczas instalowania programu Visual Studio w kontenerze platformy Docker.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Kontener Windows
 
@@ -36,6 +38,8 @@ Następujące znane problemy, które występują po zainstalowaniu programu Visu
 
 * Nie można zainstalować programu Visual Studio 2017 w wersji należy zachować 15,8 lub starszej (dowolny produkt) na mcr<span></span>.microsoft.com/windows/servercore:1809 lub nowszej. Aby uzyskać więcej informacji, zobacz https://aka.ms/setup/containers/servercore1809.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Tworzenie kontenera narzędzia
 
 Korzystając z narzędzia Build Tools kontenera, mogą wystąpić następujące znane problemy. Aby zobaczyć, czy problemy zostały rozwiązane w przypadku innych znanych problemach, odwiedź stronę https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ Korzystając z narzędzia Build Tools kontenera, mogą wystąpić następujące 
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
-* [Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio Build Tools obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)

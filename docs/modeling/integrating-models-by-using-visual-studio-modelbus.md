@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccf63c4b28b8181bc3d652067ac6bdef1020f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946898"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57873518"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 
@@ -27,7 +27,7 @@ Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:
 
 -   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907805"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983796"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
@@ -24,13 +24,24 @@ Można wywołać narzędzia zewnętrzne z poziomu programu Visual Studio przy u�
 
 ## <a name="tools-available-on-the-tools-menu"></a>Narzędzia dostępne w menu Narzędzia
 
-**Narzędzia** menu zawiera kilka wbudowanych poleceń, takich jak:
+**Narzędzia** menu zawiera kilka wbudowanych poleceń, w tym:
+
+::: moniker range="vs-2017"
 
 * **Rozszerzenia i aktualizacje** do [zarządzać rozszerzeniami programu Visual Studio](finding-and-using-visual-studio-extensions.md)
 * **Menedżer fragmentów kodu** do [organizowanie fragmentów kodu](code-snippets.md)
-* **Ochrona preEmptive — Dotfuscator** można uruchomić [Dotfuscator Community Edition (CE)](dotfuscator/index.md) , gdy jest [zainstalowane](dotfuscator/install.md)
 * **Dostosuj** do [Dostosowywanie menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opcje** do [ustawić szereg różnych opcji dla programu Visual Studio IDE i innych narzędzi](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Menedżer fragmentów kodu** do [organizowanie fragmentów kodu](code-snippets.md)
+* **Dostosuj** do [Dostosowywanie menu i paski narzędzi](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opcje** do [ustawić szereg różnych opcji dla programu Visual Studio IDE i innych narzędzi](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Dodawanie nowych narzędzi do menu Narzędzia
 

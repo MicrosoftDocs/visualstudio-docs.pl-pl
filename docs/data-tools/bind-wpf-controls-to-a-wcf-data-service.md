@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909690"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069778"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -50,7 +50,7 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:
 
-- Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [Usługi danych WCF](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Znajomość następujących pojęć jest również przydatna, ale nie jest wymag
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
 
-W tym przewodniku należy rozpocząć od tworzenia projektu dla usługi danych WCF:
+1. Początek w tym instruktażu utworzysz C# lub Visual Basic **aplikacji sieci Web ASP.NET** projektu. Nadaj projektowi nazwę **AdventureWorksService**.
 
-1. Uruchom program Visual Studio.
-
-2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
-
-3. Rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz pozycję **Web**.
-
-4. Wybierz **aplikacji sieci Web ASP.NET** szablonu projektu.
-
-5. W **nazwa** wpisz **AdventureWorksService** i kliknij przycisk **OK**.
-
-     Program Visual Studio tworzy **AdventureWorksService** projektu.
-
-6. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Default.aspx** i wybierz **Usuń**. Ten plik nie jest konieczne w tym przewodniku.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Default.aspx** i wybierz **Usuń**. Ten plik nie jest konieczne przewodnik.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Tworzenie modelu danych jednostki usługi
 

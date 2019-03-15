@@ -14,32 +14,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222756"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983393"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzeń programu Visual Studio
 
 Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w programie Visual Studio i udostępnia nowe i ulepszone funkcje programu Visual Studio. Można znaleźć więcej informacji na temat rozszerzeń programu Visual Studio tutaj: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Użyj **rozszerzenia i aktualizacje** okno dialogowe, aby zainstalować i zarządzać rozszerzeniami programu Visual Studio. Aby otworzyć **rozszerzenia i aktualizacje** okno dialogowe, wybierz **narzędzia** > **rozszerzenia i aktualizacje**, lub typu **rozszerzenia** w **Szybkie uruchamianie** okna.
+::: moniker range="vs-2017"
 
-![Okno dialogowe rozszerzenia i aktualizacje w w programie Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
+Użyj **rozszerzenia i aktualizacje** okno dialogowe, aby zainstalować i zarządzać rozszerzeniami programu Visual Studio. Aby otworzyć **rozszerzenia i aktualizacje** okno dialogowe, wybierz **narzędzia** > **rozszerzenia i aktualizacje**, lub typu **rozszerzenia** w **Szybkie uruchamianie** pola wyszukiwania.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Użyj **Zarządzaj rozszerzeniami** okno dialogowe, aby zainstalować i zarządzać rozszerzeniami programu Visual Studio. Aby otworzyć **Zarządzaj rozszerzeniami** okno dialogowe, wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**. Lub typ **rozszerzenia** w **Szybkie uruchamianie** pole wyszukiwania i wybierz polecenie **Zarządzaj rozszerzeniami**.
+
+::: moniker-end
+
+![Okno rozszerzeń w programie Visual Studio](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
 
 W okienku po lewej stronie kategoryzuje rozszerzenia przez osoby, które są zainstalowane, te, które są dostępne w Visual Studio Marketplace (**Online**) oraz te, które są dostępne aktualizacje. **Menedżer roamingu rozszerzeń** przechowuje listę rozszerzeń programu Visual Studio po zainstalowaniu na dowolnym komputerze lub wystąpieniu programu Visual Studio. Został zaprojektowany tak, co pozwala łatwiej znaleźć ulubionych rozszerzeń.
 
 ## <a name="find-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio
 
-Można zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — te obejmują szablony projektów, szablony elementów, elementy **przybornika** elementów, składniki zarządzane rozszerzenia Framework (MEF) i pakiety VSPackages. Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **rozszerzenia i aktualizacje** okno dialogowe nie można je włączyć lub wyłączyć. Visual Studio Marketplace zawiera rozszerzenia MSI i VSIX.
+Można zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — te obejmują szablony projektów, szablony elementów, elementy **przybornika** elementów, składniki zarządzane rozszerzenia Framework (MEF) i pakiety VSPackages.
+
+::: moniker range="vs-2017"
+
+Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **rozszerzenia i aktualizacje** okno dialogowe nie można je włączyć lub wyłączyć. Visual Studio Marketplace zawiera rozszerzenia MSI i VSIX.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **Zarządzaj rozszerzeniami** okno dialogowe nie można je włączyć lub wyłączyć. Visual Studio Marketplace zawiera rozszerzenia MSI i VSIX.
+
+::: moniker-end
 
 ## <a name="install-or-uninstall-visual-studio-extensions"></a>Instalowanie lub odinstalowywanie rozszerzenia programu Visual Studio
+
+::: moniker range="vs-2017"
 
 W **rozszerzenia i aktualizacje**, znaleźć rozszerzenia, którą chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukiwać w **wyszukiwania** okna.) Kliknij przycisk **Pobierz**. To rozszerzenie zaplanowano do zainstalowania. Rozszerzenie zostanie zainstalowane po zamknięciu wszystkich wystąpień programu Visual Studio.
 
 Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, **rozszerzenia i aktualizacje** okno dialogowe zawiera listę zależności, które muszą być zainstalowane, zanim będzie można zainstalować rozszerzenia.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+W **Zarządzaj rozszerzeniami**, znaleźć rozszerzenia, którą chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukiwać w **wyszukiwania** okna.) Kliknij przycisk **Pobierz**. To rozszerzenie zaplanowano do zainstalowania. Rozszerzenie zostanie zainstalowane po zamknięciu wszystkich wystąpień programu Visual Studio.
+
+Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, **Zarządzaj rozszerzeniami** okno dialogowe zawiera listę zależności, które muszą być zainstalowane, zanim będzie można zainstalować rozszerzenia.
+
+::: moniker-end
 
 Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Można wyłączyć tylko rozszerzenia VSIX; rozszerzenia, które zostały zainstalowane za pomocą Instalatora MSI można tylko odinstalować. Znaleźć rozszerzenia, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**. Uruchom ponownie Visual Studio, aby zwolnić wyłączone rozszerzenie.
 
@@ -47,17 +81,29 @@ Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lu
 
 Większość rozszerzeń to rozszerzenia dla poszczególnych użytkowników i są instalowane w *%LocalAppData%\Microsoft\VisualStudio\\< wersja programu Visual Studio\>\Extensions\\*  folderu. Kilka rozszerzeń to rozszerzenia administracyjne i są instalowane w *\<folder instalacji programu Visual Studio > \Common7\IDE\Extensions\\* folderu.
 
-Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników można załadować tylko wtedy, gdy program Visual Studio jest uruchamiany z uprawnieniami zwykłego użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone, po uruchomieniu programu Visual Studio z uprawnieniami administratora. Aby to zrobić, przejdź do **rozszerzenia i aktualizacje** Strona opcji (**Narzędzia > Opcje** > **środowiska** > **rozszerzenia Aktualizacje i**). Wyczyść **obciążenia rozszerzenia dla poszczególnych użytkowników podczas uruchamiania jako administrator** pole wyboru, a następnie uruchom ponownie program Visual Studio.
+Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników można załadować tylko wtedy, gdy program Visual Studio jest uruchamiany z uprawnieniami zwykłego użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone, po uruchomieniu programu Visual Studio z uprawnieniami administratora. Aby to zrobić, przejdź na stronę opcje rozszerzenia (**narzędzia** > **opcje** > **środowiska**  >   **Rozszerzenia**). Wyczyść **obciążenia rozszerzenia dla poszczególnych użytkowników podczas uruchamiania jako administrator** pole wyboru, a następnie uruchom ponownie program Visual Studio.
 
 ## <a name="automatic-extension-updates"></a>Aktualizacje automatyczne rozszerzenia
 
-Rozszerzenia są automatycznie aktualizowane, gdy nowa wersja jest dostępna w Visual Studio Marketplace. Nowa wersja rozszerzenia jest wykryte i zainstalowane w tle. Przy następnym uruchomieniu programu Visual Studio, nowa wersja rozszerzenia zostanie uruchomiona.
+Rozszerzenia są automatycznie aktualizowane, gdy nowa wersja jest dostępna w Visual Studio Marketplace. Nowa wersja rozszerzenia jest wykryte i zainstalowane w tle. Przy następnym otwarciu programu Visual Studio, nowa wersja rozszerzenia zostanie uruchomiona.
 
 Jeśli chcesz wyłączyć automatyczne aktualizacje, można wyłączyć funkcję dla wszystkich rozszerzeń lub tylko określone rozszerzenia.
+
+::: moniker range="vs-2017"
 
 - Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz opcję **zmiany ustawień rozszerzenia i aktualizacje** łącze w **rozszerzenia i aktualizacje** okna dialogowego. W **opcje** okno dialogowe, usuń zaznaczenie pola wyboru **automatyczne aktualizowanie rozszerzeń**.
 
 - Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **rozszerzenia i aktualizacje** okna dialogowego.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz opcję **zmiany ustawień dla rozszerzeń** łącze w **Zarządzaj rozszerzeniami** okna dialogowego. W **opcje** okno dialogowe, usuń zaznaczenie pola wyboru **automatyczne aktualizowanie rozszerzeń**.
+
+- Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **Zarządzaj rozszerzeniami** okna dialogowego.
+
+::: moniker-end
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Powiadomienia o awariach i sek rozszerzenia
 
@@ -67,7 +113,17 @@ Program Visual Studio również powiadamia użytkownika, jeśli podejrzenia, że
 
 Gdy te powiadomienia są wyświetlane, można zignorować powiadomienie lub wykonać jedną z następujących czynności:
 
+::: moniker range="vs-2017"
+
 - Wybierz **Wyłącz to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system wyłączenie zaczęły obowiązywać. Można ponownie włączyć rozszerzenia w **rozszerzenia i aktualizacje** okno dialogowe, jeśli chcesz.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Wybierz **Wyłącz to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system wyłączenie zaczęły obowiązywać. Można ponownie włączyć rozszerzenia w **Zarządzaj rozszerzeniami** okno dialogowe, jeśli chcesz.
+
+::: moniker-end
 
 - Wybierz **nigdy nie pokazuj tego komunikatu ponownie**.
 
@@ -89,7 +145,17 @@ Po zainstalowaniu przykładu online, rozwiązanie jest przechowywane w dwóch mi
 
 - Oddzielna kopia główna jest przechowywana na komputerze.
 
-Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe do wykonania tych zadań związanych z przykładami:
+::: moniker range="vs-2017"
+
+Możesz użyć **rozszerzenia i aktualizacje** okna do wykonania tych zadań związanych z przykładami:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Możesz użyć **Zarządzaj rozszerzeniami** okna do wykonania tych zadań związanych z przykładami:
+
+::: moniker-end
 
 - Wypisanie listy kopii głównych przykładów, które zostały zainstalowane.
 
@@ -103,6 +169,8 @@ Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe do wykonania tych 
 
 - Aktualizowanie kopii głównej zainstalowanego przykładu, po powiadomienie o aktualizacji.
 
+::: moniker range="vs-2017"
+
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalowanie bez używania okna dialogowego rozszerzenia i aktualizacje
 
 Rozszerzenia, które zostały spakowane do *.vsix* pliki mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. **Rozszerzenia i aktualizacje** okno dialogowe nie może wykryć tych plików, ale można zainstalować *.vsix* pliku przez dwukrotne kliknięcie pliku, lub zaznacz ją i naciskając klawisz **Enter**klucza. Następnie postępuj zgodnie z instrukcjami. Jeśli rozszerzenie jest zainstalowane, możesz użyć **rozszerzenia i aktualizacje** okno dialogowe, aby ją włączyć, wyłączyć lub odinstaluj je.
@@ -113,3 +181,20 @@ Program Visual Studio w dalszym ciągu obsługuje rozszerzenia, które są insta
 
 > [!TIP]
 > Jeśli rozszerzenie opartym na MSI obejmuje *extension.vsixmanifest* rozszerzenie pojawia się w pliku **rozszerzenia i aktualizacje** okno dialogowe.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Instalowanie bez używania okna dialogowego Zarządzaj rozszerzeniami
+
+Rozszerzenia, które zostały spakowane do *.vsix* pliki mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. **Zarządzaj rozszerzeniami** okno dialogowe nie może wykryć tych plików, ale można zainstalować *.vsix* pliku przez dwukrotne kliknięcie pliku, lub zaznacz ją i naciskając klawisz **Enter** klucz. Następnie postępuj zgodnie z instrukcjami. Jeśli rozszerzenie jest zainstalowane, możesz użyć **Zarządzaj rozszerzeniami** okno dialogowe, aby ją włączyć, wyłączyć lub odinstaluj je.
+
+## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Typy rozszerzeń, które nie są obsługiwane przez okna dialogowego Zarządzaj rozszerzeniami
+
+Program Visual Studio w dalszym ciągu obsługuje rozszerzenia, które są instalowane przez Instalator (MSI) programu Microsoft ale nie za pomocą **Zarządzaj rozszerzeniami** okno dialogowe bez żadnych modyfikacji.
+
+> [!TIP]
+> Jeśli rozszerzenie opartym na MSI obejmuje *extension.vsixmanifest* rozszerzenie pojawia się w pliku **Zarządzaj rozszerzeniami** okno dialogowe.
+
+::: moniker-end

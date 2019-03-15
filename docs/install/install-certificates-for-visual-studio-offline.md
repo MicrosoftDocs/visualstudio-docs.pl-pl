@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737048"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983003"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -113,6 +113,7 @@ Po podpis jest weryfikowany w środowisku, w trybie online, interfejsy API Windo
 ## <a name="checking-if-certificates-are-already-installed"></a>Sprawdzanie, czy certyfikaty są już zainstalowany
 
 Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następujące kroki:
+
 1. Uruchom **mmc.exe**.<br/>
   a. Kliknij plik, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
   b. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **konto komputera**, a następnie kliknij przycisk **dalej**.<br/>

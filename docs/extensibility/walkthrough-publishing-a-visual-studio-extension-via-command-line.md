@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695378"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983380"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
@@ -290,7 +290,7 @@ Można usunąć rozszerzenie z witryny Marketplace programu Visual Studio i z te
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Aby usunąć rozszerzenie z komputera
 
-1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje...** .
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
 2. Wybierz pozycję "MyVsixExtension", a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie następnie zostanie zaplanowane do odinstalowania.
 

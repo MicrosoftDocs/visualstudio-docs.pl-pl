@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 277d02a64992d682d0d1f709c31c564f65cfac15
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223315"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069648"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -381,8 +381,8 @@ Jeśli chcesz sugestię o jak możemy ulepszyć program Visual Studio, lub Dowie
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Informacje o wersji programu Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Co nowego w zestawie Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Informacje o wersji programu Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Co nowego w zestawie Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [What's new in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co nowego w języku C#](/dotnet/csharp/whats-new)
 * [What's new for Team Foundation Server](/tfs/server/whats-new?view=vsts)

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913279"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069830"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
-Po uruchomieniu programu Visual Studio po raz pierwszy można optymalizować środowisko projektowe dla typ pracy deweloperskiej, że wykonujesz najwięcej, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okna, projektów i szablonów elementów i widoczności poleceń.
+Po otwarciu programu Visual Studio po raz pierwszy można optymalizować środowisko projektowe dla typ pracy deweloperskiej, że wykonujesz najwięcej, wybierając kolekcję ustawień. Każda kolekcja optymalizuje elementy, takie jak skróty klawiaturowe, układy okna, projektów i szablonów elementów i widoczności poleceń.
 
 Dostępne są następujące kolekcje ustawienia:
 
@@ -30,7 +30,7 @@ Dostępne są następujące kolekcje ustawienia:
 
 ## <a name="reset-settings"></a>Resetuj ustawienia
 
-Aby zmienić ustawienia środowiska deweloperskiego, po uruchomieniu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
+Aby zmienić ustawienia środowiska deweloperskiego, po otwarciu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
 
 1. Wybierz **narzędzia** > **Import i eksport ustawień** na pasku menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
 

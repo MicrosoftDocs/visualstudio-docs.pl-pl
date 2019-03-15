@@ -1,7 +1,7 @@
 ---
 title: Wybierz i zainstaluj interpretery języka Python
 description: Pełna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje, gdzie można znaleźć własnych instalatorów.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ecbebaa0de1abebcffea59889a0f58d51d947247
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921006"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982899"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
-Domyślnie instalowania obciążenia programowania języka Python w programie Visual Studio 2017 instaluje Python 3 (wersja 64-bitowa). Opcjonalnie możesz zainstalować 32-bitowych i 64-bitowe wersje języka Python 2, 3 języka Python, Anaconda 2 i Anaconda 3, zgodnie z opisem w [instalacji](installing-python-support-in-visual-studio.md).
+Domyślnie instalowania obciążenia programowania języka Python w programie Visual Studio 2017 i nowszych wersjach instaluje Python 3 (wersja 64-bitowa). Opcjonalnie możesz zainstalować 32-bitowych i 64-bitowe wersje języka Python 2 i 3 języka Python, wraz z Miniconda (Visual Studio 2019) albo Anaconda 2/Anaconda 3 (Visual Studio 2017), zgodnie z opisem w [instalacji](installing-python-support-in-visual-studio.md).
 
 Można też ręcznie zainstalują dowolną z interpretery wymienione w poniższej tabeli opisano poza Instalatora programu Visual Studio. Na przykład po zainstalowaniu pakietu Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio. Można także zainstalować tłumacza ręcznie Jeśli, na przykład, nowsza wersja dostępna nie jeszcze są widoczne w Instalatorze programu Visual Studio.
 

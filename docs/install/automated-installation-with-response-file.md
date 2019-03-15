@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939583"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982977"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Jak definiować ustawienia w pliku odpowiedzi
 
@@ -99,4 +99,4 @@ W poniższym przykładzie instalację programu Visual Studio Enterprise z sześc
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)
+* [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737012"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983978"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
@@ -82,7 +82,7 @@ Możesz sprawdzić dostępność aktualizacji i zainstalować aktualizację na p
 
 ### <a name="use-the-visual-studio-installer"></a>Użyj Instalatora programu Visual Studio
 
-Jak w starszych wersjach programu Visual Studio 2017 można użyć Instalatora programu Visual Studio do zainstalowania aktualizacji.
+Jak w starszych wersjach programu Visual Studio można użyć Instalatora programu Visual Studio do zainstalowania aktualizacji.
 
 1. Zapisz swoją pracę.
 
@@ -150,14 +150,14 @@ Jeśli zostanie wybrane ignorowanie powiadomienie, program Visual Studio przesta
 
    Wybierz **aktualizacji** przycisk, aby zainstalować aktualizacje.
 
-     ![Aktualizowanie programu Visual Studio 2017 przy użyciu Instalatora programu Visual Studio](media/update-visual-studio.png "aktualizacji programu Visual Studio 2017 przy użyciu Instalatora programu Visual Studio")
+     ![Aktualizowanie programu Visual Studio 2017 przy użyciu Instalatora programu Visual Studio](media/update-visual-studio.png "zaktualizować program Visual Studio za pomocą Instalatora programu Visual Studio")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Modyfikowanie programu Visual Studio 2017](modify-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
+* [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
+* [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)
 * [Aktualizacja programu Visual Studio dla komputerów Mac](/visualstudio/mac/update)
 
 ::: moniker-end

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223523"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984121"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -112,25 +112,39 @@ Można uruchomić testy jednostkowe w programie Visual Studio, za pomocą platfo
 
 Poniżej przedstawiono kroki, aby włączyć platform testowych innych firm:
 
+::: moniker range="vs-2017"
+
 1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje** z paska menu.
 
-1. W **rozszerzenia i aktualizacje** okna dialogowego rozwiń **Online** kategorii i następnie **Visual Studio Marketplace**. Następnie wybierz **narzędzia** > **testowania**.
+2. W **rozszerzenia i aktualizacje** okna dialogowego rozwiń **Online** kategorii i następnie **Visual Studio Marketplace**. Następnie wybierz **narzędzia** > **testowania**.
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Wybierz framework lub chcesz zainstalować, a następnie wybierz kartę **Pobierz**.
+::: moniker-end
 
-1. Utwórz projekt biblioteki klas i dodaj go do rozwiązania.
+::: moniker range=">=vs-2019"
+
+1. Wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami** z paska menu.
+
+2. W **Zarządzaj rozszerzeniami** okna dialogowego rozwiń **Online** kategorii i następnie **Visual Studio Marketplace**. Następnie wybierz **narzędzia** > **testowania**.
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Wybierz framework lub chcesz zainstalować, a następnie wybierz kartę **Pobierz**.
+
+4. Utwórz projekt biblioteki klas i dodaj go do rozwiązania.
 
    ![Nazwij projekt biblioteki klas i dodaj go](media/create3rdpartyunittest3.png)
 
-1. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**, wybierz projekt biblioteki klas, a następnie wybierz **Zarządzaj pakietami NuGet** menu kliknij prawym przyciskiem myszy lub kontekstu.
+5. Zainstaluj wtyczkę. W **Eksploratora rozwiązań**, wybierz projekt biblioteki klas, a następnie wybierz **Zarządzaj pakietami NuGet** menu kliknij prawym przyciskiem myszy lub kontekstu.
 
    ![Zarządzaj pakietami NuGet, aby zainstalować dodatek typu plug-in](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) to rozszerzenie programu Visual Studio, który służy do dodawania i aktualizowania bibliotek i narzędzi dla projektów.
 
-1. W **Menedżera pakietów NuGet** okna, wyszukaj i wybierz dodatek, a następnie wybierz **zainstalować**.
+6. W **Menedżera pakietów NuGet** okna, wyszukaj i wybierz dodatek, a następnie wybierz **zainstalować**.
 
    ![Zainstaluj preferowanej struktury firm 3](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Poniżej przedstawiono kroki, aby włączyć platform testowych innych firm:
 
    ![Odwołanie do testów jednostkowych innych firm 3 zostanie dodany do rozwiązania](media/create3rdpartyunittest6.png)
 
-1. W projekcie biblioteki klas **odwołania** węzeł **Dodaj odwołanie**.
+7. W projekcie biblioteki klas **odwołania** węzeł **Dodaj odwołanie**.
 
    ![Dodaj odwołanie do projektu](media/createunittest6.png)
 
-1. W **Menadżer odwołań** okna dialogowego Wybierz projekt, który zawiera kod, przetestowania.
+8. W **Menadżer odwołań** okna dialogowego Wybierz projekt, który zawiera kod, przetestowania.
 
    ![Wybierz projekt kodu do przetestowania](media/createunittest7.png)
 
-1. Zakoduj test jednostki.
+9. Zakoduj test jednostki.
 
    ![Dodaj kod do pliku kodu testu jednostki](media/create3rdpartyunittest7.png)
 

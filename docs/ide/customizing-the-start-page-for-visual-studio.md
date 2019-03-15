@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953385"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070116"
 ---
 # <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
@@ -65,7 +65,7 @@ Aby zainstalować niestandardową stronę początkową, otwórz *.vsix* pliku, l
 1. W **Dostosuj stronę początkową** listy, wybierz stronę, która ma.
 
 > [!TIP]
-> Jeśli błąd na niestandardowej stronie początkowej powoduje, że Visual Studio ulega awarii, możesz uruchomić Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby używał domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Jeśli wystąpił błąd podczas niestandardową stronę początkową powoduje, że program Visual Studio ulega awarii, można otworzyć programu Visual Studio w trybie awaryjnym, a następnie ustaw go do używania domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz także
 

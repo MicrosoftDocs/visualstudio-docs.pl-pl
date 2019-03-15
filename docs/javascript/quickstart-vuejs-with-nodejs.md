@@ -13,19 +13,38 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac09fa17ea550df127660a56a04d315f8f1a788f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 869e60bf736f792255d36d83c9d9b06d20e67f02
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911172"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069596"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: Utwórz swoją pierwszą aplikację Vue.js przy użyciu programu Visual Studio
 
-W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut możesz utworzyć i uruchomić prostą aplikację sieci web Vue.js. Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) strony, aby zainstalować go za darmo.
+W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut możesz utworzyć i uruchomić prostą aplikację sieci web Vue.js.
 
 > [!IMPORTANT]
 > Ten artykuł wymaga szablonu Vue.js, która jest dostępna, począwszy od programu Visual Studio 2017 w wersji 15.8.
+
+## <a name="prerequisites"></a>Wymagania wstępne
+
+* Musisz mieć zainstalowany program Visual Studio i obciążenie programowania Node.js.
+
+    ::: moniker range=">=vs-2019"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    ::: moniker-end
+
+    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+
+    ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
+
+* Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
+
+    Jeśli nie jest ona zainstalowana, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -35,21 +54,23 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
     Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli go nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
 
-1. Otwórz program Visual Studio 2017.
+1. Otwórz program Visual Studio.
 
 1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, w obszarze **JavaScript** > **Node.js** lub **TypeScript**  >   **Node.js**, wybierz **Podstawowa aplikacja sieci Web Vue.js**. Wprowadź nazwę projektu, a następnie kliknij przycisk **OK**.
+1. Utwórz nowy projekt.
 
-     ![Szablon VUE.js](../javascript/media/vuejs-template.png)
+    ::: moniker range=">=vs-2019"
+    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** lub **typescript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **podstawowe Vue.js sieci Web Aplikacja**, a następnie wybierz **OK**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, następnie wybierz **OK**.
+    ::: moniker-end
+    Jeśli nie widzisz **podstawowa Vue.js aplikacja sieci Web** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
+
+    ![Szablon VUE.js](../javascript/media/vuejs-template.png)
 
     Program Visual Studio tworzy nowy projekt. Nowy projekt zostanie otwarty w oknie Eksploratora rozwiązań (w okienku po prawej stronie).
-
-     Jeśli nie widzisz **podstawowa Vue.js aplikacja sieci Web** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
-
-     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
-
-    Program Visual Studio tworzy i nowego rozwiązania i otwiera projekt.
 
 1. Sprawdź, czy w oknie danych wyjściowych (dolne okienko) postęp na temat instalowania pakietów npm wymaganą dla aplikacji.
 

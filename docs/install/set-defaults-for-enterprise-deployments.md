@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910821"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984144"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Ustawianie wartości domyślnych dla wdrożeń w przedsiębiorstwie programu Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
 Można ustawić zasady rejestru, które wpływają na wdrażanie programu Visual Studio. Te zasady są globalne dla nowego Instalatora i wpływać na:
 
@@ -62,6 +62,6 @@ Można ustawić następujące wartości rejestru:
 
 ## <a name="see-also"></a>Zobacz także
 
- * [Instalowanie programu Visual Studio](install-visual-studio.md)
- * [Wyłączanie lub przenoszenie pamięci podręcznej pakietów](disable-or-move-the-package-cache.md)
- * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Instalowanie programu Visual Studio](install-visual-studio.md)
+- [Wyłączanie lub przenoszenie pamięci podręcznej pakietów](disable-or-move-the-package-cache.md)
+- [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

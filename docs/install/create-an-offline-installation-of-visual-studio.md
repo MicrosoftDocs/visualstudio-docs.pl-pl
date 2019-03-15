@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796546"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983055"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie instalacji offline programu Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
 Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
@@ -32,7 +32,7 @@ Na przykład może być zawodne połączenia internetowego lub taki, który ma o
 
 ## <a name="use-the-download-all-then-install-feature"></a>Użyj "Pobierz wszystko, a następnie zainstaluj" funkcji
 
-[**Nowość w 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
+[**Nowość w wersji 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Po pobraniu Instalatora sieci web, wybierz nową **Pobierz wszystko, a następnie zainstaluj** opcji Instalatora programu Visual Studio. Następnie kontynuuj instalację.
 
    !["Pobierz wszystko, a następnie zainstaluj" opcja](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie instalacji sieciowej programu Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)
+- [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

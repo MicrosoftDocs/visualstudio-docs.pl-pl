@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605409"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983913"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikowanie aplikacji w usługach IIS przez importowanie ustawień publikowania w programie Visual Studio
 
 Możesz użyć **Publikuj** narzędzie ma zaimportować ustawienia publikowania, a następnie wdrożyć aplikację. W tym artykule używamy ustawień publikowania dla usług IIS, ale możesz użyć podobnych kroków, aby zaimportować ustawienia publikowania dla [usługi Azure App Service](../deployment/tutorial-import-publish-settings-azure.md). W niektórych scenariuszach Użyj publikowania profilu ustawień może być szybsze niż ręcznie konfigurować wdrożenia w usługach IIS dla każdej instalacji programu Visual Studio.
 
-Te kroki mają zastosowanie do aplikacji platformy ASP.NET, ASP.NET Core i .NET Core w programie Visual Studio. Kroki odnoszą się do programu Visual Studio 2017 w wersji 15.6.
+Te kroki mają zastosowanie do aplikacji platformy ASP.NET, ASP.NET Core i .NET Core w programie Visual Studio.
 
 W tym samouczku wykonasz następujące czynności:
 
@@ -38,9 +38,19 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Na komputerze deweloperskim, konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
+::: moniker range=">=vs-2019"
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+* Konieczne jest posiadanie programu Visual Studio 2019 r zainstalowane i **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
+
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Konieczne jest posiadanie programu Visual Studio 2017 i **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
+
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+::: moniker-end
 
 * Na serwerze, musi zostać uruchomiony system Windows Server 2012 lub Windows Server 2016, a musi mieć [roli serwera sieci Web usług IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) poprawnie zainstalowana (wymagane, aby wygenerować plik ustawień publikowania (*\*. publishsettings*)). ASP.NET 4.5 lub ASP.NET Core należy także zainstalować na serwerze. Aby skonfigurować ASP.NET 4.5, zobacz [3.5 przy użyciu platformy ASP.NET w programie IIS 8.0 i program ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Aby skonfigurować platformy ASP.NET Core, zobacz [hosta ASP.NET Core na Windows z programem IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 

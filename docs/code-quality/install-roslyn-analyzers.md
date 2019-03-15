@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222938"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982938"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalowanie analizatorów platformie kompilatora .NET
 
@@ -37,12 +37,27 @@ Program Visual Studio zawiera podstawowy zestaw platformy kompilatora .NET (*Ros
 
 ## <a name="to-install-vsix-analyzers"></a>Aby zainstalować VSIX analizatorów
 
+::: moniker range="vs-2017"
+
 1. W programie Visual Studio, wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
 
    **Rozszerzenia i aktualizacje** zostanie otwarte okno dialogowe.
 
    > [!NOTE]
    > Alternatywnie można znaleźć i pobrać rozszerzenia analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio, wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+
+   **Zarządzaj rozszerzeniami** zostanie otwarte okno dialogowe.
+
+   > [!NOTE]
+   > Alternatywnie można znaleźć i pobrać rozszerzenia analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Rozwiń **Online** w okienku po lewej stronie, a następnie wybierz **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ Program Visual Studio zawiera podstawowy zestaw platformy kompilatora .NET (*Ros
 
 8. Otwórz ponownie program Visual Studio.
 
+::: moniker range="vs-2017"
+
 Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **narzędzia** > **rozszerzenia i aktualizacje**. W **rozszerzenia i aktualizacje** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **rozszerzenia** > **Zarządzaj rozszerzeniami**. W **Zarządzaj rozszerzeniami** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 

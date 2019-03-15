@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908195"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983277"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -73,18 +73,19 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
 - private
 - protected
 - chronione\_wewnętrznego lub protected_friend
+- prywatne\_chronione
 - local
 
 > [!NOTE]
 > Nie należy określać poziomem ułatwień dostępu w ramach konwencji nazewnictwa, jeśli ułatwień dostępu nie ma zastosowania do typu symboli, które są przeznaczone dla. Na przykład parametry mają poziomów ułatwień dostępu. Jeśli określisz poziom dostępności dla parametru konwencji nazewnictwa, reguły nazewnictwa nie będą działać poprawnie.
 
-### <a name="symbol-modifiers"></a>Modyfikatory symboli
+### <a name="symbol-modifiers-optional"></a>Modyfikatory symbol (opcjonalnie)
 
 Aby opisać modyfikatorów symbole ma być stosowana reguła nazewnictwa, należy określić nazwę właściwości w następującym formacie:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami. Reguły nazewnictwa tylko będzie zgodna z podpisami, które mają wszystkie modyfikatory, które są określone w `required_modifiers`. Jeśli pominiesz tę właściwość, jest używana domyślna wartość pusta lista, oznacza to, brak określonych modyfikatorów wymaganych do dopasowania. Oznacza to, że symbol modyfikatorów nie mają wpływu na informację, czy ta reguła jest stosowana.
+Poniższej przedstawiono listę dopuszczalnych wartości (Oddziel wiele wartości przecinkami):
 
 - `abstract` lub `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
    > [!NOTE]
    > Jeśli masz regułę nazewnictwa dla `static` lub `shared` symboli, zostanie ono również zastosowane do `const` symboli, ponieważ są one niejawnie statyczne. Jeśli nie chcesz `static` nazewnictwa reguła była stosowana do `const` symbole, Utwórz oddzielne regułę nazewnictwa `const` symboli.
 
-`required_modifiers` jest opcjonalną właściwością. Jeśli pominiesz tę właściwość, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
+Reguły nazewnictwa odpowiada podpisów, które mają *wszystkich* Modyfikatory określone w `required_modifiers`. Jeśli pominiesz tę właściwość, jest używana domyślna wartość pusta lista, oznacza to, brak określonych modyfikatorów wymaganych do dopasowania. Oznacza to, że symbol modyfikatorów nie mają wpływu na informację, czy ta reguła jest stosowana.
+
+> [!TIP]
+> Nie określaj wartości `*` dla `required_modifiers`. Zamiast tego po prostu pominąć `required_modifiers` właściwość całkowicie i reguły nazewnictwa, które będą stosowane do dowolnego rodzaju modyfikator.
 
 ## <a name="style"></a>Styl
 

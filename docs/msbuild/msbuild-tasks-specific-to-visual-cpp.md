@@ -1,6 +1,6 @@
 ---
 title: Program MSBuild zadania właściwe dla Visual C++ | Dokumentacja firmy Microsoft
-ms.date: 06/27/2018
+ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,18 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e676e8fc3bbd8532e5261ab2095fc67380e27ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 243ed824ba278300a798a34b05854129e8197504
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597065"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984017"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Zadania programu MSBuild specyficzne dla języka Visual C++
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zainstalowaniu programu Visual C++, następujące zadania są dostępne, oprócz tych, które są instalowane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Oprócz parametrów dla każdego zadania każde zadanie ma następujące parametry.
-
 
 | Parametr | Opis |
 |-------------------| - |
@@ -40,13 +39,22 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zains
 |[Bscmake — zadanie](../msbuild/bscmake-task.md)|Opakowuje Microsoft Przeglądaj informacje narzędzie konserwacji (*bscmake.exe*).|
 |[Cl — zadanie](../msbuild/cl-task.md)|Opakowuje narzędzia kompilatora Visual C++ (*cl.exe*).|
 |[Cppclean — zadanie](../msbuild/cppclean-task.md)|Usuwa pliki tymczasowe, utworzone przez program MSBuild podczas kompilowania projektu Visual C++.|
+|[ClangCompile task](../msbuild/clangcompile-task.md)|Opakowuje narzędzia kompilatora Visual C++ (*clang.exe*).|
+|[Zadanie CustomBuild](../msbuild/custombuild-task.md)|Opakowuje narzędzia kompilatora Visual C++ (*cmd.exe*).|
+|[Zadanie FXC](../msbuild/fxc-task.md)|W procesie kompilacji, należy użyć kompilatorów programu do cieniowania HLSL.|
+|[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|Odczytuje tlogs stare, zapisuje nowe tlogs i zwraca zestaw elementów, które nie są aktualne. (zadanie pomocnicze)|
+|[GetOutputFileName](../msbuild/getoutputfilename-task.md)|Pobiera nazwę pliku wyjściowego dla cl i innych narzędzi, które pozwalają na określenie tylko katalog wyjściowy lub pełną nazwę pliku lub nie rób. (zadanie pomocnicze)|
 |[Lib — zadanie](../msbuild/lib-task.md)|Opakowuje narzędzie Microsoft 32-bitowy Library Manager (*lib.exe*).|
 |[Link — zadanie](../msbuild/link-task.md)|Opakowuje narzędzia konsolidatora Visual C++ (*link.exe*).|
 |[MIDL — zadanie](../msbuild/midl-task.md)|Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) (*midl.exe*).|
 |[MT — zadanie](../msbuild/mt-task.md)|Opakowuje narzędziu manifestu firmy Microsoft (*mt.exe*).|
+|[Zadanie MultiToolTask](../msbuild/multitooltask-task.md)|Brak opisu.|
+|[Zadanie ParallelCustomBuild](../msbuild/parallelcustombuild-task.md)|Uruchamianie równoległych wystąpień [zadań CustomBuild](../msbuild/custombuild-task.md).|
 |[RC — zadanie](../msbuild/rc-task.md)|Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows (*rc.exe*).|
 |[SETENV — zadanie](../msbuild/setenv-task.md)|Ustawia lub usuwa wartość określonej zmiennej środowiskowej.|
+|[Klasa bazowa TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md)|Dziedziczy [VCToolTask](../msbuild/vctooltask-base-class.md).|
 |[Vcmessage — zadanie](../msbuild/vcmessage-task.md)|Dzienniki ostrzeżenie wiadomości i komunikaty o błędach podczas kompilacji. (Nie rozszerzalne. Wyłącznie do użytku wewnętrznego.)|
+|[Klasa bazowa VCToolTask](../msbuild/vctooltask-base-class.md)|Dziedziczy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask).|
 |[Xdcmake — zadanie](../msbuild/xdcmake-task.md)|Opakowuje narzędzie dokumentacji XML (*xdcmake.exe*), który scala komentarza dokumentu XML (*.xdc*) pliki do *.xml* pliku.|
 |[XSD — zadanie](../msbuild/xsd-task.md)|Opakowuje narzędzie definicji schematu XML (*xsd.exe*), które generuje pliki schematu lub klasa ze źródła. *Zobacz uwagi poniżej.*|
 |[Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)|Opisano elementy systemu MSBuild.|
@@ -54,4 +62,4 @@ Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Po zains
 |[Wpisywanie zadania](../msbuild/task-writing.md)|W tym artykule opisano sposób tworzenia zadania.|
 
 > [!NOTE]
-> Projekt w programie Visual Studio 2017, obsługa C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC.
+> Począwszy od programu Visual Studio 2017 roku Obsługa projekt C++ *xsd.exe* jest przestarzała. Można nadal używać **Microsoft.VisualC.CppCodeProvider** interfejsów API, ręcznie dodając *CppCodeProvider.dll* w pamięci GAC.

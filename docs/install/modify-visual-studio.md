@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957302"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984004"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio 2017, dodając lub usuwając obciążenia i składniki
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio, dodając lub usuwając obciążenia i składniki
 
 Nie tylko mieć ułatwiliśmy umożliwia personalizowanie programu Visual Studio, aby dopasować zadań, należy wykonać, została również ułatwiliśmy zbyt dostosować Visual Studio. Aby to zrobić, uruchom nowy Instalator programu Visual Studio i wprowadzić zmiany, które chcesz.
 
@@ -69,6 +69,6 @@ Jeśli nie chcesz dostosować instalację programu Visual Studio, wybierz za pom
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
-* [Update Visual Studio 2017](update-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalowanie programu Visual Studio](install-visual-studio.md)
+* [Aktualizowanie programu Visual Studio](update-visual-studio.md)
+* [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

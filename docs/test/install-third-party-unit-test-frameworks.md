@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316148"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982925"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych
 
@@ -26,9 +26,19 @@ Możesz pobrać i zainstalować platform testów jednostkowych innych firm, korz
 
 ### <a name="install-from-visual-studio"></a>Instalowanie za pomocą programu Visual Studio
 
-1. Wybierz **narzędzia** w menu standardowym, a następnie wybierz **rozszerzenia i aktualizacje**.
+::: moniker range="vs-2017"
 
-2. Rozwiń **Online** > **programu Visual Studio Marketplace** > **narzędzia**. Wybierz **testowania**.
+1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
+
+::: moniker-end
+
+2. Rozwiń **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz **testowania**.
 
 3. Przeszukaj listę, aby znaleźć platformę.
 

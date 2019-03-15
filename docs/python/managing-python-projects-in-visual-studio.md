@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6b75c3c7a6a2c5496896949a48c2210bb1b5f170
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155867"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983471"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -29,8 +29,13 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Nawet bez projektu Visual Studio dobrze działa z kodu w języku Python. Można na przykład otwórz Python pliku przez siebie i korzystaj z automatycznego uzupełniania IntelliSense i debugowanie (klikając prawym przyciskiem myszy w edytorze i wybierając polecenie **rozpocząć debugowanie**). Ponieważ taki kod zawsze używa globalnego środowiska domyślnego, jednak mogą pojawić się błędy lub nieprawidłowe uzupełnienia Jeśli kod jest przeznaczona do innego środowiska. Ponadto program Visual Studio analizuje wszystkich plików i pakietów w folderze, z którego pojedynczy plik jest otwarty, może zużywać znaczną ilość czasu procesora CPU.
+> Visual Studio 2019 obsługuje otwieranie folderu zawierającego kod Python i uruchamianie kodu bez tworzenia plików projektu i rozwiązania Visual Studio. Aby uzyskać więcej informacji, zobacz [Szybki Start: Otwórz i uruchamianie kodu języka Python w folderze](quickstart-05-python-visual-studio-open-folder.md). Istnieją jednak korzyści z korzystania z pliku projektu, zgodnie z opisem w tej sekcji.
+::: moniker-end
+
+> [!Tip]
+> Bez projektu wszystkie wersje programu Visual Studio działać z kodu w języku Python. Można na przykład otwórz Python pliku przez siebie i korzystaj z automatycznego uzupełniania IntelliSense i debugowanie (klikając prawym przyciskiem myszy w edytorze i wybierając polecenie **rozpocząć debugowanie**). Ponieważ taki kod zawsze używa globalnego środowiska domyślnego, jednak mogą pojawić się błędy lub nieprawidłowe uzupełnienia Jeśli kod jest przeznaczona do innego środowiska. Ponadto program Visual Studio analizuje wszystkich plików i pakietów w folderze, z którego pojedynczy plik jest otwarty, może zużywać znaczną ilość czasu procesora CPU.
 >
 > Będzie polegać na utworzenie projektu programu Visual Studio z istniejącego kodu, zgodnie z opisem w [Tworzenie projektu z istniejących plików](#create-project-from-existing-files).
 
@@ -42,10 +47,10 @@ Program Visual Studio udostępnia wiele szablonów projektu języka Python, aby 
 
 Podczas opracowywania aplikacji, zazwyczaj konieczne dodanie nowych plików o różnych typach do projektu. Dodawanie takich plików jest wykonywane przez kliknięcie prawym przyciskiem myszy projekt i wybierając polecenie **Dodaj** > **istniejący element** za pomocą którego przeglądania w poszukiwaniu pliku do dodania, lub **Dodaj**  >  **Nowy element**, co spowoduje uruchomienie okna dialogowego za pomocą różnych szablonów elementów. Zgodnie z opisem na [elementu szablony](python-item-templates.md) odwołania, opcje obejmują pustych plików języka Python, klasa języka Python, testu jednostki i różne pliki powiązane z aplikacji sieci web. Możesz eksplorować tych opcji z projektem testowym, aby dowiedzieć się, co jest dostępne w używanej wersji programu Visual Studio.
 
-Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu **Interactive** okna (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby je zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako plik startowy**.
+Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany czcionką pogrubioną w **Eksploratora rozwiązań**. Plik startowy jest plik który jest uruchamiany podczas uruchamiania debugowania (**F5** lub **debugowania** > **Rozpocznij debugowanie**) lub po uruchomieniu projektu **Interactive** okna (**Shift**+**Alt**+**F5** lub **debugowania**  >  **Wykonywania projektów w języku Python interaktywne**). Aby je zmienić, kliknij prawym przyciskiem myszy nowy plik i wybierz **Ustaw jako element startowy** (lub **Ustaw jako plik startowy** w starszych wersjach programu Visual Studio).
 
 > [!Tip]
-> Jeśli usuniesz plik startowy wybranego z projektu, a nie wybieraj nową, Visual Studio nie będzie wiedzieć, co Python pliku zaczynać podczas próby uruchomienia projektu. W takim przypadku Visual Studio 2017 w wersji 15.6 i nowszych wskazuje błąd; wcześniejszych wersjach albo otworzyć okno danych wyjściowych z interpreter języka Python, uruchamiania lub zobacz okno dane wyjściowe są wyświetlane, ale zniknąć niemal natychmiast. Jeśli wystąpi dowolne z tych zachowań, sprawdź, czy plik startowy przypisane.
+> Jeśli usuniesz plik startowy wybranego z projektu, a nie wybieraj nowe jednego, programu Visual Studio nie może ustalić, jakie plik w języku Python na początek z podczas próby uruchomienia projektu. W takim przypadku Visual Studio 2017 w wersji 15.6 i nowszych wskazuje błąd; wcześniejszych wersjach albo otworzyć okno danych wyjściowych z interpreter języka Python, uruchamiania lub zobacz okno dane wyjściowe są wyświetlane, ale zniknąć niemal natychmiast. Jeśli wystąpi dowolne z tych zachowań, sprawdź, czy plik startowy przypisane.
 >
 > Jeśli chcesz nie zamykaj okna dane wyjściowe jakiegokolwiek powodu, kliknij prawym przyciskiem myszy projekt, wybierz opcję **właściwości**, wybierz opcję **debugowania** kartę, a następnie dodaj `-i` do **Interpreter argumentów**  pola. Ten argument powoduje, że interpreter przejść do trybu interaktywnego, po zakończeniu działania programu, a tym samym utrzymywanie okna otwarte do momentu wprowadzenia **Ctrl**+**Z**  >  **Enter** aby wyjść.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796676"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57870276"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual Studio, w tym architektury programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.
@@ -90,7 +90,7 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual
  Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions.md).
 
 ## <a name="project-and-item-templates"></a>Szablony projektów i elementów
- Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.
+ Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.
 
  Szablony zawierają struktury projektu i podstawowe pliki, które są wymagane do utworzenia określonego rodzaju aplikacji, kontrolki, biblioteki lub klas. Do tworzenia oprogramowania, podobny do jednego z szablonów, należy utworzyć projekt, który jest oparty na szablonie, a następnie zmodyfikować pliki, w tym projekcie.
 

@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316733"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070038"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac w wersji zapoznawczej samouczek
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac tour
 
 > [!NOTE]
-> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md) w wersji zapoznawczej na potrzeby testowania.
+> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md?view=vsmac-2019) w wersji zapoznawczej na potrzeby testowania.
 
 Program Visual Studio dla komputerów Mac jest .NET _zintegrowanego środowiska programistycznego_ na komputerze Mac, który może służyć do edycji, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Oprócz oczekiwane funkcje, takie jak standardowy edytor i debugera Visual Studio for Mac obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i kontroli źródła do aparatu ese procesu tworzenia oprogramowania.
 

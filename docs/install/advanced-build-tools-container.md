@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2db56b4957165a8608e0ed61f07ae0ff64c403ef
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939804"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983307"
 ---
 # <a name="advanced-example-for-containers"></a>Zaawansowany przykład dotyczący kontenerów
 
@@ -124,4 +124,4 @@ Po ukończeniu wykonywania ostatni wiersz Otwórz "% TEMP%\vslogs.zip" na komput
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)
-* [Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio Build Tools obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)

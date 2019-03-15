@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222522"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070285"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Wprowadzenie do języka C++ w programie Visual Studio
 
@@ -52,7 +52,7 @@ Po otwarciu programu Visual Studio, można wyświetlić trzy podstawowe części
 
 ::: moniker range=">=vs-2019"
 
-Po otwarciu programu Visual Studio **Start** pojawia się pierwsze okno. Wybierz **kontynuować bez konieczności pisania kodu** otworzyć środowisko programistyczne.
+Po otwarciu programu Visual Studio **Start** pojawia się pierwsze okno. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne.
 
 Zobaczysz trzy podstawowe części IDE: narzędzie systemu windows, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji. **Szybkie uruchamianie** pola, paska menu i standardowy pasek narzędzi znajdują się u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 

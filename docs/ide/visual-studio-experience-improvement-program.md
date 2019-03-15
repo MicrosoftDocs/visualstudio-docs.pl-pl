@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323121"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070025"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Program poprawy jakości obsługi klienta programu Visual Studio
 
@@ -25,9 +25,7 @@ Visual Studio klienta środowiska Improvement Program (VSCEIP) zaprojektowano w 
 
 VSCEIP jest domyślnie włączona. Można ją wyłączyć lub ponowne zalogowanie, wykonując następujące instrukcje:
 
-1. Uruchom program Visual Studio.
-
-1. Z **pomocy** menu wskaż **Wyślij opinię**, a następnie wybierz pozycję **ustawienia**.
+1. W programie Visual Studio, wybierz **pomocy** > **Wyślij opinię**, a następnie wybierz pozycję **ustawienia**.
 
    **Visual Studio Experience Improvement Program** zostanie otwarte okno dialogowe.
 

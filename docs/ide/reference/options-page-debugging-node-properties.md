@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946552"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983068"
 ---
 # <a name="options-page-debugging-node-properties"></a>Strona opcji, debugowanie — Właściwości węzła
 W poniższych tabelach opisano strony (lub kolekcje właściwości), są skojarzone z **debugowanie** kategorii `DTE.Properties("Debugging", <Property Page>)` z **opcje** okno dialogowe.
@@ -84,5 +84,5 @@ W poniższych tabelach opisano strony (lub kolekcje właściwości), są skojarz
 - [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Strona opcji, edytor tekstu — Właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Ogólne, Debugowanie, Opcje, okno dialogowe](../../debugger/general-debugging-options-dialog-box.md)
-- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Edytuj i Kontynuuj debugowanie](../../debugger/edit-and-continue.md)
 - [Just-In-Time, Debugowanie, Opcje, okno dialogowe](../../debugger/just-in-time-debugging-options-dialog-box.md)

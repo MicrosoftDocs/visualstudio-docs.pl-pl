@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9422d1c2a185e223b35bc16ad892282ca1c2a420
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786162"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871306"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] udostępnia mechanizm łatwy i bezpieczny do wdrażania aplikacji .NET. Jednak jeśli aplikacje korzystają z starszych składników modelu COM, należy wykonać dodatkowe kroki dotyczące wdrażania ich. W tym temacie opisano sposób wdrażania izolowane składniki COM i odwołanie składnikami macierzystymi (na przykład z języka Visual C++ lub Visual Basic 6.0).  
   
- Aby uzyskać więcej informacji na temat wdrażania izolowane składniki COM, zobacz "Uprość wdrażanie aplikacji za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM" w [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Aby uzyskać więcej informacji na temat wdrażania izolowane składniki COM, zobacz "Uprość wdrażanie aplikacji za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM" w [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>COM bez rejestrowania  
  COM bez rejestrowania się nowej technologii związanych z wdrażaniem i aktywowanie izolowane składniki COM. Działa przez umieszczenie biblioteki typów wszystkich składników i informacje o rejestracji, który jest zwykle instalowany w rejestrze systemu do pliku XML o nazwie manifestu, przechowywane w tym samym folderze co aplikacja.  

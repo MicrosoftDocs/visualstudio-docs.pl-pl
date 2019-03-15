@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323935"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57868304"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -706,7 +706,7 @@ W tym instruktażu pokazano, jak dołączyć zawartości pomocy do aplikacji pro
 
 1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Visual Studio 2013 Isolated Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2.  [Visual Studio 2013 Isolated Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **Omówienie**
 

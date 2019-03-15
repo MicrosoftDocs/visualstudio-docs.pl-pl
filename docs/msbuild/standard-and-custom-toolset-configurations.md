@@ -11,17 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38d63de6c223d8a77bd2c1fa2e0a13b0e814ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620320"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983406"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardowe i niestandardowe konfiguracje zestawu narzędzi
 Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, które służą do tworzenia projektu aplikacji. Program MSBuild zawiera standardowy zestaw narzędzi, ale można również tworzyć niestandardowe zestawy narzędzi. Aby uzyskać informacje o sposobie określania zestaw narzędzi, zobacz [zestaw narzędzi (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>Konfiguracje standardowego zestawu narzędzi
+
+::: moniker range=">=vs-2019"
+ Program MSBuild 16.0 obejmuje następujące standardowe zestawy narzędzi:
+
+|ToolsVersion|Ścieżka zestawu narzędzi (określoną we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
+|------------------| - |
+|2.0|*\<Ścieżka instalacji Windows > \Microsoft.Net\Framework\v2.0.50727\\*|
+|3.5|*\<Ścieżka instalacji Windows > \Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Ścieżka instalacji Windows > \Microsoft.NET\Framework\v4.0.30319\\*|
+|bieżący|*\<Ścieżka instalacji usługi Visual Studio > \MSBuild\Current\bin*|
+
+ `ToolsVersion` Wartość określa, który zestaw narzędzi jest używany przez projekt, który generuje programie Visual Studio. W programie Visual Studio 2019 r, wartością domyślną jest "Current" (niezależnie od tego, jakie wersja określona w pliku projektu), ale ten atrybut można zastąpić za pomocą **/toolsversion** Przejdź w wierszu polecenia. Informacje o tego atrybutu i inne sposoby określania `ToolsVersion`, zobacz [ustawienia ToolsVersion zastępowanie](../msbuild/overriding-toolsversion-settings.md).
+
+ ::: moniker-end
+
+::: moniker range="vs-2017"
  Program MSBuild 15.0 obejmuje następujące standardowe zestawy narzędzi:
 
 |ToolsVersion|Ścieżka zestawu narzędzi (określoną we właściwości kompilacji MSBuildToolsPath lub MSBuildBinPath)|
@@ -32,8 +48,9 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, któ
 |15.0|*\<Ścieżka instalacji usługi Visual Studio > \MSBuild\15.0\bin*|
 
  `ToolsVersion` Wartość określa, który zestaw narzędzi jest używany przez projekt, który generuje programie Visual Studio. W programie Visual Studio 2017, wartością domyślną jest "15.0" (niezależnie od tego, jakie wersja określona w pliku projektu), ale ten atrybut można zastąpić za pomocą **/toolsversion** Przejdź w wierszu polecenia. Informacje o tego atrybutu i inne sposoby określania `ToolsVersion`, zobacz [ustawienia ToolsVersion zastępowanie](../msbuild/overriding-toolsversion-settings.md).
+ ::: moniker-end
 
- Program Visual Studio 2017 nie używa klucza rejestru dla ścieżki do programu MSBuild. W przypadku wersji MSBuild przed 15.0, które są instalowane z Visual Studio 2017 następujące klucze rejestru wpisz ścieżkę instalacji MSBuild.exe.
+Program Visual Studio 2017 i nowsze wersje nie należy używać klucza rejestru dla ścieżki do programu MSBuild. W przypadku wersji MSBuild przed 15.0, które są instalowane z Visual Studio 2017 następujące klucze rejestru wpisz ścieżkę instalacji MSBuild.exe.
 
 |Klucz rejestru|Nazwa klucza|Wartość klucza ciągu|
 |------------------|--------------|----------------------|
@@ -56,11 +73,11 @@ Zestaw narzędzi MSBuild zawiera odwołania do zadania, celów i narzędzi, któ
 ## <a name="custom-toolset-definitions"></a>Niestandardowe definicje zestawu narzędzi
  Podczas standardowych narzędzi nie spełnia wymagań dotyczących kompilacji, można utworzyć niestandardowego zestawu narzędzi. Na przykład masz scenariusza laboratorium kompilacji, w którym konieczne jest posiadanie oddzielnego systemu do kompilowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Za pomocą niestandardowego zestawu narzędzi, można przypisać wartości niestandardowych w celu `ToolsVersion` atrybutu podczas tworzenia projektów lub uruchamiania *MSBuild.exe*. Dzięki temu można również użyć `$(MSBuildToolsPath)` właściwość do zaimportowania *.targets* pliki z tego katalogu, jak również Definiowanie własnych właściwości zestawu narzędzi niestandardowych, które mogą być używane dla każdego projektu, który używa tego zestawu narzędzi.
 
- Określanie niestandardowego zestawu narzędzi w pliku konfiguracji dla *MSBuild.exe* (lub narzędzia niestandardowego, który hostuje MSBuild aparatu, jeśli jest to, czego używasz). Na przykład plik konfiguracji *MSBuild.exe* może obejmować następującą definicję zestawu narzędzi, jeśli użytkownik chciałby zastąpić domyślne zachowanie ToolsVersion 15.0.
+ Określanie niestandardowego zestawu narzędzi w pliku konfiguracji dla *MSBuild.exe* (lub narzędzia niestandardowego, który hostuje MSBuild aparatu, jeśli jest to, czego używasz). Na przykład plik konfiguracji *MSBuild.exe* mogą obejmować następujące definicje zestawu narzędzi, jeśli zamierza do definiowania zestawu narzędzi o nazwie *MyCustomToolset*.
 
 ```xml
-<msbuildToolsets default="15.0">
-   <toolset toolsVersion="15.0">
+<msbuildToolsets default="MyCustomToolset">
+   <toolset toolsVersion="MyCustomToolset">
       <property name="MSBuildToolsPath"
         value="C:\SpecialPath" />
    </toolset>
