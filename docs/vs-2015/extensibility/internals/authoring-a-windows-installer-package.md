@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5743caf2d45e8a2c06e841c68da2e8a3fcb222d1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833860"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872851"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Tworzenie pakietu Instalatora Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Danych zależy od modelu Instalatora Windows. Zamiast pisania procedurach skrypt
   
    Zestaw narzędzi kompilacji pakietów Instalatora Windows przy użyciu plików źródłowych XML. Zestaw narzędzi to projekt typu open source firmy Microsoft. Możesz pobrać kod źródłowy i pliki wykonywalne z [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Komercyjne produktów, które integrują [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przy użyciu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], zobacz [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Komercyjne produktów, które integrują [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przy użyciu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], zobacz [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

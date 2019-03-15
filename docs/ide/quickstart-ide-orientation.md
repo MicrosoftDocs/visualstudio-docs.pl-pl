@@ -8,18 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 608f276946a8b4a377eb8d8934f3f7bdc23663ce
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223632"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867829"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut przeniesiemy się części okna, menu i inne funkcje interfejsu użytkownika.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Strona początkowa
 
@@ -31,9 +33,29 @@ Jeśli zamkniesz **strona startowa** i chcesz zobaczyć ją ponownie, możesz ur
 
 ![Menu Plik w programie Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Okno uruchamiania
+
+Pierwszą rzeczą, jaką zobaczysz po uruchomieniu programu Visual Studio jest oknem rozpoczęcia. W oknie uruchamiania zaprojektowano w celu ułatwienia Ci "kod" szybciej. Ma funkcje umożliwiające klonowanie lub zapoznaj się z kodu, otwórz istniejący projekt lub rozwiązanie, Utwórz nowy projekt lub po prostu otwórz folder, który zawiera kilka plików kodu.
+
+[![](media/vs-2019/start-window-labeled.png "Okno uruchamiania w programie Visual Studio 2019 r.")](media/vs-2019/start-window-labeled.png#lightbox)
+
+Jeśli używasz programu Visual Studio po raz pierwszy, listy ostatnich projektów jest pusta.
+
+Jeśli pracujesz z niekorzystających z programu MSBuild na podstawie ścieżek bazowych kodów, użyjesz **Otwórz folder lokalny** opcję, aby otworzyć kod w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](develop-code-in-visual-studio-without-projects-or-solutions.md). W przeciwnym razie możesz utworzyć nowy projekt lub klonowanie projektu od dostawcy źródła, takich jak GitHub lub DevOps platformy Azure.
+
+**Kontynuuj bez konieczności pisania kodu** opcja po prostu otwiera środowiska programistycznego Visual Studio bez określonego projektu lub kodu załadowanego. Możesz wybrać tę opcję, aby dołączyć [udostępniania na żywo](/visualstudio/liveshare/) sesji lub dołączyć do procesu debugowania. Można również nacisnąć klawisz **Esc** aby zamknąć okno uruchamiania i otworzyć IDE.
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy projekt.
+
+::: moniker range="vs-2017"
 
 1. Na **strona startowa**, w polu wyszukiwania w obszarze **nowy projekt**, wpisz w **konsoli** do filtrowania listy typów projektów, które zawierają "konsoli" w nazwie.
 
@@ -42,6 +64,24 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
    Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. Wybieranie języka C# **Aplikacja konsoli (.NET Framework)** szablonu projektu. (Również w przypadku języka Visual Basic, C++, Javascript lub innych deweloperów języka, możesz tworzenia projektu w jednym z tych języków. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
 
 1. W **nowy projekt** okno dialogowe, które zostanie wyświetlone, zaakceptuj domyślną nazwę projektu i wybierz polecenie **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+   Zostanie wyświetlone okno dialogowe, które mówi **Utwórz nowy projekt**. To okno jest czasami określane jako **nowy projekt** okna dialogowego, jest to gdzie Przeglądaj i wybierz szablon projektu. Zapewnia listy niedawno używanych projektów szablonów.
+
+1. W polu wyszukiwania u góry wpisz **konsoli** do filtrowania listy typów projektów, które zawierają "konsoli" w nazwie. Dalej zawęzić wyniki wyszukiwania przez pobrania **C#** (lub innego języka) z **języka** selektora.
+
+   ![Okno dialogowe nowego projektu w programie Visual Studio 2019 r.](media/vs-2019/create-a-new-project.png)
+
+1. W przypadku wybrania C#, Visual Basic lub F# języka, wybierz **Aplikacja konsoli (.NET Framework)** szablonu, a następnie wybierz **dalej**. (Jeśli wybrano inny język, wystarczy wybrać dowolny szablon. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
+
+1. Na **konfigurowania nowego projektu** strony, zaakceptuj domyślną nazwę projektu i lokalizację, a następnie wybierz **Utwórz**.
+
+::: moniker-end
 
    Projekt zostanie utworzony i plik o nazwie *Program.cs* zostanie otwarty w **edytora** okna. **Edytora** pokazuje zawartość plików, a to, gdzie wykonasz większość swojej pracy kodowania w programie Visual Studio.
 
@@ -57,11 +97,21 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
 
 Na pasku menu, wzdłuż górnej części programu Visual Studio grupy poleceń na kategorie. Na przykład **projektu** menu zawiera polecenia związane z projektem, w której pracujesz. Na **narzędzia** menu, można dostosować sposób działania programu Visual Studio, wybierając **opcje**, lub Dodaj funkcje do instalacji, wybierając **Pobierz narzędzia i funkcje**.
 
-![Pasek menu w programie Visual Studio](media/quickstart-IDE-menu-bar.png)
+::: moniker range="vs-2017"
 
-Teraz Otwórz **lista błędów** okna, wybierając **widoku** menu, a następnie **lista błędów**.
+![Pasek menu programu Visual Studio 2017](media/quickstart-IDE-menu-bar.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Pasek menu w Visual Studio 2019 r.](media/vs-2019/menu-bar.png)
+
+::: moniker-end
 
 ## <a name="error-list"></a>Lista błędów
+
+Otwórz **lista błędów** okna, wybierając **widoku** menu, a następnie **lista błędów**.
 
 **Lista błędów** dowiesz się błędy, ostrzeżenia i komunikaty dotyczące bieżącego stanu w kodzie. Jeśli występują błędy (np. Brak nawiasu klamrowego lub średnika) w pliku lub dowolnego miejsca w projekcie, są one wymienione w tym miejscu.
 
@@ -77,19 +127,35 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ## <a name="quick-launch"></a>Szybkie uruchamianie
 
-**Szybkie uruchamianie** pole jest szybka i łatwa metoda wygląda praktycznie wszystkich wymaganych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
+**Szybkie uruchamianie** pole wyszukiwania jest szybki i łatwy sposób przechodzenia do zasadzie dowolny rodzaj danych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
 
-1. Znajdź **Szybkie uruchamianie** pole w prawym górnym rogu środowiska IDE. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
+::: moniker range="vs-2017"
 
-1. Typ **szczegółowości** do **Szybkie uruchamianie** pole. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
+1. Znajdź **Szybkie uruchamianie** pola wyszukiwania w prawym górnym rogu środowiska IDE. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
 
-   ![Szybkie uruchamianie pola w programie Visual Studio](media/quickstart-IDE-quick-launch.png)
+2. Typ **szczegółowości** do **Szybkie uruchamianie** pola wyszukiwania. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
+
+   ![Pole wyszukiwania szybkiego uruchamiania w programie Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
    **Opcje** zostanie wyświetlone okno dialogowe **kompilowanie i uruchamianie** Strona opcji.
 
-1. W obszarze **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**, wybierz **normalny**, a następnie kliknij przycisk **OK**.
+::: moniker-end
 
-1. Ponownie skompiluj projekt, klikając prawym przyciskiem myszy **ConsoleApp1** projektu w **Eksploratora rozwiązań** i wybierając pozycję **odbudować** z menu kontekstowego.
+::: moniker range=">=vs-2019"
+
+1. Znajdź **Szybkie uruchamianie** pola wyszukiwania w górnej części IDE, prawo menu. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
+
+2. Typ **szczegółowości** do **Szybkie uruchamianie** pola wyszukiwania. Z wyświetlane wyniki, wybierz **szczegółowość MSBuild zmiany**.
+
+   ![Pole wyszukiwania Szybkie uruchamianie w Visual Studio 2019 r.](media/vs-2019/quick-launch-verbosity.png)
+
+   **Opcje** zostanie wyświetlone okno dialogowe **kompilowanie i uruchamianie** Strona opcji.
+
+::: moniker-end
+
+3. W obszarze **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild**, wybierz **normalny**, a następnie kliknij przycisk **OK**.
+
+4. Ponownie skompiluj projekt, klikając prawym przyciskiem myszy **ConsoleApp1** projektu w **Eksploratora rozwiązań** i wybierając pozycję **odbudować** z menu kontekstowego.
 
    Tym razem **dane wyjściowe** okno pokazuje pełniejsze rejestrowanie z procesu kompilacji, w tym pliki, które zostały skopiowane where.
 
@@ -99,7 +165,17 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub jeśli masz sugestie dotyczące poprawy produktu, możesz użyć **Wyślij opinię** menu w górnej części okna programu Visual Studio obok **szybki Uruchom** pole.
 
-![Wyślij opinię menu w programie Visual Studio](media/quickstart-IDE-send-feedback.png)
+::: moniker range="vs-2017"
+
+![Wyślij opinię menu w programie Visual Studio 2017](media/quickstart-IDE-send-feedback.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Wysyłanie opinii menu w Visual Studio 2019 r.](media/vs-2019/send-feedback-menu.png)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 

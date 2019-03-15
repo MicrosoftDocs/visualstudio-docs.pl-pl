@@ -1,6 +1,6 @@
 ---
 title: 'CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970234"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871892"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory nie powinny mieć nieprawidłowych sufiksów
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970234"
 ## <a name="cause"></a>Przyczyna
 
 Identyfikator ma niepoprawnego sufiksu.
+
+Domyślnie ta reguła przegląda tylko identyfikatory widocznego na zewnątrz, ale jest to [konfigurowalne](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -72,6 +74,16 @@ Usuń sufiks z nazwą typu.
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły, chyba że sufiksem ma jednoznaczną znaczenie w domenie aplikacji.
+
+## <a name="configurability"></a>Konfigurowalne
+
+Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Powiązane reguły
 

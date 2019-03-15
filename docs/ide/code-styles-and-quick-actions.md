@@ -1,6 +1,6 @@
 ---
 title: Preferencje stylu kodu
-ms.date: 03/10/2017
+ms.date: 03/12/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,31 +10,31 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a7a478e8d3575e70a11ec776d59337ae93e7a677
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223133"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873363"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
-Można ustawić preferencji stylu kodu dla projektów C# i Visual Basic, otwierając **opcje** okno dialogowe z **narzędzia** menu. W **opcje** okno dialogowe, wybierz opcję **edytora tekstów** > [**C#** lub **podstawowe**] > **styl kodu**  >  **Ogólne**. Opcje ustawione w tym oknie dotyczą tylko komputer lokalny.
-
-Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybrania:
+Można ustawić preferencji stylu kodu dla projektów C# i Visual Basic, otwierając **opcje** okno dialogowe z **narzędzia** menu. W **opcje** okno dialogowe, wybierz opcję **edytora tekstów** > [**C#** lub **podstawowe**] > **styl kodu**  >  **Ogólne**. Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybrania:
 
 ![Opcje stylu kodu](media/code-style-quick-actions-dialog.png)
+
+Opcje ustawione w tym oknie mają zastosowanie do konta personalizacji programu Visual Studio i nie są skojarzone z określonym projektem lub bazy kodu. Ponadto nie są wymuszane w czasie kompilacji, w tym w kompilacjach ciągłej integracji (CI). Jeśli chcesz skojarzyć preferencji stylu kodu z projektem i style wymuszane podczas kompilacji, określ preferencje w [pliku .editorconfig](#editorconfig-files).
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Preferencji i ważność
 
-Dla każdego elementu można ustawić **preferencji** i **ważność** wartości przy użyciu listy rozwijane w każdym wierszu. Można ustawić ważność **Brak**, **sugestii**, **ostrzeżenie**, lub **błąd**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) potrzeby stylu kodu, upewnij się, że **ważność** został ustawiony na coś innego niż **Brak**. **Szybkie akcje** żarówki ![żarówki](media/vs2015_lightbulbsmall.png), błąd żarówki ![błąd żarówki](media/error-bulb.png), lub śrubokręt ![śrubokręt](media/screwdriver.png) ikona pojawia się, gdy Styl innymi niż preferowane jest używany i konieczne jest wybranie opcji na **szybkie akcje** listy, aby automatycznie ponownie pisać kodu do preferowanego stylu.
+Dla każdego elementu można ustawić **preferencji** i **ważność** wartości przy użyciu listy rozwijane w każdym wierszu. Można ustawić ważność **Brak**, **sugestii**, **ostrzeżenie**, lub **błąd**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) potrzeby stylu kodu, upewnij się, że **ważność** został ustawiony na coś innego niż **Brak**. **Szybkie akcje** żarówki ![żarówki](media/light-bulb-dropdown.png), błąd żarówki ![błąd żarówki](media/error-bulb.png), lub śrubokręt ![śrubokręt](media/screwdriver.png) ikona pojawia się, gdy Styl innymi niż preferowane jest używany i konieczne jest wybranie opcji na **szybkie akcje** listy, aby automatycznie ponownie pisać kodu do preferowanego stylu.
 
 ## <a name="editorconfig-files"></a>Plików EditorConfig
 
-Kod platformy .NET można również zarządzać za pomocą ustawienia stylu [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) pliku. Ustawienia w pliku EditorConfig mają pierwszeństwo przed opcje wybrane w **opcje** okno dialogowe. Plik wtyczki EditorConfig umożliwia wymuszanie i skonfiguruj styl kodowania dla całego repozytorium lub projektu.
+Ustawienia stylu kodu, dla platformy .NET można również określić, dodając [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) plik do projektu. Te pliki są skojarzone z bazę kodu, a nie konta personalizacji programu Visual Studio. Ustawienia w pliku EditorConfig mają pierwszeństwo przed opcje wybrane w **opcje** okno dialogowe. Jeśli chcesz wymusić kodowania style Wszyscy współautorzy do repozytorium lub projektu, należy użyć pliku EditorConfig.
 
 ## <a name="format-document-command"></a>Format polecenia dokumentu
 
@@ -45,7 +45,7 @@ Oczyszczanie kodu stosuje się do ustawień skonfigurowanych w *.editorconfig* p
 Po raz pierwszy możesz wyzwolić **Formatuj dokument** polecenia w programie Visual Studio, pasek informacji żółty monituje o oczyszczania kodu ustawień.
 
 > [!TIP]
-> Zasady skonfigurowane jako **Brak** w *.editorconfig* pliku nie są używane w oczyszczania kodu, ale mogą być stosowane osobno za pośrednictwem **szybkie akcje i Refaktoryzacje** menu.
+> Zasady skonfigurowane za pomocą ważność **Brak** nie są używane w oczyszczania kodu, ale mogą być stosowane osobno za pośrednictwem **szybkie akcje i Refaktoryzacje** menu.
 
 ## <a name="see-also"></a>Zobacz także
 

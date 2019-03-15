@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223198"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870363"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -102,14 +102,14 @@ Jeśli masz diagram Otwórz zależności, który jest połączony z elementami r
     > [!NOTE]
     > Domyślnie **Build Action** właściwość zależności pliku diagramu (.layerdiagram) jest ustawiona na **weryfikacji** tak, aby diagram znajduje się w trakcie procesu walidacji.
 
-     **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+     **Lista błędów** okna raporty o błędach. Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [rozwiązać problemy ze sprawdzaniem poprawności warstwy](#troubleshoot-layer-validation-issues).
 
 2.  Aby wyświetlić źródło każdego błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów** okna.
 
     > [!NOTE]
     > Program Visual Studio może wyświetlać mapę kodu, zamiast źródła błędu. Dzieje się tak, gdy kod ma zależność od zestawu, który nie jest określona przez diagram zależności lub w kodzie brakuje zależności, która jest określona przez diagram zależności. Przejrzyj mapy kodu lub kod w celu określenia, czy powinna istnieć zależność. Aby uzyskać więcej informacji na temat map kodu, zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Aby zarządzać błędami, zobacz [zarządzanie błędami walidacji](#ManageErrors).
+3.  Aby zarządzać błędami, zobacz [Rozwiązywanie błędów walidacji warstwy](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Sprawdź poprawność kodu w wierszu polecenia
 
@@ -147,7 +147,7 @@ Jeśli masz diagram Otwórz zależności, który jest połączony z elementami r
 
      Zostaną wyświetlone wszystkie błędy. Aby uzyskać więcej informacji na temat programu MSBuild, zobacz [MSBuild](../msbuild/msbuild.md) i [zadanie MSBuild](../msbuild/msbuild-task.md).
 
-   Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+   Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [rozwiązać problemy ze sprawdzaniem poprawności warstwy](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Zarządzanie błędami walidacji
 
@@ -195,11 +195,11 @@ Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a 
 
     Obejmuje to diagram zależności w trakcie procesu walidacji.
 
-Aby zarządzać błędami w oknie Lista błędów, zobacz [zarządzanie błędami walidacji](#ManageErrors).
+Aby zarządzać błędami w oknie Lista błędów, zobacz [Rozwiązywanie błędów walidacji warstwy](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Rozwiązywanie problemów związanych z walidacją warstwy
 
-W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
+W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [rozwiązać problemy ze sprawdzaniem poprawności warstwy](#troubleshoot-layer-validation-issues).
 
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |-|-|-|

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac9b92921ba180c3f986a28d9fc47ee9acfdeb78
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752902"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868067"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ W tym temacie opisano podstawowe pojęcia związane z definiowanie i korzystanie
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Modeling SDK for Visual Studio|[Pobierz MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Modeling SDK for Visual Studio|[Pobierz MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>Tworzenie rozwiązania języka DSL  
  Aby utworzyć nowego języka specyficznego dla domeny, należy utworzyć nową [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania za pomocą szablonu projektu języka specyficznego dla domeny.  

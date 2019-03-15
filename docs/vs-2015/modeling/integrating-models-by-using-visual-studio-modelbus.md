@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da9041c4fb54b37bfe585d2bbf0b88fdfe9264c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784430"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873782"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54784430"
 
 -   [Instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 ##  <a name="provide"></a> Zapewnianie dostępu do języka DSL
  Przed utworzeniem ModelBus odwołania do modelu lub jego elementy, należy zdefiniować element ModelBusAdapter dla języka DSL. W tym celu najłatwiej używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia magistrali modelu, który dodaje polecenia do projektanta DSL.

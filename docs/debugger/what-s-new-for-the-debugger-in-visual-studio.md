@@ -1,5 +1,6 @@
 ---
 title: Co nowego w debugerze programu Visual Studio 2017 | Dokumentacja firmy Microsoft
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993237"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867622"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w debugerze programu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Co nowego w debugerze programu Visual Studio 2017
 
 Debuger zawiera następujące nowe funkcje:
 
@@ -66,7 +68,7 @@ Debuger zawiera następujące nowe funkcje:
 
     ![Wyszukaj w dołączyć do procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Aby uzyskać więcej informacji na temat tych nowych funkcjach, zobacz [informacje o wersji dla [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Aby uzyskać więcej informacji na temat tych nowych funkcjach, zobacz [informacje o wersji dla [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Zobacz także
 

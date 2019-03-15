@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788252"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867930"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Kroki opisane w [pierwszej procedury](../ide/how-to-create-item-templates.md#export_template) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
+Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
   
- Kreator sporego nakładu pracy w celu utworzenia podstawowego szablonu, ale w wielu przypadkach należy ręcznie zmodyfikować plik .vstemplate po wyeksportowaniu szablonu. Na przykład, jeśli chcesz, aby element był wyświetlany w **Dodaj nowy element** okno dialogowe [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekt aplikacji należy wykonać kilka dodatkowych kroków. [Druga procedura](../ide/how-to-create-item-templates.md#modify_template) w tym temacie pomaga wykonać to zadanie.  
+ Kreator sporego nakładu pracy w celu utworzenia podstawowego szablonu, ale w wielu przypadkach należy ręcznie zmodyfikować plik .vstemplate po wyeksportowaniu szablonu. Na przykład, jeśli chcesz, aby element był wyświetlany w **Dodaj nowy element** okno dialogowe [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projekt aplikacji należy wykonać kilka dodatkowych kroków. [Druga procedura](#to-enable-the-item-template-to-be-used-in-a-store-project) w tym temacie pomaga wykonać to zadanie.  
  
- W niektórych przypadkach może być ma lub należy ręcznie utworzyć szablon elementu od podstaw. [Trzeci procedury](../ide/how-to-create-item-templates.md#create_template) pokazuje, jak to zrobić.  
+ W niektórych przypadkach może być ma lub należy ręcznie utworzyć szablon elementu od podstaw. [Trzeci procedury](#to-enable-templates-for-specific-project-sub-types) pokazuje, jak to zrobić.  
   
  Zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) uzyskać informacji na temat elementów, które mogą być używane w pliku .vstemplate.  
   

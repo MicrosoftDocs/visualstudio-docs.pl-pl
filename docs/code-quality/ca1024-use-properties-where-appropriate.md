@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Używaj właściwości, o ile to możliwe'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922306"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869260"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości, o ile to możliwe
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922306"
 
 ## <a name="cause"></a>Przyczyna
 
-Metoda publiczna lub chroniona ma nazwę, która rozpoczyna się od `Get`nie przyjmuje żadnych parametrów i zwraca wartość, która nie jest tablicą.
+Metoda ma nazwę, która rozpoczyna się od `Get`nie przyjmuje żadnych parametrów i zwraca wartość, która nie jest tablicą.
+
+Domyślnie ta reguła przegląda tylko publiczne i chronione metody, ale jest to [konfigurowalne](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -69,11 +71,21 @@ Aby naprawić naruszenie tej zasady, należy zmienić metodę z właściwością
 
 Pomijaj ostrzeżeń dla tej reguły, jeśli metoda nie spełnia co najmniej jedną z wcześniej podanych kryteriów.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Kontrolowanie właściwości rozszerzenia w debugerze
+## <a name="configurability"></a>Konfigurowalne
 
-Jednym z powodów programistów należy unikać właściwość jest, ponieważ nie chcesz debuger ma automatycznie rozwijać go. Na przykład właściwość może obejmować przydzielanie dużego obiektu lub wywołanie metody P/Invoke, ale nie może rzeczywiście być wszelkie dostrzegalnych efekty uboczne.
+Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
 
-Można uniemożliwić rozwijanie automatycznie przez debuger właściwości, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Ten atrybut jest stosowany do właściwości wystąpienia można znaleźć w poniższym przykładzie.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Rozszerzanie właściwości kontrolki w debugerze
+
+Jest jednym z powodów programistów należy unikać właściwość, ponieważ nie chcą debuger autoexpand go. Na przykład właściwość może obejmować przydzielanie dużego obiektu lub wywołanie metody P/Invoke, ale nie może rzeczywiście być wszelkie dostrzegalnych efekty uboczne.
+
+Można zapobiec debugera przy użyciu właściwości autoexpanding, stosując <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Ten atrybut jest stosowany do właściwości wystąpienia można znaleźć w poniższym przykładzie.
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład zawiera kilka metod powinny być konwertowane do właściwości i kilku, należy nie, ponieważ nie zachowywać się jak pola.
+Poniższy przykład zawiera kilka metod powinny być konwertowane do właściwości i kilku, należy nie, ponieważ mogą nie zachowywać się jak pola.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

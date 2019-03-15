@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783264"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869872"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby dla rozwiązywania problemów z błędami związanymi ze zintegrowanym środowiskiem deweloperskim
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Nie wszystkie komunikaty o błędach mieć określone skojarzonego tematu Pomocy
 ## <a name="the-developer-community"></a>Społeczność deweloperów  
  Fora umożliwiają interakcję z innymi deweloperami i również pracownicy firmy Microsoft. Jeśli wystąpi błąd, który nie może znaleźć rozwiązania dla, możesz zadać pytania o tym problemie na forum. Można również wyszukiwać grup dyskusyjnych, aby zobaczyć, czy inne wypowiadali się o ten sam problem.  
   
- Możesz uzyskać dostęp do forów, blogów, rozmów i innych zasobów na [społeczności techniczne Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922) witryny sieci Web.  
+ Możesz uzyskać dostęp do forów, blogów, rozmów i innych zasobów na [społeczności techniczne Microsoft](https://techcommunity.microsoft.com/) witryny sieci Web.  
   
 ## <a name="product-support"></a>Pomoc techniczna  
  Jeśli po wypróbowaniu innych zasobów nadal masz pytania, możesz skontaktować się ze usług pomocy technicznej firmy Microsoft, odwiedzając [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) witryny sieci Web. Aby uzyskać informacje o pomocy technicznej dostępne w Twojej okolicy, zobacz [Porozmawiaj z nami](../../ide/talk-to-us.md).

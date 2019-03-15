@@ -12,12 +12,12 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed8080b8e470276a38fbf300edbf801dc8e141fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785267"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873433"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na inn
  VSIX format nie obsługuje instalacji fragmentów kodu. Nie obsługuje ona również niektórych innych scenariuszach, takich jak zapisywanie do globalnej pamięci podręcznej zestawów (GAC) lub w rejestrze systemu. Jeśli trzeba zapisać w pamięci podręcznej GAC i rejestru w instalacji, należy użyć Instalatora Windows. Aby uzyskać więcej informacji, zobacz [przygotowywanie rozszerzeń dla Windows wdrażanie za pomocą Instalatora](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
 ## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publikowanie rozszerzenia do galerii Visual Studio
- Można rozpowszechniać swoje rozszerzenia innym osobom poprzez zamieszkania ich plik .vsix lub umieszczenie w na serwerze. Ale najlepszy sposób pozyskania swój kod w ręce wiele osób, umieść je w [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847). Rozszerzenia z galerii programu Visual Studio są dostępne dla użytkowników programu Visual Studio za pośrednictwem **rozszerzenia i aktualizacje**. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+ Można rozpowszechniać swoje rozszerzenia innym osobom poprzez zamieszkania ich plik .vsix lub umieszczenie w na serwerze. Ale najlepszy sposób pozyskania swój kod w ręce wiele osób, umieść je w [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Rozszerzenia z galerii programu Visual Studio są dostępne dla użytkowników programu Visual Studio za pośrednictwem **rozszerzenia i aktualizacje**. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
  Aby uzyskać pełny przykład, który pokazuje, jak przekazać rozszerzenie do galerii Visual Studio, zobacz [instruktażu: Publikowanie rozszerzenia programu Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 

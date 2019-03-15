@@ -5,22 +5,22 @@ ms.prod: visual-studio-dev14
 ms.technology: vs-devops-techdebt
 ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496f263c360a45bd096f1f9fb69c330945cfe3c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6f89f8fe99895bd445e0ec7f248c2cc83a7ca
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758250"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873657"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Co to jest nowego w dziedzinie projektowania w programie Visual Studio w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Ta wersja programu Visual Studio obejmuje następujące ulepszenia ułatwiające lepsze zrozumienie i projektowania kodu.
 

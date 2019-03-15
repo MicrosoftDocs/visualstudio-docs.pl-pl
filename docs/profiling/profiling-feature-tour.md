@@ -2,7 +2,7 @@
 title: Miara wydajności o narzędziach profilowania
 description: Przyjrzyj się krótki opis różnych narzędzi diagnostycznych dostępnych w programie Visual Studio.
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611922"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873181"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: Pierwsze spojrzenie na narzędziach profilowania
 

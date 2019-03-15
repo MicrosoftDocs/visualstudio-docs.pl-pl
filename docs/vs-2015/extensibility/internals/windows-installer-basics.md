@@ -11,19 +11,19 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 22ef7676d1346919f0270c90f7584dcf0d58a3d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765107"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868357"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.  
   
- Pełna dokumentacja Instalatora Windows na ten temat można znaleźć w temacie zestawu SDK platformy [Instalatora Windows](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Pełna dokumentacja Instalatora Windows na ten temat można znaleźć w temacie zestawu SDK platformy [Instalatora Windows](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Tworzenie pakietu VSPackage  
  Instalator Windows używa pakietów instalacyjnych, które zawierają informacje wymagające Instalatora Windows, aby zainstalować, odinstalować lub napraw produkt oraz do uruchamiania Instalatora interfejsu użytkownika (UI). Każdy pakiet instalacyjny zawiera plik msi, który zawiera bazę danych instalacji, strumień informacji podsumowujących i strumieni danych dla różnych części instalacji. Aby użyć Instalatora, możesz tworzyć instalacji. Ponieważ Instalator organizuje instalacje myślą o składniki i przechowuje informacje o instalacji w relacyjnej bazie danych, proces tworzenia pakietu instalacyjnego szeroko pociąga za sobą następujące czynności:  

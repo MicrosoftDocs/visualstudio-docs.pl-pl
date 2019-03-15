@@ -1,6 +1,6 @@
 ---
 title: Analizowanie użycia pamięci bez debugowania | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615923"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873457"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
@@ -72,7 +72,7 @@ Po zatrzymaniu zbierania danych **użycie pamięci** narzędzie zatrzymuje ją i
 
 Liczby w **migawki** okienka Pokaż bajtów i obiektów w pamięci, gdy każda migawki i różnica między migawki, a poprzednią.
 
-Liczby są łączy, które szczegółowo open **użycie pamięci** raportu widoków w nowych oknach programu Visual Studio. A [raport szczegóły migawki](#snapshot-details-report) zawiera typy i wystąpienia w jedną migawkę. A [różnica (różnica) raport migawki](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawek.
+Liczby są łączy, które szczegółowo open **użycie pamięci** raportu widoków w nowych oknach programu Visual Studio. A [raport szczegóły migawki](#snapshot-details-reports) zawiera typy i wystąpienia w jedną migawkę. A [różnica (różnica) raport migawki](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawek.
 
   ![Wyświetl linki migawki](../profiling/media/memuse__snapshotview_numbered.png "łączy widoku migawki")
 

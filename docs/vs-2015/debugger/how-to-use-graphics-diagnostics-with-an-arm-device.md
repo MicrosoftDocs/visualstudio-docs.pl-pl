@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 003f17ad34219a21b69578902e5f48716c917789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797783"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867685"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Instrukcje: Korzystanie z diagnostyki grafiki z urządzeniem ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Graphics Diagnostics obsługuje zdalne debugowanie aplikacji Direct3D na urządz
   
 1.  Zainstaluj [zasad dotyczących zestawów ARM](http://msdn.microsoft.com/windows/desktop/dn469188) na urządzeniu z systemem ARM.  
   
-2.  Zainstaluj [Remote Debugging Tools](http://go.microsoft.com/fwlink/?LinkId=393086) na urządzeniu z systemem ARM.  
+2.  Zainstaluj [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) na urządzeniu z systemem ARM.  
   
 > [!IMPORTANT]
 >  Urządzeń z systemem Windows Phone 8.1 trzeba zarejestrować telefon do programowania. Aby to zrobić, musi być zarejestrowany dla deweloperów. Aby uzyskać więcej informacji, zobacz [sposób wdrażania i uruchamiania aplikacji dla systemu Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  

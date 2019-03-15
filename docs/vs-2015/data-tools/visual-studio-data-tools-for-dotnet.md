@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fd1d55b74997e855cbbc4a3cdfe9288f19806a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799408"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870501"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio i .NET Framework razem zapewniają szeroką interfejsu API i narzędzia do obsługi łączenie z bazami danych, modelowania danych w pamięci i wyświetlanie danych w interfejsie użytkownika.  Klasy .NET Framework, które oferują funkcje dostępu do danych są znane jako [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, wraz z danymi narzędzi w programie Visual Studio został pierwotnie zaprojektowany głównie w celu obsługi relacyjnych baz danych i XML. Te dni wielu dostawców bazy danych NoSQL lub stronom trzecim, oferują dostawcy ADO.NET.  
   
- Visual Studio 2015 Update 2 zawiera najnowsze aktualizacje programu [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), umożliwiają one obsługę najnowszych funkcji platformy Azure [bazy danych SQL](https://azure.microsoft.com/services/sql-database/) i [programu SQL Server 2016](https://www.microsoft.com/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) obsługuje ADO.NET, z wyjątkiem zestawy danych i powiązanych typów. Jeśli są przeznaczone dla platformy .NET Core i wymagają warstwy mapowania obiektowo relacyjny (ORM), użyj [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 zawiera najnowsze aktualizacje programu [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), umożliwiają one obsługę najnowszych funkcji platformy Azure [bazy danych SQL](https://azure.microsoft.com/services/sql-database/) i [programu SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) obsługuje ADO.NET, z wyjątkiem zestawy danych i powiązanych typów. Jeśli są przeznaczone dla platformy .NET Core i wymagają warstwy mapowania obiektowo relacyjny (ORM), użyj [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Na poniższym diagramie przedstawiono uproszczony widok podstawowej architektury:  
   

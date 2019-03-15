@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: de09da6a68e00ee66e04ae9523729c88232e78a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779818"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871596"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -288,7 +288,7 @@ Można znaleźć zdalnego debugera (**msvsmon.exe**) na komputerze przy użyciu 
   
  Aby dowiedzieć się, jak debugowanie na platformie Azure zobacz jeden z tych tematów:  
   
--   [Debugowanie usługi w chmurze lub maszyny wirtualnej w programie Visual Studio](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Debugowanie usługi w chmurze lub maszyny wirtualnej w programie Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [Debugowanie zaplecza platformy .NET w programie Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   

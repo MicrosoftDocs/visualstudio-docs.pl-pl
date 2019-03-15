@@ -11,12 +11,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 489248031633a96a4790c63e9bd8938f56c738c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 03c9ebb2a2c84c400b4fb2d3aea4c3ec121fbf27
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766496"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870281"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Rozpoczynanie tworzenia rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Jeśli nigdy nie zostały zapisane rozszerzenia programu Visual Studio przed, pr
 
 - Projektant specyficznego dla domeny dla scenariuszy, takich jak obsługa danych projektu lub w chmurze
 
-  Aby zapoznać się z przykładami rozszerzeń, zapoznaj się z [galerii Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Możesz również skorzystać z przyjrzeć się [Otwórz źródło rozszerzenia programu Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
+  Aby zapoznać się z przykładami rozszerzeń, zapoznaj się z [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Możesz również skorzystać z przyjrzeć się [Otwórz źródło rozszerzenia programu Visual Studio](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Funkcje programu Visual Studio, które można rozszerzyć?
  Teoretycznie można rozszerzyć o niemal dowolnym część programu Visual Studio: menu, paski narzędzi, polecenia, systemu windows, rozwiązania, projekty, edytory i tak dalej.

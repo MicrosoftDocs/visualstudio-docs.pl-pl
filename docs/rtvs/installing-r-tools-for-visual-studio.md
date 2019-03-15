@@ -8,20 +8,20 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909196"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873652"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Jak zainstalować narzędzia języka R dla programu Visual Studio
 
 W tym artykule:
 
 - [Obsługiwane wersje programu Visual Studio](#supported-versions-of-visual-studio)
-- [Zainstaluj RTVS w programie Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Zainstaluj RTVS w programie Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Zainstaluj RTVS w programie Visual Studio 2017](#install-rtvs-in-visual-studio-2017)
+- [Zainstaluj RTVS w programie Visual Studio 2015](#install-rtvs-in-visual-studio-2015)
 - [Instalacja w trybie offline](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -66,7 +66,7 @@ Microsoft R Open i CRAN r. zarówno umożliwiają wielu wersji obok siebie. Micr
 Pobieranie bieżącego RTVS dla programu Visual Studio 2015 z [ https://aka.ms/rtvs-current ](https://aka.ms/rtvs-current). RTVS sprawdza, czy odpowiednia wersja programu Visual Studio i pomaga zainstalować interpreter języka R, jeśli jeszcze go.
 
 > [!Note]
-> Autonomiczny Instalator RTVS działa tylko w przypadku programu Visual Studio 2015; za pomocą programu Visual Studio 2017, należy zainstalować obsługę języka R za pośrednictwem [obciążenie aplikacji analitycznych i naukowych opracowań danych](#installing-rtvs-in-visual-studio-2017) zgodnie z wcześniejszym opisem.
+> Autonomiczny Instalator RTVS działa tylko w przypadku programu Visual Studio 2015; za pomocą programu Visual Studio 2017, należy zainstalować obsługę języka R za pośrednictwem [obciążenie aplikacji analitycznych i naukowych opracowań danych](#install-rtvs-in-visual-studio-2017) zgodnie z wcześniejszym opisem.
 
 Rozszerzenie RTVS dla programu Visual Studio 2015 jest instalowany w: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 

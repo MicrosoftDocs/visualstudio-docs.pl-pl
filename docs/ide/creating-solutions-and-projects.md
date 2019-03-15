@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223250"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867890"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -113,11 +113,17 @@ Po utworzeniu puste rozwiązanie, nowe lub istniejące projekty lub elementy mo�
 
 Jak wspomniano wcześniej, można również otworzyć pliki kodu, bez konieczności używania projektu lub rozwiązania. Aby dowiedzieć się więcej o tworzeniu kodu w ten sposób, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Utwórz projekt tymczasowy (C# i Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Utwórz projekt tymczasowy
+
+(C# i Visual Basic)
 
 Jeśli utworzysz. Projekt oparty na sieci bez określania lokalizacji na dysku, to projekt tymczasowy. Tymczasowe projekty umożliwiają eksperymentować z projektami .NET. W dowolnym momencie podczas pracy z projektem tymczasowej, można go zapisać lub odrzucić je.
 
 Aby utworzyć projekt tymczasowy, najpierw należy przejść do **narzędzia** > **opcje** > **projekty i rozwiązania**  >   **Ogólne**i usuń zaznaczenie pola wyboru **Zapisz nowe projekty po utworzeniu** pola wyboru. Następnie otwórz **nowy projekt** standardowe okno dialogowe.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Usuwanie rozwiązania, projektu lub elementu
 

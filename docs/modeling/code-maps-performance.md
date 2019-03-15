@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913187"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872391"
 ---
 # <a name="improve-performance-for-code-maps"></a>Poprawianie wydajności dla map kodu
 
 Podczas generowania mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale zwiększa wydajność nowsze. Jeśli kod ulegnie zmianie, Visual Studio indeksuje ponownie tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na mapie, aby zakończyć renderowania, należy wziąć pod uwagę poniższe sugestie:
 
-- [Mapowanie zależności, które Cię interesują.](#create-a-code-map-to-see-specific-dependencies)
+- Mapowanie zależności, które Cię interesują.
 
 - Przed wygenerowaniem mapy dla całego rozwiązania Zmniejsz zakres rozwiązania.
 

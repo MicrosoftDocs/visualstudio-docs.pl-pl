@@ -1,13 +1,10 @@
 ---
 title: Specyfikatory debugera (C++) formatu | Dokumentacja firmy Microsoft
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227725"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870596"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu w języku C++ w debugerze programu Visual Studio
-Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu.
+Można zmienić format wyświetlania wartości w **Obejrzyj**, **Autos**, i **lokalne** systemu windows przy użyciu specyfikatorów formatu.
 
 Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik jest wyświetlany w [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Wyświetl etykietki danych odzwierciedla specyfikator formatu.
 
@@ -57,8 +54,55 @@ Dodaj `my_var1` zmienną **Obejrzyj** okna podczas debugowania, **debugowania** 
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Można przeglądać i wybrać z listy specyfikatorów formatu dostępne przez dodanie przecinka (,) do wartości w **Obejrzyj** okna. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Specyfikatory formatu
 W poniższych tabelach opisano specyfikatorów formatu, które można użyć w programie Visual Studio. Specyfikatory pogrubione są obsługiwane tylko dla nowych debugera, a nie dla debugowania międzyoperacyjnego przy użyciu języka C + +/ interfejsu wiersza polecenia.
+
+::: moniker range=">= vs-2019" 
+
+|Specyfikator|Format|Oryginalnej wartości czujki|Wartości wyświetlanej|
+|---------------|------------|--------------------------|---------------------|
+|d|Liczba całkowita dziesiętna|0x00000066|102|
+|o|Nieoznaczona ósemkowa liczba całkowita|0x00000066|000000000146|
+|x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
+|X<br /><br /> **H**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
+|xb<br /><br /> **hb**|Szesnastkowa liczba całkowita (bez wiodące 0 x)|102|cccccccc|
+|Xb<br /><br /> **Hb**|Szesnastkowa liczba całkowita (bez wiodące 0 x)|102|CCCCCCCC|
+|b|Liczba całkowita bez znaku binarne|25|0b00000000000000000000000000011001|
+|bb|binarny całkowitą bez znaku (bez wiodącego 0b)|25|00000000000000000000000000011001|
+|e|zapis naukowy|25000000|2.500000e + 07|
+|g|krótszej z naukowych lub zmiennoprzecinkową|25000000|2.5e + 07|
+|c|pojedynczy znak|0x0065, c|101 "e"|
+|s|Const char * ciągu (ze znakami cudzysłowu)|\<Lokalizacja > "hello world"|"hello world"|
+|**sb**|Const char * ciągu (bez cudzysłowu)|\<Lokalizacja > "hello world"|Cześć ludzie|
+|s8|Ciąg UTF-8|\<Lokalizacja > "Jest â˜• kawy cup UTF-8"|"To ☕ kawy cup UTF-8"|
+|**s8b**|Ciąg UTF-8 (bez cudzysłowu)|\<Lokalizacja > "hello world"|Cześć ludzie|
+|su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<Lokalizacja > L "hello world"|L "hello world"<br /><br /> u "hello world"|
+|Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowu)|\<Lokalizacja > L "hello world"|Cześć ludzie|
+|bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<Lokalizacja > L "hello world"|L "hello world"|
+|env|Blok środowiska (ciąg zakończone podwójnej precyzji niż null)|\<Lokalizacja > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<Lokalizacja > U "hello world"|u "hello world"|
+|**s32b**|Ciąg UTF-32 (bez cudzysłowu)|\<Lokalizacja > U "hello world"|Cześć ludzie|
+|**en**|enum|SATURDAY(6)|Sobota|
+|**hv**|Typ wskaźnika — wskazuje, że wartość wskaźnika, poddawanego inspekcji jest wynikiem alokacji sterty w tablicy, na przykład `new int[3]`.|\<Lokalizacja > {\<pierwszy element członkowski >}|\<Lokalizacja > {\<pierwszy element członkowski >, \<drugi element członkowski >,...}|
+|**Nazwa**|Pomija adres pamięci wskaźnika do obiektu.|\<Lokalizacja >, {elementu członkowskiego = wartość...}|{member=value...}|
+|**ND**|Wyświetla tylko klasy bazowej informacje, ignorując klasy pochodne|`(Shape*) square` zawiera klasy podstawowej i pochodnej informacji o klasie|Wyświetla tylko podstawowy informacji o klasie|
+|godz.|Kod błędu HRESULT lub Win32. Ten specyfikator jest już potrzebny dla wartości HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
+|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
+|wm|Numery komunikatu Windows|16|WM_CLOSE|
+|nr|Pomiń element "Pierwotne View"|
+|nvo|Pokaż element "Nieprzetworzony widok" dla tylko wartości liczbowe|
+|!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Specyfikator|Format|Oryginalnej wartości czujki|Wartości wyświetlanej|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ W poniższych tabelach opisano specyfikatorów formatu, które można użyć w p
 |wm|Numery komunikatu Windows|16|WM_CLOSE|
 |!|format RAW, ignorowanie wszelkich dostosowań widoków typu danych|\<dostosowane reprezentacji >|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Gdy **hv** specyfikatora formatu, debuger próbuje określić długość buforu i wyświetlić tę liczbę elementów. Ponieważ nie zawsze jest możliwe dla debugera znaleźć rozmiar buforu dokładnie tablicy, należy użyć Określ rozmiar specyfikatorów `(pBuffer,[bufferSize])` zawsze, gdy jest to możliwe. **Hv** specyfikator formatu jest przydatne w przypadku, gdy rozmiar buforu nie jest jeszcze dostępna
+> Gdy **hv** specyfikatora formatu, debuger próbuje określić długość buforu i wyświetlić tę liczbę elementów. Ponieważ nie zawsze jest możliwe dla debugera znaleźć rozmiar buforu dokładnie tablicy, należy użyć Określ rozmiar specyfikatorów `(pBuffer,[bufferSize])` zawsze, gdy jest to możliwe. **Hv** specyfikator formatu jest przydatne w przypadku, gdy rozmiar buforu nie jest jeszcze dostępna.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Określ rozmiar specyfikatorów dla wskaźników jako tablice
 Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, aby określić liczbę elementów tablicy można użyć liczby całkowitej lub wyrażenia.

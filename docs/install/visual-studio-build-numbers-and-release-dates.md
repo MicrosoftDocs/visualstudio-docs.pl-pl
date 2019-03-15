@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: eb2d86c7f1b7801da0bc4281848b602e60fa6e00
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567412"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870263"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -27,6 +27,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | Wydanie | 12 marca 2019 r. | 15.9.28307.518 |
+| 15.0.21 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
 | 15.9.8 | Wydanie | 5 marca 2019 r. | 15.9.28307.481 |
 | 15.9.7 | Wydanie | 12 lutego 2019 r. | 15.9.28307.423 |
 | 15.0.21 | Wydanie | 12 lutego 2019 r. | 15.0.26228.73 |
@@ -178,6 +180,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Wersja Release Candidate 2 (RC.2) | 12 marca 2019 r. | 16.0.28711.60 |
+| 16.0.0 | 4.2 (wersja zapoznawcza) | 12 marca 2019 r. | 16.0.28711.60 |
 | 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6 marca 2019 r. | 16.0.28705.295 |
 | 16.0.0 | Wyświetl podgląd 4.1 Svc1 | 6 marca 2019 r. | 16.0.28705.295 |
 | 16.0.0 | W wersji Release Candidate 1 (RC.1) | 5 marca 2019 r. | 16.0.28701.123 |
@@ -195,7 +199,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Rytm wydawania wersji programu Visual Studio](/visualstudio/productinfo/release-rhythm)
-* [Podręcznik administratora w usłudze Visual Studio 2017](visual-studio-administrator-guide.md)
-* [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Rytm wydawania wersji programu Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)

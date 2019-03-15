@@ -1,6 +1,6 @@
 ---
 title: 'CA1819: Właściwości nie powinny zwracać tablic'
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919212"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872746"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Właściwości nie powinny zwracać tablic
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919212"
 
 ## <a name="cause"></a>Przyczyna
 
-Właściwość publiczna lub chroniona w typie publicznym zwraca tablicę.
+Właściwość zwraca tablicę.
+
+Domyślnie ta reguła przegląda tylko widoczne na zewnątrz właściwości i typy, ale jest to [konfigurowalne](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -52,6 +54,16 @@ Można pominąć ostrzeżenia, które jest wywoływane dla właściwości atrybu
 Można pominąć to ostrzeżenie, jeśli właściwość jest częścią [obiekt transferu danych (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) klasy.
 
 W przeciwnym razie nie Pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="configurability"></a>Konfigurowalne
+
+Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (wydajność). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Przykład naruszenia
 

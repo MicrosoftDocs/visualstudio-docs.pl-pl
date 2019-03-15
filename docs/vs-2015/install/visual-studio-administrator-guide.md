@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834880"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868888"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Podręcznik administratora programu Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
-Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Można utworzyć udział sieciowy, uruchamiając plik instalacyjny z przełącznikiem/Layout (zgodnie z opisem na [trybu Offline instalacji programu Visual Studio Utwórz](../install/create-an-offline-installation-of-visual-studio.md) strony), a następnie kopiując je z komputera lokalnego do udziału sieciowego. Jeśli używasz obrazu ISO, możesz zainstalować plik ISO i udostępnić go lub skopiuj plik ISO w udziale sieciowym.  
+Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](https://visualstudio.microsoft.com/vs/older-downloads/). Można utworzyć udział sieciowy, uruchamiając plik instalacyjny z przełącznikiem/Layout (zgodnie z opisem na [trybu Offline instalacji programu Visual Studio Utwórz](../install/create-an-offline-installation-of-visual-studio.md) strony), a następnie kopiując je z komputera lokalnego do udziału sieciowego. Jeśli używasz obrazu ISO, możesz zainstalować plik ISO i udostępnić go lub skopiuj plik ISO w udziale sieciowym.  
   
  Należy pamiętać, że instalacji z udziału sieciowego "Pamiętaj" lokalizacji źródłowej, które pochodzą z. Oznacza to, naprawy maszyny klienta może być konieczne powrócić do udziału sieciowego, który pierwotnie zainstalowany klient z. Wybierz lokalizację sieci dokładnie tak, aby powoduje wyrównanie z okresem istnienia spodziewasz się klientów programu Visual Studio 2015 w Twojej organizacji.  
   

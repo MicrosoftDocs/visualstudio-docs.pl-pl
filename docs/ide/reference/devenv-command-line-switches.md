@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908468"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868914"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 
@@ -67,6 +67,7 @@ Następujące przełączniki wiersza polecenia wyświetlenia IDE i wykonaj opisa
 |[/Command](command-devenv-exe.md)|Uruchamia IDE i wykonuje określone polecenie.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Ładuje plik wykonywalny C++ pod kontrolą debugera. Ten przełącznik nie jest dostępna dla języka Visual Basic lub C# plików wykonywalnych. Aby uzyskać więcej informacji, zobacz [automatycznie uruchamia proces w debugerze](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Porównuje dwa pliki. Przyjmuje cztery parametry: *SourceFile*, *TargetFile*, *SourceDisplayName* (opcjonalnie) i *TargetDisplayName* (opcjonalnie).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Otwiera określone rozwiązanie bez ładowania jakiegokolwiek projektu.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Otwiera określone pliki w działającej instancji tej aplikacji. W przypadku Brak uruchomionych wystąpień uruchamia nowe wystąpienie o uproszczonym układzie okna.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID lub/l](lcid-devenv-exe.md)|Ustawia domyślny język dla środowiska IDE. Jeśli określony język nie jest uwzględniony w instalacji programu Visual Studio, to ustawienie jest ignorowane.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Uruchamia programu Visual Studio i loguje wszelką aktywność do pliku dziennika.<br /><br /> `devenv /log mylogfile.xml`|

@@ -8,12 +8,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 89f04f48c7afc031637c1c85e871b5b8e3d325be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802021"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869881"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,6 +26,6 @@ Visual Studio wskazówki dotyczące interfejsu użytkownika są przeznaczone dla
   
 - Te wytyczne programu Visual Studio, które znajdują się wytyczne specyficzne dla platformy, zastępujące ogólne wytyczne Windows wszędzie, gdzie jest to odpowiednie dla naszego środowiska.  
   
-- [Wzorce i wskazówki dotyczące aplikacji Windows Store](https://dev.windows.com/design/interaction-ux) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.  
+- [Kontrolek i wzorce dla aplikacji platformy UWP](/windows/uwp/design/controls-and-patterns) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.  
   
   Te wytyczne podają informacje o tym, co należy zrobić podczas projektowania dla programu Visual Studio, a w niektórych przypadkach informacje na temat jak to zrobić również jest dołączony. Aby uzyskać bardziej szczegółowe informacje o implementacji i Dowiedz się więcej o określonych interfejsów programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązania, które integrują się w programie Visual Studio zintegrowane środowisko projektowe (IDE), należy użyć [Programu visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).

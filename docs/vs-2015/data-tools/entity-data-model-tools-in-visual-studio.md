@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d404eba9a115c7163b16d48cc9276cadca3ccc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f44b44cb0aa2d574d81fd63ef8541c25a4c2453
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786631"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872735"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Narzędzia modelu danych jednostki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia
 |-----------|-----------------|
 |[Program Entity Framework na platformie ADO.NET](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Opisuje sposób używania [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia, które [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] oferuje do tworzenia aplikacji.|
 |[Model danych jednostki](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Zawiera linki i informacje dotyczące pracy z danymi, które jest wykorzystywane przez aplikacje oparte na [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
-|[Wprowadzenie do na pełnej platformie .NET (Konsola, WinForms, WPF, itd.)](https://docs.efproject.net/en/latest/platforms/full-dotnet/getting-started.html)|Zawiera samouczki na temat tworzenia aplikacji klasycznych .NET, korzystających z programu Entity Framework 7.|
+|[Wprowadzenie do na pełnej platformie .NET (Konsola, WinForms, WPF, itd.)](/ef/ef6/get-started)|Zawiera samouczki na temat tworzenia aplikacji klasycznych .NET, korzystających z programu Entity Framework 7.|
 |[Program ASP.NET 5 aplikację do nowej bazy danych](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|W tym artykule opisano sposób tworzenia nowej aplikacji platformy ASP.NET 5 za pomocą programu Entity Framework 7.|
 
 ## <a name="see-also"></a>Zobacz też

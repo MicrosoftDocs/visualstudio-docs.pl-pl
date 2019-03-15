@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841744"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867709"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profil aplikacji programu SharePoint
   Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.
 
  W tym instruktażu pokazano następujące zagadnienia:
 
-- [Dodawanie funkcji i odbiorcę zdarzeń funkcji](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg funkcji i odbiorcę zdarzeń funkcji](#add-a-feature-and-feature-event-receiver).
 
-- [Konfigurowanie i wdrażanie aplikacji programu SharePoint](#BKMK_ConfigSharePointApp).
+- [Konfigurowanie i wdrażanie aplikacji programu SharePoint](#configure-and-deploy-the-sharepoint-application).
 
-- [Uruchamianie aplikacji programu SharePoint](#BKMK_RunSPApp).
+- [Uruchamianie aplikacji programu SharePoint](#run-the-sharepoint-application).
 
-- [Przeglądanie i interpretowanie wyniki profilowania](#BKMK_ViewResults).
+- [Wyświetlanie i interpretacja wyników profilu](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

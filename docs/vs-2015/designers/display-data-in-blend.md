@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ea768a1f93b6d2b806adf85496eb1080cc3e2b1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834394"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869060"
 ---
 # <a name="display-data-in-blend"></a>Wyświetlanie danych w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,8 +56,6 @@ Można wyświetlić przykładowe dane w projektanta, jak dostosować układ stro
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [mieszanie się niektóre wiązania danych przy użyciu programu Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
 ##  <a name="LiveWPF"></a> Pokaż dane na żywo w aplikacji WPF  
- **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Utwórz źródło danych obiektu](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
-  
  **Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tworzenie źródła danych XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ##  <a name="LiveStore"></a> Pokaż dane na żywo w app Store lub numer telefonu  

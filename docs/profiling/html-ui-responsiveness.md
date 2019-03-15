@@ -1,6 +1,6 @@
 ---
 title: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML, w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 310185cec6fec2c72582d59f47f4ae767193d06d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640509"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868159"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.
@@ -340,8 +340,8 @@ if (performance.mark && performance.measure) {
 |Funkcja wywołania zwrotnego asynchronicznych środowiska wykonawczego Windows|Wykonywanie skryptów|Operacji asynchronicznej, która wyzwoliła `Promise` funkcji wywołania zwrotnego wykonał obiektu Windows Runtime.|
 |Zdarzenia środowiska uruchomieniowego Windows|Wykonywanie skryptów|Zdarzenie, które wystąpiły w obiekcie środowiska wykonawczego Windows wyzwolone zarejestrowane odbiornika.|
 |Wyrzucanie elementów bezużytecznych|GC|Tracony jest czas zbieranie pamięci obiektów, które były już używane.|
-|Obliczanie CSS|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, który wymagany dla wszystkich elementów do ponownego obliczenia właściwości stylu.|
-|Układ|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, wymaganego rozmiaru i/lub pozycji wszystkich elementów objętych do ponownego obliczenia.|
+|Obliczanie CSS|Style|Wprowadzono zmiany w modelu DOM, który wymagany dla wszystkich elementów do ponownego obliczenia właściwości stylu.|
+|Układ|Style|Wprowadzono zmiany w modelu DOM, wymaganego rozmiaru i/lub pozycji wszystkich elementów objętych do ponownego obliczenia.|
 |Malowanie|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM i była podejmowana próba ponownego renderowania części strony.|
 |Warstwa renderowania|Renderowanie|Wprowadzono zmiany wizualne niezależnie renderowanych fragmentu modelu DOM (nazywana warstwą), a część strony do renderowania wymaganych zmian.|
 |Dekodowanie obrazu|Dekodowanie obrazu|Obraz został włączony w modelu DOM, a nastąpiła próba rozpakowania i dekodowanie obrazu z oryginalnego formatu do mapy bitowej.|

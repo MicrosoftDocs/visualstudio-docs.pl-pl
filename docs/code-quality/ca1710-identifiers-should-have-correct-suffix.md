@@ -1,6 +1,6 @@
 ---
 title: 'CA1710: Identyfikatory powinny mieć poprawny sufiks'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944458"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868078"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny sufiks
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944458"
 ## <a name="cause"></a>Przyczyna
 
 Identyfikator nie ma poprawny sufiks.
+
+Domyślnie ta reguła przegląda tylko identyfikatory widocznego na zewnątrz, ale jest to [konfigurowalne](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -90,6 +92,16 @@ Tak, aby jako sufiks terminem poprawne, należy zmienić nazwę typu.
 Jest bezpieczne ostrzeżenia używać sufiksem "Collection", jeśli typ jest strukturą danych uogólniony, może zostać rozszerzony lub który będzie przechowywać dowolny zestaw różnych elementów. W tym przypadku nazwę, która zawiera istotne informacje dotyczące implementacji, wydajności i inne cechy charakterystyczne struktury danych może mieć sens (na przykład BinaryTree). W przypadkach, gdzie typ reprezentuje kolekcję określonego typu (na przykład właściwości StringCollection), nie Pomijaj ostrzeżeń dla tej reguły, ponieważ sufiks wskazuje, że typ mogą być wyliczane przy użyciu `foreach` instrukcji.
 
 Dla innych sufiksów nazw głównych nie Pomijaj ostrzeżeń dla tej reguły. Sufiks umożliwia zamierzonego użycia, aby być widoczne na podstawie nazwy typu.
+
+## <a name="configurability"></a>Konfigurowalne
+
+Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (nazewnictwa). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Powiązane reguły
 

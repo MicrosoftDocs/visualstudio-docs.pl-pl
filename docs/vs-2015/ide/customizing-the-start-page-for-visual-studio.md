@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 895129fae06dbed8e6c0d53ac423a15adfd42365
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f043e3cfbc6d81306abfb68276f2e32cce63ed45
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760337"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869034"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Dostosowanie strony początkowej w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Można dostosować stronę początkową dla programu Visual Studio na kilka domy
 
 1.  Zainstaluj niestandardową stronę początkową na jeden z następujących sposobów:
 
-    -   Zainstaluj go z [galerii Visual Studio](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), innej witryny sieci Web lub strony w lokalnym intranecie.
+    -   Zainstaluj go z [Visual Studio Marketplace](https://marketplace.visualstudio.com/), innej witryny sieci Web lub strony w lokalnym intranecie.
 
         > [!NOTE]
         >  Jeśli odpowiada ci strona przeznaczona dla starszej wersji Visual Studio, możesz ją uaktualnić przy użyciu Visual Studio SDK. Zobacz [jak: Uaktualnienie programu Visual Studio niestandardową stronę początkową](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).

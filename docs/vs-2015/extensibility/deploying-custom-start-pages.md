@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32527208fc33f1868ff13e7fda84bc4082126c00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781497"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867115"
 ---
 # <a name="deploying-custom-start-pages"></a>Wdrażanie niestandardowych stron początkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Niestandardowe strony Start można wdrożyć za pomocą VSIX wdrażania lub kopi
   
 - Możesz umieścić plik .vsix, w udziale sieciowym lub w publicznej witrynie sieci Web. Gdy plik zostanie otwarty, strona startowa jest instalowana automatycznie.  
   
-- Możesz przekazać plik .vsix do [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, tak aby użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzeń**.  
+- Możesz przekazać plik .vsix do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, tak aby użytkownicy mogą zainstalować ją za pomocą **Menedżera rozszerzeń**.  
   
   Szablon projektu strona początkowa tworzy kopię domyślnego programu Visual Studio strony początkowej, można modyfikować, kopiować i zachować oryginalne.  
   

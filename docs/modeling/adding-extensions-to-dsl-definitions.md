@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4be7c084bbcd1a73affa3035f1ef116d958c9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909626"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867374"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Dodawanie rozszerzeń do definicji języka DSL
 
@@ -36,4 +36,4 @@ Użytkownik rozszerzonej DSL można tworzyć i zapisywanie modelu, który zawier
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wpisy w blogu pokrewne](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [Wpisy w blogu pokrewne](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

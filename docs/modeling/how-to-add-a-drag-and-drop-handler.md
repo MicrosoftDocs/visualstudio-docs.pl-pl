@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954468"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867751"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 
@@ -70,7 +70,7 @@ W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram 
 
      Aby uzyskać więcej informacji, zobacz [jak: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).
+Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>Definiowanie procedury obsługi gestu za pomocą MEF
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) pozwala zdefiniować składniki, które mo
 
      Można utworzyć więcej niż jeden składnik obsługi gestu, np. gdy ma różne typy obiektów przeciąganego.
 
-3.  Dodaj częściowych definicji klasy dla kształtu docelowego, łącznika lub diagram klas i definiować metody `IsAcceptableDropItem()` i `ProcessDragDropItem()`. Te metody musi rozpoczynać się przez wyodrębnienie przeciąganego elementu z argumentów zdarzenia. Aby uzyskać więcej informacji, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).
+3.  Dodaj częściowych definicji klasy dla kształtu docelowego, łącznika lub diagram klas i definiować metody `IsAcceptableDropItem()` i `ProcessDragDropItem()`. Te metody musi rozpoczynać się przez wyodrębnienie przeciąganego elementu z argumentów zdarzenia. Aby uzyskać więcej informacji, zobacz [jak odwołać się do przeciągniętego elementu](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Sposób dekodowania przeciąganego elementu
 
@@ -132,7 +132,7 @@ Aby odnaleźć formaty, w których jest dostępne informacje o źródle przecią
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#mbr).
+         Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#to-send-an-object-from-a-source-dsl).
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Użyj tej właściwości, jeśli użytkownicy mają przeciągnij elementy z języka DSL lub modelu UML. Element grupy prototypu zawiera jeden lub więcej obiektów, łączy i ich wartości właściwości. Służy również wklejanie i kiedy dodajesz element z przybornika. W prototyp obiektów i ich typy są identyfikowane przez identyfikator Guid. Na przykład ten kod umożliwia użytkownikowi przenoszenie elementów klas z Eksploratora modelu UML lub diagramu UML:
 

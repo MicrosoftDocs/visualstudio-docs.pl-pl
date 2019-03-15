@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753737"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869340"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
   
 - Dodawanie typu niestandardowego projektu  
   
-- Dotrzyj do milionów deweloperów za pośrednictwem galerii programu Visual Studio  
+- Dotrzyj do milionów deweloperów za pośrednictwem witryny Marketplace programu Visual Studio  
   
   Jeśli rozszerzenie programu Visual Studio przed nigdy nie zostały zapisane, znajdziesz więcej informacji o tych funkcjach i na [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -56,7 +56,7 @@ Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj n
  Skorzystaj z zalet [Usługa obrazów i katalog](../extensibility/image-service-and-catalog.md) zarządzanie obrazami doskonałe i obsługę wysokiej rozdzielczości DPI i motywów.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Znajdowanie i instalowanie istniejących rozszerzeń programu Visual Studio  
- Można znaleźć rozszerzenia programu Visual Studio w **rozszerzenia i aktualizacje** dialog w **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Możesz również znaleźć rozszerzenia w [galerii Visual Studio](https://visualstudiogallery.msdn.microsoft.com/)  
+ Można znaleźć rozszerzenia programu Visual Studio w **rozszerzenia i aktualizacje** dialog w **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Możesz również znaleźć rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK  
  Odwołanie interfejsu API zestawu SDK programu Visual Studio na można znaleźć [odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).  

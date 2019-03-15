@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767958"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873861"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
 
  Tworzenie kodowanego testu interfejsu użytkownika jest proste. Możesz po prostu ręcznego wykonywania testu podczas konstruktora testu CUIT działa w tle. Można również określić, jakie wartości powinna zostać wyświetlona w określonych polach. Konstruktor testu CUIT rejestruje swoje działania i generuje kod z nich. Po utworzeniu testu można edytować go w edytorze specjalistyczne, która umożliwia modyfikowanie sekwencję akcji.
 
- Alternatywnie Jeśli przypadek testowy, który został zarejestrowany w programie Microsoft Test Manager, istnieje możliwość wygenerowania kodu przy jego użyciu. Aby uzyskać więcej informacji, zobacz [rekordu i odtwarzać ponownie ręcznych testów](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665).
+ Alternatywnie Jeśli przypadek testowy, który został zarejestrowany w programie Microsoft Test Manager, istnieje możliwość wygenerowania kodu przy jego użyciu. Aby uzyskać więcej informacji, zobacz [rekordu i odtwarzać ponownie ręcznych testów](/azure/devops/test/mtm/record-play-back-manual-tests).
 
  Konstruktor testu CUIT wyspecjalizowanych i Edytor ułatwiają tworzenie i edytowanie kodowanych testów interfejsu użytkownika, nawet wtedy, gdy umiejętności w zakresie głównym jest skoncentrowana testowania zamiast kodowania. Ale jeśli jesteś deweloperem i chcesz rozszerzyć test w sposób bardziej zaawansowane, kod mają strukturę, aby był prosty skopiować i dostosowania. Na przykład Nagraj test do zakupu w witrynie sieci Web, a następnie edytuj wygenerowany kod, aby dodać pętlę, która kupuje się wiele elementów.
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **Edytor kodu:**
 
-    -   Ręcznie Dodaj kod dla formantów w teście, zgodnie z opisem w [akcji kontrolki UI kodowania i właściwości](#VerifyingCodeCUITActionsandProperties) w tym temacie.
+    -   Ręcznie Dodaj kod dla formantów w teście, zgodnie z opisem w [akcji kontrolki UI kodowania i właściwości](#actions) w tym temacie.
 
     -   Po utworzeniu kodowanego testu interfejsu użytkownika, można zmodyfikować, aby była opartych na danych. Aby uzyskać więcej informacji, zobacz [tworzenie ze kodowanego testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md).
 

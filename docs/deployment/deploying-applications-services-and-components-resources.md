@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628991"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870295"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
 
@@ -35,7 +35,7 @@ Z poziomu programu Visual Studio, aplikacje mogą być publikowane bezpośrednio
 - [Usługa Azure App Service](#azure-app-service)
 - [Usługa Azure Virtual Machines](#azure-virtual-machines)
 - [System plików](#file-system)
-- [Niestandardowe obiekty docelowe (usługi IIS, FTP itp.) ](#custom-targets), która obejmuje wszystkie serwery sieci web dowolnego.
+- [Niestandardowe obiekty docelowe (usługi IIS, FTP itp.) ](#custom-targets-iis-ftp), która obejmuje wszystkie serwery sieci web dowolnego.
 
 Na **Publikuj** karty, wybierz istniejący profil publikowania, zaimportuj istniejącą lub Utwórz nową za pomocą opcji opisanych w tym miejscu. Aby zapoznać się z opcji publikowania w środowisku IDE dla różnych typów aplikacji, zobacz [Pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md).
 

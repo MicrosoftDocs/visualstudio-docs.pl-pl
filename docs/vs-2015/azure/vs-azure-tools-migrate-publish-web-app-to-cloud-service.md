@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805542"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868164"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Instrukcje: Migrowanie i publikowanie aplikacji internetowej w usłudze w chmurze platformy Azure z poziomu programu Visual Studio
 
@@ -32,7 +32,7 @@ Aby móc korzystać z usług hostingu i możliwości skalowania platformy Azure,
 1. Program Visual Studio ustawia również **Kopiuj lokalnie** właściwości na wartość true dla wszystkich zestawów, które są wymagane dla MVC 2 MVC 3, MVC 4 i aplikacji biznesowych Silverlight. Właściwość ta dodaje te zestawy do pakietu usług, która jest używana do wdrażania.
 
    > [!Important]
-   > Jeśli masz inne zespoły lub pliki, które są wymagane dla tej aplikacji sieci web, należy ręcznie ustawić właściwości dla tych plików. Aby uzyskać informacje o sposobie ustawiania tych właściwości, zobacz [uwzględnianie plików w pakiecie usługi](#include-files-in-the-service-package).
+   > Jeśli masz inne zespoły lub pliki, które są wymagane dla tej aplikacji sieci web, należy ręcznie ustawić właściwości dla tych plików. Aby uzyskać informacje o sposobie ustawiania tych właściwości, zobacz [uwzględnianie plików w pakiecie usługi](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Błędy i ostrzeżenia
 

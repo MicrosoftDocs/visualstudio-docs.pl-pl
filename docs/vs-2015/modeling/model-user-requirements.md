@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03f1fe9f2cb159e4a6d6db5ded46907b5944471e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758437"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870601"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,8 +89,8 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Bardziej szczegółowe informacje o sposobie tworzenia przypadków użycia|[Diagramy przypadków użycia UML: Wytyczne dotyczące](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Elementy na diagramie przypadków użycia|[Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)|  
+|Bardziej szczegółowe informacje o sposobie tworzenia przypadków użycia|[Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Elementy na diagramie przypadków użycia|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|  
 |Jak tworzyć kod z przypadków użycia|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Definiowanie terminy używane do opisu wymagań  
@@ -134,8 +134,8 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Bardziej szczegółowe informacje dotyczące znajdowania wymagania dotyczące klas|[Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|  
+|Bardziej szczegółowe informacje dotyczące znajdowania wymagania dotyczące klas|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|  
 |Jak tworzyć kod z klasy koncepcyjne|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
  Na diagramie klasy koncepcyjny zwykle nie jest przydatne do umieszczenia strzałki na skojarzenia znacząca. Jest to spowodowane diagramu nie reprezentuje implementację. Asocjacje reprezentują relacje między obiektami w świecie rzeczywistym. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia Ustaw strzałki niekierunkowa jako domyślny: [Przykład: Modelowanie domeny UML funkcji](http://go.microsoft.com/fwlink/?LinkId=213849).  
@@ -157,8 +157,8 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Bardziej szczegółowe informacje dotyczące znajdowania i rejestrowania reguły biznesowe statyczne|[Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)|  
-|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)|  
+|Bardziej szczegółowe informacje dotyczące znajdowania i rejestrowania reguły biznesowe statyczne|[Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)|  
+|Elementy na diagramie klasy koncepcyjne|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|  
 |Jak tworzyć kod, który działa zgodnie z regułami biznesowymi|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Opisujące jakości wymagań  
@@ -182,7 +182,6 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Więcej szczegółowych informacji dotyczących jakości wymagań usługi nagrywania|[Wskazówki dotyczące definiowania jakości wymagań](http://msdn.microsoft.com/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Dołączanie dodatkowych dokumentów z przypadkami użycia|[Łączenie przypadków użycia z dokumentami i diagramami](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Jak tworzyć kod, który działa zgodnie z jakości wymagań|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
@@ -203,8 +202,8 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Więcej informacji na temat sposobu definiowania przepływów pracy firmy|[Diagramy aktywności UML: Wytyczne dotyczące](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Elementy na diagramie aktywności|[Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)|  
+|Więcej informacji na temat sposobu definiowania przepływów pracy firmy|[Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Elementy na diagramie aktywności|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|  
 |Jak tworzyć kodu z diagramów aktywności|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Wyświetlanie interakcje między użytkownikami a systemem  
@@ -220,8 +219,8 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
-|Więcej informacji na temat sposobu definiowania interakcje|[Diagramy sekwencji UML: Wytyczne dotyczące](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Elementy na diagramie sekwencji|[Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)|  
+|Więcej informacji na temat sposobu definiowania interakcje|[Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Elementy na diagramie sekwencji|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|  
 |Jak tworzyć kodu z diagramów sekwencji|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Przy użyciu modelu w celu zmniejszenia niespójności  

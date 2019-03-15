@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a869b2589429d790a2a74b07823c333a5235826f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad0a794126467b82fa27ed865933bdfd7c913398
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756895"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867363"
 ---
 # <a name="deploying-applications-services-and-components"></a>Wdrażanie aplikacji, usług i składników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu inst
   
 |Scenariusz wdrażania|Zawartość pomocnicza|  
 |-------------------------|------------------------|  
-|**Publikowanie w chmurze:** Można udostępnić aplikacji, usług i danych z dowolnego miejsca, używając Visual Studio mają one zostać wdrożone w systemie Microsoft Azure.|[Publikowanie aplikacji na platformie Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx)|  
+|**Publikowanie w chmurze:** Można udostępnić aplikacji, usług i danych z dowolnego miejsca, używając Visual Studio mają one zostać wdrożone w systemie Microsoft Azure.|[Publikowanie aplikacji na platformie Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Publikowanie aplikacji Windows Store:** Można łatwo tworzyć, przesyłania i sprzedawaj swoje aplikacje z Store Windows klientom na całym świecie.|[Pakowanie, wdrażanie i kwerendy aplikacji Windows Store](http://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Windows Phone publikowania aplikacji:** Możesz przesłać nową aplikację lub aktualizację istniejącej aplikacji w celu certyfikacji w Centrum deweloperów Windows Phone.|[Opublikuj aplikację Windows Phone](http://dev.windowsphone.com/publish)|  
 |**Wdrażanie aplikacji ASP.NET lub usługi:** Aplikacje ASP.NET i usługi można wdrożyć na wiele różnych sposobów.|[Wdrażanie aplikacji sieci web ASP.NET i usług](http://www.asp.net/aspnet/overview/deployment)|  

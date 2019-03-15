@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752885"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872832"
 ---
 # <a name="maintaining-security"></a>Obsługiwanie zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ Często mówi się, że ceną bezpieczeństwa jest nieprzerwana czujność. Pomi
  [Bezpieczeństwo, prywatność i konta](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Uzyskaj pomoc dotyczącą bezpieczeństwa, prywatności i kont użytkownika, w tym informacje o wirusach, hasłach, kontroli rodzicielskiej, zaporach sieciowych i szyfrowaniu dysków...  
   
- [Microsoft Security Bulletin Search](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Microsoft Security Bulletin Search](/security-updates/)  
  Na tej stronie można łatwo znaleźć wydane wcześniej biuletyny. Biuletyny bezpieczeństwa, przeznaczone dla specjalistów IT, zawierają szczegółowe informacje dotyczące aktualizacji zabezpieczeń.  
   
- [Przewodnik po zabezpieczeniach programu Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Dostarcza wskazówki konieczne dla specjalistów IT, aby bezpiecznie pracować w środowisku systemu Windows Server 2003 przy jednoczesnym zapewnieniu odpowiedniego dostępu do odpowiedniej zawartości przez odpowiednie osoby.  
+ [Przewodnik po zabezpieczeniach systemu Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) dostarcza wskazówki konieczne dla specjalistów IT bezpiecznie pracować w środowisku systemu Windows Server 2003 przy jednoczesnym zapewnieniu odpowiedniego dostępu do odpowiedniej zawartości przez odpowiednie osoby.  
   
- [Najlepsze rozwiązania dotyczące zabezpieczeń przedsiębiorstwa](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Najlepsze rozwiązania dotyczące zabezpieczeń przedsiębiorstwa](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Zbiór oficjalnych dokumentów, koncentrujących się na różnych aspektach bezpieczeństwa w sieciach firmowych.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) to narzędzie, które umożliwia poszczególnym użytkownikom domowym, użytkownikom korporacyjnym lub administratorom skanowanie jednej lub większej liczby komputerów opartych na systemie Windows pod kątem typowych błędów konfiguracji zabezpieczeń.

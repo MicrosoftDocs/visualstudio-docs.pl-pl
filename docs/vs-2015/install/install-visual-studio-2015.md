@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799180"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873697"
 ---
 # <a name="install-visual-studio-2015"></a>Instalowanie programu Visual Studio 2015
 
@@ -143,7 +143,7 @@ Przed rozpoczęciem omawiania szczegółach poniżej przedstawiono listę nasze 
    Aby uzyskać więcej informacji na temat sposobu zainstalowania lub wdrożenia pomocy w trybie offline, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).
 
 ##  <a name="serviceReleases"></a> Wyszukiwanie poprawek i aktualizacji produktu
- Ponieważ nie wszystkie rozszerzenia są zgodne, Visual Studio nie aktualizuje automatycznie rozszerzeń po uaktualnieniu z poprzednimi wersjami. Należy ponownie zainstalować rozszerzenia z [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.
+ Ponieważ nie wszystkie rozszerzenia są zgodne, Visual Studio nie aktualizuje automatycznie rozszerzeń po uaktualnieniu z poprzednimi wersjami. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub od wydawcy oprogramowania.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Aby automatycznie sprawdzić, czy są dostępne poprawki
 

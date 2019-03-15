@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12f5c759e921ca1659e2821961e6295e096d19b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783548"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868241"
 ---
 # <a name="using-dump-files"></a>Przy użyciu plików zrzutu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Pliki zrzutu ze stertami lub bez nich; tworzenie pliku zrzutu; otwieranie pliku 
   
 - Aby debugować [trybu jądra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) plików zrzutu w programie Visual Studio 2013, Pobierz [Windows 8.1 w wersji dla debugowania narzędzi dla Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Zobacz [debugowanie jądra w programie Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio nie umożliwia debugowania plików zrzutu zapisanych w starszym formacie zrzutu znanym jako [zrzut trybu użytkownika pełnego](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Należy zauważyć, że pełny zrzut trybu użytkownika to nie to samo, co zrzut ze stertą.  
+- Visual Studio nie umożliwia debugowania plików zrzutu zapisanych w starszym formacie zrzutu znanym jako [zrzut trybu użytkownika pełnego](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Należy zauważyć, że pełny zrzut trybu użytkownika to nie to samo, co zrzut ze stertą.  
   
 - Aby debugować z [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) w programie Visual Studio, należy zainstalować debugowania narzędzi dla Windows będącego częścią Windows Driver Kit (WDK). Zobacz [Windows 8.1 (wersja zapoznawcza): Pobierz zestawy, bity i narzędzia](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   

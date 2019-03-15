@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c30ef435cde80053d1f7760a57acac2bca8532
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766274"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867740"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Oznacza to, że nie można uzyskać dostępu do takich elementów, jak nazwy pli
 
 ##  <a name="buildserver"></a> Konfigurowanie maszyn
 
-Aby umożliwić wykonywanie zadań kompilacji na komputerze deweloperskim, należy zainstalować [zestawu Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Aby umożliwić wykonywanie zadań kompilacji na komputerze deweloperskim, należy zainstalować [zestawu Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Jeśli [serwer kompilacji](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) uruchomienia na komputerze, na którym nie zainstalowano programu Visual Studio, skopiuj następujące pliki do komputera kompilacji z komputera deweloperskiego. Zastąp ostatnich numerów wersji "*".
 
@@ -285,4 +285,4 @@ Dobrą wskazówkę znajdziesz w szablonie T4 MSbuild, $(VSToolsPath)\TextTemplat
 
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualisation i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [OLEG Sych: Opis T4:MSBuild integracji](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [OLEG Sych: Opis T4:MSBuild integracji](https://github.com/olegsych/T4Toolbox)

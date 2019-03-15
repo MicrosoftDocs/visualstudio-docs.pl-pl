@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57874493"
+---
 
 1. Zamknij i Otwórz konsolę zarządzania usług IIS, aby wyświetlić zaktualizowaną konfiguracją opcje w interfejsie użytkownika.
 
@@ -34,6 +42,6 @@
    * Jeśli nie można nawiązać połączenia z hostem zdalnym w programie Visual Studio przy użyciu nazwy hosta (w kolejnych krokach), przetestuj adres IP zamiast nazwy hosta.
 
      > [!NOTE]
-     > W przypadku publikowania w programie IIS działającym na Maszynie wirtualnej platformy Azure, możesz otworzyć narzędzia Web Deploy oraz porty usługi IIS w grupie zabezpieczeń sieci. Aby uzyskać szczegółowe informacje, zobacz [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > W przypadku publikowania w programie IIS działającym na Maszynie wirtualnej platformy Azure, możesz otworzyć narzędzia Web Deploy oraz porty usługi IIS w grupie zabezpieczeń sieci. Aby uzyskać szczegółowe informacje, zobacz [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Skopiuj ten plik na komputerze, na którym uruchomiony jest program Visual Studio.

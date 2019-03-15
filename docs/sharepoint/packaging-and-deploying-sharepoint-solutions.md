@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642836"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867567"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Pakowanie i wdrażanie rozwiązań SharePoint
   Zwykle rozwiązania programu SharePoint jest wdrażana na serwerze programu SharePoint przy użyciu pliku pakietu (wsp) rozwiązania. Można użyć programu Visual Studio, aby organizowanie elementów projektu programu SharePoint w funkcji i utworzyć pakiet do wdrożenia funkcji programu SharePoint.
 
  Ten temat zawiera następujące informacje:
 
--   [Tworzenie pakietów i funkcji](#Creating)
+-   [Tworzenie pakietów i funkcji](#create-features-and-packages)
 
--   [Funkcja i pakowanie, narzędzie pomocy technicznej](#Tools)
+-   [Funkcja i Obsługa narzędzia pakowania](#feature-and-packaging-tool-support)
 
--   [Wdrażanie rozwiązań programu SharePoint](#Deploying)
+-   [Wdrażanie rozwiązań SharePoint](#deploy-sharepoint-solutions)
 
--   [Wdrażanie plików w rozwiązaniach programu SharePoint](#DeployingFiles)
+-   [Wdrażanie plików w rozwiązaniach programu SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Tworzenie pakietów i funkcji
  Używasz programu Visual Studio do grupowania powiązanych elementów programu SharePoint do *funkcji*. Na przykład funkcję dla definicji listy kontaktów może obejmować wystąpienie listy i definicji listy. Te dwa elementy można łączyć w pojedynczej funkcji do celów wdrożenia. Aby uzyskać więcej informacji o funkcjach, zobacz [bloków konstrukcyjnych: Funkcje](http://go.microsoft.com/fwlink/?LinkID=169183).

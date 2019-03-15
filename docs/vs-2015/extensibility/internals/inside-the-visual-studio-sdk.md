@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49ec5ab372b5b7117dcab374c3420b1e76112825
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42b5df2f6d3ff0958784463c5c48d457597945a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757100"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873523"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Ogólny widok architektury programu Visual Studio
  Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions.md).  
   
 ## <a name="project-and-item-templates"></a>Szablony projektów i elementów  
- Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.  
+ Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.  
   
  Szablony zawierają struktury projektu i podstawowe pliki, które są wymagane do utworzenia określonego rodzaju aplikacji, kontrolki, biblioteki lub klas. Do tworzenia oprogramowania, podobny do jednego z szablonów, należy utworzyć projekt, który jest oparty na szablonie, a następnie zmodyfikować pliki, w tym projekcie.  
   

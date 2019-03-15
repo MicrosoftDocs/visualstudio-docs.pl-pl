@@ -11,12 +11,12 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27a581175fd0cb63a598006ea2519058bdd8fcbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781518"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867556"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual S
 
 1.  Upewnij się, czy został wcześniej utworzony wersji rozszerzenia i że jest on aktualny.
 
-2.  Otwórz w przeglądarce sieci web [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=194329) witryny sieci Web.
+2.  Otwórz w przeglądarce sieci web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web.
 
 3.  W prawym górnym rogu kliknij **SIGN IN**.
 
@@ -86,7 +86,7 @@ W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual S
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Można usunąć rozszerzenia z galerii Visual Studio
 
-1.  Otwórz [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=194329) witryny sieci Web.
+1.  Otwórz [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web.
 
 2.  W prawym górnym rogu kliknij **Moje Extenions**. Listę TestPublish jest wyświetlany.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5253ae96be2ccb0e7057bab297237bf773ad82b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868368"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -286,7 +286,7 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [galerii Visual Studio](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
+1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
 1. Wdrożenie do witryny sieci Web platformy Azure wymaga [zestawu Azure SDK dla platformy .NET 2.1 — Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Nowsze wersje nie obsługują programu Visual Studio 2010.
 

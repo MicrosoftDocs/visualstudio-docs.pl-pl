@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 8afcf73c827976f01bbc71abf5eaddb4713c47a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764878"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866989"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Instrukcje: Uaktualnienie programu Visual Studio niestandardową stronę początkową
 Można uaktualnić program Visual Studio 2010 lub Visual Studio 2012 niestandardowe początek strony Visual Studio 2015 wykonując kroki wymienione poniżej.
@@ -22,7 +22,7 @@ Można uaktualnić program Visual Studio 2010 lub Visual Studio 2012 niestandard
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Aby uaktualnić niestandardową stronę początkową do programu Visual Studio 2015
 
-1.  Upewnij się, że zainstalowany program Visual Studio 2015 i Visual Studio 2015 SDK. Możesz pobrać VSSDK z [programu Microsoft Visual Studio 2013 SDK](http://go.microsoft.com/?linkid=9863867).
+1.  Upewnij się, że zainstalowany program Visual Studio 2015 i Visual Studio 2015 SDK. Możesz pobrać VSSDK z [programu Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
 2.  Otwórz swój projekt szablonu niestandardowego. Zostanie wyświetlony komunikat informujący, że projekt jest uaktualniany. Kliknij przycisk **OK** i poczekaj na uaktualnienie zakończyć.
 

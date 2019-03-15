@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769078"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868047"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowan
   
 -   Licencjonowaną kopię programu Visual Studio Ultimate, Visual Studio Premium lub Visual Studio Professional  
   
--   Kopia .NET Framework 4.5.1, który można pobrać z [programu Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software) witryny sieci Web.  
+-   Kopia .NET Framework 4.5.1, który można pobrać z [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) witryny sieci Web.  
   
 ##  <a name="InstallingSoftware"></a> Instalowanie oprogramowania na komputerach  
  Najpierw skonfigurować komputer hosta, a następnie skonfigurować komputer kompilacji.  

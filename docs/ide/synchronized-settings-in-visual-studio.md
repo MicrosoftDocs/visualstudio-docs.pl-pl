@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 58c03bc81c9455cf33a439ca6e80fc646212cfd4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221882"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869047"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizuj ustawienia programu Visual Studio na wielu komputerach
 
@@ -41,7 +41,7 @@ Domyślnie zsynchronizowane są następujące ustawienia:
 
    - Wszystkie ustawienia na **środowiska** > **uruchamiania** Strona opcji.
 
-   - Wszystkie ustawienia na **edytora tekstów** stronach opcji.
+   - Wszystkie ustawienia na **edytora tekstów** Opcje strony, na przykład [preferencji stylu kodu](code-styles-and-quick-actions.md).
 
    - Wszystkie ustawienia na **projektanta XAML** stronach opcji.
 

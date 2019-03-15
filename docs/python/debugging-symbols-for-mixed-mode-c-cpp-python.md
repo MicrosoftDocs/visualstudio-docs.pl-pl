@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951348"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869366"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalowanie symboli debugowania dla interpreterów języka Python
 
@@ -54,7 +54,7 @@ Jeśli symbole zostały pobrane oddzielnie, wykonaj poniższe kroki, aby uświad
 
     ![Tryb mieszany debuger symboli opcje](media/mixed-mode-debugging-symbols.png)
 
-1. Podczas sesji debugowania programu Visual Studio może również monit o lokalizację pliku źródłowego interpreter języka Python. Jeśli pobrano pliki źródłowe (z [python.org/downloads](https://www.python.org/downloads), na przykład), a następnie oczywiście można wskazać im także.
+1. Podczas sesji debugowania programu Visual Studio może również monit o lokalizację pliku źródłowego interpreter języka Python. Jeśli pobrano pliki źródłowe (z [python.org/downloads/](https://www.python.org/downloads/), na przykład), a następnie oczywiście można wskazać im także.
 
 > [!Note]
 > Funkcje pamięci podręcznej symboli pokazać w oknie dialogowym są używane do tworzenia lokalnej pamięci podręcznej symboli uzyskanych ze źródła online. Jako symbole znajdujące się lokalnie, te funkcje nie są potrzebne przy użyciu symboli interpreter języka Python. W każdym przypadku dotyczą [Określ symboli i źródłowych plików w debugerze programu Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Aby uzyskać szczegółowe informacje.

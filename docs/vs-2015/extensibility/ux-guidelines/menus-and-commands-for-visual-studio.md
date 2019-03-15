@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bb9a1d6fca5d68b9841d252b62af0db9dedd143
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802101"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867863"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i poleceń dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -231,7 +231,7 @@ ms.locfileid: "54802101"
 
 #### <a name="when-naming-commands"></a>Podczas nazywania polecenia:
 
--   Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [gotowości World dla programu Visual Studio](http://msdn.microsoft.com/1cc35051-8126-441f-bea9-059245a47b1d).
+-   Skonstruuj tekst tak, aby łatwo możliwych do zlokalizowania. Więcej informacji na temat lokalizowanie tekstu, zobacz [najlepszych rozwiązań w lokalizacji](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
 -   Być zwięzłe. Polecenia należy używać co najwyżej trzech słów.
 

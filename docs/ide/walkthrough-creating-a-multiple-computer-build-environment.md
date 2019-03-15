@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: afe5ff877f83d9aae9b1da52b7836fb07afacf44
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324224"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870510"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: tworzenie środowiska kompilowania na wielu komputerach
 
@@ -261,8 +261,8 @@ W tej tabeli opisano obsługiwane argumenty dla *vcvarsall.bat*:
 |Vcvarsall.bat argument|Kompilator|Architektura komputera kompilacji.|Architektura obiektów wyjściowych kompilacji|
 | - |--------------| - | - |
 |x86 (ustawienie domyślne)|Natywne 32-bitowe|x86, x64|x86|
-|x86_amd64|x64 Cross|x86, x64|x64|
-|amd64|x64 Native|x64|x64|
+|x86_amd64|x64 Cross|x86, x64|X64|
+|amd64|x64 Native|X64|X64|
 
 Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)części tego dokumentu.
 
@@ -298,7 +298,7 @@ Program MSBuild wymaga kilku dodatkowych zestawów do zainstalowania GAC na komp
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Aby zainstalować zestawy GAC, zlokalizuj *gacutil.exe* na komputerze kompilacji — zwykle jest w %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 narzędzia\\. Jeśli nie możesz znaleźć tego folderu, powtórz kroki opisane w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika.
+2. Aby zainstalować zestawy GAC, zlokalizuj *gacutil.exe* na komputerze kompilacji — zwykle jest w %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 narzędzia\\. Jeśli nie możesz znaleźć tego folderu, powtórz kroki opisane w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) sekcji tego przewodnika.
 
      Otwórz **polecenia** okno, które ma prawa administracyjne i uruchom następujące polecenie dla każdego pliku:
 
@@ -330,7 +330,7 @@ Można utworzyć środowisko budowania, które mogą być rozmieszczone na róż
 
      Te kroki odnoszą się do katalogu jako Depot %.
 
-2. Skopiuj pliki i katalogi zgodnie z opisem w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika, z wyjątkiem wklej je w obszarze *% Depot %* katalogu, który został właśnie utworzony. Na przykład skopiuj z *%ProgramFiles%\Windows Kits\8.0\bin* do *%Depot%\Windows Kits\8.0\bin*.
+2. Skopiuj pliki i katalogi zgodnie z opisem w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) sekcji tego przewodnika, z wyjątkiem wklej je w obszarze *% Depot %* katalogu, który został właśnie utworzony. Na przykład skopiuj z *%ProgramFiles%\Windows Kits\8.0\bin* do *%Depot%\Windows Kits\8.0\bin*.
 
 3. Kiedy pliki są wklejane w *% Depot %*, wprowadź następujące zmiany:
 

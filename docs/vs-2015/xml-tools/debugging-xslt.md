@@ -9,21 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7775743e69dcd9fa6bca9ce33d6e5c618d1baffd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799351"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873326"
 ---
-# <a name="debugging-xslt"></a>Debugowanie kodu XSLT
+# <a name="debug-xslt"></a>Debugowanie XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Debuger programu Visual Studio umożliwia debugowanie kodu XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej. Debugowanie kodu XSLT jest dostępna w wersji Professional i Visual Studio Team System.  
+Debuger programu Visual Studio umożliwia debugowanie kodu XSLT. Debuger obsługuje ustawianie punktów przerwania, wyświetlanie stanów wykonania XSLT, i tak dalej. Debugowanie kodu XSLT jest niedostępna w wersji programu Visual Studio Professional.  
   
-## <a name="in-this-section"></a>W tej sekcji  
- [Co nowego w debugerze XSLT](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- Opisuje funkcje, które są nowością w tej wersji w debugerze XSLT.  
+## <a name="in-this-section"></a>W tej sekcji
   
  [Instrukcje: Rozpoczynanie debugowania kodu XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
  W tym artykule opisano, jak uruchomić debuger XSLT.  

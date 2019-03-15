@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618149"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870431"
 ---
 # <a name="develop-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
   Kilka szablonów typu projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint oraz elementów witryny. Aby uzyskać listę typów dostępnych projektów, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej znajduje się opis elementów i właściwości projektu programu SharePoint.
 
- Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) i [dodatków programu SharePoint z kompilacji](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) i [dodatków programu SharePoint z kompilacji](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elementy projektu programu SharePoint
  Węzły w projekcie programu SharePoint są znane jako *elementów programu SharePoint*. Elementy programu SharePoint mogą także zawierać jeden lub więcej podplików określanych jako *pliki elementu programu SharePoint*, takich jak [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki konfiguracyjne, formularze .aspx i inne.

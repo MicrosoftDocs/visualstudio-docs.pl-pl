@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223042"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869334"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki start: Personalizowanie programu Visual Studio IDE i edytorem
 
@@ -33,7 +33,7 @@ Motyw domyślny dla interfejsu użytkownika programu Visual Studio jest nazywany
    ![W PORÓWNANIU z motywu ciemny](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Można zainstalować dodatkowe predefiniowane motywy, instalując **Edytor motywów kolorystycznych programu Visual Studio** z [witryny marketplace programu Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** listy rozwijanej.
+> Można zainstalować dodatkowe predefiniowane motywy, instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** listy rozwijanej.
 
 ## <a name="change-text-color"></a>Zmienianie koloru tekstu
 

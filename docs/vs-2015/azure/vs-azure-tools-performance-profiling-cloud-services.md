@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 1b860739b82ddf64b07e1c154170e3992ec9ad81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785135"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869355"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -108,6 +108,6 @@ Sesję profilowania jest tworzony dla każdego wystąpienia roli w usłudze w ch
 4. Aby wyświetlić różne widoki tego raportu, na liście bieżącego widoku, wybierz typ widoku, który chcesz. Aby uzyskać więcej informacji, zobacz [widoków raportów narzędzi profilowania](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Następne kroki
-[Debugowanie usług w chmurze](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Debugowanie usług w chmurze](vs-azure-tools-debugging-cloud-services-overview.md)
 
-[Publikowanie w usłudze w chmurze platformy Azure z programu Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Publikowanie w usłudze w chmurze platformy Azure z programu Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

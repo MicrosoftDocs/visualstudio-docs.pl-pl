@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634828"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869321"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Zapewnianie dostępu do VBA do utworzenia lub otwarcia Visual Studio Tools dla programu Microsoft Office project system
 
@@ -40,8 +40,6 @@ Musisz jawnie włączyć dostęp do programu Visual Basic for Applications (VBA)
  Należy pamiętać, że wyłączenie dostępu do języka Visual Basic dla aplikacji, system projektu na swój własny nie chronią przed wirusami, ale po prostu przestanie wirusów rozprzestrzenianiu się do innych dokumentów, jeśli komputer staje się coraz zainfekowany za pomocą makra Aplikacje antywirusowe. Opcja jest domyślnie wyłączona, jako dodatkową warstwę ochrony dla komputera, ale jej włączeniu nie wprowadzać na komputerze więcej podatny na wirusy Jeśli postępujesz zgodnie z najlepszych rozwiązań dotyczących zabezpieczeń.
 
  Najlepszą ochronę przed wirusami jest uruchomienie pakietu Office w dużej lub bardzo wysoki poziom zabezpieczeń, tylko ufać makra z weryfikacji, znanych źródeł, pakietu Office i na bieżąco, za pomocą poprawek zabezpieczeń i programy antywirusowe.
-
- Aby uzyskać więcej informacji na temat ochrony komputera przed wirusami i innych złośliwego kodu, zobacz [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Można włączyć lub wyłączyć opcję **zaufania dostęp do projektu języka Visual Basic** ręcznie.
 

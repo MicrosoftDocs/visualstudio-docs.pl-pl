@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761550"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869310"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
 Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
@@ -97,7 +97,7 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
   
     Praca, wyświetlania strony początkowej. Należy Zamknij wystąpienie doświadczalne, ponownego skopiowania zmienionych plików, a następnie ponownie otwórz wystąpienie doświadczalne, aby zobaczyć nowe zmiany.  
   
-   Możesz udostępnić niestandardowej strony początkowej, przekazując plik .vsix z katalogu bin\debug [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witrynę sieci Web lub do innej witryny sieci Web lub intranet udostępniania. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  
+   Możesz udostępnić niestandardowej strony początkowej, przekazując plik .vsix z katalogu bin\debug [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witrynę sieci Web lub do innej witryny sieci Web lub intranet udostępniania. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   

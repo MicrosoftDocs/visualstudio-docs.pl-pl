@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875374"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868262"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace
 
@@ -33,15 +33,15 @@ Za pomocą funkcji IntelliTrace, można łatwiej debugować rozwiązania program
 
  W instruktażu przedstawiono następujące zagadnienia:
 
-- [Utwórz odbiorcę funkcji](#BKMK_CreateReceiver)
+- [Utwórz odbiorcę funkcji](#create-a-feature-receiver)
 
-- [Dodaj kod do odbiorcy funkcji](#BKMK_AddCode)
+- [Dodaj kod do odbiorcy funkcji](#add-code-to-the-feature-receiver)
 
-- [Projekt testowy](#BKMK_Test1)
+- [Projekt testowy](#test-the-project)
 
-- [Zbieranie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Zbieranie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Debugowanie i naprawa rozwiązania SharePoint](#BKMK_DebugSolution)
+- [Debugowanie i naprawa rozwiązania SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

@@ -11,17 +11,17 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb702b719679a4aad239376d90fe1ad56b493f5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774713"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872732"
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń programu Visual Studio w projekcie VSIX, a następnie opublikować pakiet na [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web.  
+Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń programu Visual Studio w projekcie VSIX, a następnie opublikować pakiet na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web.  
   
  Wdrożenie VSIX obsługuje pakietów VSPackage, zestawy, składniki MEF, szablony projektów, szablonów elementów, kontrolki przybornika i typy rozszerzeń niestandardowych.  
   

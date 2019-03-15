@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698992"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870523"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu C# w debugerze programu Visual Studio
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)i w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) wyświetlania określonego formatu.
@@ -51,6 +51,14 @@ Użyjemy poniższy przykład kodu:
 Dodaj `my_var1` zmienną **Obejrzyj** okna podczas debugowania, **debugowania** > **Windows** > **Obejrzyj**  >  **Obejrzeć 1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz **wyświetlanie szesnastkowe**. Teraz **Obejrzyj** okno pokazuje wartość 0x0065. Aby wyświetlić tę wartość jako dziesiętna liczba całkowita, a nie jako szesnastkowa liczba całkowita, Dodaj specyfikator formatu dziesiętnego **, d** w **nazwa** kolumn po nazwie zmiennej. **Wartość** zawiera obecnie kolumnę **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Można przeglądać i wybrać z listy specyfikatorów formatu dostępne przez dodanie przecinka (,) do wartości w **Obejrzyj** okna. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Specyfikatory formatu
 W poniższej tabeli opisano C# formatowania specyfikatory dla debugera programu Visual Studio.

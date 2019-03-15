@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774469"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870407"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad dany
 ## <a name="install-and-connect-to-northwind"></a>Instalacja i nawiązywanie Northwind  
  W tym przykładzie użyto programu SQL Server Express LocalDB i przykładowej bazy danych Northwind. Powinien działać z innymi produktami do bazy danych SQL równie dobrze w przypadku dostawcy danych ADO.NET dla danego produktu obsługuje platformy Entity Framework.  
   
-1.  Jeśli nie jest jeszcze zainstalować program SQL Server 2014 LocalDB Express 32-bitowe z [stronę pobierania wersji programu SQL Server](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Jeśli nie jest jeszcze zainstalować program SQL Server 2014 LocalDB Express 32-bitowe z [stronę pobierania wersji programu SQL Server](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
 2.  Instalowanie przykładowej bazy danych Northwind, zgodnie z instrukcjami w tym miejscu: [Instalowanie programu SQL Server przykładowych baz danych](../data-tools/install-sql-server-sample-databases.md).  
   

@@ -1,6 +1,6 @@
 ---
 title: 'CA1063: Poprawnie zaimplementuj interfejs IDisposable'
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945758"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868317"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Poprawnie zaimplementuj interfejs IDisposable
 
@@ -52,7 +52,9 @@ ms.locfileid: "55945758"
 
 Naruszenie któregokolwiek z tych wzorców wyzwala ostrzeżenie CA1063.
 
-Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu należy podać swój własny chronionych void Dispose(bool) metodę wirtualną. Metody Dispose() powinny wywoływać Dipose(true) i finalizatory powinny wywoływać metody Dispose(false). Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, należy zdefiniować Dispose(bool) i wywołać go. Aby uzyskać więcej informacji, zobacz [wyczyścić niezarządzane zasoby (.NET — przewodnik)](/dotnet/standard/garbage-collection/unmanaged) i [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
+Każdy niezapieczętowany typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu należy podać swój własny `protected virtual void Dispose(bool)` metody. `Dispose()` należy wywołać `Dipose(true)`, i powinny wywoływać finalizator `Dispose(false)`. Jeśli utworzysz niezamknięty typ, który deklaruje i implementuje <xref:System.IDisposable> interfejsu, należy zdefiniować `Dispose(bool)` i wywołać go. Aby uzyskać więcej informacji, zobacz [wyczyścić niezarządzane zasoby (.NET — przewodnik)](/dotnet/standard/garbage-collection/unmanaged) i [wzorzec usuwania](/dotnet/standard/design-guidelines/dispose-pattern).
+
+Domyślnie ta reguła przegląda tylko typy widoczne na zewnątrz, ale jest to [konfigurowalne](#configurability).
 
 ## <a name="rule-description"></a>Opis reguły
 
@@ -83,6 +85,16 @@ Sprawdź kod i określić, które z następujących rozwiązań rozwiąże to na
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
+
+## <a name="configurability"></a>Konfigurowalne
+
+Po uruchomieniu tej reguły z [analizatory FxCop analizujące kod](install-fxcop-analyzers.md) (a nie przy użyciu statycznej analizy kodu) części, które można skonfigurować Twojej bazy kodu do uruchomienia tej reguły na, oparte na ich dostępność. Na przykład aby określić, że zasady powinny być uruchamiane wyłącznie w odniesieniu do powierzchni interfejsu API niepublicznych, Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+Można skonfigurować tę opcję tylko reguły dla wszystkich reguł lub dla wszystkich reguł w tej kategorii (projekt). Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
 

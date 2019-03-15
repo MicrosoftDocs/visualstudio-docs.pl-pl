@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318735"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869086"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulator programu Visual Studio dla systemu Android
 
@@ -25,7 +25,7 @@ Visual Studio Emulator for Android to aplikacja komputerowa, która emuluje urz�
 > W większości przypadków emulator systemu Google Android jest zalecane używanie zamiast Visual Studio Emulator dla systemu Android:
 > - Visual Studio Emulator for Android nie jest obsługiwane po programu Visual Studio 2015.
 > - Obrazy emulatora nowszą niż wersja systemu Android 6.0 są niedostępne dla programu Visual Studio Emulator for Android.
-> - Emulator systemu Google Android obsługuje teraz [funkcji Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Emulator systemu Google Android obsługuje teraz [funkcji Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - Visual Studio Tools for Apache Cordova współpracuje z emulatora systemu Google Android. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji Apache Cordova w systemie Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (należy pamiętać, że masz już wyłączenia funkcji Hyper-V, zgodnie z opisem w tym artykule).
 >
 > Aby uzyskać więcej informacji na temat konfigurowania i korzystania z emulatora systemu Google Android, zobacz [Konfiguracja emulatora systemu Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).

@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: acf8ab0a1425e531839cb8de9229a7c6b1ac1b96
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805556"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873350"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można
 |Office 2007 VSTO|Jeśli zaktualizujesz projekt przeznaczony dla pakietu Office 2013 oraz .NET Framework 4, możesz otworzyć ten projekt w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Jeśli projekt jest przeznaczony dla .NET Framework 4, możesz otworzyć go w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1. Wszystkie inne projekty wymagają jednokierunkowego uaktualnienia.|
 |Bogate aplikacje internetowe|Jeśli zaktualizujesz projekt, możesz otworzyć go w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1.|
-|SharePoint 2007|Nie można otworzyć tego projektu w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Jednakże, jeśli ręcznie zaktualizujesz projekt do SharePoint 2010, możesz otworzyć go w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1. Aby uzyskać więcej informacji o sposobie uaktualniania programu SharePoint 2007, zobacz [migracji z programu SharePoint 2007 do SharePoint 2010 dla specjalistów IT](http://go.microsoft.com/fwlink/?LinkId=238224), [migracji 2007 Workflow do programu Visual Studio i SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225), i [SharePoint Enterprise Search Migration Tool dla SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Nie można otworzyć tego projektu w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Jednakże, jeśli ręcznie zaktualizujesz projekt do SharePoint 2010, możesz otworzyć go w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1. Aby uzyskać więcej informacji o sposobie uaktualniania programu SharePoint 2007, zobacz [migracji z programu SharePoint 2007 do SharePoint 2010 dla specjalistów IT](http://go.microsoft.com/fwlink/?LinkId=238224), [migracji 2007 Workflow do programu Visual Studio i SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225), i [SharePoint Enterprise Search Migration Tool dla SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|Możesz otworzyć projekt w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1.|
 |SketchFlow|Jeśli zezwolisz programowi Visual Studio na uaktualnienie projektu do WPF 4.5/Silverlight 5, możesz otworzyć go w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Bazy danych|Możesz otworzyć projekt w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]i Visual Studio 2010 SP1. Jeśli masz plik bazy danych (.mdf), który został utworzony we wcześniejszej wersji programu SQL Server, należy uaktualnić go do [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] przed użyciem w SQL Server Express LocalDB, ale baza danych nie będzie już zgodna z wcześniejszymi wersjami programu SQL Server. Jeśli nie wykonasz uaktualnienia pliku, możesz kontynuować pracę z bazą danych w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] przy instalowaniu i używaniu [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] na tym samym komputerze. Aby uzyskać więcej informacji, zobacz [uaktualnianie plików MDF](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można
 
 - Jeśli spróbujesz otworzyć projekt aplikacji klasycznej w [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], wystąpi błąd i wyświetlony zostanie jeden z następujących komunikatów: "Ta wersja programu Visual Studio obsługuje tylko [!INCLUDE[win81](../includes/win81-md.md)] aplikacje" albo "ten projekt jest niezgodny z bieżącą wersją programu Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] jest ograniczony do tworzenia, testowania i wdrażania programu Windows Store zaprojektowanych dla Windows 8.1. Aby otworzyć projekt aplikacji klasycznej, musisz korzystać z wersji programu Visual Studio obsługującej taki typ projektu.
 
-   Aby uzyskać więcej informacji na temat wersji programu Visual Studio, zobacz [produkty Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)
+   Aby uzyskać więcej informacji na temat wersji programu Visual Studio, zobacz [produkty Microsoft Visual Studio](https://visualstudio.microsoft.com/products/)
 
 - Jeśli spróbujesz otworzyć projekt aplikacji Windows Store App w [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] pulpitu, wystąpienie błędu. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop nie można tworzyć aplikacje Windows Store. Jeśli chcesz tworzyć aplikacje Windows Store, możesz także zainstalować [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Lub, aby rozwijać aplikacje dla wszystkich platform firmy Microsoft i sieci Web, wypróbuj Visual Studio Professional 2013.
 

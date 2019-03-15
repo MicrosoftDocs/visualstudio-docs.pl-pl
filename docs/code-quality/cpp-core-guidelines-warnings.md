@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223497"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872437"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -187,7 +187,7 @@ Narzędzie do sprawdzania analizy kodu natywnego (PREfast) jest zintegrowana śr
 
 Upewnij się, że możesz dodać te właściwości, przed zaimportowaniem pliku Microsoft.Cpp.targets. Można wybrać zestawów reguł określone lub Tworzenie niestandardowego zestawu reguł lub użycie domyślnego zestawu reguł, zawierający inne kontrole PREfast.
 
-Podstawowe sprawdzanie języka C++ można uruchomić tylko na określonych plików, przy użyciu tej samej metody co [opisanej wcześniej](#coreckeck_per_file), ale przy użyciu plików programu MSBuild. Zmienne środowiskowe można ustawić za pomocą `BuildMacro` elementu:
+Podstawowe sprawdzanie języka C++ można uruchomić tylko na określonych plików, przy użyciu tej samej metody co [opisanej wcześniej](#corecheck_per_file), ale przy użyciu plików programu MSBuild. Zmienne środowiskowe można ustawić za pomocą `BuildMacro` elementu:
 
 ```xml
 <ItemGroup>

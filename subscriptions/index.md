@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Witamy w programie Visual Studio subskrypcji
 Searchscope: VS Subscription
 ---
 
@@ -67,7 +67,7 @@ Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualst
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Usługa Azure DevOps Services</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ Do Twojej subskrypcji było jeszcze bardziej użyteczny, możemy dodać i zaktua
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server i licencję CAL serwera TFS</li>
+                            <li>Serwer usługi Azure DevOps i licencja CAL</li>
                         </ul>
                     </div>
                 </div>

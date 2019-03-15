@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614314"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868175"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Instrukcje: Tworzenie projektów Office w Visual Studio
   Możesz użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia dodatku narzędzi VSTO i na poziomie dokumentu dostosowania aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614314"
 
 7. Wybierz **OK** przycisku.
 
-    > [!NOTE]
-    >  Projekty dodatków są zawsze zapisywane podczas ich tworzenia. Nie można ich tworzyć jako projektów tymczasowych. Aby uzyskać więcej informacji na temat projektów tymczasowych, zobacz [projektów tymczasowych](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Projekty dodatków są zawsze zapisywane podczas ich tworzenia. Nie można ich tworzyć jako projektów tymczasowych. Aby uzyskać więcej informacji na temat projektów tymczasowych, zobacz [projektów tymczasowych](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Aby utworzyć projekt dostosowania na poziomie dokumentu
 
 1. Na **pliku** menu, wybierz **New** > **projektu**. Jeśli środowisko IDE jest ustawione na korzystanie z ustawienia programowania Visual Basic, **pliku** menu, wybierz **New** > **projektu**.
 
     **Nowy projekt** pojawi się okno dialogowe.
-
-   > [!NOTE]
-   >  Office Project jest docelowy [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] domyślnie.  Aby uzyskać więcej informacji, zobacz [profil klienta .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. W okienku szablonów, w obszarze węzła dla języka, którego chcesz użyć, rozwiń **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614314"
 4. Na liście szablonów projektu wybierz szablon projektu na poziomie dokumentu. Aby uzyskać listę szablonów dostępnych projektów na poziomie dokumentu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Jeśli szablony projektu nie są widoczne po wybraniu **dodatków pakietu Office** węzła, upewnij się, że **.NET Framework 4** lub nowszej jest zaznaczona w polu kombi na górze okna dialogowego. Szablony projektów pakietu Office są widoczne dla obu wersji systemu .NET Framework.
+   > Jeśli szablony projektu nie są widoczne po wybraniu **dodatków pakietu Office** węzła, upewnij się, że **.NET Framework 4** lub nowszej jest zaznaczone.
 
 5. W **nazwa** wpisz nazwę dla projektu. Domyślnie ta nazwa jest także używana dla dokumentu. Jeśli środowisko IDE jest ustawione do użycia z ustawieniami środowiska deweloperskiego Visual C# lub ogólnych ustawień programistycznych, również wprowadź lokalizację i nazwę rozwiązania.
 
    > [!NOTE]
-   >  Nie możesz używać znaków zastępczych w ścieżce lokalizacji projektu lub w nazwie projektu. Ponadto jeśli planujesz wdrożyć rozwiązanie do użytku w trybie offline, znaki w nazwie projektu muszą być zgodne specyfikacji protokołu HTTP.
+   > Nie możesz używać znaków zastępczych w ścieżce lokalizacji projektu lub w nazwie projektu. Ponadto jeśli planujesz wdrożyć rozwiązanie do użytku w trybie offline, znaki w nazwie projektu muszą być zgodne specyfikacji protokołu HTTP.
 
 6. Wybierz **OK** przycisku.
 

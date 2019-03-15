@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752293"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868130"
 ---
 # <a name="general-environment-options-dialog-box"></a>Ogólne, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarz
  **Motyw kolorów**  
  Wybierz **niebieski**, **światła** lub **ciemny** motyw kolorów IDE.  
   
- Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych Visual Studio 2015** z [galerii Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w polu listy motywu kolorów.  
+ Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych Visual Studio 2015** z [Visual Studio Marketplace](https://marketplace.visualstudio.com). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w polu listy motywu kolorów.  
   
  Zastosuj wielkość liter w wyrazie tytuł na pasku menu  
  Menu znajdują się w **wielkość liter w wyrazie tytuł** domyślnie w programie Visual Studio 2015. Usuń zaznaczenie tej opcji, aby ustawić je **wersalikami**.  

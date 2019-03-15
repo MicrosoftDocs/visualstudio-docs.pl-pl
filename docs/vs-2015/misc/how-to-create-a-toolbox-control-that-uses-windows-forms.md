@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787493"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868180"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
 Szablon kontrolki formularzy Windows Forms przybornika, który znajduje się w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom...  
@@ -87,7 +87,7 @@ Szablon kontrolki formularzy Windows Forms przybornika, który znajduje się w [
   
 2.  Przekaż plik .vsix, z siecią lub do witryny sieci Web.  
   
-     Jeśli załadujesz plik [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć w innym użytkownikom **Menedżera rozszerzeń** w programie Visual Studio można znaleźć formantu i zainstaluj go.  
+     Jeśli załadujesz plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, można użyć w innym użytkownikom **Menedżera rozszerzeń** w programie Visual Studio można znaleźć formantu i zainstaluj go.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)

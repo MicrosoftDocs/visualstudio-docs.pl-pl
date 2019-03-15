@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Pomiaru wydajności aplikacji za pomocą profilowania | Dokumentacja firmy Microsoft
-description: 'Dowiedz się, jak używać programu Visual Studio 2017, profilowanie wydajności aplikacji, usług i narzędzi w wybranym języku.'
+description: 'Dowiedz się, jak użycie programu Visual Studio do profilu wydajności aplikacji, usług i narzędzi w wybranym języku.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

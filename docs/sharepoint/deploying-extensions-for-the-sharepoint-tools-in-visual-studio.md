@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876268"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868062"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
 
 Aby wdrożyć rozszerzenia narzędzi programu SharePoint, należy utworzyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakiet rozszerzenia (VSIX), który zawiera zestaw rozszerzenia i inne pliki, które chcesz dystrybuować z rozszerzeniem. Pakiet VSIX jest skompresowany plik, który postępuje zgodnie ze standardowym otwarte konwencje tworzenia pakietów (OPC). Pakiety VSIX mają *.vsix* rozszerzenia.
 
-Po utworzeniu pakietu VSIX, inni użytkownicy, można uruchomić plik .vsix, aby zainstalować rozszerzenie. Po zainstalowaniu rozszerzenia wszystkie pliki są instalowane w folderze %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Aby wdrożyć rozszerzenie, możesz przekazać pakietu VSIX do [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, lub można dystrybuować pakiet do klientów za pomocą innych środków, takich jak hostowanie pakietu na udział sieciowy lub inna witryna sieci Web.
+Po utworzeniu pakietu VSIX, inni użytkownicy, można uruchomić plik .vsix, aby zainstalować rozszerzenie. Po zainstalowaniu rozszerzenia wszystkie pliki są instalowane w folderze %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions. Aby wdrożyć rozszerzenie, możesz przekazać pakietu VSIX do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, lub można dystrybuować pakiet do klientów za pomocą innych środków, takich jak hostowanie pakietu na udział sieciowy lub innych sieci Web witryna.
 
-Aby uzyskać więcej informacji o tworzeniu pakietów VSIX i wdrożenie ich [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847), zobacz [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+Aby uzyskać więcej informacji o tworzeniu pakietów VSIX i wdrożenie ich [Visual Studio Marketplace](https://marketplace.visualstudio.com/), zobacz [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
  Możesz utworzyć pakiet VSIX przy użyciu **projekt VSIX** szablonu w programie Visual Studio, lub można ręcznie utworzyć pakiet VSIX.
 

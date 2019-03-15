@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798483"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867764"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w p
 >  Począwszy od programu Visual Studio 2015, rozszerzenia w galerii Visual Studio w serwisie zostaną automatycznie zaktualizowane.  Można zmienić tego ustawienia za pomocą **rozszerzenia i aktualizacje** okna dialogowego.  Zobacz sekcję dotyczącą **automatyczne aktualizacje rozszerzeń** poniżej szczegółowe informacje.
 
 ## <a name="finding-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio
- Można zainstalować rozszerzenia z [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) lub [galerii przykładów](http://go.microsoft.com/fwlink/?LinkId=245175) w witrynie internetowej firmy Microsoft. Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — te obejmują szablony projektów, szablony elementów, elementy **przybornika** elementów, składniki zarządzane rozszerzenia Framework (MEF) i pakiety VSPackages. Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **rozszerzenia i aktualizacje** okno dialogowe nie można je włączyć lub wyłączyć. W galerii Visual Studio zawiera rozszerzenia MSI i VSIX.
+ Można zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub [galerii przykładów](https://code.msdn.microsoft.com/vstudio) w witrynie internetowej firmy Microsoft. Rozszerzeniami mogą być formanty, przykłady, szablony, narzędzia lub inne składniki, które dodają nowe funkcjonalności do programu Visual Studio. Program Visual Studio obsługuje rozszerzenia w formacie pakietu VSIX — te obejmują szablony projektów, szablony elementów, elementy **przybornika** elementów, składniki zarządzane rozszerzenia Framework (MEF) i pakiety VSPackages. Można również pobrać i zainstalować rozszerzenia na podstawie tożsamości usługi Zarządzanej, ale **rozszerzenia i aktualizacje** okno dialogowe nie można je włączyć lub wyłączyć. W galerii Visual Studio zawiera rozszerzenia MSI i VSIX.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalowanie lub odinstalowywanie rozszerzenia programu Visual Studio
  W **rozszerzenia i aktualizacje**, znaleźć rozszerzenia, którą chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukiwać w **wyszukiwania galerii programu Visual Studio** okna.) Kliknij przycisk **Pobierz**, następnie **zainstalować**. Aby załadować rozszerzenie, należy ponownie uruchomić program Visual Studio.

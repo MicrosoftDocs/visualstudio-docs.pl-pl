@@ -8,14 +8,14 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 361e382149d15c4721f5707e06ec2e2d8fdbe3ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805079"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867903"
 ---
-# <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
+# <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z formantów HTML5 w kodowanych testach interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10.  
@@ -135,12 +135,12 @@ string ValueAsNumber
 ```  
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **Kontrola ProgreesBar:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwości tej kontrolki.  
+ **ProgressBar — formant:** ProgressBar jest-interactable kontroli. Można dodać asercje `Value` i `Max` właściwości tej kontrolki.  
   
  ![HTML5 ProgressBar, kontrolka](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
+ [Elementy HTML](https://www.w3schools.com/HTML/html_elements.asp)   
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   
  [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Dostosowywanie kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   

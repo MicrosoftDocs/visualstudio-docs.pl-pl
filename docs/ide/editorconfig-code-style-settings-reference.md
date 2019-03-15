@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911874"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868381"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
-W programie Visual Studio 2017 można definiowanie i utrzymywanie styl kodu zgodne w Twojej bazy kodu z użyciem [EditorConfig](../ide/create-portable-custom-editor-options.md) pliku. Polecenia EditorConfig obejmuje kilka podstawowych właściwości formatowania, takie jak `indent_style` i `indent_size`. W programie Visual Studio ustawienia Konwencji kodowania .NET można również skonfigurować przy użyciu pliku EditorConfig. Plików EditorConfig pozwala włączyć lub wyłączyć poszczególne .NET konwencje kodowania oraz konfigurowanie stopień, w którym chcesz Konwencji wymuszane za pośrednictwem jej poziom ważności. Aby dowiedzieć się więcej o tym, jak można użyć polecenia EditorConfig w celu wymuszenia spójności w bazie kodu, przeczytaj [przenośne niestandardowy Edytor opcje tworzenia](../ide/create-portable-custom-editor-options.md).
+Można definiować i obsługa styl kodu zgodne w Twojej bazy kodu z użyciem [EditorConfig](../ide/create-portable-custom-editor-options.md) pliku. Polecenia EditorConfig obejmuje kilka podstawowych właściwości formatowania, takie jak `indent_style` i `indent_size`. W programie Visual Studio można również skonfigurować przy użyciu pliku EditorConfig ustawienia Konwencji kodowania .NET. Można włączyć lub wyłączyć poszczególne .NET konwencje kodowania i skonfigurować stopień, w którym chcesz każdą regułę wymuszane za pośrednictwem jej poziom ważności.
 
-Znajdują się na końcu tego artykułu [przykładowy plik pliku .editorconfig](#example-editorconfig-file).
+> [!TIP]
+> - Podczas definiowania Konwencji kodowania w pliku .editorconfig, którą konfigurujesz, jak chcesz [analizatory stylu kodu](../code-quality/roslyn-analyzers-overview.md) wbudowanych w program Visual Studio do analizowania kodu. W pliku .editorconfig jest plik konfiguracyjny dla tych analizatorów.
+> - Kod preferencji stylu programu Visual Studio można również ustawić [Opcje edytora tekstowego](code-styles-and-quick-actions.md) okna dialogowego. Jednak ustawienia w pliku .editorconfig wziąć pierwszeństwo i preferencje ustawione w **opcje** nie są skojarzone z określonym projektem.
+
+Na końcu tego artykułu zawiera [przykładowy plik pliku .editorconfig](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Kategorie Konwencji
 
@@ -109,7 +113,7 @@ Na poniższej liście przedstawiono dopuszczalne języka ustawienia stylu kodu:
         - csharp\_style\_expression\_bodied_properties
         - csharp\_style\_expression\_bodied_indexers
         - csharp\_style\_expression\_bodied_accessors
-    - [Dopasowanie wzorca](#pattern_matching)
+    - [Dopasowanie do wzorca](#pattern_matching)
         - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check
         - CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check
     - [Śródwierszowe deklaracje zmiennych](#inlined_variable_declarations)

@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db60de80e8fbda9b348cce26594f60ecc6f51e23
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844371"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867867"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,5 +77,6 @@ Upewnij się, że Twoja aplikacja spełnia wymagania użytkowników przy użyciu
 |**Fora**|-   [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Co nowego](../modeling/what-s-new-for-design-in-visual-studio.md)   
- [DevOps i zarządzanie cyklem życia aplikacji](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+
+- [Nowości dotyczące modelowania w programie Visual Studio 2015](../modeling/what-s-new-for-design-in-visual-studio.md)   
+- [DevOps i zarządzanie cyklem życia aplikacji](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

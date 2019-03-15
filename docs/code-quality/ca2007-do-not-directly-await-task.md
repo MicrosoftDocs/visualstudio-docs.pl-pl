@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Nie bezpośrednio oczekiwanie na zadanie'
+title: 'CA2007: Nie oczekuj bezpośrednio zadania'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699696"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869292"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nie bezpośrednio oczekiwanie na zadanie
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Nie oczekuj bezpośrednio zadania
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Konfigurowalne
+
+Możesz określić, czy chcesz wykluczyć metod asynchronicznych, które nie zwrócą wartość od tej reguły. Aby wykluczyć tych rodzajów metod, należy dodać następujące pary klucz wartość do pliku .editorconfig w projekcie:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Można również skonfigurować, której dane wyjściowe rodzaju zestawu, aby zastosować tę regułę do. Na przykład tylko Zastosuj tę regułę do kodu, który tworzy aplikacji konsoli lub dynamicznie łączonych bibliotek (czyli nie aplikacja interfejsu użytkownika), Dodaj następujące pary klucz wartość w pliku .editorconfig w projekcie:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Aby uzyskać więcej informacji, zobacz [analizatory FxCop analizujące kod z skonfigurować](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Zobacz także
 

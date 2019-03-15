@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 522acb66d5a5bd727ab7d8a0a95bc0d3c929d358
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768979"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869484"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
@@ -157,10 +157,10 @@ Na poniższej ilustracji przedstawiono kolejkę, która zawiera dwa komunikaty:
 
 ![Wyświetlanie kolejki](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Aby uzyskać więcej informacji na temat magazynu usług kolejek, zobacz [Rozpoczynanie pracy z usługą Azure Queue storage przy użyciu platformy .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Uzyskać informacji na temat usługi sieci web dla magazynu usług kolejek, zobacz [pojęcia dotyczące usługi kolejki](http://go.microsoft.com/fwlink/?LinkId=264788). Aby uzyskać informacje o sposobie wysyłania komunikatów do kolejki usługi storage przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usługi Storage](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Aby uzyskać więcej informacji na temat magazynu usług kolejek, zobacz [Rozpoczynanie pracy z usługą Azure Queue storage przy użyciu platformy .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Uzyskać informacji na temat usługi sieci web dla magazynu usług kolejek, zobacz [pojęcia dotyczące usługi kolejki](http://go.microsoft.com/fwlink/?LinkId=264788). Aby uzyskać informacje o sposobie wysyłania komunikatów do kolejki usługi storage przy użyciu programu Visual Studio, zobacz [wysyłanie komunikatów do kolejki usługi Storage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Kolejki usługi magazynu różnią się od kolejek usługi Azure Service Bus. Aby uzyskać więcej informacji na temat usługi Service Bus, zobacz [kolejek usługi Service Bus, tematy i subskrypcje](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Kolejki usługi magazynu różnią się od kolejek usługi Azure Service Bus. Aby uzyskać więcej informacji na temat usługi Service Bus, zobacz [kolejek usługi Service Bus, tematy i subskrypcje](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Praca z tabeli zasobów
 
@@ -219,7 +219,7 @@ Można dostosować zestaw jednostek, które pojawiają się w tabeli, jeśli Uż
 1. Po zakończeniu tworzenia zapytania, zamknij okno dialogowe. Tekst w formularzu, zapytania pojawia się w polu tekstowym jako filtr usługi danych WCF.
 1. Aby uruchomić zapytanie, wybierz ikonę zielony trójkąt.
 
-Można także filtrować dane jednostki, która pojawia się w Projektancie tabel po wprowadzeniu ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Tego rodzaju ciągu przypomina klauzulę WHERE języka SQL, ale jest wysyłane do serwera jako żądanie HTTP. Aby uzyskać informacje dotyczące sposobu konstruowania parametry filtru, zobacz [Constructing parametry filtru dla projektanta tabel](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Można także filtrować dane jednostki, która pojawia się w Projektancie tabel po wprowadzeniu ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Tego rodzaju ciągu przypomina klauzulę WHERE języka SQL, ale jest wysyłane do serwera jako żądanie HTTP. Aby uzyskać informacje dotyczące sposobu konstruowania parametry filtru, zobacz [Constructing parametry filtru dla projektanta tabel](/azure/vs-azure-tools-table-designer-construct-filter-strings).
 
 Poniższa ilustracja przedstawia przykład ciągu prawidłowego filtru:
 
@@ -295,4 +295,4 @@ Jeśli usuniesz konto magazynu z poziomu Eksploratora serwera nie ma wpływu na,
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [uzyskiwania dostępu do usług Azure Storage](https://msdn.microsoft.com/library/azure/ee405490.aspx).
+Aby dowiedzieć się więcej o sposobie używania usługi Azure storage, zobacz [wprowadzenie do usługi Azure Storage](/azure/storage/common/storage-introduction).

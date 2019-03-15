@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802317"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867927"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klastrów za pomocą metody pobierania próbek [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] lub [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] Profiling Tools. Aby uzyskać więcej informacji na temat HPC zobacz [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) w witrynie sieci Web firmy Microsoft.  
+Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klastrów za pomocą metody pobierania próbek [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] lub [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] Profiling Tools. Aby uzyskać więcej informacji na temat HPC zobacz [dużych wystąpień obliczeniowych: HPC i usługa Batch](https://azure.microsoft.com/solutions/big-compute/) w witrynie sieci Web firmy Microsoft.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące czynności:  

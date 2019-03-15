@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932017"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867000"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Zestawy reguł na potrzeby analizatorów Roslyn
 
-Zestawy wstępnie zdefiniowanych reguł są dołączane do niektórych pakietów analizatora NuGet. Na przykład zestawy reguł, które są dołączone [pakiet analizatora Microsoft.CodeAnalysis.FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (począwszy od wersji 2.6.2) Włącz lub Wyłącz zasady na podstawie ich kategorii, takie jak zabezpieczenia, nazw, lub wydajność. Korzystanie z zestawów reguł można łatwo szybko wyświetlić tylko te naruszenia reguły, które odnoszą się do określonej kategorii reguły.
+Zestawy wstępnie zdefiniowanych reguł są dołączane do niektórych pakietów analizatora NuGet. Na przykład zestawy reguł, które są dołączone [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pakiet analizatora NuGet (począwszy od wersji 2.6.2) Włącz lub Wyłącz zasady na podstawie ich kategorii, takie jak zabezpieczenia, nazw, lub wydajność. Korzystanie z zestawów reguł można łatwo szybko wyświetlić tylko te naruszenia reguły, które odnoszą się do określonej kategorii reguły.
 
 W przypadku migrowania ze starszego "FxCop" statycznej analizy kodu do analizatorów Roslyn, te zestawy reguł umożliwiają kontynuowanie przy użyciu tej samej konfiguracji reguły, wcześniej używane.
 
@@ -41,7 +41,7 @@ Analizator wstępnie zdefiniowane zestawy reguł obejmują trzy zestawów reguł
 
 Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguły w pakiecie, takich jak wydajność czy zabezpieczeń. Jeden zestaw reguł włącza wszystkie reguły dla kategorii, a jeden zestaw reguł honoruje ważność i włączenie wartości domyślne dla każdej reguły w kategorii.
 
- [Pakiet analizatora Microsoft.CodeAnalysis.FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) obejmuje zestawy reguł w ramach następujących kategorii, aby dopasować zestawów reguł dotyczących starszych "FxCop" statycznej analizy kodu:
+[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pakiet analizatora NuGet obejmuje zestawy reguł w ramach następujących kategorii, które dopasowanie zestawów reguł na dostępne dla starszej wersji "FxCop" statycznej analizy kodu:
 
 - projekt
 - dokumentacja
@@ -54,7 +54,8 @@ Ponadto istnieją dwa zestawy reguł dla każdej kategorii reguły w pakiecie, t
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Analizatory — często zadawane pytania](analyzers-faq.md)
 - [Omówienie analizatory platformie kompilatora .NET](roslyn-analyzers-overview.md)
-- [Instalowanie analizatorów platformie kompilatora .NET](install-roslyn-analyzers.md)
-- [Konfigurowanie i używanie zasady działania analizatora Roslyn](use-roslyn-analyzers.md)
+- [Instalowanie analizatorów](install-roslyn-analyzers.md)
+- [Użyj analizatorów](use-roslyn-analyzers.md)
 - [Używanie zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md)

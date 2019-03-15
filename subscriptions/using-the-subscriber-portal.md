@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Dowiedz się więcej o pełną gamę korzyści dostępne w portalu subskrypcji programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843817"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867594"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Korzystanie z portalu dla subskrybentów — Moje. <span> </span>visualstudio<span></span>.com
 
@@ -31,7 +31,7 @@ Kategoria narzędzia jest, gdzie znajdują się podstawowe narzędzia programowa
 ### <a name="professional-development"></a>Profesjonalne programowanie
 Ta kategoria zawiera takie korzyści, takich jak szkolenia online firmy Microsoft i jej partnerów jak Subskrypcja magazynu MSDN Magazine, wszystkie, aby pomóc Ci rozwiń swoje umiejętności programowania i zaznajomieni z każdym aspektem kodu.
 
-### <a name="support"></a>Obsługa
+### <a name="support"></a>Pomoc techniczna
 Masz pytanie dotyczące platformy Azure?  Uzyskaj pomoc od społeczności platformy Azure za pośrednictwem forów lub skorzystaj z zalet platformy Azure doradztwa technicznego dotyczącego Chat (wersja zapoznawcza).  Usługi Konsjerż — Rozmowa jest dostępna, co pomaga znaleźć dokumentację techniczną oraz informacje o produkcie i pomocy w przypadku pytań związanych z subskrypcją.  Wybierz subskrypcje obejmują także na podstawie zdarzenia pomocy technicznej, aby pomóc w rozwiązywaniu problemów z szerokiego zakresu gamy produktów firmy Microsoft działających w środowiskach tworzenia i testowania.
 
 ## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Pliki do pobrania](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -45,10 +45,10 @@ Odwiedź stronę klucze produktu, aby uzyskać klucze do instalowania i aktywowa
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Subskrypcje](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Na stronie subskrypcje zapewnia możliwości, aby wyświetlić subskrypcje, których właścicielem, przełączyć się między subskrypcjami, odnawiać je i aktywowanie nowych subskrypcji. Można również skojarzyć subskrypcje, których dostęp, używając Account Microsoft z kontem alternatywnych, które jest już skojarzony z istniejącymi zasobami programu Visual Studio IDE, DevOps platformy Azure lub na platformie Azure.
 
-## <a name="support"></a>Obsługa
+## <a name="support"></a>Pomoc techniczna
 
 Oprócz korzyści indywidualnej znalezione w kategorii pomocy technicznej na stronie korzyści na stronie pomocy technicznej zapewnia dostęp do zasobów ułatwiających maksymalne wykorzystanie subskrypcji programu Visual Studio. Dostęp do [zasoby pomocy technicznej](https://visualstudio.microsoft.com/subscriptions/support/) celu rozwiązania problemów technicznych lub pytania dotyczące sprzedaży subskrypcji, kont i rozliczeń.
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Potrzebujesz odnowić subskrypcję chmury programu Visual Studio?  Czy chcesz pobrać najnowsze rozszerzenia dla produktów z rodziny Visual Studio?  Portal Marketplace ułatwiają użytkownikom odnalezienie rozszerzeń, narzędzi i usług, które ulepszyć DevOps platformy Azure, Team Foundation Server i Visual Studio Code. Można nawet zostać wydawcą i opublikować swoje własne rozszerzenia w portalu Marketplace.
+Potrzebujesz odnowić subskrypcję chmury programu Visual Studio?  Czy chcesz pobrać najnowsze rozszerzenia dla produktów z rodziny Visual Studio?  Portal Marketplace ułatwiają użytkownikom odnalezienie rozszerzeń, narzędzi i usług, które ulepszyć DevOps platformy Azure, Azure DevOps Server i Visual Studio Code. Można nawet zostać wydawcą i opublikować swoje własne rozszerzenia w portalu Marketplace.

@@ -1,5 +1,5 @@
 ---
-title: Użyj i skonfiguruj analizatorów Roslyn
+title: Ważność reguły analizator i pomijania
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924607"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873505"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurowanie i używanie zasady działania analizatora Roslyn
+# <a name="use-roslyn-analyzers"></a>Używanie analizatorów Roslyn
 
 Reguły analizatora platformie kompilatora .NET ("Roslyn"), lub *diagnostyki*, analizowanie kodu C# lub Visual Basic podczas wpisywania. Każdy Diagnostyka ma domyślne ważności i pomijania stanu, który może zostać zastąpiona w projekcie. W tym artykule opisano ustawienia reguły ważności, korzystanie z zestawów reguł i pomijanie naruszenia.
 
@@ -91,7 +91,7 @@ Możesz zmienić ważność reguły z **Eksploratora rozwiązań**, lub w ramach
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Aby ustawić regułę pliku zestawu ważność reguły
 
-1. Otwórz plik zestawu reguł, klikając go dwukrotnie **Eksploratora rozwiązań**, wybierając opcję **otwórz aktywny zestaw reguł** w menu kliknij prawym przyciskiem myszy **analizatory** węzła, lub wybierając **Otwórz** na **analizy kodu** strony właściwości dla projektu.
+1. Otwórz [zestaw reguł](analyzer-rule-sets.md) pliku przez dwukrotne kliknięcie go w **Eksploratora rozwiązań**, wybierając opcję **otwórz aktywny zestaw reguł** w menu kliknij prawym przyciskiem myszy **analizatory** węzła, lub wybierając **Otwórz** na **analizy kodu** strony właściwości dla projektu.
 
 1. Przejdź do reguły, rozwijając jego zawierające zestaw.
 

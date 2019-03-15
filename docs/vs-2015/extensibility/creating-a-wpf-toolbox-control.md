@@ -12,12 +12,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f98a58d78adc081ba574cab05edb29e1f42eabb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798329"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868845"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,4 +99,4 @@ Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tw
   
 3.  Przekaż plik .vsix, z siecią lub do witryny sieci Web.  
   
-     Jeśli załadujesz plik [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć w innym użytkownikom **narzędzia / rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu w trybie online i zainstaluj go.
+     Jeśli załadujesz plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, można użyć w innym użytkownikom **narzędzia / rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu w trybie online i zainstaluj go.

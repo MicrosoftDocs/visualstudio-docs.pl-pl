@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653973"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869350"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Instrukcje: Konfigurowanie komputera do opracowywania rozwiązań pakietu Office
   Aby skonfigurować komputerze deweloperskim, można użyć narzędzia Microsoft Office developer tools w programie Visual Studio, wykonaj instrukcje przedstawione w tym temacie. Musi mieć uprawnienia administracyjne na komputerze deweloperskim, aby wykonać te kroki.
@@ -34,7 +34,7 @@ ms.locfileid: "56653973"
 3.  Jeśli masz angielską wersję programu Visual Studio, ale użyj ustawień innej niż angielska dla Windows, możesz zainstalować [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pakiet językowy, aby zobaczyć [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] wiadomości w języku Windows. W innych wersjach językowych programu Visual Studio automatycznie zainstalować pakiet językowy. Pakiet językowy jest dostępny z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Zobacz także
-- [What's new in Office development](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Instrukcje: Zainstalować Visual Studio Tools for Office runtime do dystrybucji](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Instrukcje: Instalowanie podstawowych zestawów międzyoperacyjnych pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md)

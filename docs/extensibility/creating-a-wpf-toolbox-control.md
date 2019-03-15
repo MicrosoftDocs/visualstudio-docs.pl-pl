@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316772"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867984"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
 Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom.
@@ -97,4 +97,4 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
 
 3. Przekaż *.vsix* plików do sieci lub do witryny sieci Web.
 
-    Jeśli załadujesz plik [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, można użyć w innym użytkownikom **narzędzia** > **rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć formantu online i zainstaluj go.
+    Jeśli załadujesz plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) witryny sieci Web, można użyć w innym użytkownikom **narzędzia** > **rozszerzenia i aktualizacje** w programie Visual Studio można znaleźć kontrolowanie w trybie online i zainstaluj go.

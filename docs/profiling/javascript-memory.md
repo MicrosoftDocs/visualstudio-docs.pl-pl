@@ -1,6 +1,6 @@
 ---
 title: Analizowanie użycia pamięci języka JavaScript w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e2d5b1e8682656e7f0c2557b300b5429859014
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613118"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867971"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizowanie użycia pamięci języka JavaScript w aplikacjach platformy UWP
 Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwiają zrozumienia użycia pamięci i znaleźć przecieki pamięci w aplikacjach platformy uniwersalnej systemu Windows stworzona z myślą o Windows przy użyciu języka JavaScript. Obsługiwane aplikacje to aplikacje for Universal Windows Apps.

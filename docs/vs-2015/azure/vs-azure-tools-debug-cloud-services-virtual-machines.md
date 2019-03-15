@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 85b3ab45da52bc246e42927c463f3a1037418480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf4fb43148a4746d821b415391c0b69bdd7028e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783736"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871559"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 
@@ -104,7 +104,7 @@ W systemie Azure SDK 2.3 debugowania zdalnego ma następujące ograniczenia:
 Umożliwia debugowanie programów uruchamianych na maszynach wirtualnych platformy Azure za pomocą Eksploratora serwera w programie Visual Studio. Po włączeniu zdalnego debugowania na maszynie wirtualnej platformy Azure, Azure instaluje rozszerzenie debugowania zdalnego na maszynie wirtualnej. Następnie można dołączyć do procesów na maszynie wirtualnej, a debugowanie w zwykły sposób.
 
 > [!NOTE]
-> Maszyny wirtualne utworzone za pomocą stosu usługi Azure resource manager można zdalnie debugować za pomocą programu Cloud Explorer programu Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [zarządzania zasobami platformy Azure za pomocą Eksploratora chmury](http://go.microsoft.com/fwlink/?LinkId=623031).
+> Maszyny wirtualne utworzone za pomocą stosu usługi Azure resource manager można zdalnie debugować za pomocą programu Cloud Explorer programu Visual Studio 2015. Aby uzyskać więcej informacji, zobacz [zarządzania zasobami platformy Azure za pomocą Eksploratora chmury](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ### <a name="to-debug-an-azure-virtual-machine"></a>Aby debugować maszynie wirtualnej platformy Azure
 

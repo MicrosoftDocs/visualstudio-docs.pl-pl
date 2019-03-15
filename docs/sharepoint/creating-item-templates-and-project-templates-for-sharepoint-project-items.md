@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869904"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868041"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Tworzenie szablonów elementów i szablonów projektu dla elementów projektu programu SharePoint
   Podczas definiowania programu SharePoint projektu elementu Typ niestandardowy, należy ją skojarzyć z szablonem elementu lub szablonu projektu. To skojarzenie umożliwia innym deweloperom używanie elementu projektu w programie Visual Studio. Można również utworzyć Kreatora szablonu.
@@ -72,7 +72,7 @@ ms.locfileid: "54869904"
 
 |Opcjonalny plik|Opis|
 |-------------------|-----------------|
-|SharePoint — Elementy projektu|Może zawierać jeden lub więcej .spdata — pliki, które określają typy elementów projektu programu SharePoint. Każdy *spdata* plik musi mieć zgodną <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji zestawu rozszerzeń, który znajduje się w pakiecie VSIX przy użyciu szablonu projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów elementu](#creatingitemtemplates).<br /><br /> Zazwyczaj projektów programu SharePoint może zawierać co najmniej jeden element projektu programu SharePoint. Jednak nie jest to wymagane.|
+|SharePoint — Elementy projektu|Może zawierać jeden lub więcej .spdata — pliki, które określają typy elementów projektu programu SharePoint. Każdy *spdata* plik musi mieć zgodną <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementacji zestawu rozszerzeń, który znajduje się w pakiecie VSIX przy użyciu szablonu projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów elementów](#createitemtemplates).<br /><br /> Zazwyczaj projektów programu SharePoint może zawierać co najmniej jeden element projektu programu SharePoint. Jednak nie jest to wymagane.|
 |*\<featureName>.feature*|Ten plik definiuje funkcję programu SharePoint, która służy do grupowania kilka elementów projektu dla wdrożenia. Gdy dostosowywanie funkcji w projekcie za pomocą projektanta funkcji programu Visual Studio przechowuje dane dotyczące tej funkcji, w tym pliku. Jeśli chcesz grupować elementy projektu w różnych funkcji, możesz uwzględnić wiele *.feature* plików.<br /><br /> Podczas tworzenia niestandardowego szablonu projektu programu SharePoint, zaleca się zawierały minimalnej wymaganej zawartości w każdym *.feature* plików i konfigurowanie funkcji przy użyciu interfejsów API w <xref:Microsoft.VisualStudio.SharePoint.Features> przestrzeni nazw w rozszerzenie, który jest skojarzony z szablonem projektu. Jeśli to zrobisz, szablon projektu jest zabezpieczony przed przyszłe zmiany w strukturze *.feature* pliku. Aby uzyskać przykład, który demonstruje, jak utworzyć *.feature* zawartość pliku z minimalnym wymaganiem, zobacz [instruktażu: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Jeśli chcesz zmodyfikować *.feature* plików bezpośrednio, możesz sprawdzić zawartość przy użyciu schematu w *% Program Files (11.0\Xml\Schemas\FeatureModelSchema.xsd programu Visual Studio x86)%\Microsoft*.|
 |*\<featureName>.Template.xml*|Ten plik stanowi podstawę dla pliku manifestu funkcji (*Feature.xml*) dla każdej funkcji, który jest generowany na podstawie projektu. Jeśli chcesz określić niektóre zachowania, które nie mają być zmieniane przez użytkowników tego typu projektu, możesz dodać zawartość do tego pliku. Aby uzyskać więcej informacji, zobacz [bloków konstrukcyjnych: Funkcje](http://go.microsoft.com/fwlink/?LinkId=169183) i [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) plików.<br /><br /> Podczas tworzenia pakietu rozwiązań z projektu programu Visual Studio Scala zawartość każdej pary  *\<featureName > .feature* pliku i  *\<featureName >. Template.XML* plik manifestu plików do funkcji. Aby uzyskać więcej informacji o tworzeniu pakietów rozwiązania, zobacz [jak: Tworzenie pakietu rozwiązania SharePoint przy użyciu zadań MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

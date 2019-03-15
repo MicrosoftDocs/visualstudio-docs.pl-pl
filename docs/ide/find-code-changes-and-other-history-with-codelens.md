@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941052"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867858"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
 Funkcja CodeLens umożliwia skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało z kodu&ndash;bez opuszczania edytora. Można znaleźć odwołania do fragmentu kodu, zmiany kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > Funkcja CodeLens jest dostępna tylko w wersjach programu Visual Studio Enterprise i Visual Studio Professional. Nie jest dostępne w programie Visual Studio Community edition.
+
+::: moniker-end
 
 Zobacz, gdzie i w jaki sposób poszczególne fragmenty kodu są używane w rozwiązaniu:
 
@@ -62,7 +66,7 @@ Sprawdź, czy historią swojego kodu, aby dowiedzieć się, co się stało z kod
 
 Potrzebujesz:
 
-- Visual Studio Enterprise or Visual Studio Professional
+- Visual Studio 2019 r (lub programu Visual Studio 2017 Enterprise lub Professional)
 
 - Team Foundation Server 2013 lub nowszy, usługom DevOps platformy Azure lub usługi Git
 

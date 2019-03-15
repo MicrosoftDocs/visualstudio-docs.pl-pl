@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84f2ad17a2dd97683ec01d3d97b5d28ddb883f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790789"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869268"
 ---
 # <a name="how-to-attach-to-script"></a>Instrukcje: Dołączanie do skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ W tym temacie wyjaśniono, jak ręczne dołączenie debugera programu Visual Stu
 > [!NOTE]
 >  Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie okna dialogowego potwierdzenia zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
   
- W niektórych przypadkach podczas debugowania w sesji usług terminalowych (pulpitu zdalnego), lista dostępnych procesów nie będą wyświetlane wszystkie dostępne procesy. Na [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] lub nowsze wersje, jeśli używasz programu Visual Studio jako użytkownik, lista dostępnych procesów będą wyświetlały procesy uruchomione w sesji 0, które jest używane w przypadku usług i innych procesów serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając program Visual Studio przy użyciu konta administratora lub przez uruchomienie programu Visual Studio z konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, wpisując polecenie vsjitdebugger.exe -p ProcessId w wierszu polecenia Windows. Za pomocą tlist.exe, należy określić identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?linkid=1651).  
+ W niektórych przypadkach podczas debugowania w sesji usług terminalowych (pulpitu zdalnego), lista dostępnych procesów nie będą wyświetlane wszystkie dostępne procesy. Na [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] lub nowsze wersje, jeśli używasz programu Visual Studio jako użytkownik, lista dostępnych procesów będą wyświetlały procesy uruchomione w sesji 0, które jest używane w przypadku usług i innych procesów serwera, w tym w3wp.exe. Problem można rozwiązać, uruchamiając program Visual Studio przy użyciu konta administratora lub przez uruchomienie programu Visual Studio z konsoli serwera zamiast sesji usług terminalowych. Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, wpisując polecenie vsjitdebugger.exe -p ProcessId w wierszu polecenia Windows. Za pomocą tlist.exe, należy określić identyfikator procesu. Aby uzyskać tlist.exe, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [Windows Hardware Developer Central](https://developer.microsoft.com/windows/hardware).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie skryptu po stronie klienta](../debugger/client-side-script-debugging.md)   

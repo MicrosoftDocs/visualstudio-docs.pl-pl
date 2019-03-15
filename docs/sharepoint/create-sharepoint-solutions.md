@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599843"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869918"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
   Można tworzyć aplikacje SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Visual Studio promuje szybki rozwój programu SharePoint, udostępniając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, dokańczanie instrukcji i szablony projektów. Program Visual Studio również korzysta z zaawansowanych języków i narzędzi opartych na programie .NET Framework. Można rozwijać projekty programu SharePoint przy użyciu języka Visual Basic lub Visual C# i można opracować aplikację dla projektów programu SharePoint przy użyciu języka JavaScript.
 
- Aby uzyskać informacje na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) i [Tworzenie aplikacji dla programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ Aby uzyskać informacje na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) i [Tworzenie aplikacji dla programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Dowiedz się, jak korzystać z nowego [modelu dodatków programu SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins), aby wzbogacić doświadczenia użytkowników z obsługą programu SharePoint. Dodatki te mają bardzo mały wpływ na zużycie zasobów w porównaniu z rozwiązaniami programu SharePoint i można tworzyć je przy użyciu niemal dowolnych technologii programowania dla sieci web, takich jak HTML5, JavaScript, CSS3 i XML.

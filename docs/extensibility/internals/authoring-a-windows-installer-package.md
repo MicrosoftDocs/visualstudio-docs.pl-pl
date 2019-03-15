@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871607"
 ---
 # <a name="author-a-windows-installer-package"></a>Tworzenie pakietu Instalatora Windows
 Danych zależy od modelu Instalatora Windows. Zamiast pisania procedurach skryptu, aby skopiować pliki i Zapisz wpisy rejestru, na przykład, możesz tworzyć wierszy i kolumn w tabelach bazy danych, które zawierają dane plików i rejestru.
@@ -47,7 +47,7 @@ Szeroką gamą narzędzi innych firm Instalatora zapewniają środowisko projekt
 
    Zestaw narzędzi XML Instalatora Windows (WiX) tworzy pakiety Instalatora Windows przy użyciu plików źródłowych XML. Zestaw narzędzi WiX to projekt typu open source firmy Microsoft. Możesz pobrać kod źródłowy i pliki wykonywalne z [zestaw narzędzi Wix](http://sourceforge.net/projects/wix).
 
-   Komercyjne produktów, które integrują [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], zobacz [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Komercyjne produktów, które integrują [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], zobacz [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Zobacz także
 - [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

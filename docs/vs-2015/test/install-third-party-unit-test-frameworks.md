@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787884"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868714"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych innych firm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury tes
 ### <a name="installing-from-the-web"></a>Instalowanie z sieci web  
  Jeśli znasz framework, który Cię interesuje:  
   
-1. Otwórz [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) w witrynie MSDN.  
+1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com).  
   
 2. Wpisz nazwę platformy w **znaleźć** pole.  
   
@@ -50,7 +50,7 @@ Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury tes
   
    Aby przeglądać listę struktury oraz inne narzędzia do testowania:  
   
-4. Otwórz [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) w witrynie MSDN.  
+4. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com).  
   
 5. Wybierz **Przeglądaj**.  
   

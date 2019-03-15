@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908598"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872099"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
 
@@ -60,9 +60,16 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > `--wait` Parametr jest przeznaczony do użytku w pliku wsadowym. Wykonanie następnego polecenia w pliku wsadowym, nie będzie kontynuowane, dopóki instalacja została ukończona. `%ERRORLEVEL%` Zmienna środowiskowa będzie zawierać wartość zwracaną przez polecenie, zgodnie z opisem w [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+## <a name="using---wait"></a>Przy użyciu opcji--oczekiwania
 
+* Umożliwia w plikach wsadowych lub skrypty poczekaj, aż Instalator programu Visual Studio w taki sposób, aby ukończyć przed wykonaniem polecenia dalej. W przypadku plików usługi batch`%ERRORLEVEL%` zmienna środowiskowa będzie zawierać wartość zwracaną przez polecenie, zgodnie z opisem w [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony. Niektóre narzędzia polecenia wymaga dodatkowych parametrów, aby czekać na zakończenie i w celu uzyskania wartości zwracanej przez Instalator. Oto przykład dodatkowe parametry, które są używane z polecenia skryptu programu PowerShell "Procesu uruchamiania":
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* Pierwszy "--oczekiwania" jest używany przez Instalatora programu Visual Studio, a drugi "-oczekiwania" jest używany przez "Procesu uruchamiania" czekać na zakończenie. "-PassThru" parametr jest używany przez "Procesu uruchamiania" na potrzeby Instalatora kod zakończenia jego zwracanej wartości.
+  
 ## <a name="using---layout"></a>Przy użyciu opcji--układu
 
 * Pobierz podstawowy edytor programu Visual Studio (najbardziej minimalny konfiguracji programu Visual Studio). Tylko obejmują pakiet języka angielskiego:

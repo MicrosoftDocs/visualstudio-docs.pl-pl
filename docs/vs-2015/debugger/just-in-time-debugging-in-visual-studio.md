@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 436cb6cd803eb351113ddfc9ca39934e8557c573
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786132"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868192"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-advanced-users"></a>Jeśli chcesz naprawić lub debugowania błędu (zaawansowanych użytkowników)
 
-- Konieczne jest posiadanie [zainstalowanego programu Visual Studio](https://www.microsoft.com/download/details.aspx?id=48146) Aby wyświetlić szczegółowe informacje o błędzie i spróbuj go debugować. Zobacz [przy użyciu JIT](#BKMK_Using_JIT) szczegółowe informacje. Jeśli nie można naprawić błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby rozwiązać problem.
+- Konieczne jest posiadanie [zainstalowanego programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) Aby wyświetlić szczegółowe informacje o błędzie i spróbuj go debugować. Zobacz [przy użyciu JIT](#BKMK_Using_JIT) szczegółowe informacje. Jeśli nie można naprawić błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby rozwiązać problem.
 
 ##  <a name="BKMK_Enabling"></a> Włącz lub wyłącz Just-In-Time debugowania
  Można włączyć lub wyłączyć debugowanie w programie Visual Studio Just In Time **narzędzia / Opcje** okno dialogowe.
@@ -121,7 +121,7 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
 ## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Użyj debugowania Just In Time
  W tej sekcji przedstawiono, co się stanie, gdy plik wykonywalny zgłasza wyjątek.
 
- Konieczne jest posiadanie programu Visual Studio wykonaj następujące kroki. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatną [Visual Studio 2015 Community Edition](https://www.microsoft.com/download/details.aspx?id=48146).
+ Konieczne jest posiadanie programu Visual Studio wykonaj następujące kroki. Jeśli nie masz programu Visual Studio, możesz pobrać bezpłatną [Visual Studio 2015 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/).
 
  Po zainstalowaniu programu Visual Studio, Just-In-Time debugging jest domyślnie włączona.
 

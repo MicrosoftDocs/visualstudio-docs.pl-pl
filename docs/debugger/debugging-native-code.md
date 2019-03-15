@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685498"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870418"
 ---
 # <a name="debugging-native-code"></a>Debugowanie kodu natywnego
 Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych aplikacji. Technik opisanych w tej sekcji są techniki wysokiego poziomu. Mechanika przy użyciu debugera programu Visual Studio, można zobaczyć [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ Sekcji omówiono niektóre typowe problemy z debugowania i technik dla natywnych
  [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md) zawiera łącza do większych sekcji dokumentacji debugowania. Informacje dotyczące nowości w debugerze, ustawienia i przygotowania, punkty przerwania, obsługa wyjątków, Edytuj i Kontynuuj, debugowanie kodu zarządzanego, debugowanie kodu natywnego, debugowanie SQL i odwołania interfejsu użytkownika.
 
 ## <a name="see-also"></a>Zobacz też
- [Zabezpieczenia debugera](../debugger/debugger-security.md) [debugowania w programie Visual Studio](../debugger/index.md)
+
+- [Zabezpieczenia debugera](../debugger/debugger-security.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.md)
