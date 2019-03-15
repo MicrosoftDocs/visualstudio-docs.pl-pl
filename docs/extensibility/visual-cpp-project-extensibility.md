@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323591"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868146"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -55,7 +55,7 @@ Te pliki definiują niewiele samodzielnie. Zamiast tego zaimportowali innych pli
 
 Wartości tych właściwości, określ nazwy folderów w obszarze `$(VCTargetsPath)` folder główny:
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Typ aplikacji* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Platform* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>platformy</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Typ aplikacji* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Platform* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`&nbsp;&nbsp;&nbsp;&nbsp;platformy\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Używane, gdy `$(ApplicationType)` jest puste, dla projektów pulpitu Windows) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Dodaj nowy zestaw narzędzi platformy
 
@@ -215,7 +215,7 @@ Niezależnie od jego nazwę, która została utworzona przed Visual Studio Obsł
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Zadania programu MSBuild do użycia w zestaw narzędzi elementów docelowych
 
-Aby wywołać narzędzia do kompilowania rzeczywiste, element docelowy musi wywołać zadanie programu MSBuild. Jest to podstawowy [Exec — zadanie](../msbuild/exec-task.md) pozwala na określenie wiersza polecenia do uruchomienia. Narzędzia do kompilacji mają zwykle wiele opcji, w danych wejściowych. i dane wyjściowe do śledzenia kompilacji przyrostowej, więc warto więcej mają specjalne zadania podrzędne dla nich. Na przykład `CL` zadania przekształca właściwości programu MSBuild w przełącznikach CL.exe zapisuje je w pliku odpowiedzi i wywołuje CL.exe. Pozwala również śledzić wszystkie pliki wejściowe i wyjściowe dla później kompilacje przyrostowe. Aby uzyskać więcej informacji, zobacz [kompilacji przyrostowej i Sprawdzanie aktualności](#incremental-build-and-up-to-date-check).
+Aby wywołać narzędzia do kompilowania rzeczywiste, element docelowy musi wywołać zadanie programu MSBuild. Jest to podstawowy [Exec — zadanie](../msbuild/exec-task.md) pozwala na określenie wiersza polecenia do uruchomienia. Narzędzia do kompilacji mają zwykle wiele opcji, w danych wejściowych. i dane wyjściowe do śledzenia kompilacji przyrostowej, więc warto więcej mają specjalne zadania podrzędne dla nich. Na przykład `CL` zadania przekształca właściwości programu MSBuild w przełącznikach CL.exe zapisuje je w pliku odpowiedzi i wywołuje CL.exe. Pozwala również śledzić wszystkie pliki wejściowe i wyjściowe dla później kompilacje przyrostowe. Aby uzyskać więcej informacji, zobacz [kompilacjami przyrostowymi i Sprawdzanie aktualności](#incremental-builds-and-up-to-date-checks).
 
 Microsoft.Cpp.Common.Tasks.dll implementuje te zadania:
 
