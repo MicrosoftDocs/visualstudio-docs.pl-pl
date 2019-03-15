@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567373"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873874"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmienianie projektu przy użyciu wizualizacji i modelowania
 
@@ -71,7 +71,7 @@ Oba zespoły korzystają z diagramów modelowania w programie Visual Studio, aby
 
 Aby uzyskać więcej informacji na temat serwera Team Foundation Server zobacz:
 
-- [Planowanie i śledzenie pracy](#planning-and-tracking-work)
+- [Planowanie i śledzenie pracy](#plan-and-track-work)
 
 - [Testowanie, sprawdzanie poprawności i ewidencjonowanie kodu zaktualizowanego](#TestValidateCheckInCode)
 
