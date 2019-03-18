@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784144"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155946"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,50 +28,7 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
 - Visual Studio Enterprise  
   
-  Zobacz [wideo (1 godz. 16): Testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
-  
-## <a name="in-this-topic"></a>W tym temacie:  
- Oto, co dowiesz się, w tym temacie:  
-  
- [Przykład: Błąd Y2K](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Jak używać podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Dodaj zestawy elementów sztucznych](#AddFakes)  
-  
-- [Użyj ShimsContext](#ShimsContext)  
-  
-- [Pisać testy podkładek](#WriteTests)  
-  
-  [Podkładki dla różnych rodzajów metod](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [Metody statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [Metody wystąpienia (dla wszystkich wystąpień)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [Konstruktory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [Składowe bazowe](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [Konstruktory statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [Finalizatory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [Metody prywatne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [Interfejsy powiązania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [Zmiana domyślnego zachowania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [Uzyskuje dostęp do środowiska wykrywanie](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [Współbieżność](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [Wywoływanie oryginalną metodę z metodą podkładki](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [Ograniczenia](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  Zobacz [wideo (1 godz. 16): Testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Błąd Y2K  
  Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:  
@@ -82,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  

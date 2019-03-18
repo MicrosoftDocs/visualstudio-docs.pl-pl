@@ -2,7 +2,6 @@
 title: IDebugDocumentHost::GetScriptTextAttributes | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092719"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58159000"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Zwraca atrybuty tekst w bloku tekstu dokumentu.  

@@ -2,7 +2,6 @@
 title: Stałe debugera aktywnego skryptu, wyliczenia i struktury | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b287001371b80612a2b09a9672e59aff51309cc9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345438"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153100"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Stałe, wyliczenia i struktury debugera aktywnego skryptu
 Interfejsy funkcji aktywnego debugowania używają następujących stałych, wyliczeń i struktur.  

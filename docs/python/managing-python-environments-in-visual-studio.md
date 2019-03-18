@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 89ea4b46aa2940cfbdb12265c391b632eee7b298
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155724"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58159091"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
 
@@ -106,7 +106,7 @@ Visual Studio udostępnia również polecenie, aby wygenerować *requirements.tx
 
 #### <a name="conda-environments"></a>Środowisk Conda
 
-Środowiska conda jest utworzony przy użyciu `conda` narzędzia lub za pomocą zintegrowanego narzędzia conda zarządzania w programie Visual Studio 2017 w wersji 15.7 lub nowszej. (Wymaga pakietu Anaconda lub Miniconda; Anaconda jest dostępna za pośrednictwem Instalatora programu Visual Studio, zobacz [instalacji — Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
+Środowiska conda jest utworzony przy użyciu `conda` narzędzia lub za pomocą zintegrowanego narzędzia conda zarządzania w programie Visual Studio 2017 w wersji 15.7 lub nowszej. (Wymaga pakietu Anaconda lub Miniconda; Anaconda jest dostępna za pośrednictwem Instalatora programu Visual Studio, zobacz [instalacji — Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017-and-2019).)
 
 1. Wybierz **+ Utwórz środowisko conda** w **środowiska Python** okna, co spowoduje otwarcie **Tworzenie nowego środowiska conda** karty:
 
