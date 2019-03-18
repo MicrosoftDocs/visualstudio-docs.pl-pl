@@ -1,7 +1,7 @@
 ---
 title: Możliwe jest debugowanie kodu języka Python
 description: Program Visual Studio zapewnia zaawansowane funkcje debugowania kodu języka Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954364"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151365"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -40,7 +40,7 @@ Zobacz też następujące artykuły debugowania specyficzne dla scenariusza:
 
 Podstawowy przepływ pracy debugowania obejmuje ustawienia punktów przerwania, krokowe wykonywanie kodu, sprawdzania wartości i obsługa wyjątków, zgodnie z opisem w poniższych sekcjach.
 
-Sesję debugowania, który rozpoczyna się od **debugowania** > **Rozpocznij debugowanie** polecenia **Start** przycisk na pasku narzędzi lub **F5**klucza. Te akcje Uruchom plik startowy projektu (pokazano w pogrubieniem w **Eksploratora rozwiązań**) przy użyciu środowiska active projektu i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone w **projektu Właściwości** (zobacz [opcje debugowania projektu](#project-debugging-options)). **Visual Studio 2017 w wersji 15.6** i później ostrzega, jeśli nie masz plik startowy, ustaw; wcześniejszych wersji może otworzyć okno danych wyjściowych z interpreter języka Python, uruchamianie lub w oknie danych wyjściowych krótko pojawi się i znika. W każdym przypadku, kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik startowy**.
+Sesję debugowania, który rozpoczyna się od **debugowania** > **Rozpocznij debugowanie** polecenia **Start** przycisk na pasku narzędzi lub **F5**klucza. Te akcje Uruchom plik startowy projektu (pokazano w pogrubieniem w **Eksploratora rozwiązań**) przy użyciu środowiska active projektu i argumenty wiersza polecenia lub ścieżki wyszukiwania, które zostały określone w **projektu Właściwości** (zobacz [opcje debugowania projektu](#project-debugging-options)). Programu Visual Studio 2017 w wersji 15.6 i nowszych alertów, jeśli nie masz plik startowy, ustaw; wcześniejszych wersjach może otworzyć okno danych wyjściowych z interpreter języka Python, uruchamianie lub w oknie danych wyjściowych krótko pojawi się i znika. W każdym przypadku, kliknij prawym przyciskiem myszy odpowiedni plik i wybierz **Ustaw jako plik startowy**.
 
 > [!Note]
 > Debuger zawsze zaczyna się od aktywnego środowiska Python dla projektu. Ku zmienianiu środowiska, wprowadzić inną aktywnych jeden, zgodnie z opisem na [wybierz środowisko Python w projekcie](selecting-a-python-environment-for-a-project.md).
@@ -166,7 +166,7 @@ Istnieją dwa okna interaktywnego, można użyć podczas sesji debugowania: stan
 | `$continue`, `$cont`, `$c` | Zostanie uruchomiony program z bieżącej instrukcji. |
 | `$down`, `$d` | Przenieś bieżące ramce jeden poziom w dół w ślad stosu. |
 | `$frame` | | Wyświetla bieżący identyfikator ramki.
-| `$frame` | Identyfikator ramki | Zmienia bieżące ramce do ramki o określonym identyfikatorze.
+| `$frame` | Identyfikator ramki | Przełącza bieżącej ramki do ramki o określonym identyfikatorze.
 | `$load` | Ładuje poleceń z pliku i uruchamia do czasu ukończenia |
 | `$proc` |  | Wyświetla bieżący identyfikator procesu. |
 | `$proc` | Identyfikator procesu | Zmienia bieżący proces na identyfikator określonego procesu. |
@@ -181,10 +181,6 @@ Istnieją dwa okna interaktywnego, można użyć podczas sesji debugowania: stan
 | `$where`, `$w`, `$bt` | Wyświetla listę ramki dla bieżącego wątku. |
 
 Należy pamiętać, że standard debugera, takie jak **procesy**, **wątków**, i **stos wywołań** nie są zsynchronizowane z **debugowanie interakcyjne** okna. Zmiana aktywnego procesu, wątku lub ramki **debugowanie interakcyjne** okno nie ma wpływu na innych oknach debugera. Podobnie, zmianę aktywnego procesu, wątku lub ramki w oknach debugera nie ma wpływu na **debugowanie interakcyjne** okna.
-
-**Debugowanie interakcyjne** okno ma swój własny zestaw opcji, które są dostępne za pośrednictwem **narzędzia** > **opcje**  >   **Narzędzia języka Python** > **debugowanie interakcyjne okno**. W odróżnieniu od zwykłych **Python Interactive** okna, które ma osobnego wystąpienia dla każdego środowiska Python jest tylko jeden **debugowanie interakcyjne** okno i zawsze używa interpretera języka Python dla debugowany proces. Zobacz [opcje - Opcje debugowania](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Okno interaktywne opcje debugowania](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

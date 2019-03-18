@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab31b788e86c7916355c06accc5396bbf18f98d8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643655"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146737"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (pakiet VSPackage kontroli kodu źródłowego)
 Pakietu VSPackage musi być zarejestrowana do udostępnienia go do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jeśli nie zarejestrowano więcej niż jeden formant źródła pakietu VSPackage, użytkownik może wybrać VSPackage, który można załadować w odpowiednim czasie. Zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md) więcej informacji na temat pakietów VSPackage i jak je zarejestrować.

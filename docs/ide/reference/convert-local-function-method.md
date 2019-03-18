@@ -1,23 +1,23 @@
 ---
-title: Konwertuj funkcję lokalnego do metody
+title: Konwertowanie funkcji lokalnej na metodę
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55c82aa896de5c3f3bf18468a1da98253a3def74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325280"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152957"
 ---
-# <a name="convert-local-function-to-method"></a>Konwertuj funkcję lokalnego do metody
+# <a name="convert-local-function-to-method"></a>Konwertowanie funkcji lokalnej na metodę
 
 Ta Refaktoryzacja mają zastosowanie do:
 
@@ -34,7 +34,7 @@ Ta Refaktoryzacja mają zastosowanie do:
 
 1. Umieść kursor w funkcji lokalnej.
 
-    ![Konwertuj funkcję lokalnego do metody](media/convert-local-function-to-method.png)
+    ![Konwertowanie funkcji lokalnej na metodę](media/convert-local-function-to-method.png)
 
 2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
 

@@ -2,7 +2,6 @@
 title: IObjectIdentity::IsEqualObject | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa233e478c83b723b13d19d27dc4b63ee4700bb5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c215a15a1239f07272079783366a1617c3a626e2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095059"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58156037"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
 Określa, jeśli obiekt jest taki sam jak bieżący obiekt.  

@@ -2,7 +2,6 @@
 title: Interfejs IDebugAsyncOperation | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349996"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58150819"
 ---
 # <a name="idebugasyncoperation-interface"></a>Interfejs IDebugAsyncOperation
 Menedżer debugowania procesów implementuje `IDebugAsyncOperation` interfejsu. Aparat języka wywołuje `IDebugApplication::CreateAsyncDebugOperation` metodę, aby uzyskać odwołanie do tego interfejsu. Można użyć aparatu języka `IDebugAsyncOperation` interfejsu, aby zapewnić dostęp asynchronicznych operacji synchronicznych debugowania.  

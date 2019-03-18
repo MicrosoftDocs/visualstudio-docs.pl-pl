@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Często zadawane pytania dotyczące Volume License Service Center administrator migracji
 searchscope: VS Subscription
-ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953953"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145268"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migracja administracji subskrypcji programu Visual Studio
 
@@ -36,7 +36,7 @@ Jest ogromną przejścia i zostanie wykonane w fazy aż do wszystkich klientów 
 Twoja organizacja nie musi zarejestrować się w usłudze Azure AD, ale możesz to zrobić w dowolnym momencie. Jeśli użytkownik chce dołączyć do usługi Azure AD, możesz to zrobić bez ponoszenia kosztów, przy użyciu warstwy bezpłatna usługi Azure AD. Za pomocą usługi Azure Active Directory jest będzie ochronę organizacji dzięki zwiększenia poziomu zabezpieczeń, kontroli i zapewnić długoterminową niezawodność. Jednakże jeśli nie jesteś gotowy do usługi Azure AD, można nadal mogą używać Accounts Microsoft (MSA) na niezmienionych.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Jak sprawdzić, kiedy Moja organizacja zostanie zmigrowana?
-Podstawowy/kontaktowymi zostanie wysłana wiadomość e-mail od nas zapraszając ich, aby ukończyć proces dołączania jeden tydzień, zanim Twoja organizacja zostanie poddana migracji. Menedżerowie subskrypcji również otrzyma wiadomość e-mail z informacją o utworzeniu możemy skontaktować się z podstawowym/kontaktowymi i podano szczegółowe informacje na temat sposobu zapewnienia pomyślnego dołączenia. Dowiedz się, jak [zlokalizować organizacji podstawowy/kontaktowymi](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?).
+Podstawowy/kontaktowymi zostanie wysłana wiadomość e-mail od nas zapraszając ich, aby ukończyć proces dołączania jeden tydzień, zanim Twoja organizacja zostanie poddana migracji. Menedżerowie subskrypcji również otrzyma wiadomość e-mail z informacją o utworzeniu możemy skontaktować się z podstawowym/kontaktowymi i podano szczegółowe informacje na temat sposobu zapewnienia pomyślnego dołączenia. Dowiedz się, jak [zlokalizować organizacji podstawowy/kontaktowymi](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
 
 ### <a name="is-onboarding-different-from-migration"></a>Dołączanie różni się od migracji?
 Tak.  Istnieją dwie fazy, w ramach tego procesu. Konfigurowanie (lub dołączenie) organizacji przed migracją gwarantuje, że jest Brak przerw w pracy jako administrator. Po zmigrowaniu informacji w organizacji, następnie można zarządzać subskrypcjami programu Visual Studio w nowym portalu. Jeśli podstawowy/kontaktowymi powiadomień nie dołączy przed migracją, menedżerowie subskrypcji zostaną zablokowane i nie będzie można zarządzać subskrypcjami do momentu ukończenia procesu dołączania.

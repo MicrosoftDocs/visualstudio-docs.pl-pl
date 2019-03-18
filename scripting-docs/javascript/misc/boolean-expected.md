@@ -2,7 +2,7 @@
 title: Oczekiwano obiektu logicznego | Dokumentacja firmy Microsoft
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
-ms.technology: javascript
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5010
@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82123fe2a38b3de1d6e6c015f47bc5f7edd02791
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840527"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149159"
 ---
 # <a name="boolean-expected"></a>Oczekiwano obiektu logicznego
 Podjęto próbę wywołania **Boolean.prototype.toString** lub **Boolean.prototype.valueOf** metody na obiekt typu innego niż `Boolean`. Obiekt tego typu wywołania musi być typu `Boolean`. Na przykład:

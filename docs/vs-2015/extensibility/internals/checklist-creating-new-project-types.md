@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 863889ef339aef8bb5f14555d83cacaf4d3d7c50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3a6a091e5574721b93cbff23f873fe1a845ef6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757357"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154733"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista kontrolna: Tworzenie nowych typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Należy wykonać kilka zadań, aby utworzyć nowy typ projektu. Poniższa lista 
   
     -   Zarządzanie elementów projektu, w tym dodawanie projektu do **nowy projekt** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md) i [szablonów elementów i projektów rejestrowanie](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-    -   Stan trwały stan projektu i pojedynczych elementów. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md). Aby trwałości informacje o rozwiązaniu, zobacz [rozwiązania](../../extensibility/internals/solutions.md).  
+    -   Stan trwały stan projektu i pojedynczych elementów. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md). Aby trwałości informacje o rozwiązaniu, zobacz [rozwiązania](../../extensibility/internals/solutions-overview.md).  
   
     -   Niezależnie od właściwości konfiguracji do wyświetlenia w oknie dialogowym właściwości. Aby uzyskać więcej informacji, zobacz [rozszerzanie właściwości](../../extensibility/internals/extending-properties.md).  
   

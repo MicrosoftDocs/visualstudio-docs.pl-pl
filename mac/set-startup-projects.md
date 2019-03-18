@@ -5,19 +5,21 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
 ms.topic: conceptual
-ms.prod: visual-studio-mac-dev16
+ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 84581fb3f6e33d22f0895b807998120ea7ca0cb7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56724021"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152918"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Instrukcje: Ustawianie wielu projektów startowych
+
 Program Visual Studio for Mac umożliwia określenie sposobu więcej niż jeden projekt jest uruchomiona podczas debugowania i uruchamiania rozwiązania.
 
 ## <a name="to-set-multiple-startup-projects"></a>Aby ustawić wiele projektów startowych
+
 1.  W **konsoli rozwiązania**, wybierz rozwiązanie (najwyższy węzeł).
 
 2. Wybierz menu kontekstowe (kliknij prawym przyciskiem myszy) węzła rozwiązania, a następnie wybierz **Ustaw projekty startowe...** .

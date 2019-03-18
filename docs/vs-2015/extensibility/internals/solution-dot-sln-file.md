@@ -12,12 +12,12 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4006b27f564f1cfd547eda785da0b58b40bf7c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9e045ab707620fe985e34174238081f6168e5af
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787594"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58158484"
 ---
 # <a name="solution-sln-file"></a>Plik rozwiązania (Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,4 +103,4 @@ EndGlobal
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [Opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
- [Rozwiązania](../../extensibility/internals/solutions.md)
+ [Rozwiązania](../../extensibility/internals/solutions-overview.md)

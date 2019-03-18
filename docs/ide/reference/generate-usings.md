@@ -1,20 +1,20 @@
 ---
-title: Generowanie deklaracje Using
+title: Generowanie deklaracji using
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9fd34b40bdd1167eca7fa1dff8ab60bcc787b7c7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325295"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160644"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
 
@@ -37,7 +37,7 @@ Dotyczy to generowanie kodu:
 
 2. Naciśnij klawisz **Ctrl**+**.** Aby otworzyć **szybkie akcje i Refaktoryzacje** menu. 
 
-    ![Generowanie deklaracje Using](media/generate-using-codefix.png)
+    ![Generowanie deklaracji using](media/generate-using-codefix.png)
 
 3. Wybierz **przy użyciu \<użytkownikowi\>;** można dodać brakujące odwołania.
 

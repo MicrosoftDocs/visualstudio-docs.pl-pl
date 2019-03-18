@@ -2,7 +2,6 @@
 title: IRemoteDebugApplication110::SetDebuggerOptions | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 511d1f8b25aee4637455e3a5b8946f81f7410d65
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346777"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58150832"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
 Wywołuje się, aby zaktualizować opcje debugera. Ta metoda powinna być wywoływana po [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) metoda automatycznie powraca do domyślnych opcji. Domyślne opcje 0 (SDO_NONE).  

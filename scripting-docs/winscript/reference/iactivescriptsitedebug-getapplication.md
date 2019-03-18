@@ -2,7 +2,6 @@
 title: IActiveScriptSiteDebug::GetApplication | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a485a7195f64754bc28d0c1905d30d6f22747c31
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 75560ead40809c77e4768f8318d754a512e5d7ba
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090119"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58147491"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
 Zwraca obiekt aplikacji debugowania, które są skojarzone z tą lokacją skryptu.  
@@ -52,5 +51,5 @@ HRESULT GetApplication(
  `GetApplication` Metoda oferuje hosta inteligentnego zdefiniować obiekt aplikacji, do której należy każdego skryptu. Aparaty skryptów powinien próbować wywołać tę metodę w celu ich zawierającego aplikacji i zastosuje poważniejsze `IProcessDebugManager::GetDefaultApplication` w przypadku niepowodzenia.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)   
+ [IActiveScriptSiteDebug Interface](../../winscript/reference/iactivescriptsitedebug-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

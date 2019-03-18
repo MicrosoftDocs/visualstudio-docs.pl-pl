@@ -2,7 +2,6 @@
 title: IDebugExpression::Start | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e80f3fb8087d39c76f59cf5c6bc8719c1cbaf5e4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093343"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145047"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
 Rozpoczyna się obliczania wyrażenia.  

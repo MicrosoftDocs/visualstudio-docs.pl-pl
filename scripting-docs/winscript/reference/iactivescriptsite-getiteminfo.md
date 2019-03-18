@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSite::GetItemInfo | Dokumentacja firmy Microsoft
+title: IActiveScriptSite::GetItemInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095891"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148688"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 Umożliwia silnik wykonywania skryptów uzyskać informacje na temat elementu, który został dodany z [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) metody.  

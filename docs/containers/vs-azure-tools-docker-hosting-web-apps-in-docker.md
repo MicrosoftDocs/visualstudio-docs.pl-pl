@@ -1,24 +1,22 @@
 ---
 title: Wdrażanie kontenera platformy Docker programu ASP.NET do usługi Azure Container Registry (ACR) | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak wdrożyć aplikację sieci web platformy ASP.NET Core do rejestru kontenerów za pomocą programu Visual Studio Tools for Docker
+ms.prod: ''
 services: azure-container-service
-documentationcenter: .net
-author: mlearned
+author: ghogen
 manager: jillfra
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
-ms.service: azure-container-service
 ms.devlang: dotnet
 ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: NA
-ms.date: 05/21/2018
-ms.author: mlearned
-ms.openlocfilehash: 8ba7244ffc482c33409bc280617b60ce1e85b504
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.technology: vs-azure
+ms.date: 03/14/2019
+ms.author: ghogen
+ms.openlocfilehash: 346c26a4abe9fd3a28f7d9f711971386fbf1d815
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701315"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149255"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 
@@ -33,15 +31,25 @@ Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpł
 
 Do ukończenia tego samouczka:
 
-* Zainstaluj najnowszą wersję [programu Visual Studio 2017](https://azure.microsoft.com/downloads/) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+::: moniker range="vs-2017"
+* Zainstaluj najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+::: moniker-end
+::: moniker range=">=vs-2019"
+* Zainstaluj najnowszą wersję [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+::: moniker-end
 * Zainstaluj [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
-## <a name="1-create-an-aspnet-core-web-app"></a>1. Tworzenie aplikacji internetowej platformy ASP.NET Core
+## <a name="create-an-aspnet-core-web-app"></a>Tworzenie aplikacji internetowej platformy ASP.NET Core
 Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy ASP.NET Core, który będzie używany w ramach tego samouczka.
 
+::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
+::: moniker-end
+::: moniker range=">=vs-2019"
+[!INCLUDE [create-aspnet5-app](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
+::: moniker-end
 
-## <a name="2-publish-your-container-to-azure-container-registry"></a>2. Opublikowany kontener w usłudze Azure Container Registry
+## <a name="publish-your-container-to-azure-container-registry"></a>Opublikowany kontener w usłudze Azure Container Registry
 1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **Publikuj**.
 2. W oknie dialogowym docelowej publikowania wybierz **Container Registry** kartę.
 3. Wybierz **nowy rejestr Azure Container Registry** i kliknij przycisk **Publikuj**.

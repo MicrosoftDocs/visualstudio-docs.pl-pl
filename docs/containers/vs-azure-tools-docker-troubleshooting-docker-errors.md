@@ -1,23 +1,22 @@
 ---
 title: Rozwiązywanie problemów z błędami klienta platformy Docker na Windows | Dokumentacja firmy Microsoft
 description: Rozwiązywanie problemów napotykanych podczas korzystania z programu Visual Studio do tworzenia i wdrażania aplikacji sieci web do platformy Docker na Windows za pomocą programu Visual Studio 2017.
-services: azure-container-service
+ms.technology: vs-azure
 author: devinb
 manager: jillfra
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
-ms.service: multiple
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: a96f9792fa4922a626d4740625d361751242e39b
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 396ad65835375c9c85bc3d67ca685f6270bbb7d3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701319"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160425"
 ---
 # <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio 2017 przy użyciu platformy Docker
 

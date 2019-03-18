@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptParseProcedureOld::ParseProcedureText | Dokumentacja firmy Microsoft
+title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec100214a43be6e1faf5e229ce6452432065002b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8e521bbdcd8d7397c1c2dfb377fd9b41811499f5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093395"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146230"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
 Analizuje procedury danego kodu i dodaje procedurę anonimowych do przestrzeni nazw.  
@@ -97,5 +96,5 @@ HRESULT ParseProcedureText(
  Ten interfejs jest przestarzała zastąpiona ceną `IActiveScriptParseProcedure` interfejsu. `IActiveScriptParseProcedure::ParseProcedureText` Metoda jest podobna do tej metody, ale pozwala na podanie nazwy procedury. W każdych okolicznościach `IActiveScriptParseProcedure::ParseProcedureText` powinny być używane.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptParseProcedureOld](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
+ [IActiveScriptParseProcedureOld Interface](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

@@ -1,7 +1,7 @@
 ---
 title: Edytowanie kodu w języku Python
 description: Dla języka Python Visual Studio zapewnia zaawansowane funkcji IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155399"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155527"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -109,10 +109,20 @@ Za pomocą **Uruchom narzędzie Mypy** polecenie na ten kod generuje następują
 
 ![Przykład wyniku sprawdzania poprawności wskazówek dotyczących typów mypy](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> W przypadku wersji środowiska Python wcześniejsze niż 3.5, Visual Studio wyświetla również wskazówek dotyczących typów, które należy podać za pośrednictwem *namiastki pliki* (*.pyi*). Można użyć pliki szczątkowe, zawsze wtedy, gdy nie chcesz uwzględnić wskazówek dotyczących typów bezpośrednio w kodzie lub w przypadku, gdy chcesz utworzyć wskazówek dotyczących typów, biblioteki, która nie korzysta z ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia wycinków dla modułów języka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie Wiki dotyczącej projektu mypy.
+> W przypadku wersji środowiska Python wcześniejsze niż 3.5, Visual Studio wyświetla również wskazówek dotyczących typów, które należy podać za pośrednictwem Typeshed *namiastki pliki* (*.pyi*). Można użyć pliki szczątkowe, zawsze wtedy, gdy nie chcesz uwzględnić wskazówek dotyczących typów bezpośrednio w kodzie lub w przypadku, gdy chcesz utworzyć wskazówek dotyczących typów, biblioteki, która nie korzysta z ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia wycinków dla modułów języka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie Wiki dotyczącej projektu mypy.
 >
 > Obecnie program Visual Studio nie obsługuje wskazówek dotyczących typów w komentarzach.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> W przypadku wersji środowiska Python wcześniejsze niż 3.5, Visual Studio wyświetla również wskazówek dotyczących typów, które należy podać za pośrednictwem Typeshed *namiastki pliki* (*.pyi*). Można użyć pliki szczątkowe, zawsze wtedy, gdy nie chcesz uwzględnić wskazówek dotyczących typów bezpośrednio w kodzie lub w przypadku, gdy chcesz utworzyć wskazówek dotyczących typów, biblioteki, która nie korzysta z ich bezpośrednio. Aby uzyskać więcej informacji, zobacz [tworzenia wycinków dla modułów języka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) w witrynie Wiki dotyczącej projektu mypy.
+>
+> Program Visual Studio obejmuje zestaw pakietów Typeshed plików dla języka Python 2 i 3, więc konieczność pobrania dodatkowych plików nie są niezbędne. Jednak jeśli chcesz użyć innego zestawu plików, należy określić ścieżkę w **narzędzia** > **opcje** > **Python**  >  **Language Server** opcje. Zobacz [opcje - Language Server](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Obecnie program Visual Studio nie obsługuje wskazówek dotyczących typów w komentarzach.
+::: moniker-end
 
 ### <a name="signature-help"></a>Pomocy dotyczącej sygnatur
 

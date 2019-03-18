@@ -1,7 +1,7 @@
 ---
 title: Opcje i ustawienia dla języka Python
 description: Odwołanie dla różnych ustawień w programie Visual Studio, które odnoszą się do kodu w języku Python i projektów.
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,18 +17,23 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702021"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151170"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
-Aby wyświetlić opcje języka Python, użyj **narzędzia** > **opcje** menu poleceń, upewnij się, że **Pokaż wszystkie ustawienia** jest zaznaczone, a następnie przejdź do  **Narzędzia języka Python**:
+Aby wyświetlić opcje języka Python, użyj **narzędzia** > **opcje** menu poleceń, upewnij się, że **Pokaż wszystkie ustawienia** jest zaznaczone, a następnie przejdź do  **Python**:
 
+::: moniker range="vs-2017"
 ![Okno dialogowe z opcjami języka Python, na karcie Ogólne](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Okno dialogowe z opcjami języka Python, na karcie Ogólne](media/options-general-2019.png)
+::: moniker-end
 
 Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edytora tekstów** > **Python** > **zaawansowane** kartę, a następnie na  **Środowisko** > **czcionki i kolory** kartę w ramach **edytora tekstów** grupy.
 
@@ -43,16 +48,36 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 | --- | --- | --- |
 | **Pokaż okno danych wyjściowych, podczas tworzenia środowisk wirtualnych**| On | Usuń zaznaczenie, aby zapobiec **dane wyjściowe** znajdujących się w oknie. |
 | **Pokaż okno dane wyjściowe podczas instalowania lub usuwania pakietów** | On | Usuń zaznaczenie, aby zapobiec **dane wyjściowe** znajdujących się w oknie. |
-| **Zawsze uruchamiaj pip jako administrator** | Off | Zawsze skutkująca podniesieniem uprawnień `pip install` operacje dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak *c:\Program Files*. W wierszu polecenia, że użytkownik może zawsze podniesienie poziomu `pip install` danego tylko jednego środowiska. Zobacz [karcie pakiety](python-environments-window-tab-reference.md#packages-tab). |
+| **Pokaż pasek powiadomień, aby utworzyć środowiska** | On | *Visual Studio 2019 r tylko.* Gdy ta opcja jest ustawiona, a użytkownik otworzy projekt, który zawiera *requirements.txt* lub *environment.yml* plików, programu Visual Studio Wyświetla pasek informacji z sugestiami, aby utworzyć wirtualny środowiska lub środowiska conda, odpowiednio, zamiast korzystać z globalnej środowiska domyślnego. |
+| **Pokaż pasek powiadomień, aby zainstalować pakiety** | On | *Visual Studio 2019 r tylko.* Gdy ta opcja jest ustawiona, a użytkownik otworzy projekt, który zawiera *requirements.txt* plików (i nie używa globalnej środowiska domyślnego) programu Visual Studio porównuje tych wymagań przy użyciu pakietów zainstalowanych w bieżącym środowisko. Jeśli brakuje dowolnej pakietów programu Visual Studio wyświetla wiersz, aby zainstalować te zależności. |
+| **Zawsze uruchamiaj Menedżery pakietów, jako administrator** | Off | Zawsze skutkująca podniesieniem uprawnień `pip install` i podobnych operacji Menedżera pakietów dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak *c:\Program Files*. W tym wierszu polecenia można zawsze podniesienie poziomu polecenia instalacji dla tego tylko jednego środowiska. Zobacz [karcie pakiety](python-environments-window-tab-reference.md#packages-tab). |
 | **Automatyczne generowanie bazy danych uzupełniania przy pierwszym użyciu** | On | *Podczas korzystania z bazy danych IntelliSense, stosuje się do programu Visual Studio 2017 w wersji 15.5 i starszych i nowszych wersjach.* Priorytet uzupełniania bazy danych biblioteki podczas pisania kodu, który korzysta z niego. Aby uzyskać więcej informacji, zobacz [karta Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignoruj zmienne PYTHONPATH całego systemu** | On | PYTHONPATH jest ignorowana domyślnie, ponieważ program Visual Studio zapewnia bardziej bezpośrednie oznacza, że do określania ścieżek wyszukiwania w środowiskach i projektów. Zobacz [ścieżki wyszukiwania](search-paths.md) Aby uzyskać szczegółowe informacje. |
 | **Aktualizowanie ścieżki wyszukiwania podczas dodawania plików połączonych** | On | Gdy ustawiona, dodając [połączonego pliku](managing-python-projects-in-visual-studio.md#linked-files) z projektem aktualizacje [ścieżki wyszukiwania](search-paths.md) tak, aby funkcja IntelliSense może zawierać zawartość folderu plików połączonych ze swojej bazy danych uzupełniania. Usuń zaznaczenie tej opcji, aby wykluczyć takiej zawartości z bazy danych uzupełniania. |
 | **Ostrzeżenie podczas importowania, że nie można odnaleźć modułu** | On | Wyczyść tę opcję, aby pominąć ostrzeżenia, gdy wiadomo, zaimportowanego modułu nie jest obecnie dostępna, ale w przeciwnym razie nie ma wpływu na działanie kodu. |
 | **Wcięcie niespójne raport jako** | **Ostrzeżenia** | Ponieważ interpreter języka Python silnie zależy właściwe wcięcia, aby określić zakres, Visual Studio domyślnie generuje ostrzeżenia po wykryciu niespójne wcięcia, które mogą wskazywać błędów kodowania. Ustaw **błędy** było jeszcze bardziej rygorystyczne, co powoduje, że program zakończyć działanie w takich przypadkach. Aby całkowicie wyłączyć to zachowanie, zaznacz **nie**. |
-| **Wyszukaj ankiety/wiadomości** | **Raz w tygodniu** | Określa częstotliwość, jaką zezwolisz programowi Visual Studio otworzyć okno zawierające strony sieci web z ankiet związane z języka Python i elementy wiadomości, jeśli jest dostępny. Dostępne są opcje **nigdy**, **raz dziennie**, **raz w tygodniu**, i **raz w miesiącu**. |
+| **Wyszukaj ankiety/wiadomości** | **Raz w tygodniu** | *Visual Studio 2017 and earlier.* Określa częstotliwość, jaką zezwolisz programowi Visual Studio otworzyć okno zawierające strony sieci web z ankiet związane z języka Python i elementy wiadomości, jeśli jest dostępny. Dostępne są opcje **nigdy**, **raz dziennie**, **raz w tygodniu**, i **raz w miesiącu**. |
 | **Resetuj wszystkie okna dialogowe trwale ukryty** przycisku | n/d | Różne okna dialogowe udostępniają opcje, takie jak **nie pokazuj mi tego ponownie**. Użyj tego przycisku, aby wyczyścić te opcje i powodować wyświetlanie okien dialogowych się ponownie. |
 
+::: moniker range="vs-2017"
 ![Okno dialogowe z opcjami języka Python, na karcie Ogólne](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Okno dialogowe z opcjami języka Python, na karcie Ogólne](media/options-general-2019.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="conda-options"></a>Opcje Conda
+
+(**Narzędzia** > **opcje** > **Python** > **Conda** karty.)
+
+| Opcja | Domyślny | Opis |
+| --- | --- | --- |
+| **Ścieżka do pliku wykonywalnego Conda** | (pusty) | Określa dokładną ścieżkę *conda.exe* pliku wykonywalnego, zamiast polegać na domyślnej instalacji Miniconda znajdującej się obciążenie języka Python. Jeśli podano tutaj inną ścieżkę, jego ma pierwszeństwo przed domyślnej instalacji i wszelkie inne conda.exe pliki wykonywalne określone w rejestrze. To ustawienie można zmienić ręcznie zainstaluj nowszą wersję pakietu Anaconda lub Miniconda, czy ma być używana dystrybucja 32-bitowych, a nie domyślne dystrybucji 64-bitowych. |
+
+![Okno dialogowe języka Python, karta serwera język](media/options-conda.png)
+
+::: moniker-end
 
 ## <a name="debugging-options"></a>Opcje debugowania
 
@@ -65,8 +90,15 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 | **Program Tee dane wyjściowe programu do okna danych wyjściowych debugowania** | On | Wyświetla dane wyjściowe programu zarówno w oknie konsoli oddzielne, jak i programu Visual Studio **dane wyjściowe** okna. Usuń zaznaczenie tej opcji, aby wyświetlić dane wyjściowe tylko w oknie konsoli oddzielne. |
 | **Przerwij po wyjątku SystemExit z kodem zakończenia o wartości zero** | Off | Jeśli zestawu, debuger zatrzymuje się na ten wyjątek. Jeśli jest wyczyszczone, debuger kończy działanie bez przerywania. |
 | **Włącz debugowanie standardowej biblioteki języka Python** | Off | Umożliwia on kod źródłowy biblioteki standardowej krok po kroku podczas debugowania, ale wydłuża czas potrzebny do debugera rozpocząć.|
+| **Pokaż wartości zwracanej funkcji** | On | *Visual Studio 2019 r tylko.* Wyświetla wartości zwracane przez funkcję w **lokalne** okna, a następnie pominięcie funkcji wywoływanie debugera (F10) |
+| **Za pomocą starszej wersji debugera** | Off | *Visual Studio 2019 r tylko.* Powoduje, że program Visual Studio domyślnie używają starszej wersji debugera. Aby uzyskać więcej informacji, zobacz [debugowanie — Użyj starszego debugera](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
+::: moniker range="vs-2017"
 ![Okno dialogowe języka Python, karta Debugowanie](media/options-debugging.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Okno dialogowe języka Python, karta Debugowanie](media/options-debugging-2019.png)
+::: moniker-end
 
 ## <a name="diagnostics-options"></a>Opcje diagnostyki
 
@@ -92,6 +124,20 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 | **Ukryj podpowiedzi analizy statycznej** | Off | Po ustawieniu wyświetla tylko sugestie, które są uzyskiwane przez obliczenie wyrażenia. Jeśli w połączeniu z **trybem uzupełniania** wartość **nigdy nie obliczać wyrażeń**, nie przydatne uzupełnienia pojawiają się w **Interactive** okna. |
 
 ![Python opcji okna dialogowego, karta Windows interaktywne](media/options-interactive-windows.png)
+
+::: moniker range=">=vs-2019"
+## <a name="language-server-options"></a>Opcje serwera języka
+
+(**Narzędzia** > **opcje** > **Python** > **Language server** karty.)
+
+| Opcja | Domyślny | Opis |
+| --- | --- | --- |
+| **Wyłącz uzupełnienia z Typeshed** | Off | Powiązane wersję Typeshed zwykle korzysta z funkcji IntelliSense Visual Studio (zestaw *.pyi* pliki) aby znaleźć wskazówek dotyczących typów biblioteki standardowej i bibliotek innych firm dla języka Python 2 i 3 języka Python. Ustawienie tej opcji powoduje wyłączenie powiązane zachowania TypeShed. |
+| **Niestandardowa ścieżka Typeshed** | (pusty) | Jeśli ustawiona, Visual Studio korzysta z plików Typeshed w tej ścieżce zamiast jego wersji. Ignoruj, jeśli **wyłączyć uzupełnianie z Typeshed** jest ustawiona. |
+
+![Okno dialogowe języka Python, karta serwera język](media/options-language-server.png)
+
+::: moniker-end
 
 ## <a name="advanced-python-editor-options"></a>Zaawansowane opcje edytora języka Python
 

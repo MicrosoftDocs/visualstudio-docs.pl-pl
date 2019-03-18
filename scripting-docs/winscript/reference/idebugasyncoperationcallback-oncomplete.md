@@ -1,8 +1,7 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Dokumentacja firmy Microsoft
+title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4909f469b558ef4664a74c4a7926001d20adc40e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089404"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151339"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
 Sygnały, że wynik jest dostępna z operacją asynchroniczną debugowania.  
@@ -48,5 +47,5 @@ HRESULT onComplete();
  Ta metoda sygnalizuje, że wynik jest dostępna z `IDebugAsyncOperation` obiektu. Generowane zdarzenia debuger wątku.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ [IDebugAsyncOperationCallBack Interface](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation, interfejs](../../winscript/reference/idebugasyncoperation-interface.md)

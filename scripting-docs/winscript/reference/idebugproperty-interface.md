@@ -2,7 +2,6 @@
 title: Interfejs IDebugProperty | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348363"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145762"
 ---
 # <a name="idebugproperty-interface"></a>Interfejs IDebugProperty
 Używany do opisania hierarchiczne właściwości obiektu debugowanego, który ma nazwę, typ i wartość. Najczęściej `IDebugProperty` służy do opisywania wynikiem obliczenia wyrażenia, oceny instrukcji lub zarejestruj oceny.  

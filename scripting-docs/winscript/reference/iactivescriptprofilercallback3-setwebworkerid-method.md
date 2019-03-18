@@ -2,7 +2,6 @@
 title: Metoda IActiveScriptProfilerCallback3::SetWebWorkerId | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347219"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151300"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>Metoda IActiveScriptProfilerCallback3::SetWebWorkerId
 Powiadamia program profilujący o identyfikatorze procesów roboczych dla tej sesji profilowania. Jeśli funkcja nie może być wykonane w kontekście strony, ta metoda nie jest wywoływana. Wartość `webWorkerId` przyrosty o 1 dla każdego procesu roboczego, zaczynając od 1. Identyfikator wartości nie są przeznaczone do być stabilna poza sesję, a odpowiadają ich kolejność, w której utworzono pracowników.  

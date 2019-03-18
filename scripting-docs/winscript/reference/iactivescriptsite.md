@@ -2,7 +2,6 @@
 title: IActiveScriptSite | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7ebbd5301ea1d8ea7cabf235ae3f3c7bb1ba3b2
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346894"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152645"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Implementowany przez hosta, aby utworzyć lokację dla aparatu skryptów Windows. Zazwyczaj ta lokacja będzie skojarzony z kontenerem wszystkie obiekty, które są widoczne dla skryptu (na przykład formantów ActiveX). Zazwyczaj ten kontener będzie odpowiadać dokumentu lub wyświetlanej stronie. Microsoft Internet Explorer, na przykład utworzyć kontener dla każdej strony HTML, które są wyświetlane. Każdy ActiveX kontrolki (lub innego obiektu automatyzacji) na stronie, a silnik wykonywania skryptów, byłoby wyliczalny należących do tego kontenera.  

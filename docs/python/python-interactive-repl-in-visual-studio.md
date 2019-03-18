@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155659"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151144"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Praca z okno interaktywne języka Python
 
@@ -56,7 +56,7 @@ Na koniec wybierz kod w pliku i użyć [ **Wyślij do środowiska interaktywnego
 
 ## <a name="interactive-window-options"></a>Opcje okna interaktywnego
 
-Można kontrolować różne aspekty **Interactive** okna za pośrednictwem **narzędzia** > **opcje** > **narzędzi Python Tools**  >  **Interaktywne Windows** (zobacz [opcje](python-support-options-and-settings-in-visual-studio.md)):
+Można kontrolować różne aspekty **Interactive** okna za pośrednictwem **narzędzia** > **opcje** > **Python**  >  **Interaktywne Windows** (zobacz [opcje](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opcje okno interaktywne języka Python](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Program Visual Studio wykrywa także komórki kodu, począwszy od komentarze, ta
 
 **Interactive** okno zawiera funkcję IntelliSense, na podstawie obiektów na żywo, w przeciwieństwie do edytora kodu, w którym IntelliSense opiera się na tylko analizę kodu źródłowego. Te sugestie dotyczą bardziej poprawny w **Interactive** okna, szczególnie w przypadku dynamicznie generowanego kodu. Wadą jest to, że funkcje za pomocą efekty uboczne (np. rejestrowanie komunikatów) może mieć wpływ na Twoje środowisko programistyczne.
 
-Jeśli to zachowanie jest to problem, Zmień ustawienia w obszarze **narzędzia** > **opcje** > **narzędzi Python Tools**  >   **Interaktywne Windows** w **trybem uzupełniania** grupy, zgodnie z opisem na [opcje — Opcje interaktywnych okien](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Jeśli to zachowanie jest to problem, Zmień ustawienia w obszarze **narzędzia** > **opcje** > **Python**  >   **Interaktywne Windows** w **trybem uzupełniania** grupy, zgodnie z opisem na [opcje — Opcje interaktywnych okien](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155139"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149630"
 ---
 # <a name="profile-python-code"></a>Profiluj kod języka Python
 
@@ -32,7 +32,7 @@ Po wybraniu **OK**, program profilujący jest uruchamiany i otwiera raport wydaj
 ![Raport profilowania wydajności](media/profiling-results.png)
 
 > [!Note]
-> Obecnie program Visual Studio obsługuje tylko na tym poziomie profilowania pełnej aplikacji, ale chcemy poznać Twoją opinię na temat przyszłych funkcji bez obaw. Użyj [ **opinie o produkcie** przycisk](#feedback) u dołu tej strony.
+> Obecnie program Visual Studio obsługuje tylko na tym poziomie profilowania pełnej aplikacji, ale chcemy poznać Twoją opinię na temat przyszłych funkcji bez obaw. Użyj **opinie o produkcie** znajdujący się u dołu tej strony.
 
 ## <a name="profiling-for-ironpython"></a>Profilowanie w przypadku v Ironpythonu
 

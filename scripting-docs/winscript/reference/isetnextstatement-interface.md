@@ -2,7 +2,6 @@
 title: Interfejs ISetNextStatement | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac2d6dd0da14be5a624cff0b55985770b8d70fdf
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344060"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148428"
 ---
 # <a name="isetnextstatement-interface"></a>Interfejs ISetNextStatement
 Ten interfejs jest implementowany przez tłumacza, aby umożliwić Menedżer debugowania procesów do zaktualizowania bieżącej instrukcji. Jest implementowany z obiekt w ramce stosu i menedżerów PDM uzyskuje ten interfejs, za pomocą funkcji QueryInterface.  

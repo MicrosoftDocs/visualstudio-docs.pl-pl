@@ -7,15 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842479"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146074"
 ---
 # <a name="installation"></a>Instalacja
 

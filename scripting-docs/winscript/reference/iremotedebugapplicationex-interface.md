@@ -2,7 +2,6 @@
 title: Interfejs IRemoteDebugApplicationEx | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fd51d5bdd076199167e52f685f16572756f9740
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: ab9e25a28ade1ac73b9e4837dae61e2d91f24c45
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346556"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58144410"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>Interfejs IRemoteDebugApplicationEx
 Reprezentuje uruchomionej aplikacji. Nie musi odpowiadać procesu systemu operacyjnego. Zazwyczaj debugera jest przeznaczony dla aplikacji do debugowania. Menedżer debugowania procesów zwykle implementuje obiektu aplikacji.  

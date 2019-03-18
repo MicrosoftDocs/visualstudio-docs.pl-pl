@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752969"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151183"
 ---
 # <a name="html-ui-responsiveness"></a>Czas odpowiedzi interfejsu użytkownika HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikac
   
     -   Użyj [Wyświetl oś czasu sesji diagnostycznej](#Ruler) do wyświetlania [oznaczyć kodu do analizy](#ProfileMark), zdarzenia cyklu życia aplikacji, a skojarzone oś czasu dla tych zdarzeń i oś czasu dla danych w innych wykresów.  
   
-    -   Użyj [Wykres wykorzystania procesora CPU](#CPUutilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typu pracy obsługuje ich w określonym okresie. Okresy nadmierną aktywność procesora CPU są bardziej prawdopodobne spowodować problemy z czas reakcji i porzucić ramek.  
+    -   Użyj [Wykres wykorzystania procesora CPU](#CPUUtilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typu pracy obsługuje ich w określonym okresie. Okresy nadmierną aktywność procesora CPU są bardziej prawdopodobne spowodować problemy z czas reakcji i porzucić ramek.  
   
     -   Przypadku tworzenia aplikacji gier lub zaawansowanych nośnika, należy użyć [widoku przepustowość wizualna (kl. / s)](#VisualThroughput) do identyfikacji okresów czasu, w którym porzucony szybkość klatek.  
   
@@ -346,13 +346,13 @@ if (performance.mark && performance.measure) {
 |Funkcja wywołania zwrotnego asynchronicznych środowiska wykonawczego Windows|Wykonywanie skryptów|Operacji asynchronicznej, która wyzwoliła `Promise` funkcji wywołania zwrotnego wykonał obiektu Windows Runtime.|  
 |Zdarzenia środowiska uruchomieniowego Windows|Wykonywanie skryptów|Zdarzenie, które wystąpiły w obiekcie środowiska wykonawczego Windows wyzwolone zarejestrowane odbiornika.|  
 |Wyrzucanie elementów bezużytecznych|GC|Tracony jest czas zbieranie pamięci obiektów, które były już używane.|  
-|Obliczanie CSS|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, który wymagany dla wszystkich elementów do ponownego obliczenia właściwości stylu.|  
-|Układ|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, wymaganego rozmiaru i/lub pozycji wszystkich elementów objętych do ponownego obliczenia.|  
+|Obliczanie CSS|Style|Wprowadzono zmiany w modelu DOM, który wymagany dla wszystkich elementów do ponownego obliczenia właściwości stylu.|  
+|Układ|Style|Wprowadzono zmiany w modelu DOM, wymaganego rozmiaru i/lub pozycji wszystkich elementów objętych do ponownego obliczenia.|  
 |Malowanie|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM i była podejmowana próba ponownego renderowania części strony.|  
 |Warstwa renderowania|Renderowanie|Wprowadzono zmiany wizualne niezależnie renderowanych fragmentu modelu DOM (nazywana warstwą), a część strony do renderowania wymaganych zmian.|  
 |Dekodowanie obrazu|Dekodowanie obrazu|Obraz został włączony w modelu DOM, a nastąpiła próba rozpakowania i dekodowanie obrazu z oryginalnego formatu do mapy bitowej.|  
-|Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, wszystkie objęte części strony aby być narysowany ponownie wymagane. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
-|Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony za `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie używane do analizowania kodu.|  
+|Klatka|Nie dot.|Wprowadzono zmiany wizualne w modelu DOM, wszystkie objęte części strony aby być narysowany ponownie wymagane. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
+|Miara użytkownika|Nie dot.|Scenariusz specyficzny dla aplikacji został zmierzony za `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie używane do analizowania kodu.|  
   
 ##  <a name="Tips"></a> Dodatkowe informacje  
   

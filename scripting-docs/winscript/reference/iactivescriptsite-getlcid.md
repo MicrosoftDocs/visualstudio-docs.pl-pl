@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSite::GetLCID | Dokumentacja firmy Microsoft
+title: IActiveScriptSite::GetLCID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095007"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155514"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
 Pobiera identyfikator ustawień regionalnych skojarzoną z interfejsem użytkownika hosta. Aparat skryptów używa identyfikatora, aby upewnić się, że ciągi błędów i inne elementy interfejsu użytkownika, generowane przez aparat są wyświetlane w odpowiednim języku.  

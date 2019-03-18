@@ -6,16 +6,16 @@ ms.technology: devlang-csharp
 ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: e6dad35d2fe70866eee8ffbace81c44c502f67d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764659"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149677"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
-Tutaj wstaw wprowadzenie.  
+Tutaj należy wstawić wprowadzenie.  
   
 ## <a name="shared-colors"></a>Udostępnione kolory  
  Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.  
@@ -204,8 +204,8 @@ Tutaj wstaw wprowadzenie.
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Tło|N/d (dziedziczy tło paska poleceń)|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Obramowanie|Brak|  
+|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Domyślne**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
+|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Domyślne**|Obramowanie|Brak|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Tło|`Environment.CommandBarSelected`|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Pierwszego planu (tekst)|`Environment.CommandBarTextSelected`|  
 |![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Obramowanie|`Environment.CommandBarSelectedBorder`|  
@@ -378,7 +378,7 @@ Tutaj wstaw wprowadzenie.
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Pierwszego planu (tekst)|`Environment.DropDownDisabledText`|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Obramowanie|`Environment.DropDownDisabledBorder`|  
 |![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Separator|Nie separatora|  
-|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Tło|Brak|  
+|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Tło|Nie dot.|  
 |![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Pierwszego planu (symbol)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Przycisk podziału  
@@ -401,7 +401,7 @@ Tutaj wstaw wprowadzenie.
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Tło|Brak|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (symbol)|`Environment.CommandBarSplitButtonGlyph`|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Obramowanie|Brak|  
+|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Obramowanie|Nie dot.|  
 |![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Separator|Brak|  
   
  **Po wskazaniu wskaźnikiem**  
@@ -428,10 +428,10 @@ Tutaj wstaw wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Brak|  
+|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Nie dot.|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (tekst)|`Environment.ComboBoxItemTextInactive`|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (symbol)|`Environment.CommandBarTextInactive`|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Obramowanie|Brak|  
+|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Obramowanie|Nie dot.|  
 |![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Separator|Brak|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>Przyciski "Overflow ma wartość" i więcej opcji  
@@ -579,7 +579,7 @@ Tutaj wstaw wprowadzenie.
 |![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Obramowanie dokumentu|`Environment.FileTabInactiveDocumentBorderBackground`|  
   
 ##### <a name="background-tab"></a>Karta tła  
- **Default**  
+ **Domyślne**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
@@ -748,7 +748,7 @@ Tutaj wstaw wprowadzenie.
 |---------------|-------------|--------------------------------|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Tło|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.TitleBarInactiveText`|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Obramowanie|Brak|  
+|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Obramowanie|Nie dot.|  
 |![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Przeciągnij uchwyt|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>Przyciski paska tytułu  
@@ -766,10 +766,10 @@ Tutaj wstaw wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Brak|  
+|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Nie dot.|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonActiveGlyph`|  
 |![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Obramowanie|Brak|  
-|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|Brak|  
+|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|Nie dot.|  
 |![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonInactiveGlyph`|  
 |![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|Brak|  
   
@@ -912,7 +912,7 @@ Tutaj wstaw wprowadzenie.
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.Unfocused`|  
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Obramowanie|`SearchControl.UnfocusedBorder`|  
 |![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Separator|`SearchControl.DropDownSeparator`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Tło|Brak|  
+|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Tło|Nie dot.|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol wyszukiwania)|`SearchControl.SearchGlyph`|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Zatrzymaj symbol)|`SearchControl.StopGlyph`|  
 |![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Wyczyść symbol)|`SearchControl.ClearGlyph`|  
@@ -1090,7 +1090,7 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  dla wszystkich elementów, nie chcesz zawsze odpowiadać paska przewijania interfejsu użytkownika.  
   
- **Default**  
+ **Domyślne**  
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
@@ -1433,7 +1433,7 @@ Tutaj wstaw wprowadzenie.
 |Stan|Składnik|Element|Nazwa tokenu: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Domyślne (wybrane)|Tab|Tło|`ManifestDesigner.TabActive`|  
-|Domyślne (wybrane)|Tab|Obramowanie|Brak|  
+|Domyślne (wybrane)|klawisz Tab,|Obramowanie|Brak|  
 |Domyślne (wybrane)|Okienko opisu|Tło|`ManifestDesigner.DescriptionPane`|  
 |Domyślne (wybrane)|Strona zawartości|Tło|`ManifestDesigner.Background`|  
 |Domyślne (wybrane)|Strona zawartości|Tekst pomocy w oknie dialogowym|`ManifestDesigner.WatermarkText`<br /><br /> Ta nazwa tokenu jest niezgodna z jego funkcji.|  
@@ -1456,7 +1456,7 @@ Tutaj wstaw wprowadzenie.
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Tło|`Tag.Background`|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Pierwszego planu (tekst)|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Domyślne**|Pierwszego planu (tekst)|`Tag.Background`|  
 |![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Tło|`Tag.HoverBackground`|  
 |![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Pierwszego planu (tekst)|`Tag.HoverBackgroundText`|  
 |![Tag naciśnięty](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Naciśnięto**|Tło|`Tag.PressedBackground`|  
@@ -1469,7 +1469,7 @@ Tutaj wstaw wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Brak|  
+|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Nie dot.|  
 |![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyph`|  
   
  **Po wskazaniu wskaźnikiem**  
@@ -1492,7 +1492,7 @@ Tutaj wstaw wprowadzenie.
   
 |Składnik|Element|Nazwa tokenu: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Brak|  
+|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Nie dot.|  
 |![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyph`|  
   
  **Wybrany symbol znacznika po wskazaniu wskaźnikiem**  

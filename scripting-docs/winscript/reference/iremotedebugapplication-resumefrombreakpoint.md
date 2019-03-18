@@ -2,7 +2,6 @@
 title: IRemoteDebugApplication::ResumeFromBreakPoint | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089079"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146958"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
 Nadal aplikację, która jest obecnie dostępna w punkcie przerwania.  
@@ -59,6 +58,6 @@ HRESULT ResumeFromBreakPoint(
  Ta metoda nadal aplikację, która jest obecnie dostępna w punkcie przerwania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)   
  [Wyliczenie BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION, wyliczenie](../../winscript/reference/errorresumeaction-enumeration.md)

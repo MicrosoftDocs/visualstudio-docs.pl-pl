@@ -33,7 +33,7 @@
 ## [Zaznaczenie blokowe](block-selection.md)
 ## [Edytor motywów](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Typowe skróty klawiaturowe](keyboard-shortcuts.md)
+## [Domyślne skróty klawiaturowe](keyboard-shortcuts.md)
 
 # [Debugowanie](debugging.md)
 ## [Wizualizacje danych](data-visualizations.md)

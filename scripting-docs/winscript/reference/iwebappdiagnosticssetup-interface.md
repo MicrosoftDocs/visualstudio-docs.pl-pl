@@ -2,7 +2,6 @@
 title: Interfejs IWebAppDiagnosticsSetup | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc29282ec9d00ff79131765d2bf294c54fa347c6
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b84fd126ebd4d311264efa5d2156f9d83961fee9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344905"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148753"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>Interfejs IWebAppDiagnosticsSetup
 Ten interfejs jest implementowany przez program PDM w debugowaniu aplikacji w języku do tworzenia obiektów COM w procesie, który jest debugowany i włączanie diagnostyki sieci web. Jeśli program PDM debugowania aplikacji obiekt implementuje [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), wymaga programu Internet Explorer [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) go po jego utworzeniu i przebiegów w odwołaniu do [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Aplikacja WWA wywołuje [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) i przebiegów w WWA interfejsu IWebApplicationHost zamiast tego. Jeśli [setsite —](http://go.microsoft.com/fwlink/?LinkId=232439) została wywołana z wartością NIEZEROWĄ [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) zwraca wartość true. Jeśli nie, zwraca wartość false i wywołania [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) się nie powieść.  

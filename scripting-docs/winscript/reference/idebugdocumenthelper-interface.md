@@ -2,7 +2,6 @@
 title: Interfejs IDebugDocumentHelper | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fdb153a81d63a7a6cffd0b42001405ecfb87596
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7322ea5e2026ff3f4491ed1106dceb97a5f11c73
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346983"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153464"
 ---
 # <a name="idebugdocumenthelper-interface"></a>Interfejs IDebugDocumentHelper
 Dostarczać implementacje dla wielu interfejsy niezbędne do obsługi inteligentne, takie jak `IDebugDocument`, `IDebugDocumentContext`, `IDebugDocumentProvider`, `IDebugDocumentText`, i `IDebugDocumentTextEvents` interfejsów.  

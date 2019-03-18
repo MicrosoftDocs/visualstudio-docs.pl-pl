@@ -2,7 +2,6 @@
 title: Interfejsy skryptów Windows | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905366"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154429"
 ---
 # <a name="windows-script-interfaces"></a>Interfejsy skryptów systemu Windows
 
@@ -37,7 +36,7 @@ Dokumentacja skryptów Windows jest podzielona na następujące sekcje:
 
 ## <a name="windows-script-background"></a>Tło skrypt Windows
 
-Interfejsy skryptów Windows można podzielić na dwie kategorie: hosty skryptów Windows i aparatów skryptów Windows. Host tworzy silnik wykonywania skryptów i wywołuje na aparacie na uruchamianie skryptów. Hosty skryptów Windows należą:
+Interfejsy skryptów Windows można podzielić na dwie kategorie: Hosty skryptów Windows i aparatów skryptów Windows. Host tworzy silnik wykonywania skryptów i wywołuje na aparacie na uruchamianie skryptów. Hosty skryptów Windows należą:
 
 - Microsoft Internet Explorer
 
@@ -87,7 +86,7 @@ Ta lista zawiera definicje terminów związanych z obsługi skryptów, używane 
 |----------|----------------|
 |Kod obiektu|Wystąpienia utworzone przez silnik wykonywania skryptów, który jest skojarzony z elementem nazwanych, takim jak modułu formularza w języku Visual Basic lub skojarzone z elementem o nazwie klasy języka C++. Najlepiej jest obiekt OLE Component Object Model (COM), który obsługuje automatyzacji OLE, więc hosta lub inny organ-script można manipulować obiektu kodu.|
 |Element o nazwie|Obiekt OLE COM (najlepiej obsługującej automatyzacji OLE), hosta jeśli uzna, że interesujące do skryptu. Przykłady obejmują strony HTML i przeglądarki w przeglądarce sieci Web i dokumentów i okien dialogowych w programie Microsoft Word.|
-|skrypt|Dane, które tworzą program uruchamiany przez silnik wykonywania skryptów. Skrypt może być ciągłe danych pliku wykonywalnego, tym fragmentów tekstu, bloki konstrukcyjne `pcode`, a nawet kody bajt pliku wykonywalnego specyficzny dla komputera. Host ładuje skrypt do silnika wykonywania skryptów za pomocą jednego z `IPersist*` interfejsy lub za pomocą [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsu.|
+|Skrypt|Dane, które tworzą program uruchamiany przez silnik wykonywania skryptów. Skrypt może być ciągłe danych pliku wykonywalnego, tym fragmentów tekstu, bloki konstrukcyjne `pcode`, a nawet kody bajt pliku wykonywalnego specyficzny dla komputera. Host ładuje skrypt do silnika wykonywania skryptów za pomocą jednego z `IPersist*` interfejsy lub za pomocą [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsu.|
 |Silnik wykonywania skryptów|Obiekt OLE, który przetwarza skryptów. Implementuje silnik wykonywania skryptów [IActiveScript](../winscript/reference/iactivescript.md) i, opcjonalnie, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsów.|
 |Host skryptów|Aplikacja lub program, który jest właścicielem aparat skryptu Windows. Implementuje hosta [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) i, opcjonalnie, [IActiveScriptSiteWindow](../winscript/reference/iactivescriptsitewindow.md) interfejsów.|
 |Scriptlet|Część skryptu, który jest dołączany do obiektu za pomocą [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) interfejsu. Kolekcja agregacji skryptlety jest skrypt.|
