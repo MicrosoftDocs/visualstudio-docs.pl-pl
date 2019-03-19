@@ -25,6 +25,8 @@ items:
     expanded: true
   - name: Poznawanie programu Visual Studio
     items:
+    - name: Otwieranie projektu z repozytorium
+      href: ../tutorial-open-project-from-repo.md
     - name: Pisanie i edytowanie kodu
       href: tutorial-editor.md
     - name: Kompilowanie i tworzenie kompilacji
@@ -38,9 +40,9 @@ items:
     - name: Uzyskiwanie dostępu do danych
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db4a84a25cf9a625e7bc7dec27882aa9e2de66e5
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222706"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983731"
