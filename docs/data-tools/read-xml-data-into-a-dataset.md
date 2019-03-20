@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934149"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268537"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 
@@ -33,17 +33,7 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-W tym kroku utworzysz projekt języka Visual Basic lub Visual C#.
-
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
-
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
-
-3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
-
-4. Nadaj projektowi nazwę **ReadingXML**, a następnie wybierz **OK**.
-
-   **ReadingXML** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
+Utwórz nową **Windows Forms App** projekt albo C# lub Visual Basic. Nadaj projektowi nazwę **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generuj plik XML do odczytu do zestawu danych
 
@@ -123,15 +113,15 @@ Ponieważ w tym przewodniku skupiono się na odczytywanie danych XML do zestawu 
 
 Interfejs użytkownika dla tej aplikacji składa się z następujących czynności:
 
--   A <xref:System.Windows.Forms.DataGridView> formant, który wyświetla zawartość pliku XML jako dane.
+- A <xref:System.Windows.Forms.DataGridView> formant, który wyświetla zawartość pliku XML jako dane.
 
--   A <xref:System.Windows.Forms.TextBox> kontrolkę wyświetlającą schematu XML w pliku XML.
+- A <xref:System.Windows.Forms.TextBox> kontrolkę wyświetlającą schematu XML w pliku XML.
 
--   Dwa <xref:System.Windows.Forms.Button> kontrolki.
+- Dwa <xref:System.Windows.Forms.Button> kontrolki.
 
-    -   Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.
+    - Jeden przycisk odczytuje plik XML do zestawu danych i wyświetla go w <xref:System.Windows.Forms.DataGridView> kontroli.
 
-    -   Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.
+    - Drugi przycisk wyodrębnia schematu z zestawu danych, a także za pośrednictwem <xref:System.IO.StringWriter> wyświetla go w <xref:System.Windows.Forms.TextBox> kontroli.
 
 ### <a name="to-add-controls-to-the-form"></a>Aby dodać formanty do formularza
 
@@ -139,15 +129,15 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących czynnoś
 
 2.  Z **przybornika**, przeciągnij następujące kontrolki na formularzu:
 
-    -   Jeden <xref:System.Windows.Forms.DataGridView> kontroli
+    - Jeden <xref:System.Windows.Forms.DataGridView> kontroli
 
-    -   Jeden <xref:System.Windows.Forms.TextBox> kontroli
+    - Jeden <xref:System.Windows.Forms.TextBox> kontroli
 
-    -   Dwa <xref:System.Windows.Forms.Button> formantów
+    - Dwa <xref:System.Windows.Forms.Button> formantów
 
 3.  Ustaw następujące właściwości:
 
-    |Formant|Właściwość|Ustawienie|
+    |formant|Właściwość|Ustawienie|
     |-------------|--------------|-------------|
     |`TextBox1`|**Wielowierszowy**|`true`|
     ||**Paski przewijania**|**W pionie**|
@@ -220,9 +210,9 @@ Teraz można przetestować formularz, aby upewnić się, że działa zgodnie z o
 
 W tym instruktażu dowiesz się, podstawowe informacje dotyczące odczytywania pliku XML do zestawu danych, a także do tworzenia schematów na podstawie zawartości pliku XML. Poniżej przedstawiono niektóre zadania, które użytkownik może zrobić dalej:
 
--   Edytowanie danych w zestawie danych i zapisu go wycofać jako XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.
+- Edytowanie danych w zestawie danych i zapisu go wycofać jako XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.
 
--   Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
+- Edytowanie danych w zestawie danych, a następnie zapisać ją z bazą danych.
 
 ## <a name="see-also"></a>Zobacz także
 

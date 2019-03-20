@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983393"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268544"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Znajdowanie i używanie rozszerzeń programu Visual Studio
 
@@ -141,7 +141,7 @@ Gdy te powiadomienia są wyświetlane, można zignorować powiadomienie lub wyko
 
 Po zainstalowaniu przykładu online, rozwiązanie jest przechowywane w dwóch miejscach:
 
-- Kopia robocza jest przechowywany w lokalizacji określonej w **nowy projekt** okno dialogowe.
+- Kopia robocza znajduje się w lokalizacji, które zostały określone podczas tworzenia projektu.
 
 - Oddzielna kopia główna jest przechowywana na komputerze.
 
@@ -163,7 +163,7 @@ Możesz użyć **Zarządzaj rozszerzeniami** okna do wykonania tych zadań zwią
 
 - Zainstalowanie pakietów przykładów, które są zbiorami przykładów odnoszących się do technologii lub funkcji.
 
-- Instalowanie pojedynczych przykładów online. (Można to również zrobić w **nowy projekt** okno dialogowe.)
+- Instalowanie pojedynczych przykładów online.
 
 - Wyświetlanie powiadomień o aktualizacjach, gdy zostaną opublikowane zmiany kodu źródłowego dla zainstalowanych przykładów.
 

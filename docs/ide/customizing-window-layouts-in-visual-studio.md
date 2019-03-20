@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927545"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268625"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 
-W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu windows, aby utworzyć układy okna, które najlepiej działać dla różnych przepływów pracy programowania. Podczas dostosowywania układu IDE pamięta. Na przykład, jeśli zmienisz lokalizację dokowania **Eksploratora rozwiązań** , a następnie zamknij program Visual Studio przy następnym uruchomieniu, nawet jeśli pracujesz na innym komputerze, **Eksploratora rozwiązań** będzie zadokowane, w tym samym miejscu. Można również nazwij układu niestandardowego i zapisz go, a następnie przełączać się między układy za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i drugą na potrzeby debugowania i przełączać się między nimi przy użyciu **okna** > **Zastosuj układ okna** polecenia menu.
+W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu windows, aby utworzyć układy okna, które najlepiej działać dla różnych przepływów pracy programowania. Podczas dostosowywania układu IDE pamięta. Na przykład, jeśli zmienisz lokalizację dokowania **Eksploratora rozwiązań** , a następnie zamknij program Visual Studio przy następnym, Otwórz program Visual Studio, nawet jeśli pracujesz na innym komputerze, **Eksploratora rozwiązań**będzie zadokowany w tym samym miejscu.
+
+Możesz też nazwać i zapisać niestandardowe układy i następnie przełączać się między układy za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i układu do debugowania i przełączać się między nimi przy użyciu **okna** > **Zastosuj układ okna** polecenia menu.
 
 ## <a name="kinds-of-windows"></a>Rodzaje okien
 
@@ -64,27 +66,27 @@ Okno dokumentu lub okna narzędzi mogą być *zadokowany*, dzięki czemu ma poł
 
 Rozmieść z systemu windows, w następujący sposób:
 
--   Przypnij dobrze okna dokumentu do lewej strony karty.
+- Przypnij dobrze okna dokumentu do lewej strony karty.
 
--   Karta dokowanie okien do ramki edycji.
+- Karta dokowanie okien do ramki edycji.
 
--   Dokowanie okien narzędzi do krawędzi ramki w IDE.
+- Dokowanie okien narzędzi do krawędzi ramki w IDE.
 
--   Przestawianie okien dokumentu lub narzędzia na lub poza IDE.
+- Przestawianie okien dokumentu lub narzędzia na lub poza IDE.
 
--   Ukrywanie okien narzędzi wzdłuż krawędzi środowiska IDE.
+- Ukrywanie okien narzędzi wzdłuż krawędzi środowiska IDE.
 
--   Wyświetlaj okna na różnych monitorach.
+- Wyświetlaj okna na różnych monitorach.
 
--   Resetowanie położenia okna, domyślny układ lub zapisanego układu niestandardowego.
+- Resetowanie położenia okna, domyślny układ lub zapisanego układu niestandardowego.
 
-Okna dokumentów i narzędzi mogą być ułożone przez przeciąganie, za pomocą poleceń w **okna** menu i klikając prawym przyciskiem myszy pasek tytułu okna.
+Rozmieść okna dokumentów i narzędzi, przeciągając, przy użyciu poleceń w **okna** menu, klikając prawym przyciskiem myszy pasek tytułu okna.
 
 ### <a name="dock-windows"></a>Dokowanie okien
 
 W przypadku kliknij i przeciągnij pasek tytułu okna narzędzi lub na karcie okna dokumentu romb przewodnik pojawia się. Podczas operacji przeciągania gdy wskaźnik myszy znajduje się nad jedną strzałki rombu, zacieniony obszar pojawi się informujący o tym, gdzie okna zostanie zadokowany po zwolnieniu przycisku myszy teraz.
 
-Aby przenieść okno zadokowane bez przyciągania go w miejscu, wybierz opcję **Ctrl** klucza podczas przeciągania okna.
+Aby przenieść okno zadokowane bez przyciągania go w miejscu, naciśnij klawisz **Ctrl** klucza podczas przeciągania okna.
 
 Aby przywrócić jego najnowsze położenie zadokowanego okna narzędzi lub okno dokumentu, naciśnij klawisz **Ctrl** gdy klikniesz dwukrotnie pasek tytułu lub karcie okna.
 
@@ -92,19 +94,17 @@ Poniższa ilustracja przedstawia dokowania dla okien dokumentu, które może by�
 
 ![Romb przewodnik okna dokumentu](../ide/media/documentwindowguidediamonds.png)
 
-Okna narzędzi mogą być mocowane po jednej stronie ramki w IDE lub wewnątrz ramki edycji. Romb przewodnik pojawia się po przeciągnięciu okna narzędzia do innej lokalizacji, aby pomóc w ponownym zadokowaniu okna.
-
-Wskaźnik dokowania dla okien narzędzi
+Okna narzędzi mogą być mocowane po jednej stronie ramki w IDE lub wewnątrz ramki edycji. Romb przewodnik pojawia się po przeciągnięciu okna narzędzia do innej lokalizacji, aby pomóc łatwo ponownie zadokować okno.
 
 ![Diamenty przewodnik okna narzędzi](../ide/media/vs10guidediamond.png)
 
-Poniższa ilustracja przedstawia **Eksploratora rozwiązań** jest zadokowany w nowej lokalizacji, która jest wyświetlana niebieska zacieniony obszar:
+Poniższa ilustracja przedstawia **Eksploratora rozwiązań** jest zadokowany w nowej lokalizacji, która jest zaznaczonymi przez niebieski zacieniony obszar:
 
 ![Dokowanie Eksploratora rozwiązań w nowym położeniu](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Zamknij i automatyczne ukrywanie okien narzędzi
 
-Możesz zamknąć okna narzędzi, klikając **X** w prawym górnym rogu paska tytułu; Aby ponownie otworzyć okno, użyj polecenia menu lub skrótów klawiatury. Okna narzędzi obsługują funkcję o nazwie *Autoukrywanie*, co powoduje, że okno chowa sposób w przypadku, gdy używasz innego okna się. Gdy okno jest automatyczne ukrywane, jego nazwa jest wyświetlana na karcie na krawędzi IDE. Aby ponownie użyć okna, wskaż kartę tak, że okno zostanie wsunięte z powrotem do widoku.
+Możesz zamknąć okna narzędzi, klikając **X** w prawym górnym rogu paska tytułu. Aby ponownie otworzyć okno, polecenie jego klawiatury skrótów lub menu. Okna narzędzi obsługują funkcję o nazwie *Autoukrywanie*, co powoduje, że okno chowa sposób w przypadku, gdy używasz innego okna się. Gdy okno jest autohidden, jego nazwa jest wyświetlana na karcie na krawędzi IDE. Aby ponownie użyć okna, wskaż kartę tak, że okno zostanie wsunięte z powrotem do widoku.
 
 ![Autoukrywanie](../ide/media/vs2015_auto_hide.png)
 
@@ -125,11 +125,11 @@ Jeśli masz drugi monitor, a system operacyjny obsługuje go, można wybrać, kt
 
 Możesz powrócić IDE do oryginalnego layoutu okna zestawu ustawień za pomocą **Zresetuj układ okna** polecenia. Po uruchomieniu tego polecenia, są wykonywane następujące akcje:
 
--   Wszystkie okna są przenoszone do ich domyślnych pozycji.
+- Wszystkie okna są przenoszone do ich domyślnych pozycji.
 
--   Windows, które zostały zamknięte w domyślnym układzie okien są zamknięte.
+- Windows, które zostały zamknięte w domyślnym układzie okien są zamknięte.
 
--   Windows, które są otwarte w domyślnym układzie okien są otwarte.
+- Windows, które są otwarte w domyślnym układzie okien są otwarte.
 
 ### <a name="create-and-save-custom-layouts"></a>Utworzyć i zapisać niestandardowe układy
 
@@ -139,25 +139,25 @@ Najpierw utwórz test rozwiązanie, które ma dwa projekty: każdy inny, optymal
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Utwórz projekt interfejsu użytkownika i dostosować układ
 
-1.  W **nowy projekt** okno dialogowe, utworzyć  **C# aplikacji pulpitu WPF** i nadać mu dowolną. Poudawać, że jest to projekt, gdzie możemy pracować w interfejsie użytkownika, więc chcemy zmaksymalizować miejsce w oknie projektanta, a następnie przejść z innymi oknami narzędzi.
+1. Utwórz nową C# **aplikacja WPF** projektu. Załóżmy, że w tym projekcie, będzie tworzenia interfejsu użytkownika. Chcesz zmaksymalizować miejsce w oknie projektanta, a następnie przejść z innymi oknami narzędzi.
 
-2.  Jeśli masz wiele monitorów, ściąganie **Eksploratora rozwiązań** okna i **właściwości** okna za pośrednictwem drugiego monitora. W systemie pojedynczy monitor Zamknij wszystkie okna z wyjątkiem projektanta.
+2. Jeśli masz wiele monitorów, ściąganie **Eksploratora rozwiązań** okna i **właściwości** okna za pośrednictwem drugiego monitora. W systemie pojedynczy monitor Zamknij wszystkie okna z wyjątkiem projektanta.
 
-3.  Naciśnij klawisz **Ctrl + Alt + X** do wyświetlenia **przybornika**. Jeśli okno jest zadokowany, przeciągnij go tak, aby liczby zmiennoprzecinkowe, innym miejscu, gdzie chcesz umieść dla dowolnego monitora.
+3. Naciśnij klawisz **Ctrl**+**Alt**+**X** do wyświetlenia **przybornika** okna. Jeśli okno jest zadokowany, przeciągnij go tak, że jest ona wyświetlana innym miejscu, gdzie chcesz umieścić go.
 
-4.  Naciśnij klawisz **F5** aby umieścić programu Visual Studio w trybie debugowania. Dopasować położenie **Autos**, **stos wywołań** i **dane wyjściowe** debugowania systemu windows w żądany sposób. Układ, który masz zamiar utworzyć dotyczą zarówno trybem edycji i w trybie debugowania.
+4. Naciśnij klawisz **F5** aby umieścić programu Visual Studio w trybie debugowania. Dopasować położenie **Autos**, **stos wywołań**, i **dane wyjściowe** debugowania systemu windows w żądany sposób. Układ, który masz zamiar utworzyć dotyczą zarówno trybem edycji i w trybie debugowania.
 
-5.  Kiedy układów w trybie debugowania i tryb edycji są, jak chcesz, w menu głównym wybierz **okna** > **Zapisz układ okna**. Wywołaj ten układ "Designer".
+5. Kiedy układów w trybie debugowania i tryb edycji są, jak chcesz, wybierz polecenie **okna** > **Zapisz układ okna**. Wywołaj ten układ "Designer".
 
-     Należy pamiętać, nowy układ jest przypisany dalej skrótu klawiaturowego z listy zarezerwowanych **Ctrl** + **Alt** + **1... 0**.
+     Należy pamiętać, nowy układ jest przypisany dalej skrótu klawiaturowego z listy zarezerwowanych **Ctrl**+**Alt**+**1... 0**.
 
 #### <a name="create-a-database-project-and-layout"></a>Tworzenie bazy danych projektu i układu
 
-1.  Dodaj nową **bazy danych SQL Server** projektu do rozwiązania.
+1. Dodaj nową **bazy danych SQL Server** projektu do rozwiązania.
 
-2.  Kliknij prawym przyciskiem myszy nad nowym projektem w **Eksploratora rozwiązań** i wybierz polecenie **widoku w Eksploratorze obiektów**. Spowoduje to wyświetlenie **Eksplorator obiektów SQL Server** okno, które umożliwia dostęp do tabel, widoków i innych obiektów w bazie danych. Można przestawić to okno lub zostawić zadokowany. Dostosuj innymi oknami narzędzi w żądany sposób. Dla dodano realizmu można dodać istniejącej bazy danych, ale nie jest konieczne w ramach tego przewodnika.
+2. Kliknij prawym przyciskiem myszy nad nowym projektem w **Eksploratora rozwiązań** i wybierz polecenie **widoku w Eksploratorze obiektów**. Spowoduje to wyświetlenie **Eksplorator obiektów SQL Server** okno, które umożliwia dostęp do tabel, widoków i innych obiektów w bazie danych. Można przestawić to okno lub zostawić zadokowany. Dostosuj innymi oknami narzędzi w żądany sposób. Dla dodano realizmu można dodać istniejącej bazy danych, ale nie jest konieczne w ramach tego przewodnika.
 
-3.  Gdy układ jest, jak chcesz, w menu głównym wybierz **okna** > **Zapisz układ okna**. Wywołaj ten układ "Projekt bazy danych". (Firma Microsoft nie będą odblokowane z układem trybu debugowania dla tego projektu.)
+3. Gdy układ jest, jak chcesz, w menu głównym wybierz **okna** > **Zapisz układ okna**. Wywołaj ten układ "Projekt bazy danych". (Firma Microsoft nie będą odblokowane z układem trybu debugowania dla tego projektu.)
 
 #### <a name="switch-between-the-layouts"></a>Przełączanie między układów
 

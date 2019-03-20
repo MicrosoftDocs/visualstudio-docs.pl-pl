@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943470"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268677"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -46,9 +46,7 @@ Możesz użyć **Menadżer odwołań** okno dialogowe, aby dodać i zarządzać 
 
 - **Przeglądaj**, za pomocą **ostatnie** podgrupy.
 
-## <a name="add-and-remove-a-reference"></a>Dodawanie i usuwanie odwołań
-
-### <a name="to-add-a-reference"></a>Aby dodać odwołanie
+## <a name="add-a-reference"></a>Dodaj odwołanie
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** lub **zależności** węzeł i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **odwołania**.
 
@@ -147,44 +145,27 @@ Odwołanie do pliku jest tworzony zamiast odwołania projektu, jeśli jeden proj
 
 Projekt, który jest przeznaczony dla [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] nie można dodać odwołania projektu do projektu, który jest przeznaczony dla programu .NET Framework i na odwrót.
 
-## <a name="windows-tab"></a>Karta Windows
+## <a name="universal-windows-tab"></a>Uniwersalne karta Windows
 
-**Windows** karta zawiera listę wszystkich zestawów SDK, które są specyficzne dla platform, na które systemy operacyjne Windows, uruchom.
-
-Można wygenerować plik WinMD w Visual Studio na dwa sposoby:
-
-- **Projekty zarządzane Windows 8.x Store aplikacji**: Projekty aplikacji systemu Windows 8.x Store może zapewniać dane wyjściowe pliki binarne WinMD przez ustawienie **właściwości projektu** > **typ danych wyjściowych = plik WinMD**. Nazwa pliku WinMD musi być nadzbiorem przestrzeni nazw wszystkich przestrzeni nazw, które w nim istnieją. Na przykład, jeśli projekt składa się z przestrzeni nazw `A.B` i `A.B.C`, możliwe nazwy dla wygenerowanego WinMD to *A.winmd* i *A.B.winmd*. Jeśli użytkownik wprowadzi **właściwości projektu** > **nazwy zestawu** lub **właściwości projektu** > **Namespace**wartość, która jest odłączona od zestawu przestrzeni nazw w projekcie lub jest nadzbiorem przestrzeni nazw w ramach projektu, jest generowane ostrzeżenie kompilacji: "'A.winmd' nie jest prawidłową nazwą pliku .winmd dla tego zestawu." Wszystkie typy w pliku metadanych systemu Windows musi istnieć w podrzędnej przestrzeni nazw nazwy pliku. Typy, które nie istnieją w podrzędnej przestrzeni nazw nazwy pliku nie będzie mógł być zlokalizowane w czasie wykonywania. W tym zestawie najmniejszą wspólną przestrzenią nazw jest `CSWSClassLibrary1`. Pulpitu języka Visual Basic lub C# projekt może używać tylko plików Winmd, które są generowane przy użyciu Windows 8 SDK, znanych jako Winmd firmy Microsoft i nie można wygenerować plików Winmd.
-
-- **Windows 8.x Store macierzyste projekty aplikacji**: Macierzysty plik WinMD składa się z tylko metadanych. Jego realizacja istnieje w oddzielnym pliku DLL. Można produkować, aby przez wybranie szablonu projektu składnika wykonawczego Windows w natywnych plików binarnych **nowy projekt** okno dialogowe lub zaczynając od pustego projektu i modyfikując właściwości projektu, aby wygenerować plik WinMD. Jeżeli projekt zawiera rozłączne przestrzenie nazw, błąd kompilacji poinformuje użytkownika, że należy połączyć ich przestrzenie nazw lub uruchomić narzędzie MSMerge.
-
-**Windows** kartę składa się z dwóch podgrup.
+**Universal Windows** karta zawiera listę wszystkich zestawów SDK, które są specyficzne dla platform, na które systemy operacyjne Windows, uruchom.
+Ta karta ma dwa podgrupy: **Podstawowe** i **rozszerzenia**.
 
 ### <a name="core-subgroup"></a>Podgrupa podstawowa
 
-**Core** podgrupa zawiera listę wszystkich Winmd (dla elementów wykonawczych Windows) w zestawie SDK dla wersji docelowej systemu Windows.
-
-Projekty aplikacji systemu Windows 8.x Store zawierają odwołania do wszystkich Winmd w systemie Windows 8 SDK, domyślnie przy tworzeniu projektu. W projektach zarządzanych, węzeł tylko do odczytu w ramach **odwołania** folderu w **Eksploratora rozwiązań** wskazuje odwołanie do całego systemu Windows 8 SDK. W związku z tym **Core** podgrupy w **Menadżer odwołań** nie będzie wyliczała żadnych zestawów z systemu Windows 8 SDK i zamiast tego zostanie wyświetlony komunikat: "Z zestawu Windows SDK jest już przywoływany. Użyj przeglądarki obiektów do zbadania odwołań w zestawie Windows SDK."
-
-W projektach pulpitu **Core** podgrupy nie jest wyświetlana domyślnie. Można dodać środowisko wykonawcze Windows, otwierając menu skrótów dla węzła projektu, wybierając **Zwolnij projekt**, dodając poniższy fragment kodu i ponownie otwierając projekt (w węźle projektu wybierz **Załaduj ponownie projekt**). Gdy wywołujesz **Menadżer odwołań** okno dialogowe **Core** pojawia się podgrupa.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Upewnij się, że wybrano **Windows** pole wyboru w tej podgrupie. Wówczas można używać elementów środowiska wykonawczego Windows. Jednakże, również należy dodać <xref:System.Runtime>, w której środowisko wykonawcze Windows definiuje kilka standardowych klas i interfejsów, takich jak <xref:System.Collections.IEnumerable>, które są używane w całej biblioteki środowiska uruchomieniowego Windows. Aby uzyskać informacje dotyczące sposobu dodawania <xref:System.Runtime>, zobacz [zarządzane aplikacje pulpitu i środowisko uruchomieniowe Windows](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
+Uniwersalne projekty aplikacji Windows ma odwołanie do zestawu Windows Universal SDK domyślnie. W związku z tym **Core** podgrupy w **Menadżer odwołań** nie wyliczała żadnych zestawów z zestawu Windows Universal SDK.
 
 ### <a name="extensions-subgroup"></a>Podgrupa rozszerzenia
 
-**Rozszerzenia** zawiera listę użytkowników zestawów SDK, które rozszerzają docelowej platformy Windows. Ta karta jest wyświetlana, Windows 8.x Store aplikacji tylko dla projektów. Projekty pulpitu nie będzie wyświetlały tej karty, ponieważ mogą one wykorzystywać tylko firmy *winmd* plików.
+**Rozszerzenia** zawiera listę użytkowników zestawów SDK, które rozszerzają docelowej platformy Windows.
 
-Zestaw SDK jest zbiorem plików, który program Visual Studio traktuje jako samodzielny składnik. W **rozszerzenia** karcie zestawy SDK, które są stosowane do projektu, z których **Menadżer odwołań** zostało wywołane okno dialogowe są wymienione jako pojedyncze wpisy. Po dodaniu do projektu jest cała zawartość zestawu SDK używane przez program Visual Studio, takie, że użytkownik nie musiał podejmować dalszych działań, aby wykorzystać zawartość zestawu SDK w technologii IntelliSense, przyborniku, projektantach, przeglądarce obiektów, kompilacji, wdrażaniu, debugowaniu i pakowaniu. Aby uzyskać informacje o wyświetlaniu SDK w **rozszerzenia** kartę, zobacz [tworzenia Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+Zestaw SDK jest zbiorem plików, który program Visual Studio traktuje jako samodzielny składnik. W **rozszerzenia** karcie zestawy SDK, które są stosowane do projektu, z których **Menadżer odwołań** zostało wywołane okno dialogowe są wymienione jako pojedyncze wpisy. Po dodaniu do projektu jest cała zawartość zestawu SDK używane przez program Visual Studio, takie, że użytkownik nie musiał podejmować dalszych działań, aby wykorzystać zawartość zestawu SDK w technologii IntelliSense, przyborniku, projektantach, przeglądarce obiektów, kompilacji, wdrażaniu, debugowaniu i pakowaniu.
+
+Aby uzyskać informacje o wyświetlaniu SDK w **rozszerzenia** kartę, zobacz [tworzenia Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Jeśli projekt odwołuje się zestaw SDK, który jest zależny od innego zestawu SDK, Visual Studio nie wykorzystuje drugiego zestawu SDK, chyba że użytkownik ręcznie doda odwołanie do drugiego zestawu SDK. Gdy użytkownik wybierze SDK na **rozszerzenia** karcie **Menadżer odwołań** okno dialogowe pomaga użytkownikowi określić zależności zestawu SDK przez wymienienie nie tylko nazwę i wersję zestawu SDK, ale także nazwy wszelkich zestawu SDK zależności w okienku szczegółów. Jeśli użytkownik nie zauważy zależności i doda tylko, że zestaw SDK, program MSBuild będzie monitował użytkownika można dodać zależności.
+> Jeśli projekt odwołuje się zestaw SDK, który jest zależny od innego zestawu SDK, Visual Studio nie wykorzystuje drugiego zestawu SDK, chyba że ręcznie Dodaj odwołanie do drugiego zestawu SDK. Gdy użytkownik wybierze SDK na **rozszerzenia** karcie **Menadżer odwołań** dialogowe pomaga określić zależności zestawu SDK, wyświetlając listę wszelkich zależności w okienku szczegółów.
 
-Jeśli typ projektu nie obsługuje rozszerzeń, karta nie pojawi się w **Menadżer odwołań** okno dialogowe.
+Jeśli typ projektu nie obsługuje rozszerzeń, ta karta nie pojawia się w **Menadżer odwołań** okno dialogowe.
 
 ## <a name="com-tab"></a>Karta COM
 

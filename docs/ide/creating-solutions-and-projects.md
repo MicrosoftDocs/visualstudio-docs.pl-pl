@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867890"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268574"
 ---
 # <a name="create-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 
@@ -39,35 +38,9 @@ Chociaż można utworzyć projektu samodzielnie przez dodanie niezbędnych plik�
 
 Po uwzględnieniu rozwiązania i projekty nie muszą tworzyć aplikacje w programie Visual Studio. Możesz też po prostu otworzyć kod, który zostały sklonowane z repozytorium Git lub pobrany w innym miejscu. Aby uzyskać więcej informacji, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-> [!NOTE]
-> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz **Resetuj wszystkie ustawienia**.
+## <a name="create-a-project-from-a-project-template"></a>Tworzenie projektu z szablonu projektu
 
-## <a name="to-create-a-project-from-a-project-template"></a>Aby utworzyć projekt z szablonu projektu
-
-1. Istnieje wiele sposobów, aby utworzyć nowy projekt w programie Visual Studio. Na **strona startowa**, wprowadź nazwę szablonu projektu w **Wyszukaj szablony projektów** pole, lub wybierz **Tworzenie nowego projektu** link umożliwiający otworzenie **nowy Projekt** okno dialogowe. Można również wybrać **pliku** > **nowy** > **projektu** menu paska, lub wybierz **nowy projekt** przycisku na pasku narzędzi.
-
-   ![Strona początkowa](./media/vside-newproject1.png)
-
-   W **nowy projekt** okno dialogowe dostępnych szablonów projektu są wyświetlane na liście w obszarze **szablony** kategorii. Szablony są uporządkowane według programowania języka i projektu typu, na przykład Visual C#, JavaScript i Azure Data Lake.
-
-   ![Okno dialogowe Nowy projekt](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > Wyświetlonej listy dostępnych języków i szablonów projektu zależy od wersji programu Visual Studio, które są uruchomione i obciążeń, które są zainstalowane. Aby dowiedzieć się więcej o sposobie instalowania dodatkowych obciążeń, zobacz [modyfikowanie programu Visual Studio, dodając lub usuwając obciążenia i składniki](../install/modify-visual-studio.md).
-
-2. Pokaż listę szablonów dla języka programowania, którego chcesz użyć, wybierając trójkąta obok nazwy języka, a następnie wybierz typ projektu.
-
-   W poniższym przykładzie przedstawiono dostępne szablony projektów dla wizualizacji C# projektów .NET Core.
-
-   ![Szablony projektów](./media/new-project-dialog-net-core.png)
-
-3. Wprowadź nazwę dla nowego projektu w **nazwa** pole. Można wybrać zapisać projekt w lokalizacji domyślnej na komputerze, lub wybierz **Przeglądaj** przycisk, aby znaleźć w innej lokalizacji.
-
-   Możesz również opcjonalnie można zmienić nazwy rozwiązania lub dodać nowy projekt do repozytorium Git, wybierając **Dodaj do kontroli źródła**.
-
-4. Wybierz **OK** przycisk, aby utworzyć rozwiązanie i projekt.
-
-5. Jeśli chcesz dodać dodatkowe projekt do rozwiązania, wybierz węzeł rozwiązania w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+Aby uzyskać informacje dotyczące tworzenia nowego projektu z szablonu, zobacz [Utwórz nowy projekt w programie Visual Studio](create-new-project.md).
 
 ## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
 
@@ -88,12 +61,26 @@ Jeśli masz plik, który ma zastosowanie do wielu projektów, takich jak plik re
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu platformy .NET, który jest przeznaczony dla określonej wersji programu .NET Framework
 
-Podczas tworzenia projektu można określić określonej wersji programu .NET Framework, który chcesz, aby projekt do użycia. Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijane w **nowy projekt** okno dialogowe.
+Podczas tworzenia projektu można określić określonej wersji programu .NET Framework, który chcesz, aby projekt do użycia.
+
+::: moniker range="vs-2017"
+
+Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijane w **nowy projekt** okno dialogowe.
 
 ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Musisz mieć program .NET Framework 3.5 zainstalowany w systemie do dostępu do wersji programu .NET Framework wcześniejszych niż .NET Framework 4.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Aby określić wersji programu .NET framework, wybierz **Framework** menu rozwijanego **Utwórz nowy projekt** strony.
+
+![Selektor Framework w konfigurowania nowego projektu](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>Utwórz puste rozwiązania
 
@@ -101,13 +88,27 @@ Można również utworzyć pusty rozwiązania, które mają żadne projekty. Mo�
 
 ### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie
 
-1. W menu, wybierz **pliku** > **New** > **projektu**.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-1. Po lewej stronie (**szablony**) okienku wybierz **inne typy projektów** > **Visual Studio Solutions** na wyświetlonej liście.
+::: moniker range="vs-2017"
 
-1. W środkowym okienku wybierz **puste rozwiązanie**.
+2. Po lewej stronie (**szablony**) okienku wybierz **inne typy projektów** > **Visual Studio Solutions** na wyświetlonej liście.
 
-1. Wprowadź **nazwa** i **lokalizacji** wartości dla rozwiązania, następnie wybierz **OK**.
+3. W środkowym okienku wybierz **puste rozwiązanie**.
+
+4. Wprowadź **nazwa** i **lokalizacji** wartości dla danego rozwiązania, a następnie wybierz **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na **Utwórz nowy projekt** wpisz **rozwiązania** w polu wyszukiwania.
+
+3. Wybierz **puste rozwiązanie** szablonu, a następnie kliknij **dalej**.
+
+4. Wprowadź **nazwa** i **lokalizacji** wartości dla danego rozwiązania, a następnie wybierz **Utwórz**.
+
+::: moniker-end
 
 Po utworzeniu puste rozwiązanie, nowe lub istniejące projekty lub elementy można dodać do niego, wybierając **Dodaj nowy element** lub **Dodaj istniejący element** na **projektu** menu.
 
@@ -132,13 +133,13 @@ Można usunąć rozwiązania i ich zawartość trwale, ale nie przy użyciu prog
 > [!NOTE]
 > *.Suo* plik jest plikiem ukrytym, które nie są wyświetlane w obszarze domyślne ustawienia Eksploratora plików. Aby wyświetlić ukryte pliki na **widoku** menu w Eksploratorze plików wybierz **ukryte elementy** pola wyboru.
 
-### <a name="to-permanently-delete-a-solution"></a>Aby trwale usunąć rozwiązanie
+### <a name="permanently-delete-a-solution"></a>Trwałe usuwanie rozwiązania
 
 1. W **Eksploratora rozwiązań**, w menu kliknij prawym przyciskiem myszy (menu kontekstowe) rozwiązanie, aby usunąć, wybierz **Otwórz folder w Eksploratorze plików**.
 
 1. W Eksploratorze plików Przejdź jeden poziom w górę.
 
-1. Wybierz folder, zawierająca dane rozwiązanie, a następnie wybierz **Usuń** klucza.
+1. Wybierz folder, zawierająca dane rozwiązanie, a następnie naciśnij klawisz **Usuń** klucza.
 
 ## <a name="see-also"></a>Zobacz także
 

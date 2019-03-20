@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936666"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268760"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych
 
-Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybrać istniejące kontrolki z **przybornika**, lub możesz tworzyć niestandardowe formanty, jeśli aplikacja wymaga funkcji, która nie jest dostępna w standardowych kontrolek. W tym instruktażu pokazano, jak utworzyć formant, który implementuje <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> zawierają `DataSource` i `DataMember` właściwość, która może być powiązana z danymi. Te kontrolki są podobne do <xref:System.Windows.Forms.DataGridView> lub <xref:System.Windows.Forms.ListBox>.
+Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybrać istniejące kontrolki z **przybornika**. Alternatywnie można tworzyć niestandardowe formanty, jeśli aplikacja wymaga funkcji, która nie jest dostępna w standardowych kontrolek. W tym instruktażu pokazano, jak utworzyć formant, który implementuje <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> zawierają `DataSource` i `DataMember` właściwość, która może być powiązana z danymi. Te kontrolki są podobne do <xref:System.Windows.Forms.DataGridView> lub <xref:System.Windows.Forms.ListBox>.
 
 Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [kontrolek tworzenia formularzy Windows w czasie projektowania](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -37,9 +37,7 @@ Podczas tworzenia kontrolki do użycia w scenariuszach powiązanie danych należ
 
 Ten przewodnik tworzy formant złożony, który wyświetla wiersze danych z tabeli. W tym przykładzie użyto `Customers` tabeli w bazie danych Northwind. Kontrolka złożona użytkownika będzie wyświetlać tabelę Klienci w <xref:System.Windows.Forms.DataGridView> w formancie niestandardowym.
 
-Z tego instruktażu dowiesz się jak:
-
-- Utwórz nową **aplikacja interfejsu Windows Forms**.
+Z tego instruktażu dowiesz się, jak:
 
 - Dodaj nową **kontrolki użytkownika** do projektu.
 
@@ -71,19 +69,9 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
        Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
 
-## <a name="create-a-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
+## <a name="create-a-windows-forms-app-project"></a>Tworzenie projektu aplikacji Windows Forms
 
-Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**:
-
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
-
-1. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
-
-1. W środkowym okienku wybierz **Windows Forms App** typ projektu.
-
-1. Nadaj projektowi nazwę **ComplexControlWalkthrough**, a następnie wybierz **OK**.
-
-    **ComplexControlWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
+Pierwszym krokiem jest utworzenie **Windows Forms App** projekt albo C# lub Visual Basic. Nadaj projektowi nazwę **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Dodaj kontrolkę użytkownika do projektu
 
@@ -116,27 +104,27 @@ Złożone formantów to powiązanie danych pomocy technicznej, można zaimplemen
 
 Użyj **konfiguracji źródła danych** kreatora w celu utworzenia źródła danych na podstawie `Customers` tabeli w bazie danych Northwind:
 
-1.  Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
+1. Aby otworzyć **źródeł danych** okna na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **konfiguracji źródła danych** kreatora.
 
-3.  Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
+3. Wybierz **bazy danych** na **wybierz typ źródła danych** strony, a następnie kliknij przycisk **dalej**.
 
-4.  Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:
+4. Na **wybierz połączenie danych** wykonaj strony, jedną z następujących czynności:
 
-    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+   - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
+   - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.
 
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
 
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.
 
-7.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
+7. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzła.
 
-8.  Wybierz `Customers` tabeli, a następnie kliknij przycisk **Zakończ**.
+8. Wybierz `Customers` tabeli, a następnie kliknij przycisk **Zakończ**.
 
-    **NorthwindDataSet** zostanie dodany do projektu, a `Customers` tabela zostanie wyświetlona w **źródeł danych** okna.
+   **NorthwindDataSet** zostanie dodany do projektu, a `Customers` tabela zostanie wyświetlona w **źródeł danych** okna.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Ustawianie tabeli Customers, aby użyć kontrolki ComplexDataGridView
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936619"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268560"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -31,17 +31,15 @@ Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody Tab
 
 Zadania zilustrowane w tym przewodniku obejmują:
 
--   Tworzenie nowego **aplikacja interfejsu Windows Forms** projektu.
+-  Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
--   Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
+-  Określa elementy w [okna źródeł danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Określa elementy w [okna źródeł danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-  Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
 
--   Tworzenie formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
+-  Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.
 
--   Modyfikowanie kilku rekordów w każdej tabeli w zestawie danych.
-
--   Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.
+-  Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -63,17 +61,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 ## <a name="create-the-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
 
-Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**. Przypisanie nazwy do projektu jest opcjonalny w tym kroku, ale firma Microsoft będzie nadaj mu nazwę ponieważ projektu zostaną zapisane później.
-
-1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
-
-2. Rozwiń **Visual C#** lub **języka Visual Basic** w okienku po lewej stronie, a następnie zaznacz **pulpitu Windows**.
-
-3. W środkowym okienku wybierz **Windows Forms App** typ projektu.
-
-4. Nadaj projektowi nazwę **UpdateMultipleTablesWalkthrough**, a następnie wybierz **OK**.
-
-     **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
+Utwórz nową **Windows Forms App** projekt albo C# lub Visual Basic. Nadaj projektowi nazwę **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Utwórz źródło danych
 
@@ -89,11 +77,11 @@ Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **
 
 4. Na **wybierz połączenie danych** ekranu, wykonaj jedną z następujących czynności:
 
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
          —lub—
 
-    -   Wybierz **nowe połączenie** otworzyć **Dodawanie/modyfikowanie połączenia** okno dialogowe.
+    - Wybierz **nowe połączenie** otworzyć **Dodawanie/modyfikowanie połączenia** okno dialogowe.
 
 5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.
 

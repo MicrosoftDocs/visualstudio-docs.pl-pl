@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 079c1ee65ba5691504752e0f7d4e1f46ad06c525
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933863"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268510"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -23,11 +23,11 @@ Szablony projektów i elementów zapewniają do ponownego użycia udostępniają
 
 ## <a name="visual-studio-templates"></a>szablony Visual Studio
 
-Liczba szablonów elementów i projektów wstępnie zdefiniowane są instalowane z programem Visual Studio. Na przykład, Visual Basic i C# **Windows Forms App** i **biblioteki klas** szablonów, które są wyświetlane w **nowy projekt** okno dialogowe są szablony projektów. Pozycja Pokaż szablony w **Dodaj nowy element** okna dialogowego i zawierają elementy, takie jak pliki kodu, plików XML, strony HTML i arkusze stylów.
+Liczba szablonów elementów i projektów wstępnie zdefiniowane są instalowane z programem Visual Studio. Te szablony, takie jak **aplikacji sieci Web ASP.NET** i **biblioteki klas** szablony są dostępne do wyboru podczas tworzenia nowego projektu. Szablony elementów, takich jak pliki kodu, plików XML, strony HTML i arkusze stylów, są wyświetlane w **Dodaj nowy element** okna.
 
 Te szablony zapewniają punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów lub rozszerzania istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablonów elementów może mieścić się stopnia skomplikowania z jednego pustego pliku, który ma określone rozszerzenie pliku, wielu plików kodu źródłowego z kodem skróconym, informacje o projektancie plików i zasoby osadzone.
 
-Możesz użyć zainstalowanych szablonów w **nowy projekt** i **Dodaj nowy element** okien dialogowych, tworzyć własne szablony lub pobrać i używać szablonów utworzonych przez społeczność. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
+Można użyć zainstalowanych szablonów, tworzyć własne niestandardowe szablony lub pobrać i używać szablonów utworzonych przez społeczność. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Zawartość szablonu
 
@@ -35,13 +35,35 @@ Wszystkie szablony projektów i elementów, czy zainstalowany za pomocą program
 
 - Pliki, które można utworzyć, jeśli jest używany szablon. Te pliki obejmują pliki kodu źródłowego, zasobów osadzonych, plików projektu i tak dalej.
 
-- Jeden *.vstemplate* zawierający metadane potrzebne do wyświetlenia szablonu w **nowy projekt** i **Dodaj nowy element** okna dialogowe i umożliwia utworzenie projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametry szablonu](../ide/template-parameters.md).
+::: moniker range="vs-2017"
+
+- A *.vstemplate* pliku, który zawiera metadane potrzebne do tworzenia projektu lub elementu z szablonu i wyświetlić szablon w **nowy projekt** i **Dodaj nowy element** dla systemu Windows.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- A *.vstemplate* pliku, który zawiera metadane potrzebne do tworzenia projektu lub elementu z szablonu i wyświetlić szablon na **Utwórz nowy projekt** strony lub **Dodaj nowy element** okna.
+
+::: moniker-end
+
+   Aby uzyskać więcej informacji na temat *.vstemplate* plików, zobacz [parametry szablonu](../ide/template-parameters.md).
 
 Jeśli te pliki są kompresowane do *zip* pliku i umieścić w odpowiednim folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
 
-- Szablony projektów są wyświetlane w **nowy projekt** okno dialogowe.
+::: moniker range="vs-2017"
 
-- Szablony elementu są wyświetlane w **Dodaj nowy element** okno dialogowe.
+- Szablony projektów są wyświetlane w **nowy projekt** okna.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Szablony projektu pojawiają się na **Utwórz nowy projekt** strony.
+
+::: moniker-end
+
+- Szablony elementu są wyświetlane w **Dodaj nowy element** okna.
 
 Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [jak: Lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 

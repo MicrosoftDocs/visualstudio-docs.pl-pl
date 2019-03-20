@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928429"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268635"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 
@@ -46,17 +46,13 @@ W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracj
 
  Po skonfigurowaniu konfiguracje, które mają można ustawić właściwości projektu, które są odpowiednie dla tych konfiguracji.
 
-### <a name="to-set-properties-based-on-configurations"></a>Aby ustawić właściwości na podstawie konfiguracji
+### <a name="set-properties-based-on-configurations"></a>Ustawianie właściwości na podstawie konfiguracji
 
--   W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.
+Aby ustawić właściwości na podstawie konfiguracji, w **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**. Można ustawić właściwości dla Twojej konfiguracji. Na przykład dla konfiguracji wydania, można określić czy kod jest zoptymalizowany, gdy rozwiązanie jest stworzone i dla konfiguracji debugowania, można określić, że `DEBUG` symbol kompilacja warunkowa jest uwzględniany.
 
-     **Stron właściwości** zostanie otwarte okno.
+Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [Zarządzaj właściwościami projektu i rozwiązania](../ide/managing-project-and-solution-properties.md).
 
-     Można ustawić właściwości dla Twojej konfiguracji. Na przykład dla konfiguracji wydania, można określić czy kod jest zoptymalizowany, gdy rozwiązanie jest stworzone i dla konfiguracji debugowania, można określić, że `DEBUG` symbol kompilacja warunkowa jest uwzględniany. Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [Zarządzaj właściwościami projektu i rozwiązania](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Tworzenie i modyfikowanie konfiguracji projektu
-
-### <a name="to-create-a-project-configuration"></a>Aby utworzyć konfigurację projektu
+## <a name="create-a-project-configuration"></a>Utwórz konfigurację projektu
 
 1.  Otwórz **programu Configuration Manager** okno dialogowe.
 
@@ -72,7 +68,7 @@ W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracj
 
 6.  Aby utworzyć konfigurację całego rozwiązania, w tym samym czasie, zaznacz **nowa konfiguracja rozwiązania Utwórz** pole wyboru.
 
-### <a name="to-rename-a-project-configuration"></a>Aby zmienić konfigurację projektu
+## <a name="rename-a-project-configuration"></a>Zmień nazwę konfiguracji projektu
 
 1.  Otwórz **programu Configuration Manager** okno dialogowe.
 
