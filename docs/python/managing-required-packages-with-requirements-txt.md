@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie zależnościami pakietów przy użyciu pliku requirements.txt
 description: Plik Requirements.txt znajduje się w tym artykule opisano zależności projektu. Jeśli zostanie wyświetlony projektu, który zawiera plik requirements.txt, możesz łatwo zainstalować te zależności w jednym kroku.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924347"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194843"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety przy użyciu pliku requirements.txt
 
@@ -25,11 +25,13 @@ Technicznie rzecz biorąc, nazwy pliku może służyć do śledzenia wymagań (p
 
 - Jeśli został załadowany projekt, który zawiera *requirements.txt* i chcesz, aby zainstalować te pakiety wymienione w tym pliku, rozwiń węzeł **środowiska Python** w węźle **Eksploratora rozwiązań**, a następnie kliknij prawym przyciskiem myszy węzeł środowiska i wybierz **Zainstaluj z pliku requirements.txt**:
 
-    ![Zainstaluj z pliku requirements.txt](media/environments-requirements-txt-install.png)
+    ![Zainstaluj z pliku requirements.txt](media/environments/environments-requirements-txt-install.png)
+
+- Jeśli chcesz zainstalować zależności w środowisku wirtualnym, Utwórz i najpierw aktywować tego środowiska, a następnie użyć **Zainstaluj z pliku requirements.txt** polecenia. Aby uzyskać więcej informacji na temat tworzenia środowiska wirtualnego, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Jeśli masz już niezbędne pakiety zainstalowane w środowisku, należy kliknąć prawym przyciskiem myszy tego środowiska w **Eksploratora rozwiązań** i wybierz **Generovat requirements.txt** do utworzenia niezbędnych plik. Jeśli plik już istnieje, zostanie wyświetlony monit dotyczące konieczność jej zaktualizowania:
 
-    ![Opcje pliku requirements.txt aktualizacji](media/environments-requirements-txt-replace.png)
+    ![Opcje pliku requirements.txt aktualizacji](media/environments/environments-requirements-txt-replace.png)
 
   - **Zastąp cały plik** usuwa wszystkie elementy, komentarze i opcje, które istnieją.
   - **Odśwież istniejące wpisy** wykrywa wymagań dotyczących pakietu i aktualizuje specyfikatory wersji, aby dopasować obecnie zainstalowaną wersję.

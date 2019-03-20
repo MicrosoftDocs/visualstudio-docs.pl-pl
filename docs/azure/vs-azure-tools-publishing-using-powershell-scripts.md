@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: b29cdb878e2d90844ebf08f6591a05378e62e24b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868210"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194765"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -24,7 +24,7 @@ Skrypty te można udostępnić dostosowanych wersji (znany także jako środowis
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Zestaw Azure SDK 2.3 lub nowszy. Zobacz [pobrania programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=624384). (Nie ma potrzeby zestawu SDK usługi Azure, można wygenerować skryptów dla projektów sieci web. Ta funkcja jest dla projektów sieci web, nie ról sieci web w usługach w chmurze).
+* Visual Studio 2015 lub nowszym z **obciążenie platformy Azure** zainstalowane lub Visual Studio 2013 i usługa Azure SDK 2.3 lub nowszy. Zobacz [pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc). (Nie ma potrzeby zestawu SDK usługi Azure, można wygenerować skryptów dla projektów sieci web. Ta funkcja jest dla projektów sieci web, nie ról sieci web w usługach w chmurze).
 * Program Azure PowerShell 0.7.4 lub nowszej. Zobacz [jak zainstalować i skonfigurować program Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) lub nowszej.
 
@@ -242,7 +242,7 @@ Aby zautomatyzować tworzenie projektu, Dodaj kod, który wywołuje program MSBu
     }
     ```
 
-1. Zastąp `New-WebDeployPackage` z następującym kodem i zastąp symbole zastępcze w wywołaniach konstruowanie wiersza `$msbuildCmd`. Ten kod jest w programie Visual Studio 2017. Jeśli używasz programu Visual Studio 2015, zmień **VisualStudioVersion** właściwości `14.0` (`12.0` dla programu Visual Studio 2013).
+1. Zastąp `New-WebDeployPackage` z następującym kodem i zastąp symbole zastępcze w wywołaniach konstruowanie wiersza `$msbuildCmd`. Ten kod jest dla programu Visual Studio 2019 r. Jeśli używasz programu Visual Studio 2017, zmień **VisualStudioVersion** właściwości `15.0`, "14.0" dla programu Visual Studio 2015 lub `12.0` dla programu Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ Aby zautomatyzować tworzenie projektu, Dodaj kod, który wywołuje program MSBu
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

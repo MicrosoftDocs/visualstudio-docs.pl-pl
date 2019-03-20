@@ -8,12 +8,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763147"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194608"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,5 +175,5 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript](walkthrough-creating-an-sdk-using-javascript.md)   
  [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868146"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195180"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -418,7 +418,7 @@ System projektów języka Visual C++ opiera się na [systemu projektu programu V
 
 Uzyskać ogólnego projektowania, zobacz [rozszerzalność platformy — część 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) i [rozszerzalność platformy — część 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-W prostych słowach na stronach właściwości widzisz w **właściwości projektu** okno dialogowe dla projektu w języku C++ są definiowane przez *reguły* plików. Plik reguł określa zbiór właściwości, które można wyświetlić na stronie właściwości i jak i, w którym ma zostać zapisany w projekcie. Reguła pliki są pliki XML, które używają formatu pliku Xaml. W opisano typy służący do serializowania ich [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Aby uzyskać więcej informacji na temat użycia reguły plików w projektach zobacz [pliki reguł XML strony właściwości](/cpp/ide/property-page-xml-files).
+W prostych słowach na stronach właściwości widzisz w **właściwości projektu** okno dialogowe dla projektu w języku C++ są definiowane przez *reguły* plików. Plik reguł określa zbiór właściwości, które można wyświetlić na stronie właściwości i jak i, w którym ma zostać zapisany w projekcie. Reguła pliki są pliki XML, które używają formatu pliku Xaml. W opisano typy służący do serializowania ich [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Aby uzyskać więcej informacji na temat użycia reguły plików w projektach zobacz [pliki reguł XML strony właściwości](/cpp/build/reference/property-page-xml-files).
 
 Pliki reguły muszą zostać dodane do `PropertyPageSchema` grupy elementów:
 
@@ -636,8 +636,8 @@ Aby uzyskać informacje na temat tworzenia plików VSIX, zobacz [wysyłania rozs
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-System kompilacji firmy Microsoft ([MSBuild](../msbuild/msbuild.md)) zapewnia aparat kompilacji i rozszerzonego formatu oparty na składni XML dla plików projektu. Należy się zapoznać z basic [pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) i jak [MSBuild w języku Visual C++](/cpp/build/msbuild-visual-cpp-overview) systemu projektu działa w celu rozszerzenia języka Visual C++.
+System kompilacji firmy Microsoft ([MSBuild](../msbuild/msbuild.md)) zapewnia aparat kompilacji i rozszerzonego formatu oparty na składni XML dla plików projektu. Należy się zapoznać z basic [pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) i jak [MSBuild w języku Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) systemu projektu działa w celu rozszerzenia języka Visual C++.
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) udostępnia rozszerzenie interfejsów API, które są używane przez CPS i system projektów języka Visual C++. Omówienie sposobu używania MEF przez CPS, zobacz [CPS i MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) w [VSProjectSystem omówienie MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Można dostosować istniejący system kompilacji do dodawania kroków kompilacji lub nowych typów plików. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) i [Praca z właściwościami projektu](/cpp/ide/working-with-project-properties).
+Można dostosować istniejący system kompilacji do dodawania kroków kompilacji lub nowych typów plików. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) i [Praca z właściwościami projektu](/cpp/build/working-with-project-properties).

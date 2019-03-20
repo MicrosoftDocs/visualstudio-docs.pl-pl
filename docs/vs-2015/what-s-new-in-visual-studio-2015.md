@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844142"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195167"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Aby dowiedzieć się więcej na temat wiele ulepszeń oraz nowe funkcje w progra
 
      [Debugowanie](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) i [debugowania na urządzeniu](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) w [przewodników dla deweloperów platformy Xamarin](http://developer.xamarin.com/guides) opisano środowisko debugowania.
 
--   **C++ / Android**. Użyj [Visual C++ for Cross-Platform Mobile Development](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) szablony wraz z narzędziami innych firm, takich jak [zestawu Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) może tworzyć aplikacje natywne dla Windows i Android.
+-   **C++ / Android**. Użyj [Visual C++ for Cross-Platform Mobile Development](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) szablony wraz z narzędziami innych firm, takich jak [zestawu Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) może tworzyć aplikacje natywne dla Windows i Android.
 
 ## <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
- Aby dowiedzieć się, jak what's new in debugowania, zobacz [co nowego w debugerze programu Visual Studio 2015 jest](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Aby uzyskać informacje o nowościach w diagnostyce, zobacz [What's New in Profiling Tools](./profiling/what-s-new-in-profiling-tools.md).
+Aby uzyskać informacje o nowościach w diagnostyce, zobacz [What's New in Profiling Tools](./profiling/what-s-new-in-profiling-tools.md).
 
- Następujące elementy są nowe lub udoskonalone narzędzia, które wykonują różne rodzaje diagnostykę i analizę w kodzie:
+Następujące elementy są nowe lub udoskonalone narzędzia, które wykonują różne rodzaje diagnostykę i analizę w kodzie:
 
 ### <a name="perftips"></a>Perftip
  Perftip wyświetlić czas wykonywania metody podczas debugowania, dzięki któremu można szybko wykrywaj wąskie gardła, bez konieczności wywoływania profilera. Aby rozpocząć pracę, zobacz [Perftip: Wydajność informacji o skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

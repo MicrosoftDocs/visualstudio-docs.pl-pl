@@ -1,7 +1,7 @@
 ---
 title: Zarządzaj projektami aplikacji języka Python
 description: Projekty w programie Visual Studio Zarządzanie zależnościami między plikami i złożoność relacji w aplikacji.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b75c3c7a6a2c5496896949a48c2210bb1b5f170
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983471"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194344"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -54,7 +54,16 @@ Każdy projekt języka Python ma jeden plik startowy przypisane, wyświetlany cz
 >
 > Jeśli chcesz nie zamykaj okna dane wyjściowe jakiegokolwiek powodu, kliknij prawym przyciskiem myszy projekt, wybierz opcję **właściwości**, wybierz opcję **debugowania** kartę, a następnie dodaj `-i` do **Interpreter argumentów**  pola. Ten argument powoduje, że interpreter przejść do trybu interaktywnego, po zakończeniu działania programu, a tym samym utrzymywanie okna otwarte do momentu wprowadzenia **Ctrl**+**Z**  >  **Enter** aby wyjść.
 
-Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innego środowiska (w tym środowisk wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu, wybierz opcję **środowiska Python Dodaj/Usuń**, i Wybierz te, które chcesz. Aby zmienić aktywnego środowiska, kliknij prawym przyciskiem myszy wymagane środowisko, a następnie wybierz **aktywować środowisko** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innego środowiska (w tym środowisk wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu, wybierz opcję **środowiska Python Dodaj/Usuń**, i Wybierz te, które chcesz.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Nowy projekt zawsze jest skojarzony z domyślnym środowisku Python globalnego. Aby skojarzyć projekt z innego środowiska (w tym środowisk wirtualnych), kliknij prawym przyciskiem myszy **środowiska Python** węzła projektu, wybierz opcję **Dodaj środowiska...** i wybierz te, które mają. Można również użyć formantu listy rozwijanej środowisk na pasku narzędzi, aby wybrać i środowisko lub Dodaj do projektu.
+
+![Dodaj polecenie środowiska na pasku narzędzi języka Python](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Zmiany aktywnego środowiska, kliknij prawym przyciskiem myszy żądany środowiska w **Eksploratora rozwiązań** i wybierz **aktywować środowisko** jak pokazano poniżej. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 
 ![Aktywowanie środowisko na potrzeby projektu języka Python](media/projects-activate-environment.png)
 

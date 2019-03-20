@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 91f454bec6854d4450850f970cedb197ea005f25
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873376"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194940"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017
 
@@ -229,7 +229,7 @@ W tym samouczku używamy programu Visual Studio 2017.
 
 W większości konfiguracji wymagane porty są otwarte przez instalację programu ASP.NET i zdalny debuger. Jednak jeśli rozwiązujesz problemy z wdrażaniem aplikacji znajduje się za zaporą, może być konieczne Sprawdź, czy odpowiednie porty są otwarte.
 
-Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Wymagane porty:
 

@@ -1,6 +1,6 @@
 ---
 title: Tworzenie rozszerzenia za pomocą pakietu VSPackage | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -8,22 +8,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f5e7b94c4aa8ff4bcdea88741c8be0319bcc16
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316279"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194538"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Tworzenie rozszerzenia za pomocą pakietu VSPackage
+
 W tym instruktażu dowiesz się, jak utworzyć projekt VSIX i Dodaj element projektu pakietu VSPackage. Używamy pakietu VSPackage można pobrać usługi powłoki interfejsu użytkownika, aby wyświetlić okno komunikatu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
 Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vspackage"></a>Tworzenie pakietu VSPackage
 
-1. Utwórz projekt VSIX, o nazwie **FirstPackage**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.
+1. Utwórz projekt VSIX, o nazwie **FirstPackage**. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
 
 2. Po otwarciu projektu, należy dodać szablon elementu pakietu Visual Studio o nazwie **FirstPackage**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *FirstPackage.cs*.
 
@@ -34,9 +36,10 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
 4. W doświadczalnym wystąpieniu Otwórz **narzędzia** > **rozszerzenia i aktualizacje** okna. Powinien zostać wyświetlony **FirstPackage** rozszerzenia w tym miejscu. (Jeśli otworzysz **rozszerzenia i aktualizacje** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstPackage**).
 
 ## <a name="load-the-vspackage"></a>Ładowanie pakietu VSPackage
-W tym momencie rozszerzenia nie zostanie załadowany, ponieważ nie widać niczego, co powoduje, że do załadowania. Zazwyczaj można załadować rozszerzenia podczas interakcji z jego interfejsie użytkownika (kliknięcia polecenia menu, otwierając okno narzędzia) lub przez określenie, czy pakietu VSPackage powinny zostać załadowane w określonym kontekście interfejsu użytkownika. Aby uzyskać więcej informacji na temat ładowania interfejsu użytkownika i pakietów VSPackage kontekstów zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md). Do wykonania tej procedury pokażemy sposób ładowania pakietu VSPackage, gdy rozwiązanie jest otwarte.
 
-1. Otwórz *FirstPackage.cs* pliku. Wyszukaj deklaracji `FirstPackage` klasy. Zamień istniejące atrybuty z następujących czynności:
+Rozszerzenie nie ładuje w tym momencie, ponieważ nie widać niczego, co powoduje, że można załadować. Zazwyczaj można załadować rozszerzenia podczas interakcji z jego interfejsie użytkownika (kliknięcia polecenia menu, otwierając okno narzędzia) lub przez określenie, czy pakietu VSPackage powinny zostać załadowane w określonym kontekście interfejsu użytkownika. Aby uzyskać więcej informacji na temat ładowania interfejsu użytkownika i pakietów VSPackage kontekstów zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md). Do wykonania tej procedury pokażemy sposób ładowania pakietu VSPackage, gdy rozwiązanie jest otwarte.
+
+1. Otwórz *FirstPackage.cs* pliku. Wyszukaj deklaracji `FirstPackage` klasy. Zastąp istniejące atrybuty z następującymi atrybutami:
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]

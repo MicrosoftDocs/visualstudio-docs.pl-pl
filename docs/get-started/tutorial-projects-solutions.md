@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bac0907f08db03e56b32a85e9d228c67d0aae724
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069934"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194648"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
@@ -164,7 +164,7 @@ Będziemy używać nowego projektu testu jednostkowego do testowania naszych met
    End Class
    ```
 
-   Zobaczysz czerwony symbol "falista" w obszarze część kodu. Naprawimy ten błąd, wprowadzając projekt testowy [przyjaznego zestawu](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) do **QuickDate** projektu.
+   Zobaczysz czerwony symbol "falista" w obszarze część kodu. Naprawimy ten błąd, wprowadzając projekt testowy [przyjaznego zestawu](/dotnet/standard/assembly/friend-assemblies) do **QuickDate** projektu.
 
 1. Ponownie **QuickDate** otwarty projekt *Calendar.cs* plik, jeśli nie jest jeszcze otwarty, a następnie dodaj następujący kod [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) i <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybutu do góry pliku, aby rozwiązać problem w projekcie testowym.
 

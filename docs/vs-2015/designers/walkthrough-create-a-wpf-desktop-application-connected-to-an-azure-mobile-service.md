@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803734"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195076"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Przewodnik: Tworzenie aplikacji WPF pulpitu podłączone do usługi mobilnej Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ Windows Presentation Foundation (WPF) umożliwia szybkie tworzenie nowoczesnych 
     > [!NOTE]
     >  Może być konieczna zmiana liczbowej części adresu URL. Platforma Microsoft Azure wymaga unikatowego adresu URL dla każdej usługi mobilnej.  
   
-     To ustawienie adresu URL usługi *https://wpfquickstart01.azure-mobile.net/*.  
+     To ustawienie adresu URL usługi `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  W **bazy danych** , wybierz opcję bazy danych. Ponieważ jest to aplikacja, która prawdopodobnie nie będzie otrzymywał wiele użytkowania, należy wybrać **tworzenie bezpłatnej bazy danych SQL o rozmiarze 20MB** opcji lub wybierz bezpłatnej bazy danych już skojarzony z subskrypcją.  
   

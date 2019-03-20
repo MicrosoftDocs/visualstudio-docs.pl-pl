@@ -12,14 +12,16 @@ helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2d86c7f1b7801da0bc4281848b602e60fa6e00
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870263"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194984"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -174,6 +176,13 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.1 (wersja zapoznawcza) 1 | Wersja zapoznawcza | 7 marca 2017 r. | 15.0.26304.0 |
 | 15.0.0 | Wydanie | 7 marca 2017 r. | 15.0.26228.4 |
 
+> [!NOTE]
+> Aby uzyskać więcej informacji na temat numerów kompilacji i wydania dla następnej wersji programu Visual Studio, zobacz [Visual Studio 2019 numery wersji i daty wydania](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) strony.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2019 r, do daty.
@@ -194,6 +203,8 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 16.0.0 | Preview 2 | 23 stycznia 2019 r. | 16.0.28522.59 |
 | 16.0.0 | 1.1 (wersja zapoznawcza) | 10 grudnia 2018 r. | 16.0.28408.50 |
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

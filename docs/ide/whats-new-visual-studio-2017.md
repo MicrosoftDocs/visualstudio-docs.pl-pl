@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 277d02a64992d682d0d1f709c31c564f65cfac15
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069648"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195063"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -131,7 +131,7 @@ Testowanie automatyczne jest kluczową rolę w dowolnym potoku metodyki DevOps. 
 
 Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [potoku CI/CD dla testów automatycznych w infrastrukturze DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) wpis w blogu.
 
-A, aby uzyskać więcej informacji na temat nowości w [narzędzi Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozszerzenia DevLabs zobacz [zatwierdzenia z pewnością: Zatwierdź jakość kodu w czasie](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) wpis w blogu.
+A, aby uzyskać więcej informacji na temat nowości w [narzędzi Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozszerzenia DevLabs zobacz [zatwierdzenia z pewnością: Zatwierdź jakość kodu w czasie](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) wpis w blogu.
 
 ### <a name="visual-studio-ide-enhancements"></a>Ulepszenia usługi Visual Studio IDE
 
@@ -188,7 +188,7 @@ Firma Microsoft została odświeżona środowisko nawigacji, aby pomóc Ci rozpo
 
   ![Wizualizator struktury w usłudze Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Aby uzyskać więcej informacji na temat nowych funkcji, zobacz [produktywność w programie Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) wpis w blogu przez Wilson Thomas znacznika.
+Aby uzyskać więcej informacji na temat nowych funkcji, zobacz [programu Visual Studio 2017: Produktywność, wydajności i partnerów](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) wpis w blogu.
 
 ### <a name="visual-c"></a>Visual C++
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323805"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194696"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -24,17 +24,17 @@ Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) z **obciążenie platformy Azure** zaznaczone, lub starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 r. lub nowszej (zobacz [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) za pomocą **obciążenie platformy Azure** wybrane. Można również użyć starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz to zrobić [utworzyć konto bezpłatnej wersji próbnej](http://go.microsoft.com/fwlink/?LinkId=623901) lub [aktywować korzyści dla subskrybentów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Zaznacz, aby wyświetlić Eksplorator chmury **widoku** > **programu Cloud Explorer** na pasku menu.
+> Aby wyświetlić programu Cloud Explorer, naciśnij klawisz **Ctrl**+**funkcji pytania i odpowiedzi** do wywołania **Szybkie uruchamianie**, a następnie wprowadź **Eksploratora chmury**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Dodaj platformę Azure konta do Eksploratora chmury
 
-Aby wyświetlić zasoby skojarzone z kontem platformy Azure, musisz dodać konto do programu Cloud Explorer.
+Aby wyświetlić zasoby skojarzone z kontem platformy Azure, należy najpierw dodać konto do **programu Cloud Explorer**.
 
-1. W **programu Cloud Explorer**, wybierz opcję **ustawienia konta platformy Azure**.
+1. W **programu Cloud Explorer**, wybierz **zarządzania kontami** przycisku.
 
    ![Ikona ustawień konta Azure Eksploratora chmury](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

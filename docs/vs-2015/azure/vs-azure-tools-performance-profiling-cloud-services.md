@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4d3d5de46006129f7609a990bf1a4cca5a881123
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869355"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193888"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -55,7 +55,7 @@ Gdy używasz programu profilującego, można zbierać dane, po uruchomieniu usł
 Zazwyczaj można symulować ładowanie do usługi test cloud services w normalnych lub warunkach obciążenia.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilowanie usługi w chmurze na platformie Azure
-Podczas publikowania usługi w chmurze w programie Visual Studio, możesz profilu usługi i określ ustawienia profilowania, dające informacje, które mają. Sesję profilowania jest uruchomiony dla każdego wystąpienia roli. Aby uzyskać więcej informacji o sposobie publikowania usługi w programie Visual Studio, zobacz [publikowanie do usługi w chmurze platformy Azure z programu Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Podczas publikowania usługi w chmurze w programie Visual Studio, możesz profilu usługi i określ ustawienia profilowania, dające informacje, które mają. Sesję profilowania jest uruchomiony dla każdego wystąpienia roli. Aby uzyskać więcej informacji o sposobie publikowania usługi w programie Visual Studio, zobacz [publikowanie do usługi w chmurze platformy Azure z programu Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 Aby dowiedzieć się więcej na temat profilowanie ich wydajności w programie Visual Studio, zobacz [profilowanie wydajności — przewodnik dla początkujących](https://msdn.microsoft.com/library/azure/ms182372.aspx) i [analizowanie wydajności aplikacji przy użyciu narzędzi profilowania](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 

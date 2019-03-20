@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbebaa0de1abebcffea59889a0f58d51d947247
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194181"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
 Domyślnie instalowania obciążenia programowania języka Python w programie Visual Studio 2017 i nowszych wersjach instaluje Python 3 (wersja 64-bitowa). Opcjonalnie możesz zainstalować 32-bitowych i 64-bitowe wersje języka Python 2 i 3 języka Python, wraz z Miniconda (Visual Studio 2019) albo Anaconda 2/Anaconda 3 (Visual Studio 2017), zgodnie z opisem w [instalacji](installing-python-support-in-visual-studio.md).
+
+::: moniker range=">=vs-2019"
+Alternatywnie możesz zainstalować interpreterów standardowego języka python z **Dodaj środowisko** okna dialogowego. Wybierz **Dodaj środowisko** polecenia w pliku **środowiska Python** okna lub narzędzi języka Python wybierz **instalację języka Python** karcie wskazać, który tłumaczy do Zainstaluj i wybierz **zainstalować**.
+::: moniker-end
 
 Można też ręcznie zainstalują dowolną z interpretery wymienione w poniższej tabeli opisano poza Instalatora programu Visual Studio. Na przykład po zainstalowaniu pakietu Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio. Można także zainstalować tłumacza ręcznie Jeśli, na przykład, nowsza wersja dostępna nie jeszcze są widoczne w Instalatorze programu Visual Studio.
 

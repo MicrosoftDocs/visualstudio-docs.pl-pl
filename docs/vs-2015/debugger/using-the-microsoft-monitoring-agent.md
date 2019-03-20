@@ -9,19 +9,19 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3d1a14faaaefd5b95dc9dc32800f9140897b076
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c6b5e0718bfde2917d6a2c069d423c3292beb35
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768165"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195198"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [przy użyciu programu Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) w witrynie docs.microsoft.com.
 
-Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
+Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/azure-monitor/app/app-insights-overview) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
   
 > [!NOTE]
 >  Może również zbierać dane diagnostyczne i metody funkcji IntelliTrace dla sieci web programu SharePoint, WPF i Windows aplikacje formularza na komputerach zdalnych, bez wprowadzania zmian w środowisku docelowym przy użyciu **autonomiczny moduł zbierający IntelliTrace**. Autonomiczny moduł zbierający ma większy wpływ na wydajność niż uruchomienie programu Microsoft Monitoring Agent **Monitor** trybu. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  

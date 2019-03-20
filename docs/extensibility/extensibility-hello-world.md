@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160709"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194739"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Witaj Świecie
 
@@ -44,7 +44,7 @@ Przed rozpoczęciem upewnij się, że zainstalowano **programowanie rozszerzeń 
 
 ::: moniker range="vs-2017"
 
-Krok 1. Z **pliku** menu, wybierz opcję **nowy projekt**.
+Krok 1. Z **pliku** menu, wybierz opcję **New** > **projektu**.
 
 Krok 2. W polu wyszukiwania w prawym górnym rogu, wpisz "vsix", a następnie wybierz wizualizację C# **projekt VSIX**. Wprowadź "nazwę HelloWorld" **nazwa** u dołu okna dialogowego, a następnie wybierz pozycję **OK**.
 
@@ -58,7 +58,7 @@ Jeśli potrzebujesz opuścić ten samouczek i wrócić do niego, można znaleź�
 
 ::: moniker range=">=vs-2019"
 
-Krok 1. Z **pliku** menu, wybierz opcję **nowy projekt**. Wyszukaj frazę "vsix" i wybierz wizualizację C# **projekt VSIX** i następnie **dalej**.
+Krok 1. Z **pliku** menu, wybierz opcję **New** > **projektu**. Wyszukaj frazę "vsix" i wybierz wizualizację C# **projekt VSIX** i następnie **dalej**.
 
 Krok 2. Wprowadź "nazwę HelloWorld" **Nazwa projektu** i wybierz **Utwórz**.
 
@@ -84,7 +84,7 @@ Nowy plik poleceń jest widoczna w **Eksploratora rozwiązań**. W obszarze **za
 
 ## <a name="modify-the-source-code"></a>Modyfikowanie kodu źródłowego
 
-Ten punkt, polecenia i przycisk tekst jest generowany automatycznie i nie bardzo interesujące. Jeśli chcesz wprowadzić zmiany, można zmodyfikować pliku VSCT i pliku CS.
+W tym momencie polecenia i tekst przycisku są wygenerowany automatycznie i nie bardzo interesujące. Jeśli chcesz wprowadzić zmiany, można zmodyfikować pliku VSCT i pliku CS.
 
 * Plik VSCT jest, gdzie możesz można zmienić nazwy poleceń, a także określić, gdzie go w systemie polecenia programu Visual Studio. Gdy eksplorujesz pliku VSCT zauważysz komentarze objaśniające, jakie każdej sekcji VSCT formanty kodu.
 

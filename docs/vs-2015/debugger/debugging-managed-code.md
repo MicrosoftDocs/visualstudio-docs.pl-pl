@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5510090424480bb47ce5d03584e7926fa00a4dc4
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567226"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194569"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +82,6 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
   
  [Debugowanie skryptów i aplikacji sieci Web](../debugger/debugging-web-applications-and-script.md)  
  Zawiera opis typowych problemów debugowania i technik, które można napotkać podczas debugowania skryptów i aplikacji sieci Web.  
-  
- [Co nowego w debugerze programu Visual Studio 2015](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md)  
  Opis nowych funkcji debugowania, dodane w tej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Debugowanie strony głównej](../debugger/debugging-in-visual-studio.md)  

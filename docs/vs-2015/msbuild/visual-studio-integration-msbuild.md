@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763313"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194512"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio zawiera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] d
   
  W tym temacie opisano specyficzne aspekty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]firmy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hostingu, które należy uwzględnić podczas dostosowywania projektów i plików .targets, które mają zostać załadowane i skompilowane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pomogą Ci one upewnić się, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkcje, takie jak IntelliSense i debugowanie, pracują dla Twojego własnego projektu.  
   
- Aby uzyskać informacji na temat projektów w języku C++, zobacz [pliki projektu](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ Aby uzyskać informacji na temat projektów w języku C++, zobacz [pliki projektu](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Rozszerzenia nazwy pliku projektu  
  MSBuild.exe rozpoznaje wszystkie rozszerzenia nazw plików projektu pasujących do wzorca. * proj. Jednak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoznaje tylko podzbiór tych rozszerzeń nazw plików projektu, które określają system projektu charakterystyczny, który załaduje projekt. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie ma neutralny językowo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] systemu projektu opartego na.  

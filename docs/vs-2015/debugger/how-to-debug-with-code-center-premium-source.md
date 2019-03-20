@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2af674f00c3e6aa1fd50919158cfcdfce379287e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868958"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193910"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Instrukcje: Debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,4 +142,4 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
 ## <a name="see-also"></a>Zobacz też  
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Code Center Premium](https://www.microsoft.com/sharedsource/code-center-premium.aspx)
+ [Code Center Premium](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)

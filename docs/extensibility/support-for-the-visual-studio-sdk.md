@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873444"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193899"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat sposobu rozszerzenia programu Visual Studio zintegrowane środowisko programistyczne (IDE).
@@ -54,9 +54,9 @@ Przykłady "open source" z zestawu SDK rozszerzeń można znaleźć w witrynie G
 
 ### <a name="developer-tools-support"></a>Obsługa narzędzi dla deweloperów
 
-Można także nabyć w pomocy technicznej. Różnych ofert pomocy technicznej są dostępne w obszarze narzędzi dla deweloperów w [Microsoft Help i centrach obsługi technicznej](http://go.microsoft.com/fwlink/?LinkID=82383).
+Można także nabyć w pomocy technicznej. Różnych ofert pomocy technicznej są dostępne w obszarze narzędzi dla deweloperów w [Microsoft Help i centrach obsługi technicznej](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Klienci, którzy chcą korzystać [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] do tworzenia złożonych pakietów można rozważyć zakup planu pomocy technicznej Premier umowy z firmą Microsoft. Aby uzyskać więcej informacji, zobacz [pomocy technicznej Microsoft Premier](https://support.microsoft.com/premier). Dla małych firm [pomoc techniczna dla partnerów korzyści](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) może być atrakcyjną alternatywą do tradycyjnych pomocy technicznej Premier.
+Klienci, którzy chcą korzystać [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] do tworzenia złożonych pakietów można rozważyć zakup planu pomocy technicznej Premier umowy z firmą Microsoft. Aby uzyskać więcej informacji, zobacz [pomocy technicznej Microsoft Premier](https://support.microsoft.com/premier). Dla małych firm [zaawansowaną pomoc techniczną dla partnerów](https://partner.microsoft.com/support/advanced-cloud-support) może być atrakcyjną alternatywą do tradycyjnych pomocy technicznej Premier.
 
 > [!NOTE]
 > Nie można użyć pomocy technicznej Standard, konsultacji lub uzyskać porady.

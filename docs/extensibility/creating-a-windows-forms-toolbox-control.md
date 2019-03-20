@@ -1,6 +1,6 @@
 ---
 title: Tworzenie Windows Forms kontrolki przybornika | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873012"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194580"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
-Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS) pozwala utworzyć formant, który jest automatycznie dodawany do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.
+
+Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS), umożliwia tworzenie **przybornika** formant, który jest automatycznie dodawane, gdy rozszerzenie jest zainstalowane. W tym przewodniku pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
 Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
+## <a name="create-the-toolbox-control"></a>Tworzenie kontrolki przybornika
+
 Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika niezdefiniowane i zawiera wszystkie funkcje, które jest wymagane, aby dodać formant do **przybornika**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Tworzenie rozszerzenia za pomocą kontrolki przybornika Windows Forms
 
-1. Utwórz projekt VSIX, o nazwie `MyWinFormsControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.
+1. Utwórz projekt VSIX, o nazwie `MyWinFormsControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** okno dialogowe, wyszukując pozycję "vsix".
 
 2. Po otwarciu projektu, Dodaj **kontrolki formularzy Windows Forms przybornika** szablon elementu o nazwie `Counter`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **kontrolki formularzy Windows Forms przybornika**
 
 3. Spowoduje to dodanie kontrolkę użytkownika `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> aby umieścić kontrolkę w **przybornika**, a **Microsoft.VisualStudio.ToolboxControl** wpis zawartości w manifestu VSIX do wdrożenia.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Tworzenie interfejsu użytkownika dla formantu
+
 `Counter` Formant wymaga dwóch kontrolek podrzędnych: <xref:System.Windows.Forms.Label> Aby wyświetlić bieżącą liczbę i <xref:System.Windows.Forms.Button> zresetować liczby 0. Brak kontrolek podrzędnych są wymagane, ponieważ obiekty wywołujące powoduje zwiększenie licznika programowo.
 
 #### <a name="to-build-the-user-interface"></a>Tworzenie interfejsu użytkownika
@@ -58,6 +62,7 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
     |`Button1`|**Text**|Resetuj|
 
 ### <a name="code-the-user-control"></a>Kod kontroli użytkownika
+
 `Counter` Kontroli udostępni metodę, aby zwiększyć licznik, wystąpienie zdarzenia wywoływane, gdy licznik jest zwiększany, **resetowania** przycisk i trzy właściwości do przechowywania bieżąca liczba, tekst wyświetlany i czy ma być wyświetlana lub ukryć **resetowania** przycisku. `ProvideToolboxControl` Atrybut określa, w którym miejscu **przybornika** `Counter` pojawi się kontrolka.
 
 #### <a name="to-code-the-user-control"></a>Do kodu kontrolki użytkownika
@@ -146,13 +151,14 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
     ```
 
 ### <a name="test-the-control"></a>Przetestować formant
+
  Aby przetestować **przybornika** kontrolować, najpierw przetestować w środowisku deweloperskim i przetestować go skompilowanej aplikacji.
 
 #### <a name="to-test-the-control"></a>Aby przetestować formant
 
-1. Naciśnij klawisz **F5**.
+1. Naciśnij klawisz **F5** do **Rozpocznij debugowanie**.
 
-    Tworzy projekt i otwiera drugie wystąpienie eksperymentalne programu Visual Studio ma kontrolę zainstalowane.
+    To polecenie tworzy projekt i otwiera drugie wystąpienie eksperymentalne programu Visual Studio ma kontrolę zainstalowane.
 
 2. W doświadczalnym wystąpieniu programu Visual Studio, należy utworzyć **aplikacja interfejsu Windows Forms** projektu.
 
@@ -199,16 +205,18 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
 16. Kliknij przycisk **testu** do momentu osiągnięcia licznik **5** zamknięciu komunikatu pola każdorazowo.
 
-    **Resetowania** przycisk ponownie jest wyświetlany.
+    **Resetowania** pojawi się przycisk.
 
 17. Kliknij przycisk **resetowania**.
 
     Resetuje licznik **0**.
 
 ## <a name="next-steps"></a>Następne kroki
+
 Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName.vsix* w folderze \bin\debug\ projektu. Kontrolki można wdrożyć, przekazując *.vsix* plików do sieci lub do witryny sieci Web. Gdy użytkownik uruchomi *.vsix* plik, formant został zainstalowany i dodane do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać *.vsix* plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) tak, aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia**  >   **Rozszerzenia i aktualizacje** okna dialogowego.
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)

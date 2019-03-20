@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aa22660853149472ca4b581e0e3d7d346846f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634724"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195222"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Przegląd narzędzi do pomiaru wydajności w programie Visual Studio
 
@@ -25,4 +25,4 @@ Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesor
 
 * [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) uzyskać bardziej szczegółowe informacje na temat narzędzia użycie procesora CPU.
 
-* [Analizowanie użycia pamięci](../profiling/memory-usage.md)do identyfikowania wąskich gardeł wydajności.
+* [Analizowanie użycia pamięci](../profiling/memory-usage.md) do identyfikowania wąskich gardeł wydajności.

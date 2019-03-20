@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 50baba2a5690e370dccd7f458ebfce2d0776d3cd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870983"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194208"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -211,7 +211,7 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
 W większości konfiguracji wymagane porty są otwarte przez instalację programu ASP.NET i zdalny debuger. Jednak może być konieczne Sprawdź, czy porty zostały otwarte.
 
 > [!NOTE]
-> Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/virtual-machines-windows-hero-role).
+> Na Maszynie wirtualnej platformy Azure, należy otworzyć porty za pośrednictwem [sieciowej grupy zabezpieczeń](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Wymagane porty:
 

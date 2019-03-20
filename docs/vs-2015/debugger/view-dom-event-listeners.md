@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c874505ebff1ca50a8e35bb46ad26d096b6145e
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567207"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194981"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
 -   Jeśli `removeEventListener` nie powiedzie się usunąć określony odbiornik, może być wprowadzenie nazywany w innym wystąpieniu obiektu. Możesz użyć [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) metodę, aby rozwiązać ten problem, po dodaniu odbiornika.
 
--   Aby usunąć odbiornik zdarzeń, który został dodany za pomocą [bind — metoda (Function)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) lub korzystając z funkcją anonimową, przechowywać wystąpienie funkcji po dodaniu odbiornika. Oto jeden ze sposobów, aby bezpiecznie korzystać z tego wzorca:
+-   Aby usunąć odbiornik zdarzeń, który został dodany za pomocą [bind — metoda (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) lub korzystając z funkcją anonimową, przechowywać wystąpienie funkcji po dodaniu odbiornika. Oto jeden ze sposobów, aby bezpiecznie korzystać z tego wzorca:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or

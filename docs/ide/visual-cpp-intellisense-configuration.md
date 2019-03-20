@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca04769fb7f9767c1f3ab73aa5cc9052bf81c69b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872275"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194061"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -52,7 +52,7 @@ Aby uzyskać więcej informacji, zobacz [jak: Włączanie funkcji IntelliSense d
 
 ### <a name="open-folder-projects"></a>Otwórz Folder projektów
 
-Upewnij się, że w przypadku projektów CMake #include ścieżki są poprawnie określone w przypadku wszystkich konfiguracji w pliku CMakeLists.txt. Inne typy projektów mogą wymagać pliku CppProperties.json. Aby uzyskać więcej informacji, zobacz [skonfigurować funkcję IntelliSense za pomocą CppProperties.json](/cpp/ide/non-msbuild-projects#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Upewnij się, że ścieżki są prawidłowe dla każdej konfiguracji, która jest zdefiniowana w pliku.
+Upewnij się, że w przypadku projektów CMake #include ścieżki są poprawnie określone w przypadku wszystkich konfiguracji w pliku CMakeLists.txt. Inne typy projektów mogą wymagać pliku CppProperties.json. Aby uzyskać więcej informacji, zobacz [skonfigurować funkcję IntelliSense za pomocą CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Upewnij się, że ścieżki są prawidłowe dla każdej konfiguracji, która jest zdefiniowana w pliku.
 
 Jeśli występuje błąd składni w pliku CppProperties.json, funkcja IntelliSense w plikach, których to dotyczy będą nieprawidłowe. Program Visual Studio wyświetli błąd, w oknie danych wyjściowych.
 
@@ -72,7 +72,7 @@ Istnieją dwie typowe sposoby, w których ten problem występuje w programie Vis
 
    ![Analizator znacznika umożliwia definiowanie istniejącą funkcję](media/vcpp-intellisense-tag-parser-function.png)
 
-Aby rozwiązać tego rodzaju problemy, Dodaj plik o nazwie **cpp.hint** do głównego katalogu rozwiązania. Aby uzyskać więcej informacji, zobacz [pliki wskazówki](/cpp/ide/hint-files).
+Aby rozwiązać tego rodzaju problemy, Dodaj plik o nazwie **cpp.hint** do głównego katalogu rozwiązania. Aby uzyskać więcej informacji, zobacz [pliki wskazówki](/cpp/build/reference/hint-files).
 
 Błędy parsera tagów są wyświetlane w **lista błędów** okna.
 

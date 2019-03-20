@@ -1,6 +1,6 @@
 ---
 title: Tworzenie rozszerzenia za pomocą polecenia Menu | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
@@ -13,22 +13,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9617bd0384de8c7afde8ec9ba1f2c88faa927a43
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316265"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194525"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
+
 W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polecenia menu, który uruchamia program Notatnik.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
 Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-command"></a>Utwórz polecenie menu
 
-1. Utwórz projekt VSIX, o nazwie **FirstMenuCommand**. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.
+1. Utwórz projekt VSIX, o nazwie **FirstMenuCommand**. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
 
 2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **FirstCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *FirstCommand.cs*.
 
@@ -36,11 +38,22 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
 
     Pojawi się doświadczalnym wystąpieniu programu Visual Studio. Aby uzyskać więcej informacji na temat wystąpienia eksperymentalnego zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md).
 
+::: moniker range="vs-2017"
+
 4. W doświadczalnym wystąpieniu Otwórz **narzędzia** > **rozszerzenia i aktualizacje** okna. Powinien zostać wyświetlony **FirstMenuCommand** rozszerzenia w tym miejscu. (Jeśli otworzysz **rozszerzenia i aktualizacje** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstMenuCommand**).
 
-    Teraz przejdź do **narzędzia** menu w eksperymentalnym wystąpieniu. Powinien zostać wyświetlony **wywołania FirstCommand** polecenia. W tym momencie ją po prostu wywołuje okno komunikatu, informujący, że **FirstCommandPackage wewnątrz FirstMenuCommand.FirstCommand.MenuItemCallback()**. Zobaczymy, jak faktycznie Uruchom Notatnik z tego polecenia, w następnej sekcji.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. W doświadczalnym wystąpieniu Otwórz **rozszerzenia** > **Zarządzaj rozszerzeniami** okna. Powinien zostać wyświetlony **FirstMenuCommand** rozszerzenia w tym miejscu. (Jeśli otworzysz **Zarządzaj rozszerzeniami** wystąpienia pracy programu Visual Studio, nie będziesz widzieć **FirstMenuCommand**).
+
+::: moniker-end
+
+Teraz przejdź do **narzędzia** menu w eksperymentalnym wystąpieniu. Powinien zostać wyświetlony **wywołania FirstCommand** polecenia. W tym momencie polecenie wyświetla okno komunikatu, informujący, że **FirstCommandPackage wewnątrz FirstMenuCommand.FirstCommand.MenuItemCallback()**. Zobaczymy, jak faktycznie Uruchom Notatnik z tego polecenia, w następnej sekcji.
 
 ## <a name="change-the-menu-command-handler"></a>Zmień program obsługi poleceń menu
+
 Teraz zaktualizujmy program obsługi poleceń, aby uruchomić program Notatnik.
 
 1. Zatrzymaj debugowanie i wrócić do pracy Twojego wystąpienia programu Visual Studio. Otwórz *FirstCommand.cs* pliku i dodaj następującą instrukcję using:
@@ -64,7 +77,7 @@ Teraz zaktualizujmy program obsługi poleceń, aby uruchomić program Notatnik.
     }
     ```
 
-3. Usuń `MenuItemCallback` metody i Dodaj `StartNotepad` metodę, która będzie po prostu uruchom program Notatnik:
+3. Usuń `MenuItemCallback` metody i Dodaj `StartNotepad` metody, która będzie po prostu uruchom program Notatnik:
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
@@ -80,31 +93,34 @@ Teraz zaktualizujmy program obsługi poleceń, aby uruchomić program Notatnik.
     Można użyć wystąpienia <xref:System.Diagnostics.Process> klasy do uruchamiania dowolnych plików wykonywalnych, nie tylko Notatnik. Wypróbuj ją za pomocą `calc.exe`, na przykład.
 
 ## <a name="clean-up-the-experimental-environment"></a>Wyczyść środowisko eksperymentalne
-Jeśli tworzysz wiele rozszerzeń lub tylko zapoznać się z wynikami z różnymi wersjami kod rozszerzenia, środowiska eksperymentalne mogą przestać działać sposób, w jaki powinien. W takim przypadku należy uruchomić skrypt resetowania. Jest on nazywany **Zresetuj Visual Studio 2015 wystąpienie eksperymentalne programu**, a jego jest dostarczany jako część programu Visual Studio SDK. Ten skrypt umożliwia usunięcie wszystkich odwołań do rozszerzeń z eksperymentalnego środowiska, aby można było zacząć od podstaw.
+
+Jeśli tworzysz wiele rozszerzeń lub tylko zapoznać się z wynikami z różnymi wersjami kod rozszerzenia, środowiska eksperymentalne mogą przestać działać sposób, w jaki powinien. W takim przypadku należy uruchomić skrypt resetowania. Jest on nazywany **Zresetuj wystąpienie eksperymentalne programu Visual Studio**, a jego jest dostarczany jako część programu Visual Studio SDK. Ten skrypt umożliwia usunięcie wszystkich odwołań do rozszerzeń z eksperymentalnego środowiska, aby można było zacząć od podstaw.
 
 Aby przejść do tego skryptu w jeden z dwóch sposobów:
 
-1. Na pulpicie, Znajdź **Zresetuj Visual Studio 2015 wystąpienie eksperymentalne programu**.
+1. Na pulpicie, Znajdź **Zresetuj wystąpienie eksperymentalne programu Visual Studio**.
 
 2. W wierszu polecenia Uruchom następujące polecenie:
 
-    ```
-    <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE
+    ```xml
+    <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
 
 ## <a name="deploy-your-extension"></a>Wdrażanie rozszerzenia
+
 Teraz, gdy masz uruchomiony sposób, który ma rozszerzenie narzędzia, nadszedł czas na zastanów się, udostępniając je znajomymi. Może to być proste, jak długo mają zainstalowanego programu Visual Studio 2015. Wszystkie trzeba je wysłać *.vsix* utworzony plik. (Należy ją skompilować w trybie wydania.)
 
 Możesz znaleźć *.vsix* pliku dla tego rozszerzenia w *FirstMenuCommand* katalogu bin. W szczególności przy założeniu, że utworzone konfiguracji wydania, będzie:
 
 *\<katalog kodu > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*
 
-Aby zainstalować rozszerzenie, przyjaciela musi Zamknij wszystkie otwarte wystąpienia programu Visual Studio, a następnie kliknij dwukrotnie *.vsix* pliku, co umożliwia wyświetlenie **Instalator VSIX**. Pliki są kopiowane do *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* katalogu.
+Aby zainstalować rozszerzenie, przyjaciela musi Zamknij wszystkie otwarte wystąpienia programu Visual Studio, a następnie kliknij dwukrotnie *.vsix* pliku, co umożliwia wyświetlenie **Instalator VSIX**. Pliki są kopiowane do *%LocalAppData%\Microsoft\VisualStudio\<wersji > \Extensions* katalogu.
 
-Jeśli przyjaciela powoduje próbę instalacji programu Visual Studio, znajdziesz on rozszerzenie FirstMenuCommand w **narzędzia** > **rozszerzenia i aktualizacje**. Użytkownik może przejść do **rozszerzenia i aktualizacje** Aby odinstalować lub wyłączyć rozszerzenie, zbyt.
+Jeśli przyjaciela powoduje próbę instalacji programu Visual Studio, znajdą one rozszerzenie FirstMenuCommand w **narzędzia** > **rozszerzenia i aktualizacje**. Użytkownik może przejść do **rozszerzenia i aktualizacje** Aby odinstalować lub wyłączyć rozszerzenie, zbyt.
 
 ## <a name="next-steps"></a>Następne kroki
+
 W tym instruktażu jest wyświetlane tylko niewielką część co można zrobić za pomocą rozszerzenia programu Visual Studio. Poniżej przedstawiono krótką listę innymi (względnie proste), które można wykonać przy użyciu rozszerzeń programu Visual Studio:
 
 1. Możesz wykonać wiele innych rzeczy przy użyciu prostego polecenia:
@@ -123,4 +139,4 @@ W tym instruktażu jest wyświetlane tylko niewielką część co można zrobić
 
 5. Dodaj strony Opcje i właściwości i ustawienia użytkownika do rozszerzenia: [Rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzyć opcje i ustawienia użytkownika](../extensibility/extending-user-settings-and-options.md)
 
-   Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [Programu Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+   Inne rodzaje rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [Programu Visual Studio isolated shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

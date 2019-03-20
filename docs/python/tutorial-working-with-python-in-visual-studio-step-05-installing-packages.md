@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934760"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194901"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5. Instalowanie pakietów w środowisku Python
 
@@ -26,23 +26,23 @@ Fora społeczności deweloperów języka Python tworzył tysiące przydatne paki
 
 1. Wybierz **widoku** > **Windows inne** > **środowiska Python** polecenia menu. **Środowiska Python** zostanie otwarte okno jako element równorzędny do **Eksploratora rozwiązań** i pokazuje różnych środowisk dostępnych dla Ciebie. Lista obejmuje zarówno środowisk, w których został zainstalowany przy użyciu Instalatora programu Visual Studio i te, które należy zainstalować osobno. Środowisko wytłuszczonym drukiem jest środowiska domyślnego, który jest używany dla nowych projektów.
 
-   ![Okno środowiska Python](media/environments-default-view-blue.png)
+   ![Okno środowiska Python](media/environments/environments-default-view-blue.png)
 
 2. Środowisko **Przegląd** kartę zapewnia szybki dostęp do **Interactive** okna dla danego środowiska, wraz z folderu instalacji i interpreterów środowiska. Na przykład wybierz **Otwórz okno interaktywne** i **Interactive** w programie Visual Studio pojawia się okno na tym konkretnym środowisku.
 
 3. Wybierz **pakietów** kartę i wyświetlić listę pakietów, które są aktualnie zainstalowane w środowisku.
 
-   ![Zainstalowane pakiety w środowisku](media/environments-installed-packages-blue.png)
+   ![Zainstalowane pakiety w środowisku](media/environments/environments-installed-packages-blue.png)
 
 4. Zainstaluj `matplotlib` , wprowadzając jego nazwę w polu wyszukiwania, następnie wybierz pozycję **instalowanie narzędzia pip**
 
-   ![Instalowanie matplotlib w środowisku](media/environments-add-matplotlib1.png)
+   ![Instalowanie matplotlib w środowisku](media/environments/environments-add-matplotlib1.png)
 
 5. Zgoda na podniesienie uprawnień, jeśli zostanie wyświetlony monit, aby to zrobić.
 
 6. Po zainstalowaniu pakietu pojawia się w **środowiska Python** okna. **X** po prawej stronie pakietu odinstalowuje go.
 
-   ![Ukończenie instalacji matplotlib w środowisku](media/environments-add-matplotlib2.png)
+   ![Ukończenie instalacji matplotlib w środowisku](media/environments/environments-add-matplotlib2.png)
 
    Pasek postępu małych może pojawić się poniżej środowiska, aby wskazać, że Visual Studio tworzy jego bazy danych IntelliSense dla nowo zainstalowanego pakietu. **IntelliSense** karcie znajdują się też więcej szczegółowych informacji. Należy pamiętać, że do czasu ukończenia tej bazy danych IntelliSense funkcje, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
 
@@ -65,7 +65,7 @@ Fora społeczności deweloperów języka Python tworzył tysiące przydatne paki
 
 8. Uruchom program z (**F5**) lub bez debugera (**Ctrl**+**F5**) aby wyświetlić dane wyjściowe:
 
-   ![Dane wyjściowe z przykładu matplotlib](media/environments-add-matplotlib3.png)
+   ![Dane wyjściowe z przykładu matplotlib](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Następny krok
 

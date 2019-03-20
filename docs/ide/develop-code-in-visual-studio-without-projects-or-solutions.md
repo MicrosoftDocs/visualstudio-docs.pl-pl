@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718554"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194953"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań
 
@@ -103,7 +103,7 @@ Jeśli baza kodu zawiera kod języka Python lub JavaScript, nie trzeba skonfigur
 
 ### <a name="codebases-that-contain-c-code"></a>Bazach kodu, który zawiera kod języka C++
 
-Aby dowiedzieć się, jak otwieranie kodu C++ bez rozwiązań lub projektów w programie Visual Studio, zobacz [Otwórz Folder projektów w języku C++](/cpp/ide/non-msbuild-projects).
+Aby dowiedzieć się, jak otwieranie kodu C++ bez rozwiązań lub projektów w programie Visual Studio, zobacz [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Bazach kodu zawierające projekt programu Visual Studio
 
@@ -118,6 +118,6 @@ Jeśli folder kodu zawiera projekt programu Visual Studio, możesz wyznaczyć pr
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie zadań kompilacji i debugowania](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Otwórz Folder projektów w języku C++](/cpp/ide/non-msbuild-projects)
-- [Projekty CMake w języku C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Otwórz Folder projektów w języku C++](/cpp/build/open-folder-projects-cpp)
+- [Projekty CMake w języku C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Pisanie kodu w edytorze tekstu i kodu](../ide/writing-code-in-the-code-and-text-editor.md)

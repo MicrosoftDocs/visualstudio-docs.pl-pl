@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936866"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194607"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ Możesz zainstalować eksperymentalne [rozszerzenia IntelliCode](/visualstudio/i
 
 **Dodaj instrukcję using** operację funkcji IntelliSense automatycznie dodaje wymagane `using` dyrektywy do pliku kodu. Ta funkcja umożliwia zachowanie zespół nad kodem, użytkownik pisanie, a nie wymaga koncentruj się do innej części kodu.
 
-Aby zainicjować **Dodaj instrukcję using** operacji położenia kursora w danym typie się odwołać do tego nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsoli i przy dodawaniu `XmlTextReader` do treści `Main` metody czerwona fala pojawi się w danym wierszu kodu, ponieważ nie można rozpoznać odwołania do typu. Następnie należy wywołać **Dodaj instrukcję using** za pośrednictwem **szybkie akcje**. **Szybkie akcje** jest widoczny tylko wtedy, gdy kursor znajduje się w typie niepowiązanej.
+Aby zainicjować **Dodaj instrukcję using** operacji położenia kursora w danym typie się odwołać do tego nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsoli i przy dodawaniu `XmlReader` do treści `Main` metody czerwona fala pojawi się w danym wierszu kodu, ponieważ nie można rozpoznać odwołania do typu. Następnie należy wywołać **Dodaj instrukcję using** za pośrednictwem **szybkie akcje**. **Szybkie akcje** są widoczne tylko wtedy, gdy kursor znajduje się w typie niepowiązanej.
 
 ![Dodawanie przy użyciu szybkich akcji rozwiniętej obrazu](../ide/media/addusing-quickaction.png)
 

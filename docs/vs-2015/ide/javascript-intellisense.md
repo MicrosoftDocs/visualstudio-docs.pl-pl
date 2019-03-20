@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763287"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194460"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
  Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla elementów DOM Dynamic HTML (DHTML), takie jak `body`, `form`, i `div`. Tylko elementy, które są zawarte w bieżącym dokumencie i na stronie głównej, są wyświetlane przez technologię IntelliSense. JavaScript IntelliSense obsługuje również `window` i `document` obiektów i ich elementów członkowskich.
 
 ###  <a name="IntrinsicObjects"></a> Obiekty wewnętrzne
- Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla obiektów wewnętrznych takich jak `Array`, `String`, `Math`, `Date`, i `Number`. Aby uzyskać więcej informacji o obiektach wewnętrznych, zobacz [obiekty wewnętrzne](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla obiektów wewnętrznych takich jak `Array`, `String`, `Math`, `Date`, i `Number`. Aby uzyskać więcej informacji o obiektach wewnętrznych, zobacz [standardowe wbudowane obiekty](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Zmienne zdefiniowane przez użytkownika, funkcje i obiekty
  Po zmianie pliku JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] skanuje otwarte i odnośne dokumenty, aby określić wszystkie dostępne zasoby kodu. Obejmuje to zmienne, funkcje i obiekty, które zostały utworzone. Te zasoby będą dostępne dla JavaScript IntelliSense.

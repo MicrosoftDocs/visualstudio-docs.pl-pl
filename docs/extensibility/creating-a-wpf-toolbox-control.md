@@ -1,6 +1,6 @@
 ---
 title: Tworzenie kontrolki przybornika WPF | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194830"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
-Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom.
+
+Szablon kontrolki przybornika WPF (Windows Presentation Framework) pozwala na tworzenie formantów WPF, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. Ten poradnik pokazuje jak używać szablonu do tworzenia **przybornika** formant, który można rozdystrybuować innym użytkownikom.
 
 Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>Tworzenie kontrolki przybornika WPF
+## <a name="create-the-toolbox-control"></a>Tworzenie kontrolki przybornika
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Tworzenie rozszerzenia za pomocą kontrolki przybornika WPF
 
-1. Utwórz projekt VSIX, o nazwie `MyToolboxControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.
+1. Utwórz projekt VSIX, o nazwie `MyToolboxControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".
 
 2. Po otwarciu projektu, Dodaj **kontrolki przybornika WPF** szablon elementu o nazwie `MyToolboxControl`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#** > **rozszerzalności** i wybierz **kontrolki przybornika WPF**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
     ```
 
 ## <a name="renaming-the-control"></a>Zmiana nazwy kontrolki
+
  Domyślnie formant pojawi się w **przybornika** jako **MyToolboxControl** w grupie o nazwie **MyToolboxControl.MyToolboxControl**. Możesz zmienić te nazwy w *MyToolboxControl.xaml.cs* pliku.
 
 1. Otwórz *MyToolboxControl.xaml.cs* w widoku kodu.
@@ -75,6 +77,7 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
     ```
 
 ## <a name="build-test-and-deployment"></a>Kompilacja, testowanie i wdrażanie
+
  Podczas debugowania projektu, należy wyszukać kontroli zainstalowane w **przybornika** eksperymentalne wystąpienia programu Visual Studio.
 
 ### <a name="to-build-and-test-the-control"></a>Aby skompilować i przetestować formant

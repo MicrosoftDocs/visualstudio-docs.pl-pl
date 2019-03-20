@@ -18,20 +18,18 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9c03764a4ad93a44f51bb130e0f160dbeaae4db7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567162"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194848"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywania programu i znajdowanie problemów. Debuger działa z wszystkich języków programowania Visual Studio i skojarzonymi z nimi bibliotekami. Za pomocą debugera przerwanie wykonywania programu, aby zbadać jego kod, sprawdzić i edytować zmienne, przejrzeć rejestry, zapoznaj się z instrukcjami, utworzone na podstawie kodu źródłowego i przejrzeć obszar pamięci używane przez aplikację.
 
  Aby uzyskać krótkie wprowadzenie do debugowania i diagnostyki w programie Visual Studio, zobacz [debugowanie, profilowanie i diagnozowanie](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
-
--   [Co nowego w debugerze programu Visual Studio 2015 jest](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) w tym artykule opisano nowe funkcje w programie Visual Studio 2015.
 
 -   [Debuger Windows](../debugger/debugger-windows.md) wyświetla inny debuger systemu windows.
 

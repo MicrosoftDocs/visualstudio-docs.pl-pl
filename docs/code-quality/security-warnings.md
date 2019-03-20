@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955378"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195089"
 ---
-# <a name="security-warnings"></a>Ostrzeżenia o zabezpieczeniach
+# <a name="security-warnings"></a>Ostrzeżenia dotyczące zabezpieczeń
 
 Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikacje. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.
 
@@ -77,5 +77,5 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Uszkodzony stan wyjątków (rozszerzenie klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwalać awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do regionu pamięci uszkodzony.|
 |[CA3075: Niezabezpieczone przetwarzanie definicji DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Jeśli używasz niezabezpieczone wystąpień XmlReaderSettings lub odwoływać się do jednostek zewnętrznych źródeł, analizator może zaakceptować niezaufane dane wejściowe i ujawnienia poufnych informacji dla osób atakujących.|
 |[CA3076: Niezabezpieczone wykonywanie skryptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Jeżeli insecurely wykonać Extensible arkuszy stylów języka przekształcenia (XSLT) w aplikacjach platformy .NET, procesor może zostać rozwiązany niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co prowadzi do "odmowa usługi" i Cross-Site ataki.|
-|[CA3077: Niezabezpieczone przetwarzanie w projekt interfejsu API, dokumencie XML i czytnik tekstu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Podczas projektowania interfejsu API pochodną klasy XMLDocument i klasy XMLTextReader, być w trosce o XmlReaderSettings.  Za pomocą niezabezpieczonego wystąpień XmlReaderSettings, gdy odwołuje się do rozpoznawania jednostek zewnętrznych źródeł lub ustawiania wartości niebezpieczne w XML może prowadzić do ujawnienia informacji.|
+|[CA3077: Niezabezpieczone przetwarzanie w projekt interfejsu API, dokumencie XML i czytnik tekstu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Podczas projektowania interfejsu API pochodną klasy XMLDocument i klasy XMLTextReader, być w trosce o XmlReaderSettings. Za pomocą niezabezpieczonego wystąpień XmlReaderSettings, gdy odwołuje się do rozpoznawania jednostek zewnętrznych źródeł lub ustawiania wartości niebezpieczne w XML może prowadzić do ujawnienia informacji.|
 |[CA3147: Oznaczenie obsługi zlecenia z ValidateAntiForgeryToken](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Podczas projektowania kontroler składnika ASP.NET MVC, należy zachować ostrożność, fałszerstwo żądania międzywitrynowego ataków. Ataku polegającego na fałszerstwo żądania międzywitrynowego można wysyłać złośliwymi żądaniami z uwierzytelnionego użytkownika do kontrolera ASP.NET MVC.|

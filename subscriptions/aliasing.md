@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem, jeśli są używane aliasy lub przyjazne nazwy
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841630"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195154"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem przy użyciu aliasów
 
@@ -28,7 +28,7 @@ Tworzenie aliasów może wystąpić, gdy firma ma więcej niż Microsoft Online 
 
 Jako administrator, dostępne są dwie opcje, aby zapewnić subskrybentom pomyślnego logowania na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - Pierwsza opcja (zalecane), jest korzystanie z konta katalogu jako przypisany adres w wolumin licencjonowania Service Center (VLSC). Zapoznaj się [przypisywanie subskrybentów z kontem katalogu](#assigning-subscribers-to-a-directory-account) sekcję w tym artykule, aby uzyskać więcej informacji.
-- Druga opcja (mniej bezpieczna opcja), jest umożliwienie subskrybentom (zwany również skojarzyć swój adres e-mail "Pracy lub szkoły" w celu konta "Osobistego" Konto Microsoft lub konta Microsoft). Zapoznaj się [definiowania pracy lub konto służbowe jako konto osobiste ](#defining-a-work-or-school-account-as-a-personal-account ) sekcję w tym artykule, aby uzyskać więcej informacji.
+- Druga opcja (mniej bezpieczna opcja), jest umożliwienie subskrybentom (zwany również skojarzyć swój adres e-mail "Pracy lub szkoły" w celu konta "Osobistego" Konto Microsoft lub konta Microsoft). Zapoznaj się [definiowania pracy lub konto służbowe jako konto osobiste](#defining-a-work-or-school-account-as-a-personal-account) sekcję w tym artykule, aby uzyskać więcej informacji.
 
 > [!NOTE]
 > Gdy Twoja firma jest migrowana do nowej subskrypcji programu Visual Studio [portalu zarządzania](https://manage.visualstudio.com), będzie można korzystać z zalet nowego środowiska administracji, umożliwiający zarówno adresy katalogu adresy e-mail należy podać jako część Profil subskrybenta. Dowiedz się więcej o [migracji](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193708"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Przewodnik: Tworzenie pakietu rozszerzeń
 
@@ -23,7 +23,7 @@ Pakiet rozszerzenia jest zestaw rozszerzeń, które mogą być instalowane razem
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, Visual Studio SDK jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 Funkcja pakiet rozszerzenia jest dostępna, począwszy od programu Visual Studio 2 15.8 (wersja zapoznawcza).
 
@@ -31,9 +31,9 @@ Funkcja pakiet rozszerzenia jest dostępna, począwszy od programu Visual Studio
 
 Szablon elementu pakietu rozszerzenia tworzy pakiet rozszerzenia z zestaw rozszerzeń, które mogą być instalowane razem.
 
-1. W **nowy projekt** okna dialogowego rozwiń **Visual C#** lub **języka Visual Basic** a następnie kliknij przycisk **rozszerzalności**. W **szablony** okienku wybierz **projekt VSIX**. W **nazwa** wpisz `Test Extension Pack`. Kliknij przycisk **OK**.
+1. W **nowy projekt** okno dialogowe, wyszukaj "vsix", a następnie wybierz pozycję **projekt VSIX**. Aby uzyskać **Nazwa projektu**, wpisz "Pakiet rozszerzenia testów". Wybierz pozycję **Utwórz**.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Add / nowy element**. Przejdź do programu Visual C# **rozszerzalności** a następnie wybierz węzeł **pakietu rozszerzenia**. Pozostaw domyślną nazwę pliku (ExtensionPack1.cs).
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. Przejdź do programu Visual C# **rozszerzalności** a następnie wybierz węzeł **pakietu rozszerzenia**. Pozostaw domyślną nazwę pliku (ExtensionPack1.cs).
 
 3. ExtensionPack1.vsext plik zostanie dodany, który zawiera następujący kod
 
@@ -69,13 +69,23 @@ Szablon elementu pakietu rozszerzenia tworzy pakiet rozszerzenia z zestaw rozsze
 
 Teraz, gdy rozszerzenie zostanie opublikowany, zainstaluj go w programie Visual Studio i przetestować.
 
-1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje...** .
+::: moniker range="vs-2017"
 
-2. Kliknij przycisk **Online** a następnie wyszukaj `Test Extension Pack`.
+1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio na **rozszerzenia** menu, kliknij przycisk **zarządzanych rozszerzeń**.
+
+::: moniker-end
+
+2. Kliknij przycisk **Online** a następnie wyszukaj "Pakiet rozszerzenia testów".
 
 3. Kliknij przycisk **Pobierz**. Rozszerzenie i jego listy rozszerzenia zawarte w pakiecie rozszerzenia są planowane do zainstalowania.
 
-4. Poniżej znajduje się przykładowy pakiet rozszerzenia pobierania **rozszerzenia i aktualizacje** okna dialogowego. Jeśli wolisz zainstalować niektóre rozszerzenia uwzględnione w pakiecie rozszerzenia, możesz zmodyfikować listy rozszerzeń w **zaplanowane do zainstalowania**.
+4. Poniżej znajduje się przykładowy pakiet rozszerzenia pobierania **Zarządzaj rozszerzeniami** okna dialogowego. Jeśli wolisz zainstalować niektóre rozszerzenia uwzględnione w pakiecie rozszerzenia, możesz zmodyfikować listy rozszerzeń w **zaplanowane do zainstalowania**.
 
     ![Pobieranie pakietu rozszerzenia z witryny Marketplace](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ Teraz, gdy rozszerzenie zostanie opublikowany, zainstaluj go w programie Visual 
 
 Aby usunąć rozszerzenie z komputera:
 
+::: moniker range="vs-2017"
+
 1. W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
-2. Wybierz `Test Extension Pack` a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie i jego listy rozszerzenia zawarte w pakiecie rozszerzenia są planowane do odinstalowania.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. W programie Visual Studio na **rozszerzenia** menu, kliknij przycisk **zarządzanych rozszerzeń**.
+
+::: moniker-end
+
+2. Wybierz **pakiet rozszerzenia testów** a następnie kliknij przycisk **Odinstaluj**. Rozszerzenie i jego listy rozszerzenia zawarte w pakiecie rozszerzenia są planowane do odinstalowania.
 
 3. Aby ukończyć dezinstalację, zamknij wszystkie wystąpienia programu Visual Studio.

@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768883"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194564"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
 >  W wersjach Express programu Visual Studio, nie można ustawić platformę docelową **nowy projekt** okno dialogowe.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>System rozpoznawania i odwołania do zestawów użytkownika
- Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odpowiednie odwołania do zestawów. Odwołania do zestawów dla .NET Framework w wersji 2.0, 3.0 i 3.5 są zawarte w .NET Framework 3.5 SP1, który można pobrać z [Microsoft Download Center, programu Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602) witryny sieci Web. Odwołania do zestawów dla .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile i Silverlight są również dostępne [pobieranie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) witryny sieci Web.
+ Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odpowiednie odwołania do zestawów. Odwołania do zestawów dla .NET Framework w wersji 2.0, 3.0 i 3.5 są zawarte w .NET Framework 3.5 SP1, który można pobrać z [Microsoft Download Center, programu Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) witryny sieci Web. Odwołania do zestawów dla .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile i Silverlight są również dostępne [pobieranie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687) witryny sieci Web.
 
 > [!NOTE]
 >  Profil klienta .NET Framework jest podzbiorem .NET Framework, która zapewnia ograniczony zestaw funkcji i bibliotek. Aby uzyskać więcej informacji na temat profili klientów, zobacz [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
@@ -79,4 +79,6 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
  Kiedy środowiskiem docelowym .NET Framework 3.5 lub nowszy, odniesienie do System.Core i importu poziomu projektu dla System.Linq (tylko w Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, użytkownik musi również włączyć opcję wnioskowania (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji systemu .NET Framework. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Zobacz też
- [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [wymagań dotyczących zgodności i systemu platformy](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md)
+[.NET Framework Wielowersyjność kodu dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[wymagań dotyczących zgodności i systemu platformy](/visualstudio/productinfo/vs2015-compatibility-vs)
