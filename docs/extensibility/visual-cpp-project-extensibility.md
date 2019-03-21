@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195180"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268731"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -416,7 +416,7 @@ System projektów języka Visual C++ opiera się na [systemu projektu programu V
 
 ### <a name="project-property-pages"></a>Strony właściwości projektu
 
-Uzyskać ogólnego projektowania, zobacz [rozszerzalność platformy — część 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) i [rozszerzalność platformy — część 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Uzyskać ogólnego projektowania, zobacz [Framework Wielowersyjność kodu dla projektów VC ++](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 W prostych słowach na stronach właściwości widzisz w **właściwości projektu** okno dialogowe dla projektu w języku C++ są definiowane przez *reguły* plików. Plik reguł określa zbiór właściwości, które można wyświetlić na stronie właściwości i jak i, w którym ma zostać zapisany w projekcie. Reguła pliki są pliki XML, które używają formatu pliku Xaml. W opisano typy służący do serializowania ich [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Aby uzyskać więcej informacji na temat użycia reguły plików w projektach zobacz [pliki reguł XML strony właściwości](/cpp/build/reference/property-page-xml-files).
 

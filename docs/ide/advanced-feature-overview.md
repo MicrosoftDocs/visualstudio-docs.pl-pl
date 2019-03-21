@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221778"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268616"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -42,9 +42,13 @@ Program Visual Studio udostępnia zestaw narzędzi, które umożliwiają proste 
 
 ![Obciążenie programistyczne platformy Azure](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Po zainstalowaniu **programowanie na platformie Azure** obciążenie, następujące **chmury** szablony dla języka C# są dostępne w **nowy projekt** okno dialogowe:
 
 ![Szablony projektów chmury dla programu Visual Studio](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio [programu Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) umożliwia wyświetlanie i zarządzanie zasobami w chmurze oparte na platformie Azure w programie Visual Studio. Te zasoby mogą obejmować maszyn wirtualnych, tabel, baz danych SQL i inne. **Eksplorator chmury** pokazuje zasobów platformy Azure w ramach kont zarządzanych logujesz się do subskrypcji platformy Azure. I jeśli określoną operacją wymaga witryny Azure portal **programu Cloud Explorer** łącza, które przeniosą Cię w portalu w miejscu, w którym musisz przejść.
 
