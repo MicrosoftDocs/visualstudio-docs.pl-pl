@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936424"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324206"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Rozpocznij pracę z narzędziami języka R dla programu Visual Studio
 
@@ -21,7 +21,7 @@ Po utworzeniu R Tools for Visual Studio (RTVS) zainstalowane (zobacz [instalacji
 
 ## <a name="create-an-r-project"></a>Tworzenie projektu języka R
 
-1. Uruchom program Visual Studio.
+1. Otwórz program Visual Studio.
 1. Wybierz **pliku** > **nowe** > **projektu** (**Ctrl**+**Shift** + **N**)
 1. Wybierz pozycję "Projekt R" w obszarze **szablony** > **R**, należy nadać projektowi nazwę i lokalizację i wybierz **OK**:
 

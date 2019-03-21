@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722268"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324071"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.
@@ -65,17 +65,17 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
 ### <a name="installation"></a>Instalacja
  Zestawów SDK rozszerzeń można zainstalować dla określonego użytkownika lub dla wszystkich użytkowników bez określenia klucza rejestru. Aby zainstalować zestaw SDK dla wszystkich użytkowników, należy użyć następującej ścieżki:
 
- *%Program Files%\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs*
+ *%Program Files%\Microsoft SDKs\<target platform\>\v<platform version number\>\ExtensionSDKs*
 
  Instalacja specyficzne dla użytkownika należy użyć następującej ścieżki:
 
- *Zestawy SDK %USERPROFILE%\AppData\Local\Microsoft\<platformę docelową > \v<platform version number>\ExtensionSDKs*
+ *Zestawy SDK %USERPROFILE%\AppData\Local\Microsoft\<platformę docelową\>\v < numer wersji platformy\>\ExtensionSDKs*
 
  Jeśli chcesz użyć innej lokalizacji, należy wykonać jedną z dwóch kwestii:
 
 1.  Określ ją w kluczu rejestru:
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      i dodaj podklucz (ustawienie domyślne), który ma wartość `<path to SDK><SDKName><SDKVersion>`.
 

@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 568742f1ef59eeb282cdf167096310c658c01c50
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069622"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323269"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Więcej informacji na temat projektów i rozwiązań w języku Visual Basic
 

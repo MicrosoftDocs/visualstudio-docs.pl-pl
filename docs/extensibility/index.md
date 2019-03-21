@@ -13,6 +13,8 @@ ms.workload:
 
 Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć Visual Studio, dodać analizatory kodu źródłowego dla kompilatora "Roslyn", lub nawet tworzyć własne zestawy SDK.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

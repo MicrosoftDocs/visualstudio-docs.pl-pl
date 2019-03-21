@@ -1,24 +1,20 @@
 ---
 layout: LandingPage
 title: Tworzenie aplikacji mobilnych w języku C++
-description: Tworzenie natywnych aplikacji C++ dla systemów iOS, z systemami Android i Windows z programem Visual Studio.
+description: 'Tworzenie natywnych aplikacji C++ dla systemów iOS, z systemami Android i Windows z programem Visual Studio.'
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-- apexprodleads
-ms.openlocfilehash: 92314fc4151604007944541706718ec166ffdc09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955937"
+  - apexprodleads
 ---
 # <a name="mobile-development-with-c-documentation"></a>Tworzenie aplikacji mobilnych za pomocą dokumentacji języka C++
 
 Tworzenie natywnych aplikacji C++ dla systemów iOS, Android i Windows urządzenia z programem Visual Studio.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>

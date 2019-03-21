@@ -12,6 +12,8 @@ manager: jillfra
 
 Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">

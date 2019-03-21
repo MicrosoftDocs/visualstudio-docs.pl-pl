@@ -11,7 +11,7 @@ items:
     - name: Informacje o projektach i rozwiązaniach
       href: tutorial-projects-solutions.md
     - name: Więcej funkcji programu Visual Studio
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
   - name: Tworzenie aplikacji
     items:
     - name: Tworzenie pierwszej aplikacji C#
@@ -26,7 +26,7 @@ items:
   - name: Poznawanie programu Visual Studio
     items:
     - name: Otwieranie projektu z repozytorium
-      href: ../tutorial-open-project-from-repo.md
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Pisanie i edytowanie kodu
       href: tutorial-editor.md
     - name: Kompilowanie i tworzenie kompilacji
@@ -34,15 +34,15 @@ items:
     - name: Debugowanie kodu
       href: ../csharp/tutorial-debugger.md
     - name: Testowanie jednostek
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Wdrażanie projektu
       href: ../../deployment/index.md
     - name: Uzyskiwanie dostępu do danych
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: db4a84a25cf9a625e7bc7dec27882aa9e2de66e5
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 4e759c9b344f71b3c4c47170a23854b41ad8c23a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983731"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323623"

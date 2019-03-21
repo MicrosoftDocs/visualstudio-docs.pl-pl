@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 4d3d5de46006129f7609a990bf1a4cca5a881123
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 68e5ce85d9184b0e1e8b055f9d81d76b775fdef1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193888"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324859"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
@@ -104,7 +104,7 @@ Sesję profilowania jest tworzony dla każdego wystąpienia roli w usłudze w ch
 2. Wybierz węzeł obliczeń Azure, a następnie wybierz węzeł wdrażania platformy Azure dla usługi w chmurze, wybranego profilu podczas publikowania z programu Visual Studio.
 3. Aby wyświetlić raporty profilowania w przypadku wystąpienia, wybierz rolę, usługi, otwórz menu skrótów dla konkretnego wystąpienia, a następnie wybierz **Wyświetl raport profilowania**.
    
-    Raport plik Vsp jest teraz pobierane z platformy Azure, a stan pobierania zostanie wyświetlony w dzienniku aktywności platformy Azure. Po zakończeniu pobierania raportu profilowania pojawia się na karcie w edytorze programu Visual Studio o nazwie <Role name> *<Instance Number>* <identifier>Vsp. Zostanie wyświetlone podsumowanie danych dla tego raportu.
+    Raport plik Vsp jest teraz pobierane z platformy Azure, a stan pobierania zostanie wyświetlony w dzienniku aktywności platformy Azure. Po zakończeniu pobierania raportu profilowania pojawia się na karcie w edytorze programu Visual Studio o nazwie < Nazwa roli\>*< numer wystąpienia\>*< identyfikator\>Vsp. Zostanie wyświetlone podsumowanie danych dla tego raportu.
 4. Aby wyświetlić różne widoki tego raportu, na liście bieżącego widoku, wybierz typ widoku, który chcesz. Aby uzyskać więcej informacji, zobacz [widoków raportów narzędzi profilowania](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Następne kroki

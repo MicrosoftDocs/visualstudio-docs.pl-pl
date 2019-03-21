@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223077"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325269"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing — często zadawane pytania
 
@@ -30,28 +30,11 @@ Aby dowiedzieć się więcej na temat nowych funkcji i ulepszeń, które został
 
 Live Unit Testing działa z trzech struktur testowania jednostek popularne, wymienione w tabeli poniżej. Minimalna obsługiwana wersja ich kart i struktur również znajduje się w tabeli. Struktur testowania jednostek są dostępne w witrynie NuGet.org.
 
-<table>
-<tr>
-   <th>Struktury testowej</th>
-   <th>Minimalna wersja programu Visual Studio karty</th>
-   <th>Minimalna wersja Framework</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> 2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>Rozszerzenie NUnit</td>
-   <td>NUnit3TestAdapter wersji 3.5.1</td>
-   <td>Wersja 3.5.0 NUnit</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>1.0.5-preview rozwiązań MSTest.TestFramework</td>
-</tr>
-</table>
+|Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
+|---------|---------|---------|
+|xUnit.net |2.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
+|Rozszerzenie NUnit |NUnit3TestAdapter wersji 3.5.1 |Wersja 3.5.0 NUnit |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |1.0.5-preview rozwiązań MSTest.TestFramework |
 
 Jeśli masz starszą test oparte na narzędziu MSTest projektów tego odwołania `Microsoft.VisualStudio.QualityTools.UnitTestFramework` i nie chcesz przejść do nowszych pakietów MSTest NuGet, przeprowadź uaktualnienie do programu Visual Studio 2017 w wersji 15.4 lub nowszej.
 

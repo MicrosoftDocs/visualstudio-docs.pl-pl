@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947065"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324925"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Studio. Ten przewodnik stanowi wprowadzenie do bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild. Uzyskasz informacje na temat:
@@ -125,7 +125,7 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
 
    (System Windows 10) W polu wyszukiwania na pasku zadań, należy uruchomić, wpisując nazwę narzędzia, takie jak `dev` lub `developer command prompt`. Wyświetlenie listy zainstalowanych aplikacji spełniających kryteria wyszukiwania.
 
-   Jeśli potrzebujesz ręcznie znaleźć, plik jest *LaunchDevCmd.bat* w  *<visualstudio installation folder> \<wersji > \Common7\Tools* folderu.
+   Jeśli potrzebujesz ręcznie znaleźć, plik jest *LaunchDevCmd.bat* w *< folder instalacji programu Visual Studio\>\<wersji > \Common7\Tools* folderu.
 
 2. W oknie polecenia przejdź do folderu zawierającego plik projektu, w tym przypadku *D:\BuildApp\BuildApp*.
 

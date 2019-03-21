@@ -19,6 +19,7 @@ Subskrypcje programu Visual Studio jest kompleksowy zestaw zasobów, które umo�
 Administratorzy Zaloguj się do [ https://manage.visualstudio.com ](https://manage.visualstudio.com) przypisywanie subskrypcji do Twojego zespołu.<br>
 Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualstudio.com) na dostęp do korzyści z subskrypcji.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

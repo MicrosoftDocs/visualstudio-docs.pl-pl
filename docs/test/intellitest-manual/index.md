@@ -3,18 +3,12 @@ title: Funkcja IntelliTest Reference Manual | Narzędzia do testów firmy Micros
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948953"
 ---
 # <a name="intellitest-reference-manual"></a>Funkcja IntelliTest Reference Manual
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948953"
     * [Język](introduction.md#language)
     * [Symbolicznych](introduction.md#symbolic-reasoning)
     * [Ślady stosu niepoprawne](introduction.md#incorrect-stack-traces)
-  - [Dalsze informacje](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Dalsze informacje](introduction.md#further-reading)
 
 * **[Rozpoczynanie pracy z funkcją IntelliTest](getting-started.md)**
   - [Ważnych atrybutów](getting-started.md#important-attributes)
-  - [Ważne statyczne klasy pomocy](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Ważne statyczne klasy pomocy](getting-started.md#helper-classes)
 
 * **[Generowanie testu](test-generation.md)**
   - [Generatory testu](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948953"
   - [Postcondition](test-generation.md#postcondition)
   - [Niepowodzenia testu](test-generation.md#test-failures)
   - [Konfigurowanie i zatrzymywania](test-generation.md#setup-teardown)
-  - [Dalsze informacje](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Dalsze informacje](test-generation.md#further-reading)
 
 * **[Generowanie danych wejściowych](input-generation.md)**
   - [Moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948953"
   - [Struktury](input-generation.md#structs)
   - [Tablice i ciągi](input-generation.md#arrays-and-strings)
   - [Uzyskiwanie dodatkowych danych wejściowych](input-generation.md#additional-inputs)
-  - [Dalsze informacje](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Dalsze informacje](input-generation.md#further-reading)
 
 * **[Wiązania eksploracji](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948953"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Słownik atrybutów](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948953"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Kaskadowy model ustawień](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948953"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Ostrzeżenia i błędy](warnings-and-errors.md)**
   - [Przekroczono MaxBranches](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948953"
   - [Problem z testowalnością](warnings-and-errors.md#testability-issue)
   - [Ograniczenie](warnings-and-errors.md#limitation)
   - [Zaobserwowana niezgodność wywołań](warnings-and-errors.md#observed-call-mismatch)
-  - [Wartość przechowywana w polu statycznym](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Wartość przechowywana w polu statycznym](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 

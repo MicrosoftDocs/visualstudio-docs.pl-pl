@@ -10,14 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 6f7fe4a26da2c2b8d37215cd71e39eacf92eaa37
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872099"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324269"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio
 
 Aby zilustrować, jak [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować do potrzeb.
 
@@ -178,5 +180,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

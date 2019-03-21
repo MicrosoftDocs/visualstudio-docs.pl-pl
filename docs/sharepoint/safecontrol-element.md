@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80606297c61d59d5670473755e667c6d3c538de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6b47254a80c9cdadab6ca18f2fb8c3e8540fbd0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601268"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324568"
 ---
 # <a name="safecontrol-element"></a>SafeControl — element
   Reprezentuje kontrolki ASPX lub składnik Web Part, który jest wyznaczony jako bezpieczna opcja dla każdemu użytkownikowi dostęp do strony ASPX w witrynie programu SharePoint.
@@ -63,7 +63,7 @@ ms.locfileid: "56601268"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema.xsd|
 |**Może być pusta.**|Nie|

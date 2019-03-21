@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio zawiera kilka różnych narzędzi, które ułatwiają wdrażanie aplikacji.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>Środowisko wdrażania programu Visual Studio z 5-minutowe Przewodniki Szybki Start</h2>
 
 <ul class="panelContent cardsFTitle">

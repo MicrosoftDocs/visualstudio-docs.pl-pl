@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b1fe0dababa77d2f52f98618a2ba5a54b6b0b728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221657"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325003"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Lokalizowanie i organizowanie szablonów projektów i elementów
 
@@ -61,9 +61,9 @@ Na przykład następujący katalog zawiera szablony projektów użytkownika dla 
 
 Domyślnie szablony zainstalowane z programem Visual Studio znajdują się w:
 
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< język programowania\>\\<Locale ID>*
+- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< język programowania\>\\< identyfikator ustawień regionalnych\>*
 
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< język programowania\>\\<Locale ID>*
+- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< język programowania\>\\< identyfikator ustawień regionalnych\>*
 
 Na przykład następujący katalog zawiera szablony elementów Visual Basic dla języka angielskiego (LCID 1033):
 

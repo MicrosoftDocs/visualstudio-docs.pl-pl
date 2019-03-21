@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 0e9640547b9ab0020fcbfb6e82fb0df6a777618b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dbb372a042bc92421d1c7a60a5d0505a56ccbb00
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867360"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325167"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -55,7 +56,7 @@ Po utworzeniu odpowiednich narzędzi, które są zainstalowane, uruchom program 
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 
-Visual Studio Uruchom okno, wyszukiwanie *Kubernetes*i wybierz polecenie **aplikacji kontenera dla rozwiązania Kubernetes**.
+W oknie uruchamiania programu Visual Studio, wyszukaj *Kubernetes*i wybierz polecenie **aplikacji kontenera dla rozwiązania Kubernetes**.
 
 ![Zrzut ekranu przedstawiający tworzenie nowego projektu aplikacji platformy Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
 
@@ -136,7 +137,7 @@ Aby to zrobić, należy najpierw upewnić się, że zainstalowano wszystkie elem
 
    ![Zrzut ekranu opublikować element menu](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. W **Publikuj** ekranu, wybierz **Container Registry** jako publikowania docelowy, a następnie postępuj zgodnie z monitami, aby wybrać usługi container registry. Jeśli nie masz jeszcze rejestru kontenerów, wybierz opcję **Tworzenie nowej usługi Azure Container Registry** ją utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [opublikowany kontener w usłudze Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md#2-publish-your-container-to-azure-container-registry).
+2. W **Publikuj** ekranu, wybierz **Container Registry** jako publikowania docelowy, a następnie postępuj zgodnie z monitami, aby wybrać usługi container registry. Jeśli nie masz jeszcze rejestru kontenerów, wybierz opcję **Tworzenie nowej usługi Azure Container Registry** ją utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [opublikowany kontener w usłudze Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
 
    ![Zrzut ekranu przedstawiający wybierz ekran docelowy publikowania](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

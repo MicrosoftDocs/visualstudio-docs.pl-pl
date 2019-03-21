@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875722"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324503"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio
   Można debugować rozszerzenia narzędzi programu SharePoint w wystąpieniu doświadczalnym lub regularnych wystąpieniach programu Visual Studio. Jeśli potrzebujesz rozwiązać problem zachowania rozszerzenia, możesz zmodyfikować wartości rejestru, aby wyświetlić dodatkowe informacje o błędzie i skonfigurować, jak Visual Studio wykonuje polecenia programu SharePoint.
@@ -56,7 +56,7 @@ ms.locfileid: "54875722"
 
 #### <a name="to-debug-the-extension"></a>Aby debugować rozszerzenie
 
-1.  Uruchom program Visual Studio z uprawnieniami administratora i Otwórz projekt rozszerzenia. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *pierwsze wystąpienie*.
+1.  Otwórz program Visual Studio z uprawnieniami administratora i Otwórz projekt rozszerzenia. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *pierwsze wystąpienie*.
 
 2.  Uruchomienie innego wystąpienia programu Visual Studio z uprawnieniami administratora. Następujące kroki odnoszą się do tego wystąpienia programu Visual Studio jako *drugie wystąpienie*.
 

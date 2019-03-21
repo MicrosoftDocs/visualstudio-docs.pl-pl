@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 141bbb010a1c71e9089c4d800ca43c0d90dade5e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4f28494bcb15cc66d8563fdc371a33a15fde85a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160767"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322683"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET Core w usłudze Azure App Service przy użyciu programu Visual Studio
 
@@ -47,7 +47,7 @@ Poniższe kroki prowadzą przez proces tworzenia podstawowej aplikacji platformy
 7. Wybierz **Linux** typu kontenera i kliknij przycisk **OK**. Kontenery Windows nie są obsługiwane do wdrożenia w usłudze Azure App Service jako kontener.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-1. W programie Visual Studio **Start** oknie Wybierz **Utwórz nowy projekt**.
+1. W oknie uruchamiania programu Visual Studio, wybierz **Utwórz nowy projekt**.
 1. Wybierz **aplikacji sieci Web programu ASP.NET Core**i wybierz polecenie **dalej**.
 1. Nazwij swoją nową aplikację (lub wykonać domyślnie) i wybierz polecenie **Utwórz**.
 1. Wybierz **aplikacji sieci Web**.

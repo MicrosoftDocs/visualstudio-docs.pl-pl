@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio zawiera kilka różnych narzędzi do analizowania i poprawią jakość kodu.
 
+<!-- markdownlint-disable MD033 -->
+
 <br />
 
 <ul class="panelContent cardsFTitle">

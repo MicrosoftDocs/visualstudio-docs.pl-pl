@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af7778bc3f760c7a656522db50c14aea14abb905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766367"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324875"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -289,29 +289,29 @@ Aby dostosować mapę kodu, można edytować plik Directed Graph Markup Language
   
     Wyrażenie to używa następującej składni notacji Backusa-Naura (BNF):  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression >:: = "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>  
   
-    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "or" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    \<Operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "or" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "." \<MemberBinding >  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<Format strumienia MethodCall >:: = \<identyfikator > "(" \<MethodArgs > "")""  
   
-    <PropertyGet> :: = Identyfikator  
+    \<Propertyget — >:: = identyfikator  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>  
   
-    <Identifier> ::= [^. ]*  
+    \<Identyfikator >:: = [^. ]*  
   
-    <Literal> :: = literał ciągu pojedynczym lub podwójnym cudzysłowem  
+    \<Literal >:: = literał ciągu pojedynczym lub podwójnym cudzysłowem  
   
-    <Number> :: = ciąg cyfr z opcjonalnym przecinkiem dziesiętnym  
+    \<Liczba >:: = ciąg cyfr z opcjonalnym przecinkiem dziesiętnym  
   
     Można określić wiele `<Condition/>` elementy, które muszą być spełnione, aby zastosować styl.  
   

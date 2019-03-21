@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069674"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323347"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
@@ -43,7 +43,7 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie Start, aby otworzyć środowiska programistycznego.
+1. Otwórz program Visual Studio. Naciśnij klawisz **Esc** lub kliknij przycisk **Kontynuuj bez konieczności pisania kodu** w oknie start, aby otworzyć środowiska programistycznego.
 
 ::: moniker-end
 

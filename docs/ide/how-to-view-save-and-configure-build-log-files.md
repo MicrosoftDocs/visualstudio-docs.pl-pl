@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925231"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323873"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
@@ -53,7 +53,7 @@ Jeśli tworzysz dowolny rodzaj projektu przy użyciu programu MSBuild, możesz u
      Aby uzyskać więcej informacji, zobacz [okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) i <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Należy przebudować projekt, aby zmiany zaczęły obowiązywać **dane wyjściowe** okna (wszystkie projekty) i  *<ProjectName>.txt* pliku (tylko dla projektów C++).
+    > Należy przebudować projekt, aby zmiany zaczęły obowiązywać **dane wyjściowe** okna (wszystkie projekty) i  *\<nazwa_projektu > .txt* pliku (tylko dla projektów C++).
 
 ## <a name="see-also"></a>Zobacz także
 

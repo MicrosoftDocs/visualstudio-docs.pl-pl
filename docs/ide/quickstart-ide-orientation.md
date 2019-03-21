@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 608f276946a8b4a377eb8d8934f3f7bdc23663ce
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867829"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325179"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -25,7 +25,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ## <a name="start-page"></a>Strona początkowa
 
-Pierwszą rzeczą, zostaną wyświetlone po uruchomieniu programu Visual Studio jest najprawdopodobniej **strona startowa**. **Strona startowa** został zaprojektowany jako "Centrum", aby pomóc Ci znaleźć polecenia i projektu pliki potrzebne Ci szybciej. **Ostatnie** sekcja wyświetla projektów i foldery pracuje ostatnio. W obszarze **nowy projekt**, możesz kliknąć link, aby wyświetlić **nowy projekt** okno dialogowe, lub w obszarze **Otwórz**, możesz otworzyć istniejący projekt kodu lub folderu. Po prawej stronie jest źródło danych z najnowszymi informacjami dla programistów.
+Pierwszą rzeczą, zostaną wyświetlone po otwarciu programu Visual Studio jest najprawdopodobniej **strona startowa**. **Strona startowa** został zaprojektowany jako "Centrum", aby pomóc Ci znaleźć polecenia i projektu pliki potrzebne Ci szybciej. **Ostatnie** sekcja wyświetla projektów i foldery pracuje ostatnio. W obszarze **nowy projekt**, możesz kliknąć link, aby wyświetlić **nowy projekt** okno dialogowe, lub w obszarze **Otwórz**, możesz otworzyć istniejący projekt kodu lub folderu. Po prawej stronie jest źródło danych z najnowszymi informacjami dla programistów.
 
 ![Strona początkowa w programie Visual Studio](media/start-page.png)
 
@@ -39,7 +39,7 @@ Jeśli zamkniesz **strona startowa** i chcesz zobaczyć ją ponownie, możesz ur
 
 ## <a name="start-window"></a>Okno uruchamiania
 
-Pierwszą rzeczą, jaką zobaczysz po uruchomieniu programu Visual Studio jest oknem rozpoczęcia. W oknie uruchamiania zaprojektowano w celu ułatwienia Ci "kod" szybciej. Ma funkcje umożliwiające klonowanie lub zapoznaj się z kodu, otwórz istniejący projekt lub rozwiązanie, Utwórz nowy projekt lub po prostu otwórz folder, który zawiera kilka plików kodu.
+Pierwszą rzeczą, jaką zobaczysz po otwarciu programu Visual Studio jest oknem rozpoczęcia. W oknie uruchamiania zaprojektowano w celu ułatwienia Ci "kod" szybciej. Ma funkcje umożliwiające klonowanie lub zapoznaj się z kodu, otwórz istniejący projekt lub rozwiązanie, Utwórz nowy projekt lub po prostu otwórz folder, który zawiera kilka plików kodu.
 
 [![](media/vs-2019/start-window-labeled.png "Okno uruchamiania w programie Visual Studio 2019 r.")](media/vs-2019/start-window-labeled.png#lightbox)
 

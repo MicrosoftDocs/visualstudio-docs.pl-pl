@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689684"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325071"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++
 W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne biblioteki zestawu SDK pakietu SDK jako Visual Studio rozszerzenia (VSIX), a następnie użyć go do tworzenia aplikacji. Instruktażu jest podzielony na następujące kroki:
@@ -135,7 +135,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
 
 17. W **Eksploratora plików**, przejdź do *$SolutionRoot$ \NativeMathVSIX\bin\Debug* folder, a następnie uruchom *NativeMathVSIX.vsix* do rozpoczęcia instalacji.
 
-18. Wybierz **zainstalować** przycisk, poczekaj na zakończenie instalacji, a następnie uruchom program Visual Studio.
+18. Wybierz **zainstalować** przycisk, poczekaj na zakończenie instalacji, a następnie otwórz program Visual Studio.
 
 ##  <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas
 

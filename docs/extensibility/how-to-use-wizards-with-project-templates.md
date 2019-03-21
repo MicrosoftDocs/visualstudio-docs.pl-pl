@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194674"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324644"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Instrukcje: Korzystanie z kreatorów z szablonami projektu
 
@@ -242,7 +242,7 @@ Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz pod
 
      Ponownie nie zapomnij znaki cudzysłowu. Powinien zostać wyświetlony wiersz w danych wyjściowych, takich jak to
 
-     **Token klucza publicznego jest <token>**
+     **Token klucza publicznego jest \<tokenu >**
 
      Zanotuj tę wartość.
 

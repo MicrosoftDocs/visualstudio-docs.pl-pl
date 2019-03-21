@@ -11,24 +11,24 @@ items:
     - name: Informacje o projektach i rozwiązaniach
       href: tutorial-projects-solutions.md
     - name: Więcej funkcji programu Visual Studio
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
   - name: Tworzenie aplikacji
     items:
     - name: tworzenie aplikacji konsoli
       href: tutorial-console.md
     - name: tworzenie aplikacji platformy uniwersalnej systemu Windows
-      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Tworzenie aplikacji WPF
       href: tutorial-wpf.md
     - name: tworzenie aplikacji internetowej
       href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
     - name: Tworzenie aplikacji Windows Forms
-      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     expanded: true
   - name: Poznawanie programu Visual Studio
     items:
     - name: Otwieranie projektu z repozytorium
-      href: ../tutorial-open-project-from-repo.md
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Pisanie i edytowanie kodu
       href: tutorial-editor.md
     - name: Kompilowanie i tworzenie kompilacji
@@ -36,15 +36,15 @@ items:
     - name: Debugowanie kodu
       href: ../visual-basic/tutorial-debugger.md
     - name: Testowanie jednostek
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Wdrażanie projektu
       href: ../../deployment/index.md
     - name: Uzyskiwanie dostępu do danych
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: 8cf8260b863b5626f82eb43299c11ac656824f91
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: f8098d467f66ce89c12c38dba54601a29f910494
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57984108"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58321619"

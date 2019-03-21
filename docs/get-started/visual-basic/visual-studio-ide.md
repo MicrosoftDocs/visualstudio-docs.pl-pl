@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 128f2f4a95ea1e8f92dda8c7771994a9e59a209e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873262"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324084"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 
@@ -207,7 +207,7 @@ Aby rozpocząć pracę, [Pobierz program Visual Studio](https://visualstudio.mic
 
 ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../media/dotnet-core-cross-platform-workload.png)
 
-Po uruchomieniu programu Visual Studio po raz pierwszy możesz opcjonalnie [Zaloguj](../../ide/signing-in-to-visual-studio.md) przy użyciu swojego konta Microsoft albo konta służbowego lub szkolnego.
+Po otwarciu programu Visual Studio po raz pierwszy, można opcjonalnie [Zaloguj](../../ide/signing-in-to-visual-studio.md) przy użyciu swojego konta Microsoft albo konta służbowego lub szkolnego.
 
 ## <a name="customize-visual-studio"></a>Dostosuj program Visual Studio
 

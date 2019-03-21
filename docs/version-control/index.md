@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Kontrola wersji
 description: Przewodnik Wprowadzenie do kontroli wersji w programie Visual Studio
-keywords: VSTS, TFS, Version Control
+keywords: 'VSTS, TFS, Version Control'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998927"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Kontrola wersji w programie Visual Studio
 
@@ -27,6 +21,7 @@ Systemy kontroli wersji pomogły Ci śledzić zmiany w kodzie wraz z upływem cz
 
 Git to obecnie najczęściej używany system kontroli wersji i szybko staje się standardem kontroli wersji. Git to Rozproszony system kontroli wersji, co oznacza, że Twoja lokalna kopia kodu jest kompletną wersją repozytorium kontroli. Upewnij te w pełni funkcjonalne repozytoria lokalne ułatwiają pracę w trybie offline lub zdalnie. Pracę zatwierdzasz lokalnie, a następnie synchronizujesz swoją kopię repozytorium z kopią na serwerze. Taki wzorzec pracy różni się od scentralizowanej kontroli wersji której klient musi synchronizować kod z serwerem przed utworzeniem nowych wersji kodu.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">
@@ -84,7 +79,7 @@ Git to obecnie najczęściej używany system kontroli wersji i szybko staje się
     </li>
 </ul>
 
-## <a name="tfvc"></a>Kontrola wersji serwera Team Foundation
+## <a name="tfvc"></a>TFVC
 
 Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji. Zazwyczaj członkowie zespołu mają tylko jedną wersję każdego pliku na swoich komputerach deweloperskich. Dane historyczne są utrzymywane tylko na serwerze. Gałęzie bazują na ścieżkach i są tworzone na serwerze.
 
@@ -145,7 +140,7 @@ Team Foundation Version Control (TFVC) to scentralizowany system kontroli wersji
     </li>
 </ul>
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 - [Podręcznik usługi Git Pro](https://git-scm.com/book/en/v2)
 - [Planowanie migracji do usługi Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639339"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325243"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Omówienie modelu programowania programu SharePoint rozszerzeń narzędzi
   Po utworzeniu rozszerzeń dla narzędzi SharePoint w programie Visual Studio, należy rozpocząć od implementacja interfejsów rozszerzeń, które są udostępniane przez narzędzia programu SharePoint. W większości przypadków będzie również użyć innych typów dostarczonych przez narzędzia programu SharePoint do zaimplementowania funkcji w rozszerzeniu. W niektórych przypadkach można także użyć typów w innych modeli obiektów, dostarczone przez program Visual Studio i programu SharePoint. Konieczne jest zrozumienie przeznaczenia każdego z tych modeli obiektów oraz wiedzieć, jak za ich pomocą ze sobą tworzenia rozszerzeń dla narzędzi SharePoint.
@@ -83,7 +83,7 @@ ms.locfileid: "56639339"
 ### <a name="visual-studio-automation-object-model"></a>Model obiektowy automatyzacji w usłudze Visual Studio
  Modelu obiektu automatyzacji programu Visual Studio udostępnia interfejsy API, które można użyć do zautomatyzowania projektów programu Visual Studio i środowiska IDE. Wykonywanie zadań związanych z projektem, które nie są specyficzne dla projektów programu SharePoint lub wykonywać inne zadania automatyzacji ogólnej w programie Visual Studio, należy użyć modelu obiektów programu Visual Studio. Tradycyjnie ten model obiektów jest często używane w dodatkach programu Visual Studio i makra, ale można go także użyć w rozszerzenia narzędzi programu SharePoint.
 
- Główna część modelu obiektu automatyzacji programu Visual Studio jest zdefiniowany w *EnvDTE.dll* zestawu. *EnvDTE\\<version>.dll* zestawy oferowanie dodatkowych funkcji, która została wprowadzona w określonych wersjach programu Visual Studio. Te zestawy są dołączone do programu Visual Studio.
+ Główna część modelu obiektu automatyzacji programu Visual Studio jest zdefiniowany w *EnvDTE.dll* zestawu. *EnvDTE\\\<wersji > .dll* zestawy oferowanie dodatkowych funkcji, która została wprowadzona w określonych wersjach programu Visual Studio. Te zestawy są dołączone do programu Visual Studio.
 
  Aby uzyskać więcej informacji na temat modelu obiektu automatyzacji, zobacz [odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 

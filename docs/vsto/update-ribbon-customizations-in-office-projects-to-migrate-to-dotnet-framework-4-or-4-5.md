@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634932"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324685"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizowanie dostosowań Wstążki w projektach pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli projekt zawiera dostosowania wstążki, który został utworzony przy użyciu **Wstążka (Projektant graficzny)** elementu projektu, należy wprowadzić następujące zmiany do kodu projektu, zmiana platformy docelowej na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub później.
@@ -103,9 +103,9 @@ ms.locfileid: "56634932"
 
      Na przykład załóżmy, że plik zawiera następujący wiersz kodu, który obsługuje <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> zdarzenia w projekcie, który jest przeznaczony dla .NET Framework 3.5.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy użyć następującego kodu.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, należy użyć następującego kodu.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> uzyskać pełną listę obiektów delegowanych wstążki, zobacz [zdarzeń obsługi wstążki](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> uzyskać pełną listę obiektów delegowanych wstążki, zobacz [zdarzeń obsługi wstążki](#ribbonevents).
 
 5.  W projektach języka Visual Basic, zlokalizuj `ThisRibbonCollection` klasy na końcu pliku. Zmodyfikuj deklarację zmiennej tej klasy, dzięki czemu nie będzie już dziedziczył z `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634932"
 
   Poniższy przykład kodu demonstruje sposób tworzenia <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> w klasie wstążki w projekcie, który jest przeznaczony dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> w poniższej tabeli wymieniono kontrolki, można programowo tworzyć i metody służące do tworzenia kontrolek w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> w poniższej tabeli wymieniono kontrolki, można programowo tworzyć i metody służące do tworzenia kontrolek w projektach przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.
 
 |formant|Metoda RibbonFactory do użycia w [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszych projektów|
 |-------------| - |

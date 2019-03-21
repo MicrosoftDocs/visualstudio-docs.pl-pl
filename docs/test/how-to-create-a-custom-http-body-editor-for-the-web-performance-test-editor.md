@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 83bf334aa7fa04b6dea9ec9181d602e40ba83d41
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069895"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325032"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Instrukcje: Utwórz HTTP niestandardowego edytora treści do edytora testów wydajności sieci Web
 
@@ -285,7 +285,7 @@ Po zakończeniu edycji ciągu i użytkownik klika polecenie **OK** w oknie dialo
    > [!NOTE]
    > Zamykanie programu Visual Studio zapewniają, że *.dll* plik nie jest zablokowany, przed podjęciem próby skopiowania go.
 
-3. Skopiuj wynikowy *.dll* plik z projektu *bin\debug* folderu (na przykład *MessageEditors.dll*) do *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Skopiuj wynikowy *.dll* plik z projektu *bin\debug* folderu (na przykład *MessageEditors.dll*) do *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Otwórz program Visual Studio.
 

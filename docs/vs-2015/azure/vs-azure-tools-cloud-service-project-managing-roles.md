@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a5d1de55a5fa29ab6d9ae709bac6f88c8b9cafe
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953294"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323115"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Zarządzanie rolami w usługach Azure cloud services z programem Visual Studio
 Po utworzeniu usługi w chmurze platformy Azure, możesz dodać nowe role do niego lub usuwać istniejące role. Można także zaimportować istniejący projekt i przekonwertować go do roli. Na przykład można zaimportować aplikację sieci web platformy ASP.NET i określić jako rola sieć web.
@@ -48,7 +48,7 @@ Poniższe kroki prowadzą przez usunięcie roli sieci web lub proces roboczy z p
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Ponownie dodać roli do projektu usługi w chmurze platformy Azure
 Jeśli usunąć rolę z projektu usługi w chmurze, ale później zdecydujesz dodać rolę do projektu, tylko deklaracji ról i podstawowych atrybutów, takich jak punkty końcowe i informacji diagnostycznych, zostaną dodane. Nie dodatkowych zasobów lub odwołania są dodawane do `ServiceDefinition.csdef` pliku lub `ServiceConfiguration.cscfg` pliku. Jeśli chcesz dodać te informacje, należy ręcznie dodać do tych plików.
 
-Na przykład można usunąć roli usługi sieci web, a później zdecydujesz się tę rolę z powrotem dodać do rozwiązania. Jeśli to zrobisz, wystąpi błąd. Aby uniknąć tego błędu, należy dodać `<LocalResources>` elementu objętego następujący kod XML do `ServiceDefinition.csdef` pliku. Użyj nazwy roli usługi sieci web, która zostanie ponownie dodane do projektu jako część atrybut nazwy **<LocalStorage>** elementu. W tym przykładzie nazwa roli usługi sieci web jest **WCFServiceWebRole1**.
+Na przykład można usunąć roli usługi sieci web, a później zdecydujesz się tę rolę z powrotem dodać do rozwiązania. Jeśli to zrobisz, wystąpi błąd. Aby uniknąć tego błędu, należy dodać `<LocalResources>` elementu objętego następujący kod XML do `ServiceDefinition.csdef` pliku. Użyj nazwy roli usługi sieci web, która zostanie ponownie dodane do projektu jako część atrybut nazwy  **\<LocalStorage >** elementu. W tym przykładzie nazwa roli usługi sieci web jest **WCFServiceWebRole1**.
 
     <WebRole name="WCFServiceWebRole1">
         <Sites>

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868902"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324399"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ TypeScript korzysta z wielu źródeł do utworzenia tych informacji:
 - [Automatyczne nabycia definicje typów](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>Funkcja IntelliSense, oparte na wnioskowanie o typie
 
 W języku JavaScript w większości przypadków nie ma żadnych jawnego typu informacji dostępna. Na szczęście zazwyczaj przyczyną jest dość proste ustalenie typu, biorąc pod uwagę otaczającego kontekst kodu.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>Funkcja IntelliSense, oparte na danych JSDoc
 
 Gdzie wnioskowanie o typie nie dostarcza informacji żądanego typu (lub do obsługi dokumentacji), informacje o typie może zostać jawnie dostarczone za pośrednictwem adnotacji JSDoc.  Na przykład, aby dać częściowo deklarowanego obiektu określonego typu, można użyć `@type` tag, jak pokazano poniżej:
@@ -123,7 +125,7 @@ Ponieważ JavaScript i TypeScript, teraz są oparte na tej samej usługi w języ
 
 Poniżej przedstawiono prosty przykład pliku definicji TypeScript, podając takie informacje o typie (za pośrednictwem interfejsu) do pliku JavaScript, w tym samym projekcie (przy użyciu `JsDoc` tagu).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Plik definicji TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Automatyczne nabycia definicje typów

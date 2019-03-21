@@ -7,14 +7,14 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Dowiedz się więcej o pełną gamę korzyści dostępne w portalu subskrypcji programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867594"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323402"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Korzystanie z portalu dla subskrybentów — Moje. <span> </span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu dla subskrybentów — my.visualstudio.com
 
 Portal subskrypcji programu Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), zasób w jednym z zalet pełną gamę korzyści zapewniane za pośrednictwem subskrypcji programu Visual Studio.
 

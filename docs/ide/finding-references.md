@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335275"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324750"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
 Możesz użyć **Znajdź wszystkie odwołania** polecenie, aby dowiedzieć się, gdzie elementy określonego kodu do których istnieją odwołania w całej bazie kodu. **Znajdź wszystkie odwołania** polecenie jest dostępne w menu kontekstowym (kliknij prawym przyciskiem myszy), które ma zostać odnaleziona odwołania do elementu. Lub, jeśli jesteś użytkownikiem klawiatury, naciśnij klawisz **Shift + F12**.
 
-Wyniki są wyświetlane w oknie narzędzi o nazwie  **<element> odwołania**, gdzie *elementu* jest nazwa elementu, którego szukasz. Pasek narzędzi w **odwołania** okno umożliwia:
+Wyniki są wyświetlane w oknie narzędzi o nazwie  **\<element > odwołania**, gdzie *elementu* jest nazwa elementu, którego szukasz. Pasek narzędzi w **odwołania** okno umożliwia:
 - Zmień zakres wyszukiwania w polu listy rozwijanej. Można szukać tylko zmienione dokumenty do całego rozwiązania.
 - Kopiuj wybrany element odwołania, wybierając **kopiowania** przycisku.
 - Wybierz przyciski, aby przejść do następnej lub poprzedniej lokalizacji na liście lub naciśnij **F8** i **Shift + F8** kluczy, aby to zrobić.

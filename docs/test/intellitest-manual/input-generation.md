@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316902"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323545"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych, za pomocą dynamiczne symboliczne wykonywanie
 
@@ -96,11 +96,11 @@ Dostępne są następujące reguły:
 
 * **Widoczność składowe wewnętrzne**
   * IntelliTest przyjęto założenie, że wygenerowane testy będą mieć dostęp do wewnętrznych składowych, które były widoczne dla otaczający [PexClass](attribute-glossary.md#pexclass).
-  .NET dotyczą **InternalsVisibleToAttribute** rozszerzeniu widoczności wewnętrznych składowych dla innych zestawów.<p />
+  .NET dotyczą **InternalsVisibleToAttribute** rozszerzeniu widoczności wewnętrznych składowych dla innych zestawów.
 
 * **Widoczność prywatne i członków rodziny (chroniony w języku C#) [PexClass](attribute-glossary.md#pexclass)**
   * Funkcja IntelliTest zawsze umieszcza wygenerowane testy bezpośrednio w [PexClass](attribute-glossary.md#pexclass) lub podklasę. W związku z tym, IntelliTest zakłada, że mogą używać w niej wszystkich członków rodziny widoczne (**chronione** w języku C#).
-  * Jeśli wygenerowane testy są umieszczane bezpośrednio w [PexClass](attribute-glossary.md#pexclass) (zazwyczaj przy użyciu klas częściowych), program IntelliTest zakłada, że mogą również używać wszystkim członkom prywatnej [PexClass](attribute-glossary.md#pexclass).<p />
+  * Jeśli wygenerowane testy są umieszczane bezpośrednio w [PexClass](attribute-glossary.md#pexclass) (zazwyczaj przy użyciu klas częściowych), program IntelliTest zakłada, że mogą również używać wszystkim członkom prywatnej [PexClass](attribute-glossary.md#pexclass).
 
 * **Widoczność publiczne elementy członkowskie**
   * Funkcja IntelliTest przyjęto założenie, może użyć wyeksportowanego wszystkie elementy członkowskie, które są widoczne w kontekście [PexClass](attribute-glossary.md#pexclass).

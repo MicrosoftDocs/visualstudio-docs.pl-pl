@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221398"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325217"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstu, C/C++, eksperymentalne
 
@@ -37,7 +37,7 @@ Te funkcje są dostępne w instalacji programu Visual Studio.
 
 ## <a name="enable-predictive-intellisense"></a>Włączanie Predictive IntelliSense
 
-Predictive IntelliSense ogranicza liczbę wyniki wyświetlane na liście rozwijanej funkcji IntelliSense, aby wyświetlić tylko wyniki, które są istotne w kontekście. Na przykład, jeśli wpiszesz <code>int x =</code> i wywołania funkcji IntelliSense listy rozwijanej, zostanie wyświetlony tylko liczby całkowite lub funkcji, które zwracają liczby całkowite. Predictive IntelliSense jest domyślnie wyłączona.
+Predictive IntelliSense ogranicza liczbę wyniki wyświetlane na liście rozwijanej funkcji IntelliSense, aby wyświetlić tylko wyniki, które są istotne w kontekście. Na przykład, jeśli wpiszesz `int x =` i wywołania funkcji IntelliSense listy rozwijanej, zostanie wyświetlony tylko liczby całkowite lub funkcji, które zwracają liczby całkowite. Predictive IntelliSense jest domyślnie wyłączona.
 
 ::: moniker range="vs-2017"
 

@@ -20,16 +20,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982873"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322720"
 ---
 # <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
 
-Jeśli występują z powodu błędu krytycznego i nie można naprawić lub odinstalować program Visual Studio, możesz uruchomić `InstallCleanup.exe` narzędzie, aby usunąć pliki instalacyjne oraz informacje o produkcie dla wszystkich zainstalowanych wystąpień programu Visual Studio 2017 i nowszych. Uruchamianie tego narzędzia ma zostać wykonane w ostateczności, jeśli napraw lub odinstaluj kończyć się niepowodzeniem i może odinstalować funkcji z inne instalacje programu Visual Studio lub innych produktów, które będą musiały zostać naprawiony.
+Jeśli występują z powodu błędu krytycznego i nie można naprawić lub odinstalować program Visual Studio, możesz uruchomić `InstallCleanup.exe` narzędzie, aby usunąć pliki instalacyjne oraz informacje o produkcie dla wszystkich zainstalowanych wystąpień programu Visual Studio 2017 i nowsze wersje. Uruchamianie tego narzędzia ma zostać wykonane w ostateczności, jeśli napraw lub odinstaluj kończyć się niepowodzeniem i może odinstalować funkcji z inne instalacje programu Visual Studio lub innych produktów, które będą musiały zostać naprawiony.
 
 W poniższych instrukcjach można uruchomić narzędzie z różnych przełączników wiersza polecenia przy użyciu następujące zachowanie:
 

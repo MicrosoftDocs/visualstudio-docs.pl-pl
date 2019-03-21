@@ -14,14 +14,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867930"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324763"
 ---
-# <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementu
+# <a name="how-to-create-item-templates"></a>Porady: Tworzenie szablonów elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
@@ -67,7 +67,7 @@ Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-
   
     Projekt ze Sklepu Windows 8.1 C++ używa wartości `WinRT-Native-6.3`. Windows 10 i innych typów projektów, zobacz [templategroupid — Element (szablony Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    W poniższym przykładzie pokazano całą zawartość pliku .vstemplate po wierszu kodu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` dodano do niego. W tym przykładzie jest specyficzne dla projektów języka C#. Możesz zmodyfikować <ProjectTpe> i \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> elementy, aby określić inne typy języka i projektu.  
+    W poniższym przykładzie pokazano całą zawartość pliku .vstemplate po wierszu kodu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` dodano do niego. W tym przykładzie jest specyficzne dla projektów języka C#. Możesz zmodyfikować \<ProjectType > i \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> elementy, aby określić inne typy języka i projektu.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

@@ -12,6 +12,8 @@ manager: jillfra
 
 Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywania programu i znajdowanie problemów. Debuger działa z wszystkich języków programowania Visual Studio i skojarzonymi z nimi bibliotekami. Za pomocą debugera przerwanie wykonywania programu, aby zbadać jego kod, sprawdzić i edytować zmienne, przejrzeć rejestry, zapoznaj się z instrukcjami, utworzone na podstawie kodu źródłowego i przejrzeć obszar pamięci używane przez aplikację.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

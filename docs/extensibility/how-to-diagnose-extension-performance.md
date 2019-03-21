@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707071"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323688"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mierzenie wpływu rozszerzenie przy uruchamianiu
 
@@ -74,11 +74,11 @@ Za pomocą pakietu asynchroniczne ładowanie i asynchronicznych operacji We/Wy i
 
 Jednym z typowych wzorców podczas inicjowania pakietu jest zainicjować usług używanych przez lub udostępniane przez ten pakiet w pakiecie `constructor` lub `initialize` metody. Dzięki temu usługi są gotowe do użycia, jego można również dodać niepotrzebnych kosztów pakietów ładowania tych usług nie są używane bezpośrednio. Zamiast tego tych usług powinna zostać zainicjowana na żądanie, aby zminimalizować prace wykonane w pakiet inicjowania.
 
-W przypadku usług globalnych dostarczonej przez pakiet, można użyć `AddService` metod, dla których funkcja opóźnieniem zainicjować usługi tylko wtedy, gdy jest on wymagany przez składnik. Obejmujący usługi używane w pakiecie, można użyć leniwy<T> lub AsyncLazy<T> aby upewnić się, że usługi są inicjowane/badane przy pierwszym użyciu.
+W przypadku usług globalnych dostarczonej przez pakiet, można użyć `AddService` metod, dla których funkcja opóźnieniem zainicjować usługi tylko wtedy, gdy jest on wymagany przez składnik. Obejmujący usługi używane w pakiecie, można użyć leniwy\<T > lub AsyncLazy\<T > Aby upewnić się, że usługi są inicjowane/badane przy pierwszym użyciu.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Mierzenie wpływu automatycznie załadować rozszerzeń przy użyciu dziennika aktywności
 
-Począwszy od programu Visual Studio 2017 Update 3, dziennika aktywności w programie Visual Studio będzie zawierają teraz wpisy dla pakietów wpływ na wydajność podczas uruchamiania i rozwiązanie ładowania. Aby można było wyświetlić te pomiary, musisz uruchomić program Visual Studio z przełącznikiem/log, a następnie otwórz *plik ActivityLog.xml* pliku.
+Począwszy od programu Visual Studio 2017 Update 3, dziennika aktywności w programie Visual Studio będzie zawierają teraz wpisy dla pakietów wpływ na wydajność podczas uruchamiania i rozwiązanie ładowania. Aby można było wyświetlić te pomiary, będzie konieczne Otwórz program Visual Studio z przełącznikiem/log i Otwórz *plik ActivityLog.xml* pliku.
 
 W dzienniku aktywności wpisy będzie wymieniony w obszarze "Zarządzanie wydajnością programu Visual Studio" źródła i będzie wyglądać następująco:
 
@@ -141,7 +141,7 @@ Po skonfigurowaniu środowiska programu Visual Studio za pomocą rozszerzenia za
 
 ![zbieranie menu Narzędzia perfview](media/perfview-collect-menu.png)
 
-Domyślne opcje zapewni stosy wywołań do użycia procesora CPU, ale ponieważ jesteśmy zainteresowani także czasu blokowania, należy również włączyć **czasu wątku** stosów. Gdy gotowe ustawienia możesz kliknąć **Rozpocznij zbieranie** i uruchom program Visual Studio po uruchomieniu rejestrowania.
+Domyślne opcje zapewni stosy wywołań do użycia procesora CPU, ale ponieważ jesteśmy zainteresowani także czasu blokowania, należy również włączyć **czasu wątku** stosów. Gdy te ustawienia są gotowe, możesz kliknąć **Rozpocznij zbieranie** , a następnie otwórz program Visual Studio po nagraniu rozpoczyna się.
 
 Przed zatrzymaniem zbierania należy upewnić się, program Visual Studio jest w pełni zainicjowany, okno główne jest całkowicie widoczna i jeśli rozszerzenie zawiera wszystkie elementy interfejsu użytkownika, które automatycznie pokazują, również są widoczne. Po całkowitym załadowaniu programu Visual Studio i rozszerzenia jest inicjowany, można zatrzymać rejestrowania można analizować śledzenia.
 

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428768"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323097"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
@@ -102,7 +102,7 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
      > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

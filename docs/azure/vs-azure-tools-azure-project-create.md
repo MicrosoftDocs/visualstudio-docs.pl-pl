@@ -7,22 +7,24 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926973"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323821"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
+
 Azure Tools dla programu Visual Studio zawiera szablon projektu umożliwiający tworzenie [usłudze w chmurze Azure](/azure/cloud-services/cloud-services-choose-me), który jest prostą usługę Azure ogólnego przeznaczenia. Po utworzeniu projektu programu Visual Studio pozwala konfigurować, debugować i wdrożyć usługę w chmurze na platformie Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Kroki, aby utworzyć projekt usługi w chmurze platformy Azure w programie Visual Studio
 Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy Azure w programie Visual Studio za pomocą co najmniej jedną rolę sieci web.
 
-1. Uruchom program Visual Studio jako administrator.
+::: moniker range="vs-2017"
+1. Otwórz program Visual Studio jako administrator.
 
 1. W menu głównym wybierz **pliku** > **New** > **projektu**.
 
@@ -34,7 +36,19 @@ Ta sekcja przeprowadzi Cię przez tworzenie projektu usługi w chmurze platformy
 
 1. Wprowadź nazwę i lokalizację projektu i nazwę rozwiązania.
 
-1. Wybierz **OK**.
+1. Kliknij przycisk **OK**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+1. W polu wyszukiwania wpisz *chmury*, a następnie wybierz **usługa w chmurze**.
+
+   ![Nowa usługa w chmurze platformy Azure](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. Nazwij projekt i wybierz **Utwórz**.
+
+   ![Nazwij projekt](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. W **nową usługę w chmurze Azure Microsoft** okno dialogowe, wybierz role, które chcesz dodać, a następnie wybierz przycisk strzałki w prawo, aby dodać je do swojego rozwiązania.
 

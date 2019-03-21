@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952362"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325282"
 ---
 # <a name="exploration-bounds"></a>Wiązania eksploracji
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Ograniczenie rozwiązywania granice**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) — liczba sekund [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) ma odnajdywania danych wejściowych, które spowodują wykonanie inną ścieżkę należy postępować zgodnie.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — rozmiar w megabajtach, [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) może użyć do odnalezienia danych wejściowych.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — rozmiar w megabajtach, [moduł rozwiązywania ograniczeń](input-generation.md#constraint-solver) może użyć do odnalezienia danych wejściowych.
 * **Eksploracja ścieżką granic**
   * [MaxBranches](#maxbranches) — maksymalna liczba gałęzi, które mogą zostać podjęte w ścieżce pojedyncze wykonanie.
   * [MaxCalls](#maxcalls) — maksymalna liczba wywołań, wprowadzone podczas ścieżką pojedynczego uruchomienia.
   * [MaxStack](#maxstack) — maksymalny rozmiar stosu w dowolnym momencie podczas ścieżką pojedynczego uruchomienia mierzony jako liczba ramek aktywnego połączenia.
-  * [MaxConditions](#maxconditions) — maksymalna liczba warunków za pośrednictwem danych wejściowych, które mogą być sprawdzane podczas ścieżką pojedynczego uruchomienia.<p />
+  * [MaxConditions](#maxconditions) — maksymalna liczba warunków za pośrednictwem danych wejściowych, które mogą być sprawdzane podczas ścieżką pojedynczego uruchomienia.
 * **Wiązania eksploracji**
   * [MaxRuns](#maxruns) — maksymalna liczba uruchomień, które zostanie podjęta podczas eksploracji.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) -maksymalną liczbę kolejnych uruchomień bez nowego testu jest emitowane.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) — maksymalna liczba przebiegów ze ścieżkami unikatowy wykonywania, które zostanie podjęta podczas eksploracji.
-  * [MaxExceptions](#maxexceptions) — maksymalna liczba wyjątków, które można znaleźć kombinacji wszystkich ścieżek odnalezionych wykonywania.<p />
+  * [MaxExceptions](#maxexceptions) — maksymalna liczba wyjątków, które można znaleźć kombinacji wszystkich ścieżek odnalezionych wykonywania.
 * **Ustawienia generowania kodu zestawu testów**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) — gdy ma wartość true, ścieżki wykonywania, które przekraczają znajdujących się w granicach ścieżki ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [ MaxConditions](#maxconditions)) są ignorowane.
   * [TestEmissionFilter](#testemissionfilter) — wskazuje, w jakich okolicznościach IntelliTest, powinny wysyłać testów.

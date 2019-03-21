@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227581"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323441"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Wyświetlanie zdarzeń za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ Możesz spróbować debugowania tylko zdarzeń IntelliTrace. Zdarzenia IntelliTr
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Rozpocznij debugowanie i wyświetlać zdarzenia IntelliTrace
 
-1. Rozpocznij standardowe debugowanie. (Naciśnij klawisz **F5** lub kliknij przycisk **Debuguj > Rozpocznij debugowanie**.
+1. Rozpocznij standardowe debugowanie. (Naciśnij klawisz **F5** lub kliknij przycisk **Debuguj > Rozpocznij debugowanie**.)
 
     > [!TIP]
     > Zachowaj **lokalne** i **Autos** otwarte okna podczas debugowania można zobaczyć i zapisać wartości w tych oknach.

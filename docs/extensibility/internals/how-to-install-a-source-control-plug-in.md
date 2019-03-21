@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635192"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323389"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Instrukcje: Instalowanie wtyczki kontroli źródła
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
@@ -78,7 +78,7 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 
 4. Utwórz podklucz o nazwie **InstalledSCCProviders** w obszarze **SourceCodeControlProvider** podklucza, a następnie umieścić jednego wpisu tego podklucza.
 
-    Nazwa tego wpisu jest czytelny dla użytkownika nazwa dostawcy, (taka sama jak wartość określona dla wpisu SCCServerName), a wartość jest jeszcze raz podklucza, który został utworzony w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *oprogramowania\\< nazwa firmy\> \\< nazwa produktu\>*.
+    Nazwa tego wpisu jest czytelny dla użytkownika nazwa dostawcy, (taka sama jak wartość określona dla wpisu SCCServerName), a wartość jest jeszcze raz podklucza, który został utworzony w kroku 1. Wzorzec jest **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nazwa wyświetlana\>** = *oprogramowania\\< firmy Nazwa\>\\< nazwa produktu\>*.
 
     Na przykład:
 

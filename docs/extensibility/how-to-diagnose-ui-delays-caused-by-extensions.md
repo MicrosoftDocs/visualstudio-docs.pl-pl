@@ -6,14 +6,14 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719486"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324347"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Instrukcje: Diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Porady: Diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia
 
 Gdy interfejs użytkownika przestanie odpowiadać, Visual Studio sprawdza, czy stos wywołań wątku interfejsu użytkownika, począwszy od typu liść i pracą z nimi na podstawie. Jeśli program Visual Studio okaże się, że ramka stosu wywołań należy do modułu, który jest częścią rozszerzenia zainstalowane i włączone, wyświetlane jest powiadomienie.
 
@@ -43,7 +43,7 @@ Aby zdiagnozować opóźnienie reakcji interfejsu użytkownika, należy najpierw
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Uruchom ponownie program VS za pomocą działania logowania
 
-Program Visual Studio można wygenerować "Dziennik aktywności" który informacje pomocne przy debugowaniu problemu. Aby włączyć funkcję rejestrowania w programie Visual Studio aktywności, uruchom program Visual Studio za pomocą `/log` opcji wiersza polecenia. Po uruchomieniu programu Visual Studio, w dzienniku aktywności są przechowywane w następującej lokalizacji:
+Program Visual Studio można wygenerować "Dziennik aktywności" który informacje pomocne przy debugowaniu problemu. Aby włączyć funkcję rejestrowania w programie Visual Studio aktywności, Otwórz program Visual Studio za pomocą `/log` opcji wiersza polecenia. Po uruchomieniu programu Visual Studio, w dzienniku aktywności są przechowywane w następującej lokalizacji:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

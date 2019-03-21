@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840834"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325110"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -44,7 +44,7 @@ Poniżej przedstawiono pełną listę można oczekiwać, i co można zrobić, po
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Jak zalogować się do programu Visual Studio
 
-Po uruchomieniu programu Visual studio po raz pierwszy, pojawi się prośba loguje się WE i podanie pewnych informacji podstawowych rejestracji. Należy wybrać konto Microsoft lub konta służbowego lub szkolnego, że najlepiej reprezentuje użytkownik. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft bezpłatnie. Zobacz [jak mogę założyć konto Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Po otwarciu programu Visual studio po raz pierwszy, pojawi się prośba loguje się WE i podanie pewnych informacji podstawowych rejestracji. Należy wybrać konto Microsoft lub konta służbowego lub szkolnego, że najlepiej reprezentuje użytkownik. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft bezpłatnie. Zobacz [jak mogę założyć konto Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Visual Studio zapamiętuje te ustawienia i synchronizuje je we wszystkich środowiskach programu Visual Studio, który zarejestrowano w celu. Aby uzyskać listę ustawień, które są synchronizowane, zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). Można zmienić ustawienia później, po otwarciu **narzędzia** > **opcje** menu w programie Visual Studio.
 

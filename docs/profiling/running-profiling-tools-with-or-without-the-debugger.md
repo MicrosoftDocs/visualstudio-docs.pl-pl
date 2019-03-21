@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597534"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323727"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -67,7 +67,7 @@ Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zd
 
 ## <a name="collect-profiling-data-without-debugging"></a>Zbieranie danych profilowania bez debugowania
 
-Aby zbierać dane dotyczące wydajności bez debugowania, możesz uruchomić **Profiler wydajności** narzędzia. Niektóre z narzędzi profilowania wymagają uprawnień administratora do uruchomienia. Możesz uruchomić program Visual Studio jako administrator lub narzędzia można uruchomić jako administrator, podczas uruchamiania sesji diagnostycznej.
+Aby zbierać dane dotyczące wydajności bez debugowania, możesz uruchomić **Profiler wydajności** narzędzia. Niektóre z narzędzi profilowania wymagają uprawnień administratora do uruchomienia. Można otworzyć programu Visual Studio jako administrator lub narzędzia można uruchomić jako administrator, podczas uruchamiania sesji diagnostycznej.
 
 1. Otwarty projekt w programie Visual Studio, wybierz **debugowania** > **Profiler wydajności**, lub naciśnij **Alt**+**F2**.
 

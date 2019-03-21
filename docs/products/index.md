@@ -6,6 +6,7 @@ description: 'Dowiedz się, jak używać programu Visual Studio 2017 do tworzeni
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Dokumentacja dla produktów Visual Studio</h1>
@@ -122,7 +123,7 @@ searchScope: []
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Usługa Azure DevOps Services</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>Zwiększ produktywność zespołu za pomocą narzędzi Agile projektów i raportów. Tworzenia, testowania i wdrażania projektów z kontrolą źródła, za pomocą nowoczesnych narzędzi ciągłej integracji/ciągłego wdrażania.</p>
                                                 </div>
                                             </div>

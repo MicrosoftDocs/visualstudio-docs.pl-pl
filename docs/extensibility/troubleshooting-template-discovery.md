@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324003"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323110"
 ---
 # <a name="troubleshooting-template-installation"></a>Rozwiązywanie problemów z instalacją szablonu
 
@@ -41,7 +41,7 @@ Jeśli napotkasz problemy z wdrażania szablonów projektu lub elementu, można 
 
 ::: moniker range="vs-2017"
 
-4. Uruchom program Visual Studio i uruchamiaj oknach dialogowych nowy projekt i nowy element, aby zainicjować obu drzewach szablonu.
+4. Otwórz program Visual Studio, a następnie uruchom okna dialogowego Nowy projekt i nowy element do zainicjowania obu drzewach szablonu.
 
    Pojawia się w dzienniku szablonu **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid odpowiada identyfikator instalacji wystąpienia programu Visual Studio). Każdy szablon drzewa inicjowania dołącza wpisy w tym dzienniku.
 
@@ -49,7 +49,7 @@ Jeśli napotkasz problemy z wdrażania szablonów projektu lub elementu, można 
 
 ::: moniker range=">=vs-2019"
 
-4. Uruchom program Visual Studio i uruchamiaj oknach dialogowych nowy projekt i nowy element, aby zainicjować obu drzewach szablonu.
+4. Otwórz program Visual Studio, a następnie uruchom okna dialogowego Nowy projekt i nowy element do zainicjowania obu drzewach szablonu.
 
    Pojawia się w dzienniku szablonu **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid odpowiada identyfikator instalacji wystąpienia programu Visual Studio). Każdy szablon drzewa inicjowania dołącza wpisy w tym dzienniku.
 

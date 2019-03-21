@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e179cd742d2fbf2f1fbff59610c4dda50f3f996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 124716f8c40a8adc0a0ae1a28cda21dcb5e00ddf
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598964"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322833"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder — element
   Reprezentuje zamapowany folder.
@@ -58,7 +58,7 @@ ms.locfileid: "56598964"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
 |**Nazwa schematu**|Schemat elementu projektu SharePoint|
 |**Plik walidacji**|ProjectItemModelSchema.xsd|
 |**Może być pusta.**|Nie|

@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: d9d5a6ad819859822121a03aee9990f94de031b3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681754"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325058"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -37,7 +39,7 @@ Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Set
 
 ## <a name="using-vswhereexe"></a>Za pomocą vswhere.exe
 
-`vswhere.exe` jest automatycznie uwzględnione w programie Visual Studio 2017 w wersji 15.2 lub nowszej lub Pobierz go z [strony z wersjami](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` Aby uzyskać informacje o tym narzędziu. Na przykład to polecenie przedstawia wszystkie wersje programu Visual Studio, w tym starsze wersje produktu i wersje i zapisuje wyniki w formacie JSON:
+`vswhere.exe` jest automatycznie uwzględnione w programie Visual Studio 2017 w wersji 15.2 lub nowszej, można również pobrać go z [strony z wersjami](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` Aby uzyskać informacje o tym narzędziu. Na przykład to polecenie przedstawia wszystkie wersje programu Visual Studio, w tym wcześniejsze wersje produktu i wersje i zapisuje wyniki w formacie JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

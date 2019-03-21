@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268677"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322327"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -183,11 +183,11 @@ Nie należy dodawać odwołań do pliku do danych wyjściowych innego projektu w
 
 Nie można przejść do zestawu SDK i dodać go do projektu. Można przeglądać tylko w pliku (na przykład zestawu lub *winmd*) i dodaj go do projektu.
 
-Gdy tworzysz odwołanie pliku do WinMD, oczekiwany układ jest  *<FileName>winmd*,  *<FileName>.dll*, i  *<FileName>PRI* plików wszystkie umieszczane obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
+Gdy tworzysz odwołanie pliku do WinMD, oczekiwany układ jest  *\<nazwa pliku > winmd*,  *\<nazwa pliku > .dll*, i  *\< Nazwa pliku > PRI* pliki są umieszczane obok siebie. Jeśli odwołujesz się do WinMD w następujących scenariuszach, niepełny zestaw plików zostanie skopiowany do katalogu wyjściowego projektu i, w związku z tym, wystąpią błędy kompilacji i czasu wykonywania.
 
-- **Składnik macierzysty**: macierzysty projekt utworzy jeden WinMD dla każdego rozłącznego zestawu przestrzeni nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. Podczas odwoływania się do tego pliku składnika macierzystego, MSBuild nie rozpozna, że pliki Winmd o stanowią jeden składnik. W związku z tym, tylko identycznie nazwane pliki  *<FileName>.dll* i  *<FileName>winmd* zostaną skopiowane, a wystąpią błędy czasu wykonywania. Aby obejść ten problem, Utwórz rozszerzenie SDK. Aby uzyskać więcej informacji, zobacz [Create Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Składnik macierzysty**: macierzysty projekt utworzy jeden WinMD dla każdego rozłącznego zestawu przestrzeni nazw i jedną bibliotekę DLL, która składa się z implementacji. Pliki WinMD będą miały odmienne nazwy. Podczas odwoływania się do tego pliku składnika macierzystego, MSBuild nie rozpozna, że pliki Winmd o stanowią jeden składnik. W związku z tym, tylko identycznie nazwane pliki  *\<FileName > .dll* i  *\<nazwa pliku > winmd* zostaną skopiowane, a wystąpią błędy czasu wykonywania. Aby obejść ten problem, Utwórz rozszerzenie SDK. Aby uzyskać więcej informacji, zobacz [Create Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Korzystanie z kontrolek**: formant XAML składa się co najmniej z  *<FileName>winmd*,  *<FileName>.dll*,  *<FileName>PRI*,  *<XamlName>.xaml*i  *<ImageName>.jpg*. Gdy projekt jest kompilowany, pliki zasobów, które są skojarzone z odwołaniem do pliku nie będą otrzymywać skopiowany do katalogu wyjściowego projektu, a tylko  *<FileName>winmd*,  *<FileName>.dll*i  *<FileName>PRI* zostaną skopiowane. Błąd kompilacji jest rejestrowany, aby informować użytkownika, zasoby  *<XamlName>.xaml* i  *<ImageName>.jpg* brakuje. Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz rozszerzenie SDK wykonując kroki opisane w [Create Software Development Kit](../extensibility/creating-a-software-development-kit.md) lub edytowania pliku projektu, należy dodać następującą właściwość:
+- **Korzystanie z kontrolek**: co najmniej formant XAML składa się z  *\<nazwa pliku > winmd*,  *\<nazwa pliku > .dll*,  *\<Nazwa pliku > PRI*,  *\<XamlName > .xaml*i  *\<ImageName > .jpg*. Gdy projekt jest kompilowany, pliki zasobów, które są skojarzone z odwołaniem do pliku nie będą otrzymywać skopiowany do katalogu wyjściowego projektu i tylko  *\<nazwa pliku > winmd*,  *\<nazwy pliku > .dll* i  *\<nazwa pliku > PRI* zostaną skopiowane. Błąd kompilacji jest rejestrowany, aby informować użytkownika, zasoby  *\<XamlName > .xaml* i  *\<ImageName > .jpg* brakuje. Aby kompilacja się powiodła, trzeba ręcznie skopiować te pliki zasobów do katalogu wyjściowego projektu dla kompilacji i debugowania/czasu wykonywania. Aby obejść ten problem, Utwórz rozszerzenie SDK wykonując kroki opisane w [Create Software Development Kit](../extensibility/creating-a-software-development-kit.md) lub edytowania pliku projektu, należy dodać następującą właściwość:
 
     ```xml
     <PropertyGroup>

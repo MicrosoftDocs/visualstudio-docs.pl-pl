@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223354"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323708"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
+# <a name="use-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
 Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł w ramach jego narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 i Visual Studio 2019 r oraz są [dostępne jako pakiet NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Po dodaniu nowych zasad do wytycznych podstawowe sprawdzanie języka C++, może 
 W obszarze znajdują się tematy dokumentacji dla większości reguł [Visual Studio C++ podstawowe sprawdzanie odwołania](code-analysis-for-cpp-corecheck.md).
 
 Począwszy od programu Visual Studio 2017 w wersji 15.3 zestawów reguł obsługiwane są:
-- **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem<T> podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem\<T > podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Reguły dotyczące zmiennych** wymusić [operacje sprawdzania powiązane z podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Kompilator Microsoft Visual C++ ma ograniczoną obsługę GSL Pomiń atrybut. Mo
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Pomijanie analizy przy użyciu opcji wiersza polecenia
+## <a name="suppress-analysis-by-using-command-line-options"></a>Pomijanie analizy przy użyciu opcji wiersza polecenia
 
 Zamiast #pragmas umożliwia opcji wiersza polecenia na stronie właściwości pliku pomijanie ostrzeżeń dla projektu lub pojedynczy plik. Na przykład, aby wyłączyć ostrzeżenia 26400 dla pliku:
 
@@ -165,12 +165,12 @@ Zamiast #pragmas umożliwia opcji wiersza polecenia na stronie właściwości pl
 
 Można użyć opcji wiersza polecenia, aby tymczasowo wyłączyć wszystkie analizy kodu dla pliku, określając `/analyze-`. Generuje to ostrzeżenie *zastępowanie D9025 "/ analyze" z "/ analyze-"*, który przypomina o tym, aby ponownie włączyć później analizy kodu.
 
-## <a name="corecheck_per_file"></a> Włączanie podstawowe sprawdzanie języka C++ wytyczne dotyczące plików w określonym projekcie
+## <a name="corecheck_per_file"></a> Włącz podstawowe sprawdzanie języka C++ wytyczne dotyczące plików w określonym projekcie
 
 Czasami może być przydatne czy koncentrujące się analizy kodu, i nadal używania środowiska IDE programu Visual Studio. Poniższy przykładowy scenariusz może służyć w przypadku dużych projektów, zaoszczędzić czas kompilacji i ułatwić wyniki zastosowania filtru:
 
 1. W powłoce poleceń ustaw `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
-2. Dziedziczenie z tymi zmiennymi, uruchom program Visual Studio z powłoki poleceń.
+2. Dziedziczenie z tymi zmiennymi, Otwórz program Visual Studio z powłoki poleceń.
 3. Ładowanie projektu i otwórz jej właściwości.
 4. Włącz analizę kodu, wybierz odpowiednią reguł, ale nie należy włączać rozszerzenia analizy kodu.
 5. Przejdź do pliku, który chcesz analizować za pomocą wytycznych podstawowe sprawdzanie języka C++ i otwórz jej właściwości.

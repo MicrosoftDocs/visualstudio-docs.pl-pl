@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925410"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324737"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925410"
   * [Przekroczono MaxCalls](#maxcalls-exceeded)
   * [Przekroczono MaxStack](#maxstack-exceeded)
   * [Przekroczono MaxRuns](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests exceeded](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests exceeded](#maxrunswithoutnewtests-exceeded)
 
 * **Rozwiązywanie ograniczeń**
-  * [Cannot Concretize Solution](#cannot-concretize-solution)<p />
+  * [Cannot Concretize Solution](#cannot-concretize-solution)
 
 * **Domains**
   * [Potrzebna pomoc do konstruowania obiektu](#help-construct)
   * [Potrzebujesz pomocy w celu odnalezienia typów](#help-types)
-  * [Można używać typu złamać](#usable-type-guessed)<p />
+  * [Można używać typu złamać](#usable-type-guessed)
 
 * **Wykonanie**
   * [Nieoczekiwany błąd podczas eksploracji](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentacja**
   * [Niezinstrumentowanej metody o nazwie](#uninstrumented-method-called)
   * [Zewnętrzne metodę o nazwie](#external-method-called)
   * [Niemożliwy do Instrumentacji metodę o nazwie](#uninstrumentable-method-called)
   * [Problem z testowalnością](#testability-issue)
-  * [Ograniczenie](#limitation)<p />
+  * [Ograniczenie](#limitation)
 
 * **Interpreter**
   * [Zaobserwowana niezgodność wywołań](#observed-call-mismatch)

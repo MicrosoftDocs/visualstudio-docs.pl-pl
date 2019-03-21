@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5e46043b080ba4f9dcdb8e61f3f026e0960ab7dc
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946668"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324291"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 
@@ -55,7 +55,7 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
      `net stop vsttcontroller`
 
-3.  Otwórz *QTCcontroller.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Otwórz *QTCcontroller.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
 4.  Znajdź `<appSettings>` tagu.
 
@@ -101,7 +101,7 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 
      **polecenie net stop vsttagent**
 
-3.  Otwórz *QTAgentService.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Otwórz *QTAgentService.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<edition > \Common7\IDE*.
 
 4.  Znajdź `<appSettings>` tagu.
 

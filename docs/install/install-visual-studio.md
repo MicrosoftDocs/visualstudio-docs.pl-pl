@@ -18,12 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 2ceb871dfc8c6c5a07a0a176b8344944edacd893
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983549"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325308"
 ---
 # <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 

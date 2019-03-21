@@ -1,4 +1,5 @@
 ---
+title: Tworzenie aplikacji platformy (systemu Windows UWP) Universal Windows z programem Visual Studio iC#
 description: Tworzenie aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio przy użyciu XAML iC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
@@ -13,16 +14,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 854b6b1652385887a6df4580c3eb31229d809860
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 557a87253b2fefe90fa83a06666a196128f64360
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868991"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322561"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
-W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz aplikację "Hello World", która jest uruchamiana na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, możesz za pomocą szablonu projektu uniwersalnej platformy Windows (UWP), Extensible Application Markup Language (XAML), a C# języka programowania.
+W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz aplikację "Hello World", która jest uruchamiana na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, możesz za pomocą szablonu projektu uniwersalnej platformy Windows (UWP), Extensible Application Markup Language (XAML), a C# języka programowania.
 
 ::: moniker range="vs-2017"
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
@@ -50,22 +51,24 @@ Najpierw utwórz projekt Universal Windows Platform. Typ projektu jest dostarcza
 
 4. Zaakceptuj wartość domyślną **wersji docelowej** i **minimalna wersja** ustawienia w **nowy projekt platformy Windows Universal** okno dialogowe.
 
-![Zaakceptuj domyślną wersję docelowej i minimalnej wersji ustawień w oknie dialogowym Nowy projekt platformy Universal Windows](media/new-uwp-project-target-minver-dialog.png)
+   ![Zaakceptuj domyślną wersję docelowej i minimalnej wersji ustawień w oknie dialogowym Nowy projekt platformy Universal Windows](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Uruchom program Visual Studio, a następnie na **Uruchom okno**, wybierz **Utwórz nowy projekt**.
+2. Otwórz program Visual Studio, a następnie w oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
 3. Na **Utwórz nowy projekt** ekranu, należy wprowadzić *Universal Windows* w polu wyszukiwania, wybierz opcję C# szablon **pusta aplikacja (Windows Universal)**, a następnie wybierz pozycję **Dalej**.
 
-![Zrzut ekranu przedstawiający tworzenie nowego ekranu projektu](media/vs-2019/uwp-create-new-project.png)
+   ![Zrzut ekranu przedstawiający tworzenie nowego ekranu projektu](media/vs-2019/uwp-create-new-project.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **pusta aplikacja (Windows Universal)** szablonu projektu, kliknij przycisk **zainstalować więcej narzędzi i funkcji** łącza.<br><br>![Kliknij przycisk Instaluj, link więcej narzędzi i funkcji](media/vs-2019/uwp-not-finding.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **programowania na platformę uniwersalną Windows** obciążenia, a następnie wybierz **Modyfikuj**.<br><br>![Uniwersalne obciążenie projektowania platformy Windows w Instalatorze programu Visual Studio](media/uwp-dev-workload.png)
 
 4. Zaakceptuj wartość domyślną **wersji docelowej** i **minimalna wersja** ustawienia w **nowy projekt platformy Windows Universal** okno dialogowe.
 
-![Zaakceptuj domyślną wersję docelowej i minimalnej wersji ustawień w oknie dialogowym Nowy projekt platformy Universal Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Zaakceptuj domyślną wersję docelowej i minimalnej wersji ustawień w oknie dialogowym Nowy projekt platformy Universal Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
-   
 
    > [!NOTE]
    > Jeśli po raz pierwszy używasz programu Visual Studio do tworzenia aplikacji platformy uniwersalnej systemu Windows, **ustawienia** może zostać wyświetlone okno dialogowe. Wybierz **tryb dewelopera**, a następnie wybierz **tak**.<br><br>

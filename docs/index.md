@@ -7,6 +7,7 @@ description: 'Dowiedz się, jak używać programu Visual Studio do opracowywania
 ms.topic: hub-page
 ms.custom: seodec18
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -49,7 +50,7 @@ ms.custom: seodec18
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2019">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -85,6 +86,7 @@ ms.custom: seodec18
                                                 <h3>Dowiedz się, jak używać programu Visual Studio</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Uruchom samouczek</a></li>
+                                                    <li><a class="barLink" href="get-started/tutorial-open-project-from-repo.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_pull-request.svg" alt="Repo icon" />Otwórz kod z repozytorium</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Pisanie i edytowanie kodu</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Kompilowanie kodu</a></li>
                                                     <li><a class="barLink" href="debugger/debugger-feature-tour.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Debugowanie kodu</a></li>

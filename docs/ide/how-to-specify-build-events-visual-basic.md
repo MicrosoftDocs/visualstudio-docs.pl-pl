@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938738"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324724"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
@@ -115,7 +115,7 @@ Poniższa procedura pokazuje, jak ustawić wersję minimalną wersję systemu op
    End Sub
    ```
 
-   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folderu, w którym proces kompilacji tworzy manifest, zwykle  *<Projectname>.publish*). Drugi argument jest nowa wersja systemu operacyjnego.
+   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folderu, w którym proces kompilacji tworzy manifest, zwykle  *\<nazwa_projektu > .publish*). Drugi argument jest nowa wersja systemu operacyjnego.
 
 5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 

@@ -1,7 +1,7 @@
 ---
 title: Numery wersji i daty wydania programu Visual Studio
 titleSuffix: ''
-description: Listę wydane wersje i numerów kompilacji dla programu Visual Studio 2017 i nowszym, posortowane według daty.
+description: Lista wydane wersje i numerów kompilacji dla programu Visual Studio, posortowane według daty.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d9fa4dc0084f472c2107ab8a8bafcef3aa14543
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 89290417ce186d3fa4328726ee017dd631a4afbd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268712"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324847"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 

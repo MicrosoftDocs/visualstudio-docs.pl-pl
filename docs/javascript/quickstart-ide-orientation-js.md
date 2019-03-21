@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428664"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325295"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -57,13 +57,13 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
 
 ::: moniker range=">=vs-2019"
 
-1. Na **Uruchom okno**, wybierz opcję **Utwórz nowy projekt**, a następnie w polu wyszukiwania wpisz **javascript** do filtrowania listy typów projektów, które zawierają "javascript" w typie nazwy lub języka.
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**, a następnie w polu wyszukiwania wpisz **javascript** do filtrowania listy typów projektów, które zawierają "javascript" w typie ich nazwy lub języka.
 
    Program Visual Studio zawiera różne rodzaje szablony projektów, które ułatwiają rozpoczęcie pracy, szybko kodowania. (Alternatywnie Jeśli jesteś deweloperem TypeScript, możesz utworzyć projekt, w tym języku. Interfejs użytkownika, które firma Microsoft będzie spojrzenie na jest podobny dla wszystkich języków programowania.)
 
    ![Wyszukaj szablony projektów w oknie uruchamiania programu Visual Studio](media/vs-2019/create-new-project.png)
 
-1. Wybierz **pusta aplikacja sieci Web Node.js** szablonu projektu i kliknij przycisk **dalej**. 
+1. Wybierz **pusta aplikacja sieci Web Node.js** szablonu projektu i kliknij przycisk **dalej**.
 
 1. W **konfigurowania nowego projektu** okno dialogowe, które zostanie wyświetlone, zaakceptuj domyślną nazwę projektu i wybierz polecenie **Utwórz**.
 
