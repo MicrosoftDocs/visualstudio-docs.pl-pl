@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ec12b302fd51b42e99df5838206bbbf497a03e8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145190"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325191"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciu języka C\#
 
@@ -35,7 +35,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range="vs-2017"
 
-Po uruchomieniu programu Visual Studio po raz pierwszy, zostanie wyświetlony monit do logowania. Ten krok jest opcjonalny w tym samouczku. Następnie możesz mogą być wyświetlane okno dialogowe z prośbą o wybierz ustawienia środowiska deweloperskiego i motyw kolorów. Pozostaw wartości domyślne, a następnie wybierz **Uruchom program Visual Studio**.
+Po otwarciu programu Visual Studio po raz pierwszy, zostanie wyświetlony monit do logowania. Ten krok jest opcjonalny w tym samouczku. Następnie możesz mogą być wyświetlane okno dialogowe z prośbą o wybierz ustawienia środowiska deweloperskiego i motyw kolorów. Pozostaw wartości domyślne, a następnie wybierz **Uruchom program Visual Studio**.
 
 ![Wybierz ustawienia, okno dialogowe](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Po uruchomieniu programu Visual Studio, zostaną wyświetlone okna narzędzi, me
 
 ::: moniker range=">=vs-2019"
 
-Podczas uruchamiania programu Visual Studio **Start** najpierw zostanie otwarte okno. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczęcia. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 
 ::: moniker-end
 

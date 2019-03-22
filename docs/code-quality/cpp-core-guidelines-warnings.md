@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872437"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323454"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -84,7 +84,7 @@ Podstawowych wytycznych dotyczących języka C++, istnieją ułatwia pisanie kod
 
 Po dodaniu nowych zasad do wytycznych podstawowe sprawdzanie języka C++, może wzrosnąć liczba ostrzeżeń, które są tworzone dla wcześniej napisanego kodu. Zestawy wstępnie zdefiniowanych reguł można użyć do filtrowania, jakie rodzaje zasad, aby włączyć. Począwszy od programu Visual Studio 2017 w wersji 15.3 zestawów reguł obsługiwane są:
 
-  - **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem<T> podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem\<T > podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Reguły dotyczące zmiennych** wymusić [operacje sprawdzania powiązane z podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Można użyć opcji wiersza polecenia, aby tymczasowo wyłączyć wszystkie anal
 Czasami może być przydatne do analizy kodu czy skupia się i nadal korzystaj środowiska IDE programu Visual Studio. Poniżej przedstawiono przykładowy scenariusz, który może służyć do dużych projektów, aby zapisać czas kompilacji i ułatwić filtrowania wyników.
 
 1. W powłoce poleceń ustaw `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
-2. Uruchom program Visual Studio z powłoki poleceń w celu odziedziczenia tych zmiennych.
+2. Otwórz program Visual Studio z powłoki poleceń w celu odziedziczenia tych zmiennych.
 3. Ładowanie projektu i otwórz jej właściwości.
 4. Włącz analizę kodu, wybierz odpowiednią reguł, ale nie należy włączać rozszerzenia analizy kodu.
 5. Przejdź do pliku, który chcesz analizować za pomocą wytycznych podstawowe sprawdzanie języka C++ i otwórz jej właściwości.

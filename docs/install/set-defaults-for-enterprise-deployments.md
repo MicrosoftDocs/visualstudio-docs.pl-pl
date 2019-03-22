@@ -16,12 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: a81e9c1e007ab1d344227e75a1839e81c1c0542f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57984144"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325149"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
