@@ -112,7 +112,7 @@
 ### [Błąd: Nie masz uprawnień do sprawdzania tożsamości procesu](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Błąd: Usługa zdalnego debugera programu Visual Studio na komputerze docelowym nie może połączyć się ponownie z tym komputerem](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Błąd: Proces roboczy witryny internetowej został zakończony przez usługi IIS](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Błąd: Nie można nawiązać połączenia z maszyną <name>. Nie można odnaleźć komputera w sieci.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Błąd: Nie można nawiązać połączenia z maszyną \<name>. Nie można odnaleźć komputera w sieci.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Błąd: Debugowanie w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 2.0 lub nowszej wersji](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Błąd: Debugowanie procesów IA64 w trybie mieszanym nie jest obsługiwane](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Błąd: Debugowanie procesów 64-bitowych w trybie mieszanym jest obsługiwane tylko w przypadku korzystania z programu Microsoft .NET Framework 4 lub nowszej wersji](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)
