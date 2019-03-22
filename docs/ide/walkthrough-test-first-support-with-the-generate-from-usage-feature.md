@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943041"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355633"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia
 
@@ -34,15 +34,19 @@ W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../ide/visua
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Utwórz projekt biblioteki klas Windows i Projekt testowy
 
-1. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], Utwórz nową **biblioteki klas Windows** projektu. Nadaj mu nazwę `GFUDemo_VB` lub `GFUDemo_CS`, w zależności od języka, których używasz.
+1. W C# lub Visual Basic, Utwórz nową **biblioteki klas Windows** projektu. Nadaj mu nazwę `GFUDemo_VB` lub `GFUDemo_CS`, w zależności od języka, których używasz.
 
-2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ikonę rozwiązanie u góry, wybierz pozycję **Dodaj**, a następnie wybierz **nowy projekt**. W okienku po lewej stronie **nowy projekt** okna dialogowego wybierz **testu**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ikonę rozwiązanie u góry, wybierz pozycję **Dodaj** > **nowy projekt**.
 
-3. W środkowym okienku wybierz **projektu testu jednostkowego** i zaakceptuj domyślną nazwę `UnitTestProject1`. Na poniższej ilustracji przedstawiono okno dialogowe, gdy zostanie on wyświetlony na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], okno dialogowe jest podobny.
+3. Utwórz nową **projekt testów jednostkowych (.NET Framework)** projektu.
 
-    ![Okno dialogowe Nowy projekt testowy](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Wybierz **OK** zamknąć **nowy projekt** okno dialogowe.
+   Poniższa ilustracja przedstawia **nowy projekt** okno dialogowe C# szablonów.
+
+   ![Szablon projektu testu jednostki](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Dodaj odwołanie do projektu biblioteki klas
 

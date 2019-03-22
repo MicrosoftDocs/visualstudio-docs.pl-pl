@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155527"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355555"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -31,9 +31,9 @@ Można również używać programu Visual Studio **przeglądarki obiektów** (**
 
 Technologia IntelliSense zawiera [uzupełnienia](#completions), [pomocy dotyczącej sygnatur](#signature-help), [szybka podpowiedź](#quick-info), i [kolorowanie kodu](#code-coloring). Visual Studio 2017 w wersji 15.7 lub nowszej obsługują także [wskazówek dotyczących typów](#type-hints).
 
-Aby zwiększyć wydajność, funkcja IntelliSense w **programu Visual Studio 2017 w wersji 15.5** i wcześniej zależy od bazy danych uzupełniania, który jest generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie, jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okna (element równorzędny **Eksploratora rozwiązań**) na **IntelliSense** kartę (zobacz [okna środowiska Dokumentacja](python-environments-window-tab-reference.md#intellisense-tab)).
+W celu poprawy wydajności funkcji IntelliSense w Visual Studio 2017 w wersji 15.5 i starszych zależy od bazy danych uzupełniania, który jest generowany dla każdego środowiska Python w projekcie. Bazy danych może być konieczne odświeżenie, jeśli dodać, usunąć lub zaktualizować pakiety. Stan bazy danych jest wyświetlany w **środowiska Python** okna (element równorzędny **Eksploratora rozwiązań**) na **IntelliSense** kartę (zobacz [okna środowiska Dokumentacja](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 w wersji 15.6** później przy użyciu różnych środków dostarcza uzupełnianiu IntelliSense, które nie są zależne od bazy danych.
+Visual Studio 2017 w wersji 15.6 i nowszych używa różne sposoby, aby zapewnić uzupełnianiu IntelliSense, które nie są zależne od bazy danych.
 
 ### <a name="completions"></a>Uzupełnianie
 

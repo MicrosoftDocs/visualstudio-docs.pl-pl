@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952154"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355391"
 ---
 # <a name="how-to-update-existing-templates"></a>Instrukcje: Aktualizowanie istniejących szablonów
 
 Po utworzeniu szablonu i plików do skompresowania *zip* pliku, możesz chcieć zmodyfikować szablon. Można to zrobić ręcznie, zmieniając pliki w szablonie, lub przez wyeksportowanie szablonu z projektu, który jest oparty na szablonie.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Przy użyciu Kreatora eksportowania szablonu, aby zaktualizować istniejący szablon projektu
+## <a name="use-the-export-template-wizard"></a>Za pomocą Kreatora eksportowania szablonu
 
 Program Visual Studio udostępnia **Kreatora eksportowania szablonu** można zaktualizować istniejący szablon:
 
-1. Otwórz **nowy projekt** okno dialogowe, wybierając **pliku** > **New** > **projektu**.
+1. Wybierz **pliku** > **New** > **projektu** z paska menu.
 
-1. Wybierz szablon, który chcesz zaktualizować, wprowadź nazwę i lokalizację dla swojego projektu, a następnie wybierz **OK**.
+1. Wybierz szablon, który chcesz zaktualizować, a następnie kontynuuj czynności, aby utworzyć nowy projekt.
 
-1. Modyfikowanie projektu w programie Visual Studio.
+1. Modyfikowanie projektu w programie Visual Studio. Na przykład zmienić typ danych wyjściowych, lub Dodaj nowy plik do projektu.
 
 1. Na **projektu** menu, wybierz **Eksportuj szablon**.
 
@@ -37,7 +37,7 @@ Program Visual Studio udostępnia **Kreatora eksportowania szablonu** można zak
 
 1. Postępuj zgodnie z instrukcjami w kreatorze, aby wyeksportować szablon jako *zip* pliku.
 
-1. (Opcjonalnie) Aby dodać szablon do **nowy projekt** okno dialogowe, miejsce *zip* pliku w następującym katalogu: *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ProjectTemplates*. Musisz wykonać ten krok, jeśli nie wybrana opcja **automatycznie zaimportuj szablon do programu Visual Studio** w **Kreatora eksportowania szablonu**.
+1. (Opcjonalnie) Miejsce *zip* pliku w następującym katalogu: *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ProjectTemplates* być udostępniana dla Wybór. Musisz wykonać ten krok, jeśli nie wybrana opcja **automatycznie zaimportuj szablon do programu Visual Studio** w **Kreatora eksportowania szablonu**.
 
 1. Usuń stary szablon *zip* pliku.
 

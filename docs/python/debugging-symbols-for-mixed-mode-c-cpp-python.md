@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869366"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355438"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalowanie symboli debugowania dla interpreterów języka Python
 
 Zapewnienie pełnego środowiska debugowania [debugera języka Python w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) w programie Visual Studio potrzebuje symbole debugowania dla interpretera języka Python, używane do analizowania wiele wewnętrznych struktur danych. Dla *python27.dll*, na przykład, jest odpowiedni plik symboli *python27.pdb*; *python36.dll*, plik symboli jest *python36.pdb*. Każda wersja interpreter dostarcza również pliki symboli dla różnych modułów.
 
-Za pomocą programu Visual Studio 2017 interpreterów języka Python 3 oraz Anaconda 3 automatycznie instalować ich odpowiednich symboli i program Visual Studio automatycznie znajdzie te symbole. Dla programu Visual Studio 2015 i starsze, lub w przypadku używania innych interpreterów, musisz osobno pobierać symbole, a następnie wskazać je za pomocą programu Visual Studio **narzędzia** > **opcje** w okna dialogowego **debugowanie** > **symbole** kartę. Te kroki są szczegółowo opisane w poniższych sekcjach.
+Za pomocą programu Visual Studio 2017 i nowszych interpreterów języka Python 3 oraz Anaconda 3 automatycznie instalować ich odpowiednich symboli i program Visual Studio automatycznie znajdzie te symbole. Dla programu Visual Studio 2015 i starsze, lub w przypadku używania innych interpreterów, musisz osobno pobierać symbole, a następnie wskazać je za pomocą programu Visual Studio **narzędzia** > **opcje** w okna dialogowego **debugowanie** > **symbole** kartę. Te kroki są szczegółowo opisane w poniższych sekcjach.
 
 Program Visual Studio może zostać wyświetlony komunikat po potrzebny symbole, zazwyczaj podczas uruchamiania sesji debugowania w trybie mieszanym. W tym przypadku wyświetla okno dialogowe z jedną z dwóch opcji:
 

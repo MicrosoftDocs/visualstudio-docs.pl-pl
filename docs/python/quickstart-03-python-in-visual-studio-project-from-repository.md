@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928455"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355289"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki start: Klonowanie repozytorium kodu w języku Python w programie Visual Studio
 
-Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](installing-python-support-in-visual-studio.md), można dodać rozszerzenie GitHub dla programu Visual Studio. Rozszerzenie pozwala łatwo sklonować repozytorium kodu w języku Python i Utwórz projekt z niego z poziomu środowiska IDE. Można zawsze klonowanie repozytoriów z wiersza polecenia i pracować z nimi w programie Visual Studio.
+Po [zainstalowane obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md), można dodać rozszerzenie GitHub dla programu Visual Studio. Rozszerzenie pozwala łatwo sklonować repozytorium kodu w języku Python i Utwórz projekt z niego z poziomu środowiska IDE. Można zawsze klonowanie repozytoriów z wiersza polecenia i pracować z nimi w programie Visual Studio.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Zainstaluj rozszerzenie GitHub dla programu Visual Studio
 

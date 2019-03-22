@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1264bd590cc44a16470902372b05ff0e8c562b6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914282"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355649"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -38,7 +38,7 @@ Ukończone próbkę z tego przewodnika znajdują się na [rozszerzenie języka p
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Visual Studio 2017 z obu **programowanie aplikacji klasycznych w języku C++** i **programowania w języku Python** obciążeń zainstalowany z użyciem opcji domyślnych.
+- Visual Studio 2017 lub nowszego z programem **programowanie aplikacji klasycznych w języku C++** i **programowania w języku Python** obciążeń zainstalowany z użyciem opcji domyślnych.
 - W **programowania w języku Python** obciążenie, zaznacz także pole po prawej stronie, aby uzyskać **Python natywne narzędzia programistyczne**. Ta opcja umożliwia ustawienie większość konfiguracji opisanej w tym artykule. (Ta opcja również powoduje dołączenie obciążeniu C++ dla automatycznie.)
 
     ![Wybranie opcji narzędzia programowania natywnego języka Python](media/cpp-install-native.png)
@@ -107,7 +107,7 @@ Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne proj
 1. Wyszukiwanie w "C++" Wybierz **pusty projekt**, określ nazwę "superfastcode" ("superfastcode2" dla drugiego projektu) i wybierz **OK**.
 
     > [!Tip]
-    > Za pomocą **Python natywne narzędzia programistyczne** zainstalowany w programie Visual Studio 2017, można uruchomić z **modułu rozszerzenia języka Python** szablonu zamiast tego, który ma wiele opisane poniżej już w miejscu. W ramach tego przewodnika, zaczynając od pustego projektu pokazuje tworzenia modułu rozszerzenia krok po kroku. Po zrozumieniu procesu zapisuje szablon pozwala oszczędzić czas podczas pisania własnych rozszerzeń.
+    > Za pomocą **Python natywne narzędzia programistyczne** zainstalowany w programie Visual Studio, można uruchomić z **modułu rozszerzenia języka Python** szablonu zamiast tego, który ma wiele opisane poniżej już w miejscu. W ramach tego przewodnika, zaczynając od pustego projektu pokazuje tworzenia modułu rozszerzenia krok po kroku. Po zrozumieniu procesu zapisuje szablon pozwala oszczędzić czas podczas pisania własnych rozszerzeń.
 
 1. Utwórz plik języka C++ w nowym projekcie, klikając prawym przyciskiem myszy **pliki źródłowe** węzła, następnie wybierz pozycję **Dodaj** > **nowy element**, wybierz opcję **pliku C++**, nadaj jej nazwę `module.cpp`i wybierz **OK**.
 
@@ -284,7 +284,7 @@ Pierwsza metoda działa, jeśli projektu w języku Python i projektu C++ znajduj
 
 Alternatywna metoda, opisane w poniższych krokach instaluje moduł w środowisku globalnym języka Python, udostępniając je do innych projektów języka Python. (Dlatego zwykle wymaga odświeżania bazy danych uzupełniania IntelliSense dla tego środowiska w programie Visual Studio 2017 w wersji 15.5 i starszych. Trwa odświeżanie jest również podczas usuwania modułu ze środowiska.)
 
-1. Jeśli używasz programu Visual Studio 2017, uruchom Instalatora programu Visual Studio wybierz **Modyfikuj**, wybierz opcję **poszczególne składniki** > **kompilatory, narzędzia do kompilacji i środowiska uruchomieniowe**  >  **Zestaw narzędzi w wersji 140 visual C++ 2015.3**. Ten krok jest niezbędny, ponieważ Python (dla Windows) jest tworzone za pomocą programu Visual Studio 2015 (wersja 14.0) i oczekuje, że te narzędzia są dostępne podczas kompilowania rozszerzenia za pomocą metody opisane w tym miejscu. (Zwróć uwagę, że może być konieczne do zainstalowania 32-bitowej wersji środowiska Python i docelowa bibliotek DLL systemu Win32 i nie x64).
+1. Jeśli używasz programu Visual Studio 2017 lub później, uruchom Instalatora programu Visual Studio, wybierz **Modyfikuj**, wybierz opcję **poszczególne składniki** > **kompilatory, narzędzia do kompilacji i środowiska uruchomieniowe**   >  **Zestaw narzędzi w wersji 140 visual C++ 2015.3**. Ten krok jest niezbędny, ponieważ Python (dla Windows) jest tworzone za pomocą programu Visual Studio 2015 (wersja 14.0) i oczekuje, że te narzędzia są dostępne podczas kompilowania rozszerzenia za pomocą metody opisane w tym miejscu. (Zwróć uwagę, że może być konieczne do zainstalowania 32-bitowej wersji środowiska Python i docelowa bibliotek DLL systemu Win32 i nie x64).
 
 1. Utwórz plik o nazwie *pliku setup.py* w projekcie języka C++, klikając prawym przyciskiem myszy projekt i wybierając **Dodaj** > **nowy element**. Następnie wybierz pozycję **plik C++ (.cpp)**, nadaj plikowi nazwę `setup.py`i wybierz **OK** (plikowi z *PY* rozszerzenia sprawia, że program Visual Studio rozpoznaje je jako języka Python Pomimo przy użyciu języka C++ plik szablonu). Gdy plik zostanie wyświetlony w edytorze, wklej następujący kod do niego odpowiednie dla metody rozszerzenia:
 

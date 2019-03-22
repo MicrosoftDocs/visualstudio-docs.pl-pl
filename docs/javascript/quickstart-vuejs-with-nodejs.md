@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 869e60bf736f792255d36d83c9d9b06d20e67f02
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069596"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355263"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: Utwórz swoją pierwszą aplikację Vue.js przy użyciu programu Visual Studio
 
@@ -56,15 +56,13 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
-
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** lub **typescript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **podstawowe Vue.js sieci Web Aplikacja**, a następnie wybierz **OK**.
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Vue.js**, następnie wybierz **podstawowa Vue.js aplikacja sieci Web** (języka JavaScript lub TypeScript). W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript** lub **TypeScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, następnie wybierz **OK**.
     ::: moniker-end
     Jeśli nie widzisz **podstawowa Vue.js aplikacja sieci Web** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 

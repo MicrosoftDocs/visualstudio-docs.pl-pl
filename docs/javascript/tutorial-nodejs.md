@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070324"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355568"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 
@@ -75,15 +75,13 @@ W tym samouczku możesz zaczynają się od prostego projektu zawierającego kod 
 
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
-
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, a następnie wybierz pozycję **OK**.
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **Utwórz nową aplikację podstawowe Azure node.js w środowisku Express 4** (JavaScript). W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.
     ::: moniker-end
     Jeśli nie widzisz **aplikacji podstawowe Azure node.js w środowisku Express 4** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 

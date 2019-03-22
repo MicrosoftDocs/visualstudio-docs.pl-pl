@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867816"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355477"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Strony Projekty i rozwiązania, okno dialogowe Opcje
 
@@ -91,11 +91,11 @@ Określa domyślną lokalizację, gdzie program Visual Studio tworzy nowe projek
 
 ### <a name="user-project-templates-location"></a>Lokalizacja szablonów projektów użytkownika
 
-Określa domyślną lokalizację, **nowy projekt** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Określa domyślną lokalizację, który jest używany do wyszukiwania dla szablonów utworzonych przez użytkownika projektu. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Lokalizacja szablonów elementów użytkownika
 
-Określa domyślną lokalizację, **Dodaj nowy element** okno dialogowe używa w celu utworzenia listy **Moje szablony**. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Określa domyślną lokalizację, który jest używany do wyszukiwania dla szablonów utworzonych przez użytkownika elementu. Aby uzyskać więcej informacji, zobacz [jak: Lokalizowanie i organizacja szablonów](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 

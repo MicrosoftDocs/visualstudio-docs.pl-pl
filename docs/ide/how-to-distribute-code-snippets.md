@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Dystrybuowanie fragmentów kodu'
-ms.date: 11/04/2016
+title: Dystrybuowanie fragmentów kodu jako rozszerzenie
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323056"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355425"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Instrukcje: Dystrybuowanie fragmentów kodu
+# <a name="how-to-distribute-code-snippets"></a>Porady: Dystrybuowanie fragmentów kodu
 
-Możesz udostępnić swoje fragmenty kodu programu znajomym i je zainstalowali na swoich komputerach przy użyciu **Menedżera wstawek kodu**. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, dodasz plik fragmentu do pliku w rozszerzeniem programu Visual Studio. Visual Studio użytkownicy mogą następnie zainstalować rozszerzenie.
+Możesz udostępnić swoje fragmenty kodu programu znajomym i je zainstalowali na swoich komputerach przy użyciu **Menedżera wstawek kodu**. Jednak jeśli masz kilka fragmentów do dystrybucji lub chcesz przekazać je szerzej, może zawierać pliki fragmentu kodu w rozszerzeniu Visual Studio. Użytkowników usługi Visual Studio można zainstalować rozszerzenia Aby uzyskać fragmenty kodu.
 
-Visual Studio SDK należy zainstalować, aby można było utworzyć rozszerzenia programu Visual Studio. Znajdź wersję VSSDK, która jest zgodna z instalacją programu Visual Studio na [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Wymagania wstępne
+
+Zainstaluj **programowanie rozszerzeń programu Visual Studio** obciążenie w celu uzyskania dostępu do **projekt VSIX** szablony projektów.
+
+![Obciążenie programowanie rozszerzenia programu Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Skonfiguruj rozszerzenia
 
-W tej procedurze użyto tym samym fragmencie kodu Hello World, który jest tworzony w [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md). Firma Microsoft będzie dostarczać *.snippet* tekstu, dzięki czemu nie trzeba wrócić i zmienić jedną.
+W tej procedurze, używane będzie tym samym fragmencie kodu Hello World, który jest tworzony w [instruktażu: Utwórz fragment kodu](../ide/walkthrough-creating-a-code-snippet.md). Ten artykuł zawiera fragment kodu XML, aby nie musieli przejść wstecz i utwórz fragment kodu.
 
-1. Utwórz nowy projekt VSIX, o nazwie **TestSnippet**. (**Pliku** > **nowe** > **projektu** > **Visual C# (lub Visual Basic)**  >  **Rozszerzalności**.)
+1. Utwórz nowy projekt z **pusty projekt VSIX** szablonu i nazwy projektu **TestSnippet**.
 
 2. W **TestSnippet** projektu, Dodaj nowy plik XML i wywołać go *VBCodeSnippet.snippet*. Zastąp zawartość następujący kod XML:
 
@@ -111,7 +115,9 @@ W tej procedurze użyto tym samym fragmencie kodu Hello World, który jest tworz
 
 4. Przetestuj fragmentu kodu. W doświadczalnym wystąpieniu Otwórz projekt języka Visual Basic, a następnie otwórz jeden z plików kodu. Umieść kursor w miejscu gdzieś w kodzie, kliknij prawym przyciskiem myszy, a na stronie wybierz menu kontekstowe **Wstaw fragment kodu**.
 
-5. Powinien zostać wyświetlony *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinny zostać wyświetlone okno podręczne **Wstaw fragment kodu: HelloWorldVB >** zawierający listę rozwijaną **HelloWorldVB**. Kliknij przycisk **HelloWorldVB** listy rozwijanej. Powinien zostać wyświetlony następujący wiersz, które są dodawane do pliku:
+5. Powinien zostać wyświetlony *HelloWorldVB* jako jeden z folderów. Kliknij go dwukrotnie. Powinny zostać wyświetlone okno podręczne **Wstaw fragment kodu: HelloWorldVB >** zawierający listę rozwijaną **HelloWorldVB**. Kliknij przycisk **HelloWorldVB** listy rozwijanej.
+
+   Następujący wiersz jest dodawana do pliku kodu:
 
     ```vb
     Console.WriteLine("Hello, World!")

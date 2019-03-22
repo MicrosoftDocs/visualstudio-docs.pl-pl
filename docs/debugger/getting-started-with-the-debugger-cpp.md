@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428781"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355594"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się debugować kod C++ przy użyciu programu Visual Studio
 
@@ -37,32 +37,35 @@ W tym samouczku wykonasz następujące czynności:
 
 ::: moniker range=">=vs-2019"
 
-* Konieczne jest posiadanie programu Visual Studio 2019 r zainstalowane i **programowanie aplikacji klasycznych w języku C++** obciążenia.
+Konieczne jest posiadanie programu Visual Studio 2019 r zainstalowane i **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacji klasycznych w języku C++** obciążenia.
+Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
 ::: moniker-end
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
 
-Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. W programie Visual Studio, wybierz **Plik > Nowy projekt**.
+1. Otwórz program Visual Studio.
 
-2. W obszarze **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **aplikacji konsoli Windows**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **c ++**, wybierz **szablony**, następnie wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wpisz nazwę, takich jak **get pracę debugowanie**, a następnie wybierz **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **konsoli Windows Aplikacja**. Następnie wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
+    ::: moniker-end
 
-    Jeśli nie widzisz **aplikacji konsoli Windows** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
-
-3. Wpisz nazwę, takich jak **get pracę debugowanie** i kliknij przycisk **OK**.
+    Jeśli nie widzisz **aplikacji konsoli Windows** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
     Program Visual Studio tworzy projekt.
 
-4. W *get pracę debugging.cpp*, Zastąp następujący kod
+1. W *get pracę debugging.cpp*, Zastąp następujący kod
 
     ```c++
     int main()

@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160644"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355192"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
 
@@ -22,7 +22,7 @@ Dotyczy to generowanie kodu:
 
 - C#
 
-**Co:** **Co:** Umożliwia to natychmiastowe dodanie odpowiednie Importy lub [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) kopiowania i wklejony kodu.
+**Co:** Umożliwia to natychmiastowe dodanie odpowiednie Importy lub [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) kopiowania i wklejony kodu.
 
 **Kiedy:** Jest to powszechną praktyką, aby skopiować i wkleić kod z różnych miejsc w projekcie lub innych źródeł kodu. Tej szybkiej akcji analizuje Brak Import dla kopiowania i wklejony kod, a następnie wyświetla je dodać.
 

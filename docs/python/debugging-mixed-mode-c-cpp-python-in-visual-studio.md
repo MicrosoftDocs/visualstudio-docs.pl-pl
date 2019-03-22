@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916833"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355237"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie języka Python i C++ razem
 
@@ -57,13 +57,13 @@ Funkcje debugowania trybu mieszanego zawierają następujące informacje, jak wy
 
     Można wybrać inne typy kodu, oprócz lub zamiast **natywnych**. Na przykład, jeśli zarządzanej aplikacji obsługuje CPython, z kolei są używane moduły natywne rozszerzenia, a chcesz debugować wszystkie trzy, można sprawdzić **Python**, **natywnych**, i **zarządzane**ze sobą w celu ujednolicone środowisko debugowania m.in. stosy wywołań połączone i Krokowe przechodzenie między wszystkie trzy środowisk uruchomieniowych.
 
-1. Po rozpoczęciu debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musisz zainstalować symbole tylko raz dla dowolnego danego środowiska Python. Symbole są automatycznie dołączane, po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio 2017.
+1. Po rozpoczęciu debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musisz zainstalować symbole tylko raz dla dowolnego danego środowiska Python. Symbole są automatycznie dołączane, po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio (Visual Studio 2017 i nowsze).
 
 1. Aby udostępnić kod źródłowy dla standardowego języka Python, sama podczas debugowania, odwiedź stronę [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/), Pobierz archiwum odpowiednie dla posiadanej wersji i Wyodrębnij jego zawartość do folderu. Możesz następnie punktu programu Visual Studio do określonych plików w tym folderze na dowolnie punkt wyświetli monit.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Włącz debugowanie w trybie mieszanym w projekcie języka C/C++
 
-Visual Studio 2017 (wersja 15.5 lub nowszej) obsługuje debugowanie w trybie mieszanym z projektu języka C/C++ (na przykład, gdy [osadzania języka Python w innej aplikacji, zgodnie z opisem w witrynie python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt języka C/C++ do uruchomienia **debugowania języka Python/środowiska macierzystego**:
+Visual Studio (2017 w wersji 15.5 lub nowszej) obsługuje trybu mieszanego debugowanie z projektu języka C/C++ (na przykład, gdy [osadzania języka Python w innej aplikacji, zgodnie z opisem w witrynie python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt języka C/C++ do uruchomienia **debugowania języka Python/środowiska macierzystego**:
 
 1. Kliknij prawym przyciskiem myszy projekt języka C/C++ w **Eksploratora rozwiązań** i wybierz **właściwości**.
 1. Wybierz **debugowanie** zaznacz **debugowania języka Python/środowiska macierzystego** z **debuger do uruchomienia**i wybierz **OK**.

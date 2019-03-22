@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195209"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355779"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja karty okna środowiska Python
 
@@ -60,7 +60,7 @@ W codziennym przepływie pracy, wykorzystywane są interaktywnych okien, prawdop
 
 Skrypty uruchamiania zawierają kod, który **Interactive** okna ładuje i uruchamia się automatycznie, w tym importów, definicje funkcji i dosłownie czymkolwiek. Te skrypty są przywoływane na dwa sposoby:
 
-1. Podczas instalowania środowiska Visual Studio tworzy folder *skrypty 2017\Python Documents\Visual Studio\\\<środowiska >* gdzie &lt;środowiska&gt; odpowiada Nazwa środowiska. Łatwo można przejść do folderu określonego środowiska z **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu **Interactive** okna dla danego środowiska, ładuje i uruchamia niezależnie od rodzaju *PY* pliki znajdują się w tym miejscu w kolejności alfabetycznej.
+1. Podczas instalowania środowiska Visual Studio tworzy folder *Documents\Visual Studio <version>skrypty \Python\\\<środowiska >* gdzie &lt;wersji&gt; jest wersja programu Visual Studio (na przykład 2017 lub 2019 r) i &lt;środowiska&gt; jest zgodna z nazwą środowiska. Łatwo można przejść do folderu określonego środowiska z **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu **Interactive** okna dla danego środowiska, ładuje i uruchamia niezależnie od rodzaju *PY* pliki znajdują się w tym miejscu w kolejności alfabetycznej.
 
 1. **Skrypty** w kontrolce **narzędzia** > **opcje** > **Python**  >  **Interaktywne Windows** kartę (zobacz [opcje interaktywnych okien](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) należy podać folder dodatkowe skrypty uruchamiania, które są ładowane i uruchamiać we wszystkich środowiskach. Jednak ta funkcja nie działa w chwili obecnej.
 
@@ -156,8 +156,8 @@ Przedstawia bieżący stan bazy danych uzupełniania IntelliSense:
 
 ![Karta IntelliSense środowiska Python](media/environments/environments-intellisense-tab.png)
 
-- W **programu Visual Studio 2017 w wersji 15.5** i wcześniej, uzupełnianiu IntelliSense są zależne od bazy danych, która jest zostały skompilowane dla tej biblioteki. Tworzenia bazy danych jest wykonywane w tle, gdy biblioteka jest zainstalowany, ale może zająć trochę czasu i mogą być niekompletne po rozpoczęciu pisania kodu.
-- **Visual Studio 2017 w wersji 15.6** później przy użyciu metody szybciej dostarcza uzupełnień, które nie zależą od bazy danych domyślnie. Z tego powodu karcie jest oznaczona etykietą **IntelliSense [baza danych wyłączone]**. Aby umożliwić bazy danych, usuwając zaznaczenie opcji **narzędzia** > **opcje** > **Python**  >   **Eksperymentalne** > **Użyj nowego stylu funkcji IntelliSense dla środowisk**.
+- W programie Visual Studio 2017 w wersji 15.5 i starszych wersjach uzupełnianiu IntelliSense zależą od bazy danych, która jest zostały skompilowane dla tej biblioteki. Tworzenia bazy danych jest wykonywane w tle, gdy biblioteka jest zainstalowany, ale może zająć trochę czasu i mogą być niekompletne po rozpoczęciu pisania kodu.
+- Visual Studio 2017 w wersji 15.6 i nowsze używa metody szybciej, aby zapewnić uzupełnień, które nie zależą od bazy danych domyślnie. Z tego powodu karcie jest oznaczona etykietą **IntelliSense [baza danych wyłączone]**. Aby umożliwić bazy danych, usuwając zaznaczenie opcji **narzędzia** > **opcje** > **Python**  >   **Eksperymentalne** > **Użyj nowego stylu funkcji IntelliSense dla środowisk**.
 
 Gdy program Visual Studio wykryje nowe środowisko (lub dodać jeden), automatycznie rozpoczyna do skompilowania bazy danych, analizując plików źródłowych w bibliotece. Ten proces może potrwać od chwilę na godzinę lub dłużej w zależności od tego, co jest zainstalowany. (Anaconda, na przykład jest dostarczany z wielu bibliotek i zajmuje trochę czasu, aby skompilować bazy danych) Po wykonaniu tych czynności, Uzyskaj szczegółowe IntelliSense i nie trzeba ponownie Odśwież bazy danych (przy użyciu **Odśwież DB** przycisk) aż do zainstalowania nad dodatkowymi bibliotekami.
 

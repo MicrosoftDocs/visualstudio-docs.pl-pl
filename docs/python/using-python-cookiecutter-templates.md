@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957981"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354776"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Używanie rozszerzenia Cookiecutter
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) zapewnia graficzny interfejs użytkownika do odnalezienia szablonów, wprowadź opcje szablonu oraz tworzenie projektów i plików. On wchodzi w skład programu Visual Studio 2017 i mogą być zainstalowane oddzielnie we wcześniejszych wersjach programu Visual Studio.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) zapewnia graficzny interfejs użytkownika do odnalezienia szablonów, wprowadź opcje szablonu oraz tworzenie projektów i plików. On zostało uwzględnione w programie Visual Studio 2017 i nowsze i mogą być zainstalowane oddzielnie we wcześniejszych wersjach programu Visual Studio.
 
 Cookiecutter wymaga języka Python 3.3 lub nowszej (32-bitowy lub 64-bitowy) albo Anaconda 3 4.2 i nowsze (32-bitowy lub 64-bitowych). Jeśli odpowiedni interpreter języka Python jest niedostępna, Visual Studio wyświetlane jest ostrzeżenie. Po zainstalowaniu interpreter języka Python, po uruchomieniu programu Visual Studio, kliknij przycisk **Home** na listwie narzędziowej Cookiecutter do wykrywania interpretera nowo zainstalowany. (Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md) więcej informacji na temat środowisk ogólnie rzecz biorąc.)
 

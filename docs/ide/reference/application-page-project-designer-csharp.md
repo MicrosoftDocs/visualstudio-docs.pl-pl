@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222535"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355344"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
@@ -52,7 +52,7 @@ Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.P
 
 Określa wersję programu .NET Framework, cele aplikacji. Ta opcja może mieć różne wartości w zależności od tego, które wersje programu .NET Framework są zainstalowane na tym komputerze.
 
-Domyślnie wartość jest taka sama jak platforma docelowa, które wybrano w **nowy projekt** okno dialogowe.
+Domyślnie wartość jest taka sama jak struktury docelowej, która wybranej podczas tworzenia projektu.
 
 > [!NOTE]
 > Wstępnie wymagane pakiety wymienione w [wstępnie wymagane składniki, okno dialogowe](../../ide/reference/prerequisites-dialog-box.md) są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli użytkownik zmieni później platformę docelową projektu, musisz wybrać wstępnie wymagane składniki ręcznie, aby dopasować do nowej platformy docelowej.

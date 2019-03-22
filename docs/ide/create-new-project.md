@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dad62afa1761107d326075adffc31a34b04d0c
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9f5d48ee97e1e0d92237fe5836c8bd9c1888c3a4
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324951"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355250"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Utwórz nowy projekt w programie Visual Studio
 
@@ -65,17 +65,31 @@ Jeśli w środowisku programowania Visual Studio jest już otwarty, można utwor
 
 ## <a name="select-a-template-type"></a>Wybierz typ szablonu
 
-Na **Utwórz nowy projekt** strony, można filtrować dostępnych szablonów projektów przez **języka** (na przykład C# lub C++), **platformy** (na przykład Windows lub Platforma Azure), a **typ projektu** (na przykład pulpitu lub w sieci Web). Możesz też wprowadzić wyszukiwany tekst w polu wyszukiwania, aby dokładniej przefiltrować szablonów, na przykład **asp.net**.
+Na **Utwórz nowy projekt** stronie zostanie wyświetlona lista ostatnio wybranych szablonów po lewej stronie. Szablony są sortowane według *ostatnio używanych*.
+
+Jeśli nie jest to zaznaczenie z ostatnio używanych szablonów, można filtrować wszystkich dostępnych szablonów projektów przez **języka** (na przykład C# lub C++), **platformy** (na przykład Windows lub platformy Azure), i **Typ projektu** (na przykład pulpitu lub w sieci Web). Możesz też wprowadzić wyszukiwany tekst w polu wyszukiwania, aby dokładniej przefiltrować szablonów, na przykład **asp.net**.
 
 ![Filtry szablonu projektu w programie Visual Studio 2019 r.](media/vs-2019/create-new-project-filters.png)
+
+Tagi, które są wyświetlane w każdym szablonie odpowiadają trzy filtry listy rozwijanej (typ języka, platformy i projektu).
+
+> [!TIP]
+> Jeśli nie widzisz szablonu, którego szukasz, może brakować obciążenia dla programu Visual Studio. Do zainstalowania dodatkowych obciążeń, na przykład **programowanie na platformie Azure** lub **programowanie aplikacji mobilnych przy użyciu platformy .NET**, kliknij przycisk **zainstalować więcej narzędzi i funkcji** link umożliwiający otworzenie Visual Instalator programu Studio. Z tego miejsca wybierz obciążeń, o których chcesz zainstalować, a następnie wybierz **Modyfikuj**. Po tym szablony projektu dodatkowe będą dostępne do wyboru.
+>
+> ![Zainstaluj link więcej narzędzi i funkcji w 2019 programu VS](media/vs-2019/install-more-tools-features.png)
 
 Wybierz szablon, a następnie kliknij przycisk **dalej**.
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-**Konfigurowania nowego projektu** strona zawiera opcje, aby nazwa projektu (i rozwiązania), wybierz lokalizację, gdzie zapisać go, a następnie wybierz wersję Framework (jeśli ma zastosowanie do szablonu wybrano).
+**Konfigurowania nowego projektu** strona zawiera opcje, aby nazwa projektu (i rozwiązania), wybierz lokalizację dysku, a następnie wybierz wersję Framework (jeśli ma zastosowanie do szablonu wybrano).
 
 ![Konfigurowanie nowej stronie projektu w VS 2019 r](media/vs-2019/configure-new-project.png)
+
+> [!NOTE]
+> Jeśli tworzysz nowy projekt, gdy już masz projekt lub rozwiązanie, które są otwarte w programie Visual Studio, powoduje udostępnienie opcji dodatkowej konfiguracji. Można utworzyć nowe rozwiązanie lub dodać nowy projekt do rozwiązania, które jest już otwarty.
+>
+> ![Utwórz nowe rozwiązanie lub dodać do istniejącego rozwiązania w 2019 programu VS](media/vs-2019/configure-new-project-solution.png)
 
 Kliknij przycisk **Utwórz** Aby utworzyć nowy projekt.
 
@@ -83,7 +97,7 @@ Kliknij przycisk **Utwórz** Aby utworzyć nowy projekt.
 
 ## <a name="add-additional-projects-to-a-solution"></a>Dodaj dodatkowe projekty do rozwiązania
 
-Jeśli chcesz dodać dodatkowe projekt do rozwiązania, wybierz węzeł rozwiązania w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+Jeśli chcesz dodać dodatkowe projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 786b116d153eeea2ddb1c495f88ae0cd6ce135c6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194901"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354772"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5. Instalowanie pakietów w środowisku Python
 
@@ -46,7 +46,7 @@ Fora społeczności deweloperów języka Python tworzył tysiące przydatne paki
 
    Pasek postępu małych może pojawić się poniżej środowiska, aby wskazać, że Visual Studio tworzy jego bazy danych IntelliSense dla nowo zainstalowanego pakietu. **IntelliSense** karcie znajdują się też więcej szczegółowych informacji. Należy pamiętać, że do czasu ukończenia tej bazy danych IntelliSense funkcje, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
 
-   Należy pamiętać, że **programu Visual Studio 2017 w wersji 15.6** później używa różnych i szybsze metody do pracy z obsługą technologii IntelliSense i wyświetla komunikat w tym celu na **IntelliSense** kartę.
+   Pamiętaj, że Visual Studio 2017 w wersji 15.6 i nowszych używa różnych i szybsze metody do pracy z obsługą technologii IntelliSense, a zostanie wyświetlony komunikat w tym celu na **IntelliSense** kartę.
 
 7. Utwórz nowy projekt za pomocą **pliku** > **New** > **projektu**, wybierając opcję **aplikację w języku Python** szablon. W pliku kodu, który pojawia się Wklej następujący kod, który tworzy tylko tym razem, które są oznaczane na wykresach graficznie wave cosinus, takich jak poprzednie kroki samouczka:
 

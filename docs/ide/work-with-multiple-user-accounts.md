@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933395"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355331"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -55,7 +55,7 @@ Gdy następnym razem otworzysz **Eksploratora serwera**, wyświetlane są zasoby
 
 Usługa Azure Active Directory (AAD) umożliwia obsługę użytkownika końcowego logowania jednokrotnego w aplikacjach sieci web platformy ASP.NET MVC lub uwierzytelniania AD w usługach interfejsu API sieci web. Uwierzytelnianie domeny różni się od uwierzytelniania konta użytkownika. Użytkownicy, którzy mają dostęp do domeny usługi Active Directory można użyć istniejących kont usługi AAD, połączyć się z aplikacji sieci web. Aplikacje usługi Office 365 można również użyć uwierzytelniania przez domenę.
 
-Aby to zobaczyć w działaniu, tworzenie aplikacji sieci web (**pliku** > **nowy projekt** > **C#** > **chmury**  >  **Aplikacji sieci Web ASP.NET**). W **nowy projekt ASP.NET** okno dialogowe, wybierz **Zmień uwierzytelnianie**. Kreatora uwierzytelniania pojawia się i pozwala wybrać rodzaj uwierzytelniania do użycia w aplikacji.
+Aby to zobaczyć w działaniu, Utwórz nową **aplikacji sieci Web ASP.NET** projektu. W **nowy projekt ASP.NET** okno dialogowe, wybierz **Zmień uwierzytelnianie**. Kreatora uwierzytelniania pojawia się i pozwala wybrać rodzaj uwierzytelniania do użycia w aplikacji.
 
 ![Okna dialogowego uwierzytelnienia zmiany dla platformy ASP.NET](../ide/media/vs2015_change_authentication.png)
 

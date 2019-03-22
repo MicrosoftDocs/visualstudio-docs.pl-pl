@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f486d88ebac42ba0f9c9f338ee9fd81b56c820cf
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070311"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355753"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikowanie aplikacji Node.js na platformie Azure (Linux App Service)
 
@@ -59,15 +59,13 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
-
 1. Utwórz nową aplikację TypeScript Express.
 
     ::: moniker range=">=vs-2019"
-    W **Utwórz nowy projekt** okno dialogowe, typ **javascript** w polu wyszukiwania, aby filtrować wyniki, a następnie wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, a następnie wybierz pozycję **OK**.
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **Utwórz nową aplikację podstawowe Azure node.js w środowisku Express 4** (TypeScript). W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W **nowy projekt** rozwiń w lewym okienku w oknie dialogowym **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **TypeScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.
 
     ![Utwórz nową aplikację TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

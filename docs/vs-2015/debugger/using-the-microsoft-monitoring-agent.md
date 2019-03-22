@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c6b5e0718bfde2917d6a2c069d423c3292beb35
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5d842df2056cb6e6b51bdb757057a821af494f15
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195198"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355638"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [przy użyciu programu Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) w witrynie docs.microsoft.com.
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [przy użyciu programu Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) w witrynie docs.microsoft.com.
 
 Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/azure-monitor/app/app-insights-overview) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
   
@@ -30,11 +30,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
   
  Przed rozpoczęciem Sprawdź, czy zgodnego źródła i symboli dla kodu skompilowane i wdrożone. Dzięki temu można przejść bezpośrednio do kodu aplikacji, podczas uruchamiania, debugowania i przeglądanie zdarzenia diagnostyczne w dzienniku IntelliTrace. [Skonfiguruj kompilacje](../debugger/diagnose-problems-after-deployment.md) tak, aby program Visual Studio, mogą automatycznie znaleźć i otworzyć pasujące źródło do wdrożonego kodu.  
   
-1.  [Krok 1: Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)  
+1.  [Krok 1. Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)  
   
-2.  [Krok 2: Rozpoczęcie monitorowania aplikacji](#MonitorEvents)  
+2.  [Krok 2. Rozpoczęcie monitorowania aplikacji](#MonitorEvents)  
   
-3.  [Krok 3: Zapisz zarejestrowane zdarzenia](#SaveEvents)  
+3.  [Krok 3. Zapisz zarejestrowane zdarzenia](#SaveEvents)  
   
 ##  <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent  
  Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  

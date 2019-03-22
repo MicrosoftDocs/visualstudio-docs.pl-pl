@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194344"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355529"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -75,7 +75,7 @@ Program Visual Studio zapewnia wiele sposobów konfigurowania projektu języka P
 
 ![Okno dialogowe Nowy projekt z szablonami języka Python](media/projects-new-project-dialog.png)
 
-Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual Studio 2017 (nie wszystkie szablony są dostępne we wszystkich poprzednich wersjach):
+Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual Studio 2017 i nowsze (nie wszystkie szablony są dostępne we wszystkich poprzednich wersjach):
 
 | Szablon | Opis |
 | --- | --- |
@@ -88,7 +88,7 @@ Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual 
 | **Strony sieci Web w technologii Silverlight v Ironpythonu** | Projekt IronPython, który działa w przeglądarce, za pomocą programu Silverlight. Kod Python aplikacji znajduje się na stronie sieci web jako skrypt. Tag skryptu standardowy ściąga kodu JavaScript, która inicjuje IronPython działają w ramach programu Silverlight, z którego kodu w języku Python mogą wchodzić w interakcje z DOM. |
 | **IronPython Windows Forms aplikacji** | Struktury projektu, IronPython przy użyciu interfejsu użytkownika tworzone za pomocą interfejsu Windows Forms przy użyciu kodu. Aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | **Tło w aplikacji (IoT)** | Obsługuje wdrażanie projektów języka Python do uruchamiania jako usługi w tle na urządzeniach. Odwiedź stronę [Centrum deweloperów systemu Windows IoT](https://dev.windows.com/en-us/iot) Aby uzyskać więcej informacji. |
-| **Modułu rozszerzenia języka Python** | Ten szablon jest wyświetlany w obszarze Visual C++ Jeśli zainstalowałeś **Python natywne narzędzia programistyczne** z obciążeniem Python w programie Visual Studio 2017 (zobacz [instalacji](installing-python-support-in-visual-studio.md)). Zapewnia struktury podstawowe rozszerzenia C++ biblioteki DLL, podobnie jak opisane na [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Modułu rozszerzenia języka Python** | Ten szablon jest wyświetlany w obszarze Visual C++ Jeśli zainstalowałeś **Python natywne narzędzia programistyczne** z obciążeniem Python w programie Visual Studio 2017 lub nowszego (zobacz [instalacji](installing-python-support-in-visual-studio.md)). Zapewnia struktury podstawowe rozszerzenia C++ biblioteki DLL, podobnie jak opisane na [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Ponieważ interpretacji języka Python, projektów języka Python w programie Visual Studio nie generują autonomicznego pliku wykonywalnego, podobnie jak inne projekty skompilowanych języka (C#, na przykład). Aby uzyskać więcej informacji, zobacz [pytań i odpowiedzi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

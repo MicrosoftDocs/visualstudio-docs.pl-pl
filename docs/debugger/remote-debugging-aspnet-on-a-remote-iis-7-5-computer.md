@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194208"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355727"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
 
 ![Składniki zdalnego debugera](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Ten przewodnik wyjaśnia, jak skonfigurować i skonfigurować program Visual Studio 2017 aplikacji platformy ASP.NET MVC 4.5.2, wdrożyć ją w usługach IIS i dołączyć debuger zdalny z programu Visual Studio.
+Ten przewodnik wyjaśnia, jak skonfigurować i konfigurowanie aplikacji programu Visual Studio ASP.NET MVC 4.5.2, wdrożyć ją w usługach IIS i dołączyć debuger zdalny z programu Visual Studio.
 
 > [!NOTE]
 > Do zdalnego debugowania programu ASP.NET Core, zamiast tego, zobacz [zdalne debugowanie platformy ASP.NET Core na komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Dla usługi Azure App Service można łatwo wdrażanie i debugowanie w ramach wstępnie skonfigurowanego wystąpienia programu IIS za pomocą [rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md) (platforma .NET 4.6.1 wymagane) lub przez [dołączanie debugera z poziomu Eksploratora serwera](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Wymagania wstępne
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 r jest wymagany, wykonaj kroki przedstawione w tym artykule.
+::: moniker-end
+::: moniker range="vs-2017"
+Program Visual Studio 2017 jest wymagany, wykonaj kroki przedstawione w tym artykule.
+::: moniker-end
+
 Procedury te zostały przetestowane na te konfiguracje serwera:
 * Windows Server 2012 R2 oraz usług IIS 8 (dla systemu Windows Server 2008 R2, server kroki są różne)
 
-## <a name="requirements"></a>Wymagania
+## <a name="network-requirements"></a>Wymagania dotyczące sieci
 
 Zdalny debuger jest obsługiwana w systemie Windows Server, począwszy od systemu Windows Server 2008 Service Pack 2. Aby uzyskać pełną listę wymagań, zobacz [wymagania](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -48,7 +57,14 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Tworzenie platformy ASP.NET 4.5.2 aplikacji na komputerze programu Visual Studio
 
-1. Utwórz nową aplikację MVC ASP.NET. (**Plik > Nowy > Projekt**, a następnie wybierz <strong>Visual C# > sieci Web > Aplikacja sieci Web ASP.NET. W **ASP.NET 4.5.2</strong> szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
+1. Utwórz nową aplikację MVC ASP.NET.
+
+    ::: moniker range=">=vs-2019"
+    W programie Visual Studio 2019 r, wpisz **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie nowych sieci Web platformy ASP.NET aplikacji (.NET Framework)**. Nadaj projektowi nazwę w oknie dialogowym **MyASPApp**, a następnie wybierz **Utwórz**. Wybierz **MVC** i wybierz polecenie **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Aby to zrobić w programie Visual Studio 2017, wybierz **Plik > Nowy > Projekt**, a następnie wybierz **Visual C# > sieci Web > Aplikacja sieci Web ASP.NET**. W **ASP.NET 4.5.2** szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
+    ::: moniker-end
 
 2. Otwórz plik HomeController.cs, a następnie ustaw punkt przerwania `About()` metody.
 
@@ -165,7 +181,7 @@ Możesz również publikować i wdrażanie aplikacji przy użyciu systemu plikó
 
 ## <a name="BKMK_msvsmon"></a> Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
 
-W tym samouczku używamy programu Visual Studio 2017.
+Pobierz wersję narzędzi remote tools, który odpowiada używanej wersji programu Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -186,7 +202,14 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
     > [!TIP]
     > W programie Visual Studio 2017 i nowszych wersjach można dołączyć ponownie do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P).
 
-3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: 4022**.
+3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: port**.
+
+    ::: moniker range=">=vs-2019"
+    **\<Nazwa komputera zdalnego >: 4024** 2019 Visual Studio
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<Nazwa komputera zdalnego >: 4022** programu Visual Studio 2017
+    ::: moniker-end
 4. Kliknij przycisk **Odśwież**.
     Powinien zostać wyświetlony niektóre procesy, które są wyświetlane w **dostępne procesy** okna.
 
@@ -215,10 +238,14 @@ W większości konfiguracji wymagane porty są otwarte przez instalację program
 
 Wymagane porty:
 
-- 80 - wymagane dla usług IIS
-- 8172 — (opcjonalnie) wymagany dla narzędzia Web Deploy do wdrażania aplikacji w programie Visual Studio
-- 4022 - wymagane do zdalnego debugowania w programie Visual Studio 2017 (zobacz [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md) Aby uzyskać szczegółowe informacje.
-- UDP 3702 — port odnajdywania (opcjonalnie) umożliwia **znaleźć** przycisku związane ze zdalnym debugerem programu Visual Studio.
+* 80 - wymagane dla usług IIS
+::: moniker range=">=vs-2019"
+* 4024 - wymagane do zdalnego debugowania z programu Visual Studio 2019 r (zobacz [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md) Aby uzyskać więcej informacji).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - wymagane do zdalnego debugowania w programie Visual Studio 2017 (zobacz [zdalnego przypisania portów debugera](../debugger/remote-debugger-port-assignments.md) Aby uzyskać więcej informacji).
+::: moniker-end
+* UDP 3702 — port odnajdywania (opcjonalnie) umożliwia **znaleźć** przycisku związane ze zdalnym debugerem programu Visual Studio.
 
 1. Aby otworzyć port w systemie Windows Server, należy otworzyć **Start** menu, wyszukaj **Zapora Windows z zabezpieczeniami zaawansowanymi**.
 

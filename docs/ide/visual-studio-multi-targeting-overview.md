@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949645"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355276"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio wielowersyjnością kodu — Przegląd
 
@@ -35,13 +35,13 @@ Adresowanie obejmuje następujące funkcje:
 
 - Po otwarciu projektu, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio może automatycznie go uaktualnić lub pozostawić obiekt docelowy jako-to.
 
-- Podczas tworzenia projektu można określić wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , ma pod kątem.
+- Podczas tworzenia projektu można określić wersji programu .NET Framework, która ma pod kątem.
 
-- Można zmienić wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] element docelowy, istniejącego projektu.
+- Można zmienić wersję programu .NET Framework, która istniejący projektu elementów docelowych.
 
-- Można odwoływać się do różnych wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w każdym z kilku projektów w tym samym rozwiązaniu.
+- Można wskazać inną wersję programu .NET Framework w każdym z kilku projektów w tym samym rozwiązaniu.
 
-- Po zmianie wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , projekt jest ukierunkowany [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wprowadza wszelkie wymagane zmiany dotyczące odwołań i plików konfiguracji.
+- Po zmianie wersji programu .NET Framework, projekt jest ukierunkowany [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wprowadza wszelkie wymagane zmiany dotyczące odwołań i plików konfiguracji.
 
 Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicznie zmienia środowisko programistyczne, w następujący sposób:
 
@@ -62,17 +62,27 @@ Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji [!INCL
 
 ## <a name="select-a-target-framework-version"></a>Wybieranie wersji platformy docelowej
 
-Podczas tworzenia projektu wybierz docelową wersję platformy .NET w **nowy projekt** okno dialogowe. Lista dostępnych platform obejmuje wersje zainstalowanych framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonu, które nie wymagają .NET Framework, na przykład szablony platformy .NET Core, **Framework** listy rozwijanej jest ukryty.
+Podczas tworzenia projektu wybierz docelową wersję platformy .NET, po wybraniu szablonu projektu. Lista dostępnych platform obejmuje wersje zainstalowanych framework, które mają zastosowanie do typu wybranego szablonu. Dla typów szablonu, które nie wymagają .NET Framework, na przykład szablony platformy .NET Core, **Framework** listy rozwijanej jest ukryty.
 
-![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-W istniejącym projekcie można zmienić docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![W ramach listy rozwijanej w programie VS 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Menu rozwijanego platform w 2019 programu VS](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+W istniejącym projekcie można zmienić docelową wersję platformy .NET w oknie dialogowym właściwości projektu. Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Rozwiązać odwołania do zestawów systemu i użytkownika
 
 Aby skierować je do wersji programu .NET Framework, należy najpierw zainstalować odpowiednie odwołania do zestawów. Możesz pobrać developer Pack dla różnych wersji programu .NET Framework na [pobiera .NET](https://www.microsoft.com/net/download/windows) strony.
 
-**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które nie odnoszą się do obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to *.dll* pliki, które są objęte [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] obiekcie docelowym projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Dodaj odwołanie** okno dialogowe wyłącza zestawy systemowe, które odnoszą się do .NET Framework w wersji docelowej, aby nie można ich dodać do projektu przypadkowo. (Zestawy systemowe to *.dll* plików znajdujących się w wersji programu .NET Framework.) Odwołania, które należą do wersji szablonu, która jest nowsza niż wersja docelowa nie zostanie rozwiązany, a nie można dodać formanty, które są zależne od takiego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj docelowego .NET Framework projektu na taki, który zawiera odwołanie.  Aby uzyskać więcej informacji, zobacz [jak: Docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 

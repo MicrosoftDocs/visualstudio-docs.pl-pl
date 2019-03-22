@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920109"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355701"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio
 
@@ -40,7 +40,7 @@ W miarę upływu następujące kroki, utworzysz jedno rozwiązanie Visual Studio
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Program Visual Studio 2017 na Windows przy użyciu następujących opcji:
+- Visual Studio 2017 lub później na Windows przy użyciu następujących opcji:
   - **Programowania w języku Python** obciążenia (**obciążenia** karty w oknie Instalatora). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git dla Windows** i **rozszerzeniu GitHub Extension for Visual Studio** na **poszczególne składniki** karcie **kodu narzędzia**.
 
@@ -60,7 +60,7 @@ Programowanie w języku Python nie jest obecnie obsługiwana w programie Visual 
     - **Lokalizacja**: Określ lokalizację, w której chcesz utworzyć rozwiązanie programu Visual Studio i projektu.
     - **Nazwa rozwiązania**: Ustaw **LearningFlask**, który jest odpowiedni do rozwiązania jako kontener dla wielu projektów w ramach tego samouczka.
     - **Utwórz katalog dla rozwiązania**: Pozostaw zestawu (ustawienie domyślne).
-    - **Utwórz nowe repozytorium Git**: Wybierz tę opcję, (czyli wyczyść domyślnie), tak aby program Visual Studio tworzy lokalne repozytorium Git, podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom Instalatora programu Visual Studio 2017 i Dodaj **Git dla Windows** i **rozszerzeniu GitHub Extension for Visual Studio** na **poszczególne składniki** kartę w obszarze **kodu narzędzia**.
+    - **Utwórz nowe repozytorium Git**: Wybierz tę opcję, (czyli wyczyść domyślnie), tak aby program Visual Studio tworzy lokalne repozytorium Git, podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom Instalatora programu Visual Studio i Dodaj **Git dla Windows** i **rozszerzeniu GitHub Extension for Visual Studio** na **poszczególne składniki** kartę w obszarze **kodu narzędzia**.
 
 1. Po chwili Visual Studio wyświetli monit z informacją o tym okna dialogowego **ten projekt wymaga pakiety zewnętrzne** (pokazana poniżej). To okno dialogowe pojawia się, ponieważ szablon zawiera *requirements.txt* plik odwołuje się do najnowszego pakietu 1.x Flask. (Wybierz **Pokaż wymagane pakiety** Aby wyświetlić zależności dokładną.)
 

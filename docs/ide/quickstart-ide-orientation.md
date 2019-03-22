@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325179"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354752"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -71,7 +71,7 @@ Aby kontynuować poznawanie funkcji programu Visual Studio, Utwórzmy nowy proje
 
 1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
-   Zostanie wyświetlone okno dialogowe, które mówi **Utwórz nowy projekt**. To okno jest czasami określane jako **nowy projekt** okna dialogowego, jest to gdzie Przeglądaj i wybierz szablon projektu. Zapewnia listy niedawno używanych projektów szablonów.
+   Zostanie otwarte okno dialogowe, które mówi **Utwórz nowy projekt**. W tym miejscu można wyszukiwać, filtrować, a następnie wybierz szablon projektu. Zawiera również listę szablonów niedawno używanych projektów.
 
 1. W polu wyszukiwania u góry wpisz **konsoli** do filtrowania listy typów projektów, które zawierają "konsoli" w nazwie. Dalej zawęzić wyniki wyszukiwania przez pobrania **C#** (lub innego języka) z **języka** selektora.
 

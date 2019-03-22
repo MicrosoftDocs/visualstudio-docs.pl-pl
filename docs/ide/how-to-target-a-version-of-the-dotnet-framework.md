@@ -1,6 +1,6 @@
 ---
 title: Docelowa wersja .NET Framework
-ms.date: 02/06/2018
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -10,41 +10,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954091"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355399"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Instrukcje: Określanie wersji docelowej programu .NET Framework
 
-W tym dokumencie opisano, jak odwoływać się do wersji programu .NET Framework, po utworzeniu projektu i jak zmienić wersję docelową w istniejących projektach Visual Basic, C#, lub Visual F# projektu.
+W tym artykule opisano, jak można odwoływać się do wersji programu .NET Framework podczas tworzenia projektu. Opisano również, jak zmienić wersję docelową w istniejących projektach Visual Basic, C#, lub F# projektu.
 
 > [!IMPORTANT]
 > Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="to-target-a-version-when-you-create-a-project"></a>Aby ukierunkować tworzony projekt na konkretną wersję
+## <a name="target-a-version-when-you-create-a-project"></a>Określanie wersji docelowej po utworzeniu projektu
 
-Podczas tworzenia projektu dostępne wersje programu .NET Framework są zależne od które wersje są zainstalowane, a następnie wybrany szablon w **nowy projekt** okno dialogowe.
+Podczas tworzenia projektu, zależą od dostępne wersje programu .NET Framework, na które wersje są zainstalowane i szablonu wybranego projektu.
 
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-1. Na liście zainstalowanych szablonów wybierz typ projektu, który chcesz utworzyć, a następnie wprowadź nazwę dla projektu.
+1. Wybierz szablon dla typu projektu, który chcesz utworzyć. Wprowadź nazwę dla projektu.
 
-1. Z **Framework** listy rozwijanej w dolnej części **nowy projekt** okno dialogowe, wybierz wersję programu .NET Framework, dla której projekt do obiektu docelowego.
+1. Z **Framework** listy rozwijanej w dolnej części okna dialogowego Wybierz wersję programu .NET Framework, dla której projekt do obiektu docelowego.
 
-    Lista platform pokazuje tylko wersje, które mają zastosowanie do szablonu, która została wybrana. Niektórych typach projektów, takich jak .NET Core, nie wymagają .NET Framework. W takich przypadkach **Framework** listy rozwijanej jest ukryty.
+   Lista platform pokazuje tylko wersje, które mają zastosowanie do szablonu, która została wybrana. Niektórych typach projektów, takich jak .NET Core, nie wymagają .NET Framework. W takich przypadkach **Framework** listy rozwijanej jest ukryty.
 
-    ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
+   ::: moniker range="vs-2017"
 
-1. Wybierz **OK** przycisku.
+   ![W ramach listy rozwijanej w oknie dialogowym Nowy projekt](media/vside-newproject-framework.png)
 
-## <a name="to-change-the-targeted-version"></a>Aby zmienić wersję docelową
+   ::: moniker-end
 
-Można zmienić wersję docelową .NET Framework w języku Visual Basic, C#, lub Visual F# projekt, korzystając z następującej procedury.
+   ::: moniker range=">=vs-2019"
 
-Aby uzyskać informacje o zmienianiu docelowej wersji dla projektów w języku C++, zobacz [jak: Modyfikowanie docelowego framework i zestaw narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+   ![Selektor Framework w 2019 programu VS](media/vs-2019/configure-new-project-framework.png)
+
+   ::: moniker-end
+
+1. Kontynuuj [Tworzenie projektu](create-new-project.md).
+
+## <a name="change-the-targeted-version"></a>Zmiana wersji docelowej
+
+Można zmienić wersję docelową .NET Framework w języku Visual Basic, C#, lub F# projekt, korzystając z następującej procedury.
 
 1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, który chcesz zmienić, a następnie wybierz **właściwości**.
 

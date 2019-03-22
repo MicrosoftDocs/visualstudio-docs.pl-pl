@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 97435248878fdb4c5f0b257f6a45155c58a62872
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151248"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354982"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
@@ -25,13 +25,13 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt**.
+1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    **Utwórz nowy projekt** zostanie otwarte okno dialogowe. Typ **asp.net** w polu wyszukiwania, aby filtrować wyniki, wybierz **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **dalej**. Następnie wprowadź nazwę, takich jak **MyDbgApp** i wybierz polecenie **Utwórz**.
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **c ++**, wybierz **szablony**, następnie wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Nowy projekt** zostanie otwarte okno dialogowe. W obszarze **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **aplikacji konsoli Windows**. Następnie wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **konsoli Windows Aplikacja**. Następnie wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
     ::: moniker-end
 
     Jeśli nie widzisz **aplikacji konsoli Windows** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.

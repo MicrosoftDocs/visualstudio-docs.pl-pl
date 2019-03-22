@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 570d0a5c6a3ff53b16b9975d40e78f59e5319ff7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927597"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355024"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 
-**Przekonwertować** okno dialogowe umożliwia wybranie narzędzia konwersji, aby utworzyć nowy projekt ze starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projektu z projektu języka Visual Basic 6. Można również użyć [konwerter projektów Visual Studio](https://github.com/ssvaidya/VSProjectConverter) na uaktualnianie projektów utworzonych w poprzednich wersjach programu Visual Studio.
+**Przekonwertować** okno dialogowe pozwala wybrać narzędzie konwersji, aby utworzyć nowy projekt z stary certyfikat. Na przykład można utworzyć projektu programu Visual Basic 2005 z projektu języka Visual Basic 6.
 
 ## <a name="open-the-convert-dialog-box"></a>Otwórz okno dialogowe Convert
 
-1.  Na pasku menu wybierz **pliku**, **Otwórz**, **przekonwertować**.
+1. Na pasku menu wybierz **pliku** > **Otwórz** > **przekonwertować**.
 
-     Zostanie wyświetlona lista narzędzi konwersji kodu, które są obecnie dostępne.
+   Zostanie wyświetlona lista narzędzi konwersji kodu, które są obecnie dostępne.
 
-2.  Wybierz narzędzie, które jest odpowiednie dla twojej aplikacji.
+2. Wybierz narzędzie, które jest odpowiednie dla twojej aplikacji.
 
 ## <a name="see-also"></a>Zobacz też
 

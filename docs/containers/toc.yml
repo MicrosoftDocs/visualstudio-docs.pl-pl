@@ -3,7 +3,7 @@ items:
   href: index.yml
   items:
   - name: Omówienie
-    href: /dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker?toc=/visualstudio/containers/toc.json&bc=/visualstudio/containers/breadcrumb/toc.json
+    href: visual-studio-tools-for-docker.md
   - name: 'Szybki start: Platforma Docker w programie Visual Studio'
     href: docker-tools.md
   - name: 'Samouczek: Aplikacja obsługująca wiele kontenerów przy użyciu narzędzia Docker Compose'
@@ -19,9 +19,9 @@ items:
   - name: Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160030"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354820"

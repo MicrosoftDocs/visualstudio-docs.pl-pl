@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526740"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355166"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Aby debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, skonfiguruj projekt, aby nawiązać połączenie z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.
@@ -71,7 +71,15 @@ Debuger nie można wdrożyć aplikacje klasyczne Visual C# lub Visual Basic do m
 
 5. Upewnij się, że **katalog roboczy** pole tekstowe jest puste.
 
-6. Wybierz **maszyny zdalnej użyj**i wpisz **MJO-DL:4022** w polu tekstowym. (4022 jest numerem portu, wyświetlane w oknie debugera zdalnego. Numer portu zwiększa wartość 2, w każdej wersji programu Visual Studio).
+6. Wybierz **maszyny zdalnej użyj**i wpisz **yourmachinename:port** w polu tekstowym. (Numer portu są wyświetlane w oknie debugera zdalnego. Numer portu zwiększa wartość 2, w każdej wersji programu Visual Studio).
+
+    W tym przykładzie należy użyć:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** on Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** on Visual Studio 2017
+    ::: moniker-end
 
 7. Upewnij się, że **Włącz debugowanie kodu natywnego** nie jest zaznaczone.
 

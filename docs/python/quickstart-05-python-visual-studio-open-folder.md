@@ -11,23 +11,23 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57986954"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354911"
 ---
-# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Szybki start: Otwórz i uruchamianie kodu języka Python w folderze
+# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Szybki start: Otwieranie i uruchamianie kodu języka Python w folderze
 
 Po [zainstalowane obsługi języka Python w programie Visual Studio 2019](installing-python-support-in-visual-studio.md), można łatwo uruchomić istniejący kod języka Python w programie Visual Studio 2019 r bez tworzenia projektu programu Visual Studio.
 
 > [!Note]
-> Visual Studio 2017 i wcześniejszych wymagane do tworzenia projektu programu Visual Studio, aby uruchomić kod języka Python, który można łatwo czy przy użyciu szablonu projektu wbudowanych. Zobacz [Szybki Start: Tworzenie projektu języka Python z istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+> Visual Studio 2017 i starsze wersje wymagają utworzenia projektu programu Visual Studio, aby uruchomić kod języka Python, który można łatwo czy przy użyciu szablonu projektu wbudowanych. Zobacz [Szybki Start: Tworzenie projektu języka Python z istniejącego kodu](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 
 1. W ramach tego przewodnika można użyć dowolnego folderu przy użyciu kodu w języku Python, który chcesz. Aby skorzystać z tym przykładzie, sklonuj repozytorium GitHub gregmalcolm/python_koans do komputera za pomocą polecenia `git clone https://github.com/gregmalcolm/python_koans` w odpowiedni folder.
 
-1. Uruchom program Visual Studio 2019 r, a następnie na ekranie startowym wybierz **Otwórz** w dolnej części **wprowadzenie** kolumny. Alternatywnie Jeśli masz już program Visual Studio działa, wybierz **pliku** > **Otwórz** > **folderu** zamiast tego polecenia.
+1. Uruchom program Visual Studio 2019 r i w oknie rozpoczęcia wybierz **Otwórz** w dolnej części **wprowadzenie** kolumny. Alternatywnie Jeśli masz już program Visual Studio działa, wybierz **pliku** > **Otwórz** > **folderu** zamiast tego polecenia.
 
     ![Ekran startowy programu Visual Studio](media/quickstart-open-folder/01-open-local-folder.png)
 

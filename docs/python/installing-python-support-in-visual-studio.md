@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5270d24bd98d9858b4133c1e05b5883b8b57f509
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983312"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355542"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -33,7 +33,7 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 > [!Note]
 > Obsługa w języku Python nie jest obecnie dostępna w programie Visual Studio dla komputerów Mac, ale jest dostępna na komputerach Mac i Linux za pomocą programu Visual Studio Code. Zobacz [pytań i odpowiedzi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="visual-studio-2017"></a>
+<a name="visual-studio-2017-and-2019"></a>
 ## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 and Visual Studio 2017
 
 1. Pobrać i uruchomić najnowszą wersję Instalatora programu Visual Studio. Jeśli masz już zainstalowany program Visual Studio, uruchom Instalatora programu Visual Studio, wybierz opcję **Modyfikuj** opcji (zobacz [modyfikowanie programu Visual Studio](../install/modify-visual-studio.md)) i przejdź do kroku 2.
@@ -50,14 +50,14 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 
     ::: moniker range="vs-2017"
     Opcjonalnie: Jeśli pracujesz z analizy danych, należy również rozważyć **aplikacji analitycznych i naukowych opracowań danych** obciążenia. Ten pakiet roboczy zawiera obsługę języka Python, R, a F# języków. Aby uzyskać więcej informacji, zobacz [obciążenie dla aplikacji analitycznych i naukowych opracowań danych](data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Obciążenia języka Python i nauki o danych są dostępne tylko w przypadku programu Visual Studio 2017 wersja 15.2 i nowszych wersjach.
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     Opcjonalnie: Jeśli pracujesz z analizy danych, należy również rozważyć **aplikacji analitycznych i naukowych opracowań danych** obciążenia. To obciążenie obejmuje obsługę języka Python i F# języków. Aby uzyskać więcej informacji, zobacz [obciążenie dla aplikacji analitycznych i naukowych opracowań danych](data-science-and-analytical-applications-workload.md).
     ::: moniker-end
-
-    > [!Note]
-    > Obciążenia języka Python i nauki o danych są dostępne tylko w przypadku programu Visual Studio 2017 wersja 15.2 i nowszych wersjach.
 
 1. Po prawej stronie Instalatora wybierz dodatkowe opcje, w razie potrzeby. Pomiń ten krok, aby zaakceptować wartości domyślne.
 
