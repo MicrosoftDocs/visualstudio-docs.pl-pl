@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 6ad23583887efa816c9c2770eba21dd88e076823
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 38e4f8a6e0ae111627c756857417a173ae49c4d1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58052181"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395654"
 ---
 ## <a name="prerequisites"></a>Wymagania wstępne
 
