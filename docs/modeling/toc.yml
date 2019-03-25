@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: Dodawanie właściwości niestandardowych do diagramów zależności
       href: add-custom-properties-to-layer-diagrams.md
-    - name: Nawigowanie i aktualizowanie modeli zależności w kodzie programu
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: Wdrażanie rozszerzenia modelu zależności
-      href: deploy-a-layer-model-extension.md
-    - name: Rozwiązywanie problemów z rozszerzeniami dla diagramów zależności
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: Dostosowywanie zachowania dotyczącego kopiowania
         href: customizing-copy-behavior.md
-      - name: Dostosowywanie zachowania dotyczącego usuwania
-        href: customizing-deletion-behavior.md
       - name: Dostosowywanie okna właściwości
         href: customizing-the-properties-window.md
       - name: Dostosowywanie Eksploratora modelu
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: Debugowanie za pomocą przeglądarki magazynu
-        href: debugging-by-using-the-store-viewer.md
       - name: Plik DslDefinition.dsl
         href: the-dsldefinition-dsl-file.md
       - name: Omówienie kodu DSL
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: Dostosowywanie narzędzi elementów
-        href: customizing-element-tools.md
     - name: Odpowiadanie na zmiany i ich propagowanie
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: Programy obsługi zdarzeń propagujące zmiany poza modelem
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: Aktualizowanie kształtów i łączników, aby odzwierciedlały model
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: Generowanie kodu z języka specyficznego dla domeny
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: Wykaz interfejsów API dla szablonów tekstowych T4
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872064"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415712"

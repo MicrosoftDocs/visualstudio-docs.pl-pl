@@ -112,8 +112,6 @@ items:
       href: customizing-code-coverage-analysis.md
     - name: Rozwiązywanie problemów z pokryciem kodu
       href: troubleshooting-code-coverage.md
-  - name: Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
-    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: Live Unit Testing
   href: live-unit-testing-intro.md
   items:
@@ -339,8 +337,6 @@ items:
     href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
   - name: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
     href: using-html5-controls-in-coded-ui-tests.md
-  - name: Testowanie aplikacji SharePoint 2010 za pomocą kodowanych testów interfejsu użytkownika
-    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
   - name: Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
     href: creating-a-data-driven-coded-ui-test.md
   - name: Oczekiwanie na określone zdarzenia podczas odtwarzania
@@ -370,9 +366,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: Instalowanie agentów testowych i kontrolerów testów
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d63258d61d94ca52208b89267b92743e95d3664c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223796"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416282"
