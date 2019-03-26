@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949424"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415685"
 ---
 # <a name="writing-user-commands-and-actions"></a>Pisanie poleceń i akcji użytkownika
 Dodawanie poleceń do diagramu i reagowanie na gesty przeciągania i upuszczania, np. Kliknij przycisk, a następnie kliknij dwukrotnie zdarzenia można dostosować języka specyficznego dla domeny.
@@ -27,9 +27,7 @@ Dodawanie poleceń do diagramu i reagowanie na gesty przeciągania i upuszczania
 
 -   [Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) — umożliwia użytkownikowi przejść przez element do innego elementu, do której się odwołuje.
 
--   [Instrukcje: Dostęp i ograniczyć bieżące zaznaczenie](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Narzędzia dostosowywania elementów](../modeling/customizing-element-tools.md)
+-   [Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Zobacz też
 

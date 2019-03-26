@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355792"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415699"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
@@ -34,13 +34,9 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
  Szablon tekstu zawiera tekst, który ma zostać wygenerowany i kod programu, który generuje zmiennej fragmenty tekstu. Kod programu umożliwia Powtórz lub warunkowo pominięcie części wygenerowanego tekstu. Wygenerowany tekst może sam się kod programu, który będzie stanowić część aplikacji.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Tworzenie szablonów tekstowych T4 w czasie projektowania
+## <a name="create-a-design-time-t4-text-template"></a>Tworzenie szablonu tekstowego T4 w czasie projektowania
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Aby utworzyć szablon T4 czasu projektowania w programie Visual Studio
-
-1. Tworzenie projektu programu Visual Studio lub Otwórz istniejący.
-
-    Na przykład na **pliku** menu, wybierz **New** > **projektu**.
+1. Utwórz nowy projekt programu Visual Studio lub Otwórz istniejący.
 
 2. Dodaj plik szablonu tekstu do projektu i nadaj jej nazwę, który ma rozszerzenie **.tt**.
 
@@ -70,10 +66,11 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 6. W **Eksploratora rozwiązań**, rozwiń węzeł pliku szablonu, a plik, który ma rozszerzenie **.txt**. Plik zawiera wygenerowane z szablonu.
 
    > [!NOTE]
-   >  Jeśli projekt jest projekt języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** aby można było wyświetlić plik wyjściowy.
+   > Jeśli projekt jest projekt języka Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** aby można było wyświetlić plik wyjściowy.
 
-### <a name="regenerating-the-code"></a>Trwa ponowne generowanie kodu
- Szablon zostanie wykonana, generowanie plików pomocniczych, w dowolnym z następujących przypadkach:
+### <a name="regenerate-the-code"></a>Ponowne generowanie kodu
+
+Szablon zostanie wykonana, generowanie plików pomocniczych, w dowolnym z następujących przypadkach:
 
 - Edytowanie szablonu, a następnie zmień fokus do innego okna programu Visual Studio.
 
@@ -83,12 +80,11 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
 - W **Eksploratora rozwiązań**menu skrótów w dowolnych plików, wybierz **Uruchom narzędzie niestandardowe**. Ta metoda umożliwia przekształcanie podzbiór wybranych szablonów.
 
-  Możesz też skonfigurować projektu programu Visual Studio, tak aby szablony są wykonywane, gdy zostały zmienione pliki danych, które są odczytywane. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).
+Możesz też skonfigurować projektu programu Visual Studio, tak aby szablony są wykonywane, gdy zostały zmienione pliki danych, które są odczytywane. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).
 
-## <a name="generating-variable-text"></a>Generowanie tekstu o zmiennym
- Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w wygenerowanym pliku.
+## <a name="generate-variable-text"></a>Generowanie tekstu o zmiennym
 
-#### <a name="to-generate-text-by-using-program-code"></a>Aby wygenerować tekst przy użyciu kodu programu
+Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w wygenerowanym pliku.
 
 1. Zmień zawartość `.tt` pliku:
 

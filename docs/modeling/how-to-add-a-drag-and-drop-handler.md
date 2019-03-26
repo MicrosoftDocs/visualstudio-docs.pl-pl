@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867751"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415671"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Instrukcje: Dodawanie obsługi przeciągania i upuszczania
 
@@ -158,13 +158,13 @@ Jeśli przeciąganego elementu jest elementem DSL, możesz otworzyć model źró
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Aby przygotować projektu DSL Model Bus
 
-1.  Udostępnić źródła DSL przez magistralę modelu w usłudze Visual Studio:
+Udostępnić źródła DSL przez magistralę modelu w usłudze Visual Studio:
 
-    1.  Pobierz i zainstaluj rozszerzenie programu Visual Studio Model Bus, jeśli nie jest już zainstalowany. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Pobierz i zainstaluj rozszerzenie programu Visual Studio Model Bus, jeśli nie jest już zainstalowany. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Otwórz plik definicji DSL źródła DSL w projektanta DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Nowy projekt "ModelBus" jest dodawany do rozwiązania DSL.
+2. Otwórz plik definicji DSL źródła DSL w projektanta DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Nowy projekt "ModelBus" jest dodawany do rozwiązania DSL.
 
-    3.  Kliknij przycisk **Przekształć wszystkie szablony** i ponownie skompiluj rozwiązanie.
+3. Kliknij przycisk **Przekształć wszystkie szablony** i ponownie skompiluj rozwiązanie.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Aby wysłać obiekt ze źródła DSL
 

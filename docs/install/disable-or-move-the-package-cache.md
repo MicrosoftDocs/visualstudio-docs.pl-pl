@@ -18,17 +18,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0cd54f9cfb7f9df81f1eb4ac9f3ad43af226b1e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324852"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414865"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Wyłączanie lub przenoszenie pamięci podręcznej pakietów
 
-Pamięć podręczną pakietów zapewnia źródło pakietów zainstalowanych, w przypadku, gdy zajdzie potrzeba naprawy programu Visual Studio lub inne powiązane produkty w przypadkach, gdy mają Brak połączenia internetowego. W przypadku niektórych dysków lub system ustawiać ups, jednak może nie chcesz zachować te pakiety wokół.
-Instalator pobierze je w razie potrzeby, dlatego jeśli chcesz zapisać lub odzyskać miejsce na dysku zostanie wyłączone lub przenoszenie pamięci podręcznej pakietu.
+Pamięć podręczną pakietów zapewnia źródło pakietów zainstalowanych, w przypadku, gdy zajdzie potrzeba naprawy programu Visual Studio lub inne powiązane produkty w przypadkach, gdy mają Brak połączenia internetowego. W przypadku niektórych dysków lub system ustawiać ups, jednak możesz nie chcieć zachować te pakiety wokół.
+Instalator pobierze je w razie potrzeby, dlatego jeśli chcesz zapisać lub odzyskać miejsce na dysku, można wyłączyć lub przenoszenie pamięci podręcznej pakietu.
 
 ## <a name="disable-the-package-cache"></a>Wyłącz pamięć podręczną pakietów
 
@@ -40,7 +40,7 @@ Przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio lub inny
 
 Wszelkich operacji wykonywanych na dowolny produkt usunie wszystkie istniejące pakiety dla tego produktu i zapobiegnie zapisywania wszelkich pakietów, które po ich zainstalowaniu. Jeśli zmodyfikujesz lub naprawy programu Visual Studio i pakiety są wymagane, ich zostanie pobrana automatycznie i usunięte po ich zainstalowaniu.
 
-Jeśli chcesz ponownie włączyć pamięć podręczną, należy przekazać `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety należy naprawić program Visual Studio przed odłączeniem z sieci.
+Jeśli chcesz ponownie włączyć pamięć podręczną, należy przekazać `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety, należy naprawić program Visual Studio przed odłączeniem z sieci.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
@@ -50,9 +50,9 @@ Można również ustawić `KeepDownloadedPayloads` [zasad rejestru](set-defaults
 
 ## <a name="move-the-package-cache"></a>Przenieś pamięć podręczną pakietów
 
-Typowa konfiguracja systemu jest zapewnienie Windows zainstalowana na dysk SSD o większych dysku twardego (lub więcej) do tworzenia aplikacji musi, takie jak kod źródłowy, pliki binarne programu i nie tylko. Jeśli chcesz pracować w trybie offline zamiast tego można przenieść pamięci podręcznej pakietu.
+Typowa konfiguracja systemu jest zapewnienie Windows zainstalowana na dysk SSD o większych dysku twardego (lub więcej) do tworzenia aplikacji musi, takie jak kod źródłowy, pliki binarne programu i nie tylko. Jeśli użytkownik chce pracować w trybie offline, możesz przenieść pamięci podręcznej pakietu.
 
-Obecnie można to zrobić tylko po ustawieniu `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio.
+Obecnie można to zrobić tylko wtedy, gdy ustawisz `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

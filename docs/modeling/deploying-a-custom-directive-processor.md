@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932056"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416061"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -46,9 +46,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Aby opracować niestandardowy procesor dyrektywy w projekcie VSIX
 
-1.  Utwórz projekt VSIX w programie Visual Studio.
-
-    -   W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**, następnie rozwiń **rozszerzalności**. Kliknij przycisk **projekt VSIX**.
+1.  Utwórz nową **projekt VSIX** projektu.
 
 2.  W **source.extension.vsixmanifest**, Ustaw typ zawartości i obsługiwane wersje.
 

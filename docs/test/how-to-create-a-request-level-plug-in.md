@@ -9,14 +9,14 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f27ef33b03d6b8c7d9f84fab67a7791c9ba42735
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914464"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415554"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: Tworzenie wtyczki na poziomie żądania
+# <a name="how-to-create-a-request-level-plug-in"></a>Porady: Tworzenie wtyczki na poziomie żądania
 
 *Żądania* są deklaratywne instrukcje, które stanowią testów wydajności sieci web. Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Można tworzyć dodatki plug-in i dodać je do pojedynczego żądania także do testu wydajności sieci web, która go zawiera. Dostosowany *wtyczkę żądania* umożliwia wywoływanie kodu podczas uruchamiania poszczególnych żądań w teście wydajności sieci web.
 
@@ -32,50 +32,42 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
 
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
-     **Dodaj nowy projekt** zostanie wyświetlone okno dialogowe.
+2. Utwórz nową **biblioteki klas** projektu.
 
-2.  W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#**.
-
-3.  Na liście szablonów wybierz **biblioteki klas**.
-
-4.  W **nazwa** polu tekstowym wpisz nazwę dla klasy i wybierz **OK**.
-
-     Nowy projekt biblioteki klas zostanie dodany do **Eksploratora rozwiązań** i Nowa klasa pojawi się w **Edytor kodu**.
-
-5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
+3.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
 
      **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-6.  Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
+4.  Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
 
      Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-7.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
+5.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
 
      **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
 
-8.  Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
+6.  Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
 
-9. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+7. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-10. Implementowanie kod wewnątrz co najmniej jeden z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> procedury obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
+8. Implementowanie kod wewnątrz co najmniej jeden z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> procedury obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
-11. Po napisaniu kodu skompiluj nowy projekt.
+9. Po napisaniu kodu skompiluj nowy projekt.
 
-12. Otwórz test wydajności sieci web, do której chcesz dodać wtyczkę żądania.
+10. Otwórz test wydajności sieci web, do której chcesz dodać wtyczkę żądania.
 
-13. Kliknij prawym przyciskiem myszy żądanie, do którego chcesz dodać żądania wtyczki i wybierz pozycję **Dodaj wtyczkę żądania**.
+11. Kliknij prawym przyciskiem myszy żądanie, do którego chcesz dodać żądania wtyczki i wybierz pozycję **Dodaj wtyczkę żądania**.
 
      **Dodaj wtyczkę żądania testu sieci Web** zostanie wyświetlone okno dialogowe.
 
-14. W obszarze **Wybierz wtyczkę**, wybierz nową wtyczkę.
+12. W obszarze **Wybierz wtyczkę**, wybierz nową wtyczkę.
 
-15. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
+13. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
     > [!NOTE]
     > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci web można również zmienić później, przy użyciu okna właściwości.
 
-16. Wybierz **OK**.
+14. Wybierz **OK**.
 
      Wtyczka zostanie dodana do **wtyczki żądania** folder, który jest folder podrzędny żądania HTTP.
 
@@ -86,8 +78,8 @@ Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą test
     >
     > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1.  W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
-    > 2.  Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
+    > 1. W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
+    > 2. Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
 
 ## <a name="example"></a>Przykład
 

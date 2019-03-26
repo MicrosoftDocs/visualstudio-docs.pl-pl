@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949801"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415658"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:
@@ -51,17 +51,17 @@ Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera k
 |Zmień nazwę, ikonę i widoczność węzły w Eksploratorze modelu DSL.|Zobacz [Dostosowywanie Eksploratora modelu](../modeling/customizing-the-model-explorer.md).|
 |Włącz kopiowanie, wycinanie i wklejanie|Ustaw **Włącz kopiowanie wklejanie** właściwość **edytora** węzła w Eksploratorze DSL.|
 |Kopiuj odwołanie łącza i ich celów zawsze wtedy, gdy element zostanie skopiowany. Na przykład skopiuj komentarze dołączone do elementu.|Ustaw **propaguje kopiowania** własności dla roli źródłowej (reprezentowane przez wiersz po jednej stronie relacji domeny w diagramem definicji DSL).<br /><br /> Pisanie kodu w celu zastąpienia ProcessOnCopy, aby osiągnąć bardziej złożonych efekty.<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|
-|Usunąć, zmienić elementu nadrzędnego lub Połącz ponownie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje Usuń** wartość rolę w relacji. Dla bardziej złożonych efektów zastąpić `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metody `MyDslDeleteClosure` klasy zdefiniowane w **DomainModel.cs**<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md)|
+|Usunąć, zmienić elementu nadrzędnego lub Połącz ponownie powiązanych elementów, gdy element zostanie usunięty.|Ustaw **propaguje Usuń** wartość rolę w relacji. Dla bardziej złożonych efektów zastąpić `ShouldVisitRelationship` i `ShouldVisitRolePlayer` metody `MyDslDeleteClosure` klasy zdefiniowane w **DomainModel.cs**.|
 |Zachowaj kształt układ i wygląd na kopiowanie i przeciąganie i upuszczanie.|Dodawanie kształtów i łączników do skopiowanych `ElementGroupPrototype`. To najwygodniejsza metody do przesłonięcia `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|
 |Wklejanie kształtów w wybranej lokalizacji, na przykład w bieżącej pozycji kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()` użyć lokalizacji określonej wersji `ElementOperations.Merge().` zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md).|
 |Tworzyć linki do dodatkowych przy wklejaniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Przeciągania i upuszczania, z tym diagramie z innymi językami DSL i Windows, elementy|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Zezwalaj na kształt lub narzędziu można przeciągać kształt podrzędny, taki jak port, tak, jakby były przeciągnięto element nadrzędny.|Zdefiniuj dyrektywa scalania elementów na klasę obiektu docelowego do przekazywania upuszczony obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|
 |Zezwalaj na kształcie lub narzędzia można przeciągać kształt i linki do dodatkowych lub obiekty utworzone. Na przykład, aby zezwolić na komentarz, aby być upuszczone na element, do której ma być połączone.|Zdefiniuj dyrektywa scalania elementów dla klasy domeny docelowej i definiują łącza do wygenerowania. W przypadku złożonych można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przesuwania elementu](../modeling/customizing-element-creation-and-movement.md).|
-|Utwórz grupę elementów za pomocą jednego narzędzia. Na przykład składnik ustalony zestawu portów.|Zastąp metodę inicjowania przybornika w ToolboxHelper.cs. Utwórz Element grupy prototyp (EGP) zawierający elementy i ich łącza relacji. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Objęte kształty głównej i port EGP albo zdefiniuj boundsrules — do pozycji kształtów portu podczas tworzenia wystąpienia EGP. Zobacz [boundsrules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md).|
+|Utwórz grupę elementów za pomocą jednego narzędzia. Na przykład składnik ustalony zestawu portów.|Zastąp metodę inicjowania przybornika w ToolboxHelper.cs. Utwórz Element grupy prototyp (EGP) zawierający elementy i ich łącza relacji. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Objęte kształty głównej i port EGP albo zdefiniuj boundsrules — do pozycji kształtów portu podczas tworzenia wystąpienia EGP.|
 |Używanie narzędzia połączenia z jednego do utworzenia wystąpienia kilka typów relacji.|Dodaj łącze połączyć dyrektywy LCD do konstruktora połączeń, które jest wywoływane przez narzędzie. LCD określenia typu relacji z typów dwóch elementów. Aby to zależą od stany elementów, można dodać kod niestandardowy. Zobacz [Dostosowywanie narzędzi i przybornika](../modeling/customizing-tools-and-the-toolbox.md).|
 |Umocowany narzędzia — użytkownik może kliknąć dwukrotnie dowolne narzędzie do tworzenia wielu kształtów i łączników pod rząd.|Eksplorator modelu DSL wybierz `Editor` węzła. W oknie właściwości ustaw **używa elementów przybornika umocowany**.|
-|Definiowanie polecenia menu|Zobacz [jak: Modyfikowanie standardowego polecenia Menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definiowanie polecenia menu|Zobacz [jak: Modyfikowanie standardowego polecenia menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Ograniczenie modelu przy użyciu reguł sprawdzania poprawności|Zobacz [weryfikacji języka specyficznego dla domeny](../modeling/validation-in-a-domain-specific-language.md)|
 |Generowanie kodu, plików konfiguracji lub dokumentów z języka DSL.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Dostosowywanie sposobu zapisywania modeli do pliku.|Zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

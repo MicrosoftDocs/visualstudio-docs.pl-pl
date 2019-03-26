@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917769"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415996"
 ---
-# <a name="unit-testing-visual-c-code"></a>Testowanie jednostek kodu języka Visual C#
+# <a name="unit-test-c-code"></a>Testy jednostkowe kodu C#
 
-W tym artykule opisano sposób tworzenia testów jednostkowych dla klasy języka Visual C# w aplikacji platformy uniwersalnej systemu Windows. Klasa Rooter pokazuje niejasne chwile teorii limit z calculus poprzez implementację funkcji, który oblicza oszacowanie pierwiastek kwadratowy z podanej liczbie. Aplikacja matematycznych następnie może używać tej funkcji do pokazania użytkownika fun rzeczy, które można wykonać za pomocą matematyczne.
+W tym artykule opisano sposób tworzenia testów jednostkowych dla C# klasy w aplikacji platformy uniwersalnej systemu Windows. Klasa Rooter pokazuje niejasne chwile teorii limit z calculus poprzez implementację funkcji, który oblicza oszacowanie pierwiastek kwadratowy z podanej liczbie. Aplikacja matematycznych następnie może używać tej funkcji do pokazania użytkownika fun rzeczy, które można wykonać za pomocą matematyczne.
 
 W tym artykule przedstawiono sposób korzystania z jednostki testowania jako pierwszy krok w rozwoju. W tym podejściu najpierw napisać metodę testową, która sprawdza określone zachowanie w systemie, które testujesz, a następnie napisać kod, który przejdzie test. Wycofanie tej strategii, wprowadzając zmiany kolejności poniższych procedur, w pierwszej operacji zapisu kod, który chcesz przetestować, a następnie napisz testy jednostkowe.
 
@@ -26,13 +26,13 @@ W tym artykule tworzy również jedno rozwiązanie Visual Studio i oddzielnych p
 
 1. Na **pliku** menu, wybierz **New** > **projektu**.
 
-2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** > **Visual C#** i wybierz polecenie **Windows Universal**. Następnie wybierz **pusta aplikacja** z listy szablonów projektu.
+2. Wyszukaj i wybierz pozycję **pusta aplikacja (Windows Universal)** szablonu projektu.
 
-3. Nadaj projektowi nazwę `Maths` i upewnij się, że **Utwórz katalog rozwiązania** jest zaznaczone.
+3. Nadaj projektowi nazwę `Maths`.
 
 4. W **Eksploratora rozwiązań**, wybierz nazwę rozwiązania, wybierz **Dodaj** z menu skrótów, a następnie wybierz **nowy projekt**.
 
-5. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, następnie rozwiń **Visual C#** i wybierz polecenie **Windows Universal**. Następnie wybierz **aplikacji testów jednostkowych (Windows Universal)** z listy szablonów projektu.
+5. Wyszukaj i wybierz pozycję **aplikacji testów jednostkowych (Windows Universal)** szablonu projektu.
 
 6. Otwórz *UnitTest1.cs* w edytorze programu Visual Studio.
 

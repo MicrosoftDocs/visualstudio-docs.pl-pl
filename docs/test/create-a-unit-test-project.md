@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949437"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416139"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
@@ -23,11 +23,23 @@ Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład
 
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testów jednostkowych
 
-1. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**. Lub naciśnij **Ctrl**+**Shift**+**N**.
+1. Na **pliku** menu, wybierz **New** > **projektu**, lub naciśnij **Ctrl**+**Shift** + **N**.
+
+::: moniker range="vs-2017"
 
 2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
 
 3. Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Nadaj projektowi nazwę, a następnie wybierz **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na **Utwórz nowy projekt** wpisz **testu jednostkowego** w polu wyszukiwania. Wybierz **projekt testów jednostkowych (.NET Framework)** projektu szablonu, a następnie kliknij przycisk **dalej**.
+
+3. Na **konfigurowania nowego projektu** strony, wprowadź nazwę dla projektu, a następnie kliknij przycisk **Utwórz**.
+
+::: moniker-end
 
 4. W projekcie testu jednostki Dodaj odwołanie do testowanego kodu. Aby dodać odwołanie do projektu kodu, w tym samym rozwiązaniu:
 

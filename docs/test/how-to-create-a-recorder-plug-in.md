@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926258"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415904"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Instrukcje: Tworzenie wtyczki rejestratora
 
@@ -35,34 +35,24 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 1.  Otwórz rozwiązanie, które zawiera projekt testu obciążenia i wydajności sieci web za pomocą testu wydajności sieci web, dla której chcesz utworzyć wtyczkę rejestratora.
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj**, a następnie wybierz **nowy projekt**.
+2.  Dodaj nową **biblioteki klas** projektu do rozwiązania.
 
-     **Dodaj nowy projekt** zostanie wyświetlone okno dialogowe.
-
-3.  W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#**.
-
-4.  Na liście szablonów wybierz **biblioteki klas**.
-
-5.  W **nazwa** polu tekstowym wpisz nazwę dla dodatku plug-in.
-
-     Biblioteka klas jest dodawana do **Eksploratora rozwiązań** i Nowa klasa jest otwierana w **Edytor kodu**.
-
-6.  W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
+3.  W **Eksploratora rozwiązań**, w nowym folderze projektu biblioteki klas, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
     > [!TIP]
     > Na przykład nowy folder projektu biblioteki klas **RecorderPlugins**.
 
      **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-7.  Wybierz **.NET** kartę.
+4.  Wybierz **.NET** kartę.
 
-8.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
+5.  Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** zostanie dodany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-9. Pisz kod dla dodatku rejestratora. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Pisz kod dla dodatku rejestratora. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Zastąp <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> metody.
+7. Zastąp <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> metody.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
     > [!NOTE]
     > Jeśli modyfikujesz test wydajności sieci web, należy również ustawić <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> właściwości na wartość true: `e.RecordedWebTestModified = true;`
 
-11. Dodaj więcej kodu według tego, co rejestratora wtyczki ma wykonać po rejestrowaniu w sieci web. Na przykład można dodać kod do obsługi niestandardowej korelacji, jak pokazano w poniższym przykładzie. Można również utworzyć wtyczki dla takich rejestratora, jak przetestować konwertowania komentarzy do transakcji lub dodawania reguł sprawdzania poprawności do wydajności sieci web.
+8. Dodaj więcej kodu według tego, co rejestratora wtyczki ma wykonać po rejestrowaniu w sieci web. Na przykład można dodać kod do obsługi niestandardowej korelacji, jak pokazano w poniższym przykładzie. Można również utworzyć wtyczki dla takich rejestratora, jak przetestować konwertowania komentarzy do transakcji lub dodawania reguł sprawdzania poprawności do wydajności sieci web.
 
-12. Na **kompilacji** menu, wybierz **kompilacji \<Nazwa projektu biblioteki klas >**.
+9. Na **kompilacji** menu, wybierz **kompilacji \<Nazwa projektu biblioteki klas >**.
 
-13. Następnie należy wdrożyć zarejestrowany dodatek w celu użycia go zarejestrować za pomocą programu Visual Studio.
+Następnie należy wdrożyć zarejestrowany dodatek w celu użycia go zarejestrować za pomocą programu Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Wdróż wtyczkę Rejestrator
 
@@ -96,7 +86,7 @@ Po skompilowaniu dodatku plug-in rejestratora umieścić wynikowy DLL w jednej z
 > [!WARNING]
 > Po skopiowaniu dodatku plug-in rejestratora do jednej z dwóch lokalizacji, należy ponownie uruchomić program Visual Studio dla dodatku plug-in do zarejestrowania.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Aby wykonać wtyczkę rejestratora
+### <a name="execute-the-recorder-plug-in"></a>Uruchom wtyczkę Rejestrator
 
 1.  Utwórz nowy test wydajności sieci web.
 
@@ -123,9 +113,7 @@ Ten przykład przedstawia sposób tworzenia dodatku typu plug-in do wykonywania 
 > [!NOTE]
 > Pełną listę przykładowy kod znajduje się w dolnej części tego tematu.
 
-**Recenzowanie przykładowego kodu**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Wykonuj iteracje przez wyniki w celu znalezienia pierwszej strony z obiektem ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Wykonuj iteracje przez wyniki w celu znalezienia pierwszej strony z obiektem ReportSession
 
 Ta część próbki kodu iteruje przez każdy nagrany obiekt i wyszukuje treść odpowiedzi dla ReportSession.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Dodawanie reguły wyodrębniania
+### <a name="add-an-extraction-rule"></a>Dodawanie reguły wyodrębniania
 
 Teraz, gdy odpowiedź została znaleziona, należy dodać regułę ekstrakcji. Ta część przykładowy kod tworzy regułę ekstrakcji przy użyciu <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> klasy, a następnie znajduje poprawne żądanie w teście wydajności sieci web, aby dodać do niego regułę ekstrakcji. Każdy obiekt wynikowy ma nową właściwość o nazwie DeclarativeWebTestItemId, która jest on używany w kodzie w celu uzyskania poprawnego żądania z testu wydajności sieci web.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Zamień parametry ciągu zapytania
+### <a name="replace-query-string-parameters"></a>Zamień parametry ciągu zapytania
 
 Teraz kod znajduje wszystkie zapytania parametry ciągu, które mają wartość ReportSession jako nazwę, a następnie zmień wartość na {{IdentyfikatorSesji}}, jak pokazano w tej części przykładowego kodu:
 

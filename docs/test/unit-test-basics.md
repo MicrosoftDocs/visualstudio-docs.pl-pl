@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796832"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416373"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -38,7 +38,7 @@ Aby zapoznać się z wprowadzeniem do testów jednostkowych, które umożliwia p
 
 ## <a name="the-mybank-solution-example"></a>Przykład rozwiązania MyBank
 
-W tym temacie, użyjemy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
+W tym artykule używamy rozwoju fikcyjnej aplikacji o nazwie `MyBank` jako przykład. Nie musisz rzeczywisty kod, aby uprościć wyjaśnienia, w tym temacie. Metody testowe są napisane w języku C# i przedstawiane za pomocą Frameworka testów jednostkowych firmy Microsoft dla kodu zarządzanego. Jednakże pojęcia można łatwo przenosić do innych języków i struktur.
 
 ![Rozwiązanie MyBank](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczeg
 
 **Aby dodać projekt testu jednostkowego do rozwiązania:**
 
-1. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura **Ctrl**+**Shift** + **N**).
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj** > **New** **projektu**.
 
-2. Na **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
+::: moniker range="vs-2017"
+
+2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
 
 3. Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować `Accounts` projekt naszego przykładu, czy nazwa projektu `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Nie wszystkie platform testów jednostkowych innych firm i open source udostępniają szablon projektu Visual Studio. Zapoznaj się z dokumentem framework, aby uzyskać informacje o tworzeniu projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Użyj pola wyszukiwania szablonu projektu można znaleźć test jednostkowy projekt szablon ze środowiskiem testowym, którego chcesz użyć.
+
+3. Na następnej stronie nadaj projektowi nazwę. Aby przetestować `Accounts` projektu z naszym przykładzie nazwać projektu `AccountsTests`.
+
+::: moniker-end
 
 4. W projekcie testu jednostki Dodaj odwołanie do projektu kodu, w ramach badania, w tym przykładzie do projektu kont.
 

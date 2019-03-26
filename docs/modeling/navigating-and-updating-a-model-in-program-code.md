@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950152"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416246"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Nawigowanie po modelu i aktualizowanie go w kodzie programu
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Po utworzeniu elementu w ten sposób jest tworzony automatycznie łącznika na diagramie, ale ma domyślne kształt, kolor i inne funkcje. Aby kontrolować sposób tworzenia łącznika skojarzone, zobacz [Tworzenie elementu i jego kształt](#merge).
 
 ##  <a name="deleteelements"></a> Usuwanie elementów
- Usuń element przez wywołanie metody `Delete()`:
 
- `henry.Delete();`
+Usuń element przez wywołanie metody `Delete()`:
 
- Ta operacja spowoduje również usunięcie:
+`henry.Delete();`
+
+Ta operacja spowoduje również usunięcie:
 
 - Relacji łącza do i z elementem. Na przykład `edward.Parents` nie będą już miały `henry`.
 
 - Elementy w ról, dla którego `PropagatesDelete` flaga ma wartość true. Na przykład kształt, który wyświetla element zostaną usunięte.
 
-  Domyślnie każda relacja osadzania ma `PropagatesDelete` prawdziwe w roli docelowej. Usuwanie `henry` nie powoduje usunięcia `familyTree`, ale `familyTree.Delete()` spowoduje usunięcie wszystkich `Persons`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).
+Domyślnie każda relacja osadzania ma `PropagatesDelete` prawdziwe w roli docelowej. Usuwanie `henry` nie powoduje usunięcia `familyTree`, ale `familyTree.Delete()` spowoduje usunięcie wszystkich `Persons`.
 
-  Domyślnie `PropagatesDelete` nie jest prawdziwe dla ról relacje odniesienia.
+Domyślnie `PropagatesDelete` nie jest prawdziwe dla ról relacje odniesienia.
 
-  Może spowodować reguły usuwania pominąć propagacji określonych, gdy obiekt zostanie usunięty. Jest to przydatne, jeśli są podstawianie jednego elementu na inny. Należy podać identyfikator GUID co najmniej jedną rolę, dla których powinna nie propagowane usunięcia. Identyfikator GUID można uzyskać z klasy relacji:
+Może spowodować reguły usuwania pominąć propagacji określonych, gdy obiekt zostanie usunięty. Jest to przydatne, jeśli są podstawianie jednego elementu na inny. Należy podać identyfikator GUID co najmniej jedną rolę, dla których powinna nie propagowane usunięcia. Identyfikator GUID można uzyskać z klasy relacji:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Tym konkretnym przykładzie miałaby żadnego efektu, ponieważ `PropagatesDelete` jest `false` dla ról `ParentsHaveChildren` relacji.)
+(Tym konkretnym przykładzie miałaby żadnego efektu, ponieważ `PropagatesDelete` jest `false` dla ról `ParentsHaveChildren` relacji.)
 
-  W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na element lub na element, który może zostać usunięty przez propagacji. Możesz użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięty.
+W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na element lub na element, który może zostać usunięty przez propagacji. Możesz użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięty.
 
 ##  <a name="deletelinks"></a> Usuwanie relacji łączy
  Możesz usunąć relację łącza przez usunięcie elementu z właściwości roli:

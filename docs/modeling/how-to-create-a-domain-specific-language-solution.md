@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936944"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416194"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: Tworzenie rozwiązania języka specyficznego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych rozwiązania programu Visual Studio.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Przed rozpoczęciem tej procedury, należy najpierw zainstalować te składniki:
 
+Przed rozpoczęciem tej procedury należy zainstalować następujące składniki:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualisation i Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (instalowany jako część **programowanie rozszerzeń programu Visual Studio** obciążenia)
+- Modeling SDK (zainstalowany jako składnik Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka dotyczącego określonej domeny
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Tworzenie rozwiązań języka dotyczącego określonej domeny
+1. Uruchom Kreatora DSL przez utworzenie nowego **projektanta języka specyficznego dla domeny** projektu.
 
-1. Uruchom Kreatora DSL.
+   > [!NOTE]
+   > Najlepiej, nazwę i wybierz dla projektu powinna być prawidłową Visual C# identyfikator ponieważ mogą być używane do generowania kodu.
 
-   1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
+   ::: moniker range="vs-2017"
 
-   2. **Nowy projekt** pojawi się okno dialogowe.
+   ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
 
-   3. W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.
-
-   4. Kliknij przycisk **projektanta języka specyficznego dla domeny**.
-
-   5. W **nazwa** wpisz nazwę dla rozwiązania. Kliknij przycisk **OK**.
-
-       **Kreator projektanta języka specyficznego dla domeny** pojawia się.
-
-      > [!NOTE]
-      >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.
-
-      ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Wybierz szablon DSL.
 

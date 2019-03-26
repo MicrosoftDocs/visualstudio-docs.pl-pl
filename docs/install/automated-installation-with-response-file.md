@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e127ca518a0c7befe3e9a2d14bc48f84ba54905e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321646"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415641"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Jak definiować ustawienia w pliku odpowiedzi
 
@@ -50,6 +50,8 @@ Możesz zaktualizować `response.json` pliku, który jest tworzony w folderze uk
 
 Podstawa `response.json` pliku w układzie powinien wyglądać podobnie do poniższego przykładu, z tą różnicą, że będzie ona zawierać wartość dla produktu i kanału, który chcesz zainstalować:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -60,11 +62,29 @@ Podstawa `response.json` pliku w układzie powinien wyglądać podobnie do poni�
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Podczas tworzenia lub aktualizacji układu jest też tworzony plik response.template.json.  Ten plik zawiera wszystkie obciążenia, składników i identyfikatorów, których można użyć języka.  Ten plik jest dostarczany jako szablon dla wszystkich, jakie mogłyby zostać włączone w instalacji niestandardowej.  Administratorzy mogą używać tego pliku jako punktu wyjścia dla pliku odpowiedzi niestandardowej.  Po prostu usuń identyfikatory dla elementów, których nie chcesz zainstalować i zapisz go w pliku odpowiedzi.  Nie należy modyfikować pliku response.template.json lub wprowadzone zmiany zostaną utracone przy każdej aktualizacji układu.
 
 ## <a name="example-layout-response-file-content"></a>Przykładowy układ odpowiedzi pliku zawartości
 
 W poniższym przykładzie instalację programu Visual Studio Enterprise z sześciu typowych obciążeń i składników, a w językach angielskim i francuskim interfejsu użytkownika. W tym przykładzie można użyć jako szablonu; można zmienić w przypadku obciążeń i składników do tych, które chcesz zainstalować:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -96,6 +116,43 @@ W poniższym przykładzie instalację programu Visual Studio Enterprise z sześc
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

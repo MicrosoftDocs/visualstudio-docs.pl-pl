@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939622"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415580"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -117,15 +117,15 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
 DSL jest teraz włączone MEF. Polecenia menu, procedury obsługi gestów i ograniczeń sprawdzania poprawności można napisać jako rozszerzenia MEF. Można napisać te rozszerzenia w rozwiązaniu DSL wraz z innymi kod niestandardowy. Ponadto możesz lub innym deweloperom napisać oddzielne rozszerzeń programu Visual Studio DSL.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Tworzenie rozszerzenia dla języka DSL włączone MEF
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Tworzenie rozszerzenia dla języka DSL włączone MEF
 
 Jeśli masz dostęp do utworzonych przez siebie lub kogoś innego DSL włączone MEF, można napisać rozszerzeń dla niego. Rozszerzenia może służyć do dodawania polecenia menu, procedury obsługi gestów lub ograniczenia sprawdzania poprawności. Aby tworzyć te rozszerzenia, należy użyć rozwiązania programu Visual Studio rozszerzenia (VSIX). To rozwiązanie składa się z dwóch części: projekt biblioteki klas, który tworzy zestaw kodu i projektu VSIX, które pakiety zestawu.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Aby utworzyć rozszerzenie VSIX języka DSL
+### <a name="to-create-a-dsl-extension-vsix"></a>Aby utworzyć rozszerzenie VSIX języka DSL
 
-1. Utwórz nowy projekt biblioteki klas. Aby to zrobić, w **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** lub **Visual C#** , a następnie wybierz **biblioteki klas**.
+1. Utwórz nową **biblioteki klas** projektu.
 
-2. W nowy projekt biblioteki klas Dodaj odwołanie do zestawu język DSL.
+2. W nowym projekcie Dodaj odwołanie do zestawu język DSL.
 
    - Ten zestaw jest zwykle ma nazwę, która kończy się ". DSL.dll".
 
@@ -145,9 +145,9 @@ Jeśli masz dostęp do utworzonych przez siebie lub kogoś innego DSL włączone
 
    -   System.Windows.Forms.dll
 
-4. Utwórz projekt VSIX w tym samym rozwiązaniu. Aby to zrobić, w **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie wybierz pozycję  **Projekt VSIX**.
+4. Utwórz nową **projekt VSIX** projektu.
 
-5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt VSIX, a następnie kliknij przycisk **Ustaw jako projekt startowy**.
+5. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt VSIX lub wybrać **Ustaw jako projekt startowy**.
 
 6. Otwórz w nowym projekcie **source.extension.vsixmanifest**.
 

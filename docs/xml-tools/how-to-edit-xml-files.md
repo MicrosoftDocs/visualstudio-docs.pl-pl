@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525456"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415060"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 
@@ -22,49 +22,63 @@ Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XM
 > [!NOTE]
 > XHTML dokumentów są obsługiwane w edytorze HTML.
 
-## <a name="to-edit-an-xml-file"></a>Aby edytować plik XML
+Aby edytować plik XML, kliknij dwukrotnie plik, który chcesz edytować.
 
-1.  Kliknij dwukrotnie plik, który chcesz edytować.
+## <a name="add-a-new-xml-file-to-a-project"></a>Dodaj nowy plik XML do projektu
 
-### <a name="to-add-a-new-xml-file-to-a-project"></a>Aby dodać nowy plik XML do projektu
+1. Z **projektu** menu, wybierz opcję **Dodaj nowy element**.
 
-1.  Z **projektu** menu, wybierz opcję **Dodaj nowy element**.
+2. Wybierz **pliku XML** z **szablony** okienka.
 
-2.  Wybierz **pliku XML** z **szablony** okienka.
+3. Wprowadź nazwę pliku w **nazwa** pole i naciśnij klawisz **Dodaj**.
 
-3.  Wprowadź nazwę pliku w **nazwa** pole i naciśnij klawisz **Dodaj**.
+   Plik XML jest dodawany do projektu i zostanie otwarty w edytorze XML. Ten plik zawiera domyślne deklaracji XML, `<?xml version="1.0" encoding="utf-8" ?>`.
 
-     Plik XML jest dodawany do projektu i otwarty w edytorze XML. Ten plik zawiera domyślne deklaracji XML, `<?xml version="1.0" encoding="utf-8" ?>`.
+## <a name="add-an-existing-xml-file-to-a-project"></a>Dodawanie istniejącego pliku XML do projektu
 
-## <a name="to-add-an-existing-xml-file-to-a-project"></a>Aby dodać istniejący plik XML do projektu
+1. Z **projektu** menu, wybierz opcję **Dodaj istniejący element**.
 
-1.  Z **projektu** menu, wybierz opcję **Dodaj istniejący element**.
+   **Dodaj istniejący element** pojawi się okno dialogowe.
 
-     **Dodaj istniejący element** pojawi się okno dialogowe.
+2. Wybierz plik XML i naciśnij klawisz **Dodaj**.
 
-2.  Wybierz plik XML i naciśnij klawisz **Dodaj**.
+## <a name="create-a-new-xml-or-xslt-file"></a>Utwórz nowy plik XML lub XSLT
 
-## <a name="to-create-a-new-xml-or-xslt-file"></a>Aby utworzyć nowy plik XML lub XSLT
+1. Z **pliku** menu, wybierz opcję **New**.
 
-1.  Z **pliku** menu, wybierz opcję **New**.
+   **Nowy plik** pojawi się okno dialogowe.
 
-     **Nowy plik** pojawi się okno dialogowe.
+2. Wybierz **pliku XML** Aby utworzyć nowy plik XML; lub wybierz **pliku XSLT** do utworzenia nowego arkusza stylów XSLT.
 
-2.  Wybierz **pliku XML** Aby utworzyć nowy plik XML; lub wybierz **pliku XSLT** do utworzenia nowego arkusza stylów XSLT.
+3. Kliknij przycisk **Otwórz**.
 
-3.  Kliknij przycisk **Otwórz**.
+## <a name="create-an-empty-project-for-xml-files"></a>Utwórz pusty projekt dla plików XML
 
-## <a name="to-create-a-project-for-xml-files"></a>Aby utworzyć projekt dla plików XML
+::: moniker range="vs-2017"
 
-1.  Z **pliku** menu, wybierz opcję **New**, a następnie wybierz pozycję **projektu**.
+1. Z **pliku** menu, wybierz opcję **New** > **projektu**.
 
-     **Nowy projekt** pojawi się okno dialogowe.
+   **Nowy projekt** pojawi się okno dialogowe.
 
-2.  Wybierz język kodu, co pozwala wybierz **pusty projekt**i kliknij przycisk **OK**.
+2. Wybierz język kodu, co pozwala wybierz **pusty projekt**.
 
-3.  Dodaj pliki XML do projektu.
+3. Kliknij przycisk **OK**.
 
-     Edytor XML znajduje schematy dodanych do tego projektu i używa ich do walidacji i IntelliSense w dowolnym XML, schematu lub pliki XSLT, które możesz edytować, gdy ten projekt jest otwarty.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Z **pliku** menu, wybierz opcję **New** > **projektu**.
+
+2. Wprowadź **pusty projekt** w polu wyszukiwania szablonu wybierz **pusty projekt (.NET Framework)** szablonu, a następnie kliknij **dalej**.
+
+3. Kliknij przycisk **Utwórz**.
+
+::: moniker-end
+
+4. Dodaj pliki XML do projektu.
+
+   Edytor XML znajduje schematy dodanych do tego projektu i używa ich do walidacji i IntelliSense w dowolnym XML, schematu lub pliki XSLT, które możesz edytować, gdy ten projekt jest otwarty.
 
 ## <a name="see-also"></a>Zobacz także
 

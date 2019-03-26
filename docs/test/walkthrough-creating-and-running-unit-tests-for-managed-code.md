@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: c2702209d7a235d57ba1e1161675fe351d6a66e7
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323558"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415541"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -43,6 +43,15 @@ Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zo
 
    **Nowy projekt** pojawi się okno dialogowe.
 
+3. Wybierz C# **biblioteki klas** szablonu projektu.
+
+4. Nadaj projektowi nazwę **Bank**, a następnie kliknij przycisk **OK**.
+
+   Projekt o nazwie Bank, jest tworzony i wyświetlany w **Eksploratora rozwiązań** z *Class1.cs* plik jest otwarty w edytorze kodu.
+
+   > [!NOTE]
+   > Jeśli *Class1.cs* nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik *Class1.cs* w **Eksploratora rozwiązań** aby go otworzyć.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -51,16 +60,16 @@ Aby uzyskać informacje o sposobach uruchamiania testów z wiersza polecenia, zo
 
 2. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
-::: moniker-end
+3. Wyszukaj i wybierz pozycję C# **biblioteki klas** projektu szablonu, a następnie kliknij przycisk **dalej**.
 
-3. Wybierz C# szablonu projektu biblioteki klas.
-
-4. Nadaj projektowi nazwę **Bank**, a następnie kliknij przycisk **OK** lub **Utwórz**.
+4. Nadaj projektowi nazwę **Bank**, a następnie kliknij przycisk **Utwórz**.
 
    Projekt o nazwie Bank, jest tworzony i wyświetlany w **Eksploratora rozwiązań** z *Class1.cs* plik jest otwarty w edytorze kodu.
 
    > [!NOTE]
    > Jeśli *Class1.cs* nie jest otwarty w edytorze kodu, kliknij dwukrotnie plik *Class1.cs* w **Eksploratora rozwiązań** aby go otworzyć.
+
+::: moniker-end
 
 5. Skopiuj kod źródłowy z [przykładowy projekt dotyczący tworzenia testów jednostkowych](../test/sample-project-for-creating-unit-tests.md)i Zamień oryginalną zawartość *Class1.cs* skopiowany kod.
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. Na **pliku** menu, wybierz opcję **Dodaj** > **nowy projekt**.
 
    > [!TIP]
-   > Istnieje kilka sposobów, aby dodać dodatkowe projekt do istniejącego rozwiązania. Kliknięcie prawym przyciskiem myszy nad rozwiązaniem w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**. Lub możesz wybrać **pliku** > **New** > **projektu**, a następnie w **nowy projekt** okno dialogowe, wybierz opcję **Dodaj do rozwiązania** opcji:
-   >
-   > ![Dodaj do rozwiązania opcji w oknie dialogowym Nowy projekt](media/add-to-solution.png)
+   > Użytkownik może również kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**.
+
+::: moniker range="vs-2017"
 
 2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz **testu**.
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. W **nazwa** wprowadź `BankTests`, a następnie wybierz pozycję **OK**.
 
    **BankTests** projekt jest dodawany do **Bank** rozwiązania.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Wyszukaj i wybierz pozycję C# **projektu testu jednostkowego** projektu szablonu, a następnie kliknij przycisk **dalej**.
+
+3. Nadaj projektowi nazwę `BankTests`.
+
+4. Kliknij przycisk **Utwórz**.
+
+   **BankTests** projekt jest dodawany do **Bank** rozwiązania.
+
+::: moniker-end
 
 5. W **BankTests** projektu, Dodaj odwołanie do **Bank** projektu.
 

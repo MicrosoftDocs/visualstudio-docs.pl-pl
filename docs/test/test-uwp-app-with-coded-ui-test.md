@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942261"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416126"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Tworzenie kodowanego interfejsu użytkownika testu do testowania aplikacji platformy uniwersalnej systemu Windows
 
@@ -29,7 +29,11 @@ Pierwszym krokiem jest, aby utworzyć prostą aplikację platformy uniwersalnej 
 
 1. W programie Visual Studio Utwórz nowy projekt za pomocą **pusta aplikacja (Windows Universal)** szablonu dla języka Visual C# lub Visual Basic.
 
-     ![Pusta aplikacja Windows Universal szablonu](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Pusta aplikacja Windows Universal szablonu](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. W **nowy projekt platformy Windows Universal** okno dialogowe, wybierz opcję **OK** aby zaakceptować domyślne wersje platformy.
 
@@ -61,16 +65,20 @@ Pierwszym krokiem jest, aby utworzyć prostą aplikację platformy uniwersalnej 
 
 1. Aby dodać projekt testu do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy projekt**.
 
-1. W **nowy projekt** okno dialogowe, wybierz **kodowanego projektu testu interfejsu użytkownika (Windows Universal)** szablonu. Można znaleźć szablonu w ramach **Windows Universal** kategorię w obszarze **Visual C#** lub **języka Visual Basic**.
+1. Wyszukaj i wybierz pozycję **kodowanego projektu testu interfejsu użytkownika (Windows Universal)** szablonu.
 
-     ![Nowy projekt kodowanego testu interfejsu użytkownika](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Nowy projekt kodowanego testu interfejsu użytkownika](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Jeśli nie widzisz **projekt kodowanego interfejsu użytkownika testu (Windows Universal)** szablonu, trzeba [instalacji składnika należy kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. W **Generuj kod dla kodowanego testu interfejsu użytkownika** okno dialogowe, wybierz opcję **ręcznie Edytuj test**.
 
-     ![Generuj kod dla kodowanego interfejsu użytkownika test dialogowy](../test/media/manually-edit-the-test.png)
+   ![Generuj kod dla kodowanego interfejsu użytkownika test dialogowy](../test/media/manually-edit-the-test.png)
 
 1. Jeśli aplikacja platformy uniwersalnej systemu Windows nie jest już uruchomiona, uruchom ją, naciskając klawisz **Ctrl**+**F5**.
 

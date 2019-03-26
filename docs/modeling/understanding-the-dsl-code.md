@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928286"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416022"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
+
 Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w programie Visual Studio. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.
 
 ## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: Diagramy składników
- Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.
+
+Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.
 
 > [!NOTE]
->  Szablon języka DSL diagramów składników nie jest związana z diagramy składników UML, które można utworzyć za pomocą menu architektury w programie Visual Studio. W **nowy projekt** okna dialogowego rozwiń **inne Types\Extensibility projektu** a następnie kliknij przycisk **projektanta języka specyficznego dla domeny**.
+> Szablon języka DSL diagramów składników ma nazwę **projektanta języka specyficznego dla domeny**.
 
- Naciśnij klawisz F5 i eksperymentowania, jeśli nie jesteś zaznajomiony z tym szablonie rozwiązania. Należy zauważyć w szczególności utworzyć portów, przeciągając narzędzie portu na składnik, a następnie połączyć porty.
+Naciśnij klawisz **F5** i eksperymentowania, jeśli nie jesteś zaznajomiony z tym szablonie rozwiązania. Należy zauważyć w szczególności utworzyć portów, przeciągając narzędzie portu na składnik, a następnie połączyć porty.
 
- ![Składniki i wzajemnie połączonych portów](../modeling/media/componentsample.png)
+![Składniki i wzajemnie połączonych portów](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktury rozwiązania DSL
  **Dsl** projektu definiuje interfejs API dla DSL. **DslPackage** projektu definiuje sposób integracji z programem Visual Studio. Można również dodać własne projektów, które również mogą zawierać kod generowany z modelu.

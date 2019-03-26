@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e46043b080ba4f9dcdb8e61f3f026e0960ab7dc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324291"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414973"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 
@@ -133,5 +133,4 @@ Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
 - [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)
 - [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Instrukcje: Określ maksymalny rozmiar pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Instrukcje: Określanie limitów czasu dla kontrolerów testów i agentów testowych](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222090"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416403"
 ---
 # <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementów
 
 W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora eksportowania szablonu**. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Aby dodać szablon elementu użytkownika do okna dialogowego Dodaj nowy element
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Dodaj szablon elementu do okna dialogowego Dodaj nowy element
 
 1. Utwórz lub Otwórz projekt w programie Visual Studio.
 
@@ -46,7 +46,7 @@ W tym artykule pokazano, jak utworzyć szablon elementu za pomocą **Kreatora ek
 
    Szablon elementu jest wyświetlany w **Dodaj nowy element** okno dialogowe. Jeśli dodano opis w **Kreatora eksportowania szablonu**, opis, który jest wyświetlany po prawej stronie okna dialogowego.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Aby włączyć szablon elementu, który ma być używany w projekcie aplikacji uniwersalnej Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Włącz szablon elementu, który ma być używany w projekcie aplikacji uniwersalnej Windows
 
 Kreator wykonuje większość pracy, aby utworzyć podstawowy szablon, ale w wielu przypadkach należy ręcznie zmodyfikować *.vstemplate* pliku po wyeksportowaniu szablonu. Na przykład, jeśli chcesz, aby element był wyświetlany w **Dodaj nowy element** okno dialogowe projektu aplikacji uniwersalnej Windows, należy wykonać kilka dodatkowych kroków.
 
@@ -68,7 +68,7 @@ Kreator wykonuje większość pracy, aby utworzyć podstawowy szablon, ale w wie
 
 Możesz teraz dodać element oparty na tym szablonie do projektu Windows Universal z **Dodaj nowy element** okno dialogowe.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Aby umożliwić szablony dla określonego projektu podtypów
+## <a name="enable-templates-for-specific-project-subtypes"></a>Włącz szablony dla określonego projektu podtypów
 
 Można określić, czy szablon powinien pojawić się tylko dla tylko niektórych podtypy projektów, takich jak Windows, Office, bazy danych lub w sieci Web.
 
@@ -103,7 +103,7 @@ W poniższym przykładzie pokazano szablon elementu dla **Office** projektów.
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Aby ręcznie utworzyć szablon elementu bez użycia Kreatora eksportowania szablonu
+## <a name="manually-create-an-item-template"></a>Ręcznie utworzyć szablon elementu
 
 W niektórych przypadkach możesz chcieć ręcznie utworzyć szablon elementu od podstaw.
 

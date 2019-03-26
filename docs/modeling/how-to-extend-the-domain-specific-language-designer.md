@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954000"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415970"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Instrukcje: Rozszerzanie projektanta języka specyficznego dla domeny
 
@@ -26,15 +26,13 @@ Skonfiguruj projekt, który zawiera kod rozszerzenia, a projekt VSIX, które eks
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Aby utworzyć rozwiązanie rozszerzenia projektanta DSL
 
-1.  Tworzenie nowego projektu przy użyciu szablonu projektu biblioteki klas. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie w środkowym oknie kliknij pozycję **biblioteki klas**.
+1.  Utwórz nowy projekt za pomocą **biblioteki klas** szablonu projektu. Projekt ten będzie zawierał kod rozszerzenia.
 
-     Projekt ten będzie zawierał kod rozszerzenia.
-
-2.  Tworzenie nowego projektu przy użyciu szablonu projektu VSIX. W **nowy projekt** okna dialogowego rozwiń **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie w środkowym oknie Wybierz **projekt VSIX**.
+2.  Utwórz nową **projekt VSIX** projektu.
 
      Wybierz **Dodaj do rozwiązania**.
 
-     Source.Extension.vsixmanifest zostanie otwarty w edytorze manifestu VSIX.
+     *Source.Extension.vsixmanifest* zostanie otwarty w edytorze manifestu VSIX.
 
 3.  Powyżej pola zawartość, kliknij przycisk **Dodaj zawartość**.
 

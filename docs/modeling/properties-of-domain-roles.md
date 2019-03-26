@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923281"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415528"
 ---
 # <a name="properties-of-domain-roles"></a>Właściwości ról w domenie
 W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. Aby uzyskać informacji na temat ról w domenie, zobacz [objaśnienie modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -28,7 +28,7 @@ W poniższej tabeli przedstawiono właściwości są skojarzone z rolą domeny. 
 |Liczebność|Liczba elementów modelu, które mogą pełnić rolę odwrotną (`0..1`, `1..1`, `0..*`, lub `1..*`). Jeśli liczebność jest `0..*` lub `1..*`, następnie wygenerowana właściwość reprezentuje kolekcję; w przeciwnym razie wygenerowana właściwość reprezentuje element pojedynczego modelu.|Zależy od typu relacji i tego, czy jest to rola źródłowa lub docelowa w relacji.|
 |Nazwa|Nazwa roli domeny. Ta właściwość nie może zawierać spacji.|Nazwa klasy domeny obiektu pełniącego rolę dla tej roli.|
 |Propagates Copy|`DoNotPropagateCopy` -Kopiowanego obiektu pełniącego rolę będzie żadnej kopii tego łącza.<br /><br /> `PropagateCopyToLinkOnly` -Skopiowany link wskazuje na istniejący obiekt pełniący rolę odwrotną.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Skopiowany link wskazuje kopię obiektu pełniącego rolę odwrotną.|`PropagateCopyToLinkAndOppositeRolePlayer` dla ról źródło osadzenia.<br /><br /> `DoNotPropagateCopy` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md)|
-|Propagates Delete|`True` Aby usunąć element, który odgrywa tej roli, gdy skojarzone łącze zostało usunięte.|`True` dla elementu docelowego osadzania roli.<br /><br /> `False` dla innych ról.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).|
+|Propagates Delete|`True` Aby usunąć element, który odgrywa tej roli, gdy skojarzone łącze zostało usunięte.|`True` dla elementu docelowego osadzania roli.<br /><br /> `False` dla innych ról.|
 |Nazwa właściwości|Nazwa właściwości wygenerowanej w kodzie obiektu pełniącego rolę. Ta nazwa nie może zawierać białych znaków.|Nazwa roli odwrotną, jeśli ta rola ma wartość zero do jednego lub jeden do jednego liczebność; w przeciwnym razie nazwa pluralized rolę odwrotną.|
 |Obiekt pełniący rolę|Klasa domeny element, który można odtworzyć tę rolę w relacji. Ta właściwość jest tylko do odczytu.|Klasa domeny obiektu pełniącego rolę dla tej roli.|
 |Uwagi|Uwagi informacyjne skojarzone z rolą domeny.|< Brak\>|

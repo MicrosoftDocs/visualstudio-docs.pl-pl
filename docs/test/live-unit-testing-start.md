@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223783"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416306"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Rozpoczynanie pracy z usługą Live Unit Testing w programie Visual Studio
 
@@ -40,15 +40,19 @@ Ten samouczek wymaga, że po zainstalowaniu programu Visual Studio Enterprise Ed
 
 Rozpocznij od utworzenia rozwiązania programu Visual Studio o nazwie `UtilityLibraries` składający się z pojedynczego .NET Standard projekt biblioteki klas, `StringLibrary`. Można napisać `StringLibrary` w języku C# lub Visual Basic.
 
-Rozwiązanie to po prostu kontener dla jednego lub więcej projektów. Aby utworzyć rozwiązanie, Otwórz program Visual Studio, a następnie wykonaj następujące czynności:
+Rozwiązanie to po prostu kontener dla jednego lub więcej projektów. Aby utworzyć puste rozwiązanie, Otwórz program Visual Studio, a następnie wykonaj następujące czynności:
 
 1. Wybierz **pliku** > **New** > **projektu** menu najwyższego poziomu programu Visual Studio.
 
-1. W **nowy projekt** okna dialogowego, rozwiń węzeł **inne typy projektów** a następnie wybierz węzeł **Visual Studio Solutions**. Wybierz **puste rozwiązanie** szablonu w okienku po prawej stronie i wpisz `UtilityLibraries` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
+1. Typ **rozwiązania** do pola wyszukiwania szablonu, a następnie wybierz **puste rozwiązanie** szablonu.
+
+   ::: moniker range="vs-2017"
 
    ![** Okna dialogowego Nowy projekt **](./media/lut-start/new-solution.png)
 
-1. Wybierz **OK** do utworzenia rozwiązania.
+   ::: moniker-end
+
+1. Zakończ tworzenie rozwiązania.
 
 Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLibrary` zawiera szereg metod rozszerzenia do pracy z ciągami.
 
@@ -56,18 +60,35 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
-1. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **.NET Standard**.
 
    > [!NOTE]
    > Ponieważ nasza biblioteka jest przeznaczony dla .NET Standard zamiast określonej implementacji .NET, można wywołać z dowolnego implementacji .NET, która obsługuje daną wersję .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
 
-1. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
+3. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
    ![** Okna dialogowego Dodawanie nowego projektu **](./media/lut-start/add-project-cs.png)
 
-1. Wybierz **OK** do tworzenia projektu.
+4. Wybierz **OK** do tworzenia projektu.
 
-1. Zastąp wszystkie istniejący kod w oknie Kod następującym kodem:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **biblioteki klas** w polu wyszukiwania szablonu, a następnie wybierz **biblioteki klas (.NET Standard)** szablonu. Kliknij przycisk **Dalej**.
+
+   > [!NOTE]
+   > Ponieważ nasza biblioteka jest przeznaczony dla .NET Standard zamiast określonej implementacji .NET, można wywołać z dowolnego implementacji .NET, która obsługuje daną wersję .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
+
+3. Nadaj projektowi nazwę `StringLibrary`.
+
+4. Kliknij przycisk **Utwórz** do tworzenia projektu.
+
+::: moniker-end
+
+5. Zastąp wszystkie istniejący kod w oknie Kod następującym kodem:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -79,24 +100,41 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
       - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
 
-1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
+6. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
-1. W **Dodaj nowy projekt** okno dialogowe, wybierz węzeł Visual Basic, a następnie wybierz **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. W **Dodaj nowy projekt** okno dialogowe, wybierz węzeł Visual Basic, a następnie wybierz **.NET Standard**.
 
    > [!NOTE]
    > Ponieważ nasza biblioteka jest przeznaczony dla .NET Standard zamiast określonej implementacji .NET, można wywołać z dowolnego implementacji .NET, która obsługuje daną wersję .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
 
-1. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
+3. Wybierz **biblioteki klas (.NET Standard)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibrary` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
    ![** Okna dialogowego Dodawanie nowego projektu **](./media/lut-start/add-project-vb.png)
 
-1. Wybierz **OK** do tworzenia projektu.
+4. Wybierz **OK** do tworzenia projektu.
 
-1. Zastąp wszystkie istniejący kod w oknie Kod następującym kodem:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **biblioteki klas** w polu wyszukiwania szablonu, a następnie wybierz **biblioteki klas (.NET Standard)** szablonu. Kliknij przycisk **Dalej**.
+
+   > [!NOTE]
+   > Ponieważ nasza biblioteka jest przeznaczony dla .NET Standard zamiast określonej implementacji .NET, można wywołać z dowolnego implementacji .NET, która obsługuje daną wersję .NET Standard. Aby uzyskać więcej informacji, zobacz [.NET Standard](/dotnet/standard/net-standard).
+
+3. Nadaj projektowi nazwę `StringLibrary`.
+
+4. Kliknij przycisk **Utwórz** do tworzenia projektu.
+
+::: moniker-end
+
+5. Zastąp wszystkie istniejący kod w oknie Kod następującym kodem:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -108,11 +146,11 @@ Teraz, po utworzeniu rozwiązania, utworzysz biblioteki klas o nazwie `StringLib
 
       - `HasEmbeddedSpaces` Zwraca `true` Jeśli ciąg zawiera znak spacji osadzonych; w przeciwnym razie zwraca `false`.
 
-1. Kliknij prawym przyciskiem myszy nad projektem StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowany przez [Namespace, instrukcja](/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
+6. Kliknij prawym przyciskiem myszy nad projektem StringLibrary w **Eksploratora rozwiązań** i wybierz **właściwości**. W **aplikacji** karcie, usuń tekst w **głównej przestrzeni nazw** pola tekstowego, jak przedstawiono na poniższym rysunku. Główna przestrzeń nazw jest definiowany przez [Namespace, instrukcja](/dotnet/visual-basic/language-reference/statements/namespace-statement) w kodzie źródłowym.
 
    ![Okno dialogowe właściwości projektu dla projektów języka Visual Basic](./media/lut-start/vb-properties.png)
 
-1. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
+7. Wybierz **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio. Program Visual Studio pomyślnie należy utworzyć bibliotekę.
 
 ---
 
@@ -124,77 +162,105 @@ Następnym krokiem jest utworzenie projektu testu jednostkowego do testowania `S
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
-1. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **platformy .NET Core**.
+::: moniker range="vs-2017"
+
+2. W **Dodaj nowy projekt** okno dialogowe, węzeł wybierz języka C#, następnie wybierz pozycję **platformy .NET Core**.
 
    > [!NOTE]
    > Nie trzeba pisać testy jednostkowe w tym samym języku co biblioteki klas.
 
-1. Wybierz **projekt testów jednostkowych (.NET Core)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibraryTests` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
+3. Wybierz **projekt testów jednostkowych (.NET Core)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibraryTests` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
    ![** Okna dialogowego Dodawanie nowego projektu ** projektu testu jednostkowego](./media/lut-start/add-unit-test-cs.png)
 
-1. Wybierz **OK** do tworzenia projektu.
+4. Wybierz **OK** do tworzenia projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **testu jednostkowego** w polu wyszukiwania szablonu, a następnie wybierz **projekt testów jednostkowych (.NET Core)** szablonu. Kliknij przycisk **Dalej**.
+
+3. Nadaj projektowi nazwę `StringLibraryTests`.
+
+4. Kliknij przycisk **Utwórz** do tworzenia projektu.
+
+::: moniker-end
 
    > [!NOTE]
    > Samouczku ułatwiającym rozpoczęcie pracy za pomocą Live Unit Testing szablon testu MSTest. Można również użyć, xUnit i NUnit środowisk testowych.
 
-1. Projekt testu jednostkowego nie może automatycznie korzystać biblioteki klas, który testuje go. Udzielasz dostęp do biblioteki testów przez dodanie odwołania do projektu biblioteki klas. Aby to zrobić, kliknij prawym przyciskiem myszy `StringLibraryTests` projektu, a następnie wybierz **Dodaj** > **odwołania**. W **Menadżer odwołań** okna dialogowego, upewnij się, że **rozwiązania** karta jest wybrany, a wybierz `StringLibrary` projektu, jak pokazano na poniższej ilustracji.
+5. Projekt testu jednostkowego nie może automatycznie korzystać biblioteki klas, który testuje go. Udzielasz dostęp do biblioteki testów przez dodanie odwołania do projektu biblioteki klas. Aby to zrobić, kliknij prawym przyciskiem myszy `StringLibraryTests` projektu, a następnie wybierz **Dodaj** > **odwołania**. W **Menadżer odwołań** okna dialogowego, upewnij się, że **rozwiązania** karta jest wybrany, a wybierz `StringLibrary` projektu, jak pokazano na poniższej ilustracji.
 
    ![** Odwołanie Menedżera ** okna dialogowego](./media/lut-start/add-reference.png)
 
-1. Zastąp kod testu jednostkowego standardowy dostarczone przez szablon z następującym kodem:
+6. Zastąp kod testu jednostkowego standardowy dostarczone przez szablon z następującym kodem:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Zapisz projekt, wybierając **Zapisz** ikonę na pasku narzędzi.
+7. Zapisz projekt, wybierając **Zapisz** ikonę na pasku narzędzi.
 
-1. Ponieważ testów jednostkowych kod zawiera znaki spoza zestawu ASCII, Visual Studio wyświetla następujące okno dialogowe w celu otrzymania niektóre znaki zostaną utracone jeśli możemy zapisać plik w formacie ASCII domyślne. Wybierz **Zapisz z kodowaniem inne** przycisku.
+8. Ponieważ testów jednostkowych kod zawiera znaki spoza zestawu ASCII, Visual Studio wyświetla następujące okno dialogowe w celu otrzymania niektóre znaki zostaną utracone jeśli możemy zapisać plik w formacie ASCII domyślne. Wybierz **Zapisz z kodowaniem inne** przycisku.
 
    ![Wybierz kodowanie pliku](media/lut-start/ascii-encoding.png)
 
-1. W **kodowanie** listy rozwijanej **zaawansowane opcje zapisywania** okno dialogowe, wybierz **Unicode (UTF-8 bez podpisu) - strona kodowa 65001**, jak pokazano na poniższej ilustracji:
+9. W **kodowanie** listy rozwijanej **zaawansowane opcje zapisywania** okno dialogowe, wybierz **Unicode (UTF-8 bez podpisu) - strona kodowa 65001**, jak pokazano na poniższej ilustracji:
 
    ![Wybieranie kodowania UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Kompiluj projekt testów jednostkowych, wybierając **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
+10. Kompiluj projekt testów jednostkowych, wybierając **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy `UtilityLibraries` rozwiązań i wybierz pozycję **Dodaj** > **nowy projekt**.
 
-1. W **Dodaj nowy projekt** okno dialogowe, wybierz węzeł Visual Basic, a następnie wybierz **platformy .NET Core**.
+::: moniker range="vs-2017"
+
+2. W **Dodaj nowy projekt** okno dialogowe, wybierz węzeł Visual Basic, a następnie wybierz **platformy .NET Core**.
 
    > [!NOTE]
    > Nie trzeba pisać testy jednostkowe w tym samym języku co biblioteki klas.
 
-1. Wybierz **projekt testów jednostkowych (.NET Core)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibraryTests` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
+3. Wybierz **projekt testów jednostkowych (.NET Core)** szablonu w okienku po prawej stronie, a następnie wprowadź `StringLibraryTests` w **nazwa** pola tekstowego, jak przedstawiono na poniższym rysunku:
 
    ![** Okna dialogowego Dodawanie nowego projektu ** dla testu jednostkowego](./media/lut-start/add-unit-test-vb.png)
 
-1. Wybierz **OK** do tworzenia projektu.
+4. Wybierz **OK** do tworzenia projektu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Typ **testu jednostkowego** w polu wyszukiwania szablonu, a następnie wybierz **projekt testów jednostkowych (.NET Core)** szablonu. Kliknij przycisk **Dalej**.
+
+3. Nadaj projektowi nazwę `StringLibraryTests`.
+
+4. Kliknij przycisk **Utwórz** do tworzenia projektu.
+
+::: moniker-end
 
    > [!NOTE]
    > Samouczku ułatwiającym rozpoczęcie pracy za pomocą Live Unit Testing szablon testu MSTest. Można również użyć, xUnit i NUnit środowisk testowych.
 
-1. Projekt testu jednostkowego nie może automatycznie korzystać biblioteki klas, który testuje go. Udzielasz dostęp do biblioteki testów przez dodanie odwołania do projektu biblioteki klas. Aby to zrobić, kliknij prawym przyciskiem myszy `StringLibraryTests` projektu, a następnie wybierz **Dodaj** > **odwołania**. W **Menadżer odwołań** okna dialogowego, upewnij się, że **rozwiązania** karta jest wybrany, a wybierz `StringLibrary` projektu, jak pokazano na poniższej ilustracji.
+5. Projekt testu jednostkowego nie może automatycznie korzystać biblioteki klas, który testuje go. Udzielasz dostęp do biblioteki testów przez dodanie odwołania do projektu biblioteki klas. Aby to zrobić, kliknij prawym przyciskiem myszy `StringLibraryTests` projektu, a następnie wybierz **Dodaj** > **odwołania**. W **Menadżer odwołań** okna dialogowego, upewnij się, że **rozwiązania** karta jest wybrany, a wybierz `StringLibrary` projektu, jak pokazano na poniższej ilustracji.
 
    ![** Odwołanie Menedżera ** okna dialogowego](./media/lut-start/add-reference.png)
 
-1. Zastąp kod testu jednostkowego standardowy dostarczone przez szablon z następującym kodem:
+6. Zastąp kod testu jednostkowego standardowy dostarczone przez szablon z następującym kodem:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Zapisz projekt, wybierając **Zapisz** ikonę na pasku narzędzi.
+7. Zapisz projekt, wybierając **Zapisz** ikonę na pasku narzędzi.
 
-1. Ponieważ testów jednostkowych kod zawiera znaki spoza zestawu ASCII, Visual Studio wyświetla następujące okno dialogowe w celu otrzymania niektóre znaki zostaną utracone jeśli możemy zapisać plik w formacie ASCII domyślne. Wybierz **Zapisz z kodowaniem inne** przycisku.
+8. Ponieważ testów jednostkowych kod zawiera znaki spoza zestawu ASCII, Visual Studio wyświetla następujące okno dialogowe w celu otrzymania niektóre znaki zostaną utracone jeśli możemy zapisać plik w formacie ASCII domyślne. Wybierz **Zapisz z kodowaniem inne** przycisku.
 
    ![Wybierz kodowanie pliku](media/lut-start/ascii-encoding.png)
 
-1. W **kodowanie** listy rozwijanej **zaawansowane opcje zapisywania** okno dialogowe, wybierz **Unicode (UTF-8 bez podpisu) - strona kodowa 65001**, jak pokazano na poniższej ilustracji:
+9. W **kodowanie** listy rozwijanej **zaawansowane opcje zapisywania** okno dialogowe, wybierz **Unicode (UTF-8 bez podpisu) - strona kodowa 65001**, jak pokazano na poniższej ilustracji:
 
    ![Wybieranie kodowania UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Kompiluj projekt testów jednostkowych przez **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
+10. Kompiluj projekt testów jednostkowych przez **kompilacji** > **Kompiluj rozwiązanie** menu najwyższego poziomu programu Visual Studio.
 
 ---
 

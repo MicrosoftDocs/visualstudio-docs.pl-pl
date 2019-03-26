@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970520"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416347"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Instrukcje: Tworzenie szablonów elementów obejmujących wiele plików
+# <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów obejmujących wiele plików
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularze Windows wymaga następujących trzech plików:
 
@@ -28,11 +28,11 @@ Szablony elementów może określić tylko jeden element, ale czasami element sk
 
 Szablony elementów wielu plików wymagane parametry, aby upewnić się, że rozszerzenia odpowiedniego pliku są używane podczas tworzenia elementu. Jeśli tworzysz szablonów elementów wielu plików za pomocą **Kreatora eksportowania szablonu**, parametry te są generowane automatycznie i nie dalszej edycji jest wymagany.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Aby utworzyć szablon elementów wielu plików za pomocą Kreatora eksportowania szablonu
+## <a name="use-the-export-template-wizard"></a>Za pomocą Kreatora eksportowania szablonu
 
 Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablon elementu pojedynczego pliku. Zobacz [jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md). Na **wybierz element do eksportowania** strony kreatora, wybierz plik, który zawiera pliki zależne (na przykład plik formularzy Windows Forms). W kreatorze są automatycznie dostępne pliki zależne, takie jak projektant i pliki zasobów w szablonie.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików
+## <a name="manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików
 
 1. Utwórz szablon elementu po będzie ręcznie utworzyć szablon elementu pojedynczy plik, ale zawierają każdego pliku, który stanowi elementów wielu plików.
 

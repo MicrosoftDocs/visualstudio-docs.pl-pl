@@ -1,34 +1,66 @@
 ---
-title: Organizowanie szablonów
+title: Znajdź szablony
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1fe0dababa77d2f52f98618a2ba5a54b6b0b728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325003"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415463"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Instrukcje: Lokalizowanie i organizowanie szablonów projektów i elementów
 
-Pliki szablonu muszą być umieszczone w Visual Studio rozpoznaje dla szablonów, które pojawią się w lokalizacji **nowy projekt** i **Dodaj nowy element** okien dialogowych. Można również utworzyć niestandardowe podkategorii w lokalizacji szablonu użytkownika i kategorie są wyświetlane w **nowy projekt** i **Dodaj nowy element** okien dialogowych.
+Pliki szablonu muszą być umieszczone w znanej lokalizacji w kolejności ich mają być wyświetlane w nowym projektem i okien dialogowych nowy element...
+
+::: moniker range="vs-2017"
+
+Można również utworzyć niestandardowe podkategorii w lokalizacji szablonu użytkownika i kategorie są wyświetlane w **nowy projekt** i **Dodaj nowy element** okien dialogowych.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Znajdź szablony
 
 Zainstalowane szablony i użytkowników są przechowywane w dwóch różnych lokalizacjach.
 
+### <a name="installed-templates"></a>Zainstalowane szablony
+
+Domyślnie szablony zainstalowane z programem Visual Studio znajdują się w:
+
+::: moniker range="vs-2017"
+
+- *% ProgramFiles(x86) %\\programu Microsoft Visual Studio\\2017\\\<edition >\\Common7\IDE\ProjectTemplates\\< język\>\\< Identyfikator ustawień regionalnych\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Na przykład następujący katalog zawiera szablony elementów Visual Basic dla języka angielskiego (LCID 1033):
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *% ProgramFiles(x86) %\\programu Microsoft Visual Studio\\2019\\\<edition >\\Common7\IDE\ProjectTemplates\\< język\>\\< Identyfikator ustawień regionalnych\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edition>\Common7\IDE\ItemTemplates\\<Language\>\\<Locale ID\>*
+
+Na przykład następujący katalog zawiera szablony elementów Visual Basic dla języka angielskiego (LCID 1033):
+
+*C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Szablony użytkownika
 
-Jeśli dodasz skompresowany (*zip*) plik, który zawiera *.vstemplate* plik do katalogu szablonu użytkowników szablonu pojawia się w **nowy projekt** lub  **Dodaj nowy element** okno dialogowe. Domyślnie szablony użytkownika znajdują się w:
+Jeśli dodasz skompresowany (*zip*) plik, który zawiera *.vstemplate* plik do katalogu szablonu użytkowników szablon jest wyświetlany nowy projekt i okien dialogowych nowy element. Domyślnie szablony użytkownika znajdują się w:
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ Na przykład następujący katalog zawiera szablony projektów użytkownika dla 
 ::: moniker-end
 
 > [!TIP]
-> Można ustawić lokalizację użytkownika szablonów w **narzędzia** > **opcje** > **projekty i rozwiązania**  >   **Lokalizacje**.
+> Można zmienić tej lokalizacji dla szablonów użytkownika w **narzędzia** > **opcje** > **projekty i rozwiązania**  >   **Lokalizacje**.
 
-### <a name="installed-templates"></a>Zainstalowane szablony
-
-Domyślnie szablony zainstalowane z programem Visual Studio znajdują się w:
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< język programowania\>\\< identyfikator ustawień regionalnych\>*
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< język programowania\>\\< identyfikator ustawień regionalnych\>*
-
-Na przykład następujący katalog zawiera szablony elementów Visual Basic dla języka angielskiego (LCID 1033):
-
-- *C:\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Organizowanie szablonów
 
@@ -76,7 +98,7 @@ Kategorie w **nowy projekt** i **Dodaj nowy element** okna dialogowe odzwiercied
 > [!NOTE]
 > Nie można utworzyć nową kategorię na poziomie języka programowania. Nowe kategorie można tworzyć tylko w ramach każdego z języków.
 
-### <a name="to-create-new-user-project-template-categories"></a>Tworzenie nowego użytkownika kategorii szablonu projektu
+### <a name="create-new-user-project-template-categories"></a>Utwórz nowy projekt użytkownika kategorie szablonów
 
 1. Utwórz folder w folderze języka programowania, w katalogu szablonu projektu użytkownika. Na przykład, aby ustanowić **HelloWorld** kategorię C# szablony projektów, należy utworzyć następującego katalogu:
 
@@ -88,7 +110,7 @@ Kategorie w **nowy projekt** i **Dodaj nowy element** okna dialogowe odzwiercied
 
    **HelloWorld** kategorii pojawia się w **nowy projekt** dialogowego **zainstalowane** > **Visual C#** .
 
-### <a name="to-create-new-user-item-template-categories"></a>Tworzenie nowego użytkownika z kategorii szablonu elementu
+### <a name="create-new-user-item-template-categories"></a>Utwórz nowy element użytkownika kategorie szablonów
 
 1. Utwórz folder w folderze języka programowania, w katalogu szablonów elementu użytkownika. Na przykład, aby ustanowić **HelloWorld** kategorię C# szablonów, należy go utworzyć następującego katalogu:
 
@@ -103,8 +125,6 @@ Kategorie w **nowy projekt** i **Dodaj nowy element** okna dialogowe odzwiercied
 ### <a name="display-templates-in-parent-categories"></a>Wyświetl szablony w kategorii nadrzędnych
 
 Możesz włączyć szablonów w podkategorii, które mają być wyświetlane w ich kategorii nadrzędnych przy użyciu `NumberOfParentCategoriesToRollUp` element *.vstemplate* pliku. Te kroki są takie same dla szablonów projektów i szablonów elementów.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Aby wyświetlić szablony w kategorii nadrzędnych
 
 1. Znajdź *zip* pliku, który zawiera szablon.
 
@@ -133,6 +153,8 @@ Możesz włączyć szablonów w podkategorii, które mają być wyświetlane w i
 1. Usuń pliki szablonów wyodrębniony i starego szablonu *zip* pliku.
 
 1. Umieść nową *zip* pliku w katalogu, który miał usunięte *zip* pliku.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 

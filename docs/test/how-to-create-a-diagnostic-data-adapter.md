@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914022"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416335"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Instrukcje: Tworzenie adaptera danych diagnostycznych
 
@@ -48,21 +48,9 @@ Poniższa procedura umożliwia utworzenie karty danych diagnostycznych, który z
 
 Aby uzyskać pełny przykład projektu adaptera danych diagnostycznych, w tym z edytorem konfiguracji niestandardowych, zobacz [przykładowy projekt dotyczący tworzenia adaptera danych diagnostycznych](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i instalowanie adaptera danych diagnostycznych
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Tworzenie i instalowanie adaptera danych diagnostycznych
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Aby utworzyć i zainstalować adapter danych diagnostycznych
-
-1. Utwórz nową bibliotekę klas.
-
-   1.  Na **pliku** menu, wybierz **New**, a następnie wskaż **nowy projekt**.
-
-   2.  Z **typów projektów**, wybierz język do użycia.
-
-   3.  Z **zainstalowane szablony programu Visual Studio**, wybierz opcję **biblioteki klas**.
-
-   4.  Wpisz nazwę dla adaptera danych diagnostycznych.
-
-   5.  Wybierz **OK**.
+1. Utwórz nową **biblioteki klas** projektu.
 
 2. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

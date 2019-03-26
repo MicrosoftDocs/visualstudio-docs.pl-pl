@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83bf334aa7fa04b6dea9ec9181d602e40ba83d41
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325032"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415073"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Instrukcje: Utwórz HTTP niestandardowego edytora treści do edytora testów wydajności sieci Web
 
@@ -31,49 +31,35 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
 ## <a name="create-a-windows-control-library-project"></a>Utwórz projekt Biblioteka formantów Windows
 
-1. W programie Visual Studio na **pliku** menu, wybierz **New** > **projektu**.
+1. W programie Visual Studio Utwórz nowy **Biblioteka kontrolek formularzy Windows** projektu. Nadaj projektowi nazwę **MessageEditors**.
 
-    **Nowy projekt** zostanie wyświetlone okno dialogowe.
+   Projekt jest dodawany do nowego rozwiązania i <xref:System.Windows.Forms.UserControl> o nazwie *UserControl1.cs* jest przedstawiany w projektancie.
 
-2. W obszarze **zainstalowane szablony**, wybierz opcję **języka Visual Basic** lub **Visual C#** zależnie od preferencji programowania, a następnie wybierz **Windows**.
+1. Z **przybornika**w obszarze **wspólnych formantów** przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię obiektu UserControl1.
 
-   > [!NOTE]
-   > Ta próbka używa Visual C#.
+1. Wybierz symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> sterowania, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
 
-3. Na liście szablonów wybierz **Biblioteka kontrolek formularzy Windows**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka formularzy Windows i wybierz **właściwości**.
 
-4. W **nazwa** polu tekstowym wpisz nazwę, na przykład `MessageEditors`i wybierz polecenie **OK**.
+1. W **właściwości**, wybierz opcję **aplikacji** kartę.
 
-   > [!NOTE]
-   > Ta próbka używa MessageEditors.
+1. W **platformę docelową** listy rozwijanej wybierz **.NET Framework 4**.
 
-    Projekt jest dodawany do nowego rozwiązania i <xref:System.Windows.Forms.UserControl> o nazwie *UserControl1.cs* jest przedstawiany w projektancie.
+1. **Zmiana platformy docelowej** zostanie wyświetlone okno dialogowe.
 
-5. Z **przybornika**w obszarze **wspólnych formantów** przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię obiektu UserControl1.
+1. Wybierz **tak**.
 
-6. Wybierz symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> sterowania, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
 
-7. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka formularzy Windows i wybierz **właściwości**.
+1. **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-8. W **właściwości**, wybierz opcję **aplikacji** kartę.
+1. Wybierz opcję. **NET** karty, przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
 
-9. W **platformę docelową** listy rozwijanej wybierz **.NET Framework 4**.
+1. Jeśli **Projektant widoków** nie jest wciąż otwarty w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **UserControl1.cs** , a następnie wybierz **Projektant widoków**.
 
-10. **Zmiana platformy docelowej** zostanie wyświetlone okno dialogowe.
+1. Na powierzchni projektowej kliknij prawym przyciskiem myszy i wybierz **Wyświetl kod**.
 
-11. Wybierz **tak**.
-
-12. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
-
-13. **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
-
-14. Wybierz opcję. **NET** karty, przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
-
-15. Jeśli **Projektant widoków** nie jest wciąż otwarty w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **UserControl1.cs** , a następnie wybierz **Projektant widoków**.
-
-16. Na powierzchni projektowej kliknij prawym przyciskiem myszy i wybierz **Wyświetl kod**.
-
-17. (Opcjonalnie) Zmień nazwę klasy i konstruktora z UserControl1 na nazwę opisową, na przykład MessageEditorControl:
+1. (Opcjonalnie) Zmień nazwę klasy i konstruktora z UserControl1 na nazwę opisową, na przykład MessageEditorControl:
 
     > [!NOTE]
     > W przykładzie zastosowano MessageEditorControl.
@@ -91,7 +77,7 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
     }
     ```
 
-18. Dodaj następujące właściwości, aby umożliwić uzyskanie i ustawienie tekstu w RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Interfejsu będzie używać EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> będzie używać EditByteArray:
+1. Dodaj następujące właściwości, aby umożliwić uzyskanie i ustawienie tekstu w RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Interfejsu będzie używać EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> będzie używać EditByteArray:
 
     ```csharp
     public String EditString

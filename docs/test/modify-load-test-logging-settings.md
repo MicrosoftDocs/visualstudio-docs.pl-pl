@@ -8,12 +8,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c60aa8284dd19401fb2f4b6db3dc0ec0fc9c7942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948852"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416087"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modyfikowanie ustawień rejestrowania testu obciążeniowego
 
@@ -26,7 +26,7 @@ Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki lic
 |Zadanie|Skojarzone tematy|
 |-|-----------------------|
 |**Zapisywanie dzienników, w przypadku niepowodzenia testu obciążeniowego:** Można określić, jeśli chcesz zapisać dziennik testu, zawsze wtedy, gdy test obciążenia kończy się niepowodzeniem.|-   [Jak: Określ, czy niepowodzenia testu są zapisywane do testowania dzienników](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Ustaw maksymalny rozmiar pliku dla pliku dziennika:** Można edytować plik konfiguracyjny XML, który jest skojarzony z usługą kontrolera testu, aby określić maksymalny rozmiar pliku do pliku dziennika.|[Instrukcje: Określ maksymalny rozmiar pliku dziennika](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Ustaw maksymalny rozmiar pliku dla pliku dziennika:** Można edytować plik konfiguracyjny XML, który jest skojarzony z usługą kontrolera testu, aby określić maksymalny rozmiar pliku do pliku dziennika.|Modyfikowanie `<add key="LogSizeLimitInMegs" value="20"/>` w *QTCcontroller.exe.config* plik konfiguracyjny XML.|
 
 ## <a name="see-also"></a>Zobacz także
 

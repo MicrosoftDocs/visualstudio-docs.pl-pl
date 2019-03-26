@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955066"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416412"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
@@ -22,41 +22,27 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 ## <a name="create-a-wpf-app"></a>Tworzenie aplikacji WPF
 
-1.  Na **pliku** menu wskaż **New**, a następnie wybierz pozycję **projektu**.
+1. Utwórz nową **aplikacja WPF (.NET Framework)** projektu i nadaj mu nazwę **SimpleWPFApp**.
 
-     **Nowy projekt** pojawi się okno dialogowe.
+     **WPF Designer** otwiera i wyświetla główne okno projektu.
 
-2.  W **zainstalowane** okienku rozwiń **Visual C#**, a następnie wybierz pozycję **pulpitu Windows**.
+2. Jeśli przybornik nie jest otwarty, otwórz go. Wybierz **widoku** menu, a następnie wybierz **przybornika**.
 
-3.  Nad środkowym okienkiem Sprawdź, czy ma wartość listy rozwijanej target framework **.NET Framework 4.5**.
+3. W obszarze **wszystkie formanty WPF** sekcji, przeciągnij **przycisk**, **wyboru** i **ProgressBar** projektową okna głównego w projekcie powierzchni.
 
-4.  W środkowym okienku wybierz **aplikacji WPF** szablonu.
+4. Wybierz **przycisk** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwości z \<Brak nazwy > na button1. Następnie zmień wartość **zawartości** właściwość przycisk do ekranu startowego.
 
-5.  W **nazwa** polu tekstowym **SimpleWPFApp**.
+5. Wybierz **ProgressBar** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwość \<Brak nazwy > na progressBar1. Następnie zmień wartość **maksymalna** właściwość **100** do **10000**.
 
-6.  Wybierz folder, w którym zapiszesz projekt. W **lokalizacji** tekstu wpisz nazwę folderu.
-
-7.  Wybierz **OK**.
-
-     **WPF Designer for Visual Studio** otwiera i wyświetla główne okno projektu.
-
-8.  Jeśli przybornik nie jest otwarty, otwórz go. Wybierz **widoku** menu, a następnie wybierz **przybornika**.
-
-9. W obszarze **wszystkie formanty WPF** sekcji, przeciągnij **przycisk**, **wyboru** i **ProgressBar** projektową okna głównego w projekcie powierzchni.
-
-10. Wybierz **przycisk** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwości z \<Brak nazwy > na button1. Następnie zmień wartość **zawartości** właściwość przycisk do ekranu startowego.
-
-11. Wybierz **ProgressBar** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwość \<Brak nazwy > na progressBar1. Następnie zmień wartość **maksymalna** właściwość **100** do **10000**.
-
-12. Wybierz **wyboru** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwość \<Brak nazwy > checkBox1 i wyczyść **IsEnabled** właściwości.
+6. Wybierz **wyboru** kontroli. W **właściwości** okna, zmień wartość **nazwa** właściwość \<Brak nazwy > checkBox1 i wyczyść **IsEnabled** właściwości.
 
      ![Prostej aplikacji WPF](../test/media/codedui_wpfapp.png)
 
-13. Kliknij dwukrotnie formant przycisku aby dodać obsługę zdarzeń kliknięcia.
+7. Kliknij dwukrotnie formant przycisku aby dodać obsługę zdarzeń kliknięcia.
 
      *MainWindow.xmal.cs* jest wyświetlany w edytorze kodu z kursorem w nowej metodzie button1_Click.
 
-14. W górnej części klasy MainWindow dodaj delegata. Delegat będzie używany dla paska postępu. Aby dodać delegata, dodaj następujący kod:
+8. W górnej części klasy MainWindow dodaj delegata. Delegat będzie używany dla paska postępu. Aby dodać delegata, dodaj następujący kod:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
         }
     ```
 
-15. W metodzie button1_Click dodaj następujący kod:
+9. W metodzie button1_Click dodaj następujący kod:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
     }
     ```
 
-16. Zapisz plik.
+10. Zapisz plik.
 
 ### <a name="run-the-wpf-app"></a>Uruchamianie aplikacji WPF
 
@@ -120,22 +106,14 @@ W tym przewodniku dowiesz się, jak tworzenie, edytowanie i obsługa kodowanego 
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie kodowanego testu interfejsu użytkownika dla aplikacji SimpleWPFApp
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj** , a następnie wybierz **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj** > **nowy projekt**.
 
-     **Dodaj nowy projekt** pojawi się okno dialogowe.
-
-1. W **zainstalowane** okienku rozwiń **Visual C#**, a następnie wybierz pozycję **testu**.
-
-1. W środkowym okienku wybierz **projekt kodowanego testu interfejsu użytkownika** szablonu.
+2. Wyszukaj i wybierz pozycję **projekt kodowanego testu interfejsu użytkownika** projektu szablonu, a następnie przejdź przez kolejne kroki dopiero po utworzeniu projektu.
 
    > [!NOTE]
    > Jeśli nie widzisz **projekt testu kodowanego interfejsu użytkownika** szablonu, trzeba [instalacji składnika należy kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. Wybierz **OK**.
-
-     Nowy kodowanego testu interfejsu użytkownika o nazwie **CodedUITestProject1** jest dodawany do rozwiązania.
-
-     **Generuj kod dla kodowanego testu interfejsu użytkownika** pojawi się okno dialogowe.
+     Nowy kodowanego testu interfejsu użytkownika o nazwie **CodedUITestProject1** jest dodawany do rozwiązania i **Generuj kod dla kodowanego testu interfejsu użytkownika** pojawi się okno dialogowe.
 
 1. Wybierz **Rejestruj akcje, Edytuj mapę interfejsu użytkownika lub Dodaj potwierdzenia** opcji, a następnie wybierz **OK**.
 

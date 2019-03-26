@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983848"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415476"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Dodawanie poleceń i gestów do diagramów zależności
 
@@ -30,25 +30,21 @@ Jeśli chcesz, możesz zdefiniować kilka poleceń i elementów obsługi gestów
 
 Zobacz [wymagania](../modeling/extend-layer-diagrams.md#prereqs).
 
-## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Definiowanie polecenia lub gestu w nowym VSIX
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definiowanie polecenia lub gestu w nowym VSIX
 
 Najszybszą metodą tworzenia rozszerzenia jest użycie szablonu projektu. Te umieszcza kod i manifestu VSIX w tym samym projekcie.
 
-### <a name="to-define-an-extension-by-using-a-project-template"></a>Aby zdefiniować rozszerzenie przy użyciu szablonu projektu
+1. Utwórz nową **rozszerzenia polecenia projektanta warstwy** lub **rozszerzenia gestu projektanta warstwy** projektu.
 
-1. Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.
+   Ten szablon tworzy projekt zawierający krótki przykład roboczy.
 
-2. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenia polecenia projektanta warstwy** lub **rozszerzenia gestu projektanta warstwy** .
-
-    Ten szablon tworzy projekt zawierający krótki przykład roboczy.
-
-3. Aby przetestować rozszerzenie, naciśnij klawisz **Ctrl**+**F5** lub **F5**.
+2. Aby przetestować rozszerzenie, naciśnij klawisz **Ctrl**+**F5** lub **F5**.
 
     Uruchamia doświadczalne wystąpienie programu Visual Studio. W tym wypadku Utwórz diagram zależności. Rozszerzenia poleceń lub gest powinny działać na tym diagramie.
 
-4. Zamknij wystąpienie doświadczalne i Modyfikuj przykładowy kod. Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).
+3. Zamknij wystąpienie doświadczalne i Modyfikuj przykładowy kod.
 
-5. Możesz dodać więcej programów obsługi polecenia lub gestu w tym samym projekcie. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:
+4. Możesz dodać więcej programów obsługi polecenia lub gestu w tym samym projekcie. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:
 
     [Definiowanie polecenia Menu](#command)
 
@@ -56,46 +52,40 @@ Najszybszą metodą tworzenia rozszerzenia jest użycie szablonu projektu. Te um
 
 ::: moniker range="vs-2017"
 
-6. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **rozszerzenia i aktualizacje** na **narzędzia** menu.
+5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **rozszerzenia i aktualizacje** na **narzędzia** menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **Zarządzaj rozszerzeniami** na **rozszerzenia** menu.
+5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **Zarządzaj rozszerzeniami** na **rozszerzenia** menu.
 
 ::: moniker-end
 
-## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Dodawanie polecenia lub gestu do oddzielnych VSIX
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Dodawanie polecenia lub gestu do oddzielnych VSIX
 
 Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania warstwy oraz inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania VSIX i oddzielnych projektów dla programów obsługi.
 
-### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Aby dodać rozszerzenia warstwy do oddzielnego VSIX
+1. Utwórz nową **biblioteki klas** projektu. Ten projekt będzie zawierać polecenia lub gest klasy programu obsługi.
 
-1.  Utwórz projekt biblioteki klas w nowym lub istniejącym rozwiązaniu Visual Studio. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie kliknij przycisk **biblioteki klas**. Ten projekt będzie zawierać polecenia lub gest klasy programu obsługi.
+   > [!NOTE]
+   > Można zdefiniować więcej niż jednej klasy programu obsługi polecenia lub gestu w jednej bibliotece klasy, ale należy zdefiniować warstwy sprawdzania poprawności klas w bibliotece osobnej klasy.
 
-    > [!NOTE]
-    > Można zdefiniować więcej niż jednej klasy programu obsługi polecenia lub gestu w jednej bibliotece klasy, ale należy zdefiniować warstwy sprawdzania poprawności klas w bibliotece osobnej klasy.
+2. Dodaj lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**.
 
-2.  Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Aby dodać projekt VSIX:
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt VSIX lub wybrać **Ustaw jako projekt startowy**.
 
-    1.  W **nowy projekt** okna dialogowego rozwiń **Visual C#**, następnie kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projekt VSIX**.
+4. W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj polecenie lub projekt obsługi gestu jako składnik MEF.
 
-    2.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt VSIX, a następnie kliknij przycisk **Ustaw jako projekt startowy**.
+    1. W **zasoby**karcie Wybierz **New**.
 
-    3.  Kliknij przycisk **Wybierz wersje** i upewnij się, że **programu Visual Studio** jest zaznaczone.
+    2. W **typu**, wybierz opcję **Microsoft.VisualStudio.MefComponent**.
 
-3.  W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj polecenie lub projekt obsługi gestu jako składnik MEF.
+    3. W **źródła**, wybierz opcję **projekt w bieżącym rozwiązaniu** i wybierz nazwę projektu obsługi polecenia lub gestu.
 
-    1.  W **zasoby**karcie Wybierz **New**.
+    4. Zapisz plik.
 
-    2.  W **typu**, wybierz opcję **Microsoft.VisualStudio.MefComponent**.
-
-    3.  W **źródła**, wybierz opcję **projekt w bieżącym rozwiązaniu** i wybierz nazwę projektu obsługi polecenia lub gestu.
-
-    4.  Zapisz plik.
-
-4.  Wróć do projektu obsługi polecenia lub gestu i dodaj następujące odwołania do projektu:
+5. Wróć do projektu obsługi polecenia lub gestu i dodaj następujące odwołania do projektu:
 
    |**Dokumentacja**|**Co to pozwala zrobić**|
    |-|-|
@@ -106,17 +96,17 @@ Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania w
    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Zdefiniuj rozszerzenia modelowania|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Zaktualizuj kształty i diagramy|
 
-5.  Edytuj plik klasy w języku C# projekt biblioteki klas zawiera kod dla rozszerzenia. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:
+6. Edytuj plik klasy w języku C# projekt biblioteki klas zawiera kod dla rozszerzenia. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:
 
      [Definiowanie polecenia Menu](#command)
 
      [Definiowanie procedury obsługi gestu](#gesture)
 
-     Zobacz też [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).
+7. Aby przetestować tę funkcję, naciśnij klawisz **Ctrl**+**F5** lub **F5**.
 
-6.  Aby przetestować tę funkcję, naciśnij klawisz **Ctrl**+**F5** lub **F5**. Otwiera doświadczalne wystąpienie programu Visual Studio. W tym wypadku Utwórz lub Otwórz diagram zależności.
+   Otwiera doświadczalne wystąpienie programu Visual Studio. W tym wypadku Utwórz lub Otwórz diagram zależności.
 
-7.  Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
+8. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze plików.
 
 ##  <a name="command"></a> Definiowanie polecenia Menu
 
@@ -149,8 +139,6 @@ Możesz dodać więcej definicji poleceń menu do istniejącego gest lub polecen
    `...`
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
-
-Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 Aby dodać nowe polecenie, Utwórz nowy plik kodu, który zawiera poniższy przykład. Następnie przetestuj i edytuj go.
 
@@ -275,5 +263,4 @@ Zwróć uwagę na następujące kwestie dotyczące obsługi gestu:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)
 - [Dodawanie niestandardowej walidacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

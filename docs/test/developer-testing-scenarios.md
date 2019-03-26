@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216cee6181122997ef8cc5937b9b1af76ba71b06
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a1cc43bfeb66792d2d8ff5a736d957740f62c5ff
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316356"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416214"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Narzędzia, scenariusze i możliwości testowania dla deweloperów
 
@@ -45,7 +45,6 @@ Możesz wybrać najlepsze cechy daje kodowanych testów interfejsu użytkownika 
 * [Używanie automatyzacji interfejsu użytkownika do testowania kodu](use-ui-automation-to-test-your-code.md)
 * [Rozpoczynanie pracy z tworzeniem, edytowaniem i obsługa kodowanego testu interfejsu użytkownika](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testowanie aplikacji platformy uniwersalnej systemu Windows za pomocą kodowanych testów interfejsu użytkownika](test-uwp-app-with-coded-ui-test.md)
-* [Testowanie aplikacji programu SharePoint za pomocą kodowanych testów interfejsu użytkownika](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Wprowadzenie do kodowane testy interfejsu użytkownika w programie Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Skuteczne testy jednostkowe w narzędziu pokrycia kodu programu Visual Studio

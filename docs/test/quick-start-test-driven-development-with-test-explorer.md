@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925244"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415606"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
 Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego działania kodu przez wiele kroków przyrostowych cyklu rozwoju. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane w testowaniu różnych języków lub platform. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Dostępne są adaptery dla większości powszechnie stosowanych środowisk, a następnie można napisać własne adaptery dla innych platform.
 
- Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji programu Visual Studio. Jego zalety obejmują:
+Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji programu Visual Studio. Jego zalety obejmują:
 
--   Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.
+- Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.
 
--   Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.
+- Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.
 
--   Zobacz w jednym oknie użytkownikowi potrzebnych informacji.
+- Zobacz w jednym oknie użytkownikowi potrzebnych informacji.
 
 ## <a name="use-test-explorer"></a>Korzystanie z Eksploratora testów
- ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta-.png)
+
+![Test Explorer z wyświetlonym przycisk Uruchom wszystko](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Aby uruchomić testy jednostkowe za pomocą Eksploratora testów
 
-1. Tworzenie testów jednostkowych, które używają wybranych środowisk testowych.
+1. Tworzenie testów jednostkowych, które używają wybranych środowisk testowych. Na przykład aby utworzyć test który używa środowiska Mstest:
 
-    Na przykład aby utworzyć test który używa środowiska Mstest:
+   1. Tworzenie **projektu testu jednostkowego** projektu dla C#, Visual Basic lub C++.
 
-   1.  Utwórz projekt testu.
-
-        W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** lub **Visual C++**, a następnie wybierz **testu**.
-
-        Wybierz **projektu testu jednostkowego**.
-
-   2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.
+   2. Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.
 
 2. Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
@@ -66,19 +61,17 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 > [!NOTE]
 > Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Przewodnik: Testów przy użyciu jednostki do opracowania metody
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Przewodnik: Testów przy użyciu jednostki do opracowania metody
- W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Tworzenie testu i metody
 
-1. Utwórz projekt Visual biblioteki klas C#. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.
+1. Tworzenie C# **biblioteki klas** projektu. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.
 
-2. Utwórz projekt testu.
+2. Utwórz nową **projektu testu jednostkowego** projektu.
 
-   -   W **nowy projekt** okno dialogowe, wybierz **Visual C#** > **testu** , a następnie wybierz **projektu testu jednostkowego**.
-
-        ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png)
+   ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png)
 
 3. Napisz podstawową metodę testową. Sprawdź wynik uzyskany dla określonych danych wejściowych:
 

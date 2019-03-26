@@ -2,8 +2,9 @@
 title: 'Samouczek: Tworzenie prostego C# aplikacji konsoli'
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736915"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416179"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
 W tym samouczku dla C#, użyjesz programu Visual Studio do tworzenia i uruchomisz aplikację konsoli i Poznaj niektóre funkcje programu Visual Studio zintegrowane środowisko programistyczne (IDE), chociaż możesz to zrobić.
 
+::: moniker range="vs-2017"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Aby rozpocząć, utworzymy C# projekt aplikacji. Typ projektu jest dostarczany z wszystkie pliki szablonu, które będą potrzebne, zanim dodaniu jeszcze nic!
+
+::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
@@ -60,9 +73,44 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
 1. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *konsoli* w polu wyszukiwania. Następnie wybierz pozycję **C#** od języka, a następnie wybierz **Windows** z listy Platform. 
+
+   Po zastosowaniu filtrów języka i platformy, wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz C# szablon Aplikacja konsoli (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Następnie w Instalatorze programu Visual Studio, wybierz **programowanie dla wielu platform .NET Core** obciążenia.
+   >
+   > ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *Kalkulator* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "Kalkulator"](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio otwiera nowy projekt, który zawiera domyślny kod "Hello World".
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Tworzenie aplikacji
 
-Najpierw przyjrzymy się talent matematyczny podstawowe liczby całkowitej w C#. Następnie dodasz kod, aby utworzyć podstawowy kalkulatora. Dalej. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. I wreszcie firma uściślić kod, aby bardziej wydajne.
+Najpierw przyjrzymy się talent matematyczny podstawowe liczby całkowitej w C#. Następnie dodasz kod, aby utworzyć podstawowy kalkulatora. Po tym możemy debugować aplikację, aby znaleźć i naprawić błędy. I wreszcie firma uściślić kod, aby bardziej wydajne.
 
 ### <a name="explore-integer-math"></a>Poznawanie matematyki całkowitoliczbowej
 
@@ -218,7 +266,7 @@ Jednak aplikacja generuje dziesiętna wynik. Upewnijmy się kilka więcej atrakc
 
 ## <a name="debug-the-app"></a>Debugowanie aplikacji
 
-Udoskonaliliśmy nasza aplikacja Kalkulator podstawowego, ale go nie ma jeszcze failsafes w celu obsługi wyjątków, takie jak błędy danych wejściowych użytkownika.
+Udoskonaliliśmy nasza aplikacja Kalkulator podstawowego, ale go nie ma jeszcze sejfy kończyć się niepowodzeniem w celu obsługi wyjątków, takie jak błędy danych wejściowych użytkownika.
 
 Na przykład, jeśli zostanie podjęta próba dzielenia liczby przez zero, lub wprowadź znaków alfanumerycznych, gdy aplikacja oczekuje, że znak numeryczny (lub odwrotnie), aplikacja przestaje działać i zwraca błąd.
 
@@ -404,7 +452,7 @@ Zaczynajmy.
 
 1. Wybierz **Kalkulator** Aby uruchomić program, lub naciśnij **F5**.
 
-1. Postępuj zgodnie z monitami i podzieleniu **42** przez liczbę **119**. Aplikacja powinna wyglądać podobnie do następującego:
+1. Postępuj zgodnie z monitami i podzieleniu **42** przez liczbę **119**. Aplikacja powinna wyglądać na poniższym zrzucie ekranu:
 
     ![Okno konsoli wycofanej aplikacji Kalkulator, która zawiera monity, na którym akcje do wykonania i obsługi błędów dla nieprawidłowe dane wejściowe](./media/csharp-console-calculator-refactored.png)
 

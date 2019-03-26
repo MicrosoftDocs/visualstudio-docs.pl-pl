@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222457"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414761"
 ---
 # <a name="workflow-project-templates"></a>Szablony projektów przepływu pracy
 
@@ -36,20 +36,14 @@ Program Visual Studio oferuje cztery różne szablony projektu przepływu pracy:
 
 Aby uzyskać dostęp do tych szablonów, należy najpierw zainstalować **Windows Workflow Foundation** składnika programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Po zainstalowaniu **Windows Workflow Foundation** składnika, otwórz **nowy projekt** okna dialogowego wybierając **pliku** > **New**  >  **Projektu**.
+1. Po zainstalowaniu **Windows Workflow Foundation** składników, wybierz opcję **pliku** > **New** > **projektu**.
 
-1. W okienku po lewej stronie wybierz **Visual C#**   >  **przepływu pracy** kategorii (lub **języka Visual Basic** > **przepływupracy** Jeśli wolisz języka Visual Basic).
+1. Wyszukaj i wybierz szablon projektu przepływu pracy, na przykład, **Aplikacja konsoli przepływu pracy** szablonu.
 
-1. W środkowym okienku wybierz szablon projektu, taki jak **Aplikacja konsoli przepływu pracy**.
-
-1. W **nazwa** wprowadź opisową nazwę projektu ułatwić identyfikowanie.
-
-1. W **lokalizacji** wprowadź katalog, w którym chcesz zapisać projekt, lub wybierz **Przeglądaj** można przejść do niego.
-
-1. W **rozwiązania** wprowadź nazwę dla nowego rozwiązania. Wybierz **OK** do tworzenia aplikacji.
+1. Nadal za pomocą utworzyć projekt.
 
    > [!NOTE]
-   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, otwórz rozwiązanie w programie Visual Studio kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj** > **New Projekt** otworzyć **nowy projekt** okno dialogowe.
+   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, otwórz rozwiązanie w programie Visual Studio kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań**i wybierz **Dodaj** > **New Projekt**.
 
 ## <a name="workflow-console-app"></a>Aplikacja konsoli przepływu pracy
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983367"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415047"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
 
@@ -40,9 +40,7 @@ Najszybszą metodą tworzenia modułu sprawdzania poprawności jest użycie szab
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Aby zdefiniować rozszerzenie przy użyciu szablonu projektu
 
-1. Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.
-
-2. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenie sprawdzania poprawności projektanta warstwy**.
+1. Utwórz nową **rozszerzenie sprawdzania poprawności projektanta warstwy** projektu.
 
     Ten szablon tworzy projekt zawierający krótki przykład.
 
@@ -52,22 +50,22 @@ Najszybszą metodą tworzenia modułu sprawdzania poprawności jest użycie szab
    > - Edytuj wywołania `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.
    > - Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów zależności](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Edytowanie kodu w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).
+2. Edytowanie kodu w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).
 
-4. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).
+3. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).
 
    > [!NOTE]
    > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).
 
 ::: moniker range="vs-2017"
 
-5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **rozszerzenia i aktualizacje** na **narzędzia** menu.
+4. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **rozszerzenia i aktualizacje** na **narzędzia** menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **Zarządzaj rozszerzeniami** na **rozszerzenia** menu.
+4. Aby zainstalować rozszerzenie w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć *.vsix* w pliku *bin* katalogu. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, wybierz opcję **Zarządzaj rozszerzeniami** na **rozszerzenia** menu.
 
 ::: moniker-end
 
@@ -77,15 +75,13 @@ Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, pol
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Aby dodać sprawdzanie poprawności warstwy do oddzielnego VSIX
 
-1.  Utwórz projekt biblioteki klas w nowym lub istniejącym rozwiązaniu Visual Studio. W **nowy projekt** okno dialogowe, kliknij przycisk **Visual C#** a następnie kliknij przycisk **biblioteki klas**. Projekt ten będzie zawierać klasy warstwy sprawdzania poprawności.
+1. Utwórz nową **biblioteki klas** projektu. Projekt ten będzie zawierać klasy warstwy sprawdzania poprawności.
 
-2.  Identyfikowanie lub Utwórz projekt VSIX w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**. Jeśli trzeba dodać projekt VSIX, wykonaj następujące kroki:
+2. Znajdowanie lub tworzenie **projekt VSIX** w rozwiązaniu. Projekt VSIX zawiera plik o nazwie **source.extension.vsixmanifest**.
 
-    1.  W **nowy projekt** okna dialogowego wybierz **Visual C#**, **rozszerzalności**, **projekt VSIX**.
+3. W **Eksploratora rozwiązań**, w menu kliknij prawym przyciskiem myszy projekt VSIX, wybierz **Ustaw jako projekt startowy**.
 
-    2.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX **Ustaw jako projekt startowy**.
-
-3.  W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj projekt sprawdzania poprawności warstwy jako składnik MEF:
+4. W **source.extension.vsixmanifest**w obszarze **zasoby**, Dodaj projekt sprawdzania poprawności warstwy jako składnik MEF:
 
     1.  Wybierz **nowe**.
 
@@ -97,7 +93,7 @@ Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, pol
 
          **Projekt** = *projektu modułu sprawdzania poprawności*
 
-4.  Należy także dodać go jako sprawdzanie poprawności warstwy:
+5. Należy także dodać go jako sprawdzanie poprawności warstwy:
 
     1.  Wybierz **nowe**.
 
@@ -109,7 +105,7 @@ Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, pol
 
          **Projekt** = *projektu modułu sprawdzania poprawności*
 
-5.  Wróć do projektu warstwy sprawdzania poprawności i dodaj następujące odwołania do projektu:
+6. Wróć do projektu warstwy sprawdzania poprawności i dodaj następujące odwołania do projektu:
 
     |**Dokumentacja**|**Co to pozwala zrobić**|
     |-|-|
@@ -120,14 +116,14 @@ Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, pol
     |System.ComponentModel.Composition|Zdefiniuj składnik walidacji za pomocą Managed Extensibility Framework (MEF)|
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Zdefiniuj rozszerzenia modelowania|
 
-6.  Kopiuj przykładowy kod na końcu tego tematu w pliku klasy w projekcie Walidatora biblioteki, aby uwzględnić kod przy sprawdzaniu poprawności. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).
+7. Kopiuj przykładowy kod na końcu tego tematu w pliku klasy w projekcie Walidatora biblioteki, aby uwzględnić kod przy sprawdzaniu poprawności. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).
 
-7.  Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).
+8. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).
 
     > [!NOTE]
     > Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).
 
-8.  Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
+9. Aby zainstalować VSIX w głównym wystąpieniu programu Visual Studio lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin** katalogu projektów VSIX. Skopiuj go do komputera, na którym chcesz zainstalować VSIX. Kliknij dwukrotnie plik VSIX w Eksploratorze Windows.
 
 ##  <a name="programming"></a> Sprawdzanie poprawności programowania
 

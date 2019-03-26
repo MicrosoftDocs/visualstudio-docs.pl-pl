@@ -1,8 +1,9 @@
 ---
 title: Utwórz swoją pierwszą aplikację konsoli za pomocą Visual Basic
 description: Dowiedz się, jak utworzyć prostą aplikację konsoli Hello World w programie Visual Studio za pomocą Visual Basic, który krok po kroku.
-ms.date: 12/10/2017
 ms.custom: seodec18
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -12,22 +13,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ed05ae0c223ac61db52782b76509d7f42f2b43fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947370"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415840"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki start: Utwórz swoją pierwszą aplikację konsoli w programie Visual Studio za pomocą Visual Basic
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą aplikację języka Visual Basic, która działa na konsoli.
 
+::: moniker range="vs-2017"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest dostarczany z wszystkie pliki szablonu, które będą potrzebne, zanim dodaniu jeszcze nic!
+
+::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
@@ -44,6 +57,44 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest d
      Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
      ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Niektóre zrzuty ekranu, w tym przewodniku Szybki Start Użyj ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
+
+1. Open Visual Studio 2019.
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *konsoli* w polu wyszukiwania. Następnie wybierz pozycję **języka Visual Basic** od języka, a następnie wybierz **Windows** z listy Platform. 
+
+   Po zastosowaniu filtrów języka i platformy, wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz szablon języka Visual Basic dla aplikacji konsoli (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Następnie w Instalatorze programu Visual Studio, wybierz **programowanie dla wielu platform .NET Core** obciążenia.
+   >
+   > ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *WhatIsYourName* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Visual Studio otwiera nowy projekt.
+
+::: moniker-end
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 

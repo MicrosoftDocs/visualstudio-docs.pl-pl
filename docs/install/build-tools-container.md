@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 855534ff340ce9b5bb76bf45d4bf496bd1c2dc17
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324308"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415880"
 ---
 # <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
@@ -30,7 +30,7 @@ Jeśli program Visual Studio Build Tools nie ma wymagane do kompilowania swojego
 
 ## <a name="overview"></a>Omówienie
 
-Za pomocą [Docker](https://www.docker.com/what-docker) tworzenia obrazu, z której możesz tworzyć kontenery, które są kompilowane w kodzie źródłowym. Przykład pliku Dockerfile instaluje najnowszy program Visual Studio kompilacji narzędzia 2017 i innych programach przydatna często używane do tworzenia kodu źródłowego. Można dalej modyfikować, własny plik Dockerfile, aby uwzględnić inne narzędzia i skrypty, aby uruchomić testy, opublikuj dane wyjściowe kompilacji i nie tylko.
+Za pomocą [Docker](https://www.docker.com/what-docker), utworzyć obraz, z której możesz tworzyć kontenery, które są kompilowane w kodzie źródłowym. W przykładzie plik Dockerfile instalację najnowszej Visual Studio Build Tools i innych programach przydatna często używane do tworzenia kodu źródłowego. Można dalej modyfikować, własny plik Dockerfile, aby uwzględnić inne narzędzia i skrypty, aby uruchomić testy, opublikuj dane wyjściowe kompilacji i nie tylko.
 
 Jeśli zainstalowano już Docker for Windows, możesz przejść do kroku 3.
 
@@ -46,11 +46,11 @@ Funkcji Hyper-V nie jest włączona domyślnie. Musi być włączone, można uru
 
 ## <a name="step-2-install-docker-for-windows"></a>Krok 2. Zainstalować platformę Docker for Windows
 
-Jeśli używasz systemu Windows 10, możesz [Pobierz i zainstaluj platformę Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Jeśli używasz systemu Windows Server 2016, postępuj zgodnie z [instrukcjami, aby zainstalować platformę Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
+Jeśli korzystasz z systemu Windows 10, możesz to zrobić [Pobierz i zainstaluj platformę Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Jeśli używasz systemu Windows Server 2016, postępuj zgodnie z [instrukcjami, aby zainstalować platformę Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
 
 ## <a name="step-3-switch-to-windows-containers"></a>Krok 3. Przełącz się do Windows kontenery
 
-Tworzenie narzędzi 2017 można zainstalować tylko na Windows, co wymaga [przełączyć się do kontenerów Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontenery Windows w systemie Windows 10 obsługują tylko [izolacji funkcji Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), podczas gdy kontenery Windows w systemie Windows Server 2016 obsługuje zarówno funkcji Hyper-V i izolację procesów.
+Narzędzia Build Tools można zainstalować tylko na Windows, co wymaga [przełączyć się do kontenerów Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Kontenery Windows w systemie Windows 10 obsługują tylko [izolacji funkcji Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), podczas gdy kontenery Windows w systemie Windows Server 2016 obsługuje zarówno funkcji Hyper-V i izolację procesów.
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>Krok 4. Rozwiń kontener maksymalny rozmiar dysku
 
@@ -59,9 +59,12 @@ Program Visual Studio Build Tools — i w większym stopniu, w programie Visual 
 **W systemie Windows 10**:
 
 1. [Kliknij prawym przyciskiem myszy ikonę platformy Docker for Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na pasku zadań i kliknij przycisk **ustawienia**.
-2. [Kliknij pozycję demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
-3. [Przełącz **podstawowe** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) przycisk, aby **zaawansowane**.
-4. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
+
+1. [Kliknij pozycję demona](https://docs.docker.com/docker-for-windows/#docker-daemon) sekcji.
+
+1. [Przełącz **podstawowe** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) przycisk, aby **zaawansowane**.
+
+1. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
 
    ```json
    {
@@ -85,7 +88,7 @@ Program Visual Studio Build Tools — i w większym stopniu, w programie Visual 
    }
    ```
 
-5. Kliknij przycisk **zastosować**.
+1. Kliknij przycisk **zastosować**.
 
 **W systemie Windows Server 2016**:
 
@@ -95,8 +98,9 @@ Program Visual Studio Build Tools — i w większym stopniu, w programie Visual 
    sc.exe stop docker
    ```
 
-2. W wierszu polecenia z podwyższonym poziomem uprawnień należy edytować "% ProgramData%\Docker\config\daemon.json" (lub niezależnie od rodzaju określony do `dockerd --config-file`).
-3. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
+1. W wierszu polecenia z podwyższonym poziomem uprawnień należy edytować "% ProgramData%\Docker\config\daemon.json" (lub niezależnie od rodzaju określony do `dockerd --config-file`).
+
+1. Dodaj następującą właściwość JSON w tablicy w celu zwiększenia miejsca na dysku do 120 GB (więcej niż wystarczająca dla narzędzia Build Tools możliwości rozbudowy).
 
    ```json
    {
@@ -107,8 +111,10 @@ Program Visual Studio Build Tools — i w większym stopniu, w programie Visual 
    ```
 
    Ta właściwość jest dodawany do niczego, którą już posiadasz.
-4. Zapisz i zamknij plik.
-5. Uruchom usługę "docker":
+ 
+1. Zapisz i zamknij plik.
+
+1. Uruchom usługę "docker":
 
    ```shell
    sc.exe start docker
@@ -119,22 +125,25 @@ Program Visual Studio Build Tools — i w większym stopniu, w programie Visual 
 Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po prostu plik Dockerfile"", który jest rozpoznawany przez domyślny.
 
 > [!WARNING]
-> W tym przykładzie plik Dockerfile tylko wyklucza starszych zestawów SDK Windows, której nie można zainstalować w kontenerach. Wcześniejszych wersjach spowodować, że polecenie kompilacji, aby zakończyć się niepowodzeniem.
+> W tym przykładzie plik Dockerfile nie obejmuje tylko wcześniej SDK Windows, które nie może zostać zainstalowana w kontenerach. Wcześniejszych wersjach spowodować, że polecenie kompilacji, aby zakończyć się niepowodzeniem.
 
 1. Otwórz wiersz polecenia.
-2. Utwórz nowy katalog (zalecane):
+
+1. Utwórz nowy katalog (zalecane):
 
    ```shell
    mkdir C:\BuildTools
    ```
 
-3. Zmień katalogi do tego nowego katalogu:
+1. Zmień katalogi do tego nowego katalogu:
 
    ```shell
    cd C:\BuildTools
    ```
 
-3. Zapisz C:\BuildTools\Dockerfile następującą zawartością.
+1. Zapisz C:\BuildTools\Dockerfile następującą zawartością.
+ 
+   ::: moniker range="vs-2017"
 
    ```dockerfile
    # escape=`
@@ -142,7 +151,7 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
 
-   # Restore the default Windows shell for correct batch processing below.
+   # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
    # Download the Build Tools bootstrapper.
@@ -166,13 +175,55 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
    ```
 
    > [!WARNING]
-   > Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Również Pamiętaj, że wersja oznakowane obrazów 4.7.1 lub później mogą użyć środowiska PowerShell jako domyślny `SHELL` co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
+   > Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy, które są oznaczone wersji 4.7.1 lub później użyć programu PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
    >
    > Visual Studio 2017, wersja, należy zachować 15,8 lub starszym (dowolny produkt) nie zostaną prawidłowo zainstalowane na mcr\.microsoft\.com\/windows\/servercore:1809 lub nowszej. Nie jest wyświetlany błąd.
    >
    > Zobacz [znane problemy dotyczące kontenerów](build-tools-container-issues.md) Aby uzyskać więcej informacji.
 
-4. Uruchom następujące polecenie, w tym katalogu.
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```dockerfile
+   # escape=`
+
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
+
+   # Restore the default Windows shell for correct batch processing.
+   SHELL ["cmd", "/S", "/C"]
+
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
+    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+
+   # Start developer command prompt with any other commands specified.
+   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
+
+   # Default to PowerShell if no other command specified.
+   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ```
+
+   > [!WARNING]
+   > Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Należy również zauważyć, że obrazy, które są oznaczone wersji 4.7.1 lub później użyć programu PowerShell jako domyślny `SHELL`, co spowoduje `RUN` i `ENTRYPOINT` instrukcjami, aby zakończyć się niepowodzeniem.
+   >
+   > Zobacz [znane problemy dotyczące kontenerów](build-tools-container-issues.md) Aby uzyskać więcej informacji.
+
+   ::: moniker-end
+
+1. Uruchom następujące polecenie, w tym katalogu.
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
@@ -182,18 +233,45 @@ Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po p
 
    Finalnego obrazu jest oznakowany "buildtools2017:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2017" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji 2017 narzędzia w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
 
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker build -t buildtools2019:latest -m 2GB .
+   ```
+
+   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Wartość domyślna 1 GB nie wystarcza podczas instalowania niektórych obciążeń; jednak może być zdolny do skompilowania z tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
+
+   Finalnego obrazu jest oznakowany "buildtools2019:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2019" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji narzędzia 2019 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
+
+   ::: moniker-end
+
 ## <a name="step-6-using-the-built-image"></a>Krok 6. Przy użyciu wbudowanego obrazu
 
 Teraz, po utworzeniu obrazu, możesz ją uruchomić w kontenerze celu zarówno interaktywny, jak i automatyczne kompilacje. W przykładzie użyto wiersza polecenia dewelopera, więc zmiennej PATH i inne zmienne środowiskowe są już skonfigurowane.
 
 1. Otwórz wiersz polecenia.
-2. Uruchom kontener, aby rozpoczynać Środowisko PowerShell dla wszystkich deweloperów zmiennych środowiskowych ustawionych:
+
+1. Uruchom kontener, aby rozpoczynać Środowisko PowerShell dla wszystkich deweloperów zmiennych środowiskowych ustawionych:
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker run -it buildtools2017
    ```
 
-Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdrażania, można opublikować ją w ramach swojej własnej [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry) lub innych wewnętrznych [rejestru platformy Docker](https://docs.docker.com/registry/deploying) tak serwerów wystarczy wyciągniesz go.
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker run -it buildtools2019
+   ```
+
+   ::: moniker-end
+
+Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdrażania, można opublikować ją w ramach swojej własnej [usługi Azure Container Registry](https://azure.microsoft.com/services/container-registry) lub innych wewnętrznych [rejestru platformy Docker](https://docs.docker.com/registry/deploying) , serwery muszą tylko wyciągniesz go.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

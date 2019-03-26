@@ -2,8 +2,10 @@
 title: Tworzenie pierwszej przy użyciu programu Visual Studio C# aplikacji konsoli
 titleSuffix: ''
 description: Dowiedz się, jak utworzyć prostą aplikację konsoli Hello World w programie Visual Studio w języku C#, krok po kroku.
-ms.date: 09/21/2018
 ms.custom: seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +15,34 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c5622741a394f11444bcdc432cc5a0a25fddb92
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923737"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416304"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: Tworzenie pierwszej przy użyciu programu Visual Studio C# aplikacji konsoli
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz prostą C# aplikację, która działa na konsoli.
 
+::: moniker range="vs-2017"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Najpierw utworzysz projekt aplikacji C#. Typ projektu jest dostarczany z wszystkie pliki szablonu, które będą potrzebne, zanim dodaniu jeszcze nic!
+
+::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
@@ -46,9 +60,54 @@ Najpierw utworzysz projekt aplikacji C#. Typ projektu jest dostarczany z wszystk
 
      ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+   ![Okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *konsoli* w polu wyszukiwania. Następnie wybierz pozycję **C#** od języka, a następnie wybierz **Windows** z listy Platform. 
+
+   Po zastosowaniu filtrów języka i platformy, wybierz **Aplikacja konsoli (.NET Core)** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz C# szablon Aplikacja konsoli (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Następnie w Instalatorze programu Visual Studio, wybierz **programowanie dla wielu platform .NET Core** obciążenia.
+   >
+   > ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *HelloWorld* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+
+   Visual Studio otwiera nowy projekt.
+   
+::: moniker-end
+
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
+::: moniker range="vs-2017"
+
 Po wybraniu szablonu projektu C# i nazwij swój projekt, Visual Studio tworzy prostą aplikację "Hello World".
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio zawiera domyślny kod "Hello World" w projekcie.
+
+::: moniker-end
 
 (Aby to zrobić, wywoływanych przez nią <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli.)
 
@@ -56,7 +115,7 @@ Po wybraniu szablonu projektu C# i nazwij swój projekt, Visual Studio tworzy pr
 
 Jeśli użytkownik naciśnie klawisz **F5**, program można uruchomić w trybie debugowania. Jednak okno konsoli jest widoczna tylko w przypadku chwilę przed jej zamknięciem.
 
-(Zdarza się to `Main` metoda kończy się po wykonaniu jej pojedynczej instrukcji, więc kończy się aplikacja.)
+(To zachowanie wynika `Main` metoda kończy się po wykonaniu jej pojedynczej instrukcji, więc kończy się aplikacja.)
 
 ### <a name="add-some-code"></a>Dodawanie kodu
 

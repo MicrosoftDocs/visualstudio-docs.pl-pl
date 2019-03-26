@@ -11,14 +11,14 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955105"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416009"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Instrukcje: Tworzenie wtyczki testu wydajności sieci web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Porady: Tworzenie wtyczki testu wydajności sieci web
 
 Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Dostosowane testu wydajności cieci web wtyczki oferuje możliwość wywołania kodu podczas uruchamiania testu wydajności sieci web. Wtyczki testu wydajności sieci web jest uruchamiane jeden raz dla każdej iteracji testu. Ponadto Jeśli zastąpisz PreRequest lub PostRequest metod w wtyczkę testu, te wtyczki żądania zostanie uruchomiony przed lub po każdym żądaniu odpowiednio.
 
@@ -33,43 +33,35 @@ Umożliwia niestandardowe sieci web wydajności wtyczki testu za pomocą testów
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Aby utworzyć wtyczkę do niestandardowego internetowego testu wydajnościowego
 
-1.  Otwórz wydajności sieci web i obciążenia projektu testowego, który zawiera test wydajności sieci web.
+1. Otwórz wydajności sieci web i obciążenia projektu testowego, który zawiera test wydajności sieci web.
 
-2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
-     **Dodaj nowy projekt** zostanie wyświetlone okno dialogowe.
+3. Utwórz nową **biblioteki klas** projektu.
 
-3.  W obszarze **zainstalowane szablony**, wybierz opcję **Visual C#**.
+   Nowy projekt biblioteki klas zostanie dodany do **Eksploratora rozwiązań** i Nowa klasa pojawi się w **Edytor kodu**.
 
-4.  Na liście szablonów wybierz **biblioteki klas**.
+4. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
 
-5.  W **nazwa** polu tekstowym wpisz nazwę dla swojej klasy.
+   **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-6.  Wybierz **OK**.
+5. Wybierz **.NET** karty, przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework**
 
-7.  Nowy projekt biblioteki klas zostanie dodany do **Eksploratora rozwiązań** i Nowa klasa pojawi się w **Edytor kodu**.
-
-8.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
-
-9. **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
-
-10. Wybierz **.NET** karty, przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework**
-
-11. Wybierz **OK**.
+6. Wybierz **OK**.
 
      Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-12. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać test wydajności sieci web dodatku typu plug-in i wybierz pozycję **Dodaj odwołanie**.
+7. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać test wydajności sieci web dodatku typu plug-in i wybierz pozycję **Dodaj odwołanie**.
 
-13. **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
+8. **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
 
-14. Wybierz **projektów** kartę, a następnie wybierz pozycję **projekt biblioteki klas**.
+9. Wybierz **projektów** kartę, a następnie wybierz pozycję **projekt biblioteki klas**.
 
-15. Wybierz **OK**.
+10. Wybierz **OK**.
 
-16. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+11. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-17. Zaimplementuj kod wewnątrz co najmniej jedną z procedur obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
+12. Zaimplementuj kod wewnątrz co najmniej jedną z procedur obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs>
 
@@ -87,22 +79,22 @@ Umożliwia niestandardowe sieci web wydajności wtyczki testu za pomocą testów
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostTransactionEventArgs>
 
-18. Po napisaniu kodu skompiluj nowy projekt.
+13. Po napisaniu kodu skompiluj nowy projekt.
 
-19. Otwórz test wydajności sieci web.
+14. Otwórz test wydajności sieci web.
 
-20. Aby dodać wtyczkę testu wydajności sieci web, wybierz **Dodaj wtyczkę testu sieci Web** na pasku narzędzi.
+15. Aby dodać wtyczkę testu wydajności sieci web, wybierz **Dodaj wtyczkę testu sieci Web** na pasku narzędzi.
 
      **Dodaj wtyczkę testu sieci Web** zostanie wyświetlone okno dialogowe.
 
-21. W obszarze **Wybierz wtyczkę**, zaznacz klasę wtyczki testu wydajności sieci web.
+16. W obszarze **Wybierz wtyczkę**, zaznacz klasę wtyczki testu wydajności sieci web.
 
-22. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
+17. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
     > [!NOTE]
     > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci web można również zmienić później, przy użyciu okna właściwości.
 
-23. Wybierz **OK**.
+18. Wybierz **OK**.
 
      Wtyczka zostanie dodana do **wtyczki testu sieci Web** folderu.
 
@@ -113,8 +105,8 @@ Umożliwia niestandardowe sieci web wydajności wtyczki testu za pomocą testów
     >
     > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1.  W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
-    > 2.  Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
+    > 1. W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
+    > 2. Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
 
 ## <a name="example"></a>Przykład
 
