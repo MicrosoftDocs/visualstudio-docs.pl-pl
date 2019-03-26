@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97435248878fdb4c5f0b257f6a45155c58a62872
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354982"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475958"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
@@ -25,7 +25,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-1. Otwórz program Visual Studio.
+1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
     Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **c ++**, wybierz **szablony**, następnie wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.

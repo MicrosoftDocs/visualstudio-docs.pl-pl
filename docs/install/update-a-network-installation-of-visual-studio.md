@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: df273b97541a0fc136346083c4d2249cfd67f3bc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324698"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475984"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -102,6 +102,9 @@ Vs_enterprise.exe może być wywołana wewnątrz layoutDir.
 > Niektóre pliki ważne metadane, które są wymagane przez `--verify` opcja musi być w pamięci podręcznej offline układu. Jeśli brakuje te pliki metadanych "--Sprawdź" nie można uruchomić i konfiguracji zawiera błąd. Jeśli wystąpi ten błąd, ponownie utwórz nowy układ w trybie offline, inny folder (lub do tego samego folderu pamięci podręcznej offline. Aby to zrobić, uruchomić to samo polecenie Układ, który został użyty do utworzenia początkowego układu w trybie offline. Na przykład `Vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft jest dostarczany aktualizacje programu Visual Studio okresowo, aby nowy układ, które tworzysz może nie być tej samej wersji, co wstępny układ.
+
+> [!NOTE]
+> Weryfikacja działa tylko w przypadku najnowszej wersji pomocniczej określoną wersję programu Visual Studio. Jak najszybciej po wydaniu nowej wersji, weryfikacja nie będzie działać dla wcześniejszych wersji poziomu poprawek w tej samej wersji pomocniczej.
 
 ## <a name="how-to-fix-a-layout"></a>Jak naprawić układu
 

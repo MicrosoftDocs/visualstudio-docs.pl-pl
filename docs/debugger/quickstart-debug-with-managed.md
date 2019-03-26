@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09546ae594ddc7653670c62f5a9186286eb52525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355224"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475971"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
 
@@ -25,7 +25,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-1. Otwórz program Visual Studio.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
     Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Core)**. W oknie dialogowym wybierz **Utwórz**.

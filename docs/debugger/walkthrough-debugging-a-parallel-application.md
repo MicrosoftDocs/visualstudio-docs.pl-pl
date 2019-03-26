@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709411"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476062"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: Debugowanie aplikacji równoległych w programie Visual Studio (C#, Visual Basic, C++)
 
@@ -62,23 +62,39 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 
 #### <a name="to-create-the-sample-project"></a>Aby utworzyć projekt przykładowy
 
-1. W programie Visual Studio na **pliku** menu wskaż **New** a następnie kliknij przycisk **projektu**.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
-2. Wybierz opcję **Visual C#**, **języka Visual Basic**, lub **Visual C++**. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] jest wyświetlana w polu framework.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+    
+    - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
+    - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
 
-3. W obszarze **pulpitu Windows**, wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.
+    Następnie wpisz nazwę lub użyj nazwy domyślnej i kliknij **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
 
-4. Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.
+    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    - Dla aplikacji w języku Visual Basic w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    - Dla aplikacji w języku C++ w obszarze **Visual C++**, wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
 
-5. Wklej następujący kod w języku wybranym do pliku kodu pusty.
+    Następnie wpisz nazwę lub użyj nazwy domyślnej i kliknij **OK**.
+    ::: moniker-end
+
+    Jeśli nie widzisz **aplikacja Konsolowa** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+
+1. Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.
+
+1. Wklej następujący kod w języku wybranym do pliku kodu pusty.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
+1. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
     Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.
 

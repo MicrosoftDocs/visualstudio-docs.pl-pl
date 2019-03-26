@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526041"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475997"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
 
@@ -38,21 +38,33 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
 
 ## <a name="create-a-multithreaded-app-project"></a>Tworzenie projektu aplikacji wielowątkowych
 
-1.  Na **pliku** menu, wybierz opcję **New** > **projektu**.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
-     **Nowy projekt** pojawi się okno dialogowe.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+    
+    - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
+    - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
 
-2.  Wybierz język: **Wizualne C#** , **Visual C++**, lub **języka Visual Basic**.
+    Następnie wpisz nazwę, takich jak **MyThreadWalkthroughApp** i kliknij przycisk **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
 
-3.  W obszarze **pulpitu Windows**, wybierz **aplikacja Konsolowa**.
+    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    - Dla aplikacji w języku Visual Basic w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    - Dla aplikacji w języku C++ w obszarze **Visual C++**, wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
 
-4.  W **nazwa** wprowadź MyThreadWalkthroughApp.
+    Następnie wpisz nazwę, takich jak **MyThreadWalkthroughApp** i kliknij przycisk **OK**.
+    ::: moniker-end
 
-5.  Kliknij przycisk **OK**.
+    Jeśli nie widzisz **aplikacja Konsolowa** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 
-     Pojawi się nowy projekt konsoli. Po utworzeniu projektu pojawia się pliku źródłowego. W zależności od języka, które zostały wybrane, może mieć nazwę pliku źródłowego *Program.cs*, *MyThreadWalkthroughApp.cpp*, lub *Module1.vb*.
+1. Kliknij przycisk **OK**.
 
-6.  Usuń kod, który pojawia się w pliku źródłowym i Zastąp kod przykładowy odpowiednie poniżej.
+    Pojawi się nowy projekt konsoli. Po utworzeniu projektu pojawia się pliku źródłowego. W zależności od języka, które zostały wybrane, może mieć nazwę pliku źródłowego *Program.cs*, *MyThreadWalkthroughApp.cpp*, lub *Module1.vb*.
+
+1. Usuń kod, który pojawia się w pliku źródłowym i Zastąp kod przykładowy odpowiednie poniżej.
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
     End Class
     ```
 
-7.  Na **pliku** menu, wybierz opcję **Zapisz wszystko**.
+1. Na **pliku** menu, wybierz opcję **Zapisz wszystko**.
 
-8. (Tylko Visual Basic) W Eksploratorze rozwiązań (w okienku po prawej stronie), kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **właściwości**. W obszarze **aplikacji** kartę, zmień **obiekt początkowy** do **proste**.
+1. (Tylko Visual Basic) W Eksploratorze rozwiązań (w okienku po prawej stronie), kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **właściwości**. W obszarze **aplikacji** kartę, zmień **obiekt początkowy** do **proste**.
 
 ## <a name="debug-the-multithreaded-app"></a>Debugowanie aplikacji wielowątkowych
 

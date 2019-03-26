@@ -3,8 +3,9 @@ title: 'Samouczek: Rozpoczynanie pracy z usługą C# i ASP.NET Core'
 titleSuffix: ''
 description: Dowiedz się, jak utworzyć aplikację internetową platformy ASP.NET Core w programie Visual Studio w języku C#, krok po kroku.
 ms.custom: seodec18, get-started
-ms.date: 10/29/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7f123646ce3b702d6e76e92009eba2ef12da7626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb45386795077289e14e19ec9ad7e0071521db22
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929001"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475906"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -30,11 +31,21 @@ W tym samouczku dla rozwoju języka C# za pomocą programu ASP.NET Core przy uż
 
 ### <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
+::: moniker range="vs-2017"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 ### <a name="update-visual-studio"></a>Aktualizowanie programu Visual Studio
 
-Jeśli po zainstalowaniu programu Visual Studio, upewnij się, że używasz najnowszej wersji. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../../install/update-visual-studio.md) strony.
+Jeśli po zainstalowaniu programu Visual Studio, upewnij się, że używasz najnowszej wersji. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio do najnowszej wersji](../../install/update-visual-studio.md) strony.
 
 ### <a name="choose-your-theme-optional"></a>Wybierz kompozycję (opcjonalnie)
 
@@ -43,6 +54,8 @@ Ten samouczek zawiera zrzuty ekranu, używanego przez ciemnego motywu. Jeśli ni
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Najpierw utworzysz projekt programu ASP.NET Core. Typ projektu jest dostarczany z wszystkie pliki szablonu potrzebnych dla w pełni funkcjonalnej witryny sieci Web, zanim jeszcze dodano niczego!
+
+::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
@@ -85,7 +98,44 @@ Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablon projekt
    ![Okno dialogowe nowej aplikacji sieci Web programu ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **ASP.NET Core 2.0** lub nowszej z górnego menu rozwijanego, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio 2017 do najnowszej wersji](../../install/update-visual-studio.md) strony.
+   > Jeśli nie widzisz **platformy ASP.NET Core 2.1** lub nowszej z górnego menu rozwijanego, upewnij się, że używasz najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji dotyczących sposobu instalacji aktualizacji, zobacz [aktualizacji programu Visual Studio do najnowszej wersji](../../install/update-visual-studio.md) strony.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz pozycję **C#** od języka, a następnie wybierz **Windows** z listy Platform. 
+
+   Po zastosowaniu filtrów języka i platformy, wybierz **aplikacji sieci Web programu ASP.NET Core** szablonu, a następnie wybierz **dalej**.
+
+   ![Wybierz C# szablonu dla aplikacji sieci Web platformy ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
+   >
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Następnie w Instalatorze programu Visual Studio, wybierz **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
+   >
+   > ![Obciążenia programowanie dla wielu platform .NET core w Instalatorze programu Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. Następnie wróć do kroku 2, w tym "[Utwórz projekt](#create-a-project)" procedury.
+
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *MyCoreApp* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
+
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+
+1. W **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core** okna, upewnij się, że **platformy ASP.NET Core 2.1** lub nowszej jest wyświetlana w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web**, w tym przykładzie stron Razor. Następnie wybierz pozycję **Utwórz**.
+
+   ![W oknie "Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core"](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio otwiera nowy projekt.
+
+::: moniker-end
 
 ### <a name="about-your-solution"></a>O rozwiązaniu
 
@@ -131,10 +181,15 @@ To rozwiązanie jest zgodna **strona Razor** wzorca projektowego. Jest inny niż
 
      > [!NOTE]
      > Jeśli otrzymasz komunikat o błędzie informujący, że **nie można połączyć się z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
+     >
+     > Możesz także otrzymać komunikat z pytaniem, jeśli chcesz zaakceptować certyfikat usług IIS Express protokołu SSL. Aby wyświetlić kod w przeglądarce sieci web, wybierz **tak**, a następnie wybierz **tak** Jeśli zostanie wyświetlony komunikat ostrzegawczy monitowania zabezpieczeń. 
 
 1. Visual Studio otworzy w przeglądarce. Powinien zostać wyświetlony **Home**, **o**, i **skontaktuj się z pomocą** strony na pasku menu. (Jeśli tego nie zrobisz, wybierz element menu ""hamburger "", aby je wyświetlić.)
 
     ![Wybierz element menu "hamburger" na pasku menu w aplikacji sieci web](media/csharp-aspnet-razor-browser-page.png)
+
+     > [!TIP]
+     > Nie można edytować kodu w edytorze kodu programu Visual Studio, gdy projekt jest otwarty w oknie przeglądarki. 
 
 1. Wybierz **o** z paska menu.
 

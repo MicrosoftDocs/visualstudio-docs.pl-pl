@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680220"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476036"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Przewodnik: Debugowanie aplikacji wielowątkowych, za pomocą okna wątki (C#, Visual Basic, C++)
 
@@ -34,15 +34,27 @@ Wykonanie kroków tego samouczka zajmuje tylko kilka minut, a także pozwala zaz
 
 Utwórz następujący projekt aplikacja wielowątkowa do użycia w ramach tego samouczka:
 
-1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu**.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
-1. W **nowy projekt** okno dialogowe:
-   - Aby uzyskać C# aplikacji, wybierz opcję **Visual C#**    >  **Aplikacja konsoli (.NET Framework)**.
-   - W przypadku aplikacji w języku C++, wybrać **Visual C++** > **aplikacji konsoli Windows**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+    
+    - Aby uzyskać C#, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla C#. W oknie dialogowym wybierz **Utwórz**.
+    - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.
 
-1. Nadaj nazwę aplikacji MyThreadWalkthroughApp, a następnie wybierz **OK**.
+    Następnie wpisz nazwę, takich jak **MyThreadWalkthroughApp** i kliknij przycisk **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego pole, wybierz następujące opcje:
+    - Dla C# aplikacji, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    - Dla aplikacji w języku C++ w obszarze **Visual C++**, wybierz **pulpitu Windows**,, a następnie wybierz **aplikacji konsoli Windows**.
 
-   Nowy projekt, który pojawia się w **Eksploratora rozwiązań**, oraz plik źródłowy o nazwie *Program.cs* lub *MyThreadWalkthroughApp.cpp* zostanie otwarty w oknie kodu źródłowego.
+    Następnie wpisz nazwę, takich jak **MyThreadWalkthroughApp** i kliknij przycisk **OK**.
+    ::: moniker-end
+
+    Jeśli nie widzisz **aplikacja Konsolowa** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+
+    Nowy projekt, który pojawia się w **Eksploratora rozwiązań**, oraz plik źródłowy o nazwie *Program.cs* lub *MyThreadWalkthroughApp.cpp* zostanie otwarty w oknie kodu źródłowego.
 
 1. Zastąp kod w pliku źródłowym, za pomocą C# lub C++ przykładowy kod z [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md).
 
