@@ -229,7 +229,7 @@ items:
           href: ide/how-to-manually-create-web-templates.md
         - name: Rozwiązywanie problemów z szablonami
           href: ide/how-to-troubleshoot-templates.md
-      - name: Lokalizowanie i organizowanie szablonów projektów i elementów
+      - name: Lokalizowanie szablonów projektów i elementów
         href: ide/how-to-locate-and-organize-project-and-item-templates.md
       - name: Dostosowywanie szablonów projektów i elementów
         href: ide/customizing-project-and-item-templates.md
@@ -382,7 +382,7 @@ items:
             href: ide/reference/convert-var-to-explicit-type.md
           - name: Używanie wyrażenia lambda lub treści bloku
             href: ide/reference/use-block-body-lambda.md
-          - name: Nieużywane wartości i parametry
+          - name: Nieużywane przypisania wartości, zmienne i parametry
             href: ide/reference/unused-values-parameters.md
           - name: Opakowywanie, wcięcia i wyrównywanie parametrów
             href: ide/reference/wrap-align-indent-parameters.md
@@ -1195,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8fc8123e3c9b2a77ba4bd05dc3a7efa8bcfa652c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324042"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416401"
