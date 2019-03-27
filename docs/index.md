@@ -864,7 +864,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Tworzenie aplikacji mobilnych za pomocą języka JavaScript</h3>
-                                                    <p>Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu platformy Apache Cordova.</p>
+                                                    <p>(Visual Studio 2017 i programu Visual Studio 2015 tylko) Twórz aplikacje Międzyplatformowe dla systemów iOS, Android lub Windows przy użyciu platformy Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -4,6 +4,7 @@ description: Utwórz prostą aplikację Windows Desktop .NET w języku Visual Ba
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 26808d1f7bb2e140ee3d70a8d8917e0e31dc7f4b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324256"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515392"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji za pomocą Visual Basic
 
 Przez wykonanie kroków tego samouczka, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Konfigurowanie IDE
@@ -55,35 +61,36 @@ Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczę
 
 Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projekt i rozwiązanie. W tym przykładzie utworzysz projekt Windows Presentation Foundation (WPF).
 
+::: moniker range="vs-2017"
+
 1. Utwórz nowy projekt. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-     ::: moniker range="vs-2017"
      ![Na pasku menu wybierz plik, nowy projekt](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![Na pasku menu wybierz plik, nowy projekt](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. W **nowy projekt** okno dialogowe, wybierz opcję **zainstalowane** > **języka Visual Basic** > **pulpitu Windows** Kategoria, a następnie wybierz **aplikacja WPF (.NET Framework)** szablonu. Nadaj projektowi nazwę **HelloWPFApp**i wybierz **OK**.
 
      ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/exploreide-newproject-vb.png)
+
+Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
+
+![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
 2. Na **Utwórz nowy projekt** ekranu, wyszukaj "WPF" i wybierz **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
 
    ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. Na następnym ekranie, nazwij projekt, **HelloWPFApp**i wybierz polecenie **Utwórz**.
-::: moniker-end
 
 Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
-::: moniker range="vs-2017"
-![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]

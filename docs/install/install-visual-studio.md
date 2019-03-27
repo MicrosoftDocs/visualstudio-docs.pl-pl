@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ceb871dfc8c6c5a07a0a176b8344944edacd893
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 659f220936bd1a6273a27d63642534955a48c7aa
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325308"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515262"
 ---
 # <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
@@ -51,7 +51,7 @@ Masz pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio o
 
 ## <a name="step-2---download-visual-studio"></a>Krok 2 — pobieranie programu Visual Studio
 
-Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wersję programu Visual Studio 2017, który ma, kliknij przycisk **Zapisz**, a następnie kliknij przycisk **Otwórz folder**.
+Następnie należy pobrać plik inicjujący programu Visual Studio. Aby to zrobić, kliknij poniższy przycisk, wybierz wersję programu Visual Studio 2017, należy wybrać **Zapisz**, a następnie wybierz **Otwórz folder**.
 
  > [!div class="button"]
  > [Pobierz program Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
@@ -67,9 +67,9 @@ Następnie uruchom plik inicjujący, aby zainstalować Instalatora programu Visu
    * **vs_professional.exe** for Visual Studio Professional
    * **vs_community.exe** dla Visual Studio Community  <br><br>
 
-   Jeśli pojawi się powiadomienie Kontrola konta użytkownika, kliknij przycisk **tak**.
+   Jeśli pojawi się powiadomienie Kontrola konta użytkownika, wybierz opcję **tak**.
 
-2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Kliknij przycisk **Kontynuuj**.
+2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Wybierz **nadal**.
 
    ![Licencja warunki i zasady zachowania poufności informacji](media/vs2017-privacy-and-license-terms.PNG "postanowienia licencyjne firmy Microsoft oraz zasady zachowania poufności informacji")
 
@@ -83,24 +83,24 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
      Na przykład wybierz obciążenie "Programowanie aplikacji klasycznych .NET". Dołączono edytora podstawowych domyślny, który zawiera podstawowe obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu i zintegrowane kontroli kodu źródłowego.
 
-2. Po wybraniu workload(s) ma, kliknij przycisk **zainstalować**.
+2. Po zaznaczeniu workload(s) chcesz, aby wybrać **zainstalować**.
 
     Następnie ekranów statusu pojawiają się pokazujących postęp instalacji programu Visual Studio.
 
-3. Po zainstalowaniu nowych obciążeń i składników, kliknij przycisk **Uruchom**.
+3. Po zainstalowaniu nowych obciążeń i składników, wybierz **Uruchom**.
 
 > [!TIP]
-> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. Z tego miejsca możesz wybrać obciążeń lub składników, które chcesz zainstalować, a następnie kliknij przycisk **Modyfikuj**.
+> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. Z tego miejsca możesz wybrać obciążeń lub składników, które chcesz zainstalować, a następnie wybierz **Modyfikuj**.
 
 ## <a name="step-5---select-individual-components-optional"></a>Krok 5 — wybierz poszczególne składniki (opcjonalnie)
 
-Jeśli nie chcesz korzystać z funkcji obciążeń dostosować instalację programu Visual Studio, możesz to zrobić, instalując zamiast pojedynczych składników. Aby wybrać poszczególne składniki, kliknij przycisk **poszczególne składniki** za pomocą Instalatora programu Visual Studio, wybierz co, a następnie postępuj zgodnie z monitami.
+Jeśli nie chcesz korzystać z funkcji obciążeń dostosować instalację programu Visual Studio, możesz to zrobić, instalując zamiast pojedynczych składników. Aby wybrać poszczególne składniki, wybierz **poszczególne składniki** za pomocą Instalatora programu Visual Studio, wybierz co, a następnie postępuj zgodnie z monitami.
 
   ![Visual Studio 2017 — instalowanie poszczególne składniki](media/vs2017-components.PNG "poszczególne składniki Zainstaluj program Visual Studio")
 
 ## <a name="step-6---install-language-packs-optional"></a>Krok 6 — instalowanie pakietów językowych (opcjonalnie)
 
-Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacyjnego, gdy jest uruchamiany po raz pierwszy. Aby zainstalować program Visual Studio 2017 w języku wybrane, kliknij przycisk **pakiety językowe** opcji za pomocą Instalatora programu Visual Studio, a następnie postępuj zgodnie z monitami.
+Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacyjnego, gdy jest uruchamiany po raz pierwszy. Aby zainstalować program Visual Studio 2017 w języku wybrane, wybierz **pakiety językowe** opcji za pomocą Instalatora programu Visual Studio, a następnie postępuj zgodnie z monitami.
 
   ![Visual Studio 2017 — instalowanie pakietów językowych](media/vs2017-languages.PNG "pakiety językowe Zainstaluj program Visual Studio")
 
@@ -118,15 +118,34 @@ Aby uzyskać więcej informacji, zobacz [zmiana lokalizacji instalacji programu 
 
 ## <a name="step-8---start-developing"></a>Krok 8 — zacznij programować
 
-1. Po zakończeniu instalacji programu Visual Studio kliknij **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
+::: moniker range="vs-2017"
 
-2. Kliknij przycisk **pliku**, a następnie kliknij przycisk **nowy projekt**.
+1. Po zakończeniu instalacji programu Visual Studio wybierz **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
+
+2. Wybierz **pliku**, a następnie wybierz **nowy projekt**.
 
 3. Wybierz typ projektu.
 
-   Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C++**, a następnie wybierz typ projektu C++, który chcesz skompilować.
+   Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), wybierz **zainstalowane**, rozwiń węzeł **Visual C++**, a następnie wybierz typ projektu C++, który chcesz skompilować.
 
-   Do [kompilacji C# aplikacji](../get-started/csharp/tutorial-wpf.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz pozycję C# typ, który chcesz skompilować projektu.
+   Do [kompilacji C# aplikacji](../get-started/csharp/tutorial-wpf.md), wybierz **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz pozycję C# typ, który chcesz skompilować projektu.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Po zakończeniu instalacji programu Visual Studio wybierz **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+1. W polu wyszukiwania wprowadź typ aplikacji, którą chcesz utworzyć, aby wyświetlić listę szablonów. (Na przykład, wprowadź *WFP*.)
+
+  > [!TIP]
+  > Możesz filtrować wyniki wyszukiwania dla określonego języka programowania przy użyciu **języka** listy rozwijanej. Można również filtrować za pomocą **platformy** listy i **typ projektu** listy. 
+
+1. Visual Studio otwiera nowy projekt i wszystko jest gotowe do kodu.
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914477"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515236"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Używanie zestawów reguł do grupowania reguł analizy kodu
 
-Podczas konfigurowania analizy kodu w programie Visual Studio, możesz korzystać z listy wbudowanych *zestawów reguł*. Zestaw reguł ma zastosowanie do projektu i jest grupą kodu reguł analizy, które identyfikują docelowe problemy i określone warunki dla tego projektu. Na przykład można zastosować zestaw reguł, który jest przeznaczony do skanowania kodu w poszukiwaniu publicznie dostępne interfejsy API lub po prostu minimum zalecanych reguł. Można także zastosować zestaw reguł, który zawiera wszystkie reguły.
+Podczas konfigurowania analizy kodu w programie Visual Studio, możesz korzystać z listy wbudowanych *zestawów reguł*. Zestaw reguł jest grupowania reguł analizy kodu, które identyfikują docelowe problemy i określone warunki dla tego projektu. Na przykład można zastosować zestaw reguł, który jest przeznaczony do skanowania kodu w poszukiwaniu publicznie dostępnych interfejsów. Można także zastosować zestaw reguł, który zawiera wszystkie dostępne reguły.
 
 Można dostosować reguły ustawiona przez dodanie lub usunięcie reguł lub zmieniając reguły ważności do wyświetlania jako ostrzeżenia lub błędy w **lista błędów**. Dostosowane zestawy reguł mogą spełnić potrzeby konkretnego środowiska do tworzenia oprogramowania. Po dostosowaniu zestawu reguł z edytora zestawu reguł dostarcza wyszukiwania i filtrowania narzędzia pomocne w procesie.
 

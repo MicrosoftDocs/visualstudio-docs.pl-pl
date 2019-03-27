@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323847"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515379"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -102,7 +102,7 @@ Aby upewnić się, że masz dostęp do wszystkiego, czego potrzebujesz, korzysta
 | Informacje o repozytorium GitHub | api.github.com | Protokół HTTPS | 443 | Wymagane w celu uzyskania dodatkowych informacji na temat pakietów bower |
 | Linterów sieci Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Eksplorator szablonu<br>odnajdywanie <br><br>Cookiecutter <br>Eksplorator projektu<br> Tworzenie | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | Protokół HTTPS | 443<br> | Używane do odnajdywania szablonów online z nasz kanał zalecane i repozytoria GitHub <br><br>Umożliwia tworzenie projektu z szablonu narzędzia cookiecutter, który wymaga jednorazowe instalacji na żądanie pakietu języka Python cookiecutter na podstawie indeksu pakietów języka Python (PyPI) |
-| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>Python <br>Nowy projekt <br>szablony | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | Protokół HTTPS | 443 | Zapewnia możliwość wyszukiwania pakiety pip<br><br>Używane do automatycznego instalowania narzędzia pip, jeżeli brakuje <br><br> Użyty do utworzenia <br><br>Używane do rozpoznania następujących Python projektu szablonów w oknie dialogowym Nowy projekt z adresami URL szablonu narzędzia cookiecutter:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame przy użyciu PyKinect <br> -Projekt Pyvot |
+| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>New <br>Python <br> projekt <br>szablony | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | Protokół HTTPS | 443 | Zapewnia możliwość wyszukiwania pakiety pip<br><br>Używane do automatycznego instalowania narzędzia pip, jeżeli brakuje <br><br>Używane do rozpoznania szablony, adresy URL szablonu narzędzia cookiecutter projektów następujące nowe języka Python:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame przy użyciu PyKinect <br> -Projekt Pyvot |
 | Sieci web pakietu Office <br>Dodatek <br> Manifest <br>Weryfikacja <br>Usługa | verificationservice.osi.office.net | Protokół HTTPS | 443 | Służy do sprawdzania manifesty dla dodatki pakietu Office sieci web |
 | Program SharePoint i <br>Dodatki pakietu Office | sharepoint.com | Protokół HTTPS | 443 | Używany do publikowania i przetestować dodatków pakietu Office do usługi SharePoint Online i SharePoint |
 | Usługa Workflow Manager <br>Testowanie usługi<br> Host | | http | 12292 | Reguły zapory, która jest tworzona automatycznie do dodatków programu SharePoint przy użyciu przepływów pracy testowania |

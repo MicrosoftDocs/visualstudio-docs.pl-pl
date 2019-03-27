@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355620"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515210"
 ---
 # <a name="msbuild-properties"></a>właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.
@@ -59,7 +59,7 @@ Właściwości to pary nazwa-wartość, których można używać do konfigurowan
  Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Właściwości rejestru
- Systemu można odczytać wartości rejestru przy użyciu następującej składni, gdzie `Hive` jest gałęzią rejestru (na przykład **HKEY_LOCAL_MACHINE**), `Key` to nazwa klucza `SubKey` jest nazwą podklucza, a `Value`to wartość podklucza.
+ Systemu można odczytać wartości rejestru przy użyciu następującej składni, gdzie `Hive` jest gałęzią rejestru (na przykład **HKEY_LOCAL_MACHINE**), `MyKey` to nazwa klucza `MySubKey` jest nazwą podklucza, a `Value`to wartość podklucza.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)

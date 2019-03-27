@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324789"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515197"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
@@ -56,7 +56,7 @@ Jeśli masz istniejące foldery *. R* pliki, które mają być zarządzane w pro
 
 1. Utwórz nowy projekt w programie Visual Studio, tak jak w poprzedniej sekcji.
 1. Skopiuj pliki do folderu projektu.
-1. W Eksploratorze rozwiązań programu Visual Studio kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **zamykanie elementu**, a następnie przejdź do plików, które chcesz dodać. Te pliki są wyświetlane w drzewie Twojego projektu po wybraniu **OK**.
+1. W Eksploratorze rozwiązań programu Visual Studio kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **istniejący element**, a następnie przejdź do plików, które chcesz dodać. Te pliki są wyświetlane w drzewie Twojego projektu po wybraniu **OK**.
 1. Aby zorganizować kodu w podfolderach, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy Folder** po pierwsze, następnie skopiuj pliki do tego folderu i dodać tych istniejących elementów w kroku 3.
 
 ## <a name="project-properties"></a>Właściwości projektu
