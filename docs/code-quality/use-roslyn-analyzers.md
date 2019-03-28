@@ -1,6 +1,6 @@
 ---
 title: Ważność reguły analizator i pomijania
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873505"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515340"
 ---
 # <a name="use-roslyn-analyzers"></a>Używanie analizatorów Roslyn
 
@@ -46,12 +46,17 @@ Ikony obok każdego Diagnostyka w **Eksploratora rozwiązań** odnoszą się do 
 
 ## <a name="rule-sets"></a>Zestawy reguł
 
-A [zestaw reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) jest plikiem XML, który zapisuje stan ważność i pomijania poszczególnych diagnostyki. Zestawy reguł dotyczą pojedynczego projektu, a projekt może mieć wiele zestawów reguł. Aby wyświetlić aktywne reguły ustawiane za pomocą edytora, kliknij prawym przyciskiem myszy **analizatory** w węźle **Eksploratora rozwiązań** i wybierz **otwórz aktywny zestaw reguł**. Jeśli jest ustawiona po raz pierwszy uzyskujesz dostęp do reguły, w pliku o nazwie  *\<nazwa_projektu > .ruleset* zostanie dodany do projektu i pojawia się w **Eksploratora rozwiązań**.
+A [zestaw reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) jest plikiem XML, który zapisuje stan ważność i pomijania poszczególnych diagnostyki.
 
 > [!NOTE]
-> Zestawy reguł obejmują zarówno analizy kodu statycznego (binarnych), jak i zasady działania analizatora Roslyn.
+> Zestawy reguł mogą zawierać reguły z analizy kodu statycznego (plik binarny) i analizatorów Roslyn.
 
-Możesz zmienić aktywny zestaw reguł dla projektu na **analizy kodu** karcie we właściwościach projektu. Wybierz zestaw reguł **Uruchom ten zestaw reguł** listy rozwijanej. Można również otworzyć zestawu reguł z **analizy kodu** strony właściwości, wybierając **Otwórz**.
+Aby edytować aktywny zestaw reguł w z edytora zestawu reguł, kliknij prawym przyciskiem myszy **odwołania** > **analizatory** w węźle **Eksploratora rozwiązań** i wybierz **Otwórz aktywny zestaw reguł**. Jeśli po raz pierwszy, edycji zestawu reguł, Visual Studio tworzy kopię domyślną regułę pliku zestawu, nadaje mu  *\<nazwa_projektu > .ruleset*i dodaje go do projektu. Ten niestandardowy zestaw reguł, również stanie się aktywny zestaw reguł dla projektu.
+
+Aby zmienić aktywny zestaw reguł dla projektu, przejdź do **analizy kodu** karcie we właściwościach projektu. Wybierz regułę, ustaw na liście w obszarze **Uruchom ten zestaw reguł**. Aby otworzyć zestaw reguł, wybierz **Otwórz**.
+
+> [!NOTE]
+> Dla zestawów reguł projektach .NET core i .NET Standard nie obsługują polecenia menu **Eksploratora rozwiązań**, na przykład **otwórz aktywny zestaw reguł**. Aby określić inny niż domyślny zestaw reguł dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj **CodeAnalysisRuleSet** właściwość do pliku projektu](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Można skonfigurować reguły w ramach zestawu reguł w programie Visual Studio czy interfejs użytkownika edytora zestawu reguł.
 
 ## <a name="rule-severity"></a>Ważność reguły
 
@@ -79,7 +84,7 @@ Możesz zmienić ważność reguły z **Eksploratora rozwiązań**, lub w ramach
 
 ![Pliku zestawu reguł w oknie Eksploratora rozwiązań](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Aby ustawić ważność reguły za pomocą Eksploratora rozwiązań
+### <a name="set-rule-severity-from-solution-explorer"></a>Ustaw ważność reguły za pomocą Eksploratora rozwiązań
 
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **odwołania** > **analizatory** (**zależności**  >  **Analizatory** dla projektów .NET Core).
 
@@ -89,7 +94,7 @@ Możesz zmienić ważność reguły z **Eksploratora rozwiązań**, lub w ramach
 
    Ważność reguły są zapisywane w pliku zestawu reguł active.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Aby ustawić regułę pliku zestawu ważność reguły
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Ustaw ważność reguły w pliku zestawu reguł
 
 1. Otwórz [zestaw reguł](analyzer-rule-sets.md) pliku przez dwukrotne kliknięcie go w **Eksploratora rozwiązań**, wybierając opcję **otwórz aktywny zestaw reguł** w menu kliknij prawym przyciskiem myszy **analizatory** węzła, lub wybierając **Otwórz** na **analizy kodu** strony właściwości dla projektu.
 
