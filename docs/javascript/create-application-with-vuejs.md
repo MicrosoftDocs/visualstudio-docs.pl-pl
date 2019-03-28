@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 57404553c8fe0afd03e575d77541980a03fdb9ae
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227764"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568000"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -38,7 +38,7 @@ Następujące nowe funkcje obsługi opracowywania aplikacji Vue.js w programie V
 
     Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
-    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
 
 * Aby utworzyć projekt platformy ASP.NET Core, konieczne jest posiadanie programu ASP.NET i tworzenie aplikacji sieci web oraz zainstalowanych obciążeń programowanie dla wielu platform .NET Core.
 
@@ -63,9 +63,14 @@ W tym przykładzie należy użyć pustą aplikację ASP.NET Core (C#). Możesz z
 
 #### <a name="create-an-empty-project"></a>Utwórz pusty projekt
 
-1. Otwórz program Visual Studio i wybierz polecenie **pliku** > **New** > **projektu** z menu głównego.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
-1. W obszarze **Visual C#** > **Web**, wybierz **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **OK**.
+    ::: moniker range=">=vs-2019"
+    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, następnie wybierz **Tworzenie nowej aplikacji sieci Web platformy ASP.NET Core**. W oknie dialogowym wybierz **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#** , następnie wybierz **Web**. W środkowym okienku wybierz **aplikacji sieci Web programu ASP.NET Core**, następnie wybierz **OK**.
+    ::: moniker-end
 
     Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablonu projektu należy zainstalować **ASP.NET i tworzenie aplikacji internetowych** obciążenia i. **.NET Core** pakietu roboczego programowanie na pierwszym. Aby zainstalować workload(s), kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz wymagane obciążenia.
 

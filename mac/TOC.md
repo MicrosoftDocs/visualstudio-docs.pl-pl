@@ -1,7 +1,7 @@
 # [Visual Studio dla komputerów Mac](index.yml)
-# [Samouczek środowiska IDE](/visualstudio/mac/ide-tour/)
+# [Samouczek środowiska IDE](ide-tour.md)
 
-# [Instalacja](/visualstudio/mac/installation/)
+# [Instalacja](installation.md)
 ## [Instalowanie i używanie programu za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalowanie wcześniejszej wersji](install-preview.md)
 ## [Aktualizacja](update.md)

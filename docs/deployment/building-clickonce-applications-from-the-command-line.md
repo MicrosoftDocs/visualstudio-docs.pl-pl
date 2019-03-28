@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636960"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567844"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza polecenia
 W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], można kompilować projekty z wiersza polecenia, nawet jeśli są one tworzone w zintegrowanym środowisku programistycznym (IDE). W rzeczywistości, można ponownie utworzyć projekt, który został utworzony za pomocą [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na innym komputerze, który ma tylko [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zainstalowane. Dzięki temu można odtworzyć za pomocą zautomatyzowanego procesu kompilacji, na przykład w centralnej kompilacji laboratorium lub za pomocą zaawansowane techniki poza zakres tematyczny skompilowanie projektu, sama obsługi skryptów.
@@ -41,21 +41,21 @@ W [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Aby utworzyć i opublikować projekt technologii ClickOnce
 
-1. Kliknij przycisk **nowy projekt** z **pliku** menu. **Nowy projekt** pojawi się okno dialogowe.
+1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
-2. Wybierz **aplikacji Windows** i nadaj mu nazwę `CmdLineDemo`.
+    Wybierz **aplikację pulpitu Windows** projektu szablonu, a następnie nadaj projektowi nazwę `CmdLineDemo`.
 
-3. Z **kompilacji** menu, kliknij przycisk **Publikuj** polecenia.
+1. Z **kompilacji** menu, kliknij przycisk **Publikuj** polecenia.
 
     Ten krok zapewnia, czy projekt jest prawidłowo skonfigurowane i wygenerować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji.
 
     Pojawi się Kreator publikacji.
 
-4. W Kreatorze publikowania kliknij **Zakończ**.
+1. W Kreatorze publikowania kliknij **Zakończ**.
 
     Program Visual Studio zostanie utworzona i wyświetlona domyślna strona internetowa o nazwie *Publish.htm*.
 
-5. Zapisz projekt, a następnie zanotuj lokalizację folderu, w którym są przechowywane.
+1. Zapisz projekt, a następnie zanotuj lokalizację folderu, w którym są przechowywane.
 
    Powyższe kroki tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projektu, który został opublikowany po raz pierwszy. Teraz można odtworzyć kompilacji poza IDE.
 

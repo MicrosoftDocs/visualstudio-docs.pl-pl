@@ -7,14 +7,19 @@ ms.date: 11/03/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: b9afb8f651394e915d907a754b92dfe8dfd79d73
+ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567948"
+ms.locfileid: "58573205"
 ---
 # <a name="install-a-preview-release"></a>Instalowanie wersji zapoznawczej
+
+> [!NOTE]
+> Visual Studio 2019 r dla komputerów Mac (wersja zapoznawcza) jest [teraz dostępne do zainstalowania](/visualstudio/mac/installation/?view=vsmac-2019) i testowania.
+
+## <a name="install-an-update-for-visual-studio-for-mac"></a>Instalowanie aktualizacji dla programu Visual Studio dla komputerów Mac
 
 Przed oficjalnym wydaniu nowej wersji programu Visual Studio dla komputerów Mac, jest dostępne w wersji zapoznawczej. Wersja zapoznawcza daje szansę wypróbować nowe funkcje i uzyskać najnowsze poprawki błędów, aby w pełni są włączone do produktu.
 

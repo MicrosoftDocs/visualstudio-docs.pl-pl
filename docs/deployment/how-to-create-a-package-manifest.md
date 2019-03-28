@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf0d92169974970c041214e53f8a8feb5f07a24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598040"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567805"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Instrukcje: Tworzenie manifestu pakietu
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.
 
- Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
+ Aby uzyskać więcej informacji na temat manifestów produktu, zobacz [jak: Tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
 
 ## <a name="create-the-package-manifest"></a>Tworzenie manifestu pakietu
 
