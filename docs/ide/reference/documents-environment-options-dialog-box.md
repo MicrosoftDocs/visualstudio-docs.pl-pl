@@ -1,6 +1,6 @@
 ---
 title: Dokumenty, środowisko, opcje — Okno dialogowe
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912823"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647261"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Dokumenty, środowisko, opcje — Okno dialogowe
+# <a name="options-dialog-box-environment--documents"></a>Okno dialogowe Opcje: Środowisko \> dokumentów
 
-Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzanie zmianami zewnętrzne dokumenty i pliki. To okno dialogowe można skorzystać, klikając **opcje** na **narzędzia** menu, a następnie wybierając **dokumenty** w **środowiska** węzła. Jeśli **dokumenty** nie ma na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
-
-**Użyj ponownie bieżące okno dokumentu, jeśli zapisane**
-
-Po wybraniu powoduje zamknięcie bieżącego dokumentu, jeśli zostały zapisane i zostanie otwarty nowy dokument, w tym samym oknie. Jeśli nie został zapisany bieżącego dokumentu, pozostaje otwarty, a nowy dokument jest otwarty w osobnym oknie. Gdy ta opcja jest zaznaczona, nowe dokumenty zawsze Otwórz w oddzielnych okien.
-
-Jeśli wykonania wielu dokumentów wycinania i wklejania rzadko i chcesz zminimalizować liczbę otwartych dokumentów i systemu windows w obszarze roboczym, użyj tej opcji.
+Ta strona **opcje** okno dialogowe, aby kontrolować wyświetlanie dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzanie zmianami zewnętrzne dokumenty i pliki. To okno dialogowe można skorzystać, klikając **opcje** na **narzędzia** menu, a następnie wybierając **środowiska** > **dokumenty**.
 
 **Wykryj, kiedy plik jest zmieniany poza środowiskiem**
 
 Gdy ta opcja jest zaznaczona, komunikat natychmiast powiadamia o zmianach w otwartego pliku, które zostały wprowadzone przez Edytor poza IDE. Komunikat informuje, jak ponownie załadować plik z magazynu.
 
-**Automatyczne ładowanie zmian, jeśli zapisane**
+**Załaduj ponownie zmodyfikowane pliki, chyba że istnieją niezapisane zmiany**
 
 Jeśli masz **Wykryj, kiedy plik jest zmieniany poza środowiskiem** zaznaczone, a domyślnie generowany jest plikiem otwartym w zmiany w środowisku IDE poza IDE komunikat ostrzegawczy. Jeśli ta opcja jest włączona, zostanie wyświetlone nie ostrzeżenie i dokument zostanie ponownie załadowana w środowisku IDE w celu zastosowania zmian zewnętrznych.
 
@@ -79,9 +73,9 @@ Wybierz tę opcję, aby wyświetlić **różne pliki** w węźle **Eksploratora 
 > [!NOTE]
 > Wybierz tę opcję, aby umożliwić **Pokaż w przeglądarce** polecenie **pliku** menu dla dokumentów sieci web, które nie są uwzględnione w aplikacji sieci web usługi active.
 
-**\<** *n* **> Elementy zapisywane w projekcie plików pozostałych**
+**Elementy zapisywane w projekcie plików pozostałych**
 
-Określa liczbę plików, aby trwale w **MiscellaneousFiles** folderu **Eksploratora rozwiązań**. Te pliki są wyświetlane, nawet jeśli nie są już otwarty w edytorze. Można określić liczbę całkowitą z zakresu od 0 do 256. Wartość domyślna to 0.
+Określa liczbę plików, aby trwale w **różne pliki** folderu **Eksploratora rozwiązań**. Te pliki są wyświetlane, nawet jeśli nie są już otwarty w edytorze. Można określić liczbę całkowitą z zakresu od 0 do 256. Wartość domyślna to 0.
 
 Na przykład, jeśli dla tej opcji do 5, otwartych 10 różne pliki, gdy zamkniesz wszystkie 10 plików 5 pierwszych będzie nadal widoczny we **różne pliki** folderu.
 

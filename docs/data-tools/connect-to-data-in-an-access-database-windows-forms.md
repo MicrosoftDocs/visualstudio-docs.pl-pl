@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227647"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647352"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Łączenie z danymi w bazie danych programu Access (formularze Windows)
 
@@ -95,7 +95,7 @@ Utwórz zestaw danych, uruchamiając **Kreatora konfiguracji źródła danych**.
 
 8. W **nazwa pliku bazy danych**, określ ścieżkę i nazwę *.mdb* pliku chcesz nawiązać połączenie, a następnie wybierz **OK**.
 
-   ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Dodaj plik bazy danych programu Access połączenia](../data-tools/media/add-connection-access-db.png)
 
 9. Wybierz **dalej** na **wybierz połączenie danych** strony.
 

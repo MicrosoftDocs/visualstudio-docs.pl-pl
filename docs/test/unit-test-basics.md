@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d137eea1107f4e3ce37ab013ed6770b8d93d11
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568013"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647417"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 
@@ -88,7 +88,7 @@ Często jest szybsze generowanie projektu testu jednostkowego i wycinków testó
 
 2. Kliknij przycisk **OK** zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości używane do tworzenia i nazwij projekt testów jednostkowych i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.
 
-    ![Po prawej stronie&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png)
+    ![Testy jednostkowe, okno dialogowe Tworzenie w programie Visual Studio](../test/media/create-unit-tests.png)
 
 3. Wycinki kodu testu jednostki są tworzone w nowy projekt testu jednostki dla wszystkich metod w klasie.
 

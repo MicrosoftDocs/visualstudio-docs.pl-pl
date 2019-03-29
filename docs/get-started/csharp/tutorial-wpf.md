@@ -2,7 +2,8 @@
 title: 'Samouczek: Aplikacja Hello World z Windows Presentation Foundation (WPF) wC#'
 description: Utwórz prostą aplikację Windows Desktop .NET w C# z programem Visual Studio przy użyciu struktury interfejsu użytkownika Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 03/28/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325191"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647521"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciu języka C\#
 
@@ -47,7 +48,7 @@ Po uruchomieniu programu Visual Studio, zostaną wyświetlone okna narzędzi, me
 
 ::: moniker range=">=vs-2019"
 
-Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczęcia. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczęcia. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji przy użyciu pola wyszukiwania, na pasku menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 
 ::: moniker-end
 
@@ -55,41 +56,54 @@ Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczę
 
 Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projekt i rozwiązanie. W tym przykładzie utworzysz projekt Windows Presentation Foundation (WPF).
 
+::: moniker range="vs-2017"
+
 1. Utwórz nowy projekt. Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-     ::: moniker range="vs-2017"
      ![Na pasku menu wybierz plik, nowy projekt](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     [Na pasku menu wybierz plik, nowy projekt](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
-2. W **nowy projekt** okno dialogowe, wybierz opcję **zainstalowane** > **Visual C#**   >  **Windows Desktop**kategorii, a następnie wybierz **aplikacja WPF (.NET Framework)** szablonu. Nadaj projektowi nazwę **HelloWPFApp**i wybierz **OK**.
+1. W **nowy projekt** okno dialogowe, wybierz opcję **zainstalowane** > **Visual C#**   >  **Windows Desktop**kategorii, a następnie wybierz **aplikacja WPF (.NET Framework)** szablonu. Nadaj projektowi nazwę **HelloWPFApp**i wybierz **OK**.
 
      ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/exploreide-newprojectcsharp.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-2. Na **Utwórz nowy projekt** ekran, wyszukaj "WPF", wybierz **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
-
-   ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
-
-3. Na następnym ekranie, nazwij projekt, **HelloWPFApp**i wybierz polecenie **Utwórz**.
-::: moniker-end
 
 Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
-::: moniker range="vs-2017"
 ![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/vs-2019/exploreide-hellowpfappfiles.png)
-::: moniker-end
 
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat XAML (eXtensible Application Markup Language), zobacz [Przegląd XAML dla WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) strony.
 
 Po utworzeniu projektu, można go dostosować. Za pomocą **właściwości** okna (znalezione na **widoku** menu), można wyświetlić i zmienić opcje elementów projektu, formantów i innych elementów w aplikacji.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. W oknie rozpoczęcia wybierz **Tworzenie nowego projektu**. 
+
+   ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png)
+
+
+2. Na **Utwórz nowy projekt** ekran, wyszukaj "WPF", wybierz **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+
+   ![Szablon aplikacji WPF w oknie dialogowym z "Tworzenie nowego projektu"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+
+3. Na następnym ekranie, nazwij projekt, **HelloWPFApp**i wybierz polecenie **Utwórz**.
+
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png)
+ 
+Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
+
+![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
+> [!NOTE]
+> Aby uzyskać więcej informacji na temat XAML (eXtensible Application Markup Language), zobacz [Przegląd XAML dla WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) strony.
+
+Po utworzeniu projektu, można go dostosować. Aby to zrobić, wybierz **okno właściwości** z **widoku** menu. Następnie możesz wyświetlić i zmienić opcje elementów projektu, formantów i innych elementów w aplikacji.
+
+::: moniker-end
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Aby zmienić nazwę MainWindow.xaml
 

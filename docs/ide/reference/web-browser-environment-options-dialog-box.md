@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700010"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647287"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
+# <a name="options-dialog-box-environment--web-browser"></a>Okno dialogowe Opcje: Środowisko \> przeglądarki sieci Web
 
 Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explorer. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **środowiska** folder, a następnie wybierz **przeglądarki sieci Web**.
 
@@ -50,11 +50,11 @@ Umożliwia wyznaczenie stronę wyszukiwania wewnętrznej przeglądarki sieci Web
 
 Ustawia Edytor używana w celu otwarcia strony sieci Web, w przypadku wybrania **Wyświetl źródło** na stronie z wewnętrznej przeglądarki sieci Web.
 
--   **Edytor źródła** wybierz, aby wyświetlić źródła w [edytora](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Edytor źródła** wybierz, aby wyświetlić źródła w [edytora](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Edytor HTML** wybierz, aby wyświetlić źródła w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować strony sieci Web na jeden z dwóch widoków: Widok projektu lub standardowy widok źródła oparte na tekście.
+- **Edytor HTML** wybierz, aby wyświetlić źródła w [projektancie HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować strony sieci Web na jeden z dwóch widoków: Widok projektu lub standardowy widok źródła oparte na tekście.
 
--   **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę do dowolnego edytora, który wybierzesz, na przykład Notepad.exe.
+- **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę do dowolnego edytora, który wybierzesz, na przykład Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opcje programu Internet Explorer
 

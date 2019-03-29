@@ -2,7 +2,7 @@
 title: Za pomocą programu Visual Studio na maszynie wirtualnej platformy Azure
 titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure
-ms.date: 03/25/2019
+ms.date: 03/28/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: bb320eebf18274c791f028e4c2bc59eddc255ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476023"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647300"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
@@ -36,8 +36,8 @@ Obrazy do najnowszej wersji głównych, Visual Studio 2017 i Visual Studio 2015 
 
 | Wersja                                              | Wersje                     |     Wersja produktu      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Wersja zapoznawcza (RC3)                      |           Enterprise         |    Wersja 16.0.0 RC3    |
-| Visual Studio 2017: Najnowsze (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.9      |
+|       Visual Studio 2019: Wersja zapoznawcza (RC4)                      |           Enterprise         |    Wersja 16.0.0 RC4    |
+| Visual Studio 2017: Najnowsze (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.22     |
 |   Visual Studio 2015: Najnowsze (Aktualizacja 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Brak             | (Wygasłe obsługi)  |

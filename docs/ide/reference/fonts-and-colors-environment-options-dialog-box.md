@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070259"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647469"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-**Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia** > **opcje**, a następnie wybierając **środowiska** > **czcionek i Kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
+**Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia** > **opcje**, a następnie wybierając **środowiska** > **czcionek i Kolory**.
 
 Kolor schemat zmiany wprowadzone podczas sesji, w której należy. Możesz ocenić zmiany kolorów, otwierając innego wystąpienia programu Visual Studio i tworzenie warunków, w których oczekujesz, że zmiany do zastosowania.
 

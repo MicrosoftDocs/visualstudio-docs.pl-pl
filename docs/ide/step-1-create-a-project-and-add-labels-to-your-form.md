@@ -2,18 +2,20 @@
 title: Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917756"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647404"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i dodawanie etykiet do formularza
 
@@ -24,23 +26,39 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Aby utworzyć projekt i ustawić właściwości dla formularza
 
+::: moniker range="vs-2017"
+
 1.  Na pasku menu wybierz **pliku** > **New** > **projektu**.
 
-2.  W **zainstalowane szablony** , wybierz opcję **C#** lub **języka Visual Basic**.
+1.  W **zainstalowane szablony** , wybierz opcję **C#** lub **języka Visual Basic**.
 
-3.  Z listy szablonów wybierz **aplikacja interfejsu Windows Forms** szablonu, nadaj jej nazwę **Math Quiz**, a następnie wybierz **OK** przycisku.
+1.  Z listy szablonów wybierz **aplikacja interfejsu Windows Forms** szablonu, nadaj jej nazwę **MathQuiz**, a następnie wybierz **OK** przycisku.
 
      Formularz, który nosi nazwę *Form1.cs* lub *Form1.vb* pojawia się w zależności od języka programowania, który został wybrany.
 
-4.  Wybierz formularz, a następnie zmień jego **tekstu** właściwości **Math Quiz**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+1. Wybierz pozycję w polu wyszukiwania wpisz "WPF" **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+
+   (Jeśli nie widzisz **aplikacja WPF (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.)
+
+1. Nazwij projekt, **MathQuiz**i wybierz polecenie **Create**
+
+::: moniker-end
+
+1.  Wybierz formularz, a następnie zmień jego **tekstu** właściwości **Math Quiz**.
 
      **Właściwości** okno zawiera właściwości dla formularza.
 
-5.  Zmień rozmiar formularza na 500 pikseli szerokości i 400 pikseli wysokości.
+1.  Zmień rozmiar formularza na 500 pikseli szerokości i 400 pikseli wysokości.
 
      Można zmienić rozmiar formularza, przeciągając jego krawędzie, aż pojawi się prawidłowy rozmiar, w lewym dolnym rogu zintegrowanego środowiska programistycznego (IDE). Alternatywnie, można zmienić wartości **rozmiar** właściwości.
 
-6.  Zmień wartość właściwości **FormBorderStyle** właściwości **Fixed3D**i ustaw **MaximizeBox** właściwości **False**.
+1.  Zmień wartość właściwości **FormBorderStyle** właściwości **Fixed3D**i ustaw **MaximizeBox** właściwości **False**.
 
      Te wartości uniemożliwiają uczestnikom quizu zmianę rozmiaru formularza.
 

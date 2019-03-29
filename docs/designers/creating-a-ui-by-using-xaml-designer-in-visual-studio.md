@@ -1,6 +1,6 @@
 ---
 title: Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955196"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647508"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
@@ -104,56 +104,9 @@ Pasek podziału widok wyświetlany u góry widoku XAML, gdy Edytor XAML znajduje
 
 Powiększenie znaczników umożliwia rozmiar **XAML** widoku. Możesz powiększyć z 20% do 400%.
 
-## <a name="device-window"></a>Okno urządzenia
+## <a name="objects-and-timeline-window"></a>Obiekty i oś czasu okna
 
-> [!NOTE]
-> Jeśli wersja platformy docelowej (`TargetPlatformVersion`) aplikacji platformy uniwersalnej systemu Windows jest 10.0.16299.0 lub nowszej, **urządzenia** okno nie jest dostępne.
-
-**Urządzenia** okna w programie XAML Designer umożliwia symulowanie w czasie projektowania, różnych widoków, ekranów i wyświetlić opcje projektu. **Urządzenia** oknie jest dostępna w **projektowania** menu podczas pracy w Projektancie XAML. Poniżej przedstawiono wygląda następująco:
-
-![Okno urządzenia](../designers/media/xaml_editor_device_panel.png)
-
-Oto opcje dostępne w oknie urządzenia:
-
-**Wyświetlanie**
-
-Określa rozmiarów ekranów i rozwiązań dla aplikacji.
-
-**Orientacja**
-
-Określa różne orientacje dla aplikacji: **Orientacja pozioma** lub **pionowa**.
-
-**Edge**
-
-Określa wyrównanie krawędzi różnych aplikacji: **Zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
-
-**Duży kontrast**
-
-Wyświetl podgląd aplikacji, w oparciu o wybrane ustawienie kontrastu. To ustawienie, gdy wartość do wartości innej niż **domyślne**, zastępuje `RequestedTheme` właściwością *App.xaml*.
-
-**Zastąp skalowania**
-
-Włącza lub wyłącza emulacji skalowania w obrębie na powierzchnię projektową dokumentu. Dzięki temu można zwiększyć procent skalowania przez jeden składnik. Zaznacz pole wyboru, aby włączyć emulacji. Na przykład jeśli Twoje procent skalowania wynosi 100%, dokumentu w powierzchni projektowej skalowane wraz ze 140%. Ta opcja jest wyłączona, jeśli bieżąca wartość skalowania jest 180.
-
-**Minimalna szerokość**
-
-Określa ustawienie minimalnej szerokości. Minimalna szerokość można zmienić w programie *App.xaml*.
-
-**Motyw**
-
-Określa układu aplikacji. Na przykład może przełączyć między **ciemny** i **światła** motywu.
-
-**Pokaż w przeglądarce chrome**
-
-Włącza lub wyłącza ramki symulowane tablet wokół aplikacji w widoku Projekt. Zaznacz pole wyboru, aby wyświetlić ramki.
-
-**Przytnij do ekranu**
-
-Określa tryb wyświetlania. Zaznacz pole wyboru, kiedy należy przyciąć rozmiar dokumentu do rozmiaru ekranu.
-
-## <a name="document-outline-window"></a>Okno konspektu dokumentu
-
-Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zadania:
+Obiekty i oś czasu okna w Projektancie XAML pomaga wykonywać następujące zadania:
 
 - Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.
 
@@ -163,15 +116,15 @@ Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zad
 
 - Dla wybranych elementów, należy użyć menu kontekstowego (menu kontekstowe). Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
 
-Aby wyświetlić **konspekt dokumentu** okna, na pasku menu wybierz **widoku** > **Windows inne** > **konspekt dokumentu**.
+Aby wyświetlić **obiekty i oś czasu** okna, na pasku menu wybierz **widoku** > **obiekty i oś czasu**.
 
-![Okno konspektu dokumentu](../designers/media/xaml_editor_doc_outline.png)
+![Obiekty i oś czasu okna](../designers/media/objects-and-timeline-window.png)
 
-Są to opcje dostępne w **konspekt dokumentu** okna:
+Są to opcje dostępne w **obiekty i oś czasu** okna:
 
 **Konspekt dokumentu**
 
-Widok główny w **konspekt dokumentu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
+Widok główny w **obiekty i oś czasu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
 
 **Pokaż/Ukryj**
 
@@ -183,15 +136,19 @@ Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elemen
 
 **Zwróć zakres do pageRoot**
 
-Opcja w górnej części **konspekt dokumentu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
+Opcja w górnej części **obiekty i oś czasu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
 
 ## <a name="properties-window"></a>Okno właściwości
 
 **Właściwości** okno służy do ustawiania wartości właściwości kontrolek. Poniżej przedstawiono wygląda następująco:
 
-![Okno właściwości](../designers/media/xaml_editor_prop_window.png)
+![Okno właściwości](../designers/media/xaml-designer-properties-window.png)
 
-Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi. Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w **wyszukującą** pole. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [wprowadzenie do kontrolek i wzorce](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi.
+
+Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w polu wyszukiwania. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół.
+
+Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [wprowadzenie do kontrolek i wzorce](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 Po prawej stronie każdej właściwości jest wartość *znacznik właściwości* wyświetlany jako symbol pola. Wygląd znacznika właściwość wskazuje, czy powiązanie danych lub zasób stosowany do właściwości. Na przykład symbol białe pola wskazuje wartość domyślną, symbol czarne pole zwykle wskazuje, że zastosowano zasobu lokalnego i pole pomarańczowy zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznik właściwości, przejdź do definicji stylu, otworzyć Konstruktor powiązań danych lub otworzyć selektor zasobów.
 

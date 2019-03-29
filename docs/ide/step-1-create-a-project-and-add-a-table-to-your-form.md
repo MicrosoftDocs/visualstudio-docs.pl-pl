@@ -2,18 +2,20 @@
 title: Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940662"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647495"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
 
@@ -21,7 +23,23 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Aby utworzyć projekt i dodać tabelę do formularza
 
+::: moniker range="vs-2017"
+
 1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
+
+1. Wybierz pozycję w polu wyszukiwania wpisz "WPF" **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
+
+   (Jeśli nie widzisz **aplikacja WPF (.NET Framework)** szablon, użyj Instalatora programu Visual Studio, aby zainstalować **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.)
+
+1. Nazwij projekt, **nazwę MatchingGame**i wybierz polecenie **Create**
+
+::: moniker-end
 
 2. Jeśli nie używasz programu Visual Studio Express, musisz najpierw wybrać język programowania. Z **zainstalowane szablony** , wybierz opcję **Visual C#** lub **języka Visual Basic**.
 

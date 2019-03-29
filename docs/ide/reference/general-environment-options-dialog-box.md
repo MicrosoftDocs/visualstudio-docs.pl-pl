@@ -1,6 +1,6 @@
 ---
 title: Ogólne, środowisko, opcje — Okno dialogowe
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710841"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647274"
 ---
-# <a name="general-environment-options-dialog-box"></a>Ogólne, środowisko, opcje — Okno dialogowe
+# <a name="options-dialog-box-environment--general"></a>Okno dialogowe Opcje: Środowisko \> ogólne
 
 Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarzenia rozszerzeń plików, między innymi do zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp **opcje** okno dialogowe, otwierając **narzędzia** menu, wybierając **opcje**, otwierając **środowiska** folder i następnie Wybieranie **ogólne** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe.
 
@@ -39,13 +39,21 @@ Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarz
 
 **Motyw kolorów**
 
-Wybierz **niebieski**, **światła** lub **ciemny** motyw kolorów IDE.
+Wybierz **niebieski**, **światła**, **ciemny**, lub **niebieski (dodatkowy kontrast)** motyw kolorów IDE.
 
-Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w polu listy motywu kolorów.
+Można zainstalować dodatkowe predefiniowane motywy i utworzyć motywy dostosowane pobierając i instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** pola listy.
 
-**Zastosuj wielkość liter w wyrazie tytuł na pasku menu**
+**Zastosuj wielkość liter, ustawianie stylów na pasku menu**
 
-Menu znajdują się w **wielkość liter w wyrazie tytuł** domyślnie. Usuń zaznaczenie tej opcji, aby ustawić je **wersalikami**.
+Menu Użyj wielkimi literami style domyślnie. Usuń zaznaczenie tej opcji spowoduje użycie wszystkie wielkie litery style zamiast tego.
+
+::: moniker range=">=vs-2019"
+
+**Optymalizowanie renderowania na ekranach o różnych pikseli gęstości (wymaga ponownego uruchomienia)**
+
+Ta opcja włącza lub wyłącza — monitorowanie punktów na cal (DPI) świadomości (lub *PMA*). Po włączeniu PMA interfejsu użytkownika programu Visual Studio pojawia się wyraźny w dowolnych współczynnik skali wyświetlania monitor i konfiguracją DPI, z uwzględnieniem na wiele monitorów. Aby włączyć PMA, musisz mieć systemu Windows 10 kwietnia 2018 r. Zaktualizuj lub nowszej i .NET Framework 4,8 lub nowszej. (Ta opcja pojawia się wyszarzonym Jeśli te dwa wymagania wstępne nie są spełnione.)
+
+::: moniker-end
 
 **Automatycznie Dostosuj wygląd bazując na wydajności klienta**
 
@@ -61,13 +69,13 @@ Używa sprzętowego przyspieszania grafiki, jeśli jest on dostępny, zamiast pr
 
 ## <a name="other"></a>Inne
 
-**Elementy(ów) w menu Okno**
+**Elementów do wyświetlenia w menu Okno**
 
-Dostosowuje liczbę przedziałów, które pojawiają się na liście Windows **okna** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10.
+Dostosowuje liczbę przedziałów, które pojawiają się na liście Windows **okna** menu. Wprowadź liczbę między 1 a 24. Wartość domyślna to 10.
 
 **Elementy wyświetlane na listach ostatnio używanych**
 
-Dostosowuje liczbę niedawno używanych projektów i plików, które pojawiają się na **pliku** menu. Wpisz liczbę z zakresu od 1 do 24. Domyślnie liczba wynosi 10. Jest to prosty sposób pobierania niedawno używanych projektów i plików.
+Dostosowuje liczbę niedawno używanych projektów i plików, które pojawiają się na **pliku** menu. Wprowadź liczbę między 1 a 24. Wartość domyślna to 10. Jest to prosty sposób pobierania niedawno używanych projektów i plików.
 
 **Pokaż pasek stanu**
 

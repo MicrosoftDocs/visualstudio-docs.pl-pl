@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223393"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647430"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
@@ -60,6 +60,11 @@ Aby dołączyć debuger programu Visual Studio i trafień punktów przerwania w 
     `chrome.exe --remote-debugging-port=9222`
 
     To polecenie uruchamia dla programu Chrome z włączonym debugowaniem.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Można również ustawić `--remote-debugging-port` flagę podczas uruchamiania przeglądarki, wybierając **przeglądanie za pomocą...**  > z **debugowania** narzędzi, wybierając **Dodaj**, a następnie ustawienie flagi **argumenty** pola. Użyj innej nazwy przyjazne przeglądarki, takich jak **dla programu Chrome przy użyciu debugowania**. Aby uzyskać więcej informacji, zobacz [wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Przełącz się do programu Visual Studio i ustaw punkt przerwania w kodzie źródłowym. (Ustaw punkt przerwania w wierszu kodu, który umożliwia punkty przerwania, takich jak `return` instrukcji lub `var` deklaracji).
 

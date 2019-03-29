@@ -14,36 +14,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954780"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647326"
 ---
-# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Kompilowanie i uruchamianie
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Okno dialogowe Opcje: Projekty i rozwiązania \> kompilowanie i uruchamianie
 
-W tym oknie można określić maksymalną liczbę Visual C++ lub C# projektów, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań, a niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, należy zaznaczyć **Narzędzia > Opcje** rozwiń **projekty i rozwiązania**i wybierz pozycję **kompilowanie i uruchamianie**.
+W tym oknie można określić maksymalną liczbę C++ lub C# projektów, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań, a niektóre ustawienia dziennika kompilacji. Aby uzyskać dostęp do tych opcji, należy zaznaczyć **narzędzia** > **opcje** rozwiń **projekty i rozwiązania**, a następnie wybierz **kompilowanie i uruchamianie**.
 
 **Maksymalna liczba równoległych projektów kompilacji**
 
-Określa maksymalną liczbę Visual C++ i C# projektów, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów automatycznie jest równa liczbie procesorów na komputerze. Wartość maksymalna to 32.
+Określa maksymalną liczbę C++ i C# projektów, które można tworzyć w tym samym czasie. Aby zoptymalizować proces kompilacji, maksymalną liczbę równolegle kompilowanych projektów automatycznie jest równa liczbie procesorów na komputerze. Wartość maksymalna to 32.
 
 **Tylko tworzyć projekty startowe i zależności przy uruchomieniu**
 
-Kompiluje tylko projekt startowy i jego zależności, korzystając z klucza, wybierz opcję F5 **Debuguj > Rozpocznij** polecenie menu lub odpowiednich poleceń w **kompilacji** menu. Jeśli jest to jasne, wszystkie projekty i zależności są kompilowane.
+Tworzy tylko projekt startowy i jego zależności, gdy używasz **F5** klucza **debugowania** > **Rozpocznij debugowanie** polecenie menu lub odpowiednich poleceń w **kompilacji** menu. Jeśli nie jest zaznaczone, wszystkie projekty i zależności są kompilowane.
 
 **Przy starcie, gdy projekty są nieaktualne**
 
-*Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] wyłącznie dla projektów.*
+*Dotyczy tylko projektów w języku C++.*
 
-Podczas uruchamiania projektu, naciskając klawisz F5 lub **Debuguj > Start** polecenie domyślne ustawienie **Monituj o kompilacji** wyświetla komunikat, jeżeli plik konfiguracyjny jest nieaktualna. Wybierz **kompilacji zawsze** do skompilowania projektu, za każdym razem, gdy jest uruchomiony. Wybierz **nigdy nie Kompiluj** pominąć wszystkie kompilacje automatyczne po uruchomieniu projektu.
+Podczas uruchamiania projektu za pomocą **F5** lub **debugowania** > **Rozpocznij debugowanie** polecenie domyślne ustawienie **Monituj o kompilacji** Wyświetla komunikat, jeżeli plik konfiguracyjny jest nieaktualna. Wybierz **kompilacji zawsze** do skompilowania projektu, za każdym razem, gdy jest uruchomiony. Wybierz **nigdy nie Kompiluj** pominąć wszystkie kompilacje automatyczne po uruchomieniu projektu.
 
 **Uruchom następujący skrypt, podczas kompilacji lub występują błędy związane z wdrażaniem**
 
-*Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] wyłącznie dla projektów.*
+*Dotyczy tylko projektów w języku C++.*
 
-Podczas uruchamiania projektu, naciskając klawisz F5 lub **Debuguj > Uruchom** polecenie domyślne ustawienie **Prompt uruchomić** wyświetla komunikat, jeżeli projekt powinien być uruchamiany nawet wtedy, gdy kompilacja nie powiodła się. Wybierz **uruchamiania starej wersji** można automatycznie uruchomić ostatnią dobrą kompilacją, co może spowodować niezgodności między uruchomiony kod i kod źródłowy. Wybierz **nie uruchamiaj** Aby pominąć komunikat.
+Podczas uruchamiania projektu za pomocą **F5** lub **debugowania** > **Rozpocznij debugowanie** polecenie domyślne ustawienie **Prompt uruchomić**wyświetla komunikat, jeżeli projekt powinien być uruchamiany nawet wtedy, gdy kompilacja nie powiodła się. Wybierz **uruchamiania starej wersji** można automatycznie uruchomić ostatnią dobrą kompilacją, co może spowodować niezgodności między uruchomiony kod i kod źródłowy. Wybierz **nie uruchamiaj** Aby pominąć komunikat.
 
 **W przypadku nowych rozwiązań Użyj obecnie wybranego projektu jako projekt startowy**
 
@@ -51,13 +51,13 @@ Gdy ta opcja jest ustawiona, nowych rozwiązań Użyj obecnie wybranego projektu
 
 **Program MSBuild poziom szczegółowości danych wyjściowych kompilacji dla projektu**
 
-Określa, ile informacji ma pojawia się w **dane wyjściowe** okna dla kompilacji.
+Określa, ile informacji z procesu kompilacji jest wyświetlany w **dane wyjściowe** okna.
 
 **Poziom szczegółowości pliku dziennika MSBuild projektu kompilacji**
 
-*Dotyczy [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] wyłącznie dla projektów.*
+*Dotyczy tylko projektów w języku C++.*
 
-Określa, ile informacji ma są zapisywane do pliku dziennika kompilacji, który znajduje się w folderze \\... \\ *ProjectName*\Debug\\*ProjectName*. log.
+Określa, ile informacji ma są zapisywane do pliku dziennika kompilacji, który znajduje się w folderze  *\\ \<nazwa_projektu > \Debug\\\<nazwa_projektu > .log*.
 
 ## <a name="see-also"></a>Zobacz także
 

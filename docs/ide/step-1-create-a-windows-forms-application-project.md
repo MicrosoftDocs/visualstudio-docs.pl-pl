@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ccb92fbe04d9a867cec308e1e4819fa96023ad4
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515223"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647365"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utwórz projekt Windows Forms aplikacji
 
@@ -67,9 +67,7 @@ Kiedy tworzysz przeglądarki obrazów, pierwszym krokiem jest utworzenie projekt
    >
    > Następnie należy wybrać **Modyfikuj** przycisku w Instalatorze programu Visual Studio. Może zostać wyświetlony monit, aby zapisać swoją pracę; Jeśli tak, należy to zrobić. Następnie wybierz pozycję **Kontynuuj** do zainstalowania z obciążeniem. 
 
-1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *HelloWorld* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
-
-   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWorld"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *PictureViewer* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
 
 ::: moniker-end
 

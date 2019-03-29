@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943119"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647248"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i dodawanie tabel w programie Visual Studio
 
@@ -26,11 +26,11 @@ Za pomocą programu Visual Studio do tworzenia i aktualizowania lokalnego pliku 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **przechowywanie i przetwarzanie danych** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalatora programu Visual Studio** i wybierz polecenie **obciążeń** kartę. W obszarze **sieć Web i chmura**, wybierz **przechowywanie i przetwarzanie danych**. Wybierz **Modyfikuj** przycisk, aby dodać obciążenia do programu Visual Studio.
+Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **przechowywanie i przetwarzanie danych** obciążenia zainstalowane w programie Visual Studio. Aby go zainstalować, otwórz **Instalatora programu Visual Studio** i wybierz polecenie **więcej** > **Modyfikuj** obok wersji programu Visual Studio, którą chcesz zmodyfikować (Jeśli masz więcej niż zainstalowana jedna wersja). Na **obciążeń** , w obszarze **sieć Web i chmura**, wybierz **przechowywanie i przetwarzanie danych**, a następnie kliknij przycisk **Modyfikuj** obciążenia, aby dodać Program Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Tworzenie projektu i pliku lokalnej bazy danych
 
-1. Utwórz projekt Windows Forms o nazwie **SampleDatabaseWalkthrough**.
+1. Utwórz nową **Windows Forms App** projektu i nadaj mu nazwę **SampleDatabaseWalkthrough**.
 
 2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
 
@@ -38,7 +38,7 @@ Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **p
 
      ![Okno dialogowe szablonów elementu](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Nazwij bazę danych **SampleDatabase**, a następnie wybierz pozycję **Dodaj** przycisku.
+4. Nazwij bazę danych **SampleDatabase**, a następnie kliknij przycisk **Dodaj**.
 
 ### <a name="add-a-data-source"></a>Dodawanie źródła danych
 
@@ -62,9 +62,9 @@ Do przeprowadzenia tego instruktażu, konieczne jest posiadanie opcjonalnego **p
 
 Możesz wyświetlić parametry połączenia dla *SampleDatabase.mdf* plików, otwierając okno właściwości połączenia danych:
 
-- W programie Visual Studio, wybierz **widoku** > **Eksplorator obiektów SQL Server** Jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów dla *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
+- Wybierz **widoku** > **Eksplorator obiektów SQL Server** otworzyć **Eksplorator obiektów SQL Server** okna. Rozwiń **(localdb) \MSSQLLocalDB** > **baz danych**, a następnie kliknij prawym przyciskiem myszy *SampleDatabase.mdf* i wybierz **właściwości**.
 
-- Alternatywnie, można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła. Otwórz menu skrótów dla *SampleDatabase.mdf*, a następnie wybierz pozycję **właściwości**.
+- Alternatywnie, można wybrać **widoku** > **Eksploratora serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów dla *SampleDatabase.mdf*, a następnie wybierając **właściwości**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tworzenie tabel i kluczy przy użyciu projektanta tabel
 
@@ -72,7 +72,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
 ### <a name="create-the-customers-table"></a>Tworzenie tabeli Customers
 
-1. W **Eksploratora serwera** lub **Eksplorator obiektów SQL Server**, rozwiń węzeł **połączeń danych** węzła, a następnie rozwiń węzeł **SampleDatabase.mdf**węzła.
+1. W **Eksploratora serwera**, rozwiń węzeł **połączeń danych** węzła, a następnie rozwiń węzeł **SampleDatabase.mdf** węzła.
 
 2. Otwórz menu skrótów dla **tabel**, a następnie wybierz pozycję **Dodaj nową tabelę**.
 
@@ -101,9 +101,9 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
 
     ![Projektant tabel](../data-tools/media/raddata-table-designer.png)
 
-7. W lewym górnym rogu **projektanta tabel**, wybierz opcję **aktualizacji** przycisku.
+7. W lewym górnym rogu **projektanta tabel**, wybierz opcję **aktualizacji**.
 
-8. W **Podgląd aktualizacji bazy danych** okno dialogowe, wybierz opcję **Aktualizuj bazę danych** przycisku.
+8. W **Podgląd aktualizacji bazy danych** okno dialogowe, wybierz opcję **Aktualizuj bazę danych**.
 
     Wprowadzone zmiany są zapisywane w lokalnym pliku bazy danych.
 

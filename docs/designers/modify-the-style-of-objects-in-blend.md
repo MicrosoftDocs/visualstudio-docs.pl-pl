@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955313"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647456"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 
@@ -78,13 +78,13 @@ W **tworzenie zasobu stylu** okno dialogowe można albo nazwę stylu lub szablon
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonu do formantu
 
-Kliknij prawym przyciskiem myszy obiekt w [obiekty i oś czasu](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel) panelu, wybierz polecenie **Edytuj szablon**, a następnie wybierz **Zastosuj zasób**.
+Kliknij prawym przyciskiem myszy obiekt w [obiekty i oś czasu](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) oknie Wybierz **Edytuj szablon**, a następnie wybierz **Zastosuj zasób**.
 
 ![Stosowanie zasobu menu](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki
 
-Wybierz kontrolkę a następnie w [właściwości](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) panelu, odszukaj **styl** lub **szablonu** właściwości. Wybierz **zaawansowane opcje**, a następnie kliknij przycisk **resetowania** w menu skrótów.
+Wybierz kontrolkę a następnie w [właściwości](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) oknie Znajdź **styl** lub **szablonu** właściwości. Wybierz **zaawansowane opcje**, a następnie kliknij przycisk **resetowania** w menu skrótów.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Stany wizualne: Zmienianie wyglądu kontrolki oparte na stanie
 

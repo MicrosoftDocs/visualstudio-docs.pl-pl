@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 7a32e25f8bf19a565ef86d130a7e61a0f3742580
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416172"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647378"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: Wprowadzenie do języka Visual Basic w programie Visual Studio
 
@@ -103,7 +103,7 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
 1. W **konfigurowania nowego projektu** oknie wpisz lub wprowadź *WhatIsYourName* w **Nazwa projektu** pole. Następnie wybierz **Utwórz**.
 
-   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "WhatIsYourName"](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "WhatIsYourName"](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio otwiera nowy projekt.
 

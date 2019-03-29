@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869334"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646702"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Szybki start: Personalizowanie programu Visual Studio IDE i edytorem
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizowanie programu Visual Studio IDE i edytorem
 
-W tym przewodniku Szybki Start 5 – 10 minut firma Microsoft będzie dostosować motyw kolorów programu Visual Studio, wybierając ciemnego motywu. Firma Microsoft będzie również dostosować kolory dla dwóch różnych typów tekstu w edytorze tekstów.
+W tym samouczku 5 – 10 minut firma Microsoft będzie dostosować motyw kolorów programu Visual Studio, wybierając ciemnego motywu. Firma Microsoft będzie również dostosować kolory dla dwóch różnych typów tekstu w edytorze tekstów.
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
@@ -28,9 +28,19 @@ Motyw domyślny dla interfejsu użytkownika programu Visual Studio jest nazywany
 
 1. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
 
-   Motyw kolorów dla całego programu Visual Studio środowiska programistycznego (IDE) jest zmieniana na **ciemny**.
+   Motyw kolorów dla całego programu Visual Studio środowiska programistycznego (IDE) zmieni się na **ciemny**.
 
-   ![W PORÓWNANIU z motywu ciemny](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Program Visual Studio 2017 z motywu ciemny](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 r motywu ciemny](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Można zainstalować dodatkowe predefiniowane motywy, instalując **Edytor motywów kolorystycznych programu Visual Studio** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po zainstalowaniu tego narzędzia, motywy kolorów dodatkowe są wyświetlane w **motyw kolorów** listy rozwijanej.

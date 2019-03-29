@@ -1,6 +1,6 @@
 ---
-title: 'Instrukcje: Wyświetl numery wierszy w edytorze'
-ms.date: 11/04/2016
+title: Wyświetl numery wierszy kodu
+ms.date: 03/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -13,31 +13,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6986394a63ea495971a8f375c3143b678f29898e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942924"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647157"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: Wyświetl numery wierszy w edytorze
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: Wyświetlanie numerów wierszy w edytorze
 
 Możesz wyświetlać lub ukrywać numerację wierszy w kodzie.
 
-## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie
+## <a name="display-line-numbers-in-code"></a>Wyświetlanie numerów wierszy w kodzie
 
-Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz, aby numery wierszy były drukowane, w **drukowanie** okno dialogowe, wybierz opcję **dołączyć numery wierszy** pole wyboru.
+1. Na pasku menu wybierz **narzędzia** > **opcje**. Rozwiń **edytora tekstów** węzeł, a następnie wybierz język jest używany lub **wszystkie języki** Aby włączyć numery wierszy we wszystkich językach. (Lub typu **numer wiersza** w wyszukiwaniu pole, a następnie wybierz **włączyć numery wierszy lub wyłączyć** z wyników.)
 
-### <a name="to-display-line-numbers-in-code"></a>Aby wyświetlić numery wierszy w kodzie
+2. Wybierz **numery wierszy** pola wyboru.
 
-1.  Na pasku menu wybierz **narzędzia**, **opcje**. Rozwiń **edytora tekstów** węzeł, a następnie wybierz węzeł używanego języka, którego używasz, lub **wszystkie języki** Aby włączyć numery wierszy we wszystkich językach. Alternatywnie możesz wpisać **numer wiersza** w **Szybkie uruchamianie** pole.
+   ![Możliwość wyświetlania numerów wierszy w edytorze programu VS](../../ide/reference/media/line-numbers-option.png)
 
-2.  Wybierz **numery wierszy** pola wyboru.
-
-    ![Opcje wyświetlania numerów wierszy w edytorze](../../ide/reference/media/vs_displaylinenumbers.png)
-
-> [!NOTE]
-> W zależności od języka lub ustawień, może być konieczne wybranie **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe, aby wyświetlić **wszystkie języki** węzła podrzędnego.
+> [!TIP]
+> Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz, aby numery wierszy były drukowane, w **drukowanie** okno dialogowe, wybierz opcję **dołączyć numery wierszy** pole wyboru.
 
 ## <a name="see-also"></a>Zobacz także
 
