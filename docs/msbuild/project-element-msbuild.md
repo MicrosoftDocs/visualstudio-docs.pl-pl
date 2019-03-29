@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635140"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567896"
 ---
 # <a name="project-element-msbuild"></a>Project — element (MSBuild)
 Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.
@@ -61,7 +61,7 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | `Sdk` | Atrybut opcjonalny. <br /><br /> Nazwa zestawu SDK i opcjonalnie wersja służące do tworzenia niejawne zaimportuj instrukcje, które są dodawane do pliku .proj. Jeśli wersja nie jest określona, program MSBuild będzie podejmować próby rozwiązania domyślnej wersji.  Na przykład `<Project Sdk="Microsoft.NET.Sdk" />` lub `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atrybut opcjonalny.<br /><br /> Można określić wartości dla $(MSBuildBinPath) i $(MSBuildToolsPath) korzysta z wersji programu MSBuild zestawu narzędzi. |
 | `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie były uznawane za będzie globalnym. Ten atrybut zapobiega zastępowanie wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych i wszystkie Importy kolejnych określonych właściwości wiersza polecenia. Wiele właściwości są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Zwykle globalne właściwości zastępują wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartość, wartość właściwości globalnej nie zastępuje wartości właściwości, które są ustawiane w pliku i wszystkie Importy kolejne. Aby uzyskać więcej informacji, zobacz [jak: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:**  Należy określić globalne właściwości w wierszu polecenia przy użyciu **— właściwość** (lub **-p**) przełącznika. Możesz również ustawić lub zmodyfikować globalnych właściwości dla projektów podrzędnych w kompilacji wielu projektów za pomocą `Properties` atrybut zadanie programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |
-| `Xmlns` | Atrybut opcjonalny.<br /><br /> Jeśli zostanie określony, `xmlns` atrybut musi mieć wartość `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| `xmlns` | Atrybut opcjonalny.<br /><br /> Jeśli zostanie określony, `xmlns` atrybut musi mieć wartość `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
