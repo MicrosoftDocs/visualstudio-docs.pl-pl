@@ -68,6 +68,7 @@
 #### [Wyszukiwanie subskrypcji](search-license.md)
 #### [Eksportowanie subskrypcji](exporting-subscriptions.md)
 #### [Nadmierne alokacje](handle-overclaimed-license.md)
+#### [Maksymalne użycie](maximum-usage.md)
 #### [Wygasłe subskrypcje](handle-expired-license.md)
 #### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ## Uzyskiwanie subskrypcji programu Visual Studio
