@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647508"
+ms.locfileid: "58658869"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 
@@ -104,9 +104,9 @@ Pasek podziału widok wyświetlany u góry widoku XAML, gdy Edytor XAML znajduje
 
 Powiększenie znaczników umożliwia rozmiar **XAML** widoku. Możesz powiększyć z 20% do 400%.
 
-## <a name="objects-and-timeline-window"></a>Obiekty i oś czasu okna
+## <a name="document-outline-window"></a>Okno konspektu dokumentu
 
-Obiekty i oś czasu okna w Projektancie XAML pomaga wykonywać następujące zadania:
+Okno konspektu dokumentu w Projektancie XAML jest podobne do **obiekty i oś czasu** okna w programie Blend for Visual Studio. **Konspekt dokumentu** umożliwia wykonywanie następujących zadań:
 
 - Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.
 
@@ -116,15 +116,15 @@ Obiekty i oś czasu okna w Projektancie XAML pomaga wykonywać następujące zad
 
 - Dla wybranych elementów, należy użyć menu kontekstowego (menu kontekstowe). Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
 
-Aby wyświetlić **obiekty i oś czasu** okna, na pasku menu wybierz **widoku** > **obiekty i oś czasu**.
+Aby wyświetlić **konspekt dokumentu** okna, na pasku menu wybierz **widoku** > **Windows inne** > **konspekt dokumentu**.
 
-![Obiekty i oś czasu okna](../designers/media/objects-and-timeline-window.png)
+![Okno konspektu dokumentu w programie Visual Studio](../designers/media/document-outline-window.png)
 
-Są to opcje dostępne w **obiekty i oś czasu** okna:
+Są to opcje dostępne w **konspekt dokumentu** okna:
 
 **Konspekt dokumentu**
 
-Widok główny w **obiekty i oś czasu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
+Widok główny w **konspekt dokumentu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
 
 **Pokaż/Ukryj**
 
@@ -136,7 +136,7 @@ Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elemen
 
 **Zwróć zakres do pageRoot**
 
-Opcja w górnej części **obiekty i oś czasu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
+Opcja w górnej części **konspekt dokumentu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
 
 ## <a name="properties-window"></a>Okno właściwości
 
