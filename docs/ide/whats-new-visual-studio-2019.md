@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f0420b1ea9d9ab789be9e61e7dec3c2fdba4fa
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 35bf42ea6c6cb3dfc14594ea5e6df83b9e97c1f2
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567909"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647339"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -121,7 +121,7 @@ Jeśli używasz monitory, które są skonfigurowane przy użyciu innego ekranu s
 
 Wraz z wydaniem programu Visual Studio 2019 podejmujemy pierwszy krok w kierunku co program Visual Studio — monitorowanie aplikacji obsługującej (PMA). Kładziemy podstawowe prace, która umożliwi programu Visual Studio zapewnić prawidłowe renderowanie niezależnie od używanej skale wyświetlania.
 
-   ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](media/per-monitor-aware-dpi-scaling.png)
+   ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](media/vs-2019/pma-dpi-scaling.png)
 
 Aby uzyskać więcej informacji, zobacz [lepsze środowisko wielu monitorów z programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) wpis w blogu.
 
