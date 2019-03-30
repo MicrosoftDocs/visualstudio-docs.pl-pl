@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941088"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647443"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Program Blend for Visual Studio — omówienie
 
@@ -30,11 +30,18 @@ Jeśli jesteś nowym użytkownikiem programu Blend for Visual Studio, Poświęć
 > [!NOTE]
 > Aby poznasz funkcje projektu udostępnionego, takich jak obszaru kompozycji, **konspekt dokumentu** oknie i **urządzenia** okna, zobacz [Tworzenie interfejsu użytkownika przy użyciu projektanta XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Samouczek panelu Narzędzia
+## <a name="tools-panel"></a>Panel narzędzi
 
-Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworzenia i modyfikowania obiektów w aplikacji. Możesz utworzyć obiekty, wybierając narzędzie i rysowanie w obszarze kompozycji przy użyciu myszy.
+Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworzenia i modyfikowania obiektów w aplikacji. **Narzędzia** panelu pojawia się po lewej stronie projektanta XAML, gdy masz *.xaml* plik jest otwarty.
 
-![Panel narzędzi](../designers/media/blend5toolspanel.png)
+Możesz utworzyć obiekty, wybierając narzędzie i rysowanie w obszarze kompozycji przy użyciu myszy.
+
+![Panel narzędzi w programie Blend for Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Niektóre z narzędzi dostępnych w **narzędzia** panelu mają odmiany (pokazanych jako od A do F na ilustracji). Aby uzyskać dostęp do tych zmian, kliknij prawym przyciskiem myszy lub kliknij i przytrzymaj narzędzie.
+>
+> ![Kształt narzędzie różnice w programie Blend for Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworz
 |![Narzędzia zasobów](../designers/media/b1_5.png)|**Narzędzia zasobów** dostępu **zasoby** panelu, i aby wyświetlić ostatnio używane zasobu z biblioteki.|![Objaśnienie E](../designers/media/b5_label_e.png)|**Kontrolek tekstu**|
 |||![Objaśnienie F](../designers/media/b5_label_f.png)|**Formanty standardowe**|
 
-**Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [narzędzi](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Zasoby okna
 
-## <a name="tour-of-the-assets-panel"></a>Samouczek panelu Zasoby
+**Zasoby** okno zawiera wszystkie dostępne kontrolki i jest podobna do **przybornika** w programie Visual Studio. Oprócz formantów, znajdziesz wszystko, czego możesz dodać do Twojego obszaru roboczego w **zasoby** okna, w tym stylów, multimediów, zachowań i efektów. Aby otworzyć **zasoby** oknie Wybierz **widoku** > **okna Zasoby** lub naciśnij **Ctrl** + **Alt**+**X**.
 
-Możesz znaleźć wszystkie formanty w **zasoby** panelu, podobnie jak **przybornika** w programie Visual Studio. Oprócz formantów, znajdziesz wszystko, czego możesz dodać do Twojego obszaru roboczego w **zasoby** panelu, w tym stylów, multimediów, zachowań i efektów.
-
-![Panel składników zasobów](../designers/media/blend5_assets_panel.png)
+![Zasoby okna w programie Blend for Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Możesz znaleźć wszystkie formanty w **zasoby** panelu, podobnie jak **przybor
 |![Style](../designers/media/b1_4.png)|**Style** Pokaż wszystkie style, które są zawarte w słowniku zasobów.|
 |![Opis](../designers/media/b1_5.png)|**Opis** Wyświetl opis wybranej kategorii lub podkategorii zasobów.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Przewodnik po przykładzie obiekty i oś czasu panelu
+## <a name="objects-and-timeline-window"></a>Obiekty i oś czasu okna
 
-Użyj tego panelu do porządkowania obiektów w Twojego obszaru roboczego i, jeśli chcesz, aby animować je.
+To okno służy do porządkowania obiektów w Twojego obszaru roboczego i, jeśli chcesz, aby animować je. Aby otworzyć **obiekty i oś czasu** oknie Wybierz **widoku** > **obiekty i oś czasu** lub naciśnij **Ctrl** + **W**, **U**.
 
-![Panel obiektów i osi czasu w trybie animacji](../designers/media/b5_object_timeline_animation.png)
+![Okno obiektów i osi czasu w trybie animacji](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Użyj tego panelu do porządkowania obiektów w Twojego obszaru roboczego i, je�
 |![Powiększenie osi czasu](../designers/media/b1_15.png)|**Powiększenie osi czasu** Ustaw rozdzielczość powiększania osi czasu. Powiększanie pozwala bardziej szczegółowo edytować animację, a pomniejszenie przedstawia bardziej ogólny obraz zdarzeń w dłuższym okresie. Jeśli po powiększeniu nie można ustawić ramki kluczowej na żądanej pozycji w czasie, należy sprawdzić, czy ustawiono odpowiednio dużą rozdzielczość przyciągania.|
 |![Objaśnienie 16](../designers/media/b5_label_16.png)|**Obszar kompozycji osi czasu** Wyświetl oś czasu i przesuwanie ramek kluczowych przez przeciąganie ich lub za pomocą menu skrótów.|
 
-## <a name="tour-of-the-properties-panel"></a>Samouczek Panelu właściwości
+## <a name="properties-window"></a>Okno właściwości
 
-Ten panel umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Można również ustawić je bezpośrednio w obszarze kompozycji. Jeśli to zrobisz, zmiany właściwości zostaną odzwierciedlone w **właściwości** panelu.
+To okno umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Można również ustawić je bezpośrednio w obszarze kompozycji. Jeśli to zrobisz, zmiany właściwości są odzwierciedlane w **właściwości** okna. Aby otworzyć **właściwości** oknie Wybierz **widoku** > **okno właściwości**, lub naciśnij **Ctrl** +  **W**, **P**.
 
-![Panel właściwości](../designers/media/blend5_properties_panel.png)
+![Okno właściwości w programie Blend for Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Kategorie** rozwijanie i zwijanie kategorie właściwości. Kliknij przycisk **rozwiń** ![rozwiń](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) i **Zwiń** ![Zwiń](../designers/media/b5_collapse_button.png) pokazać lub ukryć szczegóły kategorii.
 
@@ -113,8 +118,6 @@ Ten panel umożliwia wyświetlanie i modyfikowanie właściwości obiektu. Możn
 |![](../designers/media/b1_15.png)|**Wartość szesnastkowa** wyświetlić wartość szesnastkową kolor wyświetlany.|
 |![Objaśnienie 16](../designers/media/b5_label_16.png)|**Suwak gradientu** pojawia się tylko wtedy, gdy wybrano pędzla gradientu.|
 |![Pokaż zaawansowane właściwości](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Pokaż zaawansowane właściwości** kategorii właściwości, które są rzadko używane.|
-
-**Obejrzyj krótki film wideo:** ![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [panelu właściwości](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Zobacz także
 
