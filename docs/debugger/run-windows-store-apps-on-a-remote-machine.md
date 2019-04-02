@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708706"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789903"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debugowanie aplikacji platformy uniwersalnej systemu Windows na komputerach zdalnych z programu Visual Studio
 
@@ -55,9 +55,9 @@ Aby debugować aplikację platformy UWP na urządzeniu zdalnym z programu Visual
 
     ![Właściwości projektu dla zdalnego debugowania zarządzane](../debugger/media/vsrun_managed_projprop_remote.png "zarządzanego debugowania właściwości projektu")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurowanie projektu języka JavaScript lub C++ dla zdalnego debugowania
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Konfigurowanie projektu dla zdalnego debugowania w języku C++
 
-1.  Wybierz projekt C++ lub JavaScript w programie Visual Studio **Eksploratora rozwiązań** i wybierz **właściwości** ikonę, naciśnij klawisz **Alt**+**Enter** , lub kliknij prawym przyciskiem myszy i wybierz pozycję **właściwości**.
+1.  Wybierz projekt C++ w programie Visual Studio **Eksploratora rozwiązań** i wybierz **właściwości** ikonę, naciśnij klawisz **Alt**+**Enter**, lub kliknij prawym przyciskiem myszy i wybierz pozycję **właściwości**.
 
 1.  Wybierz **debugowanie** kartę.
 

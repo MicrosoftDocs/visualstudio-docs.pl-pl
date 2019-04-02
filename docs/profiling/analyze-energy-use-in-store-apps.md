@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872066"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790436"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 
@@ -64,6 +64,7 @@ Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmag
 
 Na przykład kod, zobacz Przykładowy zestaw SDK Windows [przykładowe LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
+::: moniker range="vs-2017"
 **Dodawanie znaczników do kodu w języku JavaScript**
 
 Aby dodać znaczniki użytkownika, dodaj następujący kod w punktach w kodzie, które chcesz oznaczyć:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* jest ciąg zawierający komunikat wyświetlany w etykietce narzędzia znacznika użytkownika.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Konfigurowanie środowiska do profilowania
  Aby uzyskać dobre szacunki, będziesz chciał profilować zużycie energii przez aplikację na niskim poziomie zasilania urządzeń, które jest zasilane z baterii. Ponieważ program Visual Studio nie działa na większości z tych urządzeń, należy podłączyć komputer Visual Studio do urządzenia przy użyciu narzędzia zdalne programu Visual Studio. Aby podłączyć urządzenie zdalne, należy skonfigurować zarówno projekt programu Visual Studio, jak i urządzenie zdalne. Zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) Aby uzyskać więcej informacji.
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Inne zasoby
 
-- **Stan połączenia i zarządzanie kosztami** sekcje dla [ C#/VB/C++ i XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) i [języków JavaScript i HTML](/previous-versions/windows/apps/hh452983(v=win.10)) opisywanie interfejsów API Windows, która zapewnia sieci informacje o łączności, które Twoja aplikacja może użyć, aby zminimalizować koszty ruchu sieciowego.
+- **Stan połączenia i zarządzanie kosztami** sekcje dla [ C#/VB/C++ i XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) opisują interfejsami API Windows, które zapewniają informacje o łączności sieciowej, używanego przez aplikację do zminimalizowania kosztów ruch sieciowy.
 
    Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows umożliwia symulowanie właściwości połączenia danych interfejsów API informacji sieciowych. Zobacz [uruchamianie aplikacji platformy UWP w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- **Synchronizacja funkcji JavaScript** i **użycie procesora CPU** narzędzia mogą pomóc w zmniejszeniu obciążenia Procesora, gdy jest to spowodowane przez nieefektywnie działające funkcje. Zobacz [analizowania procesora](../profiling/beginners-guide-to-performance-profiling.md).
+- **Użycie procesora CPU** narzędzia mogą pomóc w zmniejszeniu obciążenia Procesora, gdy jest to spowodowane przez nieefektywnie działające funkcje. Zobacz [analizowania procesora](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Zobacz także
 

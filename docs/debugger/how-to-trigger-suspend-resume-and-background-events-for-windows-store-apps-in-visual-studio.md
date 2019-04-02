@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708865"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790358"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
 Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) określa stan wykonania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywa aplikację w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, Windows powoduje wyłączenie tych zdarzeń aktywacji. W tym temacie opisano, jak wyzwolenie tych zdarzeń w debugerze.
@@ -72,7 +72,7 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
 
 2.  Otwórz stronę właściwości debugowania projektu startowego. W Eksploratorze rozwiązań wybierz projekt. Na **debugowania** menu, wybierz **właściwości**.
 
-     W przypadku projektów C++ i JavaScript, rozwiń **właściwości konfiguracji** , a następnie wybierz **debugowanie**.
+     Dla projektów języka C++, rozwiń węzeł **właściwości konfiguracji** , a następnie wybierz **debugowanie**.
 
 3.  Wykonaj jedną z następujących czynności:
 
@@ -80,7 +80,7 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
 
          ![C&#35;&#47;właściwości aplikacji Uruchamianie debugowania VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   Dla projektów języka Visual C++ i JavaScript, wybierz **nie** z **uruchamianie aplikacji** listy.
+    -   Dla projektów Visual C++, wybierz **nie** z **uruchamianie aplikacji** listy.
 
          ![C&#43;&#43;&#47;Uruchom VB właściwości debugowania aplikacji](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
