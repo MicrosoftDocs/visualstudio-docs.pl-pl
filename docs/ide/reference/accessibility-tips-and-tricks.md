@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680935"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789695"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
@@ -50,9 +50,9 @@ Visual Studio IDE ma paski narzędzi, jak wielu okien narzędziowych. Następuj�
 
 |Funkcja|Opis|Kombinacja klawiszy|
 |-------------|-----------------| - |
-|Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**ALT**, **CTRL** + **TAB**|
-|Paskach narzędzi okna|Przenieś fokus na paski narzędzi w oknie narzędzi. <br> <br> **UWAGA:** Działa to dla większości okien narzędzi, ale tylko wtedy, gdy fokus znajduje się w oknie narzędzi. Ponadto musisz wybrać klawisz SHIFT przed klawisza ALT. W niektórych oknach narzędzi, takich jak Team Explorer musi przytrzymaj klawisz SHIFT, przez chwilę przed wybraniem klawisza ALT.|**SHIFT** + **ALT**|
-|Paski narzędzi|Przejdź do pierwszego elementu w pasku dalej (w przypadku pasek narzędzi jest ustawiony fokus).|**CTRL** + **TAB**|
+|Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**ALT**, **Ctrl** + **kartę**|
+|Paskach narzędzi okna|Przenieś fokus na paski narzędzi w oknie narzędzi. <br> <br> **UWAGA:** Działa to dla większości okien narzędzi, ale tylko wtedy, gdy fokus znajduje się w oknie narzędzi. Ponadto musisz wybrać klawisz SHIFT przed klawisza ALT. W niektórych oknach narzędzi, takich jak Team Explorer musi przytrzymaj klawisz SHIFT, przez chwilę przed wybraniem klawisza ALT.|**SHIFT** + **Alt**|
+|Paski narzędzi|Przejdź do pierwszego elementu w pasku dalej (w przypadku pasek narzędzi jest ustawiony fokus).|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Inne kombinacje klawiszy skrótu przydatne
 
@@ -60,14 +60,14 @@ Oto niektóre inne przydatne kombinacje klawiszy skrótu.
 
 |Funkcja|Opis|Kombinacja klawiszy|
 |-------------|-----------------| - |
-|IDE|Przełącz wysokiego kontrastu, włączać i wyłączać. <br> <br> **UWAGA:** Standardowa skrótów Windows|**Lewy ALT + lewy SHIFT + PRINT SCREEN**|
+|IDE|Przełącz wysokiego kontrastu, włączać i wyłączać. <br> <br> **UWAGA:** Standardowa skrótów Windows|**Lewy Alt + lewy Shift + PrtScn**|
 |Okno dialogowe|Zaznacz lub wyczyść pole wyboru opcji w oknie dialogowym. <br> <br> **UWAGA:** Standardowa skrótów Windows|**SPACJA**|
-|Menu kontekstowe|Otwórz menu kontekstowe (kliknij prawym przyciskiem myszy). <br> <br> **UWAGA:** Standardowa skrótów Windows|**SHIFT** + **F10**|
-|Menu|Szybki dostęp do elementu menu przy użyciu jego klawiszy skrótów. Wybierz **ALT** klucz następuje podkreślnikiem w menu, aby uaktywnić to polecenie. Na przykład, aby wyświetlić okno dialogowe Otwórz projekt w programie Visual Studio, możesz wybrać **ALT** + **F** + **O**  +  **P**.  <br><br> **UWAGA:** Standardowa skrótów Windows|**ALT** + **[list]**|
-|Pole wyszukiwania w usłudze szybkiego uruchamiania| Użyj funkcji wyszukiwania w programie Visual Studio|**CTRL** + **funkcji pytania i odpowiedzi**|
-|Okno przybornika|Przechodzenie między karty przybornika.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **STRZAŁKA W DÓŁ**|
-|Okno przybornika|Dodawanie formantu z przybornika do formularza lub projektanta.|**WPROWADŹ**|
-|Klawiatura, środowisko, opcje — Okno dialogowe|Usunąć kombinacja klawiszy w **naciśnij klawisze skrótu** opcji.|**BACKSPACE**|
+|Menu kontekstowe|Otwórz menu kontekstowe (kliknij prawym przyciskiem myszy). <br> <br> **UWAGA:** Standardowa skrótów Windows|**Shift** + **F10**|
+|Menu|Szybki dostęp do elementu menu przy użyciu jego klawiszy skrótów. Wybierz **Alt** klucz następuje podkreślnikiem w menu, aby uaktywnić to polecenie. Na przykład, aby wyświetlić okno dialogowe Otwórz projekt w programie Visual Studio, możesz wybrać **Alt** + **F** + **O**  +  **P**.  <br><br> **UWAGA:** Standardowa skrótów Windows|**ALT** + **[list]**|
+|Pole wyszukiwania|W programie Visual Studio, należy użyć funkcji wyszukiwania.|**CTRL** + **funkcji pytania i odpowiedzi**|
+|Okno przybornika|Przechodzenie między karty przybornika.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **Strzałka w dół**|
+|Okno przybornika|Dodawanie formantu z przybornika do formularza lub projektanta.|**Wprowadź**|
+|Okno dialogowe Opcje: Środowisko > klawiatury|Usunąć kombinacja klawiszy w **naciśnij klawisze skrótu** opcji.|**BACKSPACE**|
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania.
@@ -76,12 +76,12 @@ Oto niektóre inne przydatne kombinacje klawiszy skrótu.
 
 Aplet dźwięku w Windows służy do przypisywania dźwięk do zdarzenia programu Visual Studio. W szczególności można przypisać dźwięków do następujących programów:
 
- * Trafiony punkt przerwania
- * Kompilacja anulowana
- * Kompilacja nie powiodła się
- * Kompilacja powiodła się
+* Trafiony punkt przerwania
+* Kompilacja anulowana
+* Kompilacja nie powiodła się
+* Kompilacja powiodła się
 
-Poniżej przedstawiono sposób.
+Oto jak:
 
 1. W **wyszukiwania** okno na komputerze z systemem Windows 10, typ **Zmień dźwięki systemu**.
 

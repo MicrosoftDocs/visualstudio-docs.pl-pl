@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 4519d0fb471178f4271dfe12712b5f2f6bc0bba2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475854"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790826"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 
@@ -83,11 +83,13 @@ Wkrótce potem Visual Studio otwiera plik projektu.
 
 ::: moniker range="vs-2019"
 
+1. Otwórz program Visual Studio.
+
 1. W oknie rozpoczęcia wybierz **Utwórz nowy projekt**.
 
    ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz pozycję **C#** od języka, a następnie wybierz **Windows** z listy Platform. 
+1. Na **Utwórz nowy projekt** oknie wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz pozycję **C#** od języka, a następnie wybierz **Windows** z listy Platform.
 
    Po zastosowaniu filtrów języka i platformy, wybierz **aplikacji sieci Web programu ASP.NET Core** szablonu, a następnie wybierz **dalej**.
 
@@ -96,8 +98,8 @@ Wkrótce potem Visual Studio otwiera plik projektu.
    > [!NOTE]
    > Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablonu, można zainstalować go z **Utwórz nowy projekt** okna. W **nie znaleźć, czego szukasz?** komunikatu, wybierz polecenie **zainstalować więcej narzędzi i funkcji** łącza.
    >
-   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Łącza "Zainstaluj więcej narzędzi i funkcji" komunikat "Nie możesz znaleźć teraz wyszukiwanie" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Następnie w Instalatorze programu Visual Studio, wybierz **ASP.NET i tworzenie aplikacji internetowych** obciążenia.
    >
    > ![Obciążenia podstawowej aplikacji sieci Web platformy ASP.NET w Instalatorze programu Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)

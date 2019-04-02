@@ -1,6 +1,6 @@
 ---
 title: Skróty klawiaturowe (HTML i JavaScript) | Dokumentacja firmy Microsoft
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697273"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789811"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
 
+::: moniker range=">=vs-2019"
+ Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji Node.js w programie Visual Studio **programowania Node.js** zainstalowanym obciążeniem.
+::: moniker-end
+::: moniker range="vs-2017"
  Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji platformy uniwersalnej systemu Windows przy użyciu języków HTML i JavaScript.
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>Skróty ogólne
+
  Poniższe skróty działają we wszystkich narzędzi dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języków HTML i JavaScript.
 
 |Akcja|Skrót|
@@ -35,6 +42,7 @@ ms.locfileid: "56697273"
 |Otwórz Centrum wydajności i diagnostyki|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>Skróty konsoli JavaScript
+
  Użyj tych skrótów w oknie konsoli języka JavaScript.
 
 |Akcja|Skrót|
@@ -44,6 +52,7 @@ ms.locfileid: "56697273"
 |Przełącz między trybem jeden wiersz i wiele wierszy|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>Skróty narzędzia DOM Explorer
+
  W Eksploratorze DOM, należy użyć tych skrótów.
 
 |Akcja|Skrót|
@@ -56,5 +65,6 @@ ms.locfileid: "56697273"
 |Zmniejsz wartość wybranego arkusza CSS o 1|Strzałka w dół|
 
 ## <a name="see-also"></a>Zobacz też
-- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
-- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Polecenia konsoli JavaScript](../debugger/javascript-console-commands.md)
+- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943015"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790866"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 
@@ -70,7 +70,7 @@ Ta procedura pokazuje, jak dodać tabelę z tej samej bazy danych, którego uży
 
 1. Kliknij węzeł zestawu danych w **Eksploratora rozwiązań** celu **Projektanta obiektów DataSet** do zespołu.
 
-2. Kliknij przycisk **źródeł danych** kartę na lewym marginesie programu Visual Studio lub typ **źródeł danych** w **Szybkie uruchamianie** pole.
+2. Kliknij przycisk **źródeł danych** kartę na lewym marginesie programu Visual Studio lub typ **źródeł danych** w polu wyszukiwania.
 
 3. Kliknij prawym przyciskiem myszy węzeł zestawu danych, a następnie wybierz pozycję **Konfigurowanie źródła danych za pomocą kreatora**.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268616"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790540"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -118,7 +118,7 @@ Usługom DevOps platformy Azure są usługami w chmurze do planu, obsługi, auto
 
 Team Foundation Server (TFS), to Centrum zarządzania cyklem życia aplikacji dla programu Visual Studio. Dzięki temu wszyscy pracownicy z procesem rozwoju uczestnictwa, używając jednego rozwiązania. TFS jest przydatne w celu zarządzania heterogenicznych zespołów i projektów, zbyt.
 
-Jeśli masz w sieci organizacji DevOps platformy Azure lub programu Team Foundation Server, nawiążesz z nim za pośrednictwem **Team Explorer** okna w programie Visual Studio. Z tego okna można sprawdzić kod do lub z kontroli źródła, zarządzania elementami roboczymi, kompilacji i rozpoczęcia pokoje zespołów dostępu oraz obszarów roboczych. Możesz otworzyć **Team Explorer** z **Szybkie uruchamianie** pole, lub w menu głównym z **widoku** > **Team Explorer** lub **Zespołu** > **Zarządzanie połączeniami**.
+Jeśli masz w sieci organizacji DevOps platformy Azure lub programu Team Foundation Server, nawiążesz z nim za pośrednictwem **Team Explorer** okna w programie Visual Studio. Z tego okna można sprawdzić kod do lub z kontroli źródła, zarządzania elementami roboczymi, kompilacji i rozpoczęcia pokoje zespołów dostępu oraz obszarów roboczych. Możesz otworzyć **Team Explorer** z pola wyszukiwania lub w menu głównym z **widoku** > **Team Explorer** lub **zespołu**  >  **Zarządzanie połączeniami**.
 
 Na poniższej ilustracji przedstawiono **Team Explorer** okna dla rozwiązania, które jest hostowane w usługach infrastruktury DevOps platformy Azure.
 

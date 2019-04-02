@@ -2,7 +2,7 @@
 title: Podręcznik administratora programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324938"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790098"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -30,7 +30,17 @@ W środowiskach przedsiębiorstw jest typowe dla administratorów systemu wdroż
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Wdrażanie programu Visual Studio w środowisku przedsiębiorstwa
 
-Visual Studio można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub pliku wsadowego, zazwyczaj należy przejść przez następujące kroki:
+::: moniker range="vs-2017"
+
+Visual Studio można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/productinfo/vs2017-system-requirements-vs/). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub pliku wsadowego, zazwyczaj należy przejść przez następujące kroki:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio można wdrożyć na klienckich stacjach roboczych, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](/visualstudio/releases/2019/system-requirements/). Czy jest wdrażany za pomocą oprogramowania, takiego jak System Center lub pliku wsadowego, zazwyczaj należy przejść przez następujące kroki:
+
+::: moniker-end
 
 1. [Utwórz udział sieciowy, który zawiera pliki produktu Visual Studio](create-a-network-installation-of-visual-studio.md) do lokalizacji sieciowej.
 

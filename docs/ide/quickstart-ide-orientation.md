@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354752"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790904"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -125,15 +125,15 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ![Okno danych wyjściowych w programie Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Szybkie uruchamianie
+## <a name="search-box"></a>Pole wyszukiwania
 
-**Szybkie uruchamianie** pole wyszukiwania jest szybki i łatwy sposób przechodzenia do zasadzie dowolny rodzaj danych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
+Pole wyszukiwania jest szybki i łatwy sposób przechodzenia do zasadzie dowolny rodzaj danych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
 
 ::: moniker range="vs-2017"
 
 1. Znajdź **Szybkie uruchamianie** pola wyszukiwania w prawym górnym rogu środowiska IDE. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
 
-2. Typ **szczegółowości** do **Szybkie uruchamianie** pola wyszukiwania. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
+2. Typ **szczegółowości** w polu wyszukiwania. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
 
    ![Pole wyszukiwania szybkiego uruchamiania w programie Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ::: moniker range=">=vs-2019"
 
-1. Znajdź **Szybkie uruchamianie** pola wyszukiwania w górnej części IDE, prawo menu. (Też nacisnąć klawisz **Ctrl**+**Q** do niego dostęp.)
+1. Naciśnij klawisz **Ctrl**+**Q** aktywować pole wyszukiwania w górnej części IDE.
 
-2. Typ **szczegółowości** do **Szybkie uruchamianie** pola wyszukiwania. Z wyświetlane wyniki, wybierz **szczegółowość MSBuild zmiany**.
+2. Typ **szczegółowości** w polu wyszukiwania. Z wyświetlane wyniki, wybierz **szczegółowość MSBuild zmiany**.
 
-   ![Pole wyszukiwania Szybkie uruchamianie w Visual Studio 2019 r.](media/vs-2019/quick-launch-verbosity.png)
+   ![Pole wyszukiwania w programie Visual Studio 2019 r.](media/vs-2019/quick-launch-verbosity.png)
 
    **Opcje** zostanie wyświetlone okno dialogowe **kompilowanie i uruchamianie** Strona opcji.
 
@@ -163,7 +163,7 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ## <a name="send-feedback-menu"></a>Wyślij opinię menu
 
-Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub jeśli masz sugestie dotyczące poprawy produktu, możesz użyć **Wyślij opinię** menu w górnej części okna programu Visual Studio obok **szybki Uruchom** pole.
+Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub jeśli masz sugestie dotyczące poprawy produktu, możesz użyć **Wyślij opinię** menu w górnej części okna programu Visual Studio.
 
 ::: moniker range="vs-2017"
 

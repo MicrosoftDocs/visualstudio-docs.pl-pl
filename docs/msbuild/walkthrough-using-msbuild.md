@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8793501df4e5ab90db5987332394b7420186b6c6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a7a9149498301e26d9b0155df6175693f5c3679e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567922"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790917"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 
@@ -38,7 +38,7 @@ Można uruchomić program MSBuild z programu Visual Studio lub **okna polecenia*
 1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **winforms**, następnie wybierz **Tworzenie nowej aplikacji Windows Forms (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **winforms**, następnie wybierz **Tworzenie nowej aplikacji Windows Forms (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
 
     W **nazwa** wpisz `BuildApp`. Wprowadź **lokalizacji** dla rozwiązania, na przykład *D:\\*. Zaakceptuj wartości domyślne **rozwiązania**, **Nazwa rozwiązania** (**BuildApp**), a **Framework**.
     ::: moniker-end

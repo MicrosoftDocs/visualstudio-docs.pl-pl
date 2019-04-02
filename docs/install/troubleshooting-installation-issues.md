@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z instalacją lub Uaktualnij problemów
 description: Czasami mogą wystąpić problemy. Jeśli Twoje instalację programu Visual Studio lub uaktualnienie nie powiedzie się, może pomóc tej strony.
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e5f754c9d52bc5756021cd3fbf45321c150fc59e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325123"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790618"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio i uaktualnić problemów
 
@@ -35,7 +35,17 @@ Poniższe kroki są zoptymalizowane pod kątem typowej instalacji w trybie onlin
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Krok 1. Sprawdź, czy ten problem jest znany problem
 
+::: moniker range="vs-2017"
+
 Istnieją znane problemy za pomocą Instalatora programu Visual Studio, firma Microsoft pracuje nad rozwiązaniem problemu. Aby sprawdzić, czy istnieje obejście dla danego problemu, sprawdź [sekcji Znane problemy w naszych informacjach](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Istnieją znane problemy za pomocą Instalatora programu Visual Studio, firma Microsoft pracuje nad rozwiązaniem problemu. Aby sprawdzić, czy istnieje obejście dla danego problemu, sprawdź [sekcji Znane problemy w naszych informacjach](/visualstudio/releases/2019/release-notes#-known-issues).
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>Krok 2 — skontaktuj się z społeczność deweloperów
 
@@ -48,20 +58,47 @@ Program inicjujący Instalatora programu Visual Studio jest minimalny plik wykon
 > [!NOTE]
 > Wykonując następujące czynności ponownie instaluje pliki Instalatora programu Visual Studio i resetuje metadanych instalacji.
 
+::: moniker range="vs-2017"
+
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń katalog Instalatora programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
 3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
 4. Spróbuj zainstalować lub zaktualizować program Visual Studio ponownie. Jeśli Instalator zakończy się niepowodzeniem, przejdź do następnego kroku.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Zamknij Instalatora programu Visual Studio.
+2. Usuń katalog Instalatora programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
+4. Spróbuj zainstalować lub zaktualizować program Visual Studio ponownie. Jeśli Instalator zakończy się niepowodzeniem, przejdź do następnego kroku.
+
+::: moniker-end
+
 ### <a name="step-4---report-a-problem"></a>Krok 4 — informacje o problemie
 
 W niektórych sytuacjach, takich jak powiązane z uszkodzonych plików problemy, być może trzeba rozważyć w przypadku przez. Aby pomóc nam sobie pomóc, wykonaj następujące czynności:
+
+::: moniker range="vs-2017"
 
 1. Zbieranie dzienników instalacji. Zobacz [jak uzyskać dzienniki instalacji programu Visual Studio](#how-to-get-visual-studio-installation-logs) Aby uzyskać szczegółowe informacje.
 2. Otwórz Instalatora programu Visual Studio, a następnie kliknij przycisk **Zgłoś problem** można otworzyć narzędzia Visual Studio opinii.
 ![Ustawić tabulator, aby przycisk Podaj opinię, aby otworzyć narzędzie opinii](media/report-a-problem.png)
 3. Nadaj tytuł raport o problemie i podaj odpowiednie szczegóły. Kliknij przycisk **dalej** można przejść do **załączniki** sekcji, a następnie dołącz plik dziennika wygenerowany (zazwyczaj plik znajduje się w `%TEMP%\vslogs.zip`).
 4. Kliknij przycisk **dalej** Przejrzyj raport o problemie, a następnie kliknij przycisk **przesyłania**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Zbieranie dzienników instalacji. Zobacz [jak uzyskać dzienniki instalacji programu Visual Studio](#how-to-get-visual-studio-installation-logs) Aby uzyskać szczegółowe informacje.
+2. Otwórz Instalatora programu Visual Studio, a następnie kliknij przycisk **Zgłoś problem** można otworzyć narzędzia Visual Studio opinii.
+![Ustawić tabulator, aby przycisk Podaj opinię, aby otworzyć narzędzie opinii](media/vs-2019/vs-installer-report-problem.png)
+3. Nadaj tytuł raport o problemie i podaj odpowiednie szczegóły. Kliknij przycisk **dalej** można przejść do **załączniki** sekcji, a następnie dołącz plik dziennika wygenerowany (zazwyczaj plik znajduje się w `%TEMP%\vslogs.zip`).
+4. Kliknij przycisk **dalej** Przejrzyj raport o problemie, a następnie kliknij przycisk **przesyłania**.
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Krok 5 — InstallCleanup.exe przebiegu można usunąć plików instalacyjnych
 

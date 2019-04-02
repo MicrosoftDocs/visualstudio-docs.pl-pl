@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323818"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790423"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Instrukcje: Dzięki rozszerzenia jest zgodny z programu Visual Studio 2017 i Visual Studio 2015
 
@@ -95,7 +95,7 @@ Dlatego trzeba poinformować programu Visual Studio, jakie wersje docelowe dla t
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Wymagania wstępne dotyczące dodawania *extension.vsixmanifest* pliku
 
-Wymagania wstępne to nowa funkcja w programie Visual Studio 2017. W tym przypadku potrzebujemy Edytor rdzeni programu Visual Studio jako warunek wstępny. Ponieważ Projektant Visual Studio 2015 VSIX nie obsługuje nowy `Prerequisites` sekcji, należy edytować tej części ręcznie w kodzie XML. Alternatywnie można otworzyć programu Visual Studio 2017 i użyj zaktualizowany manifest designer, aby wstawić wymagania wstępne.
+Potrzebujemy Edytor rdzeni programu Visual Studio jako warunek wstępny. Otwórz program Visual Studio, a następnie użyj zaktualizowany manifest designer, aby wstawić wymagań wstępnych.
 
 Aby to zrobić ręcznie:
 
@@ -112,7 +112,7 @@ Aby to zrobić ręcznie:
 * Zapisz i zamknij plik.
 
 > [!NOTE]
-> Jeśli postanowisz to zrobić za pomocą projektanta VSIX w programie Visual Studio 2017, należy ręcznie zmodyfikować wymagana wstępnie wersja, aby upewnić się, że jest zgodny ze wszystkimi wersjami programu Visual Studio 2017. Jest to spowodowane projektanta wstawi minimalnej wersji jako bieżącej wersji programu Visual Studio (na przykład 15.0.26208.0). Jednak ponieważ inni użytkownicy mogą mieć starszej wersji, należy ręcznie edytować to ustawienie na 15.0.
+> Może być konieczne ręczne edytowanie wymagana wstępnie wersja, aby upewnić się, że jest zgodny ze wszystkimi wersjami programu Visual Studio 2017. Jest to spowodowane projektanta wstawi minimalnej wersji jako bieżącej wersji programu Visual Studio (na przykład 15.0.26208.0). Jednak ponieważ inni użytkownicy mogą mieć starszej wersji, należy ręcznie edytować to ustawienie na 15.0.
 
 W tym momencie pliku manifestu powinien wyglądać mniej więcej tak:
 

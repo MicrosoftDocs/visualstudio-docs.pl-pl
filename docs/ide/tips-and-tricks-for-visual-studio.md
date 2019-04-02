@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223367"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790371"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
@@ -51,8 +51,8 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 |-|-|
 |Wyszukaj w Eksploratorze rozwiązań|**CTRL**+**;**|
 |Umieść fokus w polu wyszukiwania w dowolnym oknie Narzędzie|**ALT** + **`** kiedy okno narzędzia ma fokus|
-|Szybkie uruchamianie|**CTRL**+**funkcji pytania i odpowiedzi**|
-|Wyniki zakresu pasek Szybkie uruchamianie|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używane<br />- @doc Otwartych dokumentach|
+|Pole wyszukiwania|**CTRL**+**funkcji pytania i odpowiedzi**|
+|Wyniki zakresu pole wyszukiwania|- @opt Opcje<br />- @cmd Poleceń<br />- @mru Ostatnio używane<br />- @doc Otwartych dokumentach|
 |Wyszukiwanie w opcjach narzędzi|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Znajdowanie w edytorze

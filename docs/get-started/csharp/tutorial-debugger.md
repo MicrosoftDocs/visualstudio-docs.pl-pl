@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cdd82bffcbdbbf4ee176c7ffd643cd920d1c5268
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355662"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790150"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie C# kodu za pomocą programu Visual Studio
 
@@ -58,7 +58,7 @@ Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejd
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)**. W oknie dialogowym wpisz nazwę, takich jak **get pracę debugowanie**, a następnie wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)**. W oknie dialogowym wpisz nazwę, takich jak **get pracę debugowanie**, a następnie wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)**. Następnie wpisz nazwę, takich jak **get pracę debugowanie** i kliknij przycisk **OK**.

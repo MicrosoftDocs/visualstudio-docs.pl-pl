@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961718"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790332"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debugowanie techniki i narzędzia, aby ułatwić tworzenie lepszego kodu
 
@@ -42,7 +42,7 @@ Poniższy kod zawiera pewne błędy, które można rozwiązać, przy użyciu pro
 
 Aby utworzyć aplikację:
 
-1. Otwórz program Visual Studio i wybierz polecenie **Plik > Nowy projekt**. W obszarze **Visual C#** , wybierz **pulpitu Windows** lub **platformy .NET Core**, a następnie w środkowym okienku wybierz **aplikacja Konsolowa**.
+1. Otwórz program Visual Studio i wybierz polecenie **pliku** > **New** > **projektu**. W obszarze **Visual C#** , wybierz **pulpitu Windows** lub **platformy .NET Core**, a następnie w środkowym okienku wybierz **aplikacja Konsolowa**.
 
     > [!NOTE]
     > Jeśli nie widzisz **aplikację Konsolową** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie dla wielu platform .NET Core** obciążenia, wybierz **Modyfikuj**.

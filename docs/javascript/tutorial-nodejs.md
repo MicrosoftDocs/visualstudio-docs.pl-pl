@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d10f2827debf13b2fb63923e0e356032afbb8bcd
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355568"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790839"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 
@@ -78,7 +78,7 @@ W tym samouczku możesz zaczynają się od prostego projektu zawierającego kod 
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **Utwórz nową aplikację podstawowe Azure node.js w środowisku Express 4** (JavaScript). W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **Utwórz nową aplikację podstawowe Azure node.js w środowisku Express 4** (JavaScript). W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **aplikacji podstawowe Azure node.js w środowisku Express 4**, następnie wybierz **OK**.

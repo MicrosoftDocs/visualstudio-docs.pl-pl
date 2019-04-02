@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476062"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790709"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Przewodnik: Debugowanie aplikacji równoległych w programie Visual Studio (C#, Visual Basic, C++)
 
@@ -65,8 +65,8 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
-    
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+
     - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
     - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
 

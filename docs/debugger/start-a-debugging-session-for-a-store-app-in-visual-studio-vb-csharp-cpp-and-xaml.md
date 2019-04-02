@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699473"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790514"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 
-W tym artykule opisano sposób uruchamiania sesji debugowania programu Visual Studio dla aplikacji uniwersalnych platformy Windows (UWP). Aplikacje platformy uniwersalnej systemu Windows mogą być napisane w XAML i C++, XAML i C#/Visual Basic, lub HTML i JavaScript. Aby rozpocząć debugowanie aplikacji platformy uniwersalnej systemu Windows, skonfiguruj sesję debugowania, a następnie wybierz sposób, aby uruchomić aplikację.
+W tym artykule opisano sposób uruchamiania sesji debugowania programu Visual Studio dla aplikacji uniwersalnych platformy Windows (UWP). Aplikacje platformy uniwersalnej systemu Windows mogą być napisane w XAML i C++, XAML i C#/Visual Basic. Aby rozpocząć debugowanie aplikacji platformy uniwersalnej systemu Windows, skonfiguruj sesję debugowania, a następnie wybierz sposób, aby uruchomić aplikację.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Począwszy od programu Visual Studio 2019 aplikacji platformy uniwersalnej systemu Windows dla języków HTML i JavaScript nie są już obsługiwane.
+::: moniker-end
+::: moniker range="vs-2017"
+W programie Visual Studio 2017 większość poleceń i opcji wymienionych w tym artykule dotyczą również aplikacji platformy UWP dla języków HTML i JavaScript. W przypadku, gdy polecenia różnią się między zarządzanymi i aplikacje C++, JavaScript aplikacje zwykle są takie same, jak polecenia dla aplikacji platformy uniwersalnej systemu Windows w języku C++.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Uruchom debugowanie z narzędzi programu Visual Studio
 
@@ -90,7 +98,7 @@ Aby skonfigurować dodatkowe opcje debugowania, należy użyć strony właściwo
 
      ![C#i strony właściwości debugowania projektu w języku Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - W przypadku aplikacji C++ i JavaScript, wybierz **właściwości konfiguracji** > **debugowanie**.
+   - W aplikacjach C++ wybierz **właściwości konfiguracji** > **debugowanie**.
 
      ![Debugowania strona właściwości aplikacji platformy uniwersalnej systemu Windows w języku C++](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Aby skonfigurować dodatkowe opcje debugowania, należy użyć strony właściwo
 
 Aby uzyskać C# i aplikacji Visual Basic, Visual Studio debuguje kodzie zarządzanym domyślnie. Można debugować kodu inne lub dodatkowe typy. Można również ustawić **typ debugera** wartości dla dowolnego zadania w tle, które są częścią projektu.
 
-W aplikacjach C++ Visual Studio debuguje kodu natywnego, domyślnie. W aplikacji JavaScript programu Visual Studio debugować skrypt domyślnie. Można debugować określone typy kodu, zamiast lub oprócz kodu natywnego.
+W aplikacjach C++ Visual Studio debuguje kodu natywnego, domyślnie. Można debugować określone typy kodu, zamiast lub oprócz kodu natywnego.
 
 **Aby określić typy kodu do debugowania:**
 
 - Dla C# i aplikacji w języku Visual Basic, wybierz jedną z następujących debugery z **typ aplikacji** i **typu proces w tle** listy rozwijane w obszarze **typ debugera** na **debugowania** stronę właściwości.
 
-- C + +/ aplikacji JavaScript, wybierz jedną z następujących debugery z **typ debugera** menu rozwijane **debugowanie** stronę właściwości.
+- W aplikacjach C++, wybierz jedną z następujących debugery z **typ debugera** menu rozwijane **debugowanie** stronę właściwości.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ W aplikacjach C++ Visual Studio debuguje kodu natywnego, domyślnie. W aplikacji
 
 -   Dla C# i aplikacji w języku Visual Basic, usuń zaznaczenie opcji **Zezwalaj na sprzężenie zwrotne sieci lokalnej** pole wyboru w obszarze **opcje uruchamiania** na **debugowania** stronę właściwości.
 
--   W przypadku aplikacji Visual C++ i JavaScript, wybierz **nie** z **Zezwalaj na sprzężenie zwrotne lokalnej sieci** menu rozwijane **debugowanie** stronę właściwości.
+-   W przypadku aplikacji Visual C++, wybierz **nie** z **Zezwalaj na sprzężenie zwrotne lokalnej sieci** menu rozwijane **debugowanie** stronę właściwości.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Ponownie zainstaluje aplikację po rozpoczęciu debugowania (opcjonalnie)
- Do diagnozowania problemów z instalacją przy użyciu C# lub aplikacji Visual Basic, wybierz opcję **Odinstaluj i zainstaluj ponownie mój pakiet** na **debugowania** stronę właściwości. Ta opcja odtwarza oryginalnej instalacji, po rozpoczęciu debugowania. Ta opcja jest niedostępna dla projektów C++ i JavaScript.
+ Do diagnozowania problemów z instalacją przy użyciu C# lub aplikacji Visual Basic, wybierz opcję **Odinstaluj i zainstaluj ponownie mój pakiet** na **debugowania** stronę właściwości. Ta opcja odtwarza oryginalnej instalacji, po rozpoczęciu debugowania. Ta opcja jest niedostępna dla projektów C++.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Ustaw opcje uwierzytelniania dla zdalnego debugowania
 
@@ -139,7 +147,7 @@ Domyślnie, należy podać poświadczenia Windows, aby uruchomić zdalny debuger
 
 - Dla C# aplikacji Visual Basic i na **debugowania** strony właściwości, wybierz opcję **maszyny zdalnej** jako **urządzenie docelowe**. Następnie wybierz **Brak** lub **uniwersalny (protokół niezaszyfrowanym)** dla **tryb uwierzytelniania**.
 
-- W przypadku aplikacji C++ i JavaScript, wybierz **maszyny zdalnej** w obszarze **debuger do uruchomienia** na **debugowanie** stronę właściwości. Następnie wybierz **bez uwierzytelniania** lub **uniwersalny (protokół niezaszyfrowanym)** dla **typ uwierzytelniania**.
+- W aplikacjach C++ wybierz **maszyny zdalnej** w obszarze **debuger do uruchomienia** na **debugowanie** stronę właściwości. Następnie wybierz **bez uwierzytelniania** lub **uniwersalny (protokół niezaszyfrowanym)** dla **typ uwierzytelniania**.
 
 > [!CAUTION]
 > Istnieje nie zabezpieczeń sieci podczas uruchamiania zdalnego debugera w **Brak** lub **uniwersalny (protokół niezaszyfrowanym)** tryby. Wybierz te tryby wyłącznie w zaufanych sieciach, które są się, że nie są zagrożone przez złośliwego kodu lub szkodliwy ruch.
@@ -156,7 +164,7 @@ Domyślnie program Visual Studio uruchamia aplikację natychmiast, po rozpoczęc
 
 - Dla C# i aplikacji Visual Basic, wybierz opcję **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu** w obszarze **opcje uruchamiania** na **debugowania** stronę właściwości.
 
-- W przypadku aplikacji C++ i JavaScript, wybierz **nie** z **Uruchom aplikację** menu rozwijane **debugowanie** stronę właściwości.
+- W aplikacjach C++ wybierz **nie** z **Uruchom aplikację** menu rozwijane **debugowanie** stronę właściwości.
 
 Aby uzyskać więcej informacji na temat debugowania zadania w tle, zobacz [wyzwalacza wstrzymania, wznowienia i zdarzeń aplikacji platformy UWP w tle](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Aby dołączyć debuger [!INCLUDE[win8_appname_long](../debugger/includes/win8_a
 
  Program Visual Studio dołącza debuger do procesu. Wykonywanie jest kontynuowane, dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi nieobsługiwany wyjątek, lub kończy się w aplikacji.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript aplikacje uruchamiane w wystąpieniu *wwahost.exe* procesu. Jeśli więcej niż jednej aplikacji JavaScript działa, konieczne będzie znany identyfikator liczbowych procesu (PID) aplikacji *wwahost.exe* proces do dołączenia do niej.
 >
 > Najprostszym sposobem, aby dołączyć do aplikacji JavaScript jest Zamknij wszystkie inne aplikacje języka JavaScript. Lub możesz zauważyć identyfikatory PID uruchomiona *wwahost.exe* procesy Windows Menedżera zadań przed rozpoczęciem korzystania z aplikacji. Po uruchomieniu aplikacji, jego *wwahost.exe* identyfikator PID będzie ten, który różni się od innych niż wymienione wcześniej.
+::: moniker-end
 
 ## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji w programie Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

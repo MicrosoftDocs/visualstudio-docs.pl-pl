@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983718"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790046"
 ---
-# <a name="environment-options-dialog-box"></a>Środowisko, opcje — Okno dialogowe
+# <a name="options-dialog-box-environment"></a>Okno dialogowe Opcje: Środowisko
 
-Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby ustawić sposób niektóre elementy zintegrowanego środowiska programistycznego (IDE) wyświetlane i się zachowują. Możesz uzyskać dostęp do stron środowisko, na pasku menu, wybierając **narzędzia**, **opcje**, a następnie wybierając **środowiska**.
+Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby ustawić sposób niektóre elementy zintegrowanego środowiska programistycznego (IDE) wyświetlane i się zachowują. Dostęp do stron środowisko, wybierając **narzędzia** > **opcje**, a następnie wybierając **środowiska**.
 
 |Oto źródła informacji na temat, jak|Zobacz|
 | - |---------|
 |Dostosować wygląd i zachowanie okien, menu i innych elementów IDE.|[Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)|
+|Aby określić, czy z roamingu ustawienia na komputerach.|[Konta, środowisko, opcje, okno dialogowe](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Zmieniać ustawienia automatycznego zapisywania i przywracania plików.|[Automatyczne odzyskiwanie, Środowisko, Opcje — okno dialogowe](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Ustanawiać ustawienia wyświetlania i zarządzania dokumentu, które obejmują zachowanie dodatkowych plików.|[Dokumenty, Środowisko, Opcje — okno dialogowe](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Dostosuj sposób aktualizacje wykonywane i sposobu zarządzania rozszerzeniami.|[Okno dialogowe rozszerzenia, środowisko, opcje](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
@@ -33,10 +34,7 @@ Możesz użyć stron w **środowiska** folderu w **opcje** okno dialogowe, aby u
 |Dostosowywanie lokalizacji plików vssettings, które przechowują informacje o ustawieniach użytkownika.|[Ustawienia importowania i eksportowania, Środowisko, Opcje — okno dialogowe](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Wybrać język domyślny dla Visual Studio.|[Ustawienia międzynarodowe, Środowisko, Opcje — okno dialogowe](../../ide/reference/international-settings-environment-options-dialog-box.md)|
 |Aby ustawić opcje mapowania klawiatury.|[Klawiatura, Środowisko, Opcje — okno dialogowe](../../ide/reference/keyboard-environment-options-dialog-box.md)|
-|Aby określić, czy powiadomienia są włączone.|[Powiadomienia, Środowisko, Opcje — okno dialogowe](../../ide/reference/notifications-environment-options-dialog-box.md)|
-|Aby określić opcje dla okna szybkiego uruchamiania.|[Szybkie uruchamianie, Środowisko, Opcje — okno dialogowe](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Aby określić opcje uruchamiania.|[Uruchamianie, Środowisko, Opcje — okno dialogowe](../../ide/reference/startup-environment-options-dialog-box.md)|
-|Aby określić, czy z roamingu ustawienia na komputerach.|[Zsynchronizowane ustawienia, Środowisko, Opcje — okno dialogowe](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Dowiedzieć się, jak ustawić opcje dla zadań i listy zadań|[Lista zadań, Środowisko, Opcje — okno dialogowe](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Zmienić domyślną stronę domową i wyszukiwania, zmienić systemowy edytor źródeł i konfigurować opcje programu Internet Explorer.|[Przeglądarka internetowa, Środowisko, Opcje — okno dialogowe](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

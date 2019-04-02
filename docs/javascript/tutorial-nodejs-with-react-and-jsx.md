@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 781eddb72c30197d4eeb04890c9dc4193060a17d
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a93fc82ca8e4aa1f88de75d958bfea20fb85cd92
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647482"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790878"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -85,7 +85,7 @@ Najpierw utwórz projekt aplikacji sieci web środowiska Node.js.
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **pusta aplikacja sieci Web Node.js** (JavaScript). W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Node.js**, następnie wybierz **pusta aplikacja sieci Web Node.js** (JavaScript). W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **pusta aplikacja sieci Web Node.js**, wpisz nazwę **NodejsWebAppBlank**, następnie wybierz **OK**.

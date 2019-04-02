@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 328224cd7ec55a51621805361d3b1af67aaa825c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647521"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790566"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciu języka C\#
 
@@ -81,7 +81,7 @@ Po utworzeniu projektu, można go dostosować. Za pomocą **właściwości** okn
 
 1. Open Visual Studio 2019.
 
-1. W oknie rozpoczęcia wybierz **Tworzenie nowego projektu**. 
+1. W oknie rozpoczęcia wybierz **Tworzenie nowego projektu**.
 
    ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png)
 
@@ -93,7 +93,7 @@ Po utworzeniu projektu, można go dostosować. Za pomocą **właściwości** okn
 3. Na następnym ekranie, nazwij projekt, **HelloWPFApp**i wybierz polecenie **Utwórz**.
 
    ![w oknie "Konfigurowanie nowego projektu" nazwij swój projekt "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png)
- 
+
 Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
 ![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../media/vs-2019/exploreide-hellowpfappfiles.png)
@@ -123,7 +123,7 @@ Zostanie dodany do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Contr
 
 ### <a name="add-a-textblock-control"></a>Dodaj formant TextBlock
 
-1. Wprowadź **Ctrl**+**Q** do wywołania **Szybkie uruchamianie** i typ **przybornika**. Wybierz **Widok > przybornika** z listy wyników.
+1. Wprowadź **Ctrl**+**Q** aktywować pole wyszukiwania i wpisz **przybornika**. Wybierz **Widok > przybornika** z listy wyników.
 
 2. W **przybornika**, rozwiń węzeł **wspólnych formantów WPF** węzeł, aby zobaczyć kontrolkę TextBlock.
 

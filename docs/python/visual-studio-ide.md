@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354781"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790605"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
@@ -68,11 +68,11 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
    ![Polecenie PyLint w menu kontekstowym dla projektów języka Python](media/code-pylint-command.png)
 
-- [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Pole wyszukiwania
 
-   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. **Szybkie uruchamianie** pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, **Szybkie uruchamianie** zapewnia wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
+   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, pole wyszukiwania zawiera wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
 
-   ![Szybkie uruchamianie pola wyszukiwania w programie Visual Studio](media/tour-ide-quick-launch.png)
+   ![Pole wyszukiwania w programie Visual Studio](media/tour-ide-quick-launch.png)
 
 - Zygzaki i [szybkie akcje](../ide/quick-actions.md)
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE, zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844077"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789890"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2017
 
@@ -53,9 +53,12 @@ Aby pobrać IDE:
 
 13. Wybierz kompozycję preferowane, a następnie kliknij przycisk **Uruchom program Visual Studio**.
 
-14. Zostanie wyświetlona strona Start.  Jesteś gotowy rozpocząć korzystanie z programu Visual Studio!
+14. Zostanie otwarty program Visual Studio. Jesteś gotowy rozpocząć korzystanie z programu Visual Studio!
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![Rozpoczynanie korzystania z programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Uprawnienie
 

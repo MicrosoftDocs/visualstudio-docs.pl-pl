@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325295"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790670"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Pierwsze spojrzenie na środowisko IDE programu Visual Studio
 
@@ -112,13 +112,13 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ![Okno danych wyjściowych w programie Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Szybkie uruchamianie
+## <a name="search-box"></a>Pole wyszukiwania
 
-**Szybkie uruchamianie** pole jest szybka i łatwa metoda wygląda praktycznie wszystkich wymaganych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
+Pole wyszukiwania jest szybka i łatwa metoda wygląda praktycznie wszystkich wymaganych w programie Visual Studio. Można wprowadzić tekst powiązany co chcesz zrobić, a jego pokazano listę opcji, które odnoszą się do tekstu. Na przykład Wyobraź sobie, że chcesz zwiększyć szczegółowość dane wyjściowe kompilacji, aby wyświetlić dodatkowe informacje o tym, co dokładnie kompilacji robi. Poniżej przedstawiono, jak może to zrobić:
 
-1. Typ **szczegółowości** do **Szybkie uruchamianie** pole. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
+1. Typ **szczegółowości** w polu wyszukiwania. Z wyświetlane wyniki, wybierz **projekty i rozwiązania--> Kompilowanie i uruchamianie** w obszarze **opcje** kategorii.
 
-   ![Szybkie uruchamianie pola w programie Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Pole wyszukiwania w programie Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    **Opcje** zostanie wyświetlone okno dialogowe **kompilowanie i uruchamianie** Strona opcji.
 
@@ -132,7 +132,7 @@ Utwórzmy projekt, aby wyświetlić niektóre dane wyjściowe kompilacji. Z **ko
 
 ## <a name="send-feedback-menu"></a>Wyślij opinię menu
 
-Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub jeśli masz sugestie dotyczące poprawy produktu, możesz użyć **Wyślij opinię** menu w górnej części okna programu Visual Studio obok **szybki Uruchom** pole.
+Należy napotykasz problemy podczas korzystania z programu Visual Studio, lub jeśli masz sugestie dotyczące poprawy produktu, możesz użyć **Wyślij opinię** menu w górnej części okna programu Visual Studio.
 
 ![Wyślij opinię menu w programie Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

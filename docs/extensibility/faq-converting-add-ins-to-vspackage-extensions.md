@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692830"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789533"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
 Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące jak konwertować dodatek programu Visual Studio rozszerzenia VSIX.
@@ -40,26 +40,27 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
 ##  <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX
  Poniżej przedstawiono, jak wprowadzić VSIX, który zawiera polecenie menu:
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby utworzyć rozszerzenie VSIX, który zawiera polecenie menu
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby utworzyć rozszerzenie VSIX, który zawiera polecenie menu
 
-1.  Utwórz projekt VSIX. (**Pliku** > **New** > **projektu**, lub typu **projektu** w **Szybkie uruchamianie** okno). W **nowy projekt** okna dialogowego rozwiń **Visual C#** > **rozszerzalności** lub **języka Visual Basic**  >   **Rozszerzalność** i wybierz **projekt VSIX**.) Nadaj projektowi nazwę **TestExtension** i określ lokalizację dla niego.
+1. Utwórz projekt VSIX. (**Pliku** > **New** > **projektu**, lub typu **projektu** w polu wyszukiwania). W **nowy projekt** okna dialogowego rozwiń **Visual C#**   >  **rozszerzalności** lub **języka Visual Basic**  >  **Rozszerzalności** i wybierz **projekt VSIX**. Nadaj projektowi nazwę **TestExtension** i określ lokalizację dla niego.
 
-2.  Dodaj **polecenia niestandardowego** szablonu elementu projektu. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy element**. W **nowy projekt** okno dialogowe dla programu Visual C# lub Visual Basic, wybierz **rozszerzalności** a następnie wybierz węzeł **polecenia niestandardowego**.)
+2. Dodaj **polecenia niestandardowego** szablon elementu. (Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe dla każdej wizualizacji C# lub Visual Basic, wybierz **rozszerzalności** a następnie wybierz węzeł **polecenia niestandardowego**.)
 
-3.  Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt w trybie debugowania.
+3. Naciśnij klawisz **F5** Aby skompilować i uruchomić projekt w trybie debugowania.
 
-     Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.
+   Zostanie wyświetlone drugie wystąpienie programu Visual Studio. To drugie wystąpienie jest nazywany wystąpienie doświadczalne i może nie mieć tych samych ustawień co wystąpienie programu Visual Studio za pomocą pisania kodu. Podczas pierwszego uruchomienia wystąpienia eksperymentalnego użytkownik jest proszony logować się do usługi VS Online i określ motywu i profilu.
 
-     Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.
+   Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
 ##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage
- Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:
+
+Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:
 
 - Wyzwalane za pomocą polecenia menu (kod znajduje się w `IDTCommandTarget.Exec` metody.)
 
 - Automatycznie podczas uruchamiania (kod znajduje się w `OnConnection` programu obsługi zdarzeń.)
 
-  Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono sposób dodawania kodu dodatku w metodzie wywołania zwrotnego:
+Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono sposób dodawania kodu dodatku w metodzie wywołania zwrotnego:
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementowanie polecenia menu w VSPackage
 

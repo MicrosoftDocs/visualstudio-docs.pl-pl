@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223614"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790527"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu, pracy w programie Visual Studio
 
@@ -44,7 +44,7 @@ O ile nie wprowadzono żadnych modyfikacji kodu, który została wcześniej i po
 
 ![Dane wyjściowe programu Visual Studio i lista błędów](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Kliknij wiersz błędu w **lista błędów** odbywa się w oknie, aby przejść do wiersza błędu. (Lub włączyć numery wierszy, klikając w **Szybkie uruchamianie** paska w prawym górnym rogu, wpisując "numery wierszy" do niego, a następnie naciskając klawisz **Enter**. Jest to najszybszy sposób, aby przejść do **opcje** okna dialogowego, w którym można włączyć numery wierszy. Dowiedz się, jak używać **Szybkie uruchamianie** paska i zaoszczędzić dużo kliknięć interfejsu użytkownika!)
+Kliknij wiersz błędu w **lista błędów** odbywa się w oknie, aby przejść do wiersza błędu. (Lub włączyć numery wierszy, naciskając klawisz **Ctrl**+**pytania**, wpisz **numery wierszy**, a następnie wybierając **włączyć numery wierszy, lub wyłączyć**z wyników. Jest to najszybszy sposób, aby przejść do **opcje** okna dialogowego, w którym można włączyć numery wierszy.)
 
 ![Edytor programu Visual Studio z numerami wierszy](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

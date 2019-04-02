@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325217"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789994"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstu, C/C++, eksperymentalne
 
@@ -28,7 +28,7 @@ W tym artykule opisano opcje w programie Visual Studio 2017. W programie Visual 
 
 ::: moniker-end
 
-Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisze **kontroli** + **Q** aktywować `Quick Launch` , a następnie wpisz "eksperymentalne". Szybkie uruchamianie znajduje stronę po kilka pierwszych liter. Możesz również uzyskać do niego, wybierając **narzędzia** > **opcje** i rozwijając **edytora tekstów**, następnie **C/C++**, a następnie wybierając **Eksperymentalne**.
+Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisze **Ctrl**+**Q** aby aktywować pole wyszukiwania, a następnie wpisz **eksperymentalne**. Wyszukiwanie umożliwia znalezienie strony po kilka pierwszych liter. Możesz również uzyskać do niego, wybierając **narzędzia** > **opcje** i rozwijając **edytora tekstów**, następnie **C/C++**, a następnie wybierając **Eksperymentalne**.
 
 Te funkcje są dostępne w instalacji programu Visual Studio.
 

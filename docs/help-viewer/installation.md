@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155672"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789682"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
@@ -31,11 +31,11 @@ Podgląd pomocy jest składnikiem opcjonalna instalacja programu Visual Studio. 
 
 1. Wybierz **Modyfikuj** przycisk, aby rozpocząć instalację programu Podgląd Pomocy firmy Microsoft.
 
-Innym sposobem na łatwe instalowanie podglądu pomocy firmy Microsoft jest za pośrednictwem **Szybkie uruchamianie** pola:
+Innym sposobem na łatwe instalowanie podglądu pomocy firmy Microsoft jest za pomocą pola wyszukiwania:
 
-1. Wpisz lub wprowadź **podglądu pomocy** w **Szybkie uruchamianie** polu na pasku tytułu programu Visual Studio.
+1. Naciśnij klawisz **Ctrl**+**Q** a następnie wpisz lub wprowadź **podglądu pomocy** w polu wyszukiwania.
 
-   ![Szybkie uruchamianie pole](media/installation/quick-launch.png)
+   ![Pole wyszukiwania](media/installation/quick-launch.png)
 
 1. Wybierz wynik o nazwie **Help Viewer (poszczególnych składników)**.
 

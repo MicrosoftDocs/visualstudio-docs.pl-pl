@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z błędami sieci lub serwera proxy
 description: Rozwiązania związane z siecią lub serwer proxy błędy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwerem proxy.
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324964"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790502"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 
@@ -54,6 +54,8 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 - Jeśli chcesz używać Twoich poświadczeń domyślne na serwerze proxy, należy wykonać następujące czynności:
 
+::: moniker range="vs-2017"
+
   1. Znajdź **devenv.exe.config** (plik devenv.exe w konfiguracji) w: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Wizualne Studio\2017\Enterprise\Common7\IDE**.
 
   2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
@@ -67,11 +69,28 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
       Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Aby uzyskać więcej informacji, zobacz [ &lt;defaultProxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) i [ &lt;proxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stron.
+     > Aby uzyskać więcej informacji, zobacz [ &lt;defaultProxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;proxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stron.
 
-  -LUB-
+::: moniker-end
 
-- Można również postępuj zgodnie z instrukcjami [jak nawiązać połączenie za pośrednictwem uwierzytelnionego serwera Proxy sieci Web](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) wpis w blogu, który pokazuje, jak dodać kod, który umożliwi używanie serwera proxy.
+::: moniker range="vs-2019"
+
+  1. Znajdź **devenv.exe.config** (plik devenv.exe w konfiguracji) w: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Wizualne Studio\2019\Enterprise\Common7\IDE**.
+
+  2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Aby uzyskać więcej informacji, zobacz [ &lt;defaultProxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [ &lt;proxy&gt; — Element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) stron.
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Błąd: "Połączenie podstawowe zostało zamknięte"
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873181"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790813"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: Pierwsze spojrzenie na narzędziach profilowania
 
@@ -119,6 +119,7 @@ Po wybraniu przedziale czasu na wykresach i **wyświetlić szczegóły**, szczeg
 
 Wykresy umożliwia również ustalić, czy istnieją powiązane procesora CPU lub GPU powiązany wąskich gardeł wydajności.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analizowanie wydajności (JavaScript dla platformy UWP)
 
 W przypadku aplikacji platformy uniwersalnej systemu Windows można użyć narzędzi pamięć języka JavaScript i HTML UI Responsiveness.
@@ -130,6 +131,7 @@ Narzędzi pamięć języka JavaScript jest podobne do dostępnych dla innych typ
 Do diagnozowania czasu odpowiedzi interfejsu użytkownika, powolne ładowanie czasu i powolne aktualizacji visual w aplikacji platformy uniwersalnej systemu Windows, należy użyć narzędzia HTML UI Responsiveness. Użycie jest podobny do narzędzia oś czasu aplikacji dla innych typów aplikacji. Aby uzyskać więcej informacji, zobacz [HTML UI responsiveness](../profiling/html-ui-responsiveness.md).
 
 ![HTML UI Responsiveness, narzędzia profilowania](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analizowanie użycia sieci (systemu Windows UWP)
 

@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+monikerRange: vs-2017
+ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736990"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789877"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 
-Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony menu. Nie można użyć **Szybkie uruchamianie** wyszukiwania kodu i symbole. **Szybkie uruchamianie** pole wyszukiwania znajduje się w prawym górnym rogu paska menu i jest dostępny, wybierając klawisze Ctrl + Q. Po prostu wprowadź wyszukiwany ciąg w polu. Do wyszukiwania ciągów zawierających @, użyj ”@@”. 
+Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony menu. Nie można użyć **Szybkie uruchamianie** wyszukiwania kodu i symbole. **Szybkie uruchamianie** pole wyszukiwania znajduje się w prawym górnym rogu paska menu i jest dostępny, naciskając klawisz **Ctrl**+**Q**. W polu wpisz ciąg wyszukiwania. Do wyszukiwania ciągów zawierających @, użyj ”@@”. 
 
-**Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia**, **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
+**Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia** > **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.
 
 ## <a name="category-list"></a>Lista kategorii
 
-Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **Większość ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z liczbą elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz klawisze Ctrl + Q, aby Pokaż wszystkie wyniki z kategorii dalej. Po ostatnim kategoria zostanie wyświetlona, Ctrl + Q pokazuje kilka wyniki z każdej kategorii. Ctrl + Shift + Q służy do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
+Szybkie uruchomieni wyszukiwania są wyświetlane w czterech kategorii: **Większość ostatnio używane**, **menu**, **opcje**, i **otwarte dokumenty**, wraz z liczbą elementów w kategorii. Przechodzenie za pośrednictwem wyników wyszukiwania według kategorii, wybierz **Ctrl**+**Q** kluczy, aby wyświetlić wszystkie wyniki z kategorii dalej. Po wyświetleniu ostatnia Kategoria **Ctrl**+**Q** pokazano kilka wyniki z każdej kategorii. Naciśnij klawisz **Ctrl**+**Shift**+**Q** do nawigowania do kategorii w odwrotnej kolejności. Aby wyświetlić wszystkie wyniki wyszukiwania w kategorii, wybierz nazwę kategorii.
 
 Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określonej kategorii.
 
@@ -41,14 +42,12 @@ Można użyć następujących skrótów, aby ograniczyć wyszukiwanie do określ
 |Dokumenty|@doc<br /><br /> Na przykład:`@doc program.cs`|Ogranicza wyszukiwanie do nazw plików oraz ścieżek otwarte dokumenty kryteriów wyszukiwania, ale nie wyszukuje tekst wewnątrz same pliki.|
 
 > [!NOTE]
-> Klawisze skrótów można zmienić na **ogólne**, **klawiatury** strony w **opcje** okno dialogowe.
+> Klawisze skrótów można zmienić na **ogólne** > **klawiatury** strony w **opcje** okno dialogowe.
 
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
 
 Domyślnie termin wyszukiwania, które można wprowadzić nie są utrwalane między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczone, jeśli wyszukasz termin, przesuń kursor poza **Szybkie uruchamianie** obszaru, a następnie przejdź kopii. Do przechowywania wyników wyszukiwania, przejdź do **opcje** okna dialogowego wybierz **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki poprzedniego wyszukiwania gdy pasek Szybkie uruchamianie jest aktywny.** Pole wyboru. Następnym razem, przeprowadź wyszukiwanie lub pozostaw obszaru szybkiego uruchamiania, a wrócić, szybkiego uruchamiania będzie zachowują wyszukiwany termin, ostatnio używane i również wyświetlanie wyników wyszukiwania.
 
-Aby uzyskać najnowsze porady i wskazówki dotyczące korzystania z **Szybkie uruchamianie**, zobacz [Blog dotyczący programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
-
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

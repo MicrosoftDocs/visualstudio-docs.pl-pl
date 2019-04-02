@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194421"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790163"
 ---
 # <a name="create-an-options-page"></a>Tworzenie strony opcji
 
@@ -101,7 +101,7 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
 
      W okienku po lewej stronie powinien zostać wyświetlony **Moje kategorii**. (Opcje kategorie są wymienione w kolejności alfabetycznej, więc powinien pojawiać się o widoczny w połowie listę w dół.) Otwórz **Moje kategorii** a następnie kliknij przycisk **Moja strona siatki**. Siatka opcji jest wyświetlana w okienku po prawej stronie. Kategoria właściwości jest **Moje opcje**, i nazwa właściwości jest **Moje opcji całkowitą**. Opis właściwości **Moje opcji całkowitą**, pojawi się u dołu okienka. Zmień wartość ze swojej wartości początkowej, 256 się czymś innym. Kliknij przycisk **OK**, a następnie ponownie otwórz **Moja strona siatki**. Aby zobaczyć, że nowa wartość będzie się powtarzać.
 
-     Opcje strony jest również dostępna za pośrednictwem szybkiego uruchamiania programu Visual Studio. W oknie szybkiego uruchamiania w prawym górnym rogu IDE wpisz **Moje kategorii** i zostanie wyświetlony **kategorii My -> Moja strona siatki** na liście rozwijanej.
+     Strony opcji jest również dostępna za pośrednictwem programu Visual Studio pola wyszukiwania. Wpisz w polu wyszukiwania w górnej części IDE **Moje kategorii** zostaną wyświetlone **kategorii My -> Moja strona siatki** na liście wyników.
 
 ## <a name="create-a-tools-options-custom-page"></a>Tworzenie niestandardowej strony opcji narzędzi
 

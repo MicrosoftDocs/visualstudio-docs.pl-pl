@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dbd24ba98ad3f1b4f24a68c9775b1022ea08f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970312"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789150"
 ---
 # <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
@@ -38,7 +38,7 @@ Aby uzyskać więcej informacji na temat zasobów w aplikacjach klasycznych .NET
 W projekcie kodu zarządzanego Otwórz okno właściwości projektu. W oknie właściwości można otworzyć przez:
 
 - Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierając polecenie **właściwości**
-- Wpisz "właściwości projektu" w **Szybkie uruchamianie** okna
+- Wpisywanie **właściwości projektu** w **Ctrl**+**Q** pole wyszukiwania
 - Wybieranie **Alt**+**wprowadź** w **Eksploratora rozwiązań**
 
 Wybierz **zasobów** kartę. Możesz dodać *resx* plik, jeśli projekt nie zawiera jeden już, dodawanie i usuwanie różnych rodzajów zasobów i zmodyfikowania istniejących zasobów.

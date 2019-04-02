@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916886"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790852"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
 
@@ -35,11 +35,11 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
  Aby uzyskać informacje o tworzeniu plików kluczy, zobacz [jak: Tworzenie pary kluczy publiczny prywatny](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] obsługuje tylko te kluczowe pliki wymiany informacji osobistych (PFX), które mają *PFX* rozszerzenia. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.
+> Program Visual Studio obsługuje tylko te klucza pliki wymiany informacji osobistych (PFX), które mają *PFX* rozszerzenia. Jednak można wybrać inne typy certyfikatów z magazynu certyfikatów Windows bieżącego użytkownika, klikając **wybierać Store** na **podpisywanie** strony właściwości projektu.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Aby oznaczyć aplikację i wdrażania manifestów za pomocą certyfikatu
+## <a name="sign-using-a-certificate"></a>Zaloguj się przy użyciu certyfikatu
 
-1.  Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typu **właściwości projektu** w **Szybkie uruchamianie** okna lub naciśnij klawisz **Alt**+**Enter** wewnątrz **Eksploratora rozwiązań**). Na **podpisywanie** zaznacz **Podpisz manifesty ClickOnce** pole wyboru.
+1.  Przejdź do okna właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**). Na **podpisywanie** zaznacz **Podpisz manifesty ClickOnce** pole wyboru.
 
 2.  Kliknij przycisk **wybierać Store** przycisku.
 
@@ -52,7 +52,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 
 4.  Ponadto można określić adres serwera znacznika czasowego w **adres URL serwera znacznika czasowego** pola tekstowego. Jest to serwer zapewniający znacznik czasu określający kiedy manifest została podpisana.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Aby oznaczyć aplikację i wdrażania manifestów za pomocą istniejącego pliku kluczowego
+## <a name="sign-using-an-existing-key-file"></a>Zaloguj się przy użyciu istniejącego pliku kluczowego
 
 1.  Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
 
@@ -69,7 +69,7 @@ Jeśli chcesz opublikować aplikację za pomocą wdrażania ClickOnce, manifest�
 
 4.  Wprowadź hasło, aby uzyskać dostęp do pliku klucza i naciśnij klawisz **Enter**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Aby oznaczyć aplikację i wdrażania manifestów za pomocą certyfikatu testu
+## <a name="sign-using-a-test-certificate"></a>Zaloguj się przy użyciu certyfikatu testowego
 
 1.  Na **podpisywanie** wybierz opcję **Podpisz manifesty ClickOnce** pole wyboru.
 

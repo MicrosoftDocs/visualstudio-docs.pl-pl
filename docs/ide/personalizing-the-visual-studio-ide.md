@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708774"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790241"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 
@@ -31,20 +31,20 @@ Wiele opcji personalizacji są udostępniane za pośrednictwem [opcje środowisk
 
 - Na pasku menu wybierz **narzędzia** > **opcje**, a jeśli jeszcze nie jest rozwinięta, rozwiń węzeł **środowiska** węzła.
 
-- Typ `environment` w **Szybkie uruchamianie** pole, a następnie wybierz **środowiska--> Ogólne** z listy wyników.
+- Naciśnij klawisz **Ctrl**+**Q**, typ **środowiska** w wyszukiwaniu, a następnie wybierz **środowiska--> Ogólne** z wyniki.
 
-   > [!TIP]
-   > Gdy pojawi się okno dialogowe, możesz nacisnąć przycisk **F1** Aby uzyskać pomoc dotyczącą różne ustawienia na tej stronie.
+> [!TIP]
+> Gdy pojawi się okno dialogowe Opcje, możesz nacisnąć przycisk **F1** Aby uzyskać pomoc dotyczącą różne ustawienia na tej stronie.
 
 ## <a name="environment-color-themes"></a>Motywy kolorów środowiska
 
-Aby zmienić motyw kolorów między jasny i ciemny niebieski, typ `environment` w **Szybkie uruchamianie** , a następnie wybierz **środowiska--> Ogólne**. W **opcje** okno dialogowe, zmiana **motyw kolorów** opcji.
+Aby zmienić motyw kolorów między jasny i ciemny niebieski, typ **środowiska** do wyszukiwania, a następnie wybierz **środowiska--> Ogólne**. W **opcje** okno dialogowe, zmiana **motyw kolorów** opcji.
 
-Aby zmienić opcje kolorowanie w edytorze, wpisz `environment` w **Szybkie uruchamianie** , a następnie wybierz **środowiska--> czcionki i kolory**. Zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Aby zmienić opcje kolorowanie w edytorze, wpisz **środowiska** do wyszukiwania, a następnie wybierz **środowiska--> czcionki i kolory**. Zobacz [jak: Zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Wielkość liter w wyrazie menu głównego
 
-Możesz zmienić menu głównego wielkość liter w wyrazie między **wielkimi literami** ("plik") i **wersalikami** ("plik"). Typ `environment` w **Szybkie uruchamianie** wybierz opcję **środowiska--> Ogólne**, a następnie zmień **dotyczą stylów przypadków tytuł paska menu** opcji.
+Możesz zmienić menu głównego wielkość liter w wyrazie między **wielkimi literami** ("plik") i **wersalikami** ("plik"). Typ **środowiska** w polu wyszukiwania, wybierz **środowiska--> Ogólne**, a następnie zmień **dotyczą stylów przypadków tytuł paska menu** opcji.
 
 ### <a name="customize-menus-and-toolbars"></a>Dostosowywanie menu i pasków narzędzi
 

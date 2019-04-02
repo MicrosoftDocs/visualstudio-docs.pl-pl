@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: c9e1540e782cb5423ffc82ccfb46b9376842762f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475958"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789546"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie przy użyciu języka C++, za pomocą debugera programu Visual Studio
 
@@ -28,7 +28,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **c ++**, wybierz **szablony**, następnie wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **c ++**, wybierz **szablony**, następnie wybierz **Tworzenie nowego projektu aplikacji Konsolowej**. W oknie dialogowym wybierz **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **konsoli Windows Aplikacja**. Następnie wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.

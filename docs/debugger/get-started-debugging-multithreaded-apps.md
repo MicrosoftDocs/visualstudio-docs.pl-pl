@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475997"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790254"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpoczynanie debugowania aplikacji wielowątkowych (C#, Visual Basic, C++)
 
@@ -41,8 +41,8 @@ Musisz mieć projekt aplikacji wielowątkowych. Poniżej przedstawiono przykład
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
-    
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli** (lub **c ++**), wybierz **szablony**, a następnie:
+
     - Aby uzyskać C# lub Visual Basic, wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla dowolnego C# lub Visual Basic. W oknie dialogowym wybierz **Utwórz**.
     - Dla języka C++, wybierz **Tworzenie nowego projektu aplikacji Konsolowej** dla języka C++. W oknie dialogowym wybierz **Utwórz**.
 

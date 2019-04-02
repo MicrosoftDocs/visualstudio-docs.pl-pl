@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 3df55c70c476288df7ae8f966adbad644971b27e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953526"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790696"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio opinie o produkcie
 
@@ -24,7 +24,7 @@ Porozmawiaj z nami! Jesteśmy zainteresowani pomysłami dotyczącymi poprawy nas
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Chcę zgłosić problem z programem Visual Studio
 
-Jeśli masz problemy z programem Visual Studio&mdash;takich jak awarie, wolna wydajności lub nieoczekiwane zachowanie&mdash;Daj nam znać za pomocą **Zgłoś Problem** narzędzia. W programie Visual Studio, wybierz ikonę opinii **Szybkie uruchamianie**, lub wybierz **pomocy** > **Wyślij opinię** > **raportu Problem** z paska menu. Następnie zostanie otwarty program Visual Studio [społeczności deweloperów](https://developercommunity.visualstudio.com) strony w przeglądarce, gdzie możesz zalogować się do zgłosić problem. Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Jeśli masz problemy z programem Visual Studio&mdash;takich jak awarie, wolna wydajności lub nieoczekiwane zachowanie&mdash;Daj nam znać za pomocą **Zgłoś Problem** narzędzia. W programie Visual Studio, wybierz ikonę opinii, obok pola wyszukiwania, lub wybierz **pomocy** > **Wyślij opinię** > **Zgłoś Problem** z menu pasek. Następnie zostanie otwarty program Visual Studio [społeczności deweloperów](https://developercommunity.visualstudio.com) strony w przeglądarce, gdzie możesz zalogować się do zgłosić problem. Aby uzyskać więcej informacji, zobacz [jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Czy chcesz sugestię o funkcje programu Visual Studio
 

@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476010"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790319"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -55,7 +55,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **pusty projekt**, wybierz **szablony**, następnie wybierz **Utwórz nowy pusty projekt** dla języka C ++. W oknie dialogowym wybierz **Utwórz**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **pusty projekt**, wybierz **szablony**, następnie wybierz **Utwórz nowy pusty projekt** dla języka C ++. W oknie dialogowym wybierz **Utwórz**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C++**, wybierz **innych**, a następnie w środkowym okienku wybierz **pusty projekt**. Następnie wpisz nazwę, takich jak **Mixed_Mode_Debugging** i kliknij przycisk **OK**.
@@ -132,7 +132,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 1. Otwórz program Visual Studio i Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, a następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla C#. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, a następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Framework)** dla C#. W oknie dialogowym wybierz **Utwórz**.
 
     Następnie wpisz nazwę, takich jak **Mixed_Mode_Calling_App** i kliknij przycisk **Utwórz**.
     ::: moniker-end

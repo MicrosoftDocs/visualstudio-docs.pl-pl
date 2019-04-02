@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b7d9c5b063b05698480f1cb193078a6af2a6749
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957471"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790891"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
 
@@ -57,7 +57,7 @@ Ogólnie rzecz biorąc nie powinien utworzyć pliki wykonywalne. Składnik silne
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak zarejestrować zestaw w programie Visual Studio
 
-Podpisywania aplikacji lub składnika przy użyciu **podpisywanie** karty w oknie właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typu **właściwości projektu** w **Szybkie uruchamianie** okna lub naciśnij klawisz **Alt**+**Enter** wewnątrz **Eksploratora rozwiązań**). Wybierz **podpisywanie** kartę, a następnie wybierz **Podpisz zestaw** pole wyboru.
+Podpisywania aplikacji lub składnika przy użyciu **podpisywanie** karty w oknie właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**). Wybierz **podpisywanie** kartę, a następnie wybierz **Podpisz zestaw** pole wyboru.
 
 Określ plik klucza. Jeśli zdecydujesz się utworzyć nowy plik klucza, nowe pliki klucza są zawsze tworzone w *PFX* formatu. Należy nazwę i hasło dla nowego pliku.
 

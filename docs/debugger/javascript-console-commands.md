@@ -1,7 +1,7 @@
 ---
 title: Polecenia konsoli JavaScript | Dokumentacja firmy Microsoft
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701956"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790774"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
 
-Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji platformy uniwersalnej systemu Windows i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Node.js utworzone za pomocą programu Visual Studio z **programowania Node.js** zainstalowanym obciążeniem.
+::: moniker-end
+::: moniker range="vs-2017"
+Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak można użyć tego okna, zobacz [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji Node.js, platformy uniwersalnej systemu Windows aplikacje i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.
 
 > [!NOTE]
 > Jeśli okno nie jest dostępne podczas sesji debugowania, upewnij się, że typ debugera jest ustawiona na **skryptu** właściwości debugowania projektu.
+
+Aby uzyskać informacje na temat używania konsoli narzędzi dla deweloperów programu Microsoft Edge, zobacz [w tym temacie](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Konsola obiektu polecenia
 W poniższej tabeli przedstawiono składnię `console` obiekt polecenia, można użyć w oknie konsoli języka JavaScript lub służącego do wysyłania komunikatów do konsoli w kodzie. Ten obiekt udostępnia wiele form tak, aby rozróżnić komunikaty informacyjne i komunikaty o błędach, jeśli chcesz.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Szybki start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Szybki start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

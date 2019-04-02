@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324084"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790683"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Witamy w środowisku IDE programu Visual Studio | Visual Basic
 
@@ -102,22 +102,24 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
    ::: moniker-end
 
-- [Szybkie uruchamianie](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Pole wyszukiwania
 
-   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. **Szybkie uruchamianie** pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, **Szybkie uruchamianie** zapewnia wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
+   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, pole wyszukiwania zawiera wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
 
    > [!TIP]
-   > Naciśnij klawisz **Ctrl**+**Q** jako skrót do **Szybkie uruchamianie** pola wyszukiwania.
+   > Naciśnij klawisz **Ctrl**+**Q** jako skrót do pola wyszukiwania.
 
    ::: moniker range="vs-2017"
 
    ![Szybkie uruchamianie pola wyszukiwania w programie Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Aby uzyskać więcej informacji, zobacz [Szybkie uruchamianie](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Szybkiego uruchamiania pola wyszukiwania w programie Visual Studio 2019 r.](media/vs-2019/quick-launch.png)
+   ![Pole wyszukiwania w programie Visual Studio 2019 r.](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

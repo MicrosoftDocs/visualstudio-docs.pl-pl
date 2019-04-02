@@ -2,7 +2,7 @@
 title: Usuwanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak całkowicie usunąć program Visual Studio z komputera, krok po kroku.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322720"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790124"
 ---
 # <a name="remove-visual-studio"></a>Usuwanie programu Visual Studio
 
-Jeśli występują z powodu błędu krytycznego i nie można naprawić lub odinstalować program Visual Studio, możesz uruchomić `InstallCleanup.exe` narzędzie, aby usunąć pliki instalacyjne oraz informacje o produkcie dla wszystkich zainstalowanych wystąpień programu Visual Studio 2017 i nowsze wersje. Uruchamianie tego narzędzia ma zostać wykonane w ostateczności, jeśli napraw lub odinstaluj kończyć się niepowodzeniem i może odinstalować funkcji z inne instalacje programu Visual Studio lub innych produktów, które będą musiały zostać naprawiony.
+Jeśli występują z powodu błędu krytycznego i nie można naprawić lub odinstalować program Visual Studio, możesz uruchomić `InstallCleanup.exe` narzędzie, aby usunąć pliki instalacyjne oraz informacje o produkcie dla wszystkich zainstalowanych wystąpień programu Visual Studio 2017 lub Visual Studio 2019 r. Uruchamianie tego narzędzia ma być przeprowadzane tylko w ostateczności jeśli napraw lub odinstaluj kończyć się niepowodzeniem i może odinstalować funkcji z inne instalacje programu Visual Studio lub innych produktów, które następnie może także zajść potrzeba naprawy.
 
 W poniższych instrukcjach można uruchomić narzędzie z różnych przełączników wiersza polecenia przy użyciu następujące zachowanie:
 
@@ -42,8 +42,7 @@ W poniższych instrukcjach można uruchomić narzędzie z różnych przełączni
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Otwórz wiersz polecenia administratora. Aby otworzyć wiersz polecenia administratora, wykonaj następujące kroki:
-   * Kliknij przycisk **Start** menu
-   * Typ **cmd**.
+   * Typ **cmd** w polu "Wpisz tutaj, aby wyszukać".
    * Kliknij prawym przyciskiem myszy pozycję **Wiersz polecenia**, a następnie kliknij polecenie **Uruchom jako administrator**.
 3. Wpisz pełną ścieżkę `InstallCleanup.exe` narzędzia i niezależnie od przełącznika wiersza polecenia, które chcesz przekazać. Domyślnie ścieżkę narzędzia jest następująca:
    ```

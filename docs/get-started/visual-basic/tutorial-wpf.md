@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26808d1f7bb2e140ee3d70a8d8917e0e31dc7f4b
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515392"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790306"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji za pomocą Visual Basic
 
@@ -53,7 +53,7 @@ Po uruchomieniu programu Visual Studio, zostaną wyświetlone okna narzędzi, me
 
 ::: moniker range=">=vs-2019"
 
-Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczęcia. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędzi są zadokowane po lewej i prawej stronie okna aplikacji za pomocą **Szybkie uruchamianie**, pasek menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
+Po uruchomieniu programu Visual Studio, najpierw zostanie otwarte okno rozpoczęcia. Wybierz **Kontynuuj bez konieczności pisania kodu** otworzyć środowisko programistyczne. Zobaczysz okien narzędzi, menu i paski narzędzi oraz przestrzeń głównego okna. Okna narzędziowe są zadokowane po lewej i prawej stronie okna aplikacji przy użyciu pola wyszukiwania, na pasku menu i standardowy pasek narzędzi u góry. Podczas ładowania rozwiązania lub projektu, edytory i projektanty są wyświetlane w centralne miejsce w oknie aplikacji. Podczas opracowywania aplikacji spędzisz większość czasu w tym środkowym obszarze.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Zostanie dodany do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Contr
 
 ### <a name="add-a-textblock-control"></a>Dodaj formant TextBlock
 
-1.  Wprowadź **Ctrl**+**Q** do wywołania **Szybkie uruchamianie** i typ **przybornika**. Wybierz **Widok > przybornika** z listy wyników.
+1.  Wprowadź **Ctrl**+**Q** aktywować pole wyszukiwania i wpisz **przybornika**. Wybierz **Widok > przybornika** z listy wyników.
 
 2. W **przybornika**, rozwiń węzeł **wspólnych formantów WPF** węzeł, aby zobaczyć kontrolkę TextBlock.
 

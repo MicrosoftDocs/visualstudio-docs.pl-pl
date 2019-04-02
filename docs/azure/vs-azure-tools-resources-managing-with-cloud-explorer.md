@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 97b6d27c676af1fb5d4a81778c708a3ad036c601
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194696"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789254"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -28,7 +28,7 @@ Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz to zrobić [utworzyć konto bezpłatnej wersji próbnej](http://go.microsoft.com/fwlink/?LinkId=623901) lub [aktywować korzyści dla subskrybentów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Aby wyświetlić programu Cloud Explorer, naciśnij klawisz **Ctrl**+**funkcji pytania i odpowiedzi** do wywołania **Szybkie uruchamianie**, a następnie wprowadź **Eksploratora chmury**.
+> Aby wyświetlić programu Cloud Explorer, naciśnij klawisz **Ctrl**+**Q** aktywować pole wyszukiwania, a następnie wprowadź **programu Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Dodaj platformę Azure konta do Eksploratora chmury
 

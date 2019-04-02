@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476049"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789396"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -85,13 +85,13 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, następnie wybierz **Utwórz nową aplikację konsoli (.NET Framework)** lub **Utwórz nową aplikację konsoli (.NET Core)**. W oknie dialogowym wybierz **Utwórz**. Wpisz nazwę, takich jak **ConsoleApp FirstApp** i kliknij przycisk **Utwórz**.
+    W oknie rozpoczęcia wybierz **Utwórz nowy projekt**. Typ **konsoli** w wyszukiwaniu pole, a następnie wybierz **Aplikacja konsoli (.NET Framework)** lub **Aplikacja konsoli (.NET Core)**. Wybierz **dalej**. Wpisz nazwę projektu, takich jak **ConsoleApp FirstApp** i kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **aplikacja Konsolowa**, a następnie w środkowym okienku wybierz **aplikacji konsoli (.NET framework)**  lub **konsoli aplikacji (.NET Core)**. Wpisz nazwę, takich jak **ConsoleApp FirstApp** i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli nie widzisz **Aplikacja konsoli (.NET Framework)** lub **Aplikacja konsoli (.NET Core)** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i Funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia lub **platformy .NET Core programowanie wieloplatformowych** obciążenia, wybierz **Modyfikuj**.
+    Jeśli nie widzisz **Aplikacja konsoli (.NET Framework)** lub **Aplikacja konsoli (.NET Core)** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i Funkcje**, która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia lub **platformy .NET Core programowanie wieloplatformowych** obciążenia, wybierz **Modyfikuj**.
 
     Program Visual Studio tworzy projekt konsoli, która jest wyświetlana w Eksploratorze rozwiązań w okienku po prawej stronie.
 

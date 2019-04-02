@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355766"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789916"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
 
@@ -66,7 +66,7 @@ Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, o
 
 - **Wyświetlenie tylko błędów, które mają adres**. Jeśli wybierzesz **filtru** znajdujący się na **lista błędów** narzędzi, można zmniejszyć liczbę błędów, które pojawiają się w **lista błędów** okna. Możesz wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można również wyszukiwać **lista błędów** okna, aby znaleźć określone błędy.
 
-- **Znajdowanie okien dialogowych, poleceń, opcji i**. W [Szybkie uruchamianie](../ide/reference/quick-launch-environment-options-dialog-box.md) polu wyszukiwania, wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład, poniższe opcje pojawiają się po wprowadzeniu **nowy projekt**:
+- **Znajdowanie okien dialogowych, poleceń, opcji i**. W polu wyszukiwania wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład, poniższe opcje pojawiają się po wprowadzeniu **nowy projekt**:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, o
 
    ::: moniker range=">=vs-2019"
 
-   ![Szybkie uruchomieni wyszukiwania dla "nowego projektu"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Wyniki wyszukiwania dla "nowego projektu"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Naciśnij klawisz **Ctrl**+**Q** przejść bezpośrednio do **Szybkie uruchamianie** pola wyszukiwania.
+   Naciśnij klawisz **Ctrl**+**Q** przejść bezpośrednio do pola wyszukiwania.
 
 ## <a name="debug-code"></a>Możliwe jest debugowanie kodu
 

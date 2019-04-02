@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043768"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790384"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy UWP przy użyciu programu Visual Studio
 
@@ -76,7 +76,7 @@ Wdrożenie używa zdalny debuger kanał sieciowy do wysyłania plików aplikacji
 
     **Połączenia zdalnego** okno dialogowe wyświetla urządzenia w podsieci sieci lokalnej i dowolnego urządzenia podłączonego bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet.
 
-   **Określanie urządzenie zdalne, na stronie projektu języka Visual C++ lub JavaScript**
+   **Określanie urządzenie zdalne, na stronie projektu Visual C++**
 
    ![C&#43; &#43; właściwości dla zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Aby usunąć wykluczenie sprzężenie zwrotne sieci z poziomu aplikacji:
 
 - Na C# i debugowania języka Visual Basic strony właściwości, wyczyść **Zezwalaj na sprzężenie zwrotne sieci** pole wyboru.
 
-- Na stronie właściwości języka JavaScript i debugowania, ustaw **Zezwalaj na sprzężenie zwrotne sieci** wartość **nie**.
+- Na stronie właściwości debugowania języka C++, należy ustawić **Zezwalaj na sprzężenie zwrotne sieci** wartość **nie**.
 
-**Nie uruchamiaj, ale Debuguj kod przy rozpoczęciu (C# i Visual Basic) / uruchamianie aplikacji (JavaScript i C++)**
+**Nie uruchamiaj, ale Debuguj kod przy rozpoczęciu (C# i Visual Basic) / uruchamianie aplikacji (C++)**
 
 Aby skonfigurować wdrożenie, aby automatycznie uruchomić sesję debugowania, gdy aplikacja jest uruchamiana:
 
 - Na C# i debugowania języka Visual Basic strony właściwości, sprawdź **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu** pole wyboru.
 
-- Na stronie właściwości języka JavaScript i debugowania, ustaw **Uruchom aplikację** wartość **tak**.
+- Na stronie właściwości debugowania języka C++, należy ustawić **Uruchom aplikację** wartość **tak**.
 
 ## <a name="see-also"></a>Zobacz też
 
