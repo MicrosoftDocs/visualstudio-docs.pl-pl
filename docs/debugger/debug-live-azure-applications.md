@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428742"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857479"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
@@ -50,40 +50,29 @@ W tym samouczku wykonasz następujące czynności:
 
     > [!IMPORTANT]
     > Do debugowania migawki, należy otworzyć *tę samą wersję kodu źródłowego* , są publikowane w usłudze Azure App Service.
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2017"
 
 2. W programie Cloud Explorer (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy projekt jest wdrażany do usługi Azure App Service i wybierz **dołączyć rozszerzenie Snapshot Debugger**.
 
    ![Uruchamianie rozszerzenia snapshot debugger](../debugger/media/snapshot-launch.png)
 
-    Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger**, zostanie wyświetlony monit zainstalować rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
-
 ::: moniker-end
-::: moniker range=">= vs-2019"
-2. Dołączanie rozszerzenia Snapshot Debugger. Można użyć jednej z kilku różnych metod:
-
-    * Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz projekt jest wdrażany do usługi Azure App Service i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
+::: moniker range=">=vs-2019"
+2. Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz projekt jest wdrażany do usługi Azure App Service i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
 
       ![Uruchamianie rozszerzenia snapshot debugger z menu Debugowanie](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Kliknij prawym przyciskiem myszy na projekt i wybierz **Publikuj**, a następnie na stronie kliknij przycisk Publikuj **dołączyć rozszerzenie Snapshot Debugger**. Wybierz projekt jest wdrażany do usługi Azure App Service i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
-    ![Uruchamianie rozszerzenia snapshot debugger ze strony publikacji](../debugger/media/snapshot-publish-attach.png)
+      ![Wybierz zasób platformy Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
-    * Podczas debugowania docelowe menu rozwijanego wybierz opcję **rozszerzenia Snapshot Debugger**, trafień **F5** i jeśli to konieczne, wybierz opcję wdrażania projektu usługi Azure App Service i Azure storage konta, a następnie kliknij przycisk  **Dołącz**.
-    ![Uruchamianie rozszerzenia snapshot debugger z menu rozwijanego F5](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Za pomocą Eksploratora chmury (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy projekt jest wdrażany do usługi Azure App Service i wybierz konto magazynu platformy Azure, a następnie kliknij **dołączyć rozszerzenie Snapshot Debugger**.
-
-      ![Uruchamianie rozszerzenia snapshot debugger Eksploratora chmury](../debugger/media/snapshot-launch.png)
-
-    Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger**, zostanie wyświetlony monit zainstalować rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
 ::: moniker-end
 
-   Program Visual Studio jest teraz w trybie debugowania migawek.
+  > [!IMPORTANT]
+  > Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger**, zostanie wyświetlony monit zainstalować rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service. Ta instalacja wymaga ponownego uruchomienia usługi Azure App Service.
 
   > [!NOTE]
   > Rozszerzenie witryny usługi Application Insights obsługuje również debugowania migawek. Jeśli wystąpią "rozszerzenie nieaktualna witryny" komunikat o błędzie, zobacz [rozwiązania problemu wskazówki i znanych problemów dotyczących debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md) dla uaktualnienie szczegółowe informacje.
 
+   Program Visual Studio jest teraz w trybie debugowania migawek.
    ![Tryb debugowania migawek](../debugger/media/snapshot-message.png)
 
    **Modułów** okna dowiesz się, gdy wszystkie moduły zostały załadowane dla usługi Azure App Service (wybierz **Debuguj > Windows > modułów** otworzyć to okno).
@@ -123,7 +112,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
+**Czy potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 
@@ -157,7 +146,7 @@ Oprócz wykonywania migawki po trafieniu punktu przyciągania, można również 
 
     Jeśli wybierzesz **Wyślij do okna danych wyjściowych**, gdy zostanie osiągnięty punkt rejestrowania komunikat jest wyświetlany w oknie narzędzia diagnostyczne.
 
-    ![Punkt rejestrowania danych w oknie sesji diagnostycznej](../debugger/media/snapshot-logpoint-output.png)
+    ![Punkt rejestrowania danych w oknie narzędzia diagnostyczne](../debugger/media/snapshot-logpoint-output.png)
 
     Jeśli wybierzesz **Wyślij do dziennika aplikacji**, gdy zostanie osiągnięty punkt rejestrowania, komunikat pojawi się gdziekolwiek zobaczyć komunikaty z `System.Diagnostics.Trace` (lub `ILogger` platformie .NET Core), takich jak [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 791d9291367e9cca6acf7fbedc6164ddb52e7d82
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790397"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857428"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -52,8 +52,8 @@ Inne obsługiwane programów inicjujących obejmują [vs_buildtools.exe](https:/
 
 |Wersja | Pobieranie|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 
 Inne obsługiwane programów inicjujących obejmują [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe), i [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
@@ -222,7 +222,7 @@ Podczas instalacji z układu, zawartość, która jest zainstalowana jest uzyski
 
 Jeśli użyto `--wait` parametru, a następnie w zależności od wyniku operacji, `%ERRORLEVEL%` zmienna środowiskowa jest ustawiony na jedną z następujących wartości:
 
-  | **Wartość** | **wynik** |
+  | **Wartość** | **Wynik** |
   | --------- | ---------- |
   | 0 | Operacja została ukończona pomyślnie |
   | 3010 | Operacja ukończona pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można jej używać. |
@@ -248,7 +248,7 @@ Podczas aktualizacji produktów są dostępne, może okazać się konieczne [akt
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Programów inicjujących w programie Visual Studio, które są dostępne na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) Pobierz i zainstaluj najnowszą wersję programu Visual Studio, który jest dostępny zawsze, gdy są uruchamiane.
+> Programów inicjujących w programie Visual Studio, które są dostępne na [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) Pobierz i zainstaluj najnowszą wersję programu Visual Studio, który jest dostępny zawsze, gdy są uruchamiane.
 > 
 > Dlatego możesz pobrać program Visual Studio *programu inicjującego* już dziś i uruchom go sześciu miesięcy od teraz, instaluje wersję programu Visual Studio, są aktualne w momencie, uruchom program inicjujący.
 > 
@@ -270,6 +270,6 @@ Inne opcje pomocy technicznej dostępne, mamy zbyt. Aby uzyskać listę, zobacz 
 
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790319"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856505"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Samouczek: Debugowanie C# i C++ w tej samej sesji debugowania
 
@@ -44,7 +44,7 @@ Konieczne jest posiadanie programu Visual Studio, z następującymi pakietami ro
 - **Programowanie aplikacji klasycznych w języku C++**
 - Albo **programowanie aplikacji klasycznych dla platformy .NET** lub **platformy .NET Core programowanie wieloplatformowych**, w zależności od typu aplikacji, którą chcesz utworzyć.
 
-Jeśli nie masz programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli nie masz programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
 
 Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Otwórz Instalator programu Visual Studio** w okienku po lewej stronie programu Visual Studio **nowy projekt** okno dialogowe. W Instalatorze programu Visual Studio, wybierz obciążenia potrzebujesz, a następnie wybierz **Modyfikuj**.
 
@@ -193,7 +193,7 @@ Jeśli zainstalowano program Visual Studio, ale nie ma obciążenia wybierz **Ot
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Aby skonfigurować debugowanie w trybie mieszanym dla aplikacji platformy .NET Core
 
-W większości wersji programu Visual Studio 2017, musisz użyć *launchSettings.json* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji platformy .NET Core. Aby śledzić aktualizacje interfejsu użytkownika dla tej funkcji, zobacz ten [problem w usłudze GitHub](https://github.com/dotnet/project-system/issues/1125).
+W większości wersji programu Visual Studio, począwszy od programu Visual Studio 2017, musisz użyć *launchSettings.json* pliku zamiast właściwości projektu, aby włączyć debugowanie w trybie mieszanym dla kodu natywnego w aplikacji platformy .NET Core. Aby śledzić aktualizacje interfejsu użytkownika dla tej funkcji, zobacz ten [problem w usłudze GitHub](https://github.com/dotnet/project-system/issues/1125).
 
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **właściwości**, a następnie otwórz *launchSettings.json* pliku.
 
