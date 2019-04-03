@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2fd172de3791006688c5d9542a7d8c353bc4831e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 28194f007066c1fd39e3a26dd4a8c0e99e118059
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789569"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857232"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
-Program Visual Studio 2017 zapewnia lepszą obsługę [Vue.js](https://vuejs.org/) struktury, która ulepsza środowisko projektowania, podczas tworzenia aplikacji przy użyciu Vue.js, JavaScript i TypeScript.
+Program Visual Studio obsługuje tworzenie aplikacji za pomocą [Vue.js](https://vuejs.org/) framework w JavaScript i TypeScript.
 
 Następujące nowe funkcje obsługi opracowywania aplikacji Vue.js w programie Visual Studio:
 
