@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 3bf7b25ccbcb964572c3ae302523cd5a540829c8
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ee0b30fcbd25ada25941efa12083c662eff83f78
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323528"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856669"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Utwórz aplikację obsługującą wiele kontenerów przy użyciu narzędzia Docker Compose
 
@@ -28,7 +28,7 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednego kontenera i k
 
 ::: moniker range=">= vs-2019"
 * [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
 * [Narzędzia programistyczne programu .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) podczas tworzenia aplikacji z platformy .NET Core 2.2
 ::: moniker-end
 

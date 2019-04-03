@@ -1,7 +1,7 @@
 ---
 title: Sterowanie aktualizacjami na potrzeby wdrożenia
 description: Dowiedz się, jak zmienić, gdzie Visual Studio szuka aktualizacji podczas instalacji z sieci.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54adaf3cdcbb8e15ada46a660de59f9b578e15f8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323058"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856291"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio
 
@@ -34,52 +34,77 @@ Jeśli ma bezpośrednią kontrolę nad którym szuka aktualizacji programu Visua
 
 1. Tworzenie układu offline:
    ```cmd
-   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
 2. Skopiuj go do udziału plików, w którym chcesz udostępnić go:
    ```cmd
-   xcopy /e C:\vs2017offline \\server\share\VS2017
+   xcopy /e C:\vsoffline \\server\share\VS
    ```
 3. Zmodyfikuj plik response.json w układ i zmiana `channelUri` wartość, aby wskazać kopię channelManifest.json, który kontroluje administrator.
 
    Pamiętaj anulować ukośników odwrotnych w wartości, jak w poniższym przykładzie:
 
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
    Obecnie użytkownicy końcowi mogą uruchomić Instalatora z tego udziału, aby zainstalować program Visual Studio.
    ```cmd
-   \\server\share\VS2017\vs_enterprise.exe
+   \\server\share\VS\vs_enterprise.exe
    ```
 
 Gdy administrator przedsiębiorstwa ustali, nadszedł czas na swoich użytkowników zaktualizować do nowszej wersji programu Visual Studio, mogą oni [zaktualizować lokalizację układ](update-a-network-installation-of-visual-studio.md) zestawowi zaktualizowane pliki w następujący sposób.
 
 1. Użyj polecenia, który jest podobny do następującego polecenia:
    ```cmd
-   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 2. Upewnij się, że response.json plik w układzie zaktualizowane nadal zawiera dostosowania, w szczególności modyfikacji identyfikator channelUri w następujący sposób:
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
-   Istniejący program Visual Studio instaluje z tego układu Wyszukaj aktualizacje `\\server\share\VS2017\ChannelManifest.json`. Jeśli channelManifest.json jest nowsza niż co użytkownik zainstalował, Visual Studio powiadamia użytkownika, że dostępna jest aktualizacja.
+   Istniejący program Visual Studio instaluje z tego układu Wyszukaj aktualizacje `\\server\share\VS\ChannelManifest.json`. Jeśli channelManifest.json jest nowsza niż co użytkownik zainstalował, Visual Studio powiadamia użytkownika, że dostępna jest aktualizacja.
 
    Nowe instalacje automatycznie zainstalować zaktualizowaną wersję programu Visual Studio bezpośrednio z układu.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Kontrolowanie powiadomień w środowisku IDE programu Visual Studio
 
+::: moniker range="vs-2017"
+
 Visual Studio sprawdza lokalizacji, z którego został zainstalowany, takie jak udział sieciowy lub Internetu, aby zobaczyć, czy są dostępne aktualizacje, zgodnie z wcześniejszym opisem. Po udostępnieniu aktualizacji programu Visual Studio powiadamia użytkownika za pomocą flagi powiadomienia w prawym górnym rogu okna.
 
- ![Flaga powiadomienia dotyczące aktualizacji](media/notification-flag.png)
+   ![Flaga powiadomienia dotyczące aktualizacji](media/notification-flag.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio sprawdza lokalizacji, z którego został zainstalowany, takie jak udział sieciowy lub Internetu, aby zobaczyć, czy są dostępne aktualizacje, zgodnie z wcześniejszym opisem. Po udostępnieniu aktualizacji programu Visual Studio powiadamia użytkownika za pomocą ikony powiadomień w prawym dolnym rogu okna.
+
+   ![Ikony powiadomień w środowisku IDE programu Visual Studio](media/vs-2019/notification-bar.png "ikonę powiadomienia w środowisku IDE programu Visual Studio")
+
+::: moniker-end
 
 Możesz wyłączyć powiadomienia, jeśli nie chcesz, aby użytkownicy końcowi, aby otrzymywać powiadomienia o aktualizacji. (Na przykład możesz chcieć wyłączyć powiadomienia, jeśli dostarczania aktualizacji za pomocą mechanizmu dystrybucji oprogramowania w centralnej.)
+
+::: moniker range="vs-2017"
 
 Ponieważ program Visual Studio 2017 [wpisy rejestru są przechowywane w rejestrze prywatnym](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), nie można bezpośrednio edytować rejestru w typowy sposób. Jednak program Visual Studio obejmuje `vsregedit.exe` narzędzie, które można użyć, aby zmienić ustawienia programu Visual Studio. Można wyłączyć powiadomienia za pomocą następującego polecenia:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Ponieważ program Visual Studio 2019 [wpisy rejestru są przechowywane w rejestrze prywatnym](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), nie można bezpośrednio edytować rejestru w typowy sposób. Jednak program Visual Studio obejmuje `vsregedit.exe` narzędzie, które można użyć, aby zmienić ustawienia programu Visual Studio. Można wyłączyć powiadomienia za pomocą następującego polecenia:
+
+```cmd
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
 
 (Pamiętaj zastąpić katalogu, aby dopasować zainstalowane wystąpienie, które chcesz edytować.)
 
@@ -91,6 +116,6 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do zarządzania wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)

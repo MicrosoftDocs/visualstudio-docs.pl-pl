@@ -3,15 +3,15 @@ title: 'Instrukcje: Otwieranie wielu rozwiązań w programie Visual Studio dla k
 description: Dowiedz się, jak otworzyć więcej niż jednego rozwiązania w programie Visual Studio dla komputerów Mac i jak otworzyć więcej niż jedno wystąpienie aplikacji.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768246"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856347"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wielu rozwiązań lub wystąpienia programu Visual Studio dla komputerów Mac
 
@@ -21,11 +21,9 @@ Ponadto po otwarciu rozwiązania, zachowanie domyślne jest Otwórz rozwiązanie
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Otwórz drugie wystąpienie programu Visual Studio dla komputerów Mac
 
-Aby otworzyć drugie wystąpienie zintegrowanego środowiska programistycznego (IDE), otwórz **terminalu** aplikacji i wprowadź następujący wiersz:
+Aby otworzyć drugie wystąpienie zintegrowanego środowiska programistycznego (IDE), kliknij prawym przyciskiem myszy ikonę programu Visual Studio w swoje dock lub **aplikacje** folder, a następnie wybierz **nowe wystąpienie**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Zrzut ekranu nowego wystąpienia opcji menu klikniętego prawym przyciskiem myszy ikonę programu Visual Studio](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Otwórz drugie rozwiązanie wewnątrz pojedynczego wystąpienia
 

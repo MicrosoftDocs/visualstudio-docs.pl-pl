@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 02/27/2019
+ms.date: 04/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,119 +15,57 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bf42ea6c6cb3dfc14594ea5e6df83b9e97c1f2
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647339"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866747"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
-**Zaktualizowano do programu [Wersja Release Candidate (RC)](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano do programu [16,0 wydania](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Pobierz RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
+>[Pobierz program Visual Studio 2019 r.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
-Visual Studio 2019 zawiera wiele ulepszeń ogólne oraz nowe funkcje, które optymalizują wydajność pracy deweloperskiej i współpracę zespołową. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, będziesz mieć możliwość wykorzystać jej funkcje dla wszystkich aspektów cyklu życia opracowywania&mdash;z uproszczonego tworzenia i kod kondycji zarządzania projektami, zespołu: i współpracy przepływy pracy typu open source.<br/><br/>
+Za pomocą programu Visual Studio 2019 r uzyskasz najlepsze w swojej klasie narzędzi i usług dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, jest dużo, np. w tej nowej wersji!
 
->[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
+Poniżej przedstawiono podsumowanie wysokiego poziomu what's new:
 
-Poniżej przedstawiono podsumowanie wysokiego poziomu oferowane przez program Visual Studio:
+* **[Twórz](#develop)**: Zachowanie, ukierunkowanych i produktywności z lepszą wydajność, oczyszczania błyskawiczne kodu i lepsze wyniki wyszukiwania.
+* **[Współpraca](#collaborate)**: Korzystaj naturalne współpracę dzięki chmurze przepływu pracy w czasie rzeczywistym, edytowanie i debugowanie, i przeglądów kodu po prawej stronie w programie Visual Studio.
+* **[Debugowanie](#debug)**: Wyróżnij i przejdź do określonej wartości, optymalizacja zużycia pamięci i automatycznych migawek wykonywania aplikacji.
 
-* **[Osobistych i zespołowych produktywność](#personal-and-team-productivity)**. Produktywność dla wszystkich użytkowników, gdzie mają one największe znaczenie.
-* **[Obsługa nowoczesnego projektowania](#modern-development-support)**. Obsługa bieżących projektów i rozwiązań w przyszłości.
-* **[Ciągłe wprowadzanie innowacji](#continuous-innovation)**. Kod inteligentne z obsługą inteligentną i w chmurze.
+Aby uzyskać pełną listę wszystkich elementów, co nowego w tej wersji, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes/). 
 
-> [!NOTE]
-> Aby uzyskać pełną listę nowych funkcji i funkcji w programie Visual Studio 2019 r, zobacz [informacje o wersji RC](/visualstudio/releases/2019/release-notes/) i [4 (wersja zapoznawcza) — informacje o wersji](/visualstudio/releases/2019/release-notes-preview/). Aby uzyskać więcej informacji na temat obu tych najnowsze wersje zobacz [Visual Studio 2019 r w wersji Release Candidate udostępniono](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/) wpis w blogu.
+## <a name="develop"></a>Programowanie
 
-## <a name="personal-and-team-productivity"></a>Osobistych i zespołowych produktywności
+Oszczędzaj czas dzięki nowym funkcjom.
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
-Jest biorąc pod uwagę, że ulepszenia wydajności są najważniejsze z każdą wersją programu Visual Studio, ale po prawej stronie się tam z nim w celu ulepszania wydajności pracy. Oto, jak możemy pomóc korzystając z niego.
+### <a name="improved-search"></a>Udoskonalonej funkcji wyszukiwania
 
-### <a name="new-start-window"></a>Nowe okno uruchamiania
+Znana wcześniej jako szybkiego uruchamiania, naszą nową funkcję wyszukiwania jest szybsze i bardziej skuteczne. Teraz wyniki wyszukiwania są wyświetlane dynamicznie podczas wpisywania. I wyniki wyszukiwania można często zawierają skróty klawiaturowe dla poleceń, dzięki czemu można łatwiej pamiętania do użytku w przyszłości.
 
-Pierwszą rzeczą, zauważysz, po otwarciu programu Visual Studio 2019 r jest jego nowe okno rozpoczęcia.
+   ![Animacji z nowej funkcji wyszukiwania w programie Visual Studio 2019 r.](media/vs-2019/new-search-feature.gif)
 
-   ![Nowe okno początek w Visual Studio 2019 r.](media/start-window.png)
+Nowej logiki Wyszukiwanie rozmyte znajduje się coś, czego potrzebujesz, niezależnie od tego, literówki. Tak czy szukasz poleceń, ustawienia, dokumentacji i inne przydatne czynności nowej funkcji wyszukiwania sprawia, że łatwiej znaleźć, czego szukasz.
 
-To nowe okno rozpoczęcia przedstawia opcje, aby sklonować lub zapoznaj się z kodu, otwórz projekt lub rozwiązanie, otwórz folder lokalny lub Utwórz nowy projekt. Posiadanie tych opcji w oknie dialogowym proste pomaga zarówno początkujących i zaawansowanych użytkowników programu Visual Studio, przejść do kodu szybko.
+### <a name="refactorings"></a>Operacje refaktoryzacji
 
-Aby uzyskać więcej informacji, zobacz [uzyskać dostęp do kodu: Jak został zaprojektowany nowe okno uruchamiania programu Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) wpis w blogu.
+Nowe C# refaktoryzacje ułatwiają organizowanie kodu. Po prostu wywołać refaktoryzacji, naciskając klawisz **Ctrl +.** i wybierając akcję, którą chcesz wykonać. 
 
-### <a name="better-search"></a>Lepsze wyszukiwania
+   ![Animacja środowiska refaktoryzacji w Visual Studio 2019 r.](media/vs-2019/refactorings.gif)
 
-Znana wcześniej jako szybkiego uruchamiania, naszą nową funkcję wyszukiwania jest szybsze i bardziej skuteczne. Teraz wyniki wyszukiwania są wyświetlane dynamicznie podczas wpisywania. I wyniki wyszukiwania zawierają skróty klawiaturowe dla poleceń, dzięki czemu można łatwiej pamiętania do użytku w przyszłości.
+Dodaliśmy wiele nowych refaktoryzacji, w tym taki, który umożliwia opakować parametrów metody.
 
-   ![Nowa funkcja wyszukiwania w Visual Studio 2019 r.](media/search-feature.png)
-
-Czy szukasz poleceń, ustawienia, dokumentacji i inne przydatne czynności nowej funkcji wyszukiwania sprawia, że łatwiej znaleźć, czego szukasz.
-
-### <a name="one-click-code-cleanup"></a>Oczyszczania kodu jednym kliknięciem
-
-Sparowane z wskaźnik kondycji dokumentu jest nowe polecenie czyszczenia kodu. To nowe polecenie służy do identyfikowania i następnie Rozwiąż ostrzeżenia i sugestie dotyczące kliknięciem przycisku.
-
-   ![Nowa funkcja oczyszczania kodu w Visual Studio 2019 r.](media/code-cleanup.png)
-
-Oczyszczanie będzie formatowania kodu i stosowanie poprawek kodu zgodnie z sugestią podaną przez [bieżące ustawienia](code-styles-and-quick-actions.md), [plików editorconfig](create-portable-custom-editor-options.md), lub [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md).
-
-### <a name="debugger-improvements"></a>Ulepszenia debugera
-
-#### <a name="search-within-a-watch-window-and-format-watch-values"></a>Wyszukiwanie w oknie czujki i formatowanie wartości czujki
-
-Prawdopodobnie byłeś istnieje, wyszukiwanie w oknie czujki ciągu oraz zestaw wartości. W programie Visual Studio 2019 r dodaliśmy wyszukiwania w oknach wyrażeń kontrolnych, zmiennych lokalnych i automatycznych ułatwią znalezienie obiektów i wartości, którego szukasz.
-
-Możesz również sformatować, jak wartość jest wyświetlana w oknach wyrażenie kontrolne, zmiennych lokalnych i automatycznych.  Kliknij dwukrotnie jeden z elementów w żadnym z systemu windows, a następnie dodaj przecinek (","), aby uzyskać dostęp do listy rozwijanej specyfikatorów formatu możliwe, z których każdy zawiera opis jego zamierzony efekt.
-
-   ![Obejrzyj okna i format wartości nowością w Visual Studio 2019 r.](media/search-watch-window.png)
-
-Aby uzyskać więcej informacji, zobacz [rozszerzone w Visual Studio 2019 r.: Wyszukiwanie obiektów i właściwości w kontrolnych, zmiennych automatycznych i zmiennych lokalnych Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) wpis w blogu.
-
-### <a name="visual-studio-live-share"></a>Visual Studio Live Share
-
-[Visual Studio funkcja udostępniania na żywo](https://visualstudio.microsoft.com/services/live-share/) to usługa dla deweloperów, która umożliwia udostępnianie kodu i kontekst współpracownikom i Uzyskaj natychmiastowej dwukierunkowej możliwości współpracy bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.
-
-I za pomocą programu Visual Studio 2019 r, ta usługa jest instalowana domyślnie.
-
-![Animowany plik GIF, pokazujący funkcję współpracy udostępniania na żywo w programie Visual Studio 2019 r.](media/live-share-collaboration.gif)
-
-Aby uzyskać więcej informacji, zobacz [Visual Studio udostępniania na żywo do przeglądów kodu w czasie rzeczywistym i interaktywne edukacji](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpis w blogu.
-
-## <a name="modern-development-support"></a>Obsługa nowoczesnego projektowania
-
-### <a name="manage-pull-requests-prs-from-the-ide"></a>Zarządzanie żądania ściągnięcia (pr) z poziomu środowiska IDE
-
-Wprowadzamy nowe rozszerzenie, które można pobrać za pomocą programu Visual Studio 2019 r. Za pomocą tego nowego rozszerzenia można przejrzeć, uruchomić i nawet debugowanie żądań ściągnięcia od członków zespołu, bez opuszczania środowiska IDE programu Visual Studio [(zintegrowanym środowiskiem programistycznym)](../get-started/visual-studio-ide.md). Firma Microsoft obsługuje kodu w repozytoriach Azure już dziś, ale zostało rozszerzone, aby obsługiwać usługi GitHub oraz ulepszenia ogólnej.
-
-Aby rozpocząć, Pobierz [żądania ściągnięcia dla programu Visual Studio](https://aka.ms/pr4vs) rozszerzenie z witryny Marketplace programu Visual Studio.
-
-### <a name="develop-with-net-core-3-preview"></a>Programowanie za pomocą programu .NET Core 3 w wersji zapoznawczej
-
-Wersja zapoznawcza programu Visual Studio 2019 obsługuje tworzenie [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) aplikacje dla dowolnej platformy. Będziemy dalej do obsługi i poprawić Programowanie w języku C++ dla wielu platform, a także .NET opracowywania aplikacji mobilnych dla systemów iOS i Android za pomocą platformy Xamarin.
-
-   ![Tworzenie aplikacji za pomocą programu .NET Core 3 Preview w programie Visual Studio 2019 r.](media/dot-net-core-three-dev.png)
-
-Aby uzyskać więcej informacji zobacz następujące strony:
-
-* [.NET core 3 (wersja zapoznawcza) 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) i [.NET Core 3 w wersji zapoznawczej 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) informacje o wersji
-* [Przedstawienie programu .NET Core 3 (wersja zapoznawcza) 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) i [Announcing .NET Core 3 w wersji zapoznawczej 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) wpisów w blogu
-
-## <a name="continuous-innovation"></a>Ciągłe wprowadzanie innowacji
-
-### <a name="per-monitor-aware-pma-rendering"></a>Świadomość renderowania (PMA) monitora
-
-Jeśli używasz monitory, które są skonfigurowane przy użyciu innego ekranu skale, lub zdalnie połączyć się z maszyną za pomocą wyświetlania skali czynników, które różnią się od głównego urządzenia, można zauważyć, że Visual Studio wygląda rozmyty lub renderowanie w skali problem.
-
-Wraz z wydaniem programu Visual Studio 2019 podejmujemy pierwszy krok w kierunku co program Visual Studio — monitorowanie aplikacji obsługującej (PMA). Kładziemy podstawowe prace, która umożliwi programu Visual Studio zapewnić prawidłowe renderowanie niezależnie od używanej skale wyświetlania.
-
-   ![Świadomość renderowania (PMA) w Visual Studio 2019 monitora](media/vs-2019/pma-dpi-scaling.png)
-
-Aby uzyskać więcej informacji, zobacz [lepsze środowisko wielu monitorów z programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) wpis w blogu.
-
-### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
+### <a name="intellicode"></a>IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) to rozszerzenie, które rozszerza Twoje wysiłki na rzecz rozwoju oprogramowania za pomocą sztucznej inteligencji (AI). Rozszerzenie IntelliCode pociągów 2000 projektów typu open source w serwisie GitHub&mdash;każdy z ponad 100 gwiazdek&mdash;do generowania zalecenia.
+
+ ![Animacja IntelliCode w Visual Studio 2019 r.](media/vs-2019/IntelliCode.gif)
 
 Oto kilka sposobów, że program Visual Studio IntelliCode może pomóc zwiększyć wydajność:
 
@@ -136,13 +74,99 @@ Oto kilka sposobów, że program Visual Studio IntelliCode może pomóc zwiększ
 * Znajdowanie problemów z kodem trudne catch
 * Przeglądy kodu fokus przez zwrócenie uwagi do obszarów, które naprawdę mają znaczenie
 
- ![Przykładem sugestii IntelliSense](media/intellicode-intellisense-suggestion.png)
-
 Początkowo obsługiwane tylko C# kiedy możemy najpierw podglądu rozszerzenia IntelliCode dla programu Visual Studio. Teraz Dodaliśmy obsługę języków C++ i XAML w programie Visual Studio, zbyt.
 
 A jeśli używasz C#, dodaliśmy także możliwość uczenia modelu niestandardowego na własny kod.
 
-Aby uzyskać więcej informacji o najnowszych aktualizacjach, zobacz [Visual Studio IntelliCode obsługuje więcej języków i uczy się z kodu](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) wpis w blogu. A, aby uzyskać więcej informacji na temat rozszerzenia i jak ją pobrać, zobacz [Visual Studio IntelliCode — wersja zapoznawcza](https://go.microsoft.com/fwlink/?linkid=872707) stronie DevLabs firmy Microsoft.
+Aby uzyskać więcej informacji na temat IntelliCode zobacz [więcej kodu, przewiń w mniej z programu Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) wpis w blogu. 
+
+### <a name="code-cleanup"></a>Oczyszczanie kodu
+
+Sparowane z wskaźnik kondycji dokumentu jest nowe polecenie czyszczenia kodu. To nowe polecenie służy do identyfikowania i następnie Rozwiąż ostrzeżenia i sugestie dotyczące kliknięciem przycisku.
+
+Oczyszczanie będzie formatowania kodu i stosowanie poprawek kodu zgodnie z sugestią podaną przez [bieżące ustawienia](code-styles-and-quick-actions.md), [plików editorconfig](create-portable-custom-editor-options.md), lub [analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md).
+
+   ![Zrzut ekranu przedstawiający nowy formant oczyszczania kodu w Visual Studio 2019 r.](media/vs-2019/code-cleanup-profile.png)
+
+Kolekcje programów naprawiających można także zapisać jako profil. Na przykład jeśli mają niewielki zestaw programów naprawiających docelowych, które są często stosowane podczas kodowania, a następnie mają inny kompleksowy zestaw programów naprawiających, aby przesłać wniosek przed przeglądu kodu, można skonfigurować profile, aby rozwiązać te różne zadania.
+
+   ![Zrzut ekranu przedstawiający nowy formant oczyszczania kodu w Visual Studio 2019 r.](media/vs-2019/code-cleanup-profile-configure.png)
+
+## <a name="collaborate"></a>Współpraca
+
+Sił do rozwiązywania problemów.
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
+
+### <a name="cloud-first-workflow"></a>Przepływ pracy w chmurze
+
+Coś, co można zauważyć po otwarciu programu Visual Studio 2019 r jest jego nowe okno rozpoczęcia.
+
+   ![Zrzut ekranu okna nowy początek w Visual Studio 2019 r.](media/vs-2019/start-window-dark.png)
+
+W oknie uruchamiania przedstawia kilka opcji, aby szybko przejść do kodu. Firma Microsoft zostały umieszczone opcję, aby sklonować lub zapoznaj się z kodu z repozytorium, najpierw.  
+
+   ![Animacja środowiska "Git-first" w programie Visual Studio 2019 r.](media/vs-2019/git-first.gif)
+
+W oknie start zawiera również opcje, aby otworzyć projekt lub rozwiązanie, otwórz folder lokalny lub Utwórz nowy projekt.
+
+Aby uzyskać więcej informacji, zobacz [uzyskać dostęp do kodu: Jak został zaprojektowany nowe okno uruchamiania programu Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) wpis w blogu.
+
+### <a name="live-share"></a>Live Share
+
+[Visual Studio funkcja udostępniania na żywo](https://visualstudio.microsoft.com/services/live-share/) to usługa dla deweloperów, która umożliwia udostępnianie kodu i kontekst współpracownikom i Uzyskaj natychmiastowej dwukierunkowej możliwości współpracy bezpośrednio z poziomu programu Visual Studio. Za pomocą udostępniania na żywo partnerem można przeczytać, przejdź, edytować i debugować projekt, który został udostępniony z nimi i bezproblemowo i bezpiecznie w tym celu.
+
+I za pomocą programu Visual Studio 2019 r, ta usługa jest instalowana domyślnie.
+
+![Animację, pokazujący funkcję współpracy udostępniania na żywo w programie Visual Studio 2019 r.](media/vs-2019/live-share.gif)
+
+Aby uzyskać więcej informacji, zobacz [Visual Studio udostępniania na żywo do przeglądów kodu w czasie rzeczywistym i interaktywne edukacji](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) wpis w blogu i [udostępniania na żywo, teraz dołączone do programu Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/) wpis w blogu.
+
+### <a name="integrated-code-reviews"></a>Przeglądy kodu zintegrowane
+
+Wprowadzamy nowe rozszerzenie, które można pobrać za pomocą programu Visual Studio 2019 r. Za pomocą tego nowego rozszerzenia Przejrzyj, uruchom, a nawet debugowanie żądań ściągnięcia od członków zespołu, bez opuszczania programu Visual Studio. Firma Microsoft obsługuje kodu w repozytoriach usługi GitHub i DevOps platformy Azure.
+
+   ![Zrzut ekranu okna nowy początek w Visual Studio 2019 r.](media/vs-2019/pr-experience.png)
+
+Aby rozpocząć, Pobierz [żądania ściągnięcia dla programu Visual Studio](https://aka.ms/pr4vs) rozszerzenie z witryny Marketplace programu Visual Studio.
+
+## <a name="debug"></a>Debugowanie
+
+Zero, przy użyciu precyzyjnego określania wartości docelowej.
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
+
+### <a name="performance-gains"></a>Wzrost wydajności
+
+Firma Microsoft została podjęta punkty przerwania danych w języku C++ wykluczającymi się jeden raz i dostosować je do aplikacji .NET Core.
+
+   ![Animacji, który zawiera punkty przerwania danych debugowania w Visual Studio 2019 r](media/vs-2019/debug-data-breakpoints.gif)
+
+Tak czy jesteś kodowania w C++ i .NET Core, punkty przerwania danych może być jest dobrą alternatywą gracze współczesnego rynku regularne punkty przerwania. Punkty przerwania danych są również doskonałe rozwiązanie dla scenariuszy, takich jak wyszukiwanie, gdzie jest modyfikowana obiektów globalnych lub dodawany lub usuwany z listy. 
+
+Ponadto jeśli dewelopera języka C++, który opracowuje dużych aplikacji Visual Studio 2019 podejścia biznesowego uczyniło symbole poza proc, dzięki czemu można debugować te aplikacje bez którym wystąpiły problemy związane z pamięcią.
+
+### <a name="search-while-debugging"></a>Wyszukaj podczas debugowania
+
+Prawdopodobnie byłeś istnieje, wyszukiwanie w oknie czujki ciągu oraz zestaw wartości. W programie Visual Studio 2019 r dodaliśmy wyszukiwania w oknach wyrażeń kontrolnych, zmiennych lokalnych i automatycznych ułatwią znalezienie obiektów i wartości, którego szukasz.
+
+   ![Animację, pokazujący okno wyszukiwania debugowania w programie Visual Studio 2019 r.](media/vs-2019/debug-window-search.gif)
+
+Możesz również sformatować, jak wartość jest wyświetlana w oknach wyrażenie kontrolne, zmiennych lokalnych i automatycznych.  Kliknij dwukrotnie jeden z elementów w żadnym z systemu windows, a następnie dodaj przecinek (","), aby uzyskać dostęp do listy rozwijanej specyfikatorów formatu możliwe, z których każdy zawiera opis jego zamierzony efekt.
+
+   ![Obejrzyj okna i format wartości nowością w Visual Studio 2019 r.](media/search-watch-window.png)
+
+Aby uzyskać więcej informacji, zobacz [rozszerzone w Visual Studio 2019 r.: Wyszukiwanie obiektów i właściwości w kontrolnych, zmiennych automatycznych i zmiennych lokalnych Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) wpis w blogu.
+
+### <a name="snapshot-debugger"></a>Rozszerzenie Snapshot Debugger
+
+Pobierz migawkę wykonywanie danej aplikacji w chmurze, aby zobaczyć dokładnie co się dzieje. (Ta funkcja jest dostępna w programie Visual Studio Enterprise,.)
+
+   ![Animacji, który zawiera rozszerzenie Snapshot Debugger w Visual Studio Enterprise 2019 r](media/vs-2019/snapshot-debugger.gif)
+
+Dodaliśmy obsługę przeznaczone dla aplikacji ASP.NET (desktop i Core), które są uruchamiane na Maszynie wirtualnej platformy Azure. Ponadto Dodaliśmy obsługę aplikacji działających w usłudze Azure Kubernetes Service. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
+
+Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md) strony.
 
 ## <a name="give-us-feedback"></a>Przekaż nam swoją opinię
 
@@ -154,7 +178,8 @@ Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ tra
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Przedstawiamy Visual Studio 2019 r.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Informacje o wersji programu Visual Studio 2019 r](/visualstudio/releases/2019/release-notes/)
 * [What's New in Visual Studio SDK 2019 r](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Visual Studio 2019 r dla komputerów Mac jest teraz dostępna](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
-* [Co nowego w programie Visual Studio 2017](whats-new-visual-studio-2017.md)

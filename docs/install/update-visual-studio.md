@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f23ad749fc2a1d71153fd3adf2503a0c3108bf6
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b1bcd64281cf8ad2ffb1a194652ccf2b10ebf470
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790202"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857739"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aktualizacja programu Visual Studio do najnowszej wersji
 
@@ -51,7 +51,7 @@ W przypadku aktualizacji ma odpowiedni Flaga powiadomienia w programie Visual St
    ![Aktualizowanie programu Visual Studio 2017 przy użyciu Centrum powiadomień](media/vs-install-notifications-hub-15dot6.png "Centrum powiadomień w programie Visual Studio 2017")
 
       > [!TIP]
-      > Jest zbiorcza aktualizacja dla wersji programu Visual Studio 2019 r, dlatego zawsze chce zainstalować jedną z najbardziej aktualną numerem wersji.
+      > Jest zbiorcza aktualizacja dla wersji programu Visual Studio 2017, dlatego zawsze chce zainstalować jedną z najbardziej aktualną numerem wersji.
 
 1. Gdy **aktualizacji** zostanie otwarte okno dialogowe, wybierz polecenie **Aktualizuj teraz**.
 
@@ -220,7 +220,7 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 
      ![Wybierz przycisk Aktualizuj w oknie dialogowym "Pobrane i gotowe do zainstalowania aktualizacji"](media/vs2019-update-visual-studio-community-rc-from-ide.png "wybierz przycisk Aktualizuj w oknie dialogowym \"Pobrane i gotowe do zainstalowania aktualizacji\"")
 
-   Visual Studio zostanie zamknięty, a następnie ponownie otwierane.
+   Visual Studio aktualizacji zostanie zamknięty, a następnie ponownie otworzy.
 
 ### <a name="in-visual-studio"></a>In Visual Studio
 
@@ -235,7 +235,7 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 
      ![Wybierz przycisk Aktualizuj w oknie dialogowym "Pobrane i gotowe do zainstalowania aktualizacji"](media/vs2019-update-visual-studio-community-rc-from-ide.png "wybierz przycisk Aktualizuj w oknie dialogowym \"Pobrane i gotowe do zainstalowania aktualizacji\"")
 
-   Visual Studio zostanie zamknięty, a następnie ponownie otwierane.
+   Visual Studio aktualizacji zostanie zamknięty, a następnie ponownie otworzy.
 
 ## <a name="use-the-notifications-hub"></a>Za pomocą Centrum powiadomień
 
@@ -263,6 +263,6 @@ Można sprawdzić dostępność aktualizacji, a następnie zainstaluj go przy u�
 ## <a name="see-also"></a>Zobacz także
 
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Aktualizacja programu Visual Studio dla komputerów Mac](/visualstudio/mac/update)
+* [Update Visual Studio for Mac](/visualstudio/mac/update)
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

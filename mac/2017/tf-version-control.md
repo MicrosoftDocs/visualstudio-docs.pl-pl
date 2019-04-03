@@ -7,12 +7,12 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573076"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857804"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
@@ -42,8 +42,6 @@ Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualiza
 ![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png)
 
 Naciśnij klawisz **zainstalować** w następnym oknie dialogowym odinstalowanie starego pakietu i instalacja nowego.
-
-Aby uzyskać informacji na temat nowości w każdej wersji, zobacz [informacje o wersji](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Za pomocą dodatku
 

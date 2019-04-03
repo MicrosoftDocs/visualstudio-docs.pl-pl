@@ -3,24 +3,24 @@ title: Aktualizowanie programu Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące aktualizacji programu Visual Studio dla komputerów Mac i uzyskiwania dostępu do wersji w wersji zapoznawczej.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9f11de1eaa427fea2d1ab023539e69af59de1f4a
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294406"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857050"
 ---
-# <a name="update-visual-studio-for-mac"></a>Aktualizacja programu Visual Studio dla komputerów Mac
+# <a name="update-visual-studio-for-mac"></a>Update Visual Studio for Mac
 
 Program Visual Studio for Mac rozpowszechnianie aktualizacji dla środowiska IDE i obsługiwanych platform w regularnych odstępach czasu. Te aktualizacje mogą być w formie nowych funkcji, ulepszeń i poprawek błędów.
 
-Visual Studio for Mac oferuje trzy kanały, aby uzyskać te najnowsze wersje:
+Visual Studio for Mac oferuje dwa kanały, aby uzyskać te najnowsze wersje:
 
 * **Stabilna** — zawiera dokładnie przetestowana aktualizacji. Ten kanał jest zalecany dla najlepszego komfortu programowania.
-* **W wersji beta** / **alfa** — zapewnia szybki dostęp do aktualizacji, które są kandydatami do publikacji w kanale stabilny. Wersje te nie może być niezawodne do codziennego użytku.
+* **Podgląd** — zapewnia szybki dostęp do aktualizacji, które są kandydatami do publikacji w kanale stabilny. Wersje te nie może być niezawodne do codziennego użytku.
 
 ## <a name="checking-for-updates"></a>Sprawdzanie dostępności aktualizacji
 

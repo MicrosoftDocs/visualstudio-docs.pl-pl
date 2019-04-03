@@ -1,17 +1,17 @@
 ---
 title: Refaktoryzacja kodu
-description: Ponowne porządkowanie kodu w programie Visual Studio dla komputerów Mac jest łatwiejsza przy użyciu analizy źródła.
+description: Rafinacja kodu za pomocą programu Visual Studio dla komputerów Mac i szybkie akcje.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335392"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856518"
 ---
 # <a name="refactoring"></a>Refaktoryzacja
 
@@ -23,25 +23,45 @@ Program Visual Studio dla komputerów Mac integracji dzięki użyciu platformy R
 
 ## <a name="renaming"></a>Zmiana nazwy
 
-*Zmień nazwę* refaktoryzacji polecenie może służyć w dowolnym identyfikator kodu (na przykład nazwa klasy, nazwa właściwości itd.) aby znaleźć wszystkie wystąpienia identyfikatora, a następnie zmianę ich. Aby zmienić nazwę symbolu, kliknij prawym przyciskiem myszy na nim, a następnie wybierz **Refaktoryzuj > Zmień nazwę**, lub **Cmd + R** powiązanie klucza:
+*Zmień nazwę* refaktoryzacji polecenie może służyć w dowolnym identyfikator kodu (na przykład nazwa klasy, nazwa właściwości itd.) aby znaleźć wszystkie wystąpienia identyfikatora, a następnie zmianę ich. Aby zmienić nazwę symbolu, kliknij prawym przyciskiem myszy na nim, a następnie wybierz **zmiany nazwy...** , lub użyj **Cmd (⌘) + R** powiązanie klucza:
 
 ![Zmień nazwę elementu menu.](media/refactoring-renaming1.png)
 
-Spowoduje to wyróżnienie symbolu i wszelkie odwołania do niego. Po uruchomieniu, wpisując nazwę nowej automatycznie zmienia wszystkie odwołania w kodzie, a Twoje ukończenia zmiany nazwy można sygnał, naciskając klawisz **Enter**:
+Spowoduje to wyróżnienie symbolu i wszelkie odwołania do niego. Po uruchomieniu, wpisując nazwę nowej automatycznie zmienia wszystkie odwołania w kodzie i zatwierdzić zmiany, naciskając klawisz **Enter**:
 
 ![Zmiana nazwy i identyfikatora](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Kontekst akcji
+## <a name="quick-actions"></a>Szybkie akcje
 
-Kontekst akcji pozwalają na sprawdzanie kodu C# i wyświetlić wszystkie możliwe opcje refaktoryzacji.
+Szybkie akcje pozwalają na łatwe Refaktoryzacja, generowanie lub inny sposób modyfikować kodu za pomocą jednej akcji.
 
-**Rozwiązać** i **Refaktoryzuj** kontekstu elementy są łączone w pojedynczy *szybka poprawka...*  element, który udostępnia wszystkie dostępne akcje kontekstowe:
+Szybkie akcje może służyć do:
+
+* Zastosuj poprawkę kodu dla kodu naruszenie reguły analizatora
+* Pomiń naruszenie reguły analizator kodu
+* Stosowanie refaktoryzacji (na przykład wbudowanej zmiennej tymczasowej)
+* Generuj kod (na przykład wprowadzić zmienną lokalną)
+
+Szybkie akcje, które można zastosować za pomocą żarówki ![ikoną żarówki](media/quick-actions-light-bulb-icon.png) lub śrubokręt ![ikonę śrubokręt](media/quick-actions-screwdriver-icon.png) ikony, lub naciskając **opcji (⌥)** +  **Wprowadź** gdy kursor jest ustawiony na wiersz kodu, w którym akcja jest dostępna. Zostanie wyświetlony błąd żarówki z funkcją ![ikona żarówki z funkcją błędu](media/quick-actions-error-light-bulb-icon.png) czy istnieje czerwona fala wskazująca na wystąpienie błędu, a program Visual Studio zawiera poprawki dla tego błędu.
+
+W dowolnym języku innych firm może zapewnić Diagnostyka niestandardowa i sugestie, na przykład jako część zestawu SDK i programu Visual Studio żarówki dostarczone, na podstawie tych reguł.
+
+### <a name="quick-action-icons"></a>Ikony szybka akcja
+Ikona, który jest wyświetlany, gdy dostępna jest szybka akcja oznacza wskazanie typu poprawkę lub refaktoryzacji, która jest dostępna. *Śrubokręt* ![ikonę śrubokręt](media/quick-actions-screwdriver-icon.png) ikona wskazuje, wystarczy, że istnieją akcje dostępne zmienić kod, ale niekoniecznie nie należy używać. *Żółta ikona żarówki* ![ikoną żarówki](media/quick-actions-light-bulb-icon.png) ikona wskazuje, akcje są dostępne, *powinien* czy, aby poprawić kod. *Błąd żarówki* ![ikona żarówki z funkcją błędu](media/quick-actions-error-light-bulb-icon.png) ikona wskazuje, jest dostępna akcja, która naprawia błąd w kodzie.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Aby zobaczyć żarówkę lub śrubokręt
+
+- Jeśli dostępna jest poprawka, żarówki spontanicznie wyświetlane po umieszczeniu wskaźnika myszy w lokalizacji błędu.
+
+   ![Ikona żarówki z umieszczeniu wskaźnika myszy](media/refactoring-lightbulb-hover.png)
+
+- Żarówki i śrubokręty są wyświetlane na lewym marginesie edytor, gdy Przenieś karetkę do wiersza kodu, dla których dostępna jest szybka akcja.
+
+- Naciśnij klawisz **opcji (⌥)**+**Enter** dowolnym miejscu w wierszu, aby wyświetlić listę dostępnych szybkie akcje i refaktoryzacje.
 
 ![Wyświetl elementy kontekstu](media/refactoring-context-action.png)
 
 Wszystkie akcje kontekstowe kursor umożliwia podgląd co zostaną dodane lub usunięte z Twojego kodu.
-
-Alternatywnie, możesz nacisnąć przycisk **Option + Enter** dowolnym miejscu w kodzie:
 
 ![Opcja kontekstu wprowadź elementów](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Istnieje ponad 100 możliwych działań, które mogą być sugerowane, które s�
 
 ![Akcje analizy źródło języka C#](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Typowe akcje kontekstu
+### <a name="common-quick-actions"></a>Typowe szybkie akcje
 
-Poniżej opisano niektóre akcje przede wszystkim powszechnie używane kontekstu.
-
-#### <a name="extract-method"></a>Wyodrębnianie metody
-
-Operacji refaktoryzacji wyodrębniania metody umożliwia utworzenie nowej metody, wyodrębniając wybór kodu w istniejącą składową. Ta akcja spowoduje wykonać dwie czynności:
-
-* Tworzy nową metodę zawierającą zaznaczony kod
-* Wywołuje nową metodę w miejscu, gdzie został zaznaczony kod.
-
-##### <a name="example"></a>Przykład
-
-1. Dodaj następujący kod:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Zaznacz wiersz `double volume = (baseArea * height) / 3;`, kliknij prawym przyciskiem myszy kliknij go, a wybierz **Refaktoryzuj > Wyodrębnij metodę**.
-
-3. Użyj klawiszy strzałek, aby wybrać, gdzie nowa metoda ma zostać umieszczony w kodzie.
-
-#### <a name="encapsulate-field"></a>Hermetyzowanie pola
-
-Operacja Hermetyzuj pole umożliwia tworzenie właściwości z istniejącego pola i aktualizuje swój kod, aby odwoływać się do nowo utworzonej właściwości. Tworząc właściwość, która hermetyzuje pola, możesz są nie można przydzielać bezpośredni dostęp do pola publiczne, co oznacza, czy inne obiekty nie można go modyfikować.
-
-Ta akcja wykona następujące czynności:
-
-* Zmienia modyfikator dostępu prywatnego.
-* Generuje metodę getter i setter dla pola (chyba że pole jest tylko do odczytu, w którym to przypadku tylko utworzy on metody pobierającej).
+Dowiedz się więcej o typowe szybkie akcje w [typowe szybkie akcje](/visualstudio/ide/common-quick-actions) artykułu.
 
 ## <a name="source-analysis"></a>Analiza źródła
 

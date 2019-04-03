@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763326"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866769"
 ---
 # <a name="managing-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Możesz wywołać zewnętrznych narzędzi z poziomu programu Visual Studio. Kilk
   
 3.  Narzędzie śledzenia ATL/MFC: Pokazuje debugowania komunikaty śledzenia w źródłach ATL i MFC.  
   
-4.  PreEmptive Dotfuscator i Analytics: Chroni programy platformy .NET dla odtwarzania.  
+4.  PreEmptive Protection - Dotfuscator: Chroni programy platformy .NET dla odtwarzania.  
   
 5.  SPY++: Wyświetla w postaci graficznej procesy, wątki, windows i komunikatów okien.  
   

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790306"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857408"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji za pomocą Visual Basic
 
@@ -33,7 +33,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range=">=vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 

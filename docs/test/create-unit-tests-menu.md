@@ -1,6 +1,6 @@
 ---
 title: Tworzenie wycinków kodu metoda testu jednostki
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,32 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982769"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857727"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Tworzenie jednostki wycinki kodu metoda testu za pomocą polecenia Utwórz testy jednostkowe
 
-Visual Studio **Utwórz testy jednostkowe** polecenie zapewnia możliwość tworzenia wycinków kodu metoda testu jednostki. Ta funkcja umożliwia Łatwa konfiguracja projektu testowego, klasy testowej i testu zastępczego metoda znajdujący się w nim.
+**Utwórz testy jednostkowe** polecenie powoduje utworzenie jednostki wycinki kodu metoda testu. Ta funkcja umożliwia Łatwa konfiguracja projektu testowego, klasy testowej i testu zastępczego metoda znajdujący się w nim.
 
-## <a name="availability-and-extensions"></a>Dostępność i rozszerzenia
+> [!NOTE]
+> **Utwórz testy jednostkowe** polecenia menu jest dostępna tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie platformy .NET Core).
 
-**Utwórz testy jednostkowe** polecenia menu:
-
-* Jest dostępne w Community, Professional i Enterprise wersje programu Visual Studio 2015 i nowszych wersjach.
-
-* Obsługuje tylko C# kod, który jest przeznaczony dla .NET Framework.
-
-* Jest wszechstronne i obsługuje emitowanie testów MSTest, MSTest w wersji 2, NUnit, xUnit format.
-
-* Nie jest jeszcze dostępna w projektach .NET Core.
+**Utwórz testy jednostkowe** polecenia menu jest wszechstronne i może służyć do generowania testów, MSTest, MSTest w wersji 2, NUnit i struktury xUnit.
 
 ## <a name="get-started"></a>Wprowadzenie
 
-Aby rozpocząć, wybierz metodę, typu lub przestrzeni nazw w edytorze kodu w projekcie, aby test, otwórz menu skrótów i wybierz **Utwórz testy jednostkowe**. **Utwórz testy jednostkowe** zostanie otwarte okno dialogowe, gdy można wybrać opcję Utwórz nowe testy jednostkowe.
+Aby rozpocząć, wybierz metodę, typu lub przestrzeni nazw w edytorze kodu w projekcie, którą chcesz przetestować, kliknij prawym przyciskiem myszy, a następnie wybierz **Utwórz testy jednostkowe**. **Utwórz testy jednostkowe** otwiera okno dialogowe, którego można skonfigurować, jak chcesz, aby testy, które ma zostać utworzony.
 
 ![Za pomocą polecenia Utwórz testy jednostki](media/createunittestcommand.png)
 
@@ -46,34 +39,16 @@ Jeśli planujesz uruchomić te testy jako część procesu automatyzacji testów
 
 ## <a name="use-third-party-unit-test-frameworks"></a>Użyj struktury testów jednostkowych innej firmy
 
-Za pomocą programu Visual Studio mogą być testy jednostkowe, utworzony za pomocą dowolnej platformy testów. Aby zainstalować inne struktury testów:
-
-::: moniker range="vs-2017"
-
-1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
-
-::: moniker-end
-
-2. Rozwiń **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz **testowania**.
-
-![Za pomocą platform testowych innych firm](media/createunittestfx.png)
-
-Rozszerzenia ramy testów są dostępne w Visual Studio Marketplace:
+Do automatycznego generowania testów jednostkowych dla NUnit czy xUnit, należy zainstalować jedną z tych rozszerzeń struktury testów w Visual Studio Marketplace:
 
 * [Rozszerzenie NUnit dla generatorów testu](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
 * [rozszerzenie xUnit.net dla generatorów testu](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 ## <a name="when-should-i-use-this-feature"></a>Kiedy należy używać tej funkcji?
 
-Ta funkcja zawsze, gdy trzeba utworzyć testy jednostkowe, ale szczególnie w przypadku, gdy testujesz istniejący kod, który ma niewielkiego lub żadnego pokrycie testu i nie dokumentacji. Innymi słowy gdy specyfikacja ograniczony lub nieistniejącego kodu. Skutecznie implementuje podejście podobne do [inteligentne testy jednostkowe](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) charakteryzuje się obserwacji zachowania kodu.
+Ta funkcja zawsze, gdy trzeba utworzyć testy jednostkowe, ale szczególnie w przypadku, gdy testujesz istniejący kod, który ma niewielkiego lub żadnego pokrycie testu i nie dokumentacji. Innymi słowy gdy specyfikacja ograniczony lub nieistniejącego kodu. Skutecznie implementuje podejście podobne do [inteligentne testy jednostkowe](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) który charakteryzuje obserwacji zachowania kodu.
 
-Jednak ta funkcja jest równie dotyczy sytuacji, gdzie rozpoczyna się przez pisanie kodu dla deweloperów, a użyty do uruchamiania testów dyscypliny jednostkowych. W ramach przepływu kodowania deweloper może być szybko tworzyć jednostki metoda zastępcza klasa testowa (z klasą testową odpowiednie, a Projekt testowy odpowiednie) dla określonego fragmentu kodu.
+Jednak ta funkcja jest również mają zastosowanie, gdy deweloper rozpoczyna się przez pisanie kodu, a następnie używa, uruchomienie testów jednostkowych. W ramach przepływu kodowania deweloper może być szybko tworzyć jednostki metoda zastępcza klasa testowa (z klasą testową odpowiedni i Projekt testowy odpowiednie) dla określonego fragmentu kodu.
 
 ## <a name="see-also"></a>Zobacz także
 

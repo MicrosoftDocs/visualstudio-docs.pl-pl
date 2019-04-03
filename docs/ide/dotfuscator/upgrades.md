@@ -1,13 +1,14 @@
 ---
-title: Uaktualnianie programu Dotfuscator Community Edition (CE)
-ms.date: 02/08/2017
+title: Upgrade Dotfuscator Community
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Narzędzia Dotfuscator, zaciemniacza kodu Dotfuscator CE, narzędzia PreEmptive firmy PreEmptive Solutions PreEmptive ochrony, ochrona, wersja community edition, zasłanianie, .NET, bezpłatną, uaktualnienia, wiersza polecenia programu Visual Studio 2017
+keywords: Narzędzia Dotfuscator, system Dotfuscator Community, zaciemniacza kodu Dotfuscator CE, narzędzia PreEmptive, firmy PreEmptive Solutions PreEmptive ochrony, ochrona, wersja community edition, zasłanianie, .NET, bezpłatne, Visual Studio 2019 r, Visual Studio 2017, Visual Studio, uaktualniania, wiersza polecenia
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
@@ -18,37 +19,36 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: Dowiedz się, jak uaktualnić bezpłatne system Dotfuscator Community Edition zawarte w programie Visual Studio 2017.
+description: Dowiedz się, jak uaktualnić bezpłatną kopię programu Dotfuscator Community zawarte w Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937324"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866682"
 ---
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Uaktualnianie programu Dotfuscator Community Edition (CE)
+# <a name="upgrade-dotfuscator-community"></a>Upgrade Dotfuscator Community
 
-System Dotfuscator Community Edition (Dotfuscator CE) oferuje wiele ochrona aplikacji i funkcje ograniczania funkcjonalności natychmiast dla wszystkich deweloperów przy użyciu programu Microsoft Visual Studio.
+System Dotfuscator Community oferuje wiele ochrona aplikacji i funkcje ograniczania funkcjonalności natychmiast dla wszystkich deweloperów przy użyciu programu Microsoft Visual Studio.
 Jednak istnieją więcej funkcji dostępne dla użytkowników, którzy uaktualnić swoją wersję narzędzia Dotfuscator.
 
-## <a name="registering-dotfuscator-ce"></a>Rejestrowanie programu Dotfuscator CE
+## <a name="registering-dotfuscator-community"></a>Registering Dotfuscator Community
 
-Zarejestrowani użytkownicy programu Dotfuscator CE uzyskać dostęp do dodatkowych funkcji, takich jak [obsługi wiersza polecenia][cli], który można łatwo zintegrować zaciemniacza kodu Dotfuscator CE swoje zautomatyzowanego procesu kompilacji. Rejestrowanie udziela również dostępu do Lucidator, wbudowane narzędzie służące do [dekodowanie ślady stosu zaciemnionego][decode-obfuscated].
+Zarejestrowani użytkownicy programu Dotfuscator Community uzyskać dostęp do dodatkowych funkcji, takich jak [obsługi wiersza polecenia][cli], który można łatwo zintegrować system Dotfuscator Community proces automatycznej kompilacji . Rejestrowanie udziela również dostępu do wbudowanych narzędziem używanym do [dekodowanie ślady stosu zaciemnionego][decode-obfuscated].
 
 Rejestracja jest szybkie, prosty i bezpłatnie.
-Aby zarejestrować zaciemniacza kodu Dotfuscator CE, zobacz [sekcji rejestrowanie zaciemniacza kodu Dotfuscator CE na stronie wprowadzenie pełnego przewodnika użytkownika programu Dotfuscator CE][register-ce].
+Aby zarejestrować system Dotfuscator Community, zobacz [instrukcje pełnego przewodnika użytkownika system Dotfuscator Community][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-System Dotfuscator Community Edition zapewnia podstawowy poziom ochrony, jednocześnie  **_PreEmptive ochrona — Dotfuscator_ Professional Edition** obejmuje rozszerzoną zasłanianie przekształceń i ochronę możliwości. Rozszerzone przekształceń i funkcje obejmują:
+System Dotfuscator Community zapewnia podstawowy poziom ochrony, jednocześnie ***PreEmptive ochrona — Dotfuscator Professional*** obejmuje ulepszone zasłanianie transformacje i funkcje ochrony, takie jak:
 
-* *Intellectual Property Protection*
+* *Ochrona własności intelektualnej*
   * Dodatkowe zmiany nazwy opcji obejmujących Enhanced Overload Induction™ i losowy identyfikator wyboru.
-  * Narzędzia do zdekodowania zaciemniony w plikach śladów stosu.
   * Dostęp do klasy korporacyjnej zasłanianie przekształceń, w tym [przekształcenia celem udaremniając zautomatyzowane dekompilacji kodu][control-flow].
   * Możliwość [zasłaniać poufnych ciągi][string-encryption], tworzenie prostego wyszukiwania kodu dekompilowanych niemożliwe.
   * Możliwość [domyślić osadzanie ciągów prawo własności i dystrybucji w zestawy][watermarking], co pozwala określić źródło nieautoryzowany przecieki oprogramowania.
@@ -62,14 +62,14 @@ System Dotfuscator Community Edition zapewnia podstawowy poziom ochrony, jednocz
 Dotfuscator Professional jest standardem branżowym [.NET Obfuscator] [ net-obfuscator] jest odpowiednia dla deweloperów w przedsiębiorstwach wymagających bieżących aktualizacji pomocy technicznej, konserwacja i produkt.
 Ponadto system Dotfuscator Professional oferuje ściślejszą integrację z programem Visual Studio i jest licencjonowany do użytku komercyjnego.
 
-Aby uzyskać więcej informacji o funkcje ochrony aplikacji zaawansowane narzędzia Dotfuscator Professional, odwiedź stronę firmy PreEmptive Solutions [strony Przegląd programu Dotfuscator] [ product-about] i [go do porównania Wersja Community][product-compare].
+Aby uzyskać więcej informacji o funkcje ochrony aplikacji zaawansowane narzędzia Dotfuscator Professional, odwiedź stronę firmy PreEmptive Solutions [strony Przegląd programu Dotfuscator] [ product-about] i [go do porównania System Dotfuscator Community][product-compare].
 [W pełni obsługiwane wersje próbne są dostępne pod adresem preemptive.com][eval].
 
 ## <a name="see-also"></a>Zobacz też
 
-[W tym artykule w pełnego przewodnika użytkownika programu Dotfuscator CE][full]
+[W tym artykule w pełnego przewodnika użytkownika system Dotfuscator Community][full]
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [control-flow]:  https://www.preemptive.com/products/dotfuscator/features#controlflow
 [string-encryption]:  https://www.preemptive.com/products/dotfuscator/features#string

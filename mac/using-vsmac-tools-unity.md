@@ -1,16 +1,16 @@
 ---
 title: Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 description: Ten przewodnik opisuje jak używać programu Visual Studio dla komputerów Mac Tools for Unity rozszerzenia
-author: dantogno
-ms.author: v-davian
-ms.date: 07/17/2017
+author: therealjohn
+ms.author: johmil
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348933"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857011"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 
@@ -103,6 +103,13 @@ Aby rozpocząć debugowanie:
 
 3. Uruchamiając gry w Edytor platformy Unity podczas połączenia z programu Visual Studio, wszelkie punkty przerwania, napotkała spowoduje wstrzymać wykonanie w gry i przywołać wiersza kodu, w którym gry trafiony punkt przerwania w programie Visual Studio dla komputerów Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Rozpocznij debugowanie w jednym kroku
+
+Począwszy od debugowania i odtwarzanie programu Unity editor zakończeniem w jednym kroku bezpośrednio z programu Visual Studio dla komputerów Mac, wybierając **Dołącz do aparatu Unity i Odtwórz** konfiguracji.
+
+![Wybierz opcję Dołącz do aparatu Unity i Odtwórz](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Zatrzymaj debugowanie
 
 Aby zatrzymać debugowanie:
@@ -110,5 +117,8 @@ Aby zatrzymać debugowanie:
 1. Kliknij przycisk **zatrzymać** przycisku w programie Visual Studio for Mac lub naciśnij **Shift + polecenia + Return**.
 
    ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Jeśli rozpoczęto debugowanie przy użyciu **Dołącz do aparatu Unity i Odtwórz** konfiguracji **zatrzymać** przycisku spowoduje również przerwanie aparatu Unity.
 
 Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio dla komputerów Mac, zobacz [za pomocą debugera](debugging.md).

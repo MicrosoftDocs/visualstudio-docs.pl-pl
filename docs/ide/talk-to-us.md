@@ -1,6 +1,6 @@
 ---
 title: Porozmawiaj z nami
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3df55c70c476288df7ae8f966adbad644971b27e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790696"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857141"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio opinie o produkcie
 
@@ -28,7 +30,7 @@ Jeśli masz problemy z programem Visual Studio&mdash;takich jak awarie, wolna wy
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Czy chcesz sugestię o funkcje programu Visual Studio
 
-Jeśli jest coś, co możemy zrobić lepiej, Opowiedz nam o nim! W programie Visual Studio, wybierz **pomocy** > **Wyślij opinię** > **sugestię** z paska menu. Następnie zostanie otwarty program Visual Studio [społeczności deweloperów](https://developercommunity.visualstudio.com) strony w przeglądarce, gdzie możesz zalogować się do podzielić się swoim pomysłem. Aby uzyskać więcej informacji, zobacz [Zaproponuj funkcję programu Visual Studio 2017](suggest-a-feature.md).
+Jeśli jest coś, co możemy zrobić lepiej, Opowiedz nam o nim! W programie Visual Studio, wybierz **pomocy** > **Wyślij opinię** > **sugestię** z paska menu. Następnie zostanie otwarty program Visual Studio [społeczności deweloperów](https://developercommunity.visualstudio.com) strony w przeglądarce, gdzie możesz zalogować się do podzielić się swoim pomysłem. Aby uzyskać więcej informacji, zobacz [Zaproponuj funkcję dla programu Visual Studio](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Oceń ten produkt
 
@@ -36,7 +38,7 @@ Wersje wstępne programu Visual Studio mają **Oceń ten produkt** nie ma elemen
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Chcę, aby skontaktować się z Microsoft Support
 
-Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [Cykl wsparcia technicznego i obsługi](/visualstudio/productinfo/vs-servicing-vs) strony.
+Aby uzyskać informacje dotyczące obsługi programu Visual Studio, zobacz [cyklu życia produktu i obsługi](/visualstudio/productinfo/vs-servicing-vs) strony.
 
 Dla innych produktów i usług, zobacz [pomocy technicznej firmy Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) pomocy online.
 
@@ -55,10 +57,10 @@ Jeśli chcesz udostępnić swoje pytania i odpowiedzi z innymi deweloperami, uż
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Czy chcesz pomóc udoskonalić dokumentację programu Visual Studio
 
-Użyj **ta strona była pomocna?** przycisku wysyłania opinii na dole strony. Ten przycisk, można znaleźć na naszej strony dokumentacji. Alternatywnie, możesz dodać opinię do dowolnej strony w programie Visual Studio na [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) przy użyciu **Zaloguj się przekazać opinię dotyczącą dokumentacji** przycisku, a także w dolnej części strony.
+Użyj **ta strona była pomocna?** przycisku wysyłania opinii na dole strony. Ten przycisk, można znaleźć na naszej strony dokumentacji. Alternatywnie, możesz dodać opinię do dowolnej strony w programie Visual Studio na [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) za pomocą usługi GitHub konta; wybierz **Zaloguj się przekazać opinię dotyczącą dokumentacji** przycisk również u dołu Strona.
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 * [Społeczność deweloperów](https://developercommunity.visualstudio.com)
-* [Prywatność danych społeczności deweloperów](developer-community-privacy.md)
+* [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

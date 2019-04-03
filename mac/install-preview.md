@@ -1,31 +1,31 @@
 ---
-title: Instalowanie wersji zapoznawczej
+title: Zainstaluj wersję zapoznawczą lub aktualizacji dla programu Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące aktualizacji programu Visual Studio dla komputerów Mac i uzyskiwania dostępu do wersji, w tym Visual 2019 Studio dla komputerów Mac w wersji zapoznawczych w wersji zapoznawczej.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: b9afb8f651394e915d907a754b92dfe8dfd79d73
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: fbd6f51ee2a4db7407bb96dff82e31d6dca7389d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567948"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856122"
 ---
-# <a name="install-a-preview-release"></a>Instalowanie wersji zapoznawczej
+# <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Zainstaluj wersję zapoznawczą lub aktualizacji dla programu Visual Studio dla komputerów Mac
 
 Przed oficjalnym wydaniu nowej wersji programu Visual Studio dla komputerów Mac, jest dostępne w wersji zapoznawczej. Wersja zapoznawcza daje szansę wypróbować nowe funkcje i uzyskać najnowsze poprawki błędów, aby w pełni są włączone do produktu.
 
-Wersji zapoznawczych programu Visual Studio dla komputerów Mac są dystrybuowane jako aktualizację, a nie za pośrednictwem osobnego pobrania. Program Visual Studio for Mac ma trzy updater kanały, zgodnie z opisem w [aktualizacji](update.md) artykułu: Stabilne, Beta i Alpha.
+Wersji zapoznawczych programu Visual Studio dla komputerów Mac są dystrybuowane jako aktualizację, a nie za pośrednictwem osobnego pobrania. Program Visual Studio for Mac ma dwa kanały updater, zgodnie z opisem w [aktualizacji](update.md) artykułu: **Stabilna** i **Podgląd**.
 
-Większość wersji zapoznawczych będzie dostępna za pośrednictwem zarówno **Beta** i **alfa** kanałów, ale zawsze sprawdzaj [informacje o wersji zapoznawczej](/visualstudio/releasenotes/vs2017-mac-preview-relnotes) najdokładniejszych informacji.
+Większość wersji zapoznawczych będzie dostępna za pośrednictwem zarówno **Podgląd** kanału, ale zawsze sprawdzaj [informacje o wersji zapoznawczej](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) najdokładniejszych informacji.
 
 Aby zainstalować wersję zapoznawczą programu Visual Studio dla komputerów Mac, użyj następujących kroków:
 
 1. Przejdź do **programu Visual Studio > Sprawdź aktualizacje**.
-2. W polu kombi kanału aktualizacji wybierz **Beta**.
+2. W polu kombi kanału aktualizacji wybierz **Podgląd**.
 3. Wybierz **kanału o przełącznikiem** przycisk, aby przełączyć się do wybranego kanału i rozpocząć pobieranie nowe aktualizacje.
 4. Wybierz **ponownego uruchomienia i zainstaluj aktualizacje** przycisk, aby rozpocząć instalowanie aktualizacji.
 

@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i używanie za serwerem zapory lub serwera proxy
 description: Sprawdź adresy URL domen, porty i protokoły, które można dodać do listy dozwolonych lub otworzyć, jeśli Twoja organizacja korzysta z zapory lub serwera proxy
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515379"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857531"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -141,7 +141,8 @@ Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
 
 ## <a name="see-also"></a>Zobacz także
 
+* [Wymagania dotyczące łączności dla udostępniania na żywo](/visualstudio/liveshare/reference/connectivity/)
 * [Tworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Rozwiązywanie problemów dotyczących sieci w programie Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Instalowanie za serwerem zapory lub serwera proxy (Visual Studio dla komputerów Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

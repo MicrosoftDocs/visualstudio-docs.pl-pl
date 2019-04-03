@@ -1,6 +1,7 @@
 ---
 title: 'Instrukcje: Odblokować program Visual Studio'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943145"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856823"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Instrukcje: Odblokować program Visual Studio
 
@@ -27,7 +30,7 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Logując się do I
 
 Odblokować program Visual Studio przy użyciu subskrypcji programu Visual Studio lub organizacja DevOps platformy Azure skojarzone z kontem Microsoft lub konta służbowego lub szkolnego:
 
-1. Kliknij **Zaloguj** przycisk w prawym górnym rogu środowiska IDE (lub przejdź do **pliku** > **ustawienia konta** otworzyć **ustawienia konta**  okno dialogowe i kliknij pozycję **Zaloguj** przycisk).
+1. Wybierz **Zaloguj** przycisk w prawym górnym rogu IDE (lub przejdź do **pliku** > **ustawienia konta** otworzyć **ustawienia konta**  okna dialogowego i wybierz polecenie **Zaloguj** przycisk).
 
 1. Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcji programu Visual Studio lub organizację DevOps platformy Azure skojarzony z Twoim kontem.
 
@@ -36,9 +39,9 @@ Odblokować program Visual Studio przy użyciu subskrypcji programu Visual Studi
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Aby odblokować program Visual Studio za pomocą klucza produktu
 
-1. Wybierz **pliku** > **ustawienia konta** otworzyć **ustawienia konta** okno dialogowe i kliknij pozycję **licencji za pomocą klucza produktu**łącza.
+1. Wybierz **pliku** > **ustawienia konta** otworzyć **ustawienia konta** okno dialogowe, a następnie wybierz **licencji za pomocą klucza produktu** łącza.
 
-Wprowadź klucz produktu, w tym miejscu.
+1. Wprowadź klucz produktu, w tym miejscu.
 
 > [!TIP]
 > Wersje wstępne programu Visual Studio nie ma kluczy produktów. Musisz się zalogować do środowiska IDE programu do użycia wersji wstępnych.
@@ -47,7 +50,7 @@ Wprowadź klucz produktu, w tym miejscu.
 
 ### <a name="update-stale-licenses"></a>Aktualizowanie starych licencji
 
- Można było zaobserwować poniżej komunikat, który licencja jest przestarzałe w programie Visual Studio, który odczytuje, "licencja stała się przestarzała i trzeba ją zaktualizować."
+ Możesz już znać następujący komunikat informujący o tym, czy Twoja licencja będzie przestarzałe w programie Visual Studio. Odczytuje, "licencja stała się przestarzała i trzeba ją zaktualizować."
 
  ![Visual Studio starych licencji wiadomości](../ide/media/vs2017_stale-license.png)
 
@@ -56,9 +59,9 @@ Wprowadź klucz produktu, w tym miejscu.
 - Bez użycia programu Visual Studio lub mieli Brak połączenia z Internetem przez dłuższy czas.
 - Nastąpiło wylogowanie programu Visual Studio.
 
-Token licencji przejdzie starych, Visual Studio wyświetla najpierw ostrzeżenie komunikat z prośbą o ponowne wprowadzenie poświadczeń.
+Token licencji przejdzie starych, Visual Studio wyświetla najpierw ostrzeżenie informujące, że należy ponownie wprowadzić swoje poświadczenia.
 
-Jeśli nie ponownie wprowadzić swoje poświadczenia, token rozpoczyna się do starych i **ustawienia konta** okno dialogowe informuje o ile dni pozostało przed pełni wygaśnięcia tokenu. Po wygaśnięciu tokenu programu, należy ponownie wprowadzić swoje poświadczenia dla tego konta lub aktywnej licencji przy użyciu innej metody powyżej, przed kontynuowaniem za pomocą programu Visual Studio.
+Jeśli nie ponownie wprowadzić swoje poświadczenia, token rozpoczyna się do starych i **ustawienia konta** okno dialogowe informuje o ile dni pozostało przed pełni wygaśnięcia tokenu. Po wygaśnięciu tokenu programu musi ponownie wprowadzić swoje poświadczenia dla konta, zanim będzie można kontynuować przy użyciu programu Visual Studio.
 
 > [!Important]
 > Jeśli używasz programu Visual Studio przez dłuższy czas, w środowiskach o ograniczonym lub Brak dostępu do Internetu, należy użyć klucza produktu odblokować program Visual Studio, aby uniknąć przerw w działaniu.

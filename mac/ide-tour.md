@@ -3,20 +3,17 @@ title: Visual Studio for Mac Tour
 description: Visual Studio dla komputerów Mac udostępnia zintegrowane środowisko projektowe umożliwiające tworzenie aplikacji .NET w systemie macOS, w tym witryny sieci Web platformy ASP.NET Core oraz projekty Xamarin dla systemu iOS, Android, Mac i zestawu narzędzi Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 02/07/2019
+ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573013"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856317"
 ---
-# <a name="visual-studio-2019-for-mac-preview-tour"></a>Visual Studio 2019 r, aby zapoznać się z komputerów Mac (wersja zapoznawcza)
-
-> [!NOTE]
-> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md) w wersji zapoznawczej na potrzeby testowania.
+# <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac tour
 
 Program Visual Studio dla komputerów Mac jest .NET _zintegrowanego środowiska programistycznego_ na komputerze Mac, który może służyć do edycji, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Oprócz oczekiwane funkcje, takie jak standardowy edytor i debugera Visual Studio for Mac obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i kontroli źródła do aparatu ese procesu tworzenia oprogramowania.
 
@@ -39,9 +36,9 @@ W tym artykule przedstawiono różne części programu Visual Studio dla kompute
 
 Program Visual Studio for Mac jest podzielony na kilka sekcji do plików aplikacji i ustawień tworzenia kodu aplikacji i zarządzanie debugowania.
 
-## <a name="new-start-window"></a>Nowe okno uruchamiania
+## <a name="start-window"></a>Okno uruchamiania
 
-Po uruchomieniu programu Visual Studio 2019 dla komputerów Mac w wersji zapoznawczej, nowi użytkownicy będą widzieć okno logowania. Zaloguj się przy użyciu konta Microsoft można aktywować płatnej licencji (jeśli istnieje) lub link do subskrypcji platformy Azure. Możesz nacisnąć przycisk **Pomiń** i zalogować się później za pomocą **programu Visual Studio > Zaloguj się** element menu:
+Po uruchomieniu programu Visual Studio 2019 dla komputerów Mac, nowi użytkownicy będą widzieć okno logowania. Zaloguj się przy użyciu konta Microsoft można aktywować płatnej licencji (jeśli istnieje) lub link do subskrypcji platformy Azure. Możesz nacisnąć przycisk **Pomiń** i zalogować się później za pomocą **programu Visual Studio > Zaloguj się** element menu:
 
 ![Zaloguj się do swojego konta Microsoft](media/ide-tour-2019-start-signin.png)
 

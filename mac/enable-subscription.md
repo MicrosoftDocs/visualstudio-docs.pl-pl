@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987655"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856409"
 ---
 # <a name="enable-subscription"></a>Włączanie subskrypcji
 
@@ -40,9 +40,9 @@ Obecnie nie istnieje sposób korzystanie z klucza produktu, umożliwiające wł�
 
 > [!NOTE]
 > Aktywacji w trybie offline nie jest dostępna dla programu Visual Studio dla komputerów Mac.
-> Aby aktywować usługi Visual Studio 2017 for Mac Professional lub Enterprise subskrypcji, musisz można połączenie z Internetem podczas rejestrowania się w.
+> Aby aktywować swoje Visual 2019 r Studio dla komputerów Mac Professional lub Enterprise subskrypcji, musisz można połączenie z Internetem podczas logowania.
 
-Jeśli zakupiono Visual Studio Enterprise 2017 dla komputerów Mac dla maszyny bez połączenia z Internetem, mogą nadal używać programu Visual Studio dla komputerów Mac bez aktywacji, ale narzędzia Xamarin Inspector, Profiler środowiska Xamarin i nie są funkcje osadzone zespoły jest dostępna.
+Jeśli zakupiono 2019 przedsiębiorstwa w usłudze Visual Studio dla komputerów Mac dla maszyny bez połączenia z Internetem, mogą nadal używać programu Visual Studio dla komputerów Mac bez aktywacji, ale narzędzia Xamarin Inspector, Profiler środowiska Xamarin i nie są funkcje osadzone zespoły jest dostępna.
 
 ## <a name="see-also"></a>Zobacz także
 

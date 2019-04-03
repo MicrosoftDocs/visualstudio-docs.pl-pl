@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a9149498301e26d9b0155df6175693f5c3679e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d613bbc75bfac14f17c2c50d0702ed89b744baac
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790917"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857830"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 
@@ -51,6 +51,7 @@ Można uruchomić program MSBuild z programu Visual Studio lub **okna polecenia*
 1. Kliknij przycisk **OK** lub **Utwórz** do tworzenia pliku projektu.
 
 ## <a name="examine-the-project-file"></a>Zapoznaj się z plikiem projektu
+
  Aby utworzyć plik projektu języka Visual C# w poprzedniej sekcji użyto programu Visual Studio. Plik projektu jest reprezentowana w **Eksploratora rozwiązań** przez węzeł projektu o nazwie BuildApp. Edytor kodu programu Visual Studio można użyć do sprawdzenia pliku projektu.
 
 **Aby zbadać pliku projektu**
@@ -221,8 +222,14 @@ $(PropertyName)
 4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):
 
     ```
+    ::: moniker range=">=vs-2019"
+    Configuration is Debug
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ::: moniker-end
     ```
 
 > [!NOTE]

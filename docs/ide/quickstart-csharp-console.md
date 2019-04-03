@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5622741a394f11444bcdc432cc5a0a25fddb92
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416304"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856583"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: Tworzenie pierwszej przy użyciu programu Visual Studio C# aplikacji konsoli
 
@@ -34,7 +34,7 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 

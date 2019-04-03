@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: dbb372a042bc92421d1c7a60a5d0505a56ccbb00
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ae068ba052c9fcde99bea034c9216d2a24b5626e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325167"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856828"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -30,7 +30,7 @@ Aby korzystać z tej nowej funkcji, należy:
 - [Narzędzi usługi Kubernetes dla programu Visual Studio](https://aka.ms/get-vsk8stools), która jest dostępna do pobrania osobno.
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
 ::: moniker-end
 - [Docker pulpitu](https://store.docker.com/editions/community/docker-ce-desktop-windows) zainstalowane na deweloperskiej stacji roboczej (oznacza to, gdzie możesz uruchomić program Visual Studio), jeśli chcesz skompilować obrazy Docker, debugowanie kontenerów platformy Docker działa lokalnie, lub opublikować w usłudze AKS. (Docker jest *nie* wymagane do kompilowania i debugowania kontenerów platformy Docker w usłudze AKS za pomocą usługi Azure Dev miejsca do magazynowania.)
 ::: moniker range="vs-2017"

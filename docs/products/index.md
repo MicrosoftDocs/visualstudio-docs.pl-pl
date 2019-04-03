@@ -5,6 +5,12 @@ title: Visual Studio Products | Microsoft Docs
 description: Zapoznaj się z produktów z rodziny Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: e7a895b95c6f357fcab8674ae87296fa191ea856
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857298"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -48,7 +54,7 @@ searchScope: []
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>Twórz aplikacje i gry za pomocą Mac, dla chmury, z systemem iOS, Android, macOS i wearables.</p>
+                                                    <p>Twórz aplikacje i gry dla systemów iOS, Android, pulpitu i sieci web przy użyciu platformy .NET.</p>
                                                 </div>
                                             </div>
                                         </div>

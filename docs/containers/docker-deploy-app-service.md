@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 4f28494bcb15cc66d8563fdc371a33a15fde85a3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e4cff380bd2c0de868549c1f6d9ffeb204c20f7d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322683"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856267"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET Core w usłudze Azure App Service przy użyciu programu Visual Studio
 
@@ -29,7 +29,7 @@ Do ukończenia tego samouczka:
 - Zainstaluj najnowszą wersję [programu Visual Studio 2017](https://azure.microsoft.com/downloads/) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
 ::: moniker-end
 - Zainstaluj [pulpitu platformy Docker](https://docs.docker.com/docker-for-windows/install/)
 

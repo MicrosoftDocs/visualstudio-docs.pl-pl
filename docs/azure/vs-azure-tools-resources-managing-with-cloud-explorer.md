@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 97b6d27c676af1fb5d4a81778c708a3ad036c601
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789254"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857167"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
@@ -24,7 +24,7 @@ Podobnie jak [witryny Azure portal](http://go.microsoft.com/fwlink/p/?LinkID=525
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Visual Studio 2017 r. lub nowszej (zobacz [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) za pomocą **obciążenie platformy Azure** wybrane. Można również użyć starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 r. lub nowszej (zobacz [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) za pomocą **obciążenie platformy Azure** wybrane. Można również użyć starszej wersji programu Visual Studio za pomocą [zestawu Microsoft Azure SDK dla platformy .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Konto Microsoft Azure — Jeśli nie masz konta, możesz to zrobić [utworzyć konto bezpłatnej wersji próbnej](http://go.microsoft.com/fwlink/?LinkId=623901) lub [aktywować korzyści dla subskrybentów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

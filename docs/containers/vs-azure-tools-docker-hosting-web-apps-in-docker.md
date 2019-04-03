@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: d287d26b9807876d99b4bed871c464a3130e627f
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e44c9e0e73f6ff4d557ab9bc3d6f19a2cf73f5ec
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515173"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856922"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Wdrażanie kontenera platformy ASP.NET w rejestrze kontenerów przy użyciu programu Visual Studio
 
@@ -33,7 +33,7 @@ Do ukończenia tego samouczka:
 * Zainstaluj najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-* Zainstaluj najnowszą wersję [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
+* Zainstaluj najnowszą wersję [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) z obciążeniem "programowanie aplikacji platformy ASP.NET i sieci web"
 ::: moniker-end
 * Zainstaluj [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 

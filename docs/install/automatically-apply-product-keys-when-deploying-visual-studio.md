@@ -1,7 +1,7 @@
 ---
 title: Automatyczne stosowanie kluczy produktów
 description: Dowiedz się, jak programowo stosowanie kluczy produktów podczas wdrażania programu Visual Studio.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c6df0e09f48460fa88caf9f5657f73d9446bf133
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: fada7bb074275bc71b7553375a50100620324aa2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324175"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856233"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 
@@ -25,7 +25,17 @@ Można zastosować klucz produktu programowego jako część skryptu, który sł
 
 ## <a name="apply-the-license-after-installation"></a>Po zainstalowaniu Zastosuj licencji
 
- Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą `StorePID.exe` narzędzia na komputerach docelowych, w trybie dyskretnym. `StorePID.exe` to narzędzie program, instaluje się za pomocą programu Visual Studio 2017 w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+::: moniker range="vs-2017"
+
+Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą `StorePID.exe` narzędzia na komputerach docelowych, w trybie dyskretnym. `StorePID.exe` to narzędzie program, instaluje się za pomocą programu Visual Studio 2017 w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można aktywować za pomocą `StorePID.exe` narzędzia na komputerach docelowych, w trybie dyskretnym. `StorePID.exe` to narzędzie program, instaluje się za pomocą programu Visual Studio 2019 r w następującej lokalizacji domyślnej: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+
+::: moniker-end
 
  Uruchom `StorePID.exe` z podwyższonym poziomem uprawnień, za pomocą agenta programu System Center lub wiersz polecenia. Postępuj zgodnie z jej za pomocą klucza produktu i kod produktu firmy Microsoft (MPC).
 
@@ -36,11 +46,25 @@ Można zastosować klucz produktu programowego jako część skryptu, który sł
  StorePID.exe [product key including the dashes] [MPC]
  ```
 
+::: moniker range="vs-2017"
+
  W poniższym przykładzie przedstawiono polecenie stosowania licencji dla programu Visual Studio 2017 Enterprise, która ma MPC 08860, klucz produktu `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, założono domyślna lokalizacja instalacji:
 
  ```cmd
  "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
  ```
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ W poniższym przykładzie pokazano wiersza polecenia dotyczące stosowania licencji programu Visual Studio 2019 r Enterprise, która ma MPC 08860, klucz produktu `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, założono domyślna lokalizacja instalacji:
+
+ ```cmd
+ "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+ ```
+::: moniker-end
+
+::: moniker range="vs-2017"
 
  Poniższa tabela zawiera listę kodów MPC dla każdej wersji programu Visual Studio:
 
@@ -49,6 +73,18 @@ Można zastosować klucz produktu programowego jako część skryptu, który sł
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |
 | Visual Studio Test Professional 2017 | 08866 |
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+| Wersja programu Visual Studio                | MPC   |
+|--------------------------------------|-------|
+| Visual Studio Enterprise 2019        | 08860 |
+| Visual Studio Professional 2019      | 08862 |
+| Visual Studio Test Professional 2019 | 08866 |
+
+::: moniker-end
 
 Jeśli `StorePID.exe` pomyślnie dotyczy klucz produktu, funkcja zwraca `%ERRORLEVEL%` 0. W przypadku wykrycia błędów, zwraca jedną z poniższych kodów, w zależności od warunku błędu:
 

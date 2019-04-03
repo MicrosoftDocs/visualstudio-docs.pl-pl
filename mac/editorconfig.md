@@ -1,5 +1,5 @@
 ---
-title: Wtyczki EditorConfig
+title: EditorConfig
 description: Przy użyciu pliku editorconfig umożliwia spójne projektu kodowania stylów w programie Visual Studio dla komputerów Mac.
 author: conceptdev
 ms.author: crdun
@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294022"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857505"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Tworzenie i edytowanie niestandardowego pliku EditorConfig
 
 W programie Visual Studio dla komputerów Mac, można dodać [EditorConfig](http://editorconfig.org/) plik do projektu lub rozwiązania, aby wymusić spójnej kodowania style dla wszystkich użytkowników, który działa w bazie kodu. Ustawienia zadeklarowany w pliku EditorConfig pierwszeństwo globalnego programu Visual Studio dla ustawienia edytora tekstu Mac. Za pomocą polecenia EditorConfig w obrębie projektu lub plik codebase pozwala ustawić swój kodowania styl, preferencji i ostrzeżenia dla Twojego projektu. Ponieważ plik jest częścią bazy kodu, ułatwia dla wszystkich użytkowników, aby stosować się do praktyk kodowania projektu, niezależnie od tego, środowiska IDE albo edytora kodu, które używają.
 
-[Polecenie EditorConfig](http://editorconfig.org/) pliki są obsługiwane na wiele edytorów IDE i kodu, łącznie z programu Visual Studio 2017.
+[Polecenie EditorConfig](http://editorconfig.org/) pliki są obsługiwane na wiele edytorów IDE i kodu, łącznie z programu Visual Studio.
 
 ## <a name="supported-settings"></a>Obsługiwane ustawienia
 
@@ -137,7 +137,7 @@ W powyższym przykładzie niektóre ustawienia są stosowane do wszystkich plik�
 
 Aby uzyskać więcej informacji na temat dostępnych ustawień EditorConfig, zobacz [.NET coding convention ustawienia dla wtyczki EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) artykułu i [obsługiwanych właściwości](http://editorconfig.org/#supported-properties) sekcji w oficjalnej dokumentacji.
 
-## <a name="override-editorconfig-settings"></a>Przesłoń ustawienia wtyczki EditorConfig
+## <a name="override-editorconfig-settings"></a>Override EditorConfig Settings
 
 Można mieć więcej niż jeden `.editorconfig` pliku w poszczególnych rozwiązaniach. Program Visual Studio for Mac odczyty `.editorconfig` plików od góry do dołu w rozwiązaniu, dodawania i zastępowanie ustawień, ponieważ przechodzi. Oznacza to, że ustawienia w `.editorconfig` _najbliższego_ pliku edycji będzie miało pierwszeństwo. Ustawienia są pobierane z `.editorconfig` pliku w tym samym folderze (jeśli istnieje), a następnie `.editorconfig` w folderze nadrzędnym (jeśli istnieje,) itd. do momentu znalezienia `root=true`.
 

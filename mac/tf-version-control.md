@@ -7,19 +7,19 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295933"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856706"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
 > [!NOTE]
 > Team Foundation Version Control obsługi jest obecnie w wersji zapoznawczej, a niektóre funkcje nie jeszcze w pełni działa. Chętnie poznamy opinii od Ciebie na wszelkie problemy w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html). Zmiany są nadal pochodzić!
 
-Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Git, która jest rozłożona Kontrola wersji i Team Foundation Version kontroli (TFVC), czyli scentralizowany formant wersji. Ten artykuł zawiera omówienie oraz punkt początkowy dla zastosowaniem funkcji TFVC za pomocą programu Visual Studio dla komputerów Mac.
+Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Repozytorium Git jest rozłożona Kontrola wersji i Team Foundation Version kontroli (TFVC), czyli scentralizowany formant wersji. Ten artykuł zawiera omówienie oraz punkt początkowy dla zastosowaniem funkcji TFVC za pomocą programu Visual Studio dla komputerów Mac.
 
 ## <a name="requirements"></a>Wymagania
 
@@ -42,8 +42,6 @@ Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualiza
 ![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png)
 
 Naciśnij klawisz **zainstalować** w następnym oknie dialogowym odinstalowanie starego pakietu i instalacja nowego.
-
-Aby uzyskać informacji na temat nowości w każdej wersji, zobacz [informacje o wersji](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Za pomocą dodatku
 
@@ -155,7 +153,7 @@ Następujące opcje może służyć do uwierzytelniania z serwerem:
 
 - OAuth
 - Podstawowy
-- Uwierzytelnianie NTLM
+- Ntlm
 
 Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **uwierzytelniania alternatywnych poświadczeń** w usługom DevOps platformy Azure, wykonując poniższe kroki:
 

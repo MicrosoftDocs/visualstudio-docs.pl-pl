@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204336"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856450"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Można również usunąć następującego katalogu zawierającego różnych Xamarin plików i folderów. Jednak przed wykonaniem należy pamiętać, że ten katalog zawiera Android kluczy podpisywania. Aby uzyskać więcej informacji można znaleźć w sekcji  **[odinstalowywania zestawu Android SDK i zestawu SDK Java](#uninstall-android-sdk-and-java-sdk)**:
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Odinstaluj 2019 usługi Visual Studio for Mac (wersja zapoznawcza)
+
+Visual Studio 2019 r dla komputerów Mac (wersja zapoznawcza) została uruchomiona w oddzielnych wersji zapoznawczej, co pozwoli na kontynuowanie pracy przy użyciu usługi Visual Studio 2017 for Mac Zainstaluj side-by-side.
+
+Teraz, po udostępnieniu programu Visual Studio 2019 r dla komputerów Mac, możesz teraz bezpiecznie usunąć Visual 2019 Studio dla komputerów Mac w wersji zapoznawczej aplikacji.
+
+Można odinstalować pakietu aplikacji (wersja zapoznawcza), wybierz **programu Visual Studio (wersja zapoznawcza)** z Twojej **aplikacje** folder i kliknij przycisk **przenieść do Kosza**, jak pokazano w następującym obraz:
+
+![Opcja "Przenieś do Kosza" w programie finder](media/uninstall-remove-vspreview.png)
+
+Można również usunąć pliku plist (wersja zapoznawcza) za pomocą następującego polecenia:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Zobacz także

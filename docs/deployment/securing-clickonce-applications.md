@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a307221e4e585ab3cb8ee6f1ad3e71057afaf671
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605318"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866789"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpieczanie aplikacji ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podlegają ograniczenia zabezpieczeń dostępu kodu na platformie .NET Framework, co pomaga ograniczyć dostęp tego kodu do chronionych zasobów i operacji. Dlatego ważne jest, że rozumiesz implikacje zabezpieczenia dostępu kodu, aby zapisać swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednio. W celu ograniczenia dostępu aplikacje mogą używać pełnego zaufania lub stref częściowych, takich jak strefy Internet i Intranet.
@@ -74,7 +74,7 @@ ms.locfileid: "56605318"
 >  Argumenty ciągu zapytania to jedyny sposób przekazywania argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji podczas uruchamiania. Nie można przekazywać argumentów do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji z poziomu wiersza polecenia.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Wdrażanie zestawów zasłoniętych
- Program Visual Studio obejmuje bezpłatną [PreEmptive ochrona — system Dotfuscator Community Edition](../ide/dotfuscator/index.md), którego można użyć do ochrony aplikacji ClickOnce za pomocą środków aktywnej ochrony i zaciemniania kodu.  Aby uzyskać więcej informacji, zobacz [ClickOnce części podręcznika użytkownika system Dotfuscator Community Edition](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
+ Program Visual Studio obejmuje bezpłatną [PreEmptive ochrona — system Dotfuscator Community](../ide/dotfuscator/index.md), którego można użyć do ochrony aplikacji ClickOnce za pomocą środków aktywnej ochrony i zaciemniania kodu.  Aby uzyskać więcej informacji, zobacz [ClickOnce części podręcznika użytkownika system Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Zobacz także
 - [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)

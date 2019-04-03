@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342627"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807795"
 ---
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
@@ -91,22 +91,24 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
    ![Lista elementów członkowskich programu Visual Studio](../media/intellisense-list-members.png)
 
-- [Szybkie uruchamianie](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Pole wyszukiwania
 
-   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. **Szybkie uruchamianie** pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, **Szybkie uruchamianie** zapewnia wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
+   Program Visual Studio może wydawać się trudne w czasie za pomocą menu tak wiele, opcje i właściwości. Pole wyszukiwania jest doskonałym sposobem na szybkie znajdowanie potrzebnej w programie Visual Studio. Po uruchomieniu, wpisując nazwę coś, czego szukasz, program Visual Studio wyświetla wyniki, które przyjmują dokładnie miejscu należy przejść. Jeśli chcesz dodać funkcje do programu Visual Studio, na przykład aby dodać obsługę dodatkowych języka programowania, pole wyszukiwania zawiera wyniki, które Otwórz Instalator programu Visual Studio do zainstalowania obciążeń lub poszczególnych składników.
 
    > [!TIP]
-   > Naciśnij klawisz **Ctrl**+**Q** jako skrót do **Szybkie uruchamianie** pola wyszukiwania.
+   > Naciśnij klawisz **Ctrl**+**Q** jako skrót do pola wyszukiwania.
 
    ::: moniker range="vs-2017"
 
    ![Szybkie uruchamianie pola wyszukiwania w programie Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Aby uzyskać więcej informacji, zobacz [Szybkie uruchamianie](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Szybkiego uruchamiania pola wyszukiwania w programie Visual Studio 2019 r.](../media/vs-2019/quick-launch-nuget.png)
+   ![Pole wyszukiwania w programie Visual Studio 2019 r.](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

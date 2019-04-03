@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2213c1e573efa1811d3b578c3d7bd92f1b77f2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526424"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857765"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Rozwiązywanie problemów i znane problemy dotyczące debugowania migawek w programie Visual Studio
 
@@ -60,8 +60,8 @@ Wykonaj następujące czynności:
 - Upewnij się, że Twoja aplikacja jest obsługiwana:
   - Usługi aplikacji Azure — aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
   - Usługa Azure App Services — aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
-  - Azure Virtual Machines (i zestawu skalowania maszyn wirtualnych) — aplikacji ASP.NET uruchomionych w .NET Framework 4.6.1 lub nowszej.
-  - Azure maszyn wirtualnych (i zestawu skalowania maszyn wirtualnych) - platformy ASP.NET Core aplikacji uruchomionych na zestaw .NET Core 2.0 lub nowszych na Windows.
+  - Usługa Azure Virtual Machines (i zestawu skalowania maszyn wirtualnych) - aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
+  - Usługa Azure Virtual Machines (i zestawu skalowania maszyn wirtualnych) — aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
   - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Debian 9.
   - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Alpine 3.8.
   - Usługi platformy Azure Kubernetes — aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Ubuntu 18.04.
@@ -74,6 +74,51 @@ Wykonaj następujące czynności:
 Wykonaj następujące czynności:
 
 - Migawki zajmują mało pamięci, ale charakteryzują się opłaty zatwierdzenia. Jeśli rozszerzenie Snapshot Debugger wykryje, że usługi na serwerze występuje duże obciążenie pamięci duże, nie będzie wykonywać migawek. Możesz usunąć migawki już przechwycony przez zatrzymanie sesji rozszerzenia Snapshot Debugger i podjęcie ponownej próby.
+
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problem: Debugowanie migawki z wieloma wersjami programu Visual Studio pozwala mi błędy
+
+VS 2019 wymaga nowszej wersji rozszerzenie witryny Snapshot Debugger w usłudze Azure App Service.  Ta wersja nie jest zgodny ze starszą wersją programu rozszerzenie witryny Snapshot Debugger posługują się programu VS 2017.  Jeśli próbujesz dołączyć rozszerzenie Snapshot Debugger w VS 2019 do usługi Azure App Service, w którym ma zostały wcześniej debugowane debugera migawki w programie VS 2017, zostanie wyświetlony następujący błąd:
+
+![Rozszerzenie witryny Snapshot Debugger niezgodne VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "rozszerzenie witryny niezgodne rozszerzenia Snapshot Debugger 2019 programu VS")
+
+Z drugiej strony Jeśli używasz programu VS 2017 można dołączyć rozszerzenie Snapshot Debugger do usługi Azure App Service, w którym ma zostały wcześniej debugowane debugera migawki w VS 2019 zostanie wyświetlony następujący błąd:
+
+![Niezgodne rozszerzenie witryny Snapshot Debugger programu VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "rozszerzenie witryny niezgodne rozszerzenia Snapshot Debugger programu VS 2017")
+
+Aby rozwiązać ten problem, Usuń następujące ustawienia aplikacji w witrynie Azure portal i ponownie dołączyć rozszerzenie Snapshot Debugger:
+
+- INSTRUMENTATIONENGINE_EXTENSION_VERSION
+- SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problem: Występują problemy z debugowania migawek i trzeba włączyć rejestrowanie większej ilości
+
+### <a name="enable-agent-logs"></a>Włączanie dzienników agenta
+
+Aby włączyć lub wyłączyć agenta rejestrowania Otwórz program Visual Studio przejdź do *Narzędzia > Opcje > rozszerzenia Snapshot Debugger > agent Włącz rejestrowanie*. Należy pamiętać, jeśli *usuwania starego agenta loguje rozpoczęcia sesji* jest również włączone, każdy pomyślne programu Visual Studio dołączyć będzie usunąć poprzednie dzienniki agenta.
+
+Dzienniki agenta można znaleźć w następujących lokalizacjach:
+
+- App Services:
+  - Przejdź do witryny Kudu usługi App Service (czyli yourappservice. **Menedżer sterowania usługami**. azurewebsites.net) i przejdź do konsoli debugowania.
+  - Dzienniki agenta są przechowywane w następującym katalogu:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- VM/VMSS:
+  - Zaloguj się do maszyny Wirtualnej agenta, dzienniki są przechowywane w następujący sposób:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+- AKS
+  - Przejdź do następującego katalogu: / tmp/diag/AgentLogs / *
+
+### <a name="enable-profilerinstrumentation-logs"></a>Włączanie dzienników Profiler/Instrumentacji
+
+Dzienniki Instrumentacji można znaleźć w następujących lokalizacjach:
+
+- App Services:
+  - Rejestrowanie błędów jest automatycznie przesyłany do D:\Home\LogFiles\eventlog.xml, są oznaczone zdarzenia << nazwa dostawcy = "Instrumentacji aparatu" / / >> lub "Produkcyjne punkty przerwania"
+- VM/VMSS:
+  - Zaloguj się do maszyny Wirtualnej, a następnie otwórz Podgląd zdarzeń.
+  - Otwórz następujący widok: *Dzienniki Windows > Aplikacja*.
+  - *Filtruj bieżący dziennik* przez *źródła zdarzeń* za pomocą *punktów przerwania w środowisku produkcyjnym* lub *aparatu Instrumentacji*.
+- AKS
+  - Instrumentacja aparatu rejestrowania na /tmp/diag/log.txt (ustawiana MicrosoftInstrumentationEngine_FileLogPath w pliku DockerFile)
+  - Rejestrowanie ProductionBreakpoint na /tmp/diag/shLog.txt
 
 ## <a name="known-issues"></a>Znane problemy
 
@@ -96,7 +141,7 @@ Debugowanie migawki i usługi Application Insights są zależne od ICorProfiler,
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
+- [Debugowanie w Visual Studio](../debugger/index.md)
 - [Debugowanie na żywo aplikacji ASP.NET, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md)
 - [Debugowanie na żywo ASP.NET Azure wirtualnego Machines\Virtual maszyn Scale Sets przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)
 - [Debugowanie na żywo ASP.NET Azure Kubernetes za pomocą rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)

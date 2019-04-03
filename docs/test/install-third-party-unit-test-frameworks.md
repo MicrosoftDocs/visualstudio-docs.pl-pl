@@ -1,70 +1,36 @@
 ---
 title: Instalowanie platform testów jednostkowych innych firm
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982925"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857705"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalowanie platform testów jednostkowych
 
-Visual Studio Test Explorer można uruchamiać dowolną jednostkę struktury testowej, która opracowała interfejs adapter dla Eksploratora. Program instalacyjny Framework instaluje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów. Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków. Eksplorator testów wykonuje na nich wszystkich.
+Visual Studio Test Explorer można uruchomić testy przy użyciu dowolnej jednostki struktury testowej, która opracowała interfejs karta dla niego. Instalowanie programu framework kopiuje pliki binarne i dodaje szablony projektu Visual Studio dla obsługiwanych języków. Podczas tworzenia projektu z szablonem, struktura jest zarejestrowany w Eksploratorze testów.
 
-[MSTest](getting-started-with-unit-testing.md) to struktura testów, dostarczane przez program Visual Studio i jest domyślnie instalowany z programem Visual Studio.
+Rozwiązania programu Visual Studio może zawierać projektów testów jednostkowych, które korzystają z różnych platform i które są przeznaczone dla różnych języków.
+
+[MSTest](getting-started-with-unit-testing.md) to struktura testów, dostarczane przez program Visual Studio i jest instalowany domyślnie.
 
 ## <a name="acquire-frameworks"></a>Uzyskiwanie struktur
 
-Możesz pobrać i zainstalować platform testów jednostkowych innych firm, korzystając z Menedżera rozszerzeń programu Visual Studio lub [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Można również pobrać struktur w innych witrynach, takich jak witryny sieci Web Framework.
+Instalowanie platform testów jednostkowych innych firm przy użyciu **Menedżera pakietów NuGet**.
 
-### <a name="install-from-visual-studio"></a>Instalowanie za pomocą programu Visual Studio
+1. Kliknij prawym przyciskiem myszy na projekt, który będzie zawierać kod testu, a następnie wybrać **Zarządzaj pakietami NuGet**.
 
-::: moniker range="vs-2017"
+2. W **Menedżera pakietów NuGet**, wyszukaj struktury testowej chcesz zainstalować, a następnie kliknij przycisk **zainstalować**.
 
-1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Wybierz **rozszerzenia** > **Zarządzaj rozszerzeniami**.
-
-::: moniker-end
-
-2. Rozwiń **Online** > **Visual Studio Marketplace** > **narzędzia**, a następnie wybierz **testowania**.
-
-3. Przeszukaj listę, aby znaleźć platformę.
-
-4. Wybierz platformę i wybierz pozycję **Pobierz**.
-
-Aby uzyskać więcej informacji, zobacz [wyszukiwanie i korzystanie z rozszerzenia programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Instalowanie z sieci web
-
-Jeśli znasz framework, który Cię interesuje:
-
-1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com/vs).
-
-2. Wpisz nazwę platformy w **znaleźć** pole.
-
-3. Wybierz platformę, na liście wyników, aby przejść do **Visual Studio Marketplace** strony dla narzędzia.
-
-Aby przeglądać listę struktury oraz inne narzędzia do testowania:
-
-1. Otwórz [witryny Marketplace programu Visual Studio](https://marketplace.visualstudio.com/vs).
-
-2. W **Filtruj według kategorii / kolekcji**, wybierz **holograficznych**.
-
-3. W **kategorii** listy (oznaczone jako **przedstawiający**), rozwiń węzeł **narzędzia** węzeł, a następnie wybierz **testowania**.
-
-4. Wybieranie platformy na liście wyników, aby przejść do **Visual Studio Marketplace** strony dla narzędzia.
+   ![Menedżer pakietów NuGet w programie Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Zaktualizuj do najnowszej adaptery testowe
 

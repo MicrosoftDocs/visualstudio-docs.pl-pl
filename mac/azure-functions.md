@@ -3,16 +3,16 @@ title: Wprowadzenie do usługi Azure Functions
 description: Użycie usługi Azure functions w programie Visual Studio dla komputerów Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295946"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857246"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -20,7 +20,7 @@ Usługa Azure functions to sposób tworzenia i uruchamiania oparte na zdarzeniac
 
 ## <a name="requirements"></a>Wymagania
 
-Narzędzia funkcji platformy Azure są objęte **programu Visual Studio dla komputerów Mac w wersji 7.5**.
+Narzędzia funkcji platformy Azure są objęte **programu Visual Studio dla komputerów Mac w wersji 7.5** i nowszych.
 
 Aby utworzyć i wdrożyć funkcje należy również subskrypcji platformy Azure, która jest dostępna bezpłatnie w [ https://azure.com/free ](https://azure.com/free).
 
@@ -34,6 +34,10 @@ Aby utworzyć i wdrożyć funkcje należy również subskrypcji platformy Azure,
 3. Wybierz początkowy szablon usługi Azure Functions, którego chcesz użyć, wprowadź nazwę funkcji i kliknij przycisk **dalej**.
 
     ![Okno dialogowe nowego projektu przedstawiający szablony usługi Azure functions](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > Gdy powiązane środowisko uruchomieniowe usługi Azure Functions i szablony (CLI) są zachowywane do daty, jak to możliwe, podlegają nieuchronnym otrzymują nieaktualne. Podczas tworzenia nowego projektu usługi Functions, Visual Studio for Mac będzie sprawdzać dostępność aktualizacji dla interfejsu wiersza polecenia i Powiadomimy Cię, jak pokazano na poniższej ilustracji. Po prostu kliknij przycisk aby pobrać zaktualizowane szablony.
+    > ![Okno dialogowe nowego projektu przedstawiający aktualizacje usługi Azure functions są dostępne](media/azure-functions-update.png)
 
     W zależności od typu funkcji, którą wybierzesz następnej strony wyświetli monit wprowadź szczegóły, takie jak prawa dostępu, jak pokazano na poniższej ilustracji:
 
@@ -91,10 +95,10 @@ Powyższej procedury można użyć, aby dodać więcej funkcji do projektu aplik
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
-1. Kliknij prawym przyciskiem myszy nazwę projektu, a następnie wybierz pozycję **Opublikuj > Opublikuj na platformie Azure**: ![Publikuj opcji menu platformy azure](media/azure-functions-image5.png)
+1. Kliknij prawym przyciskiem myszy nazwę projektu, a następnie wybierz pozycję **Opublikuj > Opublikuj na platformie Azure**:  ![Publikowanie do opcji menu platformy azure](media/azure-functions-image5.png)
 2. Jeśli już nawiązano subskrypcji platformy Azure konta programu Visual Studio dla komputerów Mac lista dostępnych aplikacji, które usługi są wyświetlane. Jeśli użytkownik nie zalogował się, zostanie wyświetlony monit Aby to zrobić.
 3. Z **Publikuj w usłudze Azure App Service** okna dialogowego, można wybrać istniejącą usługę app lub Utwórz nowe, klikając **New**.
-4. W **Tworzenie nowej usługi App Service** okno dialogowe, wprowadź ustawienia: ![Publikuj opcji menu platformy azure](media/azure-functions-image7.png)
+4. W **Tworzenie nowej usługi App Service** okno dialogowe, wprowadź ustawienia:  ![Publikowanie do opcji menu platformy azure](media/azure-functions-image7.png)
 
     |Ustawienie  |Opis  |
     |---------|---------|
@@ -102,9 +106,6 @@ Powyższej procedury można użyć, aby dodać więcej funkcji do projektu aplik
     |**Subskrypcja**|Subskrypcja platformy Azure do użycia.|
     |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której chcesz utworzyć aplikację funkcji. Wybierz **+** do tworzenia nowej grupy zasobów.|
     |**[Plan usługi](/azure/azure-functions/functions-scale)**|Wybierz istniejący plan lub utworzyć niestandardowy plan. Wybierz lokalizację w regionie blisko Ciebie lub w pobliżu innych usług, dostęp do usługi functions.|
-
-    > [!CAUTION]
-    > Znajduje się błąd w 7.6 wersji programu Visual Studio dla komputerów Mac, który spowoduje, że publikowanie zakończona niepowodzeniem z powodu błędu inicjowania obsługi administracyjnej, jeśli próba utworzenia planu usług niestandardowych za pomocą **ceny** równa **zużycie**. Ten problem zostanie rozwiązany w następnej wersji usługi.
 
 5. Kliknij przycisk **dalej** można utworzyć konta magazynu. Konto magazynu platformy Azure jest wymagane przez środowisko uruchomieniowe usługi Functions. Kliknij przycisk **niestandardowe** utworzyć konto magazynu ogólnego przeznaczenia lub użyj istniejącej:
 
@@ -116,14 +117,11 @@ Powyższej procedury można użyć, aby dodać więcej funkcji do projektu aplik
 
     ![Publikowanie do opcji menu platformy azure](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> W 7.6 wersji programu Visual Studio dla komputerów Mac znajduje się błąd gdzie `FUNCTIONS_EXTENSION_VERSION` nie jest poprawnie ustawiony na "beta", co oznacza, że funkcji może nie działać. Aby rozwiązać ten problem, przejdź do swojej [ustawień aplikacji funkcji](#function-app-settings) i ustaw `FUNCTIONS_EXTENSION_VERSION` od "-1" do "beta".
-
 ## <a name="function-app-settings"></a>Ustawienia aplikacji funkcji
 
 Wszystkie ustawienia, które zostały dodane w local.settings.json należy również dodać do aplikacji funkcji na platformie Azure. Te ustawienia nie są ładowane automatycznie podczas publikowania projektu.
 
-Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny azure portal pod [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). W obszarze **aplikacje funkcji**, wybierz opcję **aplikacje funkcji** i wyróżnić swoją nazwę funkcji:
+Aby uzyskać dostęp do ustawień aplikacji, przejdź do witryny Azure portal pod [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). W obszarze **aplikacje funkcji**, wybierz opcję **aplikacje funkcji** i wyróżnić swoją nazwę funkcji:
 
 ![Usługa Azure functions menu](media/azure-functions-image9.png)
 
@@ -133,7 +131,7 @@ Z **Przegląd** wybierz opcję **ustawienia aplikacji** w obszarze **skonfigurow
 
 W tym miejscu można ustawić ustawienia aplikacji dla aplikacji funkcji, w którym można dodawać nowych ustawień aplikacji lub zmodyfikuj istniejące:
 
-![obszaru ustawień aplikacji w witrynie azure portal](media/azure-functions-image11.png)
+![obszaru ustawień aplikacji w witrynie Azure portal](media/azure-functions-image11.png)
 
 Co ważne ustawienie może być konieczne ustawienie jest `FUNCTIONS_EXTENSION_VERSION`. Podczas publikowania z programu Visual Studio dla komputerów Mac, ta wartość powinna być równa **beta**.
 

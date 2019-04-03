@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647430"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856596"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji w języku JavaScript lub TypeScript w programie Visual Studio
 
 Możesz debugować kod JavaScript i TypeScript za pomocą programu Visual Studio. Można ustawić i identyfikować punkty przerwania, Dołącz debuger, sprawdzanie zmiennych, przejrzyj stos wywołań i korzystanie z innych funkcji debugowania.
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo. W zależności od typu tworzenia aplikacji, które wykonujesz, użytkownik może być konieczne zainstalowanie **pakiet roboczy programowania Node.js** z programem Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Debugowanie skryptu po stronie serwera
 
@@ -106,7 +106,7 @@ Aby dołączyć debuger programu Visual Studio i trafień punktów przerwania w 
     * Jeśli musisz Wejdź do kodu w pliku JavaScript transpiled (na przykład *bundle.js aplikacji*) i nie można to zrobić, usuń plik mapy źródłowej *filename.js.map*.
 
      > [!TIP]
-     > Po dołączeniu do procesu po raz pierwszy wykonać następujące kroki, możesz szybko dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając **debugowania** > **ponownie Dołącz do procesu**.
+     > Po dołączeniu do procesu po raz pierwszy wykonać następujące kroki, możesz szybko dołączyć do tego samego procesu, wybierając **debugowania** > **ponownie Dołącz do procesu**.
 
 ## <a name="generate_sourcemaps"></a> Generuj mapy źródeł w celu debugowania
 

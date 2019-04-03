@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: aea3f5351ae9aeeb2ca0eb0793c7c113f143197c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428690"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856609"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Pierwsze spojrzenie na debugera programu Visual Studio
 
@@ -188,7 +188,7 @@ W tym przykładzie `DirectoryInfo` wywołanie udostępniła błędu na pusty ci�
 Pomocnik wyjątków jest doskonałym funkcja, która pomaga debugować błędy. Można również wykonywać następujące czynności dla widoku szczegółów błędu i Dodaj wyrażenie kontrolne z Pomocnika wyjątków. Lub, jeśli to konieczne, można zmienić warunków zgłaszania określonego wyjątku. Aby uzyskać więcej informacji na temat sposobu obsługi wyjątków w kodzie, zobacz [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Pomocnik wyjątków zastąpione w Asystencie wyjątków [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Asystent wyjątków od zastąpione pomocnika wyjątków [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozwiń **ustawienia wyjątków** węzeł, aby wyświetlić więcej opcji, w jaki sposób obsługiwać ten typ wyjątku, ale nie trzeba wprowadzić w tym samouczku zmiany!
 
