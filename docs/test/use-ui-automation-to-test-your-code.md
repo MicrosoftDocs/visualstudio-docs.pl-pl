@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416269"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897728"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -144,7 +144,7 @@ Aby uzyskać dostęp do narzędzi do testowania interfejsu użytkownika kodowany
 
 8. Uruchom test.
 
-   Eksplorator testów lub Otwórz menu skrótów w metodzie testowej, a następnie wybierz **Uruchom testy**. Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md) i *dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika* w [co przyniesie przyszłość?](#whats-next?) sekcji w zakończenie tego tematu.
+   Eksplorator testów lub Otwórz menu skrótów w metodzie testowej, a następnie wybierz **Uruchom testy**. Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md) i *dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika* w [co przyniesie przyszłość?](#whats-next) sekcji w zakończenie tego tematu.
 
 Pozostałe sekcje w tym temacie więcej szczegółowych informacji o krokach w tej procedurze.
 
@@ -445,7 +445,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
-- [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Uruchamianie testów w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 

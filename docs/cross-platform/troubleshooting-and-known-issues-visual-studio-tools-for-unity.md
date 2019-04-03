@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027292"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897702"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools for Unity)
 
@@ -62,7 +62,7 @@ Po pierwsze, upewnij się, że ustawiono programu Visual Studio jako edytora skr
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Dodatkowe przeładowania lub Visual Studio utraty wszystkie otwarte okna
 
-Pamiętaj nigdy nie touch pliki projektu bezpośrednio z procesora zasobów lub innego narzędzia. Gdy rzeczywiście potrzebujesz do manipulowania pliku projektu, możemy ujawnić dla tego interfejsu API. Sprawdź, czy [sekcji problemy odwołuje się zestaw](#Assembly-reference-issues).
+Pamiętaj nigdy nie touch pliki projektu bezpośrednio z procesora zasobów lub innego narzędzia. Gdy rzeczywiście potrzebujesz do manipulowania pliku projektu, możemy ujawnić dla tego interfejsu API. Sprawdź, czy [sekcji problemy odwołuje się zestaw](#assembly-reference-issues).
 
 Jeśli masz dodatkowe ładuje ponownie, lub jeśli kierowcą programu Visual Studio wszystkich otwartych Windows na ponowne załadowanie, upewnij się, że masz właściwe .NET zainstalowane pakiety przeznaczone dla. Sprawdź następujące sekcję dotyczącą platform, aby uzyskać więcej informacji.
 
@@ -124,7 +124,7 @@ Spróbuj uaktualnić usługi Visual Studio 2015 z aktualizacją 3.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Aby zgłosić, że program Visual Studio zawiesza się podczas debugowania przy użyciu programu Visual Studio Tools for Unity
 
-*Na Windows:*
+*W systemie Windows:*
 
 1. Otwórz nowe wystąpienie programu Visual Studio.
 

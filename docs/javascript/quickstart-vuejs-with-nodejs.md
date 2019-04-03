@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9ce4b1d90d0d252300d2d8f8ef614d67712e425f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789583"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897598"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki start: Utwórz swoją pierwszą aplikację Vue.js przy użyciu programu Visual Studio
 
@@ -59,14 +59,16 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 1. Utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **Vue.js**, następnie wybierz **podstawowa Vue.js aplikacja sieci Web** (języka JavaScript lub TypeScript). W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **podstawowe Vue.js**, następnie wybierz **podstawowa Vue.js aplikacja sieci Web** (języka JavaScript lub TypeScript). W oknie dialogowym wybierz **Utwórz**.
+
+    ![Szablon VUE.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **JavaScript** lub **TypeScript**, następnie wybierz **Node.js**. W środkowym okienku wybierz **podstawowa Vue.js aplikacja sieci Web**, następnie wybierz **OK**.
-    ::: moniker-end
-    Jeśli nie widzisz **podstawowa Vue.js aplikacja sieci Web** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
     ![Szablon VUE.js](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Jeśli nie widzisz **podstawowa Vue.js aplikacja sieci Web** szablonu projektu należy dodać **programowania Node.js** obciążenia. Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
     Program Visual Studio tworzy nowy projekt. Nowy projekt zostanie otwarty w oknie Eksploratora rozwiązań (w okienku po prawej stronie).
 

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070646"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897585"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
 
@@ -70,7 +70,7 @@ Aby zainstalować i używać zdalnego agenta do tworzenia kodu dla systemu iOS, 
 
 Po zainstalowaniu programu Visual C++ for Cross-Platform Mobile Development w Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnego agenta uruchomionego na komputerze Mac do transferu plików, tworzenie i uruchamianie aplikacji systemu iOS oraz wysyłania poleceń do debugowania.
 
-Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wymagania wstępne](#Prerequisites) i zainstalowane [Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Przed zainstalowaniem agenta zdalnego, upewnij się, że zostały spełnione [wymagania wstępne](#prerequisites) i zainstalowane [Visual C++ dla opracowywania aplikacji mobilnych dla wielu platform](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Aby pobrać i zainstalować agenta zdalnego
 

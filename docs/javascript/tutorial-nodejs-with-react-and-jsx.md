@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a93fc82ca8e4aa1f88de75d958bfea20fb85cd92
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790878"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897767"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -165,7 +165,7 @@ W ramach tej procedury dodasz cztery nowe pliki do projektu.
 
 * *app.tsx*
 * *webpack-config.js*
-* *index.html*
+* *index.HTML*
 * *tsconfig.json*
 
 Dla tej prostej aplikacji możesz dodawać nowe pliki projektu, w katalogu głównym projektu. (W przypadku większości aplikacji są zazwyczaj Dodaj pliki do podfolderów i odpowiednio dostosować odwołania do ścieżki względnej.)
@@ -324,7 +324,12 @@ Każdym wprowadzeniu zmiany *app.tsx*, należy ponownie uruchomić polecenie web
 
 1. Wybierz dla programu Chrome, jak bieżący obiekt docelowy debugowania.
 
+    ::: moniker range=">=vs-2019"
+    ![Wybierz cel debugowania Chrome](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Wybierz cel debugowania Chrome](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Jeśli dla programu Chrome jest dostępne na danym komputerze, ale nie są wyświetlane jako opcja, wybierz opcję **przeglądanie za pomocą** z listy rozwijanej docelowego debugowania i wybierz opcję dla programu Chrome jako domyślny element docelowy przeglądarki (wybierz **Ustaw jako domyślny**).
 

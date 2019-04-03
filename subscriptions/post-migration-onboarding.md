@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Dowiedz się, jak pomyślnie dołączyć organizacji po przeprowadzeniu migracji do portalu administratora subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154182"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897611"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Dołączanie do portalu programu Visual Studio subskrypcje administracji po organizacji migracji
 
@@ -26,7 +26,7 @@ Może wystąpić jeden z kilku powodów:
 
 1. [Głównej osoby kontaktowej nie ukończenia procesu dołączania.](#onboarding-not-completed-by-primary-contact)
 2. [Głównej osoby kontaktowej ukończone dołączania, ale nie został dodany jako administrator. Poświadczenia zostały wymienione w witrynie VLSC.](#primary-contact-did-not-provide-you-administrator-access)
-3. [Głównej osoby kontaktowej ukończone dołączania, ale nie został dodany jako administrator. Poświadczenia nie zostały wymienione w witrynie VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+3. [Głównej osoby kontaktowej ukończone dołączania, ale nie został dodany jako administrator. Poświadczenia nie zostały wymienione w witrynie VLSC.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> Jeśli jesteś główną lub uwagi, skontaktuj się z pomocą i nie została ukończona procesu dołączania, należy wykonać kroki w scenariuszu, jeden w celu konfigurowania organizacji.
 

@@ -1,48 +1,39 @@
 ---
 title: Jak zgłosić problem z programem Visual Studio
-titleSuffix: ''
-description: Dowiedz się, jak zgłosić problem z programem Visual Studio do firmy Microsoft, można zdiagnozować i naprawić.
+description: Dowiedz się, jak zgłosić problem z programem Visual Studio
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953669"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897624"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Jak zgłosić problem z programem Visual Studio
-
-Jeśli wystąpi problem z programem Visual Studio, chcielibyśmy się dowiedzieć o nim. Poniżej przedstawiono sposób zgłosić problem do [społeczności deweloperów](https://developercommunity.visualstudio.com/) tak, aby firma Microsoft zdiagnozować i rozwiązać go.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem za pomocą programu Visual Studio lub Instalator programu Visual Studio
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [jak zgłosić problem w programie Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem).
+> Dla programu Visual Studio dla komputerów Mac, zobacz [jak zgłosić problem w programie Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Zgłoś problem w programie Visual Studio
+Aby zgłosić problem z programu Visual Studio lub jego Instalatora, za pomocą narzędzia do udzielania opinii w nich znajdują. Narzędzia do udzielania opinii umożliwia łatwe uwzględnianie informacji diagnostycznych w Twoją opinię i pomaga diagnozować i rozwiązywać problemy znacznie bardziej efektywne zespołom programu Visual Studio. Poniżej przedstawiono kroki, aby zgłosić problem.
 
-Aby zgłosić problem dla programu Visual Studio, należy zainicjować raportu z programu Visual Studio lub Instalatora programu Visual Studio. Nie można go bezpośrednio za pomocą [społeczności deweloperów](https://developercommunity.visualstudio.com/) witryny sieci Web. Raportowanie przy użyciu programu Visual Studio umożliwia informacje diagnostyczne, które mają zostać automatycznie uwzględnione w raporcie.
+1. **W programie Visual Studio**, wybierz ikonę opinii w prawym górnym rogu i wybierz informacje o problemie. Można także uzyskać dostęp do narzędzia opinii, z menu **pomocy** > **Wyślij opinię** > **Zgłoś Problem**.
+![Okno podręczne z problem sporządzić raport na temat społeczności deweloperów programu Visual Studio](media/vsfeedbackentry.png) też zgłosić problem w **Instalatora programu Visual Studio** Jeśli nie można zainstalować program Visual Studio lub nie można uzyskać dostęp do narzędzia opinii w programie Visual Studio .  W oknie Instalatora Wybierz ikony opinii w prawym górnym rogu, a następnie wybierz Zgłoś Problem.
+![Okno podręczne z problem sporządzić raport na temat społeczności deweloperów programu Visual Studio](media/installer.png)
 
-![Okno podręczne z problem sporządzić raport na temat społeczności deweloperów programu Visual Studio](media/report-an-issue.png)
-
-1. W programie Visual Studio, wybierz **pomocy** > **Wyślij opinię** > **Zgłoś Problem**.
-
-   > [!TIP]
-   > Jeśli nie można ukończyć instalacji programu Visual Studio lub nie masz dostępu do narzędzia opinii w programie Visual Studio, możesz zgłosić problem za pomocą **Instalatora programu Visual Studio**. Aby to zrobić, wybierz ikonę opinii w prawym górnym rogu **Instalatora programu Visual Studio**.
-
-1. Jeśli nie zalogowano Cię, wybierz opcję **Sign In**; jest po prawej stronie narzędzia, jak pokazano na poniższym zrzucie ekranu. Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby zalogować się.
+1. Jeśli nie jest podpisany, wybierz opcję **Sign In** jak pokazano na poniższym zrzucie ekranu. Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby zalogować się.
 
    ![Zaloguj się zgłosić problem](../ide/media/sign-in-new-ux.png)
 
-   Po zalogowaniu, możesz zgłosić problem, który wystąpił. Możesz również głosować lub opublikowane komentarz na inny problem, który zostanie wyświetlony.
+   Nie tylko możesz zgłosić problem po użytkownik jest zalogowany, ale również Zagłosuj i Skomentuj wszelkie istniejące informacje i opinie.
 
-1. Po zalogowaniu będzie można wyświetlić swoje **problemów** i **działania** w **elementów I postępuj zgodnie z** ekranu
+1. Po zalogowaniu będzie można wyświetlić swoje **problemów** i **działania** na **elementów I postępuj zgodnie z** ekranu
 
     ![Obserwowane elementy](../ide/media/items-i-follow.png)
 
@@ -125,7 +116,7 @@ Począwszy od programu Visual Studio 2017 w wersji 15.5 istnieje nowy przepływ 
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Wyszukaj rozwiązania lub Wyraź swoją opinię
 
-Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje szansa, że już zgłoszono problem i rozwiązaniem opublikowano [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
+Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, ma szansę już zgłoszono problem i rozwiązanie opublikowano [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
 
 Jeśli masz problem, aby zgłosić, ale chcesz zaproponować funkcję, ma miejsce, w tym za. Aby uzyskać więcej informacji, zobacz [Zaproponuj funkcję](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) strony.
 
@@ -135,4 +126,4 @@ Jeśli masz problem, aby zgłosić, ale chcesz zaproponować funkcję, ma miejsc
 * [Zgłoś problem z programem Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
 * [Zgłoś problem przy użyciu języka C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
-* [Prywatność danych społeczności deweloperów](developer-community-privacy.md)
+* [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

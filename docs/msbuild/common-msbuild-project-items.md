@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610349"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897689"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Nazwa metadanych elementu|Opis|
 |---------------|-----------------|
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana składnika.|
-|Guid|Opcjonalny ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Opcjonalny ciąg. Główna część numeru wersji składnika. Na przykład "5" Jeśli pełny numer wersji jest "5.46".|
-|VersionMinor|Opcjonalny ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46" Jeśli pełny numer wersji jest "5.46".|
+|Guid|Wymagany ciąg. Identyfikator GUID dla składnika w formularzu {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Wymagany ciąg. Główna część numeru wersji składnika. Na przykład "5" Jeśli pełny numer wersji jest "5.46".|
+|VersionMinor|Wymagany ciąg. Pomocnicza część numeru wersji składnika. Na przykład "46" Jeśli pełny numer wersji jest "5.46".|
 |LCID|Opcjonalny ciąg. Identyfikator ustawień regionalnych dla składnika.|
 |WrapperTool|Opcjonalny ciąg. Nazwa narzędzia otoki, która jest używana w składniku, na przykład, "tlbimp".|
 |Izolowany|Opcjonalny atrybut typu wartość logiczna. Określa, czy składnik jest składnik bezpłatne reg.|
@@ -76,7 +76,7 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Nazwa|Opcjonalny ciąg. Nazwa wyświetlana odwołania.|
 |Projekt|Opcjonalny ciąg. Identyfikator GUID odwołania, w postaci {12345678-1234-1234-1234-1234567891234}.|
 |Package|Opcjonalny ciąg. Ścieżka pliku projektu, do którego prowadzi odwołanie.|
-|ReferenceOutputAssembly|Opcjonalny atrybut typu wartość logiczna. Jeśli ustawiono `false`, nie zawiera danych wyjściowych przywoływanego projektu jako [odwołania](#Reference) tego projektu, ale zapewnia, że inne projekt zostanie skompilowany przed ten zestaw. Wartość domyślna to `true`.|
+|ReferenceOutputAssembly|Opcjonalny atrybut typu wartość logiczna. Jeśli ustawiono `false`, nie zawiera danych wyjściowych przywoływanego projektu jako [odwołania](#reference) tego projektu, ale zapewnia, że inne projekt zostanie skompilowany przed ten zestaw. Wartość domyślna to `true`.|
 
 ### <a name="compile"></a>Kompilacji
  Reprezentuje pliki źródłowe dla kompilatora.

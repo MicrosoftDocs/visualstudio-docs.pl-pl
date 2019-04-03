@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d10f2827debf13b2fb63923e0e356032afbb8bcd
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790839"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897715"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 
@@ -204,7 +204,12 @@ Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. 
 
 1. Wybierz cel debugowania na pasku narzędzi debugowania, takich jak Microsoft Edge lub Chrome.
 
+    ::: moniker range=">=vs-2019"
+    ![Wybierz element docelowy debugowania](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Wybierz element docelowy debugowania](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     Jeśli dla programu Chrome jest dostępne na danym komputerze, ale nie są wyświetlane jako opcja, wybierz opcję **przeglądanie za pomocą** z listy rozwijanej docelowego debugowania i wybierz opcję dla programu Chrome jako domyślny element docelowy przeglądarki (wybierz **Ustaw jako domyślny**).
 
