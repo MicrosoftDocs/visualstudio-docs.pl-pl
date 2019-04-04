@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796767"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857843"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 
-Program Visual Studio 2017 wprowadzono możliwość [tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), która umożliwia otwieranie folderu kodu i od razu zacząć korzystać z pomocy technicznej Zaawansowany edytor, takie jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowania i innych. Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, Zarządzanie pakietami npm i uruchamiania skryptów npm.
+Począwszy od programu Visual Studio 2017 możesz [tworzenie kodu bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), która umożliwia otwieranie folderu kodu i od razu zacząć korzystać z pomocy technicznej Zaawansowany edytor, takie jak IntelliSense, wyszukiwanie, Refaktoryzacja, debugowania i innych. Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia plików TypeScript, Zarządzanie pakietami npm i uruchamiania skryptów npm.
 
 Aby rozpocząć, wybierz **pliku** > **Otwórz** > **folderu** na pasku narzędzi. Eksplorator rozwiązań zawiera wszystkie pliki w folderze, a następnie można otworzyć dowolne pliki, aby rozpocząć edycję. W tle programu Visual Studio indeksuje pliki, aby włączyć npm, kompilacji i funkcji debugowania.
 
 > [!IMPORTANT]
-> Wiele funkcji opisanych w tym artykule, w tym Integracja z menedżerem npm wymaga programu Visual Studio 2017 w wersji 15.8.
+> Wiele funkcji opisanych w tym artykule, w tym Integracja z menedżerem npm wymaga programu Visual Studio 2017 w wersji należy zachować 15,8 lub nowszej wersji.
 
 ## <a name="npm-integration"></a>Integracja z menedżerem npm
 

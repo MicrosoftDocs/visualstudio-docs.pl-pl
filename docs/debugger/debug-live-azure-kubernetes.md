@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007296"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856693"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debugowanie na żywo usług ASP.NET usługi Azure Kubernetes, za pomocą rozszerzenia Snapshot Debugger
 
@@ -54,24 +54,13 @@ W tym samouczku wykonasz następujące czynności:
     > [!IMPORTANT]
     > Do debugowania migawki, należy otworzyć *tę samą wersję kodu źródłowego* , są publikowane w usłudze Azure Kubernetes.
 
-1. Dołączanie rozszerzenia Snapshot Debugger. Można użyć jednej z kilku różnych metod:
-
-    * Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
+1. Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
 
       ![Uruchamianie rozszerzenia snapshot debugger z menu Debugowanie](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Kliknij prawym przyciskiem myszy na projekt i wybierz **Publikuj**, a następnie na stronie kliknij przycisk Publikuj **dołączyć rozszerzenie Snapshot Debugger**. Wybierz zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
-    ![Uruchamianie rozszerzenia snapshot debugger ze strony publikacji](../debugger/media/snapshot-publish-attach.png)
+      ![Wybierz zasób platformy Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
 
-    * Podczas debugowania docelowe menu rozwijanego wybierz opcję **rozszerzenia Snapshot Debugger**, trafień **F5** i jeśli to konieczne, wybierz opcję zasobu usługi AKS, aplikacji sieci web jest wdrażana i usługa Azure storage konta, a następnie kliknij przycisk  **Dołącz**.
-    ![Uruchamianie rozszerzenia snapshot debugger z menu rozwijanego F5](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Za pomocą Eksploratora chmury (**Widok > programu Cloud Explorer**), kliknij prawym przyciskiem myszy zasób usługi AKS, aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **dołączyć rozszerzenie Snapshot Debugger**.
-
-      ![Uruchamianie rozszerzenia snapshot debugger Eksploratora chmury](../debugger/media/snapshot-launch.png)
-
-    > [!NOTE]
-    > Rozszerzenie witryny usługi Application Insights obsługuje również debugowania migawek. Jeśli wystąpią "rozszerzenie nieaktualna witryny" komunikat o błędzie, zobacz [rozwiązania problemu wskazówki i znanych problemów dotyczących debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md) dla uaktualnienie szczegółowe informacje.
+Program Visual Studio jest teraz w trybie debugowania migawek.
 
    ![Tryb debugowania migawek](../debugger/media/snapshot-message.png)
 
@@ -112,7 +101,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
+**Czy potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 
@@ -146,7 +135,7 @@ Oprócz wykonywania migawki po trafieniu punktu przyciągania, można również 
 
     Jeśli wybierzesz **Wyślij do okna danych wyjściowych**, gdy zostanie osiągnięty punkt rejestrowania komunikat jest wyświetlany w oknie narzędzia diagnostyczne.
 
-    ![Punkt rejestrowania danych w oknie sesji diagnostycznej](../debugger/media/snapshot-logpoint-output.png)
+    ![Punkt rejestrowania danych w oknie narzędzia diagnostyczne](../debugger/media/snapshot-logpoint-output.png)
 
     Jeśli wybierzesz **Wyślij do dziennika aplikacji**, gdy zostanie osiągnięty punkt rejestrowania, komunikat pojawi się gdziekolwiek zobaczyć komunikaty z `System.Diagnostics.Trace` (lub `ILogger` platformie .NET Core), takich jak [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
