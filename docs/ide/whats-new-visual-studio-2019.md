@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2019
 titleSuffix: ''
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2019 r.
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866747"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018158"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -166,7 +166,7 @@ Pobierz migawkę wykonywanie danej aplikacji w chmurze, aby zobaczyć dokładnie
 
 Dodaliśmy obsługę przeznaczone dla aplikacji ASP.NET (desktop i Core), które są uruchamiane na Maszynie wirtualnej platformy Azure. Ponadto Dodaliśmy obsługę aplikacji działających w usłudze Azure Kubernetes Service. Rozszerzenie Snapshot Debugger może pomóc w znacznie skrócić czas potrzebny do rozwiązywania problemów występujących w środowiskach produkcyjnych.
 
-Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md) strony.
+Aby uzyskać więcej informacji, zobacz [debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger](../debugger/debug-live-azure-applications.md) strony, a [wprowadzenie do czasu podróży debugowania dla programu Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) wpis w blogu.
 
 ## <a name="give-us-feedback"></a>Przekaż nam swoją opinię
 

@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Debugowanie aplikacji | Dokumentacja firmy Microsoft
-description: 'Dowiedz się, jak używać programu Visual Studio do debugowania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.'
+description: Dowiedz się, jak używać programu Visual Studio do debugowania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322080"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
