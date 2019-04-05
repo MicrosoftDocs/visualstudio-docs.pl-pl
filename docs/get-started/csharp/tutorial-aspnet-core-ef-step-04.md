@@ -1,6 +1,6 @@
 ---
-title: Krok 4. Udostępnianie internetowego interfejsu API z aplikacji platformy ASP.NET Core
-description: Dodaj interfejs API sieci Web do aplikacji internetowej ASP.NET Core za pomocą tego samouczka wideo, a instrukcje krok po kroku.
+title: Krok 4. Udostępnianie internetowego interfejsu API z Twojej aplikacji platformy ASP.NET Core
+description: Dodawanie interfejsu API sieci web do aplikacji internetowej ASP.NET Core za pomocą tego samouczka wideo, a instrukcje krok po kroku.
 ms.custom: get-started
 ms.date: 03/31/2019
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75fef03d82f95f4adc65bfab5495ba644ee5164a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859146"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018093"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Krok 4. Udostępnianie internetowego interfejsu API z aplikacji platformy ASP.NET Core
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Krok 4. Udostępnianie internetowego interfejsu API z poziomu aplikacji ASP.NET Core
 
-Wykonaj następujące kroki, aby dodać interfejs API sieci Web do istniejącej aplikacji platformy ASP.NET Core.
+Wykonaj następujące kroki, aby dodać interfejs API sieci web do istniejącej aplikacji platformy ASP.NET Core.
 
 _Obejrzyj ten film wideo i spróbuj dodać obsługę interfejsu API sieci web do pierwszej aplikacji ASP.NET Core._
 
@@ -33,7 +33,7 @@ _Obejrzyj ten film wideo i spróbuj dodać obsługę interfejsu API sieci web do
 
 ## <a name="open-your-project"></a>Otwórz projekt
 
-Otwórz aplikację platformy ASP.NET Core w programie Visual Studio 2019 r. Aplikacja powinna już używać programu EF Core Zarządzanie swój typ modelu zgodnie z konfiguracją w [krok 3 z tej serii samouczków](tutorial-aspnet-core-ef-step-03.md)
+Otwórz aplikację platformy ASP.NET Core w programie Visual Studio 2019 r. Aplikacja powinna już używać programu EF Core Zarządzanie swój typ modelu zgodnie z konfiguracją w [krok 3 z tej serii samouczków](tutorial-aspnet-core-ef-step-03.md).
 
 ## <a name="add-an-api-controller"></a>Dodaj Kontroler interfejsu API
 

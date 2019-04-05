@@ -74,7 +74,7 @@ sections:
         columns: 3
         items:
           - href: tutorial-aspnet-core-ef-step-01.md
-            html: '<p>Umożliwia tworzenie aplikacji sieci web, który korzysta z danych i udostępnia interfejs API sieci Web programu Visual Studio 2019 r, a następnie wdrożyć ją na platformie Azure.</p>'
+            html: '<p>Umożliwia tworzenie aplikacji sieci web, który korzysta z danych i udostępnia interfejs API sieci web programu Visual Studio 2019 r, a następnie wdrożyć ją na platformie Azure.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_video.svg'
             title: Tworzenie pierwszej aplikacji ASP.NET Core
