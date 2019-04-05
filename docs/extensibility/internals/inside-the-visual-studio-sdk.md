@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870276"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
+
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual Studio, w tym architektury programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.
 
 ## <a name="extensibility-architecture"></a>Rozszerzalność architektury
@@ -83,11 +84,12 @@ Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual
  W ramach usługi w języka są analizator i skaner. Skaner (lub analizator leksykalny) dzieli pliku źródłowego na elementy, które są znane jako tokenów i analizatorem ustanawia relacje tych tokenów. Podczas tworzenia usługi językowej musi implementować analizator i skaner tak, aby zrozumieć tokenów i gramatyki języka programu Visual Studio. Można utworzyć usługi zarządzane lub niezarządzane języka. Aby uzyskać więcej informacji, zobacz [rozszerzalność usługi w języka starsza wersja](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projekty
- W programie Visual Studio projekty są kontenerami, używanych przez deweloperów do organizowania i kompilacji kodu źródłowego i innych zasobów. Projekty umożliwiają organizowanie, kompilowanie, debugowanie i wdróż kod źródłowy, odwołuje się do usługi sieci Web i baz danych i innych zasobów. Pakietów VSPackage można rozszerzyć system projektu programu Visual Studio, zapewniając typów projektów, podtypy projektów i narzędzi niestandardowych.
 
- Projekty mogą również zbierać do rozwiązania, która to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projektu i stan informacje, które odnoszą się do rozwiązania są przechowywane w dwa pliki rozwiązań, plik tekstowy rozwiązania (.sln) i plik opcji (suo) użytkownika binarne rozwiązania. Te pliki są podobne do pliki grupy (.vbg), które były używane w starszych wersjach [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], i obszar roboczy (.dsw) i opcje plików (.opt), które były używane w starszych wersjach [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+W programie Visual Studio projekty są kontenerami, używanych przez deweloperów do organizowania i kompilacji kodu źródłowego i innych zasobów. Projekty umożliwiają organizowanie, kompilowanie, debugowanie i wdróż kod źródłowy, odwołuje się do usługi sieci Web i baz danych i innych zasobów. Pakietów VSPackage można rozszerzyć system projektu programu Visual Studio, zapewniając typów projektów, podtypy projektów i narzędzi niestandardowych.
 
- Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions.md).
+Projekty mogą również zebrać razem *rozwiązania*, która to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projektu i stan informacje, które odnoszą się do rozwiązania są przechowywane w dwóch plików rozwiązania oparte na tekście [plik rozwiązania (.sln)](solution-dot-sln-file.md) i plik binarny [plik opcji (suo) użytkownika rozwiązania](solution-user-options-dot-suo-file.md). Te pliki są podobne do grupy (.vbg) plików, które były używane w starszych wersjach programu Visual Basic i obszar roboczy (.dsw) i pliki opcje (.opt) użytkownika, które były używane we wcześniejszych wersjach C++.
+
+Aby uzyskać więcej informacji, zobacz [projektów](../../extensibility/internals/projects.md) i [rozwiązania](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Szablony projektów i elementów
  Program Visual Studio obejmuje szablony projektów wstępnie zdefiniowanych i szablonów elementów projektów. Można również tworzyć własne szablony lub pobrać szablony od społeczności i zintegrować je do programu Visual Studio. [Galerii kodu MSDN](https://code.msdn.microsoft.com/site/search?query=visual%20studio) jest miejscem, aby przejść do szablonów i rozszerzenia.

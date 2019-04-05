@@ -1,13 +1,19 @@
 ---
 layout: LandingPage
 title: Tworzenie aplikacji JavaScript w programie Visual Studio | Dokumentacja firmy Microsoft
-description: 'Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji.'
+description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji.
 ms.topic: landing-page
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: 4ba823e113167bbd78eaf6ac6fe71110866715f5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325045"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 

@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647274"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018197"
 ---
 # <a name="options-dialog-box-environment--general"></a>Okno dialogowe Opcje: Środowisko \> ogólne
 
@@ -53,11 +53,22 @@ Menu Użyj wielkimi literami style domyślnie. Usuń zaznaczenie tej opcji spowo
 
 Ta opcja włącza lub wyłącza — monitorowanie punktów na cal (DPI) świadomości (lub *PMA*). Po włączeniu PMA interfejsu użytkownika programu Visual Studio pojawia się wyraźny w dowolnych współczynnik skali wyświetlania monitor i konfiguracją DPI, z uwzględnieniem na wiele monitorów. Aby włączyć PMA, musisz mieć systemu Windows 10 kwietnia 2018 r. Zaktualizuj lub nowszej i .NET Framework 4,8 lub nowszej. (Ta opcja pojawia się wyszarzonym Jeśli te dwa wymagania wstępne nie są spełnione.)
 
+> [!TIP]
+> - Windows 10 ma ustawienie informujący, że **Windows Pozwól spróbować naprawić aplikacji, aby nie były one rozmyte**. Włączenie tego ustawienia Windows **na** ma niewielki wpływ, jeśli masz **optymalizacji renderowania na ekranach o różnych pikseli gęstości** zaznaczoną opcją.
+> - Windows 10 zawiera również **Rozwiązywanie problemów ze zgodnością programu**. Nie zaleca się próby naprawienia wyglądu programu Visual Studio za pomocą tego narzędzia do rozwiązywania problemów.
+
 ::: moniker-end
 
 **Automatycznie Dostosuj wygląd bazując na wydajności klienta**
 
 Określa, czy program Visual Studio ustawia dostosowania środowisko wizualne automatycznie, lub jawnie ustaw dostosowania. To dostosowanie może zmienić sposób wyświetlania kolorów z gradientów kolorów prostego lub jego może ograniczyć użycie animacji w menu lub okna podręcznego.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 ma ustawienie informujący, że **Windows Pozwól spróbować naprawić aplikacji, aby nie były one rozmyte**. Włączenie tego ustawienia **na** jest zalecane, jeśli program Visual Studio pojawia się rozmyte na monitorze. Rozważ uaktualnienie do [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), która znacznie ulepszono przejrzystości wyświetlania ponieważ punktów — monitorowanie, na aplikację świadomą CAL.
+
+::: moniker-end
 
 **Włącz bogate doświadczenia**
 
@@ -91,5 +102,5 @@ Określa, że w przypadku **Autoukrywanie** przycisku, okna narzędzi, który ma
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+- [Środowisko, opcje — Okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

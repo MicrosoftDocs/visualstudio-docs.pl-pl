@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Witamy w programie Visual Studio subskrypcji
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322601"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
 
 Subskrypcje programu Visual Studio jest kompleksowy zestaw zasobów, które umożliwiają tworzenie, wdrażanie i zarządzanie nimi wspaniałych aplikacji na Twoje ulubione platformy i urządzenia, w tym Windows, iOS, Android i Linux.  Korzyści z subskrypcji oferują dostęp do narzędzi programistycznych, usług w chmurze i oprogramowania, szkoleń i obsługę do programowania i testowania.
