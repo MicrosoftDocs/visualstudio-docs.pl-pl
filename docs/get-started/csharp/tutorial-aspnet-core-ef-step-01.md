@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0055c82812c94d3a29cc4f1b949f6b2c62a4445c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859116"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018119"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Samouczek: Utwórz swoją pierwszą aplikację ASP.NET Core przy użyciu platformy Entity Framework za pomocą programu Visual Studio 2019 r.
 
@@ -31,7 +31,7 @@ W tym samouczku będziesz tworzenie aplikacji internetowej ASP.NET Core, która 
 - [Krok 1. Install Visual Studio 2019](#step-1-install-visual-studio-2019)
 - [Krok 2. Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 - [Krok 3. Praca z danymi przy użyciu platformy Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Krok 4. Udostępnianie internetowego interfejsu API z aplikacji platformy ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Krok 4. Udostępnianie internetowego interfejsu API z poziomu aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 - [Krok 5. Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>Krok 1. Install Visual Studio 2019
@@ -73,7 +73,7 @@ Program Visual Studio powinien być uruchamiany automatycznie po zakończeniu In
 Możesz wybierz lokalizację i nazwę projektu, a następnie wybierz **Utwórz**. Teraz można wybrać szablon, który na potrzeby aplikacji platformy ASP.NET Core. Można wybrać następujące opcje:
 
 - Pusty. Szablon pusty projekt, który można zacząć od podstaw.
-- API. Najlepsze dla interfejsów API sieci Web.
+- API. Najlepsze dla interfejsów API sieci web.
 - Aplikacja sieci Web. Standardowa aplikacji internetowej ASP.NET Core utworzona za pomocą stron Razor.
 - Aplikacja internetowa (Model-View-Controller). Standardowa aplikacji internetowej ASP.NET Core przy użyciu wzorca Model-View-Controller.
 - Platformy angular.

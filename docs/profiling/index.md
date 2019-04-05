@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Pomiaru wydajności aplikacji za pomocą profilowania | Dokumentacja firmy Microsoft
-description: 'Dowiedz się, jak użycie programu Visual Studio do profilu wydajności aplikacji, usług i narzędzi w wybranym języku.'
+description: Dowiedz się, jak użycie programu Visual Studio do profilu wydajności aplikacji, usług i narzędzi w wybranym języku.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323011"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Mierzyć wydajność aplikacji w programie Visual Studio
 
