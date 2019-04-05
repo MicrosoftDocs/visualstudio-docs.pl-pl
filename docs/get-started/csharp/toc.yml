@@ -22,6 +22,18 @@ items:
       href: tutorial-uwp.md
     - name: Tworzenie aplikacji WPF
       href: tutorial-wpf.md
+    - name: Samouczek wideo — tworzenie aplikacji internetowej platformy ASP.NET Core
+      items:
+      - name: 1 — Instalowanie programu Visual Studio
+        href: tutorial-aspnet-core-ef-step-01.md
+      - name: 2 — Tworzenie pierwszej aplikacji internetowej platformy ASP.NET Core
+        href: tutorial-aspnet-core-ef-step-02.md
+      - name: 3 — Praca z danymi
+        href: tutorial-aspnet-core-ef-step-03.md
+      - name: 4 — Uwidacznianie internetowego interfejsu API
+        href: tutorial-aspnet-core-ef-step-04.md
+      - name: 5 — Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
+        href: tutorial-aspnet-core-ef-step-05.md
     expanded: true
   - name: Poznawanie programu Visual Studio
     items:
@@ -40,9 +52,9 @@ items:
     - name: Uzyskiwanie dostępu do danych
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: 4e759c9b344f71b3c4c47170a23854b41ad8c23a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 36deda730a9fb9a9d4d6f1cf65ec3f58fff8dd56
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323623"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857100"

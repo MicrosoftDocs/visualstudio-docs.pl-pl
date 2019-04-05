@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 50f9fec9168c2a7aacfcca8d96501997e6db936d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859152"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018106"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Krok 5. Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
 
@@ -33,7 +33,7 @@ _Obejrzyj ten film wideo i kontynuować pracę, aby wdrożyć swoją pierwszą a
 
 ## <a name="open-your-project"></a>Otwórz projekt
 
-Otwórz aplikację platformy ASP.NET Core w programie Visual Studio 2019 r. Aplikacja powinna już być przy użyciu zestawu przy użyciu programu EF Core i pracy internetowego interfejsu API, zgodnie z konfiguracją w [krok 4 z tej serii samouczków](tutorial-aspnet-core-ef-step-04.md)
+Otwórz aplikację platformy ASP.NET Core w programie Visual Studio 2019 r. Aplikacja powinna już być przy użyciu zestawu przy użyciu programu EF Core i pracy internetowego interfejsu API, zgodnie z konfiguracją w [krok 4 z tej serii samouczków](tutorial-aspnet-core-ef-step-04.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
