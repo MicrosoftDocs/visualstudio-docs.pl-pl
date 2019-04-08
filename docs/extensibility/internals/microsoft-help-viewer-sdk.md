@@ -63,7 +63,7 @@ Obsługiwanych ciągów języka (bez uwzględniania wielkości liter):
 
 -   javascript
 
--   CSharp lub c#
+-   CSharp lub C#
 
 -   cplusplus or visualc++ or c++
 

@@ -152,7 +152,7 @@ Wszystkie migawki buforu tekstowego, do których one należą, możesz uzyskać 
 
 #### <a name="content-types"></a>Typy zawartości
 
-Typy zawartości to mechanizm służący do definiowania różnych typów zawartości. Typ zawartości może być typu pliku, takie jak "text", "code" lub "binary" lub typ technologii, np. "xml", "vb" lub "c#". Na przykład wyraz "using" jest słowem kluczowym w językach C# i Visual Basic, ale nie w innych językach programowania. W związku z tym definicja tego słowa kluczowego będzie ograniczona do typów zawartości "c#" i "vb".
+Typy zawartości to mechanizm służący do definiowania różnych typów zawartości. Typ zawartości może być typu pliku, takie jak "text", "code" lub "binary" lub typ technologii, np. "xml", "vb" lub "C#". Na przykład wyraz "using" jest słowem kluczowym w językach C# i Visual Basic, ale nie w innych językach programowania. W związku z tym definicja tego słowa kluczowego będzie ograniczona do typów zawartości "C#" i "vb".
 
 Typy zawartości są używane jako filtr dla zakończeń i innych elementów w edytorze. Wiele funkcji edytora i punkty rozszerzenia są zdefiniowane dla typu zawartości. Na przykład tekst kolorowanie różni się plikami ze zwykłym tekstem, pliki XML i pliki kodu źródłowego języka Visual Basic. Bufory tekstu ogólnie są przypisywane typu zawartości, są one tworzone, gdy typ zawartości buforu tekstowego można zmienić.
 
