@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869099"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232570"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Omówienie analizatory platformie kompilatora .NET
 
@@ -38,17 +38,27 @@ Podobnie jak naruszenia reguł analizy kodu statycznego Roslyn analizatora narus
 
 Analizatory Roslyn analizowania kodu w czasie kompilacji, takie jak statycznej analizy kodu, jeśli jest włączona, ale również na żywo podczas wpisywania. Po włączeniu [pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), analizatorów Roslyn udostępniają analizy czasu projektowania plików kodu, które nie są otwarte w edytorze.
 
-> [!NOTE]
+> [!TIP]
 > Czas kompilacji błędy i ostrzeżenia z analizatorów Roslyn są wyświetlane tylko jeśli analizatorów zostanie zainstalowany jako pakiet NuGet.
 
 Nie tylko analizatorów Roslyn dla raportu te same typy problemów, które obsługuje statycznej analizy kodu, ale ułatwiają one łatwo rozwiązać co najmniej wszystkie wystąpienia naruszenia w pliku lub projektu. Te akcje są nazywane *poprawki kodu*. Poprawki kodu są specyficzne dla środowiska IDE; w programie Visual Studio są implementowane jako [szybkie akcje](../ide/quick-actions.md). Nie wszystkie diagnostyki analizatora mają poprawkę skojarzonego kodu.
 
 > [!NOTE]
-> Opcja menu **analizy** > **Uruchom analizę kodu** ma zastosowanie tylko do statycznej analizy kodu. Ponadto na projekt **analizy kodu** strona właściwości **Włącz analizę kodu podczas kompilacji** i **Pomijaj wyniki z wygenerowanego kodu** pola wyboru dotyczą tylko programu statyczna analiza kodu. Mają one wpływu na analizatorów Roslyn.
+> Poniższe opcje interfejsu użytkownika są stosowane tylko do statycznej analizy kodu:
+>
+> - **Analizy** > **Uruchom analizę kodu** opcji menu.
+> - **Włącz analizę kodu podczas kompilacji** i **Pomijaj wyniki z wygenerowanego kodu** pola wyboru na **analizy kodu** kartę strony właściwości projektu (te opcje nie mają wpływa na analizatorów Roslyn).
 
 W celu rozróżnienia naruszeń z analizatorów Roslyn i statycznej analizy kodu w **lista błędów**, Przyjrzyj się **narzędzie** kolumny. Jeśli wartość narzędzie zgodny z jednym z zestawów analizator w **Eksploratora rozwiązań**, na przykład **Microsoft.CodeQuality.Analyzers**, naruszenia pochodzi z analizatora Roslyn. W przeciwnym razie naruszenia pochodzi ze statycznej analizy kodu.
 
 ![Narzędzie kolumny listy błędów](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> **RunCodeAnalysis** właściwość msbuild w pliku projektu jest stosowana tylko do statycznej analizy kodu. Po zainstalowaniu analizatorów, ustaw **RunCodeAnalysis** do **false** w pliku projektu, aby uniemożliwić statycznej analizy kodu po kompilacji.
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>Pakiet NuGet, a rozszerzenie VSIX
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222492"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232557"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące programu FxCop i FxCop analizatorów
 
@@ -41,8 +41,16 @@ Nie. **RunCodeAnalysis** właściwość w pliku projektu (na przykład *.csproj*
 
 Aby uruchomić analizatory FxCop analizujące kod najpierw [zainstaluj pakiet NuGet](install-fxcop-analyzers.md) dla nich. Następnie budowania projektu lub rozwiązania z programu Visual Studio lub za pomocą programu msbuild. Ostrzeżenia i błędy, które generują analizatory FxCop analizujące kod pojawi się w **lista błędów** lub okna poleceń.
 
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Mimo został zainstalowany pakiet NuGet analizatory FxCop analizujące kod Pobierz jest ostrzeżenie CA0507
+
+Jeśli zainstalowano analizatory FxCop analizujące kod, ale w dalszym ciągu uzyskać ostrzeżenie CA0507 **"Uruchom analizę kodu" została zastąpiona analizatory FxCop analizujące kod, które są uruchamiane podczas kompilacji**, może być konieczne ustawienie **RunCodeAnalysis**właściwości programu msbuild w pliku projektu, aby **false**. W przeciwnym razie statycznej analizy kodu będą wykonywane po każdej kompilacji.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie analizatory platformie kompilatora .NET](roslyn-analyzers-overview.md)
 - [Wprowadzenie do analizatorów](fxcop-analyzers.yml)
-- [Zainstaluj analizatory FxCop analizujące kod](install-fxcop-analyzers.md)
+- [Instalowanie analizatorów FxCop](install-fxcop-analyzers.md)

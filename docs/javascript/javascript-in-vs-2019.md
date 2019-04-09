@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e96701f6c6dfe53caaa82a642139ad6dbd9fef08
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58794456"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232265"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript i TypeScript w programie Visual Studio 2019 r.
 
@@ -35,7 +35,7 @@ Możliwość przywrócenia starszej wersji usługi językowej JavaScript nie jes
 Visual Studio 2019 udostępnia kilka rozwiązań integracji kompilacji TypeScript do projektu:
 
 * [Pakiet TypeScript NuGet](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). Po zainstalowaniu do projektu pakiet NuGet dla TypeScript 3.2 lub nowszej odpowiednią wersję usługi języka TypeScript pobiera załadowany w edytorze.
-* TypeScript SDK oferowana domyślnie w Instalatorze programu Visual Studio, a także jako autonomiczny pobierania zestawu SDK z [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
+* TypeScript SDK oferowana domyślnie w Instalatorze programu Visual Studio, a także autonomiczny pakiet zestawu SDK do pobrania z [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 * [Pakiet npm TypeScript](https://www.npmjs.com/package/typescript). Po zainstalowaniu pakietu npm dla TypeScript 2.1 lub nowszej do projektu odpowiednią wersję usługi języka TypeScript pobiera załadowany w edytorze.
 
 W przypadku projektów opracowane w programie Visual Studio 2019 firma Microsoft zachęca do na użytek pakietów npm i TypeScript NuGet mobilność na różnych platformach i środowisk.

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916768"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232320"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 
@@ -44,11 +44,11 @@ Metoda ma złożoność cyklomatyczną nadmierne.
 
 złożoność cyklomatyczna = liczba krawędzi — liczba węzłów + 1
 
-gdy węzeł reprezentuje Rozgałęzienie logiki i krawędź reprezentuje linię między węzłami.
+A *węzła* reprezentuje punkt gałęzi logiki i *krawędzi* reprezentuje linię między węzłami.
 
 Reguły raporty naruszenie zasad, gdy złożoność cyklomatyczna jest więcej niż 25.
 
-Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md),
+Dowiedz się więcej na temat metryk kodu [mierzenie złożoności kodu zarządzanego](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -106,4 +106,4 @@ Poniższe przykłady przedstawiają metody, które mają różnej złożoności 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/code-metrics-values.md)
+- [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md)

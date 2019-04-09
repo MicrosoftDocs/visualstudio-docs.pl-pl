@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ce960b7432a1cd98be6f5bdf94c7487679e40d83
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355779"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232609"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja karty okna środowiska Python
 
@@ -60,7 +60,7 @@ W codziennym przepływie pracy, wykorzystywane są interaktywnych okien, prawdop
 
 Skrypty uruchamiania zawierają kod, który **Interactive** okna ładuje i uruchamia się automatycznie, w tym importów, definicje funkcji i dosłownie czymkolwiek. Te skrypty są przywoływane na dwa sposoby:
 
-1. Podczas instalowania środowiska Visual Studio tworzy folder *Documents\Visual Studio <version>skrypty \Python\\\<środowiska >* gdzie &lt;wersji&gt; jest wersja programu Visual Studio (na przykład 2017 lub 2019 r) i &lt;środowiska&gt; jest zgodna z nazwą środowiska. Łatwo można przejść do folderu określonego środowiska z **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu **Interactive** okna dla danego środowiska, ładuje i uruchamia niezależnie od rodzaju *PY* pliki znajdują się w tym miejscu w kolejności alfabetycznej.
+1. Podczas instalowania środowiska Visual Studio tworzy folder *Documents\Visual Studio \<wersji > Skrypty \Python\\\<środowiska >* gdzie &lt;wersji&gt; jest wersja programu Visual Studio (na przykład 2017 lub 2019 r) i &lt;środowiska&gt; jest zgodna z nazwą środowiska. Łatwo można przejść do folderu określonego środowiska z **Eksploruj interaktywne skrypty** polecenia. Po uruchomieniu **Interactive** okna dla danego środowiska, ładuje i uruchamia niezależnie od rodzaju *PY* pliki znajdują się w tym miejscu w kolejności alfabetycznej.
 
 1. **Skrypty** w kontrolce **narzędzia** > **opcje** > **Python**  >  **Interaktywne Windows** kartę (zobacz [opcje interaktywnych okien](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) należy podać folder dodatkowe skrypty uruchamiania, które są ładowane i uruchamiać we wszystkich środowiskach. Jednak ta funkcja nie działa w chwili obecnej.
 
@@ -168,6 +168,6 @@ Biblioteki, dla których jeszcze nie zostały skompilowane danych są oznaczone 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)

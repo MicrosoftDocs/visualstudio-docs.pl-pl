@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868992"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232778"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 
@@ -54,13 +54,13 @@ W tym samouczku wykonasz następujące czynności:
 
 4.  Wybierz **użycie pamięci** z **wybierz narzędzia** ustawienie na pasku narzędzi.
 
-     ![Pokaż narzędzia diagnostyczne](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Pokaż narzędzia diagnostyczne](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Kliknij przycisk **debugowania / uruchamiania debugowania** (lub **Start** na pasku narzędzi lub **F5**).
 
      Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne.
 
-     ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacji natywnej lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** kartę, a następnie wybierz **profilowanie sterty**.
@@ -121,7 +121,7 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
  **Przywoływane typy** drzewa Wyświetla odwołania, które są przechowywane w wybranego w górnym okienku typu.
 
- ![Zarządzane eferenced typów widoku raportu](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Widok raportu z typami zarządzanymi odwołania](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
  Aby wyświetlić wystąpienia typu wybranego w górnym okienku, wybierz ![ikonę wystąpienia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") ikony.
 
@@ -150,7 +150,7 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
 - Wybierz łącze zmian w komórce tabeli podsumowania **użycie pamięci** karcie **narzędzia diagnostyczne** okna.
 
-   ![Kliknij przycisk Zmień &#40;dif&#41;raportu f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Kliknij przycisk Zmień &#40;diff&#41; raportu](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Wybierz migawkę w **Porównaj z** raport zarządzane lub natywne listy.
 
@@ -158,13 +158,13 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
 Raport zmiana dodaje kolumn (oznaczone **(różnica)**) do podstawowej raport, który wyświetlenie różnicy między wartością podstawowy, migawki i migawki porównania. Poniżej przedstawiono, jak może wyglądać raport natywnego typu widoku różnic:
 
-![Typy natywne Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Typy natywne widoku różnic](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blogi i filmy wideo
 
 [Analizowanie użycia Procesora i pamięci podczas debugowania](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blogu Visual C++: Profilowanie pamięci w programie Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Visual C++ Blog: Profilowanie pamięci w programie Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Następne kroki
 

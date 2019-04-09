@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950581"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232421"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Dodaj obsługę innych języków w edytorze programu Visual Studio
 
@@ -46,33 +46,33 @@ Program Visual Studio zawiera obecnie kolorowania składni i uzupełniania instr
 
 Oprócz kolorowania składni i uzupełniania instrukcji podstawowych programu Visual Studio ma również funkcję o nazwie [przejdź do](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Ta funkcja umożliwia szybkie wyszukiwanie plików kodu, ścieżki do plików i symbole kodu. Visual Studio zawiera przejdź do pomocy technicznej dla następujących języków.
 
--   Z rzeczywistym użyciem
+- Z rzeczywistym użyciem
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Wszystkie typy plików mają funkcje opisane wcześniej nawet wtedy, gdy pomoc techniczna dla danego języka nie został jeszcze zainstalowany. Instalowanie obsługi wyspecjalizowane w przypadku niektórych języków może dostarczyć obsługę dodatkowych języków, takich jak technologia IntelliSense i inne funkcje zaawansowane języka, takie jak żarówki.
 
 ## <a name="add-support-for-non-supported-languages"></a>Dodano obsługę języków nieobsługiwanych
 
-Visual Studio 2015 Update 1 i nowsze wersje zapewniają obsługę języka w edytorze za pomocą [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli w ulubionym języku programowania nie jest obecnie obsługiwane w edytorze programu Visual Studio, najpierw wyszukać w sieci web - pakiet TextMate języka może już istnieć. Jeśli nie znajdziesz, jednak można dodać obsługę dla niego samodzielnie w Visual Studio 2015 Update 1 lub nowszy, tworząc modelu pakietu TextMate gramatyki języka i fragmenty kodu.
+Program Visual Studio zapewnia obsługę języka w edytorze za pomocą [Gramatyk TextMate](https://manual.macromates.com/en/language_grammars). Jeśli w ulubionym języku programowania nie jest obecnie obsługiwane w edytorze programu Visual Studio, najpierw należy wyszukać w sieci web&mdash;TextMate pakiet dla języka może już istnieć. Jeśli nie znajdziesz, jednak można dodać obsługę dla niego samodzielnie przez tworzenie modelu pakietu TextMate gramatyki języka i fragmenty kodu.
 
 Dodaj wszystkie nowe Gramatyk TextMate dla programu Visual Studio w następującym folderze:
 
 *% userprofile %\\. vs\Extensions*
 
-W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli mają one zastosowanie do konkretnej sytuacji:
+W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli mają one zastosowanie do danej sytuacji:
 
 |Nazwa folderu|Opis|
 |-----------------|-----------------|
@@ -80,11 +80,14 @@ W ramach tej ścieżki podstawowej należy dodać następujące foldery, jeśli 
 |*\Syntaxes*|Folder gramatyki. Zawiera gramatykę *.json* plików dla języka, takich jak *Matlab.json*.|
 |*\Snippets*|Folder fragmentów kodu. Zawiera fragmenty kodu dla języka.|
 
-W Windows *% userprofile %* jest rozpoznawana jako ścieżka: *c:\Users\\\<nazwa użytkownika >*. Jeśli folder rozszerzenia nie istnieje w systemie, należy go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
+W Windows *% userprofile %* jest rozpoznawana jako ścieżka: *c:\Users\\\<nazwa użytkownika >*. Jeśli *rozszerzenia* folder nie istnieje w systemie, musisz go utworzyć. Jeśli folder już istnieje, zostanie on ukryty.
 
-Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do gramatyki języka: Jak dodawać, wyróżnianie składni kodu źródłowego osadzonych w kodzie HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i motywu niestandardowego dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> W przypadku wszystkich plików, Otwórz w edytorze musisz zamknąć i ponownie otworzyć je, aby wyświetlić, wyróżnianie składni, po dodaniu gramatyki TextMate.
+
+Aby uzyskać szczegółowe informacje o sposobie tworzenia gramatyki TextMate, zobacz [TextMate — wprowadzenie do języka gramatyki](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) i [informacje na temat tworzenia gramatyki języka i motywu niestandardowego dla pakietu Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
+- [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
 - [Przewodnik: Wyświetlanie uzupełniania instrukcji](../extensibility/walkthrough-displaying-statement-completion.md)

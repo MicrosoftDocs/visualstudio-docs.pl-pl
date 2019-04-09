@@ -2,7 +2,7 @@
 title: Użycie pomiar procesora CPU w twoich aplikacjach
 description: Analizuj problemy z wydajnością procesora CPU w aplikacji za pomocą narzędzia diagnostyczne zintegrowane z debugerem.
 ms.custom: seodec18
-ms.date: 02/27/2017
+ms.date: 04/03/2019
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634308"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232674"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Miara wydajności aplikacji, analizując użycie procesora CPU
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
@@ -43,52 +43,52 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
 
-1.  Otwórz projekt, który chcesz debugować w programie Visual Studio i ustaw punkt przerwania w swojej aplikacji w punkcie, w którym chcesz sprawdzić użycie procesora CPU.
+1. Otwórz projekt, który chcesz debugować w programie Visual Studio i ustaw punkt przerwania w swojej aplikacji w punkcie, w którym chcesz sprawdzić użycie procesora CPU.
 
-2.  Ustaw drugi punkt przerwania na końcu funkcji lub regionu kod, który chcesz analizować.
+2. Ustaw drugi punkt przerwania na końcu funkcji lub regionu kod, który chcesz analizować.
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
 
-3.  **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+3. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-4.  Można wybrać, czy wyświetlane są **użycie procesora CPU**, [użycie pamięci](../profiling/Memory-Usage.md), lub oba z **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise można również włączyć lub wyłączyć IntelliTrace w **narzędzia** > **opcje** > **IntelliTrace**.
+4. Można wybrać, czy wyświetlane są **użycie procesora CPU**, [użycie pamięci](../profiling/Memory-Usage.md), lub oba z **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise można również włączyć lub wyłączyć IntelliTrace w **narzędzia** > **opcje** > **IntelliTrace**.
 
-     ![Pokaż narzędzia diagnostyczne](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Pokaż narzędzia diagnostyczne](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
      Firma Microsoft będzie przede wszystkim należy spojrzenie na wykorzystanie procesora CPU, więc upewnij się, że **użycie procesora CPU** jest włączona (jest włączony domyślnie).
 
-5.  Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+5. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
 
-     Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne.
+     Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne. Jeśli potrzebujesz otworzyć okno, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-     ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
      Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
-6.  Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
+6. Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
 
-7.  Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, a następnie otwórz **użycie procesora CPU** kartę.
+7. Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU, a następnie otwórz **użycie procesora CPU** kartę.
 
-     ![Narzędzia diagnostyczne Włącz profilowanie procesora CPU](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Narzędzia diagnostyczne Włącz profilowanie procesora CPU](../profiling/media/diag-tools-enable-cpu-profiling.png "DiagToolsEnableCPUProfiling")
 
      Po wybraniu **profil procesora CPU rekordu**, Visual Studio spowoduje rozpoczęcie rejestrowania funkcji i czas, jaki przyjmują do wykonania. Ta zebrane dane może wyświetlać tylko w przypadku, gdy aplikacja jest zatrzymywane w punkcie przerwania.
 
-8.  Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+8. Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
 
      Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
 
-9.  Wybierz region interesuje Cię analizowanie na osi czasu Procesora (musi to być region, który pokazuje dane profilowania).
-
-     ![Narzędzia diagnostyczne, wybierając pozycję Segment czasu](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
-
      Program profilujący rozpoczyna, przygotowywanie danych wątku. Poczekaj na zakończenie jego działania.
 
-     ![Trwa przygotowywanie wątków narzędzia do diagnostyki](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Trwa przygotowywanie wątków narzędzia do diagnostyki](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
      Narzędzie użycie procesora CPU wyświetla raport w **użycie procesora CPU** kartę.
 
-     ![Diagnostyka narzędzia użycie procesora CPU kartę](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Diagnostyka narzędzia użycie procesora CPU kartę](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
+
+9. Jeśli chcesz wybrać region dokładniej kodu do analizy, wybierz region na osi czasu Procesora (musi to być region, który pokazuje dane profilowania).
+
+     ![Narzędzia diagnostyczne, wybierając pozycję Segment czasu](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      W tym momencie można rozpocząć analizy danych.
 
@@ -98,7 +98,7 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
 1. Na liście funkcji zbadać funkcje, które wykonują najwięcej pracy.
 
-    ![Diagnostyka narzędzia użycie procesora CPU, lista funkcji](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Diagnostyka narzędzia użycie procesora CPU, lista funkcji](../profiling/media/diag-tools-cpu-usage-function-list.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Funkcje są wymienione w kolejności, począwszy od osoby faktycznie wykonujące najwięcej pracy (nie są w kolejności wywołań). Dzięki temu można szybko zidentyfikować najdłuższy uruchomionej funkcji.
@@ -107,36 +107,47 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
 
     Po dwukrotnym kliknięciu funkcję **wywołujący/wywoływany** w okienku po lewej stronie zostanie otwarty widok.
 
-    ![Widok wywoływany obiekt wywołujący narzędzia do diagnostyki](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Widok wywoływany obiekt wywołujący narzędzia do diagnostyki](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
     W tym widoku wybranej funkcji pojawia się w nagłówku i w **bieżącą funkcję** pole (w tym przykładzie GetNumber). Funkcja, która wywołała bieżącą funkcję jest wyświetlany po lewej stronie w obszarze **podczas wywoływania funkcji**, oraz wszelkie funkcje wywołane przez bieżącą funkcję są pokazane w **funkcji o nazwie** pole po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
 
     Ten widok przedstawia łączny czas (ms) i procent ogólnej aplikacji, czas, który funkcji zostały podjęte w celu ukończenia działania.
-    **Funkcja treści** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i nazywane funkcjami. (W tym przykładzie ms 3713 poza 3729 spędzono w treści funkcji, a pozostałe 16 ms spędzono w kodzie zewnętrznych wywoływanych przez tę funkcję).
+    **Funkcja treści** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i nazywane funkcjami. (W tym przykładzie 2367 poza 2389 ms spędzono w treści funkcji, a pozostałe ms 22 spędzono w kodzie zewnętrznych wywoływanych przez tę funkcję).
 
     > [!TIP]
     > O wysokiej wartości w **treści funkcji** może wskazać wąskie gardło w samej funkcji.
 
-3. Jeśli chcesz wyświetlić widok wyższego poziomu, przedstawiający kolejność, w którym funkcje są wywoływane, wybierz opcję **drzewo wywołań** z listy rozwijanej w górnej części okienka.
+3. Aby wyświetlić widok wyższego poziomu, przedstawiający kolejność, w którym funkcje są wywoływane, wybierz **drzewo wywołań** z listy rozwijanej w górnej części okienka.
 
     Każdy ponumerowany obszar na rysunku dotyczy kroku procedury.
 
-    ![Narzędzia diagnostyczne drzewo wywołań](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ::: moniker range=">=vs-2019"
+    ![Narzędzia diagnostyczne drzewo wywołań](../profiling/media/vs-2019/diag-tools-call-tree.png "DiagToolsCallTree")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![Narzędzia diagnostyczne drzewo wywołań](../profiling/media/diag-tools-call-tree.png "DiagToolsCallTree")
+    ::: moniker-end
 
-|||
-|-|-|
-|![Krok 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołanie użycie procesora CPU jest pseudo-węzłem|
-|![Krok 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|W przypadku większości aplikacji gdy [Pokaż kod zewnętrzny](#view-external-code) opcja jest wyłączona, węzeł drugiego poziomu, który jest **[kod zewnętrzny]** węzeł zawierający system i platforma kod, który uruchamia i zatrzymuje aplikację, rysuje interfejsu użytkownika kontroluje planowanie wątków i zapewnia inne niskopoziomowe usługi dla aplikacji.|
-|![Krok 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Elementy podrzędne węzła drugiego poziomu są asynchroniczne procedur, które są nazywane lub utworzonych przez system drugiego poziomu oraz kodu struktury i metody kod użytkownika.|
-|![Krok 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|
+    |||
+    |-|-|
+    |![Krok 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Węzeł najwyższego poziomu w drzewach wywołanie użycie procesora CPU jest pseudo-węzłem|
+    |![Krok 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|W przypadku większości aplikacji gdy [Pokaż kod zewnętrzny](#view-external-code) opcja jest wyłączona, węzeł drugiego poziomu, który jest **[kod zewnętrzny]** węzeł zawierający system i platforma kod, który uruchamia i zatrzymuje aplikację, rysuje interfejsu użytkownika kontroluje planowanie wątków i zapewnia inne niskopoziomowe usługi dla aplikacji.|
+    |![Krok 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Elementy podrzędne węzła drugiego poziomu są asynchroniczne procedur, które są nazywane lub utworzonych przez system drugiego poziomu oraz kodu struktury i metody kod użytkownika.|
+    |![Krok 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Węzły podrzędne metody zawierają dane tylko w przypadku wywołania metody nadrzędnej. Gdy **Pokaż kod zewnętrzny** jest wyłączona, metody aplikacja może również zawierać **[kod zewnętrzny]** węzła.|
 
-Poniżej przedstawiono więcej informacji na temat wartości kolumny:
+    Poniżej przedstawiono więcej informacji na temat wartości kolumny:
 
-- **Łączna liczba Procesora** wskazuje, ile pracy zostało wykonanej przez funkcję i wszystkie funkcje wywoływane przez nią. Wysokiej wartości sumy procesora CPU wskazuje funkcje, które są najbardziej kosztowne.
+    - **Łączna liczba Procesora** wskazuje, ile pracy zostało wykonanej przez funkcję i wszystkie funkcje wywoływane przez nią. Wysokiej wartości sumy procesora CPU wskazuje funkcje, które są najbardziej kosztowne.
 
-- **Czas własny Procesora** wskazuje, ile pracy zostało wykonanej przez kod w treści funkcji, z wyłączeniem pracy wykonanej przez funkcje, które zostały przez nią wywołane. Wysoka **procesor CPU samodzielnie** wartości może wskazać wąskie gardło w samej funkcji.
+    - **Czas własny Procesora** wskazuje, ile pracy zostało wykonanej przez kod w treści funkcji, z wyłączeniem pracy wykonanej przez funkcje, które zostały przez nią wywołane. Wysoka **procesor CPU samodzielnie** wartości może wskazać wąskie gardło w samej funkcji.
 
-- **Moduły** nazwę modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].
+    - **Moduły** nazwę modułu zawierającego funkcję lub liczba modułów zawierających funkcje w węźle [kod zewnętrzny].
+
+    ::: moniker range=">=vs-2019"
+    Aby wyświetlić wywołania funkcji używających najwięcej procesora CPU w widoku drzewa wywołań, kliknij **Rozwiń ścieżkę aktywną**.
+
+    ![Diagnostyka narzędzi ścieżka aktywna](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ::: moniker-end
 
 ## <a name="view-external-code"></a>Pokaż kod zewnętrzny
 
@@ -144,7 +155,7 @@ Kod zewnętrzny są funkcje w system i platforma składników, które są wykony
 
 Aby wyświetlić wywołania ścieżek kodu zewnętrznego, należy wybrać **Pokaż kod zewnętrzny** z **filtrowania widoku** listy, a następnie wybierz **Zastosuj**.
 
-![Wybierz Widok filtrów, a następnie Pokaż kod zewnętrzny](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+![Wybierz Widok filtrów, a następnie Pokaż kod zewnętrzny](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
 Należy pamiętać, że wiele łańcuchy wywołania kodu zewnętrznego głęboko zagnieżdżone, tak, aby szerokość kolumny nazwy funkcji może być dłuższa niż szerokość wyświetlanie wszystkich pól poza największych monitorów komputera. W takim wypadku nazwy funkcji są wyświetlane jako **[...]** .
 

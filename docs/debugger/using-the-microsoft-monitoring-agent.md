@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d797dbd922c85598c4908abc6eb8adc5c43c365
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716574"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232583"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -26,11 +26,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
  Przed rozpoczęciem Sprawdź, czy zgodnego źródła i symboli dla kodu skompilowane i wdrożone. Dzięki temu można przejść bezpośrednio do kodu aplikacji, podczas uruchamiania, debugowania i przeglądanie zdarzenia diagnostyczne w dzienniku IntelliTrace. [Skonfiguruj kompilacje](../debugger/diagnose-problems-after-deployment.md) tak, aby program Visual Studio, mogą automatycznie znaleźć i otworzyć pasujące źródło do wdrożonego kodu.
 
-1.  [Krok 1: Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)
+1.  [Krok 1. Skonfiguruj program Microsoft Monitoring Agent](#SetUpMonitoring)
 
-2.  [Krok 2: Rozpoczęcie monitorowania aplikacji](#MonitorEvents)
+2.  [Krok 2. Rozpoczęcie monitorowania aplikacji](#MonitorEvents)
 
-3.  [Krok 3: Zapisz zarejestrowane zdarzenia](#SaveEvents)
+3.  [Krok 3. Zapisz zarejestrowane zdarzenia](#SaveEvents)
 
 ##  <a name="SetUpMonitoring"></a> Krok 1: Skonfiguruj program Microsoft Monitoring Agent
 
@@ -126,7 +126,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
      Oto przykład pokazujący, ścieżka programu IIS i uproszczone **Monitor** trybu:
 
-     **PS C: > Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitorowanie "C:IntelliTraceLogs"**
+     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**
 
      Po rozpoczęciu monitorowania, możesz zobaczyć Wstrzymaj program Microsoft Monitoring Agent podczas ponownego uruchomienia aplikacji.
 
@@ -211,21 +211,22 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
    **ODP.:** Plany kolekcji domyślnie wykluczają moduły przez ustawienie `isExclusionList` atrybutu `true`. Jednak to może nadal zbierać dane z modułów, które nie spełniają kryteriów listy lub które mogą nie być interesujące, takie jak moduły strony trzeciej lub typu open source.
 
 #### <a name="q-what-values-does-the-agent-collect"></a>PYT.: Jakie wartości są zbierane w agencie?
- **ODP.:** Aby zmniejszyć wpływ na wydajność, agent zbiera tylko następujące wartości:
+
+**ODP.:** Aby zmniejszyć wpływ na wydajność, agent zbiera tylko następujące wartości:
 
 - Pierwotne typy danych, które są przekazywane do metod oraz zwracanych przez
 
 - Typy danych pierwotnych w polach obiektów najwyższego poziomu przekazywane do metod oraz zwracanych przez
 
-  Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:
+Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:
 
-  `public Employee AlterEmployee(int id, Employee oldemployee)`
+`public Employee AlterEmployee(int id, Employee oldemployee)`
 
-  `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.
+`Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.
 
-  ![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-  Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.
+Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.
 
 ##  <a name="SaveEvents"></a> Krok 3: Zapisz zarejestrowane zdarzenia
  Po znalezieniu błędu lub problemu z wydajnością, Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).
@@ -245,7 +246,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
     Na przykład:
 
-    **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
+    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
     —lub—
 
@@ -275,11 +276,11 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
     Lub aby zatrzymać monitorowanie wszystkich aplikacji sieci web:
 
-    **Stop-WebApplicationMonitoring - wszystkie**
+    **Stop-WebApplicationMonitoring -All**
 
     Na przykład:
 
-    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
+    **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
 
     \- lub —
 

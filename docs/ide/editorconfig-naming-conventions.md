@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983277"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232596"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -76,8 +76,21 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
 - prywatne\_chronione
 - local
 
-> [!NOTE]
-> Nie należy określać poziomem ułatwień dostępu w ramach konwencji nazewnictwa, jeśli ułatwień dostępu nie ma zastosowania do typu symboli, które są przeznaczone dla. Na przykład parametry mają poziomów ułatwień dostępu. Jeśli określisz poziom dostępności dla parametru konwencji nazewnictwa, reguły nazewnictwa nie będą działać poprawnie.
+   `local` Poziom dostępności dotyczy symbole zdefiniowane wewnątrz metody. Jest to przydatne w przypadku Definiowanie konwencji nazewnictwa dla symboli, dostępności, której nie można określić w kodzie. Na przykład, jeśli określisz `applicable_accessibilities = local` na konwencji nazewnictwa dla stałych (`required_modifiers = const`), reguła dotyczy tylko stałe zdefiniowane wewnątrz metody, a nie te, które zdefiniowane w typie.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Modyfikatory symbol (opcjonalnie)
 
@@ -156,8 +169,8 @@ Ważność | Efekt
 ------------ | -------------
 Brak lub silent | Gdy nie trwa występuje ten styl, nie pokazuj żadnych dla użytkownika; jednak automatycznie wygenerowany kod poniżej tego stylu.
 Sugestia | Gdy nie trwa występuje ten styl, wyświetlane użytkownikowi jako sugestię jako bazowego kropki na pierwszych dwóch znaków. Nie ma ona wpływu w czasie kompilacji.
-ostrzeżenie | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenia kompilatora w **lista błędów**.
-Błąd | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora w **lista błędów**.
+warning | Gdy nie trwa występuje ten styl, Pokaż ostrzeżenia kompilatora w **lista błędów**.
+error | Gdy nie trwa występuje ten styl, Pokaż błąd kompilatora w **lista błędów**.
 
 > [!NOTE]
 > Nie masz do kompilowania projektu, aby można było wyświetlić naruszenia reguły nazewnictwa. Pojawiają się jako edycji kodu w **lista błędów** lub sugestię.

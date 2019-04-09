@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0c05595c311367ca94e3327afd28bc5fa05f7ec2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871081"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232473"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co nowego w narzędziach profilowania w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -28,11 +28,11 @@ Aby uzyskać więcej informacji, zobacz [informacje o wersji programu [!include[
 
 A **Podsumowanie** karta została dodana do narzędzia, które pomaga skoncentrować się na kluczowych obszarach analizy wydajności. Ta karta pokazuje, ile zdarzenia wystąpiły pozwala korzystać z migawki sterty i pozwala na szybkie włączenie zbierania danych użycia procesora CPU. Ten widok przedstawia dowolne [usługi Application insights](/azure/azure-monitor/app/visual-studio) lub [analiza interfejsu użytkownika](/visualstudio/releasenotes/vs2017-relnotes) zdarzenia. Ponadto dla programu Visual Studio Enterprise, ten widok również przedstawia zdarzenia funkcji IntelliTrace.
 
-![Karta podsumowania narzędzia diagnostyczne](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Karta podsumowania narzędzia diagnostyczne](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
 Narzędzie użycie procesora CPU ma [nowe wizualizacje](../profiling/Beginners-Guide-to-Performance-Profiling.md) ułatwiający zidentyfikowanie funkcji, które z największym prawdopodobieństwem mogą być przyczyną problemów z wydajnością. Nowy **wywołujący/wywoływany** widoku pozwala na badanie kosztów wywołań funkcji wykonanych do i z wybranej funkcji.
 
-![Widok wywoływany obiekt wywołujący narzędzia diagnostyczne](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Widok wywoływany obiekt wywołujący narzędzia diagnostyczne](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Zobacz także
 

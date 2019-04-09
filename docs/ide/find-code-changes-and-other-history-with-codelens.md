@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867858"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232713"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
 Funkcja CodeLens umożliwia skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało z kodu&ndash;bez opuszczania edytora. Można znaleźć odwołania do fragmentu kodu, zmiany kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Kontrola źródła CodeLens wskaźniki nie są dostępne w programie Visual Studio Community edition.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Funkcja CodeLens jest dostępna tylko w wersjach programu Visual Studio Enterprise i Visual Studio Professional. Nie jest dostępne w programie Visual Studio Community edition.
+> Funkcja CodeLens jest dostępna tylko w programie Visual Studio Enterprise i Professional. Nie jest dostępne w programie Visual Studio Community edition.
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ Aby wyświetlić relacje między kodem i jego odwołaniami [utworzenie mapy kodu
 
 ![Funkcja CodeLens — odwołania na mapie kodu](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Znajdowanie zmian w kodzie
+## <a name="find-changes-in-your-code"></a>Znajdowanie zmian w kodzie
 
 Sprawdź, czy historią swojego kodu, aby dowiedzieć się, co się stało z kodu. Lub przejrzyj zmiany, zanim one scalane w kodzie, dzięki czemu można lepiej zrozumieć, jak zmiany w innych gałęzi, mogą mieć wpływ na kod.
 
 Potrzebujesz:
 
-- Visual Studio 2019 r (lub programu Visual Studio 2017 Enterprise lub Professional)
+- Visual Studio Enterprise or Professional edition
 
-- Team Foundation Server 2013 lub nowszy, usługom DevOps platformy Azure lub usługi Git
+- Usługom DevOps platformy Azure, Team Foundation Server 2013 lub nowszy lub Git
 
 - [Skype dla firm](/skypeforbusiness/) do kontaktowania się z zespołem z poziomu edytora kodu
 
@@ -224,11 +231,11 @@ Możesz odkryć testy jednostkowe, które istnieją w kodzie języka C# lub Visu
 
      ![Funkcja CodeLens — przejdź do definicji testu jednostki](../ide/media/codelens-unit-test-definition.png)
 
-6. Aby przejrzeć wyniki testów, wybierz wskaźnik stanu testu (![nie powiodło się ikona testowa](../ide/media/codelenstestfailedicon.png) lub ![ikonę pomyślny](../ide/media/codelenstestpassedicon.png)), lub naciśnij **Alt**+**1**.
+6. Aby przejrzeć wyniki testów, wybierz wskaźnik stanu testu (![nie powiodło się ikona testowa](../ide/media/codelenstestfailedicon.png) lub ![ikonę pomyślny](../ide/media/codelenstestpassedicon.png)) lub naciśnij **Alt**+**1**.
 
      ![Funkcja CodeLens - wyniku testu jednostkowego zobacz](../ide/media/codelens-unit-test-result.png)
 
-7. Aby zobaczyć, ile osób zmieniło ten test, kto go zmienił lub ile zmian z tym testem [znajdowanie historii kodu](#find-code-history) i połączone elementy.
+7. Aby zobaczyć, ile osób zmieniło ten test, kto go zmienił lub ile zmian z tym testem [znajdowanie historii kodu](#find-changes-in-your-code) i połączone elementy.
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -241,7 +248,7 @@ Aby wybrać wskaźników za pomocą klawiatury, naciśnij i przytrzymaj **Alt** 
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>PYT.: Jak włączanie i wyłączanie funkcji CodeLens, lub wybierz wskaźników, które się?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>PYT.: Jak włączanie i wyłączanie funkcji CodeLens lub wybierz wskaźników, które się?
 
 **ODP.:**  Można włączyć wskaźników lub wyłączyć, z wyjątkiem wskaźnik odwołań. Przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >  **CodeLens**.
 
@@ -264,6 +271,20 @@ Włącz wskaźniki poziomu plików CodeLens, włączać i wyłączać przy użyc
 - Wskaźniki związane z DevOps są wyświetlane tylko wtedy, gdy elementy robocze są połączone z kodem i masz uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia zabezpieczeń elementów członkowskich zespołu](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Nie pojawiają się wskaźniki testów jednostkowych, gdy kod aplikacji nie ma testów jednostkowych. Wskaźniki stanu testu są automatycznie wyświetlane w projektach testów. Jeśli wiesz, że kod aplikacji ma testy jednostkowe, ale nie pojawiają się wskaźniki testów, spróbuj skompilować rozwiązanie (**Ctrl**+**Shift**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Wskaźniki do kontroli źródła nie są dostępne w programie Visual Studio Community edition.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens nie jest dostępne w programie Visual Studio Community edition.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>PYT.: Dlaczego nie widzę szczegóły elementu roboczego do zatwierdzenia
 
@@ -313,11 +334,11 @@ Aby użyć klawiatury:
 
 - **Odwołania**: Ten wskaźnik jest aktualizowany automatycznie po wprowadzeniu zmian w kodzie. Jeśli **odwołania** wskaźnik jest zadokowany jako oddzielne okno, Odśwież wskaźnika, wybierając **Odśwież**:
 
-     ![Odśwież w funkcji CodeLens odwołania](../ide/media/codelensviewreferencesdocked.png)
+   ![Odśwież w funkcji CodeLens odwołania](../ide/media/codelensviewreferencesdocked.png)
 
 - **Zespół**: Odśwież te wskaźniki, wybierając **Odśwież wskaźniki zespołu CodeLens** menu kliknij prawym przyciskiem myszy:
 
-     ![Odśwież wskaźniki zespołu CodeLens elementu menu.](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![Odśwież wskaźniki zespołu CodeLens elementu menu.](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test**: [Znajdź testów jednostkowych dla kodu](#associated-unit-tests) odświeżyć **testu** wskaźnika.
 

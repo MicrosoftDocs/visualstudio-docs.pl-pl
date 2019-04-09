@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223731"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232752"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: Generowanie danych metryk kodu
 
-Można wygenerować wyniki metryki kodu dla co najmniej jeden projekt lub całe rozwiązanie. Metryki kodu jest dostępna w środowisku opracowywanie interakcyjne (IDE) programu Visual Studio i dla C# i projektach języka Visual Basic, w wierszu polecenia.
+Za Generowanie danych metryk kodu na trzy sposoby:
 
-Ponadto, możesz zainstalować [pakietu NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) zawierającego cztery metryki kodu [analizatora](roslyn-analyzers-overview.md) reguły: CA1501, CA1502, CA1505 i CA1506. Te reguły są domyślnie wyłączone, ale można je włączyć **Eksploratora rozwiązań** lub [zestaw reguł](using-rule-sets-to-group-code-analysis-rules.md) pliku.
+- Instalując [analizatory FxCop analizujące kod](#fxcop-analyzers-code-metrics-rules) i włączanie reguł metryk (łatwość konserwacji) cztery kod zawiera.
 
-## <a name="visual-studio-ide-code-metrics"></a>Metryki kodu w usłudze Visual Studio IDE
+- Wybierając [ **analizy** > **Oblicz metryki kodu** ](#calculate-code-metrics-menu-command) polecenia menu w programie Visual Studio.
+
+- Z [wiersza polecenia](#command-line-code-metrics) dla C# i projektach języka Visual Basic.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>Analizatory FxCop analizujące kod reguły metryk kodu
+
+[Pakietu FxCopAnalyzers NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) obejmuje kilka metryk kodu [analizatora](roslyn-analyzers-overview.md) reguły:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Te reguły są domyślnie wyłączone, ale można je włączyć [ **Eksploratora rozwiązań** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) lub [zestaw reguł](using-rule-sets-to-group-code-analysis-rules.md) pliku. Na przykład aby włączyć zasadę CA1502 jako ostrzeżenie, plik .ruleset będzie zawierać następujący wpis:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Konfiguracja
+
+Możesz skonfigurować progi, w których reguły metryki kodu w analizatory FxCop analizujące kod pakietu ognia.
+
+1. Utwórz plik tekstowy. Na przykład można określić nazwę *CodeMetricsConfig.txt*.
+
+2. Dodaj odpowiednie progi do pliku tekstowego w następującym formacie:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   W tym przykładzie reguła [CA1502](ca1502-avoid-excessive-complexity.md) skonfigurowano wyzwolenie, gdy metoda złożoność cyklomatyczna jest większy niż 10.
+
+3. W **właściwości** okna programu Visual Studio lub w pliku projektu, oznacz akcję kompilacji pliku konfiguracyjnym jako [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Na przykład:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Oblicz metryki kodu, polecenia menu
 
 Generowanie metryki kodu dla jednego lub wszystkich otwartych projektów w IDE, za pomocą **analizy** > **Oblicz metryki kodu** menu.
 
@@ -54,7 +100,8 @@ Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno. A
 > **Oblicz metryki kodu** polecenie nie działa w przypadku projektów .NET Core i .NET Standard. Aby obliczyć metryki kodu dla projektu .NET Core lub .NET Standard, możesz wykonywać następujące czynności:
 >
 > - Oblicz metrykę kodu z [wiersza polecenia](#command-line-code-metrics) zamiast tego
-> - uaktualnienie do programu Visual Studio 2019 r.
+>
+> - Uaktualnianie do [Visual Studio 2019 r.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 

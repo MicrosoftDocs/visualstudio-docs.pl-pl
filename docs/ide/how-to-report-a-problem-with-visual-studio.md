@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897624"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232544"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Jak zgłosić problem za pomocą programu Visual Studio lub Instalator programu Visual Studio
 
@@ -35,7 +35,7 @@ Aby zgłosić problem z programu Visual Studio lub jego Instalatora, za pomocą 
 
 1. Po zalogowaniu będzie można wyświetlić swoje **problemów** i **działania** na **elementów I postępuj zgodnie z** ekranu
 
-    ![Obserwowane elementy](../ide/media/items-i-follow.png)
+   ![Obserwowane elementy](../ide/media/items-i-follow.png)
 
 1. Program Visual Studio udostępnia interfejs do wyszukiwania dla danego problemu i zobacz, jeśli inne zgłaszali go. Jeśli ktoś zgłosił go, "up-vote" je, aby dać nam znać.
    > [!NOTE]

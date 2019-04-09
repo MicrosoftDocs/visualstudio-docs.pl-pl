@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, komputery Mac) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,15 +10,148 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 25269189489dab4a51b7f3b45f0aa670e39f50fb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611077"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232628"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="2020"></a>2.0.2.0
+ wydana 2 kwietnia 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Dodano obsługę automatycznego odświeżania bazy danych zasobów firmy Unity na zapisanie. To jest domyślnie włączona i wyzwoli ponowną kompilację po stronie platformy Unity podczas zapisywania skryptu w programie Visual Studio. Można wyłączyć tę funkcję w Tools\Options\Tools, aby zapisać AssetDatabase Unity\Refresh Unity na.
+
+    -   Dodano obsługę ustawiania instalacji preferowanego środowiska unity dokumentację w trybie offline.
+
+    -   Menu kontekstowe dodanych funkcji nowego edytora.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   Naprawiono zestawu inspekcji filtrowania i ramki za pomocą klatek puste.
+
+## <a name="2011"></a>2.0.1.1
+ wydana 26 marca 2019 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Tymczasowo wprowadzić Mono domyślne, a tylko można używać debugera dla tej wersji bardzo szczegółowych.
+
+## <a name="2006"></a>2.0.0.6
+ wydana 26 marca 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Dodano obsługę "Dołącz do aparatu Unity i Odtwórz".
+
+## <a name="2005"></a>2.0.0.5
+ wydana 20 marca 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Generowanie projektu:**
+
+    -   Zachowaj właściwości zewnętrznych podczas przetwarzania pliku rozwiązania.
+
+## <a name="2004"></a>2.0.0.4
+ wydana 5 marca 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Zaktualizowano ScriptableObject interfejsu API.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Usunięto przestrzeni nazw za pomocą szablonów.
+
+## <a name="2003"></a>2.0.0.3
+ wydana 5 marca 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Generowanie projektu:**
+
+    -   Pola publiczne i serializacji nie jest już spowoduje ostrzeżenia. Firma Microsoft została automatycznie pominąć ostrzeżenia kompilatora CS0649 i IDE0051 w projektów aparatu Unity, utworzone te komunikaty.
+
+-   **Integracja:**
+
+    -   Monit, aby dołączyć do konkretne wystąpienie, jeśli działa więcej ten jeden proces aparatu Unity.
+
+-   **Ocena:**
+
+    -   Dodano obsługę funkcji lokalnych.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   Naprawiono odczytywanie atrybutem niestandardowym argumentów nazwanych, używając starej wersji protokołu.
+
+## <a name="2002"></a>2.0.0.2
+ wydana 4 lutego 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Zaktualizowano obiekt MonoBehaviour interfejsu API.
+   
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   Naprawiono ustawiania pierwotnych wartości w debugerze.
+
+## <a name="2001"></a>2.0.0.1
+ wydanie: 4 grudnia 2018 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Naprawiono zawierania własny pakiet instalacji.
+
+## <a name="2000"></a>2.0.0.0
+ wydanie: 4 grudnia 2018 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Debuger:**
+
+    -   Zastąpione debugerze Unity na komputerze Mac ten sam debuger aparatu Unity core z Windows.
+
+    -   Zastąpione NRefactory na rzecz Roslyn do obliczenia wyrażenia.
+
+    -   Dodano obsługę dla wskaźników: wyłuskanie rzutowania i arytmetyka wskaźnika (Unity 2018.2 + i nowego środowiska uruchomieniowego są wymagana dla tego).
+
+    -   Dodano obsługę widoku wskaźnika tablicy (na przykład w języku C++). Wykonaj wyrażenie wskaźnika, a następnie dołącz przecinek i liczbę elementów, które mają być wyświetlane.
+
+    -   Dodano obsługę konstrukcji asynchronicznej.
+
+    -   Dodano obsługę zmienne pseudo (identyfikatorów wyjątków i obiektu).
+    
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Debuger:**
+
+    -   Obliczanie wyrażenia stałej z wyrażeniami źle sformułowane lub nieobsługiwany.
 
 ## <a name="1700"></a>1.7.0.0
  Wydana 13 listopada 2018 r.
@@ -33,13 +166,13 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Debuger:**
 
-     -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
+    -   Naprawiono zakleszczenie w bibliotece, używany do komunikacji z aparatem debugera mechanizmu Unity, dzięki czemu program Visual Studio lub Unity, blokowanie, szczególnie w przypadku osiągnięcia "Dołącz do aparatu Unity" lub ponownego uruchamiania gry.
 
 -   **Integracja:**
 
-     -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
+    -   Naprawiono Unity wtyczki aktywacji wybranie innego domyślnego edytora.
 
-     -   Tworzenie szablonu pliku stały aparatu Unity.
+    -   Tworzenie szablonu pliku stały aparatu Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Wydana 24 lipca 2018 r.
@@ -48,7 +181,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Integracja:**
 
-     -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
+    -   Wycofane obejście dla aparatu Unity usterka wydajności, który został rozwiązany przez aparat Unity.
 
 ## <a name="1601"></a>1.6.0.1
  Wydana 10 lipca 2018 r.
@@ -57,7 +190,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Integracja:**
 
-     -   Obsługuje stały barwy kodu programu do cieniowania.
+    -   Obsługuje stały barwy kodu programu do cieniowania.
 
 ## <a name="1600"></a>1.6.0.0
  Wydana 26 czerwca 2018 r.
@@ -70,9 +203,9 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
 -   **Generowanie projektu:**
 
-     -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
+    -   Obejście przejściowych błędów wydajności aparatu Unity: pamięci podręcznej MonoIslands podczas generowania projektów.
 
-     -   Nie można konwertować przenośnego pliku pdb mdb już korzystając z nowego środowiska uruchomieniowego platformy Unity.
+    -   Nie można konwertować przenośnego pliku pdb mdb już korzystając z nowego środowiska uruchomieniowego platformy Unity.
 
 ## <a name="1502"></a>1.5.0.2
  Wydana 18 kwietnia 2018 r.

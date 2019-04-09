@@ -1,7 +1,7 @@
 ---
 title: Zmienianie dziennika (Visual Studio Tools for Unity, Windows) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803743"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232765"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
 Dziennik zmian w programie Visual Studio Tools for Unity.
+
+## <a name="4005"></a>4.0.0.5
+ wydana 27 lutego 2019 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Naprawiono wykrywania wersji programu Visual Studio z pakietu instalacyjnego.
+
+    -   Usunąć nieużywane zestawy z pakietu instalacyjnego.
+
+## <a name="4004"></a>4.0.0.4
+ wydana 13 lutego 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Dodano obsługę poprawnie wykryty Unity przetwarza podczas instalacji i Zezwalaj na aparat Instalatora w celu ulepszenia obsługi blokad plików.
+    
+    -   Zaktualizowano ScriptableObject interfejsu API.
+
+## <a name="4003"></a>4.0.0.3
+ wydana 31 stycznia 2019 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Generowanie projektu:**
+
+    -   Pola publiczne i serializacji nie jest już spowoduje ostrzeżenia. Firma Microsoft została automatycznie pominąć ostrzeżenia kompilatora CS0649 i IDE0051 w projektów aparatu Unity, utworzone te komunikaty.
+
+-   **Integracja:**
+
+    -   Ulepszone środowisko użytkownika do wyświetlania Unity editor, jak i odtwarzacz wystąpienia (windows są teraz o zmiennym rozmiarze, użyj jednolitego marginesy i wyświetlić uchwyt zmiany rozmiaru). Dodano informacje identyfikatora procesu dla aparatu Unity edytorów.
+    
+    -   Zaktualizowano obiekt MonoBehaviour interfejsu API.
+    
+-   **Ocena:**
+
+    -   Dodano obsługę funkcji lokalnych.
+    
+    -   Dodano obsługę zmienne pseudo (identyfikatorów wyjątków i obiektu).
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Rozwiązano problem z moniker obrazów i motywów.
+
+    -   Tylko zapis do okna danych wyjściowych podczas debugowania, gdy automatycznego odświeżania bazy danych zasobów.
+
+    -   Naprawiono występują opóźnienia interfejsu użytkownika za pomocą Kreatora klasa MonoBehaviour filtrowania.
+    
+-   **Debuger:**
+
+    -   Naprawiono odczytywanie atrybutem niestandardowym argumentów nazwanych, używając starej wersji protokołu.
+
+## <a name="4002"></a>4.0.0.2
+ wydana 23 stycznia 2019 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Naprawiono Generowanie eksperymentalne kompilacji.
+
+    -   Obsługa zdarzeń pliku stały projektu aby zminimalizować wykorzystanie wątku interfejsu użytkownika.
+
+    -   Dostawca stały uzupełniania ze zmianami wsadowej tekstu.
+    
+-   **Debuger:**
+
+    -   Naprawiono wyświetlania komunikatów debugowania użytkownika dołączonego debugera.
+
+## <a name="4001"></a>4.0.0.1
+ wydana 10 grudnia 2018 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Ocena:**
+
+    -   Zastąpione NRefactory na rzecz Roslyn do obliczenia wyrażenia.
+
+    -   Dodano obsługę dla wskaźników: wyłuskanie rzutowania i arytmetyka wskaźnika (Unity 2018.2 + i nowego środowiska uruchomieniowego są wymagana dla tego).
+
+    -   Dodano obsługę widoku wskaźnika tablicy (na przykład w języku C++). Wykonaj wyrażenie wskaźnika, a następnie dołącz przecinek i liczbę elementów, które mają być wyświetlane.
+
+    -   Dodano obsługę konstrukcji asynchronicznej.
+
+-   **Integracja:**
+    
+    -   Dodano obsługę automatycznego odświeżania bazy danych zasobów firmy Unity na zapisanie. To jest domyślnie włączona i wyzwoli ponowną kompilację po stronie platformy Unity podczas zapisywania skryptu w programie Visual Studio. Można wyłączyć tę funkcję w Tools\Options\Tools, aby zapisać AssetDatabase Unity\Refresh Unity na.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+-   **Integracja:**
+
+    -   Stałych Mostek aktywacji, jeśli program Visual Studio nie jest wybrany jako preferowanego edytora zewnętrznych.
+
+    -   Obliczanie wyrażenia stałej z wyrażeniami źle sformułowane lub nieobsługiwany.
+
+## <a name="4000"></a>4.0.0.0
+ wydanie: 4 grudnia 2018 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+-   **Integracja:**
+
+    -   Dodano obsługę programu Visual Studio 2019 r.
+
+    -   Przyjęte programu Visual Studio Usługa obrazów i katalog, z pełnym wsparciem dla HDPI skalowania, doskonałe obrazów pikseli i motywów.
+
+### <a name="deprecated-features"></a>Przestarzałe funkcje
+
+-   **Integracja:**
+
+    -   Idąc dalej, program Visual Studio Tools for Unity, obsługują tylko Unity 5.2 + (przy użyciu mechanizmu Unity wbudowanej integracji programu Visual Studio).
+
+    -   Idąc dalej, program Visual Studio Tools for Unity, obsługują tylko Visual Studio 2015 +.
+
+    -   Usunąć starszej wersji usługi językowej, błąd listy z paskiem stanu.
+    
+    -   Usunięte kreatora klasa Monobehaviour szybkich (na rzecz obsługi dedykowanych intellisense).
 
 ## <a name="3903"></a>3.9.0.3
  wydana 28 listopada 2018 r.
@@ -498,7 +622,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Naprawiono odwołania poza zasobów, takich jak biblioteki (np. Facebook SDK).
 
--   **Różne:**
+-   **Misc:**
 
     -   Dodano kontrolę, aby uniemożliwić Unity uruchomiona podczas instalowania lub odinstalowywania.
 
@@ -619,7 +743,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Dodano obsługę komunikatów NetworkBehavior w kreatorach.
 
--   **INTERFEJS UŻYTKOWNIKA:**
+-   **UI:**
 
     -   Dodano opcję, aby skonfigurować widoczność MonoBehavior wiadomości.
 
@@ -643,7 +767,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Rozwiązano problem powodujący zablokowanie podczas debugowania programu Visual Studio.
 
--   **INTERFEJS UŻYTKOWNIKA:**
+-   **UI:**
 
     -   Naprawiono niezgodność z [Studio karty](https://tabsstudio.com/) rozszerzenia programu Visual Studio.
 
