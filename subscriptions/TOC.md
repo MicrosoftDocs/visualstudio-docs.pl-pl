@@ -1,5 +1,5 @@
 # [Subskrypcje programu Visual Studio](index.md)
-## [Co nowego](whats-new-in-subscriptions.md)
+## [Nowości](whats-new-in-subscriptions.md)
 ## Środowiska subskrybenta
 ### [Korzystanie z portalu dla subskrybentów](using-the-subscriber-portal.md)
 #### [Aktywowanie subskrypcji detalicznych](activate-store-subscriptions.md)
@@ -22,6 +22,7 @@
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Środki na korzystanie z platformy Azure](vs-azure.md)
 #### [Subskrypcja dewelopera usługi Office 365](vs-office-dev.md)
+#### [RStudio](vs-rstudio.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
