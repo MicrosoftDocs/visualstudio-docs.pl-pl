@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636908"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366552"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych w oknach zmiennych automatycznych i zmiennych lokalnych
 
@@ -59,6 +59,19 @@ W kodzie natywnym języku C++ masz może być zakwalifikowanie kontekstu nazwy z
 >-   Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość obu `var1` i `var2`. Wyrażenia te są określane jako mają [efekty uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efekty uboczne może spowodować nieoczekiwane wyniki, jeśli nie masz pewności, z nich.
 >
 >-   Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych bitów w zmiennej zmiennoprzecinkowych.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Wyszukiwanie w oknie Autos lub zmiennych lokalnych
+
+Wyszukiwanie słów kluczowych w kolumnach nazwę, wartość i typ **Autos** lub **lokalne** okna, korzystając z paska wyszukiwania powyżej każdego okna. Naciśnij klawisz ENTER lub wybierz jedną z strzałki, aby wykonać wyszukiwanie. Aby anulować bieżące wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
+
+Użyj strzałek w lewo i w prawo (Shift + F3 i F3, odpowiednio) do przechodzenia między znaleziono dopasowania.
+
+![Wyszukiwanie w oknie zmienne lokalne](../debugger/media/ee-search-locals.png "wyszukiwania w oknie zmienne lokalne")
+
+Aby wyszukiwanie więcej lub mniej dokładne, użyj **wyszukiwania bardziej** listy rozwijanej w górnej części **Autos** lub **lokalne** okno, aby wybrać, ile poziomów w głąb chcesz wyszukać w obiekty zagnieżdżone. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Zmienianie kontekstu dla okna zmiennych automatycznych i zmiennych lokalnych
 

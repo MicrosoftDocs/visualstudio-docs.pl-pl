@@ -3,26 +3,26 @@ title: Omówienie programu Visual Studio dla programistów używających języka
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790605"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365733"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Witamy w środowisku IDE programu Visual Studio | Python
 
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych uruchamianie konsola dla języka Python (i inne języki) służąca do służy do edytowania, debugowania i testować kod, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debuger, większości środowisk IDE podać, program Visual Studio obejmuje uzupełnianie kodu narzędzi, interaktywnego środowiska REPL, i innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
-[![Program Visual Studio z projektu języka Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Vz projektu języka Python, Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Ten obraz pokazuje programu Visual Studio Otwórz projekt języka Python i kilkoma oknami narzędzi kluczy, które będą prawdopodobnie używane:
 
@@ -50,7 +50,7 @@ Istnieją trzy wersje programu Visual Studio w Windows: Community, Professional 
 
 Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które ułatwiają mu bardziej wydajnej pracy, podczas opracowywania oprogramowania:
 
-- [Funkcja IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
+- [IntelliSense](editing-python-code-in-visual-studio.md#intellisense)
 
    Funkcja IntelliSense jest okres zestaw funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w innym miejscu. Funkcje IntelliSense zależy od języka, a [kod Python edycji](editing-python-code-in-visual-studio.md#intellisense) artykuł zawiera szczegółowe informacje dla języka Python. Na poniższej ilustracji przedstawiono, jak technologia IntelliSense wyświetla listę elementu członkowskiego dla typu:
 
@@ -118,7 +118,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
     ![Raport profilowania wydajności](media/profiling-results.png)
 
-- [Testowanie jednostek](unit-testing-python-in-visual-studio.md)
+- [Testowanie jednostkowe](unit-testing-python-in-visual-studio.md)
 
     Program Visual Studio obsługuje zintegrowane odnajdywania, uruchomiona, i testów jednostkowych debugowania w kontekście IDE.
 
@@ -129,7 +129,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 Poznaj języka Python w programie Visual Studio w dalszej, wykonując jedną z następujących przewodników Szybki Start lub samouczki:
 
 > [!div class="nextstepaction"]
-> [Szybki start: Tworzenie aplikacji sieci web za pomocą Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Szybki start: Tworzenie aplikacji internetowej za pomocą platformy Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Praca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

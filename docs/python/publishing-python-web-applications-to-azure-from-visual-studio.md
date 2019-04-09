@@ -3,20 +3,20 @@ title: Publikowanie aplikacji w języku Python w usłudze Azure App Service
 description: Opcje publikowania wdrażania aplikacji języka Python w usłudze Azure App Service, w tym Git i kontenery dla systemów Linux i wdrażanie w usługach IIS.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1f6d202bf51a31273eb4571bc6ff8ca497ec9a68
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159195"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365475"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 

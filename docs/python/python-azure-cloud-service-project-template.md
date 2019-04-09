@@ -3,20 +3,20 @@ title: Szablon projektu usługi w chmurze platformy Azure dla języka Python
 description: Program Visual Studio udostępnia szablony dla usług Azure cloud services, napisany w języku Python, w tym wdrażanie ról w zależności i rozwiązywania problemów.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 77da3ee8af0b14171e8cc525c2e6d95c6a38a205
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355714"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366539"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
 
@@ -97,7 +97,7 @@ Jeśli po wdrożeniu Twojej roli sieci web lub proces roboczy nie działają pra
 
   - *ConfigureCloudService.ps1*
   - *Skryptu LaunchWorker.ps1* (dla ról procesów roboczych)
-  - *PS.cmd*
+  - *ps.cmd*
 
 - Obejmuje projektu języka Python *requirements.txt* plików, wyświetlanie listy wszystkich zależności (lub też Kolekcja plików kółka).
 - Włączanie pulpitu zdalnego w usłudze w chmurze i sprawdź pliki dziennika.

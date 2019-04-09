@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955664"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366916"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Django przy użyciu widoków i szablonów stron
 
@@ -52,8 +52,8 @@ Przy użyciu jednej z metod, tworzenie aplikacji o nazwie "HelloDjangoApp". Wyni
 | --- | --- |
 | **\_\_init\_\_.py** | Plik, który identyfikuje aplikację jako pakiet. |
 | **Migracje** | Folder, w którym Django przechowuje skrypty, które aktualizują bazę danych, aby wyrównać ze zmianami do modeli. Narzędzia migracji w Django następnie zastosować wymagane zmiany do poprzednich wersji bazy danych, aby był zgodny z bieżącym modeli. Za pomocą migracji, nadal możesz skoncentrować się na swoje modele i pozwól Django obsługi podstawowy schemat bazy danych. Migracje zostały omówione w kroku 6. teraz, po prostu zawiera folder  *\_ \_init\_\_PY* pliku (co oznacza, że folder definiuje swój własny pakiet języka Python). |
-| **Szablony** | Folder zawierający pojedynczy plik szablony stron Django *index.html* w folderze pasujące do nazwy aplikacji. (W programie Visual Studio 2017 w wersji 15.7 i starszych plik znajduje się bezpośrednio pod *szablony* kroku 2 – 4 obydwa te elementy do tworzenia tego podfolderu.) Szablony są bloki kodu HTML, do którego widoki mogą dodawać informacje, aby powodować dynamiczne renderowanie strony. Takie jak strona "zmienne szablonu," `{{ content }}` w *index.html*, jest symboli zastępczych dla wartości dynamicznych, zgodnie z opisem w dalszej części tego artykułu (krok 2). Zazwyczaj aplikacje Django utworzenia przestrzeni nazw swoje szablony, umieszczając je w podfolderze, która jest zgodna z nazwą aplikacji. |
-| **Admin.PY** | Plik języka Python, w którym możesz rozszerzyć aplikację użytkownika administracyjnego interfejsu (zobacz krok 6), używany do umieszczenia i edytować dane w bazie danych. Początkowo ten plik zawiera tylko instrukcja `from django.contrib import admin`. Domyślnie Django zawiera standardowy interfejs administracyjny za pośrednictwem wpisów w projekcie Django *settings.py* pliku, który można włączyć, trwa usuwanie komentarza do istniejących wpisów *urls.py*. |
+| **szablony** | Folder zawierający pojedynczy plik szablony stron Django *index.html* w folderze pasujące do nazwy aplikacji. (W programie Visual Studio 2017 w wersji 15.7 i starszych plik znajduje się bezpośrednio pod *szablony* kroku 2 – 4 obydwa te elementy do tworzenia tego podfolderu.) Szablony są bloki kodu HTML, do którego widoki mogą dodawać informacje, aby powodować dynamiczne renderowanie strony. Takie jak strona "zmienne szablonu," `{{ content }}` w *index.html*, jest symboli zastępczych dla wartości dynamicznych, zgodnie z opisem w dalszej części tego artykułu (krok 2). Zazwyczaj aplikacje Django utworzenia przestrzeni nazw swoje szablony, umieszczając je w podfolderze, która jest zgodna z nazwą aplikacji. |
+| **admin.py** | Plik języka Python, w którym możesz rozszerzyć aplikację użytkownika administracyjnego interfejsu (zobacz krok 6), używany do umieszczenia i edytować dane w bazie danych. Początkowo ten plik zawiera tylko instrukcja `from django.contrib import admin`. Domyślnie Django zawiera standardowy interfejs administracyjny za pośrednictwem wpisów w projekcie Django *settings.py* pliku, który można włączyć, trwa usuwanie komentarza do istniejących wpisów *urls.py*. |
 | **Apps.PY** | Plik języka Python, który definiuje klasę konfiguracji dla aplikacji (zobacz poniżej pod tą tabelą). |
 | **models.PY** | Modele są obiekty danych, identyfikowany przez funkcje, za pomocą których widoki interakcji z podstawowej bazy danych aplikacji (zobacz krok 6). Django zapewnia warstwę połączenia bazy danych, dzięki czemu nie trzeba zajmować się te szczegóły aplikacji. *Models.py* plików jest miejscem domyślna, w której chcesz utworzyć swoje modele i początkowo zawiera tylko instrukcja `from django.db import models`. |
 | **Tests.PY** | Plik języka Python, który zawiera podstawowej struktury testów jednostkowych. |

@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 9e6071d7bc8bbc73356a02d968f6f643aba5c854
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 600f34377e5901148149bb6e94c2277b37a435af
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58214382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59291693"
 ---
 Na urządzeniu zdalnym lub serwerze, na którym chcesz debugować na, zamiast maszyny programu Visual Studio Pobierz i zainstaluj poprawną wersję narzędzi zdalnych z łączy w poniższej tabeli.
 
@@ -25,7 +25,7 @@ Na urządzeniu zdalnym lub serwerze, na którym chcesz debugować na, zamiast ma
 |Wersja|Łącze|Uwagi|
 |-|-|-|
 |Visual Studio 2019 RC|[Zdalne narzędzia](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|Zgodny ze wszystkimi wersjami programu Visual Studio 2019 r. Pobierz wersję dopasowania system operacyjny urządzenia (x 86, x64 lub ARM64). W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
-|Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Zgodny ze wszystkimi wersjami programu Visual Studio 2017. Pobierz wersję dopasowania system operacyjny urządzenia (x 86, x64 lub ARM64). W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
+|Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Zgodny ze wszystkimi wersjami programu Visual Studio 2017. Pobierz wersję dopasowania system operacyjny urządzenia (x 86, x64 lub ARM64). W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
 |Visual Studio 2015|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Zdalne narzędzia dla programu Visual Studio 2015 są dostępne z My.VisualStudio.com. Jeśli zostanie wyświetlony monit, weź udział w bezpłatnych [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) program lub zaloguj się przy użyciu identyfikatora subskrypcji programu Visual Studio. W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
 |Visual Studio 2013|[Zdalne narzędzia](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
 |Visual Studio 2012|[Zdalne narzędzia](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Pobierz strony w dokumentacji programu Visual Studio 2012|
@@ -36,7 +36,7 @@ Na urządzeniu zdalnym lub serwerze, na którym chcesz debugować na, zamiast ma
 
 |Wersja|Łącze|Uwagi|
 |-|-|-|
-|Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Zgodny ze wszystkimi wersjami programu Visual Studio 2017. Pobierz wersję dopasowania system operacyjny urządzenia (x 86, x64 lub ARM64). W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
+|Visual Studio 2017 (Najnowsza wersja)|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Zgodny ze wszystkimi wersjami programu Visual Studio 2017. Pobierz wersję dopasowania system operacyjny urządzenia (x 86, x64 lub ARM64). W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
 |Visual Studio 2015|[Zdalne narzędzia](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Zdalne narzędzia dla programu Visual Studio 2015 są dostępne z My.VisualStudio.com. Jeśli zostanie wyświetlony monit, weź udział w bezpłatnych [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) program lub zaloguj się przy użyciu identyfikatora subskrypcji programu Visual Studio. W systemie Windows Server, zobacz [odblokować pobierania pliku](../../debugger/remote-debugging-unblock-file-download.md) pomocy pobieranie narzędzi zdalnych.|
 |Visual Studio 2013|[Zdalne narzędzia](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Pobierz strony w dokumentacji programu Visual Studio 2013|
 |Visual Studio 2012|[Zdalne narzędzia](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Pobierz strony w dokumentacji programu Visual Studio 2012|

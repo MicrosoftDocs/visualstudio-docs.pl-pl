@@ -3,18 +3,18 @@ title: Obciążenie aplikacji analitycznych i naukowych opracowań danych
 description: To obciążenie programu Visual Studio umożliwia połączenie ze sobą Python, F#i ich dystrybucji odpowiedniego środowiska uruchomieniowego, w tym Anaconda. (Języka R znajduje się również w programie Visual Studio 2017 jedynie.)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325331"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366331"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Nainstalovat podporu do nauki o danych w programie Visual Studio
 

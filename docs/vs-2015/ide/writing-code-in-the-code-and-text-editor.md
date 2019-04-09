@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794244"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366617"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożli
 |Sprawdź poprawność dokumentu|Sprawdza poprawność plików kodu języka JScript.|  
 |Usuń biały znak poziome|Usuwa tabulatory lub spacje na końcu bieżącego wiersza.|  
 |Wyświetl białe znaki|Wyświetla spacje jako kropki podniesione i tabulatory jako strzałki. Koniec pliku jest wyświetlany jako znacznik prostokątny. Jeśli **narzędzia/Opcje/Edytor Edytor języki/zawijanie wierszy/Pokaż widoczne glify dla zawijania** jest zaznaczone, ten glif jest również wyświetlany.|  
-|Zawijanie wyrazów|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Włącz zawijanie wyrazów i Włącz w ustawieniach Edytor tekstu wszystkie języki (**narzędzia/Opcje/Edytor tekstu/wszystkie języki**).|  
+|Zawijanie wierszy|Powoduje, że wszystkie wiersze w dokumencie mają być wyświetlane w oknie kodu. Włącz zawijanie wyrazów i Włącz w ustawieniach Edytor tekstu wszystkie języki (**narzędzia/Opcje/Edytor tekstu/wszystkie języki**).|  
 |Usuń komentarz z zaznaczenia|Dodaje znaki komentarza do bieżącego wiersza lub zaznaczenia.|  
 |Dodaj komentarz do zaznaczenia|Usuwa znaki komentarza z bieżącego wiersza lub zaznaczenia.|  
 |Zwiększ wcięcie wiersza|Dodaje znak tabulatora (lub równoważne spacje) do wybranych wierszy lub w bieżącym wierszu.|  
@@ -174,7 +174,7 @@ Visual Studio "Przejdź do" polecenie powoduje ukierunkowane wyszukiwanie kodu, 
 
 ### <a name="filter-your-search"></a>Przefiltruj wyszukiwanie
 
-Aby ograniczyć wyszukiwanie, tak aby tylko kod symbole, należy poprzedzić przejdź do zapytania przy użyciu "@" znaków. Na przykład, jeśli wyszukasz `@application`, przejdź do Wyświetla, na przykład tylko klasy, które zawierają słowo "aplikacja" w ich.
+Aby ograniczyć wyszukiwanie, tak aby tylko kod symbole, należy poprzedzić przejdź do zapytania przy użyciu "\@" znaków. Na przykład, jeśli wyszukasz `@application`, przejdź do Wyświetla, na przykład tylko klasy, które zawierają słowo "aplikacja" w ich.
 
 Jeśli używasz camelcase w kodzie, szybciej znaleźć elementy kodu, wprowadzając tylko wielkimi literami nazwa elementu kodu. Na przykład, jeśli kod ma składnik o nazwie `ViewSwitcher`, możesz go znaleźć, wprowadzając tylko wielkimi literami nazwę (`"VS"`) przejdź do okna.
 
@@ -189,27 +189,27 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
  Aby uzyskać informacje o opcjach edytora specyficznych dla języka zobacz następujące tematy:  
 
--   [Ustawienia języka Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+-   [Visual Basic — Ustawienia](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Używanie środowiska programistycznego Visual Studio dla języka C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opcje, Edytor tekstów, JavaScript, Formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Opcje, edytor tekstu, JavaScript, formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>W tej sekcji  
 
 -   [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)  
 
--   [Kodowania i znaki podziału wiersza](../ide/encodings-and-line-breaks.md)  
+-   [Kodowania i linie podziału](../ide/encodings-and-line-breaks.md)  
 
--   [Obramowanie](../ide/outlining.md)  
+-   [Tworzenie konspektu](../ide/outlining.md)  
 
 -   [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)  
 
 -   [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)  
+-   [Korzystanie z IntelliSense](../ide/using-intellisense.md)  
 
--   [Dostosowywanie edytora](../ide/customizing-the-editor.md)  
+-   [Dopasowywanie edytora](../ide/customizing-the-editor.md)  
 
 -   [Instrukcje: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
@@ -217,9 +217,9 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 -   [Szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Fragmenty kodu](../ide/code-snippets.md)  
+-   [Wstawki kodu](../ide/code-snippets.md)  
 
--   [Korzystanie z przybornika](../ide/using-the-toolbox.md)  
+-   [Korzystanie z Przybornika](../ide/using-the-toolbox.md)  
 
 -   [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)  
 
@@ -227,7 +227,7 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 -   [Korzystanie z listy zadań](../ide/using-the-task-list.md)  
 
--   [Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)  
+-   [Znajdowanie zmian w kodzie i innych elementów historii kodu](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

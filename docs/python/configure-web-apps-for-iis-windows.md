@@ -3,20 +3,20 @@ title: Konfigurowanie aplikacji sieci web języka Python dla programu IIS
 description: Jak skonfigurować aplikacje sieci web języka Python do uruchamiania z Internet Information Services z maszyną wirtualną Windows.
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355464"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366396"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurowanie aplikacji sieci web języka Python dla programu IIS
 

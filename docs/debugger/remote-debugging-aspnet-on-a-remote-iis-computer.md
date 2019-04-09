@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355503"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366890"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS w programie Visual Studio
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -175,14 +175,18 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
     > [!TIP]
     > W programie Visual Studio 2017 i nowszych wersjach można dołączyć ponownie do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift + Alt + P).
 
-3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: port**.
+3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >** i naciśnij klawisz **Enter**.
+
+    Sprawdź, czy program Visual Studio dodaje wymaganego portu z nazwą komputera, który jest wyświetlany w formacie:  **\<nazwy komputera zdalnego >: port**
 
     ::: moniker range=">=vs-2019"
-    **\<Nazwa komputera zdalnego >: 4024** 2019 Visual Studio
+    2019 Visual Studio, powinien zostać wyświetlony  **\<nazwy komputera zdalnego >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Nazwa komputera zdalnego >: 4022** programu Visual Studio 2017
+    W programie Visual Studio 2017, powinien zostać wyświetlony  **\<nazwy komputera zdalnego >: 4022**
     ::: moniker-end
+    Numer portu jest wymagany. Jeśli nie widzisz numer portu, dodaj ją ręcznie.
+
 4. Kliknij przycisk **Odśwież**.
     Powinien zostać wyświetlony niektóre procesy, które są wyświetlane w **dostępne procesy** okna.
 
@@ -191,9 +195,21 @@ Aby uzyskać informacje na temat uruchamiania zdalnego debugera jako usługi, zo
     Jeśli chcesz używać **znaleźć** przycisku, konieczne może być [Otwórz UDP port 3702](#bkmk_openports) na serwerze.
 
 5. Sprawdź **Pokaż procesy wszystkich użytkowników**.
-6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć **dotnet.exe** (dla platformy ASP.NET Core).
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+6. Wpisz pierwszą literę swoją nazwę procesu, aby szybko znaleźć Twojej aplikacji.
+
+    * Wybierz **dotnet.exe**.
+
+      Jeśli masz wiele procesów przedstawiający **dotnet.exe**, sprawdź **nazwa_użytkownika** kolumny. W niektórych scenariuszach **nazwa_użytkownika** kolumna zawiera nazwę puli aplikacji, takich jak **IIS APPPOOL\DefaultAppPool**. Jeśli widzisz puli aplikacji, prosty sposób zidentyfikować korygowania procesu do tworzenia nowego o nazwie App Pool dla wystąpienia aplikacji, który chcesz debugować, a następnie można je znaleźć łatwo w **nazwa_użytkownika** kolumny.
+
+    * W niektórych scenariuszach usług IIS może się okazać nazwy aplikacji na liście procesów, takich jak **MyASPApp.exe**. Można dołączyć zamiast tego do tego procesu.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Kliknij przycisk **dołączyć**.
 

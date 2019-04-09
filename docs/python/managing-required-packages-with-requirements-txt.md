@@ -3,19 +3,19 @@ title: Zarządzanie zależnościami pakietów przy użyciu pliku requirements.tx
 description: Plik Requirements.txt znajduje się w tym artykule opisano zależności projektu. Jeśli zostanie wyświetlony projektu, który zawiera plik requirements.txt, możesz łatwo zainstalować te zależności w jednym kroku.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194843"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365239"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety przy użyciu pliku requirements.txt
 
@@ -69,6 +69,6 @@ Cleaning up...
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Ścieżki wyszukiwania](search-paths.md)
 - [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

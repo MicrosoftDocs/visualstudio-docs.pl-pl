@@ -3,19 +3,19 @@ title: Sposób stosowania ścieżki wyszukiwania języka Python
 description: Program Visual Studio oferuje więcej określonych oznacza do określania ścieżek wyszukiwania dla środowisk i projektów, aby unikać używania zmiennych całego systemu.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147738"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365343"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżki wyszukiwania języka Python
 
@@ -49,6 +49,6 @@ Pliki z *zip* lub *.egg* rozszerzenia mogą być również dodawane jako ścież
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

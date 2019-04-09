@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640795"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366760"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 
@@ -56,13 +56,17 @@ Zazwyczaj komputer lokalny najlepsze replikuje wykonywanie zainstalowanych aplik
 
 Raport diagnostyczny są posortowane według **łączny czas Procesora**, od najwyższego do najniższego. Zmień kolejność sortowania lub Sortuj kolumny, wybierając nagłówków kolumn. Użyj **filtru** listę rozwijaną, aby zaznacz lub odznacz opcję wątków, wyświetlać i używać **wyszukiwania** wyszukać określonego wątku lub węzeł.
 
+::: moniker range=">=vs-2019"
+Począwszy od programu Visual Studio 2019 r, możesz kliknąć pozycję **Rozwiń ścieżkę aktywną** i **Pokaż ścieżkę aktywną** przycisków, aby wyświetlić wywołania funkcji, która Użyj najwięcej procesora CPU w widoku drzewa wywołań.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Kolumny danych użycia procesora CPU
 
 |||
 |-|-|
 |**Łączny czas Procesora [jednostka, %]**|![Łączna liczba % danych równania](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Milisekund i procent użycia procesora CPU, używany przez wywołania do funkcji i funkcji wywoływanych przez funkcję w wybranym zakresie czasu. To różni się od **wykorzystanie procesora CPU** wykres osi czasu, który porównuje łączną aktywność procesora CPU w zakresie czasu, aby łączna liczba dostępne możliwości procesora CPU.|
 |**Czas własny Procesora [jednostka, %]**|![Równania własnym %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Milisekund i procent użycia procesora CPU, używany przez wywołania do funkcji w wybranym zakresie czasu, z wyjątkiem funkcji wywołanych przez funkcję.|
-|**Module**|Nazwa modułu zawierający funkcję.
+|**Moduł**|Nazwa modułu zawierający funkcję.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań
 
@@ -70,7 +74,12 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. **Uży
 
 ####  <a name="BKMK_Call_tree_structure"></a> Struktura drzewa wywołań
 
- ![Wywołania struktury drzewa](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "struktury drzewa wywołań")
+::: moniker range=">=vs-2019"
+![Wywołania struktury drzewa](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "struktury drzewa wywołań")
+::: moniker-end
+::: moniker range="vs-2017"
+![Wywołania struktury drzewa](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "struktury drzewa wywołań")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Aby wyświetlić drzewo wywołań, wybierz węzeł nadrzędny w raporcie. **Uży
 
 ####  <a name="BKMK_External_Code"></a> Kod zewnętrzny
 
- System i platforma funkcje, które są wykonywane w kodzie są nazywane *kod zewnętrzny*. Funkcje kodu zewnętrznego Uruchom i Zatrzymaj aplikację, rysowania interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie chcesz kodu zewnętrznego, dzięki czemu użycie procesora CPU wywoływać drzewa zbiera informacje funkcji zewnętrznych metody użytkownika w jednym **[kod zewnętrzny]** węzła.
+System i platforma funkcje, które są wykonywane w kodzie są nazywane *kod zewnętrzny*. Funkcje kodu zewnętrznego Uruchom i Zatrzymaj aplikację, rysowania interfejsu użytkownika, kontrolować wątki i podaj inne niskopoziomowe usługi dla aplikacji. W większości przypadków nie chcesz kodu zewnętrznego, dzięki czemu użycie procesora CPU wywoływać drzewa zbiera informacje funkcji zewnętrznych metody użytkownika w jednym **[kod zewnętrzny]** węzła.
 
- Aby wyświetlić wywołania ścieżek kodu zewnętrznego na stronie głównej raport diagnostyczny (w okienku po prawej stronie), wybierz **Pokaż kod zewnętrzny** z **filtru** listy rozwijanej, a następnie wybierz pozycję **Zastosuj**. **Drzewo wywołań** widoku **użycie procesora CPU** strony następnie rozwija wywołania kodu zewnętrznego. ( **Filtru** listy rozwijanej jest dostępny na stronie głównej diagnostycznych, nie szczegółowe widoki.)
+Aby wyświetlić wywołania ścieżek kodu zewnętrznego na stronie głównej raport diagnostyczny (w okienku po prawej stronie), wybierz **Pokaż kod zewnętrzny** z **filtru** listy rozwijanej, a następnie wybierz pozycję **Zastosuj**. **Drzewo wywołań** widoku **użycie procesora CPU** strony następnie rozwija wywołania kodu zewnętrznego. ( **Filtru** listy rozwijanej jest dostępny na stronie głównej diagnostycznych, nie szczegółowe widoki.)
 
- ![Pokaż kod zewnętrzny](../profiling/media/cpu_use_wt_filterview.png "Pokaż kod zewnętrzny")
+![Pokaż kod zewnętrzny](../profiling/media/cpu_use_wt_filterview.png "Pokaż kod zewnętrzny")
 
- Wiele łańcuchy wywołania kodu zewnętrznego głęboko zagnieżdżone, więc szerokość łańcucha może być dłuższa niż szerokość ekranu **nazwy funkcji** kolumny. Nazwy funkcji wtedy być wyświetlana jako **...** .
+Wiele łańcuchy wywołania kodu zewnętrznego głęboko zagnieżdżone, więc szerokość łańcucha może być dłuższa niż szerokość ekranu **nazwy funkcji** kolumny. Nazwy funkcji wtedy być wyświetlana jako **...** .
 
- ![Zagnieżdżony kod zewnętrzny, w drzewie wywołań](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "zagnieżdżony kod zewnętrzny, w drzewie wywołań")
+![Zagnieżdżony kod zewnętrzny, w drzewie wywołań](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "zagnieżdżony kod zewnętrzny, w drzewie wywołań")
 
- Aby znaleźć nazwę funkcji, których szukasz, użyj pola wyszukiwania. Umieść kursor nad wybranego wiersza, lub użyj poziomych pasków przewijania, aby wyświetlić dane.
+Aby znaleźć nazwę funkcji, których szukasz, użyj pola wyszukiwania. Umieść kursor nad wybranego wiersza, lub użyj poziomych pasków przewijania, aby wyświetlić dane.
 
- ![Wyszukaj zagnieżdżonego kodu zewnętrznego](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "wyszukiwanie zagnieżdżonego kodu zewnętrznego")
+::: moniker range=">=vs-2019"
+![Wyszukaj zagnieżdżonego kodu zewnętrznego](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "wyszukiwanie zagnieżdżonego kodu zewnętrznego")
+::: moniker-end
+::: moniker range="vs-2017"
+![Wyszukaj zagnieżdżonego kodu zewnętrznego](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "wyszukiwanie zagnieżdżonego kodu zewnętrznego")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funkcje asynchroniczne użycia procesora CPU w drzewie wywołań
 

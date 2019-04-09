@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018392"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366045"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Zestaw reguł zabezpieczeń dla zarządzanego kodu
 Powinien zawierać regułę reguły zabezpieczeń firmy Microsoft, aby zmaksymalizować liczbę potencjalnych problemów z zabezpieczeniami, które są zgłaszane.
@@ -63,15 +63,18 @@ Powinien zawierać regułę reguły zabezpieczeń firmy Microsoft, aby zmaksymal
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Metody przezroczyste nie mogą używać asercji zabezpieczeń|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Metody przezroczyste nie mogą wywoływać kodu natywnego|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Zestawy powinny mieć prawidłowe silne nazwy|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Przegląd kodu dla iniekcją SQL|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Przegląd kodu dla XSS luk w zabezpieczeniach|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Przegląd kodu dla pliku ścieżka iniekcją|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Przegląd kodu, aby uzyskać informacje o ujawnianie luk w zabezpieczeniach|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Przegląd kodu dla iniekcją LDAP|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Przegląd kodu dla procesu polecenia iniekcją|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Przegląd kodu na otwarte przekierowywanie luk w zabezpieczeniach|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Przegląd kodu dla iniekcją XPath|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Przejrzyj kod XML iniekcją|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Przejrzyj kod XAML iniekcją|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Przegląd kodu dla biblioteki DLL iniekcją|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Przegląd kodu dla wyrażenia regularnego iniekcją|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Nie używaj niezabezpieczonych Deserializator elementu|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Nie wywołuj BinaryFormatter.Deserialize bez uprzedniego ustawienia BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Upewnij się, że ustawiono BinaryFormatter.Binder przed wywołaniem BinaryFormatter.Deserialize|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu SQL|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających działanie skryptów między witrynami|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie ścieżki pliku|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających ujawnienie informacji|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie protokołu LDAP|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie polecenia procesu|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających otwarcie przekierowania|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia XPath|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XML|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie biblioteki DLL|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie wyrażenia regularnego|

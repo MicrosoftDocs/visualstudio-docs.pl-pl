@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Przegląd i krok 1 core Przewodnik po funkcji języka Python w programie Visual Studio, w tym wymagania wstępne i tworzenia nowego projektu języka Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155217"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366292"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
 
@@ -25,12 +25,12 @@ Język Python jest popularnych języków programowania, które jest niezawodne, 
 Visual Studio zapewnia najwyższej jakości obsługę języka Python. Ten samouczek przeprowadzi Cię przez następujące kroki:
 
 - [Krok 0: Instalacja](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Krok 1: Tworzenie projektu języka Python (w tym artykule)](#step-1-create-a-new-python-project)
-- [Krok 2: Pisanie i uruchamianie kodu, aby zobaczyć funkcji IntelliSense Visual Studio w miejscu pracy](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Krok 3: Utwórz więcej kodu w okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Krok 4: Uruchom program ukończone w debugerze programu Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Krok 5: Instalowanie pakietów i zarządzanie środowiskami Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Krok 6: Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Krok 1. Tworzenie projektu języka Python (w tym artykule)](#step-1-create-a-new-python-project)
+- [Krok 2. Pisanie i uruchamianie kodu, aby zobaczyć funkcji IntelliSense Visual Studio w miejscu pracy](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Krok 3. Utwórz więcej kodu w okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Krok 4. Uruchom program ukończone w debugerze programu Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Krok 5. Instalowanie pakietów i zarządzanie środowiskami Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Krok 6. Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 

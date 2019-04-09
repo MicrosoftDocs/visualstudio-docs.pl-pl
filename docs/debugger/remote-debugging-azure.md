@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355805"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365917"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio
 
@@ -213,14 +213,17 @@ Pobierz wersję narzędzi remote tools, który odpowiada używanej wersji progra
     > [!TIP]
     > W programie Visual Studio 2017 i nowszych wersjach można ponownie dołączyć do tego samego procesu wcześniej podłączany do przy użyciu **Debuguj > ponownie Dołącz do procesu...** (Shift+Alt+P).
 
-3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >: port**.
+3. Ustaw pole kwalifikator  **\<nazwy komputera zdalnego >** i naciśnij klawisz **Enter**.
+
+    Sprawdź, czy program Visual Studio dodaje wymaganego portu z nazwą komputera, który jest wyświetlany w formacie:  **\<nazwy komputera zdalnego >: port**
 
     ::: moniker range=">=vs-2019"
-    **\<Nazwa komputera zdalnego >: 4024** 2019 Visual Studio
+    2019 Visual Studio, powinien zostać wyświetlony  **\<nazwy komputera zdalnego >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Nazwa komputera zdalnego >: 4022** programu Visual Studio 2017
+    W programie Visual Studio 2017, powinien zostać wyświetlony  **\<nazwy komputera zdalnego >: 4022**
     ::: moniker-end
+    Numer portu jest wymagany. Jeśli nie widzisz numer portu, dodaj ją ręcznie.
 
 4. Kliknij przycisk **Odśwież**.
     Powinien zostać wyświetlony niektóre procesy, które są wyświetlane w **dostępne procesy** okna.
@@ -231,11 +234,20 @@ Pobierz wersję narzędzi remote tools, który odpowiada używanej wersji progra
 
 5. Sprawdź **Pokaż procesy wszystkich użytkowników**.
 
-6. Wpisz pierwszą literę nazwy procesu, aby szybko znaleźć *dotnet.exe* (dla platformy ASP.NET Core).
+6. Wpisz pierwszą literę swoją nazwę procesu, aby szybko znaleźć Twojej aplikacji.
 
-   Dla aplikacji ASP.NET Core, był poprzedniej nazwy procesu *dnx.exe*.
+    * Wybierz **dotnet.exe** (dla platformy .NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      Jeśli masz wiele procesów przedstawiający **dotnet.exe**, sprawdź **nazwa_użytkownika** kolumny. W niektórych scenariuszach **nazwa_użytkownika** kolumna zawiera nazwę puli aplikacji, takich jak **IIS APPPOOL\DefaultAppPool**. Jeśli widzisz puli aplikacji, prosty sposób zidentyfikować korygowania procesu do tworzenia nowego o nazwie App Pool dla wystąpienia aplikacji, który chcesz debugować, a następnie można je znaleźć łatwo w **nazwa_użytkownika** kolumny.
+
+    * W niektórych scenariuszach usług IIS może się okazać nazwy aplikacji na liście procesów, takich jak **MyASPApp.exe**. Można dołączyć zamiast tego do tego procesu.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Kliknij przycisk **dołączyć**.
 

@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251e6ca5d1d9985defc8dff1dc6be95f3a088bbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626326"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366994"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
 Wizualizator zestawu danych służy do wyświetlania zawartości obiektu DataSet, DataTable, widoku danych lub DataViewManager. Ten Wizualizator dostęp, klikając ikonę lupy, który pojawia się obok wartości dla jednej z tych obiektów w oknie zmiennych debugera, lub w poradzie dotyczącej danych.
@@ -39,6 +37,6 @@ Wizualizator zestawu danych służy do wyświetlania zawartości obiektu DataSet
 ## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
-- [Okna debugera](../debugger/debugger-windows.md)
-- [Wyświetlanie wartości danych w etykietkach danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+- [Debuger Windows](../debugger/debugger-windows.md)
+- [Podgląd wartości danych w poradach dotyczących](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

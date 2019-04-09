@@ -1,7 +1,7 @@
 ---
 title: Dołączanie do uruchomionego procesu za pomocą debugera | Dokumentacja firmy Microsoft
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323097"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366409"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
 
 Możesz użyć **dołączyć do procesu** Aby debugować aplikacje uruchomione na komputerze lokalnym lub zdalnym, Debuguj kilka procesów jednocześnie, debugowanie aplikacji, które nie zostały utworzone w programie Visual Studio lub debugowanie dowolna aplikacja nie została uruchomiona w programie Visual Studio Debuger jest dołączony. Na przykład jeśli korzystasz z aplikacji bez debugera i napotkała wyjątek, należy można dołączyć debuger do procesu uruchamiania aplikacji i rozpocząć debugowanie.
-
-Aby dowiedzieć się, jak podstawowe debugowania w programie Visual Studio, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Nie masz pewności czy użyć **dołączyć do procesu** dla danego scenariusza debugowania? Zobacz [typowych scenariuszy debugowania](#BKMK_Scenarios).
@@ -94,19 +92,20 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
 2. **Typ połączenia** powinien być **domyślne** w większości przypadków. W **adres docelowy połączenia** wybierz komputera zdalnego, przy użyciu jednej z następujących metod:
 
    - Wybierz strzałkę listy rozwijanej obok pozycji **adres docelowy połączenia**, a następnie wybierz nazwę komputera, z listy rozwijanej.
-   - Wpisz nazwę komputera w **adres docelowy połączenia** pole.
-   
-     ::: moniker range="vs-2017"
+   - Wpisz nazwę komputera w **adres docelowy połączenia** pole i naciśnij klawisz **Enter**.
 
-     > [!NOTE]
-     > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
-
-     ::: moniker-end
+     Sprawdź, czy program Visual Studio dodaje wymaganego portu z nazwą komputera, który jest wyświetlany w formacie:  **\<nazwy komputera zdalnego >: port**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4024 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2019 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).
 
      ::: moniker-end
 
@@ -146,7 +145,7 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
 
 W niektórych przypadkach podczas debugowania w sesji pulpitu zdalnego (usług terminalowych) **dostępne procesy** listy nie będą wyświetlane wszystkie dostępne procesy. Jeśli korzystasz z programu Visual Studio jako użytkownik mający konto użytkownika z ograniczonymi **dostępne procesy** lista nie będzie zawierać procesów uruchomionych w sesji 0. Sesja 0 jest używana dla usług i innych procesów serwera, w tym *w3wp.exe*. Ten problem można rozwiązać, uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu konta administratora lub uruchamiając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z konsoli serwera zamiast sesji usług terminalowych.
 
-Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, uruchamiając `vsjitdebugger.exe -p <ProcessId>` w wierszu polecenia Windows. Można określić przy użyciu identyfikatora procesu *tlist.exe*. Aby uzyskać *tlist.exe*, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [WDK i WinDbg pliki do pobrania](/windows-hardware/drivers/download-the-wdk).
+Jeśli żadna z tych obejść nie jest możliwe, trzecią opcją jest dołączenie do procesu, uruchamiając `vsjitdebugger.exe -p <ProcessId>` w wierszu polecenia Windows. Można określić przy użyciu Identyfikatora procesu *tlist.exe*. Aby uzyskać *tlist.exe*, Pobierz i zainstaluj debugowanie Tools for Windows, dostępne pod adresem [WDK i WinDbg pliki do pobrania](/windows-hardware/drivers/download-the-wdk).
 
 ## <a name="BKMK_reattach"></a> Ponownie Dołącz do procesu
 
@@ -163,7 +162,7 @@ W przypadku niektórych typów aplikacji, takich jak aplikacje Windows aplikacji
 
 Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](/cpp/build/reference/assemblydebug-add-debuggableattribute) — opcja konsolidatora.
 
-Debugowanie skryptu po stronie klienta debugowanie skryptu musi być włączone w przeglądarce. Debugowanie skryptu po stronie klienta w przeglądarce Chrome, wybierz **Webkit** pisania kodu, a także w zależności od typu aplikacji, należy zamknąć wszystkie instancje, Chrome i uruchom przeglądarkę w trybie debugowania (typ `chrome.exe --remote-debugging-port=9222` z wiersza polecenia).
+Debugowanie skryptu po stronie klienta debugowanie skryptu musi być włączone w przeglądarce. Debugowanie skryptu po stronie klienta w przeglądarce Chrome, wybierz **Web kit** pisania kodu, a także w zależności od typu aplikacji, należy zamknąć wszystkie instancje, Chrome i uruchom przeglądarkę w trybie debugowania (typ `chrome.exe --remote-debugging-port=9222` z wiersza polecenia).
 
 Szybkie wybieranie uruchomionego procesu można dołączyć do programu Visual Studio wpisz **Ctrl**+**Alt**+**P**, a następnie wpisz pierwszą literę Nazwa procesu.
 
@@ -172,7 +171,7 @@ Szybkie wybieranie uruchomionego procesu można dołączyć do programu Visual S
 |Zdalne debugowanie platformy ASP.NET 4 lub 4.5 na serwerze IIS|Użyj narzędzi zdalnych i **dołączyć do procesu**|*W3wp.exe*|Zobacz [zdalne debugowanie dla platform ASP.NET na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Platforma ASP.NET Core debugowania zdalnego na serwerze IIS|Użyj narzędzi zdalnych i **dołączyć do procesu**|*dotnet.exe*|Wdrożenie aplikacji, zobacz [publikowania w usługach IIS](https://docs.asp.net/en/latest/publishing/iis.html). Do debugowania, zobacz [zdalnego debugowania programu ASP.NET Core na zdalnym komputerze IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS, dla typów obsługiwanych aplikacji |Użyj **dołączyć do procesu**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, lub *iexplore.exe*|Debugowanie skryptu musi być włączona. Dla programu Chrome, należy uruchomić dla programu Chrome w trybie debugowania i wybierz pozycję **kodu aparatu Webkit** w **dołączyć do** pola.|
-|Debugowanie aplikacji w języku C#, Visual Basic lub C++ na komputerze lokalnym|Użyj jednej [standardowe debugowanie](../debugger/debugger-feature-tour.md) lub **dołączyć do procesu**|*\<Nazwa aplikacji > .exe*|W większości przypadków użyć standardowego debugowania i nie **dołączyć do procesu**.|
+|Debugowanie aplikacji w języku C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania (**F5**) lub **dołączyć do procesu**|*\<appname>.exe*|W większości przypadków użyć standardowego debugowania i nie **dołączyć do procesu**.|
 |Zdalne debugowanie aplikacji pulpitu Windows|Zdalne narzędzia|Brak| Zobacz [zdalne debugowanie aplikacji w języku C# lub Visual Basic](../debugger/remote-debugging-csharp.md) lub [zdalne debugowanie aplikacji w języku C++](../debugger/remote-debugging-cpp.md)|
 |Debugowanie aplikacji platformy ASP.NET na komputerze lokalnym, po uruchomieniu aplikacji bez debugera|Użyj **dołączyć do procesu**|*iiexpress.exe*|Może to być przydatne zapewnić aplikacji obciążenia szybciej, takich jak (na przykład) podczas profilowania. |
 |Debugowanie innych typów aplikacji obsługiwanych w proces serwera|Jeśli serwer jest zdalny, należy użyć narzędzia zdalnej i **dołączyć do procesu**|*Chrome.exe*, *iexplore.exe*, lub inne procesy|Jeśli to konieczne, należy użyć Monitora zasobów ułatwiają identyfikację procesu. Zobacz [zdalne debugowanie](../debugger/remote-debugging.md).|
@@ -219,5 +218,5 @@ W niektórych scenariuszach debugowania lokalnego można debugować w programie 
 ## <a name="see-also"></a>Zobacz także
 
 - [Debugowanie wielu procesów](../debugger/debug-multiple-processes.md)
-- [Debugowanie Just In Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [debugowanie just in time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723256"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366816"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwuj zmienne, za pomocą okna czujki i QuickWatch
 
@@ -91,6 +91,19 @@ Reguły dotyczące oceny wyrażenia w **Obejrzyj** są generalnie takie same jak
 ![Obejrzyj błąd wyrażenia](../debugger/media/watchexpressionerror.png "Obejrzyj błąd wyrażenia")
 
 Koło z ikoną dwóch falistych linii może występować w **Obejrzyj** okna. Ta ikona oznacza, że debuger nie szacuje wyrażenia ze względu na potencjalne zależności między wątkami. Obliczenie kodu wymaga innych wątków w aplikacji do tymczasowego uruchomienia, ale ponieważ jesteś w trybie przerwania, zwykle zatrzymuje wszystkie wątki w swojej aplikacji. Zezwolenie tymczasowego uruchomienia innych wątków może mieć nieoczekiwane działanie dotyczące stanu aplikacji, a debuger może zignorować zdarzenia, takie jak punkty przerwania i wyjątków na te wątki.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>Wyszukiwanie w oknie czujki
+
+Wyszukiwanie słów kluczowych w kolumnach nazwę, wartość i typ **Obejrzyj** okna, korzystając z paska wyszukiwania powyżej każdego okna. Naciśnij klawisz ENTER lub wybierz jedną z strzałki, aby wykonać wyszukiwanie. Aby anulować bieżące wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
+
+Użyj strzałek w lewo i w prawo (Shift + F3 i F3, odpowiednio) do przechodzenia między znaleziono dopasowania.
+
+![Wyszukiwanie w oknie czujki](../debugger/media/ee-search-watch.png "wyszukiwania w oknie czujki")
+
+Aby wyszukiwanie więcej lub mniej dokładne, użyj **wyszukiwania bardziej** listy rozwijanej w górnej części **Obejrzyj** okno, aby wybrać, ile poziomów w głąb chcesz wyszukać w zagnieżdżonych obiektów. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Odświeżanie wartości czujki
 

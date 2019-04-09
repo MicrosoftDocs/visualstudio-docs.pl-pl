@@ -3,19 +3,19 @@ title: Zarządzaj projektami aplikacji języka Python
 description: Projekty w programie Visual Studio Zarządzanie zależnościami między plikami i złożoność relacji w aplikacji.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355529"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366227"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty Python w programie Visual Studio
 
@@ -82,7 +82,7 @@ Poniższa tabela zawiera podsumowanie szablonów dostępnych w programie Visual 
 | [**Z istniejącego kodu języka Python**](#create-project-from-existing-files) | Tworzy projekt programu Visual Studio na podstawie istniejącego kodu języka Python w strukturze folderu.  |
 | **Aplikację w języku Python** | Struktura podstawowego projektu dla nowych aplikacji w języku Python z plikiem źródłowym pojedynczy, pusta. Domyślnie, projekt jest uruchamiany w interpretera konsoli w domyślnej globalnej środowisko, w którym można zmienić [przypisywanie innego środowiska](selecting-a-python-environment-for-a-project.md). |
 | [**Usługa w chmurze platformy Azure**](python-azure-cloud-service-project-template.md) | Projekt służący do usługi w chmurze platformy Azure napisane w języku Python. |
-| [**Projekty sieci Web**](python-web-application-project-templates.md) | Projekty dla aplikacji sieci web oparte na różnych platformach, takich jak Bottle, Django i Flask. |
+| [**projekty sieci Web**](python-web-application-project-templates.md) | Projekty dla aplikacji sieci web oparte na różnych platformach, takich jak Bottle, Django i Flask. |
 | **Aplikace v Ironpythonu** | Podobne do szablonu aplikacji w języku Python, ale używa IronPython przez domyślne włączenie .NET międzyoperacyjności i trybu mieszanego debugowania za pomocą języków .NET. |
 | **Aplikace WPF v Ironpythonu** | Struktury projektu, IronPython przy użyciu plików systemu Windows Presentation Foundation XAML dla interfejsu użytkownika aplikacji. Program Visual Studio udostępnia Projektant języka XAML, związanym z kodem może być napisana w języku Python, a aplikacja jest uruchamiana bez wyświetlania konsoli. |
 | **Strony sieci Web w technologii Silverlight v Ironpythonu** | Projekt IronPython, który działa w przeglądarce, za pomocą programu Silverlight. Kod Python aplikacji znajduje się na stronie sieci web jako skrypt. Tag skryptu standardowy ściąga kodu JavaScript, która inicjuje IronPython działają w ramach programu Silverlight, z którego kodu w języku Python mogą wchodzić w interakcje z DOM. |

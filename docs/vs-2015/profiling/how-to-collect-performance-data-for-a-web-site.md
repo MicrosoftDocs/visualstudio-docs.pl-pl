@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766155"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366734"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
   
    - Dla witryny sieci Web opartą na plikach, wpisz ścieżkę, taką jak pliku / / /**c:\WebSites\MySite\default.aspx**. Powoduje to, że [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji znajdującym się w c:\webSites\MySite do profilowania i strony http://localhost:nnnn/MySite/default.aspx mają być uruchamiane w programie Internet Explorer, aby rozpocząć sesję.  
   
-   - Dla zewnętrznych witryn, które chcesz zbierać danych dotyczących JavaScript, wpisz adres URL, na przykład http://www.contoso.com.  
+   - Dla zewnętrznych witryn, które chcesz zbierać danych dotyczących JavaScript, wpisz adres URL, na przykład http:\//www.contoso.com.  
   
      Aby uzyskać więcej informacji, Wyświetl strony właściwości dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] docelowy plik binarny.  
   
@@ -103,7 +103,7 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
      Program profilujący generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] głównego okna.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Omówienie](../profiling/overviews-performance-tools.md)   
+ [Omówienia](../profiling/overviews-performance-tools.md)   
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
+ [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
  [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

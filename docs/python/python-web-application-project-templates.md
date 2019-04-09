@@ -3,19 +3,19 @@ title: Szablony aplikacji sieci Web dla języka Python
 description: Program Visual Studio udostępnia szablony dla aplikacji sieci web języka Python za pomocą platformy Bottle, Flask i Django Obsługa obejmuje konfiguracje debugowania i publikowania w usłudze Azure App Service.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957903"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366591"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -43,7 +43,7 @@ Wszystkie **puste \<framework > Projekt sieci Web** szablony tworzenia projektu 
 | --- | --- |
 | **Projekt sieci Web Bottle puste** | Generuje minimalną aplikację w *app.py* ze stroną główną dla `/` i `/hello/<name>` strona, która zwraca `<name>` przy użyciu szablonu stronę wbudowanych bardzo krótki. |
 | **Projekt puste Django sieci Web** | Generuje projekt Django przy użyciu struktury lokacji Django core, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Blank Flask Web Project** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupa aplikacji sieci Web
 
@@ -53,7 +53,7 @@ Wszystkie  **\<Framework > Projekt sieci Web** szablony utworzyć początkową a
 | --- | --- |
 | **Projekt sieci Web Bottle** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folder i obsłużony przez kod w *app.py*. Routing dla poszczególnych stron znajduje się w *routes.py*i *widoków* folder zawiera szablony stron.|
 | **Projekt sieci Web Django** | Generuje projekt Django i aplikacji Django przy użyciu trzech stron, obsługę uwierzytelniania i bazy danych SQLite (ale nie modeli danych). Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| **Projekt sieci Web Flask** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folderu. Możesz pisać kod w *views.py* obsługuje routing za pomocą szablonów stron przy użyciu aparatu Jinja zawarte w *szablony* folderu. *Runserver.py* plik zawiera kod startowy. Zobacz [Dowiedz się, Flask kroku 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| **Flask Web Project** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folderu. Możesz pisać kod w *views.py* obsługuje routing za pomocą szablonów stron przy użyciu aparatu Jinja zawarte w *szablony* folderu. *Runserver.py* plik zawiera kod startowy. Zobacz [Dowiedz się, Flask kroku 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
 | **Projekt sieci Web Flask/Jade** | Generuje przy użyciu tej samej aplikacji jako **projektu sieci Web Flask** szablon, ale przy użyciu rozszerzenia Jade dla Jinja aparatu tworzenia szablonów. |
 
 ### <a name="polls-group"></a>Grupa sond
@@ -113,7 +113,7 @@ Jakakolwiek zmienna środowisku lub właściwości projektu można określić pr
 
 - **Debugowanie polecenia serwera** grupy:
   - **Polecenie**: `bottle` (moduł)
-  - **argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Opcja nie jest zalecana w przypadku korzystania z programu Visual Studio do debugowania.
 

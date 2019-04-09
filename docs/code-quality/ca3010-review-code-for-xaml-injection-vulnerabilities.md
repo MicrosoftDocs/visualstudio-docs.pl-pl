@@ -1,5 +1,5 @@
 ---
-title: 'CA3010: Przejrzyj kod XAML iniekcją'
+title: 'CA3010: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018897"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365019"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Przejrzyj kod XAML iniekcją
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Przegląd kodu pod kątem luk umożliwiających wstrzyknięcie kodu XAML
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018897"
 
 ## <a name="cause"></a>Przyczyna
 
-Żądania HTTP potencjalnie niezaufanych danych wejściowych przypada <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> metoda obciążenia.
+Żądania HTTP potencjalnie niezaufanych danych wejściowych przypada <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> metoda obciążenia.
 
 ## <a name="rule-description"></a>Opis reguły
 

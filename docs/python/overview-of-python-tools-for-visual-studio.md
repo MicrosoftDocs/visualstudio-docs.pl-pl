@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze środowisko IDE języka Python na Windows (znany także jako narzędzi Python Tools for Visual Studio, PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195011"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366879"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -53,7 +53,7 @@ Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie jęz
 
 Informacje dodatkowe:
 
-- [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
+- [Zarządzanie środowiskami języka Python](managing-python-environments-in-visual-studio.md)
 - [Dokumentacja środowiska Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
@@ -98,7 +98,7 @@ Program Visual Studio pomaga uprościć projekt wzrostem wraz z upływem czasu. 
 
 Szablony projektów i elementów zautomatyzować proces konfigurowania różnych typów projektów i plików, co cenny czas i zwalniania możesz zarządzać szczegóły skomplikowanych i obarczone ryzykiem błędów. Program Visual Studio udostępnia szablony dla sieci web, Azure, do nauki o danych, konsolę i innych rodzajów projektów, w tym szablony dla plików, takie jak klasy, testy jednostkowe, konfiguracji sieci web platformy Azure, HTML i nawet aplikacji Django języka Python.
 
-[![Szablony projektów i elementów języka Python w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Python szablonów projektów i elementów w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Informacje dodatkowe:
 
@@ -130,7 +130,7 @@ Informacje dodatkowe:
 
 Profilowanie przedstawiono, jak jest zużywany czas w aplikacji. Visual Studio obsługuje profilowanie przy użyciu opartych na CPython interpreterów i z możliwością porównania wydajności między różnych tras profilowania.
 
-[![Visual Studio wyniki profiler dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VVisual Studio profiler wyniki dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Informacje dodatkowe:
 
@@ -156,15 +156,15 @@ Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 
-**PYTANIA I ODPOWIEDZI. Czy obsługi języka Python w programie Visual Studio dla komputerów Mac?**
+**PYTANIE: Czy obsługi języka Python w programie Visual Studio dla komputerów Mac?**
 
 A. W tej chwili nie możesz nawet głosować na żądanie, ale [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Programu Visual Studio dla komputerów Mac](/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowania, który ją obsługuje. W międzyczasie, Visual Studio Code w Windows, Mac i Linux [dobrze działa z języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
 
-**PYTANIA I ODPOWIEDZI. Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
+**PYTANIE: Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
 
 A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for-application-development/), powiązań dla języka Python, znane jako [PySide (oficjalna powiązania)](https://wiki.qt.io/PySide) (Zobacz też [PySide pliki do pobrania](https://download.qt.io/official_releases/pyside/.)) i [ PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
 
-**PYTANIA I ODPOWIEDZI. Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
+**PYTANIE: Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
 
 A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Jednak społeczności Python dostarczonych różne sposoby, aby utworzyć pliki wykonywalne, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 

@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Krok 0 (wymagania wstępne instalacji) core Przewodnik po pracy za pomocą języka Python w programie Visual Studio.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a67b471a798a1a7aaf35b713f22d60d98f54dc5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355097"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367020"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalowanie obsługi języka Python w programie Visual Studio
 

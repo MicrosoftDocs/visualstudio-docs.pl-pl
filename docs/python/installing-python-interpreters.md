@@ -3,19 +3,19 @@ title: Wybierz i zainstaluj interpretery języka Python
 description: Pełna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje, gdzie można znaleźć własnych instalatorów.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194181"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365226"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
@@ -62,8 +62,8 @@ Po ten proces zapewnia, że wpisy rejestru, które identyfikują interpreter lok
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
-- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Zarządzanie środowiskami języka Python](managing-python-environments-in-visual-studio.md)
+- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)
 - [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

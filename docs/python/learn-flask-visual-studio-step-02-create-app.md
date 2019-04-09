@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności kroki tworzenia aplikacji i korzystanie z widoków i szablonów.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912805"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366604"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2. Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
 

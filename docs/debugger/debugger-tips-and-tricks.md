@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526363"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366305"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -106,7 +106,7 @@ Wizualizator ciągu mogą pomóc Ci dowiedzieć się, czy ciąg jest źle sformu
 
 ![Wizualizator ciągu JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Kilka innych typów takich jak WPF obiekty, które są wyświetlane w oknach debugera można również otworzyć wizualizatorów.
+Kilka innych typów takich jak obiekty DataSet i DataTable, które są wyświetlane w oknach debugera można również otworzyć wbudowanego wizualizatora.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Wejdź do kodu dotyczące wyjątków obsłużonych
 

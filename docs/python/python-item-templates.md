@@ -3,19 +3,19 @@ title: Szablony elementów dla projektów języka Python
 description: Uzyskać listę szablonów elementów projektu języka Python, które są dostępne za pośrednictwem Dodaj > Nowy element okna dialogowego, w programie Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924698"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366461"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
@@ -38,7 +38,7 @@ W poniższej tabeli opisano skrótowo efekt każdego szablonu elementu w obrębi
 | **Arkusz stylów** | A *.css* plik zawierający stylu pusty `body`. |
 | **Plik tekstowy** | Pusta *.txt* pliku. |
 | **Aplikacja Django 1.9**<br/>**Aplikacja Django 1.4** | Folder o nazwie aplikacji, która zawiera podstawowe pliki dla aplikacji Django, jak wyjaśniono w [Dowiedz się, Django w programie Visual Studio, krok 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) dla Django 1.9. Dla Django 1.4 *migracje* folderze *admin.py* pliku i *apps.py* pliku nie są uwzględniane. |
-| **Okno WPF v Ironpythonu** | Okno WPF, składający się z dwóch plików side-by-side: *.xaml* pliku, który definiuje `<Window>` z pustym `<Grid>` elementu, a skojarzone *PY* pliku, który ładuje, przy użyciu pliku XAML `wpf` biblioteki. Zazwyczaj używane w ramach projektu utworzonych za pomocą jednego z szablonów projektów Ironpythonu. Zobacz [Zarządzanie projektów języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates). |
+| **IronPython WPF Window** | Okno WPF, składający się z dwóch plików side-by-side: *.xaml* pliku, który definiuje `<Window>` z pustym `<Grid>` elementu, a skojarzone *PY* pliku, który ładuje, przy użyciu pliku XAML `wpf` biblioteki. Zazwyczaj używane w ramach projektu utworzonych za pomocą jednego z szablonów projektów Ironpythonu. Zobacz [Zarządzanie projektów języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Pliki obsługi roli sieci Web** | A *bin* folderu w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślny skrypt wdrożenia i *web.config* pliku dla ról sieci web w usłudze Azure Cloud Services. Szablon zawiera również *readme.html* pliku, który zawiera szczegółowe informacje. |
 | **Pliki obsługi roli procesu roboczego** | A *bin* folderu w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślne wdrożenie, a następnie uruchom skrypt, wraz z *web.config* pliku dla ról procesów roboczych w usłudze Azure Cloud Services. Szablon zawiera również *readme.html* pliku, który zawiera szczegółowe informacje. |
 | **Web.config Pro Azure (FastCGI)** | A *web.config* pliku, który zawiera wpisy dla aplikacji przy użyciu [WSGI](https://wsgi.readthedocs.io/en/latest/) obiektu do obsługi połączeń przychodzących. Ten plik zazwyczaj jest wdrażana w katalogu głównym serwera sieci web usług IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
