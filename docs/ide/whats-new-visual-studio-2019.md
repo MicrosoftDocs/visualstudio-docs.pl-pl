@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018158"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477544"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -34,10 +34,10 @@ Za pomocą programu Visual Studio 2019 r uzyskasz najlepsze w swojej klasie narz
 Poniżej przedstawiono podsumowanie wysokiego poziomu what's new:
 
 * **[Twórz](#develop)**: Zachowanie, ukierunkowanych i produktywności z lepszą wydajność, oczyszczania błyskawiczne kodu i lepsze wyniki wyszukiwania.
-* **[Współpraca](#collaborate)**: Korzystaj naturalne współpracę dzięki chmurze przepływu pracy w czasie rzeczywistym, edytowanie i debugowanie, i przeglądów kodu po prawej stronie w programie Visual Studio.
+* **[Współpraca](#collaborate)**: Korzystaj naturalne współpracy przy użyciu Git pierwszego przepływu pracy w czasie rzeczywistym, edytowanie i debugowanie, i przeglądów kodu po prawej stronie w programie Visual Studio.
 * **[Debugowanie](#debug)**: Wyróżnij i przejdź do określonej wartości, optymalizacja zużycia pamięci i automatycznych migawek wykonywania aplikacji.
 
-Aby uzyskać pełną listę wszystkich elementów, co nowego w tej wersji, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes/). 
+Aby uzyskać pełną listę wszystkich elementów, co nowego w tej wersji, zobacz [informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Programowanie
 
@@ -55,11 +55,11 @@ Nowej logiki Wyszukiwanie rozmyte znajduje się coś, czego potrzebujesz, niezal
 
 ### <a name="refactorings"></a>Operacje refaktoryzacji
 
-Nowe C# refaktoryzacje ułatwiają organizowanie kodu. Po prostu wywołać refaktoryzacji, naciskając klawisz **Ctrl +.** i wybierając akcję, którą chcesz wykonać. 
+Dostępnych jest wiele nowych i bardzo przydatna refaktoryzacji w C# , ułatwiają organizowanie kodu. One są wyświetlane jako sugestie w żarówki i obejmują akcje, takie jak przeniesienie członków do interfejsu lub klasy bazowej, dostosowując obszary nazw, aby dopasować strukturę folderów, należy przekonwertować pętli foreach do zapytań Linq i nie tylko.
 
    ![Animacja środowiska refaktoryzacji w Visual Studio 2019 r.](media/vs-2019/refactorings.gif)
 
-Dodaliśmy wiele nowych refaktoryzacji, w tym taki, który umożliwia opakować parametrów metody.
+Po prostu wywołać refaktoryzacji, naciskając klawisz **Ctrl +.** i wybierając akcję, którą chcesz wykonać.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Początkowo obsługiwane tylko C# kiedy możemy najpierw podglądu rozszerzenia 
 
 A jeśli używasz C#, dodaliśmy także możliwość uczenia modelu niestandardowego na własny kod.
 
-Aby uzyskać więcej informacji na temat IntelliCode zobacz [więcej kodu, przewiń w mniej z programu Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) wpis w blogu. 
+Aby uzyskać więcej informacji na temat IntelliCode zobacz [więcej kodu, przewiń w mniej z programu Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) wpis w blogu.
 
 ### <a name="code-cleanup"></a>Oczyszczanie kodu
 
@@ -142,7 +142,7 @@ Firma Microsoft została podjęta punkty przerwania danych w języku C++ wyklucz
 
    ![Animacji, który zawiera punkty przerwania danych debugowania w Visual Studio 2019 r](media/vs-2019/debug-data-breakpoints.gif)
 
-Tak czy jesteś kodowania w C++ i .NET Core, punkty przerwania danych może być jest dobrą alternatywą gracze współczesnego rynku regularne punkty przerwania. Punkty przerwania danych są również doskonałe rozwiązanie dla scenariuszy, takich jak wyszukiwanie, gdzie jest modyfikowana obiektów globalnych lub dodawany lub usuwany z listy. 
+Tak czy jesteś kodowania w C++ i .NET Core, punkty przerwania danych może być jest dobrą alternatywą gracze współczesnego rynku regularne punkty przerwania. Punkty przerwania danych są również doskonałe rozwiązanie dla scenariuszy, takich jak wyszukiwanie, gdzie jest modyfikowana obiektów globalnych lub dodawany lub usuwany z listy.
 
 Ponadto jeśli dewelopera języka C++, który opracowuje dużych aplikacji Visual Studio 2019 podejścia biznesowego uczyniło symbole poza proc, dzięki czemu można debugować te aplikacje bez którym wystąpiły problemy związane z pamięcią.
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f18715be45a41518da691143045f7a41b3f518a7
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788650"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477529"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
@@ -37,6 +37,10 @@ Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony.
 1. Otwórz Instalator, wybierz polecenie **więcej**, a następnie wybierz **naprawy**.
 
     ![Napraw program Visual Studio z poziomu Instalatora programu Visual Studio](media/repair-visual-studio.png "naprawić program Visual Studio z poziomu Instalatora programu Visual Studio")
+    
+   > [!NOTE]
+   > Naprawa programu Visual Studio spowoduje zresetowanie środowiska. Lokalne dostosowania, takie jak rozszerzenia poszczególnych użytkowników zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile zostaną usunięte. Zsynchronizowane ustawienia takie jak motywy, kolory, klawiszy zostaną przywrócone.
+   >
 
    > [!TIP]
    > **Naprawy** opcja jest dostępna tylko w przypadku zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz **naprawy** opcji jest szansa, że wybrano **więcej** w wersji, który jest wymieniony w Instalatorze programu Visual Studio jako "Dostępne" zamiast "Zainstalowano".
@@ -61,6 +65,10 @@ Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony.
 1. W oknie Instalatora poszukaj wersji programu Visual Studio, który został zainstalowany. Następnie wybierz pozycję **więcej**, a następnie wybierz **naprawy**.
 
      ![Repair Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Repair Visual Studio 2019")
+
+   > [!NOTE]
+   > Naprawa programu Visual Studio spowoduje zresetowanie środowiska. Lokalne dostosowania, takie jak rozszerzenia poszczególnych użytkowników zainstalowane bez podniesienia uprawnień, ustawienia użytkownika i profile zostaną usunięte. Zsynchronizowane ustawienia takie jak motywy, kolory, klawiszy zostaną przywrócone.
+   >
 
    > [!TIP]
    > **Naprawy** opcja jest dostępna tylko w przypadku zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz **naprawy** opcji jest szansa, że wybrano **więcej** w wersji, który jest wymieniony w Instalatorze programu Visual Studio jako "Dostępne" zamiast "Zainstalowano".

@@ -1,7 +1,7 @@
 ---
 title: Automatyczne stosowanie kluczy produktów
 description: Dowiedz się, jak programowo stosowanie kluczy produktów podczas wdrażania programu Visual Studio.
-ms.date: 03/30/2019
+ms.date: 04/10/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fada7bb074275bc71b7553375a50100620324aa2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 51cd23fad1aa6964e0d27c20218a13a824ce318d
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856233"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477570"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 
@@ -57,10 +57,10 @@ Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można ak
 
 ::: moniker range="vs-2019"
 
- W poniższym przykładzie pokazano wiersza polecenia dotyczące stosowania licencji programu Visual Studio 2019 r Enterprise, która ma MPC 08860, klucz produktu `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, założono domyślna lokalizacja instalacji:
+ W poniższym przykładzie pokazano wiersza polecenia dotyczące stosowania licencji programu Visual Studio 2019 r Enterprise, która ma MPC 09260, klucz produktu `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, założono domyślna lokalizacja instalacji:
 
  ```cmd
- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+ "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
  ```
 ::: moniker-end
 
@@ -80,9 +80,8 @@ Zainstalowana wersja programu Visual Studio za pomocą klucza produktu można ak
 
 | Wersja programu Visual Studio                | MPC   |
 |--------------------------------------|-------|
-| Visual Studio Enterprise 2019        | 08860 |
-| Visual Studio Professional 2019      | 08862 |
-| Visual Studio Test Professional 2019 | 08866 |
+| Visual Studio Enterprise 2019        | 09260 |
+| Visual Studio Professional 2019      | 09262 |
 
 ::: moniker-end
 
