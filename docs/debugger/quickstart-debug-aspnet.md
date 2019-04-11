@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed1f50dac33251f1daaad47bd8c2a64688025e32
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790553"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504227"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
 
@@ -138,4 +138,4 @@ Aby uzyskać więcej informacji na temat korzystania z edit-and-continue i ogran
 W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
-> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+> [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

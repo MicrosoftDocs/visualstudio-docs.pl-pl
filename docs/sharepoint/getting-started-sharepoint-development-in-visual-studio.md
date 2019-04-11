@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869021"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504110"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Uzyskaj wprowadzenie (rozwój SharePoint w programie Visual Studio)
   Ta sekcja pomoże Ci rozpocząć pracę z usługą [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umożliwiające tworzenie rozwiązań programu SharePoint, które wykorzystują [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -39,10 +39,11 @@ ms.locfileid: "57869021"
 |Temat|Opis|
 |-----------|-----------------|
 |[Opracowywanie rozwiązań SharePoint](../sharepoint/developing-sharepoint-solutions.md)|W tym artykule opisano programowanie SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Konfigurowanie środowiska ogólne ustawienia projektowania dla programu SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|W tym artykule opisano instalacje wymagane do tworzenia rozwiązania programu SharePoint|
 |[Tworzenie kolumn witryn, typów zawartości oraz list dla SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|W tym artykule opisano sposób tworzenia kolumn niestandardowych witryn, typów zawartości oraz list dla SharePoint za pomocą narzędzi Visual Studio tools dla programu SharePoint.|
 |[Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|W tym artykule opisano przepływ pracy projektowania i tworzenia.|
 |[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|W tym artykule opisano, jak łączyć się z modelami łączności danych biznesowych (BDC), aby integrować dane biznesowe.|
-|[Creatie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Zawiera opis składników Web Part i stron składników Web Part, bloków konstrukcyjnych stron w witrynie programu SharePoint.|
+|[Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Zawiera opis składników Web Part i stron składników Web Part, bloków konstrukcyjnych stron w witrynie programu SharePoint.|
 |[Tworzenie stron aplikacji dla programu SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Opisuje sposób projektowania stron aplikacji za pomocą projektanta.|
 |[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|W tym artykule opisano, jak utworzyć niestandardowe formanty wielokrotnego użytku dla strony aplikacji i składników Web Part w programie SharePoint.|
 |[Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|W tym temacie opisano przechodzenie przez składniki witryny programu SharePoint w taki sposób, w oknie narzędzia programu Visual Studio.|

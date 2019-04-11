@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366708"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504331"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
@@ -147,6 +147,28 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Ustaw punkty przerwania danych (.NET Core w wersji 3.0 lub nowszej)
+
+Punkty przerwania danych przerwać wykonywanie, gdy właściwość określonego obiektu.
+
+**Aby ustawić punkt przerwania danych**
+
+1. W projekcie platformy .NET Core rozpocząć debugowanie i poczekaj, aż do osiągnięcia punktu przerwania.
+
+2. W **Autos**, **Obejrzyj**, lub **lokalne** okna, kliknij prawym przyciskiem myszy właściwość i wybierz **Przerwij w przypadku zmiany wartości** w menu kontekstowym.
+
+    ![Zarządzany punkt przerwania danych](../debugger/media/managed-data-breakpoint.png "zarządzany punkt przerwania danych")
+
+Punkty przerwania danych w programie .NET Core, nie będzie działać dla:
+
+- Właściwości, które nie są rozwijane w etykietce narzędzia, zmienne lokalne, automatyczne, lub okno czujki
+- Zmienne statyczne
+- Klasy z atrybutu DebuggerTypeProxy
+- Pola wewnątrz struktury 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Ustaw punkty przerwania danych (tylko w natywnym kodzie C++)
 
@@ -156,7 +178,7 @@ Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [meto
 
 1.  W projekcie w języku C++ rozpocząć debugowanie i zaczekaj, aż do osiągnięcia punktu przerwania. Na **debugowania** menu, wybierz **nowego punktu przerwania** > **punkt przerwania danych**
 
-    Możesz również wybrać **New** > **punkt przerwania danych** w **punktów przerwania** okna.
+    Możesz również wybrać **New** > **punkt przerwania danych** w **punktów przerwania** okna lub kliknij prawym przyciskiem myszy element w **Autos**, **Obejrzyj**, lub **lokalne** okna, a następnie wybierz pozycję **Przerwij w przypadku zmiany wartości**w menu kontekstowym.
 
 2.  W **adres** wpisz adres pamięci lub wyrażenie, które daje w wyniku adres pamięci. Na przykład wpisz `&avar` przerwanie, kiedy zawartość zmiennej `avar` zmiany.
 

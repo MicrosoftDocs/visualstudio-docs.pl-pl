@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d6b575e88349c71f1234950d4efaf77d23518c1
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477505"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504071"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>Konwertowanie pętli foreach na składnię LINQ
 
@@ -47,7 +47,7 @@ Ta Refaktoryzacja mają zastosowanie do:
    
    ![Wynik formularza wywołania LINQ](media/convert-foreach-to-LINQ-callform-result.png)
    
- ### <a name="sample-code"></a>Przykładowy kod
+### <a name="sample-code"></a>Przykładowy kod
 
 ```csharp
 using System.Collections.Generic;

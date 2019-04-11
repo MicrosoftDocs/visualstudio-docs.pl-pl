@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790540"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504305"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -100,7 +100,7 @@ Używasz programu Visual Studio do tworzenia aplikacji i gier dla systemu macOS,
 
 ## <a name="debug-test-and-improve-your-code"></a>Debugowanie, testowanie i ulepszaj swój kod
 
-Podczas pisania kodu, musisz go uruchomić i przetestować go dla błędów i wydajności. Najnowocześniejsze system debugowania programu Visual Studio pozwala debugować możesz kod działający w projekcie lokalnym, na zdalnym urządzeniu lub na [emulator urządzenia](../cross-platform/visual-studio-emulator-for-android.md). Można przejść przez kod w jednej instrukcji w danym momencie i sprawdzanie zmiennych, zgodnie z rzeczywistym. Możesz ustawić punkty przerwania, które są osiągane tylko wtedy, gdy określony warunek ma wartość true. Debugowanie opcjami można zarządzać w edytorze kodu, dzięki czemu nie trzeba pozostawić swój kod. Aby uzyskać więcej informacji o debugowaniu w programie Visual Studio, zobacz [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md).
+Podczas pisania kodu, musisz go uruchomić i przetestować go dla błędów i wydajności. Najnowocześniejsze system debugowania programu Visual Studio pozwala debugować możesz kod działający w projekcie lokalnym, na zdalnym urządzeniu lub na [emulator urządzenia](../cross-platform/visual-studio-emulator-for-android.md). Można przejść przez kod w jednej instrukcji w danym momencie i sprawdzanie zmiennych, zgodnie z rzeczywistym. Możesz ustawić punkty przerwania, które są osiągane tylko wtedy, gdy określony warunek ma wartość true. Debugowanie opcjami można zarządzać w edytorze kodu, dzięki czemu nie trzeba pozostawić swój kod. Aby uzyskać więcej informacji o debugowaniu w programie Visual Studio, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
 
 Aby dowiedzieć się więcej na temat zwiększania wydajności aplikacji, wyewidencjonowania się programu Visual Studio [profilowania](../profiling/profiling-feature-tour.md) funkcji.
 
@@ -140,4 +140,4 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 
 - [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [What's new in Visual Studio 2019 r.](../ide/whats-new-visual-studio-2019.md)
+- [Co nowego w programie Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

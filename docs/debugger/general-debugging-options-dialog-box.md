@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526545"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504422"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
 
@@ -117,7 +117,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 **Użyj trybu zgodności zarządzanej**: Zastępuje domyślny aparat starszą wersją, aby włączyć te scenariusze debugowania:
 
-- Używasz języka .NET Framework innego niż C#, Visual Basic lub F# zapewniający własny Ewaluator wyrażeń (to obejmuje C + +/ CLI).
+- Używasz języka .NET Framework innego niż C#, Visual Basic lub F# zapewniający własny Ewaluator wyrażeń (dotyczy to również C++sposób niezamierzony).
 
 - Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.
 
@@ -150,7 +150,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 
 - **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)**:   Pobierz ostrzeżenia o nieodświeżonym kodzie.
 
-**Pokaż Uruchom do kliknięcia przycisku w edytorze podczas debugowania**: Gdy ta opcja jest zaznaczona, [uruchamianie do kliknięcia](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) przycisk będzie wyświetlany podczas debugowania.
+**Pokaż Uruchom do kliknięcia przycisku w edytorze podczas debugowania**: Gdy ta opcja jest zaznaczona, [uruchamianie do kliknięcia](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) przycisk będzie wyświetlany podczas debugowania.
 
 **Automatycznie Zamknij konsolę, po zatrzymaniu debugowania**: Zawiera informacje dla programu Visual Studio, aby zamknąć konsolę na końcu sesji debugowania.
 
@@ -172,5 +172,5 @@ Jeśli używasz starszej wersji programu Visual Studio może istnieć pewne doda
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../debugger/index.md)
-- [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+- [Debugowanie w Visual Studio](../debugger/index.md)
+- [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

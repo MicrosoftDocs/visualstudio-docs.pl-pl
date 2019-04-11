@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 041dc4aa5107dab157eaf5b4bc8306b90c3b116c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789409"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504084"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
 
@@ -186,4 +186,4 @@ Aby uzyskać więcej informacji na temat korzystania z edit-and-continue i ogran
 W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
-> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+> [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
