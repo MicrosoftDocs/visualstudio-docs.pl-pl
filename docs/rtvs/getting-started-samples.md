@@ -81,7 +81,7 @@ Poniższe porównanie pokazuje, że MLS oraz MRO z MKL ma znacznie lepszą wydaj
 
 ![Porównanie MLS i MRO z MKL r i MRO bez MKL](media/samples-speed-comparison.png)
 
-Techniczne porównanie R MRO i MLS, zapoznaj się z [Lixun Zhang szczegółowe omówienie](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) tematu.
+Techniczne porównanie R MRO i MLS, zapoznaj się z [Lixun Zhang szczegółowe omówienie](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) tematu.
 
 Poniższa ilustracja następnie porównuje czas w sekundach stosowanego w budynku, modele regresji logistycznej do prognozowania opóźnień lotów więcej niż 15 minut.  Upłynęło czasu używany w języku R z sieci CRAN gwałtowny wzrost podczas zwiększenie niewielką liczbę wierszy, podczas gdy MLS zwiększa tylko przez około dwa razy. Aby uzyskać szczegółowe informacje o tym testów porównawczych, zapoznaj się *testy porównawcze/rxGlm_benchmark. R* przykład.
 
