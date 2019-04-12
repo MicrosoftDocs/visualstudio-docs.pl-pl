@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b02ecf1b4b03bfc8b664af898fdbedcb27c80bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504409"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 
@@ -83,8 +83,8 @@ Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć debugowanie
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w programie Visual Studio](../../debugger/debugger-feature-tour.md)
-- [Ustawienia projektu dla konfiguracji debugowania w języku C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)
+- [Ustawienia projektu dla konfiguracji debugowania w C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Ustawienia projektu dla konfiguracji debugowania w Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Instrukcje: Debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

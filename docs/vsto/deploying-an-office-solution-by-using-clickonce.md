@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863932"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504435"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.
@@ -33,9 +33,9 @@ ms.locfileid: "54863932"
 
 - [Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)](#Put)
 
-- [Umieszczanie dokumentu rozwiązania na serwerze, na którym uruchomiony jest SharePoint (tylko dostosowania na poziomie dokumentu)](#SharePoint)
+- [Umieszczanie dokumentu rozwiązania na serwerze z programem SharePoint (tylko dostosowania na poziomie dokumentu)](#SharePoint)
 
-- [Tworzenie niestandardowego Instalatora](#Custom)
+- [Tworzenie niestandardowego instalatora](#Custom)
 
 - [Publikowanie aktualizacji](#Update)
 
@@ -139,7 +139,7 @@ ms.locfileid: "54863932"
  Jeśli wdrażasz dostosowywania poziomie dokumentu i chcesz umieścić dokument do folderu na komputerze użytkownika lub udostępnić dokument w witrynie programu SharePoint, upewnij się, że pakiet Office ufa lokalizacji dokumentu. Zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Pomaganie użytkownikom w instalowaniu rozwiązania
- Użytkownicy mogą zainstalować rozwiązanie przez uruchomienie programu instalacyjnego, otwarcie manifestu wdrażania lub — w przypadku dostosowania na poziomie dokumentu — bezpośrednie otwarcie dokumentu. Według najlepszych praktyk rozwiązanie należy instalować przy użyciu programu instalacyjnego. Pozostałe dwie metody nie gwarantują, że wstępnie wymagane oprogramowanie jest zainstalowane. Jeśli użytkownicy chcą otwierać dokument z lokalizacji instalacji, muszą ją dodać do listy zaufanych lokalizacji w Centrum zaufania w aplikacji pakietu Office.
+ Użytkownicy mogą zainstalować rozwiązanie przez uruchomienie programu instalacyjnego, otwarcie manifestu wdrażania lub podczas dostosowywania poziomie dokumentu, bezpośrednie otwarcie dokumentu. Według najlepszych praktyk rozwiązanie należy instalować przy użyciu programu instalacyjnego. Pozostałe dwie metody nie gwarantują, że wstępnie wymagane oprogramowanie jest zainstalowane. Jeśli użytkownicy chcą otwierać dokument z lokalizacji instalacji, muszą ją dodać do listy zaufanych lokalizacji w Centrum zaufania w aplikacji pakietu Office.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otwieranie dokumentu z dostosowaniem na poziomie dokumentu
  Użytkownicy mogą otwierać dokument zawierający dostosowanie na poziomie dokumentu bezpośrednio z lokalizacji instalacji albo przez skopiowanie go swoich lokalnych komputerów, a następnie otwarcie kopii.
@@ -190,7 +190,7 @@ ms.locfileid: "54863932"
 ##  <a name="Put"></a> Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)
  Tworząc akcję powdrożeniową, możesz skopiować dokumentu rozwiązania na komputerze użytkownika końcowego dla nich. Dzięki temu użytkownik nie musi ręcznie kopiować dokumentu z lokalizacji instalacji do swojego komputera po zainstalowaniu rozwiązania. Należy utworzyć klasę definiującą akcję powdrożeniową, kompilacji i opublikować rozwiązanie, zmodyfikować manifest aplikacji i ponownie podpisać manifesty aplikacji i wdrażania.
 
- W poniższych procedurach założono, że nazwa projektu jest **ExcelWorkbook** i publikowania do rozwiązania **C:\publish** katalogu na komputerze.
+ W poniższych procedurach założono, że nazwa projektu jest **ExcelWorkbook** i opublikować rozwiązanie do utworzonego folderu o nazwie **C:\publish** na tym komputerze.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Tworzenie klasy definiującej akcję powdrożeniową
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863932"
 
 ### <a name="modify-the-application-manifest"></a>Modyfikowanie manifestu aplikacji
 
-1.  Otwórz **c:\publish** katalogu przy użyciu **Eksploratora plików**.
+1.  Otwórz katalog rozwiązania **c:\publish**, za pomocą **Eksploratora plików**.
 
 2.  Otwórz **pliki aplikacji** folder, a następnie otwórz folder odpowiadający najnowszej opublikowanej wersji rozwiązania.
 
@@ -336,7 +336,7 @@ ms.locfileid: "54863932"
              Gdy użytkownicy otwierają dokument z poziomu witryny programu SharePoint, następuje otwarcie dokumentu i zainstalowanie dostosowania. Użytkownicy mogą wtedy skopiować dokument na swoje komputery. Dostosowanie będzie nadal działać, ponieważ właściwości w dokumencie wskazują jego lokalizację sieciową.
 
 ##  <a name="Custom"></a> Tworzenie niestandardowego Instalatora
- Można utworzyć niestandardowego Instalatora dla rozwiązania pakietu Office, a nie za pomocą programu instalacyjnego, który jest tworzony automatycznie podczas publikowania rozwiązania. W niestandardowym instalatorze instalacja może być inicjowana przez skrypt logowania albo plik wsadowy może instalować rozwiązanie bez udziału użytkownika. Scenariusze te działają najlepiej, jeśli na komputerach użytkowników końcowych są już zainstalowane wstępnie wymagane składniki.
+ Można utworzyć niestandardowego Instalatora dla rozwiązania pakietu Office, a nie za pomocą programu instalacyjnego, który jest tworzony automatycznie podczas publikowania rozwiązania. Na przykład można użyć znaku w skrypcie aby rozpocząć instalację lub wystarczą plik wsadowy może instalować rozwiązanie bez udziału użytkownika. Scenariusze te działają najlepiej, jeśli na komputerach użytkowników końcowych są już zainstalowane wstępnie wymagane składniki.
 
  W ramach procesu niestandardowej instalacji, należy wywołać narzędzie Instalatora dla rozwiązań pakietu Office (*VSTOInstaller.exe*), która jest domyślnie instalowana w następującej lokalizacji:
 
@@ -359,8 +359,8 @@ ms.locfileid: "54863932"
 |Kod błędu|Definicja|
 |----------------|----------------|
 |0|Rozwiązanie zostało pomyślnie zainstalowane lub odinstalowane albo została wyświetlona Pomoc narzędzia VSTOInstaller.|
-|-100|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowa lub została użyta więcej niż raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller /?" lub zobacz [utworzyć niestandardowego Instalatora dla rozwiązania ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
-|-101|Co najmniej jedna opcja wiersza polecenia jest nieprawidłowy. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|
+|-100|Co najmniej jedna opcja wiersza polecenia są nieprawidłowe lub nie ustawiono więcej niż jeden raz. Aby uzyskać więcej informacji, wpisz "vstoinstaller /?" lub zobacz [utworzyć niestandardowego Instalatora dla rozwiązania ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-101|Co najmniej jedna opcja wiersza polecenia są nieprawidłowe. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|
 |-200|Identyfikator URI manifestu wdrażania jest nieprawidłowy. Aby uzyskać więcej informacji, wpisz „vstoinstaller /?”.|
 |-201|Nie można zainstalować rozwiązania, ponieważ manifest wdrażania jest nieprawidłowy. Zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).|
 |-202|Nie można zainstalować rozwiązania, ponieważ Visual Studio Tools for Office części manifestu aplikacji nie jest prawidłowa. Zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).|
