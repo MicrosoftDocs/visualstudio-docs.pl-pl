@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355192"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537507"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generowanie z użycia w programie Visual Studio
 
@@ -22,20 +22,20 @@ Dotyczy to generowanie kodu:
 
 - C#
 
-**Co:** Umożliwia to natychmiastowe dodanie odpowiednie Importy lub [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) kopiowania i wklejony kodu.
+**Co:** Umożliwia to natychmiastowe dodanie odpowiednie Importy lub [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) kopiowania i wklejony kod.
 
-**Kiedy:** Jest to powszechną praktyką, aby skopiować i wkleić kod z różnych miejsc w projekcie lub innych źródeł kodu. Tej szybkiej akcji analizuje Brak Import dla kopiowania i wklejony kod, a następnie wyświetla je dodać.
+**Kiedy:** Jest to powszechną praktyką było skopiować kod z różnych miejsc w projekcie lub innych źródeł, a następnie wklej je do nowego kodu. Tej szybkiej akcji znajduje brakujące importuje oświadczenia dotyczące kopiowania i wklejony kod, a następnie wyświetla je dodać.
 
-**Dlaczego:** Automatyczne dodanie odpowiednie Importy, użytkownik nie musi ręcznie kopiować potrzebną `using` instrukcji.
+**Dlaczego:** Szybka akcja automatycznie doda odpowiednie Importy, dlatego nie musisz ręcznie skopiować `using` instrukcji, których potrzebuje Twój kod.
 
 ## <a name="generate-usings-refactoring"></a>Generowanie refaktoryzacji deklaracje Using
 
-1. Skopiuj i Wklej kod z innego pliku bez uwzględniania niezbędne `using` instrukcji. Ten błąd jest teraz powiązany poprawki kodu, który dodaje brakujący `using` instrukcji.
+1. Skopiuj kod z plikiem i wklej go do nowej bez uwzględniania niezbędne `using` instrukcji. Błąd wynikowe towarzyszy poprawki kodu, który dodaje brakujący `using` instrukcji.
 
     > [!NOTE] 
-    > Tę sugestię musi być włączona w programie **Narzędzia > Opcje > Edytor tekstu > C# > Zaawansowane > przy użyciu dyrektywy**.
+    > Należy włączyć tę sugestię w **Narzędzia > Opcje > Edytor tekstu > C# > Zaawansowane > przy użyciu dyrektywy**.
 
-2. Naciśnij klawisz **Ctrl**+**.** Aby otworzyć **szybkie akcje i Refaktoryzacje** menu. 
+2. Wybierz klawisze Ctrl +. Aby otworzyć **szybkie akcje i Refaktoryzacje** menu.
 
     ![Generowanie deklaracji using](media/generate-using-codefix.png)
 

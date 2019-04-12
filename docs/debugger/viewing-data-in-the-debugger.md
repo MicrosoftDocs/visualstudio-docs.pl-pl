@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710490"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537494"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Tworzenie niestandardowych widoków danych w debugerze programu Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "56710490"
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Tworzenie niestandardowych widoków danych w oknach zmiennych i etykietki danych
 
- Wiele [okna debugera](../debugger/debugger-windows.md), takich jak **Autos** i **Obejrzyj** systemu windows, pozwalają na sprawdzanie zmiennych. Można dostosować sposób natywnych typów, zarządzanych obiektów i własne typy nie są wyświetlane w oknach zmiennych debugera, a w [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych widoków obiektów macierzystych](../debugger/create-custom-views-of-native-objects.md) i [Tworzenie niestandardowych widoków obiektów](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Wiele [okna debugera](../debugger/debugger-windows.md), takich jak **Autos** i **Obejrzyj** systemu windows, pozwalają na sprawdzanie zmiennych. Można dostosować sposób C++ typów zarządzanych obiektów i własne typy są wyświetlane w oknach zmiennych debugera, a w [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych widoków C++ obiektów](../debugger/create-custom-views-of-native-objects.md) i [Tworzenie niestandardowych widoków obiektów](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Tworzenie niestandardowych wizualizatorów
 

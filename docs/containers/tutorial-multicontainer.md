@@ -4,16 +4,14 @@ author: ghogen
 description: Dowiedz się, jak używać wielu kontenerów za pomocą narzędzia Docker Compose
 ms.author: ghogen
 ms.date: 02/21/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: ee0b30fcbd25ada25941efa12083c662eff83f78
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: e6087b5ca7682ce03291b34907e2f6d119110858
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856669"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537551"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Utwórz aplikację obsługującą wiele kontenerów przy użyciu narzędzia Docker Compose
 

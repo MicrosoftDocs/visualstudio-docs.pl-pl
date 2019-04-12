@@ -1,5 +1,5 @@
 ---
-title: Tworzenie niestandardowych widoków obiektów macierzystych
+title: Tworzenie niestandardowych widoków C++ obiektów
 description: Użyć struktury Natvis pozwala dostosować sposób, że program Visual Studio Wyświetla typy natywne w debugerze
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428807"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537580"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków obiektów macierzystych w debugerze
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze
 
 Visual Studio *Natvis* framework dostosowuje sposób, w typach natywnych są wyświetlane w oknach zmiennych debugera, takie jak **lokalne** i **Obejrzyj** systemu windows w **DataTips**. Wizualizacje Natvis sprawić, że typy, które możesz utworzyć bardziej widoczne podczas debugowania.
 
@@ -165,7 +165,7 @@ Gdy debuger napotka błędy we wpisie wizualizacji, ignoruje je. Jego Wyświetla
 
 **Aby włączyć Diagnostyka Natvis:**
 
-- W obszarze **narzędzia** > **opcje** (lub **debugowania** > **opcje**) > **debugowania**  >  **Okno danych wyjściowych**ustaw **komunikaty diagnostyczne plików Natvis (tylko C++)** do **błąd**, **ostrzeżenie**, lub  **Pełne**, a następnie wybierz pozycję **OK**.
+- W obszarze **narzędzia** > **opcje** (lub **debugowania** > **opcje**) > **debugowania**  >  **Okno danych wyjściowych**ustaw **komunikaty diagnostyczne plików Natvis (C++ tylko)** do **błąd**, **ostrzeżenie** , lub **pełne**, a następnie wybierz pozycję **OK**.
 
 Błędy są wyświetlane w **dane wyjściowe** okna.
 

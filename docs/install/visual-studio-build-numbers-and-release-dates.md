@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/10/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cfd8d9346f9e9d0df5376a35b90c6bbcfb24603c
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477557"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537653"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "59477557"
 
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2017 do daty.
 
-| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Wydanie | 2 kwietnia 2019 r. | 15.9.28307.586 |
 | 15.9.10 | Wydanie | 25 marca 2019 r. | 15.9.28307.557 |
@@ -191,8 +191,9 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visual Studio 2019 r, do daty.
 
-| **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
+| **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 r. | 16.1.28809.33 |
 | 16.0.1 | Wydanie | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.1 | Wersja zapoznawcza 1 | 9 kwietnia 2019 r. | 16.0.28803.156 |
 | 16.0.0 | Wydanie | 2 kwietnia 2019 r. | 16.0.28729.10 |
@@ -225,7 +226,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Rytm wydawania wersji programu Visual Studio](/visualstudio/productinfo/release-rhythm/)
-* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Rytm wydawania programu Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)

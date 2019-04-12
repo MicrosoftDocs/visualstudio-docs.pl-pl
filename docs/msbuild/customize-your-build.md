@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e14cfe5947356c68df137144556e01b94673b145
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610336"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537614"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Dostosowywanie kompilacji (C#, Visual Basic)
+# <a name="customize-your-build-c-f-visual-basic"></a>Dostosowywanie kompilacji (C#, F#, Visual Basic)
 
 Proces kompilacji projektów MSBuild, które używają standardowych (importowanie *Microsoft.Common.props* i *Microsoft.Common.targets*) ma kilka punkty zaczepienia rozszerzalności, których można użyć w celu dostosowania kompilacji proces.
 

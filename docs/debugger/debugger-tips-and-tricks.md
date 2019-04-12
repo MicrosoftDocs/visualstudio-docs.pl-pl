@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366305"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537562"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -52,6 +52,10 @@ Jeśli jest trudne lub czasochłonne ponownie utworzyć określonego stanu w swo
     ![Warunkowego punktu przerwania](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Jeśli interesuje Cię innego typu warunku, wybierz opcję **filtru** zamiast **wyrażenia warunkowego** w **ustawienia punktu przerwania** okno dialogowe, a następnie postępuj zgodnie z Porady dotyczące filtru.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Konfigurowanie danych do wyświetlenia w debugerze
+
+Dla C#, Visual Basic i C++ (C++tylko kod w sposób niezamierzony), można polecić debugerowi, jakie informacje mają przy użyciu [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atrybutu. Dla C++ kodu, możesz zrobić tego samego using [wizualizacji Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonania
 

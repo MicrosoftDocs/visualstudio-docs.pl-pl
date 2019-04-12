@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z atrybutu DebuggerDisplay | Dokumentacja firmy Microsoft
+title: Wyświetlanie niestandardowych informacji o użyciu DebuggerDisplay | Dokumentacja firmy Microsoft
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680191"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537640"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Korzystanie z atrybutu DebuggerDisplay (C#, Visual Basic F#, C + +/ CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Polecić debugerowi, co pokazano przy użyciu atrybutu DebuggerDisplay (C#, Visual Basic F#, C++sposób niezamierzony)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.
 
 `DebuggerDisplay` Atrybut ma jeden argument, czyli ciąg tekstowy, który ma być wyświetlana w kolumnie wartość dla wystąpienia typu. Ten ciąg może zawierać nawiasy klamrowe (`{` i `}`). Tekst w parę nawiasów klamrowych jest oceniane jako pola, właściwości lub metody.
@@ -32,7 +32,7 @@ Czy tym niejawne ocenia debuger `ToString()` wywołanie zależy od ustawień uż
 > Jeśli **pokazywanie nieprzetworzonej struktury obiektów w oknach zmiennych** zaznaczono pole wyboru w **narzędzia/Opcje / Debugowanie** okno dialogowe, a następnie `DebuggerDisplay` atrybut jest ignorowany.
 
 > [!NOTE]
-> Dla kodu natywnego, atrybut ten jest obsługiwany tylko w języku C + +/ CLI, kod.
+> Dla kodu natywnego, ten atrybut jest obsługiwany tylko C++sposób niezamierzony kodu.
 
 W poniższej tabeli przedstawiono niektóre możliwości wykorzystania `DebuggerDisplay` atrybutu i przykładowe dane wyjściowe.
 

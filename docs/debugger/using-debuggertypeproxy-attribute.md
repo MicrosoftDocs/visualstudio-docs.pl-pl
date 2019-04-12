@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z atrybutu DebuggerTypeProxy | Dokumentacja firmy Microsoft
+title: Wyświetlanie typów niestandardowych przy użyciu DebuggerTypeProxy | Dokumentacja firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717497"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537546"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Korzystanie z atrybutu DebuggerTypeProxy (C#, Visual Basic, C + +/ CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Polecić debugerowi, jakiego typu do wyświetlenia, korzystanie z atrybutu DebuggerTypeProxy (C#, Visual Basic C++sposób niezamierzony)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> Określa serwer proxy lub podstawiony dla typu i zmiany, które jej typ jest wyświetlana w oknach debugera. Po wyświetleniu zmiennej, która ma serwer proxy serwera proxy oznacza oryginalnego typu w **wyświetlić**. W oknie zmiennych debugera zostaną wyświetlone tylko publiczne składowe typ serwera proxy. Prywatne elementy członkowskie nie są wyświetlane.
 
@@ -35,7 +35,7 @@ Ten atrybut można zastosować do:
 - Zestawy
 
 > [!NOTE]
-> Dla kodu natywnego, atrybut ten jest obsługiwany tylko w języku C + +/ CLI, kod.
+> Dla kodu natywnego, ten atrybut jest obsługiwany tylko C++sposób niezamierzony kodu.
 
 Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.
 
