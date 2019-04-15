@@ -101,7 +101,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 **Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome, krawędzi i programu Internet Explorer)**: Włącza debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
 
-**Włącz narzędzia deweloperskie przeglądarki Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**: Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
+**Włącz narzędzia deweloperskie przeglądarki Microsoft Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**: Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
 
 **Włącz starsze debugera języka JavaScript w przeglądarce Chrome dla platformy ASP.NET**: Włącza starsze debugera skryptów JavaScript w przeglądarce Chrome dla aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane.
 

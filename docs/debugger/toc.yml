@@ -202,7 +202,7 @@ items:
     - name: Tworzenie niestandardowych widoków danych
       href: viewing-data-in-the-debugger.md
       items:
-      - name: Tworzenie niestandardowych widoków obiektów macierzystych
+      - name: Tworzenie niestandardowych widoków obiektów C++
         href: create-custom-views-of-native-objects.md
         items:
         - name: Zgodność niestandardowego wizualizatora języka Visual C++
@@ -210,10 +210,10 @@ items:
       - name: Tworzenie niestandardowych widoków obiektów zarządzanych
         href: create-custom-views-of-dot-managed-objects.md
         items:
-        - name: Używanie atrybutu DebuggerTypeProxy
-          href: using-debuggertypeproxy-attribute.md
-        - name: Używanie atrybutu DebuggerDisplay
+        - name: Określanie zawartości do wyświetlenia w debugerze
           href: using-the-debuggerdisplay-attribute.md
+        - name: Określanie typu do wyświetlenia w debugerze
+          href: using-debuggertypeproxy-attribute.md
       - name: Tworzenie niestandardowych wizualizatorów danych
         href: create-custom-visualizers-of-data.md
         items:
@@ -844,9 +844,9 @@ items:
   items:
   - name: Co nowego w debugerze programu Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 6e0d832e0adace66495a1edfd19fd7b5a9f9c866
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: ae2dc7baa536b03c6507cb4f7064e74126d1d93e
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366072"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537718"
