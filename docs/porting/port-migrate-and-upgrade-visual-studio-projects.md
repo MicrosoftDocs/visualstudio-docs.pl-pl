@@ -1,7 +1,7 @@
 ---
 title: Przenoszenie, migrowanie i uaktualnianie projektów
 description: Odwołanie obsługi w programie Visual Studio 2017 dla projektów utworzone we wcześniejszych wersjach programu Visual Studio oraz jak Visual Studio decyduje, zajdzie potrzeba migracji projektu.
-ms.date: 04/12/2019
+ms.date: 04/16/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9fb925e323a7008b367a4c6b913f7231b5ab98dd
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537666"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584587"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Odwołanie do migracji i uaktualniania projektu dla programu Visual Studio 
 
@@ -154,7 +154,7 @@ Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapozn
 | Silverlight | Projekty Silverlight nie jest obsługiwane w programie Visual Studio 2019 r. Aby obsługiwać aplikacje Silverlight, należy nadal używać programu Visual Studio 2015. |
 | SQL — Redgate | SQL zmiany automatyzacji Core (nazywanymi wcześniej ReadyRoll Core), SQL Prompt Core i SQL Search firmy Redgate już jest dostarczany w Instalatorze programu Visual Studio.<br/><br/>Aby kontynuować, te funkcje przy użyciu programu Visual Studio 2017. W programie Visual Studio 2019 r możesz uaktualnić do płatnej produktów SQL zmiany automatyzacji i SQL Prompt, które są dostępne w firmy Redgate SQL Toolbelt.|
 | SQL Server Reporting Services i SQL Server Analysis Services (SSRS, narzędzi SSDT, usług SSAS, MSA) | Dla tych typów projektu jest oferowana w ramach dwóch rozszerzeń w galerii Visual Studio:  [Dostawcy Microsoft Analysis Services projektów modelowania](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) i [usług Microsoft Reporting Services projektów](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Obsługa narzędzi SSDT jest również z obciążeniem przechowywanie i przetwarzanie danych w Visual Studio 2019 r. Aby uzyskać więcej informacji, zobacz [Pobierz i zainstaluj program SQL Server Data Tools (SSDT) dla programu Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) strony. |
-| SQL Server Integration Services (SSIS) | Obsługa programu Visual Studio 2019 będzie dostępna wkrótce. Aby uzyskać więcej informacji, zobacz [Pobierz i zainstaluj program SQL Server Data Tools (SSDT) dla programu Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) strony, a [programu SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) blog zespołu. |
+| SQL Server Integration Services (SSIS) | Obsługa programu Visual Studio 2019 r jest dostępna. Aby uzyskać więcej informacji, zobacz [Pobierz i zainstaluj program SQL Server Data Tools (SSDT) dla programu Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) stronie [programu SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) blogu zespołu i [programu SQL Server Projekty usługi integracji](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) strony w witrynie Marketplace. |
 | Rozszerzenie okna testu | W programie Visual Studio 2019 usunięto część interfejsów API okna testowego, które wcześniej były oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane. Interfejsy API w powszechnie widoczne zostały oznaczone jako przestarzałe w programie Visual Studio 2017 pozwala maintainers rozszerzenia wczesnego ostrzegania. Do naszej wiedzy kilka rozszerzeń miały zależności na tych interfejsów API. Aby uzyskać więcej informacji i aktualizacji, wyświetlanie [pełną listę przestarzałe interfejsy API, które są powiązane z testem](https://github.com/Microsoft/vstest/issues/1830). Jeśli ma to wpływ na dany scenariusz, Daj nam znać na [społeczności deweloperów](https://developercommunity.visualstudio.com). |
 | Visual C++ | Do pracy w projektach, które zostały utworzone we wcześniejszych wersjach programu Visual Studio do programu Visual Studio 2010, można użyć programu Visual Studio 2019 r. Przy pierwszym otwarciu projektu, istnieje możliwość uaktualnienia do najnowszej kompilatora i narzędzi, lub aby kontynuować korzystanie z oryginalnych. Jeśli zdecydujesz się na dalsze korzystanie z oryginalnych, Visual Studio 2019 nie powoduje modyfikacji pliku projektu i korzysta z zestawu narzędzi z wcześniejszej instalacji programu Visual Studio w celu skompilowania projektu. Utrzymywanie oryginalnego oznacza Opcje możesz nadal otworzyć projektu w pierwotnej wersji programu Visual Studio w razie potrzeby. Aby uzyskać więcej informacji, zobacz [Użyj natywnej wielowersyjności kodu w programie Visual Studio do kompilacji starych projektów](/cpp/porting/use-native-multi-targeting). |
 | Program Visual Studio Extensibility/VSIX | Projekty z MinimumVersion 14.0 lub mniej są aktualizowane do deklarowania 15.0 MinimumVersion, która uniemożliwia otwarcie we wcześniejszych wersjach programu Visual Studio projekt. Aby zezwolić na projekt otworzyć we wcześniejszych wersjach, ustaw MinimumVersion `$(VisualStudioVersion)`. Zobacz też [jak: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |

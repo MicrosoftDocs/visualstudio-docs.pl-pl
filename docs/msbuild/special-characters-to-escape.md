@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632449"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584327"
 ---
 # <a name="special-characters-to-escape"></a>Znaki specjalne wyjścia
 Tylko wtedy, gdy mają one specjalnego znaczenia w kontekście, w którym są one używane, należy użyć znaków ucieczki znaków specjalnych. Na przykład znak gwiazdki (*) jest znakiem specjalnym, tylko w atrybutach "Include" i "Wyklucz" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem>. We wszystkich innych przypadkach gwiazdka jest traktowany jako literał gwiazdki. Gdy jest konieczne ucieczki gwiazdki wszędzie, gdzie w plikach projektu, to to samo dotyczy żadnych szkód.
@@ -37,7 +37,7 @@ Tylko wtedy, gdy mają one specjalnego znaczenia w kontekście, w którym są on
 |@|Znak używany do odwoływać się do elementu listy.|
 |(|Nawiasem otwierającym używane na listach.|
 |)|Nawiasu zamykającego używane na listach.|
-|`| Apostrof (lub znacznika) używane w warunkach i inne wyrażenia.|
+|\`| Apostrof (lub znacznika) używane w warunkach i inne wyrażenia.|
 |;|Średnik jest separatorem listy.|
 |?|Znak zapytania, symbolu wieloznacznego w opisie specyfikacji pliku, w sekcji uwzględniania/wykluczania elementów.|
 |*|Gwiazdka jest symbolem wieloznacznym podczas opisywania specyfikacji pliku, w sekcji uwzględniania/wykluczania elementów.|

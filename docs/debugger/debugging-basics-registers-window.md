@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685056"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584522"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informacje o oknie rejestrów w programie Visual Studio (C#, C++, Visual Basic F#)
 
@@ -47,7 +47,23 @@ ms.locfileid: "56685056"
  **Rejestruje** okna umożliwia wykonywanie więcej niż tylko widok zawartości rejestru. Podczas pracy w trybie przerwania w kodzie natywnym, można kliknąć zawartości rejestru i przejdź do edycji wartości. To nie jest coś, co należy zrobić w losowo wybranym momencie. Chyba że rozumiesz, rejestru, który edytujesz i dane, które zawiera, w wyniku edycji nieostrożnej prawdopodobnie awarię programu lub niepożądane skutki. Niestety szczegółowy opis zestawów rejestru dla różnych procesorów firmy Intel i zgodnego z Intel wykraczają daleko poza zakres to krótkie wprowadzenie.
 
 ## <a name="register-groups"></a>Grup rejestru
- Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Jeśli możesz kliknąć prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z potrzebami.
+
+Aby zwiększyć czytelność, **rejestruje** okna organizuje rejestrów w grupach. Jeśli możesz kliknąć prawym przyciskiem myszy **rejestruje** okna, pojawi się menu podręczne zawierające listę grup, które można wyświetlić lub ukryć zgodnie z potrzebami.
+
+## <a name="register-flags"></a>Zarejestruj flagi
+
+Dla procesorów Intel x86 zobaczysz następujące flagi w **rejestruje** okna. Podczas sesji debugowania można również edytować tych flag.
+
+|Flaga|Ustaw wartość|
+|-|-|
+|przepełnienia|OV = 1|
+|Kierunek|UP = 1|
+|Przerwania|EI = 1|
+|Logowanie|PL = 1|
+|Zero|ZR = 1|
+|Przeniesienie pomocnicze|AC = 1|
+|Parzystość|PE = 1|
+|Przeniesienie|CY = 1|
 
 ## <a name="see-also"></a>Zobacz też
 - [Instrukcje: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)

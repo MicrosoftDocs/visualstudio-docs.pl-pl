@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897741"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584405"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
 
@@ -416,7 +416,7 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
  dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folderu do typu elementu zdjęcia, podczas gdy
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folder i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).
@@ -428,7 +428,7 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 <Photos Include="images\*.gif" />
 ```
 
- Tworzy typ elementu o nazwie zdjęcie zawierający wszystkie pliki w *obraz* folder z rozszerzeniem pliku albo *JPEG* lub *.gif*. Jest to równoważne następujący wiersz:
+ Tworzy typ elementu o nazwie zdjęcie zawierający wszystkie pliki w *obrazów* folder z rozszerzeniem pliku albo *JPEG* lub *.gif*. Jest to równoważne następujący wiersz:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />

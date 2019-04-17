@@ -1,7 +1,7 @@
 ---
 title: Pisanie wizualizatora w C# | Dokumentacja firmy Microsoft
 ms.custom: seodec18
-ms.date: 08/01/2018
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323374"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584535"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: Pisanie wizualizatora w języku C\#
 W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu języka C#. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu okna komunikatu Windows forms. Ten Wizualizator prostego ciągu nie jest szczególnie przydatne w sobie, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej użyteczny, wizualizatorów dla innych typów danych.
@@ -35,15 +35,16 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 ### <a name="to-create-a-class-library-project"></a>Aby utworzyć projekt biblioteki klas
 
-1. Na **pliku** menu, wybierz **nowy > Projekt**.
+1. Utwórz nowy projekt biblioteki klas.
 
-2. W **nowy projekt** dialogowego **Visual C#**, a następnie wybierz pozycję **.NET Standard**.
+    ::: moniker range=">=vs-2019"
+    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **biblioteki klas**, wybierz **szablony**, następnie wybierz **Utwórz nową bibliotekę klas (.NET Standard)**. W oknie dialogowym wybierz **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** dialogowego **Visual C#** , wybierz **.NET Standard**, a następnie w środkowym okienku wybierz **biblioteki klas (. NET Standard)**.
+    ::: moniker-end
 
-3. W środkowym okienku wybierz **biblioteki klas**.
-
-4. W **nazwa** wpisz odpowiednią nazwę biblioteki klas, takie jak MyFirstVisualizer.
-
-5. Kliknij przycisk **OK**.
+2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyFirstVisualizer`, a następnie kliknij przycisk **Utwórz** lub **OK**.
 
    Po utworzeniu biblioteki klas, należy dodać odwołanie do Microsoft.VisualStudio.DebuggerVisualizers.DLL tak, aby można było używać klas zdefiniowanych istnieje. Przed dodaniem odwołania, jednak należy zmienić niektóre klasy tak, że mają one nadawać opisowe nazwy.
 
@@ -58,7 +59,9 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-4. W **Dodaj odwołanie** dialogowym **.NET** kartę, wybrać Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. W **Dodaj odwołanie** dialogowym **Przeglądaj** zaznacz **Przeglądaj** i Znajdź Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+
+    Można znaleźć biblioteki DLL w  *\<Visual Studio katalog instalacji > \Common7\IDE\PublicAssemblies* podkatalogu katalogu instalacyjnego programu Visual Studio.
 
 5. Kliknij przycisk **OK**.
 
@@ -102,7 +105,9 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-2. W **Dodaj odwołanie** dialogowym **.NET** karty, wybierz pozycję System.Windows.Forms.DLL.
+2. W **Dodaj odwołanie** dialogowym **Przeglądaj** zaznacz **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
+
+    Można znaleźć biblioteki DLL w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
 3. Kliknij przycisk **OK**.
 
@@ -162,13 +167,16 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Aby dodać projekt aplikacji konsoli w rozwiązaniu
 
-1. Na **pliku** menu, wybierz **Dodaj** a następnie kliknij przycisk **nowy projekt**.
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie kliknij przycisk **nowy projekt**.
 
-2. W **Dodaj nowy projekt** okna dialogowego wybierz **Visual C#** > **pulpitu Windows**, a następnie wybierz **aplikację Konsolową**.
+    ::: moniker range=">=vs-2019"
+    W polu wyszukiwania wpisz **aplikacja konsolowa**, wybierz **szablony**, następnie wybierz **Utwórz nową aplikację konsoli (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (. Program .NET Framework)**.
+    ::: moniker-end
 
-3. W **nazwa** wpisz nazwę opisową dla aplikacji konsoli, takie jak `MyTestConsole`.
-
-4. Kliknij przycisk **OK**.
+2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyTestConsole`, a następnie kliknij przycisk **Utwórz** lub **OK**.
 
    Teraz musisz dodać niezbędne odwołania tak MyTestConsole może wywołać MyFirstVisualizer.
 
@@ -176,7 +184,7 @@ Wykonaj zadania poniżej, aby utworzyć wizualizatora.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole** i wybierz polecenie **Dodaj odwołanie** w menu skrótów.
 
-2. W **Dodaj odwołanie** okno dialogowe **.NET** kartę, wybrać Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+2. W **Dodaj odwołanie** okno dialogowe **Przeglądaj** kartę, wybrać Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
 3. Kliknij przycisk **OK**.
 

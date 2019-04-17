@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28194f007066c1fd39e3a26dd4a8c0e99e118059
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857232"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584418"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Tworzenie aplikacji Vue.js przy użyciu narzędzia Node.js dla programu Visual Studio
 
@@ -96,6 +96,9 @@ Aby zainstalować moduł npm vue — interfejs wiersza polecenia, otwórz wiersz
 1. Przejdź do wiersza polecenia i zmień bieżący katalog na folder główny projektu.
 
 1. Typ `vue init webpack ClientApp` i wykonaj kroki po wyświetleniu monitu o odpowiedzieć dodatkowe pytania.
+
+    > [!NOTE]
+    > Aby uzyskać *.vue* plików, należy użyć WebPack lub podobne struktury przy użyciu modułu ładującego, aby wykonać konwersję. TypeScript i programu Visual Studio nie wiedzieć, jak skompilować *.vue* plików. Dotyczy to także tworzenie pakietów; TypeScript nie wie, jak konwertować ES2015 modułów (oznacza to, że `import` i `export` instrukcji) do pojedynczego final *js* plik do załadowania w przeglądarce. Ponownie WebPack jest najlepszym wyborem. Można dostarczać ten proces z poziomu programu Visual Studio, korzystając z programu MSBuild, należy uruchomić z szablonu programu Visual Studio. Obecnie nie ma ASP.NET szablonu dla Vue.js rozwoju w pakiecie.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modyfikowanie konfiguracji webpack do utworzonych plików wyjściowych do wwwroot
 

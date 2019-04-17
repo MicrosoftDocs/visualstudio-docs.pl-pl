@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610609"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584561"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.
@@ -54,7 +54,7 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 | CscToolPath | Ścieżka *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilatora. |
 | CustomBeforeMicrosoftCommonTargets | Nazwa pliku projektu lub pliku obiektów docelowych, który ma być importowane automatycznie przed zaimportowaniem wspólnych obiektów docelowych. |
 | DebugSymbols | Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **- p: DebugSymbols = false** w wierszu poleceń wyłącza Generowanie z bazy danych programu (*.pdb*) pliki symboli. |
-| DebugType | Definiuje poziom informacji debugowania, które mają być generowane. Prawidłowe wartości to "full", "pdbonly" i "none". |
+| DebugType | Definiuje poziom informacji debugowania, które mają być generowane. Prawidłowe wartości to "full", "" pdbonly"," "przenośne", "embedded" i "none". |
 | DefineConstants | Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane przy użyciu następującej składni:<br /><br /> *symbol1 = wartość1; Symbol2 = wartość2*<br /><br /> Właściwość jest równoważna `/define` przełącznika kompilatora. |
 | DefineDebug | Wartość logiczna wskazująca, czy chcesz, aby stała DEBUG była zdefiniowana. |
 | DefineTrace | Wartość logiczna wskazująca, czy chcesz, aby stała TRACE była zdefiniowana. |

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982912"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584301"
 ---
 # <a name="whats-new-in-msbuild-15"></a>What's new in MSBuild 15
 
@@ -24,7 +24,7 @@ Program MSBuild jest teraz dostępny jako część [zestawu .NET Core SDK](https
 
  Program MSBuild został zainstalowany w folderze w każdej wersji programu Visual Studio. Na przykład *\Microsoft Visual Studio\2017\Enterprise\MSBuild C:\Program Files (x86)*. Można również użyć następujące modułu programu PowerShell, aby zlokalizować program MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- Program MSBuild nie jest już zainstalowane w globalnej pamięci podręcznej zestawów. Aby programowo odwołują się do programu MSBuild, należy użyć pakietów NuGet.
+ Program MSBuild nie jest już zainstalowane w globalnej pamięci podręcznej zestawów. Aby programowo odwołują się do programu MSBuild, należy użyć pakietów NuGet. Aby uzyskać więcej informacji, zobacz [aktualizowanie istniejącej aplikacji dla programu MSBuild 15.0](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Zmienionymi właściwościami
 

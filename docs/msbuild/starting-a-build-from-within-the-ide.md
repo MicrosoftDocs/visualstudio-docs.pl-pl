@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641dd7485e97a7833c2483d73271a8169dbc2054
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617746"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584340"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Uruchom kompilację z poziomu środowiska IDE
 Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym artykule opisano przyczyny tego wymagania i opisano procedurę.
 
 ## <a name="parallel-builds-and-threads"></a>Kompilacje równoległe i wątki
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia równoległe kompilacje, które wymagają mediacji dotyczącej dostępu do wspólnych zasobów. Systemy projektu mogą kompilować asynchronicznie, ale takie systemy nie mogą wywołać funkcji kompilacji z wywołania tworzy kopię jest dostarczane do Menadżera kompilacji.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia równoległe kompilacje, które wymagają mediacji dotyczącej dostępu do wspólnych zasobów. Systemy projektu mogą kompilować asynchronicznie, ale takie systemy nie mogą wywołać funkcji kompilacji z rozmów.
 
  Jeśli system projektu modyfikuje zmienne środowiskowe, jego musi ustawić NodeAffinity kompilacji outofproc. Wymaganie to oznacza, że nie można używać obiektów hosta, ponieważ wymagają one węzła w proc.
 

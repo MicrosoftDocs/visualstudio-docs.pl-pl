@@ -1,18 +1,18 @@
-# [Visual Studio for Mac](index.yml)
-# [Przewodnik po środowisku IDE](ide-tour.md)
+# [Visual Studio dla komputerów Mac](index.yml)
+# [Samouczek środowiska IDE](ide-tour.md)
 
 # [Instalacja](installation.md)
-## [Instalacja i używanie za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
-## [Instalowanie wersji zapoznawczej](install-preview.md)
-## [Aktualizowanie](update.md)
-## [Odinstaluj](uninstall.md)
+## [Instalowanie i używanie programu za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Instalowanie wcześniejszej wersji](install-preview.md)
+## [Aktualizacja](update.md)
+## [Dezinstalacja](uninstall.md)
 
 # [Konta użytkowników](user-accounts.md)
 ## [Logowanie](signing-in.md)
 ## [Włączanie subskrypcji](enable-subscription.md)
 
 # [Dostosowywanie środowiska IDE](customizing-the-ide.md)
-## [Rozszerzanie programu Visual Studio dla komputerów Mac](extending-visual-studio-mac.md)
+## [Rozszerzenie programu Visual Studio dla komputerów Mac](extending-visual-studio-mac.md)
 
 
 # [Projekty i rozwiązania](projects-and-solutions.md)
@@ -20,7 +20,7 @@
 ## [Dodawanie i usuwanie elementów projektu](add-and-remove-project-items.md)
 ## [Zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md)
 ## [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md)
-### [Przewodnik — dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
+### [Przewodnik: Dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
 ## [Zarządzanie zasobami aplikacji](managing-app-resources.md)
 ## [Instrukcje: Otwieranie wielu rozwiązań lub wystąpień](open-multiple-solutions.md)
 
@@ -29,9 +29,9 @@
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
 ## [Komentarze do zadań](task-comments.md)
-## [Fragmenty kodu](snippets.md)
+## [Wstawki kodu](snippets.md)
 ## [Zaznaczenie blokowe](block-selection.md)
-## [Motywy edytora](editor-themes.md)
+## [Edytor motywów](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
 ## [Domyślne skróty klawiaturowe](keyboard-shortcuts.md)
 
@@ -40,11 +40,11 @@
 
 # [Kompilowanie i tworzenie](compiling-and-building.md)
 ## [Kompilowanie oraz oczyszczanie projektów i rozwiązań](building-and-cleaning-projects-and-solutions.md)
-## [Akcje kompilacji](build-actions.md)
+## [Akcja kompilacji](build-actions.md)
 ## [Instrukcje: Ustawianie wielu projektów startowych](set-startup-projects.md)
-## [Dostosowywanie systemu kompilacji](customizing-build-system.md)
+## [Dostosowywanie procesu kompilacji](customizing-build-system.md)
 ## [Konfiguracje](configurations.md)
-### [Tworzenie i edytowanie konfiguracji](create-and-edit-configurations.md)
+### [Tworzenie i edycja konfiguracji](create-and-edit-configurations.md)
 
 # [Kontrola wersji](version-control.md)
 ## [Kontrola wersji TF](tf-version-control.md)
@@ -68,8 +68,8 @@
 ## [Projektowanie gier w środowisku Unity](unity-tools.md)
 ### [Konfiguracja](setup-vsmac-tools-unity.md)
 ### [Używanie narzędzi Unity Tools](using-vsmac-tools-unity.md)
-### [Używanie platformy .NET 4.x w aparacie Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
-### [Dziennik zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+### [Używanie platformy .NET 4.x w środowisku Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Dziennik Zmian](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Aplikacje mobilne na platformie Xamarin](/visualstudio/mac/xamarin)
 
 # [Ułatwienia dostępu](accessibility.md)
@@ -78,3 +78,4 @@
 ## [Program poprawy jakości obsługi klienta systemu Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Zgłaszanie problemu](report-a-problem.md)
 ## [Rozwiązywanie problemów: Dlaczego nie mogę wyświetlić wszystkich szablonów?](troubleshooting-no-templates.md)
+## [Rozwiązywanie problemów: Podczas pobierania informacji występują błędy aktualizatora](updater-troubleshooting.md)
