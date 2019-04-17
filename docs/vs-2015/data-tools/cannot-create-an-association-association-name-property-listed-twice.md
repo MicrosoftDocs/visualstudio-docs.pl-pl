@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774334"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660973"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — właściwość jest wymieniona dwukrotnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nie można utworzyć skojarzenia \<Nazwa skojarzenia >. Tę samą właściwość jest wymieniona więcej niż raz: \<nazwa właściwości >.  
   
  Skojarzenia są definiowane przez wybrany **właściwości skojarzenia** w **Edytor skojarzeń** okno dialogowe. Właściwości można podawać tylko jeden raz dla każdej klasy w skojarzeniu.  

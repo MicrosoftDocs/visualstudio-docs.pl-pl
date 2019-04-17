@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796880"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655819"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w microsoft.build.commontypes.xsd pliku.  
   
 ## <a name="common-items"></a>Wspólne elementy  

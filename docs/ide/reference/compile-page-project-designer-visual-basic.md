@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a226f22370f128374433e78b787ad730a3bbdfc9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913044"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662048"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
@@ -158,7 +158,6 @@ Ta opcja nie jest dostępne dla projektów Windows aplikacji lub aplikacji Konso
 **Zdarzenia kompilacji** kliknij ten przycisk, aby uzyskać dostęp do **zdarzenia kompilacji** okno dialogowe. To okno dialogowe służy do określania instrukcje dotyczące konfiguracji wstępnej kompilacji i po kompilacji dla projektu. To okno dialogowe dotyczy tylko dla projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Tworzenie zdarzenia (Visual Basic okno dialogowe)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Zaawansowane opcje kompilacji** kliknij ten przycisk, aby uzyskać dostęp do **ustawienia AdvancedCompiler** okno dialogowe. Użyj **ustawienia AdvancedCompiler** okno dialogowe, aby określić projektu najbardziej zaawansowane właściwości konfiguracji kompilacji. To okno dialogowe dotyczy tylko dla projektów języka Visual Basic. Aby uzyskać więcej informacji, zobacz [Zaawansowane z okno dialogowe Ustawienia kompilatora (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Zobacz także
 

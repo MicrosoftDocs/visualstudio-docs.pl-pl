@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796909"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668408"
 ---
 # <a name="generateresource-task"></a>GenerateResource — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na języku XML) i common language runtime binarnych plików Resources, które mogą być osadzone w wykonywalnym pliku danych binarnych środowiska uruchomieniowego lub skompilowane do zestawów satelickich. To zadanie jest zazwyczaj używany w konwersji plików txt lub resx na pliki .resource. `GenerateResource` Zadanie jest podobne do [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametry  
@@ -57,11 +56,11 @@ Wykonuje konwersję między txt i pliki resx (w formacie zasobów opartych na j�
 |`StronglyTypedNamespace`|Opcjonalnie `String` parametru.<br /><br /> Określa przestrzeń nazw dla generowanej klasy źródło silnie typizowanych zasobów. Jeśli ten parametr nie jest określony, wszystkie zasoby silnie typizowane znajdują się w globalnej przestrzeni nazw.|  
 |`TLogReadFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru tylko do odczytu.<br /><br /> Pobiera tablicę elementów, które reprezentują odczytu dzienniki śledzenia.|  
 |`TLogWriteFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru tylko do odczytu.<br /><br /> Pobiera tablicę elementów, które reprezentują zapisu dzienniki śledzenia.|  
-|`ToolArchitecture`|Opcjonalne [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Używany do określenia, czy Tracker.exe musi zostać użyte zduplikować ResGen.exe.<br /><br /> Powinien być przeanalizowania do elementu członkowskiego <xref:Microsoft.Build.Utilities.ExecutableType> wyliczenia. Jeśli `String.Empty`, używa heurystyki do określenia architektura domyślne. Powinien być przeanalizowania do elementu członkowskiego wyliczenia Microsoft.Build.Utilities.ExecutableType.|  
-|`TrackerFrameworkPath`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji środowiska .NET Framework, który zawiera FileTracker.dll.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości FileTracker.dll, który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżącą wersję systemu .NET Framework.|  
-|`TrackerLogDirectory`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa katalog pośredni, w którym zostaną umieszczone dzienniki śledzenia uruchamianie tego zadania.|  
-|`TrackerSdkPath`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji zestawu Windows SDK, który zawiera Tracker.exe.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości Tracker.exe który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżący zestaw Windows SDK.|  
-|`TrackFileAccess`|Opcjonalne [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> W przypadku opcji true rozpoznawania względnych ścieżek plików jest używany katalog pliku wejściowego.|  
+|`ToolArchitecture`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Używany do określenia, czy Tracker.exe musi zostać użyte zduplikować ResGen.exe.<br /><br /> Powinien być przeanalizowania do elementu członkowskiego <xref:Microsoft.Build.Utilities.ExecutableType> wyliczenia. Jeśli `String.Empty`, używa heurystyki do określenia architektura domyślne. Powinien być przeanalizowania do elementu członkowskiego wyliczenia Microsoft.Build.Utilities.ExecutableType.|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji środowiska .NET Framework, który zawiera FileTracker.dll.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości FileTracker.dll, który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżącą wersję systemu .NET Framework.|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa katalog pośredni, w którym zostaną umieszczone dzienniki śledzenia uruchamianie tego zadania.|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa ścieżkę do odpowiedniej lokalizacji zestawu Windows SDK, który zawiera Tracker.exe.<br /><br /> Jeśli zestaw, użytkownik przyjmuje odpowiedzialność za zapewnienie, że wartości bitowości Tracker.exe który przekazują dopasowuje wartości bitowości programu ResGen.exe, które będą one używane. W przeciwnym razie zestawu, zadanie decyduje, odpowiednią lokalizację, w oparciu o bieżący zestaw Windows SDK.|  
+|`TrackFileAccess`|(Opcjonalnie) [logiczną]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> W przypadku opcji true rozpoznawania względnych ścieżek plików jest używany katalog pliku wejściowego.|  
 |`UseSourcePath`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, określa, że katalog pliku wejściowego ma być używany do rozpoznawania względnych ścieżek plików.|  
   
 ## <a name="remarks"></a>Uwagi  

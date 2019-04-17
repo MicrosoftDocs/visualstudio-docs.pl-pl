@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5842f0f931eecd822dcaeba5eb6b3e33bd826c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758844"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658841"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Instrukcje: Wyświetlanie adresów URL jako linków w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Istnieje możliwość mają Edytor kodu, Traktuj Uniform Resource Locator (URL) w kodzie jako aktywnych łączy. Podczas korzystania z tej funkcji, adresy URL:  
   
 -   Podkreślone.  

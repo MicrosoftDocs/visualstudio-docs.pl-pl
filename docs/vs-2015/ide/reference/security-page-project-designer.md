@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760099"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647937"
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Zabezpieczeń** strony **projektanta projektu** służy do konfigurowania ustawień zabezpieczeń dostępu kodu dla aplikacji, które są wdrażane przy użyciu [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)] wdrożenia. Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Aby uzyskać dostęp do **zabezpieczeń** kliknij węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **zabezpieczeń** kartę.  

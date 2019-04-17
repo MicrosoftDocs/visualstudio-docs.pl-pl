@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Więcej informacji na temat migracji otwierania i licencji Open do portalu administratora subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843198"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658204"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Otwórz i Open License migracji do nowego portalu programu Visual Studio subskrypcje administracji
 
@@ -38,7 +38,6 @@ Zarządzanie subskrypcjami w [Portal administratora subskrypcji programu Visual 
 
 - Dla partnerów zarządzać subskrypcjami w imieniu klientów muszą zarejestrować się w portalu administracyjnym. Poniżej przedstawiono różne sposoby, aby uzyskać dostęp, Uzyskaj dostęp do (podobnie do procesu Otwórz Dodaj).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Istniejących partnerów Dodawanie nowej licencji
 
 Dotyczy to partnerów, którzy mają już dostęp do [Portal administratora subskrypcji programu Visual Studio](https://manage.visualstudio.com), ale dokonali zamówienia dla licencji Open przy użyciu subskrypcji programu Visual Studio, które będą musieli zarządzać.
@@ -48,7 +47,6 @@ Dotyczy to partnerów, którzy mają już dostęp do [Portal administratora subs
 - Wybierze listy rozwijanej umowy i przewiń w dół w przypadku, gdy istnieje możliwość **+ nowe Open License**.
 
 - W panelu wyskakujący Partner będzie wprowadź numer autoryzacyjny, numeru prawa jazdy, adres e-mail odbiorcy, który znajduje się na umowie, zaznacz pole wyboru, a następnie kliknij **przesyłania**.
-
 
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem informacją o tym, że dodano partnera do licencji Open. Zdecydują może spowodować usunięcie dostępu partnera.
@@ -67,7 +65,6 @@ Dotyczy to Nowi partnerzy wprowadzania nowych zamówień Otwórz licencji, ale k
 
 - Partner będą w stanie zarządzać subskrypcjami dla tej licencji Open.
 
-
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem informacją o tym, że dodano partnera do licencji Open. Zdecydują może spowodować usunięcie dostępu partnera.
 
@@ -80,7 +77,6 @@ Ten scenariusz dotyczy Nowi partnerzy, którzy złożono już nowych zamówień 
 - Otrzyma błąd, nie są rozpoznane jako użytkownik.
 
 - Partner będzie konieczne wybranie **partnerów OLP** rejestracji opcji i wprowadź numer autoryzacyjny, numer licencji, adres e-mail odbiorcy, używany w kolejności, zaznacz pole wyboru i kliknij przycisk **przesyłania**.
-
 
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem informacją o tym, że dodano partnera do licencji Open. Zdecydują może spowodować usunięcie dostępu partnera.

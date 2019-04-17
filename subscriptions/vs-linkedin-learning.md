@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści LinkedIn Learning dołączone jako część subskrypcji LinkedIn Premium zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bdc7eaf4aa5c7105b996d25494643209b38f51d3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841552"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670046"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning korzyści w ramach subskrypcji programu Visual Studio
 
@@ -28,7 +28,6 @@ Aby aktywować subskrypcję LinkedIn Premium i LinkedIn Learning korzyści:
 2. Znajdź Kafelek LinkedIn Learning kategorii edukacji, a następnie kliknij przycisk **kod** łącza.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning korzyści kafelka](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Jeśli masz już konto usługi LinkedIn i jeszcze to zrobione automatycznie, możesz od razu powoduje przejście do strony aktywacji korzyści LinkedIn Learning.  Jeśli masz konto usługi LinkedIn, ale nie automatycznie zalogowano Cię, wystarczy wprowadzić nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**.  Przejdź do [tego kroku](#activate-your-offer) Aby uaktywnić swoją ofertę.
 
@@ -80,7 +79,6 @@ Aby aktywować subskrypcję LinkedIn Premium i LinkedIn Learning korzyści:
    > [!div class="mx-imgBorder"]
    > ![Aktywuj LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Możesz rozpocząć przeglądanie umiejętności, które Cię interesują.  Wybierz z listy zalecenia, Wyszukaj inne umiejętności, lub kliknij przycisk **Pomiń** aby kontynuować bez wybierania umiejętności.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning umiejętności](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ Aby aktywować subskrypcję LinkedIn Premium i LinkedIn Learning korzyści:
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | 3 miesiące                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Dev Essentials | Nie dotyczy  | 3 miesiące |Nie.  Dostępne tylko dla nowych subskrybentów |
+| Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne |Nie dotyczy|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, Visual Studio Industry Partner (VSIP).  Nie obejmuje:  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

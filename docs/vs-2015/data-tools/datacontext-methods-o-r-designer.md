@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790060"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661597"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metody DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Element DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) metody (w kontekście [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) to metody <xref:System.Data.Linq.DataContext> klasę uruchamianą przechowywane procedury i funkcje w bazie danych.  
   
  <xref:System.Data.Linq.DataContext> Klasa jest [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasę, która działa jako kanał między bazy danych programu SQL Server i [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek mapowany do tej bazy danych. <xref:System.Data.Linq.DataContext> Klasa zawiera informacje o parametrach połączenia i metody nawiązywania połączenia z bazą danych i manipulowania danymi w bazie danych. Domyślnie <xref:System.Data.Linq.DataContext> klasa zawiera kilka metod, które można wywoływać, takich jak <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metodę, która wysyła zaktualizowane dane z [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy do bazy danych. Można również utworzyć dodatkowe <xref:System.Data.Linq.DataContext> metod, które mapują do procedur przechowywanych i funkcji. Innymi słowy, wywoływanie tych metod niestandardowego uruchomi procedura składowana lub funkcja w bazie danych, <xref:System.Data.Linq.DataContext> metody jest zamapowany. Możesz dodać nowe metody <xref:System.Data.Linq.DataContext> klasy tak, jak należy dodać metody umożliwiające rozszerzenie dowolnej klasy. Jednak w dyskusje na temat <xref:System.Data.Linq.DataContext> metod w kontekście [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], jest <xref:System.Data.Linq.DataContext> metod, które mapują do procedur przechowywanych i funkcji, które są przedmiotem.  

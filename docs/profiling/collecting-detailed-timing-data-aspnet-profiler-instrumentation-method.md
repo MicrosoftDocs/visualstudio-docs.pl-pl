@@ -11,19 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7d5a8c7fdd6980ccfd04503a82c541794bc8177c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a01f828eefd328498c2e2d9856e4ae5f9e778949
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605007"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665782"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji sieci web ASP.NET przy użyciu metody Instrumentacji profilera z wiersza polecenia
 W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczegółowe dane dotyczące [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web za pomocą **VSPerfCmd** narzędzia wiersza polecenia i metody instrumentacji.
 
 > [!NOTE]
 >  **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcji narzędzi profilowania, między innymi wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows. Można również użyć **VSPerfASPNETCmd** narzędzie wiersza polecenia, jeśli nie potrzebujesz tej funkcji. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
-
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
@@ -32,9 +31,7 @@ W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczeg�
 |**Profil statycznie skompilowane pliki binarne**|-   [Jak: Instrumentacja statycznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
 |**Profilowania dynamicznie skompilowanych plików binarnych**|-   [Jak: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
 
-
 ## <a name="related-tasks"></a>Zadania powiązane
-
 
 ### <a name="profile-aspnet-web-applications"></a>Aplikacje sieci web ASP.NET profilu
 

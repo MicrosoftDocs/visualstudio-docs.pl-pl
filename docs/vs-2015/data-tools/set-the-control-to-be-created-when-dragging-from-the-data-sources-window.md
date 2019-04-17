@@ -19,17 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14803b84e8695839b05726b3cadd3f2150079946
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785147"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657457"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Możesz utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna na projektanta WPF lub projektanta Windows Forms. Każdy element na **źródeł danych** okno ma domyślny formant, który jest tworzony podczas przeciągania do projektanta. Można utworzyć innej kontrolki.  
   
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Ustawienie kontroli ma zostać utworzony dla tabel danych lub obiektów  

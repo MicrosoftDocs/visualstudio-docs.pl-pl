@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649111"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: Tworzenie niestandardowego procesora dyrektywy
 
@@ -654,7 +654,6 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
      Klucz rejestru powinien mieć następujące wartości:
 
-
    | Nazwa | Typ | Dane |
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
@@ -663,13 +662,11 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
      Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:
 
-
    | Nazwa | Typ | Dane |
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
    | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Zestaw | REG_SZ | CustomDP.dll |
-
 
 6. Uruchom ponownie program Visual Studio.
 

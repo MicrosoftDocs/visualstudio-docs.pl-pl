@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798463"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659972"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: Używanie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w menu kontekstowym edytora XML. **Wstaw fragment kodu** polecenia wstawia fragment kodu XML w położeniu kursora. **Otocz** polecenia opakowuje fragment kodu XML wokół zaznaczonego tekstu. Każdy fragment kodu XML został wyznaczony typy fragmentu kodu. Typy fragment określają, czy ten fragment kodu jest dostępna z **Wstaw fragment kodu** polecenia **Otocz** polecenia i / lub.  
   
  Po dodaniu fragment kodu XML do edytora wszelkie edytowalnego pola we fragmencie są wyróżnione na żółto. Ponadto kursor znajduje się na pierwsze pole można edytować.  

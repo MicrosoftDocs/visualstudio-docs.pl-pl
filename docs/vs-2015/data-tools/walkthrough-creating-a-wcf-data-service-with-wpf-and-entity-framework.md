@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777850"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653089"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hostowaną w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.  
   
  W instruktażu wykonasz następujące czynności:  

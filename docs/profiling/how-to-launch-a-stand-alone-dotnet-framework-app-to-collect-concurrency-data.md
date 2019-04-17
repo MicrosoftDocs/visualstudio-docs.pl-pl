@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f2c146398e6ec3d8fba7f3bf0922c0050eddb4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 732180c026f1620fe0bc1d7b5c8363a524da7171
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640990"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662962"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie aplikacji autonomicznej .NET Framework z profilerem do zbierania danych współbieżności przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools uruchamianie aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych współbieżności procesu i wątku
@@ -36,13 +36,11 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
    - [/Start](../profiling/start.md) opcja inicjuje profiler.
 
-
      | | |
      |-------------------------------------| - |
      | **/Start:CONCURRENCY** | Włącza zbieranie rywalizacji o zasoby i danych wykonanie wątku. |
      | **/Start:CONCURRENCY, resourceonly** | Włącza zbieranie tylko dane kontencji zasobów. |
      | **/Start:CONCURRENCY, threadonly** | Włącza zbieranie tylko wątek wykonywania danych. |
-
 
    - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
 
@@ -55,7 +53,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
-
 
 3. Uruchom aplikację docelową. Wpisz:
 

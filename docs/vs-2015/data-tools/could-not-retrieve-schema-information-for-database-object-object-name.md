@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652478"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Nie można pobrać informacji o schemacie dla obiektu bazy danych &lt;nazwa obiektu&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ten komunikat pojawia się zwykle, gdy obiekt w **Server Explorer/Eksploratorze bazy danych** skopiowany do Schowka, usunięte z bazy danych i następnie wklejone do projektanta. Ponieważ obiektu bazy danych już nie istnieje, zostanie wyświetlony ten komunikat.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  

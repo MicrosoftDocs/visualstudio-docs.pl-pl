@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 180cf2cece705afb6094e49ef23a3dc3f953d0c4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868214"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669149"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
 
@@ -38,8 +38,6 @@ Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUD
  ::: moniker-end
 
  Dla kodu zarządzanego, program profilujący interfejsów API znajdują się w *Microsoft.VisualStudio.Profiler.dll*. Ta biblioteka DLL znajduje się w *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* katalogu. Dla aplikacji 64-bitowych jest folder *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Profiler>.
-
-
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  W tym przewodniku przyjęto założenie, że preferowanego środowiska deweloperskiego jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:

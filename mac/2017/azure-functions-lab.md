@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573130"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652972"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
 
@@ -187,7 +187,6 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 1. Tym razem wynik powinien odzwierciedlać nowych parametrów. Możesz uruchomić projekt z różnymi wartościami. Należy pamiętać, że nie ma wszelkie błędy sprawdzania, dzięki czemu będzie sygnalizować błąd, nieprawidłowe lub brakujące parametry.
 
 1. Zatrzymaj sesję debugowania.
-
 
 ## <a name="exercise-4-working-with-functionjson"></a>Ćwiczenie 4: Praca z function.json
 
@@ -409,4 +408,3 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 ## <a name="summary"></a>Podsumowanie
 
 W tym środowisku laboratoryjnym już wiesz, jak zacząć tworzenie aplikacji usługi Azure Functions za pomocą programu Visual Studio dla komputerów Mac.
-

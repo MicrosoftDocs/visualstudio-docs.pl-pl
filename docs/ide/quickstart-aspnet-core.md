@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2c9bbe0b6a1f7722fb2da685b29f5d244441edc2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856721"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665499"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web platformy ASP.NET Core przy użyciu programu Visual Studio
 
@@ -31,7 +31,7 @@ W ramach tego wprowadzenia 5 – 10 minut, jak używać programu Visual Studio u
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 

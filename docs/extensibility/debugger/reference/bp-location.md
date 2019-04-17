@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcae8b30a0bcd7275bc0e2bebd45f834f43269d9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85f8c915f5c0d6d81214220f78c7db0544777cda
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679347"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663326"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Określa typ struktury, używane do opisywania lokalizację punktu przerwania.
@@ -55,31 +55,31 @@ public struct BP_LOCATION {
 
 `bpLocation`.`bplocCodeFileLine`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+ [C++ tylko] Zawiera [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
 
 `bpLocation.bplocCodeFuncOffset`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+ [C++ tylko] Zawiera [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
 
 `bpLocation.bplocCodeContext`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+ [C++ tylko] Zawiera [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
 
 `bpLocation.bplocCodeString`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_STRING`.
+ [C++ tylko] Zawiera [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_STRING`.
 
 `bpLocation.bplocCodeAddress`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+ [C++ tylko] Zawiera [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) struktury, jeśli `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
 
 `bpLocation.bplocDataString`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_DATA_STRING`.
+ [C++ tylko] Zawiera [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) struktury, jeśli `bpLocationType`  =  `BPLT_DATA_STRING`.
 
 `bpLocation.bplocResolution`
 
- [Tylko w języku C++] Zawiera [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struktury, jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.
+ [C++ tylko] Zawiera [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struktury, jeśli `bpLocationType`  =  `BPLT_RESOLUTION`.
 
 `unionmember1`
 
@@ -99,7 +99,6 @@ public struct BP_LOCATION {
 
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
-
 
  [C# tylko] `unionmemberX` Elementy członkowskie są interpretowane zgodnie z poniższą tabelą. Szukaj w lewej kolumnie dla `bpLocationType` wartość, a następnie sprawdź w innych kolumnach, aby określić, jakie każdy `unionmemberX` reprezentuje element członkowski i marshal `unionmemberX` odpowiednio. Zobacz przykład sposobu interpretowania częścią tej struktury w języku C#.
 

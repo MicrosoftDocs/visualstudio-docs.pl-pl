@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji w trybie offline
 description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy zawodne połączenie z Internetem lub niskiej przepustowości.
-ms.date: 03/28/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b813d92188a2b4e33b87a1391c7ebbea63292f6
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856998"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666536"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
 ::: moniker range="vs-2017"
 
-Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
+Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
 ::: moniker-end
 

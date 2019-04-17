@@ -19,17 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9168582d5bfc97dc657fb7a9b867459cb08c90a1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a1ce11edac37368b9c4993a87a8c2b3e734b7862
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770726"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649618"
 ---
 # <a name="msbuild-response-files"></a>Pliki odpowiedzi MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pliki odpowiedzi (rsp) to pliki tekstowe, zawierające MSBuild.exe przełączniki wiersza polecenia. Każdy przełącznik może być w oddzielnym wierszu lub wszystkich przełączników mogą znajdować się na jeden wiersz. Komentarz wiersze są poprzedzone znakiem **#** symboli. **@** Jest używany przełącznik, aby przekazać inny plik odpowiedzi do MSBuild.exe.  
   
  Plik automatyczne odpowiedzi jest plikiem rsp specjalne, które MSBuild.exe automatycznie będą używać podczas kompilowania projektu. Ten plik, MSBuild.rsp, musi być w tym samym katalogu co MSBuild.exe, w przeciwnym razie go nie zostanie znaleziony. Możesz edytować ten plik, aby określić domyślny przełączniki wiersza polecenia do MSBuild.exe. Na przykład, jeśli używasz tego samego rejestrowania za każdym razem, gdy tworzysz projekt, można dodać **/logger** Przełącz się do MSBuild.rsp i MSBuild.exe użyje rejestratora za każdym razem, gdy projekt jest kompilowany.  

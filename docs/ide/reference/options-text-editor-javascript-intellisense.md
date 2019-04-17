@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938699"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669391"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opcje, edytor tekstu, JavaScript, IntelliSense
 Użyj **IntelliSense** strony **opcje** okno dialogowe, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka JavaScript. Możesz uzyskać dostęp **IntelliSense** strony, wybierając **narzędzia** > **opcje** na pasku menu, a następnie rozwijając **edytora tekstów**  >  **JavaScript** > **IntelliSense.**
@@ -59,7 +59,6 @@ Ta opcja określa kolejność, w której pliki są ładowane do kontekstu usług
 > [!CAUTION]
 > Jeśli obiekt jest zdefiniowany bezwarunkowo w dwóch lub więcej odwołań niejawnych, ostatnie odwołanie na tej liście będzie używane do określenia obiektu.
 
-
 **Dodaj odwołanie do grupy**
 
 Ta opcja umożliwia dodawanie dodatkowych plików .js IntelliSense przez przechodzenie do odpowiednich plików.
@@ -70,8 +69,6 @@ Gdy to pole wyboru jest zaznaczone, a jeśli masz plik JavaScript otwarty poza k
 
 > [!NOTE]
 > Dla projektów sieci web domyślnie pobierane są pliki zdalne, do którego odwołuje się projekt.
-
-
 
 ## <a name="see-also"></a>Zobacz też
 

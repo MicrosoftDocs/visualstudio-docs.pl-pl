@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782066"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656326"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: Przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Procedury składowane, które mogą być dodawane do Projektanta obiektów relacyjnych lub wykonywane co typowe <xref:System.Data.Linq.DataContext> metody. One może również zastąpić to ustawienie domyślne [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zachowania w czasie wykonywania, który wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klas jednostek bazy danych (na przykład w przypadku, gdy wywołanie <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metody).  
   
 > [!NOTE]

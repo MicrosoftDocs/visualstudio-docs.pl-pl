@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631864"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654584"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pakiet&gt; — element (program inicjujący)
 `Package` Element jest elementem XML najwyższego poziomu w pliku pakietu.
@@ -142,7 +142,6 @@ ms.locfileid: "56631864"
 
 ## <a name="elements-and-attributes"></a>Atrybuty i elementy
  `Package` Element jest wymagany. Ma następujące atrybuty.
-
 
 | Atrybut | Opis |
 |--------------------| - |

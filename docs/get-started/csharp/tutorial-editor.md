@@ -12,19 +12,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323347"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669630"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 W tym artykule założono, które znasz już C#. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [wprowadzenie C# i ASP.NET Core w programie Visual Studio](tutorial-aspnet-core.md) pierwszy.
 

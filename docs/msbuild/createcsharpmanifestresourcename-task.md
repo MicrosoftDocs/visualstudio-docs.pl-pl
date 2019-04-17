@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ddede6870a982520b87cf8ec497788b4731244
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef3baf383a01523cb173d6aeb1f7231680e892ce
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640548"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665340"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName — zadanie
 Tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry [createcsharpmanifestresourcename — zadanie](../msbuild/createcsharpmanifestresourcename-task.md).
-
 
 | Parametr | Opis |
 | - | - |

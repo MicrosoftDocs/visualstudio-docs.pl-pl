@@ -11,17 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797111"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660145"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Okno dialogowe Opcje, Projekty i rozwiązania, Projekty sieci Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ustawia serwer sieci Web, który projektów sieci Web będzie używany do tworzenia aplikacji w ramach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje narzędzi**. Rozwiń **projekty i rozwiązania** a następnie kliknij przycisk **projektów sieci Web**.  
   
  Domyślnie po uruchomieniu projektu sieci Web w programie Visual Studio (na przykład za pomocą F5 lub Ctrl + F5), program Visual Studio używa serwera wdrożeniowego programu Visual Studio. Aby uzyskać więcej informacji, zobacz [serwerów sieci Web w programie Visual Studio dla projektów sieci Web platformy ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  

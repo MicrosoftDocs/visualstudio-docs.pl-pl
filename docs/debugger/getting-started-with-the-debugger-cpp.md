@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c6258259ac48a8f549b3af00ed09ff691efdd7c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b71e4bc01ede7a77aced77a5e5527910457174f0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790943"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658230"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się debugować kod C++ przy użyciu programu Visual Studio
 
@@ -46,7 +46,7 @@ Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacj
 
 ::: moniker-end
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
 
 Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 

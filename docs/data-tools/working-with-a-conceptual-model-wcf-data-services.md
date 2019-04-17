@@ -12,19 +12,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910028"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663849"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Praca z modelem koncepcyjnym (WCF Data Services)
 
 Korzystając z modelu koncepcyjnego do opisu danych w bazie danych, można tworzyć zapytania danych przy użyciu obiektów zamiast konieczności translacji i z powrotem przez schemat bazy danych i modelu obiektu.
 
  Za pomocą modeli koncepcyjnych z aplikacjami usług danych WCF. Poniższe tematy przedstawiają sposób wykonywania zapytań o dane za pośrednictwem modelu koncepcyjnego.
-
 
 | Temat | Opis |
 | - | - |

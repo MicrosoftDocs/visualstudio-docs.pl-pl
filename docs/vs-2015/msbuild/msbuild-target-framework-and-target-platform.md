@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796614"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650736"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli konkretnej wersji programu .NET Framework i *platformę docelową*, czyli architektury konkretnego oprogramowania.  Można na przykład wskazać aplikację do uruchamiania na .NET Framework 2.0 na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*.  
   
 ## <a name="target-framework-and-profile"></a>Platforma docelowa i profilu  

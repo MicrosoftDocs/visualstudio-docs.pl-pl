@@ -21,17 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785291"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653757"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizowanie danych za pomocą adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Po ukończeniu zmodyfikowane i sprawdzania poprawności danych w zestawie danych, może wysyłać zaktualizowane dane do wywoływania databaseby `Update` metody TableAdapter. `Update` Metoda aktualizuje jednej tabeli danych i uruchamia odpowiednie polecenie (INSERT, UPDATE lub DELETE), na podstawie <xref:System.Data.DataRow.RowState%2A> każdego wiersza danych w tabeli. Gdy zestaw danych zawiera tabele powiązane relacjami, program Visual Studio generuje klasę TableAdapterManager, która służy do aktualizacji. Klasa TableAdapterManager gwarantuje, że aktualizacje zostały wprowadzone w odpowiedniej kolejności, na podstawie ograniczeń klucza obcego, które są zdefiniowane w bazie danych. Korzystając z formantów powiązanych z danymi, architektura wiązania z danymi tworzy zmienną składową klasy TableAdapterManager, o nazwie tableAdapterManager. Aby uzyskać więcej informacji, zobacz [hierarchiczna aktualizacja — Przegląd](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]

@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790100"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660778"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii IntelliSense i bazy danych przeglądania w przypadku programowania w języku C lub C++.  
   
  Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym **edytora tekstów**, rozwiń węzeł **C/C++**, a następnie wybierz **zaawansowane**.  

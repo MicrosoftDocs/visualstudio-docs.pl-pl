@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2ca2d3a0c174fa4c7d0f66d3abc440b8c9aa93cf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537533"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658815"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generowanie deconstructor w programie Visual Studio
 
@@ -47,7 +47,6 @@ Dotyczy to generowanie kodu:
 3. Wybierz **Generuj metodę "MyInternalClass.Deconstruct"** do generowania deconstructor.
 
    ![Wynikowy kod deconstructor](media/deconstruct-result.png)
-
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762071"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657262"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie powiązanych danych w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W niektórych aplikacjach można pracować z danymi, które pochodzą z wielu tabel lub jednostek, które są powiązane ze sobą w relacji nadrzędny podrzędny. Na przykład możesz chcieć wyświetlić siatkę, na którym są wyświetlani klienci z `Customers` tabeli. Gdy użytkownik wybierze określonego odbiorcy, inny Siatka wyświetla zamówień tego klienta z powiązanych `Orders` tabeli.  
   
  Możesz utworzyć formanty powiązane z danymi, które wyświetlają pokrewne dane przez przeciąganie elementów z **źródeł danych** okna Projektanta WPF.  

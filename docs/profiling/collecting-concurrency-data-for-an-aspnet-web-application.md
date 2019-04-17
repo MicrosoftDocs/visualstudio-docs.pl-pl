@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 007a8b8d94c178b4282999bf7102b645530c6adf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b1a99f3007a87738f55d0b13fa8943ded925266
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645033"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663943"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji sieci web ASP.NET przy użyciu wiersza polecenia profilera
 Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools umożliwia zbieranie danych kontencji zasobów.
@@ -39,7 +39,6 @@ Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 |**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**Profil kolekcji alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
-
 
 ### <a name="profile-concurrency-issues"></a>Problemy ze współbieżnością profilu
 

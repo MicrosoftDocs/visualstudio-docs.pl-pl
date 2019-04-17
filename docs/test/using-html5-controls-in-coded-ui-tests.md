@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
+title: Korzystanie z formantów HTML5 w kodowanych testach interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84c1a0a4f74c847da78920a638b37c0294717d02
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951881"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649788"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -53,7 +53,6 @@ Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 > [!NOTE]
 > Ilość czasu, która umożliwia wyszukiwanie i wstrzymywanie działania mogą być znaczące. Podczas odtwarzania kodowanego testu interfejsu użytkownika będzie czekać aż do określonej w `(TimeSpan)` przed wstrzymaniem audio. Jeśli przez kilka specjalnych okoliczności określonego czasu minęło przed osiągnięcia polecenie wstrzymania, zostanie zgłoszony wyjątek.
-
 
 ## <a name="video-control"></a>Kontrolki wideo
  **Kontrolki wideo:** Poprawnie zarejestrowane i odtwarzać akcji dla kontrolki wideo HTML5.

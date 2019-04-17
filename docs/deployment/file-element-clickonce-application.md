@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4152482f404596e1d97a94a12890b4c5b298794
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657211"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;plik&gt; — element (aplikacja ClickOnce)
 Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
@@ -166,14 +166,12 @@ Identyfikuje wszystkie pliki nonassembly pobierane i używane przez aplikację.
 ## <a name="dsigtransform"></a>DSIG:Transform
  `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. `dsig:Transform` Element ma następujące atrybuty.
 
-
 | Atrybut | Opis |
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>DSIG:DigestMethod
  `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestMethod` Element ma następujące atrybuty.
-
 
 | Atrybut | Opis |
 |-------------| - |

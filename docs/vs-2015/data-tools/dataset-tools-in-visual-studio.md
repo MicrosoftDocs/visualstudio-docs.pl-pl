@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773049"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666510"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Narzędzia zestawu danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 UWAGA]
 >  Zestawy danych i powiązanych klas są starszej technologii .NET, od początku 2000s, które umożliwiają aplikacjom do pracy z danymi w pamięci, gdy aplikacje są odłączone od bazy danych. Są one szczególnie przydatne w przypadku aplikacji, które umożliwiają użytkownikom modyfikowanie danych i utrwala zmiany w bazie danych. Mimo że zestawy danych okazały się być odniosła technologii, zalecane jest użycie programu Entity Framework w nowej aplikacji platformy .NET. Entity Framework zapewnia bardziej naturalny sposób pracy z danymi tabelarycznymi jako modele obiektów i ma prostsze interfejs programowania.

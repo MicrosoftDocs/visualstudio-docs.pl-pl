@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652439"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki start: Tworzenie pierwszej aplikacji sieci web języka Python za pomocą programu Visual Studio
 
 W ramach tego wprowadzenia do programu Visual Studio jako środowiskiem Python IDE 5 – 10 minut utworzysz prostą aplikację sieci web języka Python w ramach struktury Flask. Tworzenie projektu za pomocą dyskretnych kroki, które ułatwiają Dowiedz się więcej o podstawowych funkcji programu Visual Studio.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) zainstalował za darmo. W oknie Instalatora upewnij się wybrać **programowania w języku Python** obciążenia.
+::: moniker range="vs-2017"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo. W oknie Instalatora upewnij się wybrać **programowania w języku Python** obciążenia.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo. W oknie Instalatora upewnij się wybrać **programowania w języku Python** obciążenia.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Utwórz projekt
 

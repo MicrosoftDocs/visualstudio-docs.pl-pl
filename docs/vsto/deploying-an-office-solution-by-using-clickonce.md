@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504435"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665457"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce
   Można wdrożyć rozwiązania pakietu Office w mniejszej liczby czynności, jeśli użycie technologii ClickOnce. Podczas publikowania aktualizacji rozwiązanie automatycznie je wykryje i zainstaluje. Niedogodność polega na tym, że w technologii ClickOnce rozwiązanie trzeba zainstalować osobno dla każdego użytkownika komputera. W związku z tym, należy rozważyć użycie Instalatora Windows (*.msi*) Jeśli więcej niż jeden użytkownik uruchomi swoje rozwiązanie na tym samym komputerze.
@@ -33,9 +33,9 @@ ms.locfileid: "59504435"
 
 - [Umieszczanie dokumentu rozwiązania na komputerze użytkownika końcowego (tylko dostosowania na poziomie dokumentu)](#Put)
 
-- [Umieszczanie dokumentu rozwiązania na serwerze z programem SharePoint (tylko dostosowania na poziomie dokumentu)](#SharePoint)
+- [Umieszczanie dokumentu rozwiązania na serwerze, na którym uruchomiony jest SharePoint (tylko dostosowania na poziomie dokumentu)](#SharePoint)
 
-- [Tworzenie niestandardowego instalatora](#Custom)
+- [Tworzenie niestandardowego Instalatora](#Custom)
 
 - [Publikowanie aktualizacji](#Update)
 
@@ -345,7 +345,6 @@ ms.locfileid: "59504435"
  Jeśli narzędzie nie znajduje się w tej lokalizacji, możesz użyć **folderze Runtime Setup\v4\InstallerPath** lub **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** klucz rejestru, aby znaleźć ścieżkę do tego narzędzia.
 
  Można użyć poniższych parametrów za pomocą *VSTOinstaller.exe*.
-
 
 | Parametr | Definicja |
 |------------------| - |

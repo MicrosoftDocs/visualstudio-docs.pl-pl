@@ -19,17 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f9b269bd68bf40358645b6bd6fd88b701da385b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791487"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652490"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Zadań scala atrybuty lokalizacji i komentarze, co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] plików binarnych w jeden plik dla całego zestawu.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

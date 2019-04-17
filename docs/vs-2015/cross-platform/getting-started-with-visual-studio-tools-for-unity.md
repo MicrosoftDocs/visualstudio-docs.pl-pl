@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764612"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655178"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Unity i skonfigurować swoim projekcie aparatu Unity do pracy z programem Visual Studio.  
   
 > [!IMPORTANT]

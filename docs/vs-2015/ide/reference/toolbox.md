@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799801"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661350"
 ---
 # <a name="toolbox"></a>Przybornik
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Przybornika** wyświetlane ikony dla formantów i innych elementów, które można dodać do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projektów. Aby otworzyć **przybornika**, kliknij przycisk **przybornika** na **widoku** menu. Można zadokować **przybornika**, oraz przymocować go jako otwarty lub ustaw go na **Autoukrywanie**.  
   
  **Przybornik** ikon, które mogą być przeciągnięte do widoku projektu lub wklejać w edytorze kodu. Każda z tych akcji dodaje podstawowy kod w celu utworzenia wystąpienia **przybornika** elementu w pliku aktywnego projektu.  

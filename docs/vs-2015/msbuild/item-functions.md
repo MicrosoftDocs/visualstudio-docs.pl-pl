@@ -11,17 +11,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758592"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670267"
 ---
 # <a name="item-functions"></a>Funkcje elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Począwszy od programu MSBuild 4.0, kod w zadania i elementy docelowe można wywołać elementu funkcji, aby uzyskać informacje na temat elementów w projekcie. Te funkcje upraszczają pobierania elementów Distinct() i są szybsze niż elementy w pętli.  
   
 ## <a name="string-item-functions"></a>Ciąg funkcje elementów  

@@ -19,17 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 397bb367207646e110243e050c271815b6258ff5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668616"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Zadanie generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

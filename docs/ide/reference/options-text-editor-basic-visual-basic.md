@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 60ef24f91d7b450de4ed4779a6d128032bd8b564
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925465"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661701"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Options, Text Editor, Basic (Visual Basic), Advanced
 **VB określonych** stronie właściwości, **podstawowe** folderu **edytora tekstów** folderu **opcje** (**narzędzia** menu) okno dialogowe zawiera następujące właściwości:
@@ -50,7 +50,6 @@ ms.locfileid: "55925465"
    Po wybraniu tych opcji [szybka akcja](../quick-actions.md) jest dostępna zainstalować pakiet NuGet i dodać `using` dyrektywy dla typów bez odwołań.
 
    ![Szybkie działanie, aby zainstalować pakiet NuGet w programie Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Wyróżnianie
 

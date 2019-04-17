@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które są dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c8d18225741c7b514f9b9af5c30f06226a8abcd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428638"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661548"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -48,7 +48,6 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
    > [!div class="mx-imgBorder"]
    > ![DataCamp Data Science Skillset](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Na podstawie ścieżki i opcje, które zostały wybrane, zobaczysz wybór ścieżki kariery.  Kliknij pozycję **Zarejestruj** przycisk ścieżki wybór.
    > [!div class="mx-imgBorder"]
    > ![Ścieżki kariery DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,17 +74,12 @@ Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
-
-
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
 
-
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
-
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej korzystania z DataCamp?  Zapoznaj się z tymi zasobami:

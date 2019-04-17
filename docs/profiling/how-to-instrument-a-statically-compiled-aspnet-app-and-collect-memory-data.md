@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b8ffac5d508f8b46df827876a4568fbfba5929b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4d912b508e6b34ddf4220ce29e4041554b4f998
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659660"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrument statycznie skompilowanej aplikacji sieci web ASP.NET i pamięci zbierania danych przy użyciu wiersza polecenia profilera
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji wstępnie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] składnika sieci web lub witryny sieci web i zbieranie alokacji pamięci .NET, okres istnienia obiektów i szczegółowych danych o chronometrażu.
@@ -72,7 +72,6 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL). |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Aby uruchomić profiler z kolekcją danych jest wstrzymany, należy dodać **/globaloff** opcję **/start** wiersza polecenia. Użyj **globalon** Aby wznowić profilowanie. |
-
 
 7. Otwórz witrynę sieci web, który zawiera składnik instrumentowany.
 

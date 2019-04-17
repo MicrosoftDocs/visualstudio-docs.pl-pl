@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informacje na temat pakietu Enterprise Mobility + Security korzyści zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 55c271f73f5859f39bbf6b430ffa19ca301591d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232661"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652348"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Pakiet Enterprise Mobility + Security (EMS) w subskrypcji programu Visual Studio
 
@@ -53,7 +53,7 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
 | Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Dostępne                                                            |  Yes          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                             |  Brak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
@@ -64,10 +64,8 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 
 <sup>2</sup> *wyklucza sieci Microsoft Partner Network (Professional)*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

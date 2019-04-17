@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774777"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649410"
 ---
 # <a name="call-hierarchy"></a>Hierarchia wywołań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Hierarchię wywołań umożliwia nawigowanie po kodzie, wyświetlając wszystkie wywołania do i z wybranej metody, właściwości lub konstruktora. Dzięki temu można lepiej zrozumieć przepływ kodu i oceny wpływu zmian kodu. Można sprawdzić kilka poziomów kodem, aby wyświetlić złożonych łańcuchy wywołania metody oraz dodatkowe punkty wejścia do kodu, który umożliwia poznawanie wszystkie możliwe wykonania ścieżki.  
   
  Hierarchię wywołań jest dostępna w czasie projektowania, w przeciwieństwie do stosu wywołań, które jest wyświetlane przez debuger.  

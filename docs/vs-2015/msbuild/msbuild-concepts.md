@@ -11,17 +11,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770869"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663313"
 ---
 # <a name="msbuild-concepts"></a>Pojęcia dotyczące programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zawiera podstawowe schematu XML, który służy do kontrolowania, jak platforma kompilacji tworzy oprogramowanie. Aby określić składniki w kompilacji i jak są one ma zostać utworzony, należy użyć tych czterech części programu MSBuild: właściwości, elementy, zadania i elementy docelowe.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  

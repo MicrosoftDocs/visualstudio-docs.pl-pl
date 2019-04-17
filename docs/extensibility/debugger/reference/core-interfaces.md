@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702281"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660791"
 ---
 # <a name="core-interfaces"></a>Interfejsy podstawowe
 Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomocą [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 ##  <a name="Events"></a> Zdarzenia
  Te interfejsy reprezentują wszystkie zdarzenia, które są przesyłane między DE i Menedżer debugowania sesji (SDM).
 
-
 | Interface | Zaimplementowane przez | Opis |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Wysyłane przez DE, żądanie dokumentu do otwarcia. |
@@ -211,7 +210,6 @@ Następujące interfejsy są interfejsy podstawowe rozszerzania debugera za pomo
 
 ##  <a name="Ports"></a> Porty
  Te interfejsy reprezentują portów i dostawcy portów.
-
 
 | Interface | Zaimplementowane przez | Opis |
 | - |----------------| - |

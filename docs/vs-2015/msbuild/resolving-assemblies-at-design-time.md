@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dca0197ee25bc56f3ab017530baeb842572fc16
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801747"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657106"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Po dodaniu odwołania do zestawu za pomocą karty .NET okna dialogowego Dodaj Odwołanie, odwołanie wskazuje na pośrednie odwołanie do zestawu, który jest zestawem zawierającym wszystkie informacje o typie i podpisie, ale nie musi zawierać żadnego kodu. Karta .NET zawiera listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w .NET Framework. Ponadto wyświetla listę odwołań do zestawów, które odpowiadają zestawom środowiska uruchomieniowego w zarejestrowanych folderach AssemblyFoldersEx używanych przez inne firmy.  
   
 ## <a name="multi-targeting"></a>Wielowersyjność kodu  

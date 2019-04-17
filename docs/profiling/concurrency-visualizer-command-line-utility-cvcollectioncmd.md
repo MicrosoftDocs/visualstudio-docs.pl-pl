@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074c877e8fd8f1e29aee440bf54e73ceab68767a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612325"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649137"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)
 Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollectionCmd.exe*) aby zbierać ślady z wiersza polecenia, dzięki czemu można je przeglądać w Wizualizatorze współbieżności dla programu Visual Studio. Narzędzia można używać na komputerach, które nie mają zainstalowanego programu Visual Studio.
@@ -60,7 +60,6 @@ Można użyć narzędzia wiersza polecenia Concurrency Visualizer (*CVCollection
 
 ### <a name="configuration-file-tags"></a>Tagi plików konfiguracji
  Plik konfiguracji jest oparty na formacie XML. Poniżej przedstawiono prawidłowe tagi i wartości:
-
 
 | Tag | Opis | Wartości |
 |-------------------------| - | - |

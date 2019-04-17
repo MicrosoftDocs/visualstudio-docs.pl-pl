@@ -15,17 +15,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c1c463e95ab81c0331b12aaea692afe7005eff9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778649"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653701"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **aplikacji** strony **projektanta projektu** do określania ustawień aplikacji i właściwości projektu.  
   
  Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu (nie **rozwiązania** węźle) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **aplikacji** kartę.  
@@ -77,7 +76,7 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
   
  Zobacz [/main (opcje kompilatora C#)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) Aby uzyskać więcej informacji. Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
-## <a name="resources"></a>Resources  
+## <a name="resources"></a>Zasoby  
  Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień dla aplikacji.  
   
  **Ikony i manifestu**  

@@ -33,19 +33,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656976"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Wiersz polecenia zdarzenia sprzed kompilacji/zdarzenia po kompilacji — Okno dialogowe
 Możesz wpisać zdarzenia przed lub po kompilacji dla [zdarzenia Stroka kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) bezpośrednio w edycji pola, użytkownik może wybrać makra przed i po kompilacji z listy dostępnych makr.
 
 > [!NOTE]
 > Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.
-
 
 ## <a name="ui-element-list"></a>Lista elementów interfejsu użytkownika
  **Pole edycji wiersza polecenia**
@@ -54,7 +53,6 @@ Możesz wpisać zdarzenia przed lub po kompilacji dla [zdarzenia Stroka kompilac
 
 > [!NOTE]
 > Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Makra**
 

@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c4876aedd12b2284982304b16049691ce6c9b0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758204"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652894"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Opcje projektów i rozwiązań — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ustawia domyślną ścieżkę [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] folderów projektu i określa domyślne zachowanie **dane wyjściowe** oknie **listy zadań**, i **Eksploratora rozwiązań** jako projekty są opracowane i wbudowane. Aby otworzyć to okno dialogowe, kliknij przycisk **narzędzia / Opcje** rozwiń **projekty i rozwiązania**i kliknij przycisk **ogólne**.  
   
 > [!NOTE]

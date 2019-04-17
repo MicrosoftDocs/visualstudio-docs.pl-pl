@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści Concierge Chat uwzględniony w subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8ad38cb22b00a0be1c68a0368dbdb22ca621ba58
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843623"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664534"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -40,7 +40,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                              |  Tak          |
@@ -51,7 +51,6 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

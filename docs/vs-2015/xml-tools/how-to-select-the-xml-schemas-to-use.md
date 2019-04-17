@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771221"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670072"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Instrukcje: Wybieranie schematów XML do użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu %InstallDir%\Xml\Schemas. Pamięci podręcznej schematów obejmuje dobrze znanych schematów XML, które są używane do weryfikacji dokumentu IntelliSense i XML.  
   
  **Schematów** właściwości dokumentu jest używany do wybierania jednego lub więcej XML schematu definicji języka (XSD) schematy do użycia. Umożliwia wybieranie schematów z pamięci podręcznej schematu lub określ schemat, który nie znajduje się w pamięci podręcznej.  

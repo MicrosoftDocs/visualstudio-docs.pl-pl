@@ -14,17 +14,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 256ceb2e1a40d41798ea8dd38757b447221fab16
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805324"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658360"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **kompilacji** strony **projektanta projektu** do określania właściwości konfiguracji kompilacji projektu. Ten temat dotyczy [!INCLUDE[csprcs](../../includes/csprcs-md.md)] wyłącznie dla projektów.  
   
  Aby uzyskać dostęp do **kompilacji** wybierz węzeł projektu (nie **rozwiązania** węźle) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **kompilacji** kartę.  

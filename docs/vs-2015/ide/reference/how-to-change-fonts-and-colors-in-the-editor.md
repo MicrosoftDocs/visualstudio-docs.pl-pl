@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799111"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661870"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Instrukcje: Zmiana czcionek i kolorów w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zmień krój czcionki domyślnej, Dostosuj rozmiar czcionki i zmienić kolory pierwszego planu i tła dla różnych tekstu **wyświetlania elementów** w edytorze kodu. Podczas zmieniania ustawienia czcionki pamiętać następujące informacje:  
   
 -   Ustawienia dla **czcionki** i **rozmiar** są globalne dla wszystkich elementów tekst we wszystkich [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorów.  

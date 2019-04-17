@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983205"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651304"
 ---
 # <a name="extract-an-interface-refactoring"></a>Wyodrębnianie interfejsu Refaktoryzacja
 
@@ -58,13 +58,11 @@ Ta Refaktoryzacja mają zastosowanie do:
 
    ![Wyodrębnij interface](media/extractinterface-dialog-same-file.png)
 
-
    | Pole | Opis |
    | - | - |
    | **Nowa nazwa interfejsu** | Nazwa interfejsu, który ma zostać utworzony. Nazwy będą domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. |
    | **Nowa nazwa pliku** | Nazwę wygenerowanego pliku, który będzie zawierał interfejsu. Zgodnie z nazwą interfejsu, ta nazwa domyślnie I*ClassName*, gdzie *ClassName* jest nazwą klasy wybranego powyżej. Można również wybrać opcję, aby **dodać do bieżącego pliku**. |
    | **Wybierz publiczne elementy członkowskie do interfejsu formularza** | Elementy, które można wyodrębnić w interfejsie. Można wybrać dowolną liczbę, jak chcesz. |
-
 
 4. Wybierz **OK**.
 
@@ -73,15 +71,13 @@ Ta Refaktoryzacja mają zastosowanie do:
    - C#:
 
       ![Klasa wynikowa —C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Wynikowy interfejs —C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Klasa wynikowa — języka Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Interfejs wynikowy - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Zobacz także

@@ -10,17 +10,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20a42d614278413e4e6ee09ecacdf842ccee878d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766645"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662250"
 ---
 # <a name="contained-languages"></a>Języki zawarte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-  
 *Zawiera języki* języków, które znajdują się w innych językach. Na przykład HTML w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strony mogą zawierać [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] skryptów. Architektura podwójnego język jest wymagany dla edytora plików .aspx, do zapewnienia funkcji IntelliSense, kolorowanie i inne funkcje edytowania HTML i języka skryptów.  
   
 ## <a name="implementation"></a>Implementacja  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659790"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Okno interakcji
@@ -115,7 +115,7 @@ Przykłady okien narzędzi można nawigować listy Eksploratora rozwiązań i w 
 
 | Okna narzędzi | Funkcja |
 | --- | --- |
-| Pomoc | Okno które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy z "Jak mogę?" wideo na forach MSDN. |
+| Help | Okno które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy z "Jak mogę?" wideo na forach MSDN. |
 | Dynamiczna pomoc | Okna narzędzi, które wyświetla łącza, które ułatwiają — tematy mające zastosowanie do bieżącego zaznaczenia. |
 | Przeglądarka obiektów | Zestaw ramek dwie kolumny z listy składników obiekt hierarchiczny, w okienku po lewej stronie i obiektu, właściwości i metod w prawej kolumnie. |
 
@@ -547,7 +547,6 @@ Użytkownik powinien zawsze można ustalić skutek operacji przeciągania i upus
 
 #### <a name="directory-based-projects"></a>Projekty oparte na katalog
 Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane w oparciu o charakter źródło elementu i modyfikator klawiszy, w przypadku projektów opartych na katalog docelowy:
-
 
 | Modyfikator | Kategoria | Element źródłowy: Odwołanie/łącze | Element źródłowy: Fizyczny element lub systemu plików (`CF_HDROP`) |
 |-----------------|----------| - | - |

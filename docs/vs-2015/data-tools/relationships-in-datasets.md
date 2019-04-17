@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649670"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data.DataRelation> obiekty do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwrócić powiązanych rekordów od siebie nawzajem. Dodawanie powiązanych tabel do zestawów danych przy użyciu **Kreatora konfiguracji źródła danych**, lub **Projektanta obiektów Dataset**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt dla Ciebie.  
   
  <xref:System.Data.DataRelation> Obiektu wykonuje dwie funkcje:  

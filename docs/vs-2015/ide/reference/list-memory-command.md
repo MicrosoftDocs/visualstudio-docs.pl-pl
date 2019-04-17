@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 057099c2ce1c4832c48d2eeac8774a36c5fad7b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804298"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655871"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wyświetla zawartość określonego zakresu pamięci.  
   
 ## <a name="syntax"></a>Składnia  

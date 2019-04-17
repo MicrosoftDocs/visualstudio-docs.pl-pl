@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji platformy Xamarin University szkolenia dołączone do wybranej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21fd09f6c3b33b00abb377dad14409c138edcf00
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664292"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleń Xamarin University w subskrypcji programu Visual Studio
 
@@ -27,7 +27,6 @@ Jeśli nie można aktywować swoje korzyści w czasie, wiedzieć, że Xamarin Un
 Zobacz [często zadawane pytania dotyczące programu Xamarin University](https://university.xamarin.com/faq) Aby uzyskać szczegółowe informacje.
 
 Do 21 grudnia 2018 r. subskrybenci programu Visual Studio Enterprise otrzymują sześć miesięcy nieograniczony dostęp do pełnego wykazu Xamarin University.  Subskrybenci programu Visual Studio Professional otrzymują trzymiesięcznym okresem dostępu.
-
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu platformy Xamarin University?  Możesz znaleźć szeroką gamę zasobów pomocy technicznej na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).

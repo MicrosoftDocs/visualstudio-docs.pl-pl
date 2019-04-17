@@ -25,17 +25,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805477"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667914"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Opakowuje narzędziu manifestu Microsoft mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   
 ## <a name="parameters"></a>Parametry  

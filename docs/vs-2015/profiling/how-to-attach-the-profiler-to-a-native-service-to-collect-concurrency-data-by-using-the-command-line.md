@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a33f43f7c12f45cfbe469b618385c64158547d71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780860"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654350"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do usługi natywnej i zbieranie danych współbieżności przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500. |
    |     [/Events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).       |
-
 
 3. Dołącz profiler do usługi, wpisując następujące polecenie w wierszu polecenia:  
 

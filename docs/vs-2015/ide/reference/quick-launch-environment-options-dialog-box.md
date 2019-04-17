@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782284"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658620"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Możesz użyć **Szybkie uruchamianie** do szybkiego wyszukiwania i wykonywanie akcji dla zasobów IDE, takich jak opcje, szablony menu. Nie można użyć **Szybkie uruchamianie** wyszukiwania kodu i symbole. **Szybkie uruchamianie** pole wyszukiwania znajduje się w prawym górnym rogu paska menu i jest dostępny, wybierając klawisze Ctrl + Q. Po prostu wprowadź wyszukiwany ciąg w polu. Do wyszukiwania ciągów zawierających @, użyj ”@@”.   
   
  **Szybkie uruchamianie** jest włączona domyślnie po zainstalowaniu programu Visual Studio. Na pasku menu, można wyświetlić lub ukryć **Szybkie uruchamianie** , wybierając **narzędzia**, **opcje**. Rozwiń **środowisk** węzła, a następnie wybierz **Szybkie uruchamianie**. Zaznacz lub wyczyść **Włącz pasek Szybkie uruchamianie** pole wyboru. Można również włączyć lub wyłączyć kategorie wyszukiwania na tej stronie.  

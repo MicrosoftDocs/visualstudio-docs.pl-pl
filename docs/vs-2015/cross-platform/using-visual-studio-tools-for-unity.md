@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777384"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660622"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integracji firmy Unity i funkcji zwiększających wydajność i jak za pomocą debugera programu Visual Studio do tworzenia gier Unity.  
   
 ## <a name="unity-integration-and-productivity"></a>Integracja aparatu Unity i produktywność  

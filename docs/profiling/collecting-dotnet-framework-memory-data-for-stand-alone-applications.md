@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637480"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659439"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci .NET Framework przy użyciu wiersza polecenia profilera
 
@@ -37,7 +37,6 @@ W tej sekcji opisano procedury składowane i opcje dla zbieranie alokacji pamię
 |**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>Dane profilu .NET memory
 

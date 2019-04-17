@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800427"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663148"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Instrukcje: Kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas kompilowania projektów kompilacji są często te same składniki z opcjami różne kompilacje. Na przykład można utworzyć kompilacji debugowania przy użyciu informacji o symbolach lub kompilację wydania z nie informacji o symbolach, ale z włączonymi optymalizacjami. Możesz też skompilować projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. W takich przypadkach większości opcji kompilacji pozostają takie same; tylko kilka opcji zostały zmienione, aby kontrolować konfigurację kompilacji. Za pomocą [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], użyj właściwości i warunki do tworzenia innych konfiguracji kompilacji.  
   
 ## <a name="using-properties-to-modify-projects"></a>Aby zmodyfikować projektów za pomocą właściwości  

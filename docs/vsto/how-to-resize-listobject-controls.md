@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598469"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669305"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Instrukcje: Zmiana rozmiaru formantów ListObject
   Ustaw rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli po dodaniu go do programu Microsoft Office Excel; Jednakże, możesz chcieć zmienić jej rozmiar w późniejszym czasie. Na przykład można zmienić listę dwóch kolumn na trzy kolumny.
@@ -43,7 +43,6 @@ ms.locfileid: "56598469"
  Aby zmienić rozmiar listy, możesz kliknąć i przeciągnij jeden z uchwytów zmiany rozmiaru lub ponownie zdefiniować jej rozmiar w **Zmień rozmiar listy** okno dialogowe.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Aby zmienić rozmiar listy za pomocą okna dialogowego Zmiana rozmiaru listy
-
 
 1.  Kliknij w dowolnym miejscu <xref:Microsoft.Office.Tools.Excel.ListObject> tabeli. **Narzędzia tabel** > **projektowania** zostanie wyświetlona karta na Wstążce.
 

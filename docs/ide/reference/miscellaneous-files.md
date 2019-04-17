@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bde65506a9005459f1102cd6181e0fa346ec26a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ec5b5210c37e6beaa71cecb6894ec5b72d96060
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912706"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655288"
 ---
 # <a name="miscellaneous-files"></a>Folder różnych plików
 Możesz chcieć użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] edytorów do wykonywania pracy na plikach z projektem lub rozwiązaniem. Chociaż to rozwiązanie, Otwórz, można otworzyć i zmodyfikować pliki bez dodawania ich do rozwiązania lub projektu. Pliki potrzebne do pracy z niezależnie od kontenery są nazywane różne pliki. Różne pliki są zewnętrzne w stosunku do rozwiązania i projekty nie są uwzględnione w kompilacji i nie może być dołączone rozwiązanie pod kontrolą źródła.
@@ -40,7 +40,6 @@ Możesz chcieć użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 
 > [!NOTE]
 > Niektóre pliki, które nie pojawiają się w folderze różne pliki to pliki, których nie można zmodyfikować w środowisku IDE, takich jak pliki zip i doc. IDE nie będą śledzić pliki, które mogą być modyfikowane tylko przez edytor zewnętrzny.
-
 
 ## <a name="commands-available-in-the-ide"></a>Poleceń dostępnych w środowisku IDE
  Menu i paski narzędzi, polecenia, które zawierają zmiany na podstawie formatu pliku możesz otworzyć. Po otwarciu pliku tekstowego, na przykład, zostanie wyświetlony pasek narzędzi edytora tekstów i jego polecenia są dostępne. Jeśli następnie otwórz plik schematu XML, zostanie wyświetlony pasek narzędzi schematu XML. Podczas edytowania schematu XML, polecenia paska narzędzi edytora tekstów (lub na pasku narzędzi, sam) są niedostępne. Schemat XML jest aktywnym oknem i jako takie, ma bieżący kontekst zaznaczenia. Podczas przełączania między pliku projektu i inny plik zniknąć wszystkich poleceń związanych z projektem, i tylko te, które są bezpośrednio związane z różnych plików są wyświetlane.

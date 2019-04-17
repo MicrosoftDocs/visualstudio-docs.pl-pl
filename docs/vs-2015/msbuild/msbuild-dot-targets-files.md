@@ -17,17 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4292509e9177c64a0018e0f1c7e95eebf442ffcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772289"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655065"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild — Pliki .Targets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zawiera kilka plików .targets, które zawierają elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliki w celu uproszczenia konserwacji i czytelności projektu.  
   
  Projekty zazwyczaj importują jeden lub więcej plików .targets, aby zdefiniować ich proces kompilacji. Na przykład [!INCLUDE[csprcs](../includes/csprcs-md.md)] projekt utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zaimportuje Microsoft.CSharp.targets, który importuje Microsoft.Common.targets. [!INCLUDE[csprcs](../includes/csprcs-md.md)] Sam projekt Definiowanie elementów i właściwości określonych do tego projektu, ale standard tworzenia reguły [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu są zdefiniowane w plikach .targets zaimportowane.  

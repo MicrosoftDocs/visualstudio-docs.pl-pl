@@ -26,22 +26,20 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 338b5a93ebedca14c6ceb531354cd1852fbaae6e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763396"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665431"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Opakowuje narzędzia Microsoft 32-bitowy Library Manager, lib.exe. Menedżer biblioteki tworzy i zarządza Biblioteka plików obiektów Common Object File Format (COFF). Menedżer biblioteki można tworzyć pliki eksportu i Importuj biblioteki do definicji odwołanie, eksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) i [uruchamianie LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
 
 ## <a name="parameters"></a>Parametry  
  W poniższej tabeli opisano parametry **LIB** zadania. Większość parametrów zadania odpowiada opcji wiersza polecenia.  
-
 
 |             Parametr              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

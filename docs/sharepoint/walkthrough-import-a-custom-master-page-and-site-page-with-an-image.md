@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665997"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Przewodnik: Importowanie niestandardowej strony wzorcowej oraz strony witryny z obrazem
   W tym instruktażu pokazano, jak importować niestandardową stronę wzorcową i stronę witryny, która ma obraz w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.
@@ -150,13 +150,11 @@ ms.locfileid: "56602211"
 
 2. Na **Wybieranie elementów do zaimportowania** w obszarze **modułu** w **typu** kolumny, zaznacz pola wyboru dla tylko plików w poniższej tabeli do zaimportowania.
 
-
    | Nazwa pliku | Opis |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | Niestandardowej strony wzorcowej. |
    | images_ | Plik obrazu w systemie plików programu SharePoint. |
    | SitePages_ | Strona witryny. |
-
 
 3. Wybierz **Zakończ** przycisk, aby importować wybrane elementy.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3002fa5c015d80304a9de5aaf3b7f7aa1d2d85f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629043"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665262"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punkt wejścia&gt; — element (aplikacja ClickOnce)
 Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja jest uruchamiana na komputerze klienckim.
@@ -67,7 +67,6 @@ Określa zestaw, który ma być wykonywane, kiedy to [!INCLUDE[ndptecclick](../d
 
 ## <a name="commandline"></a>Wiersz polecenia
  Wymagana. Musi być obiektem podrzędnym obiektu `entryPoint` elementu. Go nie ma elementów podrzędnych i ma następujące atrybuty.
-
 
 | Atrybut | Opis |
 |--------------| - |

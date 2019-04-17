@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65384c905e1acc99c8e534e537fe397a8286a486
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915975"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666653"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: Pisanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -294,7 +294,6 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 
 > [!TIP]
 > Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małych](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
-
 
 ##  <a name="refactor"></a> Refaktoryzacja kodu bez zmieniania testów
 

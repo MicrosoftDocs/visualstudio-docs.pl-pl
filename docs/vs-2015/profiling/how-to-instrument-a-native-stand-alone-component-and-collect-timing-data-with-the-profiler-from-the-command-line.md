@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757111"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649775"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych przy użyciu Profiler w wierszu polecenia o chronometrażu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                  Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                                                                                                  |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.                                                                                |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).                                                                                   |
-
 
 4. Uruchom aplikację docelową w typowy sposób.  
 

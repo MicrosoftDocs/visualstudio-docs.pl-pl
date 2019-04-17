@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194512"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649267"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.  
   
  W tym temacie opisano specyficzne aspekty [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]firmy [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hostingu, które należy uwzględnić podczas dostosowywania projektów i plików .targets, które mają zostać załadowane i skompilowane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pomogą Ci one upewnić się, że [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] funkcje, takie jak IntelliSense i debugowanie, pracują dla Twojego własnego projektu.  

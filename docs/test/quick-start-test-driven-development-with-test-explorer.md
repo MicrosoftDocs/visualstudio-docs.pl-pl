@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4b0692a790955c537c00e35be97d52583862e5a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415606"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649579"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane testami za pomocą narzędzia Eksplorator testów
 
@@ -56,7 +56,6 @@ Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji pr
 
 > [!IMPORTANT]
 > Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.
-
 
 > [!NOTE]
 > Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).

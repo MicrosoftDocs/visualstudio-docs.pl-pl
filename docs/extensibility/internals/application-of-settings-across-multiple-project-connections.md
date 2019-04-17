@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620746"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657041"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień do wielu połączeń projektu
 Wtyczka do kontroli źródła utworzone przy użyciu źródła kontrolki wtyczki interfejsu API w wersji 1.2, można użyć operacji zbiorczej do wykonania tych samych operacji kontroli źródła, między wieloma projektami lub wielu kontekstach połączenia. Partie można wyeliminować nadmiarowy, okna dialogowe od środowiska użytkownika projektu.
@@ -31,7 +31,6 @@ Następujące nowe funkcje obsługi operacji zbiorczej:
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)
-
 
 `SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch` Funkcja zamyka grupy. Grupy nie mogą być zagnieżdżone.
 

@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599652"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649254"
 ---
-# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: Zmień kontrolę źródła
+# <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmiana kontroli kodu źródłowego
 Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła, za pośrednictwem **Zmień kontrolę źródła** polecenia.
 
  **Zmień kontrolę źródła** polecenie dostarcza cztery podstawowe funkcje dla użytkownika:
@@ -45,7 +45,6 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
 
 ### <a name="case-5a-bind"></a>Wielkość 5a: powiązania
  Powiązania zezwala użytkownikowi na dodawanie informacji o kontroli kodu źródłowego do wybranych projektów i rozwiązań. Użytkownik jest zwykle monitowany do identyfikowania projektu w kontroli źródła, do której są dodane. Użytkownik nie może utworzyć nowy projekt w kontroli źródła w ramach tej operacji (kontrast za pomocą Dodaj do kontroli źródła).
-
 
 | Akcja | Kroki testu | Oczekiwanych wyników, aby sprawdzić |
 | - | - | - |

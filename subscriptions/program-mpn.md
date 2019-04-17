@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Szczegółowe informacje dotyczące subskrypcji, które są oferowane, jakie zasady są stosowane i ilu subskrypcji są oferowane w programie MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843170"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659860"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio jest oferowana dla partnerów w programie Microsoft Partner Network (MPN)
 Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w programie MPN to kwalifikujących się do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane na poszczególnych użytkowników, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku firmy partnera.
@@ -44,7 +44,6 @@ Niezależnie od tego, ile kompetencji zdobywa partnera liczba subskrypcji progra
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 subskrypcji programu visual Studio Enterprise dla każdego kraju; 75 na całym świecie          | 50 subskrypcji programu visual Studio Enterprise dla każdego kraju; 150 na całym świecie         |
 
-
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Subskrypcje dla partnerów zakupu Action Pack
 Partnerzy z kompetencją nie kwalifikują się do zakupu Action Pack. Tylko jeden Action Pack można zakupić dla każdego partnera.
 
@@ -66,7 +65,7 @@ Wewnętrzny tylko do użytku ograniczenie to zasadniczo oznacza, że partnerów 
 Dzięki subskrypcji programu Visual Studio jest oferowana za pośrednictwem programu MPN licencjonowanego użytkownika musisz się zalogować do programu Visual Studio przy użyciu tego samego/logowania tożsamości używanej do aktywowania subskrypcji programu Visual Studio.
 Klucze produktów nie są dostępne, aby odblokować produkt, logowanie jest jedyną opcją do uruchamiania programu Visual Studio. Subskrybent programu Visual Studio może działać w trybie offline przez 30 dni, zanim Visual Studio przestaje działać. Podczas pracy w trybie online programu Visual Studio dyskretnie odświeża stan licencji użytkownika okresowo, aby upewnić się, subskrypcja jest nadal ważny.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 
 - [Podręcznik administratora programu MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — zawiera instrukcje dotyczące sposobu przypisywania subskrypcji programu Visual Studio, MPN pracownikom.
 - [Przypisywanie subskrypcji programu Visual Studio pracownikom MPN](manage-mpn-subscriptions.md)

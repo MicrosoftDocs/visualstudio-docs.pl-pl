@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak można użyć DevOps platformy Azure jako subskrybent programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 08511fda1cc91d84929ee4fd095e82a0656d26a0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842654"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651289"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści DevOps platformy Azure dla subskrybentów programu Visual Studio
 
@@ -26,8 +26,8 @@ Po zalogowaniu się w DevOps platformy Azure przy użyciu tożsamości, która z
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup>, ekwiwalentu pełnego wymiaru czasu  | Platforma Azure tablice i repozytoriów (Basic), Azure planów testowych, artefakty platformy Azure, Azure potoków (Self-Hosted)       |  Tak          |
-| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej                                        | Tablice platformy Azure i repozytoriów (Basic)                                                            |  Tak          |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup>, ekwiwalentu pełnego wymiaru czasu  | Platforma Azure tablice i repozytoriów (Basic), Azure planów testowych, artefakty platformy Azure, Azure potoków (Self-Hosted)       |  Yes          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej                                        | Tablice platformy Azure i repozytoriów (Basic)                                                            |  Yes          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Tablice platformy Azure i repozytoriów (Basic), planów testowych platformy Azure                                              |  Tak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Tablice platformy Azure i repozytoriów (Basic), planów testowych platformy Azure                                              |  Tak          |
 
@@ -44,8 +44,6 @@ Dowiedz się więcej na temat funkcji metodyki DevOps platformy Azure:
 - [Tablice platformy Azure i repozytoriów (Basic)](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Planów testowych platformy Azure](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Systemu Azure](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
-
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 

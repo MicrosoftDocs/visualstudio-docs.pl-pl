@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873641"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664790"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalowanie systemów baz danych, narzędzia i przykłady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio nie obejmują systemy bazy danych niż te, które są używane wewnętrznie. Do tworzenia aplikacji połączonych danych w programie Visual Studio, zazwyczaj instaluje system bazy danych na lokalnej maszynie do programowania, a następnie wdrażanie aplikacji i baz danych w środowisku produkcyjnym kiedy będą gotowe. System bazy danych, które mają być dostępne z aplikacji platformy .NET i mają być wyświetlane w okna narzędzi danych programu Visual Studio musi on mieć dostawcy danych ADO.NET. Dostawca musi obsługiwać specjalnie Entity Framework, jeśli planowane jest użycie jednostki danych modeli w aplikacji .NET.     Wielu dostawców są oferowane za pośrednictwem Menedżera pakietów NuGet lub za pośrednictwem galerii programu Visual Studio.  
   
  Do tworzenia aplikacji programu SQL upewnij się, że masz zainstalowane w programie Visual Studio program SQL Server Data Tools. Kliknij przycisk **widoku** menu. Jeśli nie widzisz Eksplorator obiektów SQL Server, przejdź do panelu sterowania, a następnie zmienić program Visual Studio. W oknie Instalatora wybierz **programu Microsoft SQL Server Data Tools**.  

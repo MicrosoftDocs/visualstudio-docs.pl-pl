@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9547aad720567e2f62d3fde1248504c4849e11
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: cb6763ef598cb700c7fb7b3d40a3890629c2a058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790644"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667563"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie kodu języka Visual Basic, za pomocą programu Visual Studio
 
@@ -47,7 +47,17 @@ Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacj
 
 ::: moniker-end
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+::: moniker range="vs-2017"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
 

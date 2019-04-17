@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856959"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663197"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET na maszynach wirtualnych platformy Azure i zestawów skalowania maszyn wirtualnych platformy Azure przy użyciu rozszerzenia Snapshot Debugger
 
@@ -35,11 +35,11 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Rozszerzenie Snapshot Debugger dla usługi Azure Virtual Machines (VM) i Azure Virtual Machine Scale zestawy (VMSS) jest dostępne tylko dla wersji zapoznawczej programu Visual Studio Enterprise 2019 lub wyższe w przypadku **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
+* Rozszerzenie Snapshot Debugger dla usługi Azure Virtual Machines (VM) i zestawy skalowania maszyn wirtualnych platformy Azure jest dostępne tylko dla programu Visual Studio Enterprise 2019 lub wyższe w przypadku **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
 
-    Jeśli jeszcze nie jest zainstalowany, zainstaluj [wersji zapoznawczej programu Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
-* Zbieranie migawek jest dostępna dla następujących aplikacji sieci web Azure VM/VMSS:
+* Zbieranie migawek jest dostępna dla następujących aplikacji sieci web zestawów skalowania maszyn wirtualnych Machines\Virtual platformy Azure:
   * Aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
   * Aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
 
@@ -48,9 +48,9 @@ W tym samouczku wykonasz następujące czynności:
 1. Otwórz projekt, który chcesz debugowania migawek.
 
     > [!IMPORTANT]
-    > Do debugowania migawki, należy otworzyć *tę samą wersję kodu źródłowego* , są publikowane w usłudze Azure VM/VMSS.
+    > Do debugowania migawki, należy otworzyć *tę samą wersję kodu źródłowego* , są publikowane w usłudze Azure wirtualnego Machine\Virtual zestawu skalowania maszyn.
 
-1. Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz Azure VM/VMSS aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
+1. Wybierz **Debuguj > Dołączanie rozszerzenia Snapshot Debugger...** . Wybierz Azure wirtualnego Machine\Virtual zestawu skalowania maszyn aplikacji sieci web jest wdrażana i konto magazynu platformy Azure, a następnie kliknij przycisk **Dołącz**.
 
       ![Uruchamianie rozszerzenia snapshot debugger z menu Debugowanie](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ W tym samouczku wykonasz następujące czynności:
 
     > [!IMPORTANT]
     > Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger** dla swojej maszyny Wirtualnej usług IIS jest automatycznie uruchamiany ponownie.
-    > Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger** dla Twojego zestawu skalowania maszyn wirtualnych, wymaga ręcznego uaktualnienia każdego wystąpienia zestawu skalowania maszyn wirtualnych.
+    > Po raz pierwszy wybierzesz **dołączyć rozszerzenie Snapshot Debugger** dla zestawów skalowania maszyn wirtualnych, wymaga ręcznego uaktualnienia dla wszystkich wystąpień zestawów skalowania maszyn wirtualnych.
 
     Metadane dla **modułów** nie zostanie początkowo aktywowane, przejdź do aplikacji sieci web i **Rozpocznij zbieranie** przycisk stanie się aktywny. Program Visual Studio jest teraz w trybie debugowania migawek.
 
@@ -66,9 +66,9 @@ W tym samouczku wykonasz następujące czynności:
 
     > [!NOTE]
     > Rozszerzenie witryny usługi Application Insights obsługuje również debugowania migawek. Jeśli wystąpią "rozszerzenie nieaktualna witryny" komunikat o błędzie, zobacz [rozwiązania problemu wskazówki i znanych problemów dotyczących debugowania migawek](../debugger/debug-live-azure-apps-troubleshooting.md) dla uaktualnienie szczegółowe informacje.
-    > Dla zestawu skalowania maszyn wirtualnych użytkownik będzie musiał ręcznie uaktualnić wystąpienia w ich zestawu skalowania maszyn wirtualnych po dołączanie rozszerzenia Snapshot Debugger po raz pierwszy.
+    > Dla zestawu skalowania maszyn wirtualnych użytkownik będzie musiał ręcznie uaktualnić wystąpienia w ich zestawów skalowania maszyn wirtualnych po dołączanie rozszerzenia Snapshot Debugger po raz pierwszy.
 
-   **Modułów** okna dowiesz się, gdy wszystkie moduły zostały załadowane dla usługi Azure VM/VMSS (wybierz **Debuguj > Windows > modułów** otworzyć to okno).
+   **Modułów** okna dowiesz się, gdy wszystkie moduły zostały załadowane dla platformy Azure wirtualnego Machine\Virtual zestawu skalowania maszyn (wybierz **Debuguj > Windows > modułów** otworzyć to okno).
 
    ![Sprawdź okno modułów](../debugger/media/snapshot-modules.png)
 
@@ -105,7 +105,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Czy potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
+**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 

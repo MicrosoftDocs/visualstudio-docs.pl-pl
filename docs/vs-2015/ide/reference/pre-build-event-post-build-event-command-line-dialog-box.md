@@ -34,17 +34,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753381"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658036"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Wiersz polecenia zdarzenia sprzed kompilacji/zdarzenia po kompilacji — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Możesz wpisać zdarzenia przed lub po kompilacji dla [zdarzenia Stroka kompilacji, Projektant projektu (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) bezpośrednio w edycji pola, użytkownik może wybrać makra przed i po kompilacji z listy dostępnych makr.  
   
 > [!NOTE]

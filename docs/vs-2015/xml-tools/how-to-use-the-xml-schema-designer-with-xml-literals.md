@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7855a5dc8c6524dd28a730a81df1c291e04ec466
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794716"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653609"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: Używanie projektanta schematu XML z literałami XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym temacie opisano sposób wyświetlania schemat jest skojarzony z danymi XML literału w projekcie Visual Basic.  
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Aby utworzyć nowy projekt aplikacji konsoli Visual Basic  

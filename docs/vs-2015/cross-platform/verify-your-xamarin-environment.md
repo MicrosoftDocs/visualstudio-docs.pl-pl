@@ -6,17 +6,16 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 220931b3c00087b778b4c886046795b3f83acaa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8be3ad8b102677014aca4b59fed29f11cf3d50a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767000"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661051"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdzanie środowiska Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Po ukończeniu ma instalatorów (zobacz [Instalator i instalacja](../cross-platform/setup-and-install.md)), Poświęć kilka minut, aby sprawdzić, wszystko jest gotowe do środowisko programowania Xamarin.  
   
  Po zakończeniu tych weryfikacji możesz wykonać jedną lub obie następujące instruktaże:  

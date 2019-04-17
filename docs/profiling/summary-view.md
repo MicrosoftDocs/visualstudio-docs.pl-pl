@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed4fca494cfdbd7d74d1446e57ba740580b52d11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632696"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668733"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.
@@ -43,7 +43,6 @@ Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub
 
 ## <a name="report"></a>Raport
  Możesz kliknąć linki Otwórz różne widoki i do porównania, Zapisz lub filtrować raport na liście raportów. Lista jest po prawej stronie wykres osi czasu.
-
 
 | | |
 |----------------------------| - |

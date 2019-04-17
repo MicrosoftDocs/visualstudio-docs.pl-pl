@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5503c6d579fc77aa066e4052aa109b531ff1e39c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1aa698c2c152b33d111ffe893ec22fbf9eec4316
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942664"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652179"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj test mieszany, aby określić, które wydajności sieci web, jednostki i kodowane testy interfejsu użytkownika można uwzględnić w scenariuszu testu obciążenia
 
@@ -81,12 +81,10 @@ Można dodać więcej web wydajności i testy jednostkowe do mieszanki tekstu sc
 > [!WARNING]
 > **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
-
  Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny, a nie za pomocą suwaków. Jeśli bezpośrednio wprowadzasz wartość procentową, inne elementy nie skoryguje automatycznie.
 
 > [!NOTE]
 > Suwaki są wyłączone, gdy łączny nie powoduje dodania do 100% lub wartości procentowe są wprowadzane do **%** kolumny są liczbę miejsc dziesiętnych.
-
 
  Po wprowadzeniu wartości procentowe ręcznie, należy pamiętać, że sumę wszystkich elementów wynosi 100%. Podczas zapisywania mieszany, jeśli suma nie jest w 100%, możesz zostanie wyświetlony monit o zaakceptowanie wartości procentowe są one, lub przejdź wstecz i zmieniaj je tak. Jeśli zdecydujesz się je zaakceptować, ponieważ są one, będzie naliczana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy, a następnie ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawione na % 66,67 (80 podzielona przez 120), a drugi element zostanie ustawione na % 33,33 (40 podzielona przez 120).
 

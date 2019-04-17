@@ -20,17 +20,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b26bd7d5f65122695a96dc5339e39044ff93a924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 132d1c3fbf23433ea89e7dba39bc226bc253b015
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752837"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650827"
 ---
 # <a name="project-element-msbuild"></a>Project — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Element główny wymagany [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pliku projektu.  
   
 ## <a name="syntax"></a>Składnia  

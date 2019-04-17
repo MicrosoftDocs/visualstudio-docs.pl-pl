@@ -13,17 +13,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2565b3b8fd84714693661fcf0cf04961a70d10f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779139"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652946"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Zaawansowane ustawienia dla usług — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] logowania, ról i usług profilu z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć **usług** strony w **projektanta projektu** do skonfigurowania usług aplikacji klienta. Aby uzyskać więcej informacji na temat **usług** stronie, zobacz [Strona usług, Projektant projektu](../../ide/reference/services-page-project-designer.md).  
   
  Użyj **ustawienia zaawansowane dla usług** okna dialogowego **usług** strony w **projektanta projektu** Aby skonfigurować ustawienia zaawansowane dla usług aplikacji klienta. Za pomocą tych ustawień, można zastąpić niektóre zachowania domyślne aplikacji usługa mniej typowych scenariuszy. Aby uzyskać więcej informacji, zobacz [usług aplikacji klienta](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).  

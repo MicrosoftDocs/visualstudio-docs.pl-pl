@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789842"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648838"
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Edytor kodu udostępnia **selektor wstawek kodu** pozwala, za pomocą kilku kliknięć myszą, aby wstawić gotowych do użycia bloków kodu do aktywnego dokumentu.  
   
  Procedury, aby wyświetlić **selektor wstawek kodu** zależy od języka.  

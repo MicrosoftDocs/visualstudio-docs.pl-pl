@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856784"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648331"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: Tworzenie prostego C# aplikacji konsoli w programie Visual Studio
 
@@ -28,7 +28,7 @@ W tym samouczku dla C#, użyjesz programu Visual Studio do tworzenia i uruchomis
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 

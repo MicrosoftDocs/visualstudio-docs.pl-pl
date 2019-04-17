@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764549"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659023"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednej z TableAdapter dbdirect — metody (na przykład `TableAdapter.Insert`).
   
  Aby zapisać dane z kolekcji obiektów, w pętli poprzez kolekcji obiektów (na przykład pętli for dalej) i wysłać wartości dla każdego obiektu do bazy danych przy użyciu jednej z TableAdapter dbdirect — metody.  

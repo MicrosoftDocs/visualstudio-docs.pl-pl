@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927181"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658295"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opcje, Edytor tekstu HTML (formularze sieci Web), formatowanie
 
@@ -41,7 +41,6 @@ Te opcje określają, jak jest pisany wielką literą znaczniki dla kontrolki se
 |**Małe litery**|Nazwy elementów są ponownie sformatowany na małe litery.|
 |**Definicja zestawu**|Element przypadek jest określany przez jak element jest zdefiniowany w klasie odpowiedniego typu.|
 
-
 **Tag kliencki, atrybuty klienta**
 
 Te opcje określają automatyczne formatowanie zmian nazw atrybutów HTML i właściwości na wielkie lub małe litery, czy pozostaną, tak jak zostały wprowadzone.
@@ -51,7 +50,6 @@ Te opcje określają automatyczne formatowanie zmian nazw atrybutów HTML i wła
 |**Jak wprowadzono**|Atrybut jest dokładnie tak, jak możesz wprowadzić.|
 |**wielkie litery**|Nazwy atrybutów są ponownie sformatowany na wielkie litery.|
 |**Małe litery**|Nazwy atrybutów są ponownie sformatowany na małe litery.|
-
 
 ## <a name="automatic-formatting-options"></a>Opcje formatowania automatycznego
 
@@ -65,7 +63,6 @@ Te opcje spowodować, że edytor widok źródła dodać lub usunąć fizycznego 
 - **Wstaw cudzysłowy wartości atrybutów podczas pisania**
 
    Gdy ta opcja jest zaznaczona, Edytor automatycznie umieszcza atrybutów w cudzysłowie, jak podczas pisania (na przykład: ID="Select1"). Usuń zaznaczenie tej opcji, jeśli wolisz ręcznie wstawiania znaków cudzysłowu do znaczników.
-
 
    > [!NOTE]
    > Czy ta opcja jest zaznaczona, zostaną zachowane wszystkie istniejące znaki cudzysłowu w znaczników; znaki cudzysłowu, nigdy nie są usuwane.

@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792945"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665847"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia w tym artykule opisano wdrażanie aplikacji przez określenie unikatowej tożsamości wdrożenia, identyfikujące cech wdrażania, takie jak instalowanie lub tryb online, określenie aplikacji zaktualizuj ustawienia i lokalizacje, aktualizacji i wskazanie odpowiedniego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji.  
   
 ## <a name="parameters"></a>Parametry  
@@ -44,7 +43,7 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdroże
 |`Description`|Opcjonalnie `String` parametru.<br /><br /> Określa opcjonalny opis dla aplikacji.|  
 |`DisallowUrlActivation`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja powinna zostać uruchomiona automatycznie po otwarciu go przy użyciu adresu URL. Jeśli ten parametr jest `true`, aplikację można uruchomić tylko z Start menu. Wartość domyślna tego parametru to `false`. Wejście to stosuje się tylko wtedy, gdy `Install` wartość parametru jest `true`.|  
 |`EntryPoint`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla wygenerowanego zestawu manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu wdrażania, dane wejściowe określają [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji.<br /><br /> W [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], [generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md) wymagane `EntryPoint` do generowania manifestu aplikacji. (Zestaw lub manifesty macierzyste nie wymagają `EntryPoint`.) Wymóg ten był stosowany z powodu błędu kompilacji: "MSB3185: Punkt wejścia nie jest określony dla manifestu."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] nie wystawia tego błędu podczas `EntryPoint` zadanie nie zostanie określony. Zamiast tego \<customhostspecified — > tag jest wstawiany jako element podrzędny elementu \<Punkt_wejścia > tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Za pomocą poniższej procedury, można dodać zależności DLL do manifestu aplikacji:<br /><br /> 1.  Rozpoznaj odwołania zestawu z wywołaniem <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i samego montażu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekazać zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|Opcjonalne [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce.|  
+|`ErrorReportUrl`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce.|  
 |`InputManifest`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument danych wejściowych XML, która będzie służyć jako podstawa do generatora manifestu. Dzięki temu dane strukturalnych, takich jak niestandardowe definicje manifestu są odzwierciedlane w manifeście danych wyjściowych. Element główny dokumentu XML musi być zbiorem węzła trustinfo w obszarze nazw asmv1.|  
 |`Install`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja jest zainstalowaną aplikacją lub aplikacją tylko w trybie online. Jeśli ten parametr jest `true`, aplikacja zostanie zainstalowana w menu Start użytkownika i może zostać usunięty przez za pomocą okna dialogowego Dodaj lub usuń programy. Jeśli ten parametr jest `false`, aplikacja jest przeznaczona do użytku online ze strony sieci Web. Wartość domyślna tego parametru to `true`.|  
 |`MapFileExtensions`|Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy mapowanie rozszerzenia nazwy pliku .deploy jest używane. Jeśli ten parametr jest `true`, każdy plik programu jest publikowany z rozszerzeniem nazwy pliku .deploy. Ta opcja jest przydatna dla zabezpieczeń serwera sieci Web ograniczyć liczbę rozszerzeń nazw plików, które muszą być odblokowane, żeby umożliwić [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia aplikacji. Wartość domyślna tego parametru to `false`.|  

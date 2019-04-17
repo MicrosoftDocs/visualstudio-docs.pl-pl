@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0bc688f20b249b86c3a3d5512569feb47789c05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843120"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649918"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
 Kompleksowy opis technologii firmy Microsoft oraz praktyczne rozwiązania prawdziwych problemów.  W zależności od Twojej subskrypcji są uprawnieni do drukowanego magazynu, lub wczesny dostęp do wersji cyfrowej.
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 Kroki, aby aktywować swoje korzyści zależą od wybranej wersji.
@@ -33,7 +32,6 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 2. Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij **Subskrybuj** na kafelku Subskrypcja magazynu MSDN Magazine. (Kliknij pozycję "!" w prawym dolnym rogu Kafelek, aby uzyskać dostęp wersja cyfrowa.)
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine korzyści kafelka](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. Na stronie magazynu MSDN Magazine wybierz typ preferowanych subskrypcji.  Możesz wybrać wersja cyfrowa bez dodatkowych opłat, niezależnie od miejsca zamieszkania.  Wersja drukowana jest dostępna bezpłatnie dla mieszkańcy USA.  Wysyłanie opłaty za drukowane wersje wysyłany na adresy-US.
    > [!div class="mx-imgBorder"]
@@ -64,7 +62,6 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

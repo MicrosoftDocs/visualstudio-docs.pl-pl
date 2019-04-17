@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834960"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647962"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) na Windows Forms Designer szczególną uwagę właśnie: nazwy kolumn w etykietach podpis jest umieszczany w ciąg bardziej czytelny, gdy dwie lub więcej słów są Znaleziono ze sobą połączonych. Można dostosować sposób tworzenia tych etykiet, ustawiając **SmartCaptionExpression**, **SmartCaptionReplacement**, i **SmartCaptionSuffix** wartości w **projektantów HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data** klucza rejestru.
 

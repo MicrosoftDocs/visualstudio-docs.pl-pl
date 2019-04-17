@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ccaf648d4109679b7d1343df462ae4e8da3822
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2ecfba0dceb7e7695a077464151e50f4dc042526
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856246"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650290"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki start: Utwórz swoją pierwszą aplikację konsoli w programie Visual Studio za pomocą Visual Basic
 
@@ -27,7 +27,7 @@ W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko pr
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 

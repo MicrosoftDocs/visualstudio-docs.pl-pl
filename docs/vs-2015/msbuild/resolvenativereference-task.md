@@ -19,17 +19,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 31de2c146accd71ae1606be62ab06fa368e7fb89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758551"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650320"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Usuwa odwołania natywne. Implementuje <xref:Microsoft.Build.Tasks.ResolveNativeReference> klasy. Ta klasa obsługuje infrastrukturę .NET Framework, która nie jest przeznaczona do użycia bezpośrednio w kodzie.  
   
 ## <a name="task-parameters"></a>Parametry zadania  
@@ -37,7 +36,7 @@ Usuwa odwołania natywne. Implementuje <xref:Microsoft.Build.Tasks.ResolveNative
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|Wymagane [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` parametru.<br /><br /> Pobiera lub ustawia Przeszukuj ścieżki pod kątem rozpoznawania tożsamości zestawu odwołania natywne.|  
+|`AdditionalSearchPaths`|(Wymagane [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` parametru.<br /><br /> Pobiera lub ustawia Przeszukuj ścieżki pod kątem rozpoznawania tożsamości zestawu odwołania natywne.|  
 |`ContainedComComponents`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Pobiera lub ustawia składników COM natywnego zestawu.|  
 |`ContainedLooseEtcFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Pobiera lub ustawia luźne pliki Etc na liście natywny manifest.|  
 |`ContainedLooseTlbFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Pobiera lub ustawia plików .tlb luźne natywny zestaw.|  

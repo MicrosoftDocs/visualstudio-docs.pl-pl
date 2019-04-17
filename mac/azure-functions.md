@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857246"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670345"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -147,9 +147,7 @@ Co ważne ustawienie może być konieczne ustawienie jest `FUNCTIONS_EXTENSION_V
     - CRUD POST protokołu HTTP
     - Wyzwalacz protokołu HTTP z parametrami
 
-
 - **Czasomierz** — wykonywanie oczyszczania lub innych zadań wsadowych na ze wstępnie zdefiniowanym harmonogramem. Ten szablon ma dwa pola: nazwę i harmonogramu jest wyrażeniem CRON 6 pól. Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na czas](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Wyzwalacz kolejki** — jest to funkcja, która będzie odpowiadać na komunikaty przychodzące w kolejce usługi Azure Storage. Oprócz nazwy funkcji, ten szablon ma **ścieżki** (Nazwa kolejki, z której zostanie odczytany komunikat) i konto magazynu **połączenia** (Nazwa ustawienia aplikacji zawierającego magazynu Parametry połączenia dla konta). Aby uzyskać więcej informacji, zobacz [usługi Azure functions artykuł na usługi Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

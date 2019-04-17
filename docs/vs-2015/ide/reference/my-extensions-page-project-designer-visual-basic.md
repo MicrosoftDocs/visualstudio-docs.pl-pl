@@ -14,17 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65925a0ee6b7247ecd85f9db9536ff8519a01a33
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660999"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Strona Moje rozszerzenia, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **Moje rozszerzenia** strony **projektanta projektu** zarządzanie `My` rozszerzenia nazw w projekcie. `My` przestrzeń nazw rozszerzeniom umożliwia dostosowanie `My` przestrzeni nazw, aby dodać własne niestandardowe elementy członkowskie. Informacje o tworzeniu niestandardowych `My` rozszerzenia przestrzeni nazw, zobacz [rozszerzanie My Namespace w języku Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Aby uzyskać dostęp do **Moje rozszerzenia** stronie, kliknij dwukrotnie **mój projekt** dla węzła projektu w **Eksploratora rozwiązań**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **Moje rozszerzenia** kartę.  

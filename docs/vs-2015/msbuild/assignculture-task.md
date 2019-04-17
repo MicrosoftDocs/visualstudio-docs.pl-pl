@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c161dcd18a46928c9e180608a122f106ecd6554e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780905"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667173"
 ---
 # <a name="assignculture-task"></a>AssignCulture — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadanych o nazwie `Culture` zawierającego odpowiednie kulturze identyfikatora. Na przykład, nazwa pliku Form1.fr-fr.resx ma osadzony kultury identyfikator "fr-fr", dlatego to zadanie powoduje wygenerowanie elementu, który ma taką samą nazwę z metadanymi `Culture` równa `fr-fr`. Zadanie tworzy także listę nazw plików z kulturą usunięte z nazwy pliku.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

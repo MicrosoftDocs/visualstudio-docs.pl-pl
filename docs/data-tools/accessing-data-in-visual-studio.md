@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983497"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659725"
 ---
 # <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
@@ -27,7 +27,7 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
 
 Dla aplikacji JavaScript, Python, PHP, Ruby lub C++ możesz łączyć się dane tak jak dowolne inne, uzyskując bibliotek i pisania kodu. Dla aplikacji .NET Visual Studio udostępnia narzędzia, które umożliwia poznawanie źródeł danych, tworzyć modele obiektów do przechowywania i manipulowanie danymi w pamięci i powiązać dane z interfejsu użytkownika. Microsoft Azure udostępnia zestawy SDK for .NET, Java, Node.js, PHP, Python, Ruby i aplikacje mobilne i narzędzi w programie Visual Studio do łączenia się z usługi Azure Storage.
 
-Poniższej przedstawiono kilka wiele systemów bazy danych i magazynu, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują aprowizacji i administrowania źródłowy magazyn danych. **Programowanie na platformie Azure** obciążenie w [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) umożliwia pracę z magazynami danych na platformie Azure bezpośrednio z programu Visual Studio.
+Poniższej przedstawiono kilka wiele systemów bazy danych i magazynu, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują aprowizacji i administrowania źródłowy magazyn danych. **Programowanie na platformie Azure** obciążenie w [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) umożliwia pracę z magazynami danych na platformie Azure bezpośrednio z programu Visual Studio.
 
 ![Obciążenie programistyczne platformy Azure](media/azure-development-workload.png)
 

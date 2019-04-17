@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770853"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669812"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki. Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
   
  Ponieważ elementy są reprezentowane przez typ elementu, do których one należą, warunki "item" i "wartość elementu" może służyć zamiennie.  

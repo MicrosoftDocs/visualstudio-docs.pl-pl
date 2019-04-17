@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 081abc8765e1f95b723a598f4fedbaef4357c539
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857778"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655182"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace (C#, Visual Basic)
 
@@ -45,7 +45,6 @@ Program Visual Studio 2017 i nowsze wersje nie obejmują *BuildInfo.config* plik
 * W przypadku wdrożenia na platformie Azure, użyj [usługi Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Jeśli musisz używać IntelliTrace, otwórz projekt w programie Visual Studio i ładowanie plików symboli z pasujących kompilacji. Możesz załadować pliki symboli z **modułów** okna lub przez skonfigurowanie symboli w **narzędzia** > **opcje** > **debugowania**   >  **Symbole**.
-
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Skonfiguruj potok kompilacji, aby dodać lokalizacje źródła, kompilacji i symboli do manifestu kompilacji (BuildInfo.config pliku). Team Foundation Build automatycznie tworzy ten plik i umieszcza go w folderze danych wyjściowych projektu.
@@ -168,7 +167,7 @@ Program Visual Studio 2017 i nowsze wersje nie obejmują *BuildInfo.config* plik
 
 1.  Otwórz dziennik IntelliTrace (plik .iTrace) z programu Visual Studio Enterprise. Lub po prostu dwukrotnie kliknąć plik, jeśli masz program Visual Studio Enterprise na tym samym komputerze.
 
-2.  Wybierz **Otwórz rozwiązanie** z Visual Studio automatycznie otwierał pasujące rozwiązanie lub projekt, jeśli projekt nie został zbudowany jako część rozwiązania. [PYT.: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co mam zrobić?](#InvalidConfigFile)
+2.  Wybierz **Otwórz rozwiązanie** z Visual Studio automatycznie otwierał pasujące rozwiązanie lub projekt, jeśli projekt nie został zbudowany jako część rozwiązania. [PYT.: W dzienniku IntelliTrace brakuje informacji o mojej wdrożonej aplikacji. Dlaczego to się stało? Co zrobić?](#InvalidConfigFile)
 
      Program Visual Studio automatycznie półki oczekujących zmian, po otwarciu pasujące rozwiązanie lub projekt. Aby uzyskać więcej informacji na temat tego zestawu zmian odłożonych, Szukaj w **dane wyjściowe** okna lub **Team Explorer**.
 
@@ -215,7 +214,7 @@ Program Visual Studio 2017 i nowsze wersje nie obejmują *BuildInfo.config* plik
      Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań, przejść przez kod lub przy użyciu **IntelliTrace** okna [Przenieś tyłu lub do przodu "w czasie" między innymi metodami](../debugger/intellitrace.md) które zostały wywołane podczas tego zdarzenia dotyczącego wydajności.
 
     - [Co to jest wszystkie te inne zdarzenia i informacje w dzienniku IntelliTrace?](../debugger/using-saved-intellitrace-data.md)
-    - [Co jeszcze można tu zrobić?](#WhatElse)
+    - [Co jeszcze można zrobić, w tym miejscu?](#WhatElse)
     - [Potrzebujesz więcej informacji na temat zdarzeń dotyczących wydajności?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>Diagnozowanie wyjątku
@@ -294,7 +293,7 @@ Program Visual Studio 2017 i nowsze wersje nie obejmują *BuildInfo.config* plik
     </SourceControl>
     ```
 
-  - **Git**
+  - **Usługa Git**
 
     - **GitSourceControl**: Lokalizacja **GitSourceControl** schematu
 
@@ -346,7 +345,7 @@ Program Visual Studio 2017 i nowsze wersje nie obejmują *BuildInfo.config* plik
     </Build>
     ```
 
-  - **Git**
+  - **Usługa Git**
 
     ```xml
     <Build type="MSBuild">

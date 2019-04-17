@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2566d5d0d653af7caa29474e7916352600bf94d4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804945"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668265"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply, projektant szablonów
 **SendAndReceiveReply** szablon służy do tworzenia pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.ReceiveReply> działań w ramach <xref:System.Activities.Statements.Sequence> działanie, które są skorelowane w ramach wymiany komunikatów żądań/odpowiedzi wzorzec na komputerze klienckim.  
@@ -42,7 +42,6 @@ ms.locfileid: "54804945"
 
 ### <a name="properties-of-receivereply"></a>Właściwości ReceiveReply  
  W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.ReceiveReply> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości i niektóre mogą być edytowane [!INCLUDE[wfd2](../includes/wfd2-md.md)]powierzchni projektowej.  
-
 
 |                                 Nazwa właściwości                                 | Wymagane |                                                                                                                                                                                                                                                                                                                                                        Użycie                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

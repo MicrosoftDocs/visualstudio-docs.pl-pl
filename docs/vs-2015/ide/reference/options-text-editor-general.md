@@ -48,17 +48,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d9787342709ba9b09ac533177fd6600b9e5c86a0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794460"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669006"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 To okno dialogowe umożliwia zmianę ustawień globalnych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytorze kodu i tekstu. Aby wyświetlić to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **edytora tekstów** folder, a następnie kliknij **ogólne**.  
   
 > [!NOTE]

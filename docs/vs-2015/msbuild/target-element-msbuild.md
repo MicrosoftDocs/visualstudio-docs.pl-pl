@@ -19,17 +19,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758293"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651451"
 ---
 # <a name="target-element-msbuild"></a>Target — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do wykonania po kolei.  
   
  \<Project>  

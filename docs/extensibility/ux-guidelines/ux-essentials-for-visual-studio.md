@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723503"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667458"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 ## <a name="best-practices"></a>Najlepsze rozwiązania
@@ -102,7 +102,6 @@ ms.locfileid: "56723503"
 
 #### <a name="example-video-links-in-team-explorer"></a>Przykład: linki wideo w programie Team Explorer
 Wymuszanie użytkownikowi odczyt tekst objaśnienia przed odrzucanie interfejsu użytkownika jest zapobieganie wzorzec, w programie Visual Studio. Prawidłowo zaprojektowana łącza wideo powinna zostać wyświetlona etykietka narzędzia z dodatkowymi informacjami na po wskazaniu wskaźnikiem, a następnie klikając polecenie "&times;" należy odrzucić wiadomości, bez konieczności dalszej interakcji.
-
 
  ![Tekst objaśniający ochrony przed złośliwym&#45;wzorzec &#45; niepoprawne](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Wzorzec niepoprawny link do wideo
 

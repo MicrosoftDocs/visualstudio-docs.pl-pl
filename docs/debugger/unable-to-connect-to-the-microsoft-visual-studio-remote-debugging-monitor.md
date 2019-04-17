@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665626"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Nie można połączyć się z Monitorem debugera zdalnego programu Microsoft Visual Studio
 Ten komunikat może wystąpić, ponieważ monitor debugera zdalnego jest nie prawidłowo skonfigurowane na komputerze zdalnym lub maszynie zdalnej jest niedostępny z powodu problemów z siecią lub obecności zapory.
@@ -80,7 +80,6 @@ Program Visual Studio nie może połączyć się ze zdalnym debugerem. Ten komun
 - Numer portu jest zablokowany na zaporze. Upewnij się, że Zapora jest [nie blokuje Twoje żądanie](#firewall), zwłaszcza, jeśli używasz zapory innych firm.
 
 - Wersja zdalnego debugera jest niezgodna z programu Visual Studio. Aby uzyskać poprawną wersję zdalnego debugera, zobacz [zdalnego debugowania](../debugger/remote-debugging.md)
-
 
 ## <a name="valid_name"></a> Nazwa żądanego była prawidłowa, ale można odnaleźć żadnych danych żądanego typu
 

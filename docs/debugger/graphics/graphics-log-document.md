@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714286"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658048"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
 Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gdy aplikacja została uruchomiona w ramach sesji diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów z renderowaniem i wydajności.
@@ -97,7 +97,6 @@ Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gd
 |**Wersja**|Wersja aplikacji.|
 
  **Plik dziennika VSG** są wyświetlane informacje o dokument dziennika grafiki.
-
 
 | Właściwość | Opis |
 |------------------------| - |

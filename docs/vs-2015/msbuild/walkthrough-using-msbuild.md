@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792223"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655013"
 ---
 # <a name="walkthrough-using-msbuild"></a>Przewodnik: Korzystanie z programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Studio. Ten przewodnik stanowi wprowadzenie do bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild. Uzyskasz informacje na temat:  
   
 - Tworzenie i manipulowanie pliku projektu.  

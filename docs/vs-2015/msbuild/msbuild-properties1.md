@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 104fe082f9e18a7be97f2ab95a022288316cc638
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773238"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660752"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.  
   
 ## <a name="defining-and-referencing-properties-in-a-project-file"></a>Definiowanie właściwości i odwoływanie się do nich w pliku projektu  
@@ -119,7 +118,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 -   Począwszy od platformy .NET Framework w wersji 3.5, elementy `Target` mogą zawierać elementy `PropertyGroup` zawierające deklaracje właściwości.  
   
 ## <a name="storing-xml-in-properties"></a>Przechowywanie kodu XML we właściwościach  
- Właściwości mogą zawierać dowolny kod XML pomocny w przekazywaniu wartości do zadań albo wyświetlaniu informacji o logowaniu. W przykładzie poniżej pokazano właściwość `ConfigTemplate`, która ma wartość zawierającą kod XML oraz odwołania do innych właściwości. Element [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zastępuje odwołania do właściwości poprzez użycie ich odpowiednich wartości. Wartości właściwości są przypisywane w kolejności, w jakiej występują. Dlatego w tym przykładzie właściwości użyte w odwołaniach `$(MySupportedVersion)`, `$(MyRequiredVersion)` i `$(MySafeMode)` powinny już być zdefiniowane.  
+ Właściwości mogą zawierać dowolny kod XML pomocny w przekazywaniu wartości do zadań albo wyświetlaniu informacji o logowaniu. W przykładzie poniżej pokazano właściwość `ConfigTemplate`, która ma wartość zawierającą kod XML oraz odwołania do innych właściwości. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zastępuje odwołania do właściwości przy użyciu ich odpowiednich wartości. Wartości właściwości są przypisywane w kolejności, w jakiej występują. Dlatego w tym przykładzie właściwości użyte w odwołaniach `$(MySupportedVersion)`, `$(MyRequiredVersion)` i `$(MySafeMode)` powinny już być zdefiniowane.  
   
 ```  
   

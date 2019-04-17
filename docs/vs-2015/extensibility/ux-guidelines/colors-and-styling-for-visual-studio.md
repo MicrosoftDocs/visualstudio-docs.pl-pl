@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765348"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670098"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "54765348"
 |Masz poszczególnych funkcji lub grupy funkcji i udostępnione kolor dla podobnych elementów.|**Kolory niestandardowe**|Kolor tokenu nazw, które są specyficzne dla obszaru i nie jest przeznaczone do udostępnienia za pomocą innego interfejsu użytkownika|
 |Chcesz zezwolić użytkownikom końcowym dostosowywanie interfejsu użytkownika lub zawartości (na przykład edytorów tekstu lub wyspecjalizowanych projektanta systemu windows).|**Dostosowywania przez użytkownika końcowego**<br /><br /> **(Narzędzia > Opcje w oknie dialogowym)**|Ustawienia zdefiniowane na stronie "Czcionki i kolory" **Narzędzia > Opcje** okna dialogowego lub wyspecjalizowanych specyficzne dla funkcji interfejsu użytkownika w jednej strony.|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio motywów
  Program Visual Studio zawiera trzy kompozycje inny kolor: światła, ciemny i niebieski. Ta funkcja wykrywa także trybu wysokiego kontrastu, czyli motyw kolorów systemowe przeznaczone dla ułatwień dostępu.
 
@@ -79,7 +78,6 @@ ms.locfileid: "54765348"
  ![Narzędzia &#62; okno dialogowe Opcje w programie Visual Studio](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **Narzędzia > Opcje w oknie dialogowym**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> Usługa VSColor
  Program Visual Studio udostępnia usługi kolorów środowiska, nazywany również usługi VSColor lub powłoki kolorów. Ta usługa pozwala powiązać wartości kolorów elementy interfejsu użytkownika zestaw zawierający kolorów dla każdego motywu kolorów nazwa wartość. Usługa VSColor należy użyć dla wszystkich elementów interfejsu użytkownika, tak aby kolory automatycznie zmieniać, aby odzwierciedlić bieżący motyw wybrane przez użytkownika tak, aby interfejsu użytkownika powiązany z usługami kolorów środowiska integruje się z nowe motywy w przyszłych wersjach programu Visual Studio.

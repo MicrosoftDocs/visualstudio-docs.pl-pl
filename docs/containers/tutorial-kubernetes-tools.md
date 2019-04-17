@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: ae068ba052c9fcde99bea034c9216d2a24b5626e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 458334beebe6be24b2bec70d0160688e48e653d6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856828"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664328"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -26,7 +26,7 @@ W tym samouczku opisano Dodawanie Obsługa klastra Kubernetes do projektu i publ
 Aby korzystać z tej nowej funkcji, należy:
 
 ::: moniker range="vs-2017"
-- Najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
+- Najnowszą wersję [programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z *ASP.NET i tworzenie aplikacji internetowych* obciążenia.
 - [Narzędzi usługi Kubernetes dla programu Visual Studio](https://aka.ms/get-vsk8stools), która jest dostępna do pobrania osobno.
 ::: moniker-end
 ::: moniker range="vs-2019"

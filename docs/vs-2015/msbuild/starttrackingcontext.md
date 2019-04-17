@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a23ea93cb1ca486b6804b778f7532ba4c39c900
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da002fe757d623a665b39c16cc10e77e492e2660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802991"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657198"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Rozpocznij kontekst śledzenia.  
   
 ## <a name="syntax"></a>Składnia  
@@ -44,7 +43,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  Identyfikuje kontekst śledzenia. Ta nazwa jest używana do tworzenia nazwy pliku dziennika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- [Wartość HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) przy użyciu [sukces] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
+ ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) with ([sukces]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** FileTracker.h

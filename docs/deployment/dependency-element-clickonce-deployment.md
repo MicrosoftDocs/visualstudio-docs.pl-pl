@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600723"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648237"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;zależność&gt; — element (wdrażanie ClickOnce)
 Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście aplikacji.
@@ -78,7 +78,6 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 ## <a name="dependentassembly"></a>dependentAssembly
  Wymagana. Ten element zawiera `assemblyIdentity` elementu. W poniższej tabeli przedstawiono atrybuty `dependentAssembly` obsługuje.
 
-
 | Atrybut | Opis |
 |------------------| - |
 | `preRequisite` | Opcjonalna. Określa, że ten zestaw powinna już istnieć w pamięci podręcznej GAC. Prawidłowe wartości to `true` i `false`. Jeśli `true`i określony zestaw nie istnieje w pamięci podręcznej GAC, aplikacja nie może uruchomić. |
@@ -110,14 +109,12 @@ Identyfikuje wersję aplikacji do zainstalowania i lokalizację w manifeście ap
 ## <a name="dsigtransform"></a>DSIG:Transform
  `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:Transform` elementu.
 
-
 | Atrybut | Opis |
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>DSIG:DigestMethod
  `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. W poniższej tabeli przedstawiono atrybuty `dsig:DigestMethod` elementu.
-
 
 | Atrybut | Opis |
 |-------------| - |

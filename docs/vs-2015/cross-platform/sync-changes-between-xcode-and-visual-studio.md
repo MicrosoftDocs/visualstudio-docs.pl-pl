@@ -8,16 +8,15 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: bb7b5ebe398b66a8ae28d7734d64ce67c8735a73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754917"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665535"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizacja zmian między XCode i Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Języka Microsoft Visual C++ dla opracowywania aplikacji mobilnych składnika obejmuje funkcje zdalnego synchronizowania pracy między danym Komputerem a Twojego komputera Mac. Gdy są skojarzone maszyny i programu Visual Studio na komputerze Mac, nowe opcje są dostępne dla systemu iOS projektów aplikacji w programie Visual Studio można użyć, aby otworzyć projekt w programie XCode, Przenieś swój kod między XCode i Visual Studio i oczyścić katalog tymczasowy projektu XCode.
 

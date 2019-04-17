@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5da700609ce16a66d34e16ce2569270eb2b4b5f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651100"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci za pomocą wiersza polecenia profilera
 W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji składnik .NET Framework dla aplikacji autonomicznej, na przykład .exe lub .dll, plików i zbierania informacji o pamięci przy użyciu profilera.
 
 > [!NOTE]
 >  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
-
 
  Zbieranie danych pamięci z składnik .NET Framework przy użyciu metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie, aby wygenerować instrumentowaną wersję składnika i [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) Narzędzia, aby zainicjować zmienne środowiskowe profilowania. Następnie uruchamiasz profiler za pomocą *VSPerfCmd.exe* narzędzia.
 
@@ -66,7 +65,6 @@ W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/inclu
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
    | [/ Licznik](../profiling/counter.md) **:** `Config` | Zbiera informacje licznika wydajności procesora, który jest określony w konfiguracji. Informacje o liczniku jest dodawany do danych, które są zbierane podczas każdego zdarzenia profilowania. |
    | [Zdarzenia](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
-
 
 5. Uruchom aplikację docelową z okna wiersza polecenia.
 

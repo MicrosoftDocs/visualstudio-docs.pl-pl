@@ -18,17 +18,16 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86c4358179b86031652cf933823c00a68526e9c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33928df6dd1151dc79dd07c966985666d2e7fd19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774364"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655793"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane z danymi. Formanty są powiązane z rekordami klientów, które są hermetyzowane w [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]. Zostanie również dodać przyciski, które klienci mogą używać do wyświetlania i aktualizowania rekordów.  
   
  W instruktażu przedstawiono następujące zagadnienia:  

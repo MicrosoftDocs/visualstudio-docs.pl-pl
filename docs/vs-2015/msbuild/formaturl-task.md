@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6f3118515d023f9f57d4578d042a0fa5a702872
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803347"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651478"
 ---
 # <a name="formaturl-task"></a>FormatUrl — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Konwertuje adres URL do poprawnego formatu adresu URL.  
   
 ## <a name="parameters"></a>Parametry  

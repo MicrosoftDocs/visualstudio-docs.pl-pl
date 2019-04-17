@@ -16,17 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0aa325aa016b95a0dac0047f4b6fe9ae67f52ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800865"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652621"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visual C#, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań i niektóre ustawienia dziennika kompilacji. Aby otworzyć **opcje** okna dialogowego wybierz **narzędzia**, **opcje** na pasku menu. Aby uzyskać dostęp do tego zestawu opcji, należy rozwinąć **projekty i rozwiązania**, a następnie wybierz **kompilowanie i uruchamianie**.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  

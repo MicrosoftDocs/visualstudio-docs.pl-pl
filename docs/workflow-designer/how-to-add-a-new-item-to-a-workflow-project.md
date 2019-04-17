@@ -8,19 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222337"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649592"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Instrukcje: Dodaj nowy element do projektu przepływu pracy
 
 Po utworzeniu projektu przepływu pracy działania przepływu pracy, projektantów i innych znanych elementów programu Visual Studio można dodać do projektu.
 
 W poniższej tabeli wymieniono elementy Windows Workflow Foundation (WF), które można dodać do projektu przepływu pracy:
-
 
 | Nazwa | Opis |
 |-| - |

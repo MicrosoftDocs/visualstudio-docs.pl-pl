@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795553"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648968"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu %InstallRoot%\Xml\Schemas. Pamięci podręcznej schematu jest globalne dla wszystkich użytkowników na komputerze i zawiera standardowe schematów XML, które są używane do weryfikacji dokumentu IntelliSense i XML.  
 
  W edytorze XML, można również znaleźć schematów znajduje się w rozwiązaniu, schematy określone w **schematów** pola dokumentu **właściwości** okna i schematy identyfikowane przez `xsi:schemaLocation` i `xsi:noNamespaceSchemaLocation`atrybutów.  
 
  W poniższej tabeli opisano schematów, które są instalowane za pomocą edytora XML.  
-
 
 |     Nazwa pliku      |                                                      Opis                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +32,7 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
 |    msbuild.xsd    |              Schemat dla plików marka MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
 |    msdata.xsd     | Schematu dla adnotacji XSD dodane przez <xref:System.Data.DataSet> klasy, "urn: schemas-microsoft-com: XML-msdata". |
 |     msxsl.xsd     |                  Schemat rozszerzenia blok skryptu XSLT firmy Microsoft, urn: schemas-microsoft-com:xslt.                   |
-| SnippetFormat.xsd |                 Schemat dla plików XML fragmentu kodu. Aby uzyskać przykłady Zobacz % InstallDir%\VC#\Expansions.                 |
+| SnippetFormat.xsd |                 Schemat dla plików XML fragmentu kodu. Przykłady można znaleźć w temacie %InstallDir%\VC#\Expansions.                 |
 |    Soap1.1.xsd    |            Schemat dla Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.            |
 |    Soap1.2.xsd    |                                     Schemat dla Simple Object Access Protocol 1.2.                                     |
 | SiteMapSchema.xsd |            Schemat pliku XML mapy witryny ASP.NET "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |

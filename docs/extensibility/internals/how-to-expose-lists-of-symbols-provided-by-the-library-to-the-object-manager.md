@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612468"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666588"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Instrukcje: Uwidacznianie listy symboli udostępnianych przez bibliotekę dla Menedżera obiektów
 Narzędzia przeglądania symboli **Widok klas**, **przeglądarki obiektów**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli**, przekazywać żądania do nowych danych [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów. Menedżer obiektów umożliwia znalezienie odpowiednich bibliotek i żąda nowych list symboli. Biblioteki odpowiedzieć w żądanych danych do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Menedżera obiektów wywołania metody, w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> współpracować w celu uzyskania danych i używa ich do wypełnienia lub aktualizowanie widoków narzędzi do przeglądania symboli.
@@ -30,7 +30,6 @@ Narzędzia przeglądania symboli **Widok klas**, **przeglądarki obiektów**, **
 >  W poniższych przykładach kodu zarządzanego pokazują, jak zawierają listy symboli wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfejsu. Menedżer obiektów wywołania metody, w tym interfejsie i używa danych uzyskanych do wypełnienia lub aktualizowanie narzędzi do przeglądania symboli.
 >
 >  Implementacja dostawcy symboli dla kodu natywnego, można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfejsu.
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Aby uzyskać listę symboli do Menedżera obiektów
 

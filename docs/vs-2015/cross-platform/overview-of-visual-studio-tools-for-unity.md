@@ -8,17 +8,16 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 69b9fb9bd21ad19199e5ba268c8f0a87fb546d57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7ad35c95fab41ded9fd15b0f098307d4f7bb3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659089"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Omówienie narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tej sekcji możesz dowiesz się więcej o funkcjach programu Visual Studio Tools dla aparatu Unity oferuje i jak można je stają się bardziej produktywne przy użyciu aparatu Unity.  
   
  Program Visual Studio Tools for Unity (*VSTU*), można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy. Najnowsza wersja narzędzi vstu zapewnia kolorowania dla języka programu do cieniowania ShaderLab mechanizmu Unity, lepszą obsługę wizualizacji debugera i ulepszone generowanie kodu dla Kreatora MonoBehavior. Narzędzia VSTU także niesie plików projektu środowiska Unity, komunikaty konsoli i możliwości, aby rozpocząć tworzenie gry w programie Visual Studio, dzięki czemu spędzisz mniej czasu przełączanie z edytora środowiska Unity podczas pisania kodu.  

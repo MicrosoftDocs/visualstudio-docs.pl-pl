@@ -12,17 +12,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ee565786f4a1f7c1127217eeb551352ae02b72f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771982"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663417"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Uzyskiwanie dzienników kompilacji za pomocą narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Za pomocą przełączników za pomocą narzędzia MSBuild, można określić ilość danych kompilacji, aby Przegląd i czy chcesz zapisać dane kompilacji do jednego lub więcej plików. Można również określić niestandardowe rejestratora zbierania danych o kompilacji. Aby uzyskać informacje dotyczące przełączników wiersza polecenia programu MSBuild, które ten temat nie obejmuje, zobacz [odwołanie do wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]

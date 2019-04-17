@@ -9,18 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8fb6cecf9c1e8798e5f545f5ad0155a4960f75aa
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653076"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Zestaw reguł Mixed Minimum Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft mieszane Minimum Rules skoncentrować się na najważniejszych problemów w projektach C++ obsługujących środowisko uruchomieniowe języka wspólnego, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów C++ obsługujących środowisko uruchomieniowe języka wspólnego.  
-
 
 |                                            Reguła                                             |                                                  Opis                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

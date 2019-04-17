@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c029a29b2d81f7a6ca64f47aab15caf5119d172
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774567"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656001"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Właściwości skojarzeń w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,6 @@ Na diagramie klas UML można narysować *skojarzenia* między jakiejkolwiek parz
 ### <a name="properties-of-each-role"></a>Właściwości każdej roli  
  Aby wyświetlić właściwości każdej roli, należy rozwinąć **pierwsza rola** lub **druga rola** właściwości.  
 
-
 |     **Property**     |          **Default**          |                                                                                                                                                                                                                                                                                                                                        Opis                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **Nazwa roli (2)**   | Nazwa typu w tej roli |                                                                                                                                                                                                                                                                                                       Nazwa roli. Pojawi się w pobliżu końca asocjacji na diagramie.                                                                                                                                                                                                                                                                                                        |
@@ -70,4 +69,4 @@ Na diagramie klas UML można narysować *skojarzenia* między jakiejkolwiek parz
  [Właściwości typów w diagramach przypadków UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Właściwości operacji w diagramach przypadków UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)

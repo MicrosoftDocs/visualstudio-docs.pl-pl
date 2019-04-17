@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780372"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656491"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można użyć właściwości pliku. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik należy dodać do pakietu jako plik zasobów.  
   
  Można wybrać dowolny plik w Eksploratorze rozwiązań i następnie sprawdź jego właściwości w oknie dialogowym właściwości. Pliki JavaScript ma cztery właściwości: **Kopiuj do katalogu wyjściowego**, **pakietu akcji**, **nazwa pliku**, i **ścieżki pliku**.  

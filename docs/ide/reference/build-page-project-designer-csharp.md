@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eea14ebd5e4c56b62054a982aef83c1b8964b662
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922150"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650336"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 Użyj **kompilacji** strony **projektanta projektu** do określania właściwości konfiguracji kompilacji projektu. Ten temat dotyczy [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] wyłącznie dla projektów.
@@ -61,7 +61,6 @@ To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następu
 -   Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.
 
 -   Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.
-
 
 **Zezwalaj na niebezpieczny kod** umożliwia kod, który używa [niebezpieczne](/dotnet/csharp/language-reference/keywords/unsafe) — słowo kluczowe, aby skompilować. Aby uzyskać więcej informacji, zobacz [/ unsafe (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355349"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659777"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Oznaczaj składowe jako statyczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1822: Oznaczaj składowe jako statyczne](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1822: Oznaczaj składowe jako statyczne](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |Kategoria|Microsoft.Performance|  
-|Zmiana kluczowa|Podziału non - Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone. Bez podziału — w przypadku tylko zmiany elementu członkowskiego do elementu członkowskiego wystąpienia z `this` — słowo kluczowe.<br /><br /> Przerywanie — Jeśli zmienisz element członkowski z elementu członkowskiego wystąpienia statyczną składową i jest on widoczny spoza zestawu.|  
+|Zmiana kluczowa|Podziału non - Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone.<br /><br /> Podziału non - w przypadku tylko zmiany elementu członkowskiego do elementu członkowskiego wystąpienia z `this` — słowo kluczowe.<br /><br /> Przerywanie — Jeśli zmienisz element członkowski z elementu członkowskiego wystąpienia statyczną składową i jest on widoczny spoza zestawu.|  
   
 ## <a name="cause"></a>Przyczyna  
  Element członkowski, który nie uzyskać dostępu do danych wystąpienia nie jest oznaczony jako statyczne (współużytkowane w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  

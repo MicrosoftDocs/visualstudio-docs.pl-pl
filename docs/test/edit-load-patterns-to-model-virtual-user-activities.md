@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956418"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657889"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
@@ -46,7 +46,6 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
 > [!NOTE]
 > Jeśli czas trwania całkowita testu jest krótszy niż czas, który jest wymagany do kroku maksymalnie maksymalne obciążenie użytkownikami, a następnie zatrzyma się po czas trwania testu, a nie dociera **maksymalna liczba użytkowników** docelowej.
-
 
  Celem kroku umożliwia zwiększenie obciążenia, dopóki serwer osiągnie punkt którym wydajności znacznie zmniejsza. W miarę wzrostu obciążenia serwera po pewnym czasie wyczerpania zasobów. Obciążenia krokowego to dobry sposób, aby określić liczbę użytkowników, w których ten problem wystąpi. Korzystając z obciążenia przechodzenia krok po kroku masz również monitorowanie zasobów agenta ściśle, aby upewnić się, że agenci mogą wygenerowania pożądanego obciążenia.
 
@@ -122,12 +121,10 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 > [!NOTE]
 > Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-
  Wzorzec obciążenia określa liczbę użytkowników wirtualnych aktywnych podczas testu obciążenia i szybkość jaką nowi użytkownicy są dodawani. Możesz wybrać spośród trzech dostępnych wzorców: krok wzorca, stała i opartego na celach. Aby uzyskać więcej informacji, zobacz [Określ liczbę użytkowników wirtualnych przy użyciu wzorców obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Możesz również zmienić właściwości obciążenia programowo przy użyciu wtyczki testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie wtyczki testu obciążeniowego](../test/how-to-create-a-load-test-plug-in.md).
-
 
 ### <a name="to-change-the-load-pattern"></a>Aby zmienić wzorzec obciążenia
 

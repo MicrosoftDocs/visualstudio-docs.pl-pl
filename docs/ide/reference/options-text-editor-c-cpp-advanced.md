@@ -14,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b88170e1fe1aa5154616c95c29d0585fc74ba34c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1c6cdfc62885133d82911c7336d011804e9a322d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954325"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650190"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opcje, edytor tekstu, C/C++, zaawansowane
 
@@ -29,7 +29,6 @@ Dostępu do tej strony, w **opcje** rozwiń w lewym okienku w oknie dialogowym *
 
 > [!NOTE]
 > Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 ## <a name="browsingnavigation"></a>Przeglądanie nawigacji
 

@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778398"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663300"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych danych (na podstawie zestawu danych przy użyciu dwóch lub więcej powiązanych tabel) do bazy danych przy zachowaniu więzy integralności. *Integralność referencyjną* odwołuje się do reguły spójności, dostarczone przez ograniczenia w bazie danych, które kontrolują zachowanie Wstawianie, aktualizowanie i usuwanie rekordów pokrewnych. Na przykład jest więzów integralności, który wymusza utworzenie rekordu klientów przed zezwoleniem zamówienia, które ma zostać utworzony dla tego klienta.  Aby uzyskać więcej informacji na temat relacji w zestawach danych, zobacz [relacje w zestawach danych](../data-tools/relationships-in-datasets.md)  
   
  Używa funkcji hierarchiczna aktualizacja `TableAdapterManager` zarządzanie `TableAdapter`s w zestawie danych wpisywanych. `TableAdapterManager` Składnik to [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-wygenerowane klasy, dlatego nie jest częścią [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Podczas przeciągania tabeli z okna źródeł danych do postaci Windows lub strony WPF program Visual Studio dodaje zmienną typu TableAdapterManager do formularza lub strony, a zostanie wyświetlony w projektancie w zasobniku składnika. Aby uzyskać szczegółowe informacje na temat `TableAdapterManager` klasy, zobacz sekcję TableAdapterManager z [TableAdapterManager — Przegląd](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

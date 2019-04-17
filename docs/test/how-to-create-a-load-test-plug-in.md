@@ -12,12 +12,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d1fd2a1adcc339cb3b1d6f0aabc7db5a86973ab
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 75413e7d889a6d4083d0117e35daf6d8d2f232e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415853"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662520"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Instrukcje: Tworzenie wtyczki testu obciążeniowego
 
@@ -93,7 +93,6 @@ Poniższy kod pokazuje wtyczkę testu obciążeniowego, która uruchamia niestan
 
 > [!NOTE]
 > Poniższy kod wymaga, aby dodać odwołanie do przestrzeni nazw System.Windows.Forms.
-
 
 ```csharp
 using System;

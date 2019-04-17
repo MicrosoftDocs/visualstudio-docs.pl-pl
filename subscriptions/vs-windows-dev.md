@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat konta dewelopera Windows, które są dołączone do subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 25f948a0a855655da45b8c11fd955a06d14e5cf7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656755"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -51,8 +51,8 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Tak|
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Tak|
+| Visual Studio Enterprise (Standard)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dołączono       |  Yes|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Dołączono                                                            |Yes|
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                            |  Nie dotyczy|
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |  Niedostępne                                            |  Nie dotyczy|
 | Visual Studio Dev Essentials | Nie dotyczy  | Niedostępne                                            |  Nie dotyczy|
@@ -60,10 +60,8 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów. Nie obejmuje:  Wyobraź sobie sieci Microsoft Partner Network (MPN), najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

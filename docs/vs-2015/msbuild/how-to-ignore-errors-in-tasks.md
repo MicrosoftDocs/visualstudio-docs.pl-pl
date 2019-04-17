@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3c641e1f84e90a9e805630d8711f13e3d212ab17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777034"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668083"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Instrukcje: Ignorowanie błędów w zadaniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Czasami chcesz być odporne na błędy w wykonywaniu pewnych zadań kompilacji. Jeśli te krytyczne zadania nie powiedzie się, które mają kompilacji, aby kontynuować, ponieważ nadal może utworzyć wymagane dane wyjściowe. Na przykład, jeśli projekt używa `SendMail` zadanie, aby wysłać wiadomość e-mail po utworzeniu każdego składnika, warto rozważyć je dopuszczalny dla kompilacji przejść do ukończenia, nawet wtedy, gdy serwery poczty są niedostępne i nie można wysłać komunikaty o stanie. Lub, na przykład, jeśli pliki pośrednie zwykle są usuwane podczas kompilacji, można rozważyć jej dopuszczalny dla kompilacji przejść do ukończenia, nawet wtedy, gdy nie można usunąć tych plików.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Za pomocą ContinueOnError — atrybut  

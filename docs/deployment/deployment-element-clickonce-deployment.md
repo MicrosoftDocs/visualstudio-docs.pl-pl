@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629524"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667212"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;wdrożenie&gt; — element (wdrażanie ClickOnce)
 Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie na system.
@@ -60,7 +60,6 @@ Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie 
 ## <a name="elements-and-attributes"></a>Atrybuty i elementy
  `deployment` Element jest wymagany i znajduje się w `urn:schemas-microsoft-com:asm.v1` przestrzeni nazw. Element ma następujące atrybuty.
 
-
 | Atrybut | Opis |
 |--------------------------| - |
 | `install` | Wymagana. Określa czy ta aplikacja jest obecna na Windows **Start** menu i w Panelu sterowania **apletu Dodaj lub usuń programy** aplikacji. Prawidłowe wartości to `true` i `false`. Jeśli `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] najnowszą wersję tej aplikacji będzie zawsze uruchamiana z sieci, a nie rozpoznaje `subscription` elementu. |
@@ -74,7 +73,7 @@ Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie 
 ## <a name="subscription"></a>subskrypcja
  Opcjonalna. Zawiera `update` elementu. `subscription` Element nie ma żadnych atrybutów. Jeśli `subscription` element nie istnieje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji nigdy nie rozpocznie skanowanie aktualizacji. Jeśli `install` atrybutu `deployment` element jest `false`, `subscription` element jest ignorowany, ponieważ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, który jest zawsze uruchamiany z sieci korzysta z najnowszej wersji.
 
-## <a name="update"></a>Aktualizacja
+## <a name="update"></a>update
  Wymagana. Ten element jest elementem podrzędnym `subscription` elementu i zawierają dowolne `beforeApplicationStartup` lub `expiration` elementu. `beforeApplicationStartup` i `expiration` nie można określić w tym samym manifestu wdrożenia.
 
  `update` Element nie ma żadnych atrybutów.
@@ -96,7 +95,6 @@ Określa atrybuty, używany do wdrażania aktualizacji i ograniczyć narażenie 
  Dla programu .NET Framework 2.0, ten element jest wymagany, jeśli manifest wdrożenia zawiera `subscription` sekcji. Programu .NET Framework 3.5 lub nowszy ten element jest opcjonalny i domyślnie do serwera i ścieżki pliku, w którym zostało wykryte manifestu wdrażania.
 
  Ten element jest elementem podrzędnym `deployment` elementu i ma następujący atrybut.
-
 
 | Atrybut | Opis |
 |------------| - |

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857388"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655676"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio i uaktualnić problemów
 
@@ -62,7 +62,7 @@ Program inicjujący Instalatora programu Visual Studio jest minimalny plik wykon
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń katalog Instalatora programu Visual Studio. Zazwyczaj jest katalog `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
+3. Uruchom program inicjujący Instalatora programu Visual Studio. Program inicjujący można znaleźć w folderze pobrane przy użyciu nazwy pliku, który następuje po `vs_[Visual Studio edition]__*.exe` wzorca. Jeśli nie możesz znaleźć tę aplikację, możesz pobrać program inicjujący, przechodząc do [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony i klikając **Pobierz** używanej wersji programu Visual Studio. Następnie uruchom plik wykonywalny, aby zresetować metadane instalacji.
 4. Spróbuj zainstalować lub zaktualizować program Visual Studio ponownie. Jeśli Instalator zakończy się niepowodzeniem, przejdź do następnego kroku.
 
 ::: moniker-end
@@ -143,7 +143,7 @@ Jeśli te rozwiązania wymienione w tym przewodniku rozwiązywania problemów ni
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Usuwanie programu Visual Studio](remove-visual-studio.md)
+* [Remove Visual Studio](remove-visual-studio.md)
 * [Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
-* [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)

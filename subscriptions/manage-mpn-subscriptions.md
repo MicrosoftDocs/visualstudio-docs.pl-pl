@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych, dla partnerów MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1cd8e25a0ba1eaddf6f0ab5096e366f577f510e6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842486"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667771"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzanie subskrypcjami programu Visual Studio oferowane za pośrednictwem programu Microsoft Partner Network (MPN)
 
@@ -41,7 +41,6 @@ Microsoft Action Pack subskrybenta i subskrypcji programu Visual Studio
     - Nazwisko
     - Kontaktowy adres E-mail
 13. Logowanie zostało zakończone i subskrybent powinien mieć dostęp do korzyści
-
 
 ### <a name="competency-partners"></a>Partnerzy z kompetencją
 1. Wybierz **wymagania i zasoby**

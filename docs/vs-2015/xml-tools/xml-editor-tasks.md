@@ -9,30 +9,29 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 276667993fa1c3448af3168403d18c2e55a118af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781469"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649631"
 ---
 # <a name="xml-editor-tasks"></a>Zadania edytora XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tej sekcji opisano sposób wykonywania typowych zadań za pomocą edytora XML.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przewodnik: Korzystanie z funkcji edytora XML](../xml-tools/walkthrough-using-xml-editor-features.md)  
+ [Przewodnik: Używanie funkcji edytora XML](../xml-tools/walkthrough-using-xml-editor-features.md)  
  Pokazuje, jak korzystać z niektórych funkcji edytora XML.  
   
  [Instrukcje: Wybieranie schematów XML do użycia](../xml-tools/how-to-select-the-xml-schemas-to-use.md)  
  W tym artykule opisano sposób wybierania schematu XML do użycia w celu weryfikacji.  
   
- [Instrukcje: Tworzenie schematu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
+ [Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)  
  W tym artykule opisano sposób tworzenia schematu XML.  
   
- [Instrukcje: Wykonywanie transformacji XSLT w edytorze XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
+ [Instrukcje: Wykonywanie przekształcenia XSLT w edytorze XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)  
  Opisuje sposób wykonywanie transformacji XSLT.  
   
  [Instrukcje: Edytowanie plików XML](../xml-tools/how-to-edit-xml-files.md)  
@@ -47,11 +46,11 @@ W tej sekcji opisano sposób wykonywania typowych zadań za pomocą edytora XML.
  [Instrukcje: Tworzenie fragmentów kodu XML](../xml-tools/how-to-create-xml-snippets.md).  
  Przedstawia sposób tworzenia nowych fragmentów kodu XML.  
   
- [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
+ [Przewodnik: Używanie funkcji IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)  
  Pokazuje, jak za pomocą funkcji XSLT IntelliSense.  
   
- [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
+ [Przewodnik: Używanie hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Pokazuje, jak można debugować arkusza stylów odwołania.  
   
- [Przewodnik: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)  
+ [Przewodnik: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)  
  Pokazuje, jak tworzyć raporty dotyczące wydajności kodu XSLT.

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a3305a12283072e39654833cabc609efa3f5bc2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0770e0f58d12502e88ea25d5c9f169e50c707b82
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917379"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659634"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednostkowe metod ogólnych
 
@@ -116,7 +116,6 @@ public void SizeOfLinkedListTest()
 
 > [!NOTE]
 > Przy każdym uruchomieniu testu SizeOfLinkedListTest jego TestHelper metoda jest wywoływana dwa razy. Instrukcję assert musi zwrócić wartość true, co czas test kończył się pomyślnie. Jeśli test zakończy się niepowodzeniem, może nie być jasne czy wywołania określona `<int>` lub wywołanie, które określono `<char>` spowodował, że jego nie powiedzie się. Aby znaleźć odpowiedzi, można analizować stos wywołań, lub można ustawić punkty przerwania w metodzie testowej, a następnie debugować podczas wykonywania testu. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie podczas przeprowadzania testu w rozwiązaniu ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
-
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Przykład 2: Za pomocą ograniczenia typu
  Ten przykład przedstawia test jednostkowy metody rodzajowej, który używa ograniczenia typu, który nie jest spełniony. Pierwsza sekcja wyświetla kod z projektu kodu w ramach testu. Ograniczenie typu jest wyróżniona.

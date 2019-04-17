@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856680"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659062"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Install Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md?view=vsmac-2019).
+> Visual Studio 2019 r dla komputerów Mac jest [udostępniono](installation.md?view=vsmac-2019). Dla starszych wersji programu Visual Studio dla komputerów Mac, zobacz Visual Studio [strony plików do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="requirements"></a>Wymagania
 
@@ -110,7 +110,7 @@ Instalowanie programu Visual Studio dla komputerów Mac pozwala rozpocząć pisa
 ### <a name="android"></a>Android
 
 1. [Przy użyciu Menedżera zestawów SDK platformy Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Emulator zestawu SDK systemu android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+2. [Emulator zestawu SDK systemu Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Konfigurowanie urządzenia na potrzeby programowania](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenia gier Unity

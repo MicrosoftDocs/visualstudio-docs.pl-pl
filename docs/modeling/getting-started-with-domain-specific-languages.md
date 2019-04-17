@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24567262eff261638a6004817d4d0eef51537fd6
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 26c61934649a8a87cea59b9dd7e1e913fc7a59b0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663066"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -40,7 +40,6 @@ Pozostała część tego omówienia jest przewodnik, który wprowadza podstawowe
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
-
 
 | | |
 |-|-|

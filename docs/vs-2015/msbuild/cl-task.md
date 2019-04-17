@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756666"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653596"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wykonywalne (.exe), pliki biblioteki dołączanej (dynamicznie dll) lub pliki modułów (.netmodule) kodu. Aby uzyskać więcej informacji, zobacz [opcje kompilatora](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parametry  
@@ -88,7 +87,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **AssemblyAndSourceCode** - **/FAs**  
   
-  - **Wszystkie** -  ** /facs**  
+  - **Wszystkie** -   **/facs**  
   
     Aby uzyskać więcej informacji, zobacz **/FA**, **/FAC**, **/FAS**, i **/facs** opcji na liście [/FA, /Fa (wyświetlanie listy plików)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -184,7 +183,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **true** - **/clr**  
   
-  - **Czysty** -  ** /CLR: pure**  
+  - **Czysty** -   **/CLR: pure**  
   
   - **Safe** - **/clr:safe**  
   
@@ -316,7 +315,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **Neither** - *\<none>*  
   
-  - **Rozmiar** -  ** /OS**  
+  - **Rozmiar** -   **/OS**  
   
   - **Szybkość** - **/Ot**  
   
@@ -338,9 +337,9 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Dokładne** -  ** /FP: precise**  
+  - **Dokładne** -   **/FP: precise**  
   
-  - **Ścisłe** -  ** /FP: strict**  
+  - **Ścisłe** -   **/FP: strict**  
   
   - **Fast** - **/fp:fast**  
   
@@ -486,7 +485,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **MinSpace** - **/O1**  
   
-  - **MaxSpeed** -  ** /O2**  
+  - **MaxSpeed** -   **/O2**  
   
   - **Full** - **/Ox**  
   
@@ -752,7 +751,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
   - **Level4** - **/W4**  
   
-  - **EnableAllWarnings** -  ** /Wall**  
+  - **EnableAllWarnings** -   **/Wall**  
   
     Aby uzyskać więcej informacji, zobacz **Wn**_n_ opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   

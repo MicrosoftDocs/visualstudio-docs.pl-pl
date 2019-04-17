@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802701"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654025"
 ---
 # <a name="integration-with-xml-editor"></a>Integracja z edytorem XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Projektant schematu XML jest zintegrowana za pomocą edytora XML. Jeśli zmodyfikujesz plik XSD w edytorze XML, zmiany zostaną odzwierciedlone w [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Jeśli masz [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) otwarte, zmiany zostaną także odzwierciedlone istnieje. Możesz przechodzić między projektanta schematu XML i edytorem XML w następujący sposób:  
   
 - W edytorze XML, kliknij prawym przyciskiem myszy węzeł i wybierz **Pokaż w Eksplorator schematu XML**.  

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 9a7de4f06c691863bd1e6e79435969b36c475b79
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790410"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661025"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -104,7 +104,6 @@ W zależności od konfiguracji środowiska sieciowego aktualizacja może być wd
   * Następnie zaktualizuj samej aplikacji programu Visual Studio: <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
 
 ::: moniker-end
-
 
 > [!NOTE]
 > Użyj [polecenia vswhere.exe](tools-for-managing-visual-studio-instances.md) do identyfikowania ścieżki instalacji istniejącego wystąpienia programu Visual Studio na komputerze klienckim.

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772127"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668356"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Instrukcje: Dodawanie walidacji do klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 *Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.  
   
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) dostarcza metod częściowych, które umożliwiają użytkownikom Rozszerz kod wygenerowany przez projektanta, który jest uruchamiany podczas operacji wstawiania, aktualizacji i usuwa pełną jednostek, a także podczas i po poszczególnych kolumn zmiany.  

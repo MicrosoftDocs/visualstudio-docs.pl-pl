@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944536"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657392"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 
@@ -45,7 +45,6 @@ W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma N
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Przed rozpoczęciem tego instruktażu, należy najpierw zainstalować te składniki:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Jeśli planujesz użyć właściwości więcej niż jeden śledzenia lub zaimple
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
-- [Instrukcje: Tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Instrukcje: Tworzenie rozwiązania języka specyficznego dla domeny](../modeling/how-to-create-a-domain-specific-language-solution.md)

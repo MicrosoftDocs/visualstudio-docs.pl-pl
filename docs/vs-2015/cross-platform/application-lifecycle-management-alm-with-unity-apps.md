@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778594"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658802"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) dla aplikacji Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więcej niż tylko pisania kodu. Działania te, określane jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i należy planowanie i śledzenie pracy, projektowanie i wdrażanie kodu, repozytorium kodu źródłowego, zarządzanie systemem kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testy jednostkowe i testy interfejsu użytkownika), uruchomione różne rodzaje diagnostykę w środowiskach środowisk deweloperskich i produkcyjnych i monitorowania aplikacji wydajności i zachowania użytkowników w czasie rzeczywistym za pośrednictwem danych telemetrycznych i analitycznych.  
   
  Visual Studio wraz z Visual Studio Team Services i serwera Team Foundation Server zapewniają szeroką gamę możliwości środowiska DevOps, zwaną także zarządzanie cyklem życia aplikacji lub ALM. Wiele z nich mają zastosowanie do projektów dla wielu platform, w tym gier i wszechstronne graficznego aplikacji utworzonych za pomocą aparatu Unity — szczególnie w przypadku, gdy przy użyciu języka C# jako języka skryptowego. Jednak ponieważ Unity ma swoje własne środowisko projektowe i aparat środowiska uruchomieniowego, pewną liczbę funkcji ALM nie mają zastosowania tak, jak do innych rodzajów projektów utworzone w programie Visual Studio.  
@@ -59,11 +58,11 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
   
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
-|[Użyj kontroli wersji serwera Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Tak|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|  
-|[Wprowadzenie do usługi Git w usłudze Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Tak|Zobacz uwagi pod tabelą.|  
+|[Użyj kontroli wersji serwera Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) lub Visual Studio Team Services|Yes|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|  
+|[Wprowadzenie do usługi Git w usłudze Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes|Zobacz uwagi pod tabelą.|  
 |[Kod analizy/usprawnianie jakości kodu (odwołania, sugerowane zmiany itp.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Tak||  
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||  
-|[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||  
+|[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||  
   
  Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:  
   
@@ -113,7 +112,7 @@ Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więce
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|  
 |-------------|--------------------------|-------------------------|  
 |Zarządzanie procesów tworzenia wersji|Tak||  
-|Wdrażanie serwerów na potrzeby ładowania bezpośredniego za pośrednictwem skryptów|Tak||  
+|Wdrażanie serwerów na potrzeby ładowania bezpośredniego za pośrednictwem skryptów|Yes||  
 |Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami.  Zobacz [rozszerzenia programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą platformy HockeyApp  

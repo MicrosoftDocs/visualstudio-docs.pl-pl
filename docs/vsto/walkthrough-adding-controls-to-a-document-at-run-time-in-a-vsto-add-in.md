@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648553"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Przewodnik: Dodawanie formantów do dokumentów w czasie wykonywania w dodatku narzędzi VSTO
   Aby dodać formanty dowolnego otwartego dokumentu Microsoft Word pakietu Office, za pomocą dodatku narzędzi VSTO. W tym instruktażu przedstawiono sposób użycia wstążki umożliwiające użytkownikom dodawanie <xref:Microsoft.Office.Tools.Word.Controls.Button> lub <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.
@@ -78,21 +78,17 @@ ms.locfileid: "56645878"
 
 8. W **właściwości** okna, Zmień następujące właściwości.
 
-
    | Właściwość | Wartość |
    |-----------|-----------------------|
    | **Nazwa** | **addButtonCheckBox** |
    | **Etykieta** | **Dodawanie przycisku** |
 
-
 9. Drugie pole wyboru, aby dodać **grupa1**, a następnie Zmień następujące właściwości.
-
 
    | Właściwość | Wartość |
    |-----------|---------------------------|
    | **Nazwa** | **addRichTextCheckBox** |
    | **Etykieta** | **Dodawanie kontrolki tekstu sformatowanego** |
-
 
 10. W Projektancie wstążki, kliknij dwukrotnie **Dodaj przycisk**.
 

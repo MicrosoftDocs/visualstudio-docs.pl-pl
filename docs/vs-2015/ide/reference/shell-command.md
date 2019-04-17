@@ -19,17 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e901e5b34fb807a17cfc5143decc3a63b75194d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779311"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650710"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Uruchamia programy wykonywalne z poziomu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="syntax"></a>Składnia  

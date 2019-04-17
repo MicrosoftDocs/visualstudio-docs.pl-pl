@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści społeczności platformy Azure, zawarte w wybranych subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5e40621afe4d4211660064c52f97bdbcb96effe1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842107"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653951"
 ---
-# <a name="azure-community"></a>Azure Community
+# <a name="azure-community"></a>Społeczność platformy Azure
 
 Pobierz pomocy bezpośrednio od zespołu platformy Azure w ramach wybierz fora pomocy technicznej za pośrednictwem społeczności platformy Azure.  Korzyści społeczności platformy Azure zapewnia dostęp do kolekcji fora poświęcone tematów dotyczących platformy Azure.
 
@@ -27,8 +27,6 @@ Pobierz pomocy bezpośrednio od zespołu platformy Azure w ramach wybierz fora p
 | [Usługa Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Cennik i rozliczenia](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Narzędzia wiersza polecenia i skryptów platformy Azure](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Azure Management Portal](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Usługa Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Usługa Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
-
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 Rozpoczynanie pracy ze społecznością platformy Azure jest łatwe.
@@ -49,7 +47,6 @@ Rozpoczynanie pracy ze społecznością platformy Azure jest łatwe.
 ## <a name="eligibility"></a>Uprawnienie
 Dostępność korzyści społeczności platformy Azure zależy od poziomu subskrypcji jak pokazano poniżej:
 
-
 |                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Podlega odnowieniu? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
@@ -64,7 +61,6 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

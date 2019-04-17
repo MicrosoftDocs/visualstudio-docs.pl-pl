@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1b384ad0dd8c121a03f8ee8840f55352d435218c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755027"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653209"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzysz aplikację Windows, która ładuje dane XML do zestawu danych. Zestaw danych jest następnie wyświetlana w <xref:System.Windows.Forms.DataGridView> kontroli. Na koniec schematu XML na podstawie zawartości pliku XML jest wyświetlany w polu tekstowym.  
   
  Ten przewodnik składa się z pięciu głównych kroków:  
@@ -166,7 +165,7 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
   
 3.  Ustaw następujące właściwości:  
   
-    |Formant|Właściwość|Ustawienie|  
+    |formant|Właściwość|Ustawienie|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Wielowierszowy**|`true`|  
     ||**Paski przewijania**|**W pionie**|  

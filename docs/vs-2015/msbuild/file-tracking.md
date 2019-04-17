@@ -11,17 +11,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5afc245bd16954ba348b4ec581238bf17e5d994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758716"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656820"
 ---
 # <a name="file-tracking"></a>Śledzenie plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Śledzenie pliku rejestruje wywołania do Windows systemu plików dla procesu i jego procesów podrzędnych. Przez wywołanie funkcji wymienionych poniżej, programy kontrolują kiedy należy włączyć rejestrowanie i wyłączyć i określ plik dziennika do użycia.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

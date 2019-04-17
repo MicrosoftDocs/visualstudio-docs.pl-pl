@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bc9b014eede5ac19935f29ed8317e1507ae8a42
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872945"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662409"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Zestaw reguł Mixed Recommended Rules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Reguły zalecane Microsoft mieszane dotyczą najczęstszych i najpoważniejszych problemów w projektach C++ obsługujących środowisko uruchomieniowe języka wspólnego, w tym potencjalnych luk w zabezpieczeniach, awarii aplikacji i inne istotne błędy logiki i projektowania. Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów C++ obsługujących środowisko uruchomieniowe języka wspólnego. Ten zestaw reguł został zaprojektowany do skonfigurowania za pomocą programu Visual Studio w wersji Professional lub nowszy.  
-
 
 |                                                              Reguła                                                              |                                                             Opis                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

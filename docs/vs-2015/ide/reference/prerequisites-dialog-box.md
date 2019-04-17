@@ -17,17 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 50562b74a948365e91a7f36def634030a25aeac9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194661"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657968"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 To okno dialogowe określa, które wstępnie wymagane składniki są zainstalowane, jak są zainstalowane i jakim porządku zainstalowane są pakiety.  
   
  Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **publikowania** kartę. Na **Publikuj** kliknij **wymagania wstępne**. W przypadku projektów instalacji na **projektu** menu, kliknij przycisk **właściwości**. Gdy **stron właściwości** pojawi się okno dialogowe, kliknij przycisk **wymagania wstępne**.  

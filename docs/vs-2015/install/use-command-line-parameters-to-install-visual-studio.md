@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794042"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651166"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Po zainstalowaniu programu Visual Studio 2015 w wierszu polecenia można użyć poniższych parametrów wiersza polecenia (nazywanych również przełącznikami).
 
 > [!NOTE]
->  Upewnij się, że Instalator rzeczywiste, a nie pliku inicjującego. Na przykład, upewnij się, że używasz **`vs_enterprise.exe`** zamiast vs_enterprise_*GUID*.exe. Możesz pobrać Instalator [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Upewnij się, że Instalator rzeczywiste, a nie pliku inicjującego. Na przykład, upewnij się, że używasz **`vs_enterprise.exe`** zamiast vs_enterprise_*GUID*.exe. Możesz pobrać Instalator [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia
- Parametrach wiersza polecenia programu Visual Studio nie jest rozróżniana wielkość liter.
+
+Parametrach wiersza polecenia programu Visual Studio nie jest rozróżniana wielkość liter.
 
 |Parametr|Opis|
 |---------------|-----------------|
@@ -62,4 +63,5 @@ Po zainstalowaniu programu Visual Studio 2015 w wierszu polecenia można użyć 
 |**/ Uninstall/Force**<br /><br /> **/u/Force**|Odinstalowuje program Visual Studio i wszystkie funkcje, które są współużytkowane z innymi produktami. **Ostrzeżenie:**  Jeśli użyto tego parametru, inne produkty zainstalowane na tym samym komputerze mogą nie działać poprawnie.|
 
 ## <a name="see-also"></a>Zobacz też
- [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)
+
+- [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)

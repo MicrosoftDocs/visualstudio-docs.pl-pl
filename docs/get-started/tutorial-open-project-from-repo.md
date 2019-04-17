@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857570"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663404"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Samouczek: Otwieranie projektu z repozytorium
 
@@ -27,7 +27,7 @@ W tym samouczku użyjesz programu Visual Studio do łączenia się z repozytoriu
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
@@ -178,9 +178,9 @@ Wyświetl następujące animacji, aby sprawdzić prac, które można wykonać w 
 Gdy wszystko będzie gotowe do kodu za pomocą programu Visual Studio, od razu rozpocząć korzystanie w każdym z następujących samouczków specyficzny dla języka:
 
 - [Visual Studio tutorials | **C#**](./csharp/index.yml)
-- [Samouczki usługi Visual Studio | **Języka Visual Basic**](./visual-basic/index.yml)
+- [Visual Studio tutorials | **Visual Basic**](./visual-basic/index.yml)
 - [Visual Studio tutorials | **C++**](/cpp/get-started/)
-- [Samouczki usługi Visual Studio | **Języka Python**](/visualstudio/python/)
+- [Visual Studio tutorials | **Python**](/visualstudio/python/)
 - [Samouczki usługi Visual Studio | **JavaScript**, **TypeScript**, i **środowiska Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>Zobacz także

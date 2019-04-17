@@ -15,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647158"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko interfejsu API platformy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: Używaj tylko interfejsu API platformy docelowej](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: Używaj tylko interfejsu API platformy docelowej](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
@@ -53,7 +53,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1903: U�
  Aby zmienić platformę docelową projektu, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Aby usunąć zależność od dodatku service pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, ostrzeżenia lub wyłączyć tę regułę.  
+ Aby usunąć zależność od dodatku service pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, ostrzeżenia lub wyłącz tę regułę.  
   
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia  
  Nie pomijaj ostrzeżeń dla tej reguły, jeśli nie jest to zamierzone zależności określonej z dodatkiem Service Pack. W takiej sytuacji aplikacja może zakończyć się niepowodzeniem działające w systemach bez tego dodatku service pack, zainstalowane. Pomijaj ostrzeżenia lub wyłącz tę regułę, jeśli jest to zamierzone zależności.  

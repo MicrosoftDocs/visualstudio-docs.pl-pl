@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 59af3b192b404184e5bc5e5a5461c978e2a85e1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929495"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648500"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 **Stron właściwości** zapewnia dostęp do ustawień projektu. Można użyć stron, które pojawiają się w **stron właściwości** można zmienić właściwości projektu.
@@ -49,7 +49,6 @@ Następujące strony i opcje są wyświetlane w **stron właściwości**.
 > [!NOTE]
 > Niektóre opcje są dostępne tylko w aplikacjach platformy uniwersalnej systemu Windows.
 
-
  **Ścieżka wyjściowa**
 
  Określa położenie plików wyjściowych dla tej konfiguracji projektu. Ścieżka jest względna; Jeśli wprowadzasz ścieżkę bezwzględną, ścieżka bezwzględna jest zapisywana w projekcie. Domyślna ścieżka to bin\Debug.
@@ -65,7 +64,6 @@ Następujące strony i opcje są wyświetlane w **stron właściwości**.
 
 > [!NOTE]
 > Niektóre opcje są dostępne tylko w aplikacjach platformy uniwersalnej systemu Windows.
-
 
  **Debuger do uruchomienia**
 

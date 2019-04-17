@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723074"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670501"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfiguracjach. Oto niektóre z najważniejszych wzorce złożone w programie Visual Studio, w odniesieniu do spójności:
@@ -393,7 +393,6 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd Wybieranie obiektu graficznego
  Uchwyty są kwadratów rysowane we wzorcu prostokątny wokół pola ograniczenia obiektu. Na wykresie poniżej przedstawiono przykłady różnych stanów, które obiekt graficzny może mieć z uchwyt zmiany rozmiaru i wygląd edycji w miejscu. Rozmiar uchwytów należy powiązać z krawędź okna i przy użyciu metryk brzegowych **GetSystemMetrics** interfejsu API.
 
-
 | Stan | Wygląd | Szczegóły dotyczące programu Visual |
 |-------------------------|---------------| - |
 | **Niezaznaczone** | Domyślny | ![Domyślny stan klawisza](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
@@ -435,7 +434,6 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 >  **Fokus** i **wybór** różne zagadnienia. *Fokus* wskazanie, które interfejsu użytkownika elementu jest przeznaczona dla danych wejściowych nie zostały jawnie skierowany przeciwko innego obiektu, podczas gdy *wybór* odwołuje się do stanu włączenia obiektu w zestawie obiektów, na którym kolejne operacje może mieć miejsce.
 
  Wybrane opcje na listach może być ciągłe, rozłączny, lub regionu. Gdy wiele zaznaczeń dozwolonych, ciągłym i wybór rozłączne powinna być zawsze obsługiwana, podczas obsługi opcji region (pole) jest opcjonalny. Opcje regionu są inicjowane za pomocą przeciągania biały treści listy.
-
 
 | Obiekt | Wybór |
 |--------|------------|

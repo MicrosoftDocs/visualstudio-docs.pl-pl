@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b72213ab2c7dd9fa15fb639b6ef2212f56aa141f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786317"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669448"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Przewodnik: Korzystanie z hierarchii XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Narzędzie hierarchii XSLT upraszcza wiele zadań programistycznych XML. Arkusz stylów XSLT często używa `includes` i `imports` instrukcje. Kompilacja zaczyna się od arkusza stylów jednostki, ale gdy zostanie wyświetlony błąd w wyniku kompilacji arkusz stylów XSLT błędu mogą pochodzić z innego źródła niż arkusza stylów podmiotu zabezpieczeń. Naprawianie błędu lub edytowania arkusza stylów mogą wymagać dostępu do arkuszy stylów dołączanego lub importowanego. Krokowego wykonywania arkusza stylów w debugerze mogą otwierać arkusze stylów dołączone i importowanie i chcesz dodać punkt przerwania w pewnym momencie w co najmniej jednej arkusze stylów dołączone.  
   
  Inny scenariusz, w którym narzędzie hierarchii XSLT może być przydatne jest umieszczenie punktów przerwania w regułach wbudowany szablon. Szablon reguły są specjalne szablony generowane dla każdego trybu arkusza stylów i wywoływane przez `xsl:apply-templates` gdy szablon nie pasuje do węzła. Aby zaimplementować profilowanie wbudowanych szablonów reguł, debuger XSLT generuje plik z zasadami w folderze tymczasowym i kompiluje je wraz z arkusza stylów podmiotu zabezpieczeń. Bez Przechodzenie do kodu z niektórych `xsl:apply-template`, może być trudno znaleźć arkuszy stylów, które zostały uwzględnione w arkuszu stylów podmiotu zabezpieczeń lub znaleźć i otworzyć arkusz stylów za pomocą wbudowanego szablonu reguły.  

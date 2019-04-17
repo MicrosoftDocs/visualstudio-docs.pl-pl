@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655663"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s Nowość w subskrypcji programu Visual Studio
 
@@ -34,7 +34,6 @@ Dodaliśmy nowe funkcje dla administratorów chmury, który ułatwia zarządzani
 * [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Wyeksportować listę użytkowników i szczegółowe informacje o ich przypisania. Listę takich może okazać się przydatne śledzić zadania i daty wygaśnięcia.
 
    ![Eksportuj listę subskrybentów do programu Excel, korzystając z przycisku eksportu](media/export-subscriber-list-to-csv.png)
-
 
 * [**Bulk edit**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Edytuj informacje o subskrypcji z wielu subskrybentów zbiorczo.
 

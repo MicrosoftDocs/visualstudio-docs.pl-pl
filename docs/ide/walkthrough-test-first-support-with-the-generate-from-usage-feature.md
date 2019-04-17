@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 4e65a92e1dba9a6f6dcdd243681313e0aec9096a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355633"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648424"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: Rozwoju pierwszego badania za pomocą funkcji generowania na podstawie sposobu użycia
 
@@ -110,7 +110,6 @@ Teraz utworzymy metody testowej, który wygeneruje odcinek konstruktora, aby zai
 2.  Kliknij przycisk **szybkie akcje** żarówka w obszarze czerwona fala błąd, a następnie kliknij przycisk **Generowanie konstruktora w "Samochód"**.
 
      W `Automobile` klasy pliku, zwróć uwagę, że nowy konstruktor ma zbadać nazwy zmiennych lokalnych, które są używane w wywołaniu konstruktora, podczas gdy znaleziono właściwości, które mają takie same nazwy w `Automobile` klasy i podany kod w treści konstruktora, celu przechowywanie wartości argumentu w `Model` i `TopSpeed` właściwości.
-
 
 3.  Po wygenerowaniu nowego Konstruktora faliste podkreślenie pojawia się w obszarze wywołanie konstruktora domyślnego w `DefaultAutomobileIsInitializedCorrectly`. Komunikat o błędzie stwierdzający, że `Automobile` klasa nie ma konstruktora przyjmującego zero argumentów. Aby wygenerować Konstruktor jawne Tworzenie domyślnych, który nie ma parametrów, kliknij przycisk **szybkie akcje** błąd żarówki, a następnie kliknij **Generowanie konstruktora w "Samochód"**.
 

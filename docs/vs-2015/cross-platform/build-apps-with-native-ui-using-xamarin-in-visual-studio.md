@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954111"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665691"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-install.md) i [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym instruktażu dowiesz się, jak utworzyć podstawową aplikację platformy Xamarin (pokazana poniżej), za pomocą natywnego warstwy interfejsu użytkownika. Z natywnym interfejsem użytkownika udostępnionego kodu, który znajduje się w bibliotece klas przenośnych (PCL) i platform poszczególnych projektów zawierają definicje interfejsu użytkownika.
 

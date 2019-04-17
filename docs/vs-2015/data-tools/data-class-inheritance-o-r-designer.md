@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb78a5c1962d855a2e191d16487a52d5f94c9567
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37cc40651056b634deb9e81fc7407472485cb72b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773669"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670163"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Dziedziczenie klas danych (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Inne obiekty, takie jak [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy można użyć dziedziczenia i pochodzić z innych klas. W kodzie można określić relacji dziedziczenia między obiektami, deklarując, że jedna klasa dziedziczy z innego. W bazie danych relacje dziedziczenia są tworzone na kilka sposobów. [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych.  
   
  Dziedziczenie pojedynczej tabeli Brak tabeli pojedynczej bazy danych, która zawiera kolumny dla klas podstawowych i pochodnych. Z danymi relacyjnymi kolumna dyskryminatora zawiera wartość, która określa, która z klas należą wszelkie podane rekordy do. Na przykład rozważmy tabelę osoby, która zawiera wszystkich stosowanych przez firmę. Niektórzy użytkownicy są pracownicy i niektóre osoby menedżerów. Tabela osób zawiera kolumnę o nazwie typu, który ma wartość 1 dla menedżerów i wartość 2 dla pracowników. Kolumna typu jest kolumna dyskryminatora. W tym scenariuszu można utworzyć podklasę pracowników i wypełnić klasy za pomocą tylko te rekordy, które mają wartość typu 2.  

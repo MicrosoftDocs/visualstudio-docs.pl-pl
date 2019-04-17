@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43648fb87202e3f61342bcabfc3acb55541a9985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627977"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654324"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpić podczas wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji oraz przedstawiono kroki, aby rozwiązać każdy problem.
@@ -121,7 +121,6 @@ W tym artykule przedstawiono następujące typowe błędy, które mogą wystąpi
 
 ## <a name="additional-errors"></a>Dodatkowe błędy
  W poniższej tabeli przedstawiono niektóre typowe komunikaty o błędach, które użytkownik komputera klienckiego może zostać wyświetlony, gdy użytkownik instaluje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. Każdy komunikat o błędzie jest wyświetlany obok opis najbardziej prawdopodobna przyczyna błędu.
-
 
 | Komunikat o błędzie | Opis |
 | - | - |

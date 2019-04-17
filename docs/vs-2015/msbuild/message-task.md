@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 254602005966a9d9f95ff6b76f8ad42360e4a57d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770792"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662741"
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Rejestruje komunikat podczas kompilacji.  
   
 ## <a name="parameters"></a>Parametry  

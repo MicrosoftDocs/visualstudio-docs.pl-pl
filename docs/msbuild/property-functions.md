@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737033"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652413"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
 W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służyć do oceny, skryptów programu MSBuild. Funkcje właściwości może służyć wszędzie tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcji właściwości mogą być używane poza celów i są sprawdzane przed wszystkie przebiegi docelowego.
 
  Bez używania zadań programu MSBuild, może odczytywanie godziny systemowej, porównywanie ciągów, porównywanie wyrażeń regularnych i wykonywać inne czynności w skrypcie kompilacji. Program MSBuild podejmie próbę konwertowanie ciągu na liczbę i liczbę na ciąg i innych konwersji zgodnie z potrzebami.
+ 
+Ciąg wartości zwracane przez funkcje właściwości mają [znaki specjalne](msbuild-special-characters.md) poprzedzone znakiem zmiany znaczenia. Jeśli wartość, które ma być traktowany tak, jakby został umieszczony bezpośrednio w pliku projektu, użyj `$([MSBuild]::Unescape())` do unescape znaków specjalnych.
 
 ## <a name="property-function-syntax"></a>Składnia funkcji właściwości
 

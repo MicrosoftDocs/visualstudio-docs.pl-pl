@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669795"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Rozpoczynanie sesji debugowania aplikacji platformy UWP
 
@@ -122,7 +122,6 @@ W aplikacjach C++ Visual Studio debuguje kodu natywnego, domyślnie. Można debu
 |**Skrypt**|Debugowanie kodu JavaScript w aplikacji. Kodu zarządzanego i natywnego kodu są ignorowane.|
 |**Natywny ze skryptem**|Debugowanie kodu natywnego języka C/C++ oraz kodu JavaScript w aplikacji. Kod zarządzany jest ignorowany. Dostępne w projektach C++ lub tylko zadania w tle.|
 |**Tylko procesor GPU (C++ AMP)**|Debugowanie kodu natywnego języka C++ jest uruchamiany na jednostka przetwarzania grafiki (GPU). Dostępne w tylko dla projektów C++.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Wyłącz sprzężenia zwrotne w sieci (opcjonalnie)
 

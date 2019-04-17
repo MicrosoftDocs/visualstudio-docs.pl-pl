@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9d3533f2eb6cfb5bc2e3a68370f48daa4acfc1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752326"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661210"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Właściwość &lt;nazwa właściwości&gt; nie można usunąć
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Właściwość \<nazwa właściwości > nie można usunąć, ponieważ jest ona ustawiona jako właściwość rozróżniacza dziedziczenia między \<Nazwa klasy > i \<Nazwa klasy >  
   
  Wybrana właściwość jest ustawiona jako **właściwość rozróżniacza** dziedziczenia między klasami wskazanego w komunikacie o błędzie. Nie można usunąć właściwości, jeśli są one Konfigurowanie dziedziczenia między klasami danych.  

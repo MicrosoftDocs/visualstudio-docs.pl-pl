@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909352"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658308"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce.
@@ -26,7 +26,6 @@ ms.locfileid: "55909352"
 
 > [!NOTE]
 > Niektóre właściwości ClickOnce, opisane w tym miejscu można również ustawić **PublishWizard**, która jest dostępna z **kompilacji** menu lub przez kliknięcie przycisku **PublishWizard** przycisk na to Strona.
-
 
 ## <a name="uielement-list"></a>Lista elementów UI
  **Lokalizacja folderu publikowania**

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897689"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667381"
 ---
 # <a name="common-msbuild-project-items"></a>Wspólne elementy projektów MSBuild
 W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], element jest nazwane odwołanie do jednego lub więcej plików. Elementy zawierają metadane, takie jak nazwy plików, ścieżek i numery wersji. Wszystkich typów projektów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] są wspólne dla kilku elementów. Te elementy są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="compile"></a>Kompilacji
  Reprezentuje pliki źródłowe dla kompilatora.
 
-
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
 | DependentUpon | Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji. |
@@ -92,7 +91,6 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Reprezentuje zasoby do osadzenia w wygenerowanym zestawie.
-
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
@@ -108,7 +106,6 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="content"></a>Zawartość
  Reprezentuje pliki, które nie są kompilowane do projektu, ale mogą być osadzone lub opublikowane wraz z jej.
 
-
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |
 | DependentUpon | Opcjonalny ciąg. Określa plik, który zależy od tego pliku do poprawnej kompilacji. |
@@ -123,7 +120,6 @@ W [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 
 ### <a name="none"></a>Brak
  Reprezentuje pliki, które powinny mieć żadnej roli w procesie kompilacji.
-
 
 | Nazwa metadanych elementu | Opis |
 |-----------------------| - |

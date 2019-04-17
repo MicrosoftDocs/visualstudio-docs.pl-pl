@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515197"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669215"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Tworzenie projektów języka R w programie Visual Studio
 
@@ -62,7 +62,6 @@ Jeśli masz istniejące foldery *. R* pliki, które mają być zarządzane w pro
 ## <a name="project-properties"></a>Właściwości projektu
 
 Aby otworzyć na stronach właściwości projektu, kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**, lub wybierz **projektu > właściwości (nazwa projektu)** menu element. W otwartym oknie Wyświetla właściwości projektu:
-
 
 | Tab | Właściwość | Opis |
 | --- | --- | --- |

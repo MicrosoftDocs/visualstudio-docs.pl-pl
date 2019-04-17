@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5fc9c1d835979c53b499e88e3949d5023e077e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 210b1ca8d2961f9337472faa1a4f92ee852a7a2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766076"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659481"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj tej strony w oknie dialogowym Opcje, aby określić, czy pliki są automatycznie do kopii zapasowej. Ta strona umożliwia także określić czy zmodyfikowane pliki są przywracane podczas zintegrowanego środowiska programistycznego (IDE) zostanie nieoczekiwanie zamknięty. Dostęp do tego okna dialogowego wybierając **narzędzia** menu i wybierając pozycję **opcje**, a następnie wybierając **środowiska** folderów i wybierania  **AutoRecover** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]

@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773892"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653635"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Tworzenie bazy danych SQL za pomocą skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym przewodniku używasz programu Visual Studio do tworzenia małej bazy danych, który zawiera przykładowy kod dla [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
  **W tym temacie**  

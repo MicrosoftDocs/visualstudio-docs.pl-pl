@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się więcej o pakiecie ModernRequirements zawartego w wybranych subskrypcjach programu Visual Studio Enterprise.
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ffdcc25a90f73ba904ce2e5162031dff0b200274
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660726"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Korzyść MODERNRequirements4TFS w subskrypcji programu Visual Studio
 
 Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję 4TFS MODERNRequirements SmartOffice i ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS zwiększa możliwości usług TFS i usługom DevOps platformy Azure za pomocą programu Microsoft Word w oparciu raportowania i tworzenia szybkiemu, uproszczonemu tekstu sformatowanego.  ModernRequirements4TFS zapewnia elementów roboczych oraz symulacje HTML5.
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 1. Aby zrealizować korzyści MODERNRequirementsTFS, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -31,11 +30,9 @@ Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję
    > [!div class="mx-imgBorder"]
    > ![Strona docelowa ModernRequirements](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. Następnej strony zawiera klucz licencji.  Należy przejrzeć informacje o instalacji, dostępnym na stronie, a następnie kliknij na niebieskim **do pobrania oprogramowania kliknij tutaj,** łącze pośrodku strony.
    > [!div class="mx-imgBorder"]
    > ![Klucz licencji ModernRequirements](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. Na stronie pobierania możesz mieć możliwość zainstalowania pakietów MODERNRequirements lub instalowania poszczególnych modułów z zestawu SMARTOffice4TFS.  Odpowiednie opcje dla Ciebie będzie zależeć od preferencji użytkownika dotyczących, jak również zainstalowanej wersji programu TFS.  Pamiętaj zapoznać się z informacjami na stronie, aby pomóc Ci wybrać właściwą wersję produktów dla Ciebie.
    > [!div class="mx-imgBorder"]
@@ -97,7 +94,6 @@ Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

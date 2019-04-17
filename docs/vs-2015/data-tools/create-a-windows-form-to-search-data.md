@@ -20,17 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd800e5d31189487689781c1f04cd82479893dfa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776559"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667017"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na przykład można wyświetlić zamówienia dla konkretnego klienta lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formie, a następnie zapytanie jest wykonywane przy użyciu danych wprowadzonych przez użytkownika jako parametr; oznacza to, że dane wybiera się na podstawie sparametryzowanych zapytań. Zapytanie zwraca tylko dane, które nie spełnia kryteriów wprowadzonej przez użytkownika. W tym instruktażu pokazano, jak utworzyć zapytanie, które zwraca klientów w określonym mieście i modyfikowania interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzić nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.  
   
  Używanie zapytań sparametryzowanych ułatwia aplikacji wydajne pozwalając bazy danych, wykonują pracę, najlepiej na — szybkie filtrowanie rekordów. Z kolei żądania do tabeli całej bazy danych, jej transfer za pośrednictwem sieci i następnie użyj logiki aplikacji, aby znaleźć rekordy, które chcesz, aby aplikacja może być powolne i nieefektywna.  

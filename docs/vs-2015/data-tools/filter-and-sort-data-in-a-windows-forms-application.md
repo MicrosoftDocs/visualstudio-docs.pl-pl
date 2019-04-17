@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5592a488788c61af7ad6875de239fca62746857c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b20120ae4fc5de23c4457002b57ca186e8fe400
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754906"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651191"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrowanie i sortowanie danych w aplikacji Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Filtrowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Filter%2A> właściwość wyrażeniem, które zwraca żądane rekordy.  
   
  Sortowanie danych przez ustawienie <xref:System.Windows.Forms.BindingSource.Sort%2A> właściwość na nazwę kolumny należy do sortowania; Dołącz `DESC` można sortować w kolejności malejącej lub dołączyć `ASC` sortowanie w kolejności rosnącej.  

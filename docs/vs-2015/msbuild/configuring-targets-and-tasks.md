@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 304ebde1c30a78ab000a1fae4a16b5082b0aeecf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769269"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660596"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurowanie obiektów docelowych i zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można skonfigurować elementów docelowych MSBuild oraz zadań do wykonania poza procesem za pomocą narzędzia MSBuild, dzięki czemu możliwe jest określanie kontekstach, które różnią się od jednego są uruchomione na. Na przykład mogą kierować 32-bitowej aplikacji .NET Framework 2.0, jest uruchomiona na komputerze deweloperskim w 64-bitowym systemie operacyjnym .NET Framework 4.5. Można również przeznaczać komputerów, które korzystają z programu .NET Framework 4 lub wcześniej. Kombinacja 32 - lub 64-bitowych i określonej wersji środowiska .NET Framework jest znany jako *kontekstu docelowej*.  
   
 ## <a name="installation"></a>Instalacja  

@@ -18,17 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777095"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660687"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> Zadanie przeprowadza korektę znaczników kompilacji na [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] pliki, które odwołują się typy w tym samym projekcie.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

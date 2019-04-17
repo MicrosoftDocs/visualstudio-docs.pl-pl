@@ -27,17 +27,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868130"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667200"
 ---
 # <a name="general-environment-options-dialog-box"></a>Ogólne, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj tej strony, aby zmienić motywy kolorów, ustawienia paska stanu i skojarzenia rozszerzeń plików, między innymi do zintegrowanego środowiska programistycznego (IDE). Możesz uzyskać dostęp **opcje** okno dialogowe, otwierając **narzędzia** menu, wybierając **opcje**, otwierając **środowiska** folder i następnie Wybieranie **ogólne** strony. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** pole wyboru w **opcje** okno dialogowe.  
   
 > [!NOTE]

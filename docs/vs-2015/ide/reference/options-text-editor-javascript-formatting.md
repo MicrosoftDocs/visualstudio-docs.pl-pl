@@ -13,17 +13,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81532137b98b415a598a2770b19c3df8ce14f135
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794413"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666471"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **formatowanie** strony **opcje** okno dialogowe, aby ustawić opcje formatowania kodu w edytorze kodu. Dostępu do tej strony, na pasku menu wybierz **narzędzia**, **opcje**, a następnie rozwiń węzeł **edytora tekstów**, **JavaScript**i **Formatowanie**.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  

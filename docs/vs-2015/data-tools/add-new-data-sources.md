@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761970"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670176"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W kontekście programu .NET data tools w programie Visual Studio termin *źródła danych* odwołuje się do obiektów platformy .NET, połączyć się z magazynem danych, które udostępniają dane do aplikacji .NET. Projektantów programu Visual Studio mogą wykorzystywać dane wyjściowe źródła danych, aby wygenerować standardowy kod, który powiąże dane do formularzy podczas przeciągania i upuszczania obiektów bazy danych z **źródeł danych** okna. Tego rodzaju źródła danych może być:  
   
 -   Klasa w modelu Entity Framework, który jest skojarzony z pewnego rodzaju bazy danych.  

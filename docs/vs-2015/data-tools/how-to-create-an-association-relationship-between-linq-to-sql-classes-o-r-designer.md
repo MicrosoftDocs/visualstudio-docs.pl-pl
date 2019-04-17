@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797380"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669058"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Utwórz skojarzenie (Relacja) między LINQ to SQL klas (Projektant O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Skojarzenia między klasami jednostki w [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] są analogiczne do relacji między tabelami w bazie danych. Można utworzyć skojarzenia między klasami jednostki przy użyciu **Edytor skojarzeń** okno dialogowe.  
   
  Gdy używasz należy wybrać klasy nadrzędnej i podrzędnej klasy **Edytor skojarzeń** okno dialogowe, aby utworzyć skojarzenie. Klasa nadrzędna jest klasa jednostki, który zawiera klucz podstawowy; Klasa potomna jest klasa jednostki, która zawiera klucz obcy. Na przykład jeśli klas jednostek zostały utworzone mapowane na tabele Northwind Customers i Orders, klasa klienta będzie klasy nadrzędnej i klasa kolejności będą klasy podrzędnej.  

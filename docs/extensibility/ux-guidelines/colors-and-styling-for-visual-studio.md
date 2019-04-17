@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650635"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 W pliku VSShell80.idl, wyliczenia `__VSSYSCOLOREX` ma stałe kolor powłoki. Aby go użyć, Przekaż jako wartość indeksu jedną z wartości z `enum __VSSYSCOLOREX` udokumentowane w witrynie MSDN lub regularnych indeksu, number, system Windows API, `GetSysColor`, akceptuje. W ten sposób otrzymuje wartość RGB koloru, który ma zostać użyty w drugim parametrze.
 
 Jeśli przechowywanie pióro lub pędzla o nowy kolor, musisz najpierw `AdviseBroadcastMessages` (zniżki w stosunku do programu Visual Studio shell) i posłuchaj `WM_SYSCOLORCHANGE` i `WM_THEMECHANGED` wiadomości.
-
 
 Aby uzyskać dostęp do usługi kolorów w kodzie natywnym, wprowadzisz wywołań, który jest podobny do tego:
 
@@ -312,7 +311,7 @@ Wiele typowych elementów interfejsu użytkownika już dużego kontrastu koloró
 | --- | --- |
 | ActiveCaption | -Active IDE i okna rafted symbole przycisk aktywowany, a następnie naciśnij klawisz<br />-Tło paska title IDE i rafted systemu windows<br />— Tło paska stanu domyślne |
 | ActiveCaptionText | -Active IDE i okna rafted dla pierwszego planu paska tytułu (tekst i symbole)<br />-Tło i obramowanie aktywnego okna przycisków po wskazaniu wskaźnikiem, a następnie naciśnij klawisz |
-| Formant | — Kontrolowanie domyślne i wyłączone w tle, w tym przycisk listy rozwijanej pola kombi, listy rozwijanej i wyszukiwania<br />-Tło przycisku target dock<br />— Tło paska polecenie<br />— Tło okna Narzędzie |
+| formant | — Kontrolowanie domyślne i wyłączone w tle, w tym przycisk listy rozwijanej pola kombi, listy rozwijanej i wyszukiwania<br />-Tło przycisku target dock<br />— Tło paska polecenie<br />— Tło okna Narzędzie |
 | ControlDark | -Tło IDE<br />— Separatory pasek menu i poleceń<br />— Obramowania paska polecenie<br />-Shadows menu.<br />-Narzędzie separator i obramowanie domyślne i aktywuje karcie okna<br />— Dobrze dokumentu tło przycisku przepełnienia<br />-Obramowanie symbol target dock |
 | ControlDarkDark |— Okno karty po przeniesieniu fokusu wybrany dokument |
 | ControlLight |-Obramowanie karty autoukrywanie<br />— Obramowanie pole kombi pola i listy rozwijanej listy<br />-Zadokować docelowej tło i obramowanie |

@@ -17,17 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2929d4a524f0da60f2bc32b150b86fdf1ea0cb57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc14e8751e11c53bb43041228a6556604d0d9641
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797780"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664762"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas wyświetlania danych w formularzach w aplikacjach Windows, można wybrać istniejące kontrolki z **przybornika**, lub możesz tworzyć niestandardowe formanty, jeśli aplikacja wymaga funkcji, która nie jest dostępna w standardowych kontrolek. W tym instruktażu pokazano, jak utworzyć formant, który implementuje <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Określa, które implementują <xref:System.ComponentModel.DefaultBindingPropertyAttribute> może zawierać jedną właściwość, która może być powiązana z danymi. Te kontrolki są podobne do <xref:System.Windows.Forms.TextBox> lub <xref:System.Windows.Forms.CheckBox>.  
   
  Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [tworzenia kontrolek Windows Forms w czasie projektowania](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  

@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761630"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656029"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
 > [!NOTE]

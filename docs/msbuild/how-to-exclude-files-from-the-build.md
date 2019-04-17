@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9a798f200734dd4db885aee4a25258bfdb49c69c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603173"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668889"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.
@@ -100,7 +100,7 @@ W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszyst
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

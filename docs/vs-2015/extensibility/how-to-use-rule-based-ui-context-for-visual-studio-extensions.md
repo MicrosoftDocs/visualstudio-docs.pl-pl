@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759798"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664317"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: Używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
 |ActiveProjectCapability:\<wyrażenia >|Wyrażenie ma wartość true, gdy możliwości aktywnego projektu jest zgodna z podanego wyrażenia. Wyrażenie może być podobny do VB &#124; CSharp|
 |SolutionHasProjectCapability:\<wyrażenia >|Podobny do powyższego, ale termin ma wartość true, jeśli rozwiązanie ma załadowanego projektu, który pasuje do wyrażenia.|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Termin będzie mieć wartość true, zawsze wtedy, gdy to rozwiązanie ma projektu, który jest składni (łącznie), a wersja odpowiadał typowi danego projektu identyfikatora GUID.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Zgodność z rozszerzeniem między wersjami
  Reguły na podstawie kontekstów interfejsu użytkownika jest nową funkcją w programie Visual Studio 2015 i nie będzie można przenieść do wcześniejszych wersji. Spowoduje to utworzenie problemu z rozszerzeń/pakietów przeznaczonych dla wielu wersji programu Visual Studio, które musiały być ładowane automatycznie w programie Visual Studio 2013 i starszych, ale może być korzystne kontekstów interfejsu użytkownika na podstawie reguł, aby zapobiec auto ładowany w programie Visual Studio 2015.

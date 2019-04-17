@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f233a036c3c0b40cbd53a298154919861b58b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779506"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663664"
 ---
 # <a name="how-to-edit-xml-files"></a>Instrukcje: Edytowanie plików XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XML lub plik skojarzony z projektu programu Visual Studio. Edytor XML jest skojarzony z następujących rozszerzeń pliku: .config, .dtd, XML i XSD, a także .xdr, XSL, .xslt i .vssettings. Edytor XML jest powiązany z pliku innego typu ma nie określonych Edytor zarejestrowany i zawiera zawartość DTD lub XML.  
   
 > [!NOTE]
@@ -72,4 +71,4 @@ Edytor XML jest nowym edytorze plików XML. Może służyć autonomiczny plik XM
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)   
  [Właściwości dokumentu XML, okno właściwości](../xml-tools/xml-document-properties-properties-window.md)   
- [Instrukcje: Tworzenie schematu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+ [Instrukcje: Tworzenie schematu XML na podstawie dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758577"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652829"
 ---
 # <a name="convert-dialog-box"></a>Konwertowanie — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Przekonwertować** okno dialogowe umożliwia wybranie narzędzia konwersji, aby utworzyć nowy projekt ze starej, takich jak tworzenie [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] projektu z projektu języka Visual Basic 6. Można również użyć [konwerter projektów Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), która jest dostępna w witrynie CodePlex, aby uaktualnić projekty utworzone w poprzednich wersjach programu Visual Studio.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  

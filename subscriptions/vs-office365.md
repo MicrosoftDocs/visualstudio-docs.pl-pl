@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści usługi Office 365, objęte niektóre subskrypcje programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: daace466f79f89f17568f25b7ecf5358e0bfc4c5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841081"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656053"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Usługi Office 365 Pro Plus w subskrypcji programu Visual Studio
 
@@ -48,7 +48,6 @@ Wykonaj następujące kroki, aby pobrać i aktywować Office 365 Pro Plus:
 
 Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować swoje [subskrypcja dewelopera usługi Office](vs-office-dev.md)
 
-
 ## <a name="eligibility"></a>Uprawnienie
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
@@ -63,10 +62,8 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & usług dla deweloperów BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network.*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

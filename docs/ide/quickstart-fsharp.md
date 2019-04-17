@@ -11,18 +11,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657237"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: Tworzenie pierwszej usługi sieci web platformy ASP.NET Core w F przy użyciu programu Visual Studio\#
 
 W ramach tego wprowadzenia 5 – 10 minut, aby F# w programie Visual Studio, utworzysz F# aplikacji sieci web platformy ASP.NET Core.
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+::: moniker range="vs-2017"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 

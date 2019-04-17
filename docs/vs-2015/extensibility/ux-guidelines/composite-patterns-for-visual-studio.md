@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835094"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653271"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Wzorce złożone dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Wygląd Wybieranie obiektu graficznego
  Uchwyty są kwadratów rysowane we wzorcu prostokątny wokół pola ograniczenia obiektu. Na wykresie poniżej przedstawiono przykłady różnych stanów, które obiekt graficzny może mieć z uchwyt zmiany rozmiaru i wygląd edycji w miejscu. Rozmiar uchwytów należy powiązać z krawędź okna i przy użyciu metryk brzegowych **GetSystemMetrics** interfejsu API.
 
-
 |          Stan          |  Wygląd   |                                                                  Szczegóły dotyczące programu Visual                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Niezaznaczone**      |    Domyślny    |                 ![Domyślny stan klawisza](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
@@ -437,7 +436,6 @@ Wzorce złożone łączenie elementów interakcji i Projekt w różnych konfigur
 >  **Fokus** i **wybór** różne zagadnienia. *Fokus* wskazanie, które interfejsu użytkownika elementu jest przeznaczona dla danych wejściowych nie zostały jawnie skierowany przeciwko innego obiektu, podczas gdy *wybór* odwołuje się do stanu włączenia obiektu w zestawie obiektów, na którym kolejne operacje może mieć miejsce.
 
  Wybrane opcje na listach może być ciągłe, rozłączny, lub regionu. Gdy wiele zaznaczeń dozwolonych, ciągłym i wybór rozłączne powinna być zawsze obsługiwana, podczas obsługi opcji region (pole) jest opcjonalny. Opcje regionu są inicjowane za pomocą przeciągania biały treści listy.
-
 
 | Obiekt | Wybór  |
 |--------|------------|

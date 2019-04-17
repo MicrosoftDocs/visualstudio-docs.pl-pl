@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f986dae74991695c83b2e2c329493141c6518bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775582"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648916"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Zmiany zwracanego typu metody DataContext nie można cofnąć
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zmiany zwracanego typu metody DataContext nie można cofnąć. Aby przywrócić automatycznie wygenerowany typ, można przeciągnąć element z Server Explorer/Eksploratorze bazy danych do Projektanta obiektów relacyjnych ponownie. Czy na pewno chcesz zmienić zwracany typ?  
   
  Zwracany typ <xref:System.Data.Linq.DataContext> metoda zależy od tego, gdzie można upuścić elementu w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Jeśli usuniesz element bezpośrednio na istniejącej klasy jednostki, <xref:System.Data.Linq.DataContext> metodę, która ma typ zwracany klasy jednostki zostanie utworzony. Jeśli usuniesz element na pustym obszarem [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], <xref:System.Data.Linq.DataContext> metodę, która zwraca automatycznie wygenerowany typ zostanie utworzony. Możesz zmienić typ zwracany <xref:System.Data.Linq.DataContext> metoda po dodaniu do okienka metod. Aby sprawdzić lub zmienić typ zwracany <xref:System.Data.Linq.DataContext> metody, zaznacz go i kliknij **typie zwracanym** właściwość **właściwości** okna.  

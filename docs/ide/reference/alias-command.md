@@ -16,19 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919420"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662546"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
 
 > [!TIP]
 > Wpisywanie `>alias` bez żadnych argumentów Wyświetla bieżącą listę aliasów i ich definicje.
-
 
 ## <a name="syntax"></a>Składnia
 

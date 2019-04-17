@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e6d1aa5cbcc4d996f2caf0e42f372dd3de9eee6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7f6f2fb35e4f0500e97cf762152955a3f4e5c10
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773298"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655040"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Przewodnik: Używanie XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym instruktażu pokazano, jak za pomocą automatycznego uzupełniania wartości niektóre atrybuty XSLT IntelliSense.  
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Można użyć funkcji IntelliSense w atrybut name elementu xsl: z param i Call-szablonu elementów  

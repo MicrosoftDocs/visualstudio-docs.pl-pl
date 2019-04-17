@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804630"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648224"
 ---
 # <a name="creating-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając Ci wybrać zdarzeń, które chcesz monitorować, podczas kompilowania projektów w systemie wieloprocesorowym. Po włączeniu przekazywanie rejestratorów może uniemożliwić niepożądanych zdarzeń z przeciążenia rejestratora centralnego, spowalniając czas kompilacji i zaśmiecania dziennika.  
   
  Można utworzyć rejestratora przekazywania, można albo Implementowanie <xref:Microsoft.Build.Framework.IForwardingLogger> interfejsu, a następnie ręcznie wdrożyć jego metody lub użyj <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasa i jej wstępnie skonfigurowanych metod. (Ten ostatni będą wystarczające dla większości aplikacji.)  

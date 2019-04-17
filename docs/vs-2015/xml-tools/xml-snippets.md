@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786293"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654658"
 ---
 # <a name="xml-snippets"></a>Fragmenty kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Edytor XML oferuje funkcję o nazwie *fragmentów kodu XML*, który pozwala szybciej tworzyć pliki XML. Można ponownie użyć fragmentów kodu XML, wstawiając je do plików. Można również wygenerować danych XML na podstawie schematu języka (XSD) definicji schematu XML.  
   
 ## <a name="reusable-xml-snippets"></a>Fragmentów kodu XML do ponownego wykorzystania  

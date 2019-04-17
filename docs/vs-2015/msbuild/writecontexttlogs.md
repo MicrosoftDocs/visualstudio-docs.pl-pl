@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: deee2af2ccf1f2561410bc66b7f2f096bab61dd5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7bba9c5b46aa01cddca4de5c8e1347b540999289
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764940"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668098"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zapisuje pliki dziennika dla bieżącego kontekstu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -44,7 +43,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  Nazwa głównej nazwy pliku dziennika.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- [Wartość HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) przy użyciu [sukces] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
+ ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) with ([sukces]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) ustawiony bit, jeśli kontekst śledzenia został utworzony.  
   
 ## <a name="requirements"></a>Wymagania  
  **Nagłówek:** FileTracker.h  

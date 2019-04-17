@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cba9557ba40fe2daf993557b8d8ce92d5dda698
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c5a461b2aad51fa4fa2d4ac5cc682ae413b6eb1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653439"
 ---
 # <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: Relacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu, adnotacji i dokumentację.  
   
 ```xml  

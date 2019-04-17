@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600491"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657595"
 ---
 # <a name="application-deployment-prerequisites"></a>Wymagania wstępne wdrożenia aplikacji
 
@@ -70,7 +70,6 @@ Aby utworzyć swoją aplikację, aby zainstalować i uruchomić się pomyślnie,
  *Setup.exe* generowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i zadania programu MSBuild obsługuje następujący zestaw argumentów wiersza polecenia. Wszystkie inne argumenty są przekazywane do Instalatora aplikacji.
 
  W przypadku zmiany żadnych opcji programu inicjującego należy zmienić bez znaku program inicjujący i później Zaloguj się w pliku programu inicjującego.
-
 
 | argument wiersza polecenia | Opis |
 | - | - |

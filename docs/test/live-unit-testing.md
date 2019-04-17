@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325136"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669917"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing w programie Visual Studio
 
@@ -27,7 +27,6 @@ Korzystając z Live Unit Testing dla testów, Live Unit Testing utrzymuje dane o
 
 ## <a name="supported-test-frameworks"></a>Platformy obsługiwane testowe
 Live Unit Testing działa z trzech struktur testowania jednostek popularne, wymienione w poniższej tabeli. Minimalna obsługiwana wersja ich kart i struktur również znajduje się w tabeli. Struktur testowania jednostek są dostępne w witrynie NuGet.org.
-
 
 |Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
 |---------|---------|---------|

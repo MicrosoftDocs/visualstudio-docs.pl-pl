@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796727"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656457"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: Wykluczanie plików z kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W pliku projektu można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów jako dane wejściowe dla kompilacji. Jednak może być jeden plik w katalogu lub w katalogu w zestawie zagnieżdżonych katalogów, których nie chcesz dodać jako dane wejściowe dla kompilacji. Można jawnie wykluczone tego pliku lub katalogu, z listy danych wejściowych. W projekcie, który chcesz uwzględnić w pewnych okolicznościach również może być plikiem. Można jawnie zadeklarować warunków, w których plik jest uwzględniony w kompilacji.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Wykluczanie pliku lub katalogu dane wejściowe dla kompilacji  

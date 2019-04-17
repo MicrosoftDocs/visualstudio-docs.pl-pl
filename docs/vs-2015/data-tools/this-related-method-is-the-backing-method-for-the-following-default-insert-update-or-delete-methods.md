@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8229eaa612675f949d716477eda4627840dfca89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01c044c86922e5161aaf3d7d342dd02d3ff01afc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772118"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667317"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Ta powiązana metoda to metoda zapasowa następujących domyślnych metod wstawiania, aktualizowania lub usuwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ta powiązana metoda to metoda zapasowa następujących domyślne metod wstawiania, aktualizacji lub Usuń. Jeśli zostanie usunięta, te metody także zostaną usunięte. Czy chcesz kontynuować?  
   
  Wybrane `DataContext` metoda jest obecnie używany jako jedną z metod Insert, Update lub Delete dla jednej z klas obiektów w Projektancie obiektów relacyjnych. Trwa usuwanie wybranej metody spowodować, że klasa jednostki, która została przy użyciu tej metody, aby powrócić do domyślnego zachowania czasu wykonywania do operacji Insert, Update, lub usunąć w trakcie aktualizacji.  

@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655403"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Samouczek: Tworzenie prostej aplikacji przy użyciu języka C\#
 
 Przez wykonanie kroków tego samouczka, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
@@ -84,7 +84,6 @@ Po utworzeniu projektu, można go dostosować. Za pomocą **właściwości** okn
 1. W oknie rozpoczęcia wybierz **Tworzenie nowego projektu**.
 
    ![Wyświetlanie w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. Na **Utwórz nowy projekt** ekran, wyszukaj "WPF", wybierz **aplikacja WPF (.NET Framework)**, a następnie wybierz **dalej**.
 

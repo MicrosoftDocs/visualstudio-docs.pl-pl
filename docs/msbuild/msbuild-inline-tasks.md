@@ -10,18 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707169e0b4c7463cb2df45a40ebe4380b6706a52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ee2dff8cab226d3df724d7a8295de52c56e11a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609465"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668148"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
  Począwszy od .NET Framework w wersji 4, można utworzyć zadania wbudowane w pliku projektu. Nie trzeba utworzyć osobny zestaw do obsługi zadań. Dzięki temu łatwiej do śledzenia kodu źródłowego i łatwiejsze do wdrożenia zadania. Kod źródłowy jest zintegrowany skrypt.
-
 
  W MSBuild 15.8 [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) został dodany, które można utworzyć .NET Standard zadania wbudowane dla wielu platform.  Jeśli musisz użyć wbudowanych zadań na platformie .NET Core, należy użyć RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Struktura zadania wbudowanego

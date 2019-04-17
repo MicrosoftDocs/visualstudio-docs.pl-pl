@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9922cb879c9adbf0a6e334aa0c9ebc6cf60585d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 773d3ea2e0d5574b194a44783b14d35db25d6f7f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799372"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661831"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>Obiekty dodawane do projektanta używają innego połączenia danych niż aktualnie używane przez projektanta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Obiekty, które są dodawane do projektanta Użyj innego połączenia danych niż aktualnie używane projektanta. Czy chcesz zastąpić połączenie używane przez projektanta?  
   
  Podczas dodawania elementów do [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), wszystkie elementy, użyj jednego połączenia danych udostępnionych. (Na powierzchnię projektową reprezentuje <xref:System.Data.Linq.DataContext>, który używa pojedynczego połączenia dla wszystkich obiektów na powierzchni.) Ten komunikat pojawia się po dodaniu obiektu do projektanta, który korzysta z połączenia danych, która różni się od połączenia danych są obecnie używane przez projektanta. Aby rozwiązać ten problem, można zachować istniejące połączenie. W przypadku wprowadzenia ten wybór nie można dodać wybranego obiektu. Alternatywnie można dodać obiektu i zresetuj <xref:System.Data.Linq.DataContext> połączenia do nowego połączenia.  

@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801430"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665005"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Przyjmuje listę nazw bibliotek typów lub plików .tlb i jest rozpoznawana jako tych bibliotek typów do lokalizacji na dysku.  
   
 ## <a name="parameters"></a>Parametry  
@@ -47,10 +46,10 @@ Przyjmuje listę nazw bibliotek typów lub plików .tlb i jest rozpoznawana jako
 |`ResolvedAssemblyReferences`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa odwołania rozpoznanego zestawu.|  
 |`ResolvedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa w pełni kwalifikowaną pliki na dysku, które odnoszą się do fizycznej lokalizacji biblioteki typów, które były dostarczane jako dane wejściowe dla tego zadania.|  
 |`ResolvedModules`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametru.|  
-|`SdkToolsPath`|Opcjonalne [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Jeśli `ExecuteAsTool` jest `true`, ten parametr musi być równa ścieżkę narzędzi zestawu SDK dla framework w wersji docelowej.|  
-|`StateFile`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa plik pamięci podręcznej składnika modelu COM w sygnatur czasowych. Jeśli nie występuje każdego uruchomienia spowoduje to ponowne wygenerowanie wszystkich otoki.|  
-|`TargetFrameworkVersion`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. co oznacza, że jest nie filtrowania dla odwołania, w oparciu o platformę docelową.|  
-|`TargetProcessorArchitecture`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa preferowany cel architektury procesora. Przekazany do flagi/Machine tlbimp.exe po translacji.<br /><br /> Wartość parametru powinna być członkiem <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Jeśli `ExecuteAsTool` jest `true`, ten parametr musi być równa ścieżkę narzędzi zestawu SDK dla framework w wersji docelowej.|  
+|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa plik pamięci podręcznej składnika modelu COM w sygnatur czasowych. Jeśli nie występuje każdego uruchomienia spowoduje to ponowne wygenerowanie wszystkich otoki.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa wersję platformy docelowej projektu.<br /><br /> Wartość domyślna to `String.Empty`. co oznacza, że jest nie filtrowania dla odwołania, w oparciu o platformę docelową.|  
+|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa preferowany cel architektury procesora. Przekazany do flagi/Machine tlbimp.exe po translacji.<br /><br /> Wartość parametru powinna być członkiem <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa ścieżkę pliku biblioteki typów do odwołań COM. Elementy zawarte w tym parametrze mogą zawierać metadane elementu. Aby uzyskać więcej informacji zobacz sekcję "TypeLibFiles element Metadnych" poniżej.|  
 |`TypeLibNames`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa nazwy biblioteki typów, aby rozwiązać. Elementy zawarte w tym parametrze musi zawierać niektóre metadane elementu. Aby uzyskać więcej informacji zobacz sekcję "TypeLibNames element Metadnych" poniżej.|  
 |`WrapperOutputDirectory`|Opcjonalnie `String` parametru.<br /><br /> Lokalizacja na dysku, w którym została umieszczona wygenerowanego zestawu międzyoperacyjnego. Jeśli metadane tego elementu nie jest określona, zadanie używa ścieżkę bezwzględną katalogu, w którym znajduje się w pliku projektu.|  

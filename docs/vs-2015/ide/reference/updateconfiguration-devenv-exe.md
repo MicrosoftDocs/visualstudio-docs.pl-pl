@@ -13,17 +13,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e058d18c0a7c6d1d3b26a5b379c308d26f790ca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9ffc9410d64f58fff771a0e9b251ee1131eaea5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783164"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670034"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Powiadamia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do scalenia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żadnych zmian w pamięci podręcznej pakietów w systemie i wyboru MEF.  
   
 ## <a name="syntax"></a>Składnia  

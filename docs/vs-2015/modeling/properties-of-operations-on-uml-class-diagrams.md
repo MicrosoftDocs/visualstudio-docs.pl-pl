@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668447"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Właściwości operacji w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
 
  Aby wyświetlić właściwości operacji, kliknij prawym przyciskiem myszy działanie w klasie lub interfejsie na diagramie, a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
 
-
 |      Właściwość       |   Domyślne    |                                                                                                                                                                                 Opis                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Nazwa**       | (Nowa nazwa) |                                                                                                                                                                Powinny być unikatowe w obrębie typu zawierającego.                                                                                                                                                                 |
@@ -75,4 +74,4 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
  [Właściwości typów w diagramach przypadków UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Właściwości skojarzeń w diagramach przypadków UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)
+ [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)

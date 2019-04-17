@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 307722b668a71dd97e6b05364226d8c5ea62af66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766010"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651568"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) udostępnia powierzchnia projektowania wizualnego służące do tworzenia i edytowania [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy (klas jednostek), które są oparte na obiektach w bazie danych. Za pomocą [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), można użyć technologii LINQ do dostępu do bazy danych z programu SQL. Aby uzyskać więcej informacji, zobacz [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
  Domyślnie logiki, aby przeprowadzić aktualizacje są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne instrukcji Insert, Update i Delete na podstawie schematu tabeli (definicje kolumn i informacje o kluczu podstawowym). Gdy użytkownik nie chce Użyj zachowania domyślnego, można skonfigurować zachowanie aktualizacji i wyznaczyć określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do pracy z danymi w bazie danych. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacje, przy użyciu procedur składowanych](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  

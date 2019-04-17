@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834442"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665145"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Jak zgłosić Problem w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [jak zgłosić problem w programie Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [jak zgłosić problem w programie Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, aby firma Microsoft zdiagnozować i rozwiązać go.  Za pomocą **Zgłoś Problem** narzędzia, możesz zbierać szczegółowe informacje o problemie i wysyłać do firmy Microsoft, za pomocą kilku kliknięć przycisków.
 
- Firma Microsoft szanuje Twoją prywatność. Aby dowiedzieć się, jak będzie traktowany jak dane, które możesz wysłać do nas, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).
+Firma Microsoft szanuje Twoją prywatność. Aby dowiedzieć się, jak będzie traktowany jak dane, które możesz wysłać do nas, zobacz [programu Microsoft Visual Studio zachowania poufności rodziny produktów](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Otwórz raport z narzędziem Problem
- Kliknij ikony opinii użytkownika obok **Szybkie uruchamianie** w pasku tytułu lub kliknąć **pomocy &#124; Wyślij opinię &#124; Zgłoś Problem**.
 
- ![Zgłoś Problem elementu Menu](../ide/media/report-a-problem-menu-item.png "zgłosić Problem elementu Menu.")
+Kliknij ikony opinii użytkownika obok **Szybkie uruchamianie** w pasku tytułu lub kliknąć **Pomoc > Wyślij opinię > Zgłoś Problem**.
+
+![Zgłoś Problem elementu Menu](../ide/media/report-a-problem-menu-item.png "zgłosić Problem elementu Menu.")
 
 ## <a name="describe-the-problem"></a>Opisz problem
 
@@ -43,7 +44,8 @@ Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, 
    ![Zgłoś Problem okna dialogowego](../ide/media/report-a-problem-dialog.png "zgłosić Problem okna dialogowego")
 
 ## <a name="provide-a-screenshot-optional"></a>Podaj zrzut ekranu (opcjonalnie)
- Wybierz **Dołącz zrzut ekranu** wysyłać bieżącego ekranu do firmy Microsoft. To narzędzie umożliwia Przytnij obraz, aby wyświetlić tylko część ekranu ukazujący problem. Możesz dołączyć dodatkowe zrzuty ekranu lub inne pliki, klikając **Dołącz dodatkowe pliki** przycisku.
+
+Wybierz **Dołącz zrzut ekranu** wysyłać bieżącego ekranu do firmy Microsoft. To narzędzie umożliwia Przytnij obraz, aby wyświetlić tylko część ekranu ukazujący problem. Możesz dołączyć dodatkowe zrzuty ekranu lub inne pliki, klikając **Dołącz dodatkowe pliki** przycisku.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Podaj zrzutu śledzenia i sterty (opcjonalnie)
 
@@ -60,10 +62,13 @@ Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, 
      ![Zapisz plik śledzenia](../ide/media/record-a-trace-file.png "Zapisz plik śledzenia")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Opis rozwiązania, jeśli istnieje
- Jeśli udało Ci się obejścia problemu, opisz obejście w polu edycji przewidzianych do tego celu. Ułatwia to nam nie tylko zdiagnozować problem, ale również pomagać innym użytkownikom, którzy mogą wystąpić ten sam problem.
+
+Jeśli udało Ci się obejścia problemu, opisz obejście w polu edycji przewidzianych do tego celu. Ułatwia to nam nie tylko zdiagnozować problem, ale również pomagać innym użytkownikom, którzy mogą wystąpić ten sam problem.
 
 ## <a name="submit-the-report"></a>Prześlij raport
- Kliknij przycisk Prześlij, aby wysłać raport, wraz z wszystkie obrazy i pliki śledzenia lub zrzutu. Jeśli **przesyłania** przycisk będzie szary, upewnij się, że podano tytuł i opis.
+
+Kliknij przycisk Prześlij, aby wysłać raport, wraz z wszystkie obrazy i pliki śledzenia lub zrzutu. Jeśli **przesyłania** przycisk będzie szary, upewnij się, że podano tytuł i opis.
 
 ## <a name="see-also"></a>Zobacz też
- [Porozmawiaj z nami](../ide/talk-to-us.md)
+
+- [Porozmawiaj z nami](../ide/talk-to-us.md)

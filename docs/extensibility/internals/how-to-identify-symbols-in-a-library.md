@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628718"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651971"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Instrukcje: Identyfikowanie symboli w bibliotece
 Narzędzia do przeglądania symboli wyświetlić widokach hierarchicznych symboli. Symbole reprezentują przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka.
@@ -49,7 +49,6 @@ N1
  Canonical ścieżka klasy C2, w tym przykładzie jest N1 + C2. Ścieżka prezentacji C2 zawiera węzły "Podstaw i interfejsy" i C1: N1 + C1 + "baz i interfejsy" + C2.
 
  Uzyskiwania informacji formularza prezentacji, wywołań Menedżera obiektów <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metody.
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Aby uzyskać canonical i prezentacji formularzy informacji
 

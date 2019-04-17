@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b214ff057125b2921ec853fbee004cbb7d41f9e0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28d9f3d43faa53731b101dfdf58fe1e68a0920c5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792770"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655702"
 ---
 # <a name="using-memory-efficiently-when-you-build-large-projects"></a>Efektywne używanie pamięci podczas kompilowania dużych projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Duże projekty często zawierają wiele projektów podrzędnych oraz inne zależności, a te mogą wykorzystywać duże ilości pamięci systemowej w czasie kompilacji. Gdy jest zmniejszenie ilości dostępnej pamięci systemowej, wydajność systemu również można zmniejszyć. Starsze wersje [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projektów pozostaje w pamięci lub w wersji 3.5 projekty zostały usunięte, ale zachowane wyniki kompilacji w pamięci podręcznej pobierania nowsze.  
   
  Wersja 4.0 obsługuje to zarządzanie pamięcią automatycznie, zapisywanie projektów z konieczności używania właściwości, takie jak `UnloadProjectsOnCompletion` i `UseResultsCache`.  

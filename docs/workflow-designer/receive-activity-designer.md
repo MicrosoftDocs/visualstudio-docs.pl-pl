@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948254"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649224"
 ---
 # <a name="receive-activity-designer"></a>Receive, projektant działań
 
@@ -36,7 +36,6 @@ Alternatywnie **ReceiveAndSendReply** Projektant szablonów w **komunikatów** k
 ### <a name="the-receive-activity-properties"></a>Odbieranie właściwości działania
 
 W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta przepływów pracy. To jedyna wymagana właściwość <xref:System.ServiceModel.Activities.Receive.OperationName%2A> właściwości.
-
 
 | Nazwa właściwości | Wymagane | Użycie |
 |-|----------|-|

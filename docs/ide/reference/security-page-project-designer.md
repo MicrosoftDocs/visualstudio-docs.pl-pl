@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936138"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648566"
 ---
 # <a name="security-page-project-designer"></a>Strona zabezpieczeń, Projektant projektu
 
@@ -34,7 +34,6 @@ ms.locfileid: "55936138"
 
 > [!NOTE]
 > Po opublikowaniu aplikacji za pomocą **Publikuj** kreatora, ta opcja jest automatycznie włączona.
-
 
  Po wybraniu tej opcji, użytkownik może wybrać jedną z dwóch przycisków radiowych: **Jest to aplikacja w trybie pełnego zaufania** lub **to częściowo zaufanych aplikacji**.
 

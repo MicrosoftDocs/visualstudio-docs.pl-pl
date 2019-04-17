@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754950"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649683"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które mogą wystąpić podczas korzystania z programu Visual Studio Emulator for Android.
 

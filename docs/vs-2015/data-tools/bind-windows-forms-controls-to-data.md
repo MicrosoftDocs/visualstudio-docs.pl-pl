@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783430"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668993"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Źródła danych można powiązać formanty przeciągając obiekty z **źródeł danych** okna w formularzu Windows albo do istniejącego formantu w formularzu. Podczas przeciągania elementów, można ustawić typu formantu, który chcesz powiązać. W zależności od tego, czy wybierz tabelę, samego lub poszczególnych kolumn są wyświetlane różne wartości.  Można również ustawić wartości niestandardowych. W przypadku tabeli "Szczegóły" oznacza, że każda kolumna jest powiązana z oddzielnej kontrolce.  
   
  ![Źródło danych należy powiązać DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "źródła danych powiązania raddata DataGridView")  

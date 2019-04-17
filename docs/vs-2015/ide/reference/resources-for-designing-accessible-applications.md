@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651935"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Zasoby do projektowania dostępnych aplikacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj następujących linków, aby znaleźć informacje o technologii obsługujących dostępny projekt, a także wskazówki i przykłady dotyczące tworzenia dostępnych aplikacji Windows i witryn sieci Web. Ogólne informacje na temat ułatwień dostępu można znaleźć w [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).  
   
 ## <a name="technologies"></a>Technologies  

@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758229"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658994"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Instrukcje: Konfigurowanie obiektów docelowych i zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można ustawić wybranych zadań programu MSBuild do uruchamiania w środowisku, docelowych, niezależnie od środowiska na komputerze deweloperskim. Na przykład gdy używasz 64-bitowy komputer do tworzenia aplikacji w danej architekturze celów 32-bitowa wybranych zadań są uruchamiane w procesie 32-bitowym.  
   
 > [!NOTE]

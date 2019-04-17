@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920577"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653011"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze postępuj zgodnie z odpowiednią dyscypliny blokowania i korzystanie z adnotacji SAL.
@@ -104,7 +104,6 @@ Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze 
 |`_Interlocked_`|Oznacza stosowanym zmienną i jest odpowiednikiem `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Parametr funkcji adnotacjami jest operand docelowej jednego z różnych funkcji Interlocked.  Te operandy muszą posiadać określone dodatkowe właściwości.|
 |`_Write_guarded_by_(expr)`|Oznacza stosowanym zmienną i wskazuje, że zawsze, gdy zmienna jest modyfikowany, liczbę blokad blokady obiektu, który jest nazwany przez `expr` co najmniej jeden.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Blokada Smart Lock i adnotacje RAII
  Inteligentnych zamków zazwyczaj opakować natywnych blokad i zarządzanie nimi ich istnienia. W poniższej tabeli wymieniono adnotacji, które mogą być używane z inteligentnych zamków i idiomu RAII wzorców, obsługę `move` semantyki.

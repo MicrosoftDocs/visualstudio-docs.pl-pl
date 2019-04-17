@@ -16,17 +16,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662585"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania na poniższej liście są dołączone [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Gdy [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] jest zainstalowany, dodatkowe zadania są dostępne, które są wykorzystywane do zorganizowania [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektów. Aby uzyskać więcej informacji, zobacz [Visual C++ zadania](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma następujące parametry:  

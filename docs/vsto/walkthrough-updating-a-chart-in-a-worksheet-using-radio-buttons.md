@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651893"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Przewodnik: Aktualizacja wykresu w arkuszu za pomocą przycisków radiowych
   W tym przewodniku przedstawiono podstawowe informacje dotyczące za pomocą przycisków radiowych w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby dać użytkownikowi możliwość szybkiego przełączania się między opcjami. W tym przypadku opcje zmieniają styl wykresu.
@@ -132,30 +132,24 @@ ms.locfileid: "56602068"
 
 2. Z **wspólnych formantów** karcie **przybornika**, przeciągnij **przycisk radiowy** sterowania do formantu użytkownika, a następnie Zmień następujące właściwości.
 
-
    | Właściwość | Wartość |
    |----------|------------------|
    | **Nazwa** | **columnChart** |
    | **Text** | **Wykres kolumnowy** |
 
-
 3. Dodaj drugi przycisk radiowy do formantu użytkownika, a następnie Zmień następujące właściwości.
-
 
    | Właściwość | Wartość |
    |----------|---------------|
    | **Nazwa** | **barChart** |
    | **Text** | **Wykres słupkowy** |
 
-
 4. Dodaj trzeci przycisk radiowy do formantu użytkownika, a następnie Zmień następujące właściwości.
-
 
    | Właściwość | Wartość |
    |----------|----------------|
    | **Nazwa** | **lineChart** |
    | **Text** | **Wykres liniowy** |
-
 
 5. Dodaj czwarty przycisku radiowego do formantu użytkownika, a następnie Zmień następujące właściwości.
 

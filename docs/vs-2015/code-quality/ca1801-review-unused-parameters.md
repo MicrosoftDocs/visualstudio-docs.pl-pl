@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662611"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Dokonaj przeglądu nieużywanych parametrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1801: Przejrzyj nieużywane parametry](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1801: Przejrzyj nieużywane parametry](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Kategoria|Microsoft.Usage|  
-|Zmiana kluczowa|Bez podziału — Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone.<br /><br /> Bez podziału — w przypadku zmiany należy użyć parametru w swojej treści.<br /><br /> Przerywanie — Usuń parametr, jeśli jest on widoczny spoza zestawu.|  
+|Zmiana kluczowa|Podziału non - Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone.<br /><br /> Bez podziału — w przypadku zmiany należy użyć parametru w swojej treści.<br /><br /> Przerywanie — Usuń parametr, jeśli jest on widoczny spoza zestawu.|  
   
 ## <a name="cause"></a>Przyczyna  
  Podpis metody zawiera parametr, który nie jest używany w jej treści. Ta reguła analizuje następujących metod:  

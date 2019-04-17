@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649957"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
 Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.
@@ -1948,7 +1948,6 @@ Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklaro
 **Zaznaczony tag z Zamknij (&times;) symbol: Umieść stanu**
 
 ![Zaznaczony tag z Zamknij (&times;) symbol po najechaniu wskaźnikiem](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Zaznaczony tag z Zamknij (&times;) symbol po najechaniu wskaźnikiem
-
 
 | Element | Nazwa tokenu: Category.Color |
 | --- | --- |

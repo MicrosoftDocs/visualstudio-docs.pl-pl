@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834583"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663785"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośników*) opisano kontrolkę wyświetlającą informacje z danych w jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w **źródeł danych** okna na formant, który jest już powiązany z kolumny lub właściwości w pokrewnej tabeli podrzędnej.  
   
  Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w `Orders` tabela zawiera `CustomerID` oznacza to, który klient złożył zamówienie. `CustomerID` To klucz obcy wskazujący rekord klienta w `Customers` tabeli. Po wyświetleniu listy zamówień z `Orders` tabeli, możesz chcieć wyświetlić nazwę klienta rzeczywiste zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w `Customers` tabeli, należy utworzyć tabeli odnośników, aby wyświetlić nazwę klienta. Używa tabeli odnośników `CustomerID` wartość w `Orders` nagrywanie Przejdź relacje i zwraca nazwę klienta.  

@@ -12,19 +12,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069635"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659348"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
 
 W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
+
+::: moniker-end
 
 W tym artykule przyjęto założenie, że już znasz Visual Basic. Jeśli nie masz, Sugerujemy, zobacz samouczek takich jak [wprowadzenie do języka Visual Basic w programie Visual Studio](../../get-started/visual-basic/tutorial-console.md) pierwszy.
 

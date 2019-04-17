@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1426c763b60325190a5d15744fabe5eaa1b3ae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f0afa597a11207d4e4cb843356cf36d199b460f4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640678"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661259"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName — zadanie
 Tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]— styl nazwy manifestu z danym *resx* nazwa pliku lub innego zasobu.
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry [createvisualbasicmanifestresourcename — zadanie](../msbuild/createvisualbasicmanifestresourcename-task.md).
-
 
 | Parametr | Opis |
 | - | - |

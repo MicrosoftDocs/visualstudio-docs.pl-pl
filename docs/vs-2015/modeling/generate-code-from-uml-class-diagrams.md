@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802168"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663995"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
  Aby uzyskać więcej informacji dotyczących diagramów klas UML w programie Visual Studio zobacz następujące tematy:  
 
-- [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
 
-- [Diagramy klas UML: Wytyczne dotyczące](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
 
   Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramów klas UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -164,7 +164,6 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 
 4. W oknie dialogowym ustaw właściwości powiązania szablonu tekstu.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Opis**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nazwa        |                                                                                                                                                                                                                                                  Nazwa dla tego powiązania. Aby zastąpić powiązanie odziedziczone z zawartego pakietu lub modelu, użyj takiej samej nazwy, jaką ma powiązanie, które chcesz zastąpić.                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
    |    Ścieżka projektu    |                                                                      Określa ścieżkę do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliki wyjściowe projektu, który będzie zawierać transformacji. Aby utworzyć nowy projekt skorzystaj z typowanych wartości. Wybierz przycisk wielokropka (**[...]** ) aby wybrać istniejący projekt.<br /><br /> Jeśli projekt nie istnieje zostanie utworzony nowy. Będzie to projekt biblioteki klas języka C#.<br /><br /> Aby to zrobić, musisz wpisać nazwę projektu bezpośrednio. Możesz dołączyć makra zmiennej środowiska, takie jak %ProgramFiles% lub %LocalAppData%.                                                                       |
    |  Katalog docelowy  |                                                                                          Folder, w którym generowany jest plik docelowy. Ścieżka jest względna w stosunku do folderu projektu.<br /><br /> Możesz użyć `{PackageStructure}` wyrażenie, aby wstawić ścieżkę, która odnosi się do nazw zawierających pakietów. Wartość domyślna to `\GeneratedCode\{PackageStructure}`. Można również dołączyć zmienne środowiskowe, takie jak %TEMP% lub %HomePath%. **Ważne:** `{PackageStructure}` mogą być używane tylko w **katalog docelowy** właściwości.                                                                                          |
    | Ścieżka pliku szablonu |                                                                                                                                                           Szablon, który będzie wykonywał przekształcenia.<br /><br /> Można użyć dostarczonych szablonów lub stworzyć własne. Dostarczone szablony można znaleźć w następującej lokalizacji:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. Można dołączyć dowolną liczbę powiązań do elementu.  
 

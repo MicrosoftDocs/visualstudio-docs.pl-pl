@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765550"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661584"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Tworzenie bazy danych SQL za pomocą projektanta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Możesz eksplorować podstawowe zadania, takie jak dodawanie tablic i definiowanie kolumn, używając Visual Studio do tworzenia i aktualizowania lokalnego pliku bazy danych w SQL Server Express LocalDB. Po zakończeniu tego instruktażu można odkryć więcej zaawansowanych możliwości przy użyciu lokalnej bazy danych jako punkt wyjścia dla innych instruktaży, które tego wymagają.  
   
  Można również utworzyć bazę danych przy użyciu programu SQL Server Management Studio (pobrania osobno) lub instrukcji języka Transact-SQL w **Eksplorator obiektów SQL Server** okna narzędzi w programie Visual Studio.  

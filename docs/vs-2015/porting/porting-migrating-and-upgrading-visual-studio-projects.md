@@ -19,17 +19,17 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194927"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654701"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Port, migrowanie i uaktualnianie projektów programu Visual Studio](https://docs.microsoft.com/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [odwołanie do migracji i uaktualniania projektu dla programu Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
 
 Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można użyć tego dokumentu, aby dowiedzieć się które rozwiązania, projekty, pliki i inne zasoby, które zostały utworzone w [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub Visual Studio 2010 SP1 uruchomią się bez modyfikacji [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] i [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Lub, być może osiągnięto tej strony, jeśli pojawił się komunikat o błędzie podczas próby otwarcia projektu, który nie jest obsługiwana w wersji programu Visual Studio został otwarty, lub wymaga zestawu SDK lub rozszerzenie, np. zestaw Azure SDK dla platformy .NET.
 
@@ -38,7 +38,7 @@ Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można
  Jeśli używasz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] wraz z [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub Visual Studio 2010 z dodatkiem SP1, można tworzyć i modyfikować projekty i pliki we wszystkich wersjach. Możesz przenosić projekty i pliki między wersjami, o ile nie dodajesz funkcji, które nie są obsługiwane przez jedną z wersji.
 
 ##  <a name="project"></a> Projekty
- Na poniższej liście opisano obsługę w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] dla projektów, które zostały utworzone w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub Visual Studio 2010 SP1. Można użyć tej listy w celu określenia, czy można otworzyć projektu jako — w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub Visual Studio 2010 z dodatkiem SP1, czy należy wprowadzić jakieś zmiany, aby osiągnąć kompatybilność.
+ Na poniższej liście opisano obsługę w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] dla projektów, które zostały utworzone w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] lub Visual Studio 2010 SP1. Użyj tej listy w celu określenia, czy można otworzyć projektu "w jakim jest" w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], lub Visual Studio 2010 z dodatkiem SP1, czy należy wprowadzić jakieś zmiany, aby osiągnąć kompatybilność.
 
 |Typ projektu|Zgodność|
 |---------------------|-------------------|
@@ -130,4 +130,5 @@ Jeśli rozważasz przeniesienie do nowszej wersji programu Visual Studio, można
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|64-bitowego środowiska, takiego Jakmsbuild lub [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] nie może służyć do tworzenia [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje, które są tworzone w [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)].|
 
 ## <a name="see-also"></a>Zobacz też
- [Tworzenie niestandardowych projektów rozpoznający wersje](../misc/making-custom-projects-version-aware.md)
+
+- [Tworzenie niestandardowych projektów rozpoznający wersje](../misc/making-custom-projects-version-aware.md)

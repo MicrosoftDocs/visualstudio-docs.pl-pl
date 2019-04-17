@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602018"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661064"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera dla rozwiązań nadrzędnego
 W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci web w ramach rozwiązania. To z jednym elementem głównym jest nazywany Super Unified głównego (dolna Południowa).
@@ -42,7 +42,6 @@ W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może okr
 -   Istnieją różne udziały plików rozwiązania i projektu.
 
 -   Projekt został dodany osobno (w ramach rozwiązania pod kontrolą źródła).
-
 
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zalecane jest, czy nazwa folderu SUR być taka sama jak nazwa rozwiązania bez rozszerzenia. W poniższej tabeli podsumowano zachowanie w dwóch wersjach.
 

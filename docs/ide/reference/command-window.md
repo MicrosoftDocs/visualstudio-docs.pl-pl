@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928754"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653882"
 ---
 # <a name="command-window"></a>Okno polecenia
 **Polecenia** okna jest używana do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Można wykonać polecenia menu i poleceń, które nie są wyświetlane w żadnym menu. Aby wyświetlić **polecenia** okna, wybierz **Windows inne** z **widoku** menu, a następnie wybierz **okna polecenia**.
@@ -60,7 +60,6 @@ ms.locfileid: "55928754"
 
 > [!TIP]
 > Możesz skopiować całość lub część poprzednie polecenie do wiersza danych wejściowych przewijanie do niego, wyróżnianie całość lub część jej i następnie naciśnij klawisz ENTER.
-
 
 ## <a name="mark-mode"></a>Tryb oznaczania
  Po kliknięciu dowolnego poprzedniego wiersza w **polecenia** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.

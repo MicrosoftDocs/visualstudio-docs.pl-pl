@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eedc9c469e4ceb4ac4b5be018f2ebdd227ffcf2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681793"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649423"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Instrukcje: Debugowanie w klastrze o wysokiej wydajności (C#, Visual Basic, C++)
 
@@ -95,7 +95,6 @@ Debugowanie programu przetwarzania wieloprocesowego w klastrze o wysokiej wydajn
  Poniższy przykład pokazuje, jak utworzyć filtr dla punktu przerwania na komputerze o nazwie `marvin` i wątek o nazwie `fourier1`.
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
-
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

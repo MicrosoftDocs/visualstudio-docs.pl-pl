@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b198732a5771ad39dab6d3797bad01e7b55c189
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e1f20b446d355ea0cbc6700de5f2e6f79de51d09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770623"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647064"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Określa plik do przechowywania i wyświetlania błędów podczas uruchamiania, tworzenia, odbudować lub wdrożyć rozwiązanie.  
   
 ## <a name="syntax"></a>Składnia  

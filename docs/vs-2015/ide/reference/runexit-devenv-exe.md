@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 412dee9ec920d4d94e2b4f2f176d1b1634a34eef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793154"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648903"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kompiluje i uruchamia określony projekt lub rozwiązanie, a następnie zamyka zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  

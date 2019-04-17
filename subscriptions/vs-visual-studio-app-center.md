@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści programu Visual Studio App Center uwzględniony w subskrypcjach programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2333c7d47fdb0108576d87345d6a4124c36b50dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843568"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662318"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -44,17 +44,14 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, NFR<sup>1</sup> | Dołączono       |  Tak          |
 | Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dołączono                                                            |Tak |
-| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Tak |
+| Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Yes |
+| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Dołączono                                                            |Yes |
 | Visual Studio Dev Essentials | Nie dotyczy  | Dołączono                                                            |Tak |
-
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży, Wyobraź sobie ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego).*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

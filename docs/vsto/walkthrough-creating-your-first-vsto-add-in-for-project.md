@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641757"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665210"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Przewodnik: Tworzenie swojej pierwszej dodatku narzędzi VSTO dla projektu
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Project. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte projekty. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -91,7 +91,6 @@ ms.locfileid: "56641757"
 1.  Jeśli używasz języka C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod łączy `Application_Newproject` obsługi zdarzenia ze zdarzeniem NewProject.
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>Projekt testowy
  Gdy skompilować i uruchomić projekt, należy sprawdzić, czy nowe zadanie jest wyświetlany w nowym projekcie wynikowym.

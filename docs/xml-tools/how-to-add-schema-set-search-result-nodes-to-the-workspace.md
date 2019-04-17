@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913931"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654493"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Instrukcje: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
 
@@ -21,7 +21,6 @@ W tym temacie został objaśniony sposób dodawania węzłów, które zostały w
 
 > [!NOTE]
 > Tylko globalne węzły mogą być dodawane do [obszaru roboczego](../xml-tools/xml-schema-designer-workspace.md).
-
 
  W tym przykładzie użyto przykładu [schemat zamówienia zakupu](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

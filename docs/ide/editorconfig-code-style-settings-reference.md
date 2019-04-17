@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232804"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649811"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -70,7 +70,7 @@ Ważność | Efekt
 Na poniższej liście przedstawiono dopuszczalne języka ustawienia stylu kodu:
 
 - Ustawienia stylu kodu .NET
-    - ["This." i "Me." Kwalifikatory](#this_and_me)
+    - ["This." i "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -106,7 +106,7 @@ Na poniższej liście przedstawiono dopuszczalne języka ustawienia stylu kodu:
         - CSharp\_styl\_var\_dla\_wbudowane\_in_types
         - csharp\_style\_var\_when\_type\_is_apparent
         - CSharp\_styl\_var_elsewhere
-    - [Składowe z wyrażeniem w treści](#expression_bodied_members)
+    - [Elementy członkowskie z wyrażeniem w treści](#expression_bodied_members)
         - csharp\_style\_expression\_bodied_methods
         - csharp\_style\_expression\_bodied_constructors
         - csharp\_style\_expression\_bodied_operators
@@ -282,7 +282,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-**polecenia DotNet\_styl\_wstępnie zdefiniowanych\_typu\_dla\_member_access**
+**dotnet\_style\_predefined\_type\_for\_member_access**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj słowem kluczowym języka dla wyrażenia dostępu do składowych, a nie nazwę typu dla typów, które mają słowo kluczowe do ich reprezentacji.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj Nazwa typu dla wyrażenia dostępu do składowych, zamiast słowa kluczowego języka.
@@ -637,7 +637,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**polecenia DotNet\_styl\_Preferuj\_wywnioskować\_tuple_names**
+**dotnet\_style\_prefer\_inferred\_tuple_names**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj wywnioskowane nazwy elementów krotki.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj nazwami elementów krotki jawnego.
@@ -748,8 +748,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -922,7 +920,7 @@ W poniższej tabeli przedstawiono nazwy reguł, dotyczy języków programowania 
 | csharp_style_var_when_type_is_apparent | C# | true:silent |
 | csharp_style_var_elsewhere | C# | true:silent |
 
-**CSharp\_styl\_var\_dla\_wbudowane\_in_types**
+**csharp\_style\_var\_for\_built\_in_types**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj `var` służy do deklarowania zmiennych wbudowany system typów, takich jak `int`.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj jawny typ za pośrednictwem `var` deklarowanie zmiennych wbudowany system typów, takich jak `int`.
@@ -952,7 +950,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-**CSharp\_styl\_var_elsewhere**
+**csharp\_style\_var_elsewhere**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj `var` za pośrednictwem typu jawnego we wszystkich przypadkach, jeśli zastąpiona przez inną regułę stylu kodu.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj jawny typ za pośrednictwem `var` we wszystkich przypadkach, jeśli zastąpiona przez inną regułę stylu kodu.
@@ -1138,7 +1136,7 @@ W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, wersje j�
 | csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0+ | true:suggestion |
 | csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0+ | true:suggestion |
 
-**CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jest\_z\_cast_check**
+**csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj dopasowywanie do wzorców zamiast `is` wyrażenia z typu rzutowania.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj `is` wyrażenia z rzutowania typów, zamiast dopasowywania do wzorca.
@@ -1153,7 +1151,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-**CSharp\_styl\_wzorzec\_pasującego\_za pośrednictwem\_jako\_z\_null_check**
+**csharp\_style\_pattern\_matching\_over\_as\_with\_null_check**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj dopasowywanie do wzorców zamiast `as` wyrażeń o wartości null kontrole w celu ustalenia, czy jest coś, co jest określonego typu.
 - Gdy ta reguła jest ustawiona na **false**, Preferuj `as` wyrażenia z sprawdzanie wartości null, zamiast dopasowywania do wzorca w celu ustalenia, czy jest coś, co jest określonego typu.
@@ -1241,7 +1239,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-**CSharp\_styl\_zdekonstruowana\_variable_declaration**
+**csharp\_style\_deconstructed\_variable_declaration**
 
 - Gdy ta reguła jest ustawiona na **true**, Preferuj śródwierszową deklarację zmiennej.
 - Gdy ta reguła jest ustawiona na **false**, nie Preferuj kwalifikatora dekonstrukcja w deklaracjach zmiennych.
@@ -1567,7 +1565,7 @@ if (...) {
 }
 ```
 
-**CSharp\_nowe\_wiersza\_before_catch**
+**csharp\_new\_line\_before_catch**
 
 - Gdy ta reguła jest ustawiona na **true**, umieść `catch` instrukcji w nowym wierszu.
 - Gdy ta reguła jest ustawiona na **false**, umieść `catch` instrukcji w tym samym wierszu.
@@ -1861,7 +1859,7 @@ W poniższej tabeli przedstawiono nazwy reguł, właściwe języki, wartości do
 | csharp_space_between_method_call_name_and_opening_parenthesis | C# | false | 15.7 |
 | csharp_space_between_method_call_empty_parameter_list_parentheses | C# | false | 15.7 |
 
-**CSharp\_miejsca\_after_cast**
+**csharp\_space\_after_cast**
 
 - Gdy ta reguła jest ustawiona na **true**, wymagają odstęp między rzutowanie, jak i wartość.
 - Gdy ta reguła jest ustawiona na **false**, wymagają _nie_ odstęp między rzutowanie, jak i wartość.

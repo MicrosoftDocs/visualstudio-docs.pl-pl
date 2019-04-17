@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755441"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647475"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i klasy zestawu danych mogą być generowane w oddzielnych projektów. Dzięki temu można szybko oddzielnymi warstwami aplikacji i generowania aplikacji n warstwowa danych.  
   
  W poniższej procedurze opisano proces za pomocą Projektanta obiektów Dataset, aby wygenerować kod zestawu danych do projektu, który jest oddzielony od projektu, który zawiera wygenerowaną `TableAdapter` kodu.  

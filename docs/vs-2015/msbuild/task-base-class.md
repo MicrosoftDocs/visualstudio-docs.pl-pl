@@ -14,17 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 041b57c252ffe77dc7374b39ba40b8152a390205
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2b1d82356d2f19388fd642214d03c1a1097b81ff
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778740"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654337"
 ---
 # <a name="task-base-class"></a>Klasa podstawowa zadania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wiele zadań, ale ostatecznie dziedziczyć <xref:Microsoft.Build.Utilities.Task> klasy. Ta klasa dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.  
   
 ## <a name="parameters"></a>Parametry  

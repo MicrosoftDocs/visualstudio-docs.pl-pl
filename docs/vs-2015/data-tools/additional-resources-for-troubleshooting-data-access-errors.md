@@ -231,17 +231,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775234"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668720"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można znaleźć w publiczne fora Microsoft Developer Network (MSDN). W poniższej tabeli przedstawiono dane powiązane fora dostępne w witrynie MSDN.  
   
  [Windows Forms Data kontrolek i wiązania danych](http://go.microsoft.com/fwlink/?LinkId=160179)  

@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668122"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umożliwia automatyczne wykrywanie, pobieranie i instalowanie aplikacji i jej wstępnie wymagane składniki. Służy on jako jeden Instalator, który integruje osobne instalatory dla wszystkich składników tworzących aplikację.  
   
 ## <a name="task-parameters"></a>Parametry zadania  

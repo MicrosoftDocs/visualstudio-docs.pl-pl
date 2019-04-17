@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630525"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658401"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] informacje rejestracji skojarzony z typów projektu są używane do określenia, jakie do wyświetlenia w **Dodaj nowy projekt** i **Dodaj nowy element** okien dialogowych.
@@ -54,7 +54,6 @@ Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje
 "TemplatesLocalizedSubDir"="#10"
 "SortPriority"=dword:00000064
 ```
-
 
 | Nazwa | Typ | Opis |
 |--------------------------|-----------| - |

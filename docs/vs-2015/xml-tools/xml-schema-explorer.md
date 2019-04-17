@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803281"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670436"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem XML, aby umożliwić Praca ze schematami języka (XSD) definicji schematu XML. Po otwarciu pliku schematu XML **schemat ustawiony** węzła pojawia się w Eksplorator schematu XML. Wszystkich schematów uwzględniony, zaimportowanych lub zmieniony dla pliku docelowego, a także wszystkie pliki, które są wywoływane za pośrednictwem `include` lub `import` instrukcji, również są wyświetlane dla Eksploratora schematu XML.  
   
  Eksplorator schematu XML można wykonać następujące czynności:  
@@ -92,4 +91,4 @@ Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem 
 -   [Integracja literałów XML z eksploratorem schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+ [Instrukcje: Dodawanie węzłów do obszaru roboczego z eksploratora schematu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

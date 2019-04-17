@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781700"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662078"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ten temat kieruje do materiału Przegląd, który pomoże Ci zrozumieć, opracowywanie aplikacji mobilnych dla wielu platform za pomocą platformy Xamarin. Jeśli nie zainstalowano jeszcze programu Visual Studio i Xamarin, uruchom [Instalator i instalacja](../cross-platform/setup-and-install.md) procesu po pierwsze, następnie wróć tutaj i pracować za pośrednictwem tych zasobów, gdy instalatory są uruchomione.  
   
 > [!NOTE]

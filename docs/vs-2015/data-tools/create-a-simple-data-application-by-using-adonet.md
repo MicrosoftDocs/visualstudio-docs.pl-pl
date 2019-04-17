@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664219"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz podstawowe zadania, takie definiowania ciągów połączeń, wstawiania danych i uruchamianie przechowywanych procedur. Korzystając z tego tematu, można wykryć, jak korzystać z bazy danych z w ramach prostą aplikację "formularzy nad danymi" Windows Forms przy użyciu języka Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — w tym zestawy danych, LINQ to SQL i Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawione w tym artykule.  
   
  W tym artykule przedstawiono prosty sposób pobrać dane z bazy danych w sposób bardzo szybko. Jeśli aplikacja musi modyfikować dane w sposób nietrywialnymi i aktualizują bazę danych, należy rozważyć używający narzędzia Entity Framework i korzystanie z danych powiązywanie kontrolek interfejsu użytkownika na zmiany w danych bazowych są synchronizowane automatycznie.  

@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765965"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651128"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas przeciągania elementu z **źródeł danych** okna do powierzchni projektu, aby utworzyć formant powiązany z danymi, można wybrać typ kontrolki, którą tworzysz. Każdy element w oknie ma listy zawiera formanty, które można wybierać. Zestaw mechanizmów kontrolnych, związane z każdym elementem jest określana przez typ danych elementu. Jeśli formant, który ma zostać utworzona, nie ma na liście, możesz wykonać instrukcje przedstawione w tym temacie, aby dodać formant do listy.  
   
  Aby uzyskać więcej informacji o wybieraniu formantów powiązanych z danymi można utworzyć dla elementów w **źródeł danych** okna, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  

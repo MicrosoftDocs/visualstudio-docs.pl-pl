@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25542f9179917c5675eb56753f79db895f5d2ddf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763826"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668785"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Instrukcje: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Procedury składowane i funkcje, które mogą być dodawane do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] jako <xref:System.Data.Linq.DataContext> metody. Wywołanie metody i przekazując wymaganych parametrów uruchamia procedurę składowaną lub funkcję w bazie danych i zwraca dane w typie zwracanym <xref:System.Data.Linq.DataContext> metody. Aby uzyskać szczegółowe informacje na temat <xref:System.Data.Linq.DataContext> metod, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
   
 > [!NOTE]

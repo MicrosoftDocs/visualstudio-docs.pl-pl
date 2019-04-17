@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323454"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661389"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -95,7 +95,6 @@ Po dodaniu nowych zasad do wytycznych podstawowe sprawdzanie języka C++, może 
   - **Reguły dotyczące granic** wymusić [granic profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
   - **Reguły typu** wymusić [typu profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
 
 Można ograniczyć ostrzeżeń do tylko jednej lub kilku grup. **Native Minimum** i **natywny zalecany** reguły zestawy reguł podstawowe sprawdzanie języka C++, oprócz innych PREfast kontroli. Aby wyświetlić dostępnych zestawów reguł, Otwórz okno dialogowe właściwości projektu, wybierz **Analysis\General kodu**, Otwórz na liście rozwijanej **zestawów reguł** pola kombi i pobrania **Wybierz wiele zestawów reguł** . Aby uzyskać więcej informacji na temat Korzystanie z zestawów reguł w programie Visual Studio, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md).
 

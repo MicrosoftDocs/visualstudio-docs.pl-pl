@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdfe600192e61e8e7721c0e5486afafbedcaa6eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4f9c5afe582c12f3f7e6a941030be1c94bcd1f5f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650996"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania
 *Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Wyświetla listę informacji chronometrażu dla każdego punktu wejścia i wyjścia do funkcji w aplikacji oraz dla każdego wywołania innych funkcji przez funkcję. Raporty śledzenia wywołań są dostępne dla danych profilowania, tylko wtedy, gdy zostały one pobrane metodą instrumentacji.
@@ -37,7 +37,6 @@ ms.locfileid: "56624220"
     |*ToolsPath*|Ścieżka narzędzi wiersza poleceń Profiling Tools. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*VSPFile*|Dane profilowania (. *Vsp* lub. *vsps*) pliku. Akceptowane są pełne i częściowe ścieżki.|
     |Xml|Generuje raport w formacie XML.|
-
 
 ## <a name="see-also"></a>Zobacz także
 - [Instrukcje: Zbieraj dane zdarzenia śledzenia dla Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)

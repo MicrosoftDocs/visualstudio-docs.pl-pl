@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 472b4097b50ba2b1eb2f9bfe005338bf7e1d2d42
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 141c1a045a5d1f668fdedf9477dfa2b7ceffbd56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664193"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji składnik .NET Framework, takich jak. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.
@@ -62,7 +62,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
-
 
 5. Uruchom aplikację docelową z okna wiersza polecenia.
 

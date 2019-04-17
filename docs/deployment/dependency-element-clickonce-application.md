@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612676"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658061"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;zależność&gt; — element (aplikacja ClickOnce)
 Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
@@ -122,7 +122,6 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 
  `dependentAssembly` ma następujące atrybuty.
 
-
 | Atrybut | Opis |
 |-----------------------| - |
 | `dependencyType` | Wymagana. Określa typ zależności. Prawidłowe wartości to `preprequisite` i `install`. `install` Zestawów jest instalowany jako część [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. A `prerequisite` zestawu musi znajdować się w globalnej pamięci podręcznej zestawów (GAC) przed [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] można zainstalować aplikacji. |
@@ -153,14 +152,12 @@ Określa zależność platformy lub zestawu, który jest wymagany dla aplikacji.
 ### <a name="dsigtransform"></a>DSIG:Transform
  `dsig:Transform` Element jest wymagany element podrzędny elementu `dsig:Transforms` elementu. `dsig:Transform` Element ma następujące atrybuty.
 
-
 | Atrybut | Opis |
 |-------------| - |
 | `Algorithm` | Algorytm używany do obliczania skrótu dla tego pliku. Obecnie tylko wartość używana przez [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] jest `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ### <a name="dsigdigestmethod"></a>DSIG:DigestMethod
  `dsig:DigestMethod` Element jest wymagany element podrzędny elementu `hash` elementu. `dsig:DigestMethod` Element ma następujące atrybuty.
-
 
 | Atrybut | Opis |
 |-------------| - |

@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790089"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656781"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawie jednego lub więcej zapytań lub procedur składowanych, które określisz. TableAdapters można również wykonać dodaje, aktualizuje i usuwa w bazie danych, aby zachować zmiany wprowadzone do zestawu danych. Można także wystawić polecenia globalne, które nie są związane z żadną z tabel.  
   
 > [!NOTE]

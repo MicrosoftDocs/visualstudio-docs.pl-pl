@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764864"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651085"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
   
 - `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  

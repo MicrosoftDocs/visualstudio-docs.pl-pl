@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753452"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670327"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 
 2. Dodaj następujące odwołania do projektu.  
 
-
    |                                                                                                    Tematy pomocy                                                                                                    |                                                                                                  Co to pozwala zrobić                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Zdefiniuj składniki za pomocą [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Zdefiniuj model obsługi zdarzeń.<br /><br /> Hermetyzuj serię zmian do modelu. Aby uzyskać więcej informacji, zobacz [aktualizacji modelu UML łącza za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (nie zawsze wymagane)                                                             |                                                                                   Elementy diagramu dodatkowego dostępu dla procedur obsługi gestu.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Wymagane tylko w przypadku polecenia na diagramach warstwy. Aby uzyskać więcej informacji, zobacz [rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md). |                                                                                             Zdefiniuj polecenia na diagramie warstwy.                                                                                              |
-
 
 3. Dodaj plik klasy do projektu i ustawi jego zawartość do następującego kodu.  
 

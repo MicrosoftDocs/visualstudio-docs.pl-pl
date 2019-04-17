@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640639"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657275"
 ---
 # <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
 Właściwości programu MSBuild i elementy zarówno służą do przekazywania informacji do zadań, oceny warunków i przechowywania wartości, które można się odwoływać w całym pliku projektu.
@@ -86,7 +86,6 @@ W fazie oceny procesu kompilacji zaimportowane pliki są włączane do kompilacj
 - Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.
 
 - Elementy są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.
-
 
 W fazie wykonanie procesu kompilacji właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w jednej fazie w kolejności, w jakiej są wyświetlane.
 

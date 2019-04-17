@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683682"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649995"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Studio Eksploruj zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki grach i aplikacjach.
@@ -104,7 +104,6 @@ Visual Studio 2017 i większa zawierają **Historia zasobów** okna.  Wybierają
 ![Historia zasobów](media/gfx_diag_resource_history.png)
 
 To okno służy do wyświetlania historii elementu wybranego na liście zdarzeń.  Lista rozwijana u góry, można wybrać inne elementy, aby wyświetlić historię.  W górnej połowie okna zawiera **zdarzenia konfiguracji klatki**.  Są to zdarzenia, które można podzielić na *Utwórz* wpisz kategorię i wywołań, które zwykle inicjowania i Utwórz zasób.  Dolnej części okna zawiera **zdarzenia klatki** sekcji.  Te są normalne odczytu i zapisu zdarzenia, które wystąpiły w czasie korzystania z zasobów.
-
 
 | Kolumna | Opis |
 |-----------| - |

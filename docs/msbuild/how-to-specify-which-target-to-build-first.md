@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5aa6e2fdcbca0a434af044b842cf2b4ece10c8ef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667342"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określ, która docelowa do tworzenia najpierw
 Plik projektu może zawierać jeden lub więcej `Target` elementy, które określają jak projekt jest kompilowany. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Aparatu kompilacji pierwszego projektu go odnajduje i wszelkie zależności, chyba, że plik projektu zawiera `DefaultTargets` atrybutu `InitialTargets` atrybutu lub elementu docelowego jest określony w wierszu polecenia za pomocą **— docelowy** przełącznika.
@@ -58,7 +58,6 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
 
 ## <a name="use-the--target-switch"></a>Użyj przełącznika - target
  Jeśli domyślny element docelowy nie jest zdefiniowana w pliku projektu lub jeśli chcesz użyć tego domyślnego obiektu docelowego, można użyć przełącznika wiersza polecenia **-target** Aby określić inny element docelowy. Cel lub cele określony za pomocą **-target** przełącznika są uruchamiane zamiast elementów docelowych określone przez `DefaultTargets` atrybutu. Obiektów docelowych określonych w `InitialTargets` są zawsze uruchamiane pierwszego atrybutu.
-
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć pierwszy element docelowy inny niż domyślny element docelowy
 

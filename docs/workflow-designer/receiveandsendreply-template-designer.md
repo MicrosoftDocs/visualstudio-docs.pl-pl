@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e14d968496c895f24038ca2db1e7f62846b75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950204"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648760"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply, projektant szablonów
 
@@ -41,7 +41,6 @@ Aby uzyskać więcej informacji o korzystaniu z **Receive** projektanta, aby sko
 ### <a name="properties-of-sendreply"></a>Właściwości SendReply
 
 W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.SendReply> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
-
 
 | Nazwa właściwości | Wymagane | Użycie |
 |-|----------|-|

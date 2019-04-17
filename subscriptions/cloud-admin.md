@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: Konfigurowanie administratorów w przypadku subskrypcji chmury
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841453"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664281"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Skonfiguruj administratorów w przypadku subskrypcji chmury programu Visual Studio
 
@@ -45,7 +45,6 @@ Aby dodać administratorów:
 Subskrybent wyznaczonych pojawia się w środku strony, a ich rolą jest wyświetlany jako "Administrator dostępu użytkowników".
 
 Nowy administrator może teraz zalogować do [portalu zarządzania](https://manage.visualstudio.com), wybrać tej samej subskrypcji platformy Azure, którego użyto do zakupu subskrypcji chmury z listy w górnym lewym rogu strony i rozpocząć zarządzanie tymi Subskrypcje.
-
 
 > [!NOTE]
 > Jeśli użytkownicy z dostępem do edycji Twoje subskrypcje w chmurze, które nie nawiązują jako Administratorzy, mogą mieć role w podstawowym subskrypcji platformy Azure, umożliwiające zarządzanie subskrypcjami. Te role obejmują: właścicielem, współautorem, administrator usługi lub współadministratora. Aby uzyskać więcej informacji, odwiedź stronę [dodać menedżerów rozliczeń](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).

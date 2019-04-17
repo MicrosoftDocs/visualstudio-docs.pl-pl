@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802292"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655351"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zapisywanie rejestratorów uwzględniających wiele procesorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zdolność [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."  
   
 ## <a name="multi-processor-logging-challenges"></a>Rejestrowanie wielu procesorów wyzwania  

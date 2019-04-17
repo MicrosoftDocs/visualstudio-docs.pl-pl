@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Parasoft wirtualizacji/SOA Test Professional zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fed9e66f521f27b140c2f11fc2642ffd1ea380c6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844116"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665314"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizacji/SOAtest Professional Desktop w subskrypcji programu Visual Studio
 
 Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny eliminowaniem nowych aplikacji i systemów.  Twój pakiet korzyści dotyczący obejmuje bezpłatna subskrypcja 6 miesięczny.  Na końcu subskrypcji sześciu miesięcy będą kwalifikować się do 25% rabatu od ceny roczna subskrypcja.
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
@@ -30,7 +29,6 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
 3. Nastąpi przekierowanie do witryny internetowej Parasoft, w których zostaną utworzone konto.  Wystarczy podać informacje kontaktowe i kliknij przycisk **przesyłania**.
    > [!div class="mx-imgBorder"]
    > ![Parasoft korzyści z tworzenia konta](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Po utworzeniu konta zobaczysz powiadomienie, że została została wysłana wiadomość e-mail z instrukcjami pobierania.  (Pamiętaj, aby Sprawdź foldery spamu lub śmieci, jeśli nie widzisz wiadomości e-mail w skrzynce odbiorczej).
 
@@ -83,10 +81,8 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
 
 <sup>1</sup>*obejmuje: Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje:  Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej produktów Parasoft?  Zapoznaj się z tymi zasobami:

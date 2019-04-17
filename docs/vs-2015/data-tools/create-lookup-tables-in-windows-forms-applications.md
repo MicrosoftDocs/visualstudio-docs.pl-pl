@@ -17,17 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773802"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663235"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Termin *tabeli odnośników* dotyczy kontrolek, które są powiązane z dwoma pokrewnymi tabelami danych. Te kontrolki wyszukiwania odnośników pokazują dane z pierwszej tabeli w oparciu o wartości wybrane w drugiej tabeli.  
   
  Utworzenia tabel odnośników, można przeciągnąć główny węzeł tabeli nadrzędnej (z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) na kontrolkę w formularzu, która jest już powiązana z kolumną w pokrewnej tabeli podrzędnej.  

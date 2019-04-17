@@ -14,17 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659803"
 ---
 # <a name="formatversion-task"></a>FormatVersion — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dołącza numer wersji do numeru wersji.  
   
 -   Przypadek #1: Dane wejściowe: Wersja =\<niezdefiniowana >;  Poprawka =\<nieważne >;   Dane wyjściowe: OutputVersion = "1.0.0.0"  

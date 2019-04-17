@@ -17,17 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: def8ce2a40e068c602b0182b4580f5e3b524d222
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b1d83cca1da917a08b8765dae66fb240ca1dc75
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661012"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ustawia domyślny język używany dla tekstu, waluty i innych wartości w ramach zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  

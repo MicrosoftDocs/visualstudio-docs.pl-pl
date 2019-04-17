@@ -1,5 +1,5 @@
 ---
-title: Install Dotfuscator Community
+title: Instalowanie programu Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e647ae257bfc6517685310f4a77ef398e775be
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: ef556f71d03cf20767fcba38ff3579dda2627a1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866615"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653678"
 ---
-# <a name="install-dotfuscator-community"></a>Install Dotfuscator Community
+# <a name="install-dotfuscator-community"></a>Instalowanie programu Dotfuscator Community
 
 System Dotfuscator Community jest opcjonalnym składnikiem programu Visual Studio.
 W instrukcjach wyjaśniono, jak go zainstalować.
@@ -37,7 +37,6 @@ W instrukcjach wyjaśniono, jak go zainstalować.
 > [!NOTE]
 > Oprócz wersji programu Dotfuscator Community dostarczany z wersjami produktów Visual Studio firmy PreEmptive Solutions okresowo zawiera zaktualizowane wersje na jej witrynie internetowej.
 > Jeśli chcesz pobrać **najnowszej wersji** bezpośrednio, zamiast instalować ją z poziomu programu Visual Studio, **[kliknij tutaj, aby przejść do strony pobierania narzędzia Dotfuscator] [ download]**.
-
 
 ## <a name="within-visual-studio"></a>W programie Visual Studio
 
@@ -76,7 +75,6 @@ System Dotfuscator Community można zainstalować w środowisku IDE programu Vis
 ::: moniker-end
 
 Po zakończeniu instalacji możesz [rozpocząć korzystanie z narzędzia Dotfuscator Community][get-started].
-
 
 ## <a name="during-visual-studio-installation"></a>Podczas instalowania programu Visual Studio
 

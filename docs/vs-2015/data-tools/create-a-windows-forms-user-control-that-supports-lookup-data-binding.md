@@ -18,17 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c0514d29d3c8e87b277115f8e1307dc0a5fb0c4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792617"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662715"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Utwórz formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas wyświetlania danych w formularzach Windows Forms, można wybrać istniejące kontrolki z **przybornika**, lub możesz tworzyć niestandardowe formanty, jeśli aplikacja wymaga funkcji, które nie są dostępne w standardowych kontrolek. W tym instruktażu pokazano, jak utworzyć formant, który implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Określa, które implementują <xref:System.ComponentModel.LookupBindingPropertiesAttribute> może zawierać trzy właściwości, które mogą być powiązane z danymi. Te kontrolki są podobne do <xref:System.Windows.Forms.ComboBox>.  
   
  Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [tworzenia kontrolek Windows Forms w czasie projektowania](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  

@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753535"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658789"
 ---
 # <a name="properties-window"></a>Okno Właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 To okno służy do wyświetlania i zmieniania właściwości projektowania oraz zdarzeń zaznaczonych obiektów, które znajdują się w edytorach i projektantach. Można również użyć **właściwości** okna do edytowania i wyświetlania plików, projekt i właściwości rozwiązania. Możesz znaleźć **właściwości** okno na **widoku** menu. Możesz też go otworzyć, naciskając klawisz F4 lub wpisując **właściwości** w **Szybkie uruchamianie** okna.  
   
  **Właściwości** oknie zostaną wyświetlone różne typy pól edycji, w zależności od potrzeb danej właściwości. Edytuj te pola zawierają pola tekstowe, listy rozwijane i łącza do niestandardowego edytora okien dialogowych. Właściwości zaznaczone na szaro są tylko do odczytu.  

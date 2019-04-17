@@ -6,16 +6,15 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6d10240383ddaf4ec2eb242dfc180c59ff084f1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: add48cc007b9108e565ae89d987caf2797b897f0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780265"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664640"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-install.md) i [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym instruktażu dowiesz się, jak utworzyć podstawową aplikację (pokazana poniżej), za pomocą zestawu narzędzi Xamarin.Forms. Za pomocą zestawu narzędzi Xamarin.Forms Ty napiszesz całości kodu interfejsu użytkownika raz w bibliotece klas przenośnych (PCL). Xamarin zostaną automatycznie renderowania natywne kontrolki interfejsu użytkownika dla systemów iOS, Android i Windows Platform. Zalecamy takie podejście, ponieważ opcja PCL najlepiej obsługuje przy użyciu tylko tych interfejsów API platformy .NET, które są obsługiwane na wszystkich platformach docelowych, a ponieważ zestawu narzędzi Xamarin.Forms umożliwia udostępnianie kodu interfejsu użytkownika różnych platformach.
 

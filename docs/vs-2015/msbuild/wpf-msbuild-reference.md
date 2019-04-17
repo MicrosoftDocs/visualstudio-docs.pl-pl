@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d2d44e83dfa4297119a6bb840cd8a42daab7cc6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6d506920cc0999cafe5cd8e877b5f79bd0278320
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785638"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650463"
 ---
 # <a name="wpf-msbuild-reference"></a>Odwołanie do WPF MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Windows Presentation Foundation (WPF) rozszerza Microsoft build engine (MSBuild) dzięki obsłudze dodatkowe kompilacji jest opisana w tej sekcji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

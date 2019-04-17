@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze o tym, jak kupić i zarządzać subskrypcjami chmury programu Visual Studio dla swoich klientów.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670410"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 
@@ -20,10 +20,8 @@ Partnerzy uczestniczący w programie [Cloud Solution Provider (CSP)](https://par
 
 [Porównanie opcji subskrypcji chmury](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -84,7 +82,6 @@ Oto jak interpretować, co widać na ten arkusz kalkulacyjny:
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Subskrypcja                         | Miesięczna subskrypcja programu Visual Studio Enterprise   |
 | Visual Studio     | Professional Edition           |  Subskrypcja                         | Miesięczna subskrypcja programu Visual Studio Professional |
-
 
 Firma Microsoft oferuje 5% rabatu na 6. jednostki, którego kupujesz każdego miesiąca w każdej subskrypcji programu Visual Studio (dla danego klienta). Dlatego zobaczysz dwa wiersze dla każdej opcji subskrypcji. Jeden wiersz zawiera "Wartość minimalna" 0, co powinno następuje interpretacja jako podstawa dla jednostek 1 do 5. Innych wierszy pokazuje "Wartość minimalna" 5, dlatego ceny z rabatem 5%, która ma zastosowanie do 6 jednostek i nowszych.
 

@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771611"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659626"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable, zapisywanie pętlę foreach za pośrednictwem kolekcji wierszy w tabeli lub użyć [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Rozróżnianie wielkości liter dla zestawu danych  

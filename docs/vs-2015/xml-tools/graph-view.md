@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658607"
 ---
 # <a name="graph-view"></a>Widok wykresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i relacje między węzłami. Należy pamiętać, że w widoku wykresu nie zezwala na można zmieniać układ schematu ustawiony na powierzchni projektowej. Widok wykresu zawiera również pasek narzędzi Projektanta schematu XML i na pasku nawigacji.  
   
  Na poniższej ilustracji przedstawiono widok wykresu za pomocą sześciu węzłów globalnego na jego powierzchni projektowej.  

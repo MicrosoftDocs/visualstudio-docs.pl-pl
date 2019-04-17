@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE, zawarte w Twojej subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 00168d9ab31c29264cc4ca3dc3a65412861aac52
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018145"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653170"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2019 r.
 
 Jako subskrybent programu Visual Studio masz dostęp do środowiska IDE programu Visual Studio.  Konkretna wersja będzie zależeć od poziomu subskrypcji.  Korzyści będą wyświetlane jako Kafelek w kategorii narzędzi na [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) strony z portalu dla subskrybentów.
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
@@ -41,7 +40,7 @@ Aby pobrać IDE:
 8. Kliknij przycisk **Kontynuuj** do akceptowania postanowień licencyjnych.
 9. Po uruchomieniu Instalatora, wybierz żądane obciążenia, poszczególne składniki i pakietów językowych, wybierając je w odpowiednich kart.
    > [!div class="mx-imgBorder"]
-   > ![Customize Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Dostosowywanie programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
 10. Kliknij przycisk **zainstalować**.
 
@@ -64,20 +63,18 @@ Aby pobrać IDE:
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Yes          |
-| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Yes          |
+| Program Visual Studio Enterprise (standardowy, miesięczną w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Program Visual Studio Professional (standardowy, miesięczną w chmurze) | VL, Azure, Retail                                       | Dostępne                                                            |  Tak          |
 | Visual Studio Test Professional (Standard)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Dostępne                                             |  Tak         |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Dev Essentials | Brak  | Visual Studio Community |Yes |
+| Visual Studio Dev Essentials | Brak  | Visual Studio Community |Tak |
 
 <sup>1</sup>*obejmuje:  Nie do odsprzedaży Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego).  Nie obejmuje: MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
 
-
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
-
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu programu Visual Studio IDE, zapoznaj się z tymi zasobami:

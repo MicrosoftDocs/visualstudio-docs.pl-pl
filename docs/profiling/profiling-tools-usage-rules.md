@@ -8,16 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59559f6d870a6291a00c74ff2be5737123fe076
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c763e24ae79591f4c9779421da9e41cf8f710e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649837"
 ---
 # <a name="profiling-tools-usage-rules"></a>Reguły korzystania z narzędzi profilowania
 Reguły wydajności w kategorii użycia narzędzia profilowania zapewniają wskazówki dotyczące używania programu profilującego do zbierania danych w najbardziej efektywny sposób.
-
 
 | | |
 | - | - |

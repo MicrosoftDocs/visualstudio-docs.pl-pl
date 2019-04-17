@@ -26,17 +26,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800905"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653102"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Zestaw danych jest kopii danych w pamięci. W przypadku zmodyfikowania tych danych jest dobrą praktyką, aby zapisać te zmiany w bazie danych. Możesz to zrobić na jeden z trzech sposobów:  
   
 - Przez wywołanie jednej z `Update` metod TableAdapter  

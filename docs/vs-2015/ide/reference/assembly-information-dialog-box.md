@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d05e1fd9afa2097a3e216421b5b0f3d23bfc518
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 616a46b4d8349bd2c385fda0dd36e6dc69fa60af
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778779"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663875"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Informacje o zestawie** okno dialogowe służy do określania wartości [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] globalnej atrybuty, które są przechowywane w pliku AssemblyInfo tworzone automatycznie w projekcie. W **Eksploratora rozwiązań**, plik znajduje się w **mój projekt** w węźle [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (kliknij **Pokaż wszystkie pliki** do jego wyświetlania); znajduje się w obszarze  **Właściwości** w [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Aby uzyskać więcej informacji na temat atrybutów zestawu, zobacz [atrybuty](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
  Aby otworzyć to okno dialogowe, wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na **projektu** menu, kliknij przycisk **właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **aplikacji** kartę. Na **aplikacji** kliknij **informacje o zestawie** przycisku.  

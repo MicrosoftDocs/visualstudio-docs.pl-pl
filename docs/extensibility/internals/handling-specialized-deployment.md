@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840328"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650814"
 ---
 # <a name="handle-specialized-deployment"></a>Obsługa specjalne wdrożenia
 Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przykład obsługuje wdrożenia, aby umożliwić projektu, zaktualizuj serwer sieci Web. Podobnie **urządzeń inteligentnych** projekt obsługuje wdrożenia można skopiować zbudowanych aplikacji na urządzeniu docelowym. Podtypy projektów można podać sposób działania wdrożenia specjalistycznych implementując <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu. Ten interfejs definiuje pełnego zestawu operacji wdrażania:
@@ -40,7 +40,6 @@ Wdrożenie jest operacją opcjonalne dla projektów. Projekt sieci Web, na przyk
   Operacja rzeczywiste wdrożenie powinna być wykonana w oddzielnym wątku się [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jeszcze bardziej elastyczna na interakcję z użytkownikiem. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> są wywoływane asynchronicznie przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i działa w tle, dzięki czemu środowisko, aby wykonać zapytanie o stan operacji wdrażania w dowolnym momencie lub zatrzymać operację, jeśli to konieczne. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Operacje wdrażania interfejsu są wywoływane przez środowisko, gdy użytkownik wybierze polecenie Wdróż.
 
   Aby powiadomić środowiska, uruchomione lub zakończył operację wdrożenia, podtypu projektu musi wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> metody.
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Do obsługi wdrożenia specjalistycznych przez projekt podtyp
 

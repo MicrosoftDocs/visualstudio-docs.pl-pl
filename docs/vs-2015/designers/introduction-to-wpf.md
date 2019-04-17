@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54af4da8ccfff04ed51f19b9265659897281f26d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756012"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670462"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -429,7 +429,7 @@ End Namespace
   
  Aby uzyskać więcej informacji, zobacz [Tworzenie szablonów i stylów](https://msdn.microsoft.com/library/ms745683\(v=vs.100\).aspx).  
   
-### <a name="resources"></a>Resources  
+### <a name="resources"></a>Zasoby  
  Kontrolki w aplikacji powinny mieć tego samego wygląd, który może zawierać żadnych z czcionki i kolory tła, w celu kontrolowania szablonów, szablony danych i style. Do hermetyzacji tych zasobów w obrębie jednej lokalizacji do ponownego wykorzystania, można użyć w WPF Obsługa zasoby interfejsu użytkownika.  
   
  W poniższym przykładzie zdefiniowano wspólnej kolor tła, który jest współużytkowany przez <xref:System.Windows.Controls.Button> i <xref:System.Windows.Controls.Label>.  
@@ -485,8 +485,7 @@ End Namespace
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
   [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
-  
-  
+
  Następny przykład ilustruje XAML, potrzebnego do dołączyć kontrolki użytkownika do <xref:System.Windows.Window>.  
   
  [!code-xml[IntroToWPFSnippets#UserControlWindowMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/UserControlWindow.xaml#usercontrolwindowmarkup1)]  

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9696d41b228cedb301239ebcd59cb68bc7e437f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757979"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655559"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Co najmniej jeden wybrany obiekt bazy danych zwraca schemat, który nie jest zgodny ze schematem klasy docelowej. Nic nie zostało dodane do projektanta.  
   
  Po przeciągnięciu obiekty bazy danych na istniejące klasy jednostki, dane zwrócone przez obiekt bazy danych muszą być zgodne ze schematem klasy docelowej jednostki. Sprawdź, czy wybrano obiekt prawidłową bazę danych i czy klasa prawidłowe jednostki docelowej.  

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600f44cccd57635cc789e2265fe5451e5674d737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5cb08c00679e3052ef0e0715ca58dd010a52e61b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754366"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649696"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -184,13 +184,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
 2. Z listy, wybierz jedną z następujących opcji:
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Maszyna lokalna**  |                                                                                                                Debugowanie aplikacji w bieżącej sesji na komputerze lokalnym. Zobacz [Uruchom Windows Store apps na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Symulator**    | Debugowanie aplikacji w symulatorze programu Visual Studio dla [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji. Symulator jest oknem pulpitu, które umożliwia debugowanie funkcji urządzeniami — takich jak gestów dotykowych i obracanie urządzeń — które nie są dostępne na komputerze lokalnym. Zobacz [Uruchom Windows Store aplikacji w symulatorze](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Komputer zdalny** |                          Debugowanie aplikacji na urządzeniu, do którego jest podłączony do komputera lokalnego za pośrednictwem intranetu lub podłączone bezpośrednio za pomocą kabla Ethernet. Zdalne debugowanie narzędzia zdalne programu Visual Studio musi być zainstalowana i uruchomiona na urządzeniu zdalnym. Zobacz [Uruchom Windows Store apps na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Wybierz aplikację z **zainstalowane pakiety aplikacji** listy.
 

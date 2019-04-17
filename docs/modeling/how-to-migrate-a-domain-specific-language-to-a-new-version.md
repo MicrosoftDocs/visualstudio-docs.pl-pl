@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663248"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Instrukcje: Migracja języka specyficznego dla domeny do nowej wersji
 Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które można migrować [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] z wersji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] który zostało rozpowszechniać za pomocą [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -81,7 +81,6 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
    -   Spróbuj kompilować projekty i zbadać wszelkie błędy.
 
    -   Przetestuj projektanta.
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

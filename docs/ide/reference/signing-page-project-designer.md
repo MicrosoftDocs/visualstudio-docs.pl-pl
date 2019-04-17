@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938764"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667043"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifestów aplikacji i wdrożenia, a także do podpisywania zestawu (podpisywanie silną nazwą).
@@ -94,12 +94,11 @@ Użyj **podpisywanie** strony **projektanta projektu** do podpisywania manifest�
 > [!NOTE]
 > Po podpisaniu zestawu nie zawsze masz dostęp do klucza prywatnego. Na przykład organizacja może być ściśle chronionej parę kluczy, deweloperzy nie mają dostępu do codziennie. Klucz publiczny mogą być dostępne, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnione* lub *częściowe podpisywanie* można podać klucz publiczny, opóźnienie dodanie klucza prywatnego, dopóki nie jest przekazywane zestawu.
 
-
 ## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)
 - [Zarządzanie podpisywaniem zestawu i manifestu](../../ide/managing-assembly-and-manifest-signing.md)
-- [Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Instrukcje: Podpisywanie zestawu (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Instrukcje: Podpisywanie zestawu silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)

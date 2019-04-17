@@ -18,17 +18,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94b6c5d7e1695b4b9ef2d1b383575a8806b112db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 663665c77a966d793930326ae04f8d30c71de771
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783949"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665522"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane z danymi. Formanty są powiązane z rekordów produktu, które są hermetyzowane w zestawie danych. Zostanie również dodać przyciski, za pośrednictwem produktów i zapisać zmiany do rekordów produktu.  
   
  W instruktażu przedstawiono następujące zagadnienia:  

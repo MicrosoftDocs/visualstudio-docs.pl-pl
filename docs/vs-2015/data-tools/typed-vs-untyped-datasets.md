@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668031"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Typizowany zestaw danych jest zestaw danych, który najpierw pochodzą od podstawy <xref:System.Data.DataSet> klasy, a następnie używa informacji z **Projektanta obiektów Dataset**, który jest przechowywany w pliku XSD, aby wygenerować nowy, silnie typizowanej klasy zestawu danych. Informacje ze schematu (tabele, kolumny i tak dalej) jest wygenerowany i kompilowane do tej nowej klasy dataset jako zbiór obiektów najwyższej klasy i właściwości. Ponieważ typizowany zestaw danych dziedziczy od podstawy <xref:System.Data.DataSet> klasy typizowanej klasy przyjęto założenie, wszystkie funkcje <xref:System.Data.DataSet> klasy i mogą być używane z metod, dla których wystąpienie <xref:System.Data.DataSet> klasy jako parametr.  
   
  Nietypizowany zestaw danych, z kolei ma odpowiedni schemat wbudowany. Jak typizowany zestaw danych jest nietypizowany zestaw danych zawiera tabele, kolumny i tak dalej, ale te są dostępne tylko jako kolekcji. (Jednak utworzony ręcznie tabele i inne elementy w nietypizowany zestaw danych, możesz wyeksportować struktury zestawu danych jako schematu przy użyciu zestawu danych <xref:System.Data.DataSet.WriteXmlSchema%2A> metody.)  

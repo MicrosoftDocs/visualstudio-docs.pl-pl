@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755009"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655897"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** czy wprowadzasz, możesz wybrać środowisko edycji. Teraz można wybrać w edytorze IDE lub Projektant Otwórz dokumentów określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **edytora tekstów** , a następnie wybierz węzeł **rozszerzenie pliku**.  
   
  Po wybraniu opcji "z kodowaniem", pojawi się okno dialogowe przy każdym otwarciu dokumentu tego typu, który służy do wybierania schemat kodowania dla tego dokumentu. Może to być przydatne w przypadku przygotowywania wersje dokumentów projektu do użytku na różnych platformach i w różnych językach docelowego.  

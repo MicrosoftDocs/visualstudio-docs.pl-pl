@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766435"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659361"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: Dokument usługi .NET i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia programu Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsPreShort](../includes/vspresho
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                             Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                                                                                              |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.                                                                            |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).                                                                              |
-
 
 8. Uruchom usługę z Menedżera kontroli usług Windows.  
 

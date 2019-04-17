@@ -17,17 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 000aa83256f5015a847c517b8dce1d04f48af1cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6683aac3c5a4314df6fde3d72dd9085b6608d8a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761727"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669578"
 ---
 # <a name="task-element-msbuild"></a>Task — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadania. Nazwa elementu jest określana przez nazwę zadania, tworzona.  
   
  \<Project>  

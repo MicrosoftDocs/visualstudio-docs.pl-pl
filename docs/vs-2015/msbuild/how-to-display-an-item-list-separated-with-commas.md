@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20df19f09dd31e428555831b98bfd0b3c9360233
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 16a41c2c80948c1466deed3efe8354e49ba64595
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765028"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655078"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]), czasami jest to przydatne do wyświetlania zawartości listy tych elementów w sposób, który jest łatwy do odczytania. Lub możesz mieć do zadań, która przyjmuje listę elementów oddzielonych specjalne separatora. W obu przypadkach można określić ciąg separatora listy elementów.  
   
 ## <a name="separating-items-in-a-list-with-commas"></a>Oddziel przecinkami elementów na liście  

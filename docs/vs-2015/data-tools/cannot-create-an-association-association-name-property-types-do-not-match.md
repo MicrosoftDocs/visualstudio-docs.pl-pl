@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787644"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656599"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — typy właściwości nie są zgodne.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nie można utworzyć skojarzenia \<Nazwa skojarzenia > — Typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<nazwy właściwości >.  
   
  Skojarzenia są definiowane przez wybrany **właściwości skojarzenia** w **Edytor skojarzeń** okno dialogowe. Właściwości po każdej stronie skojarzenie muszą być tego samego typu danych.  

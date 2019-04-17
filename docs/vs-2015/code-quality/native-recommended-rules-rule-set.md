@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868083"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658854"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Zestaw reguł macierzystych reguł zalecanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aktywność macierzystych reguł zalecanych i najpoważniejszych problemów w kodzie natywnym, w tym potencjalnych luk w zabezpieczeniach i awarii aplikacji.  Należy dołączyć ten zestaw reguł każdego niestandardowego zestawu reguł tworzonego dla projektów natywnych.  Ten zestaw reguł jest przeznaczona do pracy z Visual Studio Professional edition lub nowszy.  
-
 
 |                                      Reguła                                      |                                                             Opis                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

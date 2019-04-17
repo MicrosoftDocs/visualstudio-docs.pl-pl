@@ -11,17 +11,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767366"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652361"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być uwzględniona na mniejsze jednostki proces kompilacji. Na przykład jeden element docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inny kompiluje dane wejściowe dla projektu i umieszcza je w pusty katalog. Aby uzyskać więcej informacji na temat zadań, zobacz [zadania](../msbuild/msbuild-tasks.md).  
   
 ## <a name="declaring-targets-in-the-project-file"></a>Deklarowanie obiektów docelowych w pliku projektu  

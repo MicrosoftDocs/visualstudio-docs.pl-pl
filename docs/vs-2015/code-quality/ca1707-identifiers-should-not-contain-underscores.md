@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8ae59f396115f10a858c5bc31d8bcdbf967d1d80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355102"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651948"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać znaków podkreślenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: Identyfikatory nie powinny zawierać podkreśleń](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: Identyfikatory nie powinny zawierać podkreśleń](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).  
   
 |||  
 |-|-|  

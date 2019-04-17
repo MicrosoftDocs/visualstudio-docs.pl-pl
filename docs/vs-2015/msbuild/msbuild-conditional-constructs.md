@@ -23,17 +23,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d28819ddb7b6b5e860e885803f8037f104e9f645
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769016"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667513"
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] udostępnia mechanizm dla dowolnego / lub przetwarzania za pomocą [wybierz](../msbuild/choose-element-msbuild.md), [podczas](../msbuild/when-element-msbuild.md), i [przeciwnym](../msbuild/otherwise-element-msbuild.md) elementów.  
   
 ## <a name="using-the-choose-element"></a>Za pomocą Choose — Element  

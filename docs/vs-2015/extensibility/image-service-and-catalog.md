@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844422"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670228"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |**Element podrzędny**|**Definicja**|  
 |Import|Importuje symbole dany plik manifestu do użycia w bieżącym manifeście|  
 |Guid|Symbol reprezentuje identyfikator GUID i muszą być zgodne, formatowania identyfikatora GUID|  
-|ID|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
+|Identyfikator|Symbol reprezentuje identyfikator i musi być nieujemną liczbą całkowitą.|  
 |String|Symbol reprezentuje wartość dowolny ciąg|  
 
  Symbole jest rozróżniana wielkość liter i odwołania, przy użyciu składni $(symbol-name):  
@@ -148,7 +148,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
-|ID|[Wymagane] Część Identyfikatora monikera obrazu|  
+|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|  
 |AllowColorInversion|[Opcjonalna, domyślne true] Wskazuje, czy obraz, który może mieć jego kolorów programowo odwrócona, gdy jest używana na ciemnym tle.|  
 
  **Element źródłowy**  
@@ -160,7 +160,6 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
       <!-- optional NativeResource element -->  
  </Source>  
 ```  
-
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -189,7 +188,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Typ|[Wymagane] Typ zasobu natywnego, XAML lub PNG|  
-|ID|[Wymagane] Całkowitą część Identyfikatora zasobu natywnego|  
+|Identyfikator|[Wymagane] Całkowitą część Identyfikatora zasobu natywnego|  
 
  **ImageList**  
 
@@ -206,7 +205,7 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
 |-|-|  
 |**Atrybut**|**Definicja**|  
 |Guid|[Wymagane] Identyfikator GUID część monikera obrazu|  
-|ID|[Wymagane] Część Identyfikatora monikera obrazu|  
+|Identyfikator|[Wymagane] Część Identyfikatora monikera obrazu|  
 |Zewnętrzna|[Opcjonalnie, wartość domyślna to false] Wskazuje, czy monikera obrazu odwołuje się do obrazu w bieżącym manifeście.|  
 
  Moniker obrazu zawarte nie musi odwoływać się do obrazu, który został zdefiniowany w bieżącym manifeście. Jeśli nie można odnaleźć obrazu zawarte w bibliotece obrazów, obraz pusty symbol zastępczy zostanie użyty w tym miejscu.  

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat korzyści CloudPilot dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3a77287b9a5d26cc74bddbefb24600d73cce2fdc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842562"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655650"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Korzyść CloudPilot w subskrypcji programu Visual Studio
 
@@ -56,7 +56,6 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
     > [!div class="mx-imgBorder"]
     > ![Wiadomość E-mail z potwierdzeniem CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
 
-
 ## <a name="eligibility"></a>Uprawnienie
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
@@ -69,14 +68,10 @@ CloudPilot, przez UnifyCloud, zaprojektowano w celu ułatwienia deweloperom szyb
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
-
-
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

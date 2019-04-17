@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57868304"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660719"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 
@@ -63,7 +63,7 @@ Obsługiwanych ciągów języka (bez uwzględniania wielkości liter):
 
 -   javascript
 
--   CSharp lub C#
+-   CSharp lub c#
 
 -   cplusplus or visualc++ or c++
 
@@ -360,7 +360,6 @@ W środowisku IDE, w menu Pomoc wybierz **Debuguj kontekst pomocy**.
 
 W poniższej tabeli dowolny ciąg, który pojawia się między nawiasami jest symbolem zastępczym, które muszą zostać zastąpione rozpoznawaną wartością. Na przykład w \<meta name="Microsoft.Help.Locale" zawartość = "[kod języka]" / >, "[kod języka]" musi zostać zastąpiona wartością taką jak "en-us".
 
-
 | Właściwości (reprezentacja HTML) | Opis |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | Ustawia ustawienia regionalne w tym temacie. Jeśli ten tag jest używany w temacie, należy go używać tylko raz i muszą zostać wstawione powyżej innych tagów Microsoft Help. Jeśli ten tag nie jest używany, treść tego tematu jest indeksowana przy użyciu modułu dzielenia wyrazów, który jest skojarzony z ustawienia regionalne produktu, jeśli jest określona; w przeciwnym razie en-us jest używany moduł dzielenia wyrazów. Ten tag jest zgodna z ISOC RFC 4646. Aby upewnić się, że Microsoft Help działa prawidłowo, należy użyć tej właściwości zamiast ogólnego atrybut Language. |
@@ -451,7 +450,7 @@ Uwaga: Zmienne oznaczone przez "{n}" mają zależności w kodzie — usuwanie lu
 | Funkcja: | **CollapsibleArea** |
 | Użycie: | Rozwiń zwija formantu zawartości tekstu |
 | **Element** | **Wartość** |
-| ExpandText | Rozwiń węzeł |
+| ExpandText | Expand |
 | CollapseText | Zwiń |
 | Funkcja: | **CodeSnippet** |
 | Użycie: | Tekst kontrolki fragmentu kodu.  Uwaga: Zawartości fragmentu kodu przy użyciu miejsca "Bez podziału" zostanie zmieniony na miejsce. |

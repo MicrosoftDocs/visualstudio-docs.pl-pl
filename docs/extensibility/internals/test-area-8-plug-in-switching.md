@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605175"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659504"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: Przełączanie wtyczki
+# <a name="test-area-8-plug-in-switching"></a>Obszar testowy 8: przełączanie wtyczki
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) ma interfejs użytkownika (UI), aby zmienić bieżącą wtyczką kontroli źródła. Ten obszar testowy zawiera przypadki testowe dla procesu pobrania, który wtyczki do użycia rozwiązania kontroli źródła.
 
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia
@@ -39,7 +39,6 @@ ms.locfileid: "56605175"
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
  Gdy użytkownik wczytuje rozwiązanie, które jest pod kontrolą źródła, to rozwiązanie jest ładowane automatycznie i odpowiednie wtyczka do kontroli źródła jest wybrany jako bieżący.
 
-
 | Akcja | Kroki testu | Oczekiwanych wyników, aby sprawdzić |
 | - | - | - |
 | Zmiana wtyczki kontroli źródła automatyczne | 1.  Wybierz wtyczkę w ramach testu jako bieżący (**narzędzia** -> **opcje** -> **kontroli źródła** -> **wtyczki Wybór**.)<br />2.  Utwórz nowy projekt.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz inne wtyczki (na przykład [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Zaakceptuj zwalnianie monit rozwiązania.<br />6.  Ponownie otwórz rozwiązanie z dysku. | Rozwiązanie jest otwierane.<br /><br /> Dodatek w ramach testu jest bieżącą wtyczką kontroli źródła. |
@@ -48,7 +47,6 @@ ms.locfileid: "56605175"
 
 #### <a name="expected-behavior"></a>Oczekiwane zachowanie
  Rozwiązanie może mieć jego skojarzony wtyczka do kontroli źródła zmienione.
-
 
 | Akcja | Kroki testu | Oczekiwanych wyników, aby sprawdzić |
 |----------------------------------| - | - |

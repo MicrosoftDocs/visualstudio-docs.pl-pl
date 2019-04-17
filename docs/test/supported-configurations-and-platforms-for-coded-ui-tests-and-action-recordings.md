@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: e0bb62bb8b7ea64bc01e18e47974d4035b9e1bd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796572"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666693"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji
 
@@ -40,7 +40,6 @@ W poniższej tabeli wymieniono obsługiwane konfiguracje i platformy dla kodowan
 
 > [!NOTE]
 > *Interfejsu użytkownika Synchronization* jest funkcją, gdzie odtwarzanie jest weryfikowane w kolejce wiadomości każdego formantu. Jeśli formant nie odpowiedział na zdarzenie, które zostało do niego wysłane, zdarzenie jest wysyłane ponownie.
-
 
 ## <a name="platform-support"></a>Obsługa różnych platform
 

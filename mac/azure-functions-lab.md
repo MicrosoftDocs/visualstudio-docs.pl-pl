@@ -1,5 +1,5 @@
 ---
-title: 'Samouczek: Usługa Azure Functions'
+title: 'Samouczek: Azure Functions'
 description: Użycie usługi Azure functions w programie Visual Studio dla komputerów Mac.
 author: conceptdev
 ms.author: crdun
@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296440"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650281"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do usługi Azure Functions
 
@@ -49,9 +49,9 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
      Dostępne są także trzy pliki:- **host.json** do opisywania globalną opcje konfiguracji dla hosta — **local.settings.json** do konfigurowania ustawień usługi.
         - Szablon projektu tworzy również domyślny HttpTrigger. Dla tego laboratorium, należy usunąć **HttpTrigger.cs** pliku z projektem.
 
-    Otwórz **local.settings.json**. Domyślnie po dwa połączenia pusty ciąg ustawienia.
+    Open **local.settings.json**. Domyślnie po dwa połączenia pusty ciąg ustawienia.
 
-    ![Konsola rozwiązania wyświetlania pliku local.settings.json](media/azure-functions-lab-image3.png)
+    ![solution pad displaying local.settings.json file](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2: Tworzenie konta usługi Azure storage
 
@@ -187,7 +187,6 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie usługi Azure Functio
 1. Tym razem wynik powinien odzwierciedlać nowych parametrów. Możesz uruchomić projekt z różnymi wartościami. Należy pamiętać, że nie ma wszelkie błędy sprawdzania, dzięki czemu będzie sygnalizować błąd, nieprawidłowe lub brakujące parametry.
 
 1. Zatrzymaj sesję debugowania.
-
 
 ## <a name="exercise-4-working-with-functionjson"></a>Ćwiczenie 4: Praca z function.json
 
@@ -409,4 +408,3 @@ Często usługi, które tworzysz może być znacznie bardziej złożone niż co 
 ## <a name="summary"></a>Podsumowanie
 
 W tym środowisku laboratoryjnym już wiesz, jak zacząć tworzenie aplikacji usługi Azure Functions za pomocą programu Visual Studio dla komputerów Mac.
-

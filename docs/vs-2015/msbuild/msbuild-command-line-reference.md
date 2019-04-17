@@ -18,17 +18,16 @@ caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d40bfefb1f89496b538612dfa1819cc6d65c76c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777498"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663444"
 ---
 # <a name="msbuild-command-line-reference"></a>Informacje w wierszu polecenia programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas tworzenia pliku projektu lub rozwiązania za MSBuild.exe, można dołączyć kilka przełączników, aby określić różne aspekty procesu.  
   
 ## <a name="syntax"></a>Składnia  

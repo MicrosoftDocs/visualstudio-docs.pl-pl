@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e302480ea199835d52266d7b6f666a43ad529900
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 139d52963cfbb332fa084840c665efd3aeb8e88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766089"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648411"
 ---
 # <a name="makedir-task"></a>MakeDir — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tworzy katalogów i, jeśli to konieczne, dominujące katalogów.  
   
 ## <a name="parameters"></a>Parametry  

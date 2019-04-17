@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648458"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Język programowania Python jest jako:
 Aby dowiedzieć się więcej o języku, zacznij od [języka Python dla początkujących](https://www.python.org/about/gettingstarted/) w witrynie python.org.
 
 Do zainstalowania języka Python, samego, odwiedź stronę [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
   
 Python Tools for Visual Studio, które można zainstalować z [visualstudio.com](https://www.visualstudio.com/explore/python-vs), zapewniają następujące funkcje:  
@@ -63,7 +62,6 @@ Następujące zasoby pomogą Ci rozpocząć pracę:
 - [Wprowadzenie rozpoczęcie pracy i deep dive krótkie filmy wideo](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - (Instalacja i funkcje wersji demonstracyjnej (27 min)]https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentacja](https://github.com/Microsoft/PTVS/wiki)  
-
 
 Należy pamiętać, że program Visual Studio nie obecnie zapewnia oznacza, że do utworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python w tym celu zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [możliwego do osadzenia pliku Zip przy użyciu CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
   

@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868888"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649371"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Podręcznik administratora programu Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [Podręcznik administratora programu Visual Studio](/visualstudio/install/visual-studio-administrator-guide).
 
 Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](https://visualstudio.microsoft.com/vs/older-downloads/). Można utworzyć udział sieciowy, uruchamiając plik instalacyjny z przełącznikiem/Layout (zgodnie z opisem na [trybu Offline instalacji programu Visual Studio Utwórz](../install/create-an-offline-installation-of-visual-studio.md) strony), a następnie kopiując je z komputera lokalnego do udziału sieciowego. Jeśli używasz obrazu ISO, możesz zainstalować plik ISO i udostępnić go lub skopiuj plik ISO w udziale sieciowym.  
   
@@ -57,12 +57,13 @@ Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy kompu
  Aby uzyskać więcej informacji na temat doświadczeń pliku administratora, zobacz [jak: Utworzyć i uruchomić nienadzorowaną instalację programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) i [jak: Automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Aby uzyskać więcej informacji na temat opcji wiersza polecenia, zobacz [Użyj parametrów wiersza polecenia do zainstalowania programu Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) strony.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Określanie ustawień opinii klienta  
- Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można skonfigurować programu Visual Studio, aby wyłączyć opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
+
+Domyślnie instalacja programu Visual Studio umożliwia opinii klientów. Można skonfigurować programu Visual Studio, aby wyłączyć opinie klientów na poszczególnych komputerach, zmieniając wartość następującego klucza rejestru na ciąg "0":  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (Na przykład zmień go na HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
+(Na przykład zmień go na HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn = "0")  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

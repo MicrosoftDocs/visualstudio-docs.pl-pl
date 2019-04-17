@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324071"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661223"
 ---
 # <a name="create-a-software-development-kit"></a>Utwórz zestaw software development kit
 Zestaw software development kit (SDK) to zbiór interfejsów API, którego można się odwoływać jako pojedynczy element w programie Visual Studio. **Menadżer odwołań** okno dialogowe wyświetla listę wszystkich zestawów SDK, które mają zastosowanie do projektu. Po dodaniu zestawu SDK do projektu interfejsach API dostępnych w programie Visual Studio.
@@ -49,7 +49,6 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
                   \[config]
                         \[arch]
 ```
-
 
 | Węzeł | Opis |
 |------------------------| - |

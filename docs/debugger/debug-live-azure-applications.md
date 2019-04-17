@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857479"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656443"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debugowanie na żywo aplikacji ASP.NET, Azure, przy użyciu rozszerzenia Snapshot Debugger
 
@@ -34,9 +34,14 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Rozszerzenie Snapshot Debugger jest dostępna tylko dla Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
+* Rozszerzenie Snapshot Debugger jest dostępna, począwszy od Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej za pomocą tylko **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
 
-    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio Enterprise 2017 w wersji 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) lub nowszej. Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
+    ::: moniker range=">=vs-2019"
+    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio Enterprise 2017 w wersji 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) lub nowszej. Jeśli aktualizujesz z poprzedniej instalacji programu Visual Studio 2017, uruchom Instalatora programu Visual Studio i zaewidencjonuj składnika rozszerzenia Snapshot Debugger **obciążenie projektowania platformy ASP.NET i sieci web**.
+    ::: moniker-end
 
 * Planu usługi Azure App Service podstawowa lub wyższej.
 
@@ -112,7 +117,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Czy potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
+**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 

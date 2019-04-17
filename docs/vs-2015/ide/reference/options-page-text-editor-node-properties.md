@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767995"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651620"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są skojarzone z **edytora tekstów** kategorii `DTE.Properties("TextEditor", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, które jest używane do dostępu `Properties` kolekcji, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.  
   
  Makra języka Visual Basic w [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) pokazują, jak wyświetlić bieżące opcje i ich wartości dla każdej strony **opcje** okno dialogowe.  

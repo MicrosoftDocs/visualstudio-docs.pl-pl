@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798779"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656989"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramy składników UML: Tematy pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,6 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
  W poniższej tabeli opisano elementy, które można użyć na diagramie składników, wraz z ich właściwości głównego. Aby uzyskać pełną listę właściwości elementów, zobacz [właściwości elementów na diagramach składników UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
 
  ![Elementy na diagramach składników](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
-
 
 |  **Kształt**  |         **Element**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         **Opis i właściwości głównego**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,4 +65,4 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
  [Diagramy przypadków użycia UML: Odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy klas UML: Odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy aktywności UML: Odwołanie](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramy sekwencji UML: Odwołanie](../modeling/uml-sequence-diagrams-reference.md)
+ [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)

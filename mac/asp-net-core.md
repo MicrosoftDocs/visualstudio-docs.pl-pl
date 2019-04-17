@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 7fc08e4896965e87315466ef6acd7d015eb98174
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856797"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648193"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -220,7 +220,6 @@ Aby dodać kontroler, wykonaj następujące czynności:
 9. Spróbuj przejść do `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (zastępując `xxxx` za pomocą poprawnego portu), powinny pojawić się następujące:
 
     ![Uruchamianie aplikacji w przeglądarce z argumentami](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694819"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655377"
 ---
 # <a name="graphics-frame-validation"></a>Weryfikacja ramki grafiki
-<!-- VERSIONLESS --> Visual Studio 2017 i lepsze wsparcie **Weryfikacja ramki** narzędzia.  Weryfikacja ramki okna wyświetla błędy i ostrzeżenia skojarzony z listy zdarzeń.  Aby wyświetlić to okno, wybierz **Widok > Weryfikacja ramki** menu.
+<!-- VERSIONLESS -->
+Visual Studio 2017 i lepsze wsparcie **Weryfikacja ramki** narzędzia.  Weryfikacja ramki okna wyświetla błędy i ostrzeżenia skojarzony z listy zdarzeń.  Aby wyświetlić to okno, wybierz **Widok > Weryfikacja ramki** menu.
 
 ![Weryfikacja ramki](media/gfx_diag_frame_validation.png)
 
 Kliknij przycisk **Uruchom weryfikację** przycisk w lewym górnym rogu, aby zainicjować analizy.  Może upłynąć kilka minut w zależności od złożoności ramki.  Danych, który pojawia się w tym miejscu składa się z dwóch źródeł: komunikaty D3D tego samego emituje podczas [warstw zestawu SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) jest włączona i dane, które są zbierane z tego narzędzia stanu wewnętrznego śledzenia. Po wykonaniu tych czynności, zostanie wyświetlony kilku kolumn danych:
-
 
 | **Kolumny** | **Opis** |
 |------------| - |

@@ -13,17 +13,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18df04fc706ea716f7c22baa6508930f0f94a6f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3cea1375b59b791c7c81c79be0a462d5eb690776
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801469"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664179"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Rejestrowanie rozszerzeń środowiska .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można opracować zestaw, który rozszerza określonej wersji programu .NET Framework. Aby włączyć zestawu są wyświetlane w programie Visual Studio **Add References** okno dialogowe, należy dodać folder, który zawiera go do rejestru systemowego.  
   
  Na przykład załóżmy, że firma Trey Research przygotowała bibliotekę, która rozszerza programu .NET Framework 4 i chce zestawy bibliotek, które pojawią się w **Add References** okno dialogowe, jeśli projekt jest przeznaczony dla .NET Framework 4. Również założono, że zestawy są zestawów 32-bitowych uruchomiona na komputerze 32-bitowym lub 64-bitowych zestawów uruchomionego na komputerze 64-bitowych i że ma być zainstalowany w folderze C:\TreyResearch\Extensions4\.  

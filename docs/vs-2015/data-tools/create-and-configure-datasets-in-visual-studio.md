@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759447"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656257"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Tworzenie i konfigurowanie zestawów danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 A *dataset* to zbiór obiektów, które przechowuje dane z bazy danych w pamięci i obsługuje śledzenie zmian, aby umożliwić tworzenie, Odczyt, aktualizowanie i usuwanie operacji (CRUD) na tych danych bez konieczności zawsze być połączone z bazą danych. Zestawy danych zostały zaprojektowane dla prostej *formularzy nad danymi* aplikacji biznesowych. W przypadku nowych aplikacji należy wziąć pod uwagę przy użyciu platformy Entity Framework do przechowywania i modelowania danych w pamięci. Aby pracować z zestawami danych, należy mieć podstawową wiedzę na temat pojęć dotyczących baz danych.
 

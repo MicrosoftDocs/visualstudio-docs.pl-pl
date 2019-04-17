@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773041"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657509"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplikacji. Zazwyczaj zestaw narzędzi MSBuild zawiera plik microsoft.common.tasks, microsoft.common.targets i kompilatory, takie jak csc.exe i vbc.exe. Większość zestawów narzędzi może służyć do kompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jedną platformę systemu. Jednak zestaw narzędzi w wersji 2.0 programu MSBuild może służyć do docelowych tylko .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion — atrybut  

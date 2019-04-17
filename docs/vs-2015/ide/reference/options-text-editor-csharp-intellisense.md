@@ -19,17 +19,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c1bf08c5e97a2504d797a58e96cd12cdcf08cc8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9d1c5638745529a4c9abdf0a27e0c96d486fb9cf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669162"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **IntelliSense** stronie właściwości, aby zmodyfikować ustawienia, które wpływają na działanie technologii IntelliSense dla języka Visual C#. Możesz uzyskać dostęp **IntelliSense** strony właściwości, klikając **opcje** na **narzędzia** menu, klikając **C#** w **Edytora tekstów** folder, a następnie klikając **IntelliSense.**  
   
 > [!NOTE]

@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624909"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654597"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker) zadanie
 Al — zadanie jest zawijany *AL.exe*, to narzędzie, które jest rozpowszechniana z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie Assembly Linker służy do tworzenia zestawu z manifestem z co najmniej jeden plik, który jest modułem lub plikiem zasobów. Kompilatory języków i środowisk programistycznych może już zapewniają te funkcje, często nie jest niezbędne do korzystania z tego zadania bezpośrednio. Assembly Linker jest najbardziej użyteczna dla deweloperów, konieczności tworzenia w jednym zestawie z wielu plików składników, takich jak oferowanych od etapu programowania w językach mieszanych. To zadanie nie łączyć modułów w pliku jednym zestawie; indywidualne moduły muszą być rozproszone i dostępne, aby Wynikowy zestaw można prawidłowo załadować. Aby uzyskać więcej informacji na temat *AL.exe*, zobacz [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry `AL` zadania.
-
 
 | Parametr | Opis |
 |---------------------| - |

@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: Dowiedz się więcej o problemach, które mogą wystąpić podczas logowania się do subskrypcji programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656222"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemy z logowaniem do subskrypcji programu Visual Studio
 Aby korzystać z subskrypcji programu Visual Studio, należy najpierw zalogować.  W zależności od Twojej subskrypcji może być skonfigurowaniu go za pomocą konta Microsoft (MSA) lub tożsamości usługi Azure Active Directory (AAD).  W tym artykule omówiono niektóre problemy, które można napotkać podczas logowania się do Twojej subskrypcji.
@@ -55,7 +55,6 @@ Jeśli usuniesz jedną lub więcej tożsamości (zarządzanych kont usług lub u
 Aby uniknąć wpływu na dostęp do Twojej subskrypcji, użyj jednej z poniższych metod.
 - Wdróż system zarządzania obsługą jednej tożsamości — konta Microsoft lub usługi AAD — ale nie oba jednocześnie.
 - Skojarz tożsamości usługi AAD i zarządzanych kont usług, za pomocą dzierżawy.
-
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się, jak [Połącz konto MSA, a usługi AAD konta](/azure/active-directory/b2b/add-users-administrator) w ramach usługi AAD.

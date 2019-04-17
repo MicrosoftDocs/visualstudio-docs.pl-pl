@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803256"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653648"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edytorów języka podany w programie Visual Studio. W tej sekcji opisano, jak za pomocą funkcji IntelliSense języka definicji schematu XML (XSD) i dokumentów XSLT.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>Funkcja IntelliSense w dokumencie XSD  
@@ -122,4 +121,4 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
 ## <a name="see-also"></a>Zobacz też  
  [Edytor XML](../xml-tools/xml-editor.md)   
  [Za pomocą funkcji IntelliSense](../ide/using-intellisense.md)   
- [Przewodnik: Używanie XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+ [Przewodnik: Używanie funkcji IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

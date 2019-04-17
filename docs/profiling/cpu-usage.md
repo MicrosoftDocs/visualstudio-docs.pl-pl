@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366760"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663180"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 
@@ -51,7 +51,6 @@ Zazwyczaj komputer lokalny najlepsze replikuje wykonywanie zainstalowanych aplik
 
    ![Raport użycia procesora CPU](../profiling/media/cpu_use_wt_report.png "raport użycia procesora CPU")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportu użycia procesora CPU
 
 Raport diagnostyczny są posortowane według **łączny czas Procesora**, od najwyższego do najniższego. Zmień kolejność sortowania lub Sortuj kolumny, wybierając nagłówków kolumn. Użyj **filtru** listę rozwijaną, aby zaznacz lub odznacz opcję wątków, wyświetlać i używać **wyszukiwania** wyszukać określonego wątku lub węzeł.
@@ -66,7 +65,7 @@ Począwszy od programu Visual Studio 2019 r, możesz kliknąć pozycję **Rozwi�
 |-|-|
 |**Łączny czas Procesora [jednostka, %]**|![Łączna liczba % danych równania](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Milisekund i procent użycia procesora CPU, używany przez wywołania do funkcji i funkcji wywoływanych przez funkcję w wybranym zakresie czasu. To różni się od **wykorzystanie procesora CPU** wykres osi czasu, który porównuje łączną aktywność procesora CPU w zakresie czasu, aby łączna liczba dostępne możliwości procesora CPU.|
 |**Czas własny Procesora [jednostka, %]**|![Równania własnym %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Milisekund i procent użycia procesora CPU, używany przez wywołania do funkcji w wybranym zakresie czasu, z wyjątkiem funkcji wywołanych przez funkcję.|
-|**Moduł**|Nazwa modułu zawierający funkcję.
+|**Module**|Nazwa modułu zawierający funkcję.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Użycie procesora CPU drzewo wywołań
 

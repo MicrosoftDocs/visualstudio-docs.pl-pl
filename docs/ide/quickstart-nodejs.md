@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30240a1df90e2fd77e99def3a14d758f62c5dd05
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 000d5f3cccdfda10ef90f5c752ec49ba29681435
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790449"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664934"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki start: Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio
 
@@ -29,10 +29,10 @@ W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko pr
 * Musisz mieć zainstalowany program Visual Studio i obciążenie programowania Node.js.
 
     ::: moniker range=">=vs-2019"
-    Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2019 r, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio 2017, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
     ::: moniker-end
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.

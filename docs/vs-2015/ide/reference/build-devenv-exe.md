@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58e48676cb8719cca5da1989342642669c6565cd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4c6f5f80512371ae323fbbfe143eb98bffbe7d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778487"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668369"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tworzy to rozwiązanie przy użyciu pliku konfiguracji określonego rozwiązania.  
   
 ## <a name="syntax"></a>Składnia  

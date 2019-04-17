@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18e90e44da8b36dbc4824817c7f13bbe423a2c12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57af5ad0584068b8f95ea62d7458ba045e7bc9d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614184"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670137"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie aplikacji autonomicznej .NET Framework z profilerem do zbierania danych pamięci przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools uruchamianie aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych pamięci.
@@ -52,7 +52,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
-
 
 3. Uruchom aplikację docelową. Wpisz:
 

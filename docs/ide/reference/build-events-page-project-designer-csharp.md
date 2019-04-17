@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49edb08b35b3006901201ccc880a5e74da92f834
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948319"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647990"
 ---
 # <a name="build-events-page-project-designer-c"></a>Strona Zdarzenia kompilacji, Projektant projektu (C#)
 Użyj **zdarzenia kompilacji** strony **projektanta projektu** do określenia instrukcje dotyczące konfiguracji kompilacji. Można również określić warunki, w których są uruchamiane wszystkie zdarzenia mające miejsce po kompilacji. Aby uzyskać więcej informacji, zobacz [jak: Określanie zdarzeń kompilacji (C#)](../../ide/how-to-specify-build-events-csharp.md)i [jak: Określanie zdarzeń kompilacji (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
@@ -35,12 +35,10 @@ Użyj **zdarzenia kompilacji** strony **projektanta projektu** do określenia in
 > [!NOTE]
 > Jeśli projekt jest aktualny, a nie kompilacja zostaje wyzwolona, nie należy uruchamiać zdarzenia prekompilacyjnego.
 
-
  **Wiersz polecenia zdarzenia po kompilacji** określa dowolnych poleceń do wykonania po zakończeniu kompilacji. Do typu long polecenia, kliknij przycisk **edytować po kompilacji** do wyświetlenia **prekompilacji zdarzeń/po kompilacji — zdarzenie wiersza polecenia okno dialogowe**.
 
 > [!NOTE]
 > Dodaj `call` instrukcję przed polecenia wszystkich wykonywanych po kompilacji, które uruchamiają pliki bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Uruchom zdarzenie po kompilacji** określa następujące warunki dla zdarzenia postkompilacyjnego do uruchomienia, jak pokazano w poniższej tabeli.
 

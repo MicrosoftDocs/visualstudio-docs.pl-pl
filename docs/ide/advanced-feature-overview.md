@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504305"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662143"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
@@ -24,7 +24,7 @@ Moduły Instalatora programu Visual Studio umożliwia wybierz i zainstaluj *obci
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
@@ -140,4 +140,4 @@ Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobac
 
 - [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Co nowego w programie Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [What's new in Visual Studio 2019 r.](../ide/whats-new-visual-studio-2019.md)

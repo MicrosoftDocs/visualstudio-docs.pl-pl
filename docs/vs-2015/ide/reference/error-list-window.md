@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785774"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658152"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 UWAGA]
 >  Lista błędów wyświetla informacje dotyczące konkretnego komunikatu o błędzie. Możesz skopiować numer błędu lub ciąg tekstu błędu błędu z okna danych wyjściowych. Aby wyświetlić okno danych wyjściowych, naciśnij klawisze Ctrl + Alt + O. Zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).  
   

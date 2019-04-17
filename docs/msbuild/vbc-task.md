@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623830"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653336"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 Opakowuje *vbc.exe*, który tworzy pliki wykonywalne (*.exe*), bibliotek dołączanych dynamicznie (*.dll*), lub modułów kodu (*.netmodule*). Aby uzyskać więcej informacji na temat *vbc.exe*, zobacz [wiersza polecenia kompilatora języka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry `Vbc` zadania.
-
 
 | Parametr | Opis |
 |------------------------------| - |

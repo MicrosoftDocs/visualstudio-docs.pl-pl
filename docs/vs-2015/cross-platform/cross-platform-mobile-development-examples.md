@@ -11,17 +11,16 @@ caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783765"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657444"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Przykłady programowania międzyplatformowych aplikacji mobilnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Kompletne przykłady, których można użyć, aby dowiedzieć się więcej z kilku szablonów instalowane przez Visual C++ for Cross-Platform Mobile Development wygenerować. Ponadto Centrum deweloperów Windows ma kilka przykładowe aplikacje, które można pobrać i wypróbować w programie Visual Studio.  
   
 - [Przykład aplikacji systemu Android interfejsem jni Hello](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  

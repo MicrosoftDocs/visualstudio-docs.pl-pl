@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355210"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664115"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: Używaj preferowanych terminów](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) w witrynie docs.microsoft.com.  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: Używaj preferowanych terminów](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -41,30 +41,30 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: U�
   
 |Przestarzałe termin|Preferowany termin|  
 |-------------------|--------------------|  
-|nie są|AreNot|  
-|Anulowane|Anulowane|  
-|Wprowadzony|Nie można|  
-|ComPlus|EnterpriseServices|  
-|Nie można|CouldNot|  
-|Didnt|DidNot|  
-|Numer nie|DoesNot|  
-|Dont|DoNot|  
-|Flaga lub flag|Nie ma żadnych zastąpienie terminu. Nie używać.|  
-|Hadnt|HadNot|  
-|Nie|HasNot|  
-|jeszcze nie|HaveNot|  
-|Indeksy|Indeksy|  
-|Isnt|IsNot|  
-|Zaloguj się|Logowanie|  
-|Wyloguj|Wyloguj|  
-|Shouldnt|ShouldNot|  
-|SignOn|SignIn|  
-|Przygotowania|Wyloguj się|  
-|Wasnt|WasNot|  
-|nie|WereNot|  
-|Nie można|WillNot|  
-|Wouldnt|WouldNot|  
-|Zapisywalny|Zapisywalny|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` lub `Flags`|Nie ma żadnych zastąpienie terminu. Nie używać.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Aby naprawić naruszenie tej zasady, Zamień termin na preferowany termin alternatywny.  

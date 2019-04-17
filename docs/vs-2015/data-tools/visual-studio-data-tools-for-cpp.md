@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802370"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653063"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Natywnych języka C++ często może zapewnić największą wydajność, gdy uzyskują dostęp do źródeł danych. Jednak dane narzędzia dla aplikacji w języku C++ w programie Visual Studio nie są tak zaawansowane jak w przypadku aplikacji .NET. Na przykład okna źródeł danych nie można ich przeciąganie i upuszczanie źródeł danych na powierzchnię projektu C++. Jeśli potrzebujesz warstwa obiektowo relacyjny, należy napisać własny lub użyj innej firmy.  To samo dotyczy funkcji wiązania danych, mimo że aplikacje korzystające z biblioteki MFC można użyć niektórych klas baz danych, wraz z dokumentami i widokami, przechowywanie danych w pamięci i wyświetlania ich do użytkownika. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Aby połączyć z bazy danych SQL, natywnych aplikacji w języku C++ można użyć sterowników ODBC i OLE DB i ADO dostawcy, które są dołączone do Windows.     Te można nawiązać dowolnej bazy danych, która obsługuje te interfejsy. Sterownik ODBC jest standardowym. OLE DB zapewnia zgodność z poprzednimi wersjami. Aby uzyskać więcej informacji na temat tych technologii danych, zobacz [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

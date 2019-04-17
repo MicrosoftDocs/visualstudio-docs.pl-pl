@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 813e49ab316f1fe74daa7a797dd6e16a878667d1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775240"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664586"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy muszą Wyjdź bieżącego rekordu, aby zatwierdzić zaktualizowaną wartość do bazowego źródła danych, który formant jest powiązany z. Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) na formularz, pierwszy element, który usuniesz generuje kod z gałęzią **Zapisz** Zdarzenie kliknięcia przycisku <xref:System.Windows.Forms.BindingNavigator>. Ten kod wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource>. W związku z tym, wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ma generowaną metodę tylko pierwszy <xref:System.Windows.Forms.BindingSource> który został dodany do formularza.  
   
  <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Wywołanie zatwierdza wszystkie zmiany, które jest obecnie w toku w żadnych formantów powiązanych z danymi, które są aktualnie edytowanym. W związku z tym, jeśli formant powiązany z danymi nadal ma fokus i kliknij przycisk **Zapisz** przycisk wszystkie oczekujące zmiany, w tym, że kontrolki są zatwierdzane przed rzeczywiste Zapisz ( `TableAdapterManager.UpdateAll` metody).  

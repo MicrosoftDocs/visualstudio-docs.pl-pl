@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645930"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666458"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; — element (program inicjujący)
 `InstallChecks` Element obsługuje uruchamianie szereg testów na komputerze lokalnym, aby upewnić się, że wszystkie odpowiednie wymagania wstępne dotyczące aplikacji zostały zainstalowane.
@@ -96,7 +96,6 @@ ms.locfileid: "56645930"
  Ten element jest podrzędnym elementem opcjonalnym elementu `InstallChecks`. Dla każdego wystąpienia `FileCheck`, program inicjujący określi, czy nazwany plik istnieje i zwraca numer wersji pliku. Jeśli plik nie ma numeru wersji, program inicjujący, ustawia właściwość o nazwie określonej przez `Property` na 0. Jeśli plik nie istnieje, `Property` nie jest ustawiony na dowolną wartość.
 
  `FileCheck` nie zawiera żadnych elementów i ma następujące atrybuty.
-
 
 | Atrybut | Opis |
 |-----------------| - |

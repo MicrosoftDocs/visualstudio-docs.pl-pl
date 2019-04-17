@@ -9,12 +9,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801766"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666023"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do aplikacji sieci Web platformy ASP.NET w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500. |
    |     [/Events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).       |
-
 
 2. Uruchom aplikację ASP.NET w typowy sposób.  
 

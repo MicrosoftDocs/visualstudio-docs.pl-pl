@@ -13,17 +13,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a553363894bbaf10daf242164f13e777b12f10a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795416"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650385"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Równoległe tworzenie wielu projektów za pomocą narzędzia MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:  
   
 -   Należy użyć przełącznika `/maxcpucount` w wierszu polecenia.  
@@ -47,7 +46,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Parametr zadania BuildInParallel  
- `BuildInParallel` to opcjonalny parametr typu boolean w zadaniu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Gdy `BuildInParallel` ustawiono `true` (wartość domyślna), wiele procesów roboczych są generowane w celu kompilacji tak wielu projektów w tym samym czasie jak to możliwe. Do poprawnego działania przełącznik `/maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.  
+ `BuildInParallel` to opcjonalny parametr typu boolean na [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zadania. Gdy `BuildInParallel` ustawiono `true` (wartość domyślna), wiele procesów roboczych są generowane w celu kompilacji tak wielu projektów w tym samym czasie jak to możliwe. Do poprawnego działania przełącznik `/maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.  
   
  Oto przykład, pobrany z microsoft.common.targets ilustrujący, jak ustawić parametr `BuildInParallel`.  
   

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774960"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662273"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Instrukcje: Konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Obsługuje dziedziczenia pojedynczej tabeli, co jest często stosowana w systemach relacyjnych. Dziedziczenie pojedynczej tabeli Brak tabeli pojedynczej bazy danych, która zawiera pola zarówno informacje nadrzędnego, jak i podrzędnych. Z danymi relacyjnymi kolumna dyskryminatora zawiera wartość, która określa, która klasa dowolnego rekordu, o których należy.  
   
  Na przykład rozważmy tabelę osoby, która zawiera wszystkich stosowanych przez firmę. Niektórzy użytkownicy są pracownicy i niektóre osoby menedżerów. Tabela osób zawiera kolumnę o nazwie `EmployeeType` , ma wartość 1 dla menedżerów i wartość 2 dla pracowników; jest to kolumna dyskryminatora. W tym scenariuszu możesz utworzyć podklasę pracowników i wypełnić klasy za pomocą tylko te rekordy, które mają `EmployeeType` wartość 2. Z każdą z klas, można również usunąć kolumny, które nie mają zastosowania.  

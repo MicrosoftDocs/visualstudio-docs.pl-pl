@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788102"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649072"
 ---
 # <a name="text-editor-options-dialog-box"></a>Opcje edytora tekstowego — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Edytor opcji na liście **opcje** okno dialogowe umożliwiają Dostosuj wygląd i zachowanie edytora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instrukcje: Zmiana czcionek i kolorów w edytorze](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Instrukcje: Zmiana czcionek i kolorów w Edytorze](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Wyjaśnia, jak zmienianie kolorów i czcionek edytora.  
   
- [Instrukcje: Zarządzanie zawijaniem wierszy w edytorze](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Instrukcje: Zarządzanie zawijaniem wierszy w Edytorze](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Opisano opcje zawijania dla programu word.  
   
- [Instrukcje: Wyświetl numery wierszy w edytorze](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Instrukcje: Wyświetlanie numerów wierszy w Edytorze](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Wyjaśnia, jak włączyć numery wierszy.  
   
- [Instrukcje: Wyświetlanie adresów URL jako linków w edytorze](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Instrukcje: Wyświetlanie adresów URL jako linków w Edytorze](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Wyjaśnia sposób formatowania adresów URL, aby były wyświetlane jako linki.  
   
  [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)  

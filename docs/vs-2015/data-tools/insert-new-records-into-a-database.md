@@ -20,17 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783213"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653765"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` metody lub jednego z TableAdapter dbdirect — metody (w szczególności `TableAdapter.Insert` metody).
   
  Jeśli aplikacja nie używają adapterów tabel, możesz użyć polecenia obiektów (na przykład <xref:System.Data.SqlClient.SqlCommand>) do wstawianie nowych rekordów w bazie danych.  

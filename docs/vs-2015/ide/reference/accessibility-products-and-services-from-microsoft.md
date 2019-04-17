@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867945"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669604"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Informacje o funkcjach, produktach i usługach powodujących, że program Microsoft Windows bardziej dostępny dla osób niepełnosprawnych można znaleźć w następujących tematach:  
   
 -   [Funkcje ułatwień dostępu systemu Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
@@ -59,7 +58,7 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 ##  <a name="altfortmats"></a> Dokumentacja w formatach alternatywnych  
  Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mogą dla wielu produktów Microsoft uzyskać dokumentację w bardziej przystępnych formatach. Możesz wyświetlić indeks przystępnej dokumentacji produktów w [witryny sieci Web Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
- Dodatkowo kolejne publikacje Microsoft można uzyskać od firmy Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D rozpowszechnia te dokumenty zarejestrowanym użytkownikom spełniającym odpowiednie kryteria. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:  
+ Ponadto można uzyskać dodatkowe publikacje firmy Microsoft od firmy Recording for the Blind & Dyslexic, Inc (RFB & D). Firma RFB & D dystrybuuje te dokumenty zarejestrowanym, uprawnionym członkom dystrybucji usługi. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:  
   
 |Learning Ally|  
 |----------------------------------------------|  

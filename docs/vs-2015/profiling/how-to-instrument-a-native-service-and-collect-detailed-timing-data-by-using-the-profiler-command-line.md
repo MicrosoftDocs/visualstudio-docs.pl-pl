@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0e1007ce9119d12282b4ee7f6b85f22257af659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2663049a818782e8af11f9c85454152e5e5d83db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781406"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649007"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentacja natywnych usług i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia programu Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Określa licznik wydajności Windows mają być zbierane podczas profilowania.                                                                                                                     |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.                                                                                   |
    |       [/Events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).                                                                                     |
-
 
 5. Uruchom usługę z Menedżera kontroli usług.  
 

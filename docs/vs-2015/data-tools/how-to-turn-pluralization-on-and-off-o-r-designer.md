@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756105"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665860"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Instrukcje: Pluralizacja Włączanie i wyłączanie (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Domyślnie podczas przeciągania obiektów bazy danych, które mają nazwy kończące się na s lub ię od **Eksploratora serwera**/**Eksplorator bazy danych** na [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), nazwy wygenerowanych klas jednostek zostaną zmienione w liczbie mnogiej na liczbę pojedynczą. W ten sposób bardziej przedstawiać fakt, że klasa wystąpień jednostki mapowany na pojedynczy rekord danych. Na przykład dodanie tabeli Customers [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wyniki w klasie jednostki o nazwie odbiorcy, ponieważ klasa przechowuje dane dla jednego klienta.  
   
 > [!NOTE]

@@ -12,18 +12,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647204"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Dostarczanie rozszerzeń programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Uwaga**: W galerii Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
-
 
 Po zakończeniu tworzenia Twojego rozszerzenia, możesz zainstalować ją na innych komputerach, udostępnić go ze znajomymi współpracowników lub opublikować ją w galerii Visual Studio. W tej sekcji Wyjaśnijmy, wszystkie elementy, które należy wykonać w celu publikowania i obsługa rozszerzenia: Praca z plikami .vsix, publikowania, lokalizacja i aktualizowania.
 

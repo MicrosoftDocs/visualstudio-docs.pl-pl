@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775891"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652868"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta Składniki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wyświetla składniki, które można dodać do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] i [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projektantów. Oprócz [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] składniki, które są dołączone [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], takich jak <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog> składników, możesz dodać swoje składniki posiada lub w innej firmy do tej karty. Aby uzyskać więcej informacji, zobacz [jak: Karty przybornika manipulowania](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Aby wyświetlić tę kartę, z **widoku** menu, wybierz opcję **przybornika**. W **przybornika**, wybierz opcję **składniki** kartę.  

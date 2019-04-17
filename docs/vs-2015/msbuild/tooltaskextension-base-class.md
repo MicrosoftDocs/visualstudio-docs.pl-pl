@@ -16,17 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1ebec5f0d708396db914d0bffcef832a33ceec9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800482"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670280"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension — Klasa podstawowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wiele zadań, o których dziedziczy <xref:Microsoft.Build.Tasks.ToolTaskExtension> klasy, która dziedziczy z <xref:Microsoft.Build.Utilities.ToolTask> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.  
   
 ## <a name="parameters"></a>Parametry  

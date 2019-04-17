@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354833"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659036"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Kosztowna funkcja GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: Kosztowna funkcja GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) w witrynie docs.microsoft.com.  
-
-  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: Kosztowna funkcja GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode).  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: Ko
  Wywołania metody GetHashCode tego typu są znaczna część danych profilowania, lub metoda przydziela pamięć.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Wyznaczania wartości skrótu jest techniką, szybko lokalizowania określonego elementu w dużych kolekcji. Ponieważ tabele skrótów mogą być bardzo duże i musi obsługiwać bardzo intensywny dostępu, tabele zbędnych danych powinna być bardzo wydajne. Domniemanie to wymaganie jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł odśmiecania pamięci i udostępnia metody do potencjalnych opóźnienia, jeśli stają się niezbędne do uruchomienia wyrzucania elementów bezużytecznych w wyniku żądania alokacji.  
+ Wyznaczania wartości skrótu jest techniką, szybko lokalizowania określonego elementu w dużych kolekcji. Ponieważ tabele skrótów mogą być bardzo duże i musi obsługiwać wysokie wskaźniki dotyczące dostępu, tabele zbędnych danych powinna być bardzo wydajne. Domniemanie to wymaganie jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł odśmiecania pamięci i udostępnia metody do potencjalnych opóźnienia, jeśli okaże się niezbędne do uruchomienia wyrzucania elementów bezużytecznych w wyniku żądania alokacji.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Zmniejsz złożoność metody.

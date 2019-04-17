@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803913"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662260"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowane składniki, które są nadal aktualne nie są odbudowany. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, gdy, każda kompilacja potrwa długo. Aby włączyć kompilacje przyrostowe (kompilacji, w którym tylko te obiekty docelowe, które nie zostały skompilowane zanim lub który jest przeznaczony dla są nieaktualne, są ponownie skompilowany), [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. Jednakże musi być mapowanie jeden do jednego między dane wejściowe i wyjściowe. Można użyć transformacji umożliwiające obiekty docelowe zidentyfikować ten bezpośredniego mapowania. Aby uzyskać więcej informacji na temat przekształceń, zobacz [przekształca](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Określanie dane wejściowe i wyjściowe  

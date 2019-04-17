@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621074"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662399"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wybieranie katalogu instalacyjnego dla pakietu VSPackage
 Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie plików użytkownika. Lokalizacja zależy od tego, czy pakietu VSPackage odbywa się lub niezarządzane schematu przechowywania wersji side-by-side i wybór użytkownika.
@@ -56,7 +56,6 @@ Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie pli
 4.  Ustawienia domyślne systemu LCID z odmianą języka domyślnego.
 
 5.  Federalna Angielski (*. \1033* lub *. \0x409*).
-
 
 Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i **SatelliteDll\DllName** punkty wejścia rejestru, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] próbuje załadować je w podanej kolejności.
 

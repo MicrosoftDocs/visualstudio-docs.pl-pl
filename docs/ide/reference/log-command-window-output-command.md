@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930535"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658993"
 ---
 # <a name="log-command-window-output-command"></a>Zapisuj dane wyjściowe okna Polecenie — Polecenie
 Kopiuje wszystkie wejścia i wyjścia z **polecenia** okna w pliku.
@@ -36,7 +36,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
 > [!TIP]
 > Aby zmienić lokalizację, w której zostanie zapisany plik dziennika, należy wprowadzić pełną ścieżkę pliku ujęta w cudzysłów, jeżeli ścieżka zawiera spacje.
-
 
 ## <a name="switches"></a>Przełączniki
  /on

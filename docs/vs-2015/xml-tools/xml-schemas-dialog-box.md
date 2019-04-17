@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769606"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647449"
 ---
 # <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **Schematów XML** okno dialogowe służy do wybierania które schematy XML schematu definicji języka (XSD) do skojarzenia z dokumentu XML. Wybierz schemat z pamięci podręcznej schematów lub określ schemat, który nie znajduje się w pamięci podręcznej. Wybrane schematy są traktowane jako część zestawu schematu. Zestaw schematu jest używany dla funkcji IntelliSense, a także Walidacja dokumentów XML.  
   
  Możesz uzyskać dostęp **schematów XML** okno dialogowe, albo klikając **schematów** przycisku w oknie dialogowym właściwości dokumentu lub wybierając **schematów** z **XML** menu.  

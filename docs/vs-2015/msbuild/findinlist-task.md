@@ -17,17 +17,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5011d1b9e83b379be8eb4b23ec6a7aac649ef9a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d1fdbc29cfe2fb7d387c6f261953930d2f528150
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774562"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654571"
 ---
 # <a name="findinlist-task"></a>FindInList — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Na określonej liście wyszukuje element, który ma pasujące itemspec.  
   
 ## <a name="parameters"></a>Parametry  

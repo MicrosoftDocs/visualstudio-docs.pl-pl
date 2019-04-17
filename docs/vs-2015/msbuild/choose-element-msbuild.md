@@ -19,17 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 244c4009c69dfaf66116dd0e9d5acf3258fd6eb5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758608"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650619"
 ---
 # <a name="choose-element-msbuild"></a>Choose — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ocenia elementy podrzędne, aby wybrać jeden zestaw `ItemGroup` elementy i/lub `PropertyGroup` elementy do oceny.  
   
  \<Project>  

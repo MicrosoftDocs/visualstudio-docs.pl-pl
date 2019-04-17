@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 87cffd39897d0e3122181792409044c6b0aedc99
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 07293e560cc78ecdd04f83a12cd18255d4a4a427
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924685"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662217"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Jak przetestować biblioteki DLL Visual C++
 
@@ -236,7 +236,6 @@ W tym temacie opisano jeden ze sposobów tworzenia testów jednostkowych dla ję
 
 > [!TIP]
 > Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.
-
 
 ##  <a name="Debug_a_failing_test"></a> Debuguj test niepowodzeniem
 

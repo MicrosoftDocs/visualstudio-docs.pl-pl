@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6993ce3038b395179aa5c0a667078d0ee478997
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784845"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661272"
 ---
 # <a name="searching-the-schema-set"></a>Wyszukiwanie zestawu schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eksplorator schematu XML umożliwia wyszukiwanie schematu ustawiony w następujący sposób:  
   
 -   Wyszukiwanie słów kluczowych.  

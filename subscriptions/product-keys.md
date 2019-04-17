@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667784"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 
@@ -53,7 +53,6 @@ Niektóre klucze są dostarczane automatycznie, takie jak klucze "statyczne", kt
 
 Różne typy kluczy są dostępne, w zależności od produktu.
 
-
 ### <a name="product-key-types"></a>Typy kluczy produktów
 
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Może przyjąć klucz ze strony pobierania dla produktu lub można znaleźć klu
 
 ### <a name="claiming-product-keys"></a>Zgłaszanie kluczy produktów
 Jedynie subskrybenci posiadający aktywne subskrypcje można pobrać produkty i zgłaszać klucze produktów.  Możesz wyeksportować z oświadczeniem klucze [klucze produktów](https://my.visualstudio.com/productkeys) strony podczas Twoja subskrypcja jest aktywna.
-
 
 Aby skorzystać z klucza produktu:
 1. Zaloguj się do subskrypcji programu Visual Studio.  Musi być zalogowano na pobieranie produkty i zgłaszać klucze produktów.

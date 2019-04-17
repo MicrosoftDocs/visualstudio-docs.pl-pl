@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366879"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650021"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -53,7 +53,7 @@ Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie jęz
 
 Informacje dodatkowe:
 
-- [Zarządzanie środowiskami języka Python](managing-python-environments-in-visual-studio.md)
+- [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
 - [Dokumentacja środowiska Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zaawansowane edytowanie, IntelliSense i zrozumienie kodu
@@ -98,7 +98,7 @@ Program Visual Studio pomaga uprościć projekt wzrostem wraz z upływem czasu. 
 
 Szablony projektów i elementów zautomatyzować proces konfigurowania różnych typów projektów i plików, co cenny czas i zwalniania możesz zarządzać szczegóły skomplikowanych i obarczone ryzykiem błędów. Program Visual Studio udostępnia szablony dla sieci web, Azure, do nauki o danych, konsolę i innych rodzajów projektów, w tym szablony dla plików, takie jak klasy, testy jednostkowe, konfiguracji sieci web platformy Azure, HTML i nawet aplikacji Django języka Python.
 
-[![Python szablonów projektów i elementów w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Szablony projektów i elementów języka Python w programie Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Informacje dodatkowe:
 
@@ -130,7 +130,7 @@ Informacje dodatkowe:
 
 Profilowanie przedstawiono, jak jest zużywany czas w aplikacji. Visual Studio obsługuje profilowanie przy użyciu opartych na CPython interpreterów i z możliwością porównania wydajności między różnych tras profilowania.
 
-[![VVisual Studio profiler wyniki dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![Visual Studio wyniki profiler dla projektu w języku Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Informacje dodatkowe:
 
@@ -156,15 +156,15 @@ Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](/
 
 ## <a name="questions-and-answers"></a>Pytania i odpowiedzi
 
-**PYTANIE: Czy obsługi języka Python w programie Visual Studio dla komputerów Mac?**
+**PYTANIA I ODPOWIEDZI. Czy obsługi języka Python w programie Visual Studio dla komputerów Mac?**
 
 A. W tej chwili nie możesz nawet głosować na żądanie, ale [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Programu Visual Studio dla komputerów Mac](/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowania, który ją obsługuje. W międzyczasie, Visual Studio Code w Windows, Mac i Linux [dobrze działa z języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
 
-**PYTANIE: Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
+**PYTANIA I ODPOWIEDZI. Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
 
 A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for-application-development/), powiązań dla języka Python, znane jako [PySide (oficjalna powiązania)](https://wiki.qt.io/PySide) (Zobacz też [PySide pliki do pobrania](https://download.qt.io/official_releases/pyside/.)) i [ PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
 
-**PYTANIE: Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
+**PYTANIA I ODPOWIEDZI. Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
 
 A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Jednak społeczności Python dostarczonych różne sposoby, aby utworzyć pliki wykonywalne, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 
@@ -199,7 +199,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-
 |         System projektu         |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | Nowy projekt z istniejącego kodu | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -208,7 +207,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 |        Integracja z usługą Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
-
 
 |           Edytowanie            |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -230,7 +228,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-
 |     Okno interaktywne     |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Okno interaktywne     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -238,15 +235,13 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-
-|               Pulpitu               |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               Aplikacje klasyczne               |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Aplikacja konsoli/Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | WPF v Ironpythonu (przy użyciu projektanta XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |      IronPython Windows Forms       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         sieć Web         |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -256,7 +251,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 | Projekt sieci web ogólnego | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         Azure          |   2017+   |   2015   | 2013 Comm | Pulpit 2013 |       2013 w sieci web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
@@ -269,7 +263,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <br/>
 
-
 |           Szablony Django           |   2017+   |   2015   | 2013 Comm | Pulpit 2013 |       2013 w sieci web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              Debugowanie               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
@@ -277,7 +270,6 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 | Autouzupełnianie dla CSS i JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
-
 
 |                  Debugowanie                  |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -292,13 +284,11 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 
 <a name="matrix-profiling"></a>
 
-
 | Profilowanie |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Profilowanie | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |     Test      |   2017+   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|

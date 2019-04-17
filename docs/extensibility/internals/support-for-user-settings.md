@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622725"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670449"
 ---
 # <a name="support-for-user-settings"></a>Pomoc techniczna dotycząca ustawień użytkownika
 Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, które są zmienne stanu, które utrzymują się, gdy użytkownik wybierze **importu/eksportu ustawień** polecenie **narzędzia** menu. Aby włączyć ten stan trwały, użyj ustawienia interfejsów API w [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -49,7 +49,6 @@ Pakietu VSPackage może zdefiniować co najmniej jednej kategorii ustawienia, kt
  ResourcePackage = "{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}"
 
  AlternateParent = CategoryName
-
 
 | Nazwa | Typ | Dane | Opis |
 |-----------------|--------| - | - |

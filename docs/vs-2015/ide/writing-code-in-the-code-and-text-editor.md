@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366617"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665752"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Visual Studio "Przejdź do" polecenie powoduje ukierunkowane wyszukiwanie kodu, 
     Podczas wpisywania, wyniki są wyświetlane na liście rozwijanej poniżej pola tekstowego.
 1. Aby przejść do elementu, wybierz go na liście.
 
-
 ### <a name="filter-your-search"></a>Przefiltruj wyszukiwanie
 
 Aby ograniczyć wyszukiwanie, tak aby tylko kod symbole, należy poprzedzić przejdź do zapytania przy użyciu "\@" znaków. Na przykład, jeśli wyszukasz `@application`, przejdź do Wyświetla, na przykład tylko klasy, które zawierają słowo "aplikacja" w ich.
@@ -189,37 +188,37 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
  Aby uzyskać informacje o opcjach edytora specyficznych dla języka zobacz następujące tematy:  
 
--   [Visual Basic — Ustawienia](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+-   [Ustawienia języka Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Używanie środowiska programistycznego Visual Studio dla języka C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opcje, edytor tekstu, JavaScript, formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Opcje, Edytor tekstów, JavaScript, Formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>W tej sekcji  
 
 -   [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)  
 
--   [Kodowania i linie podziału](../ide/encodings-and-line-breaks.md)  
+-   [Kodowania i znaki podziału wiersza](../ide/encodings-and-line-breaks.md)  
 
--   [Tworzenie konspektu](../ide/outlining.md)  
+-   [Obramowanie](../ide/outlining.md)  
 
 -   [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)  
 
 -   [Wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Korzystanie z IntelliSense](../ide/using-intellisense.md)  
+-   [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)  
 
--   [Dopasowywanie edytora](../ide/customizing-the-editor.md)  
+-   [Dostosowywanie edytora](../ide/customizing-the-editor.md)  
 
 -   [Instrukcje: Śledzenie kodu przez dostosowania paska przewijania](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Instrukcje: Wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Wstawki kodu](../ide/code-snippets.md)  
+-   [Fragmenty kodu](../ide/code-snippets.md)  
 
--   [Korzystanie z Przybornika](../ide/using-the-toolbox.md)  
+-   [Korzystanie z przybornika](../ide/using-the-toolbox.md)  
 
 -   [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md)  
 
@@ -227,7 +226,7 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 -   [Korzystanie z listy zadań](../ide/using-the-task-list.md)  
 
--   [Znajdowanie zmian w kodzie i innych elementów historii kodu](../ide/find-code-changes-and-other-history-with-codelens.md)  
+-   [Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

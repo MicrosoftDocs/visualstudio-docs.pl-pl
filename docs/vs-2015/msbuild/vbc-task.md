@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802192"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659699"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączanych dynamicznie (dll) lub modułów kodu (.netmodule). Aby uzyskać więcej informacji na temat vbc.exe, zobacz [kompilatora wiersza polecenia programu Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Parametry  
@@ -53,7 +52,7 @@ Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączany
 |`Imports`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Importuje przestrzenie nazw z kolekcji określonego elementu. Ten parametr odnosi się do [/importuje](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) przełącznika kompilatora vbc.exe.|  
 |`KeyContainer`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę kontenera kluczy kryptograficznych. Corresonds tego parametru, aby [/KeyContainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) przełącznika kompilatora vbc.exe.|  
 |`KeyFile`|Opcjonalnie `String` parametru.<br /><br /> Określa nazwę pliku zawierającego klucz kryptograficzny. Aby uzyskać więcej informacji, zobacz [/KeyFile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Opcjonalne [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa wersję języka, "9" lub "10".|  
+|`LangVersion`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa wersję języka, "9" lub "10".|  
 |`LinkResources`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Tworzy łącze do zasobów .NET Framework w pliku wyjściowym; plik zasobu nie zostanie umieszczony w pliku wyjściowym. Ten parametr odnosi się do [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) przełącznika kompilatora vbc.exe.|  
 |`MainEntryPoint`|Opcjonalnie `String` parametru.<br /><br /> Określa klasę lub moduł, który zawiera `Sub Main` procedury. Corresonds tego parametru, aby [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) przełącznika kompilatora vbc.exe.|  
 |`ModuleAssemblyName`|Opcjonalnie `String` parametru.<br /><br /> Określa zestaw, do którego należy ten moduł.|  

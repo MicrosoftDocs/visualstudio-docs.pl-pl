@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: f4508856fd2aa280a9e9d62c7e4add9e6ca383c1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324912"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649226"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
@@ -32,12 +32,10 @@ W niektórych przypadkach, na przykład podczas testowania — eksportowane funk
 
    2. Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie  **\<Edytuj >** :
 
-
       | Katalog | Właściwość |
       |-| - |
       | **Katalogi plików nagłówkowych** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Katalogi bibliotek** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
-
 
 2. Dodaj plik testu jednostkowego języka C++:
 

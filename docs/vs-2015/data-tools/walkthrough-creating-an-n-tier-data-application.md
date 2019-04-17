@@ -17,17 +17,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769682"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654688"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na wiele warstw logiczne, lub *warstwy*. Rozdzielanie składników aplikacji na dyskretne warstwy, łatwość konserwacji i zwiększa skalowalność aplikacji. Dzieje się tak, należy włączyć ułatwia przyjęcie nowych technologii, które mogą być stosowane do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji, warstwy środkowej i warstwy danych. Warstwa środkowa zazwyczaj zawiera warstwy dostępu do danych, warstwy logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzania poprawności. Warstwa danych obejmuje relacyjnej bazy danych. N-warstwowych zazwyczaj przechowują wrażliwe informacje w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji użytkowników końcowych, którzy uzyskują dostęp warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).  
   
  Pierwszym sposobem rozdzielenia różnych warstw w n warstwowej aplikacji jest utworzenie dyskretnych projektów dla każdej warstwy, które mają zostać uwzględnione w aplikacji. Typizowanych elementów DataSet zawiera `DataSet Project` właściwość określający, które projekty wygenerowanego zestawu danych i `TableAdapter` kodu, należy przejść do.  

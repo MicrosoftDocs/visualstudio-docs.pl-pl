@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 086a21e7793e3823615181037b24bcfb7cc5d461
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5df4b9c3bdefb6b807850e2b9f58fed8b2fd2a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780820"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670111"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Instrukcje: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tym temacie opisano sposób dodawania węzłów, które są wyróżnione w Eksplorator schematu XML jako wynik wyszukiwania słów kluczowych, w obszarze roboczym.  
   
 > [!NOTE]

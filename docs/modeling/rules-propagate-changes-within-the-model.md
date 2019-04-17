@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416213"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669956"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagowanie zmian jeden element do innego w wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany dowolnego elementu w Store, zasady są zaplanowane do wykonania, zwykle w przypadku, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak elementu Dodawanie lub usuwanie go. Zasady można dołączyć do określonych typów elementów, kształty i diagramy. Wiele wbudowanych funkcji są definiowane przez reguły: na przykład zasady upewnij się, że diagram jest aktualizowana po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Pochodną klasy reguł z jednej z następujących klas bazowych:
 
-
   | Klasa bazowa | Wyzwalacz |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Element, link lub kształt zostanie dodany.<br /><br /> Umożliwia wykrywanie nowych relacji, oprócz nowych elementów. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Wykonania, gdy transakcja jest tworzona. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Wykonania, gdy transakcja ma zostać zatwierdzone. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Wykonania, gdy transakcja zostanie wycofana. |
-
 
 - Każda klasa ma metodę, która można zastąpić. Typ `override` w swojej klasie, aby je odnajdą. Parametr tej metody identyfikuje element, który został zmieniony.
 

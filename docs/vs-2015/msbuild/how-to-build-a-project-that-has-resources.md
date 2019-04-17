@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45d2dfedcc020a5b6206e4c419c0e4b7f9b0f02
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804004"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660271"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Instrukcje: Kompilacja projektu zawierającego zasoby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Jeśli tworzysz zlokalizowane wersje projektu, wszystkich elementów interfejsu użytkownika muszą być oddzielone do plików zasobów w różnych językach. Jeśli projekt używa tylko ciągi, pliki zasobów, można użyć plików tekstowych. Alternatywnie można użyć plików resx jako pliki zasobów.  
   
 ## <a name="compiling-resources-with-msbuild"></a>Kompilowanie zasobów za pomocą narzędzia MSBuild  

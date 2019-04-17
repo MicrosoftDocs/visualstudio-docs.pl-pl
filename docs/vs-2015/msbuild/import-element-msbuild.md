@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804043"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654298"
 ---
 # <a name="import-element-msbuild"></a>Import — Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Importuje zawartość pliku jednego projektu do innego pliku projektu.  
   
  \<Project>  

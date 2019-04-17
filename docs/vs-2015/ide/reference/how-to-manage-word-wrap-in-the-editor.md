@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656014"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Można ustawić lub wyczyścić **zawijanie** opcji. Gdy ta opcja jest ustawiona, część długi wiersz, który wykracza poza bieżącym szerokość okna edytora kodu jest wyświetlany w następnym wierszu. Po wyczyszczeniu tej opcji, na przykład w celu ułatwienia korzystania numerowanie wierszy można przewijać po prawej stronie, aby zobaczyć zakończenia długie wiersze.  
   
  Aby uzyskać więcej informacji, zobacz [jak: Ustawianie opcji ogólnych edytora](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  

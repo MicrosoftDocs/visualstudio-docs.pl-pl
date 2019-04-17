@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83c0090db251fb2740fbecc767b93de89021ab64
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 107303082202cb1dbb162ef9dfb845c2f6564df4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795384"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655689"
 ---
 # <a name="set-current-thread-command"></a>Ustaw bieżący wątek — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ustawia określony wątek jako bieżącego wątku.  
   
 ## <a name="syntax"></a>Składnia  

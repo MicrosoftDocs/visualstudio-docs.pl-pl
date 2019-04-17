@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8ee0de9cad23b6208c9b015c65a8d9494821eae
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54789820"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668070"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wyświetla zaznaczony lub określony tekst w polu wyrażenie [okno dialogowe QuickWatch](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). To okno dialogowe służy do obliczania wartości bieżącej zmiennej lub wyrażenia uznane przez debuger lub zawartości rejestru. Ponadto można zmienić wartość dowolnej zmiennej niestały lub zawartość dowolnego rejestru.  
   
 ## <a name="syntax"></a>Składnia  

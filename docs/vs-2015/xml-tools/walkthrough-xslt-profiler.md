@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665392"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Przewodnik: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które ułatwiają pomiar i docelowe problemy związane z wydajnością w kodzie XSLT i oceny. Profiler XSLT obejmuje, przydatne wskazówki dotyczące optymalizacji o arkusza stylów XSL i XSLT. Dla aplikacji XSLT tego żądanie uzyskania maksymalnej wydajności to narzędzie może być istotne.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
@@ -110,4 +109,4 @@ Profiler XSLT tworzy szczegółowe raporty wydajności XSLT, które ułatwiają 
 4.  Widok procesu przedstawia tabelę, która zawiera **identyfikator procesu**, **nazwy procesu**, **czas rozpoczęcia**i **czas zakończenia**. Dane można sortować, klikając nazw kolumn.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Przewodnik: Korzystanie z hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+ [Przewodnik: Używanie hierarchii XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16b0f414c87fd1d9dea7305e43e23a59b7dc53b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805002"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658502"
 ---
 # <a name="receive-activity-designer"></a>Receive, projektant działań
 **Receive** projektanta działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Receive> działania. A <xref:System.ServiceModel.Activities.Receive> działania to działanie, które odbiera komunikat, który może być wbudowany typ taką jak <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> lub <xref:System.Xml.Linq.XElement>, lub kontraktu danych zdefiniowanych przez aplikację, kontraktu komunikatu lub klasy XML, który może być serializowany.  
@@ -35,7 +35,6 @@ ms.locfileid: "54805002"
 
 ### <a name="the-receive-activity-properties"></a>Odbieranie właściwości działania  
  W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.Receive> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości lub na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni. To jedyna wymagana właściwość <xref:System.ServiceModel.Activities.Receive.OperationName%2A> właściwości.  
-
 
 |                              Nazwa właściwości                               | Wymagane |                                                                                                                                                                                                                                                                                                                                                                                         Użycie                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

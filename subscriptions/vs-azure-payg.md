@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak skonfigurować konto usługi Azure rozliczana według bieżącego użycia.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843912"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657652"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Konfigurowanie subskrypcji usługi Azure Dev/Test płatność za rzeczywiste użycie
 Współpracuj ze swoim zespołem w chmurze.  Utwórz wiele dewelopersko-testowego płatność za rzeczywiste użycie subskrypcje, umożliwiając współpracę z innymi subskrybentami, a jednocześnie zapewniając izolację między zespołami i środowiskami.  Odbieranie wyłączne stawki godzinowe z rabatem na programowanie/testowanie i prawa do używania w chmurze dla subskrypcją oprogramowanie na platformie Azure.
@@ -31,11 +31,9 @@ Współpracuj ze swoim zespołem w chmurze.  Utwórz wiele dewelopersko-testoweg
    > [!div class="mx-imgBorder"]
    > ![Rejestracja PAYG platformy Azure](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Następnie podaj informacje rozliczeniowe dla swojego konta i kliknij przycisk **dalej**.  (Są to karty kredytowej, która jest rozliczana za wszystkie swoje zakupy w portalu Azure.)
    > [!div class="mx-imgBorder"]
    > ![Płatność PAYG platformy Azure](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. W sekcji umowę, kliknij pole wyboru, aby zaakceptować umowę subskrypcji, zapewniają szczegółowe informacje i zasady zachowania poufności informacji, a następnie kliknij **zakupu**.
 

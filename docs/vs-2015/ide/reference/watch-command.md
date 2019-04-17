@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bd362c01c996dc6a32197b9acd88f11b26c034bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655809"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Możesz użyć **Obejrzyj** okna do obliczania wartości zmiennych, wyrażenia i rejestry, aby edytować te wartości i zapisać wyniki.  
   
 ## <a name="syntax"></a>Składnia  

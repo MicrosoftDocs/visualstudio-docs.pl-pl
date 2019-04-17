@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477529"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647171"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
@@ -74,7 +74,6 @@ Czasami instalację programu Visual Studio staje się uszkodzone lub uszkodzony.
    > **Naprawy** opcja jest dostępna tylko w przypadku zainstalowanych wystąpień programu Visual Studio. Jeśli nie widzisz **naprawy** opcji jest szansa, że wybrano **więcej** w wersji, który jest wymieniony w Instalatorze programu Visual Studio jako "Dostępne" zamiast "Zainstalowano".
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

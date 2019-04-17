@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764540"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648305"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlenie danych z formularza w aplikacji Windows, edytować dane i wysyłać zaktualizowane dane w bazie danych. Ten poradnik tworzy formularz, który wyświetla dane z dwóch pokrewnych tabel i pokazuje, jak edytować rekordy i zapisać zmiany w bazie danych. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind.  
   
  Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody TableAdapter. Podczas przeciągania tabel z **źródeł danych** okna na formularzu, kod, który jest wymagany w celu zapisywania danych jest automatycznie dodawany. Dodatkowe tabele, które są dodawane do formularza wymaga ręcznego dodawania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jedną tabelą.  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620996"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651308"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodaj nowy element
 Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna się od kluczy rejestru. Jak pokazano w następujących wpisach rejestru **AddItemTemplates** sekcja zawiera ścieżkę i nazwę katalogu, w które elementy udostępnione w **Dodaj nowy element** są umieszczane okno dialogowe.
@@ -34,7 +34,6 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
  **TemplatesDir** = \\&lt;ścieżka instalacji programu Visual Studio SDK&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\ &lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
 
  **SortPriority** = dword:00000064
-
 
 | Nazwa | Typ | Dane (z *.rgs* pliku) | Opis |
 |------------------|-----------| - | - |

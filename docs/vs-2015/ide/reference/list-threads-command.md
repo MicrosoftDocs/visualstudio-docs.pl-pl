@@ -15,17 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 627e361fca63522f47a1d472655573c14a44035a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804611"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669124"
 ---
 # <a name="list-threads-command"></a>Lista wątków — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wyświetla listę wątków w bieżącym programem.  
   
 ## <a name="syntax"></a>Składnia  

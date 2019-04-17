@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fbf76392244978f8266f14ac56fcc60b1d16198
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89b8a9821fb9e02821d0a0a3b752fd92d46058ca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638000"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647038"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Instrukcje: Instrumentowanie autonomicznego składnika natywnego i zbieranie danych o chronometrażu przy użyciu profilera z wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji natywnych składnika, takiego jak C++. *plik exe* lub. *Biblioteka DLL* pliku oraz w celu zbierania danych o chronometrażu.
@@ -52,7 +52,6 @@ Aby zebrać szczegółowe dane czasowe ze składnika za pomocą metody instrumen
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
-
 
 4. Uruchom aplikację docelową w typowy sposób.
 

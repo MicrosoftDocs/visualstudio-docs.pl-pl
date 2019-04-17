@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787698"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662975"
 ---
 # <a name="working-with-xml-data"></a>Praca z danymi XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML i pokrewnych technologiach odgrywają dużą rolę w taki sposób, w danych jest obsługiwana w [!INCLUDE[msCoName](../includes/msconame-md.md)] programu Visual Studio. Visual Studio zawiera narzędzia i funkcje, dzięki którym łatwiej jest pracować z XML, XSLT i XML, schematy.  
   
 ## <a name="xml-editor"></a>Edytor XML  

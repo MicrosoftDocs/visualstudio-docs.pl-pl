@@ -7,12 +7,12 @@ ms.date: 03/02/2018
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji w chmurze.
 searchscope: VS Subscription
-ms.openlocfilehash: d85b093b8877430c037fdc528abc8264b6c847b9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843782"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654363"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Chmura subskrypcji programu Visual Studio często zadawane pytania dotyczące rozliczeń
 
@@ -108,7 +108,6 @@ Odp.:  Tak, możesz, jeśli odsprzedawcy uczestniczy w programie Cloud Solution 
 
 * [Visual Studio Professional miesięczna](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 * [Visual Studio Enterprise miesięczna](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: cbb5eeaaa69852b43d2189c4ca9d308cff75ba98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856423"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656163"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
 W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) utworzysz aplikację "Hello World", która jest uruchamiana na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, możesz za pomocą szablonu projektu uniwersalnej platformy Windows (UWP), Extensible Application Markup Language (XAML), a C# języka programowania.
 
 ::: moniker range="vs-2017"
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 ::: moniker-end
 ::: moniker range="vs-2019"
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) strony, aby zainstalować go za darmo.

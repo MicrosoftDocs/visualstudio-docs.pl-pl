@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658712"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza Windows DSL za pomocą Visual Studio Visualization i Modeling SDK.
@@ -28,12 +28,10 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
     W tym przewodniku przyjęto są następujące nazwy:
 
-
    | | |
    |-|-|
    | Nazwa rozwiązania i DSL | FarmApp |
    | Przestrzeń nazw | Company.FarmApp |
-
 
 2. Poeksperymentuj z początkowej przykładu, który zawiera szablon:
 

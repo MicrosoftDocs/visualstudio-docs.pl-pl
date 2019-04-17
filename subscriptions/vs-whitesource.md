@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartych w ramach subskrypcji programu Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 482f0e5054b1b2ad7ea677b40d5d368004227ec8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b305808e022fd95db517a824d99a9af75d96ec24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842198"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659842"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -37,7 +37,6 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
 5. W **aktywować konta** sekcji strony poprowadzą Cię przez cztery kroki:
 
    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [instalowanie bezpłatnych rozszerzeń dla usługi Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
-
 
 Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platformy Azure, lub **Pobierz** przycisk programu Team Foundation Server.  W tym przykładzie używamy usługom DevOps platformy Azure.
 > [!div class="mx-imgBorder"]
@@ -84,10 +83,8 @@ Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platf
 
 <sup>1</sup>*obejmuje:  Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network (Professional) .*
 
-
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

@@ -17,17 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d10959cf7cd7dbbf11ff5808889e4ae21aafa40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795455"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649150"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci Web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników modelu COM, usług sieci Web XML, zestawów i biblioteki klas .NET Framework lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).  
   
  Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.  

@@ -19,17 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758473"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650254"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Następująca tabela zawiera listę często używanych właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach .targets, dostarczanych przez program MSBuild.  
   
  Pliki projektu w programie Visual Studio (.csproj, .vbproj, vcxproj i inne) zawierają kod MSBuild XML, który jest uruchamiany, gdy tworzysz projekt za pomocą IDE. Projekty zazwyczaj importują jeden lub więcej plików .targets, aby zdefiniować ich proces kompilacji. Aby uzyskać więcej informacji, zobacz [. Jest przeznaczony dla plików](../msbuild/msbuild-dot-targets-files.md).  

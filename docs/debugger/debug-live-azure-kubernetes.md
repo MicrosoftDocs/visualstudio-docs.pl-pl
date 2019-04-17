@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654714"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debugowanie na żywo usług ASP.NET usługi Azure Kubernetes, za pomocą rozszerzenia Snapshot Debugger
 
@@ -35,9 +35,9 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Snapshot Debugger dla usługi Kubernetes usługi Azure jest dostępne tylko dla programu Visual Studio 2019 Enterprise (wersja zapoznawcza) lub nowszym z **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
+* Snapshot Debugger dla usługi Kubernetes usługi Azure jest dostępne tylko dla programu Visual Studio Enterprise 2019 lub nowszym z **obciążenie programistyczne platformy Azure**. (W obszarze **poszczególne składniki** karty, możesz znaleźć go w folderze **debugowanie i testowanie** > **rozszerzenia Snapshot debugger**.)
 
-    Jeśli jeszcze nie jest zainstalowany, zainstaluj [wersji zapoznawczej programu Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Jeśli jeszcze nie jest zainstalowany, zainstaluj [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Zbieranie migawek jest dostępna dla następujących aplikacji sieci web usługi Kubernetes usługi Azure:
   * Aplikacje platformy ASP.NET Core uruchomionej na platformy .NET Core 2.2 lub później na Debian 9.
@@ -101,7 +101,7 @@ Po włączeniu punktu przyciągania będzie przechwytywać migawki, ilekroć wyk
 
 Możesz również dodać więcej punktów przyciągania do swojej aplikacji i włączać je za pomocą **Aktualizuj kolekcję** przycisku.
 
-**Czy potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
+**Potrzebujesz pomocy?** Zobacz [Rozwiązywanie problemów i znane problemy](../debugger/debug-live-azure-apps-troubleshooting.md) i [często zadawane pytania dotyczące debugowania migawek](../debugger/debug-live-azure-apps-faq.md) stron.
 
 ## <a name="set-a-conditional-snappoint"></a>Ustaw warunkowego punktu przyciągania
 

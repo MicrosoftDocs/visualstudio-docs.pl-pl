@@ -7,19 +7,18 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Więcej informacji na temat wyróżnienia RZUTOWANIA korzyści dostępne w wybranych subskrypcjach programu Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840907"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650138"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Wyróżnij RZUTOWANIA korzyści w ramach subskrypcji programu Visual Studio
 
 Deweloperzy muszą kluczowe informacje na temat ich oprogramowania podczas migracji do chmury. Za pomocą wyróżnić RZUTOWANIA subskrybenci programu Visual Studio Enterprise szybko skanować ich kod źródłowy aplikacji, aby zidentyfikować przygotowania do chmury swoje aplikacje pod kątem migracji do platformy Azure i monitorowanie postępu aplikacji podczas i po migracji.
 
 Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełne funkcji miesięcznej subskrypcji, aby wyróżnić RZUTOWANIA maksymalnie pięć aplikacje na subskrybenta.
-
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
@@ -29,7 +28,6 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
 
    > [!div class="mx-imgBorder"]
    > ![RZUTOWANIE wyróżnienia korzyści kafelka](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
-
 
 0. Zobaczysz, że zostały pomyślnie pobrane komunikat z informacją o tym kodzie.  Kliknij przycisk **Aktywuj**, w tym momencie nastąpi przekierowanie do strony wyróżnić RZUTOWANIA kontynuować proces aktywacji.  (Jeśli użytkownik nie chce Aktywuj teraz, możesz zawsze możesz wrócić do kafelka RZUTOWANIA Wyróżnij w portalu subskrypcji programu.  Link "Pobierz kod" zostanie zmieniona na "Aktywuj", a kliknięcie go wznowi proces aktywacji.)
 
@@ -57,7 +55,6 @@ Subskrybenci programu Visual Studio Enterprise mogą uzyskać bezpłatne i pełn
    *Najlepszym rozwiązaniem,*
    *Greg*
 
-
 Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający pomyślne utworzenie konta usługi i pytaniem, możesz kliknąć link aktywacyjny, aby zakończyć proces aktywacji.
 
    *Firma Microsoft pomyślnie zweryfikowane i zweryfikować Twoje żądanie dostępu, wyróżnij RZUTOWANIA. Witamy na pokład!*
@@ -78,10 +75,8 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
    *Najlepszym rozwiązaniem,*
    *Greg*
 
-
    > [!NOTE]
    > Należy kliknąć łącze do aktywacji w wiadomości e-mail, które otrzymujesz.  W przeciwnym razie nie można korzystać z subskrypcji, wyróżnij RZUTOWANIA. Jeśli nie widzisz wiadomości e-mail w skrzynce odbiorczej, koniecznie sprawdź foldery spamu.
-
 
 ## <a name="eligibility"></a>Uprawnienie
 
@@ -95,14 +90,10 @@ Po zatwierdzeniu żądania otrzymasz drugiej wiadomości e-mail, potwierdzający
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Niedostępne  | Brak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 
-
-
 <sup>1</sup>*obejmuje:  Nie for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, najbardziej wartościowych Professional (MVP), dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu programu Visual Studio.
-
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

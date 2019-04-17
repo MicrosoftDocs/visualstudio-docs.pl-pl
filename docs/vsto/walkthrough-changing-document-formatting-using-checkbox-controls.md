@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621516"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653895"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Przewodnik: Zmiana formatowania dokumentu za pomocą formantów CheckBox
   W tym instruktażu pokazano, jak użyć kontrolek formularzy Windows Forms w dostosowywania poziomie dokumentu dla programu Microsoft Office Word, aby zmienić formatowanie tekstu.
@@ -155,7 +155,6 @@ ms.locfileid: "56621516"
 -   Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [instruktażu: Wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
 -   Za pomocą przycisków radiowych, aby wybrać styl wykresu. Aby uzyskać więcej informacji, zobacz [instruktażu: Aktualizacja wykresu w dokumencie za pomocą przycisków radiowych](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
-
 
 ## <a name="see-also"></a>Zobacz także
 - [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)

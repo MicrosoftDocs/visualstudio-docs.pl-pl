@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 35e68a9a359d139fae631d06d5fa847ae6e60b8c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657314"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Instrukcje: Modyfikowanie plików web.config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci web ASP.NET
 Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody Instrumentacji narzędzi profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i danych o okresie istnienia obiektu platformy .NET z dynamicznie kompilowany [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
@@ -45,11 +45,9 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
 3. Dodaj następujące nazwy atrybutu i wartość, która **assemblyBinding** elementu:
 
-
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Dodaj **dependentAssembly** element jako element podrzędny **assemblyBinding** elementu.
 
@@ -59,13 +57,11 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
 6. Dodaj następujące nazwy atrybutów i wartości do **assemblyIdentity** elementu:
 
-
    | Nazwa atrybutu | Wartość atrybutu |
    |--------------------| - |
    | **Nazwa** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Kultury** | **Neutral** |
-
 
 7. Dodaj **codeBase** element jako element podrzędny elementu **dependentAssembly** elementu.
 
@@ -140,12 +136,10 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
 
 3. Dodaj następujące nazwy atrybutów i wartości do **Dodaj** elementu:
 
-
    | Nazwa atrybutu | Wartość atrybutu |
    |----------------| - |
    | **Klucz** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Dodaj kolejną **Dodaj** element jako element podrzędny elementu **appSettings** elementu.
 
@@ -157,7 +151,6 @@ Możesz użyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody 
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` jest to ścieżka, programu profilującego plików wykonywalnych. Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

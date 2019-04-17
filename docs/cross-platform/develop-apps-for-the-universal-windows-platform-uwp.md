@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 60eeb84dcbea7a30cc0b46c3a22571ccfe258028
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152593"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648773"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -38,11 +38,26 @@ Narzędzia do programowania uniwersalnych aplikacji Windows są dostarczane z em
 
 Poniżej przedstawiono listę oprogramowania, które są potrzebne:
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Program Visual Studio 2017 obsługuje tworzenie platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) i [wymagania systemowe](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
 
      ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 obsługuje programowania platformy uniwersalnej systemu Windows tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz Visual Studio [platformy](/visualstudio/releases/2019/compatibility/) i [wymagania systemowe](/visualstudio/releases/2019/system-requirements/).
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Należy również opcjonalny obciążenia programowania Universal Windows Platform.
+
+     ![Obciążenie platformy uniwersalnej systemu Windows](media/uwp_workload.png)
+
+::: moniker-end
+
 
 Po zainstalowaniu tego oprogramowania, należy włączyć urządzenia z systemem Windows 10 do tworzenia aplikacji. Zobacz [włączyć urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Nie potrzebujesz już licencję dewelopera dla każdego urządzenia z systemem Windows 10.
 

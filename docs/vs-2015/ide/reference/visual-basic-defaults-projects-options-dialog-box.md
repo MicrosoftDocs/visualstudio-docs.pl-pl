@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a74a045e5e0eac35c183dcb81ea611c9e6363e18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b8c4fc730b4ad110b3160a725be0d109cda8c7a7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755189"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667930"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Domyślne ustawienia programu Visual Basic, Projekty, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Określa wartości domyślne dla opcji projektu języka Visual Basic. Po utworzeniu nowego projektu instrukcji określoną opcję zostaną dodane do nagłówka projektu w edytorze kodu. Opcje są stosowane do wszystkich projektów w języku Visual Basic.  
   
  Dostęp do tego okna dialogowego w **narzędzia** menu, kliknij przycisk **opcje**, rozwiń węzeł **projekty i rozwiązania** folder, a następnie kliknij **VB domyślnie**.  

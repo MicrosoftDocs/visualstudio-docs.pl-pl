@@ -11,18 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659166"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlink/p/?LinkId=536383) jest składnikiem do zainstalowania programu Visual Studio 2015. Zawiera szablony programu Visual Studio dla wielu platform i pozwala na zainstalowanie narzędzi dla wielu platform i zestawy SDK na szybkie rozpoczęcie pracy, bez konieczności zlokalizować, pobrać i skonfigurować je samodzielnie. Te narzędzia w programie Visual Studio umożliwia łatwe tworzenie, edytowanie, debugowanie i testowanie projektów dla wielu platform. W tym temacie opisano sposób instalowania narzędzi i oprogramowania innych firm, wymagane do rozwoju aplikacji dla wielu platform przy użyciu programu Visual Studio. Aby zapoznać się z omówieniem składnika, zobacz [Visual C++ Cross-Platform Mobile](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Wizualne C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlink/p/?LinkId=536383) jest składnikiem do zainstalowania programu Visual Studio 2015. Zawiera szablony programu Visual Studio dla wielu platform i pozwala na zainstalowanie narzędzi dla wielu platform i zestawy SDK na szybkie rozpoczęcie pracy, bez konieczności zlokalizować, pobrać i skonfigurować je samodzielnie. Te narzędzia w programie Visual Studio umożliwia łatwe tworzenie, edytowanie, debugowanie i testowanie projektów dla wielu platform. W tym temacie opisano sposób instalowania narzędzi i oprogramowania innych firm, wymagane do rozwoju aplikacji dla wielu platform przy użyciu programu Visual Studio. Aby zapoznać się z omówieniem składnika, zobacz [Visual C++ Cross-Platform Mobile](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Wymagania](#Requirements)   
  [Pobierz narzędzia](#GetTheTools)   

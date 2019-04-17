@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798907"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659819"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Podczas kompilowania projektu, zawiera kilka plików, możesz wyświetlić listę każdego pliku osobno w pliku projektu lub można używać symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżone zestawu katalogów.  
   
 ## <a name="specifying-inputs"></a>Określanie danych wejściowych  

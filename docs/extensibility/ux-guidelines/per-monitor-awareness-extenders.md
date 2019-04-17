@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504253"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660700"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Rozpoznawanie — monitorowanie, obsługę rozszerzeń programu Visual Studio
 Wersje przed Visual Studio 2019 r było ich kontekstami świadomości DPI równa świadomi, a nie wartość DPI aware (PMA) monitor systemu. Działające w systemie świadomości spowodowało wizualizację pogorszenie środowiska (np. rozmyty czcionki lub ikony) zawsze wtedy, gdy program Visual Studio było renderowanie na monitorach z różne skale lub zdalnego do maszyn za pomocą innego ekranu konfiguracji np. (inny Windows skalowanie).
@@ -40,10 +40,13 @@ Zapoznaj się [wysokiej rozdzielczości DPI aplikacji programowanie aplikacji kl
 ## <a name="enabling-pma"></a>Włączanie PMA
 Aby włączyć PMA w programie Visual Studio, muszą zostać spełnione następujące wymagania:
 1)  Windows 10 kwietnia 2018 r. aktualizacji (v1803 RS4) lub nowszy
-2)  .NET framework 4.8 RTM lub nowszej (obecnie dostarczany jako autonomiczny (wersja zapoznawcza) lub przy użyciu najnowszych Windows Insider tworzy)
+2)  .NET framework 4.8 RTM lub nowszej
 3)  Visual Studio 2019 r przy użyciu ["Optymalizuj renderowania na ekranach o różnych pikseli gęstości"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) po włączeniu opcji
 
 Po spełnieniu tych wymagań programu Visual Studio spowoduje automatyczne włączenie trybu PMA całym procesie.
+
+> [!NOTE]
+> Zawartość Windows Forms w programie VS (na przykład w przeglądarce właściwości) będzie obsługiwać PMA tylko wtedy, gdy program Visual Studio 2019 aktualizacji nr 1.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Testowanie rozszerzeń PMA problemów
 
@@ -106,12 +109,18 @@ Zawsze, gdy w scenariuszach DPI trybu mieszanego (np. różne elementy interfejs
 #### <a name="out-of-process-ui"></a>Interfejs użytkownika spoza procesu
 Niektóre interfejsu użytkownika zostanie utworzony poza procesem i w przypadku tworzenia proces zewnętrzny w trybie świadomości DPI innego niż program Visual Studio, może prowadzić do dowolnego z poprzednich problemy z renderowaniem.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Kontrolek formularzy Windows Forms, obrazów lub nie są wyświetlane w systemie windows
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Kontrolek formularzy Windows Forms, obrazów lub niepoprawnie renderowany układów
+Nie wszystkie treści Windows Forms obsługują tryb PMA. W rezultacie mogą pojawić się renderowanie problem z układów niepoprawne lub skalowania. Rozwiązania, w tym przypadku jest jawnie renderowanie zawartości Windows Forms w DpiAwarenessContext "System Aware" (dotyczą [wymuszanie formant do określonego DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Kontrolek formularzy Windows Forms lub windows, które nie są wyświetlane
 Jedną z głównych przyczyn tego problemu jest próby Zmień obiekt nadrzędny dla formantu lub okno z jednego DpiAwarenessContext do okna z różnych DpiAwarenessContext deweloperów.
 
-Poniższe ilustracje przedstawiają bieżących ograniczeń systemu operacyjnego Windows w elementy nadrzędne systemu windows:
+Poniższe ilustracje pokazują bieżącą **domyślne** ograniczeń systemu operacyjnego Windows w elementy nadrzędne systemu windows:
 
 ![Zrzut ekranu przedstawiający zachowanie poprawny element nadrzędny](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> To zachowanie można zmienić, określając zachowanie hostingu wątku (zobacz [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 W rezultacie Jeśli ustawisz relacji nadrzędny podrzędny między trybami nieobsługiwane, zakończy się niepowodzeniem i kontroli lub okna nie może być renderowana zgodnie z oczekiwaniami.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629914"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652803"
 ---
 # <a name="import-element-msbuild"></a>Import — element (MSBuild)
 Importuje zawartość pliku jednego projektu do innego pliku projektu.
@@ -69,7 +69,6 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
  Jeśli importowany projekt nie ma `DefaultTargets` atrybutu, zaimportowane projekty są kontrolowane w kolejności, są one importowane, a wartość pierwszego odnalezione `DefaultTargets` atrybut jest używany. Na przykład, jeśli ProjectA importuje ProjectB i ProjectC (w tej kolejności) i ProjectB importuje ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] szuka najpierw `DefaultTargets` określone w ProjectA, a następnie ProjectB, a następnie ProjectD, a na koniec ProjectC.
 
  Schemat importowanym projekcie jest identyczna jak standardowy projekt. Mimo że [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może być zdolny do skompilowania importowanym projekcie, jest mało prawdopodobne, ponieważ importowanym projekcie zwykle nie zawiera informacji na temat właściwości, które z zestawem lub kolejność, w którym ma być uruchamiany elementów docelowych. Zaimportowanego projektu zależy od projektu, do którego jest importowany, aby podać te informacje.
-
 
 ## <a name="wildcards"></a>Symboli wieloznacznych
  W programie .NET Framework 4 program MSBuild umożliwia symboli wieloznacznych w atrybucie projektu. W przypadku symboli wieloznacznych znalezione wszystkie dopasowania są sortowane (w przypadku odtwarzaniem), a następnie są importowane w tej kolejności tak, jakby kolejność ma jawnie ustawione.

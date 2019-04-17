@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621334"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652985"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: Kompilacja przyrostowa
 Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowane składniki, które są nadal aktualne nie są odbudowany. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, gdy, każda kompilacja potrwa długo. Aby włączyć kompilacje przyrostowe (kompilacji, w którym tylko te obiekty docelowe, które nie zostały skompilowane zanim lub który jest przeznaczony dla są nieaktualne, są ponownie skompilowany), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. Jednakże musi być mapowanie jeden do jednego między dane wejściowe i wyjściowe. Można użyć transformacji umożliwiające obiekty docelowe zidentyfikować ten bezpośredniego mapowania. Aby uzyskać więcej informacji na temat przekształceń, zobacz [przekształca](../msbuild/msbuild-transforms.md).
@@ -61,7 +61,6 @@ W poniższym przykładzie użyto projektu, który tworzy plików pomocy dla hipo
 - `GenerateContentFiles`: Konwertuje *.txt* pliki do *.content* plików.
 
 - `BuildHelp`: Łączy *.content* pliki i pliki metadanych XML do tworzenia końcowe *.help* pliku.
-
 
 Projekt używa przekształceń w celu utworzenia mapowanie jeden do jednego między dane wejściowe i dane wyjściowe w `GenerateContentFiles` zadania. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony na wartość automatycznie korzystają z danych wyjściowych z `GenerateContentFiles` zadanie jako dane wejściowe dla `BuildHelp` zadania.
 
