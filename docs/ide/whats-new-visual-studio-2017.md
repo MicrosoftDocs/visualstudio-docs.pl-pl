@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649332"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857817"
 Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 można umożliwiają: Niezrównana wydajność dla każdego programisty, każdej aplikacji i dowolnej platformy. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemów Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, elastyczność i Współpracuj efektywnie dzięki tej wersji!
 
 >[!div class="button"]
->[Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu zmiany wprowadzone od poprzedniej wersji programu Visual Studio 2015:
 
@@ -315,7 +315,7 @@ Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe emulatora wyd
 
 Aby uzyskać więcej informacji, zobacz [Introducing App Center: Tworzenia, testowania, dystrybucji i monitorować aplikacje w chmurze](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) wpis w blogu.
 
-## <a name="cross-platform-development"></a>Programowanie dla wielu platform
+## <a name="cross-platform-development"></a>Tworzenie aplikacji wieloplatformowych
 
 ### <a name="redgate-data-tools"></a>Redgate Data Tools
 
@@ -371,9 +371,11 @@ Firma Microsoft aktualizuje program Visual Studio 2017 często z nowymi funkcjam
 
 Chcesz wiedzieć więcej o tym, co jeszcze jest działa w programie Visual Studio 2017? Zobacz [Visual Studio plan](/visualstudio/productinfo/vs2018-roadmap) strony.
 
+Zapoznaj się z naszych najnowszych wersji, zapomnij [Visual Studio 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Skontaktuj się z nami
 
- Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ traktujemy opinie naszych użytkowników bardzo poważnie. Zależy od ilości co możemy zrobić.
+Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ traktujemy opinie naszych użytkowników bardzo poważnie. Zależy od ilości co możemy zrobić.
 
 Jeśli chcesz sugestię o jak możemy ulepszyć program Visual Studio, lub Dowiedz się więcej o opcjach pomocy technicznej produktu, zapoznaj się z artykułem [Porozmawiaj z nami](talk-to-us.md) strony.
 
@@ -389,4 +391,4 @@ Jeśli chcesz sugestię o jak możemy ulepszyć program Visual Studio, lub Dowie
 * [Co nowego w języku C#](/dotnet/csharp/whats-new)
 * [What's new for Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Co nowego w programie Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Co nowego w programie Visual Studio 2019](whats-new-visual-studio-2019.md)
+* [What's new in Visual Studio 2019 r.](whats-new-visual-studio-2019.md)

@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758364"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649241"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służyć do oceny, skryptów programu MSBuild. Funkcje właściwości może służyć wszędzie tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcji właściwości mogą być używane poza celów i są sprawdzane przed wszystkie przebiegi docelowego.  
   
  Bez używania zadań programu MSBuild, może odczytywanie godziny systemowej, porównywanie ciągów, porównywanie wyrażeń regularnych i wykonywać inne czynności w skrypcie kompilacji. Program MSBuild podejmie próbę konwertowanie ciągu na liczbę i liczbę na ciąg i innych konwersji zgodnie z potrzebami.  

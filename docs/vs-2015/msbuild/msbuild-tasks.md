@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 611bc5c0fbb81d38aa10561d8603ef281a51d9a1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788692"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650606"
 ---
 # <a name="msbuild-tasks"></a>Zadania programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Platforma kompilacji musi mieć możliwość wykonywania dowolną liczbę akcji podczas procesu kompilacji. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] używa *zadania* wykonywać te akcje. Zadanie jest jednostką kodu wykonywalnego, używana przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] do wykonywania niepodzielnych operacji kompilacji.  
   
 ## <a name="task-logic"></a>Logika zadania  

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753446"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656547"
 ---
 # <a name="xml-schema-designer-workspace"></a>Obszar roboczy projektanta schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Projektant schematu XML (XSD Designer) jest graficznego narzędzia, które ułatwia Eksplorowanie schematów XML. Oprócz [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md), co pozwala na przeglądanie, przejdź w drzewie schematu XML i wyszukuj, Projektant XSD zawiera trzy widoki, które umożliwiają poznawanie schematu XSD bardziej szczegółowo. Widoku startowego to doskonała platforma dla Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i wyświetlić szczegóły zestawu schematów. Widok wykresu umożliwia Zobacz Omówienie zestawu schematu i relacje między węzłami schematu. Widok modelu zawartości zapewnia graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.  
   
  Aby rozpocząć eksplorowanie węzły, które Cię interesuje, możesz dodać je do obszaru roboczego. Obszar roboczy jest współużytkowana przez wszystkie widoki.  

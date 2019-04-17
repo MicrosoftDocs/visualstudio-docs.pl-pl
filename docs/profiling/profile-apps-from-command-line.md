@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b2de537b17b68461c16f886c1eab706d2438ff6c
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670488"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Miara wydajności aplikacji z poziomu wiersza polecenia
 
@@ -87,7 +87,3 @@ VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;
 ## <a name="permissions"></a>Uprawnienia
 
 Aby profilować aplikację, która wymaga podniesionych uprawnień, należy to zrobić z wiersza polecenia z podwyższonym poziomem uprawnień.
-
-
-
-

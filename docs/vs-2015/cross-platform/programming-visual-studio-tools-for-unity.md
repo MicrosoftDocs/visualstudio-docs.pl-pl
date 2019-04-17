@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: ccdc91643725e8799f587d14923ecf7620fc13b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 469478f05546a32bb890f759d3d00cb447b54d2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774377"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654051"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programowanie dla rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 W tej sekcji znajdziesz przykłady dotyczące korzystania z programu Visual Studio Tools dla interfejsu API aparatu Unity.  
   
 ## <a name="examples"></a>Przykłady  

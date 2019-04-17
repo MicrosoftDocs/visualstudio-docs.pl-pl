@@ -14,7 +14,6 @@
 # [Dostosowywanie środowiska IDE](customizing-the-ide.md)
 ## [Rozszerzenie programu Visual Studio dla komputerów Mac](extending-visual-studio-mac.md)
 
-
 # [Projekty i rozwiązania](projects-and-solutions.md)
 ## [Tworzenie nowych projektów](create-new-projects.md)
 ## [Dodawanie i usuwanie elementów projektu](add-and-remove-project-items.md)
