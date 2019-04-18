@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5176a3a8c5575521c3adaea13f1f1b862010217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788429"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663378"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Uruchamianie kompilacji w środowisku IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym temacie opisano przyczyny tego i opisano procedurę.  
   
 ## <a name="parallel-builds-and-threads"></a>Kompilacje równoległe i wątki  

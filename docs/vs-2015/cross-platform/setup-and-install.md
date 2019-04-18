@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781712"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663862"
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Do tworzenia natywnych dla systemów iOS, Android i Windows aplikacje z poziomu wspólnego języka C# / kodu platformy .NET przy użyciu platformy Xamarin, należy spełnić następujące warunki:  
   
 - Do pracy z Windows i aplikacje dla systemu Android: Windows komputerze dewelopera z programem Visual Studio 2015 i Xamarin 4 zainstalowanych (patrz należy zwrócić uwagę poniżej). (Można również użyć programu Visual Studio 2013 postępując zgodnie z instrukcjami dotyczącymi [bezpośredniej instalacji Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (strony xamarin.com).)   

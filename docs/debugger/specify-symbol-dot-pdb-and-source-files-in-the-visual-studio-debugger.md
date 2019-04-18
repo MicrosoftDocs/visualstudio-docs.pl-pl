@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666562"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
@@ -259,7 +259,6 @@ Określ lokalizacje, debuger wyszukuje pliki źródłowe i wykluczenie określon
 1. W obszarze **nie wyszukuj tych plików źródłowych**, wpisz nazwy plików źródłowych, które mają zostać wykluczone z wyszukiwania.
 
 1. Wybierz **OK** lub **zastosować**.
-
 
 ## <a name="see-also"></a>Zobacz także
 - [Pliki symboli i ustawienia symboli programu Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

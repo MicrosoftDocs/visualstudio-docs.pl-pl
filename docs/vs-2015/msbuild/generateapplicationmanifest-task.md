@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756587"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660986"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji lub manifest macierzysty. Manifest natywny zawiera opis składnika poprzez określenie unikatowej tożsamości składnika i identyfikację wszystkich zestawów i plików, które tworzą składnik. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji rozszerza manifest natywny przez wskazanie punktu wejścia aplikacji i określenie poziomu zabezpieczeń aplikacji.  
   
 ## <a name="parameters"></a>Parametry  
@@ -45,10 +44,10 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikac
 |`Dependencies`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa elementu listy, który definiuje zestaw zestawów zależnych dla wygenerowanego manifestu. Każdy element może być opisane przez metadane elementu, aby wskazać dodatkowy stan wdrożenia i typ zależności. Aby uzyskać więcej informacji zobacz sekcję "Element Metadnych" poniżej.|  
 |`Description`|Opcjonalnie `String` parametru.<br /><br /> Określa opis dla aplikacji lub składnika.|  
 |`EntryPoint`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa pojedynczy element, który wskazuje punkt wejścia dla wygenerowanego zestawu manifestu.<br /><br /> Aby uzyskać [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikacji, ten parametr określa zestaw, który rozpoczyna się, gdy aplikacja jest uruchomiona.|  
-|`ErrorReportUrl`|Opcjonalne [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas raportów błędu instalacji ClickOnce.|  
+|`ErrorReportUrl`|(Opcjonalne [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas raportów błędu instalacji ClickOnce.|  
 |`FileAssociations`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa listę typu pliku, które są skojarzone z manifestem wdrażania ClickOnce.<br /><br /> Skojarzenia plików poprawne tylko, tylko wtedy, gdy architekturą docelową jest .NET Framework 3.5 lub nowszy.|  
 |`Files`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Pliki do dołączenia w manifeście. Określ pełną ścieżkę do każdego pliku.|  
-|`HostInBrowser`|Opcjonalne [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Jeśli `true`, aplikacja jest obsługiwana w przeglądarce (tak jak aplikacje przeglądarki sieci Web dla WPF).|  
+|`HostInBrowser`|(Opcjonalnie) [logiczną]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametr.<br /><br /> Jeśli `true`, aplikacja jest obsługiwana w przeglądarce (tak jak aplikacje przeglądarki sieci Web dla WPF).|  
 |`IconFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje plik ikony aplikacji. Ikona aplikacji jest wyrażona w manifeście aplikacji wygenerowanym i jest używany dla okna dialogowego Start Menu i Dodaj/Usuń programy. Jeśli wejście to nie jest określony, ikona domyślna jest używana. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
 |`InputManifest`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument danych wejściowych XML, która będzie służyć jako podstawa do generatora manifestu. Dzięki temu dane strukturalnych, takie jak zabezpieczenia aplikacji lub niestandardowe definicje manifestu są odzwierciedlane w manifeście danych wyjściowych. Element główny dokumentu XML musi być zbiorem węzła trustinfo w obszarze nazw asmv1.|  
 |`IsolatedComReferences`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa składniki COM do izolowania w manifeście. Ten parametr obsługuje możliwość izolowania składników COM wdrażania "Wolna rejestracja COM". Działa polega na automatycznym generowaniu manifestu ze standardowymi definicjami rejestracji com. Jednak składniki COM musi być zarejestrowana na komputerze kompilacji, aby działać prawidłowo.|  
@@ -61,12 +60,12 @@ Generuje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikac
 |`Publisher`|Opcjonalnie `String` parametru.<br /><br /> Określa wydawcę aplikacji. Jeśli ten parametr nie jest określony, nazwa wynika z zarejestrowanego użytkownika lub tożsamości wygenerowanego manifestu. Nazwa ta jest używaną nazwą folderu, w Start menu i jest częścią nazwy, która pojawia się w oknie dialogowym Dodaj lub usuń programy.|  
 |`RequiresMinimumFramework35SP1`|Opcjonalnie `Boolean` parametru.<br /><br /> W przypadku opcji true, aplikacja wymaga .NET Framework 3.5 z dodatkiem SP1 lub nowsza wersja.|  
 |`TargetCulture`|Opcjonalnie `String` parametru.<br /><br /> Identyfikuje kulturę aplikacji i określa `Language` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zakłada się, że aplikacja jest kulturowo niezmienna.|  
-|`TargetFrameworkMoniker`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa krótką nazwę platformy docelowej.|  
-|`TargetFrameworkProfile`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa profil platformy docelowej.|  
-|`TargetFrameworkSubset`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa nazwę podzbioru .NET Framework do obiektu docelowego.|  
-|`TargetFrameworkVersion`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> Określa docelową aplikację .NET Framework projektu.|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa krótką nazwę platformy docelowej.|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa profil platformy docelowej.|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa nazwę podzbioru .NET Framework do obiektu docelowego.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> Określa docelową aplikację .NET Framework projektu.|  
 |`TrustInfoFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument XML, który określa zabezpieczenia aplikacji. Element główny dokumentu XML musi być węzłem trustInfo w obszarze nazw asmv2. Jeśli zadanie generuje natywny manifest, ten parametr jest ignorowany.|  
-|`UseApplicationTrust`|Opcjonalnie <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametru.<br /><br /> W przypadku opcji true `Product`, `Publisher`, i `SupportUrl` właściwości są zapisywane w manifeście aplikacji.|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametr.<br /><br /> W przypadku opcji true `Product`, `Publisher`, i `SupportUrl` właściwości są zapisywane w manifeście aplikacji.|  
   
 ## <a name="remarks"></a>Uwagi  
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.GenerateManifestBase> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę parametrów klasy zadanie, zobacz [klasa podstawowa zadania](../msbuild/task-base-class.md).  
