@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366994"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset Visualizer — Okno dialogowe
@@ -37,6 +37,6 @@ Wizualizator zestawu danych służy do wyświetlania zawartości obiektu DataSet
 ## <a name="see-also"></a>Zobacz też
 
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)
-- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
-- [Debuger Windows](../debugger/debugger-windows.md)
-- [Podgląd wartości danych w poradach dotyczących](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+- [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+- [Okna debugera](../debugger/debugger-windows.md)
+- [Wyświetlanie wartości danych w etykietkach danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

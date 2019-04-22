@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018197"
 ---
 # <a name="options-dialog-box-environment--general"></a>Okno dialogowe Opcje: Środowisko \> ogólne
@@ -102,5 +102,5 @@ Określa, że w przypadku **Autoukrywanie** przycisku, okna narzędzi, który ma
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Środowisko, opcje — Okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
+- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

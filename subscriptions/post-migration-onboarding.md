@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Dowiedz się, jak pomyślnie dołączyć organizacji po przeprowadzeniu migracji do portalu administratora subskrypcji programu Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897611"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Dołączanie do portalu programu Visual Studio subskrypcje administracji po organizacji migracji

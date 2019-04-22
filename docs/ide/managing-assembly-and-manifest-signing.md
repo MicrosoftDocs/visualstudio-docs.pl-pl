@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866695"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Zarządzanie podpisywaniem zestawu i manifestu
@@ -28,7 +28,7 @@ Silna nazwa składa się z tożsamości zestawu (nazwa prosty tekst, numeru wers
 
 Aby uzyskać informacje na temat podpisywania zestawów w projektach Visual Basic i C#, zobacz [tworzenia i używania zestawów o silnych nazwach](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Aby uzyskać informacji na temat podpisywania zestawów w projektach języka Visual C++, zobacz [zestawy o silnych nazwach (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Dla informacji na temat podpisywania zestawów w elemencie wizualnym C++ projektów, zobacz [zestawy o silnych nazwach (C++sposób niezamierzony)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > Podpisywanie silnej nazwy nie chroni przed odtwarzania zestaw. Aby zapewnić ochronę przed odtwarzania, zobacz [Dotfuscator Community](dotfuscator/index.md).
@@ -73,4 +73,4 @@ Aby uzyskać informacje dotyczące podpisywania manifestów, zobacz [jak: Podpis
 ## <a name="see-also"></a>Zobacz także
 
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Zestawy o silnych nazwach (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Zestawy o silnych nazwach (C++sposób niezamierzony)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366318"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Używanie rozszerzenia Cookiecutter
@@ -37,10 +37,10 @@ Strona główna Cookiecutter Wyświetla listę szablonów do wyboru, podzielone 
 
 | Grupa | Opis |
 | --- | --- |
-| **Zainstalowany** | Szablony, które zostały zainstalowane na komputerze lokalnym. W przypadku szablonu usługi online jako repozytorium zostanie automatycznie sklonowany do podfolderu *~/.cookiecutters*. Usunąć wybranego szablonu zainstalowane, naciskając **Usuń**. |
+| **Zainstalowane** | Szablony, które zostały zainstalowane na komputerze lokalnym. W przypadku szablonu usługi online jako repozytorium zostanie automatycznie sklonowany do podfolderu *~/.cookiecutters*. Usunąć wybranego szablonu zainstalowane, naciskając **Usuń**. |
 | **Zalecane** | Szablony są ładowane z kanał zalecane. Domyślne źródło danych jest nadzorowane przez firmę Microsoft. Zobacz [opcje Cookiecutter](#cookiecutter-options) poniżej szczegółowe informacje na temat dostosowywania źródła danych. |
 | **GitHub** | Wyniki wyszukiwania usługi GitHub — słowo kluczowe narzędzia cookiecutter. Wyniki z repozytorium GitHub możesz wrócić z podziałem na strony, jeśli będą dostępne, wyniki **obciążenia więcej** pojawia się na końcu listy. |
-| **Niestandardowe** | Po wprowadzeniu niestandardową lokalizację w polu wyszukiwania, pojawi się w tej grupie. Możesz wpisz pełną ścieżkę do repozytorium GitHub lub pełną ścieżkę do folderu na dysku lokalnym. |
+| **Custom** | Po wprowadzeniu niestandardową lokalizację w polu wyszukiwania, pojawi się w tej grupie. Możesz wpisz pełną ścieżkę do repozytorium GitHub lub pełną ścieżkę do folderu na dysku lokalnym. |
 
 ### <a name="cloning"></a>Klonowanie
 

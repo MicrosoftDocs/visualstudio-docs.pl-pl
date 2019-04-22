@@ -1,5 +1,5 @@
 ---
-title: Upgrade Dotfuscator Community
+title: Uaktualnianie programu Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -25,13 +25,13 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866682"
 ---
-# <a name="upgrade-dotfuscator-community"></a>Upgrade Dotfuscator Community
+# <a name="upgrade-dotfuscator-community"></a>Uaktualnianie programu Dotfuscator Community
 
 System Dotfuscator Community oferuje wiele ochrona aplikacji i funkcje ograniczania funkcjonalności natychmiast dla wszystkich deweloperów przy użyciu programu Microsoft Visual Studio.
 Jednak istnieją więcej funkcji dostępne dla użytkowników, którzy uaktualnić swoją wersję narzędzia Dotfuscator.
@@ -47,7 +47,7 @@ Aby zarejestrować system Dotfuscator Community, zobacz [instrukcje pełnego prz
 
 System Dotfuscator Community zapewnia podstawowy poziom ochrony, jednocześnie ***PreEmptive ochrona — Dotfuscator Professional*** obejmuje ulepszone zasłanianie transformacje i funkcje ochrony, takie jak:
 
-* *Ochrona własności intelektualnej*
+* *Intellectual Property Protection*
   * Dodatkowe zmiany nazwy opcji obejmujących Enhanced Overload Induction™ i losowy identyfikator wyboru.
   * Dostęp do klasy korporacyjnej zasłanianie przekształceń, w tym [przekształcenia celem udaremniając zautomatyzowane dekompilacji kodu][control-flow].
   * Możliwość [zasłaniać poufnych ciągi][string-encryption], tworzenie prostego wyszukiwania kodu dekompilowanych niemożliwe.

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232583"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Korzystanie z programu Microsoft Monitoring Agent (C#, Visual Basic)
@@ -126,7 +126,7 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 
      Oto przykład pokazujący, ścieżka programu IIS i uproszczone **Monitor** trybu:
 
-     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**
+     **PS C: > Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitorowanie "C:IntelliTraceLogs"**
 
      Po rozpoczęciu monitorowania, możesz zobaczyć Wstrzymaj program Microsoft Monitoring Agent podczas ponownego uruchomienia aplikacji.
 
@@ -246,7 +246,7 @@ Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` o
 
     Na przykład:
 
-    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
+    **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
     —lub—
 
@@ -276,11 +276,11 @@ Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` o
 
     Lub aby zatrzymać monitorowanie wszystkich aplikacji sieci web:
 
-    **Stop-WebApplicationMonitoring -All**
+    **Stop-WebApplicationMonitoring - wszystkie**
 
     Na przykład:
 
-    **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
+    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
 
     \- lub —
 

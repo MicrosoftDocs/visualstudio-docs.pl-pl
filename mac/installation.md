@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857323"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Install Visual Studio 2019 for Mac
@@ -32,20 +32,20 @@ Aby kompilować aplikacje Xamarin dla systemu iOS lub macOS, należy także:
 1. Pobierz Instalatora z [program Visual Studio for Mac strony pobierania](https://aka.ms/vsmac).
 2. Po ukończeniu pobierania kliknij **VisualStudioforMacInstaller.dmg** Zainstaluj Instalator, następnie uruchom go, klikając dwukrotnie plik logo strzałkę:
 
-    [![CKliknij pozycję dużych strzałkę, aby rozpocząć instalację](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Kliknij strzałkę w dużych, aby rozpocząć instalację](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Może być przedstawiany z ostrzeżeniem o aplikacji są pobierane z Internetu. Kliknij przycisk **Otwórz**.
 4. Zaczekaj, aż Instalator sprawdza, czy system:
 
-    [![THE Instalator sprawdza, czy zainstalowanych składników w systemie](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Instalator sprawdza, czy zainstalowanych składników w systemie](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Alert zostanie wyświetlony prośbą o potwierdzenie warunki ochrony prywatności i licencji. Skorzystaj z linków, aby je odczytać, a następnie naciśnij klawisz **Kontynuuj** Jeśli zgadzasz się:
 
-    [![Follow łącza do ochrony prywatności i warunki, następnie kontynuuj, jeśli zgadzasz się](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Skorzystaj z linków do prywatności i warunki, a następnie kontynuuj, wyrażasz zgodę](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
 6. Zostanie wyświetlona lista dostępnych obciążeń. Wybierz te, których chcesz użyć:
 
-    [![CWybierz, w której obciążenie opcjonalne funkcje chcesz zainstalować](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Wybierz funkcji opcjonalnych obciążenia, które chcesz zainstalować](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
 7. Po dokonaniu wyborów, naciśnij klawisz **zainstalować** przycisku.
 8. Instalator wyświetli postęp pobierania i instalacji programu Visual Studio dla komputerów Mac i wybranego obciążenia. Może zostać wyświetlony o wprowadzenie hasła do przyznawania uprawnień niezbędnych do instalacji.
@@ -77,7 +77,7 @@ Instalowanie programu Visual Studio dla komputerów Mac pozwala rozpocząć pisa
 ### <a name="android"></a>Android
 
 1. [Przy użyciu Menedżera zestawów SDK platformy Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Emulator zestawu SDK systemu android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+2. [Emulator zestawu SDK systemu Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Konfigurowanie urządzenia na potrzeby programowania](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikacje platformy .NET core, aplikacje sieci web platformy ASP.NET Core, tworzenia gier Unity

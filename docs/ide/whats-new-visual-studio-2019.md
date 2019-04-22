@@ -16,10 +16,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477544"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
@@ -27,7 +27,7 @@ ms.locfileid: "59477544"
 **Zaktualizowano do programu [16,0 wydania](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Pobierz program Visual Studio 2019 r.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Pobierz program Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 Za pomocą programu Visual Studio 2019 r uzyskasz najlepsze w swojej klasie narzędzi i usług dla każdego dewelopera, każdej aplikacji i dowolnej platformy. Czy używasz programu Visual Studio po raz pierwszy używasz go przez wiele lat, jest dużo, np. w tej nowej wersji!
 
@@ -178,7 +178,7 @@ Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ tra
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Przedstawiamy Visual Studio 2019 r.](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
+* [Announcing Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Informacje o wersji programu Visual Studio 2019 r](/visualstudio/releases/2019/release-notes/)
 * [What's New in Visual Studio SDK 2019 r](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 r dla komputerów Mac jest teraz dostępna](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856635"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
@@ -120,7 +120,7 @@ Można przyjrzeć się fragmentów kodu dostępne dla danego języka, wybierają
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Przechodzenie do kodu](../ide/navigating-code.md)
-- [Tworzenie konspektu](../ide/outlining.md)
-- [Przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md)
+- [Obramowanie](../ide/outlining.md)
+- [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
 - [Refaktoryzacja](../ide/refactoring-in-visual-studio.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

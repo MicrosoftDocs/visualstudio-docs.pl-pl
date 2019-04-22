@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366435"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
@@ -96,4 +96,4 @@ Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna
 - [Edytowanie kodu](editing-python-code-in-visual-studio.md)
 - [Formatowanie kodu](formatting-python-code.md)
 - [Refaktoryzacja kodu](refactoring-python-code.md)
-- [Korzystanie z narzędzia PyLint](linting-python-code.md)
+- [Użyj PyLint](linting-python-code.md)

@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897767"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
@@ -165,7 +165,7 @@ W ramach tej procedury dodasz cztery nowe pliki do projektu.
 
 * *app.tsx*
 * *webpack-config.js*
-* *index.HTML*
+* *index.html*
 * *tsconfig.json*
 
 Dla tej prostej aplikacji możesz dodawać nowe pliki projektu, w katalogu głównym projektu. (W przypadku większości aplikacji są zazwyczaj Dodaj pliki do podfolderów i odpowiednio dostosować odwołania do ścieżki względnej.)

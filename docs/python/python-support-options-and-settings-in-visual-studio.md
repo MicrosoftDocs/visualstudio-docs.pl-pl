@@ -18,10 +18,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365801"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
@@ -118,7 +118,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
-| **Scripts** | n/d | Określa ogólne folder skrypty uruchamiania zastosować do **Interactive** systemu windows dla wszystkich środowisk. Zobacz [skrypty uruchamiania](python-environments-window-tab-reference.md#startup-scripts). Należy jednak pamiętać, że ta funkcja nie działa obecnie. |
+| **Skrypty** | n/d | Określa ogólne folder skrypty uruchamiania zastosować do **Interactive** systemu windows dla wszystkich środowisk. Zobacz [skrypty uruchamiania](python-environments-window-tab-reference.md#startup-scripts). Należy jednak pamiętać, że ta funkcja nie działa obecnie. |
 | **Strzałki w górę/w dół przejdź historii** | On | Używa klawiszy strzałek, aby poruszać się po historii w **Interactive** okna. Wyczyść to ustawienie, aby użyć klawiszy strzałek aby przejść w ramach **Interactive** okno danych wyjściowych zamiast tego. |
 | **Tryb uzupełniania** | **Tylko ocena wyrażenia bez wywołania funkcji** | Proces określania dostępni członkowie na wyrażeniu w **Interactive** okna może wymagać oceny bieżącego wyrażenia niedokończone może spowodować skutki uboczne lub funkcje wywoływana wiele razy. Ustawieniem domyślnym **tylko obliczać wyrażeń bez wywołania funkcji** wyklucza wyrażeń, które pojawiają się w wywołaniu funkcji, ale ocenia inne wyrażenia. Na przykład, ocenia `a.b` , ale nie `a().b`.  **Nigdy nie obliczać wyrażeń** uniemożliwia wszystkie efekty uboczne, przy użyciu tylko normalne aparatu funkcji IntelliSense dla sugestie. **Oceń wszystkie wyrażenia** ocenia Dokończ wyrażenie, aby uzyskać sugestie, niezależnie od tego, efekty uboczne. |
 | **Ukryj podpowiedzi analizy statycznej** | Off | Po ustawieniu wyświetla tylko sugestie, które są uzyskiwane przez obliczenie wyrażenia. Jeśli w połączeniu z **trybem uzupełniania** wartość **nigdy nie obliczać wyrażeń**, nie przydatne uzupełnienia pojawiają się w **Interactive** okna. |

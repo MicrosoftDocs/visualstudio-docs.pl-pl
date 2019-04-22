@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897676"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
@@ -90,7 +90,7 @@ Zwraca jedną z następujących wartości:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)
+- [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)
 - [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)
 - [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)
 - [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)

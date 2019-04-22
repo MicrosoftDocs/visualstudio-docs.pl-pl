@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477668"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Dziennik zmian (Visual Studio Tools for Unity, Windows)
@@ -622,7 +622,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Naprawiono odwołania poza zasobów, takich jak biblioteki (np. Facebook SDK).
 
--   **Misc:**
+-   **Różne:**
 
     -   Dodano kontrolę, aby uniemożliwić Unity uruchomiona podczas instalowania lub odinstalowywania.
 
@@ -743,7 +743,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Dodano obsługę komunikatów NetworkBehavior w kreatorach.
 
--   **UI:**
+-   **INTERFEJS UŻYTKOWNIKA:**
 
     -   Dodano opcję, aby skonfigurować widoczność MonoBehavior wiadomości.
 
@@ -767,7 +767,7 @@ Dziennik zmian w programie Visual Studio Tools for Unity.
 
     -   Rozwiązano problem powodujący zablokowanie podczas debugowania programu Visual Studio.
 
--   **UI:**
+-   **INTERFEJS UŻYTKOWNIKA:**
 
     -   Naprawiono niezgodność z [Studio karty](https://tabsstudio.com/) rozszerzenia programu Visual Studio.
 

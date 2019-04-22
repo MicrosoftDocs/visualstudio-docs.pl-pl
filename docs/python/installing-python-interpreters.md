@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365226"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
@@ -62,8 +62,8 @@ Po ten proces zapewnia, że wpisy rejestru, które identyfikują interpreter lok
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zarządzanie środowiskami języka Python](managing-python-environments-in-visual-studio.md)
-- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Zarządzanie środowiskami Python](managing-python-environments-in-visual-studio.md)
+- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)
 - [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

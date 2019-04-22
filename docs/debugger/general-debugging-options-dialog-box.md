@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504422"
 ---
 # <a name="general-debugging-options"></a>Ogólne opcje debugowania
@@ -101,7 +101,7 @@ W warunkach, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `ms
 
 **Włącz debugowanie kodu JavaScript dla platformy ASP.NET (przeglądarki Chrome, krawędzi i programu Internet Explorer)**: Włącza debugera skryptów w przypadku aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane. Wyłącz tę opcję, aby przywrócić starsze zachowanie.
 
-**Włącz narzędzia deweloperskie przeglądarki Microsoft Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**: Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
+**Włącz narzędzia deweloperskie przeglądarki Edge dla aplikacji JavaScript platformy uniwersalnej systemu Windows (wersja eksperymentalna)**: Umożliwia developer tools dla aplikacji JavaScript platformy uniwersalnej systemu Windows w programie Edge.
 
 **Włącz starsze debugera języka JavaScript w przeglądarce Chrome dla platformy ASP.NET**: Włącza starsze debugera skryptów JavaScript w przeglądarce Chrome dla aplikacji ASP.NET. Przy pierwszym użyciu w przeglądarce Chrome może być konieczne Zaloguj się do przeglądarki, aby włączyć rozszerzenia dla programu Chrome, które zostały zainstalowane.
 
@@ -172,5 +172,5 @@ Jeśli używasz starszej wersji programu Visual Studio może istnieć pewne doda
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Debugowanie w Visual Studio](../debugger/index.md)
+- [Debugowanie w programie Visual Studio](../debugger/index.md)
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

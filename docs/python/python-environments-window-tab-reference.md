@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366526"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Dokumentacja karty okna środowiska Python
@@ -168,6 +168,6 @@ Biblioteki, dla których jeszcze nie zostały skompilowane danych są oznaczone 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)

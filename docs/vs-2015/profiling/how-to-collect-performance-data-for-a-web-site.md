@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366734"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Instrukcje: Zbieranie danych dotyczących wydajności dla witryny sieci Web
@@ -103,7 +103,7 @@ Możesz użyć **kreatora wydajności** do zbierania danych wydajności dla [!IN
      Program profilujący generuje plik danych i wyświetla widok podsumowania danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] głównego okna.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Omówienia](../profiling/overviews-performance-tools.md)   
+ [Omówienie](../profiling/overviews-performance-tools.md)   
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
+ [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)   
  [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

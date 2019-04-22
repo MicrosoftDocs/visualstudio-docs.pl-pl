@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856463"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
@@ -162,8 +162,8 @@ Aby utworzyć testy jednostkowe, które używają [NUnit](https://nunit.org/):
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Utwórz testy jednostkowe, polecenie](create-unit-tests-menu.md)
+* [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
 * [Generuj testy z funkcją IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Uruchom testy z Eksploratora testów](run-unit-tests-with-test-explorer.md)
 * [Analiza pokrycia kodu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857583"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
@@ -50,7 +50,7 @@ Niektóre wartości rejestru są ustawiane automatycznie po raz pierwszy one są
 
 Można ustawić następujące wartości rejestru:
 
-| **Nazwa** | **Typ** | **Domyślny** | **Opis** |
+| **Nazwa** | **Typ** | **Default** | **Opis** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` lub `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Katalog, w której pakiet manifesty i, opcjonalnie, ładunki są przechowywane. Aby uzyskać więcej informacji, zobacz [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) strony. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Zachowaj ładunków pakietu, nawet w przypadku, po ich zainstalowaniu. Możesz zmienić wartość dowolnym czasie. Wyłączanie zasad usuwa wszelkie ładunków pamięci podręcznej pakietu dla wystąpienia, napraw lub zmodyfikować. Aby uzyskać więcej informacji, zobacz [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) strony. |

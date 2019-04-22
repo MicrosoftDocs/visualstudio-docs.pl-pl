@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366500"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
@@ -68,7 +68,7 @@ Po zatrzymaniu w punkcie przerwania, możesz mieć różne sposoby, aby przejś�
 
 | Funkcja | Keystroke | Opis |
 | --- | --- | --- |
-| **Kontynuuj** | **F5** | Uruchamia kod, aż do osiągnięcia następnego punktu przerwania. |
+| **Continue** | **F5** | Uruchamia kod, aż do osiągnięcia następnego punktu przerwania. |
 | **Wkrocz** | **F11** | Uruchamia następnej instrukcji i zatrzymuje. Jeśli następna instrukcja jest wywołaniem funkcji, debuger zatrzymuje się w pierwszym wierszu wywoływanej funkcji. |
 | **Przekrocz nad** | **F10** | Uruchamia następnej instrukcji, łącznie z wywołania do funkcji (uruchomionego jego kodu) i zastosowanie wszelkich wartości zwracanej. Pominięcie pozwala łatwo pominąć funkcje, które nie trzeba do debugowania. |
 | **Wyjdź** | **SHIFT**+**F11** | Uruchamia kod aż do zakończenia bieżącej funkcji, a następnie kroki do instrukcji wywołujące.  To polecenie jest przydatne, gdy nie jest konieczne do debugowania w pozostałej części bieżącej funkcji. |
@@ -137,7 +137,7 @@ Domyślnie debuger zaczyna się od program standardowy uruchamianie języka Pyth
 | **Standardowa uruchamianie języka Python** | Zastosowań debugowanie kodu napisanego w języku Python przenośny, zgodny z CPython, IronPython i wariantami, takimi jak Stackless języka Python. Zapewnia najlepsze środowisko do debugowania czystym kodzie języka Python. Po dołączeniu do uruchomionej *python.exe* procesu, uruchom ten jest używany. Udostępnia również w tym uruchamianie programu [debugowanie w trybie mieszanym](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) CPython, co umożliwia bezproblemowe krok między kodu C/C++ oraz kodu w języku Python. |
 | **Uruchamianie w sieci Web** | Uruchamia domyślną przeglądarkę w momencie uruchomienia i powoduje włączenie debugowania szablonów. Zobacz [debugowania szablonów sieci Web](python-web-application-project-templates.md#debugging) sekcji, aby uzyskać więcej informacji. |
 | **Uruchamianie z sieci Django Web** | Taka sama jak uruchamiającego w sieci Web i wyświetlane tylko w przypadku zapewnienia zgodności. |
-| **IronPython (.NET) launcher** | Używa debugera platformy .NET, które działa tylko w przypadku IronPython, ale umożliwia przechodzenie między każdego projektu języka .NET, w tym C# i VB. Uruchamianie tego programu jest używana, jeśli dołączanie do uruchomionego procesu .NET, który jest hostem Ironpythonu. |
+| **Uruchamianie IronPython (.NET)** | Używa debugera platformy .NET, które działa tylko w przypadku IronPython, ale umożliwia przechodzenie między każdego projektu języka .NET, w tym C# i VB. Uruchamianie tego programu jest używana, jeśli dołączanie do uruchomionego procesu .NET, który jest hostem Ironpythonu. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opcje uruchamiania (ścieżki wyszukiwania, argumenty uruchomienia i zmiennych środowiskowych)
 
@@ -146,7 +146,7 @@ Domyślnie debuger zaczyna się od program standardowy uruchamianie języka Pyth
 | **Ścieżki wyszukiwania** | Te wartości zgodne, co jest wyświetlany w projekcie **ścieżki wyszukiwania** w węźle **Eksploratora rozwiązań**. Można zmodyfikować tę wartość w tym miejscu, ale jest łatwiej można użyć **Eksploratora rozwiązań** który pozwala na przeglądanie folderów i automatycznie konwertuje ścieżki względnej formularza. |
 | **Argumenty skryptu** | Te argumenty zostaną dodane do polecenia używane do uruchomienia skryptu, pojawiające się po nazwę pliku skryptu. Pierwszy element w tym miejscu jest dostępne do skryptu jako `sys.argv[1]`, drugi jako `sys.argv[2]`i tak dalej. |
 | **Interpreter argumentów** | Te argumenty zostaną dodane do wiersza polecenia uruchamiania przed nazwą skryptu. Są często używanych argumentów tutaj `-W ...` z ostrzeżeniami kontroli, `-O` nieco zoptymalizować program, i `-u` używać Niebuforowane we/wy. Użytkownicy języka IronPython prawdopodobnie to pole służy do przekazywania `-X` opcji, taką jak `-X:Frames` lub `-X:MTA`. |
-| **Interpreter Path** | Zastępuje ścieżkę skojarzoną z bieżącego środowiska. Wartość może być przydatne w przypadku uruchamiania skryptu za pomocą niestandardowych interpretera. |
+| **Cesta k Interpretu** | Zastępuje ścieżkę skojarzoną z bieżącego środowiska. Wartość może być przydatne w przypadku uruchamiania skryptu za pomocą niestandardowych interpretera. |
 | **Zmienne środowiskowe** | W tym wielowierszowego pola tekstowego, Dodaj wpisy w postaci \<NAME > =\<wartość >. Ponieważ to ustawienie zostanie zastosowane ostatnie, u góry, wszelkie istniejące zmienne środowiskowe globalnego i po `PYTHONPATH` jest ustawiona zgodnie z **ścieżki wyszukiwania** ustawienie, może służyć do ręcznie przezwyciężyć żadnego z tych innych zmiennych. |
 
 ## <a name="immediate-and-interactive-windows"></a>Bezpośrednie i interakcyjne systemu windows

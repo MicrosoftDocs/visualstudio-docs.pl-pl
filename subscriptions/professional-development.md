@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Profesjonalne rozwiązania programistyczne korzyści uwzględniony w subskrypcjach programu Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018366"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Korzyści profesjonalne rozwiązania programistyczne, które są dostępne w ramach subskrypcji programu Visual Studio

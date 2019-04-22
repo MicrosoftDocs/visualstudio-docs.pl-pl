@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366786"
 ---
-# <a name="string-visualizer-dialog-box"></a>Okno dialogowe Wizualizator ciągu
+# <a name="string-visualizer-dialog-box"></a>String Visualizer — okno dialogowe
 
 Podczas debugowania w programie Visual Studio, można wyświetlić ciągów za pomocą wizualizatora wbudowanych ciągu. Wizualizator ciągu zawiera ciągi, które są zbyt długie okna porady lub debugera danych. Również może pomóc zidentyfikować ciągi źle sformułowane.
 

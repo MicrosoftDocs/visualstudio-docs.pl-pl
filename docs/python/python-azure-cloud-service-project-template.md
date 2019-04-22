@@ -12,10 +12,10 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366539"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
@@ -97,7 +97,7 @@ Jeśli po wdrożeniu Twojej roli sieci web lub proces roboczy nie działają pra
 
   - *ConfigureCloudService.ps1*
   - *Skryptu LaunchWorker.ps1* (dla ról procesów roboczych)
-  - *ps.cmd*
+  - *PS.cmd*
 
 - Obejmuje projektu języka Python *requirements.txt* plików, wyświetlanie listy wszystkich zależności (lub też Kolekcja plików kółka).
 - Włączanie pulpitu zdalnego w usłudze w chmurze i sprawdź pliki dziennika.

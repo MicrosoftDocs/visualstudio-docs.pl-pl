@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232499"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Unikaj kodu trudnego w utrzymaniu
@@ -50,5 +50,5 @@ Można pominąć to ostrzeżenie, gdy typie lub metodzie nie można podzielić l
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ostrzeżenia dotyczące dostępności](../code-quality/maintainability-warnings.md)
+- [Utrzymanie — ostrzeżenia](../code-quality/maintainability-warnings.md)
 - [Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/code-metrics-values.md)

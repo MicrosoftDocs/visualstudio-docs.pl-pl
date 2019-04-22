@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366569"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
@@ -266,8 +266,8 @@ Aby poprawić środowisko, która nie ma opcji naprawy lub usunąć nieprawidło
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instalowanie interpreterów języka Python](installing-python-interpreters.md)
-- [Wybieranie interpretera dla projektu](selecting-a-python-environment-for-a-project.md)
+- [Zainstaluj interpretery języka Python](installing-python-interpreters.md)
+- [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)
 - [Użyj pliku requirements.txt dla zależności](managing-required-packages-with-requirements-txt.md)
 - [Ścieżki wyszukiwania](search-paths.md)
 - [Dokumentacja okna środowiska Python](python-environments-window-tab-reference.md)

@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Więcej informacji na temat korzyści RStudio Desktop uwzględniony w subskrypcjach programu Visual Studio Enterprise
 searchscope: VS Subscription
 ms.openlocfilehash: 5bd24bd07254c1173f7590111c27fdcc68206d2a
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018889"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Korzyść RStudio Desktop uwzględniony w subskrypcjach programu Visual Studio Enterprise
@@ -56,7 +56,7 @@ Program RStudio jest dostępna w wersjach handlowych i typu open source i dział
 8. Po wprowadzeniu zamówienia, możesz przejść do instalacji programu RStudio.  Postępuj zgodnie z poleceniami kreatora, aby ukończyć instalację. 
 
     > [!div class="mx-imgBorder"]
-    > ![Instalator programu RStudio](_img/vs-rstudio/vs-rstudio-installer.png) 
+    > ![RStudio Installer](_img/vs-rstudio/vs-rstudio-installer.png) 
 
     > [!NOTE]
     > Musi mieć prawidłowej instalacji języka r na komputerze, aby uruchomić program RStudio.  Jeśli nie masz języka R jest zainstalowany, otrzymasz błąd następującego komunikatu.  Kliknij przycisk **tak** pobrać języka R z oficjalnej witrynie Projekt R lub pobrać i zainstalować języka R z innego źródła, przed rozpoczęciem korzystania z programu RStudio.  
@@ -98,7 +98,7 @@ Program RStudio jest dostępna w wersjach handlowych i typu open source i dział
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) |       Azure       | Niedostępne |       Nie dotyczy       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
 
-<sup>1</sup>*NFR obejmuje:    Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
+<sup>1</sup>*NFR obejmuje:  Nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, najbardziej wartościowych Professional (MVP) dyrektorem regionalnym w firmie (usług pulpitu zdalnego), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Wyobraź sobie.*
 
 > [!NOTE]
 > Microsoft nie oferuje już program Visual Studio Professional rocznych subskrypcji i programu Visual Studio Enterprise rocznej subskrypcji w subskrypcje w chmurze. Będzie bez zmian do istniejących klientów obsługa produktu próbnego oraz możliwość odnowienia, zwiększyć, zmniejszyć lub anulować ich subskrypcje. Zachęcamy klientów, nowy, aby przejść do [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Aby zapoznać się z różnych opcji zakupu subskrypcji programu Visual Studio.

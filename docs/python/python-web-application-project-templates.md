@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366591"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
@@ -43,7 +43,7 @@ Wszystkie **puste \<framework > Projekt sieci Web** szablony tworzenia projektu 
 | --- | --- |
 | **Projekt sieci Web Bottle puste** | Generuje minimalną aplikację w *app.py* ze stroną główną dla `/` i `/hello/<name>` strona, która zwraca `<name>` przy użyciu szablonu stronę wbudowanych bardzo krótki. |
 | **Projekt puste Django sieci Web** | Generuje projekt Django przy użyciu struktury lokacji Django core, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Blank Flask Web Project** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupa aplikacji sieci Web
 
@@ -53,7 +53,7 @@ Wszystkie  **\<Framework > Projekt sieci Web** szablony utworzyć początkową a
 | --- | --- |
 | **Projekt sieci Web Bottle** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folder i obsłużony przez kod w *app.py*. Routing dla poszczególnych stron znajduje się w *routes.py*i *widoków* folder zawiera szablony stron.|
 | **Projekt sieci Web Django** | Generuje projekt Django i aplikacji Django przy użyciu trzech stron, obsługę uwierzytelniania i bazy danych SQLite (ale nie modeli danych). Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| **Flask Web Project** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folderu. Możesz pisać kod w *views.py* obsługuje routing za pomocą szablonów stron przy użyciu aparatu Jinja zawarte w *szablony* folderu. *Runserver.py* plik zawiera kod startowy. Zobacz [Dowiedz się, Flask kroku 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| **Projekt sieci Web Flask** | Generuje aplikację, w których pliki statyczne są zawarte w *statyczne* folderu. Możesz pisać kod w *views.py* obsługuje routing za pomocą szablonów stron przy użyciu aparatu Jinja zawarte w *szablony* folderu. *Runserver.py* plik zawiera kod startowy. Zobacz [Dowiedz się, Flask kroku 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
 | **Projekt sieci Web Flask/Jade** | Generuje przy użyciu tej samej aplikacji jako **projektu sieci Web Flask** szablon, ale przy użyciu rozszerzenia Jade dla Jinja aparatu tworzenia szablonów. |
 
 ### <a name="polls-group"></a>Grupa sond
@@ -113,7 +113,7 @@ Jakakolwiek zmienna środowisku lub właściwości projektu można określić pr
 
 - **Debugowanie polecenia serwera** grupy:
   - **Polecenie**: `bottle` (moduł)
-  - **Argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Opcja nie jest zalecana w przypadku korzystania z programu Visual Studio do debugowania.
 
