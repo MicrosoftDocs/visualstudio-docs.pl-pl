@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110469"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Instrukcje: Ustawianie strefy zabezpieczeń dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Podczas ustawiania dostępu kodu uprawnień zabezpieczeń dla aplikacji ClickOnc
   
 ### <a name="to-set-a-security-zone"></a>Aby ustawienie strefy zabezpieczeń  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** kliknij menu **właściwości**.  
   
-2.  Kliknij przycisk **zabezpieczeń** kartę.  
+2. Kliknij przycisk **zabezpieczeń** kartę.  
   
-3.  Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
+3. Wybierz **włączenia ustawień zabezpieczeń technologii ClickOnce** pole wyboru.  
   
-4.  Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
+4. Wybierz **to częściowo zaufanych aplikacji** przycisku opcji.  
   
      Formanty w **uprawnienia zabezpieczeń aplikacji ClickOnce** sekcji są włączone.  
   
-5.  W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.  
+5. W **strefy, aplikacja zostanie zainstalowana z** listy rozwijanej wybierz strefę zabezpieczeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Ustawienie uprawnień niestandardowych dla aplikacji ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

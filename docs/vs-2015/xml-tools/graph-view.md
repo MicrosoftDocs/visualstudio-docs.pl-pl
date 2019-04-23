@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110547"
 ---
 # <a name="graph-view"></a>Widok wykresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
 ## <a name="undoredo"></a>Cofnij/Ponów.  
  Możliwość Cofnij/Ponów jest włączona w widoku wykresu następujące akcje:  
   
--   Dodanie jednego węzła przez przeciąganie i upuszczanie.  
+- Dodanie jednego węzła przez przeciąganie i upuszczanie.  
   
--   Dodawanie wielu węzłów w oknie wyników wyszukiwania zapytań Eksploratora schematu lub uruchomić widoku.  
+- Dodawanie wielu węzłów w oknie wyników wyszukiwania zapytań Eksploratora schematu lub uruchomić widoku.  
   
--   Usunięcie jednego lub wielu węzłów.  
+- Usunięcie jednego lub wielu węzłów.  
   
 ## <a name="zoom"></a>Powiększenie  
  Powiększenie jest dostępna w prawym dolnym rogu widoku wykresu.  

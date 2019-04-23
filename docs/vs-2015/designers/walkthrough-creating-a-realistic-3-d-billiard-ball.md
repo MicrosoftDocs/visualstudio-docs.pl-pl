@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110599"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Przewodnik: Tworzenie realistycznej kuli Bilardowej w 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
  Ten dokument przedstawia te działania:  
   
--   Tworzenie wyglądu podstawowego kuli bilardowej za pomocą kształtu i tekstury.  
+- Tworzenie wyglądu podstawowego kuli bilardowej za pomocą kształtu i tekstury.  
   
--   Dodawanie głębi przy użyciu modelu oświetlenia Lamberta.  
+- Dodawanie głębi przy użyciu modelu oświetlenia Lamberta.  
   
--   Poprawa wyglądu podstawowego przy użyciu światła odbitego wyróżnia.  
+- Poprawa wyglądu podstawowego przy użyciu światła odbitego wyróżnia.  
   
--   Tworzenie poczucie przestrzeni przez odzwierciedlenie otoczenia.  
+- Tworzenie poczucie przestrzeni przez odzwierciedlenie otoczenia.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki i umiejętności w celu przeprowadzenia tego instruktażu:  
   
--   Narzędzie do składania tekstur w mapę modułu, takie jak narzędzia DirectX Texture, który znajduje się w czerwca 2010 zestawu SDK programu DirectX.  
+- Narzędzie do składania tekstur w mapę modułu, takie jak narzędzia DirectX Texture, który znajduje się w czerwca 2010 zestawu SDK programu DirectX.  
   
--   Znajomość edytora obrazów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Znajomość edytora obrazów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Znajomość Shader Designer w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Znajomość Shader Designer w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Tworzenie podstawowego wyglądu za pomocą kształtu i tekstury  
  W grafice komputerowej najbardziej podstawowymi elementami wyglądu są kształt i kolor. W symulacji komputerowej jest często używa modelu 3-D do reprezentowania kształtu obiektu rzeczywistych. Szczegóły koloru jest następnie stosowane do powierzchni modelu za pomocą mapy tekstury.  

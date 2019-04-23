@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108716"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Widok rywalizacji o zasoby — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Widok rywalizacji o zasoby zawiera dane kontencji zasobów, które były źród�
 ### <a name="function-values"></a>Wartości funkcji  
  Wartości funkcji są oparte na wystąpieniach funkcji, które wystąpiły w ścieżce wykonywania reprezentowany w drzewie wywołań.  
   
--   Wyłączne wartości są oparte na zdarzeniach, które wystąpiły podczas wykonywania instrukcji funkcji w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględnione w wartości wyłączności.  
+- Wyłączne wartości są oparte na zdarzeniach, które wystąpiły podczas wykonywania instrukcji funkcji w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględnione w wartości wyłączności.  
   
--   Wartości włączne opierają się na zdarzenia, które wystąpiły podczas wykonywania funkcji i funkcji wywoływanych przez funkcję.  
+- Wartości włączne opierają się na zdarzenia, które wystąpiły podczas wykonywania funkcji i funkcji wywoływanych przez funkcję.  
   
 ### <a name="percentage-values"></a>Wartości procentowe  
  Wartości procentowe są oparte na całkowita liczba zdarzeń w czasie lub rywalizacji o zasoby w danych profilowania. Jeśli zastosowano filtr raportu lub widoku uruchomienia profilowania, tylko czas blokowania i rywalizacji w odfiltrowane dane są używane jako wartość całkowita.  

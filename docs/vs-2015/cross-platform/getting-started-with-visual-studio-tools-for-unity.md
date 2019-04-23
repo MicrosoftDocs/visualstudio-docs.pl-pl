@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105035"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Wprowadzenie do narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,30 +27,30 @@ W tej sekcji dowiesz się, jak zainstalować program Visual Studio Tools for Uni
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby użyć Visual Studio Tools for Unity, będą potrzebne:  
   
--   Wersja **programu Visual Studio** obsługujący rozszerzenia, takie jak Visual Studio Community, Professional, Premium lub Enterprise. Program Visual Studio Community można pobrać za darmo.  
+- Wersja **programu Visual Studio** obsługujący rozszerzenia, takie jak Visual Studio Community, Professional, Premium lub Enterprise. Program Visual Studio Community można pobrać za darmo.  
   
      [Pobierz program Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** wersji 4.0.0 lub wyższy. **Unity** wersji 5.2.0 lub nowszej, aby skorzystać z wbudowanej obsługi narzędzi Visual Studio Tools for Unity w wersji 2.1 lub wyższej.  
+- **Unity** wersji 4.0.0 lub wyższy. **Unity** wersji 5.2.0 lub nowszej, aby skorzystać z wbudowanej obsługi narzędzi Visual Studio Tools for Unity w wersji 2.1 lub wyższej.  
   
      [Pobierz oprogramowanie Unity](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Instalowanie narzędzia Visual Studio Tools for Unity  
  Pobierz i zainstaluj program Visual Studio Tools for Unity z galerii Visual Studio. Musisz zainstalować odpowiedni pakiet dla używanej wersji programu Visual Studio. Upewnij się zainstalować Visual Studio Tools for Unity w wersji 2.1 lub nowszej móc korzystać z wbudowaną obsługą VSTU w Unity 5.2 lub nowszej.  
   
--   For Visual Studio 2015 Community, Visual Studio 2015 Professional, or Visual Studio 2015 Enterprise:  
+- For Visual Studio 2015 Community, Visual Studio 2015 Professional, or Visual Studio 2015 Enterprise:  
   
      [Pobierz program Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
+- For Visual Studio 2013 Community, Visual Studio 2013 Professional, or Visual Studio 2013 Premium:  
   
      [Pobierz program Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   For Visual Studio 2012 Professional or Visual Studio 2012 Premium:  
+- For Visual Studio 2012 Professional or Visual Studio 2012 Premium:  
   
      [Pobierz program Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   For Visual Studio 2010 Professional or Visual Studio 2010 Premium:  
+- For Visual Studio 2010 Professional or Visual Studio 2010 Premium:  
   
      [Pobierz program Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   

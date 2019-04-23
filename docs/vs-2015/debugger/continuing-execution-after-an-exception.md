@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105477"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Kontynuowanie wykonania po wyjątkach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Kiedy debuger przerywa wykonywanie z powodu wyjątku, pojawi się okno dialogowe
 ## <a name="native-code"></a>Kod natywny  
  W natywnym kodzie języka C/C++ masz dwie opcje:  
   
--   Możesz kliknąć pozycję **Przerwij** i spróbować naprawić problem. Gdy jesteś w trybie przerwania możesz Odwiń stos wywołań, klikając prawym przyciskiem myszy ramkę w **stos wywołań** okna i wybierając polecenie **Unwind do tej ramki** w menu skrótów. Jeśli będziesz kontynuować debugować, **wyjątek** okno dialogowe pojawi się ponownie, jeśli problem nie został rozwiązany. W przeciwnym razie **wyjątek** nie pojawi się okno dialogowe.  
+- Możesz kliknąć pozycję **Przerwij** i spróbować naprawić problem. Gdy jesteś w trybie przerwania możesz Odwiń stos wywołań, klikając prawym przyciskiem myszy ramkę w **stos wywołań** okna i wybierając polecenie **Unwind do tej ramki** w menu skrótów. Jeśli będziesz kontynuować debugować, **wyjątek** okno dialogowe pojawi się ponownie, jeśli problem nie został rozwiązany. W przeciwnym razie **wyjątek** nie pojawi się okno dialogowe.  
   
--   Możesz kliknąć pozycję **Kontynuuj** do kontynuowania wykonywania bez próby rozwiązać ten problem. **Wyjątek** pojawi się okno dialogowe.  
+- Możesz kliknąć pozycję **Kontynuuj** do kontynuowania wykonywania bez próby rozwiązać ten problem. **Wyjątek** pojawi się okno dialogowe.  
   
 ## <a name="mixed-code"></a>Kod mieszany  
  Jeśli napotkasz nieobsługiwany wyjątek podczas debugowania mieszane kodu natywnego i zarządzanego, ograniczenia systemu operacyjnego uniemożliwiają odwijanie stosu wywołań. Jeśli spróbujesz przewijanie stosu wywołań, za pomocą menu skrótów, komunikat o błędzie wyjaśniono, że debuger nie może wykonać odwinięcia z nieobsługiwanego z wyjątkiem podczas debugowania kodu mieszanego.  

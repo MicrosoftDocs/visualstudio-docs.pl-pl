@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107869"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizowanie kształtów i łączników, aby odzwierciedlały model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Ustaw właściwości mapowanie kształtów w celu kontrolowania widoczności elementu decorator  
  Można kontrolować widoczność dekoratora, bez konieczności pisania kodu programu, konfigurując mapowanie między kształtem i klasy domeny w definicji DSL. Więcej informacji znajduje się w następujących tematach:  
   
--   [Instrukcje: Kontrolowanie widoczności elementu Decorator — przekierowanie](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Instrukcje: Kontrolowanie widoczności elementu Decorator — przekierowanie](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Uwidacznianie kolor i Styl kształtu jako właściwości  
  W definicji DSL, kliknij prawym przyciskiem myszy kształt klasy, wskaż opcję **Dodaj udostępniane**, a następnie kliknij przycisk jednego z elementów takich jak **kolor wypełnienia**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Ta metoda może służyć zarówno dla właściwości domeny i funkcje-store, takie jak rozmiar kształtu.  
   
-##  <a name="OnAssociatedProperty"></a> Użyj AssociateValueWith(), aby zaktualizować inne funkcje kształtu  
+## <a name="OnAssociatedProperty"></a> Użyj AssociateValueWith(), aby zaktualizować inne funkcje kształtu  
  W przypadku niektórych funkcji kształtu, takie jak czy ma cień lub Styl strzałki łącznika nie istnieje metoda wbudowanych ujawnienia funkcji jako właściwość domeny.  Zmiany tych funkcji nie są pod kontrolą systemu transakcji. W związku z tym, nie jest właściwe je zaktualizować przy użyciu reguł, ponieważ zasady nie są wywoływane, gdy użytkownik wykonuje polecenie Undo.  
   
  Zamiast tego można zaktualizować takich funkcji przy użyciu <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. W poniższym przykładzie Styl strzałki łącznika jest kontrolowany za pomocą wartości właściwości domeny w relacji, która wyświetla łącznika:  

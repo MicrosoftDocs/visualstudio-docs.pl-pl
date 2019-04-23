@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105432"
 ---
 # <a name="cores-view-zoom-tool"></a>Narzędzie do powiększania widoku rdzeni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Kontrolka powiększenia jest suwaka, w którym można powiększać i pomniejsza�
   
 ## <a name="other-ways-to-zoom"></a>Inne sposoby, aby powiększyć  
   
--   Powiększanie: Przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widok osi czasu powiększa wybranego zakresu.  
+- Powiększanie: Przeciągnij, aby wybrać obszar w widoku osi czasu. Po zwolnieniu przycisku myszy widok osi czasu powiększa wybranego zakresu.  
   
--   Powiększanie i zmniejszanie: Umieść kursor nad osi czasu, a następnie naciśnij klawisz CTRL, gdy przeniesiesz kółka myszy.  
+- Powiększanie i zmniejszanie: Umieść kursor nad osi czasu, a następnie naciśnij klawisz CTRL, gdy przeniesiesz kółka myszy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok rdzeni](../profiling/cores-view.md)

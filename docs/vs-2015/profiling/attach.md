@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2aa44ee0d7d4a1b9965e653ac089c4c5dd78821b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108558"
 ---
 # <a name="attach"></a>Dołącz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong> Zdarzenia]**licznika**[**:**`Name`,`Reload`,`FriendlyName`]  
  Określa numer i typ używanego interwału próbkowania.  
   
--   **Czasomierz** — przykłady co `Cycles` cykli zegara procesora. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  
+- **Czasomierz** — przykłady co `Cycles` cykli zegara procesora. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  
   
--   **PF** — przykłady co `Events` błędów stron. Jeśli `Events` nie zostanie określony, 10 błędów strony są używane.  
+- **PF** — przykłady co `Events` błędów stron. Jeśli `Events` nie zostanie określony, 10 błędów strony są używane.  
   
--   **Sys** — przykłady co `Events` wywołania systemu operacyjnego. Jeśli `Events` nie zostanie określony, 10 wywołań systemowych są używane.  
+- **Sys** — przykłady co `Events` wywołania systemu operacyjnego. Jeśli `Events` nie zostanie określony, 10 wywołań systemowych są używane.  
   
--   **Licznik** — przykłady co `Reload` liczba wydajność procesora CPU, licznik określonej przez `Name`. Opcjonalnie `FriendlyName` można określić ciąg do użycia jako nagłówek kolumny w raportach profilera.  
+- **Licznik** — przykłady co `Reload` liczba wydajność procesora CPU, licznik określonej przez `Name`. Opcjonalnie `FriendlyName` można określić ciąg do użycia jako nagłówek kolumny w raportach profilera.  
   
 ## <a name="example"></a>Przykład  
  W tym przykładzie pokazano, jak można dołączyć do uruchomionego wystąpienia aplikacji z Identyfikatorem procesu 12345.  

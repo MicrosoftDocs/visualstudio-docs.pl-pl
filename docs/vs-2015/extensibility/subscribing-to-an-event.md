@@ -11,12 +11,12 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec19e71685fc2a866f23d5050861e5733ef6cb39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 324e74c78f01da47c544b5f640ad0bd9052a1bb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107648"
 ---
 # <a name="subscribing-to-an-event"></a>Subskrybowanie zdarzenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ W tym przewodniku opisano sposób tworzenia okna narzędzi, które reaguje na zd
   
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Aby utworzyć rozszerzenie za pomocą okna narzędzi  
   
-1.  Utwórz projekt o nazwie **RDTExplorer** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **RDTExplorerWindow**.  
+1. Utwórz projekt o nazwie **RDTExplorer** przy użyciu szablonu VSIX, a następnie dodaj niestandardowe narzędzie szablon elementu okno o nazwie **RDTExplorerWindow**.  
   
      Aby uzyskać więcej informacji na temat tworzenia rozszerzenia za pomocą okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 #### <a name="to-subscribe-to-rdt-events"></a>Aby subskrybować zdarzenia Normalizacją  
   
-1.  Otwórz plik RDTExplorerWindowControl.xaml i usuń przycisk o nazwie `button1`. Dodaj <xref:System.Windows.Forms.ListBox> kontroli i zaakceptuj nazwę domyślną. Element siatki powinien wyglądać następująco:  
+1. Otwórz plik RDTExplorerWindowControl.xaml i usuń przycisk o nazwie `button1`. Dodaj <xref:System.Windows.Forms.ListBox> kontroli i zaakceptuj nazwę domyślną. Element siatki powinien wyglądać następująco:  
   
     ```xml  
     <Grid>  
@@ -47,7 +47,7 @@ W tym przewodniku opisano sposób tworzenia okna narzędzi, które reaguje na zd
     </Grid>  
     ```  
   
-2.  Otwórz plik RDTExplorerWindow.cs w widoku kodu. Dodaj następujące instrukcje using na początku pliku.  
+2. Otwórz plik RDTExplorerWindow.cs w widoku kodu. Dodaj następujące instrukcje using na początku pliku.  
   
     ```csharp  
     using Microsoft.VisualStudio;  
@@ -55,24 +55,24 @@ W tym przewodniku opisano sposób tworzenia okna narzędzi, które reaguje na zd
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Modyfikowanie `RDTExplorerWindow` klasy, tak że oprócz pochodząca od <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> implementuje klasa, <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interfejsu.  
+3. Modyfikowanie `RDTExplorerWindow` klasy, tak że oprócz pochodząca od <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> implementuje klasa, <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interfejsu.  
   
     ```csharp  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
+4. Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
   
-    -   Implementowanie interfejsu. Umieść kursor na nazwie IVsRunningDocTableEvents. Powinien zostać wyświetlony żarówek na lewym marginesie. Kliknij strzałkę po prawej stronie żarówki, a następnie wybierz pozycję **implementuj interfejs**.  
+    - Implementowanie interfejsu. Umieść kursor na nazwie IVsRunningDocTableEvents. Powinien zostać wyświetlony żarówek na lewym marginesie. Kliknij strzałkę po prawej stronie żarówki, a następnie wybierz pozycję **implementuj interfejs**.  
   
-5.  W każdej metody w interfejsie, Zastąp wiersz `throw new NotImplementedException();` w tym:  
+5. W każdej metody w interfejsie, Zastąp wiersz `throw new NotImplementedException();` w tym:  
   
     ```csharp  
     return VSConstants.S_OK;  
     ```  
   
-6.  Dodaj pole pliku cookie do klasy RDTExplorerWindow.  
+6. Dodaj pole pliku cookie do klasy RDTExplorerWindow.  
   
     ```csharp  
     private uint rdtCookie;   
@@ -80,7 +80,7 @@ W tym przewodniku opisano sposób tworzenia okna narzędzi, które reaguje na zd
   
      Przechowuje ten plik cookie, który jest zwracany przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> metody.  
   
-7.  Zastąpienie metody Initialize() RDTExplorerWindow dla Normalizacją zdarzeń. Należy zawsze uzyskać usług w przypadku metody Initialize() obiektu ToolWindowPane nie znajduje się w konstruktorze.  
+7. Zastąpienie metody Initialize() RDTExplorerWindow dla Normalizacją zdarzeń. Należy zawsze uzyskać usług w przypadku metody Initialize() obiektu ToolWindowPane nie znajduje się w konstruktorze.  
   
     ```csharp  
     protected override void Initialize()  
@@ -93,7 +93,7 @@ W tym przewodniku opisano sposób tworzenia okna narzędzi, które reaguje na zd
   
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Usługi jest wywoływana w celu uzyskania <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> interfejsu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Metoda łączy Normalizacją zdarzenia do obiektu, który implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, w tym przypadku obiekt RDTExplorer.  
   
-8.  Zaktualizuj metodę Dispose() RDTExplorerWindow.  
+8. Zaktualizuj metodę Dispose() RDTExplorerWindow.  
   
     ```csharp  
     protected override void Dispose(bool disposing)  

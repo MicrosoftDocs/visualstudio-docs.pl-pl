@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107588"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Znajdowanie tematów przy użyciu indeksu w Podglądzie pomocy
 
@@ -30,14 +30,14 @@ Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zain
 
 Na **indeksu** karcie, wykonaj jedną z następujących czynności:
 
--   Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".
+- Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".
 
     Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.
 
     > [!NOTE]
     > Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą _zawierają_ tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy muszą _rozpoczynać_ tekst, który określisz.
 
--   Przewiń do indeksu, a następnie wybierz słowem kluczowym.
+- Przewiń do indeksu, a następnie wybierz słowem kluczowym.
 
     Jeśli słowo kluczowe, które określisz jest skojarzony z tylko jednego tematu, wygląda na to. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów, które są skojarzone z tym słowem kluczowym.
 
@@ -47,33 +47,33 @@ Korzystanie z indeksu jest procesem proste; Jednakże zrozumieć, jak najlepiej 
 
 ### <a name="general-guidelines"></a>Ogólne wskazówki
 
--   Przewiń wpisów indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób i taki, który najbardziej może ułatwiać mogą być wyższe lub niższe na liście, niż oczekiwano.
+- Przewiń wpisów indeksu. Nie wszystkie tematy są indeksowane w taki sam sposób i taki, który najbardziej może ułatwiać mogą być wyższe lub niższe na liście, niż oczekiwano.
 
--   Pomiń artykułów, takich jak "" lub "", ponieważ indeks je ignoruje.
+- Pomiń artykułów, takich jak "" lub "", ponieważ indeks je ignoruje.
 
--   Odwróć wyrazy, które wprowadzisz, jeśli nie zostanie znaleziony wpisy, których oczekujesz.
+- Odwróć wyrazy, które wprowadzisz, jeśli nie zostanie znaleziony wpisy, których oczekujesz.
 
     Spróbuj na przykład jeśli "Debugowanie kodu zestawu wbudowanego" nie mają żadnych odpowiednimi wpisami, wpisując "kodu zestawu wbudowanego debugowanie".
 
--   Użyj filtrów z **indeksu** kartę, aby zmniejszyć liczbę wyników.
+- Użyj filtrów z **indeksu** kartę, aby zmniejszyć liczbę wyników.
 
 ### <a name="syntax-tips"></a>Porady dotyczące składni
 
 Jeśli nie znajdziesz wpis dla wyrazu lub frazy, które zostały wprowadzone, spróbuj wykonać następujące czynności:
 
--   Wpisz kilka pierwszych liter, lub główny wyrazu. Przystępując do częściowego ciągu, możesz uzyskać do tematów, które zostały zaindeksowane ze słowami kluczowymi, które są liczby pojedynczej lub mnogiej.
+- Wpisz kilka pierwszych liter, lub główny wyrazu. Przystępując do częściowego ciągu, możesz uzyskać do tematów, które zostały zaindeksowane ze słowami kluczowymi, które są liczby pojedynczej lub mnogiej.
 
     Na przykład wprowadź "właściwości", aby rozpocząć wyszukiwanie powyżej właściwości i właściwości.
 
--   Wprowadź gerund (-ing) formy czasownika dla zadania, aby wykonać. Aby uzyskać bardziej szczegółowe wpisów indeksu, Dołącz słowo opisujące dokładnie chcesz.
+- Wprowadź gerund (-ing) formy czasownika dla zadania, aby wykonać. Aby uzyskać bardziej szczegółowe wpisów indeksu, Dołącz słowo opisujące dokładnie chcesz.
 
     Na przykład, wpisz "uruchomiona", aby uzyskać więcej wpisów lub "Uruchamianie programów" Aby uzyskać mniej.
 
--   Wprowadź określeniem autonomicznych. Aby zawęzić wyniki, należy dołączyć słowo opisujące dokładnie ma.
+- Wprowadź określeniem autonomicznych. Aby zawęzić wyniki, należy dołączyć słowo opisujące dokładnie ma.
 
     Na przykład, wprowadź "COM +" Aby uzyskać szeroką gamę wpisy lub "składników modelu COM +" Aby uzyskać mniej.
 
--   Wprowadź synonim programu word lub zlecenie, którego szukasz.
+- Wprowadź synonim programu word lub zlecenie, którego szukasz.
 
     Spróbuj na przykład jeśli wprowadzono pojęcie "Tworzenie", "Tworzenie" zamiast niego.
 

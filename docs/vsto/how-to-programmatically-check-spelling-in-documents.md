@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cbb02ef8d1032a77cccd045401d9e3387f48a963
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26eb7e0798fbcf6aad33dd45892a23fb0d54b812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110092"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Instrukcje: Programowe sprawdzanie pisowni w dokumentach
   Aby sprawdzić pisownię w dokumencie, należy użyć <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> metody. Ta metoda zwraca wartość logiczną, wskazującą, czy podany parametr została wpisana poprawnie.
@@ -27,7 +27,7 @@ ms.locfileid: "56621100"
 
 ## <a name="to-check-spelling-and-display-results-in-a-message-box"></a>Sprawdź pisownię i wyświetlić wyniki w oknie komunikatu
 
-1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> metody i przekazać go zakres tekstu pod kątem błędów pisowni. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
+1. Wywołaj <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> metody i przekazać go zakres tekstu pod kątem błędów pisowni. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.
 
      [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
      [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]

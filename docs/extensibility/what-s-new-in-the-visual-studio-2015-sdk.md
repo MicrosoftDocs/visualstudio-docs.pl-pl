@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105093"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s nowego w programie Visual Studio 2015 SDK
 Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual Studio 2015, Visual Studio 2015, aktualizowane i programu Visual Studio 2017.
@@ -23,9 +23,9 @@ Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual
 
  Te tematy znajdują się pod [narzędzia VSSDK](../extensibility/internals/vssdk-utilities.md) sekcji:
 
--   [Narzędzia do tworzenia motywów kolorów](../extensibility/internals/color-theming-tools.md) ułatwiają tworzenie i edytowanie niestandardowych kolorów dla programu Visual Studio.
+- [Narzędzia do tworzenia motywów kolorów](../extensibility/internals/color-theming-tools.md) ułatwiają tworzenie i edytowanie niestandardowych kolorów dla programu Visual Studio.
 
--   [Narzędzia usługi obrazów](../extensibility/internals/image-service-tools.md) pozwalają pracować plików manifestu obrazu programu Visual Studio.
+- [Narzędzia usługi obrazów](../extensibility/internals/image-service-tools.md) pozwalają pracować plików manifestu obrazu programu Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nowy sposób dodawania zestawu SDK programu Visual Studio do programu Visual Studio
  Począwszy od programu Visual Studio 2015, nie trzeba pobrać program Visual Studio SDK osobno. Zamiast tego można zainstalować go jako część procesu normalnej instalacji lub użytkownik może zainstalować ją później. Po otwarciu lub utworzyć rozwiązania VSIX programu Visual Studio zapyta, aby zainstalować narzędzia rozszerzalności programu Visual Studio. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual
 ### <a name="visual-c-and-visual-basic"></a>Visual C# i Visual Basic
  W języku C# i Visual Basic istnieje wiele różnych szablonów elementów projektów, które umożliwiają tworzenie pakietów VSPackage, polecenia menu, okien narzędzi, Edytor klasyfikatorów, zakończeń edytora i rozszerzenia marginesu edytora. Standardowy projekt VSIX, można dodać wybranych lub wszystkich tych szablonów. Aby uzyskać więcej informacji, zobacz:
 
--   [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Tworzenie rozszerzenia za pomocą okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      Kreator pakietu VSPackage nie tworzy już rozszerzenia w języku C# lub Visual Basic.
 

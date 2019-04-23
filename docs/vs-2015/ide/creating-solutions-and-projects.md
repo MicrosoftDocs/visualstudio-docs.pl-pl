@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109819"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania apl
 ## <a name="adding-single-files-at-the-solution-level"></a>Dodawanie pojedynczych plików na poziomie rozwiązania  
  Czasami może być plikiem wiele projektów, odwołując się do lub zawierający tekst lub inne dane, które logicznie należą na poziomie rozwiązania, a nie w ramach określonego projektu.  Aby dodać pojedynczego elementu rozwiązania:  
   
-1.  Kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj &#124; nowy element** lub **Dodaj &#124; istniejący element**.  
+1. Kliknij prawym przyciskiem myszy węzeł rozwiązania w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj &#124; nowy element** lub **Dodaj &#124; istniejący element**.  
   
 ## <a name="creating-empty-solutions"></a>Tworzenie pustego rozwiązań  
  Chociaż projektu musi znajdować się w rozwiązaniu, można utworzyć rozwiązanie, które ma żadne projekty.  
@@ -87,11 +87,11 @@ Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania apl
   
 ##### <a name="to-delete-a-solution"></a>Aby usunąć rozwiązanie  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie do usunięcia i wybierz **Otwórz folder w Eksploratorze plików**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie do usunięcia i wybierz **Otwórz folder w Eksploratorze plików**.  
   
-2.  W Eksploratorze plików Przejdź jeden poziom w górę.  
+2. W Eksploratorze plików Przejdź jeden poziom w górę.  
   
-3.  Wybierz katalog, zawierająca dane rozwiązanie, a następnie naciśnij klawisz Delete.  
+3. Wybierz katalog, zawierająca dane rozwiązanie, a następnie naciśnij klawisz Delete.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)   

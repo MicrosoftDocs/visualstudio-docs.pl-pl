@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104073"
 ---
 # <a name="expose-types-to-visual-designers"></a>Udostępnianie typów projektantów wizualnych
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć dostęp do definicje klas i typów w czasie projektowania w celu wyświetlenia projektanta wizualnego. Klas są ładowane z wstępnie zdefiniowany zbiór zestawów, zawierające zestaw zależności pełny bieżący projekt (odwołania oraz ich zależności). Może być również konieczne dla projektantów wizualnych dostępu klas i typów, które są zdefiniowane w plikach wygenerowanych przez narzędzia niestandardowe.
@@ -31,15 +31,15 @@ ms.locfileid: "56629693"
 
  Narzędzia niestandardowe łączące korzystając z tymczasowego obsługi PE, należy wykonać następujące reguły:
 
--   **GeneratesDesignTimeSource** musi być równa 1 w rejestrze.
+- **GeneratesDesignTimeSource** musi być równa 1 w rejestrze.
 
      Nie kompilacji pliku wykonywalnego programu odbywa się bez tego ustawienia.
 
--   Wygenerowany kod musi być w tym samym języku co ustawienie globalne projektu.
+- Wygenerowany kod musi być w tym samym języku co ustawienie globalne projektu.
 
      Tymczasowych jest kompilowany niezależnie od tego, narzędzie niestandardowe raporty jako żądane rozszerzenie w <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> pod warunkiem, że **GeneratesDesignTimeSource** jest ustawiona na 1 w rejestrze. Rozszerzenie musi być *.vb*, *.cs*, lub *.jsl*; może być dowolnym rozszerzeniem.
 
--   Kod wygenerowany przez niestandardowe narzędzie musi być prawidłowy, i należy ją skompilować na swój własny zestaw odwołania się w projekcie używane w czasie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zakończy się wykonywanie.
+- Kod wygenerowany przez niestandardowe narzędzie musi być prawidłowy, i należy ją skompilować na swój własny zestaw odwołania się w projekcie używane w czasie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zakończy się wykonywanie.
 
      Po skompilowaniu tymczasowych tylko plik źródłowy, podany w kompilatorze znajduje się dane wyjściowe narzędzia niestandardowego. W związku z tym niestandardowe narzędzie, które używa tymczasowych, należy wygenerować pliki wyjściowe, które można skompilować niezależnie od innych plików w projekcie.
 

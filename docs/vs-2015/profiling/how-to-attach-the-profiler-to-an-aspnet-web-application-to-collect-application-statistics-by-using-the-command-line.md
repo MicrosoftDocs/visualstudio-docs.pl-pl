@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105732"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do aplikacji internetowej ASP.NET w celu zbierania statystyk aplikacji przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** umożliwia pobieranie próbek.  
+   - **/globalsampleon** umożliwia pobieranie próbek.  
 
-   -   **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Gdy ta opcja jest określona, dane są przypisane tylko do funkcji.  
+   - **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Gdy ta opcja jest określona, dane są przypisane tylko do funkcji.  
 
 3. Uruchom ponownie komputer.  
 
@@ -73,9 +73,9 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 6. Dołącz profiler do procesu roboczego ASP.NET. Typ:**VSPerfCmd** [/ dołączanie](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:**`Version`]  
 
-   -   `PID` Określa identyfikator procesu procesu roboczego ASP.NET; `ProcName` Określa nazwę procesu roboczego. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
+   - `PID` Określa identyfikator procesu procesu roboczego ASP.NET; `ProcName` Określa nazwę procesu roboczego. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
 
-   -   Domyślnie dane dotyczące wydajności są próbkowane co 10 000 000 niewstrzymanych procesora zegara cykli. Jest to około 100 razy na sekundę w przypadku procesora 1GH. Możesz określić jedną z następujących **VSPerfCmd** opcje, aby zmienić interwał cyklu zegara lub określić inne zdarzenie próbkowania.  
+   - Domyślnie dane dotyczące wydajności są próbkowane co 10 000 000 niewstrzymanych procesora zegara cykli. Jest to około 100 razy na sekundę w przypadku procesora 1GH. Możesz określić jedną z następujących **VSPerfCmd** opcje, aby zmienić interwał cyklu zegara lub określić inne zdarzenie próbkowania.  
 
    |Zdarzenie próbkowania|Opis|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
    |[/ Licznik](../profiling/counter.md) **:** `Config`|Zamienia zdarzenie próbkowania i interwał licznik wydajności procesora oraz interwał, które są określone w `Config`.|  
    |[/ targetclr](../profiling/targetclr.md) **:** `Version`|Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji.|  
 
-   -   **targetclr:** `Version` Określa wersję CLR do profilowania, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
+   - **targetclr:** `Version` Określa wersję CLR do profilowania, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.  
 
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
  Gdy aplikacja jest uruchomiona, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
 
     |Opcja|Opis|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania  
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
+1. Wykonaj jedną z następujących czynności, aby odłączyć program profiler od aplikacji docelowej:  
 
-    -   Typ **VSPerfCmd / Odłącz**  
+    - Typ **VSPerfCmd / Odłącz**  
 
          —lub—  
 
-    -   Zamknij [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego.  
+    - Zamknij [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego.  
 
-2.  Zamknij program profilujący. Typ:**VSPerfCmd**  [ /shutdown](../profiling/shutdown.md)  
+2. Zamknij program profilujący. Typ:**VSPerfCmd**  [ /shutdown](../profiling/shutdown.md)  
 
-3.  (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
+3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:  
 
      **Narzędzia VSPerfCmd /globaloff**  
 
-4.  Uruchom ponownie komputer.  
+4. Uruchom ponownie komputer.  
 
 ## <a name="see-also"></a>Zobacz też  
  [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

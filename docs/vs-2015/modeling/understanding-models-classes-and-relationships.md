@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108725"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
   
  Aby zmienić kolejność diagramem definicji DSL, możesz wykonywać następujące czynności:  
   
--   Zamienić głównego i widoki się odwoływać za pomocą **przenieść drzewa w tym miejscu** i **Podziel drzewo** poleceń. Kliknij prawym przyciskiem myszy klasę jednej domeny, aby wyświetlić te polecenia.  
+- Zamienić głównego i widoki się odwoływać za pomocą **przenieść drzewa w tym miejscu** i **Podziel drzewo** poleceń. Kliknij prawym przyciskiem myszy klasę jednej domeny, aby wyświetlić te polecenia.  
   
--   Kolejność kształt klasy i klas domeny, naciskając klawisze Ctrl + Strzałka w górę i Ctrl + Strzałka w dół.  
+- Kolejność kształt klasy i klas domeny, naciskając klawisze Ctrl + Strzałka w górę i Ctrl + Strzałka w dół.  
   
--   Zwinąć lub rozwinąć klas przy użyciu ikony w prawym górnym rogu każdego z kształtów.  
+- Zwinąć lub rozwinąć klas przy użyciu ikony w prawym górnym rogu każdego z kształtów.  
   
--   Zwiń części drzewa, klikając znak minus (-) w dolnej części klasy domeny.  
+- Zwiń części drzewa, klikając znak minus (-) w dolnej części klasy domeny.  
   
 ## <a name="inheritance"></a>Dziedziczenie  
  Klasy domeny mogą być definiowane za pomocą dziedziczenia. Aby utworzyć pochodnym dziedziczenia, kliknij narzędzie dziedziczenia, kliknij w klasie pochodnej, a następnie kliknij klasy bazowej. Element modelu ma wszystkie właściwości, które są zdefiniowane na własnej klasy domeny wraz z wszystkich właściwości, które są dziedziczone z klasy podstawowej. Dziedziczy jej ról w relacji.  

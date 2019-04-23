@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105594"
 ---
 # <a name="warning-script-debugging-disabled"></a>Ostrzeżenie: Debugowanie skryptów wyłączone
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Debugowanie skryptów jest obecnie wyłączone w programie Internet Explorer
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Aby włączyć debugowanie skryptów w programie Internet Explorer  
   
-1.  W programie Internet Explorer **narzędzia** menu, wybierz **Opcje internetowe**.  
+1. W programie Internet Explorer **narzędzia** menu, wybierz **Opcje internetowe**.  
   
-2.  W oknie dialogowym **Opcje internetowe** kliknij kartę **Zaawansowane** .  
+2. W oknie dialogowym **Opcje internetowe** kliknij kartę **Zaawansowane** .  
   
-3.  Na **zaawansowane** kartę, Szukaj w **ustawienia** polu **przeglądania** kategorii.  
+3. Na **zaawansowane** kartę, Szukaj w **ustawienia** polu **przeglądania** kategorii.  
   
-4.  Wyczyść **Wyłącz debugowanie skryptu (Internet Explorer)**.  
+4. Wyczyść **Wyłącz debugowanie skryptu (Internet Explorer)**.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
-6.  Zamknij i ponownie uruchom program Internet Explorer.  
+6. Zamknij i ponownie uruchom program Internet Explorer.  
   
      Teraz będzie obowiązywać do nowych ustawień.  
   

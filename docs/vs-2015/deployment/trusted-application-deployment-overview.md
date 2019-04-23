@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105841"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
   
   Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia aplikacji:  
   
-1.  Uzyskaj certyfikat dla wydawcy.  
+1. Uzyskaj certyfikat dla wydawcy.  
   
-2.  Dodaj wydawcy do magazynu zaufanych wydawców na wszystkich klientach.  
+2. Dodaj wydawcy do magazynu zaufanych wydawców na wszystkich klientach.  
   
-3.  Utwórz swoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
+3. Utwórz swoje [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
-4.  Podpisać manifest wdrożenia przy użyciu certyfikatu wydawcy.  
+4. Podpisać manifest wdrożenia przy użyciu certyfikatu wydawcy.  
   
-5.  Publikowanie wdrażania aplikacji na komputerach klienckich.  
+5. Publikowanie wdrażania aplikacji na komputerach klienckich.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Uzyskaj certyfikat dla wydawcy  
  Certyfikaty cyfrowe są podstawowym składnikiem systemu zabezpieczeń i uwierzytelniania Microsoft Authenticode. Jest standardowa częścią systemu operacyjnego Windows. Wszystkie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacje muszą być podpisane za pomocą certyfikatu cyfrowego, niezależnie od tego, czy uczestniczą w zaufanego wdrożenia aplikacji. Aby uzyskać pełne wyjaśnienie sposobu działania kodu Authenticode z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], zobacz [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
   
  Nie wymaga wdrażania aplikacji w środowisku zarządzanym pulpitu, masz następujące opcje umożliwiające dodawanie certyfikatu do magazynu zaufanego wydawcy:  
   
--   <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.  
+- <xref:System.Security.Cryptography?displayProperty=fullName> Przestrzeni nazw.  
   
--   CertMgr.exe, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, który jest składnikiem programu Internet Explorer i w związku z tym istnieje w systemach Windows 98 i wszystkich nowszych wersji. Aby uzyskać więcej informacji, zobacz [Certmgr.exe (Menedżer certyfikatów narzędzie)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Tworzenie aplikacji ClickOnce  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplikacja kliencka w połączeniu z plików manifestu, które opisują aplikacji, a następnie podaj parametry instalacji. Można włączyć program do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację za pomocą **Publikuj** polecenia w pliku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternatywnie można wygenerować wszystkie pliki, które są wymagane do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia za pomocą narzędzi, które są dołączone [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Aby uzyskać szczegółowe instrukcje dotyczące [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrażania, zobacz [instruktażu: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

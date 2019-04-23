@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104151"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołącz Profiler do aplikacji internetowej ASP.NET w celu zbierania danych pamięci przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Opcje **/globalsamplegc** i **/globalsamplegclife** określenie typu pamięci dane mają być zbierane.  
+   - Opcje **/globalsamplegc** i **/globalsamplegclife** określenie typu pamięci dane mają być zbierane.  
 
         Określ jeden i tylko jeden z następujących opcji.  
 
@@ -49,7 +49,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
        |**/globalsamplegc**|Umożliwia zbieranie danych alokacji pamięci.|  
        |**/globalsamplegclife**|Umożliwia zbieranie danych alokacji pamięci i danych o okresie istnienia obiektu.|  
 
-   -   Opcja **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Jeśli ta opcja jest określona, dane są przypisane na poziomie funkcji.  
+   - Opcja **/samplelineoff** wyłącza przypisanie zebranych danych do określonego źródła wierszy kodu. Jeśli ta opcja jest określona, dane są przypisane na poziomie funkcji.  
 
 3. Uruchom ponownie komputer, aby ustawić nową konfigurację środowiska.  
 
@@ -83,16 +83,16 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
     **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]    
 
-   -   Identyfikator procesu `(PID)` Określa identyfikator procesu lub nazwę procesu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
+   - Identyfikator procesu `(PID)` Określa identyfikator procesu lub nazwę procesu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu roboczego. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.  
 
-   -   **/ targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji.  
+   - **/ targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji.  
 
 ## <a name="controlling-data-collection"></a>Kontrolowanie zbierania danych  
  Gdy aplikacja jest uruchomiona, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku z danymi profilera przy użyciu **VSPerfCmd.exe** opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych  
 
--   Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
+- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.  
 
     |Opcja|Opis|  
     |------------|-----------------|  

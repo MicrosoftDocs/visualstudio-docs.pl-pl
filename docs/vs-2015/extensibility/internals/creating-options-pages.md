@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106127"
 ---
 # <a name="creating-options-pages"></a>Tworzenie stron opcji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska pakietu zarządzan
   
  Ponieważ środowisko tworzy obiekt implementujący określonego **opcje narzędzi** strony po wyświetleniu danej strony IDE:  
   
--   A **opcji narzędzia** strony powinny zostać wdrożone na jego własnej obiektu, a nie na obiekt implementujący pakietu VSPackage.  
+- A **opcji narzędzia** strony powinny zostać wdrożone na jego własnej obiektu, a nie na obiekt implementujący pakietu VSPackage.  
   
--   Obiekt nie może implementować wiele **opcje narzędzi** stron.  
+- Obiekt nie może implementować wiele **opcje narzędzi** stron.  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>Rejestrowanie dostawcy strony opcji narzędzi  
  Pakietu VSPackage pomocniczych konfiguracji użytkownika za pośrednictwem **opcje narzędzi** stron wskazuje obiektów zapewnia **opcje narzędzi** stron, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> dotyczą <xref:Microsoft.VisualStudio.Shell.Package>implementacji.  

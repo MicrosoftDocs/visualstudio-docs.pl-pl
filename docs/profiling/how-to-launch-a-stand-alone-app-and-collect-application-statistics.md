@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96a577d9eb20df0d89ccd08100c6811fb167f3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a87fabc64619056a4d583c075976faddfb5a2a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110586"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Instrukcje: Uruchamianie aplikacji autonomicznej z profilerem i zbieranie statystyk aplikacji przy użyciu wiersza polecenia
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools uruchamianie aplikacji autonomicznej (klienta) i zbierania statystyk wydajności przy użyciu metody próbkowania.
@@ -25,7 +25,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
  Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie. Na maszynie, w którym zainstalowano program Visual Studio z poziomu okna polecenia programu Visual Studio można uruchomić narzędzi profilowania.
 
-1.  Jeśli używasz narzędzi profilowania w maszynie, na których program Visual Studio jest zainstalowany zestawy okno poleceń programu Visual Studio prawidłowe ścieżki. Na **narzędzia** menu, wybierz **polecenia VS**
+1. Jeśli używasz narzędzi profilowania w maszynie, na których program Visual Studio jest zainstalowany zestawy okno poleceń programu Visual Studio prawidłowe ścieżki. Na **narzędzia** menu, wybierz **polecenia VS**
 
 > [!NOTE]
 >  Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
@@ -78,7 +78,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
--   Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
@@ -91,15 +91,15 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1.  Wykonaj jedną z następujących czynności, aby odłączyć profiler od aplikacji docelowej:
+1. Wykonaj jedną z następujących czynności, aby odłączyć profiler od aplikacji docelowej:
 
-    -   Zamknij aplikację docelową.
+    - Zamknij aplikację docelową.
 
          —lub—
 
-    -   Typ **VSPerfCmd / Odłącz**
+    - Typ **VSPerfCmd / Odłącz**
 
-2.  Zamknij program profilujący. Wpisz:
+2. Zamknij program profilujący. Wpisz:
 
      **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 

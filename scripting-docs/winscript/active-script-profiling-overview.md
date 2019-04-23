@@ -13,21 +13,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d03ab4df7a41fe6513a18446d26e33e9856d1183
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d6152e374aee2eac273e0feca28c068c666e23d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110989"
 ---
 # <a name="active-script-profiling-overview"></a>Przegląd profilowania aktywnego skryptu
 [Aktywne interfejsy Profiler skryptu](../winscript/reference/active-script-profiler-interfaces.md) Włącz profilowanie aparatu obsługi skryptów. Profilowanie aktywnego skryptu składa się z następujących elementów:  
   
--   Aparat języka  
+- Aparat języka  
   
--   Host  
+- Host  
   
--   Profiler  
+- Profiler  
   
 ## <a name="language-engine"></a>Aparat języka  
  Aparat języka wykonuje skrypt. Zapewnia metody, które umożliwiają profilowanie kodu skryptu, ponieważ jest ono wykonywane. Po włączeniu profilowania aparat języka przyjmuje identyfikator klasy (CLSID) programu profilującego obiektu COM jako argument. Tworzy wystąpienie obiektu COM profiler i następnie wywołuje do profilera po wystąpieniu różnych zdarzeń.  

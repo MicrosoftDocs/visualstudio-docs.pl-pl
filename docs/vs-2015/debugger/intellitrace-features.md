@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105735"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
 > [!NOTE]
 >  Zakres wszystkie ustawienia na **IntelliTrace** strona opcje to program Visual Studio jako całości, nie do poszczególnych projektów lub rozwiązań. Zmiany w tych ustawieniach mają zastosowanie do wszystkich wystąpień programu Visual Studio, wszystkie debugowania sesji i wszystkich projektów i rozwiązań.  
   
-##  <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace  
+## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace  
  Można włączyć lub wyłączyć rejestrowanie dla określonych zdarzeń IntelliTrace.  
   
  Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do **narzędzia / Opcje / IntelliTrace / zdarzenia IntelliTrace**. Wybierz zdarzenia funkcji IntelliTrace do rejestrowania.  
   
-##  <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji  
+## <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji  
  To nie jest domyślnie włączona, ale IntelliTrace może rejestrować wywołania metody wraz z wydarzeniami. Aby włączyć zbieranie wywołań, przejdź do metody **narzędzia / Opcje / IntelliTrace / ogólne**i wybierz **zdarzenia IntelliTrace i wywołania informacji**.  
   
  Dzięki temu można wyświetlić historię stosu wywołań, poruszać i wywołań w kodzie. IntelliTrace zapisuje dane, takie jak nazwy metod, punkty wejścia i wyjścia metody i niektóre wartości parametrów i zwracanych wartości.  
@@ -75,14 +75,14 @@ Można użyć funkcji IntelliTrace do rejestrowania zdarzeń i aplikacji, dzięk
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>Wyszukaj wiersz lub metody w IntelliTrace  
  Metody można przeszukiwać tylko wtedy, gdy włączono informacje dotyczące wywołania metody. Możesz wyszukiwać historię IntelliTrace dla określonego wiersza lub metody. Gdy debuger, wykonywanie zostało zatrzymane, kliknij prawym przyciskiem myszy wewnątrz treści funkcji, aby wyświetlić menu kontekstowe i kliknij opcję **wyszukiwania dla tego wiersza w funkcji IntelliTrace** lub **wyszukiwania dla tej metody w funkcji IntelliTrace**.  
   
-###  <a name="ControlCallData"></a> Kontroluj, ile informacji wywołań IntelliTrace  
+### <a name="ControlCallData"></a> Kontroluj, ile informacji wywołań IntelliTrace  
  Domyślnie IntelliTrace zapisuje informacje dla wszystkich modułów, które są używane przez rozwiązania. Można ustawić funkcji IntelliTrace do rejestrowania informacji o wywołaniach tylko moduły, które Cię interesują. W **narzędzia / Opcje / IntelliTrace / modułów**, można określić moduły, aby dołączyć lub modułów, które mają zostać wykluczone z IntelliTrace. IntelliTrace będzie zbierać zdarzenia, które pochodzą z modułów, które określono i wywołania metody, które wystąpiły w ramach modułów Cię interesuje.  
   
  Aby dodać wiele modułów, użyj symbolu wieloznacznego * na początku lub końcu ciągu. W przypadku nazwy modułów użyj nazw plików, nie nazw zestawów. Ścieżki plików nie są akceptowane.  
   
  Spróbuj przechowywać liczba modułów do minimum. Możesz uzyskać lepszą wydajność, ponieważ istnieje mniejszej ilości danych, które mają być zbierane. Mniej szumu możesz także uzyskać w interfejsie użytkownika, ponieważ mniejszej ilości danych, aby wykonać kroki.  
   
-##  <a name="SaveSession"></a> Zapisywanie danych funkcji IntelliTrace do pliku  
+## <a name="SaveSession"></a> Zapisywanie danych funkcji IntelliTrace do pliku  
  Można zapisać dane IntelliTrace zebrał zamierza **debugowanie / IntelliTrace / Zapisz sesję IntelliTrace** podczas debugowania, a aplikacja jest w stanie przerwania. Element menu jest wyłączona, a nie będziesz w stanie zapisywać dane IntelliTrace zebrał, jeśli aplikacja jest nadal uruchomiona lub zatrzymaniu debugowania.  
   
  Możesz skonfigurować IntelliTrace, aby automatycznie zapisać do pliku, przechodząc do **narzędzia / Opcje / IntelliTrace / zaawansowane** i wybierając polecenie **nagrania Store IntelliTrace w tym katalogu**. Można również skonfigurować Ustaw rozmiar generowanego pliku, co powoduje, że IntelliTrace, aby móc starszych danych, gdy zabraknie mu miejsca. Program Visual Studio utworzy dwa pliki, dla każdej sesji IntelliTrace, gdy są one automatycznie zapisywane i programu Visual Studio, proces hostingu (vshost.exe) jest włączona.  

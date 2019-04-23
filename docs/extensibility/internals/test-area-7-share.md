@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107791"
 ---
 # <a name="test-area-7-share"></a>Obszar testowy 7: Udostępnij
 Obszar ten test obejmuje udostępniania elementów między lokalizacjami za pośrednictwem **udziału** polecenia.
@@ -25,13 +25,13 @@ Obszar ten test obejmuje udostępniania elementów między lokalizacjami za poś
 
  Udostępnianie do folderów, które działa, jeśli został wskazany folder z co najmniej jeden plik pod kontrolą źródła w nim. Polecenie udziału jest wyłączone w następujących warunkach:
 
--   Jeśli wybrany folder jest pusty folder.
+- Jeśli wybrany folder jest pusty folder.
 
--   Jeśli istnieje folder rzeczywistych, ale nie zawiera on nie plików do kontroli źródła.
+- Jeśli istnieje folder rzeczywistych, ale nie zawiera on nie plików do kontroli źródła.
 
--   Jeśli istnieje folder wirtualny, czy pliki objęte kontrolą źródła są w nim, czy nie.
+- Jeśli istnieje folder wirtualny, czy pliki objęte kontrolą źródła są w nim, czy nie.
 
--   W przypadku projektu zdalnej witryny sieci Web.
+- W przypadku projektu zdalnej witryny sieci Web.
 
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia
  Następujące [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ścieżki menu środowiska zintegrowanego rozwoju są używane w przypadkach testowych.
@@ -40,11 +40,11 @@ Obszar ten test obejmuje udostępniania elementów między lokalizacjami za poś
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
 
--   Udostępniony plik pojawia się w lokalizacji udostępnionej.
+- Udostępniony plik pojawia się w lokalizacji udostępnionej.
 
--   Wyświetlanie źródła kontrolka wersji magazynu historii pokaże udostępniane pliki.
+- Wyświetlanie źródła kontrolka wersji magazynu historii pokaże udostępniane pliki.
 
--   Edytowanie pliku udostępnionego edytuje zarówno w lokalizacji pliku.
+- Edytowanie pliku udostępnionego edytuje zarówno w lokalizacji pliku.
 
 ## <a name="test-cases"></a>Przypadki testowe
  Poniżej przedstawiono określonych przypadków testowych dla obszaru testu udziału.

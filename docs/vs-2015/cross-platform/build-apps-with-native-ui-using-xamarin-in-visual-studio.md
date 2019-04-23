@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105295"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
  Wykonasz te czynności na tworzenie:
 
--   [Konfigurowanie rozwiązania programu](#solution)
+- [Konfigurowanie rozwiązania programu](#solution)
 
--   [Pisanie kodu usług udostępnionych danych](#dataservice)
+- [Pisanie kodu usług udostępnionych danych](#dataservice)
 
--   [Projektowanie interfejsu użytkownika dla systemu Android](#Android)
+- [Projektowanie interfejsu użytkownika dla systemu Android](#Android)
 
--   [Projekt interfejsu użytkownika programu Windows Phone](#Windows)
+- [Projekt interfejsu użytkownika programu Windows Phone](#Windows)
 
--   [Następne kroki](#next)
+- [Następne kroki](#next)
 
 > [!TIP]
 >  Możesz znaleźć pełnego kodu źródłowego dla tego projektu w [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -44,17 +44,17 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 >
 > - Aplikacje platformy Xamarin z natywnym interfejsem użytkownika:
 >
->   -   [Witaj, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (prosta aplikacja z jednym ekranem)
->   -   [Witaj, Android (wiele ekranów)](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplikacja z nawigacją między ekranami)
->   -   [Dla systemu android przewodnik fragmenty](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (używane dla rekordu głównego/szczegółów ekranów, między innymi)
->   -   [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
->   -   [Witaj, iOS Multiscreen (wiele ekranów)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
->   -   Aplikacje Xamarin przy użyciu zestawu narzędzi Xamarin.Forms (współdzielony interfejs użytkownika)
+>   - [Witaj, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (prosta aplikacja z jednym ekranem)
+>   - [Witaj, Android (wiele ekranów)](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplikacja z nawigacją między ekranami)
+>   - [Dla systemu android przewodnik fragmenty](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (używane dla rekordu głównego/szczegółów ekranów, między innymi)
+>   - [Witaj, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+>   - [Witaj, iOS Multiscreen (wiele ekranów)](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
+>   - Aplikacje Xamarin przy użyciu zestawu narzędzi Xamarin.Forms (współdzielony interfejs użytkownika)
 >
->   -   [Witaj, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
->   -   [Witaj, Xamarin.Forms (wiele ekranów)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
+>   - [Witaj, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
+>   - [Witaj, Xamarin.Forms (wiele ekranów)](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-##  <a name="solution"></a> Konfigurowanie rozwiązania programu
+## <a name="solution"></a> Konfigurowanie rozwiązania programu
  Te kroki służą utworzeniu rozwiązania Xamarin za pomocą natywnego interfejsu użytkownika, który zawiera PCL dla udostępnionego kodu i dwa dodano pakiety NuGet.
 
 1. W programie Visual Studio Utwórz nowy **pusta aplikacja (natywny przenośny)** rozwiązania i nadaj mu nazwę **WeatherApp**. Można znaleźć ten szablon najłatwiej, wprowadzając **przenośnego macierzystego** w polu wyszukiwania.
@@ -75,34 +75,34 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
 3. Dodaj **Newtonsoft.Json** i pakiet NuGet do projektu PCL, którego będziesz używać do przetwarzania informacji pobrane z usługi danych o pogodzie:
 
-   -   Kliknij prawym przyciskiem myszy **rozwiązania "WeatherApp"** w Eksploratorze rozwiązań i wybierz pozycję **Zarządzaj pakietami NuGet dla rozwiązania...** .
+   - Kliknij prawym przyciskiem myszy **rozwiązania "WeatherApp"** w Eksploratorze rozwiązań i wybierz pozycję **Zarządzaj pakietami NuGet dla rozwiązania...** .
 
         W oknie NuGet wybierz **Przeglądaj** kartę i wyszukaj **Newtonsoft**.
 
-   -   Wybierz **Newtonsoft.Json**.
+   - Wybierz **Newtonsoft.Json**.
 
-   -   Po prawej stronie okna, sprawdź **WeatherApp** projektu (jest to tylko projektu, w którym należy zainstalować pakiet).
+   - Po prawej stronie okna, sprawdź **WeatherApp** projektu (jest to tylko projektu, w którym należy zainstalować pakiet).
 
-   -   Upewnij się, **wersji** pole jest ustawione na **najnowszy stabilny** wersji.
+   - Upewnij się, **wersji** pole jest ustawione na **najnowszy stabilny** wersji.
 
-   -   Kliknij przycisk **zainstalować**.
+   - Kliknij przycisk **zainstalować**.
 
-   -   ![Znajdowanie i instalowanie pakietu Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Znajdowanie i instalowanie pakietu Newtonsoft.Json NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. Powtórz kroki od 3, aby znaleźć i zainstalować **Microsoft.Net.Http** pakietu.
 
 5. Skompiluj rozwiązanie i upewnij się, że żadne błędy kompilacji.
 
-##  <a name="dataservice"></a> Pisanie kodu usług udostępnionych danych
+## <a name="dataservice"></a> Pisanie kodu usług udostępnionych danych
  **WeatherApp (przenośna)** projekt jest, gdzie Ty napiszesz kod dla biblioteki klas przenośnych (PCL), który jest udostępniany na wszystkich platformach. Pakiety aplikacji skompilowanymi z systemem iOS, Android i Windows Phone projektów jest automatycznie dołączany PCL.
 
  Poniższe kroki następnie dodać kod do aplikacji PCL dostęp do przechowywania danych pochodzących z tej usługi pogody:
 
-1.  Aby uruchomić ten przykład, najpierw musisz zarejestrować się uzyskać bezpłatny klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid).
+1. Aby uruchomić ten przykład, najpierw musisz zarejestrować się uzyskać bezpłatny klucz interfejsu API w [ http://openweathermap.org/appid ](http://openweathermap.org/appid).
 
-2.  Kliknij prawym przyciskiem myszy **WeatherApp** projektu, a następnie wybierz **Dodaj > klasa...** . W **Dodaj nowy element** okno dialogowe, nazwij plik **Weather.cs**. Ta klasa będzie używane do przechowywania danych z usługi danych o pogodzie.
+2. Kliknij prawym przyciskiem myszy **WeatherApp** projektu, a następnie wybierz **Dodaj > klasa...** . W **Dodaj nowy element** okno dialogowe, nazwij plik **Weather.cs**. Ta klasa będzie używane do przechowywania danych z usługi danych o pogodzie.
 
-3.  Zastąp całą zawartość **Weather.cs** następującym kodem:
+3. Zastąp całą zawartość **Weather.cs** następującym kodem:
 
     ```csharp
     namespace WeatherApp
@@ -133,9 +133,9 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
     }
     ```
 
-4.  Dodaj klasę do projektu PCL o nazwie **DataService.cs** , w którym będziesz używać do przetwarzania danych JSON z usługi danych o pogodzie.
+4. Dodaj klasę do projektu PCL o nazwie **DataService.cs** , w którym będziesz używać do przetwarzania danych JSON z usługi danych o pogodzie.
 
-5.  Zastąp całą zawartość **DataService.cs** następującym kodem:
+5. Zastąp całą zawartość **DataService.cs** następującym kodem:
 
     ```csharp
     using System.Threading.Tasks;
@@ -164,9 +164,9 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
     }
     ```
 
-6.  Dodaj klasę innych do PCL o nazwie **Core** którym zostanie umieszczony udostępnione logiki biznesowej, takich jak logiki, który wchodzi w skład ciąg zapytania z kod pocztowy, wywołuje usługę danych o pogodzie i wypełnia wystąpienie **pogody**klasy.
+6. Dodaj klasę innych do PCL o nazwie **Core** którym zostanie umieszczony udostępnione logiki biznesowej, takich jak logiki, który wchodzi w skład ciąg zapytania z kod pocztowy, wywołuje usługę danych o pogodzie i wypełnia wystąpienie **pogody**klasy.
 
-7.  Zastąp zawartość **Core.cs** następującym kodem:
+7. Zastąp zawartość **Core.cs** następującym kodem:
 
     ```csharp
     using System;
@@ -216,36 +216,36 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
     }
     ```
 
-8.  Zastąp *SWÓJ klucz tutaj* w kodzie za pomocą klucza interfejsu API, uzyskaną w kroku 1 (nadal wymaga ją w cudzysłowie).
+8. Zastąp *SWÓJ klucz tutaj* w kodzie za pomocą klucza interfejsu API, uzyskaną w kroku 1 (nadal wymaga ją w cudzysłowie).
 
 9. Usuń MyClass.cs w aplikacji PCL, ponieważ firma Microsoft nie będzie go używać.
 
 10. Tworzenie **WeatherApp** projektu PCL, aby upewnić się, kod jest poprawny.
 
-##  <a name="Android"></a> Projektowanie interfejsu użytkownika dla systemu Android
+## <a name="Android"></a> Projektowanie interfejsu użytkownika dla systemu Android
  Teraz firma Microsoft będzie projektuje się interfejs użytkownika, połącz go ze współużytkowanym kodem, a następnie uruchom aplikację.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Projektowanie wyglądu i działania aplikacji
 
-1.  W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid**>**zasobów**>**układ** folder i Otwórz **Main.axml**. Spowoduje to otwarcie pliku projektanta wizualnego. (Jeśli pojawi się błąd, który języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1. W **Eksploratora rozwiązań**, rozwiń węzeł **WeatherApp.Droid**>**zasobów**>**układ** folder i Otwórz **Main.axml**. Spowoduje to otwarcie pliku projektanta wizualnego. (Jeśli pojawi się błąd, który języka Java, zobacz ten [wpis w blogu](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
     >  Istnieją inne pliki w projekcie. Eksplorowanie ich jest poza zakresem tego tematu, ale jeśli chcesz od razu do struktury projektu dla systemu Android nieco więcej, zobacz [część 2 Deep Dive](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) Hello Android tematu na strony xamarin.com.
 
-2.  Wybierz i usuń przycisk domyślny, który pojawia się w projektancie.
+2. Wybierz i usuń przycisk domyślny, który pojawia się w projektancie.
 
-3.  Otwórz przybornika **Widok > inne Windows > przybornika**.
+3. Otwórz przybornika **Widok > inne Windows > przybornika**.
 
-4.  Z **przybornika**, przeciągnij **RelativeLayout** formant do projektanta. Użyjesz tego formantu jako kontenera nadrzędnego dla innych kontrolek.
+4. Z **przybornika**, przeciągnij **RelativeLayout** formant do projektanta. Użyjesz tego formantu jako kontenera nadrzędnego dla innych kontrolek.
 
     > [!TIP]
     >  Jeśli w dowolnym momencie układ wydają się do poprawnego wyświetlania, Zapisz plik i przełączania się między **projektowania** i **źródła** kart, aby odświeżyć.
 
-5.  W **właściwości** oknie **tła** właściwości (w grupie Style) `#545454`.
+5. W **właściwości** oknie **tła** właściwości (w grupie Style) `#545454`.
 
-6.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli.
+6. Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli.
 
-7.  W **właściwości** okna ustawiania tych właściwości (Uwaga: może pomóc sortować listę alfabetycznie przy użyciu przycisku Sortuj na pasku narzędzi w oknie właściwości):
+7. W **właściwości** okna ustawiania tych właściwości (Uwaga: może pomóc sortować listę alfabetycznie przy użyciu przycisku Sortuj na pasku narzędzi w oknie właściwości):
 
     |Właściwość|Wartość|
     |--------------|-----------|
@@ -275,7 +275,7 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
     ```
 
-8.  Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść ją poniżej kontrolki ZipCodeSearchLabel. Można to zrobić, porzucenie nowej kontrolki na odpowiednią krawędzią istniejącej kontrolki; pomaga ono powiększenia projektanta w pewnym stopniu, w tym.
+8. Z **przybornika**, przeciągnij **TextView** kontrolować na **RelativeLayout** kontroli i umieść ją poniżej kontrolki ZipCodeSearchLabel. Można to zrobić, porzucenie nowej kontrolki na odpowiednią krawędzią istniejącej kontrolki; pomaga ono powiększenia projektanta w pewnym stopniu, w tym.
 
 9. W **właściwości** okna ustawiania tych właściwości:
 
@@ -468,7 +468,7 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
 ### <a name="consume-your-shared-code"></a>Korzystanie ze współużytkowanym kodem
 
-1.  Otwórz **MainActivity.cs** pliku **WeatherApp** projektu w edytorze kodu, a następnie zastąp zawartość tego pliku poniższy kod. Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionych. Następnie w interfejsie użytkownika aplikacji zawiera dane, które są pobierane z tej metody.
+1. Otwórz **MainActivity.cs** pliku **WeatherApp** projektu w edytorze kodu, a następnie zastąp zawartość tego pliku poniższy kod. Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionych. Następnie w interfejsie użytkownika aplikacji zawiera dane, które są pobierane z tej metody.
 
     ```csharp
     using System;
@@ -514,18 +514,18 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i zobaczyć, jak wygląda
 
-1.  W **Eksploratora rozwiązań**, upewnij się, że **WeatherApp.Droid** projekt jest ustawiony jako projekt startowy.
+1. W **Eksploratora rozwiązań**, upewnij się, że **WeatherApp.Droid** projekt jest ustawiony jako projekt startowy.
 
-2.  Wybierz odpowiednie urządzenie lub emulator docelowego, a następnie uruchom aplikację, naciskając klawisz F5.
+2. Wybierz odpowiednie urządzenie lub emulator docelowego, a następnie uruchom aplikację, naciskając klawisz F5.
 
-3.  Na urządzeniu lub w emulatorze wpisz poprawny kod pocztowy Stanów Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się w kontrolkach.
+3. Na urządzeniu lub w emulatorze wpisz poprawny kod pocztowy Stanów Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się w kontrolkach.
 
      ![Pogoda aplikacji dla systemów Android i Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 >  Trwa pełnego kodu źródłowego dla tego projektu [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-##  <a name="Windows"></a> Projekt interfejsu użytkownika programu Windows Phone
+## <a name="Windows"></a> Projekt interfejsu użytkownika programu Windows Phone
  Teraz firma Microsoft będzie projektowania interfejsu użytkownika programu Windows Phone, połącz go ze współużytkowanym kodem, a następnie uruchom aplikację.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Projektowanie wyglądu i działania aplikacji
@@ -583,17 +583,17 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
 ### <a name="consume-your-shared-code"></a>Korzystanie ze współużytkowanym kodem
 
-1.  W Projektancie zaznacz **uzyskać pogody** przycisku.
+1. W Projektancie zaznacz **uzyskać pogody** przycisku.
 
-2.  W **właściwości** okna, wybierz przycisk procedury obsługi zdarzeń (![ikonę obsługi zdarzeń w usłudze Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
+2. W **właściwości** okna, wybierz przycisk procedury obsługi zdarzeń (![ikonę obsługi zdarzeń w usłudze Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
 
      Ikona ta pojawia się w górnym rogu **właściwości** okna.
 
-3.  Obok pozycji **kliknij** zdarzeń, typ **GetWeatherButton_Click**, a następnie naciśnij klawisz ENTER.
+3. Obok pozycji **kliknij** zdarzeń, typ **GetWeatherButton_Click**, a następnie naciśnij klawisz ENTER.
 
      Spowoduje to wygenerowanie procedury obsługi zdarzeń o nazwie `GetWeatherButton_Click`. Edytor kodu otwiera się i umieszcza kursor wewnątrz bloku kodu programu obsługi zdarzeń.  Uwaga: Jeśli nie zostanie otwarta po naciśnięciu klawisza ENTER edytorze, po prostu dwukrotnie kliknąć nazwę zdarzenia.
 
-4.  Zastąp ten program obsługi zdarzeń z następującym kodem.
+4. Zastąp ten program obsługi zdarzeń z następującym kodem.
 
     ```csharp
     private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -616,22 +616,22 @@ Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-insta
 
      Ten kod wywołuje `GetWeather` metodę, która jest zdefiniowana w kodzie udostępnionych. Jest to tę samą metodę, która wywołana w aplikacji systemu Android. Ten kod zawiera również dane pobrane z tej metody w kontrolek interfejsu użytkownika aplikacji.
 
-5.  W pliku MainPage.xaml.cs jest otwarty, usuń cały kod wewnątrz **OnNavigatedTo** metody. Ten kod po prostu obsługiwane przycisk domyślny, która została usunięta, gdy zastąpiliśmy zawartość pliku MainPage.xaml.
+5. W pliku MainPage.xaml.cs jest otwarty, usuń cały kod wewnątrz **OnNavigatedTo** metody. Ten kod po prostu obsługiwane przycisk domyślny, która została usunięta, gdy zastąpiliśmy zawartość pliku MainPage.xaml.
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>Uruchom aplikację i zobaczyć, jak wygląda
 
-1.  W **Eksploratora rozwiązań**ustaw **WeatherApp.WinPhone** projekt jako projekt startowy.
+1. W **Eksploratora rozwiązań**ustaw **WeatherApp.WinPhone** projekt jako projekt startowy.
 
-2.  Uruchom aplikację, naciskając klawisz F5.
+2. Uruchom aplikację, naciskając klawisz F5.
 
-3.  Windows Phone, w emulatorze wpisz prawidłowy kod pocztowy w Stanach Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się w kontrolkach.
+3. Windows Phone, w emulatorze wpisz prawidłowy kod pocztowy w Stanach Zjednoczonych, w polu edycji (na przykład: 60601) i naciśnij klawisz **uzyskać pogody**. Dane o pogodzie dla tego regionu pojawi się w kontrolkach.
 
      ![Uruchamianie aplikacji w wersji Windows](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 >  Trwa pełnego kodu źródłowego dla tego projektu [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-##  <a name="next"></a> Następne kroki
+## <a name="next"></a> Następne kroki
  **Dodawanie interfejsu użytkownika dla systemu iOS w rozwiązaniu**
 
  W tym przykładzie należy rozszerzyć przez dodanie natywnego interfejsu użytkownika dla systemu iOS. W tym należy połączyć się z komputerem Mac w sieci lokalnej, która ma Xcode i Xamarin zainstalowane. Po wykonaniu tej czynności można użyć narzędzia iOS designer bezpośrednio w programie Visual Studio. Zobacz [mobile-samples repository w witrynie GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) dla ukończonej aplikacji.

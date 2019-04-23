@@ -9,25 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108722"
 ---
 # <a name="xml-schema-designer"></a>Projektant schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projektant schematu XML (XSD Designer) jest graficznego narzędzia, która pozwala na wizualizowanie schematu z zestawu na różnych poziomach abstrakcji. Poniżej przedstawiono główne składniki Projektant XSD:    
   
--   [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md) umożliwia przeglądanie, przejdź w drzewie schematu XML i wyszukiwanie.  
+- [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md) umożliwia przeglądanie, przejdź w drzewie schematu XML i wyszukiwanie.  
   
--   [Widoku Start](../xml-tools/start-view.md) to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.  
+- [Widoku Start](../xml-tools/start-view.md) to doskonała Projektant XSD; z widoku startowego możesz przejść z innymi widokami Projektant XSD i Szczegóły zestawu schematów.  
   
--   [Widoku wykresu](../xml-tools/graph-view.md) umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.  
+- [Widoku wykresu](../xml-tools/graph-view.md) umożliwia wyświetlenie Omówienie zestawu schematu i relacje między węzłami schematu.  
   
--   [Widoku modelu zawartości](../xml-tools/content-model-view.md) zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.  
+- [Widoku modelu zawartości](../xml-tools/content-model-view.md) zawiera graficzną reprezentację szczegóły węzłów lokalne i globalne schematu, w tym proste i złożone typy, elementy, grup, atrybuty i grupy atrybutów.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Eksplorator schematu XML](../xml-tools/xml-schema-explorer.md)  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110534"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuje listę zasobów obrazu (PNG lub .xaml plików) i generuje plik .imagemanifest umożliwiająca tych obrazów do użycia z usługą obrazów programu Visual Studio. To narzędzie można dodatkowo dodać obrazy do istniejących .imagemanifest. To narzędzie jest przydatne w przypadku dodawania wysokiej rozdzielczości DPI i motywów obsługę dla obrazów w celu rozszerzenia programu Visual Studio. Pliku wygenerowanego .imagemanifest należy objęte i wdrażane jako część rozszerzenia programu Visual Studio (.vsix).
@@ -43,25 +43,25 @@ Manifest za pomocą narzędzia zasobów jest aplikacja konsolowa która przyjmuj
 
  **Przykłady**
 
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Uwagi
 
--   Narzędzie obsługuje tylko pliki PNG i .xaml. Inne typy obrazu lub pliku zostaną zignorowane. Dla wszystkich typów nieobsługiwany podczas analizy zasobów, generowane jest ostrzeżenie. Jeśli nie, obsługiwane obrazów znajdują się po zakończeniu działania narzędzia analizy zasobów, zostanie wygenerowany błąd
+- Narzędzie obsługuje tylko pliki PNG i .xaml. Inne typy obrazu lub pliku zostaną zignorowane. Dla wszystkich typów nieobsługiwany podczas analizy zasobów, generowane jest ostrzeżenie. Jeśli nie, obsługiwane obrazów znajdują się po zakończeniu działania narzędzia analizy zasobów, zostanie wygenerowany błąd
 
--   Postępując zgodnie z sugerowanego formatu dla obrazów PNG, narzędzie ustawi wartość rozmiaru/wymiaru .png format określony rozmiar, nawet jeśli jest inny niż rzeczywisty rozmiar obrazu.
+- Postępując zgodnie z sugerowanego formatu dla obrazów PNG, narzędzie ustawi wartość rozmiaru/wymiaru .png format określony rozmiar, nawet jeśli jest inny niż rzeczywisty rozmiar obrazu.
 
--   Format szerokość i wysokość, można pominąć w przypadku obrazów PNG, ale narzędzie odczytuje rzeczywiste szerokość/wysokość obrazu i je wykorzystać do wartości rozmiaru/wymiaru obrazu.
+- Format szerokość i wysokość, można pominąć w przypadku obrazów PNG, ale narzędzie odczytuje rzeczywiste szerokość/wysokość obrazu i je wykorzystać do wartości rozmiaru/wymiaru obrazu.
 
--   Uruchamianie tego narzędzia na tym samym paska obrazów wiele razy dla tego samego .imagemanifest spowoduje zduplikowane wpisy manifestu, ponieważ narzędzie spróbuje podzielić paska obrazów obrazy autonomiczne i dodać tych, które mają istniejący manifest.
+- Uruchamianie tego narzędzia na tym samym paska obrazów wiele razy dla tego samego .imagemanifest spowoduje zduplikowane wpisy manifestu, ponieważ narzędzie spróbuje podzielić paska obrazów obrazy autonomiczne i dodać tych, które mają istniejący manifest.
 
--   Scalanie (z pominięciem /newGuids lub /newIds) należy to robić tylko dla wygenerowanych przez narzędzie manifestów. Nie manifestów, które zostały dostosowane lub wygenerowane za pomocą innych środków może poprawnie scalić.
+- Scalanie (z pominięciem /newGuids lub /newIds) należy to robić tylko dla wygenerowanych przez narzędzie manifestów. Nie manifestów, które zostały dostosowane lub wygenerowane za pomocą innych środków może poprawnie scalić.
 
--   Manifestów, które są generowane dla zestawów natywnych może być konieczne należy ręcznie modyfikować po generowaniu sprawia, że symbole identyfikator zgodne identyfikatory z pliku .rc natywny zestaw zasobów.
+- Manifestów, które są generowane dla zestawów natywnych może być konieczne należy ręcznie modyfikować po generowaniu sprawia, że symbole identyfikator zgodne identyfikatory z pliku .rc natywny zestaw zasobów.
 
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe
  **Manifestu obrazu prostego**

@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108987"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Szybki start: Programowanie sterowane za pomocą narzędzia Eksplorator testów testami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
  Eksplorator testów zastępuje okna testów jednostkowych ze starszych wersji programu Visual Studio. Jego zalety obejmują:  
   
--   Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.  
+- Uruchamianie platformy .NET, niezarządzanych, bazy danych i innych rodzajów testów przy użyciu pojedynczego interfejsu.  
   
--   Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.  
+- Użyj jednostki testu wybranego, takich jak NUnit środowiska lub środowisk MSTest.  
   
--   Zobacz w jednym oknie użytkownikowi potrzebnych informacji.  
+- Zobacz w jednym oknie użytkownikowi potrzebnych informacji.  
   
 ## <a name="using-test-explorer"></a>Za pomocą narzędzia Eksplorator testów  
  ![Przycisk Uruchom wszystkie przedstawiający Eksploratora testów jednostkowych](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -37,13 +37,13 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
     Na przykład aby utworzyć test który używa środowiska Mstest:  
   
-   1.  Utwórz projekt testu.  
+   1. Utwórz projekt testu.  
   
         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic**, **Visual C#**, lub **Visual C++**, a następnie wybierz **testu**.  
   
         Wybierz **projektu testu jednostkowego**.  
   
-   2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.  
+   2. Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.  
   
 2. Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małych](../test/media/ute-parallelicon-small.png "małych UTE_parallelicon") Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.  
   
@@ -67,7 +67,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 > [!NOTE]
 >  Jeśli pojawi się żaden test, upewnij się, że zainstalowano adapter do połączenia Eksploratora testów ze środowiskiem testowym, którego używasz. Aby uzyskać więcej informacji, zobacz [Użyj platformę testową różnych](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> Wskazówki: Za pomocą testów jednostkowych do opracowania metody  
+## <a name="walkthrough"></a> Wskazówki: Za pomocą testów jednostkowych do opracowania metody  
  W tym instruktażu przedstawiono sposób opracować przetestowaną metodę w języku C# za pomocą środowiska testów jednostkowych firmy Microsoft. Możesz ją łatwo przystosować do innych języków i używać innych środowisk testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [struktury testowej różnych Usa](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Tworzenie testu i metody  
@@ -76,7 +76,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 2. Utwórz projekt testu.  
   
-   -   W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **projektu testu jednostkowego**.  
+   - W **nowy projekt** okno dialogowe, wybierz **Visual C#**, **testu** , a następnie wybierz **projektu testu jednostkowego**.  
   
         ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 4. Wygeneruj metodę z testu.  
   
-   1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.  
+   1. Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj**, **nowy typ**.  
   
-   2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest to `MyMath`.  
+   2. W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest to `MyMath`.  
   
-   3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj**, **szkieletu metody**.  
+   3. Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj**, **szkieletu metody**.  
   
 5. Uruchom test jednostkowy.  
   
-   1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe**, **wszystkie testy**.  
+   1. Na **testu** menu, wybierz **uruchomić testy jednostkowe**, **wszystkie testy**.  
   
         Rozwiązanie zostanie skompilowane i działa.  
   
@@ -130,7 +130,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie należy wprowadzić wszystkie testy.  
   
-1.  W `MyMath\Rooter.cs`, Popraw kod metody `SquareRoot`:  
+1. W `MyMath\Rooter.cs`, Popraw kod metody `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -139,7 +139,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
      }  
     ```  
   
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
      Kod zostanie skompilowany, a test uruchomiony.  
   
@@ -149,7 +149,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Dodaj testy, aby rozszerzyć zakres danych wejściowych  
   
-1.  Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.  
+1. Aby zwiększyć pewność, że kod działa we wszystkich przypadkach, Dodaj testy, które sprawdzają szerszy zakres wartości wejściowych.  
   
     > [!TIP]
     >  Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Zasada ta pomaga upewnić się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.  
@@ -180,13 +180,13 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
     }  
     ```  
   
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
      Nowy test kończy się niepowodzeniem, chociaż nadal przechodzi pierwszy test.  
   
      Aby znaleźć punkt awarii, zaznacz test niepowodzeniem, a następnie w dolnej części Eksploratora testów wybierz górny element w sekcji **ślad stosu**.  
   
-3.  Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:  
+3. Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. W `MyMath.Rooter` klasy, przepisz:  
   
     ```  
     public double SquareRoot(double input)  
@@ -202,13 +202,13 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
     }  
     ```  
   
-4.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+4. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
      Teraz kod przechodzi oba testy.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów wyjątkowych przypadków  
   
-1.  Dodaj test ujemnych danych wejściowych:  
+1. Dodaj test ujemnych danych wejściowych:  
   
     ```csharp  
     [TestMethod]  
@@ -227,15 +227,15 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
      }  
     ```  
   
-2.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+2. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
      Testowana metoda zapętla i musi zostać anulowana ręcznie.  
   
-3.  Wybierz **anulować**.  
+3. Wybierz **anulować**.  
   
      Test zatrzyma się po 10 sekundach.  
   
-4.  Napraw kod metody:  
+4. Napraw kod metody:  
   
     ```csharp  
   
@@ -248,13 +248,13 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
     ...  
     ```  
   
-5.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+5. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
      Kod przechodzi wszystkie testy.  
   
 #### <a name="refactor-without-changing-tests"></a>Refaktoryzacja bez zmieniania testów  
   
-1.  Uprość kod, ale nie zmieniaj testów.  
+1. Uprość kod, ale nie zmieniaj testów.  
   
     > [!TIP]
     >  A *refaktoryzacji* jest zmianę, która jest przeznaczona do wprowadzania działania kodu lub uczynienie go łatwiejszym do zrozumienia. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.  
@@ -283,7 +283,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
     }  
     ```  
   
-2.  Wybierz **uruchomić wszystkie**.  
+2. Wybierz **uruchomić wszystkie**.  
   
      Kod nadal przechodzi wszystkie testy.  
   

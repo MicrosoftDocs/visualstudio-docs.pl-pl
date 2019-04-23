@@ -20,12 +20,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105919"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Instrukcje: Uruchamianie procesu roboczego w ramach konta użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,30 @@ Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp
   
 #### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Aby uruchomić aspnet_wp.exe przy użyciu konta użytkownika  
   
-1.  Otwórz plik machine.config, znajduje się w folderze konfiguracji w ścieżce, gdzie zainstalowano środowisko uruchomieniowe na komputerze.  
+1. Otwórz plik machine.config, znajduje się w folderze konfiguracji w ścieżce, gdzie zainstalowano środowisko uruchomieniowe na komputerze.  
   
-2.  Znajdź &lt;processModel&gt; sekcji, a następnie zmień atrybuty użytkownika i hasła na nazwę i hasło konta użytkownika, które chcesz aspnet_wp.exe uruchamiany w kontekście.  
+2. Znajdź &lt;processModel&gt; sekcji, a następnie zmień atrybuty użytkownika i hasła na nazwę i hasło konta użytkownika, które chcesz aspnet_wp.exe uruchamiany w kontekście.  
   
-3.  Zapisz plik machine.config.  
+3. Zapisz plik machine.config.  
   
-4.  Na [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], usług IIS 6.0 jest instalowany domyślnie. Odpowiedni proces roboczy jest w3wp.exe.To uruchamiania w trybie aspnet_wp.exe jako proces roboczy usług IIS 6.0, należy wykonać następujące czynności:  
+4. Na [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], usług IIS 6.0 jest instalowany domyślnie. Odpowiedni proces roboczy jest w3wp.exe.To uruchamiania w trybie aspnet_wp.exe jako proces roboczy usług IIS 6.0, należy wykonać następujące czynności:  
   
-    1.  Kliknij przycisk **Start**, kliknij przycisk **narzędzia administracyjne** , a następnie wybierz **Internetowe usługi informacyjne**.  
+    1. Kliknij przycisk **Start**, kliknij przycisk **narzędzia administracyjne** , a następnie wybierz **Internetowe usługi informacyjne**.  
   
-    2.  W **Internetowe usługi informacyjne** okno dialogowe, kliknij prawym przyciskiem myszy **witryn sieci Web** folder i wybierz polecenie **właściwości**.  
+    2. W **Internetowe usługi informacyjne** okno dialogowe, kliknij prawym przyciskiem myszy **witryn sieci Web** folder i wybierz polecenie **właściwości**.  
   
-    3.  W **właściwości witryn sieci Web** okna dialogowego wybierz **usługi**.  
+    3. W **właściwości witryn sieci Web** okna dialogowego wybierz **usługi**.  
   
-    4.  Wybierz **Uruchom usługę WWW w trybie izolacji IIS6.0**.  
+    4. Wybierz **Uruchom usługę WWW w trybie izolacji IIS6.0**.  
   
-    5.  Zamknij **właściwości** okno dialogowe i **Menedżera internetowych usług**.  
+    5. Zamknij **właściwości** okno dialogowe i **Menedżera internetowych usług**.  
   
-5.  Otwórz wiersz polecenia programu Windows i zresetuj serwera, uruchamiając:  
+5. Otwórz wiersz polecenia programu Windows i zresetuj serwera, uruchamiając:  
   
     ```  
     iisreset  
     ```  
+
     — lub —  
   
     ```  
@@ -66,11 +67,11 @@ Aby skonfigurować komputer, dzięki czemu możesz uruchomić [!INCLUDE[vstecasp
     net start w3svc  
     ```  
   
-6.  Znajdź tymczasowy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] folderu plików, który powinien znajdować się w tej samej ścieżce co folder konfiguracji. Kliknij prawym przyciskiem myszy tymczasowy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] folder plików, a następnie wybierz **właściwości** w menu skrótów.  
+6. Znajdź tymczasowy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] folderu plików, który powinien znajdować się w tej samej ścieżce co folder konfiguracji. Kliknij prawym przyciskiem myszy tymczasowy [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] folder plików, a następnie wybierz **właściwości** w menu skrótów.  
   
-7.  W **tymczasowe ASP.NET pliki właściwości** okno dialogowe, kliknij przycisk **zabezpieczeń** kartę.  
+7. W **tymczasowe ASP.NET pliki właściwości** okno dialogowe, kliknij przycisk **zabezpieczeń** kartę.  
   
-8.  Kliknij przycisk **zaawansowane**.  
+8. Kliknij przycisk **zaawansowane**.  
   
 9. W **Zaawansowane ustawienia zabezpieczeń dla Temporary ASP.Net Files** okno dialogowe, kliknij przycisk **Dodaj**.  
   

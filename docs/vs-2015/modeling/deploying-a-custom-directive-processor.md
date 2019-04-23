@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108363"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,27 +48,27 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Aby opracować niestandardowy procesor dyrektywy w projekcie VSIX  
   
-1.  Utwórz projekt VSIX w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Utwórz projekt VSIX w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**, następnie rozwiń **rozszerzalności**. Kliknij przycisk **projekt VSIX**.  
+    - W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#**, następnie rozwiń **rozszerzalności**. Kliknij przycisk **projekt VSIX**.  
   
-2.  W **source.extension.vsixmanifest**, Ustaw typ zawartości i obsługiwane wersje.  
+2. W **source.extension.vsixmanifest**, Ustaw typ zawartości i obsługiwane wersje.  
   
-    1.  W pliku VSIX edytorze manifestu, na **zasoby** kartę, wybrać **New** i ustaw właściwości nowego elementu:  
+    1. W pliku VSIX edytorze manifestu, na **zasoby** kartę, wybrać **New** i ustaw właściwości nowego elementu:  
   
          **Typ zawartości** = **pakietu VSPackage**  
   
          **Projekt źródła** = \<*bieżącego projektu*>  
   
-    2.  Kliknij przycisk **wybrane wersje** i Sprawdź typy instalacji, na których chcesz mieć działający procesor dyrektywy.  
+    2. Kliknij przycisk **wybrane wersje** i Sprawdź typy instalacji, na których chcesz mieć działający procesor dyrektywy.  
   
-3.  Dodaj plik .pkgdef i ustaw jego właściwości, które mają zostać uwzględnione w VSIX.  
+3. Dodaj plik .pkgdef i ustaw jego właściwości, które mają zostać uwzględnione w VSIX.  
   
-    1.  Utwórz plik tekstowy i nadaj mu nazwę \< *assemblyName*> .pkgdef.  
+    1. Utwórz plik tekstowy i nadaj mu nazwę \< *assemblyName*> .pkgdef.  
   
          \<*assemblyName*> jest zwykle taka sama jak nazwa projektu.  
   
-    2.  Wybierz go w oknie Eksploratora rozwiązań i ustaw jego właściwości w następujący sposób:  
+    2. Wybierz go w oknie Eksploratora rozwiązań i ustaw jego właściwości w następujący sposób:  
   
          **Akcja kompilacji** = **zawartości**  
   
@@ -76,9 +76,9 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
          **Uwzględnione w VSIX** = **True**  
   
-    3.  Ustaw nazwę VSIX i upewnij się, że identyfikator jest unikatowy.  
+    3. Ustaw nazwę VSIX i upewnij się, że identyfikator jest unikatowy.  
   
-4.  Dodaj następujący tekst do pliku .pkgdef.  
+4. Dodaj następujący tekst do pliku .pkgdef.  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -91,46 +91,46 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
      Zastąp następujące nazwy własnymi nazwami: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.  
   
-5.  Dodaj następujące odwołania do projektu:  
+5. Dodaj następujące odwołania do projektu:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Dodaj niestandardową klasę procesora dyrektywy do projektu.  
+6. Dodaj niestandardową klasę procesora dyrektywy do projektu.  
   
      To jest klasa publiczna, która powinna implementować <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
 #### <a name="to-install-the-custom-directive-processor"></a>Aby zainstalować procesor dyrektywy niestandardowej  
   
-1.  W Eksploratorze Windows (Eksplorator plików w systemie Windows 8) otwórz katalog kompilacji (zazwyczaj bin\Debug lub bin\Release).  
+1. W Eksploratorze Windows (Eksplorator plików w systemie Windows 8) otwórz katalog kompilacji (zazwyczaj bin\Debug lub bin\Release).  
   
-2.  Jeśli chcesz zainstalować procesor dyrektywy na innym komputerze, skopiuj plik .vsix do innego komputera.  
+2. Jeśli chcesz zainstalować procesor dyrektywy na innym komputerze, skopiuj plik .vsix do innego komputera.  
   
-3.  Kliknij dwukrotnie plik .vsix. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Zostanie wyświetlony Instalator rozszerzenia.  
+3. Kliknij dwukrotnie plik .vsix. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Zostanie wyświetlony Instalator rozszerzenia.  
   
-4.  Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Teraz można uruchomić szablony tekstowe, które zawierają dyrektywy odwołujące się do procesora dyrektywy niestandardowej. Każda dyrektywa jest tej postaci:  
+4. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Teraz można uruchomić szablony tekstowe, które zawierają dyrektywy odwołujące się do procesora dyrektywy niestandardowej. Każda dyrektywa jest tej postaci:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Aby odinstalować lub tymczasowo wyłączyć procesor dyrektywy niestandardowej  
   
-1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+1. W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
-2.  Wybierz VSIX zawierający procesor dyrektywy, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**.  
+2. Wybierz VSIX zawierający procesor dyrektywy, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**.  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Rozwiązywanie problemów z procesorem dyrektywy w VSIX  
  Jeśli procesor dyrektywy nie działa, poniższe sugestie mogą pomóc:  
   
--   Nazwa procesora, którą określasz w niestandardowej dyrektywie powinna odpowiadać `CustomDirectiveProcessorName` określone w pliku .pkgdef.  
+- Nazwa procesora, którą określasz w niestandardowej dyrektywie powinna odpowiadać `CustomDirectiveProcessorName` określone w pliku .pkgdef.  
   
--   Twoje `IsDirectiveSupported` metoda musi zwracać `true` kiedy jest przekazywana nazwa sieci `CustomDirective`.  
+- Twoje `IsDirectiveSupported` metoda musi zwracać `true` kiedy jest przekazywana nazwa sieci `CustomDirective`.  
   
--   Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie pozwoli go zainstalować, usuń rozszerzenie z **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
+- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie pozwoli go zainstalować, usuń rozszerzenie z **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Otwórz plik .vsix i sprawdź jego zawartość. Aby go otworzyć, zmień rozszerzenie nazwy pliku na .zip. Sprawdź, czy zawiera on pliki .dll, .pkgdef i extension.vsixmanifest. Plik extension.vsixmanifest powinien zawierać odpowiednią listę w węźle SupportedProducts i powinien też zawierać węzeł VsPackage w węźle Content:  
+- Otwórz plik .vsix i sprawdź jego zawartość. Aby go otworzyć, zmień rozszerzenie nazwy pliku na .zip. Sprawdź, czy zawiera on pliki .dll, .pkgdef i extension.vsixmanifest. Plik extension.vsixmanifest powinien zawierać odpowiednią listę w węźle SupportedProducts i powinien też zawierać węzeł VsPackage w węźle Content:  
   
      `<Content>`  
   
@@ -174,15 +174,15 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
 3. Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.  
   
-   -   W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.  
+   - W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.  
   
 4. W nowym węźle dodaj wartości ciągu dla Class i CodeBase lub Assembly, zgodnie z poniższymi tabelami.  
   
-   1.  Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.  
+   1. Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.  
   
-   2.  Wyedytuj nazwę wartości.  
+   2. Wyedytuj nazwę wartości.  
   
-   3.  Kliknij dwukrotnie nazwę i wyedytuj dane.  
+   3. Kliknij dwukrotnie nazwę i wyedytuj dane.  
   
    Jeśli procesor dyrektywy niestandardowej nie znajduje się w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:  
   

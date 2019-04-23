@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105373"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Przewodnik: Używanie Graphics Diagnostics do debugowania cieniowania obliczenia
 W tym instruktażu przedstawiono sposób korzystania z narzędzi Visual Studio diagnostyki grafiki do zbadania cieniowania obliczenia, które generuje nieprawidłowe wyniki.
 
  Ten instruktaż ilustruje następujące zadania:
 
--   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
+- Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.
 
--   Za pomocą **stos wywołań zdarzenia grafiki** do określenia, które cieniowanie obliczenia jest wykonywane przez DirectCompute `Dispatch` zdarzeń.
+- Za pomocą **stos wywołań zdarzenia grafiki** do określenia, które cieniowanie obliczenia jest wykonywane przez DirectCompute `Dispatch` zdarzeń.
 
--   Za pomocą **etapy potoku grafiki** okna i debugera HLSL można badać cieniowanie obliczenia będące źródłem problemu.
+- Za pomocą **etapy potoku grafiki** okna i debugera HLSL można badać cieniowanie obliczenia będące źródłem problemu.
 
 ## <a name="scenario"></a>Scenariusz
  W tym scenariuszu zaprojektowałeś symulację dynamiki płynów, której używa DirectCompute do wykonywania najintensywniejszej obliczeniowo części aktualizacji symulacji. Po uruchomieniu aplikacji renderowanie zestawu danych i interfejs użytkownika jest poprawna, ale Symulacja nie zachowuje się zgodnie z oczekiwaniami. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki, dzięki czemu można debugować aplikację. Problem wygląda to w aplikacji:

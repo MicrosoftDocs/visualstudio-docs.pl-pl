@@ -20,30 +20,30 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d15d56edec544ac68f21026758ced6292ee7de8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108571"
 ---
 # <a name="debugging-linq"></a>Debugowanie LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Obsługa debugowania języka zintegrowanego zapytania kodu (LINQ), z pewnymi ograniczeniami. Najbardziej debugujące funkcje współpracują z instrukcjami LINQ, w tym przechodzenie krok po kroku, ustawiania punktów przerwania i wyświetlaniem wyników w oknach debugera. Ten temat opisuje główne ograniczenia debugowania LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników programu LINQ  
+## <a name="BKMK_ViewingLINQResults"></a> Wyświetlanie wyników programu LINQ  
  Można przeglądać rezultaty instrukcji LINQ, używając DataTips, okna czujki i okna dialogowego QuickWatch. Kiedy używasz okna źródła, możesz wstrzymać wskaźnik na zapytaniu w oknie źródła i wyświetli się datatip. Można kopiować zmienną LINQ i wklej go w oknie czujki lub okno dialogowe QuickWatch.  
   
  W programie LINQ kwerenda nie jest uwzględniana podczas tworzenia lub deklarowania, ale tylko wtedy, gdy kwerenda jest używana. W związku z tym zapytanie nie ma wartości dopóki jest ocenione. Aby uzyskać pełny opis tworzenia i oceny kwerend, zobacz [wprowadzenie do zapytań LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) lub [Your pierwszego zapytania LINQ pisania](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Aby wyświetlić wynik zapytania, debugger musi je ocenić. Bezwarunkowa ocena, która występuje podczas wyświetlania wyniku zapytania LINQ w debugerze, ma jakieś konsekwencje, które należy wziąć pod uwagę:  
   
--   Każdej oceny kwerendy jest czasochłonne. Rozwinięcie węzła wyników zajmuje trochę czasu. Dla niektórych zapytań powtarzające się oceny może prowadzić do kar zauważalna zmiana wydajności.  
+- Każdej oceny kwerendy jest czasochłonne. Rozwinięcie węzła wyników zajmuje trochę czasu. Dla niektórych zapytań powtarzające się oceny może prowadzić do kar zauważalna zmiana wydajności.  
   
--   Ocena zapytania może spowodować efekty uboczne, które są zmianami wartości danych lub stanu programu. Nie wszystkie kwerendy mają skutki uboczne. Aby ustalić, czy zapytanie może być bezpiecznie ocenione bez efektów ubocznych, musisz zrozumieć kod, który implementuje zapytanie.  
+- Ocena zapytania może spowodować efekty uboczne, które są zmianami wartości danych lub stanu programu. Nie wszystkie kwerendy mają skutki uboczne. Aby ustalić, czy zapytanie może być bezpiecznie ocenione bez efektów ubocznych, musisz zrozumieć kod, który implementuje zapytanie.  
   
-##  <a name="BKMK_SteppingAndLinq"></a> Przechodzenie krok po kroku i LINQ  
+## <a name="BKMK_SteppingAndLinq"></a> Przechodzenie krok po kroku i LINQ  
  Podczas debugowania kodu LINQ, krokowość posiada różnice w zachowaniu, które należy poznać.  
   
 ### <a name="linq-to-sql"></a>LINQ do SQL  
@@ -107,7 +107,7 @@ End Function
   
  Zrewidowane zapytanie wywołuje funkcję `IsEven` przy każdym przejściu przez `items`. Można użyć okien debugera, aby zobaczyć, czy każdy element spełnia podany warunek i można przejść przez kod w `IsEven`. Predykat w tym przykładzie jest dość prosta. Jednak jeśli masz trudniejszy predykat, który musisz zdebugować, ta technika może być bardzo przydatne.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytuj i Kontynuuj nie obsługiwanie dla programu LINQ  
+## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Edytuj i Kontynuuj nie obsługiwanie dla programu LINQ  
  Edytuj i Kontynuuj nie obsługuje zmiany zapytań LINQ. Jeśli dodać, usunąć lub zmienisz instrukcję LINQ podczas sesji debugowania pojawia się okno dialogowe informujące, że zmiana nie jest obsługiwana przez Edytuj i Kontynuuj. W tym momencie można albo cofnąć zmiany lub zatrzymać sesję debugowania i ponownie uruchomić nową sesję edycji kodu.  
   
  Ponadto, Edytuj i Kontynuuj nie obsługuje zmiany typu lub wartości zmiennej, która jest używana w instrukcji LINQ. Ponownie można albo cofnąć zmiany lub zatrzymać i ponownie uruchomić sesję debugowania.  

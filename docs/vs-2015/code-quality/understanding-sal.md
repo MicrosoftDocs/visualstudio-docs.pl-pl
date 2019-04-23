@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104021"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Przykład: \_w\_ adnotacji  
  `_In_` Adnotacja wskazuje, że:  
   
--   Parametr musi być prawidłowy i nie zostaną zmodyfikowane.  
+- Parametr musi być prawidłowy i nie zostaną zmodyfikowane.  
   
--   Funkcja odczyta tylko z jednym elementem buforu.  
+- Funkcja odczyta tylko z jednym elementem buforu.  
   
--   Obiekt wywołujący, musisz podać buforu i zainicjować go.  
+- Obiekt wywołujący, musisz podać buforu i zainicjować go.  
   
--   `_In_` Określa "read-only". Powszechnym błędem jest do zastosowania `_In_` do parametru, którą powinien posiadać `_Inout_` adnotacji zamiast tego.  
+- `_In_` Określa "read-only". Powszechnym błędem jest do zastosowania `_In_` do parametru, którą powinien posiadać `_Inout_` adnotacji zamiast tego.  
   
--   `_In_` jest dozwolone, ale jest ignorowana przez analizator na nie będącego wskaźnikiem wartości skalarnych.  
+- `_In_` jest dozwolone, ale jest ignorowana przez analizator na nie będącego wskaźnikiem wartości skalarnych.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108376"
 ---
 # <a name="full-text-search-tips"></a>Wskazówki dotyczące wyszukiwania pełnotekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Jednym z bardziej użyteczne metody lokalizowania informacji w pomocy jest, wyko
   
 > [!IMPORTANT]
 > 1. Wyszukiwanie frazy nie jest obsługiwane. Jeśli określisz więcej niż jeden wyraz w wyszukiwanym ciągu zwróconego tematów będzie zawierać wszystkie wyrazy, które określiłeś, ale niekoniecznie dokładnej frazy, który określiłeś.  
->    2.  Użyj operatorów logicznych, aby określić relację między wyrazami w swojej frazy wyszukiwania. Możesz uwzględnić operatorów logicznych, takich jak AND, OR, NOT i w pobliżu, aby jeszcze bardziej Uściślij kryteria wyszukiwania. Na przykład jeśli wyszukasz "deklarowanie Unii w pobliżu" wyniki wyszukiwania zawierają tematy zawierające słowa "deklarowanie" i "union" ma więcej niż kilka słów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md).  
+>    2. Użyj operatorów logicznych, aby określić relację między wyrazami w swojej frazy wyszukiwania. Możesz uwzględnić operatorów logicznych, takich jak AND, OR, NOT i w pobliżu, aby jeszcze bardziej Uściślij kryteria wyszukiwania. Na przykład jeśli wyszukasz "deklarowanie Unii w pobliżu" wyniki wyszukiwania zawierają tematy zawierające słowa "deklarowanie" i "union" ma więcej niż kilka słów od siebie nawzajem. Aby uzyskać więcej informacji, zobacz [operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtry  
  Za pomocą operatorów wyszukiwania zaawansowanego, można bardziej ograniczyć wyniki wyszukiwania. Pomoc zawiera trzy kategorie, które można użyć do filtrowania wyników wyszukiwania pełnotekstowego: Tytuł, kodu i słowo kluczowe. Aby uzyskać więcej informacji, zobacz [operatora wyszukiwania zaawansowanego w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -51,11 +51,11 @@ Jednym z bardziej użyteczne metody lokalizowania informacji w pomocy jest, wyko
 ### <a name="ranking-of-search-results"></a>Klasyfikacja wyników wyszukiwania  
  Algorytm wyszukiwania mają zastosowanie określone kryteria w celu ranga wyniki, wyższe lub niższe wyszukiwania na liście wyników. Ogólnie rzecz biorąc:  
   
-1.  Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.  
+1. Zawartość, która zawiera słów kluczowych w tytule znajduje się wyżej niż zawartość, która nie.  
   
-2.  Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.  
+2. Zawartość, która zawiera słów kluczowych w bliskim sąsiedztwie znajduje się wyżej niż zawartość, która nie.  
   
-3.  Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.  
+3. Zawartość, która zawiera zwiększenie gęstości słów wyszukiwania znajduje się wyżej niż zawartości, który ma niższy gęstość wyszukiwanych słów.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Słowa ignorowane podczas wyszukiwania (słowa ignorowane)  
  Najczęściej występujących słów lub cyfr, które są czasem nazywane słowa ignorowane, automatycznie są pomijane podczas wyszukiwania pełnotekstowego. Na przykład jeśli możesz wyszukać frazę "przekazywania" wyniki wyszukiwania zostanie wyświetlona tematy zawierające słowo "przebiegu" ale nie "do".  

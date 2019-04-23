@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106114"
 ---
 # <a name="how-to-manage-editor-windows"></a>Instrukcje: Zarządzanie oknami edytora
 
@@ -33,9 +33,9 @@ Wystąpienie okno edytora można podzielić na dwa oddzielne widoki w celu ułat
 
 ### <a name="to-split-a-pane"></a>Aby podzielić okienko
 
-1.  Kliknij w oknie edytora, aby ustawić fokus.
+1. Kliknij w oknie edytora, aby ustawić fokus.
 
-2.  Z **okna** menu, wybierz opcję **podziału**.
+2. Z **okna** menu, wybierz opcję **podziału**.
 
      Obszar edytowania dzieli się na dwie części oddzielone pasek podziału. Można przewijać te okienka niezależnie, aby wyświetlić i edytować różne części aktywnego dokumentu w tym samym czasie. Wszelkie zmiany wprowadzone w jednym okienku są odzwierciedlane w innych.
 
@@ -44,7 +44,7 @@ Wystąpienie okno edytora można podzielić na dwa oddzielne widoki w celu ułat
 
 ### <a name="to-return-to-single-pane-view"></a>Aby powrócić do widoku
 
--   Z **okna** menu, wybierz opcję **Usuń podział**.
+- Z **okna** menu, wybierz opcję **Usuń podział**.
 
 ## <a name="create-new-windows"></a>Tworzenie nowych okien
 

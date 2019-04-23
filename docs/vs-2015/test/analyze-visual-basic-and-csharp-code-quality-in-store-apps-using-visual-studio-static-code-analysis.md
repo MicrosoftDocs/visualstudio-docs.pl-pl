@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108344"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu w języku Visual Basic i C# w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 
@@ -42,7 +42,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
  [Ostrzeżenia analizy kodu w języku Visual Basic i C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu
+## <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu
  Aby uruchomić analizę kodu w rozwiązaniu programu Visual Studio:
 
 - Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.
@@ -57,7 +57,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
    ![Okno analizy kodu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
+## <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu
  Aby analizować szczególne ostrzeżenie, kliknij tytuł ostrzeżenie w oknie analizy kodu. Ostrzeżenie rozwija, aby wyświetlić szczegółowe informacje o problemie.
 
  ![Rozwinięte ostrzeżenie analizy kodu](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
@@ -71,7 +71,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 > [!TIP]
 >  Możesz ponownie uruchomić analizę kodu w oknie analizy kodu. Kliknij przycisk **analizy** przycisk, a następnie wybierz zakres analizy. Możesz ponownie uruchomić analizy na całego rozwiązania lub wybranego projektu.
 
-##  <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
+## <a name="BKMK_Suppress"></a> Pomijanie ostrzeżeń analizy kodu
  Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Poszczególne ostrzeżenia można pominąć, tak aby nie były widoczne w oknie analizy kodu.
 
  Aby pominąć Ostrzeżenie:
@@ -88,14 +88,14 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 
      Decyzji, czy ostrzeżenia w pliku źródłowym lub w pliku pominięć zależy od potrzeb i stylu kodowania.
 
-##  <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
+## <a name="BKMK_Search"></a> Wyszukiwanie i filtrowanie wyników analizy kodu
  Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.
 
  ![Wyszukiwanie i filtrowanie oknie analizy kodu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  W [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], wszystkie code analysis ostrzeżenia mają poziom ważności ostrzeżenie.
 
-##  <a name="BKMK_Warnings"></a> Ostrzeżenia analizy kodu w języku Visual Basic i C#
+## <a name="BKMK_Warnings"></a> Ostrzeżenia analizy kodu w języku Visual Basic i C#
  Analiza kodu generuje następujące ostrzeżenia:
 
  [CA1001: Typy, które posiadają pola usuwalne powinny być usuwalne](http://msdn.microsoft.com/library/ms182172.aspx)

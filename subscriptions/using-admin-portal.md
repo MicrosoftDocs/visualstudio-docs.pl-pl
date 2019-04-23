@@ -7,14 +7,14 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Dowiedz się, jak zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora.
 searchscope: VS Subscription
-ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4c8d3aa20138e7ebe56d5b51472ecc54abcf32f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105191"
 ---
-#  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
+# <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Korzystanie z portalu administratora subskrypcji programu Visual Studio
 
 Miej to na uwadze, korzystając z portalu administratora subskrypcji Visual Studio:
 

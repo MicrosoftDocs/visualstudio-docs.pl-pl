@@ -8,12 +8,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107578"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Instrukcje: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego
 
@@ -30,15 +30,15 @@ Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenio
 
 Krokowego wzorca obciążenia umożliwia zwiększenie obciążenia na serwerze lub serwerach, przebiegów testów obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się wraz ze wzrostem obciążenia użytkownika. Na przykład aby zobaczyć, jak wykonać serwer lub serwery jako obciążenie użytkownikami, zwiększając do 2000 użytkowników, może uruchomić 10-godzinny test obciążenia przy użyciu krokowego wzorca obciążenia o następujących właściwościach:
 
--   Początkowa liczba użytkowników: 100
+- Początkowa liczba użytkowników: 100
 
--   Maksymalna liczba użytkowników: 2000
+- Maksymalna liczba użytkowników: 2000
 
--   Czas trwania kroku (w sekundach): 1800
+- Czas trwania kroku (w sekundach): 1800
 
--   Czas do zwiększenia kroku (w sekundach): 20
+- Czas do zwiększenia kroku (w sekundach): 20
 
--   Liczba użytkowników zwiększana podczas kroku: 100
+- Liczba użytkowników zwiększana podczas kroku: 100
 
 Te ustawienia mają testu obciążeniowego na 30 minut (1800 sekund) uruchomiany 100, 200, 300, do 2000 użytkowników.
 
@@ -49,24 +49,24 @@ Te ustawienia mają testu obciążeniowego na 30 minut (1800 sekund) uruchomiany
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Aby edytować właściwości czasu narastania kroku dla wzorca obciążenia krokowego
 
-1.  Otwórz test obciążenia.
+1. Otwórz test obciążenia.
 
      **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
-2.  Obciążenia test drzew **scenariuszy** folder, otwórz węzłem scenariusza, aby określić narastania kroku czasu.
+2. Obciążenia test drzew **scenariuszy** folder, otwórz węzłem scenariusza, aby określić narastania kroku czasu.
 
-3.  Wybierz **krokowego wzorca obciążenia** węzła.
+3. Wybierz **krokowego wzorca obciążenia** węzła.
 
     > [!NOTE]
     > Wzorzec obciążenia dla scenariusza muszą być krokowego wzorca obciążenia. Jeśli nie jest dostępne, wzorzec obciążenia będą wyświetlane typ wzorca obciążenia, który jest aktualnie powiązany z tego scenariusza. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  Na **widoku** menu, wybierz opcję **okno właściwości**.
+4. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
      Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
-5.  Ustaw wartość **czas do zwiększenia kroku** właściwość wprowadzić liczbę dla sekund wykonane w każdym kroku, aby stopniowo dodawania użytkowników określonych przez **liczba użytkowników zwiększana podczas kroku** właściwości.
+5. Ustaw wartość **czas do zwiększenia kroku** właściwość wprowadzić liczbę dla sekund wykonane w każdym kroku, aby stopniowo dodawania użytkowników określonych przez **liczba użytkowników zwiększana podczas kroku** właściwości.
 
-6.  Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **czas do zwiększenia kroku** wartość.
+6. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia za pomocą nowego **czas do zwiększenia kroku** wartość.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,14 +14,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108792"
 ---
-# <a name="how-to-create-item-templates"></a>Porady: Tworzenie szablonów elementu
+# <a name="how-to-create-item-templates"></a>Instrukcje: Tworzenie szablonów elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) części tego tematu dowiesz się, jak utworzyć szablon elementu za pomocą **Eksportuj szablon** kreatora. Jeśli Twój szablon będzie składać się z wielu plików, zobacz [jak: Tworzenie szablonów elementów wielu plików](../ide/how-to-create-multi-file-item-templates.md).  
@@ -34,21 +34,21 @@ Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-
   
 ### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>Aby dodać szablon elementu niestandardowego projektu do okna dialogowego Dodaj nowy element  
   
-1.  Utwórz lub Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Utwórz lub Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.  
+2. Dodaj element do projektu i zmodyfikuj go, jeśli chcesz.  
   
-3.  Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Zmodyfikuj plik kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Aby uzyskać więcej informacji, zobacz [jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Na **pliku** menu, kliknij przycisk **Eksportuj szablon**.  
+4. Na **pliku** menu, kliknij przycisk **Eksportuj szablon**.  
   
-5.  Kliknij przycisk **szablon elementu**, a następnie wybierz projekt, który zawiera element i kliknij przycisk **dalej**.  
+5. Kliknij przycisk **szablon elementu**, a następnie wybierz projekt, który zawiera element i kliknij przycisk **dalej**.  
   
-6.  Wybierz element, dla którego chcesz utworzyć szablon, a następnie kliknij przycisk **dalej**.  
+6. Wybierz element, dla którego chcesz utworzyć szablon, a następnie kliknij przycisk **dalej**.  
   
-7.  Wybierz odwołania do zestawu do uwzględnienia w szablonie, a następnie kliknij przycisk **dalej**.  
+7. Wybierz odwołania do zestawu do uwzględnienia w szablonie, a następnie kliknij przycisk **dalej**.  
   
-8.  Wpisz nazwę pliku ikony, obraz podglądu, nazwę szablonu i opis szablonu, a następnie kliknij przycisk **Zakończ**.  
+8. Wpisz nazwę pliku ikony, obraz podglądu, nazwę szablonu i opis szablonu, a następnie kliknij przycisk **Zakończ**.  
   
      Pliki szablonu są dodawane do pliku .zip i kopiowane do katalogu, niezależnie od określonej w oknie dialogowym. Domyślna lokalizacja to **... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio \<wersji > \My wyeksportowane szablony\\**  folderu.  
   
@@ -141,21 +141,21 @@ Kroki opisane w [pierwszej procedury](#to-add-a-custom-project-item-template-to-
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Aby ręcznie utworzyć szablon elementu bez użycia Kreatora eksportowania szablonu  
   
-1.  Tworzenie projektu i elementu projektu.  
+1. Tworzenie projektu i elementu projektu.  
   
-2.  Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.  
+2. Zmodyfikuj element projektu, dopóki nie jest gotowa do zapisania jako szablonu.  
   
-3.  Zgodnie z potrzebami zmodyfikuj plik kodu, aby wskazać, gdzie powinno nastąpić wymiany parametru. Aby uzyskać więcej informacji na temat wymiany parametru Zobacz jak: Zastępowanie parametrów w szablonie.  
+3. Zgodnie z potrzebami zmodyfikuj plik kodu, aby wskazać, gdzie powinno nastąpić wymiany parametru. Aby uzyskać więcej informacji na temat wymiany parametru Zobacz jak: Zastępowanie parametrów w szablonie.  
   
-4.  Utwórz plik XML i zapisz go przy użyciu rozszerzenia nazwy pliku .vstemplate, w tym samym katalogu, co Twój nowy szablon elementu.  
+4. Utwórz plik XML i zapisz go przy użyciu rozszerzenia nazwy pliku .vstemplate, w tym samym katalogu, co Twój nowy szablon elementu.  
   
-5.  Tworzenie pliku XML .vstemplate do udostępnienia metadanych szablonu elementu. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) i w przykładzie w poprzedniej sekcji.  
+5. Tworzenie pliku XML .vstemplate do udostępnienia metadanych szablonu elementu. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md) i w przykładzie w poprzedniej sekcji.  
   
-6.  Zapisz plik .vstemplate i zamknij go.  
+6. Zapisz plik .vstemplate i zamknij go.  
   
-7.  W Eksploratorze Windows wybierz pliki, które chcesz uwzględnić w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowany (zip). Wybrane pliki są kompresowane w pliku zip.  
+7. W Eksploratorze Windows wybierz pliki, które chcesz uwzględnić w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk Wyślij do, a następnie kliknij Folder skompresowany (zip). Wybrane pliki są kompresowane w pliku zip.  
   
-8.  Skopiuj plik zip i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2015 domyślnym katalogiem jest... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz jak: Znajdź i organizowania projektów i szablonów elementów.  
+8. Skopiuj plik zip i wklej go w lokalizacji szablonów elementów użytkownika. W programie Visual Studio 2015 domyślnym katalogiem jest... \Users\\< nazwa_użytkownika\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Aby uzyskać więcej informacji, zobacz jak: Znajdź i organizowania projektów i szablonów elementów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)   

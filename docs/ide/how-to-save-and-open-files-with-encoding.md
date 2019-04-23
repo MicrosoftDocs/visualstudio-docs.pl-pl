@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 484a891c83796f58c7ed8d6053c51189b2448bb9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104034"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Instrukcje: Zapisywanie i otwieranie plików z zastosowaniem kodowania
 
@@ -26,13 +26,13 @@ Pliki można zapisać przy użyciu określonych znaków kodowania w celu włącz
 
 ## <a name="to-save-a-file-with-encoding"></a>Aby zapisać plik z kodowaniem
 
-1.  Z **pliku** menu, wybierz **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok pola **Zapisz** przycisku.
+1. Z **pliku** menu, wybierz **Zapisz plik jako**, a następnie kliknij przycisk listy rozwijanej obok pola **Zapisz** przycisku.
 
      **Zaawansowane opcje zapisywania** zostanie wyświetlone okno dialogowe.
 
-2.  W obszarze **kodowanie**, wybierz kodowanie do użycia dla pliku.
+2. W obszarze **kodowanie**, wybierz kodowanie do użycia dla pliku.
 
-3.  Opcjonalnie w obszarze **zakończenia wierszy**, wybierz format znaki końca wiersza.
+3. Opcjonalnie w obszarze **zakończenia wierszy**, wybierz format znaki końca wiersza.
 
      Ta opcja jest przydatna, jeśli zamierzasz wymiany plików z użytkownicy systemów operacyjnych.
 
@@ -40,21 +40,21 @@ Pliki można zapisać przy użyciu określonych znaków kodowania w celu włącz
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Aby otworzyć plik zakodowany, który jest częścią projektu
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik i wybierz **Otwórz za pomocą**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy plik i wybierz **Otwórz za pomocą**.
 
-2.  W **Otwórz za pomocą** okno dialogowe, wybierz Otwórz plik w edytorze.
+2. W **Otwórz za pomocą** okno dialogowe, wybierz Otwórz plik w edytorze.
 
      Wiele edytorów programu Visual Studio, takich jak edytor formularzy spowoduje automatyczne wykrywanie kodowania i Otwórz plik odpowiednio. Jeśli wybierzesz Edytor który pozwala wybrać kodowanie **kodowanie** zostanie wyświetlone okno dialogowe.
 
-3.  W **kodowanie** okna dialogowego Wybierz kodowanie, który ma być używany w edytorze.
+3. W **kodowanie** okna dialogowego Wybierz kodowanie, który ma być używany w edytorze.
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Aby otworzyć plik zakodowany, który nie jest częścią projektu
 
-1.  Na **pliku** menu wskaż **Otwórz**, wybierz **pliku** lub **plik z sieci Web**, a następnie wybierz plik aby otworzyć.
+1. Na **pliku** menu wskaż **Otwórz**, wybierz **pliku** lub **plik z sieci Web**, a następnie wybierz plik aby otworzyć.
 
-2.  Kliknij przycisk listy rozwijanej obok pozycji **Otwórz** przycisk, a następnie wybierz **Otwórz za pomocą**.
+2. Kliknij przycisk listy rozwijanej obok pozycji **Otwórz** przycisk, a następnie wybierz **Otwórz za pomocą**.
 
-3.  Wykonaj kroki 2 i 3 poprzedniej procedury.
+3. Wykonaj kroki 2 i 3 poprzedniej procedury.
 
 ## <a name="see-also"></a>Zobacz także
 

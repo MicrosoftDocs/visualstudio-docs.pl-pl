@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110930"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Visual Studio i .NET Framework razem zapewniają szeroką interfejsu API i narz�
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
--   [Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Dodawanie nowych połączeń](../data-tools/add-new-connections.md)  
+- [Dodawanie nowych połączeń](../data-tools/add-new-connections.md)  
   
--   [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)  
+- [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)  
   
--   [Narzędzia modelu Entity Data Model w programie Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Narzędzia modelu Entity Data Model w programie Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Tworzenie baz danych i aplikacji warstw danych oraz zarządzanie nimi w programie Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Tworzenie baz danych i aplikacji warstw danych oraz zarządzanie nimi w programie Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

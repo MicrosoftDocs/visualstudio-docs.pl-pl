@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108506"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Instrukcje: Określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apli
   
 ### <a name="to-specify-an-installation-url"></a>Aby określić adres URL instalacji  
   
-1.  Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
+1. Za pomocą projektu wybranego w **Eksploratora rozwiązań**na **projektu** menu, kliknij przycisk **właściwości**.  
   
-2.  Kliknij przycisk **Publikuj** kartę.  
+2. Kliknij przycisk **Publikuj** kartę.  
   
-3.  W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie http://www.microsoft.com/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName.  
+3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowany adres URL w formacie http://www.microsoft.com/ApplicationName, lub ścieżkę UNC w formacie \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Określanie lokalizacji kopiowania plików w programie Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

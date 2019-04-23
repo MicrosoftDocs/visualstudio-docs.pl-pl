@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110170"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Instrukcje: Programowe ukrywanie tekstu w dokumentach
   Można ukryć tekstu w dokumencie, ustawiając <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range.Font%2A> dla określonego zakresu tekstu.
@@ -29,17 +29,17 @@ ms.locfileid: "56646086"
 
 ## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Aby ukryć tekstu w kontrolce zakładki podczas wydruku dokumentu
 
-1.  Utwórz procedurę, która ukrywa cały tekst, który znajduje się w określonym zakresie.
+1. Utwórz procedurę, która ukrywa cały tekst, który znajduje się w określonym zakresie.
 
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
 
-2.  Tworzenie procedury, która odkrywa cały tekst, który znajduje się w określonym zakresie.
+2. Tworzenie procedury, która odkrywa cały tekst, który znajduje się w określonym zakresie.
 
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
 
-3.  Zakres zakładki w celu przekazania `HideText` metody, wydrukować dokument, a następnie przekazać ten sam zakres do `UnhideText` metody.
+3. Zakres zakładki w celu przekazania `HideText` metody, wydrukować dokument, a następnie przekazać ten sam zakres do `UnhideText` metody.
 
      Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisDocument` klasy w projekcie.
 

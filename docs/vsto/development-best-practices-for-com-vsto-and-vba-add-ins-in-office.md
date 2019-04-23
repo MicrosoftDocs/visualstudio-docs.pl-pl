@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111184"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania programistyczne dla modelu COM, VSTO i VBA dodatków pakietu Office
   Jeśli tworzysz COM, VSTO i VBA dodatków pakietu Office, postępuj zgodnie z najlepszych rozwiązań programistycznych opisanych w tym artykule.   Ułatwi to zapewnienie:
 
--  Zgodność dodatków między różnymi wersjami i wdrożenia pakietu Office.
--  Złożoności wdrażania dodatku dla użytkowników i administratorów IT.
--  Nie występują niezamierzone instalacji lub środowisko uruchomieniowe błędów dodatku.
+- Zgodność dodatków między różnymi wersjami i wdrożenia pakietu Office.
+- Złożoności wdrażania dodatku dla użytkowników i administratorów IT.
+- Nie występują niezamierzone instalacji lub środowisko uruchomieniowe błędów dodatku.
 
 >Uwaga: Za pomocą [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) przygotować swoje COM, VSTO i VBA dodatku Store Windows nie jest obsługiwane. COM, VSTO i VBA dodatki nie mogą być dystrybuowane w Windows Store lub Store pakietu Office.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107362"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Instrukcje: Uwzględnianie pliku danych w aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ Każdy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalowania aplik
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe  
   
-1.  Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
+1. Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
   
-2.  Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
+2. Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
   
-3.  Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.  
+3. Na **pliku** menu, kliknij przycisk **Otwórz** otworzyć manifest aplikacji.  
   
-4.  Wybierz **pliki** kartę.  
+4. Wybierz **pliki** kartę.  
   
-5.  W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.  
+5. W polu tekstowym w górnej części karty wprowadź katalog, który zawiera pliki aplikacji, a następnie kliknij przycisk **wypełniania**.  
   
      Plik danych zostaną wyświetlone w siatce.  
   
-6.  Ustaw **typ pliku** wartość plik danych do **danych**.  
+6. Ustaw **typ pliku** wartość plik danych do **danych**.  
   
-7.  Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.  
+7. Zapisz manifest aplikacji, a następnie ponowne podpisywanie pliku.  
   
      MageUI.exe wyświetli monit o ponowne podpisywanie pliku.  
   
-8.  Ponownie podpisać manifest wdrożenia  
+8. Ponownie podpisać manifest wdrożenia  
   
      Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.  
   

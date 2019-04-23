@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105633"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Umożliwia Lista zdarzeń graficznych w analizatora grafiki programu Visual Stud
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Aby zmienić tryb widoku listy zdarzeń  
   
--   W **Lista zdarzeń graficznych** Znajdź okno powyżej listy zdarzeń, **widoku** listy rozwijanej i wybierz **osi czasu** widoku lub **wywołaniarysowania** widoku.  
+- W **Lista zdarzeń graficznych** Znajdź okno powyżej listy zdarzeń, **widoku** listy rozwijanej i wybierz **osi czasu** widoku lub **wywołaniarysowania** widoku.  
   
 ### <a name="filtering-events"></a>Filtrowanie zdarzeń  
  Można użyć pola wyszukiwania — znajdującego się w prawym górnym rogu **Lista zdarzeń graficznych** okna — Aby filtrować listę zdarzeń, aby uwzględnić tylko zdarzenia, których nazwy zawierają konkretnych słów kluczowych. Można określić pojedynczy słów kluczowych, takich jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub wiele słów kluczowych, korzystając z rozdzielaną średnikami listę `Draw;Primitive`— który dopasowuje zdarzenia, które mają jedną `Draw` lub `Primitive` w nazwach. Wyszukiwania są wrażliwe na białe znaki — na przykład `VSSet` i `VS Set` są różne wyszukiwania — więc upewnij się, że formularz wyszukiwania ostrożnie.  

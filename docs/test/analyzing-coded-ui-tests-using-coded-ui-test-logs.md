@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105123"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie coded UI kodowanych testów przy użyciu dzienników testu interfejsu użytkownika
 
@@ -60,18 +60,18 @@ Zależnie od scenariusza należy użyć jednej z następujących metod Aby włą
 
 Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do *QTAgent32.exe.config* pliku w miejscu, zobacz dane wyjściowe link **Eksploratora testów** wyników. Pliki dziennika są tworzone, nie tylko w przypadku, gdy test zakończy się niepowodzeniem, ale także w przypadku udanych testów, gdy poziom śledzenia jest ustawiona na "pełne."
 
-1.  Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
+1. Na **testu** menu, wybierz **Windows** , a następnie wybierz **Eksplorator testów**.
 
-2.  Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
+2. Na **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
-3.  W **Eksploratora testów**, wybierz kodowanego testu interfejsu użytkownika, aby uruchomić, otwórz jego menu skrótów, a następnie wybierz **Uruchom wybrane testy**.
+3. W **Eksploratora testów**, wybierz kodowanego testu interfejsu użytkownika, aby uruchomić, otwórz jego menu skrótów, a następnie wybierz **Uruchom wybrane testy**.
 
      Testy automatyczne uruchamianie i wskazują one powodzeniem lub niepowodzeniem.
 
     > [!TIP]
     > Aby wyświetlić **Eksplorator testów**, wybierz **testu** > **Windows**, a następnie wybierz **Eksplorator testów**.
 
-4.  Wybierz **dane wyjściowe** łącze w **Eksplorator testów** wyników.
+4. Wybierz **dane wyjściowe** łącze w **Eksplorator testów** wyników.
 
      ![Link danych wyjściowych w Eksploratorze testów](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika ze zmianami do *QTAgent
 
      ![Wyniki i łącza danych wyjściowych z kodowanego testu interfejsu użytkownika](../test/media/cuit_htmlactionlog2.png)
 
-5.  Wybierz *UITestActionLog.html* łącza.
+5. Wybierz *UITestActionLog.html* łącza.
 
      Dziennik jest wyświetlany w przeglądarce sieci web.
 

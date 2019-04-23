@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c51d2466cc7382e98b0d0d82efff14f817a98e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107765"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Wyświetl wątki w debugerze programu Visual Studio za pomocą okna wątki (C#, Visual Basic, C++)
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który debugujesz. Aby uzyskać szczegółowe instrukcje dotyczące sposobu używania **wątków** okna, zobacz [instruktażu: Debugowanie za pomocą okna wątki](../debugger/how-to-use-the-threads-window.md).
@@ -64,18 +64,18 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
 
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Aby wyświetlić okno wątków w trybie przerwania lub w trybie uruchamiania
 
--   Visual Studio jest w trybie debugowania, wybierz **debugowania** menu wskaż **Windows**, a następnie wybierz pozycję **wątków**.
+- Visual Studio jest w trybie debugowania, wybierz **debugowania** menu wskaż **Windows**, a następnie wybierz pozycję **wątków**.
 
 ### <a name="to-display-or-hide-a-column"></a>Aby wyświetlić lub ukryć kolumny
 
--   Na pasku narzędzi u góry **wątków** wybierz **kolumn**. Następnie zaznacz lub wyczyść nazwę kolumny, który chcesz wyświetlić lub ukryć.
+- Na pasku narzędzi u góry **wątków** wybierz **kolumn**. Następnie zaznacz lub wyczyść nazwę kolumny, który chcesz wyświetlić lub ukryć.
 
 ## <a name="display-flagged-threads"></a>Wyświetlanie oflagowane wątki
  Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków** okna. Aby uzyskać więcej informacji, zobacz [jak: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md). W **wątków** oknie, użytkownik może wyświetlić wszystkie wątki lub tylko oflagowane wątki.
 
 ### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
 
--   Wybierz **Pokaż wątki tylko oflagowane** na pasku narzędzi u góry **wątków** okna. (Jeśli go jest nieaktywne, musisz najpierw oflagowania wątków.)
+- Wybierz **Pokaż wątki tylko oflagowane** na pasku narzędzi u góry **wątków** okna. (Jeśli go jest nieaktywne, musisz najpierw oflagowania wątków.)
 
 ## <a name="freeze-and-thaw-threads"></a>Zablokuj i Odblokuj wątki
  Zablokowanie wątku systemu nie uruchamia wykonywanie wątku, nawet jeśli zasoby są dostępne.
@@ -89,7 +89,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Na blokowanie lub odblokowywanie wykonanie wątku
 
--   Na pasku narzędzi u góry **wątków** wybierz **Zablokuj wątki** lub **Odblokuj wątki**.
+- Na pasku narzędzi u góry **wątków** wybierz **Zablokuj wątki** lub **Odblokuj wątki**.
 
      Ta akcja dotyczy tylko wątki, które są wybrane w **wątków** okna.
 
@@ -99,11 +99,11 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
 
 #### <a name="to-switch-to-another-thread"></a>Aby przełączyć się do innego wątku
 
--   Wykonaj jedną z następujących czynności:
+- Wykonaj jedną z następujących czynności:
 
-    -   Kliknij dwukrotnie wątek.
+    - Kliknij dwukrotnie wątek.
 
-    -   Kliknij prawym przyciskiem myszy wątku, a następnie wybierz pozycję **Przełącz do wątku**.
+    - Kliknij prawym przyciskiem myszy wątku, a następnie wybierz pozycję **Przełącz do wątku**.
 
 ## <a name="group-and-sort-threads"></a>Grupowanie i sortowanie wątków
  Grupowanie wątków nagłówek pojawia się w tabeli dla każdej grupy. Nagłówek zawiera opis grupy, takie jak **wątku roboczego** lub **wątki bez flagi**, a kontrolka drzewa. Wątki elementu członkowskiego każdej grupy pojawiają się pod nagłówkiem grupy. Jeśli chcesz ukryć wątków członka grupy, formant drzewa Aby zwinąć grupy.
@@ -112,29 +112,29 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, który d
 
 ### <a name="to-sort-threads"></a>Aby posortować wątków
 
-1.  Na pasku narzędzi u góry **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
+1. Na pasku narzędzi u góry **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
 
      Wątki, teraz są sortowane według wartości w tej kolumnie.
 
-2.  Jeśli chcesz odwrócić porządek sortowania, wybierz ten sam przycisk ponownie.
+2. Jeśli chcesz odwrócić porządek sortowania, wybierz ten sam przycisk ponownie.
 
      Wątki, które znajdowały się u góry listy teraz pojawiają się na dole.
 
 ### <a name="to-group-threads"></a>Grupa wątków
 
--   W **wątków** pasek narzędzi okna, wybierz opcję **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
+- W **wątków** pasek narzędzi okna, wybierz opcję **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
 
 ### <a name="to-sort-threads-within-groups"></a>Aby posortować wątków w grupach
 
-1.  Na pasku narzędzi u góry **wątków** wybierz **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
+1. Na pasku narzędzi u góry **wątków** wybierz **Grupuj według** , a następnie wybierz kryteria, których chcesz grupowanie wątków przez.
 
-2.  W **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
+2. W **wątków** okna, wybierz przycisk u góry dowolnej kolumny.
 
      Wątki, teraz są sortowane według wartości w tej kolumnie.
 
 ### <a name="to-expand-or-collapse-all-groups"></a>Rozwiń lub Zwiń wszystkie grupy
 
--   Na pasku narzędzi u góry **wątków** wybierz **Rozwiń grupy** lub **Zwiń grupy**.
+- Na pasku narzędzi u góry **wątków** wybierz **Rozwiń grupy** lub **Zwiń grupy**.
 
 ## <a name="search-for-specific-threads"></a>Wyszukaj określone wątki
  Możesz wyszukać wątki, które odpowiadają określony ciąg w **wątków** okna. Podczas wyszukiwania dla wątków, w oknie zostaną wyświetlone wszystkie wątki dopasowywania ciągu wyszukiwania w dowolnej kolumnie. Informacje te obejmują lokalizacji wątku, który pojawia się w górnej części stosu wywołań w **lokalizacji** kolumny. Domyślnie przeszukiwane nie jest pełny stos wywołania.
@@ -159,13 +159,13 @@ W programie wielowątkowym każdy wątek ma swój własny stos wywołań. **Wąt
 
 ### <a name="to-view-the-call-stack-of-a-thread"></a>Aby wyświetlić stos wywołań wątku
 
--   W **lokalizacji** kolumny, zaznacz odwróconą trójkąta obok lokalizacji wątku.
+- W **lokalizacji** kolumny, zaznacz odwróconą trójkąta obok lokalizacji wątku.
 
      Lokalizacja rozwija Pokaż stos wywołań dla wątku.
 
 ### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Aby wyświetlić lub Zwiń stosy wywołań wszystkich wątków
 
--   Na pasku narzędzi u góry **wątków** wybierz **rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
+- Na pasku narzędzi u góry **wątków** wybierz **rozwiń stosy wywołań** lub **Zwiń stosy wywołań**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

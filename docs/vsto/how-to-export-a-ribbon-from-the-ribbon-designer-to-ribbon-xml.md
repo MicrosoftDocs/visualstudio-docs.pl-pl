@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9908b906a780839da335ce38af5b0d927632bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111002"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Instrukcje: Eksportowanie wstążki z projektanta wstążki do XML wstążki
   **Wstążka (Projektant graficzny)** element nie obsługuje wszystkich możliwych typów dostosowania wstążki. W celu dostosowania wstążki w zaawansowanych sposobów, możesz eksportowanie wstążki z projektanta do pliku XML Wstążki i bezpośredniego edytowania pliku XML.
@@ -35,32 +35,32 @@ ms.locfileid: "56596519"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Aby eksportowanie wstążki z projektanta wstążki do XML wstążki
 
-1.  Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
+1. Kliknij prawym przyciskiem myszy plik kodu wstążki w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Projektant widoków**.
 
-2.  Kliknij prawym przyciskiem myszy projektanta wstążki, a następnie kliknij przycisk **eksportowanie wstążki do XML**.
+2. Kliknij prawym przyciskiem myszy projektanta wstążki, a następnie kliknij przycisk **eksportowanie wstążki do XML**.
 
      Visual Studio dodaje pliku XML Wstążki i pliku kodu XML wstążki do projektu.
 
-3.  W klasie kodu wstążki, zlokalizuj komentarzy rozpoczynających się od `TODO:`.
+3. W klasie kodu wstążki, zlokalizuj komentarzy rozpoczynających się od `TODO:`.
 
-4.  Skopiuj blok kodu w tych komentarzach do **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, w zależności od tego, jakiego typu rozwiązania tworzenia.
+4. Skopiuj blok kodu w tych komentarzach do **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, w zależności od tego, jakiego typu rozwiązania tworzenia.
 
      Ten kod umożliwia aplikacji Microsoft Office wykrycie i załadowanie swoje niestandardowe wstążki. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
 
-5.  W **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, Usuń komentarz z bloku kodu.
+5. W **ThisAddin**, **ThisWorkbook**, lub **ThisDocument** klasy, Usuń komentarz z bloku kodu.
 
      Po użytkownik Usuń komentarz kodu, powinien on przypominać następujący przykład. W tym przykładzie jest wywoływana w klasie wstążki `MyRibbon`.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6.  Przejdź do pliku kodu XML wstążki, a następnie znajdź `Ribbon Callbacks` regionu.
+6. Przejdź do pliku kodu XML wstążki, a następnie znajdź `Ribbon Callbacks` regionu.
 
      Jest to, gdzie można wpisać metody wywołania zwrotnego do obsługi akcje użytkownika, takie jak kliknięcie przycisku.
 
-7.  Utwórz metodę wywołania zwrotnego dla każdego programu obsługi zdarzeń, który zapisano w kodzie projektanta wstążki.
+7. Utwórz metodę wywołania zwrotnego dla każdego programu obsługi zdarzeń, który zapisano w kodzie projektanta wstążki.
 
-8.  Przenieś wszystkie swój kod procedury obsługi zdarzeń z programu obsługi zdarzeń do metod wywołania zwrotnego i zmodyfikuj kod do działania z modelu programowania rozszerzalności wstążki (RibbonX).
+8. Przenieś wszystkie swój kod procedury obsługi zdarzeń z programu obsługi zdarzeń do metod wywołania zwrotnego i zmodyfikuj kod do działania z modelu programowania rozszerzalności wstążki (RibbonX).
 
      Aby uzyskać informacji na temat pisania metody wywołania zwrotnego i za pomocą modelu programowania RibbonX, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).
 

@@ -20,23 +20,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df38a0d65a3073e35228c84fa18606e2fe014f9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4f1b1980df908aa73959c72240d18496597fb310
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111834"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
 Mogą wystąpić następujące błędy, podczas próby debugowania zdalnego.
 
--   [Błąd: Nie można automatycznie wkroczyć do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Błąd: Nie można automatycznie wkroczyć do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
--   [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+- [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
 
--   [Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
--   [Błąd: Maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+- [Błąd: Maszyna zdalna nie jest wyświetlana w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie zdalne](../debugger/remote-debugging.md)

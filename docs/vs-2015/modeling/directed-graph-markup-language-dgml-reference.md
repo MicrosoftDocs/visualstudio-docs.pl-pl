@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106023"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizua
 > [!NOTE]
 >  Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasa kolory](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Składnia DGML  
+## <a name="DGML"></a> Składnia DGML  
  W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ Przekierowanie Graph Markup Language (DGML) opisano informacje używane do wizua
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Aliasy dla najczęściej używanych ścieżek  
+### <a name="AddAlias"></a> Aliasy dla najczęściej używanych ścieżek  
  Zamienianie najczęściej używanych ścieżek na aliasy pomaga zredukować rozmiar pliku .dgml i czas wymagany do załadowania lub zapisania pliku. Aby utworzyć alias, należy dodać `<Paths></Paths>` sekcji na końcu pliku .dgml. W tej sekcji Dodaj `<Path/>` element, aby zdefiniować alias dla ścieżki:  
   
 ```xml  

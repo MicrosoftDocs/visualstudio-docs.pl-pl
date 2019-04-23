@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105022"
 ---
 # <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-create-the-new-windows-project"></a>Aby utworzyć nowy projekt Windows  
   
-1.  W programie Visual Studio na **pliku** menu Utwórz nową **projektu**.  
+1. W programie Visual Studio na **pliku** menu Utwórz nową **projektu**.  
   
-2.  Nadaj projektowi nazwę **SavingDataInATransactionWalkthrough**.  
+2. Nadaj projektowi nazwę **SavingDataInATransactionWalkthrough**.  
   
-3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -53,27 +53,27 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Na **danych** menu, wybierz opcję**Pokaż źródła danych**.  
+1. Na **danych** menu, wybierz opcję**Pokaż źródła danych**.  
   
-2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+2. W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
+3. Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
   
-4.  Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
+4. Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
   
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
          —lub—  
   
-    -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okna dialogowego pole, a następnie utwórz połączenie z bazą danych Northwind.  
+    - Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okna dialogowego pole, a następnie utwórz połączenie z bazą danych Northwind.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.  
+6. Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.  
   
-7.  Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.  
+7. Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.  
   
-8.  Wybierz `Customers` i `Orders` tabel, a następnie wybierz **Zakończ**.  
+8. Wybierz `Customers` i `Orders` tabel, a następnie wybierz **Zakończ**.  
   
      **NorthwindDataSet** zostanie dodany do projektu i `Customers` i `Orders` tabele są wyświetlane w **źródeł danych** okna.  
   
@@ -82,13 +82,13 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Aby utworzyć dane powiązane kontrolek w formularzu Windows  
   
--   W **źródeł danych** okna, rozwiń węzeł **klientów** węzła.  
+- W **źródeł danych** okna, rozwiń węzeł **klientów** węzła.  
   
--   Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
+- Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.  
   
      A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, i <xref:System.Windows.Forms.BindingNavigator> są wyświetlane w zasobniku składnika.  
   
--   Przeciągnij powiązane **zamówienia** węzła (nie main **zamówienia** węzła, ale poniżej węzła powiązanej tabeli podrzędnej **faks** kolumny) do poniższego formularza  **CustomersDataGridView**.  
+- Przeciągnij powiązane **zamówienia** węzła (nie main **zamówienia** węzła, ale poniżej węzła powiązanej tabeli podrzędnej **faks** kolumny) do poniższego formularza  **CustomersDataGridView**.  
   
      A <xref:System.Windows.Forms.DataGridView> pojawia się w formularzu. OrdersTableAdapter i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
   
@@ -97,9 +97,9 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Aby dodać odwołanie do pliku System.Transactions DLL  
   
-1.  Na **projektu** menu, wybierz opcję**Dodaj odwołanie**.  
+1. Na **projektu** menu, wybierz opcję**Dodaj odwołanie**.  
   
-2.  Wybierz **System.Transactions**(na **.NET** karty), a następnie wybierz pozycję **OK**.  
+2. Wybierz **System.Transactions**(na **.NET** karty), a następnie wybierz pozycję **OK**.  
   
      Odwołanie do **System.Transactions** zostanie dodany do projektu.  
   
@@ -117,38 +117,38 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
    Uzgadnianie zmian do powiązanych danych kolejność jest następująca:  
   
--   Usuń rekordy podrzędne. (W tym przypadku usuwania rekordów z `Orders` tabeli.)  
+- Usuń rekordy podrzędne. (W tym przypadku usuwania rekordów z `Orders` tabeli.)  
   
--   Usuwanie rekordów nadrzędnych. (W tym przypadku usuwania rekordów z `Customers` tabeli.)  
+- Usuwanie rekordów nadrzędnych. (W tym przypadku usuwania rekordów z `Customers` tabeli.)  
   
--   Wstawianie rekordów nadrzędnych. (W tym przypadku wstawiania rekordów w `Customers` tabeli.)  
+- Wstawianie rekordów nadrzędnych. (W tym przypadku wstawiania rekordów w `Customers` tabeli.)  
   
--   Wstaw rekordy podrzędne. (W tym przypadku wstawiania rekordów w `Orders` tabeli.)  
+- Wstaw rekordy podrzędne. (W tym przypadku wstawiania rekordów w `Orders` tabeli.)  
   
 #### <a name="to-delete-existing-orders"></a>Aby usunąć istniejące zamówienia  
   
--   Dodaj następujący kod `DeleteOrders` metody **Form1**:  
+- Dodaj następujący kod `DeleteOrders` metody **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Aby usunąć istniejący klienci  
   
--   Dodaj następujący kod `DeleteCustomers` metody **Form1**:  
+- Dodaj następujący kod `DeleteCustomers` metody **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Aby dodać nowych klientów  
   
--   Dodaj następujący kod `AddNewCustomers` metody **Form1**:  
+- Dodaj następujący kod `AddNewCustomers` metody **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Aby dodać nowe zamówienia  
   
--   Dodaj następujący kod `AddNewOrders` metody **Form1**:  
+- Dodaj następujący kod `AddNewOrders` metody **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację  
   
--   Wybierz **F5** do uruchomienia aplikacji.  
+- Wybierz **F5** do uruchomienia aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

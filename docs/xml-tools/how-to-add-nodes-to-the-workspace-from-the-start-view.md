@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111665"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z widoku startowego
 
@@ -21,14 +21,14 @@ W tym temacie opisano sposób dodawania węzłów globalnego [obszar roboczy Pro
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Aby dodać węzły do obszaru roboczego z widoku startowego
 
-1.  Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Postępuj zgodnie z instrukcjami w [jak: Tworzenie i edytowanie pliku schematu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Kliknij prawym przyciskiem myszy w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
+2. Kliknij prawym przyciskiem myszy w edytorze XML, a następnie wybierz pozycję **Projektant widoków**.
 
      Pojawi się widoku startowego.
 
      W **Szczegóły zestawu schematu** sekcji, zwróć uwagę, że istnieją dwa (**2**) **globalne typy złożone**.
 
-3.  Kliknij pozycję **Dodaj** łącza z prawej strony **globalne typy złożone** nagłówka.
+3. Kliknij pozycję **Dodaj** łącza z prawej strony **globalne typy złożone** nagłówka.
 
      `USAddress` i `PurchaseOrderType` węzłów typu złożonego, pojawi się na powierzchni projektowej w widoku wykresu.

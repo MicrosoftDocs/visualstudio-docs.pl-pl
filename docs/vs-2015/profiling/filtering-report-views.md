@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108740"
 ---
 # <a name="filtering-report-views"></a>Filtrowanie widoków raportów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
   
 #### <a name="to-create-a-profiler-report-filter"></a>Aby utworzyć filtr raportów profilera  
   
-1.  Jeśli nie zostanie wyświetlone okno Filtr widoku raportów wydajności, kliknij przycisk **Pokaż filtr** na pasku narzędzi w widoku raportu wydajności.  
+1. Jeśli nie zostanie wyświetlone okno Filtr widoku raportów wydajności, kliknij przycisk **Pokaż filtr** na pasku narzędzi w widoku raportu wydajności.  
   
      Filtr widoku raportów wydajności znajduje się tabela. Każdy wiersz w tabeli reprezentuje klauzuli filtru. Możesz dodać dowolną liczbę klauzul do filtru.  
   
-2.  Dla każdej klauzuli, który chcesz dodać do filtru wybierz lub wprowadź wartości w następujących polach wiersza.  
+2. Dla każdej klauzuli, który chcesz dodać do filtru wybierz lub wprowadź wartości w następujących polach wiersza.  
   
     |Pole|Opis|  
     |-----------|-----------------|  
@@ -44,7 +44,7 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
     |**Operator**|Wybierz operator, który określa relację, która ma w klauzuli między pola i wartości.<br /><br /> = Równa się<br /><br /> <> Nie równa się<br /><br /> < Mniej niż<br /><br /> > Większa niż<br /><br /> < = mniejsza niż lub równe<br /><br /> > = większa niż lub równe|  
     |**Wartość**|Wybierz lub wprowadź wartość do wyszukania. Niektóre pola listy dostępnych wartości dla pola.|  
   
-3.  
+3. 
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Aby utworzyć filtr raportów profilera w widoku raportu znaczniki  
   
@@ -66,33 +66,33 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
   
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Aby załadować istniejący filtr z pliku  
   
-1.  Kliknij na pasku narzędzi widoku raportu wydajności **filtru importu**.  
+1. Kliknij na pasku narzędzi widoku raportu wydajności **filtru importu**.  
   
      **Załaduj filtr** zostanie wyświetlone okno dialogowe.  
   
-2.  Określ lokalizację i nazwę pliku filtru (.vspf) można załadować.  
+2. Określ lokalizację i nazwę pliku filtru (.vspf) można załadować.  
   
 #### <a name="to-execute-a-filter"></a>Wykonywanie filtru  
   
--   Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.  
+- Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.  
   
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Aby zatrzymać filtr, który trwa zbyt długo, można wykonać  
   
--   Kliknij na pasku narzędzi widoku raportu wydajności **zatrzymać filtru**.  
+- Kliknij na pasku narzędzi widoku raportu wydajności **zatrzymać filtru**.  
   
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Aby usunąć filtr w widoku raportu  
   
-1.  Usuń wiersze klauzul filtr widoku raportów wydajności.  
+1. Usuń wiersze klauzul filtr widoku raportów wydajności.  
   
-2.  Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.  
+2. Kliknij na pasku narzędzi widoku raportu wydajności **wykonaj filtr**.  
   
 #### <a name="to-save-a-filter-to-a-file"></a>Aby zapisać filtr do pliku  
   
-1.  Kliknij na pasku narzędzi widoku raportu wydajności **Eksportuj filtr**.  
+1. Kliknij na pasku narzędzi widoku raportu wydajności **Eksportuj filtr**.  
   
      **Zapisywanie filtru** zostanie wyświetlone okno dialogowe.  
   
-2.  Określ lokalizację i nazwę pliku filtru (.vspf) można zapisać.  
+2. Określ lokalizację i nazwę pliku filtru (.vspf) można zapisać.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie widoków raportów narzędzi do oceny wydajności](../profiling/customizing-performance-tools-report-views.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 365a53edf79e301d89d9060d225525b713171158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 270f25640e5804944440192ee787f92f1597c58c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108753"
 ---
 # <a name="debugging-dll-projects"></a>Debugowanie projektów DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,29 +73,29 @@ Następujące szablony tworzą biblioteki DLL:
   
 - [Okno bezpośrednie](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Tworzenie wersji debugowania  
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Tworzenie wersji debugowania  
  Niezależnie od tego, jak rozpocząć debugowanie upewnij się, najpierw Tworzenie wersji debugowania biblioteki DLL, a następnie upewnij się, że wersja do debugowania znajduje się w lokalizacji, gdzie jej szuka go znaleźć. To może wydawać się oczywiste, ale Jeśli zapomnisz tego kroku, aplikacja może znaleźć inną wersję biblioteki DLL i ją załadować. Następnie program będzie kontynuował zastanawiasz się, dlaczego nigdy nie został osiągnięty punkt przerwania. Podczas debugowania, możesz sprawdzić, które biblioteki DLL program załadował, przez otwarcie debugera **modułów** okna. **Modułów** okno zawiera listę każdego pliku DLL lub EXE załadowana w debugowanym procesie. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md).  
   
  Aby debuger dołączał do kodu napisanego w języku C++, kod musi wysyłać właściwość `DebuggableAttribute`. Można dodać to w kodzie automatycznie przez powiązanie z [/assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) — opcja konsolidatora.  
   
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debugowanie w trybie mieszanym  
+## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Debugowanie w trybie mieszanym  
  Aplikacja wywołująca, która wywołuje bibliotekę DLL można pisać w kodzie zarządzanym lub kodzie natywnym. Jeśli zarządzana biblioteka DLL jest wywoływana przez kod macierzysty i chcesz debugować oba, zarządzane i natywne debugery należy włączyć. Można wybrać w  **\<Projekt > strony właściwości** lub oknie dialogowym. Jak to zrobić, zależy od tego, czy rozpoczynasz debugowanie z projektu DLL lub wywoływania projektu aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).  
   
-##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Zmiana konfiguracji domyślnych  
+## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Zmiana konfiguracji domyślnych  
  Po utworzeniu projektu aplikacji konsolowej przy użyciu szablonu projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatycznie tworzy wymagane ustawienia konfiguracji Debug i Release. Jeśli to konieczne, możesz zmienić te ustawienia. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [ustawienia projektu dla C# Debuguj konfiguracje](../debugger/project-settings-for-csharp-debug-configurations.md), [ustawienia projektu dla debugowania języka Visual Basic Konfiguracja](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), i [jak: Ustaw wartość Debug i Release konfiguracje](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Sposoby debugowania DLL  
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Sposoby debugowania DLL  
  Każdy z projektów w tej sekcji tworzy bibliotekę DLL. Nie można uruchomić biblioteki DLL bezpośrednio; musi zostać wywołany przez aplikację, zwykle EXE. Aby uzyskać więcej informacji, zobacz [tworzenie i zarządzanie projekty języka Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). Aplikacja wywołująca może spełniać dowolne spośród następujących kryteriów:  
   
--   Aplikacja utworzona w innym projekcie, w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które zawiera bibliotekę klas.  
+- Aplikacja utworzona w innym projekcie, w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które zawiera bibliotekę klas.  
   
--   Istniejącą aplikację już wdrożona na komputerze testowym lub produkcyjnym.  
+- Istniejącą aplikację już wdrożona na komputerze testowym lub produkcyjnym.  
   
--   Znajduje się w sieci Web i dostępne za pośrednictwem adresu URL.  
+- Znajduje się w sieci Web i dostępne za pośrednictwem adresu URL.  
   
--   Aplikacja sieci Web zawierającą stronę sieci Web, która osadza biblioteki DLL.  
+- Aplikacja sieci Web zawierającą stronę sieci Web, która osadza biblioteki DLL.  
   
-###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugowanie aplikacji wywołującej  
+### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugowanie aplikacji wywołującej  
  Aby debugować bibliotekę DLL, należy uruchomić debugowanie aplikacji wywołującej, zazwyczaj pliku EXE albo aplikacji sieci Web. Istnieje kilka sposobów jej debugowania.  
   
 - Jeśli masz projekt dla aplikacji wywołującej, możesz otworzyć ten projekt i rozpocząć wykonywanie z **debugowania** menu. Aby uzyskać więcej informacji, zobacz [jak: Uruchamianie wykonywania](http://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
@@ -108,17 +108,17 @@ Następujące szablony tworzą biblioteki DLL:
   
   Przed rozpoczęciem debugowania aplikacji wywołującej, zazwyczaj można ustawić punkt przerwania w bibliotece klas. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Po osiągnięciu punktu przerwania można przechodzić przez kod, obserwując działanie w każdym wierszu, dopóki nie można ustalić przyczynę problemu. Aby uzyskać więcej informacji, zobacz [Przegląd przechodzenie krok po kroku kodu](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
-###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Formanty na stronie sieci Web  
+### <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Formanty na stronie sieci Web  
  Aby debugować formant strony sieci Web, należy utworzyć [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która ją osadza, jeśli taka strona jeszcze nie istnieje. Następnie umieścić punkty przerwania w kodzie strony sieci Web, a także w kodzie sterującym. Następnie wywołaj stronę sieci Web z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Przed rozpoczęciem debugowania aplikacji wywołującej, zazwyczaj można ustawić punkt przerwania w DLL. Po osiągnięciu punktu przerwania można przechodzić przez kod, obserwując działanie w każdym wierszu, dopóki nie można ustalić przyczynę problemu. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Okno bezpośrednie  
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Okno bezpośrednie  
  Będziesz w stanie ocenić funkcje lub metody w DLL bez wywoływana aplikacji. Możesz zrobić, debugowanie w czasie projektowania i używasz **bezpośrednie** okna. Aby debugować w ten sposób, wykonaj następujące kroki, podczas gdy projekt DLL jest otwarty:  
   
-1.  Otwórz narzędzie Debugger **bezpośrednie** okna.  
+1. Otwórz narzędzie Debugger **bezpośrednie** okna.  
   
-2.  Aby przetestować metodę o nazwie `Test` w klasie `Class1`, tworzenia wystąpienia obiektu typu `Class1` , wpisując następujący kod C# w oknie bezpośrednim. Ten kod zarządzany działa dla języka Visual Basic i C++ po odpowiednich zmianach składni:  
+2. Aby przetestować metodę o nazwie `Test` w klasie `Class1`, tworzenia wystąpienia obiektu typu `Class1` , wpisując następujący kod C# w oknie bezpośrednim. Ten kod zarządzany działa dla języka Visual Basic i C++ po odpowiednich zmianach składni:  
   
     ```  
     Class1 obj = new Class1();  
@@ -126,7 +126,7 @@ Następujące szablony tworzą biblioteki DLL:
   
      W języku C# wszystkie nazwy muszą być w pełni kwalifikowana. Ponadto wszelkie metody lub zmienne muszą być w bieżącym zakresie i kontekście sesji debugowania.  
   
-3.  Przy założeniu, że `Test` ma jedną `int` parametru oceny `Test` przy użyciu **bezpośrednie** okna:  
+3. Przy założeniu, że `Test` ma jedną `int` parametru oceny `Test` przy użyciu **bezpośrednie** okna:  
   
     ```  
     ?obj.Test(10)  
@@ -134,7 +134,7 @@ Następujące szablony tworzą biblioteki DLL:
   
      Wynik zostanie wydrukowany w **bezpośrednie** okna.  
   
-4.  Można kontynuować debugowanie `Test` umieszczając znajdującym się w nim punkt przerwania, a następnie ponownie oceniając funkcję:  
+4. Można kontynuować debugowanie `Test` umieszczając znajdującym się w nim punkt przerwania, a następnie ponownie oceniając funkcję:  
   
     ```  
     ?obj.Test(10);  
