@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067017"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
 ## <a name="creating-a-gesture-handler"></a>Tworzenie procedury obsługi gestu  
  Aby zdefiniować procedury obsługi gestu dla projektanta UML, należy utworzyć klasę, która definiuje zachowanie obsługi gestu i osadzić tę klasę w Visual Studio Integration rozszerzenie (VSIX). VSIX działa jako kontener, który może zainstalować obsługę. Istnieją dwie alternatywne metody definiowania obsługi gestu:  
   
--   **Utwórz procedurę obsługi gestu w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć programu obsługi z innymi rodzajami rozszerzeń takich jak rozszerzenia sprawdzania poprawności, elementy do przybornika niestandardowego lub polecenia menu.  
+- **Utwórz procedurę obsługi gestu w jego własnym VSIX przy użyciu szablonu projektu.** Jest to szybsza metoda. Użyj go, jeśli nie chcesz połączyć programu obsługi z innymi rodzajami rozszerzeń takich jak rozszerzenia sprawdzania poprawności, elementy do przybornika niestandardowego lub polecenia menu.  
   
--   **Utwórz osobną procedurę obsługi gestu i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli procedura obsługi gestu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
+- **Utwórz osobną procedurę obsługi gestu i projektów VSIX.** Użyj tej metody, jeśli chcesz połączyć kilka rodzajów rozszerzeń w samym VSIX. Na przykład jeśli procedura obsługi gestu oczekuje modelu do przestrzegania szczególnych ograniczeń, można ją osadzić w samym VSIX jako metodę sprawdzania poprawności.  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Aby utworzyć obsługę gestu w jego własnym VSIX  
   
@@ -56,9 +56,9 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
 1. Utwórz projekt biblioteki klas w nowym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, lub w istniejącym rozwiązaniu.  
   
-   1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+   1. Na **pliku** menu, wybierz **New**, **projektu**.  
   
-   2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
+   2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
   
 2. Dodaj następujące odwołania do projektu.  
   
@@ -204,25 +204,25 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Aby dodać oddzielnych gestów do projektu VSIX  
   
-1.  Nie trzeba tej procedury, jeśli użytkownik utworzył procedurę obsługi gestu z własnej VSIX.  
+1. Nie trzeba tej procedury, jeśli użytkownik utworzył procedurę obsługi gestu z własnej VSIX.  
   
-2.  Utwórz projekt VSIX, chyba że rozwiązanie zawiera już jeden.  
+2. Utwórz projekt VSIX, chyba że rozwiązanie zawiera już jeden.  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt**.  
   
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
+    2. W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, a następnie wybierz **rozszerzalności**. W środkowej kolumnie Wybierz **projekt VSIX**.  
   
-3.  Ustaw projekt VSIX jako projekt startowy rozwiązania.  
+3. Ustaw projekt VSIX jako projekt startowy rozwiązania.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
+    - W Eksploratorze rozwiązań w menu skrótów projektu VSIX wybierz **Ustaw jako projekt startowy**.  
   
-4.  W **source.extension.vsixmanifest**, Dodaj projekt biblioteki klas obsługi gest jako składnik MEF:  
+4. W **source.extension.vsixmanifest**, Dodaj projekt biblioteki klas obsługi gest jako składnik MEF:  
   
-    1.  Na **metadanych** kartę, ustaw nazwę VSIX.  
+    1. Na **metadanych** kartę, ustaw nazwę VSIX.  
   
-    2.  Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
+    2. Na **Instaluj obiekty docelowe** kartę, należy ustawić wersji programu Visual Studio jako obiekty docelowe.  
   
-    3.  Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
+    3. Na **zasoby** kartę, wybrać **New**i w oknie dialogowym Ustaw:  
   
          **Typ** = **składnik MEF**  
   
@@ -230,7 +230,7 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
          **Projekt** = *projektu biblioteki klas*  
   
-##  <a name="Executing"></a> Wykonywanie obsługi gestu  
+## <a name="Executing"></a> Wykonywanie obsługi gestu  
  Do celów testowych wykonaj procedurę obsługi gestu w trybie debugowania.  
   
 #### <a name="to-test-the-gesture-handler"></a>Testowanie obsługi gestu  
@@ -241,9 +241,9 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
     **Rozwiązywanie problemów z**: Jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można uruchomić:  
   
-   -   Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
+   - Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
   
-   -   W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz polecenie Właściwości. W edytorze właściwości projektu, wybierz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
+   - W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz polecenie Właściwości. W edytorze właściwości projektu, wybierz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -255,17 +255,17 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
    **Rozwiązywanie problemów z**: Jeśli program obsługi gestu nie działa, upewnij się, że:  
   
--   Projekt obsługi gestu jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
+- Projekt obsługi gestu jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
   
--   Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.  
+- Parametry wszystkich `Import` i `Export` atrybuty są prawidłowe.  
   
--   `CanDragDrop` Metoda nie zwraca `false`.  
+- `CanDragDrop` Metoda nie zwraca `false`.  
   
--   Typ modelu diagram, którego używasz (UML klasy, sekwencja i tak dalej) jest wymieniony jako jeden z gestów obsługi atrybutów klasy polecenia [ClassDesignerExtension], [SequenceDesignerExtension] i tak dalej.  
+- Typ modelu diagram, którego używasz (UML klasy, sekwencja i tak dalej) jest wymieniony jako jeden z gestów obsługi atrybutów klasy polecenia [ClassDesignerExtension], [SequenceDesignerExtension] i tak dalej.  
   
--   Nie ma żadnych funkcji wbudowanych już zdefiniowanych dla tego typu docelowego i elementu porzuconego.  
+- Nie ma żadnych funkcji wbudowanych już zdefiniowanych dla tego typu docelowego i elementu porzuconego.  
   
-##  <a name="Implementing"></a> Wdrażanie obsługi gestu  
+## <a name="Implementing"></a> Wdrażanie obsługi gestu  
   
 ### <a name="the-gesture-handler-methods"></a>Metody obsługi gestu  
  Klasy obsługi gestu implementuje i eksportuje <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Metody, które należy zdefiniować, są następujące:  
@@ -280,17 +280,17 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
  Parametry tych metod są:  
   
--   `ShapeElement target`. Kształt lub diagram, na którym użytkownik przenosi coś.  
+- `ShapeElement target`. Kształt lub diagram, na którym użytkownik przenosi coś.  
   
      `ShapeElement` jest klasą we wdrażaniu, która jest podporządkowana narzędziu UML narzędzia do modelowania. Aby zmniejszyć ryzyko wprowadzenia modelu UML i diagramów w niespójnym stanie, firma Microsoft zaleca, aby używać metody tej klasy bezpośrednio. Zamiast tego, owiń element w `IShape`, a następnie użyj metod opisanych w [wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).  
   
-    -   Aby uzyskać `IShape`:  
+    - Aby uzyskać `IShape`:  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   Aby uzyskać element modelu, który jest określony przez przeciąganie lub operację dwukrotnego kliknięcia:  
+    - Aby uzyskać element modelu, który jest określony przez przeciąganie lub operację dwukrotnego kliknięcia:  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -298,20 +298,20 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
          Można rzutować to do bardziej określonego typu elementu.  
   
-    -   Aby uzyskać magazyn modeli UML, który zawiera UML model:  
+    - Aby uzyskać magazyn modeli UML, który zawiera UML model:  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Aby uzyskać dostęp do hosta i usługodawcy:  
+    - Aby uzyskać dostęp do hosta i usługodawcy:  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Ten parametr niesie ze sobą serializowany formularz z obiektem źródłowym operacji przeciągania:  
+- `DiagramDragEventArgs eventArgs`. Ten parametr niesie ze sobą serializowany formularz z obiektem źródłowym operacji przeciągania:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -348,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  Aby uzyskać więcej informacji, zobacz [nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md).  
   
-##  <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
+## <a name="Installing"></a> Instalowanie i odinstalowywanie rozszerzenia  
  Możesz zainstalować [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] rozszerzenie zarówno na swoim komputerze, jak i na innych komputerach.  
   
 #### <a name="to-install-an-extension"></a>Aby zainstalować rozszerzenie  
   
-1.  Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
+1. Na komputerze, należy znaleźć **.vsix** pliku, który został zbudowany w danym projekcie VSIX.  
   
-    1.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
+    1. W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
+    2. Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
-2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
+2. Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   
      Komputer docelowy musi mieć jedną z wersji [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ustawionego w **source.extension.vsixmanifest**.  
   
-3.  Na komputerze docelowym, otwórz **.vsix** pliku.  
+3. Na komputerze docelowym, otwórz **.vsix** pliku.  
   
      **Instalator rozszerzenia programu Visual Studio** otwiera i instaluje rozszerzenia.  
   
-4.  Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Uruchom lub uruchom ponownie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [wersja]**  
   
-##  <a name="DragExample"></a> Przykład  
+## <a name="DragExample"></a> Przykład  
  Poniższy przykład pokazuje sposób tworzenia linii życia w diagramie sekwencji na podstawie części i portów składnika przeciągniętych z diagramu składników.  
   
  Aby przetestować go, naciśnij klawisz F5. Otwiera doświadczalne wystąpienie programu Visual Studio. W tym wypadku Otwórz UML model i Utwórz składnik na diagramie składników. Dodaj do tego składnika niektóre interfejsy i wewnętrzne części zamienne. Wybierz interfejsy i części. Następnie przeciągnij interfejsy i części na diagramie sekwencji. (Przeciągnij z diagramu składników w górę do karty diagramu sekwencji, a następnie w dół do diagramu sekwencji.) Linia życia pojawi się dla poszczególnych interfejsów i części.  

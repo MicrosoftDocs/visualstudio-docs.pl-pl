@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066718"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Aby odłożyć profilowania od samego początku aplikacji:  
   
-1.  W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).  
+1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatury: Naciśnij klawisze Alt + F2).  
   
-2.  W Centrum wydajności i diagnostyki, postępuj zgodnie z **ustawienia** łącze obok **użycie procesora GPU**.  
+2. W Centrum wydajności i diagnostyki, postępuj zgodnie z **ustawienia** łącze obok **użycie procesora GPU**.  
   
-3.  W obszarze **Konfiguracja profilowania procesora GPU**na **ogólne** strony właściwości, wyczyść **rozpocząć profilowanie przy uruchamianiu aplikacji** pole wyboru, aby odłożyć profilowania.  
+3. W obszarze **Konfiguracja profilowania procesora GPU**na **ogólne** strony właściwości, wyczyść **rozpocząć profilowanie przy uruchamianiu aplikacji** pole wyboru, aby odłożyć profilowania.  
   
      ![Skonfiguruj, kiedy rozpoczyna się zbieranie użycia procesora GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
  Odroczysz zbierania informacji profilowania za pomocą tego ustawienia dodatkowe łącze staje się dostępna w dolnej części okna narzędzia użycie procesora GPU po uruchomieniu aplikacji w narzędziu użycie procesora GPU. Aby rozpocząć zbieranie informacji o profilowania, wybierz opcję **Start** łącze w **Start zbieranie dodatkowych szczegółowych danych użycia procesora GPU** wiadomości.  
   
-##  <a name="hwsupport"></a> Sprzęt i obsłudze sterowników  
+## <a name="hwsupport"></a> Sprzęt i obsłudze sterowników  
  Obsługiwane są następujące sprzęcie procesora GPU i sterowniki:  
   
 |Dostawcy|Opis procesora GPU|Wymagana wersja sterownika|  
@@ -143,10 +143,10 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
   
 ## <a name="see-also"></a>Zobacz także  
   
--   [Rozwiązywanie trudnych problemów grafiki, za pomocą swoich gier przy użyciu technologii DirectX narzędzi (wideo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Rozwiązywanie trudnych problemów grafiki, za pomocą swoich gier przy użyciu technologii DirectX narzędzi (wideo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Narzędzie użycie procesora GPU w programie Visual Studio (wideo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Narzędzie użycie procesora GPU w programie Visual Studio (wideo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Narzędzie użycie procesora GPU w programie Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Narzędzie użycie procesora GPU w programie Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Użycie procesora GPU dla technologii DirectX w programie Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Użycie procesora GPU dla technologii DirectX w programie Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

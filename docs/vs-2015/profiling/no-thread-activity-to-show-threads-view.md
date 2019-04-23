@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069722"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nie ma do pokazania żadnej aktywności wątku (Widok wątków)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Ten obszar zawiera dane dotyczące odkrywanie wątków w aktualnie widocznym zak
   
  Jeśli informacje nie są widoczne, sprawdź następujące ustawienia:  
   
--   Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.  
+- Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.  
   
--   Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki  
+- Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki  
   
--   Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.  
+- Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.  
   
--   Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.  
+- Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

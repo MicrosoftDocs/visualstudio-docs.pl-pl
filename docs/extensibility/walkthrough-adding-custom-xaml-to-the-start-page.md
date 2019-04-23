@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072179"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Przewodnik: Dodaj niestandardowe XAML do strony początkowej
 
@@ -25,11 +25,11 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej strony począ
 
 ## <a name="add-custom-xaml"></a>Dodaj niestandardowe XAML
 
-1.  Utwórz stronę początkową, postępując zgodnie z instrukcjami wyświetlanymi w [utworzyć niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md).
+1. Utwórz stronę początkową, postępując zgodnie z instrukcjami wyświetlanymi w [utworzyć niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md).
 
-2.  W *MainWindow.xaml* plików, Znajdź \<siatki > sekcji.
+2. W *MainWindow.xaml* plików, Znajdź \<siatki > sekcji.
 
-3.  Dodaj \<TabControl > element i \<TabItem > wewnątrz \< siatki > elementu, jak pokazano w poniższym przykładzie.
+3. Dodaj \<TabControl > element i \<TabItem > wewnątrz \< siatki > elementu, jak pokazano w poniższym przykładzie.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej strony począ
     </Grid>
     ```
 
-4.  Dodaj drugą \<TabItem >, za pomocą \<przycisk > element, który zostanie otwarty nowy projekt:
+4. Dodaj drugą \<TabItem >, za pomocą \<przycisk > element, który zostanie otwarty nowy projekt:
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ W tym instruktażu przedstawiono sposób tworzenia niestandardowej strony począ
 
 ## <a name="test-the-custom-start-page"></a>Testowanie niestandardową stronę początkową
 
-1.  Naciśnij klawisz **F5**.
+1. Naciśnij klawisz **F5**.
 
      Zostanie otwarta doświadczalnym wystąpieniu programu Visual Studio z niestandardową stronę początkową zainstalowany, ale nie są wybrane.
 
-2.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz **/Options narzędzia / środowisko** strony.
+2. W doświadczalnym wystąpieniu programu Visual Studio, otwórz **/Options narzędzia / środowisko** strony.
 
-3.  Wybierz **uruchamiania**. Na **Dostosuj stronę początkową** listy wybierz swoje *.xaml* pliku, a następnie kliknij przycisk **OK**.
+3. Wybierz **uruchamiania**. Na **Dostosuj stronę początkową** listy wybierz swoje *.xaml* pliku, a następnie kliknij przycisk **OK**.
 
-4.  Na **widoku** menu, kliknij przycisk **strona startowa**.
+4. Na **widoku** menu, kliknij przycisk **strona startowa**.
 
-5.  Kliknij przycisk **Bing** kartę.
+5. Kliknij przycisk **Bing** kartę.
 
      Powinna zostać wyświetlona strona sieci web Bing.
 
-6.  Kliknij przycisk **MyButton** kartę.
+6. Kliknij przycisk **MyButton** kartę.
 
      Powinien zostać wyświetlony **MyProject** przycisk, co spowoduje otwarcie **nowy projekt** okna dialogowego.
 
-7.  Zamknij wystąpienie doświadczalne.
+7. Zamknij wystąpienie doświadczalne.
 
 Aby zastosować niestandardową stronę początkową, **narzędzia** > **opcje** > **środowiska**, wybierz opcję **uruchamiania**. Na **Dostosuj stronę początkową** listy wybierz swoje *.xaml* pliku, a następnie kliknij przycisk **OK**.
 

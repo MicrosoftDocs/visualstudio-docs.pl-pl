@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067043"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Rozwiązywanie problemów z Podglądem Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
   
 #### <a name="to-activate-windows-search-service"></a>Aby aktywować usługę Windows Search  
   
-1.  Uruchom Menedżera serwera.  
+1. Uruchom Menedżera serwera.  
   
-2.  W okienku nawigacji po lewej stronie wybierz **role**.  
+2. W okienku nawigacji po lewej stronie wybierz **role**.  
   
-3.  W okienku Podsumowanie ról wybierz **Dodaj rolę**.  
+3. W okienku Podsumowanie ról wybierz **Dodaj rolę**.  
   
-4.  Wybierz rolę usługi plików, a następnie wybierz **dalej** przycisku.  
+4. Wybierz rolę usługi plików, a następnie wybierz **dalej** przycisku.  
   
-5.  Wybierz usługę roli Windows Search.  
+5. Wybierz usługę roli Windows Search.  
   
 ## <a name="additional-resources"></a>Dodatkowe zasoby  
  Można uzyskać więcej informacji i wyrażanie opinii na temat Podgląd pomocy za pomocą następujących zasobów:  

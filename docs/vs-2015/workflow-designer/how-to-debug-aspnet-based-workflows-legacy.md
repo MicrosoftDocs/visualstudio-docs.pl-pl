@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069600"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Instrukcje: Debugowanie przepływów pracy opartych na programie ASP.NET (starsza wersja)
 W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]— na podstawie [!INCLUDE[wf](../includes/wf-md.md)] aplikacji przeznaczonych dla albo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -28,25 +28,25 @@ W tym temacie opisano sposób debugowania [!INCLUDE[vstecasp](../includes/vsteca
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Aby debugować przepływ pracy oparty na programie ASP.NET  
   
-1.  Włącz debugowanie aplikacji ASP.NET, ustawiając **debug = true** w pliku web.config.  
+1. Włącz debugowanie aplikacji ASP.NET, ustawiając **debug = true** w pliku web.config.  
   
-2.  Ustaw biblioteki przepływu pracy jako projekt startowy, a następnie ustawić punkty przerwania w przepływie pracy.  
+2. Ustaw biblioteki przepływu pracy jako projekt startowy, a następnie ustawić punkty przerwania w przepływie pracy.  
   
-3.  Wprowadź adres URL domyślnej strony sieci Web we właściwościach projektu przepływu pracy **debugowania** opcji **uruchamiania przeglądarki za pomocą zewnętrznego adresu URL** pola tekstowego.  
+3. Wprowadź adres URL domyślnej strony sieci Web we właściwościach projektu przepływu pracy **debugowania** opcji **uruchamiania przeglądarki za pomocą zewnętrznego adresu URL** pola tekstowego.  
   
-4.  Wybierz **dołączyć do procesu** na **debugowania** menu.  
+4. Wybierz **dołączyć do procesu** na **debugowania** menu.  
   
-5.  Wybierz proces do dołączenia z **dostępne procesy** listy.  
+5. Wybierz proces do dołączenia z **dostępne procesy** listy.  
   
      Dołącz do procesu w3wp.exe, webdev.webserver lub aspnet_wp, w którym znajduje się przepływ pracy.  
   
-6.  Kliknij przycisk **wybierz** obok **dołączyć do** pola tekstowego.  
+6. Kliknij przycisk **wybierz** obok **dołączyć do** pola tekstowego.  
   
      **Wybieranie typu kodu** pojawi się okno dialogowe.  
   
-7.  Wybierz **debugowania tych typów kodu** i wybierz **przepływu pracy**.  
+7. Wybierz **debugowania tych typów kodu** i wybierz **przepływu pracy**.  
   
-8.  Kliknij przycisk **OK**.  
+8. Kliknij przycisk **OK**.  
   
 9. Kliknij przycisk **dołączyć**.  
   

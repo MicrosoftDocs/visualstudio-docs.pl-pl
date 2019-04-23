@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072854"
 ---
 # <a name="autos-and-locals-windows"></a>Zmiennych automatycznych i zmiennych lokalnych Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  Widać również wartości zwrócone przez funkcje i metody w pewnych okolicznościach. Zobacz [Wyświetl wartości zwracane wywołania metody](#bkmk_returnValue) poniżej.  
   
-##  <a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołania metody  
+## <a name="bkmk_returnValue"></a> Wyświetl wartości zwracane wywołania metody  
  W kodzie .NET i C++ gdy wychodzisz nad lub poza wywołanie metody można sprawdzić wartości zwracanych. Ta funkcja jest przydatna, gdy wynik wywołania metody nie jest przechowywany w zmiennej lokalnej, na przykład gdy metoda ta jest używana jako parametr lub wartość zwracaną przez inną metodę.  
   
  Poniższy kod C#, dodaje wartości zwrócone przez dwie funkcje:  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Jednakże należy zachować ostrożność podczas zmiany wartości. Oto niektóre potencjalne problemy:  
   
--   Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość `var1` i `var2`.  
+- Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład oceny `var1 = ++var2` zmienia wartość `var1` i `var2`.  
   
      Wyrażenia, które zmieniają dane są określane jako mają [efekty uboczne](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), które dają nieoczekiwane wyniki, jeśli nie masz pewności, z nich. Upewnij się, że rozumiesz konsekwencje tej zmiany przed jej wprowadzeniem.  
   
--   Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych najmniej znaczące bity w zmiennej zmiennoprzecinkowych.  
+- Edytowanie wartości zmiennoprzecinkowych może spowodować pomocnicza niezgodnościami z powodu konwersji dziesiętnych do pliku binarnego części ułamkowe. Nawet pozornie nieszkodliwe edycji może spowodować zmiany do niektórych najmniej znaczące bity w zmiennej zmiennoprzecinkowych.  
   
 ## <a name="debug-location-toolbar"></a>Lokalizacja debugowania, pasek narzędzi  
  Możesz użyć **Lokalizacja debugowania** narzędzi, aby wybrać żądaną funkcję, wątek lub procesu. Ustaw punkt przerwania, a następnie rozpocząć debugowanie. (Jeśli nie widzisz tego paska narzędzi, można włączyć ją, klikając w pustej części obszaru paska narzędzi. Powinien zostać wyświetlony lista pasków narzędzi; Wybierz **Lokalizacja debugowania**). Po osiągnięciu punktu przerwania zatrzymuje wykonywanie, aby sprawdzić narzędzi debugowania lokalizacji, czyli dolny wiersz poniższym rysunku:  

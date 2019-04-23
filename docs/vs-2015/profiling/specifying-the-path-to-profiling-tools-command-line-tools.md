@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066939"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Określanie ścieżki do narzędzi wiersza polecenia narzędzi profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "54791755"
 ## <a name="64-bit-computers"></a>Komputery 64-bitowe  
  Na komputerach 64-bitowych Określ ścieżkę zależnie od platformy docelowej profilowanej aplikacji.  
   
--   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
+- Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
   
      *Drive*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
   
--   Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:  
+- Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:  
   
      *Drive*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64

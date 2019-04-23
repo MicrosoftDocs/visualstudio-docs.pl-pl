@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067186"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Obszar testowy 2: Pobieranie z kontroli źródła
+# <a name="test-area-2-get-from-source-control"></a>Obszar testowy 2: pobieranie z kontroli kodu źródłowego
 Obszar ten test obejmuje przypadki testowe do pobierania elementów z magazynu w wersji za pomocą polecenia Get. Te przypadki testowe można zastosować do lokalnego i projektów sieci Web.
 
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia
@@ -26,13 +26,13 @@ Obszar ten test obejmuje przypadki testowe do pobierania elementów z magazynu w
 
 ##### <a name="get-latest-version"></a>Pobierz najnowszą wersję:
 
--   **Plik**, **kontroli źródła**, **Pobierz najnowszą wersję**.
+- **Plik**, **kontroli źródła**, **Pobierz najnowszą wersję**.
 
--   **Plik**, **Pobierz najnowszą wersję**.
+- **Plik**, **Pobierz najnowszą wersję**.
 
--   Menu skrótów **Pobierz najnowszą wersję**.
+- Menu skrótów **Pobierz najnowszą wersję**.
 
--   Pobierz: **Plik**, **kontroli źródła**, **uzyskać**.
+- Pobierz: **Plik**, **kontroli źródła**, **uzyskać**.
 
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie
 

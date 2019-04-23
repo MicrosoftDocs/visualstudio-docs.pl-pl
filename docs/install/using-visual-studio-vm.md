@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070475"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
@@ -77,13 +77,13 @@ Jeśli obrazy nie obejmują funkcji programu Visual Studio, która jest wymagana
 
 Platforma Azure oferuje szeroką gamę rozmiarów maszyn wirtualnych. Ponieważ program Visual Studio jest zaawansowanym wielowątkowa aplikacja, ma rozmiar maszyny Wirtualnej, która zawiera co najmniej dwóch procesorów i 7 GB pamięci. Firma Microsoft zaleca następujących rozmiarów maszyn wirtualnych dla obrazów programu Visual Studio:
 
-   * Maszyna wirtualna Standard_D2_v3
-   * Standard_D2s_v3
-   * Maszyna wirtualna Standard_D4_v3
-   * Standard_D4s_v3
-   * Maszyna wirtualna Standard_D2_v2
-   * Standard_D2S_v2
-   * Maszyna wirtualna Standard_D3_v2
+* Maszyna wirtualna Standard_D2_v3
+* Standard_D2s_v3
+* Maszyna wirtualna Standard_D4_v3
+* Standard_D4s_v3
+* Maszyna wirtualna Standard_D2_v2
+* Standard_D2S_v2
+* Maszyna wirtualna Standard_D3_v2
 
 Aby uzyskać więcej informacji na temat najnowszych rozmiarów maszyny, zobacz [rozmiary dla Windows maszyn wirtualnych na platformie Azure](/azure/virtual-machines/windows/sizes).
 

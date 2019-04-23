@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074821"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
@@ -97,13 +97,13 @@ Można Przesuń powierzchni projektowej, za pomocą pasków przewijania lub przy
 
 Możliwość Cofnij/Ponów jest włączona w widoku modelu zawartości następujące akcje:
 
--   Dodanie jednego węzła przez przeciąganie i upuszczanie.
+- Dodanie jednego węzła przez przeciąganie i upuszczanie.
 
--   Dodawanie wielu węzłów z okna wyniki wyszukiwania w Eksploratorze schematu.
+- Dodawanie wielu węzłów z okna wyniki wyszukiwania w Eksploratorze schematu.
 
--   Dodawanie węzłów z widoku startowego.
+- Dodawanie węzłów z widoku startowego.
 
--   Usunięcie jednego lub wielu węzłów.
+- Usunięcie jednego lub wielu węzłów.
 
 ## <a name="zoom"></a>Powiększenie
 
@@ -111,9 +111,9 @@ Powiększenie jest dostępna w prawym dolnym rogu widoku modelu zawartości.
 
 Powiększenie mogą być kontrolowane w następujący sposób:
 
--   Poprzez posiadanie **Ctrl** klucza i wirowania myszy kółka, gdy wskaźnik myszy znajduje się na powierzchni widoku modelu zawartości.
+- Poprzez posiadanie **Ctrl** klucza i wirowania myszy kółka, gdy wskaźnik myszy znajduje się na powierzchni widoku modelu zawartości.
 
--   Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.
+- Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.
 
 Suwak powiększenia jest nieprzezroczysta, zaznacz go, umieść kursor nad nim lub użyj **Ctrl** przy użyciu kółka myszy, aby powiększyć; w innym czasie, proces jest przezroczysty.
 

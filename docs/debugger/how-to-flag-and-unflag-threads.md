@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069643"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Instrukcje: Oflagowanie i usuwanie oflagowania wątków (C#, Visual Basic, C++)
 
@@ -35,30 +35,30 @@ Oflagowane wątki otrzymają specjalnego traktowania w **wątku** listy na **Lok
 
 ### <a name="to-unflag-all-threads"></a>Aby Usuń flagę ze wszystkich wątków
 
--   W **wątków** okna, kliknij prawym przyciskiem myszy dowolnego wątku, a następnie kliknij przycisk **Usuń flagę ze wszystkich wątków**.
--   W **równoległego wyrażenia kontrolnego** wybierz wszystkie oflagowane wątki, a następnie kliknij prawym przyciskiem myszy i wybierz **Unflag**.
+- W **wątków** okna, kliknij prawym przyciskiem myszy dowolnego wątku, a następnie kliknij przycisk **Usuń flagę ze wszystkich wątków**.
+- W **równoległego wyrażenia kontrolnego** wybierz wszystkie oflagowane wątki, a następnie kliknij prawym przyciskiem myszy i wybierz **Unflag**.
 
 ### <a name="to-display-only-flagged-threads"></a>Aby wyświetlić tylko oflagowane wątki
 
--   Wybierz **Pokaż wątki tylko oflagowane** przycisk w jedną z wielowątkowych debugowania systemu windows.
+- Wybierz **Pokaż wątki tylko oflagowane** przycisk w jedną z wielowątkowych debugowania systemu windows.
 
 ### <a name="to-flag-just-my-code"></a>Flagi tylko mój kod
 
-1.  Na pasku narzędzi u góry **wątków** okna, kliknij ikonę flagi.
+1. Na pasku narzędzi u góry **wątków** okna, kliknij ikonę flagi.
 
-2.  Na liście rozwijanej kliknij **flagę tylko mój kod**.
+2. Na liście rozwijanej kliknij **flagę tylko mój kod**.
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Aby Oflaguj wątki, które są skojarzone z wybranych modułów
 
-1.  Na pasku narzędzi **wątków** okna, kliknij ikonę flagi.
+1. Na pasku narzędzi **wątków** okna, kliknij ikonę flagi.
 
-2.  Na liście rozwijanej kliknij **Oflaguj niestandardowy wybór modułów**.
+2. Na liście rozwijanej kliknij **Oflaguj niestandardowy wybór modułów**.
 
-3.  W **wybierz moduły** okna dialogowego Wybierz moduły, które chcesz.
+3. W **wybierz moduły** okna dialogowego Wybierz moduły, które chcesz.
 
-4.  (Opcjonalnie) W **wyszukiwania** wpisz ciąg do wyszukiwania określonych modułów.
+4. (Opcjonalnie) W **wyszukiwania** wpisz ciąg do wyszukiwania określonych modułów.
 
-5.  Kliknij przycisk **OK**.
+5. Kliknij przycisk **OK**.
 
 ## <a name="see-also"></a>Zobacz też
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

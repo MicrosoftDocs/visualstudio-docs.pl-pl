@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077423"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Konwertowanie dodatków na rozszerzenia pakietu VSPackage
 Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual Studio, musisz utworzyć rozszerzenia VSIX. Poniżej przedstawiono odpowiedzi na często zadawane pytania dotyczące jak konwertować dodatek programu Visual Studio rozszerzenia VSIX.
@@ -37,7 +37,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Czy mogę przekonwertować mój projekt dodatku do projektu VSIX?
  Nie można przekonwertować projekt dodatku bezpośrednio do projektu VSIX, ponieważ mechanizm używany w projektów VSIX nie są takie same jak te w projektach dodatku. Szablon projektu VSIX, a także szablony elementów projektu mają duże ilości kodu, który sprawia, że stosunkowo łatwe rozpoczęcie korzystania i uruchomiony jako rozszerzenia VSIX.
 
-##  <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX
+## <a name="BKMK_StartDeveloping"></a> Jak rozpocząć tworzenie rozszerzenia VSIX
  Poniżej przedstawiono, jak wprowadzić VSIX, który zawiera polecenie menu:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Aby utworzyć rozszerzenie VSIX, który zawiera polecenie menu
@@ -52,7 +52,7 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
 
    Na **narzędzia** menu (w doświadczalnym wystąpieniu) powinien zostać wyświetlony przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku, powinien pojawić się komunikat: **Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage
+## <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage
 
 Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:
 
@@ -158,24 +158,24 @@ Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono spos
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Aby wstawić kod zarządzania systemem Windows z dodatek do VSPackage
 
-1.  Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.
+1. Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.
 
-2.  Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu > Package.cs*.)
+2. Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu > Package.cs*.)
 
-3.  Dodaj następujące `using` instrukcji:
+3. Dodaj następujące `using` instrukcji:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:
+4. Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Dodawanie kodu za pomocą dodatku. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe zadania do **listy zadań**, wyświetla liczbę zadań, a następnie usuwa jedno zadanie.
+5. Dodawanie kodu za pomocą dodatku. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe zadania do **listy zadań**, wyświetla liczbę zadań, a następnie usuwa jedno zadanie.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono spos
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Jak zarządzać projektami i rozwiązaniami w VSPackage
  Jeśli dodatek programu zarządza projekty i rozwiązania, kod dodatku powinien działać w VSPackage. Na przykład ta procedura pokazuje, jak dodać kod, który pobiera projekt startowy.
 
-1.  Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.
+1. Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.
 
-2.  Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu > Package.cs*.)
+2. Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu > Package.cs*.)
 
-3.  Dodaj następujące `using` instrukcji:
+3. Dodaj następujące `using` instrukcji:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:
+4. Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Dodawanie kodu za pomocą dodatku. Na przykład poniższy kod umożliwia pobranie nazwy projektu startowego w rozwiązaniu. (Rozwiązanie z wieloma projektami musi być otwarty po uruchomieniu tego pakietu.)
+5. Dodawanie kodu za pomocą dodatku. Na przykład poniższy kod umożliwia pobranie nazwy projektu startowego w rozwiązaniu. (Rozwiązanie z wieloma projektami musi być otwarty po uruchomieniu tego pakietu.)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

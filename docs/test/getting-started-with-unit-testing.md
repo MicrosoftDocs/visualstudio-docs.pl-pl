@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072271"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -24,10 +24,19 @@ Aby zdefiniować i uruchomić testy jednostkowe do utrzymania kondycji kodu, upe
 
 Tej sekcji opisano na wysokim poziomie, jak utworzyć projekt testów jednostkowych.
 
-> [!TIP]
-> Projekt testowany "HelloWorldCore" jest przykładowy projekt i żaden kod dla niej jest przeznaczony do wyświetlenia. Jeśli chcesz utworzyć projekt "Hello World" do testowania, zobacz [tworzenia pierwszej C# aplikacja konsolowa](../ide/quickstart-csharp-console.md). Aby uzyskać szczegółowy przewodnik, zobacz [tworzenia i uruchamiania testów dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Otwórz projekt, który chcesz przetestować w programie Visual Studio.
+
+   Na potrzeby demonstrowania przykład testu jednostkowego w tym artykule testy prosty projekt "Hello World". Przykładowy kod taki projekt jest następująca:
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. W **Eksploratora rozwiązań**, wybierz węzeł rozwiązania. Następnie na pasku menu u góry wybierz **pliku** > **Dodaj** > **nowy projekt**.
 
@@ -62,6 +71,9 @@ Tej sekcji opisano na wysokim poziomie, jak utworzyć projekt testów jednostkow
 1. Dodaj kod do metody testowej jednostki.
 
    ![Dodaj kod do metody testów jednostkowych w programie Visual Studio](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Aby uzyskać bardziej szczegółowy przewodnik dotyczący tworzenia testów jednostkowych, zobacz [tworzenia i uruchamiania testów dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 

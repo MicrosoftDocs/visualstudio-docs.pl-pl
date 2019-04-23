@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Wypożyczać program Visual Studio Professional lub Visual Studio Enterprise na podstawie miesiąca na miesiąc lub roczna, nie długoterminowej umowy.
 searchscope: VS Subscription
-ms.openlocfilehash: 253c81344b8a1536fb25dfd18216db8b3fd5b260
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074768"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji chmury programu Visual Studio Professional i Visual Studio Enterprise
 
@@ -64,12 +64,12 @@ Jeśli zakupiono więcej niż jedną subskrypcję, przejdź do [portal administr
 
 ## <a name="manage-subscriptions"></a>Anuluj odnowienia subskrypcji w chmurze, które zostały zakupione
 
-*   Aby zmienić liczbę nabytych subskrypcji:
+* Aby zmienić liczbę nabytych subskrypcji:
 
 > [!div class="mx-imgBorder"]
 > ![Zmienianie subskrypcji](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Aby anulować te subskrypcje, Zmniejsz liczbę subskrypcji na wartość zero (0). Nie będzie ich odnowienie na początku następnego okresu rozliczeniowego (pierwszego dnia następnego miesiąca dla miesięczne subskrypcje chmury; 12 miesięcy później w przypadku rocznych subskrypcji chmury).
+* Aby anulować te subskrypcje, Zmniejsz liczbę subskrypcji na wartość zero (0). Nie będzie ich odnowienie na początku następnego okresu rozliczeniowego (pierwszego dnia następnego miesiąca dla miesięczne subskrypcje chmury; 12 miesięcy później w przypadku rocznych subskrypcji chmury).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Kup teraz subskrypcje chmury
 
